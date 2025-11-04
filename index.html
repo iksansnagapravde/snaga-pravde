@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html lang="sr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ИКСАН • Снага правде — Почетна</title>
-  <meta name="description" content="Покрет ИКСАН — Снага правде. Правда, достојанство и заједништво.">
-  <style>
-    :root{
-      --bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;
-      --gold:#FFB300;--card:#102D57;--line:rgba(255,255,255,.14);
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1180px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:60;
-      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
-      backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-    .brand img{height:40px;border-radius:10px}
-    nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-    nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px}
-    nav.nav a.active, nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
-    .hero{padding:34px 0 26px}
-    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:center}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-    .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
-    h1{margin:.6rem 0 0;font-size:clamp(30px,5.5vw,52px);line-height:1.08;font-weight:900}
-    .sub{margin:12px 0 16px;max-width:680px;color:var(--muted);font-size:clamp(15px,2.1vw,20px)}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
-    .hero-media img{display:block;width:100%;height:min(420px,58vh);object-fit:cover;object-position:center 62%;transform:scale(1.03)}
-    section{padding:42px 0}
-    .cards{display:grid;gap:16px;grid-template-columns:1fr}
-    @media(min-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-    .card h3{margin:0 0 8px 0;color:var(--gold)}
-    .card p{color:var(--muted);margin:6px 0 0}
-    .cta-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:10px;opacity:.95}
-    .cta-link::after{content:'→'}
-    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
-  </style>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ИКСАН • Снага правде — Почетна</title>
+<meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
+<style>
+  :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--gold-d:#e2a300;--card:#102D57;--line:rgba(255,255,255,.14)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:1180px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:900}
+  .brand img{height:40px;border-radius:10px}
+  nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
+  nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px}
+  nav.nav a.active, nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800}
+  .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
+  .hero{padding:34px 0 26px}
+  .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:center}
+  @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+  .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
+  h1{margin:.6rem 0 0;font-size:clamp(30px,5.5vw,52px);line-height:1.08;font-weight:900}
+  .sub{margin:12px 0 16px;max-width:680px;color:var(--muted);font-size:clamp(15px,2.1vw,20px)}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
+  .hero-media img{display:block;width:100%;height:min(420px,58vh);object-fit:cover;object-position:center 62%;transform:scale(1.03)}
+  section{padding:42px 0}
+  .cards{display:grid;gap:16px;grid-template-columns:1fr}
+  @media(min-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
+  .card h3{margin:0 0 8px 0;color:var(--gold)}
+  .cta-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:10px;opacity:.95}
+  .cta-link::after{content:'→'}
+  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
+</style>
 </head>
 <body>
-
 <header>
   <div class="container head">
     <div class="brand">
@@ -53,12 +47,12 @@
       <span>ИКСАН • Снага правде</span>
     </div>
     <nav class="nav">
-      <a href="index.html" class="active">Почетна</a>
-      <a href="o-nama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
+      <a href="#" class="active">Почетна</a>
+      <a href="#">О нама</a>
+      <a href="#">Области</a>
+      <a href="#">Циљеви</a>
+      <a href="#">Иницијативе</a>
+      <a href="#">Контакт</a>
     </nav>
   </div>
 </header>
@@ -68,16 +62,11 @@
     <div class="hero-grid">
       <div>
         <span class="kicker">ИКСАН</span>
-        <h1>Покрет ИКСАН — Снага правде</h1>
-        <p class="sub">За друштво у коме правда има снагу, а грађани достојанство. Боримо се за реформе, транспарентност и заштиту најосетљивијих.</p>
-        <div class="cta-row" style="margin-top:18px;">
-          <a class="btn btn-primary" href="inicijative.html">Иницијативе</a>
-          <a class="btn" href="kontakt.html">Контакт</a>
-        </div>
+        <h1>Снага правде</h1>
+        <p class="sub">Када правда постане роба, време је да се врати народу.</p>
       </div>
-
       <div class="hero-media" aria-hidden="true">
-        <img src="hero.jpg" alt="Иксан — Снага правде">
+        <img src="naslovna-slika.webp" alt="ИКСАН — Снага правде">
       </div>
     </div>
   </div>
@@ -85,73 +74,7 @@
 
 <section>
   <div class="container cards">
-
-    <div class="card">
-      <h3><a href="sud-mora-biti-hram-pravde.html">СУД МОРА БИТИ ХРАМ ПРАВДЕ, А НЕ ВОЉЕ ПОЈЕДИНАЦА</a></h3>
-      <p>Залагање за независност судства и правичност за све грађане.</p>
-      <a class="cta-link" href="sud-mora-biti-hram-pravde.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="radnici-i-preduzetnici.html">ТРЖИШТЕ ЗА СВЕ, НЕ ЗА ОДАБРАНЕ</a></h3>
-      <p>Подршка равноправним условима за раднике и предузетнике.</p>
-      <a class="cta-link" href="radnici-i-preduzetnici.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="poreklo-imovine-i-javne-nabavke.html">ПОРЕКЛО ИМОВИНЕ И ЈАВНЕ НАБАВКЕ</a></h3>
-      <p>Транспарентност и одговорност у трошењу јавних средстава.</p>
-      <a class="cta-link" href="poreklo-imovine-i-javne-nabavke.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="ukidanje-privatnih-izvrsitelja.html">УКИДАЊЕ ПРИВАТНИХ ИЗВРШИТЕЉА</a></h3>
-      <p>Враћање извршења у надлежност суда — правда изнад профита.</p>
-      <a class="cta-link" href="ukidanje-privatnih-izvrsitelja.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="pravna-pomoc.html">ПРАВНА ПОМОЋ — БЕЗ СТРАХА И КОМПЛИКАЦИЈА</a></h3>
-      <p>Доступна и бесплатна правна подршка грађанима.</p>
-      <a class="cta-link" href="pravna-pomoc.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="clanstvo.html">ПОСТАНИ ДЕО ПОКРЕТА</a></h3>
-      <p>Придружи се покрету који верује у снагу заједништва и правде.</p>
-      <a class="cta-link" href="clanstvo.html">Придружи се</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="ciljevi.html">ЦИЉЕВИ УДРУЖЕЊА</a></h3>
-      <p>Наши основни циљеви: правда, достојанство, хуманост.</p>
-      <a class="cta-link" href="ciljevi.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="oblasti.html">ОБЛАСТИ ЗА ОСТВАРИВАЊЕ ЦИЉЕВА</a></h3>
-      <p>Приоритетне области деловања ИКСАН-а за боље друштво.</p>
-      <a class="cta-link" href="oblasti.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="o-nama.html">О НАМА</a></h3>
-      <p>Ко смо, шта радимо и зашто се боримо за снагу правде.</p>
-      <a class="cta-link" href="o-nama.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="inicijative.html">ИНИЦИЈАТИВЕ</a></h3>
-      <p>Конкретни кораци које предузимамо за реформу система и праведност.</p>
-      <a class="cta-link" href="inicijative.html">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="kontakt.html">КОНТАКТ</a></h3>
-      <p>Контактирај нас — твој глас може покренути промене.</p>
-      <a class="cta-link" href="kontakt.html">Контактирај</a>
-    </div>
-
+    <!-- Овде иду картице са линковима -->
   </div>
 </section>
 
