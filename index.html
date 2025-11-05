@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ИКСАН • Снага правде — Почетна</title>
-<meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
-<style>
-  :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--gold-d:#e2a300;--card:#102D57;--line:rgba(255,255,255,.14)}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
-  a{color:inherit;text-decoration:none}
-  .container{max-width:1180px;margin:0 auto;padding:0 20px}
-  header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-  .brand img{height:40px;border-radius:10px}
-  nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-  nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px}
-  nav.nav a.active, nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
-  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800}
-  .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
-  .hero{padding:34px 0 26px}
-  .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:center}
-  @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-  .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
-  h1{margin:.6rem 0 0;font-size:clamp(30px,5.5vw,52px);line-height:1.08;font-weight:900}
-  .sub{margin:12px 0 16px;max-width:680px;color:var(--muted);font-size:clamp(15px,2.1vw,20px)}
-  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-  .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
-  .hero-media img{display:block;width:100%;height:min(420px,58vh);object-fit:cover;object-position:center 62%;transform:scale(1.03)}
-  section{padding:42px 0}
-  .cards{display:grid;gap:16px;grid-template-columns:1fr}
-  @media(min-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-  .card h3{margin:0 0 8px 0;color:var(--gold)}
-  .cta-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:10px;opacity:.95}
-  .cta-link::after{content:'→'}
-  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ИКСАН • Снага правде — Почетна</title>
+  <meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
+  <style>
+    :root{
+      --bg:#0B2141; --bg2:#102D57; --ink:#fff; --muted:#cfe1ff;
+      --gold:#FFB300; --card:#102D57; --line:rgba(255,255,255,.14);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
+      backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
+    .brand img{height:40px;width:auto;border-radius:10px;display:block}
+    nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
+    nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px}
+    nav.nav a.active, nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800}
+    .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
+    .hero{padding:34px 0 26px}
+    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:center}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
+    h1{margin:.6rem 0 0;font-size:clamp(30px,5.5vw,52px);line-height:1.08;font-weight:900}
+    .sub{margin:12px 0 16px;max-width:680px;color:var(--muted);font-size:clamp(15px,2.1vw,20px)}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
+    .hero-media img{display:block;width:100%;height:min(420px,58vh);object-fit:cover;object-position:center 62%}
+    section{padding:42px 0}
+    .cards{display:grid;gap:16px;grid-template-columns:1fr}
+    @media(min-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
+    .card h3{margin:0 0 8px;color:var(--gold)}
+    .cta-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:10px;opacity:.95}
+    .cta-link::after{content:"→"}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
+  </style>
 </head>
 <body>
+
 <header>
   <div class="container head">
     <div class="brand">
-      <img src="iksan-logo.png" alt="ИКСАН лого">
+      <!-- POSTAVI fajl logo.png u isti folder -->
+      <img src="logo.png" alt="ИКСАН лого">
       <span>ИКСАН • Снага правде</span>
     </div>
     <nav class="nav">
+      <!-- GORNJI MENI: ostaje standardan -->
       <a href="index.html" class="active">Почетна</a>
       <a href="onama.html">О нама</a>
       <a href="oblasti.html">Области</a>
@@ -69,33 +77,38 @@
       </div>
     </div>
     <div class="hero-media">
+      <!-- POSTAVI fajl pravda.webp u isti folder -->
       <img src="pravda.webp" alt="Правда није роба">
     </div>
   </div>
+</section>
+
 <section>
   <div class="container cards">
+    <!-- KARTICE: svaka vodi na svoju stranicu (imena kao u tvom repo-u) -->
+    <div class="card">
+      <h3><a href="sudpravda.html">Суд мора бити храм правде</a></h3>
+      <p>Независно судство као темељ праведног друштва.</p>
+      <a class="cta-link" href="sudpravda.html">Прочитај више</a>
+    </div>
+
+    <div class="card">
+      <h3><a href="porekloimovine.html">Порекло имовине и јавне набавке</a></h3>
+      <p>Транспарентност у јавним набавкама и контрола порекла имовине.</p>
+      <a class="cta-link" href="porekloimovine.html">Погледај детаље</a>
+    </div>
+
+    <div class="card">
+      <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
+      <p>Подршка онима који својим радом покрећу Србију.</p>
+      <a class="cta-link" href="radnicipreduzetnici.html">Сазнај више</a>
+    </div>
+
+    <!-- Ako dodaš fajl izvrsitelji.html, ovaj link će raditi odmah -->
     <div class="card">
       <h3><a href="izvrsitelji.html">Укидање приватних извршитеља</a></h3>
-      <p>Систем извршитеља мора бити у служби грађана, а не интереса појединаца.</p>
-      <a href="izvrsitelji.html" class="cta-link">Сазнај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="sud.html">Суд мора бити храм правде</a></h3>
-      <p>Независно судство као темељ праведног друштва.</p>
-      <a href="sud.html" class="cta-link">Прочитај више</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="poreklo.html">Порекло имовине и јавне набавке</a></h3>
-      <p>Транспарентност у јавним набавкама и контрола порекла имовине су кључ.</p>
-      <a href="poreklo.html" class="cta-link">Погледај детаље</a>
-    </div>
-
-    <div class="card">
-      <h3><a href="preduzetnici.html">Радници и предузетници</a></h3>
-      <p>Подршка онима који својим радом покрећу Србију.</p>
-      <a href="preduzetnici.html" class="cta-link">Сазнај више</a>
+      <p>Враћање извршења у надлежност суда — правда изнад профита.</p>
+      <a class="cta-link" href="izvrsitelji.html">Сазнај више</a>
     </div>
   </div>
 </section>
@@ -108,4 +121,3 @@
 
 </body>
 </html>
-
