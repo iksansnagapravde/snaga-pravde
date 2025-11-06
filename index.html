@@ -46,7 +46,7 @@
 
   /* HERO */
   .hero{
-    padding:90px 0 70px;
+    padding:80px 0 60px;
   }
   .hero-grid{
     display:grid;
@@ -87,44 +87,64 @@
     font-weight:600;
   }
   .btn-primary:hover{background:#e9b85c}
+
   .hero-media{
+    position:relative;
     border-radius:var(--radius);
     overflow:hidden;
     border:1px solid var(--line);
     box-shadow:var(--shadow);
+    width:380px; /* 10cm */
+    height:380px; /* 10cm */
+    margin:0 auto;
   }
   .hero-media img{
     display:block;
     width:100%;
-    height:auto;
+    height:100%;
     object-fit:cover;
+  }
+  .hero-media::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(145deg,rgba(11,33,65,.35),rgba(211,164,81,.25));
+    mix-blend-mode:soft-light;
+    pointer-events:none;
   }
 
   /* KARTICE */
   section.cards{
-    padding:80px 0;
+    padding:90px 0 100px;
   }
-  .grid{display:grid;gap:24px}
+  .grid{display:grid;gap:36px}
   @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
   .card{
     background:rgba(16,45,87,.65);
     border:1px solid var(--line);
     border-radius:var(--radius);
-    padding:28px 26px;
+    padding:36px 32px;
     box-shadow:var(--shadow);
     transition:transform .2s, box-shadow .2s;
+    min-height:200px;
   }
-  .card:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(0,0,0,.4)}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,.4)}
   .card h3{
     font-family:"Times New Roman", Times, serif;
-    font-weight:400;
+    font-weight:500;
     font-size:22px;
-    color:var(--accent);
+    color:#fff;
     margin-bottom:8px;
   }
-  .card p{color:var(--muted);margin-bottom:10px}
-  .card a.more{font-weight:500;color:#fff}
+  .card p{
+    color:#fff;
+    margin-bottom:10px;
+  }
+  .card a.more{
+    font-weight:500;
+    color:#fff;
+  }
   .card a.more::after{content:" →"}
 
   .statement{
