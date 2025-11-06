@@ -45,7 +45,7 @@
   nav a:hover,nav a[aria-current="page"]{opacity:1;border-color:var(--accent)}
 
   /* HERO */
-  .hero{ padding:50px 0 20px; } /* još malo podignuto */
+  .hero{ padding:60px 0 40px; }
   .hero-grid{
     display:grid; gap:40px; align-items:center;
   }
@@ -75,21 +75,32 @@
   .btn-primary:hover{ background:#e9b85c; }
 
   .hero-media{
-    position:relative; border-radius:var(--radius); overflow:hidden;
-    border:1px solid var(--line); box-shadow:var(--shadow);
-    width:300px; height:300px; margin:0 auto; /* manja slika 10x10cm aproks. */
+    position:relative;
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+    width:300px;         /* smanjeno proporcionalno */
+    height:auto;         /* automatska visina */
+    justify-self:end;    /* poravnanje desno */
   }
-  .hero-media img{ display:block; width:100%; height:100%; object-fit:cover; }
+  .hero-media img{
+    display:block;
+    width:100%;
+    height:auto;         /* zadržava proporcije slike */
+    object-fit:cover;
+  }
   .hero-media::after{
-    content:""; position:absolute; inset:0;
+    content:"";
+    position:absolute; inset:0;
     background:linear-gradient(145deg,rgba(11,33,65,.35),rgba(211,164,81,.25));
-    mix-blend-mode:soft-light; pointer-events:none;
+    mix-blend-mode:soft-light;
+    pointer-events:none;
   }
 
   /* KARTICE */
   section.cards{
-    padding:20px 0 80px;   /* još bliže hero sekciji */
-    margin-top:-60px;      /* podignuto ka slici */
+    padding:40px 0 80px;   /* stabilno, bez preklapanja */
   }
   .grid{display:grid;gap:32px}
   @media(min-width:900px){ .grid{ grid-template-columns:repeat(2,1fr); } }
@@ -108,7 +119,7 @@
   .card h3{
     font-family:"Times New Roman", Times, serif;
     font-weight:500;
-    font-size:30px;  /* još malo povećano */
+    font-size:29px;  /* povećano za 20% */
     color:#fff;
     margin-bottom:10px;
   }
