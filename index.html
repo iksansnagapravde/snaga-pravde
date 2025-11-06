@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иксан • Снага правде — Почетна</title>
-  <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана">
+  <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp">
+
+  <!-- Ikonice i hero preload -->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=10">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.png?v=10">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=10">
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg?v=10">
+  <link rel="preload" as="image" href="/assets/hero-iksan.webp?v=10">
 
   <style>
   :root{
     --blue:#0B2141; --blue2:#102D57; --accent:#D3A451;
     --muted:#c7d3ea; --line:rgba(255,255,255,.15);
-    --radius:16px; --shadow:0 8px 28px rgba(0,0,0,.3);
+    --radius:16px; --shadow:0 10px 36px rgba(0,0,0,.35);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{
@@ -28,16 +34,15 @@
     border-bottom:1px solid var(--line); position:sticky; top:0; z-index:100;
   }
   .head{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-  .brand{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:500}
+  .brand{display:flex;align-items:center;gap:10px;font-size:18px}
   .brand img{height:44px;width:auto;border-radius:8px}
-  nav{display:flex;gap:24px;flex-wrap:wrap}
+  nav{display:flex;gap:20px;flex-wrap:wrap}
   nav a{
-    font-size:17px;font-weight:600;
     padding:8px 0;border-bottom:2px solid transparent;opacity:.9;transition:.2s
   }
   nav a:hover,nav a[aria-current="page"]{
     opacity:1;border-color:var(--accent);
-    text-shadow:0 1px 0 rgba(0,0,0,.25), 0 4px 8px rgba(0,0,0,.3);
+    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 6px 14px rgba(0,0,0,.35);
   }
 
   /* HERO */
@@ -46,44 +51,53 @@
   @media(min-width:960px){.hero-grid{grid-template-columns:1.1fr 0.9fr;}}
 
   .hero-text h1{
-    font-size:clamp(32px,4.3vw,52px); font-weight:400; color:#fff;
-    text-align:left; line-height:1.12; margin-bottom:10px;
-    text-shadow:0 1px 0 rgba(0,0,0,.3), 0 5px 12px rgba(0,0,0,.35);
+    font-size:clamp(36px,4.8vw,56px); font-weight:400; color:#fff;
+    text-align:left; line-height:1.15; margin-bottom:10px;
+    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.45);
   }
   .hero-text h1 span.line2{
-    display:block; font-size:clamp(26px,3.4vw,38px);
+    display:block; font-size:clamp(28px,3.6vw,42px);
     color:var(--accent); margin-top:6px; font-weight:400;
-    text-shadow:0 1px 0 rgba(92,65,17,.4), 0 5px 14px rgba(0,0,0,.35);
+    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 22px rgba(0,0,0,.45);
   }
   .hero-text p.sub{
     color:var(--muted); max-width:600px; font-size:18px;
-    margin:20px 0 30px; text-align:left;
+    margin:22px 0 30px; text-align:left;
   }
 
-  .cta{display:flex;gap:18px;flex-wrap:wrap}
+  /* Dugmad – 3D */
+  .cta{display:flex;gap:16px;flex-wrap:wrap}
   .btn{
-    display:inline-block; padding:12px 26px; border-radius:40px; border:none;
-    font-weight:600; color:#fff; font-size:18px;
+    display:inline-block; padding:14px 32px; border-radius:40px; border:none;
+    font-weight:700; font-size:18px; letter-spacing:0.4px;
+    color:#fff; text-transform:uppercase;
     background:linear-gradient(180deg,#1e3a72,#0f2552);
-    box-shadow:0 4px 0 #07142c, 0 6px 16px rgba(0,0,0,.35);
+    box-shadow:0 6px 0 #07142c, 0 8px 22px rgba(0,0,0,.4);
     transition:transform .2s,box-shadow .2s;
   }
-  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 #07142c, 0 8px 20px rgba(0,0,0,.45)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #07142c, 0 10px 26px rgba(0,0,0,.5)}
   .btn-primary{
     background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
-    box-shadow:0 4px 0 #a27e32, 0 6px 16px rgba(0,0,0,.35);
+    box-shadow:0 6px 0 #a27e32, 0 8px 22px rgba(0,0,0,.4);
   }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 0 #8a682a, 0 8px 20px rgba(0,0,0,.45)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 #8a682a, 0 10px 26px rgba(0,0,0,.55)}
 
+  /* SLIKA – 3D prostor */
   .hero-media{
     position:relative; border-radius:var(--radius); overflow:hidden;
     background:#0f2552; border:1px solid #1a3a74;
-    box-shadow:0 8px 18px rgba(0,0,0,.45), inset 0 0 12px rgba(255,255,255,.06);
-    aspect-ratio:16/9; width:100%; max-width:440px; margin:0 auto;
+    box-shadow:0 12px 24px rgba(0,0,0,.6), inset 0 0 18px rgba(255,255,255,.08);
+    aspect-ratio:16/9; width:100%; max-width:470px; margin:0 auto;
+    transform:perspective(900px) rotateY(-1.5deg);
   }
-  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;}
+  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) brightness(1.02)}
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(145deg,rgba(11,33,65,.25),rgba(211,164,81,.15));
+    mix-blend-mode:soft-light;pointer-events:none;
+  }
 
-  /* KARTICE */
+  /* KARTICE – 3D */
   section.cards{padding:35px 0 80px;margin-top:-25px}
   .grid{display:grid;gap:32px}
   @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -92,17 +106,19 @@
     background:linear-gradient(180deg,rgba(18,45,87,.9),rgba(10,25,50,.9));
     border:1px solid var(--line); border-radius:var(--radius);
     padding:36px 32px;
-    box-shadow:0 6px 0 rgba(0,0,0,.25), 0 16px 30px rgba(0,0,0,.35);
+    box-shadow:0 10px 0 rgba(0,0,0,.3), 0 20px 36px rgba(0,0,0,.4);
     transition:transform .2s, box-shadow .2s; min-height:200px;
   }
-  .card:hover{transform:translateY(-4px);box-shadow:0 10px 0 rgba(0,0,0,.3), 0 22px 36px rgba(0,0,0,.4)}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 0 rgba(0,0,0,.35), 0 24px 44px rgba(0,0,0,.5)}
 
   .card h3{
-    font-family:"Times New Roman", Times, serif; font-weight:500; font-size:28px; color:#fff; margin-bottom:10px;
-    text-shadow:0 1px 0 rgba(0,0,0,.25), 0 5px 12px rgba(0,0,0,.35);
+    font-family:"Times New Roman", Times, serif; font-weight:500; font-size:31px; color:#fff; margin-bottom:10px;
+    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 18px rgba(0,0,0,.45);
   }
   .card h3 a{color:inherit}
-  .card p{color:var(--accent);margin-bottom:10px}
+  .card p{
+    color:var(--accent); margin-bottom:10px; font-size:17px;
+  }
   .card a.more{font-weight:600;color:#fff;text-decoration:none}
   .card a.more::after{content:" →"}
 
@@ -112,7 +128,7 @@
   }
   .statement h2{
     font-family:"Times New Roman", Times, serif; font-weight:400; font-size:24px; margin-bottom:10px; color:var(--accent);
-    text-shadow:0 1px 0 rgba(92,65,17,.4), 0 5px 12px rgba(0,0,0,.35);
+    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 18px rgba(0,0,0,.45);
   }
   .statement p{color:#f4f7ff}
 
@@ -127,7 +143,10 @@
   <header>
     <div class="container head">
       <div class="brand">
-        <img src="logo.webp" alt="Иксан лого">
+        <picture>
+          <source srcset="/assets/logo.svg?v=10" type="image/svg+xml">
+          <img src="/assets/logo.png?v=10" alt="Иксан — Снага правде" width="44" height="44">
+        </picture>
         <span>Иксан — Снага правде</span>
       </div>
       <nav>
@@ -135,7 +154,7 @@
         <a href="onama.html">О нама</a>
         <a href="oblasti.html">Области</a>
         <a href="ciljevi.html">Циљеви</a>
-        <a href="inicijативе.html">Иницијативе</a>
+        <a href="inicijative.html">Иницијативе</a>
         <a href="kontakt.html">Контакт</a>
       </nav>
     </div>
@@ -152,7 +171,10 @@
         </div>
       </div>
       <div class="hero-media">
-        <img src="Сајт слика.png" alt="Иксан — Снага правде">
+        <picture>
+          <source srcset="/assets/hero-iksan.webp?v=10" type="image/webp">
+          <img src="/assets/hero-iksan.jpg?v=10" alt="Иксан — Снага правде" width="1600" height="900" loading="eager" decoding="async">
+        </picture>
       </div>
     </div>
   </section>
@@ -162,21 +184,25 @@
       <div class="card">
         <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
         <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
+        <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више</a>
       </div>
 
       <div class="card">
         <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
-        <p>Транспарентност без изговора — време је да се зна шта је чије.</p>
+        <p>Време је да истина о имовини буде јавна — без заштите моћних.</p>
+        <a class="more" href="porekloimovine.html">Погледај детаље</a>
       </div>
 
       <div class="card">
         <h3><a href="sudpravda.html">Суд народу, не моћнима</a></h3>
-        <p>Суд мора служити правди, а не интересима политике и капитала.</p>
+        <p>Право мора бити штит човека, а не оружје политике.</p>
+        <a class="more" href="sudpravda.html">Прочитај више</a>
       </div>
 
       <div class="card">
         <h3><a href="radnicipreduzetnici.html">Радници и предузетници — срце здраве земље</a></h3>
-        <p>Рад и иницијатива морају бити темељ поштовања и слободе.</p>
+        <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
+        <a class="more" href="radnicipreduzetnici.html">Сазнај више</a>
       </div>
     </div>
   </section>
@@ -193,4 +219,3 @@
   </footer>
 </body>
 </html>
-
