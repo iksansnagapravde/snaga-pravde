@@ -1,141 +1,69 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Циљеви — ИКСАН • Снага правде</title>
-  <meta name="description" content="Циљеви удружења Иксан — покрет грађана за правду, достојанство и заједништво.">
-  <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp">
-  <style>
-    :root{--bg:#0B2141;--card:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--line:rgba(255,255,255,.14)}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1180px;margin:0 auto;padding:0 20px}
-    header{
-      position:sticky;top:0;z-index:60;
-      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
-      border-bottom:1px solid var(--line);backdrop-filter:blur(8px)
-    }
-    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-    .brand img{height:40px;width:auto;border-radius:10px;display:block}
-    .brand a{display:flex;align-items:center;gap:12px}
-    nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-    nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
-    nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
-    h1{margin:.6rem 0;font-size:clamp(30px,5.5vw,50px);color:var(--gold);text-align:center}
-    h2{color:var(--gold);margin-top:1.5rem}
-    p,li{color:var(--muted);line-height:1.7}
-    ul{padding-left:20px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin:18px 0;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-    .cta-row{display:flex;gap:12px;justify-content:center;margin-top:28px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 22px;border-radius:999px;border:1px solid var(--line);font-weight:800;text-transform:uppercase;letter-spacing:.4px}
-    .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
-    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center;margin-top:50px}
-  </style>
-</head>
-<body>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Циљеви — ИКСАН • Снага правде</title>
+<meta name="description" content="Циљеви удружења Иксан — покрет грађана за правду, достојанство и заједништво.">
+<meta name="theme-color" content="#0B2141">
+<link rel="icon" href="logo.webp">
+<style>
+/* ===== Тема ===== */
+:root{--bg:#0B2141;--card:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--line:rgba(255,255,255,.14);--r:14px;--shadow:0 8px 24px rgba(0,0,0,.20)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
 
-<header>
-  <div class="container head">
-    <div class="brand">
-      <a href="index.html" aria-label="ИКСАН — Почетна">
-        <img src="logo.webp" alt="ИКСАН лого" width="80" height="80">
-        <span>ИКСАН • Снага правде</span>
-      </a>
-    </div>
-    <nav class="nav">
-      <a href="index.html">Почетна</a>
-      <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html" aria-current="page">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
-    </nav>
-  </div>
-</header>
 
-<main class="container">
+/* ===== Распоред ===== */
+.container{max-width:980px;margin:0 auto;padding:0 14px}
 
-  <h1>🎯 Циљеви удружења ИКСАН</h1>
-  <p style="text-align:center;color:var(--muted);max-width:800px;margin:0 auto 32px;">
-    Иксан — покрет грађана за правду, достојанство и заједништво.
-  </p>
 
-  <div class="card">
-    <h2>Заштита грађанских, људских и економских права</h2>
-    <p>Пружамо подршку и глас свима који трпе неправду, дискриминацију или економску несигурност. Слобода и достојанство сваког човека морају бити неприкосновени.</p>
-  </div>
+/* ===== Хедер / Нав ===== */
+header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:clamp(14px,2.2vw,16px)}
+.brand img{height:34px;width:34px;border-radius:10px}
 
-  <div class="card">
-    <h2>Борба против корупције и некажњивости</h2>
-    <p>Усмерени смо на откривање злоупотреба и злоупотреба положаја у институцијама. Систем без одговорности рађа неправду — зато инсистирамо на транспарентности и једнакој примени закона.</p>
-  </div>
 
-  <div class="card">
-    <h2>Транспарентност јавних институција</h2>
-    <p>Јавност мора знати како се троши сваки динар грађана. Захтевамо јавне уговоре, дигиталну доступност података и одговорност сваког носиоца јавне функције.</p>
-  </div>
+.hamb{display:none;border:1px solid var(--line);border-radius:10px;padding:6px 10px;background:transparent;color:var(--ink)}
+nav.nav{display:flex;align-items:center;gap:14px;font-weight:700;opacity:.95}
+nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding:6px 0;transition:border-color .2s, opacity .2s}
+nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-  <div class="card">
-    <h2>Правна и саветодавна подршка грађанима</h2>
-    <p>Обезбеђујемо бесплатну правну помоћ, савете и усмерења за све који се суочавају са неправдом — било да су радници, предузетници или грађани у извршним поступцима.</p>
-  </div>
 
-  <div class="card">
-    <h2>Заштита у извршним и судским поступцима</h2>
-    <p>Боримо се против злоупотреба јавних извршитеља и унапређујемо надзор над радом правосуђа и система извршења казни.</p>
-  </div>
+@media (max-width:720px){
+.hamb{display:inline-flex;align-items:center;gap:6px}
+#menu{display:none;position:absolute;left:0;right:0;top:100%;background:rgba(16,45,87,.98);border-bottom:1px solid var(--line);padding:8px 14px}
+#menu.open{display:grid;grid-template-columns:1fr;gap:6px}
+nav.nav{flex-direction:column;align-items:flex-start}
+nav.nav a{padding:8px 0}
+}
 
-  <div class="card">
-    <h2>Економска правда и права радника</h2>
-    <p>Сматрамо да радник мора бити заштићен, плаћен и поштован. Социјална сигурност је темељ стабилног друштва.</p>
-  </div>
 
-  <div class="card">
-    <h2>Истраживање и борба против противправне имовине</h2>
-    <p>Истражујемо податке и иницирамо поступке за одузимање незаконито стечене имовине и спречавање злоупотреба у јавним набавкама.</p>
-  </div>
+/* ===== Типографија ===== */
+h1{margin:.6rem 0;font-size:clamp(26px,5vw,42px);color:var(--gold);text-align:center}
+h2{color:var(--gold);margin:1rem 0 .4rem;font-size:clamp(18px,3.6vw,22px)}
+p,li{color:var(--muted);line-height:1.65;font-size:clamp(14px,3.5vw,16px)}
+ul{padding-left:18px;margin:8px 0}
 
-  <div class="card">
-    <h2>Предлагање измена закона и јавних политика</h2>
-    <p>Припремамо иницијативе и предлоге за измену закона који ће унапредити владавину права, једнакост и правду у Србији.</p>
-  </div>
 
-  <div class="card">
-    <h2>Организовање јавних скупова и трибина</h2>
-    <p>Јавна реч и окупљање грађана основ су демократије. Организујемо скупове, протесте и дискусије које покрећу промене.</p>
-  </div>
+/* ===== Картице ===== */
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;margin:12px 0;box-shadow:var(--shadow)}
+.cards-grid{display:grid;gap:12px}
+@media (min-width:860px){.cards-grid{grid-template-columns:1fr 1fr}}
 
-  <div class="card">
-    <h2>Праћење изборних процеса</h2>
-    <p>Залажемо се за фер, транспарентне и поштене изборе, са једнаким условима за све учеснике.</p>
-  </div>
 
-  <div class="card">
-    <h2>Активно учешће јавности</h2>
-    <p>Охрабрујемо грађане да активно учествују у доношењу одлука које се тичу њихових живота. Демократија постоји само ако је живимо.</p>
-  </div>
+.hero-text{max-width:760px;margin:0 auto 18px;text-align:center}
 
-  <div class="card">
-    <h2>Развој владавине права и хуманитарни рад</h2>
-    <p>Подстичемо солидарност, бригу за угрожене и људскост као основ сваке заједнице. Хуманост није слабост — она је највећа снага.</p>
-  </div>
 
-  <div class="cta-row">
-    <a href="kontakt.html" class="btn btn-primary">Прикључи се</a>
-    <a href="inicijative.html" class="btn">Погледај иницијативе</a>
-  </div>
+/* ===== CTA ===== */
+.cta-row{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800;text-transform:uppercase;letter-spacing:.3px;font-size:13px}
+.btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 6px 14px rgba(255,179,0,.25)}
 
-</main>
 
-<footer>
-  <div class="container">
-    © 2025 ИКСАН • Снага правде — Сва права задржана.
-  </div>
-</footer>
-
-</body>
+/* ===== Футер ===== */
 </html>
