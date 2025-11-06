@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>ИКСАН • Снага правде — Почетна</title>
 <meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
-
 <style>
   :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--card:#102D57;--line:rgba(255,255,255,.14)}
   *{box-sizing:border-box}
@@ -14,13 +13,12 @@
   a{color:inherit;text-decoration:none}
   .container{max-width:1180px;margin:0 auto;padding:0 20px}
 
-  /* HEADER: uklonili smo sve što može da hvata klik pogrešno */
   header{
     position:sticky;top:0;z-index:60;
     background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
     backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
-    isolation:isolate; /* spreči „nevidljivi sloj” u nekim browserima */
+    isolation:isolate;
   }
   .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
   .brand{display:flex;align-items:center;gap:12px;font-weight:900}
@@ -42,7 +40,7 @@
   .cta-row{display:flex;gap:12px;flex-wrap:wrap}
 
   .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
-  .hero-media img{display:block;width:100%;height:min(420px,58vh);object-fit:cover;object-position:center 62%}
+  .hero-media img{display:block;width:100%;height:min(500px,70vh);object-fit:cover;object-position:center}
 
   section{padding:42px 0}
   .cards{display:grid;gap:16px;grid-template-columns:1fr}
@@ -60,11 +58,9 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <!-- SLIKE: bez base taga, koristimo relative putanje jer su fajlovi u istom folderu -->
       <img src="logo.webp" alt="ИКСАН лого">
       <span>ИКСАН • Снага правде</span>
     </div>
-    <!-- LINKOVI: relative (pošto su svi .html fajlovi u istom folderu) -->
     <nav class="nav">
       <a href="index.html" class="active">Почетна</a>
       <a href="onama.html">О нама</a>
@@ -88,8 +84,8 @@
       </div>
     </div>
     <div class="hero-media">
-      <!-- VAŽNO: fajl u repou treba da se zove tačno "hero-2.webp" (bez razmaka) -->
-      <img src="hero-2.webp" alt="ИКСАН — Снага правде">
+      <!-- Nova slika -->
+      <img src="hero-iksan.webp" alt="ИКСАН — Снага правде — Покрет грађана">
     </div>
   </div>
 </section>
