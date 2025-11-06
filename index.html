@@ -44,7 +44,6 @@
   .hero-grid{display:grid;gap:40px;align-items:center;}
   @media(min-width:960px){.hero-grid{grid-template-columns:1.1fr 0.9fr;}}
 
-  /* GLAVNI NASLOV – 3D */
   .hero-text h1{
     font-size:clamp(36px,4.8vw,56px); font-weight:400; color:#fff;
     text-align:left; line-height:1.15; margin-bottom:10px;
@@ -64,19 +63,23 @@
   .cta{display:flex;gap:16px;flex-wrap:wrap}
   .btn{
     display:inline-block; padding:12px 26px; border-radius:40px; border:none;
-    font-weight:600; color:#fff;
+    font-weight:600; color:#fff; cursor:pointer;
     background:linear-gradient(180deg,#1e3a72,#0f2552);
     box-shadow:0 6px 0 #07142c, 0 8px 22px rgba(0,0,0,.4);
     transition:transform .2s,box-shadow .2s;
   }
   .btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #07142c, 0 10px 26px rgba(0,0,0,.5)}
-  .btn-primary{
-    background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
-    box-shadow:0 6px 0 #a27e32, 0 8px 22px rgba(0,0,0,.4);
-  }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 #8a682a, 0 10px 26px rgba(0,0,0,.55)}
 
-  /* SLIKA – 3D prostor */
+  /* DONIRAJ – veće dugme i velika slova */
+  .btn-primary{
+    background:linear-gradient(180deg,#e4b85c,#d3a451);
+    color:#0b2141; border:none; font-weight:700; text-transform:uppercase;
+    font-size:1.15em; padding:16px 34px;
+    box-shadow:0 7px 0 #a27e32, 0 12px 30px rgba(0,0,0,.45);
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 9px 0 #8a682a, 0 14px 34px rgba(0,0,0,.55)}
+
+  /* SLIKA */
   .hero-media{
     position:relative; border-radius:var(--radius); overflow:hidden;
     background:#0f2552; border:1px solid #1a3a74;
@@ -84,14 +87,8 @@
     aspect-ratio:16/9; width:100%; max-width:470px; margin:0 auto;
     transform:perspective(900px) rotateY(-1.5deg);
   }
-  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) brightness(1.02)}
-  .hero-media::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(145deg,rgba(11,33,65,.25),rgba(211,164,81,.15));
-    mix-blend-mode:soft-light;pointer-events:none;
-  }
+  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;}
 
-  /* KARTICE – 3D */
   section.cards{padding:35px 0 80px;margin-top:-25px}
   .grid{display:grid;gap:32px}
   @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -104,33 +101,19 @@
     transition:transform .2s, box-shadow .2s; min-height:200px;
   }
   .card:hover{transform:translateY(-4px);box-shadow:0 14px 0 rgba(0,0,0,.35), 0 24px 44px rgba(0,0,0,.5)}
-
-  /* NASLOVI KARTICA – 3D tekst */
-  .card h3{
-    font-family:"Times New Roman", Times, serif; font-weight:500; font-size:31px; color:#fff; margin-bottom:10px;
-    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 18px rgba(0,0,0,.45);
-  }
+  .card h3{font-family:"Times New Roman", Times, serif; font-weight:500; font-size:31px; color:#fff; margin-bottom:10px;}
   .card h3 a{color:inherit}
-
   .card p{color:#fff;margin-bottom:10px}
   .card a.more{font-weight:600;color:#fff;text-decoration:none}
   .card a.more::after{content:" →"}
 
-  /* SEKCIJSKI NASLOV – 3D */
-  .statement{
-    background:rgba(17,42,84,.6); border:1px solid var(--line);
-    border-radius:var(--radius); padding:40px 30px; box-shadow:var(--shadow); margin:50px 0;
-  }
-  .statement h2{
-    font-family:"Times New Roman", Times, serif; font-weight:400; font-size:24px; margin-bottom:10px; color:var(--accent);
-    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 18px rgba(0,0,0,.45);
-  }
+  .statement{background:rgba(17,42,84,.6);border:1px solid var(--line);border-radius:var(--radius);
+    padding:40px 30px;box-shadow:var(--shadow);margin:50px 0;}
+  .statement h2{font-family:"Times New Roman", Times, serif;font-weight:400;font-size:24px;margin-bottom:10px;color:var(--accent);}
   .statement p{color:#f4f7ff}
 
-  footer{
-    background:rgba(10,20,40,.9); text-align:center; color:var(--muted);
-    border-top:1px solid var(--line); padding:24px 0; font-size:14px;
-  }
+  footer{background:rgba(10,20,40,.9);text-align:center;color:var(--muted);
+    border-top:1px solid var(--line);padding:24px 0;font-size:14px;}
   </style>
 </head>
 
@@ -161,8 +144,8 @@
         </h1>
         <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
         <div class="cta">
-          <a class="btn-primary btn" href="kontakt.html">Донирај</a>
-          <a class="btn" href="kontakt.html">Прикључи се</a>
+          <a class="btn-primary btn" href="kontakt.html">ДОНИРАЈ</a>
+          <a class="btn" href="prijaviproblem.html">Пријави проблем</a>
         </div>
       </div>
 
@@ -174,28 +157,21 @@
 
   <section class="cards">
     <div class="container grid">
-      <!-- 1 -->
       <div class="card">
         <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
         <p>Правда не сме бити на продају. Враћамо извршење у надлежност суда — достојанство грађана изнад профита.</p>
         <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више</a>
       </div>
-
-      <!-- 2 -->
       <div class="card">
         <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
         <p>Све што је стечено у мраку мора бити изнесено на светло. Народ има право да зна — ко је како стекао.</p>
         <a class="more" href="porekloimovine.html">Погледај детаље</a>
       </div>
-
-      <!-- 3 -->
       <div class="card">
         <h3><a href="sudpravda.html">Суд народу, не моћнима</a></h3>
         <p>Суд није мач власти већ штит грађана. Независност, храброст и једнак закон за све.</p>
         <a class="more" href="sudpravda.html">Прочитај више</a>
       </div>
-
-      <!-- 4 -->
       <div class="card">
         <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
         <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
