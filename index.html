@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ИКСАН • Снага правде — Почетна</title>
-<meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
-<meta name="theme-color" content="#0B2141">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ИКСАН • Снага правде — Почетна</title>
+  <meta name="description" content="Правда није роба. Време је да се врати народу. ИКСАН — покрет грађана.">
+  <meta name="theme-color" content="#0B2141">
 
-<!-- Ikonica i hero preload -->
-<link rel="icon" href="logo.webp.png?v=8">
-<link rel="preload" as="image" href="hero-2.webp?v=8">
+  <!-- Ikonice / slike -->
+  <link rel="icon" href="logo.webp">
+  <link rel="preload" as="image" href="hero-2.webp">
 
-<style>
-  :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--card:#102D57;--line:rgba(255,255,255,.14)}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
-  a{color:inherit;text-decoration:none}
-  .container{max-width:1180px;margin:0 auto;padding:0 20px}
+  <style>
+    :root{
+      --bg:#0B2141;        /* tamna državna plava */
+      --bg2:#0e264c;
+      --ink:#f7f9ff;       /* tekst svetao */
+      --muted:#cdd9f0;     /* sekundarni tekst */
+      --brand:#FFB300;     /* zlatna iz logotipa */
+      --line:rgba(255,255,255,.12);
+      --radius:18px;
+      --shadow:0 14px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      background:linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
+      color:var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
 
-  header{
-    position:sticky;top:0;z-index:60;
-    background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
-    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-  }
-  .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-  .brand img{height:42px;width:auto;border-radius:10px;display:block}
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:1000;
+      backdrop-filter: blur(8px);
+      background:linear-gradient(180deg, rgba(11,33,65,.92), rgba(11,33,65,.70));
+      border-bottom:1px solid var(--line);
+    }
+    .head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;white-space:nowrap}
+    .brand img{width:42px;height:42px;border-radius:10px;display:block}
+    .brand span{font-weight:700;letter-spacing:.2px;opacity:.95}
 
-  nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-  nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
-  nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:8px 0;border-bottom:2px solid transparent;opacity:.85;transition:opacity .2s,border-color .2s}
+    nav a:hover,nav a[aria-current="page"]{opacity:1;border-bottom-color:var(--brand)}
 
-  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800}
-  .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
+    /* Hero */
+    .hero{padding:42px 0 28px}
+    .hero-grid{display:grid;gap:24px;grid-template-columns:1fr}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}}
+    .kicker{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.35);font-weight:700;letter-spacing:.3px}
+    h1{
+      margin:10px 0 8px;
+      font-size:clamp(28px,4.8vw,54px);   /* malo veće, ali ne preglasno */
+      line-height:1.15;
+      font-weight:750;                     /* bez teškog 900 bolda */
+    }
+    .sub{
+      margin:8px 0 18px;
+      max-width:720px;
+      color:var(--muted);
+      font-size:clamp(15px,2vw,19px);
+    }
+    .hero-media{
+      position:relative;border-radius:var(--radius);overflow:hidden;
+      border:1px solid var(--line);box-shadow:var(--shadow)
+    }
+    .hero-media img{display:block;width:100%;height:min(520px,72vh);object-fit:cover}
 
-  .hero{padding:34px 0 26px}
-  .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:center}
-  @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-  .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
-  h1{margin:.6rem 0 0;font-size:clamp(30px,5.5vw,52px);line-height:1.08;font-weight:900}
-  .sub{margin:12px 0 16px;max-width:680px;color:var(--muted);font-size:clamp(15px,2.1vw,20px)}
-  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:.5rem;
+      padding:11px 16px;border-radius:999px;font-weight:750;
+      border:1px solid var(--line);background:transparent
+    }
+    .btn-primary{background:var(--brand);color:#1a2236;border-color:transparent;box-shadow:0 10px 22px rgba(255,179,0,.28)}
+    .btn:hover{transform:translateY(-1px)}
 
-  .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
-  .hero-media img{display:block;width:100%;height:min(500px,70vh);object-fit:cover;object-position:center}
+    /* Sekcije / kartice */
+    section{padding:44px 0}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
 
-  section{padding:42px 0}
-  .cards{display:grid;gap:16px;grid-template-columns:1fr}
-  @media(min-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-  .card h3{margin:0 0 8px;color:var(--gold)}
-  .cta-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:10px;opacity:.95}
-  .cta-link::after{content:"→"}
+    .card{
+      background:rgba(19,36,70,.6);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow)
+    }
+    .card img{width:100%;height:180px;object-fit:cover;display:block}
+    .card-body{padding:16px}
+    .card h3{
+      margin:0 0 6px;
+      font-size:clamp(18px,2.1vw,22px);
+      font-weight:720;                     /* normalnije, bez prejakog bolda */
+      color:var(--brand)
+    }
+    .card p{margin:0 0 10px;color:var(--muted)}
+    .card a.more{display:inline-flex;gap:.4rem;align-items:center}
+    .card a.more::after{content:"→"}
 
-  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
-  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-  .skip-link{position:absolute;left:-9999px;top:auto}
-  .skip-link:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
-  }
-</style>
+    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);text-align:center;font-size:14px}
+
+    /* a11y */
+    .skip{position:absolute;left:-9999px;top:auto}
+    .skip:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
+    :focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+
+    @media (prefers-reduced-motion: reduce){
+      *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+    }
+  </style>
 </head>
-
 <body>
-<a class="skip-link" href="#main">Прескочи на садржај</a>
+
+<a class="skip" href="#glavni">Прескочи на садржај</a>
 
 <header>
   <div class="container head">
     <div class="brand">
-      <img src="logo.webp.png?v=8" alt="ИКСАН лого" width="80" height="80">
+      <!-- fallback: ako nema logo.webp, koristi logo(1).webp -->
+      <img src="logo.webp" alt="ИКСАН лого" onerror="this.onerror=null;this.src='logo(1).webp'">
       <span>ИКСАН • Снага правде</span>
     </div>
-    <nav class="nav">
+    <nav>
       <a href="index.html" aria-current="page">Почетна</a>
       <a href="onama.html">О нама</a>
       <a href="oblasti.html">Области</a>
@@ -85,67 +140,94 @@
   </div>
 </header>
 
-<main id="main">
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="kicker">Покрет грађана</span>
-      <h1>Снага правде • ИКСАН</h1>
-      <p class="sub">Правда није роба. Време је да се врати народу.</p>
-      <div class="cta-row">
-        <a href="onama.html" class="btn btn-primary">Сазнај више</a>
-        <a href="kontakt.html" class="btn">Учлани се</a>
+<main id="glavni">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Покрет грађана</span>
+        <h1>Правда није роба. Време је да се врати народу.</h1>
+        <p class="sub">За друштво у којем закон важи једнако за све — а институције служе људима.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="onama.html">Сазнај више</a>
+          <a class="btn" href="kontakt.html">Прикључи се</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <picture>
+          <source srcset="hero-2.webp" type="image/webp">
+          <img src="hero-2.jpg" alt="ИКСАН — људи испод дуге са поруком Снага правде" loading="eager" decoding="async">
+        </picture>
       </div>
     </div>
+  </section>
 
-    <div class="hero-media">
-      <picture>
-        <source srcset="hero-2.webp?v=8" type="image/webp">
-        <img src="hero-2.jpg?v=8" alt="ИКСАН — Снага правде — Покрет грађана" width="1400" height="900" loading="eager" decoding="async">
-      </picture>
-    </div>
-  </div>
-</section>
+  <!-- TEME / SA SLIKAMA ZA SVAKI NASLOV -->
+  <section>
+    <div class="container grid">
+      <!-- 1 -->
+      <article class="card">
+        <img src="slike/izvrsitelji.webp" alt="Илустрација — укидање приватних извршитеља">
+        <div class="card-body">
+          <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
+          <p>Враћање извршења у надлежност суда — правда изнад профита.</p>
+          <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више</a>
+        </div>
+      </article>
 
-<section>
-  <div class="container cards">
-    <div class="card">
-      <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
-      <p>Враћање извршења у надлежност суда — правда изнад профита.</p>
-      <a class="cta-link" href="ukidanjeizvrsitelja.html">Сазнај више</a>
-    </div>
+      <!-- 2 -->
+      <article class="card">
+        <img src="slike/sud.webp" alt="Суд као храм правде — илустрација">
+        <div class="card-body">
+          <h3><a href="sudpravda.html">Суд мора бити храм правде</a></h3>
+          <p>Независно судство као темељ праведног друштва.</p>
+          <a class="more" href="sudpravda.html">Прочитај више</a>
+        </div>
+      </article>
 
-    <div class="card">
-      <h3><a href="sudpravda.html">Суд мора бити храм правде</a></h3>
-      <p>Независно судство као темељ праведног друштва.</p>
-      <a class="cta-link" href="sudpravda.html">Прочитај више</a>
-    </div>
+      <!-- 3 -->
+      <article class="card">
+        <img src="slike/poreklo.webp" alt="Порекло имовине и јавне набавке — илустрација">
+        <div class="card-body">
+          <h3><a href="porekloimovine.html">Порекло имовине и јавне набавке</a></h3>
+          <p>Транспарентност и једнака правила у трошењу јавног новца.</p>
+          <a class="more" href="porekloimovine.html">Погледај детаље</a>
+        </div>
+      </article>
 
-    <div class="card">
-      <h3><a href="porekloimovine.html">Порекло имовине и јавне набавке</a></h3>
-      <p>Транспарентност у јавним набавкама и контрола порекла имовине.</p>
-      <a class="cta-link" href="porekloimovine.html">Погледај детаље</a>
-    </div>
+      <!-- 4 -->
+      <article class="card">
+        <img src="slike/radnici.webp" alt="Подршка радницима и предузетницима — илустрација">
+        <div class="card-body">
+          <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
+          <p>Подршка онима који својим радом покрећу Србију.</p>
+          <a class="more" href="radnicipreduzetnici.html">Сазнај више</a>
+        </div>
+      </article>
 
-    <div class="card">
-      <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
-      <p>Подршка онима који својим радом покрећу Србију.</p>
-      <a class="cta-link" href="radnicipreduzetnici.html">Сазнај више</a>
-    </div>
+      <!-- 5 -->
+      <article class="card">
+        <img src="slike/ukljuci-se.webp" alt="Прикључи се покрету — илустрација">
+        <div class="card-body">
+          <h3><a href="kontakt.html">Прикључи се</a></h3>
+          <p>Свако може да допринесе: волонтирај, предложи решење, организуј се.</p>
+          <a class="more" href="kontakt.html">Прикључи се</a>
+        </div>
+      </article>
 
-    <div class="card">
-      <h3><a href="kontakt.html">Прикључи се</a></h3>
-      <p>Постаните део покрета — свако може да допринесе.</p>
-      <a class="cta-link" href="kontakt.html">Прикључи се</a>
+      <!-- 6 -->
+      <article class="card">
+        <img src="slike/doniraj.webp" alt="Донирај — илустрација">
+        <div class="card-body">
+          <h3><a href="kontakt.html">Донирај</a></h3>
+          <p>Подржи наш рад — свака помоћ значи и иде у јавни извештај.</p>
+          <a class="more" href="kontakt.html">Донирај</a>
+        </div>
+      </article>
     </div>
-
-    <div class="card">
-      <h3><a href="kontakt.html">Донирај</a></h3>
-      <p>Подржите наш рад донацијом — свака помоћ значи.</p>
-      <a class="cta-link" href="kontakt.html">Донирај</a>
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <footer>
