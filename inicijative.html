@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="sr-Cyrl-RS">
 <head>
   <meta charset="UTF-8" />
@@ -49,20 +49,14 @@
       font-size: clamp(24px, 4vw, 36px);
       color: var(--gold);
       font-weight: 800;
-      margin-bottom: 25px;
-    }
-
-    p {
-      color: var(--ink);
-      text-align: justify;
       margin-bottom: 14px;
-      font-size: clamp(14px, 1.7vw, 15px);
     }
 
-    strong {color: var(--gold); font-weight: 600;}
-
-    .center {text-align:center;}
-
+    /* NOVO: CTA red ispod naslova */
+    .cta-row{
+      display:flex; gap:14px; flex-wrap:wrap; justify-content:center;
+      margin: 6px 0 24px;
+    }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -75,7 +69,7 @@
       text-transform: uppercase;
       letter-spacing: .4px;
       font-size: 15px;
-      transition: all .25s ease-in-out;
+      transition: transform .2s, box-shadow .2s, background .2s;
     }
     .btn-primary {
       background: var(--gold);
@@ -84,9 +78,26 @@
       box-shadow: 0 6px 18px rgba(255,179,0,.3);
     }
     .btn-primary:hover {
-      transform: scale(1.03);
+      transform: translateY(-1px);
       box-shadow: 0 10px 28px rgba(255,179,0,.45);
     }
+    .btn-dark{
+      background:linear-gradient(180deg,#1e3a72,#0f2552);
+      color:#fff;
+      box-shadow:0 3px 0 #07142c, 0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn-dark:hover{transform:translateY(-1px);box-shadow:0 5px 0 #07142c, 0 10px 24px rgba(0,0,0,.45)}
+
+    p {
+      color: var(--ink);
+      text-align: justify;
+      margin-bottom: 14px;
+      font-size: clamp(14px, 1.7vw, 15px);
+    }
+
+    strong {color: var(--gold); font-weight: 600;}
+
+    .center {text-align:center;}
 
     footer {
       border-top: 1px solid var(--line);
@@ -124,6 +135,13 @@
   <section>
     <div class="container">
       <h1>🖊️ Укидање приватних извршитеља</h1>
+
+      <!-- NOVO: tri dugmeta ispod naslova -->
+      <div class="cta-row">
+        <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+        <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+        <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
+      </div>
 
       <p>Приватни извршитељи у Србији постали су симбол неправде и богаћења на туђој муци. Зато тражимо да буду укинути и претворени у судске извршитеље који раде за плату из буџета, а не на проценат.</p>
 
