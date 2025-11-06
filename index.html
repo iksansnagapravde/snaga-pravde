@@ -44,23 +44,33 @@
   nav a{padding:8px 0;border-bottom:2px solid transparent;opacity:.9;transition:.2s}
   nav a:hover,nav a[aria-current="page"]{opacity:1;border-color:var(--accent)}
 
+  /* HERO */
   .hero{
-    text-align:center;
     padding:90px 0 70px;
   }
-  .hero h1{
+  .hero-grid{
+    display:grid;
+    gap:40px;
+    align-items:center;
+  }
+  @media(min-width:960px){
+    .hero-grid{grid-template-columns:1.1fr 0.9fr;}
+  }
+  .hero-text h1{
     font-size:clamp(28px,4vw,46px);
     font-weight:400;
     margin-bottom:16px;
     color:#fff;
+    text-align:left;
   }
-  .hero p.sub{
+  .hero-text p.sub{
     color:var(--muted);
-    max-width:720px;
-    margin:0 auto 30px;
+    max-width:600px;
     font-size:18px;
+    margin-bottom:30px;
+    text-align:left;
   }
-  .cta{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+  .cta{display:flex;gap:16px;flex-wrap:wrap}
   .btn{
     display:inline-block;
     padding:10px 22px;
@@ -77,7 +87,20 @@
     font-weight:600;
   }
   .btn-primary:hover{background:#e9b85c}
+  .hero-media{
+    border-radius:var(--radius);
+    overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:var(--shadow);
+  }
+  .hero-media img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:cover;
+  }
 
+  /* KARTICE */
   section.cards{
     padding:80px 0;
   }
@@ -144,19 +167,24 @@
         <a href="onama.html">О нама</a>
         <a href="oblasti.html">Области</a>
         <a href="ciljevi.html">Циљеви</a>
-        <a href="inicijативе.html">Иницијативе</a>
+        <a href="inicijative.html">Иницијативе</a>
         <a href="kontakt.html">Контакт</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1>Правда није роба. Време је да се врати народу.</h1>
-      <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
-      <div class="cta">
-        <a class="btn-primary btn" href="onama.html">Сазнај више</a>
-        <a class="btn" href="kontakt.html">Прикључи се</a>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Правда није роба. Време је да се врати народу.</h1>
+        <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
+        <div class="cta">
+          <a class="btn-primary btn" href="onama.html">Сазнај више</a>
+          <a class="btn" href="kontakt.html">Прикључи се</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="hero-2.webp" alt="ИКСАН — Снага правде">
       </div>
     </div>
   </section>
