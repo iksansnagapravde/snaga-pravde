@@ -7,9 +7,9 @@
 <meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
 <meta name="theme-color" content="#0B2141">
 
-<!-- Favicon i logo -->
-<link rel="icon" href="logo.webp.png?v=6">
-<link rel="preload" as="image" href="hero-2.webp?v=6">
+<!-- Ikonica i hero preload -->
+<link rel="icon" href="logo.webp.png?v=8">
+<link rel="preload" as="image" href="hero-2.webp?v=8">
 
 <style>
   :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--card:#102D57;--line:rgba(255,255,255,.14)}
@@ -24,11 +24,10 @@
     background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
     backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
-    isolation:isolate;
   }
   .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
   .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-  .brand img{height:40px;width:auto;border-radius:10px;display:block}
+  .brand img{height:42px;width:auto;border-radius:10px;display:block}
 
   nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
   nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
@@ -57,6 +56,12 @@
   .cta-link::after{content:"→"}
 
   footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .skip-link{position:absolute;left:-9999px;top:auto}
+  .skip-link:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  }
 </style>
 </head>
 
@@ -66,7 +71,7 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <img src="logo.webp.png?v=6" alt="ИКСАН лого" width="80" height="80">
+      <img src="logo.webp.png?v=8" alt="ИКСАН лого" width="80" height="80">
       <span>ИКСАН • Снага правде</span>
     </div>
     <nav class="nav">
@@ -92,8 +97,12 @@
         <a href="kontakt.html" class="btn">Учлани се</a>
       </div>
     </div>
+
     <div class="hero-media">
-      <img src="hero-2.webp?v=6" alt="ИКСАН — Снага правде — Покрет грађана" width="1400" height="900">
+      <picture>
+        <source srcset="hero-2.webp?v=8" type="image/webp">
+        <img src="hero-2.jpg?v=8" alt="ИКСАН — Снага правде — Покрет грађана" width="1400" height="900" loading="eager" decoding="async">
+      </picture>
     </div>
   </div>
 </section>
@@ -144,5 +153,6 @@
     © 2025 ИКСАН • Снага правде — Сва права задржана.
   </div>
 </footer>
+
 </body>
 </html>
