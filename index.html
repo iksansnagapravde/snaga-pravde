@@ -6,112 +6,155 @@
   <title>ИКСАН • Снага правде — Почетна</title>
   <meta name="description" content="Правда није роба. Време је да се врати народу. ИКСАН — покрет грађана.">
   <meta name="theme-color" content="#0B2141">
-
-  <!-- Ikonice / slike -->
   <link rel="icon" href="logo.webp">
   <link rel="preload" as="image" href="hero-2.webp">
 
   <style>
+    /* ============ DESIGN TOK ============ */
     :root{
-      --bg:#0B2141;        /* tamna državna plava */
-      --bg2:#0e264c;
-      --ink:#f7f9ff;       /* tekst svetao */
-      --muted:#cdd9f0;     /* sekundarni tekst */
-      --brand:#FFB300;     /* zlatna iz logotipa */
+      /* Paleta — svedena i institucionalna */
+      --bg:#0B2141;           /* temeljna plava */
+      --bg2:#0e264c;          /* dublja plava */
+      --panel:#112a54;        /* ploha kartica */
+      --ink:#f5f7ff;          /* osnovni tekst */
+      --muted:#c7d3ea;        /* sekundarni tekst */
+      --accent:#D3A451;       /* suzdržana zlatna (ne dreči) */
       --line:rgba(255,255,255,.12);
-      --radius:18px;
-      --shadow:0 14px 40px rgba(0,0,0,.35);
+      --radius:16px;
+      --shadow:0 12px 36px rgba(0,0,0,.35);
     }
+
     *{box-sizing:border-box}
-    html,body{margin:0;height:100%}
+    html,body{height:100%;margin:0}
     body{
       background:linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
       color:var(--ink);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, sans-serif;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Cantarell,"Noto Sans",Arial,sans-serif;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
+      line-height:1.55;
     }
+    .container{max-width:1160px;margin:0 auto;padding:0 20px}
     a{color:inherit;text-decoration:none}
-    .container{max-width:1200px;margin:0 auto;padding:0 20px}
 
     /* Header */
     header{
       position:sticky;top:0;z-index:1000;
       backdrop-filter: blur(8px);
-      background:linear-gradient(180deg, rgba(11,33,65,.92), rgba(11,33,65,.70));
+      background:linear-gradient(180deg,rgba(11,33,65,.92),rgba(11,33,65,.72));
       border-bottom:1px solid var(--line);
     }
     .head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
-    .brand{display:flex;align-items:center;gap:12px;white-space:nowrap}
-    .brand img{width:42px;height:42px;border-radius:10px;display:block}
-    .brand span{font-weight:700;letter-spacing:.2px;opacity:.95}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:40px;height:40px;border-radius:10px}
+    .brand span{font-weight:600;letter-spacing:.2px;opacity:.92}
 
     nav{display:flex;gap:18px;flex-wrap:wrap}
-    nav a{padding:8px 0;border-bottom:2px solid transparent;opacity:.85;transition:opacity .2s,border-color .2s}
-    nav a:hover,nav a[aria-current="page"]{opacity:1;border-bottom-color:var(--brand)}
+    nav a{
+      padding:10px 0;border-bottom:2px solid transparent;opacity:.9;
+      font-weight:600;letter-spacing:.1px;
+      transition:border-color .2s,opacity .2s;
+    }
+    nav a:hover,nav a[aria-current="page"]{opacity:1;border-bottom-color:var(--accent)}
 
-    /* Hero */
-    .hero{padding:42px 0 28px}
-    .hero-grid{display:grid;gap:24px;grid-template-columns:1fr}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:center}}
-    .kicker{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.35);font-weight:700;letter-spacing:.3px}
+    /* Hero – ozbiljno, mirno, sa serif naslovom */
+    .hero{padding:48px 0 28px}
+    .hero-grid{display:grid;gap:28px;grid-template-columns:1fr}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+
+    .kicker{
+      display:inline-block;padding:6px 12px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(10,20,40,.35);letter-spacing:.25px;
+      font-variant-caps:all-small-caps;font-weight:650;
+    }
     h1{
-      margin:10px 0 8px;
-      font-size:clamp(28px,4.8vw,54px);   /* malo veće, ali ne preglasno */
-      line-height:1.15;
-      font-weight:750;                     /* bez teškog 900 bolda */
+      margin:12px 0 10px;
+      font-family: ui-serif, Georgia, "Times New Roman", serif; /* pravnički ton */
+      font-size:clamp(26px,4.4vw,46px);
+      line-height:1.18;
+      font-weight:600;                 /* bez teškog bolda */
+      letter-spacing:.2px;
     }
     .sub{
-      margin:8px 0 18px;
-      max-width:720px;
-      color:var(--muted);
-      font-size:clamp(15px,2vw,19px);
+      margin:8px 0 18px;max-width:720px;color:var(--muted);
+      font-size:clamp(15px,1.9vw,18.5px);
     }
+
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:.55rem;
+      padding:11px 16px;border-radius:999px;font-weight:650;
+      border:1px solid var(--line);background:transparent;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .btn-primary{
+      background:var(--accent);color:#122036;border-color:transparent;
+      box-shadow:0 10px 22px rgba(211,164,81,.22);
+    }
+    .btn:hover{transform:translateY(-1px)}
+
     .hero-media{
       position:relative;border-radius:var(--radius);overflow:hidden;
       border:1px solid var(--line);box-shadow:var(--shadow)
     }
+    .hero-media::after{
+      /* lagani „pravni“ filter – čuva dostojanstvo fotografije */
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(10,20,40,.08),rgba(10,20,40,.22));
+      pointer-events:none;
+    }
     .hero-media img{display:block;width:100%;height:min(520px,72vh);object-fit:cover}
 
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{
-      display:inline-flex;align-items:center;gap:.5rem;
-      padding:11px 16px;border-radius:999px;font-weight:750;
-      border:1px solid var(--line);background:transparent
-    }
-    .btn-primary{background:var(--brand);color:#1a2236;border-color:transparent;box-shadow:0 10px 22px rgba(255,179,0,.28)}
-    .btn:hover{transform:translateY(-1px)}
-
-    /* Sekcije / kartice */
+    /* Sekcija stubova – bez slika, čista tipografija */
     section{padding:44px 0}
     .grid{display:grid;gap:18px}
     @media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
 
     .card{
-      background:rgba(19,36,70,.6);
+      background:var(--panel);
       border:1px solid var(--line);
       border-radius:var(--radius);
-      overflow:hidden;
-      box-shadow:var(--shadow)
+      padding:18px 18px 16px;
+      box-shadow:var(--shadow);
+      transition:transform .15s ease, box-shadow .15s ease;
+      min-height:176px;
     }
-    .card img{width:100%;height:180px;object-fit:cover;display:block}
-    .card-body{padding:16px}
+    .card:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(0,0,0,.38)}
     .card h3{
-      margin:0 0 6px;
+      margin:2px 0 8px;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
       font-size:clamp(18px,2.1vw,22px);
-      font-weight:720;                     /* normalnije, bez prejakog bolda */
-      color:var(--brand)
+      font-weight:600;
+      color:var(--accent);
+      letter-spacing:.15px;
     }
-    .card p{margin:0 0 10px;color:var(--muted)}
-    .card a.more{display:inline-flex;gap:.4rem;align-items:center}
+    .card p{margin:0 0 12px;color:var(--muted)}
+    .card a.more{display:inline-flex;align-items:center;gap:.45rem;font-weight:650}
     .card a.more::after{content:"→"}
 
-    footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);text-align:center;font-size:14px}
+    /* Sekcija „о нама“ (kratka kredibilna poruka) */
+    .statement{
+      background:linear-gradient(180deg,rgba(17,42,84,.6),rgba(17,42,84,.4));
+      border:1px solid var(--line);border-radius:var(--radius);
+      padding:20px 22px;box-shadow:var(--shadow)
+    }
+    .statement h2{
+      margin:0 0 8px;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-size:clamp(20px,2.4vw,26px);
+      font-weight:600;letter-spacing:.15px;color:var(--accent);
+    }
+    .statement p{margin:0;color:var(--ink)}
 
-    /* a11y */
+    footer{
+      border-top:1px solid var(--line);padding:28px 0;color:var(--muted);
+      text-align:center;font-size:14px
+    }
+
+    /* A11y */
     .skip{position:absolute;left:-9999px;top:auto}
     .skip:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
-    :focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 
     @media (prefers-reduced-motion: reduce){
       *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
@@ -125,7 +168,6 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <!-- fallback: ako nema logo.webp, koristi logo(1).webp -->
       <img src="logo.webp" alt="ИКСАН лого" onerror="this.onerror=null;this.src='logo(1).webp'">
       <span>ИКСАН • Снага правде</span>
     </div>
@@ -141,14 +183,13 @@
 </header>
 
 <main id="glavni">
-
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <span class="kicker">Покрет грађана</span>
         <h1>Правда није роба. Време је да се врати народу.</h1>
-        <p class="sub">За друштво у којем закон важи једнако за све — а институције служе људима.</p>
+        <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
         <div class="cta">
           <a class="btn btn-primary" href="onama.html">Сазнај више</a>
           <a class="btn" href="kontakt.html">Прикључи се</a>
@@ -164,68 +205,55 @@
     </div>
   </section>
 
-  <!-- TEME / SA SLIKAMA ZA SVAKI NASLOV -->
+  <!-- Стубови програма — bez slika, čista tipografija -->
   <section>
     <div class="container grid">
-      <!-- 1 -->
       <article class="card">
-        <img src="slike/izvrsitelji.webp" alt="Илустрација — укидање приватних извршитеља">
-        <div class="card-body">
-          <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
-          <p>Враћање извршења у надлежност суда — правда изнад профита.</p>
-          <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више</a>
-        </div>
+        <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
+        <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
+        <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више</a>
       </article>
 
-      <!-- 2 -->
       <article class="card">
-        <img src="slike/sud.webp" alt="Суд као храм правде — илустрација">
-        <div class="card-body">
-          <h3><a href="sudpravda.html">Суд мора бити храм правде</a></h3>
-          <p>Независно судство као темељ праведног друштва.</p>
-          <a class="more" href="sudpravda.html">Прочитај више</a>
-        </div>
+        <h3><a href="sudpravda.html">Суд мора бити храм правде</a></h3>
+        <p>Независно и ефикасно судство — темељ праведног поретка.</p>
+        <a class="more" href="sudpravda.html">Прочитај више</a>
       </article>
 
-      <!-- 3 -->
       <article class="card">
-        <img src="slike/poreklo.webp" alt="Порекло имовине и јавне набавке — илустрација">
-        <div class="card-body">
-          <h3><a href="porekloimovine.html">Порекло имовине и јавне набавке</a></h3>
-          <p>Транспарентност и једнака правила у трошењу јавног новца.</p>
-          <a class="more" href="porekloimovine.html">Погледај детаље</a>
-        </div>
+        <h3><a href="porekloimovine.html">Порекло имовине и јавне набавке</a></h3>
+        <p>Потпуна транспарентност и контролисани сукоб интереса.</p>
+        <a class="more" href="porekloimovine.html">Погледај детаље</a>
       </article>
 
-      <!-- 4 -->
       <article class="card">
-        <img src="slike/radnici.webp" alt="Подршка радницима и предузетницима — илустрација">
-        <div class="card-body">
-          <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
-          <p>Подршка онима који својим радом покрећу Србију.</p>
-          <a class="more" href="radnicipreduzetnici.html">Сазнај више</a>
-        </div>
+        <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
+        <p>Правила једнака за све — рад се исплати, иницијатива се подстиче.</p>
+        <a class="more" href="radnicipreduzetnici.html">Сазнај више</a>
       </article>
 
-      <!-- 5 -->
       <article class="card">
-        <img src="slike/ukljuci-se.webp" alt="Прикључи се покрету — илустрација">
-        <div class="card-body">
-          <h3><a href="kontakt.html">Прикључи се</a></h3>
-          <p>Свако може да допринесе: волонтирај, предложи решење, организуј се.</p>
-          <a class="more" href="kontakt.html">Прикључи се</a>
-        </div>
+        <h3><a href="kontakt.html">Прикључи се</a></h3>
+        <p>Покрет расте знањем и радом. Добро дошли.</p>
+        <a class="more" href="kontakt.html">Прикључи се</a>
       </article>
 
-      <!-- 6 -->
       <article class="card">
-        <img src="slike/doniraj.webp" alt="Донирај — илустрација">
-        <div class="card-body">
-          <h3><a href="kontakt.html">Донирај</a></h3>
-          <p>Подржи наш рад — свака помоћ значи и иде у јавни извештај.</p>
-          <a class="more" href="kontakt.html">Донирај</a>
-        </div>
+        <h3><a href="kontakt.html">Донирај</a></h3>
+        <p>Свака подршка улази у јавни извештај. Одговорно и проверљиво.</p>
+        <a class="more" href="kontakt.html">Донирај</a>
       </article>
+    </div>
+  </section>
+
+  <!-- Кратка изјава (поверење/кредибилитет) -->
+  <section>
+    <div class="container">
+      <div class="statement">
+        <h2>Наш стандард</h2>
+        <p>Право, чињенице и јавни интерес. Независне институције, јасна правила и једнака примена закона —
+           то је политика која гради поверење.</p>
+      </div>
     </div>
   </section>
 </main>
