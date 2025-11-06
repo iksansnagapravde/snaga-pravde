@@ -8,79 +8,101 @@
   <meta name="theme-color" content="#0B2141">
   <link rel="icon" href="logo.webp">
   <link rel="preload" as="image" href="hero-2.webp">
+
   <style>
     :root{
-      --bg:#0B2141; --bg2:#102D57; --ink:#cfe1ff; --gold:#FFB300; --card:#102D57; --line:rgba(255,255,255,.14);
-      --w: 1040px;
+      --blue:#0B2141; --blue2:#102D57;
+      --gold:#D3A451; --ink:#cfe1ff;
+      --line:rgba(255,255,255,.14);
+      --radius:16px;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      background:var(--bg); color:var(--ink);
-      font-family:system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,Cantarell,"Noto Sans",Arial,sans-serif;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      line-height:1.7; font-size:0.95rem;
+      font-family:"Times New Roman"; line-height:1.7;
+      background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
+      color:var(--ink); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
     }
     a{color:inherit;text-decoration:none}
-    .container{max-width:var(--w);margin:0 auto;padding:0 20px}
+    .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* Header (ujednačen sa ostalim stranicama) */
+    /* Header */
     header{
       position:sticky; top:0; z-index:60;
-      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.82));
+      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
       border-bottom:1px solid var(--line); backdrop-filter:blur(8px);
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
+    .brand{display:flex;align-items:center;gap:12px}
     .brand img{height:40px;width:auto;border-radius:10px;display:block}
-    .brand a{display:flex;align-items:center;gap:12px}
-    nav.nav{display:flex;gap:18px;font-weight:700;flex-wrap:wrap}
-    nav.nav a{opacity:.85;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
+    nav.nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav.nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
     nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
     /* Hero */
-    .hero{padding:28px 0 22px}
-    .hero-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:center}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
-    .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
+    .hero{padding:40px 0 24px}
+    .hero-grid{display:grid;gap:24px;grid-template-columns:1fr;align-items:center}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:700;letter-spacing:.3px}
     h1{
-      margin:.6rem 0 0; line-height:1.12;
-      font-size:clamp(26px,4.5vw,40px);
-      color:var(--gold); font-weight:800; letter-spacing:.3px;
+      margin:.6rem 0 0; line-height:1.15; font-weight:400;
+      font-size:clamp(36px,4.8vw,56px);
+      color:var(--gold);
+      text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 22px rgba(0,0,0,.45);
     }
-    .sub{margin:10px 0 14px;max-width:720px;color:var(--ink);opacity:.95;font-size:clamp(14px,2vw,16px)}
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800;letter-spacing:.3px;font-size:.95rem}
-    .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
-    .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
+    .sub{margin:12px 0 18px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
+    .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:14px 32px;border-radius:40px;border:none;
+      font-weight:700;font-size:18px;letter-spacing:.4px;text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s; text-align:center; cursor:pointer;
+    }
+    .btn-primary{
+      background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
+      box-shadow:0 3px 0 #8a682a, 0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 5px 0 #74561f, 0 10px 24px rgba(0,0,0,.45)}
+    .btn-dark{
+      background:linear-gradient(180deg,#1e3a72,#0f2552); color:#fff;
+      box-shadow:0 3px 0 #07142c, 0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn-dark:hover{transform:translateY(-2px);box-shadow:0 5px 0 #07142c, 0 10px 24px rgba(0,0,0,.45)}
+
+    .hero-media{
+      position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+      box-shadow:0 12px 28px rgba(0,0,0,.35);
+    }
     .hero-media img{display:block;width:100%;height:min(420px,60vh);object-fit:cover;object-position:center}
 
     /* Sections */
     section{padding:28px 0}
-    .grid{display:grid;gap:14px;grid-template-columns:1fr}
+    .grid{display:grid;gap:16px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-    h2{margin:0 0 8px;color:#fff;font-size:clamp(18px,2.6vw,22px);font-weight:700}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-    .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(14px,1.9vw,15.5px)}
+    h2{margin:0 0 8px;color:#fff;font-size:clamp(20px,2.8vw,24px);font-weight:600}
+    .card{
+      background:rgba(16,45,87,.85);
+      border:1px solid var(--line); border-radius:var(--radius);
+      padding:18px; box-shadow:0 12px 28px rgba(0,0,0,.28);
+    }
+    .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(15px,1.9vw,16.5px)}
     .list{padding-left:18px}
 
-    /* Donacijski blok – jasan i poverljiv */
-    .donate{background:linear-gradient(180deg,rgba(16,45,87,.85),rgba(16,45,87,.7));border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 14px 36px rgba(0,0,0,.28)}
-    .donate h3{margin:0 0 6px;color:#fff;font-size:clamp(18px,2.4vw,21px)}
-    .donate p{margin:0 0 12px}
-    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 12px}
-    .pill{padding:8px 12px;border-radius:999px;border:1px solid var(--line);opacity:.95}
-    .donate .actions{display:flex;gap:10px;flex-wrap:wrap}
-    .btn-ghost{background:transparent;color:#fff}
+    /* Bottom CTA block (čist, institucionalan) */
+    .cta-block{
+      background:rgba(17,42,84,.60);
+      border:1px solid var(--line); border-radius:var(--radius);
+      padding:22px; box-shadow:0 12px 28px rgba(0,0,0,.30);
+      text-align:center;
+    }
+    .cta-block h3{
+      color:#fff; font-weight:600; font-size:clamp(20px,2.6vw,24px);
+      margin-bottom:8px;
+    }
+    .cta-block p{max-width:880px;margin:0 auto 16px}
 
-    footer{border-top:1px solid var(--line);padding:22px 0;color:var(--ink);text-align:center;opacity:.8;margin-top:34px;font-size:.9rem}
-
-    :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-    .skip-link{position:absolute;left:-9999px;top:auto}
-    .skip-link:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--ink);text-align:center;opacity:.8;margin-top:36px;font-size:.9rem}
   </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Прескочи на садржај</a>
 
 <header>
   <div class="container head">
@@ -101,7 +123,7 @@
   </div>
 </header>
 
-<main id="main">
+<main>
 
   <!-- HERO -->
   <section class="hero">
@@ -110,13 +132,17 @@
         <span class="kicker">О нама</span>
         <h1>Иксан — покрет грађана за правду, достојанство и заједништво</h1>
         <p class="sub">Када правда постане роба — време је да се врати народу.</p>
+
+        <!-- TRI DUGMETA -->
         <div class="cta-row">
-          <a href="kontakt.html" class="btn btn-primary">Учлани се</a>
-          <a href="ukidanjeizvrsitelja.html" class="btn">Погледај иницијативе</a>
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+          <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+          <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
         </div>
       </div>
+
       <div class="hero-media">
-        <img src="hero-2.webp" alt="ИКСАН — Покрет грађана" width="1400" height="900">
+        <img src="hero-2.webp" alt="ИКСАН — Покрет грађана" width="1400" height="900" loading="eager" decoding="async">
       </div>
     </div>
   </section>
@@ -165,21 +191,15 @@
     </div>
   </section>
 
-  <!-- DONATE / JOIN (snažan, ali čist CTA) -->
+  <!-- BOTTOM CTA -->
   <section>
-    <div class="container donate">
+    <div class="container cta-block">
       <h3>Снага правде расте твојом подршком</h3>
-      <p>Свако парче истине које одбранимо има цену. Твоја донација нам омогућава бесплатну правну помоћ, праћење поступака и покретање иницијатива које мењају праксу.</p>
-
-      <div class="pill-row" aria-hidden="true">
-        <span class="pill">✓ Бесплатна правна помоћ</span>
-        <span class="pill">✓ Надзор над институцијама</span>
-        <span class="pill">✓ Јавне иницијативе</span>
-      </div>
-
-      <div class="actions">
-        <a href="doniraj.html" class="btn btn-primary">Донирај</a>
-        <a href="kontakt.html" class="btn btn-ghost">Постави питање</a>
+      <p>Твоја помоћ нам омогућава бесплатну правну подршку, надзор над институцијама и покретање иницијатива које мењају праксу.</p>
+      <div class="cta-row" style="justify-content:center;margin-top:10px">
+        <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+        <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+        <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
       </div>
     </div>
   </section>
@@ -191,5 +211,6 @@
     © 2025 ИКСАН • Снага правде — Сва права задржана.
   </div>
 </footer>
+
 </body>
 </html>
