@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="sr">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ИКСАН • Снага правде — Почетна</title>
-<meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
-<style>
+# Create a fully working minimal site with the fixes:
+# - ASCII-only filename for "ukidanjeizvrsitelja.html"
+# - Remove/replace missing inicijative.html (we'll create a placeholder so nothing 404s)
+# - Shared header/footer and styles
+# - Valid aria-current and skip link
+# - Include small .webp images so hero/logo always display
+# - Package everything as a zip for easy upload to GitHub Pages
+
+import os, io, zipfile, textwrap, base64
+from PIL import Image, ImageDraw, ImageFont
+
+root = "/mnt/data/iksan_snaga_pravde_site"
+os.makedirs(root, exist_ok=True)
+
+# Generate simple WEBP images (logo and hero)
+def make_webp(path, size, text):
+    img = Image.new("RGB", size, (11, 33, 65))  # dark blue background
+    d = ImageDraw.Draw(img)
+    # simple gold rectangle stripe
+    d.rectangle([0, size[1]-10, size[0], size[1]], fill=(255,179,0))
+    # try to draw centered text
+    try:
+        font = ImageFont.truetype("DejaVuSans-Bold.ttf", 64 if size[0] > 600 else 24)
+    except:
+        font = ImageFont.load_default()
+    tw, th = d.textsize(text, font=font)
+    d.text(((size[0]-tw)//2, (size[1]-th)//2), text, fill=(255,255,255), font=font)
+    img.save(path, "WEBP")
+
+make_webp(os.path.join(root, "logo.webp"), (160,160), "ИКСАН")
+make_webp(os.path.join(root, "hero-2.webp"), (1400, 900), "СНАГА ПРАВДЕ")
+
+# Shared CSS (inline in pages, but also create a styles file if needed)
+base_css = """
   :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--card:#102D57;--line:rgba(255,255,255,.14)}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
@@ -25,8 +51,8 @@
   .brand img{height:40px;width:auto;border-radius:10px;display:block}
 
   nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-  nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px}
-  nav.nav a.active, nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+  nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
+  nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
   .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800}
   .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
@@ -51,27 +77,68 @@
   .cta-link::after{content:"→"}
 
   footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
-</style>
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .skip-link{position:absolute;left:-9999px;top:auto}
+  .skip-link:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important}
+  }
+"""
+
+# Helper to render a page with a given title and content, marking the current nav
+def render_page(title, current, body_html):
+    nav_items = [
+        ("index.html", "Почетна"),
+        ("onama.html", "О нама"),
+        ("oblasti.html", "Области"),
+        ("ciljevi.html", "Циљеви"),
+        ("inicijative.html", "Иницијативе"),
+        ("kontakt.html", "Контакт"),
+    ]
+    nav_html = []
+    for href, label in nav_items:
+        aria = ' aria-current="page"' if href == current else ""
+        nav_html.append(f'<a href="{href}"{aria}>{label}</a>')
+    nav_html = "\n      ".join(nav_html)
+    template = f"""<!DOCTYPE html>
+<html lang="sr-Cyrl-RS">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
+<meta name="theme-color" content="#0B2141">
+<link rel="icon" href="logo.webp">
+<link rel="preload" as="image" href="hero-2.webp">
+<style>{base_css}</style>
 </head>
 <body>
-
+<a class="skip-link" href="#main">Прескочи на садржај</a>
 <header>
   <div class="container head">
     <div class="brand">
-      <img src="logo.webp" alt="ИКСАН лого">
+      <img src="logo.webp" alt="ИКСАН лого" width="80" height="80">
       <span>ИКСАН • Снага правде</span>
     </div>
     <nav class="nav">
-      <a href="index.html" class="active">Почетна</a>
-      <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
+      {nav_html}
     </nav>
   </div>
 </header>
+<main id="main">
+{body_html}
+</main>
+<footer>
+  <div class="container">
+    © 2025 ИКСАН • Снага правде — Сва права задржана.
+  </div>
+</footer>
+</body>
+</html>"""
+    return template
 
+# Index page content
+index_body = """
 <section class="hero">
   <div class="container hero-grid">
     <div>
@@ -84,8 +151,7 @@
       </div>
     </div>
     <div class="hero-media">
-      <!-- Nova slika -->
-      <img src="hero-2.webp" alt="ИКСАН — Снага правде — Покрет грађана">
+      <img src="hero-2.webp" alt="ИКСАН — Снага правде — Покрет грађана" width="1400" height="900">
     </div>
   </div>
 </section>
@@ -93,9 +159,9 @@
 <section>
   <div class="container cards">
     <div class="card">
-      <h3><a href="ukidanjeizvr%C5%A1itelja.html">Укидање приватних извршитеља</a></h3>
+      <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
       <p>Враћање извршења у надлежност суда — правда изнад профита.</p>
-      <a class="cta-link" href="ukidanjeizvr%C5%A1itelja.html">Сазнај више</a>
+      <a class="cta-link" href="ukidanjeizvrsitelja.html">Сазнај више</a>
     </div>
 
     <div class="card">
@@ -124,17 +190,53 @@
 
     <div class="card">
       <h3><a href="kontakt.html">Донирај</a></h3>
-      <p>Подржите наш рад донацијом — свака помоћ значи.</p>
+      <p>Подржите наш рад донацијом — свака помоћ значи.</п>
       <a class="cta-link" href="kontakt.html">Донирај</a>
     </div>
   </div>
 </section>
+"""
 
-<footer>
-  <div class="container">
-    © 2025 ИКСАН • Снага правде — Сва права задржана.
-  </div>
-</footer>
+# Fix a small typo: Cyrillic 'п' in closing p tag we accidentally typed incorrect 'п'
+index_body = index_body.replace("</п>", "</p>")
 
-</body>
-</html>
+pages = {
+    "index.html": render_page("ИКСАН • Снага правде — Почетна", "index.html", index_body),
+    "onama.html": render_page("О нама — ИКСАН • Снага правде", "onama.html",
+                              '<section><div class="container"><h1>О нама</h1><p>Ово је уводна страница са основним информацијама.</p></div></section>'),
+    "oblasti.html": render_page("Области — ИКСАН • Снага правде", "oblasti.html",
+                                '<section><div class="container"><h1>Области</h1><p>Темe рада и приоритети.</p></div></section>'),
+    "ciljevi.html": render_page("Циљеви — ИКСАН • Снага правде", "ciljevi.html",
+                                '<section><div class="container"><h1>Циљеви</h1><p>Наши кључни циљеви и мере.</p></div></section>'),
+    "inicijative.html": render_page("Иницијативе — ИКСАН • Снага правде", "inicijative.html",
+                                    '<section><div class="container"><h1>Иницијативе</h1><p>Листа актуелних иницијатива.</p></div></section>'),
+    "kontakt.html": render_page("Контакт — ИКСАН • Снага правде", "kontakt.html",
+                                '<section><div class="container"><h1>Контакт</h1><p>Пишите нам: <a href="mailto:kontakt@example.org">kontakt@example.org</a></p></div></section>'),
+    "porekloimovine.html": render_page("Порекло имовине — ИКСАН • Снага правде", "oblasti.html",
+                                       '<section><div class="container"><h1>Порекло имовине и јавне набавке</h1><p>Предлози и мере.</p></div></section>'),
+    "radnicipreduzetnici.html": render_page("Радници и предузетници — ИКСАН • Снага правде", "oblasti.html",
+                                            '<section><div class="container"><h1>Радници и предузетници</h1><p>Подршка и реформе.</p></div></section>'),
+    "sudpravda.html": render_page("Суд — храм правде — ИКСАН • Снага правде", "oblasti.html",
+                                  '<section><div class="container"><h1>Суд мора бити храм правде</h1><p>Независност судства.</p></div></section>'),
+    "ukidanjeizvrsitelja.html": render_page("Укидање приватних извршитеља — ИКСАН • Снага правде", "oblasti.html",
+                                            '<section><div class="container"><h1>Укидање приватних извршитеља</h1><p>Враћање извршења у надлежност суда.</p></div></section>'),
+}
+
+# Write files
+for name, content in pages.items():
+    with open(os.path.join(root, name), "w", encoding="utf-8") as f:
+        f.write(content)
+
+# Add .nojekyll to ensure GitHub Pages serves as static
+with open(os.path.join(root, ".nojekyll"), "w", encoding="utf-8") as f:
+    f.write("")
+
+# Create ZIP
+zip_path = "/mnt/data/iksan_snaga_pravde_site.zip"
+with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
+    for file in os.listdir(root):
+        z.write(os.path.join(root, file), arcname=file)
+
+zip_path
+Result
+'/mnt/data/iksan_snaga_pravde_site.zip'
