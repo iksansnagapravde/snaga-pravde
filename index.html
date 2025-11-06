@@ -45,7 +45,7 @@
   nav a:hover,nav a[aria-current="page"]{opacity:1;border-color:var(--accent)}
 
   /* HERO */
-  .hero{ padding:60px 0 20px; } /* podignuto */
+  .hero{ padding:50px 0 20px; } /* još malo podignuto */
   .hero-grid{
     display:grid; gap:40px; align-items:center;
   }
@@ -77,7 +77,7 @@
   .hero-media{
     position:relative; border-radius:var(--radius); overflow:hidden;
     border:1px solid var(--line); box-shadow:var(--shadow);
-    width:380px; height:380px; margin:0 auto;
+    width:300px; height:300px; margin:0 auto; /* manja slika 10x10cm aproks. */
   }
   .hero-media img{ display:block; width:100%; height:100%; object-fit:cover; }
   .hero-media::after{
@@ -88,8 +88,8 @@
 
   /* KARTICE */
   section.cards{
-    padding:25px 0 80px;   /* još bliže hero sekciji */
-    margin-top:-55px;      /* podignuto ka slici */
+    padding:20px 0 80px;   /* još bliže hero sekciji */
+    margin-top:-60px;      /* podignuto ka slici */
   }
   .grid{display:grid;gap:32px}
   @media(min-width:900px){ .grid{ grid-template-columns:repeat(2,1fr); } }
@@ -108,7 +108,7 @@
   .card h3{
     font-family:"Times New Roman", Times, serif;
     font-weight:500;
-    font-size:29px;  /* povećano za 20% */
+    font-size:30px;  /* još malo povećano */
     color:#fff;
     margin-bottom:10px;
   }
