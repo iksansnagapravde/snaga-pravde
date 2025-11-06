@@ -1,92 +1,147 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Укидање приватних извршитеља — ИКСАН • Снага правде</title>
-<meta name="description" content="ИКСАН — покрет грађана. Правда није роба. Време је да се врати народу.">
-<meta name="theme-color" content="#0B2141">
-<link rel="icon" href="logo.webp">
-<link rel="preload" as="image" href="hero-2.webp">
-<style>
-  :root{--bg:#0B2141;--bg2:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--card:#102D57;--line:rgba(255,255,255,.14)}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
-  a{color:inherit;text-decoration:none}
-  .container{max-width:1180px;margin:0 auto;padding:0 20px}
-
-  header{
-    position:sticky;top:0;z-index:60;
-    background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
-    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
-    isolation:isolate;
-  }
-  .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-  .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-  .brand img{height:40px;width:auto;border-radius:10px;display:block}
-
-  nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-  nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
-  nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
-
-  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-weight:800}
-  .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
-
-  .hero{padding:34px 0 26px}
-  .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:center}
-  @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-  .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:800;letter-spacing:.3px}
-  h1{margin:.6rem 0 0;font-size:clamp(30px,5.5vw,52px);line-height:1.08;font-weight:900}
-  .sub{margin:12px 0 16px;max-width:680px;color:var(--muted);font-size:clamp(15px,2.1vw,20px)}
-  .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-
-  .hero-media{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 16px 44px rgba(0,0,0,.35)}
-  .hero-media img{display:block;width:100%;height:min(500px,70vh);object-fit:cover;object-position:center}
-
-  section{padding:42px 0}
-  .cards{display:grid;gap:16px;grid-template-columns:1fr}
-  @media(min-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-  .card h3{margin:0 0 8px;color:var(--gold)}
-  .cta-link{display:inline-flex;align-items:center;gap:.4rem;margin-top:10px;opacity:.95}
-  .cta-link::after{content:"→"}
-
-  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center}
-  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-  .skip-link{position:absolute;left:-9999px;top:auto}
-  .skip-link:focus{left:10px;top:10px;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Укидање приватних извршитеља — ИКСАН • Снага правде</title>
+  <meta name="description" content="ИКСАН — покрет грађана. Правда није проценат — правда припада народу.">
+  <link rel="icon" href="logo.webp">
+  <style>
+    :root{
+      --bg:#0B2141;--card:#102D57;--ink:#fff;--muted:#cfe1ff;
+      --gold:#FFB300;--line:rgba(255,255,255,.14);
+    }
+    body{margin:0;background:var(--bg);color:var(--ink);
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif;}
+    a{color:var(--gold);text-decoration:none}
+    header,footer{border-bottom:1px solid var(--line);text-align:center;padding:16px}
+    footer{border-top:1px solid var(--line);border-bottom:none;color:var(--muted);margin-top:40px;}
+    .container{max-width:960px;margin:0 auto;padding:20px}
+    h1{color:var(--gold);font-size:clamp(26px,4vw,42px);margin-bottom:1rem;text-align:center}
+    h2{color:var(--gold);margin-top:2rem}
+    p{line-height:1.7;color:var(--muted)}
+    ul{line-height:1.7;color:var(--muted)}
+    section{background:var(--card);border:1px solid var(--line);
+      border-radius:16px;padding:24px;margin:20px 0;box-shadow:0 12px 34px rgba(0,0,0,.25)}
+    .btn{
+      display:inline-block;margin-top:16px;padding:14px 26px;
+      background:var(--gold);color:var(--bg);font-weight:900;border-radius:999px;
+      text-transform:uppercase;letter-spacing:.5px;
+      box-shadow:0 6px 18px rgba(255,179,0,.35);transition:transform .15s ease;
+    }
+    .btn:hover{transform:scale(1.05);box-shadow:0 8px 22px rgba(255,179,0,.45);}
+    .back{display:inline-block;margin-top:40px;color:var(--muted)}
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Прескочи на садржај</a>
+
 <header>
-  <div class="container head">
-    <div class="brand">
-      <img src="logo.webp" alt="ИКСАН лого" width="80" height="80">
-      <span>ИКСАН • Снага правде</span>
-    </div>
-    <nav class="nav">
-      <a href="index.html">Почетна</a>
-      <a href="onama.html">О нама</a>
-      <a href="oblasti.html" aria-current="page">Области</a>
-      <a href="ciljevi.html">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
-    </nav>
-  </div>
+  <h1>⚖️ Укидање приватних извршитеља</h1>
+  <p>Правда није проценат — правда припада народу.</p>
 </header>
-<main id="main">
-<section><div class="container"><h1>Укидање приватних извршитеља</h1><p>Враћање извршења у надлежност суда.</p></div></section>
+
+<main class="container">
+
+<section>
+  <p>Приватни извршитељи у Србији постали су симбол неправде, страха и бахатости. 
+  Они не спроводе правду — већ профит. Уместо да буду продужена рука суда, 
+  постали су армија која ради за проценат, не за правду.</p>
+
+  <p>Сваки дан, грађани губе домове, пензије и плате због дугова који су често више пута плаћени. 
+  Један дуг од неколико хиљада евра постаје пет пута већи због трошкова, камата и самовоље.</p>
+</section>
+
+<section>
+  <h2>🛑 Овај модел је наметнут — али није судбина</h2>
+  <p>Такозвани „француско-белгијски модел“ наметнут је Србији 2011. године, 
+  а ниједна власт до данас није имала храбрости да га укине. 
+  Сада је време да то уради народ — својим потписом, гласом и јединством.</p>
+</section>
+
+<section>
+  <h2>💥 Злоупотребе и срамота система</h2>
+  <p>Уместо да буду снага правде, поједини приватни извршитељи постали су симбол похлепе. 
+  Њихова зарада се рачуна као проценат на укупан дуг — са адвокатским трошковима и каматама. 
+  Што је грађанин сиромашнији, њихова зарада је већа.</p>
+  <p>Систем је направљен тако да се дуг никада не заврши, већ да траје док човек не изгуби све.</p>
+</section>
+
+<section>
+  <h2>⚖️ Судови као проточни бојлери неправде</h2>
+  <p>Судови су постали проточни бојлери који само потврђују папире, без разматрања суштине. 
+  Када суд усваја неосноване предмете, даје легитимитет насиљу над грађанима 
+  и охрабрује извршитеље да наставе још жешће. 
+  Суд више не суди — он само оверава понижење.</p>
+</section>
+
+<section>
+  <h2>🚨 Живот под извршитељима</h2>
+  <p>Грађани су постали ловина. Када дугови нарасту до неба, многи се крију, 
+  одјављују адресе, живе у страху. Рачуни им се блокирају, 
+  новац се скида чак и од минималних примања. Породице пропадају, 
+  достојанство се гази, а држава ћути. То није правда — то је злостављање под печатом закона.</p>
+</section>
+
+<section>
+  <h2>💪 Шта захтевамо</h2>
+  <ul>
+    <li>Укидање института приватних извршитеља и увођење судских извршитеља који раде за плату из буџета.</li>
+    <li>Престанак двоструког кажњавања грађана.</li>
+    <li>Забрана ненормалних камата које уништавају животе.</li>
+    <li>Заштита основног људског достојанства – минимална плата, пензија и једини дом морају бити неповредиви.</li>
+    <li>Право на жалбу и поштено суђење – без знања грађана нема извршења.</li>
+    <li>Рок за застаравање дугова – после три године без контакта дуг застарева.</li>
+    <li>Ревизија свих спорних случајева и враћање неправедно одузете имовине.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🕊️ Зашто се боримо</h2>
+  <p>Људи у Србији више не живе у страху од закона — већ од оних који га спроводе. 
+  Породице остају без крова над главом, пензионери без хлеба, деца без наде. 
+  То мора да стане. Правда није проценат — правда је човек.</p>
+</section>
+
+<section>
+  <h2>✊ Шта ради ИКСАН</h2>
+  <p>ИКСАН се бори за реформу правосуђа и враћање поверења у систем. 
+  Наши правници, стручњаци и грађани прате рад извршитеља, 
+  откривају злоупотребе и подносе иницијативе за промену закона.</p>
+  <ul>
+    <li>укидање приватних извршитеља</li>
+    <li>обуставу пљачке каматама и трошковима</li>
+    <li>враћање достојанства сваком човеку</li>
+    <li>правду изнад профита</li>
+    <li>суд враћен народу</li>
+  </ul>
+</section>
+
+<section>
+  <h2>📣 Позив грађанима</h2>
+  <p>Сви који су претрпели неправду имају право да проговоре. 
+  ИКСАН позива све који су оштећени, заплашени или угрожени 
+  да пријаве своје случајеве и обрате се нашем покрету.</p>
+  <p>ИКСАН ће пружити саветодавну и правну подршку, помоћи у писању жалби и приговора, 
+  и заједно са грађанима подносити тужбе због угрожавања људских права.</p>
+</section>
+
+<section>
+  <h2>📜 Потпиши петицију — стани уз правду</h2>
+  <p>Ниједна власт неће сама променити систем који јој доноси новац. 
+  Али народ може. Потпиши и подржи захтев за укидање приватних извршитеља 
+  и врати правду тамо где припада — у руке суда и народа.</p>
+
+  <a class="btn" href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
+     target="_blank" rel="noopener noreferrer">✍️ Потпиши петицију</a>
+</section>
+
+<p class="back"><a href="index.html">← Назад на почетну</a></p>
+
 </main>
+
 <footer>
-  <div class="container">
-    © 2025 ИКСАН • Снага правде — Сва права задржана.
-  </div>
+  <p>„Снага правде је у народу.“<br>© 2025 ИКСАН – Покрет за правду, достојанство и хуманост</p>
 </footer>
+
 </body>
 </html>
