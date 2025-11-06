@@ -3,65 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Област остваривања циљева </title>
-  <meta name="description" content="Област остваривања циљева удружења ИКСАН — Снага правде.">
+  <title>Области — ИКСАН • Снага правде</title>
+  <meta name="description" content="Области остваривања циљева удружења ИКСАН — Снага правде.">
   <meta name="theme-color" content="#0B2141">
   <link rel="icon" href="logo.webp">
   <style>
     :root {
       --bg:#0B2141;
-      --ink:#fff;
+      --ink:#cfe1ff;
       --gold:#FFB300;
-      --line:rgba(255,255,255,.15);
     }
-    *{box-sizing:border-box}
+
+    *{box-sizing:border-box;margin:0;padding:0}
     body {
-      margin:0;
-      background:var(--bg);
-      color:var(--ink);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif;
-      line-height:1.8;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, sans-serif;
+      line-height: 1.7;
     }
-    a {color:inherit;text-decoration:none}
-    .container {max-width:900px;margin:0 auto;padding:0 20px}
+
+    a {color: inherit; text-decoration: none;}
+
+    .container {max-width: 1100px; margin: 0 auto; padding: 0 20px;}
 
     header {
-      position:sticky;top:0;z-index:60;
-      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.85));
-      border-bottom:1px solid var(--line);
-      backdrop-filter:blur(8px);
+      position: sticky; top: 0; z-index: 60;
+      background: linear-gradient(180deg, rgba(11,33,65,.95), rgba(11,33,65,.8));
+      border-bottom: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(8px);
     }
-    .head {display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand {display:flex;align-items:center;gap:12px;font-weight:900}
-    .brand img {height:40px;width:auto;border-radius:10px;display:block}
-    .brand a {display:flex;align-items:center;gap:12px}
-    nav.nav {display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-    nav.nav a {opacity:.85;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
-    nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold)}
 
-    main {padding:40px 0 60px;text-align:left}
+    .head {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .brand {display: flex; align-items: center; gap: 12px; font-weight: 900;}
+    .brand img {height: 40px; border-radius: 10px;}
+
+    nav.nav {display: flex; gap: 18px; font-weight: 700; flex-wrap: wrap;}
+    nav.nav a {
+      opacity: .8; border-bottom: 2px solid transparent; padding-bottom: 4px;
+      transition: border-color .2s, opacity .2s;
+    }
+    nav.nav a[aria-current="page"], nav.nav a:hover {
+      opacity: 1; border-bottom-color: var(--gold);
+    }
+
+    main {padding: 40px 0;}
+
     h1 {
-      color:var(--gold);
-      text-align:center;
-      font-size:clamp(26px,4vw,36px);
-      margin-bottom:26px;
-      font-weight:700;
-      letter-spacing:.4px;
+      text-align: center;
+      font-size: clamp(28px, 5vw, 44px);
+      color: var(--gold);
+      font-weight: 800;
+      margin-bottom: 30px;
     }
+
     ol {
-      color:var(--ink);
-      list-style:decimal;
-      padding-left:30px;
-      font-size:clamp(15px,2vw,17px);
-      line-height:1.9;
+      list-style: decimal;
+      padding-left: 1.2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.05rem;
     }
-    li {margin-bottom:10px}
+
+    li {
+      margin-bottom: 14px;
+      color: var(--ink);
+    }
+
     footer {
-      border-top:1px solid var(--line);
-      color:#cfe1ff;
-      text-align:center;
-      padding:22px 0;
-      font-size:14px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: var(--ink);
+      text-align: center;
+      padding: 24px 0;
+      opacity: .7;
+      margin-top: 40px;
+      font-size: .9rem;
     }
   </style>
 </head>
@@ -70,7 +89,7 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html" aria-label="ИКСАН — Почетна">
+      <a href="index.html">
         <img src="logo.webp" alt="ИКСАН лого">
         <span>ИКСАН • Снага правде</span>
       </a>
@@ -86,20 +105,17 @@
   </div>
 </header>
 
-<main>
-  <div class="container">
-    <h1>Област остваривања циљева</h1>
-
-    <ol>
-      <li>Заштита и унапређење људских и грађанских права;</li>
-      <li>Борба против корупције, злоупотреба и некажњивости;</li>
-      <li>Унапређење транспарентности и одговорности институција;</li>
-      <li>Подршка грађанима у поступцима пред државним органима, институцијама и судовима;</li>
-      <li>Економска правда и заштита малих привредника и радника;</li>
-      <li>Демократија, изборни процес и учешће јавности у одлучивању;</li>
-      <li>Заштита права лица у кривичним и прекршајним поступцима и систему извршења казни.</li>
-    </ol>
-  </div>
+<main class="container">
+  <h1>Област остваривања циљева</h1>
+  <ol>
+    <li>Заштита и унапређење људских и грађанских права;</li>
+    <li>Борба против корупције, злоупотреба и некажњивости;</li>
+    <li>Унапређење транспарентности и одговорности институција;</li>
+    <li>Подршка грађанима у поступцима пред државним органима, институцијама и судовима;</li>
+    <li>Економска правда и заштита малих привредника и радника;</li>
+    <li>Демократија, изборни процес и учешће јавности у одлучивању;</li>
+    <li>Заштита права лица у кривичним и прекршајним поступцима и систему извршења казни.</li>
+  </ol>
 </main>
 
 <footer>
