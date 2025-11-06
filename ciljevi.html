@@ -1,90 +1,131 @@
 <!DOCTYPE html>
-<!-- 2 колоне на desktop-у, 1 на мобилном -->
-<section class="cards-grid">
-<article class="card">
-<h2>Заштита грађанских, људских и економских права</h2>
-<p>Пружамо подршку и глас свима који трпе неправду, дискриминацију или економску несигурност. Слобода и достојанство сваког човека морају бити неприкосновени.</p>
-</article>
+<html lang="sr-Cyrl-RS">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Области — ИКСАН • Снага правде</title>
+  <meta name="description" content="Области деловања покрета ИКСАН — правна заштита грађана, борба против корупције, заштита од злоупотреба извршитеља, грађанска свест, подршка угроженима и медијске слободе.">
+  <meta name="theme-color" content="#0B2141">
+  <link rel="icon" href="logo.webp">
+  <style>
+    :root{--bg:#0B2141;--card:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--line:rgba(255,255,255,.14)}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
 
+    header{
+      position:sticky;top:0;z-index:60;
+      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
+      border-bottom:1px solid var(--line);backdrop-filter:blur(8px)
+    }
+    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
+    .brand img{height:40px;width:auto;border-radius:10px;display:block}
+    .brand a{display:flex;align-items:center;gap:12px}
 
-<article class="card">
-<h2>Борба против корупције и некажњивости</h2>
-<p>Усмерени смо на откривање злоупотреба и злоупотреба положаја у институцијама. Систем без одговорности рађа неправду — зато инсистирамо на транспарентности и једнакој примени закона.</p>
-</article>
+    nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
+    nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
+    nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
+    h1{margin:.8rem 0 0;font-size:clamp(30px,5.5vw,50px);color:var(--gold);text-align:center}
+    p.lead{color:var(--muted);text-align:center;max-width:840px;margin:10px auto 26px}
 
-<article class="card">
-<h2>Транспарентност јавних институција</h2>
-<p>Јавност мора знати како се троши сваки динар грађана. Захтевамо јавне уговоре, дигиталну доступност података и одговорност сваког носиоца јавне функције.</p>
-</article>
+    section{padding:34px 0}
+    .grid{display:grid;gap:16px;grid-template-columns:1fr}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
+    .card h2{margin:0 0 8px;color:var(--gold);font-size:clamp(20px,3vw,26px)}
+    .card p{color:var(--muted);line-height:1.7}
 
-<article class="card">
-<h2>Правна и саветодавна подршка грађанима</h2>
-<p>Обезбеђујемо бесплатну правну помоћ, савете и усмерења за све који се суочавају са неправдом — било да су радници, предузетници или грађани у извршним поступцима.</p>
-</article>
+    .cta-row{display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 22px;border-radius:999px;border:1px solid var(--line);font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+    .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
 
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center;margin-top:40px}
+  </style>
+</head>
+<body>
 
-<article class="card">
-<h2>Заштита у извршним и судским поступцима</h2>
-<p>Боримо се против злоупотреба јавних извршитеља и унапређујемо надзор над радом правосуђа и система извршења казни.</p>
-</article>
+<header>
+  <div class="container head">
+    <div class="brand">
+      <a href="index.html" aria-label="ИКСАН — Почетна">
+        <img src="logo.webp" alt="ИКСАН лого" width="80" height="80">
+        <span>ИКСАН • Снага правде</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Почетна</a>
+      <a href="onama.html">О нама</a>
+      <a href="oblasti.html" aria-current="page">Области</a>
+      <a href="ciljevi.html">Циљеви</a>
+      <a href="inicijative.html">Иницијативе</a>
+      <a href="kontakt.html">Контакт</a>
+    </nav>
+  </div>
+</header>
 
+<main>
 
-<article class="card">
-<h2>Економска правда и права радника</h2>
-<p>Сматрамо да радник мора бити заштићен, плаћен и поштован. Социјална сигурност је темељ стабилног друштва.</p>
-</article>
+  <section>
+    <div class="container">
+      <h1>Области за остваривање циљева</h1>
+      <p class="lead">ИКСАН – Снага правде делује кроз кључне области друштвеног живота у којима је потребно обновити поверење у правду, институције и човека.</p>
+    </div>
+  </section>
 
+  <section>
+    <div class="container grid">
+      <article class="card">
+        <h2>1. Правна заштита грађана</h2>
+        <p>Наш основни циљ је да обезбедимо подршку свима који се суочавају са неправдом. Пружамо бесплатну правну помоћ, савете и подршку грађанима који немају средстава или веза да би се изборили са системом.</p>
+      </article>
 
-<article class="card">
-<h2>Истраживање и борба против противправне имовине</h2>
-<p>Истражујемо податке и иницирамо поступке за одузимање незаконито стечене имовине и спречавање злоупотреба у јавним набавкама.</p>
-</article>
+      <article class="card">
+        <h2>2. Борба против корупције</h2>
+        <p>Корупција руши поверење у институције. Залажемо се за потпуну транспарентност рада државних органа, јавно објављивање података и одговорност сваког носиоца функције.</p>
+      </article>
 
+      <article class="card">
+        <h2>3. Заштита од злоупотреба извршитеља</h2>
+        <p>Једна од највећих неправди је злоупотреба овлашћења приватних извршитеља. Циљ нам је да се пракса ограничи законом и да се сваки грађанин заштити од прекомерних и незаконитих поступака.</p>
+      </article>
 
-<article class="card">
-<h2>Предлагање измена закона и јавних политика</h2>
-<p>Припремамо иницијативе и предлоге за измену закона који ће унапредити владавину права, једнакост и правду у Србији.</p>
-</article>
+      <article class="card">
+        <h2>4. Јачање грађанске свести</h2>
+        <p>Без активних грађана нема праведног друштва. Покрећемо иницијативе, трибине и едукативне програме који подстичу учешће у доношењу одлука и борби за опште добро.</p>
+      </article>
 
+      <article class="card">
+        <h2>5. Подршка угроженим групама</h2>
+        <p>Бринемо о онима који су највише погођени неправдом — сиромашнима, болеснима, пензионерима и радницима. Залажемо се за системску подршку и хуман приступ сваком човеку.</p>
+      </article>
 
-<article class="card">
-<h2>Организовање јавних скупова и трибина</h2>
-<p>Јавна реч и окупљање грађана основ су демократије. Организујемо скупове, протесте и дискусије које покрећу промене.</p>
-</article>
+      <article class="card">
+        <h2>6. Јавност и медијска слобода</h2>
+        <p>Истина је темељ правде. Зато се залажемо за слободне медије, доступност информација и право грађана да знају истину о раду институција и носилаца власти.</p>
+      </article>
+    </div>
+  </section>
 
+  <section>
+    <div class="container">
+      <div class="cta-row">
+        <a href="ciljevi.html" class="btn btn-primary">Погледај циљеве</a>
+        <a href="ukidanjeizvrsitelja.html" class="btn">Прочитај иницијативу</a>
+      </div>
+    </div>
+  </section>
 
-<article class="card">
-<h2>Праћење изборних процеса</h2>
-<p>Залажемо се за фер, транспарентне и поштене изборе, са једнаким условима за све учеснике.</p>
-</article>
-
-
-<article class="card">
-<h2>Активно учешће јавности</h2>
-<p>Охрабрујемо грађане да активно учествују у доношењу одлука које се тичу њихових живота. Демократија постоји само ако је живимо.</p>
-</article>
-
-
-<article class="card">
-<h2>Развој владавине права и хуманитарни рад</h2>
-<p>Подстичемо солидарност, бригу за угрожене и људскост као основ сваке заједнице. Хуманост није слабост — она је највећа снага.</p>
-</article>
-</section>
-
-
-<div class="cta-row">
-<a href="kontakt.html" class="btn btn-primary">Прикључи се</a>
-<a href="inicijative.html" class="btn">Погледај иницијативе</a>
-</div>
 </main>
 
-
 <footer>
-<div class="container">© 2025 ИКСАН • Снага правде — Сва права задржана.</div>
+  <div class="container">
+    © 2025 ИКСАН • Снага правде — Сва права задржана.
+  </div>
 </footer>
-
 
 </body>
 </html>
