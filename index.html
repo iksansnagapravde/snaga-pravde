@@ -16,125 +16,127 @@
 
   <style>
   :root{
-    --blue:#0B2141; --blue2:#102D57; --accent:#D3A451;
-    --muted:#c7d3ea; --line:rgba(255,255,255,.15);
-    --radius:16px; --shadow:0 10px 36px rgba(0,0,0,.35);
+    --blue:#0B2141; --blue2:#102D57;
+    --accent:#D3A451;              /* zlatna ostaje ista */
+    --ink:#cfe1ff;                 /* svetloplava (umesto bele) */
+    --muted:#cfe1ff;               /* usklađeno sa ostalim stranicama */
+    --line:rgba(255,255,255,.15);
+    --radius:16px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{
-    font-family:"Times New Roman", Times, serif; line-height:1.6;
+    font-family:"Times New Roman"; line-height:1.6;
     background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
-    color:#f4f7ff; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    color:var(--ink); -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
   }
   .container{max-width:1140px;margin:0 auto;padding:0 24px}
   a{color:inherit;text-decoration:none}
 
   header{
-    background:rgba(10,20,40,.75); backdrop-filter:blur(10px);
+    background:rgba(10,20,40,.78);
+    backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line); position:sticky; top:0; z-index:100;
   }
-  .head{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+  .head{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
   .brand{display:flex;align-items:center;gap:10px;font-size:18px}
   .brand img{height:44px;width:auto;border-radius:8px}
-  nav{display:flex;gap:20px;flex-wrap:wrap}
+  nav{display:flex;gap:18px;flex-wrap:wrap}
   nav a{
-    padding:8px 0;border-bottom:2px solid transparent;opacity:.9;transition:.2s
+    padding:8px 0;border-bottom:2px solid transparent;opacity:.9;transition:border-color .2s, opacity .2s
   }
   nav a:hover,nav a[aria-current="page"]{
-    opacity:1;border-color:var(--accent);
-    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 6px 14px rgba(0,0,0,.35);
+    opacity:1;border-color:var(--accent); /* bez jake senke */
   }
 
   /* HERO */
-  .hero{padding:60px 0 20px;}
-  .hero-grid{display:grid;gap:40px;align-items:center;}
-  @media(min-width:960px){.hero-grid{grid-template-columns:1.1fr 0.9fr;}}
+  .hero{padding:44px 0 18px;}
+  .hero-grid{display:grid;gap:26px;align-items:center;}
+  @media(min-width:960px){.hero-grid{grid-template-columns:1.06fr .94fr;}}
 
   .hero-text h1{
-    font-size:clamp(36px,4.8vw,56px); font-weight:400; color:#fff;
+    font-size:clamp(32px,4.6vw,48px);
+    font-weight:400;
+    color:var(--ink);               /* svetloplava umesto bele */
     text-align:left; line-height:1.15; margin-bottom:10px;
-    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.45);
+    text-shadow:none;               /* 3D minimal */
   }
   .hero-text h1 span.line2{
-    display:block; font-size:clamp(28px,3.6vw,42px);
-    color:var(--accent); margin-top:6px; font-weight:400;
-    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 22px rgba(0,0,0,.45);
+    display:block;
+    font-size:clamp(24px,3.2vw,36px);
+    color:var(--accent);
+    margin-top:6px; font-weight:400;
+    text-shadow:none;               /* 3D minimal */
   }
   .hero-text p.sub{
-    color:var(--muted); max-width:600px; font-size:18px;
-    margin:22px 0 30px; text-align:left;
+    color:var(--muted); max-width:680px; font-size:18px;
+    margin:16px 0 22px; text-align:left;
   }
 
-  /* Dugmad – 3D */
-  .cta{display:flex;gap:16px;flex-wrap:wrap}
+  /* Dugmad – 3D svedeno */
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
   .btn{
-    display:inline-block; padding:14px 32px; border-radius:40px; border:none;
-    font-weight:700; font-size:18px; letter-spacing:0.4px;
-    color:#fff; text-transform:uppercase;
-    background:linear-gradient(180deg,#1e3a72,#0f2552);
-    box-shadow:0 6px 0 #07142c, 0 8px 22px rgba(0,0,0,.4);
-    transition:transform .2s,box-shadow .2s;
+    display:inline-block; padding:12px 24px; border-radius:40px; border:1px solid var(--line);
+    font-weight:700; font-size:16px; letter-spacing:0.3px;
+    color:var(--ink); text-transform:uppercase;
+    background:rgba(16,45,87,.55);
+    box-shadow:0 2px 8px rgba(0,0,0,.25);   /* diskretno */
+    transition:transform .15s, box-shadow .15s, background .15s;
   }
-  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #07142c, 0 10px 26px rgba(0,0,0,.5)}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.28)}
   .btn-primary{
     background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
-    box-shadow:0 6px 0 #a27e32, 0 8px 22px rgba(0,0,0,.4);
+    box-shadow:0 2px 8px rgba(0,0,0,.28);
   }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 #8a682a, 0 10px 26px rgba(0,0,0,.55)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.34)}
 
-  /* SLIKA – 3D prostor */
+  /* SLIKA – 3D minimal */
   .hero-media{
     position:relative; border-radius:var(--radius); overflow:hidden;
     background:#0f2552; border:1px solid #1a3a74;
-    box-shadow:0 12px 24px rgba(0,0,0,.6), inset 0 0 18px rgba(255,255,255,.08);
-    aspect-ratio:16/9; width:100%; max-width:470px; margin:0 auto;
-    transform:perspective(900px) rotateY(-1.5deg);
+    box-shadow:0 8px 22px rgba(0,0,0,.28); /* blaža senka */
+    aspect-ratio:16/9; width:100%; max-width:520px; margin:0 auto;
+    transform:none;                      /* uklonjen perspektivni nagib */
   }
-  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) brightness(1.02)}
-  .hero-media::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(145deg,rgba(11,33,65,.25),rgba(211,164,81,.15));
-    mix-blend-mode:soft-light;pointer-events:none;
-  }
+  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;filter:none}
+  .hero-media::after{content:none}       /* bez overlay efekta */
 
-  /* KARTICE – 3D */
-  section.cards{padding:35px 0 80px;margin-top:-25px}
-  .grid{display:grid;gap:32px}
+  /* KARTICE – čiste, institucionalne, sa minimalnom senkom */
+  section.cards{padding:26px 0 40px}
+  .grid{display:grid;gap:16px}
   @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
   .card{
-    background:linear-gradient(180deg,rgba(18,45,87,.9),rgba(10,25,50,.9));
+    background:rgba(16,45,87,.9);
     border:1px solid var(--line); border-radius:var(--radius);
-    padding:36px 32px;
-    box-shadow:0 10px 0 rgba(0,0,0,.3), 0 20px 36px rgba(0,0,0,.4);
-    transition:transform .2s, box-shadow .2s; min-height:200px;
+    padding:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.22); /* blaže */
+    transition:transform .15s, box-shadow .15s;
+    min-height:180px;
   }
-  .card:hover{transform:translateY(-4px);box-shadow:0 14px 0 rgba(0,0,0,.35), 0 24px 44px rgba(0,0,0,.5)}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.26)}
 
   .card h3{
-    font-family:"Times New Roman", Times, serif; font-weight:500; font-size:31px; color:#fff; margin-bottom:10px;
-    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 18px rgba(0,0,0,.45);
+    font-family:"Times New Roman"; font-weight:500; font-size:22px; color:var(--ink); margin-bottom:6px;
+    text-shadow:none;
   }
   .card h3 a{color:inherit}
   .card p{
-    color:var(--accent); margin-bottom:10px; font-size:17px;
+    color:var(--accent); margin-bottom:8px; font-size:16px;
   }
-  .card a.more{font-weight:600;color:#fff;text-decoration:none}
-  .card a.more::after{content:" →"}
+  .card a.more{font-weight:700;color:var(--ink);text-decoration:none}
 
   .statement{
     background:rgba(17,42,84,.6); border:1px solid var(--line);
-    border-radius:var(--radius); padding:40px 30px; box-shadow:var(--shadow); margin:50px 0;
+    border-radius:var(--radius); padding:20px; box-shadow:0 8px 20px rgba(0,0,0,.22); margin:26px 0 36px;
   }
   .statement h2{
-    font-family:"Times New Roman", Times, serif; font-weight:400; font-size:24px; margin-bottom:10px; color:var(--accent);
-    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 18px rgba(0,0,0,.45);
+    font-family:"Times New Roman"; font-weight:500; font-size:22px; margin-bottom:8px; color:var(--ink);
   }
-  .statement p{color:#f4f7ff}
+  .statement p{color:var(--ink); margin:0}
 
   footer{
-    background:rgba(10,20,40,.9); text-align:center; color:var(--muted);
-    border-top:1px solid var(--line); padding:24px 0; font-size:14px;
+    background:rgba(10,20,40,.9); text-align:center; color:var(--ink);
+    border-top:1px solid var(--line); padding:22px 0; font-size:14px;
   }
   </style>
 </head>
@@ -184,25 +186,25 @@
       <div class="card">
         <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
         <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
-        <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више</a>
+        <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
       </div>
 
       <div class="card">
         <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
         <p>Време је да истина о имовини буде јавна — без заштите моћних.</p>
-        <a class="more" href="porekloimovine.html">Погледај детаље</a>
+        <a class="more" href="porekloimovine.html">Погледај детаље →</a>
       </div>
 
       <div class="card">
         <h3><a href="sudpravda.html">Суд народу, не моћнима</a></h3>
         <p>Право мора бити штит човека, а не оружје политике.</p>
-        <a class="more" href="sudpravda.html">Прочитај више</a>
+        <a class="more" href="sudpravda.html">Прочитај више →</a>
       </div>
 
       <div class="card">
         <h3><a href="radnicipreduzetnici.html">Радници и предузетници — срце здраве земље</a></h3>
         <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
-        <a class="more" href="radnicipreduzetnici.html">Сазнај више</a>
+        <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
       </div>
     </div>
   </section>
