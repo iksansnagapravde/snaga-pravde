@@ -11,15 +11,14 @@
 <style>
 :root{
   --blue:#0B2141;
-  --light:#fdfdfd;
+  --light:#ffffff;
+  --muted:#5c6c85;
   --accent:#D3A451;
-  --muted:#5a6c88;
-  --line:#e3e7ee;
+  --line:#d9e1ec;
 }
 
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
 body{
-  margin:0;
   font-family:"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;
   background:var(--light);
   color:var(--blue);
@@ -33,31 +32,41 @@ body{
 header{
   background:var(--blue);
   color:var(--light);
-  border-bottom:4px solid var(--accent);
+  border-bottom:3px solid var(--accent);
 }
 .head{
   display:flex;justify-content:space-between;align-items:center;
   padding:14px 0;
 }
-.brand{display:flex;align-items:center;gap:10px;font-weight:500;font-size:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:500}
 .brand img{width:42px;height:auto;border-radius:8px}
 nav{display:flex;gap:16px;flex-wrap:wrap}
-nav a{color:var(--light);text-decoration:none;font-weight:400;opacity:.85}
-nav a:hover,nav a[aria-current="page"]{opacity:1;border-bottom:2px solid var(--accent)}
+nav a{
+  color:var(--light);
+  font-weight:400;
+  text-decoration:none;
+  opacity:.9;
+  padding-bottom:4px;
+}
+nav a:hover,nav a[aria-current="page"]{
+  opacity:1;
+  border-bottom:2px solid var(--accent);
+}
 
 /* Hero */
 .hero{
   background:var(--light);
   color:var(--blue);
-  padding:60px 0 40px;
+  padding:60px 0 50px;
+  text-align:left;
   border-bottom:1px solid var(--line);
 }
 h1{
   font-family:Georgia,serif;
   font-size:clamp(28px,4vw,46px);
-  font-weight:500;
+  font-weight:400;
   line-height:1.25;
-  margin:10px 0 20px;
+  margin-bottom:20px;
 }
 .sub{
   font-size:18px;
@@ -69,11 +78,11 @@ h1{
 .btn{
   padding:10px 18px;
   border-radius:50px;
-  font-size:15px;
-  text-decoration:none;
   border:1px solid var(--blue);
   color:var(--blue);
   background:transparent;
+  font-size:15px;
+  text-decoration:none;
   transition:.2s ease;
 }
 .btn:hover{background:var(--blue);color:var(--light)}
@@ -86,40 +95,43 @@ h1{
 
 /* Cards */
 section.cards{
-  background:var(--light);
-  padding:50px 0;
+  background:#f8f9fc;
+  padding:60px 0;
 }
 .grid{
   display:grid;
   grid-template-columns:1fr;
-  gap:20px;
+  gap:22px;
 }
 @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+
 .card{
+  background:var(--light);
   border:1px solid var(--line);
-  border-radius:12px;
-  padding:24px 20px;
-  background:#fff;
+  border-radius:10px;
+  padding:28px 24px;
   transition:box-shadow .2s ease, transform .2s ease;
 }
 .card:hover{
-  box-shadow:0 6px 20px rgba(0,0,0,.08);
-  transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transform:translateY(-2px);
 }
 .card h3{
-  margin:0 0 8px;
-  font-weight:500;
-  color:var(--blue);
+  margin:0 0 10px;
   font-family:Georgia,serif;
+  font-size:22px;
+  font-weight:400;
+  color:var(--blue);
 }
 .card p{
-  margin:0 0 12px;
+  margin:0 0 14px;
   color:var(--muted);
+  font-size:16px;
 }
 .card a.more{
   color:var(--blue);
-  font-weight:500;
   text-decoration:none;
+  font-weight:400;
 }
 .card a.more::after{content:" →"}
 
@@ -128,14 +140,15 @@ section.cards{
   background:#f3f6fb;
   border-top:2px solid var(--accent);
   border-radius:10px;
-  padding:30px 25px;
-  margin:50px 0;
+  padding:34px 26px;
+  margin:60px 0;
 }
 .statement h2{
-  font-weight:500;
+  font-family:Georgia,serif;
+  font-weight:400;
   color:var(--blue);
   margin:0 0 10px;
-  font-family:Georgia,serif;
+  font-size:24px;
 }
 .statement p{margin:0;color:var(--muted);font-size:17px}
 
@@ -144,7 +157,7 @@ footer{
   background:var(--blue);
   color:var(--light);
   text-align:center;
-  padding:24px 0;
+  padding:26px 0;
   font-size:14px;
 }
 </style>
