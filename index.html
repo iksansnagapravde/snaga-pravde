@@ -4,152 +4,132 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Иксан • Снага правде — Почетна</title>
-  <meta name="description" content="Правда није роба. Време је да се врати народу. Иксан — покрет грађана.">
+  <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана">
   <meta name="theme-color" content="#0B2141">
   <link rel="icon" href="logo.webp">
 
   <style>
   :root{
-    --blue:#0B2141;
-    --blue2:#102D57;
-    --accent:#D3A451;
-    --muted:#c7d3ea;
-    --line:rgba(255,255,255,.15);
-    --radius:16px;
-    --shadow:0 10px 36px rgba(0,0,0,.35);
+    --blue:#0B2141; --blue2:#102D57; --accent:#D3A451;
+    --muted:#c7d3ea; --line:rgba(255,255,255,.15);
+    --radius:16px; --shadow:0 10px 36px rgba(0,0,0,.35);
   }
-
   *{box-sizing:border-box;margin:0;padding:0}
   body{
-    font-family:"Times New Roman", Times, serif;
-    line-height:1.6;
+    font-family:"Times New Roman", Times, serif; line-height:1.6;
     background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
-    color:#f4f7ff;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
+    color:#f4f7ff; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
   }
   .container{max-width:1140px;margin:0 auto;padding:0 24px}
   a{color:inherit;text-decoration:none}
 
   header{
-    background:rgba(10,20,40,.75);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-    position:sticky;top:0;z-index:100;
+    background:rgba(10,20,40,.75); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line); position:sticky; top:0; z-index:100;
   }
   .head{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
   .brand{display:flex;align-items:center;gap:10px;font-size:18px}
   .brand img{height:44px;width:auto;border-radius:8px}
   nav{display:flex;gap:20px;flex-wrap:wrap}
-  nav a{padding:8px 0;border-bottom:2px solid transparent;opacity:.9;transition:.2s}
-  nav a:hover,nav a[aria-current="page"]{opacity:1;border-color:var(--accent)}
+  nav a{
+    padding:8px 0;border-bottom:2px solid transparent;opacity:.9;transition:.2s
+  }
+  nav a:hover,nav a[aria-current="page"]{
+    opacity:1;border-color:var(--accent);
+    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 6px 14px rgba(0,0,0,.35); /* blagi 3D */
+  }
 
   /* HERO */
-  .hero{ padding:60px 0 20px; }
-  .hero-grid{
-    display:grid; gap:40px; align-items:center;
-  }
-  @media(min-width:960px){ .hero-grid{ grid-template-columns:1.1fr 0.9fr; } }
+  .hero{padding:60px 0 20px;}
+  .hero-grid{display:grid;gap:40px;align-items:center;}
+  @media(min-width:960px){.hero-grid{grid-template-columns:1.1fr 0.9fr;}}
+
+  /* GLAVNI NASLOV – 3D */
   .hero-text h1{
-    font-size:clamp(30px,4.5vw,50px);
-    font-weight:400;
-    margin-bottom:16px;
-    color:#fff; text-align:left;
+    font-size:clamp(36px,4.8vw,56px); font-weight:400; color:#fff;
+    text-align:left; line-height:1.15; margin-bottom:10px;
+    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 22px rgba(0,0,0,.45);
+  }
+  .hero-text h1 span.line2{
+    display:block; font-size:clamp(28px,3.6vw,42px);
+    color:var(--accent); margin-top:6px; font-weight:400;
+    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 22px rgba(0,0,0,.45);
   }
   .hero-text p.sub{
-    color:var(--muted);
-    max-width:600px; font-size:18px;
-    margin-bottom:30px; text-align:left;
+    color:var(--muted); max-width:600px; font-size:18px;
+    margin:22px 0 30px; text-align:left;
   }
+
+  /* Dugmad – 3D */
   .cta{display:flex;gap:16px;flex-wrap:wrap}
   .btn{
-    display:inline-block; padding:10px 22px;
-    border-radius:40px; border:1px solid #ffffff66;
-    color:#fff; transition:.2s;
+    display:inline-block; padding:12px 26px; border-radius:40px; border:none;
+    font-weight:600; color:#fff;
+    background:linear-gradient(180deg,#1e3a72,#0f2552);
+    box-shadow:0 6px 0 #07142c, 0 8px 22px rgba(0,0,0,.4);
+    transition:transform .2s,box-shadow .2s;
   }
-  .btn:hover{ background:#fff; color:var(--blue); }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #07142c, 0 10px 26px rgba(0,0,0,.5)}
   .btn-primary{
-    background:var(--accent); color:var(--blue);
-    border:none; font-weight:600;
+    background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
+    box-shadow:0 6px 0 #a27e32, 0 8px 22px rgba(0,0,0,.4);
   }
-  .btn-primary:hover{ background:#e9b85c; }
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 0 #8a682a, 0 10px 26px rgba(0,0,0,.55)}
 
+  /* SLIKA – 3D prostor */
   .hero-media{
-    position:relative;
-    border-radius:var(--radius);
-    overflow:hidden;
-    border:1px solid var(--line);
-    box-shadow:var(--shadow);
-    aspect-ratio:16/9;
-    width:100%;
-    max-width:480px; /* prirodno manja */
-    margin:0 auto;
+    position:relative; border-radius:var(--radius); overflow:hidden;
+    background:#0f2552; border:1px solid #1a3a74;
+    box-shadow:0 12px 24px rgba(0,0,0,.6), inset 0 0 18px rgba(255,255,255,.08);
+    aspect-ratio:16/9; width:100%; max-width:470px; margin:0 auto;
+    transform:perspective(900px) rotateY(-1.5deg);
   }
-  .hero-media img{
-    display:block;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
+  .hero-media img{display:block;width:100%;height:100%;object-fit:cover;filter:contrast(1.05) brightness(1.02)}
   .hero-media::after{
-    content:"";
-    position:absolute;
-    inset:0;
+    content:"";position:absolute;inset:0;
     background:linear-gradient(145deg,rgba(11,33,65,.25),rgba(211,164,81,.15));
-    mix-blend-mode:soft-light;
-    pointer-events:none;
+    mix-blend-mode:soft-light;pointer-events:none;
   }
 
-  /* KARTICE */
-  section.cards{
-    padding:35px 0 80px;
-    margin-top:-25px; /* vrlo blago podignuto */
-  }
+  /* KARTICE – 3D */
+  section.cards{padding:35px 0 80px;margin-top:-25px}
   .grid{display:grid;gap:32px}
-  @media(min-width:900px){ .grid{ grid-template-columns:repeat(2,1fr); } }
+  @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
   .card{
-    background:rgba(16,45,87,.65);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
+    background:linear-gradient(180deg,rgba(18,45,87,.9),rgba(10,25,50,.9));
+    border:1px solid var(--line); border-radius:var(--radius);
     padding:36px 32px;
-    box-shadow:var(--shadow);
-    transition:transform .2s, box-shadow .2s;
-    min-height:200px;
+    box-shadow:0 10px 0 rgba(0,0,0,.3), 0 20px 36px rgba(0,0,0,.4);
+    transition:transform .2s, box-shadow .2s; min-height:200px;
   }
-  .card:hover{ transform:translateY(-3px); box-shadow:0 14px 40px rgba(0,0,0,.4); }
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 0 rgba(0,0,0,.35), 0 24px 44px rgba(0,0,0,.5)}
 
+  /* NASLOVI KARTICA – 3D tekst */
   .card h3{
-    font-family:"Times New Roman", Times, serif;
-    font-weight:500;
-    font-size:31px; /* veća slova naslova */
-    color:#fff;
-    margin-bottom:10px;
+    font-family:"Times New Roman", Times, serif; font-weight:500; font-size:31px; color:#fff; margin-bottom:10px;
+    text-shadow:0 2px 0 rgba(0,0,0,.35), 0 8px 18px rgba(0,0,0,.45);
   }
-  .card p{ color:#fff; margin-bottom:10px; }
-  .card a.more{ font-weight:500; color:#fff; }
-  .card a.more::after{ content:" →"; }
+  .card h3 a{color:inherit}
 
+  .card p{color:#fff;margin-bottom:10px}
+  .card a.more{font-weight:600;color:#fff;text-decoration:none}
+  .card a.more::after{content:" →"}
+
+  /* SEKCIJSKI NASLOV – 3D */
   .statement{
-    background:rgba(17,42,84,.6);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:40px 30px;
-    box-shadow:var(--shadow);
-    margin:50px 0;
+    background:rgba(17,42,84,.6); border:1px solid var(--line);
+    border-radius:var(--radius); padding:40px 30px; box-shadow:var(--shadow); margin:50px 0;
   }
   .statement h2{
-    font-family:"Times New Roman", Times, serif;
-    font-weight:400; font-size:24px;
-    margin-bottom:10px; color:var(--accent);
+    font-family:"Times New Roman", Times, serif; font-weight:400; font-size:24px; margin-bottom:10px; color:var(--accent);
+    text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 18px rgba(0,0,0,.45);
   }
-  .statement p{ color:#f4f7ff; }
+  .statement p{color:#f4f7ff}
 
   footer{
-    background:rgba(10,20,40,.9);
-    text-align:center; color:var(--muted);
-    border-top:1px solid var(--line);
-    padding:24px 0; font-size:14px;
+    background:rgba(10,20,40,.9); text-align:center; color:var(--muted);
+    border-top:1px solid var(--line); padding:24px 0; font-size:14px;
   }
   </style>
 </head>
@@ -175,13 +155,17 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
-        <h1>Правда није роба. Време је да се врати народу.</h1>
+        <h1>
+          Правда није роба
+          <span class="line2">Време је да се врати народу</span>
+        </h1>
         <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
         <div class="cta">
           <a class="btn-primary btn" href="kontakt.html">Донирај</a>
           <a class="btn" href="kontakt.html">Прикључи се</a>
         </div>
       </div>
+
       <div class="hero-media">
         <img src="Сајт слика.png" alt="Иксан — Снага правде">
       </div>
@@ -228,3 +212,6 @@
   </footer>
 </body>
 </html>
+
+
+      
