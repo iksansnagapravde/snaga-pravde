@@ -10,30 +10,28 @@
 
   <style>
     :root {
-      --blue:#0B2141;
-      --blue2:#102D57;
-      --lightHead1:#123366;
-      --lightHead2:#0f295a;
-      --gold:#D3A451;
-      --ink:#cfe1ff;
+      --blue:#0B2141; --blue2:#102D57;
+      --lightHead1:#123366; --lightHead2:#0f295a;
+      --gold:#D3A451; --ink:#cfe1ff;
       --line:rgba(255,255,255,.14);
       --radius:16px;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
-    body {
-      background: linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
-      color: var(--ink);
+    body{
+      background:linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
+      color:var(--ink);
       font-family:"Times New Roman";
       line-height:1.7;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
     }
 
-    a {color:inherit;text-decoration:none}
-    .container {max-width:1150px;margin:0 auto;padding:0 20px}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    header {
+    /* HEADER */
+    header{
       position:sticky;top:0;z-index:60;
       background:linear-gradient(180deg,var(--lightHead1),var(--lightHead2));
       border-bottom:1px solid var(--line);
@@ -41,11 +39,19 @@
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:40px;border-radius:10px;}
+    .brand img{height:40px;border-radius:10px}
+    .brand .brand-name{
+      font-weight:700;
+      letter-spacing:.2px;
+      /* тражено писање: велика/мала слова + цртица */
+    }
+    .brand .brand-name::after{content:"";}
+
     nav.nav{display:flex;gap:18px;flex-wrap:wrap}
     nav.nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
     nav.nav a[aria-current="page"],nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
+    /* HERO */
     .hero{padding:36px 0 0}
     .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
@@ -64,22 +70,31 @@
       max-width:740px;margin:8px 0 16px;
     }
 
-    .white-split{
-      background:#fff;color:#13203a;
-      margin-top:16px;padding:22px 0 28px;
-      border-top-left-radius:20px;border-top-right-radius:20px;
-      box-shadow:0 -8px 24px rgba(0,0,0,.18);
-    }
+    /* Картица десно у херо секцији */
     .card-large{
       background:rgba(16,45,87,.92);
-      border:1px solid var(--line);border-radius:var(--radius);
-      padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.3);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 12px 28px rgba(0,0,0,.3);
     }
-    .card-large h2{
-      font-family:"Times New Roman";
-      font-weight:500;color:#fff;
+    .stack-title{
+      margin:0 0 10px;
+      text-align:center;
+      line-height:1.2;
+    }
+    .stack-title .line1{
+      display:block;
+      color:#fff;
+      font-weight:600;
+      font-size:clamp(20px,2.4vw,24px);
+    }
+    .stack-title .line2{
+      display:block;
+      color:#fff;
+      font-weight:600;
       font-size:clamp(22px,2.8vw,26px);
-      margin:0 0 10px;text-align:center;
+      margin-top:4px;
     }
     .card-large p{
       color:var(--ink);
@@ -89,39 +104,28 @@
       text-align:center;
     }
 
+    .white-split{
+      background:#fff;color:#13203a;
+      margin-top:16px;padding:22px 0 28px;
+      border-top-left-radius:20px;border-top-right-radius:20px;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    }
+
     form{
-      display:grid;
-      gap:12px;
-      max-width:600px;
-      margin:0 auto;
-      margin-top:20px;
+      display:grid;gap:12px;max-width:600px;margin:20px auto 0;
     }
     label{font-weight:600;color:#fff;font-size:16px;}
     input,textarea{
-      width:100%;
-      padding:10px 14px;
-      border-radius:8px;
-      border:1px solid var(--line);
-      font-family:"Times New Roman";
-      font-size:16px;
-      background:#0f2552;
-      color:#fff;
+      width:100%;padding:10px 14px;border-radius:8px;border:1px solid var(--line);
+      font-family:"Times New Roman";font-size:16px;background:#0f2552;color:#fff;
     }
     textarea{min-height:120px;resize:vertical;}
     .btn{
-      display:inline-block;
-      padding:12px 26px;
-      border-radius:40px;
-      border:none;
-      font-weight:700;
-      font-size:16px;
-      letter-spacing:.3px;
-      text-transform:uppercase;
-      background:linear-gradient(180deg,#e4b85c,#d3a451);
-      color:#0b2141;
-      box-shadow:0 3px 0 #8a682a, 0 6px 18px rgba(0,0,0,.35);
-      cursor:pointer;
-      transition:transform .2s;
+      display:inline-block;padding:12px 26px;border-radius:40px;border:none;
+      font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
+      background:linear-gradient(180deg,#e4b85c,#d3a451);color:#0b2141;
+      box-shadow:0 3px 0 #8a682а, 0 6px 18px rgba(0,0,0,.35);
+      cursor:pointer;transition:transform .2s;
     }
     .btn:hover{transform:translateY(-2px)}
 
@@ -136,35 +140,16 @@
     }
 
     ul.contact-top{
-      list-style:none;
-      margin:0 0 18px 0;
-      padding:0;
-      color:#fff;
-      font-size:16px;
-      line-height:1.8;
+      list-style:none;margin:0 0 18px 0;padding:0;color:#fff;font-size:16px;line-height:1.8;
     }
     ul.contact-top li::before{content:"• ";color:#ffd98a;}
 
-    .socials{
-      display:flex;
-      justify-content:center;
-      gap:16px;
-      margin-top:18px;
-    }
+    .socials{display:flex;justify-content:center;gap:16px;margin-top:18px}
     .socials a{
-      display:inline-block;
-      padding:10px 18px;
-      border-radius:999px;
-      background:var(--gold);
-      color:#0b2141;
-      font-weight:700;
-      font-size:14px;
-      transition:transform .2s,box-shadow .2s;
+      display:inline-block;padding:10px 18px;border-radius:999px;background:var(--gold);color:#0b2141;
+      font-weight:700;font-size:14px;transition:transform .2s,box-shadow .2s;
     }
-    .socials a:hover{
-      transform:translateY(-2px);
-      box-shadow:0 6px 16px rgba(255,179,0,.4);
-    }
+    .socials a:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(255,179,0,.4)}
   </style>
 </head>
 
@@ -175,7 +160,8 @@
     <div class="brand">
       <a href="index.html">
         <img src="logo.webp.png" alt="ИКСАН лого">
-        <span>ИКСАН • Снага правде</span>
+        <!-- Тражено писање поред логоа -->
+        <span class="brand-name">Иксан-Снага правде</span>
       </a>
     </div>
     <nav class="nav">
@@ -196,19 +182,25 @@
         <h1>Контакт и подршка грађанима</h1>
         <p class="sub">Пријавите неправду или затражите савет — заједно чувамо правду.</p>
       </div>
+
       <div class="hero-media">
         <article class="card-large">
-          <h2>Удружење грађана 
-            ИКСАН — Снага правде</h2>
+          <!-- ДВА РЕДА КАО ШТО СИ ТРАЖИО -->
+          <h2 class="stack-title">
+            <span class="line1">Удружење грађана</span>
+            <span class="line2">Иксан — Снага правде</span>
+          </h2>
+
           <p>Београд</p>
           <p>Матични број: 28406312<br>ПИБ: 115358260</p>
           <p><strong>Жиро рачун:</strong> ___________________________<br>
              <strong>Девизни рачун:</strong> ________________________</p>
           <p><strong>Е-пошта:</strong> <a href="mailto:iksan.snaga.pravde@gmail.com">iksan.snaga.pravde@gmail.com</a></p>
+
           <div class="socials">
-            <a href="https://www.tiktok.com/@iksan_snaga_pravde" target="_blank">TikTok</a>
-            <a href="https://www.instagram.com/iksan_snaga_pravde?utm_source=qr&igsh=MXJxc2gwZG56aWp2Mw==" target="_blank">Instagram</a>
-            <a href="https://www.youtube.com/@Iksan_snaga_pravde" target="_blank">YouTube</a>
+            <a href="https://www.tiktok.com/@iksan_snaga_pravde" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.instagram.com/iksan_snaga_pravde?utm_source=qr&igsh=MXJxc2gwZG56aWp2Mw==" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.youtube.com/@Iksan_snaga_pravde" target="_blank" rel="noopener">YouTube</a>
           </div>
         </article>
       </div>
@@ -218,7 +210,7 @@
   <section class="white-split">
     <div class="container">
       <article class="card-large">
-        <h2>Пријавите или затражите подршку</h2>
+        <h2 style="text-align:center">Пријавите или затражите подршку</h2>
 
         <ul class="contact-top">
           <li>Помоћ или саветодавна подршка</li>
@@ -250,9 +242,7 @@
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 ИКСАН • Снага правде — Сва права задржана.
-  </div>
+  <div class="container">© 2025 ИКСАН • Снага правде — Сва права задржана.</div>
 </footer>
 
 </body>
