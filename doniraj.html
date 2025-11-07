@@ -6,10 +6,11 @@
   <title>Донација — Снага правде</title>
   <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp.png">
+  <link rel="icon" href="logo.webp">
   <style>
     :root{
       --blue:#0B2141; --blue2:#102D57;
+      --lightHead1:#123366; --lightHead2:#0f295a;
       --gold:#D3A451; --goldDeep:#B88A3F; --ink:#cfe1ff;
       --line:rgba(255,255,255,.14); --glass:rgba(255,255,255,.06); --glassDeep:rgba(255,255,255,.10);
       --radius:18px;
@@ -27,8 +28,23 @@
     img{max-width:100%;display:block}
     .wrap{max-width:1100px;margin:0 auto;padding:24px}
 
+    /* HEADER */
+    header {
+      position: sticky; top: 0; z-index: 60;
+      background: linear-gradient(180deg, var(--lightHead1), var(--lightHead2));
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+    .head {display:flex;align-items:center;justify-content:space-between;padding:10px 24px;max-width:1150px;margin:0 auto}
+    .brand {display:flex;align-items:center;gap:12px}
+    .brand img {height:56px;border-radius:12px}
+    .brand span {font-family:"Times New Roman", serif;font-weight:700;letter-spacing:.3px}
+    nav.nav {display:flex;gap:18px;flex-wrap:wrap}
+    nav.nav a {opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
+    nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold)}
+
     /* HERO */
-    .hero{display:grid;gap:26px;align-items:center;margin-top:8px}
+    .hero{display:grid;gap:26px;align-items:center;margin-top:18px}
     @media (min-width: 980px){.hero{grid-template-columns:1.04fr .96fr}}
     .title{
       font-size:52px; line-height:1.08;
@@ -99,6 +115,28 @@
   </style>
 </head>
 <body>
+
+  <!-- GORNJI HEADER -->
+  <header>
+    <div class="head">
+      <div class="brand">
+        <a href="index.html">
+          <img src="logo.webp" alt="ИКСАН лого">
+        </a>
+        <span>Иксан • Снага правде</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Почетна</a>
+        <a href="onama.html">О нама</a>
+        <a href="oblasti.html">Области</a>
+        <a href="ciljevi.html">Циљеви</a>
+        <a href="inicijative.html">Иницијативе</a>
+        <a href="kontakt.html">Контакт</a>
+        <a href="doniraj.html" aria-current="page">Донирај</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="wrap">
     <!-- HERO -->
     <section class="hero">
@@ -106,7 +144,7 @@
         <h1 class="title">Док неко губи битку — ти можеш бити његов спас</h1>
         <p class="subtitle">„Правда није роба. Време је да се врати народу.“</p>
       </div>
-      <img class="hero-img" src="donacija.webp" alt="Људи заједно — Снага правде">
+      <img class="hero-img" src="hero.webp" alt="Људи заједно — Снага правде">
     </section>
 
     <!-- PANEL: levo iznosi (2x3), desno dugmad -->
