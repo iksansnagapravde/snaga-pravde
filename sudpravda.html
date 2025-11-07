@@ -39,7 +39,10 @@
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:40px;border-radius:10px}
+        .brand img {
+     height:80px;           /* увећано са 40px на 80px */
+     border-radius:12px;    /* блаже заобљен угао */
+    }
     nav{display:flex;gap:18px;flex-wrap:wrap}
     nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
     nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
@@ -121,7 +124,7 @@
       <a href="index.html">
         <img src="logo.webp.png" alt="ИКСАН лого">
         <!-- Тражено писање поред логоа -->
-        <span class="brand-name">Иксан-Снага правде</span>
+        <span>
       </a>
     </div>
     <nav class="nav">
