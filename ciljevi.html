@@ -6,7 +6,7 @@
   <title>Циљеви — ИКСАН • Снага правде</title>
   <meta name="description" content="Циљеви удружења ИКСАН — Снага правде.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp">
+  <link rel="icon" href="logo.webp.png">
 
   <style>
     :root {
@@ -24,7 +24,6 @@
       font-family: "Times New Roman";
       line-height: 1.6;
     }
-
     a {color: inherit; text-decoration: none;}
     .container {max-width: 1150px; margin: 0 auto; padding: 0 20px;}
 
@@ -34,7 +33,6 @@
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(8px);
     }
-
     .head {display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand {display:flex;align-items:center;gap:12px;font-weight:900}
     .brand img {height:40px;border-radius:10px;}
@@ -42,57 +40,73 @@
     nav.nav a {opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s;}
     nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold);}
 
-    main {padding: 50px 0;}
+    /* HERO deo */
+    .hero {padding:40px 0 0;}
+    .hero-grid {display:grid;gap:20px;grid-template-columns:1fr;}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:center;}}
 
     h1 {
-      text-align: center;
-      font-family: "Times New Roman";
-      font-weight: 400;
       color: var(--gold);
-      font-size: clamp(36px, 4.8vw, 56px);
-      line-height: 1.15;
-      margin-bottom: 36px;
+      font-size: clamp(34px,4.5vw,50px);
+      line-height:1.15;
+      margin-bottom:16px;
       text-shadow: 0 2px 0 rgba(92,65,17,.55), 0 8px 22px rgba(0,0,0,.45);
     }
+    .sub {
+      color: var(--ink); opacity:.95;
+      font-size: clamp(16px,2vw,18px);
+      max-width:720px;
+      margin:8px 0 16px;
+    }
+
+    .hero-media {
+      border-radius:16px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      background:#0f2552;
+      aspect-ratio:16/9;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .hero-media img {width:100%;height:100%;object-fit:cover;display:block;}
+    .hero-media .ph {color:#9fb6e8;opacity:.9;font-size:14px;letter-spacing:.4px;text-transform:uppercase;}
 
     ul {
-      list-style: none;
-      max-width: 1000px;
-      margin: 0 auto 60px auto;
-      font-size: clamp(15px, 1.8vw, 18px);
-      color: var(--ink);
-      padding-left: 0;
+      list-style:none;
+      max-width:1000px;
+      margin: 40px auto 60px;
+      font-size:clamp(15px,1.8vw,18px);
+      color:var(--ink);
+      padding-left:0;
     }
-
     li {
-      margin-bottom: 12px;
-      line-height: 1.7;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
+      margin-bottom:12px;
+      line-height:1.7;
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
     }
-
     li::before {
-      flex-shrink: 0;
-      font-size: 20px;
-      color: var(--gold);
+      flex-shrink:0;
+      font-size:20px;
+      color:var(--gold);
     }
 
-    /* simboli po tematici */
-    li:nth-child(1)::before { content: "🛡️"; }
-    li:nth-child(2)::before { content: "🔥"; }
-    li:nth-child(3)::before { content: "⚖️"; }
-    li:nth-child(4)::before { content: "🤝"; }
-    li:nth-child(5)::before { content: "⚔️"; }
-    li:nth-child(6)::before { content: "👁️"; }
-    li:nth-child(7)::before { content: "💪"; }
-    li:nth-child(8)::before { content: "🔍"; }
-    li:nth-child(9)::before { content: "📜"; }
-    li:nth-child(10)::before { content: "📣"; }
-    li:nth-child(11)::before { content: "🗳️"; }
-    li:nth-child(12)::before { content: "🌐"; }
-    li:nth-child(13)::before { content: "🏛️"; }
-    li:nth-child(14)::before { content: "🤲"; }
+    /* ikone po redovima */
+    li:nth-child(1)::before{content:"🛡️"}
+    li:nth-child(2)::before{content:"🔥"}
+    li:nth-child(3)::before{content:"⚖️"}
+    li:nth-child(4)::before{content:"🤝"}
+    li:nth-child(5)::before{content:"⚔️"}
+    li:nth-child(6)::before{content:"👁️"}
+    li:nth-child(7)::before{content:"💪"}
+    li:nth-child(8)::before{content:"🔍"}
+    li:nth-child(9)::before{content:"📜"}
+    li:nth-child(10)::before{content:"📣"}
+    li:nth-child(11)::before{content:"🗳️"}
+    li:nth-child(12)::before{content:"🌐"}
+    li:nth-child(13)::before{content:"🏛️"}
+    li:nth-child(14)::before{content:"🤲"}
 
     .cta {
       display: flex;
@@ -101,41 +115,28 @@
       flex-wrap: wrap;
       margin-top: 40px;
     }
-
     .btn {
-      display: inline-block;
-      padding: 14px 36px;
-      border-radius: 40px;
-      font-weight: 700;
-      font-size: 18px;
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
-      border: none;
-      cursor: pointer;
-      transition: transform .2s, box-shadow .2s;
-      text-align: center;
+      display:inline-block;
+      padding:14px 36px;
+      border-radius:40px;
+      font-weight:700;
+      font-size:18px;
+      letter-spacing:0.4px;
+      text-transform:uppercase;
+      border:none;
+      cursor:pointer;
+      transition:transform .2s, box-shadow .2s;
+      text-align:center;
     }
-
     .btn-primary {
       background: linear-gradient(180deg, #e4b85c, #d3a451);
       color: #0b2141;
       box-shadow: 0 4px 0 #8a682a, 0 8px 22px rgba(0,0,0,.4);
     }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 0 #74561f, 0 10px 26px rgba(0,0,0,.5);
-    }
-
     .btn-dark {
       background: linear-gradient(180deg, #1e3a72, #0f2552);
       color: #fff;
       box-shadow: 0 4px 0 #07142c, 0 8px 22px rgba(0,0,0,.4);
-    }
-
-    .btn-dark:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 0 #07142c, 0 10px 26px rgba(0,0,0,.5);
     }
 
     footer {
@@ -149,13 +150,14 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html" aria-label="ИКСАН — Почетна">
-        <img src="logo.webp" alt="ИКСАН лого">
+      <a href="index.html">
+        <img src="logo.webp.png" alt="ИКСАН лого">
         <span>ИКСАН • Снага правде</span>
       </a>
     </div>
@@ -164,37 +166,52 @@
       <a href="onama.html">О нама</a>
       <a href="oblasti.html">Области</a>
       <a href="ciljevi.html" aria-current="page">Циљеви</a>
-      <a href="inicijативе.html">Иницијативе</a>
+      <a href="inicijative.html">Иницијативе</a>
       <a href="kontakt.html">Контакт</a>
     </nav>
   </div>
 </header>
 
-<main class="container">
-  <h1>Циљеви удружења</h1>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Циљеви удружења</h1>
+        <p class="sub">Основни правци нашег деловања у борби за правду, достојанство и сигурност сваког грађанина.</p>
+      </div>
+      <div class="hero-media">
+        <!-- 🖼️ MESTO ZA SLIKU -->
+        <!-- Ovde ubaciš svoju sliku, npr: -->
+        <!-- <img src="ciljevi-hero.webp" alt="Циљеви — ИКСАН"> -->
+        <span class="ph">простор за слику</span>
+      </div>
+    </div>
+  </section>
 
-  <ul>
-    <li>Заштита грађанских, људских и економских права;</li>
-    <li>Борба против корупције, злоупотреба и некажњивости у институцијама;</li>
-    <li>Унапређење транспарентности рада јавних институција и одговорности носилаца јавних функција;</li>
-    <li>Пружање правне, саветодавне и техничке подршке грађанима, радницима и предузетницима;</li>
-    <li>Помоћ и заштита странака у извршним поступцима и случајевима злоупотреба јавних извршитеља;</li>
-    <li>Заштита права лица у кривичним и прекршајним поступцима и надзор над условима у систему извршења казни;</li>
-    <li>Заштита права радника и промоција економске правде и социјалне сигурности;</li>
-    <li>Истраживање и анализа података ради откривања противправно стечене имовине;</li>
-    <li>Предлагање измена закона и јавних политика ради унапређења правде;</li>
-    <li>Организовање јавних скупова, трибина и протеста у циљу јавног заступања грађана;</li>
-    <li>Праћење изборних процеса и пријављивање неправилности;</li>
-    <li>Подстицање јавности да активно учествује у доношењу одлука;</li>
-    <li>Развој демократских процеса и владавине права;</li>
-    <li>Хуманитарни рад и помоћ угроженим лицима.</li>
-  </ul>
+  <section class="container">
+    <ul>
+      <li>Заштита грађанских, људских и економских права;</li>
+      <li>Борба против корупције, злоупотреба и некажњивости у институцијама;</li>
+      <li>Унапређење транспарентности рада јавних институција и одговорности носилаца јавних функција;</li>
+      <li>Пружање правне, саветодавне и техничке подршке грађанима, радницима и предузетницима;</li>
+      <li>Помоћ и заштита странака у извршним поступцима и случајевима злоупотреба јавних извршитеља;</li>
+      <li>Заштита права лица у кривичним и прекршајним поступцима и надзор над условима у систему извршења казни;</li>
+      <li>Заштита права радника и промоција економске правде и социјалне сигурности;</li>
+      <li>Истраживање и анализа података ради откривања противправно стечене имовине;</li>
+      <li>Предлагање измена закона и јавних политика ради унапређења правде;</li>
+      <li>Организовање јавних скупова, трибина и протеста у циљу јавног заступања грађана;</li>
+      <li>Праћење изборних процеса и пријављивање неправилности;</li>
+      <li>Подстицање јавности да активно учествује у доношењу одлука;</li>
+      <li>Развој демократских процеса и владавине права;</li>
+      <li>Хуманитарни рад и помоћ угроженим лицима.</li>
+    </ul>
 
-  <div class="cta">
-    <a href="kontakt.html" class="btn btn-primary">ДОНИРАЈ</a>
-    <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-    <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
-  </div>
+    <div class="cta">
+      <a href="kontakt.html" class="btn btn-primary">ДОНИРАЈ</a>
+      <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+      <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
+    </div>
+  </section>
 </main>
 
 <footer>
