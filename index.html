@@ -47,7 +47,7 @@
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
     h1{
-      color:#fff;
+      color:#fff; /* bela umesto zlatne */
       margin:.6rem 0 0;
       line-height:1.15;
       font-weight:400;
@@ -76,6 +76,7 @@
       box-shadow:0 12px 28px rgba(0,0,0,.35);
       text-align:center;
     }
+    /* slika najviše ~10×10cm ≈ 380×380px */
     .hero-media img{
       width:100%;
       max-width:380px;
@@ -83,17 +84,25 @@
       margin:auto;
       object-fit:cover;
       border-radius:12px;
+      display:block;
     }
 
-    /* FADE prelaz */
-    .fade-divider{
-      height:100px;width:50%;margin:0 auto;
+    /* FADE PRELAZ: full-width wrap + uža jezgra 25% (ranije 50%) */
+    .fade-wrap{
+      width:100%;
+      background:#ffffff; /* prelaz ulazi u belu zonu */
+    }
+    .fade-core{
+      height:100px;
+      width:25%;                 /* uži 50% nego ranije (sa 50% na 25%) */
+      min-width:260px;           /* da ne bude previše usko na mobilnom */
+      margin:0 auto;
       background:linear-gradient(180deg, var(--blue2) 0%, #ffffff 100%);
       border-top-left-radius:22px;border-top-right-radius:22px;
       box-shadow:0 -8px 24px rgba(0,0,0,.18);
     }
 
-    /* BELO PODNOŽJE */
+    /* BELO PODNOŽJE + KARTICE */
     .white-split{background:#fff;color:#13203a;padding:0 0 6px}
     .grid{display:grid;gap:16px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -104,9 +113,21 @@
       transition:.2s;
     }
     .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
-    .card h3{color:#fff;font-size:clamp(22px,3vw,28px);margin-bottom:8px}
-    .card p{color:var(--ink)}
-    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--ink);text-align:center;opacity:.8;margin-top:24px}
+    .card h3{
+      font-family:"Times New Roman";
+      margin:0 0 8px;color:#fff;font-size:clamp(24px,3vw,30px);font-weight:500;
+      text-shadow:0 1px 3px rgba(0,0,0,.4);letter-spacing:.3px;
+    }
+    .card h3 a{color:inherit}
+    .card p{color:var(--ink);line-height:1.75;font-size:clamp(15px,1.9vw,16.5px)}
+    .card a.more{display:inline-block;margin-top:6px;font-weight:700;color:var(--ink)}
+
+    .statement{background:rgba(17,42,84,.60);border:1px solid var(--line);border-radius:var(--radius);
+      padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.30);text-align:left;color:#fff}
+    .statement h2{color:#fff;font-weight:600;font-size:clamp(20px,2.6vw,24px);margin-bottom:8px}
+    .statement p{max-width:880px;margin:0;color:var(--ink);font-size:clamp(15px,1.9vw,16.5px)}
+
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--ink);text-align:center;opacity:.8;margin-top:24px;font-size:.9rem}
   </style>
 </head>
 
@@ -128,6 +149,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -145,18 +167,44 @@
     </div>
   </section>
 
-  <div class="fade-divider"></div>
+  <!-- FADE: full-width, uža jezgra 25% -->
+  <div class="fade-wrap">
+    <div class="fade-core"></div>
+  </div>
 
+  <!-- BELO PODNOŽJE + KARTICE -->
   <section class="white-split">
-    <div class="container grid">
-      <article class="card">
-        <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
-        <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
-      </article>
-      <article class="card">
-        <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
-        <p>Истина о имовини мора бити јавна — без заштите моћних.</p>
-      </article>
+    <div class="container">
+      <div class="grid">
+        <article class="card">
+          <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
+          <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
+          <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
+        </article>
+
+        <article class="card">
+          <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
+          <p>Време је да истина о имовини буде јавна — без заштите моћних.</p>
+          <a class="more" href="porekloimovine.html">Погледај детаље →</a>
+        </article>
+
+        <article class="card">
+          <h3><a href="sudpravda.html">Суд народу, не моћнима</a></h3>
+          <p>Право мора бити штит човека, а не оружје политике.</p>
+          <a class="more" href="sudpravda.html">Прочитај више →</a>
+        </article>
+
+        <article class="card">
+          <h3><a href="radnicipreduzetnici.html">Радници и предузетници — срце здраве земље</a></h3>
+          <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
+          <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
+        </article>
+      </div>
+
+      <div class="statement" style="margin-top:10px">
+        <h2>Наш стандард</h2>
+        <p>Право, чињенице и јавни интерес. Независне институције, јасна правила и једнака примена закона — то је политика која гради поверење.</p>
+      </div>
     </div>
   </section>
 
