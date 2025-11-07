@@ -6,19 +6,15 @@
   <title>Иксан • Снага правде — Почетна</title>
   <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo-transparent.png">
+  <link rel="icon" href="logo.webp.png">
 
   <style>
-    :root {
-      --blue:#0B2141; 
-      --blue2:#102D57;
-      --gold:#D3A451; 
-      --ink:#cfe1ff;
+    :root{
+      --blue:#0B2141; --blue2:#102D57;
+      --gold:#D3A451; --ink:#cfe1ff;
       --line:rgba(255,255,255,.14);
       --radius:16px;
-      --header-solid:#0B2141; /* иста боја као позадина логотипа */
     }
-
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{
@@ -33,29 +29,21 @@
     a{color:inherit;text-decoration:none}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — једнобојан, тамно плав */
+    /* HEADER */
     header{
-      position:sticky; top:0; z-index:60;
-      background:var(--header-solid);
-      border-bottom:1px solid rgba(255,255,255,.08);
+      position:sticky;top:0;z-index:60;
+      background:linear-gradient(180deg,#123366,#0f295a);
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(8px);
     }
-
     .head{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{
-      height:80px; /* 50–100% већи */
-      display:block;
-      background:transparent;
-    }
-    @media(max-width:560px){
-      .brand img{height:70px;}
-    }
-
+    .brand img{height:40px;border-radius:10px}
     nav{display:flex;gap:16px;flex-wrap:wrap}
     nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
     nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-    main{min-height:calc(100vh - 56px);display:flex;flex-direction:column}
+    main{min-height:calc(100vh - 56px); display:flex; flex-direction:column}
 
     /* HERO секција */
     .hero{padding:16px 0 0}
@@ -88,13 +76,13 @@
       box-shadow:0 10px 24px rgba(0,0,0,.32);
       background:#0f2552;
       aspect-ratio:16/9;
-      display:flex;align-items:center;justify-content:center;
+      display:flex; align-items:center; justify-content:center;
     }
     .hero-media img{
-      width:100%;height:100%;object-fit:cover;display:block;
+      width:100%; height:100%; object-fit:cover; display:block;
     }
 
-    /* БЕЛО ПОДНОЖЈЕ */
+    /* BELO PODNOŽJE */
     .white-split{background:#fff;color:#13203a;padding:18px 0 12px;margin-top:16px;
       border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 -8px 24px rgba(0,0,0,.18);}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
@@ -128,12 +116,9 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html" aria-label="Иксан — Почетна">
-        <picture>
-          <source srcset="logo.svg" type="image/svg+xml">
-          <source srcset="logo-transparent.png" type="image/png">
-          <img src="logo.webp.png" alt="Иксан — Снага правде">
-        </picture>
+      <a href="index.html">
+        <img src="logo.webp.png" alt="ИКСАН лого">
+        <span class="brand-name">Иксан-Снага правде</span>
       </a>
     </div>
     <nav class="nav">
@@ -148,6 +133,7 @@
 </header>
 
 <main>
+  <!-- HERO секција -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -160,12 +146,14 @@
         </div>
       </div>
 
+      <!-- ОВО ЈЕ НОВА СЛИКА -->
       <div class="hero-media">
         <img src="hero.webp" alt="Иксан — Снага правде, заједништво и достојанство">
       </div>
     </div>
   </section>
 
+  <!-- БЕЛА СЕКЦИЈА СА КАРТИЦАМА -->
   <section class="white-split">
     <div class="container">
       <div class="grid">
