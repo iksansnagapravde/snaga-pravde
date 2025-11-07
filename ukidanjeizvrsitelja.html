@@ -14,6 +14,7 @@
       --lightHead1:#123366;--lightHead2:#0f295a;
       --gold:#D3A451;--ink:#cfe1ff;
       --line:rgba(255,255,255,.14);
+      --cardLine:#dfe7fb; --text:#13203a;
       --radius:16px;
     }
     *{box-sizing:border-box;margin:0;padding:0}
@@ -81,7 +82,7 @@
 
     /* WHITE SPLIT */
     .white-split{
-      background:#fff;color:#13203a;
+      background:#fff;color:var(--text);
       margin-top:16px;padding:30px 0 40px;
       border-top-left-radius:20px;border-top-right-radius:20px;
       box-shadow:0 -8px 24px rgba(0,0,0,.18);
@@ -90,25 +91,26 @@
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
     .card{
-      background:linear-gradient(180deg,#123366,#0f2552);
-      border:1px solid var(--line);
+      background:#fff; color:var(--text);
+      border:1px solid var(--cardLine);
       border-radius:var(--radius);
-      color:#cfe1ff;
-      box-shadow:0 12px 28px rgba(0,0,0,.3);
-      padding:20px;
+      box-shadow:0 12px 24px rgba(0,0,0,.08);
+      overflow:hidden;
       transition:transform .2s,box-shadow .2s;
     }
-    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
+    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.12)}
     .card h3{
-      color:#fff;
-      font-size:clamp(20px,2.5vw,24px);
-      margin-bottom:10px;
-      font-weight:600;
+      margin:0; padding:12px 16px;
+      background:linear-gradient(180deg,#123366,#0f2552);
+      color:#fff; font-size:clamp(20px,2.5vw,24px); font-weight:600;
       text-shadow:0 1px 3px rgba(0,0,0,.4);
+      border-bottom:1px solid #0b1f46;
     }
+    .card .body{padding:16px}
     .card p, .card ul{font-size:16px;line-height:1.7;margin-bottom:12px;}
     .card ul{padding-left:18px}
     .card li{margin-bottom:6px}
+
     footer{
       border-top:1px solid var(--line);
       color:var(--ink);
@@ -168,38 +170,46 @@
 
         <article class="card">
           <h3>Приватни извршитељи у Србији</h3>
-          <p>Приватни извршитељи у Србији постали су симбол неправде и богаћења на туђој муци. 
-          Захтевамо да буду укинути и претворени у судске извршитеље који ће радити за плату из буџета, а не на проценат.</p>
+          <div class="body">
+            <p>Приватни извршитељи у Србији постали су симбол неправде и богаћења на туђој муци. 
+            Захтевамо да буду укинути и претворени у судске извршитеље који ће радити за плату из буџета, а не на проценат.</p>
+          </div>
         </article>
 
         <article class="card">
           <h3>Наши захтеви</h3>
-          <ul>
-            <li>Укидање двоструког кажњавања грађана — да грађани више не плаћају адвокатске и извршитељске трошкове за исти предмет.</li>
-            <li>Укупни трошкови извршења не смеју прећи износ главног дуга.</li>
-            <li>Заштита минималне зараде, пензије, социјалне помоћи и јединог дома. Ово је црвена линија за сваку наплату!</li>
-            <li>Право жалбе мора бити омогућено у сваком тренутку када грађанин уочи неправилност — то је неотуђиво уставно право.</li>
-          </ul>
+          <div class="body">
+            <ul>
+              <li>Укидање двоструког кажњавања грађана — да грађани више не плаћају адвокатске и извршитељске трошкове за исти предмет.</li>
+              <li>Укупни трошкови извршења не смеју прећи износ главног дуга.</li>
+              <li>Заштита минималне зараде, пензије, социјалне помоћи и јединог дома. Ово је црвена линија за сваку наплату!</li>
+              <li>Право жалбе мора бити омогућено у сваком тренутку када грађанин уочи неправилност — то је неотуђиво уставно право.</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
           <h3>Заштита грађана</h3>
-          <ul>
-            <li>Сваки поступак покренут без уредног достављања мора бити обустављен.</li>
-            <li>Ако грађанин годинама није имао контакт са документом, опоменом или решењем — поступак се обуставља.</li>
-            <li>Обустављање свих текућих и покренутих поступака извршења који су противни Уставу и људском достојанству.</li>
-            <li>Потпуни отпис свих камата и пратећих трошкова насталих током година у којима грађани нису били обавештени.</li>
-          </ul>
+          <div class="body">
+            <ul>
+              <li>Сваки поступак покренут без уредног достављања мора бити обустављен.</li>
+              <li>Ако грађанин годинама није имао контакт са документом, опоменом или решењем — поступак се обуставља.</li>
+              <li>Обустављање свих текућих и покренутих поступака извршења који су противни Уставу и људском достојанству.</li>
+              <li>Потпуни отпис свих камата и пратећих трошкова насталих током година у којима грађани нису били обавештени.</li>
+            </ul>
+          </div>
         </article>
 
         <article class="card">
           <h3>Систем неправде мора стати</h3>
-          <p>Забрана блокирања рачуна, заплене имовине, станова, кућа, аутомобила или покућства — без правоснажне судске одлуке.</p>
-          <p>Неправда је када се грађанин после више година „изненада“ суочи са дугом који се увећао вишеструко, уз камате и трошкове које никада није видео, а потом му се блокира рачун или одузима имовина.</p>
-          <p>То није правна држава — то је систем неправде који мора бити заустављен.</p>
-          <div class="cta-row" style="margin-top:10px">
-            <a class="btn btn-primary" href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
-               target="_blank" rel="noopener noreferrer">✍️ Потпиши петицију</a>
+          <div class="body">
+            <p>Забрана блокирања рачуна, заплене имовине, станова, кућа, аутомобила или покућства — без правоснажне судске одлуке.</p>
+            <p>Неправда је када се грађанин после више година „изненада“ суочи са дугом који се увећао вишеструко, уз камате и трошкове које никада није видео, а потом му се блокира рачун или одузима имовина.</p>
+            <p>То није правна држава — то је систем неправде који мора бити заустављен.</p>
+            <div class="cta-row" style="margin-top:10px">
+              <a class="btn btn-primary" href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
+                 target="_blank" rel="noopener noreferrer">✍️ Потпиши петицију</a>
+            </div>
           </div>
         </article>
 
