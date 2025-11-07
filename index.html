@@ -22,12 +22,11 @@
       background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
       color:var(--ink);
       -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
     }
     a{color:inherit;text-decoration:none}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER */
+    /* Header */
     header{
       position:sticky;top:0;z-index:60;
       background:linear-gradient(180deg,#123366,#0f295a);
@@ -47,15 +46,12 @@
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
     h1{
-      color:#fff; /* bela umesto zlatne */
+      color:#ffffff;
       margin:.6rem 0 0;
       line-height:1.15;
       font-weight:400;
       font-size:clamp(32px,4vw,42px);
-      text-shadow:
-        0 0 6px rgba(255,255,255,0.6),
-        0 0 12px rgba(255,255,255,0.35),
-        0 4px 20px rgba(0,0,0,0.4);
+      text-shadow:0 0 8px rgba(255,255,255,0.5);
     }
     .line2{display:block;font-size:clamp(20px,3vw,28px);color:var(--ink);margin-top:6px}
     .sub{margin:12px 0 18px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
@@ -71,39 +67,32 @@
     .btn:hover{transform:translateY(-2px)}
 
     .hero-media{
-      border-radius:18px 18px 0 0;overflow:hidden;
+      border-radius:18px 18px 0 0;
+      overflow:hidden;
       border:1px solid var(--line);
       box-shadow:0 12px 28px rgba(0,0,0,.35);
       text-align:center;
     }
-    /* slika najviše ~10×10cm ≈ 380×380px */
+    /* tačna veličina slike 100x100mm ≈ 378px */
     .hero-media img{
-      width:100%;
-      max-width:380px;
-      max-height:380px;
-      margin:auto;
+      width:378px;
+      height:378px;
       object-fit:cover;
+      object-position:center;
       border-radius:12px;
+      margin:auto;
       display:block;
     }
 
-    /* FADE PRELAZ: full-width wrap + uža jezgra 25% (ranije 50%) */
-    .fade-wrap{
+    /* PRELAZ 1 cm (≈ 38px) preko cele širine */
+    .fade-divider{
       width:100%;
-      background:#ffffff; /* prelaz ulazi u belu zonu */
-    }
-    .fade-core{
-      height:100px;
-      width:25%;                 /* uži 50% nego ranije (sa 50% na 25%) */
-      min-width:260px;           /* da ne bude previše usko na mobilnom */
-      margin:0 auto;
-      background:linear-gradient(180deg, var(--blue2) 0%, #ffffff 100%);
-      border-top-left-radius:22px;border-top-right-radius:22px;
-      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+      height:38px;
+      background:linear-gradient(180deg,var(--blue2) 0%, #ffffff 100%);
     }
 
     /* BELO PODNOŽJE + KARTICE */
-    .white-split{background:#fff;color:#13203a;padding:0 0 6px}
+    .white-split{background:#fff;color:#13203a;padding:30px 0 6px}
     .grid{display:grid;gap:16px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
     .card{
@@ -116,18 +105,19 @@
     .card h3{
       font-family:"Times New Roman";
       margin:0 0 8px;color:#fff;font-size:clamp(24px,3vw,30px);font-weight:500;
-      text-shadow:0 1px 3px rgba(0,0,0,.4);letter-spacing:.3px;
+      text-shadow:0 1px 3px rgba(0,0,0,.4);
     }
     .card h3 a{color:inherit}
     .card p{color:var(--ink);line-height:1.75;font-size:clamp(15px,1.9vw,16.5px)}
     .card a.more{display:inline-block;margin-top:6px;font-weight:700;color:var(--ink)}
 
     .statement{background:rgba(17,42,84,.60);border:1px solid var(--line);border-radius:var(--radius);
-      padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.30);text-align:left;color:#fff}
-    .statement h2{color:#fff;font-weight:600;font-size:clamp(20px,2.6vw,24px);margin-bottom:8px}
+      padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.30);text-align:left;color:#fff;margin-top:10px}
+    .statement h2{font-weight:600;font-size:clamp(20px,2.6vw,24px);margin-bottom:8px}
     .statement p{max-width:880px;margin:0;color:var(--ink);font-size:clamp(15px,1.9vw,16.5px)}
 
-    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--ink);text-align:center;opacity:.8;margin-top:24px;font-size:.9rem}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--ink);
+      text-align:center;opacity:.8;margin-top:24px;font-size:.9rem}
   </style>
 </head>
 
@@ -167,10 +157,8 @@
     </div>
   </section>
 
-  <!-- FADE: full-width, uža jezgra 25% -->
-  <div class="fade-wrap">
-    <div class="fade-core"></div>
-  </div>
+  <!-- PRELAZ PO CELOJ ŠIRINI -->
+  <div class="fade-divider"></div>
 
   <!-- BELO PODNOŽJE + KARTICE -->
   <section class="white-split">
@@ -201,7 +189,7 @@
         </article>
       </div>
 
-      <div class="statement" style="margin-top:10px">
+      <div class="statement">
         <h2>Наш стандард</h2>
         <p>Право, чињенице и јавни интерес. Независне институције, јасна правила и једнака примена закона — то је политика која гради поверење.</p>
       </div>
