@@ -47,8 +47,12 @@
 
     /* HERO секција */
     .hero{padding:36px 0 0}
-    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+    .hero-grid{
+      display:grid;gap:20px;grid-template-columns:1fr;align-items:start
+    }
+    @media(min-width:980px){
+      .hero-grid{grid-template-columns:1.05fr .95fr}
+    }
 
     h1{
       color:#fff;
@@ -64,12 +68,18 @@
       max-width:740px; margin:8px 0 16px;
     }
 
+    /* Slika desno, smanjena kao na ostalim stranicama */
     .hero-media{
       border-radius:16px; overflow:hidden; border:1px solid var(--line);
-      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      box-shadow:0 8px 20px rgba(0,0,0,.28);
       background:#0f2552;
       aspect-ratio:16/9;
       display:flex; align-items:center; justify-content:center;
+      max-width:520px;           /* ↓ kontrola veličine */
+      justify-self:end;          /* poravnaj desno u gridu */
+    }
+    @media(max-width:979px){
+      .hero-media{max-width:100%; justify-self:stretch}
     }
     .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
 
@@ -153,11 +163,11 @@
         <a href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
            target="_blank" rel="noopener noreferrer"
            class="btn btn-primary">✍️ Потпиши петицију</a>
-        </div>
       </div>
+
+      <!-- ↓ SLIKA: desno i smanjena -->
       <div class="hero-media">
-        <!-- ✅ UBACENA PRAVA SLIKA -->
-        <img src="hero.webp" alt="Циљеви — Иксан • Снага правде">
+        <img src="hero.webp" alt="Иницијативе — Иксан • Снага правде">
       </div>
     </div>
   </section>
