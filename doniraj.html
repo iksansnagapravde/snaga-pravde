@@ -38,7 +38,7 @@
     .head {display:flex;align-items:center;justify-content:space-between;padding:10px 24px;max-width:1150px;margin:0 auto}
     .brand {display:flex;align-items:center;gap:12px}
     .brand img {height:56px;border-radius:12px}
-    .brand span {font-family:"Times New Roman", serif;font-weight:700;letter-spacing:.3px}
+    .brand span {font-weight:700;letter-spacing:.3px}
     nav.nav {display:flex;gap:18px;flex-wrap:wrap}
     nav.nav a {opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
     nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold)}
@@ -46,72 +46,40 @@
     /* HERO */
     .hero{display:grid;gap:26px;align-items:center;margin-top:18px}
     @media (min-width: 980px){.hero{grid-template-columns:1.04fr .96fr}}
-    .title{
-      font-size:52px; line-height:1.08;
-      color:#fff; text-shadow:0 0 14px rgba(255,255,255,.35);
-      letter-spacing:.2px; margin-bottom:12px;
-      font-family:"Times New Roman", serif;
-    }
-    .subtitle{
-      font-size:20px; color:#fff; opacity:.95; margin:2px 0 12px 0;
-      text-shadow:0 0 10px rgba(255,255,255,.30);
-      font-family:"Times New Roman", serif;
-    }
+    .title{font-size:52px;line-height:1.08;color:#fff;text-shadow:0 0 14px rgba(255,255,255,.35);letter-spacing:.2px;margin-bottom:12px}
+    .subtitle{font-size:20px;color:#fff;opacity:.95;margin:2px 0 12px 0;text-shadow:0 0 10px rgba(255,255,255,.30)}
     .hero-img{justify-self:end;width:43vw;max-width:520px;border-radius:18px;border:1px solid rgba(255,255,255,.22);box-shadow:0 22px 40px rgba(0,0,0,.45)}
     @media (max-width: 979px){.hero{grid-template-columns:1fr}.hero-img{justify-self:center;width:88vw;max-width:620px;margin-top:8px}}
 
-    /* PANEL: levo iznosi (2x3), desno dugmad vertikalno */
+    /* PANEL */
     .panel{margin-top:10px;background:rgba(16,45,87,.86);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 10px 26px rgba(0,0,0,.34)}
     .panel-grid{display:grid;gap:16px;align-items:center}
     @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
-    .amount-grid{
-      display:grid;gap:10px;
-      grid-template-columns:repeat(3, minmax(90px, 1fr));
-    }
-    .chip{
-      padding:10px 14px;border-radius:999px;text-align:center;
-      background:var(--glass); border:1px solid rgba(255,255,255,.18);
-      color:#e8f0ff; font-weight:700; font-size:16px; cursor:pointer;
-      transition:background .15s ease, transform .15s ease, border-color .15s ease;
-      backdrop-filter:blur(3px);
-      font-family:"Times New Roman", serif;
-    }
+    .amount-grid{display:grid;gap:10px;grid-template-columns:repeat(3, minmax(90px, 1fr))}
+    .chip{padding:10px 14px;border-radius:999px;text-align:center;background:var(--glass);border:1px solid rgba(255,255,255,.18);color:#e8f0ff;font-weight:700;font-size:16px;cursor:pointer;transition:background .15s,transform .15s,border-color .15s;backdrop-filter:blur(3px)}
     .chip:hover{background:var(--glassDeep);transform:translateY(-1px)}
     .chip[aria-pressed="true"]{background:linear-gradient(180deg,#f2d48f,#d3a451);color:#0b2141;border-color:var(--goldDeep)}
     .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    .custom input{width:160px;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:var(--glass);color:#fff;font-size:16px;font-family:"Times New Roman", serif}
+    .custom input{width:160px;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:var(--glass);color:#fff;font-size:16px}
     .cta-stack{display:flex;flex-direction:column;gap:10px;align-items:stretch}
-    .btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.35), inset 0 -2px 0 rgba(0,0,0,.2);transition:transform .15s ease, box-shadow .15s ease; text-align:center; font-family:"Times New Roman", serif}
+    .btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.35), inset 0 -2px 0 rgba(0,0,0,.2);transition:transform .15s, box-shadow .15s; text-align:center}
     .btn-gold{background:linear-gradient(180deg,#f2d48f,#d3a451);color:#0b2141;border:1px solid var(--goldDeep)}
     .btn-dark{background:linear-gradient(180deg,#1f3366,#0f244f);color:#fff;border:1px solid rgba(255,255,255,.12)}
     .btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.45), inset 0 -2px 0 rgba(0,0,0,.25)}
 
     /* SEKCIJE */
     .section{background:rgba(16,45,87,.88);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:16px;box-shadow:0 12px 28px rgba(0,0,0,.34)}
-    h2{
-      font-size:28px; line-height:1.18; text-align:center;
-      color:#fff; text-shadow:0 0 10px rgba(255,255,255,.30);
-      letter-spacing:.3px; margin-bottom:12px;
-      font-family:"Times New Roman", serif;
-    }
+    h2{font-size:28px;line-height:1.18;text-align:center;color:#fff;text-shadow:0 0 10px rgba(255,255,255,.30);letter-spacing:.3px;margin-bottom:12px}
     .grid3{display:grid;gap:14px}
     @media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
     .card{background:var(--glass);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
-    .card-title{
-      font-size:24px; color:#fff; margin-bottom:8px;
-      text-shadow:0 0 10px rgba(255,255,255,.28);
-      font-family:"Times New Roman", serif;
-    }
+    .card-title{font-size:24px;color:#fff;margin-bottom:8px;text-shadow:0 0 10px rgba(255,255,255,.28)}
     .bank{text-align:center;font-size:18px;line-height:1.9}
     .book{display:grid;gap:16px;align-items:center}
     @media(min-width: 920px){.book{grid-template-columns:auto 1fr}}
     .book img{max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 26px rgba(0,0,0,.4)}
-    .stanza{
-      font-size:20px; color:#fff; text-shadow:0 0 10px rgba(255,255,255,.30);
-      line-height:1.7; white-space:pre-line;
-      font-family:"Times New Roman", serif;
-    }
-    footer{opacity:.75;text-align:center;margin:22px 0 6px 0; font-family:"Times New Roman", serif}
+    .stanza{font-size:20px;color:#fff;text-shadow:0 0 10px rgba(255,255,255,.30);line-height:1.7;white-space:pre-line}
+    footer{opacity:.75;text-align:center;margin:22px 0 6px 0}
   </style>
 </head>
 <body>
@@ -150,7 +118,6 @@
     <!-- PANEL: levo iznosi (2x3), desno dugmad -->
     <section class="panel" aria-label="Опције и износи">
       <div class="panel-grid">
-        <!-- Levo: iznosi -->
         <div>
           <div class="amount-grid" role="group" aria-label="Предложени износи">
             <button class="chip" data-amount="500">500 RSD</button>
@@ -158,15 +125,13 @@
             <button class="chip" data-amount="2500">2.500 RSD</button>
             <button class="chip" data-amount="5000">5.000 RSD</button>
             <button class="chip" data-amount="10000">10.000 RSD</button>
-            <button class="chip" data-amount="" id="chip-custom">Други износ</button>
+            <button class="chip" id="chip-custom">Други износ</button>
           </div>
           <div class="custom">
             <input id="customAmount" type="number" min="100" step="100" placeholder="Упишите износ (RSD)">
           </div>
         </div>
-        <!-- Desno: dugmad jedno ispod drugog -->
         <div class="cta-stack">
-          <!-- ZAMENI stvarnim checkout linkom -->
           <a id="payBtn" class="btn btn-gold" href="PAYMENT_URL">ДОНИРАЈ КАРТИЦОМ</a>
           <a id="toRacun" class="btn btn-dark" href="#racun">ДОНИРАЈ НА РАЧУН</a>
         </div>
@@ -204,12 +169,12 @@
       </div>
     </section>
 
-    <!-- KNJIGA -->
+    <!-- KNJIGA (KORICA = iksan.webp) -->
     <section class="section" id="knjiga">
       <h2>ИКСАН — књига која помаже</h2>
       <div class="book">
         <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
-          <img src="IKSAN_Naslovna.webp" alt="ИКСАН — корица књиге">
+          <img src="iksan.webp" alt="ИКСАН — корица књиге">
         </a>
         <div>
           <p class="stanza">По истинитим догађајима —
@@ -224,12 +189,10 @@
   </main>
 
   <script>
-    // >>> PODESI CHECKOUT LINK <<<
-    const PAYMENT_REDIRECT_BASE = "PAYMENT_URL?amount="; // zameni stvarnim provajderom
+    const PAYMENT_REDIRECT_BASE = "PAYMENT_URL?amount="; // замени стварним линком
     const payBtn  = document.getElementById('payBtn');
     const chips   = document.querySelectorAll('.chip');
     const custom  = document.getElementById('customAmount');
-    const chipCustom = document.getElementById('chip-custom');
     const toRacun = document.getElementById('toRacun');
 
     function setActiveAmount(amount){
@@ -246,12 +209,8 @@
 
     chips.forEach(c => c.addEventListener('click', () => {
       const val = parseInt(c.dataset.amount,10);
-      if(!isNaN(val)) {
-        custom.value = "";
-        setActiveAmount(val);
-      } else {
-        custom.focus();
-      }
+      if(!isNaN(val)) { custom.value = ""; setActiveAmount(val); }
+      else { custom.focus(); }
     }));
 
     custom.addEventListener('input', e => {
@@ -259,7 +218,6 @@
       setActiveAmount(!isNaN(v) ? v : 0);
     });
 
-    // glatko skroluj do "racun"
     toRacun.addEventListener('click', (e) => {
       const target = document.querySelector('#racun');
       if (target){
