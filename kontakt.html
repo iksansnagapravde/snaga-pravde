@@ -48,7 +48,7 @@
     main {padding:40px 0;}
 
     h1 {
-      color: #fff; /* glavni naslov bela boja */
+      color: #fff;
       font-size: clamp(32px,4.5vw,48px);
       font-weight: 600;
       text-align: center;
@@ -96,24 +96,53 @@
     }
     .btn:hover {transform: translateY(-2px);}
 
+    /* Kontakt forma */
+    .contact-section {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .contact-box {
       background: rgba(16,45,87,.92);
       border: 1px solid var(--line);
       border-radius: var(--radius);
-      padding: 24px;
+      padding: 28px;
       box-shadow: 0 10px 28px rgba(0,0,0,.3);
       color: var(--ink);
-      max-width: 700px;
-      margin: 0 auto;
+      max-width: 720px;
+      width: 100%;
     }
-
     .contact-box h2 {
       text-align: center;
       color: var(--gold);
       font-size: clamp(22px,2.6vw,26px);
       font-weight: 600;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
+    form {display: grid; gap: 14px;}
+    label {font-weight: 600; color: var(--ink);}
+    input, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      font-size: 16px;
+    }
+    input::placeholder, textarea::placeholder {color: rgba(255,255,255,.5);}
+    textarea {min-height: 120px; resize: vertical;}
+    button.submit {
+      background: linear-gradient(180deg,#e4b85c,#d3a451);
+      color: #0b2141;
+      font-weight: 700;
+      padding: 12px 0;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform .2s;
+    }
+    button.submit:hover {transform: translateY(-2px);}
 
     footer {
       border-top: 1px solid var(--line);
@@ -122,7 +151,7 @@
       padding: 24px 0;
       opacity: .7;
       font-size: .9rem;
-      margin-top: 40px;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -159,10 +188,22 @@
     <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
   </div>
 
-  <section class="contact-box">
-    <h2>Контакт форма</h2>
-    <p>Унесите ваше податке и опис проблема или питања. Наша правна служба ће вас контактирати у најкраћем року.</p>
-    <!-- (ovde može ići stvarna forma ako je budeš dodavao) -->
+  <section class="contact-section">
+    <div class="contact-box">
+      <h2>Контакт форма</h2>
+      <form action="#" method="post">
+        <label for="ime">Име и презиме</label>
+        <input type="text" id="ime" name="ime" placeholder="Унесите ваше име">
+
+        <label for="email">Е-пошта</label>
+        <input type="email" id="email" name="email" placeholder="Унесите вашу е-пошту">
+
+        <label for="poruka">Порука / Опис случаја</label>
+        <textarea id="poruka" name="poruka" placeholder="Опишите ваш случај или питање"></textarea>
+
+        <button type="submit" class="submit">Пошаљи</button>
+      </form>
+    </div>
   </section>
 </main>
 
