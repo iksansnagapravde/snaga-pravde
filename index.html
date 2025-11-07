@@ -45,17 +45,17 @@
 
     main{min-height:calc(100vh - 56px); display:flex; flex-direction:column}
 
-    /* HERO (spušten naslov + šira slika) */
+    /* HERO — kao na „Области“: isti odnos i stil slike */
     .hero{padding:16px 0 0}
     .hero-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
     h1{
-      color:#fff;
-      margin-top:57px; /* ↓ spušteno za 1.5 cm */
+      color:#fff; /* BELA SLOVA NASLOVA */
+      margin-top:24px;
       line-height:1.15;
       font-weight:400;
-      font-size:clamp(28px,3.4vw,38px);
+      font-size:clamp(28px,3.8vw,42px);
       text-shadow:0 0 8px rgba(255,255,255,0.45);
     }
     .line2{display:block;font-size:clamp(18px,2.4vw,24px);color:var(--ink);margin-top:4px}
@@ -71,32 +71,27 @@
     .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;box-shadow:0 4px 10px rgba(0,0,0,.28)}
     .btn:hover{transform:translateY(-2px)}
 
+    /* HERO SLIKA — identičan sistem kao na „Области“ */
     .hero-media{
       border-radius:16px;overflow:hidden;border:1px solid var(--line);
-      box-shadow:0 10px 24px rgba(0,0,0,.32);align-self:start;justify-self:center;width:100%;
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      background:#0f2552;
+      aspect-ratio:16/9;      /* isti odnos */
+      display:flex; align-items:center; justify-content:center;
     }
-    /* pravougaona, šira slika; visina kontrolisana da sve stane */
     .hero-media img{
-      display:block;width:100%;
-      height:clamp(180px, 26vw, 220px); /* pravougaonik */
-      object-fit:cover;object-position:center;border-radius:12px;
+      width:100%; height:100%; object-fit:cover; display:block;
     }
 
-    /* PRELAZ 1.5 cm preko cele širine */
-    .fade-divider{
-      width:100%;
-      height:57px; /* ≈ 1.5 cm */
-      background:linear-gradient(180deg,var(--blue2) 0%, #ffffff 100%);
-    }
-
-    /* BELO PODNOŽJE (kompaktno) */
-    .white-split{background:#fff;color:#13203a;padding:12px 0 8px}
+    /* BELO PODNOŽJE (bez full-width prelaza) */
+    .white-split{background:#fff;color:#13203a;padding:18px 0 12px;margin-top:16px;
+      border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 -8px 24px rgba(0,0,0,.18);}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
-    /* Kartice – ista širina/stil kao ranije */
+    /* Kartice */
     .card{
-      background:rgba(16,45,87,.85);
+      background:rgba(16,45,87,.88);
       border:1px solid var(--line); border-radius:var(--radius);
       padding:16px;
       box-shadow:0 14px 32px rgba(0,0,0,.35);
@@ -104,28 +99,18 @@
     }
     .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
     .card h3{
-      font-family:"Times New Roman";
       margin:0 0 6px;
-      color:#ffffff;
-      font-size:clamp(22px,2.6vw,26px);
-      font-weight:500;
-      text-shadow:0 1px 3px rgba(0,0,0,.4);
-      letter-spacing:.3px;
+      color:#ffffff;               /* NASLOVI KARTICA BELI */
+      font-size:clamp(20px,2.4vw,24px);
+      font-weight:600;
+      letter-spacing:.2px;
+      text-shadow:0 1px 3px rgba(0,0,0,.35);
     }
     .card h3 a{color:inherit}
     .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.7vw,16px)}
     .card a.more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
 
     footer{border-top:1px solid var(--line);padding:14px 0;color:var(--ink);text-align:center;opacity:.8;font-size:.9rem}
-
-    /* Dodatno sabijanje ako je viewport niži (npr. 1366×768) */
-    @media (max-height: 820px){
-      .hero{padding-top:10px}
-      h1{margin-top:48px}
-      .hero-media img{height:clamp(160px, 24vw, 200px)}
-      .fade-divider{height:50px}
-      .white-split{padding-top:10px}
-    }
   </style>
 </head>
 
@@ -152,7 +137,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <h1>Правда није роба<span class="line2">Време је да се врати народу</span></h1>
+          <h1>Правда није роба <span class="line2">Време је да се врати народу</span></h1>
           <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
@@ -161,15 +146,13 @@
           </div>
         </div>
         <div class="hero-media">
+          <!-- ista veličina/odnos kao na „Области“ -->
           <img src="/assets/hero-iksan.jpg" alt="Иксан — Снага правде">
         </div>
       </div>
     </section>
 
-    <!-- PRELAZ 1.5 cm FULL-WIDTH -->
-    <div class="fade-divider"></div>
-
-    <!-- BELO + KARTICE -->
+    <!-- BELO + KARTICE (bez prelaza) -->
     <section class="white-split">
       <div class="container">
         <div class="grid">
@@ -197,7 +180,6 @@
             <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
           </article>
         </div>
-        <!-- Uklonjeno: blok „Наш стандард“ -->
       </div>
     </section>
   </main>
@@ -207,4 +189,3 @@
   </footer>
 </body>
 </html>
-
