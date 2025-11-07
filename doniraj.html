@@ -3,70 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Донација — Снага правде</title>
+  <title>Донација — Иксан • Снага правде</title>
   <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp">
+  <link rel="icon" href="logo.webp.png">
   <style>
     :root{
-      --blue:#0B2141; --blue2:#102D57;
-      --lightHead1:#123366; --lightHead2:#0f295a;
-      --gold:#D3A451; --goldDeep:#B88A3F; --ink:#cfe1ff;
-      --line:rgba(255,255,255,.14); --glass:rgba(255,255,255,.06); --glassDeep:rgba(255,255,255,.10);
-      --radius:18px;
+      --blue:#0B2141;
+      --blue2:#102D57;
+      --lightHead1:#123366; /* као на „Области/Циљеви“ */
+      --lightHead2:#0f295a;
+      --gold:#D3A451;
+      --goldDeep:#B88A3F;
+      --ink:#cfe1ff;
+      --line:rgba(255,255,255,.14);
+      --glass:rgba(255,255,255,.06);
+      --glassDeep:rgba(255,255,255,.10);
+      --radius:16px;
     }
+
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      background: radial-gradient(1200px 700px at 20% 0%, rgba(255,255,255,.06), transparent 60%), linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
+      background:linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
       color:var(--ink);
       font-family:"Times New Roman", serif;
-      line-height:1.75;
+      line-height:1.7;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
-    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER */
-    header {
-      position: sticky; top: 0; z-index: 60;
-      background: linear-gradient(180deg, var(--lightHead1), var(--lightHead2));
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(8px);
+    /* HEADER — идентично стилу из примера */
+    header{
+      position:sticky; top:0; z-index:60;
+      background:linear-gradient(180deg,var(--lightHead1),var(--lightHead2));
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(8px);
     }
-    .head {display:flex;align-items:center;justify-content:space-between;padding:10px 24px;max-width:1150px;margin:0 auto}
-    .brand {display:flex;align-items:center;gap:12px}
-    .brand img {
-      height:100px;        /* повећано */
-      border-radius:12px;
+    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{
+      height:80px;          /* као у примеру */
+      border-radius:12px;   /* мекши угао */
     }
-    .brand span {display:none;} /* скривен натпис поред логоа */
-    nav.nav {display:flex;gap:18px;flex-wrap:wrap}
-    nav.nav a {opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
-    nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold)}
+    .brand span{display:none;} /* ако је негде остао текст поред логоа, сакривамо га */
 
-    /* HERO */
-    .hero{display:grid;gap:26px;align-items:center;margin-top:18px}
-    @media (min-width: 980px){.hero{grid-template-columns:1.04fr .96fr}}
-    .title{
-      font-size:42px; line-height:1.1;   /* смањенo са 52px */
-      color:#fff; text-shadow:0 0 14px rgba(255,255,255,.35);
-      letter-spacing:.2px; margin-bottom:12px;
-      font-family:"Times New Roman", serif;
-    }
-    .subtitle{
-      font-size:20px; color:#fff; opacity:.95; margin:2px 0 12px 0;
-      text-shadow:0 0 10px rgba(255,255,255,.30);
-      font-family:"Times New Roman", serif;
-    }
-    .hero-img{justify-self:end;width:43vw;max-width:520px;border-radius:18px;border:1px solid rgba(255,255,255,.22);box-shadow:0 22px 40px rgba(0,0,0,.45)}
-    @media (max-width: 979px){.hero{grid-template-columns:1fr}.hero-img{justify-self:center;width:88vw;max-width:620px;margin-top:8px}}
+    nav.nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav.nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
+    nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-    /* PANEL */
-    .panel{margin-top:10px;background:rgba(16,45,87,.86);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 10px 26px rgba(0,0,0,.34)}
+    /* HERO — бела слова лево, слика десно (исто као на другим страницама) */
+    .hero{padding:36px 0 0}
+    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+
+    h1.title{
+      color:#fff;
+      font-weight:400;
+      font-size:clamp(30px,3.6vw,42px); /* за ~20% мање од 52px */
+      line-height:1.15;
+      text-shadow:0 0 10px rgba(255,255,255,.45);
+      margin:0 0 10px;
+    }
+    p.subtitle{
+      color:var(--ink); opacity:.95;
+      font-size:clamp(16px,2vw,18px);
+      max-width:740px; margin:8px 0 16px;
+      text-shadow:0 0 8px rgba(255,255,255,.25);
+    }
+
+    .hero-media{
+      border-radius:16px; overflow:hidden; border:1px solid var(--line);
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      background:#0f2552; aspect-ratio:16/9;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .hero-media img{width:100%;height:100%;object-fit:cover}
+
+    /* PANEL: левo износи (2 реда × 3), десно дугмад једно испод другог */
+    .panel{margin-top:16px}
+    .panel-box{
+      background:rgba(16,45,87,.92);
+      border:1px solid var(--line); border-radius:var(--radius);
+      padding:16px; box-shadow:0 10px 26px rgba(0,0,0,.34);
+    }
     .panel-grid{display:grid;gap:16px;align-items:center}
     @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
+
     .amount-grid{
       display:grid;gap:10px;
       grid-template-columns:repeat(3, minmax(90px, 1fr));
@@ -77,104 +102,126 @@
       color:#e8f0ff; font-weight:700; font-size:16px; cursor:pointer;
       transition:background .15s ease, transform .15s ease, border-color .15s ease;
       backdrop-filter:blur(3px);
-      font-family:"Times New Roman", serif;
     }
     .chip:hover{background:var(--glassDeep);transform:translateY(-1px)}
     .chip[aria-pressed="true"]{background:linear-gradient(180deg,#f2d48f,#d3a451);color:#0b2141;border-color:var(--goldDeep)}
-    .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    .custom input{width:160px;padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.22);background:var(--glass);color:#fff;font-size:16px;font-family:"Times New Roman", serif}
-    .cta-stack{display:flex;flex-direction:column;gap:10px;align-items:stretch}
-    .btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.35), inset 0 -2px 0 rgba(0,0,0,.2);transition:transform .15s ease, box-shadow .15s ease; text-align:center; font-family:"Times New Roman", serif}
-    .btn-gold{background:linear-gradient(180deg,#f2d48f,#d3a451);color:#0b2141;border:1px solid var(--goldDeep)}
-    .btn-dark{background:linear-gradient(180deg,#1f3366,#0f244f);color:#fff;border:1px solid rgba(255,255,255,.12)}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,0,0,.45), inset 0 -2px 0 rgba(0,0,0,.25)}
 
-    /* SEKCIJE */
-    .section{background:rgba(16,45,87,.88);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:16px;box-shadow:0 12px 28px rgba(0,0,0,.34)}
+    .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .custom input{
+      width:160px;padding:10px 12px;border-radius:12px;
+      border:1px solid rgba(255,255,255,.22);background:var(--glass);
+      color:#fff;font-size:16px
+    }
+
+    .cta-stack{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+    .btn{
+      display:inline-block;padding:12px 26px;border-radius:40px;border:none;
+      font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      box-shadow:0 3px 0 rgba(0,0,0,.35), 0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn-gold{background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141}
+    .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552); color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+
+    /* СЕКЦИЈЕ испод — исти визуелни језик */
+    .section{background:rgba(16,45,87,.92);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:0 12px 28px rgba(0,0,0,.3);margin-top:18px}
     h2{
-      font-size:28px; line-height:1.18; text-align:center;
-      color:#fff; text-shadow:0 0 10px rgba(255,255,255,.30);
-      letter-spacing:.3px; margin-bottom:12px;
-      font-family:"Times New Roman", serif;
+      color:#fff; font-weight:500;
+      font-size:clamp(22px,2.8vw,26px);
+      margin:0 0 10px; text-align:center; text-shadow:0 0 10px rgba(255,255,255,.3);
     }
     .grid3{display:grid;gap:14px}
     @media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
     .card{background:var(--glass);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
-    .card-title{
-      font-size:24px; color:#fff; margin-bottom:8px;
-      text-shadow:0 0 10px rgba(255,255,255,.28);
-      font-family:"Times New Roman", serif;
-    }
+    .card-title{font-size:24px;color:#fff;margin-bottom:8px;text-shadow:0 0 10px rgba(255,255,255,.28)}
+
     .bank{text-align:center;font-size:18px;line-height:1.9}
     .book{display:grid;gap:16px;align-items:center}
-    @media(min-width: 920px){.book{grid-template-columns:auto 1fr}}
+    @media(min-width:920px){.book{grid-template-columns:auto 1fr}}
     .book img{max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 26px rgba(0,0,0,.4)}
-    .stanza{
-      font-size:20px; color:#fff; text-shadow:0 0 10px rgba(255,255,255,.30);
-      line-height:1.7; white-space:pre-line;
-      font-family:"Times New Roman", serif;
+    .stanza{font-size:20px;color:#fff;text-shadow:0 0 10px rgba(255,255,255,.30);line-height:1.7;white-space:pre-line}
+
+    footer{
+      border-top:1px solid var(--line);
+      color:var(--ink);
+      text-align:center;
+      padding:24px 0;
+      opacity:.7;
+      font-size:.9rem;
+      margin-top:30px;
     }
-    footer{opacity:.75;text-align:center;margin:22px 0 6px 0; font-family:"Times New Roman", serif}
   </style>
 </head>
+
 <body>
 
-  <!-- GORNJI HEADER -->
-  <header>
-    <div class="head">
-      <div class="brand">
-        <a href="index.html">
-          <img src="logo.webp" alt="ИКСАН лого">
-        </a>
-        <span>Иксан • Снага правде</span>
-      </div>
-      <nav class="nav">
-        <a href="index.html">Почетна</a>
-        <a href="onama.html">О нама</a>
-        <a href="oblasti.html">Области</a>
-        <a href="ciljevi.html">Циљеви</a>
-        <a href="inicijative.html">Иницијативе</a>
-        <a href="kontakt.html">Контакт</a>
-        <a href="doniraj.html" aria-current="page">Донирај</a>
-      </nav>
+<header>
+  <div class="container head">
+    <div class="brand">
+      <a href="index.html">
+        <img src="logo.webp.png" alt="ИКСАН лого">
+      </a>
+      <!-- нема текста поред логоа -->
     </div>
-  </header>
+    <nav class="nav">
+      <a href="index.html">Почетна</a>
+      <a href="onama.html">О нама</a>
+      <a href="oblasti.html">Области</a>
+      <a href="ciljevi.html">Циљеви</a>
+      <a href="inicijative.html">Иницијативе</a>
+      <a href="kontakt.html">Контакт</a>
+      <a href="doniraj.html" aria-current="page">Донирај</a>
+    </nav>
+  </div>
+</header>
 
-  <main class="wrap">
-    <!-- HERO -->
-    <section class="hero">
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
       <div>
         <h1 class="title">Док неко губи битку — ти можеш бити његов спас</h1>
         <p class="subtitle">„Правда није роба. Време је да се врати народу.“</p>
       </div>
-      <img class="hero-img" src="hero.webp" alt="Људи заједно — Снага правде">
-    </section>
+      <div class="hero-media">
+        <img src="hero.webp" alt="Људи заједно — Снага правде">
+      </div>
+    </div>
+  </section>
 
-    <!-- PANEL -->
-    <section class="panel" aria-label="Опције и износи">
-      <div class="panel-grid">
-        <div>
-          <div class="amount-grid" role="group" aria-label="Предложени износи">
-            <button class="chip" data-amount="500">500 RSD</button>
-            <button class="chip" data-amount="1000">1.000 RSD</button>
-            <button class="chip" data-amount="2500">2.500 RSD</button>
-            <button class="chip" data-amount="5000">5.000 RSD</button>
-            <button class="chip" data-amount="10000">10.000 RSD</button>
-            <button class="chip" data-amount="" id="chip-custom">Други износ</button>
+  <!-- PANEL: износи и дугмад -->
+  <section class="panel">
+    <div class="container">
+      <div class="panel-box">
+        <div class="panel-grid">
+          <!-- ЛЕВО: износи -->
+          <div>
+            <div class="amount-grid" role="group" aria-label="Предложени износи">
+              <button class="chip" data-amount="500">500 RSD</button>
+              <button class="chip" data-amount="1000">1.000 RSD</button>
+              <button class="chip" data-amount="2500">2.500 RSD</button>
+              <button class="chip" data-amount="5000">5.000 RSD</button>
+              <button class="chip" data-amount="10000">10.000 RSD</button>
+              <button class="chip" id="chip-custom">Други износ</button>
+            </div>
+            <div class="custom">
+              <input id="customAmount" type="number" min="100" step="100" placeholder="Упишите износ (RSD)">
+            </div>
           </div>
-          <div class="custom">
-            <input id="customAmount" type="number" min="100" step="100" placeholder="Упишите износ (RSD)">
+          <!-- ДЕСНО: дугмад једно испод другог -->
+          <div class="cta-stack">
+            <a id="payBtn" class="btn btn-gold" href="PAYMENT_URL">ДОНИРАЈ КАРТИЦОМ</a>
+            <a id="toRacun" class="btn btn-dark" href="#racun">ДОНИРАЈ НА РАЧУН</a>
           </div>
-        </div>
-        <div class="cta-stack">
-          <a id="payBtn" class="btn btn-gold" href="PAYMENT_URL">ДОНИРАЈ КАРТИЦОМ</a>
-          <a id="toRacun" class="btn btn-dark" href="#racun">ДОНИРАЈ НА РАЧУН</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- GDE IDE NOVAC -->
-    <section class="section">
+  <!-- ГДЕ ИДЕ НОВАЦ -->
+  <section class="section">
+    <div class="container">
       <h2>Где иде сваки динар</h2>
       <div class="grid3">
         <div class="card">
@@ -190,10 +237,12 @@
           Ангажовање правних стручњака и хитна помоћ најугроженијима (дугови, лекови, рачуни).
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- UPLATA NA RACUN -->
-    <section id="racun" class="section">
+  <!-- УПЛАТА НА РАЧУН -->
+  <section id="racun" class="section">
+    <div class="container">
       <h2>Уплата на рачун</h2>
       <div class="bank">
         <p>Назив: <strong>Иксан — Снага правде</strong><br>
@@ -202,70 +251,74 @@
            Позив на број: <strong>3110/2025</strong></p>
         <img src="ips-qr-placeholder.png" alt="IPS QR" style="max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.22);margin:8px auto 0;display:block">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- KNJIGA -->
-    <section class="section" id="knjiga">
+  <!-- КЊИГА -->
+  <section class="section" id="knjiga">
+    <div class="container">
       <h2>ИКСАН — књига која помаже</h2>
       <div class="book">
         <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
           <img src="iksan.webp" alt="ИКСАН — корица књиге">
         </a>
         <div>
-          <p class="stanza">По истинитим догађајима —  
-прича о храбрости, губитку и правди.  
+          <p class="stanza">По истинитим догађајима —
+прича о храбрости, губитку и правди.
 Сав ауторски хонорар иде у хуманитарне сврхе.</p>
           <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</main>
 
-    <footer>© 2025 Иксан • Снага правде — Хвала сваком донатору.</footer>
-  </main>
+<footer>
+  <div class="container">
+    © 2025 Иксан • Снага правде — Сва права задржана.
+  </div>
+</footer>
 
-  <script>
-    const PAYMENT_REDIRECT_BASE = "PAYMENT_URL?amount=";
-    const payBtn  = document.getElementById('payBtn');
-    const chips   = document.querySelectorAll('.chip');
-    const custom  = document.getElementById('customAmount');
-    const chipCustom = document.getElementById('chip-custom');
-    const toRacun = document.getElementById('toRacun');
+<script>
+  // >>> УНЕСИ свој checkout линк
+  const PAYMENT_REDIRECT_BASE = "PAYMENT_URL?amount=";
 
-    function setActiveAmount(amount){
-      chips.forEach(c => c.setAttribute('aria-pressed','false'));
-      if (amount && amount >= 100){
-        payBtn.href = PAYMENT_REDIRECT_BASE + encodeURIComponent(amount);
-        payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
-      } else {
-        payBtn.href = "PAYMENT_URL";
-        payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
-      }
-      chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
+  const payBtn  = document.getElementById('payBtn');
+  const chips   = document.querySelectorAll('.chip');
+  const custom  = document.getElementById('customAmount');
+  const toRacun = document.getElementById('toRacun');
+
+  function setActiveAmount(amount){
+    chips.forEach(c => c.setAttribute('aria-pressed','false'));
+    if (amount && amount >= 100){
+      payBtn.href = PAYMENT_REDIRECT_BASE + encodeURIComponent(amount);
+      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
+    } else {
+      payBtn.href = "PAYMENT_URL";
+      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
     }
+    chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
+  }
 
-    chips.forEach(c => c.addEventListener('click', () => {
-      const val = parseInt(c.dataset.amount,10);
-      if(!isNaN(val)) {
-        custom.value = "";
-        setActiveAmount(val);
-      } else {
-        custom.focus();
-      }
-    }));
+  chips.forEach(c => c.addEventListener('click', () => {
+    const val = parseInt(c.dataset.amount,10);
+    if(!isNaN(val)) { custom.value = ""; setActiveAmount(val); }
+    else { custom.focus(); }
+  }));
 
-    custom.addEventListener('input', e => {
-      const v = parseInt(e.target.value,10);
-      setActiveAmount(!isNaN(v) ? v : 0);
-    });
+  custom.addEventListener('input', e => {
+    const v = parseInt(e.target.value,10);
+    setActiveAmount(!isNaN(v) ? v : 0);
+  });
 
-    toRacun.addEventListener('click', (e) => {
-      const target = document.querySelector('#racun');
-      if (target){
-        e.preventDefault();
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-        history.pushState(null, '', '#racun');
-      }
-    });
-  </script>
+  toRacun.addEventListener('click', (e) => {
+    const target = document.querySelector('#racun');
+    if (target){
+      e.preventDefault();
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      history.pushState(null, '', '#racun');
+    }
+  });
+</script>
 </body>
 </html>
