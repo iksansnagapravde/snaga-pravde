@@ -77,15 +77,28 @@
       position:relative;border-radius:18px 18px 0 0;overflow:hidden;border:1px solid var(--line);
       box-shadow:0 12px 28px rgba(0,0,0,.35);
     }
-    .hero-media img{display:block;width:100%;height:min(420px,60vh);object-fit:cover;object-position:center}
+    /* Slika duplo veća (100%) u odnosu na pre: 420px -> 840px i 60vh -> 90vh */
+    .hero-media img{
+      display:block;width:100%;
+      height:min(840px,90vh);
+      object-fit:cover;object-position:center;
+    }
+
+    /* FADE prelaz — širina 50%, centriran */
+    .fade-divider{
+      height:120px;
+      width:50%;
+      margin:0 auto;            /* centrirano */
+      background:linear-gradient(180deg, var(--blue2) 0%, #ffffff 100%);
+      border-top-left-radius:22px; 
+      border-top-right-radius:22px;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    }
 
     /* Bela pozadina odavde nadole */
     .white-split{
       background:#fff; color:#13203a;
-      border-top-left-radius:22px; border-top-right-radius:22px;
-      margin-top:-8px;               /* blagi preklop ispod slike */
-      padding:28px 0 6px;
-      box-shadow:0 -8px 24px rgba(0,0,0,.18); /* linija/razdvajanje */
+      padding:0 0 6px;           /* bez dodatnog teksta iznad kartica */
     }
     .white-split .container{max-width:1150px}
 
@@ -143,7 +156,6 @@
         <a href="oblasti.html">Области</a>
         <a href="ciljevi.html">Циљеви</a>
         <a href="inicijative.html">Иницијативе</a>
-        <!-- Uklonjeno: <a href="nasipodaci.html">НАШИ ПОДАЦИ</a> -->
         <a href="kontakt.html">Контакт</a>
       </nav>
     </div>
@@ -172,7 +184,10 @@
     </div>
   </section>
 
-  <!-- BELO PODNOŽJE + KARTICE -->
+  <!-- FADE (50% širine) -->
+  <div class="fade-divider"></div>
+
+  <!-- BELO PODNOŽJE + KARTICE (bez teksta izmedju slike i kartica) -->
   <section class="white-split">
     <div class="container">
       <div class="grid">
