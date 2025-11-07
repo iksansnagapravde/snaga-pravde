@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Иксан • Снага правде — Почетна</title>
-  <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ИКСАН • Снага правде — Почетна</title>
+  <meta name="description" content="Правда није роба. Време је да се врати народу. Покрет грађана ИКСАН — Снага правде.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="/assets/logo.png">
+  <link rel="icon" href="logo.webp">
 
   <style>
-    :root{
-      --blue:#0B2141; --blue2:#102D57;
-      --gold:#D3A451; --ink:#cfe1ff;
+    :root {
+      --blue:#0B2141;
+      --blue2:#102D57;
+      --sky:#9fd2ff;
+      --gold:#D3A451;
+      --ink:#cfe1ff;
       --line:rgba(255,255,255,.14);
       --radius:16px;
     }
+
     *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
     body{
+      background:linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
+      color:var(--ink);
       font-family:"Times New Roman";
       line-height:1.7;
-      background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
-      color:var(--ink);
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
-      overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
@@ -36,156 +38,194 @@
       border-bottom:1px solid var(--line);
       backdrop-filter:blur(8px);
     }
-    .head{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
+    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px}
     .brand img{height:40px;border-radius:10px}
-    nav{display:flex;gap:16px;flex-wrap:wrap}
-    nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
-    nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    nav.nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav.nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s;}
+    nav.nav a[aria-current="page"],nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-    main{min-height:calc(100vh - 56px); display:flex; flex-direction:column}
-
-    /* HERO — kao na „Области“: isti odnos i stil slike */
-    .hero{padding:16px 0 0}
-    .hero-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
+    /* HERO */
+    .hero{padding:36px 0 0}
+    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
-    h1{
-      color:#fff; /* BELA SLOVA NASLOVA */
-      margin-top:24px;
-      line-height:1.15;
-      font-weight:400;
-      font-size:clamp(28px,3.8vw,42px);
-      text-shadow:0 0 8px rgba(255,255,255,0.45);
+    .title-stack{position:relative;margin-bottom:8px}
+    .t1{
+      color:#fff;
+      font-weight:900;
+      font-size:clamp(30px,4.6vw,52px);
+      line-height:1.1;
+      text-shadow:0 0 10px rgba(255,255,255,.35);
     }
-    .line2{display:block;font-size:clamp(18px,2.4vw,24px);color:var(--ink);margin-top:4px}
-    .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(15px,1.6vw,17px)}
+    .t2{
+      color:var(--sky);
+      font-weight:900;
+      font-size:clamp(32px,5vw,58px);
+      line-height:1.1;
+      text-transform:uppercase;
+      margin-top:-0.25em; /* overlap 20–25% */
+      padding-left:clamp(10px,1.5vw,20px);
+      letter-spacing:.3px;
+      filter:drop-shadow(0 4px 18px rgba(0,0,0,.35));
+    }
 
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}
-    .btn{
-      display:inline-block;padding:10px 22px;border-radius:40px;
-      font-weight:700;font-size:14px;text-transform:uppercase;
-      transition:.2s;cursor:pointer;text-align:center;
+    .sub{
+      color:var(--ink);
+      opacity:.95;
+      font-size:clamp(16px,2vw,18px);
+      max-width:740px;
+      margin:8px 0 16px;
     }
-    .btn-primary{background:#D3A451;color:#0B2141;box-shadow:0 4px 10px rgba(0,0,0,.28)}
-    .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;box-shadow:0 4px 10px rgba(0,0,0,.28)}
+
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:12px 26px;border-radius:40px;border:none;
+      font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+    }
+    .btn-primary{
+      background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
+      box-shadow:0 3px 0 #8a682a, 0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn-dark{
+      background:linear-gradient(180deg,#1e3a72,#0f2552); color:#fff;
+      box-shadow:0 3px 0 #07142c, 0 6px 18px rgba(0,0,0,.35);
+    }
     .btn:hover{transform:translateY(-2px)}
 
-    /* HERO SLIKA — identičan sistem kao na „Области“ */
+    /* HERO slika */
     .hero-media{
-      border-radius:16px;overflow:hidden;border:1px solid var(--line);
+      border-radius:16px; overflow:hidden; border:1px solid var(--line);
       box-shadow:0 10px 24px rgba(0,0,0,.32);
       background:#0f2552;
-      aspect-ratio:16/9;      /* isti odnos */
+      aspect-ratio:16/9;
       display:flex; align-items:center; justify-content:center;
     }
-    .hero-media img{
-      width:100%; height:100%; object-fit:cover; display:block;
-    }
+    .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
 
-    /* BELO PODNOŽJE (bez full-width prelaza) */
-    .white-split{background:#fff;color:#13203a;padding:18px 0 12px;margin-top:16px;
-      border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 -8px 24px rgba(0,0,0,.18);}
-    .grid{display:grid;gap:14px;grid-template-columns:1fr}
+    /* BELO PODNOŽJE sa karticama */
+    .white-split{
+      background:#fff; color:#13203a;
+      margin-top:16px; padding:22px 0 28px;
+      border-top-left-radius:20px; border-top-right-radius:20px;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    }
+    .grid{display:grid;gap:16px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-
-    /* Kartice */
     .card{
-      background:rgba(16,45,87,.88);
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:16px;
+      background:rgba(16,45,87,.9);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
       box-shadow:0 14px 32px rgba(0,0,0,.35);
-      transition:transform .2s, box-shadow .2s;
     }
-    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
     .card h3{
-      margin:0 0 6px;
-      color:#ffffff;               /* NASLOVI KARTICA BELI */
-      font-size:clamp(20px,2.4vw,24px);
+      color:#fff;
+      font-size:clamp(22px,2.6vw,26px);
       font-weight:600;
-      letter-spacing:.2px;
-      text-shadow:0 1px 3px rgba(0,0,0,.35);
+      margin-bottom:6px;
     }
-    .card h3 a{color:inherit}
-    .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.7vw,16px)}
-    .card a.more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
+    .card p{color:var(--ink);font-size:clamp(15px,1.9vw,16.5px);line-height:1.75;}
+    .card a.more{display:inline-block;margin-top:6px;font-weight:700;color:var(--ink)}
 
-    footer{border-top:1px solid var(--line);padding:14px 0;color:var(--ink);text-align:center;opacity:.8;font-size:.9rem}
+    footer{
+      border-top:1px solid var(--line);
+      color:var(--ink);
+      text-align:center;
+      padding:24px 0;
+      opacity:.8;
+      font-size:.9rem;
+      margin-top:40px;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="container head">
-      <div class="brand">
-        <img src="/assets/logo.png" alt="ИКСАН лого">
-        <span>Иксан • Снага правде</span>
-      </div>
-      <nav>
-        <a href="index.html" aria-current="page">Почетна</a>
-        <a href="onama.html">О нама</a>
-        <a href="oblasti.html">Области</a>
-        <a href="ciljevi.html">Циљеви</a>
-        <a href="inicijative.html">Иницијативе</a>
-        <a href="kontakt.html">Контакт</a>
-      </nav>
+
+<header>
+  <div class="container head">
+    <div class="brand">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="ИКСАН лого">
+      </picture>
+      <span>ИКСАН • Снага правде</span>
     </div>
-  </header>
+    <nav class="nav">
+      <a href="index.html" aria-current="page">Почетна</a>
+      <a href="onama.html">О нама</a>
+      <a href="oblasti.html">Области</a>
+      <a href="ciljevi.html">Циљеви</a>
+      <a href="inicijative.html">Иницијативе</a>
+      <a href="kontakt.html">Контакт</a>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h1>Правда није роба <span class="line2">Време је да се врати народу</span></h1>
-          <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
-            <a class="btn btn-dark" href="kontakt.html">ПРИКЉУЧИ СЕ</a>
-            <a class="btn btn-dark" href="kontakt.html">ПРИЈАВИ</a>
-          </div>
+<main>
+
+  <!-- HERO sa dvostrukim naslovom -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="title-stack">
+          <h1 class="t1">Правда није роба</h1>
+          <h2 class="t2">ВРЕМЕ ЈЕ ДА СЕ ВРАТИ НАРОДУ</h2>
         </div>
-        <div class="hero-media">
-          <!-- ista veličina/odnos kao na „Области“ -->
-          <img src="/assets/hero-iksan.jpg" alt="Иксан — Снага правде">
-        </div>
-      </div>
-    </section>
-
-    <!-- BELO + KARTICE (bez prelaza) -->
-    <section class="white-split">
-      <div class="container">
-        <div class="grid">
-          <article class="card">
-            <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
-            <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
-            <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
-          </article>
-
-          <article class="card">
-            <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
-            <p>Време је да истина о имовини буде јавна — без заштите моћних.</p>
-            <a class="more" href="porekloimovine.html">Погледај детаље →</a>
-          </article>
-
-          <article class="card">
-            <h3><a href="sudpravda.html">Суд народу, не моћнима</a></h3>
-            <p>Право мора бити штит човека, а не оружје политике.</p>
-            <a class="more" href="sudpravda.html">Прочитај више →</a>
-          </article>
-
-          <article class="card">
-            <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
-            <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
-            <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
-          </article>
+        <p class="sub">Институције морају служити закону, а закон — човеку.</p>
+        <div class="cta-row">
+          <a href="onama.html" class="btn btn-primary">Сазнај више</a>
+          <a href="kontakt.html" class="btn btn-dark">Учлани се</a>
+          <a href="kontakt.html" class="btn btn-dark">Пријави</a>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
-  </footer>
+      <div class="hero-media">
+        <picture>
+          <source srcset="hero.webp" type="image/webp">
+          <img src="hero-2.webp" alt="ИКСАН — Снага правде — Покрет грађана">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- BELO okruženje + kartice -->
+  <section class="white-split">
+    <div class="container grid">
+      <article class="card">
+        <h3><a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a></h3>
+        <p>Извршење се враћа суду. Достојанство грађана изнад профита.</p>
+        <a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
+      </article>
+
+      <article class="card">
+        <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
+        <p>Истина о имовини мора бити јавна — без заштите моћних.</p>
+        <a class="more" href="porekloimovine.html">Погледај детаље →</a>
+      </article>
+
+      <article class="card">
+        <h3><a href="sudpravda.html">Суд народу, не моћнима</a></h3>
+        <p>Право мора бити штит човека, а не оружје политике.</p>
+        <a class="more" href="sudpravda.html">Прочитај више →</a>
+      </article>
+
+      <article class="card">
+        <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
+        <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
+        <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 ИКСАН • Снага правде — Сва права задржана.
+  </div>
+</footer>
+
 </body>
 </html>
