@@ -39,15 +39,20 @@
     nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
     /* Hero */
-    .hero{padding:40px 0 24px}
+    .hero{padding:40px 0 0}
     .hero-grid{display:grid;gap:24px;grid-template-columns:1fr;align-items:center}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-    .kicker{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);font-weight:700;letter-spacing:.3px}
+    .kicker{
+      display:inline-block;padding:6px 10px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(10,20,40,.4);backdrop-filter:blur(6px);
+      font-weight:700;letter-spacing:.3px
+    }
+    /* smanjen ~25% i u belu boju */
     h1{
       margin:.6rem 0 0; line-height:1.15; font-weight:400;
-      font-size:clamp(36px,4.8vw,56px);
-      color:var(--gold);
-      text-shadow:0 2px 0 rgba(92,65,17,.55), 0 8px 22px rgba(0,0,0,.45);
+      font-size:clamp(27px,3.6vw,42px);
+      color:#ffffff;
+      text-shadow:0 2px 0 rgba(0,0,0,.25), 0 8px 22px rgba(0,0,0,.35);
     }
     .sub{margin:12px 0 18px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
     .cta-row{display:flex;gap:14px;flex-wrap:wrap}
@@ -68,13 +73,22 @@
     .btn-dark:hover{transform:translateY(-2px);box-shadow:0 5px 0 #07142c, 0 10px 24px rgba(0,0,0,.45)}
 
     .hero-media{
-      position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+      position:relative;border-radius:18px 18px 0 0;overflow:hidden;border:1px solid var(--line);
       box-shadow:0 12px 28px rgba(0,0,0,.35);
     }
     .hero-media img{display:block;width:100%;height:min(420px,60vh);object-fit:cover;object-position:center}
 
-    /* Sections */
-    section{padding:28px 0}
+    /* Bela podloga odavde naniže */
+    .white-split{
+      background:#fff; color:#13203a;
+      border-top-left-radius:22px; border-top-right-radius:22px;
+      margin-top:-8px;              /* blagi preklop ispod slike */
+      padding:28px 0;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    }
+
+    /* Sections / kartice ostaju iste */
+    section.cards{padding:0}
     .grid{display:grid;gap:16px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
     h2{margin:0 0 8px;color:#fff;font-size:clamp(20px,2.8vw,24px);font-weight:600}
@@ -86,7 +100,7 @@
     .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(15px,1.9vw,16.5px)}
     .list{padding-left:18px}
 
-    /* Bottom CTA block (čist, institucionalan) */
+    /* Bottom CTA block */
     .cta-block{
       background:rgba(17,42,84,.60);
       border:1px solid var(--line); border-radius:var(--radius);
@@ -133,7 +147,6 @@
         <h1>Иксан — покрет грађана за правду, достојанство и заједништво</h1>
         <p class="sub">Када правда постане роба — време је да се врати народу.</p>
 
-        <!-- TRI DUGMETA -->
         <div class="cta-row">
           <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
           <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
@@ -147,59 +160,59 @@
     </div>
   </section>
 
-  <!-- CORE SECTIONS -->
-  <section>
-    <div class="container grid">
-      <article class="card">
-        <h2>Ко смо</h2>
-        <p>Иксан није само удружење. То је покрет људи који верују да достојанство, истина и човечност не смеју бити луксуз. Основан из идеје да се правда брани, а не продаје, Иксан – Снага правде окупља све који су уморни од неравноправности, ћутања и страха.</p>
-      </article>
+  <!-- BELA POZADINA + KARTICE -->
+  <section class="white-split">
+    <div class="container cards">
+      <div class="grid">
+        <article class="card">
+          <h2>Ко смо</h2>
+          <p>Иксан није само удружење. То је покрет људи који верују да достојанство, истина и човечност не смеју бити луксуз. Основан из идеје да се правда брани, а не продаје, Иксан – Снага правде окупља све који су уморни од неравноправности, ћутања и страха.</p>
+        </article>
 
-      <article class="card">
-        <h2>Зашто се зовемо „Иксан“</h2>
-        <p>Име долази из романа „Иксан“ — лик човека који трага за истином, добротом и вером у људскост постао је симбол сваког од нас. „Бити иксан је дар, али остати иксан ствар избора“ — тај избор стоји у срцу покрета.</p>
-        <p><em>„Иксан није идеја. Он је човек у сваком од нас који је одлучио да више не ћути.“ — Дејан Тадић</em></p>
-      </article>
+        <article class="card">
+          <h2>Зашто се зовемо „Иксан“</h2>
+          <p>Име долази из романа „Иксан“ — лик човека који трага за истином, добротом и вером у људскост постао је симбол сваког од нас. „Бити иксан је дар, али остати иксан ствар избора“ — тај избор стоји у срцу покрета.</p>
+          <p><em>„Иксан није идеја. Он је човек у сваком од нас који је одлучио да више не ћути.“ — Дејан Тадић</em></p>
+        </article>
 
-      <article class="card">
-        <h2>Наша мисија</h2>
-        <ul class="list">
-          <li>Вратити поверење у систем, у човека и у правду.</li>
-          <li>Заштитити оне који немају снаге, новца или везе.</li>
-          <li>Створити Србију у којој је закон исти за све.</li>
-        </ul>
-      </article>
+        <article class="card">
+          <h2>Наша мисија</h2>
+          <ul class="list">
+            <li>Вратити поверење у систем, у човека и у правду.</li>
+            <li>Заштитити оне који немају снаге, новца или везе.</li>
+            <li>Створити Србију у којој је закон исти за све.</li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <h2>Зашто смо настали</h2>
-        <p>Као одговор на неправду која је постала свакодневица — приватне извршитеље који газе људе, корупцију која прождире институције и равнодушност која постаје норма. Из личне борбе за правду рођена је колективна свест да више не треба ћутати.</p>
-      </article>
+        <article class="card">
+          <h2>Зашто смо настали</h2>
+          <p>Као одговор на неправду која је постала свакодневица — приватне извршитеље који газе људе, корупцију која прождире институције и равнодушност која постаје норма. Из личне борбе за правду рођена је колективна свест да више не треба ћутати.</p>
+        </article>
 
-      <article class="card">
-        <h2>Шта желимо</h2>
-        <ul class="list">
-          <li>Државу у којој институције служе грађанима.</li>
-          <li>Систем у којем нико није изнад закона.</li>
-          <li>Друштво у којем човечност није слабост, већ највећа снага.</li>
-        </ul>
-      </article>
+        <article class="card">
+          <h2>Шта желимо</h2>
+          <ul class="list">
+            <li>Државу у којој институције служе грађанима.</li>
+            <li>Систем у којем нико није изнад закона.</li>
+            <li>Друштво у којем човечност није слабост, већ највећа снага.</li>
+          </ul>
+        </article>
 
-      <article class="card">
-        <h2>Ко смо ми</h2>
-        <p>Ми смо грађани, радници, родитељи, студенти, адвокати, пензионери — свако ко верује да је правда заједничко добро. На челу покрета је Дејан Тадић, аутор романа „Иксан“ и оснивач удружења, човек који је личну борбу претворио у покрет за правду и достојанство свих нас.</p>
-      </article>
-    </div>
-  </section>
+        <article class="card">
+          <h2>Ко смо ми</h2>
+          <p>Ми смо грађани, радници, родитељи, студенти, адвокати, пензионери — свако ко верује да је правда заједничко добро. На челу покрета је Дејан Тадић, аутор романа „Иксан“ и оснивач удружења, човек који је личну борбу претворио у покрет за правду и достојанство свих нас.</p>
+        </article>
+      </div>
 
-  <!-- BOTTOM CTA -->
-  <section>
-    <div class="container cta-block">
-      <h3>Снага правде расте твојом подршком</h3>
-      <p>Твоја помоћ нам омогућава бесплатну правну подршку, надзор над институцијама и покретање иницијатива које мењају праксу.</p>
-      <div class="cta-row" style="justify-content:center;margin-top:10px">
-        <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-        <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-        <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
+      <!-- BOTTOM CTA -->
+      <div class="cta-block" style="margin-top:26px">
+        <h3>Снага правде расте твојом подршком</h3>
+        <p>Твоја помоћ нам омогућава бесплатну правну подршку, надзор над институцијама и покретање иницијатива које мењају праксу.</p>
+        <div class="cta-row" style="justify-content:center;margin-top:10px">
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+          <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+          <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
+        </div>
       </div>
     </div>
   </section>
