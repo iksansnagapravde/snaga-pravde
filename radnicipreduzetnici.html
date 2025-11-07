@@ -6,45 +6,111 @@
   <title>Радници и предузетници — ИКСАН • Снага правде</title>
   <meta name="description" content="Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp">
+  <link rel="icon" href="logo.webp" />
   <style>
-    :root{--bg:#0B2141;--card:#102D57;--ink:#fff;--muted:#cfe1ff;--gold:#FFB300;--line:rgba(255,255,255,.14)}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial,sans-serif}
+    :root{
+      --blue:#0B2141; --blue2:#102D57;
+      --head1:#123366; --head2:#0f295a;
+      --gold:#D3A451; --ink:#cfe1ff;
+      --line:rgba(255,255,255,.14);
+      --cardLine:#dfe7fb;
+      --text:#13203a;
+      --radius:16px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Times New Roman";
+      line-height:1.7;
+      background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
+      color:var(--ink);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+      overflow-x:hidden;
+    }
     a{color:inherit;text-decoration:none}
-    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+    .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
+    /* HEADER */
     header{
       position:sticky;top:0;z-index:60;
-      background:linear-gradient(180deg,rgba(11,33,65,.95),rgba(11,33,65,.8));
-      border-bottom:1px solid var(--line);backdrop-filter:blur(8px)
+      background:linear-gradient(180deg,var(--head1),var(--head2));
+      border-bottom:1px solid var(--line);
+      backdrop-filter:blur(8px);
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
-    .brand img{height:40px;width:auto;border-radius:10px;display:block}
-    .brand a{display:flex;align-items:center;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:40px;border-radius:10px}
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
+    nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-    nav.nav{display:flex;gap:18px;font-weight:700;opacity:.95;flex-wrap:wrap}
-    nav.nav a{opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s, opacity .2s}
-    nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    /* HERO (плава позадина, бели наслов) */
+    .hero{padding:36px 0 0}
+    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+    h1{
+      color:#fff; /* бели наслов */
+      margin:0 0 8px;
+      line-height:1.15;
+      font-weight:400;
+      font-size:clamp(30px,4.8vw,50px);
+      text-shadow:0 0 10px rgba(255,255,255,.45);
+      text-align:left;
+    }
+    .sub{color:var(--ink);opacity:.95;max-width:780px;margin:8px 0 16px;font-size:clamp(16px,2vw,18px)}
+    .hero-media{
+      border-radius:16px;overflow:hidden;border:1px solid var(--line);
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      background:#0f2552;aspect-ratio:16/9;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
 
-    h1{margin:.8rem 0 0;font-size:clamp(30px,5.5vw,50px);color:var(--gold);text-align:center}
-    p.lead{color:var(--muted);text-align:center;max-width:880px;margin:10px auto 26px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .btn{
+      display:inline-block;padding:12px 26px;border-radius:40px;
+      font-weight:700;font-size:14px;text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s;cursor:pointer;text-align:center;
+    }
+    .btn-primary{background:linear-gradient(180deg,#e4b85c,#d3a451);color:#0B2141;box-shadow:0 3px 0 #8a682a, 0 6px 18px rgba(0,0,0,.35)}
+    .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;box-shadow:0 3px 0 #07142c, 0 6px 18px rgba(0,0,0,.35)}
+    .btn:hover{transform:translateY(-2px)}
 
-    section{padding:34px 0}
+    /* WHITE SPLIT (беле картице) */
+    .white-split{
+      background:#fff;color:var(--text);
+      margin-top:18px;padding:28px 0 40px;
+      border-top-left-radius:20px;border-top-right-radius:20px;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    }
     .grid{display:grid;gap:16px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
-    .card h2{margin:0 0 8px;color:var(--gold);font-size:clamp(20px,3vw,26px)}
-    .card p, .card li{color:var(--muted);line-height:1.7}
-    ul, ol{padding-left:20px}
+    .card{
+      background:#fff; color:var(--text);
+      border:1px solid var(--cardLine);
+      border-radius:16px; overflow:hidden;
+      box-shadow:0 10px 22px rgba(0,0,0,.08);
+    }
+    .card-head{
+      background:linear-gradient(180deg,#123366,#0f2552);
+      color:#fff; padding:12px 16px;
+      border-bottom:1px solid #0b1f46;
+    }
+    .card-head h3{
+      margin:0; font-size:clamp(18px,2.4vw,22px); font-weight:600;
+      letter-spacing:.2px; text-shadow:0 1px 3px rgba(0,0,0,.35);
+    }
+    .card-body{padding:16px}
+    .card-body p, .card-body li{font-size:16px;line-height:1.75}
+    .card-body ul, .card-body ol{padding-left:20px}
+    .card:hover{transform:translateY(-2px); box-shadow:0 14px 28px rgba(0,0,0,.12); transition:.2s}
 
-    .cta-row{display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:12px 22px;border-radius:999px;border:1px solid var(--line);font-weight:800;text-transform:uppercase;letter-spacing:.4px}
-    .btn-primary{background:var(--gold);color:var(--bg);border-color:transparent;box-shadow:0 8px 18px rgba(255,179,0,.25)}
+    .bottom-cta{padding-top:8px}
+    .back-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+    .btn-ghost{background:#fff;color:var(--text);border:1px solid var(--cardLine)}
 
-    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);text-align:center;margin-top:40px}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--ink);text-align:center;margin-top:40px}
   </style>
 </head>
 <body>
@@ -53,14 +119,14 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html" aria-label="ИКСАН — Почетна">
-        <img src="logo.webp" alt="ИКСАН лого" width="80" height="80">
+        <img src="logo.webp" alt="ИКСАН лого">
         <span>ИКСАН • Снага правде</span>
       </a>
     </div>
-    <nav class="nav">
+    <nav>
       <a href="index.html">Почетна</a>
       <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
+      <a href="oblasti.html" aria-current="page">Области</a>
       <a href="ciljevi.html">Циљеви</a>
       <a href="inicijative.html">Иницијативе</a>
       <a href="kontakt.html">Контакт</a>
@@ -69,58 +135,71 @@
 </header>
 
 <main>
-
-  <section>
-    <div class="container">
-      <h1>Радници и предузетници — срце здраве земље</h1>
-      <p class="lead">Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container grid">
-      <article class="card">
-        <h2>⚙️ Право на рад и достојанство запослених</h2>
-        <p>Рад није роба. Сваки радник има право на поштену зараду, сигурност и поштовање.</p>
-        <ol>
-          <li><strong>Плаћени прековремени:</strong> пуна исплата за сваки сат преко 40 недељно и рад викендом/празницима — у јавном и приватном сектору.</li>
-          <li><strong>Једнак третман:</strong> закон не сме правити разлику између „државних“ и „приватних“ радника.</li>
-          <li><strong>Бесплатна правна заштита:</strong> саветовање и подршка за раднике који немају могућности да ангажују адвоката.</li>
-        </ol>
-        <p><em>Достојанство радника је темељ државе. Где се прековремени не плаћа — правда је већ понижена.</em></p>
-      </article>
-
-      <article class="card">
-        <h2>💼 Слобода и фер услови за предузетнике</h2>
-        <p>Мали и средњи предузетници су темељ економије. Потребан је нови приступ заштити конкуренције.</p>
-        <ul>
-          <li>Уније/удружења предузетника добијају <strong>законско право</strong> да у статутима утврде обавезујућа правила понашања на тржишту — за све учеснике.</li>
-          <li>Та правила подносе се Комисији за заштиту конкуренције која их <strong>објављује у Службеном гласнику</strong> као обавезујућа.</li>
-          <li>Овим се спречавају <strong>прикривене монополске праксе</strong> — закуп полица, маркетиншки намети и др. — које уништавају мале произвођаче.</li>
-        </ul>
-      </article>
-
-      <article class="card" style="grid-column:1/-1">
-        <h2>🛠️ Економија по мери човека</h2>
-        <p>Слободно и праведно тржиште омогућава да сваки човек — било радник или предузетник — може да живи од свог рада, а не од туђих повластица.</p>
-        <ul>
-          <li>Држава <strong>штити радника</strong>, али <strong>не кажњава предузетника</strong>.</li>
-          <li>Тржиште је отворено, али <strong>праведно</strong>.</li>
-          <li>Закон служи <strong>народу</strong>, а не монополима.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="cta-row">
-        <a href="kontakt.html" class="btn btn-primary">Пријави злоупотребу / тражи савет</a>
-        <a href="oblasti.html" class="btn">Назад на области</a>
+  <!-- HERO (плава, бели наслов + 3 дугмета) -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Радници и предузетници — срце здраве земље</h1>
+        <p class="sub">Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
+          <a class="btn btn-dark" href="kontakt.html">ПРИКЉУЧИ СЕ</a>
+          <a class="btn btn-dark" href="kontakt.html">ПРИЈАВИ</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/hero-iksan.jpg" alt="ИКСАН — Снага правде">
       </div>
     </div>
   </section>
 
+  <!-- БЕЛЕ КАРТИЦЕ -->
+  <section class="white-split">
+    <div class="container grid">
+      <article class="card">
+        <div class="card-head"><h3>⚙️ Право на рад и достојанство запослених</h3></div>
+        <div class="card-body">
+          <p>Рад није роба. Сваки радник има право на поштену зараду, сигурност и поштовање.</p>
+          <ol>
+            <li><strong>Плаћени прековремени:</strong> пуна исплата за сваки сат преко 40 недељно и рад викендом/празницима — у јавном и приватном сектору.</li>
+            <li><strong>Једнак третман:</strong> закон не сме правити разлику између „државних“ и „приватних“ радника.</li>
+            <li><strong>Бесплатна правна заштита:</strong> саветовање и подршка за раднике који немају могућности да ангажују адвоката.</li>
+          </ol>
+          <p><em>Достојанство радника је темељ државе. Где се прековремени не плаћа — правда је већ понижена.</em></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>💼 Слобода и фер услови за предузетнике</h3></div>
+        <div class="card-body">
+          <p>Мали и средњи предузетници су темељ економије. Потребан је нови приступ заштити конкуренције.</p>
+          <ul>
+            <li>Уније/удружења предузетника добијају <strong>законско право</strong> да у статутима утврде обавезујућа правила понашања на тржишту — за све учеснике.</li>
+            <li>Та правила подносе се Комисији за заштиту конкуренције која их <strong>објављује у Службеном гласнику</strong> као обавезујућа.</li>
+            <li>Овим се спречавају <strong>прикривене монополске праксе</strong> — закуп полица, маркетиншки намети и др. — које уништавају мале произвођаче.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card" style="grid-column:1/-1">
+        <div class="card-head"><h3>🛠️ Економија по мери човека</h3></div>
+        <div class="card-body">
+          <p>Слободно и праведно тржиште омогућава да сваки човек — било радник или предузетник — може да живи од свог рада, а не од туђих повластица.</p>
+          <ul>
+            <li>Држава <strong>штити радника</strong>, али <strong>не кажњава предузетника</strong>.</li>
+            <li>Тржиште је отворено, али <strong>праведно</strong>.</li>
+            <li>Закон служи <strong>народу</strong>, а не монополима.</li>
+          </ul>
+          <div class="back-row">
+            <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
+            <a class="btn btn-dark" href="kontakt.html">ПРИКЉУЧИ СЕ</a>
+            <a class="btn btn-dark" href="kontakt.html">ПРИЈАВИ</a>
+            <a class="btn btn-ghost" href="oblasti.html">Назад на области</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
 </main>
 
 <footer>
