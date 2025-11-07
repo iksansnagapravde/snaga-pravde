@@ -43,17 +43,16 @@
     nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
     nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-    /* LAYOUT: sve da stane bez skrola (desktop) */
     main{min-height:calc(100vh - 56px); display:flex; flex-direction:column}
 
-    /* HERO (kompaktno) */
-    .hero{padding:20px 0 0}
+    /* HERO (spušten naslov + šira slika) */
+    .hero{padding:16px 0 0}
     .hero-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
     h1{
       color:#fff;
-      margin:.3rem 0 0;
+      margin-top:57px; /* ↓ spušteno za 1.5 cm */
       line-height:1.15;
       font-weight:400;
       font-size:clamp(28px,3.4vw,38px);
@@ -74,20 +73,24 @@
 
     .hero-media{
       border-radius:16px;overflow:hidden;border:1px solid var(--line);
-      box-shadow:0 10px 24px rgba(0,0,0,.32);align-self:start;justify-self:center;
+      box-shadow:0 10px 24px rgba(0,0,0,.32);align-self:start;justify-self:center;width:100%;
     }
-    /* slika mala da sve stane */
+    /* pravougaona, šira slika; visina kontrolisana da sve stane */
     .hero-media img{
-      display:block;width:auto;max-width:100%;
-      height:180px;           /* ~ dovoljno da kartice ostanu u viewportu */
+      display:block;width:100%;
+      height:clamp(180px, 26vw, 220px); /* pravougaonik */
       object-fit:cover;object-position:center;border-radius:12px;
     }
 
-    /* PRELAZ 1 cm preko cele širine */
-    .fade-divider{width:100%;height:38px;background:linear-gradient(180deg,var(--blue2) 0%, #ffffff 100%);}
+    /* PRELAZ 1.5 cm preko cele širine */
+    .fade-divider{
+      width:100%;
+      height:57px; /* ≈ 1.5 cm */
+      background:linear-gradient(180deg,var(--blue2) 0%, #ffffff 100%);
+    }
 
     /* BELO PODNOŽJE (kompaktno) */
-    .white-split{background:#fff;color:#13203a;padding:16px 0 8px}
+    .white-split{background:#fff;color:#13203a;padding:12px 0 8px}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
 
@@ -113,24 +116,15 @@
     .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.7vw,16px)}
     .card a.more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
 
-    .statement{
-      background:rgba(17,42,84,.60);
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:16px; box-shadow:0 12px 26px rgba(0,0,0,.28);
-      text-align:left; color:#fff; margin-top:8px;
-    }
-    .statement h2{font-weight:600;font-size:clamp(18px,2.2vw,22px);margin-bottom:6px}
-    .statement p{max-width:880px;margin:0;color:var(--ink);font-size:clamp(14px,1.6vw,16px)}
-
     footer{border-top:1px solid var(--line);padding:14px 0;color:var(--ink);text-align:center;opacity:.8;font-size:.9rem}
 
-    /* Dodatno sabijanje ako je viewport niži (npr. laptop 1366×768) */
+    /* Dodatno sabijanje ako je viewport niži (npr. 1366×768) */
     @media (max-height: 820px){
-      .hero{padding-top:14px}
-      .hero-media img{height:160px}
-      .cta-row{margin-bottom:6px}
-      .white-split{padding-top:12px}
-      .fade-divider{height:30px}
+      .hero{padding-top:10px}
+      h1{margin-top:48px}
+      .hero-media img{height:clamp(160px, 24vw, 200px)}
+      .fade-divider{height:50px}
+      .white-split{padding-top:10px}
     }
   </style>
 </head>
@@ -172,10 +166,10 @@
       </div>
     </section>
 
-    <!-- PRELAZ 1 cm FULL-WIDTH -->
+    <!-- PRELAZ 1.5 cm FULL-WIDTH -->
     <div class="fade-divider"></div>
 
-    <!-- BELO + KARTICE (ISTE širine/stila) -->
+    <!-- BELO + KARTICE -->
     <section class="white-split">
       <div class="container">
         <div class="grid">
@@ -203,11 +197,7 @@
             <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
           </article>
         </div>
-
-        <div class="statement">
-          <h2>Наш стандард</h2>
-          <p>Право, чињенице и јавни интерес. Независне институције, јасна правила и једнака примена закона — то је политика која гради поверење.</p>
-        </div>
+        <!-- Uklonjeno: blok „Наш стандард“ -->
       </div>
     </section>
   </main>
@@ -217,3 +207,4 @@
   </footer>
 </body>
 </html>
+
