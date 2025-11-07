@@ -38,10 +38,47 @@
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:40px;border-radius:10px}
-    nav{display:flex;gap:16px;flex-wrap:wrap}
-    nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
-    nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    /* LOGO 50–100% veći (mobilni ~60px, desktop ~80px) */
+    .brand img{height:60px;border-radius:10px}
+    @media(min-width:900px){.brand img{height:80px}}
+
+    /* NAV: tri stavke (Почетна, О нама, Мени) */
+    nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    nav > a, .menu-toggle{
+      padding:8px 0;border-bottom:2px solid transparent;opacity:.92;transition:.2s;
+      font-size:16px;
+    }
+    nav > a[aria-current="page"], nav > a:hover{border-color:var(--gold);opacity:1}
+
+    /* DROPDOWN (Мени) — без JS */
+    .menu{
+      position:relative;
+    }
+    .menu-toggle{
+      cursor:pointer; display:inline-flex; align-items:center; gap:8px;
+    }
+    .menu-toggle:hover{opacity:1;border-bottom-color:var(--gold)}
+    .caret{border:6px solid transparent;border-top-color:var(--ink);margin-top:2px}
+
+    .dropdown{
+      position:absolute; right:0; top:calc(100% + 8px);
+      background:rgba(16,45,87,.98);
+      border:1px solid var(--line);
+      border-radius:12px;
+      box-shadow:0 18px 36px rgba(0,0,0,.45);
+      min-width:280px;
+      padding:6px;
+      display:none;
+    }
+    .dropdown a{
+      display:block; padding:10px 12px; border-radius:10px;
+      border:1px solid transparent;
+      white-space:nowrap;
+    }
+    .dropdown a:hover{background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.08)}
+    /* otvaranje: hover i fokus sa tastature */
+    .menu:hover .dropdown,
+    .menu:focus-within .dropdown{display:block}
 
     main{min-height:calc(100vh - 56px); display:flex; flex-direction:column}
 
@@ -109,6 +146,13 @@
     .card a.more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
 
     footer{border-top:1px solid var(--line);padding:14px 0;color:var(--ink);text-align:center;opacity:.8;font-size:.9rem}
+
+    /* Mobilni polish */
+    @media(max-width:600px){
+      .container{padding:0 16px}
+      .btn{min-height:44px}
+      nav{gap:14px}
+    }
   </style>
 </head>
 
@@ -116,18 +160,31 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html">
+      <a href="index.html" aria-label="Почетна">
         <img src="logo.webp.png" alt="ИКСАН лого">
         <span class="brand-name">Иксан-Снага правде</span>
       </a>
     </div>
+
+    <!-- NAV: Почетна • О нама • Мени (са падајућим списком) -->
     <nav class="nav">
       <a href="index.html" aria-current="page">Почетна</a>
       <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
+
+      <div class="menu">
+        <a href="#meni" class="menu-toggle" aria-haspopup="true" aria-expanded="false">
+          Мени <span class="caret" aria-hidden="true"></span>
+        </a>
+        <div class="dropdown" role="menu" id="meni">
+          <a href="oblasti.html" role="menuitem">Области</a>
+          <a href="ciljevi.html" role="menuitem">Циљеви</a>
+          <a href="inicijative.html" role="menuitem">Иницијативе</a>
+          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
+          <a href="porekloimovine.html" role="menuitem">Порекло имовине на сунце</a>
+          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
+          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -146,7 +203,6 @@
         </div>
       </div>
 
-      <!-- ОВО ЈЕ НОВА СЛИКА -->
       <div class="hero-media">
         <img src="hero.webp" alt="Иксан — Снага правде, заједништво и достојанство">
       </div>
