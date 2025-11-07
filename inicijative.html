@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
   <meta charset="UTF-8" />
@@ -6,158 +6,130 @@
   <title>Иницијативе — ИКСАН • Снага правде</title>
   <meta name="description" content="Петиција за укидање приватних извршитеља — придружи се борби за правду и обуставу неправедних поступака.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp">
+  <link rel="icon" href="logo.webp.png">
 
   <style>
     :root {
-      --bg:#0B2141;
+      --blue:#0B2141;
+      --blue2:#102D57;
+      --lightHead1:#123366;
+      --lightHead2:#0f295a;
+      --gold:#D3A451;
       --ink:#cfe1ff;
-      --gold:#FFB300;
       --line:rgba(255,255,255,.14);
       --radius:16px;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
     body {
-      background: var(--bg);
+      background: linear-gradient(180deg, var(--blue) 0%, var(--blue2) 100%);
       color: var(--ink);
-      font-family:"Times New Roman", Times, serif; /* Times New Roman svuda */
-      line-height: 1.7;
-      font-size: 0.95rem;
-      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      font-family:"Times New Roman";
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
     }
-
     a {color: inherit; text-decoration: none;}
-    .container {max-width: 950px; margin: 0 auto; padding: 0 20px;} /* malo šire da stane side CTA */
+    .container {max-width: 1150px; margin: 0 auto; padding: 0 20px;}
 
     header {
       position: sticky; top: 0; z-index: 60;
-      background: linear-gradient(180deg, rgba(11,33,65,.95), rgba(11,33,65,.8));
+      background: linear-gradient(180deg, var(--lightHead1), var(--lightHead2));
       border-bottom: 1px solid var(--line);
       backdrop-filter: blur(8px);
     }
     .head {display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand {display:flex;align-items:center;gap:12px;font-weight:900}
+    .brand {display:flex;align-items:center;gap:12px}
     .brand img {height:40px;border-radius:10px;}
-    nav.nav {display:flex;gap:18px;font-weight:700;flex-wrap:wrap;}
-    nav.nav a {opacity:.8;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s;}
-    nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold);}
+    nav.nav {display:flex;gap:18px;flex-wrap:wrap}
+    nav.nav a {opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
+    nav.nav a[aria-current="page"], nav.nav a:hover {opacity:1;border-bottom-color:var(--gold)}
 
-    main {padding: 40px 0;}
+    /* HERO секција */
+    .hero{padding:36px 0 0}
+    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
 
-    /* Gornji deo: levа kolona (naslov+tekst), desna kolona (vertikalna CTA) */
-    .top-grid{
-      display:grid; gap:24px; align-items:start;
-      grid-template-columns: 1fr; 
-    }
-    @media(min-width: 900px){
-      .top-grid{ grid-template-columns: 1fr 280px; } /* desni stub za dugmad */
-    }
-
-    h1 {
-      text-align: left;                /* levo poravnanje */
-      font-size: clamp(28px, 4.6vw, 44px);
-      color: var(--gold);
-      font-weight: 400;                /* ne boldovano */
-      margin-bottom: 10px;
-      line-height:1.15;
-      text-shadow:0 2px 0 rgba(92,65,17,.45), 0 8px 22px rgba(0,0,0,.35);
-    }
-
-    /* Glavno dugme (potpiši peticiju) ispod naslova, levo */
-    .cta-main{
-      margin: 10px 0 22px;
-      display:flex; flex-wrap:wrap; gap:12px;
-    }
-
-    /* Desna vertikalna CTA kolona */
-    .cta-side{
-      position:relative;
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      background:rgba(16,45,87,.85);
-      padding:16px;
-      box-shadow:0 10px 24px rgba(0,0,0,.28);
-    }
-    .cta-side h3{
-      font-weight:400; color:#fff; margin:0 0 10px;
-      font-size: clamp(18px, 2.2vw, 20px);
-    }
-    .cta-stack{display:flex; flex-direction:column; gap:10px}
-
-    /* Dugmad */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: .5rem;
-      padding: 12px 22px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .4px;
-      font-size: 15px;
-      transition: transform .2s, box-shadow .2s, background .2s;
-      text-align:center;
-    }
-    .btn-primary {
-      background: var(--gold);
-      color: var(--bg);
-      border-color: transparent;
-      box-shadow: 0 6px 18px rgba(255,179,0,.3);
-    }
-    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 10px 28px rgba(255,179,0,.45); }
-
-    .btn-dark{
-      background:linear-gradient(180deg,#1e3a72,#0f2552);
+    h1{
       color:#fff;
+      font-weight:400;
+      font-size:clamp(32px,4.2vw,48px);
+      line-height:1.15;
+      text-shadow:0 0 10px rgba(255,255,255,.45);
+      margin:0 0 10px;
+    }
+    .sub{
+      color:var(--ink); opacity:.95;
+      font-size:clamp(16px,2vw,18px);
+      max-width:740px; margin:8px 0 16px;
+    }
+
+    .hero-media{
+      border-radius:16px; overflow:hidden; border:1px solid var(--line);
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      background:#0f2552;
+      aspect-ratio:16/9;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
+    .hero-media .ph{color:#9fb6e8;opacity:.9;font-size:14px;text-transform:uppercase;}
+
+    .btn{
+      display:inline-block;padding:12px 26px;border-radius:40px;border:none;
+      font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s;cursor:pointer;text-align:center;
+    }
+    .btn-primary{
+      background:linear-gradient(180deg,#e4b85c,#d3a451);color:#0b2141;
+      box-shadow:0 3px 0 #8a682a, 0 6px 18px rgba(0,0,0,.35);
+    }
+    .btn-dark{
+      background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;
       box-shadow:0 3px 0 #07142c, 0 6px 18px rgba(0,0,0,.35);
     }
-    .btn-dark:hover{transform:translateY(-1px);box-shadow:0 5px 0 #07142c, 0 10px 24px rgba(0,0,0,.45)}
+    .btn:hover{transform:translateY(-2px)}
 
-    /* Tekst */
-    p {
-      color: var(--ink);
-      text-align: justify;
-      margin-bottom: 14px;
-      font-size: clamp(14px, 1.7vw, 15.5px);
-      font-weight: 400; /* ne boldovano */
+    /* BELO PODNOŽJE */
+    .white-split{
+      background:#fff;color:#13203a;
+      margin-top:16px;padding:22px 0 28px;
+      border-top-left-radius:20px;border-top-right-radius:20px;
+      box-shadow:0 -8px 24px rgba(0,0,0,.18);
     }
-    strong {color: var(--gold); font-weight: 600;}
-    .center {text-align:center;}
+    .card-large{
+      background:rgba(16,45,87,.92);
+      border:1px solid var(--line);border-radius:var(--radius);
+      padding:22px;box-shadow:0 12px 28px rgba(0,0,0,.3);
+    }
+    .card-large h2{
+      font-family:"Times New Roman";
+      font-weight:500;color:#fff;
+      font-size:clamp(22px,2.8vw,26px);
+      margin:0 0 10px;
+    }
+    .card-large p{color:var(--ink);margin-bottom:14px;font-size:clamp(15px,1.9vw,16.5px);line-height:1.75;text-align:justify;}
 
-    /* Dno CTA blok (može ostati) */
-    .cta-block{
-      background:rgba(17,42,84,.60);
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:22px; box-shadow:0 12px 28px rgba(0,0,0,.30);
-      text-align:center; margin-top:40px;
-    }
-    .cta-block h3{
-      color:#fff; font-weight:600; font-size:clamp(20px,2.6vw,24px);
-      margin-bottom:8px;
-    }
-    .cta-block p{max-width:760px;margin:0 auto 16px;color:var(--ink)}
+    .cta-wrap{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
 
-    footer {
-      border-top: 1px solid var(--line);
-      color: var(--ink);
-      text-align: center;
-      padding: 22px 0;
-      opacity: .7;
-      margin-top: 36px;
-      font-size: .85rem;
+    footer{
+      border-top:1px solid var(--line);
+      color:var(--ink);
+      text-align:center;
+      padding:24px 0;
+      opacity:.7;
+      font-size:.9rem;
+      margin-top:30px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html" aria-label="ИКСАН — Почетна">
-        <img src="logo.webp" alt="ИКСАН лого" width="80" height="80">
+      <a href="index.html">
+        <img src="logo.webp.png" alt="ИКСАН лого">
         <span>ИКСАН • Снага правде</span>
       </a>
     </div>
@@ -173,56 +145,46 @@
 </header>
 
 <main>
-  <section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>🖊️ Укидање приватних извршитеља</h1>
+        <p class="sub">Придружи се петицији за правду — да извршење буде у рукама суда, а не профита.</p>
+        <a href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary">✍️ Потпиши петицију</a>
+      </div>
+      <div class="hero-media">
+        <!-- убаци слику -->
+        <img src="inicijativa-hero.webp" alt="Иницијатива — Укидање приватних извршитеља">
+      </div>
+    </div>
+  </section>
+
+  <!-- БЕЛА СЕКЦИЈА СА КАРТИЦОМ -->
+  <section class="white-split">
     <div class="container">
-      <!-- Gornji grid: levo sadržaj, desno vertikalna dugmad -->
-      <div class="top-grid">
-        <!-- LEVO: naslov, glavno dugme (peticija) i tekst -->
-        <div>
-          <h1>🖊️ Укидање приватних извршитеља</h1>
+      <article class="card-large">
+        <h2>Петиција грађана Србије</h2>
 
-          <!-- Na mestu starih 3 CTA, sada SAMO dugme "Potpiši peticiju" -->
-          <div class="cta-main">
-            <a href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-primary">✍️ Потпиши петицију</a>
-          </div>
+        <p>Приватни извршитељи у Србији постали су симбол неправде и богаћења на туђој муци. Зато тражимо да буду укинути и претворени у судске извршитеље који раде за плату из буџета, а не на проценат.</p>
 
-          <p>Приватни извршитељи у Србији постали су симбол неправде и богаћења на туђој муци. Зато тражимо да буду укинути и претворени у судске извршитеље који раде за плату из буџета, а не на проценат.</p>
+        <p>Захтевамо укидање двоструког кажњавања грађана како грађани не би плаћали адвокатске трошкове од стране поверилаца и трошкове извршитеља. Укупни трошкови извршења не смеју прећи висину дуга.</p>
 
-          <p>Захтевамо укидање двоструког кажњавања грађана, како грађани не би плаћали адвокатске трошкове од стране поверилаца и трошкове извршитеља. Укупни трошкови извршења не смеју прећи висину дуга.</p>
+        <p>Тражимо заштиту минималне зараде, пензије и социјалне помоћи, као и јединог дома, право жалбе до 15 дана, док траје поступак нема извршења. Ако три године нема контакта — дуг застарева. Неповредивост имовине трећих лица мора бити загарантована, као и пуно поштовање Устава.</p>
 
-          <p>Тражимо заштиту минималне зараде, пензије и социјалне помоћи, као и јединог дома. Право жалбе до 15 дана, док траје поступак — нема извршења. Ако три године нема контакта — дуг застарева. Неповредивост имовине трећих лица мора бити загарантована, као и пуно поштовање Устава.</p>
+        <p>Сваком грађанину мора бити омогућено право жалбе кад год уочи неправилност, јер му Устав то право као неотуђиво даје. Ако грађанин годинама није имао контакт са документом, опоменом или решењем — поступак мора бити обустављен. Без уредног достављања нема важећег поступка.</p>
 
-          <p><strong>Сваком грађанину мора бити омогућено право жалбе кад год уочи неправилност,</strong> без обзира на то у којој је фази поступак. То је неотуђиво уставно право које нико не може ускратити. Грађанин има право да реагује чим сазна за одлуку, решење или злоупотребу, па и након истека формалних рокова ако није био благовремено обавештен.</p>
+        <p>Захтевамо обустављање свих поступака, као и укидање и отпис свих камата које су се годинама нагомилавале без знања грађана. Неправда је када се човек после више година оптерети трошковима правника, извршитеља, дугим каматама и изгуби дом или имовину. То није закон — то је неправда која мора престати.</p>
 
-          <p><strong>Ако грађанин годинама није имао контакт са документом, опоменом или решењем,</strong> такав поступак мора бити обустављен — јер без уредног достављања нема важећег поступка. Никакав дуг не може постојати „у тајности“. Устав јасно штити право сваког појединца да зна, да се брани и да му се не суди у одсуству.</p>
-
-          <p><strong>Захтевамо обустављање свих текућих и покренутих поступака извршења,</strong> као и <strong>укидање и отпис свих камата</strong> које су се годинама нагомилавале без знања грађана. Не може се назвати правдом када се човеку након више година, без обавештења, наметну огромни трошкови правника, извршитеља и камата — па му се потом блокира рачун, стан, кућа, аутомобил или чак одузима намештај. То није закон — то је неправда која мора престати.</p>
-        </div>
-
-        <!-- DESNO: tri dugmeta, vertikalno -->
-        <aside class="cta-side">
-          <h3>Подржи покрет</h3>
-          <div class="cta-stack">
-            <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-            <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-            <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
-          </div>
-        </aside>
-      </div>
-
-      <!-- (Opcioni) blok koji je ostao na dnu — može ostati radi ujednačenosti sajta -->
-      <div class="cta-block">
-        <h3>Снага правде расте твојом подршком</h3>
-        <p>Твоја помоћ нам омогућава бесплатну правну подршку, надзор над институцијама и иницијативе које мењају праксу.</p>
-        <div class="cta-main" style="justify-content:center">
-          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+        <div class="cta-wrap">
+          <a href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn-primary">✍️ Потпиши петицију</a>
           <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-          <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
         </div>
-      </div>
-
+      </article>
     </div>
   </section>
 </main>
