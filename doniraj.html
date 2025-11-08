@@ -203,11 +203,12 @@
 
     /* Mobilno ponašanje */
     @media (max-width: 768px){
-      .brand img{height:90px}
+      .brand img{height:90px}           /* 120 → 90 (−25%) */
       .dropdown{min-width:70vw}
       nav.nav{gap:8px}
     }
 
+    /* Bez tamnog moda inverzije */
     @media (prefers-color-scheme:dark){
       html,body{background:var(--deepBlue)!important;color:#fff!important}
     }
@@ -226,9 +227,11 @@
     </div>
 
     <nav class="nav" aria-label="Главна навигација">
+      <!-- Хоризонтално: Почетна, Контакт, Мени -->
       <a class="nav-link" href="index.html">Почетна</a>
       <a class="nav-link" href="kontakt.html">Контакт</a>
 
+      <!-- Dropdown MENI -->
       <div class="menu" id="mainMenu">
         <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
         <div class="dropdown" id="menuList" role="menu">
@@ -248,4 +251,174 @@
   </div>
 </header>
 
-<!-- Остатак кода (HERO, PANEL, SECTION, FOOTER) остаје идентичан као што си већ имао -->
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="title">Док неко губи битку — ти можеш бити његов спас</h1>
+        <p class="subtitle">„Правда није роба. Време је да се врати народу.“</p>
+      </div>
+      <div class="hero-media">
+        <img src="hero.webp" alt="Људи заједно — Снага правде">
+      </div>
+    </div>
+  </section>
+
+  <!-- PANEL: износи и дугмад -->
+  <section class="panel">
+    <div class="container">
+      <div class="panel-box">
+        <div class="panel-grid">
+          <!-- ЛЕВО: износи -->
+          <div>
+            <div class="amount-grid" role="group" aria-label="Предложени износи">
+              <button class="chip" data-amount="500">500 RSD</button>
+              <button class="chip" data-amount="1000">1.000 RSD</button>
+              <button class="chip" data-amount="2500">2.500 RSD</button>
+              <button class="chip" data-amount="5000">5.000 RSD</button>
+              <button class="chip" data-amount="10000">10.000 RSD</button>
+              <button class="chip" id="chip-custom">Други износ</button>
+            </div>
+            <div class="custom">
+              <input id="customAmount" type="number" min="100" step="100" placeholder="Упишите износ (RSD)">
+            </div>
+          </div>
+          <!-- ДЕСНО: дугмад -->
+          <div class="cta-stack">
+            <a id="payBtn" class="btn btn-gold" href="PAYMENT_URL">ДОНИРАЈ КАРТИЦОМ</a>
+            <a id="toRacun" class="btn btn-dark" href="#racun">ДОНИРАЈ НА РАЧУН</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ГДЕ ИДЕ НОВАЦ -->
+  <section class="section" id="gde-novac">
+    <div class="container">
+      <h2>Где иде сваки динар</h2>
+      <div class="grid3">
+        <div class="card">
+          <div class="card-title">Одбрана грађана</div>
+          Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.
+        </div>
+        <div class="card">
+          <div class="card-title">Глас народа</div>
+          Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.
+        </div>
+        <div class="card">
+          <div class="card-title">Стручна помоћ & солидарност</div>
+          Ангажовање правних стручњака и хитна помоћ најугроженијима (дугови, лекови, рачуни).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- УПЛАТА НА РАЧУН -->
+  <section id="racun" class="section">
+    <div class="container">
+      <h2>Уплата на рачун</h2>
+      <div class="bank">
+        <p>Назив: <strong>Иксан — Снага правде</strong><br>
+           Сврха: <strong>Донација — „Снага правде“</strong><br>
+           Рачун: <strong>Ускоро</strong><br>
+           Позив на број: <strong>3110/2025</strong></p>
+        <img src="ips-qr-placeholder.png" alt="IPS QR" style="max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.3);margin:8px auto 0;display:block">
+      </div>
+    </div>
+  </section>
+
+  <!-- КЊИГА -->
+  <section class="section" id="knjiga">
+    <div class="container">
+      <h2>ИКСАН — књига која помаже</h2>
+      <div class="book">
+        <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
+          <img src="iksan.webp" alt="ИКСАН — корица књиге">
+        </a>
+        <div>
+          <p class="stanza">По истинитим догађајима —
+прича о храбрости, губитку и правди.
+Сав ауторски хонорар иде у хуманитарне сврхе.</p>
+          <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 Иксан • Снага правде — Сва права задржана.
+  </div>
+</footer>
+
+<script>
+  // Checkout
+  const PAYMENT_REDIRECT_BASE = "PAYMENT_URL?amount=";
+
+  const payBtn  = document.getElementById('payBtn');
+  const chips   = document.querySelectorAll('.chip');
+  const custom  = document.getElementById('customAmount');
+  const toRacun = document.getElementById('toRacun');
+
+  function setActiveAmount(amount){
+    chips.forEach(c => c.setAttribute('aria-pressed','false'));
+    if (amount && amount >= 100){
+      payBtn.href = PAYMENT_REDIRECT_BASE + encodeURIComponent(amount);
+      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
+    } else {
+      payBtn.href = "PAYMENT_URL";
+      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
+    }
+    chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
+  }
+
+  chips.forEach(c => c.addEventListener('click', () => {
+    const val = parseInt(c.dataset.amount,10);
+    if(!isNaN(val)) { custom.value = ""; setActiveAmount(val); }
+    else { custom.focus(); }
+  }));
+
+  custom.addEventListener('input', e => {
+    const v = parseInt(e.target.value,10);
+    setActiveAmount(!isNaN(v) ? v : 0);
+  });
+
+  toRacun.addEventListener('click', (e) => {
+    const target = document.querySelector('#racun');
+    if (target){
+      e.preventDefault();
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      history.pushState(null, '', '#racun');
+    }
+  });
+
+  // Dropdown meni
+  const menu     = document.getElementById('mainMenu');
+  const menuBtn  = menu.querySelector('.menu-btn');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target)) {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.focus();
+    }
+  });
+</script>
+</body>
+</html>
