@@ -2,117 +2,170 @@
 <html lang="sr-Cyrl-RS">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Иксан • Снага правде — Почетна</title>
   <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана.">
-  <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp.png">
+  <meta name="theme-color" content="#020c1b">
+  <meta name="color-scheme" content="light">
+  <!-- Favicon -->
+  <link rel="icon" href="uspeh.webp" type="image/webp">
 
   <style>
     :root{
-      --blue:#0B2141; --blue2:#102D57;
-      --gold:#D3A451; --ink:#cfe1ff;
-      --line:rgba(255,255,255,.14);
+      --deepBlue:#020c1b;
+      --gold:#d3a451;
       --radius:16px;
+      --ink:#cfe1ff;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{
-      font-family:"Times New Roman";
+      background:var(--deepBlue);
+      color:#fff;
+      font-family:"Times New Roman",serif;
       line-height:1.7;
-      background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
-      color:var(--ink);
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
-      overflow-x:hidden;
+      font-size:110%;
     }
     a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER */
+    /* HEADER — исти као на „Донирај“ (сужен да линија додирује дно логоа) */
     header{
-      position:sticky;top:0;z-index:60;
-      background:linear-gradient(180deg,#123366,#0f295a);
-      border-bottom:1px solid var(--line);
-      backdrop-filter:blur(8px);
+      position:sticky;top:0;z-index:100;
+      background:var(--deepBlue);
+      border-bottom:1px solid rgba(255,255,255,.1);
     }
-    .head{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img {
-     height:80px;           /* увећано са 40px на 80px */
-     border-radius:12px;    /* блаже заобљен угао */
+    .head{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:4px 0 0; gap:12px; flex-wrap:nowrap;
     }
-    nav{display:flex;gap:16px;flex-wrap:wrap}
-    nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s}
-    nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
 
-    main{min-height:calc(100vh - 56px); display:flex; flex-direction:column}
+    /* ЛОГО (нови uspeh.webp, прозирна позадина) — +20% */
+    .brand{display:flex;align-items:center;flex-shrink:0;}
+    .brand img{height:161px;border-radius:10px}
+    @media (max-width:768px){
+      .brand{justify-content:center;margin:0 auto;}
+      .brand img{height:106px}
+    }
 
-    /* HERO секција */
-    .hero{padding:16px 0 0}
-    .hero-grid{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    /* НАВ — идентично стилу „Донирај“ + dropdown */
+    nav.nav{
+      display:flex;flex-direction:row;align-items:center;gap:10px;
+      padding-top:0; padding-right:8px;
+    }
+    .nav a.nav-link, .menu-btn{
+      background:var(--deepBlue); color:#fff;
+      padding:6px 9px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.2);
+      font-weight:600; font-size:0.9rem; line-height:1;
+      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
+    }
+    .nav a.nav-link:hover, .menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
 
-    h1{
+    /* Мени (dropdown) — дугачки наслови: мањи фонт, без прелома (један ред) */
+    .menu{position:relative}
+    .dropdown{
+      position:absolute; top:calc(100% + 8px); right:0;
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:12px;
+      min-width:280px;
+      padding:6px;
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
+      display:none;
+    }
+    .menu.open .dropdown{display:block}
+    @media (hover:hover){ .menu:hover .dropdown{display:block} }
+    .dropdown a{
+      display:block;
+      padding:9px 10px;
+      border-radius:8px;
       color:#fff;
-      margin-top:24px;
-      line-height:1.15;
-      font-weight:400;
-      font-size:clamp(24px,3.0vw,36px);
-      text-shadow:0 0 8px rgba(255,255,255,0.45);
+      font-weight:600;
+      font-size:14px;      /* мањи фонт за дугачке називе */
+      white-space:nowrap;  /* један ред по ставци */
+      border:1px solid transparent;
     }
-    .line2{display:block;font-size:clamp(22px,2.6vw,32px);color:var(--ink);margin-top:4px}
-    .sub{margin:8px 0 12px;max-width:740px;color:var;opacity:.95;font-size:clamp(18px,2.6vw,20px)}
+    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px}
-    .btn{
-      display:inline-block;padding:10px 22px;border-radius:40px;
-      font-weight:700;font-size:14px;text-transform:uppercase;
-      transition:.2s;cursor:pointer;text-align:center;
+    /* HERO — визуел и типографија уједначени са „Донирај“ */
+    .hero{padding:24px 0 0}
+    .hero-grid{display:grid;gap:24px}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    h1{
+      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+      font-size:clamp(23px,3vw,33px); /* уједначено са смањеним H1 на „Донирај“ */
+      text-shadow:0 0 8px rgba(255,255,255,.25);
     }
-    .btn-primary{background:#D3A451;color:#0B2141;box-shadow:0 4px 10px rgba(0,0,0,.28)}
-    .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;box-shadow:0 4px 10px rgba(0,0,0,.28)}
+    .line2{display:block;font-size:clamp(20px,2.5vw,24px);color:var(--ink);margin-top:4px}
+    .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
+
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+    .btn{
+      display:inline-block;padding:10px 22px;border-radius:40px;border:none;
+      font-weight:700;font-size:14px;letter-spacing:.3px;text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+    }
+    .btn-primary{background:var(--gold);color:var(--deepBlue)}
+    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
 
     .hero-media{
-      border-radius:16px;overflow:hidden;border:1px solid var(--line);
-      box-shadow:0 10px 24px rgba(0,0,0,.32);
-      background:#0f2552;
+      border-radius:16px;overflow:hidden;
+      border:1px solid rgba(255,255,255,.15);
+      background:var(--deepBlue);
       aspect-ratio:16/9;
       display:flex; align-items:center; justify-content:center;
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
     }
-    .hero-media img{
-      width:100%; height:100%; object-fit:cover; display:block;
-    }
+    .hero-media img{width:100%; height:100%; object-fit:cover; opacity:.9}
 
-    /* BELO PODNOŽJE */
-    .white-split{background:#fff;color:#13203a;padding:18px 0 12px;margin-top:16px;
-      border-top-left-radius:20px;border-top-right-radius:20px;box-shadow:0 -8px 24px rgba(0,0,0,.18);}
+    /* КАРТИЦЕ — стил у духу палете „Донирај“ */
+    .split{margin-top:18px}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-
     .card{
-      background:rgba(16,45,87,.88);
-      border:1px solid var(--line); border-radius:var(--radius);
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:var(--radius);
       padding:16px;
       box-shadow:0 14px 32px rgba(0,0,0,.35);
       transition:transform .2s, box-shadow .2s;
+      color:#fff;
     }
     .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
     .card h3{
-      margin:0 0 6px;
-      color:#fff;
-      line-height:1.15;
-      font-weight:400;
-      font-size:clamp(18px,2.2vw,26px);
-      text-shadow:0 0 8px rgba(255,255,255,0.45);
+      margin:0 0 6px;color:#fff;line-height:1.15;font-weight:600;
+      font-size:20px; /* уједначено са „Донирај“ card-title */
+      text-shadow:none;
     }
-    .card h3 a{color:inherit}
-    .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.7vw,16px)}
+    .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.8vw,16px)}
     .card a.more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
 
-    footer{border-top:1px solid var(--line);padding:14px 0;color:var(--ink);text-align:center;opacity:.8;font-size:.9rem}
+    footer{
+      border-top:1px solid rgba(255,255,255,.15);
+      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
+      margin-top:30px; background:var(--deepBlue);
+    }
+
+    /* 📱 МОБИЛНО — центрирање навигације и избегавање лепљења за десну ивицу */
+    @media (max-width:768px){
+      body{font-size:90%;}
+      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
+      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
+      .menu-btn{margin-right:6px;}
+    }
+
+    /* Веома уски екрани: смањи нав да стане у један ред */
+    @media (max-width:360px){
+      .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
+      nav.nav{gap:4px}
+    }
   </style>
 </head>
 
@@ -121,42 +174,59 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <img src="logo.webp.png" alt="ИКСАН лого">
-        <span>
+        <!-- NOVI LOGO: uspeh.webp (прозирна позадина) -->
+        <img src="uspeh.webp" alt="ИКСАН лого">
       </a>
     </div>
-    <nav class="nav">
-      <a href="index.html" aria-current="page">Почетна</a>
-      <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
+
+    <nav class="nav" aria-label="Главна навигација">
+      <a class="nav-link" href="index.html" aria-current="page">Почетна</a>
+      <a class="nav-link" href="kontakt.html">Контакт</a>
+
+      <!-- Dropdown MENI са новим ставкама; „Уплата на рачун“ је уклоњена -->
+      <div class="menu" id="mainMenu">
+        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
+        <div class="dropdown" id="menuList" role="menu">
+          <a href="onama.html" role="menuitem">О нама</a>
+          <a href="oblasti.html" role="menuitem">Области</a>
+          <a href="ciljevi.html" role="menuitem">Циљеви</a>
+          <a href="inicijative.html" role="menuitem">Иницијативе</a>
+          <a href="doniraj.html" role="menuitem">Донирај</a>
+          <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
+          <a href="prijavi.html" role="menuitem">Пријави</a>
+          <!-- НОВЕ ТЕМЕ (дугачки називи, мањи фонт, један ред) -->
+          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
+          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
+          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
+          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- HERO секција -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <h1>Правда није роба <span class="line2">Време је да се врати народу</span></h1>
         <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
         <div class="cta-row">
-          
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+          <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
         </div>
       </div>
 
-      <!-- ОВО ЈЕ НОВА СЛИКА -->
       <div class="hero-media">
         <img src="hero.webp" alt="Иксан — Снага правде, заједништво и достојанство">
       </div>
     </div>
   </section>
 
-  <!-- БЕЛА СЕКЦИЈА СА КАРТИЦАМА -->
-  <section class="white-split">
+  <!-- КАРТИЦЕ / ТЕМЕ -->
+  <section class="split">
     <div class="container">
       <div class="grid">
         <article class="card">
@@ -166,7 +236,7 @@
         </article>
 
         <article class="card">
-          <h3><a href="porekloimovine.html">Порекло имовине на сунце</a></h3>
+          <h3><a href="porekloimovine.html">Порекло имовине — на сунце</a></h3>
           <p>Време је да истина о имовини буде јавна — без заштите моћних.</p>
           <a class="more" href="porekloimovine.html">Погледај детаље →</a>
         </article>
@@ -179,13 +249,10 @@
 
         <article class="card">
           <h3><a href="radnicipreduzetnici.html">Радници и предузетници</a></h3>
-          <p>Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
+          <p>Без правде за раднике и једнаких услова за предузетнике — нема здраве економије.</p>
           <a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
         </article>
       </div>
-        <a href="doniraj.html" class="btn btn-primary" target="_self">ДОНИРАЈ</a>
-        <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-        <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
     </div>
   </section>
 </main>
@@ -193,5 +260,32 @@
 <footer>
   <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
 </footer>
+
+<script>
+  // Dropdown meni (исто као на „Донирај“)
+  const menu = document.getElementById('mainMenu');
+  const menuBtn = menu.querySelector('.menu-btn');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target)) {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.focus();
+    }
+  });
+</script>
 </body>
 </html>
