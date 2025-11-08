@@ -5,120 +5,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Циљеви — Иксан • Снага правде</title>
   <meta name="description" content="Циљеви удружења Иксан — Снага правде.">
-  <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp.png">
+  <meta name="theme-color" content="#020c1b">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="uspeh.webp" type="image/webp">
 
   <style>
     :root{
-      --blue:#0B2141;
-      --blue2:#102D57;
-      --lightHead1:#123366; /* svetliji header gradijent kao na „Области“ */
-      --lightHead2:#0f295a;
-      --gold:#D3A451;
-      --ink:#cfe1ff;
-      --line:rgba(255,255,255,.14);
+      --deepBlue:#020c1b;
+      --gold:#d3a451;
       --radius:16px;
+      --ink:#cfe1ff;
     }
-
     *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
     body{
-      background:linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
-      color:var(--ink);
-      font-family:"Times New Roman";
+      background:var(--deepBlue);
+      color:#fff;
+      font-family:"Times New Roman",serif;
       line-height:1.7;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
+      font-size:110%;
     }
     a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER – svetlije plavi (kao u „Области“) */
+    /* HEADER — исти као на Почетној */
     header{
-      position:sticky; top:0; z-index:60;
-      background:linear-gradient(180deg,var(--lightHead1),var(--lightHead2));
-      border-bottom:1px solid var(--line);
-      backdrop-filter:blur(8px);
+      position:sticky;top:0;z-index:100;
+      background:var(--deepBlue);
+      border-bottom:1px solid rgba(255,255,255,.1);
     }
-    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img {
-     height:80px;           /* увећано са 40px на 80px */
-     border-radius:12px;    /* блаже заобљен угао */
+    .head{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:4px 0 0; gap:12px; flex-wrap:nowrap;
+    }
+    .brand{display:flex;align-items:center;flex-shrink:0;}
+    .brand img{height:161px;border-radius:10px}
+    @media (max-width:768px){
+      .brand{justify-content:center;margin:0 auto;}
+      .brand img{height:106px}
     }
 
-    nav.nav{display:flex;gap:18px;flex-wrap:wrap}
-    nav.nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:border-color .2s,opacity .2s}
-    nav.nav a[aria-current="page"], nav.nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    /* НАВИГАЦИЈА + МЕНИ */
+    nav.nav{
+      display:flex;flex-direction:row;align-items:center;gap:10px;
+      padding-top:0; padding-right:8px;
+    }
+    .nav a.nav-link, .menu-btn{
+      background:var(--deepBlue); color:#fff;
+      padding:6px 9px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.2);
+      font-weight:600; font-size:0.9rem; line-height:1;
+      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
+    }
+    .nav a.nav-link:hover, .menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
 
-    /* HERO: naslov BELA slova + slika desno (isti raspored kao „Области“) */
-    .hero{padding:36px 0 0}
-    .hero-grid{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+    .menu{position:relative}
+    .dropdown{
+      position:absolute; top:calc(100% + 8px); right:0;
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:12px;
+      min-width:280px;
+      padding:6px;
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
+      display:none;
+    }
+    .menu.open .dropdown{display:block}
+    @media (hover:hover){ .menu:hover .dropdown{display:block} }
+    .dropdown a{
+      display:block;
+      padding:9px 10px;
+      border-radius:8px;
+      color:#fff;
+      font-weight:600;
+      font-size:14px;
+      white-space:nowrap;
+      border:1px solid transparent;
+    }
+    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
+    /* HERO — исти стил као на Почетној */
+    .hero{padding:24px 0 0}
+    .hero-grid{display:grid;gap:24px}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
     h1{
-      color:#fff; /* NASLOV BELI */
-      font-weight:400;
-      font-size:clamp(28px,3.6vw,38px);
-      line-height:1.15;
-      text-shadow:0 0 10px rgba(255,255,255,.45);
-      margin:0 0 10px;
+      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+      font-size:clamp(23px,3vw,33px);
+      text-shadow:none; /* чисто бело */
     }
-    .sub{
-      color:var(--ink); opacity:.95;
-      font-size:clamp(10px,2vw,18px);
-      max-width:740px; margin:8px 0 16px;
+    .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
+
+    /* CTA дугмад — редослед + -25% величина, један ред на мобилном */
+    .cta-row{
+      display:flex;
+      justify-content:center;
+      flex-wrap:nowrap;
+      gap:8px;
+      margin-top:14px;
     }
-    /* dugmad, identično stilu „Области“ */
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
     .btn{
-      display:inline-block;padding:12px 26px;border-radius:40px;border:none;
-      font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      display:inline-block;
+      padding:8px 18px;
+      border-radius:40px;
+      font-weight:700;
+      font-size:13px;
+      text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s;
+      cursor:pointer;
+      text-align:center;
+      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+      white-space:nowrap;
     }
-    .btn-primary{
-      background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141;
-      box-shadow:0 3px 0 #8a682a, 0 6px 18px rgba(0,0,0,.35);
-    }
-    .btn-dark{
-      background:linear-gradient(180deg,#1e3a72,#0f2552); color:#fff;
-      box-shadow:0 3px 0 #07142c, 0 6px 18px rgba(0,0,0,.35);
-    }
+    .btn-primary{background:var(--gold);color:var(--deepBlue)}
+    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
+    @media(max-width:768px){
+      .cta-row{justify-content:center;flex-wrap:nowrap;gap:6px;}
+      .btn{padding:7px 14px;font-size:12px;}
+    }
 
-    /* prostor za sliku desno */
     .hero-media{
-      border-radius:16px; overflow:hidden; border:1px solid var(--line);
-      box-shadow:0 10px 24px rgba(0,0,0,.32);
-      background:#0f2552;
-      aspect-ratio:16/9;      /* pravougaonik */
+      border-radius:16px;overflow:hidden;
+      border:1px solid rgba(255,255,255,.15);
+      background:var(--deepBlue);
+      aspect-ratio:16/9;
       display:flex; align-items:center; justify-content:center;
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
     }
-    .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
-    .hero-media .ph{
-      color:#9fb6e8; opacity:.9; font-size:14px; letter-spacing:.4px; text-transform:uppercase;
-    }
+    .hero-media img{width:100%; height:100%; object-fit:cover; opacity:.9}
 
-    /* BELO PODНОЖЈЕ sa velikom karticom (kao na „Области“) */
-    .white-split{
-      background:#fff; color:#13203a;
-      margin-top:16px; padding:22px 0 28px;
-      border-top-left-radius:20px; border-top-right-radius:20px;
-      box-shadow:0 -8px 24px rgba(0,0,0,.18);
-    }
+    /* СЕКЦИЈА СА ВЕЛИКОМ КАРТИЦОМ (циљеви) */
+    .split{margin-top:18px}
     .card-large{
-      background:rgba(16,45,87,.92);
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:22px;
-      box-shadow:0 12px 28px rgba(0,0,0,.3);
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 12px 28px rgba(0,0,0,.35);
+      color:#fff;
     }
-      margin:.6rem 0 0; line-height:0.85; font-weight:300;
-      /* ↓ smanjeno ~15% u odnosu na ranije najveće vrednosti */
-      font-size:clamp(18px,2.4vw,26px);
-      color:#ffffff;
-      text-shadow:0 2px 6px rgba(0,0,0,.4);
+    .card-large h2{
+      margin:0 0 10px;
+      color:#ffffff;         /* чисто бело */
+      line-height:1.15;
+      font-weight:700;
+      font-size:22px;
+      text-shadow:none;
+      text-align:center;
     }
-
-    /* lista ciljeva u velikoj kartici — „naslovi sa ikonicama“ */
     .goals{list-style:none;margin:0;padding:0}
     .goals li{
       color:var(--ink);
@@ -128,8 +166,6 @@
       margin-bottom:12px;
     }
     .goals li::before{flex-shrink:0; font-size:20px}
-
-    /* ikonice po liniji */
     .goals li:nth-child(1)::before{content:"🛡️"}
     .goals li:nth-child(2)::before{content:"🔥"}
     .goals li:nth-child(3)::before{content:"⚖️"}
@@ -145,17 +181,22 @@
     .goals li:nth-child(13)::before{content:"🏛️"}
     .goals li:nth-child(14)::before{content:"🤲"}
 
-    /* CTA ispod kartice */
-    .cta-wrap{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:16px}
-
     footer{
-      border-top:1px solid var(--line);
-      color:var(--ink);
-      text-align:center;
-      padding:24px 0;
-      opacity:.7;
-      font-size:.9rem;
-      margin-top:30px;
+      border-top:1px solid rgba(255,255,255,.15);
+      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
+      margin-top:30px; background:var(--deepBlue);
+    }
+
+    /* мобилни финиш */
+    @media (max-width:768px){
+      body{font-size:90%;}
+      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
+      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
+      .menu-btn{margin-right:6px;}
+    }
+    @media (max-width:360px){
+      .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
+      nav.nav{gap:4px}
     }
   </style>
 </head>
@@ -166,41 +207,56 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <img src="logo.webp.png" alt="ИКСАН лого">
-        <!-- Тражено писање поред логоа -->
-        <span>
+        <img src="uspeh.webp" alt="ИКСАН лого">
       </a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Почетна</a>
-      <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html" aria-current="page">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html">Контакт</a>
+
+    <nav class="nav" aria-label="Главна навигација">
+      <a class="nav-link" href="index.html">Почетна</a>
+      <a class="nav-link" href="kontakt.html">Контакт</a>
+
+      <div class="menu" id="mainMenu">
+        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
+        <div class="dropdown" id="menuList" role="menu">
+          <a href="onama.html" role="menuitem">О нама</a>
+          <a href="oblasti.html" role="menuitem">Области</a>
+          <a href="ciljevi.html" role="menuitem" aria-current="page">Циљеви</a>
+          <a href="inicijative.html" role="menuitem">Иницијативе</a>
+          <a href="doniraj.html" role="menuitem">Донирај</a>
+          <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
+          <a href="prijavi.html" role="menuitem">Пријави</a>
+          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
+          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
+          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
+          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
 <main>
-  <!-- HERO: naslov BELI + slika desno -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <h1>Циљеви удружења</h1>
         <p class="sub">Основни правци нашег деловања у борби за правду, достојанство и сигурност сваког грађанина.</p>
         <div class="cta-row">
+          <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
         </div>
       </div>
+
       <div class="hero-media">
-        <!-- ✅ UBACENA PRAVA SLIKA -->
         <img src="hero.webp" alt="Циљеви — Иксан • Снага правде">
       </div>
     </div>
   </section>
 
-  <!-- BELO PODNOŽJE + JEDNA VELIKA KARTICA sa svim ciljevima -->
-  <section class="white-split">
+  <!-- КАРТИЦА СА СВИМ ЦИЉЕВИМА -->
+  <section class="split">
     <div class="container">
       <article class="card-large">
         <h2>Циљеви</h2>
@@ -221,12 +277,6 @@
           <li>Хуманитарни рад и помоћ угроженим лицима.</li>
         </ul>
       </article>
-
-      <div class="cta-wrap">
-        <a href="doniraj.html" class="btn btn-primary" target="_self">ДОНИРАЈ</a>
-        <a href="kontakt.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-        <a href="kontakt.html" class="btn btn-dark">ПРИЈАВИ</a>
-      </div>
     </div>
   </section>
 </main>
@@ -237,6 +287,30 @@
   </div>
 </footer>
 
+<script>
+  // Dropdown meni
+  const menu = document.getElementById('mainMenu');
+  const menuBtn = menu.querySelector('.menu-btn');
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target)) {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.focus();
+    }
+  });
+</script>
 </body>
 </html>
-
