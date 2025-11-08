@@ -9,6 +9,9 @@
   <meta name="color-scheme" content="light">
   <link rel="icon" href="uspeh.webp" type="image/webp">
 
+  <!-- Font Awesome za ikonice -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <style>
     :root{
       --deepBlue:#020c1b;
@@ -186,6 +189,35 @@
       .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
       nav.nav{gap:4px}
     }
+
+    /* 🎵 ДРУШТВЕНЕ ИКОНЕ ИСПОД МЕНИЈА */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      padding: 8px 0 12px;
+    }
+    .social-icons a {
+      color: var(--ink);
+      font-size: 1.6rem;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: riseUp 1s ease forwards;
+    }
+    .social-icons a:nth-child(1) { animation-delay: 0.3s; }
+    .social-icons a:nth-child(2) { animation-delay: 0.5s; }
+    .social-icons a:nth-child(3) { animation-delay: 0.7s; }
+
+    @keyframes riseUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .social-icons a:hover {
+      color: var(--gold);
+      transform: translateY(-6px);
+      transition: all 0.3s ease;
+    }
   </style>
 </head>
 
@@ -219,6 +251,13 @@
         </div>
       </div>
     </nav>
+  </div>
+
+  <!-- 👇 ДРУШТВЕНЕ ИКОНЕ -->
+  <div class="social-icons">
+    <a href="https://www.tiktok.com/@tvojprofil" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.instagram.com/tvojprofil" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@Iksan_snaga_pravde" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
   </div>
 </header>
 
@@ -302,4 +341,3 @@
 </script>
 </body>
 </html>
-
