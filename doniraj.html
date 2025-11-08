@@ -7,7 +7,6 @@
   <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
-  <!-- Favicon: uspeh.webp -->
   <link rel="icon" href="uspeh.webp" type="image/webp">
   <style>
     :root{
@@ -25,13 +24,13 @@
       line-height:1.7;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
-      font-size:120%; /* desktop: +20% */
+      font-size:110%;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — sabijen da linija dodiruje dno logotipa */
+    /* HEADER — низак, линија додирује дно логотипа */
     header{
       position:sticky;top:0;z-index:100;
       background:var(--deepBlue);
@@ -39,34 +38,35 @@
     }
     .head{
       display:flex;align-items:center;justify-content:space-between;
-      padding:4px 0 0; /* gore 4px, DNO 0px -> nema vazduha ispod */
-      gap:16px;
+      padding:4px 0 0; /* нема ваздуха испод */
+      gap:12px;
+      flex-wrap:nowrap;
     }
 
-    /* LOGO */
-    .brand{display:flex;align-items:center}
-    .brand img{
-      height:134px; /* ostaje isto */
-      border-radius:12px;
-      display:block;
-    }
-    @media (max-width: 768px){
+    /* ЛОГО (+20%) */
+    .brand{display:flex;align-items:center;flex-shrink:0;}
+    .brand img{height:161px;border-radius:10px;display:block;} /* 134 → 161 */
+    @media (max-width:768px){
       .brand{justify-content:center;margin:0 auto;}
-      .brand img{height:88px}
+      .brand img{height:106px;} /* 88 → 106 */
     }
 
-    /* NAV — bez dodatnog vertikalnog “air-a” */
+    /* НАВ — ближе логотипу; одмакнуто од десне ивице на мобилном */
     nav.nav{
-      display:flex;flex-direction:row;align-items:center;gap:10px;padding-top:0; /* skidamo padding-top */
+      display:flex;flex-direction:row;align-items:center;
+      gap:10px;
+      padding-top:0;
+      padding-right:8px; /* да не залепи уз десну страну */
     }
     .nav a.nav-link,
     .menu-btn{
       background:var(--deepBlue);
       color:#fff;
-      padding:8px 14px; /* malo kompaktnije da stane bliže logou */
-      border-radius:10px;
+      padding:6px 9px;
+      border-radius:8px;
       border:1px solid rgba(255,255,255,.2);
-      font-weight:700;
+      font-weight:600;
+      font-size:0.9rem;
       line-height:1;
       transition:transform .15s ease,filter .15s ease;
       white-space:nowrap;
@@ -77,11 +77,11 @@
     /* MENI (dropdown) */
     .menu{position:relative}
     .dropdown{
-      position:absolute; top:calc(100% + 8px); left:0;
+      position:absolute; top:calc(100% + 8px); right:0;
       background:var(--deepBlue);
       border:1px solid rgba(255,255,255,.2);
       border-radius:12px;
-      min-width:288px;
+      min-width:260px;
       padding:7px;
       box-shadow:0 10px 24px rgba(0,0,0,.5);
       display:none;
@@ -90,30 +90,26 @@
     @media (hover:hover){ .menu:hover .dropdown{display:block} }
     .dropdown a{
       display:block;
-      padding:12px 14px;
+      padding:10px 12px;
       border-radius:8px;
-      border:1px solid transparent;
       color:#fff;
       font-weight:600;
     }
-    .dropdown a:hover{
-      background:rgba(255,255,255,.06);
-      border-color:rgba(255,255,255,.16);
-    }
+    .dropdown a:hover{ background:rgba(255,255,255,.06); }
 
     /* HERO */
-    .hero{padding:24px 0 0} /* manje jer je header niži */
+    .hero{padding:24px 0 0} /* мање јер је header нижи */
     .hero-grid{display:grid;gap:24px}
     @media(min-width:980px){.hero-grid{grid-template-columns:1fr 1fr}}
 
-    /* H1 SMANJEN ~30% */
+    /* H1 −30% */
     h1.title{
-      font-size:clamp(23px,3vw,34px);  /* bilo clamp(33px,4.3vw,48px) */
+      font-size:clamp(23px,3vw,33px);
       font-weight:600;
       margin-bottom:10px;
       line-height:1.25;
     }
-    p.subtitle{font-size:clamp(19px,2.4vw,22px);max-width:740px;margin-bottom:20px;color:#cfe1ff}
+    p.subtitle{font-size:clamp(16px,2vw,18px);max-width:740px;margin-bottom:18px;color:#cfe1ff}
     .hero-media{
       border-radius:16px;overflow:hidden;
       border:1px solid rgba(255,255,255,.15);
@@ -125,30 +121,29 @@
     .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
 
     /* PANEL */
-    .panel{margin-top:19px}
+    .panel{margin-top:16px}
     .panel-box{
       background:var(--deepBlue);
       border:1px solid rgba(255,255,255,.2);
       border-radius:var(--radius);
-      padding:19px;
+      padding:16px;
       box-shadow:0 10px 24px rgba(0,0,0,.5);
       color:#fff;
     }
-    .panel-grid{display:grid;gap:19px;align-items:center}
+    .panel-grid{display:grid;gap:16px;align-items:center}
     @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
 
-    .amount-grid{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(108px,1fr))}
-
-    /* DONACIJE: tanak, diskretan ispis */
+    /* ČIPOVI −25% и танак текст */
+    .amount-grid{display:grid;gap:10px;grid-template-columns:repeat(3,minmax(84px,1fr));}
     .chip{
-      padding:12px 17px;
+      padding:9px 13px;
       border-radius:999px;
       text-align:center;
       background:rgba(255,255,255,.06);
       border:1px solid rgba(255,255,255,.2);
       color:rgba(255,255,255,.88);
       font-weight:400;
-      font-size:18px;
+      font-size:14px;
       letter-spacing:.2px;
       cursor:pointer;
       transition:transform .15s ease,filter .15s ease, background .15s ease;
@@ -156,18 +151,19 @@
     .chip:hover{transform:translateY(-1px);filter:none;background:rgba(255,255,255,.10)}
     .chip[aria-pressed="true"]{background:#fff;color:var(--deepBlue);border-color:#fff;font-weight:400}
 
-    .custom{margin-top:7px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .custom input{
-      width:192px;padding:12px 14px;border-radius:12px;
+      width:160px;padding:10px 12px;border-radius:12px;
       background:rgba(255,255,255,.1);
       border:1px solid rgba(255,255,255,.3);
-      color:#fff;font-size:18px;
+      color:#fff;font-size:16px;
     }
 
-    .cta-stack{display:flex;flex-direction:column;gap:12px}
+    /* ДУГМЕ −30% и центрирано */
+    .cta-stack{display:flex;flex-direction:column;align-items:center;gap:10px;}
     .btn{
-      display:inline-block;padding:14px 31px;border-radius:40px;border:none;
-      font-weight:700;font-size:19px;letter-spacing:.3px;text-transform:uppercase;
+      display:inline-block;padding:10px 22px;border-radius:40px;border:none;
+      font-weight:700;font-size:14px;letter-spacing:.3px;text-transform:uppercase;
       transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
       box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
     }
@@ -180,65 +176,50 @@
       background:var(--deepBlue);
       border:1px solid rgba(255,255,255,.15);
       border-radius:var(--radius);
-      padding:24px;
+      padding:20px;
       box-shadow:0 12px 28px rgba(0,0,0,.5);
-      margin-top:22px;
+      margin-top:18px;
       color:#fff;
     }
-    h2{color:#fff;font-weight:700;font-size:clamp(26px,3.3vw,31px);text-align:center;margin-bottom:14px}
+    h2{color:#fff;font-weight:700;font-size:clamp(20px,2.5vw,24px);text-align:center;margin-bottom:12px}
 
-    .grid3{display:grid;gap:17px}
+    .grid3{display:grid;gap:14px}
     @media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
     .card{
       background:var(--deepBlue);
       border:1px solid rgba(255,255,255,.2);
       border-radius:14px;
-      padding:19px;
+      padding:16px;
       box-shadow:0 6px 18px rgba(0,0,0,.4);
       color:#fff;
     }
-    .card-title{font-size:26px;font-weight:700;margin-bottom:10px;color:#fff}
+    .card-title{font-size:20px;font-weight:600;margin-bottom:8px;color:#fff}
 
-    .bank{text-align:center;font-size:22px;line-height:1.9}
-
-    .book{display:grid;gap:19px;align-items:center}
-    @media(min-width:920px){.book{grid-template-columns:auto 1fr}}
-    .book img{
-      max-width:264px;border-radius:12px;
-      border:1px solid rgba(255,255,255,.2);
-      box-shadow:0 8px 18px rgba(0,0,0,.45);
-    }
-    .stanza{font-size:22px;color:#fff;line-height:1.7;white-space:pre-line}
+    .bank{text-align:center;font-size:18px;line-height:1.8}
 
     footer{
       border-top:1px solid rgba(255,255,255,.15);
       color:#fff;
       text-align:center;
-      padding:29px 0;
-      font-size:1.08rem;
-      margin-top:36px;
+      padding:24px 0;
+      font-size:.9rem;
+      margin-top:30px;
       background:var(--deepBlue);
     }
 
-    /* 📱 MOBILNO */
-    @media (max-width: 768px){
+    /* 📱 МОБИЛНО — центриран нав и одмакнут од десне ивице */
+    @media (max-width:768px){
       body{font-size:90%;}
-
-      .nav a.nav-link, .menu-btn{
-        font-size:0.85rem;
-        padding:6px 9px;
+      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
+      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
+      .menu-btn{margin-right:6px;}
+      .panel-grid{
+        grid-template-columns:1fr!important;
+        justify-items:center;
+        text-align:center;
       }
-      nav.nav{gap:6px;padding-top:0}
-
-      .dropdown{min-width:72vw}
-
-      .chip{font-size:14px;padding:9px 13px}
-      .custom input{font-size:16px;width:180px;padding:10px 12px}
-      .btn{font-size:17px;padding:12px 26px}
-
-      /* Još malo sabijemo header na mobilnom da linija nalegne uz logo */
-      .head{padding:2px 0 0;}
-      .brand img{height:82px}
+      .amount-grid{max-width:420px;margin:0 auto;}
+      .btn{width:auto;}
     }
 
     @media (prefers-color-scheme:dark){
@@ -252,10 +233,7 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html">
-        <!-- LOGO: uspeh.webp -->
-        <img src="uspeh.webp" alt="ИКСАН лого">
-      </a>
+      <a href="index.html"><img src="uspeh.webp" alt="ИКСАН лого"></a>
     </div>
 
     <nav class="nav" aria-label="Главна навигација">
@@ -286,8 +264,8 @@
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <h1 class="title">Док неко губи све — твоје мало је његоба нада, његов спас</h1>
-        <p class="subtitle">„Наши рођени,комшије,пријатељи,то су људи,то смо ми.“</p>
+        <h1 class="title">Док неко губи све — твоје мало је његова нада, његов спас</h1>
+        <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“</p>
       </div>
       <div class="hero-media">
         <img src="hero.webp" alt="Људи заједно — Снага правде">
@@ -300,7 +278,6 @@
     <div class="container">
       <div class="panel-box">
         <div class="panel-grid">
-          <!-- ЛЕВО: износи -->
           <div>
             <div class="amount-grid" role="group" aria-label="Предложени износи">
               <button class="chip" data-amount="500">500 RSD</button>
@@ -314,7 +291,7 @@
               <input id="customAmount" type="number" min="100" step="100" placeholder="Упишите износ (RSD)">
             </div>
           </div>
-          <!-- ДЕСНО: дугмад -->
+
           <div class="cta-stack">
             <a id="payBtn" class="btn btn-gold" href="PAYMENT_URL">ДОНИРАЈ КАРТИЦОМ</a>
             <a id="toRacun" class="btn btn-dark" href="#racun">ДОНИРАЈ НА РАЧУН</a>
@@ -354,7 +331,7 @@
            Сврха: <strong>Донација — „Снага правде“</strong><br>
            Рачун: <strong>Ускоро</strong><br>
            Позив на број: <strong>3110/2025</strong></p>
-        <img src="ips-qr-placeholder.png" alt="IPS QR" style="max-width:264px;border-radius:12px;border:1px solid rgba(255,255,255,.3);margin:10px auto 0;display:block">
+        <img src="ips-qr-placeholder.png" alt="IPS QR" style="max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.3);margin:8px auto 0;display:block">
       </div>
     </div>
   </section>
@@ -368,9 +345,7 @@
           <img src="iksan.webp" alt="ИКСАН — корица књиге">
         </a>
         <div>
-          <p class="stanza">По истинитим догађајима —
-прича о храбрости, губитку и правди.
-Сав ауторски хонорар иде у хуманитарне сврхе.</p>
+          <p class="stanza">По истинитим догађајима — прича о храбрости, губитку и правди. Сав ауторски хонорар иде у хуманитарне сврхе.</p>
           <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
         </div>
       </div>
@@ -400,6 +375,7 @@
       payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
     } else {
       payBtn.href = "PAYMENT_URL";
+      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
     }
     chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
   }
