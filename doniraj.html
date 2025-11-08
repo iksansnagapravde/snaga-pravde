@@ -7,11 +7,11 @@
   <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
-  <link rel="icon" href="pro.webp">
+  <link rel="icon" href="uspeh.webp">
   <style>
     :root{
-      --deepBlue:#020c1b;   /* tamno najtamnije plava (svuda) */
-      --gold:#d3a451;       /* akcenat za selektovano u nav-u */
+      --deepBlue:#020c1b;
+      --gold:#d3a451;
       --radius:16px;
     }
 
@@ -40,16 +40,16 @@
       padding:10px 0; gap:20px;
     }
 
-    /* LOGO: pro.webp, +50% */
-    .brand img{height:150px;border-radius:12px}
+    /* LOGO: uspeh.webp (−25%) */
+    .brand img{height:112px;border-radius:12px}
 
-    /* NAV: vertikalno desno (Почетна, Контакт, Мени) */
+    /* NAV: HORIZONTALNO (Почетна, Контакт, Мени) */
     nav.nav{
       display:flex;
-      flex-direction:column;         /* VERTIKALNO */
-      align-items:flex-start;        /* uz desnu stranu kontejnera */
+      flex-direction:row;      /* HORIZONTALNO */
+      align-items:center;
       gap:10px;
-      padding-top:6px;               /* malo poravnanje u odnosu na vrh logotipa */
+      padding-top:6px;
     }
 
     .nav a.nav-link,
@@ -70,7 +70,7 @@
     /* MENI (dropdown) */
     .menu{position:relative}
     .dropdown{
-      position:absolute; top:calc(100% + 8px); left:0;   /* otvara se ispod dugmeta na levo poravnanje */
+      position:absolute; top:calc(100% + 8px); left:0;
       background:var(--deepBlue);
       border:1px solid rgba(255,255,255,.2);
       border-radius:12px;
@@ -201,10 +201,11 @@
       background:var(--deepBlue);
     }
 
-    /* Mobilno ponašanje (vertikalni nav već dobro radi) */
+    /* Mobilno ponašanje */
     @media (max-width: 768px){
-      .brand img{height:120px}
+      .brand img{height:90px}           /* 120 → 90 (−25%) */
       .dropdown{min-width:70vw}
+      nav.nav{gap:8px}
     }
 
     /* Bez tamnog moda inverzije */
@@ -220,13 +221,13 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <!-- LOGO: pro.webp, +50% -->
-        <img src="pro.webp" alt="ИКСАН лого">
+        <!-- LOGO: uspeh.webp (transparent) -->
+        <img src="uspeh.webp" alt="ИКСАН лого">
       </a>
     </div>
 
     <nav class="nav" aria-label="Главна навигација">
-      <!-- Redosled: Пočetna, Kontakt, Meni (vertikalno) -->
+      <!-- Хоризонтално: Почетна, Контакт, Мени -->
       <a class="nav-link" href="index.html">Почетна</a>
       <a class="nav-link" href="kontakt.html">Контакт</a>
 
@@ -234,16 +235,13 @@
       <div class="menu" id="mainMenu">
         <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
         <div class="dropdown" id="menuList" role="menu">
-          <!-- gornji naslovi -->
           <a href="onama.html" role="menuitem">О нама</a>
           <a href="oblasti.html" role="menuitem">Области</a>
           <a href="ciljevi.html" role="menuitem">Циљеви</a>
           <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <!-- ključno -->
           <a href="doniraj.html" role="menuitem">Донирај</a>
           <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
           <a href="prijavi.html" role="menuitem">Пријави</a>
-          <!-- sidra sa ove stranice -->
           <a href="#racun" role="menuitem">Уплата на рачун</a>
           <a href="#knjiga" role="menuitem">Књига</a>
           <a href="#gde-novac" role="menuitem">Где иде сваки динар</a>
@@ -397,7 +395,7 @@
     }
   });
 
-  // Dropdown meni: tap/click toggle + klik van menija zatvara
+  // Dropdown meni
   const menu     = document.getElementById('mainMenu');
   const menuBtn  = menu.querySelector('.menu-btn');
 
