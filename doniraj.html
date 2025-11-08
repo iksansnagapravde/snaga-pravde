@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Донација — Иксан • Снага правде</title>
-  <meta name="description" content="Док неко губи битку — ти можеш бити његов спас. Подржи рад Иксан — Снага правде. Док чекамо рачун удружења, донације привремено примамо на рачун законског заступника уз јасну напомену." />
+  <meta name="description" content="Подржи рад Иксан — Снага правде. До објаве званичног рачуна, на располагању је уплатница са подацима удружења." />
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="uspeh.webp" type="image/webp">
@@ -93,48 +93,48 @@
       padding:20px; box-shadow:0 12px 28px rgba(0,0,0,.5); margin-top:18px; color:#fff;
     }
     h2{color:#fff;font-weight:700;font-size:clamp(20px,2.5vw,24px);text-align:center;margin-bottom:12px}
-    .grid3{display:grid;gap:14px}
-    @media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
-    .card{
-      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2); border-radius:14px;
-      padding:16px; box-shadow:0 6px 18px rgba(0,0,0,.4); color:#fff;
-    }
-    .card-title{font-size:20px;font-weight:600;margin-bottom:8px;color:#fff}
 
-    .bank{text-align:center;font-size:18px;line-height:1.8}
-
-    /* подаци + копирање */
-    .kv{display:grid;gap:10px;margin-top:8px}
-    .kv .row{display:flex;gap:8px;align-items:stretch}
-    .kv .label{
-      flex:0 0 160px;background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:10px 12px;font-weight:700;color:#fff
+    /* --- УПЛАТНИЦА (модерна плава) --- */
+    .uplatnica{
+      margin-top:12px; border:1px solid rgba(255,255,255,.25); border-radius:14px;
+      background:rgba(255,255,255,.05);
+      box-shadow:0 6px 18px rgba(0,0,0,.4);
+      overflow:hidden;
     }
-    .kv .value{
-      flex:1;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;
-      border-radius:10px;padding:10px 12px;overflow:auto
+    .u-head{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.2);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
     }
-    .copy{
-      flex:0 0 auto;border:1px solid rgba(255,255,255,.25);background:var(--deepBlue);
-      color:#fff;border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer
+    .u-title{font-weight:700;letter-spacing:.3px}
+    .u-title small{display:block;color:var(--ink);font-weight:600}
+    .u-amount{display:grid;grid-template-columns:auto auto;gap:8px;align-items:center}
+    .u-amount .box{
+      min-width:120px;border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:8px 10px;text-align:right;background:rgba(255,255,255,.06)
     }
-
-    .slip{
-      border:1px solid rgba(255,255,255,.2); border-radius:var(--radius);
-      padding:14px; background:rgba(255,255,255,.05); margin-top:10px;
+    .u-amount .valuta{
+      border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:8px 10px;background:rgba(255,255,255,.06);min-width:72px;text-align:center
     }
-    .slip h4{margin:0 0 10px;font-size:18px}
-    .slip .f{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .slip .f label{font-weight:700;color:var(--ink)}
-    .slip .f div{
-      border:1px dashed rgba(255,255,255,.25); border-radius:8px;padding:8px 10px;color:#fff;
-      background:rgba(255,255,255,.06)
+    .u-grid{display:grid;gap:10px;padding:12px;grid-template-columns:1.4fr 1.2fr}
+    .u-field{display:grid;gap:6px;grid-template-rows:auto auto}
+    .u-label{color:var(--ink);font-weight:700;font-size:.95rem}
+    .u-value{
+      border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);
+      color:#fff;border-radius:10px;padding:10px 12px;min-height:46px;display:flex;align-items:center
     }
-
-    .note{border-left:4px solid var(--gold);padding:8px 12px;background:rgba(255,255,255,.06);border-radius:10px;margin-top:12px}
+    .u-wide{grid-column:1 / -1}
+    .u-foot{
+      border-top:1px dashed rgba(255,255,255,.25);
+      padding:10px 14px;color:var(--ink);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
+    }
+    .badge-gold{
+      display:inline-block;background:var(--gold);color:var(--deepBlue);
+      border-radius:999px;padding:4px 10px;font-weight:800;letter-spacing:.2px;text-transform:uppercase;font-size:.75rem
+    }
 
     footer{border-top:1px solid var(--line);color:#fff;text-align:center;padding:24px 0;font-size:.9rem;margin-top:30px;background:var(--deepBlue)}
 
+    @media (max-width:900px){ .u-grid{grid-template-columns:1fr} .u-amount .box{min-width:0} }
     @media (max-width:768px){
       body{font-size:90%}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0}
@@ -143,7 +143,6 @@
       .panel-grid{grid-template-columns:1fr!important;justify-items:center;text-align:center}
       .amount-grid{max-width:420px;margin:0 auto}
       .btn{width:auto}
-      .slip .f{grid-template-columns:1fr}
     }
     @media (prefers-color-scheme:dark){html,body{background:var(--deepBlue)!important;color:#fff!important}}
   </style>
@@ -171,8 +170,7 @@
           <a href="doniraj.html" role="menuitem" aria-current="page">Донирај</a>
           <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
           <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="#racun" role="menuitem">Уплата на рачун</a>
-          <a href="#knjiga" role="menuitem">Књига</a>
+          <a href="#racun" role="menuitem">Уплатница</a>
           <a href="#gde-novac" role="menuitem">Где иде сваки динар</a>
         </div>
       </div>
@@ -215,7 +213,7 @@
 
           <div class="cta-stack">
             <a id="payBtn" class="btn btn-gold" href="PAYMENT_URL">ДОНИРАЈ КАРТИЦОМ</a>
-            <a id="toRacun" class="btn btn-dark" href="#racun">ДОНИРАЈ НА РАЧУН</a>
+            <a id="toRacun" class="btn btn-dark" href="#racun">УПЛАТНИЦА</a>
           </div>
         </div>
       </div>
@@ -234,80 +232,58 @@
     </div>
   </section>
 
-  <!-- УПЛАТА НА РАЧУН (привремено на рачун заступника) -->
+  <!-- УПЛАТНИЦА (без жиро рачуна) -->
   <section id="racun" class="section">
     <div class="container">
-      <h2>Уплата на рачун (привремено)</h2>
+      <h2>Уплатница</h2>
 
-      <div class="card" style="margin-top:6px">
-        <h3 style="margin:0 0 8px;font-size:20px">Подаци за уплату — ProCredit Bank a.d. Београд</h3>
-        <div class="kv">
-          <div class="row">
-            <div class="label">Прималац</div>
-            <div class="value" id="v-primalac">Закoнски заступник УГ „Иксан — Снага правде“</div>
-            <button class="copy" data-target="v-primalac">Копирај</button>
+      <div class="uplatnica">
+        <div class="u-head">
+          <div class="u-title">
+            НАЛОГ ЗА УПЛАТУ
+            <small>Иксан — Снага правде</small>
           </div>
-          <div class="row">
-            <div class="label">Сврха / Напомена</div>
-            <div class="value" id="v-svrha">Донација за Удружење грађана Иксан — Снага правде</div>
-            <button class="copy" data-target="v-svrha">Копирај</button>
-          </div>
-          <div class="row">
-            <div class="label">Позив на број</div>
-            <div class="value" id="v-poziv">3110/2025</div>
-            <button class="copy" data-target="v-poziv">Копирај</button>
-          </div>
-          <div class="row">
-            <div class="label">Жиро рачун</div>
-            <div class="value" id="v-racun">220823000021038788</div>
-            <button class="copy" data-target="v-racun">Копирај</button>
+          <div class="u-amount">
+            <div class="box" id="u-iznos">___.___,00</div>
+            <div class="valuta">RSD</div>
           </div>
         </div>
 
-        <div class="note">
-          <p style="margin:0"><strong>Важно:</strong> Средства се примају <em>привремено</em> на рачун законског заступника и
-            <strong>у целости ће бити пренета</strong> на званичан рачун удружења одмах по отварању. Свака уплата се евидентира и транспарентно приказује.</p>
-        </div>
-      </div>
+        <div class="u-grid">
+          <div class="u-field u-wide">
+            <div class="u-label">Прималац</div>
+            <div class="u-value">Удружење грађана „Иксан — Снага правде“</div>
+          </div>
 
-      <div class="card" style="margin-top:12px">
-        <h3 style="margin:0 0 8px;font-size:20px">Пример попуњене уплатнице</h3>
-        <div class="slip">
-          <h4 style="color:#fff">УПЛАТНИЦА — пример</h4>
-          <div class="f">
-            <div><label>Прималац</label><div>Закoнски заступник УГ „Иксан — Снага правде“</div></div>
-            <div><label>Банка</label><div>ProCredit Bank a.d. Београд</div></div>
-            <div><label>Жиро рачун</label><div>220823000021038788</div></div>
-            <div><label>Сврха / Напомена</label><div>Донација за Удружење грађана Иксан — Снага правде</div></div>
-            <div><label>Позив на број</label><div>3110/2025</div></div>
-            <div><label>Износ</label><div>_______ RSD</div></div>
+          <div class="u-field u-wide">
+            <div class="u-label">Сврха / Напомена</div>
+            <div class="u-value">Донација</div>
+          </div>
+
+          <div class="u-field">
+            <div class="u-label">Позив на број</div>
+            <div class="u-value">3110/2025</div>
+          </div>
+
+          <div class="u-field">
+            <div class="u-label">Жиро рачун</div>
+            <div class="u-value">УСКОРО</div>
+          </div>
+
+          <div class="u-field">
+            <div class="u-label">Валута</div>
+            <div class="u-value">RSD</div>
+          </div>
+
+          <div class="u-field u-wide">
+            <div class="u-label">Информација</div>
+            <div class="u-value">Рачун удружења је у поступку отварања — биће објављен чим буде активан.</div>
           </div>
         </div>
 
-        <p style="margin-top:10px;color:var(--ink)">
-          IPS QR: у ProCredit mBanking/eBanking можеш да <em>креираш IPS QR за ове податке</em> и извезеш га као слику.
-          Када га имаш, замени слику испод датотеком (нпр. <code>ips-procredit.png</code>).
-        </p>
-
-        <!-- IPS QR: замени ову слику стварним QR-ом који извезеш из ProCredit апликације -->
-        <div style="display:flex;justify-content:center;margin-top:8px">
-          <img src="ips-procredit.png" alt="IPS QR — ProCredit Bank" style="max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.3)">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- КЊИГА -->
-  <section class="section" id="knjiga">
-    <div class="container">
-      <h2>ИКСАН — књига која помаже</h2>
-      <div class="book" style="display:grid;gap:12px;grid-template-columns:120px 1fr;align-items:center">
-        <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
-          <img src="iksan.webp" alt="ИКСАН — корица књиге" style="border-radius:10px;border:1px solid rgba(255,255,255,.25)">
-        </a>
-        <div>
-          <p class="stanza" style="color:var(--ink);margin-bottom:10px">По истинитим догађајима — прича о храбрости, губитку и правди. Сав ауторски хонорар иде у хуманитарне сврхе.</p>
-          <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
+        <div class="u-foot">
+          <span class="badge-gold">Донација</span>
+          <span>Хвала на подршци.</span>
         </div>
       </div>
     </div>
@@ -319,22 +295,24 @@
 </footer>
 
 <script>
-  // Checkout
   const PAYMENT_REDIRECT_BASE = "PAYMENT_URL?amount=";
 
   const payBtn  = document.getElementById('payBtn');
   const chips   = document.querySelectorAll('.chip');
   const custom  = document.getElementById('customAmount');
   const toRacun = document.getElementById('toRacun');
+  const uIznos  = document.getElementById('u-iznos');
 
   function setActiveAmount(amount){
     chips.forEach(c => c.setAttribute('aria-pressed','false'));
     if (amount && amount >= 100){
       payBtn.href = PAYMENT_REDIRECT_BASE + encodeURIComponent(amount);
       payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
+      if(uIznos){ uIznos.textContent = amount.toLocaleString('sr-RS') + ",00"; }
     } else {
       payBtn.href = "PAYMENT_URL";
       payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
+      if(uIznos){ uIznos.textContent = "___.___,00"; }
     }
     chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
   }
@@ -350,7 +328,7 @@
     setActiveAmount(!isNaN(v) ? v : 0);
   });
 
-  // Скрол до рачуна, центрирано
+  // Скрол до уплатнице
   toRacun.addEventListener('click', (e) => {
     const target = document.querySelector('#racun');
     if (target){
@@ -360,23 +338,20 @@
     }
   });
 
-  // Dropdown meni
+  // Dropdown
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu?.querySelector('.menu-btn');
-
   if (menu && menuBtn) {
     menuBtn.addEventListener('click', () => {
       const isOpen = menu.classList.toggle('open');
       menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
-
     document.addEventListener('click', (e) => {
       if (!menu.contains(e.target)) {
         menu.classList.remove('open');
         menuBtn.setAttribute('aria-expanded','false');
       }
     });
-
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         menu.classList.remove('open');
@@ -385,20 +360,6 @@
       }
     });
   }
-
-  // Copy to clipboard
-  document.querySelectorAll('.copy').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      const id = btn.getAttribute('data-target');
-      const el = document.getElementById(id);
-      if(!el) return;
-      const text = el.innerText.trim();
-      navigator.clipboard.writeText(text).then(()=>{
-        btn.textContent = 'Копирано ✓';
-        setTimeout(()=>btn.textContent='Копирај', 1200);
-      });
-    });
-  });
 </script>
 </body>
 </html>
