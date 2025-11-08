@@ -4,227 +4,148 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Донација — Иксан • Снага правде</title>
-  <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
+  <meta name="description" content="Док неко губи битку — ти можеш бити његов спас. Подржи рад Иксан — Снага правде. Док чекамо рачун удружења, донације привремено примамо на рачун законског заступника уз јасну напомену." />
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="uspeh.webp" type="image/webp">
   <style>
-    :root{
-      --deepBlue:#020c1b;
-      --gold:#d3a451;
-      --radius:16px;
-    }
-
+    :root{ --deepBlue:#020c1b; --gold:#d3a451; --radius:16px; --ink:#cfe1ff; --line:rgba(255,255,255,.15); }
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{
-      background:var(--deepBlue);
-      color:#ffffff;
-      font-family:"Times New Roman",serif;
-      line-height:1.7;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
-      font-size:110%;
+      background:var(--deepBlue); color:#ffffff; font-family:"Times New Roman",serif;
+      line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      font-size:110%; overflow-x:hidden;
     }
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — низак, линија додирује дно логотипа */
-    header{
-      position:sticky;top:0;z-index:100;
-      background:var(--deepBlue);
-      border-bottom:1px solid rgba(255,255,255,.1);
-    }
-    .head{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:4px 0 0; /* нема ваздуха испод */
-      gap:12px;
-      flex-wrap:nowrap;
-    }
+    header{position:sticky;top:0;z-index:100;background:var(--deepBlue);border-bottom:1px solid rgba(255,255,255,.1)}
+    .head{display:flex;align-items:center;justify-content:space-between;padding:4px 0 0;gap:12px;flex-wrap:nowrap}
+    .brand{display:flex;align-items:center;flex-shrink:0}
+    .brand img{height:161px;border-radius:10px}
+    @media (max-width:768px){.brand{justify-content:center;margin:0 auto}.brand img{height:106px}}
 
-    /* ЛОГО (+20%) */
-    .brand{display:flex;align-items:center;flex-shrink:0;}
-    .brand img{height:161px;border-radius:10px;display:block;} /* 134 → 161 */
-    @media (max-width:768px){
-      .brand{justify-content:center;margin:0 auto;}
-      .brand img{height:106px;} /* 88 → 106 */
-    }
-
-    /* НАВ — ближе логотипу; одмакнуто од десне ивице на мобилном */
-    nav.nav{
-      display:flex;flex-direction:row;align-items:center;
-      gap:10px;
-      padding-top:0;
-      padding-right:8px; /* да не залепи уз десну страну */
-    }
-    .nav a.nav-link,
-    .menu-btn{
-      background:var(--deepBlue);
-      color:#fff;
-      padding:6px 9px;
-      border-radius:8px;
-      border:1px solid rgba(255,255,255,.2);
-      font-weight:600;
-      font-size:0.9rem;
-      line-height:1;
-      transition:transform .15s ease,filter .15s ease;
-      white-space:nowrap;
+    nav.nav{display:flex;align-items:center;gap:10px;padding-right:8px}
+    .nav a.nav-link,.menu-btn{
+      background:var(--deepBlue); color:#fff; padding:6px 9px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.2); font-weight:600; font-size:0.9rem; line-height:1;
+      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
     }
     .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
     .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
-
-    /* MENI (dropdown) */
     .menu{position:relative}
     .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0;
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:12px;
-      min-width:260px;
-      padding:7px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5);
-      display:none;
+      position:absolute; top:calc(100% + 8px); right:0; background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2); border-radius:12px; min-width:260px; padding:7px;
+      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
     }
     .menu.open .dropdown{display:block}
     @media (hover:hover){ .menu:hover .dropdown{display:block} }
-    .dropdown a{
-      display:block;
-      padding:10px 12px;
-      border-radius:8px;
-      color:#fff;
-      font-weight:600;
-    }
-    .dropdown a:hover{ background:rgba(255,255,255,.06); }
+    .dropdown a{display:block;padding:10px 12px;border-radius:8px;color:#fff;font-weight:600}
+    .dropdown a:hover{background:rgba(255,255,255,.06)}
 
-    /* HERO */
-    .hero{padding:24px 0 0} /* мање јер је header нижи */
+    .hero{padding:24px 0 0}
     .hero-grid{display:grid;gap:24px}
     @media(min-width:980px){.hero-grid{grid-template-columns:1fr 1fr}}
-
-    /* H1 −30% */
-    h1.title{
-      font-size:clamp(23px,3vw,33px);
-      font-weight:600;
-      margin-bottom:10px;
-      line-height:1.25;
-    }
-    p.subtitle{font-size:clamp(16px,2vw,18px);max-width:740px;margin-bottom:18px;color:#cfe1ff}
+    h1.title{font-size:clamp(23px,3vw,33px);font-weight:600;margin-bottom:10px;line-height:1.25}
+    p.subtitle{font-size:clamp(16px,2vw,18px);max-width:740px;margin-bottom:18px;color:var(--ink)}
     .hero-media{
-      border-radius:16px;overflow:hidden;
-      border:1px solid rgba(255,255,255,.15);
-      background:var(--deepBlue);
-      aspect-ratio:16/9;
-      display:flex;align-items:center;justify-content:center;
+      border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.15);
+      background:var(--deepBlue);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
       box-shadow:0 6px 20px rgba(0,0,0,.5);
     }
     .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
 
-    /* PANEL */
     .panel{margin-top:16px}
     .panel-box{
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5);
-      color:#fff;
+      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2); border-radius:var(--radius);
+      padding:16px; box-shadow:0 10px 24px rgba(0,0,0,.5); color:#fff;
     }
     .panel-grid{display:grid;gap:16px;align-items:center}
     @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
-
-    /* ČIPOVI −25% и танак текст */
-    .amount-grid{display:grid;gap:10px;grid-template-columns:repeat(3,minmax(84px,1fr));}
+    .amount-grid{display:grid;gap:10px;grid-template-columns:repeat(3,minmax(84px,1fr))}
     .chip{
-      padding:9px 13px;
-      border-radius:999px;
-      text-align:center;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.2);
-      color:rgba(255,255,255,.88);
-      font-weight:400;
-      font-size:14px;
-      letter-spacing:.2px;
-      cursor:pointer;
-      transition:transform .15s ease,filter .15s ease, background .15s ease;
+      padding:9px 13px;border-radius:999px;text-align:center;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.88);font-weight:400;font-size:14px;
+      letter-spacing:.2px;cursor:pointer;transition:transform .15s,filter .15s,background .15s;
     }
-    .chip:hover{transform:translateY(-1px);filter:none;background:rgba(255,255,255,.10)}
-    .chip[aria-pressed="true"]{background:#fff;color:var(--deepBlue);border-color:#fff;font-weight:400}
-
+    .chip:hover{transform:translateY(-1px);background:rgba(255,255,255,.10)}
+    .chip[aria-pressed="true"]{background:#fff;color:var(--deepBlue);border-color:#fff}
     .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .custom input{
-      width:160px;padding:10px 12px;border-radius:12px;
-      background:rgba(255,255,255,.1);
-      border:1px solid rgba(255,255,255,.3);
-      color:#fff;font-size:16px;
+      width:160px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.3);color:#fff;font-size:16px;
     }
-
-    /* ДУГМЕ −30% и центрирано */
-    .cta-stack{display:flex;flex-direction:column;align-items:center;gap:10px;}
+    .cta-stack{display:flex;flex-direction:column;align-items:center;gap:10px}
     .btn{
-      display:inline-block;padding:10px 22px;border-radius:40px;border:none;
-      font-weight:700;font-size:14px;letter-spacing:.3px;text-transform:uppercase;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
-      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+      display:inline-block;padding:10px 22px;border-radius:40px;border:none;font-weight:700;font-size:14px;
+      letter-spacing:.3px;text-transform:uppercase;transition:transform .2s, box-shadow .2s; cursor:pointer;
+      text-align:center; box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
     }
     .btn-gold{background:var(--gold);color:var(--deepBlue)}
     .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
 
-    /* SEKCIJE */
     .section{
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.15);
-      border-radius:var(--radius);
-      padding:20px;
-      box-shadow:0 12px 28px rgba(0,0,0,.5);
-      margin-top:18px;
-      color:#fff;
+      background:var(--deepBlue); border:1px solid rgba(255,255,255,.15); border-radius:var(--radius);
+      padding:20px; box-shadow:0 12px 28px rgba(0,0,0,.5); margin-top:18px; color:#fff;
     }
     h2{color:#fff;font-weight:700;font-size:clamp(20px,2.5vw,24px);text-align:center;margin-bottom:12px}
-
     .grid3{display:grid;gap:14px}
     @media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
     .card{
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:14px;
-      padding:16px;
-      box-shadow:0 6px 18px rgba(0,0,0,.4);
-      color:#fff;
+      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2); border-radius:14px;
+      padding:16px; box-shadow:0 6px 18px rgba(0,0,0,.4); color:#fff;
     }
     .card-title{font-size:20px;font-weight:600;margin-bottom:8px;color:#fff}
 
     .bank{text-align:center;font-size:18px;line-height:1.8}
 
-    footer{
-      border-top:1px solid rgba(255,255,255,.15);
-      color:#fff;
-      text-align:center;
-      padding:24px 0;
-      font-size:.9rem;
-      margin-top:30px;
-      background:var(--deepBlue);
+    /* подаци + копирање */
+    .kv{display:grid;gap:10px;margin-top:8px}
+    .kv .row{display:flex;gap:8px;align-items:stretch}
+    .kv .label{
+      flex:0 0 160px;background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:10px 12px;font-weight:700;color:#fff
+    }
+    .kv .value{
+      flex:1;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;
+      border-radius:10px;padding:10px 12px;overflow:auto
+    }
+    .copy{
+      flex:0 0 auto;border:1px solid rgba(255,255,255,.25);background:var(--deepBlue);
+      color:#fff;border-radius:10px;padding:8px 10px;font-weight:700;cursor:pointer
     }
 
-    /* 📱 МОБИЛНО — центриран нав и одмакнут од десне ивице */
+    .slip{
+      border:1px solid rgba(255,255,255,.2); border-radius:var(--radius);
+      padding:14px; background:rgba(255,255,255,.05); margin-top:10px;
+    }
+    .slip h4{margin:0 0 10px;font-size:18px}
+    .slip .f{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .slip .f label{font-weight:700;color:var(--ink)}
+    .slip .f div{
+      border:1px dashed rgba(255,255,255,.25); border-radius:8px;padding:8px 10px;color:#fff;
+      background:rgba(255,255,255,.06)
+    }
+
+    .note{border-left:4px solid var(--gold);padding:8px 12px;background:rgba(255,255,255,.06);border-radius:10px;margin-top:12px}
+
+    footer{border-top:1px solid var(--line);color:#fff;text-align:center;padding:24px 0;font-size:.9rem;margin-top:30px;background:var(--deepBlue)}
+
     @media (max-width:768px){
-      body{font-size:90%;}
-      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
-      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
-      .menu-btn{margin-right:6px;}
-      .panel-grid{
-        grid-template-columns:1fr!important;
-        justify-items:center;
-        text-align:center;
-      }
-      .amount-grid{max-width:420px;margin:0 auto;}
-      .btn{width:auto;}
+      body{font-size:90%}
+      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0}
+      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0}
+      .menu-btn{margin-right:6px}
+      .panel-grid{grid-template-columns:1fr!important;justify-items:center;text-align:center}
+      .amount-grid{max-width:420px;margin:0 auto}
+      .btn{width:auto}
+      .slip .f{grid-template-columns:1fr}
     }
-
-    @media (prefers-color-scheme:dark){
-      html,body{background:var(--deepBlue)!important;color:#fff!important}
-    }
+    @media (prefers-color-scheme:dark){html,body{background:var(--deepBlue)!important;color:#fff!important}}
   </style>
 </head>
 
@@ -247,8 +168,8 @@
           <a href="oblasti.html" role="menuitem">Области</a>
           <a href="ciljevi.html" role="menuitem">Циљеви</a>
           <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
+          <a href="doniraj.html" role="menuitem" aria-current="page">Донирај</a>
+          <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
           <a href="prijavi.html" role="menuitem">Пријави</a>
           <a href="#racun" role="menuitem">Уплата на рачун</a>
           <a href="#knjiga" role="menuitem">Књига</a>
@@ -265,7 +186,7 @@
     <div class="container hero-grid">
       <div>
         <h1 class="title">Док неко губи све — твоје мало је његова нада, његов спас</h1>
-        <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“</p>
+        <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“ Подржи рад — сваки динар иде на правну помоћ, истраживања и јавне иницијативе.</p>
       </div>
       <div class="hero-media">
         <img src="hero.webp" alt="Људи заједно — Снага правде">
@@ -306,32 +227,72 @@
     <div class="container">
       <h2>Где иде сваки динар</h2>
       <div class="grid3">
-        <div class="card">
-          <div class="card-title">Одбрана грађана</div>
-          Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.
-        </div>
-        <div class="card">
-          <div class="card-title">Глас народа</div>
-          Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.
-        </div>
-        <div class="card">
-          <div class="card-title">Стручна помоћ & солидарност</div>
-          Ангажовање правних стручњака и хитна помоћ најугроженијима.
-        </div>
+        <div class="card"><div class="card-title">Одбрана грађана</div>Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.</div>
+        <div class="card"><div class="card-title">Глас народа</div>Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.</div>
+        <div class="card"><div class="card-title">Стручна помоћ & солидарност</div>Ангажовање правних стручњака и хитна помоћ најугроженијима.</div>
       </div>
     </div>
   </section>
 
-  <!-- УПЛАТА НА РАЧУН -->
+  <!-- УПЛАТА НА РАЧУН (привремено на рачун заступника) -->
   <section id="racun" class="section">
     <div class="container">
-      <h2>Уплата на рачун</h2>
-      <div class="bank">
-        <p>Назив: <strong>Иксан — Снага правде</strong><br>
-           Сврха: <strong>Донација — „Снага правде“</strong><br>
-           Рачун: <strong>Ускоро</strong><br>
-           Позив на број: <strong>3110/2025</strong></p>
-        <img src="ips-qr-placeholder.png" alt="IPS QR" style="max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.3);margin:8px auto 0;display:block">
+      <h2>Уплата на рачун (привремено)</h2>
+
+      <div class="card" style="margin-top:6px">
+        <h3 style="margin:0 0 8px;font-size:20px">Подаци за уплату — ProCredit Bank a.d. Београд</h3>
+        <div class="kv">
+          <div class="row">
+            <div class="label">Прималац</div>
+            <div class="value" id="v-primalac">Закoнски заступник УГ „Иксан — Снага правде“</div>
+            <button class="copy" data-target="v-primalac">Копирај</button>
+          </div>
+          <div class="row">
+            <div class="label">Сврха / Напомена</div>
+            <div class="value" id="v-svrha">Донација за Удружење грађана Иксан — Снага правде</div>
+            <button class="copy" data-target="v-svrha">Копирај</button>
+          </div>
+          <div class="row">
+            <div class="label">Позив на број</div>
+            <div class="value" id="v-poziv">3110/2025</div>
+            <button class="copy" data-target="v-poziv">Копирај</button>
+          </div>
+          <div class="row">
+            <div class="label">Жиро рачун</div>
+            <div class="value" id="v-racun">220823000021038788</div>
+            <button class="copy" data-target="v-racun">Копирај</button>
+          </div>
+        </div>
+
+        <div class="note">
+          <p style="margin:0"><strong>Важно:</strong> Средства се примају <em>привремено</em> на рачун законског заступника и
+            <strong>у целости ће бити пренета</strong> на званичан рачун удружења одмах по отварању. Свака уплата се евидентира и транспарентно приказује.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin:0 0 8px;font-size:20px">Пример попуњене уплатнице</h3>
+        <div class="slip">
+          <h4 style="color:#fff">УПЛАТНИЦА — пример</h4>
+          <div class="f">
+            <div><label>Прималац</label><div>Закoнски заступник УГ „Иксан — Снага правде“</div></div>
+            <div><label>Банка</label><div>ProCredit Bank a.d. Београд</div></div>
+            <div><label>Жиро рачун</label><div>220823000021038788</div></div>
+            <div><label>Сврха / Напомена</label><div>Донација за Удружење грађана Иксан — Снага правде</div></div>
+            <div><label>Позив на број</label><div>3110/2025</div></div>
+            <div><label>Износ</label><div>_______ RSD</div></div>
+          </div>
+        </div>
+
+        <p style="margin-top:10px;color:var(--ink)">
+          IPS QR: у ProCredit mBanking/eBanking можеш да <em>креираш IPS QR за ове податке</em> и извезеш га као слику.
+          Када га имаш, замени слику испод датотеком (нпр. <code>ips-procredit.png</code>).
+        </p>
+
+        <!-- IPS QR: замени ову слику стварним QR-ом који извезеш из ProCredit апликације -->
+        <div style="display:flex;justify-content:center;margin-top:8px">
+          <img src="ips-procredit.png" alt="IPS QR — ProCredit Bank" style="max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.3)">
+        </div>
       </div>
     </div>
   </section>
@@ -340,12 +301,12 @@
   <section class="section" id="knjiga">
     <div class="container">
       <h2>ИКСАН — књига која помаже</h2>
-      <div class="book">
+      <div class="book" style="display:grid;gap:12px;grid-template-columns:120px 1fr;align-items:center">
         <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
-          <img src="iksan.webp" alt="ИКСАН — корица књиге">
+          <img src="iksan.webp" alt="ИКСАН — корица књиге" style="border-radius:10px;border:1px solid rgba(255,255,255,.25)">
         </a>
         <div>
-          <p class="stanza">По истинитим догађајима — прича о храбрости, губитку и правди. Сав ауторски хонорар иде у хуманитарне сврхе.</p>
+          <p class="stanza" style="color:var(--ink);margin-bottom:10px">По истинитим догађајима — прича о храбрости, губитку и правди. Сав ауторски хонорар иде у хуманитарне сврхе.</p>
           <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
         </div>
       </div>
@@ -354,9 +315,7 @@
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 Иксан • Снага правде — Сва права задржана.
-  </div>
+  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
 </footer>
 
 <script>
@@ -391,7 +350,7 @@
     setActiveAmount(!isNaN(v) ? v : 0);
   });
 
-  // Skrol do računa, centrirano u viewportu
+  // Скрол до рачуна, центрирано
   toRacun.addEventListener('click', (e) => {
     const target = document.querySelector('#racun');
     if (target){
@@ -402,28 +361,43 @@
   });
 
   // Dropdown meni
-  const menu     = document.getElementById('mainMenu');
-  const menuBtn  = menu.querySelector('.menu-btn');
+  const menu = document.getElementById('mainMenu');
+  const menuBtn = menu?.querySelector('.menu-btn');
 
-  menuBtn.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
+  if (menu && menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
 
-  document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target)) {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-    }
-  });
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target)) {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
 
-  // close on Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-      menuBtn.focus();
-    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  // Copy to clipboard
+  document.querySelectorAll('.copy').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const id = btn.getAttribute('data-target');
+      const el = document.getElementById(id);
+      if(!el) return;
+      const text = el.innerText.trim();
+      navigator.clipboard.writeText(text).then(()=>{
+        btn.textContent = 'Копирано ✓';
+        setTimeout(()=>btn.textContent='Копирај', 1200);
+      });
+    });
   });
 </script>
 </body>
