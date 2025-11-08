@@ -17,7 +17,7 @@
       --ink:#cfe1ff;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
+    html,body{height:100%; overflow-x:hidden;} /* ⛔ без хор. скрола */
     body{
       background:var(--deepBlue);
       color:#fff;
@@ -28,7 +28,7 @@
       font-size:110%;
     }
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
+    img{max-width:100%;display:block;height:auto}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
     /* HEADER — идентично почетној */
@@ -72,6 +72,7 @@
       border:1px solid rgba(255,255,255,.2);
       border-radius:12px;
       min-width:280px;
+      max-width:92vw;              /* ✅ да не „гура“ ширину на уским екранима */
       padding:6px;
       box-shadow:0 10px 24px rgba(0,0,0,.5);
       display:none;
@@ -98,12 +99,14 @@
       color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
       font-size:clamp(23px,3vw,33px);
       text-shadow:0 0 8px rgba(255,255,255,.25);
+      word-break:break-word;
     }
     .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
 
-    /* CTA (-25% величина; један ред на телефону) */
+    /* CTA (-25% величина; један/два реда по потреби) */
     .cta-row{
-      display:flex;justify-content:center;flex-wrap:nowrap;gap:8px;margin-top:14px;
+      display:flex;justify-content:center;flex-wrap:wrap; /* ✅ дозвољено преламање */
+      gap:8px;margin-top:14px;
     }
     .btn{
       display:inline-block;padding:8px 18px;border-radius:40px;
@@ -132,7 +135,13 @@
     .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
     @media(max-width:979px){.hero-media{max-width:100%;justify-self:stretch}}
 
-    /* КАРТИЦЕ — исти систем као на почетној (без белог split-а) */
+    /* ПЕТИЦИЈА дугме испод слике (горњи део) */
+    .pet-cta{
+      margin-top:10px; display:flex; justify-content:flex-end;
+    }
+    @media(max-width:979px){ .pet-cta{justify-content:center} }
+
+    /* КАРТИЦЕ — исти систем као на почетној */
     .split{margin-top:18px}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -148,11 +157,12 @@
     .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
     .card h3{
       margin:0 0 6px;
-      color:#ffffff; /* чисто бело */
+      color:#ffffff;
       line-height:1.15;
       font-weight:700;
       font-size:20px;
       text-shadow:none;
+      word-break:break-word;
     }
     .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.8vw,16px)}
 
@@ -218,19 +228,25 @@
         <h1>🖊️ Укидање приватних извршитеља</h1>
         <p class="sub">Придружи се петицији за правду — да извршење буде у рукама суда, а не профита.</p>
 
-        <!-- CTA ред: Прикључи се • Пријави • Донирај • Петиција -->
+        <!-- CTA ред: Прикључи се • Пријави • Донирај (без Петиције овде) -->
         <div class="cta-row">
           <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
           <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
           <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-          <a href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
-             target="_blank" rel="noopener noreferrer"
-             class="btn btn-primary">✍️ ПЕТИЦИЈА</a>
         </div>
       </div>
 
-      <div class="hero-media">
-        <img src="hero.webp" alt="Иницијативе — Иксан • Снага правде">
+      <div>
+        <div class="hero-media">
+          <img src="hero.webp" alt="Иницијативе — Иксан • Снага правде">
+        </div>
+        <!-- ✅ ПЕТИЦИЈА дугме одмах испод слике -->
+        <div class="pet-cta">
+          <a
+            href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
+            target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary">✍️ ПЕТИЦИЈА</a>
+        </div>
       </div>
     </div>
   </section>
@@ -247,9 +263,10 @@
           <p>Сваком грађанину мора бити омогућено право жалбе кад год уочи неправилност. Без уредног достављања нема важећег поступка.</p>
           <p>Захтевамо обустављање свих поступака, као и укидање и отпис свих камата које су се годинама нагомилавале без знања грађана.</p>
           <div class="cta-row" style="margin-top:10px">
-            <a href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
-               target="_blank" rel="noopener noreferrer"
-               class="btn btn-primary">✍️ ПЕТИЦИЈА</a>
+            <a
+              href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary">✍️ ПЕТИЦИЈА</a>
             <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
           </div>
         </article>
