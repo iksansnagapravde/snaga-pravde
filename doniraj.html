@@ -31,34 +31,39 @@
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER */
+    /* HEADER — sabijen da linija dodiruje dno logotipa */
     header{
       position:sticky;top:0;z-index:100;
       background:var(--deepBlue);
       border-bottom:1px solid rgba(255,255,255,.1);
     }
     .head{
-      display:flex;align-items:flex-start;justify-content:space-between;
-      padding:12px 0; gap:24px;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:4px 0 0; /* gore 4px, DNO 0px -> nema vazduha ispod */
+      gap:16px;
     }
 
     /* LOGO */
     .brand{display:flex;align-items:center}
-    .brand img{height:134px;border-radius:12px}
+    .brand img{
+      height:134px; /* ostaje isto */
+      border-radius:12px;
+      display:block;
+    }
     @media (max-width: 768px){
-      .brand{justify-content:center;margin:0 auto;} /* vidljivije u centru */
-      .brand img{height:88px} /* kompaktnije na tel. */
+      .brand{justify-content:center;margin:0 auto;}
+      .brand img{height:88px}
     }
 
-    /* NAV */
+    /* NAV — bez dodatnog vertikalnog “air-a” */
     nav.nav{
-      display:flex;flex-direction:row;align-items:center;gap:12px;padding-top:7px;
+      display:flex;flex-direction:row;align-items:center;gap:10px;padding-top:0; /* skidamo padding-top */
     }
     .nav a.nav-link,
     .menu-btn{
       background:var(--deepBlue);
       color:#fff;
-      padding:10px 17px;
+      padding:8px 14px; /* malo kompaktnije da stane bliže logou */
       border-radius:10px;
       border:1px solid rgba(255,255,255,.2);
       font-weight:700;
@@ -97,11 +102,18 @@
     }
 
     /* HERO */
-    .hero{padding:43px 0 0}
+    .hero{padding:24px 0 0} /* manje jer je header niži */
     .hero-grid{display:grid;gap:24px}
     @media(min-width:980px){.hero-grid{grid-template-columns:1fr 1fr}}
-    h1.title{font-size:clamp(33px,4.3vw,48px);font-weight:600;margin-bottom:12px}
-    p.subtitle{font-size:clamp(19px,2.4vw,22px);max-width:740px;margin-bottom:24px;color:#cfe1ff}
+
+    /* H1 SMANJEN ~30% */
+    h1.title{
+      font-size:clamp(23px,3vw,34px);  /* bilo clamp(33px,4.3vw,48px) */
+      font-weight:600;
+      margin-bottom:10px;
+      line-height:1.25;
+    }
+    p.subtitle{font-size:clamp(19px,2.4vw,22px);max-width:740px;margin-bottom:20px;color:#cfe1ff}
     .hero-media{
       border-radius:16px;overflow:hidden;
       border:1px solid rgba(255,255,255,.15);
@@ -135,7 +147,7 @@
       background:rgba(255,255,255,.06);
       border:1px solid rgba(255,255,255,.2);
       color:rgba(255,255,255,.88);
-      font-weight:400;           /* bez bolda */
+      font-weight:400;
       font-size:18px;
       letter-spacing:.2px;
       cursor:pointer;
@@ -159,8 +171,7 @@
       transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
       box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
     }
-    /* GOLD dugme */
-    .btn-gold{background:var(--gold);color:var(--deepBlue)} /* zlatno */
+    .btn-gold{background:var(--gold);color:var(--deepBlue)}
     .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
 
@@ -209,24 +220,27 @@
       background:var(--deepBlue);
     }
 
-    /* 📱 MOBILNO: −25% font, kompaktniji meni i chip-ovi */
+    /* 📱 MOBILNO */
     @media (max-width: 768px){
-      body{font-size:90%;} /* 120% → 90% (25% manje naspram sadašnjeg) */
+      body{font-size:90%;}
 
       .nav a.nav-link, .menu-btn{
         font-size:0.85rem;
         padding:6px 9px;
       }
-      nav.nav{gap:6px;padding-top:4px}
+      nav.nav{gap:6px;padding-top:0}
 
       .dropdown{min-width:72vw}
 
       .chip{font-size:14px;padding:9px 13px}
       .custom input{font-size:16px;width:180px;padding:10px 12px}
       .btn{font-size:17px;padding:12px 26px}
+
+      /* Još malo sabijemo header na mobilnom da linija nalegne uz logo */
+      .head{padding:2px 0 0;}
+      .brand img{height:82px}
     }
 
-    /* Bez tamnog moda inverzije */
     @media (prefers-color-scheme:dark){
       html,body{background:var(--deepBlue)!important;color:#fff!important}
     }
@@ -245,11 +259,9 @@
     </div>
 
     <nav class="nav" aria-label="Главна навигација">
-      <!-- Хоризонтално: Почетна, Контакт, Мени -->
       <a class="nav-link" href="index.html">Почетна</a>
       <a class="nav-link" href="kontakt.html">Контакт</a>
 
-      <!-- Dropdown MENI -->
       <div class="menu" id="mainMenu">
         <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
         <div class="dropdown" id="menuList" role="menu">
@@ -388,7 +400,6 @@
       payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
     } else {
       payBtn.href = "PAYMENT_URL";
-      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
     }
     chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
   }
