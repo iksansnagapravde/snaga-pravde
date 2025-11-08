@@ -3,160 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Укидање приватних извршитеља — ИКСАН • Снага правде</title>
+  <title>Укидање приватних извршитеља — Иксан • Снага правде</title>
   <meta name="description" content="Петиција за укидање приватних извршитеља — правда грађанима, не профиту.">
-  <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp" />
+  <meta name="theme-color" content="#020c1b">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="uspeh.webp" type="image/webp">
 
   <style>
     :root{
-      --blue:#0B2141;--blue2:#102D57;
-      --lightHead1:#123366;--lightHead2:#0f295a;
-      --gold:#D3A451;--ink:#cfe1ff;
-      --line:rgba(255,255,255,.14);
-      --cardLine:#dfe7fb; --text:#13203a;
+      --deepBlue:#020c1b;
+      --gold:#d3a451;
       --radius:16px;
+      --ink:#cfe1ff;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-
-    html,body{height:100%; overflow-x:hidden;} /* <— spreči vodoravni skrol */
+    html,body{height:100%}
     body{
-      background:linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
-      color:var(--ink);
-      font-family:"Times New Roman";
+      background:var(--deepBlue);
+      color:#fff;
+      font-family:"Times New Roman",serif;
       line-height:1.7;
       -webkit-font-smoothing:antialiased;
       text-rendering:optimizeLegibility;
-      overflow-wrap:anywhere;        /* <— agresivno prelamanje teksta */
-      word-break:break-word;
-      hyphens:auto;
+      font-size:110%;
+      overflow-x:hidden; /* нема хор. скролова */
     }
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;display:block} /* <— slike nikad šire od ekrana */
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    .container{max-width:1150px;margin:0 auto;padding:0 16px} /* 16px padding za mobilni */
-
-    /* HEADER */
+    /* HEADER — као на индексу/узору */
     header{
-      position:sticky;top:0;z-index:60;
-      background:linear-gradient(180deg,var(--lightHead1),var(--lightHead2));
-      border-bottom:1px solid var(--line);
-      backdrop-filter:blur(8px);
+      position:sticky;top:0;z-index:100;
+      background:var(--deepBlue);
+      border-bottom:1px solid rgba(255,255,255,.1);
+      backdrop-filter:blur(4px);
     }
-    .head{display:flex;align-items:center;justify-content:space-between;padding:8px 0;gap:12px;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:64px;border-radius:12px} /* manji logo na mobilnom */
-    nav{display:flex;gap:12px;flex-wrap:wrap}  /* wrap linkova da ne šire ekran */
-    nav a{opacity:.9;border-bottom:2px solid transparent;padding-bottom:4px;transition:.2s;font-weight:700;font-size:14px}
-    nav a[aria-current="page"],nav a:hover{opacity:1;border-bottom-color:var(--gold)}
+    .head{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:4px 0 0; gap:12px; flex-wrap:nowrap;
+    }
+    .brand{display:flex;align-items:center;flex-shrink:0;}
+    .brand img{height:161px;border-radius:10px}
+    @media (max-width:768px){
+      .brand{justify-content:center;margin:0 auto;}
+      .brand img{height:106px}
+    }
+
+    /* НАВ + МЕНИ */
+    nav.nav{
+      display:flex;flex-direction:row;align-items:center;gap:10px;
+      padding-top:0; padding-right:8px;
+    }
+    .nav a.nav-link,.menu-btn{
+      background:var(--deepBlue); color:#fff;
+      padding:6px 9px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.2);
+      font-weight:600; font-size:0.9rem; line-height:1;
+      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
+    }
+    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
+
+    .menu{position:relative}
+    .dropdown{
+      position:absolute; top:calc(100% + 8px); right:0;
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:12px; min-width:300px; padding:6px;
+      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
+    }
+    .menu.open .dropdown{display:block}
+    @media (hover:hover){ .menu:hover .dropdown{display:block} }
+    .dropdown a{
+      display:block; padding:9px 10px; border-radius:8px; border:1px solid transparent;
+      color:#fff; font-weight:600; font-size:14px; white-space:nowrap;
+    }
+    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
     /* HERO */
     .hero{padding:24px 0 0}
-    .hero-grid{display:grid;gap:16px;grid-template-columns:1fr} /* uvek jedna kolona na mobilnom */
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+    .hero-grid{display:grid;gap:24px}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
     h1{
-      color:#fff;font-weight:600;
-      font-size:clamp(22px,3.2vw,36px);
-      line-height:1.2;margin:0 0 8px;
-      text-shadow:0 0 10px rgba(255,255,255,.35);
+      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+      font-size:clamp(23px,3vw,33px);
+      text-shadow:0 0 8px rgba(255,255,255,.25);
     }
     .sub{
-      color:var(--ink);opacity:.95;font-size:clamp(15px,2.2vw,18px);
-      max-width:740px;margin:6px 0 16px;
+      color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px);
+      margin:8px 0 12px;max-width:780px;
     }
     .hero-media{
-      border-radius:16px;overflow:hidden;border:1px solid var(--line);
-      box-shadow:0 10px 24px rgba(0,0,0,.32);
-      background:#0f2552;aspect-ratio:16/9;
-      display:flex;align-items:center;justify-content:center;width:100%;
+      border-radius:16px;overflow:hidden;
+      border:1px solid rgba(255,255,255,.15);
+      background:var(--deepBlue);
+      aspect-ratio:16/9;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
     }
+    .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
 
+    /* CTA (—25% величина, један ред) */
     .cta-row{
-      display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;justify-content:flex-start
+      display:flex;justify-content:flex-start;flex-wrap:nowrap;gap:8px;margin-top:12px;
     }
     .btn{
-      display:inline-block;padding:10px 18px;border-radius:40px;
-      font-weight:700;font-size:13px;letter-spacing:.3px;text-transform:uppercase;
-      transition:transform .2s,box-shadow .2s;cursor:pointer;text-align:center;white-space:nowrap;
+      display:inline-block;padding:8px 18px;border-radius:40px;border:none;
+      font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.3px;
+      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+      white-space:nowrap;
     }
-    .btn-primary{
-      background:linear-gradient(180deg,#e4b85c,#d3a451);color:#0b2141;
-      box-shadow:0 3px 0 #8a682a,0 6px 18px rgba(0,0,0,.35);
-    }
-    .btn-dark{
-      background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;
-      box-shadow:0 3px 0 #07142c,0 6px 18px rgba(0,0,0,.35);
-    }
+    .btn-primary{background:var(--gold);color:var(--deepBlue)}
+    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
-
-    /* WHITE SPLIT */
-    .white-split{
-      background:#fff;color:var(--text);
-      margin-top:14px;padding:22px 0 32px;
-      border-top-left-radius:20px;border-top-right-radius:20px;
-      box-shadow:0 -8px 24px rgba(0,0,0,.18);
+    @media(max-width:768px){
+      .cta-row{justify-content:center;gap:6px}
+      .btn{padding:7px 14px;font-size:12px}
     }
-    .grid{display:grid;gap:14px;grid-template-columns:1fr} /* <— uvek jedna kolona na mobilnom */
+
+    /* КАРТИЦЕ — dark као на узору */
+    .split{margin-top:18px}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-
     .card{
-      background:#fff;color:var(--text);
-      border:1px solid var(--cardLine);
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
       border-radius:var(--radius);
-      box-shadow:0 12px 24px rgba(0,0,0,.08);
-      overflow:hidden;
-      transition:transform .2s,box-shadow .2s;
+      padding:16px;
+      box-shadow:0 14px 32px rgba(0,0,0,.35);
+      transition:transform .2s, box-shadow .2s;
+      color:#fff;
     }
-    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.12)}
+    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
     .card h3{
-      margin:0;padding:10px 14px;
-      background:linear-gradient(180deg,#123366,#0f2552);
-      color:#fff;font-size:clamp(18px,2.6vw,22px);font-weight:700;
-      text-shadow:0 1px 3px rgba(0,0,0,.4);
-      border-bottom:1px solid #0b1f46;
+      margin:0 0 6px;
+      color:#ffffff;
+      line-height:1.15;
+      font-weight:700;
+      font-size:20px;
+      text-shadow:none;
     }
-    .card .body{padding:14px}
-    .card p,.card ul{font-size:16px;line-height:1.7;margin-bottom:10px}
-    .card ul{padding-left:18px}
-    .card li{margin-bottom:6px}
+    .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(14px,1.85vw,16px)}
+    .card ul,.card ol{padding-left:18px}
+    .card.full{grid-column:1/-1}
 
-    /* Sitni mobilni refinmani */
-    @media (max-width:480px){
-      .brand img{height:52px}
-      nav{gap:8px}
-      nav a{font-size:13px}
-      .btn{padding:8px 14px;font-size:12px}
-      .sub{font-size:15px}
+    /* Доњи CTA ред */
+    .bottom-cta{
+      display:flex;gap:8px;justify-content:center;flex-wrap:nowrap;margin-top:8px
     }
 
     footer{
-      border-top:1px solid var(--line);
-      color:var(--ink);
-      text-align:center;
-      padding:20px 0;
-      opacity:.8;
-      font-size:.9rem;
-      margin-top:26px;
+      border-top:1px solid rgba(255,255,255,.15);
+      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
+      margin-top:30px; background:var(--deepBlue);
+    }
+
+    /* мобилни финиш */
+    @media (max-width:768px){
+      body{font-size:90%;}
+      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
+      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
+      .menu-btn{margin-right:6px;}
+    }
+    @media (max-width:360px){
+      .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
+      nav.nav{gap:4px}
     }
   </style>
 </head>
-
 <body>
 
 <header>
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <img src="logo.webp.png" alt="ИКСАН лого">
+        <img src="uspeh.webp" alt="ИКСАН лого">
       </a>
     </div>
-    <nav class="nav">
-      <a href="index.html">Почетна</a>
-      <a href="onama.html">О нама</a>
-      <a href="oblasti.html">Области</a>
-      <a href="ciljevi.html">Циљеви</a>
-      <a href="inicijative.html">Иницијативе</a>
-      <a href="kontakt.html" aria-current="page">Контакт</a>
+
+    <nav class="nav" aria-label="Главна навигација">
+      <a class="nav-link" href="index.html">Почетна</a>
+      <a class="nav-link" href="kontakt.html">Контакт</a>
+
+      <div class="menu" id="mainMenu">
+        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
+        <div class="dropdown" id="menuList" role="menu">
+          <a href="onama.html" role="menuitem">О нама</a>
+          <a href="oblasti.html" role="menuitem">Области</a>
+          <a href="ciljevi.html" role="menuitem">Циљеви</a>
+          <a href="inicijative.html" role="menuitem">Иницијативе</a>
+          <a href="doniraj.html" role="menuitem">Донирај</a>
+          <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
+          <a href="prijavi.html" role="menuitem">Пријави</a>
+          <a href="ukidanjeizvrsitelja.html" role="menuitem" aria-current="page">Укидање приватних извршитеља</a>
+          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
+          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
+          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -167,78 +213,93 @@
     <div class="container hero-grid">
       <div>
         <h1>⚖️ Укидање приватних извршитеља</h1>
-        <p class="sub">Правда није проценат — правда припада народу.</p>
+        <p class="sub">Правда није проценат — правда припада народу. Извршење се враћа суду, а достојанство грађана изнад профита.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit" target="_blank" rel="noopener noreferrer">✍️ Потпиши петицију</a>
-          <a class="btn btn-dark" href="prikljuci-se.html">ПРИКЉУЧИ СЕ</a>
-          <a class="btn btn-dark" href="prijavi.html">ПРИЈАВИ</a>
+          <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
         </div>
       </div>
       <div class="hero-media">
-        <img src="hero.webp" alt="Циљеви — Иксан • Снага правде">
+        <img src="hero.webp" alt="Укидање приватних извршитеља — Иксан • Снага правде">
       </div>
     </div>
   </section>
 
-  <!-- БЕЛЕ КАРТИЦЕ -->
-  <section class="white-split">
-    <div class="container">
-      <div class="grid">
+  <!-- КАРТИЦЕ -->
+  <section class="split">
+    <div class="container grid">
 
-        <article class="card">
-          <h3>Приватни извршитељи у Србији</h3>
-          <div class="body">
-            <p>Приватни извршитељи у Србији постали су симбол неправде и богаћења на туђој муци.
-            Захтевамо да буду укинути и претворени у судске извршитеље који ће радити за плату из буџета, а не на проценат.</p>
-          </div>
-        </article>
+      <article class="card full">
+        <h3>Зашто укидање приватних извршитеља</h3>
+        <p>Приватни извршитељи постали су симбол неправде и богаћења на туђој муци. Тражимо да се извршење врати суду, уз јавну контролу и јасну меру трошкова — да закон служи човеку, а не процентима.</p>
+      </article>
 
-        <article class="card">
-          <h3>Наши захтеви</h3>
-          <div class="body">
-            <ul>
-              <li>Укидање двоструког кажњавања грађана — да грађани више не плаћају адвокатске и извршитељске трошкове за исти предмет.</li>
-              <li>Укупни трошкови извршења не смеју прећи износ главног дуга.</li>
-              <li>Заштита минималне зараде, пензије, социјалне помоћи и јединог дома.</li>
-              <li>Право жалбе у сваком тренутку када грађанин уочи неправилност — неотуђиво уставно право.</li>
-            </ul>
-          </div>
-        </article>
+      <article class="card">
+        <h3>Наши захтеви</h3>
+        <ul>
+          <li>Нема двоструког кажњавања — грађани не смеју плаћати и адвокатске и извршитељске трошкове за исти предмет.</li>
+          <li>Укупни трошкови извршења не смеју прећи износ главног дуга.</li>
+          <li>Право жалбе у сваком тренутку када грађанин уочи неправилност.</li>
+        </ul>
+      </article>
 
-        <article class="card">
-          <h3>Заштита грађана</h3>
-          <div class="body">
-            <ul>
-              <li>Сваки поступак покренут без уредног достављања мора бити обустављен.</li>
-              <li>Ако годинама нема контакта са документом/опоменом/решењем — поступак се обуставља.</li>
-              <li>Обустављање противуставних поступака извршења.</li>
-              <li>Отпис свих камата и трошкова нагомиланих без знања грађана.</li>
-            </ul>
-            <div class="cta-row" style="margin-top:6px">
-              <a class="btn btn-primary" href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit" target="_blank" rel="noopener noreferrer">✍️ Потпиши петицију</a>
-            </div>
-          </div>
-        </article>
+      <article class="card">
+        <h3>Заштита грађана</h3>
+        <ul>
+          <li>Заштита минималне зараде, пензије, социјалне помоћи и јединог дома.</li>
+          <li>Сваки поступак без уредног достављања — обуставити.</li>
+          <li>Ако годинама нема контакта са документима — поступак престаје, камате и намети се бришу.</li>
+        </ul>
+      </article>
 
-        <article class="card">
-          <h3>Систем неправде мора стати</h3>
-          <div class="body">
-            <p>Забрана блокада и заплена без правоснажне судске одлуке. Нема одузимања имовине „на невиђено“.</p>
-            <p>Није правна држава она у којој дуг после година ћутања нарасте у терет који уништава животе.</p>
-          </div>
-        </article>
+      <article class="card full">
+        <h3>Систем неправде мора стати</h3>
+        <p>Без правоснажне судске одлуке нема блокаде рачуна, заплене имовине, ни одузимања куће или покућства. Држава мора штитити достојанство грађана, а не профит појединаца.</p>
 
-      </div>
+        <div class="bottom-cta">
+          <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
+          <a class="btn btn-dark" href="prikljuci-se.html">ПРИКЉУЧИ СЕ</a>
+          <a class="btn btn-dark" href="prijavi.html">ПРИЈАВИ</a>
+        </div>
+      </article>
+
     </div>
   </section>
 </main>
 
 <footer>
   <div class="container">
-    „Снага правде је у народу.“<br>© 2025 ИКСАН – Покрет за правду, достојанство и хуманост
+    © 2025 Иксан • Снага правде — Сва права задржана.
   </div>
 </footer>
 
+<script>
+  // Dropdown meni
+  const menu = document.getElementById('mainMenu');
+  const menuBtn = menu?.querySelector('.menu-btn');
+
+  if (menu && menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target)) {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+</script>
 </body>
 </html>
-
