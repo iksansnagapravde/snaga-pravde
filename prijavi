@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="sr-Cyrl-RS">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Прикључи се — Иксан • Снага правде</title>
+  <meta name="description" content="Прикључи се — постани део ИКСАН покрета: волонтирај, пријави злоупотребе, подржи иницијативе и помогни да правда победи." />
+  <meta name="theme-color" content="#020c1b" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="uspeh.webp" type="image/webp" />
+
+  <style>
+    :root{
+      --deepBlue:#020c1b;
+      --gold:#d3a451;
+      --radius:16px;
+      --ink:#cfe1ff;
+      --line:rgba(255,255,255,.15);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      background:var(--deepBlue);
+      color:#fff;
+      font-family:"Times New Roman",serif;
+      line-height:1.7;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+      font-size:110%;
+      overflow-x:hidden;           /* без хор. скрола */
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;display:block}
+    .container{max-width:1150px;margin:0 auto;padding:0 16px}
+
+    /* HEADER */
+    header{
+      position:sticky;top:0;z-index:100;
+      background:var(--deepBlue);
+      border-bottom:1px solid rgba(255,255,255,.1);
+      backdrop-filter:blur(4px);
+    }
+    .head{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:6px 0 0; gap:12px; flex-wrap:nowrap;
+    }
+    .brand{display:flex;align-items:center;flex-shrink:0}
+    .brand img{height:140px;border-radius:10px}
+    @media (max-width:768px){
+      .brand img{height:96px}
+    }
+
+    /* NAV + МЕНИ */
+    nav.nav{
+      display:flex;align-items:center;gap:10px;
+      padding-right:8px;
+    }
+    .nav a.nav-link,.menu-btn{
+      background:var(--deepBlue); color:#fff;
+      padding:6px 9px; border-radius:8px;
+      border:1px solid rgba(255,255,255,.2);
+      font-weight:600; font-size:0.9rem; line-height:1;
+      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
+    }
+    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
+
+    .menu{position:relative}
+    .dropdown{
+      position:absolute; top:calc(100% + 8px); right:0;
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:12px; min-width:300px; padding:6px;
+      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
+    }
+    .menu.open .dropdown{display:block}
+    @media (hover:hover){ .menu:hover .dropdown{display:block} }
+    .dropdown a{
+      display:block; padding:9px 10px; border-radius:8px; border:1px solid transparent;
+      color:#fff; font-weight:600; font-size:14px; white-space:nowrap;
+    }
+    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+
+    /* HERO */
+    .hero{padding:24px 0 0}
+    .hero-grid{display:grid;gap:24px}
+    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+    h1{
+      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+      font-size:clamp(23px,3vw,33px);
+      text-shadow:0 0 8px rgba(255,255,255,.25);
+    }
+    .sub{
+      color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px);
+      margin:8px 0 12px;max-width:780px;
+    }
+    .hero-media{
+      border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.15);
+      background:var(--deepBlue); aspect-ratio:16/9;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
+    }
+    .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
+
+    /* CTA — један ред и на телефону */
+    .cta-row{
+      display:flex;gap:8px;flex-wrap:nowrap;margin-top:12px;
+      overflow:auto; scrollbar-width:none;
+    }
+    .cta-row::-webkit-scrollbar{display:none}
+    .btn{
+      display:inline-block;padding:8px 18px;border-radius:40px;border:none;
+      font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.3px;
+      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+      white-space:nowrap;
+    }
+    .btn-primary{background:var(--gold);color:var(--deepBlue)}
+    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
+    .btn:hover{transform:translateY(-2px)}
+    @media(max-width:768px){
+      .cta-row{justify-content:flex-start}
+      .btn{padding:7px 14px;font-size:12px}
+    }
+
+    /* SPLIT (картице) */
+    .split{margin-top:18px}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+    .card{
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 14px 32px rgba(0,0,0,.35);
+      transition:transform .2s, box-shadow .2s;
+      color:#fff;
+    }
+    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
+    .card h3{
+      margin:0 0 6px;
+      color:#fff;
+      line-height:1.15;font-weight:700;font-size:20px;text-shadow:none;
+    }
+    .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(14px,1.85vw,16px)}
+    .card ul,.card ol{padding-left:18px}
+    .card.full{grid-column:1/-1}
+
+    /* ФОРМ БЛОК */
+    .form-wrap{
+      background:rgba(16,45,87,.92);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow:0 12px 28px rgba(0,0,0,.35);
+      color:var(--ink);
+    }
+    .form-wrap h2{
+      margin:0 0 8px;color:#fff;font-size:clamp(20px,2.6vw,24px)
+    }
+    form{display:grid;gap:12px}
+    .row{display:grid;gap:12px;grid-template-columns:1fr}
+    @media(min-width:720px){.row{grid-template-columns:1fr 1fr}}
+    label{font-weight:700;color:var(--ink)}
+    input,select,textarea{
+      width:100%;padding:12px 14px;border-radius:10px;
+      border:1px solid rgba(255,255,255,.25);
+      background:rgba(255,255,255,.08);color:#fff;font-size:15px;
+    }
+    textarea{min-height:120px;resize:vertical}
+    .agree{display:flex;gap:10px;align-items:flex-start}
+    .agree input{width:auto;margin-top:3px}
+    .submit{
+      display:inline-block;width:100%;padding:12px 18px;border:none;border-radius:40px;
+      font-weight:800;letter-spacing:.3px;text-transform:uppercase;cursor:pointer;
+      background:var(--gold);color:var(--deepBlue);
+      box-shadow:0 3px 0 rgba(0,0,0,.45), 0 6px 18px rgba(0,0,0,.35);
+      transition:transform .2s;
+    }
+    .submit:hover{transform:translateY(-2px)}
+
+    /* Доњи CTA ред */
+    .bottom-cta{
+      display:flex;gap:8px;justify-content:center;flex-wrap:nowrap;margin-top:14px;
+      overflow:auto;scrollbar-width:none;
+    }
+    .bottom-cta::-webkit-scrollbar{display:none}
+
+    footer{
+      border-top:1px solid var(--line);
+      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
+      margin-top:30px; background:var(--deepBlue);
+    }
+
+    /* мобилни финиш */
+    @media (max-width:768px){
+      body{font-size:90%}
+      .head{flex-wrap:wrap;justify-content:space-between}
+      nav.nav{flex-wrap:wrap}
+    }
+    @media (max-width:360px){
+      .nav a.nav-link,.menu-btn{font-size:0.8rem;padding:4px 6px}
+      nav.nav{gap:4px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container head">
+    <div class="brand">
+      <a href="index.html">
+        <img src="uspeh.webp" alt="Иксан — лого">
+      </a>
+    </div>
+
+    <nav class="nav" aria-label="Главна навигација">
+      <a class="nav-link" href="index.html">Почетна</a>
+      <a class="nav-link" href="kontakt.html">Контакт</a>
+
+      <div class="menu" id="mainMenu">
+        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
+        <div class="dropdown" id="menuList" role="menu">
+          <a href="onama.html" role="menuitem">О нама</a>
+          <a href="oblasti.html" role="menuitem">Области</a>
+          <a href="ciljevi.html" role="menuitem">Циљеви</a>
+          <a href="inicijative.html" role="menuitem">Иницијативе</a>
+          <a href="doniraj.html" role="menuitem">Донирај</a>
+          <a href="prikljuci-se.html" role="menuitem" aria-current="page">Прикључи се</a>
+          <a href="prijavi.html" role="menuitem">Пријави</a>
+          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
+          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
+          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
+          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Прикључи се — заједно померамо планине</h1>
+        <p class="sub">Постани део ИКСАН покрета: волонтирај, истражуј, пријављуј злоупотребе, шири истину и станимо заједно у одбрану права, закона и достојанства.</p>
+        <div class="cta-row">
+          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
+          <a href="kontakt.html" class="btn btn-dark">КОНТАКТ</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="hero.webp" alt="Прикључи се — Иксан • Снага правде">
+      </div>
+    </div>
+  </section>
+
+  <!-- КАРТИЦЕ -->
+  <section class="split">
+    <div class="container grid">
+      <article class="card">
+        <h3>Како можеш да помогнеш</h3>
+        <ul>
+          <li><strong>Волонтирање:</strong> терен, логистика, информисање грађана, догађаји.</li>
+          <li><strong>Истраживање:</strong> провера навода, јавне набавке, имовинске везе, документа.</li>
+          <li><strong>Правна помоћ:</strong> ако си правник/адвокат — савети, поднесци, менторство случајева.</li>
+          <li><strong>Дизајн/медији:</strong> визуели, текстови, друштвене мреже, видео.</li>
+          <li><strong>Донације:</strong> опрема, простор, трошкови поступака и подршке грађанима.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Шта обећавамо</h3>
+        <ul>
+          <li>Да ћемо чувати твоје достојанство и време.</li>
+          <li>Да ћемо деловати законито, упорно и транспарентно.</li>
+          <li>Да ћемо увек бирати страну — страну истине и грађана.</li>
+        </ul>
+      </article>
+
+      <!-- ФОРМА -->
+      <article class="card full form-wrap" id="forma">
+        <h2>Прикључи се</h2>
+        <form action="#" method="post" autocomplete="on" novalidate>
+          <div class="row">
+            <div>
+              <label for="ime">Име и презиме</label>
+              <input type="text" id="ime" name="ime" placeholder="Петар Петровић" />
+            </div>
+            <div>
+              <label for="email">Е-пошта</label>
+              <input type="email" id="email" name="email" placeholder="ime@primer.rs" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="telefon">Телефон</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+381 6x xxx xxxx" />
+            </div>
+            <div>
+              <label for="opstina">Град/општина</label>
+              <input type="text" id="opstina" name="opstina" placeholder="Нпр. Нови Сад" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="interes">Области интересовања</label>
+              <select id="interes" name="interes">
+                <option value="">— изабери —</option>
+                <option>Волонтирање на терену</option>
+                <option>Истраживање и документа</option>
+                <option>Правна подршка</option>
+                <option>Комуникације и дизајн</option>
+                <option>Техничка/log подршка</option>
+              </select>
+            </div>
+            <div>
+              <label for="nacin">Како желиш да се укључиш</label>
+              <select id="nacin" name="nacin">
+                <option value="">— изабери —</option>
+                <option>Повремено (по позиву)</option>
+                <option>Редовно (недељни ангажман)</option>
+                <option>Пројектно (по задацима)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="poruka">Порука</label>
+            <textarea id="poruka" name="poruka" placeholder="Укратко опиши како можемо да радимо заједно…"></textarea>
+          </div>
+
+          <label class="agree">
+            <input type="checkbox" id="saglasnost" name="saglasnost" required />
+            <span>Прихватам да моји подаци буду обрађени ради поступања по пријави/укључењу у активности, у складу са правилима приватности.</span>
+          </label>
+
+          <button type="submit" class="submit">ПОШАЉИ</button>
+        </form>
+      </article>
+
+      <article class="card full">
+        <p style="margin:0;color:var(--ink);text-align:center">
+          Напомена о приватности: Подаци се користе искључиво ради контакта и организације активности, у складу са законом и нашим правилима приватности. Не делимо их са трећима без твог пристанка, осим ако закон обавезује.
+        </p>
+      </article>
+
+      <article class="card full">
+        <div class="bottom-cta">
+          <a class="btn btn-dark" href="prijavi.html">ПРИЈАВИ</a>
+          <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
+          <a class="btn btn-dark" href="kontakt.html">КОНТАКТ</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © 2025 Иксан • Снага правде — Сва права задржана.
+  </div>
+</footer>
+
+<script>
+  // Dropdown meni
+  const menu = document.getElementById('mainMenu');
+  const menuBtn = menu?.querySelector('.menu-btn');
+
+  if (menu && menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target)) {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        menu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  // Минимална валидација форме (front)
+  document.querySelector('form')?.addEventListener('submit', (e) => {
+    const poruka = document.getElementById('poruka');
+    const sag = document.getElementById('saglasnost');
+    if (!poruka.value.trim()) {
+      e.preventDefault();
+      alert('Молимо попуни „Порука“.');
+      poruka.focus();
+      return;
+    }
+    if (!sag.checked) {
+      e.preventDefault();
+      alert('Потребна је сагласност за обраду података.');
+      sag.focus();
+      return;
+    }
+    // Овде постави прави action/POST endpoint по потреби.
+  });
+</script>
+</body>
+</html>
