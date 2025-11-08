@@ -6,7 +6,8 @@
   <title>Донација — Иксан • Снага правде</title>
   <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
   <meta name="theme-color" content="#0B2141">
-  <link rel="icon" href="logo.webp.png">
+  <!-- LOGO -> providi.webp -->
+  <link rel="icon" href="providi.webp">
   <style>
     :root{
       --blue:#0B2141;
@@ -38,14 +39,15 @@
        =========================== */
     header{
       position:sticky; top:0; z-index:60;
-      background:#ffffff;                           /* ⇦ TRAŽENO: bela traka */
-      border-bottom:1px solid rgba(11,33,65,.12);   /* diskretna linija */
+      background:#ffffff;
+      border-bottom:1px solid rgba(11,33,65,.12);
       backdrop-filter:blur(6px);
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px}
     .brand img{
-      height:80px;
+      /* +10% u odnosu na 80px */
+      height:88px;
       border-radius:12px;
     }
 
@@ -53,9 +55,9 @@
     nav.nav{display:flex;gap:10px;flex-wrap:wrap}
     nav.nav a{
       background:var(--blue);
-      color:#fff;                       /* ⇦ bela slova na plavom */
-      padding:8px 14px;                 /* kompaktnije */
-      border-radius:10px;               /* pravougaone kartice sa blagim uglom */
+      color:#fff;
+      padding:8px 14px;
+      border-radius:10px;
       border:1px solid #0a1f3d;
       font-weight:600;
       letter-spacing:.2px;
@@ -64,11 +66,11 @@
     }
     nav.nav a:hover{
       transform:translateY(-1px);
-      background:#0a1f3d;               /* malo tamnije na hover */
+      background:#0a1f3d;
       box-shadow:0 6px 18px rgba(0,0,0,.18);
     }
     nav.nav a[aria-current="page"]{
-      outline:2px solid var(--gold);     /* istaknuta aktivna stranica */
+      outline:2px solid var(--gold);
       outline-offset:1px;
     }
 
@@ -103,43 +105,42 @@
     .hero-media img{width:100%;height:100%;object-fit:cover}
 
     /* ===========================
-       PANEL — iznosi u diskretnijem stilu + dugmad
+       PANEL — bela kartica, dugmad zadržavaju pozadine
        =========================== */
     .panel{margin-top:16px}
     .panel-box{
-      background:rgba(16,45,87,.92);
-      border:1px solid rgba(255,255,255,.14);
+      background:#ffffff;                       /* BELA KARTICA */
+      color:#0b2141;                            /* tamni tekst unutar bele kartice */
+      border:1px solid rgba(11,33,65,.12);
       border-radius:var(--radius);
-      padding:16px; box-shadow:0 10px 26px rgba(0,0,0,.34);
+      padding:16px; box-shadow:0 10px 26px rgba(0,0,0,.16);
     }
     .panel-grid{display:grid;gap:16px;align-items:center}
     @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
 
-    /* ⇩ TRAŽENO: bela slova na plavom, tanji font, kompaktnije */
     .amount-grid{
       display:grid;gap:8px;
       grid-template-columns:repeat(3, minmax(90px, 1fr));
     }
     .chip{
-      padding:9px 12px;                  /* manje i uže */
+      padding:9px 12px;
       border-radius:12px;
       text-align:center;
-      background:var(--blue);            /* plava pozadina */
-      color:#ffffff;                     /* bela slova */
-      border:1px solid rgba(255,255,255,.16);
-      box-shadow:0 2px 10px rgba(0,0,0,.18);
-      font-weight:500;                   /* diskretnija debljina */
-      font-size:15px;                    /* malo manje od 16px */
-      letter-spacing:.1px;               /* ne „razvučeno“ */
+      background:var(--blue);            /* dugmad zadržavaju svoju (plavu) pozadinu */
+      color:#ffffff;
+      border:1px solid rgba(11,33,65,.25);
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+      font-weight:500;
+      font-size:15px;
+      letter-spacing:.1px;
       cursor:pointer;
       transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
     }
     .chip:hover{
       transform:translateY(-1px);
-      box-shadow:0 6px 16px rgba(0,0,0,.22);
+      box-shadow:0 6px 16px rgba(0,0,0,.18);
       filter:brightness(1.05);
     }
-    /* aktivna – i dalje može zlato da naglasi izbor */
     .chip[aria-pressed="true"]{
       background:linear-gradient(180deg,#f2d48f,#d3a451);
       color:#0b2141;
@@ -149,8 +150,9 @@
     .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
     .custom input{
       width:160px;padding:10px 12px;border-radius:12px;
-      border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);
-      color:#fff;font-size:16px
+      background:#ffffff;                           /* prilagođeno beloj kartici */
+      border:1px solid rgba(11,33,65,.25);
+      color:#0b2141;font-size:16px
     }
 
     .cta-stack{display:flex;flex-direction:column;gap:10px;align-items:stretch}
@@ -158,7 +160,7 @@
       display:inline-block;padding:12px 26px;border-radius:40px;border:none;
       font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
       transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
-      box-shadow:0 3px 0 rgba(0,0,0,.35), 0 6px 18px rgba(0,0,0,.35);
+      box-shadow:0 3px 0 rgba(0,0,0,.2), 0 6px 18px rgba(0,0,0,.2);
     }
     .btn-gold{background:linear-gradient(180deg,#e4b85c,#d3a451); color:#0b2141}
     .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552); color:#fff}
@@ -202,9 +204,9 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <img src="logo.webp.png" alt="ИКСАН лого">
+        <!-- LOGO -> providi.webp -->
+        <img src="providi.webp" alt="ИКСАН лого">
       </a>
-      <!-- nema teksta pored logotipa -->
     </div>
     <nav class="nav">
       <a href="index.html">Почетна</a>
