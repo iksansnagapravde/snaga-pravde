@@ -7,7 +7,6 @@
   <meta name="description" content="Правда није роба — време је да се врати народу. Иксан — покрет грађана.">
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
-  <!-- Favicon -->
   <link rel="icon" href="uspeh.webp" type="image/webp">
 
   <style>
@@ -32,7 +31,7 @@
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — исти као на „Донирај“ (сужен да линија додирује дно логоа) */
+    /* HEADER */
     header{
       position:sticky;top:0;z-index:100;
       background:var(--deepBlue);
@@ -43,7 +42,7 @@
       padding:4px 0 0; gap:12px; flex-wrap:nowrap;
     }
 
-    /* ЛОГО (нови uspeh.webp, прозирна позадина) — +20% */
+    /* ЛОГО */
     .brand{display:flex;align-items:center;flex-shrink:0;}
     .brand img{height:161px;border-radius:10px}
     @media (max-width:768px){
@@ -51,7 +50,7 @@
       .brand img{height:106px}
     }
 
-    /* НАВ — идентично стилу „Донирај“ + dropdown */
+    /* НАВИГАЦИЈА */
     nav.nav{
       display:flex;flex-direction:row;align-items:center;gap:10px;
       padding-top:0; padding-right:8px;
@@ -66,7 +65,7 @@
     .nav a.nav-link:hover, .menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
     .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
 
-    /* Мени (dropdown) — дугачки наслови: мањи фонт, без прелома (један ред) */
+    /* МЕНИ */
     .menu{position:relative}
     .dropdown{
       position:absolute; top:calc(100% + 8px); right:0;
@@ -86,34 +85,53 @@
       border-radius:8px;
       color:#fff;
       font-weight:600;
-      font-size:14px;      /* мањи фонт за дугачке називе */
-      white-space:nowrap;  /* један ред по ставци */
+      font-size:14px;
+      white-space:nowrap;
       border:1px solid transparent;
     }
     .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
-    /* HERO — визуел и типографија уједначени са „Донирај“ */
+    /* HERO */
     .hero{padding:24px 0 0}
     .hero-grid{display:grid;gap:24px}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
     h1{
       color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
-      font-size:clamp(23px,3vw,33px); /* уједначено са смањеним H1 на „Донирај“ */
+      font-size:clamp(23px,3vw,33px);
       text-shadow:0 0 8px rgba(255,255,255,.25);
     }
     .line2{display:block;font-size:clamp(20px,2.5vw,24px);color:var(--ink);margin-top:4px}
     .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
 
-    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+    /* CTA дугмад */
+    .cta-row{
+      display:flex;
+      justify-content:center;
+      flex-wrap:nowrap;
+      gap:8px;
+      margin-top:14px;
+    }
     .btn{
-      display:inline-block;padding:10px 22px;border-radius:40px;border:none;
-      font-weight:700;font-size:14px;letter-spacing:.3px;text-transform:uppercase;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      display:inline-block;
+      padding:8px 18px;
+      border-radius:40px;
+      font-weight:700;
+      font-size:13px;
+      text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s;
+      cursor:pointer;
+      text-align:center;
       box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+      white-space:nowrap;
     }
     .btn-primary{background:var(--gold);color:var(--deepBlue)}
     .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
+
+    @media(max-width:768px){
+      .cta-row{justify-content:center;flex-wrap:nowrap;gap:6px;}
+      .btn{padding:7px 14px;font-size:12px;}
+    }
 
     .hero-media{
       border-radius:16px;overflow:hidden;
@@ -125,7 +143,7 @@
     }
     .hero-media img{width:100%; height:100%; object-fit:cover; opacity:.9}
 
-    /* КАРТИЦЕ — стил у духу палете „Донирај“ */
+    /* КАРТИЦЕ */
     .split{margin-top:18px}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -141,8 +159,7 @@
     .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
     .card h3{
       margin:0 0 6px;color:#fff;line-height:1.15;font-weight:600;
-      font-size:20px; /* уједначено са „Донирај“ card-title */
-      text-shadow:none;
+      font-size:20px;
     }
     .card p{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.8vw,16px)}
     .card a.more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
@@ -153,7 +170,6 @@
       margin-top:30px; background:var(--deepBlue);
     }
 
-    /* 📱 МОБИЛНО — центрирање навигације и избегавање лепљења за десну ивицу */
     @media (max-width:768px){
       body{font-size:90%;}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
@@ -161,7 +177,6 @@
       .menu-btn{margin-right:6px;}
     }
 
-    /* Веома уски екрани: смањи нав да стане у један ред */
     @media (max-width:360px){
       .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
       nav.nav{gap:4px}
@@ -174,7 +189,6 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <!-- NOVI LOGO: uspeh.webp (прозирна позадина) -->
         <img src="uspeh.webp" alt="ИКСАН лого">
       </a>
     </div>
@@ -183,7 +197,6 @@
       <a class="nav-link" href="index.html" aria-current="page">Почетна</a>
       <a class="nav-link" href="kontakt.html">Контакт</a>
 
-      <!-- Dropdown MENI са новим ставкама; „Уплата на рачун“ је уклоњена -->
       <div class="menu" id="mainMenu">
         <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
         <div class="dropdown" id="menuList" role="menu">
@@ -194,7 +207,6 @@
           <a href="doniraj.html" role="menuitem">Донирај</a>
           <a href="prikljuci-se.html" role="menuitem">Прикључи се</a>
           <a href="prijavi.html" role="menuitem">Пријави</a>
-          <!-- НОВЕ ТЕМЕ (дугачки називи, мањи фонт, један ред) -->
           <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
           <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
           <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
@@ -206,16 +218,15 @@
 </header>
 
 <main>
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <h1>Правда није роба <span class="line2">Време је да се врати народу</span></h1>
         <p class="sub">Институције морају служити закону, а закон — човеку. Снага правде је снага друштва.</p>
         <div class="cta-row">
-          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
           <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
           <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
+          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
         </div>
       </div>
 
@@ -225,7 +236,6 @@
     </div>
   </section>
 
-  <!-- КАРТИЦЕ / ТЕМЕ -->
   <section class="split">
     <div class="container">
       <div class="grid">
@@ -262,7 +272,6 @@
 </footer>
 
 <script>
-  // Dropdown meni (исто као на „Донирај“)
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu.querySelector('.menu-btn');
 
@@ -278,7 +287,6 @@
     }
   });
 
-  // close on Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       menu.classList.remove('open');
