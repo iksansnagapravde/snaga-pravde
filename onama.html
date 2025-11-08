@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>О нама — Иксан • Снага правде</title>
   <meta name="description" content="Иксан — покрет грађана за правду, достојанство и заједништво.">
-  <meta name="theme-color" content="#0B2141">
+  <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="uspeh.webp" type="image/webp">
 
   <style>
     :root{
-      /* Палета и варијабле као на index/oblasti/ciljevi */
-      --blue:#0B2141;
-      --blue2:#102D57;
-      --lightHead1:#123366;
-      --lightHead2:#0f295a;
-      --gold:#D3A451;
-      --ink:#cfe1ff;
-      --line:rgba(255,255,255,.14);
+      --deepBlue:#020c1b;
+      --gold:#d3a451;
       --radius:16px;
+      --ink:#cfe1ff;
     }
-
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{
-      /* Иста спољна позадина — плави градијент */
-      background:linear-gradient(180deg,var(--blue) 0%, var(--blue2) 100%);
+      background:var(--deepBlue);
       color:#fff;
       font-family:"Times New Roman",serif;
       line-height:1.7;
@@ -38,19 +31,18 @@
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — светлији градијент + blur, исто као на осталим */
+    /* HEADER — identičan početnoj */
     header{
       position:sticky;top:0;z-index:100;
-      background:linear-gradient(180deg,var(--lightHead1),var(--lightHead2));
-      border-bottom:1px solid var(--line);
-      backdrop-filter:blur(8px);
+      background:var(--deepBlue);
+      border-bottom:1px solid rgba(255,255,255,.1);
     }
     .head{
       display:flex;align-items:center;justify-content:space-between;
-      padding:6px 0 0; gap:12px; flex-wrap:nowrap;
+      padding:4px 0 0; gap:12px; flex-wrap:nowrap;
     }
 
-    /* ЛОГО — иста величина као што сте тражили (увећан) */
+    /* LOGO — ista veličina */
     .brand{display:flex;align-items:center;flex-shrink:0;}
     .brand img{height:161px;border-radius:10px}
     @media (max-width:768px){
@@ -58,13 +50,13 @@
       .brand img{height:106px}
     }
 
-    /* НАВИГАЦИЈА + МЕНИ (исти стил оквира/hover као другде) */
+    /* NAV — isto kao index */
     nav.nav{
       display:flex;flex-direction:row;align-items:center;gap:10px;
       padding-top:0; padding-right:8px;
     }
     .nav a.nav-link, .menu-btn{
-      background:transparent; color:#fff;
+      background:var(--deepBlue); color:#fff;
       padding:6px 9px; border-radius:8px;
       border:1px solid rgba(255,255,255,.2);
       font-weight:600; font-size:0.9rem; line-height:1;
@@ -73,13 +65,14 @@
     .nav a.nav-link:hover, .menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
     .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
 
+    /* MENU — isto kao index */
     .menu{position:relative}
     .dropdown{
       position:absolute; top:calc(100% + 8px); right:0;
-      background:linear-gradient(180deg,var(--lightHead1),var(--lightHead2));
-      border:1px solid var(--line);
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
       border-radius:12px;
-      min-width:300px;
+      min-width:280px;
       padding:6px;
       box-shadow:0 10px 24px rgba(0,0,0,.5);
       display:none;
@@ -92,107 +85,94 @@
       border-radius:8px;
       color:#fff;
       font-weight:600;
-      font-size:14px; /* мањи фонт да стану дугачки наслови */
+      font-size:14px;
       white-space:nowrap;
       border:1px solid transparent;
     }
     .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
-    /* HERO — усклађене величине и боје */
+    /* HERO — isti stil kao na početnoj */
     .hero{padding:24px 0 0}
     .hero-grid{display:grid;gap:24px}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
-    .kicker{
-      display:inline-block;padding:6px 10px;border:1px solid var(--line);
-      border-radius:999px;background:rgba(10,20,40,.35);backdrop-filter:blur(4px);
-      font-weight:700;letter-spacing:.3px
-    }
     h1{
-      margin:.6rem 0 0; line-height:1.2; font-weight:600;
+      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
       font-size:clamp(23px,3vw,33px);
-      color:#ffffff;
+      text-shadow:0 0 8px rgba(255,255,255,.25);
     }
-    .sub{margin:10px 0 14px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
+    .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
 
-    /* CTA — редослед/величина као на осталима (стају у један ред) */
+    /* CTA — istog formata i dimenzija */
     .cta-row{
-      display:flex;justify-content:center;flex-wrap:nowrap;gap:8px;margin-top:12px;
+      display:flex;
+      justify-content:center;
+      flex-wrap:nowrap;
+      gap:8px;
+      margin-top:14px;
     }
     .btn{
-      display:inline-block;padding:8px 18px;border-radius:40px;
-      font-weight:700;font-size:13px;text-transform:uppercase;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
+      display:inline-block;
+      padding:8px 18px;
+      border-radius:40px;
+      font-weight:700;
+      font-size:13px;
+      text-transform:uppercase;
+      transition:transform .2s, box-shadow .2s;
+      cursor:pointer;
+      text-align:center;
       box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
       white-space:nowrap;
     }
-    .btn-primary{background:var(--gold);color:#0B2141}
-    .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff;border:1px solid rgba(255,255,255,.3)}
+    .btn-primary{background:var(--gold);color:var(--deepBlue)}
+    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
     @media(max-width:768px){
-      .cta-row{justify-content:center;gap:6px}
-      .btn{padding:7px 14px;font-size:12px}
+      .cta-row{justify-content:center;flex-wrap:nowrap;gap:6px;}
+      .btn{padding:7px 14px;font-size:12px;}
     }
 
-    /* Медиа оквир — исти тон као на осталим страницама */
     .hero-media{
       border-radius:16px;overflow:hidden;
-      border:1px solid var(--line);
-      background:#0f2552;
+      border:1px solid rgba(255,255,255,.15);
+      background:var(--deepBlue);
       aspect-ratio:16/9;
       display:flex; align-items:center; justify-content:center;
-      box-shadow:0 10px 24px rgba(0,0,0,.35);
+      box-shadow:0 10px 24px rgba(0,0,0,.5);
     }
-    .hero-media img{width:100%;height:100%;object-fit:cover}
+    .hero-media img{width:100%; height:100%; object-fit:cover; opacity:.9}
 
-    /* БЕЛА зона — идентична „white-split/white-section“ стилу */
-    .white-section{
-      background:#ffffff; color:#0b2141;
-      padding:16px 0 30px;
-      margin-top:6px;
-      border-top-left-radius:20px; border-top-right-radius:20px;
-      box-shadow:0 -8px 24px rgba(0,0,0,.18);
-    }
-    .white-section p{font-size:18px}
-
-    /* КАРТИЦЕ — позадина/оквир као на другим страницама */
-    section.cards{padding:24px 0 6px;background:#ffffff;}
-    .grid{display:grid;gap:16px;grid-template-columns:1fr}
+    /* KARTICE — potpuno isto kao na početnoj */
+    .split{margin-top:18px}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-    h2{
-      margin:0 0 8px; color:#fff; font-size:clamp(20px,2.8vw,24px); font-weight:600
-    }
     .card{
-      background:rgba(16,45,87,.85);
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:18px; box-shadow:0 12px 28px rgba(0,0,0,.28);
+      background:var(--deepBlue);
+      border:1px solid rgba(255,255,255,.2);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 14px 32px rgba(0,0,0,.35);
+      transition:transform .2s, box-shadow .2s;
+      color:#fff;
     }
-    .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(15px,1.9vw,16.5px)}
-    .list{padding-left:18px}
-
-    /* Доњи CTA блок — исти тамноплави стакласти тон */
-    .cta-block{
-      background:rgba(17,42,84,.60);
-      border:1px solid var(--line); border-radius:var(--radius);
-      padding:22px; box-shadow:0 12px 28px rgba(0,0,0,.30);
-      text-align:center;
-    }
-    .cta-block h3{
+    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
+    .card h3{
       margin:0 0 6px;
-      color:#fff; line-height:1.15; font-weight:600;
-      font-size:clamp(18px,2.2vw,24px);
+      color:#ffffff; /* čisto belo kao što si tražio */
+      line-height:1.15;
+      font-weight:700;
+      font-size:20px;
+      text-shadow:none;
     }
-    .cta-block p{max-width:880px;margin:0 auto 12px;color:var(--ink)}
+    .card p,.card li{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.8vw,16px)}
+    .more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
 
-    /* FOOTER — усклађен са палетом */
     footer{
-      border-top:1px solid var(--line);
-      color:var(--ink); text-align:center; padding:24px 0; font-size:.9rem;
-      margin-top:30px; background:linear-gradient(180deg,var(--blue2),var(--blue2));
-      opacity:.9;
+      border-top:1px solid rgba(255,255,255,.15);
+      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
+      margin-top:30px; background:var(--deepBlue);
     }
 
-    /* мобилно усклађивање */
     @media (max-width:768px){
       body{font-size:90%;}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
@@ -205,8 +185,8 @@
     }
   </style>
 </head>
-<body>
 
+<body>
 <header>
   <div class="container head">
     <div class="brand">
@@ -240,16 +220,12 @@
 </header>
 
 <main>
-
-  <!-- HERO -->
+  <!-- HERO (isti stil, druga poruka) -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
-        <span class="kicker">О нама</span>
-        <h1>Иксан — покрет грађана за правду, достојанство и заједништво</h1>
-        <p class="sub">Када правда постане роба — време је да се врати народу.</p>
-
-        <!-- CTA: Придружи се • Пријави • Донирај -->
+        <h1>О нама</h1>
+        <p class="sub">Иксан — покрет грађана за правду, достојанство и заједништво.</p>
         <div class="cta-row">
           <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
           <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
@@ -263,82 +239,49 @@
     </div>
   </section>
 
-  <!-- БЕЛА текстуална зона -->
-  <section class="white-section">
+  <!-- KARTICE (isti layout/stil kao index, samo sadržaj o nama) -->
+  <section class="split">
     <div class="container">
-      <p style="max-width:820px;margin:auto;text-align:center;">
-        <strong>Иксан</strong> је покрет грађана који повезује људе у борби за правду, истину и заједништво.
-        Основан као одговор на неправду и корупцију, данас представља глас хиљада који желе систем који служи човеку, а не моћнима.
-      </p>
-    </div>
-  </section>
+      <div class="grid">
+        <article class="card">
+          <h3>Ко смо</h3>
+          <p>Иксан није само удружење. То је покрет људи који верују да достојанство, истина и човечност не смеју бити луксуз.</p>
+        </article>
 
-  <!-- КАРТИЦЕ -->
-  <section class="cards">
-    <div class="container grid">
-      <article class="card">
-        <h2>Ко смо</h2>
-        <p>Иксан није само удружење. То је покрет људи који верују да достојанство, истина и човечност не смеју бити луксуз.</p>
-      </article>
+        <article class="card">
+          <h3>Зашто „Иксан“</h3>
+          <p>Име долази из романа „Иксан“ — лик човека који трага за истином постао је симбол сваког од нас.</p>
+        </article>
 
-      <article class="card">
-        <h2>Зашто се зовемо „Иксан“</h2>
-        <p>Име долази из романа „Иксан“ — лик човека који трага за истином постао је симбол сваког од нас.</p>
-      </article>
+        <article class="card">
+          <h3>Наша мисија</h3>
+          <p>Вратити поверење у систем и човека, заштитити оне без снаге, новца или веза и изградити Србију у којој је закон исти за све.</p>
+        </article>
 
-      <article class="card">
-        <h2>Наша мисија</h2>
-        <ul class="list">
-          <li>Вратити поверење у систем и човека.</li>
-          <li>Заштитити оне који немају снаге, новца или везе.</li>
-          <li>Створити Србију у којој је закон исти за све.</li>
-        </ul>
-      </article>
+        <article class="card">
+          <h3>Зашто смо настали</h3>
+          <p>Као одговор на неправду која је постала свакодневица — приватне извршитеље, корупцију и равнодушност.</p>
+        </article>
 
-      <article class="card">
-        <h2>Зашто смо настали</h2>
-        <p>Као одговор на неправду која је постала свакодневица — приватне извршитеље, корупцију и равнодушност.</p>
-      </article>
+        <article class="card">
+          <h3>Шта желимо</h3>
+          <p>Државу у којој институције служе грађанима; систем у којем нико није изнад закона; друштво у којем човечност није слабост.</p>
+        </article>
 
-      <article class="card">
-        <h2>Шта желимо</h2>
-        <ul class="list">
-          <li>Државу у којој институције служе грађанима.</li>
-          <li>Систем у којем нико није изнад закона.</li>
-          <li>Друштво у којем човечност није слабост.</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>Ко смо ми</h2>
-        <p>Ми смо грађани, радници, родитељи, студенти — свако ко верује да је правда заједничко добро.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Доњи CTA -->
-  <section>
-    <div class="container cta-block">
-      <h3>Снага правде расте твојом подршком</h3>
-      <p>Твоја помоћ нам омогућава бесплатну правну подршку и иницијативе које мењају праксу.</p>
-      <div class="cta-row" style="margin-top:10px">
-        <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-        <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
-        <a href="doniraj.html" class="btn btn-primary" target="_self">ДОНИРАЈ</a>
+        <article class="card">
+          <h3>Ко смо ми</h3>
+          <p>Ми смо грађани, радници, родитељи, студенти — свако ко верује да је правда заједничко добро.</p>
+        </article>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 Иксан • Снага правде — Сва права задржана.
-  </div>
+  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
 </footer>
 
 <script>
-  // Dropdown meni
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu.querySelector('.menu-btn');
 
