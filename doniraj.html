@@ -7,7 +7,7 @@
   <meta name="description" content="Док неко губи битку — ти можеш бити његов спас.">
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
-  <link rel="icon" href="providni.webp">
+  <link rel="icon" href="pro.webp">
   <style>
     :root{
       --deepBlue:#020c1b;   /* tamno najtamnije plava (svuda) */
@@ -35,41 +35,42 @@
       background:var(--deepBlue);
       border-bottom:1px solid rgba(255,255,255,.1);
     }
-    .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand img{height:150px;border-radius:12px} /* +50% veći logo */
-
-    /* NAV */
-    nav.nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-
-    /* osnovni nav linkovi (vidljivi: Početna, Kontakt) */
-    .nav a.nav-link{
-      background:var(--deepBlue);
-      color:#fff;
-      padding:8px 14px;
-      border-radius:10px;
-      border:1px solid rgba(255,255,255,.2);
-      font-weight:700;
-      transition:transform .15s ease,filter .15s ease;
+    .head{
+      display:flex;align-items:flex-start;justify-content:space-between;
+      padding:10px 0; gap:20px;
     }
-    .nav a.nav-link:hover{transform:translateY(-1px);filter:brightness(1.2)}
-    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
 
-    /* MENI (dropdown) */
-    .menu{position:relative}
+    /* LOGO: pro.webp, +50% */
+    .brand img{height:150px;border-radius:12px}
+
+    /* NAV: vertikalno desno (Почетна, Контакт, Мени) */
+    nav.nav{
+      display:flex;
+      flex-direction:column;         /* VERTIKALNO */
+      align-items:flex-start;        /* uz desnu stranu kontejnera */
+      gap:10px;
+      padding-top:6px;               /* malo poravnanje u odnosu na vrh logotipa */
+    }
+
+    .nav a.nav-link,
     .menu-btn{
       background:var(--deepBlue);
       color:#fff;
       padding:8px 14px;
       border-radius:10px;
       border:1px solid rgba(255,255,255,.2);
-      font-weight:800;
-      cursor:pointer;
+      font-weight:700;
+      line-height:1;
       transition:transform .15s ease,filter .15s ease;
+      white-space:nowrap;
     }
-    .menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
+    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
 
+    /* MENI (dropdown) */
+    .menu{position:relative}
     .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0;
+      position:absolute; top:calc(100% + 8px); left:0;   /* otvara se ispod dugmeta na levo poravnanje */
       background:var(--deepBlue);
       border:1px solid rgba(255,255,255,.2);
       border-radius:12px;
@@ -79,10 +80,7 @@
       display:none;
     }
     .menu.open .dropdown{display:block}
-    /* i na desktop hover-u otvori (zadržaćemo i JS za mobilni) */
-    @media (hover:hover){
-      .menu:hover .dropdown{display:block}
-    }
+    @media (hover:hover){ .menu:hover .dropdown{display:block} }
     .dropdown a{
       display:block;
       padding:10px 12px;
@@ -203,10 +201,10 @@
       background:var(--deepBlue);
     }
 
-    /* Mobilno ponašanje menija: poravnanje */
+    /* Mobilno ponašanje (vertikalni nav već dobro radi) */
     @media (max-width: 768px){
-      nav.nav{gap:8px}
-      .dropdown{right:0; left:auto; min-width:70vw}
+      .brand img{height:120px}
+      .dropdown{min-width:70vw}
     }
 
     /* Bez tamnog moda inverzije */
@@ -222,13 +220,15 @@
   <div class="container head">
     <div class="brand">
       <a href="index.html">
-        <!-- novi providni logo, +50% veći -->
-        <img src="providi.webp" alt="ИКСАН лого">
+        <!-- LOGO: pro.webp, +50% -->
+        <img src="pro.webp" alt="ИКСАН лого">
       </a>
     </div>
 
     <nav class="nav" aria-label="Главна навигација">
+      <!-- Redosled: Пočetna, Kontakt, Meni (vertikalno) -->
       <a class="nav-link" href="index.html">Почетна</a>
+      <a class="nav-link" href="kontakt.html">Контакт</a>
 
       <!-- Dropdown MENI -->
       <div class="menu" id="mainMenu">
@@ -249,8 +249,6 @@
           <a href="#gde-novac" role="menuitem">Где иде сваки динар</a>
         </div>
       </div>
-
-      <a class="nav-link" href="kontakt.html">Контакт</a>
     </nav>
   </div>
 </header>
@@ -402,7 +400,6 @@
   // Dropdown meni: tap/click toggle + klik van menija zatvara
   const menu     = document.getElementById('mainMenu');
   const menuBtn  = menu.querySelector('.menu-btn');
-  const menuList = document.getElementById('menuList');
 
   menuBtn.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('open');
