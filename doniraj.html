@@ -11,21 +11,23 @@
 
   <style>
     :root{
-      --blue:#0B2141;
-      --blue2:#102D57;
+      /* JEDINSTVENA PLAVA — koristi se za SVE plave pozadine i plavi tekst */
+      --brandBlue:#0B2141;
+
+      /* (ostalo) */
+      --blue2:#102D57;            /* koristi se samo za pozadinski gradijent stranice */
       --gold:#D3A451;
       --ink:#cfe1ff;
       --radius:16px;
-      --paper:#f6f9ff; /* svetla "bela" pozadina za sve sekcije */
-      --cardBlueTop:#1b3974;
-      --cardBlueBottom:#0f2552;
+      --paper:#f6f9ff;            /* svetla podloga oko plavih kartica/sekcija */
     }
 
     html{ color-scheme: light; -webkit-text-size-adjust:100%; }
     *{box-sizing:border-box;margin:0;padding:0}
 
     body{
-      background:linear-gradient(180deg,var(--blue) 0%,var(--blue2) 100%);
+      /* zadržavamo postojeći tamni gradijent stranice (može ostati različit) */
+      background:linear-gradient(180deg,var(--brandBlue) 0%,var(--blue2) 100%);
       color:var(--ink);
       font-family:"Times New Roman",serif;
       line-height:1.7;
@@ -37,6 +39,7 @@
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
+    /* HEADER */
     header{
       position:sticky;top:0;z-index:60;
       background:#fff;border-bottom:1px solid rgba(11,33,65,.12);
@@ -44,67 +47,133 @@
     }
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand img{height:114px;border-radius:12px}
+
+    /* NAV — plava pozadina = brandBlue */
     nav.nav{display:flex;gap:10px;flex-wrap:wrap}
     nav.nav a{
-      background:var(--blue);color:#fff;padding:8px 14px;border-radius:10px;
-      border:1px solid #0a1f3d;font-weight:600;letter-spacing:.2px;
-      box-shadow:0 2px 10px rgba(0,0,0,.12);transition:.15s;
+      background:var(--brandBlue); color:#fff;
+      padding:8px 14px;border-radius:10px;border:1px solid rgba(0,0,0,.25);
+      font-weight:600; letter-spacing:.2px;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+      transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
     }
-    nav.nav a:hover{transform:translateY(-1px);background:#0a1f3d;box-shadow:0 6px 18px rgba(0,0,0,.18)}
-    nav.nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:1px}
+    nav.nav a:hover{ transform:translateY(-1px); filter:brightness(1.05); box-shadow:0 6px 18px rgba(0,0,0,.18) }
+    nav.nav a[aria-current="page"]{ outline:2px solid var(--gold); outline-offset:1px }
 
+    /* HERO */
     .hero{padding:30px 0 0}
     .hero-grid{display:grid;gap:20px;grid-template-columns:1fr}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.05fr .95fr}}
     h1.title{color:#fff;font-weight:400;font-size:clamp(28px,3.6vw,38px);line-height:1.15;text-shadow:0 0 10px rgba(255,255,255,.45);margin-bottom:10px}
     p.subtitle{color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px);max-width:740px;margin:8px 0 16px;text-shadow:0 0 8px rgba(255,255,255,.25)}
-    .hero-media{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.16);box-shadow:0 10px 24px rgba(0,0,0,.32);background:#0f2552;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+
+    /* gde je ranije bila plava — sada JEDNA plava */
+    .hero-media{
+      border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.16);
+      box-shadow:0 10px 24px rgba(0,0,0,.32);
+      background:var(--brandBlue);
+      aspect-ratio:16/9; display:flex; align-items:center; justify-content:center;
+    }
     .hero-media img{width:100%;height:100%;object-fit:cover}
 
+    /* PANEL */
     .panel{margin-top:16px}
     .panel-box{
-      background:#fff;color:#0b2141;border:1px solid rgba(11,33,65,.12);
-      border-radius:var(--radius);padding:16px;box-shadow:0 10px 26px rgba(0,0,0,.16);
+      background:#fff;color:var(--brandBlue);
+      border:1px solid rgba(11,33,65,.12);
+      border-radius:var(--radius);padding:16px;
+      box-shadow:0 10px 26px rgba(0,0,0,.16);
     }
     .panel-grid{display:grid;gap:16px;align-items:center}
     @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
+
     .amount-grid{display:grid;gap:8px;grid-template-columns:repeat(3,minmax(90px,1fr))}
-    .chip{padding:9px 12px;border-radius:12px;text-align:center;background:var(--blue);color:#fff;border:1px solid rgba(11,33,65,.25);box-shadow:0 2px 10px rgba(0,0,0,.12);font-weight:500;font-size:15px;cursor:pointer;transition:.15s}
-    .chip:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.18)}
-    .chip[aria-pressed="true"]{background:linear-gradient(180deg,#f2d48f,#d3a451);color:#0b2141;border-color:#b98a40}
+    /* DUGMAD SA IZNOSIMA — izvor boje; sve ostalo se usklađuje sa ovim */
+    .chip{
+      padding:9px 12px;border-radius:12px;text-align:center;
+      background:var(--brandBlue); color:#fff;
+      border:1px solid rgba(0,0,0,.2);
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+      font-weight:500;font-size:15px;cursor:pointer;transition:.15s
+    }
+    .chip:hover{ transform:translateY(-1px); box-shadow:0 6px 16px rgba(0,0,0,.18); filter:brightness(1.05) }
+    .chip[aria-pressed="true"]{
+      background:linear-gradient(180deg,#f2d48f,#d3a451); color:var(--brandBlue);
+      border-color:#b98a40;
+    }
+
     .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    .custom input{width:160px;padding:10px 12px;border-radius:12px;background:#fff;border:1px solid rgba(11,33,65,.25);color:#0b2141;font-size:16px}
+    .custom input{
+      width:160px;padding:10px 12px;border-radius:12px;background:#fff;
+      border:1px solid rgba(11,33,65,.25);color:var(--brandBlue);font-size:16px
+    }
+
     .cta-stack{display:flex;flex-direction:column;gap:10px}
-    .btn{display:inline-block;padding:12px 26px;border-radius:40px;border:none;font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;cursor:pointer;text-align:center;transition:.2s;box-shadow:0 3px 0 rgba(0,0,0,.2),0 6px 18px rgba(0,0,0,.2)}
-    .btn-gold{background:linear-gradient(180deg,#e4b85c,#d3a451);color:#0b2141}
-    .btn-dark{background:linear-gradient(180deg,#1e3a72,#0f2552);color:#fff}
+    .btn{
+      display:inline-block;padding:12px 26px;border-radius:40px;border:none;
+      font-weight:700;font-size:16px;letter-spacing:.3px;text-transform:uppercase;
+      cursor:pointer;text-align:center;transition:.2s;
+      box-shadow:0 3px 0 rgba(0,0,0,.2),0 6px 18px rgba(0,0,0,.2)
+    }
+    .btn-gold{background:linear-gradient(180deg,#e4b85c,#d3a451);color:var(--brandBlue)}
+    /* TAMNO DUGME je sada ISTA plava */
+    .btn-dark{background:var(--brandBlue);color:#fff}
     .btn:hover{transform:translateY(-2px)}
 
-    .section{background:rgba(16,45,87,.92);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:20px;box-shadow:0 12px 28px rgba(0,0,0,.3);margin-top:18px}
+    /* GLOBALNE SEKCIJE (tamne) — ostaju tamne gde nisu „paper“ */
+    .section{
+      background:rgba(16,45,87,.92);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:var(--radius);
+      padding:20px; box-shadow:0 12px 28px rgba(0,0,0,.3);
+      margin-top:18px
+    }
     h2{color:#fff;font-weight:500;font-size:clamp(22px,2.8vw,26px);margin-bottom:10px;text-align:center;text-shadow:0 0 10px rgba(255,255,255,.3)}
 
-    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.25);color:#fff}
+    /* Default kartica (na tamnoj) */
+    .card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:14px;padding:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,.25); color:#fff
+    }
     .card-title{font-size:24px;color:#fff;margin-bottom:8px}
 
-    .card--blue{background:linear-gradient(180deg,var(--cardBlueTop),var(--cardBlueBottom));color:#fff;border:1px solid rgba(11,33,65,.35);box-shadow:0 10px 24px rgba(0,0,0,.28)}
-    .paper{background:var(--paper);border:1px solid rgba(11,33,65,.12);box-shadow:0 12px 28px rgba(0,0,0,.08);color:#0b2141}
-    .paper h2{color:var(--blue);text-shadow:none}
+    /* PLAVA KARTICA = isključivo brandBlue */
+    .card--blue{
+      background:var(--brandBlue); color:#fff;
+      border:1px solid rgba(0,0,0,.25);
+      box-shadow:0 10px 24px rgba(0,0,0,.28);
+    }
+    .card--blue .card-title{ color:#fff }
+
+    /* BELE/SVETLOPLAVE SEKCIJE OKO KARTICA */
+    .paper{
+      background:var(--paper);
+      border:1px solid rgba(11,33,65,.12);
+      box-shadow:0 12px 28px rgba(0,0,0,.08);
+      color:var(--brandBlue);
+    }
+    /* sav tekst koji „treba da je plav“ koristi TAČNO ISTU plavu */
+    .paper h2{ color:var(--brandBlue); text-shadow:none }
 
     .bank{text-align:center;font-size:18px;line-height:1.9}
     .book{display:grid;gap:16px;align-items:center}
     @media(min-width:920px){.book{grid-template-columns:auto 1fr}}
     .book img{max-width:220px;border-radius:12px;border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 26px rgba(0,0,0,.4)}
     .stanza{font-size:20px;color:#fff;line-height:1.7;white-space:pre-line}
-    footer{border-top:1px solid rgba(255,255,255,.14);color:var(--ink);text-align:center;padding:24px 0;opacity:.7;font-size:.9rem;margin-top:30px}
 
+    footer{border-top:1px solid rgba(255,255,255,.14);color:#cfe1ff;text-align:center;padding:24px 0;opacity:.7;font-size:.9rem;margin-top:30px}
+
+    /* MOBILNI — svetla podloga + bez auto-dark */
     @media(max-width:768px){
-      html,body{background:#ffffff !important;color:#0b2141;}
+      html,body{background:#ffffff !important;color:var(--brandBlue);}
       header{background:#fff}
       .paper{background:#ffffff !important}
       .card--blue{color:#fff}
     }
     @media(prefers-color-scheme:dark){
-      html,body{background:#ffffff !important;color:#0b2141 !important;}
+      html,body{background:#ffffff !important;color:var(--brandBlue) !important;}
       .paper{background:#ffffff !important;}
     }
   </style>
@@ -129,6 +198,7 @@
 </header>
 
 <main>
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div>
@@ -139,6 +209,7 @@
     </div>
   </section>
 
+  <!-- PANEL: износи и дугмад -->
   <section class="panel">
     <div class="container">
       <div class="panel-box">
@@ -163,36 +234,54 @@
     </div>
   </section>
 
+  <!-- ГДЕ ИДЕ НОВАЦ — BELO/SVETLO OKO, PLAVE KARTICE JEDNAKA PLAVA -->
   <section class="section paper">
     <div class="container">
       <h2>Где иде сваки динар</h2>
       <div class="grid3">
-        <div class="card card--blue"><div class="card-title">Одбрана грађана</div>Писане жалбе, приговори, пријаве и поднесци.</div>
-        <div class="card card--blue"><div class="card-title">Глас народа</div>Штампа петиција, плаката и брошура.</div>
-        <div class="card card--blue"><div class="card-title">Стручна помоћ & солидарност</div>Ангажовање правних стручњака и помоћ угроженима.</div>
+        <div class="card card--blue">
+          <div class="card-title">Одбрана грађана</div>
+          Писане жалбе, приговори, пријаве и поднесци.
+        </div>
+        <div class="card card--blue">
+          <div class="card-title">Глас народа</div>
+          Штампа петиција, плаката и брошура.
+        </div>
+        <div class="card card--blue">
+          <div class="card-title">Стручна помоћ & солидарност</div>
+          Ангажовање правних стручњака и помоћ угроженима.
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- УПЛАТА НА РАЧУН — PLAVA KARTICA, TEKST BEL, OKO SVETLO -->
   <section id="racun" class="section paper">
     <div class="container">
       <h2>Уплата на рачун</h2>
       <div class="card card--blue bank">
-        <p>Назив: <strong>Иксан — Снага правде</strong><br>Сврха: <strong>Донација — „Снага правде“</strong><br>Рачун: <strong>Ускоро</strong><br>Позив на број: <strong>3110/2025</strong></p>
+        <p>Назив: <strong>Иксан — Снага правде</strong><br>
+           Сврха: <strong>Донација — „Снага правде“</strong><br>
+           Рачун: <strong>Ускоро</strong><br>
+           Позив на број: <strong>3110/2025</strong></p>
         <img src="ips-qr-placeholder.png" alt="IPS QR" style="max-width:220px;border-radius:12px;margin:8px auto 0;display:block">
       </div>
     </div>
   </section>
 
+  <!-- КЊИГА — PLAVA KARTICA, NASLOV PLAV OKO SVETLO -->
   <section id="knjiga" class="section paper">
     <div class="container">
       <h2>ИКСАН — књига која помаже</h2>
-      <div class="card card--blue"><div class="book">
-        <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html"><img src="iksan.webp" alt="ИКСАН — корица књиге"></a>
-        <div>
-          <p class="stanza">По истинитим догађајима — прича о храбрости, губитку и правди. Сав ауторски хонорар иде у хуманитарне сврхе.</p>
-          <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
-        </div></div>
+      <div class="card card--blue">
+        <div class="book">
+          <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html"><img src="iksan.webp" alt="ИКСАН — корица књиге"></a>
+          <div>
+            <p class="stanza">По истинитим догађајима — прича о храбрости, губитку и правди.
+Сав ауторски хонорар иде у хуманитарне сврхе.</p>
+            <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -208,13 +297,17 @@ const custom=document.getElementById('customAmount');
 const toRacun=document.getElementById('toRacun');
 function setActiveAmount(amount){
   chips.forEach(c=>c.setAttribute('aria-pressed','false'));
-  if(amount&&amount>=100){payBtn.href=PAYMENT_REDIRECT_BASE+encodeURIComponent(amount);payBtn.textContent="ДОНИРАЈ КАРТИЦОМ — "+amount.toLocaleString('sr-RS')+" RSD";}
-  else{payBtn.href="PAYMENT_URL";payBtn.textContent="ДОНИРАЈ КАРТИЦОМ";}
-  chips.forEach(c=>{if(parseInt(c.dataset.amount,10)===amount)c.setAttribute('aria-pressed','true');});
+  if(amount&&amount>=100){
+    payBtn.href=PAYMENT_REDIRECT_BASE+encodeURIComponent(amount);
+    payBtn.textContent="ДОНИРАЈ КАРТИЦОМ — "+amount.toLocaleString('sr-RS')+" RSD";
+  }else{
+    payBtn.href="PAYMENT_URL"; payBtn.textContent="ДОНИРАЈ КАРТИЦОМ";
+  }
+  chips.forEach(c=>{ if(parseInt(c.dataset.amount,10)===amount) c.setAttribute('aria-pressed','true'); });
 }
-chips.forEach(c=>c.addEventListener('click',()=>{const v=parseInt(c.dataset.amount,10);if(!isNaN(v)){custom.value="";setActiveAmount(v);}else custom.focus();}));
-custom.addEventListener('input',e=>{const v=parseInt(e.target.value,10);setActiveAmount(!isNaN(v)?v:0);});
-toRacun.addEventListener('click',e=>{const t=document.querySelector('#racun');if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});history.pushState(null,'','#racun');}});
+chips.forEach(c=>c.addEventListener('click',()=>{const v=parseInt(c.dataset.amount,10); if(!isNaN(v)){custom.value=""; setActiveAmount(v);} else custom.focus();}));
+custom.addEventListener('input',e=>{const v=parseInt(e.target.value,10); setActiveAmount(!isNaN(v)?v:0);});
+toRacun.addEventListener('click',e=>{const t=document.querySelector('#racun'); if(t){e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); history.pushState(null,'','#racun');}});
 </script>
 </body>
 </html>
