@@ -12,13 +12,21 @@
     :root{
       --blue:#0B2141;
       --blue2:#102D57;
-      --lightHead1:#123366;
-      --lightHead2:#0f295a;
       --gold:#D3A451;
-      --goldDeep:#B88A3F;
       --ink:#cfe1ff;
-      --line:rgba(255,255,255,.14);
       --radius:16px;
+
+      /* Bela pozadina oko kartica u specifičnim sekcijama */
+      --paper:#ffffff; /* promeni u #f6f9ff za jako svetlo plavu */
+      /* Plava kartica (pozadina) */
+      --cardBlueTop:#1b3974;
+      --cardBlueBottom:#0f2552;
+    }
+
+    /* Spreči auto-dark i inverzije boja na mobilnim browserima */
+    html{
+      color-scheme: light;
+      -webkit-text-size-adjust: 100%;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
@@ -51,7 +59,6 @@
       border-radius:12px;
     }
 
-    /* Navigacija kao kartice: plava pozadina, bela slova */
     nav.nav{display:flex;gap:10px;flex-wrap:wrap}
     nav.nav a{
       background:var(--blue);
@@ -126,7 +133,7 @@
       padding:9px 12px;
       border-radius:12px;
       text-align:center;
-      background:var(--blue);            /* dugmad zadržavaju svoju (plavu) pozadinu */
+      background:var(--blue);            /* dugmad ostaju plava */
       color:#ffffff;
       border:1px solid rgba(11,33,65,.25);
       box-shadow:0 2px 10px rgba(0,0,0,.12);
@@ -167,9 +174,16 @@
     .btn:hover{transform:translateY(-2px)}
 
     /* ===========================
-       SEKCIJE ispod
+       GLOBALNE SEKCIJE (tamne)
        =========================== */
-    .section{background:rgba(16,45,87,.92);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:20px;box-shadow:0 12px 28px rgba(0,0,0,.3);margin-top:18px}
+    .section{
+      background:rgba(16,45,87,.92);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:var(--radius);
+      padding:20px;
+      box-shadow:0 12px 28px rgba(0,0,0,.3);
+      margin-top:18px
+    }
     h2{
       color:#fff; font-weight:500;
       font-size:clamp(22px,2.8vw,26px);
@@ -177,8 +191,41 @@
     }
     .grid3{display:grid;gap:14px}
     @media(min-width:980px){.grid3{grid-template-columns:repeat(3,1fr)}}
-    .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
-    .card-title{font-size:24px;color:#fff;margin-bottom:8px;text-shadow:0 0 10px rgba(255,255,255,.28)}
+
+    /* Default „tamna“ kartica */
+    .card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:14px;
+      padding:16px;
+      box-shadow:0 8px 20px rgba(0,0,0,.25);
+      color:#fff;
+    }
+    .card-title{
+      font-size:24px;color:#fff;margin-bottom:8px;
+      text-shadow:0 0 10px rgba(255,255,255,.28)
+    }
+
+    /* === NOVO: Plava kartica sa belim tekstom (ostaje plava svuda gde je traženo) === */
+    .card--blue{
+      background:linear-gradient(180deg,var(--cardBlueTop),var(--cardBlueBottom));
+      color:#ffffff;
+      border:1px solid rgba(11,33,65,.35);
+      box-shadow:0 10px 24px rgba(0,0,0,.28);
+    }
+    .card--blue .card-title{ color:#fff; text-shadow:none; }
+
+    /* === NOVO: Sekcije sa čistom belom pozadinom oko plavih kartica === */
+    .paper{
+      background:var(--paper);
+      border:1px solid rgba(11,33,65,.12);
+      box-shadow:0 12px 28px rgba(0,0,0,.08);
+      color:#0b2141;
+    }
+    .paper h2{
+      color:var(--blue);
+      text-shadow:none;
+    }
 
     .bank{text-align:center;font-size:18px;line-height:1.9}
     .book{display:grid;gap:16px;align-items:center}
@@ -196,39 +243,37 @@
       margin-top:30px;
     }
 
-    /* ===== Sekcija "Где иде сваки динар" — bela pozadina, kartice ostaju iste ===== */
-    .section.money{
-      background:#ffffff;           /* čisto bela oko kartica */
-      border:none;
-      box-shadow:none;
-      color:#0b2141;
-    }
-    .section.money h2{
-      color:var(--blue);            /* naslov plav */
-      text-shadow:none;
-    }
-    /* kartice namerno ostaju u originalnoj boji/stilu (.card iznad) */
-
-    /* ===== MOBILNI: cela stranica čisto bela ===== */
+    /* ===== MOBILNI: čista bela svuda + no-dark-override ===== */
     @media (max-width: 768px){
-      body{
-        background:#ffffff !important;
-        color:#0b2141;
-      }
+      html, body{ background:#ffffff !important; }
+      body{ color:#0b2141; }
+
       header{
         background:#ffffff;
         border-bottom:1px solid rgba(11,33,65,.12);
       }
+
       h1.title, .stanza, .card-title, h2{
         color:#0b2141;
         text-shadow:none;
       }
+
       .hero-media{
         background:#ffffff;
         border:1px solid rgba(11,33,65,.12);
         box-shadow:0 6px 16px rgba(0,0,0,.08);
       }
-      /* u "Где иде сваки динар" naslov ostaje plav zahvaljujući specifičnijem selektoru .section.money h2 */
+
+      /* Bele sekcije ostaju bele; plave kartice ostaju plave */
+      .paper{ background:#ffffff !important; color:#0b2141; }
+      .paper h2{ color:var(--blue); }
+      .card--blue{ color:#ffffff; } /* tekst ostaje beo */
+    }
+
+    /* Ako korisnik ima dark mode, i dalje forsiramo belu pozadinu stranice */
+    @media (prefers-color-scheme: dark){
+      html, body{ background:#ffffff !important; color:#0b2141 !important; }
+      .paper{ background:#ffffff !important; }
     }
   </style>
 </head>
@@ -298,20 +343,20 @@
     </div>
   </section>
 
-  <!-- ГДЕ ИДЕ НОВАЦ -->
-  <section class="section money">
+  <!-- ГДЕ ИДЕ НОВАЦ — BELO OKO, PLAVE KARTICE -->
+  <section class="section paper">
     <div class="container">
       <h2>Где иде сваки динар</h2>
       <div class="grid3">
-        <div class="card">
+        <div class="card card--blue">
           <div class="card-title">Одбрана грађана</div>
           Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.
         </div>
-        <div class="card">
+        <div class="card card--blue">
           <div class="card-title">Глас народа</div>
           Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.
         </div>
-        <div class="card">
+        <div class="card card--blue">
           <div class="card-title">Стручна помоћ & солидарност</div>
           Ангажовање правних стручњака и хитна помоћ најугроженијима (дугови, лекови, рачуни).
         </div>
@@ -319,11 +364,11 @@
     </div>
   </section>
 
-  <!-- УПЛАТА НА РАЧУН -->
-  <section id="racun" class="section">
+  <!-- УПЛАТА НА РАЧУН — SVE U KARTICI (PLAVA), POZADINA OKO BELA -->
+  <section id="racun" class="section paper">
     <div class="container">
       <h2>Уплата на рачун</h2>
-      <div class="bank">
+      <div class="card card--blue bank">
         <p>Назив: <strong>Иксан — Снага правде</strong><br>
            Сврха: <strong>Донација — „Снага правде“</strong><br>
            Рачун: <strong>Ускоро</strong><br>
@@ -333,19 +378,21 @@
     </div>
   </section>
 
-  <!-- КЊИГА -->
-  <section class="section" id="knjiga">
+  <!-- КЊИГА — KARTICA PLAVA, OKO BELA -->
+  <section class="section paper" id="knjiga">
     <div class="container">
       <h2>ИКСАН — књига која помаже</h2>
-      <div class="book">
-        <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
-          <img src="iksan.webp" alt="ИКСАН — корица књиге">
-        </a>
-        <div>
-          <p class="stanza">По истинитим догађајима —
+      <div class="card card--blue" style="padding:0">
+        <div class="book" style="padding:16px">
+          <a href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">
+            <img src="iksan.webp" alt="ИКСАН — корица књиге">
+          </a>
+          <div>
+            <p class="stanza" style="color:#fff;text-shadow:none">По истинитим догађајима —
 прича о храбрости, губитку и правди.
 Сав ауторски хонорар иде у хуманитарне сврхе.</p>
-          <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
+            <a class="btn btn-gold" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html">Купи књигу ИКСАН</a>
+          </div>
         </div>
       </div>
     </div>
@@ -399,7 +446,7 @@
     }
   });
 
-  // Mobilni: setuj theme-color na belu radi čistog belog status bara
+  // Mobilni: status bar u beloj; desktop plav
   (function(){
     var m = document.querySelector('meta[name="theme-color"]');
     if(!m){ m = document.createElement('meta'); m.setAttribute('name','theme-color'); document.head.appendChild(m); }
