@@ -46,8 +46,8 @@
     .head{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
     .brand{display:flex;align-items:center;gap:12px}
     .brand img{
-      /* +10% u odnosu na 80px */
-      height:88px;
+      /* +30% u odnosu na 88px */
+      height:114px;
       border-radius:12px;
     }
 
@@ -195,6 +195,41 @@
       font-size:.9rem;
       margin-top:30px;
     }
+
+    /* ===== Sekcija "Где иде сваки динар" — bela pozadina, kartice ostaju iste ===== */
+    .section.money{
+      background:#ffffff;           /* čisto bela oko kartica */
+      border:none;
+      box-shadow:none;
+      color:#0b2141;
+    }
+    .section.money h2{
+      color:var(--blue);            /* naslov plav */
+      text-shadow:none;
+    }
+    /* kartice namerno ostaju u originalnoj boji/stilu (.card iznad) */
+
+    /* ===== MOBILNI: cela stranica čisto bela ===== */
+    @media (max-width: 768px){
+      body{
+        background:#ffffff !important;
+        color:#0b2141;
+      }
+      header{
+        background:#ffffff;
+        border-bottom:1px solid rgba(11,33,65,.12);
+      }
+      h1.title, .stanza, .card-title, h2{
+        color:#0b2141;
+        text-shadow:none;
+      }
+      .hero-media{
+        background:#ffffff;
+        border:1px solid rgba(11,33,65,.12);
+        box-shadow:0 6px 16px rgba(0,0,0,.08);
+      }
+      /* u "Где иде сваки динар" naslov ostaje plav zahvaljujući specifičnijem selektoru .section.money h2 */
+    }
   </style>
 </head>
 
@@ -264,7 +299,7 @@
   </section>
 
   <!-- ГДЕ ИДЕ НОВАЦ -->
-  <section class="section">
+  <section class="section money">
     <div class="container">
       <h2>Где иде сваки динар</h2>
       <div class="grid3">
@@ -363,6 +398,21 @@
       history.pushState(null, '', '#racun');
     }
   });
+
+  // Mobilni: setuj theme-color na belu radi čistog belog status bara
+  (function(){
+    var m = document.querySelector('meta[name="theme-color"]');
+    if(!m){ m = document.createElement('meta'); m.setAttribute('name','theme-color'); document.head.appendChild(m); }
+    function syncTheme(){
+      if (window.matchMedia('(max-width: 768px)').matches){
+        m.setAttribute('content','#ffffff');
+      } else {
+        m.setAttribute('content','#0B2141');
+      }
+    }
+    syncTheme();
+    window.addEventListener('resize', syncTheme);
+  })();
 </script>
 </body>
 </html>
