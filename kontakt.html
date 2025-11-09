@@ -50,7 +50,7 @@
       box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
     }
     .menu.open .dropdown{ display:block }
-    @media (hover:hover){ .menu:hover .dropdown{ display:block } }
+    @media (hover:hover){ .menu:hover <div class="dropdown" id="menuList" role="menu"> { display:block } }
     .dropdown a{
       display:block; padding:9px 10px; border-radius:8px; color:#fff; font-weight:600; font-size:14px;
       white-space:nowrap; border:1px solid transparent;
@@ -95,7 +95,7 @@
     input::placeholder, textarea::placeholder{ color:rgba(255,255,255,.55) }
     textarea{ min-height:120px; resize:vertical }
     .submit{
-      background:var(--gold); color:var(--deepBlue); font-weight:700; padding:10px 0; border-radius:30px; cursor:pointer;
+      background:var(--gold); color:#000; font-weight:700; padding:10px 0; border-radius:30px; cursor:pointer;
       transition:transform .2s, box-shadow .2s; border:none; box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
     }
     .submit:hover{ transform:translateY(-2px) }
@@ -202,12 +202,10 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-      menuBtn.focus();
     }
   });
 
-  // --- KONTAKT FORMA: slanje na Google Apps Script (JSON + CORS) ---
+  // --- Kontakt forma: slanje na GAS (JSON + CORS) ---
   const ENDPOINT = 'https://script.google.com/macros/s/AKfycbxYaRPYeqFHaexc2_Q3Q8dngZNeYuHQvrbsf0uWNFXeXclkG09pZhfKNMTCPZbSn4dvdQ/exec';
   const form = document.getElementById('kontakt-form');
   const status = document.getElementById('status');
@@ -216,7 +214,6 @@
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // honeypot: ako je popunjen, prekini
     const hp = form.querySelector('input[name="website"]');
     if (hp && hp.value.trim() !== '') return;
 
@@ -229,7 +226,6 @@
       return;
     }
 
-    // UI lock
     submitBtn.disabled = true;
     submitBtn.style.opacity = .7;
     status.textContent = 'Шаљем поруку…';
@@ -242,17 +238,28 @@
         body: JSON.stringify({ ime, email, poruka })
       });
 
-      // očekujemo JSON { ok: true } sa CORS headerom
-      const json = await res.json();
+      let json;
+      try {
+        json = await res.json();
+      } catch (parseErr) {
+        const text = await res.text();
+        status.textContent = `⚠️ Одговор није JSON (HTTP ${res.status}). Текст: ${text.slice(0,160)}…`;
+        return;
+      }
+
+      if (!res.ok) {
+        status.textContent = `⚠️ HTTP ${res.status}: ${json?.error || 'Грешка.'}`;
+        return;
+      }
 
       if (json && json.ok) {
         form.reset();
         window.location.href = 'hvala.html';
       } else {
-        status.textContent = '⚠️ Грешка: ' + (json?.error || 'Покушајте касније.');
+        status.textContent = '⚠️ ' + (json?.error || 'Покушајте касније.');
       }
     } catch (err) {
-      status.textContent = '❌ Грешка у мрежи. Покушајте поново.';
+      status.textContent = '❌ Грешка у мрежи: ' + String(err).slice(0,140);
       console.error(err);
     } finally {
       submitBtn.disabled = false;
