@@ -204,15 +204,25 @@
       <!-- ФОРМА ЗА ПРИЈАВУ -->
       <article class="card full form-wrap" id="prijava">
         <h2>Пошаљи пријаву</h2>
-        <form id="prijava-form" autocomplete="on" novalidate>
+
+        <!-- SKRIVENI IFRAME: isti trik kao na Kontakt -->
+        <iframe name="hiddenFrame" style="display:none"
+                onload="if(window._submitted){ window.location.href='hvala.html'; }"></iframe>
+
+        <!-- KORISTIMO ISTI /exec KAO NA Kontakt STRANICI -->
+        <form id="prijava-form" autocomplete="on" novalidate
+              action="https://script.google.com/macros/s/AKfycbyMmneHv6WfM90XrTYE9vyJr_-rzQvUa-qHTcudoD4AwWEOxcL2H9qDJmGCjAjMiTIoSg/exec"
+              method="GET" target="hiddenFrame" accept-charset="UTF-8"
+              onsubmit="window._submitted=true;">
+
           <div class="row">
             <div>
               <label for="ime">Име и презиме (опционо)</label>
-              <input type="text" id="ime" name="ime" placeholder="Нпр. Јован Јовановић" />
+              <input type="text" id="ime" name="ime_local" placeholder="Нпр. Јован Јовановић" />
             </div>
             <div>
               <label for="email">Е-пошта (за повратну информацију)</label>
-              <input type="email" id="email" name="email" placeholder="ime@primer.rs" />
+              <input type="email" id="email" name="email_local" placeholder="ime@primer.rs" />
             </div>
           </div>
 
@@ -271,8 +281,16 @@
             <span>Прихватам да се моји подаци обрађују искључиво ради провере навода из пријаве, у складу са законом и правилима приватности.</span>
           </label>
 
+          <!-- SKRIVENA POLJA KOJA GAS OČEKUJE (ISTO KAO NA KONTAKT) -->
+          <input type="hidden" name="ime" id="ime_send">
+          <input type="hidden" name="email" id="email_send">
+          <textarea name="poruka" id="poruka_send" hidden></textarea>
+
+          <!-- honeypot (anti-spam) -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
+
           <!-- status -->
-          <p id="status" style="margin:4px 0 0;color:#cfe1ff"></p>
+          <p id="status" role="status" aria-live="polite" style="margin:4px 0 0;color:#cfe1ff"></p>
 
           <button type="submit" class="submit">ПОШАЉИ ПРИЈАВУ</button>
         </form>
@@ -312,24 +330,21 @@
     });
   }
 
-  // --- PRIJAVA: slanje na isti GAS kao kontakt ---
-  const ENDPOINT = 'https://script.google.com/macros/s/AKfycbyuAenEyWlG1UGlNdI8Rfj9fCklkPg48fsNIe0uLgwP9DJM-_-EnudfKwMdWir_wkXDJg/exec';
+  // --- PRIJAVA: isti mehanizam kao Kontakt (GET u hidden iframe)
   const form = document.getElementById('prijava-form');
   const status = document.getElementById('status');
-  const submitBtn = form.querySelector('.submit');
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // osnovna validacija (ostaje tvoja UX logika)
+  form.addEventListener('submit', (e) => {
+    // Minimalna validacija (isto ponašanje kao prethodno)
     const tip = document.getElementById('tip');
     const opis = document.getElementById('opis');
     const sag = document.getElementById('saglasnost');
-    if (!tip.value) { alert('Молимо изабери тип неправде.'); tip.focus(); return; }
-    if (!opis.value.trim()) { alert('Молимо опиши шта се десило.'); opis.focus(); return; }
-    if (!sag.checked) { alert('Потребна је сагласност за обраду података.'); sag.focus(); return; }
 
-    // polja
+    if (!tip.value) { e.preventDefault(); window._submitted=false; alert('Молимо изабери тип неправде.'); tip.focus(); return; }
+    if (!opis.value.trim()) { e.preventDefault(); window._submitted=false; alert('Молимо опиши шта се десило.'); opis.focus(); return; }
+    if (!sag.checked) { e.preventDefault(); window._submitted=false; alert('Потребна је сагласност за обраду података.'); sag.focus(); return; }
+
+    // Skupljanje polja
     const ime = (document.getElementById('ime').value || '').trim();
     const email = (document.getElementById('email').value || '').trim();
     const telefon = (document.getElementById('telefon').value || '').trim();
@@ -338,43 +353,31 @@
     const subjekti = (document.getElementById('subjekti').value || '').trim();
     const dokazi = (document.getElementById('dokazi').value || '').trim();
     const ishod = (document.getElementById('ishod').value || '').trim();
+    const tipVal = tip.value || '-';
+    const opisVal = opis.value || '-';
 
-    // sastavi JEDNO polje "poruka" da ne diramo GAS backend
+    // Sastavi jednu "poruka" (kao na Kontakt)
     const poruka =
-      `Тип: ${tip.value || '-'}\n` +
-      `Опис: ${opis.value || '-'}\n\n` +
+      `Тип: ${tipVal}\n` +
+      `Опис: ${opisVal}\n\n` +
       `Општина/град: ${opstina || '-'}\n` +
       `Датум/период: ${datum || '-'}\n` +
       `Ко је укључен: ${subjekti || '-'}\n` +
       `Докази (линкови): ${dokazi || '-'}\n` +
       `Жељени исход: ${ishod || '-'}\n\n` +
-      `Телефон (опц.): ${telefon || '-'}\n`;
+      `Телефон (опц.): ${telefon || '-'}`;
 
-    submitBtn.disabled = true; submitBtn.style.opacity = .7;
+    // Upis u skrivena polja koja GAS očekuje
+    document.getElementById('ime_send').value = ime;
+    document.getElementById('email_send').value = email;
+    document.getElementById('poruka_send').value = poruka;
+
+    // UX
     status.textContent = 'Шаљем пријаву…';
 
-    try {
-      const res = await fetch(ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ime, email, poruka })
-      });
-
-      const json = await res.json().catch(() => ({}));
-      if (res.ok && json && json.ok) {
-        form.reset();
-        window.location.href = 'hvala.html';
-      } else {
-        status.textContent = '⚠️ Грешка: ' + (json?.error || ('HTTP ' + res.status));
-      }
-    } catch (err) {
-      status.textContent = '❌ Грешка у мрежи: ' + err.message;
-      console.error(err);
-    } finally {
-      submitBtn.disabled = false; submitBtn.style.opacity = 1;
-    }
+    // Ne pozivamo preventDefault; forma se normalno šalje (GET) u hidden iframe.
+    // Redirect na hvala.html dešava se u onload handleru iframe-a.
   });
 </script>
 </body>
 </html>
-
