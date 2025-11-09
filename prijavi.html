@@ -142,7 +142,8 @@
         </div>
       </div>
       <div class="hero-media">
-        <img src="hero.webp" alt="Пријави неправду — Иксан • Снага правде">
+        <!-- замена слике: hero.webp -> magn.webp -->
+        <img src="magn.webp" alt="Пријави неправду — Иксан • Снага правде">
       </div>
     </div>
   </section>
@@ -205,11 +206,9 @@
       <article class="card full form-wrap" id="prijava">
         <h2>Пошаљи пријаву</h2>
 
-        <!-- SKRIVENI IFRAME: isti trik kao na Kontakt -->
         <iframe name="hiddenFrame" style="display:none"
                 onload="if(window._submitted){ window.location.href='hvala.html'; }"></iframe>
 
-        <!-- KORISTIMO ISTI /exec KAO NA Kontakt STRANICI -->
         <form id="prijava-form" autocomplete="on" novalidate
               action="https://script.google.com/macros/s/AKfycbyMmneHv6WfM90XrTYE9vyJr_-rzQvUa-qHTcudoD4AwWEOxcL2H9qDJmGCjAjMiTIoSg/exec"
               method="GET" target="hiddenFrame" accept-charset="UTF-8"
@@ -239,7 +238,7 @@
 
           <div class="row">
             <div>
-              <label for="tip">Тип неправде</label>
+              <label for="тип">Тип неправде</label>
               <select id="tip" name="tip" required>
                 <option value="">— изабери —</option>
                 <option>Извршење/извршитељ</option>
@@ -281,15 +280,12 @@
             <span>Прихватам да се моји подаци обрађују искључиво ради провере навода из пријаве, у складу са законом и правилима приватности.</span>
           </label>
 
-          <!-- SKRIVENA POLJA KOJA GAS OČEKUJE (ISTO KAO NA KONTAKT) -->
           <input type="hidden" name="ime" id="ime_send">
           <input type="hidden" name="email" id="email_send">
           <textarea name="poruka" id="poruka_send" hidden></textarea>
 
-          <!-- honeypot (anti-spam) -->
           <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
 
-          <!-- status -->
           <p id="status" role="status" aria-live="polite" style="margin:4px 0 0;color:#cfe1ff"></p>
 
           <button type="submit" class="submit">ПОШАЉИ ПРИЈАВУ</button>
@@ -330,12 +326,11 @@
     });
   }
 
-  // --- PRIJAVA: isti mehanizam kao Kontakt (GET u hidden iframe)
+  // --- PRIJAVA: GET u hidden iframe + redirect na hvala.html
   const form = document.getElementById('prijava-form');
   const status = document.getElementById('status');
 
   form.addEventListener('submit', (e) => {
-    // Minimalna validacija (isto ponašanje kao prethodno)
     const tip = document.getElementById('tip');
     const opis = document.getElementById('opis');
     const sag = document.getElementById('saglasnost');
@@ -344,7 +339,6 @@
     if (!opis.value.trim()) { e.preventDefault(); window._submitted=false; alert('Молимо опиши шта се десило.'); opis.focus(); return; }
     if (!sag.checked) { e.preventDefault(); window._submitted=false; alert('Потребна је сагласност за обраду података.'); sag.focus(); return; }
 
-    // Skupljanje polja
     const ime = (document.getElementById('ime').value || '').trim();
     const email = (document.getElementById('email').value || '').trim();
     const telefon = (document.getElementById('telefon').value || '').trim();
@@ -356,7 +350,6 @@
     const tipVal = tip.value || '-';
     const opisVal = opis.value || '-';
 
-    // Sastavi jednu "poruka" (kao na Kontakt)
     const poruka =
       `Тип: ${tipVal}\n` +
       `Опис: ${opisVal}\n\n` +
@@ -367,16 +360,11 @@
       `Жељени исход: ${ishod || '-'}\n\n` +
       `Телефон (опц.): ${telefon || '-'}`;
 
-    // Upis u skrivena polja koja GAS očekuje
     document.getElementById('ime_send').value = ime;
     document.getElementById('email_send').value = email;
     document.getElementById('poruka_send').value = poruka;
 
-    // UX
     status.textContent = 'Шаљем пријаву…';
-
-    // Ne pozivamo preventDefault; forma se normalno šalje (GET) u hidden iframe.
-    // Redirect na hvala.html dešava se u onload handleru iframe-a.
   });
 </script>
 </body>
