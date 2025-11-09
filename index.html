@@ -53,32 +53,37 @@
       .brand img{height:106px}
     }
 
-    /* ➕ DODATO: gornja linija sa dužim nazivom i 25% većim logoom */
+    /* ➕ GORNJA LINIJA: duži naziv i poravnanje */
     .head{ flex-wrap: wrap; } /* dozvola za 2 reda: gore brand, dole meni */
     .brand-bar{ flex:1 1 100%; display:block; margin:4px 0 2px; }
-    .brand-link{ display:flex; align-items:center; gap:12px; text-decoration:none; color:#fff; min-width:0; }
-    .brand-logo{ height:201px; width:auto; border-radius:10px; display:block; } /* 161px * 1.25 */
-    .brand-wordline{
-      font-family:"Times New Roman",serif;
-      font-weight:400;
-      color:#ffffff;
-      line-height:1.1;
-      letter-spacing:.2px;
+    .brand-link{ display:flex; align-items:flex-start; gap:12px; text-decoration:none; color:#fff; min-width:0; }
+    .brand-logo{ height:201px; width:auto; border-radius:10px; display:block; }
+
+    .brand-text{
+      display:inline-flex;
+      flex-direction:column;
+      gap:2px;
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      font-size:clamp(18px,2.4vw,26px);
+      line-height:1.1;
+      margin-top:6px; /* fino spuštanje teksta naspram logotipa */
     }
-    @media (max-width:768px){
-      .brand-logo{ height:132px; } /* 106px * 1.25 */
-      .brand-wordline{ font-size:clamp(16px,4.4vw,20px); }
+    .brand-line1{
+      font-weight:800;
+      font-size:clamp(16px, 2.2vw, 20px);
+    }
+    .brand-line2{
+      font-weight:700;
+      font-size:clamp(18px, 2.6vw, 22px);
     }
 
     /* НАВИГАЦИЈА */
     nav.nav{
       display:flex;flex-direction:row;align-items:center;gap:10px;
       padding-top:0; padding-right:8px;
-      margin-top:2px; /* malo odvajanje ispod gornje linije */
+      margin-top:2px;
+      margin-left:218px; /* poravnanje: U / I / P u istoj vertikali (podesivo) */
     }
     .nav a.nav-link, .menu-btn{
       background:var(--deepBlue); color:#fff;
@@ -203,13 +208,15 @@
     @media (max-width:768px){
       body{font-size:90%;}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
-      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
+      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0; margin-left:144px;} /* mobilno poravnanje */
       .menu-btn{margin-right:6px;}
+      .brand-logo{height:132px;margin-top:4px;}
+      .brand-text{margin-top:4px;}
     }
 
     @media (max-width:360px){
       .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
-      nav.nav{gap:4px}
+      nav.nav{gap:4px; margin-left:120px;} /* još uže poravnanje na najmanjim širinama */
     }
 
     /* 🎵 ДРУШТВЕНЕ ИКОНЕ ИСПОД МЕНИЈА */
@@ -246,15 +253,18 @@
 <body>
 <header>
   <div class="container head">
-    <!-- GORNJA LINIJA: logo + dugačak naziv -->
+    <!-- GORNJA LINIJA: logo + dvorеdni naziv -->
     <div class="brand brand-bar">
       <a href="index.html" class="brand-link" aria-label="Иксан — Снага правде">
         <img src="univerzalnium.webp" alt="ИКСАН лого" class="brand-logo" width="201" height="201" decoding="async" />
-        <span class="brand-wordline">Удружење грађана Иксан — Снага правде</span>
+        <span class="brand-text">
+          <span class="brand-line1">Udružene građana</span>
+          <span class="brand-line2">Iksan — Snaga pravde</span>
+        </span>
       </a>
     </div>
 
-    <!-- DONJA LINIJA: navigacija (ostavljena netaknuta) -->
+    <!-- DONJA LINIJA: navigacija -->
     <nav class="nav" aria-label="Главна навигација">
       <a class="nav-link" href="index.html" aria-current="page">Почетна</a>
       <a class="nav-link" href="kontakt.html">Контакт</a>
@@ -366,4 +376,3 @@
 </script>
 </body>
 </html>
-
