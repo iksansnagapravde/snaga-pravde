@@ -135,7 +135,8 @@
         </div>
       </div>
       <div class="hero-media">
-        <img src="hero.webp" alt="Прикључи се — Иксан • Снага правде">
+        <!-- замена: hero.webp -> cudesan.webp -->
+        <img src="cudesan.webp" alt="Прикључи се — Иксан • Снага правде">
       </div>
     </div>
   </section>
@@ -294,13 +295,12 @@
       `Начин укључивања: ${nacin || '-'}\n\n` +
       `Порука:\n${porukaUser || '-'}`;
 
-    // Upis u skrivena polja koja GAS očekuje (kao Kontakt)
+    // Upis u skrivena polja која GAS очекује
     document.getElementById('ime_send').value = ime;
     document.getElementById('email_send').value = email;
     document.getElementById('poruka_send').value = poruka;
 
     status.textContent = 'Шаљем…';
-    // Ne sprečavamo submit; GET ide u hidden iframe, a iframe onload radi redirect.
   });
 </script>
 </body>
