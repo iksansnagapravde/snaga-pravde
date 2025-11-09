@@ -31,7 +31,6 @@
     img{max-width:100%;display:block}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — исто као на почетној */
     header{
       position:sticky;top:0;z-index:100;
       background:var(--deepBlue);
@@ -41,8 +40,6 @@
       display:flex;align-items:center;justify-content:space-between;
       padding:4px 0 0; gap:12px; flex-wrap:nowrap;
     }
-
-    /* ЛОГО */
     .brand{display:flex;align-items:center;flex-shrink:0;}
     .brand img{height:161px;border-radius:10px}
     @media (max-width:768px){
@@ -50,7 +47,6 @@
       .brand img{height:106px}
     }
 
-    /* НАВИГАЦИЈА + МЕНИ */
     nav.nav{
       display:flex;flex-direction:row;align-items:center;gap:10px;
       padding-top:0; padding-right:8px;
@@ -84,13 +80,12 @@
       border-radius:8px;
       color:#fff;
       font-weight:600;
-      font-size:14px;   /* мањи да стану дугачки наслови у један ред */
+      font-size:14px;
       white-space:nowrap;
       border:1px solid transparent;
     }
     .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
-    /* HERO / НАСЛОВ */
     .hero{padding:24px 0 0}
     h1{
       text-align:center;
@@ -104,7 +99,6 @@
       margin:8px auto 12px;max-width:740px;
     }
 
-    /* CTA — исти редослед и -25% величина */
     .cta-row{
       display:flex;justify-content:center;flex-wrap:nowrap;gap:8px;margin:14px 0 18px;
     }
@@ -123,7 +117,6 @@
       .btn{padding:7px 14px;font-size:12px}
     }
 
-    /* КОНТАКТ КАРТИЦА — у истом dark стилу као остале картице */
     .contact-wrap{padding:0 0 12px}
     .contact-card{
       background:var(--deepBlue);
@@ -136,7 +129,7 @@
     }
     .contact-card h2{
       text-align:center;
-      color:#ffffff;       /* чисто бело, као остали наслови на картицама */
+      color:#ffffff;
       font-size:clamp(20px,2.6vw,24px);
       font-weight:700;margin:0 0 10px;
       text-shadow:none;
@@ -165,7 +158,6 @@
       margin-top:30px;background:var(--deepBlue);
     }
 
-    /* мобилни финиш */
     @media (max-width:768px){
       body{font-size:90%;}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
@@ -184,29 +176,25 @@
 <header>
   <div class="container head">
     <div class="brand">
-      <a href="index.html">
-        <img src="uspeh.webp" alt="ИКСАН лого">
-      </a>
+      <a href="index.html"><img src="uspeh.webp" alt="ИКСАН лого"></a>
     </div>
-
     <nav class="nav" aria-label="Главна навигација">
       <a class="nav-link" href="index.html">Почетна</a>
       <a class="nav-link" href="kontakt.html" aria-current="page">Контакт</a>
-
       <div class="menu" id="mainMenu">
         <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
         <div class="dropdown" id="menuList" role="menu">
-          <a href="onama.html" role="menuitem">О нама</a>
-          <a href="oblasti.html" role="menuitem">Области</a>
-          <a href="ciljevi.html" role="menuitem">Циљеви</a>
-          <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
-          <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
-          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
-          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
-          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
+          <a href="onama.html">О нама</a>
+          <a href="oblasti.html">Области</a>
+          <a href="ciljevi.html">Циљеви</a>
+          <a href="inicijative.html">Иницијативе</a>
+          <a href="doniraj.html">Донирај</a>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="prijavi.html">Пријави</a>
+          <a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+          <a href="porekloimovine.html">Порекло имовине — на сунце</a>
+          <a href="sudpravda.html">Суд народу, не моћнима</a>
+          <a href="radnicipreduzetnici.html">Радници и предузетници</a>
         </div>
       </div>
     </nav>
@@ -218,32 +206,28 @@
     <div class="container">
       <h1>Контакт и подршка грађанима</h1>
       <p class="sub">Пријавите неправду или затражите савет — заједно чувамо правду.</p>
-
-      <!-- CTA — редослед: Придружи се • Пријави • Донирај -->
       <div class="cta-row">
         <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
         <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
-        <a href="doniraj.html" class="btn btn-primary" target="_self">ДОНИРАЈ</a>
+        <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
       </div>
     </div>
   </section>
 
-  <!-- КОНТАКТ ФОРМА у dark картици -->
   <section class="contact-wrap">
     <div class="container">
       <article class="contact-card">
         <h2>Контакт форма</h2>
-        <form action="#" method="post">
+        <form id="kontakt-form" novalidate>
           <label for="ime">Име и презиме</label>
-          <input type="text" id="ime" name="ime" placeholder="Унесите ваше име">
-
+          <input type="text" id="ime" name="ime" required placeholder="Унесите ваше име">
           <label for="email">Е-пошта</label>
-          <input type="email" id="email" name="email" placeholder="Унесите вашу е-пошту">
-
+          <input type="email" id="email" name="email" required placeholder="Унесите вашу е-пошту">
           <label for="poruka">Порука / Опис случаја</label>
-          <textarea id="poruka" name="poruka" placeholder="Опишите ваш случај или питање"></textarea>
-
+          <textarea id="poruka" name="poruka" required placeholder="Опишите ваш случај или питање"></textarea>
+          <input type="text" name="website" style="display:none">
           <button type="submit" class="submit">Пошаљи</button>
+          <p id="status" aria-live="polite" style="margin-top:8px;color:#cfe1ff"></p>
         </form>
       </article>
     </div>
@@ -251,34 +235,54 @@
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 Иксан • Снага правде — Сва права задржана.
-  </div>
+  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
 </footer>
 
 <script>
-  // Dropdown meni
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu.querySelector('.menu-btn');
-
   menuBtn.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('open');
     menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
-
-  document.addEventListener('click', (e) => {
+  document.addEventListener('click', e => {
     if (!menu.contains(e.target)) {
       menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.focus();
     }
   });
 
-  // Close on Escape
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-      menuBtn.focus();
+  // ✅ Slanje forme na Gmail preko Google Apps Script-a
+  const ENDPOINT = 'https://script.google.com/macros/s/AKfycby6ZUiBMWq3NyoUSeh8NPk_OhuhmJ7dtSPTVbVMX1-EIwRYN1jPUbru_4FQ5ypmtM4WMg/exec';
+  const form = document.getElementById('kontakt-form');
+  const status = document.getElementById('status');
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    status.textContent = 'Шаљем поруку…';
+    const data = Object.fromEntries(new FormData(form).entries());
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+      });
+      const json = await res.json();
+      if (json.ok) {
+        status.textContent = '✅ Порука је успешно послата. Хвала!';
+        form.reset();
+      } else {
+        status.textContent = '⚠️ Грешка: ' + (json.error || 'Покушајте касније.');
+      }
+    } catch {
+      status.textContent = '❌ Грешка у мрежи. Покушајте поново.';
     }
   });
 </script>
