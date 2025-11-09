@@ -17,7 +17,7 @@
       --ink:#cfe1ff;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%; overflow-x:hidden;} /* ⛔ без хор. скрола */
+    html,body{height:100%; overflow-x:hidden;}
     body{
       background:var(--deepBlue);
       color:#fff;
@@ -31,7 +31,6 @@
     img{max-width:100%;display:block;height:auto}
     .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HEADER — идентично почетној */
     header{
       position:sticky;top:0;z-index:100;
       background:var(--deepBlue);
@@ -42,7 +41,6 @@
       padding:4px 0 0; gap:12px; flex-wrap:nowrap;
     }
 
-    /* ЛОГО */
     .brand{display:flex;align-items:center;flex-shrink:0;}
     .brand img{height:161px;border-radius:10px}
     @media (max-width:768px){
@@ -50,7 +48,6 @@
       .brand img{height:106px}
     }
 
-    /* НАВИГАЦИЈА + МЕНИ */
     nav.nav{
       display:flex;flex-direction:row;align-items:center;gap:10px;
       padding-top:0; padding-right:8px;
@@ -72,7 +69,7 @@
       border:1px solid rgba(255,255,255,.2);
       border-radius:12px;
       min-width:280px;
-      max-width:92vw;              /* ✅ да не „гура“ ширину на уским екранима */
+      max-width:92vw;
       padding:6px;
       box-shadow:0 10px 24px rgba(0,0,0,.5);
       display:none;
@@ -91,7 +88,6 @@
     }
     .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
 
-    /* HERO — исто као почетна */
     .hero{padding:24px 0 0}
     .hero-grid{display:grid;gap:24px}
     @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
@@ -103,9 +99,8 @@
     }
     .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
 
-    /* CTA (-25% величина; један/два реда по потреби) */
     .cta-row{
-      display:flex;justify-content:center;flex-wrap:wrap; /* ✅ дозвољено преламање */
+      display:flex;justify-content:center;flex-wrap:wrap;
       gap:8px;margin-top:14px;
     }
     .btn{
@@ -135,13 +130,11 @@
     .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
     @media(max-width:979px){.hero-media{max-width:100%;justify-self:stretch}}
 
-    /* ПЕТИЦИЈА дугме испод слике (горњи део) */
     .pet-cta{
       margin-top:10px; display:flex; justify-content:flex-end;
     }
     @media(max-width:979px){ .pet-cta{justify-content:center} }
 
-    /* КАРТИЦЕ — исти систем као на почетној */
     .split{margin-top:18px}
     .grid{display:grid;gap:14px;grid-template-columns:1fr}
     @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -172,7 +165,6 @@
       margin-top:30px; background:var(--deepBlue);
     }
 
-    /* мобилни финиш */
     @media (max-width:768px){
       body{font-size:90%;}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
@@ -228,7 +220,6 @@
         <h1>🖊️ Укидање приватних извршитеља</h1>
         <p class="sub">Придружи се петицији за правду — да извршење буде у рукама суда, а не профита.</p>
 
-        <!-- CTA ред: Прикључи се • Пријави • Донирај (без Петиције овде) -->
         <div class="cta-row">
           <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
           <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
@@ -238,9 +229,9 @@
 
       <div>
         <div class="hero-media">
-          <img src="hero.webp" alt="Иницијативе — Иксан • Снага правде">
+          <!-- ✨ ОВДЕ ЈЕ ЗАМЕЊЕНО -->
+          <img src="univerzaln.webp" alt="Иницијативе — Иксан • Снага правде">
         </div>
-        <!-- ✅ ПЕТИЦИЈА дугме одмах испод слике -->
         <div class="pet-cta">
           <a
             href="https://www.peticije.online/stop_privatnim_izvriteljima_pravda_a_ne_profit"
@@ -251,7 +242,7 @@
     </div>
   </section>
 
-  <!-- САДРЖАЈ ПЕТИЦИЈЕ У ТАМНОЈ КАРТИЦИ -->
+  <!-- САДРЖАЈ ПЕТИЦИЈЕ -->
   <section class="split">
     <div class="container">
       <div class="grid">
@@ -282,7 +273,6 @@
 </footer>
 
 <script>
-  // Dropdown meni
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu.querySelector('.menu-btn');
 
@@ -298,7 +288,6 @@
     }
   });
 
-  // Close on Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       menu.classList.remove('open');
