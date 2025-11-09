@@ -166,12 +166,13 @@
         <h2>Контакт форма</h2>
         <form id="kontakt-form" novalidate>
           <label for="ime">Име и презиме</label>
-          <input type="text" id="ime" name="ime" required placeholder="Унесите ваше име">
+          <input type="text" id="ime" name="ime" required placeholder="Унесите ваше име" autocomplete="name">
           <label for="email">Е-пошта</label>
-          <input type="email" id="email" name="email" required placeholder="Унесите вашу е-пошту">
+          <input type="email" id="email" name="email" required placeholder="Унесите вашу е-пошту" autocomplete="email">
           <label for="poruka">Порука / Опис случаја</label>
           <textarea id="poruka" name="poruka" required placeholder="Опишите ваш случај или питање"></textarea>
-          <input type="text" name="website" style="display:none">
+          <!-- honeypot -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" style="display:none">
           <button type="submit" class="submit">Пошаљи</button>
           <p id="status" aria-live="polite" style="margin-top:8px;color:#cfe1ff"></p>
         </form>
@@ -185,7 +186,7 @@
 </footer>
 
 <script>
-  // Dropdown meni
+  // --- Dropdown meni ---
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu.querySelector('.menu-btn');
   menuBtn.addEventListener('click', () => {
@@ -206,35 +207,56 @@
     }
   });
 
-  // ✅ Slanje forme na Gmail preko Google Apps Script-a
+  // --- KONTAKT FORMA: slanje na Google Apps Script (JSON + CORS) ---
   const ENDPOINT = 'https://script.google.com/macros/s/AKfycby6ZUiBMWq3NyoUSeh8NPk_OhuhmJ7dtSPTVbVMX1-EIwRYN1jPUbru_4FQ5ypmtM4WMg/exec';
   const form = document.getElementById('kontakt-form');
   const status = document.getElementById('status');
+  const submitBtn = form.querySelector('.submit');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    status.textContent = 'Шаљем поруку…';
 
-    const data = Object.fromEntries(new FormData(form).entries());
+    // honeypot: ako je popunjen, prekini
+    const hp = form.querySelector('input[name="website"]');
+    if (hp && hp.value.trim() !== '') return;
+
+    const ime = form.ime.value.trim();
+    const email = form.email.value.trim();
+    const poruka = form.poruka.value.trim();
+
+    if (!ime || !email || !poruka) {
+      status.textContent = '⚠️ Попуните сва поља.';
+      return;
+    }
+
+    // UI lock
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = .7;
+    status.textContent = 'Шаљем поруку…';
 
     try {
       const res = await fetch(ENDPOINT, {
         method: 'POST',
+        mode: 'cors',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify({ ime, email, poruka })
       });
 
+      // očekujemo JSON { ok: true } sa CORS headerom
       const json = await res.json();
 
-      if (json.ok) {
-        // uspeh: poruka poslata i preusmerenje
+      if (json && json.ok) {
         form.reset();
         window.location.href = 'hvala.html';
       } else {
-        status.textContent = '⚠️ Грешка: ' + (json.error || 'Покушајте касније.');
+        status.textContent = '⚠️ Грешка: ' + (json?.error || 'Покушајте касније.');
       }
     } catch (err) {
       status.textContent = '❌ Грешка у мрежи. Покушајте поново.';
+      console.error(err);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = 1;
     }
   });
 </script>
