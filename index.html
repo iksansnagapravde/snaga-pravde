@@ -53,10 +53,32 @@
       .brand img{height:106px}
     }
 
+    /* ➕ DODATO: gornja linija sa dužim nazivom i 25% većim logoom */
+    .head{ flex-wrap: wrap; } /* dozvola za 2 reda: gore brand, dole meni */
+    .brand-bar{ flex:1 1 100%; display:block; margin:4px 0 2px; }
+    .brand-link{ display:flex; align-items:center; gap:12px; text-decoration:none; color:#fff; min-width:0; }
+    .brand-logo{ height:201px; width:auto; border-radius:10px; display:block; } /* 161px * 1.25 */
+    .brand-wordline{
+      font-family:"Times New Roman",serif;
+      font-weight:400;
+      color:#ffffff;
+      line-height:1.1;
+      letter-spacing:.2px;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      font-size:clamp(18px,2.4vw,26px);
+    }
+    @media (max-width:768px){
+      .brand-logo{ height:132px; } /* 106px * 1.25 */
+      .brand-wordline{ font-size:clamp(16px,4.4vw,20px); }
+    }
+
     /* НАВИГАЦИЈА */
     nav.nav{
       display:flex;flex-direction:row;align-items:center;gap:10px;
       padding-top:0; padding-right:8px;
+      margin-top:2px; /* malo odvajanje ispod gornje linije */
     }
     .nav a.nav-link, .menu-btn{
       background:var(--deepBlue); color:#fff;
@@ -224,12 +246,15 @@
 <body>
 <header>
   <div class="container head">
-    <div class="brand">
-      <a href="index.html">
-        <img src="uspeh.webp" alt="ИКСАН лого">
+    <!-- GORNJA LINIJA: logo + dugačak naziv -->
+    <div class="brand brand-bar">
+      <a href="index.html" class="brand-link" aria-label="Иксан — Снага правде">
+        <img src="univerzalnium.webp" alt="ИКСАН лого" class="brand-logo" width="201" height="201" decoding="async" />
+        <span class="brand-wordline">Удружење грађана Иксан — Снага правде</span>
       </a>
     </div>
 
+    <!-- DONJA LINIJA: navigacija (ostavljena netaknuta) -->
     <nav class="nav" aria-label="Главна навигација">
       <a class="nav-link" href="index.html" aria-current="page">Почетна</a>
       <a class="nav-link" href="kontakt.html">Контакт</a>
@@ -341,3 +366,4 @@
 </script>
 </body>
 </html>
+
