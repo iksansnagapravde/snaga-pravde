@@ -99,7 +99,7 @@
     }
     .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
 
-    /* CTA дугмад — редослед + -25% величина, један ред на мобилном */
+    /* CTA дугмад */
     .cta-row{
       display:flex;
       justify-content:center;
@@ -150,36 +150,22 @@
     }
     .card-large h2{
       margin:0 0 10px;
-      color:#ffffff;         /* чисто бело */
+      color:#ffffff;
       line-height:1.15;
       font-weight:700;
       font-size:22px;
       text-shadow:none;
       text-align:center;
     }
+
+    /* LISTA CILJEVA — BEZ IKONICA */
     .goals{list-style:none;margin:0;padding:0}
     .goals li{
       color:var(--ink);
       font-size:clamp(15px,1.9vw,16.5px);
       line-height:1.75;
-      display:flex; gap:10px; align-items:flex-start;
-      margin-bottom:12px;
+      margin-bottom:12px;     /* uklonjen flex/gap i svi ::before ikonice */
     }
-    .goals li::before{flex-shrink:0; font-size:20px}
-    .goals li:nth-child(1)::before{content:"🛡️"}
-    .goals li:nth-child(2)::before{content:"🔥"}
-    .goals li:nth-child(3)::before{content:"⚖️"}
-    .goals li:nth-child(4)::before{content:"🤝"}
-    .goals li:nth-child(5)::before{content:"⚔️"}
-    .goals li:nth-child(6)::before{content:"👁️"}
-    .goals li:nth-child(7)::before{content:"💪"}
-    .goals li:nth-child(8)::before{content:"🔍"}
-    .goals li:nth-child(9)::before{content:"📜"}
-    .goals li:nth-child(10)::before{content:"📣"}
-    .goals li:nth-child(11)::before{content:"🗳️"}
-    .goals li:nth-child(12)::before{content:"🌐"}
-    .goals li:nth-child(13)::before{content:"🏛️"}
-    .goals li:nth-child(14)::before{content:"🤲"}
 
     footer{
       border-top:1px solid rgba(255,255,255,.15);
