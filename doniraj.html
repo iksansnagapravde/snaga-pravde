@@ -201,7 +201,8 @@
         <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“ Подржи рад — сваки динар иде на правну помоћ, истраживања и јавне иницијативе.</p>
       </div>
       <div class="hero-media">
-        <img src="hero.webp" alt="Људи заједно — Снага правде">
+        <!-- замењено: hero.webp -> magnet.webp -->
+        <img src="magnet.webp" alt="Људи заједно — Снага правде">
       </div>
     </div>
   </section>
@@ -226,7 +227,6 @@
           </div>
 
           <div class="cta-stack">
-            <!-- Сада НЕ редиректује, већ отвара модал „УСКОРО“ -->
             <a id="payBtn" class="btn btn-gold" href="#" role="button">ДОНИРАЈ КАРТИЦОМ</a>
             <a id="toRacun" class="btn btn-dark" href="#racun">УПЛАТНИЦА</a>
           </div>
@@ -336,7 +336,6 @@
     chips.forEach(c => c.setAttribute('aria-pressed','false'));
     chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
 
-    // ажурирај текст дугмета и уплатнице
     if (amount && amount >= 100){
       payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
       if (uIznos) uIznos.textContent = amount.toLocaleString('sr-RS') + ",00";
