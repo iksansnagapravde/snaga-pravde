@@ -1,0 +1,70 @@
+<header>
+  <div class="container head">
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img src="univerzalnium.webp" alt="Иксан — лого" class="brand-logo">
+        <span class="brand-text">Иксан — Снага правде</span>
+      </a>
+    </div>
+    <nav class="nav" aria-label="Главна навигација">
+      <a class="nav-link" href="index.html">Почетна</a>
+      <a class="nav-link" href="kontakt.html">Контакт</a>
+      <a class="nav-link" href="prijavi.html">Пријави</a>
+      <a class="nav-link" href="prikljucise.html">Прикључи се</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #020c1b;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    gap: 12px;
+  }
+  .brand-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .brand-logo {
+    height: 120px;
+    border-radius: 10px;
+  }
+  .brand-text {
+    font-family: "Times New Roman", serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #d3a451;
+    white-space: nowrap;
+    text-shadow: 0 0 8px rgba(211,164,81,0.3);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav a.nav-link {
+    background: #020c1b;
+    color: #fff;
+    padding: 6px 9px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,.2);
+    font-weight: 600;
+    font-size: .9rem;
+  }
+  .nav a[aria-current="page"] {
+    outline: 2px solid #d3a451;
+    outline-offset: 2px;
+  }
+</style>
