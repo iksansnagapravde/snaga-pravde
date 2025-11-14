@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="sr-Cyrl-RS">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Донација — Иксан • Снага правде</title>
-  <meta name="description" content="Подржи рад Иксан — Снага правде. До објаве званичног рачуна, на располагању је уплатница са подацима удружења." />
+  <meta name="description" content="Подржи рад Иксан — Снага правде. На располагању је уплатница са подацима удружења." />
   <meta name="theme-color" content="#020c1b">
   <meta name="color-scheme" content="light">
   <link rel="icon" href="univerzalnium.webp" type="image/webp">
@@ -96,11 +96,16 @@
 
     /* --- УПЛАТНИЦА (модерна плава) --- */
     .uplatnica{
-      margin-top:12px; border:1px solid rgba(255,255,255,.25); border-radius:14px;
+      margin-top:12px; 
+      border:1px solid rgba(255,255,255,.25); 
+      border-radius:14px;
       background:rgba(255,255,255,.05);
       box-shadow:0 6px 18px rgba(0,0,0,.4);
       overflow:hidden;
-      font-size:0.7em; /* смањено ~30% */
+
+      /* смањено ~50% као блок */
+      transform: scale(0.5);
+      transform-origin: top center;
     }
     .u-head{
       display:flex;justify-content:space-between;align-items:center;
@@ -133,19 +138,14 @@
       border-radius:999px;padding:4px 10px;font-weight:800;letter-spacing:.2px;text-transform:uppercase;font-size:.75rem
     }
 
-    /* --- MODAL „УСКОРО“ --- */
-    .modal-backdrop{
-      position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:1200;
+    /* --- Текст у уплатници већи ~50% --- */
+    .u-value,
+    .u-label,
+    .u-title,
+    .u-amount .box,
+    .u-amount .valuta {
+      font-size: 1.5em;
     }
-    .modal{
-      width:min(520px,92%);background:linear-gradient(180deg, rgba(2,12,27,.98), rgba(3,18,36,.95));
-      border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.08);box-shadow:0 12px 40px rgba(0,0,0,.6);
-      color:#fff;text-align:center;position:relative;
-    }
-    .modal h3{margin:0 0 8px;font-size:20px}
-    .modal p{color:var(--ink);margin:0 0 12px}
-    .modal .ok{display:inline-block;padding:8px 18px;border-radius:999px;background:var(--gold);color:var(--deepBlue);font-weight:800;cursor:pointer}
-    .modal .close-x{position:absolute;right:12px;top:10px;background:transparent;border:none;color:var(--ink);font-weight:700;cursor:pointer}
 
     footer{border-top:1px solid var(--line);color:#fff;text-align:center;padding:24px 0;font-size:.9rem;margin-top:30px;background:var(--deepBlue)}
 
@@ -208,7 +208,7 @@
     </div>
   </section>
 
-  <!-- PANEL: износи и дугмад -->
+  <!-- PANEL: износи и дугме -->
   <section class="panel">
     <div class="container">
       <div class="panel-box">
@@ -228,8 +228,9 @@
           </div>
 
           <div class="cta-stack">
-            <a id="payBtn" class="btn btn-gold" href="#" role="button">ДОНИРАЈ КАРТИЦОМ</a>
-            <a id="toRacun" class="btn btn-dark" href="#racun">УПЛАТНИЦА</a>
+            <a id="toRacun" class="btn btn-gold" href="#racun" role="button">
+              ДОНИРАЈ ПУТЕМ УПЛАТНИЦЕ
+            </a>
           </div>
         </div>
       </div>
@@ -322,23 +323,10 @@
   <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
 </footer>
 
-<!-- МОДАЛ „УСКОРО“ -->
-<div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
-  <div class="modal" role="document">
-    <button class="close-x" id="modalClose" aria-label="Затвори">✕</button>
-    <h3>ДОНИРАЈ КАРТИЦОМ — УСКОРО</h3>
-    <p id="modalText">Плаћање картицом биће доступно ускоро. Хвала на разумевању и подршци.</p>
-    <div style="margin-top:12px">
-      <button class="ok" id="modalOk">У реду</button>
-    </div>
-  </div>
-</div>
-
 <script>
   // Избор износа + уплатница износ
   const chips   = document.querySelectorAll('.chip');
   const custom  = document.getElementById('customAmount');
-  const payBtn  = document.getElementById('payBtn');
   const toRacun = document.getElementById('toRacun');
   const uIznos  = document.getElementById('u-iznos');
 
@@ -347,21 +335,28 @@
   function setActiveAmount(amount){
     selectedAmount = amount || 0;
     chips.forEach(c => c.setAttribute('aria-pressed','false'));
-    chips.forEach(c => { if(parseInt(c.dataset.amount,10) === amount){ c.setAttribute('aria-pressed','true'); }});
+    chips.forEach(c => { 
+      if(parseInt(c.dataset.amount,10) === amount){
+        c.setAttribute('aria-pressed','true'); 
+      }
+    });
 
-    if (amount && amount >= 100){
-      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ — " + amount.toLocaleString('sr-RS') + " RSD";
-      if (uIznos) uIznos.textContent = amount.toLocaleString('sr-RS') + ",00";
-    } else {
-      payBtn.textContent = "ДОНИРАЈ КАРТИЦОМ";
-      if (uIznos) uIznos.textContent = "___.___,00";
+    if (amount && amount >= 100 && uIznos){
+      uIznos.textContent = amount.toLocaleString('sr-RS') + ",00";
+    } else if (uIznos){
+      uIznos.textContent = "___.___,00";
     }
   }
 
   chips.forEach(c => c.addEventListener('click', () => {
     const val = parseInt(c.dataset.amount,10);
-    if(!isNaN(val)) { custom.value = ""; setActiveAmount(val); }
-    else { custom.focus(); }
+    if(!isNaN(val)) { 
+      custom.value = ""; 
+      setActiveAmount(val); 
+    }
+    else { 
+      custom.focus(); 
+    }
   }));
 
   custom.addEventListener('input', e => {
@@ -378,36 +373,6 @@
       history.pushState(null, '', '#racun');
     }
   });
-
-  // ---- MODAL „УСКОРО“ ----
-  const modalBackdrop = document.getElementById('modalBackdrop');
-  const modalOk   = document.getElementById('modalOk');
-  const modalClose= document.getElementById('modalClose');
-  const modalText = document.getElementById('modalText');
-
-  function showModal(){
-    if (selectedAmount && selectedAmount >= 100) {
-      modalText.textContent = `Плаћање картицом за износ ${selectedAmount.toLocaleString('sr-RS')} RSD биће доступно ускоро. Хвала на подршци.`;
-    } else {
-      modalText.textContent = 'Плаћање картицом биће доступно ускоро. Хвала на разумевању и подршци.';
-    }
-    modalBackdrop.style.display = 'flex';
-    modalBackdrop.setAttribute('aria-hidden','false');
-    document.body.style.overflow = 'hidden';
-    modalOk.focus();
-  }
-  function hideModal(){
-    modalBackdrop.style.display = 'none';
-    modalBackdrop.setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
-    payBtn.focus();
-  }
-
-  payBtn.addEventListener('click', (e) => { e.preventDefault(); showModal(); });
-  modalOk.addEventListener('click', hideModal);
-  modalClose.addEventListener('click', hideModal);
-  modalBackdrop.addEventListener('click', (e) => { if (e.target === modalBackdrop) hideModal(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && modalBackdrop.style.display === 'flex') hideModal(); });
 
   // Dropdown
   const menu = document.getElementById('mainMenu');
