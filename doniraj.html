@@ -96,7 +96,7 @@
 
     /* --- УПЛАТНИЦА (модерна плава) --- */
     .uplatnica{
-      margin-top:10px; 
+      margin:10px auto -260px;  /* негативан margin-bottom смањује празнину испод */
       border:1px solid rgba(255,255,255,.25); 
       border-radius:12px;
       background:rgba(255,255,255,.05);
@@ -107,6 +107,10 @@
       transform: scale(0.5);
       transform-origin: top center;
     }
+    #racun{
+      padding-bottom:0; /* да секција не додаје још празног простора испод */
+    }
+
     .u-head{
       display:flex;justify-content:space-between;align-items:center;
       padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.2);
@@ -149,7 +153,7 @@
 
     /* --- КЊИГА „ИКСАН“ --- */
     .book-section{
-      margin-top:16px;
+      margin-top:0; /* приближава књигу уплатници */
     }
     .book-card{
       margin:0 auto;
@@ -275,7 +279,6 @@
         <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“ Подржи рад — сваки динар иде на правну помоћ, истраживања и јавне иницијативе.</p>
       </div>
       <div class="hero-media">
-        <!-- замењено: hero.webp -> uni.webp -->
         <img src="uni.webp" alt="Људи заједно — Снага правде">
       </div>
     </div>
@@ -333,10 +336,6 @@
             НАЛОГ ЗА УПЛАТУ
             <small>Иксан — Снага правде</small>
           </div>
-          <div class="u-amount">
-            <div class="box" id="u-iznos">___.___,00</div>
-            <div class="valuta">RSD</div>
-          </div>
         </div>
 
         <div class="u-grid">
@@ -392,7 +391,7 @@
   </section>
 
   <!-- КЊИГА „ИКСАН“ -->
-  <section class="section book-section">
+  <section class="section book-section" id="knjiga-blok">
     <div class="container">
       <h2>Књигом „Иксан“ до хуманости</h2>
       <div class="book-card">
@@ -426,7 +425,7 @@
   const chips   = document.querySelectorAll('.chip');
   const custom  = document.getElementById('customAmount');
   const toRacun = document.getElementById('toRacun');
-  const uIznos  = document.getElementById('u-изnos');
+  const uIznos  = document.getElementById('u-iznos');
 
   let selectedAmount = 0;
 
