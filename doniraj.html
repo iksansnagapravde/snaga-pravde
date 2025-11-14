@@ -96,11 +96,11 @@
 
     /* --- УПЛАТНИЦА (модерна плава) --- */
     .uplatnica{
-      margin-top:12px; 
+      margin-top:10px; 
       border:1px solid rgba(255,255,255,.25); 
-      border-radius:14px;
+      border-radius:12px;
       background:rgba(255,255,255,.05);
-      box-shadow:0 6px 18px rgba(0,0,0,.4);
+      box-shadow:0 4px 16px rgba(0,0,0,.4);
       overflow:hidden;
 
       /* смањено ~50% као блок */
@@ -138,13 +138,86 @@
       border-radius:999px;padding:4px 10px;font-weight:800;letter-spacing:.2px;text-transform:uppercase;font-size:.75rem
     }
 
-    /* --- Текст у уплатници већи ~50% --- */
+    /* --- Текст у уплатници већи --- */
     .u-value,
     .u-label,
     .u-title,
     .u-amount .box,
     .u-amount .valuta {
-      font-size: 2.5em;
+      font-size: 2.0em;
+    }
+
+    /* --- КЊИГА „ИКСАН“ --- */
+    .book-section{
+      margin-top:16px;
+    }
+    .book-card{
+      margin:0 auto;
+      max-width:780px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.18);
+      background:rgba(2,12,27,.95);
+      box-shadow:0 10px 26px rgba(0,0,0,.6);
+      padding:18px;
+      display:grid;
+      gap:18px;
+      grid-template-columns:auto 1fr;
+      align-items:center;
+    }
+    .book-cover{
+      text-align:center;
+    }
+    .book-cover img{
+      max-width:220px;
+      margin:0 auto;
+      border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.7);
+    }
+    .book-info-title{
+      font-weight:700;
+      font-size:1.1rem;
+      margin-bottom:6px;
+    }
+    .book-info-sub{
+      color:var(--ink);
+      font-size:0.95rem;
+      margin-bottom:10px;
+    }
+    .book-info-text{
+      font-size:0.95rem;
+      margin-bottom:10px;
+    }
+    .book-note{
+      font-size:0.9rem;
+      color:var(--ink);
+      font-style:italic;
+      margin-bottom:14px;
+    }
+    .book-btn{
+      display:inline-block;
+      padding:9px 18px;
+      border-radius:999px;
+      border:none;
+      background:var(--gold);
+      color:var(--deepBlue);
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.3px;
+      font-size:0.85rem;
+      text-decoration:none;
+      box-shadow:0 4px 14px rgba(0,0,0,.6);
+    }
+    .book-btn:hover{
+      transform:translateY(-1px);
+      box-shadow:0 6px 18px rgba(0,0,0,.7);
+      filter:brightness(1.05);
+    }
+
+    @media (max-width:720px){
+      .book-card{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
     }
 
     footer{border-top:1px solid var(--line);color:#fff;text-align:center;padding:24px 0;font-size:.9rem;margin-top:30px;background:var(--deepBlue)}
@@ -317,6 +390,31 @@
       </div>
     </div>
   </section>
+
+  <!-- КЊИГА „ИКСАН“ -->
+  <section class="section book-section">
+    <div class="container">
+      <h2>Књигом „Иксан“ до хуманости</h2>
+      <div class="book-card">
+        <div class="book-cover">
+          <img src="iksan.webp" alt="Књига Иксан">
+        </div>
+        <div class="book-info">
+          <div class="book-info-title">Књига „Иксан“</div>
+          <div class="book-info-sub">Доступна у Делфи књижарама.</div>
+          <div class="book-info-text">
+            Куповином књиге „Иксан“ подржавате борбу за правду и достојанство сваког човека.
+          </div>
+          <div class="book-note">
+            Сав ауторски хонорар од продаје књиге аутор донира у хуманитарне сврхе.
+          </div>
+          <a class="book-btn" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html" target="_blank" rel="noopener noreferrer">
+            КУПИ КЊИГУ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -328,7 +426,7 @@
   const chips   = document.querySelectorAll('.chip');
   const custom  = document.getElementById('customAmount');
   const toRacun = document.getElementById('toRacun');
-  const uIznos  = document.getElementById('u-iznos');
+  const uIznos  = document.getElementById('u-изnos');
 
   let selectedAmount = 0;
 
