@@ -58,34 +58,12 @@
     }
     .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
 
-    .panel{margin-top:16px}
-    .panel-box{
-      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2); border-radius:var(--radius);
-      padding:16px; box-shadow:0 10px 24px rgba(0,0,0,.5); color:#fff;
-    }
-    .panel-grid{display:grid;gap:16px;align-items:center}
-    @media(min-width:980px){.panel-grid{grid-template-columns:1fr .6fr}}
-    .amount-grid{display:grid;gap:10px;grid-template-columns:repeat(3,minmax(84px,1fr))}
-    .chip{
-      padding:9px 13px;border-radius:999px;text-align:center;background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.88);font-weight:400;font-size:14px;
-      letter-spacing:.2px;cursor:pointer;transition:transform .15s,filter .15s,background .15s;
-    }
-    .chip:hover{transform:translateY(-1px);background:rgba(255,255,255,.10)}
-    .chip[aria-pressed="true"]{background:#fff;color:var(--deepBlue);border-color:#fff}
-    .custom{margin-top:6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    .custom input{
-      width:160px;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.1);
-      border:1px solid rgba(255,255,255,.3);color:#fff;font-size:16px;
-    }
-    .cta-stack{display:flex;flex-direction:column;align-items:center;gap:10px}
     .btn{
       display:inline-block;padding:10px 22px;border-radius:40px;border:none;font-weight:700;font-size:14px;
       letter-spacing:.3px;text-transform:uppercase;transition:transform .2s, box-shadow .2s; cursor:pointer;
       text-align:center; box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
     }
     .btn-gold{background:var(--gold);color:var(--deepBlue)}
-    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
     .btn:hover{transform:translateY(-2px)}
 
     .section{
@@ -94,112 +72,158 @@
     }
     h2{color:#fff;font-weight:700;font-size:clamp(20px,2.5vw,24px);text-align:center;margin-bottom:12px}
 
-    /* --- УПЛАТНИЦА (модерна плава) --- */
+    /* --- ДОНАЦИЈА ЛЕЈАУТ: УПЛАТНИЦА + КЊИГА --- */
+    .donation-intro{
+      text-align:center;
+      margin-bottom:18px;
+    }
+    .donation-intro h2{
+      margin-bottom:8px;
+    }
+    .donation-intro p{
+      color:var(--ink);
+      max-width:720px;
+      margin:0 auto 14px;
+    }
+    .donation-layout{
+      display:grid;
+      gap:24px;
+      grid-template-columns: minmax(0,1.3fr) minmax(0,1fr);
+      align-items:flex-start;
+    }
+    @media (max-width:900px){
+      .donation-layout{
+        grid-template-columns:1fr;
+      }
+    }
+
+    /* --- УПЛАТНИЦА (картица, нормална величина) --- */
     .uplatnica{
-      margin:10px auto -260px;  /* негативан margin-bottom смањује празнину испод */
+      max-width:480px;
+      margin:0 auto;
       border:1px solid rgba(255,255,255,.25); 
       border-radius:12px;
       background:rgba(255,255,255,.05);
       box-shadow:0 4px 16px rgba(0,0,0,.4);
       overflow:hidden;
-
-      /* смањено ~50% као блок */
-      transform: scale(0.5);
-      transform-origin: top center;
+      font-size:0.9rem;
     }
-    #racun{
-      padding-bottom:0; /* да секција не додаје још празног простора испод */
-    }
-
     .u-head{
-      display:flex;justify-content:space-between;align-items:center;
-      padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.2);
+      padding:10px 14px;
+      border-bottom:1px solid rgba(255,255,255,.2);
       background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      text-align:left;
     }
-    .u-title{font-weight:700;letter-spacing:.3px}
-    .u-title small{display:block;color:var(--ink);font-weight:600}
-    .u-amount{display:grid;grid-template-columns:auto auto;gap:8px;align-items:center}
-    .u-amount .box{
-      min-width:120px;border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:8px 10px;text-align:right;background:rgba(255,255,255,.06)
+    .u-title{
+      font-weight:700;
+      letter-spacing:.2px;
+      font-size:1.05rem;
     }
-    .u-amount .valuta{
-      border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:8px 10px;background:rgba(255,255,255,.06);min-width:72px;text-align:center
+    .u-title small{
+      display:block;
+      color:var(--ink);
+      font-weight:600;
+      font-size:0.9rem;
+      margin-top:2px;
     }
-    .u-grid{display:grid;gap:10px;padding:12px;grid-template-columns:1.4fr 1.2fr}
-    .u-field{display:grid;gap:6px;grid-template-rows:auto auto}
-    .u-label{color:var(--ink);font-weight:700;font-size:.95rem}
+    .u-grid{
+      display:grid;
+      gap:8px;
+      padding:12px;
+      grid-template-columns:1.4fr 1.2fr;
+    }
+    .u-field{
+      display:grid;
+      gap:4px;
+      grid-template-rows:auto auto;
+    }
+    .u-label{
+      color:var(--ink);
+      font-weight:700;
+      font-size:0.85rem;
+      letter-spacing:.2px;
+      text-transform:uppercase;
+    }
     .u-value{
-      border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);
-      color:#fff;border-radius:10px;padding:10px 12px;min-height:46px;display:flex;align-items:center
+      border:1px solid rgba(255,255,255,.28);
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border-radius:8px;
+      padding:8px 10px;
+      min-height:38px;
+      display:flex;
+      align-items:center;
+      font-size:0.95rem;
     }
     .u-wide{grid-column:1 / -1}
     .u-foot{
       border-top:1px dashed rgba(255,255,255,.25);
-      padding:10px 14px;color:var(--ink);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap
+      padding:8px 12px;
+      color:var(--ink);
+      display:flex;
+      justify-content:space-between;
+      gap:8px;
+      flex-wrap:wrap;
+      font-size:0.8rem;
     }
     .badge-gold{
-      display:inline-block;background:var(--gold);color:var(--deepBlue);
-      border-radius:999px;padding:4px 10px;font-weight:800;letter-spacing:.2px;text-transform:uppercase;font-size:.75rem
-    }
-
-    /* --- Текст у уплатници већи --- */
-    .u-value,
-    .u-label,
-    .u-title,
-    .u-amount .box,
-    .u-amount .valuta {
-      font-size: 2.0em;
+      display:inline-block;
+      background:var(--gold);
+      color:var(--deepBlue);
+      border-radius:999px;
+      padding:3px 8px;
+      font-weight:800;
+      letter-spacing:.2px;
+      text-transform:uppercase;
+      font-size:.7rem;
     }
 
     /* --- КЊИГА „ИКСАН“ --- */
-    .book-section{
-      margin-top:0; /* приближава књигу уплатници */
-    }
     .book-card{
       margin:0 auto;
-      max-width:780px;
+      max-width:480px;
       border-radius:16px;
       border:1px solid rgba(255,255,255,.18);
       background:rgba(2,12,27,.95);
       box-shadow:0 10px 26px rgba(0,0,0,.6);
       padding:18px;
       display:grid;
-      gap:18px;
-      grid-template-columns:auto 1fr;
+      gap:14px;
+      grid-template-columns:120px 1fr;
       align-items:center;
     }
     .book-cover{
       text-align:center;
     }
     .book-cover img{
-      max-width:220px;
+      max-width:110px;
       margin:0 auto;
-      border-radius:12px;
+      border-radius:8px;
       box-shadow:0 8px 24px rgba(0,0,0,.7);
     }
     .book-info-title{
       font-weight:700;
-      font-size:1.1rem;
-      margin-bottom:6px;
+      font-size:1rem;
+      margin-bottom:4px;
     }
     .book-info-sub{
       color:var(--ink);
-      font-size:0.95rem;
-      margin-bottom:10px;
+      font-size:0.85rem;
+      margin-bottom:8px;
     }
     .book-info-text{
-      font-size:0.95rem;
-      margin-bottom:10px;
+      font-size:0.9rem;
+      margin-bottom:8px;
     }
     .book-note{
-      font-size:0.9rem;
+      font-size:0.85rem;
       color:var(--ink);
       font-style:italic;
-      margin-bottom:14px;
+      margin-bottom:10px;
     }
     .book-btn{
       display:inline-block;
-      padding:9px 18px;
+      padding:8px 16px;
       border-radius:999px;
       border:none;
       background:var(--gold);
@@ -207,7 +231,7 @@
       font-weight:800;
       text-transform:uppercase;
       letter-spacing:.3px;
-      font-size:0.85rem;
+      font-size:0.8rem;
       text-decoration:none;
       box-shadow:0 4px 14px rgba(0,0,0,.6);
     }
@@ -217,26 +241,53 @@
       filter:brightness(1.05);
     }
 
-    @media (max-width:720px){
+    @media (max-width:900px){
       .book-card{
         grid-template-columns:1fr;
         text-align:center;
       }
+      .book-cover img{
+        max-width:160px;
+      }
     }
 
-    footer{border-top:1px solid var(--line);color:#fff;text-align:center;padding:24px 0;font-size:.9rem;margin-top:30px;background:var(--deepBlue)}
+    /* секција „где иде новац“ – задржана ако ти треба касније */
+    .grid3{
+      display:grid;
+      gap:16px;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    }
+    .card{
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.15);
+      padding:12px;
+      background:rgba(255,255,255,.03);
+      font-size:0.95rem;
+    }
+    .card-title{
+      font-weight:700;
+      margin-bottom:4px;
+    }
 
-    @media (max-width:900px){ .u-grid{grid-template-columns:1fr} .u-amount .box{min-width:0} }
+    footer{
+      border-top:1px solid var(--line);
+      color:#fff;
+      text-align:center;
+      padding:24px 0;
+      font-size:.9rem;
+      margin-top:30px;
+      background:var(--deepBlue);
+    }
+
     @media (max-width:768px){
       body{font-size:90%}
       .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0}
       nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0}
       .menu-btn{margin-right:6px}
-      .panel-grid{grid-template-columns:1fr!important;justify-items:center;text-align:center}
-      .amount-grid{max-width:420px;margin:0 auto}
-      .btn{width:auto}
     }
-    @media (prefers-color-scheme:dark){html,body{background:var(--deepBlue)!important;color:#fff!important}}
+    @media (prefers-color-scheme:dark){
+      html,body{background:var(--deepBlue)!important;color:#fff!important}
+    }
   </style>
 </head>
 
@@ -276,7 +327,7 @@
     <div class="container hero-grid">
       <div>
         <h1 class="title">Док неко губи све — твоје мало је његова нада, његов спас</h1>
-        <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“ Подржи рад — сваки динар иде на правну помоћ, истраживања и јавне иницијативе.</p>
+        <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“ Сваком донацијом помажеш да правда и достојанство не буду привилегија.</p>
       </div>
       <div class="hero-media">
         <img src="uni.webp" alt="Људи заједно — Снага правде">
@@ -284,126 +335,122 @@
     </div>
   </section>
 
-  <!-- PANEL: износи и дугме -->
-  <section class="panel">
+  <!-- ГЛАВНА СЕКЦИЈА: ДОНАЦИЈА УПЛАТОМ НА РАЧУН -->
+  <section id="racun" class="section">
     <div class="container">
-      <div class="panel-box">
-        <div class="panel-grid">
-          <div>
-            <div class="amount-grid" role="group" aria-label="Предложени износи">
-              <button class="chip" data-amount="500">500 RSD</button>
-              <button class="chip" data-amount="1000">1.000 RSD</button>
-              <button class="chip" data-amount="2500">2.500 RSD</button>
-              <button class="chip" data-amount="5000">5.000 RSD</button>
-              <button class="chip" data-amount="10000">10.000 RSD</button>
-              <button class="chip" id="chip-custom">Други износ</button>
+
+      <div class="donation-intro">
+        <h2>Донирај уплатом на рачун Удружења грађана „Иксан — Снага правде“</h2>
+        <p>
+          Сваком уплатом подржаваш правну помоћ грађанима, истраживања и иницијативе које бране достојанство човека.
+          Податке са примера уплатнице можеш преписати на стандардни налог у банци, пошти или у е-банкингу.
+        </p>
+      </div>
+
+      <div class="donation-layout">
+        <!-- ЛЕВО: УПЛАТНИЦА -->
+        <div>
+          <div class="uplatnica">
+            <div class="u-head">
+              <div class="u-title">
+                НАЛОГ ЗА УПЛАТУ
+                <small>Пример попуњене уплатнице</small>
+              </div>
             </div>
-            <div class="custom">
-              <input id="customAmount" type="number" min="100" step="100" placeholder="Упишите износ (RSD)">
+
+            <div class="u-grid">
+              <!-- ПРИМАЛАЦ -->
+              <div class="u-field u-wide">
+                <div class="u-label">Прималац</div>
+                <div class="u-value">Удружење грађана Иксан-Снага правде</div>
+              </div>
+
+              <!-- АДРЕСА ПРИМАОЦА -->
+              <div class="u-field u-wide">
+                <div class="u-label">Адреса примаоца</div>
+                <div class="u-value">Београд</div>
+              </div>
+
+              <!-- СВРХА -->
+              <div class="u-field u-wide">
+                <div class="u-label">Сврха / Напомена</div>
+                <div class="u-value">Донација</div>
+              </div>
+
+              <!-- ПОЗИВ НА БРОЈ -->
+              <div class="u-field">
+                <div class="u-label">Позив на број</div>
+                <div class="u-value">3010/2025</div>
+              </div>
+
+              <!-- ЖИРО РАЧУН -->
+              <div class="u-field">
+                <div class="u-label">Жиро рачун</div>
+                <div class="u-value">340-1000345580-18</div>
+              </div>
+
+              <!-- ВАЛУТА -->
+              <div class="u-field">
+                <div class="u-label">Валута</div>
+                <div class="u-value">RSD</div>
+              </div>
+
+              <!-- ИНФО ТЕКСТ -->
+              <div class="u-field u-wide">
+                <div class="u-label">Информација</div>
+                <div class="u-value">Рачун удружења је активан. Хвала на поверењу и свакој подршци.</div>
+              </div>
+            </div>
+
+            <div class="u-foot">
+              <span class="badge-gold">Донација</span>
+              <span>Хвала што стојиш уз оне који се боре за правду.</span>
             </div>
           </div>
+        </div>
 
-          <div class="cta-stack">
-            <a id="toRacun" class="btn btn-gold" href="#racun" role="button">
-              ДОНИРАЈ ПУТЕМ УПЛАТНИЦЕ
-            </a>
+        <!-- ДЕСНО: КЊИГА „ИКСАН“ -->
+        <div>
+          <div class="book-card">
+            <div class="book-cover">
+              <img src="iksan.webp" alt="Књига Иксан">
+            </div>
+            <div class="book-info">
+              <div class="book-info-title">Књигом „Иксан“ до хуманости</div>
+              <div class="book-info-sub">Књига је доступна у Делфи књижарама.</div>
+              <div class="book-info-text">
+                Куповином књиге „Иксан“ подржаваш исту борбу за правду и достојанство — кроз причу која позива на одговорност, солидарност и емпатију.
+              </div>
+              <div class="book-note">
+                Сав ауторски хонорар од продаје књиге аутор донира у хуманитарне сврхе.
+              </div>
+              <a class="book-btn" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html" target="_blank" rel="noopener noreferrer">
+                КУПИ КЊИГУ
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ГДЕ ИДЕ НОВАЦ -->
+  <!-- ГДЕ ИДЕ НОВАЦ (опционо, можеш да оставиш или обришеш) -->
   <section class="section" id="gde-novac">
     <div class="container">
       <h2>Где иде сваки динар</h2>
       <div class="grid3">
-        <div class="card"><div class="card-title">Одбрана грађана</div>Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.</div>
-        <div class="card"><div class="card-title">Глас народа</div>Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.</div>
-        <div class="card"><div class="card-title">Стручна помоћ & солидарност</div>Ангажовање правних стручњака и хитна помоћ најугроженијима.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- УПЛАТНИЦА -->
-  <section id="racun" class="section">
-    <div class="container">
-      <h2>Уплатница</h2>
-
-      <div class="uplatnica">
-        <div class="u-head">
-        <div class="u-grid">
-          <!-- ПРИМАЛАЦ -->
-          <div class="u-field u-wide">
-            <div class="u-label">Прималац</div>
-            <div class="u-value">Удружење грађана Иксан-Снага правде“</div>
-          </div>
-
-          <!-- АДРЕСА ПРИМАОЦА -->
-          <div class="u-field u-wide">
-            <div class="u-label">Адреса примаоца</div>
-            <div class="u-value">БЕОГРАД</div>
-          </div>
-
-          <!-- СВРХА -->
-          <div class="u-field u-wide">
-            <div class="u-label">Сврха / Напомена</div>
-            <div class="u-value">ДОНАЦИЈА</div>
-          </div>
-
-          <!-- ПОЗИВ НА БРОЈ -->
-          <div class="u-field">
-            <div class="u-label">Позив на број</div>
-            <div class="u-value">3010/2025</div>
-          </div>
-
-          <!-- ЖИРО РАЧУН -->
-          <div class="u-field">
-            <div class="u-label">Жиро рачун</div>
-            <div class="u-value">340-1000345580-18</div>
-          </div>
-
-          <!-- ВАЛУТА -->
-          <div class="u-field">
-            <div class="u-label">Валута</div>
-            <div class="u-value">RSD</div>
-          </div>
-
-          <!-- ИНФО ТЕКСТ -->
-          <div class="u-field u-wide">
-            <div class="u-label">Информација</div>
-            <div class="u-value">Рачун удружења је активан. Хвала на поверењу и подршци.</div>
-          </div>
+        <div class="card">
+          <div class="card-title">Одбрана грађана</div>
+          Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.
         </div>
-
-        <div class="u-foot">
-          <span class="badge-gold">Донација</span>
-          <span>Хвала на подршци.</span>
+        <div class="card">
+          <div class="card-title">Глас народа</div>
+          Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- КЊИГА „ИКСАН“ -->
-  <section class="section book-section" id="knjiga-blok">
-    <div class="container">
-      <h2>Књигом „Иксан“ до хуманости</h2>
-      <div class="book-card">
-        <div class="book-cover">
-          <img src="iksan.webp" alt="Књига Иксан">
-        </div>
-        <div class="book-info">
-          <div class="book-info-title">Књига „Иксан“</div>
-          <div class="book-info-sub">Доступна у Делфи књижарама.</div>
-          <div class="book-info-text">
-            Куповином књиге „Иксан“ подржавате борбу за правду и достојанство сваког човека.
-          </div>
-          <div class="book-note">
-            Сав ауторски хонорар од продаје књиге аутор донира у хуманитарне сврхе.
-          </div>
-          <a class="book-btn" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html" target="_blank" rel="noopener noreferrer">
-            КУПИ КЊИГУ
-          </a>
+        <div class="card">
+          <div class="card-title">Стручна помоћ &amp; солидарност</div>
+          Ангажовање правних стручњака и хитна помоћ најугроженијима.
         </div>
       </div>
     </div>
@@ -415,57 +462,7 @@
 </footer>
 
 <script>
-  // Избор износа + уплатница износ
-  const chips   = document.querySelectorAll('.chip');
-  const custom  = document.getElementById('customAmount');
-  const toRacun = document.getElementById('toRacun');
-  const uIznos  = document.getElementById('u-iznos');
-
-  let selectedAmount = 0;
-
-  function setActiveAmount(amount){
-    selectedAmount = amount || 0;
-    chips.forEach(c => c.setAttribute('aria-pressed','false'));
-    chips.forEach(c => { 
-      if(parseInt(c.dataset.amount,10) === amount){
-        c.setAttribute('aria-pressed','true'); 
-      }
-    });
-
-    if (amount && amount >= 100 && uIznos){
-      uIznos.textContent = amount.toLocaleString('sr-RS') + ",00";
-    } else if (uIznos){
-      uIznos.textContent = "___.___,00";
-    }
-  }
-
-  chips.forEach(c => c.addEventListener('click', () => {
-    const val = parseInt(c.dataset.amount,10);
-    if(!isNaN(val)) { 
-      custom.value = ""; 
-      setActiveAmount(val); 
-    }
-    else { 
-      custom.focus(); 
-    }
-  }));
-
-  custom.addEventListener('input', e => {
-    const v = parseInt(e.target.value,10);
-    setActiveAmount(!isNaN(v) ? v : 0);
-  });
-
-  // Скрол до уплатнице
-  toRacun.addEventListener('click', (e) => {
-    const target = document.querySelector('#racun');
-    if (target){
-      e.preventDefault();
-      target.scrollIntoView({behavior:'smooth', block:'center'});
-      history.pushState(null, '', '#racun');
-    }
-  });
-
-  // Dropdown
+  // Dropdown мени
   const menu = document.getElementById('mainMenu');
   const menuBtn = menu?.querySelector('.menu-btn');
   if (menu && menuBtn) {
