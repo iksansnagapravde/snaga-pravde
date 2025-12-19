@@ -19,8 +19,22 @@
     .contact-card{ max-width:760px; margin:30px auto; padding:16px; border:1px solid rgba(255,255,255,.2); border-radius:16px }
     form{ display:grid; gap:12px }
     label{ font-weight:700 }
-    input, textarea{ padding:12px; border-radius:10px; border:1px solid rgba(255,255,255,.25); background:rgba(255,255,255,.08); color:#fff }
-    .submit{ background:#d3a451; color:#020c1b; font-weight:700; padding:10px; border-radius:30px; border:none; cursor:pointer }
+    input, textarea{
+      padding:12px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,.25);
+      background:rgba(255,255,255,.08);
+      color:#fff
+    }
+    .submit{
+      background:#d3a451;
+      color:#020c1b;
+      font-weight:700;
+      padding:10px;
+      border-radius:30px;
+      border:none;
+      cursor:pointer
+    }
   </style>
 </head>
 
@@ -42,7 +56,7 @@
     <iframe name="hiddenFrame" style="display:none"></iframe>
 
     <form id="kontakt-form"
-      action="https://script.google.com/macros/s/AKfycbyv0r8itWIZxTuGWUhmsduwBNJObrCfiPUMW3BaHDw2ooGiNvZ9PGXzDW93xEvBO6N4bw/exec"
+      action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
       method="GET"
       target="hiddenFrame"
       accept-charset="UTF-8">
@@ -56,7 +70,7 @@
       <label>Порука</label>
       <textarea name="poruka" required></textarea>
 
-      <!-- honeypot -->
+      <!-- honeypot (mora se zvati website) -->
       <input type="text" name="website" style="display:none">
 
       <button class="submit" type="submit">Пошаљи</button>
