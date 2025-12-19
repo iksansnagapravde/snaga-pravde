@@ -55,11 +55,11 @@
     <!-- SKRIVENI IFRAME -->
     <iframe name="hiddenFrame" style="display:none"></iframe>
 
-    <form id="kontakt-form"
-      action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-      method="GET"
-      target="hiddenFrame"
-      accept-charset="UTF-8">
+        <!-- ISTI /exec KAO Kontakt -->
+        <form id="join-form" autocomplete="on" novalidate
+              action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
+              method="GET" target="hiddenFrame" accept-charset="UTF-8"
+              onsubmit="window._submitted=true;">
 
       <label>Име и презиме</label>
       <input type="text" name="ime" required>
