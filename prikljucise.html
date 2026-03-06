@@ -1,138 +1,218 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Прикључи се — Иксан • Снага правде</title>
-  <meta name="theme-color" content="#1f1f1f">
-  <link rel="icon" href="logo-white.png" type="image/png">
 
-  <style>
-    body{background:#1f1f1f;color:#fff;font-family:"Times New Roman",serif}
-    .container{max-width:1150px;margin:0 auto;padding:0 16px}
-    .card{border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:18px}
-    form{display:grid;gap:12px}
-    label{font-weight:700}
-    input,select,textarea{
-      width:100%;padding:12px;border-radius:10px;
-      border:1px solid rgba(255,255,255,.25);
-      background:rgba(255,255,255,.08);color:#fff
-    }
-    textarea{min-height:120px}
-    .submit{
-      background:#d3a451;
-      color:#1f1f1f;
-      font-weight:800;
-      padding:12px;
-      border:none;
-      border-radius:40px;
-      cursor:pointer
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Прикључите се иницијативи — Иксан • Снага правде</title>
+
+<meta name="description" content="Прикључите се иницијативи за унапређење правде, институционалне одговорности и заштите права грађана.">
+
+<meta name="theme-color" content="#1f1f1f">
+
+<link rel="icon" href="logo-white.png" type="image/png">
+
+<style>
+
+body{
+background:#1f1f1f;
+color:#fff;
+font-family:"Times New Roman",serif
+}
+
+.container{
+max-width:1150px;
+margin:0 auto;
+padding:0 16px
+}
+
+.card{
+border:1px solid rgba(255,255,255,.2);
+border-radius:16px;
+padding:18px
+}
+
+form{
+display:grid;
+gap:12px
+}
+
+label{
+font-weight:700
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,.25);
+background:rgba(255,255,255,.08);
+color:#fff
+}
+
+textarea{
+min-height:120px
+}
+
+.submit{
+background:#d3a451;
+color:#1f1f1f;
+font-weight:800;
+padding:12px;
+border:none;
+border-radius:40px;
+cursor:pointer
+}
+
+.info{
+color:#dcdcdc;
+opacity:.9;
+margin-bottom:14px
+}
+
+</style>
 </head>
 
 <body>
 
 <main class="container">
-  <article class="card">
-    <h2>Прикључи се</h2>
 
-    <!-- SKRIVENI IFRAME -->
-    <iframe name="hiddenFrame" style="display:none"
-      onload="if(window._submitted){ window.location.href='hvala.html'; }"></iframe>
+<article class="card">
 
-    <form id="join-form"
-      action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-      method="GET"
-      target="hiddenFrame"
-      accept-charset="UTF-8"
-      novalidate>
+<h2>Прикључите се иницијативи</h2>
 
-      <label for="ime">Име и презиме</label>
-      <input type="text" id="ime">
+<p class="info">
+Уколико желите да подржите рад иницијативе Иксан – Снага правде,
+можете оставити своје контакт податке.  
+Пријављени учесници могу бити обавештавани о активностима,
+јавним иницијативама и могућностима за сарадњу.
+</p>
 
-      <label for="email">Е-пошта *</label>
-      <input type="email" id="email" required>
+<!-- SKRIVENI IFRAME -->
 
-      <label for="telefon">Телефон</label>
-      <input type="tel" id="telefon">
+<iframe name="hiddenFrame" style="display:none"
+onload="if(window._submitted){ window.location.href='hvala.html'; }">
+</iframe>
 
-      <label for="opstina">Град/општина</label>
-      <input type="text" id="opstina">
+<form id="join-form"
 
-      <label for="interes">Области интересовања</label>
-      <select id="interes">
-        <option value="">— изабери —</option>
-        <option>Волонтирање</option>
-        <option>Истраживање</option>
-        <option>Правна подршка</option>
-        <option>Медији и дизајн</option>
-      </select>
+action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
 
-      <label for="nacin">Начин укључивања</label>
-      <select id="nacin">
-        <option value="">— изабери —</option>
-        <option>Повремено</option>
-        <option>Редовно</option>
-        <option>Пројектно</option>
-      </select>
+method="GET"
 
-      <label for="poruka_local">Порука</label>
-      <textarea id="poruka_local"></textarea>
+target="hiddenFrame"
 
-      <label>
-        <input type="checkbox" id="saglasnost">
-        Прихватам правила приватности
-      </label>
+accept-charset="UTF-8"
 
-      <!-- POLJA KOJA GOOGLE SCRIPT OČEKUJE -->
-      <input type="hidden" name="ime" id="ime_send">
-      <input type="hidden" name="email" id="email_send">
-      <textarea name="poruka" id="poruka_send" hidden></textarea>
+novalidate>
 
-      <!-- honeypot -->
-      <input type="text" name="website" style="display:none">
+<label for="ime">Име и презиме</label>
+<input type="text" id="ime">
 
-      <p id="status"></p>
-      <button type="submit" class="submit">ПОШАЉИ</button>
-    </form>
-  </article>
+<label for="email">Е-пошта *</label>
+<input type="email" id="email" required>
+
+<label for="telefon">Телефон</label>
+<input type="tel" id="telefon">
+
+<label for="opstina">Град / општина</label>
+<input type="text" id="opstina">
+
+<label for="interes">Област интересовања</label>
+
+<select id="interes">
+<option value="">— изаберите —</option>
+<option>Волонтерски рад</option>
+<option>Истраживање и анализа</option>
+<option>Правна подршка</option>
+<option>Медији и комуникација</option>
+</select>
+
+<label for="nacin">Начин учешћа</label>
+
+<select id="nacin">
+<option value="">— изаберите —</option>
+<option>Повремено учешће</option>
+<option>Редовно учешће</option>
+<option>Пројектна сарадња</option>
+</select>
+
+<label for="poruka_local">Порука</label>
+<textarea id="poruka_local"></textarea>
+
+<label>
+<input type="checkbox" id="saglasnost">
+Сагласан/на сам са условима приватности и обраде података
+</label>
+
+<!-- POLJA KOJA GOOGLE SCRIPT OČEKUJE -->
+
+<input type="hidden" name="ime" id="ime_send">
+<input type="hidden" name="email" id="email_send">
+<textarea name="poruka" id="poruka_send" hidden></textarea>
+
+<!-- honeypot -->
+
+<input type="text" name="website" style="display:none">
+
+<p id="status"></p>
+
+<button type="submit" class="submit">
+ПОШАЉИ ПРИЈАВУ
+</button>
+
+</form>
+
+</article>
+
 </main>
 
 <script>
-  const form = document.getElementById('join-form');
-  const status = document.getElementById('status');
 
-  form.addEventListener('submit', (e) => {
-    const email = document.getElementById('email');
-    const sag = document.getElementById('saglasnost');
+const form = document.getElementById('join-form');
+const status = document.getElementById('status');
 
-    if (!email.value.trim()) {
-      e.preventDefault(); window._submitted=false;
-      status.textContent='⚠️ Унеси е-пошту.'; email.focus(); return;
-    }
-    if (!sag.checked) {
-      e.preventDefault(); window._submitted=false;
-      status.textContent='⚠️ Потребна је сагласност.'; return;
-    }
+form.addEventListener('submit', (e) => {
 
-    const poruka =
-      `ПРИКЉУЧИ СЕ\n\n` +
-      `Име: ${ime.value || '-'}\n` +
-      `Е-пошта: ${email.value}\n` +
-      `Телефон: ${telefon.value || '-'}\n` +
-      `Град: ${opstina.value || '-'}\n` +
-      `Интересовање: ${interes.value || '-'}\n` +
-      `Начин: ${nacin.value || '-'}\n\n` +
-      `Порука:\n${poruka_local.value || '-'}`;
+const email = document.getElementById('email');
+const sag = document.getElementById('saglasnost');
 
-    ime_send.value = ime.value || '';
-    email_send.value = email.value;
-    poruka_send.value = poruka;
+if (!email.value.trim()) {
+e.preventDefault();
+window._submitted=false;
+status.textContent='⚠️ Молимо унесите е-пошту.';
+email.focus();
+return;
+}
 
-    window._submitted = true;
-    status.textContent = 'Шаљем…';
-  });
+if (!sag.checked) {
+e.preventDefault();
+window._submitted=false;
+status.textContent='⚠️ Потребна је сагласност за обраду података.';
+return;
+}
+
+const poruka =
+`ПРИЈАВА ЗА САРАДЊУ\n\n` +
+`Име: ${ime.value || '-'}\n` +
+`Е-пошта: ${email.value}\n` +
+`Телефон: ${telefon.value || '-'}\n` +
+`Град: ${opstina.value || '-'}\n` +
+`Интересовање: ${interes.value || '-'}\n` +
+`Начин учешћа: ${nacin.value || '-'}\n\n` +
+`Порука:\n${poruka_local.value || '-'}`;
+
+ime_send.value = ime.value || '';
+email_send.value = email.value;
+poruka_send.value = poruka;
+
+window._submitted = true;
+
+status.textContent = 'Порука се шаље…';
+
+});
+
 </script>
 
 </body>
