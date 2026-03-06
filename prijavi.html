@@ -19,6 +19,7 @@ body{
 background:#1f1f1f;
 color:#fff;
 font-family:"Times New Roman",serif;
+line-height:1.6;
 }
 
 .container{
@@ -30,7 +31,7 @@ padding:0 16px
 .card{
 border:1px solid rgba(255,255,255,.2);
 border-radius:16px;
-padding:16px;
+padding:18px;
 margin:24px 0
 }
 
@@ -51,6 +52,10 @@ background:rgba(255,255,255,.08);
 color:#fff
 }
 
+textarea{
+min-height:120px
+}
+
 .submit{
 background:#d3a451;
 color:#1f1f1f;
@@ -61,10 +66,20 @@ border-radius:40px;
 cursor:pointer
 }
 
+.submit:hover{
+filter:brightness(1.05)
+}
+
 .info{
 opacity:.9;
 color:#dcdcdc;
 margin-bottom:12px
+}
+
+.privacy{
+margin-top:14px;
+font-size:.85rem;
+color:#bfbfbf
 }
 
 </style>
@@ -80,28 +95,25 @@ margin-bottom:12px
 
 <p class="info">
 Уколико имате сазнања о неправилностима, злоупотребама или повреди права,
-можете доставити основне информације путем овог формулара.  
-Сви подаци се користе искључиво ради анализе случаја и могућег
-покретања иницијатива за заштиту права грађана.
+можете доставити основне информације путем овог формулара.
+Свака достављена информација може допринети бољем разумевању проблема
+и покретању иницијатива за заштиту права грађана.
 </p>
 
 <!-- SKRIVENI IFRAME -->
 
-<iframe name="hiddenFrame"
+<iframe
+name="hiddenFrame"
 style="display:none"
 onload="if(window._submitted){ window.location.href='hvala.html'; }">
 </iframe>
 
-<form id="prijava-form"
-
+<form
+id="prijava-form"
 action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-
 method="GET"
-
 target="hiddenFrame"
-
 accept-charset="UTF-8"
-
 onsubmit="window._submitted=true;">
 
 <label>Име и презиме (опционо)</label>
@@ -117,6 +129,7 @@ onsubmit="window._submitted=true;">
 <option>Поступак извршења</option>
 <option>Сумња на корупцију</option>
 <option>Повреда радних права</option>
+<option>Повреда људских права</option>
 <option>Друго</option>
 </select>
 
@@ -124,7 +137,7 @@ onsubmit="window._submitted=true;">
 
 <textarea id="opis" required></textarea>
 
-<!-- POLJA KOJA GAS OČEKUJE -->
+<!-- POLJA KOJA GOOGLE SCRIPT OČEKUJE -->
 
 <input type="hidden" name="ime" id="ime_send">
 
@@ -132,7 +145,7 @@ onsubmit="window._submitted=true;">
 
 <textarea name="poruka" id="poruka_send" hidden></textarea>
 
-<!-- honeypot -->
+<!-- honeypot zaštita od spam botova -->
 
 <input type="text" name="website" style="display:none">
 
@@ -141,6 +154,11 @@ onsubmit="window._submitted=true;">
 <button class="submit" type="submit">
 ПОШАЉИ ПОДАТКЕ
 </button>
+
+<p class="privacy">
+Достављени подаци користе се искључиво у сврху анализе пријављеног случаја
+и неће бити јавно објављени без сагласности пошиљаоца.
+</p>
 
 </form>
 
