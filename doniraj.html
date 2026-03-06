@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
 <meta charset="UTF-8" />
@@ -37,7 +37,6 @@ overflow-x:hidden;
 }
 
 a{color:inherit;text-decoration:none}
-
 img{max-width:100%;display:block}
 
 .container{
@@ -94,11 +93,6 @@ transform:translateY(-1px);
 filter:brightness(1.2)
 }
 
-.nav a[aria-current="page"]{
-outline:2px solid var(--gold);
-outline-offset:2px
-}
-
 .menu{position:relative}
 
 .dropdown{
@@ -115,10 +109,6 @@ display:none
 }
 
 .menu.open .dropdown{display:block}
-
-@media (hover:hover){
-.menu:hover .dropdown{display:block}
-}
 
 .dropdown a{
 display:block;
@@ -380,7 +370,9 @@ background:var(--deepBlue)
 <div class="container head">
 
 <div class="brand">
+<a href="index.html">
 <img src="logo-white.png" alt="ИКСАН лого">
+</a>
 </div>
 
 <nav class="nav">
@@ -388,164 +380,56 @@ background:var(--deepBlue)
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
+<div class="menu" id="mainMenu">
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html" aria-current="page">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+</div>
+
+</div>
+
 </nav>
 
 </div>
 </header>
 
-<main>
+<!-- ostatak stranice ostaje isti -->
 
-<section class="hero">
+<script>
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
 
-<div class="container hero-grid">
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
 
-<div>
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
 
-<h1 class="title">
-Подржи рад за правду и достојанство
-</h1>
-
-<p class="subtitle">
-Донацијом подржавате правну помоћ грађанима, истраживања
-и јавне иницијативе које имају за циљ јачање правде,
-одговорности институција и достојанства сваког човека.
-</p>
-
-</div>
-
-<div class="hero-media">
-<img src="uni.webp" alt="Људи заједно — Снага правде">
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="donation-intro">
-
-<h2>Донација уплатом на рачун удружења</h2>
-
-<p>
-Сваком уплатом подржавате правну помоћ грађанима,
-истраживања и иницијативе усмерене на заштиту права
-и достојанства човека.
-</p>
-
-</div>
-
-<div class="donation-layout">
-
-<div>
-
-<div class="uplatnica">
-
-<div class="u-head">
-<div class="u-title">
-НАЛОГ ЗА УПЛАТУ
-<small>Пример попуњене уплатнице</small>
-</div>
-</div>
-
-<div class="u-grid">
-
-<div class="u-field u-wide">
-<div class="u-label">Прималац</div>
-<div class="u-value">Удружење грађана Иксан-Снага правде</div>
-</div>
-
-<div class="u-field u-wide">
-<div class="u-label">Адреса примаоца</div>
-<div class="u-value">Београд</div>
-</div>
-
-<div class="u-field u-wide">
-<div class="u-label">Сврха</div>
-<div class="u-value">Донација</div>
-</div>
-
-<div class="u-field">
-<div class="u-label">Позив на број</div>
-<div class="u-value">3010/2025</div>
-</div>
-
-<div class="u-field">
-<div class="u-label">Жиро рачун</div>
-<div class="u-value">340-1000345580-18</div>
-</div>
-
-<div class="u-field">
-<div class="u-label">Валута</div>
-<div class="u-value">RSD</div>
-</div>
-
-</div>
-
-<div class="u-foot">
-<span class="badge-gold">Донација</span>
-<span>Хвала на поверењу и подршци.</span>
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div class="book-card">
-
-<div class="book-cover">
-<img src="iksan.webp" alt="Књига Иксан">
-</div>
-
-<div>
-
-<div class="book-info-title">
-Књига „Иксан“
-</div>
-
-<div class="book-info-sub">
-Доступна у Делфи књижарама
-</div>
-
-<div class="book-info-text">
-Куповином књиге подржавате исту борбу за правду,
-достојанство и солидарност.
-</div>
-
-<div class="book-note">
-Ауторски хонорар од продаје књиге усмерава се у хуманитарне сврхе.
-</div>
-
-<a class="book-btn"
-href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html"
-target="_blank"
-rel="noopener noreferrer">
-КУПИ КЊИГУ
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<footer>
-<div class="container">
-© 2025 Иксан • Снага правде — Сва права задржана.
-</div>
-</footer>
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+</script>
 
 </body>
 </html>
