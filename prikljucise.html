@@ -27,10 +27,80 @@ margin:0 auto;
 padding:0 16px
 }
 
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:#1f1f1f;
+border-bottom:1px solid rgba(255,255,255,.1)
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px
+}
+
+.brand img{
+height:161px;
+border-radius:10px
+}
+
+nav.nav{
+display:flex;
+gap:10px
+}
+
+.nav a.nav-link,.menu-btn{
+background:#1f1f1f;
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:#1f1f1f;
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06)
+}
+
+/* FORM */
+
 .card{
 border:1px solid rgba(255,255,255,.2);
 border-radius:16px;
-padding:18px
+padding:18px;
+margin:24px 0
 }
 
 form{
@@ -76,6 +146,49 @@ margin-bottom:14px
 
 <body>
 
+<header>
+
+<div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
+
+<nav class="nav">
+
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html" aria-current="page">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+
+</div>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
 <main class="container">
 
 <article class="card">
@@ -84,27 +197,20 @@ margin-bottom:14px
 
 <p class="info">
 Уколико желите да подржите рад иницијативе Иксан – Снага правде,
-можете оставити своје контакт податке.  
+можете оставити своје контакт податке.
 Пријављени учесници могу бити обавештавани о активностима,
 јавним иницијативама и могућностима за сарадњу.
 </p>
-
-<!-- SKRIVENI IFRAME -->
 
 <iframe name="hiddenFrame" style="display:none"
 onload="if(window._submitted){ window.location.href='hvala.html'; }">
 </iframe>
 
 <form id="join-form"
-
 action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-
 method="GET"
-
 target="hiddenFrame"
-
 accept-charset="UTF-8"
-
 novalidate>
 
 <label for="ime">Име и презиме</label>
@@ -146,13 +252,9 @@ novalidate>
 Сагласан/на сам са условима приватности и обраде података
 </label>
 
-<!-- POLJA KOJA GOOGLE SCRIPT OČEKUJE -->
-
 <input type="hidden" name="ime" id="ime_send">
 <input type="hidden" name="email" id="email_send">
 <textarea name="poruka" id="poruka_send" hidden></textarea>
-
-<!-- honeypot -->
 
 <input type="text" name="website" style="display:none">
 
@@ -168,7 +270,34 @@ novalidate>
 
 </main>
 
+<footer class="container" style="text-align:center;margin:30px 0">
+© 2025 Иксан • Снага правде — Сва права задржана.
+</footer>
+
 <script>
+
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
+
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
 
 const form = document.getElementById('join-form');
 const status = document.getElementById('status');
