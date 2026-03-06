@@ -1,307 +1,308 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Суд мора бити храм правде — Иксан • Снага правде</title>
-  <meta name="description" content="Време је да се суд врати народу — да поново постане место истине, достојанства и правде, а не страха, притиска и интереса.">
-  <meta name="theme-color" content="#020c1b">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="logo-white.png" type="image/png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{
-      --deepBlue:#1f1f1f;
-      --gold:#d3a451;
-      --radius:16px;
-      --ink:#dcdcdc;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      background:var(--deepBlue);
-      color:#fff;
-      font-family:"Times New Roman",serif;
-      line-height:1.7;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
-      font-size:110%;
-      overflow-x:hidden;
-    }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{max-width:1150px;margin:0 auto;padding:0 20px}
+<title>Независност и правичност судског система — Иксан • Снага правде</title>
 
-    /* HEADER — као на индексу */
-    header{
-      position:sticky;top:0;z-index:100;
-      background:var(--deepBlue);
-      border-bottom:1px solid rgba(255,255,255,.1);
-      backdrop-filter:blur(4px);
-    }
-    .head{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:4px 0 0; gap:12px; flex-wrap:nowrap;
-    }
-    .brand{display:flex;align-items:center;flex-shrink:0;}
-    .brand img{height:161px;border-radius:10px}
-    @media (max-width:768px){
-      .brand{justify-content:center;margin:0 auto;}
-      .brand img{height:106px}
-    }
+<meta name="description" content="Иницијатива за јачање независности судства, заштиту права грађана и унапређење правичности кривичног поступка у Републици Србији.">
 
-    /* НАВ + МЕНИ */
-    nav.nav{
-      display:flex;flex-direction:row;align-items:center;gap:10px;
-      padding-top:0; padding-right:8px;
-    }
-    .nav a.nav-link,.menu-btn{
-      background:var(--deepBlue); color:#fff;
-      padding:6px 9px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.2);
-      font-weight:600; font-size:0.9rem; line-height:1;
-      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
-    }
-    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
-    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
+<meta name="theme-color" content="#020c1b">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="logo-white.png" type="image/png">
 
-    .menu{position:relative}
-    .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0;
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:12px; min-width:300px; padding:6px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
-    }
-    .menu.open .dropdown{display:block}
-    @media (hover:hover){ .menu:hover .dropdown{display:block} }
-    .dropdown a{
-      display:block; padding:9px 10px; border-radius:8px; border:1px solid transparent;
-      color:#fff; font-weight:600; font-size:14px; white-space:nowrap;
-    }
-    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+<style>
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--radius:16px;
+--ink:#dcdcdc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+background:var(--deepBlue);
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
+font-size:110%;
+overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* HERO */
-    .hero{padding:24px 0 0}
-    .hero-grid{display:grid;gap:24px}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-    h1{
-      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
-      font-size:clamp(23px,3vw,33px);
-      text-shadow:0 0 8px rgba(255,255,255,.25);
-    }
-    .sub{
-      color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px);
-      margin:8px 0 12px;max-width:780px;
-    }
-    .hero-media{
-      border-radius:16px;overflow:hidden;
-      border:1px solid rgba(255,255,255,.15);
-      background:var(--deepBlue);
-      aspect-ratio:16/9;
-      display:flex;align-items:center;justify-content:center;
-      box-shadow:0 10px 24px rgba(0,0,0,.5);
-    }
-    .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
+/* HEADER */
+header{
+position:sticky;top:0;z-index:100;
+background:var(--deepBlue);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
 
-    /* CTA (—25% величина, један ред) */
-    .cta-row{
-      display:flex;justify-content:flex-start;flex-wrap:nowrap;gap:8px;margin-top:12px;
-    }
-    .btn{
-      display:inline-block;padding:8px 18px;border-radius:40px;border:none;
-      font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.3px;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
-      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
-      white-space:nowrap;
-    }
-    .btn-primary{background:var(--gold);color:var(--deepBlue)}
-    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
-    .btn:hover{transform:translateY(-2px)}
-    @media(max-width:768px){
-      .cta-row{justify-content:center;gap:6px}
-      .btn{padding:7px 14px;font-size:12px}
-    }
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+}
 
-    /* КАРТИЦЕ — dark као на индексу */
-    .split{margin-top:18px}
-    .grid{display:grid;gap:14px;grid-template-columns:1fr}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .card{
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow:0 14px 32px rgba(0,0,0,.35);
-      transition:transform .2s, box-shadow .2s;
-      color:#fff;
-    }
-    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
-    .card h3{
-      margin:0 0 6px;
-      color:#ffffff;
-      line-height:1.15;
-      font-weight:700;
-      font-size:20px;
-      text-shadow:none;
-    }
-    .card p,.card li{color:var(--ink);line-height:1.75;font-size:clamp(14px,1.85vw,16px)}
-    .card ul,.card ol{padding-left:18px}
-    .card.full{grid-column:1/-1}
+.brand img{height:161px;border-radius:10px}
 
-    /* Доњи CTA ред */
-    .bottom-cta{
-      display:flex;gap:8px;justify-content:center;flex-wrap:nowrap;margin-top:8px
-    }
+nav.nav{
+display:flex;
+align-items:center;
+gap:10px;
+}
 
-    footer{
-      border-top:1px solid rgba(255,255,255,.15);
-      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
-      margin-top:30px; background:var(--deepBlue);
-    }
+.nav a.nav-link,.menu-btn{
+background:var(--deepBlue);
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem;
+}
 
-    /* мобилни финиш */
-    @media (max-width:768px){
-      body{font-size:90%;}
-      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
-      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
-      .menu-btn{margin-right:6px;}
-    }
-    @media (max-width:360px){
-      .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
-      nav.nav{gap:4px}
-    }
-  </style>
+.hero{padding:24px 0 0}
+
+.hero-grid{display:grid;gap:24px}
+
+@media(min-width:980px){
+.hero-grid{grid-template-columns:1.1fr .9fr}
+}
+
+h1{
+font-size:clamp(23px,3vw,33px);
+}
+
+.sub{
+color:var(--ink);
+opacity:.95;
+font-size:clamp(16px,2vw,18px);
+margin:8px 0 12px;
+max-width:780px;
+}
+
+.hero-media{
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.15);
+aspect-ratio:16/9;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+}
+
+.hero-media img{
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.9
+}
+
+.cta-row{
+display:flex;
+gap:8px;
+margin-top:12px;
+}
+
+.btn{
+display:inline-block;
+padding:8px 18px;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
+text-transform:uppercase;
+cursor:pointer;
+box-shadow:0 3px 0 rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.4);
+}
+
+.btn-primary{background:var(--gold);color:var(--deepBlue)}
+.btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
+
+.split{margin-top:18px}
+
+.grid{
+display:grid;
+gap:14px;
+grid-template-columns:1fr
+}
+
+@media(min-width:900px){
+.grid{grid-template-columns:repeat(2,1fr)}
+}
+
+.card{
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:var(--radius);
+padding:16px;
+box-shadow:0 14px 32px rgba(0,0,0,.35);
+}
+
+.card h3{
+margin-bottom:6px;
+font-size:20px;
+}
+
+.card p,.card li{
+color:var(--ink);
+line-height:1.75;
+}
+
+.card.full{grid-column:1/-1}
+
+.bottom-cta{
+display:flex;
+gap:8px;
+justify-content:center;
+margin-top:8px;
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,.15);
+text-align:center;
+padding:24px 0;
+margin-top:30px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="container head">
-    <div class="brand">
-      <a href="index.html">
-        <img src="logo-white.png" alt="ИКСАН лого">
-      </a>
-    </div>
+<div class="container head">
 
-    <nav class="nav" aria-label="Главна навигација">
-      <a class="nav-link" href="index.html">Почетна</a>
-      <a class="nav-link" href="kontakt.html">Контакт</a>
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
 
-      <div class="menu" id="mainMenu">
-        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
-        <div class="dropdown" id="menuList" role="menu">
-          <a href="onama.html" role="menuitem">О нама</a>
-          <a href="oblasti.html" role="menuitem">Области</a>
-          <a href="ciljevi.html" role="menuitem">Циљеви</a>
-          <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
-          <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
-          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
-          <a href="sudpravda.html" role="menuitem" aria-current="page">Суд народу, не моћнима</a>
-          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+<nav class="nav">
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+</nav>
+
+</div>
 </header>
 
 <main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Суд мора бити храм правде</h1>
-        <p class="sub">Доста је било судија по мери моћних, политике и закона без душе. Време је да се суд врати народу — да поново постане место истине, достојанства и правде, а не страха, притиска и интереса.</p>
-        <div class="cta-row">
-          <a href="prikljuci-se.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
-          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-        </div>
-      </div>
-      <div class="hero-media">
-                <!-- замењено: hero.webp -> uni.webp -->
-        <img src="uni.webp" alt="Суд мора бити храм правде — Иксан • Снага правде">
-      </div>
-    </div>
-  </section>
 
-  <!-- КАРТИЦЕ -->
-  <section class="split">
-    <div class="container grid">
+<section class="hero">
+<div class="container hero-grid">
 
-      <article class="card full">
-        <h3>Људи нису бројеви — правда мора имати лице, срце и меру</h3>
-        <p>Сваког дана у Србији људи се притварају на основу речи, наговештаја, лажи и интереса, а не на основу доказа. Невини људи проводе месеце, па и године у притвору, док им још није ни подигнута оптужница, нити је започело суђење. То није правда — то је злоупотреба моћи.</p>
-      </article>
+<div>
 
-      <article class="card">
-        <h3>Реформа притвора</h3>
-        <ul>
-          <li>Притвор искључиво на основу јасних, проверљивих доказа.</li>
-          <li>Максимално трајање притвора под строгом судском контролом.</li>
-          <li>Хитно покретање поступака за сва лица која се држе без оптужнице.</li>
-        </ul>
-      </article>
+<h1>Независност и правичност судског система</h1>
 
-      <article class="card">
-        <h3>Достојанство и људскост у затворима</h3>
-        <p>Сваки човек, био невин или осуђен, има право на хумане услове и поштовање достојанства. Затвори не смеју бити места понижења, болести и очаја. Држава која то допушта — губи своју људскост.</p>
-      </article>
+<p class="sub">
+Правна држава почива на независном судству и правичном поступку.
+Циљ ове иницијативе је јачање институционалне независности судова,
+заштита права грађана у кривичним поступцима
+и унапређење стандарда правичности и пропорционалности казнене политике.
+</p>
 
-      <article class="card">
-        <h3>Право на други почетак</h3>
-        <p>После одслужене казне, човек има право да поново живи као грађанин — да ради, учи и ствара. Без истинске ресоцијализације, друштво гура људе у нове грешке уместо да спречава рецидив.</p>
-      </article>
+<div class="cta-row">
+<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
+<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
+</div>
 
-      <article class="card full">
-        <h3>Члан 55а — закон без душе</h3>
-        <p>Такозвани члан 55а Кривичног закона уводи аутоматско повећање казне за свакога ко је раније осуђиван, без обзира на тежину новог дела. Тако човек може добити године затвора за ситну крађу или ненасилно дело само зато што је већ једном био кажњен. У земљама попут Аустрије, Немачке и Шведске, судије задржавају право да сразмерно одмере казну и узму у обзир све околности. Правда није аутомат нити формула — <strong>члан 55а мора бити ревидиран или укинут</strong>.</p>
+</div>
 
-        <div class="bottom-cta">
-          <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
-          <a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
-          <a class="btn btn-dark" href="prijavi.html">ПРИЈАВИ</a>
-        </div>
-      </article>
+<div class="hero-media">
+<img src="uni.webp" alt="Независност судства">
+</div>
 
-    </div>
-  </section>
+</div>
+</section>
+
+<section class="split">
+<div class="container grid">
+
+<article class="card full">
+
+<h3>Заштита права грађана у кривичном поступку</h3>
+
+<p>
+Правична примена закона подразумева да се свака мера ограничења слободе
+примењује само када је неопходна и уз јасно образложене правне разлоге.
+Циљ је јачање стандарда правичног поступка и спречавање
+неоправданог задржавања лица у притвору.
+</p>
+
+</article>
+
+<article class="card">
+
+<h3>Реформа института притвора</h3>
+
+<ul>
+<li>Јасни критеријуми за одређивање притвора.</li>
+<li>Редовна судска контрола трајања мере.</li>
+<li>Поштовање права на суђење у разумном року.</li>
+</ul>
+
+</article>
+
+<article class="card">
+
+<h3>Хумани услови извршења казне</h3>
+
+<p>
+Поштовање достојанства лица лишених слободе представља
+један од основних стандарда савремених правних система.
+Потребно је унапређење услова у установама за извршење казне
+у складу са међународним стандардима.
+</p>
+
+</article>
+
+<article class="card">
+
+<h3>Ресоцијализација и повратак у друштво</h3>
+
+<p>
+Након извршења казне важно је обезбедити услове за
+успешну ресоцијализацију и поновно укључивање у друштво.
+То је један од кључних механизама спречавања поновног вршења кривичних дела.
+</p>
+
+</article>
+
+<article class="card full">
+
+<h3>Пропорционалност казнене политике</h3>
+
+<p>
+Казнена политика треба да буде заснована на принципу
+пропорционалности и индивидуалне процене сваког случаја.
+Усклађивање законодавства са европским правним стандардима
+доприноси јачању поверења грађана у правосудни систем.
+</p>
+
+<div class="bottom-cta">
+<a class="btn btn-primary" href="doniraj.html">ПОДРЖИ РАД</a>
+<a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
+<a class="btn btn-dark" href="prijavi.html">ДОСТАВИ ПОДАТКЕ</a>
+</div>
+
+</article>
+
+</div>
+</section>
+
 </main>
 
 <footer>
-  <div class="container">
-    © 2025 Иксан • Снага правде — Сва права задржана.
-  </div>
+<div class="container">
+© 2025 Иксан • Снага правде — Сва права задржана.
+</div>
 </footer>
 
-<script>
-  // Dropdown meni
-  const menu = document.getElementById('mainMenu');
-  const menuBtn = menu?.querySelector('.menu-btn');
-
-  if (menu && menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!menu.contains(e.target)) {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-      }
-    });
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-        menuBtn.focus();
-      }
-    });
-  }
-</script>
 </body>
 </html>
