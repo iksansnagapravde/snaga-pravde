@@ -1,114 +1,281 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Контакт — Иксан • Снага правде</title>
-  <meta name="description" content="Контакт и подршка грађанима — пријавите неправду или затражите савет.">
-  <meta name="theme-color" content="#020c1b">
-  <link rel="icon" href="logo-white.png" type="image/png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; }
-    *{ box-sizing:border-box; margin:0; padding:0 }
-    body{
-      background:var(--deepBlue);
-      color:#fff;
-      font-family:"Times New Roman",serif;
-      line-height:1.7
-    }
-    .container{ max-width:1150px; margin:0 auto; padding:0 20px }
-    header{ border-bottom:1px solid rgba(255,255,255,.1) }
-    .head{ display:flex; justify-content:space-between; align-items:center }
-    .brand img{ height:150px }
-    .contact-card{
-      max-width:760px;
-      margin:30px auto;
-      padding:16px;
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:16px
-    }
-    form{ display:grid; gap:12px }
-    label{ font-weight:700 }
-    input, textarea{
-      padding:12px;
-      border-radius:10px;
-      border:1px solid rgba(255,255,255,.25);
-      background:rgba(255,255,255,.08);
-      color:#fff
-    }
-    .submit{
-      background:#d3a451;
-      color:#020c1b;
-      font-weight:700;
-      padding:10px;
-      border-radius:30px;
-      border:none;
-      cursor:pointer
-    }
-  </style>
+<title>Контакт — Иксан • Снага правде</title>
+
+<meta name="description" content="Контакт и подршка грађанима — пријавите неправду или затражите савет.">
+
+<meta name="theme-color" content="#020c1b">
+
+<link rel="icon" href="logo-white.png" type="image/png">
+
+<style>
+
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--radius:16px;
+--ink:#dcdcdc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+background:var(--deepBlue);
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7
+}
+
+a{color:inherit;text-decoration:none}
+
+.container{
+max-width:1150px;
+margin:0 auto;
+padding:0 20px
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:var(--deepBlue);
+border-bottom:1px solid rgba(255,255,255,.1)
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px;
+flex-wrap:nowrap
+}
+
+.brand{display:flex;align-items:center}
+
+.brand img{
+height:150px;
+border-radius:10px
+}
+
+nav.nav{
+display:flex;
+align-items:center;
+gap:10px;
+padding-right:8px
+}
+
+.nav a.nav-link,.menu-btn{
+background:var(--deepBlue);
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem;
+line-height:1;
+white-space:nowrap
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06)
+}
+
+/* CONTACT */
+
+.contact-card{
+max-width:760px;
+margin:30px auto;
+padding:16px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:16px
+}
+
+form{
+display:grid;
+gap:12px
+}
+
+label{
+font-weight:700
+}
+
+input,textarea{
+padding:12px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,.25);
+background:rgba(255,255,255,.08);
+color:#fff
+}
+
+.submit{
+background:#d3a451;
+color:#020c1b;
+font-weight:700;
+padding:10px;
+border-radius:30px;
+border:none;
+cursor:pointer
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="container head">
-    <div class="brand">
-      <a href="index.html">
-        <img src="logo-white.png" alt="ИКСАН">
-      </a>
-    </div>
-  </div>
+
+<div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН">
+</a>
+</div>
+
+<nav class="nav">
+
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html" aria-current="page">Контакт</a>
+
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+
+</div>
+
+</div>
+
+</nav>
+
+</div>
+
 </header>
 
 <main class="container">
-  <article class="contact-card">
-    <h2>Контакт форма</h2>
 
-    <!-- SKRIVENI IFRAME -->
-    <iframe name="hiddenFrame" style="display:none"></iframe>
+<article class="contact-card">
 
-    <form id="kontakt-form"
-          autocomplete="on"
-          novalidate
-          action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-          method="GET"
-          target="hiddenFrame"
-          accept-charset="UTF-8"
-          onsubmit="window._submitted=true;">
+<h2>Контакт форма</h2>
 
-      <label>Име и презиме</label>
-      <input type="text" name="ime" required>
+<iframe name="hiddenFrame" style="display:none"></iframe>
 
-      <label>Е-пошта</label>
-      <input type="email" name="email" required>
+<form id="kontakt-form"
+autocomplete="on"
+novalidate
+action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
+method="GET"
+target="hiddenFrame"
+accept-charset="UTF-8"
+onsubmit="window._submitted=true;">
 
-      <label>Порука</label>
-      <textarea name="poruka" required></textarea>
+<label>Име и презиме</label>
+<input type="text" name="ime" required>
 
-      <!-- honeypot -->
-      <input type="text" name="website" style="display:none">
+<label>Е-пошта</label>
+<input type="email" name="email" required>
 
-      <button class="submit" type="submit">Пошаљи</button>
-      <p id="status" style="color:#cfe1ff"></p>
-    </form>
-  </article>
+<label>Порука</label>
+<textarea name="poruka" required></textarea>
+
+<input type="text" name="website" style="display:none">
+
+<button class="submit" type="submit">Пошаљи</button>
+
+<p id="status" style="color:#cfe1ff"></p>
+
+</form>
+
+</article>
+
 </main>
 
-<footer class="container" style="text-align:center; margin:30px 0">
-  © 2025 Иксан • Снага правде
+<footer class="container" style="text-align:center;margin:30px 0">
+
+© 2025 Иксан • Снага правде
+
 </footer>
 
 <script>
-  const form = document.getElementById('kontakt-form');
-  const status = document.getElementById('status');
 
-  form.addEventListener('submit', () => {
-    status.textContent = 'Шаљем поруку…';
-    setTimeout(() => {
-      window.location.href = 'hvala.html';
-    }, 1200);
-  });
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
+
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+
+const form=document.getElementById('kontakt-form');
+const status=document.getElementById('status');
+
+form.addEventListener('submit',()=>{
+status.textContent='Шаљем поруку…';
+setTimeout(()=>{
+window.location.href='hvala.html';
+},1200);
+});
+
 </script>
 
 </body>
