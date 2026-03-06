@@ -37,6 +37,8 @@ img{max-width:100%;display:block;height:auto}
 
 .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
+/* HEADER */
+
 header{
 position:sticky;
 top:0;
@@ -131,6 +133,8 @@ border:1px solid transparent;
 background:rgba(255,255,255,.06);
 border-color:rgba(255,255,255,.16)
 }
+
+/* HERO */
 
 .hero{padding:24px 0 0}
 
@@ -269,6 +273,26 @@ margin-top:30px;
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html" aria-current="page">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+</div>
+
+</div>
+
 </nav>
 
 </div>
@@ -296,9 +320,7 @@ margin-top:30px;
 <div class="cta-row">
 
 <a href="dokumenta.html" class="btn btn-dark">ДОКУМЕНТА</a>
-
 <a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
-
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
 
 </div>
@@ -306,9 +328,7 @@ margin-top:30px;
 </div>
 
 <div class="hero-media">
-
 <img src="univerzaln.webp">
-
 </div>
 
 </div>
@@ -326,39 +346,31 @@ margin-top:30px;
 <h3>Образложење иницијативе</h3>
 
 <p>
-
 У пракси примене постојећег система извршења у Републици Србији
 уочене су ситуације у којима релативно мала потраживања,
 услед акумулације камата и трошкова поступка,
 прерастају у вишеструко веће финансијске обавезе.
-
 </p>
 
 <p>
-
 Посебан изазов представља модел у којем значајан део поступка
 спроводе приватни извршитељи,
 што у појединим случајевима може довести до несразмере
 између висине основног дуга и финансијских последица по дужника.
-
 </p>
 
 <p>
-
 Сматрамо да је потребно покренути институционалну и стручну расправу
 о унапређењу нормативног оквира извршног поступка,
 са циљем успостављања праведне равнотеже
 између права поверилаца и заштите основних права грађана.
-
 </p>
 
 <p>
-
 Предмет иницијативе је разматрање могућих унапређења система,
 укључујући јачање судске контроле,
 ограничење трошкова поступка
 и увођење института личне инсолвентности физичких лица.
-
 </p>
 
 </article>
@@ -374,12 +386,37 @@ margin-top:30px;
 <footer>
 
 <div class="container">
-
 © 2025 Иксан • Снага правде — Сва права задржана.
-
 </div>
 
 </footer>
+
+<script>
+
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
+
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+
+</script>
 
 </body>
 </html>
