@@ -68,11 +68,6 @@ flex-wrap:nowrap
 
 .brand img{height:161px;border-radius:10px}
 
-@media (max-width:768px){
-.brand{justify-content:center;margin:0 auto}
-.brand img{height:106px}
-}
-
 nav.nav{display:flex;align-items:center;gap:10px;padding-right:8px}
 
 .nav a.nav-link,.menu-btn{
@@ -83,14 +78,6 @@ border-radius:8px;
 border:1px solid rgba(255,255,255,.2);
 font-weight:600;
 font-size:0.9rem;
-line-height:1;
-transition:transform .15s ease,filter .15s ease;
-white-space:nowrap;
-}
-
-.nav a.nav-link:hover,.menu-btn:hover{
-transform:translateY(-1px);
-filter:brightness(1.2)
 }
 
 .menu{position:relative}
@@ -124,16 +111,18 @@ background:rgba(255,255,255,.06)
 
 /* HERO */
 
-.hero{padding:40px 0}
+.hero{
+padding:40px 0
+}
 
 .hero h1{
 font-size:32px;
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .hero p{
 color:var(--ink);
-max-width:700px;
+max-width:720px
 }
 
 /* SECTION */
@@ -156,21 +145,10 @@ text-align:center;
 margin-bottom:12px
 }
 
-.donation-intro{
-text-align:center;
-margin-bottom:18px
-}
-
-.donation-intro p{
-color:var(--ink);
-max-width:720px;
-margin:0 auto 14px
-}
-
 /* UPLATNICA */
 
 .uplatnica{
-max-width:480px;
+max-width:520px;
 margin:0 auto;
 border:1px solid rgba(255,255,255,.25);
 border-radius:12px;
@@ -183,8 +161,7 @@ font-size:0.9rem
 .u-head{
 padding:10px 14px;
 border-bottom:1px solid rgba(255,255,255,.2);
-background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
-text-align:left
+font-weight:700
 }
 
 .u-grid{
@@ -209,60 +186,11 @@ background:rgba(255,255,255,.08);
 color:#fff;
 border-radius:8px;
 padding:8px 10px;
-min-height:38px;
 display:flex;
-align-items:center;
-font-size:0.95rem
-}
-
-.u-wide{grid-column:1 / -1}
-
-/* BOOK */
-
-.book-card{
-margin:30px auto;
-max-width:480px;
-border-radius:16px;
-border:1px solid rgba(255,255,255,.18);
-background:rgba(2,12,27,.95);
-box-shadow:0 10px 26px rgba(0,0,0,.6);
-padding:18px;
-display:grid;
-gap:14px;
-grid-template-columns:120px 1fr;
 align-items:center
 }
 
-.book-cover img{
-max-width:110px;
-margin:0 auto;
-border-radius:8px;
-box-shadow:0 8px 24px rgba(0,0,0,.7)
-}
-
-.book-info-title{
-font-weight:700;
-font-size:1rem;
-margin-bottom:4px
-}
-
-.book-info-sub{
-color:var(--ink);
-font-size:0.85rem;
-margin-bottom:8px
-}
-
-.book-btn{
-display:inline-block;
-padding:8px 16px;
-border-radius:999px;
-border:none;
-background:var(--gold);
-color:var(--deepBlue);
-font-weight:800;
-text-transform:uppercase;
-font-size:0.8rem
-}
+.u-wide{grid-column:1/-1}
 
 footer{
 border-top:1px solid var(--line);
@@ -309,43 +237,41 @@ background:var(--deepBlue)
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 
 </div>
-
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <main class="container">
 
 <section class="hero">
+
 <h1>Подржите рад удружења</h1>
+
 <p>
-Вашом донацијом подржавате истраживања, правну подршку грађанима
-и иницијативе за унапређење правног система и институционалне одговорности.
+Вашом донацијом подржавате рад удружења Иксан — Снага правде,
+истраживања, правну помоћ грађанима и иницијативе
+за унапређење институционалне одговорности и заштиту права грађана.
 </p>
+
 </section>
 
 <section class="section">
 
-<div class="donation-intro">
-<h2>Донација</h2>
-<p>
-Подршку раду удружења можете пружити добровољном донацијом.
-Средства се користе за активности у заштити права грађана.
-</p>
-</div>
+<h2>Подаци за донацију</h2>
 
 <div class="uplatnica">
 
-<div class="u-head">УПЛАТНИЦА</div>
+<div class="u-head">
+УПЛАТНИЦА
+</div>
 
 <div class="u-grid">
 
 <div class="u-field">
 <div class="u-label">Прималац</div>
-<div class="u-value">Удружење ИКСАН</div>
+<div class="u-value">Удружење ИКСАН — Снага правде</div>
 </div>
 
 <div class="u-field">
@@ -354,43 +280,21 @@ background:var(--deepBlue)
 </div>
 
 <div class="u-field">
-<div class="u-label">Рачун</div>
-<div class="u-value">000-0000000000000-00</div>
+<div class="u-label">Број рачуна</div>
+<div class="u-value">340-1000345580-18</div>
 </div>
 
 <div class="u-field">
-<div class="u-label">Износ</div>
-<div class="u-value">По избору</div>
+<div class="u-label">Банка</div>
+<div class="u-value">Ерсте банка</div>
 </div>
 
 <div class="u-field u-wide">
-<div class="u-label">Позив на број</div>
-<div class="u-value">00</div>
+<div class="u-label">Напомена</div>
+<div class="u-value">Добровољна донација за рад удружења</div>
 </div>
 
 </div>
-
-</div>
-
-</section>
-
-<section class="book-card">
-
-<div class="book-cover">
-<img src="book.webp" alt="Књига">
-</div>
-
-<div>
-
-<div class="book-info-title">
-Подржите рад куповином књиге
-</div>
-
-<div class="book-info-sub">
-Истраживање правног система и институционалних проблема.
-</div>
-
-<a class="book-btn" href="#">Сазнај више</a>
 
 </div>
 
@@ -407,6 +311,7 @@ background:var(--deepBlue)
 </footer>
 
 <script>
+
 const menu=document.getElementById('mainMenu');
 const menuBtn=menu.querySelector('.menu-btn');
 
@@ -421,6 +326,7 @@ menu.classList.remove('open');
 menuBtn.setAttribute('aria-expanded','false');
 }
 });
+
 </script>
 
 </body>
