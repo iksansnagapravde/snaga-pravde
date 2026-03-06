@@ -28,6 +28,75 @@ margin:0 auto;
 padding:0 16px
 }
 
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:#1f1f1f;
+border-bottom:1px solid rgba(255,255,255,.1)
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px
+}
+
+.brand img{
+height:161px;
+border-radius:10px
+}
+
+nav.nav{
+display:flex;
+gap:10px
+}
+
+.nav a.nav-link,.menu-btn{
+background:#1f1f1f;
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:#1f1f1f;
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06)
+}
+
+/* FORM */
+
 .card{
 border:1px solid rgba(255,255,255,.2);
 border-radius:16px;
@@ -87,6 +156,49 @@ color:#bfbfbf
 
 <body>
 
+<header>
+
+<div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
+
+<nav class="nav">
+
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html" aria-current="page">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+
+</div>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
 <main class="container">
 
 <article class="card">
@@ -99,8 +211,6 @@ color:#bfbfbf
 Свака достављена информација може допринети бољем разумевању проблема
 и покретању иницијатива за заштиту права грађана.
 </p>
-
-<!-- SKRIVENI IFRAME -->
 
 <iframe
 name="hiddenFrame"
@@ -137,15 +247,9 @@ onsubmit="window._submitted=true;">
 
 <textarea id="opis" required></textarea>
 
-<!-- POLJA KOJA GOOGLE SCRIPT OČEKUJE -->
-
 <input type="hidden" name="ime" id="ime_send">
-
 <input type="hidden" name="email" id="email_send">
-
 <textarea name="poruka" id="poruka_send" hidden></textarea>
-
-<!-- honeypot zaštita od spam botova -->
 
 <input type="text" name="website" style="display:none">
 
@@ -166,38 +270,67 @@ onsubmit="window._submitted=true;">
 
 </main>
 
+<footer class="container" style="text-align:center;margin:30px 0">
+
+© 2025 Иксан • Снага правде — Сва права задржана.
+
+</footer>
+
 <script>
 
-const form = document.getElementById('prijava-form');
-const status = document.getElementById('status');
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
 
-form.addEventListener('submit', (e) => {
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
 
-const tip = document.getElementById('tip');
-const opis = document.getElementById('opis');
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
 
-if (!tip.value || !opis.value.trim()) {
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+
+const form=document.getElementById('prijava-form');
+const status=document.getElementById('status');
+
+form.addEventListener('submit',(e)=>{
+
+const tip=document.getElementById('tip');
+const opis=document.getElementById('opis');
+
+if(!tip.value || !opis.value.trim()){
 
 e.preventDefault();
-window._submitted = false;
+window._submitted=false;
 
 alert('Молимо попуните обавезна поља.');
-
 return;
+
 }
 
-const ime = document.getElementById('ime_local').value.trim();
-const email = document.getElementById('email_local').value.trim();
+const ime=document.getElementById('ime_local').value.trim();
+const email=document.getElementById('email_local').value.trim();
 
-const poruka =
-`ТИП: ${tip.value}\n\n` +
+const poruka=
+`ТИП: ${tip.value}\n\n`+
 `ОПИС:\n${opis.value}`;
 
-document.getElementById('ime_send').value = ime;
-document.getElementById('email_send').value = email;
-document.getElementById('poruka_send').value = poruka;
+document.getElementById('ime_send').value=ime;
+document.getElementById('email_send').value=email;
+document.getElementById('poruka_send').value=poruka;
 
-status.textContent = 'Порука се шаље…';
+status.textContent='Порука се шаље…';
 
 });
 
