@@ -1,489 +1,551 @@
 <!DOCTYPE html> 
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Донација — Иксан • Снага правде</title>
-  <meta name="description" content="Подржи рад Иксан — Снага правде. На располагању је уплатница са подацима удружења." />
-  <meta name="theme-color" content="#020c1b">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="logo-white.png" type="image/png">
-  <style>
-    :root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; --line:rgba(255,255,255,.15); }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      background:var(--deepBlue); color:#ffffff; font-family:"Times New Roman",serif;
-      line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-      font-size:110%; overflow-x:hidden;
-    }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{max-width:1150px;margin:0 auto;padding:0 20px}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    header{position:sticky;top:0;z-index:100;background:var(--deepBlue);border-bottom:1px solid rgba(255,255,255,.1)}
-    .head{display:flex;align-items:center;justify-content:space-between;padding:4px 0 0;gap:12px;flex-wrap:nowrap}
-    .brand{display:flex;align-items:center;flex-shrink:0}
-    .brand img{height:161px;border-radius:10px}
-    @media (max-width:768px){.brand{justify-content:center;margin:0 auto}.brand img{height:106px}}
+<title>Подржи рад — Иксан • Снага правде</title>
 
-    nav.nav{display:flex;align-items:center;gap:10px;padding-right:8px}
-    .nav a.nav-link,.menu-btn{
-      background:var(--deepBlue); color:#fff; padding:6px 9px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.2); font-weight:600; font-size:0.9rem; line-height:1;
-      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
-    }
-    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
-    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
-    .menu{position:relative}
-    .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0; background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2); border-radius:12px; min-width:260px; padding:7px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
-    }
-    .menu.open .dropdown{display:block}
-    @media (hover:hover){ .menu:hover .dropdown{display:block} }
-    .dropdown a{display:block;padding:10px 12px;border-radius:8px;color:#fff;font-weight:600}
-    .dropdown a:hover{background:rgba(255,255,255,.06)}
+<meta name="description" content="Подржите рад удружења грађана Иксан — Снага правде. Донације омогућавају правну помоћ, истраживања и иницијативе у заштити права грађана." />
 
-    .hero{padding:24px 0 0}
-    .hero-grid{display:grid;gap:24px}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1fr 1fr}}
-    h1.title{font-size:clamp(23px,3vw,33px);font-weight:600;margin-bottom:10px;line-height:1.25}
-    p.subtitle{font-size:clamp(16px,2vw,18px);max-width:740px;margin-bottom:18px;color:var(--ink)}
-    .hero-media{
-      border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.15);
-      background:var(--deepBlue);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
-      box-shadow:0 6px 20px rgba(0,0,0,.5);
-    }
-    .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
+<meta name="theme-color" content="#020c1b">
+<meta name="color-scheme" content="light">
 
-    .btn{
-      display:inline-block;padding:10px 22px;border-radius:40px;border:none;font-weight:700;font-size:14px;
-      letter-spacing:.3px;text-transform:uppercase;transition:transform .2s, box-shadow .2s; cursor:pointer;
-      text-align:center; box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
-    }
-    .btn-gold{background:var(--gold);color:var(--deepBlue)}
-    .btn:hover{transform:translateY(-2px)}
+<link rel="icon" href="logo-white.png" type="image/png">
 
-    .section{
-      background:var(--deepBlue); border:1px solid rgba(255,255,255,.15); border-radius:var(--radius);
-      padding:20px; box-shadow:0 12px 28px rgba(0,0,0,.5); margin-top:18px; color:#fff;
-    }
-    h2{color:#fff;font-weight:700;font-size:clamp(20px,2.5vw,24px);text-align:center;margin-bottom:12px}
+<style>
 
-    /* --- ДОНАЦИЈА ЛЕЈАУТ: УПЛАТНИЦА + КЊИГА --- */
-    .donation-intro{
-      text-align:center;
-      margin-bottom:18px;
-    }
-    .donation-intro h2{
-      margin-bottom:8px;
-    }
-    .donation-intro p{
-      color:var(--ink);
-      max-width:720px;
-      margin:0 auto 14px;
-    }
-    .donation-layout{
-      display:grid;
-      gap:24px;
-      grid-template-columns: minmax(0,1.3fr) minmax(0,1fr);
-      align-items:flex-start;
-    }
-    @media (max-width:900px){
-      .donation-layout{
-        grid-template-columns:1fr;
-      }
-    }
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--radius:16px;
+--ink:#dcdcdc;
+--line:rgba(255,255,255,.15);
+}
 
-    /* --- УПЛАТНИЦА (картица, нормална величина) --- */
-    .uplatnica{
-      max-width:480px;
-      margin:0 auto;
-      border:1px solid rgba(255,255,255,.25); 
-      border-radius:12px;
-      background:rgba(255,255,255,.05);
-      box-shadow:0 4px 16px rgba(0,0,0,.4);
-      overflow:hidden;
-      font-size:0.9rem;
-    }
-    .u-head{
-      padding:10px 14px;
-      border-bottom:1px solid rgba(255,255,255,.2);
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      text-align:left;
-    }
-    .u-title{
-      font-weight:700;
-      letter-spacing:.2px;
-      font-size:1.05rem;
-    }
-    .u-title small{
-      display:block;
-      color:var(--ink);
-      font-weight:600;
-      font-size:0.9rem;
-      margin-top:2px;
-    }
-    .u-grid{
-      display:grid;
-      gap:8px;
-      padding:12px;
-      grid-template-columns:1.4fr 1.2fr;
-    }
-    .u-field{
-      display:grid;
-      gap:4px;
-      grid-template-rows:auto auto;
-    }
-    .u-label{
-      color:var(--ink);
-      font-weight:700;
-      font-size:0.85rem;
-      letter-spacing:.2px;
-      text-transform:uppercase;
-    }
-    .u-value{
-      border:1px solid rgba(255,255,255,.28);
-      background:rgba(255,255,255,.08);
-      color:#fff;
-      border-radius:8px;
-      padding:8px 10px;
-      min-height:38px;
-      display:flex;
-      align-items:center;
-      font-size:0.95rem;
-    }
-    .u-wide{grid-column:1 / -1}
-    .u-foot{
-      border-top:1px dashed rgba(255,255,255,.25);
-      padding:8px 12px;
-      color:var(--ink);
-      display:flex;
-      justify-content:space-between;
-      gap:8px;
-      flex-wrap:wrap;
-      font-size:0.8rem;
-    }
-    .badge-gold{
-      display:inline-block;
-      background:var(--gold);
-      color:var(--deepBlue);
-      border-radius:999px;
-      padding:3px 8px;
-      font-weight:800;
-      letter-spacing:.2px;
-      text-transform:uppercase;
-      font-size:.7rem;
-    }
+*{box-sizing:border-box;margin:0;padding:0}
 
-    /* --- КЊИГА „ИКСАН“ --- */
-    .book-card{
-      margin:0 auto;
-      max-width:480px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.18);
-      background:rgba(2,12,27,.95);
-      box-shadow:0 10px 26px rgba(0,0,0,.6);
-      padding:18px;
-      display:grid;
-      gap:14px;
-      grid-template-columns:120px 1fr;
-      align-items:center;
-    }
-    .book-cover{
-      text-align:center;
-    }
-    .book-cover img{
-      max-width:110px;
-      margin:0 auto;
-      border-radius:8px;
-      box-shadow:0 8px 24px rgba(0,0,0,.7);
-    }
-    .book-info-title{
-      font-weight:700;
-      font-size:1rem;
-      margin-bottom:4px;
-    }
-    .book-info-sub{
-      color:var(--ink);
-      font-size:0.85rem;
-      margin-bottom:8px;
-    }
-    .book-info-text{
-      font-size:0.9rem;
-      margin-bottom:8px;
-    }
-    .book-note{
-      font-size:0.85rem;
-      color:var(--ink);
-      font-style:italic;
-      margin-bottom:10px;
-    }
-    .book-btn{
-      display:inline-block;
-      padding:8px 16px;
-      border-radius:999px;
-      border:none;
-      background:var(--gold);
-      color:var(--deepBlue);
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.3px;
-      font-size:0.8rem;
-      text-decoration:none;
-      box-shadow:0 4px 14px rgba(0,0,0,.6);
-    }
-    .book-btn:hover{
-      transform:translateY(-1px);
-      box-shadow:0 6px 18px rgba(0,0,0,.7);
-      filter:brightness(1.05);
-    }
+html,body{height:100%}
 
-    @media (max-width:900px){
-      .book-card{
-        grid-template-columns:1fr;
-        text-align:center;
-      }
-      .book-cover img{
-        max-width:160px;
-      }
-    }
+body{
+background:var(--deepBlue);
+color:#ffffff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
+font-size:110%;
+overflow-x:hidden;
+}
 
-    /* секција „где иде новац“ – задржана ако ти треба касније */
-    .grid3{
-      display:grid;
-      gap:16px;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    }
-    .card{
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.15);
-      padding:12px;
-      background:rgba(255,255,255,.03);
-      font-size:0.95rem;
-    }
-    .card-title{
-      font-weight:700;
-      margin-bottom:4px;
-    }
+a{color:inherit;text-decoration:none}
 
-    footer{
-      border-top:1px solid var(--line);
-      color:#fff;
-      text-align:center;
-      padding:24px 0;
-      font-size:.9rem;
-      margin-top:30px;
-      background:var(--deepBlue);
-    }
+img{max-width:100%;display:block}
 
-    @media (max-width:768px){
-      body{font-size:90%}
-      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0}
-      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0}
-      .menu-btn{margin-right:6px}
-    }
-    @media (prefers-color-scheme:dark){
-      html,body{background:var(--deepBlue)!important;color:#fff!important}
-    }
-  </style>
+.container{
+max-width:1150px;
+margin:0 auto;
+padding:0 20px
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:var(--deepBlue);
+border-bottom:1px solid rgba(255,255,255,.1)
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px;
+flex-wrap:nowrap
+}
+
+.brand{display:flex;align-items:center;flex-shrink:0}
+
+.brand img{height:161px;border-radius:10px}
+
+@media (max-width:768px){
+.brand{justify-content:center;margin:0 auto}
+.brand img{height:106px}
+}
+
+nav.nav{display:flex;align-items:center;gap:10px;padding-right:8px}
+
+.nav a.nav-link,.menu-btn{
+background:var(--deepBlue);
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem;
+line-height:1;
+transition:transform .15s ease,filter .15s ease;
+white-space:nowrap;
+}
+
+.nav a.nav-link:hover,.menu-btn:hover{
+transform:translateY(-1px);
+filter:brightness(1.2)
+}
+
+.nav a[aria-current="page"]{
+outline:2px solid var(--gold);
+outline-offset:2px
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:260px;
+padding:7px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none
+}
+
+.menu.open .dropdown{display:block}
+
+@media (hover:hover){
+.menu:hover .dropdown{display:block}
+}
+
+.dropdown a{
+display:block;
+padding:10px 12px;
+border-radius:8px;
+color:#fff;
+font-weight:600
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06)
+}
+
+/* HERO */
+
+.hero{padding:24px 0 0}
+
+.hero-grid{display:grid;gap:24px}
+
+@media(min-width:980px){
+.hero-grid{grid-template-columns:1fr 1fr}
+}
+
+h1.title{
+font-size:clamp(23px,3vw,33px);
+font-weight:600;
+margin-bottom:10px;
+line-height:1.25
+}
+
+p.subtitle{
+font-size:clamp(16px,2vw,18px);
+max-width:740px;
+margin-bottom:18px;
+color:var(--ink)
+}
+
+.hero-media{
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.15);
+background:var(--deepBlue);
+aspect-ratio:16/9;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 6px 20px rgba(0,0,0,.5)
+}
+
+.hero-media img{
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.9
+}
+
+/* SECTION */
+
+.section{
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.15);
+border-radius:var(--radius);
+padding:20px;
+box-shadow:0 12px 28px rgba(0,0,0,.5);
+margin-top:18px;
+color:#fff
+}
+
+h2{
+color:#fff;
+font-weight:700;
+font-size:clamp(20px,2.5vw,24px);
+text-align:center;
+margin-bottom:12px
+}
+
+/* DONATION */
+
+.donation-intro{
+text-align:center;
+margin-bottom:18px
+}
+
+.donation-intro p{
+color:var(--ink);
+max-width:720px;
+margin:0 auto 14px
+}
+
+.donation-layout{
+display:grid;
+gap:24px;
+grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);
+align-items:flex-start
+}
+
+@media (max-width:900px){
+.donation-layout{grid-template-columns:1fr}
+}
+
+/* UPLATNICA */
+
+.uplatnica{
+max-width:480px;
+margin:0 auto;
+border:1px solid rgba(255,255,255,.25);
+border-radius:12px;
+background:rgba(255,255,255,.05);
+box-shadow:0 4px 16px rgba(0,0,0,.4);
+overflow:hidden;
+font-size:0.9rem
+}
+
+.u-head{
+padding:10px 14px;
+border-bottom:1px solid rgba(255,255,255,.2);
+background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
+text-align:left
+}
+
+.u-title{
+font-weight:700;
+font-size:1.05rem
+}
+
+.u-title small{
+display:block;
+color:var(--ink);
+font-weight:600;
+font-size:0.9rem;
+margin-top:2px
+}
+
+.u-grid{
+display:grid;
+gap:8px;
+padding:12px;
+grid-template-columns:1.4fr 1.2fr
+}
+
+.u-field{display:grid;gap:4px}
+
+.u-label{
+color:var(--ink);
+font-weight:700;
+font-size:0.85rem;
+text-transform:uppercase
+}
+
+.u-value{
+border:1px solid rgba(255,255,255,.28);
+background:rgba(255,255,255,.08);
+color:#fff;
+border-radius:8px;
+padding:8px 10px;
+min-height:38px;
+display:flex;
+align-items:center;
+font-size:0.95rem
+}
+
+.u-wide{grid-column:1 / -1}
+
+.u-foot{
+border-top:1px dashed rgba(255,255,255,.25);
+padding:8px 12px;
+color:var(--ink);
+display:flex;
+justify-content:space-between;
+gap:8px;
+flex-wrap:wrap;
+font-size:0.8rem
+}
+
+.badge-gold{
+display:inline-block;
+background:var(--gold);
+color:var(--deepBlue);
+border-radius:999px;
+padding:3px 8px;
+font-weight:800;
+text-transform:uppercase;
+font-size:.7rem
+}
+
+/* BOOK */
+
+.book-card{
+margin:0 auto;
+max-width:480px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.18);
+background:rgba(2,12,27,.95);
+box-shadow:0 10px 26px rgba(0,0,0,.6);
+padding:18px;
+display:grid;
+gap:14px;
+grid-template-columns:120px 1fr;
+align-items:center
+}
+
+.book-cover img{
+max-width:110px;
+margin:0 auto;
+border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.7)
+}
+
+.book-info-title{
+font-weight:700;
+font-size:1rem;
+margin-bottom:4px
+}
+
+.book-info-sub{
+color:var(--ink);
+font-size:0.85rem;
+margin-bottom:8px
+}
+
+.book-info-text{
+font-size:0.9rem;
+margin-bottom:8px
+}
+
+.book-note{
+font-size:0.85rem;
+color:var(--ink);
+font-style:italic;
+margin-bottom:10px
+}
+
+.book-btn{
+display:inline-block;
+padding:8px 16px;
+border-radius:999px;
+border:none;
+background:var(--gold);
+color:var(--deepBlue);
+font-weight:800;
+text-transform:uppercase;
+font-size:0.8rem
+}
+
+footer{
+border-top:1px solid var(--line);
+text-align:center;
+padding:24px 0;
+margin-top:30px;
+background:var(--deepBlue)
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="container head">
-    <div class="brand">
-      <img src="logo-white.png" alt="ИКСАН лого">
-    </div>
+<div class="container head">
 
-    <nav class="nav" aria-label="Главна навигација">
-      <a class="nav-link" href="index.html">Почетна</a>
-      <a class="nav-link" href="kontakt.html">Контакт</a>
+<div class="brand">
+<img src="logo-white.png" alt="ИКСАН лого">
+</div>
 
-      <div class="menu" id="mainMenu">
-        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
-        <div class="dropdown" id="menuList" role="menu">
-          <a href="onama.html" role="menuitem">О нама</a>
-          <a href="oblasti.html" role="menuitem">Области</a>
-          <a href="ciljevi.html" role="menuitem">Циљеви</a>
-          <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem" aria-current="page">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
-          <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="#racun" role="menuitem">Уплатница</a>
-          <a href="#gde-novac" role="menuitem">Где иде сваки динар</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+<nav class="nav">
+
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+
+</nav>
+
+</div>
 </header>
 
 <main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1 class="title">Док неко губи све — твоје мало је његова нада, његов спас</h1>
-        <p class="subtitle">„Наши рођени, комшије, пријатељи — то су људи, то смо ми.“ Сваком донацијом помажеш да правда и достојанство не буду привилегија.</p>
-      </div>
-      <div class="hero-media">
-        <img src="uni.webp" alt="Људи заједно — Снага правде">
-      </div>
-    </div>
-  </section>
 
-  <!-- ГЛАВНА СЕКЦИЈА: ДОНАЦИЈА УПЛАТОМ НА РАЧУН -->
-  <section id="racun" class="section">
-    <div class="container">
+<section class="hero">
 
-      <div class="donation-intro">
-        <h2>Донирај уплатом на рачун Удружења грађана „Иксан — Снага правде“</h2>
-        <p>
-          Сваком уплатом подржаваш правну помоћ грађанима, истраживања и иницијативе које бране достојанство човека.
-          Податке са примера уплатнице можеш преписати на стандардни налог у банци, пошти или у е-банкингу.
-        </p>
-      </div>
+<div class="container hero-grid">
 
-      <div class="donation-layout">
-        <!-- ЛЕВО: УПЛАТНИЦА -->
-        <div>
-          <div class="uplatnica">
-            <div class="u-head">
-              <div class="u-title">
-                НАЛОГ ЗА УПЛАТУ
-                <small>Пример попуњене уплатнице</small>
-              </div>
-            </div>
+<div>
 
-            <div class="u-grid">
-              <!-- ПРИМАЛАЦ -->
-              <div class="u-field u-wide">
-                <div class="u-label">Прималац</div>
-                <div class="u-value">Удружење грађана Иксан-Снага правде</div>
-              </div>
+<h1 class="title">
+Подржи рад за правду и достојанство
+</h1>
 
-              <!-- АДРЕСА ПРИМАОЦА -->
-              <div class="u-field u-wide">
-                <div class="u-label">Адреса примаоца</div>
-                <div class="u-value">Београд</div>
-              </div>
+<p class="subtitle">
+Донацијом подржавате правну помоћ грађанима, истраживања
+и јавне иницијативе које имају за циљ јачање правде,
+одговорности институција и достојанства сваког човека.
+</p>
 
-              <!-- СВРХА -->
-              <div class="u-field u-wide">
-                <div class="u-label">Сврха / Напомена</div>
-                <div class="u-value">Донација</div>
-              </div>
+</div>
 
-              <!-- ПОЗИВ НА БРОЈ -->
-              <div class="u-field">
-                <div class="u-label">Позив на број</div>
-                <div class="u-value">3010/2025</div>
-              </div>
+<div class="hero-media">
+<img src="uni.webp" alt="Људи заједно — Снага правде">
+</div>
 
-              <!-- ЖИРО РАЧУН -->
-              <div class="u-field">
-                <div class="u-label">Жиро рачун</div>
-                <div class="u-value">340-1000345580-18</div>
-              </div>
+</div>
 
-              <!-- ВАЛУТА -->
-              <div class="u-field">
-                <div class="u-label">Валута</div>
-                <div class="u-value">RSD</div>
-              </div>
+</section>
 
-              <!-- ИНФО ТЕКСТ -->
-              <div class="u-field u-wide">
-                <div class="u-label">Информација</div>
-                <div class="u-value">Рачун удружења је активан. Хвала на поверењу и свакој подршци.</div>
-              </div>
-            </div>
+<section class="section">
 
-            <div class="u-foot">
-              <span class="badge-gold">Донација</span>
-              <span>Хвала што стојиш уз оне који се боре за правду.</span>
-            </div>
-          </div>
-        </div>
+<div class="container">
 
-        <!-- ДЕСНО: КЊИГА „ИКСАН“ -->
-        <div>
-          <div class="book-card">
-            <div class="book-cover">
-              <img src="iksan.webp" alt="Књига Иксан">
-            </div>
-            <div class="book-info">
-              <div class="book-info-title">Књигом „Иксан“ до хуманости</div>
-              <div class="book-info-sub">Књига је доступна у Делфи књижарама.</div>
-              <div class="book-info-text">
-                Куповином књиге „Иксан“ подржаваш исту борбу за правду и достојанство — кроз причу која позива на одговорност, солидарност и емпатију.
-              </div>
-              <div class="book-note">
-                Сав ауторски хонорар од продаје књиге аутор донира у хуманитарне сврхе.
-              </div>
-              <a class="book-btn" href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html" target="_blank" rel="noopener noreferrer">
-                КУПИ КЊИГУ
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="donation-intro">
 
-    </div>
-  </section>
+<h2>Донација уплатом на рачун удружења</h2>
 
-  <!-- ГДЕ ИДЕ НОВАЦ (опционо, можеш да оставиш или обришеш) -->
-  <section class="section" id="gde-novac">
-    <div class="container">
-      <h2>Где иде сваки динар</h2>
-      <div class="grid3">
-        <div class="card">
-          <div class="card-title">Одбрана грађана</div>
-          Писане жалбе, приговори, пријаве и поднесци — слање, таксе и све што иде уз то.
-        </div>
-        <div class="card">
-          <div class="card-title">Глас народа</div>
-          Штампа петиција, плаката, папира и брошура, као и израда пултова за терен.
-        </div>
-        <div class="card">
-          <div class="card-title">Стручна помоћ &amp; солидарност</div>
-          Ангажовање правних стручњака и хитна помоћ најугроженијима.
-        </div>
-      </div>
-    </div>
-  </section>
+<p>
+Сваком уплатом подржавате правну помоћ грађанима,
+истраживања и иницијативе усмерене на заштиту права
+и достојанства човека.
+</p>
+
+</div>
+
+<div class="donation-layout">
+
+<div>
+
+<div class="uplatnica">
+
+<div class="u-head">
+<div class="u-title">
+НАЛОГ ЗА УПЛАТУ
+<small>Пример попуњене уплатнице</small>
+</div>
+</div>
+
+<div class="u-grid">
+
+<div class="u-field u-wide">
+<div class="u-label">Прималац</div>
+<div class="u-value">Удружење грађана Иксан-Снага правде</div>
+</div>
+
+<div class="u-field u-wide">
+<div class="u-label">Адреса примаоца</div>
+<div class="u-value">Београд</div>
+</div>
+
+<div class="u-field u-wide">
+<div class="u-label">Сврха</div>
+<div class="u-value">Донација</div>
+</div>
+
+<div class="u-field">
+<div class="u-label">Позив на број</div>
+<div class="u-value">3010/2025</div>
+</div>
+
+<div class="u-field">
+<div class="u-label">Жиро рачун</div>
+<div class="u-value">340-1000345580-18</div>
+</div>
+
+<div class="u-field">
+<div class="u-label">Валута</div>
+<div class="u-value">RSD</div>
+</div>
+
+</div>
+
+<div class="u-foot">
+<span class="badge-gold">Донација</span>
+<span>Хвала на поверењу и подршци.</span>
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="book-card">
+
+<div class="book-cover">
+<img src="iksan.webp" alt="Књига Иксан">
+</div>
+
+<div>
+
+<div class="book-info-title">
+Књига „Иксан“
+</div>
+
+<div class="book-info-sub">
+Доступна у Делфи књижарама
+</div>
+
+<div class="book-info-text">
+Куповином књиге подржавате исту борбу за правду,
+достојанство и солидарност.
+</div>
+
+<div class="book-note">
+Ауторски хонорар од продаје књиге усмерава се у хуманитарне сврхе.
+</div>
+
+<a class="book-btn"
+href="https://delfi.rs/knjige/224754-iksan-knjiga-delfi-knjizare.html"
+target="_blank"
+rel="noopener noreferrer">
+КУПИ КЊИГУ
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 </main>
 
 <footer>
-  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
+<div class="container">
+© 2025 Иксан • Снага правде — Сва права задржана.
+</div>
 </footer>
 
-<script>
-  // Dropdown мени
-  const menu = document.getElementById('mainMenu');
-  const menuBtn = menu?.querySelector('.menu-btn');
-  if (menu && menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-    document.addEventListener('click', (e) => {
-      if (!menu.contains(e.target)) {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-      }
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-        menuBtn.focus();
-      }
-    });
-  }
-</script>
 </body>
 </html>
