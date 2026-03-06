@@ -14,6 +14,7 @@
 <link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
+
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
@@ -74,6 +75,35 @@ border-radius:8px;
 border:1px solid rgba(255,255,255,.2);
 font-weight:600;
 font-size:0.9rem;
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06)
 }
 
 /* HERO */
@@ -197,12 +227,14 @@ text-align:center;
 padding:24px 0;
 margin-top:30px;
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
+
 <div class="container head">
 
 <div class="brand">
@@ -212,11 +244,36 @@ margin-top:30px;
 </div>
 
 <nav class="nav">
+
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html" aria-current="page">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+
+</div>
+
+</div>
+
 </nav>
 
 </div>
+
 </header>
 
 <main>
@@ -317,10 +374,39 @@ margin-top:30px;
 </main>
 
 <footer>
+
 <div class="container">
 © 2025 Иксан • Снага правде — Сва права задржана.
 </div>
+
 </footer>
+
+<script>
+
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
+
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+
+</script>
 
 </body>
 </html>
