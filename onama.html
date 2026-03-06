@@ -1,309 +1,326 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>О нама — Иксан • Снага правде</title>
-  <meta name="description" content="Иксан — покрет грађана за правду, достојанство и заједништво.">
-  <meta name="theme-color" content="#020c1b">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="logo-white.png" type="image/png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{
-      --deepBlue:#1f1f1f;
-      --gold:#d3a451;
-      --radius:16px;
-      --ink:#dcdcdc;
-    }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      background:var(--deepBlue);
-      color:#fff;
-      font-family:"Times New Roman",serif;
-      line-height:1.7;
-      -webkit-font-smoothing:antialiased;
-      text-rendering:optimizeLegibility;
-      font-size:110%;
-    }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
-    .container{max-width:1150px;margin:0 auto;padding:0 20px}
+<title>О удружењу — Иксан • Снага правде</title>
 
-    /* HEADER — identičan početnoj */
-    header{
-      position:sticky;top:0;z-index:100;
-      background:var(--deepBlue);
-      border-bottom:1px solid rgba(255,255,255,.1);
-    }
-    .head{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:4px 0 0; gap:12px; flex-wrap:nowrap;
-    }
+<meta name="description" content="Иксан – удружење грађана посвећено јачању владавине права, заштити достојанства грађана и унапређењу институционалне правде.">
 
-    /* LOGO — ista veličina */
-    .brand{display:flex;align-items:center;flex-shrink:0;}
-    .brand img{height:161px;border-radius:10px}
-    @media (max-width:768px){
-      .brand{justify-content:center;margin:0 auto;}
-      .brand img{height:106px}
-    }
+<meta name="theme-color" content="#020c1b">
+<meta name="color-scheme" content="light">
 
-    /* NAV — isto kao index */
-    nav.nav{
-      display:flex;flex-direction:row;align-items:center;gap:10px;
-      padding-top:0; padding-right:8px;
-    }
-    .nav a.nav-link, .menu-btn{
-      background:var(--deepBlue); color:#fff;
-      padding:6px 9px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.2);
-      font-weight:600; font-size:0.9rem; line-height:1;
-      transition:transform .15s ease,filter .15s ease; white-space:nowrap;
-    }
-    .nav a.nav-link:hover, .menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
-    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
+<link rel="icon" href="logo-white.png" type="image/png">
 
-    /* MENU — isto kao index */
-    .menu{position:relative}
-    .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0;
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:12px;
-      min-width:280px;
-      padding:6px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5);
-      display:none;
-    }
-    .menu.open .dropdown{display:block}
-    @media (hover:hover){ .menu:hover .dropdown{display:block} }
-    .dropdown a{
-      display:block;
-      padding:9px 10px;
-      border-radius:8px;
-      color:#fff;
-      font-weight:600;
-      font-size:14px;
-      white-space:nowrap;
-      border:1px solid transparent;
-    }
-    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+<style>
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--radius:16px;
+--ink:#dcdcdc;
+}
 
-    /* HERO — isti stil kao na početnoj */
-    .hero{padding:24px 0 0}
-    .hero-grid{display:grid;gap:24px}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
+*{box-sizing:border-box;margin:0;padding:0}
 
-    h1{
-      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
-      font-size:clamp(23px,3vw,33px);
-      text-shadow:0 0 8px rgba(255,255,255,.25);
-    }
-    .sub{margin:8px 0 12px;max-width:740px;color:var(--ink);opacity:.95;font-size:clamp(16px,2vw,18px)}
+html,body{height:100%}
 
-    /* CTA — istog formata i dimenzija */
-    .cta-row{
-      display:flex;
-      justify-content:center;
-      flex-wrap:nowrap;
-      gap:8px;
-      margin-top:14px;
-    }
-    .btn{
-      display:inline-block;
-      padding:8px 18px;
-      border-radius:40px;
-      font-weight:700;
-      font-size:13px;
-      text-transform:uppercase;
-      transition:transform .2s, box-shadow .2s;
-      cursor:pointer;
-      text-align:center;
-      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
-      white-space:nowrap;
-    }
-    .btn-primary{background:var(--gold);color:var(--deepBlue)}
-    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
-    .btn:hover{transform:translateY(-2px)}
-    @media(max-width:768px){
-      .cta-row{justify-content:center;flex-wrap:nowrap;gap:6px;}
-      .btn{padding:7px 14px;font-size:12px;}
-    }
+body{
+background:var(--deepBlue);
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
+font-size:110%;
+}
 
-    .hero-media{
-      border-radius:16px;overflow:hidden;
-      border:1px solid rgba(255,255,255,.15);
-      background:var(--deepBlue);
-      aspect-ratio:16/9;
-      display:flex; align-items:center; justify-content:center;
-      box-shadow:0 10px 24px rgba(0,0,0,.5);
-    }
-    .hero-media img{width:100%; height:100%; object-fit:cover; opacity:.9}
+a{color:inherit;text-decoration:none}
 
-    /* KARTICE — potpuno isto kao na početnoj */
-    .split{margin-top:18px}
-    .grid{display:grid;gap:14px;grid-template-columns:1fr}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .card{
-      background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2);
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow:0 14px 32px rgba(0,0,0,.35);
-      transition:transform .2s, box-shadow .2s;
-      color:#fff;
-    }
-    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
-    .card h3{
-      margin:0 0 6px;
-      color:#ffffff; /* čisto belo */
-      line-height:1.15;
-      font-weight:700;
-      font-size:20px;
-      text-shadow:none;
-    }
-    .card p,.card li{color:var(--ink);line-height:1.7;font-size:clamp(14px,1.8vw,16px)}
-    .more{display:inline-block;margin-top:4px;font-weight:700;color:var(--ink)}
+img{max-width:100%;display:block}
 
-    footer{
-      border-top:1px solid rgba(255,255,255,.15);
-      color:#fff; text-align:center; padding:24px 0; font-size:.9rem;
-      margin-top:30px; background:var(--deepBlue);
-    }
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    @media (max-width:768px){
-      body{font-size:90%;}
-      .head{justify-content:center;flex-wrap:wrap;padding:2px 0 0;}
-      nav.nav{margin-top:4px;justify-content:center;gap:8px;padding-right:0;}
-      .menu-btn{margin-right:6px;}
-    }
-    @media (max-width:360px){
-      .nav a.nav-link, .menu-btn{font-size:0.8rem;padding:4px 6px}
-      nav.nav{gap:4px}
-    }
-  </style>
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:var(--deepBlue);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+}
+
+.brand img{
+height:161px;
+border-radius:10px;
+}
+
+nav.nav{
+display:flex;
+gap:10px;
+}
+
+.nav a.nav-link,.menu-btn{
+background:var(--deepBlue);
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem;
+}
+
+/* HERO */
+
+.hero{
+padding:24px 0 0
+}
+
+.hero-grid{
+display:grid;
+gap:24px
+}
+
+@media(min-width:980px){
+.hero-grid{
+grid-template-columns:1.1fr .9fr
+}
+}
+
+h1{
+font-size:clamp(23px,3vw,33px);
+}
+
+.sub{
+margin:8px 0 12px;
+max-width:740px;
+color:var(--ink);
+font-size:clamp(16px,2vw,18px)
+}
+
+.hero-media{
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.15);
+aspect-ratio:16/9;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+}
+
+.hero-media img{
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.9
+}
+
+/* CTA */
+
+.cta-row{
+display:flex;
+justify-content:center;
+gap:8px;
+margin-top:14px;
+}
+
+.btn{
+display:inline-block;
+padding:8px 18px;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
+text-transform:uppercase;
+cursor:pointer;
+text-align:center;
+box-shadow:0 3px 0 rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.4);
+}
+
+.btn-primary{
+background:var(--gold);
+color:var(--deepBlue)
+}
+
+.btn-dark{
+background:var(--deepBlue);
+color:#fff;
+border:1px solid rgba(255,255,255,.3)
+}
+
+/* CARDS */
+
+.split{
+margin-top:18px
+}
+
+.grid{
+display:grid;
+gap:14px;
+grid-template-columns:1fr
+}
+
+@media(min-width:900px){
+.grid{
+grid-template-columns:repeat(2,1fr)
+}
+}
+
+.card{
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:var(--radius);
+padding:16px;
+box-shadow:0 14px 32px rgba(0,0,0,.35);
+}
+
+.card h3{
+margin-bottom:6px;
+font-size:20px;
+}
+
+.card p{
+color:var(--ink);
+}
+
+/* FOOTER */
+
+footer{
+border-top:1px solid rgba(255,255,255,.15);
+text-align:center;
+padding:24px 0;
+margin-top:30px;
+}
+</style>
 </head>
 
 <body>
+
 <header>
-  <div class="container head">
-    <div class="brand">
-      <a href="index.html">
-        <img src="logo-white.png" alt="ИКСАН лого">
-      </a>
-    </div>
+<div class="container head">
 
-    <nav class="nav" aria-label="Главна навигација">
-      <a class="nav-link" href="index.html">Почетна</a>
-      <a class="nav-link" href="kontakt.html">Контакт</a>
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
 
-      <div class="menu" id="mainMenu">
-        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
-        <div class="dropdown" id="menuList" role="menu">
-          <a href="onama.html" role="menuitem" aria-current="page">О нама</a>
-          <a href="oblasti.html" role="menuitem">Области</a>
-          <a href="ciljevi.html" role="menuitem">Циљеви</a>
-          <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
-          <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
-          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
-          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
-          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+<nav class="nav">
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+</nav>
+
+</div>
 </header>
 
 <main>
-  <!-- HERO (isti stil, druga poruka) -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>О нама</h1>
-        <p class="sub">Удружење грађана Иксан-Снага правде је покрет грађана за правду, достојанство и заједништво.</p>
-        <div class="cta-row">
-          <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
-          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-        </div>
-      </div>
 
-      <div class="hero-media">
-        <img src="um.webp" alt="О нама — Иксан • Снага правде">
-      </div>
-    </div>
-  </section>
+<section class="hero">
+<div class="container hero-grid">
 
-  <!-- KARTICE (isti layout/stil kao index, samo sadržaj o nama) -->
-  <section class="split">
-    <div class="container">
-      <div class="grid">
-        <article class="card">
-          <h3>Ко смо</h3>
-          <p>Иксан није само удружење. То је покрет људи који верују да достојанство, истина и човечност не смеју бити луксуз.</p>
-        </article>
+<div>
 
-        <article class="card">
-          <h3>Зашто „Иксан“</h3>
-          <p>Име долази из романа „Иксан“ — лик човека који трага за истином постао је симбол сваког од нас.</p>
-        </article>
+<h1>О удружењу Иксан</h1>
 
-        <article class="card">
-          <h3>Наша мисија</h3>
-          <p>Вратити поверење у систем и човека, заштитити оне без снаге, новца или веза и изградити Србију у којој је закон исти за све.</p>
-        </article>
+<p class="sub">
+Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
+заштити достојанства грађана и развоју друштва заснованог на правичности,
+одговорности институција и поштовању закона.
+</p>
 
-        <article class="card">
-          <h3>Зашто смо настали</h3>
-          <p>Као одговор на неправду која је постала свакодневица — приватне извршитеље, корупцију и равнодушност.</p>
-        </article>
+<div class="cta-row">
+<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
+</div>
 
-        <article class="card">
-          <h3>Шта желимо</h3>
-          <p>Државу у којој институције служе грађанима; систем у којем нико није изнад закона; друштво у којем човечност није слабост.</p>
-        </article>
+</div>
 
-        <article class="card">
-          <h3>Ко смо ми</h3>
-          <p>Ми смо грађани, радници, родитељи, студенти — свако ко верује да је правда заједничко добро.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+<div class="hero-media">
+<img src="um.webp" alt="О удружењу Иксан">
+</div>
+
+</div>
+</section>
+
+<section class="split">
+
+<div class="container">
+<div class="grid">
+
+<article class="card">
+<h3>Ко смо</h3>
+<p>
+Иксан је удружење грађана које окупља људе различитих професија
+са заједничким циљем – унапређењем правде, правне сигурности
+и поштовања достојанства сваког грађанина.
+</p>
+</article>
+
+<article class="card">
+<h3>Назив „Иксан“</h3>
+<p>
+Назив удружења симболично представља тежњу ка истини,
+моралној одговорности и друштву у којем се правда
+не посматра као привилегија већ као основно право.
+</p>
+</article>
+
+<article class="card">
+<h3>Наша мисија</h3>
+<p>
+Мисија удружења је подстицање институционалних реформи,
+јачање правне заштите грађана и развој система
+у којем су закон и правда једнаки за све.
+</p>
+</article>
+
+<article class="card">
+<h3>Разлог оснивања</h3>
+<p>
+Удружење је настало као одговор на потребу
+за јачим грађанским ангажманом у области владавине права,
+транспарентности институција и заштите грађанских права.
+</p>
+</article>
+
+<article class="card">
+<h3>Наши циљеви</h3>
+<p>
+Подстицање правних и институционалних решења
+која доприносе праведнијем систему,
+већој одговорности јавних институција
+и бољој заштити грађана.
+</p>
+</article>
+
+<article class="card">
+<h3>Заједница</h3>
+<p>
+Удружење окупља грађане који желе да допринесу
+развоју друштва заснованог на поверењу,
+одговорности и поштовању закона.
+</p>
+</article>
+
+</div>
+</div>
+
+</section>
+
 </main>
 
 <footer>
-  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
+<div class="container">
+© 2025 Иксан • Снага правде — Сва права задржана.
+</div>
 </footer>
 
-<script>
-  const menu = document.getElementById('mainMenu');
-  const menuBtn = menu.querySelector('.menu-btn');
-
-  menuBtn.addEventListener('click', () => {
-    const isOpen = menu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target)) {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-    }
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      menu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded','false');
-      menuBtn.focus();
-    }
-  });
-</script>
 </body>
 </html>
