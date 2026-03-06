@@ -1,249 +1,239 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Порекло имовине-пљачка кроз јавне набавке, пореска утаја и прање новца — Иксан • Снага правде</title>
-  <meta name="description" content="Борба за транспарентне јавне набавке и темељну проверу порекла имовине функционера и привредних актера." />
-  <meta name="theme-color" content="#020c1b">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="logo-white.png" type="image/png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      background:var(--deepBlue); color:#fff; font-family:"Times New Roman",serif;
-      line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-      font-size:110%; overflow-x:hidden;
-    }
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
-    .container{max-width:1150px;margin:0 auto;padding:0 20px}
+<title>Транспарентност јавних финансија и порекло имовине — Иксан • Снага правде</title>
 
-    header{
-      position:sticky;top:0;z-index:100;background:var(--deepBlue);
-      border-bottom:1px solid rgba(255,255,255,.1);backdrop-filter:blur(4px)
-    }
-    .head{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:4px 0 0;gap:12px;flex-wrap:nowrap;
-    }
-    .brand{display:flex;align-items:center;flex-shrink:0;}
-    .brand img{height:161px;border-radius:10px}
-    @media (max-width:768px){ .brand img{height:106px} }
+<meta name="description" content="Иницијатива за већу транспарентност јавних набавки, проверу порекла имовине јавних функционера и јачање механизама спречавања корупције.">
 
-    nav.nav{
-      display:flex;align-items:center;gap:10px;padding-top:0;padding-right:8px;
-      overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;
-    }
-    nav.nav::-webkit-scrollbar{display:none}
-    .nav a.nav-link,.menu-btn{
-      background:var(--deepBlue); color:#fff; padding:6px 9px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.2); font-weight:600; font-size:0.9rem; line-height:1;
-      transition:transform .15s ease,filter .15s ease; white-space:nowrap; flex:0 0 auto;
-    }
-    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
-    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
-    .menu{position:relative;flex:0 0 auto;}
-    .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0; background:var(--deepBlue);
-      border:1px solid rgba(255,255,255,.2); border-radius:12px; min-width:300px; padding:6px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none; max-width:92vw;
-    }
-    .menu.open .dropdown{display:block}
-    @media (hover:hover){ .menu:hover .dropdown{display:block} }
-    .dropdown a{
-      display:block; padding:9px 10px; border-radius:8px; border:1px solid transparent;
-      color:#fff; font-weight:600; font-size:14px; white-space:nowrap;
-    }
-    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+<meta name="theme-color" content="#020c1b">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="logo-white.png" type="image/png">
 
-    .hero{padding:24px 0 0}
-    .hero-grid{display:grid;gap:24px}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-    h1{
-      color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
-      font-size:clamp(23px,3vw,33px); text-shadow:0 0 8px rgba(255,255,255,.25);
-      overflow-wrap:anywhere; word-break:break-word; hyphens:auto; max-width:100%;
-    }
+<style>
+:root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; }
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+background:var(--deepBlue);
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
+-webkit-font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
+font-size:110%;
+overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-    /* ISPRAVLJENO — tekst ispod naslova poravnat ulevo */
-    .sub{
-      color:var(--ink);
-      opacity:.95;
-      font-size:clamp(16px,2vw,18px);
-      margin:8px 0 12px;
-      max-width:780px;
-      text-align:left;
-      margin-left:0;
-      margin-right:0;
-    }
+header{
+position:sticky;top:0;z-index:100;background:var(--deepBlue);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+.head{
+display:flex;align-items:center;justify-content:space-between;
+padding:4px 0 0;gap:12px;flex-wrap:nowrap;
+}
 
-    .hero-media{
-      border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.15);
-      background:var(--deepBlue); aspect-ratio:16/9;
-      display:flex;align-items:center;justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.5);
-    }
-    .hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
+.brand{display:flex;align-items:center;flex-shrink:0;}
+.brand img{height:161px;border-radius:10px}
+@media (max-width:768px){ .brand img{height:106px} }
 
-    .cta-row{
-      display:flex;gap:8px;margin-top:12px; flex-wrap:nowrap;
-      overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none;
-    }
-    .cta-row::-webkit-scrollbar{display:none}
-    .btn{
-      display:inline-block;padding:8px 18px;border-radius:40px;border:none;
-      font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.3px;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
-      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4); white-space:nowrap; flex:0 0 auto;
-    }
-    .btn-primary{background:var(--gold);color:var(--deepBlue)}
-    .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
-    .btn:hover{transform:translateY(-2px)}
+nav.nav{
+display:flex;align-items:center;gap:10px;padding-top:0;padding-right:8px;
+}
 
-    .split{margin-top:18px}
-    .grid{display:grid;gap:14px;grid-template-columns:1fr}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .card{
-      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2); border-radius:var(--radius);
-      padding:16px; box-shadow:0 14px 32px rgba(0,0,0,.35); transition:transform .2s, box-shadow .2s; color:#fff;
-    }
-    .card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.42)}
-    .card h3{margin:0 0 6px; color:#ffffff; line-height:1.15; font-weight:700; font-size:20px; text-shadow:none}
-    .card p,.card li,.card ol{color:var(--ink);line-height:1.75;font-size:clamp(14px,1.85vw,16px)}
-    .card ul,.card ol{padding-left:18px}
-    .card.full{grid-column:1/-1}
+.nav a.nav-link,.menu-btn{
+background:var(--deepBlue); color:#fff; padding:6px 9px; border-radius:8px;
+border:1px solid rgba(255,255,255,.2); font-weight:600; font-size:0.9rem;
+}
 
-    .bottom-cta{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+.hero{padding:24px 0 0}
+.hero-grid{display:grid;gap:24px}
+@media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
 
-    footer{border-top:1px solid rgba(255,255,255,.15);color:#fff;text-align:center;padding:24px 0;font-size:.9rem;margin-top:30px;background:var(--deepBlue)}
+h1{
+color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+font-size:clamp(23px,3vw,33px);
+}
 
-    @media (max-width:768px){
-      body{font-size:90%}
-      .hero-grid{grid-template-columns:1fr}
-    }
-  </style>
+.sub{
+color:var(--ink);
+opacity:.95;
+font-size:clamp(16px,2vw,18px);
+margin:8px 0 12px;
+max-width:780px;
+text-align:left;
+}
+
+.hero-media{
+border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.15);
+background:var(--deepBlue); aspect-ratio:16/9;
+display:flex;align-items:center;justify-content:center;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+}
+
+.hero-media img{width:100%;height:100%;object-fit:cover;opacity:.9}
+
+.cta-row{
+display:flex;gap:8px;margin-top:12px;
+}
+
+.btn{
+display:inline-block;padding:8px 18px;border-radius:40px;
+font-weight:700;font-size:13px;text-transform:uppercase;
+cursor:pointer;text-align:center;
+box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+}
+
+.btn-primary{background:var(--gold);color:var(--deepBlue)}
+.btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
+
+.split{margin-top:18px}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+.card{
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:var(--radius);
+padding:16px;
+box-shadow:0 14px 32px rgba(0,0,0,.35);
+}
+
+.card h3{margin:0 0 6px;font-size:20px}
+.card p,.card li,.card ol{color:var(--ink);line-height:1.75}
+
+.card.full{grid-column:1/-1}
+
+.bottom-cta{
+display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:8px
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,.15);
+text-align:center;padding:24px 0;margin-top:30px
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="container head">
-    <div class="brand">
-      <img src="logo-white.png" alt="ИКСАН лого"></a>
-    </div>
+<div class="container head">
 
-    <nav class="nav" aria-label="Главна навигација">
-      <a class="nav-link" href="index.html">Почетна</a>
-      <a class="nav-link" href="kontakt.html">Контакт</a>
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
 
-      <div class="menu" id="mainMenu">
-        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
-        <div class="dropdown" id="menuList" role="menu">
-          <a href="onama.html" role="menuitem">О нама</a>
-          <a href="oblasti.html" role="menuitem">Области</a>
-          <a href="ciljevi.html" role="menuitem">Циљеви</a>
-          <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
-          <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
-          <a href="porekloimovine.html" role="menuitem" aria-current="page">Порекло имовине — на сунце</a>
-          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
-          <a href="radnicipreduzetnici.html" role="menuitem">Радници и предузетници</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+<nav class="nav">
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+</nav>
+
+</div>
 </header>
 
 <main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Порекло имовине и јавне набавке</h1>
-        <p class="sub">Корупција није низ „лоших одлука“ појединаца, већ мрежа. Јавне набавке су најчешћи и најопаснији канал извлачења новца из буџета – зато морају бити потпуно транспарентне и под стварним надзором.</p>
-        <div class="cta-row">
-          <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
-          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-        </div>
-      </div>
-      <div class="hero-media">
-        <img src="magn.webp" alt="Порекло имовине и јавне набавке — Иксан • Снага правде">
-      </div>
-    </div>
-  </section>
 
-  <!-- КАРТИЦЕ -->
-  <section class="split">
-    <div class="container grid">
-      <article class="card">
-        <h3>Како систем злоупотреба функционише</h3>
-        <ul>
-          <li><strong>Намештени критеријуми:</strong> тендерски услови који одговарају унапред изабраном извођачу.</li>
-          <li><strong>Фиктивна контрола:</strong> жалбе пролазе формално, без независне провере.</li>
-          <li><strong>Мрежа актера:</strong> функционери, поједини привредници, финансијери и партијске структуре.</li>
-          <li><strong>Порекло имовине:</strong> односи се и на функционере и на привредне актере који профитирају из јавних уговора.</li>
-        </ul>
-      </article>
+<section class="hero">
+<div class="container hero-grid">
 
-      <article class="card">
-        <h3>Зашто је ово важно</h3>
-        <p>Јавне набавке су артерије државе: ако су блокиране или опљачкане, болест се шири – школе, болнице и инфраструктура трпе.</p>
-      </article>
+<div>
 
-      <article class="card full">
-        <h3>Шта ИКСАН тражи и ради</h3>
-        <ol>
-          <li>Пуна контрола јавних набавки и транспарентност свих понуда.</li>
-          <li>Јавни регистар повезаних лица и компанија.</li>
-          <li>Истраживање порекла имовине функционера и утицајних актера.</li>
-          <li>Крај заштити оних који делују против јавног интереса.</li>
-          <li>Правна помоћ жртвама намештених набавки.</li>
-          <li>Грађански надзор и дигиталне базе података.</li>
-          <li>Заштита узбуњивача.</li>
-        </ol>
+<h1>Транспарентност јавних финансија и порекло имовине</h1>
 
-        <div class="bottom-cta">
-          <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
-          <a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
-          <a class="btn btn-dark" href="prijavi.html">ПРИЈАВИ</a>
-          <a class="btn btn-dark" href="oblasti.html" style="border:1px solid rgba(255,255,255,.3)">Назад на области</a>
-        </div>
-      </article>
-    </div>
-  </section>
+<p class="sub">
+Јавне набавке и управљање јавним средствима представљају један од
+најважнијих сегмената функционисања државе.  
+Транспарентност поступака, јавна контрола и ефикасни механизми
+провере порекла имовине доприносе јачању поверења грађана у институције
+и спречавању злоупотреба јавних ресурса.
+</p>
+
+<div class="cta-row">
+<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ ИНФОРМАЦИЈУ</a>
+<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
+</div>
+
+</div>
+
+<div class="hero-media">
+<img src="magn.webp" alt="Транспарентност јавних финансија">
+</div>
+
+</div>
+</section>
+
+<section class="split">
+
+<div class="container grid">
+
+<article class="card">
+<h3>Изазови у пракси јавних набавки</h3>
+
+<ul>
+<li>Недовољна транспарентност појединих поступака јавних набавки.</li>
+<li>Недовољно јасна контрола повезаних лица и компанија.</li>
+<li>Ограничена доступност података о реализацији јавних уговора.</li>
+<li>Недовољна јавна контрола трошења буџетских средстава.</li>
+</ul>
+
+</article>
+
+<article class="card">
+
+<h3>Зашто је транспарентност важна</h3>
+
+<p>
+Јавне набавке директно утичу на функционисање јавних служби,
+инфраструктуре, образовања и здравства.
+Већа транспарентност и јавни надзор доприносе ефикаснијем
+коришћењу буџетских средстава и јачању поверења у институције.
+</p>
+
+</article>
+
+<article class="card full">
+
+<h3>Предлози за унапређење система</h3>
+
+<ol>
+<li>Потпуна транспарентност свих јавних набавки и понуда.</li>
+<li>Јавни регистар повезаних лица и компанија.</li>
+<li>Јачање механизама провере порекла имовине јавних функционера.</li>
+<li>Дигиталне базе података доступне јавности.</li>
+<li>Заштита узбуњивача и лица која указују на неправилности.</li>
+<li>Јачање институционалне контроле и независног надзора.</li>
+</ol>
+
+<div class="bottom-cta">
+<a class="btn btn-primary" href="doniraj.html">ПОДРЖИ РАД</a>
+<a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
+<a class="btn btn-dark" href="prijavi.html">ДОСТАВИ ПОДАТКЕ</a>
+<a class="btn btn-dark" href="oblasti.html">Назад на области</a>
+</div>
+
+</article>
+
+</div>
+
+</section>
+
 </main>
 
 <footer>
-  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
+<div class="container">
+© 2025 Иксан • Снага правде — Сва права задржана.
+</div>
 </footer>
 
-<script>
-  const menu = document.getElementById('mainMenu');
-  const menuBtn = menu?.querySelector('.menu-btn');
-  if (menu && menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-    document.addEventListener('click', (e) => {
-      if (!menu.contains(e.target)) {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-      }
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-        menuBtn.focus();
-      }
-    });
-  }
-</script>
 </body>
 </html>
