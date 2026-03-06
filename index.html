@@ -143,9 +143,7 @@ border-color:rgba(255,255,255,.16)
 .hero-grid{display:grid;gap:24px}
 
 @media(min-width:980px){
-
 .hero-grid{grid-template-columns:1.1fr .9fr}
-
 }
 
 h1{
@@ -232,9 +230,7 @@ grid-template-columns:1fr
 }
 
 @media(min-width:900px){
-
 .grid{grid-template-columns:repeat(2,1fr)}
-
 }
 
 .card{
@@ -297,10 +293,34 @@ background:var(--deepBlue);
 </a>
 </div>
 
-<nav class="nav">
+<nav class="nav" aria-label="Главна навигација">
 
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn" type="button">
+Мени ▾
+</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html">Радници и предузетници</a>
+
+</div>
+
+</div>
 
 </nav>
 
@@ -333,9 +353,7 @@ background:var(--deepBlue);
 <div class="cta-row">
 
 <a href="inicijative.html" class="btn btn-dark">ПОГЛЕДАЈ ИНИЦИЈАТИВЕ</a>
-
 <a href="dokumenta.html" class="btn btn-dark">ДОКУМЕНТА</a>
-
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
 
 </div>
@@ -343,9 +361,7 @@ background:var(--deepBlue);
 </div>
 
 <div class="hero-media">
-
 <img src="univ.webp">
-
 </div>
 
 </div>
@@ -359,110 +375,39 @@ background:var(--deepBlue);
 <div class="grid">
 
 <article class="card">
-
-<h3>
-<a href="ukidanjeizvrsitelja.html">
-Реформа система извршења
-</a>
-</h3>
-
+<h3><a href="ukidanjeizvrsitelja.html">Реформа система извршења</a></h3>
 <p>
-
 Предлог нормативног унапређења система извршења ради јачања судске контроле,
 ограничавања прекомерних трошкова и заштите основних права грађана.
-
 </p>
-
-<a class="more" href="ukidanjeizvrsitelja.html">
-
-Сазнај више →
-
-</a>
-
+<a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
 </article>
 
-
 <article class="card">
-
-<h3>
-
-<a href="porekloimovine.html">
-
-Транспарентност јавних функција
-
-</a>
-
-</h3>
-
+<h3><a href="porekloimovine.html">Транспарентност јавних функција</a></h3>
 <p>
-
 Јачање механизама транспарентности и контроле имовине носилаца јавних функција
 као предуслов за поверење у институције.
-
 </p>
-
-<a class="more" href="porekloimovine.html">
-
-Погледај детаље →
-
-</a>
-
+<a class="more" href="porekloimovine.html">Погледај детаље →</a>
 </article>
 
-
 <article class="card">
-
-<h3>
-
-<a href="sudpravda.html">
-
-Независност и ефикасност судства
-
-</a>
-
-</h3>
-
+<h3><a href="sudpravda.html">Независност и ефикасност судства</a></h3>
 <p>
-
 Предлози за унапређење приступа правди,
 институционалне независности и ефикасности правосудног система.
-
 </p>
-
-<a class="more" href="sudpravda.html">
-
-Прочитај више →
-
-</a>
-
+<a class="more" href="sudpravda.html">Прочитај више →</a>
 </article>
 
-
 <article class="card">
-
-<h3>
-
-<a href="radnicipreduzetnici.html">
-
-Правна сигурност привреде
-
-</a>
-
-</h3>
-
+<h3><a href="radnicipreduzetnici.html">Правна сигурност привреде</a></h3>
 <p>
-
 Унапређење правне сигурности за раднике,
 предузетнике и привреду као темеља стабилног економског развоја.
-
 </p>
-
-<a class="more" href="radnicipreduzetnici.html">
-
-Сазнај више →
-
-</a>
-
+<a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
 </article>
 
 </div>
@@ -474,14 +419,48 @@ background:var(--deepBlue);
 </main>
 
 <footer>
-
 <div class="container">
-
 © 2025 Иксан • Снага правде — Сва права задржана.
-
 </div>
-
 </footer>
+
+<script>
+
+const menu = document.getElementById('mainMenu');
+const menuBtn = menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', () => {
+
+const isOpen = menu.classList.toggle('open');
+
+menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+});
+
+document.addEventListener('click', (e) => {
+
+if (!menu.contains(e.target)) {
+
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+
+}
+
+});
+
+document.addEventListener('keydown', (e) => {
+
+if (e.key === 'Escape') {
+
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+
+}
+
+});
+
+</script>
 
 </body>
 </html>
