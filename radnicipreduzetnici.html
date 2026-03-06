@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -10,57 +11,115 @@
 
 <meta name="theme-color" content="#020c1b">
 <meta name="color-scheme" content="light">
+
 <link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
+
 :root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; }
+
 *{box-sizing:border-box;margin:0;padding:0}
 
 html,body{height:100%; overflow-x:hidden;}
+
 body{
-background:var(--deepBlue); color:#fff; font-family:"Times New Roman",serif;
-line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+background:var(--deepBlue);
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
 font-size:110%;
 }
+
 a{color:inherit;text-decoration:none}
 img{max-width:100%;height:auto;display:block}
 
 .container{max-width:1150px;margin:0 auto;padding:0 16px}
 
+/* HEADER */
+
 header{
-position:sticky; top:0; z-index:100;
+position:sticky;
+top:0;
+z-index:100;
 background:var(--deepBlue);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
-display:flex; align-items:center; justify-content:space-between;
-padding:6px 0 0; gap:12px; flex-wrap:nowrap;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px;
 }
 
-.brand img{height:120px;border-radius:10px}
+.brand img{
+height:161px;
+border-radius:10px;
+}
 
 nav.nav{
-display:flex; align-items:center; gap:8px;
+display:flex;
+gap:10px;
 }
 
 .nav a.nav-link,.menu-btn{
-background:var(--deepBlue); color:#fff;
-padding:6px 9px; border-radius:8px;
+background:var(--deepBlue);
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
 border:1px solid rgba(255,255,255,.2);
-font-weight:600; font-size:0.9rem;
+font-weight:600;
+font-size:0.9rem;
 }
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none;
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06);
+}
+
+/* HERO */
 
 .hero{padding:24px 0 0}
 
-.hero-grid{display:grid;gap:16px;grid-template-columns:1fr}
+.hero-grid{
+display:grid;
+gap:16px;
+grid-template-columns:1fr;
+}
 
 @media(min-width:980px){
 .hero-grid{grid-template-columns:1.1fr .9fr}
 }
 
 h1{
-color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+margin-top:8px;
+line-height:1.2;
+font-weight:600;
 font-size:clamp(22px,3.2vw,33px);
 }
 
@@ -69,7 +128,7 @@ color:var(--ink);
 opacity:.95;
 font-size:clamp(15px,2.2vw,18px);
 margin:8px 0 12px;
-max-width:780px
+max-width:780px;
 }
 
 .hero-media{
@@ -84,11 +143,13 @@ justify-content:center;
 box-shadow:0 10px 24px rgba(0,0,0,.5);
 }
 
+/* BUTTONS */
+
 .cta-row{
 display:flex;
 gap:8px;
 flex-wrap:wrap;
-margin-top:12px
+margin-top:12px;
 }
 
 .btn{
@@ -106,12 +167,14 @@ box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
 .btn-primary{background:var(--gold);color:var(--deepBlue)}
 .btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
 
+/* CARDS */
+
 .split{margin-top:18px}
 
 .grid{
 display:grid;
 gap:12px;
-grid-template-columns:1fr
+grid-template-columns:1fr;
 }
 
 @media(min-width:900px){
@@ -143,15 +206,16 @@ display:flex;
 gap:8px;
 justify-content:center;
 flex-wrap:wrap;
-margin-top:8px
+margin-top:8px;
 }
 
 footer{
 border-top:1px solid rgba(255,255,255,.15);
 text-align:center;
 padding:24px 0;
-margin-top:30px
+margin-top:30px;
 }
+
 </style>
 </head>
 
@@ -167,8 +231,32 @@ margin-top:30px
 </div>
 
 <nav class="nav">
+
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Пријави</a>
+<a href="ukidanjeizvrsitelja.html">Укидање приватних извршитеља</a>
+<a href="porekloimovine.html">Порекло имовине — на сунце</a>
+<a href="sudpravda.html">Суд народу, не моћнима</a>
+<a href="radnicipreduzetnici.html" aria-current="page">Радници и предузетници</a>
+
+</div>
+
+</div>
+
 </nav>
 
 </div>
@@ -277,6 +365,33 @@ margin-top:30px
 © 2025 Иксан • Снага правде — Сва права задржана.
 </div>
 </footer>
+
+<script>
+
+const menu=document.getElementById('mainMenu');
+const menuBtn=menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click',()=>{
+const isOpen=menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+});
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+}
+});
+
+document.addEventListener('keydown',(e)=>{
+if(e.key==='Escape'){
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+
+</script>
 
 </body>
 </html>
