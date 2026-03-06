@@ -1,258 +1,282 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Радници и предузетници — Иксан • Снага правде</title>
-  <meta name="description" content="Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.">
-  <meta name="theme-color" content="#020c1b">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="logo-white.png" type="image/png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    :root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; }
-    *{box-sizing:border-box;margin:0;padding:0}
+<title>Правна сигурност рада и привреде — Иксан • Снага правде</title>
 
-    html,body{height:100%; overflow-x:hidden;}
-    body{
-      background:var(--deepBlue); color:#fff; font-family:"Times New Roman",serif;
-      line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-      font-size:110%; overflow-wrap:anywhere; word-break:break-word; hyphens:auto;
-    }
-    header,main,footer{max-width:100vw; overflow-x:hidden;}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
+<meta name="description" content="Иницијатива за унапређење правне сигурности радника и предузетника, јачање фер тржишних услова и стабилног економског окружења.">
 
-    .container{max-width:1150px;margin:0 auto;padding:0 16px}
+<meta name="theme-color" content="#020c1b">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="logo-white.png" type="image/png">
 
-    /* HEADER — поправљено: logo остаје ЛЕВО, header не прелама у два реда */
-    header{
-      position:sticky; top:0; z-index:100;
-      background:var(--deepBlue);
-      border-bottom:1px solid rgba(255,255,255,.1);
-      backdrop-filter:blur(4px);
-    }
-    .head{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:6px 0 0; gap:12px; flex-wrap:nowrap;           /* ⬅️ НЕ преламај */
-    }
-    .brand{display:flex; align-items:center; flex-shrink:0; justify-content:flex-start;}
-    .brand img{height:120px; border-radius:10px}
+<style>
+:root{ --deepBlue:#1f1f1f; --gold:#d3a451; --radius:16px; --ink:#dcdcdc; }
+*{box-sizing:border-box;margin:0;padding:0}
 
-    nav.nav{
-      display:flex; align-items:center; gap:8px;
-      padding-top:0; padding-right:0; flex:1 1 auto;
-      justify-content:flex-end;
-      overflow-x:auto;                                     /* ⬅️ linkovi mogu da klize u sebi */
-      -webkit-overflow-scrolling:touch;
-    }
-    .nav a.nav-link,.menu-btn{
-      background:var(--deepBlue); color:#fff;
-      padding:6px 9px; border-radius:8px;
-      border:1px solid rgba(255,255,255,.2);
-      font-weight:600; font-size:0.9rem; line-height:1;
-      transition:transform .15s ease,filter .15s ease;
-      white-space:nowrap;                                  /* ⬅️ bez lomljenja teksta linkova */
-    }
-    .nav a.nav-link:hover,.menu-btn:hover{transform:translateY(-1px);filter:brightness(1.2)}
-    .nav a[aria-current="page"]{outline:2px solid var(--gold);outline-offset:2px}
+html,body{height:100%; overflow-x:hidden;}
+body{
+background:var(--deepBlue); color:#fff; font-family:"Times New Roman",serif;
+line-height:1.7; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+font-size:110%;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
 
-    .menu{position:relative; flex-shrink:0;}
-    .dropdown{
-      position:absolute; top:calc(100% + 8px); right:0;
-      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2);
-      border-radius:12px; width:min(92vw,300px); padding:6px;
-      box-shadow:0 10px 24px rgba(0,0,0,.5); display:none;
-    }
-    .menu.open .dropdown{display:block}
-    @media (hover:hover){ .menu:hover .dropdown{display:block} }
-    .dropdown a{display:block; padding:9px 10px; border-radius:8px; border:1px solid transparent; color:#fff; font-weight:600; font-size:14px}
-    .dropdown a:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.16)}
+.container{max-width:1150px;margin:0 auto;padding:0 16px}
 
-    /* HERO */
-    .hero{padding:24px 0 0}
-    .hero-grid{display:grid; gap:16px; grid-template-columns:1fr}
-    @media(min-width:980px){.hero-grid{grid-template-columns:1.1fr .9fr}}
-    h1{
-      color:#fff; margin-top:8px; line-height:1.2; font-weight:600;
-      font-size:clamp(22px,3.2vw,33px); text-shadow:0 0 8px rgba(255,255,255,.25);
-    }
-    .sub{color:var(--ink); opacity:.95; font-size:clamp(15px,2.2vw,18px); margin:8px 0 12px; max-width:780px}
-    .hero-media{
-      border-radius:16px; overflow:hidden; border:1px solid rgba(255,255,255,.15);
-      background:var(--deepBlue); aspect-ratio:16/9;
-      display:flex; align-items:center; justify-content:center; box-shadow:0 10px 24px rgba(0,0,0,.5);
-      width:100%;
-    }
+header{
+position:sticky; top:0; z-index:100;
+background:var(--deepBlue);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
 
-    /* CTA */
-    .cta-row{
-      display:flex; justify-content:flex-start; flex-wrap:wrap; gap:8px; margin-top:12px; width:100%;
-    }
-    .btn{
-      display:inline-block; padding:8px 16px; border-radius:40px; border:none;
-      font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.3px;
-      transition:transform .2s, box-shadow .2s; cursor:pointer; text-align:center;
-      box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
-    }
-    .btn-primary{background:var(--gold); color:var(--deepBlue)}
-    .btn-dark{background:var(--deepBlue); color:#fff; border:1px solid rgba(255,255,255,.3)}
-    .btn:hover{transform:translateY(-2px)}
+.head{
+display:flex; align-items:center; justify-content:space-between;
+padding:6px 0 0; gap:12px; flex-wrap:nowrap;
+}
 
-    /* КАРТИЦЕ */
-    .split{margin-top:18px}
-    .grid{display:grid; gap:12px; grid-template-columns:1fr}
-    @media(min-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-    .card{
-      background:var(--deepBlue); border:1px solid rgba(255,255,255,.2); border-radius:var(--radius);
-      padding:16px; box-shadow:0 14px 32px rgba(0,0,0,.35); transition:transform .2s, box-shadow .2s; color:#fff;
-    }
-    .card:hover{transform:translateY(-3px); box-shadow:0 18px 36px rgba(0,0,0,.42)}
-    .card h3{margin:0 0 6px; color:#ffffff; line-height:1.15; font-weight:700; font-size:20px; text-shadow:none}
-    .card p,.card li{color:var(--ink); line-height:1.75; font-size:clamp(14px,1.85vw,16px)}
-    .card ul,.card ol{padding-left:18px}
-    .card.full{grid-column:1/-1}
+.brand img{height:120px;border-radius:10px}
 
-    .bottom-cta{display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:8px; width:100%}
+nav.nav{
+display:flex; align-items:center; gap:8px;
+}
 
-    footer{border-top:1px solid rgba(255,255,255,.15); color:#fff; text-align:center; padding:24px 0; font-size:.9rem; margin-top:30px; background:var(--deepBlue)}
+.nav a.nav-link,.menu-btn{
+background:var(--deepBlue); color:#fff;
+padding:6px 9px; border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600; font-size:0.9rem;
+}
 
-    /* Мобилни финале: logo ostaje levo, nav klizi u sebi, bez page scroll-a */
-    @media (max-width:768px){
-      .brand img{height:88px}
-      .cta-row{justify-content:center}
-    }
-    @media (max-width:480px){
-      nav.nav{gap:6px}
-      .brand img{height:76px}
-    }
-    @media (max-width:360px){
-      .nav a.nav-link,.menu-btn{font-size:0.8rem;padding:4px 6px}
-      nav.nav{gap:4px}
-      .brand img{height:68px}
-    }
-  </style>
+.hero{padding:24px 0 0}
+
+.hero-grid{display:grid;gap:16px;grid-template-columns:1fr}
+
+@media(min-width:980px){
+.hero-grid{grid-template-columns:1.1fr .9fr}
+}
+
+h1{
+color:#fff;margin-top:8px;line-height:1.2;font-weight:600;
+font-size:clamp(22px,3.2vw,33px);
+}
+
+.sub{
+color:var(--ink);
+opacity:.95;
+font-size:clamp(15px,2.2vw,18px);
+margin:8px 0 12px;
+max-width:780px
+}
+
+.hero-media{
+border-radius:16px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.15);
+background:var(--deepBlue);
+aspect-ratio:16/9;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+}
+
+.cta-row{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:12px
+}
+
+.btn{
+display:inline-block;
+padding:8px 16px;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
+text-transform:uppercase;
+cursor:pointer;
+text-align:center;
+box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+}
+
+.btn-primary{background:var(--gold);color:var(--deepBlue)}
+.btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
+
+.split{margin-top:18px}
+
+.grid{
+display:grid;
+gap:12px;
+grid-template-columns:1fr
+}
+
+@media(min-width:900px){
+.grid{grid-template-columns:repeat(2,1fr)}
+}
+
+.card{
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
+border-radius:var(--radius);
+padding:16px;
+box-shadow:0 14px 32px rgba(0,0,0,.35);
+}
+
+.card h3{
+margin:0 0 6px;
+font-size:20px;
+}
+
+.card p,.card li{
+color:var(--ink);
+line-height:1.75;
+}
+
+.card.full{grid-column:1/-1}
+
+.bottom-cta{
+display:flex;
+gap:8px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:8px
+}
+
+footer{
+border-top:1px solid rgba(255,255,255,.15);
+text-align:center;
+padding:24px 0;
+margin-top:30px
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="container head">
-    <div class="brand">
-      <img src="logo-white.png" alt="ИКСАН лого">
-    </div>
+<div class="container head">
 
-    <nav class="nav" aria-label="Главна навигација">
-      <a class="nav-link" href="index.html">Почетна</a>
-      <a class="nav-link" href="kontakt.html">Контакт</a>
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
 
-      <div class="menu" id="mainMenu">
-        <button class="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuList">Мени ▾</button>
-        <div class="dropdown" id="menuList" role="menu">
-          <a href="onama.html" role="menuitem">О нама</a>
-          <a href="oblasti.html" role="menuitem">Области</a>
-          <a href="ciljevi.html" role="menuitem">Циљеви</a>
-          <a href="inicijative.html" role="menuitem">Иницијативе</a>
-          <a href="doniraj.html" role="menuitem">Донирај</a>
-          <a href="prikljucise.html" role="menuitem">Прикључи се</a>
-          <a href="prijavi.html" role="menuitem">Пријави</a>
-          <a href="ukidanjeizvrsitelja.html" role="menuitem">Укидање приватних извршитеља</a>
-          <a href="porekloimovine.html" role="menuitem">Порекло имовине — на сунце</a>
-          <a href="sudpravda.html" role="menuitem">Суд народу, не моћнима</a>
-          <a href="radnicipreduzetnici.html" role="menuitem" aria-current="page">Радници и предузетници</a>
-        </div>
-      </div>
-    </nav>
-  </div>
+<nav class="nav">
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+</nav>
+
+</div>
 </header>
 
 <main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1>Радници и предузетници — срце здраве земље</h1>
-        <p class="sub">Без правде за раднике и једнаких услова за предузетнике — нема економије која служи народу.</p>
-        <div class="cta-row">
-          <a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-          <a href="prijavi.html" class="btn btn-dark">ПРИЈАВИ</a>
-          <a href="doniraj.html" class="btn btn-primary">ДОНИРАЈ</a>
-        </div>
-      </div>
-      <div class="hero-media">
-        <!-- замењено: hero.webp -> cudes.webp -->
-        <img src="cudes.webp" alt="Радници и предузетници — Иксан • Снага правде">
-      </div>
-    </div>
-  </section>
 
-  <section class="split">
-    <div class="container grid">
-      <article class="card">
-        <h3>Право на рад и достојанство запослених</h3>
-        <p>Рад није роба. Сваки радник има право на поштену зараду, сигурност и поштовање.</p>
-        <ol>
-          <li><strong>Плаћени прековремени:</strong> пуна исплата за сваки сат преко 40 недељно и рад викендом/празницима — у јавном и приватном сектору.</li>
-          <li><strong>Једнак третман:</strong> закон не сме правити разлику између „државних“ и „приватних“ радника.</li>
-          <li><strong>Бесплатна правна заштита:</strong> саветовање и подршка за раднике који немају могућности да ангажују адвоката.</li>
-        </ol>
-        <p><em>Достојанство радника је темељ државе. Где се прековремени не плаћа — правда је већ понижена.</em></p>
-      </article>
+<section class="hero">
+<div class="container hero-grid">
 
-      <article class="card">
-        <h3>Слобода и фер услови за предузетнике</h3>
-        <p>Мали и средњи предузетници су темељ економије. Потребан је нови приступ заштити конкуренције.</p>
-        <ul>
-          <li>Уније/удружења предузетника добијају <strong>законско право</strong> да у статутима утврде обавезујућа правила понашања на тржишту — за све учеснике.</li>
-          <li>Та правила подносе се Комисији за заштиту конкуренције која их <strong>објављује у Службеном гласнику</strong> као обавезујућа.</li>
-          <li>Овим се спречавају <strong>прикривене монополске праксе</strong> — закуп полица, маркетиншки намети и др. — које уништавају мале произвођаче.</li>
-        </ul>
-      </article>
+<div>
 
-      <article class="card full">
-        <h3>Економија по мери човека</h3>
-        <p>Слободно и праведно тржиште омогућава да сваки човек — било радник или предузетник — може да живи од свог рада, а не од туђих повластица.</p>
-        <ul>
-          <li>Држава <strong>штити радника</strong>, али <strong>не кажњава предузетника</strong>.</li>
-          <li>Тржиште је отворено, али <strong>праведно</strong>.</li>
-          <li>Закон служи <strong>народу</strong>, а не монополима.</li>
-        </ul>
+<h1>Правна сигурност рада и привреде</h1>
 
-        <div class="bottom-cta">
-          <a class="btn btn-primary" href="doniraj.html">ДОНИРАЈ</a>
-          <a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
-          <a class="btn btn-dark" href="prijavi.html">ПРИЈАВИ</a>
-          <a class="btn btn-dark" href="oblasti.html" style="border:1px solid rgba(255,255,255,.3)">Назад на области</a>
-        </div>
-      </article>
-    </div>
-  </section>
+<p class="sub">
+Стабилна економија заснива се на равнотежи између заштите права запослених
+и фер тржишних услова за предузетнике.  
+Циљ ове иницијативе је унапређење правне сигурности,
+подстицање здраве конкуренције и стварање окружења
+у којем рад и предузетништво могу равноправно да се развијају.
+</p>
+
+<div class="cta-row">
+<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
+<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
+</div>
+
+</div>
+
+<div class="hero-media">
+<img src="cudes.webp" alt="Правна сигурност рада и привреде">
+</div>
+
+</div>
+</section>
+
+<section class="split">
+
+<div class="container grid">
+
+<article class="card">
+
+<h3>Заштита права запослених</h3>
+
+<p>
+Правна сигурност радника подразумева поштовање радног законодавства,
+правичну накнаду за рад и доступност правне заштите у случају повреде
+радних права.
+</p>
+
+<ul>
+<li>Поштовање радног времена и законских обавеза послодаваца.</li>
+<li>Правичне накнаде за прековремени и ноћни рад.</li>
+<li>Доступност правне помоћи у случају повреде радних права.</li>
+</ul>
+
+</article>
+
+<article class="card">
+
+<h3>Фер услови за предузетнике</h3>
+
+<p>
+Мали и средњи предузетници представљају важан део економског развоја.
+Здраво тржиште подразумева једнаке услове пословања и спречавање
+нелојалне конкуренције.
+</p>
+
+<ul>
+<li>Једнаки услови приступа тржишту.</li>
+<li>Спречавање монополских пракси.</li>
+<li>Подстицање здраве и транспарентне конкуренције.</li>
+</ul>
+
+</article>
+
+<article class="card full">
+
+<h3>Одржива економија и правна сигурност</h3>
+
+<p>
+Економски развој захтева равнотежу између интереса радника,
+предузетника и јавног интереса.  
+Правна сигурност и транспарентни економски услови
+представљају основу стабилног и одрживог привредног окружења.
+</p>
+
+<div class="bottom-cta">
+<a class="btn btn-primary" href="doniraj.html">ПОДРЖИ РАД</a>
+<a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
+<a class="btn btn-dark" href="prijavi.html">ДОСТАВИ ПОДАТКЕ</a>
+<a class="btn btn-dark" href="oblasti.html">Назад на области</a>
+</div>
+
+</article>
+
+</div>
+
+</section>
+
 </main>
 
 <footer>
-  <div class="container">© 2025 Иксан • Снага правде — Сва права задржана.</div>
+<div class="container">
+© 2025 Иксан • Снага правде — Сва права задржана.
+</div>
 </footer>
 
-<script>
-  const menu = document.getElementById('mainMenu');
-  const menuBtn = menu?.querySelector('.menu-btn');
-  if (menu && menuBtn) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-    document.addEventListener('click', (e) => {
-      if (!menu.contains(e.target)) {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-      }
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        menu.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded','false');
-        menuBtn.focus();
-      }
-    });
-  }
-</script>
 </body>
 </html>
