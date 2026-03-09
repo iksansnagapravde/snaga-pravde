@@ -9,7 +9,6 @@
 <meta name="description" content="Подржите рад удружења грађана Иксан — Снага правде. Донације омогућавају правну помоћ, истраживања и иницијативе у заштити права грађана." />
 
 <meta name="theme-color" content="#020c1b">
-<meta name="color-scheme" content="light">
 
 <link rel="icon" href="logo-white.png" type="image/png">
 
@@ -25,19 +24,15 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{height:100%}
-
 body{
 background:var(--deepBlue);
 color:#ffffff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
 font-size:110%;
-overflow-x:hidden;
 }
 
 a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
 
 .container{
 max-width:1150px;
@@ -59,16 +54,18 @@ border-bottom:1px solid rgba(255,255,255,.1)
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
-gap:12px;
-flex-wrap:nowrap
+padding:6px 0;
 }
 
-.brand{display:flex;align-items:center;flex-shrink:0}
+.brand img{
+height:150px;
+border-radius:10px
+}
 
-.brand img{height:161px;border-radius:10px}
-
-nav.nav{display:flex;align-items:center;gap:10px;padding-right:8px}
+nav.nav{
+display:flex;
+gap:10px
+}
 
 .nav a.nav-link,.menu-btn{
 background:var(--deepBlue);
@@ -101,7 +98,6 @@ display:none
 display:block;
 padding:10px 12px;
 border-radius:8px;
-color:#fff;
 font-weight:600
 }
 
@@ -117,7 +113,7 @@ padding:40px 0
 
 .hero h1{
 font-size:32px;
-margin-bottom:10px;
+margin-bottom:10px
 }
 
 .hero p{
@@ -131,18 +127,13 @@ max-width:720px
 background:var(--deepBlue);
 border:1px solid rgba(255,255,255,.15);
 border-radius:var(--radius);
-padding:20px;
-box-shadow:0 12px 28px rgba(0,0,0,.5);
-margin-top:18px;
-color:#fff
+padding:24px;
+margin-top:20px
 }
 
 h2{
-color:#fff;
-font-weight:700;
-font-size:clamp(20px,2.5vw,24px);
 text-align:center;
-margin-bottom:12px
+margin-bottom:14px
 }
 
 /* UPLATNICA */
@@ -153,13 +144,11 @@ margin:0 auto;
 border:1px solid rgba(255,255,255,.25);
 border-radius:12px;
 background:rgba(255,255,255,.05);
-box-shadow:0 4px 16px rgba(0,0,0,.4);
-overflow:hidden;
-font-size:0.9rem
+overflow:hidden
 }
 
 .u-head{
-padding:10px 14px;
+padding:12px;
 border-bottom:1px solid rgba(255,255,255,.2);
 font-weight:700
 }
@@ -171,33 +160,59 @@ padding:12px;
 grid-template-columns:1fr 1fr
 }
 
-.u-field{display:grid;gap:4px}
+.u-field{
+display:grid;
+gap:4px
+}
 
 .u-label{
 color:var(--ink);
 font-weight:700;
-font-size:0.85rem;
-text-transform:uppercase
+font-size:.8rem
 }
 
 .u-value{
-border:1px solid rgba(255,255,255,.28);
+border:1px solid rgba(255,255,255,.25);
 background:rgba(255,255,255,.08);
-color:#fff;
-border-radius:8px;
-padding:8px 10px;
-display:flex;
-align-items:center
+border-radius:6px;
+padding:8px
 }
 
-.u-wide{grid-column:1/-1}
+.u-wide{
+grid-column:1/-1
+}
+
+/* IMPRESUM */
+
+.impresum{
+margin-top:20px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.15);
+border-radius:12px;
+padding:20px;
+max-width:750px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.impresum h3{
+text-align:center;
+margin-bottom:10px;
+}
+
+.impresum p{
+color:var(--ink);
+margin-bottom:6px;
+}
+
+/* FOOTER */
 
 footer{
 border-top:1px solid var(--line);
 text-align:center;
-padding:24px 0;
+padding:22px 0;
 margin-top:30px;
-background:var(--deepBlue)
+color:var(--ink)
 }
 
 </style>
@@ -220,6 +235,7 @@ background:var(--deepBlue)
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
 <div class="menu" id="mainMenu">
+
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
@@ -251,8 +267,8 @@ background:var(--deepBlue)
 
 <p>
 Вашом донацијом подржавате рад удружења Иксан — Снага правде,
-истраживања, правну помоћ грађанима и иницијативе
-за унапређење институционалне одговорности и заштиту права грађана.
+правну подршку грађанима, истраживања и иницијативе
+за унапређење правде и институционалне одговорности.
 </p>
 
 </section>
@@ -286,7 +302,7 @@ background:var(--deepBlue)
 
 <div class="u-field">
 <div class="u-label">Банка</div>
-<div class="u-value">Ерсте банка</div>
+<div class="u-value">Erste Bank</div>
 </div>
 
 <div class="u-field u-wide">
@@ -300,12 +316,26 @@ background:var(--deepBlue)
 
 </section>
 
+<section class="impresum">
+
+<h3>Основни подаци о удружењу</h3>
+
+<p><strong>Седиште:</strong> Војводе Степе 127, спрат II, стан 7, Вождовац, Београд</p>
+<p><strong>Е-пошта:</strong> iksan.snaga.pravde@gmail.com</p>
+<p><strong>Матични број (МБ):</strong> 28406312</p>
+<p><strong>ПИБ:</strong> 115357260</p>
+<p><strong>Статус:</strong> Непрофитна и хуманитарна организација</p>
+
+</section>
+
 </main>
 
 <footer>
 
 <div class="container">
+
 © 2025 Иксан • Снага правде — Сва права задржана.
+
 </div>
 
 </footer>
@@ -316,14 +346,12 @@ const menu=document.getElementById('mainMenu');
 const menuBtn=menu.querySelector('.menu-btn');
 
 menuBtn.addEventListener('click',()=>{
-const isOpen=menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
+menu.classList.toggle('open');
 });
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
 }
 });
 
