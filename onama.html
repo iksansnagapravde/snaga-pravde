@@ -2,251 +2,140 @@
 <html lang="sr-Cyrl-RS">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>О удружењу — Иксан • Снага правде</title>
 
-<meta name="description" content="Иксан – удружење грађана посвећено јачању владавине права, заштити достојанства грађана и унапређењу институционалне правде.">
-
-<meta name="theme-color" content="#020c1b">
-
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
 
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-
 body{
-background:var(--deepBlue);
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman",serif;
-line-height:1.7;
-font-size:110%;
+font-family:"Times New Roman";
+margin:0;
 }
 
-a{color:inherit;text-decoration:none}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
-img{max-width:100%;display:block}
-
-.container{max-width:1150px;margin:0 auto;padding:0 20px}
-
-/* HEADER */
-
+/* HEADER DESNO */
 header{
 position:sticky;
 top:0;
-z-index:100;
-background:var(--deepBlue);
-border-bottom:1px solid rgba(255,255,255,.1);
+background:rgba(0,0,0,0.7);
+border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .head{
 display:flex;
-align-items:center;
-justify-content:space-between;
-padding:4px 0 0;
+justify-content:flex-end;
+padding:10px 0;
 }
 
-.brand img{
-height:161px;
-border-radius:10px;
-}
-
-nav.nav{
+.nav{
 display:flex;
 gap:10px;
 }
 
-.nav a.nav-link,.menu-btn{
-background:var(--deepBlue);
-color:#fff;
-padding:6px 9px;
+.nav a,.menu-btn{
+padding:6px 10px;
+border:1px solid rgba(255,255,255,.3);
 border-radius:8px;
-border:1px solid rgba(255,255,255,.2);
-font-weight:600;
-font-size:0.9rem;
+color:#fff;
+text-decoration:none;
 }
-
-/* dropdown */
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:110%;
 right:0;
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
-border-radius:12px;
-min-width:260px;
-padding:7px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none
+background:#111;
+padding:8px;
+border-radius:10px;
+display:none;
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:10px 12px;
-border-radius:8px;
-font-weight:600
+/* TOP BUTTONS */
+.top-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+flex-wrap:wrap;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06)
+.btn{
+padding:12px 20px;
+border-radius:25px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
+}
+
+.btn-dark{
+background:#222;
+color:#fff;
+}
+
+.btn-gold{
+background:var(--gold);
+color:#000;
 }
 
 /* HERO */
-
 .hero{
-padding:24px 0
+margin-top:30px;
 }
 
 .hero-grid{
 display:grid;
-gap:24px
-}
-
-@media(min-width:980px){
-.hero-grid{
-grid-template-columns:1.1fr .9fr
-}
-}
-
-h1{
-font-size:clamp(23px,3vw,33px);
-}
-
-.sub{
-margin:8px 0 12px;
-max-width:740px;
-color:var(--ink);
-font-size:clamp(16px,2vw,18px)
-}
-
-.hero-media{
-border-radius:16px;
-overflow:hidden;
-border:1px solid rgba(255,255,255,.15);
-aspect-ratio:16/9;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
+grid-template-columns:1fr 1fr;
+gap:30px;
 }
 
 .hero-media img{
 width:100%;
-height:100%;
-object-fit:cover;
-opacity:.9
+border-radius:15px;
 }
 
-/* CTA */
-
-.cta-row{
-display:flex;
-justify-content:center;
-gap:8px;
-margin-top:14px;
-}
-
-.btn{
-display:inline-block;
-padding:8px 18px;
-border-radius:40px;
-font-weight:700;
-font-size:13px;
-text-transform:uppercase;
-cursor:pointer;
-text-align:center;
-box-shadow:0 3px 0 rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.4);
-}
-
-.btn-primary{
-background:var(--gold);
-color:var(--deepBlue)
-}
-
-.btn-dark{
-background:var(--deepBlue);
-color:#fff;
-border:1px solid rgba(255,255,255,.3)
-}
-
-/* CARDS */
-
-.split{
-margin-top:18px
-}
-
+/* GRID */
 .grid{
 display:grid;
-gap:14px;
-grid-template-columns:1fr
-}
-
-@media(min-width:900px){
-.grid{
-grid-template-columns:repeat(2,1fr)
-}
+gap:15px;
+grid-template-columns:repeat(2,1fr);
+margin-top:30px;
 }
 
 .card{
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
-border-radius:var(--radius);
-padding:16px;
-box-shadow:0 14px 32px rgba(0,0,0,.35);
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:15px;
 }
 
-.card h3{
-margin-bottom:6px;
-font-size:20px;
-}
-
-.card p{
-color:var(--ink);
-}
+.card p{color:var(--ink)}
 
 /* IMPRESUM */
-
 .impresum{
 margin-top:30px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:16px;
+background:rgba(0,0,0,0.6);
 padding:20px;
-background:rgba(255,255,255,.05);
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
+border-radius:15px;
 }
 
-.impresum h3{
-text-align:center;
-margin-bottom:10px;
-}
-
-.impresum p{
-color:var(--ink);
-margin-bottom:6px;
-}
-
-/* FOOTER */
-
-footer{
-border-top:1px solid rgba(255,255,255,.15);
-text-align:center;
-padding:24px 0;
-margin-top:30px;
+/* MOBILE */
+@media(max-width:768px){
+.hero-grid{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr}
 }
 
 </style>
@@ -254,161 +143,159 @@ margin-top:30px;
 
 <body>
 
+<!-- HEADER -->
 <header>
 <div class="container head">
 
-<div class="brand">
-<a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
-</a>
-</div>
-
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
-
-<button class="menu-btn">Мени ▾</button>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
+
 </div>
 
 </nav>
+
 </div>
 </header>
 
-<main>
+<div class="container">
 
-<section class="hero">
-<div class="container hero-grid">
+<!-- 🔥 SVA DUGMAD -->
+<div class="top-buttons">
+
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+ПОДРЖИ НАШ РАД
+</a>
+
+</div>
+
+<!-- HERO -->
+<div class="hero">
+
+<div class="hero-grid">
 
 <div>
 
 <h1>О удружењу Иксан</h1>
 
-<p class="sub">
+<p>
 Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
-заштити достојанства грађана и развоју друштва заснованог на правичности,
-одговорности институција и поштовању закона.
+заштити достојанства грађана и развоју праведног друштва.
 </p>
-
-<div class="cta-row">
-<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
-</div>
 
 </div>
 
 <div class="hero-media">
-<img src="um.webp" alt="О удружењу Иксан">
+<img src="um.webp">
 </div>
 
 </div>
-</section>
 
-<section class="split">
+</div>
 
-<div class="container">
+<!-- CARDS -->
 <div class="grid">
 
 <article class="card">
 <h3>Ко смо</h3>
-<p>
-Иксан је удружење грађана које окупља људе различитих професија
-са заједничким циљем – унапређењем правде, правне сигурности
-и поштовања достојанства сваког грађанина.
-</p>
+<p>Иксан окупља грађане са циљем јачања правде и правне сигурности.</p>
 </article>
 
 <article class="card">
 <h3>Назив „Иксан“</h3>
-<p>
-Назив удружења симболично представља тежњу ка истини,
-моралној одговорности и друштву у којем се правда
-не посматра као привилегија већ као основно право.
-</p>
+<p>Симбол правде, истине и одговорности.</p>
 </article>
 
 <article class="card">
 <h3>Наша мисија</h3>
-<p>
-Мисија удружења је подстицање институционалних реформи,
-јачање правне заштите грађана и развој система
-у којем су закон и правда једнаки за све.
-</p>
+<p>Реформа система и заштита грађана.</p>
 </article>
 
 <article class="card">
 <h3>Разлог оснивања</h3>
+<p>Одговор на неправде у систему.</p>
+</article>
+
+<!-- 🔥 NOVI BLOK -->
+<article class="card">
+<h3>Наш рад са грађанима</h3>
+
+<p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
+
 <p>
-Удружење је настало као одговор на потребу
-за јачим грађанским ангажманом у области владавине права,
-транспарентности институција и заштите грађанских права.
+Свакодневно смо присутни на <strong>Instagram, TikTok и Facebook</strong>,
+где објављујемо садржај о правима грађана и актуелним проблемима.
 </p>
+
+<p>
+Организујемо <strong>уживо укључења</strong> и директну комуникацију са грађанима,
+где их информишемо и саветујемо.
+</p>
+
+<p>
+Грађане позивамо да нам се јаве и <strong>посете нашу канцеларију</strong>.
+</p>
+
+<p>
+Директно слушамо проблеме и <strong>повезујемо грађане са институцијама</strong>.
+</p>
+
+<p>
+Позивамо све да попуне <strong>представку</strong>, на основу које
+предузимамо кораке у заштити њихових права.
+</p>
+
 </article>
 
 </div>
 
+<!-- IMPRESUM -->
 <div class="impresum">
 
-<h3>Основни подаци о удружењу</h3>
+<h3>Основни подаци</h3>
 
-<p><strong>Седиште:</strong> Војводе Степе 127, спрат II, стан 7, Вождовац, Београд</p>
-
-<p><strong>Е-пошта:</strong> iksan.snaga.pravde@gmail.com</p>
-
-<p><strong>Матични број:</strong> 28406312</p>
-
-<p><strong>ПИБ:</strong> 115357260</p>
-
-<p><strong>Статус:</strong> Непрофитна и хуманитарна организација</p>
+<p>Седиште: Београд</p>
+<p>Email: iksan.snaga.pravde@gmail.com</p>
+<p>МБ: 28406312</p>
+<p>ПИБ: 115357260</p>
 
 </div>
 
 </div>
-
-</section>
-
-</main>
-
-<footer>
-<div class="container">
-© 2025 Иксан • Снага правде — Сва права задржана.
-</div>
-</footer>
 
 <script>
+const menu=document.getElementById('menu');
 
-const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click',()=>{
+menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
-});
+};
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
 </script>
 
 </body>
