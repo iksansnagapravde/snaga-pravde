@@ -28,6 +28,72 @@ font-family:"Times New Roman",serif;
 /* CONTAINER */
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:100;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.head{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:6px 0;
+}
+
+.brand img{
+height:120px;
+border-radius:10px;
+}
+
+.nav{
+display:flex;
+gap:10px;
+}
+
+.nav a,.menu-btn{
+padding:6px 10px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+color:#fff;
+font-weight:600;
+text-decoration:none;
+}
+
+.nav a:hover,.menu-btn:hover{
+background:rgba(255,255,255,0.1);
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+right:0;
+top:110%;
+background:rgba(20,20,20,.95);
+border-radius:12px;
+padding:6px;
+display:none;
+min-width:250px;
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:8px;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,0.1);
+}
+
 /* HERO */
 .hero{
 padding:50px 0;
@@ -144,6 +210,41 @@ font-size:14px;
 
 <body>
 
+<!-- 🔥 HEADER UBACEN -->
+<header>
+<div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png" alt="ИКСАН лого">
+</a>
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О удружењу</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе и прописи</a>
+<a href="doniraj.html">Подршка раду</a>
+<a href="prikljucise.html">Сарадња</a>
+<a href="prijavi.html">Представка грађана</a>
+
+</div>
+</div>
+
+</nav>
+</div>
+</header>
+
 <main>
 
 <section class="hero">
@@ -201,6 +302,23 @@ font-size:14px;
 <footer>
 © 2025 Иксан • Снага правде
 </footer>
+
+<!-- 🔥 MENU SCRIPT -->
+<script>
+
+const menu=document.getElementById('mainMenu');
+
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
+});
+
+</script>
 
 </body>
 </html>
