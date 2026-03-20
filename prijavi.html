@@ -1,154 +1,149 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-
-<meta charset="UTF-8" />
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Достави случај — Иксан • Снага правде</title>
-
-<meta name="description" content="Доставите информације о могућим неправилностима или кршењу права. Ваше обраћање може допринети унапређењу правде и институционалне одговорности.">
-
-<meta name="theme-color" content="#1f1f1f">
+<title>Представка грађанина | Иксан – Снага правде</title>
 
 <link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
 
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--radius:16px;
+--ink:#dcdcdc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
 body{
-background:#1f1f1f;
+background:url('justice-bg.jpg') center 25%/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
-line-height:1.6;
 }
 
-.container{
-max-width:1100px;
-margin:0 auto;
-padding:0 20px
-}
-
-/* HEADER */
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
 header{
 position:sticky;
 top:0;
 z-index:100;
-background:#1f1f1f;
-border-bottom:1px solid rgba(255,255,255,.1)
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
-gap:12px
+align-items:center;
+padding:6px 0;
 }
 
-.brand img{
-height:161px;
-border-radius:10px
-}
+.brand img{height:120px;border-radius:10px}
 
-nav.nav{
-display:flex;
-gap:10px
-}
+.nav{display:flex;gap:10px}
 
-.nav a.nav-link,.menu-btn{
-background:#1f1f1f;
-color:#fff;
-padding:6px 9px;
-border-radius:8px;
+.nav a,.menu-btn{
+padding:6px 10px;
 border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+color:#fff;
 font-weight:600;
-font-size:0.9rem
+text-decoration:none;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
 right:0;
-background:#1f1f1f;
-border:1px solid rgba(255,255,255,.2);
+top:110%;
+background:rgba(20,20,20,.9);
 border-radius:12px;
-min-width:280px;
 padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none
+display:none;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
-padding:9px 10px;
-border-radius:8px;
+padding:8px;
 color:#fff;
-font-weight:600
+text-decoration:none;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06)
+/* HERO */
+
+.hero{
+padding:30px 0;
+text-align:center;
 }
 
-/* FORM */
+h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+border-radius:40px;
+font-weight:700;
+cursor:pointer;
+margin:6px;
+position:relative;
+overflow:hidden;
+text-decoration:none;
+}
+
+.btn-primary{background:var(--gold);color:#000}
+.btn-dark{background:#222;color:#fff}
+
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(0.95)}
+
+/* RIPPLE */
+
+.btn span.ripple{
+position:absolute;
+border-radius:50%;
+transform:scale(0);
+animation:ripple 0.7s ease-out;
+background:radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.4) 40%, transparent 70%);
+pointer-events:none;
+}
+
+@keyframes ripple{
+to{transform:scale(4);opacity:0}
+}
+
+/* CONTENT */
 
 .card{
-border:1px solid rgba(255,255,255,.2);
+background:rgba(20,20,20,.6);
+padding:20px;
 border-radius:16px;
-padding:18px;
-margin:24px 0
+margin:20px 0;
+box-shadow:0 10px 30px rgba(0,0,0,.5);
 }
 
-form{
-display:grid;
-gap:12px
-}
-
-label{
-font-weight:700
-}
-
-input,textarea,select{
-padding:12px;
-border-radius:10px;
-border:1px solid rgba(255,255,255,.25);
-background:rgba(255,255,255,.08);
-color:#fff
-}
-
-textarea{
-min-height:120px
-}
-
-.submit{
-background:#d3a451;
-color:#1f1f1f;
-font-weight:800;
-padding:12px;
+iframe{
+width:100%;
+height:600px;
 border:none;
-border-radius:40px;
-cursor:pointer
+border-radius:16px;
 }
 
-.submit:hover{
-filter:brightness(1.05)
-}
-
-.info{
-opacity:.9;
-color:#dcdcdc;
-margin-bottom:12px
-}
-
-.privacy{
-margin-top:14px;
-font-size:.85rem;
-color:#bfbfbf
+footer{
+text-align:center;
+padding:30px;
+font-size:14px;
 }
 
 </style>
@@ -157,181 +152,111 @@ color:#bfbfbf
 <body>
 
 <header>
-
 <div class="container head">
 
 <div class="brand">
-<a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
-</a>
+<a href="index.html"><img src="logo-white.png"></a>
 </div>
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
 
 <div class="menu" id="mainMenu">
-
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
+<a href="inicijative.html">Иницијативе</a>
 <a href="doniraj.html">Подршка раду</a>
 <a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
+<a href="prijavi.html">Представка</a>
 </div>
-
 </div>
 
 </nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<h1>ПРЕДСТАВКА ГРАЂАНИНА</h1>
+
+<p>
+Преузмите, одштампајте, попуните и пошаљите на:<br>
+<b>iksan.snaga.pravde@gmail.com</b>
+</p>
+</section>
+
+<div class="container">
+
+<div class="card">
+<iframe src="OBRAZAC_PREDSTAVKA.GRADJAN.pdf"></iframe>
+</div>
+
+<div style="text-align:center">
+<a href="OBRAZAC_PREDSTAVKA.GRADJAN.pdf" target="_blank" class="btn btn-primary">
+ОДШТАМПАЈ ОБРАЗАЦ
+</a>
+</div>
+
+<h1 style="margin-top:40px">ПРАВИЛНИК О ПОСТУПАЊУ</h1>
+
+<div class="card">
+<iframe src="PRAVILNIK_PREDSTAVKE.pdf"></iframe>
+</div>
+
+<div style="text-align:center">
+<a href="PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="btn btn-dark">
+ОТВОРИ ПРАВИЛНИК
+</a>
+</div>
 
 </div>
 
-</header>
-
-<main class="container">
-
-<article class="card">
-
-<h2>Доставите информације</h2>
-
-<p class="info">
-Уколико имате сазнања о неправилностима, злоупотребама или повреди права,
-можете доставити основне информације путем овог формулара.
-Свака достављена информација може допринети бољем разумевању проблема
-и покретању иницијатива за заштиту права грађана.
-</p>
-
-<iframe
-name="hiddenFrame"
-style="display:none"
-onload="if(window._submitted){ window.location.href='hvala.html'; }">
-</iframe>
-
-<form
-id="prijava-form"
-action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-method="GET"
-target="hiddenFrame"
-accept-charset="UTF-8"
-onsubmit="window._submitted=true;">
-
-<label>Име и презиме (опционо)</label>
-<input type="text" id="ime_local">
-
-<label>Е-пошта (опционо)</label>
-<input type="email" id="email_local">
-
-<label>Тип неправилности</label>
-
-<select id="tip" required>
-<option value="">— изаберите —</option>
-<option>Поступак извршења</option>
-<option>Сумња на корупцију</option>
-<option>Повреда радних права</option>
-<option>Повреда људских права</option>
-<option>Друго</option>
-</select>
-
-<label>Опис догађаја</label>
-
-<textarea id="opis" required></textarea>
-
-<input type="hidden" name="ime" id="ime_send">
-<input type="hidden" name="email" id="email_send">
-<textarea name="poruka" id="poruka_send" hidden></textarea>
-
-<input type="text" name="website" style="display:none">
-
-<p id="status"></p>
-
-<button class="submit" type="submit">
-ПОШАЉИ ПОДАТКЕ
-</button>
-
-<p class="privacy">
-Достављени подаци користе се искључиво у сврху анализе пријављеног случаја
-и неће бити јавно објављени без сагласности пошиљаоца.
-</p>
-
-</form>
-
-</article>
-
 </main>
 
-<footer class="container" style="text-align:center;margin:30px 0">
-
-© 2025 Иксан • Снага правде — Сва права задржана.
-
+<footer>
+© 2025 Иксан • Снага правде
 </footer>
 
 <script>
 
 const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click',()=>{
-const isOpen=menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
-});
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
 }
 });
 
-document.addEventListener('keydown',(e)=>{
-if(e.key==='Escape'){
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-menuBtn.focus();
-}
+document.querySelectorAll('.btn').forEach(btn=>{
+btn.addEventListener('click',function(e){
+
+const ripple=document.createElement('span');
+ripple.classList.add('ripple');
+
+const rect=this.getBoundingClientRect();
+const size=this.offsetWidth;
+
+ripple.style.width=size+'px';
+ripple.style.height=size+'px';
+
+ripple.style.left=(e.clientX-rect.left-size/2)+'px';
+ripple.style.top=(e.clientY-rect.top-size/2)+'px';
+
+this.appendChild(ripple);
+
+setTimeout(()=>ripple.remove(),600);
+
 });
-
-const form=document.getElementById('prijava-form');
-const status=document.getElementById('status');
-
-form.addEventListener('submit',(e)=>{
-
-const tip=document.getElementById('tip');
-const opis=document.getElementById('opis');
-
-if(!tip.value || !opis.value.trim()){
-
-e.preventDefault();
-window._submitted=false;
-
-alert('Молимо попуните обавезна поља.');
-return;
-
-}
-
-const ime=document.getElementById('ime_local').value.trim();
-const email=document.getElementById('email_local').value.trim();
-
-const poruka=
-`ТИП: ${tip.value}\n\n`+
-`ОПИС:\n${opis.value}`;
-
-document.getElementById('ime_send').value=ime;
-document.getElementById('email_send').value=email;
-document.getElementById('poruka_send').value=poruka;
-
-status.textContent='Порука се шаље…';
-
 });
 
 </script>
