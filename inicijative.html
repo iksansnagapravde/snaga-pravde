@@ -13,7 +13,6 @@
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
 
@@ -25,7 +24,6 @@ color:#fff;
 font-family:"Times New Roman",serif;
 }
 
-/* CONTAINER */
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
@@ -57,10 +55,6 @@ font-weight:600;
 text-decoration:none;
 }
 
-.nav a:hover,.menu-btn:hover{
-background:rgba(255,255,255,0.1);
-}
-
 .menu{position:relative}
 
 .dropdown{
@@ -71,22 +65,9 @@ background:rgba(20,20,20,.95);
 border-radius:12px;
 padding:6px;
 display:none;
-min-width:250px;
 }
 
 .menu.open .dropdown{display:block}
-
-.dropdown a{
-display:block;
-padding:8px;
-color:#fff;
-text-decoration:none;
-border-radius:6px;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,0.1);
-}
 
 /* HERO */
 .hero{
@@ -97,7 +78,6 @@ text-align:center;
 h1{
 font-size:32px;
 margin-bottom:10px;
-text-shadow:0 0 20px rgba(255,255,255,0.3);
 }
 
 .sub{
@@ -120,15 +100,9 @@ padding:12px 26px;
 border-radius:40px;
 font-weight:700;
 text-transform:uppercase;
-cursor:pointer;
-transition:0.3s;
 text-decoration:none;
 display:inline-block;
-}
-
-.btn-primary{
-background:var(--gold);
-color:#000;
+transition:.3s;
 }
 
 .btn-dark{
@@ -137,15 +111,19 @@ color:#fff;
 border:1px solid rgba(255,255,255,.3);
 }
 
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
 .btn:hover{
 transform:translateY(-3px) scale(1.05);
 }
 
 /* CARD */
-.card-large{
+.card{
 margin-top:40px;
 background:rgba(20,20,20,0.6);
-backdrop-filter:blur(12px);
 border-radius:20px;
 padding:30px;
 border:1px solid rgba(255,255,255,0.15);
@@ -159,9 +137,8 @@ list-style:none;
 .goals li{
 padding:10px 0;
 border-bottom:1px solid rgba(255,255,255,0.08);
-color:#ddd;
+padding-left:15px;
 position:relative;
-padding-left:20px;
 }
 
 .goals li::before{
@@ -171,17 +148,16 @@ position:absolute;
 left:0;
 }
 
-/* GRID */
-.links-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+/* LAW GRID */
+.law-item{
+display:flex;
 gap:20px;
-margin-top:20px;
+margin-bottom:20px;
+align-items:center;
 }
 
-.link-item{
-display:block;
-margin-top:6px;
+.law-item p{
+max-width:400px;
 color:#ccc;
 font-size:14px;
 }
@@ -208,7 +184,6 @@ margin-top:40px;
 </div>
 
 <nav class="nav">
-
 <a href="index.html">Почетна</a>
 <a href="kontakt.html">Контакт</a>
 
@@ -217,16 +192,15 @@ margin-top:40px;
 
 <div class="dropdown">
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
+<a href="oblasti.html">Области</a>
 <a href="ciljevi.html">Циљеви</a>
 <a href="inicijative.html">Иницијативе</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prijavi.html">Представка грађана</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
+</div>
 </div>
 
-</div>
 </nav>
-
 </div>
 </header>
 
@@ -237,7 +211,7 @@ margin-top:40px;
 <h1>Реформа правосудног система</h1>
 
 <p class="sub">
-Иницијатива за увођење праведнијег и транспарентнијег правосудног система.
+Иницијатива за праведнији и транспарентнији систем.
 </p>
 
 <div class="cta-row">
@@ -253,59 +227,64 @@ margin-top:40px;
 <div class="container">
 
 <!-- ZAHTEVI -->
-<div class="card-large">
+<div class="card">
 
-<h2>Кључни правни захтеви</h2>
+<h2>Кључни захтеви</h2>
 
 <ul class="goals">
 
 <li><strong>УВОЂЕЊЕ НОВОГ ЗАКОНА О ИНСОЛВЕНТНОСТИ ФИЗИЧКИХ ЛИЦА</strong></li>
-<li>Измена и допуна Закона о извршењу и обезбеђењу</li>
-<li>Измена и допуна Закона о заштити конкуренције</li>
+<li>Измена закона о извршењу и обезбеђењу</li>
+<li>Измена закона о заштити конкуренције</li>
 <li>Јачање независности судства</li>
-<li>Повећање транспарентности рада судова</li>
-<li>Смањење трошкова судских и извршних поступака</li>
-<li>Ефикаснији и праведнији судски поступци</li>
-<li>Унапређење приступа правди за све грађане</li>
-<li>Дигитализација и убрзање поступака</li>
+<li>Повећање транспарентности</li>
+<li>Смањење трошкова поступака</li>
+<li>Ефикаснији поступци</li>
+<li>Приступ правди</li>
 
 </ul>
 
 </div>
 
 <!-- ZAKONI -->
-<div class="card-large">
+<div class="card">
 
-<h2>Закони и прописи</h2>
+<h2>Правни оквир</h2>
 
-<div class="links-grid">
-
-<div>
+<div class="law-item">
 <a class="btn btn-dark" href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">УСТАВ</a>
-<a class="link-item" href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">Отвори закон</a>
+<p>Највиши правни акт.</p>
 </div>
 
-<div>
+<div class="law-item">
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon-ratifikaciji-evropske-konvencije-ljudska-prava-osnovne-slobode.html" target="_blank">ЕВРОПСКА КОНВЕНЦИЈА</a>
+<p>Заштита људских права.</p>
+</div>
+
+<div class="law-item">
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon-o-opstem-upravnom-postupku.html" target="_blank">УПРАВНИ ПОСТУПАК</a>
+<p>Поступање органа.</p>
+</div>
+
+<div class="law-item">
 <a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">ПАРНИЧНИ ПОСТУПАК</a>
-<a class="link-item" href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">Отвори закон</a>
+<p>Судски спорови.</p>
 </div>
 
-<div>
-<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">ОБЛИГАЦИОНИ ОДНОСИ</a>
-<a class="link-item" href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">Отвори закон</a>
+<div class="law-item">
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">ОБЛИГАЦИЈЕ</a>
+<p>Уговори и обавезе.</p>
 </div>
 
-<div>
+<div class="law-item">
 <a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank">ИЗВРШЕЊЕ</a>
-<a class="link-item" href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank">Отвори закон</a>
-</div>
-
+<p>Наплата потраживања.</p>
 </div>
 
 </div>
 
 <!-- PREDMETI -->
-<div class="card-large">
+<div class="card">
 
 <h2>Праћење поступака</h2>
 
@@ -324,12 +303,12 @@ margin-top:40px;
 </div>
 
 <!-- DONACIJA -->
-<div class="card-large" style="text-align:center;">
+<div class="card" style="text-align:center;">
 
 <h2>Подржите рад</h2>
 
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-primary">
-ДОНИРАЈ ПУТЕМ PAYPAL-А
+ДОНИРАЈ
 </a>
 
 </div>
@@ -344,11 +323,9 @@ margin-top:40px;
 
 <script>
 const menu=document.getElementById('mainMenu');
-
 menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
 };
-
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
