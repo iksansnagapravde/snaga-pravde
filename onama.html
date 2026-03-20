@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>О удружењу — Иксан • Снага правде</title>
 
@@ -22,7 +23,7 @@ font-family:"Times New Roman";
 margin:0;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+.container{max-width:900px;margin:auto;padding:0 20px}
 
 /* HEADER DESNO */
 header{
@@ -94,35 +95,42 @@ color:#000;
 
 /* HERO */
 .hero{
-margin-top:30px;
+margin-top:40px;
+text-align:center;
 }
 
-.hero-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
+.hero h1{
+font-size:34px;
+margin-bottom:10px;
+text-shadow:0 0 15px rgba(255,255,255,.3);
 }
 
-.hero-media img{
-width:100%;
-border-radius:15px;
+.hero p{
+color:var(--ink);
+max-width:700px;
+margin:auto;
 }
 
 /* GRID */
 .grid{
 display:grid;
-gap:15px;
+gap:20px;
 grid-template-columns:repeat(2,1fr);
-margin-top:30px;
+margin-top:40px;
 }
 
 .card{
 background:rgba(0,0,0,0.6);
 padding:20px;
 border-radius:15px;
+backdrop-filter:blur(10px);
 }
 
 .card p{color:var(--ink)}
+
+.card h3{
+margin-bottom:8px;
+}
 
 /* IMPRESUM */
 .impresum{
@@ -134,7 +142,6 @@ border-radius:15px;
 
 /* MOBILE */
 @media(max-width:768px){
-.hero-grid{grid-template-columns:1fr}
 .grid{grid-template-columns:1fr}
 }
 
@@ -143,7 +150,6 @@ border-radius:15px;
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container head">
 
@@ -157,17 +163,16 @@ border-radius:15px;
 
 <div class="dropdown">
 
-<a href="onama.html">о Нама</a>
+<a href="onama.html">О нама</a>
 <a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Закони и прописи</a>
+<a href="doniraj.html">Подржи рад</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Представка</a>
+
+</div>
+
 </div>
 
 </nav>
@@ -177,17 +182,11 @@ border-radius:15px;
 
 <div class="container">
 
-<!-- 🔥 SVA DUGMAD -->
+<!-- DUGMAD -->
 <div class="top-buttons">
 
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
 ПОДРЖИ НАШ РАД
 </a>
@@ -197,24 +196,12 @@ border-radius:15px;
 <!-- HERO -->
 <div class="hero">
 
-<div class="hero-grid">
-
-<div>
-
 <h1>О удружењу Иксан</h1>
 
 <p>
 Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
 заштити достојанства грађана и развоју праведног друштва.
 </p>
-
-</div>
-
-<div class="hero-media">
-<img src="um.webp">
-</div>
-
-</div>
 
 </div>
 
@@ -241,34 +228,20 @@ border-radius:15px;
 <p>Одговор на неправде у систему.</p>
 </article>
 
-<!-- 🔥 NOVI BLOK -->
 <article class="card">
 <h3>Наш рад са грађанима</h3>
 
 <p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
 
-<p>
-Свакодневно смо присутни на <strong>Instagram, TikTok и Facebook</strong>,
-где објављујемо садржај о правима грађана и актуелним проблемима.
-</p>
+<p>Активни смо на Instagram, TikTok и Facebook.</p>
 
-<p>
-Организујемо <strong>уживо укључења</strong> и директну комуникацију са грађанима,
-где их информишемо и саветујемо.
-</p>
+<p>Организујемо уживо разговоре са грађанима.</p>
 
-<p>
-Грађане позивамо да нам се јаве и <strong>посете нашу канцеларију</strong>.
-</p>
+<p>Позивамо грађане да посете нашу канцеларију.</p>
 
-<p>
-Директно слушамо проблеме и <strong>повезујемо грађане са институцијама</strong>.
-</p>
+<p>Повезујемо грађане са институцијама.</p>
 
-<p>
-Позивамо све да попуне <strong>представку</strong>, на основу које
-предузимамо кораке у заштити њихових права.
-</p>
+<p>Позивамо да попуне представку ради заштите права.</p>
 
 </article>
 
