@@ -308,7 +308,45 @@ font-size:.9rem;
 margin-top:30px;
 background:var(--deepBlue);
 }
+/* 📱 MOBILE OPTIMIZACIJA */
+@media (max-width:768px){
 
+.hero-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+h1{
+font-size:22px;
+}
+
+.line2{
+font-size:18px;
+}
+
+.sub{
+font-size:15px;
+padding:0 10px;
+}
+
+.cta-row{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.btn{
+width:100%;
+max-width:280px;
+font-size:14px;
+padding:10px;
+}
+
+.hero-media{
+margin-top:10px;
+}
+
+}
 </style>
 </head>
 
