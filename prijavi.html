@@ -25,7 +25,11 @@ color:#fff;
 font-family:"Times New Roman",serif;
 }
 
+/* CONTAINER */
+
 .container{max-width:1150px;margin:auto;padding:0 20px}
+
+/* HEADER */
 
 header{
 position:sticky;
@@ -79,66 +83,82 @@ text-decoration:none;
 /* HERO */
 
 .hero{
-padding:30px 0;
+padding:40px 0;
 text-align:center;
 }
 
 h1{
-font-size:28px;
+font-size:30px;
 margin-bottom:10px;
+}
+
+.hero p{
+color:var(--ink);
+}
+
+/* GRID */
+
+.docs-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+margin-top:30px;
+}
+
+@media(min-width:700px){
+.docs-grid{
+grid-template-columns:1fr 1fr;
+}
+}
+
+/* CARD */
+
+.doc-card{
+display:block;
+padding:30px;
+border-radius:20px;
+background:rgba(20,20,20,0.65);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
+text-decoration:none;
+color:#fff;
+transition:0.3s;
+}
+
+.doc-card:hover{
+transform:translateY(-6px);
+box-shadow:0 25px 50px rgba(0,0,0,0.7);
+}
+
+.doc-card h2{
+margin-bottom:10px;
+font-size:22px;
+}
+
+.doc-card p{
+color:#dcdcdc;
+margin-bottom:20px;
 }
 
 /* BUTTON */
 
-.btn{
+.doc-btn{
 display:inline-block;
 padding:10px 20px;
 border-radius:40px;
+background:var(--gold);
+color:#000;
 font-weight:700;
-cursor:pointer;
-margin:6px;
-position:relative;
-overflow:hidden;
-text-decoration:none;
 }
 
-.btn-primary{background:var(--gold);color:#000}
-.btn-dark{background:#222;color:#fff}
-
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:scale(0.95)}
-
-/* RIPPLE */
-
-.btn span.ripple{
-position:absolute;
-border-radius:50%;
-transform:scale(0);
-animation:ripple 0.7s ease-out;
-background:radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.4) 40%, transparent 70%);
-pointer-events:none;
+.doc-btn.dark{
+background:#222;
+color:#fff;
+border:1px solid rgba(255,255,255,.3);
 }
 
-@keyframes ripple{
-to{transform:scale(4);opacity:0}
-}
-
-/* CONTENT */
-
-.card{
-background:rgba(20,20,20,.6);
-padding:20px;
-border-radius:16px;
-margin:20px 0;
-box-shadow:0 10px 30px rgba(0,0,0,.5);
-}
-
-iframe{
-width:100%;
-height:600px;
-border:none;
-border-radius:16px;
-}
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -187,33 +207,31 @@ font-size:14px;
 <h1>ПРЕДСТАВКА ГРАЂАНИНА</h1>
 
 <p>
-Преузмите, одштампајте, попуните и пошаљите на:<br>
-<b>iksan.snaga.pravde@gmail.com</b>
+Изаберите документ који желите да преузмете или прочитате.
 </p>
 </section>
 
 <div class="container">
 
-<div class="card">
-<iframe src="OBRAZAC_PREDSTAVKA.GRADJAN.pdf"></iframe>
-</div>
+<div class="docs-grid">
 
-<div style="text-align:center">
-<a href="OBRAZAC_PREDSTAVKA.GRADJAN.pdf" target="_blank" class="btn btn-primary">
-ОДШТАМПАЈ ОБРАЗАЦ
+<a href="OBRAZAC_PREDSTAVKA.GRADJAN.pdf" target="_blank" class="doc-card">
+<h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
+<p>
+Преузмите образац, попуните, потпишите и пошаљите на:<br><br>
+<b>iksan.snaga.pravde@gmail.com</b>
+</p>
+<span class="doc-btn">ОТВОРИ ДОКУМЕНТ</span>
 </a>
-</div>
 
-<h1 style="margin-top:40px">ПРАВИЛНИК О ПОСТУПАЊУ</h1>
-
-<div class="card">
-<iframe src="PRAVILNIK_PREDSTAVKE.pdf"></iframe>
-</div>
-
-<div style="text-align:center">
-<a href="PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="btn btn-dark">
-ОТВОРИ ПРАВИЛНИК
+<a href="PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="doc-card">
+<h2>ПРАВИЛНИК О ПОСТУПАЊУ</h2>
+<p>
+Прочитајте правила поступања по представкама грађана.
+</p>
+<span class="doc-btn dark">ПРОЧИТАЈ ПРАВИЛНИК</span>
 </a>
+
 </div>
 
 </div>
@@ -235,28 +253,6 @@ document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
-});
-
-document.querySelectorAll('.btn').forEach(btn=>{
-btn.addEventListener('click',function(e){
-
-const ripple=document.createElement('span');
-ripple.classList.add('ripple');
-
-const rect=this.getBoundingClientRect();
-const size=this.offsetWidth;
-
-ripple.style.width=size+'px';
-ripple.style.height=size+'px';
-
-ripple.style.left=(e.clientX-rect.left-size/2)+'px';
-ripple.style.top=(e.clientY-rect.top-size/2)+'px';
-
-this.appendChild(ripple);
-
-setTimeout(()=>ripple.remove(),600);
-
-});
 });
 
 </script>
