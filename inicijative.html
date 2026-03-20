@@ -171,12 +171,19 @@ position:absolute;
 left:0;
 }
 
-/* LINK GRID */
+/* GRID */
 .links-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 margin-top:20px;
+}
+
+.link-item{
+display:block;
+margin-top:6px;
+color:#ccc;
+font-size:14px;
 }
 
 /* FOOTER */
@@ -274,17 +281,23 @@ margin-top:40px;
 <div class="links-grid">
 
 <div>
-<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">Устав</a><br><br>
-<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">Парнични поступак</a><br><br>
-<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">Облигациони односи</a><br><br>
-<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank">Извршење</a>
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">УСТАВ</a>
+<a class="link-item" href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">Отвори закон</a>
 </div>
 
 <div>
-<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">Отвори</a><br><br>
-<a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">Отвори</a><br><br>
-<a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">Отвори</a><br><br>
-<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank">Отвори</a>
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">ПАРНИЧНИ ПОСТУПАК</a>
+<a class="link-item" href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">Отвори закон</a>
+</div>
+
+<div>
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">ОБЛИГАЦИОНИ ОДНОСИ</a>
+<a class="link-item" href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank">Отвори закон</a>
+</div>
+
+<div>
+<a class="btn btn-dark" href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank">ИЗВРШЕЊЕ</a>
+<a class="link-item" href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank">Отвори закон</a>
 </div>
 
 </div>
@@ -294,7 +307,7 @@ margin-top:40px;
 <!-- PREDMETI -->
 <div class="card-large">
 
-<h2>Праћење предмета</h2>
+<h2>Праћење поступака</h2>
 
 <div class="cta-row">
 
