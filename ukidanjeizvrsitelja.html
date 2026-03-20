@@ -6,10 +6,7 @@
 
 <title>Реформа система извршења — Иксан • Снага правде</title>
 
-<meta name="description" content="Иницијатива за реформу система извршења и унапређење заштите права грађана у поступцима принудне наплате.">
-
-<meta name="theme-color" content="#020c1b">
-<meta name="color-scheme" content="light">
+<meta name="description" content="Иницијатива за реформу система извршења и заштиту права грађана.">
 
 <link rel="icon" href="logo-white.png" type="image/png">
 
@@ -24,21 +21,14 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{height:100%}
-
 body{
 background:var(--deepBlue);
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
-font-size:110%;
-overflow-x:hidden;
 }
 
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-
-.container{max-width:1150px;margin:0 auto;padding:0 20px}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
 
@@ -52,187 +42,92 @@ border-bottom:1px solid rgba(255,255,255,.1);
 
 .head{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
-gap:12px;
+align-items:center;
 }
 
-.brand img{
-height:161px;
-border-radius:10px;
-}
+.brand img{height:150px;border-radius:10px}
 
-nav.nav{
-display:flex;
-gap:10px;
-}
+.nav{display:flex;gap:10px}
 
-.nav a.nav-link,.menu-btn{
-background:var(--deepBlue);
-color:#fff;
-padding:6px 9px;
-border-radius:8px;
+.nav a,.menu-btn{
+padding:6px 10px;
 border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+color:#fff;
 font-weight:600;
-font-size:0.9rem;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
 right:0;
+top:110%;
 background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
-min-width:280px;
 padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
 display:none;
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
-}
-
 /* HERO */
 
-.hero{padding:24px 0 0}
-
-.hero-grid{
-display:grid;
-gap:24px
+.hero{
+padding:40px 0;
+text-align:center;
 }
 
-@media(min-width:980px){
-.hero-grid{
-grid-template-columns:1.1fr .9fr
-}
-}
+h1{font-size:32px;margin-bottom:10px}
 
-h1{
-font-size:clamp(23px,3vw,33px);
-}
+.sub{color:var(--ink);max-width:700px;margin:auto}
 
-.sub{
-color:var(--ink);
-font-size:clamp(16px,2vw,18px);
-margin:8px 0 12px;
-max-width:780px
-}
-
-.hero-media{
-border-radius:16px;
-overflow:hidden;
-border:1px solid rgba(255,255,255,.15);
-aspect-ratio:16/9;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-}
-
-.hero-media img{
-width:100%;
-height:100%;
-object-fit:cover;
-opacity:.9
-}
-
-/* CTA */
+/* BUTTONS */
 
 .cta-row{
 display:flex;
-gap:8px;
-margin-top:12px;
+justify-content:center;
+gap:10px;
+margin-top:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:8px 18px;
+padding:10px 22px;
 border-radius:40px;
 font-weight:700;
-font-size:13px;
 text-transform:uppercase;
-cursor:pointer;
-box-shadow:0 3px 0 rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.4);
 }
 
-.btn-primary{
-background:var(--gold);
-color:var(--deepBlue)
-}
-
-.btn-dark{
-background:var(--deepBlue);
-color:#fff;
-border:1px solid rgba(255,255,255,.3)
-}
+.btn-primary{background:var(--gold);color:#000}
+.btn-dark{background:#222;color:#fff;border:1px solid rgba(255,255,255,.3)}
 
 /* CARDS */
 
-.split{margin-top:18px}
-
 .grid{
 display:grid;
-gap:14px;
-grid-template-columns:1fr
+gap:16px;
+margin-top:30px;
 }
 
 @media(min-width:900px){
-.grid{
-grid-template-columns:repeat(2,1fr)
-}
+.grid{grid-template-columns:repeat(2,1fr)}
 }
 
 .card{
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
-border-radius:var(--radius);
-padding:16px;
-box-shadow:0 14px 32px rgba(0,0,0,.35);
+background:rgba(255,255,255,.04);
+padding:18px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.15);
 }
 
-.card h3{
-margin-bottom:6px;
-font-size:20px;
-}
-
-.card p,.card li{
-color:var(--ink);
-line-height:1.75;
-}
-
-.card.full{
-grid-column:1/-1
-}
-
-.bottom-cta{
-display:flex;
-gap:8px;
-justify-content:center;
-margin-top:8px
-}
-
-/* FOOTER */
+.card.full{grid-column:1/-1}
 
 footer{
-border-top:1px solid rgba(255,255,255,.15);
 text-align:center;
-padding:24px 0;
-margin-top:30px;
+padding:30px;
+margin-top:40px;
 }
 
 </style>
@@ -245,166 +140,132 @@ margin-top:30px;
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
+<img src="logo-white.png">
 </a>
 </div>
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
 
 <div class="menu" id="mainMenu">
-
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
-</div>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
+</div>
 </nav>
+
 </div>
 </header>
 
 <main>
 
 <section class="hero">
-<div class="container hero-grid">
-
-<div>
 
 <h1>Реформа система извршења</h1>
 
 <p class="sub">
-Систем извршења представља важан део правног поретка.
-Циљ ове иницијативе је унапређење транспарентности,
-правичности и институционалне контроле у поступцима
-принудне наплате, уз јачање заштите права грађана.
+Циљ иницијативе је успостављање правичног система извршења
+који штити права грађана и спречава злоупотребе.
 </p>
 
 <div class="cta-row">
-<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
-</div>
+
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНА
+</a>
+
+<a href="doniraj.html" class="btn btn-primary">
+ПОДРЖИ НАШ РАД
+</a>
 
 </div>
 
-<div class="hero-media">
-<img src="magn.webp" alt="Реформа система извршења">
-</div>
-
-</div>
 </section>
-
-<section class="split">
 
 <div class="container grid">
 
-<article class="card full">
+<div class="card full">
 
-<h3>Потреба за унапређењем система извршења</h3>
-
-<p>
-Поступци извршења треба да обезбеде ефикасну наплату
-потраживања, али истовремено морају гарантовати
-заштиту основних права грађана и пропорционалност мера.
-</p>
-
-</article>
-
-<article class="card">
-
-<h3>Кључни принципи реформе</h3>
-
-<ul>
-<li>Јасна правила и транспарентност поступака.</li>
-<li>Пропорционалност трошкова извршења.</li>
-<li>Ефикасна правна заштита странака у поступку.</li>
-</ul>
-
-</article>
-
-<article class="card">
-
-<h3>Заштита грађана</h3>
-
-<ul>
-<li>Заштита минималних примања и основних животних услова.</li>
-<li>Право на правовремено обавештавање о поступку.</li>
-<li>Ефикасни механизми жалбе и судске контроле.</li>
-</ul>
-
-</article>
-
-<article class="card full">
-
-<h3>Правна сигурност и институционална одговорност</h3>
+<h3>Потреба за реформом система извршења</h3>
 
 <p>
-Циљ реформе је успостављање система извршења
-који истовремено штити права поверилаца
-и гарантује достојанство и правну сигурност грађана.
+Постојећи систем извршења у Републици Србији показује озбиљне недостатке.
+Предмети могу остати у миру и до девет година и једанаест месеци,
+што омогућава злоупотребе и енорман раст дугова.
 </p>
 
-<div class="bottom-cta">
-<a class="btn btn-primary" href="doniraj.html">ПОДРЖИ РАД</a>
-<a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
-<a class="btn btn-dark" href="prijavi.html">ДОСТАВИ ПОДАТКЕ</a>
-</div>
+<p>
+Суд не улази у суштину предмета већ потврђује оно што поверилац достави,
+чиме се смањује заштита грађана.
+</p>
 
-</article>
+<p>
+Јавни извршитељи, као приватни субјекти,
+имају интерес профита што у пракси доводи до сукоба интереса.
+</p>
+
+<p>
+Грађани често нису адекватно обавештени,
+па немају могућност правне заштите.
+</p>
+
+<p>
+Дугови временом расту и више од десет пута,
+због камата и трошкова.
+</p>
 
 </div>
 
-</section>
+<div class="card">
+
+<h3>Закон о инсолвентности физичких лица</h3>
+
+<p>
+Неопходно је увођење закона који омогућава грађанима
+контролисано решавање дугова и нови почетак.
+</p>
+
+<ul>
+<li>Ограничавање раста дугова</li>
+<li>Заштита грађана</li>
+<li>Правична наплата</li>
+<li>Европски стандарди</li>
+</ul>
+
+</div>
+
+</div>
 
 </main>
 
 <footer>
-<div class="container">
-© 2025 Иксан • Снага правде — Сва права задржана.
-</div>
+© 2025 Иксан • Снага правде
 </footer>
 
 <script>
-
 const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click',()=>{
-const isOpen=menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
-});
-
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
 }
 });
-
-document.addEventListener('keydown',(e)=>{
-if(e.key==='Escape'){
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-menuBtn.focus();
-}
-});
-
 </script>
 
 </body>
