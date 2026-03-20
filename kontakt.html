@@ -1,152 +1,147 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Контакт — Иксан • Снага правде</title>
 
-<meta name="description" content="Контакт и подршка грађанима — пријавите неправду или затражите савет.">
-
-<meta name="theme-color" content="#020c1b">
-
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
 
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
---ink:#dcdcdc;
 }
-
-*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-background:var(--deepBlue);
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman",serif;
-line-height:1.7
+font-family:"Times New Roman";
+margin:0;
 }
 
-a{color:inherit;text-decoration:none}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
-.container{
-max-width:1150px;
-margin:0 auto;
-padding:0 20px
-}
-
-/* HEADER */
-
+/* HEADER DESNO */
 header{
 position:sticky;
 top:0;
-z-index:100;
-background:var(--deepBlue);
-border-bottom:1px solid rgba(255,255,255,.1)
+background:rgba(0,0,0,0.7);
+border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .head{
 display:flex;
-align-items:center;
-justify-content:space-between;
-padding:4px 0 0;
-gap:12px;
-flex-wrap:nowrap
+justify-content:flex-end;
+padding:10px 0;
 }
 
-.brand{display:flex;align-items:center}
-
-.brand img{
-height:150px;
-border-radius:10px
-}
-
-nav.nav{
+.nav{
 display:flex;
-align-items:center;
 gap:10px;
-padding-right:8px
 }
 
-.nav a.nav-link,.menu-btn{
-background:var(--deepBlue);
-color:#fff;
-padding:6px 9px;
+.nav a,.menu-btn{
+padding:6px 10px;
+border:1px solid rgba(255,255,255,.3);
 border-radius:8px;
-border:1px solid rgba(255,255,255,.2);
-font-weight:600;
-font-size:0.9rem;
-line-height:1;
-white-space:nowrap
+color:#fff;
+text-decoration:none;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:110%;
 right:0;
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
-border-radius:12px;
-min-width:280px;
-padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none
+background:#111;
+padding:8px;
+border-radius:10px;
+display:none;
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
+/* GORE DUGMAD */
+.top-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:12px 20px;
+border-radius:25px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
+text-align:center;
+}
+
+.btn-dark{
+background:#222;
 color:#fff;
-font-weight:600
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06)
+.btn-gold{
+background:var(--gold);
+color:#000;
 }
 
-/* CONTACT */
+/* GRID */
+.main-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+}
 
-.contact-card{
-max-width:760px;
-margin:30px auto;
-padding:16px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:16px
+/* LEVO */
+.left{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+}
+
+/* DESNO */
+.right{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
 }
 
 form{
 display:grid;
-gap:12px
-}
-
-label{
-font-weight:700
+gap:12px;
 }
 
 input,textarea{
-padding:12px;
+padding:10px;
 border-radius:10px;
-border:1px solid rgba(255,255,255,.25);
-background:rgba(255,255,255,.08);
-color:#fff
+border:1px solid rgba(255,255,255,.3);
+background:rgba(255,255,255,.1);
+color:#fff;
 }
 
 .submit{
-background:#d3a451;
-color:#020c1b;
-font-weight:700;
-padding:10px;
-border-radius:30px;
+background:var(--gold);
+color:#000;
 border:none;
-cursor:pointer
+padding:10px;
+border-radius:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.main-grid{
+grid-template-columns:1fr;
+}
 }
 
 </style>
@@ -154,39 +149,25 @@ cursor:pointer
 
 <body>
 
+<!-- HEADER -->
 <header>
-
 <div class="container head">
-
-<div class="brand">
-<a href="index.html">
-<img src="logo-white.png" alt="ИКСАН">
-</a>
-</div>
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html" aria-current="page">Контакт</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
-
-<button class="menu-btn">Мени ▾</button>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
 </div>
@@ -194,88 +175,85 @@ cursor:pointer
 </nav>
 
 </div>
-
 </header>
 
-<main class="container">
+<div class="container">
 
-<article class="contact-card">
+<!-- 🔥 SVA DUGMAD -->
+<div class="top-buttons">
+
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+ПОДРЖИ НАШ РАД
+</a>
+
+</div>
+
+<!-- GRID -->
+<div class="main-grid">
+
+<!-- LEVO -->
+<div class="left">
+
+<h2>Контакт и подршка</h2>
+
+<p>
+Уколико имате питања, потребна вам је правна помоћ или желите да пријавите неправду,
+можете нас контактирати путем форме.
+</p>
+
+<p>
+Сви подаци се третирају поверљиво.
+</p>
+
+</div>
+
+<!-- DESNO -->
+<div class="right">
 
 <h2>Контакт форма</h2>
 
 <iframe name="hiddenFrame" style="display:none"></iframe>
 
-<form id="kontakt-form"
-autocomplete="on"
-novalidate
-action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
+<form action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
 method="GET"
-target="hiddenFrame"
-accept-charset="UTF-8"
-onsubmit="window._submitted=true;">
+target="hiddenFrame">
 
-<label>Име и презиме</label>
-<input type="text" name="ime" required>
+<input type="text" name="ime" placeholder="Име и презиме" required>
 
-<label>Е-пошта</label>
-<input type="email" name="email" required>
+<input type="email" name="email" placeholder="Е-пошта" required>
 
-<label>Порука</label>
-<textarea name="poruka" required></textarea>
+<textarea name="poruka" placeholder="Порука" required></textarea>
 
-<input type="text" name="website" style="display:none">
-
-<button class="submit" type="submit">Пошаљи</button>
-
-<p id="status" style="color:#cfe1ff"></p>
+<button class="submit">Пошаљи</button>
 
 </form>
 
-</article>
+</div>
 
-</main>
+</div>
 
-<footer class="container" style="text-align:center;margin:30px 0">
-
-© 2025 Иксан • Снага правде
-
-</footer>
+</div>
 
 <script>
+const menu=document.getElementById('menu');
 
-const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click',()=>{
-const isOpen=menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
-});
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
 }
 });
-
-document.addEventListener('keydown',(e)=>{
-if(e.key==='Escape'){
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-menuBtn.focus();
-}
-});
-
-const form=document.getElementById('kontakt-form');
-const status=document.getElementById('status');
-
-form.addEventListener('submit',()=>{
-status.textContent='Шаљем поруку…';
-setTimeout(()=>{
-window.location.href='hvala.html';
-},1200);
-});
-
 </script>
 
 </body>
