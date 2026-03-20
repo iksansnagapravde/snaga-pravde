@@ -4,107 +4,86 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Циљеви — Иксан • Снага правде</title>
+<title>Иницијативе — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
-
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
 --radius:16px;
 --ink:#dcdcdc;
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%; overflow-x:hidden;}
 
 body{
-background:url('justice-bg.jpg') center 25%/cover no-repeat fixed;
+background:var(--deepBlue);
 color:#fff;
 font-family:"Times New Roman",serif;
+line-height:1.7;
+font-size:110%;
 }
 
-/* CONTAINER */
-.container{max-width:1150px;margin:auto;padding:0 20px}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block;height:auto}
+
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
 /* HEADER */
+
 header{
 position:sticky;
 top:0;
 z-index:100;
-backdrop-filter:blur(6px);
+background:var(--deepBlue);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:6px 0;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px;
 }
 
-.brand img{
-height:120px;
-border-radius:10px;
-}
+.brand img{height:140px;border-radius:10px}
 
-.nav{
-display:flex;
-gap:10px;
-}
+.nav{display:flex;gap:10px}
 
 .nav a,.menu-btn{
-padding:6px 10px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:8px;
+background:var(--deepBlue);
 color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
 font-weight:600;
-text-decoration:none;
-}
-
-.nav a:hover,.menu-btn:hover{
-background:rgba(255,255,255,0.1);
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
+top:calc(100% + 8px);
 right:0;
-top:110%;
-background:rgba(20,20,20,.95);
+background:var(--deepBlue);
+border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 padding:6px;
 display:none;
-min-width:250px;
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:8px;
-color:#fff;
-text-decoration:none;
-border-radius:6px;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,0.1);
-}
-
 /* HERO */
-.hero{
-padding:50px 0;
-text-align:center;
-animation:fadeIn 1s ease;
-}
+
+.hero{padding:30px 0;text-align:center}
 
 h1{
-font-size:32px;
+font-size:28px;
 margin-bottom:10px;
-text-shadow:0 0 20px rgba(255,255,255,0.3);
 }
 
 .sub{
@@ -114,28 +93,24 @@ margin:auto;
 }
 
 /* CTA */
+
 .cta-row{
 display:flex;
 justify-content:center;
-gap:12px;
-margin-top:25px;
+gap:10px;
+margin-top:15px;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:12px 26px;
+padding:10px 18px;
 border-radius:40px;
 font-weight:700;
-text-transform:uppercase;
-cursor:pointer;
-transition:0.3s;
-text-decoration:none;
 }
 
 .btn-primary{
 background:var(--gold);
 color:#000;
-box-shadow:0 0 20px rgba(211,164,81,0.4);
 }
 
 .btn-dark{
@@ -144,65 +119,64 @@ color:#fff;
 border:1px solid rgba(255,255,255,.3);
 }
 
-.btn:hover{
-transform:translateY(-3px) scale(1.05);
-box-shadow:0 0 25px rgba(255,255,255,0.3);
-}
-
 /* CARD */
-.card-large{
-margin-top:40px;
-background:rgba(20,20,20,0.6);
-backdrop-filter:blur(12px);
-border-radius:20px;
-padding:30px;
-border:1px solid rgba(255,255,255,0.15);
-box-shadow:0 20px 50px rgba(0,0,0,0.7);
-animation:fadeUp 0.8s ease;
+
+.card{
+margin-top:30px;
+background:rgba(255,255,255,0.04);
+padding:20px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.15);
 }
 
-.card-large h2{
-text-align:center;
-margin-bottom:20px;
-}
-
-/* LISTA */
-.goals{
-list-style:none;
-}
-
-.goals li{
-padding:10px 0;
-border-bottom:1px solid rgba(255,255,255,0.08);
+.card p{
+margin-bottom:10px;
 color:#ddd;
-position:relative;
-padding-left:20px;
 }
 
-.goals li::before{
-content:"●";
-color:var(--gold);
-position:absolute;
-left:0;
+/* LINKS */
+
+.links-section{margin-top:30px}
+
+.links-grid{
+display:grid;
+gap:20px;
 }
 
-/* ANIMACIJE */
-@keyframes fadeUp{
-from{opacity:0;transform:translateY(40px)}
-to{opacity:1;transform:translateY(0)}
+@media(min-width:900px){
+.links-grid{grid-template-columns:1fr 1fr 1fr;}
 }
 
-@keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
+.links-box{
+background:rgba(255,255,255,0.03);
+border:1px solid rgba(255,255,255,.15);
+border-radius:16px;
+padding:18px;
+}
+
+.links-box h3{
+margin-bottom:12px;
+text-align:center;
+}
+
+.link-item{
+display:block;
+padding:8px;
+margin-bottom:6px;
+border-radius:8px;
+background:rgba(255,255,255,0.04);
+}
+
+.link-item:hover{
+background:rgba(255,255,255,0.1);
 }
 
 /* FOOTER */
+
 footer{
 text-align:center;
 padding:30px;
-margin-top:40px;
-font-size:14px;
+margin-top:30px;
 }
 
 </style>
@@ -210,18 +184,16 @@ font-size:14px;
 
 <body>
 
-<!-- 🔥 HEADER UBACEN -->
 <header>
 <div class="container head">
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
+<img src="logo-white.png">
 </a>
 </div>
 
 <nav class="nav">
-
 <a href="index.html">Почетна</a>
 <a href="kontakt.html">Контакт</a>
 
@@ -229,19 +201,17 @@ font-size:14px;
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
+<a href="oblasti.html">Области</a>
 <a href="ciljevi.html">Циљеви</a>
-<a href="inicijative.html">Иницијативе и прописи</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Представка грађана</a>
-
-</div>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
+</div>
 </nav>
+
 </div>
 </header>
 
@@ -249,50 +219,58 @@ font-size:14px;
 
 <section class="hero">
 
-<h1>Циљеви удружења</h1>
+<h1>Иницијатива за реформу система извршења</h1>
 
 <p class="sub">
-Основни правци нашег деловања у борби за правду, достојанство и сигурност сваког грађанина.
+Покренута иницијатива за јачање судске контроле и заштиту грађана.
 </p>
 
 <div class="cta-row">
-
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="doniraj.html" class="btn btn-primary">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="dokumenta.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
 </div>
 
 </section>
 
 <div class="container">
 
-<div class="card-large">
+<div class="card">
 
-<h2>Циљеви</h2>
+<h3>Образложење иницијативе</h3>
 
-<ul class="goals">
+<p>Мала потраживања прерастају у велике обавезе.</p>
+<p>Приватни извршитељи доводе до несразмере.</p>
+<p>Потребна је реформа система.</p>
 
-<li>Заштита грађанских, људских и економских права</li>
-<li>Борба против корупције и злоупотреба у институцијама</li>
-<li>Унапређење транспарентности рада јавних институција</li>
-<li>Правна подршка грађанима и привреди</li>
-<li>Заштита странака у извршним поступцима</li>
-<li>Заштита права у кривичним поступцима</li>
-<li>Промоција економске правде</li>
-<li>Истраживање незаконито стечене имовине</li>
-<li>Предлагање измена закона</li>
-<li>Организовање јавних трибина и протеста</li>
-<li>Праћење изборних процеса</li>
-<li>Развој демократије и владавине права</li>
-<li>Хуманитарни рад и помоћ угроженима</li>
+</div>
 
-</ul>
+<!-- 🔥 TRI BLOKA -->
 
+<div class="links-section">
+
+<div class="links-grid">
+
+<div class="links-box">
+<h3>ЗАКОНИ</h3>
+<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="link-item">Устав</a>
+<a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="link-item">Парнични поступак</a>
+<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="link-item">Извршење</a>
+</div>
+
+<div class="links-box">
+<h3>ТОК ПРЕДМЕТА</h3>
+<a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="link-item">Судови</a>
+<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" target="_blank" class="link-item">Правосуђе</a>
+</div>
+
+<div class="links-box">
+<h3>ИНСТИТУЦИЈЕ</h3>
+<a href="https://mpravde.gov.rs/" target="_blank" class="link-item">Министарство правде</a>
+<a href="https://www.ustavni.sud.rs/" target="_blank" class="link-item">Уставни суд</a>
+</div>
+
+</div>
 </div>
 
 </div>
@@ -303,11 +281,8 @@ font-size:14px;
 © 2025 Иксан • Снага правде
 </footer>
 
-<!-- 🔥 MENU SCRIPT -->
 <script>
-
 const menu=document.getElementById('mainMenu');
-
 menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
 };
@@ -317,7 +292,6 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
 </script>
 
 </body>
