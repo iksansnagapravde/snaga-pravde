@@ -6,10 +6,6 @@
 
 <title>Подржи рад — Иксан • Снага правде</title>
 
-<meta name="description" content="Подржите рад удружења грађана Иксан — Снага правде. Донације омогућавају правну помоћ, истраживања и иницијативе у заштити права грађана." />
-
-<meta name="theme-color" content="#020c1b">
-
 <link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
@@ -17,202 +13,196 @@
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
---line:rgba(255,255,255,.15);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
-background:var(--deepBlue);
-color:#ffffff;
+background:url('justice-bg.jpg') center 25%/cover no-repeat fixed;
+color:#fff;
 font-family:"Times New Roman",serif;
-line-height:1.7;
-font-size:110%;
 }
 
-a{color:inherit;text-decoration:none}
-
-.container{
-max-width:1150px;
-margin:0 auto;
-padding:0 20px
-}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
-
 header{
 position:sticky;
 top:0;
 z-index:100;
-background:var(--deepBlue);
-border-bottom:1px solid rgba(255,255,255,.1)
+backdrop-filter:blur(8px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:6px 0;
 }
 
-.brand img{
-height:150px;
-border-radius:10px
-}
+.brand img{height:120px;border-radius:10px}
 
-nav.nav{
-display:flex;
-gap:10px
-}
+.nav{display:flex;gap:10px}
 
-.nav a.nav-link,.menu-btn{
-background:var(--deepBlue);
-color:#fff;
-padding:6px 9px;
-border-radius:8px;
+.nav a,.menu-btn{
+padding:6px 10px;
 border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+color:#fff;
 font-weight:600;
-font-size:0.9rem;
+text-decoration:none;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
 right:0;
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
+top:110%;
+background:rgba(20,20,20,.95);
 border-radius:12px;
+padding:6px;
+display:none;
 min-width:260px;
-padding:7px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:10px 12px;
-border-radius:8px;
-font-weight:600
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,.06)
-}
-
 /* HERO */
-
 .hero{
-padding:40px 0
+padding:50px 0;
+text-align:center;
 }
 
 .hero h1{
 font-size:32px;
-margin-bottom:10px
+margin-bottom:10px;
 }
 
 .hero p{
 color:var(--ink);
-max-width:720px
+max-width:700px;
+margin:auto;
 }
 
-/* SECTION */
-
-.section{
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.15);
-border-radius:var(--radius);
-padding:24px;
-margin-top:20px
+/* CTA */
+.cta-row{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:25px;
+flex-wrap:wrap;
 }
 
-h2{
-text-align:center;
-margin-bottom:14px
-}
-
-/* UPLATNICA */
-
-.uplatnica{
-max-width:520px;
-margin:0 auto;
-border:1px solid rgba(255,255,255,.25);
-border-radius:12px;
-background:rgba(255,255,255,.05);
-overflow:hidden
-}
-
-.u-head{
-padding:12px;
-border-bottom:1px solid rgba(255,255,255,.2);
-font-weight:700
-}
-
-.u-grid{
-display:grid;
-gap:8px;
-padding:12px;
-grid-template-columns:1fr 1fr
-}
-
-.u-field{
-display:grid;
-gap:4px
-}
-
-.u-label{
-color:var(--ink);
+.btn{
+padding:12px 26px;
+border-radius:40px;
 font-weight:700;
-font-size:.8rem
+text-transform:uppercase;
+cursor:pointer;
+text-decoration:none;
 }
 
-.u-value{
-border:1px solid rgba(255,255,255,.25);
-background:rgba(255,255,255,.08);
-border-radius:6px;
-padding:8px
+.btn-primary{
+background:var(--gold);
+color:#000;
 }
 
-.u-wide{
-grid-column:1/-1
+.btn-dark{
+background:#222;
+color:#fff;
+border:1px solid rgba(255,255,255,.3);
 }
 
-/* IMPRESUM */
+/* GRID */
+.donation-grid{
+display:grid;
+gap:25px;
+margin-top:40px;
+}
 
-.impresum{
-margin-top:20px;
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.15);
-border-radius:12px;
+@media(min-width:900px){
+.donation-grid{
+grid-template-columns:1fr 1fr;
+}
+}
+
+/* ZIRO (MANJI) */
+.bank-box{
 padding:20px;
-max-width:750px;
-margin-left:auto;
-margin-right:auto;
+border-radius:16px;
+background:rgba(20,20,20,0.6);
+border:1px solid rgba(255,255,255,.15);
 }
 
-.impresum h3{
+.bank-box h3{
+margin-bottom:10px;
 text-align:center;
+}
+
+.bank-box p{
+color:#ccc;
+margin-bottom:6px;
+font-size:14px;
+}
+
+/* PAYPAL (GLAVNI) */
+.paypal-box{
+padding:35px;
+border-radius:20px;
+background:linear-gradient(135deg,#0a2540,#003087);
+box-shadow:0 25px 60px rgba(0,0,0,0.7);
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.paypal-box::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:radial-gradient(circle, rgba(255,255,255,0.1), transparent 60%);
+transform:rotate(20deg);
+}
+
+.paypal-box h2{
 margin-bottom:10px;
 }
 
-.impresum p{
-color:var(--ink);
-margin-bottom:6px;
+.paypal-box p{
+color:#e0e0e0;
+margin-bottom:20px;
+}
+
+/* PAYPAL BUTTON */
+.paypal-btn{
+display:inline-block;
+padding:14px 30px;
+border-radius:40px;
+background:#ffc439;
+color:#000;
+font-weight:800;
+font-size:16px;
+text-decoration:none;
+box-shadow:0 0 25px rgba(255,196,57,0.6);
+transition:0.3s;
+}
+
+.paypal-btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 40px rgba(255,196,57,0.9);
 }
 
 /* FOOTER */
-
 footer{
-border-top:1px solid var(--line);
 text-align:center;
-padding:22px 0;
-margin-top:30px;
-color:var(--ink)
+padding:30px;
+margin-top:40px;
 }
 
 </style>
@@ -224,130 +214,94 @@ color:var(--ink)
 <div class="container head">
 
 <div class="brand">
-<a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
-</a>
+<a href="index.html"><img src="logo-white.png"></a>
 </div>
 
 <nav class="nav">
-
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
 
 <div class="menu" id="mainMenu">
-
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
 <a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
 <a href="doniraj.html">Подршка раду</a>
 <a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
-</div>
+<a href="prijavi.html">Представка</a>
 </div>
 
+</div>
 </nav>
 </div>
 </header>
 
-<main class="container">
+<main>
 
 <section class="hero">
-
 <h1>Подржите рад удружења</h1>
 
 <p>
-Вашом донацијом подржавате рад удружења Иксан — Снага правде,
-правну подршку грађанима, истраживања и иницијативе
-за унапређење правде и институционалне одговорности.
+Вашом донацијом помажете борбу за правду и заштиту грађана.
 </p>
 
-</section>
-
-<section class="section">
-
-<h2>Подаци за донацију</h2>
-
-<div class="uplatnica">
-
-<div class="u-head">
-УПЛАТНИЦА
-</div>
-
-<div class="u-grid">
-
-<div class="u-field">
-<div class="u-label">Прималац</div>
-<div class="u-value">Удружење ИКСАН — Снага правде</div>
-</div>
-
-<div class="u-field">
-<div class="u-label">Сврха уплате</div>
-<div class="u-value">Донација</div>
-</div>
-
-<div class="u-field">
-<div class="u-label">Број рачуна</div>
-<div class="u-value">340-1000345580-18</div>
-</div>
-
-<div class="u-field">
-<div class="u-label">Банка</div>
-<div class="u-value">Erste Bank</div>
-</div>
-
-<div class="u-field u-wide">
-<div class="u-label">Напомена</div>
-<div class="u-value">Добровољна донација за рад удружења</div>
-</div>
-
-</div>
-
+<div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
 </section>
 
-<section class="impresum">
+<div class="container">
 
-<h3>Основни подаци о удружењу</h3>
+<div class="donation-grid">
 
-<p><strong>Седиште:</strong> Војводе Степе 127, спрат II, стан 7, Вождовац, Београд</p>
-<p><strong>Е-пошта:</strong> iksan.snaga.pravde@gmail.com</p>
-<p><strong>Матични број (МБ):</strong> 28406312</p>
-<p><strong>ПИБ:</strong> 115357260</p>
-<p><strong>Статус:</strong> Непрофитна и хуманитарна организација</p>
+<!-- BANK -->
+<div class="bank-box">
+<h3>Уплата на рачун</h3>
 
-</section>
+<p><b>Прималац:</b> ИКСАН</p>
+<p><b>Рачун:</b> 340-1000345580-18</p>
+<p><b>Банка:</b> Erste Bank</p>
+<p><b>Сврха:</b> Донација</p>
+
+</div>
+
+<!-- PAYPAL -->
+<div class="paypal-box">
+
+<h2>PayPal донација</h2>
+
+<p>
+Брзо и сигурно подржите наш рад путем PayPal платформе.
+</p>
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="paypal-btn">
+ДОНИРАЈ ПУТЕМ PAYPAL-a
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </main>
 
 <footer>
-
-<div class="container">
-
-© 2025 Иксан • Снага правде — Сва права задржана.
-
-</div>
-
+© 2025 Иксан • Снага правде
 </footer>
 
 <script>
 
 const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
 
-menuBtn.addEventListener('click',()=>{
+menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
-});
+};
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
