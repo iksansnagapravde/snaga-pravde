@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>Независност и правичност судског система — Иксан • Снага правде</title>
 
-<meta name="description" content="Иницијатива за јачање независности судства, заштиту права грађана и унапређење правичности кривичног поступка у Републици Србији.">
-
-<meta name="theme-color" content="#020c1b">
-<meta name="color-scheme" content="light">
+<meta name="description" content="Иницијатива за јачање независности судства, заштиту права грађана и унапређење правичности кривичног поступка.">
 
 <link rel="icon" href="logo-white.png" type="image/png">
 
@@ -24,26 +22,14 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{height:100%}
-
 body{
 background:var(--deepBlue);
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
-font-size:110%;
-overflow-x:hidden;
 }
 
-a{color:inherit;text-decoration:none}
-
-img{max-width:100%;display:block}
-
-.container{
-max-width:1150px;
-margin:0 auto;
-padding:0 20px
-}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
 
@@ -57,134 +43,75 @@ border-bottom:1px solid rgba(255,255,255,.1);
 
 .head{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
-gap:12px
+align-items:center;
 }
 
-.brand img{
-height:161px;
-border-radius:10px
-}
+.brand img{height:150px;border-radius:10px}
 
-nav.nav{
-display:flex;
-gap:10px
-}
+.nav{display:flex;gap:10px}
 
-.nav a.nav-link,.menu-btn{
-background:var(--deepBlue);
-color:#fff;
-padding:6px 9px;
-border-radius:8px;
+.nav a,.menu-btn{
+padding:6px 10px;
 border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+color:#fff;
 font-weight:600;
-font-size:0.9rem
+text-decoration:none;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
 right:0;
+top:110%;
 background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
-min-width:280px;
 padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none
+display:none;
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,.06)
-}
-
 /* HERO */
 
-.hero{padding:24px 0 0}
-
-.hero-grid{
-display:grid;
-gap:24px
+.hero{
+padding:40px 0;
+text-align:center;
 }
 
-@media(min-width:980px){
-.hero-grid{grid-template-columns:1.1fr .9fr}
-}
+h1{font-size:32px;margin-bottom:10px}
 
-h1{
-font-size:clamp(23px,3vw,33px);
-}
-
-.sub{
-color:var(--ink);
-opacity:.95;
-font-size:clamp(16px,2vw,18px);
-margin:8px 0 12px;
-max-width:780px;
-}
-
-.hero-media{
-border-radius:16px;
-overflow:hidden;
-border:1px solid rgba(255,255,255,.15);
-aspect-ratio:16/9;
-display:flex;
-align-items:center;
-justify-content:center;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-}
-
-.hero-media img{
-width:100%;
-height:100%;
-object-fit:cover;
-opacity:.9
-}
+.sub{color:var(--ink);max-width:700px;margin:auto}
 
 /* BUTTONS */
 
 .cta-row{
 display:flex;
-gap:8px;
-margin-top:12px;
+justify-content:center;
+gap:10px;
+margin-top:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:8px 18px;
+padding:10px 22px;
 border-radius:40px;
 font-weight:700;
-font-size:13px;
 text-transform:uppercase;
 cursor:pointer;
-box-shadow:0 3px 0 rgba(0,0,0,.4),0 6px 18px rgba(0,0,0,.4);
 }
 
-.btn-primary{background:var(--gold);color:var(--deepBlue)}
-.btn-dark{background:var(--deepBlue);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.btn-primary{background:var(--gold);color:#000}
+.btn-dark{background:#222;color:#fff;border:1px solid rgba(255,255,255,.3)}
 
 /* CARDS */
 
-.split{margin-top:18px}
-
 .grid{
 display:grid;
-gap:14px;
-grid-template-columns:1fr
+gap:16px;
+margin-top:30px;
 }
 
 @media(min-width:900px){
@@ -192,37 +119,18 @@ grid-template-columns:1fr
 }
 
 .card{
-background:var(--deepBlue);
-border:1px solid rgba(255,255,255,.2);
-border-radius:var(--radius);
-padding:16px;
-box-shadow:0 14px 32px rgba(0,0,0,.35);
-}
-
-.card h3{
-margin-bottom:6px;
-font-size:20px;
-}
-
-.card p,.card li{
-color:var(--ink);
-line-height:1.75;
+background:rgba(255,255,255,.04);
+padding:18px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.15);
 }
 
 .card.full{grid-column:1/-1}
 
-.bottom-cta{
-display:flex;
-gap:8px;
-justify-content:center;
-margin-top:8px;
-}
-
 footer{
-border-top:1px solid rgba(255,255,255,.15);
 text-align:center;
-padding:24px 0;
-margin-top:30px;
+padding:30px;
+margin-top:40px;
 }
 
 </style>
@@ -231,187 +139,123 @@ margin-top:30px;
 <body>
 
 <header>
-
 <div class="container head">
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
+<img src="logo-white.png">
 </a>
 </div>
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
 
 <div class="menu" id="mainMenu">
-
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
 </div>
-
 </nav>
 
 </div>
-
 </header>
 
 <main>
 
 <section class="hero">
-<div class="container hero-grid">
-
-<div>
 
 <h1>Независност и правичност судског система</h1>
 
 <p class="sub">
 Правна држава почива на независном судству и правичном поступку.
-Циљ ове иницијативе је јачање институционалне независности судова,
-заштита права грађана у кривичним поступцима
-и унапређење стандарда правичности и пропорционалности казнене политике.
+Циљ је заштита грађана и јачање поверења у правосудни систем.
 </p>
 
 <div class="cta-row">
-<a href="prijavi.html" class="btn btn-dark">ДОСТАВИ СЛУЧАЈ</a>
-<a href="prikljucise.html" class="btn btn-dark">ПРИКЉУЧИ СЕ</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ РАД</a>
-</div>
+
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНА
+</a>
+
+<a href="doniraj.html" class="btn btn-primary">
+ПОДРЖИ НАШ РАД
+</a>
 
 </div>
 
-<div class="hero-media">
-<img src="uni.webp" alt="Независност судства">
-</div>
-
-</div>
 </section>
 
-<section class="split">
 <div class="container grid">
 
-<article class="card full">
-
-<h3>Заштита права грађана у кривичном поступку</h3>
-
+<div class="card full">
+<h3>Заштита права грађана</h3>
 <p>
-Правична примена закона подразумева да се свака мера ограничења слободе
-примењује само када је неопходна и уз јасно образложене правне разлоге.
-Циљ је јачање стандарда правичног поступка и спречавање
-неоправданог задржавања лица у притвору.
+Јачање правичног поступка и спречавање злоупотреба у кривичним процесима.
 </p>
+</div>
 
-</article>
-
-<article class="card">
-
-<h3>Реформа института притвора</h3>
-
+<div class="card">
+<h3>Реформа притвора</h3>
 <ul>
-<li>Јасни критеријуми за одређивање притвора.</li>
-<li>Редовна судска контрола трајања мере.</li>
-<li>Поштовање права на суђење у разумном року.</li>
+<li>Јасни услови одређивања</li>
+<li>Контрола трајања</li>
+<li>Разуман рок</li>
 </ul>
-
-</article>
-
-<article class="card">
-
-<h3>Хумани услови извршења казне</h3>
-
-<p>
-Поштовање достојанства лица лишених слободе представља
-један од основних стандарда савремених правних система.
-Потребно је унапређење услова у установама за извршење казне
-у складу са међународним стандардима.
-</p>
-
-</article>
-
-<article class="card">
-
-<h3>Ресоцијализација и повратак у друштво</h3>
-
-<p>
-Након извршења казне важно је обезбедити услове за
-успешну ресоцијализацију и поновно укључивање у друштво.
-То је један од кључних механизама спречавања поновног вршења кривичних дела.
-</p>
-
-</article>
-
-<article class="card full">
-
-<h3>Пропорционалност казнене политике</h3>
-
-<p>
-Казнена политика треба да буде заснована на принципу
-пропорционалности и индивидуалне процене сваког случаја.
-Усклађивање законодавства са европским правним стандардима
-доприноси јачању поверења грађана у правосудни систем.
-</p>
-
-<div class="bottom-cta">
-<a class="btn btn-primary" href="doniraj.html">ПОДРЖИ РАД</a>
-<a class="btn btn-dark" href="prikljucise.html">ПРИКЉУЧИ СЕ</a>
-<a class="btn btn-dark" href="prijavi.html">ДОСТАВИ ПОДАТКЕ</a>
 </div>
 
-</article>
+<div class="card">
+<h3>Хумани услови</h3>
+<p>
+Унапређење услова у установама за извршење казне.
+</p>
+</div>
+
+<div class="card">
+<h3>Ресоцијализација</h3>
+<p>
+Повратак лица у друштво након казне.
+</p>
+</div>
+
+<div class="card full">
+<h3>Пропорционалност казни</h3>
+<p>
+Усклађивање казнене политике са европским стандардима.
+</p>
+</div>
 
 </div>
-</section>
 
 </main>
 
 <footer>
-<div class="container">
-© 2025 Иксан • Снага правде — Сва права задржана.
-</div>
+© 2025 Иксан • Снага правде
 </footer>
 
 <script>
-
 const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click',()=>{
-const isOpen=menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
-});
-
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
 }
 });
-
-document.addEventListener('keydown',(e)=>{
-if(e.key==='Escape'){
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-menuBtn.focus();
-}
-});
-
 </script>
 
 </body>
