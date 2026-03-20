@@ -6,12 +6,11 @@
 
 <title>Подржи рад — Иксан • Снага правде</title>
 
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
 
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
@@ -19,183 +18,150 @@
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
-background:url('justice-bg.jpg') center 25%/cover no-repeat fixed;
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+.container{max-width:1100px;margin:auto;padding:0 20px}
 
 /* HEADER */
 header{
 position:sticky;
 top:0;
-z-index:100;
-backdrop-filter:blur(8px);
-border-bottom:1px solid rgba(255,255,255,.1);
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .head{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:6px 0;
+padding:10px 0;
 }
 
-.brand img{height:120px;border-radius:10px}
+.brand img{height:120px}
 
 .nav{display:flex;gap:10px}
 
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.2);
+border:1px solid rgba(255,255,255,.3);
 border-radius:8px;
 color:#fff;
-font-weight:600;
 text-decoration:none;
 }
 
+/* MENU */
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-right:0;
 top:110%;
-background:rgba(20,20,20,.95);
-border-radius:12px;
-padding:6px;
+right:0;
+background:#111;
+border-radius:10px;
+padding:8px;
 display:none;
-min-width:260px;
+min-width:250px;
 }
 
 .menu.open .dropdown{display:block}
 
+.dropdown a{
+display:block;
+padding:8px;
+}
+
 /* HERO */
 .hero{
-padding:50px 0;
 text-align:center;
+margin-top:40px;
 }
 
 .hero h1{
-font-size:32px;
-margin-bottom:10px;
+font-size:34px;
+text-shadow:0 0 15px rgba(255,255,255,.3);
 }
 
 .hero p{
 color:var(--ink);
-max-width:700px;
-margin:auto;
+max-width:600px;
+margin:10px auto;
 }
 
-/* CTA */
+/* CTA BUTTONS */
 .cta-row{
 display:flex;
 justify-content:center;
 gap:12px;
-margin-top:25px;
+margin-top:20px;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:12px 26px;
-border-radius:40px;
-font-weight:700;
-text-transform:uppercase;
-cursor:pointer;
+padding:12px 24px;
+border-radius:30px;
+font-weight:bold;
 text-decoration:none;
 }
 
-.btn-primary{
-background:var(--gold);
-color:#000;
-}
-
-.btn-dark{
-background:#222;
-color:#fff;
-border:1px solid rgba(255,255,255,.3);
-}
+.btn-dark{background:#222;color:#fff}
+.btn-gold{background:var(--gold);color:#000}
 
 /* GRID */
-.donation-grid{
+.grid{
 display:grid;
 gap:25px;
 margin-top:40px;
 }
 
 @media(min-width:900px){
-.donation-grid{
-grid-template-columns:1fr 1fr;
-}
+.grid{grid-template-columns:1fr 1.2fr}
 }
 
-/* ZIRO (MANJI) */
-.bank-box{
+/* BANK */
+.bank{
+background:rgba(0,0,0,0.6);
 padding:20px;
-border-radius:16px;
-background:rgba(20,20,20,0.6);
-border:1px solid rgba(255,255,255,.15);
+border-radius:15px;
 }
 
-.bank-box h3{
-margin-bottom:10px;
-text-align:center;
-}
+.bank h3{text-align:center;margin-bottom:10px}
 
-.bank-box p{
-color:#ccc;
-margin-bottom:6px;
-font-size:14px;
-}
+.bank p{color:#ccc;font-size:14px}
 
-/* PAYPAL (GLAVNI) */
-.paypal-box{
-padding:35px;
-border-radius:20px;
+/* PAYPAL */
+.paypal{
 background:linear-gradient(135deg,#0a2540,#003087);
-box-shadow:0 25px 60px rgba(0,0,0,0.7);
+padding:40px;
+border-radius:20px;
 text-align:center;
-position:relative;
-overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,.7);
 }
 
-.paypal-box::before{
-content:"";
-position:absolute;
-top:-50%;
-left:-50%;
-width:200%;
-height:200%;
-background:radial-gradient(circle, rgba(255,255,255,0.1), transparent 60%);
-transform:rotate(20deg);
-}
+.paypal h2{margin-bottom:10px}
 
-.paypal-box h2{
-margin-bottom:10px;
-}
-
-.paypal-box p{
-color:#e0e0e0;
-margin-bottom:20px;
-}
+.paypal p{color:#ddd;margin-bottom:20px}
 
 /* PAYPAL BUTTON */
 .paypal-btn{
 display:inline-block;
-padding:14px 30px;
+padding:16px 35px;
 border-radius:40px;
 background:#ffc439;
 color:#000;
-font-weight:800;
-font-size:16px;
+font-weight:900;
+font-size:18px;
 text-decoration:none;
 box-shadow:0 0 25px rgba(255,196,57,0.6);
-transition:0.3s;
+transition:.3s;
 }
 
 .paypal-btn:hover{
 transform:scale(1.08);
-box-shadow:0 0 40px rgba(255,196,57,0.9);
+box-shadow:0 0 40px rgba(255,196,57,1);
 }
 
 /* FOOTER */
@@ -218,52 +184,53 @@ margin-top:40px;
 </div>
 
 <nav class="nav">
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
 
-<div class="menu" id="mainMenu">
-<button class="menu-btn">Мени ▾</button>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
+
+<div class="dropdown">
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Закони</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
 </div>
+
 </nav>
 </div>
 </header>
 
-<main>
+<main class="container">
 
 <section class="hero">
-<h1>Подржите рад удружења</h1>
+
+<h1>Подржите наш рад</h1>
 
 <p>
-Вашом донацијом помажете борбу за правду и заштиту грађана.
+Вашом донацијом директно помажете заштиту грађана
+и борбу за праведнији систем.
 </p>
 
 <div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА</a>
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+ДОНИРАЈ
+</a>
 </div>
 
 </section>
 
-<div class="container">
+<div class="grid">
 
-<div class="donation-grid">
+<div class="bank">
 
-<!-- BANK -->
-<div class="bank-box">
 <h3>Уплата на рачун</h3>
 
 <p><b>Прималац:</b> ИКСАН</p>
@@ -273,20 +240,17 @@ margin-top:40px;
 
 </div>
 
-<!-- PAYPAL -->
-<div class="paypal-box">
+<div class="paypal">
 
 <h2>PayPal донација</h2>
 
 <p>
-Брзо и сигурно подржите наш рад путем PayPal платформе.
+Најбржи начин да подржите наш рад.
 </p>
 
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="paypal-btn">
 ДОНИРАЈ ПУТЕМ PAYPAL-a
 </a>
-
-</div>
 
 </div>
 
@@ -299,8 +263,7 @@ margin-top:40px;
 </footer>
 
 <script>
-
-const menu=document.getElementById('mainMenu');
+const menu=document.getElementById('menu');
 
 menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
@@ -311,7 +274,6 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
 </script>
 
 </body>
