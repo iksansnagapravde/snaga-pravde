@@ -1,144 +1,135 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Прикључите се иницијативи — Иксан • Снага правде</title>
+<title>Прикључите се — Иксан</title>
 
-<meta name="description" content="Прикључите се иницијативи за унапређење правде, институционалне одговорности и заштите права грађана.">
-
-<meta name="theme-color" content="#1f1f1f">
-
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
 
+:root{
+--gold:#d3a451;
+--ink:#dcdcdc;
+}
+
 body{
-background:#1f1f1f;
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman",serif
+font-family:"Times New Roman";
+margin:0;
 }
 
-.container{
-max-width:1150px;
-margin:0 auto;
-padding:0 16px
-}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
-
+/* HEADER DESNO */
 header{
 position:sticky;
 top:0;
-z-index:100;
-background:#1f1f1f;
-border-bottom:1px solid rgba(255,255,255,.1)
+background:rgba(0,0,0,0.7);
+border-bottom:1px solid rgba(255,255,255,.2);
 }
 
 .head{
 display:flex;
-align-items:center;
-justify-content:space-between;
-padding:4px 0 0;
-gap:12px
+justify-content:flex-end;
+padding:10px 0;
 }
 
-.brand img{
-height:161px;
-border-radius:10px
-}
-
-nav.nav{
+.nav{
 display:flex;
-gap:10px
+gap:10px;
 }
 
-.nav a.nav-link,.menu-btn{
-background:#1f1f1f;
-color:#fff;
-padding:6px 9px;
+.nav a,.menu-btn{
+padding:6px 10px;
+border:1px solid rgba(255,255,255,.3);
 border-radius:8px;
-border:1px solid rgba(255,255,255,.2);
-font-weight:600;
-font-size:0.9rem
+color:#fff;
+text-decoration:none;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:110%;
 right:0;
-background:#1f1f1f;
-border:1px solid rgba(255,255,255,.2);
-border-radius:12px;
-min-width:280px;
-padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none
+background:#111;
+padding:8px;
+border-radius:10px;
+display:none;
 }
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600
+/* TOP BUTTONS */
+.top-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+flex-wrap:wrap;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06)
+.btn{
+padding:12px 20px;
+border-radius:25px;
+font-weight:bold;
+text-decoration:none;
+display:inline-block;
 }
 
-/* FORM */
+.btn-dark{background:#222;color:#fff;}
+.btn-gold{background:var(--gold);color:#000;}
 
-.card{
-border:1px solid rgba(255,255,255,.2);
-border-radius:16px;
-padding:18px;
-margin:24px 0
-}
-
-form{
+/* GRID */
+.main-grid{
 display:grid;
-gap:12px
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
 }
 
-label{
-font-weight:700
+/* LEVO */
+.left{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
 }
+
+/* DESNO */
+.right{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+}
+
+form{display:grid;gap:12px}
 
 input,select,textarea{
-width:100%;
-padding:12px;
+padding:10px;
 border-radius:10px;
-border:1px solid rgba(255,255,255,.25);
-background:rgba(255,255,255,.08);
-color:#fff
-}
-
-textarea{
-min-height:120px
+border:1px solid rgba(255,255,255,.3);
+background:rgba(255,255,255,.1);
+color:#fff;
 }
 
 .submit{
-background:#d3a451;
-color:#1f1f1f;
-font-weight:800;
-padding:12px;
+background:var(--gold);
+color:#000;
 border:none;
-border-radius:40px;
-cursor:pointer
+padding:12px;
+border-radius:25px;
+font-weight:bold;
+cursor:pointer;
 }
 
-.info{
-color:#dcdcdc;
-opacity:.9;
-margin-bottom:14px
+/* MOBILE */
+@media(max-width:768px){
+.main-grid{grid-template-columns:1fr}
 }
 
 </style>
@@ -146,39 +137,25 @@ margin-bottom:14px
 
 <body>
 
+<!-- HEADER -->
 <header>
-
 <div class="container head">
-
-<div class="brand">
-<a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
-</a>
-</div>
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
-
-<button class="menu-btn">Мени ▾</button>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">О удружењу</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе и предлози</a>
-<a href="doniraj.html">Подршка раду</a>
-<a href="prikljucise.html">Сарадња</a>
-<a href="prijavi.html">Доставите информације</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
 </div>
@@ -186,21 +163,53 @@ margin-bottom:14px
 </nav>
 
 </div>
-
 </header>
 
-<main class="container">
+<div class="container">
 
-<article class="card">
+<!-- 🔥 SVA DUGMAD -->
+<div class="top-buttons">
+
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+ПОДРЖИ НАШ РАД
+</a>
+
+</div>
+
+<!-- GRID -->
+<div class="main-grid">
+
+<!-- LEVO -->
+<div class="left">
 
 <h2>Прикључите се иницијативи</h2>
 
-<p class="info">
-Уколико желите да подржите рад иницијативе Иксан – Снага правде,
-можете оставити своје контакт податке.
-Пријављени учесници могу бити обавештавани о активностима,
-јавним иницијативама и могућностима за сарадњу.
+<p>
+Позивамо све грађане да се укључе у рад удружења Иксан.
 </p>
+
+<p>
+Можете учествовати кроз волонтерски рад, правну подршку,
+истраживање или медијску активност.
+</p>
+
+<p>
+Пријављени учесници биће обавештавани о свим активностима,
+иницијативама и могућностима сарадње.
+</p>
+
+</div>
+
+<!-- DESNO FORMA -->
+<div class="right">
 
 <iframe name="hiddenFrame" style="display:none"
 onload="if(window._submitted){ window.location.href='hvala.html'; }">
@@ -209,54 +218,38 @@ onload="if(window._submitted){ window.location.href='hvala.html'; }">
 <form id="join-form"
 action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
 method="GET"
-target="hiddenFrame"
-accept-charset="UTF-8"
-novalidate>
+target="hiddenFrame">
 
-<label for="ime">Име и презиме</label>
-<input type="text" id="ime">
-
-<label for="email">Е-пошта *</label>
-<input type="email" id="email" required>
-
-<label for="telefon">Телефон</label>
-<input type="tel" id="telefon">
-
-<label for="opstina">Град / општина</label>
-<input type="text" id="opstina">
-
-<label for="interes">Област интересовања</label>
+<input type="text" id="ime" placeholder="Име и презиме">
+<input type="email" id="email" placeholder="Е-пошта *" required>
+<input type="tel" id="telefon" placeholder="Телефон">
+<input type="text" id="opstina" placeholder="Град / општина">
 
 <select id="interes">
-<option value="">— изаберите —</option>
+<option value="">Област интересовања</option>
 <option>Волонтерски рад</option>
-<option>Истраживање и анализа</option>
 <option>Правна подршка</option>
-<option>Медији и комуникација</option>
+<option>Истраживање</option>
+<option>Медији</option>
 </select>
-
-<label for="nacin">Начин учешћа</label>
 
 <select id="nacin">
-<option value="">— изаберите —</option>
-<option>Повремено учешће</option>
-<option>Редовно учешће</option>
-<option>Пројектна сарадња</option>
+<option value="">Начин учешћа</option>
+<option>Повремено</option>
+<option>Редовно</option>
+<option>Пројектно</option>
 </select>
 
-<label for="poruka_local">Порука</label>
-<textarea id="poruka_local"></textarea>
+<textarea id="poruka_local" placeholder="Порука"></textarea>
 
 <label>
 <input type="checkbox" id="saglasnost">
-Сагласан/на сам са условима приватности и обраде података
+Сагласан сам са обрадом података
 </label>
 
 <input type="hidden" name="ime" id="ime_send">
 <input type="hidden" name="email" id="email_send">
 <textarea name="poruka" id="poruka_send" hidden></textarea>
-
-<input type="text" name="website" style="display:none">
 
 <p id="status"></p>
 
@@ -266,36 +259,22 @@ novalidate>
 
 </form>
 
-</article>
+</div>
 
-</main>
+</div>
 
-<footer class="container" style="text-align:center;margin:30px 0">
-© 2025 Иксан • Снага правде — Сва права задржана.
-</footer>
+</div>
 
 <script>
+const menu=document.getElementById('menu');
 
-const menu=document.getElementById('mainMenu');
-const menuBtn=menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click',()=>{
-const isOpen=menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded',isOpen?'true':'false');
-});
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-}
-});
-
-document.addEventListener('keydown',(e)=>{
-if(e.key==='Escape'){
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-menuBtn.focus();
 }
 });
 
@@ -304,44 +283,24 @@ const status = document.getElementById('status');
 
 form.addEventListener('submit', (e) => {
 
-const email = document.getElementById('email');
-const sag = document.getElementById('saglasnost');
-
 if (!email.value.trim()) {
 e.preventDefault();
-window._submitted=false;
-status.textContent='⚠️ Молимо унесите е-пошту.';
-email.focus();
+status.textContent='Унесите е-пошту';
 return;
 }
 
-if (!sag.checked) {
+if (!saglasnost.checked) {
 e.preventDefault();
-window._submitted=false;
-status.textContent='⚠️ Потребна је сагласност за обраду података.';
+status.textContent='Потребна је сагласност';
 return;
 }
 
-const poruka =
-`ПРИЈАВА ЗА САРАДЊУ\n\n` +
-`Име: ${ime.value || '-'}\n` +
-`Е-пошта: ${email.value}\n` +
-`Телефон: ${telefon.value || '-'}\n` +
-`Град: ${opstina.value || '-'}\n` +
-`Интересовање: ${interes.value || '-'}\n` +
-`Начин учешћа: ${nacin.value || '-'}\n\n` +
-`Порука:\n${poruka_local.value || '-'}`;
+poruka_send.value =
+`Име: ${ime.value}\nEmail: ${email.value}`;
 
-ime_send.value = ime.value || '';
-email_send.value = email.value;
-poruka_send.value = poruka;
-
-window._submitted = true;
-
-status.textContent = 'Порука се шаље…';
+window._submitted=true;
 
 });
-
 </script>
 
 </body>
