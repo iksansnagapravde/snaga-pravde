@@ -1,4 +1,4 @@
-[07:37, 20. 3. 2026.] Дејан Тадић: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
 <meta charset="utf-8">
@@ -27,75 +27,19 @@
 html,body{height:100%}
 
 body{
-background:var(--deepBlue);
-col…
-[07:41, 20. 3. 2026.] Дејан Тадић: <!DOCTYPE html>
-<html lang="sr-Cyrl-RS">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+margin:0;
+min-height:100vh;
 
-<title>Иксан – Снага правде | Иницијатива за реформу система извршења</title>
+background:
+linear-gradient(rgba(2,12,27,0.85), rgba(2,12,27,0.95)),
+url('justice-bg.jpg') center center / cover no-repeat fixed;
 
-<meta name="description" content="Удружење грађана Иксан – Снага правде. Иницијативе за реформу система извршења, заштиту уставних права грађана и увођење института личне инсолвентности у Републици Србији.">
-
-<meta name="theme-color" content="#020c1b">
-<meta name="color-scheme" content="light">
-
-<link rel="icon" href="logo-white.png" type="image/png">
-
-<style>
-
-:root{
---deepBlue:#1f1f1f;
---gold:#d3a451;
---radius:16px;
---ink:#dcdcdc;
-}
-
-*{box-sizing:border-box;margin:0;padding:0}
-
-html,body{height:100%}
-
-body{
-background:var(--deepBlue);
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
 -webkit-font-smoothing:antialiased;
 text-rendering:optimizeLegibility;
 font-size:110%;
-position:relative;
-overflow-x:hidden;
-}
-
-/* POZADINA PREKO CELOG SAJTA */
-body::before{
-content:"";
-position:fixed;
-top:-4%;
-left:-4%;
-width:108%;
-height:108%;
-background:
-linear-gradient(rgba(2,12,27,.18), rgba(2,12,27,.34)),
-url('justice-bg.jpg') center center / cover no-repeat;
-z-index:-2;
-transform:translate3d(0,0,0) scale(1.02);
-will-change:transform;
-pointer-events:none;
-}
-
-/* BLAGI STAKLENI ODSJAJ, BISTAR */
-body::after{
-content:"";
-position:fixed;
-inset:0;
-background:
-linear-gradient(to bottom, rgba(255,255,255,.04), rgba(255,255,255,.015)),
-radial-gradient(circle at 50% 20%, rgba(255,255,255,.08), transparent 42%);
-z-index:-1;
-pointer-events:none;
 }
 
 a{color:inherit;text-decoration:none}
@@ -107,10 +51,8 @@ header{
 position:sticky;
 top:0;
 z-index:100;
-background:rgba(31,31,31,.38);
+background:var(--deepBlue);
 border-bottom:1px solid rgba(255,255,255,.1);
-backdrop-filter:saturate(120%);
--webkit-backdrop-filter:saturate(120%);
 }
 
 .head{
@@ -147,7 +89,7 @@ padding-right:8px;
 }
 
 .nav a.nav-link, .menu-btn{
-background:rgba(31,31,31,.42);
+background:var(--deepBlue);
 color:#fff;
 padding:6px 9px;
 border-radius:8px;
@@ -175,7 +117,7 @@ outline-offset:2px
 position:absolute;
 top:calc(100% + 8px);
 right:0;
-background:rgba(31,31,31,.58);
+background:var(--deepBlue);
 border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 min-width:280px;
@@ -259,7 +201,7 @@ white-space:nowrap;
 .btn-primary{background:var(--gold);color:var(--deepBlue)}
 
 .btn-dark{
-background:rgba(31,31,31,.5);
+background:var(--deepBlue);
 color:#fff;
 border:1px solid rgba(255,255,255,.3)
 }
@@ -270,7 +212,7 @@ border:1px solid rgba(255,255,255,.3)
 border-radius:16px;
 overflow:hidden;
 border:1px solid rgba(255,255,255,.15);
-background:rgba(31,31,31,.30);
+background:var(--deepBlue);
 aspect-ratio:16/9;
 display:flex;
 align-items:center;
@@ -298,7 +240,7 @@ grid-template-columns:1fr
 }
 
 .card{
-background:rgba(31,31,31,.36);
+background:var(--deepBlue);
 border:1px solid rgba(255,255,255,.2);
 border-radius:var(--radius);
 padding:16px;
@@ -340,7 +282,7 @@ text-align:center;
 padding:24px 0;
 font-size:.9rem;
 margin-top:30px;
-background:rgba(31,31,31,.34);
+background:var(--deepBlue);
 }
 
 </style>
@@ -523,56 +465,6 @@ menuBtn.focus();
 }
 
 });
-
-/* SAMO PARALLAX POZADINA */
-let targetX = 0;
-let targetY = 0;
-let currentX = 0;
-let currentY = 0;
-
-document.addEventListener('mousemove', (e) => {
-const moveX = (e.clientX / window.innerWidth - 0.5) * 18;
-const moveY = (e.clientY / window.innerHeight - 0.5) * 18;
-targetX = -moveX;
-targetY = -moveY;
-});
-
-function animateBg(){
-currentX += (targetX - currentX) * 0.06;
-currentY += (targetY - currentY) * 0.06;
-document.body.style.setProperty('--bg-x', currentX + 'px');
-document.body.style.setProperty('--bg-y', currentY + 'px');
-document.body.style.setProperty('--bg-transform', translate3d(${currentX}px, ${currentY}px, 0) scale(1.02));
-requestAnimationFrame(animateBg);
-}
-
-animateBg();
-
-/* primena transformacije na pseudo-element nije direktna iz JS, pa ubacujemo stil dinamički */
-const styleEl = document.createElement('style');
-document.head.appendChild(styleEl);
-
-function updateDynamicBg(){
-styleEl.textContent = `
-body::before{
-content:"";
-position:fixed;
-top:-4%;
-left:-4%;
-width:108%;
-height:108%;
-background:
-linear-gradient(rgba(2,12,27,.18), rgba(2,12,27,.34)),
-url('justice-bg.jpg') center center / cover no-repeat;
-z-index:-2;
-transform:${getComputedStyle(document.body).getPropertyValue('--bg-transform') || 'translate3d(0,0,0) scale(1.02)'};
-will-change:transform;
-pointer-events:none;
-}
-`;
-requestAnimationFrame(updateDynamicBg);
-}
-updateDynamicBg();
 
 </script>
 
