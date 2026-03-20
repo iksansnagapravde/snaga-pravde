@@ -37,6 +37,59 @@ backdrop-filter:blur(8px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
+.head{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:6px 0;
+}
+
+.brand img{
+height:120px;
+border-radius:10px;
+}
+
+.nav{
+display:flex;
+gap:10px;
+}
+
+.nav a,.menu-btn{
+padding:6px 10px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+color:#fff;
+font-weight:600;
+text-decoration:none;
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+right:0;
+top:110%;
+background:rgba(20,20,20,.95);
+border-radius:12px;
+padding:6px;
+display:none;
+min-width:250px;
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:8px;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,0.1);
+}
+
 /* HERO */
 .hero{
 padding:50px 0;
@@ -92,20 +145,6 @@ transform:translateY(-3px) scale(1.03);
 box-shadow:0 0 25px rgba(255,255,255,0.3);
 }
 
-/* RIPPLE */
-.btn span.ripple{
-position:absolute;
-border-radius:50%;
-transform:scale(0);
-animation:ripple 0.7s ease-out;
-background:radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
-pointer-events:none;
-}
-
-@keyframes ripple{
-to{transform:scale(4);opacity:0}
-}
-
 /* GRID */
 .docs-grid{
 display:grid;
@@ -128,37 +167,12 @@ border:1px solid rgba(255,255,255,0.15);
 box-shadow:0 20px 50px rgba(0,0,0,0.6);
 text-decoration:none;
 color:#fff;
-position:relative;
-overflow:hidden;
 transition:0.4s;
-animation:fadeUp 0.8s ease forwards;
-}
-
-.doc-card::before{
-content:"";
-position:absolute;
-top:-50%;
-left:-50%;
-width:200%;
-height:200%;
-background:radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
-transform:rotate(25deg);
 }
 
 .doc-card:hover{
 transform:translateY(-8px) scale(1.02);
 box-shadow:0 30px 70px rgba(0,0,0,0.8);
-border-color:rgba(255,255,255,0.3);
-}
-
-.doc-card h2{
-margin-bottom:10px;
-font-size:22px;
-}
-
-.doc-card p{
-color:#ddd;
-margin-bottom:20px;
 }
 
 /* BUTTON */
@@ -177,17 +191,6 @@ color:#fff;
 border:1px solid rgba(255,255,255,.3);
 }
 
-/* ANIMACIJE */
-@keyframes fadeUp{
-from{opacity:0;transform:translateY(40px)}
-to{opacity:1;transform:translateY(0)}
-}
-
-@keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
-}
-
 /* FOOTER */
 footer{
 text-align:center;
@@ -199,6 +202,41 @@ font-size:14px;
 </head>
 
 <body>
+
+<!-- ✅ HEADER -->
+<header>
+<div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png">
+</a>
+</div>
+
+<nav class="nav">
+
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
+
+<div class="menu" id="mainMenu">
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+
+<a href="onama.html">О удружењу</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html">Подршка раду</a>
+<a href="prikljucise.html">Сарадња</a>
+<a href="prijavi.html">Представка</a>
+
+</div>
+</div>
+
+</nav>
+</div>
+</header>
 
 <main>
 
@@ -220,7 +258,8 @@ font-size:14px;
 
 <div class="docs-grid">
 
-<a href="OBRAZAC_PREDСТАВКА_GRADJAN.pdf" target="_blank" class="doc-card">
+<!-- 🔥 OVO JE ISPRAVLJENO -->
+<a href="./OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
 <h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
 <p>
 Преузмите образац, попуните, потпишите и пошаљите на:<br><br>
@@ -229,7 +268,7 @@ font-size:14px;
 <span class="doc-btn">ОТВОРИ ДОКУМЕНТ</span>
 </a>
 
-<a href="PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="doc-card">
+<a href="./PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="doc-card">
 <h2>ПРАВИЛНИК О ПОСТУПАЊУ</h2>
 <p>
 Прочитајте правила поступања по представкама грађана.
@@ -249,26 +288,16 @@ font-size:14px;
 
 <script>
 
-/* RIPPLE */
-document.querySelectorAll('.btn').forEach(btn=>{
-btn.addEventListener('click',function(e){
+const menu=document.getElementById('mainMenu');
 
-const ripple=document.createElement('span');
-ripple.classList.add('ripple');
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
 
-const rect=this.getBoundingClientRect();
-const size=this.offsetWidth;
-
-ripple.style.width=size+'px';
-ripple.style.height=size+'px';
-ripple.style.left=(e.clientX-rect.left-size/2)+'px';
-ripple.style.top=(e.clientY-rect.top-size/2)+'px';
-
-this.appendChild(ripple);
-
-setTimeout(()=>ripple.remove(),600);
-
-});
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
 });
 
 </script>
