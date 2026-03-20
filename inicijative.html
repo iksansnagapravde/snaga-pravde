@@ -60,25 +60,15 @@ display:none;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:6px;
-}
-
-/* TOP BUTTONS */
-.top-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:30px;
-}
-
+/* BUTTONS */
 .btn{
-padding:12px 25px;
-border-radius:30px;
+padding:12px 20px;
+border-radius:25px;
 font-weight:bold;
 text-decoration:none;
-display:inline-block;
+display:block;
+margin-bottom:10px;
+text-align:center;
 }
 
 .btn-dark{
@@ -91,6 +81,14 @@ background:#d3a451;
 color:#000;
 }
 
+/* TOP BUTTONS */
+.top-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+}
+
 /* GRID */
 .main-grid{
 display:grid;
@@ -99,7 +97,15 @@ gap:40px;
 margin-top:40px;
 }
 
-.left,.right{
+/* LEFT TEXT */
+.left{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+}
+
+/* RIGHT BUTTONS */
+.right{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
@@ -119,7 +125,7 @@ flex-wrap:wrap;
 
 <body>
 
-<!-- 🔥 HEADER -->
+<!-- HEADER -->
 <header>
 <div class="container head">
 
@@ -136,7 +142,7 @@ flex-wrap:wrap;
 <a href="onama.html">О удружењу</a>
 <a href="oblasti.html">Области</a>
 <a href="ciljevi.html">Циљеви</a>
-<a href="inicijative.html">Закони</a>
+<a href="inicijative.html">Иницијативе</a>
 <a href="doniraj.html">Подршка</a>
 <a href="prijavi.html">Представка</a>
 
@@ -150,11 +156,11 @@ flex-wrap:wrap;
 
 <div class="container">
 
-<!-- 🔥 GORE DUGMAD -->
+<!-- TOP BUTTONS -->
 <div class="top-buttons">
 
 <a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНА
+ПРЕДСТАВКА ГРАЂАНИНА
 </a>
 
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
@@ -163,10 +169,10 @@ flex-wrap:wrap;
 
 </div>
 
-<!-- 🔥 GRID -->
+<!-- GRID -->
 <div class="main-grid">
 
-<!-- LEVO -->
+<!-- LEFT TEXT -->
 <div class="left">
 
 <h2>Правни оквир</h2>
@@ -174,31 +180,47 @@ flex-wrap:wrap;
 <p><strong>УСТАВ РЕПУБЛИКЕ СРБИЈЕ</strong></p>
 <p><strong>ЕВРОПСКА КОНВЕНЦИЈА О ЉУДСКИМ ПРАВИМА</strong></p>
 
-<p>ЗАКОН О ОПШТЕМ УПРАВНОМ ПОСТУПКУ</p>
-<p>ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ</p>
-<p>ЗАКОН О ОБЛИГАЦИОНИМ ОДНОСИМА</p>
-<p>ЗАКОН О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ</p>
+<p>Закон о општем управном поступку</p>
+<p>Закон о парничном поступку</p>
+<p>Закон о облигационим односима</p>
+<p>Закон о извршењу и обезбеђењу</p>
 
 </div>
 
-<!-- DESNO -->
+<!-- RIGHT BUTTONS -->
 <div class="right">
 
-<h2>Судови и линкови</h2>
+<h2>Закони (линкови)</h2>
 
-<p><a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank">Судски портал</a></p>
+<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="btn btn-dark">
+УСТАВ
+</a>
 
-<p><a href="https://tpji.portal.sud.rs/?lang=sr-cyr" target="_blank">Извршење портал</a></p>
+<a href="https://www.paragraf.rs/propisi/zakon-ratifikaciji-evropske-konvencije-ljudska-prava-osnovne-slobode.html" target="_blank" class="btn btn-dark">
+ЕВРОПСКА КОНВЕНЦИЈА
+</a>
 
-<p><a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank">Устав</a></p>
+<a href="https://www.paragraf.rs/propisi/zakon-o-opstem-upravnom-postupku.html" target="_blank" class="btn btn-dark">
+УПРАВНИ ПОСТУПАК
+</a>
 
-<p><a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank">Парнични поступак</a></p>
+<a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="btn btn-dark">
+ПАРНИЧНИ ПОСТУПАК
+</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank" class="btn btn-dark">
+ОБЛИГАЦИОНИ ОДНОСИ
+</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="btn btn-dark">
+ИЗВРШЕЊЕ
+</a>
 
 </div>
 
 </div>
 
-<!-- 🔥 DONJA DUGMAD -->
+<!-- BOTTOM BUTTONS -->
 <div class="bottom-buttons">
 
 <a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="btn btn-dark">
@@ -214,7 +236,6 @@ flex-wrap:wrap;
 </div>
 
 <script>
-
 const menu=document.getElementById('menu');
 
 menu.querySelector('.menu-btn').onclick=()=>{
@@ -226,7 +247,6 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
 </script>
 
 </body>
