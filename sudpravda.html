@@ -19,6 +19,15 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
+/* 🔥 FIX ZA LJUBIČASTA DUGMAD */
+a{
+color:#fff;
+text-decoration:none;
+}
+a:visited{
+color:#fff;
+}
+
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
@@ -105,17 +114,19 @@ border-radius:40px;
 font-weight:700;
 text-transform:uppercase;
 transition:.3s;
+display:inline-block;
+}
+
+.btn-dark{
+background:#222;
+color:#fff;
+border:1px solid rgba(255,255,255,.3);
 }
 
 .btn-primary{
 background:var(--gold);
 color:#000;
 box-shadow:0 0 20px rgba(211,164,81,0.4);
-}
-
-.btn-dark{
-background:#222;
-border:1px solid rgba(255,255,255,.3);
 }
 
 .btn:hover{
@@ -198,7 +209,7 @@ margin-top:40px;
 
 <div class="dropdown">
 
-<a href="onama.html">о Нама</a>
+<a href="onama.html">О Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
@@ -209,6 +220,7 @@ margin-top:40px;
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+
 </div>
 </div>
 </nav>
@@ -284,9 +296,11 @@ margin-top:40px;
 
 <script>
 const menu=document.getElementById('mainMenu');
+
 menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
 };
+
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
