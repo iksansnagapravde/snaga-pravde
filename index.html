@@ -31,7 +31,6 @@ margin:0;
 min-height:100vh;
 
 background:
-linear-gradient(rgba(2,12,27,0.85), rgba(2,12,27,0.95)),
 url('justice-bg.jpg') center center / cover no-repeat fixed;
 
 color:#fff;
@@ -51,7 +50,8 @@ header{
 position:sticky;
 top:0;
 z-index:100;
-background:var(--deepBlue);
+background:transparent;
+backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
@@ -89,7 +89,7 @@ padding-right:8px;
 }
 
 .nav a.nav-link, .menu-btn{
-background:var(--deepBlue);
+background:transparent;
 color:#fff;
 padding:6px 9px;
 border-radius:8px;
@@ -99,6 +99,7 @@ font-size:0.9rem;
 line-height:1;
 transition:transform .15s ease,filter .15s ease;
 white-space:nowrap;
+backdrop-filter:blur(6px);
 }
 
 .nav a.nav-link:hover, .menu-btn:hover{
@@ -117,7 +118,8 @@ outline-offset:2px
 position:absolute;
 top:calc(100% + 8px);
 right:0;
-background:var(--deepBlue);
+background:rgba(20,20,20,0.85);
+backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 min-width:280px;
@@ -144,7 +146,27 @@ background:rgba(255,255,255,.06);
 border-color:rgba(255,255,255,.16)
 }
 
-.hero{padding:24px 0 0}
+/* 🔥 HERO GLAVNI BLOK */
+.hero{
+padding:24px 0 0;
+position:relative;
+overflow:hidden;
+}
+
+/* svetlosni efekat (voda) */
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.08), transparent 60%);
+pointer-events:none;
+transition:0.4s;
+}
+
+/* jači efekat kad pređeš mišem */
+.hero:hover::before{
+background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.18), transparent 60%);
+}
 
 .hero-grid{display:grid;gap:24px}
 
@@ -152,20 +174,25 @@ border-color:rgba(255,255,255,.16)
 .hero-grid{grid-template-columns:1.1fr .9fr}
 }
 
+/* JAČI TEKST preko slike */
 h1{
 color:#fff;
 margin-top:8px;
 line-height:1.2;
 font-weight:600;
 font-size:clamp(23px,3vw,33px);
-text-shadow:0 0 8px rgba(255,255,255,.25);
+text-shadow:
+0 0 10px rgba(255,255,255,0.3),
+0 0 40px rgba(255,255,255,0.2),
+0 15px 40px rgba(0,0,0,0.9);
 }
 
 .line2{
 display:block;
 font-size:clamp(20px,2.5vw,24px);
 color:var(--ink);
-margin-top:4px
+margin-top:4px;
+text-shadow:0 10px 25px rgba(0,0,0,0.9);
 }
 
 .sub{
@@ -173,7 +200,8 @@ margin:8px 0 12px;
 max-width:740px;
 color:var(--ink);
 opacity:.95;
-font-size:clamp(16px,2vw,18px)
+font-size:clamp(16px,2vw,18px);
+text-shadow:0 10px 25px rgba(0,0,0,0.9);
 }
 
 .cta-row{
@@ -201,7 +229,8 @@ white-space:nowrap;
 .btn-primary{background:var(--gold);color:var(--deepBlue)}
 
 .btn-dark{
-background:var(--deepBlue);
+background:rgba(20,20,20,0.6);
+backdrop-filter:blur(6px);
 color:#fff;
 border:1px solid rgba(255,255,255,.3)
 }
@@ -212,7 +241,8 @@ border:1px solid rgba(255,255,255,.3)
 border-radius:16px;
 overflow:hidden;
 border:1px solid rgba(255,255,255,.15);
-background:var(--deepBlue);
+background:rgba(20,20,20,0.6);
+backdrop-filter:blur(8px);
 aspect-ratio:16/9;
 display:flex;
 align-items:center;
@@ -224,7 +254,7 @@ box-shadow:0 10px 24px rgba(0,0,0,.5);
 width:100%;
 height:100%;
 object-fit:cover;
-opacity:.9
+opacity:.95
 }
 
 .split{margin-top:18px}
@@ -240,7 +270,8 @@ grid-template-columns:1fr
 }
 
 .card{
-background:var(--deepBlue);
+background:rgba(20,20,20,0.6);
+backdrop-filter:blur(8px);
 border:1px solid rgba(255,255,255,.2);
 border-radius:var(--radius);
 padding:16px;
