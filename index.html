@@ -2,34 +2,256 @@
 <html lang="sr-Cyrl-RS">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>Заштита права грађана, и институционална одговорност</title>
 
-<link rel="icon" href="logo-white.png">
+<link rel="icon" href="logo-white.png" type="image/png">
 
+<style>
+
+/* ===== ORIGINAL (NIŠTA NIJE DIRANO) ===== */
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--radius:16px;
+--ink:#dcdcdc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+html,body{height:100%}
+
+body{
+margin:0;
+min-height:100vh;
+background: url('justice-bg.jpg') center 25% / cover no-repeat fixed;
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
+-webkit-font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
+font-size:110%;
+}
+
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
+
+header{
+position:sticky;
+top:0;
+z-index:100;
+background:transparent;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px;
+flex-wrap:nowrap;
+}
+
+.brand{display:flex;align-items:center;flex-shrink:0;}
+
+.brand img{
+height:161px;
+border-radius:10px;
+}
+
+@media (max-width:768px){
+.brand{justify-content:center;margin:0 auto;}
+.brand img{height:106px;}
+}
+
+nav.nav{
+display:flex;
+flex-direction:row;
+align-items:center;
+gap:10px;
+padding-top:0;
+padding-right:8px;
+}
+
+/* 🔥 NOVI IZGLED DUGMADI */
+.nav a.nav-link, .menu-btn{
+
+padding:6px 10px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+font-size:0.9rem;
+line-height:1;
+white-space:nowrap;
+
+color:#fff;
+
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(6px);
+
+box-shadow:
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+
+transition:all .15s ease;
+}
+
+.menu-btn{
+background:#fff;
+color:#000 !important;
+font-weight:700;
+}
+
+.nav a.nav-link:hover, .menu-btn:hover{
+transform:translateY(-2px);
+filter:brightness(1.2);
+}
+
+.nav a.nav-link:active, .menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:rgba(20,20,20,0.85);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none;
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600;
+font-size:14px;
+white-space:nowrap;
+border:1px solid transparent;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06);
+border-color:rgba(255,255,255,.16)
+}
+
+.hero{
+padding:24px 0 0;
+text-align:center;
+}
+
+/* ===== SAMO OVO IZMENJENO ===== */
+.hero-title{
+font-size:clamp(28px,4vw,48px);
+font-weight:700;
+line-height:1.2;
+margin-top:40px;
+text-shadow:
+0 0 10px rgba(255,255,255,0.3),
+0 0 40px rgba(255,255,255,0.2),
+0 15px 40px rgba(0,0,0,0.9);
+}
+
+.cta-row{
+display:flex;
+justify-content:center;
+gap:8px;
+margin-top:20px;
+}
+
+.btn{
+padding:10px 20px;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
+}
+
+.btn-primary{background:var(--gold);color:#000}
+.btn-dark{background:rgba(20,20,20,0.6);color:#fff}
+
+/* GRID OSTAO ISTI */
+.grid{
+display:grid;
+gap:25px;
+margin-top:30px;
+}
+
+@media(min-width:900px){
+.grid{grid-template-columns:1fr 1fr;}
+}
+
+.card{
+background:rgba(0,0,0,0.55);
+padding:28px;
+border-radius:22px;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:15px;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+z-index:9999;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
+<div class="container head">
 
 <div class="brand">
-ИКСАН лого
+<a href="index.html">
+<img src="logo-white.png">
+</a>
 </div>
 
-<nav>
+<nav class="nav">
 
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora.">
+<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
+class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
 WhatsApp
 </a>
 
-<div class="menu">
-Мени ▾
+<div class="menu" id="mainMenu">
+
+<button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
 
@@ -44,74 +266,68 @@ WhatsApp
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
 
 </div>
 
 </div>
 
 </nav>
-
+</div>
 </header>
 
 <main>
 
-<section>
+<section class="hero">
 
-<h1>
+<h1 class="hero-title">
 Заштита права грађана и институционална одговорност
 </h1>
 
-<div>
-<a href="inicijative.html">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html">ПОДРЖИ НАШ РАД</a>
+<div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
 </section>
 
-<section>
+<div class="container">
 
-<h2>ШТА СМО ДО САДА УРАДИЛИ</h2>
+<div class="grid">
 
-<div>
-
-<div>
+<article class="card">
 <h3>Реформа система извршења</h3>
-<p>Предлог нормативног унапређења система извршења ради јачања судске контроле.</p>
-<a href="ukidanjeizvrsitelja.html">Сазнај више →</a>
-</div>
+<p>Јачање судске контроле.</p>
+</article>
 
-<div>
+<article class="card">
 <h3>Транспарентност јавних функција</h3>
 <p>Контрола имовине носилаца функција.</p>
-<a href="porekloimovine.html">Погледај детаље →</a>
-</div>
+</article>
 
-<div>
-<h3>Независност и ефикасност судства</h3>
-<p>Унапређење приступа правди.</p>
-<a href="sudpravda.html">Прочитај више →</a>
-</div>
+<article class="card">
+<h3>Независност судства</h3>
+<p>Ефикасније и независно правосуђе.</p>
+</article>
 
-<div>
+<article class="card">
 <h3>Правна сигурност привреде</h3>
 <p>Стабилно пословно окружење.</p>
-<a href="radnicipreduzetnici.html">Сазнај више →</a>
-</div>
+</article>
 
 </div>
 
-</section>
+</div>
 
 </main>
 
-<footer>
-© 2025 Иксан • Снага правде — Сва права задржана.
-</footer>
+<script>
+const menu=document.getElementById('mainMenu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+</script>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora.">
-📞
-</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
 </html>
