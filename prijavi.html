@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Представка грађанина | Иксан – Снага правде</title>
 
-<title>Транспарентност — Иксан</title>
-
-<link rel="icon" href="logo-white.png">
+<link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
 
+/* ===== GLOBAL ===== */
 :root{
+--deepBlue:#1f1f1f;
 --gold:#d3a451;
+--radius:16px;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-a{text-decoration:none;color:inherit}
 
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman";
+font-family:"Times New Roman",serif;
 }
 
+/* ===== CONTAINER ===== */
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* ===== HEADER (INDEX STYLE) ===== */
 header{
 position:sticky;
 top:0;
 z-index:100;
+background:transparent;
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
@@ -40,49 +43,34 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0;
+gap:10px;
 }
 
 .brand img{
-height:95px;
+height:120px;
 border-radius:10px;
 }
 
-/* NAV */
+/* ===== NAV 3D ===== */
 .nav{
 display:flex;
+gap:10px;
 align-items:center;
-gap:6px;
 }
 
-/* 🔥 PRAVI 3D */
-.nav a,.menu-btn{
+.nav a.nav-link, .menu-btn{
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(6px);
+color:#fff;
 padding:6px 10px;
 border-radius:10px;
 font-weight:600;
-font-size:0.85rem;
-
-background:rgba(0,0,0,0.45);
-color:#fff;
 
 box-shadow:
-0 6px 0 rgba(0,0,0,.8),
-0 18px 35px rgba(0,0,0,.9);
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
 
-transition:0.15s;
-}
-
-/* HOVER */
-.nav a:hover,.menu-btn:hover{
-transform:translateY(-2px);
-}
-
-/* CLICK */
-.nav a:active,.menu-btn:active{
-transform:translateY(4px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.8),
-0 10px 20px rgba(0,0,0,.7);
+transition:all .15s ease;
 }
 
 .menu-btn{
@@ -91,122 +79,138 @@ color:#000;
 font-weight:700;
 }
 
-/* DROPDOWN */
+.nav a:hover,.menu-btn:hover{
+transform:translateY(-2px);
+}
+
+.nav a:active,.menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
+}
+
+/* ===== DROPDOWN ===== */
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:110%;
 right:0;
-background:rgba(20,20,20,0.97);
+background:rgba(20,20,20,0.9);
 border-radius:12px;
 padding:6px;
 display:none;
-min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
-padding:9px 10px;
-border-radius:8px;
+padding:8px;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,0.08);
-}
-
-/* TOP BUTTONS */
-.top-buttons{
-display:flex;
-justify-content:center;
-gap:10px;
-margin-top:20px;
-}
-
-.btn{
-padding:10px 20px;
-border-radius:30px;
-font-weight:700;
-font-size:13px;
-
-box-shadow:
-0 6px 0 rgba(0,0,0,.6),
-0 18px 35px rgba(0,0,0,.8);
-
-transition:.15s;
-}
-
-.btn:hover{
-transform:translateY(-2px) scale(1.03);
-}
-
-.btn:active{
-transform:translateY(5px);
-}
-
-.btn-dark{background:#1c1c1c;color:#fff}
-.btn-gold{background:var(--gold);color:#000}
-
-/* GRID */
-.main-grid{
-display:grid;
-gap:30px;
-margin-top:30px;
-}
-
-@media(min-width:900px){
-.main-grid{grid-template-columns:1fr 1fr;}
-}
-
-.left,.right{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
-}
-
-.right p{color:var(--ink)}
-
-/* MOBILE */
-@media(max-width:768px){
-
-.brand img{height:80px}
-
-.nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.top-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.top-buttons a{
-width:90%;
+/* ===== HERO ===== */
+.hero{
+padding:50px 0;
 text-align:center;
 }
 
+h1{
+font-size:30px;
+margin-bottom:10px;
+text-shadow:0 0 20px rgba(255,255,255,0.3);
 }
 
-/* SLUSALICA */
+.hero p{color:var(--ink)}
+
+/* ===== BUTTONS ===== */
+.cta-row{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:12px 25px;
+border-radius:40px;
+font-weight:700;
+cursor:pointer;
+text-transform:uppercase;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
+}
+
+.btn-dark{background:#222;color:#fff}
+.btn-primary{background:var(--gold);color:#000}
+
+/* ===== DOC GRID ===== */
+.docs-grid{
+display:grid;
+gap:25px;
+margin-top:40px;
+}
+
+@media(min-width:700px){
+.docs-grid{grid-template-columns:1fr 1fr;}
+}
+
+/* ===== CARDS ===== */
+.doc-card{
+display:block;
+padding:30px;
+border-radius:20px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 20px 50px rgba(0,0,0,0.7);
+text-decoration:none;
+color:#fff;
+transition:0.3s;
+}
+
+.doc-card:hover{
+transform:translateY(-6px);
+}
+
+.doc-btn{
+display:inline-block;
+padding:10px 20px;
+border-radius:40px;
+background:var(--gold);
+color:#000;
+font-weight:700;
+}
+
+.doc-btn.dark{
+background:#222;
+color:#fff;
+}
+
+/* ===== WHATSAPP ===== */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
-width:55px;
-height:55px;
+width:60px;
+height:60px;
 background:#25D366;
 display:flex;
 align-items:center;
 justify-content:center;
 border-radius:50%;
+font-size:26px;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+z-index:9999;
 }
 
-.whatsapp-float svg{
-width:26px;
-fill:#000;
+footer{
+text-align:center;
+padding:30px;
 }
 
 </style>
@@ -214,12 +218,101 @@ fill:#000;
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
 <div class="container head">
 
 <div class="brand">
 <a href="index.html">
 <img src="logo-white.png">
+</a>
+</div>
+
+<nav class="nav">
+
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
+
+<a href="https://wa.me/381665857707" class="nav-link" style="background:#25D366;color:#000;">
+WhatsApp
+</a>
+
+<div class="menu" id="mainMenu">
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Закони и прописи</a>
+<a href="doniraj.html">Подржи рад</a>
+<a href="prikljucise.html">Сарадња</a>
+<a href="prijavi.html">Представка</a>
+</div>
+
+</div>
+
+</nav>
+
+</div>
+</header>
+
+<!-- ===== CONTENT ===== -->
+<main>
+
+<section class="hero">
+
+<h1>ПРЕДСТАВКА ГРАЂАНИНА</h1>
+
+<p>Изаберите документ</p>
+
+<div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="docs-grid">
+
+<!-- ✔ POPRAVLJEN LINK -->
+<a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
+<h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
+<p>Преузмите и пошаљите на:<br><b>iksan.snaga.pravde@gmail.com</b></p>
+<span class="doc-btn">ОТВОРИ</span>
+</a>
+
+<a href="PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="doc-card">
+<h2>ПРАВИЛНИК</h2>
+<p>Правила поступања по представкама.</p>
+<span class="doc-btn dark">ОТВОРИ</span>
+</a>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+© 2025 Иксан • Снага правде
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
+
+<script>
+const menu=document.getElementById('mainMenu');
+menu.querySelector('.menu-btn').onclick=()=>{
+menu.classList.toggle('open');
+};
+</script>
+
+</body>
+</html>
+png">
 </a>
 </div>
 
