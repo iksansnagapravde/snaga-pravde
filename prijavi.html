@@ -179,6 +179,49 @@ background:#222;
 color:#fff;
 }
 
+/* ===== WHATSAPP 3D ===== */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+/* 3D */
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+
+z-index:9999;
+cursor:pointer;
+transition:0.15s;
+}
+
+.whatsapp-float:hover{
+transform:translateY(-3px);
+}
+
+.whatsapp-float:active{
+transform:translateY(5px);
+box-shadow:
+0 2px 0 #128C7E,
+0 10px 20px rgba(0,0,0,0.6);
+}
+
+.whatsapp-float svg{
+width:28px;
+height:28px;
+fill:#000;
+}
+
 /* ===== MOBILE ===== */
 @media(max-width:768px){
 
@@ -199,25 +242,6 @@ width:90%;
 text-align:center;
 }
 
-}
-
-/* ===== WHATSAPP ===== */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-width:55px;
-height:55px;
-background:#25D366;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-}
-
-.whatsapp-float svg{
-width:26px;
-fill:#000;
 }
 
 </style>
@@ -255,8 +279,6 @@ fill:#000;
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
-<!-- 🔥 NOVO -->
 <a href="uradili.html">Шта смо до сада урадили</a>
 
 </div>
@@ -268,36 +290,20 @@ fill:#000;
 
 <div class="container">
 
-<!-- GORNJA DUGMAD -->
 <div class="top-buttons">
-
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- NASLOV -->
 <div class="title">
-
 <h1>ПРЕДСТАВКА ГРАЂАНИНА</h1>
-
 <p>
 Изаберите документ, преузмите, попуните и пошаљите на:<br>
 <b>iksan.snaga.pravde@gmail.com</b>
 </p>
-
 </div>
 
-<!-- DOKUMENTI -->
 <div class="docs-grid">
 
 <a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
@@ -306,7 +312,7 @@ fill:#000;
 <span class="doc-btn">ОТВОРИ ДОКУМЕНТ</span>
 </a>
 
-<a href="PRAVILNIK_PREDSTAVKE.pdf" target="_blank" class="doc-card">
+<a href="PRAVILNIK_PREDСТАВКЕ.pdf" target="_blank" class="doc-card">
 <h2>ПРАВИЛНИК О ПОСТУПАЊУ</h2>
 <p>Правила поступања по представкама.</p>
 <span class="doc-btn dark">ПРОЧИТАЈ</span>
@@ -321,6 +327,7 @@ const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
+<!-- ✅ 3D WHATSAPP -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">
 <svg viewBox="0 0 24 24">
 <path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
