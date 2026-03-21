@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,143 +15,129 @@
 --gold:#d3a451;
 }
 
-html,body{overflow-x:hidden;}
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* ❌ uklanja linije */
+a{text-decoration:none;color:inherit}
 
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
-margin:0;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* ===== HEADER (INDEX STYLE) ===== */
 header{
 position:sticky;
 top:0;
-background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,.2);
+z-index:100;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:10px 0;
+justify-content:space-between;
+padding:4px 0;
 }
 
+.brand img{
+height:95px;
+border-radius:10px;
+}
+
+/* NAV */
 .nav{
 display:flex;
-gap:10px;
-flex-wrap:wrap;
-justify-content:center;
+align-items:center;
+gap:6px;
 }
 
-/* 🔥 NAV 3D */
+/* 🔥 ISTI 3D KAO INDEX */
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
-text-decoration:none;
+border-radius:10px;
 font-weight:600;
+font-size:0.85rem;
+
+background:rgba(0,0,0,0.45);
+color:#fff;
 
 box-shadow:
-0 3px 0 rgba(0,0,0,.6),
-0 10px 20px rgba(0,0,0,.6);
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
 }
 
-/* 🔥 MENI dugme */
 .menu-btn{
 background:#fff;
-color:#000 !important;
+color:#000;
 font-weight:700;
-}
-
-.nav a:active,.menu-btn:active{
-transform:translateY(3px);
-box-shadow:
-0 1px 0 rgba(0,0,0,.6),
-0 5px 10px rgba(0,0,0,.5);
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:110%;
+top:calc(100% + 8px);
 right:0;
-background:#111;
-padding:8px;
-border-radius:10px;
+background:rgba(20,20,20,0.95);
+border-radius:12px;
+padding:6px;
 display:none;
-min-width:250px;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* GORE DUGMAD */
+.dropdown a{
+display:block;
+padding:9px 10px;
+}
+
+/* ===== GORNJA DUGMAD ===== */
 .top-buttons{
 display:flex;
 justify-content:center;
-gap:15px;
-margin-top:30px;
-flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
+flex-wrap:nowrap;
 }
 
-/* 🔥 3D dugmad */
 .btn{
-padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-display:inline-block;
-text-align:center;
+padding:10px 20px;
+border-radius:30px;
+font-weight:700;
+font-size:13px;
 
 box-shadow:
-0 5px 0 #000,
-0 15px 30px rgba(0,0,0,0.7);
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
-.btn-dark{
-background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
-color:#fff;
-}
-
-.btn-gold{
-background:linear-gradient(145deg,#d3a451,#b68c3a);
-color:#000;
-}
-
-.btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 #000,
-0 8px 15px rgba(0,0,0,0.5);
-}
+.btn-dark{background:#1c1c1c;color:#fff}
+.btn-gold{background:var(--gold);color:#000}
 
 /* GRID */
 .main-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-margin-top:40px;
+gap:30px;
+margin-top:30px;
 }
 
-/* LEVO */
-.left{
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
+}
+
+.left,.right{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
 }
 
-/* DESNO */
-.right{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
-}
-
+/* FORM */
 form{
 display:grid;
 gap:12px;
@@ -176,29 +163,43 @@ font-weight:bold;
 
 /* MOBILE */
 @media(max-width:768px){
-.main-grid{
-grid-template-columns:1fr;
-}
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
 }
 
-/* 🔥 WHATSAPP */
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:90%;
+text-align:center;
+}
+
+}
+
+/* WHATSAPP (ISPRAVNA SLUŠALICA) */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
-width:60px;
-height:60px;
-background:linear-gradient(145deg,#25D366,#1ebe5d);
-color:#000;
-font-size:28px;
+width:55px;
+height:55px;
+background:#25D366;
 display:flex;
 align-items:center;
 justify-content:center;
 border-radius:50%;
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-z-index:9999;
+}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
 }
 
 </style>
@@ -206,14 +207,14 @@ z-index:9999;
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container head">
 
-<!-- 🔥 LOGO -->
+<div class="brand">
 <a href="index.html">
-<img src="logo-white.png" style="height:70px">
+<img src="logo-white.png">
 </a>
+</div>
 
 <nav class="nav">
 
@@ -222,9 +223,8 @@ z-index:9999;
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
-  
-<div class="dropdown">
 
+<div class="dropdown">
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -236,19 +236,17 @@ z-index:9999;
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
 </div>
 
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <div class="container">
 
-<!-- 🔥 GORNJA DUGMAD -->
+<!-- GORNJA DUGMAD -->
 <div class="top-buttons">
 
 <a href="inicijative.html" class="btn btn-dark">
@@ -309,10 +307,7 @@ target="hiddenFrame">
 
 <script>
 const menu=document.getElementById('menu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
@@ -321,8 +316,12 @@ menu.classList.remove('open');
 });
 </script>
 
-<!-- 🔥 WHATSAPP -->
-<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
+<!-- SLUŠALICA -->
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
