@@ -11,140 +11,182 @@
 
 <style>
 
-/* ===== OSNOVNO ===== */
-body{
-margin:0;
-background:url('justice-bg.jpg') center/cover no-repeat fixed;
-color:#fff;
-font-family:"Times New Roman",serif;
+:root{
+--gold:#d3a451;
+--ink:#dcdcdc;
 }
 
-.container{max-width:1100px;margin:auto;padding:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:#fff}
+
+/* BODY */
+body{
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
+font-family:"Times New Roman";
+color:#fff;
+}
+
+.container{max-width:1100px;margin:auto;padding:0 20px}
 
 /* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
-z-index:1000;
+z-index:100;
 backdrop-filter:blur(6px);
-border-bottom:1px solid rgba(255,255,255,.2);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
-.dropdown{
-z-index:2000;
-}
+
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:4px 0;
 }
 
+.brand img{
+height:95px;
+border-radius:10px;
+}
+
+/* NAV */
 .nav{
 display:flex;
-gap:10px;
-}
-.menu{
-position:relative;
-}
-/* 🔥 GORNJA DUGMAD (KAO INDEX) */
-.nav a, .menu-btn{
-text-decoration:none;
-color:#fff !important;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(6px);
-border:1px solid rgba(255,255,255,0.2);
-border-radius:10px;
-padding:6px 10px;
-font-weight:600;
-transition:all .2s ease;
+gap:6px;
 }
 
-.nav a:hover, .menu-btn:hover{
-transform:translateY(-2px);
-background:rgba(255,255,255,0.1);
-box-shadow:0 5px 15px rgba(0,0,0,0.5);
+/* 🔥 3D */
+.nav a,.menu-btn{
+padding:6px 10px;
+border-radius:10px;
+font-weight:600;
+font-size:0.85rem;
+
+background:rgba(0,0,0,0.45);
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.8),
+0 18px 35px rgba(0,0,0,.9);
+
+transition:.15s;
 }
+
+.nav a:hover,.menu-btn:hover{
+transform:translateY(-2px);
+}
+
+.nav a:active,.menu-btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.8),
+0 10px 20px rgba(0,0,0,.7);
+}
+
+.menu-btn{
+background:#fff;
+color:#000;
+font-weight:700;
+}
+
+.menu{position:relative}
+
 .dropdown{
-display:none;
 position:absolute;
 top:calc(100% + 8px);
 right:0;
-background:rgba(20,20,20,0.85);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.2);
+background:rgba(20,20,20,.97);
 border-radius:12px;
-min-width:280px;
 padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none;
+min-width:260px;
 }
+
+.menu.open .dropdown{display:block}
+
 .dropdown a{
 display:block;
 padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600;
-font-size:14px;
-white-space:nowrap;
-border:1px solid transparent;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
-border-color:rgba(255,255,255,.16);
-}
-.menu.open .dropdown{display:block}
-
-/* ===== HERO DUGMAD ===== */
+/* ===== TOP BUTTONS ===== */
 .cta-row{
 display:flex;
 gap:10px;
 margin:20px 0;
 flex-wrap:wrap;
+justify-content:center;
 }
 
 .btn{
-text-decoration:none;
-color:#fff !important;
-padding:10px 18px;
+padding:10px 20px;
 border-radius:30px;
 font-weight:700;
-text-transform:uppercase;
-display:inline-block;
-}
 
-/* 3D stil */
-.btn-dark{
-background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
 box-shadow:
-0 5px 0 #000,
-0 15px 30px rgba(0,0,0,0.7);
+0 6px 0 rgba(0,0,0,.6),
+0 18px 35px rgba(0,0,0,.8);
+
+transition:.15s;
 }
 
-.btn-primary{
-background:linear-gradient(145deg,#d3a451,#b68c3a);
-color:#000 !important;
-box-shadow:
-0 5px 0 #8a6a2a,
-0 15px 30px rgba(0,0,0,0.7);
-}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(5px)}
 
-.btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 #000,
-0 8px 15px rgba(0,0,0,0.5);
-}
+.btn-dark{background:#222}
+.btn-primary{background:var(--gold);color:#000}
 
-/* ===== CONTENT ===== */
+/* CONTENT */
 .box{
 background:rgba(0,0,0,0.6);
 padding:30px;
 border-radius:20px;
-backdrop-filter:blur(10px);
+margin-top:10px;
 }
 
 h1{margin-bottom:20px}
 
 p{margin-bottom:15px;line-height:1.6}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.cta-row{
+flex-direction:column;
+align-items:center;
+}
+
+.cta-row a{
+width:90%;
+text-align:center;
+}
+
+}
+
+/* SLUSALICA */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
+}
 
 </style>
 
@@ -155,15 +197,19 @@ p{margin-bottom:15px;line-height:1.6}
 <header>
 <div class="container head">
 
-<a href="index.html"><img src="logo-white.png" style="height:80px"></a>
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png">
+</a>
+</div>
 
 <nav class="nav">
 
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
-<button class="menu-btn">Мени ▾</button>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
 
@@ -190,13 +236,11 @@ p{margin-bottom:15px;line-height:1.6}
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <div class="container">
 
-<!-- 🔥 DUGMAD KAO INDEX -->
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
@@ -211,22 +255,22 @@ p{margin-bottom:15px;line-height:1.6}
 
 <p><b>05.01.2026.</b> Отворили смо канцеларију за грађане где свакодневно примамо странке.</p>
 
-<p><b>15.01.2026.</b> Поднели смо иницијативу Уставном суду за оцену уставности одредби Закона о извршењу и обезбеђењу.</p>
+<p><b>15.01.2026.</b> Поднели смо иницијативу Уставном суду.</p>
 
-<p><b>19.01.2026.</b> Поднели смо иницијативу председнику Републике Србије, Влади и Народној скупштини за измену закона због злоупотребе и кршења људских права.</p>
+<p><b>19.01.2026.</b> Поднели иницијативу институцијама.</p>
 
-<p><b>06.03.2026.</b> Учествовали смо на инфо данима Министарства за људска и мањинска права.</p>
+<p><b>06.03.2026.</b> Учествовали на инфо данима.</p>
 
-<p><b>16.03.2026.</b> Учествовали смо у коментарима новог нацрта закона о ауторским правима.</p>
+<p><b>16.03.2026.</b> Коментари закона.</p>
 
-<p><b>01.04.2026.</b> Припремили смо нацрт закона о инсолвентности који предајемо институцијама.</p>
+<p><b>01.04.2026.</b> Нацрт закона о инсолвентности.</p>
 
-<p><b>Свакодневно:</b> Комуницирамо са грађанима, помажемо кроз представке и пружамо правну подршку.</p>
+<p><b>Свакодневно:</b> Помоћ грађанима.</p>
 
-<p><b>До сада:</b> Примили смо преко 10.000 мејлова, обавили 2.000+ разговора и поднели преко 300 иницијатива.</p>
+<p><b>До сада:</b> 10.000+ мејлова, 2.000 разговора, 300 иницијатива.</p>
 
 <p>
-Наш циљ је да грађани имају подршку, заштиту и осећај да нису сами.
+Наш циљ је да грађани имају подршку и заштиту.
 </p>
 
 </div>
@@ -234,10 +278,15 @@ p{margin-bottom:15px;line-height:1.6}
 </div>
 
 <script>
-const menu = document.getElementById('mainMenu');
-const btn = menu.querySelector('.menu-btn');
-btn.addEventListener('click',()=>menu.classList.toggle('open'));
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
+
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
