@@ -59,18 +59,20 @@ background:rgba(255,255,255,0.1);
 box-shadow:0 5px 15px rgba(0,0,0,0.5);
 }
 
-.dropdown{
-display:none;
-position:absolute;
-top:calc(100% + 8px);
-right:0;
-background:rgba(20,20,20,0.85);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.2);
-border-radius:12px;
-min-width:280px;
-padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+color:#fff;
+font-weight:600;
+font-size:14px;
+white-space:nowrap;
+border:1px solid transparent;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06);
+border-color:rgba(255,255,255,.16);
 }
 .menu.open .dropdown{display:block}
 
