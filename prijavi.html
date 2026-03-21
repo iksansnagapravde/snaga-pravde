@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Представка грађанина | Иксан – Снага правде</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="icon" href="logo-white.png" type="image/png">
+<title>Транспарентност — Иксан</title>
+
+<link rel="icon" href="logo-white.png">
 
 <style>
 
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:inherit}
 
 body{
-background:url('justice-bg.jpg') center 25%/cover no-repeat fixed;
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman",serif;
+font-family:"Times New Roman";
 }
 
-/* CONTAINER */
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
@@ -33,169 +32,181 @@ header{
 position:sticky;
 top:0;
 z-index:100;
-backdrop-filter:blur(8px);
+backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:6px 0;
+justify-content:space-between;
+padding:4px 0;
 }
 
 .brand img{
-height:120px;
+height:95px;
 border-radius:10px;
 }
 
+/* NAV */
 .nav{
 display:flex;
-gap:10px;
+align-items:center;
+gap:6px;
 }
 
+/* 🔥 PRAVI 3D */
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:8px;
-color:#fff;
+border-radius:10px;
 font-weight:600;
-text-decoration:none;
+font-size:0.85rem;
+
+background:rgba(0,0,0,0.45);
+color:#fff;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.8),
+0 18px 35px rgba(0,0,0,.9);
+
+transition:0.15s;
 }
 
+/* HOVER */
+.nav a:hover,.menu-btn:hover{
+transform:translateY(-2px);
+}
+
+/* CLICK */
+.nav a:active,.menu-btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.8),
+0 10px 20px rgba(0,0,0,.7);
+}
+
+.menu-btn{
+background:#fff;
+color:#000;
+font-weight:700;
+}
+
+/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
+top:calc(100% + 8px);
 right:0;
-top:110%;
-background:rgba(20,20,20,.95);
+background:rgba(20,20,20,0.97);
 border-radius:12px;
 padding:6px;
 display:none;
-min-width:250px;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
-padding:8px;
-color:#fff;
-text-decoration:none;
-border-radius:6px;
+padding:9px 10px;
+border-radius:8px;
 }
 
 .dropdown a:hover{
-background:rgba(255,255,255,0.1);
+background:rgba(255,255,255,0.08);
 }
 
-/* HERO */
-.hero{
-padding:50px 0;
-text-align:center;
-animation:fadeIn 1s ease;
-}
-
-h1{
-font-size:32px;
-margin-bottom:10px;
-text-shadow:0 0 20px rgba(255,255,255,0.3);
-}
-
-.hero p{
-color:var(--ink);
-}
-
-/* CTA */
-.cta-row{
+/* TOP BUTTONS */
+.top-buttons{
 display:flex;
 justify-content:center;
-gap:12px;
-margin-top:25px;
-flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
 }
 
 .btn{
-display:inline-block;
-padding:12px 26px;
-border-radius:40px;
+padding:10px 20px;
+border-radius:30px;
 font-weight:700;
-text-transform:uppercase;
-cursor:pointer;
-position:relative;
-overflow:hidden;
-transition:0.3s;
-}
+font-size:13px;
 
-.btn-primary{
-background:var(--gold);
-color:#000;
-box-shadow:0 0 20px rgba(211,164,81,0.4);
-}
+box-shadow:
+0 6px 0 rgba(0,0,0,.6),
+0 18px 35px rgba(0,0,0,.8);
 
-.btn-dark{
-background:#222;
-color:#fff;
-border:1px solid rgba(255,255,255,.3);
+transition:.15s;
 }
 
 .btn:hover{
-transform:translateY(-3px) scale(1.03);
-box-shadow:0 0 25px rgba(255,255,255,0.3);
+transform:translateY(-2px) scale(1.03);
 }
+
+.btn:active{
+transform:translateY(5px);
+}
+
+.btn-dark{background:#1c1c1c;color:#fff}
+.btn-gold{background:var(--gold);color:#000}
 
 /* GRID */
-.docs-grid{
+.main-grid{
 display:grid;
-gap:25px;
-margin-top:40px;
+gap:30px;
+margin-top:30px;
 }
 
-@media(min-width:700px){
-.docs-grid{grid-template-columns:1fr 1fr;}
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* CARD */
-.doc-card{
-display:block;
-padding:30px;
-border-radius:20px;
-background:rgba(20,20,20,0.6);
-backdrop-filter:blur(12px);
-border:1px solid rgba(255,255,255,0.15);
-box-shadow:0 20px 50px rgba(0,0,0,0.6);
-text-decoration:none;
-color:#fff;
-transition:0.4s;
+.left,.right{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
 }
 
-.doc-card:hover{
-transform:translateY(-8px) scale(1.02);
-box-shadow:0 30px 70px rgba(0,0,0,0.8);
+.right p{color:var(--ink)}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
 }
 
-/* BUTTON */
-.doc-btn{
-display:inline-block;
-padding:10px 20px;
-border-radius:40px;
-background:var(--gold);
-color:#000;
-font-weight:700;
+.top-buttons{
+flex-direction:column;
+align-items:center;
 }
 
-.doc-btn.dark{
-background:#222;
-color:#fff;
-border:1px solid rgba(255,255,255,.3);
-}
-
-/* FOOTER */
-footer{
+.top-buttons a{
+width:90%;
 text-align:center;
-padding:30px;
-font-size:14px;
+}
+
+}
+
+/* SLUSALICA */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
 }
 
 </style>
@@ -203,7 +214,6 @@ font-size:14px;
 
 <body>
 
-<!-- ✅ HEADER -->
 <header>
 <div class="container head">
 
@@ -215,14 +225,13 @@ font-size:14px;
 
 <nav class="nav">
 
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
-<button class="menu-btn">Мени ▾</button>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -235,76 +244,70 @@ font-size:14px;
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 </div>
-  
+
 </div>
 
 </nav>
 </div>
 </header>
 
-<main>
-
-<section class="hero">
-<h1>ПРЕДСТАВКА ГРАЂАНИНА</h1>
-
-<p>
-Изаберите документ који желите да преузмете или прочитате.
-</p>
-
-<div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-</div>
-
-</section>
-
 <div class="container">
 
-<div class="docs-grid">
+<div class="top-buttons">
 
-<!-- 🔥 OVO JE ISPRAVLJENO -->
-<a href="./OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
-<h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
-<p>
-Преузмите образац, попуните, потпишите и пошаљите на:<br><br>
-<b>iksan.snaga.pravde@gmail.com</b>
-</p>
-<span class="doc-btn">ОТВОРИ ДОКУМЕНТ</span>
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
 </a>
 
-<a href="./PRAVILNIK_PREDSTAVKA.pdf" target="_blank" class="doc-card">
-<h2>ПРАВИЛНИК О ПОСТУПАЊУ</h2>
-<p>
-Прочитајте правила поступања по представкама грађана.
-</p>
-<span class="doc-btn dark">ПРОЧИТАЈ ПРАВИЛНИК</span>
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" class="btn btn-gold">
+ПОДРЖИ НАШ РАД
 </a>
 
 </div>
 
+<div class="main-grid">
+
+<div class="left">
+<h2>Транспарентност јавних финансија</h2>
+<p>Јавне набавке и управљање јавним средствима представљају кључни део функционисања државе.</p>
+<p>Транспарентност поступака, јавна контрола и провера порекла имовине доприносе спречавању злоупотреба.</p>
+<p>Наш циљ је увођење јасних механизама контроле.</p>
 </div>
 
-</main>
+<div class="right">
+<h2>Кључне мере</h2>
+<p>Провера порекла имовине</p>
+<p>Јавност набавки</p>
+<p>Контрола трошења</p>
+<p>Спречавање корупције</p>
+<p>Јачање надзора</p>
+<p>Дигитализација</p>
+</div>
 
-<footer>
-© 2025 Иксан • Снага правде
-</footer>
+</div>
+
+</div>
 
 <script>
-
-const menu=document.getElementById('mainMenu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
 </script>
+
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
