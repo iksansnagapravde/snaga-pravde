@@ -11,126 +11,122 @@
 
 <style>
 
+/* ===== INDEX STYLE ===== */
 :root{
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
 
-html,body{overflow-x:hidden;}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
-margin:0;
 }
+
+a{text-decoration:none;color:inherit}
 
 .container{max-width:900px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* HEADER — ISTO KAO INDEX */
 header{
 position:sticky;
 top:0;
-background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,.2);
+z-index:100;
+background:transparent;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:10px 0;
+padding:4px 0;
 }
 
+.brand img{
+height:120px;
+}
+
+/* NAV */
 .nav{
 display:flex;
 gap:10px;
-flex-wrap:wrap;
-justify-content:center;
+align-items:center;
 }
 
-/* 🔥 NAV 3D */
+/* NAV DUGMAD */
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
-text-decoration:none;
+border-radius:10px;
 font-weight:600;
+font-size:0.9rem;
+line-height:1;
+
+background:rgba(0,0,0,0.45);
+color:#fff;
 
 box-shadow:
-0 3px 0 rgba(0,0,0,.6),
-0 10px 20px rgba(0,0,0,.6);
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
 }
 
-/* 🔥 MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
-.nav a{color:#fff;}
-
-.nav a:active,.menu-btn:active{
-transform:translateY(3px);
-box-shadow:
-0 1px 0 rgba(0,0,0,.6),
-0 5px 10px rgba(0,0,0,.5);
-}
-
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:110%;
+top:calc(100% + 8px);
 right:0;
-background:#111;
-padding:8px;
-border-radius:10px;
+background:rgba(20,20,20,0.85);
+border-radius:12px;
+padding:6px;
 display:none;
 min-width:250px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* TOP BUTTONS */
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+}
+
+/* CTA */
 .top-buttons{
 display:flex;
 justify-content:center;
-gap:15px;
-margin-top:30px;
-flex-wrap:wrap;
+gap:8px;
+margin-top:20px;
 }
 
-/* 🔥 3D dugmad */
 .btn{
-padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-display:inline-block;
+padding:10px 20px;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
 
 box-shadow:
-0 5px 0 #000,
-0 15px 30px rgba(0,0,0,0.7);
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
-/* 🔥 OVO JE BITNO (bela slova) */
 .btn-dark{
-background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
-color:#fff !important;
+background:rgba(20,20,20,0.6);
+color:#fff;
 }
 
 .btn-gold{
-background:linear-gradient(145deg,#d3a451,#b68c3a);
+background:var(--gold);
 color:#000;
-}
-
-.btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 #000,
-0 8px 15px rgba(0,0,0,0.5);
 }
 
 /* HERO */
@@ -142,13 +138,6 @@ text-align:center;
 .hero h1{
 font-size:34px;
 margin-bottom:10px;
-text-shadow:0 0 15px rgba(255,255,255,.3);
-}
-
-.hero p{
-color:var(--ink);
-max-width:700px;
-margin:auto;
 }
 
 /* GRID */
@@ -163,14 +152,9 @@ margin-top:40px;
 background:rgba(0,0,0,0.6);
 padding:20px;
 border-radius:15px;
-backdrop-filter:blur(10px);
 }
 
 .card p{color:var(--ink)}
-
-.card h3{
-margin-bottom:8px;
-}
 
 /* IMPRESUM */
 .impresum{
@@ -182,27 +166,49 @@ border-radius:15px;
 
 /* MOBILE */
 @media(max-width:768px){
-.grid{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr;}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
 }
 
-/* 🔥 WHATSAPP */
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:90%;
+text-align:center;
+}
+}
+
+/* WHATSAPP — SVG */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
 width:60px;
 height:60px;
+
 background:linear-gradient(145deg,#25D366,#1ebe5d);
-color:#000;
-font-size:28px;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 border-radius:50%;
+
 box-shadow:
 0 6px 0 #128C7E,
 0 18px 35px rgba(0,0,0,0.7);
-z-index:9999;
+}
+
+.whatsapp-float svg{
+width:28px;
+height:28px;
+fill:#000;
 }
 
 </style>
@@ -213,10 +219,11 @@ z-index:9999;
 <header>
 <div class="container head">
 
-<!-- 🔥 LOGO -->
+<div class="brand">
 <a href="index.html">
-<img src="logo-white.png" style="height:70px">
+<img src="logo-white.png">
 </a>
+</div>
 
 <nav class="nav">
 
@@ -227,7 +234,6 @@ z-index:9999;
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -235,123 +241,54 @@ z-index:9999;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
 </div>
 
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <div class="container">
 
-<!-- 🔥 DUGMAD -->
 <div class="top-buttons">
-
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="#" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-
 <h1>О удружењу Иксан</h1>
-
-<p>
-Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
-заштити достојанства грађана и развоју праведног друштва.
-</p>
-
+<p>Удружење грађана Иксан – Снага правде...</p>
 </div>
 
-<!-- CARDS -->
 <div class="grid">
 
-<article class="card">
-<h3>Ко смо</h3>
-<p>Иксан окупља грађане са циљем јачања правде и правне сигурности.</p>
-</article>
-
-<article class="card">
-<h3>Назив „Иксан“</h3>
-<p>Симбол правде, истине и одговорности.</p>
-</article>
-
-<article class="card">
-<h3>Наша мисија</h3>
-<p>Реформа система и заштита грађана.</p>
-</article>
-
-<article class="card">
-<h3>Разлог оснивања</h3>
-<p>Одговор на неправде у систему.</p>
-</article>
-
-<article class="card">
-<h3>Наш рад са грађанима</h3>
-
-<p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
-
-<p>Активни смо на Instagram, TikTok и Facebook.</p>
-
-<p>Организујемо уживо разговоре са грађанима.</p>
-
-<p>Позивамо грађане да посете нашу канцеларију.</p>
-
-<p>Повезујемо грађане са институцијама.</p>
-
-<p>Позивамо да попуне представку ради заштите права.</p>
-
-</article>
+<div class="card"><h3>Ко смо</h3><p>Иксан окупља...</p></div>
+<div class="card"><h3>Назив „Иксан“</h3><p>Симбол правде...</p></div>
+<div class="card"><h3>Наша мисија</h3><p>Реформа система...</p></div>
+<div class="card"><h3>Разлог оснивања</h3><p>Одговор на неправде...</p></div>
 
 </div>
 
-<!-- IMPRESUM -->
 <div class="impresum">
-
 <h3>Основни подаци</h3>
-
 <p>Седиште: Београд</p>
 <p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
-
 </div>
 
 </div>
 
 <script>
 const menu=document.getElementById('menu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
-
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<!-- 🔥 WHATSAPP -->
-<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
