@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -8,51 +9,56 @@
 
 <style>
 
-html,body{overflow-x:hidden;}
+:root{
+--gold:#d3a451;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
-margin:0;
 }
+
+a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER BEZ TRAKE */
+/* HEADER */
 header{
 position:sticky;
 top:0;
-z-index:1000;
+z-index:100;
 background:transparent;
-border:none;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:10px 0;
+justify-content:space-between;
+padding:4px 0;
+gap:8px;
 }
 
-/* NAV */
-nav.nav{
+.brand img{height:110px;border-radius:10px}
+
+.nav{
 display:flex;
 align-items:center;
-gap:10px;
+gap:6px;
 }
 
-/* DUGMAD MENI */
-.nav a.nav-link, .menu-btn{
-padding:6px 10px;
+.nav a,.menu-btn{
+padding:5px 7px;
 border-radius:10px;
-text-decoration:none;
 font-weight:600;
-font-size:0.9rem;
-color:#fff;
+font-size:0.8rem;
 
 background:rgba(0,0,0,0.45);
-backdrop-filter:blur(6px);
+color:#fff;
 
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
@@ -65,24 +71,16 @@ color:#000 !important;
 font-weight:700;
 }
 
-.nav a:active,.menu-btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
-}
-
 .menu{position:relative}
 
-/* DROPDOWN */
 .dropdown{
-display:none;
 position:absolute;
-top:110%;
+top:calc(100% + 8px);
 right:0;
-background:rgba(20,20,20,0.95);
+background:rgba(20,20,20,0.9);
 border-radius:12px;
-padding:8px;
+padding:6px;
+display:none;
 min-width:260px;
 }
 
@@ -90,47 +88,70 @@ min-width:260px;
 
 .dropdown a{
 display:block;
-padding:8px;
-color:#fff;
-text-decoration:none;
+padding:8px 10px;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,0.08);
-}
-
-/* GORNJA DUGMAD */
+/* TOP DUGMAD */
 .top-buttons{
 display:flex;
 justify-content:center;
-gap:15px;
-margin-top:30px;
+gap:10px;
+margin-top:25px;
 flex-wrap:wrap;
 }
 
-/* 3D dugmad */
+/* BASE 3D */
 .btn{
 display:block;
-padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-text-align:center;
-margin-bottom:10px;
+padding:12px 18px;
+border-radius:30px;
+font-weight:800;
+font-size:14px;
 
 box-shadow:
-0 5px 0 #000,
-0 15px 30px rgba(0,0,0,0.7);
+0 6px 0 rgba(0,0,0,.6),
+0 20px 40px rgba(0,0,0,.8);
+
+transition:.15s;
 }
 
+.btn:hover{
+transform:translateY(-3px) scale(1.05);
+}
+
+.btn:active{
+transform:translateY(5px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 10px 20px rgba(0,0,0,.6);
+}
+
+/* DARK */
 .btn-dark{
 background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
 color:#fff;
 }
 
+/* GOLD */
 .btn-gold{
-background:linear-gradient(145deg,#d3a451,#b68c3a);
+background:linear-gradient(145deg,#ffd36a,#d3a451);
 color:#000;
+}
+
+/* 🔵 PLAVA */
+.btn-blue{
+background:linear-gradient(145deg,#2b6fff,#1e4ed8);
+color:#fff;
+
+box-shadow:
+0 6px 0 #102c8f,
+0 20px 40px rgba(0,0,0,.8);
+}
+
+/* ⚙️ METAL */
+.btn-law{
+background:linear-gradient(145deg,#3a3a3a,#1f1f1f);
+color:#fff;
 }
 
 /* GRID */
@@ -141,15 +162,7 @@ gap:40px;
 margin-top:40px;
 }
 
-/* LEVO */
-.left{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
-}
-
-/* DESNO */
-.right{
+.left,.right{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
@@ -158,19 +171,16 @@ border-radius:15px;
 /* LISTA */
 .goals{
 list-style:none;
-padding:0;
 }
 
 .goals li{
 padding:10px 0;
-border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
 /* MOBILE */
 @media(max-width:768px){
 .main-grid{grid-template-columns:1fr}
-.right{order:1}
-.left{order:2}
+.nav{flex-wrap:wrap;justify-content:center}
 }
 
 /* WHATSAPP */
@@ -180,17 +190,24 @@ bottom:20px;
 right:20px;
 width:60px;
 height:60px;
+
 background:linear-gradient(145deg,#25D366,#1ebe5d);
-color:#000;
-font-size:28px;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 border-radius:50%;
+
 box-shadow:
 0 6px 0 #128C7E,
 0 18px 35px rgba(0,0,0,0.7);
-z-index:9999;
+}
+
+.whatsapp-float svg{
+width:28px;
+height:28px;
+fill:#000;
 }
 
 </style>
@@ -202,39 +219,34 @@ z-index:9999;
 <div class="container head">
 
 <a href="index.html">
-<img src="logo-white.png" style="height:70px">
+<img src="logo-white.png">
 </a>
 
 <nav class="nav">
 
-<a href="index.html" class="nav-link">ПОЧЕТНА</a>
-<a href="kontakt.html" class="nav-link">КОНТАКТ</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
-
 <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
 <a href="prijavi.html">Представка грађанина</a>
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
-
 </div>
 
 </div>
 
 </nav>
-
 </div>
 </header>
 
@@ -246,11 +258,11 @@ z-index:9999;
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 
-<a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="btn btn-dark">
+<a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="btn btn-blue">
 СУДСКИ ПРЕДМЕТИ У ТОКУ
 </a>
 
-<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" target="_blank" class="btn btn-dark">
+<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" target="_blank" class="btn btn-blue">
 ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ
 </a>
 
@@ -277,72 +289,29 @@ z-index:9999;
 
 <h2>Закони и прописи</h2>
 
-<!-- 🔴 NAJVIŠI AKTI -->
-<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="btn btn-dark">
-УСТАВ РЕПУБЛИКЕ СРБИЈЕ
-</a>
+<a href="#" class="btn btn-law">УСТАВ РЕПУБЛИКЕ СРБИЈЕ</a>
+<a href="#" class="btn btn-law">ЕВРОПСКА КОНВЕНЦИЈА</a>
+<a href="#" class="btn btn-law">ОПШТИ УПРАВНИ ПОСТУПАК</a>
+<a href="#" class="btn btn-law">УПРАВНИ СПОРОВИ</a>
+<a href="#" class="btn btn-law">ПАРНИЧНИ ПОСТУПАК</a>
+<a href="#" class="btn btn-law">КРИВИЧНИ ПОСТУПАК</a>
 
-<a href="https://www.echr.coe.int/documents/convention_srp.pdf" target="_blank" class="btn btn-dark">
-ЕВРОПСКА КОНВЕНЦИЈА О ЉУДСКИМ ПРАВИМА
-</a>
+</div>
 
-<!-- ⚖️ SISTEMSKI ZAKONI -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_opstem_upravnom_postupku.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ОПШТЕМ УПРАВНОМ ПОСТУПКУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_upravnim_sporovima.html" target="_blank" class="btn btn-dark">
-ЗАКОН О УПРАВНИМ СПОРОВИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakonik_o_krivicnom_postupku.html" target="_blank" class="btn btn-dark">
-ЗАКОНИК О КРИВИЧНОМ ПОСТУПКУ
-</a>
-
-<!-- ⚖️ MATERIJALNO PRAVO -->
-<a href="https://www.paragraf.rs/propisi/krivicni_zakonik.html" target="_blank" class="btn btn-dark">
-КРИВИЧНИ ЗАКОНИК
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ОБЛИГАЦИОНИМ ОДНОСИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" target="_blank" class="btn btn-dark">
-ЗАКОН О РАДУ
-</a>
-
-<!-- ⚖️ POSEBNI -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_potrosaca.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ЗАШТИТИ ПОТРОШАЧА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_podataka_o_licnosti.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ЗАШТИТИ ПОДАТАКА О ЛИЧНОСТИ
-</a>
+</div>
 
 </div>
 
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
-
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
