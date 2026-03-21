@@ -3,15 +3,16 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Иксан — Снага правде</title>
+<title>Заштита права грађана и институционална одговорност</title>
 
-<link rel="icon" href="logo-white.png">
+<link rel="icon" href="logo-white.png" type="image/png">
 
 <style>
 
 :root{
+--deepBlue:#1f1f1f;
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
@@ -19,12 +20,16 @@
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
-background:url('justice-bg.jpg') center/cover no-repeat fixed;
+min-height:100vh;
+background:url('justice-bg.jpg') center 25% / cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman";
+font-family:"Times New Roman",serif;
+line-height:1.7;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+a{text-decoration:none;color:inherit}
+
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
 /* HEADER */
 header{
@@ -39,57 +44,72 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:5px 0;
+padding:4px 0;
 }
 
-.brand img{height:120px;border-radius:10px}
+.brand img{height:140px;border-radius:10px}
 
 /* NAV */
-.nav{
-display:flex;
-gap:6px;
-}
+.nav{display:flex;gap:8px}
 
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
+font-weight:600;
 background:rgba(0,0,0,0.45);
 
 box-shadow:
-0 6px 0 rgba(0,0,0,.7),
+0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
 }
 
-.menu-btn{background:#fff;color:#000}
+.menu-btn{
+background:#fff;
+color:#000;
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:100%;
+right:0;
+background:rgba(20,20,20,.9);
+border-radius:12px;
+display:none;
+padding:6px;
+}
+
+.menu.open .dropdown{display:block}
 
 /* HERO */
 .hero{
 text-align:center;
-padding:60px 0 40px;
+padding:40px 0;
 }
 
-.hero h1{
-font-size:32px;
+h1{
+font-size:28px;
 margin-bottom:10px;
 }
 
-.hero p{
+.sub{
 color:var(--ink);
 max-width:700px;
 margin:auto;
 }
 
 /* BUTTONS */
-.cta{
+.cta-row{
 display:flex;
 justify-content:center;
-gap:12px;
-margin-top:25px;
+gap:10px;
+margin-top:20px;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:12px 22px;
+padding:10px 20px;
 border-radius:30px;
 font-weight:700;
 
@@ -98,45 +118,27 @@ box-shadow:
 0 18px 35px rgba(0,0,0,.8);
 }
 
-.btn-dark{background:#222}
-.btn-gold{background:var(--gold);color:#000}
+.btn-dark{background:#222;color:#fff}
+.btn-primary{background:var(--gold);color:#000}
 
-/* SECTION */
-.section{
-margin-top:50px;
-}
-
+/* GRID */
 .grid{
 display:grid;
 gap:25px;
+margin-top:30px;
 }
 
 @media(min-width:900px){
-.grid{grid-template-columns:1fr 1fr 1fr;}
+.grid{grid-template-columns:1fr 1fr;}
 }
 
 .card{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
-transition:.3s;
 }
 
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-/* TRUST BAR */
-.trust{
-text-align:center;
-margin-top:50px;
-color:#ccc;
-font-size:14px;
-}
+.card p{color:#ddd}
 
 /* WHATSAPP 3D */
 .whatsapp-float{
@@ -173,13 +175,18 @@ transform:translateY(6px);
 /* MOBILE */
 @media(max-width:768px){
 
-.nav{flex-wrap:wrap;justify-content:center;}
+.brand img{height:90px}
 
-.cta{
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.cta-row{
 flex-direction:column;
 }
 
-.cta a{
+.cta-row a{
 width:90%;
 text-align:center;
 }
@@ -201,57 +208,64 @@ text-align:center;
 </div>
 
 <nav class="nav">
+
 <a href="index.html">Почетна</a>
 <a href="kontakt.html">Контакт</a>
-</nav>
 
+<div class="menu" id="menu">
+<button class="menu-btn">Мени ▾</button>
+
+<div class="dropdown">
+<a href="onama.html">о Нама</a>
+<a href="inicijative.html">Захтеви</a>
+<a href="prijavi.html">Представка</a>
+<a href="uradili.html">Шта смо урадили</a>
+</div>
+
+</div>
+
+</nav>
 </div>
 </header>
 
-<!-- HERO -->
+<main>
+
 <section class="hero">
 
-<h1>Заштита права грађана и владавина права</h1>
+<h1>Заштита права грађана</h1>
 
-<p>
-Иницијатива за праведан, транспарентан и одговоран правни систем.
+<p class="sub">
+Иницијатива за праведнији и одговорнији правни систем.
 </p>
 
-<div class="cta">
-<a href="prijavi.html" class="btn btn-dark">ПОДНЕСИ ПРЕДСТАВКУ</a>
-<a href="inicijative.html" class="btn btn-dark">ПОГЛЕДАЈ ЗАКОНЕ</a>
-<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ РАД</a>
+<div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРИЈАВА</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ</a>
 </div>
 
 </section>
 
-<!-- SEKCIJA -->
-<section class="section container">
-
-<div class="grid">
+<div class="container grid">
 
 <div class="card">
-<h3>Реформа правосуђа</h3>
-<p>Јачање независности судства и правичног поступка.</p>
+<h3>Реформа система</h3>
+<p>Јачање правне сигурности и контроле.</p>
 </div>
 
 <div class="card">
 <h3>Транспарентност</h3>
-<p>Контрола јавних финансија и спречавање злоупотреба.</p>
-</div>
-
-<div class="card">
-<h3>Правна сигурност</h3>
-<p>Заштита грађана, радника и привреде.</p>
+<p>Контрола јавних финансија и функција.</p>
 </div>
 
 </div>
 
-</section>
+</main>
 
-<div class="trust">
-Контакт искључиво путем WhatsApp поруке
-</div>
+<script>
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+</script>
 
 <a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
