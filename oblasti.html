@@ -13,11 +13,8 @@
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
-
-html,body{overflow-x:hidden;}
 
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
@@ -28,7 +25,7 @@ margin:0;
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER (INDEX STYLE) ===== */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -43,7 +40,6 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:4px 0 0;
-gap:12px;
 }
 
 .brand img{
@@ -55,43 +51,26 @@ border-radius:10px;
 display:flex;
 align-items:center;
 gap:10px;
-padding-right:8px;
 }
 
-/* NAV DUGMAD */
+/* NAV */
 .nav a.nav-link,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.9rem;
-white-space:nowrap;
 color:#fff;
 background:rgba(0,0,0,0.45);
-backdrop-filter:blur(6px);
 
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
-
-transition:.15s;
 }
 
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
-}
-
-.nav a.nav-link:hover,.menu-btn:hover{
-transform:translateY(-2px);
-filter:brightness(1.2);
-}
-
-.nav a.nav-link:active,.menu-btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
 }
 
 /* DROPDOWN */
@@ -102,8 +81,6 @@ position:absolute;
 top:calc(100% + 8px);
 right:0;
 background:rgba(20,20,20,0.85);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 min-width:280px;
 padding:6px;
@@ -118,30 +95,25 @@ padding:9px 10px;
 border-radius:8px;
 color:#fff;
 font-weight:600;
-font-size:14px;
-border:1px solid transparent;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
-border-color:rgba(255,255,255,.16);
-}
-
-/* CTA dugmad */
+/* CTA — ISTO KAO INDEX */
 .cta-row{
 display:flex;
 justify-content:center;
-gap:10px;
+gap:8px;
 margin-top:30px;
-flex-wrap:wrap;
+flex-wrap:nowrap;
 }
 
 .btn{
-padding:12px 20px;
+display:inline-block;
+padding:10px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
 text-transform:uppercase;
+white-space:nowrap;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
@@ -158,10 +130,6 @@ background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
 }
 
-.btn:active{
-transform:translateY(4px);
-}
-
 /* GRID */
 .main-grid{
 display:grid;
@@ -176,18 +144,7 @@ padding:25px;
 border-radius:15px;
 }
 
-.areas li{
-margin-bottom:12px;
-color:var(--ink);
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.main-grid{grid-template-columns:1fr;}
-.nav{flex-wrap:wrap;justify-content:center;}
-}
-
-/* ===== WHATSAPP — IDENTIČAN INDEXU ===== */
+/* WHATSAPP — ČIST */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -197,7 +154,7 @@ height:60px;
 
 background:linear-gradient(145deg,#25D366,#1ebe5d);
 color:#000;
-font-size:28px;
+font-size:26px;
 
 display:flex;
 align-items:center;
@@ -209,43 +166,13 @@ box-shadow:
 0 6px 0 #128C7E,
 0 18px 35px rgba(0,0,0,0.7);
 
-z-index:9999;
-cursor:pointer;
-
-/* animacija */
 animation:waPulse 2s infinite;
 }
 
-/* hover */
-.whatsapp-float:hover{
-transform:translateY(-3px);
-}
-
-/* klik */
-.whatsapp-float:active{
-transform:translateY(4px);
-box-shadow:
-0 2px 0 #128C7E,
-0 10px 20px rgba(0,0,0,0.6);
-}
-
-/* puls */
 @keyframes waPulse{
-0%{
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-}
-50%{
-box-shadow:
-0 6px 0 #128C7E,
-0 25px 45px rgba(0,0,0,0.9);
-}
-100%{
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-}
+0%{box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);}
+50%{box-shadow:0 6px 0 #128C7E,0 25px 45px rgba(0,0,0,0.9);}
+100%{box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);}
 }
 
 </style>
@@ -271,7 +198,6 @@ box-shadow:
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -284,8 +210,8 @@ box-shadow:
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 <a href="uradili.html">Шта смо до сада урадили</a>
-
 </div>
+
 </div>
 
 </nav>
@@ -313,36 +239,17 @@ box-shadow:
 <div class="main-grid">
 
 <div class="left">
-
 <h2>Области деловања</h2>
-
-<p>
-Наш рад је усмерен на заштиту права грађана, борбу против корупције и јачање институционалног система.
-</p>
-
-<p>
-Делујемо кроз правну подршку, иницијативе за измену закона и активно учешће у јавном животу.
-</p>
-
+<p>Наш рад је усмерен на заштиту права грађана...</p>
 </div>
 
 <div class="right">
-
 <h2>Кључне области</h2>
-
 <ul class="areas">
-
-<li>Заштита људских и грађанских права</li>
+<li>Заштита људских права</li>
 <li>Борба против корупције</li>
 <li>Транспарентност институција</li>
-<li>Правна подршка грађанима</li>
-<li>Економска правда</li>
-<li>Заштита радника и предузетника</li>
-<li>Развој демократије</li>
-<li>Заштита права у поступцима</li>
-
 </ul>
-
 </div>
 
 </div>
@@ -351,19 +258,10 @@ box-shadow:
 
 <script>
 const menu=document.getElementById('menu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
-
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">☎</a>
 
 </body>
 </html>
