@@ -51,40 +51,64 @@ height:120px;
 border-radius:10px;
 }
 
-/* NAV */
-.nav{
+nav.nav{
 display:flex;
+flex-direction:row;
+align-items:center;
 gap:10px;
-flex-wrap:wrap;
-justify-content:center;
+padding-top:0;
+padding-right:8px;
 }
 
-/* 🔥 3D NAV */
-.nav a,.menu-btn{
+/* 🔥 NOVI IZGLED DUGMADI */
+.nav a.nav-link, .menu-btn{
+
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:8px;
+border-radius:10px;
 text-decoration:none;
 font-weight:600;
+font-size:0.9rem;
+line-height:1;
+white-space:nowrap;
 
+color:#fff;
+
+/* lebdeći efekat */
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(6px);
+
+/* 3D */
 box-shadow:
-0 3px 0 rgba(0,0,0,.6),
-0 10px 20px rgba(0,0,0,.6);
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+
+transition:all .15s ease;
 }
 
-/* 🔥 MENI dugme belo + crna slova */
+/* 🔥 MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
-/* klik efekat */
-.nav a:active,.menu-btn:active{
+/* hover */
+.nav a.nav-link:hover, .menu-btn:hover{
+transform:translateY(-2px);
+filter:brightness(1.2);
+}
+
+/* klik */
+.nav a.nav-link:active, .menu-btn:active{
 transform:translateY(3px);
 box-shadow:
-0 1px 0 rgba(0,0,0,.6),
-0 5px 10px rgba(0,0,0,.5);
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
+}
+
+.nav a[aria-current="page"]{
+outline:2px solid var(--gold);
+outline-offset:2px
 }
 
 .menu{position:relative}
