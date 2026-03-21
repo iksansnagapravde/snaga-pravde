@@ -179,7 +179,7 @@ background:#222;
 color:#fff;
 }
 
-/* ===== WHATSAPP 3D ===== */
+/* ===== WHATSAPP 3D — DARK ===== */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -187,7 +187,7 @@ right:20px;
 width:60px;
 height:60px;
 
-background:linear-gradient(145deg,#25D366,#1ebe5d);
+background:linear-gradient(145deg,#0f0f0f,#2a2a2a);
 
 display:flex;
 align-items:center;
@@ -197,29 +197,31 @@ border-radius:50%;
 
 /* 3D */
 box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
+0 6px 0 #000,
+0 18px 35px rgba(0,0,0,0.9);
 
 z-index:9999;
 cursor:pointer;
 transition:0.15s;
+
+border:1px solid rgba(255,255,255,0.15);
 }
 
 .whatsapp-float:hover{
-transform:translateY(-3px);
+transform:translateY(-3px) scale(1.05);
 }
 
 .whatsapp-float:active{
 transform:translateY(5px);
 box-shadow:
-0 2px 0 #128C7E,
-0 10px 20px rgba(0,0,0,0.6);
+0 2px 0 #000,
+0 10px 20px rgba(0,0,0,0.7);
 }
 
 .whatsapp-float svg{
 width:28px;
 height:28px;
-fill:#000;
+fill:#d3a451;
 }
 
 /* ===== MOBILE ===== */
@@ -306,7 +308,7 @@ text-align:center;
 
 <div class="docs-grid">
 
-<a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
+<a href="OBRAZAC_PREDSTAVКА_GRADJAN.pdf" target="_blank" class="doc-card">
 <h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
 <p>Образац који се попуњава и шаље.</p>
 <span class="doc-btn">ОТВОРИ ДОКУМЕНТ</span>
@@ -327,7 +329,6 @@ const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<!-- ✅ 3D WHATSAPP -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">
 <svg viewBox="0 0 24 24">
 <path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
