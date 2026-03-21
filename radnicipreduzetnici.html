@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,71 +16,130 @@
 --ink:#dcdcdc;
 }
 
+*{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:inherit}
+
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
-margin:0;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER DESNO */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
-background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,.2);
+z-index:100;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:flex-end;
-padding:10px 0;
+align-items:center;
+justify-content:space-between;
+padding:4px 0;
 }
 
+.brand img{
+height:95px;
+border-radius:10px;
+}
+
+/* NAV */
 .nav{
 display:flex;
-gap:10px;
+align-items:center;
+gap:6px;
 }
 
+/* 🔥 3D dugmad */
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
+border-radius:10px;
+font-weight:600;
+font-size:0.85rem;
+
+background:rgba(0,0,0,0.45);
 color:#fff;
-text-decoration:none;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.8),
+0 18px 35px rgba(0,0,0,.9);
+
+transition:.15s;
+}
+
+.nav a:hover,.menu-btn:hover{
+transform:translateY(-2px);
+}
+
+.nav a:active,.menu-btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.8),
+0 10px 20px rgba(0,0,0,.7);
+}
+
+.menu-btn{
+background:#fff;
+color:#000;
+font-weight:700;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:110%;
+top:calc(100% + 8px);
 right:0;
-background:#111;
-padding:8px;
-border-radius:10px;
+background:rgba(20,20,20,0.97);
+border-radius:12px;
+padding:6px;
 display:none;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* TOP BUTTONS */
+.dropdown a{
+display:block;
+padding:9px 10px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.08);
+}
+
+/* ===== TOP BUTTONS ===== */
 .top-buttons{
 display:flex;
 justify-content:center;
-gap:15px;
-margin-top:30px;
-flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
 }
 
 .btn{
-padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-display:inline-block;
+padding:10px 20px;
+border-radius:30px;
+font-weight:700;
+font-size:13px;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.6),
+0 18px 35px rgba(0,0,0,.8);
+
+transition:.15s;
+}
+
+.btn:hover{
+transform:translateY(-2px) scale(1.03);
+}
+
+.btn:active{
+transform:translateY(5px);
 }
 
 .btn-dark{background:#222;color:#fff;}
@@ -88,20 +148,15 @@ display:inline-block;
 /* GRID */
 .main-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-margin-top:40px;
+gap:30px;
+margin-top:30px;
 }
 
-/* LEVO */
-.left{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* DESNO */
-.right{
+.left,.right{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
@@ -111,7 +166,43 @@ border-radius:15px;
 
 /* MOBILE */
 @media(max-width:768px){
-.main-grid{grid-template-columns:1fr}
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:90%;
+text-align:center;
+}
+
+}
+
+/* SLUSALICA */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
 }
 
 </style>
@@ -119,9 +210,14 @@ border-radius:15px;
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png">
+</a>
+</div>
 
 <nav class="nav">
 
@@ -130,9 +226,8 @@ border-radius:15px;
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
-  
-<div class="dropdown">
 
+<div class="dropdown">
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -149,13 +244,11 @@ border-radius:15px;
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <div class="container">
 
-<!-- 🔥 SVA DUGMAD -->
 <div class="top-buttons">
 
 <a href="inicijative.html" class="btn btn-dark">
@@ -172,10 +265,8 @@ border-radius:15px;
 
 </div>
 
-<!-- GRID -->
 <div class="main-grid">
 
-<!-- LEVO -->
 <div class="left">
 
 <h2>Правна сигурност рада и привреде</h2>
@@ -192,7 +283,6 @@ border-radius:15px;
 
 </div>
 
-<!-- DESNO -->
 <div class="right">
 
 <h3>Заштита права запослених</h3>
@@ -226,9 +316,7 @@ border-radius:15px;
 <script>
 const menu=document.getElementById('menu');
 
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
@@ -236,6 +324,12 @@ menu.classList.remove('open');
 }
 });
 </script>
+
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
