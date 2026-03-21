@@ -191,40 +191,43 @@ text-align:center;
 position:fixed;
 bottom:20px;
 right:20px;
-width:60px;
-height:60px;
+width:65px;
+height:65px;
 
-background:linear-gradient(145deg,#86b3bb,#6e9ea7);
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+
 display:flex;
 align-items:center;
 justify-content:center;
 
 border-radius:50%;
 
-/* 🔥 OVO JE 3D */
+/* 3D efekat */
 box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
+0 8px 0 #128C7E,
+0 20px 40px rgba(0,0,0,0.8);
 
+filter:drop-shadow(0 0 6px rgba(37,211,102,0.6));
+
+z-index:9999;
 cursor:pointer;
 transition:0.15s;
-z-index:9999;
 }
 
 .whatsapp-float:hover{
-transform:translateY(-3px);
+transform:translateY(-4px) scale(1.08);
 }
 
 .whatsapp-float:active{
-transform:translateY(5px);
+transform:translateY(6px);
 box-shadow:
-0 2px 0 #128C7E,
-0 10px 20px rgba(0,0,0,0.6);
+0 3px 0 #128C7E,
+0 10px 20px rgba(0,0,0,0.7);
 }
 
 .whatsapp-float svg{
-width:28px;
-height:28px;
+width:30px;
+height:30px;
 fill:#000;
 }
 
@@ -348,10 +351,11 @@ menu.classList.remove('open');
 });
 </script>
 
-<a href="tel:+381665857707" class="call-float">
+<a href="https://wa.me/381665857707" class="whatsapp-float">
 <svg viewBox="0 0 24 24">
-<path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.3a1 1 0 011 1 11.4 11.4 0 00.6 3.6 1 1 0 01-.25 1z"/>
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9л-1.9 2з"/>
 </svg>
 </a>
+
 </body>
 </html>
