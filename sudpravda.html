@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Независност и правичност судског система — Иксан</title>
+<title>Правна сигурност — Иксан</title>
 
 <link rel="icon" href="logo-white.png">
 
@@ -17,18 +17,17 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-a{text-decoration:none;color:#fff}
+a{text-decoration:none;color:inherit}
 
-/* BODY */
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
-font-family:"Times New Roman";
 color:#fff;
+font-family:"Times New Roman";
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER (PELcer) ===== */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -52,10 +51,11 @@ border-radius:10px;
 /* NAV */
 .nav{
 display:flex;
+align-items:center;
 gap:6px;
 }
 
-/* 🔥 3D */
+/* 🔥 3D dugmad */
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
@@ -63,6 +63,7 @@ font-weight:600;
 font-size:0.85rem;
 
 background:rgba(0,0,0,0.45);
+color:#fff;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.8),
@@ -94,7 +95,7 @@ font-weight:700;
 position:absolute;
 top:calc(100% + 8px);
 right:0;
-background:rgba(20,20,20,.97);
+background:rgba(20,20,20,0.97);
 border-radius:12px;
 padding:6px;
 display:none;
@@ -108,36 +109,23 @@ display:block;
 padding:9px 10px;
 }
 
-/* ===== HERO ===== */
-.hero{
-padding:50px 0;
-text-align:center;
-animation:fadeIn 1s ease;
+.dropdown a:hover{
+background:rgba(255,255,255,.08);
 }
 
-h1{
-font-size:32px;
-}
-
-.sub{
-color:var(--ink);
-max-width:700px;
-margin:10px auto;
-}
-
-/* ===== GORNJA DUGMAD ===== */
-.cta-row{
+/* ===== TOP BUTTONS ===== */
+.top-buttons{
 display:flex;
 justify-content:center;
 gap:10px;
-margin-top:25px;
-flex-wrap:wrap;
+margin-top:20px;
 }
 
 .btn{
 padding:10px 20px;
 border-radius:30px;
 font-weight:700;
+font-size:13px;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.6),
@@ -146,39 +134,35 @@ box-shadow:
 transition:.15s;
 }
 
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(5px)}
+.btn:hover{
+transform:translateY(-2px) scale(1.03);
+}
 
-.btn-dark{background:#222}
-.btn-primary{background:var(--gold);color:#000}
+.btn:active{
+transform:translateY(5px);
+}
+
+.btn-dark{background:#222;color:#fff;}
+.btn-gold{background:var(--gold);color:#000;}
 
 /* GRID */
-.grid{
+.main-grid{
 display:grid;
-gap:20px;
+gap:30px;
 margin-top:30px;
 }
 
 @media(min-width:900px){
-.grid{grid-template-columns:repeat(2,1fr)}
+.main-grid{grid-template-columns:1fr 1fr;}
 }
 
-.card{
-background:rgba(20,20,20,0.6);
-padding:20px;
-border-radius:20px;
-box-shadow:0 20px 50px rgba(0,0,0,.7);
+.left,.right{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
 }
 
-.card.full{grid-column:1/-1}
-
-.card p,.card li{color:#ddd}
-
-/* ANIM */
-@keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
-}
+.right p,.right li{color:var(--ink)}
 
 /* MOBILE */
 @media(max-width:768px){
@@ -188,6 +172,16 @@ to{opacity:1}
 .nav{
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:90%;
+text-align:center;
 }
 
 }
@@ -279,67 +273,87 @@ fill:#000;
 </div>
 </header>
 
-<main>
+<div class="container">
 
-<section class="hero">
+<div class="top-buttons">
 
-<h1>Независност и правичност судског система</h1>
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
 
-<p class="sub">
-Правна држава почива на независном судству и правичном поступку.
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+ПОДРЖИ НАШ РАД
+</a>
+
+</div>
+
+<div class="main-grid">
+
+<div class="left">
+
+<h2>Правна сигурност рада и привреде</h2>
+
+<p>
+Стабилна економија заснива се на равнотежи између заштите права запослених
+и фер услова за предузетнике.
 </p>
 
-<div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНА</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
+<p>
+Циљ је стварање правног окружења у којем рад и предузетништво могу
+равноправно да се развијају.
+</p>
+
 </div>
 
-</section>
+<div class="right">
 
-<div class="container grid">
+<h3>Заштита права запослених</h3>
 
-<div class="card full">
-<h3>Заштита права грађана</h3>
-<p>Јачање правичног поступка.</p>
-</div>
-
-<div class="card">
-<h3>Реформа притвора</h3>
 <ul>
-<li>Јасни услови</li>
-<li>Контрола</li>
-<li>Разуман рок</li>
+<li>Поштовање радног законодавства</li>
+<li>Правичне накнаде за рад</li>
+<li>Правна заштита запослених</li>
 </ul>
-</div>
 
-<div class="card">
-<h3>Хумани услови</h3>
-<p>Унапређење услова.</p>
-</div>
+<h3>Фер услови за предузетнике</h3>
 
-<div class="card">
-<h3>Ресоцијализација</h3>
-<p>Повратак у друштво.</p>
-</div>
+<ul>
+<li>Једнаки услови тржишта</li>
+<li>Спречавање монопола</li>
+<li>Здрава конкуренција</li>
+</ul>
 
-<div class="card full">
-<h3>Пропорционалност казни</h3>
-<p>Усклађивање са европским стандардима.</p>
-</div>
+<h3>Одржива економија</h3>
+
+<p>
+Правна сигурност је основ стабилног привредног система.
+</p>
 
 </div>
 
-</main>
+</div>
+
+</div>
 
 <script>
 const menu=document.getElementById('menu');
+
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
+});
 </script>
 
 <a href="https://wa.me/381665857707" class="whatsapp-float">
 <svg viewBox="0 0 24 24">
-<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9л-1.9 2з"/>
 </svg>
 </a>
 
