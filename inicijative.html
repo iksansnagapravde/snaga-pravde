@@ -17,10 +17,11 @@ margin:0;
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER DESNO */
+/* HEADER */
 header{
 position:sticky;
 top:0;
+z-index:1000;
 background:rgba(0,0,0,0.7);
 border-bottom:1px solid rgba(255,255,255,.2);
 }
@@ -36,27 +37,75 @@ display:flex;
 gap:10px;
 }
 
-.nav a,.menu-btn{
-padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
-color:#fff;
-text-decoration:none;
-}
-
 .menu{position:relative}
 
+/* GORNJA DUGMAD */
+.nav a,.menu-btn{
+text-decoration:none;
+color:#fff;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:10px;
+padding:6px 10px;
+font-weight:600;
+}
+
+/* DROPDOWN */
 .dropdown{
+display:none;
 position:absolute;
 top:110%;
 right:0;
-background:#111;
+background:rgba(20,20,20,0.9);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+padding:6px;
+min-width:260px;
+z-index:2000;
+}
+
+.dropdown a{
+display:block;
 padding:8px;
-border-radius:10px;
-display:none;
+color:#fff;
+text-decoration:none;
+border-radius:8px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,0.08);
 }
 
 .menu.open .dropdown{display:block}
+
+/* 3D dugmad */
+.btn{
+display:block;
+padding:12px 20px;
+border-radius:25px;
+font-weight:bold;
+text-decoration:none;
+text-align:center;
+margin-bottom:10px;
+}
+
+.btn-dark{
+background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
+box-shadow:0 5px 0 #000,0 15px 30px rgba(0,0,0,0.7);
+color:#fff;
+}
+
+.btn-gold{
+background:linear-gradient(145deg,#d3a451,#b68c3a);
+box-shadow:0 5px 0 #8a6a2a,0 15px 30px rgba(0,0,0,0.7);
+color:#000;
+}
+
+.btn:active{
+transform:translateY(3px);
+box-shadow:0 2px 0 #000,0 8px 15px rgba(0,0,0,0.5);
+}
 
 /* GORE DUGMAD */
 .top-buttons{
@@ -64,26 +113,7 @@ display:flex;
 justify-content:center;
 gap:15px;
 margin-top:30px;
-}
-
-.btn{
-padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-display:block;
-margin-bottom:10px;
-text-align:center;
-}
-
-.btn-dark{
-background:#222;
-color:#fff;
-}
-
-.btn-gold{
-background:#d3a451;
-color:#000;
+flex-wrap:wrap;
 }
 
 /* GRID */
@@ -111,6 +141,7 @@ border-radius:15px;
 /* LISTA */
 .goals{
 list-style:none;
+padding:0;
 }
 
 .goals li{
@@ -127,12 +158,28 @@ margin-top:40px;
 flex-wrap:wrap;
 }
 
+/* 📱 MOBILNI RASPORED */
+@media(max-width:768px){
+
+.main-grid{
+grid-template-columns:1fr;
+}
+
+.right{
+order:1;
+}
+
+.left{
+order:2;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container head">
 
@@ -150,13 +197,17 @@ flex-wrap:wrap;
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
+
 <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+
+<a href="prijavi.html">Представка грађанина</a>
+
+<a href="doniraj.html">Подржите наш рад</a>
+<a href="prikljucise.html">Прикључите се нашем раду</a>
+
 </div>
 
 </div>
@@ -175,8 +226,16 @@ flex-wrap:wrap;
 ПРЕДСТАВКА ГРАЂАНИНА
 </a>
 
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+<a href="doniraj.html" class="btn btn-gold">
 ПОДРЖИ НАШ РАД
+</a>
+
+<a href="#" class="btn btn-dark">
+СУДСКИ ПРЕДМЕТИ У ТОКУ
+</a>
+
+<a href="#" class="btn btn-dark">
+ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ
 </a>
 
 </div>
@@ -190,7 +249,6 @@ flex-wrap:wrap;
 <h2>Кључни правни захтеви</h2>
 
 <ul class="goals">
-
 <li><strong>УВОЂЕЊЕ НОВОГ ЗАКОНА О ИНСОЛВЕНТНОСТИ ФИЗИЧКИХ ЛИЦА</strong></li>
 <li>Измена и допуна закона о извршењу и обезбеђењу</li>
 <li>Измена и допуна закона о заштити конкуренције</li>
@@ -200,53 +258,35 @@ flex-wrap:wrap;
 <li>Ефикаснији и праведнији судски поступци</li>
 <li>Унапређење приступа правди за све грађане</li>
 <li>Дигитализација и убрзање поступака</li>
-
 </ul>
 
 </div>
 
-<!-- DESNO DUGMAD -->
+<!-- DESNO -->
 <div class="right">
 
 <h2>Закони</h2>
 
-<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="btn btn-dark">
-УСТАВ РЕПУБЛИКЕ СРБИЈЕ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon-ratifikaciji-evropske-konvencije-ljudska-prava-osnovne-slobode.html" target="_blank" class="btn btn-dark">
-ЕВРОПСКА КОНВЕНЦИЈА О ЉУДСКИМ ПРАВИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon-o-opstem-upravnom-postupku.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ОПШТЕМ УПРАВНОМ ПОСТУПКУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ОБЛИГАЦИОНИМ ОДНОСИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="btn btn-dark">
-ЗАКОН О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ
-</a>
+<a href="#" class="btn btn-dark">УСТАВ РЕПУБЛИКЕ СРБИЈЕ</a>
+<a href="#" class="btn btn-dark">ЕВРОПСКА КОНВЕНЦИЈА</a>
+<a href="#" class="btn btn-dark">ЗАКОН О УПРАВНОМ ПОСТУПКУ</a>
+<a href="#" class="btn btn-dark">ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ</a>
+<a href="#" class="btn btn-dark">ЗАКОН О ОБЛИГАЦИЈАМА</a>
+<a href="#" class="btn btn-dark">ЗАКОН О ИЗВРШЕЊУ</a>
 
 </div>
 
 </div>
 
-<!-- DOLE DUGMAD -->
+<!-- DOLE -->
 <div class="bottom-buttons">
 
-<a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="btn btn-dark">
+<a href="#" class="btn btn-dark">
 СУДСКИ ПРЕДМЕТИ У ТОКУ
 </a>
 
-<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" target="_blank" class="btn btn-dark">
-ПОСТУПЦИ ИЗВРШЕЊА У ТОКУ
+<a href="#" class="btn btn-dark">
+ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ
 </a>
 
 </div>
