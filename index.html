@@ -82,23 +82,50 @@ padding-top:0;
 padding-right:8px;
 }
 
+/* 🔥 NOVI IZGLED DUGMADI */
 .nav a.nav-link, .menu-btn{
-background:transparent;
-color:#fff;
-padding:6px 9px;
-border-radius:8px;
-border:1px solid rgba(255,255,255,.2);
+
+padding:6px 10px;
+border-radius:10px;
+text-decoration:none;
 font-weight:600;
 font-size:0.9rem;
 line-height:1;
-transition:transform .15s ease,filter .15s ease;
 white-space:nowrap;
+
+color:#fff;
+
+/* lebdeći efekat */
+background:rgba(0,0,0,0.45);
 backdrop-filter:blur(6px);
+
+/* 3D */
+box-shadow:
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+
+transition:all .15s ease;
 }
 
+/* 🔥 MENI dugme */
+.menu-btn{
+background:#fff;
+color:#000 !important;
+font-weight:700;
+}
+
+/* hover */
 .nav a.nav-link:hover, .menu-btn:hover{
-transform:translateY(-1px);
-filter:brightness(1.2)
+transform:translateY(-2px);
+filter:brightness(1.2);
+}
+
+/* klik */
+.nav a.nav-link:active, .menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
 }
 
 .nav a[aria-current="page"]{
