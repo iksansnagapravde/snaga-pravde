@@ -11,29 +11,27 @@
 
 <style>
 
-/* ===== KOPIRANO IZ INDEX (BEZ IZMENA) ===== */
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{height:100%}
-
 body{
 min-height:100vh;
-background: url('justice-bg.jpg') center 25% / cover no-repeat fixed;
+background:url('justice-bg.jpg') center 25% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
-font-size:110%;
 }
+
+a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
+/* ===== HEADER (INDEX) ===== */
 header{
 position:sticky;
 top:0;
@@ -49,7 +47,6 @@ align-items:center;
 justify-content:space-between;
 padding:4px 0 0;
 gap:12px;
-flex-wrap:nowrap;
 }
 
 .brand img{
@@ -57,29 +54,29 @@ height:161px;
 border-radius:10px;
 }
 
-nav.nav{
+.nav{
 display:flex;
 align-items:center;
 gap:10px;
-padding-right:8px;
 }
 
-/* NAV */
-.nav a.nav-link, .menu-btn{
+/* NAV DUGMAD */
+.nav a.nav-link,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.9rem;
 line-height:1;
 white-space:nowrap;
-color:#fff;
+
 background:rgba(0,0,0,0.45);
+color:#fff;
 
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
 
-transition:all .15s ease;
+transition:.15s;
 }
 
 .menu-btn{
@@ -88,16 +85,15 @@ color:#000 !important;
 font-weight:700;
 }
 
-.nav a.nav-link:hover, .menu-btn:hover{
+.nav a.nav-link:hover,.menu-btn:hover{
 transform:translateY(-2px);
-filter:brightness(1.2);
 }
 
-.nav a.nav-link:active, .menu-btn:active{
+.nav a.nav-link:active,.menu-btn:active{
 transform:translateY(3px);
 }
 
-/* MENU */
+/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
@@ -119,15 +115,12 @@ display:block;
 padding:9px 10px;
 border-radius:8px;
 color:#fff;
-font-weight:600;
-font-size:14px;
 }
 
-/* CTA — ISTO */
+/* ===== CTA (IDENTIČAN INDEXU) ===== */
 .cta-row{
 display:flex;
 justify-content:center;
-flex-wrap:nowrap;
 gap:8px;
 margin-top:14px;
 }
@@ -138,30 +131,13 @@ border-radius:40px;
 font-weight:700;
 font-size:13px;
 text-transform:uppercase;
+line-height:1;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
 
-opacity:0;
-transform:translateY(25px) scale(0.95);
-animation:btnFade .6s ease forwards;
-}
-
-.cta-row a:nth-child(1){animation-delay:.1s;}
-.cta-row a:nth-child(2){animation-delay:.2s;}
-.cta-row a:nth-child(3){animation-delay:.3s;}
-
-@keyframes btnFade{
-to{
-opacity:1;
-transform:translateY(0) scale(1);
-}
-}
-
-.btn-primary{
-background:var(--gold);
-color:#000;
+transition:.15s;
 }
 
 .btn-dark{
@@ -169,7 +145,12 @@ background:rgba(20,20,20,0.6);
 color:#fff;
 }
 
-/* ===== TVOJ SADRŽAJ ===== */
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
+/* GRID */
 .main-grid{
 display:grid;
 gap:25px;
@@ -186,7 +167,7 @@ padding:25px;
 border-radius:15px;
 }
 
-/* WHATSAPP — ISTO */
+/* ===== WHATSAPP (SAVRŠEN — NEMA CRTE) ===== */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -195,9 +176,6 @@ width:60px;
 height:60px;
 
 background:linear-gradient(145deg,#25D366,#1ebe5d);
-color:#000;
-font-size:28px;
-
 display:flex;
 align-items:center;
 justify-content:center;
@@ -209,6 +187,12 @@ box-shadow:
 0 18px 35px rgba(0,0,0,0.7);
 
 animation:waPulse 2s infinite;
+}
+
+.whatsapp-float svg{
+width:28px;
+height:28px;
+fill:#000;
 }
 
 @keyframes waPulse{
@@ -237,6 +221,7 @@ align-items:center;
 
 .cta-row a{
 width:90%;
+text-align:center;
 }
 }
 
@@ -283,12 +268,12 @@ width:90%;
 </div>
 </header>
 
-<div class="cta-row">
+<div class="container">
 
+<div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-
 </div>
 
 <div class="main-grid">
@@ -322,7 +307,11 @@ const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
