@@ -22,7 +22,6 @@ body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
-line-height:1.6;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
@@ -43,10 +42,7 @@ align-items:center;
 padding:5px 0;
 }
 
-.brand img{
-height:120px;
-border-radius:10px;
-}
+.brand img{height:120px;border-radius:10px}
 
 /* NAV */
 .nav{
@@ -58,24 +54,13 @@ gap:6px;
 padding:6px 10px;
 border-radius:10px;
 background:rgba(0,0,0,0.45);
-color:#fff;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
-
-transition:.15s;
 }
 
-.nav a:hover{
-transform:translateY(-2px);
-}
-
-.menu-btn{
-background:#fff;
-color:#000;
-font-weight:700;
-}
+.menu-btn{background:#fff;color:#000}
 
 /* HERO */
 .hero{
@@ -111,26 +96,19 @@ font-weight:700;
 box-shadow:
 0 6px 0 rgba(0,0,0,.6),
 0 18px 35px rgba(0,0,0,.8);
-
-transition:.15s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.btn:active{
-transform:translateY(5px);
 }
 
 .btn-dark{background:#222}
 .btn-gold{background:var(--gold);color:#000}
 
-/* GRID */
+/* SECTION */
+.section{
+margin-top:50px;
+}
+
 .grid{
 display:grid;
 gap:25px;
-margin-top:30px;
 }
 
 @media(min-width:900px){
@@ -145,51 +123,22 @@ transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
+transform:translateY(-5px);
 }
 
 .card h3{
 margin-bottom:10px;
 }
 
-.card p{
-color:#ddd;
-}
-
-/* ANIMACIJE */
-.fade-in{
-opacity:0;
-transform:translateY(30px);
-animation:fadeIn .8s ease forwards;
-}
-
-.fade-in.delay1{animation-delay:.2s;}
-.fade-in.delay2{animation-delay:.4s;}
-.fade-in.delay3{animation-delay:.6s;}
-
-@keyframes fadeIn{
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-/* GLOW */
-.glow{
-text-shadow:
-0 0 10px rgba(211,164,81,0.6),
-0 0 30px rgba(211,164,81,0.4);
-}
-
-/* TRUST */
+/* TRUST BAR */
 .trust{
 text-align:center;
-margin-top:40px;
+margin-top:50px;
 color:#ccc;
 font-size:14px;
 }
 
-/* WHATSAPP 3D + PULSE */
+/* WHATSAPP 3D */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -211,9 +160,6 @@ box-shadow:
 
 cursor:pointer;
 z-index:9999;
-
-/* puls */
-animation:pulse 2s infinite;
 }
 
 .whatsapp-float:hover{
@@ -224,19 +170,10 @@ transform:translateY(-4px);
 transform:translateY(6px);
 }
 
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
-}
-
 /* MOBILE */
 @media(max-width:768px){
 
-.nav{
-flex-wrap:wrap;
-justify-content:center;
-}
+.nav{flex-wrap:wrap;justify-content:center;}
 
 .cta{
 flex-direction:column;
@@ -245,10 +182,6 @@ flex-direction:column;
 .cta a{
 width:90%;
 text-align:center;
-}
-
-.brand img{
-height:90px;
 }
 
 }
@@ -278,15 +211,13 @@ height:90px;
 <!-- HERO -->
 <section class="hero">
 
-<h1 class="glow fade-in">
-Заштита права грађана и владавина права
-</h1>
+<h1>Заштита права грађана и владавина права</h1>
 
-<p class="fade-in delay1">
+<p>
 Иницијатива за праведан, транспарентан и одговоран правни систем.
 </p>
 
-<div class="cta fade-in delay2">
+<div class="cta">
 <a href="prijavi.html" class="btn btn-dark">ПОДНЕСИ ПРЕДСТАВКУ</a>
 <a href="inicijative.html" class="btn btn-dark">ПОГЛЕДАЈ ЗАКОНЕ</a>
 <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ РАД</a>
@@ -294,35 +225,35 @@ height:90px;
 
 </section>
 
-<!-- TRUST -->
-<div class="trust fade-in delay2">
-✔ Рад са грађанима • ✔ Правна заштита • ✔ Владавина права
-</div>
+<!-- SEKCIJA -->
+<section class="section container">
 
-<!-- GRID -->
-<section class="container grid">
+<div class="grid">
 
-<div class="card fade-in delay1">
+<div class="card">
 <h3>Реформа правосуђа</h3>
 <p>Јачање независности судства и правичног поступка.</p>
 </div>
 
-<div class="card fade-in delay2">
+<div class="card">
 <h3>Транспарентност</h3>
 <p>Контрола јавних финансија и спречавање злоупотреба.</p>
 </div>
 
-<div class="card fade-in delay3">
+<div class="card">
 <h3>Правна сигурност</h3>
 <p>Заштита грађана, радника и привреде.</p>
 </div>
 
+</div>
+
 </section>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/381665857707" class="whatsapp-float">
-📞
-</a>
+<div class="trust">
+Контакт искључиво путем WhatsApp поруке
+</div>
+
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
 </html>
