@@ -3,337 +3,201 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Иксан – Снага правде | Заштита права грађана, владавина права и институционална одговорност</title>
+<title>Иксан — Снага правде</title>
 
-<meta name="description" content="Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана. Кроз директан рад са грађанима и институционалне иницијативе, залажемо се за праведно и одговорно друштво у Републици Србији.">
+<link rel="icon" href="logo-white.png">
 
-<meta name="theme-color" content="#020c1b">
-
-<link rel="icon" href="logo-white.png" type="image/png">
 <style>
 
-/* ===== ORIGINAL (NIŠTA NIJE DIRANO) ===== */
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-html,body{height:100%}
-
 body{
-margin:0;
-min-height:100vh;
-background: url('justice-bg.jpg') center 25% / cover no-repeat fixed;
+background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman",serif;
-line-height:1.7;
--webkit-font-smoothing:antialiased;
-text-rendering:optimizeLegibility;
-font-size:110%;
+font-family:"Times New Roman";
+line-height:1.6;
 }
 
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
-.container{max-width:1150px;margin:0 auto;padding:0 20px}
-
+/* HEADER */
 header{
 position:sticky;
 top:0;
 z-index:100;
-background:transparent;
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
-gap:12px;
-flex-wrap:nowrap;
+align-items:center;
+padding:5px 0;
 }
-
-.brand{display:flex;align-items:center;flex-shrink:0;}
 
 .brand img{
-height:161px;
+height:120px;
 border-radius:10px;
 }
 
-@media (max-width:768px){
-.brand{justify-content:center;margin:0 auto;}
-.brand img{height:106px;}
-}
-
-nav.nav{
+/* NAV */
+.nav{
 display:flex;
-flex-direction:row;
-align-items:center;
-gap:10px;
-padding-top:0;
-padding-right:8px;
+gap:6px;
 }
 
-/* 🔥 NOVI IZGLED DUGMADI */
-.nav a.nav-link, .menu-btn{
-
+.nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
-text-decoration:none;
-font-weight:600;
-font-size:0.9rem;
-line-height:1;
-white-space:nowrap;
-
+background:rgba(0,0,0,0.45);
 color:#fff;
 
-/* lebdeći efekat */
-background:rgba(0,0,0,0.45);
-backdrop-filter:blur(6px);
-
-/* 3D */
 box-shadow:
-0 5px 0 rgba(0,0,0,.7),
+0 6px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
 
-transition:all .15s ease;
+transition:.15s;
 }
 
-/* 🔥 MENI dugme */
+.nav a:hover{
+transform:translateY(-2px);
+}
+
 .menu-btn{
 background:#fff;
-color:#000 !important;
+color:#000;
 font-weight:700;
 }
 
-/* hover */
-.nav a.nav-link:hover, .menu-btn:hover{
-transform:translateY(-2px);
-filter:brightness(1.2);
-}
-
-/* klik */
-.nav a.nav-link:active, .menu-btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
-}
-
-.nav a[aria-current="page"]{
-outline:2px solid var(--gold);
-outline-offset:2px
-}
-
-.menu{position:relative}
-
-.dropdown{
-position:absolute;
-top:calc(100% + 8px);
-right:0;
-background:rgba(20,20,20,0.85);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.2);
-border-radius:12px;
-min-width:280px;
-padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
-display:none;
-}
-
-.menu.open .dropdown{display:block}
-
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600;
-font-size:14px;
-white-space:nowrap;
-border:1px solid transparent;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
-border-color:rgba(255,255,255,.16)
-}
-
+/* HERO */
 .hero{
-padding:24px 0 0;
-position:relative;
-overflow:hidden;
+text-align:center;
+padding:60px 0 40px;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.08), transparent 60%);
-pointer-events:none;
-transition:0.4s;
+.hero h1{
+font-size:32px;
+margin-bottom:10px;
 }
 
-.hero:hover::before{
-background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.18), transparent 60%);
-}
-
-.hero-grid{display:grid;gap:24px}
-
-@media(min-width:980px){
-.hero-grid{grid-template-columns:1.1fr .9fr}
-}
-
-h1{
-color:#fff;
-margin-top:8px;
-line-height:1.2;
-font-weight:600;
-font-size:clamp(23px,3vw,33px);
-text-shadow:
-0 0 10px rgba(255,255,255,0.3),
-0 0 40px rgba(255,255,255,0.2),
-0 15px 40px rgba(0,0,0,0.9);
-}
-
-.line2{
-display:block;
-font-size:clamp(20px,2.5vw,24px);
+.hero p{
 color:var(--ink);
-margin-top:4px;
-text-shadow:0 10px 25px rgba(0,0,0,0.9);
+max-width:700px;
+margin:auto;
 }
 
-.sub{
-margin:8px 0 12px;
-max-width:740px;
-color:var(--ink);
-opacity:.95;
-font-size:clamp(16px,2vw,18px);
-text-shadow:0 10px 25px rgba(0,0,0,0.9);
-}
-
-.cta-row{
+/* BUTTONS */
+.cta{
 display:flex;
 justify-content:center;
-flex-wrap:nowrap;
-gap:8px;
-margin-top:14px;
+gap:12px;
+margin-top:25px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:10px 20px;
-border-radius:40px;
+padding:12px 22px;
+border-radius:30px;
 font-weight:700;
-font-size:13px;
-text-transform:uppercase;
-text-align:center;
-cursor:pointer;
-white-space:nowrap;
-position:relative;
 
-/* 3D */
 box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
+0 6px 0 rgba(0,0,0,.6),
+0 18px 35px rgba(0,0,0,.8);
 
-/* animacija ulaska */
-opacity:0;
-transform:translateY(25px) scale(0.95);
-animation:btnFade .6s ease forwards;
+transition:.15s;
 }
 
-/* delay po dugmetu */
-.cta-row a:nth-child(1){animation-delay:.1s;}
-.cta-row a:nth-child(2){animation-delay:.2s;}
-.cta-row a:nth-child(3){animation-delay:.3s;}
-
-@keyframes btnFade{
-to{
-opacity:1;
-transform:translateY(0) scale(1);
-}
-}
-
-/* stilovi */
-.btn-primary{
-background:linear-gradient(145deg,#d3a451,#b68c3a);
-color:#000;
-}
-
-.btn-dark{
-background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
-color:#fff;
-border:1px solid rgba(255,255,255,.2);
-}
-
-/* hover */
 .btn:hover{
 transform:translateY(-3px);
 }
 
-/* klik */
 .btn:active{
-transform:translateY(4px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
-}
-.btn-primary{background:var(--gold);color:var(--deepBlue)}
-
-.btn-dark{
-background:rgba(20,20,20,0.6);
-backdrop-filter:blur(6px);
-color:#fff;
-border:1px solid rgba(255,255,255,.3)
+transform:translateY(5px);
 }
 
-.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:#222}
+.btn-gold{background:var(--gold);color:#000}
 
-/* 🔥 NOVO */
-.hero-media{position:relative;}
+/* GRID */
+.grid{
+display:grid;
+gap:25px;
+margin-top:30px;
+}
 
-.big-cta{
-position:absolute;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
-background:linear-gradient(145deg,#d3a451,#b68c3a);
-color:#000;
-padding:16px 28px;
-border-radius:40px;
-font-weight:900;
+@media(min-width:900px){
+.grid{grid-template-columns:1fr 1fr 1fr;}
+}
+
+.card{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:#ddd;
+}
+
+/* ANIMACIJE */
+.fade-in{
+opacity:0;
+transform:translateY(30px);
+animation:fadeIn .8s ease forwards;
+}
+
+.fade-in.delay1{animation-delay:.2s;}
+.fade-in.delay2{animation-delay:.4s;}
+.fade-in.delay3{animation-delay:.6s;}
+
+@keyframes fadeIn{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* GLOW */
+.glow{
+text-shadow:
+0 0 10px rgba(211,164,81,0.6),
+0 0 30px rgba(211,164,81,0.4);
+}
+
+/* TRUST */
+.trust{
+text-align:center;
+margin-top:40px;
+color:#ccc;
 font-size:14px;
-text-transform:uppercase;
-box-shadow:0 6px 0 #8a6a2a,0 18px 35px rgba(0,0,0,.7);
 }
 
-.big-cta span{
-display:block;
-font-size:12px;
-margin-top:4px;
-}
-
-/* 🔥 3D SLUŠALICA */
+/* WHATSAPP 3D + PULSE */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
-width:60px;
-height:60px;
+width:65px;
+height:65px;
 
 background:linear-gradient(145deg,#25D366,#1ebe5d);
-color:#000;
-font-size:28px;
 
 display:flex;
 align-items:center;
@@ -341,84 +205,46 @@ justify-content:center;
 
 border-radius:50%;
 
-/* 3D */
 box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
+0 8px 0 #128C7E,
+0 20px 40px rgba(0,0,0,0.8);
 
-z-index:9999;
 cursor:pointer;
-
-/* lagana animacija */
-animation:waPulse 2s infinite;
-}
-
-/* hover */
-.whatsapp-float:hover{
-transform:translateY(-3px);
-}
-
-/* klik */
-.whatsapp-float:active{
-transform:translateY(4px);
-box-shadow:
-0 2px 0 #128C7E,
-0 10px 20px rgba(0,0,0,0.6);
-}
+z-index:9999;
 
 /* puls */
-@keyframes waPulse{
-0%{
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-}
-50%{
-box-shadow:
-0 6px 0 #128C7E,
-0 25px 45px rgba(0,0,0,0.9);
-}
-100%{
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-}
-}
-/* 📱 MOBILE FIX – KLJUČNO */
-html,body{
-overflow-x:hidden;
+animation:pulse 2s infinite;
 }
 
+.whatsapp-float:hover{
+transform:translateY(-4px);
+}
+
+.whatsapp-float:active{
+transform:translateY(6px);
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+/* MOBILE */
 @media(max-width:768px){
-
-.hero-grid{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-.hero-media{
-margin-top:20px;
-}
-
-.cta-row{
-flex-direction:column;
-align-items:center;
-gap:10px;
-}
-
-.cta-row a{
-width:90%;
-}
 
 .nav{
 flex-wrap:wrap;
 justify-content:center;
-gap:6px;
 }
 
-.nav a.nav-link{
-font-size:12px;
-padding:5px 7px;
+.cta{
+flex-direction:column;
+}
+
+.cta a{
+width:90%;
+text-align:center;
 }
 
 .brand img{
@@ -427,30 +253,6 @@ height:90px;
 
 }
 
-/* 📱 WHATSAPP SLUŠALICA */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:15px;
-width:55px;
-height:55px;
-background:#25D366;
-color:#000;
-font-size:26px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
-z-index:9999;
-}
-
-/* sakrij WhatsApp u meniju na telefonu */
-@media(max-width:768px){
-.nav a[href*="wa.me"]{
-display:none;
-}
-}
 </style>
 </head>
 
@@ -461,299 +263,66 @@ display:none;
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
+<img src="logo-white.png">
 </a>
 </div>
 
-<nav class="nav" aria-label="Главна навигација">
-
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
-
-<!-- 🔥 NOVO -->
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
-WhatsApp
-</a>
-
-<div class="menu" id="mainMenu">
-
-<button class="menu-btn" type="button">
-Мени ▾
-</button>
-
-<div class="dropdown">
-
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
-<!-- 🔥 NOVO -->
-<a href="uradili.html">Шта смо до сада урадили</a>
-
-</div>
-
-</div>
-
+<nav class="nav">
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
 </nav>
 
 </div>
 </header>
 
-<main>
-
+<!-- HERO -->
 <section class="hero">
-<div class="container hero-grid">
 
-<div>
-
-<h1>
+<h1 class="glow fade-in">
 Заштита права грађана и владавина права
-<span class="line2">
-Иницијатива за праведнији и одговорнији правни систем у Србији
-</span>
 </h1>
 
-<p class="sub">
-Удружење грађана „Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана.
+<p class="fade-in delay1">
+Иницијатива за праведан, транспарентан и одговоран правни систем.
 </p>
 
-<div class="cta-row">
-
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-
+<div class="cta fade-in delay2">
+<a href="prijavi.html" class="btn btn-dark">ПОДНЕСИ ПРЕДСТАВКУ</a>
+<a href="inicijative.html" class="btn btn-dark">ПОГЛЕДАЈ ЗАКОНЕ</a>
+<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ РАД</a>
 </div>
 
-<!-- 🔥 NOVO -->
-<p style="margin-top:10px;font-weight:700;color:#dcdcdc;">
-Контакт искључиво путем WhatsApp поруке  
-Прво пошаљите поруку ради заказивања термина разговора
-</p>
+</section>
 
+<!-- TRUST -->
+<div class="trust fade-in delay2">
+✔ Рад са грађанима • ✔ Правна заштита • ✔ Владавина права
 </div>
 
-<div class="hero-media">
-<img src="univ.webp">
+<!-- GRID -->
+<section class="container grid">
 
-<!-- 🔥 NOVO -->
-<a href="uradili.html" class="big-cta">
-ШТА СМО ДО САДА УРАДИЛИ
-<span>за грађане и институције</span>
+<div class="card fade-in delay1">
+<h3>Реформа правосуђа</h3>
+<p>Јачање независности судства и правичног поступка.</p>
+</div>
+
+<div class="card fade-in delay2">
+<h3>Транспарентност</h3>
+<p>Контрола јавних финансија и спречавање злоупотреба.</p>
+</div>
+
+<div class="card fade-in delay3">
+<h3>Правна сигурност</h3>
+<p>Заштита грађана, радника и привреде.</p>
+</div>
+
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+📞
 </a>
 
-</div>
-
-</div>
-
-</section>
-
-<!-- 🔥 DODAT NAPREDNI STIL (NIŠTA NE BRIŠE) -->
-<style>
-.grid{
-display:grid;
-gap:25px;
-}
-
-@media(min-width:900px){
-.grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
-.card{
-position:relative;
-background:rgba(0,0,0,0.55);
-backdrop-filter:blur(14px);
-border-radius:22px;
-padding:28px 25px 25px 25px;
-box-shadow:0 15px 40px rgba(0,0,0,0.7);
-border:1px solid rgba(255,255,255,0.1);
-transition:all .3s ease;
-overflow:hidden;
-
-opacity:0;
-transform:translateY(30px);
-animation:fadeUp .6s ease forwards;
-}
-
-.card:nth-child(2){animation-delay:.1s;}
-.card:nth-child(3){animation-delay:.2s;}
-.card:nth-child(4){animation-delay:.3s;}
-
-@keyframes fadeUp{
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.card:hover{
-transform:translateY(-8px) scale(1.01);
-box-shadow:0 25px 60px rgba(0,0,0,0.9);
-border-color:rgba(211,164,81,0.5);
-}
-
-.card::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:3px;
-background:linear-gradient(90deg,#d3a451,#f0d48a);
-opacity:0;
-transition:.3s;
-}
-
-.card:hover::before{
-opacity:1;
-}
-
-.card h3{
-margin-bottom:12px;
-font-size:20px;
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.card h3::before{
-content:"⚖️";
-font-size:18px;
-}
-
-.card p{
-color:#ddd;
-line-height:1.6;
-margin-bottom:12px;
-}
-
-.card .more{
-color:#d3a451;
-font-weight:700;
-transition:.2s;
-}
-
-.card .more:hover{
-letter-spacing:1px;
-}
-</style>
-
-<section class="split">
-
-<div class="container">
-
-<div class="grid">
-
-<article class="card">
-<h3><a href="ukidanjeizvrsitelja.html">Реформа система извршења</a></h3>
-<p>
-Предлог нормативног унапређења система извршења ради јачања судске контроле, ограничавања прекомерних трошкова и заштите основних права грађана.
-</p>
-<a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
-</article>
-
-<article class="card">
-<h3><a href="porekloimovine.html">Транспарентност јавних функција</a></h3>
-<p>
-Јачање механизама транспарентности и контроле имовине носилаца јавних функција као предуслов за поверење у институције.
-</p>
-<a class="more" href="porekloimovine.html">Погледај детаље →</a>
-</article>
-
-<article class="card">
-<h3><a href="sudpravda.html">Независност и ефикасност судства</a></h3>
-<p>
-Предлози за унапређење приступа правди, институционалне независности и ефикасности правосудног система.
-</p>
-<a class="more" href="sudpravda.html">Прочитај више →</a>
-</article>
-
-<article class="card">
-<h3><a href="radnicipreduzetnici.html">Правна сигурност привреде</a></h3>
-<p>
-Унапређење правне сигурности за раднике, предузетнике и привреду као темеља стабилног економског развоја.
-</p>
-<a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
-</article>
-
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-<footer>
-<div class="container">
-© 2025 Иксан • Снага правде — Сва права задржана.
-</div>
-</footer>
-
-<script>
-
-const menu = document.getElementById('mainMenu');
-const menuBtn = menu.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click', () => {
-const isOpen = menu.classList.toggle('open');
-menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-});
-
-document.addEventListener('click', (e) => {
-if (!menu.contains(e.target)) {
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-}
-});
-
-document.addEventListener('keydown', (e) => {
-if (e.key === 'Escape') {
-menu.classList.remove('open');
-menuBtn.setAttribute('aria-expanded','false');
-menuBtn.focus();
-}
-});
-
-/* 🌊 RIPPLE EFEKAT */
-document.querySelectorAll('.btn').forEach(btn => {
-
-btn.addEventListener('click', function(e){
-
-const ripple = document.createElement('span');
-ripple.classList.add('ripple');
-
-const rect = this.getBoundingClientRect();
-const size = this.offsetWidth;
-
-ripple.style.width = size + 'px';
-ripple.style.height = size + 'px';
-
-ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
-ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
-
-this.appendChild(ripple);
-
-setTimeout(() => {
-ripple.remove();
-}, 600);
-
-});
-
-});
-
-</script>
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="whatsapp-float">📞</a>
 </body>
 </html>
