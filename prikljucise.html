@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Прикључите се — Иксан</title>
+<title>Транспарентност — Иксан</title>
 
 <link rel="icon" href="logo-white.png">
 
@@ -15,121 +16,169 @@
 --ink:#dcdcdc;
 }
 
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* ❌ nema linija */
+a{text-decoration:none;color:inherit}
+
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
-margin:0;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER DESNO */
+/* ===== HEADER (FIXED) ===== */
 header{
 position:sticky;
 top:0;
-background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,.2);
+z-index:100;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:flex-end;
-padding:10px 0;
+align-items:center;
+justify-content:space-between;
+padding:4px 0;
 }
 
+.brand img{
+height:95px;
+border-radius:10px;
+}
+
+/* NAV */
 .nav{
 display:flex;
-gap:10px;
+align-items:center;
+gap:6px;
 }
 
+/* 🔥 3D */
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
+border-radius:10px;
+font-weight:600;
+font-size:0.85rem;
+
+background:rgba(0,0,0,0.45);
 color:#fff;
-text-decoration:none;
+
+box-shadow:
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+}
+
+.menu-btn{
+background:#fff;
+color:#000;
+font-weight:700;
 }
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:110%;
+top:calc(100% + 8px);
 right:0;
-background:#111;
-padding:8px;
-border-radius:10px;
+background:rgba(20,20,20,0.95);
+border-radius:12px;
+padding:6px;
 display:none;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* TOP BUTTONS */
+.dropdown a{
+display:block;
+padding:9px 10px;
+}
+
+/* ===== GORNJA DUGMAD ===== */
 .top-buttons{
 display:flex;
 justify-content:center;
-gap:15px;
-margin-top:30px;
-flex-wrap:wrap;
+gap:10px;
+margin-top:20px;
+flex-wrap:nowrap;
 }
 
 .btn{
-padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-display:inline-block;
+padding:10px 20px;
+border-radius:30px;
+font-weight:700;
+font-size:13px;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
-.btn-dark{background:#222;color:#fff;}
-.btn-gold{background:var(--gold);color:#000;}
+.btn-dark{background:#1c1c1c;color:#fff}
+.btn-gold{background:var(--gold);color:#000}
 
 /* GRID */
 .main-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-margin-top:40px;
+gap:30px;
+margin-top:30px;
 }
 
-/* LEVO */
-.left{
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
+}
+
+.left,.right{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
 }
 
-/* DESNO */
-.right{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
-}
-
-form{display:grid;gap:12px}
-
-input,select,textarea{
-padding:10px;
-border-radius:10px;
-border:1px solid rgba(255,255,255,.3);
-background:rgba(255,255,255,.1);
-color:#fff;
-}
-
-.submit{
-background:var(--gold);
-color:#000;
-border:none;
-padding:12px;
-border-radius:25px;
-font-weight:bold;
-cursor:pointer;
-}
+.right p{color:var(--ink)}
 
 /* MOBILE */
 @media(max-width:768px){
-.main-grid{grid-template-columns:1fr}
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:90%;
+text-align:center;
+}
+
+}
+
+/* SLUSALICA */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
 }
 
 </style>
@@ -137,9 +186,14 @@ cursor:pointer;
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png">
+</a>
+</div>
 
 <nav class="nav">
 
@@ -150,7 +204,6 @@ cursor:pointer;
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -167,13 +220,11 @@ cursor:pointer;
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <div class="container">
 
-<!-- 🔥 SVA DUGMAD -->
 <div class="top-buttons">
 
 <a href="inicijative.html" class="btn btn-dark">
@@ -190,80 +241,37 @@ cursor:pointer;
 
 </div>
 
-<!-- GRID -->
 <div class="main-grid">
 
-<!-- LEVO -->
 <div class="left">
 
-<h2>Прикључите се иницијативи</h2>
+<h2>Транспарентност јавних финансија</h2>
 
 <p>
-Позивамо све грађане да се укључе у рад удружења Иксан.
+Јавне набавке и управљање јавним средствима представљају кључни део функционисања државе.
 </p>
 
 <p>
-Можете учествовати кроз волонтерски рад, правну подршку,
-истраживање или медијску активност.
+Транспарентност поступака, јавна контрола и провера порекла имовине доприносе
+спречавању злоупотреба и јачању поверења грађана.
 </p>
 
 <p>
-Пријављени учесници биће обавештавани о свим активностима,
-иницијативама и могућностима сарадње.
+Наш циљ је увођење јасних механизама контроле и одговорности носилаца јавних функција.
 </p>
 
 </div>
 
-<!-- DESNO FORMA -->
 <div class="right">
 
-<iframe name="hiddenFrame" style="display:none"
-onload="if(window._submitted){ window.location.href='hvala.html'; }">
-</iframe>
+<h2>Кључне мере</h2>
 
-<form id="join-form"
-action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-method="GET"
-target="hiddenFrame">
-
-<input type="text" id="ime" placeholder="Име и презиме">
-<input type="email" id="email" placeholder="Е-пошта *" required>
-<input type="tel" id="telefon" placeholder="Телефон">
-<input type="text" id="opstina" placeholder="Град / општина">
-
-<select id="interes">
-<option value="">Област интересовања</option>
-<option>Волонтерски рад</option>
-<option>Правна подршка</option>
-<option>Истраживање</option>
-<option>Медији</option>
-</select>
-
-<select id="nacin">
-<option value="">Начин учешћа</option>
-<option>Повремено</option>
-<option>Редовно</option>
-<option>Пројектно</option>
-</select>
-
-<textarea id="poruka_local" placeholder="Порука"></textarea>
-
-<label>
-<input type="checkbox" id="saglasnost">
-Сагласан сам са обрадом података
-</label>
-
-<input type="hidden" name="ime" id="ime_send">
-<input type="hidden" name="email" id="email_send">
-<textarea name="poruka" id="poruka_send" hidden></textarea>
-
-<p id="status"></p>
-
-<button type="submit" class="submit">
-ПОШАЉИ ПРИЈАВУ
-</button>
-
-</form>
+<p>Провера порекла имовине јавних функционера</p>
+<p>Јавност и транспарентност јавних набавки</p>
+<p>Контрола трошења јавних средстава</p>
+<p>Спречавање корупције у институцијама</p>
+<p>Јачање надзорних механизама</p>
+<p>Дигитализација финансијских токова</p>
 
 </div>
 
@@ -273,41 +281,21 @@ target="hiddenFrame">
 
 <script>
 const menu=document.getElementById('menu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
-const form = document.getElementById('join-form');
-const status = document.getElementById('status');
-
-form.addEventListener('submit', (e) => {
-
-if (!email.value.trim()) {
-e.preventDefault();
-status.textContent='Унесите е-пошту';
-return;
-}
-
-if (!saglasnost.checked) {
-e.preventDefault();
-status.textContent='Потребна је сагласност';
-return;
-}
-
-poruka_send.value =
-`Име: ${ime.value}\nEmail: ${email.value}`;
-
-window._submitted=true;
-
-});
 </script>
+
+<!-- SLUSALICA -->
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
