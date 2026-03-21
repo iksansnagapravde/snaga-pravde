@@ -2,85 +2,113 @@
 <html lang="sr-Cyrl-RS">
 <head>
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Независност и правичност судског система — Иксан • Снага правде</title>
+<title>Независност и правичност судског система — Иксан</title>
 
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
 
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:#fff}
 
-/* 🔥 FIX ZA LJUBIČASTA DUGMAD */
-a{
-color:#fff;
-text-decoration:none;
-}
-a:visited{
-color:#fff;
-}
-
+/* BODY */
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
+font-family:"Times New Roman";
 color:#fff;
-font-family:"Times New Roman",serif;
-}
-
-/* HEADER */
-
-header{
-position:sticky;
-top:0;
-backdrop-filter:blur(6px);
-border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
+/* ===== HEADER (PELcer) ===== */
+header{
+position:sticky;
+top:0;
+z-index:100;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:4px 0;
 }
 
-.brand img{height:130px;border-radius:10px}
+.brand img{
+height:95px;
+border-radius:10px;
+}
 
-.nav{display:flex;gap:10px}
+/* NAV */
+.nav{
+display:flex;
+gap:6px;
+}
 
+/* 🔥 3D */
 .nav a,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:8px;
-color:#fff;
+border-radius:10px;
 font-weight:600;
+font-size:0.85rem;
+
+background:rgba(0,0,0,0.45);
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.8),
+0 18px 35px rgba(0,0,0,.9);
+
+transition:.15s;
 }
 
-/* MENU */
+.nav a:hover,.menu-btn:hover{
+transform:translateY(-2px);
+}
+
+.nav a:active,.menu-btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.8),
+0 10px 20px rgba(0,0,0,.7);
+}
+
+.menu-btn{
+background:#fff;
+color:#000;
+font-weight:700;
+}
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
+top:calc(100% + 8px);
 right:0;
-top:110%;
-background:rgba(20,20,20,.95);
+background:rgba(20,20,20,.97);
 border-radius:12px;
 padding:6px;
 display:none;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* HERO */
+.dropdown a{
+display:block;
+padding:9px 10px;
+}
 
+/* ===== HERO ===== */
 .hero{
 padding:50px 0;
 text-align:center;
@@ -88,8 +116,7 @@ animation:fadeIn 1s ease;
 }
 
 h1{
-font-size:34px;
-text-shadow:0 0 20px rgba(255,255,255,.3);
+font-size:32px;
 }
 
 .sub{
@@ -98,43 +125,34 @@ max-width:700px;
 margin:10px auto;
 }
 
-/* BUTTONS */
-
+/* ===== GORNJA DUGMAD ===== */
 .cta-row{
 display:flex;
 justify-content:center;
-gap:12px;
+gap:10px;
 margin-top:25px;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:12px 26px;
-border-radius:40px;
+padding:10px 20px;
+border-radius:30px;
 font-weight:700;
-text-transform:uppercase;
-transition:.3s;
-display:inline-block;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.6),
+0 18px 35px rgba(0,0,0,.8);
+
+transition:.15s;
 }
 
-.btn-dark{
-background:#222;
-color:#fff;
-border:1px solid rgba(255,255,255,.3);
-}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(5px)}
 
-.btn-primary{
-background:var(--gold);
-color:#000;
-box-shadow:0 0 20px rgba(211,164,81,0.4);
-}
+.btn-dark{background:#222}
+.btn-primary{background:var(--gold);color:#000}
 
-.btn:hover{
-transform:translateY(-3px) scale(1.05);
-}
-
-/* CARDS */
-
+/* GRID */
 .grid{
 display:grid;
 gap:20px;
@@ -147,42 +165,50 @@ margin-top:30px;
 
 .card{
 background:rgba(20,20,20,0.6);
-backdrop-filter:blur(12px);
 padding:20px;
 border-radius:20px;
-border:1px solid rgba(255,255,255,.15);
 box-shadow:0 20px 50px rgba(0,0,0,.7);
-animation:fadeUp .8s ease;
 }
 
 .card.full{grid-column:1/-1}
 
-.card h3{
-margin-bottom:10px;
-}
+.card p,.card li{color:#ddd}
 
-.card p,.card li{
-color:#ddd;
-}
-
-/* ANIMACIJE */
-
-@keyframes fadeUp{
-from{opacity:0;transform:translateY(40px)}
-to{opacity:1;transform:translateY(0)}
-}
-
+/* ANIM */
 @keyframes fadeIn{
 from{opacity:0}
 to{opacity:1}
 }
 
-/* FOOTER */
+/* MOBILE */
+@media(max-width:768px){
 
-footer{
-text-align:center;
-padding:30px;
-margin-top:40px;
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+/* SLUSALICA */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
 }
 
 </style>
@@ -201,15 +227,14 @@ margin-top:40px;
 
 <nav class="nav">
 
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
-<button class="menu-btn">Мени ▾</button>
+<div class="menu" id="menu">
+<button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
-<a href="onama.html">О Нама</a>
+<a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
@@ -220,11 +245,11 @@ margin-top:40px;
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+</div>
 
 </div>
-</div>
+
 </nav>
-
 </div>
 </header>
 
@@ -236,7 +261,6 @@ margin-top:40px;
 
 <p class="sub">
 Правна држава почива на независном судству и правичном поступку.
-Циљ је заштита грађана и јачање поверења у правосудни систем.
 </p>
 
 <div class="cta-row">
@@ -251,62 +275,47 @@ margin-top:40px;
 
 <div class="card full">
 <h3>Заштита права грађана</h3>
-<p>
-Јачање правичног поступка и спречавање злоупотреба у кривичним процесима.
-</p>
+<p>Јачање правичног поступка.</p>
 </div>
 
 <div class="card">
 <h3>Реформа притвора</h3>
 <ul>
-<li>Јасни услови одређивања</li>
-<li>Контрола трајања</li>
+<li>Јасни услови</li>
+<li>Контрола</li>
 <li>Разуман рок</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Хумани услови</h3>
-<p>
-Унапређење услова у установама за извршење казне.
-</p>
+<p>Унапређење услова.</p>
 </div>
 
 <div class="card">
 <h3>Ресоцијализација</h3>
-<p>
-Повратак лица у друштво након казне.
-</p>
+<p>Повратак у друштво.</p>
 </div>
 
 <div class="card full">
 <h3>Пропорционалност казни</h3>
-<p>
-Усклађивање казнене политике са европским стандардима.
-</p>
+<p>Усклађивање са европским стандардима.</p>
 </div>
 
 </div>
 
 </main>
 
-<footer>
-© 2025 Иксан • Снага правде
-</footer>
-
 <script>
-const menu=document.getElementById('mainMenu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
-
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
+
+<a href="https://wa.me/381665857707" class="whatsapp-float">
+<svg viewBox="0 0 24 24">
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+</svg>
+</a>
 
 </body>
 </html>
