@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>Области — Иксан • Снага правде</title>
 
@@ -10,21 +11,25 @@
 
 <style>
 
+/* ===== INDEX STYLE (PREBAČENO 1:1) ===== */
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
+--radius:16px;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
-background:url('justice-bg.jpg') center/cover no-repeat fixed;
+min-height:100vh;
+background:url('justice-bg.jpg') center 25% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
+line-height:1.7;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
 /* ===== HEADER ===== */
 header{
@@ -40,11 +45,13 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0;
+padding:4px 0 0;
+gap:12px;
+flex-wrap:nowrap;
 }
 
 .brand img{
-height:120px;
+height:161px;
 border-radius:10px;
 }
 
@@ -53,18 +60,18 @@ border-radius:10px;
 display:flex;
 align-items:center;
 gap:10px;
-flex-wrap:nowrap;
+padding-right:8px;
 }
 
-/* DUGMAD */
-.nav a.nav-link,.menu-btn{
+/* DUGMAD (ISTO KAO INDEX) */
+.nav a.nav-link, .menu-btn{
+
 padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.9rem;
 line-height:1;
 white-space:nowrap;
-text-decoration:none;
 
 color:#fff;
 background:rgba(0,0,0,0.45);
@@ -72,12 +79,23 @@ background:rgba(0,0,0,0.45);
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
+
+transition:.15s;
 }
 
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
+}
+
+.nav a.nav-link:hover, .menu-btn:hover{
+transform:translateY(-2px);
+filter:brightness(1.2);
+}
+
+.nav a.nav-link:active, .menu-btn:active{
+transform:translateY(3px);
 }
 
 /* DROPDOWN */
@@ -88,6 +106,7 @@ position:absolute;
 top:calc(100% + 8px);
 right:0;
 background:rgba(20,20,20,0.85);
+border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 min-width:280px;
 padding:6px;
@@ -101,10 +120,11 @@ display:block;
 padding:9px 10px;
 border-radius:8px;
 color:#fff;
-text-decoration:none;
+font-weight:600;
+font-size:14px;
 }
 
-/* CTA */
+/* CTA — ISTO KAO INDEX */
 .cta-row{
 display:flex;
 justify-content:center;
@@ -120,29 +140,42 @@ border-radius:40px;
 font-weight:700;
 font-size:13px;
 text-transform:uppercase;
-text-decoration:none;
-line-height:1;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
+opacity:0;
+transform:translateY(25px) scale(0.95);
+animation:btnFade .6s ease forwards;
 }
 
-.btn-dark{
-background:#1c1c1c;
-color:#fff;
+.cta-row a:nth-child(1){animation-delay:.1s;}
+.cta-row a:nth-child(2){animation-delay:.2s;}
+.cta-row a:nth-child(3){animation-delay:.3s;}
+
+@keyframes btnFade{
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
 }
 
 .btn-primary{
-background:#d3a451;
+background:var(--gold);
 color:#000;
 }
 
-/* GRID */
+.btn-dark{
+background:rgba(20,20,20,0.6);
+color:#fff;
+}
+
+/* GRID (TVOJ SADRŽAJ) */
 .main-grid{
 display:grid;
 gap:25px;
-margin-top:30px;
+margin-top:40px;
 }
 
 @media(min-width:900px){
@@ -151,11 +184,42 @@ margin-top:30px;
 
 .left,.right{
 background:rgba(0,0,0,0.6);
-padding:20px;
+padding:25px;
 border-radius:15px;
 }
 
-/* MOBILE FIX (INDEX STYLE) */
+/* WHATSAPP — ISTO KAO INDEX */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+color:#000;
+font-size:28px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+
+animation:waPulse 2s infinite;
+}
+
+@keyframes waPulse{
+0%{box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);}
+50%{box-shadow:0 6px 0 #128C7E,0 25px 45px rgba(0,0,0,0.9);}
+100%{box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);}
+}
+
+/* MOBILE */
 @media(max-width:768px){
 
 .nav{
@@ -181,27 +245,6 @@ align-items:center;
 .cta-row a{
 width:90%;
 }
-
-}
-
-/* WHATSAPP — ČIST */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:15px;
-width:55px;
-height:55px;
-
-background:#25D366;
-color:#000;
-font-size:24px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-border-radius:50%;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
 </style>
@@ -220,11 +263,11 @@ box-shadow:0 10px 25px rgba(0,0,0,0.5);
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">ПОЧЕТНА</a>
-<a class="nav-link" href="kontakt.html">КОНТАКТ</a>
+<a class="nav-link" href="index.html">Почетна</a>
+<a class="nav-link" href="kontakt.html">Контакт</a>
 
 <div class="menu" id="menu">
-<button class="menu-btn">МЕНИ ▾</button>
+<button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
 <a href="onama.html">о Нама</a>
@@ -250,35 +293,40 @@ box-shadow:0 10px 25px rgba(0,0,0,0.5);
 <div class="container">
 
 <div class="cta-row">
-
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="doniraj.html" class="btn btn-primary">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
 <div class="main-grid">
 
 <div class="left">
 <h2>Области деловања</h2>
-<p>Наш рад је усмерен на заштиту права грађана...</p>
+
+<p>
+Наш рад је усмерен на заштиту права грађана, борбу против корупције и јачање институционалног система.
+</p>
+
+<p>
+Делујемо кроз правну подршку, иницијативе за измену закона и активно учешће у јавном животу.
+</p>
+
 </div>
 
 <div class="right">
 <h2>Кључне области</h2>
+
 <ul>
-<li>Заштита људских права</li>
+<li>Заштита људских и грађанских права</li>
 <li>Борба против корупције</li>
 <li>Транспарентност институција</li>
+<li>Правна подршка грађанима</li>
+<li>Економска правда</li>
+<li>Заштита радника и предузетника</li>
+<li>Развој демократије</li>
+<li>Заштита права у поступцима</li>
 </ul>
+
 </div>
 
 </div>
@@ -290,7 +338,7 @@ const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">☎</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
 </html>
