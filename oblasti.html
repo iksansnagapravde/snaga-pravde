@@ -11,7 +11,9 @@
 <style>
 
 :root{
+--deepBlue:#1f1f1f;
 --gold:#d3a451;
+--radius:16px;
 --ink:#dcdcdc;
 }
 
@@ -20,96 +22,123 @@ html,body{overflow-x:hidden;}
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman";
+font-family:"Times New Roman",serif;
 margin:0;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* ===== HEADER (INDEX STYLE) ===== */
 header{
 position:sticky;
 top:0;
-background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,.2);
+z-index:100;
+background:transparent;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
 }
 
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:10px 0;
+justify-content:space-between;
+padding:4px 0 0;
+gap:12px;
+}
+
+.brand img{
+height:120px;
+border-radius:10px;
 }
 
 .nav{
 display:flex;
+align-items:center;
 gap:10px;
-flex-wrap:wrap;
-justify-content:center;
+padding-right:8px;
 }
 
-/* 🔥 NAV 3D */
-.nav a,.menu-btn{
+/* NAV DUGMAD */
+.nav a.nav-link,.menu-btn{
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
-text-decoration:none;
+border-radius:10px;
 font-weight:600;
+font-size:0.9rem;
+white-space:nowrap;
+color:#fff;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(6px);
 
 box-shadow:
-0 3px 0 rgba(0,0,0,.6),
-0 10px 20px rgba(0,0,0,.6);
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+
+transition:.15s;
 }
 
-/* 🔥 MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
-.nav a:active,.menu-btn:active{
-transform:translateY(3px);
-box-shadow:
-0 1px 0 rgba(0,0,0,.6),
-0 5px 10px rgba(0,0,0,.5);
+.nav a.nav-link:hover,.menu-btn:hover{
+transform:translateY(-2px);
+filter:brightness(1.2);
 }
 
+.nav a.nav-link:active,.menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
+}
+
+/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:110%;
+top:calc(100% + 8px);
 right:0;
-background:#111;
-padding:8px;
-border-radius:10px;
+background:rgba(20,20,20,0.85);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
 display:none;
-min-width:250px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* TOP BUTTONS */
-.top-buttons{
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+font-weight:600;
+font-size:14px;
+}
+
+/* CTA dugmad */
+.cta-row{
 display:flex;
 justify-content:center;
-gap:15px;
+gap:10px;
 margin-top:30px;
 flex-wrap:wrap;
 }
 
-/* 🔥 3D dugmad */
 .btn{
 padding:12px 20px;
-border-radius:25px;
-font-weight:bold;
-text-decoration:none;
-display:inline-block;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
+text-transform:uppercase;
 
 box-shadow:
-0 5px 0 #000,
-0 15px 30px rgba(0,0,0,0.7);
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
 .btn-dark{
@@ -117,16 +146,13 @@ background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
 color:#fff;
 }
 
-.btn-gold{
+.btn-primary{
 background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
 }
 
 .btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 #000,
-0 8px 15px rgba(0,0,0,0.5);
+transform:translateY(4px);
 }
 
 /* GRID */
@@ -137,22 +163,10 @@ gap:40px;
 margin-top:40px;
 }
 
-/* LEVO */
-.left{
+.left,.right{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
-}
-
-/* DESNO */
-.right{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
-}
-
-.areas{
-list-style:none;
 }
 
 .areas li{
@@ -162,28 +176,31 @@ color:var(--ink);
 
 /* MOBILE */
 @media(max-width:768px){
-.main-grid{
-grid-template-columns:1fr;
-}
+.main-grid{grid-template-columns:1fr;}
+.nav{flex-wrap:wrap;justify-content:center;}
 }
 
-/* 🔥 WHATSAPP */
+/* WHATSAPP 3D */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
 width:60px;
 height:60px;
+
 background:linear-gradient(145deg,#25D366,#1ebe5d);
 color:#000;
 font-size:28px;
+
 display:flex;
 align-items:center;
 justify-content:center;
 border-radius:50%;
+
 box-shadow:
 0 6px 0 #128C7E,
 0 18px 35px rgba(0,0,0,0.7);
+
 z-index:9999;
 }
 
@@ -192,19 +209,24 @@ z-index:9999;
 
 <body>
 
-<!-- HEADER -->
 <header>
 <div class="container head">
 
-<!-- 🔥 LOGO -->
+<div class="brand">
 <a href="index.html">
-<img src="logo-white.png" style="height:70px">
+<img src="logo-white.png">
 </a>
+</div>
 
 <nav class="nav">
 
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">КОНТАКТ</a>
+<a class="nav-link" href="index.html">ПОЧЕТНА</a>
+<a class="nav-link" href="kontakt.html">КОНТАКТ</a>
+
+<a href="https://wa.me/381665857707" 
+class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
+WhatsApp
+</a>
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
@@ -222,20 +244,18 @@ z-index:9999;
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
 
 </div>
-
 </div>
 
 </nav>
-
 </div>
 </header>
 
 <div class="container">
 
-<!-- 🔥 GORNJA DUGMAD -->
-<div class="top-buttons">
+<div class="cta-row">
 
 <a href="inicijative.html" class="btn btn-dark">
 ЗАКОНИ И ПРОПИСИ
@@ -245,13 +265,12 @@ z-index:9999;
 ПРЕДСТАВКА ГРАЂАНИНА
 </a>
 
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+<a href="doniraj.html" class="btn btn-primary">
 ПОДРЖИ НАШ РАД
 </a>
 
 </div>
 
-<!-- GRID -->
 <div class="main-grid">
 
 <div class="left">
@@ -305,7 +324,6 @@ menu.classList.remove('open');
 });
 </script>
 
-<!-- 🔥 WHATSAPP -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
