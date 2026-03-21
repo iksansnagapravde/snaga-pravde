@@ -7,7 +7,7 @@
 
 <title>Иксан – Снага правде | Заштита права грађана, владавина права и институционална одговорност</title>
 
-<meta name="description" content="Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана.">
+<meta name="description" content="Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана. Кроз директан рад са грађанима и институционалне иницијативе, залажемо се за праведно и одговорно друштво у Републици Србији.">
 
 <meta name="theme-color" content="#020c1b">
 
@@ -15,7 +15,7 @@
 
 <style>
 
-/* ===== ORIGINAL (NE DIRANO) ===== */
+/* ===== ORIGINAL CSS OSTAVLJEN ===== */
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
@@ -33,6 +33,8 @@ background: url('justice-bg.jpg') center 25% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
+-webkit-font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
 font-size:110%;
 }
 
@@ -56,6 +58,7 @@ align-items:center;
 justify-content:space-between;
 padding:4px 0 0;
 gap:12px;
+flex-wrap:nowrap;
 }
 
 .brand img{height:161px;border-radius:10px;}
@@ -66,30 +69,7 @@ align-items:center;
 gap:10px;
 }
 
-.nav a.nav-link, .menu-btn{
-color:#fff;
-padding:6px 9px;
-border-radius:8px;
-border:1px solid rgba(255,255,255,.2);
-font-weight:600;
-}
-
-.menu{position:relative}
-
-.dropdown{
-position:absolute;
-top:calc(100% + 8px);
-right:0;
-background:rgba(20,20,20,0.85);
-border-radius:12px;
-min-width:280px;
-padding:6px;
-display:none;
-}
-
-.menu.open .dropdown{display:block}
-
-/* 🔥 NOVO */
+/* ===== NOVO ===== */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -104,6 +84,7 @@ align-items:center;
 justify-content:center;
 border-radius:50%;
 z-index:999;
+box-shadow:0 10px 25px rgba(0,0,0,.5);
 }
 
 .hero-media{position:relative;}
@@ -113,16 +94,19 @@ position:absolute;
 bottom:20px;
 left:50%;
 transform:translateX(-50%);
-background:#d3a451;
+background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
 padding:16px 28px;
 border-radius:40px;
 font-weight:900;
+text-transform:uppercase;
+box-shadow:0 6px 0 #8a6a2a,0 18px 35px rgba(0,0,0,.7);
 }
 
 .big-cta span{
 display:block;
 font-size:12px;
+margin-top:4px;
 }
 
 </style>
@@ -145,14 +129,11 @@ font-size:12px;
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
 <!-- 🔥 NOVO -->
-<a href="https://wa.me/381665857707" 
-class="nav-link" 
-style="background:#25D366;color:#000;">
+<a href="https://wa.me/381665857707" class="nav-link" style="background:#25D366;color:#000;">
 WhatsApp
 </a>
 
 <div class="menu" id="mainMenu">
-
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
@@ -169,11 +150,9 @@ WhatsApp
 <a href="uradili.html">Шта смо до сада урадили</a>
 
 </div>
-
 </div>
 
 </nav>
-
 </div>
 </header>
 
@@ -196,14 +175,11 @@ WhatsApp
 </p>
 
 <div class="cta-row">
-
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-
 </div>
 
-<!-- 🔥 NOVO -->
 <p style="margin-top:10px;color:#25D366;">
 Контакт искључиво путем WhatsApp поруке
 </p>
@@ -227,7 +203,7 @@ WhatsApp
 
 <footer>
 <div class="container">
-© 2025 Иксан • Снага правде
+© 2025 Иксан • Снага правде — Сва права задржана.
 </div>
 </footer>
 
@@ -236,7 +212,6 @@ WhatsApp
 
 <script>
 
-/* 🔥 POPRAVLJEN MENI */
 const menu = document.getElementById('mainMenu');
 const menuBtn = menu.querySelector('.menu-btn');
 
@@ -253,5 +228,4 @@ menu.classList.remove('open');
 </script>
 
 </body>
-</html>
 </html>
