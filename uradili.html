@@ -7,10 +7,13 @@
 
 <title>Шта смо до сада урадили</title>
 
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
+
+/* ===== ISTI STIL KAO INDEX ===== */
 body{
+margin:0;
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
@@ -31,20 +34,49 @@ justify-content:space-between;
 align-items:center;
 }
 
-.nav a{
+.nav{
+display:flex;
+gap:10px;
+}
+
+.nav a, .menu-btn{
 color:#fff;
 padding:6px 10px;
 border:1px solid rgba(255,255,255,.2);
 border-radius:8px;
-margin-left:5px;
+background:transparent;
 }
 
 .menu{position:relative}
-.dropdown{display:none;position:absolute;background:#111;padding:10px;border-radius:10px}
+.dropdown{
+display:none;
+position:absolute;
+background:#111;
+padding:10px;
+border-radius:10px;
+}
+
 .menu.open .dropdown{display:block}
 
-.content{
-margin-top:40px;
+/* HERO dugmad */
+.cta-row{
+display:flex;
+gap:10px;
+margin:20px 0;
+}
+
+.btn{
+padding:10px 18px;
+border-radius:30px;
+font-weight:700;
+text-transform:uppercase;
+}
+
+.btn-dark{background:#222}
+.btn-primary{background:#d3a451;color:#000}
+
+/* CONTENT */
+.box{
 background:rgba(0,0,0,0.6);
 padding:30px;
 border-radius:20px;
@@ -54,6 +86,7 @@ backdrop-filter:blur(10px);
 h1{margin-bottom:20px}
 
 p{margin-bottom:15px;line-height:1.6}
+
 </style>
 
 </head>
@@ -86,49 +119,36 @@ p{margin-bottom:15px;line-height:1.6}
 </div>
 </header>
 
-<div class="container content">
+<div class="container">
+
+<!-- 🔥 ISTA DUGMAD KAO INDEX -->
+<div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
+</div>
+
+<div class="box">
 
 <h1>ШТА СМО ДО САДА УРАДИЛИ</h1>
 
-<p>
-Удружење грађана „Иксан – Снага правде регистровано је у АПР-у 28.10.2025. године.
-</p>
+<p><b>28.10.2025.</b> Удружење грађана „Иксан – Снага правде регистровано је у АПР-у.</p>
 
-<p>
-Отворили смо друштвене мреже (Instagram, TikTok, Facebook) ради свакодневног информисања грађана о нашим активностима, правима и будућим корацима у заштити људских права.
-</p>
+<p><b>05.01.2026.</b> Отворили смо канцеларију за грађане где свакодневно примамо странке.</p>
 
-<p>
-15.01.2026. године поднели смо иницијативу Уставном суду за оцену уставности појединих одредби Закона о извршењу и обезбеђењу.
-</p>
+<p><b>15.01.2026.</b> Поднели смо иницијативу Уставном суду за оцену уставности одредби Закона о извршењу и обезбеђењу.</p>
 
-<p>
-19.01.2026. године поднели смо иницијативу председнику Републике Србије, Влади и Народној скупштини за измену закона због злоупотребе и кршења људских права.
-</p>
+<p><b>19.01.2026.</b> Поднели смо иницијативу председнику Републике Србије, Влади и Народној скупштини за измену закона због злоупотребе и кршења људских права.</p>
 
-<p>
-06.03.2026. учествовали смо на инфо данима Министарства за људска и мањинска права.
-</p>
+<p><b>06.03.2026.</b> Учествовали смо на инфо данима Министарства за људска и мањинска права.</p>
 
-<p>
-16.03.2026. учествовали смо у коментарима новог нацрта закона о ауторским правима.
-</p>
+<p><b>16.03.2026.</b> Учествовали смо у коментарима новог нацрта закона о ауторским правима.</p>
 
-<p>
-Припремили смо нацрт закона о инсолвентности који предајемо институцијама.
-</p>
+<p><b>01.04.2026.</b> Припремили смо нацрт закона о инсолвентности који предајемо институцијама.</p>
 
-<p>
-Свакодневно комуницирамо са грађанима, помажемо кроз представке и пружамо правну подршку.
-</p>
+<p><b>Свакодневно:</b> Комуницирамо са грађанима и помажемо кроз представке.</p>
 
-<p>
-До сада смо примили преко 10.000 мејлова, обавили 2.000+ разговора и поднели преко 300 иницијатива.
-</p>
-
-<p>
-Отворили смо канцеларију за грађане 05.01.2026. где свакодневно примамо странке.
-</p>
+<p><b>До сада:</b> Примили смо преко 10.000 мејлова, обавили 2.000+ разговора и поднели преко 300 иницијатива.</p>
 
 <p>
 Наш циљ је да грађани имају подршку, заштиту и осећај да нису сами.
@@ -136,10 +156,11 @@ p{margin-bottom:15px;line-height:1.6}
 
 </div>
 
+</div>
+
 <script>
 const menu = document.getElementById('mainMenu');
 const btn = menu.querySelector('.menu-btn');
-
 btn.addEventListener('click',()=>menu.classList.toggle('open'));
 </script>
 
