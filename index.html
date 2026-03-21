@@ -64,41 +64,26 @@ height:161px;
 border-radius:10px;
 }
 
-@media (max-width:768px){
-.brand{justify-content:center;margin:0 auto;}
-.brand img{height:106px;}
-}
-
 nav.nav{
 display:flex;
 flex-direction:row;
 align-items:center;
 gap:10px;
-padding-top:0;
 padding-right:8px;
 }
 
-/* 🔥 NOVI IZGLED DUGMADI */
+/* 🔥 DUGMAD */
 .nav a.nav-link, .menu-btn{
-
 padding:6px 10px;
 border-radius:10px;
-text-decoration:none;
 font-weight:600;
 font-size:0.9rem;
-line-height:1;
-white-space:nowrap;
-
 color:#fff;
-
 background:rgba(0,0,0,0.45);
-backdrop-filter:blur(6px);
-
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
-
-transition:all .15s ease;
+transition:.15s;
 }
 
 .menu-btn{
@@ -109,7 +94,6 @@ font-weight:700;
 
 .nav a.nav-link:hover, .menu-btn:hover{
 transform:translateY(-2px);
-filter:brightness(1.2);
 }
 
 .nav a.nav-link:active, .menu-btn:active{
@@ -126,12 +110,9 @@ position:absolute;
 top:calc(100% + 8px);
 right:0;
 background:rgba(20,20,20,0.85);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 min-width:280px;
 padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
 display:none;
 }
 
@@ -140,23 +121,17 @@ display:none;
 .dropdown a{
 display:block;
 padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600;
-font-size:14px;
-white-space:nowrap;
 }
 
+/* HERO */
 .hero{
 padding:24px 0 0;
-position:relative;
-overflow:hidden;
 }
 
 .hero-grid{display:grid;gap:24px}
 
 h1{
-font-size:clamp(23px,3vw,33px);
+font-size:30px;
 }
 
 .sub{
@@ -174,7 +149,6 @@ margin-top:14px;
 }
 
 .btn{
-display:inline-block;
 padding:10px 20px;
 border-radius:40px;
 font-weight:700;
@@ -197,16 +171,16 @@ gap:25px;
 .card{
 background:rgba(0,0,0,0.55);
 border-radius:22px;
-padding:28px;
+padding:25px;
 }
 
 .card h3{
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .card p{
 color:#ddd;
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .more{
@@ -219,8 +193,8 @@ font-weight:700;
 position:fixed;
 bottom:20px;
 right:20px;
-width:60px;
-height:60px;
+width:55px;
+height:55px;
 background:#25D366;
 display:flex;
 align-items:center;
@@ -238,7 +212,7 @@ border-radius:50%;
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png" alt="ИКСАН лого">
+<img src="logo-white.png">
 </a>
 </div>
 
@@ -247,13 +221,11 @@ border-radius:50%;
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
+<a href="https://wa.me/381665857707" class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
 WhatsApp
 </a>
 
 <div class="menu" id="mainMenu">
-
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
@@ -274,7 +246,6 @@ WhatsApp
 </div>
 
 </nav>
-
 </div>
 </header>
 
@@ -285,20 +256,14 @@ WhatsApp
 
 <div>
 
-<h1>
-Заштита права грађана и владавина права
 </h1>
 
-<p class="sub">
-Заштита права грађана и институционална одговорност су темељ праведног друштва.
 </p>
 
 <div class="cta-row">
-
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-
 </div>
 
 </div>
@@ -308,34 +273,8 @@ WhatsApp
 
 <section class="split">
 <div class="container">
-
 <div class="grid">
 
-<article class="card">
-<h3><a href="ukidanjeizvrsitelja.html">Реформа система извршења</a></h3>
-<p>Јачање контроле и заштита права грађана у поступку извршења.</p>
-<a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
-</article>
-
-<article class="card">
-<h3><a href="porekloimovine.html">Транспарентност јавних функција</a></h3>
-<p>Контрола имовине јавних функционера ради поверења у институције.</p>
-<a class="more" href="porekloimovine.html">Погледај детаље →</a>
-</article>
-
-<article class="card">
-<h3><a href="sudpravda.html">Независност и ефикасност судства</a></h3>
-<p>Обезбеђивање независног и ефикасног правосудног система.</p>
-<a class="more" href="sudpravda.html">Прочитај више →</a>
-</article>
-
-<article class="card">
-<h3><a href="radnicipreduzetnici.html">Правна сигурност привреде</a></h3>
-<p>Стабилни услови за раднике и привреду као основ развоја.</p>
-<a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
-</article>
-
-</div>
 
 </div>
 </section>
@@ -349,16 +288,11 @@ WhatsApp
 </footer>
 
 <script>
-
 const menu = document.getElementById('mainMenu');
-
-menu.querySelector('.menu-btn').onclick = () => {
-menu.classList.toggle('open');
-};
-
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="whatsapp-float">📞</a>
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
 </html>
