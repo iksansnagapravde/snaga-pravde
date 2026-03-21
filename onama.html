@@ -11,7 +11,6 @@
 
 <style>
 
-/* ===== INDEX STYLE ===== */
 :root{
 --gold:#d3a451;
 --ink:#dcdcdc;
@@ -27,9 +26,9 @@ font-family:"Times New Roman";
 
 a{text-decoration:none;color:inherit}
 
-.container{max-width:900px;margin:auto;padding:0 20px}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER — ISTO KAO INDEX */
+/* ===== HEADER — IDENTIČAN KAO OBLASTI ===== */
 header{
 position:sticky;
 top:0;
@@ -41,29 +40,32 @@ border-bottom:1px solid rgba(255,255,255,.1);
 
 .head{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 padding:4px 0;
+gap:10px;
+flex-wrap:nowrap;
 }
 
 .brand img{
 height:120px;
+border-radius:10px;
 }
 
-/* NAV */
 .nav{
 display:flex;
-gap:10px;
 align-items:center;
+gap:8px;
 }
 
-/* NAV DUGMAD */
+/* ISTA VELIČINA DUGMADI */
 .nav a,.menu-btn{
-padding:6px 10px;
+padding:5px 8px;
 border-radius:10px;
 font-weight:600;
-font-size:0.9rem;
+font-size:0.85rem;
 line-height:1;
+white-space:nowrap;
 
 background:rgba(0,0,0,0.45);
 color:#fff;
@@ -79,25 +81,25 @@ color:#000 !important;
 font-weight:700;
 }
 
+/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
 top:calc(100% + 8px);
 right:0;
-background:rgba(20,20,20,0.85);
+background:rgba(20,20,20,0.9);
 border-radius:12px;
 padding:6px;
 display:none;
-min-width:250px;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
-padding:9px 10px;
-border-radius:8px;
+padding:8px 10px;
 }
 
 /* CTA */
@@ -135,10 +137,7 @@ margin-top:40px;
 text-align:center;
 }
 
-.hero h1{
-font-size:34px;
-margin-bottom:10px;
-}
+.hero p{color:var(--ink)}
 
 /* GRID */
 .grid{
@@ -156,7 +155,6 @@ border-radius:15px;
 
 .card p{color:var(--ink)}
 
-/* IMPRESUM */
 .impresum{
 margin-top:30px;
 background:rgba(0,0,0,0.6);
@@ -164,13 +162,16 @@ padding:20px;
 border-radius:15px;
 }
 
-/* MOBILE */
+/* MOBILE — ISTO KAO OBLASTI */
 @media(max-width:768px){
-.grid{grid-template-columns:1fr;}
 
 .nav{
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.brand img{
+height:90px;
 }
 
 .top-buttons{
@@ -184,7 +185,7 @@ text-align:center;
 }
 }
 
-/* WHATSAPP — SVG */
+/* WHATSAPP */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -254,27 +255,71 @@ fill:#000;
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="#" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
 <div class="hero">
+
 <h1>О удружењу Иксан</h1>
-<p>Удружење грађана Иксан – Снага правде...</p>
+
+<p>
+Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
+заштити достојанства грађана и развоју праведног друштва.
+</p>
+
 </div>
 
+<!-- ORIGINALNI TEKST — NIŠTA NIJE SKRAĆENO -->
 <div class="grid">
 
-<div class="card"><h3>Ко смо</h3><p>Иксан окупља...</p></div>
-<div class="card"><h3>Назив „Иксан“</h3><p>Симбол правде...</p></div>
-<div class="card"><h3>Наша мисија</h3><p>Реформа система...</p></div>
-<div class="card"><h3>Разлог оснивања</h3><p>Одговор на неправде...</p></div>
+<article class="card">
+<h3>Ко смо</h3>
+<p>Иксан окупља грађане са циљем јачања правде и правне сигурности.</p>
+</article>
+
+<article class="card">
+<h3>Назив „Иксан“</h3>
+<p>Симбол правде, истине и одговорности.</p>
+</article>
+
+<article class="card">
+<h3>Наша мисија</h3>
+<p>Реформа система и заштита грађана.</p>
+</article>
+
+<article class="card">
+<h3>Разлог оснивања</h3>
+<p>Одговор на неправде у систему.</p>
+</article>
+
+<article class="card">
+<h3>Наш рад са грађанима</h3>
+
+<p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
+
+<p>Активни смо на Instagram, TikTok и Facebook.</p>
+
+<p>Организујемо уживо разговоре са грађанима.</p>
+
+<p>Позивамо грађане да посете нашу канцеларију.</p>
+
+<p>Повезујемо грађане са институцијама.</p>
+
+<p>Позивамо да попуне представку ради заштите права.</p>
+
+</article>
 
 </div>
 
 <div class="impresum">
+
 <h3>Основни подаци</h3>
+
 <p>Седиште: Београд</p>
 <p>Email: iksan.snaga.pravde@gmail.com</p>
+<p>МБ: 28406312</p>
+<p>ПИБ: 115357260</p>
+
 </div>
 
 </div>
