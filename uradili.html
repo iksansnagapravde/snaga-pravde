@@ -11,7 +11,7 @@
 
 <style>
 
-/* ===== ISTI STIL KAO INDEX ===== */
+/* ===== OSNOVNO ===== */
 body{
 margin:0;
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
@@ -21,6 +21,7 @@ font-family:"Times New Roman",serif;
 
 .container{max-width:1100px;margin:auto;padding:20px}
 
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -39,12 +40,23 @@ display:flex;
 gap:10px;
 }
 
+/* 🔥 GORNJA DUGMAD (KAO INDEX) */
 .nav a, .menu-btn{
-color:#fff;
+text-decoration:none;
+color:#fff !important;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(6px);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:10px;
 padding:6px 10px;
-border:1px solid rgba(255,255,255,.2);
-border-radius:8px;
-background:transparent;
+font-weight:600;
+transition:all .2s ease;
+}
+
+.nav a:hover, .menu-btn:hover{
+transform:translateY(-2px);
+background:rgba(255,255,255,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.5);
 }
 
 .menu{position:relative}
@@ -58,24 +70,48 @@ border-radius:10px;
 
 .menu.open .dropdown{display:block}
 
-/* HERO dugmad */
+/* ===== HERO DUGMAD ===== */
 .cta-row{
 display:flex;
 gap:10px;
 margin:20px 0;
+flex-wrap:wrap;
 }
 
 .btn{
+text-decoration:none;
+color:#fff !important;
 padding:10px 18px;
 border-radius:30px;
 font-weight:700;
 text-transform:uppercase;
+display:inline-block;
 }
 
-.btn-dark{background:#222}
-.btn-primary{background:#d3a451;color:#000}
+/* 3D stil */
+.btn-dark{
+background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
+box-shadow:
+0 5px 0 #000,
+0 15px 30px rgba(0,0,0,0.7);
+}
 
-/* CONTENT */
+.btn-primary{
+background:linear-gradient(145deg,#d3a451,#b68c3a);
+color:#000 !important;
+box-shadow:
+0 5px 0 #8a6a2a,
+0 15px 30px rgba(0,0,0,0.7);
+}
+
+.btn:active{
+transform:translateY(3px);
+box-shadow:
+0 2px 0 #000,
+0 8px 15px rgba(0,0,0,0.5);
+}
+
+/* ===== CONTENT ===== */
 .box{
 background:rgba(0,0,0,0.6);
 padding:30px;
@@ -106,10 +142,43 @@ p{margin-bottom:15px;line-height:1.6}
 <div class="menu" id="mainMenu">
 <button class="menu-btn">Мени ▾</button>
 
-<div class="dropdown">
+mo napiši 👍
+
+A GDE TI KO KOMPLETAN MENI KAD SE OTVORI KOJI IMAMO U INDEKSU TU IMA PREKO NDESET OTVARANJA 
+
+U pravu si — sada radimo kako treba.
+👉 Problem: u uradili.html nema pun dropdown meni kao na index
+👉 Rešenje: ubacujemo ISTI meni (ceo)
+
+🔥 ŠTA JE GREŠKA
+
+Ja sam ti stavio samo:
+
 <a href="inicijative.html">Закони и прописи</a>
 <a href="prijavi.html">Представка грађанина</a>
 <a href="doniraj.html">Подржи наш рад</a>
+
+
+<div class="dropdown">
+
+<a href="onama.html">о Нама</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Стратешки циљеви</a>
+
+<a href="inicijative.html">Захтеви-Закони-Предмети</a>
+
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+
+<a href="prijavi.html">Представка грађанина</a>
+
+<a href="doniraj.html">Подржите наш рад</a>
+<a href="prikljucise.html">Прикључите се нашем раду</a>
+
+<a href="uradili.html">Шта смо до сада урадили</a>
+
 </div>
 
 </div>
@@ -121,7 +190,7 @@ p{margin-bottom:15px;line-height:1.6}
 
 <div class="container">
 
-<!-- 🔥 ISTA DUGMAD KAO INDEX -->
+<!-- 🔥 DUGMAD KAO INDEX -->
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
@@ -146,7 +215,7 @@ p{margin-bottom:15px;line-height:1.6}
 
 <p><b>01.04.2026.</b> Припремили смо нацрт закона о инсолвентности који предајемо институцијама.</p>
 
-<p><b>Свакодневно:</b> Комуницирамо са грађанима и помажемо кроз представке.</p>
+<p><b>Свакодневно:</b> Комуницирамо са грађанима, помажемо кроз представке и пружамо правну подршку.</p>
 
 <p><b>До сада:</b> Примили смо преко 10.000 мејлова, обавили 2.000+ разговора и поднели преко 300 иницијатива.</p>
 
