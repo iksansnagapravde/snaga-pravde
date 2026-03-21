@@ -201,8 +201,6 @@ WhatsApp
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 
-<a href="uradili.html">Шта смо до сада урадили</a>
-
 </div>
 
 </div>
@@ -231,32 +229,65 @@ WhatsApp
 </p>
 
 <div class="cta-row">
+
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-</div>
 
-<p style="margin-top:10px;font-weight:700;color:#25D366;">
-Контакт искључиво путем WhatsApp поруке  
-Прво пошаљите поруку ради заказивања термина разговора
-</p>
+</div>
 
 </div>
 
 <div class="hero-media">
 <img src="univ.webp">
-
-<a href="uradili.html" class="big-cta">
-ШТА СМО ДО САДА УРАДИЛИ
-<span>за грађане и институције</span>
-</a>
-
 </div>
 
 </div>
 </section>
 
-<section class="split"></section>
+<section class="split">
+
+<div class="container">
+
+<div class="grid">
+
+<article class="card">
+<h3><a href="ukidanjeizvrsitelja.html">Реформа система извршења</a></h3>
+<p>
+Предлог нормативног унапређења система извршења ради јачања судске контроле, ограничавања прекомерних трошкова и заштите основних права грађана.
+</p>
+<a class="more" href="ukidanjeizvrsitelja.html">Сазнај више →</a>
+</article>
+
+<article class="card">
+<h3><a href="porekloimovine.html">Транспарентност јавних функција</a></h3>
+<p>
+Јачање механизама транспарентности и контроле имовине носилаца јавних функција као предуслов за поверење у институције.
+</p>
+<a class="more" href="porekloimovine.html">Погледај детаље →</a>
+</article>
+
+<article class="card">
+<h3><a href="sudpravda.html">Независност и ефикасност судства</a></h3>
+<p>
+Предлози за унапређење приступа правди, институционалне независности и ефикасности правосудног система.
+</p>
+<a class="more" href="sudpravda.html">Прочитај више →</a>
+</article>
+
+<article class="card">
+<h3><a href="radnicipreduzetnici.html">Правна сигурност привреде</a></h3>
+<p>
+Унапређење правне сигурности за раднике, предузетнике и привреду као темеља стабилног економског развоја.
+</p>
+<a class="more" href="radnicipreduzetnici.html">Сазнај више →</a>
+</article>
+
+</div>
+
+</div>
+
+</section>
 
 </main>
 
@@ -266,22 +297,58 @@ WhatsApp
 </div>
 </footer>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
-
-<!-- 🔥 POPRAVLJEN MENI -->
 <script>
+
 const menu = document.getElementById('mainMenu');
 const menuBtn = menu.querySelector('.menu-btn');
 
 menuBtn.addEventListener('click', () => {
-menu.classList.toggle('open');
+const isOpen = menu.classList.toggle('open');
+menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 });
 
 document.addEventListener('click', (e) => {
 if (!menu.contains(e.target)) {
 menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
 }
 });
+
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape') {
+menu.classList.remove('open');
+menuBtn.setAttribute('aria-expanded','false');
+menuBtn.focus();
+}
+});
+
+/* 🌊 RIPPLE EFEKAT */
+document.querySelectorAll('.btn').forEach(btn => {
+
+btn.addEventListener('click', function(e){
+
+const ripple = document.createElement('span');
+ripple.classList.add('ripple');
+
+const rect = this.getBoundingClientRect();
+const size = this.offsetWidth;
+
+ripple.style.width = size + 'px';
+ripple.style.height = size + 'px';
+
+ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+
+this.appendChild(ripple);
+
+setTimeout(() => {
+ripple.remove();
+}, 600);
+
+});
+
+});
+
 </script>
 
 </body>
