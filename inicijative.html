@@ -19,8 +19,6 @@ color:#fff;
 font-family:"Times New Roman";
 }
 
-a{text-decoration:none;color:inherit}
-
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
@@ -28,7 +26,6 @@ header{
 position:sticky;
 top:0;
 z-index:100;
-background:transparent;
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
@@ -37,33 +34,34 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0;
-gap:8px;
 }
 
-.brand img{height:110px;border-radius:10px}
+.brand img{height:95px}
 
-.nav{display:flex;gap:6px}
+/* NAV */
+.nav{
+display:flex;
+gap:6px;
+flex-wrap:nowrap;
+}
 
 .nav a,.menu-btn{
 padding:5px 7px;
 border-radius:10px;
-font-weight:600;
 font-size:0.8rem;
-
 background:rgba(0,0,0,0.45);
 color:#fff;
 
 box-shadow:0 5px 0 rgba(0,0,0,.7),0 15px 30px rgba(0,0,0,.8);
 }
 
-.menu-btn{background:#fff;color:#000!important}
+.menu-btn{background:#fff;color:#000}
 
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:100%;
 right:0;
 background:rgba(20,20,20,0.9);
 border-radius:12px;
@@ -74,62 +72,74 @@ min-width:260px;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{display:block;padding:8px 10px}
+.dropdown a{display:block;padding:8px}
 
-/* DUGMAD */
+/* TOP BUTTONS */
+.top-buttons{
+display:flex;
+justify-content:center;
+gap:8px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
 .btn{
-display:block;
-padding:12px 18px;
+padding:10px 14px;
 border-radius:30px;
-font-weight:800;
-font-size:14px;
-margin-bottom:10px;
+font-size:13px;
+font-weight:700;
 
-box-shadow:0 6px 0 rgba(0,0,0,.6),0 20px 40px rgba(0,0,0,.8);
-}
-
-.btn-dark{
-background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
-color:#fff;
-}
-
-.btn-gold{
-background:linear-gradient(145deg,#ffd36a,#d3a451);
-color:#000;
+box-shadow:0 6px 0 rgba(0,0,0,.6),0 15px 30px rgba(0,0,0,.7);
 }
 
 .btn-blue{
-background:linear-gradient(145deg,#2b6fff,#1e4ed8);
+background:#2b6fff;
 color:#fff;
-box-shadow:0 6px 0 #102c8f,0 20px 40px rgba(0,0,0,.8);
+box-shadow:0 6px 0 #102c8f;
 }
 
 .btn-law{
-background:linear-gradient(145deg,#3a3a3a,#1f1f1f);
+background:#2a2a2a;
 color:#fff;
 }
 
 /* GRID */
 .main-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-margin-top:40px;
+gap:25px;
+margin-top:30px;
+}
+
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
 }
 
 .left,.right{
 background:rgba(0,0,0,0.6);
-padding:25px;
+padding:20px;
 border-radius:15px;
 }
 
-.goals{list-style:none}
-
-.goals li{padding:10px 0}
-
+/* MOBILE */
 @media(max-width:768px){
-.main-grid{grid-template-columns:1fr}
-.nav{flex-wrap:wrap;justify-content:center}
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.top-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.top-buttons a{
+width:90%;
+text-align:center;
+}
+
 }
 
 /* WHATSAPP */
@@ -137,13 +147,19 @@ border-radius:15px;
 position:fixed;
 bottom:20px;
 right:20px;
-width:60px;height:60px;
-background:linear-gradient(145deg,#25D366,#1ebe5d);
-display:flex;align-items:center;justify-content:center;
+width:55px;
+height:55px;
+background:#25D366;
+display:flex;
+align-items:center;
+justify-content:center;
 border-radius:50%;
-box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);
 }
-.whatsapp-float svg{width:28px;fill:#000}
+
+.whatsapp-float svg{
+width:26px;
+fill:#000;
+}
 
 </style>
 </head>
@@ -153,7 +169,7 @@ box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);
 <header>
 <div class="container head">
 
-<a href="index.html">
+<a href="index.html" class="brand">
 <img src="logo-white.png">
 </a>
 
@@ -170,13 +186,8 @@ box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 <a href="prijavi.html">Представка грађанина</a>
 <a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
 </div>
 
 </div>
@@ -187,13 +198,13 @@ box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);
 
 <div class="container">
 
-<div style="margin-top:25px">
+<div class="top-buttons">
 
-<a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="btn btn-blue">
+<a href="https://portal.sud.rs/sr/tok-predmeta" class="btn btn-blue">
 СУДСКИ ПРЕДМЕТИ У ТОКУ
 </a>
 
-<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" target="_blank" class="btn btn-blue">
+<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" class="btn btn-blue">
 ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ
 </a>
 
@@ -205,20 +216,11 @@ box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);
 
 <h2>Кључне правне иницијативе</h2>
 
-<ul class="goals">
-
-<li><strong>Увођење закона о несолвентности физичких лица</strong> ради заштите грађана од дужничког ропства.</li>
-
-<li>Измене закона о извршењу и обезбеђењу са циљем заштите основних животних услова.</li>
-
-<li>Јачање независности судства и одговорности носилаца правосудних функција.</li>
-
-<li>Повећање транспарентности рада судова и тужилаштва.</li>
-
-<li>Смањење трошкова поступака и укидање неправичних намета.</li>
-
-<li>Ефикаснији и праведнији судски поступци у разумном року.</li>
-
+<ul>
+<li><strong>Увођење закона о несолвентности физичких лица</strong></li>
+<li>Измене закона о извршењу</li>
+<li>Јачање независности судства</li>
+<li>Повећање транспарентности</li>
 </ul>
 
 </div>
@@ -227,103 +229,40 @@ box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);
 
 <h2>Закони и прописи</h2>
 
-<!-- ОСНОВ -->
-<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="btn btn-law">
-УСТАВ РЕПУБЛИКЕ СРБИЈЕ
+<a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" class="btn btn-law">УСТАВ РЕПУБЛИКЕ СРБИЈЕ</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" class="btn btn-law">ЗАКОН О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" class="btn btn-law">ЗАКОН О РАДУ</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_bankama.html" class="btn btn-law">ЗАКОН О БАНКАМА</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_stecaju.html" class="btn btn-law">ЗАКОН О СТЕЧАЈУ</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_potrosaca.html" class="btn btn-law">ЗАКОН О ЗАШТИТИ ПОТРОШАЧА</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_konkurencije.html" class="btn btn-law">
+ЗАКОН О ЗАШТИТИ КОНКУРЕНЦИЈЕ
 </a>
 
-<a href="https://www.echr.coe.int/documents/convention_srp.pdf" target="_blank" class="btn btn-law">
-ЕВРОПСКА КОНВЕНЦИЈА О ЗАШТИТИ ЉУДСКИХ ПРАВА И ОСНОВНИХ СЛОБОДА
-</a>
-
-<!-- ПРОЦЕСНИ -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_opstem_upravnom_postupku.html" target="_blank" class="btn btn-law">
-ЗАКОН О ОПШТЕМ УПРАВНОМ ПОСТУПКУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_upravnim_sporovima.html" target="_blank" class="btn btn-law">
-ЗАКОН О УПРАВНИМ СПОРОВИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="btn btn-law">
-ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakonik_o_krivicnom_postupku.html" target="_blank" class="btn btn-law">
-ЗАКОНИК О КРИВИЧНОМ ПОСТУПКУ
-</a>
-
-<!-- ИЗВРШЕЊЕ -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="btn btn-law">
-ЗАКОН О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ
-</a>
-
-<!-- ГРАЂАНСКО ПРАВО -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank" class="btn btn-law">
-ЗАКОН О ОБЛИГАЦИОНИМ ОДНОСИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/porodicni_zakon.html" target="_blank" class="btn btn-law">
-ПОРОДИЧНИ ЗАКОН
-</a>
-
-<!-- ПРИВРЕДА -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_privrednim_drustvima.html" target="_blank" class="btn btn-law">
-ЗАКОН О ПРИВРЕДНИМ ДРУШТВИМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_stecaju.html" target="_blank" class="btn btn-law">
-ЗАКОН О СТЕЧАЈУ
-</a>
-
-<!-- ФИНАНСИЈЕ -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_bankama.html" target="_blank" class="btn btn-law">
-ЗАКОН О БАНКАМА
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_platnim_uslugama.html" target="_blank" class="btn btn-law">
-ЗАКОН О ПЛАТНИМ УСЛУГАМА
-</a>
-
-<!-- ПОРЕЗ -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_poreskom_postupku_i_poreskoj_administraciji.html" target="_blank" class="btn btn-law">
-ЗАКОН О ПОРЕСКОМ ПОСТУПКУ И ПОРЕСКОЈ АДМИНИСТРАЦИЈИ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_porezu_na_dodatu_vrednost.html" target="_blank" class="btn btn-law">
-ЗАКОН О ПОРЕЗУ НА ДОДАТУ ВРЕДНОСТ
-</a>
-
-<!-- РАД -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" target="_blank" class="btn btn-law">
-ЗАКОН О РАДУ
-</a>
-
-<!-- ПОТРОШАЧИ -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_potrosaca.html" target="_blank" class="btn btn-law">
-ЗАКОН О ЗАШТИТИ ПОТРОШАЧА
-</a>
-
-<!-- ДОДАТНО -->
-<a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_podataka_o_licnosti.html" target="_blank" class="btn btn-law">
-ЗАКОН О ЗАШТИТИ ПОДАТАКА О ЛИЧНОСТИ
-</a>
-
-<a href="https://www.paragraf.rs/propisi/zakon_o_slobodnom_pristupu_informacijama_od_javnog_znacaja.html" target="_blank" class="btn btn-law">
-ЗАКОН О СЛОБОДНОМ ПРИСТУПУ ИНФОРМАЦИЈАМА ОД ЈАВНОГ ЗНАЧАЈА
+<a href="https://www.paragraf.rs/propisi/zakon_o_porezu_na_dodatu_vrednost.html" class="btn btn-law">
+ЗАКОН О ПДВ
 </a>
 
 </div>
 
+</div>
+
+</div>
 
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">
+<a href="#" class="whatsapp-float">
 <svg viewBox="0 0 24 24">
-<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
+<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4"/>
 </svg>
 </a>
 
