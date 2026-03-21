@@ -16,6 +16,8 @@
 --ink:#dcdcdc;
 }
 
+html,body{overflow-x:hidden;}
+
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
@@ -25,7 +27,7 @@ margin:0;
 
 .container{max-width:900px;margin:auto;padding:0 20px}
 
-/* HEADER DESNO */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -35,21 +37,45 @@ border-bottom:1px solid rgba(255,255,255,.2);
 
 .head{
 display:flex;
-justify-content:flex-end;
+justify-content:space-between;
+align-items:center;
 padding:10px 0;
 }
 
 .nav{
 display:flex;
 gap:10px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
+/* 🔥 NAV 3D */
 .nav a,.menu-btn{
 padding:6px 10px;
 border:1px solid rgba(255,255,255,.3);
 border-radius:8px;
-color:#fff;
 text-decoration:none;
+font-weight:600;
+
+box-shadow:
+0 3px 0 rgba(0,0,0,.6),
+0 10px 20px rgba(0,0,0,.6);
+}
+
+/* 🔥 MENI dugme */
+.menu-btn{
+background:#fff;
+color:#000 !important;
+font-weight:700;
+}
+
+.nav a{color:#fff;}
+
+.nav a:active,.menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 1px 0 rgba(0,0,0,.6),
+0 5px 10px rgba(0,0,0,.5);
 }
 
 .menu{position:relative}
@@ -62,6 +88,7 @@ background:#111;
 padding:8px;
 border-radius:10px;
 display:none;
+min-width:250px;
 }
 
 .menu.open .dropdown{display:block}
@@ -75,22 +102,35 @@ margin-top:30px;
 flex-wrap:wrap;
 }
 
+/* 🔥 3D dugmad */
 .btn{
 padding:12px 20px;
 border-radius:25px;
 font-weight:bold;
 text-decoration:none;
 display:inline-block;
+
+box-shadow:
+0 5px 0 #000,
+0 15px 30px rgba(0,0,0,0.7);
 }
 
+/* 🔥 OVO JE BITNO (bela slova) */
 .btn-dark{
-background:#222;
-color:#fff;
+background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
+color:#fff !important;
 }
 
 .btn-gold{
-background:var(--gold);
+background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
+}
+
+.btn:active{
+transform:translateY(3px);
+box-shadow:
+0 2px 0 #000,
+0 8px 15px rgba(0,0,0,0.5);
 }
 
 /* HERO */
@@ -145,6 +185,26 @@ border-radius:15px;
 .grid{grid-template-columns:1fr}
 }
 
+/* 🔥 WHATSAPP */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+color:#000;
+font-size:28px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+z-index:9999;
+}
+
 </style>
 </head>
 
@@ -152,6 +212,11 @@ border-radius:15px;
 
 <header>
 <div class="container head">
+
+<!-- 🔥 LOGO -->
+<a href="index.html">
+<img src="logo-white.png" style="height:70px">
+</a>
 
 <nav class="nav">
 
@@ -186,11 +251,17 @@ border-radius:15px;
 
 <div class="container">
 
-<!-- DUGMAD -->
+<!-- 🔥 DUGMAD -->
 <div class="top-buttons">
 
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-dark">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
 ПОДРЖИ НАШ РАД
 </a>
@@ -278,6 +349,9 @@ menu.classList.remove('open');
 }
 });
 </script>
+
+<!-- 🔥 WHATSAPP -->
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
 </html>
