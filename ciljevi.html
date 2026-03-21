@@ -19,6 +19,8 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
+html,body{overflow-x:hidden;}
+
 body{
 background:url('justice-bg.jpg') center 25%/cover no-repeat fixed;
 color:#fff;
@@ -32,7 +34,7 @@ font-family:"Times New Roman",serif;
 header{
 position:sticky;
 top:0;
-z-index:100;
+z-index:1000;
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
@@ -49,22 +51,40 @@ height:120px;
 border-radius:10px;
 }
 
+/* NAV */
 .nav{
 display:flex;
 gap:10px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
+/* 🔥 3D NAV */
 .nav a,.menu-btn{
 padding:6px 10px;
 border:1px solid rgba(255,255,255,.2);
 border-radius:8px;
-color:#fff;
-font-weight:600;
 text-decoration:none;
+font-weight:600;
+
+box-shadow:
+0 3px 0 rgba(0,0,0,.6),
+0 10px 20px rgba(0,0,0,.6);
 }
 
-.nav a:hover,.menu-btn:hover{
-background:rgba(255,255,255,0.1);
+/* 🔥 MENI dugme belo + crna slova */
+.menu-btn{
+background:#fff;
+color:#000 !important;
+font-weight:700;
+}
+
+/* klik efekat */
+.nav a:active,.menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 1px 0 rgba(0,0,0,.6),
+0 5px 10px rgba(0,0,0,.5);
 }
 
 .menu{position:relative}
@@ -78,6 +98,7 @@ border-radius:12px;
 padding:6px;
 display:none;
 min-width:250px;
+z-index:2000;
 }
 
 .menu.open .dropdown{display:block}
@@ -113,7 +134,7 @@ max-width:700px;
 margin:auto;
 }
 
-/* CTA */
+/* 🔥 3D CTA */
 .cta-row{
 display:flex;
 justify-content:center;
@@ -127,26 +148,29 @@ padding:12px 26px;
 border-radius:40px;
 font-weight:700;
 text-transform:uppercase;
-cursor:pointer;
-transition:0.3s;
 text-decoration:none;
-}
 
-.btn-primary{
-background:var(--gold);
-color:#000;
-box-shadow:0 0 20px rgba(211,164,81,0.4);
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
 .btn-dark{
-background:#222;
+background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
 color:#fff;
-border:1px solid rgba(255,255,255,.3);
 }
 
-.btn:hover{
-transform:translateY(-3px) scale(1.05);
-box-shadow:0 0 25px rgba(255,255,255,0.3);
+.btn-primary{
+background:linear-gradient(145deg,#d3a451,#b68c3a);
+color:#000;
+}
+
+.btn:hover{transform:translateY(-3px)}
+.btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
 }
 
 /* CARD */
@@ -167,9 +191,7 @@ margin-bottom:20px;
 }
 
 /* LISTA */
-.goals{
-list-style:none;
-}
+.goals{list-style:none}
 
 .goals li{
 padding:10px 0;
@@ -197,6 +219,31 @@ from{opacity:0}
 to{opacity:1}
 }
 
+/* 🔥 WHATSAPP 3D */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+color:#000;
+font-size:28px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:50%;
+
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+
+z-index:9999;
+}
+
 /* FOOTER */
 footer{
 text-align:center;
@@ -210,7 +257,6 @@ font-size:14px;
 
 <body>
 
-<!-- 🔥 HEADER UBACEN -->
 <header>
 <div class="container head">
 
@@ -243,9 +289,11 @@ font-size:14px;
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 
 </div>
+
 </div>
 
 </nav>
+
 </div>
 </header>
 
@@ -307,22 +355,19 @@ font-size:14px;
 © 2025 Иксан • Снага правде
 </footer>
 
-<!-- 🔥 MENU SCRIPT -->
 <script>
-
 const menu=document.getElementById('mainMenu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-
 </script>
+
+<!-- 🔥 WHATSAPP -->
+<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="whatsapp-float">📞</a>
 
 </body>
 </html>
