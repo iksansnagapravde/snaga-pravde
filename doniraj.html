@@ -49,48 +49,67 @@ padding:10px 0;
 height:120px;
 }
 
-/* NAV */
-.nav{
+nav.nav{
 display:flex;
-gap:10px;
-flex-wrap:wrap;
-justify-content:center;
+flex-direction:row;
 align-items:center;
+gap:10px;
+padding-top:0;
+padding-right:8px;
 }
 
-/* 🔥 3D dugmad (lebdeći stil) */
-.nav a,.menu-btn{
+/* 🔥 NOVI IZGLED DUGMADI */
+.nav a.nav-link, .menu-btn{
+
 padding:6px 10px;
 border-radius:10px;
 text-decoration:none;
 font-weight:600;
+font-size:0.9rem;
+line-height:1;
+white-space:nowrap;
+
 color:#fff;
 
-background:rgba(0,0,0,0.5);
+/* lebdeći efekat */
+background:rgba(0,0,0,0.45);
 backdrop-filter:blur(6px);
 
+/* 3D */
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
+
+transition:all .15s ease;
 }
 
-/* MENI dugme */
+/* 🔥 MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
+/* hover */
+.nav a.nav-link:hover, .menu-btn:hover{
+transform:translateY(-2px);
+filter:brightness(1.2);
+}
+
 /* klik */
-.nav a:active,.menu-btn:active{
+.nav a.nav-link:active, .menu-btn:active{
 transform:translateY(3px);
 box-shadow:
 0 2px 0 rgba(0,0,0,.6),
 0 8px 15px rgba(0,0,0,.5);
 }
 
-.menu{position:relative}
+.nav a[aria-current="page"]{
+outline:2px solid var(--gold);
+outline-offset:2px
+}
 
+.menu{position:relative}
 /* 🔥 LEP DROPDOWN */
 .dropdown{
 position:absolute;
