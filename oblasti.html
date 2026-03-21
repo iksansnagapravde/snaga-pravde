@@ -16,16 +16,17 @@
 --ink:#dcdcdc;
 }
 
+*{box-sizing:border-box;margin:0;padding:0}
+
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
-margin:0;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -39,7 +40,7 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
+padding:4px 0;
 }
 
 .brand img{
@@ -47,18 +48,24 @@ height:120px;
 border-radius:10px;
 }
 
+/* NAV */
 .nav{
 display:flex;
 align-items:center;
 gap:10px;
+flex-wrap:nowrap;
 }
 
-/* NAV */
+/* DUGMAD */
 .nav a.nav-link,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.9rem;
+line-height:1;
+white-space:nowrap;
+text-decoration:none;
+
 color:#fff;
 background:rgba(0,0,0,0.45);
 
@@ -94,16 +101,16 @@ display:block;
 padding:9px 10px;
 border-radius:8px;
 color:#fff;
-font-weight:600;
+text-decoration:none;
 }
 
-/* CTA — ISTO KAO INDEX */
+/* CTA */
 .cta-row{
 display:flex;
 justify-content:center;
-gap:8px;
-margin-top:30px;
 flex-wrap:nowrap;
+gap:8px;
+margin-top:20px;
 }
 
 .btn{
@@ -113,7 +120,8 @@ border-radius:40px;
 font-weight:700;
 font-size:13px;
 text-transform:uppercase;
-white-space:nowrap;
+text-decoration:none;
+line-height:1;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
@@ -121,58 +129,79 @@ box-shadow:
 }
 
 .btn-dark{
-background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
+background:#1c1c1c;
 color:#fff;
 }
 
 .btn-primary{
-background:linear-gradient(145deg,#d3a451,#b68c3a);
+background:#d3a451;
 color:#000;
 }
 
 /* GRID */
 .main-grid{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-margin-top:40px;
+gap:25px;
+margin-top:30px;
+}
+
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
 }
 
 .left,.right{
 background:rgba(0,0,0,0.6);
-padding:25px;
+padding:20px;
 border-radius:15px;
+}
+
+/* MOBILE FIX (INDEX STYLE) */
+@media(max-width:768px){
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:6px;
+}
+
+.nav a.nav-link{
+font-size:12px;
+padding:5px 7px;
+}
+
+.brand img{
+height:90px;
+}
+
+.cta-row{
+flex-direction:column;
+align-items:center;
+}
+
+.cta-row a{
+width:90%;
+}
+
 }
 
 /* WHATSAPP — ČIST */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
-right:20px;
-width:60px;
-height:60px;
+right:15px;
+width:55px;
+height:55px;
 
-background:linear-gradient(145deg,#25D366,#1ebe5d);
+background:#25D366;
 color:#000;
-font-size:26px;
+font-size:24px;
 
 display:flex;
 align-items:center;
 justify-content:center;
 
 border-radius:50%;
-
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-
-animation:waPulse 2s infinite;
-}
-
-@keyframes waPulse{
-0%{box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);}
-50%{box-shadow:0 6px 0 #128C7E,0 25px 45px rgba(0,0,0,0.9);}
-100%{box-shadow:0 6px 0 #128C7E,0 18px 35px rgba(0,0,0,0.7);}
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
 }
 
 </style>
@@ -245,7 +274,7 @@ animation:waPulse 2s infinite;
 
 <div class="right">
 <h2>Кључне области</h2>
-<ul class="areas">
+<ul>
 <li>Заштита људских права</li>
 <li>Борба против корупције</li>
 <li>Транспарентност институција</li>
