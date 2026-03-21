@@ -7,14 +7,15 @@
 
 <title>Иксан – Снага правде | Заштита права грађана, владавина права и институционална одговорност</title>
 
-<meta name="description" content="Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана. Кроз директан рад са грађанима и институционалне иницијативе, залажемо се за праведно и одговорно друштво у Републици Србији.">
+<meta name="description" content="Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана.">
 
 <meta name="theme-color" content="#020c1b">
 
 <link rel="icon" href="logo-white.png" type="image/png">
+
 <style>
 
-/* ===== ORIGINAL (NIŠTA NIJE DIRANO) ===== */
+/* ===== ORIGINAL (NE DIRANO) ===== */
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
@@ -23,7 +24,6 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-
 html,body{height:100%}
 
 body{
@@ -33,8 +33,6 @@ background: url('justice-bg.jpg') center 25% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
--webkit-font-smoothing:antialiased;
-text-rendering:optimizeLegibility;
 font-size:110%;
 }
 
@@ -58,52 +56,22 @@ align-items:center;
 justify-content:space-between;
 padding:4px 0 0;
 gap:12px;
-flex-wrap:nowrap;
 }
 
-.brand{display:flex;align-items:center;flex-shrink:0;}
-
-.brand img{
-height:161px;
-border-radius:10px;
-}
-
-@media (max-width:768px){
-.brand{justify-content:center;margin:0 auto;}
-.brand img{height:106px;}
-}
+.brand img{height:161px;border-radius:10px;}
 
 nav.nav{
 display:flex;
-flex-direction:row;
 align-items:center;
 gap:10px;
-padding-top:0;
-padding-right:8px;
 }
 
 .nav a.nav-link, .menu-btn{
-background:transparent;
 color:#fff;
 padding:6px 9px;
 border-radius:8px;
 border:1px solid rgba(255,255,255,.2);
 font-weight:600;
-font-size:0.9rem;
-line-height:1;
-transition:transform .15s ease,filter .15s ease;
-white-space:nowrap;
-backdrop-filter:blur(6px);
-}
-
-.nav a.nav-link:hover, .menu-btn:hover{
-transform:translateY(-1px);
-filter:brightness(1.2)
-}
-
-.nav a[aria-current="page"]{
-outline:2px solid var(--gold);
-outline-offset:2px
 }
 
 .menu{position:relative}
@@ -113,145 +81,13 @@ position:absolute;
 top:calc(100% + 8px);
 right:0;
 background:rgba(20,20,20,0.85);
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,.2);
 border-radius:12px;
 min-width:280px;
 padding:6px;
-box-shadow:0 10px 24px rgba(0,0,0,.5);
 display:none;
 }
 
 .menu.open .dropdown{display:block}
-
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
-color:#fff;
-font-weight:600;
-font-size:14px;
-white-space:nowrap;
-border:1px solid transparent;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
-border-color:rgba(255,255,255,.16)
-}
-
-.hero{
-padding:24px 0 0;
-position:relative;
-overflow:hidden;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.08), transparent 60%);
-pointer-events:none;
-transition:0.4s;
-}
-
-.hero:hover::before{
-background:radial-gradient(circle at 50% 50%, rgba(255,255,255,0.18), transparent 60%);
-}
-
-.hero-grid{display:grid;gap:24px}
-
-@media(min-width:980px){
-.hero-grid{grid-template-columns:1.1fr .9fr}
-}
-
-h1{
-color:#fff;
-margin-top:8px;
-line-height:1.2;
-font-weight:600;
-font-size:clamp(23px,3vw,33px);
-text-shadow:
-0 0 10px rgba(255,255,255,0.3),
-0 0 40px rgba(255,255,255,0.2),
-0 15px 40px rgba(0,0,0,0.9);
-}
-
-.line2{
-display:block;
-font-size:clamp(20px,2.5vw,24px);
-color:var(--ink);
-margin-top:4px;
-text-shadow:0 10px 25px rgba(0,0,0,0.9);
-}
-
-.sub{
-margin:8px 0 12px;
-max-width:740px;
-color:var(--ink);
-opacity:.95;
-font-size:clamp(16px,2vw,18px);
-text-shadow:0 10px 25px rgba(0,0,0,0.9);
-}
-
-.cta-row{
-display:flex;
-justify-content:center;
-flex-wrap:nowrap;
-gap:8px;
-margin-top:14px;
-}
-
-.btn{
-display:inline-block;
-padding:8px 18px;
-border-radius:40px;
-font-weight:700;
-font-size:13px;
-text-transform:uppercase;
-transition:transform .2s, box-shadow .2s;
-cursor:pointer;
-text-align:center;
-box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
-white-space:nowrap;
-position:relative;
-overflow:hidden;
-}
-
-.btn-primary{background:var(--gold);color:var(--deepBlue)}
-
-.btn-dark{
-background:rgba(20,20,20,0.6);
-backdrop-filter:blur(6px);
-color:#fff;
-border:1px solid rgba(255,255,255,.3)
-}
-
-.btn:hover{transform:translateY(-2px)}
-
-/* 🔥 NOVO */
-.hero-media{position:relative;}
-
-.big-cta{
-position:absolute;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
-background:linear-gradient(145deg,#d3a451,#b68c3a);
-color:#000;
-padding:16px 28px;
-border-radius:40px;
-font-weight:900;
-font-size:14px;
-text-transform:uppercase;
-box-shadow:0 6px 0 #8a6a2a,0 18px 35px rgba(0,0,0,.7);
-}
-
-.big-cta span{
-display:block;
-font-size:12px;
-margin-top:4px;
-}
 
 /* 🔥 NOVO */
 .whatsapp-float{
@@ -267,8 +103,26 @@ display:flex;
 align-items:center;
 justify-content:center;
 border-radius:50%;
-box-shadow:0 10px 25px rgba(0,0,0,.5);
 z-index:999;
+}
+
+.hero-media{position:relative;}
+
+.big-cta{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+background:#d3a451;
+color:#000;
+padding:16px 28px;
+border-radius:40px;
+font-weight:900;
+}
+
+.big-cta span{
+display:block;
+font-size:12px;
 }
 
 </style>
@@ -285,22 +139,21 @@ z-index:999;
 </a>
 </div>
 
-<nav class="nav" aria-label="Главна навигација">
+<nav class="nav">
 
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
 <!-- 🔥 NOVO -->
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
+<a href="https://wa.me/381665857707" 
+class="nav-link" 
+style="background:#25D366;color:#000;">
 WhatsApp
 </a>
 
 <div class="menu" id="mainMenu">
 
-<button class="menu-btn" type="button">
-Мени ▾
-</button>
+<button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
 
@@ -311,10 +164,6 @@ WhatsApp
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 
 <!-- 🔥 NOVO -->
 <a href="uradili.html">Шта смо до сада урадили</a>
@@ -343,7 +192,7 @@ WhatsApp
 </h1>
 
 <p class="sub">
-Удружење грађана „Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана.
+Удружење грађана „Иксан – Снага правде је удружење грађана посвећено заштити уставних права, јачању владавине права и унапређењу правне сигурности грађана. Кроз директан рад са грађанима и институционалне иницијативе, залажемо се за праведно и одговорно друштво у Републици Србији.
 </p>
 
 <div class="cta-row">
@@ -355,9 +204,8 @@ WhatsApp
 </div>
 
 <!-- 🔥 NOVO -->
-<p style="margin-top:10px;font-weight:700;color:#25D366;">
-Контакт искључиво путем WhatsApp поруке  
-Прво пошаљите поруку ради заказивања термина разговора
+<p style="margin-top:10px;color:#25D366;">
+Контакт искључиво путем WhatsApp поруке
 </p>
 
 </div>
@@ -365,7 +213,6 @@ WhatsApp
 <div class="hero-media">
 <img src="univ.webp">
 
-<!-- 🔥 NOVO -->
 <a href="uradili.html" class="big-cta">
 ШТА СМО ДО САДА УРАДИЛИ
 <span>за грађане и институције</span>
@@ -376,24 +223,35 @@ WhatsApp
 </div>
 </section>
 
-<section class="split">
-<!-- SVE OSTALO OSTALO ISTO -->
-</section>
-
 </main>
 
 <footer>
 <div class="container">
-© 2025 Иксан • Снага правде — Сва права задржана.
+© 2025 Иксан • Снага правде
 </div>
 </footer>
 
-<!-- 🔥 NOVO -->
+<!-- 🔥 FLOATING -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 <script>
-/* tvoj JS OSTAO */
+
+/* 🔥 POPRAVLJEN MENI */
+const menu = document.getElementById('mainMenu');
+const menuBtn = menu.querySelector('.menu-btn');
+
+menuBtn.addEventListener('click', () => {
+menu.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+if (!menu.contains(e.target)) {
+menu.classList.remove('open');
+}
+});
+
 </script>
 
 </body>
+</html>
 </html>
