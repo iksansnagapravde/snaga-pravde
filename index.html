@@ -204,20 +204,63 @@ margin-top:14px;
 
 .btn{
 display:inline-block;
-padding:8px 18px;
+padding:10px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
 text-transform:uppercase;
-transition:transform .2s, box-shadow .2s;
-cursor:pointer;
 text-align:center;
-box-shadow:0 3px 0 rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.4);
+cursor:pointer;
 white-space:nowrap;
 position:relative;
-overflow:hidden;
+
+/* 3D */
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
+
+/* animacija ulaska */
+opacity:0;
+transform:translateY(25px) scale(0.95);
+animation:btnFade .6s ease forwards;
 }
 
+/* delay po dugmetu */
+.cta-row a:nth-child(1){animation-delay:.1s;}
+.cta-row a:nth-child(2){animation-delay:.2s;}
+.cta-row a:nth-child(3){animation-delay:.3s;}
+
+@keyframes btnFade{
+to{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+/* stilovi */
+.btn-primary{
+background:linear-gradient(145deg,#d3a451,#b68c3a);
+color:#000;
+}
+
+.btn-dark{
+background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
+color:#fff;
+border:1px solid rgba(255,255,255,.2);
+}
+
+/* hover */
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* klik */
+.btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
+}
 .btn-primary{background:var(--gold);color:var(--deepBlue)}
 
 .btn-dark{
@@ -253,22 +296,66 @@ font-size:12px;
 margin-top:4px;
 }
 
-/* 🔥 NOVO */
+/* 🔥 3D SLUŠALICA */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
 width:60px;
 height:60px;
-background:#25D366;
+
+background:linear-gradient(145deg,#25D366,#1ebe5d);
 color:#000;
 font-size:28px;
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 border-radius:50%;
-box-shadow:0 10px 25px rgba(0,0,0,.5);
-z-index:999;
+
+/* 3D */
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+
+z-index:9999;
+cursor:pointer;
+
+/* lagana animacija */
+animation:waPulse 2s infinite;
+}
+
+/* hover */
+.whatsapp-float:hover{
+transform:translateY(-3px);
+}
+
+/* klik */
+.whatsapp-float:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 #128C7E,
+0 10px 20px rgba(0,0,0,0.6);
+}
+
+/* puls */
+@keyframes waPulse{
+0%{
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+}
+50%{
+box-shadow:
+0 6px 0 #128C7E,
+0 25px 45px rgba(0,0,0,0.9);
+}
+100%{
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+}
 }
 /* 📱 MOBILE FIX – KLJUČNO */
 html,body{
