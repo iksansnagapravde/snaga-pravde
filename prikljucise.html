@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Транспарентност — Иксан</title>
+<title>Прикључите се — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
 
@@ -13,12 +13,9 @@
 
 :root{
 --gold:#d3a451;
---ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-
-/* ❌ nema linija */
 a{text-decoration:none;color:inherit}
 
 body{
@@ -29,7 +26,7 @@ font-family:"Times New Roman";
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER (FIXED) ===== */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -50,14 +47,12 @@ height:95px;
 border-radius:10px;
 }
 
-/* NAV */
 .nav{
 display:flex;
 align-items:center;
 gap:6px;
 }
 
-/* 🔥 3D */
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
@@ -104,7 +99,6 @@ display:flex;
 justify-content:center;
 gap:10px;
 margin-top:20px;
-flex-wrap:nowrap;
 }
 
 .btn{
@@ -121,7 +115,24 @@ box-shadow:
 .btn-dark{background:#1c1c1c;color:#fff}
 .btn-gold{background:var(--gold);color:#000}
 
-/* GRID */
+/* ===== NASLOV ===== */
+.title{
+text-align:center;
+margin-top:30px;
+}
+
+.title h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.title p{
+color:#ddd;
+max-width:700px;
+margin:auto;
+}
+
+/* ===== GRID ===== */
 .main-grid{
 display:grid;
 gap:30px;
@@ -132,15 +143,52 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-.left,.right{
+/* ===== LEVO ===== */
+.left{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
 }
 
-.right p{color:var(--ink)}
+.left h2{
+margin-bottom:10px;
+}
 
-/* MOBILE */
+.left p{
+color:#ddd;
+margin-bottom:10px;
+}
+
+/* ===== DESNO (FORMA) ===== */
+.right{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+}
+
+form{
+display:grid;
+gap:12px;
+}
+
+input,textarea{
+padding:10px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,.3);
+background:rgba(255,255,255,.1);
+color:#fff;
+}
+
+button{
+background:var(--gold);
+border:none;
+padding:10px;
+border-radius:20px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* ===== MOBILE ===== */
 @media(max-width:768px){
 
 .brand img{height:80px}
@@ -162,7 +210,7 @@ text-align:center;
 
 }
 
-/* SLUSALICA */
+/* ===== WHATSAPP ===== */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -211,10 +259,6 @@ fill:#000;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 </div>
 
 </div>
@@ -225,6 +269,7 @@ fill:#000;
 
 <div class="container">
 
+<!-- GORNJA DUGMAD -->
 <div class="top-buttons">
 
 <a href="inicijative.html" class="btn btn-dark">
@@ -241,37 +286,46 @@ fill:#000;
 
 </div>
 
+<!-- NASLOV -->
+<div class="title">
+
+<h1>ПРИКЉУЧИТЕ СЕ НАШЕМ РАДУ</h1>
+
+<p>
+Позивамо све грађане, стручњаке и сараднике да се укључе у рад удружења.
+Заједничким деловањем можемо допринети заштити права и јачању правде.
+</p>
+
+</div>
+
+<!-- GRID -->
 <div class="main-grid">
 
 <div class="left">
 
-<h2>Транспарентност јавних финансија</h2>
+<h2>Зашто да се прикључите?</h2>
 
-<p>
-Јавне набавке и управљање јавним средствима представљају кључни део функционисања државе.
-</p>
-
-<p>
-Транспарентност поступака, јавна контрола и провера порекла имовине доприносе
-спречавању злоупотреба и јачању поверења грађана.
-</p>
-
-<p>
-Наш циљ је увођење јасних механизама контроле и одговорности носилаца јавних функција.
-</p>
+<p>✔ Помажете грађанима</p>
+<p>✔ Учествујете у иницијативама</p>
+<p>✔ Доприносите правди</p>
+<p>✔ Повезујете се са стручњацима</p>
 
 </div>
 
 <div class="right">
 
-<h2>Кључне мере</h2>
+<h2>Пријава за сарадњу</h2>
 
-<p>Провера порекла имовине јавних функционера</p>
-<p>Јавност и транспарентност јавних набавки</p>
-<p>Контрола трошења јавних средстава</p>
-<p>Спречавање корупције у институцијама</p>
-<p>Јачање надзорних механизама</p>
-<p>Дигитализација финансијских токова</p>
+<form>
+
+<input type="text" placeholder="Име и презиме" required>
+<input type="email" placeholder="Е-пошта" required>
+
+<textarea placeholder="Како желите да допринесете?" required></textarea>
+
+<button>Пошаљи</button>
+
+</form>
 
 </div>
 
@@ -290,7 +344,7 @@ menu.classList.remove('open');
 });
 </script>
 
-<!-- SLUSALICA -->
+<!-- SLUŠALICA -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">
 <svg viewBox="0 0 24 24">
 <path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
