@@ -16,6 +16,7 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow-x:hidden;}
 
 body{
 background:url('justice-bg.jpg') center/cover no-repeat fixed;
@@ -29,6 +30,7 @@ font-family:"Times New Roman",serif;
 header{
 position:sticky;
 top:0;
+z-index:1000;
 background:rgba(0,0,0,0.7);
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.2);
@@ -43,14 +45,33 @@ padding:10px 0;
 
 .brand img{height:120px}
 
-.nav{display:flex;gap:10px}
+/* 🔥 NAV 3D */
+.nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 
 .nav a,.menu-btn{
 padding:6px 10px;
 border:1px solid rgba(255,255,255,.3);
 border-radius:8px;
-color:#fff;
 text-decoration:none;
+font-weight:600;
+
+box-shadow:
+0 3px 0 rgba(0,0,0,.6),
+0 10px 20px rgba(0,0,0,.6);
+}
+
+/* 🔥 MENI dugme */
+.menu-btn{
+background:#fff;
+color:#000 !important;
+font-weight:700;
+}
+
+.nav a:active,.menu-btn:active{
+transform:translateY(3px);
+box-shadow:
+0 1px 0 rgba(0,0,0,.6),
+0 5px 10px rgba(0,0,0,.5);
 }
 
 /* MENU */
@@ -65,6 +86,7 @@ border-radius:10px;
 padding:8px;
 display:none;
 min-width:250px;
+z-index:2000;
 }
 
 .menu.open .dropdown{display:block}
@@ -72,6 +94,7 @@ min-width:250px;
 .dropdown a{
 display:block;
 padding:8px;
+color:#fff;
 }
 
 /* HERO */
@@ -91,7 +114,7 @@ max-width:600px;
 margin:10px auto;
 }
 
-/* CTA BUTTONS */
+/* 🔥 GORNJA 3D DUGMAD */
 .cta-row{
 display:flex;
 justify-content:center;
@@ -105,10 +128,29 @@ padding:12px 24px;
 border-radius:30px;
 font-weight:bold;
 text-decoration:none;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
-.btn-dark{background:#222;color:#fff}
-.btn-gold{background:var(--gold);color:#000}
+.btn-dark{
+background:linear-gradient(145deg,#1c1c1c,#2b2b2b);
+color:#fff;
+}
+
+.btn-gold{
+background:linear-gradient(145deg,#d3a451,#b68c3a);
+color:#000;
+}
+
+.btn:hover{transform:translateY(-3px)}
+.btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
+}
 
 /* GRID */
 .grid{
@@ -129,7 +171,6 @@ border-radius:15px;
 }
 
 .bank h3{text-align:center;margin-bottom:10px}
-
 .bank p{color:#ccc;font-size:14px}
 
 /* PAYPAL */
@@ -142,7 +183,6 @@ box-shadow:0 20px 50px rgba(0,0,0,.7);
 }
 
 .paypal h2{margin-bottom:10px}
-
 .paypal p{color:#ddd;margin-bottom:20px}
 
 /* PAYPAL BUTTON */
@@ -162,6 +202,26 @@ transition:.3s;
 .paypal-btn:hover{
 transform:scale(1.08);
 box-shadow:0 0 40px rgba(255,196,57,1);
+}
+
+/* 🔥 WHATSAPP 3D */
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+color:#000;
+font-size:28px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+box-shadow:
+0 6px 0 #128C7E,
+0 18px 35px rgba(0,0,0,0.7);
+z-index:9999;
 }
 
 /* FOOTER */
@@ -224,11 +284,12 @@ margin-top:40px;
 и борбу за праведнији систем.
 </p>
 
+<!-- 🔥 DODATA 3 DUGMETA -->
 <div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА</a>
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
-ДОНИРАЈ
+ПОДРЖИ НАШ РАД
 </a>
 </div>
 
@@ -251,9 +312,7 @@ margin-top:40px;
 
 <h2>PayPal донација</h2>
 
-<p>
-Најбржи начин да подржите наш рад.
-</p>
+<p>Најбржи начин да подржите наш рад.</p>
 
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="paypal-btn">
 ДОНИРАЈ ПУТЕМ PAYPAL-a
@@ -271,10 +330,7 @@ margin-top:40px;
 
 <script>
 const menu=document.getElementById('menu');
-
-menu.querySelector('.menu-btn').onclick=()=>{
-menu.classList.toggle('open');
-};
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
@@ -282,6 +338,9 @@ menu.classList.remove('open');
 }
 });
 </script>
+
+<!-- 🔥 WHATSAPP -->
+<a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
 </html>
