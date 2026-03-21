@@ -26,17 +26,15 @@ font-family:"Times New Roman",serif;
 
 .container{max-width:1100px;margin:auto;padding:0 20px}
 
-/* ❌ UKLONJENA CRNA TRAKA */
+/* HEADER */
 header{
 position:sticky;
 top:0;
 z-index:1000;
 background:transparent;
 border:none;
-backdrop-filter:none;
 }
 
-/* 🔥 SAMO RASPORED */
 .head{
 display:flex;
 justify-content:space-between;
@@ -44,73 +42,49 @@ align-items:center;
 padding:10px 0;
 }
 
-/* LOGO */
-.brand img{
-height:120px;
-}
+.brand img{height:120px}
 
+/* NAV */
 nav.nav{
 display:flex;
-flex-direction:row;
 align-items:center;
 gap:10px;
-padding-top:0;
-padding-right:8px;
 }
 
-/* 🔥 NOVI IZGLED DUGMADI */
+/* 🔥 ISTI MENI KAO INICIJATIVE */
 .nav a.nav-link, .menu-btn{
-
 padding:6px 10px;
-border-radius:10px;
+border:1px solid rgba(255,255,255,.3);
+border-radius:8px;
 text-decoration:none;
 font-weight:600;
-font-size:0.9rem;
-line-height:1;
-white-space:nowrap;
+
+box-shadow:
+0 3px 0 rgba(0,0,0,.6),
+0 10px 20px rgba(0,0,0,.6);
 
 color:#fff;
-
-/* lebdeći efekat */
-background:rgba(0,0,0,0.45);
-backdrop-filter:blur(6px);
-
-/* 3D */
-box-shadow:
-0 5px 0 rgba(0,0,0,.7),
-0 15px 30px rgba(0,0,0,.8);
-
-transition:all .15s ease;
+background:transparent;
 }
 
-/* 🔥 MENI dugme */
+/* MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
-/* hover */
-.nav a.nav-link:hover, .menu-btn:hover{
-transform:translateY(-2px);
-filter:brightness(1.2);
-}
-
 /* klik */
-.nav a.nav-link:active, .menu-btn:active{
+.nav a.nav-link:active,.menu-btn:active{
 transform:translateY(3px);
 box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
-}
-
-.nav a[aria-current="page"]{
-outline:2px solid var(--gold);
-outline-offset:2px
+0 1px 0 rgba(0,0,0,.6),
+0 5px 10px rgba(0,0,0,.5);
 }
 
 .menu{position:relative}
-/* 🔥 LEP DROPDOWN */
+
+/* DROPDOWN */
 .dropdown{
 position:absolute;
 top:110%;
@@ -120,7 +94,6 @@ padding:10px;
 border-radius:12px;
 display:none;
 min-width:260px;
-backdrop-filter:blur(10px);
 }
 
 .menu.open .dropdown{display:block}
@@ -130,11 +103,6 @@ display:block;
 padding:8px;
 color:#fff;
 text-decoration:none;
-border-radius:6px;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,0.1);
 }
 
 /* HERO */
@@ -209,7 +177,7 @@ text-align:center;
 box-shadow:0 20px 50px rgba(0,0,0,.7);
 }
 
-/* WHATSAPP */
+/* 🔥 WHATSAPP BEZ CRTE */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -224,9 +192,8 @@ align-items:center;
 justify-content:center;
 border-radius:50%;
 box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-z-index:9999;
+0 10px 25px rgba(0,0,0,0.6);
+z-index:99999;
 }
 
 footer{
@@ -249,8 +216,8 @@ margin-top:40px;
 
 <nav class="nav">
 
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">КОНТАКТ</a>
+<a href="index.html" class="nav-link">ПОЧЕТНА</a>
+<a href="kontakt.html" class="nav-link">КОНТАКТ</a>
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
