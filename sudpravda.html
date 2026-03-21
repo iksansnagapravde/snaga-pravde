@@ -192,22 +192,48 @@ justify-content:center;
 
 }
 
-/* SLUSALICA */
+/* ✅ WHATSAPP 3D */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
-width:55px;
-height:55px;
-background:#25D366;
+width:65px;
+height:65px;
+
+background:linear-gradient(145deg,#25D366,#1ebe5d);
+
 display:flex;
 align-items:center;
 justify-content:center;
+
 border-radius:50%;
+
+/* 3D efekat */
+box-shadow:
+0 8px 0 #128C7E,
+0 20px 40px rgba(0,0,0,0.8);
+
+filter:drop-shadow(0 0 6px rgba(37,211,102,0.6));
+
+z-index:9999;
+cursor:pointer;
+transition:0.15s;
+}
+
+.whatsapp-float:hover{
+transform:translateY(-4px) scale(1.08);
+}
+
+.whatsapp-float:active{
+transform:translateY(6px);
+box-shadow:
+0 3px 0 #128C7E,
+0 10px 20px rgba(0,0,0,0.7);
 }
 
 .whatsapp-float svg{
-width:26px;
+width:30px;
+height:30px;
 fill:#000;
 }
 
