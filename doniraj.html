@@ -26,16 +26,17 @@ font-family:"Times New Roman",serif;
 
 .container{max-width:1100px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* ❌ UKLONJENA CRNA TRAKA */
 header{
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(0,0,0,0.7);
-backdrop-filter:blur(6px);
-border-bottom:1px solid rgba(255,255,255,.2);
+background:transparent;
+border:none;
+backdrop-filter:none;
 }
 
+/* 🔥 SAMO RASPORED */
 .head{
 display:flex;
 justify-content:space-between;
@@ -43,50 +44,64 @@ align-items:center;
 padding:10px 0;
 }
 
-.brand img{height:120px}
-
-/* 🔥 NAV 3D */
-.nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
-
-.nav a,.menu-btn{
-padding:6px 10px;
-border:1px solid rgba(255,255,255,.3);
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-
-box-shadow:
-0 3px 0 rgba(0,0,0,.6),
-0 10px 20px rgba(0,0,0,.6);
+/* LOGO */
+.brand img{
+height:120px;
 }
 
-/* 🔥 MENI dugme */
+/* NAV */
+.nav{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+}
+
+/* 🔥 3D dugmad (lebdeći stil) */
+.nav a,.menu-btn{
+padding:6px 10px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+color:#fff;
+
+background:rgba(0,0,0,0.5);
+backdrop-filter:blur(6px);
+
+box-shadow:
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+}
+
+/* MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
+/* klik */
 .nav a:active,.menu-btn:active{
 transform:translateY(3px);
 box-shadow:
-0 1px 0 rgba(0,0,0,.6),
-0 5px 10px rgba(0,0,0,.5);
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
 }
 
-/* MENU */
 .menu{position:relative}
 
+/* 🔥 LEP DROPDOWN */
 .dropdown{
 position:absolute;
 top:110%;
 right:0;
-background:#111;
-border-radius:10px;
-padding:8px;
+background:rgba(15,15,15,.95);
+padding:10px;
+border-radius:12px;
 display:none;
-min-width:250px;
-z-index:2000;
+min-width:260px;
+backdrop-filter:blur(10px);
 }
 
 .menu.open .dropdown{display:block}
@@ -95,6 +110,12 @@ z-index:2000;
 display:block;
 padding:8px;
 color:#fff;
+text-decoration:none;
+border-radius:6px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,0.1);
 }
 
 /* HERO */
@@ -114,7 +135,7 @@ max-width:600px;
 margin:10px auto;
 }
 
-/* 🔥 GORNJA 3D DUGMAD */
+/* DUGMAD */
 .cta-row{
 display:flex;
 justify-content:center;
@@ -130,8 +151,8 @@ font-weight:bold;
 text-decoration:none;
 
 box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
+0 6px 0 rgba(0,0,0,.6),
+0 18px 35px rgba(0,0,0,.9);
 }
 
 .btn-dark{
@@ -142,14 +163,6 @@ color:#fff;
 .btn-gold{
 background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
-}
-
-.btn:hover{transform:translateY(-3px)}
-.btn:active{
-transform:translateY(4px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
 }
 
 /* GRID */
@@ -163,17 +176,12 @@ margin-top:40px;
 .grid{grid-template-columns:1fr 1.2fr}
 }
 
-/* BANK */
 .bank{
 background:rgba(0,0,0,0.6);
 padding:20px;
 border-radius:15px;
 }
 
-.bank h3{text-align:center;margin-bottom:10px}
-.bank p{color:#ccc;font-size:14px}
-
-/* PAYPAL */
 .paypal{
 background:linear-gradient(135deg,#0a2540,#003087);
 padding:40px;
@@ -182,29 +190,7 @@ text-align:center;
 box-shadow:0 20px 50px rgba(0,0,0,.7);
 }
 
-.paypal h2{margin-bottom:10px}
-.paypal p{color:#ddd;margin-bottom:20px}
-
-/* PAYPAL BUTTON */
-.paypal-btn{
-display:inline-block;
-padding:16px 35px;
-border-radius:40px;
-background:#ffc439;
-color:#000;
-font-weight:900;
-font-size:18px;
-text-decoration:none;
-box-shadow:0 0 25px rgba(255,196,57,0.6);
-transition:.3s;
-}
-
-.paypal-btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 40px rgba(255,196,57,1);
-}
-
-/* 🔥 WHATSAPP 3D */
+/* WHATSAPP */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -224,7 +210,6 @@ box-shadow:
 z-index:9999;
 }
 
-/* FOOTER */
 footer{
 text-align:center;
 padding:30px;
@@ -284,7 +269,6 @@ margin-top:40px;
 и борбу за праведнији систем.
 </p>
 
-<!-- 🔥 DODATA 3 DUGMETA -->
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
@@ -314,8 +298,8 @@ margin-top:40px;
 
 <p>Најбржи начин да подржите наш рад.</p>
 
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="paypal-btn">
-ДОНИРАЈ ПУТЕМ PAYPAL-a
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn-gold">
+ДОНИРАЈ
 </a>
 
 </div>
@@ -339,7 +323,6 @@ menu.classList.remove('open');
 });
 </script>
 
-<!-- 🔥 WHATSAPP -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
 </body>
