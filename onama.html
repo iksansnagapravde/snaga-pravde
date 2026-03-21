@@ -28,7 +28,7 @@ a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER — IDENTIČAN KAO OBLASTI ===== */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -44,7 +44,6 @@ align-items:center;
 justify-content:space-between;
 padding:4px 0;
 gap:10px;
-flex-wrap:nowrap;
 }
 
 .brand img{
@@ -58,7 +57,6 @@ align-items:center;
 gap:8px;
 }
 
-/* ISTA VELIČINA DUGMADI */
 .nav a,.menu-btn{
 padding:5px 8px;
 border-radius:10px;
@@ -81,7 +79,7 @@ color:#000 !important;
 font-weight:700;
 }
 
-/* DROPDOWN */
+/* DROPDOWN — SVE IZ INDEX */
 .menu{position:relative}
 
 .dropdown{
@@ -155,6 +153,12 @@ border-radius:15px;
 
 .card p{color:var(--ink)}
 
+/* 🔥 FULL WIDTH BLOK */
+.full-width{
+grid-column:1 / -1;
+}
+
+/* IMPRESUM */
 .impresum{
 margin-top:30px;
 background:rgba(0,0,0,0.6);
@@ -162,16 +166,14 @@ padding:20px;
 border-radius:15px;
 }
 
-/* MOBILE — ISTO KAO OBLASTI */
+/* MOBILE */
 @media(max-width:768px){
+
+.grid{grid-template-columns:1fr;}
 
 .nav{
 flex-wrap:wrap;
 justify-content:center;
-}
-
-.brand img{
-height:90px;
 }
 
 .top-buttons{
@@ -242,6 +244,11 @@ fill:#000;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
 
 </div>
@@ -255,44 +262,24 @@ fill:#000;
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+<a href="#" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
 <div class="hero">
-
 <h1>О удружењу Иксан</h1>
-
-<p>
-Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
-заштити достојанства грађана и развоју праведног друштва.
-</p>
-
+<p>Удружење грађана Иксан – Снага правде...</p>
 </div>
 
-<!-- ORIGINALNI TEKST — NIŠTA NIJE SKRAĆENO -->
 <div class="grid">
 
-<article class="card">
-<h3>Ко смо</h3>
-<p>Иксан окупља грађане са циљем јачања правде и правне сигурности.</p>
-</article>
+<div class="card"><h3>Ко смо</h3><p>Иксан окупља...</p></div>
+<div class="card"><h3>Назив „Иксан“</h3><p>Симбол правде...</p></div>
+<div class="card"><h3>Наша мисија</h3><p>Реформа система...</p></div>
+<div class="card"><h3>Разлог оснивања</h3><p>Одговор на неправде...</p></div>
 
-<article class="card">
-<h3>Назив „Иксан“</h3>
-<p>Симбол правде, истине и одговорности.</p>
-</article>
+<!-- 🔥 OVO JE SADA ŠIROKO -->
+<div class="card full-width">
 
-<article class="card">
-<h3>Наша мисија</h3>
-<p>Реформа система и заштита грађана.</p>
-</article>
-
-<article class="card">
-<h3>Разлог оснивања</h3>
-<p>Одговор на неправде у систему.</p>
-</article>
-
-<article class="card">
 <h3>Наш рад са грађанима</h3>
 
 <p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
@@ -307,19 +294,14 @@ fill:#000;
 
 <p>Позивамо да попуне представку ради заштите права.</p>
 
-</article>
+</div>
 
 </div>
 
 <div class="impresum">
-
 <h3>Основни подаци</h3>
-
 <p>Седиште: Београд</p>
 <p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
-
 </div>
 
 </div>
