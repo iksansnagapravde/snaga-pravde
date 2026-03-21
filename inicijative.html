@@ -19,13 +19,13 @@ margin:0;
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* HEADER BEZ TRAKE */
 header{
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(0,0,0,0.7);
-border-bottom:1px solid rgba(255,255,255,.2);
+background:transparent;
+border:none;
 }
 
 .head{
@@ -35,68 +35,44 @@ align-items:center;
 padding:10px 0;
 }
 
+/* NAV */
 nav.nav{
 display:flex;
-flex-direction:row;
 align-items:center;
 gap:10px;
-padding-top:0;
-padding-right:8px;
 }
 
-/* 🔥 NOVI IZGLED DUGMADI */
+/* DUGMAD MENI */
 .nav a.nav-link, .menu-btn{
-
 padding:6px 10px;
 border-radius:10px;
 text-decoration:none;
 font-weight:600;
 font-size:0.9rem;
-line-height:1;
-white-space:nowrap;
-
 color:#fff;
 
-/* lebdeći efekat */
 background:rgba(0,0,0,0.45);
 backdrop-filter:blur(6px);
 
-/* 3D */
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
-
-transition:all .15s ease;
 }
 
-/* 🔥 MENI dugme */
 .menu-btn{
 background:#fff;
 color:#000 !important;
 font-weight:700;
 }
 
-/* hover */
-.nav a.nav-link:hover, .menu-btn:hover{
-transform:translateY(-2px);
-filter:brightness(1.2);
-}
-
-/* klik */
-.nav a.nav-link:active, .menu-btn:active{
+.nav a:active,.menu-btn:active{
 transform:translateY(3px);
 box-shadow:
 0 2px 0 rgba(0,0,0,.6),
 0 8px 15px rgba(0,0,0,.5);
 }
 
-.nav a[aria-current="page"]{
-outline:2px solid var(--gold);
-outline-offset:2px
-}
-
 .menu{position:relative}
-}
 
 /* DROPDOWN */
 .dropdown{
@@ -104,26 +80,33 @@ display:none;
 position:absolute;
 top:110%;
 right:0;
-background:rgba(20,20,20,0.9);
+background:rgba(20,20,20,0.95);
 border-radius:12px;
-padding:6px;
+padding:8px;
 min-width:260px;
-z-index:2000;
 }
+
+.menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
 padding:8px;
 color:#fff;
 text-decoration:none;
-border-radius:8px;
 }
 
 .dropdown a:hover{
 background:rgba(255,255,255,0.08);
 }
 
-.menu.open .dropdown{display:block}
+/* GORNJA DUGMAD */
+.top-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:30px;
+flex-wrap:wrap;
+}
 
 /* 3D dugmad */
 .btn{
@@ -148,22 +131,6 @@ color:#fff;
 .btn-gold{
 background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
-}
-
-.btn:active{
-transform:translateY(3px);
-box-shadow:
-0 2px 0 #000,
-0 8px 15px rgba(0,0,0,0.5);
-}
-
-/* GORE DUGMAD */
-.top-buttons{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:30px;
-flex-wrap:wrap;
 }
 
 /* GRID */
@@ -199,19 +166,14 @@ padding:10px 0;
 border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-/* 📱 MOBILNI */
+/* MOBILE */
 @media(max-width:768px){
-
-.main-grid{
-grid-template-columns:1fr;
+.main-grid{grid-template-columns:1fr}
+.right{order:1}
+.left{order:2}
 }
 
-.right{order:1;}
-.left{order:2;}
-
-}
-
-/* 🔥 WHATSAPP */
+/* WHATSAPP */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -245,8 +207,8 @@ z-index:9999;
 
 <nav class="nav">
 
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">КОНТАКТ</a>
+<a href="index.html" class="nav-link">ПОЧЕТНА</a>
+<a href="kontakt.html" class="nav-link">КОНТАКТ</a>
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
@@ -264,7 +226,6 @@ z-index:9999;
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 
 <a href="prijavi.html">Представка грађанина</a>
-
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 
@@ -279,20 +240,11 @@ z-index:9999;
 
 <div class="container">
 
-<!-- 🔥 DODATA GORNJA DUGMAD -->
 <div class="top-buttons">
 
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="doniraj.html" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
-</a>
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 
 <a href="https://portal.sud.rs/sr/tok-predmeta" target="_blank" class="btn btn-dark">
 СУДСКИ ПРЕДМЕТИ У ТОКУ
@@ -304,7 +256,6 @@ z-index:9999;
 
 </div>
 
-<!-- GRID -->
 <div class="main-grid">
 
 <div class="left">
@@ -313,14 +264,11 @@ z-index:9999;
 
 <ul class="goals">
 <li><strong>УВОЂЕЊЕ НОВОГ ЗАКОНА О ИНСОЛВЕНТНОСТИ ФИЗИЧКИХ ЛИЦА</strong></li>
-<li>Измена и допуна закона о извршењу и обезбеђењу</li>
-<li>Измена и допуна закона о заштити конкуренције</li>
+<li>Измена закона о извршењу и обезбеђењу</li>
 <li>Јачање независности судства</li>
 <li>Повећање транспарентности рада судова</li>
-<li>Смањење трошкова судских и извршних поступака</li>
-<li>Ефикаснији и праведнији судски поступци</li>
-<li>Унапређење приступа правди за све грађане</li>
-<li>Дигитализација и убрзање поступака</li>
+<li>Смањење трошкова поступака</li>
+<li>Ефикаснији судски поступци</li>
 </ul>
 
 </div>
@@ -330,7 +278,18 @@ z-index:9999;
 <h2>Закони</h2>
 
 <a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="btn btn-dark">УСТАВ</a>
+
 <a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="btn btn-dark">ПАРНИЧНИ</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="btn btn-dark">ИЗВРШЕЊЕ</a>
+
+<a href="https://www.paragraf.rs/propisi/krivicni_zakonik.html" target="_blank" class="btn btn-dark">КРИВИЧНИ</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" target="_blank" class="btn btn-dark">РАД</a>
+
+<a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank" class="btn btn-dark">ОБЛИГАЦИОНИ</a>
+
+</div>
 
 </div>
 
