@@ -12,10 +12,9 @@
 <meta name="theme-color" content="#020c1b">
 
 <link rel="icon" href="logo-white.png" type="image/png">
-
 <style>
 
-/* ===== ORIGINAL CSS OSTAVLJEN ===== */
+/* ===== ORIGINAL (NIŠTA NIJE DIRANO) ===== */
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
@@ -24,6 +23,7 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
+
 html,body{height:100%}
 
 body{
@@ -61,15 +61,88 @@ gap:12px;
 flex-wrap:nowrap;
 }
 
-.brand img{height:161px;border-radius:10px;}
+.brand{display:flex;align-items:center;flex-shrink:0;}
+
+.brand img{
+height:161px;
+border-radius:10px;
+}
+
+@media (max-width:768px){
+.brand{justify-content:center;margin:0 auto;}
+.brand img{height:106px;}
+}
 
 nav.nav{
 display:flex;
+flex-direction:row;
 align-items:center;
 gap:10px;
+padding-top:0;
+padding-right:8px;
 }
 
-/* ===== NOVO ===== */
+.nav a.nav-link, .menu-btn{
+background:transparent;
+color:#fff;
+padding:6px 9px;
+border-radius:8px;
+border:1px solid rgba(255,255,255,.2);
+font-weight:600;
+font-size:0.9rem;
+line-height:1;
+transition:transform .15s ease,filter .15s ease;
+white-space:nowrap;
+backdrop-filter:blur(6px);
+}
+
+.nav a.nav-link:hover, .menu-btn:hover{
+transform:translateY(-1px);
+filter:brightness(1.2)
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:rgba(20,20,20,0.85);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.2);
+border-radius:12px;
+min-width:280px;
+padding:6px;
+box-shadow:0 10px 24px rgba(0,0,0,.5);
+display:none;
+}
+
+.menu.open .dropdown{display:block}
+
+/* 🔥 NOVO */
+.hero-media{position:relative;}
+
+.big-cta{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+background:linear-gradient(145deg,#d3a451,#b68c3a);
+color:#000;
+padding:16px 28px;
+border-radius:40px;
+font-weight:900;
+font-size:14px;
+text-transform:uppercase;
+box-shadow:0 6px 0 #8a6a2a,0 18px 35px rgba(0,0,0,.7);
+}
+
+.big-cta span{
+display:block;
+font-size:12px;
+margin-top:4px;
+}
+
 .whatsapp-float{
 position:fixed;
 bottom:20px;
@@ -83,30 +156,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 border-radius:50%;
-z-index:999;
 box-shadow:0 10px 25px rgba(0,0,0,.5);
-}
-
-.hero-media{position:relative;}
-
-.big-cta{
-position:absolute;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
-background:linear-gradient(145deg,#d3a451,#b68c3a);
-color:#000;
-padding:16px 28px;
-border-radius:40px;
-font-weight:900;
-text-transform:uppercase;
-box-shadow:0 6px 0 #8a6a2a,0 18px 35px rgba(0,0,0,.7);
-}
-
-.big-cta span{
-display:block;
-font-size:12px;
-margin-top:4px;
+z-index:999;
 }
 
 </style>
@@ -128,12 +179,12 @@ margin-top:4px;
 <a class="nav-link" href="index.html">Почетна</a>
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
-<!-- 🔥 NOVO -->
 <a href="https://wa.me/381665857707" class="nav-link" style="background:#25D366;color:#000;">
 WhatsApp
 </a>
 
 <div class="menu" id="mainMenu">
+
 <button class="menu-btn">Мени ▾</button>
 
 <div class="dropdown">
@@ -145,14 +196,19 @@ WhatsApp
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 
-<!-- 🔥 NOVO -->
 <a href="uradili.html">Шта смо до сада урадили</a>
 
 </div>
+
 </div>
 
 </nav>
+
 </div>
 </header>
 
@@ -180,8 +236,9 @@ WhatsApp
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<p style="margin-top:10px;color:#25D366;">
-Контакт искључиво путем WhatsApp поруке
+<p style="margin-top:10px;font-weight:700;color:#25D366;">
+Контакт искључиво путем WhatsApp поруке  
+Прво пошаљите поруку ради заказивања термина разговора
 </p>
 
 </div>
@@ -199,6 +256,8 @@ WhatsApp
 </div>
 </section>
 
+<section class="split"></section>
+
 </main>
 
 <footer>
@@ -207,11 +266,10 @@ WhatsApp
 </div>
 </footer>
 
-<!-- 🔥 FLOATING -->
 <a href="https://wa.me/381665857707" class="whatsapp-float">📞</a>
 
+<!-- 🔥 POPRAVLJEN MENI -->
 <script>
-
 const menu = document.getElementById('mainMenu');
 const menuBtn = menu.querySelector('.menu-btn');
 
@@ -224,7 +282,6 @@ if (!menu.contains(e.target)) {
 menu.classList.remove('open');
 }
 });
-
 </script>
 
 </body>
