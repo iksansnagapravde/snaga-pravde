@@ -99,7 +99,7 @@ margin-top:40px;
 }
 
 .hero h1{
-font-size:34px;
+font-size:32px;
 }
 
 /* GRID */
@@ -114,35 +114,37 @@ margin-top:40px;
 /* PAYPAL */
 
 .paypal{
-background:linear-gradient(135deg,#020b1f,#001c4d);
-padding:30px;
-border-radius:25px;
-box-shadow:0 30px 80px rgba(0,0,0,0.9);
+background:rgba(10,20,40,0.85);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:20px;
+box-shadow:0 20px 60px rgba(0,0,0,0.8);
 }
 
 .amounts{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:10px;
+gap:8px;
 }
 
 .amount-btn{
-padding:14px;
-border-radius:30px;
+padding:10px;
+border-radius:20px;
 background:#111;
 cursor:pointer;
 text-align:center;
+font-size:14px;
 transition:.2s;
 }
 
 .amount-btn:hover{
-transform:scale(1.05);
+transform:scale(1.04);
 }
 
 .amount-btn.active{
 background:var(--gold);
 color:#000;
-font-weight:bold;
+box-shadow:0 0 10px rgba(211,164,81,0.5);
 }
 
 /* CUSTOM */
@@ -150,7 +152,7 @@ font-weight:bold;
 .custom{
 margin-top:10px;
 width:100%;
-padding:12px;
+padding:10px;
 border-radius:20px;
 border:none;
 text-align:center;
@@ -162,21 +164,48 @@ text-align:center;
 display:flex;
 justify-content:center;
 gap:15px;
-margin-top:15px;
+margin-top:10px;
+font-size:14px;
 }
 
 /* BUTTON */
 
 .main-donate{
-margin-top:20px;
+margin-top:15px;
 width:100%;
-padding:18px;
+padding:14px;
 border:none;
-border-radius:40px;
+border-radius:30px;
 background:var(--gold);
-font-size:18px;
+font-size:16px;
 font-weight:900;
 cursor:pointer;
+transition:.2s;
+}
+
+.main-donate:hover{
+transform:translateY(-2px);
+}
+
+/* CARDS */
+
+.cards{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:12px;
+}
+
+.cards svg{
+height:26px;
+opacity:0.9;
+}
+
+.secure-text{
+text-align:center;
+font-size:12px;
+margin-top:6px;
+color:#ccc;
 }
 
 /* BANK */
@@ -192,11 +221,11 @@ box-shadow:0 20px 60px rgba(0,0,0,0.7);
 .bank-btn{
 margin-top:20px;
 display:block;
-padding:15px;
+padding:12px;
 text-align:center;
 background:#2f5d3f;
 color:#fff;
-border-radius:30px;
+border-radius:25px;
 cursor:pointer;
 }
 
@@ -272,7 +301,7 @@ grid-template-columns:1fr;
 
 <div class="paypal">
 
-<h2>УПЛАТА КАРТИЦОМ</h2>
+<h2 style="text-align:center;margin-bottom:10px;">УПЛАТА КАРТИЦОМ</h2>
 
 <div class="amounts">
 <div class="amount-btn active" data="10">10€</div>
@@ -291,6 +320,28 @@ grid-template-columns:1fr;
 <button class="main-donate" id="donateBtn">
 ДОНИРАЈТЕ САДА
 </button>
+
+<!-- CARDS -->
+
+<div class="cards">
+
+<!-- VISA -->
+<svg viewBox="0 0 48 16"><text x="0" y="14" font-size="14" fill="#fff">VISA</text></svg>
+
+<!-- MC -->
+<svg viewBox="0 0 48 16">
+<circle cx="14" cy="8" r="6" fill="#EB001B"/>
+<circle cx="22" cy="8" r="6" fill="#F79E1B"/>
+</svg>
+
+<!-- PAYPAL -->
+<svg viewBox="0 0 48 16"><text x="0" y="14" font-size="12" fill="#fff">PayPal</text></svg>
+
+</div>
+
+<div class="secure-text">
+🔒 Сигурна уплата — подаци су заштићени
+</div>
 
 </div>
 
@@ -317,11 +368,9 @@ grid-template-columns:1fr;
 
 <script>
 
-// MENU
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-// AMOUNT
 let amount=10;
 
 document.querySelectorAll('.amount-btn').forEach(btn=>{
@@ -332,7 +381,6 @@ amount=btn.getAttribute('data');
 };
 });
 
-// DONATE
 document.getElementById('donateBtn').onclick=()=>{
 let custom=document.getElementById('customAmount').value;
 let finalAmount=custom || amount;
