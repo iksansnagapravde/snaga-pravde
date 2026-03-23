@@ -25,6 +25,11 @@ color:#fff;
 font-family:"Times New Roman";
 }
 
+a{
+text-decoration:none;
+color:#fff;
+}
+
 .container{max-width:1100px;margin:auto;padding:0 20px}
 
 /* HEADER */
@@ -53,9 +58,14 @@ padding:6px 10px;
 border-radius:10px;
 background:rgba(0,0,0,0.4);
 font-size:0.8rem;
+color:#fff !important;
 }
 
-.menu-btn{background:#fff;color:#000 !important;font-weight:700}
+.menu-btn{
+background:#fff;
+color:#000 !important;
+font-weight:700;
+}
 
 .menu{position:relative}
 
@@ -63,14 +73,27 @@ font-size:0.8rem;
 position:absolute;
 top:110%;
 right:0;
-background:rgba(20,20,20,0.95);
-padding:8px;
-border-radius:10px;
+background:rgba(15,15,15,0.95);
+border-radius:14px;
+padding:10px;
 display:none;
-min-width:260px;
+min-width:280px;
+box-shadow:0 20px 40px rgba(0,0,0,0.7);
 }
 
 .menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:10px 12px;
+border-radius:8px;
+color:#fff !important;
+font-size:14px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,0.1);
+}
 
 /* HERO */
 
@@ -188,20 +211,25 @@ transform:translateY(-1px);
 .cards{
 display:flex;
 justify-content:center;
-gap:10px;
-margin-top:10px;
+align-items:center;
+gap:14px;
+margin-top:12px;
 }
 
 .cards img{
-height:20px;
-opacity:0.9;
+height:26px;
+background:#fff;
+padding:4px 8px;
+border-radius:6px;
 }
+
+/* SECURITY */
 
 .secure{
 text-align:center;
 font-size:11px;
 color:#aaa;
-margin-top:5px;
+margin-top:6px;
 }
 
 /* BANK */
@@ -255,6 +283,7 @@ cursor:pointer;
 </div>
 
 <nav class="nav">
+
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
 
@@ -277,8 +306,8 @@ cursor:pointer;
 </div>
 
 </div>
-</nav>
 
+</nav>
 </div>
 </header>
 
@@ -314,8 +343,8 @@ cursor:pointer;
 </button>
 
 <div class="cards">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visa/visa-original.svg">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mastercard/mastercard-original.svg">
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg">
 </div>
 
