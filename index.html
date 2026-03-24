@@ -326,36 +326,6 @@ font-size:12px;
 margin-top:4px;
 }
 
-/* 🔥 3D SLUŠALICA */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-
-background:linear-gradient(145deg,#25D366,#1ebe5d);
-color:#000;
-font-size:28px;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-border-radius:50%;
-
-/* 3D */
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-
-z-index:9999;
-cursor:pointer;
-
-/* lagana animacija */
-animation:waPulse 2s infinite;
-}
-
 /* hover */
 .whatsapp-float:hover{
 transform:translateY(-3px);
@@ -430,22 +400,38 @@ height:90px;
 
 }
 
-/* 📱 WHATSAPP SLUŠALICA */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
-right:15px;
-width:55px;
-height:55px;
-background:#25D366;
-color:#000;
-font-size:26px;
+right:20px;
+
 display:flex;
 align-items:center;
-justify-content:center;
-border-radius:50%;
+gap:8px;
+
+padding:10px 14px;
+
+background:rgba(0,0,0,0.55);
+backdrop-filter:blur(8px);
+
+color:#fff;
+font-size:14px;
+font-weight:600;
+
+border-radius:8px;
+
+/* 🔴 црвена линија */
+border-left:3px solid #8b1e1e;
+
 box-shadow:0 10px 25px rgba(0,0,0,0.5);
+
 z-index:9999;
+transition:0.2s ease;
+}
+
+.whatsapp-float:hover{
+background:rgba(0,0,0,0.75);
+transform:translateY(-1px);
 }
 
 /* sakrij WhatsApp u meniju na telefonu */
@@ -510,8 +496,13 @@ box-shadow:0 0 20px #e1306c;
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
 <a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
-WhatsApp
+class="whatsapp-float">
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+<path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z"/>
+</svg>
+
+Закажи разговор
 </a>
 
 <div class="menu" id="mainMenu">
