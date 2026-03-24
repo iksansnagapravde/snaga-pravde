@@ -83,7 +83,6 @@ padding-right:8px;
 
 /* 🔥 NOVI IZGLED DUGMADI */
 .nav a.nav-link, .menu-btn{
-
 padding:6px 10px;
 border-radius:10px;
 text-decoration:none;
@@ -91,18 +90,12 @@ font-weight:600;
 font-size:0.9rem;
 line-height:1;
 white-space:nowrap;
-
 color:#fff;
-
-/* lebdeći efekat */
 background:rgba(0,0,0,0.45);
 backdrop-filter:blur(6px);
-
-/* 3D */
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
-
 transition:all .15s ease;
 }
 
@@ -239,19 +232,14 @@ text-align:center;
 cursor:pointer;
 white-space:nowrap;
 position:relative;
-
-/* 3D */
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
-
-/* animacija ulaska */
 opacity:0;
 transform:translateY(25px) scale(0.95);
 animation:btnFade .6s ease forwards;
 }
 
-/* delay po dugmetu */
 .cta-row a:nth-child(1){animation-delay:.1s;}
 .cta-row a:nth-child(2){animation-delay:.2s;}
 .cta-row a:nth-child(3){animation-delay:.3s;}
@@ -263,7 +251,6 @@ transform:translateY(0) scale(1);
 }
 }
 
-/* stilovi */
 .btn-primary{
 background:linear-gradient(145deg,#d3a451,#b68c3a);
 color:#000;
@@ -275,18 +262,17 @@ color:#fff;
 border:1px solid rgba(255,255,255,.2);
 }
 
-/* hover */
 .btn:hover{
 transform:translateY(-3px);
 }
 
-/* klik */
 .btn:active{
 transform:translateY(4px);
 box-shadow:
 0 2px 0 rgba(0,0,0,.6),
 0 8px 15px rgba(0,0,0,.5);
 }
+
 .btn-primary{background:var(--gold);color:var(--deepBlue)}
 
 .btn-dark{
@@ -298,13 +284,13 @@ border:1px solid rgba(255,255,255,.3)
 
 .btn:hover{transform:translateY(-2px)}
 
-/* 🔥 NOVO */
 .hero-media{position:relative;}
-  
+
 .hero-media{
 position:relative;
 height:300px;
 }
+
 .big-cta{
 position:absolute;
 bottom:130px;
@@ -326,36 +312,12 @@ font-size:12px;
 margin-top:4px;
 }
 
-/* hover */
-.whatsapp-float:hover{
-transform:translateY(-3px);
-}
-
-/* puls */
-@keyframes waPulse{
-0%{
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-}
-50%{
-box-shadow:
-0 6px 0 #128C7E,
-0 25px 45px rgba(0,0,0,0.9);
-}
-100%{
-box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
-}
-}
 /* 📱 MOBILE FIX – KLJUČNO */
 html,body{
 overflow-x:hidden;
 }
 
 @media(max-width:768px){
-
 .hero-grid{
 grid-template-columns:1fr;
 text-align:center;
@@ -389,51 +351,6 @@ padding:5px 7px;
 .brand img{
 height:90px;
 }
-  
-.whatsapp-float{
-position:fixed;
-bottom:28px;
-right:18px;
-
-display:flex;
-align-items:center;
-gap:10px;
-
-padding:12px 16px;
-
-background:rgba(0,0,0,0.65);
-backdrop-filter:blur(10px);
-
-color:#fff;
-font-size:15px;
-font-weight:600;
-
-border-radius:10px;
-
-/* 🔴 линија */
-border-left:3px solid #8b1e1e;
-
-/* мекши shadow */
-box-shadow:0 12px 30px rgba(0,0,0,0.6);
-
-z-index:9999;
-transition:0.2s ease;
-}
-
-.whatsapp-float:hover{
-background:rgba(0,0,0,0.8);
-transform:translateY(-2px);
-}
-
-.whatsapp-float svg{
-width:20px;
-height:20px;
-opacity:0.9;
-}
-
-.whatsapp-float:hover{
-background:rgba(0,0,0,0.75);
-transform:translateY(-1px);
 }
 
 /* sakrij WhatsApp u meniju na telefonu */
@@ -442,6 +359,7 @@ transform:translateY(-1px);
 display:none;
 }
 }
+
 .socials{
 display:flex;
 justify-content:center;
@@ -456,16 +374,12 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-
 background:rgba(255,255,255,0.05);
 backdrop-filter:blur(10px);
-
 color:#fff;
-
 box-shadow:
 0 5px 0 rgba(0,0,0,.6),
 0 20px 40px rgba(0,0,0,.8);
-
 transition:.25s;
 }
 
@@ -477,7 +391,46 @@ transform:translateY(-5px) scale(1.1);
 .socials a[title="YouTube"]:hover{box-shadow:0 0 20px #ff0000;}
 .socials a[title="TikTok"]:hover{box-shadow:0 0 20px #00f2ea;}
 .socials a[title="Instagram"]:hover{
-box-shadow:0 0 20px #e1306c;  
+box-shadow:0 0 20px #e1306c;
+}
+
+/* 🔥 NOVO TELEFONSKO DUGME */
+.call-btn{
+position:fixed;
+bottom:25px;
+right:15px;
+display:flex;
+align-items:center;
+gap:12px;
+padding:14px 20px;
+background:rgba(10,10,10,0.75);
+backdrop-filter:blur(12px);
+color:#fff;
+font-size:18px;
+font-weight:600;
+border-radius:14px;
+border-bottom:2px solid #b22222;
+box-shadow:
+0 10px 30px rgba(0,0,0,0.7),
+0 0 15px rgba(178,34,34,0.3);
+z-index:9999;
+transition:0.25s ease;
+}
+
+.call-btn svg{
+width:24px;
+height:24px;
+fill:#ff3b3b;
+filter:drop-shadow(0 0 6px rgba(255,0,0,0.6));
+flex-shrink:0;
+}
+
+.call-btn:hover{
+transform:translateY(-3px);
+box-shadow:
+0 15px 40px rgba(0,0,0,0.9),
+0 0 20px rgba(255,0,0,0.5);
+}
 </style>
 </head>
 
@@ -498,13 +451,8 @@ box-shadow:0 0 20px #e1306c;
 <a class="nav-link" href="kontakt.html">Контакт</a>
 
 <a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-class="whatsapp-float">
-
-<svg width="18" height="18" viewBox="0 0 24 24" fill="white">
-<path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z"/>
-</svg>
-
-Закажи разговор
+class="nav-link" style="background:#25D366;color:#000;font-weight:700;">
+WhatsApp
 </a>
 
 <div class="menu" id="mainMenu">
@@ -526,7 +474,6 @@ class="whatsapp-float">
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
 <a href="uradili.html">Шта смо до сада урадили</a>
 
 </div>
@@ -561,14 +508,13 @@ class="whatsapp-float">
 
 </div>
 
-<p   
+<p>
 Прво пошаљите поруку ради заказивања термина разговора
 </p>
 
 </div>
 
 <div class="hero-media">
-
 
 <a href="uradili.html" class="big-cta">
 ШТА СМО ДО САДА УРАДИЛИ
@@ -603,7 +549,6 @@ box-shadow:0 15px 40px rgba(0,0,0,0.7);
 border:1px solid rgba(255,255,255,0.1);
 transition:all .3s ease;
 overflow:hidden;
-
 opacity:0;
 transform:translateY(30px);
 animation:fadeUp .6s ease forwards;
@@ -807,6 +752,13 @@ ripple.remove();
 });
 
 </script>
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="whatsapp-float">📞</a>
+
+<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="call-btn">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z"/>
+</svg>
+Закажи разговор
+</a>
+
 </body>
 </html>
