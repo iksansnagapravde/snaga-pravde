@@ -34,7 +34,7 @@ a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:0 auto;padding:0 20px}
 
-/* ===== HEADER (INDEX) ===== */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -63,7 +63,6 @@ align-items:center;
 gap:10px;
 }
 
-/* NAV DUGMAD */
 .nav a.nav-link,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
@@ -120,7 +119,7 @@ border-radius:8px;
 color:#fff;
 }
 
-/* ===== CTA (IDENTIČAN INDEXU) ===== */
+/* ===== CTA ===== */
 .cta-row{
 display:flex;
 justify-content:center;
@@ -137,29 +136,45 @@ text-transform:uppercase;
 line-height:1;
 
 box-shadow:
-.btn{
-padding:10px 20px;
-border-radius:40px;
-font-weight:700;
-font-size:13px;
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
+
+transition:.15s;
+}
 
 .btn-dark{
 background:rgba(20,20,20,0.6);
 color:#fff;
 }
 
-.btn-gold{
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.85),
-    rgba(255, 179, 0, 0.85)
-  );
-  color:#000;
-  border-radius:25px;
-  font-weight:bold;
-  box-shadow: 
-    0 6px 0 #cc9a00,
-    0 0 20px rgba(255, 215, 0, 0.5);
+.btn-primary{
+background: linear-gradient(
+135deg,
+rgba(255, 215, 0, 0.7),
+rgba(255, 179, 0, 0.7)
+);
+color:#000;
+
+box-shadow:
+0 5px 0 rgba(180,130,0,0.7),
+0 10px 25px rgba(0,0,0,0.5),
+0 0 12px rgba(255, 215, 0, 0.4);
+
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+
+border:1px solid rgba(255,215,0,0.4);
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6),
+0 8px 15px rgba(0,0,0,.5);
 }
 
 /* GRID */
@@ -179,7 +194,7 @@ padding:25px;
 border-radius:15px;
 }
 
-/* ===== WHATSAPP (SAVRŠEN — NEMA CRTE) ===== */
+/* WHATSAPP */
 .whatsapp-float{
 position:fixed;
 bottom:20px;
