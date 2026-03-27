@@ -885,7 +885,39 @@ box-shadow:
 0 0 20px rgba(255,0,0,0.5);
 
 }
+/* ===== WHATSAPP DUGME ===== */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.7),
+    0 0 15px rgba(37,211,102,0.5);
+
+  z-index: 9999;
+  transition: 0.25s ease;
+}
+
+.wa-float img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.9),
+    0 0 25px rgba(37,211,102,0.8);
+}
 </style>
 
 </head>
@@ -1515,16 +1547,10 @@ ripple.remove();
 
 
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="call-btn">
-
-<svg viewBox="0 0 24 24" aria-hidden="true">
-
-<path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.3 21 3 13.7 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-2.2 2.2z"/>
-
-</svg>
-
-Закажи разговор
-
+<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
+   class="wa-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp">
 </a>
 
 
