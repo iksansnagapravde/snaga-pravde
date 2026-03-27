@@ -17,7 +17,6 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-/* ❌ uklanja linije */
 a{text-decoration:none;color:inherit}
 
 body{
@@ -31,7 +30,7 @@ font-family:"Times New Roman";
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER (INDEX STYLE) ===== */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -59,16 +58,13 @@ align-items:center;
 gap:6px;
 }
 
-/* 🔥 ISTI 3D KAO INDEX */
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.85rem;
-
 background:rgba(0,0,0,0.45);
 color:#fff;
-
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
@@ -100,13 +96,12 @@ display:block;
 padding:9px 10px;
 }
 
-/* ===== GORNJA DUGMAD ===== */
+/* BUTTONS */
 .top-buttons{
 display:flex;
 justify-content:center;
 gap:10px;
 margin-top:20px;
-flex-wrap:nowrap;
 }
 
 .btn{
@@ -114,26 +109,23 @@ padding:10px 20px;
 border-radius:30px;
 font-weight:700;
 font-size:13px;
-
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
 }
 
 .btn-represent{background:#1c1c1c;color:#fff}
+
 .btn-gold{
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.85),
-    rgba(255, 179, 0, 0.85)
-  );
-  color:#000;
-  border-radius:25px;
-  font-weight:bold;
-  box-shadow: 
-    0 6px 0 #cc9a00,
-    0 0 20px rgba(255, 215, 0, 0.5);
+background: linear-gradient(135deg, rgba(255,215,0,0.85), rgba(255,179,0,0.85));
+color:#000;
+border-radius:25px;
+font-weight:bold;
+box-shadow:
+0 6px 0 #cc9a00,
+0 0 20px rgba(255,215,0,0.5);
 }
+
 /* GRID */
 .main-grid{
 display:grid;
@@ -152,10 +144,7 @@ border-radius:15px;
 }
 
 /* FORM */
-form{
-display:grid;
-gap:12px;
-}
+form{display:grid;gap:12px;}
 
 input,textarea{
 padding:10px;
@@ -190,28 +179,57 @@ flex-direction:column;
 align-items:center;
 }
 
-.top-buttons a{
-width:auto;
-text-align:center;
 }
 
-}
+/* ===== WHATSAPP DUGME ===== */
+.wa-btn{
+position: fixed;
+bottom: 20px;
+right: 15px;
 
-.call-btn:hover{
+display: flex;
+align-items: center;
+gap: 8px;
 
-transform:translateY(-3px);
+padding: 8px 14px;
+border-radius: 40px;
+
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+
+background: linear-gradient(
+135deg,
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
+);
+
+color:#fff;
+
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+
+border:1px solid rgba(255,255,255,0.15);
 
 box-shadow:
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
 
-0 15px 40px rgba(0,0,0,0.9),
+z-index:9999;
+transition:0.2s;
+}
 
-0 0 20px rgba(255,0,0,0.5);
+.wa-btn img{
+width:24px;
+height:24px;
+}
 
-} /* 👉 ОВО ДОДАЈ */
+.wa-btn:hover{
+transform:translateY(-2px);
+}
 
-.whatsapp-float svg{
-width:26px;
-fill:#000;
+.wa-btn:active{
+transform:translateY(2px);
 }
 
 </style>
@@ -258,50 +276,26 @@ fill:#000;
 
 <div class="container">
 
-<!-- GORNJA DUGMAD -->
 <div class="top-buttons">
-
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-dark">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="inicijative.html" class="btn btn-represent">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-represent">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- GRID -->
 <div class="main-grid">
 
 <div class="left">
-
 <h2>Контакт и подршка</h2>
-
-<p>
-Уколико имате питања, потребна вам је правна помоћ или желите да пријавите неправду,
-можете нас контактирати путем форме.
-</p>
-
-<p>
-Сви подаци се третирају поверљиво.
-</p>
-
+<p>Уколико имате питања, потребна вам је правна помоћ или желите да пријавите неправду, можете нас контактирати путем форме.</p>
+<p>Сви подаци се третирају поверљиво.</p>
 </div>
 
 <div class="right">
-
 <h2>Контакт форма</h2>
 
 <iframe name="hiddenFrame" style="display:none"></iframe>
 
-<form action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec"
-method="GET"
-target="hiddenFrame">
+<form action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec" method="GET" target="hiddenFrame">
 
 <input type="text" name="ime" placeholder="Име и презиме" required>
 <input type="email" name="email" placeholder="Е-пошта" required>
@@ -328,12 +322,9 @@ menu.classList.remove('open');
 });
 </script>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-   class="btn wa-btn" target="_blank">
-
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-
-  Пишите нам
+<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="btn wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
 </a>
 
 </body>
