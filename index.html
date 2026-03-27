@@ -882,61 +882,64 @@ box-shadow:
 
 0 0 20px rgba(255,0,0,0.5);
 
-}/* ===== WHATSAPP DUGME ISTO KAO TVOJE ===== */
+/* ===== WHATSAPP GLASS DUGME (SMANJENO + UKLOPLJENO) ===== */
 .wa-btn{
   position: fixed;
-  bottom: 25px;
+  bottom: 20px;
   right: 15px;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 
-  padding: 12px 18px; /* 👉 исто као твоја дугмад */
+  padding: 8px 14px; /* 👉 упола мање */
   border-radius: 40px;
 
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 
+  /* 👉 мешавина зелене + плаве */
   background: linear-gradient(
     135deg,
-    rgba(37,211,102,0.9),
-    rgba(25,170,80,0.9)
+    rgba(37,211,102,0.65),
+    rgba(40,120,160,0.55)
   );
 
   color: #fff;
 
-  /* 👉 ОВО ЈЕ ТВОЈ 3D СТИЛ */
+  /* 👉 стакло ефекат */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(255,255,255,0.18);
+
+  /* 👉 мекша сенка (да не штрчи) */
   box-shadow:
-    0 6px 0 #1da851,
-    0 15px 30px rgba(0,0,0,.6);
-
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
-
-  border: 1px solid rgba(255,255,255,0.2);
+    0 4px 12px rgba(0,0,0,0.4),
+    inset 0 1px 2px rgba(255,255,255,0.25);
 
   z-index: 9999;
+  transition: all 0.2s ease;
 }
 
-/* икона */
+/* икона — ВЕЋА да „удара“ у ивице */
 .wa-btn img{
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 }
 
-/* hover (исто као твоје) */
+/* hover (суптилно) */
 .wa-btn:hover{
-  transform: translateY(-3px);
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 16px rgba(0,0,0,0.5),
+    inset 0 1px 3px rgba(255,255,255,0.3);
 }
 
-/* click (исто као твоје) */
+/* click */
 .wa-btn:active{
-  transform: translateY(4px);
-  box-shadow:
-    0 2px 0 rgba(0,0,0,.6),
-    0 8px 15px rgba(0,0,0,.5);
+  transform: translateY(2px);
 }
 </style>
 
