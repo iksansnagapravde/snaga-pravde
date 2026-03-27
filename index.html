@@ -882,51 +882,61 @@ box-shadow:
 
 0 0 20px rgba(255,0,0,0.5);
 
-}
-/* ===== WHATSAPP DUGME ===== */
-.wa-float {
+}/* ===== WHATSAPP DUGME ISTO KAO TVOJE ===== */
+.wa-btn{
   position: fixed;
-  bottom: 20px;
+  bottom: 25px;
   right: 15px;
-
-  width: 64px;
-  height: 64px;
-
-  background: #25D366;
-  border-radius: 18px; /* 👉 ово даје iOS look као на слици */
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
 
-  /* 🔥 3D ефекат */
+  padding: 12px 18px; /* 👉 исто као твоја дугмад */
+  border-radius: 40px;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    135deg,
+    rgba(37,211,102,0.9),
+    rgba(25,170,80,0.9)
+  );
+
+  color: #fff;
+
+  /* 👉 ОВО ЈЕ ТВОЈ 3D СТИЛ */
   box-shadow:
     0 6px 0 #1da851,
-    0 12px 25px rgba(0,0,0,0.6),
-    inset 0 2px 4px rgba(255,255,255,0.3);
+    0 15px 30px rgba(0,0,0,.6);
 
-  transition: all 0.15s ease;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
   z-index: 9999;
 }
 
-.wa-float img {
-  width: 34px;
-  height: 34px;
+/* икона */
+.wa-btn img{
+  width: 18px;
+  height: 18px;
 }
 
-/* hover */
-.wa-float:hover {
+/* hover (исто као твоје) */
+.wa-btn:hover{
   transform: translateY(-3px);
 }
 
-/* klik */
-.wa-float:active {
+/* click (исто као твоје) */
+.wa-btn:active{
   transform: translateY(4px);
-
   box-shadow:
-    0 2px 0 #1da851,
-    0 6px 12px rgba(0,0,0,0.5),
-    inset 0 1px 2px rgba(255,255,255,0.2);
+    0 2px 0 rgba(0,0,0,.6),
+    0 8px 15px rgba(0,0,0,.5);
 }
 </style>
 
@@ -1558,9 +1568,11 @@ ripple.remove();
 
 
 <a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-   class="wa-float" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-       alt="WhatsApp">
+   class="btn wa-btn" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
+  Пишите нам
 </a>
 
 
