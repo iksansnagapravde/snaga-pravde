@@ -27,6 +27,7 @@ url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
+padding-bottom:140px;
 }
 
 a{text-decoration:none;color:inherit}
@@ -125,17 +126,17 @@ margin:auto;
 color:var(--ink);
 }
 
-/* CTA */
+/* ===== CTA (FIXED) ===== */
 .cta-row{
 display:flex;
-justify-content:center;
-gap:8px;
+flex-direction:column;
+align-items:center;
+gap:14px;
 margin-top:25px;
-flex-wrap:wrap;
 }
 
 .btn{
-padding:10px 18px;
+padding:12px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
@@ -144,10 +145,24 @@ text-transform:uppercase;
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
+transition:0.25s;
+}
+
+.btn:hover{
+transform:translateY(-2px) scale(1.03);
 }
 
 .btn-dark{
 background:rgba(20,20,20,0.6);
+}
+
+.btn-danger{
+background: linear-gradient(
+135deg,
+rgba(140,20,40,0.65),
+rgba(80,10,25,0.55)
+);
 }
 
 .btn-primary{
@@ -186,32 +201,31 @@ position:absolute;
 left:0;
 }
 
-/* WHATSAPP */
+/* ===== WHATSAPP (ISTI SVUDA) ===== */
 .wa-btn{
 position:fixed;
-bottom:70px;
-right:12px;
+bottom:35px;
+right:-180px;
 
 display:flex;
 align-items:center;
-gap:6px;
+gap:8px;
 
-padding:7px 12px;
+padding:10px 16px;
 border-radius:40px;
 
-font-size:11px;
+font-size:13px;
 font-weight:700;
 
 background:linear-gradient(
 135deg,
-rgba(37,211,102,0.45),
-rgba(60,140,180,0.35)
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
 );
 
 color:#fff;
 
 backdrop-filter:blur(10px);
-
 border:1px solid rgba(255,255,255,0.15);
 
 box-shadow:
@@ -219,11 +233,16 @@ box-shadow:
 inset 0 1px 2px rgba(255,255,255,0.25);
 
 z-index:9999;
+transition:right 0.6s ease;
+}
+
+.wa-btn.show{
+right:12px;
 }
 
 .wa-btn img{
-width:20px;
-height:20px;
+width:22px;
+height:22px;
 }
 
 /* MOBILE */
@@ -296,7 +315,7 @@ font-size:22px;
 
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
@@ -343,9 +362,15 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
+
+window.addEventListener("load", () => {
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
+});
 </script>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="wa-btn" target="_blank">
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
