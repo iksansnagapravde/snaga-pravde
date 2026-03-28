@@ -14,7 +14,6 @@
 :root{
 --deepBlue:#1f1f1f;
 --gold:#d3a451;
---radius:16px;
 --ink:#dcdcdc;
 }
 
@@ -23,22 +22,16 @@
 html,body{height:100%}
 
 body{
-margin:0;
 min-height:100vh;
 background:
 linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
 radial-gradient(circle at center, rgba(255,255,255,0.04), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
-font-size:110%;
 }
-
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-
-.container{max-width:1150px;margin:0 auto;padding:0 20px}
 
 /* HEADER */
 header{
@@ -49,32 +42,31 @@ backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
+.container{max-width:1150px;margin:auto;padding:0 20px}
+
 .head{
 display:flex;
 align-items:center;
 justify-content:space-between;
 padding:4px 0;
-gap:12px;
 }
 
-.brand img{
-height:140px;
-border-radius:10px;
-}
+.brand img{height:120px;border-radius:10px}
 
 .nav{
 display:flex;
 align-items:center;
-gap:10px;
+gap:8px;
 }
 
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
-font-weight:600;
-font-size:0.9rem;
 background:rgba(0,0,0,0.45);
 color:#fff;
+font-weight:600;
+font-size:0.85rem;
+
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
@@ -92,7 +84,7 @@ font-weight:700;
 position:absolute;
 top:calc(100% + 8px);
 right:0;
-background:rgba(20,20,20,0.9);
+background:rgba(20,20,20,0.95);
 border-radius:12px;
 padding:6px;
 display:none;
@@ -108,47 +100,60 @@ padding:9px 10px;
 
 /* HERO */
 .hero{
-margin-top:40px;
 text-align:center;
+margin-top:40px;
 }
 
-.sub{color:var(--ink)}
+h1{
+font-size:clamp(22px,3vw,30px);
+line-height:1.2;
+}
+
+.sub{
+color:var(--ink);
+margin-top:10px;
+}
 
 /* CTA */
 .cta-row{
 display:flex;
 justify-content:center;
 gap:8px;
-margin-top:40px;
+margin-top:60px;
+flex-wrap:wrap;
 }
 
 .btn{
-padding:10px 18px;
+padding:9px 16px;
 border-radius:40px;
 font-weight:700;
-font-size:13px;
+font-size:12px;
+
 box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
+0 5px 0 rgba(0,0,0,.5),
+0 12px 25px rgba(0,0,0,.6);
 }
 
 .btn-dark{
 background:rgba(20,20,20,0.6);
 }
 
-/* 🔴 BORDEO */
+/* BORDEO */
 .btn-danger{
 background: linear-gradient(
 135deg,
-rgba(120, 0, 30, 0.55),
-rgba(70, 0, 20, 0.45)
+rgba(110, 0, 25, 0.45),
+rgba(70, 0, 20, 0.35)
 );
 color:#fff;
-backdrop-filter: blur(10px);
-border:1px solid rgba(255,120,140,0.2);
+
+backdrop-filter: blur(8px);
+
+border:1px solid rgba(255,120,140,0.15);
+
 box-shadow:
-0 4px 0 rgba(60,0,20,0.8),
-0 8px 20px rgba(0,0,0,0.6);
+0 3px 0 rgba(60,0,20,0.7),
+0 6px 15px rgba(0,0,0,0.5);
 }
 
 .btn-primary{
@@ -173,19 +178,10 @@ padding:25px;
 border-radius:15px;
 }
 
-.full-width{grid-column:1/-1}
-
-.impresum{
-margin-top:30px;
-background:rgba(0,0,0,0.6);
-padding:20px;
-border-radius:15px;
-}
-
 /* WHATSAPP */
 .wa-btn{
 position: fixed;
-bottom: 20px;
+bottom: 70px;
 right: -180px;
 
 display: flex;
@@ -257,12 +253,8 @@ height:22px;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
+
 </div>
 
 </nav>
@@ -298,20 +290,9 @@ height:22px;
 
 <div class="card">
 <h3>Транспарентност институција</h3>
-<p>Контрола јавних функција и имовине.</p>
+<p>Јачање контроле јавних функција.</p>
 </div>
 
-<div class="card full-width">
-<h3>Наш рад</h3>
-<p>22.000+ грађана укључено у рад и борбу за правду.</p>
-</div>
-
-</div>
-
-<div class="impresum">
-<h3>Основни подаци</h3>
-<p>Седиште: Београд</p>
-<p>Email: iksan.snaga.pravde@gmail.com</p>
 </div>
 
 </div>
@@ -325,9 +306,7 @@ height:22px;
 <script>
 
 const menu = document.getElementById('mainMenu');
-const menuBtn = menu.querySelector('.menu-btn');
-
-menuBtn.onclick=()=>menu.classList.toggle('open');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
 if(!menu.contains(e.target)){
@@ -335,7 +314,7 @@ menu.classList.remove('open');
 }
 });
 
-/* WA ANIMACIJA */
+/* WA slide */
 window.addEventListener("load", () => {
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
