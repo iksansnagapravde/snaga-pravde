@@ -63,8 +63,10 @@ padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.85rem;
+
 background:rgba(0,0,0,0.45);
 color:#fff;
+
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
@@ -110,9 +112,11 @@ padding:10px 20px;
 border-radius:30px;
 font-weight:700;
 font-size:13px;
+
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
 transition:0.25s;
 }
 
@@ -120,7 +124,11 @@ transition:0.25s;
 transform: translateY(-2px) scale(1.03);
 }
 
-.btn-dark{background:rgba(20,20,20,0.6);}
+.btn-dark{
+background:rgba(20,20,20,0.6);
+color:#fff;
+}
+
 .btn-danger{
 background: linear-gradient(
 135deg,
@@ -128,6 +136,7 @@ rgba(140,20,40,0.65),
 rgba(80,10,25,0.55)
 );
 }
+
 .btn-gold{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
@@ -160,18 +169,21 @@ margin-top:30px;
 
 /* CARD */
 .doc-card{
-position:relative;
 background:linear-gradient(
 135deg,
 rgba(60,10,20,0.25),
 rgba(20,20,20,0.65)
 );
+
 padding:30px;
 border-radius:15px;
+
 border:1px solid rgba(140,20,40,0.25);
-box-shadow:0 10px 30px rgba(0,0,0,.6);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.6);
+
 transition:.25s ease;
-overflow:hidden;
 }
 
 .doc-card:hover{
@@ -180,53 +192,52 @@ border:1px solid rgba(180,40,60,0.4);
 box-shadow:0 15px 40px rgba(0,0,0,.75);
 }
 
-/* ✨ FOCUS EFEKAT */
-.doc-card.highlight{
-animation:focusGlow 2.5s ease-in-out infinite;
+.doc-card h2{
+margin-bottom:10px;
 }
 
-@keyframes focusGlow{
-0%{box-shadow:0 0 0 rgba(211,164,81,0);}
-50%{box-shadow:0 0 25px rgba(211,164,81,0.4);}
-100%{box-shadow:0 0 0 rgba(211,164,81,0);}
+.doc-card p{
+color:#ddd;
+margin-bottom:20px;
 }
 
-/* стрелице */
-.doc-card::after{
-content:"➤";
-position:absolute;
-right:15px;
-bottom:15px;
-font-size:20px;
-color:rgba(211,164,81,0.7);
-opacity:0;
-transform:translateY(10px);
-transition:0.4s;
-}
-
-.doc-card.highlight::after{
-opacity:1;
-transform:translateY(0);
-}
-
-.doc-card h2{margin-bottom:10px;}
-.doc-card p{color:#ddd;margin-bottom:20px;}
-
-/* dugme */
+/* DUGME */
 .doc-btn{
 display:inline-block;
 padding:10px 18px;
 border-radius:30px;
 font-weight:700;
+
 background: linear-gradient(
 135deg,
 rgba(140,20,40,0.65),
 rgba(80,10,25,0.55)
 );
+
 color:#fff;
+
 box-shadow:
 0 6px 0 rgba(0,0,0,.6),
 0 15px 30px rgba(0,0,0,.6);
+
+position:relative;
+}
+
+/* 🔥 STRELICA (PROFESIONALNA) */
+.focus-arrow{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+top:-12px;
+font-size:18px;
+color:rgba(211,164,81,0.85);
+animation:arrowPulse 2s ease-in-out infinite;
+}
+
+@keyframes arrowPulse{
+0%{transform:translate(-50%,0); opacity:0.3;}
+50%{transform:translate(-50%,-6px); opacity:1;}
+100%{transform:translate(-50%,0); opacity:0.3;}
 }
 
 /* WhatsApp */
@@ -234,34 +245,56 @@ box-shadow:
 position:fixed;
 bottom:35px;
 right:-180px;
+
 display:flex;
 align-items:center;
 gap:8px;
+
 padding:10px 16px;
 border-radius:40px;
+
 font-size:13px;
 font-weight:700;
+
 background:linear-gradient(
 135deg,
 rgba(37,211,102,0.55),
 rgba(40,120,160,0.45)
 );
+
 color:#fff;
+
 backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.15);
+
 box-shadow:
 0 4px 12px rgba(0,0,0,0.4),
 inset 0 1px 2px rgba(255,255,255,0.25);
+
 z-index:9999;
 transition:right 0.6s ease;
 }
 
-.wa-btn.show{right:12px;}
-.wa-btn img{width:22px;height:22px;}
+.wa-btn.show{
+right:12px;
+}
+
+.wa-btn img{
+width:22px;
+height:22px;
+}
 
 @media(max-width:768px){
-.nav{flex-wrap:wrap;justify-content:center;}
-.nav a,.menu-btn{min-width:90px;text-align:center;}
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+}
+
+.nav a, .menu-btn{
+min-width:90px;
+text-align:center;
+}
 }
 
 </style>
@@ -324,16 +357,26 @@ transition:right 0.6s ease;
 
 <div class="docs-grid">
 
-<a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
+<a href="OBRAZAC_PREDСТАВКА_GRADJAN.pdf" target="_blank" class="doc-card">
 <h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
 <p>Образац који се попуњава и шаље.</p>
-<span class="doc-btn">ОТВОРИ ДОКУМЕНТ</span>
+
+<span class="doc-btn">
+<span class="focus-arrow">↓</span>
+ОТВОРИ ДОКУМЕНТ
+</span>
+
 </a>
 
 <a href="PRAVILNIK_PREDСТАВКА.pdf" target="_blank" class="doc-card">
 <h2>ПРАВИЛНИК О ПОСТУПАЊУ</h2>
 <p>Правила поступања по представкама.</p>
-<span class="doc-btn">ПРОЧИТАЈ</span>
+
+<span class="doc-btn">
+<span class="focus-arrow">↓</span>
+ПРОЧИТАЈ
+</span>
+
 </a>
 
 </div>
@@ -348,20 +391,6 @@ window.addEventListener("load", () => {
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
 },300);
-
-/* ✨ AUTO FOCUS */
-setTimeout(()=>{
-document.querySelectorAll(".doc-card").forEach(el=>{
-el.classList.add("highlight");
-});
-},600);
-
-setTimeout(()=>{
-document.querySelectorAll(".doc-card").forEach(el=>{
-el.classList.remove("highlight");
-});
-},5000);
-
 });
 </script>
 
