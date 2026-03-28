@@ -21,10 +21,13 @@
 
 body{
 min-height:100vh;
+
+/* 🔥 FIX ZA PRELOM POZADINE */
 background:
 linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
 radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+url('justice-bg.jpg') center center / cover no-repeat fixed;
+
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
@@ -68,8 +71,6 @@ padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.9rem;
-line-height:1;
-white-space:nowrap;
 
 background:rgba(0,0,0,0.45);
 color:#fff;
@@ -91,10 +92,6 @@ font-weight:700;
 transform:translateY(-2px);
 }
 
-.nav a.nav-link:active,.menu-btn:active{
-transform:translateY(3px);
-}
-
 /* DROPDOWN */
 .menu{position:relative}
 
@@ -112,19 +109,12 @@ display:none;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-border-radius:8px;
-color:#fff;
-}
-
-/* ===== CTA ===== */
+/* CTA */
 .cta-row{
 display:flex;
 justify-content:center;
 gap:8px;
-margin-top:14px;
+margin-top:20px;
 }
 
 .btn{
@@ -132,47 +122,19 @@ padding:10px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
-text-transform:uppercase;
-line-height:1;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
-
-transition:.15s;
 }
 
 .btn-dark{
 background:rgba(20,20,20,0.6);
-color:#fff;
 }
 
 .btn-primary{
-background: linear-gradient(
-135deg,
-rgba(255, 215, 0, 0.7),
-rgba(255, 179, 0, 0.7)
-);
+background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
-
-box-shadow:
-0 5px 0 rgba(180,130,0,0.7),
-0 10px 25px rgba(0,0,0,0.5),
-0 0 12px rgba(255, 215, 0, 0.4);
-
-backdrop-filter: blur(3px);
-border:1px solid rgba(255,215,0,0.4);
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.btn:active{
-transform:translateY(4px);
-box-shadow:
-0 2px 0 rgba(0,0,0,.6),
-0 8px 15px rgba(0,0,0,.5);
 }
 
 /* GRID */
@@ -192,45 +154,46 @@ padding:25px;
 border-radius:15px;
 }
 
-/* ✅ WHATSAPP — ISTO KAO CILJEVI */
+/* 🔥 WHATSAPP — ISTO KAO CILJEVI */
 .wa-btn{
 position: fixed;
-bottom: 20px; /* 👉 исправљено (није више 90px) */
-right: 12px;
+bottom: 90px; /* 👉 isto kao slika */
+right: 10px;
 
 display: flex;
 align-items: center;
 gap: 6px;
 
-padding: 6px 12px;
+padding: 6px 11px;
 border-radius: 40px;
 
-font-size: 11px;
+font-size: 10.5px;
 font-weight: 700;
-text-transform: uppercase;
 
 background: linear-gradient(
 135deg,
-rgba(37,211,102,0.55),
-rgba(40,120,160,0.45)
+rgba(37,211,102,0.42),
+rgba(60,140,180,0.32)
 );
 
 color:#fff;
 
-backdrop-filter: blur(10px);
-border:1px solid rgba(255,255,255,0.15);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+
+border:1px solid rgba(255,255,255,0.18);
 
 box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 1px 2px rgba(255,255,255,0.25);
+0 4px 10px rgba(0,0,0,0.45),
+inset 0 1px 2px rgba(255,255,255,0.28);
 
 z-index:9999;
-transition:0.2s;
+transition:0.2s ease;
 }
 
 .wa-btn img{
-width:20px;
-height:20px;
+width:18px;
+height:18px;
 }
 
 .wa-btn:hover{
