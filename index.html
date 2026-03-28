@@ -130,15 +130,8 @@ box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
 }
 
 .btn-dark{background:rgba(20,20,20,0.6);}
-
-.btn-danger{
-background:linear-gradient(135deg,rgba(120,0,30,0.5),rgba(70,0,20,0.4));
-}
-
-.btn-gold{
-background:linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
-}
+.btn-danger{background:linear-gradient(135deg,rgba(120,0,30,0.5),rgba(70,0,20,0.4));}
+.btn-gold{background:linear-gradient(135deg,#ffd700,#ffb300);color:#000;}
 
 .big-cta{
 margin-top:90px;
@@ -199,23 +192,23 @@ transition:right 0.6s ease;
 .wa-btn.show{right:12px;}
 .wa-btn img{width:22px;}
 
-/* ===== SOCIAL BAR ===== */
+/* ===== SOCIAL BAR (DESNO → LEVO, VERTIKALNO) ===== */
 .social-bar{
 position:fixed;
-left:-260px;
+right:-80px; /* sakriveno */
 bottom:110px;
 
 display:flex;
-flex-direction:row;
+flex-direction:column;
 gap:12px;
 
 z-index:9999;
-transition:left 0.6s ease, opacity 0.6s ease;
+transition:right 0.6s ease, opacity 0.6s ease;
 opacity:0;
 }
 
 .social-bar.show{
-left:10px;
+right:12px; /* izlazi */
 opacity:1;
 }
 
@@ -258,7 +251,6 @@ color:#ccc;
 
 <header>
 <div class="head">
-
 <div class="brand">
 <a href="index.html">
 <img src="logo-white.png">
@@ -271,7 +263,6 @@ color:#ccc;
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
-
 <div class="dropdown">
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
@@ -286,20 +277,14 @@ color:#ccc;
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 <a href="uradili.html">Шта смо до сада урадили</a>
 </div>
-
 </div>
 </nav>
-
 </div>
 </header>
 
 <div class="hero">
-
 <h1>Заштита људских права и одговорност институција</h1>
-
-<p class="sub">
-Удружење грађана „Иксан – Снага правде“
-</p>
+<p class="sub">Удружење грађана „Иксан – Снага правде“</p>
 
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
@@ -308,11 +293,9 @@ color:#ccc;
 </div>
 
 <a href="uradili.html" class="big-cta">ШТА СМО УРАДИЛИ</a>
-
 </div>
 
 <div class="grid">
-
 <a href="ukidanjeizvrsitelja.html" class="card">
 <h3>Реформа система извршења</h3>
 <p>Предлог нормативног унапређења система.</p>
@@ -332,18 +315,15 @@ color:#ccc;
 <h3>Правна сигурност привреде</h3>
 <p>Заштита радника и предузетника.</p>
 </a>
-
 </div>
 
-<footer>
-© 2025 Иксан • Снага правде
-</footer>
+<footer>© 2025 Иксан • Снага правде</footer>
 
 <!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
 
-<a href="https://youtube.com/@iksan.snaga.pravde?si=nLtgpVDxK5f0x5KB" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
+<a href="https://www.tiktok.com/@snagapravde.rs?_r=1&_t=ZS-953nHGIgDYL" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
 </a>
 
 <a href="https://facebook.com" target="_blank">
@@ -354,8 +334,8 @@ color:#ccc;
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
 </a>
 
-<a href="https://www.tiktok.com/@snagapravde.rs?_r=1&_t=ZS-953nHGIgDYL" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
+<a href="https://youtube.com/@iksan.snaga.pravde?si=nLtgpVDxK5f0x5KB" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
 </a>
 
 </div>
