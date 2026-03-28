@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Области — Иксан • Снага правде</title>
 
@@ -12,7 +12,6 @@
 <style>
 
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
@@ -21,12 +20,10 @@
 
 body{
 min-height:100vh;
-
-/* 🔥 FIX ZA PRELOM POZADINE */
 background:
-linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center center / cover no-repeat fixed;
+linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+radial-gradient(circle at center, rgba(255,255,255,0.04), transparent 60%),
+url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 
 color:#fff;
 font-family:"Times New Roman",serif;
@@ -35,14 +32,17 @@ line-height:1.7;
 
 a{text-decoration:none;color:inherit}
 
-.container{max-width:1150px;margin:0 auto;padding:0 20px}
+.container{
+max-width:1150px;
+margin:0 auto;
+padding:0 20px;
+}
 
 /* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
 z-index:100;
-background:transparent;
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
@@ -51,74 +51,72 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0 0;
-gap:12px;
+padding:4px 0;
+gap:10px;
 }
 
 .brand img{
-height:161px;
-border-radius:10px;
+height:120px;
 }
 
 .nav{
 display:flex;
 align-items:center;
-gap:10px;
+gap:8px;
+flex-wrap:wrap;
 }
 
-.nav a.nav-link,.menu-btn{
+.nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
-font-weight:600;
-font-size:0.9rem;
-
 background:rgba(0,0,0,0.45);
 color:#fff;
+font-weight:600;
+font-size:0.85rem;
 
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
-
-transition:.15s;
 }
 
 .menu-btn{
 background:#fff;
-color:#000 !important;
+color:#000;
 font-weight:700;
 }
 
-.nav a.nav-link:hover,.menu-btn:hover{
-transform:translateY(-2px);
-}
-
-/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:100%;
 right:0;
-background:rgba(20,20,20,0.85);
-border:1px solid rgba(255,255,255,.2);
+background:rgba(20,20,20,0.95);
 border-radius:12px;
-min-width:280px;
 padding:6px;
 display:none;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
-/* CTA */
+.dropdown a{
+display:block;
+padding:8px;
+}
+
+/* ===== CTA ===== */
 .cta-row{
 display:flex;
 justify-content:center;
-gap:8px;
-margin-top:20px;
+align-items:center;
+gap:10px;
+margin-top:30px;
+flex-wrap:wrap;
 }
 
 .btn{
-padding:10px 20px;
+padding:10px 18px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
@@ -128,24 +126,40 @@ box-shadow:
 0 15px 30px rgba(0,0,0,.6);
 }
 
+/* dark */
 .btn-dark{
 background:rgba(20,20,20,0.6);
 }
 
+/* 🔴 BORDEO */
+.btn-danger{
+background: linear-gradient(
+135deg,
+rgba(120,0,30,0.45),
+rgba(70,0,20,0.35)
+);
+color:#fff;
+backdrop-filter:blur(8px);
+border:1px solid rgba(255,120,140,0.15);
+}
+
+/* gold */
 .btn-primary{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .main-grid{
 display:grid;
 gap:25px;
-margin-top:40px;
+margin-top:50px;
 }
 
 @media(min-width:900px){
-.main-grid{grid-template-columns:1fr 1fr;}
+.main-grid{
+grid-template-columns:1fr 1fr;
+}
 }
 
 .left,.right{
@@ -154,54 +168,68 @@ padding:25px;
 border-radius:15px;
 }
 
-/* 🔥 WHATSAPP — ISTO KAO CILJEVI */
+/* ===== MOBILE FIX ===== */
+@media(max-width:768px){
+
+.head{
+flex-direction:column;
+}
+
+.nav{
+justify-content:center;
+}
+
+.brand img{
+height:90px;
+}
+
+.cta-row{
+flex-direction:column;
+}
+
+}
+
+/* ===== WHATSAPP ===== */
 .wa-btn{
 position: fixed;
-bottom: 90px; /* 👉 isto kao slika */
-right: 10px;
+bottom: 20px;
+right: -180px;
 
 display: flex;
 align-items: center;
-gap: 6px;
+gap: 8px;
 
-padding: 6px 11px;
+padding: 10px 16px;
 border-radius: 40px;
 
-font-size: 10.5px;
+font-size: 13px;
 font-weight: 700;
 
 background: linear-gradient(
 135deg,
-rgba(37,211,102,0.42),
-rgba(60,140,180,0.32)
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
 );
 
 color:#fff;
 
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-
-border:1px solid rgba(255,255,255,0.18);
+backdrop-filter: blur(10px);
+border:1px solid rgba(255,255,255,0.15);
 
 box-shadow:
-0 4px 10px rgba(0,0,0,0.45),
-inset 0 1px 2px rgba(255,255,255,0.28);
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
 
 z-index:9999;
-transition:0.2s ease;
+transition: right 0.6s ease;
+}
+
+.wa-btn.show{
+right:12px;
 }
 
 .wa-btn img{
-width:18px;
-height:18px;
-}
-
-.wa-btn:hover{
-transform:translateY(-2px);
-}
-
-.wa-btn:active{
-transform:translateY(2px);
+width:22px;
 }
 
 </style>
@@ -220,8 +248,8 @@ transform:translateY(2px);
 
 <nav class="nav">
 
-<a class="nav-link" href="index.html">Почетна</a>
-<a class="nav-link" href="kontakt.html">Контакт</a>
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
 
 <div class="menu" id="menu">
 <button class="menu-btn">Мени ▾</button>
@@ -249,12 +277,14 @@ transform:translateY(2px);
 
 <div class="container">
 
+<!-- CTA -->
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
+<!-- GRID -->
 <div class="main-grid">
 
 <div class="left">
@@ -281,6 +311,12 @@ transform:translateY(2px);
 
 </div>
 
+<!-- WHATSAPP -->
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
+</a>
+
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
@@ -290,15 +326,13 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
+
+window.addEventListener("load", () => {
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
+});
 </script>
-
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
-   class="wa-btn" 
-   target="_blank">
-
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-  Пишите нам
-</a>
 
 </body>
 </html>
