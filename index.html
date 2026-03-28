@@ -884,43 +884,49 @@ box-shadow:
 
 } /* 👉 ОВО ДОДАЈ */
 
-/* ===== WHATSAPP GLASS DUGME (SMANJENO + UKLOPLJENO) ===== */
+/* ===== WHATSAPP (PELČER STYLE) ===== */
 .wa-btn{
-  position: fixed;
-  bottom: 90px;
-  right: 12px;
+position: fixed;
+bottom: 20px;
+right: -180px;
 
-  display: flex;
-  align-items: center;
-  gap: 6px;
+display: flex;
+align-items: center;
+gap: 8px;
 
-  padding: 5px 10px;      /* 🔥 МАЊЕ */
-  border-radius: 40px;
+padding: 9px 16px;
+border-radius: 40px;
 
-  font-size: 10px;        /* 🔥 МАЊЕ */
-  font-weight: 700;
+font-size: 12px;
+font-weight: 700;
 
-  background: linear-gradient(
-    135deg,
-    rgba(37,211,102,0.45),
-    rgba(60,140,180,0.35)
-  );
+background: linear-gradient(
+135deg,
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
+);
 
-  color:#fff;
+color:#fff;
 
-  backdrop-filter: blur(10px);
-  border:1px solid rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+border:1px solid rgba(255,255,255,0.15);
 
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.4),
-    inset 0 1px 2px rgba(255,255,255,0.25);
+box-shadow:
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
 
-  z-index:9999;
+z-index:9999;
+
+transition: right 0.6s ease;
+}
+
+.wa-btn.show{
+right: 12px;
 }
 
 .wa-btn img{
-  width:18px;   /* 🔥 мања икона */
-  height:18px;
+width:22px;
+height:22px;
 }
 </style>
 
@@ -1441,7 +1447,11 @@ letter-spacing:1px;
 
 </footer>
 
-
+window.addEventListener("load", () => {
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
+});
 
 <script>
 
