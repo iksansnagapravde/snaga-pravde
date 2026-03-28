@@ -27,8 +27,6 @@ url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 
 color:#fff;
 font-family:"Times New Roman",serif;
-
-/* da ništa ne ulazi ispod WhatsApp */
 padding-bottom:140px;
 }
 
@@ -62,7 +60,6 @@ gap:8px;
 padding:6px 10px;
 border-radius:10px;
 background:rgba(0,0,0,0.45);
-color:#fff;
 font-weight:600;
 font-size:0.85rem;
 
@@ -105,24 +102,17 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding-top:10px;
 }
 
 h1{
 font-size:clamp(20px,5vw,28px);
 line-height:1.3;
 margin-bottom:8px;
-
-text-shadow:
-0 0 10px rgba(255,255,255,0.3),
-0 0 40px rgba(255,255,255,0.2),
-0 15px 40px rgba(0,0,0,0.9);
 }
 
 .sub{
 color:var(--ink);
 font-size:15px;
-margin-bottom:8px;
 }
 
 /* ===== CTA ===== */
@@ -149,7 +139,6 @@ box-shadow:
 
 .btn-danger{
 background:linear-gradient(135deg,rgba(120,0,30,0.5),rgba(70,0,20,0.4));
-border:1px solid rgba(255,120,140,0.2);
 }
 
 .btn-gold{
@@ -179,17 +168,29 @@ border:1px solid rgba(120,170,255,0.3);
 display:grid;
 gap:20px;
 padding:0 20px;
-margin-top:120px; /* 🔥 spušteno ispod prvog ekrana */
+margin-top:120px;
 }
 
 @media(min-width:900px){
 .grid{grid-template-columns:1fr 1fr;}
 }
 
+/* 🔥 KLIKABILNE KARTICE */
 .card{
+display:block;
 background:rgba(0,0,0,0.6);
-padding:20px;
-border-radius:15px;
+padding:22px;
+border-radius:16px;
+transition:.25s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 40px rgba(0,0,0,0.8);
+}
+
+.card h3{
+margin-bottom:8px;
 }
 
 /* ===== WHATSAPP ===== */
@@ -197,32 +198,17 @@ border-radius:15px;
 position:fixed;
 bottom:35px;
 right:-180px;
-
 display:flex;
 align-items:center;
 gap:8px;
-
 padding:10px 16px;
 border-radius:40px;
-
 font-size:13px;
 font-weight:700;
-
-background: linear-gradient(
-135deg,
-rgba(37,211,102,0.55),
-rgba(40,120,160,0.45)
-);
-
-color:#fff;
-
+background: linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
 backdrop-filter: blur(10px);
 border:1px solid rgba(255,255,255,0.15);
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 1px 2px rgba(255,255,255,0.25);
-
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
 z-index:9999;
 transition: right 0.6s ease;
 }
@@ -297,17 +283,28 @@ color:#ccc;
 
 </div>
 
+<!-- 🔥 VRAĆENE SVE KARTICE -->
 <div class="grid">
 
-<div class="card">
+<a href="ukidanjeizvrsitelja.html" class="card">
 <h3>Реформа система извршења</h3>
-<p>Предлог унапређења система.</p>
-</div>
+<p>Предлог нормативног унапређења система извршења ради јачања судске контроле и заштите права грађана.</p>
+</a>
 
-<div class="card">
+<a href="porekloimovine.html" class="card">
 <h3>Транспарентност јавних функција</h3>
-<p>Контрола имовине функционера.</p>
-</div>
+<p>Јачање механизама транспарентности и контроле имовине носилаца јавних функција.</p>
+</a>
+
+<a href="sudpravda.html" class="card">
+<h3>Независност и ефикасност судства</h3>
+<p>Унапређење приступа правди, независности и ефикасности правосудног система.</p>
+</a>
+
+<a href="radnicipreduzetnici.html" class="card">
+<h3>Правна сигурност привреде</h3>
+<p>Заштита права радника, предузетника и стабилност привредног окружења.</p>
+</a>
 
 </div>
 
