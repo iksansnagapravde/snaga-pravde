@@ -3,23 +3,21 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Заштита права грађана, и институционална одговорност</title>
+<title>Заштита права грађана и институционална одговорност</title>
 
-<link rel="icon" href="logo-white.png" type="image/png">
+<link rel="icon" href="logo-white.png">
 
 <style>
 
+/* ===== OSNOVA ===== */
 :root{
---deepBlue:#1f1f1f;
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-
-html,body{height:100%}
 
 body{
 min-height:100vh;
@@ -30,10 +28,9 @@ url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 
 color:#fff;
 font-family:"Times New Roman",serif;
-line-height:1.7;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -42,21 +39,22 @@ backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
-
 .head{
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:4px 0;
+padding:4px 10px;
 }
 
-.brand img{height:120px;border-radius:10px}
+.brand img{
+height:100px;
+}
 
 .nav{
 display:flex;
 align-items:center;
 gap:8px;
+flex-wrap:wrap;
 }
 
 .nav a,.menu-btn{
@@ -82,7 +80,7 @@ font-weight:700;
 
 .dropdown{
 position:absolute;
-top:calc(100% + 8px);
+top:100%;
 right:0;
 background:rgba(20,20,20,0.95);
 border-radius:12px;
@@ -95,104 +93,104 @@ min-width:260px;
 
 .dropdown a{
 display:block;
-padding:9px 10px;
+padding:8px;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero{
 text-align:center;
 margin-top:40px;
 }
 
 h1{
-font-size:clamp(22px,3vw,30px);
-line-height:1.2;
+text-shadow:
+0 0 10px rgba(255,255,255,0.3),
+0 0 40px rgba(255,255,255,0.2),
+0 15px 40px rgba(0,0,0,0.9);
 }
 
 .sub{
 color:var(--ink);
-margin-top:10px;
+text-shadow:0 10px 25px rgba(0,0,0,0.9);
 }
 
-/* CTA */
+/* ===== CTA ===== */
 .cta-row{
 display:flex;
 justify-content:center;
-gap:8px;
-margin-top:60px;
+gap:10px;
+margin-top:40px;
 flex-wrap:wrap;
 }
 
 .btn{
-padding:9px 16px;
+padding:10px 16px;
 border-radius:40px;
 font-weight:700;
-font-size:12px;
+font-size:13px;
 
 box-shadow:
-0 5px 0 rgba(0,0,0,.5),
-0 12px 25px rgba(0,0,0,.6);
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
 }
 
 .btn-dark{
 background:rgba(20,20,20,0.6);
 }
 
-/* BORDEO */
+/* 🔴 BORDEO */
 .btn-danger{
 background: linear-gradient(
 135deg,
-rgba(110, 0, 25, 0.45),
-rgba(70, 0, 20, 0.35)
+rgba(120,0,30,0.45),
+rgba(70,0,20,0.35)
 );
 color:#fff;
-
-backdrop-filter: blur(8px);
-
+backdrop-filter:blur(8px);
 border:1px solid rgba(255,120,140,0.15);
-
-box-shadow:
-0 3px 0 rgba(60,0,20,0.7),
-0 6px 15px rgba(0,0,0,0.5);
 }
 
-.btn-primary{
+/* 🟡 GOLD */
+.btn-gold{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
 }
 
-/* GRID */
+/* ===== GRID ===== */
 .grid{
 display:grid;
-gap:25px;
-margin-top:40px;
+gap:20px;
+margin-top:50px;
+padding:0 20px;
 }
 
 @media(min-width:900px){
-.grid{grid-template-columns:1fr 1fr;}
+.grid{
+grid-template-columns:1fr 1fr;
+}
 }
 
 .card{
 background:rgba(0,0,0,0.6);
-padding:25px;
+padding:20px;
 border-radius:15px;
 }
 
-/* WHATSAPP */
+/* ===== WHATSAPP ===== */
 .wa-btn{
-position: fixed;
-bottom: 70px;
-right: -180px;
+position:fixed;
+bottom:20px;
+right:-180px;
 
-display: flex;
-align-items: center;
-gap: 8px;
+display:flex;
+align-items:center;
+gap:8px;
 
-padding: 9px 16px;
-border-radius: 40px;
+padding:10px 16px;
+border-radius:40px;
 
-font-size: 12px;
-font-weight: 700;
+font-size:13px;
+font-weight:700;
 
 background: linear-gradient(
 135deg,
@@ -210,17 +208,23 @@ box-shadow:
 inset 0 1px 2px rgba(255,255,255,0.25);
 
 z-index:9999;
-
 transition: right 0.6s ease;
 }
 
 .wa-btn.show{
-right: 12px;
+right:12px;
 }
 
 .wa-btn img{
 width:22px;
-height:22px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+margin-top:50px;
+padding:30px;
+color:#ccc;
 }
 
 </style>
@@ -229,7 +233,7 @@ height:22px;
 <body>
 
 <header>
-<div class="container head">
+<div class="head">
 
 <div class="brand">
 <a href="index.html">
@@ -242,7 +246,13 @@ height:22px;
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="mainMenu">
+<!-- MENU WHATSAPP -->
+<a href="https://wa.me/381665857707"
+style="background:#25D366;color:#000;font-weight:700;">
+WhatsApp
+</a>
+
+<div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
@@ -253,6 +263,11 @@ height:22px;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
 
 </div>
@@ -261,9 +276,8 @@ height:22px;
 </div>
 </header>
 
-<main>
-
-<section class="hero">
+<!-- HERO -->
+<div class="hero">
 
 <h1>Заштита људских права и одговорност институција</h1>
 
@@ -272,49 +286,73 @@ height:22px;
 </p>
 
 <div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
+
+<a href="inicijative.html" class="btn btn-dark">
+ЗАКОНИ И ПРОПИСИ
+</a>
+
+<a href="prijavi.html" class="btn btn-danger">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="doniraj.html" class="btn btn-gold">
+ПОДРЖИ НАШ РАД
+</a>
+
 </div>
 
-</section>
+</div>
 
-<div class="container">
-
+<!-- GRID -->
 <div class="grid">
 
 <div class="card">
 <h3>Реформа система извршења</h3>
-<p>Унапређење контроле и заштите права грађана.</p>
+<p>
+Предлог нормативног унапређења система извршења ради јачања контроле и заштите права грађана.
+</p>
 </div>
 
 <div class="card">
-<h3>Транспарентност институција</h3>
-<p>Јачање контроле јавних функција.</p>
+<h3>Транспарентност јавних функција</h3>
+<p>
+Јачање механизама транспарентности и контроле имовине носилаца јавних функција.
+</p>
+</div>
+
+<div class="card">
+<h3>Независност судства</h3>
+<p>
+Унапређење приступа правди и институционалне независности.
+</p>
+</div>
+
+<div class="card">
+<h3>Правна сигурност привреде</h3>
+<p>
+Заштита права радника и предузетника.
+</p>
 </div>
 
 </div>
 
-</div>
-
-</main>
-
-<footer style="text-align:center;padding:20px;">
-© 2025 Иксан • Снага правде
+<footer>
+© 2025 Иксан • Снага правде — Сва права задржана.
 </footer>
+
+<!-- FLOAT WHATSAPP -->
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
+</a>
 
 <script>
 
-const menu = document.getElementById('mainMenu');
+/* meni */
+const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
-
-/* WA slide */
+/* whatsapp slide */
 window.addEventListener("load", () => {
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
@@ -322,11 +360,6 @@ document.querySelector(".wa-btn").classList.add("show");
 });
 
 </script>
-
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
-</a>
 
 </body>
 </html>
