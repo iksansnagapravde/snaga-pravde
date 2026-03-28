@@ -34,7 +34,7 @@ a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -61,7 +61,6 @@ border-radius:10px;
 display:flex;
 align-items:center;
 gap:8px;
-flex-wrap:nowrap; /* 🔥 ВАЖНО — хоризонтално */
 }
 
 .nav a,.menu-btn{
@@ -206,39 +205,60 @@ left:0;
 position:fixed;
 bottom:35px;
 right:-180px;
+
 display:flex;
 align-items:center;
 gap:8px;
+
 padding:10px 16px;
 border-radius:40px;
+
 font-size:13px;
 font-weight:700;
-background:linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
+
+background:linear-gradient(
+135deg,
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
+);
+
 color:#fff;
+
 backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.15);
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
+
 z-index:9999;
 transition:right 0.6s ease;
 }
 
-.wa-btn.show{right:12px;}
+.wa-btn.show{
+right:12px;
+}
 
 .wa-btn img{
 width:22px;
 height:22px;
 }
 
-/* MOBILE */
+/* MOBILE FIX */
 @media(max-width:768px){
 
 .brand img{height:80px}
 
-/* 🔥 ОВДЕ ЈЕ БИЛА ГРЕШКА — сад остаје хоризонтално */
+/* 🔥 OVO JE KLJUČNO */
 .nav{
-flex-wrap:nowrap;
+flex-wrap:wrap;
 justify-content:center;
-overflow-x:auto;
+gap:8px;
+}
+
+.nav a, .menu-btn{
+min-width:90px;
+text-align:center;
 }
 
 .hero h1{
@@ -301,19 +321,14 @@ font-size:22px;
 </p>
 
 <div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
+<!-- 🔥 PDF OTVARANJE -->
 <a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="btn btn-danger">
 ПРЕДСТАВКА ГРАЂАНИНА
 </a>
 
-<a href="doniraj.html" class="btn btn-primary">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
 </section>
