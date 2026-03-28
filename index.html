@@ -32,7 +32,7 @@ font-family:"Times New Roman",serif;
 
 a{
 text-decoration:none;
-color:#fff; /* 🔥 FIX ljubičastih linkova */
+color:#fff;
 }
 
 /* ===== HEADER ===== */
@@ -49,25 +49,19 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:4px 10px;
-flex-wrap:nowrap; /* 🔥 KLJUČNO */
-}
-
-.nav{
-display:flex;
-align-items:center;
-gap:8px;
-flex-wrap:nowrap; /* 🔥 da ne prelazi dole */
+flex-wrap:nowrap;
 }
 
 .brand img{
-height:100px;
+height:80px;
 }
 
+/* 🔥 JEDAN NAV — ISPRAVLJENO */
 .nav{
 display:flex;
 align-items:center;
 gap:8px;
-flex-wrap:wrap;
+flex-wrap:nowrap;
 }
 
 .nav a,.menu-btn{
@@ -112,11 +106,12 @@ padding:8px;
 /* ===== HERO ===== */
 .hero{
 text-align:center;
-margin-top:40px;
+margin-top:35px;
+padding:0 10px;
 }
 
 h1{
-font-size: clamp(22px, 5vw, 32px); /* 🔥 manji i responsive */
+font-size: clamp(22px, 5vw, 32px);
 line-height:1.25;
 margin-bottom:10px;
 
@@ -128,6 +123,8 @@ text-shadow:
 
 .sub{
 color:var(--ink);
+font-size:15px;
+margin-top:5px;
 text-shadow:0 10px 25px rgba(0,0,0,0.9);
 }
 
@@ -135,8 +132,9 @@ text-shadow:0 10px 25px rgba(0,0,0,0.9);
 .cta-row{
 display:flex;
 justify-content:center;
+align-items:center;
 gap:10px;
-margin-top:40px;
+margin-top:30px;
 flex-wrap:wrap;
 }
 
@@ -156,7 +154,6 @@ box-shadow:
 background:rgba(20,20,20,0.6);
 }
 
-/* 🔴 BORDEO */
 .btn-danger{
 background: linear-gradient(
 135deg,
@@ -167,7 +164,6 @@ backdrop-filter:blur(8px);
 border:1px solid rgba(255,120,140,0.15);
 }
 
-/* 🟡 GOLD */
 .btn-gold{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
@@ -176,7 +172,7 @@ color:#000;
 /* ===== BIG CTA ===== */
 .big-cta{
 display:inline-block;
-margin-top:40px;
+margin-top:25px;
 
 background:rgba(20,25,35,0.65);
 backdrop-filter:blur(12px);
@@ -212,7 +208,6 @@ grid-template-columns:1fr 1fr;
 }
 }
 
-/* 🔥 CELO POLJE KLIKABILNO */
 .card{
 display:block;
 background:rgba(0,0,0,0.6);
@@ -277,6 +272,20 @@ padding:30px;
 color:#ccc;
 }
 
+/* MOBILE */
+@media(max-width:768px){
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.brand img{
+height:70px;
+}
+
+}
+
 </style>
 </head>
 
@@ -295,8 +304,6 @@ color:#ccc;
 
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
-
-<!-- ❌ UKLONJEN WHATSAPP IZ MENIJA -->
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
