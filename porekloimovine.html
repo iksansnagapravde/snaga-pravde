@@ -18,7 +18,6 @@
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-/* ❌ nema linija */
 a{text-decoration:none;color:inherit}
 
 body{
@@ -28,11 +27,12 @@ radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
+padding-bottom:140px;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER (FIXED) ===== */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -60,7 +60,6 @@ align-items:center;
 gap:6px;
 }
 
-/* 🔥 3D */
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
@@ -101,13 +100,13 @@ display:block;
 padding:9px 10px;
 }
 
-/* ===== GORNJA DUGMAD ===== */
+/* ===== CTA FIX ===== */
 .top-buttons{
 display:flex;
-justify-content:center;
-gap:10px;
+flex-direction:column;
+align-items:center;
+gap:14px;
 margin-top:20px;
-flex-wrap:nowrap;
 }
 
 .btn{
@@ -119,22 +118,33 @@ font-size:13px;
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
+transition:0.25s;
 }
 
-.btn-represent{background:#1c1c1c;color:#fff}
-.btn-gold{
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.85),
-    rgba(255, 179, 0, 0.85)
-  );
-  color:#000;
-  border-radius:25px;
-  font-weight:bold;
-  box-shadow: 
-    0 6px 0 #cc9a00,
-    0 0 20px rgba(255, 215, 0, 0.5);
+.btn:hover{
+transform: translateY(-2px) scale(1.03);
 }
+
+/* ISTE BOJE */
+.btn-dark{
+background:rgba(20,20,20,0.6);
+color:#fff;
+}
+
+.btn-danger{
+background: linear-gradient(
+135deg,
+rgba(140,20,40,0.65),
+rgba(80,10,25,0.55)
+);
+}
+
+.btn-gold{
+background:linear-gradient(135deg,#ffd700,#ffb300);
+color:#000;
+}
+
 /* GRID */
 .main-grid{
 display:grid;
@@ -164,61 +174,50 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.top-buttons{
-flex-direction:column;
-align-items:center;
 }
 
-.top-buttons a{
-width:auto;
-text-align:center;
-}
-
-}
-
-/* ✅ WHATSAPP 3D */
-.whatsapp-float{
+/* ===== WHATSAPP STANDARD ===== */
+.wa-btn{
 position:fixed;
-bottom:20px;
-right:20px;
-width:65px;
-height:65px;
-
-background:linear-gradient(145deg,#25D366,#1ebe5d);
+bottom:35px;
+right:-180px;
 
 display:flex;
 align-items:center;
-justify-content:center;
+gap:8px;
 
-border-radius:50%;
+padding:10px 16px;
+border-radius:40px;
 
-/* 3D efekat */
+font-size:13px;
+font-weight:700;
+
+background:linear-gradient(
+135deg,
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
+);
+
+color:#fff;
+
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.15);
+
 box-shadow:
-0 8px 0 #128C7E,
-0 20px 40px rgba(0,0,0,0.8);
-
-filter:drop-shadow(0 0 6px rgba(37,211,102,0.6));
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
 
 z-index:9999;
-cursor:pointer;
-transition:0.15s;
+transition:right 0.6s ease;
 }
 
-.whatsapp-float:hover{
-transform:translateY(-4px) scale(1.08);
+.wa-btn.show{
+right:12px;
 }
 
-.whatsapp-float:active{
-transform:translateY(6px);
-box-shadow:
-0 3px 0 #128C7E,
-0 10px 20px rgba(0,0,0,0.7);
-}
-
-.whatsapp-float svg{
-width:30px;
-height:30px;
-fill:#000;
+.wa-btn img{
+width:22px;
+height:22px;
 }
 
 </style>
@@ -271,7 +270,7 @@ fill:#000;
 ЗАКОНИ И ПРОПИСИ
 </a>
 
-<a href="prijavi.html" class="btn btn-dark">
+<a href="prijavi.html" class="btn btn-danger">
 ПРЕДСТАВКА ГРАЂАНИНА
 </a>
 
@@ -328,12 +327,17 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
+
+window.addEventListener("load", () => {
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
+});
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">
-<svg viewBox="0 0 24 24">
-<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8-.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
-</svg>
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
 </a>
 
 </body>
