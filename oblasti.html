@@ -28,9 +28,12 @@ url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
+
+/* da ništa ne udara u WhatsApp */
+padding-bottom:140px;
 }
 
-a{text-decoration:none;color:inherit}
+a{text-decoration:none;color:#fff}
 
 .container{
 max-width:1150px;
@@ -56,14 +59,13 @@ gap:10px;
 }
 
 .brand img{
-height:120px;
+height:95px;
 }
 
 .nav{
 display:flex;
 align-items:center;
 gap:8px;
-flex-wrap:wrap;
 }
 
 .nav a,.menu-btn{
@@ -108,15 +110,16 @@ padding:8px;
 /* ===== CTA ===== */
 .cta-row{
 display:flex;
-justify-content:center;
+flex-direction:column;
 align-items:center;
-gap:10px;
-margin-top:30px;
-flex-wrap:wrap;
+gap:12px;
+
+/* spušteno kao na naslovnoj */
+margin-top:50px;
 }
 
 .btn{
-padding:10px 18px;
+padding:12px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
@@ -126,49 +129,56 @@ box-shadow:
 0 15px 30px rgba(0,0,0,.6);
 }
 
-/* dark */
 .btn-dark{
 background:rgba(20,20,20,0.6);
 }
 
-/* 🔴 BORDEO */
 .btn-danger{
 background: linear-gradient(
 135deg,
-rgba(120,0,30,0.45),
-rgba(70,0,20,0.35)
+rgba(120,0,30,0.5),
+rgba(70,0,20,0.4)
 );
-color:#fff;
-backdrop-filter:blur(8px);
-border:1px solid rgba(255,120,140,0.15);
+border:1px solid rgba(255,120,140,0.2);
 }
 
-/* gold */
 .btn-primary{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
 }
 
-/* ===== GRID ===== */
+/* ===== CONTENT ===== */
 .main-grid{
 display:grid;
 gap:25px;
-margin-top:50px;
+
+/* 🔥 spušteno da ne bude u prvom ekranu */
+margin-top:90px;
 }
 
-@media(min-width:900px){
-.main-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-
-.left,.right{
+/* kartice isti stil kao homepage */
+.card{
 background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
 padding:25px;
-border-radius:15px;
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.8);
 }
 
-/* ===== MOBILE FIX ===== */
+/* naslov lepši */
+.card h2{
+margin-bottom:10px;
+font-size:22px;
+}
+
+/* lista lepša */
+.card ul{
+margin-top:10px;
+padding-left:18px;
+}
+
+/* ===== MOBILE ===== */
 @media(max-width:768px){
 
 .head{
@@ -180,11 +190,7 @@ justify-content:center;
 }
 
 .brand img{
-height:90px;
-}
-
-.cta-row{
-flex-direction:column;
+height:85px;
 }
 
 }
@@ -192,7 +198,7 @@ flex-direction:column;
 /* ===== WHATSAPP ===== */
 .wa-btn{
 position: fixed;
-bottom: 20px;
+bottom: 30px;
 right: -180px;
 
 display: flex;
@@ -284,16 +290,20 @@ width:22px;
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- GRID -->
+<!-- CONTENT -->
 <div class="main-grid">
 
-<div class="left">
+<div class="card">
 <h2>Области деловања</h2>
-<p>Наш рад је усмерен на заштиту права грађана, борбу против корупције и јачање институционалног система.</p>
-<p>Делујемо кроз правну подршку, иницијативе за измену закона и активно учешће у јавном животу.</p>
+<p>
+Наш рад је усмерен на заштиту права грађана, борбу против корупције и јачање институционалног система.
+</p>
+<p>
+Делујемо кроз правну подршку, иницијативе за измену закона и активно учешће у јавном животу.
+</p>
 </div>
 
-<div class="right">
+<div class="card">
 <h2>Кључне области</h2>
 <ul>
 <li>Заштита људских и грађанских права</li>
