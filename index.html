@@ -62,10 +62,7 @@ border-radius:10px;
 background:rgba(0,0,0,0.45);
 font-weight:600;
 font-size:0.85rem;
-
-box-shadow:
-0 5px 0 rgba(0,0,0,.7),
-0 15px 30px rgba(0,0,0,.8);
+box-shadow:0 5px 0 rgba(0,0,0,.7),0 15px 30px rgba(0,0,0,.8);
 }
 
 .menu-btn{
@@ -101,16 +98,13 @@ display:flex;
 flex-direction:column;
 align-items:center;
 text-align:center;
-
-/* 🔥 pomera ceo blok malo gore */
 padding-top:40px;
 }
 
 h1{
 font-size:clamp(20px,5vw,28px);
-line-height:1.3;
+margin-top:30px;
 margin-bottom:10px;
-margin-top:30px; /* 🔥 SPUŠTA NASLOV DOLE */
 }
 
 .sub{
@@ -124,18 +118,15 @@ display:flex;
 flex-direction:column;
 align-items:center;
 gap:14px;
-
-margin-top:35px; /* 🔥 +1cm dole */
+margin-top:35px;
 }
+
 .btn{
 padding:12px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
-
-box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
+box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
 }
 
 .btn-dark{background:rgba(20,20,20,0.6);}
@@ -150,18 +141,13 @@ color:#000;
 }
 
 .big-cta{
-margin-top:90px; /* 🔥 ukupno ~2.5cm ispod dugmadi */
-margin-bottom:25px;
-
+margin-top:90px;
 padding:16px 30px;
 border-radius:16px;
-
 background:rgba(20,25,35,0.65);
 backdrop-filter:blur(12px);
-
 font-weight:700;
 font-size:14px;
-
 border:1px solid rgba(120,170,255,0.3);
 }
 
@@ -177,7 +163,6 @@ margin-top:120px;
 .grid{grid-template-columns:1fr 1fr;}
 }
 
-/* 🔥 KLIKABILNE KARTICE */
 .card{
 display:block;
 background:rgba(0,0,0,0.6);
@@ -189,10 +174,6 @@ transition:.25s;
 .card:hover{
 transform:translateY(-5px);
 box-shadow:0 15px 40px rgba(0,0,0,0.8);
-}
-
-.card h3{
-margin-bottom:8px;
 }
 
 /* ===== WHATSAPP ===== */
@@ -207,60 +188,62 @@ padding:10px 16px;
 border-radius:40px;
 font-size:13px;
 font-weight:700;
-background: linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
-backdrop-filter: blur(10px);
+background:linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
+backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.15);
 box-shadow:0 4px 12px rgba(0,0,0,0.4);
 z-index:9999;
-transition: right 0.6s ease;
+transition:right 0.6s ease;
 }
 
 .wa-btn.show{right:12px;}
 .wa-btn img{width:22px;}
-/* ===== SOCIAL BAR HORIZONTAL ===== */
+
+/* ===== SOCIAL BAR ===== */
 .social-bar{
 position:fixed;
 left:-260px;
+bottom:110px;
 
 display:flex;
 flex-direction:row;
-gap:10px;
+gap:12px;
 
 z-index:9999;
-transition:left 0.6s ease;
+transition:left 0.6s ease, opacity 0.6s ease;
+opacity:0;
 }
 
-.social-bar{
-bottom:90px;
+.social-bar.show{
+left:10px;
+opacity:1;
 }
 
 .social-bar a{
 display:flex;
 align-items:center;
 justify-content:center;
-
-width:42px;
-height:42px;
-
+width:44px;
+height:44px;
 border-radius:50%;
-
-background: linear-gradient(
-135deg,
-rgba(0,0,0,0.6),
-rgba(40,40,40,0.4)
-);
-
-backdrop-filter:blur(10px);
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 1px 2px rgba(255,255,255,0.2);
+background:rgba(20,20,20,0.6);
+backdrop-filter:blur(12px);
+box-shadow:0 4px 12px rgba(0,0,0,0.5);
+transition:0.3s;
 }
 
 .social-bar img{
-width:22px;
-height:22px;
+width:20px;
+height:20px;
+filter:invert(1);
+opacity:0.85;
 }
+
+.social-bar a:hover img{
+opacity:1;
+transform:scale(1.1);
+}
+
 footer{
 text-align:center;
 margin-top:50px;
@@ -328,27 +311,26 @@ color:#ccc;
 
 </div>
 
-<!-- 🔥 VRAĆENE SVE KARTICE -->
 <div class="grid">
 
 <a href="ukidanjeizvrsitelja.html" class="card">
 <h3>Реформа система извршења</h3>
-<p>Предлог нормативног унапређења система извршења ради јачања судске контроле и заштите права грађана.</p>
+<p>Предлог нормативног унапређења система.</p>
 </a>
 
 <a href="porekloimovine.html" class="card">
 <h3>Транспарентност јавних функција</h3>
-<p>Јачање механизама транспарентности и контроле имовине носилаца јавних функција.</p>
+<p>Контрола имовине функционера.</p>
 </a>
 
 <a href="sudpravda.html" class="card">
-<h3>Независност и ефикасност судства</h3>
-<p>Унапређење приступа правди, независности и ефикасности правосудног система.</p>
+<h3>Независност судства</h3>
+<p>Ефикасност правосуђа.</p>
 </a>
 
 <a href="radnicipreduzetnici.html" class="card">
 <h3>Правна сигурност привреде</h3>
-<p>Заштита права радника, предузетника и стабилност привредног окружења.</p>
+<p>Заштита радника и предузетника.</p>
 </a>
 
 </div>
@@ -356,14 +338,15 @@ color:#ccc;
 <footer>
 © 2025 Иксан • Снага правде
 </footer>
-  
+
+<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
 
 <a href="https://youtube.com/@iksan.snaga.pravde?si=nLtgpVDxK5f0x5KB" target="_blank">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
 </a>
 
-<a href="#" target="_blank">
+<a href="https://facebook.com" target="_blank">
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg">
 </a>
 
@@ -377,7 +360,7 @@ color:#ccc;
 
 </div>
 
-</div>
+<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
