@@ -113,6 +113,13 @@ color:#000;
 box-shadow:0 6px 0 #cc9a00,0 0 18px var(--gold-glow);
 }
 
+/* 🔵 PLAVA dugmad (VRAĆENA) */
+.btn-blue{
+background: rgba(43, 111, 255, 0.3);
+color:#fff;
+box-shadow:0 6px 0 #102c8f;
+}
+
 /* SEARCH */
 #searchInput{
 width:100%;
@@ -225,14 +232,26 @@ transition:right 0.6s ease;
 
 <div class="container">
 
+<!-- CTA -->
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
+<!-- 🔵 VRAĆENA PLAVA dugmad -->
+<div class="top-buttons" style="margin-top:10px">
+<a href="https://portal.sud.rs/sr/tok-predmeta" class="btn btn-blue">
+СУДСКИ ПРЕДМЕТИ У ТОКУ
+</a>
+
+<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" class="btn btn-blue">
+ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ
+</a>
+</div>
+
 <div style="text-align:center;">
-<input type="text" id="searchInput" placeholder="🔍 Претражите закон (нпр. дуг, отказ, банка...)">
+<input type="text" id="searchInput" placeholder="🔍 Претражите закон...">
 </div>
 
 <div class="main-grid">
@@ -253,21 +272,13 @@ transition:right 0.6s ease;
 <div class="laws">
 
 <a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="law">УСТАВ РЕПУБЛИКЕ СРБИЈЕ</a>
-
 <a href="https://www.echr.coe.int/documents/convention_srp.pdf" target="_blank" class="law">ЕВРОПСКА КОНВЕНЦИЈА</a>
-
 <a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="law">ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ</a>
-
 <a href="https://www.paragraf.rs/propisi/zakonik_o_krivicnom_postupku.html" target="_blank" class="law">ЗАКОНИК О КРИВИЧНОМ ПОСТУПКУ</a>
-
 <a href="https://www.paragraf.rs/propisi/zakon_o_opstem_upravnom_postupku.html" target="_blank" class="law">ЗАКОН О ОПШТЕМ УПРАВНОМ ПОСТУПКУ</a>
-
 <a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="law">ЗАКОН О ИЗВРШЕЊУ</a>
-
 <a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" target="_blank" class="law">ЗАКОН О РАДУ</a>
-
 <a href="https://www.paragraf.rs/propisi/zakon_o_bankama.html" target="_blank" class="law">ЗАКОН О БАНКАМА</a>
-
 <a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_potrosaca.html" target="_blank" class="law">ЗАКОН О ЗАШТИТИ ПОТРОШАЧА</a>
 
 </div>
