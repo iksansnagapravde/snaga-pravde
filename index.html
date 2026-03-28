@@ -135,12 +135,10 @@ transition:all 0.25s ease;
 transform: translateY(-2px) scale(1.03);
 }
 
-/* crno */
 .btn-dark{
 background:rgba(20,20,20,0.6);
 }
 
-/* bordo */
 .btn-danger{
 background: linear-gradient(
 135deg,
@@ -149,7 +147,6 @@ rgba(80,10,25,0.55)
 );
 }
 
-/* 🔥 GOLD + PULSE */
 @keyframes pulseGlow{
 0%{box-shadow:0 0 0 rgba(255,215,0,0.4);}
 50%{box-shadow:0 0 20px rgba(255,215,0,0.6);}
@@ -179,24 +176,65 @@ border:1px solid rgba(120,170,255,0.3);
 display:grid;
 gap:20px;
 padding:0 20px;
-margin-top:120px;
+margin-top:90px;
 }
 
 @media(min-width:900px){
 .grid{grid-template-columns:1fr 1fr;}
 }
 
+/* ===== CARD (ISTI KAO PREDSTAVKA) ===== */
 .card{
 display:block;
-background:rgba(0,0,0,0.6);
-padding:22px;
-border-radius:16px;
-transition:.25s;
+
+background:linear-gradient(
+135deg,
+rgba(60,10,20,0.25),
+rgba(20,20,20,0.65)
+);
+
+padding:24px;
+border-radius:18px;
+
+border:1px solid rgba(140,20,40,0.25);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.6);
+
+transition:.25s ease;
+position:relative;
+overflow:hidden;
 }
 
 .card:hover{
 transform:translateY(-5px);
-box-shadow:0 15px 40px rgba(0,0,0,0.8);
+
+border:1px solid rgba(180,40,60,0.4);
+
+box-shadow:
+0 20px 50px rgba(0,0,0,.8);
+}
+
+/* STRELICE */
+.card::before,
+.card::after{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:18px;
+color:rgba(211,164,81,0.6);
+opacity:0.7;
+pointer-events:none;
+}
+
+.card::before{
+content:"‹";
+left:10px;
+}
+
+.card::after{
+content:"›";
+right:10px;
 }
 
 /* WHATSAPP */
@@ -250,7 +288,6 @@ border-radius:50%;
 background:rgba(20,20,20,0.55);
 backdrop-filter:blur(12px);
 box-shadow:0 4px 12px rgba(0,0,0,0.5);
-transition:all 0.3s ease;
 }
 
 .social-bar img{
@@ -258,12 +295,6 @@ width:20px;
 height:20px;
 filter:invert(1);
 opacity:0.85;
-}
-
-.social-bar:hover{opacity:1;}
-
-.social-bar a:hover{
-transform:translateX(-8px) scale(1.08);
 }
 
 footer{
@@ -274,6 +305,7 @@ color:#ccc;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -325,25 +357,27 @@ color:#ccc;
 </div>
 
 <div class="grid">
+
 <a href="ukidanjeizvrsitelja.html" class="card">
-<h3>Реформа система извршења</h3>
-<p>Предлог нормативног унапређења система.</p>
+<h3 style="margin-bottom:6px;">Реформа система извршења</h3>
+<p style="color:#ccc;">Предлог нормативног унапређења система.</p>
 </a>
 
 <a href="porekloimovine.html" class="card">
-<h3>Транспарентност јавних функција</h3>
-<p>Контрола имовине функционера.</p>
+<h3 style="margin-bottom:6px;">Транспарентност јавних функција</h3>
+<p style="color:#ccc;">Контрола имовине функционера.</p>
 </a>
 
 <a href="sudpravda.html" class="card">
-<h3>Независност судства</h3>
-<p>Ефикасност правосуђа.</p>
+<h3 style="margin-bottom:6px;">Независност судства</h3>
+<p style="color:#ccc;">Ефикасност правосуђа.</p>
 </a>
 
 <a href="radnicipreduzetnici.html" class="card">
-<h3>Правна сигурност привреде</h3>
-<p>Заштита радника и предузетника.</p>
+<h3 style="margin-bottom:6px;">Правна сигурност привреде</h3>
+<p style="color:#ccc;">Заштита радника и предузетника.</p>
 </a>
+
 </div>
 
 <footer>© 2025 Иксан • Снага правде</footer>
