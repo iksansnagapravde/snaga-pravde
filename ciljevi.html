@@ -34,7 +34,7 @@ a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -61,7 +61,7 @@ border-radius:10px;
 display:flex;
 align-items:center;
 gap:8px;
-flex-wrap:wrap;
+flex-wrap:nowrap; /* 🔥 ВАЖНО — хоризонтално */
 }
 
 .nav a,.menu-btn{
@@ -229,6 +229,24 @@ width:22px;
 height:22px;
 }
 
+/* MOBILE */
+@media(max-width:768px){
+
+.brand img{height:80px}
+
+/* 🔥 ОВДЕ ЈЕ БИЛА ГРЕШКА — сад остаје хоризонтално */
+.nav{
+flex-wrap:nowrap;
+justify-content:center;
+overflow-x:auto;
+}
+
+.hero h1{
+font-size:22px;
+}
+
+}
+
 </style>
 </head>
 
@@ -295,14 +313,6 @@ height:22px;
 <a href="doniraj.html" class="btn btn-primary">
 ПОДРЖИ НАШ РАД
 </a>
-
-<!-- PRAVILNIK -->
-<p style="margin-top:8px; font-size:13px; color:#ccc;">
-📄 Правилник о поступању:
-<a href="PRAVILNIK_PREDSTAVKA.pdf" target="_blank" style="color:#ffd700;">
-прочитај документ
-</a>
-</p>
 
 </div>
 
