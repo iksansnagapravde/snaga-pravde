@@ -194,30 +194,25 @@ margin-top:10px;
 width:100%;
 padding:12px;
 border:none;
-border-radius:25px;
+border-radius:40px;
 
-background: linear-gradient(
-135deg,
-rgba(255, 215, 0, 0.7),
-rgba(255, 179, 0, 0.7)
-);
-
+background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
+
 font-size:15px;
 font-weight:900;
 cursor:pointer;
 
 box-shadow:
-0 5px 0 rgba(180,130,0,0.7),
-0 10px 25px rgba(0,0,0,0.5),
-0 0 12px rgba(255, 215, 0, 0.4);
+0 6px 0 #cc9a00,
+0 0 20px rgba(255,215,0,0.5);
 
-backdrop-filter: blur(3px);
--webkit-backdrop-filter: blur(3px);
+transition:0.3s;
+}
 
-border:1px solid rgba(255,215,0,0.4);
+.main-donate:hover{
+transform:translateY(-2px) scale(1.03);
 
-transition:.15s;
 }
 
 /* CARDS */
