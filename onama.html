@@ -22,7 +22,8 @@ body{
 background:
 linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
 radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+url('justice-bg.jpg') center center / cover no-repeat fixed;
+
 color:#fff;
 font-family:"Times New Roman";
 }
@@ -31,12 +32,11 @@ a{text-decoration:none;color:inherit}
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER (ISTI KAO OBLASTI) ===== */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
 z-index:100;
-background:transparent;
 backdrop-filter:blur(6px);
 border-bottom:1px solid rgba(255,255,255,.1);
 }
@@ -60,14 +60,11 @@ align-items:center;
 gap:6px;
 }
 
-/* MANJA DUGMAD — DA NE PADA */
 .nav a,.menu-btn{
 padding:5px 7px;
 border-radius:10px;
 font-weight:600;
 font-size:0.8rem;
-line-height:1;
-white-space:nowrap;
 
 background:rgba(0,0,0,0.45);
 color:#fff;
@@ -121,6 +118,8 @@ font-size:13px;
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
+transition:.2s;
 }
 
 .btn-dark{
@@ -129,17 +128,32 @@ color:#fff;
 }
 
 .btn-gold{
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.85),
-    rgba(255, 179, 0, 0.85)
-  );
-  color:#000;
-  border-radius:25px;
-  font-weight:bold;
-  box-shadow: 
-    0 6px 0 #cc9a00,
-    0 0 20px rgba(255, 215, 0, 0.5);
+background:linear-gradient(135deg,#ffd700,#ffb300);
+color:#000;
+}
+
+/* 🔴 CRVENO DUGME */
+.btn-danger{
+background: linear-gradient(
+135deg,
+rgba(180, 20, 60, 0.55),
+rgba(120, 0, 40, 0.45)
+);
+
+color:#fff;
+
+backdrop-filter: blur(6px);
+
+border:1px solid rgba(255, 80, 120, 0.35);
+
+box-shadow:
+0 6px 0 rgba(90,0,30,0.9),
+0 15px 30px rgba(0,0,0,0.7),
+0 0 18px rgba(200, 30, 80, 0.4);
+}
+
+.btn-danger:hover{
+transform:translateY(-3px);
 }
 
 /* HERO */
@@ -189,45 +203,53 @@ justify-content:center;
 }
 
 .brand img{
-height:90px;
+height:80px;
 }
 
 .top-buttons{
 flex-direction:column;
 align-items:center;
 }
-
-.top-buttons a{
-width:auto;
-text-align:center;
-}
 }
 
-/* WHATSAPP */
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
+/* ✅ WHATSAPP — ISTO KAO CILJEVI */
+.wa-btn{
+position: fixed;
+bottom: 90px;
+right: 10px;
 
-background:linear-gradient(145deg,#25D366,#1ebe5d);
+display: flex;
+align-items: center;
+gap: 6px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+padding: 6px 11px;
+border-radius: 40px;
 
-border-radius:50%;
+font-size: 10.5px;
+font-weight: 700;
+
+background: linear-gradient(
+135deg,
+rgba(37,211,102,0.42),
+rgba(60,140,180,0.32)
+);
+
+color:#fff;
+
+backdrop-filter: blur(12px);
+
+border:1px solid rgba(255,255,255,0.18);
 
 box-shadow:
-0 6px 0 #128C7E,
-0 18px 35px rgba(0,0,0,0.7);
+0 4px 10px rgba(0,0,0,0.45),
+inset 0 1px 2px rgba(255,255,255,0.28);
+
+z-index:9999;
 }
 
-.whatsapp-float svg{
-width:28px;
-height:28px;
-fill:#000;
+.wa-btn img{
+width:18px;
+height:18px;
 }
 
 </style>
@@ -260,11 +282,6 @@ fill:#000;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
 
 </div>
@@ -277,69 +294,40 @@ fill:#000;
 
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-dark">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="#" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
 <div class="hero">
-
 <h1>О удружењу Иксан</h1>
-
 <p>
 Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
 заштити достојанства грађана и развоју праведног друштва.
 </p>
-
 </div>
 
 <div class="grid">
 
 <div class="card">
 <h3>Ко смо</h3>
-<p>Иксан окупља грађане са циљем јачања правде и правне сигурности, кроз заједничко деловање и подршку свима који траже правду.</p>
+<p>Иксан окупља грађане ради заштите правде и сигурности.</p>
 </div>
 
 <div class="card">
 <h3>Назив „Иксан“</h3>
-<p>Назив симболизује правду, истину и одговорност, као основне вредности на којима градимо наш рад.</p>
+<p>Симбол правде, истине и одговорности.</p>
 </div>
 
 <div class="card">
 <h3>Наша мисија</h3>
-<p>Реформа система, заштита права грађана и стварање друштва у коме закон важи једнако за све.</p>
+<p>Реформа система и заштита права грађана.</p>
 </div>
 
 <div class="card">
 <h3>Разлог оснивања</h3>
-<p>Настали смо као одговор на неправде и злоупотребе у систему, са циљем да грађанима вратимо глас и правну сигурност.</p>
+<p>Одговор на неправде у систему.</p>
 </div>
 
-<div class="card full-width">
-
-<h3>Наш рад са грађанима</h3>
-
-<p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
-
-<p>Активни смо на Instagram, TikTok и Facebook платформама, где свакодневно комуницирамо са грађанима.</p>
-
-<p>Организујемо уживо разговоре са грађанима и одговарамо на конкретне проблеме.</p>
-
-<p>Позивамо грађане да посете нашу канцеларију и добију директну правну и институционалну подршку.</p>
-
-<p>Повезујемо грађане са надлежним институцијама и пратимо њихове случајеве.</p>
-
-<p>Позивамо грађане да попуне представку ради заштите својих права.</p>
-
-</div>
-
-</div>
-
-<div class="impresum">
-<h3>Основни подаци</h3>
-<p>Седиште: Београд</p>
-<p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
 </div>
 
 </div>
@@ -347,12 +335,17 @@ fill:#000;
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
+});
 </script>
 
-<a href="https://wa.me/381665857707" class="whatsapp-float">
-<svg viewBox="0 0 24 24">
-<path d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.2-.2.6-.3.9-.2 1 .3 2 .5 3.1.5.5 0 .8.3.8.8V20c0 .5-.3.8-.8.8C10.3 20.8 3.2 13.7 3.2 5.8c0-.5.3-.8.8-.8h3.5c.5 0 .8.3.8.8 0 1.1.2 2.1.5 3.1.1.3 0 .7-.2.9l-1.9 2z"/>
-</svg>
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
 </a>
 
 </body>
