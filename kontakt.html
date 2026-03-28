@@ -89,7 +89,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 gap:14px;
-margin-top:25px;
+margin-top:30px; /* malo više da diše */
 }
 
 .btn{
@@ -119,13 +119,27 @@ box-shadow:0 6px 0 #cc9a00,0 0 20px rgba(255,215,0,0.5);
 .main-grid{
 display:grid;
 gap:30px;
-margin-top:30px;
+margin-top:25px;
 }
 
+/* 🔥 NOVA KARTICA (PLAVI GLASS) */
 .left{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
+background:linear-gradient(
+135deg,
+rgba(20,30,60,0.35),
+rgba(10,15,30,0.65)
+);
+
+padding:28px;
+border-radius:18px;
+
+border:1px solid rgba(120,150,255,0.15);
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.6);
+
 line-height:1.7;
 }
 
@@ -225,9 +239,9 @@ box-shadow:0 4px 12px rgba(0,0,0,0.5);
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-represent">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
-</a>
+<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+</div>
+
 <div class="main-grid">
 
 <div class="left">
