@@ -32,7 +32,7 @@ padding-bottom:140px;
 
 a{text-decoration:none;color:#fff}
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -91,7 +91,7 @@ display:block;
 padding:8px;
 }
 
-/* ===== HERO ===== */
+/* HERO */
 .hero{
 min-height:85vh;
 display:flex;
@@ -121,17 +121,26 @@ gap:14px;
 margin-top:35px;
 }
 
+/* BUTTONS */
 .btn{
 padding:12px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
 box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
+transition:all 0.25s ease;
 }
+
 .btn:hover{
 transform: translateY(-2px) scale(1.03);
 }
-.btn-danger{
+
+/* crno */
+.btn-dark{
+background:rgba(20,20,20,0.6);
+}
+
+/* bordo */
 .btn-danger{
 background: linear-gradient(
 135deg,
@@ -140,10 +149,20 @@ rgba(80,10,25,0.55)
 );
 }
 
+/* 🔥 GOLD + PULSE */
+@keyframes pulseGlow{
+0%{box-shadow:0 0 0 rgba(255,215,0,0.4);}
+50%{box-shadow:0 0 20px rgba(255,215,0,0.6);}
+100%{box-shadow:0 0 0 rgba(255,215,0,0.4);}
+}
+
 .btn-gold{
 background: linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
+animation: pulseGlow 2.5s infinite;
 }
+
+/* BIG CTA */
 .big-cta{
 margin-top:90px;
 padding:16px 30px;
@@ -155,7 +174,7 @@ font-size:14px;
 border:1px solid rgba(120,170,255,0.3);
 }
 
-/* ===== GRID ===== */
+/* GRID */
 .grid{
 display:grid;
 gap:20px;
@@ -180,7 +199,7 @@ transform:translateY(-5px);
 box-shadow:0 15px 40px rgba(0,0,0,0.8);
 }
 
-/* ===== WHATSAPP ===== */
+/* WHATSAPP */
 .wa-btn{
 position:fixed;
 bottom:35px;
@@ -203,20 +222,17 @@ transition:right 0.6s ease;
 .wa-btn.show{right:12px;}
 .wa-btn img{width:22px;}
 
-/* ===== SOCIAL SIDEBAR PREMIUM ===== */
+/* SOCIAL */
 .social-bar{
 position:fixed;
 right:-80px;
 bottom:110px;
-
 display:flex;
 flex-direction:column;
 gap:12px;
-
 z-index:9999;
-
 transition:right 0.6s ease, opacity 0.6s ease;
-opacity:0.5; /* 🔥 дискретно */
+opacity:0.5;
 }
 
 .social-bar.show{
@@ -224,78 +240,30 @@ right:12px;
 opacity:0.35;
 }
 
-/* dugmad */
 .social-bar a{
 display:flex;
 align-items:center;
 justify-content:center;
-
 width:44px;
 height:44px;
-
 border-radius:50%;
-
 background:rgba(20,20,20,0.55);
 backdrop-filter:blur(12px);
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.5),
-inset 0 1px 2px rgba(255,255,255,0.2);
-
+box-shadow:0 4px 12px rgba(0,0,0,0.5);
 transition:all 0.3s ease;
 }
 
-/* ikone */
 .social-bar img{
 width:20px;
 height:20px;
 filter:invert(1);
 opacity:0.85;
-transition:all 0.3s ease;
 }
 
-/* 🔥 GLOBAL HOVER */
-.social-bar:hover{
-opacity:1;
-}
+.social-bar:hover{opacity:1;}
 
-/* 🔥 INDIVIDUAL HOVER + POMERANJE */
 .social-bar a:hover{
 transform:translateX(-8px) scale(1.08);
-}
-
-/* 🔥 TIKTOK */
-.social-bar a:nth-child(1):hover{
-box-shadow:
-0 0 10px rgba(0,255,255,0.7),
-0 0 25px rgba(255,0,80,0.5);
-}
-
-/* 🔥 FACEBOOK */
-.social-bar a:nth-child(2):hover{
-box-shadow:
-0 0 10px rgba(24,119,242,0.7),
-0 0 25px rgba(24,119,242,0.4);
-}
-
-/* 🔥 INSTAGRAM */
-.social-bar a:nth-child(3):hover{
-box-shadow:
-0 0 10px rgba(225,48,108,0.7),
-0 0 25px rgba(225,48,108,0.5);
-}
-
-/* 🔥 YOUTUBE */
-.social-bar a:nth-child(4):hover{
-box-shadow:
-0 0 10px rgba(255,0,0,0.7),
-0 0 25px rgba(255,0,0,0.5);
-}
-
-/* dodatni efekat */
-.social-bar a:hover img{
-opacity:1;
-transform:scale(1.15);
 }
 
 footer{
@@ -380,28 +348,13 @@ color:#ccc;
 
 <footer>© 2025 Иксан • Снага правде</footer>
 
-<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
-
-<a href="https://www.tiktok.com/@snagapravde.rs?_r=1&_t=ZS-953nHGIgDYL" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
-</a>
-
-<a href="https://www.facebook.com/profile.php?id=61584449921604" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg">
-</a>
-
-<a href="https://www.instagram.com/snagapravde.rs?igsh=MXJxc2gwZG56aWp2Mw==" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
-</a>
-
-<a href="https://youtube.com/@iksan.snaga.pravde?si=nLtgpVDxK5f0x5KB" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
-</a>
-
+<a href="https://www.tiktok.com/@snagapravde.rs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="https://www.facebook.com/profile.php?id=61584449921604" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="https://www.instagram.com/snagapravde.rs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="https://youtube.com/@iksan.snaga.pravde" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
