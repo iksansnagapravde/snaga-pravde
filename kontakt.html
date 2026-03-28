@@ -96,7 +96,7 @@ display:block;
 padding:9px 10px;
 }
 
-/* BUTTONS */
+/* CTA BUTTONS (UJEDNAČENO) */
 .top-buttons{
 display:flex;
 justify-content:center;
@@ -105,22 +105,40 @@ margin-top:20px;
 }
 
 .btn{
-padding:10px 20px;
-border-radius:30px;
+padding:12px 20px;
+border-radius:40px;
 font-weight:700;
 font-size:13px;
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+transition:0.3s;
 }
 
-.btn-represent{background:#1c1c1c;color:#fff}
+.btn:hover{
+transform:translateY(-2px) scale(1.03);
+}
 
+/* tamno */
+.btn-represent{
+background:rgba(20,20,20,0.6);
+color:#fff;
+}
+
+/* crveno */
+.btn-danger{
+background: linear-gradient(
+135deg,
+rgba(140,20,40,0.65),
+rgba(80,10,25,0.55)
+);
+color:#fff;
+}
+
+/* zlatno */
 .btn-gold{
-background: linear-gradient(135deg, rgba(255,215,0,0.85), rgba(255,179,0,0.85));
+background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
-border-radius:25px;
-font-weight:bold;
 box-shadow:
 0 6px 0 #cc9a00,
 0 0 20px rgba(255,215,0,0.5);
@@ -164,60 +182,112 @@ cursor:pointer;
 font-weight:bold;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-
-.brand img{height:80px}
-
-.nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.top-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-}
-
+/* WHATSAPP (SLIDE) */
 .wa-btn{
-  position: fixed;
-  bottom: 90px;
-  right: 12px;
+position:fixed;
+bottom:35px;
+right:-180px;
 
-  display: flex;
-  align-items: center;
-  gap: 6px;
+display:flex;
+align-items:center;
+gap:8px;
 
-  padding: 5px 10px;      /* 🔥 МАЊЕ */
-  border-radius: 40px;
+padding:10px 16px;
+border-radius:40px;
 
-  font-size: 10px;        /* 🔥 МАЊЕ */
-  font-weight: 700;
+font-size:13px;
+font-weight:700;
 
-  background: linear-gradient(
-    135deg,
-    rgba(37,211,102,0.45),
-    rgba(60,140,180,0.35)
-  );
+background:linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
 
-  color:#fff;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.15);
 
-  backdrop-filter: blur(10px);
-  border:1px solid rgba(255,255,255,0.15);
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
 
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.4),
-    inset 0 1px 2px rgba(255,255,255,0.25);
-
-  z-index:9999;
+z-index:9999;
+transition:right 0.6s ease;
 }
 
-.wa-btn img{
-  width:18px;   /* 🔥 мања икона */
-  height:18px;
+.wa-btn.show{right:12px;}
+.wa-btn img{width:22px;}
+
+/* SOCIAL SIDEBAR */
+.social-bar{
+position:fixed;
+right:-80px;
+bottom:110px;
+
+display:flex;
+flex-direction:column;
+gap:12px;
+
+z-index:9999;
+
+transition:right 0.6s ease, opacity 0.6s ease;
+opacity:0.5;
 }
+
+.social-bar.show{
+right:12px;
+opacity:0.35;
+}
+
+.social-bar a{
+display:flex;
+align-items:center;
+justify-content:center;
+
+width:44px;
+height:44px;
+
+border-radius:50%;
+
+background:rgba(20,20,20,0.55);
+backdrop-filter:blur(12px);
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.5),
+inset 0 1px 2px rgba(255,255,255,0.2);
+
+transition:all 0.3s ease;
+}
+
+.social-bar img{
+width:20px;
+height:20px;
+filter:invert(1);
+opacity:0.85;
+transition:all 0.3s ease;
+}
+
+.social-bar:hover{opacity:1;}
+
+.social-bar a:hover{
+transform:translateX(-8px) scale(1.08);
+}
+
+.social-bar a:nth-child(1):hover{
+box-shadow:0 0 10px rgba(0,255,255,0.7),0 0 25px rgba(255,0,80,0.5);
+}
+
+.social-bar a:nth-child(2):hover{
+box-shadow:0 0 10px rgba(24,119,242,0.7),0 0 25px rgba(24,119,242,0.4);
+}
+
+.social-bar a:nth-child(3):hover{
+box-shadow:0 0 10px rgba(225,48,108,0.7),0 0 25px rgba(225,48,108,0.5);
+}
+
+.social-bar a:nth-child(4):hover{
+box-shadow:0 0 10px rgba(255,0,0,0.7),0 0 25px rgba(255,0,0,0.5);
+}
+
+.social-bar a:hover img{
+opacity:1;
+transform:scale(1.15);
+}
+
 </style>
 </head>
 
@@ -264,7 +334,7 @@ align-items:center;
 
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-represent">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-represent">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
@@ -297,6 +367,33 @@ align-items:center;
 
 </div>
 
+<!-- SOCIAL -->
+<div class="social-bar" id="socialBar">
+
+<a href="https://www.tiktok.com/@snagapravde.rs" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
+</a>
+
+<a href="https://www.facebook.com/profile.php?id=61584449921604" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg">
+</a>
+
+<a href="https://www.instagram.com/snagapravde.rs" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+</a>
+
+<a href="https://youtube.com/@iksan.snaga.pravde" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
+</a>
+
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20kontakt." class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
+</a>
+
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
@@ -306,12 +403,14 @@ if(!menu.contains(e.target)){
 menu.classList.remove('open');
 }
 });
-</script>
 
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
-</a>
+window.addEventListener("load", () => {
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+document.getElementById("socialBar").classList.add("show");
+},400);
+});
+</script>
 
 </body>
 </html>
