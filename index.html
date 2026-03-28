@@ -30,6 +30,11 @@ color:#fff;
 font-family:"Times New Roman",serif;
 }
 
+a{
+text-decoration:none;
+color:#fff; /* 🔥 FIX ljubičastih linkova */
+}
+
 /* ===== HEADER ===== */
 header{
 position:sticky;
@@ -128,6 +133,7 @@ padding:10px 16px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
+color:#fff;
 
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
@@ -145,7 +151,6 @@ background: linear-gradient(
 rgba(120,0,30,0.45),
 rgba(70,0,20,0.35)
 );
-color:#fff;
 backdrop-filter:blur(8px);
 border:1px solid rgba(255,120,140,0.15);
 }
@@ -154,6 +159,31 @@ border:1px solid rgba(255,120,140,0.15);
 .btn-gold{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
+}
+
+/* ===== BIG CTA ===== */
+.big-cta{
+display:inline-block;
+margin-top:40px;
+
+background:rgba(20,25,35,0.65);
+backdrop-filter:blur(12px);
+
+padding:16px 28px;
+border-radius:16px;
+
+font-weight:700;
+font-size:14px;
+text-transform:uppercase;
+
+border:1px solid rgba(120,170,255,0.3);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.7);
+transition:0.3s;
+}
+
+.big-cta:hover{
+transform:translateY(-2px);
 }
 
 /* ===== GRID ===== */
@@ -170,10 +200,18 @@ grid-template-columns:1fr 1fr;
 }
 }
 
+/* 🔥 CELO POLJE KLIKABILNO */
 .card{
+display:block;
 background:rgba(0,0,0,0.6);
 padding:20px;
 border-radius:15px;
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(0,0,0,0.8);
 }
 
 /* ===== WHATSAPP ===== */
@@ -246,11 +284,7 @@ color:#ccc;
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
 
-<!-- MENU WHATSAPP -->
-<a href="https://wa.me/381665857707"
-style="background:#25D366;color:#000;font-weight:700;">
-WhatsApp
-</a>
+<!-- ❌ UKLONJEN WHATSAPP IZ MENIJA -->
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
@@ -276,7 +310,6 @@ WhatsApp
 </div>
 </header>
 
-<!-- HERO -->
 <div class="hero">
 
 <h1>Заштита људских права и одговорност институција</h1>
@@ -286,79 +319,59 @@ WhatsApp
 </p>
 
 <div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+</div>
 
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-danger">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="doniraj.html" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
+<a href="uradili.html" class="big-cta">
+ШТА СМО УРАДИЛИ
 </a>
 
 </div>
 
-</div>
-
-<!-- GRID -->
 <div class="grid">
 
-<div class="card">
+<a href="ukidanjeizvrsitelja.html" class="card">
 <h3>Реформа система извршења</h3>
-<p>
-Предлог нормативног унапређења система извршења ради јачања контроле и заштите права грађана.
-</p>
-</div>
+<p>Предлог унапређења система.</p>
+</a>
 
-<div class="card">
+<a href="porekloimovine.html" class="card">
 <h3>Транспарентност јавних функција</h3>
-<p>
-Јачање механизама транспарентности и контроле имовине носилаца јавних функција.
-</p>
-</div>
+<p>Контрола имовине функционера.</p>
+</a>
 
-<div class="card">
+<a href="sudpravda.html" class="card">
 <h3>Независност судства</h3>
-<p>
-Унапређење приступа правди и институционалне независности.
-</p>
-</div>
+<p>Ефикасност правосуђа.</p>
+</a>
 
-<div class="card">
+<a href="radnicipreduzetnici.html" class="card">
 <h3>Правна сигурност привреде</h3>
-<p>
-Заштита права радника и предузетника.
-</p>
-</div>
+<p>Заштита радника и предузетника.</p>
+</a>
 
 </div>
 
 <footer>
-© 2025 Иксан • Снага правде — Сва права задржана.
+© 2025 Иксан • Снага правде
 </footer>
 
-<!-- FLOAT WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
 <script>
-
-/* meni */
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-/* whatsapp slide */
 window.addEventListener("load", () => {
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
 },300);
 });
-
 </script>
 
 </body>
