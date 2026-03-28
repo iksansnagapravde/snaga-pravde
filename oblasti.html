@@ -28,8 +28,6 @@ url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 line-height:1.7;
-
-/* da ništa ne udara u WhatsApp */
 padding-bottom:140px;
 }
 
@@ -112,9 +110,7 @@ padding:8px;
 display:flex;
 flex-direction:column;
 align-items:center;
-gap:12px;
-
-/* spušteno kao na naslovnoj */
+gap:14px;
 margin-top:50px;
 }
 
@@ -127,8 +123,15 @@ font-size:13px;
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
+transition:0.25s;
 }
 
+.btn:hover{
+transform:translateY(-2px) scale(1.03);
+}
+
+/* ISTE BOJE KAO INDEX */
 .btn-dark{
 background:rgba(20,20,20,0.6);
 }
@@ -136,10 +139,9 @@ background:rgba(20,20,20,0.6);
 .btn-danger{
 background: linear-gradient(
 135deg,
-rgba(120,0,30,0.5),
-rgba(70,0,20,0.4)
+rgba(140,20,40,0.65),
+rgba(80,10,25,0.55)
 );
-border:1px solid rgba(255,120,140,0.2);
 }
 
 .btn-primary{
@@ -151,12 +153,9 @@ color:#000;
 .main-grid{
 display:grid;
 gap:25px;
-
-/* 🔥 spušteno da ne bude u prvom ekranu */
 margin-top:90px;
 }
 
-/* kartice isti stil kao homepage */
 .card{
 background:rgba(0,0,0,0.6);
 backdrop-filter:blur(10px);
@@ -166,13 +165,11 @@ border-radius:18px;
 box-shadow:0 15px 40px rgba(0,0,0,0.8);
 }
 
-/* naslov lepši */
 .card h2{
 margin-bottom:10px;
 font-size:22px;
 }
 
-/* lista lepša */
 .card ul{
 margin-top:10px;
 padding-left:18px;
@@ -197,23 +194,23 @@ height:85px;
 
 }
 
-/* ===== WHATSAPP ===== */
+/* ===== WHATSAPP (ISTI KAO INDEX) ===== */
 .wa-btn{
-position: fixed;
-bottom: 30px;
-right: -180px;
+position:fixed;
+bottom:35px;
+right:-180px;
 
-display: flex;
-align-items: center;
-gap: 8px;
+display:flex;
+align-items:center;
+gap:8px;
 
-padding: 10px 16px;
-border-radius: 40px;
+padding:10px 16px;
+border-radius:40px;
 
-font-size: 13px;
-font-weight: 700;
+font-size:13px;
+font-weight:700;
 
-background: linear-gradient(
+background:linear-gradient(
 135deg,
 rgba(37,211,102,0.55),
 rgba(40,120,160,0.45)
@@ -221,7 +218,7 @@ rgba(40,120,160,0.45)
 
 color:#fff;
 
-backdrop-filter: blur(10px);
+backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.15);
 
 box-shadow:
@@ -229,7 +226,7 @@ box-shadow:
 inset 0 1px 2px rgba(255,255,255,0.25);
 
 z-index:9999;
-transition: right 0.6s ease;
+transition:right 0.6s ease;
 }
 
 .wa-btn.show{
