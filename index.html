@@ -192,10 +192,10 @@ transition:right 0.6s ease;
 .wa-btn.show{right:12px;}
 .wa-btn img{width:22px;}
 
-/* ===== SOCIAL BAR (DESNO → LEVO, VERTIKALNO) ===== */
+/* ===== SOCIAL SIDEBAR PREMIUM ===== */
 .social-bar{
 position:fixed;
-right:-80px; /* sakriveno */
+right:-80px;
 bottom:110px;
 
 display:flex;
@@ -203,38 +203,88 @@ flex-direction:column;
 gap:12px;
 
 z-index:9999;
+
 transition:right 0.6s ease, opacity 0.6s ease;
-opacity:0;
+opacity:0.35; /* 🔥 дискретно */
 }
 
 .social-bar.show{
-right:12px; /* izlazi */
-opacity:1;
+right:12px;
+opacity:0.35;
 }
 
+/* dugmad */
 .social-bar a{
 display:flex;
 align-items:center;
 justify-content:center;
+
 width:44px;
 height:44px;
+
 border-radius:50%;
-background:rgba(20,20,20,0.6);
+
+background:rgba(20,20,20,0.55);
 backdrop-filter:blur(12px);
-box-shadow:0 4px 12px rgba(0,0,0,0.5);
-transition:0.3s;
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.5),
+inset 0 1px 2px rgba(255,255,255,0.2);
+
+transition:all 0.3s ease;
 }
 
+/* ikone */
 .social-bar img{
 width:20px;
 height:20px;
 filter:invert(1);
 opacity:0.85;
+transition:all 0.3s ease;
 }
 
+/* 🔥 GLOBAL HOVER */
+.social-bar:hover{
+opacity:1;
+}
+
+/* 🔥 INDIVIDUAL HOVER + POMERANJE */
+.social-bar a:hover{
+transform:translateX(-8px) scale(1.08);
+}
+
+/* 🔥 TIKTOK */
+.social-bar a:nth-child(1):hover{
+box-shadow:
+0 0 10px rgba(0,255,255,0.7),
+0 0 25px rgba(255,0,80,0.5);
+}
+
+/* 🔥 FACEBOOK */
+.social-bar a:nth-child(2):hover{
+box-shadow:
+0 0 10px rgba(24,119,242,0.7),
+0 0 25px rgba(24,119,242,0.4);
+}
+
+/* 🔥 INSTAGRAM */
+.social-bar a:nth-child(3):hover{
+box-shadow:
+0 0 10px rgba(225,48,108,0.7),
+0 0 25px rgba(225,48,108,0.5);
+}
+
+/* 🔥 YOUTUBE */
+.social-bar a:nth-child(4):hover{
+box-shadow:
+0 0 10px rgba(255,0,0,0.7),
+0 0 25px rgba(255,0,0,0.5);
+}
+
+/* dodatni efekat */
 .social-bar a:hover img{
 opacity:1;
-transform:scale(1.1);
+transform:scale(1.15);
 }
 
 footer{
