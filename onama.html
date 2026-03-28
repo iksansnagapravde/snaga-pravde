@@ -46,7 +46,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:4px 0;
-gap:8px;
+gap:10px;
 }
 
 .brand img{
@@ -57,14 +57,16 @@ border-radius:10px;
 .nav{
 display:flex;
 align-items:center;
-gap:6px;
+gap:8px;
+flex-wrap:wrap;
 }
 
+/* NAV dugmad */
 .nav a,.menu-btn{
-padding:5px 7px;
+padding:6px 10px;
 border-radius:10px;
 font-weight:600;
-font-size:0.8rem;
+font-size:0.85rem;
 
 background:rgba(0,0,0,0.45);
 color:#fff;
@@ -76,7 +78,7 @@ box-shadow:
 
 .menu-btn{
 background:#fff;
-color:#000 !important;
+color:#000;
 font-weight:700;
 }
 
@@ -92,13 +94,19 @@ border-radius:12px;
 padding:6px;
 display:none;
 min-width:260px;
+box-shadow:0 10px 24px rgba(0,0,0,.6);
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
-padding:8px 10px;
+padding:9px 10px;
+border-radius:8px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06);
 }
 
 /* CTA */
@@ -107,10 +115,11 @@ display:flex;
 justify-content:center;
 gap:8px;
 margin-top:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-padding:10px 20px;
+padding:10px 18px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
@@ -124,36 +133,36 @@ transition:.2s;
 
 .btn-dark{
 background:rgba(20,20,20,0.6);
-color:#fff;
 }
 
-.btn-gold{
-background:linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
-}
-
-/* 🔴 CRVENO DUGME */
+/* 🔴 BORDEO GLASS (SREDJENO) */
 .btn-danger{
 background: linear-gradient(
 135deg,
-rgba(180, 20, 60, 0.55),
-rgba(120, 0, 40, 0.45)
+rgba(140, 20, 60, 0.45),
+rgba(90, 0, 40, 0.35)
 );
 
 color:#fff;
 
-backdrop-filter: blur(6px);
+backdrop-filter: blur(8px);
 
-border:1px solid rgba(255, 80, 120, 0.35);
+border:1px solid rgba(255,100,140,0.25);
 
 box-shadow:
-0 6px 0 rgba(90,0,30,0.9),
-0 15px 30px rgba(0,0,0,0.7),
-0 0 18px rgba(200, 30, 80, 0.4);
+0 5px 0 rgba(70,0,30,0.8),
+0 12px 25px rgba(0,0,0,0.6),
+0 0 12px rgba(180,40,90,0.25);
 }
 
 .btn-danger:hover{
-transform:translateY(-3px);
+transform:translateY(-2px);
+}
+
+/* GOLD */
+.btn-gold{
+background:linear-gradient(135deg,#ffd700,#ffb300);
+color:#000;
 }
 
 /* HERO */
@@ -198,7 +207,6 @@ border-radius:15px;
 .grid{grid-template-columns:1fr;}
 
 .nav{
-flex-wrap:wrap;
 justify-content:center;
 }
 
@@ -212,7 +220,7 @@ align-items:center;
 }
 }
 
-/* ✅ WHATSAPP — ISTO KAO CILJEVI */
+/* ✅ WHATSAPP (ISTO SVUDA) */
 .wa-btn{
 position: fixed;
 bottom: 90px;
@@ -282,6 +290,11 @@ height:18px;
 <a href="doniraj.html">Подржите наш рад</a>
 <a href="prikljucise.html">Прикључите се нашем раду</a>
 <a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
 
 </div>
@@ -301,33 +314,8 @@ height:18px;
 <div class="hero">
 <h1>О удружењу Иксан</h1>
 <p>
-Удружење грађана Иксан – Снага правде посвећено је јачању владавине права,
-заштити достојанства грађана и развоју праведног друштва.
+Удружење грађана Иксан – Снага правде посвећено је јачању владавине права.
 </p>
-</div>
-
-<div class="grid">
-
-<div class="card">
-<h3>Ко смо</h3>
-<p>Иксан окупља грађане ради заштите правде и сигурности.</p>
-</div>
-
-<div class="card">
-<h3>Назив „Иксан“</h3>
-<p>Симбол правде, истине и одговорности.</p>
-</div>
-
-<div class="card">
-<h3>Наша мисија</h3>
-<p>Реформа система и заштита права грађана.</p>
-</div>
-
-<div class="card">
-<h3>Разлог оснивања</h3>
-<p>Одговор на неправде у систему.</p>
-</div>
-
 </div>
 
 </div>
