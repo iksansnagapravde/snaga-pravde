@@ -156,13 +156,32 @@ gap:25px;
 margin-top:90px;
 }
 
+/* 🔥 SAMO OVO JE IZMENJENO */
 .card{
-background:rgba(0,0,0,0.6);
+background:linear-gradient(
+135deg,
+rgba(20,30,60,0.35),
+rgba(10,15,30,0.65)
+);
+
 backdrop-filter:blur(10px);
+
 padding:25px;
 border-radius:18px;
 
+border:1px solid rgba(120,150,255,0.15);
+
 box-shadow:0 15px 40px rgba(0,0,0,0.8);
+
+transition:.25s ease;
+}
+
+.card:hover{
+transform:translateY(-4px);
+
+border:1px solid rgba(120,150,255,0.25);
+
+box-shadow:0 20px 50px rgba(0,0,0,0.9);
 }
 
 .card h2{
@@ -194,7 +213,7 @@ height:85px;
 
 }
 
-/* ===== WHATSAPP (ISTI KAO INDEX) ===== */
+/* ===== WHATSAPP ===== */
 .wa-btn{
 position:fixed;
 bottom:35px;
@@ -282,14 +301,12 @@ width:22px;
 
 <div class="container">
 
-<!-- CTA -->
 <div class="cta-row">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- CONTENT -->
 <div class="main-grid">
 
 <div class="card">
@@ -320,7 +337,6 @@ width:22px;
 
 </div>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
