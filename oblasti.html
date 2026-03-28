@@ -161,8 +161,6 @@ box-shadow:
 0 0 12px rgba(255, 215, 0, 0.4);
 
 backdrop-filter: blur(3px);
--webkit-backdrop-filter: blur(3px);
-
 border:1px solid rgba(255,215,0,0.4);
 }
 
@@ -194,43 +192,53 @@ padding:25px;
 border-radius:15px;
 }
 
+/* ✅ WHATSAPP — ISTO KAO CILJEVI */
 .wa-btn{
-  position: fixed;
-  bottom: 90px;
-  right: 12px;
+position: fixed;
+bottom: 20px; /* 👉 исправљено (није више 90px) */
+right: 12px;
 
-  display: flex;
-  align-items: center;
-  gap: 6px;
+display: flex;
+align-items: center;
+gap: 6px;
 
-  padding: 5px 10px;
-  border-radius: 40px;
+padding: 6px 12px;
+border-radius: 40px;
 
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
+font-size: 11px;
+font-weight: 700;
+text-transform: uppercase;
 
-  background: linear-gradient(
-    135deg,
-    rgba(37,211,102,0.45),
-    rgba(60,140,180,0.35)
-  );
+background: linear-gradient(
+135deg,
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
+);
 
-  color:#fff;
+color:#fff;
 
-  backdrop-filter: blur(10px);
-  border:1px solid rgba(255,255,255,0.15);
+backdrop-filter: blur(10px);
+border:1px solid rgba(255,255,255,0.15);
 
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.4),
-    inset 0 1px 2px rgba(255,255,255,0.25);
+box-shadow:
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
 
-  z-index:9999;
+z-index:9999;
+transition:0.2s;
 }
 
 .wa-btn img{
-  width:18px;
-  height:18px;
+width:20px;
+height:20px;
+}
+
+.wa-btn:hover{
+transform:translateY(-2px);
+}
+
+.wa-btn:active{
+transform:translateY(2px);
 }
 
 </style>
@@ -313,6 +321,12 @@ border-radius:15px;
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
+});
 </script>
 
 <a href="https://wa.me/381665857707?text=Poštovani,%20želim%20da%20zakažem%20termin%20razgovora." 
@@ -320,7 +334,6 @@ menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
    target="_blank">
 
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-
   Пишите нам
 </a>
 
