@@ -16,7 +16,6 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-
 a{text-decoration:none;color:inherit}
 
 body{
@@ -26,6 +25,7 @@ radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman";
+padding-bottom:140px;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
@@ -46,10 +46,7 @@ justify-content:space-between;
 padding:4px 0;
 }
 
-.brand img{
-height:95px;
-border-radius:10px;
-}
+.brand img{height:95px;border-radius:10px;}
 
 /* NAV */
 .nav{
@@ -65,16 +62,10 @@ font-weight:600;
 font-size:0.85rem;
 background:rgba(0,0,0,0.45);
 color:#fff;
-box-shadow:
-0 5px 0 rgba(0,0,0,.7),
-0 15px 30px rgba(0,0,0,.8);
+box-shadow:0 5px 0 rgba(0,0,0,.7),0 15px 30px rgba(0,0,0,.8);
 }
 
-.menu-btn{
-background:#fff;
-color:#000;
-font-weight:700;
-}
+.menu-btn{background:#fff;color:#000;font-weight:700;}
 
 .menu{position:relative}
 
@@ -90,16 +81,12 @@ min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
+.dropdown a{display:block;padding:9px 10px;}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-}
-
-/* CTA BUTTONS (UJEDNAČENO) */
+/* CTA */
 .top-buttons{
 display:flex;
-flex-direction:column;   /* 🔥 КЉУЧНО */
+flex-direction:column;
 align-items:center;
 gap:14px;
 margin-top:25px;
@@ -110,183 +97,89 @@ padding:12px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
-box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
+box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
 transition:0.3s;
 }
 
-.btn:hover{
-transform:translateY(-2px) scale(1.03);
-}
+.btn:hover{transform:translateY(-2px) scale(1.03);}
 
-/* tamno */
-.btn-represent{
-background:rgba(20,20,20,0.6);
-color:#fff;
-}
+.btn-represent{background:rgba(20,20,20,0.6);}
 
-/* crveno */
 .btn-danger{
-background: linear-gradient(
-135deg,
-rgba(140,20,40,0.65),
-rgba(80,10,25,0.55)
-);
-color:#fff;
+background:linear-gradient(135deg,rgba(140,20,40,0.65),rgba(80,10,25,0.55));
 }
 
-/* zlatno */
 .btn-gold{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
-box-shadow:
-0 6px 0 #cc9a00,
-0 0 20px rgba(255,215,0,0.5);
+box-shadow:0 6px 0 #cc9a00,0 0 20px rgba(255,215,0,0.5);
 }
 
-/* GRID */
+/* CONTENT */
 .main-grid{
 display:grid;
 gap:30px;
 margin-top:30px;
 }
 
-@media(min-width:900px){
-.main-grid{grid-template-columns:1fr 1fr;}
-}
-
-.left,.right{
+.left{
 background:rgba(0,0,0,0.6);
 padding:25px;
 border-radius:15px;
+line-height:1.7;
 }
 
-/* FORM */
-form{display:grid;gap:12px;}
-
-input,textarea{
-padding:10px;
-border-radius:10px;
-border:1px solid rgba(255,255,255,.3);
-background:rgba(255,255,255,.1);
-color:#fff;
-}
-
-.submit{
-background:var(--gold);
-color:#000;
-border:none;
-padding:10px;
-border-radius:20px;
-cursor:pointer;
-font-weight:bold;
-}
-
-/* WHATSAPP (SLIDE) */
+/* WHATSAPP */
 .wa-btn{
 position:fixed;
-bottom:35px;
+bottom:20px;
 right:-180px;
-
 display:flex;
 align-items:center;
 gap:8px;
-
 padding:10px 16px;
 border-radius:40px;
-
 font-size:13px;
 font-weight:700;
-
 background:linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
-
 backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.15);
-
 box-shadow:0 4px 12px rgba(0,0,0,0.4);
-
 z-index:9999;
 transition:right 0.6s ease;
 }
-
 .wa-btn.show{right:12px;}
 .wa-btn img{width:22px;}
 
-/* SOCIAL SIDEBAR */
+/* SOCIAL */
 .social-bar{
 position:fixed;
 right:-80px;
 bottom:110px;
-
 display:flex;
 flex-direction:column;
 gap:12px;
-
 z-index:9999;
-
 transition:right 0.6s ease, opacity 0.6s ease;
 opacity:0.5;
 }
 
-.social-bar.show{
-right:12px;
-opacity:0.35;
-}
+.social-bar.show{right:12px;opacity:0.35;}
 
 .social-bar a{
-display:flex;
-align-items:center;
-justify-content:center;
-
-width:44px;
-height:44px;
-
-border-radius:50%;
-
+width:44px;height:44px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
 background:rgba(20,20,20,0.55);
 backdrop-filter:blur(12px);
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.5),
-inset 0 1px 2px rgba(255,255,255,0.2);
-
-transition:all 0.3s ease;
+box-shadow:0 4px 12px rgba(0,0,0,0.5);
 }
 
-.social-bar img{
-width:20px;
-height:20px;
-filter:invert(1);
-opacity:0.85;
-transition:all 0.3s ease;
-}
+.social-bar img{width:20px;filter:invert(1);}
 
-.social-bar:hover{opacity:1;}
-
-.social-bar a:hover{
-transform:translateX(-8px) scale(1.08);
-}
-
-.social-bar a:nth-child(1):hover{
-box-shadow:0 0 10px rgba(0,255,255,0.7),0 0 25px rgba(255,0,80,0.5);
-}
-
-.social-bar a:nth-child(2):hover{
-box-shadow:0 0 10px rgba(24,119,242,0.7),0 0 25px rgba(24,119,242,0.4);
-}
-
-.social-bar a:nth-child(3):hover{
-box-shadow:0 0 10px rgba(225,48,108,0.7),0 0 25px rgba(225,48,108,0.5);
-}
-
-.social-bar a:nth-child(4):hover{
-box-shadow:0 0 10px rgba(255,0,0,0.7),0 0 25px rgba(255,0,0,0.5);
-}
-
-.social-bar a:hover img{
-opacity:1;
-transform:scale(1.15);
+/* MOBILE */
+@media(max-width:768px){
+.brand img{height:80px}
+.nav{flex-wrap:wrap;justify-content:center;}
 }
 
 </style>
@@ -298,13 +191,10 @@ transform:scale(1.15);
 <div class="container head">
 
 <div class="brand">
-<a href="index.html">
-<img src="logo-white.png">
-</a>
+<a href="index.html"><img src="logo-white.png"></a>
 </div>
 
 <nav class="nav">
-
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
 
@@ -326,7 +216,6 @@ transform:scale(1.15);
 </div>
 
 </div>
-
 </nav>
 </div>
 </header>
@@ -342,25 +231,37 @@ transform:scale(1.15);
 <div class="main-grid">
 
 <div class="left">
+
 <h2>Контакт и подршка</h2>
-<p>Уколико имате питања, потребна вам је правна помоћ или желите да пријавите неправду, можете нас контактирати путем форме.</p>
-<p>Сви подаци се третирају поверљиво.</p>
-</div>
 
-<div class="right">
-<h2>Контакт форма</h2>
+<p>Контакт са удружењем се остварује <b>искључиво</b> на следеће начине:</p>
 
-<iframe name="hiddenFrame" style="display:none"></iframe>
+<p>📲 <b>WhatsApp</b> — дугме „Пишите нам“ у доњем десном углу.</p>
 
-<form action="https://script.google.com/macros/s/AKfycbzotaHwlvZA_BwZenxkbdMGjMInPC3Dlv32LNZtOX-IyYmp3N9o3er8TtDx6e1RSuxqqA/exec" method="GET" target="hiddenFrame">
+<p>📄 <b>Представка грађанина</b> — за све правне проблеме.</p>
 
-<input type="text" name="ime" placeholder="Име и презиме" required>
-<input type="email" name="email" placeholder="Е-пошта" required>
-<textarea name="poruka" placeholder="Порука" required></textarea>
+<hr style="margin:20px 0; opacity:0.2;">
 
-<button class="submit">Пошаљи</button>
+<p><b>За медије и институције:</b><br>користити WhatsApp.</p>
 
-</form>
+<p><b>За грађане, раднике и предузетнике:</b><br>обавезно представка.</p>
+
+<ul style="margin-top:10px;padding-left:18px;color:#ddd;">
+<li>преузмите формулар</li>
+<li>попуните податке</li>
+<li>опишите проблем</li>
+<li>потпишите</li>
+</ul>
+
+<p style="margin-top:15px;">Пошаљите на:</p>
+
+<p style="font-size:18px;">
+<b style="color:#ffd700;">
+<a href="mailto:iksan.snaga.pravde@gmail.com">
+iksan.snaga.pravde@gmail.com
+</a>
+</b>
+</p>
 
 </div>
 
@@ -370,27 +271,14 @@ transform:scale(1.15);
 
 <!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
-
-<a href="https://www.tiktok.com/@snagapravde.rs" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
-</a>
-
-<a href="https://www.facebook.com/profile.php?id=61584449921604" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg">
-</a>
-
-<a href="https://www.instagram.com/snagapravde.rs" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
-</a>
-
-<a href="https://youtube.com/@iksan.snaga.pravde" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
-</a>
-
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
 <!-- WHATSAPP -->
-<a href="https://wa.me/381665857707?text=Poštovani,%20želim%20kontakt." class="wa-btn" target="_blank">
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
@@ -398,12 +286,6 @@ transform:scale(1.15);
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
-
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
 
 window.addEventListener("load", () => {
 setTimeout(()=>{
