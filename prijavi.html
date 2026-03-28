@@ -153,8 +153,13 @@ font-size:28px;
 margin-bottom:10px;
 }
 
-.title p{color:#ddd;}
-.title b{color:#ffd700;}
+.title p{
+color:#ddd;
+}
+
+.title b{
+color:#ffd700;
+}
 
 /* GRID */
 .docs-grid{
@@ -174,22 +179,43 @@ background:linear-gradient(
 rgba(60,10,20,0.25),
 rgba(20,20,20,0.65)
 );
-
 padding:30px;
 border-radius:15px;
-
 border:1px solid rgba(140,20,40,0.25);
-
 box-shadow:
 0 10px 30px rgba(0,0,0,.6);
-
 transition:.25s ease;
+position:relative;
+overflow:visible;
 }
 
 .doc-card:hover{
 transform:translateY(-4px);
 border:1px solid rgba(180,40,60,0.4);
-box-shadow:0 15px 40px rgba(0,0,0,.75);
+box-shadow:
+0 15px 40px rgba(0,0,0,.75);
+}
+
+/* PULSIRANJE KARTICE */
+.doc-card.highlight{
+animation:focusPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes focusPulse{
+0%{
+box-shadow:0 10px 30px rgba(0,0,0,.6);
+transform:translateY(0);
+}
+50%{
+box-shadow:
+0 0 24px rgba(211,164,81,0.28),
+0 15px 40px rgba(0,0,0,.72);
+transform:translateY(-4px);
+}
+100%{
+box-shadow:0 10px 30px rgba(0,0,0,.6);
+transform:translateY(0);
+}
 }
 
 .doc-card h2{
@@ -221,9 +247,20 @@ box-shadow:
 0 15px 30px rgba(0,0,0,.6);
 
 position:relative;
+transition:.2s;
 }
 
-/* 🔥 STRELICA (PROFESIONALNA) */
+.doc-btn:hover{
+transform:translateY(-2px);
+}
+
+.doc-btn:active{
+transform:translateY(4px);
+box-shadow:
+0 2px 0 rgba(0,0,0,.6);
+}
+
+/* STRELICA IZNAD DUGMETA */
 .focus-arrow{
 position:absolute;
 left:50%;
@@ -235,9 +272,9 @@ animation:arrowPulse 2s ease-in-out infinite;
 }
 
 @keyframes arrowPulse{
-0%{transform:translate(-50%,0); opacity:0.3;}
+0%{transform:translate(-50%,0); opacity:0.35;}
 50%{transform:translate(-50%,-6px); opacity:1;}
-100%{transform:translate(-50%,0); opacity:0.3;}
+100%{transform:translate(-50%,0); opacity:0.35;}
 }
 
 /* WhatsApp */
@@ -357,7 +394,7 @@ text-align:center;
 
 <div class="docs-grid">
 
-<a href="OBRAZAC_PREDСТАВКА_GRADJAN.pdf" target="_blank" class="doc-card">
+<a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="doc-card">
 <h2>ПРЕДСТАВКА ГРАЂАНИНА</h2>
 <p>Образац који се попуњава и шаље.</p>
 
@@ -365,10 +402,9 @@ text-align:center;
 <span class="focus-arrow">↓</span>
 ОТВОРИ ДОКУМЕНТ
 </span>
-
 </a>
 
-<a href="PRAVILNIK_PREDСТАВКА.pdf" target="_blank" class="doc-card">
+<a href="PRAVILNIK_PREDSTAVKA.pdf" target="_blank" class="doc-card">
 <h2>ПРАВИЛНИК О ПОСТУПАЊУ</h2>
 <p>Правила поступања по представкама.</p>
 
@@ -376,7 +412,6 @@ text-align:center;
 <span class="focus-arrow">↓</span>
 ПРОЧИТАЈ
 </span>
-
 </a>
 
 </div>
@@ -391,6 +426,18 @@ window.addEventListener("load", () => {
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
 },300);
+
+setTimeout(()=>{
+document.querySelectorAll(".doc-card").forEach(card=>{
+card.classList.add("highlight");
+});
+},500);
+
+setTimeout(()=>{
+document.querySelectorAll(".doc-card").forEach(card=>{
+card.classList.remove("highlight");
+});
+},5000);
 });
 </script>
 
