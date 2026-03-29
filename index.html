@@ -401,6 +401,29 @@ color:#ccc;
 </div>
 
 <div class="grid">
+<h2 style="text-align:center;margin-top:60px;">Кључне иницијативе</h2>
+
+<div class="grid">
+
+<a href="egzistencijalni-minimum.html" class="card" style="border:1px solid rgba(255,215,0,0.35);">
+<h3>Закон о егзистенцијалном минимуму</h3>
+<p>Минимум 45.000 динара за достојанствен живот сваког грађанина.</p>
+</a>
+
+<a href="ukidanjeizvrsitelja.html" class="card">
+<h3>Стечај физичких лица</h3>
+<p>Излазак грађана из дужничког ропства и реформа извршења.</p>
+</a>
+
+<a href="zastita-konkurencije.html" class="card">
+<h3>Нови закон о заштити конкуренције</h3>
+<p>Сузбијање монопола и заштита тржишта.</p>
+</a>
+
+<a href="radnicipreduzetnici.html" class="card">
+<h3>Права радника и предузетника</h3>
+<p>Правна сигурност рада и пословања.</p>
+</a>
 
 <a href="ukidanjeizvrsitelja.html" class="card">
 <h3 style="margin-bottom:6px;">Реформа система извршења</h3>
@@ -449,7 +472,18 @@ document.getElementById("socialBar").classList.add("show");
 },400);
 });
 
-  /* 🔵 DODAJ OVDE */
+<script>
+const menu = document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
+
+window.addEventListener("load", () => {
+setTimeout(() => {
+document.querySelector(".wa-btn").classList.add("show");
+document.getElementById("socialBar").classList.add("show");
+}, 400);
+});
+
+/* 🔵 LIGHT EFFECT ZA KARTICE */
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
