@@ -1727,8 +1727,12 @@ grid: { color: 'rgba(255,255,255,0.05)' }
 }
 
 });
- /* SOCIAL CHART */
-new Chart(document.getElementById('socialChart'), {
+});
+
+/* SOCIAL CHART */
+const socialCtx = document.getElementById('socialChart');
+
+new Chart(socialCtx, {
 type: 'bar',
 data: {
 labels: ['Социјала'],
