@@ -77,7 +77,6 @@ min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
-
 .dropdown a{display:block;padding:8px}
 
 /* CTA */
@@ -110,11 +109,56 @@ color:#000;
 box-shadow:0 6px 0 #cc9a00,0 0 18px var(--gold-glow);
 }
 
-/* PLAVA dugmad */
+/* PLAVA */
 .btn-blue{
 background: rgba(43, 111, 255, 0.3);
 color:#fff;
 box-shadow:0 6px 0 #102c8f;
+}
+
+/* SEMAFOR */
+.semafor{
+max-width:420px;
+margin:30px auto;
+padding:25px;
+border-radius:16px;
+background:linear-gradient(135deg,rgba(120,20,30,0.6),rgba(20,20,20,0.7));
+text-align:center;
+}
+
+.value{font-size:20px;font-weight:bold;}
+.green{color:#2ecc71;}
+.red{color:#ff6b6b;}
+.percent{margin-top:10px;color:var(--gold);}
+
+/* GRAFIK */
+.chart{
+max-width:420px;
+margin:20px auto;
+}
+
+.bar{
+height:22px;
+border-radius:10px;
+margin:8px 0;
+}
+
+.bar.green{background:#2ecc71;width:32%;}
+.bar.red{background:#e74c3c;width:68%;}
+
+/* KOMORA */
+.komora{
+text-align:center;
+margin-top:20px;
+}
+
+.komora a{
+display:inline-block;
+padding:10px 18px;
+border-radius:25px;
+background:linear-gradient(135deg,#d3a451,#b88a3a);
+color:#000;
+font-weight:bold;
 }
 
 /* SEARCH */
@@ -129,46 +173,6 @@ color:#fff;
 margin-top:30px;
 }
 
-/* AUTOCOMPLETE */
-#suggestions{
-max-width:500px;
-margin:10px auto;
-text-align:left;
-}
-
-.suggestion{
-padding:10px;
-background:rgba(0,0,0,0.6);
-border:1px solid rgba(255,255,255,0.08);
-cursor:pointer;
-}
-
-.suggestion:hover{
-background:rgba(211,164,81,0.2);
-}
-
-/* QUICK */
-.quick-problems{
-margin-top:15px;
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-justify-content:center;
-}
-
-.quick-problems button{
-padding:8px 14px;
-border-radius:20px;
-border:none;
-background:rgba(20,20,20,0.6);
-color:#fff;
-cursor:pointer;
-}
-
-.quick-problems button:hover{
-background:rgba(211,164,81,0.3);
-}
-
 /* GRID */
 .main-grid{
 display:grid;
@@ -180,13 +184,11 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* CARD */
 .card{
 background:rgba(20,20,20,0.55);
 padding:25px;
 border-radius:16px;
 border:1px solid rgba(255,255,255,0.08);
-backdrop-filter:blur(12px);
 }
 
 /* ZAKONI */
@@ -268,31 +270,40 @@ transition:right 0.6s ease;
 
 <div class="container">
 
-<!-- CTA -->
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- PLAVA -->
 <div class="top-buttons" style="margin-top:10px">
 <a href="https://portal.sud.rs/sr/tok-predmeta" class="btn btn-blue">СУДСКИ ПРЕДМЕТИ У ТОКУ</a>
 <a href="https://tpji.portal.sud.rs/?lang=sr-cyr" class="btn btn-blue">ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ</a>
 </div>
 
-<div style="text-align:center;">
-<input type="text" id="searchInput" placeholder="🔍 Претражите закон...">
+<!-- SEMAFOR -->
+<div class="semafor">
+<div class="value">≈ 16.2 МИЛИОНА</div>
+<div class="value green">≈ 4.0 МИЛИОНА</div>
+<div class="value red">≈ 2.3 МИЛИОНА</div>
+<div class="percent">≈ 32% ЕФИКАСНОСТ</div>
 </div>
 
-<div id="suggestions"></div>
+<!-- GRAFIK -->
+<div class="chart">
+<div class="bar green"></div>
+<div class="bar red"></div>
+</div>
 
-<div class="quick-problems">
-<button onclick="quickSearch('банка кредит дуг')">💳 Банка</button>
-<button onclick="quickSearch('рад отказ')">👷 Рад</button>
-<button onclick="quickSearch('извршење дуг')">⚖️ Извршење</button>
-<button onclick="quickSearch('уговор превара')">📄 Уговор</button>
-<button onclick="quickSearch('породица развод')">👨‍👩‍👧 Породица</button>
+<!-- KOMORA -->
+<div class="komora">
+<a href="https://komoraizvrsitelja.rs/javni-izvrsitelji/" target="_blank">
+ПРОВЕРИ — КОМОРА ИЗВРШИТЕЉА
+</a>
+</div>
+
+<div style="text-align:center;">
+<input type="text" id="searchInput" placeholder="🔍 Претражите закон...">
 </div>
 
 <div class="main-grid">
@@ -334,55 +345,6 @@ transition:right 0.6s ease;
 
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
-
-const lawsList=[
-"Устав Републике Србије",
-"Европска конвенција",
-"Закон о раду",
-"Закон о извршењу",
-"Породични закон",
-"Закон о банкама"
-];
-
-const input=document.getElementById("searchInput");
-const suggestions=document.getElementById("suggestions");
-const laws=document.querySelectorAll(".law");
-
-input.addEventListener("keyup",function(e){
-
-let value=this.value.toLowerCase();
-suggestions.innerHTML="";
-
-/* FILTER */
-laws.forEach(l=>{
-l.style.display=l.innerText.toLowerCase().includes(value)?"block":"none";
-});
-
-/* AUTOCOMPLETE */
-lawsList.forEach(item=>{
-if(item.toLowerCase().includes(value) && value.length>1){
-let div=document.createElement("div");
-div.className="suggestion";
-div.innerText=item;
-div.onclick=()=>{
-input.value=item;
-suggestions.innerHTML="";
-};
-suggestions.appendChild(div);
-}
-});
-
-/* GOOGLE */
-if(e.key==="Enter"){
-window.open("https://www.google.com/search?q="+encodeURIComponent(value+" закон Србија"),"_blank");
-}
-
-});
-
-function quickSearch(text){
-input.value=text;
-input.dispatchEvent(new Event("keyup"));
-}
 
 window.addEventListener("load",()=>{
 setTimeout(()=>{
