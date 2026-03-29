@@ -862,7 +862,52 @@ footer{
 
   }
 
+/* ===== MOBILE TABLE FIX ===== */
 
+  .table-wrap table,
+  .table-wrap thead,
+  .table-wrap tbody,
+  .table-wrap th,
+  .table-wrap td,
+  .table-wrap tr{
+    display:block;
+    width:100%;
+  }
+
+  .table-wrap thead{
+    display:none;
+  }
+
+  .table-wrap tr{
+    margin-bottom:14px;
+    padding:14px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+  }
+
+  .table-wrap td{
+    text-align:left;
+    padding:10px 8px;
+    border:none;
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    position:relative;
+    padding-left:50%;
+  }
+
+  .table-wrap td:last-child{
+    border-bottom:none;
+  }
+
+  .table-wrap td::before{
+    content:attr(data-label);
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:45%;
+    font-weight:bold;
+    color:#ffd700;
+  }
 
   .page-hero{
 
