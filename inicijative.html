@@ -78,10 +78,7 @@ min-width:260px;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:8px;
-}
+.dropdown a{display:block;padding:8px}
 
 /* CTA */
 .top-buttons{
@@ -113,7 +110,7 @@ color:#000;
 box-shadow:0 6px 0 #cc9a00,0 0 18px var(--gold-glow);
 }
 
-/* 🔵 PLAVA dugmad (VRAĆENA) */
+/* PLAVA dugmad */
 .btn-blue{
 background: rgba(43, 111, 255, 0.3);
 color:#fff;
@@ -132,6 +129,46 @@ color:#fff;
 margin-top:30px;
 }
 
+/* AUTOCOMPLETE */
+#suggestions{
+max-width:500px;
+margin:10px auto;
+text-align:left;
+}
+
+.suggestion{
+padding:10px;
+background:rgba(0,0,0,0.6);
+border:1px solid rgba(255,255,255,0.08);
+cursor:pointer;
+}
+
+.suggestion:hover{
+background:rgba(211,164,81,0.2);
+}
+
+/* QUICK */
+.quick-problems{
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+}
+
+.quick-problems button{
+padding:8px 14px;
+border-radius:20px;
+border:none;
+background:rgba(20,20,20,0.6);
+color:#fff;
+cursor:pointer;
+}
+
+.quick-problems button:hover{
+background:rgba(211,164,81,0.3);
+}
+
 /* GRID */
 .main-grid{
 display:grid;
@@ -143,7 +180,7 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* KARTICE */
+/* CARD */
 .card{
 background:rgba(20,20,20,0.55);
 padding:25px;
@@ -161,6 +198,7 @@ border-radius:12px;
 background:rgba(0,0,0,0.45);
 border:1px solid rgba(255,255,255,0.08);
 transition:0.25s;
+display:block;
 }
 
 .law:hover{
@@ -208,7 +246,6 @@ transition:right 0.6s ease;
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -221,7 +258,6 @@ transition:right 0.6s ease;
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 <a href="uradili.html">Шта смо до сада урадили</a>
-
 </div>
 
 </div>
@@ -239,19 +275,24 @@ transition:right 0.6s ease;
 <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
-<!-- 🔵 VRAĆENA PLAVA dugmad -->
+<!-- PLAVA -->
 <div class="top-buttons" style="margin-top:10px">
-<a href="https://portal.sud.rs/sr/tok-predmeta" class="btn btn-blue">
-СУДСКИ ПРЕДМЕТИ У ТОКУ
-</a>
-
-<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" class="btn btn-blue">
-ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ
-</a>
+<a href="https://portal.sud.rs/sr/tok-predmeta" class="btn btn-blue">СУДСКИ ПРЕДМЕТИ У ТОКУ</a>
+<a href="https://tpji.portal.sud.rs/?lang=sr-cyr" class="btn btn-blue">ПРЕДМЕТИ ИЗВРШЕЊА У ТОКУ</a>
 </div>
 
 <div style="text-align:center;">
 <input type="text" id="searchInput" placeholder="🔍 Претражите закон...">
+</div>
+
+<div id="suggestions"></div>
+
+<div class="quick-problems">
+<button onclick="quickSearch('банка кредит дуг')">💳 Банка</button>
+<button onclick="quickSearch('рад отказ')">👷 Рад</button>
+<button onclick="quickSearch('извршење дуг')">⚖️ Извршење</button>
+<button onclick="quickSearch('уговор превара')">📄 Уговор</button>
+<button onclick="quickSearch('породица развод')">👨‍👩‍👧 Породица</button>
 </div>
 
 <div class="main-grid">
@@ -294,20 +335,54 @@ transition:right 0.6s ease;
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-const searchInput=document.getElementById("searchInput");
+const lawsList=[
+"Устав Републике Србије",
+"Европска конвенција",
+"Закон о раду",
+"Закон о извршењу",
+"Породични закон",
+"Закон о банкама"
+];
+
+const input=document.getElementById("searchInput");
+const suggestions=document.getElementById("suggestions");
 const laws=document.querySelectorAll(".law");
 
-searchInput.addEventListener("keyup",function(){
-let value=this.value.toLowerCase();
+input.addEventListener("keyup",function(e){
 
-laws.forEach(law=>{
-if(law.innerText.toLowerCase().includes(value)){
-law.style.display="block";
-}else{
-law.style.display="none";
+let value=this.value.toLowerCase();
+suggestions.innerHTML="";
+
+/* FILTER */
+laws.forEach(l=>{
+l.style.display=l.innerText.toLowerCase().includes(value)?"block":"none";
+});
+
+/* AUTOCOMPLETE */
+lawsList.forEach(item=>{
+if(item.toLowerCase().includes(value) && value.length>1){
+let div=document.createElement("div");
+div.className="suggestion";
+div.innerText=item;
+div.onclick=()=>{
+input.value=item;
+suggestions.innerHTML="";
+};
+suggestions.appendChild(div);
 }
 });
+
+/* GOOGLE */
+if(e.key==="Enter"){
+window.open("https://www.google.com/search?q="+encodeURIComponent(value+" закон Србија"),"_blank");
+}
+
 });
+
+function quickSearch(text){
+input.value=text;
+input.dispatchEvent(new Event("keyup"));
+}
 
 window.addEventListener("load",()=>{
 setTimeout(()=>{
