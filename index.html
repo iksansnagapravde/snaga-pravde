@@ -253,33 +253,116 @@ opacity:1;
 /* ARROWS */
 .card::before,
 .card::after{
-pointer-events:none;
+.grid{
+display:grid;
+gap:20px;
+padding:0 20px;
+margin-top:40px;
 }
 
-.card::before{
-content:"‹";
-position:absolute;
-top:50%;
-left:10px;
-transform:translateY(-50%);
-font-size:18px;
-color:rgba(140,170,255,0.6);
-opacity:0.7;
+@media(min-width:900px){
+.grid{grid-template-columns:1fr 1fr;}
 }
 
-.card::after{
-/* NOTE: gradient je već ::after pa koristimo overlay trik */
+.card{
+display:block;
+padding:22px;
+border-radius:18px;
+
+/* TAMNI GLASS (bez plavog) */
+background:linear-gradient(
+135deg,
+rgba(25,25,25,0.75),
+rgba(10,10,10,0.85)
+);
+
+backdrop-filter:blur(10px);
+
+/* suptilan border */
+border:1px solid rgba(255,255,255,0.08);
+
+/* dubina */
+box-shadow:
+0 10px 30px rgba(0,0,0,.6),
+inset 0 1px 1px rgba(255,255,255,0.05);
+
+transition:0.25s ease;
 }
 
-/* TEXT */
+/* hover */
+.card:hover{
+transform:translateY(-5px);
+
+/* zlatni akcenat */
+border:1px solid rgba(211,164,81,0.45);
+
+box-shadow:
+0 18px 40px rgba(0,0,0,.8),
+0 0 14px rgba(211,164,81,0.25);
+}
+
+/* naslov */
 .card h3{
 color:#ffffff;
-margin-bottom:6px;
+margin-bottom:8px;
+font-size:15px;
 }
 
+/* tekst */
 .card p{
-color:#cfd6ff;
+color:#dcdcdc;
+font-size:14px;
+line-height:1.6;
+opacity:0.9;
 }
+</style>
+
+
+<h2 style="text-align:center;margin-top:-10px;">Кључне иницијативе</h2>
+
+<div class="grid">
+
+<a href="egzistencijalni-minimum.html" class="card">
+<h3>Закон о егзистенцијалном минимуму</h3>
+<p>Минимум 45.000 динара за достојанствен живот сваког грађанина.</p>
+</a>
+
+<a href="ukidanjeizvrsitelja.html" class="card">
+<h3>Стечај физичких лица</h3>
+<p>Излазак грађана из дужничког ропства и реформа извршења.</p>
+</a>
+
+<a href="zastita-konkurencije.html" class="card">
+<h3>Нови закон о заштити конкуренције</h3>
+<p>Сузбијање монопола и заштита тржишта.</p>
+</a>
+
+<a href="radnicipreduzetnici.html" class="card">
+<h3>Права радника и предузетника</h3>
+<p>Правна сигурност рада и пословања.</p>
+</a>
+
+<a href="ukidanjeizvrsitelja.html" class="card">
+<h3>Реформа система извршења</h3>
+<p>Предлог нормативног унапређења система.</p>
+</a>
+
+<a href="porekloimovine.html" class="card">
+<h3>Транспарентност јавних функција</h3>
+<p>Контрола имовине функционера.</p>
+</a>
+
+<a href="sudpravda.html" class="card">
+<h3>Независност судства</h3>
+<p>Ефикасност правосуђа.</p>
+</a>
+
+<a href="radnicipreduzetnici.html" class="card">
+<h3>Правна сигурност привреде</h3>
+<p>Заштита радника и предузетника.</p>
+</a>
+
+</div>
 
 /* WHATSAPP */
 .wa-btn{
