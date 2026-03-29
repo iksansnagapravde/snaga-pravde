@@ -40,6 +40,7 @@ header{
   align-items:center;
   justify-content:space-between;
   padding:4px 0;
+  gap:10px;
 }
 
 .brand img{height:95px}
@@ -64,6 +65,7 @@ header{
   color:#000;
   border:none;
   cursor:pointer;
+  font-family:inherit;
 }
 
 .menu{position:relative}
@@ -77,10 +79,18 @@ header{
   padding:6px;
   display:none;
   min-width:260px;
+  box-shadow:0 10px 24px rgba(0,0,0,.6);
 }
 
 .menu.open .dropdown{display:block}
-.dropdown a{display:block;padding:8px}
+.dropdown a{
+  display:block;
+  padding:8px 10px;
+  border-radius:8px;
+}
+.dropdown a:hover{
+  background:rgba(255,255,255,.06);
+}
 
 /* CTA */
 .top-buttons{
@@ -164,6 +174,7 @@ header{
   color:#fff;
   cursor:pointer;
   transition:0.2s;
+  font-family:inherit;
 }
 
 .quick-problems button:hover{
@@ -226,7 +237,14 @@ header{
   font-size:18px;
 }
 
-.semabox.green b{color:#2ecc71;}
+.semabox small{
+  display:block;
+  margin-top:6px;
+  font-size:12px;
+  color:#d7d7d7;
+  opacity:0.85;
+}
+
 .semabox.red b{color:#ff6b6b;}
 
 .status{
@@ -282,6 +300,35 @@ canvas{
   color:#000;
   font-weight:bold;
   box-shadow:0 6px 0 rgba(0,0,0,.45);
+}
+
+/* DETAILS */
+.year-details{
+  margin-top:30px;
+  line-height:1.9;
+  color:#ddd;
+  font-size:14px;
+}
+
+.year-block{
+  padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,0.12);
+}
+
+.year-block:last-child{
+  border-bottom:none;
+}
+
+.year-block b.year-title{
+  display:block;
+  color:#fff;
+  font-size:18px;
+  margin-bottom:4px;
+}
+
+.year-block .final{
+  color:#ff6b6b;
+  font-weight:bold;
 }
 
 /* ZAKONI */
@@ -388,27 +435,30 @@ canvas{
   <!-- ANALITIKA -->
   <div class="card analytics-card">
 
-    <h2>Стање система 2017–2024</h2>
+    <h2>ПРЕДМЕТИ ИЗВРШЕЊА 2017–2024</h2>
 
     <div class="semafor-row">
       <div class="semabox">
-        <span>УКУПНО НОВОПРИМЉЕНО</span>
-        <b>≈ 5.24 МИЛИОНА</b>
-      </div>
-
-      <div class="semabox green">
-        <span>УКУПНО РЕШЕНО</span>
-        <b>≈ 4.06 МИЛИОНА</b>
+        <span>СТАРТ 2017</span>
+        <b>1.137.408</b>
+        <small>нерешених предмета</small>
       </div>
 
       <div class="semabox red">
-        <span>УКУПНО НЕРЕШЕНО 2024</span>
-        <b>≈ 2.321.418</b>
+        <span>КРАЈ 2024</span>
+        <b>2.321.418</b>
+        <small>нерешених предмета</small>
+      </div>
+
+      <div class="semabox">
+        <span>РАСТ ЗАОСТАТКА</span>
+        <b style="color:#ffd700">+1.184.010</b>
+        <small>предмета</small>
       </div>
     </div>
 
     <div class="status">
-      Уместо смањења, систем је у периоду 2017–2024 практично удвостручио заостатак.
+      Уместо смањења, систем је од 2017. до 2024. године практично удвостручио број нерешених предмета.
     </div>
 
     <div class="chart-wrap">
@@ -418,7 +468,7 @@ canvas{
     <div class="chart-legend">
       <span><b style="color:#3498db">—</b> Новопримљени предмети</span>
       <span><b style="color:#cccccc">—</b> Укупно у раду</span>
-      <span><b style="color:#2ecc71">—</b> Решени предмети</span>
+      <span><b style="color:#2ecc71">—</b> Окончани предмети</span>
       <span><b style="color:#ff3b3b">—</b> Нерешени предмети</span>
     </div>
 
@@ -426,6 +476,78 @@ canvas{
       <a href="https://komoraizvrsitelja.rs/javni-izvrsitelji/" target="_blank">
         ПРОВЕРИ — КОМОРА ИЗВРШИТЕЉА
       </a>
+    </div>
+
+    <div class="year-details">
+
+      <div class="year-block">
+        <b class="year-title">2017</b>
+        Пренети предмети: 1.137.408<br>
+        Новопримљени предмети: 460.272<br>
+        Окончани предмети: 360.837<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">1.236.843</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2018</b>
+        Пренети предмети: 1.236.843<br>
+        Новопримљени предмети: 505.678<br>
+        Окончани предмети: 418.273<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">1.324.242</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2019</b>
+        Пренети предмети: 1.324.242<br>
+        Новопримљени предмети: 821.632<br>
+        Окончани предмети: 541.574<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">1.604.300</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2020</b>
+        Пренети предмети: 1.604.300<br>
+        Новопримљени предмети: 697.460<br>
+        Окончани предмети: 468.693<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">1.833.067</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2021</b>
+        Пренети предмети: 1.833.067<br>
+        Новопримљени предмети: 770.697<br>
+        Окончани предмети: 548.439<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">2.055.600</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2022</b>
+        Пренети предмети: 2.055.600<br>
+        Новопримљени предмети: 634.294<br>
+        Окончани предмети: 590.264<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">2.099.630</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2023</b>
+        Пренети предмети: 2.099.630<br>
+        Новопримљени предмети: 590.905<br>
+        Окончани предмети: 547.809<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">2.142.726</span>
+      </div>
+
+      <div class="year-block">
+        <b class="year-title">2024</b>
+        Пренети предмети: 2.142.726<br>
+        Новопримљени предмети: 761.835<br>
+        Окончани предмети: 583.173<br>
+        Збир нерешених и пренетих предмета на крају године: <span class="final">2.321.418</span>
+      </div>
+
+      <div style="margin-top:20px;font-weight:bold;text-align:center;color:#ffd700">
+        Систем не смањује заостатак, већ га из године у годину увећава. Лежарину ових нерешених предмета, кроз камате и трошкове, на крају плаћају грађани.
+      </div>
+
     </div>
 
   </div>
@@ -463,14 +585,25 @@ canvas{
 
       <div class="laws">
         <a href="https://www.paragraf.rs/propisi/ustav_republike_srbije.html" target="_blank" class="law">УСТАВ РЕПУБЛИКЕ СРБИЈЕ</a>
-        <a href="https://www.echr.coe.int/documents/convention_srp.pdf" target="_blank" class="law">ЕВРОПСКА КОНВЕНЦИЈА</a>
+        <a href="https://www.echr.coe.int/documents/convention_srp.pdf" target="_blank" class="law">ЕВРОПСКА КОНВЕНЦИЈА О ЗАШТИТИ ЉУДСКИХ ПРАВА И ОСНОВНИХ СЛОБОДА</a>
         <a href="https://www.paragraf.rs/propisi/zakon_o_parnicnom_postupku.html" target="_blank" class="law">ЗАКОН О ПАРНИЧНОМ ПОСТУПКУ</a>
         <a href="https://www.paragraf.rs/propisi/zakonik_o_krivicnom_postupku.html" target="_blank" class="law">ЗАКОНИК О КРИВИЧНОМ ПОСТУПКУ</a>
         <a href="https://www.paragraf.rs/propisi/zakon_o_opstem_upravnom_postupku.html" target="_blank" class="law">ЗАКОН О ОПШТЕМ УПРАВНОМ ПОСТУПКУ</a>
-        <a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="law">ЗАКОН О ИЗВРШЕЊУ</a>
-        <a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" target="_blank" class="law">ЗАКОН О РАДУ</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_upravnim_sporovima.html" target="_blank" class="law">ЗАКОН О УПРАВНИМ СПОРОВИМА</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_obligacionim_odnosima.html" target="_blank" class="law">ЗАКОН О ОБЛИГАЦИОНИМ ОДНОСИМА</a>
+        <a href="https://www.paragraf.rs/propisi/porodicni_zakon.html" target="_blank" class="law">ПОРОДИЧНИ ЗАКОН</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_izvrsenju_i_obezbedjenju.html" target="_blank" class="law">ЗАКОН О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_privrednim_drustvima.html" target="_blank" class="law">ЗАКОН О ПРИВРЕДНИМ ДРУШТВИМА</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_stecaju.html" target="_blank" class="law">ЗАКОН О СТЕЧАЈУ</a>
         <a href="https://www.paragraf.rs/propisi/zakon_o_bankama.html" target="_blank" class="law">ЗАКОН О БАНКАМА</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_platnim_uslugama.html" target="_blank" class="law">ЗАКОН О ПЛАТНИМ УСЛУГАМА</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_poreskom_postupku_i_poreskoj_administraciji.html" target="_blank" class="law">ЗАКОН О ПОРЕСКОМ ПОСТУПКУ И ПОРЕСКОЈ АДМИНИСТРАЦИЈИ</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_porezu_na_dodatu_vrednost.html" target="_blank" class="law">ЗАКОН О ПОРЕЗУ НА ДОДАТУ ВРЕДНОСТ</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_radu.html" target="_blank" class="law">ЗАКОН О РАДУ</a>
         <a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_potrosaca.html" target="_blank" class="law">ЗАКОН О ЗАШТИТИ ПОТРОШАЧА</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_konkurencije.html" target="_blank" class="law">ЗАКОН О ЗАШТИТИ КОНКУРЕНЦИЈЕ</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_zastiti_podataka_o_licnosti.html" target="_blank" class="law">ЗАКОН О ЗАШТИТИ ПОДАТАКА О ЛИЧНОСТИ</a>
+        <a href="https://www.paragraf.rs/propisi/zakon_o_slobodnom_pristupu_informacijama_od_javnog_znacaja.html" target="_blank" class="law">ЗАКОН О СЛОБОДНОМ ПРИСТУПУ ИНФОРМАЦИЈАМА ОД ЈАВНОГ ЗНАЧАЈА</a>
       </div>
     </div>
 
@@ -494,7 +627,9 @@ const lawsList = [
   "Закон о раду",
   "Закон о извршењу",
   "Породични закон",
-  "Закон о банкама"
+  "Закон о банкама",
+  "Закон о парничном поступку",
+  "Закон о заштити потрошача"
 ];
 
 const input = document.getElementById("searchInput");
@@ -532,7 +667,6 @@ function quickSearch(text){
   input.dispatchEvent(new Event("keyup"));
 }
 
-/* CHART */
 const unresolved = [1236843,1324242,1604300,1833067,2055600,2099630,2142726,2321418];
 
 new Chart(document.getElementById('chart'), {
@@ -541,8 +675,8 @@ new Chart(document.getElementById('chart'), {
     labels: ['2017','2018','2019','2020','2021','2022','2023','2024'],
     datasets: [
       {
-        label:'Новопримљени',
-        data:[460272,505678,821632,697460,770972,634294,590905,761835],
+        label:'Новопримљени предмети',
+        data:[460272,505678,821632,697460,770697,634294,590905,761835],
         borderColor:'#3498db',
         borderWidth:2,
         tension:0.3,
@@ -551,7 +685,7 @@ new Chart(document.getElementById('chart'), {
       },
       {
         label:'Укупно у раду',
-        data:[1597680,1742521,2145874,2301760,2604039,2689894,2690535,2904561],
+        data:[1597680,1742521,2145874,2301760,2603764,2689894,2690535,2904561],
         borderColor:'#cccccc',
         borderDash:[6,6],
         borderWidth:2,
@@ -560,8 +694,8 @@ new Chart(document.getElementById('chart'), {
         pointBackgroundColor:'#cccccc'
       },
       {
-        label:'Решени',
-        data:[360837,418279,541574,468693,548439,590264,547809,583143],
+        label:'Окончани предмети',
+        data:[360837,418273,541574,468693,548439,590264,547809,583173],
         borderColor:'#2ecc71',
         borderWidth:2,
         tension:0.3,
@@ -569,7 +703,7 @@ new Chart(document.getElementById('chart'), {
         pointBackgroundColor:'#2ecc71'
       },
       {
-        label:'Нерешени',
+        label:'Нерешени предмети',
         data:unresolved,
         borderColor:'#ff3b3b',
         borderWidth:5,
@@ -602,7 +736,7 @@ new Chart(document.getElementById('chart'), {
           color:'#fff',
           callback:function(value){
             if(value >= 1000000) return (value/1000000).toFixed(1) + 'M';
-            return value;
+            return value.toLocaleString('sr-RS');
           }
         },
         grid:{color:'rgba(255,255,255,0.05)'}
@@ -622,7 +756,7 @@ new Chart(document.getElementById('chart'), {
 
         ctx.fillStyle = "#ffd700";
         ctx.font = "bold 13px Arial";
-        ctx.fillText("+1.18 МИЛИОНА", lastPoint.x - 20, lastPoint.y - 25);
+        ctx.fillText("+1.184.010", lastPoint.x - 10, lastPoint.y - 25);
         ctx.restore();
       }
     }
