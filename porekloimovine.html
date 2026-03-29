@@ -1,205 +1,337 @@
 <!DOCTYPE html>
+
 <html lang="sr-Cyrl-RS">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <title>Транспарентност — Иксан</title>
 
+
+
 <link rel="icon" href="logo-white.png">
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+
+
 <style>
+
 :root{
+
   --gold:#d3a451;
+
   --ink:#dcdcdc;
+
 }
 
-/* 🔴 GLOBAL FIX */
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
 
-html, body{
-  width:100%;
-  max-width:100%;
-  overflow-x:hidden;
-}
+
+*{box-sizing:border-box;margin:0;padding:0}
 
 a{text-decoration:none;color:inherit}
 
-/* 🔴 FIX GLAVNI PROBLEM */
+
+
 body{
+
   background:
+
   linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
+
   radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-  url('justice-bg.jpg') center 20% / cover no-repeat; /* uklonjen fixed */
+
+  url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+
   color:#fff;
+
   font-family:"Times New Roman", serif;
+
   padding-bottom:140px;
+
+  overflow-x:hidden;
+
 }
 
-/* 🔴 NIKO NE SME DA PROBIJE ŠIRINU */
-.container,
-.main-grid,
-.left,
-.right,
-.section-card,
-header,
-nav{
-  max-width:100%;
+
+
+.container{
+
+  max-width:1150px;
+
+  margin:auto;
+
+  padding:0 16px;
+
 }
 
-/* 🔴 TABLE FIX */
-.table-wrap{
-  overflow-x:auto;
-  width:100%;
-}
 
-/* 🔴 CHART FIX */
-.chart-wrap{
-  overflow:hidden;
-}
-
-canvas{
-  display:block;
-  max-width:100% !important;
-  height:auto !important;
-}
-
-/* OSTATAK TVOG CSS-a (NEPROMENJEN) */
 
 /* HEADER */
+
 header{
+
   position:sticky;
+
   top:0;
+
   z-index:100;
+
   backdrop-filter:blur(6px);
+
   border-bottom:1px solid rgba(255,255,255,.1);
+
 }
+
+
 
 .head{
+
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
+
   padding:4px 0;
+
   gap:10px;
+
   flex-wrap:wrap;
+
 }
+
+
 
 .brand img{
+
   height:90px;
+
   border-radius:10px;
+
 }
+
+
 
 /* NAV */
+
 .nav{
+
   display:flex;
+
   align-items:center;
+
   gap:6px;
+
   flex-wrap:wrap;
+
 }
+
+
 
 .nav a,.menu-btn{
+
   padding:6px 10px;
+
   border-radius:10px;
+
   font-weight:600;
+
   font-size:0.82rem;
+
   background:rgba(0,0,0,0.45);
+
   color:#fff;
+
   box-shadow:
+
   0 5px 0 rgba(0,0,0,.7),
+
   0 15px 30px rgba(0,0,0,.8);
+
 }
 
+
+
 .menu-btn{
+
   background:#fff;
+
   color:#000;
+
   font-weight:700;
+
   border:none;
+
   cursor:pointer;
+
 }
+
+
 
 .menu{position:relative}
 
+
+
 .dropdown{
+
   position:absolute;
+
   top:calc(100% + 8px);
+
   right:0;
+
   background:rgba(20,20,20,0.95);
+
   border-radius:12px;
+
   padding:6px;
+
   display:none;
+
   min-width:260px;
+
   box-shadow:0 12px 28px rgba(0,0,0,.55);
+
 }
+
+
 
 .menu.open .dropdown{display:block}
 
+
+
 .dropdown a{
+
   display:block;
+
   padding:9px 10px;
+
   border-radius:8px;
+
 }
+
+
 
 .dropdown a:hover{
+
   background:rgba(255,255,255,.06);
+
 }
+
+
 
 /* CTA */
+
 .top-buttons{
+
   display:flex;
+
   flex-direction:column;
+
   align-items:center;
+
   gap:14px;
+
   margin-top:20px;
+
 }
+
+
 
 .btn{
+
   padding:10px 20px;
+
   border-radius:30px;
+
   font-weight:700;
+
   font-size:13px;
+
   box-shadow:
+
   0 6px 0 rgba(0,0,0,.5),
+
   0 15px 30px rgba(0,0,0,.6);
+
   transition:0.25s;
+
 }
+
+
 
 .btn:hover{
+
   transform: translateY(-2px) scale(1.03);
+
 }
+
+
 
 .btn-dark{
+
   background:rgba(20,20,20,0.6);
+
   color:#fff;
+
 }
+
+
 
 .btn-danger{
+
   background: linear-gradient(
+
   135deg,
+
   rgba(140,20,40,0.65),
+
   rgba(80,10,25,0.55)
+
   );
+
   color:#fff;
+
 }
+
+
 
 .btn-gold{
+
   background:linear-gradient(135deg,#ffd700,#ffb300);
+
   color:#000;
+
 }
 
+
+
 /* HERO */
+
 .page-hero{
+
   margin-top:20px;
+
   padding:24px 18px;
+
   border-radius:16px;
+
   background:rgba(0,0,0,0.55);
+
   border:1px solid rgba(255,255,255,0.08);
+
   backdrop-filter:blur(10px);
+
   text-align:center;
+
   box-shadow:0 10px 30px rgba(0,0,0,.35);
+
 }
 
 
