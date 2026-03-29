@@ -400,10 +400,11 @@ color:#ccc;
 <a href="uradili.html" class="big-cta">ШТА СМО УРАДИЛИ</a>
 </div>
 
-<div class="grid">
 <h2 style="text-align:center;margin-top:60px;">Кључне иницијативе</h2>
 
 <div class="grid">
+...
+</div>
 
 <a href="egzistencijalni-minimum.html" class="card" style="border:1px solid rgba(255,215,0,0.35);">
 <h3>Закон о егзистенцијалном минимуму</h3>
@@ -483,11 +484,10 @@ document.getElementById("socialBar").classList.add("show");
 }, 400);
 });
 
-/* 🔵 LIGHT EFFECT ZA KARTICE */
+/* LIGHT EFFECT */
 const cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
-
 card.addEventListener("mousemove", e => {
 const rect = card.getBoundingClientRect();
 
@@ -497,7 +497,7 @@ const y = ((e.clientY - rect.top) / rect.height) * 100;
 card.style.setProperty("--x", x + "%");
 card.style.setProperty("--y", y + "%");
 });
-
+});
 </script>
 
 </body>
