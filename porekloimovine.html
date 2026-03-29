@@ -649,7 +649,13 @@ font-size:24px;
 
 </div>
 </div>
+<div class="chart-wrap">
+<canvas id="sectorChart"></canvas>
+</div>
 
+<div class="chart-wrap">
+<canvas id="corruptionChart"></canvas>
+</div>
 <div class="right">
 
 <h2>Шта мора да се промени</h2>
@@ -940,7 +946,64 @@ grid: { color: 'rgba(255,255,255,0.05)' }
 
 // ===== РЕФОРМА =====
 const reformCtx = document.getElementById('reformSavingsChart');
+  
+// ===== СЕКТОРИ =====
+const sectorCtx = document.getElementById('sectorChart');
 
+new Chart(sectorCtx, {
+type: 'pie',
+data: {
+labels: [
+'Инфраструктура',
+'Јавна предузећа',
+'Здравство',
+'Образовање',
+'Остало'
+],
+datasets: [{
+data: [35, 25, 15, 10, 15],
+backgroundColor: [
+'#ffb300',
+'#ff5c5c',
+'#3cc878',
+'#4da6ff',
+'#aaaaaa'
+]
+}]
+},
+options: {
+plugins: {
+legend: {
+labels: { color: '#fff' }
+}
+}
+}
+});
+
+
+// ===== ГУБИЦИ =====
+const corruptionCtx = document.getElementById('corruptionChart');
+
+new Chart(corruptionCtx, {
+type: 'doughnut',
+data: {
+labels: ['Реална вредност', 'Губитак'],
+datasets: [{
+data: [70, 30],
+backgroundColor: [
+'#3cc878',
+'#ff5c5c'
+]
+}]
+},
+options: {
+plugins: {
+legend: {
+labels: { color: '#fff' }
+}
+}
+}
+});
 new Chart(reformCtx, {
 type: 'bar',
 data: {
