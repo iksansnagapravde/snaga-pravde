@@ -122,9 +122,29 @@ header{
   box-shadow:0 6px 0 #cc9a00,0 0 18px var(--gold-glow);
 }
 .btn-blue{
-  background:rgba(43,111,255,0.3);
-  color:#fff;
-  box-shadow:0 6px 0 #102c8f;
+background: linear-gradient(
+135deg,
+rgba(30, 60, 130, 0.55),
+rgba(15, 30, 80, 0.55)
+);
+
+color:#e6e9f5;
+
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:
+0 6px 0 rgba(10,20,60,0.9),
+0 14px 28px rgba(0,0,0,0.8);
+
+transition:0.25s;
+}
+
+.btn-blue:hover{
+transform:translateY(-2px);
+box-shadow:
+0 8px 0 rgba(10,20,60,1),
+0 18px 32px rgba(0,0,0,0.9);
 }
 
 /* SEARCH */
