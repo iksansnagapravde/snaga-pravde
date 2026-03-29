@@ -904,6 +904,78 @@ grid: { color: 'rgba(255,255,255,0.05)' }
 }
 }
 });
+// ===== УКУПНА ПОТРОШЊА =====
+const budgetCtx = document.getElementById('budgetChart');
+
+new Chart(budgetCtx, {
+type: 'bar',
+data: {
+labels: ['Јавне набавке годишње'],
+datasets: [{
+label: 'Милијарде €',
+data: [9],
+backgroundColor: 'rgba(255, 179, 0, 0.7)',
+borderColor: '#ffb300',
+borderWidth: 2,
+borderRadius: 10
+}]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+plugins: { legend: { display: false } },
+scales: {
+y: {
+ticks: { color: '#fff' },
+grid: { color: 'rgba(255,255,255,0.05)' }
+},
+x: {
+ticks: { color: '#fff' },
+grid: { color: 'rgba(255,255,255,0.05)' }
+}
+}
+}
+});
+
+
+// ===== РЕФОРМА =====
+const reformCtx = document.getElementById('reformSavingsChart');
+
+new Chart(reformCtx, {
+type: 'bar',
+data: {
+labels: ['Сада', 'После контроле'],
+datasets: [{
+label: 'Милијарде €',
+data: [9, 7],
+backgroundColor: [
+'rgba(255, 92, 92, 0.75)',
+'rgba(60, 200, 120, 0.75)'
+],
+borderColor: [
+'#ff5c5c',
+'#3cc878'
+],
+borderWidth: 2,
+borderRadius: 10
+}]
+},
+options: {
+responsive: true,
+maintainAspectRatio: false,
+plugins: { legend: { display: false } },
+scales: {
+y: {
+ticks: { color: '#fff' },
+grid: { color: 'rgba(255,255,255,0.05)' }
+},
+x: {
+ticks: { color: '#fff' },
+grid: { color: 'rgba(255,255,255,0.05)' }
+}
+}
+}
+});  
 </script>
 
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
