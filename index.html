@@ -184,75 +184,7 @@ margin-top:60px;
 .grid{grid-template-columns:1fr 1fr;}
 }
 
-/* ===== CARD (ISTI KAO PREDSTAVKA) ===== */
-/* ===== PREMIUM GLASS BLUE CARDS (FINAL FULL) ===== */
 
-.card{
-display:block;
-position:relative;
-overflow:hidden;
-
-/* GLASS BLUE */
-background: linear-gradient(
-135deg,
-rgba(40, 70, 140, 0.18),
-rgba(15, 25, 60, 0.45)
-);
-
-backdrop-filter:blur(14px);
-
-/* SIZE */
-padding:24px;
-border-radius:18px;
-
-/* BORDER */
-border:1px solid rgba(120,160,255,0.18);
-
-/* DEPTH */
-box-shadow:
-0 10px 30px rgba(0,0,0,.6),
-inset 0 1px 1px rgba(255,255,255,0.08);
-
-/* ANIMATION */
-transition:.25s ease;
-}
-
-/* HOVER LIFT */
-.card:hover{
-transform:translateY(-6px);
-
-border:1px solid rgba(120,160,255,0.35);
-
-box-shadow:
-0 20px 50px rgba(0,0,0,.8),
-0 0 20px rgba(80,120,255,0.25);
-}
-
-/* LIGHT TRACKING (premium effect) */
-.card::after{
-content:"";
-position:absolute;
-inset:0;
-border-radius:18px;
-
-background: radial-gradient(
-circle at var(--x, 50%) var(--y, 50%),
-rgba(120,160,255,0.25),
-transparent 40%
-);
-
-opacity:0;
-transition:opacity 0.3s ease;
-pointer-events:none;
-}
-
-.card:hover::after{
-opacity:1;
-}
-
-/* ARROWS */
-.card::before,
-.card::after{
 .grid{
 display:grid;
 gap:20px;
@@ -269,7 +201,6 @@ display:block;
 padding:22px;
 border-radius:18px;
 
-/* TAMNI GLASS (bez plavog) */
 background:linear-gradient(
 135deg,
 rgba(25,25,25,0.75),
@@ -278,10 +209,8 @@ rgba(10,10,10,0.85)
 
 backdrop-filter:blur(10px);
 
-/* suptilan border */
 border:1px solid rgba(255,255,255,0.08);
 
-/* dubina */
 box-shadow:
 0 10px 30px rgba(0,0,0,.6),
 inset 0 1px 1px rgba(255,255,255,0.05);
@@ -289,11 +218,9 @@ inset 0 1px 1px rgba(255,255,255,0.05);
 transition:0.25s ease;
 }
 
-/* hover */
 .card:hover{
 transform:translateY(-5px);
 
-/* zlatni akcenat */
 border:1px solid rgba(211,164,81,0.45);
 
 box-shadow:
@@ -301,12 +228,19 @@ box-shadow:
 0 0 14px rgba(211,164,81,0.25);
 }
 
-/* naslov */
 .card h3{
 color:#ffffff;
 margin-bottom:8px;
 font-size:15px;
 }
+
+.card p{
+color:#dcdcdc;
+font-size:14px;
+line-height:1.6;
+opacity:0.9;
+}
+
 
 /* tekst */
 .card p{
