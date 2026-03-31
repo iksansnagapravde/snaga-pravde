@@ -12,29 +12,29 @@
 
 <style>
 
+/* ===== ORIGINAL STYLE (NE DIRAMO) ===== */
 :root{
---gold:#d3a451;
---red:#ff3b3b;
+  --gold:#d3a451;
 }
 
-*{margin:0;padding:0;box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:#fff}
 
 body{
 background:
-linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
+linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9)),
 url('justice-bg.jpg') center/cover fixed;
-color:#fff;
 font-family:"Times New Roman";
+color:#fff;
 padding-bottom:140px;
 }
 
-.container{max-width:1150px;margin:auto;padding:20px}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
 header{
 position:sticky;
 top:0;
-background:rgba(0,0,0,0.4);
 backdrop-filter:blur(6px);
 z-index:100;
 }
@@ -63,21 +63,11 @@ right:0;
 background:rgba(20,20,20,0.95);
 display:none;
 border-radius:12px;
-padding:6px;
 }
 .menu.open .dropdown{display:block}
 
 /* HERO */
 .hero{text-align:center;padding:50px 0}
-
-/* BTN */
-.btn{
-padding:12px 20px;
-border-radius:40px;
-background:linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
-font-weight:bold;
-}
 
 /* CARD */
 .card{
@@ -116,7 +106,7 @@ animation:pulse 1s infinite;
 100%{opacity:0.5}
 }
 
-canvas{width:100%!important;height:400px!important}
+canvas{width:100%!important;height:420px!important}
 
 /* WHATSAPP */
 .wa-btn{
@@ -126,10 +116,8 @@ right:12px;
 padding:12px 18px;
 border-radius:40px;
 background:#25D366;
-color:#fff;
 font-weight:bold;
 z-index:9999;
-text-decoration:none;
 }
 
 </style>
@@ -170,25 +158,17 @@ text-decoration:none;
 
 <section class="hero">
 <h1>РЕФОРМА СИСТЕМА ИЗВРШЕЊА</h1>
-<p>Систем који не решава предмете — већ их акумулира</p>
+<p>Систем не решава предмете — већ их акумулира</p>
 </section>
 
 <div class="alert">
 СИСТЕМ АКУМУЛИРА ПРЕДМЕТЕ
 </div>
 
-<!-- COUNTER -->
-<div class="card" style="text-align:center">
-<h2>НЕРЕШЕНИ ПРЕДМЕТИ</h2>
-<div id="caseCounter" style="font-size:32px;color:#ff3b3b">
-2,321,418
-</div>
-</div>
-
 <!-- ANALITIKA -->
 <div class="card">
 
-<h2>РАСТ НЕРЕШЕНИХ ПРЕДМЕТА</h2>
+<h2>НЕРЕШЕНИ ПРЕДМЕТИ 2017–2024</h2>
 
 <div class="semafor-row">
 <div class="semabox"><span>2017</span><b>1.137.408</b></div>
@@ -196,7 +176,7 @@ text-decoration:none;
 <div class="semabox"><span>РАСТ</span><b>+1.184.010</b></div>
 </div>
 
-<canvas id="mainChart"></canvas>
+<canvas id="chart"></canvas>
 
 </div>
 
@@ -205,25 +185,34 @@ text-decoration:none;
 
 <h2>ДЕТАЉНА АНАЛИЗА</h2>
 
-<p>Систем из године у годину повећава број нерешених предмета.</p>
-
-<p style="color:#ffd700">
+<p>
+Систем из године у годину повећава број нерешених предмета.
 Лежарину ових предмета плаћају грађани кроз камате и трошкове.
 </p>
 
 </div>
 
-<!-- USTAV -->
+<!-- OBRAZLOZENJE (IZ ZAKONA) -->
 <div class="card">
 
-<h2>ПРОТИВУСТАВНОСТ</h2>
+<h2>СИСТЕМСКИ ПРОБЛЕМ</h2>
 
-<ul>
-<li>грађани нису стварно обавештени</li>
-<li>поступак се води без учешћа</li>
-<li>жалба не одлаже</li>
-<li>имовина се одузима</li>
-</ul>
+<p>
+Анализа праксе показује да протек времена између настанка обавезе и
+предузимања извршних радњи има одлучујући утицај на висину дуга.
+</p>
+
+<p>
+У том периоду долази до континуираног обрачуна камата и трошкова.
+</p>
+
+<p>
+Грађани се са обавезама суочавају тек када су оне вишеструко увећане.
+</p>
+
+<p style="color:#ff3b3b;font-weight:bold">
+Ово доводи до губитка имовине, заплене прихода и трајне презадужености.
+</p>
 
 </div>
 
@@ -233,11 +222,7 @@ text-decoration:none;
 <h2>ЗАКОН О СТЕЧАЈУ ФИЗИЧКИХ ЛИЦА</h2>
 
 <p>
-Систем производи презадуженост.
-</p>
-
-<p>
-Грађани се са дугом суочавају тек када је вишеструко увећан.
+Неопходно је увођење механизма који омогућава коначно решење презадужености.
 </p>
 
 <p style="color:#ffd700;font-weight:bold">
@@ -251,7 +236,6 @@ text-decoration:none;
 <a href="https://wa.me/381665857707" class="wa-btn">
 Пишите нам
 </a>
-
 <script>
 
 /* MENU */
@@ -259,16 +243,8 @@ document.querySelector(".menu-btn").onclick = ()=>{
 document.getElementById("menu").classList.toggle("open");
 };
 
-/* COUNTER */
-let cases = 2321418;
-setInterval(()=>{
-cases += Math.floor(Math.random()*3);
-document.getElementById("caseCounter").innerText =
-cases.toLocaleString('sr-RS');
-},1500);
-
 /* GRAFIKON */
-new Chart(document.getElementById('mainChart'), {
+new Chart(document.getElementById('chart'), {
 type:'line',
 data:{
 labels:['2017','2018','2019','2020','2021','2022','2023','2024'],
@@ -284,4 +260,3 @@ borderWidth:4
 
 </body>
 </html>
-
