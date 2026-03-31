@@ -2,17 +2,19 @@
 <html lang="sr-Cyrl-RS">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Контакт — Иксан</title>
+<title>Иксан</title>
 
 <link rel="icon" href="logo-white.png">
 
 <style>
 
 :root{
+--deepBlue:#1f1f1f;
 --gold:#d3a451;
+--ink:#dcdcdc;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -32,11 +34,11 @@ radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 
 color:#fff;
-font-family:"Times New Roman";
+font-family:"Times New Roman",serif;
 padding-bottom:140px;
 }
 
-/* MOBILE — ИСТО КАО ОСТАЛЕ СТРАНЕ */
+/* MOBILE — ИСТО КАО КОД ТЕБЕ */
 @media(max-width:768px){
 body{
 background:
@@ -66,12 +68,12 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:6px 0;
-flex-wrap:wrap;
 gap:10px;
+flex-wrap:wrap;
 }
 
 .brand img{
-height:90px;
+height:100px;
 border-radius:10px;
 }
 
@@ -86,10 +88,10 @@ flex-wrap:wrap;
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
-font-weight:600;
-font-size:0.85rem;
 background:rgba(0,0,0,0.45);
 color:#fff;
+font-weight:600;
+font-size:0.85rem;
 
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
@@ -115,6 +117,7 @@ border-radius:12px;
 padding:6px;
 display:none;
 min-width:260px;
+box-shadow:0 10px 24px rgba(0,0,0,.6);
 }
 
 .menu.open .dropdown{display:block}
@@ -129,13 +132,13 @@ border-radius:8px;
 background:rgba(255,255,255,.06);
 }
 
-/* CTA BUTTONS */
-.top-buttons{
+/* CTA */
+.cta-row{
 display:flex;
 flex-direction:column;
 align-items:center;
 gap:14px;
-margin-top:40px;
+margin-top:60px;
 }
 
 .btn{
@@ -167,7 +170,7 @@ rgba(80,10,25,0.55)
 );
 }
 
-.btn-gold{
+.btn-primary{
 background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
 }
@@ -235,22 +238,14 @@ height:22px;
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="menu">
+<div class="menu" id="mainMenu">
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-<a href="uradili.html">Шта смо до сада урадили</a>
+<a href="#">о Нама</a>
+<a href="#">Области деловања</a>
+<a href="#">Стратешки циљеви</a>
+<a href="#">Иницијативе</a>
 </div>
 
 </div>
@@ -261,16 +256,16 @@ height:22px;
 
 <div class="container">
 
-<div class="top-buttons">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+<div class="cta-row">
+<a href="#" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="#" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="#" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
 </div>
 
 </div>
 
 <script>
-const menu=document.getElementById('menu');
+const menu=document.getElementById('mainMenu');
 
 menu.querySelector('.menu-btn').onclick=()=>{
 menu.classList.toggle('open');
