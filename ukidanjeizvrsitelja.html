@@ -8,244 +8,118 @@
 <title>Реформа система извршења — Иксан</title>
 
 <link rel="icon" href="logo-white.png">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
 
+/* ===== ORIGINAL STYLE + NADOGRADNJA ===== */
 :root{
---gold:#d3a451;
---ink:#dcdcdc;
+  --gold:#d3a451;
+  --gold-glow:rgba(211,164,81,0.6);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-a{text-decoration:none;color:#fff}
+a{text-decoration:none;color:inherit}
 
-/* BODY */
 body{
-background:
-linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center 20% / cover no-repeat fixed;
-font-family:"Times New Roman";
-color:#fff;
-padding-bottom:140px;
+  background:
+  linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9)),
+  url('justice-bg.jpg') center/cover fixed;
+  color:#fff;
+  font-family:"Times New Roman";
+  padding-bottom:140px;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
 header{
-position:sticky;
-top:0;
-z-index:100;
-backdrop-filter:blur(6px);
-border-bottom:1px solid rgba(255,255,255,.1);
+  position:sticky;
+  top:0;
+  z-index:100;
+  backdrop-filter:blur(6px);
 }
 
 .head{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:4px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.brand img{
-height:95px;
-border-radius:10px;
-}
+.brand img{height:95px}
 
 /* NAV */
-.nav{
-display:flex;
-gap:6px;
-}
-
+.nav{display:flex;gap:6px}
 .nav a,.menu-btn{
-padding:6px 10px;
-border-radius:10px;
-font-weight:600;
-font-size:0.85rem;
-
-background:rgba(0,0,0,0.45);
-
-box-shadow:
-0 6px 0 rgba(0,0,0,.8),
-0 18px 35px rgba(0,0,0,.9);
-
-transition:.15s;
-}
-
-.nav a:hover,.menu-btn:hover{
-transform:translateY(-2px);
-}
-
-.menu-btn{
-background:#fff;
-color:#000;
-font-weight:700;
+  padding:6px 10px;
+  border-radius:10px;
+  background:rgba(0,0,0,0.45);
 }
 
 .menu{position:relative}
-
 .dropdown{
-position:absolute;
-top:calc(100% + 8px);
-right:0;
-background:rgba(20,20,20,.97);
-border-radius:12px;
-padding:6px;
-display:none;
-min-width:260px;
+  position:absolute;
+  top:100%;
+  right:0;
+  background:rgba(20,20,20,0.95);
+  display:none;
+  border-radius:12px;
 }
-
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:9px 10px;
-}
-
 /* HERO */
-.hero{
-padding:50px 0;
-text-align:center;
-animation:fadeIn 1s ease;
-}
+.hero{text-align:center;padding:50px 0}
 
-h1{
-font-size:32px;
-}
-
-.sub{
-color:var(--ink);
-max-width:700px;
-margin:10px auto;
-}
-
-/* ===== CTA FIX ===== */
-.cta-row{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:14px;
-margin-top:25px;
-}
-
+/* BUTTON */
 .btn{
-padding:10px 20px;
-border-radius:40px;
-font-weight:700;
-font-size:13px;
-text-transform:uppercase;
-
-box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
-
-transition:.25s;
-}
-
-.btn:hover{
-transform:translateY(-2px) scale(1.03);
-}
-
-.btn-dark{
-background:rgba(20,20,20,0.6);
-}
-
-.btn-danger{
-background: linear-gradient(
-135deg,
-rgba(140,20,40,0.65),
-rgba(80,10,25,0.55)
-);
-}
-
-.btn-primary{
-background:linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
+  padding:12px 20px;
+  border-radius:40px;
+  background:linear-gradient(135deg,#ffd700,#ffb300);
+  color:#000;
+  font-weight:bold;
 }
 
 /* CARD */
 .card{
-margin:40px auto;
-max-width:900px;
-background:rgba(20,20,20,0.6);
-padding:30px;
-border-radius:20px;
-box-shadow:0 20px 50px rgba(0,0,0,.7);
-animation:fadeUp .8s ease;
+  background:rgba(20,20,20,0.6);
+  padding:25px;
+  border-radius:16px;
+  margin-top:30px;
 }
 
-.card p{color:#ddd;margin-bottom:12px}
+/* SEMAFOR */
+.semafor-row{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+.semabox{
+  flex:1;
+  min-width:180px;
+  text-align:center;
+  background:rgba(0,0,0,0.4);
+  padding:15px;
+}
+.semabox.red b{color:#ff3b3b}
 
-/* ANIM */
-@keyframes fadeUp{
-from{opacity:0;transform:translateY(40px)}
-to{opacity:1;transform:translateY(0)}
+/* ALERT */
+.alert{
+  text-align:center;
+  color:#ff3b3b;
+  font-weight:bold;
+  font-size:22px;
+  animation:pulse 1s infinite;
+}
+@keyframes pulse{
+0%{opacity:0.5}
+50%{opacity:1}
+100%{opacity:0.5}
 }
 
-@keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-.brand img{height:80px}
-
-.nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-}
-
-/* ===== WHATSAPP SLIDE ===== */
-.wa-btn{
-position:fixed;
-bottom:35px;
-right:-180px;
-
-display:flex;
-align-items:center;
-gap:8px;
-
-padding:10px 16px;
-border-radius:40px;
-
-font-size:13px;
-font-weight:700;
-
-background:linear-gradient(
-135deg,
-rgba(37,211,102,0.55),
-rgba(40,120,160,0.45)
-);
-
-color:#fff;
-
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.15);
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 1px 2px rgba(255,255,255,0.25);
-
-z-index:9999;
-transition:right 0.6s ease;
-}
-
-.wa-btn.show{
-right:12px;
-}
-
-.wa-btn img{
-width:22px;
-height:22px;
-}
+canvas{width:100%!important;height:400px!important}
 
 </style>
+
 </head>
 
 <body>
@@ -253,11 +127,9 @@ height:22px;
 <header>
 <div class="container head">
 
-<div class="brand">
-<a href="index.html">
+<a href="index.html" class="brand">
 <img src="logo-white.png">
 </a>
-</div>
 
 <nav class="nav">
 
@@ -268,17 +140,9 @@ height:22px;
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="inicijative.html">Захтеви</a>
+<a href="ukidanjeizvrsitelja.html">Извршење</a>
+<a href="prijavi.html">Представка</a>
 </div>
 
 </div>
@@ -287,57 +151,114 @@ height:22px;
 </div>
 </header>
 
-<main>
+<div class="container">
 
 <section class="hero">
+<h1>РЕФОРМА СИСТЕМА ИЗВРШЕЊА</h1>
+<p>Систем који производи дуг мора бити заустављен</p>
 
-<h1>Реформа система извршења</h1>
-
-<p class="sub">
-Покренута иницијатива за увођење правичног и транспарентног система.
-</p>
-
-<div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНА</a>
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-</div>
-
+<a href="prijavi.html" class="btn">ПРИЈАВИ ПРОБЛЕМ</a>
 </section>
 
-<div class="card">
-
-<h3>Потреба за реформом система извршења</h3>
-
-<p>Постојећи систем омогућава злоупотребе.</p>
-<p>Суд не улази у суштину предмета.</p>
-<p>Јавни извршитељи делују као приватници.</p>
-<p>Грађани губе право на правни лек.</p>
-<p>Дугови расту и више од 10 пута.</p>
-
-<h3>Закон о инсолвентности физичких лица</h3>
-
-<p>Неопходно је увођење закона за нови почетак грађана.</p>
-
+<div class="alert">
+СИСТЕМ ЈЕ ПРОТИВУСТАВАН
 </div>
 
-</main>
+<!-- LIVE -->
+<div class="card" style="text-align:center">
+<h2>ДУГ У РАСТУ</h2>
+<div id="debtCounter" style="font-size:30px;color:#ff3b3b">2,321,418</div>
+</div>
 
+<!-- ANALITIKA -->
+<div class="card">
+<h2>ЕКСПЛОЗИЈА ДУГА</h2>
+
+<div class="semafor-row">
+<div class="semabox"><span>2017</span><b>1.137.408</b></div>
+<div class="semabox red"><span>2024</span><b>2.321.418</b></div>
+<div class="semabox"><span>РАСТ</span><b>+1.184.010</b></div>
+</div>
+
+<canvas id="mainChart"></canvas>
+</div>
+
+<!-- USTAV -->
+<div class="card">
+<h2>УСТАВ VS ПРАКСА</h2>
+<ul>
+<li>Правично суђење — угрожено</li>
+<li>Право на имовину — угрожено</li>
+<li>Жалба — не одлаже</li>
+<li>Подела власти — нарушена</li>
+</ul>
+
+<canvas id="constitutionChart"></canvas>
+</div>
+
+<!-- ZAKON -->
+<div class="card">
+<h2>ЗАКОН О СТЕЧАЈУ ФИЗИЧКИХ ЛИЦА</h2>
+
+<p>
+Постојећи систем не решава презадуженост, већ је продубљује.
+</p>
+
+<p>
+Протек времена доводи до раста камата и трошкова, док грађани често нису ни обавештени.
+</p>
+
+<p>
+Због тога је неопходно увођење стечаја физичких лица.
+</p>
+
+<p style="color:#ffd700;font-weight:bold">
+ЗАКОН МОРА БИТИ УСВОЈЕН
+</p>
+
+</div>
 <script>
-const menu=document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-window.addEventListener("load", () => {
-setTimeout(()=>{
-document.querySelector(".wa-btn").classList.add("show");
-},300);
+/* MENU */
+document.querySelector(".menu-btn").onclick = ()=>{
+document.getElementById("menu").classList.toggle("open");
+};
+
+/* LIVE COUNTER */
+let debt = 2321418;
+setInterval(()=>{
+debt += Math.floor(Math.random()*5);
+document.getElementById("debtCounter").innerText = debt.toLocaleString('sr-RS');
+},1000);
+
+/* GRAFIKON */
+new Chart(document.getElementById('mainChart'), {
+type:'line',
+data:{
+labels:['2017','2018','2019','2020','2021','2022','2023','2024'],
+datasets:[{
+data:[1236843,1324242,1604300,1833067,2055600,2099630,2142726,2321418],
+borderColor:'#ff3b3b',
+borderWidth:4
+}]
+}
 });
-</script>
 
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
-</a>
+/* USTAV */
+new Chart(document.getElementById('constitutionChart'), {
+type:'bar',
+data:{
+labels:['Суђење','Имовина','Жалба','Власт'],
+datasets:[
+{data:[100,100,100,100],backgroundColor:'#2ecc71'},
+{data:[30,20,15,35],backgroundColor:'#ff3b3b'}
+]
+}
+});
+
+</script>
 
 </body>
 </html>
+
+</div>
