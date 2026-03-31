@@ -15,7 +15,6 @@
 /* ORIGINAL STYLE */
 :root{
   --gold:#d3a451;
-  --gold-glow:rgba(211,164,81,0.6);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -49,34 +48,76 @@ header{
 
 .brand img{height:95px}
 
-/* NAV */
-.nav{display:flex;gap:6px}
+/* ===================== */
+/* 🔥 FIX NAV */
+/* ===================== */
 
-.nav a,.menu-btn{
-  padding:6px 10px;
-  border-radius:10px;
+.nav{
+  display:flex;
+  gap:6px;
+}
+
+.nav a{
+  padding:6px 12px;
+  border-radius:12px;
   background:rgba(0,0,0,0.45);
 }
 
-.menu{position:relative}
+.menu{
+  position:relative;
+}
 
+/* MENI dugme */
+.menu-btn{
+  padding:6px 14px;
+  border-radius:14px;
+  background:#fff;
+  color:#000;
+  font-weight:bold;
+  border:none;
+  cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+.menu-btn:hover{
+  background:#ffd700;
+}
+
+/* DROPDOWN */
 .dropdown{
   position:absolute;
   top:100%;
   right:0;
-  background:rgba(20,20,20,0.95);
-  border-radius:12px;
-  padding:6px;
+
+  background:rgba(20,20,20,0.98);
+  border-radius:16px;
+
+  padding:10px 0;
   display:none;
-  min-width:260px;
+
+  width:260px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
 }
 
-.menu.open .dropdown{display:block}
+.dropdown a{
+  display:block;
+  padding:10px 16px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
 
-/* HERO */
+.dropdown a:hover{
+  background:rgba(255,255,255,0.05);
+}
+
+.menu.open .dropdown{
+  display:block;
+}
+
+/* ===================== */
+
 .hero{text-align:center;padding:50px 0}
 
-/* CARD */
 .card{
   background:rgba(20,20,20,0.6);
   padding:25px;
@@ -84,7 +125,6 @@ header{
   margin-top:30px;
 }
 
-/* SEMAFOR */
 .semafor-row{
   display:flex;
   gap:15px;
@@ -101,7 +141,6 @@ header{
 
 .semabox.red b{color:#ff6b6b}
 
-/* ALERT */
 .alert{
   text-align:center;
   color:#ff3b3b;
@@ -191,7 +230,6 @@ canvas{
 СИСТЕМ АКУМУЛИРА ПРЕДМЕТЕ
 </div>
 
-<!-- ANALITIKA -->
 <div class="card">
 
 <h2>НЕРЕШЕНИ ПРЕДМЕТИ 2017–2024</h2>
@@ -206,7 +244,6 @@ canvas{
 
 </div>
 
-<!-- TABELA -->
 <div class="card">
 
 <h2>ДЕТАЉНА АНАЛИЗА</h2>
@@ -226,58 +263,6 @@ canvas{
 
 </div>
 
-<!-- USTAV -->
-<div class="card">
-
-<h2 style="color:#ffd700">ПОВРЕДЕ УСТАВА</h2>
-
-<p><b>Члан 4</b> — нарушена подела власти</p>
-<p><b>Члан 22</b> — нема ефективне заштите</p>
-<p><b>Члан 32</b> — нема правичног суђења</p>
-<p><b>Члан 40</b> — угрожена неповредивост стана</p>
-<p><b>Члан 51</b> — грађани нису обавештени</p>
-<p><b>Члан 58</b> — угрожена имовина</p>
-
-</div>
-
-<!-- OBRAZLOZENJE -->
-<div class="card">
-
-<h2>ОБРАЗЛОЖЕЊЕ ПРЕДЛАГАЧА</h2>
-
-<p>
-Протек времена доводи до раста камата и трошкова.
-</p>
-
-<p>
-Грађани се суочавају са дугом тек када је вишеструко увећан.
-</p>
-
-<p>
-Поступци се воде без њиховог учешћа.
-</p>
-
-<p style="color:#ff3b3b">
-Последица је губитак имовине и презадуженост.
-</p>
-
-</div>
-
-<!-- ZAKON -->
-<div class="card">
-
-<h2>ЗАКОН О СТЕЧАЈУ ФИЗИЧКИХ ЛИЦА</h2>
-
-<p>
-Једино системско решење презадужености.
-</p>
-
-<p style="color:#ffd700;font-weight:bold">
-ЗАКОН МОРА БИТИ УСВОЈЕН
-</p>
-
-</div>
-
 </div>
 
 <a href="https://wa.me/381665857707" class="wa-btn">
@@ -286,17 +271,16 @@ canvas{
 
 <script>
 
-/* MENU */
 document.querySelector(".menu-btn").onclick = ()=>{
 document.getElementById("menu").classList.toggle("open");
 };
 
-/* GRAFIKON */
 new Chart(document.getElementById('chart'), {
 type:'line',
 data:{
 labels:['2017','2018','2019','2020','2021','2022','2023','2024'],
 datasets:[{
+label:"Нерешени предмети",
 data:[1236843,1324242,1604300,1833067,2055600,2099630,2142726,2321418],
 borderColor:'#ff3b3b',
 borderWidth:4
@@ -304,7 +288,6 @@ borderWidth:4
 }
 });
 
-/* WA */
 window.addEventListener("load",()=>{
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
