@@ -12,103 +12,103 @@
 
 <style>
 
-/* ===== ORIGINAL STYLE + NADOGRADNJA ===== */
 :root{
-  --gold:#d3a451;
-  --gold-glow:rgba(211,164,81,0.6);
+--gold:#d3a451;
+--red:#ff3b3b;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-a{text-decoration:none;color:inherit}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  background:
-  linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.9)),
-  url('justice-bg.jpg') center/cover fixed;
-  color:#fff;
-  font-family:"Times New Roman";
-  padding-bottom:140px;
+background:
+linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9)),
+url('justice-bg.jpg') center/cover fixed;
+color:#fff;
+font-family:"Times New Roman";
+padding-bottom:140px;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+.container{max-width:1150px;margin:auto;padding:20px}
 
 /* HEADER */
 header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  backdrop-filter:blur(6px);
+position:sticky;
+top:0;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(6px);
+z-index:100;
 }
 
 .head{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.brand img{height:95px}
+.brand img{height:90px}
 
 /* NAV */
 .nav{display:flex;gap:6px}
 .nav a,.menu-btn{
-  padding:6px 10px;
-  border-radius:10px;
-  background:rgba(0,0,0,0.45);
+padding:6px 10px;
+border-radius:10px;
+background:rgba(0,0,0,0.45);
 }
 
 .menu{position:relative}
 .dropdown{
-  position:absolute;
-  top:100%;
-  right:0;
-  background:rgba(20,20,20,0.95);
-  display:none;
-  border-radius:12px;
+position:absolute;
+top:100%;
+right:0;
+background:rgba(20,20,20,0.95);
+display:none;
+border-radius:12px;
+padding:6px;
 }
 .menu.open .dropdown{display:block}
 
 /* HERO */
 .hero{text-align:center;padding:50px 0}
 
-/* BUTTON */
+/* BTN */
 .btn{
-  padding:12px 20px;
-  border-radius:40px;
-  background:linear-gradient(135deg,#ffd700,#ffb300);
-  color:#000;
-  font-weight:bold;
+padding:12px 20px;
+border-radius:40px;
+background:linear-gradient(135deg,#ffd700,#ffb300);
+color:#000;
+font-weight:bold;
 }
 
 /* CARD */
 .card{
-  background:rgba(20,20,20,0.6);
-  padding:25px;
-  border-radius:16px;
-  margin-top:30px;
+background:rgba(20,20,20,0.6);
+padding:25px;
+border-radius:16px;
+margin-top:30px;
 }
 
 /* SEMAFOR */
 .semafor-row{
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
 }
 .semabox{
-  flex:1;
-  min-width:180px;
-  text-align:center;
-  background:rgba(0,0,0,0.4);
-  padding:15px;
+flex:1;
+min-width:180px;
+text-align:center;
+background:rgba(0,0,0,0.4);
+padding:15px;
 }
 .semabox.red b{color:#ff3b3b}
 
 /* ALERT */
 .alert{
-  text-align:center;
-  color:#ff3b3b;
-  font-weight:bold;
-  font-size:22px;
-  animation:pulse 1s infinite;
+text-align:center;
+color:#ff3b3b;
+font-size:22px;
+font-weight:bold;
+animation:pulse 1s infinite;
 }
 @keyframes pulse{
 0%{opacity:0.5}
@@ -117,6 +117,20 @@ header{
 }
 
 canvas{width:100%!important;height:400px!important}
+
+/* WHATSAPP */
+.wa-btn{
+position:fixed;
+bottom:35px;
+right:12px;
+padding:12px 18px;
+border-radius:40px;
+background:#25D366;
+color:#fff;
+font-weight:bold;
+z-index:9999;
+text-decoration:none;
+}
 
 </style>
 
@@ -143,6 +157,7 @@ canvas{width:100%!important;height:400px!important}
 <a href="inicijative.html">Захтеви</a>
 <a href="ukidanjeizvrsitelja.html">Извршење</a>
 <a href="prijavi.html">Представка</a>
+<a href="doniraj.html">Донације</a>
 </div>
 
 </div>
@@ -155,24 +170,25 @@ canvas{width:100%!important;height:400px!important}
 
 <section class="hero">
 <h1>РЕФОРМА СИСТЕМА ИЗВРШЕЊА</h1>
-<p>Систем који производи дуг мора бити заустављен</p>
-
-<a href="prijavi.html" class="btn">ПРИЈАВИ ПРОБЛЕМ</a>
+<p>Систем који не решава предмете — већ их акумулира</p>
 </section>
 
 <div class="alert">
-СИСТЕМ ЈЕ ПРОТИВУСТАВАН
+СИСТЕМ АКУМУЛИРА ПРЕДМЕТЕ
 </div>
 
-<!-- LIVE -->
+<!-- COUNTER -->
 <div class="card" style="text-align:center">
-<h2>ДУГ У РАСТУ</h2>
-<div id="debtCounter" style="font-size:30px;color:#ff3b3b">2,321,418</div>
+<h2>НЕРЕШЕНИ ПРЕДМЕТИ</h2>
+<div id="caseCounter" style="font-size:32px;color:#ff3b3b">
+2,321,418
+</div>
 </div>
 
 <!-- ANALITIKA -->
 <div class="card">
-<h2>ЕКСПЛОЗИЈА ДУГА</h2>
+
+<h2>РАСТ НЕРЕШЕНИХ ПРЕДМЕТА</h2>
 
 <div class="semafor-row">
 <div class="semabox"><span>2017</span><b>1.137.408</b></div>
@@ -181,35 +197,47 @@ canvas{width:100%!important;height:400px!important}
 </div>
 
 <canvas id="mainChart"></canvas>
+
+</div>
+
+<!-- TABELA -->
+<div class="card">
+
+<h2>ДЕТАЉНА АНАЛИЗА</h2>
+
+<p>Систем из године у годину повећава број нерешених предмета.</p>
+
+<p style="color:#ffd700">
+Лежарину ових предмета плаћају грађани кроз камате и трошкове.
+</p>
+
 </div>
 
 <!-- USTAV -->
 <div class="card">
-<h2>УСТАВ VS ПРАКСА</h2>
+
+<h2>ПРОТИВУСТАВНОСТ</h2>
+
 <ul>
-<li>Правично суђење — угрожено</li>
-<li>Право на имовину — угрожено</li>
-<li>Жалба — не одлаже</li>
-<li>Подела власти — нарушена</li>
+<li>грађани нису стварно обавештени</li>
+<li>поступак се води без учешћа</li>
+<li>жалба не одлаже</li>
+<li>имовина се одузима</li>
 </ul>
 
-<canvas id="constitutionChart"></canvas>
 </div>
 
 <!-- ZAKON -->
 <div class="card">
+
 <h2>ЗАКОН О СТЕЧАЈУ ФИЗИЧКИХ ЛИЦА</h2>
 
 <p>
-Постојећи систем не решава презадуженост, већ је продубљује.
+Систем производи презадуженост.
 </p>
 
 <p>
-Протек времена доводи до раста камата и трошкова, док грађани често нису ни обавештени.
-</p>
-
-<p>
-Због тога је неопходно увођење стечаја физичких лица.
+Грађани се са дугом суочавају тек када је вишеструко увећан.
 </p>
 
 <p style="color:#ffd700;font-weight:bold">
@@ -217,6 +245,13 @@ canvas{width:100%!important;height:400px!important}
 </p>
 
 </div>
+
+</div>
+
+<a href="https://wa.me/381665857707" class="wa-btn">
+Пишите нам
+</a>
+
 <script>
 
 /* MENU */
@@ -224,12 +259,13 @@ document.querySelector(".menu-btn").onclick = ()=>{
 document.getElementById("menu").classList.toggle("open");
 };
 
-/* LIVE COUNTER */
-let debt = 2321418;
+/* COUNTER */
+let cases = 2321418;
 setInterval(()=>{
-debt += Math.floor(Math.random()*5);
-document.getElementById("debtCounter").innerText = debt.toLocaleString('sr-RS');
-},1000);
+cases += Math.floor(Math.random()*3);
+document.getElementById("caseCounter").innerText =
+cases.toLocaleString('sr-RS');
+},1500);
 
 /* GRAFIKON */
 new Chart(document.getElementById('mainChart'), {
@@ -244,21 +280,8 @@ borderWidth:4
 }
 });
 
-/* USTAV */
-new Chart(document.getElementById('constitutionChart'), {
-type:'bar',
-data:{
-labels:['Суђење','Имовина','Жалба','Власт'],
-datasets:[
-{data:[100,100,100,100],backgroundColor:'#2ecc71'},
-{data:[30,20,15,35],backgroundColor:'#ff3b3b'}
-]
-}
-});
-
 </script>
 
 </body>
 </html>
 
-</div>
