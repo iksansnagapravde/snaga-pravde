@@ -201,9 +201,9 @@ header{
   margin-top:28px;
   padding:26px 22px;
   border-radius:20px;
-  .hero{
+
   background:rgba(0,0,0,0.65);
-}
+
   border:1px solid rgba(255,255,255,0.08);
   backdrop-filter:blur(10px);
   box-shadow:0 10px 30px rgba(0,0,0,.35);
@@ -502,7 +502,12 @@ background:linear-gradient(
     font-size:24px;
   }
 }
-
+@media(max-width:768px){
+  body{
+    background-size:contain;
+    background-position:center top;
+  }
+}
 </style>
 </head>
 
