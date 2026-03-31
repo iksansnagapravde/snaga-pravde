@@ -19,17 +19,33 @@
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:#fff}
 
+html, body{
+max-width:100%;
+overflow-x:hidden;
+}
+
 body{
 background:
 linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
 radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
-font-family:"Times New Roman";
+font-family:"Times New Roman", serif;
 padding-bottom:140px;
+overflow-x:hidden;
 }
 
-.container{max-width:1100px;margin:auto;padding:0 20px}
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+width:100%;
+}
 
 /* HEADER */
 header{
@@ -45,6 +61,8 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:4px 0;
+gap:10px;
+flex-wrap:wrap;
 }
 
 .brand img{
@@ -56,6 +74,8 @@ border-radius:10px;
 .nav{
 display:flex;
 gap:6px;
+align-items:center;
+flex-wrap:wrap;
 }
 
 .nav a,.menu-btn{
@@ -78,9 +98,13 @@ transform:translateY(-2px);
 background:#fff;
 color:#000;
 font-weight:700;
+border:none;
+cursor:pointer;
 }
 
-.menu{position:relative}
+.menu{
+position:relative;
+}
 
 .dropdown{
 position:absolute;
@@ -91,13 +115,22 @@ border-radius:12px;
 padding:6px;
 display:none;
 min-width:260px;
+z-index:200;
+box-shadow:0 10px 24px rgba(0,0,0,.6);
 }
 
-.menu.open .dropdown{display:block}
+.menu.open .dropdown{
+display:block;
+}
 
 .dropdown a{
 display:block;
 padding:9px 10px;
+border-radius:8px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06);
 }
 
 /* CTA */
@@ -117,13 +150,16 @@ box-shadow:
 0 6px 0 rgba(0,0,0,.6),
 0 18px 35px rgba(0,0,0,.8);
 transition:.25s;
+text-align:center;
 }
 
 .btn:hover{
 transform:translateY(-2px) scale(1.03);
 }
 
-.btn-dark{background:#222}
+.btn-dark{
+background:#222;
+}
 
 .btn-danger{
 background: linear-gradient(
@@ -154,6 +190,7 @@ box-shadow:
 0 30px 70px rgba(0,0,0,0.9),
 inset 0 0 0 1px rgba(0,0,0,0.08);
 position:relative;
+overflow:hidden;
 }
 
 .journal::before{
@@ -172,6 +209,7 @@ margin-bottom:30px;
 font-size:26px;
 letter-spacing:1px;
 color:#000;
+word-break:break-word;
 }
 
 .entry{
@@ -180,6 +218,8 @@ padding-left:70px;
 margin-bottom:18px;
 line-height:1.7;
 transition:.2s;
+word-wrap:break-word;
+overflow-wrap:break-word;
 }
 
 .entry:hover{
@@ -196,6 +236,7 @@ height:12px;
 background:var(--gold);
 border-radius:50%;
 box-shadow:0 0 10px rgba(211,164,81,0.6);
+flex-shrink:0;
 }
 
 .entry b{
@@ -223,10 +264,35 @@ color:#b88a2a;
 margin-bottom:5px;
 }
 
-/* MOBILE */
+.stats strong + strong{
+margin-top:12px;
+}
+
+  /* MOBILE */
 @media(max-width:768px){
 
-.brand img{height:80px}
+html, body{
+overflow-x:hidden;
+}
+
+body{
+background:
+linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
+radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
+url('justice-bg.jpg') center 20% / cover no-repeat;
+}
+
+.container{
+padding:0 16px;
+}
+
+.brand img{
+height:80px;
+}
+
+.head{
+justify-content:center;
+}
 
 .nav{
 flex-wrap:wrap;
@@ -247,6 +313,18 @@ padding-left:45px;
 
 .entry::before{
 left:18px;
+}
+
+.dropdown{
+right:auto;
+left:50%;
+transform:translateX(-50%);
+min-width:260px;
+max-width:92vw;
+}
+
+.btn{
+max-width:100%;
 }
 
 }
@@ -298,7 +376,7 @@ height:22px;
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png">
+<img src="logo-white.png" alt="Иксан">
 </a>
 </div>
 
@@ -386,7 +464,6 @@ height:22px;
 
 <div class="entry"><b>Свакодневно:</b> Наше активности прати на хиљаде грађана Србије.</div>
 
-<!-- Prazna polja za dalje unose -->
 <div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
 <div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
 <div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
@@ -404,18 +481,34 @@ height:22px;
 </div>
 
 <script>
-const menu=document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+const menu = document.getElementById('menu');
+
+if(menu){
+  const btn = menu.querySelector('.menu-btn');
+
+  if(btn){
+    btn.onclick = () => menu.classList.toggle('open');
+  }
+
+  document.addEventListener('click', (e) => {
+    if(!menu.contains(e.target)){
+      menu.classList.remove('open');
+    }
+  });
+}
 
 window.addEventListener("load", () => {
-setTimeout(()=>{
-document.querySelector(".wa-btn").classList.add("show");
-},300);
+  setTimeout(() => {
+    const wa = document.querySelector(".wa-btn");
+    if(wa){
+      wa.classList.add("show");
+    }
+  }, 300);
 });
 </script>
 
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
 Пишите нам
 </a>
 
