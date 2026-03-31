@@ -1,789 +1,296 @@
 <!DOCTYPE html>
-
 <html lang="sr-Cyrl-RS">
-
 <head>
 
-
-
-<meta charset="utf-8">
-
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-<title>Шта смо урадили</title>
-
-
+<title>Шта смо урадили — Иксан</title>
 
 <link rel="icon" href="logo-white.png">
 
-
-
 <style>
 
-
-
-:root{
-
---gold:#d3a451;
-
---ink:#dcdcdc;
-
-}
-
-
+/* GLOBAL */
+:root{--gold:#ffd700;}
 
 *{box-sizing:border-box;margin:0;padding:0}
 
-a{text-decoration:none;color:#fff}
-
-
-
-html, body{
-
-max-width:100%;
-
-overflow-x:hidden;
-
-}
-
-
-
 body{
-
-min-height:100vh;
-
-
-
 background:
-
-linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
-
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-
-url('justice-bg.jpg') center 20% / cover no-repeat fixed;
-
-
-
+linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.95)),
+url('justice-bg.jpg') center/cover fixed;
 color:#fff;
-
 font-family:"Times New Roman";
-
 padding-bottom:140px;
-
 }
 
-
-
-/* MOBILE — ИСТО КАО ДРУГЕ СТРАНЕ */
-
-@media(max-width:768px){
-
-body{
-
-background:
-
-linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.9)),
-
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-
-url('justice-bg.jpg') center 20% / cover no-repeat;
-
-}
-
-}
-
-
-
-.container{max-width:1100px;margin:auto;padding:0 20px}
-
-
+.container{max-width:1200px;margin:auto;padding:0 16px}
 
 /* HEADER */
-
 header{
-
 position:sticky;
-
 top:0;
-
-z-index:100;
-
-backdrop-filter:blur(6px);
-
+backdrop-filter:blur(8px);
 border-bottom:1px solid rgba(255,255,255,.1);
-
+z-index:100;
 }
-
-
 
 .head{
-
 display:flex;
-
-align-items:center;
-
 justify-content:space-between;
-
-padding:4px 0;
-
+align-items:center;
 }
 
-
-
-.brand img{
-
-height:95px;
-
-border-radius:10px;
-
-}
-
-
+.brand img{height:90px}
 
 /* NAV */
+.nav{display:flex;gap:6px}
 
-.nav{
-
-display:flex;
-
-gap:6px;
-
+.nav a{
+padding:6px 12px;
+border-radius:12px;
+background:rgba(0,0,0,0.5);
 }
 
-
-
-.nav a,.menu-btn{
-
-padding:6px 10px;
-
-border-radius:10px;
-
-font-weight:600;
-
-font-size:0.85rem;
-
-background:rgba(0,0,0,0.45);
-
-box-shadow:
-
-0 6px 0 rgba(0,0,0,.8),
-
-0 18px 35px rgba(0,0,0,.9);
-
-transition:.15s;
-
-}
-
-
-
-.nav a:hover,.menu-btn:hover{
-
-transform:translateY(-2px);
-
-}
-
-
-
-.menu-btn{
-
-background:#fff;
-
-color:#000;
-
-font-weight:700;
-
-}
-
-
-
+/* MENU */
 .menu{position:relative}
 
-
-
-.dropdown{
-
-position:absolute;
-
-top:calc(100% + 8px);
-
-right:0;
-
-background:rgba(20,20,20,.97);
-
-border-radius:12px;
-
-padding:6px;
-
-display:none;
-
-min-width:260px;
-
+.menu-btn{
+padding:6px 14px;
+border-radius:14px;
+background:#fff;
+color:#000;
+font-weight:bold;
+cursor:pointer;
+border:none;
 }
 
+.menu-btn:hover{background:#ffd700}
 
+/* DROPDOWN */
+.dropdown{
+position:absolute;
+top:100%;
+right:0;
+width:260px;
+background:rgba(20,20,20,0.98);
+border-radius:16px;
+display:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.7);
+overflow:hidden;
+}
 
 .menu.open .dropdown{display:block}
 
-
-
 .dropdown a{
-
 display:block;
-
-padding:9px 10px;
-
+padding:10px 16px;
+border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
-
-
-/* CTA */
-
-.cta-row{
-
-display:flex;
-
-flex-direction:column;
-
-align-items:center;
-
-gap:14px;
-
-margin:20px 0;
-
+.dropdown a:hover{
+background:rgba(255,255,255,0.05);
 }
 
-
-
-.btn{
-
-padding:10px 20px;
-
-border-radius:30px;
-
-font-weight:700;
-
-box-shadow:
-
-0 6px 0 rgba(0,0,0,.6),
-
-0 18px 35px rgba(0,0,0,.8);
-
-transition:.25s;
-
-}
-
-
-
-.btn:hover{
-
-transform:translateY(-2px) scale(1.03);
-
-}
-
-
-
-.btn-dark{background:#222}
-
-
-
-.btn-danger{
-
-background: linear-gradient(
-
-135deg,
-
-rgba(140,20,40,0.65),
-
-rgba(80,10,25,0.55)
-
-);
-
-}
-
-
-
-.btn-primary{
-
-background:linear-gradient(135deg,#ffd700,#ffb300);
-
-color:#000;
-
-}
-
-
-
-/* JOURNAL */
-
-.journal{
-
-max-width:900px;
-
-margin:30px auto;
-
-background:linear-gradient(180deg,#f8f1d9,#efe4c2);
-
-color:#1a1a1a;
-
-padding:35px;
-
-border-radius:20px;
-
-box-shadow:
-
-0 30px 70px rgba(0,0,0,0.9),
-
-inset 0 0 0 1px rgba(0,0,0,0.08);
-
-position:relative;
-
-}
-
-
-
-.journal::before{
-
-content:"";
-
-position:absolute;
-
-left:45px;
-
-top:0;
-
-bottom:0;
-
-width:2px;
-
-background:rgba(0,0,0,0.15);
-
-}
-
-
-
-.journal h1{
-
+/* HERO */
+.hero{
 text-align:center;
-
-margin-bottom:30px;
-
-font-size:26px;
-
-letter-spacing:1px;
-
-color:#000;
-
+padding:60px 0;
 }
 
+.hero h1{font-size:42px}
 
-
-.entry{
-
-position:relative;
-
-padding-left:70px;
-
-margin-bottom:18px;
-
-line-height:1.7;
-
-transition:.2s;
-
+/* KPI */
+.kpi-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
+margin-top:40px;
 }
 
-
-
-.entry:hover{
-
-transform:translateX(4px);
-
-}
-
-
-
-.entry::before{
-
-content:"";
-
-position:absolute;
-
-left:38px;
-
-top:6px;
-
-width:12px;
-
-height:12px;
-
-background:var(--gold);
-
-border-radius:50%;
-
-box-shadow:0 0 10px rgba(211,164,81,0.6);
-
-}
-
-
-
-.entry b{color:#000;}
-
-
-
-.entry.empty{
-
-opacity:0.4;
-
-font-style:italic;
-
-}
-
-
-
-.stats{
-
-margin-top:30px;
-
-padding:20px;
-
-border-radius:16px;
-
-background:rgba(0,0,0,0.05);
-
+.kpi-card{
+padding:25px;
 text-align:center;
-
+background:rgba(0,0,0,0.7);
+border-radius:18px;
+transition:0.3s;
 }
 
+.kpi-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px rgba(255,215,0,0.2);
+}
 
-
-.stats strong{
-
+.kpi-card strong{
+font-size:36px;
+color:#ffd700;
+text-shadow:0 0 12px rgba(255,215,0,0.4);
 display:block;
-
-font-size:22px;
-
-color:#b88a2a;
-
-margin-bottom:5px;
-
 }
 
+.kpi-card span{color:#ccc}
 
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-
-
-.brand img{height:80px}
-
-
-
-.nav{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
+/* TIMELINE */
+.timeline{
+margin-top:50px;
+border-left:2px solid #ffd700;
+padding-left:20px;
 }
 
-
-
-.journal{
-
-padding:24px 18px;
-
+.timeline-item{
+margin-bottom:20px;
 }
-
-
-
-.journal::before{
-
-left:24px;
-
-}
-
-
-
-.entry{
-
-padding-left:45px;
-
-}
-
-
-
-.entry::before{
-
-left:18px;
-
-}
-
-
-
-}
-
-
 
 /* WHATSAPP */
-
 .wa-btn{
-
 position:fixed;
-
-bottom:35px;
-
+bottom:30px;
 right:-180px;
-
-display:flex;
-
-align-items:center;
-
-gap:8px;
-
-padding:10px 16px;
-
+padding:12px 18px;
 border-radius:40px;
-
-font-size:13px;
-
-font-weight:700;
-
-background:linear-gradient(
-
-135deg,
-
-rgba(37,211,102,0.55),
-
-rgba(40,120,160,0.45)
-
-);
-
-color:#fff;
-
-backdrop-filter:blur(10px);
-
-border:1px solid rgba(255,255,255,0.15);
-
-box-shadow:
-
-0 4px 12px rgba(0,0,0,0.4),
-
-inset 0 1px 2px rgba(255,255,255,0.25);
-
+background:#25D366;
+font-weight:bold;
+transition:0.6s;
 z-index:9999;
-
-transition:right 0.6s ease;
-
 }
 
-
-
-.wa-btn.show{right:12px;}
-
-
-
-.wa-btn img{width:22px;height:22px;}
-
-
+.wa-btn.show{right:12px}
 
 </style>
-
 </head>
-
-
 
 <body>
 
-
-
 <header>
-
 <div class="container head">
 
-
-
-<div class="brand">
-
-<a href="index.html">
-
+<a href="index.html" class="brand">
 <img src="logo-white.png">
-
 </a>
-
-</div>
-
-
 
 <nav class="nav">
 
-
-
 <a href="index.html">ПОЧЕТНА</a>
-
 <a href="kontakt.html">КОНТАКТ</a>
 
-
-
 <div class="menu" id="menu">
-
 <button class="menu-btn">МЕНИ ▾</button>
 
-
-
 <div class="dropdown">
-
-
-
 <a href="onama.html">о Нама</a>
-
 <a href="oblasti.html">Области деловања</a>
-
 <a href="ciljevi.html">Стратешки циљеви</a>
-
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
-
-
-
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-
-<a href="sudpravda.html">Независност судског система</a>
-
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
-
-
-<a href="prijavi.html">Представка грађанина</a>
-
-
-
 <a href="doniraj.html">Подржите наш рад</a>
-
 <a href="prikljucise.html">Прикључите се нашем раду</a>
-
-
-
-<a href="uradili.html">Шта смо урадили</a>
-
-
-
+<a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
 
-
-
 </div>
-
-
 
 </nav>
-
 </div>
-
 </header>
-
-
 
 <div class="container">
 
-
-
-<div class="cta-row">
-
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-
-<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
-
-</div>
-
-
-
-<div class="journal">
-
-
-
+<section class="hero">
 <h1>ШТА СМО УРАДИЛИ</h1>
+<p>Конкретни резултати нашег рада</p>
+</section>
 
+<!-- KPI -->
+<div class="kpi-grid">
 
+<div class="kpi-card">
+<strong data-target="22000">0</strong>
+<span>чланова и пратилаца</span>
+</div>
 
-<!-- СВЕ ОСТАЈЕ ИСТО -->
+<div class="kpi-card">
+<strong data-target="10000">0</strong>
+<span>обрађених пријава</span>
+</div>
 
-<div class="entry"><b>28.10.2025.</b> Удружење...</div>
+<div class="kpi-card">
+<strong data-target="1000">0</strong>
+<span>разговора са грађанима</span>
+</div>
 
-
-
-<div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
-
-
-
-<div class="stats">
-
-<strong>10.000+</strong> примљених и обрађених мејлова
-
-<strong>1.000+</strong> разговора са грађанима
-
-<strong>150+</strong> поднетих иницијатива
+<div class="kpi-card">
+<strong data-target="150">0</strong>
+<span>иницијатива</span>
+</div>
 
 </div>
 
+<!-- TIMELINE -->
+<div class="timeline">
 
+<div class="timeline-item">
+<b>28.10.2025</b> — Оснивање удружења
+</div>
+
+<div class="timeline-item">
+<b>05.01.2026</b> — Отварање канцеларије
+</div>
+
+<div class="timeline-item">
+<b>15.01.2026</b> — Иницијатива Уставном суду
+</div>
+
+<div class="timeline-item">
+<b>18.03.2026</b> — Предлог закона о стечају физичких лица
+</div>
 
 </div>
 
-
-
 </div>
 
-
+<a href="https://wa.me/381665857707" class="wa-btn">
+Пишите нам
+</a>
 
 <script>
 
-const menu=document.getElementById('menu');
+/* MENU */
+document.querySelector(".menu-btn").onclick = ()=>{
+document.getElementById("menu").classList.toggle("open");
+};
 
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
-
-
-
-document.addEventListener('click',(e)=>{
-
-if(!menu.contains(e.target)){
-
-menu.classList.remove('open');
-
-}
-
+/* WA ANIMACIJA */
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
 });
 
+/* COUNTER */
+document.querySelectorAll("[data-target]").forEach(el=>{
+let target = +el.dataset.target;
+let count = 0;
+let step = target / 100;
 
+let update = ()=>{
+count += step;
+if(count < target){
+el.innerText = Math.floor(count);
+requestAnimationFrame(update);
+}else{
+el.innerText = target.toLocaleString("sr-RS") + "+";
+}
+};
 
-window.addEventListener("load", () => {
-
-setTimeout(()=>{
-
-document.querySelector(".wa-btn").classList.add("show");
-
-},300);
-
+update();
 });
 
 </script>
 
-
-
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-
-Пишите нам
-
-</a>
-
-
-
 </body>
-
 </html>
