@@ -1,5 +1,393 @@
 <!DOCTYPE html>
+<html lang="sr-Cyrl-RS"><!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Циљеви — Иксан • Снага правде</title>
+
+<link rel="icon" href="logo-white.png">
+
+<style>
+
+:root{
+--deepBlue:#1f1f1f;
+--gold:#d3a451;
+--ink:#dcdcdc;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+background:
+linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
+radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
+url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+color:#fff;
+font-family:"Times New Roman",serif;
+line-height:1.7;
+padding-bottom:140px;
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{max-width:1150px;margin:auto;padding:0 20px}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+z-index:100;
+backdrop-filter:blur(6px);
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:4px 0;
+gap:10px;
+}
+
+.brand img{
+height:110px;
+border-radius:10px;
+}
+
+/* NAV */
+.nav{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.nav a,.menu-btn{
+padding:6px 10px;
+border-radius:10px;
+background:rgba(0,0,0,0.45);
+color:#fff;
+font-weight:600;
+font-size:0.85rem;
+
+box-shadow:
+0 5px 0 rgba(0,0,0,.7),
+0 15px 30px rgba(0,0,0,.8);
+}
+
+.menu-btn{
+background:#fff;
+color:#000;
+font-weight:700;
+}
+
+.menu{position:relative}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 8px);
+right:0;
+background:rgba(20,20,20,0.95);
+border-radius:12px;
+padding:6px;
+display:none;
+min-width:260px;
+box-shadow:0 10px 24px rgba(0,0,0,.6);
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:9px 10px;
+border-radius:8px;
+}
+
+.dropdown a:hover{
+background:rgba(255,255,255,.06);
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:40px 20px 10px;
+}
+
+.hero h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.sub{
+max-width:700px;
+margin:auto;
+color:var(--ink);
+}
+
+/* CTA */
+.cta-row{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:14px;
+margin-top:25px;
+}
+
+.btn{
+padding:12px 20px;
+border-radius:40px;
+font-weight:700;
+font-size:13px;
+text-transform:uppercase;
+
+box-shadow:
+0 6px 0 rgba(0,0,0,.5),
+0 15px 30px rgba(0,0,0,.6);
+
+transition:0.25s;
+}
+
+.btn:hover{
+transform:translateY(-2px) scale(1.03);
+}
+
+.btn-dark{
+background:rgba(20,20,20,0.6);
+}
+
+.btn-danger{
+background: linear-gradient(
+135deg,
+rgba(140,20,40,0.65),
+rgba(80,10,25,0.55)
+);
+}
+
+.btn-primary{
+background:linear-gradient(135deg,#ffd700,#ffb300);
+color:#000;
+}
+
+/* CARD */
+.card-large{
+margin-top:40px;
+background:rgba(20,20,20,0.6);
+border-radius:20px;
+padding:25px;
+border:1px solid rgba(255,255,255,0.15);
+}
+
+.card-large h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+/* LIST */
+.goals{list-style:none}
+
+.goals li{
+padding:10px 0;
+border-bottom:1px solid rgba(255,255,255,0.08);
+padding-left:18px;
+position:relative;
+}
+
+.goals li::before{
+content:"●";
+color:var(--gold);
+position:absolute;
+left:0;
+}
+
+/* WHATSAPP */
+.wa-btn{
+position:fixed;
+bottom:35px;
+right:-180px;
+
+display:flex;
+align-items:center;
+gap:8px;
+
+padding:10px 16px;
+border-radius:40px;
+
+font-size:13px;
+font-weight:700;
+
+background:linear-gradient(
+135deg,
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
+);
+
+color:#fff;
+
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.15);
+
+box-shadow:
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
+
+z-index:9999;
+transition:right 0.6s ease;
+}
+
+.wa-btn.show{
+right:12px;
+}
+
+.wa-btn img{
+width:22px;
+height:22px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.brand img{height:80px}
+
+.nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:8px;
+}
+
+.nav a, .menu-btn{
+min-width:90px;
+text-align:center;
+}
+
+.hero h1{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container head">
+
+<div class="brand">
+<a href="index.html">
+<img src="logo-white.png">
+</a>
+</div>
+
+<nav class="nav">
+
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">КОНТАКТ</a>
+
+<div class="menu" id="mainMenu">
+<button class="menu-btn">МЕНИ ▾</button>
+
+<div class="dropdown">
+<a href="onama.html">о Нама</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Стратешки циљеви</a>
+<a href="inicijative.html">Захтеви-Закони-Предмети</a>
+<a href="doniraj.html">Подржите наш рад</a>
+<a href="prikljucise.html">Прикључите се нашем раду</a>
+<a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо до сада урадили</a>
+</div>
+
+</div>
+
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+
+<h1>Циљеви удружења</h1>
+
+<p class="sub">
+Основни правци нашег деловања у борби за правду, достојанство и сигурност сваког грађанина.
+</p>
+
+<div class="cta-row">
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+
+<a href="prijavi.html" class="btn btn-danger">
+ПРЕДСТАВКА ГРАЂАНИНА
+</a>
+
+<a href="doniraj.html" class="btn btn-primary">ПОДРЖИ НАШ РАД</a>
+</div>
+
+</section>
+
+<div class="container">
+
+<div class="card-large">
+
+<h2>Циљеви</h2>
+
+<ul class="goals">
+<li>Заштита грађанских, људских и економских права</li>
+<li>Борба против корупције и злоупотреба у институцијама</li>
+<li>Унапређење транспарентности рада јавних институција</li>
+<li>Правна подршка грађанима и привреди</li>
+<li>Заштита странака у извршним поступцима</li>
+<li>Заштита права у кривичним поступцима</li>
+<li>Промоција економске правде</li>
+<li>Истраживање незаконито стечене имовине</li>
+<li>Предлагање измена закона</li>
+<li>Организовање јавних трибина и протеста</li>
+<li>Праћење изборних процеса</li>
+<li>Развој демократије и владавине права</li>
+<li>Хуманитарни рад и помоћ угроженима</li>
+</ul>
+
+</div>
+
+</div>
+
+</main>
+
+<footer style="text-align:center;padding:20px;">
+© 2025 Иксан • Снага правде
+</footer>
+
+<script>
+const menu=document.getElementById('mainMenu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
+});
+
+window.addEventListener("load", () => {
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
+});
+</script>
+
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
+</a>
+
+</body>
+</html>
 <head>
 
 <meta charset="utf-8">
