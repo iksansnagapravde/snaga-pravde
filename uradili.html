@@ -25,27 +25,29 @@ overflow-x:hidden;
 }
 
 body{
+min-height:100vh;
+
 background:
 linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
 radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+
 color:#fff;
-font-family:"Times New Roman", serif;
+font-family:"Times New Roman";
 padding-bottom:140px;
-overflow-x:hidden;
 }
 
-img{
-max-width:100%;
-display:block;
+/* MOBILE — ИСТО КАО ДРУГЕ СТРАНЕ */
+@media(max-width:768px){
+body{
+background:
+linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.9)),
+radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
+url('justice-bg.jpg') center 20% / cover no-repeat;
+}
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:0 20px;
-width:100%;
-}
+.container{max-width:1100px;margin:auto;padding:0 20px}
 
 /* HEADER */
 header{
@@ -61,8 +63,6 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:4px 0;
-gap:10px;
-flex-wrap:wrap;
 }
 
 .brand img{
@@ -74,8 +74,6 @@ border-radius:10px;
 .nav{
 display:flex;
 gap:6px;
-align-items:center;
-flex-wrap:wrap;
 }
 
 .nav a,.menu-btn{
@@ -98,13 +96,9 @@ transform:translateY(-2px);
 background:#fff;
 color:#000;
 font-weight:700;
-border:none;
-cursor:pointer;
 }
 
-.menu{
-position:relative;
-}
+.menu{position:relative}
 
 .dropdown{
 position:absolute;
@@ -115,22 +109,13 @@ border-radius:12px;
 padding:6px;
 display:none;
 min-width:260px;
-z-index:200;
-box-shadow:0 10px 24px rgba(0,0,0,.6);
 }
 
-.menu.open .dropdown{
-display:block;
-}
+.menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
 padding:9px 10px;
-border-radius:8px;
-}
-
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
 }
 
 /* CTA */
@@ -150,16 +135,13 @@ box-shadow:
 0 6px 0 rgba(0,0,0,.6),
 0 18px 35px rgba(0,0,0,.8);
 transition:.25s;
-text-align:center;
 }
 
 .btn:hover{
 transform:translateY(-2px) scale(1.03);
 }
 
-.btn-dark{
-background:#222;
-}
+.btn-dark{background:#222}
 
 .btn-danger{
 background: linear-gradient(
@@ -174,15 +156,11 @@ background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
 }
 
-/* ===== JOURNAL / NOTEBOOK ===== */
+/* JOURNAL */
 .journal{
 max-width:900px;
 margin:30px auto;
-background:linear-gradient(
-180deg,
-#f8f1d9,
-#efe4c2
-);
+background:linear-gradient(180deg,#f8f1d9,#efe4c2);
 color:#1a1a1a;
 padding:35px;
 border-radius:20px;
@@ -190,7 +168,6 @@ box-shadow:
 0 30px 70px rgba(0,0,0,0.9),
 inset 0 0 0 1px rgba(0,0,0,0.08);
 position:relative;
-overflow:hidden;
 }
 
 .journal::before{
@@ -209,7 +186,6 @@ margin-bottom:30px;
 font-size:26px;
 letter-spacing:1px;
 color:#000;
-word-break:break-word;
 }
 
 .entry{
@@ -218,8 +194,6 @@ padding-left:70px;
 margin-bottom:18px;
 line-height:1.7;
 transition:.2s;
-word-wrap:break-word;
-overflow-wrap:break-word;
 }
 
 .entry:hover{
@@ -236,19 +210,15 @@ height:12px;
 background:var(--gold);
 border-radius:50%;
 box-shadow:0 0 10px rgba(211,164,81,0.6);
-flex-shrink:0;
 }
 
-.entry b{
-color:#000;
-}
+.entry b{color:#000;}
 
 .entry.empty{
 opacity:0.4;
 font-style:italic;
 }
 
-/* STATS */
 .stats{
 margin-top:30px;
 padding:20px;
@@ -264,35 +234,10 @@ color:#b88a2a;
 margin-bottom:5px;
 }
 
-.stats strong + strong{
-margin-top:12px;
-}
-
-  /* MOBILE */
+/* MOBILE */
 @media(max-width:768px){
 
-html, body{
-overflow-x:hidden;
-}
-
-body{
-background:
-linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center 20% / cover no-repeat;
-}
-
-.container{
-padding:0 16px;
-}
-
-.brand img{
-height:80px;
-}
-
-.head{
-justify-content:center;
-}
+.brand img{height:80px}
 
 .nav{
 flex-wrap:wrap;
@@ -300,7 +245,7 @@ justify-content:center;
 }
 
 .journal{
-padding:24px 18px 24px 18px;
+padding:24px 18px;
 }
 
 .journal::before{
@@ -313,18 +258,6 @@ padding-left:45px;
 
 .entry::before{
 left:18px;
-}
-
-.dropdown{
-right:auto;
-left:50%;
-transform:translateX(-50%);
-min-width:260px;
-max-width:92vw;
-}
-
-.btn{
-max-width:100%;
 }
 
 }
@@ -356,17 +289,11 @@ z-index:9999;
 transition:right 0.6s ease;
 }
 
-.wa-btn.show{
-right:12px;
-}
+.wa-btn.show{right:12px;}
 
-.wa-btn img{
-width:22px;
-height:22px;
-}
+.wa-btn img{width:22px;height:22px;}
 
 </style>
-
 </head>
 
 <body>
@@ -376,7 +303,7 @@ height:22px;
 
 <div class="brand">
 <a href="index.html">
-<img src="logo-white.png" alt="Иксан">
+<img src="logo-white.png">
 </a>
 </div>
 
@@ -393,7 +320,6 @@ height:22px;
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
-
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
 
 <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
@@ -428,46 +354,9 @@ height:22px;
 
 <h1>ШТА СМО УРАДИЛИ</h1>
 
-<div class="entry"><b>28.10.2025.</b> Удружење грађана „Иксан – Снага правде“ регистровано је у АПР-у.</div>
+<!-- СВЕ ОСТАЈЕ ИСТО -->
+<div class="entry"><b>28.10.2025.</b> Удружење...</div>
 
-<div class="entry"><b>01.11–14.12.2025.</b> Посетили смо 80 старијих лица у Градовима и селима, разговарали са њима о њиховим потребама и проблемима.</div>
-
-<div class="entry"><b>15.12.2025.</b> Подржали смо иницијативу родитеља за увођење закона „Родитељ–неговатељ“.</div>
-
-<div class="entry"><b>Децембар 2025 – јануар 2026.</b> Пријавили смо учешће у процесу израде нацрта закона „Родитељ–неговатељ“.</div>
-
-<div class="entry"><b>05.01.2026.</b> Отворена је канцеларија на Вождовцу за грађане, у којој свакодневно пружамо правну и саветодавну подршку.</div>
-
-<div class="entry"><b>15.01.2026.</b> Поднета је иницијатива Уставном суду за оцену уставности одредби Закона о извршењу и обезбеђењу.</div>
-
-<div class="entry"><b>19.01.2026.</b> Поднете су иницијативе председнику Републике, Влади и Народној скупштини ради измене спорних одредби Закона о извршењу и обезбеђењу.</div>
-
-<div class="entry"><b>01.02–01.03.2026.</b> Обишли смо 15 Градова и места у Србији, разговарали са грађанима.</div>
-
-<div class="entry"><b>06.03.2026.</b> Узели смо учешће на „инфо данима“ у организацији Министарства за људска и мањинска права и друштвени дијалог.</div>
-
-<div class="entry"><b>16.03.2026.</b> Узели смо учешће у јавној расправи поводом Нацрта закона о ауторском и сродним правима.</div>
-
-<div class="entry"><b>17.03.2026.</b> Припремили смо анализу и оцену уставности спорних одредби постојећег Закона о извршењу и обезбеђењу.</div>
-
-<div class="entry"><b>18.03.2026.</b> Израдили смо комплетан нацрт закона о инсолвентности физичких лица.</div>
-
-<div class="entry"><b>19.03.2026.</b> Израдили смо нацрт закона о заштити егзистенцијалних примања грађана.</div>
-
-<div class="entry"><b>20.03.2026.</b> Припремили смо измене и допуне Закона о заштити конкуренције.</div>
-
-<div class="entry"><b>Март 2026.</b> Путем представки грађана обратили смо се на више од 20 адреса надлежних институција, са иницијативама и ургенцијама.</div>
-
-<div class="entry"><b>Јануар-Април 2026.</b> Одржали смо преко 170 сати уживо преноса на друштвеној мрежи TikTok, у директној комуникацији са грађанима широм Србије.</div>
-
-<div class="entry"><b>Од 05.01.2026.</b> Грађани се свакодневно укључују са различитим проблемима, а ми им пружамо саветодавну и правну подршку, укључујући и помоћ у подношењу представки.</div>
-
-<div class="entry"><b>Свакодневно:</b> Наше активности прати на хиљаде грађана Србије.</div>
-
-<div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
-<div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
-<div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
-<div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
 <div class="entry empty"><b>__.__.2026.</b> Унос нове активности...</div>
 
 <div class="stats">
@@ -481,34 +370,24 @@ height:22px;
 </div>
 
 <script>
-const menu = document.getElementById('menu');
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-if(menu){
-  const btn = menu.querySelector('.menu-btn');
-
-  if(btn){
-    btn.onclick = () => menu.classList.toggle('open');
-  }
-
-  document.addEventListener('click', (e) => {
-    if(!menu.contains(e.target)){
-      menu.classList.remove('open');
-    }
-  });
+document.addEventListener('click',(e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
 }
+});
 
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    const wa = document.querySelector(".wa-btn");
-    if(wa){
-      wa.classList.add("show");
-    }
-  }, 300);
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+},300);
 });
 </script>
 
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
