@@ -5,42 +5,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>О удружењу — Иксан • Снага правде</title>
+<title>О удружењу — Иксан</title>
 
 <link rel="icon" href="logo-white.png">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
 
+/* ===== GLOBAL ===== */
 :root{
 --gold:#d3a451;
 --ink:#dcdcdc;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
-a{text-decoration:none;color:inherit}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
-/* 🔥 ORIGINAL BACKGROUND */
 body{
+min-height:100vh;
+
 background:
-linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
+linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.9)),
 radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center 20% / cover no-repeat;
+url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 
 color:#fff;
 font-family:"Times New Roman", serif;
 
-overflow-x:hidden;
 padding-bottom:140px;
+overflow-x:hidden;
 }
 
+a{text-decoration:none;color:inherit}
+
 .container{
-max-width:1100px;
+max-width:1150px;
 margin:auto;
 padding:0 16px;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
 position:sticky;
 top:0;
@@ -53,29 +59,33 @@ border-bottom:1px solid rgba(255,255,255,.1);
 display:flex;
 align-items:center;
 justify-content:space-between;
+padding:4px 0;
 flex-wrap:wrap;
 gap:10px;
-padding:4px 0;
 }
 
 .brand img{
 height:90px;
 border-radius:10px;
+max-width:100%;
 }
 
 /* NAV */
 .nav{
 display:flex;
-flex-wrap:wrap;
+align-items:center;
 gap:6px;
-justify-content:center;
+flex-wrap:wrap;
 }
 
 .nav a,.menu-btn{
 padding:6px 10px;
 border-radius:10px;
+font-weight:600;
 font-size:0.8rem;
+
 background:rgba(0,0,0,0.45);
+
 box-shadow:
 0 5px 0 rgba(0,0,0,.7),
 0 15px 30px rgba(0,0,0,.8);
@@ -85,6 +95,8 @@ box-shadow:
 background:#fff;
 color:#000;
 font-weight:700;
+border:none;
+cursor:pointer;
 }
 
 .menu{position:relative}
@@ -98,7 +110,6 @@ border-radius:12px;
 padding:6px;
 display:none;
 min-width:260px;
-box-shadow:0 12px 28px rgba(0,0,0,.55);
 }
 
 .menu.open .dropdown{display:block}
@@ -106,35 +117,14 @@ box-shadow:0 12px 28px rgba(0,0,0,.55);
 .dropdown a{
 display:block;
 padding:9px 10px;
-border-radius:8px;
 }
 
-.dropdown a:hover{
-background:rgba(255,255,255,.06);
-}
-
-/* HERO */
-.hero{
-margin-top:25px;
-text-align:center;
-}
-
-.hero h1{
-font-size:clamp(26px,6vw,40px);
-margin-bottom:10px;
-}
-
-.hero p{
-color:var(--ink);
-line-height:1.7;
-}
-
-/* 🔥 CTA BUTTONS */
+/* ===== BUTTONS ===== */
 .top-buttons{
 display:flex;
 flex-direction:column;
 align-items:center;
-gap:12px;
+gap:14px;
 margin-top:20px;
 }
 
@@ -143,9 +133,16 @@ padding:10px 20px;
 border-radius:30px;
 font-weight:700;
 font-size:13px;
+
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
+
+transition:0.25s;
+}
+
+.btn:hover{
+transform: translateY(-2px) scale(1.03);
 }
 
 .btn-dark{
@@ -153,7 +150,7 @@ background:rgba(20,20,20,0.6);
 }
 
 .btn-danger{
-background:linear-gradient(
+background: linear-gradient(
 135deg,
 rgba(140,20,40,0.65),
 rgba(80,10,25,0.55)
@@ -165,102 +162,114 @@ background:linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
 }
 
-/* KPI */
-.kpi-grid{
+/* ===== GRID ===== */
+.cards-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-gap:14px;
-margin-top:20px;
+gap:20px;
+margin-top:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 }
 
-.kpi{
-padding:16px;
-border-radius:16px;
-text-align:center;
-
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(12px);
-
-border:1px solid rgba(255,255,255,0.08);
-box-shadow:0 10px 25px rgba(0,0,0,.4);
-}
-
-.kpi strong{
-display:block;
-font-size:20px;
-color:#ffd700;
-margin-bottom:5px;
-}
-
-/* CARD */
+/* ===== CARD ===== */
 .card{
-margin-top:20px;
-padding:18px;
-border-radius:16px;
+padding:20px;
+border-radius:18px;
+
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
+backdrop-filter:blur(14px);
+
 border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+transition:0.25s;
+
+position:relative;
+overflow:hidden;
 }
 
-/* MOBILE FIX */
+.card::before{
+content:"";
+position:absolute;
+top:-50%;
+left:-50%;
+width:200%;
+height:200%;
+background:radial-gradient(circle, rgba(255,215,0,0.15), transparent 60%);
+opacity:0;
+transition:0.4s;
+}
+
+.card:hover::before{
+opacity:1;
+}
+
+.card:hover{
+transform:translateY(-4px);
+border:1px solid rgba(255,215,0,0.25);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+color:var(--ink);
+line-height:1.7;
+}
+
+/* TIMELINE */
+.timeline{
+margin-top:15px;
+padding-left:18px;
+border-left:2px solid rgba(255,215,0,0.4);
+}
+
+/* MOBILE */
 @media(max-width:768px){
-
-.kpi-grid{
-grid-template-columns:1fr 1fr;
-}
-
-.kpi{
-padding:12px;
-}
-
-.kpi strong{
-font-size:18px;
-}
-
-.card{
-padding:16px;
-}
-
+.cards-grid{grid-template-columns:1fr;}
+.brand img{height:70px;}
 }
 
 /* WHATSAPP */
 .wa-btn{
 position:fixed;
-bottom:25px;
+bottom:35px;
 right:-180px;
+
 display:flex;
 align-items:center;
 gap:8px;
+
 padding:10px 16px;
 border-radius:40px;
+
 font-size:13px;
 font-weight:700;
 
 background:linear-gradient(
 135deg,
-rgba(37,211,102,0.7),
-rgba(40,120,160,0.6)
+rgba(37,211,102,0.55),
+rgba(40,120,160,0.45)
 );
+
+color:#fff;
 
 backdrop-filter:blur(10px);
 
-border:1px solid rgba(255,255,255,0.2);
+border:1px solid rgba(255,255,255,0.15);
 
 box-shadow:
-0 6px 18px rgba(0,0,0,.5),
-inset 0 1px 2px rgba(255,255,255,0.3);
+0 4px 12px rgba(0,0,0,0.4),
+inset 0 1px 2px rgba(255,255,255,0.25);
 
 z-index:9999;
+
 transition:right 0.6s ease;
 }
 
 .wa-btn.show{
 right:12px;
-}
-
-.wa-btn img{
-width:22px;
-height:22px;
 }
 
 </style>
@@ -286,7 +295,6 @@ height:22px;
 <button class="menu-btn">МЕНИ ▾</button>
 
 <div class="dropdown">
-
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
 <a href="ciljevi.html">Стратешки циљеви</a>
@@ -299,7 +307,6 @@ height:22px;
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
 <a href="uradili.html">Шта смо урадили</a>
-
 </div>
 
 </div>
@@ -311,48 +318,41 @@ height:22px;
 <div class="container">
 
 <div class="top-buttons">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАС</a>
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА</a>
+<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ</a>
 </div>
 
-<div class="hero">
-<h1>ИКСАН — СНАГА ПРАВДЕ</h1>
-<p>Покрет који грађанима враћа глас, правду и институционалну заштиту.</p>
-</div>
-
-<div class="kpi-grid">
-<div class="kpi"><strong>22.000+</strong>чланова</div>
-<div class="kpi"><strong>10.000+</strong>случајева</div>
-<div class="kpi"><strong>150+</strong>иницијатива</div>
-<div class="kpi"><strong>170+</strong>сати уживо</div>
-</div>
-<div class="card">
+<div class="cards-grid">
+<div class="card reveal">
 <h3>Ко смо</h3>
 <p>
 Иксан окупља грађане са циљем јачања правде и правне сигурности, кроз заједничко деловање и подршку свима који траже правду.
 </p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h3>Наша мисија</h3>
 <p>
 Реформа система, заштита права грађана и стварање друштва у коме закон важи једнако за све.
 </p>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h3>Наш рад са грађанима</h3>
-<p><strong>22.000+ чланова</strong> активно учествује у нашем раду.</p>
+
+<p><strong><span id="counter">0</span>+ чланова</strong> активно учествује у нашем раду.</p>
+
 <p>Активни смо на друштвеним мрежама и у директној комуникацији са грађанима.</p>
 <p>Организујемо разговоре, пружамо савете и помажемо у решавању проблема.</p>
 <p>Повезујемо грађане са институцијама и пратимо њихове случајеве.</p>
+
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h3>Шта смо урадили</h3>
 
-<div style="margin-top:20px; border-left:2px solid rgba(255,215,0,0.4); padding-left:20px;">
+<div class="timeline">
 
 <p><b>28.10.2025.</b> Основано удружење.</p>
 <p><b>01.11–14.12.2025.</b> Посете грађанима широм Србије.</p>
@@ -366,7 +366,7 @@ height:22px;
 </div>
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h3>Наше вредности</h3>
 
 <p><strong>Правда</strong> — закон мора важити једнако за све.</p>
@@ -376,7 +376,7 @@ height:22px;
 
 </div>
 
-<div class="card">
+<div class="card reveal">
 <h3>Основни подаци</h3>
 
 <p>Седиште: Београд</p>
@@ -386,8 +386,11 @@ height:22px;
 
 </div>
 
-</div>
+</div> <!-- GRID END -->
 
+</div> <!-- CONTAINER END -->
+
+<!-- ===== SCRIPTS ===== -->
 <script>
 
 /* MENU */
@@ -411,8 +414,65 @@ if(wa){wa.classList.add("show");}
 },300);
 });
 
+/* COUNTER */
+function animateCounter(id, target, duration = 2000){
+let el = document.getElementById(id);
+if(!el) return;
+
+let start = 0;
+let increment = target / (duration / 16);
+
+function update(){
+start += increment;
+if(start < target){
+el.innerText = Math.floor(start).toLocaleString('sr-RS');
+requestAnimationFrame(update);
+}else{
+el.innerText = target.toLocaleString('sr-RS');
+}
+}
+update();
+}
+
+let triggered = false;
+
+window.addEventListener("scroll", () => {
+const el = document.getElementById("counter");
+
+if(el && !triggered){
+const rect = el.getBoundingClientRect();
+
+if(rect.top < window.innerHeight){
+triggered = true;
+animateCounter("counter", 22000);
+}
+}
+});
+
+/* SCROLL ANIMATION */
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll(){
+reveals.forEach(el=>{
+const rect = el.getBoundingClientRect();
+
+if(rect.top < window.innerHeight - 60){
+el.classList.add("active");
+}
+});
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+
+/* PARALLAX */
+window.addEventListener("scroll", () => {
+document.body.style.backgroundPositionY = window.scrollY * 0.3 + "px";
+});
+
 </script>
 
+<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
