@@ -32,8 +32,6 @@ html, body{
 }
 
 body{
-  min-height:100vh;
-
   background:
   linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),
   radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
@@ -41,9 +39,7 @@ body{
 
   color:#fff;
   font-family:"Times New Roman", serif;
-
   padding-bottom:140px;
-  overflow-x:hidden;
 }
 
 a{
@@ -799,8 +795,8 @@ function triggerCounters(){
   }
 }
 
-window.addEventListener('scroll', triggerCounters);
-window.addEventListener('load', triggerCounters);
+
+
 
 /* REVEAL */
 const reveals = document.querySelectorAll('.reveal');
@@ -817,10 +813,7 @@ function revealOnScroll(){
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
-/* PARALLAX */
-window.addEventListener("scroll", () => {
-  document.body.style.backgroundPositionY = window.scrollY * 0.3 + "px";
-});
+
 
 /* CHARTS */
 const chartTextColor = '#ffffff';
