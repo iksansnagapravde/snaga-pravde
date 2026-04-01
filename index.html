@@ -24,7 +24,6 @@ background:
 linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
 radial-gradient(circle at center, rgba(255,255,255,0.04), transparent 60%),
 url('justice-bg.jpg') center 20% / cover no-repeat fixed;
-
 color:#fff;
 font-family:"Times New Roman",serif;
 padding-bottom:140px;
@@ -46,7 +45,7 @@ filter:blur(50px);
 transform:translate(-50%, -50%);
 }
 
-/* HEADER */
+/* HEADER (NE DIRAM) */
 header{
 position:sticky;
 top:0;
@@ -100,10 +99,7 @@ min-width:260px;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:8px;
-}
+.dropdown a{display:block;padding:8px;}
 
 /* HERO */
 .hero{
@@ -127,6 +123,7 @@ font-size:15px;
 margin-top:-10px;
 }
 
+/* CTA */
 .cta-row{
 display:flex;
 flex-direction:column;
@@ -135,29 +132,32 @@ gap:14px;
 margin-top:35px;
 }
 
-/* BUTTONS */
 .btn{
 padding:12px 20px;
 border-radius:40px;
 font-weight:700;
 font-size:13px;
 box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
-transition:all 0.25s ease;
+transition:0.25s;
 }
 
 .btn:hover{
-transform: translateY(-2px) scale(1.03);
+transform:translateY(-2px) scale(1.03);
 }
 
-.btn-dark{background:rgba(20,20,20,0.6);}
-
-.btn-danger{
-background: linear-gradient(135deg,rgba(140,20,40,0.65),rgba(80,10,25,0.55));
+/* BIG CTA */
+.big-cta{
+margin-top:60px;
+padding:18px 35px;
+border-radius:18px;
+font-weight:700;
+background:rgba(40,50,80,0.6);
+backdrop-filter:blur(12px);
+border:1px solid rgba(120,170,255,0.3);
+transition:0.3s;
 }
-
-.btn-gold{
-background: linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
+.big-cta:hover{
+transform:scale(1.05);
 }
 
 /* GRID */
@@ -172,79 +172,76 @@ margin-top:40px;
 .grid{grid-template-columns:1fr 1fr;}
 }
 
-/* PREMIUM CARD */
+/* CARD */
 .card{
-position:relative;
 padding:24px;
 border-radius:20px;
-
-background:
-linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01)),
-linear-gradient(135deg, rgba(25,25,25,0.85), rgba(10,10,10,0.95));
-
-backdrop-filter:blur(14px);
+background:linear-gradient(135deg, rgba(25,25,25,0.85), rgba(10,10,10,0.95));
 border:1px solid rgba(255,255,255,0.12);
-
-box-shadow:0 20px 50px rgba(0,0,0,.7);
-transition:0.4s;
-overflow:hidden;
-transform-style:preserve-3d;
+transition:0.2s;
 }
 
 .card:hover{
-transform:translateY(-8px) scale(1.02);
-box-shadow:0 30px 70px rgba(0,0,0,.9),0 0 20px rgba(211,164,81,0.2);
+transform:translateY(-8px);
+box-shadow:0 30px 70px rgba(0,0,0,.9);
 }
 
-.card h3{
-font-size:17px;
-margin-bottom:10px;
+/* CLICK EFFECT */
+.card:active{
+transform:scale(0.96);
+box-shadow:0 10px 30px rgba(0,0,0,.8) inset;
 }
 
-.card p{
-font-size:14px;
-color:#ddd;
-}
+.card h3{margin-bottom:10px;}
+.card p{color:#ccc;font-size:14px;}
 
-/* MINI GRAPH */
-.mini-chart{margin-top:12px;}
-
+/* GRAPH */
 .bar{
 height:6px;
-border-radius:10px;
 background:rgba(255,255,255,0.1);
-margin-top:5px;
+margin-top:6px;
+border-radius:10px;
 overflow:hidden;
 }
+.fill{height:100%;background:gold;}
+.fill.red{background:red;}
 
-.fill{
-height:100%;
-background:linear-gradient(90deg,#d3a451,#ffd700);
+/* SOCIAL */
+.social-bar{
+position:fixed;
+right:-80px;
+bottom:110px;
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:9999;
+transition:right 0.6s ease;
 }
+.social-bar.show{right:12px;}
 
-.fill.red{
-background:linear-gradient(90deg,#a11,#ff4d4d);
+.social-bar a{
+width:44px;height:44px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+background:rgba(20,20,20,0.55);
+backdrop-filter:blur(12px);
 }
 
 /* WHATSAPP */
 .wa-btn{
 position:fixed;
-bottom:35px;
+bottom:20px;
 right:-180px;
 display:flex;
 align-items:center;
 gap:8px;
 padding:10px 16px;
 border-radius:40px;
-font-size:13px;
-font-weight:700;
-background:linear-gradient(135deg,rgba(37,211,102,0.6),rgba(40,120,160,0.5));
-border:1px solid rgba(255,255,255,0.2);
+background:#25d366;
 z-index:9999;
 transition:right 0.6s ease;
 }
-
 .wa-btn.show{right:12px;}
+.wa-btn img{width:22px;}
 
 </style>
 </head>
@@ -255,11 +252,8 @@ transition:right 0.6s ease;
 
 <header>
 <div class="head">
-
 <div class="brand">
-<a href="index.html">
-<img src="logo-white.png">
-</a>
+<a href="index.html"><img src="logo-white.png"></a>
 </div>
 
 <nav class="nav">
@@ -268,35 +262,29 @@ transition:right 0.6s ease;
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
-
 <div class="dropdown">
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="uradili.html">Шта смо урадили</a>
 </div>
-
 </div>
 </nav>
 </div>
 </header>
 
 <div class="hero">
+
 <h1>Заштита људских права и одговорност институција</h1>
 <p class="sub">Удружење грађана „Иксан – Снага правде“</p>
 
 <div class="cta-row">
-<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+<a href="inicijative.html" class="btn">ЗАКОНИ</a>
+<a href="prijavi.html" class="btn">ПРЕДСТАВКА</a>
+<a href="doniraj.html" class="btn">ПОДРЖИ</a>
 </div>
+
+<a href="uradili.html" class="big-cta">
+ПОГЛЕДАЈ ШТА СМО УРАДИЛИ
+</a>
+
 </div>
 
 <div class="grid">
@@ -304,60 +292,30 @@ transition:right 0.6s ease;
 <a href="egzistencijalni-minimum.html" class="card">
 <h3>Нико не сме живети испод минимума</h3>
 <p>Гарантован минимум за живот.</p>
-<div class="mini-chart">
 <div class="bar"><div class="fill red" style="width:40%"></div></div>
 <div class="bar"><div class="fill" style="width:90%"></div></div>
-</div>
 </a>
 
 <a href="ukidanjeizvrsitelja.html" class="card">
 <h3>Крај дужничког ропства</h3>
 <p>Заштита грађана.</p>
-<div class="mini-chart">
 <div class="bar"><div class="fill red" style="width:80%"></div></div>
 <div class="bar"><div class="fill" style="width:60%"></div></div>
-</div>
-</a>
-
-<a href="porekloimovine.html" class="card">
-<h3>Порекло имовине</h3>
-<p>Јавна контрола.</p>
-<div class="mini-chart">
-<div class="bar"><div class="fill red" style="width:75%"></div></div>
-<div class="bar"><div class="fill" style="width:95%"></div></div>
-</div>
-</a>
-
-<a href="sudpravda.html" class="card">
-<h3>Независно судство</h3>
-<p>Правда за све.</p>
-<div class="mini-chart">
-<div class="bar"><div class="fill red" style="width:70%"></div></div>
-<div class="bar"><div class="fill" style="width:85%"></div></div>
-</div>
-</a>
-
-<a href="radnicipreduzetnici.html" class="card">
-<h3>Радник мора бити заштићен</h3>
-<p>Сигуран рад.</p>
-<div class="mini-chart">
-<div class="bar"><div class="fill red" style="width:80%"></div></div>
-<div class="bar"><div class="fill" style="width:90%"></div></div>
-</div>
-</a>
-
-<a href="zastita-konkurencije.html" class="card">
-<h3>Крај монопола</h3>
-<p>Фер тржиште.</p>
-<div class="mini-chart">
-<div class="bar"><div class="fill red" style="width:85%"></div></div>
-<div class="bar"><div class="fill" style="width:75%"></div></div>
-</div>
 </a>
 
 </div>
 
+<!-- SOCIAL -->
+<div class="social-bar" id="socialBar">
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
+</div>
+
+<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
@@ -374,6 +332,7 @@ menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 window.addEventListener("load",()=>{
 setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
+document.getElementById("socialBar").classList.add("show");
 },400);
 });
 </script>
