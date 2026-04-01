@@ -109,8 +109,10 @@ font-weight:700;
 .dropdown{
   position:absolute;
   top:calc(100% + 10px);
-  left:0;              /* ← LEVO */
-  right:auto;          /* ← ISKLJUČI DESNO */
+
+  right:0;      /* ← KLJUČNO */
+  left:auto;    /* ← ISKLJUČI LEVO */
+
   background:rgba(20,20,20,0.78);
   backdrop-filter:blur(16px);
   border-radius:16px;
@@ -125,9 +127,9 @@ font-weight:700;
 }
 
 .menu.open .dropdown{
-display:block;
-opacity:1;
-transform:translateY(0) scale(1);
+  display:block;
+  opacity:1;
+  transform:translateY(0) scale(1);
 }
 
 .dropdown a{
@@ -445,7 +447,7 @@ transform:translateY(-2px) scale(1.03);
   .brand img{height:80px;}
 
   .nav{
-    flex-wrap:nowrap;   /* ← DA NE PADA MENI DOLE */
+    flex-wrap:nowrap;
     justify-content:center;
     gap:6px;
   }
@@ -456,12 +458,11 @@ transform:translateY(-2px) scale(1.03);
   }
 
   .dropdown{
-    left:0;
-    right:auto;
+    right:0;     /* ← KLJUČNO */
+    left:auto;
   }
 }
 }
-
 </style>
 </head>
 
