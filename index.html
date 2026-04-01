@@ -28,9 +28,23 @@ url('justice-bg.jpg') center 20% / cover no-repeat fixed;
 color:#fff;
 font-family:"Times New Roman",serif;
 padding-bottom:140px;
+overflow-x:hidden;
 }
 
 a{text-decoration:none;color:#fff}
+
+/* CURSOR GLOW */
+.cursor-glow{
+position:fixed;
+width:300px;
+height:300px;
+border-radius:50%;
+pointer-events:none;
+z-index:0;
+background:radial-gradient(circle, rgba(211,164,81,0.18), transparent 60%);
+filter:blur(50px);
+transform:translate(-50%, -50%);
+}
 
 /* HEADER */
 header{
@@ -50,7 +64,6 @@ padding:4px 10px;
 
 .brand img{height:95px;}
 
-/* NAV */
 .nav{
 display:flex;
 align-items:center;
@@ -136,40 +149,15 @@ transition:all 0.25s ease;
 transform: translateY(-2px) scale(1.03);
 }
 
-.btn-dark{
-background:rgba(20,20,20,0.6);
-}
+.btn-dark{background:rgba(20,20,20,0.6);}
 
 .btn-danger{
-background: linear-gradient(
-135deg,
-rgba(140,20,40,0.65),
-rgba(80,10,25,0.55)
-);
-}
-
-@keyframes pulseGlow{
-0%{box-shadow:0 0 0 rgba(255,215,0,0.4);}
-50%{box-shadow:0 0 20px rgba(255,215,0,0.6);}
-100%{box-shadow:0 0 0 rgba(255,215,0,0.4);}
+background: linear-gradient(135deg,rgba(140,20,40,0.65),rgba(80,10,25,0.55));
 }
 
 .btn-gold{
 background: linear-gradient(135deg,#ffd700,#ffb300);
 color:#000;
-animation: pulseGlow 2.5s infinite;
-}
-
-/* BIG CTA */
-.big-cta{
-margin-top:90px;
-padding:16px 30px;
-border-radius:16px;
-background:rgba(20,25,35,0.65);
-backdrop-filter:blur(12px);
-font-weight:700;
-font-size:14px;
-border:1px solid rgba(120,170,255,0.3);
 }
 
 /* GRID */
@@ -195,59 +183,38 @@ linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01)),
 linear-gradient(135deg, rgba(25,25,25,0.85), rgba(10,10,10,0.95));
 
 backdrop-filter:blur(14px);
-
 border:1px solid rgba(255,255,255,0.12);
 
-box-shadow:
-0 20px 50px rgba(0,0,0,.7),
-inset 0 1px 0 rgba(255,255,255,.1);
-
-transition:0.35s cubic-bezier(.2,.8,.2,1);
-overflow:hidden;
-}
-
-.card::before{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(120deg, transparent, rgba(255,255,255,0.08), transparent);
-opacity:0;
+box-shadow:0 20px 50px rgba(0,0,0,.7);
 transition:0.4s;
+overflow:hidden;
+transform-style:preserve-3d;
 }
-
-.card:hover::before{opacity:1;}
 
 .card:hover{
-transform:translateY(-6px) scale(1.02);
-border:1px solid rgba(211,164,81,0.5);
-box-shadow:
-0 30px 70px rgba(0,0,0,.9),
-0 0 20px rgba(211,164,81,0.2);
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 30px 70px rgba(0,0,0,.9),0 0 20px rgba(211,164,81,0.2);
 }
 
 .card h3{
 font-size:17px;
 margin-bottom:10px;
-font-weight:700;
 }
 
 .card p{
 font-size:14px;
-line-height:1.6;
 color:#ddd;
 }
 
 /* MINI GRAPH */
-.mini-chart{
-margin-top:14px;
-}
+.mini-chart{margin-top:12px;}
 
 .bar{
 height:6px;
 border-radius:10px;
 background:rgba(255,255,255,0.1);
+margin-top:5px;
 overflow:hidden;
-margin-top:6px;
 }
 
 .fill{
@@ -257,13 +224,6 @@ background:linear-gradient(90deg,#d3a451,#ffd700);
 
 .fill.red{
 background:linear-gradient(90deg,#a11,#ff4d4d);
-}
-
-.chart-label{
-font-size:12px;
-color:#bbb;
-display:flex;
-justify-content:space-between;
 }
 
 /* WHATSAPP */
@@ -278,68 +238,24 @@ padding:10px 16px;
 border-radius:40px;
 font-size:13px;
 font-weight:700;
-background:linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.15);
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
+background:linear-gradient(135deg,rgba(37,211,102,0.6),rgba(40,120,160,0.5));
+border:1px solid rgba(255,255,255,0.2);
 z-index:9999;
 transition:right 0.6s ease;
 }
 
 .wa-btn.show{right:12px;}
-.wa-btn img{width:22px;}
-
-/* SOCIAL */
-.social-bar{
-position:fixed;
-right:-80px;
-bottom:110px;
-display:flex;
-flex-direction:column;
-gap:12px;
-z-index:9999;
-transition:right 0.6s ease, opacity 0.6s ease;
-opacity:0.5;
-}
-
-.social-bar.show{
-right:12px;
-opacity:0.35;
-}
-
-.social-bar a{
-display:flex;
-align-items:center;
-justify-content:center;
-width:44px;
-height:44px;
-border-radius:50%;
-background:rgba(20,20,20,0.55);
-backdrop-filter:blur(12px);
-box-shadow:0 4px 12px rgba(0,0,0,0.5);
-}
-
-.social-bar img{
-width:20px;
-height:20px;
-filter:invert(1);
-opacity:0.85;
-}
-
-footer{
-text-align:center;
-margin-top:50px;
-padding:30px;
-color:#ccc;
-}
 
 </style>
 </head>
 
 <body>
 
+<div class="cursor-glow" id="glow"></div>
+
 <header>
 <div class="head">
+
 <div class="brand">
 <a href="index.html">
 <img src="logo-white.png">
@@ -352,6 +268,7 @@ color:#ccc;
 
 <div class="menu" id="menu">
 <button class="menu-btn">МЕНИ ▾</button>
+
 <div class="dropdown">
 <a href="onama.html">о Нама</a>
 <a href="oblasti.html">Области деловања</a>
@@ -364,15 +281,15 @@ color:#ccc;
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
 <a href="sudpravda.html">Независност судског система</a>
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-<a href="uradili.html">Шта смо до сада урадили</a>
 </div>
+
 </div>
 </nav>
 </div>
 </header>
 
 <div class="hero">
-<h1>Радник мора бити заштићен</h1>
+<h1>Заштита људских права и одговорност институција</h1>
 <p class="sub">Удружење грађана „Иксан – Снага правде“</p>
 
 <div class="cta-row">
@@ -380,69 +297,59 @@ color:#ccc;
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
-
-<a href="uradili.html" class="big-cta">ШТА СМО УРАДИЛИ</a>
 </div>
-
-<h2 style="text-align:center;margin-top:-15px;">Кључне иницијативе</h2>
 
 <div class="grid">
 
-<a href="#" class="card">
+<a href="egzistencijalni-minimum.html" class="card">
 <h3>Нико не сме живети испод минимума</h3>
-<p>Гарантован минимум за достојанствен живот.</p>
+<p>Гарантован минимум за живот.</p>
 <div class="mini-chart">
-<div class="chart-label"><span>Сада</span><span>После</span></div>
 <div class="bar"><div class="fill red" style="width:40%"></div></div>
 <div class="bar"><div class="fill" style="width:90%"></div></div>
 </div>
 </a>
 
-<a href="#" class="card">
+<a href="ukidanjeizvrsitelja.html" class="card">
 <h3>Крај дужничког ропства</h3>
-<p>Заштита грађана од неправедне наплате.</p>
+<p>Заштита грађана.</p>
 <div class="mini-chart">
-<div class="chart-label"><span>Притисак</span><span>Заштита</span></div>
-<div class="bar"><div class="fill red" style="width:85%"></div></div>
+<div class="bar"><div class="fill red" style="width:80%"></div></div>
 <div class="bar"><div class="fill" style="width:60%"></div></div>
 </div>
 </a>
 
-<a href="#" class="card">
-<h3>Свака имовина мора имати порекло</h3>
-<p>Пуна контрола јавних финансија.</p>
+<a href="porekloimovine.html" class="card">
+<h3>Порекло имовине</h3>
+<p>Јавна контрола.</p>
 <div class="mini-chart">
-<div class="chart-label"><span>Скривено</span><span>Јавно</span></div>
 <div class="bar"><div class="fill red" style="width:75%"></div></div>
 <div class="bar"><div class="fill" style="width:95%"></div></div>
 </div>
 </a>
 
-<a href="#" class="card">
-<h3>Правда мора бити видљива</h3>
-<p>Транспарентно и ефикасно судство.</p>
+<a href="sudpravda.html" class="card">
+<h3>Независно судство</h3>
+<p>Правда за све.</p>
 <div class="mini-chart">
-<div class="chart-label"><span>Неповерење</span><span>Поверење</span></div>
 <div class="bar"><div class="fill red" style="width:70%"></div></div>
 <div class="bar"><div class="fill" style="width:85%"></div></div>
 </div>
 </a>
 
-<a href="#" class="card">
+<a href="radnicipreduzetnici.html" class="card">
 <h3>Радник мора бити заштићен</h3>
-<p>Сигуран рад и фер тржиште.</p>
+<p>Сигуран рад.</p>
 <div class="mini-chart">
-<div class="chart-label"><span>Несигурност</span><span>Сигурност</span></div>
 <div class="bar"><div class="fill red" style="width:80%"></div></div>
 <div class="bar"><div class="fill" style="width:90%"></div></div>
 </div>
 </a>
 
-<a href="#" class="card">
+<a href="zastita-konkurencije.html" class="card">
 <h3>Крај монопола</h3>
-<p>Заштита тржишта и конкуренције.</p>
+<p>Фер тржиште.</p>
 <div class="mini-chart">
-<div class="chart-label"><span>Монопол</span><span>Тржиште</span></div>
 <div class="bar"><div class="fill red" style="width:85%"></div></div>
 <div class="bar"><div class="fill" style="width:75%"></div></div>
 </div>
@@ -450,29 +357,24 @@ color:#ccc;
 
 </div>
 
-<footer>© 2025 Иксан • Снага правде</footer>
-
-<div class="social-bar" id="socialBar">
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
-</div>
-
-<a href="#" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
 Пишите нам
 </a>
 
 <script>
-const menu = document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
+const glow=document.getElementById("glow");
+document.addEventListener("mousemove",e=>{
+glow.style.left=e.clientX+"px";
+glow.style.top=e.clientY+"px";
+});
 
-window.addEventListener("load", () => {
-setTimeout(() => {
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+window.addEventListener("load",()=>{
+setTimeout(()=>{
 document.querySelector(".wa-btn").classList.add("show");
-document.getElementById("socialBar").classList.add("show");
-}, 400);
+},400);
 });
 </script>
 
