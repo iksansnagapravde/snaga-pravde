@@ -1,180 +1,2093 @@
 <!DOCTYPE html>
+
 <html lang="sr-Cyrl-RS">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 
 <title>Транспарентност јавних финансија и јавних набавки</title>
 
+
+
 <link rel="icon" href="logo-white.png">
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 
 <style>
 
 :root{
+
   --gold:#d3a451;
+
   --ink:#dcdcdc;
+
 }
+
+
 
 *{box-sizing:border-box;margin:0;padding:0}
+
 a{text-decoration:none;color:inherit}
 
-/* 🔥 MOBILE FIX */
-html,body{max-width:100%;overflow-x:hidden;}
-img,canvas{max-width:100%;height:auto;display:block;}
+
 
 body{
+
   background:
+
   linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.85)),
+
   radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
+
   url('justice-bg.jpg') center 20% / cover no-repeat fixed;
+
   color:#fff;
+
   font-family:"Times New Roman", serif;
+
   padding-bottom:140px;
+
+  overflow-x:hidden;
+
 }
+
+
 
 .container{
+
   max-width:1150px;
+
   margin:auto;
+
   padding:0 16px;
+
 }
 
-/* SVE OSTALO TVOJE OSTAVLJENO IDENTIČNO */
 
-.table-wrap{
-  overflow:auto;
+
+/* HEADER */
+
+header{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+
+  backdrop-filter:blur(6px);
+
+  border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+.head{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:4px 0;
+
+  gap:10px;
+
+  flex-wrap:wrap;
+
+}
+
+
+
+.brand img{
+
+  height:90px;
+
+  border-radius:10px;
+
+}
+
+
+
+/* NAV */
+
+.nav{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:6px;
+
+  flex-wrap:wrap;
+
+}
+
+
+
+.nav a,.menu-btn{
+
+  padding:6px 10px;
+
+  border-radius:10px;
+
+  font-weight:600;
+
+  font-size:0.82rem;
+
+  background:rgba(0,0,0,0.45);
+
+  color:#fff;
+
+  box-shadow:
+
+  0 5px 0 rgba(0,0,0,.7),
+
+  0 15px 30px rgba(0,0,0,.8);
+
+}
+
+
+
+.menu-btn{
+
+  background:#fff;
+
+  color:#000;
+
+  font-weight:700;
+
+  border:none;
+
+  cursor:pointer;
+
+}
+
+
+
+.menu{position:relative}
+
+
+
+.dropdown{
+
+  position:absolute;
+
+  top:calc(100% + 8px);
+
+  right:0;
+
+  background:rgba(20,20,20,0.95);
+
+  border-radius:12px;
+
+  padding:6px;
+
+  display:none;
+
+  min-width:260px;
+
+  box-shadow:0 12px 28px rgba(0,0,0,.55);
+
+}
+
+
+
+.menu.open .dropdown{display:block}
+
+
+
+.dropdown a{
+
+  display:block;
+
+  padding:9px 10px;
+
+  border-radius:8px;
+
+}
+
+
+
+.dropdown a:hover{
+
+  background:rgba(255,255,255,.06);
+
+}
+
+
+
+/* CTA */
+
+.top-buttons{
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  gap:14px;
+
   margin-top:20px;
+
 }
 
-/* 🔥 KARTICE */
-.tender-grid{
-display:grid;
-gap:18px;
-margin-top:20px;
+
+
+.btn{
+
+  padding:10px 20px;
+
+  border-radius:30px;
+
+  font-weight:700;
+
+  font-size:13px;
+
+  box-shadow:
+
+  0 6px 0 rgba(0,0,0,.5),
+
+  0 15px 30px rgba(0,0,0,.6);
+
+  transition:0.25s;
+
 }
+
+
+
+.btn:hover{
+
+  transform: translateY(-2px) scale(1.03);
+
+}
+
+
+
+.btn-dark{
+
+  background:rgba(20,20,20,0.6);
+
+  color:#fff;
+
+}
+
+
+
+.btn-danger{
+
+  background: linear-gradient(
+
+  135deg,
+
+  rgba(140,20,40,0.65),
+
+  rgba(80,10,25,0.55)
+
+  );
+
+  color:#fff;
+
+}
+
+
+
+.btn-gold{
+
+  background:linear-gradient(135deg,#ffd700,#ffb300);
+
+  color:#000;
+
+}
+
+
+
+/* HERO */
+
+.page-hero{
+
+  margin-top:20px;
+
+  padding:24px 18px;
+
+  border-radius:16px;
+
+  background:rgba(0,0,0,0.55);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(10px);
+
+  text-align:center;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+
+
+.page-hero h1{
+
+  font-size:clamp(22px,5vw,34px);
+
+  margin-bottom:12px;
+
+}
+
+
+
+.page-hero p{
+
+  font-size:15px;
+
+  line-height:1.75;
+
+  color:var(--ink);
+
+  max-width:940px;
+
+  margin:auto;
+
+}
+
+
+
+/* GRID */
+
+.main-grid{
+
+  display:grid;
+
+  gap:24px;
+
+  margin-top:25px;
+
+}
+
+
 
 @media(min-width:900px){
-.tender-grid{grid-template-columns:1fr 1fr;}
+
+  .main-grid{grid-template-columns:1.15fr 0.85fr;}
+
 }
 
-.tender-card{
-padding:18px;
-border-radius:14px;
-background:linear-gradient(135deg, rgba(25,25,25,0.85), rgba(10,10,10,0.95));
-border:1px solid rgba(255,255,255,0.08);
-box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+
+/* CARDS */
+
+.left,.right,.section-card{
+
+  background:rgba(0,0,0,0.60);
+
+  padding:20px;
+
+  border-radius:16px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(10px);
+
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+
+
+.left h2,.right h2,.section-card h2{
+
+  margin-bottom:16px;
+
+  font-size:28px;
+
+  line-height:1.2;
+
+}
+
+
+
+.section-card h2{text-align:center}
+
+
+
+.left p,.right p,.section-card p{
+
+  color:var(--ink);
+
+  line-height:1.75;
+
+  margin-bottom:14px;
+
+}
+
+
+
+.subtle{
+
+  color:#e7e1d3;
+
+  opacity:0.95;
+
+}
+
+
+
+.law-btn{
+
+  display:inline-block;
+
+  margin-top:10px;
+
+  padding:12px 20px;
+
+  border-radius:32px;
+
+  font-weight:700;
+
+  font-size:13px;
+
+  background:linear-gradient(135deg,#ffd700,#ffb300);
+
+  color:#000;
+
+  box-shadow:
+
+  0 6px 0 rgba(0,0,0,.5),
+
+  0 15px 30px rgba(0,0,0,.6);
+
+  transition:0.25s;
+
+}
+
+
+
+.law-btn:hover{
+
+  transform: translateY(-2px) scale(1.03);
+
+}
+
+
+
+.note-box{
+
+  margin-top:18px;
+
+  padding:18px;
+
+  border-radius:14px;
+
+  background:linear-gradient(
+
+  135deg,
+
+  rgba(80,14,20,0.28),
+
+  rgba(20,20,20,0.62)
+
+  );
+
+  border:1px solid rgba(180,40,60,0.22);
+
+  line-height:1.8;
+
+}
+
+
+
+.note-box strong{
+
+  color:#ffd700;
+
+}
+
+
+
+.info-box{
+
+  margin-top:18px;
+
+  padding:18px;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,0.04);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  line-height:1.8;
+
+  color:var(--ink);
+
+}
+
+
+
+.info-box strong{
+
+  color:#ffd700;
+
+}
+
+
+
+.measure-list{
+
+  display:grid;
+
+  gap:12px;
+
+  margin-top:12px;
+
+}
+
+
+
+.measure-item{
+
+  padding:14px 16px;
+
+  border-radius:12px;
+
+  background:rgba(255,255,255,0.04);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  color:var(--ink);
+
+  line-height:1.65;
+
+}
+
+
+
+.measure-item b{
+
+  display:block;
+
+  color:#fff;
+
+  margin-bottom:4px;
+
+}
+
+
+
+/* TABLE */
+
+.table-wrap{
+
+  overflow:auto;
+
+  margin-top:20px;
+
+  border-radius:14px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+}
+
+
+
+.table-wrap table{
+
+  width:100%;
+
+  min-width:700px;
+
+  border-collapse:collapse;
+
+  background:rgba(0,0,0,0.25);
+
+}
+
+
+
+.table-wrap th,
+
+.table-wrap td{
+
+  padding:12px 10px;
+
+  text-align:center;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+
+  font-size:14px;
+
+}
+
+
+
+.table-wrap th{
+
+  background:rgba(255,255,255,0.06);
+
+  font-size:13px;
+
+}
+
+
+
+.table-wrap tr:last-child td{
+
+  border-bottom:none;
+
+}
+
+
+
+/* CHART */
+
+.chart-wrap{
+
+  margin-top:18px;
+
+  border-radius:12px;
+
+  padding:12px;
+
+  height:280px;
+
+  background:rgba(0,0,0,0.22);
+
+  border:1px solid rgba(255,255,255,0.06);
+
+  position:relative;
+
+}
+
+
+
+canvas{
+
+  width:100% !important;
+
+  height:100% !important;
+
+}
+
+
+
+.chart-legend{
+
+  margin-top:16px;
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+
+  justify-content:center;
+
+  font-size:13px;
+
+}
+
+
+
+.chart-legend span{
+
+  background:rgba(0,0,0,0.35);
+
+  padding:6px 10px;
+
+  border-radius:8px;
+
+  border:1px solid rgba(255,255,255,0.05);
+
+}
+
+
+
+/* HIGHLIGHTS */
+
+.highlight-grid{
+
+  display:grid;
+
+  gap:18px;
+
+  margin-top:18px;
+
+}
+
+
+
+@media(min-width:900px){
+
+  .highlight-grid{
+
+    grid-template-columns:1fr 1fr;
+
+  }
+
+}
+
+
+
+.highlight-card{
+
+  padding:18px;
+
+  border-radius:14px;
+
+  background:rgba(255,255,255,0.04);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  line-height:1.75;
+
+}
+
+
+
+.highlight-card h3{
+
+  margin-bottom:8px;
+
+  color:#fff;
+
+  font-size:18px;
+
+}
+
+
+
+.highlight-card p{
+
+  margin:0;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+  text-align:center;
+
+  margin-top:50px;
+
+  padding:30px;
+
+  color:#ccc;
+
+}
+
+
+
+/* WHATSAPP */
+
+.wa-btn{
+
+  position:fixed;
+
+  bottom:35px;
+
+  right:-180px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  padding:10px 16px;
+
+  border-radius:40px;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  background:linear-gradient(
+
+  135deg,
+
+  rgba(37,211,102,0.55),
+
+  rgba(40,120,160,0.45)
+
+  );
+
+  color:#fff;
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+
+  0 4px 12px rgba(0,0,0,0.4),
+
+  inset 0 1px 2px rgba(255,255,255,0.25);
+
+  z-index:9999;
+
+  transition:right 0.6s ease;
+
+}
+
+
+
+.wa-btn.show{
+
+  right:12px;
+
+}
+
+
+
+.wa-btn img{
+
+  width:22px;
+
+  height:22px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+
+  .brand img{height:70px}
+
+
+
+  .nav{
+
+    justify-content:center;
+
+  }
+
+
+
+  .page-hero{
+
+    padding:18px 14px;
+
+  }
+
+
+
+  .page-hero h1,
+
+  .left h2,.right h2,.section-card h2{
+
+    font-size:24px;
+
+  }
+
+
+
+  .chart-wrap{
+
+    height:240px;
+
+  }
+
+
+
+  .table-wrap table{
+
+    min-width:620px;
+
+  }
+
 }
 
 </style>
+
 </head>
+
+
 
 <body>
 
+
+
 <header>
+
 <div class="container head">
 
+
+
 <div class="brand">
+
 <a href="index.html">
-<img src="logo-white.png">
+
+<img src="logo-white.png" alt="Иксан">
+
 </a>
+
 </div>
+
+
 
 <nav class="nav">
 
+
+
 <a href="index.html">ПОЧЕТНА</a>
+
 <a href="kontakt.html">КОНТАКТ</a>
 
+
+
 <div class="menu" id="menu">
+
 <button class="menu-btn">МЕНИ ▾</button>
 
+
+
 <div class="dropdown">
+
 <a href="onama.html">о Нама</a>
+
 <a href="oblasti.html">Области деловања</a>
+
 <a href="ciljevi.html">Стратешки циљеви</a>
+
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
+
 <a href="doniraj.html">Подржите наш рад</a>
+
 <a href="prikljucise.html">Прикључите се нашем раду</a>
+
 <a href="prijavi.html">Представка грађанина</a>
+
 <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+
 <a href="porekloimovine.html">Транспарентност јавних финансија</a>
+
 <a href="sudpravda.html">Независност судског система</a>
+
 <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-</div>
 
 </div>
-</nav>
+
+
+
 </div>
+
+
+
+</nav>
+
+</div>
+
 </header>
 
+
+
 <div class="container">
+
+
+
+<div class="top-buttons">
+
+
+
+<a href="inicijative.html" class="btn btn-dark">
+
+ЗАКОНИ И ПРОПИСИ
+
+</a>
+
+
+
+<a href="prijavi.html" class="btn btn-danger">
+
+ПРЕДСТАВКА ГРАЂАНИНА
+
+</a>
+
+
+
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
+
+ПОДРЖИ НАШ РАД
+
+</a>
+
+
+
+</div>
+
+
+
+<section class="page-hero">
+
+<h1>Транспарентност јавних финансија и јавних набавки</h1>
+
+<p>
+
+Јавне набавке су најосетљивија тачка трошења јавног новца, јер се кроз њих реализује огроман део набавки робе, услуга и радова за институције, јавна предузећа и субјекте који користе или добијају јавна средства. Зато је транспарентност у овој области питање заштите буџета, поверења грађана и стварне борбе против корупције.
+
+</p>
+
+</section>
+
+
+
+<div class="main-grid">
+
+
+
+<div class="left">
+
+
+
+<h2>Тренутно стање у Србији</h2>
+
+
+
+<p>
+
+Србија има важећи Закон о јавним набавкама, објављен у „Службеном гласнику РС“, бр. 91/2019 и 92/2023, а званични систем користи Портал јавних набавки и институционалну подршку Канцеларије за јавне набавке. Правна заштита понуђача води се пред Републичком комисијом за заштиту права у поступцима јавних набавки.
+
+</p>
+
+
+
+<p>
+
+Истовремено, европски стандард у овој области подразумева да закон сам по себи није довољан ако у пракси остаје простор за фаворизовање, дискреционо тумачење услова, сузбијање конкуренције и прикривено трошење буџетског новца. Управо зато је кључно да се формално уређен систем претвори у стварно контролисан и јавно провјерљив механизам.
+
+</p>
+
+
+
+<a href="https://www.paragraf.rs/propisi/zakon-o-javnim-nabavkama.html" target="_blank" class="law-btn">
+
+ЗАКОН О ЈАВНИМ НАБАВКАМА
+
+</a>
+
+
+
+<div class="note-box">
+
+<strong>Кључна поента:</strong><br>
+
+Проблем није само у тексту закона. Проблем је у пракси: када наручилац добије превелика дискрециона овлашћења, када критеријуми постану алат за фаворизовање, када нема довољно јаке независне контроле и када јавност не добија јасан, брз и потпун увид у цео поступак.
+
+</div>
+
+
+
+<div class="info-box">
+
+<strong>Како изгледа злоупотреба у пракси:</strong><br>
+
+• постављају се услови који нису стварно неопходни за предмет набавке<br>
+
+• тражи се превелики финансијски или технички капацитет да би се елиминисали конкуренти<br>
+
+• у техничкој спецификацији убацују се сувишни детаљи који одговарају само једном понуђачу<br>
+
+• бира се понуда која је драстично скупља од тржишне, уз формално образложење<br>
+
+• дугогодишња сарадња са истим кругом добављача отвара пут затвореном систему привилегија
+
+</div>
+
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Питање</th>
+
+<th>Србија — формално стање</th>
+
+<th>Главни практични ризик</th>
+
+<th>ЕУ / најбоља пракса</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Законски оквир</td>
+
+<td>Постоји и унапређен је</td>
+
+<td>Примена није уједначена</td>
+
+<td>Стално усклађивање стандарда и контроле</td>
+
+</tr>
+
+<tr>
+
+<td>Подношење понуда</td>
+
+<td>Електронски систем</td>
+
+<td>Недовољно поверење у потпуну недоступност пре рока</td>
+
+<td>Енкрипција и техничко закључавање</td>
+
+</tr>
+
+<tr>
+
+<td>Критеријуми</td>
+
+<td>Наручилац их одређује</td>
+
+<td>Могуће намештање услова</td>
+
+<td>Строжа контрола пропорционалности</td>
+
+</tr>
+
+<tr>
+
+<td>Избор понуде</td>
+
+<td>Формално образложен</td>
+
+<td>Скупље понуде могу проћи уз спорне услове</td>
+
+<td>Јачи претходни и накнадни надзор</td>
+
+</tr>
+
+<tr>
+
+<td>Контрола</td>
+
+<td>Институционално постоји</td>
+
+<td>Није увек довољно превентивна</td>
+
+<td>Вишеслојна независна контрола</td>
+
+</tr>
+
+<tr>
+
+<td>Јавност података</td>
+
+<td>Портал постоји</td>
+
+<td>Јавност не види увек лако „црвене заставице“</td>
+
+<td>Open data + аналитика цена</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+
+<div class="section-card">
+
+<h2>Графички приказ стања јавних набавки</h2>
+
+
+
+<p>
+
+Годишње се у Републици Србији кроз јавне набавке троши око 9 милијарди евра. Недостатак контроле и конкуренције доводи до системских губитака јавних средстава.
+
+</p>
+
+
+
+<div class="chart-wrap">
+
+<canvas id="budgetChart"></canvas>
+
+</div>
+
+
+
+<p>
+
+Увођењем контроле, транспарентности и правичне конкуренције, могуће је значајно смањити укупну потрошњу и спречити део ненаменског одлива новца.
+
+</p>
+
+
+
+<div class="chart-wrap">
+
+<canvas id="reformSavingsChart"></canvas>
+
+</div>
+
+
+
+<p>
+
+Највећи део новца пролази кроз секторе у којима је и највећи ризик за злоупотребе — инфраструктуру, јавна предузећа и велике институционалне набавке.
+
+</p>
+
+
+
+<div class="chart-wrap">
+
+<canvas id="sectorChart"></canvas>
+
+</div>
+
+
+
+<p>
+
+Када систем нема довољно контроле, део укупне вредности јавних набавки одлази на прецењене цене, договорене услове и изостанак праве конкуренције.
+
+</p>
+
+
+
+<div class="chart-wrap">
+
+<canvas id="corruptionChart"></canvas>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="right">
+
+
+
+<h2>Шта мора да се промени</h2>
+
+
+
+<div class="measure-list">
+
+
+
+<div class="measure-item">
+
+<b>1. Технички закључане понуде</b>
+
+Понуда мора бити шифрована и недоступна сваком кориснику система до истека рока за подношење.
+
+</div>
+
+
+
+<div class="measure-item">
+
+<b>2. Аутоматско отварање</b>
+
+Отварање понуда мора бити аутоматско, без могућности ручног увида или селективног приступа.
+
+</div>
+
+
+
+<div class="measure-item">
+
+<b>3. Контрола пропорционалности услова</b>
+
+Сваки услов у конкурсној документацији мора да буде нужан и образложен предметом набавке.
+
+</div>
+
+
+
+<div class="measure-item">
+
+<b>4. Аутоматско поређење тржишних цена</b>
+
+Систем мора сигнализирати драстична одступања од уобичајене тржишне цене.
+
+</div>
+
+
+
+<div class="measure-item">
+
+<b>5. Јавност свих понуда и уговора</b>
+
+После истека рока, цене, понуде, критеријуми и уговори морају бити лако доступни и упоредиви.
+
+</div>
+
+
+
+<div class="measure-item">
+
+<b>6. Независни надзор</b>
+
+Надзор не сме бити само унутар система наручилаца; потребно је јаче независно праћење и ревизија.
+
+</div>
+
+
+
+<div class="measure-item">
+
+<b>7. Лична одговорност</b>
+
+За намештене услове, фаворизовање или ненаменско трошење морају постојати јасне санкције.
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="info-box">
+
+<strong>Европски модел који вреди применити:</strong><br>
+
+Најбољи системи не ослањају се само на законски текст, већ на комбинацију техничке заштите, отворених података, независних институција и континуиране анализе ризика.
+
+</div>
+
+
+
+<div class="note-box">
+
+<strong>Посебан ризик у пракси:</strong><br>
+
+Један од најопаснијих момената јесте фаза до истека рока за подношење понуда. Ако постоји било каква могућност превременог увида у понуду или њене кључне елементе, отвара се простор да се фаворизованом понуђачу „дојави“ шта треба да достави, по којој цени и под којим условима да би прошао.
+
+</div>
+
+
+
+<div class="info-box">
+
+<strong>Зато решење мора бити двоструко:</strong><br>
+
+1. технички немогућ увид пре рока<br>
+
+2. јавна, аутоматска и проверљива процедура отварања и упоређивања понуда
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
 <section class="section-card">
 
-<h2>Најчешћи облици намештања тендера</h2>
+<h2>Илустрација злоупотребе: 95 vs 200 динара</h2>
 
-<div class="tender-grid">
 
-<div class="tender-card">
-<h3>Фаворизовање понуђача</h3>
-<p><b>Како изгледа:</b> Услови који одговарају једном кругу добављача</p>
-<p><b>Последица:</b> Сузбијање конкуренције</p>
-<p><b>Решење:</b> Независна провера критеријума</p>
+
+<p>
+
+Један од најочигледнијих облика злоупотребе јавних набавки јесте ситуација у којој тржиште јасно показује распон реалних цена, али се уговор закључи са скупљом понудом која је „проходна“ због унапред прилагођених услова. То није техничка грешка — то је образац који уништава конкуренцију и штети буџету.
+
+</p>
+
+
+
+<div class="chart-wrap">
+
+<canvas id="priceChart"></canvas>
+
 </div>
 
-<div class="tender-card">
-<h3>Претерани финансијски услови</h3>
-<p><b>Како изгледа:</b> Тражи се непотребно велика финансијска снага</p>
-<p><b>Последица:</b> Искључење мањих понуђача</p>
-<p><b>Решење:</b> Тест пропорционалности</p>
+
+
+<div class="chart-legend">
+
+<span><b style="color:#ffb300">■</b> Реалне / конкурентне понуде</span>
+
+<span><b style="color:#ff5c5c">■</b> Изабрана скупља понуда</span>
+
 </div>
 
-<div class="tender-card">
-<h3>Техничке спецификације по мери</h3>
-<p><b>Како изгледа:</b> Сувишни захтеви</p>
-<p><b>Последица:</b> Предност једног понуђача</p>
-<p><b>Решење:</b> Контрола спецификација</p>
+
+
+<div class="highlight-grid">
+
+<div class="highlight-card">
+
+<h3>Шта се дешава у намештеном систему</h3>
+
+<p>
+
+Услови у конкурсној документацији не служе да пронађу најбољу понуду, него да елиминишу већину конкурената и формално оставе простор само једном „пожељном“ понуђачу.
+
+</p>
+
 </div>
 
-<div class="tender-card">
-<h3>Избор знатно скупље понуде</h3>
-<p><b>Како изгледа:</b> Тржиште показује једно, уговор иде другом</p>
-<p><b>Последица:</b> Штета по буџет</p>
-<p><b>Решење:</b> Аутоматска анализа цена и ревизија</p>
-</div>
 
-<div class="tender-card">
-<h3>Затворени круг добављача</h3>
-<p><b>Како изгледа:</b> Исти понуђачи годинама добијају послове</p>
-<p><b>Последица:</b> Ризик од корупције</p>
-<p><b>Решење:</b> Јавна аналитика победника</p>
-</div>
 
-<div class="tender-card">
-<h3>Слаба јавна видљивост</h3>
-<p><b>Како изгледа:</b> Подаци нису упоредиви</p>
-<p><b>Последица:</b> Теже откривање злоупотребе</p>
-<p><b>Решење:</b> Open data</p>
+<div class="highlight-card">
+
+<h3>Шта је исправно решење</h3>
+
+<p>
+
+Систем мора аутоматски означити огромна ценовна одступања, тражити посебно образложење и покренути надзор када изабрана цена очигледно одудара од распона тржишних понуда.
+
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- SVE OSTALO ISPOD OSTALO IDENTIČNO -->
+
+
+<section class="section-card">
+
+<h2>Најчешћи облици намештања тендера</h2>
+
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Облик злоупотребе</th>
+
+<th>Како изгледа</th>
+
+<th>Последица</th>
+
+<th>Решење</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Фаворизовање понуђача</td>
+
+<td>Услови који одговарају једном кругу добављача</td>
+
+<td>Сузбијање конкуренције</td>
+
+<td>Независна провера критеријума</td>
+
+</tr>
+
+<tr>
+
+<td>Претерани финансијски услови</td>
+
+<td>Тражи се непотребно велика финансијска снага</td>
+
+<td>Искључење мањих, способних понуђача</td>
+
+<td>Тест пропорционалности услова</td>
+
+</tr>
+
+<tr>
+
+<td>Техничке спецификације по мери</td>
+
+<td>Уносе се сувишни захтеви за робу/услугу</td>
+
+<td>Предност добија унапред познат понуђач</td>
+
+<td>Стандардизоване и контролисане спецификације</td>
+
+</tr>
+
+<tr>
+
+<td>Избор знатно скупље понуде</td>
+
+<td>Тржиште показује једно, уговор иде другом</td>
+
+<td>Штета по буџет</td>
+
+<td>Аутоматска анализа цена и ревизија</td>
+
+</tr>
+
+<tr>
+
+<td>Затворени круг добављача</td>
+
+<td>Исти понуђачи годинама добијају послове</td>
+
+<td>Ризик од корупције и договореног тржишта</td>
+
+<td>Јавна аналитика победника и уговора</td>
+
+</tr>
+
+<tr>
+
+<td>Слаба јавна видљивост</td>
+
+<td>Подаци постоје, али нису лако упоредиви</td>
+
+<td>Грађани и медији теже откривају злоупотребу</td>
+
+<td>Open data, претрага и упоредивост</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 </div>
 
+</section>
+
+
+
+<section class="section-card">
+
+<h2>Програм решења за заштиту новца грађана</h2>
+
+
+
+<p>
+
+Наш циљ није само критика, већ изградња модела који свако може да разуме, преузме и примени: од локалне самоуправе до републичког нивоа.
+
+</p>
+
+
+
+<div class="highlight-grid">
+
+
+
+<div class="highlight-card">
+
+<h3>1. Потпуна дигитална заштита</h3>
+
+<p>
+
+Све понуде шифроване до рока. Нема увида, нема „дојаве“, нема ручног отварања.
+
+</p>
+
+</div>
+
+
+
+<div class="highlight-card">
+
+<h3>2. Обавезна анализа цене</h3>
+
+<p>
+
+Свака понуда изнад нормалног тржишног распона аутоматски се означава као ризична.
+
+</p>
+
+</div>
+
+
+
+<div class="highlight-card">
+
+<h3>3. Јавни увид у уговоре</h3>
+
+<p>
+
+Ниједан уговор који троши јавни новац не сме бити фактички сакривен од грађана.
+
+</p>
+
+</div>
+
+
+
+<div class="highlight-card">
+
+<h3>4. Независан надзор ван дневне политике</h3>
+
+<p>
+
+Јавне набавке не смеју бити затворен круг наручиоца, извођача и формалне контроле.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+<footer>© 2025 Иксан • Снага правде</footer>
+
+
+
 <script>
-const menu=document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+const menu = document.getElementById('menu');
+
+if (menu) {
+
+  const btn = menu.querySelector('.menu-btn');
+
+  if (btn) {
+
+    btn.onclick = () => menu.classList.toggle('open');
+
+  }
+
+
+
+  document.addEventListener('click', (e) => {
+
+    if (!menu.contains(e.target)) {
+
+      menu.classList.remove('open');
+
+    }
+
+  });
+
+}
+
+
+
+window.addEventListener("load", () => {
+
+  setTimeout(() => {
+
+    const wa = document.querySelector(".wa-btn");
+
+    if (wa) wa.classList.add("show");
+
+  }, 300);
+
+});
+
+
+
+function safeChart(id, config){
+
+  const el = document.getElementById(id);
+
+  if(el){
+
+    new Chart(el, config);
+
+  }
+
+}
+
+
+
+safeChart('priceChart',{
+
+  type:'bar',
+
+  data:{
+
+    labels:['Понуда 1','Понуда 2','Понуда 3','Изабрана понуда'],
+
+    datasets:[{
+
+      label:'Цена у динарима',
+
+      data:[95,99,102,200],
+
+      backgroundColor:[
+
+        'rgba(255, 179, 0, 0.70)',
+
+        'rgba(255, 179, 0, 0.70)',
+
+        'rgba(255, 179, 0, 0.70)',
+
+        'rgba(255, 92, 92, 0.75)'
+
+      ],
+
+      borderColor:[
+
+        '#ffb300',
+
+        '#ffb300',
+
+        '#ffb300',
+
+        '#ff5c5c'
+
+      ],
+
+      borderWidth:2,
+
+      borderRadius:10
+
+    }]
+
+  },
+
+  options:{
+
+    responsive:true,
+
+    maintainAspectRatio:false,
+
+    plugins:{
+
+      legend:{display:false},
+
+      tooltip:{
+
+        callbacks:{
+
+          label:function(ctx){
+
+            return 'Цена: ' + ctx.raw.toLocaleString('sr-RS') + ' дин';
+
+          }
+
+        }
+
+      }
+
+    },
+
+    scales:{
+
+      x:{
+
+        ticks:{color:'#fff'},
+
+        grid:{color:'rgba(255,255,255,0.05)'}
+
+      },
+
+      y:{
+
+        ticks:{color:'#fff'},
+
+        grid:{color:'rgba(255,255,255,0.05)'}
+
+      }
+
+    }
+
+  }
+
+});
+
+
+
+safeChart('budgetChart',{
+
+  type:'bar',
+
+  data:{
+
+    labels:['Јавне набавке годишње'],
+
+    datasets:[{
+
+      label:'Милијарде €',
+
+      data:[9],
+
+      backgroundColor:'rgba(255, 179, 0, 0.7)',
+
+      borderColor:'#ffb300',
+
+      borderWidth:2,
+
+      borderRadius:10
+
+    }]
+
+  },
+
+  options:{
+
+    responsive:true,
+
+    maintainAspectRatio:false,
+
+    plugins:{legend:{display:false}},
+
+    scales:{
+
+      y:{
+
+        ticks:{color:'#fff'},
+
+        grid:{color:'rgba(255,255,255,0.05)'}
+
+      },
+
+      x:{
+
+        ticks:{color:'#fff'},
+
+        grid:{color:'rgba(255,255,255,0.05)'}
+
+      }
+
+    }
+
+  }
+
+});
+
+
+
+safeChart('reformSavingsChart',{
+
+  type:'bar',
+
+  data:{
+
+    labels:['Сада','После контроле'],
+
+    datasets:[{
+
+      label:'Милијарде €',
+
+      data:[9,7],
+
+      backgroundColor:[
+
+        'rgba(255, 92, 92, 0.75)',
+
+        'rgba(60, 200, 120, 0.75)'
+
+      ],
+
+      borderColor:[
+
+        '#ff5c5c',
+
+        '#3cc878'
+
+      ],
+
+      borderWidth:2,
+
+      borderRadius:10
+
+    }]
+
+  },
+
+  options:{
+
+    responsive:true,
+
+    maintainAspectRatio:false,
+
+    plugins:{legend:{display:false}},
+
+    scales:{
+
+      y:{
+
+        ticks:{color:'#fff'},
+
+        grid:{color:'rgba(255,255,255,0.05)'}
+
+      },
+
+      x:{
+
+        ticks:{color:'#fff'},
+
+        grid:{color:'rgba(255,255,255,0.05)'}
+
+      }
+
+    }
+
+  }
+
+});
+
+
+
+safeChart('sectorChart',{
+
+  type:'pie',
+
+  data:{
+
+    labels:[
+
+      'Инфраструктура',
+
+      'Јавна предузећа',
+
+      'Здравство',
+
+      'Образовање',
+
+      'Остало'
+
+    ],
+
+    datasets:[{
+
+      data:[35,25,15,10,15],
+
+      backgroundColor:[
+
+        '#ffb300',
+
+        '#ff5c5c',
+
+        '#3cc878',
+
+        '#4da6ff',
+
+        '#aaaaaa'
+
+      ]
+
+    }]
+
+  },
+
+  options:{
+
+    responsive:true,
+
+    maintainAspectRatio:false,
+
+    plugins:{
+
+      legend:{
+
+        labels:{color:'#fff'}
+
+      }
+
+    }
+
+  }
+
+});
+
+
+
+safeChart('corruptionChart',{
+
+  type:'doughnut',
+
+  data:{
+
+    labels:['Реална вредност','Губитак'],
+
+    datasets:[{
+
+      data:[70,30],
+
+      backgroundColor:[
+
+        '#3cc878',
+
+        '#ff5c5c'
+
+      ]
+
+    }]
+
+  },
+
+  options:{
+
+    responsive:true,
+
+    maintainAspectRatio:false,
+
+    plugins:{
+
+      legend:{
+
+        labels:{color:'#fff'}
+
+      }
+
+    }
+
+  }
+
+});
+
 </script>
 
+
+
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+
+  Пишите нам
+
 </a>
 
-</body>
-</html>
 
-<!-- SVE SEKCIJE DO TABELE OSTAJU ISTE -->
+
+</body>
+
+</html>
