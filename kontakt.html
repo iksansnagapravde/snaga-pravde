@@ -89,7 +89,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 gap:14px;
-margin-top:30px; /* malo više da diše */
+margin-top:30px;
 }
 
 .btn{
@@ -115,32 +115,51 @@ color:#000;
 box-shadow:0 6px 0 #cc9a00,0 0 20px rgba(255,215,0,0.5);
 }
 
-/* CONTENT */
+/* GRID kao prijavi */
 .main-grid{
 display:grid;
-gap:30px;
-margin-top:25px;
+gap:25px;
+margin-top:30px;
 }
 
-/* 🔥 NOVA KARTICA (PLAVI GLASS) */
-.left{
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
+}
+
+/* DOC CARD STYLE (kao prijavi.html) */
+.doc-card{
 background:linear-gradient(
 135deg,
-rgba(20,30,60,0.35),
-rgba(10,15,30,0.65)
+rgba(60,10,20,0.25),
+rgba(20,20,20,0.65)
 );
+padding:30px;
+border-radius:15px;
+border:1px solid rgba(140,20,40,0.25);
+box-shadow:0 10px 30px rgba(0,0,0,.6);
+transition:.25s ease;
+position:relative;
+}
 
-padding:28px;
-border-radius:18px;
+.doc-card:hover{
+transform:translateY(-4px);
+border:1px solid rgba(180,40,60,0.4);
+box-shadow:0 15px 40px rgba(0,0,0,.75);
+}
 
-border:1px solid rgba(120,150,255,0.15);
+.doc-card h2, .doc-card h3{
+margin-bottom:10px;
+}
 
-backdrop-filter:blur(10px);
+.doc-card p{
+color:#ddd;
+margin-bottom:10px;
+}
 
-box-shadow:
-0 10px 30px rgba(0,0,0,.6);
-
-line-height:1.7;
+.doc-card ul{
+margin-top:10px;
+padding-left:18px;
+color:#ddd;
 }
 
 /* WHATSAPP */
@@ -244,23 +263,24 @@ box-shadow:0 4px 12px rgba(0,0,0,0.5);
 
 <div class="main-grid">
 
-<div class="left">
+<!-- KONTAKT -->
+<div class="doc-card">
 
 <h2>Контакт и подршка</h2>
 
 <p>Контакт са удружењем се остварује <b>искључиво</b> на следеће начине:</p>
 
-<p>WhatsApp— дугме „Пишите нам“ у доњем десном углу.</p>
+<p><b>WhatsApp:</b> дугме „Пишите нам“ у доњем десном углу.</p>
 
-<p>Представка грађанина за све правне проблеме.</p>
+<p><b>Правна питања:</b> искључиво путем представке.</p>
 
 <hr style="margin:20px 0; opacity:0.2;">
 
-<p><b>За медије и институције:</b><br>066-585-7-707.</p>
+<p><b>За медије и институције:</b><br>066-585-7-707</p>
 
-<p><b>За грађане, раднике и предузетнике:</b><br>обавезно представка.</p>
+<p><b>За грађане, раднике и предузетнике:</b></p>
 
-<ul style="margin-top:10px;padding-left:18px;color:#ddd;">
+<ul>
 <li>преузмите формулар</li>
 <li>попуните податке</li>
 <li>опишите проблем</li>
@@ -278,15 +298,27 @@ iksan.snaga.pravde@gmail.com
 </p>
 
 </div>
-    <div class="card reveal impresum">
-      <h3>Основни подаци</h3>
-      <p>Седиште: Београд</p>
-      <p>Седиште: Бојводе Степе 127</p>
-      <p>Email: iksan.snaga.pravde@gmail.com</p>
-      <p>Телефон:066 585 7 707</p>
-      <p>МБ: 28406312</p>
-      <p>ПИБ: 115357260</p>
-    </div>
+
+<!-- IMPRESUM -->
+<div class="doc-card">
+
+<h3>Основни подаци</h3>
+
+<p>Седиште: Београд</p>
+<p>Адреса: Војводе Степе 127</p>
+
+<hr style="margin:15px 0; opacity:0.2;">
+
+<p>Email: iksan.snaga.pravde@gmail.com</p>
+<p>Телефон: 066 585 7 707</p>
+
+<hr style="margin:15px 0; opacity:0.2;">
+
+<p>МБ: 28406312</p>
+<p>ПИБ: 115357260</p>
+
+</div>
+
 </div>
 
 </div>
