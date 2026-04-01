@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Заштита права грађана и институционална одговорност</title>
+<title>Заштита људских права и одговорност институција</title>
 
 <link rel="icon" href="logo-white.png">
 
@@ -50,6 +50,7 @@ padding:4px 10px;
 
 .brand img{height:95px;}
 
+/* NAV */
 .nav{
 display:flex;
 align-items:center;
@@ -171,7 +172,7 @@ font-size:14px;
 border:1px solid rgba(120,170,255,0.3);
 }
 
-/* GRID + CARDS */
+/* GRID */
 .grid{
 display:grid;
 gap:20px;
@@ -183,47 +184,86 @@ margin-top:40px;
 .grid{grid-template-columns:1fr 1fr;}
 }
 
+/* PREMIUM CARD */
 .card{
-display:block;
-padding:22px;
-border-radius:18px;
+position:relative;
+padding:24px;
+border-radius:20px;
 
-background:linear-gradient(
-135deg,
-rgba(25,25,25,0.75),
-rgba(10,10,10,0.85)
-);
+background:
+linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01)),
+linear-gradient(135deg, rgba(25,25,25,0.85), rgba(10,10,10,0.95));
 
-backdrop-filter:blur(10px);
+backdrop-filter:blur(14px);
 
-border:1px solid rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.12);
 
 box-shadow:
-0 10px 30px rgba(0,0,0,.6),
-inset 0 1px 1px rgba(255,255,255,0.05);
+0 20px 50px rgba(0,0,0,.7),
+inset 0 1px 0 rgba(255,255,255,.1);
 
-transition:0.25s ease;
+transition:0.35s cubic-bezier(.2,.8,.2,1);
+overflow:hidden;
 }
 
+.card::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(120deg, transparent, rgba(255,255,255,0.08), transparent);
+opacity:0;
+transition:0.4s;
+}
+
+.card:hover::before{opacity:1;}
+
 .card:hover{
-transform:translateY(-5px);
-border:1px solid rgba(211,164,81,0.45);
+transform:translateY(-6px) scale(1.02);
+border:1px solid rgba(211,164,81,0.5);
 box-shadow:
-0 18px 40px rgba(0,0,0,.8),
-0 0 14px rgba(211,164,81,0.25);
+0 30px 70px rgba(0,0,0,.9),
+0 0 20px rgba(211,164,81,0.2);
 }
 
 .card h3{
-color:#ffffff;
-margin-bottom:8px;
-font-size:15px;
+font-size:17px;
+margin-bottom:10px;
+font-weight:700;
 }
 
 .card p{
-color:#dcdcdc;
 font-size:14px;
 line-height:1.6;
-opacity:0.9;
+color:#ddd;
+}
+
+/* MINI GRAPH */
+.mini-chart{
+margin-top:14px;
+}
+
+.bar{
+height:6px;
+border-radius:10px;
+background:rgba(255,255,255,0.1);
+overflow:hidden;
+margin-top:6px;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(90deg,#d3a451,#ffd700);
+}
+
+.fill.red{
+background:linear-gradient(90deg,#a11,#ff4d4d);
+}
+
+.chart-label{
+font-size:12px;
+color:#bbb;
+display:flex;
+justify-content:space-between;
 }
 
 /* WHATSAPP */
@@ -332,7 +372,7 @@ color:#ccc;
 </header>
 
 <div class="hero">
-<h1>Заштита људских права и одговорност институција</h1>
+<h1>Радник мора бити заштићен</h1>
 <p class="sub">Удружење грађана „Иксан – Снага правде“</p>
 
 <div class="cta-row">
@@ -348,35 +388,65 @@ color:#ccc;
 
 <div class="grid">
 
-<a href="egzistencijalni-minimum.html" class="card">
-<h3>Закон о егзистенцијалном минимуму</h3>
-<p>Минимум 45.000 динара за достојанствен живот сваког грађанина.</p>
+<a href="#" class="card">
+<h3>Нико не сме живети испод минимума</h3>
+<p>Гарантован минимум за достојанствен живот.</p>
+<div class="mini-chart">
+<div class="chart-label"><span>Сада</span><span>После</span></div>
+<div class="bar"><div class="fill red" style="width:40%"></div></div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
 </a>
 
-<a href="ukidanjeizvrsitelja.html" class="card">
-<h3>Закон о стечају физичких лица</h3>
-<p>Излазак грађана из дужничког ропства и реформа извршења.</p>
+<a href="#" class="card">
+<h3>Крај дужничког ропства</h3>
+<p>Заштита грађана од неправедне наплате.</p>
+<div class="mini-chart">
+<div class="chart-label"><span>Притисак</span><span>Заштита</span></div>
+<div class="bar"><div class="fill red" style="width:85%"></div></div>
+<div class="bar"><div class="fill" style="width:60%"></div></div>
+</div>
 </a>
 
-<a href="porekloimovine.html" class="card">
-<h3>Транспарентност јавних финасија и јавних набавки</h3>
-<p>Контрола одговорности и имовине функционера.</p>
+<a href="#" class="card">
+<h3>Свака имовина мора имати порекло</h3>
+<p>Пуна контрола јавних финансија.</p>
+<div class="mini-chart">
+<div class="chart-label"><span>Скривено</span><span>Јавно</span></div>
+<div class="bar"><div class="fill red" style="width:75%"></div></div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
 </a>
 
-<a href="sudpravda.html" class="card">
-<h3>Независност судства</h3>
-<p>Ефикасност правосуђа.</p>
+<a href="#" class="card">
+<h3>Правда мора бити видљива</h3>
+<p>Транспарентно и ефикасно судство.</p>
+<div class="mini-chart">
+<div class="chart-label"><span>Неповерење</span><span>Поверење</span></div>
+<div class="bar"><div class="fill red" style="width:70%"></div></div>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+</div>
 </a>
 
-<a href="radnicipreduzetnici.html" class="card">
-<h3>Без заштићеног радника нема јаке државе</h3>
-<p>Правна сигурност рада и пословања.</p>
+<a href="#" class="card">
+<h3>Радник мора бити заштићен</h3>
+<p>Сигуран рад и фер тржиште.</p>
+<div class="mini-chart">
+<div class="chart-label"><span>Несигурност</span><span>Сигурност</span></div>
+<div class="bar"><div class="fill red" style="width:80%"></div></div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
 </a>
 
-<a href="zastita-konkurencije.html" class="card">
-<h3>Нови закон о заштити конкуренције УСКОРО ВИШЕ!!!</h3>
-<p>Сузбијање монопола и заштита тржишта.</p>
-</a>  
+<a href="#" class="card">
+<h3>Крај монопола</h3>
+<p>Заштита тржишта и конкуренције.</p>
+<div class="mini-chart">
+<div class="chart-label"><span>Монопол</span><span>Тржиште</span></div>
+<div class="bar"><div class="fill red" style="width:85%"></div></div>
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+</a>
 
 </div>
 
