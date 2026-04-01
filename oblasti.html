@@ -1,257 +1,1141 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Области деловања — Иксан</title>
+  <meta name="description" content="Иксан — заштита права грађана, правна сигурност, борба против корупције и јачање институција.">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<title>Области — Иксан</title>
+  <style>
+    :root{
+      --navy:#0f172a;
+      --navy-2:#111c34;
+      --gold:#d3a451;
+      --gold-hover:#bf9141;
+      --text:#111827;
+      --muted:#667085;
+      --line:#e5e7eb;
+      --bg:#ffffff;
+      --soft:#f8fafc;
+      --footer:#05070d;
+      --white:#ffffff;
+      --shadow:0 10px 30px rgba(15,23,42,.08);
+      --radius:22px;
+      --container:1180px;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
 
-<style>
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit}
+    ul{padding-left:1.1rem}
 
-:root{
---primary:#0f172a;
---accent:#d3a451;
---text:#0b0b0b;
---muted:#6b7280;
---bg:#ffffff;
-}
+    .container{
+      width:min(var(--container), calc(100% - 32px));
+      margin:0 auto;
+    }
 
-*{box-sizing:border-box;margin:0;padding:0}
+    /* HEADER */
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(17,24,39,.08);
+    }
 
-body{
-font-family:'Inter',sans-serif;
-background:#fff;
-color:var(--text);
-line-height:1.6;
-}
+    .header-inner{
+      min-height:84px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
 
-/* ===== HEADER ===== */
-header{
-position:sticky;
-top:0;
-background:#fff;
-border-bottom:1px solid #eee;
-z-index:100;
-}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:0;
+    }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
+    .brand img{
+      height:56px;
+      width:auto;
+      object-fit:contain;
+    }
 
-.head{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      line-height:1.05;
+    }
 
-.brand img{
-height:70px;
-}
+    .brand-text strong{
+      font-size:1rem;
+      font-weight:800;
+      color:var(--navy);
+      letter-spacing:.02em;
+    }
 
-.nav{
-display:flex;
-gap:20px;
-}
+    .brand-text span{
+      font-size:.78rem;
+      color:var(--muted);
+      margin-top:4px;
+    }
 
-.nav a{
-color:#111;
-font-weight:500;
-}
+    .header-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
 
-/* ===== HERO ===== */
-.hero{
-padding:80px 20px 50px;
-text-align:center;
-max-width:800px;
-margin:auto;
-}
+    .donate-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:0 18px;
+      border-radius:14px;
+      background:var(--gold);
+      color:#111;
+      font-weight:800;
+      letter-spacing:.02em;
+      transition:.2s ease;
+      white-space:nowrap;
+    }
 
-.hero h1{
-font-size:40px;
-margin-bottom:20px;
-}
+    .donate-btn:hover{
+      background:var(--gold-hover);
+      transform:translateY(-1px);
+    }
 
-.hero p{
-color:var(--muted);
-font-size:18px;
-}
+    .menu-toggle{
+      width:52px;
+      height:52px;
+      border:2px solid #111;
+      border-radius:14px;
+      background:#fff;
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      transition:.2s ease;
+    }
 
-/* ===== CTA ===== */
-.cta{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:30px;
-flex-wrap:wrap;
-}
+    .menu-toggle:hover{transform:translateY(-1px)}
+    .menu-icon,
+    .menu-icon::before,
+    .menu-icon::after{
+      content:"";
+      display:block;
+      width:22px;
+      height:2.5px;
+      background:#111;
+      border-radius:999px;
+      transition:.25s ease;
+      position:relative;
+    }
 
-.btn{
-padding:12px 22px;
-border-radius:30px;
-font-weight:600;
-font-size:14px;
-border:none;
-cursor:pointer;
-transition:0.2s;
-}
+    .menu-icon::before{position:absolute;top:-7px}
+    .menu-icon::after{position:absolute;top:7px}
 
-.btn-primary{
-background:var(--accent);
-color:#000;
-}
+    /* MOBILE / OVERLAY MENU */
+    .menu-overlay{
+      position:fixed;
+      inset:0;
+      background:rgba(6,9,17,.55);
+      opacity:0;
+      visibility:hidden;
+      transition:.25s ease;
+      z-index:1200;
+    }
 
-.btn-dark{
-background:#111;
-color:#fff;
-}
+    .menu-overlay.open{
+      opacity:1;
+      visibility:visible;
+    }
 
-.btn-outline{
-border:1px solid #ddd;
-background:#fff;
-}
+    .mobile-menu{
+      position:absolute;
+      top:0;
+      right:0;
+      width:min(420px, 100%);
+      height:100%;
+      background:#fff;
+      box-shadow:-20px 0 60px rgba(0,0,0,.12);
+      transform:translateX(100%);
+      transition:.3s ease;
+      overflow-y:auto;
+    }
 
-.btn:hover{
-transform:translateY(-2px);
-}
+    .menu-overlay.open .mobile-menu{
+      transform:translateX(0);
+    }
 
-/* ===== CARDS ===== */
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-margin-top:80px;
-}
+    .menu-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:18px 18px 14px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:5;
+    }
 
-.card{
-padding:30px;
-border-radius:20px;
-border:1px solid #eee;
-background:#fff;
-transition:0.2s;
-}
+    .menu-close{
+      width:52px;
+      height:52px;
+      border:2px solid #111;
+      border-radius:14px;
+      background:#fff;
+      font-size:1.6rem;
+      cursor:pointer;
+    }
 
-.card:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 30px rgba(0,0,0,0.05);
-}
+    .menu-search{
+      padding:18px;
+      border-bottom:1px solid var(--line);
+    }
 
-.card h2{
-margin-bottom:15px;
-}
+    .menu-search input{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:14px;
+      min-height:50px;
+      padding:0 16px;
+      outline:none;
+      font-size:1rem;
+      background:#fafafa;
+    }
 
-.card p{
-color:var(--muted);
-}
+    .menu-list{
+      padding:6px 18px 24px;
+    }
 
-.card ul{
-margin-top:10px;
-padding-left:20px;
-color:var(--muted);
-}
+    .menu-section{
+      border-bottom:1px solid var(--line);
+    }
 
-/* ===== MOBILE ===== */
-@media(max-width:768px){
-.grid{
-grid-template-columns:1fr;
-}
-.hero h1{
-font-size:30px;
-}
-}
+    .menu-section summary{
+      list-style:none;
+      cursor:pointer;
+      padding:18px 0;
+      font-size:1.55rem;
+      font-weight:800;
+      color:#1f2937;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
 
-/* ===== WHATSAPP ===== */
-.wa-btn{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:#fff;
-padding:12px 18px;
-border-radius:40px;
-font-weight:600;
-display:flex;
-gap:8px;
-align-items:center;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
+    .menu-section summary::-webkit-details-marker{display:none}
+    .menu-section summary::after{
+      content:"+";
+      font-size:1.5rem;
+      color:var(--gold);
+      line-height:1;
+    }
 
-.wa-btn img{
-width:20px;
-}
+    .menu-section[open] summary::after{content:"−"}
 
-</style>
+    .menu-links{
+      display:grid;
+      gap:10px;
+      padding:0 0 18px 0;
+    }
+
+    .menu-links a{
+      font-size:1.05rem;
+      color:#374151;
+    }
+
+    .menu-cta{
+      padding:22px 18px 36px;
+    }
+
+    .menu-cta a{
+      width:100%;
+      justify-content:center;
+      display:inline-flex;
+    }
+
+    /* HERO */
+    .hero{
+      padding:72px 0 40px;
+      background:
+        radial-gradient(circle at top left, rgba(211,164,81,.10), transparent 28%),
+        linear-gradient(to bottom, #fff, #fff);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:42px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      border:1px solid rgba(15,23,42,.08);
+      background:#fff;
+      border-radius:999px;
+      padding:10px 14px;
+      color:var(--navy);
+      font-weight:700;
+      font-size:.92rem;
+      box-shadow:var(--shadow);
+    }
+
+    .eyebrow-dot{
+      width:9px;
+      height:9px;
+      border-radius:50%;
+      background:var(--gold);
+      flex:0 0 auto;
+    }
+
+    .hero h1{
+      font-size:clamp(2.5rem, 6vw, 5rem);
+      line-height:.98;
+      letter-spacing:-.04em;
+      margin:20px 0 18px;
+      color:var(--navy);
+      font-weight:800;
+      max-width:11ch;
+    }
+
+    .hero p{
+      font-size:1.1rem;
+      color:var(--muted);
+      max-width:60ch;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-top:28px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:16px;
+      font-weight:800;
+      transition:.2s ease;
+    }
+
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      background:var(--navy);
+      color:#fff;
+    }
+    .btn-secondary{
+      background:var(--gold);
+      color:#111;
+    }
+    .btn-outline{
+      border:1px solid var(--line);
+      background:#fff;
+      color:var(--text);
+    }
+
+    .hero-card{
+      background:linear-gradient(180deg, #ffffff, #f8fafc);
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:28px;
+      padding:28px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero-card-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:24px;
+    }
+
+    .hero-card-top img{
+      height:64px;
+      width:auto;
+      object-fit:contain;
+    }
+
+    .hero-badge{
+      font-size:.82rem;
+      font-weight:800;
+      color:var(--navy);
+      background:rgba(211,164,81,.16);
+      border-radius:999px;
+      padding:8px 12px;
+    }
+
+    .hero-points{
+      display:grid;
+      gap:14px;
+    }
+
+    .hero-point{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:14px 0;
+      border-top:1px solid var(--line);
+    }
+
+    .hero-point:first-child{border-top:0;padding-top:0}
+
+    .hero-point strong{
+      display:block;
+      font-size:1rem;
+      color:var(--navy);
+      margin-bottom:2px;
+    }
+
+    .hero-point span{
+      color:var(--muted);
+      font-size:.97rem;
+    }
+
+    .point-icon{
+      width:12px;
+      height:12px;
+      border-radius:3px;
+      margin-top:7px;
+      background:var(--gold);
+      flex:0 0 auto;
+    }
+
+    /* STATS */
+    .stats{
+      padding:18px 0 28px;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+
+    .stat{
+      background:var(--soft);
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:20px;
+      padding:22px;
+    }
+
+    .stat strong{
+      display:block;
+      font-size:clamp(1.9rem, 4vw, 3rem);
+      line-height:1;
+      letter-spacing:-.03em;
+      color:var(--navy);
+      margin-bottom:8px;
+    }
+
+    .stat span{
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    /* SECTION GENERIC */
+    .section{
+      padding:72px 0;
+    }
+
+    .section.alt{
+      background:var(--soft);
+    }
+
+    .section-head{
+      max-width:780px;
+      margin-bottom:34px;
+    }
+
+    .section-head .kicker{
+      display:inline-block;
+      color:var(--gold);
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-size:.82rem;
+      margin-bottom:12px;
+    }
+
+    .section-head h2{
+      font-size:clamp(2rem, 4vw, 3.4rem);
+      line-height:1.02;
+      letter-spacing:-.035em;
+      color:var(--navy);
+      margin-bottom:14px;
+    }
+
+    .section-head p{
+      color:var(--muted);
+      font-size:1.05rem;
+      max-width:58ch;
+    }
+
+    /* AREAS */
+    .areas-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .area-card{
+      background:#fff;
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:24px;
+      padding:24px;
+      min-height:240px;
+      box-shadow:var(--shadow);
+      transition:.22s ease;
+    }
+
+    .area-card:hover{
+      transform:translateY(-4px);
+    }
+
+    .area-number{
+      font-size:.86rem;
+      font-weight:800;
+      color:var(--gold);
+      margin-bottom:16px;
+      letter-spacing:.08em;
+    }
+
+    .area-card h3{
+      font-size:1.35rem;
+      line-height:1.15;
+      color:var(--navy);
+      margin-bottom:10px;
+    }
+
+    .area-card p{
+      color:var(--muted);
+      font-size:.98rem;
+    }
+
+    /* TWO COLUMN BLOCK */
+    .split{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:28px;
+      align-items:start;
+    }
+
+    .info-card{
+      background:#fff;
+      border:1px solid rgba(15,23,42,.08);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:var(--shadow);
+    }
+
+    .info-card h3{
+      font-size:1.8rem;
+      color:var(--navy);
+      line-height:1.08;
+      margin-bottom:14px;
+      letter-spacing:-.03em;
+    }
+
+    .info-card p,
+    .info-card li{
+      color:var(--muted);
+      font-size:1rem;
+    }
+
+    .info-card ul{
+      margin-top:10px;
+      display:grid;
+      gap:10px;
+    }
+
+    /* CTA BAND */
+    .cta-band{
+      padding:72px 0;
+      background:var(--navy);
+      color:#fff;
+    }
+
+    .cta-band-inner{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .cta-band h2{
+      font-size:clamp(2.2rem, 4vw, 4rem);
+      line-height:1;
+      letter-spacing:-.04em;
+      margin-bottom:12px;
+    }
+
+    .cta-band p{
+      color:rgba(255,255,255,.72);
+      max-width:54ch;
+    }
+
+    .cta-band-actions{
+      display:flex;
+      justify-content:flex-end;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    /* FOOTER */
+    .site-footer{
+      background:var(--footer);
+      color:#fff;
+      padding:72px 0 36px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:34px;
+      margin-bottom:36px;
+    }
+
+    .footer-col h4{
+      font-size:1.05rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:#d1d5db;
+      margin-bottom:18px;
+      padding-bottom:14px;
+      border-bottom:1px solid rgba(255,255,255,.14);
+    }
+
+    .footer-col a{
+      display:block;
+      color:#c7ced8;
+      margin:10px 0;
+      font-size:.98rem;
+      transition:.2s ease;
+    }
+
+    .footer-col a:hover{
+      color:#fff;
+    }
+
+    .footer-cta{
+      margin:8px 0 30px;
+    }
+
+    .footer-bottom{
+      border-top:1px solid rgba(255,255,255,.14);
+      padding-top:24px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .footer-copy{
+      color:#9ca3af;
+      font-size:.95rem;
+    }
+
+    .footer-social{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .social{
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.18);
+      display:grid;
+      place-items:center;
+      color:#fff;
+      font-size:.94rem;
+      font-weight:800;
+    }
+
+    /* WHATSAPP */
+    .wa-btn{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:990;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      min-height:52px;
+      padding:0 16px;
+      border-radius:999px;
+      background:#25D366;
+      color:#fff;
+      font-weight:800;
+      box-shadow:0 12px 28px rgba(0,0,0,.18);
+    }
+
+    .wa-btn img{width:22px;height:22px}
+
+    /* RESPONSIVE */
+    @media (max-width: 1080px){
+      .hero-grid,
+      .cta-band-inner,
+      .split{
+        grid-template-columns:1fr;
+      }
+
+      .cta-band-actions{
+        justify-content:flex-start;
+      }
+
+      .areas-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media (max-width: 720px){
+      .header-inner{
+        min-height:76px;
+      }
+
+      .brand img{
+        height:50px;
+      }
+
+      .brand-text span{
+        display:none;
+      }
+
+      .donate-btn{
+        min-height:44px;
+        padding:0 14px;
+        font-size:.92rem;
+      }
+
+      .menu-toggle,
+      .menu-close{
+        width:48px;
+        height:48px;
+      }
+
+      .hero{
+        padding:46px 0 28px;
+      }
+
+      .hero h1{
+        max-width:100%;
+      }
+
+      .section,
+      .cta-band,
+      .site-footer{
+        padding-top:56px;
+        padding-bottom:56px;
+      }
+
+      .areas-grid,
+      .stats-grid,
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero-actions,
+      .cta-band-actions{
+        flex-direction:column;
+        align-items:stretch;
+      }
+
+      .btn{
+        width:100%;
+      }
+
+      .wa-btn span{
+        display:none;
+      }
+
+      .wa-btn{
+        width:54px;
+        height:54px;
+        padding:0;
+        justify-content:center;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-<div class="container head">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Иксан почетна">
+        <img src="logo-white.png" alt="Иксан лого">
+        <div class="brand-text">
+          <strong>ИКСАН</strong>
+          <span>Снага правде и заштита грађана</span>
+        </div>
+      </a>
 
-<div class="brand">
-<img src="logo-white.png">
-</div>
+      <div class="header-actions">
+        <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+        <button class="menu-toggle" id="openMenu" aria-label="Отвори мени" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="menu-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<nav class="nav">
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
-</nav>
+  <div class="menu-overlay" id="menuOverlay">
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="menu-top">
+        <a href="index.html" class="brand" aria-label="Иксан почетна">
+          <img src="logo-white.png" alt="Иксан лого">
+        </a>
+        <button class="menu-close" id="closeMenu" aria-label="Затвори мени">×</button>
+      </div>
 
-</div>
-</header>
+      <div class="menu-search">
+        <input type="text" placeholder="Претрага сајта">
+      </div>
 
-<section class="hero">
-<h1>Области деловања</h1>
+      <div class="menu-list">
+        <details class="menu-section" open>
+          <summary>О нама</summary>
+          <div class="menu-links">
+            <a href="onama.html">Ко смо ми</a>
+            <a href="ciljevi.html">Стратешки циљеви</a>
+            <a href="uradili.html">Шта смо до сада урадили</a>
+          </div>
+        </details>
 
-<p>
-Наш рад је усмерен на заштиту права грађана, борбу против корупције и јачање институција.
-</p>
+        <details class="menu-section">
+          <summary>Области</summary>
+          <div class="menu-links">
+            <a href="oblasti.html">Области деловања</a>
+            <a href="sudpravda.html">Независност судства</a>
+            <a href="porekloimovine.html">Транспарентност јавних финансија</a>
+            <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+            <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+          </div>
+        </details>
 
-<div class="cta">
-<a href="inicijative.html" class="btn btn-outline">Закони и прописи</a>
-<a href="prijavi.html" class="btn btn-dark">Представка грађанина</a>
-<a href="doniraj.html" class="btn btn-primary">Подржи рад</a>
-</div>
-</section>
+        <details class="menu-section">
+          <summary>Активности</summary>
+          <div class="menu-links">
+            <a href="inicijative.html">Иницијативе</a>
+            <a href="prijavi.html">Представка грађанина</a>
+            <a href="prikljucise.html">Прикључи се</a>
+            <a href="kontakt.html">Контакт</a>
+          </div>
+        </details>
+      </div>
 
-<div class="container">
+      <div class="menu-cta">
+        <a href="doniraj.html" class="donate-btn">ПОДРЖИ НАШ РАД</a>
+      </div>
+    </aside>
+  </div>
 
-<div class="grid">
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Независна грађанска иницијатива
+          </div>
 
-<div class="card">
-<h2>Наш приступ</h2>
-<p>
-Делујемо кроз правну подршку, иницијативе за измену закона и активно учешће у јавном животу.
-</p>
-</div>
+          <h1>Области деловања.</h1>
 
-<div class="card">
-<h2>Кључне области</h2>
-<ul>
-<li>Заштита људских и грађанских права</li>
-<li>Борба против корупције</li>
-<li>Транспарентност институција</li>
-<li>Правна подршка грађанима</li>
-<li>Економска правда</li>
-<li>Заштита радника и предузетника</li>
-<li>Развој демократије</li>
-<li>Заштита права у поступцима</li>
-</ul>
-</div>
+          <p>
+            Наш рад је усмерен на заштиту права грађана, борбу против корупције,
+            јачање институција и правну сигурност у друштву. Овде је јасно, модерно
+            и усмерено на акцију — без вишка, без хаоса.
+          </p>
 
-</div>
+          <div class="hero-actions">
+            <a href="prijavi.html" class="btn btn-primary">ПРИЈАВИ СЛУЧАЈ</a>
+            <a href="doniraj.html" class="btn btn-secondary">ПОДРЖИ РАД</a>
+            <a href="inicijative.html" class="btn btn-outline">ЗАКОНИ И ПРОПИСИ</a>
+          </div>
+        </div>
 
-</div>
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <img src="logo-white.png" alt="Иксан лого">
+            <span class="hero-badge">Јавно деловање</span>
+          </div>
 
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
-</a>
+          <div class="hero-points">
+            <div class="hero-point">
+              <span class="point-icon"></span>
+              <div>
+                <strong>Правна подршка</strong>
+                <span>Помаже грађанима да разумеју и заштите своја права.</span>
+              </div>
+            </div>
 
+            <div class="hero-point">
+              <span class="point-icon"></span>
+              <div>
+                <strong>Системске промене</strong>
+                <span>Покреће иницијативе за измене закона и праксе.</span>
+              </div>
+            </div>
+
+            <div class="hero-point">
+              <span class="point-icon"></span>
+              <div>
+                <strong>Јавни интерес</strong>
+                <span>Делује транспарентно, одговорно и у корист грађана.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <strong>8+</strong>
+            <span>кључних области деловања</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>фокус на јавни интерес и права грађана</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>доступност информација и представки</span>
+          </div>
+          <div class="stat">
+            <strong>1</strong>
+            <span>јасан циљ — правда, одговорност, сигурност</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Шта радимо</span>
+          <h2>Кључне области у којима делујемо.</h2>
+          <p>
+            Секције су постављене тако да могу лако да се шире. Сад имаш чист систем,
+            а касније у сваку картицу убацујеш више текста, линкове, бројеве и посебне странице.
+          </p>
+        </div>
+
+        <div class="areas-grid">
+          <article class="area-card">
+            <div class="area-number">01</div>
+            <h3>Заштита људских и грађанских права</h3>
+            <p>Залагање за достојанство, једнак третман и заштиту појединца у институционалним поступцима.</p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-number">02</div>
+            <h3>Борба против корупције</h3>
+            <p>Указивање на злоупотребе, непрозирне механизме и поступке који урушавају поверење у систем.</p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-number">03</div>
+            <h3>Транспарентност институција</h3>
+            <p>Јачање јавне одговорности, доступности информација и законитог рада органа власти.</p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-number">04</div>
+            <h3>Правна подршка грађанима</h3>
+            <p>Практична помоћ, усмеравање и јасне информације за грађане који траже правну сигурност.</p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-number">05</div>
+            <h3>Економска правда</h3>
+            <p>Подршка фер правилима, одговорном управљању и равноправном економском положају грађана.</p>
+          </article>
+
+          <article class="area-card">
+            <div class="area-number">06</div>
+            <h3>Заштита рада и привреде</h3>
+            <p>Одбрана правне извесности за раднике, предузетнике и све који зависе од поштених правила игре.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <article class="info-card">
+          <h3>Наш приступ</h3>
+          <p>
+            Делујемо кроз правну подршку, иницијативе за измену закона, јавно
+            заговарање и упорно инсистирање на институционалној одговорности.
+          </p>
+          <p style="margin-top:12px;">
+            Циљ није само реакција на појединачне проблеме, већ трајна промена
+            правила и праксе која штити сваког грађанина.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Кључни приоритети</h3>
+          <ul>
+            <li>заштита права у поступцима</li>
+            <li>владавина права и независност институција</li>
+            <li>правна сигурност рада и привреде</li>
+            <li>одговорно управљање јавним средствима</li>
+            <li>борба против системских злоупотреба</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>Подржи рад који има смисла.</h2>
+          <p>
+            Ако желиш да овај сајт не буде само информативан, већ стварно усмерен на акцију,
+            онда главни позив мора бити јасан и стално видљив — зато је „Донирај“ у header-у, а поново и овде.
+          </p>
+        </div>
+
+        <div class="cta-band-actions">
+          <a href="doniraj.html" class="btn btn-secondary">ДОНИРАЈ</a>
+          <a href="prikljucise.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.25);background:transparent;">ПРИКЉУЧИ СЕ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>О нама</h4>
+          <a href="onama.html">Ко смо ми</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="uradili.html">Шта смо до сада урадили</a>
+          <a href="kontakt.html">Контакт</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ресурси</h4>
+          <a href="inicijative.html">Иницијативе</a>
+          <a href="inicijative.html">Закони и прописи</a>
+          <a href="prijavi.html">Представка грађанина</a>
+          <a href="#">Архива</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Укључи се</h4>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="doniraj.html">Подржи наш рад</a>
+          <a href="#">Волонтирај</a>
+          <a href="#">Партнери</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Актуелно</h4>
+          <a href="#">Вести</a>
+          <a href="#">Кампање</a>
+          <a href="#">Истраживања</a>
+          <a href="#">Јавна саопштења</a>
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        <a href="doniraj.html" class="donate-btn">ПОДРЖИ НАШ РАД</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Иксан. Сва права задржана.</p>
+
+        <div class="footer-social">
+          <a href="#" class="social" aria-label="Facebook">f</a>
+          <a href="#" class="social" aria-label="Instagram">ig</a>
+          <a href="#" class="social" aria-label="X">X</a>
+          <a href="#" class="social" aria-label="YouTube">yt</a>
+          <a href="#" class="social" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/381665857707" class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Пишите нам на WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+    <span>Пишите нам</span>
+  </a>
+
+  <script>
+    const openMenuBtn = document.getElementById('openMenu');
+    const closeMenuBtn = document.getElementById('closeMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function openMenu(){
+      menuOverlay.classList.add('open');
+      openMenuBtn.setAttribute('aria-expanded', 'true');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu(){
+      menuOverlay.classList.remove('open');
+      openMenuBtn.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    openMenuBtn.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+
+    menuOverlay.addEventListener('click', (e) => {
+      if (e.target === menuOverlay) closeMenu();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  </script>
 </body>
 </html>
