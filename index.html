@@ -439,16 +439,24 @@ transform:translateY(-2px) scale(1.03);
 }
 .wa-btn img{width:22px;height:22px;}
 
-/* MOBILE */
 @media(max-width:768px){
-.brand img{height:80px;}
-.nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-.dropdown{
-right:auto;
-left:0;
+  .brand img{height:80px;}
+
+  .nav{
+    flex-wrap:nowrap;   /* OVO JE GLAVNO */
+    justify-content:center;
+    gap:6px;
+  }
+
+  .nav a, .menu-btn{
+    padding:6px 10px;
+    font-size:0.75rem;
+  }
+
+  .dropdown{
+    right:auto;
+    left:0;
+  }
 }
 }
 
