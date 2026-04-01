@@ -13,7 +13,14 @@
 
 :root{
 --gold:#d3a451;
+--gold-soft:rgba(211,164,81,.18);
 --ink:#dcdcdc;
+--glass:rgba(20,20,20,0.60);
+--glass-strong:rgba(15,15,15,0.78);
+--line:rgba(255,255,255,.10);
+--danger:rgba(140,20,40,0.72);
+--danger-dark:rgba(80,10,25,0.62);
+--ok:rgba(42,126,89,0.72);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -64,13 +71,10 @@ padding:6px 10px;
 border-radius:10px;
 font-weight:600;
 font-size:0.85rem;
-
 background:rgba(0,0,0,0.45);
-
 box-shadow:
 0 6px 0 rgba(0,0,0,.8),
 0 18px 35px rgba(0,0,0,.9);
-
 transition:.15s;
 }
 
@@ -104,7 +108,7 @@ display:block;
 padding:9px 10px;
 }
 
-/* ===== CTA FIX ===== */
+/* CTA */
 .cta-row{
 display:flex;
 flex-direction:column;
@@ -119,11 +123,9 @@ border-radius:40px;
 font-weight:700;
 font-size:13px;
 text-transform:uppercase;
-
 box-shadow:
 0 6px 0 rgba(0,0,0,.5),
 0 15px 30px rgba(0,0,0,.6);
-
 transition:.25s;
 }
 
@@ -151,42 +153,271 @@ color:#000;
 
 /* HERO */
 .hero{
-padding:50px 0;
+padding:50px 0 28px;
 text-align:center;
 animation:fadeIn 1s ease;
 }
 
 h1{
-font-size:32px;
+font-size:34px;
+letter-spacing:.3px;
 }
 
 .sub{
 color:var(--ink);
-max-width:700px;
-margin:10px auto;
+max-width:830px;
+margin:12px auto 0;
+line-height:1.6;
+font-size:17px;
 }
 
-/* GRID */
+/* MAIN LAYOUT */
 .grid{
 display:grid;
-gap:20px;
+gap:22px;
 margin-top:30px;
 }
 
 @media(min-width:900px){
-.grid{grid-template-columns:repeat(2,1fr)}
+.grid{grid-template-columns:repeat(12,1fr)}
+.col-12{grid-column:span 12}
+.col-8{grid-column:span 8}
+.col-7{grid-column:span 7}
+.col-6{grid-column:span 6}
+.col-5{grid-column:span 5}
+.col-4{grid-column:span 4}
 }
 
+/* PREMIUM CARD */
 .card{
-background:rgba(20,20,20,0.6);
-padding:20px;
-border-radius:20px;
-box-shadow:0 20px 50px rgba(0,0,0,.7);
+position:relative;
+background:
+linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)),
+linear-gradient(135deg, rgba(60,10,20,0.22), rgba(20,20,20,0.74));
+padding:24px;
+border-radius:22px;
+border:1px solid var(--line);
+box-shadow:
+0 20px 50px rgba(0,0,0,.62),
+inset 0 1px 0 rgba(255,255,255,.09);
+overflow:hidden;
+backdrop-filter:blur(10px);
 }
 
-.card.full{grid-column:1/-1}
+.card::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(120deg, transparent, rgba(255,255,255,.06), transparent);
+opacity:.45;
+pointer-events:none;
+}
 
-.card p,.card li{color:#ddd}
+.card.hero-card{
+padding:30px;
+background:
+linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)),
+linear-gradient(135deg, rgba(92,18,30,0.38), rgba(16,16,16,0.86));
+}
+
+.card h2,.card h3{
+margin-bottom:10px;
+position:relative;
+z-index:1;
+}
+
+.card p,.card li{
+color:#ddd;
+line-height:1.68;
+position:relative;
+z-index:1;
+}
+
+.card ul{
+padding-left:18px;
+margin-top:10px;
+display:grid;
+gap:8px;
+}
+
+.eyebrow{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:7px 12px;
+border-radius:999px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.08);
+font-size:12px;
+letter-spacing:.8px;
+text-transform:uppercase;
+color:#f3dfb1;
+margin-bottom:14px;
+position:relative;
+z-index:1;
+}
+
+.gold{
+color:#f0c979;
+}
+
+.big-quote{
+font-size:26px;
+line-height:1.4;
+font-weight:700;
+color:#fff;
+margin-top:4px;
+}
+
+.divider{
+height:1px;
+background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
+margin:16px 0;
+}
+
+/* STAT TILES */
+.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+margin-top:18px;
+position:relative;
+z-index:1;
+}
+
+.stat{
+padding:16px;
+border-radius:18px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+.stat .num{
+font-size:28px;
+font-weight:700;
+color:#fff;
+margin-bottom:4px;
+}
+
+.stat .label{
+font-size:13px;
+color:#d5d5d5;
+line-height:1.5;
+}
+
+/* GRAPH */
+.chart{
+margin-top:16px;
+display:grid;
+gap:14px;
+position:relative;
+z-index:1;
+}
+
+.bar-group{
+display:grid;
+gap:7px;
+}
+
+.bar-head{
+display:flex;
+justify-content:space-between;
+gap:12px;
+font-size:14px;
+color:#f0f0f0;
+}
+
+.bar{
+height:12px;
+border-radius:999px;
+background:rgba(255,255,255,.08);
+overflow:hidden;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.fill{
+height:100%;
+border-radius:999px;
+background:linear-gradient(90deg, #d3a451, #f6d28a);
+box-shadow:0 0 20px rgba(211,164,81,.25);
+}
+
+.fill.red{
+background:linear-gradient(90deg, rgba(163,31,55,.95), rgba(224,96,115,.9));
+box-shadow:0 0 20px rgba(180,40,60,.25);
+}
+
+.fill.green{
+background:linear-gradient(90deg, rgba(64,149,101,.95), rgba(107,209,149,.88));
+box-shadow:0 0 20px rgba(64,149,101,.25);
+}
+
+/* MESSAGE CARDS */
+.message{
+font-size:19px;
+line-height:1.6;
+color:#fff;
+}
+
+.lead{
+font-size:17px;
+color:#eee;
+}
+
+.mini-grid{
+display:grid;
+gap:16px;
+margin-top:8px;
+}
+
+@media(min-width:900px){
+.mini-grid.two{grid-template-columns:1fr 1fr;}
+.mini-grid.three{grid-template-columns:repeat(3,1fr);}
+}
+
+/* SOLUTION BADGE */
+.badge-num{
+width:42px;
+height:42px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:14px;
+background:linear-gradient(135deg, rgba(211,164,81,.28), rgba(211,164,81,.10));
+border:1px solid rgba(211,164,81,.25);
+color:#f0d28f;
+font-weight:700;
+font-size:17px;
+box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.solution-title{
+font-size:22px;
+margin-bottom:10px;
+}
+
+/* LIST HIGHLIGHT */
+.check-list{
+list-style:none;
+padding-left:0;
+margin-top:12px;
+}
+
+.check-list li{
+padding-left:22px;
+position:relative;
+}
+
+.check-list li::before{
+content:"◆";
+position:absolute;
+left:0;
+top:0;
+color:#f0c979;
+font-size:12px;
+}
 
 /* ANIM */
 @keyframes fadeIn{
@@ -204,39 +435,47 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
+.hero{
+padding:38px 0 20px;
 }
 
-/* ===== WHATSAPP SLIDE ===== */
+h1{
+font-size:28px;
+}
+
+.sub{
+font-size:16px;
+}
+
+.stats{
+grid-template-columns:1fr;
+}
+
+}
+
+/* WHATSAPP SLIDE */
 .wa-btn{
 position:fixed;
 bottom:35px;
 right:-180px;
-
 display:flex;
 align-items:center;
 gap:8px;
-
 padding:10px 16px;
 border-radius:40px;
-
 font-size:13px;
 font-weight:700;
-
 background:linear-gradient(
 135deg,
 rgba(37,211,102,0.55),
 rgba(40,120,160,0.45)
 );
-
 color:#fff;
-
 backdrop-filter:blur(10px);
 border:1px solid rgba(255,255,255,0.15);
-
 box-shadow:
 0 4px 12px rgba(0,0,0,0.4),
 inset 0 1px 2px rgba(255,255,255,0.25);
-
 z-index:9999;
 transition:right 0.6s ease;
 }
@@ -299,7 +538,7 @@ height:22px;
 <h1>Независност и правичност судског система</h1>
 
 <p class="sub">
-Правна држава почива на независном судству и правичном поступку.
+Без транспарентног правосуђа нема правде. Грађани морају да знају како се бирају судије и тужиоци, како се троши новац и зашто се одлуке доносе управо тако.
 </p>
 
 <div class="cta-row">
@@ -312,33 +551,208 @@ height:22px;
 
 <div class="container grid">
 
-<div class="card full">
-<h3>Заштита права грађана</h3>
-<p>Јачање правичног поступка.</p>
+<div class="card hero-card col-12">
+<span class="eyebrow">Кључна порука</span>
+<div class="big-quote">Систем данас ствара <span class="gold">привид транспарентности</span>, али не и стварну контролу јавности.</div>
+<div class="divider"></div>
+<p class="lead">
+Правосуђе је формално реформисано, али у пракси и даље није довољно отворено, није довољно образложено и не улива поверење грађанима. Када су поступци затворени, критеријуми нејасни, а подаци непотпуни — правда постаје недоступна.
+</p>
+
+<div class="stats">
+<div class="stat">
+<div class="num">73,85%</div>
+<div class="label">судова и тужилаштава нема вести које јавности објашњавају њихов рад</div>
+</div>
+<div class="stat">
+<div class="num">3</div>
+<div class="label">институције су, од укупно 218, имале конференцију за медије током 2023.</div>
+</div>
+<div class="stat">
+<div class="num">210 / 218</div>
+<div class="label">одговорило је на захтеве за приступ информацијама, али уз често прекомерну анонимизацију</div>
+</div>
+<div class="stat">
+<div class="num">НЕЈАВНО</div>
+<div class="label">кључни делови избора судија и тужилаца и даље остају ван очију јавности</div>
+</div>
+</div>
 </div>
 
-<div class="card">
-<h3>Реформа притвора</h3>
-<ul>
-<li>Јасни услови</li>
-<li>Контрола</li>
-<li>Разуман рок</li>
+<div class="card col-7">
+<span class="eyebrow">Кратак резиме стања</span>
+<h2>Шта је данас највећи проблем?</h2>
+<p>
+Грађани немају стабилан и јасан увид у рад судова и тужилаштава. Важне информације се ретко објављују, конференције готово не постоје, финансијски подаци су често нејасни, а избор носилаца правосудних функција није довољно јаван.
+</p>
+<ul class="check-list">
+<li>Нема уједначеног и јасног система објављивања информација.</li>
+<li>Грађанин често не зна где да нађе податак, коме да пише и да ли ће добити одговор.</li>
+<li>Одлуке о избору кандидата сувише су уопштене и без стварно мерљивих образложења.</li>
+<li>Транспарентност се често своди на форму, а не на стварну јавну контролу.</li>
 </ul>
 </div>
 
-<div class="card">
-<h3>Хумани услови</h3>
-<p>Унапређење услова.</p>
+<div class="card col-5">
+<span class="eyebrow">Последице</span>
+<h3>Када је систем затворен, последице плаћају грађани</h3>
+<ul class="check-list">
+<li>пада поверење у судове и тужилаштва</li>
+<li>расте сумња у политички утицај и злоупотребе</li>
+<li>слаби право на правично суђење</li>
+<li>грађанин остаје без осећаја да правда важи једнако за све</li>
+</ul>
+<div class="divider"></div>
+<p class="message">
+Правосуђе мора бити <span class="gold">видљиво, објашњиво и одговорно</span> — иначе није стуб правне државе него затворен систем.
+</p>
 </div>
 
-<div class="card">
-<h3>Ресоцијализација</h3>
-<p>Повратак у друштво.</p>
+<div class="card col-6">
+<span class="eyebrow">Графикон — јавност рада</span>
+<h3>Колико је правосуђе стварно видљиво?</h3>
+<div class="chart">
+<div class="bar-group">
+<div class="bar-head"><span>Нема вести на сајтовима</span><strong>73,85%</strong></div>
+<div class="bar"><div class="fill red" style="width:73.85%"></div></div>
 </div>
 
-<div class="card full">
-<h3>Пропорционалност казни</h3>
-<p>Усклађивање са европским стандардима.</p>
+<div class="bar-group">
+<div class="bar-head"><span>Редовније објављене вести (млађе од 45 дана)</span><strong>8,24%</strong></div>
+<div class="bar"><div class="fill" style="width:8.24%"></div></div>
+</div>
+
+<div class="bar-group">
+<div class="bar-head"><span>Вести старије од 45 дана</span><strong>17,88%</strong></div>
+<div class="bar"><div class="fill" style="width:17.88%"></div></div>
+</div>
+
+<div class="bar-group">
+<div class="bar-head"><span>Институције са конференцијом за медије 2023.</span><strong>3 од 218</strong></div>
+<div class="bar"><div class="fill red" style="width:1.4%"></div></div>
+</div>
+</div>
+</div>
+
+<div class="card col-6">
+<span class="eyebrow">Графикон — финансијска видљивост</span>
+<h3>Шта јавност заиста види у информацијама о раду?</h3>
+<div class="chart">
+<div class="bar-group">
+<div class="bar-head"><span>Судови са сигурно ажурираним буџетом у 2024.</span><strong>7%</strong></div>
+<div class="bar"><div class="fill" style="width:7%"></div></div>
+</div>
+
+<div class="bar-group">
+<div class="bar-head"><span>Тужилаштва са сигурно ажурираним буџетом у 2024.</span><strong>10%</strong></div>
+<div class="bar"><div class="fill" style="width:10%"></div></div>
+</div>
+
+<div class="bar-group">
+<div class="bar-head"><span>Судови са сигурно ажурираним платама у 2024.</span><strong>4%</strong></div>
+<div class="bar"><div class="fill red" style="width:4%"></div></div>
+</div>
+
+<div class="bar-group">
+<div class="bar-head"><span>Тужилаштва са сигурно ажурираним јавним набавкама у 2024.</span><strong>8%</strong></div>
+<div class="bar"><div class="fill red" style="width:8%"></div></div>
+</div>
+</div>
+</div>
+
+<div class="card col-12">
+<span class="eyebrow">Проблем избора</span>
+<h2>Избор судија и тужилаца мора престати да буде затворен процес</h2>
+<p class="message">
+Није довољно да јавност види коначно гласање. Јавност мора да види и <span class="gold">критеријуме, разговоре, образложења и рангирање</span>. Ако је кључни део поступка сакривен, онда грађани не могу да провере да ли је изабран најбољи кандидат.
+</p>
+<div class="mini-grid two" style="margin-top:18px;">
+<div class="stat">
+<div class="label" style="font-size:15px;">
+<strong>Шта је спорно?</strong><br>
+Разговори са кандидатима нису јавно доступни, не остаје јавни траг о процени, а образложења су често генерализована и без стварних разлога зашто је изабран баш тај кандидат.
+</div>
+</div>
+<div class="stat">
+<div class="label" style="font-size:15px;">
+<strong>Шта то производи?</strong><br>
+Сумњу у произвољност, слабљење поверења и осећај да систем није заснован на мерљивим резултатима, већ на нетранспарентним одлукама.
+</div>
+</div>
+</div>
+</div>
+
+<div class="card col-4">
+<div class="badge-num">1</div>
+<div class="solution-title">Потпуна јавност рада</div>
+<p>Судови и тужилаштва морају редовно објављивати информације о предметима од јавног значаја, саопштења, статистике и јасна објашњења свог рада.</p>
+<div class="divider"></div>
+<p class="message">Судови морају радити <span class="gold">пред очима грађана</span>.</p>
+</div>
+
+<div class="card col-4">
+<div class="badge-num">2</div>
+<div class="solution-title">Јаван избор судија и тужилаца</div>
+<p>Интервјуи, процене и кључне фазе избора морају бити јавни, снимљени и образложени. Одлуке морају бити индивидуализоване и мерљиве.</p>
+<div class="divider"></div>
+<p class="message">Сваки избор мора бити <span class="gold">јаван и образложен</span>.</p>
+</div>
+
+<div class="card col-4">
+<div class="badge-num">3</div>
+<div class="solution-title">Пуна финансијска транспарентност</div>
+<p>Буџети, плате и јавне набавке морају бити ажурни, јасно датовани и лако читљиви. Не сме бити празних поља и нејасних периода.</p>
+<div class="divider"></div>
+<p class="message">Сваки динар правосуђа мора бити <span class="gold">видљив јавности</span>.</p>
+</div>
+
+<div class="card col-4">
+<div class="badge-num">4</div>
+<div class="solution-title">Професионални портпароли</div>
+<p>Комуникација са јавношћу не сме бити успутан посао. Свако тужилаштво и сваки суд морају имати обучено и доступно лице задужено за јавност.</p>
+<div class="divider"></div>
+<p class="message">Грађанин мора знати <span class="gold">коме да се обрати</span> и добити одговор.</p>
+</div>
+
+<div class="card col-4">
+<div class="badge-num">5</div>
+<div class="solution-title">Јединствена правила за све</div>
+<p>На сајтовима свих судова и тужилаштава морају постојати исте врсте информација, исти формат и исти стандард доступности.</p>
+<div class="divider"></div>
+<p class="message">Правосуђе не сме бити хаос — већ <span class="gold">један систем</span>.</p>
+</div>
+
+<div class="card col-4">
+<div class="badge-num">6</div>
+<div class="solution-title">Одговорност за скривање података</div>
+<p>Када институција не објављује податке, не ажурира информатор или избегава одговоре, мора постојати јасна одговорност руководилаца и овлашћених лица.</p>
+<div class="divider"></div>
+<p class="message">Ко крије информације — <span class="gold">мора сносити последице</span>.</p>
+</div>
+
+<div class="card col-6">
+<span class="eyebrow">Програм реформе</span>
+<h3>Шта треба мењати одмах?</h3>
+<ul class="check-list">
+<li>редовно објављивање информација о важним поступцима</li>
+<li>стандардизација садржаја сајтова судова и тужилаштава</li>
+<li>редовно и стварно ажурирање информатора о раду</li>
+<li>боље електронске базе и лакши приступ документима</li>
+<li>професионализација комуникације са медијима и грађанима</li>
+<li>јасна правила и одговорност за нетранспарентност</li>
+</ul>
+</div>
+
+<div class="card col-6">
+<span class="eyebrow">Завршна порука</span>
+<h3>Правосуђе мора поново служити јавности</h3>
+<p class="message">
+Независно правосуђе није само питање закона, већ и питање јавности, одговорности и поверења. Када је рад институција јаван, када су критеријуми мерљиви, а одлуке образложене — тада грађани поново стичу веру у државу.
+</p>
+<div class="divider"></div>
+<p class="big-quote" style="font-size:24px;">
+Без јавности рада нема поверења. <span class="gold">Без поверења — нема правде.</span>
+</p>
 </div>
 
 </div>
