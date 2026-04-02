@@ -18,11 +18,9 @@
   --line:rgba(0,0,0,0.12);
 }
 
-/* RESET */
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
 
-/* BODY */
 body{
   font-family:"Playfair Display",serif;
   color:var(--text);
@@ -39,12 +37,6 @@ body::before{
   background:
   linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.92)),
   url('lady-justice-hero.webp') center 10% / cover no-repeat;
-  animation:goddessReveal 1.2s ease-out both;
-}
-
-@keyframes goddessReveal{
-  0%{transform:translate(120px,140px) scale(1.08);}
-  100%{transform:translate(0,0) scale(1);}
 }
 
 /* HEADER */
@@ -102,7 +94,7 @@ header{
   padding-right:12px;
 }
 
-/* DONATE */
+/* DONATE HEADER */
 .donate-btn{
   background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
@@ -113,51 +105,8 @@ header{
   font-weight:700;
 }
 
-/* MENU */
-.menu{position:relative}
-
-.menu-btn{
-  width:26px;
-  height:18px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  cursor:pointer;
-}
-
-.menu-btn span{
-  height:2px;
-  background:#000;
-}
-
-.dropdown{
-  position:absolute;
-  top:calc(100% + 10px);
-  right:0;
-  background:#fff;
-  border:1px solid var(--line);
-  display:none;
-  min-width:270px;
-}
-
-.menu.open .dropdown{display:block}
-
-.dropdown a{
-  display:block;
-  padding:10px 14px;
-  font-size:0.85rem;
-  border-bottom:1px solid var(--line);
-}
-
-.dropdown a.active{
-  font-weight:700;
-  color:var(--blue);
-}
-
-/* HERO SPACE */
-.hero-space{
-  height:150px;
-}
+/* HERO */
+.hero-space{height:150px}
 
 /* CONTAINER */
 .container{
@@ -210,33 +159,55 @@ header{
   text-align:center;
 }
 
-/* BUTTON */
+/* MAIN DONATE BUTTON (FIX) */
 .main-donate{
   margin-top:12px;
   width:100%;
   padding:14px;
   border:none;
-  background:var(--blue);
+  background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
   font-weight:700;
   cursor:pointer;
 }
 
+/* ZIRO CARD */
+.bank-card{
+  margin-top:20px;
+  padding:20px;
+  background:#fafafa;
+  border:1px solid var(--line);
+}
+
+.bank-card h3{
+  text-align:center;
+  margin-bottom:12px;
+}
+
+.bank-row{
+  display:flex;
+  justify-content:space-between;
+  padding:6px 0;
+  border-bottom:1px solid #eee;
+  font-size:14px;
+}
+
+.bank-row:last-child{
+  border:none;
+}
+
+.bank-row span:last-child{
+  font-weight:600;
+}
+
 /* SOCIAL */
 .social-bar{
   position:fixed;
-  right:-80px;
+  right:12px;
   bottom:120px;
   display:flex;
   flex-direction:column;
   gap:12px;
-  opacity:0;
-  transition:.6s;
-}
-
-.social-bar.show{
-  right:12px;
-  opacity:1;
 }
 
 .social-bar a{
@@ -254,19 +225,13 @@ header{
 /* WHATSAPP */
 .wa-btn{
   position:fixed;
-  right:-220px;
+  right:12px;
   bottom:50px;
-  display:flex;
-  align-items:center;
-  gap:10px;
   padding:12px 14px;
   background:#25D366;
   color:#fff;
   border-radius:40px;
-  transition:.6s;
 }
-
-.wa-btn.show{right:12px;}
 </style>
 </head>
 
@@ -286,29 +251,9 @@ header{
 </div>
 
 <div class="nav-right">
-
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
-
-<div class="menu" id="menu">
-<div class="menu-btn">
-<span></span><span></span><span></span>
 </div>
 
-<div class="dropdown">
-<a href="index.html"><b>ПОЧЕТНА</b></a>
-<a href="kontakt.html">Контакт</a>
-
-<a href="onama.html">О нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе</a>
-<a href="doniraj.html" class="active">Донирај</a>
-<a href="prikljucise.html">Прикључи се</a>
-<a href="prijavi.html">Представка</a>
-</div>
-</div>
-
-</div>
 </div>
 </header>
 
@@ -330,7 +275,7 @@ header{
 <input type="number" id="customAmount" class="custom" placeholder="Унесите износ (€)">
 
 <button class="main-donate" id="donateBtn">
-ДОНИРАЈТЕ САДА
+ДОНИРАЈ САДА
 </button>
 
 <p style="text-align:center;font-size:12px;margin-top:8px;color:#666;">
@@ -339,9 +284,41 @@ header{
 
 </div>
 
+<!-- ZIRO RACUN -->
+<div class="bank-card">
+
+<h3>Уплата на жиро рачун</h3>
+
+<div class="bank-row">
+<span>Прималац:</span>
+<span>Иксан Снага правде</span>
 </div>
 
-<div class="social-bar" id="socialBar">
+<div class="bank-row">
+<span>Жиро рачун:</span>
+<span>340-100034558018</span>
+</div>
+
+<div class="bank-row">
+<span>Банка:</span>
+<span>Erste банка</span>
+</div>
+
+<div class="bank-row">
+<span>Сврха:</span>
+<span>Донација</span>
+</div>
+
+<div class="bank-row">
+<span>Позив на број:</span>
+<span>2026</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="social-bar">
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
 </div>
@@ -351,9 +328,6 @@ header{
 </a>
 
 <script>
-const menu=document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
-
 let amount=10;
 
 document.querySelectorAll('.amount-btn').forEach(btn=>{
@@ -369,13 +343,6 @@ let custom=document.getElementById('customAmount').value;
 let finalAmount=custom || amount;
 window.open(`https://www.paypal.me/snagapravde/${finalAmount}`,'_blank');
 };
-
-window.addEventListener("load",()=>{
-setTimeout(()=>{
-document.getElementById("socialBar").classList.add("show");
-document.querySelector(".wa-btn").classList.add("show");
-},400);
-});
 </script>
 
 </body>
