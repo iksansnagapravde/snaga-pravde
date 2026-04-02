@@ -8,16 +8,15 @@
 <title>Контакт — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
 --blue:#0a3f78;
---blue-dark:#072f59;
 --orange:#ff5a1f;
 --text:#111;
---line:rgba(0,0,0,0.1);
+--line:rgba(0,0,0,0.12);
 --green:#25D366;
 }
 
@@ -28,6 +27,7 @@ body{
 font-family:"Playfair Display",serif;
 color:var(--text);
 background:url('lady-justice-hero.webp') center top / cover no-repeat fixed;
+filter:contrast(1.1) brightness(1.03);
 padding-bottom:140px;
 }
 
@@ -43,7 +43,7 @@ z-index:1000;
 .head{
 max-width:1150px;
 margin:auto;
-padding:12px 20px;
+padding:12px 0;
 display:flex;
 align-items:center;
 justify-content:space-between;
@@ -53,7 +53,8 @@ justify-content:space-between;
 .brand{
 display:flex;
 align-items:center;
-gap:14px;
+gap:12px;
+padding-left:12px;
 }
 
 .logo-box{
@@ -66,7 +67,7 @@ justify-content:center;
 }
 
 .logo-box img{
-width:66px; /* 🔥 MAX */
+width:66px;
 }
 
 /* TEXT */
@@ -76,13 +77,13 @@ flex-direction:column;
 }
 
 .brand-text .top{
-font-size:0.65rem;
-color:#666;
+font-size:0.6rem;
+color:#777;
 }
 
 .brand-text .main{
-font-size:0.9rem;
-font-weight:700;
+font-size:0.78rem;
+font-weight:600;
 white-space:nowrap;
 }
 
@@ -91,19 +92,22 @@ white-space:nowrap;
 display:flex;
 align-items:center;
 gap:15px;
+padding-right:12px;
 }
 
 .donate-btn{
 background:var(--orange);
 color:#fff;
 padding:10px 16px;
-font-size:0.8rem;
+font-size:0.75rem;
 font-weight:700;
 }
 
 /* MENU */
+.menu{position:relative}
+
 .menu-btn{
-width:28px;
+width:26px;
 height:18px;
 display:flex;
 flex-direction:column;
@@ -116,8 +120,6 @@ height:2px;
 background:#000;
 }
 
-.menu{position:relative}
-
 .dropdown{
 position:absolute;
 top:calc(100% + 10px);
@@ -125,7 +127,7 @@ right:0;
 background:#fff;
 border:1px solid var(--line);
 display:none;
-min-width:240px;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
@@ -133,6 +135,12 @@ min-width:240px;
 .dropdown a{
 display:block;
 padding:10px 14px;
+font-size:0.85rem;
+border-bottom:1px solid var(--line);
+}
+
+.dropdown a:last-child{
+border-bottom:none;
 }
 
 /* HERO */
@@ -151,17 +159,18 @@ margin-top:-80px;
 
 .btn-lite{
 background:#fff;
-border:1px solid #ccc;
+border:1px solid rgba(0,0,0,0.2);
 padding:12px 24px;
-font-size:0.9rem;
+font-size:0.85rem;
 }
 
 .btn-main{
 background:var(--blue);
 color:#fff;
-padding:16px 28px;
-font-size:1rem;
+padding:16px 30px;
+font-size:0.95rem;
 font-weight:700;
+box-shadow:0 10px 25px rgba(10,63,120,0.4);
 }
 
 /* CONTAINER */
@@ -182,16 +191,18 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* CARDS - KOČKE */
+/* CARDS */
 .doc-card{
-padding:24px;
+padding:26px;
 background:#fff;
 border:1px solid var(--line);
+box-shadow:0 14px 30px rgba(0,0,0,0.08);
 }
 
 .doc-card.blue{
 background:var(--blue);
 color:#fff;
+box-shadow:0 18px 40px rgba(10,63,120,0.35);
 }
 
 .doc-card.blue p,
@@ -201,30 +212,41 @@ color:#eaeaea;
 
 .doc-card h2,
 .doc-card h3{
-font-size:16px;
+font-size:15px;
 margin-bottom:12px;
 }
 
 .doc-card p,
 .doc-card li{
-font-size:0.85rem;
-line-height:1.5;
+font-size:0.78rem;
+line-height:1.45;
 }
 
 /* WHATSAPP */
 .wa-btn{
 position:fixed;
 bottom:20px;
-right:-200px;
-background:var(--green);
+right:-220px;
+display:flex;
+align-items:center;
+gap:10px;
+background:rgba(37,211,102,0.92);
 color:#fff;
 padding:12px 16px;
-font-size:0.85rem;
-font-weight:700;
+font-size:0.82rem;
+font-weight:600;
+border:1px solid rgba(255,255,255,0.4);
+backdrop-filter:blur(8px);
+box-shadow:0 8px 20px rgba(37,211,102,0.35);
 transition:0.4s;
 }
 
 .wa-btn.show{right:10px;}
+
+.wa-btn img{
+width:18px;
+filter:brightness(0) invert(1);
+}
 
 /* SOCIAL */
 .social-bar{
@@ -291,7 +313,9 @@ width:18px;
 <a href="ciljevi.html">Циљеви</a>
 <a href="inicijative.html">Иницијативе</a>
 <a href="prijavi.html">Представка</a>
+<a href="doniraj.html">Донирај</a>
 </div>
+
 </div>
 
 </div>
@@ -314,13 +338,13 @@ width:18px;
 
 <h2>Контакт и подршка</h2>
 
-<p>Контакт са удружењем се остварује искључиво:</p>
-<p>WhatsApp: „Пишите нам“ у доњем углу.</p>
-<p>Правна питања: путем представке.</p>
+<p>Контакт:</p>
+<p>„Пишите нам“ у доњем углу.</p>
+<p>Проблем:путем представке.</p>
 
 <hr>
 
-<p>За медије:<br>066-585-7-707</p>
+<p>Медији и институције:<br>066-585-7-707</p>
 
 <ul>
 <li>преузмите формулар</li>
@@ -362,6 +386,7 @@ width:18px;
 </div>
 
 <a href="https://wa.me/381665857707" class="wa-btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
