@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,666 +11,369 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
-  --blue:#0a3f78;
-  --blue-deep:#072f59;
-  --white:#ffffff;
-  --text:#161616;
-  --muted:#4a4a4a;
-  --line:rgba(0,0,0,0.10);
-  --orange:#ff5f1f;
-  --orange-deep:#e34f14;
-  --green:rgba(37, 211, 102, 0.86);
-  --green-border:rgba(255,255,255,0.42);
-  --card-glass:rgba(255,255,255,0.92);
-  --shadow-soft:0 10px 30px rgba(0,0,0,0.08);
-  --shadow-strong:0 18px 50px rgba(0,0,0,0.12);
-  --radius:18px;
+--blue:#0a3f78;
+--blue-dark:#072f59;
+--orange:#ff5a1f;
+--text:#111;
+--line:rgba(0,0,0,0.1);
+--green:#25D366;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
 a{text-decoration:none;color:inherit}
-img{display:block;max-width:100%}
 
 body{
-  font-family:"Playfair Display",serif;
-  color:var(--text);
-  background:
-    linear-gradient(rgba(255,255,255,0.76), rgba(255,255,255,0.78)),
-    url('lady-justice-hero.webp') center top / cover no-repeat fixed;
-  padding-bottom:150px;
+font-family:"Playfair Display",serif;
+color:var(--text);
+background:url('lady-justice-hero.webp') center top / cover no-repeat fixed;
+padding-bottom:140px;
 }
 
 /* HEADER */
 header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(255,255,255,0.84);
-  backdrop-filter:blur(16px) saturate(140%);
-  -webkit-backdrop-filter:blur(16px) saturate(140%);
-  border-bottom:1px solid rgba(255,255,255,0.5);
-  box-shadow:0 1px 0 rgba(0,0,0,0.04);
+position:sticky;
+top:0;
+background:#fff;
+border-bottom:1px solid var(--line);
+z-index:1000;
 }
 
 .head{
-  max-width:1180px;
-  margin:auto;
-  padding:14px 18px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
+max-width:1150px;
+margin:auto;
+padding:12px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
+/* LOGO */
 .brand{
-  min-width:0;
-  display:flex;
-  align-items:center;
-  gap:14px;
+display:flex;
+align-items:center;
+gap:14px;
 }
 
 .logo-box{
-  width:72px;
-  height:72px;
-  flex:0 0 72px;
-  background:linear-gradient(180deg, #0c4788 0%, #083563 100%);
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.22),
-    0 12px 28px rgba(8,53,99,0.28);
+width:72px;
+height:72px;
+background:var(--blue);
+display:flex;
+align-items:center;
+justify-content:center;
 }
 
 .logo-box img{
-  width:64px; /* skoro do ivice */
-  height:64px;
-  object-fit:contain;
+width:66px; /* 🔥 MAX */
 }
 
+/* TEXT */
 .brand-text{
-  min-width:0;
-  display:flex;
-  flex-direction:column;
-  line-height:1.05;
+display:flex;
+flex-direction:column;
 }
 
-.brand-text .overline{
-  font-size:0.66rem;
-  color:#6d6d6d;
-  font-weight:500;
-  letter-spacing:0.1px;
-  margin-bottom:4px;
+.brand-text .top{
+font-size:0.65rem;
+color:#666;
 }
 
-.brand-text .title{
-  font-size:0.9rem;
-  font-weight:700;
-  color:#141414;
-  white-space:nowrap;
+.brand-text .main{
+font-size:0.9rem;
+font-weight:700;
+white-space:nowrap;
 }
 
+/* RIGHT */
 .nav-right{
-  display:flex;
-  align-items:center;
-  gap:14px;
+display:flex;
+align-items:center;
+gap:15px;
 }
 
 .donate-btn{
-  background:linear-gradient(180deg, #ff6a2c 0%, #ff5a1f 100%);
-  color:#fff;
-  padding:12px 18px;
-  font-size:0.84rem;
-  font-weight:700;
-  border-radius:14px;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.26),
-    0 12px 24px rgba(255,95,31,0.26);
-  letter-spacing:0.2px;
-  transition:transform .18s ease, box-shadow .18s ease;
-}
-
-.donate-btn:hover{
-  transform:translateY(-1px);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.26),
-    0 14px 30px rgba(255,95,31,0.32);
+background:var(--orange);
+color:#fff;
+padding:10px 16px;
+font-size:0.8rem;
+font-weight:700;
 }
 
 /* MENU */
-.menu{position:relative}
-
 .menu-btn{
-  width:44px;
-  height:44px;
-  border-radius:12px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:6px;
-  cursor:pointer;
-  background:rgba(255,255,255,0.82);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  box-shadow:var(--shadow-soft);
-  padding:0 10px;
+width:28px;
+height:18px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+cursor:pointer;
 }
 
 .menu-btn span{
-  height:2.5px;
-  background:#111;
-  border-radius:20px;
-  display:block;
+height:2px;
+background:#000;
 }
 
+.menu{position:relative}
+
 .dropdown{
-  position:absolute;
-  top:calc(100% + 12px);
-  right:0;
-  width:280px;
-  background:rgba(255,255,255,0.94);
-  backdrop-filter:blur(18px) saturate(140%);
-  -webkit-backdrop-filter:blur(18px) saturate(140%);
-  border:1px solid rgba(255,255,255,0.65);
-  border-radius:20px;
-  box-shadow:var(--shadow-strong);
-  padding:10px;
-  display:none;
+position:absolute;
+top:calc(100% + 10px);
+right:0;
+background:#fff;
+border:1px solid var(--line);
+display:none;
+min-width:240px;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
-  display:block;
-  padding:12px 14px;
-  font-size:0.95rem;
-  color:#222;
-  border-radius:12px;
-  transition:background .18s ease, transform .18s ease;
-}
-
-.dropdown a:hover{
-  background:rgba(10,63,120,0.08);
-  transform:translateX(2px);
+display:block;
+padding:10px 14px;
 }
 
 /* HERO */
-.hero{
-  max-width:1180px;
-  margin:0 auto;
-  padding:34px 20px 0;
-}
-
 .hero-space{
-  height:280px;
+height:260px;
 }
 
+/* BUTTONS */
 .top-buttons{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:16px;
-  margin-top:-78px;
-}
-
-.btn-lite,
-.btn-main{
-  border-radius:18px;
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  text-align:center;
-  box-shadow:var(--shadow-soft);
-  transition:transform .18s ease, box-shadow .18s ease;
-}
-
-.btn-lite:hover,
-.btn-main:hover{
-  transform:translateY(-1px);
-  box-shadow:var(--shadow-strong);
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:14px;
+margin-top:-80px;
 }
 
 .btn-lite{
-  background:rgba(255,255,255,0.96);
-  color:#151515;
-  border:1px solid rgba(0,0,0,0.10);
-  padding:14px 26px;
-  font-size:0.94rem;
-  font-weight:500;
-  min-width:310px;
+background:#fff;
+border:1px solid #ccc;
+padding:12px 24px;
+font-size:0.9rem;
 }
 
 .btn-main{
-  background:linear-gradient(180deg, #0d4c8f 0%, #0a3f78 100%);
-  color:#fff;
-  border:1px solid rgba(255,255,255,0.16);
-  padding:18px 30px;
-  font-size:1rem;
-  font-weight:700;
-  min-width:430px;
-  letter-spacing:0.15px;
+background:var(--blue);
+color:#fff;
+padding:16px 28px;
+font-size:1rem;
+font-weight:700;
 }
 
-/* CONTENT */
+/* CONTAINER */
 .container{
-  max-width:1180px;
-  margin:auto;
-  padding:26px 20px 0;
+max-width:1150px;
+margin:auto;
+padding:20px;
 }
 
+/* GRID */
 .main-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:22px;
-  margin-top:28px;
+display:grid;
+gap:20px;
+margin-top:30px;
 }
 
+@media(min-width:900px){
+.main-grid{grid-template-columns:1fr 1fr;}
+}
+
+/* CARDS - KOČKE */
 .doc-card{
-  border-radius:24px;
-  padding:26px 24px;
-  box-shadow:var(--shadow-strong);
-  border:1px solid rgba(255,255,255,0.6);
-}
-
-.doc-card.white{
-  background:rgba(255,255,255,0.96);
-  backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
-  color:var(--text);
+padding:24px;
+background:#fff;
+border:1px solid var(--line);
 }
 
 .doc-card.blue{
-  background:linear-gradient(180deg, #0b4787 0%, #083564 100%);
-  color:#fff;
-}
-
-.doc-card h2,
-.doc-card h3{
-  font-size:1rem;
-  line-height:1.2;
-  margin-bottom:16px;
-  font-weight:700;
-}
-
-.doc-card p,
-.doc-card li{
-  font-size:0.9rem;
-  line-height:1.58;
-}
-
-.doc-card p{
-  margin-bottom:10px;
-}
-
-.doc-card ul{
-  padding-left:20px;
-  margin:8px 0 12px;
-}
-
-.doc-card.white p,
-.doc-card.white li{
-  color:#242424;
+background:var(--blue);
+color:#fff;
 }
 
 .doc-card.blue p,
 .doc-card.blue li{
-  color:rgba(255,255,255,0.94);
+color:#eaeaea;
 }
 
-.doc-card.white a{
-  color:#9d6d12;
-  font-weight:600;
+.doc-card h2,
+.doc-card h3{
+font-size:16px;
+margin-bottom:12px;
 }
 
-.doc-card.blue a{
-  color:#ffd07b;
-  font-weight:600;
-}
-
-.rule-light{
-  border:none;
-  height:1px;
-  background:rgba(0,0,0,0.12);
-  margin:16px 0;
-}
-
-.rule-dark{
-  border:none;
-  height:1px;
-  background:rgba(255,255,255,0.22);
-  margin:16px 0;
-}
-
-/* SOCIAL */
-.social-bar{
-  position:fixed;
-  right:-78px;
-  bottom:110px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  z-index:999;
-  opacity:0.55;
-  transition:right .5s ease, opacity .5s ease;
-}
-
-.social-bar.show{
-  right:12px;
-  opacity:0.82;
-}
-
-.social-bar a{
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:rgba(255,255,255,0.80);
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  box-shadow:var(--shadow-soft);
-  border:1px solid rgba(255,255,255,0.6);
-}
-
-.social-bar img{
-  width:20px;
-  opacity:0.62;
+.doc-card p,
+.doc-card li{
+font-size:0.85rem;
+line-height:1.5;
 }
 
 /* WHATSAPP */
 .wa-btn{
-  position:fixed;
-  bottom:18px;
-  right:-230px;
-  z-index:999;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:13px 18px;
-  border-radius:999px;
-  background:linear-gradient(180deg, rgba(64,215,116,0.92) 0%, rgba(37,211,102,0.84) 100%);
-  color:#fff;
-  font-size:0.92rem;
-  font-weight:700;
-  border:1px solid var(--green-border);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.28),
-    0 14px 34px rgba(37,211,102,0.28);
-  backdrop-filter:blur(14px) saturate(130%);
-  -webkit-backdrop-filter:blur(14px) saturate(130%);
-  transition:right .5s ease, transform .18s ease, box-shadow .18s ease;
+position:fixed;
+bottom:20px;
+right:-200px;
+background:var(--green);
+color:#fff;
+padding:12px 16px;
+font-size:0.85rem;
+font-weight:700;
+transition:0.4s;
 }
 
-.wa-btn.show{right:12px;}
+.wa-btn.show{right:10px;}
 
-.wa-btn:hover{
-  transform:translateY(-1px);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.28),
-    0 18px 38px rgba(37,211,102,0.34);
+/* SOCIAL */
+.social-bar{
+position:fixed;
+right:-80px;
+bottom:110px;
+display:flex;
+flex-direction:column;
+gap:10px;
+transition:0.4s;
 }
 
-.wa-btn img{
-  width:20px;
-  height:20px;
-  filter:brightness(0) invert(1);
+.social-bar.show{right:10px;}
+
+.social-bar a{
+width:44px;
+height:44px;
+background:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid var(--line);
 }
 
-/* DESKTOP */
-@media(min-width:920px){
-  .main-grid{
-    grid-template-columns:1.15fr 0.85fr;
-    align-items:start;
-  }
-
-  .hero-space{
-    height:340px;
-  }
-
-  .top-buttons{
-    margin-top:-88px;
-  }
+.social-bar img{
+width:18px;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .head{
-    padding:12px 14px;
-    gap:10px;
-  }
-
-  .logo-box{
-    width:66px;
-    height:66px;
-    flex-basis:66px;
-  }
-
-  .logo-box img{
-    width:60px;
-    height:60px;
-  }
-
-  .brand{
-    gap:12px;
-    min-width:0;
-  }
-
-  .brand-text .overline{
-    font-size:0.6rem;
-    margin-bottom:3px;
-  }
-
-  .brand-text .title{
-    font-size:0.82rem;
-    font-weight:700;
-    white-space:nowrap;
-  }
-
-  .donate-btn{
-    padding:11px 14px;
-    font-size:0.76rem;
-    border-radius:12px;
-  }
-
-  .hero{
-    padding-top:18px;
-  }
-
-  .hero-space{
-    height:250px;
-  }
-
-  .top-buttons{
-    margin-top:-72px;
-    gap:14px;
-  }
-
-  .btn-lite{
-    min-width:290px;
-    font-size:0.88rem;
-    padding:13px 20px;
-  }
-
-  .btn-main{
-    min-width:360px;
-    max-width:92vw;
-    font-size:0.95rem;
-    padding:17px 22px;
-  }
-
-  .doc-card{
-    border-radius:22px;
-    padding:22px 18px;
-  }
-
-  .doc-card h2,
-  .doc-card h3{
-    font-size:0.98rem;
-    margin-bottom:14px;
-  }
-
-  .doc-card p,
-  .doc-card li{
-    font-size:0.84rem;
-    line-height:1.52;
-  }
-
-  .social-bar a{
-    width:46px;
-    height:46px;
-  }
-
-  .wa-btn{
-    font-size:0.88rem;
-    padding:12px 16px;
-  }
-}
-
-@media(max-width:420px){
-  .brand-text .title{
-    font-size:0.78rem;
-  }
-
-  .btn-lite{
-    min-width:270px;
-  }
-
-  .btn-main{
-    min-width:330px;
-  }
-}
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="head">
-    <div class="brand">
-      <div class="logo-box">
-        <img src="logo-white.png" alt="Лого">
-      </div>
+<div class="head">
 
-      <div class="brand-text">
-        <div class="overline">Удружење грађана</div>
-        <div class="title">Иксан Снага правде</div>
-      </div>
-    </div>
+<div class="brand">
+<div class="logo-box">
+<img src="logo-white.png">
+</div>
 
-    <div class="nav-right">
-      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+<div class="brand-text">
+<div class="top">Удружење грађана</div>
+<div class="main">Иксан Снага правде</div>
+</div>
+</div>
 
-      <div class="menu" id="menu">
-        <div class="menu-btn" aria-label="Отвори мени">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+<div class="nav-right">
 
-        <div class="dropdown">
-          <a href="index.html">Почетна</a>
-          <a href="kontakt.html">Контакт</a>
-          <a href="onama.html">О нама</a>
-          <a href="oblasti.html">Области деловања</a>
-          <a href="ciljevi.html">Циљеви</a>
-          <a href="inicijative.html">Иницијативе</a>
-          <a href="prijavi.html">Представка</a>
-          <a href="doniraj.html">Донирај</a>
-        </div>
-      </div>
-    </div>
-  </div>
+<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+
+<div class="menu" id="menu">
+<div class="menu-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="dropdown">
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="prijavi.html">Представка</a>
+</div>
+</div>
+
+</div>
+
+</div>
 </header>
 
-<section class="hero">
-  <div class="hero-space"></div>
+<div class="hero-space"></div>
 
-  <div class="top-buttons">
-    <a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
-    <a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
-  </div>
-</section>
+<div class="top-buttons">
+<a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
+</div>
 
 <div class="container">
-  <div class="main-grid">
 
-    <div class="doc-card white">
-      <h2>Контакт и подршка</h2>
+<div class="main-grid">
 
-      <p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
-      <p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
-      <p>Правна питања: искључиво путем представке.</p>
+<div class="doc-card">
 
-      <hr class="rule-light">
+<h2>Контакт и подршка</h2>
 
-      <p>За медије и институције:<br>066-585-7-707</p>
+<p>Контакт са удружењем се остварује искључиво:</p>
+<p>WhatsApp: „Пишите нам“ у доњем углу.</p>
+<p>Правна питања: путем представке.</p>
 
-      <p>За грађане:</p>
-      <ul>
-        <li>преузмите формулар</li>
-        <li>попуните податке</li>
-        <li>опишите проблем</li>
-        <li>потпишите</li>
-      </ul>
+<hr>
 
-      <p style="margin-top:10px;">Пошаљите на:</p>
-      <p>
-        <a href="mailto:iksan.snaga.pravde@gmail.com">
-          iksan.snaga.pravde@gmail.com
-        </a>
-      </p>
-    </div>
+<p>За медије:<br>066-585-7-707</p>
 
-    <div class="doc-card blue">
-      <h3>Основни подаци</h3>
+<ul>
+<li>преузмите формулар</li>
+<li>попуните податке</li>
+<li>опишите проблем</li>
+<li>потпишите</li>
+</ul>
 
-      <p>Седиште: Београд</p>
-      <p>Адреса: Војводе Степе 127</p>
+<p>iksan.snaga.pravde@gmail.com</p>
 
-      <hr class="rule-dark">
+</div>
 
-      <p>Email: iksan.snaga.pravde@gmail.com</p>
-      <p>Телефон: 066 585 7 707</p>
+<div class="doc-card blue">
 
-      <hr class="rule-dark">
+<h3>Основни подаци</h3>
 
-      <p>МБ: 28406312</p>
-      <p>ПИБ: 115357260</p>
-    </div>
+<p>Седиште: Београд</p>
+<p>Адреса: Војводе Степе 127</p>
 
-  </div>
+<hr>
+
+<p>Email: iksan.snaga.pravde@gmail.com</p>
+<p>Телефон: 066 585 7 707</p>
+
+<p>МБ: 28406312</p>
+<p>ПИБ: 115357260</p>
+
+</div>
+
+</div>
+
 </div>
 
 <div class="social-bar" id="socialBar">
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  Пишите нам
+<a href="https://wa.me/381665857707" class="wa-btn">
+Пишите нам
 </a>
 
 <script>
-const menu = document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.querySelector('.wa-btn').classList.add('show');
-    document.getElementById('socialBar').classList.add('show');
-  }, 400);
-});
-
-document.addEventListener('click', (e) => {
-  if (!menu.contains(e.target)) {
-    menu.classList.remove('open');
-  }
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+document.getElementById("socialBar").classList.add("show");
+},400);
 });
 </script>
 
