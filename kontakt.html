@@ -1,428 +1,368 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Контакт — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
-  --gold:#c6a25a;
-  --text:#1f1f1f;
-  --soft:#6a6a6a;
-  --border:rgba(0,0,0,0.10);
-  --white:rgba(255,255,255,0.92);
+--gold:#c6a25a;
+--text:#1f1f1f;
+--soft:#6a6a6a;
+--border:rgba(0,0,0,0.1);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
 
 body{
-  background:url('lady-justice-hero.webp') center 20% / cover no-repeat fixed;
-  color:var(--text);
-  font-family:"Playfair Display","Times New Roman",serif;
-  padding-bottom:140px;
-  min-height:100vh;
+background:url('lady-justice-hero.webp') center 20% / cover no-repeat fixed;
+color:var(--text);
+font-family:"Playfair Display",serif;
+padding-bottom:140px;
 }
 
-.container{
-  max-width:1150px;
-  margin:auto;
-  padding:0 20px;
-}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 
 /* HEADER */
 header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:rgba(255,255,255,0.88);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid var(--border);
+position:sticky;
+top:0;
+z-index:100;
+background:#ffffff;
+border-bottom:1px solid var(--border);
 }
 
 .head{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:6px 0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 0;
 }
 
+/* LOGO */
 .brand img{
-  height:95px;
-  border-radius:10px;
+height:42px;
 }
 
-/* NAV */
-.nav{
-  display:flex;
-  align-items:center;
-  gap:18px;
+/* TITLE */
+.site-title{
+font-size:0.85rem;
+color:#5a5a5a;
+text-align:center;
+flex:1;
 }
 
-.nav > a,
+/* RIGHT SIDE */
+.nav-right{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+/* DONATE */
+.donate-btn{
+background:#f26522;
+color:#fff;
+padding:8px 14px;
+font-size:0.75rem;
+letter-spacing:0.5px;
+}
+
+.donate-btn:hover{
+opacity:0.9;
+}
+
+/* HAMBURGER */
 .menu-btn{
-  font-size:0.88rem;
-  color:var(--text);
-  position:relative;
-  background:none;
-  border:none;
-  cursor:pointer;
-  font-family:inherit;
-  padding:6px 0;
+width:26px;
+height:18px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+cursor:pointer;
 }
 
-.nav > a::after,
-.menu-btn::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:0;
-  width:0;
-  height:1px;
-  background:var(--gold);
-  transition:width .25s ease;
+.menu-btn span{
+height:2px;
+background:#000;
+display:block;
 }
 
-.nav > a:hover::after,
-.menu-btn:hover::after{
-  width:100%;
-}
-
-.menu{
-  position:relative;
-}
+/* DROPDOWN */
+.menu{position:relative}
 
 .dropdown{
-  position:absolute;
-  top:calc(100% + 8px);
-  right:0;
-  background:rgba(255,255,255,0.97);
-  border:1px solid var(--border);
-  border-radius:8px;
-  padding:8px;
-  display:none;
-  min-width:280px;
-  box-shadow:0 10px 30px rgba(0,0,0,.08);
+position:absolute;
+top:calc(100% + 10px);
+right:0;
+background:#fff;
+border:1px solid var(--border);
+padding:8px;
+display:none;
+min-width:240px;
 }
 
-.menu.open .dropdown{
-  display:block;
-}
+.menu.open .dropdown{display:block}
 
 .dropdown a{
-  display:block;
-  padding:9px 10px;
-  color:var(--text);
-  border-radius:4px;
+display:block;
+padding:8px 10px;
+color:#333;
 }
 
-.dropdown a:hover{
-  background:rgba(0,0,0,0.03);
-  color:var(--gold);
-}
-
-/* CTA */
+/* BUTTONS */
 .top-buttons{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:14px;
-  margin-top:34px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:12px;
+margin-top:30px;
 }
 
 .btn{
-  padding:11px 18px;
-  border-radius:4px;
-  font-size:12px;
-  letter-spacing:.02em;
-  border:1px solid var(--border);
-  background:var(--white);
-  color:var(--text);
-  transition:.25s ease;
+padding:10px 18px;
+font-size:12px;
+border-radius:4px;
+border:1px solid var(--border);
+background:#fff;
 }
 
 .btn:hover{
-  border-color:var(--gold);
-  color:var(--gold);
+border-color:var(--gold);
+color:var(--gold);
 }
 
 .btn-danger{
-  color:#7a1c2b;
-  border-color:rgba(122,28,43,0.35);
-}
-
-.btn-danger:hover{
-  color:#7a1c2b;
-  border-color:#7a1c2b;
-}
-
-.btn-gold{
-  color:var(--gold);
-  border-color:rgba(198,162,90,0.45);
-}
-
-.btn-gold:hover{
-  border-color:var(--gold);
+border-color:#8c1428;
+color:#8c1428;
 }
 
 /* GRID */
 .main-grid{
-  display:grid;
-  gap:25px;
-  margin-top:34px;
+display:grid;
+gap:25px;
+margin-top:30px;
 }
 
 @media(min-width:900px){
-  .main-grid{
-    grid-template-columns:1fr 1fr;
-  }
+.main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* DOC CARD */
+/* CARDS */
 .doc-card{
-  background:rgba(255,255,255,0.94);
-  padding:30px;
-  border-radius:8px;
-  border:1px solid var(--border);
-  box-shadow:0 8px 24px rgba(0,0,0,.05);
+background:#fff;
+padding:30px;
+border:1px solid var(--border);
+border-radius:6px;
 }
 
-.doc-card h2,
-.doc-card h3{
-  margin-bottom:12px;
-  font-weight:500;
-  color:var(--text);
+.doc-card h2,.doc-card h3{
+margin-bottom:10px;
+font-weight:500;
 }
 
 .doc-card p{
-  color:var(--soft);
-  margin-bottom:10px;
-  line-height:1.65;
+color:var(--soft);
+margin-bottom:10px;
 }
 
 .doc-card ul{
-  margin-top:10px;
-  padding-left:18px;
-  color:var(--soft);
-  line-height:1.65;
+margin-top:10px;
+padding-left:18px;
+color:var(--soft);
 }
 
-.doc-card li{
-  margin-bottom:4px;
-}
-
-.doc-card a{
-  color:var(--gold);
-}
-
-hr{
-  border:none;
-  height:1px;
-  background:rgba(0,0,0,0.10);
-}
+.doc-card a{color:var(--gold);}
 
 /* WHATSAPP */
 .wa-btn{
-  position:fixed;
-  bottom:20px;
-  right:-180px;
-  display:flex;
-  align-items:center;
-  gap:8px;
-  padding:10px 16px;
-  border-radius:40px;
-  font-size:13px;
-  background:rgba(255,255,255,0.95);
-  color:var(--text);
-  border:1px solid var(--border);
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-  z-index:9999;
-  transition:right 0.6s ease;
+position:fixed;
+bottom:20px;
+right:-180px;
+display:flex;
+align-items:center;
+gap:8px;
+padding:10px 16px;
+border-radius:40px;
+font-size:13px;
+background:#fff;
+border:1px solid var(--border);
+z-index:9999;
+transition:right 0.6s ease;
 }
 .wa-btn.show{right:12px;}
-.wa-btn img{width:22px;}
+.wa-btn img{width:20px;}
 
 /* SOCIAL */
 .social-bar{
-  position:fixed;
-  right:-80px;
-  bottom:110px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  z-index:9999;
-  transition:right 0.6s ease, opacity 0.6s ease;
-  opacity:0.5;
+position:fixed;
+right:-80px;
+bottom:110px;
+display:flex;
+flex-direction:column;
+gap:12px;
+z-index:9999;
+transition:right 0.6s ease, opacity 0.6s ease;
+opacity:0.5;
 }
 
-.social-bar.show{
-  right:12px;
-  opacity:0.9;
-}
+.social-bar.show{right:12px;opacity:0.35;}
 
 .social-bar a{
-  width:44px;
-  height:44px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background:rgba(255,255,255,0.95);
-  border:1px solid var(--border);
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
+width:44px;height:44px;border-radius:50%;
+display:flex;align-items:center;justify-content:center;
+background:#fff;
+border:1px solid var(--border);
 }
 
 .social-bar img{
-  width:20px;
-  opacity:0.65;
+width:20px;
+opacity:0.6;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-  .brand img{height:80px}
-  .nav{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:14px;
-  }
-  .head{
-    flex-direction:column;
-    gap:8px;
-  }
+.site-title{font-size:0.7rem;}
+.brand img{height:36px;}
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="container head">
+<div class="container head">
 
-    <div class="brand">
-      <a href="index.html"><img src="logo-white.png" alt="Иксан"></a>
-    </div>
+<div class="brand">
+<a href="index.html"><img src="logo-blue.png"></a>
+</div>
 
-    <nav class="nav">
-      <a href="index.html">ПОЧЕТНА</a>
-      <a href="kontakt.html">КОНТАКТ</a>
+<div class="site-title">
+Удружење грађана — Иксан · Снага правде
+</div>
 
-      <div class="menu" id="menu">
-        <button class="menu-btn" type="button">МЕНИ ▾</button>
+<div class="nav-right">
 
-        <div class="dropdown">
-          <a href="onama.html">о Нама</a>
-          <a href="oblasti.html">Области деловања</a>
-          <a href="ciljevi.html">Стратешки циљеви</a>
-          <a href="inicijative.html">Захтеви-Закони-Предмети</a>
-          <a href="doniraj.html">Подржите наш рад</a>
-          <a href="prikljucise.html">Прикључите се нашем раду</a>
-          <a href="prijavi.html">Представка грађанина</a>
-          <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-          <a href="porekloimovine.html">Транспарентност јавних финансија</a>
-          <a href="sudpravda.html">Независност судског система</a>
-          <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-        </div>
-      </div>
-    </nav>
+<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-  </div>
+<div class="menu" id="menu">
+<div class="menu-btn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="dropdown">
+<a href="index.html">Почетна</a>
+<a href="kontakt.html">Контакт</a>
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="prijavi.html">Представка</a>
+</div>
+</div>
+
+</div>
+
+</div>
 </header>
 
 <div class="container">
 
-  <div class="top-buttons">
-    <a href="inicijative.html" class="btn">ЗАКОНИ И ПРОПИСИ</a>
-    <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-    <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
-  </div>
+<div class="top-buttons">
+<a href="inicijative.html" class="btn">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
+</div>
 
-  <div class="main-grid">
+<div class="main-grid">
 
-    <div class="doc-card">
-      <h2>Контакт и подршка</h2>
+<div class="doc-card">
 
-      <p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
+<h2>Контакт и подршка</h2>
 
-      <p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
+<p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
 
-      <p>Правна питања: искључиво путем представке.</p>
+<p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
 
-      <hr style="margin:20px 0; opacity:0.2;">
+<p>Правна питања: искључиво путем представке.</p>
 
-      <p>За медије и институције:<br>066-585-7-707</p>
+<hr style="margin:20px 0; opacity:0.2;">
 
-      <p>За грађане, раднике и предузетнике:</p>
+<p>За медије и институције:<br>066-585-7-707</p>
 
-      <ul>
-        <li>преузмите формулар</li>
-        <li>попуните податке</li>
-        <li>опишите проблем</li>
-        <li>потпишите</li>
-      </ul>
+<p>За грађане, раднике и предузетнике:</p>
 
-      <p style="margin-top:15px;">Пошаљите на:</p>
+<ul>
+<li>преузмите формулар</li>
+<li>попуните податке</li>
+<li>опишите проблем</li>
+<li>потпишите</li>
+</ul>
 
-      <p style="font-size:18px;">
-        <a href="mailto:iksan.snaga.pravde@gmail.com">
-          iksan.snaga.pravde@gmail.com
-        </a>
-      </p>
-    </div>
+<p style="margin-top:15px;">Пошаљите на:</p>
 
-    <div class="doc-card">
-      <h3>Основни подаци</h3>
+<p style="font-size:18px;">
+<a href="mailto:iksan.snaga.pravde@gmail.com">
+iksan.snaga.pravde@gmail.com
+</a>
+</p>
 
-      <p>Седиште: Београд</p>
-      <p>Адреса: Војводе Степе 127</p>
+</div>
 
-      <hr style="margin:15px 0; opacity:0.2;">
+<div class="doc-card">
 
-      <p>Email: iksan.snaga.pravde@gmail.com</p>
-      <p>Телефон: 066 585 7 707</p>
+<h3>Основни подаци</h3>
 
-      <hr style="margin:15px 0; opacity:0.2;">
+<p>Седиште: Београд</p>
+<p>Адреса: Војводе Степе 127</p>
 
-      <p>МБ: 28406312</p>
-      <p>ПИБ: 115357260</p>
-    </div>
+<hr style="margin:15px 0; opacity:0.2;">
 
-  </div>
+<p>Email: iksan.snaga.pravde@gmail.com</p>
+<p>Телефон: 066 585 7 707</p>
+
+<hr style="margin:15px 0; opacity:0.2;">
+
+<p>МБ: 28406312</p>
+<p>ПИБ: 115357260</p>
+
+</div>
+
+</div>
+
 </div>
 
 <div class="social-bar" id="socialBar">
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  Пишите нам
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
 </a>
 
 <script>
-const menu = document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.querySelector(".wa-btn").classList.add("show");
-    document.getElementById("socialBar").classList.add("show");
-  }, 400);
-});
-
-document.addEventListener("click", (e) => {
-  if (!menu.contains(e.target)) {
-    menu.classList.remove("open");
-  }
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.querySelector(".wa-btn").classList.add("show");
+document.getElementById("socialBar").classList.add("show");
+},400);
 });
 </script>
 
