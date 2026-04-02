@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Контакт — Иксан • Снага правде</title>
+<title>Подржи наш рад — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,7 +16,6 @@
   --orange-dark:#e44e16;
   --text:#111;
   --line:rgba(0,0,0,0.12);
-  --green:#25D366;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -29,20 +28,20 @@ body{
   overflow-x:hidden;
 }
 
-/* POZADINA */
+/* POZADINA (ISTA KAO KONTAKT) */
 body::before{
   content:"";
   position:fixed;
   inset:0;
   z-index:-1;
   background:url('lady-justice-hero.webp') center top / cover no-repeat;
-  animation:goddessReveal 1.35s ease-out both;
   transform-origin:bottom right;
+  animation:goddessReveal 1.3s ease-out both;
 }
 
 @keyframes goddessReveal{
   0%{
-    transform:translate(120px, 140px) scale(1.12);
+    transform:translate(120px,140px) scale(1.12);
     opacity:0.82;
   }
   100%{
@@ -69,7 +68,6 @@ header{
   justify-content:space-between;
 }
 
-/* LOGO */
 .brand{
   display:flex;
   align-items:center;
@@ -86,9 +84,7 @@ header{
   justify-content:center;
 }
 
-.logo-box img{
-  width:66px;
-}
+.logo-box img{width:66px;}
 
 .brand-text .top{
   font-size:0.6rem;
@@ -98,10 +94,9 @@ header{
 .brand-text .main{
   font-size:0.76rem;
   font-weight:600;
-  white-space:nowrap;
 }
 
-/* RIGHT */
+/* DESNO */
 .nav-right{
   display:flex;
   align-items:center;
@@ -109,96 +104,18 @@ header{
   padding-right:12px;
 }
 
-/* ✅ DONIRAJ — SKRACEN I BALANSIRAN */
 .donate-btn{
   background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
-
   padding:12px 14px;
-  min-width:110px;
-
-  text-align:center;
   font-size:0.74rem;
   font-weight:700;
-  letter-spacing:0.3px;
-
-  border:none;
-  box-shadow:none;   /* 🔥 уклоњена сенка */
-}
-
-/* MENU */
-.menu{position:relative}
-
-.menu-btn{
-  width:26px;
-  height:18px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  cursor:pointer;
-}
-
-.menu-btn span{
-  height:2px;
-  background:#000;
-}
-
-.dropdown{
-  position:absolute;
-  top:calc(100% + 10px);
-  right:0;
-  background:#fff;
-  border:1px solid var(--line);
-  display:none;
-  min-width:270px;
-}
-
-.menu.open .dropdown{display:block}
-
-.dropdown a{
-  display:block;
-  padding:10px 14px;
-  font-size:0.85rem;
-  border-bottom:1px solid var(--line);
-}
-
-.dropdown a.active{
-  font-weight:700;
-  color:var(--blue);
 }
 
 /* HERO */
-.hero-space{
-  height:260px;
-}
+.hero-space{height:260px}
 
-/* BUTTONS */
-.top-buttons{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:14px;
-  margin-top:-80px;
-}
-
-.btn-lite{
-  background:#fff;
-  border:1px solid rgba(10,63,120,0.25);
-  padding:12px 24px;
-  font-size:0.85rem;
-  color:#0a3f78;
-  font-weight:600;
-}
-
-.btn-main{
-  background:var(--blue);
-  color:#fff;
-  padding:16px 30px;
-  font-size:0.95rem;
-  font-weight:700;
-}
-
-/* CARDS */
+/* CONTAINER */
 .container{
   max-width:1150px;
   margin:auto;
@@ -215,6 +132,7 @@ header{
   .main-grid{grid-template-columns:1fr 1fr;}
 }
 
+/* CARD */
 .doc-card{
   padding:22px;
   background:#fff;
@@ -222,34 +140,62 @@ header{
   box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-.doc-card.blue{
+/* NASLOVI */
+.doc-card h2{
+  font-size:17px;
+  margin-bottom:10px;
+}
+
+/* PAYPAL */
+.amounts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.amount-btn{
+  padding:12px;
+  background:#f2f2f2;
+  text-align:center;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.amount-btn.active{
   background:var(--blue);
   color:#fff;
 }
 
-.doc-card.blue p,
-.doc-card.blue li{
-  color:#eaeaea;
+.custom{
+  margin-top:12px;
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  text-align:center;
 }
 
-/* ✅ TEKST — SMANJEN I UJEDNAČEN */
-.doc-card p,
-.doc-card li{
-  font-size:0.70rem;
-  line-height:1.55;
-  letter-spacing:0.1px;
+.main-donate{
+  margin-top:12px;
+  width:100%;
+  padding:14px;
+  border:none;
+  background:linear-gradient(135deg,var(--orange),var(--orange-dark));
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
 }
 
-/* NASLOVI */
-.doc-card h2{
-  font-size:17px;
-  font-weight:500;
-  margin-bottom:10px;
+/* ZIRO */
+.bank-row{
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  border-bottom:1px solid #eee;
+  font-size:0.75rem;
 }
 
-.doc-card h3{
-  font-size:14px;
-  font-weight:500;
+.bank-row:last-child{
+  border:none;
 }
 
 /* SOCIAL */
@@ -260,8 +206,7 @@ header{
   display:flex;
   flex-direction:column;
   gap:12px;
-  z-index:9999;
-  transition:0.6s;
+  transition:.6s;
   opacity:0;
 }
 
@@ -280,43 +225,20 @@ header{
   border:1px solid var(--line);
 }
 
-.social-bar img{
-  width:20px;
-}
+.social-bar img{width:20px;}
 
-/* WHATSAPP */
 .wa-btn{
   position:fixed;
   right:-220px;
   bottom:50px;
-
-  display:flex;
-  align-items:center;
-  gap:10px;
-
-  padding:12px 14px;   /* ✔ kraće */
+  padding:12px 14px;
   background:#25D366;
   color:#fff;
-
-  font-size:0.8rem;
-  font-weight:600;
-
   border-radius:40px;
-  box-shadow:0 10px 25px rgba(37,211,102,0.4);
-
-  transition:0.6s;
-  z-index:10000;
+  transition:.6s;
 }
 
-.wa-btn.show{
-  right:12px;
-}
-
-.wa-btn img{
-  width:22px;
-  filter:brightness(0) invert(1);
-}
-
+.wa-btn.show{right:12px;}
 </style>
 </head>
 
@@ -329,7 +251,6 @@ header{
 <div class="logo-box">
 <img src="logo-white.png">
 </div>
-
 <div class="brand-text">
 <div class="top">Удружење грађана</div>
 <div class="main">Иксан Снага правде</div>
@@ -338,106 +259,85 @@ header{
 
 <div class="nav-right">
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
-
-<div class="menu" id="menu">
-<div class="menu-btn">
-<span></span><span></span><span></span>
 </div>
 
-<div class="dropdown">
-<a href="index.html"><b>ПОЧЕТНА</b></a>
-<a href="kontakt.html" class="active">Контакт</a>
-
-<a href="onama.html">О нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Иницијативе</a>
-<a href="doniraj.html">Донирај</a>
-<a href="prikljucise.html">Прикључи се</a>
-<a href="prijavi.html">Представка</a>
-</div>
-</div>
-
-</div>
 </div>
 </header>
 
 <div class="hero-space"></div>
 
-<div class="top-buttons">
-<a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
-</div>
-
 <div class="container">
+
 <div class="main-grid">
 
+<!-- PAYPAL -->
 <div class="doc-card">
-<h2>Контакт и подршка</h2>
+<h2>Подржи наш рад</h2>
 
-<p>Контакт са нама:</p>
-<p>„Пишите нам“whats_app- дугме у доњем десном углу.</p>
-<p>Угрожено вам је грађанско право: искључиво путем представке.</p>
+<div class="amounts">
+<div class="amount-btn active" data="10">10€</div>
+<div class="amount-btn" data="20">20€</div>
+<div class="amount-btn" data="50">50€</div>
+<div class="amount-btn" data="100">100€</div>
+</div>
 
-<hr style="margin:15px 0; opacity:0.2;">
+<input type="number" id="customAmount" class="custom" placeholder="Унесите износ (€)">
 
-<p>Медији и институције:<br>066-585-7-707</p>
+<button class="main-donate" id="donateBtn">
+ДОНИРАЈ САДА
+</button>
 
-<ul>
-<li>преузмите формулар</li>
-<li>попуните податке</li>
-<li>опишите проблем</li>
-<li>потпишите</li> 
-<li>пошаљите у ПДФ_у</li>
-<li>пошаљите путем емаил_а или поштом</li>
-</ul>
-
-<p style="margin-top:10px;font-weight:600;">
-iksan.snaga.pravde@gmail.com
+<p style="text-align:center;font-size:12px;margin-top:8px;color:#666;">
+Сигурна уплата — PayPal
 </p>
 </div>
 
-<div class="doc-card blue">
-<h3>Основни подаци</h3>
+<!-- ZIRO -->
+<div class="doc-card">
+<h2>Уплата путем банке</h2>
 
-<p>Седиште: Београд</p>
-<p>Адреса: Војводе Степе 127</p>
+<div class="bank-row"><span>Прималац:</span><span>Иксан Снага правде</span></div>
+<div class="bank-row"><span>Жиро рачун:</span><span>340-100034558018</span></div>
+<div class="bank-row"><span>Банка:</span><span>Erste банка</span></div>
+<div class="bank-row"><span>Сврха:</span><span>Донација</span></div>
+<div class="bank-row"><span>Позив на број:</span><span>2026</span></div>
 
-<hr style="margin:15px 0; opacity:0.2;">
-
-<p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>Телефон: 066 585 7 707</p>
-
-<hr style="margin:15px 0; opacity:0.2;">
-
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
 </div>
 
 </div>
 </div>
 
 <div class="social-bar" id="socialBar">
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
 <a href="https://wa.me/381665857707" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
 <script>
-const menu = document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
+let amount=10;
 
-window.addEventListener("load", () => {
-setTimeout(() => {
+document.querySelectorAll('.amount-btn').forEach(btn=>{
+btn.onclick=()=>{
+document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+amount=btn.getAttribute('data');
+};
+});
+
+document.getElementById('donateBtn').onclick=()=>{
+let custom=document.getElementById('customAmount').value;
+let finalAmount=custom || amount;
+window.open(`https://www.paypal.me/snagapravde/${finalAmount}`,'_blank');
+};
+
+window.addEventListener("load",()=>{
+setTimeout(()=>{
 document.getElementById("socialBar").classList.add("show");
 document.querySelector(".wa-btn").classList.add("show");
-}, 400);
+},400);
 });
 </script>
 
