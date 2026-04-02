@@ -164,8 +164,8 @@ padding:12px 24px;
 font-size:0.85rem;
 color:#0a3f78;
 font-weight:600;
-letter-spacing:0.3px;
 }
+
 .btn-lite:hover{
 background:#0a3f78;
 color:#fff;
@@ -229,48 +229,24 @@ font-size:0.78rem;
 line-height:1.45;
 }
 
-/* WHATSAPP */
-.wa-btn{
-position:fixed;
-bottom:20px;
-right:-220px;
-display:flex;
-align-items:center;
-gap:10px;
-background:rgba(37,211,102,0.92);
-color:#fff;
-padding:12px 16px;
-font-size:0.82rem;
-font-weight:600;
-border:1px solid rgba(255,255,255,0.4);
-backdrop-filter:blur(8px);
-box-shadow:0 8px 20px rgba(37,211,102,0.35);
-transition:0.4s;
-}
-
-.wa-btn.show{right:10px;}
-
-.wa-btn img{
-width:18px;
-filter:brightness(0) invert(1);
-}
-
+/* SOCIAL — CENTAR EKRANA */
 .social-bar{
 position:fixed;
-right:-120px; /* 🔥 да крене ван екрана */
-bottom:110px;
+top:50%;
+transform:translateY(-50%);
+right:-120px;
 display:flex;
 flex-direction:column;
 gap:10px;
 transition:0.6s ease;
 opacity:0;
+z-index:9999;
 }
 
 .social-bar.show{
 right:10px;
 opacity:1;
 }
-
 
 .social-bar a{
 width:44px;
@@ -284,6 +260,41 @@ border:1px solid var(--line);
 
 .social-bar img{
 width:18px;
+}
+
+/* WHATSAPP — VIDLJIV */
+.wa-btn{
+position:fixed;
+top:70%;
+transform:translateY(-50%);
+right:-220px;
+
+display:flex;
+align-items:center;
+gap:10px;
+
+background:rgba(37,211,102,0.92);
+color:#fff;
+
+padding:12px 16px;
+font-size:0.82rem;
+font-weight:600;
+
+border:1px solid rgba(255,255,255,0.4);
+backdrop-filter:blur(8px);
+
+box-shadow:0 8px 20px rgba(37,211,102,0.35);
+transition:0.4s;
+z-index:9999;
+}
+
+.wa-btn.show{
+right:10px;
+}
+
+.wa-btn img{
+width:18px;
+filter:brightness(0) invert(1);
 }
 
 </style>
@@ -351,7 +362,7 @@ width:18px;
 
 <p>Контакт:</p>
 <p>„Пишите нам“ у доњем углу.</p>
-<p>Проблем:путем представке.</p>
+<p>Проблем: путем представке.</p>
 
 <hr>
 
