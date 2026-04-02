@@ -27,7 +27,6 @@ body{
 font-family:"Playfair Display",serif;
 color:var(--text);
 background:url('lady-justice-hero.webp') center top / cover no-repeat fixed;
-filter:contrast(1.1) brightness(1.03);
 padding-bottom:140px;
 }
 
@@ -71,11 +70,6 @@ width:66px;
 }
 
 /* TEXT */
-.brand-text{
-display:flex;
-flex-direction:column;
-}
-
 .brand-text .top{
 font-size:0.6rem;
 color:#777;
@@ -132,17 +126,6 @@ min-width:260px;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:10px 14px;
-font-size:0.85rem;
-border-bottom:1px solid var(--line);
-}
-
-.dropdown a:last-child{
-border-bottom:none;
-}
-
 /* HERO */
 .hero-space{
 height:260px;
@@ -158,17 +141,12 @@ margin-top:-80px;
 }
 
 .btn-lite{
-background:linear-gradient(180deg,#ffffff,#f3f6fa);
+background:#fff;
 border:1px solid rgba(10,63,120,0.25);
 padding:12px 24px;
 font-size:0.85rem;
 color:#0a3f78;
 font-weight:600;
-}
-
-.btn-lite:hover{
-background:#0a3f78;
-color:#fff;
 }
 
 .btn-main{
@@ -177,17 +155,15 @@ color:#fff;
 padding:16px 30px;
 font-size:0.95rem;
 font-weight:700;
-box-shadow:0 10px 25px rgba(10,63,120,0.4);
 }
 
-/* CONTAINER */
+/* CARDS */
 .container{
 max-width:1150px;
 margin:auto;
 padding:20px;
 }
 
-/* GRID */
 .main-grid{
 display:grid;
 gap:20px;
@@ -198,116 +174,83 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* CARDS */
 .doc-card{
 padding:26px;
 background:#fff;
 border:1px solid var(--line);
-box-shadow:0 14px 30px rgba(0,0,0,0.08);
 }
 
 .doc-card.blue{
 background:var(--blue);
 color:#fff;
-box-shadow:0 18px 40px rgba(10,63,120,0.35);
 }
 
-.doc-card.blue p,
-.doc-card.blue li{
-color:#eaeaea;
-}
-
-.doc-card h2,
-.doc-card h3{
-font-size:15px;
-margin-bottom:12px;
-}
-
-.doc-card p,
-.doc-card li{
-font-size:0.78rem;
-line-height:1.45;
-}
-
-/* SOCIAL + WHATSAPP BLOK */
+/* 🔥 SOCIAL — FIXED */
 .social-bar{
 position:fixed;
-top:45%;
-transform:translateY(-50%);
-right:-120px;
-
+right:-80px;
+bottom:120px;
 display:flex;
 flex-direction:column;
-align-items:center;
 gap:12px;
-
-transition:0.5s ease;
-opacity:0;
 z-index:9999;
+transition:0.6s;
+opacity:0;
 }
 
 .social-bar.show{
-right:10px;
+right:12px;
 opacity:1;
 }
 
 .social-bar a{
 width:44px;
 height:44px;
-background:#fff;
 display:flex;
 align-items:center;
 justify-content:center;
+background:#fff;
 border:1px solid var(--line);
 }
 
 .social-bar img{
-width:18px;
+width:20px;
 }
 
-/* WHATSAPP U BLOKU */
-.social-bar .wa{
-margin-top:16px;
+/* 🔥 WHATSAPP — ODVOJEN */
+.wa-btn{
+position:fixed;
+right:-200px;
+bottom:50px;
 
 display:flex;
 align-items:center;
 gap:10px;
 
-padding:8px 12px;
+padding:12px 18px;
 
-background:linear-gradient(135deg,#25D366,#1ebe5d);
+background:#25D366;
 color:#fff;
 
-font-size:0.78rem;
+font-size:0.85rem;
 font-weight:600;
 
-border-radius:30px;
+border-radius:40px;
 
-box-shadow:
-0 8px 18px rgba(37,211,102,0.35),
-inset 0 1px 0 rgba(255,255,255,0.25);
+box-shadow:0 10px 25px rgba(37,211,102,0.4);
 
-border:1px solid rgba(255,255,255,0.35);
+transition:0.6s;
+z-index:10000;
 }
 
-/* IKONA KAO PRAVI WHATSAPP */
-.social-bar .wa .icon{
-width:28px;
-height:28px;
-border-radius:50%;
-background:#fff;
-
-display:flex;
-align-items:center;
-justify-content:center;
-
-flex-shrink:0;
+.wa-btn.show{
+right:12px;
 }
 
-.social-bar .wa .icon img{
-width:16px;
-filter:none;
-}7
+.wa-btn img{
+width:22px;
+filter:brightness(0) invert(1);
+}
 
 </style>
 </head>
@@ -329,31 +272,22 @@ filter:none;
 </div>
 
 <div class="nav-right">
-
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
 <div class="menu" id="menu">
 <div class="menu-btn">
-<span></span>
-<span></span>
-<span></span>
+<span></span><span></span><span></span>
 </div>
-
 <div class="dropdown">
 <a href="index.html">Почетна</a>
 <a href="kontakt.html">Контакт</a>
 <a href="onama.html">О нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Циљеви</a>
 <a href="inicijative.html">Иницијативе</a>
 <a href="prijavi.html">Представка</a>
-<a href="doniraj.html">Донирај</a>
+</div>
 </div>
 
 </div>
-
-</div>
-
 </div>
 </header>
 
@@ -365,82 +299,50 @@ filter:none;
 </div>
 
 <div class="container">
-
 <div class="main-grid">
 
 <div class="doc-card">
-
 <h2>Контакт и подршка</h2>
-
-<p>Контакт:</p>
 <p>„Пишите нам“ у доњем углу.</p>
 <p>Проблем: путем представке.</p>
-
-<hr>
-
-<p>Медији и институције:<br>066-585-7-707</p>
-
-<ul>
-<li>преузмите формулар</li>
-<li>попуните податке</li>
-<li>опишите проблем</li>
-<li>потпишите</li>
-</ul>
-
-<p>iksan.snaga.pravde@gmail.com</p>
-
+<p>066-585-7-707</p>
 </div>
 
 <div class="doc-card blue">
-
 <h3>Основни подаци</h3>
-
-<p>Седиште: Београд</p>
-<p>Адреса: Војводе Степе 127</p>
-
-<hr>
-
-<p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>Телефон: 066 585 7 707</p>
-
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
-
+<p>Београд</p>
+<p>Војводе Степе 127</p>
 </div>
 
 </div>
-
 </div>
 
-<!-- FINALNI DESNI BLOK -->
+<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
-
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
-
-<a href="https://wa.me/381665857707" class="wa">
-
-<div class="icon">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 </div>
 
-<span>Пишите нам</span>
-
+<!-- WHATSAPP -->
+<a href="https://wa.me/381665857707" class="wa-btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
 </a>
 
-</div>
-
 <script>
+
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 window.addEventListener("load",()=>{
 setTimeout(()=>{
 document.getElementById("socialBar").classList.add("show");
+document.querySelector(".wa-btn").classList.add("show");
 },400);
 });
+
 </script>
 
 </body>
