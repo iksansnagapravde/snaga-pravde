@@ -7,7 +7,7 @@
 
 <title>Контакт — Иксан • Снага правде</title>
 
-<link rel="icon" href="univerzalnium.webp">
+<link rel="icon" href="logo-white.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -17,6 +17,7 @@
 --text:#1f1f1f;
 --soft:#6a6a6a;
 --border:rgba(0,0,0,0.1);
+--blue:#0d3b66;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -24,26 +25,17 @@ a{text-decoration:none;color:inherit}
 
 body{
 background:url('lady-justice-hero.webp') center 20% / cover no-repeat fixed;
-color:var(--text);
 font-family:"Playfair Display",serif;
+color:var(--text);
 padding-bottom:140px;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
-
-/* 🔥 PREMIUM HEADER */
+/* HEADER */
 header{
-position:fixed;
+position:sticky;
 top:0;
-width:100%;
 z-index:100;
-background:rgba(255,255,255,0.6);
-backdrop-filter:blur(10px);
-transition:0.3s;
-}
-
-header.scrolled{
-background:#ffffff;
+background:#fff;
 border-bottom:1px solid var(--border);
 }
 
@@ -51,18 +43,30 @@ border-bottom:1px solid var(--border);
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:10px 0;
+padding:10px 20px;
+max-width:1150px;
+margin:auto;
 }
 
-/* LOGO */
+/* LOGO (PLAVA KOCKA) */
 .brand{
 display:flex;
 align-items:center;
 gap:12px;
 }
 
-.brand img{
-height:54px;
+.logo-box{
+width:48px;
+height:48px;
+background:var(--blue);
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:6px;
+}
+
+.logo-box img{
+width:28px;
 }
 
 /* TEXT */
@@ -73,8 +77,8 @@ line-height:1.1;
 }
 
 .brand-text div:first-child{
-font-size:0.65rem;
-color:#666;
+font-size:0.7rem;
+color:#777;
 }
 
 .brand-text div:last-child{
@@ -88,7 +92,6 @@ align-items:center;
 gap:15px;
 }
 
-/* DONATE */
 .donate-btn{
 background:#f26522;
 color:#fff;
@@ -109,9 +112,9 @@ cursor:pointer;
 .menu-btn span{
 height:2px;
 background:#000;
-display:block;
 }
 
+/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
@@ -120,33 +123,39 @@ top:calc(100% + 10px);
 right:0;
 background:#fff;
 border:1px solid var(--border);
-padding:8px;
+padding:10px;
 display:none;
-min-width:240px;
+min-width:260px;
 }
 
 .menu.open .dropdown{display:block}
 
+.dropdown a{
+display:block;
+padding:10px;
+border-bottom:1px solid var(--border);
+}
+
+.dropdown a:last-child{
+border:none;
+}
+
 /* BUTTONS */
+.container{max-width:1150px;margin:auto;padding:20px;}
+
 .top-buttons{
 display:flex;
 flex-direction:column;
 align-items:center;
 gap:12px;
-margin-top:120px;
+margin-top:20px;
 }
 
 .btn{
 padding:10px 18px;
 font-size:12px;
-border-radius:4px;
 border:1px solid var(--border);
 background:#fff;
-}
-
-.btn:hover{
-border-color:var(--gold);
-color:var(--gold);
 }
 
 .btn-danger{
@@ -166,23 +175,13 @@ margin-top:30px;
 }
 
 .doc-card{
-background:rgba(255,255,255,0.92);
-backdrop-filter:blur(4px);
+background:#fff;
 padding:30px;
-border-radius:8px;
+border:1px solid var(--border);
+border-radius:6px;
 }
 
-.doc-card h2,.doc-card h3{
-margin-bottom:10px;
-font-weight:500;
-}
-
-.doc-card p{
-color:var(--soft);
-margin-bottom:10px;
-}
-
-/* WHATSAPP */
+/* WHATSAPP (VRACENO) */
 .wa-btn{
 position:fixed;
 bottom:20px;
@@ -190,40 +189,49 @@ right:-180px;
 display:flex;
 align-items:center;
 gap:8px;
-padding:10px 16px;
-border-radius:40px;
-font-size:13px;
+padding:10px 14px;
+border-radius:30px;
+font-size:12px;
 background:#fff;
 border:1px solid var(--border);
-z-index:9999;
-transition:right 0.6s ease;
+transition:0.5s;
 }
-.wa-btn.show{right:12px;}
 
-/* SOCIAL */
+.wa-btn.show{right:10px;}
+
+.wa-btn img{width:18px;}
+
+/* SOCIAL (VRACENO) */
 .social-bar{
 position:fixed;
-right:-80px;
+right:-70px;
 bottom:110px;
 display:flex;
 flex-direction:column;
-gap:12px;
+gap:10px;
 opacity:0.4;
-transition:0.6s;
+transition:0.5s;
 }
-.social-bar.show{right:12px;}
+
+.social-bar.show{
+right:10px;
+opacity:0.3;
+}
 
 .social-bar a{
-width:44px;height:44px;border-radius:50%;
-display:flex;align-items:center;justify-content:center;
+width:42px;
+height:42px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
 background:#fff;
 border:1px solid var(--border);
 }
 
-/* MOBILE */
-@media(max-width:768px){
-.brand img{height:44px;}
-.brand-text div:last-child{font-size:0.75rem;}
+.social-bar img{
+width:18px;
+opacity:0.6;
 }
 
 </style>
@@ -231,18 +239,20 @@ border:1px solid var(--border);
 
 <body>
 
-<header id="header">
-<div class="container head">
+<header>
+<div class="head">
 
 <div class="brand">
-<a href="index.html">
-<img src="univerzalnium.webp">
-</a>
+
+<div class="logo-box">
+<img src="logo-white.png">
+</div>
 
 <div class="brand-text">
 <div>Удружење грађана</div>
 <div>Иксан Снага правде</div>
 </div>
+
 </div>
 
 <div class="nav-right">
@@ -250,6 +260,7 @@ border:1px solid var(--border);
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
 <div class="menu" id="menu">
+
 <div class="menu-btn">
 <span></span>
 <span></span>
@@ -265,9 +276,11 @@ border:1px solid var(--border);
 <a href="inicijative.html">Иницијативе</a>
 <a href="prijavi.html">Представка</a>
 </div>
+
 </div>
 
 </div>
+
 </div>
 </header>
 
@@ -278,51 +291,6 @@ border:1px solid var(--border);
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
 </div>
 
-<div class="main-grid">
-
-<div class="doc-card">
-<h2>Контакт и подршка</h2>
-<p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
-<p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
-<p>Правна питања: искључиво путем представке.</p>
-
-<hr style="margin:20px 0; opacity:0.2;">
-
-<p>За медије и институције:<br>066-585-7-707</p>
-
-<p>За грађане, раднике и предузетнике:</p>
-<ul>
-<li>преузмите формулар</li>
-<li>попуните податке</li>
-<li>опишите проблем</li>
-<li>потпишите</li>
-</ul>
-
-<p style="margin-top:15px;">Пошаљите на:</p>
-<p style="font-size:18px;">
-<a href="mailto:iksan.snaga.pravde@gmail.com">
-iksan.snaga.pravde@gmail.com
-</a>
-</p>
-</div>
-
-<div class="doc-card">
-<h3>Основни подаци</h3>
-<p>Седиште: Београд</p>
-<p>Адреса: Војводе Степе 127</p>
-
-<hr style="margin:15px 0; opacity:0.2;">
-
-<p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>Телефон: 066 585 7 707</p>
-
-<hr style="margin:15px 0; opacity:0.2;">
-
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
-</div>
-
-</div>
 </div>
 
 <div class="social-bar" id="socialBar">
@@ -332,7 +300,7 @@ iksan.snaga.pravde@gmail.com
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<a href="https://wa.me/381665857707" class="wa-btn">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
@@ -340,14 +308,6 @@ iksan.snaga.pravde@gmail.com
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
-
-window.addEventListener("scroll",()=>{
-if(window.scrollY>40){
-document.getElementById("header").classList.add("scrolled");
-}else{
-document.getElementById("header").classList.remove("scrolled");
-}
-});
 
 window.addEventListener("load",()=>{
 setTimeout(()=>{
