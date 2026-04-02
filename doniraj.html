@@ -28,15 +28,26 @@ body{
   overflow-x:hidden;
 }
 
-/* POZADINA */
+/* POZADINA (ISTA KAO KONTAKT) */
 body::before{
   content:"";
   position:fixed;
   inset:0;
   z-index:-1;
-  background:
-  linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.92)),
-  url('lady-justice-hero.webp') center 10% / cover no-repeat;
+  background:url('lady-justice-hero.webp') center top / cover no-repeat;
+  transform-origin:bottom right;
+  animation:goddessReveal 1.3s ease-out both;
+}
+
+@keyframes goddessReveal{
+  0%{
+    transform:translate(120px,140px) scale(1.12);
+    opacity:0.82;
+  }
+  100%{
+    transform:translate(0,0) scale(1);
+    opacity:1;
+  }
 }
 
 /* HEADER */
@@ -57,7 +68,6 @@ header{
   justify-content:space-between;
 }
 
-/* LOGO */
 .brand{
   display:flex;
   align-items:center;
@@ -82,11 +92,11 @@ header{
 }
 
 .brand-text .main{
-  font-size:0.78rem;
+  font-size:0.76rem;
   font-weight:600;
 }
 
-/* RIGHT */
+/* DESNO */
 .nav-right{
   display:flex;
   align-items:center;
@@ -94,43 +104,49 @@ header{
   padding-right:12px;
 }
 
-/* DONATE HEADER */
 .donate-btn{
   background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
-  padding:10px 12px;
-  min-width:100px;
-  text-align:center;
-  font-size:0.75rem;
+  padding:12px 14px;
+  font-size:0.74rem;
   font-weight:700;
 }
 
 /* HERO */
-.hero-space{height:150px}
+.hero-space{height:260px}
 
 /* CONTAINER */
 .container{
-  max-width:650px;
+  max-width:1150px;
   margin:auto;
   padding:20px;
 }
 
+.main-grid{
+  display:grid;
+  gap:20px;
+  margin-top:30px;
+}
+
+@media(min-width:900px){
+  .main-grid{grid-template-columns:1fr 1fr;}
+}
+
 /* CARD */
 .doc-card{
-  padding:26px;
+  padding:22px;
   background:#fff;
   border:1px solid var(--line);
-  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* TITLE */
+/* NASLOVI */
 .doc-card h2{
-  text-align:center;
-  font-size:24px;
-  margin-bottom:15px;
+  font-size:17px;
+  margin-bottom:10px;
 }
 
-/* AMOUNTS */
+/* PAYPAL */
 .amounts{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -150,7 +166,6 @@ header{
   color:#fff;
 }
 
-/* INPUT */
 .custom{
   margin-top:12px;
   width:100%;
@@ -159,7 +174,6 @@ header{
   text-align:center;
 }
 
-/* MAIN DONATE BUTTON (FIX) */
 .main-donate{
   margin-top:12px;
   width:100%;
@@ -171,43 +185,34 @@ header{
   cursor:pointer;
 }
 
-/* ZIRO CARD */
-.bank-card{
-  margin-top:20px;
-  padding:20px;
-  background:#fafafa;
-  border:1px solid var(--line);
-}
-
-.bank-card h3{
-  text-align:center;
-  margin-bottom:12px;
-}
-
+/* ZIRO */
 .bank-row{
   display:flex;
   justify-content:space-between;
-  padding:6px 0;
+  padding:8px 0;
   border-bottom:1px solid #eee;
-  font-size:14px;
+  font-size:0.75rem;
 }
 
 .bank-row:last-child{
   border:none;
 }
 
-.bank-row span:last-child{
-  font-weight:600;
-}
-
 /* SOCIAL */
 .social-bar{
   position:fixed;
-  right:12px;
+  right:-80px;
   bottom:120px;
   display:flex;
   flex-direction:column;
   gap:12px;
+  transition:.6s;
+  opacity:0;
+}
+
+.social-bar.show{
+  right:12px;
+  opacity:1;
 }
 
 .social-bar a{
@@ -222,16 +227,18 @@ header{
 
 .social-bar img{width:20px;}
 
-/* WHATSAPP */
 .wa-btn{
   position:fixed;
-  right:12px;
+  right:-220px;
   bottom:50px;
   padding:12px 14px;
   background:#25D366;
   color:#fff;
   border-radius:40px;
+  transition:.6s;
 }
+
+.wa-btn.show{right:12px;}
 </style>
 </head>
 
@@ -261,8 +268,10 @@ header{
 
 <div class="container">
 
-<div class="doc-card">
+<div class="main-grid">
 
+<!-- PAYPAL -->
+<div class="doc-card">
 <h2>Подржи наш рад</h2>
 
 <div class="amounts">
@@ -281,44 +290,24 @@ header{
 <p style="text-align:center;font-size:12px;margin-top:8px;color:#666;">
 Сигурна уплата — PayPal
 </p>
-
 </div>
 
-<!-- ZIRO RACUN -->
-<div class="bank-card">
+<!-- ZIRO -->
+<div class="doc-card">
+<h2>Уплата путем банке</h2>
 
-<h3>Уплата на жиро рачун</h3>
-
-<div class="bank-row">
-<span>Прималац:</span>
-<span>Иксан Снага правде</span>
-</div>
-
-<div class="bank-row">
-<span>Жиро рачун:</span>
-<span>340-100034558018</span>
-</div>
-
-<div class="bank-row">
-<span>Банка:</span>
-<span>Erste банка</span>
-</div>
-
-<div class="bank-row">
-<span>Сврха:</span>
-<span>Донација</span>
-</div>
-
-<div class="bank-row">
-<span>Позив на број:</span>
-<span>2026</span>
-</div>
+<div class="bank-row"><span>Прималац:</span><span>Иксан Снага правде</span></div>
+<div class="bank-row"><span>Жиро рачун:</span><span>340-100034558018</span></div>
+<div class="bank-row"><span>Банка:</span><span>Erste банка</span></div>
+<div class="bank-row"><span>Сврха:</span><span>Донација</span></div>
+<div class="bank-row"><span>Позив на број:</span><span>2026</span></div>
 
 </div>
 
 </div>
+</div>
 
-<div class="social-bar">
+<div class="social-bar" id="socialBar">
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
 </div>
@@ -343,6 +332,13 @@ let custom=document.getElementById('customAmount').value;
 let finalAmount=custom || amount;
 window.open(`https://www.paypal.me/snagapravde/${finalAmount}`,'_blank');
 };
+
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.getElementById("socialBar").classList.add("show");
+document.querySelector(".wa-btn").classList.add("show");
+},400);
+});
 </script>
 
 </body>
