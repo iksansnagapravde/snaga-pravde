@@ -158,10 +158,17 @@ margin-top:-80px;
 }
 
 .btn-lite{
-background:#fff;
-border:1px solid rgba(0,0,0,0.2);
+background:linear-gradient(180deg,#ffffff,#f3f6fa);
+border:1px solid rgba(10,63,120,0.25);
 padding:12px 24px;
 font-size:0.85rem;
+color:#0a3f78;
+font-weight:600;
+letter-spacing:0.3px;
+}
+.btn-lite:hover{
+background:#0a3f78;
+color:#fff;
 }
 
 .btn-main{
@@ -248,18 +255,22 @@ width:18px;
 filter:brightness(0) invert(1);
 }
 
-/* SOCIAL */
 .social-bar{
 position:fixed;
-right:-80px;
+right:-120px; /* 🔥 да крене ван екрана */
 bottom:110px;
 display:flex;
 flex-direction:column;
 gap:10px;
-transition:0.4s;
+transition:0.6s ease;
+opacity:0;
 }
 
-.social-bar.show{right:10px;}
+.social-bar.show{
+right:10px;
+opacity:1;
+}
+
 
 .social-bar a{
 width:44px;
