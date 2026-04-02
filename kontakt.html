@@ -36,6 +36,19 @@ body::before{
   inset:0;
   z-index:-1;
   background:url('lady-justice-hero.webp') center top / cover no-repeat;
+  animation:goddessReveal 1.35s ease-out both;
+  transform-origin:bottom right;
+}
+
+@keyframes goddessReveal{
+  0%{
+    transform:translate(120px, 140px) scale(1.12);
+    opacity:0.82;
+  }
+  100%{
+    transform:translate(0,0) scale(1);
+    opacity:1;
+  }
 }
 
 /* HEADER */
