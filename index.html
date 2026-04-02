@@ -18,7 +18,7 @@
 
 <link rel="icon" href="logo-white.png">
 
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -43,17 +43,14 @@ body{
 min-height:100vh;
 
 background:
+linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0.95)),
+radial-gradient(circle at center, rgba(0,0,0,0.03), transparent 60%),
+url('lady-justice-hero.webp') center center / contain no-repeat fixed;
 
-linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+color:#1a1a1a;
 
-radial-gradient(circle at center, rgba(255,255,255,0.04), transparent 60%),
-
-url('justice-bg.jpg') center 20% / cover no-repeat fixed;
-
-color:#fff;
-
-font-family:"Times New Roman",serif;
-
+font-family: 'Inter', sans-serif;
+  
 padding-bottom:140px;
 
 overflow-x:hidden;
@@ -317,20 +314,20 @@ z-index:1;
 
 
 h1{
-
 font-size:clamp(20px,5vw,28px);
-
 margin-top:30px;
-
 margin-bottom:10px;
 
+font-family: 'Playfair Display', serif;
+font-weight:600;
+letter-spacing:-0.5px;
 }
 
 
 
 .sub{
 
-color:var(--ink);
+color:#6b6b6b;
 
 font-size:15px;
 
@@ -359,23 +356,16 @@ margin-top:35px;
 /* BUTTONS */
 
 .btn{
-
 padding:12px 20px;
-
 border-radius:40px;
-
 font-weight:700;
-
 font-size:13px;
-
-box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
-
 transition:all 0.25s ease;
 
-background:rgba(20,20,20,0.45);
-
-border:1px solid rgba(255,255,255,.08);
-
+background:rgba(255,255,255,0.85);
+color:#1a1a1a;
+border:1px solid rgba(0,0,0,0.08);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 
@@ -401,13 +391,9 @@ background:linear-gradient(135deg,rgba(140,20,40,0.65),rgba(80,10,25,0.55));
 
 
 .btn-gold{
-
-background:linear-gradient(135deg,#ffd700,#ffb300);
-
-color:#000;
-
+background:linear-gradient(135deg,#d6b45d,#c9a54c);
+color:#1a1a1a;
 }
-
 
 
 /* BIG CTA */
