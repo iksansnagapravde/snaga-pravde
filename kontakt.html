@@ -267,29 +267,47 @@ width:18px;
 
 /* WHATSAPP U BLOKU */
 .social-bar .wa{
-margin-top:14px;
-padding:10px 14px;
+margin-top:16px;
 
 display:flex;
 align-items:center;
-gap:8px;
+gap:10px;
 
-background:rgba(37,211,102,0.95);
+padding:8px 12px;
+
+background:linear-gradient(135deg,#25D366,#1ebe5d);
 color:#fff;
 
-font-size:0.8rem;
+font-size:0.78rem;
 font-weight:600;
 
-border:1px solid rgba(255,255,255,0.4);
-backdrop-filter:blur(6px);
+border-radius:30px;
 
-box-shadow:0 8px 20px rgba(37,211,102,0.35);
+box-shadow:
+0 8px 18px rgba(37,211,102,0.35),
+inset 0 1px 0 rgba(255,255,255,0.25);
+
+border:1px solid rgba(255,255,255,0.35);
 }
 
-.social-bar .wa img{
+/* IKONA KAO PRAVI WHATSAPP */
+.social-bar .wa .icon{
+width:28px;
+height:28px;
+border-radius:50%;
+background:#fff;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+}
+
+.social-bar .wa .icon img{
 width:16px;
-filter:brightness(0) invert(1);
-}
+filter:none;
+}7
 
 </style>
 </head>
@@ -403,8 +421,13 @@ filter:brightness(0) invert(1);
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 
 <a href="https://wa.me/381665857707" class="wa">
+
+<div class="icon">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
+</div>
+
+<span>Пишите нам</span>
+
 </a>
 
 </div>
