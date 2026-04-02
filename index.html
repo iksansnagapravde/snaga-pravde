@@ -1,5 +1,382 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="sr-Cyrl-RS">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<title>Заштита људских права и одговорност институција</title>
+
+<link rel="icon" href="logo-white.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--blue:#0a3f78;
+--orange:#ff5a1f;
+--text:#111;
+--line:rgba(0,0,0,0.12);
+--green:#25D366;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+a{text-decoration:none;color:inherit}
+
+body{
+font-family:"Playfair Display",serif;
+color:var(--text);
+padding-bottom:140px;
+overflow-x:hidden;
+}
+
+/* POZADINA (PELZER) */
+body::before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-1;
+background:url('lady-justice-hero.webp') center top / cover no-repeat;
+animation:goddessReveal 1.3s ease-out both;
+transform-origin:bottom right;
+}
+
+@keyframes goddessReveal{
+0%{transform:translate(140px,160px) scale(1.1); opacity:0.8;}
+100%{transform:translate(0,0) scale(1); opacity:1;}
+}
+
+/* HEADER */
+header{
+position:sticky;
+top:0;
+background:#fff;
+border-bottom:1px solid var(--line);
+z-index:1000;
+}
+
+.head{
+max-width:1150px;
+margin:auto;
+padding:12px 0;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+/* LOGO */
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+padding-left:12px;
+}
+
+.logo-box{
+width:72px;
+height:72px;
+background:var(--blue);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.logo-box img{width:66px;}
+
+.brand-text .top{font-size:0.6rem;color:#777;}
+.brand-text .main{
+font-size:0.76rem;
+font-weight:600;
+white-space:nowrap;
+}
+
+/* RIGHT */
+.nav-right{
+display:flex;
+align-items:center;
+gap:12px;
+padding-right:12px;
+}
+
+/* DONIRAJ */
+.donate-btn{
+background:var(--orange);
+color:#fff;
+padding:12px 14px;
+min-width:110px;
+font-size:0.74rem;
+font-weight:700;
+}
+
+/* MENU */
+.menu{position:relative}
+
+.menu-btn{
+width:26px;
+height:18px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+cursor:pointer;
+}
+
+.menu-btn span{height:2px;background:#000;}
+
+.dropdown{
+position:absolute;
+top:calc(100% + 10px);
+right:0;
+background:#fff;
+border:1px solid var(--line);
+display:none;
+min-width:270px;
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+display:block;
+padding:10px 14px;
+font-size:0.85rem;
+border-bottom:1px solid var(--line);
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding-top:60px;
+}
+
+.hero h1{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.sub{
+font-size:14px;
+color:#555;
+}
+
+/* CTA */
+.cta-row{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:30px;
+align-items:center;
+}
+
+.btn{
+padding:12px 22px;
+font-size:0.85rem;
+border:1px solid var(--line);
+background:#fff;
+}
+
+.btn-main{
+background:var(--blue);
+color:#fff;
+font-weight:700;
+}
+
+/* BIG CTA */
+.big-cta{
+margin-top:40px;
+padding:14px 26px;
+background:var(--blue);
+color:#fff;
+font-weight:700;
+}
+
+/* GRID */
+.grid{
+display:grid;
+gap:20px;
+max-width:1100px;
+margin:50px auto;
+padding:0 20px;
+}
+
+@media(min-width:900px){
+.grid{grid-template-columns:1fr 1fr;}
+}
+
+/* CARD (PELZER STYLE) */
+.card{
+padding:22px;
+background:#fff;
+border:1px solid var(--line);
+transition:0.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+/* TEXT */
+.card h3{
+font-size:15px;
+font-weight:500;
+margin-bottom:8px;
+}
+
+.card p{
+font-size:0.72rem;
+line-height:1.55;
+}
+
+/* SOCIAL */
+.social-bar{
+position:fixed;
+right:-80px;
+bottom:110px;
+display:flex;
+flex-direction:column;
+gap:12px;
+transition:0.6s;
+opacity:0;
+}
+
+.social-bar.show{
+right:12px;
+opacity:1;
+}
+
+.social-bar a{
+width:44px;
+height:44px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#fff;
+border:1px solid var(--line);
+}
+
+.social-bar img{width:20px;}
+
+/* WHATSAPP */
+.wa-btn{
+position:fixed;
+right:-220px;
+bottom:40px;
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 14px;
+background:#25D366;
+color:#fff;
+font-size:0.8rem;
+border-radius:40px;
+transition:0.6s;
+}
+
+.wa-btn.show{right:12px;}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="head">
+
+<div class="brand">
+<div class="logo-box">
+<img src="logo-white.png">
+</div>
+
+<div class="brand-text">
+<div class="top">Удружење грађана</div>
+<div class="main">Иксан Снага правде</div>
+</div>
+</div>
+
+<div class="nav-right">
+
+<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+
+<div class="menu" id="menu">
+<div class="menu-btn">
+<span></span><span></span><span></span>
+</div>
+
+<div class="dropdown">
+<a href="index.html"><b>ПОЧЕТНА</b></a>
+<a href="kontakt.html">Контакт</a>
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области</a>
+<a href="ciljevi.html">Циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="prijavi.html">Представка</a>
+</div>
+</div>
+
+</div>
+</div>
+</header>
+
+<div class="hero">
+<h1>Заштита људских права и одговорност институција</h1>
+<p class="sub">Удружење грађана „Иксан – Снага правде“</p>
+
+<div class="cta-row">
+<a href="inicijative.html" class="btn">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
+</div>
+
+<a href="uradili.html" class="big-cta">ШТА СМО УРАДИЛИ</a>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Нико не сме живети испод минимума</h3>
+<p>Минимум достојанства мора постати право, а не изузетак.</p>
+</div>
+
+<div class="card">
+<h3>Крај дужничког ропства</h3>
+<p>Грађани морају имати излаз из дуга и фер систем извршења.</p>
+</div>
+
+<div class="card">
+<h3>Порекло имовине</h3>
+<p>Јавна функција мора значити јавну одговорност.</p>
+</div>
+
+<div class="card">
+<h3>Независно судство</h3>
+<p>Правда мора бити видљива, брза и једнака.</p>
+</div>
+
+</div>
+
+<div class="social-bar" id="socialBar">
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
+</div>
+
+<a href="https://wa.me/381665857707" class="wa-btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
+</a>
+
+<script>
+const menu=document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.getElementById("socialBar").classList.add("show");
+document.querySelector(".wa-btn").classList.add("show");
+},400);
+});
+</script>
+
+</body>
+</html>
 <html lang="sr-Cyrl-RS">
 
 <head>
