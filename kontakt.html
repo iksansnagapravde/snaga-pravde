@@ -1,351 +1,428 @@
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Контакт — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
 :root{
---gold:#d3a451;
+  --gold:#c6a25a;
+  --text:#1f1f1f;
+  --soft:#6a6a6a;
+  --border:rgba(0,0,0,0.10);
+  --white:rgba(255,255,255,0.92);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
 
 body{
-background:
-linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('lady-justice-hero.webp') center 20% / cover no-repeat fixed;
-color:#fff;
-font-family:"Times New Roman";
-padding-bottom:140px;
+  background:url('lady-justice-hero.webp') center 20% / cover no-repeat fixed;
+  color:var(--text);
+  font-family:"Playfair Display","Times New Roman",serif;
+  padding-bottom:140px;
+  min-height:100vh;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:0 20px;
+}
 
 /* HEADER */
 header{
-position:sticky;
-top:0;
-z-index:100;
-backdrop-filter:blur(6px);
-border-bottom:1px solid rgba(255,255,255,.1);
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,255,255,0.88);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--border);
 }
 
 .head{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:4px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:6px 0;
 }
 
-.brand img{height:95px;border-radius:10px;}
+.brand img{
+  height:95px;
+  border-radius:10px;
+}
 
 /* NAV */
 .nav{
-display:flex;
-align-items:center;
-gap:6px;
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
-.nav a,.menu-btn{
-padding:6px 10px;
-border-radius:10px;
-font-weight:600;
-font-size:0.85rem;
-background:rgba(0,0,0,0.45);
-color:#fff;
-box-shadow:0 5px 0 rgba(0,0,0,.7),0 15px 30px rgba(0,0,0,.8);
+.nav > a,
+.menu-btn{
+  font-size:0.88rem;
+  color:var(--text);
+  position:relative;
+  background:none;
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+  padding:6px 0;
 }
 
-.menu-btn{background:#fff;color:#000;font-weight:700;}
+.nav > a::after,
+.menu-btn::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0;
+  height:1px;
+  background:var(--gold);
+  transition:width .25s ease;
+}
 
-.menu{position:relative}
+.nav > a:hover::after,
+.menu-btn:hover::after{
+  width:100%;
+}
+
+.menu{
+  position:relative;
+}
 
 .dropdown{
-position:absolute;
-top:calc(100% + 8px);
-right:0;
-background:rgba(20,20,20,0.95);
-border-radius:12px;
-padding:6px;
-display:none;
-min-width:260px;
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  background:rgba(255,255,255,0.97);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:8px;
+  display:none;
+  min-width:280px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-.menu.open .dropdown{display:block}
-.dropdown a{display:block;padding:9px 10px;}
+.menu.open .dropdown{
+  display:block;
+}
+
+.dropdown a{
+  display:block;
+  padding:9px 10px;
+  color:var(--text);
+  border-radius:4px;
+}
+
+.dropdown a:hover{
+  background:rgba(0,0,0,0.03);
+  color:var(--gold);
+}
 
 /* CTA */
 .top-buttons{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:14px;
-margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  margin-top:34px;
 }
 
 .btn{
-padding:12px 20px;
-border-radius:40px;
-font-weight:700;
-font-size:13px;
-box-shadow:0 6px 0 rgba(0,0,0,.5),0 15px 30px rgba(0,0,0,.6);
-transition:0.3s;
+  padding:11px 18px;
+  border-radius:4px;
+  font-size:12px;
+  letter-spacing:.02em;
+  border:1px solid var(--border);
+  background:var(--white);
+  color:var(--text);
+  transition:.25s ease;
 }
 
-.btn:hover{transform:translateY(-2px) scale(1.03);}
-
-.btn-represent{background:rgba(20,20,20,0.6);}
+.btn:hover{
+  border-color:var(--gold);
+  color:var(--gold);
+}
 
 .btn-danger{
-background:linear-gradient(135deg,rgba(140,20,40,0.65),rgba(80,10,25,0.55));
+  color:#7a1c2b;
+  border-color:rgba(122,28,43,0.35);
+}
+
+.btn-danger:hover{
+  color:#7a1c2b;
+  border-color:#7a1c2b;
 }
 
 .btn-gold{
-background:linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
-box-shadow:0 6px 0 #cc9a00,0 0 20px rgba(255,215,0,0.5);
+  color:var(--gold);
+  border-color:rgba(198,162,90,0.45);
 }
 
-/* GRID kao prijavi */
+.btn-gold:hover{
+  border-color:var(--gold);
+}
+
+/* GRID */
 .main-grid{
-display:grid;
-gap:25px;
-margin-top:30px;
+  display:grid;
+  gap:25px;
+  margin-top:34px;
 }
 
 @media(min-width:900px){
-.main-grid{grid-template-columns:1fr 1fr;}
+  .main-grid{
+    grid-template-columns:1fr 1fr;
+  }
 }
 
-/* DOC CARD STYLE (kao prijavi.html) */
+/* DOC CARD */
 .doc-card{
-background:linear-gradient(
-135deg,
-rgba(60,10,20,0.25),
-rgba(20,20,20,0.65)
-);
-padding:30px;
-border-radius:15px;
-border:1px solid rgba(140,20,40,0.25);
-box-shadow:0 10px 30px rgba(0,0,0,.6);
-transition:.25s ease;
-position:relative;
+  background:rgba(255,255,255,0.94);
+  padding:30px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  box-shadow:0 8px 24px rgba(0,0,0,.05);
 }
 
-.doc-card:hover{
-transform:translateY(-4px);
-border:1px solid rgba(180,40,60,0.4);
-box-shadow:0 15px 40px rgba(0,0,0,.75);
-}
-
-.doc-card h2, .doc-card h3{
-margin-bottom:10px;
+.doc-card h2,
+.doc-card h3{
+  margin-bottom:12px;
+  font-weight:500;
+  color:var(--text);
 }
 
 .doc-card p{
-color:#ddd;
-margin-bottom:10px;
+  color:var(--soft);
+  margin-bottom:10px;
+  line-height:1.65;
 }
 
 .doc-card ul{
-margin-top:10px;
-padding-left:18px;
-color:#ddd;
+  margin-top:10px;
+  padding-left:18px;
+  color:var(--soft);
+  line-height:1.65;
+}
+
+.doc-card li{
+  margin-bottom:4px;
+}
+
+.doc-card a{
+  color:var(--gold);
+}
+
+hr{
+  border:none;
+  height:1px;
+  background:rgba(0,0,0,0.10);
 }
 
 /* WHATSAPP */
 .wa-btn{
-position:fixed;
-bottom:20px;
-right:-180px;
-display:flex;
-align-items:center;
-gap:8px;
-padding:10px 16px;
-border-radius:40px;
-font-size:13px;
-font-weight:700;
-background:linear-gradient(135deg,rgba(37,211,102,0.55),rgba(40,120,160,0.45));
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.15);
-box-shadow:0 4px 12px rgba(0,0,0,0.4);
-z-index:9999;
-transition:right 0.6s ease;
+  position:fixed;
+  bottom:20px;
+  right:-180px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 16px;
+  border-radius:40px;
+  font-size:13px;
+  background:rgba(255,255,255,0.95);
+  color:var(--text);
+  border:1px solid var(--border);
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+  z-index:9999;
+  transition:right 0.6s ease;
 }
 .wa-btn.show{right:12px;}
 .wa-btn img{width:22px;}
 
 /* SOCIAL */
 .social-bar{
-position:fixed;
-right:-80px;
-bottom:110px;
-display:flex;
-flex-direction:column;
-gap:12px;
-z-index:9999;
-transition:right 0.6s ease, opacity 0.6s ease;
-opacity:0.5;
+  position:fixed;
+  right:-80px;
+  bottom:110px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:9999;
+  transition:right 0.6s ease, opacity 0.6s ease;
+  opacity:0.5;
 }
 
-.social-bar.show{right:12px;opacity:0.35;}
+.social-bar.show{
+  right:12px;
+  opacity:0.9;
+}
 
 .social-bar a{
-width:44px;height:44px;border-radius:50%;
-display:flex;align-items:center;justify-content:center;
-background:rgba(20,20,20,0.55);
-backdrop-filter:blur(12px);
-box-shadow:0 4px 12px rgba(0,0,0,0.5);
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(255,255,255,0.95);
+  border:1px solid var(--border);
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-.social-bar img{width:20px;filter:invert(1);}
+.social-bar img{
+  width:20px;
+  opacity:0.65;
+}
 
 /* MOBILE */
 @media(max-width:768px){
-.brand img{height:80px}
-.nav{flex-wrap:wrap;justify-content:center;}
+  .brand img{height:80px}
+  .nav{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+  }
+  .head{
+    flex-direction:column;
+    gap:8px;
+  }
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="container head">
+  <div class="container head">
 
-<div class="brand">
-<a href="index.html"><img src="logo-white.png"></a>
-</div>
+    <div class="brand">
+      <a href="index.html"><img src="logo-white.png" alt="Иксан"></a>
+    </div>
 
-<nav class="nav">
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">КОНТАКТ</a>
+    <nav class="nav">
+      <a href="index.html">ПОЧЕТНА</a>
+      <a href="kontakt.html">КОНТАКТ</a>
 
-<div class="menu" id="menu">
-<button class="menu-btn">МЕНИ ▾</button>
+      <div class="menu" id="menu">
+        <button class="menu-btn" type="button">МЕНИ ▾</button>
 
-<div class="dropdown">
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-</div>
+        <div class="dropdown">
+          <a href="onama.html">о Нама</a>
+          <a href="oblasti.html">Области деловања</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="inicijative.html">Захтеви-Закони-Предмети</a>
+          <a href="doniraj.html">Подржите наш рад</a>
+          <a href="prikljucise.html">Прикључите се нашем раду</a>
+          <a href="prijavi.html">Представка грађанина</a>
+          <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+          <a href="porekloimovine.html">Транспарентност јавних финансија</a>
+          <a href="sudpravda.html">Независност судског система</a>
+          <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+        </div>
+      </div>
+    </nav>
 
-</div>
-</nav>
-</div>
+  </div>
 </header>
 
 <div class="container">
 
-<div class="top-buttons">
-<a href="inicijative.html" class="btn btn-represent">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+  <div class="top-buttons">
+    <a href="inicijative.html" class="btn">ЗАКОНИ И ПРОПИСИ</a>
+    <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
+    <a href="doniraj.html" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+  </div>
+
+  <div class="main-grid">
+
+    <div class="doc-card">
+      <h2>Контакт и подршка</h2>
+
+      <p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
+
+      <p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
+
+      <p>Правна питања: искључиво путем представке.</p>
+
+      <hr style="margin:20px 0; opacity:0.2;">
+
+      <p>За медије и институције:<br>066-585-7-707</p>
+
+      <p>За грађане, раднике и предузетнике:</p>
+
+      <ul>
+        <li>преузмите формулар</li>
+        <li>попуните податке</li>
+        <li>опишите проблем</li>
+        <li>потпишите</li>
+      </ul>
+
+      <p style="margin-top:15px;">Пошаљите на:</p>
+
+      <p style="font-size:18px;">
+        <a href="mailto:iksan.snaga.pravde@gmail.com">
+          iksan.snaga.pravde@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="doc-card">
+      <h3>Основни подаци</h3>
+
+      <p>Седиште: Београд</p>
+      <p>Адреса: Војводе Степе 127</p>
+
+      <hr style="margin:15px 0; opacity:0.2;">
+
+      <p>Email: iksan.snaga.pravde@gmail.com</p>
+      <p>Телефон: 066 585 7 707</p>
+
+      <hr style="margin:15px 0; opacity:0.2;">
+
+      <p>МБ: 28406312</p>
+      <p>ПИБ: 115357260</p>
+    </div>
+
+  </div>
 </div>
 
-<div class="main-grid">
-
-<!-- KONTAKT -->
-<div class="doc-card">
-
-<h2>Контакт и подршка</h2>
-
-<p>Контакт са удружењем се остварује <b>искључиво</b> на следеће начине:</p>
-
-<p><b>WhatsApp:</b> дугме „Пишите нам“ у доњем десном углу.</p>
-
-<p><b>Правна питања:</b> искључиво путем представке.</p>
-
-<hr style="margin:20px 0; opacity:0.2;">
-
-<p><b>За медије и институције:</b><br>066-585-7-707</p>
-
-<p><b>За грађане, раднике и предузетнике:</b></p>
-
-<ul>
-<li>преузмите формулар</li>
-<li>попуните податке</li>
-<li>опишите проблем</li>
-<li>потпишите</li>
-</ul>
-
-<p style="margin-top:15px;">Пошаљите на:</p>
-
-<p style="font-size:18px;">
-<b style="color:#ffd700;">
-<a href="mailto:iksan.snaga.pravde@gmail.com">
-iksan.snaga.pravde@gmail.com
-</a>
-</b>
-</p>
-
-</div>
-
-<!-- IMPRESUM -->
-<div class="doc-card">
-
-<h3>Основни подаци</h3>
-
-<p>Седиште: Београд</p>
-<p>Адреса: Војводе Степе 127</p>
-
-<hr style="margin:15px 0; opacity:0.2;">
-
-<p>Email: iksan.snaga.pravde@gmail.com</p>
-<p>Телефон: 066 585 7 707</p>
-
-<hr style="margin:15px 0; opacity:0.2;">
-
-<p>МБ: 28406312</p>
-<p>ПИБ: 115357260</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
 </div>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Пишите нам
 </a>
 
 <script>
-const menu=document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+const menu = document.getElementById('menu');
+menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
 window.addEventListener("load", () => {
-setTimeout(()=>{
-document.querySelector(".wa-btn").classList.add("show");
-document.getElementById("socialBar").classList.add("show");
-},400);
+  setTimeout(() => {
+    document.querySelector(".wa-btn").classList.add("show");
+    document.getElementById("socialBar").classList.add("show");
+  }, 400);
+});
+
+document.addEventListener("click", (e) => {
+  if (!menu.contains(e.target)) {
+    menu.classList.remove("open");
+  }
 });
 </script>
 
