@@ -20,6 +20,7 @@
 --green:#25D366;
 }
 
+/* RESET */
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
 
@@ -69,7 +70,6 @@ justify-content:center;
 width:66px;
 }
 
-/* TEXT */
 .brand-text .top{
 font-size:0.6rem;
 color:#777;
@@ -121,10 +121,37 @@ right:0;
 background:#fff;
 border:1px solid var(--line);
 display:none;
-min-width:260px;
+min-width:270px;
+
+opacity:0;
+transform:translateY(10px) scale(.97);
+transition:0.25s;
 }
 
-.menu.open .dropdown{display:block}
+.menu.open .dropdown{
+display:block;
+opacity:1;
+transform:translateY(0) scale(1);
+}
+
+.dropdown a{
+display:block;
+padding:10px 14px;
+font-size:0.85rem;
+border-bottom:1px solid var(--line);
+transition:0.2s;
+}
+
+.dropdown a:hover{
+background:#f4f7fb;
+padding-left:18px;
+color:var(--blue);
+}
+
+.dropdown a.active{
+font-weight:700;
+color:var(--blue);
+}
 
 /* HERO */
 .hero-space{
@@ -149,12 +176,18 @@ color:#0a3f78;
 font-weight:600;
 }
 
+.btn-lite:hover{
+background:var(--blue);
+color:#fff;
+}
+
 .btn-main{
 background:var(--blue);
 color:#fff;
 padding:16px 30px;
 font-size:0.95rem;
 font-weight:700;
+box-shadow:0 10px 25px rgba(10,63,120,0.4);
 }
 
 /* CARDS */
@@ -178,6 +211,7 @@ margin-top:30px;
 padding:26px;
 background:#fff;
 border:1px solid var(--line);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .doc-card.blue{
@@ -185,7 +219,7 @@ background:var(--blue);
 color:#fff;
 }
 
-/* 🔥 SOCIAL — FIXED */
+/* SOCIAL */
 .social-bar{
 position:fixed;
 right:-80px;
@@ -211,16 +245,21 @@ align-items:center;
 justify-content:center;
 background:#fff;
 border:1px solid var(--line);
+transition:0.2s;
+}
+
+.social-bar a:hover{
+transform:translateY(-3px);
 }
 
 .social-bar img{
 width:20px;
 }
 
-/* 🔥 WHATSAPP — ODVOJEN */
+/* WHATSAPP */
 .wa-btn{
 position:fixed;
-right:-200px;
+right:-220px;
 bottom:50px;
 
 display:flex;
@@ -238,13 +277,16 @@ font-weight:600;
 border-radius:40px;
 
 box-shadow:0 10px 25px rgba(37,211,102,0.4);
-
 transition:0.6s;
 z-index:10000;
 }
 
 .wa-btn.show{
 right:12px;
+}
+
+.wa-btn:hover{
+transform:translateY(-2px) scale(1.03);
 }
 
 .wa-btn img{
@@ -272,22 +314,42 @@ filter:brightness(0) invert(1);
 </div>
 
 <div class="nav-right">
+
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
 <div class="menu" id="menu">
 <div class="menu-btn">
 <span></span><span></span><span></span>
 </div>
+
 <div class="dropdown">
-<a href="index.html">Почетна</a>
-<a href="kontakt.html">Контакт</a>
+
+<a href="index.html" style="font-weight:700;">ПОЧЕТНА</a>
+<a href="kontakt.html" class="active">Контакт</a>
+
 <a href="onama.html">О нама</a>
-<a href="inicijative.html">Иницијативе</a>
-<a href="prijavi.html">Представка</a>
-</div>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Стратешки циљеви</a>
+<a href="inicijative.html">Захтеви-Закони-Предмети</a>
+<a href="doniraj.html">Подржите наш рад</a>
+<a href="prikljucise.html">Прикључите се нашем раду</a>
+<a href="prijavi.html">Представка грађанина</a>
+
+<hr style="opacity:0.2">
+
+<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+<a href="porekloimovine.html">Транспарентност јавних финансија</a>
+<a href="sudpravda.html">Независност судског система</a>
+<a href="radnicipreduzetnici.html">Правна сигурност рада</a>
+<a href="zastita-konkurencije.html">Заштита конкуренције</a>
+<a href="uradili.html">Шта смо урадили</a>
+
 </div>
 
 </div>
+
+</div>
+
 </div>
 </header>
 
@@ -302,22 +364,53 @@ filter:brightness(0) invert(1);
 <div class="main-grid">
 
 <div class="doc-card">
+
 <h2>Контакт и подршка</h2>
-<p>„Пишите нам“ у доњем углу.</p>
-<p>Проблем: путем представке.</p>
-<p>066-585-7-707</p>
+
+<p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
+<p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
+<p>Правна питања: искључиво путем представке.</p>
+
+<hr style="margin:15px 0; opacity:0.2;">
+
+<p>За медије и институције:<br>066-585-7-707</p>
+
+<p>За грађане:</p>
+<ul>
+<li>преузмите формулар</li>
+<li>попуните податке</li>
+<li>опишите проблем</li>
+<li>потпишите</li>
+</ul>
+
+<p style="margin-top:10px;font-weight:600;">
+iksan.snaga.pravde@gmail.com
+</p>
+
 </div>
 
 <div class="doc-card blue">
+
 <h3>Основни подаци</h3>
-<p>Београд</p>
-<p>Војводе Степе 127</p>
+
+<p>Седиште: Београд</p>
+<p>Адреса: Војводе Степе 127</p>
+
+<hr style="margin:15px 0; opacity:0.2;">
+
+<p>Email: iksan.snaga.pravde@gmail.com</p>
+<p>Телефон: 066 585 7 707</p>
+
+<hr style="margin:15px 0; opacity:0.2;">
+
+<p>МБ: 28406312</p>
+<p>ПИБ: 115357260</p>
+
 </div>
 
 </div>
 </div>
 
-<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
@@ -325,7 +418,6 @@ filter:brightness(0) invert(1);
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
