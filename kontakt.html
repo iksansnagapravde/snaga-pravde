@@ -13,17 +13,17 @@
 <style>
 
 :root{
---gold:#c6a25a;
+--blue:#0d3b66;
+--orange:#ff5a1f;
 --text:#1f1f1f;
 --border:rgba(0,0,0,0.08);
---blue:#0d3b66;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
 
 body{
-background:url('lady-justice-hero.webp') center 20% / cover no-repeat fixed;
+background:url('lady-justice-hero.webp') center top / cover no-repeat fixed;
 font-family:"Playfair Display",serif;
 color:var(--text);
 padding-bottom:140px;
@@ -33,9 +33,9 @@ padding-bottom:140px;
 header{
 position:sticky;
 top:0;
-z-index:100;
 background:#fff;
 border-bottom:1px solid var(--border);
+z-index:100;
 }
 
 .head{
@@ -55,33 +55,32 @@ gap:14px;
 }
 
 .logo-box{
-width:60px;
-height:60px;
+width:64px;
+height:64px;
 background:#0d3b66;
 display:flex;
 align-items:center;
 justify-content:center;
-border-radius:6px;
+border-radius:8px;
 }
 
 .logo-box img{
-width:52px; /* 🔥 skoro do ivice */
+width:58px; /* 🔥 skoro puni kvadrat */
 }
 
 /* TEXT */
 .brand-text{
 display:flex;
 flex-direction:column;
-line-height:1.1;
 }
 
 .brand-text div:first-child{
 font-size:0.7rem;
-color:#777;
+color:#666;
 }
 
 .brand-text div:last-child{
-font-size:1rem;
+font-size:1.05rem;
 }
 
 /* RIGHT */
@@ -91,11 +90,13 @@ align-items:center;
 gap:15px;
 }
 
+/* DONATE */
 .donate-btn{
-background:#f26522;
+background:#ff5a1f;
 color:#fff;
-padding:8px 14px;
-font-size:0.75rem;
+padding:10px 16px;
+font-size:0.8rem;
+font-weight:500;
 }
 
 /* MENU */
@@ -124,8 +125,6 @@ border:1px solid var(--border);
 padding:10px 0;
 display:none;
 min-width:260px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-border-radius:6px;
 }
 
 .menu.open .dropdown{display:block}
@@ -133,18 +132,11 @@ border-radius:6px;
 .dropdown a{
 display:block;
 padding:10px 16px;
-font-size:14px;
 }
 
-.dropdown a:hover{
-background:#f5f5f5;
-}
-
-/* CONTENT */
-.container{
-max-width:1150px;
-margin:auto;
-padding:20px;
+/* HERO SPACE */
+.hero-space{
+height:220px; /* 🔥 да се види богиња */
 }
 
 /* BUTTONS */
@@ -152,23 +144,32 @@ padding:20px;
 display:flex;
 flex-direction:column;
 align-items:center;
-gap:12px;
-margin-top:20px;
+gap:14px;
+margin-top:-80px;
 }
 
 .btn{
-padding:10px 18px;
-font-size:12px;
-border:1px solid var(--border);
-background:#fff;
+padding:10px 20px;
+border:1px solid #ccc;
+background:#ffffff;
+font-size:13px;
 }
 
-.btn-danger{
-border-color:#8c1428;
-color:#8c1428;
+.btn-main{
+padding:14px 26px;
+background:#0d3b66;
+color:#fff;
+font-size:15px;
 }
 
-/* GRID */
+/* CONTAINER */
+.container{
+max-width:1150px;
+margin:auto;
+padding:20px;
+}
+
+/* CARDS */
 .main-grid{
 display:grid;
 gap:20px;
@@ -176,35 +177,25 @@ margin-top:30px;
 }
 
 @media(min-width:900px){
-.main-grid{grid-template-columns:1fr 1fr;}
+.main-grid{
+grid-template-columns:1fr 1fr;
+}
 }
 
-/* CARDS */
 .doc-card{
-padding:22px;
+background:#ffffff;
+padding:24px;
 border-radius:6px;
 }
 
-/* WHITE CARD */
-.doc-card.white{
-background:#ffffff;
-color:#1f1f1f;
-}
-
-/* BLUE CARD */
 .doc-card.blue{
 background:#0d3b66;
-color:#ffffff;
+color:#fff;
 }
 
-/* TEXT FIX */
 .doc-card.blue p,
 .doc-card.blue li{
-color:#e6e6e6;
-}
-
-.doc-card.blue a{
-color:#c6a25a;
+color:#eaeaea;
 }
 
 .doc-card h2,
@@ -222,16 +213,12 @@ display:flex;
 align-items:center;
 gap:8px;
 padding:10px 14px;
-border-radius:30px;
-font-size:12px;
 background:#fff;
-border:1px solid var(--border);
+border:1px solid #ccc;
 transition:0.5s;
 }
 
 .wa-btn.show{right:10px;}
-
-.wa-btn img{width:18px;}
 
 /* SOCIAL */
 .social-bar{
@@ -247,23 +234,20 @@ transition:0.5s;
 
 .social-bar.show{
 right:10px;
-opacity:0.3;
 }
 
 .social-bar a{
 width:42px;
 height:42px;
-border-radius:50%;
+background:#fff;
 display:flex;
 align-items:center;
 justify-content:center;
-background:#fff;
-border:1px solid var(--border);
+border-radius:50%;
 }
 
 .social-bar img{
 width:18px;
-opacity:0.6;
 }
 
 </style>
@@ -304,9 +288,7 @@ opacity:0.6;
 <a href="ciljevi.html">Циљеви</a>
 <a href="inicijative.html">Иницијативе</a>
 <a href="prijavi.html">Представка</a>
-<a href="doniraj.html">Донирај</a>
 </div>
-
 </div>
 
 </div>
@@ -314,30 +296,30 @@ opacity:0.6;
 </div>
 </header>
 
-<div class="container">
+<div class="hero-space"></div>
 
 <div class="top-buttons">
 <a href="inicijative.html" class="btn">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
 </div>
+
+<div class="container">
 
 <div class="main-grid">
 
-<div class="doc-card white">
+<div class="doc-card">
 
 <h2>Контакт и подршка</h2>
 
-<p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
+<p>Контакт са удружењем:</p>
 
-<p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
+<p>Дугме „Пишите нам“ у доњем десном углу.</p>
 
-<p>Правна питања: искључиво путем представке.</p>
+<p>Угрожена права: искључиво путем представке.</p>
 
-<hr style="margin:15px 0; opacity:0.2;">
+<hr style="margin:15px 0;">
 
 <p>За медије и институције:<br>066-585-7-707</p>
-
-<p>За грађане:</p>
 
 <ul>
 <li>преузмите формулар</li>
@@ -346,13 +328,7 @@ opacity:0.6;
 <li>потпишите</li>
 </ul>
 
-<p style="margin-top:10px;">Пошаљите на:</p>
-
-<p>
-<a href="mailto:iksan.snaga.pravde@gmail.com">
-iksan.snaga.pravde@gmail.com
-</a>
-</p>
+<p>iksan.snaga.pravde@gmail.com</p>
 
 </div>
 
@@ -363,12 +339,10 @@ iksan.snaga.pravde@gmail.com
 <p>Седиште: Београд</p>
 <p>Адреса: Војводе Степе 127</p>
 
-<hr style="margin:10px 0; opacity:0.3;">
+<hr>
 
 <p>Email: iksan.snaga.pravde@gmail.com</p>
 <p>Телефон: 066 585 7 707</p>
-
-<hr style="margin:10px 0; opacity:0.3;">
 
 <p>МБ: 28406312</p>
 <p>ПИБ: 115357260</p>
@@ -387,7 +361,6 @@ iksan.snaga.pravde@gmail.com
 </div>
 
 <a href="https://wa.me/381665857707" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
