@@ -179,31 +179,35 @@ header{
 
 /* BUTTONS */
 .top-buttons{
+.top-buttons{
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap:12px;
-  margin-top:-60px;
+  gap:14px;
+  margin-top:-80px; /* 👉 мало ниже „испод груди“ као на contact */
 }
 
-/* manje dugme */
+/* isto kao kontakt */
 .btn-lite{
   background:#fff;
   border:1px solid rgba(10,63,120,0.25);
-  padding:10px 20px;
-  font-size:0.75rem;
+  padding:12px 24px;
+  font-size:0.85rem;
   color:#0a3f78;
   font-weight:600;
+
+  width:auto;        /* ❗ НЕ full width */
 }
 
-/* GLAVNO dugme */
+/* isto kao kontakt */
 .btn-main{
   background:var(--blue);
   color:#fff;
-  padding:18px 34px;
-  font-size:1rem;
-  font-weight:800;
-  letter-spacing:0.5px;
+  padding:16px 30px;
+  font-size:0.95rem;
+  font-weight:700;
+
+  width:auto;        /* ❗ НЕ full width */
 }
 
 .btn-gold{
@@ -403,24 +407,25 @@ header{
 /* WHATSAPP */
 .wa-btn{
   position:fixed;
-  right:-220px;
+  right:12px;
   bottom:50px;
+
   display:flex;
   align-items:center;
   gap:10px;
+
   padding:12px 14px;
   background:#25D366;
   color:#fff;
+
   font-size:0.8rem;
   font-weight:600;
+
   border-radius:40px;
   box-shadow:0 10px 25px rgba(37,211,102,0.4);
-  transition:0.6s;
-  z-index:10000;
-}
 
-.wa-btn.show{
-  right:12px;
+  z-index:10000;
+
 }
 
 .wa-btn img{
@@ -766,7 +771,6 @@ window.addEventListener("load", () => {
     if(wa) wa.classList.add("show");
   }, 400);
 });
-
 /* CHART COLORS */
 const chartTextColor = '#0a3f78';
 const chartGridColor = 'rgba(10,63,120,0.10)';
