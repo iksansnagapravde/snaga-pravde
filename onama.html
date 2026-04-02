@@ -7,9 +7,8 @@
 <title>О удружењу — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
 :root{
@@ -18,10 +17,17 @@
   --orange-dark:#e44e16;
   --text:#111;
   --line:rgba(0,0,0,0.12);
+  --green:#25D366;
+  --gold:#d3a451;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
+
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+}
 
 body{
   font-family:"Playfair Display",serif;
@@ -37,18 +43,17 @@ body::before{
   inset:0;
   z-index:-1;
   background:url('lady-justice-hero.webp') center top / cover no-repeat;
-  animation:goddessReveal 1.4s ease-out both;
+  animation:goddessReveal 1.35s ease-out both;
+  transform-origin:bottom right;
 }
 
 @keyframes goddessReveal{
   0%{
-    transform:translate(80px,100px) scale(1.08);
-    background-position:65% 35%;
-    opacity:0.85;
+    transform:translate(120px, 140px) scale(1.12);
+    opacity:0.82;
   }
   100%{
     transform:translate(0,0) scale(1);
-    background-position:center top;
     opacity:1;
   }
 }
@@ -71,6 +76,7 @@ header{
   justify-content:space-between;
 }
 
+/* LOGO */
 .brand{
   display:flex;
   align-items:center;
@@ -87,24 +93,46 @@ header{
   justify-content:center;
 }
 
-.logo-box img{width:66px}
+.logo-box img{
+  width:66px;
+}
 
-.brand-text .top{font-size:0.6rem;color:#777}
-.brand-text .main{font-size:0.78rem;font-weight:600}
+.brand-text .top{
+  font-size:0.6rem;
+  color:#777;
+}
 
-/* DONATE */
+.brand-text .main{
+  font-size:0.76rem;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+/* RIGHT */
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding-right:12px;
+}
+
+/* DONIRAJ */
 .donate-btn{
   background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
-  padding:10px 24px;
-  min-width:165px;
+  padding:12px 14px;
+  min-width:110px;
   text-align:center;
-  font-size:0.78rem;
+  font-size:0.74rem;
   font-weight:700;
+  letter-spacing:0.3px;
+  border:none;
+  box-shadow:none;
 }
 
 /* MENU */
 .menu{position:relative}
+
 .menu-btn{
   width:26px;
   height:18px;
@@ -113,7 +141,11 @@ header{
   justify-content:space-between;
   cursor:pointer;
 }
-.menu-btn span{height:2px;background:#000}
+
+.menu-btn span{
+  height:2px;
+  background:#000;
+}
 
 .dropdown{
   position:absolute;
@@ -122,7 +154,8 @@ header{
   background:#fff;
   border:1px solid var(--line);
   display:none;
-  min-width:270px;
+  min-width:290px;
+  z-index:1200;
 }
 
 .menu.open .dropdown{display:block}
@@ -134,74 +167,203 @@ header{
   border-bottom:1px solid var(--line);
 }
 
+.dropdown a.active{
+  font-weight:700;
+  color:var(--blue);
+}
+
+/* HERO SPACE */
+.hero-space{
+  height:240px;
+}
+
+/* BUTTONS */
+.top-buttons{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  margin-top:-80px;
+}
+
+.btn-lite{
+  background:#fff;
+  border:1px solid rgba(10,63,120,0.25);
+  padding:12px 24px;
+  font-size:0.85rem;
+  color:#0a3f78;
+  font-weight:600;
+}
+
+.btn-main{
+  background:var(--blue);
+  color:#fff;
+  padding:16px 30px;
+  font-size:0.95rem;
+  font-weight:700;
+}
+
+.btn-gold{
+  background:linear-gradient(135deg,var(--orange),var(--orange-dark));
+  color:#fff;
+  padding:14px 28px;
+  font-size:0.9rem;
+  font-weight:700;
+}
+
+/* CONTAINER */
 .container{
   max-width:1150px;
   margin:auto;
   padding:20px;
 }
 
-/* HERO */
-.hero{
-  background:#fff;
-  padding:26px;
+/* GRID */
+.main-grid{
+  display:grid;
+  gap:20px;
   margin-top:30px;
-  border:1px solid var(--line);
 }
 
-.hero h1{font-size:1.3rem;margin-bottom:10px}
-.hero p{font-size:0.9rem;line-height:1.6}
+@media(min-width:900px){
+  .main-grid{grid-template-columns:1fr 1fr;}
+}
+
+.full-span{
+  grid-column:1 / -1;
+}
+
+/* CARD */
+.doc-card{
+  padding:22px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  overflow:hidden;
+}
+
+.doc-card.blue{
+  background:var(--blue);
+  color:#fff;
+}
+
+.doc-card.blue p,
+.doc-card.blue li,
+.doc-card.blue .chart-note,
+.doc-card.blue .timeline p{
+  color:#edf2f8;
+}
+
+.doc-card p,
+.doc-card li{
+  font-size:0.76rem;
+  line-height:1.65;
+  letter-spacing:0.1px;
+}
+
+.doc-card h1,
+.doc-card h2{
+  font-size:17px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+
+.doc-card h3{
+  font-size:14px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+
+.doc-card hr{
+  margin:15px 0;
+  opacity:0.2;
+}
+
+/* HERO CARD */
+.hero-card h1{
+  font-size:26px;
+  margin-bottom:12px;
+}
+
+.hero-card p{
+  font-size:0.82rem;
+}
 
 /* KPI */
 .kpi-grid{
   display:grid;
-  gap:15px;
-  margin-top:20px;
-}
-@media(min-width:900px){
-  .kpi-grid{grid-template-columns:repeat(5,1fr);}
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:14px;
 }
 
 .kpi-card{
-  background:#fff;
-  padding:15px;
   border:1px solid var(--line);
+  background:#fff;
+  padding:18px 12px;
   text-align:center;
 }
 
-.kpi-card strong{font-size:1rem;color:var(--blue)}
-.kpi-card span{font-size:0.8rem}
+.kpi-card strong{
+  display:block;
+  color:var(--blue);
+  font-size:1.15rem;
+  margin-bottom:6px;
+}
 
-/* CARDS */
-.cards-grid{
+.kpi-card span{
+  display:block;
+  font-size:0.72rem;
+  line-height:1.45;
+}
+
+/* TIMELINE */
+.timeline{
+  margin-top:8px;
+  padding-left:14px;
+  border-left:2px solid rgba(10,63,120,0.18);
+}
+
+.doc-card.blue .timeline{
+  border-left:2px solid rgba(255,255,255,0.28);
+}
+
+.timeline p{
+  margin-bottom:10px;
+}
+
+/* CHARTS */
+.chart-grid{
   display:grid;
   gap:20px;
-  margin-top:25px;
+  margin-top:16px;
 }
+
 @media(min-width:900px){
-  .cards-grid{grid-template-columns:1fr 1fr;}
+  .chart-grid{
+    grid-template-columns:1fr 1fr;
+  }
 }
 
-.card{
-  background:#fff;
-  padding:22px;
-  border:1px solid var(--line);
+.chart-item{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 
-.card h3{font-size:0.95rem;margin-bottom:8px}
-.card p{font-size:0.85rem;line-height:1.6}
-
-/* SECTION */
-.section-card{
-  margin-top:30px;
-  background:#fff;
-  padding:22px;
-  border:1px solid var(--line);
+.chart-wrap{
+  background:rgba(10,63,120,0.03);
+  border:1px solid rgba(10,63,120,0.08);
+  border-radius:0;
+  padding:14px;
+  height:320px;
+  position:relative;
 }
 
-.section-card h2{font-size:1.1rem;margin-bottom:10px}
-
-/* CHART */
-.chart-wrap{height:260px;margin-top:15px}
+.chart-note{
+  font-size:0.74rem;
+  line-height:1.65;
+  color:#333;
+}
 
 /* SOCIAL */
 .social-bar{
@@ -212,21 +374,28 @@ header{
   flex-direction:column;
   gap:12px;
   z-index:9999;
-  transition:.6s;
+  transition:0.6s;
+  opacity:0;
 }
-.social-bar.show{right:12px}
+
+.social-bar.show{
+  right:12px;
+  opacity:1;
+}
 
 .social-bar a{
   width:44px;
   height:44px;
-  background:#fff;
-  border:1px solid var(--line);
   display:flex;
   align-items:center;
   justify-content:center;
+  background:#fff;
+  border:1px solid var(--line);
 }
 
-.social-bar img{width:20px}
+.social-bar img{
+  width:20px;
+}
 
 /* WHATSAPP */
 .wa-btn{
@@ -236,103 +405,492 @@ header{
   display:flex;
   align-items:center;
   gap:10px;
-  padding:12px 18px;
+  padding:12px 14px;
   background:#25D366;
   color:#fff;
+  font-size:0.8rem;
+  font-weight:600;
   border-radius:40px;
-  transition:.6s;
+  box-shadow:0 10px 25px rgba(37,211,102,0.4);
+  transition:0.6s;
+  z-index:10000;
 }
-.wa-btn.show{right:12px}
-.wa-btn img{width:22px;filter:invert(1)}
+
+.wa-btn.show{
+  right:12px;
+}
+
+.wa-btn img{
+  width:22px;
+  filter:brightness(0) invert(1);
+}
+
+/* REVEAL */
+.reveal{
+  opacity:0;
+  transform:translateY(36px);
+  transition:0.6s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .hero-space{
+    height:180px;
+  }
+
+  .top-buttons{
+    margin-top:-50px;
+    padding:0 10px;
+  }
+
+  .btn-lite,
+  .btn-main,
+  .btn-gold{
+    width:100%;
+    text-align:center;
+  }
+
+  .container{
+    padding:15px;
+  }
+
+  .doc-card{
+    padding:18px;
+  }
+
+  .doc-card p,
+  .doc-card li{
+    font-size:0.8rem;
+  }
+
+  .hero-card h1{
+    font-size:22px;
+  }
+
+  .chart-wrap{
+    height:250px;
+  }
+
+  .social-bar{
+    right:10px !important;
+  }
+
+  .wa-btn{
+    right:10px !important;
+    bottom:20px;
+  }
+
+  .brand-text .main{
+    white-space:normal;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="head">
+  <div class="head">
 
-<div class="brand">
-<div class="logo-box">
-<img src="logo-white.png">
-</div>
-<div class="brand-text">
-<div class="top">Удружење грађана</div>
-<div class="main">Иксан Снага правде</div>
-</div>
-</div>
+    <div class="brand">
+      <div class="logo-box">
+        <img src="logo-white.png" alt="Иксан">
+      </div>
 
-<div style="display:flex;align-items:center;gap:15px;">
-<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+      <div class="brand-text">
+        <div class="top">Удружење грађана</div>
+        <div class="main">Иксан Снага правде</div>
+      </div>
+    </div>
 
-<div class="menu" id="menu">
-<div class="menu-btn"><span></span><span></span><span></span></div>
-<div class="dropdown">
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">Контакт</a>
-<a href="onama.html">О нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви</a>
-</div>
-</div>
-</div>
+    <div class="nav-right">
+      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-</div>
+      <div class="menu" id="menu">
+        <div class="menu-btn">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="dropdown">
+          <a href="index.html"><b>ПОЧЕТНА</b></a>
+          <a href="kontakt.html">Контакт</a>
+          <a href="onama.html" class="active">О нама</a>
+          <a href="oblasti.html">Области деловања</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="inicijative.html">Иницијативе</a>
+          <a href="doniraj.html">Донирај</a>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="prijavi.html">Представка</a>
+          <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+          <a href="porekloimovine.html">Транспарентност јавних финансија</a>
+          <a href="sudpravda.html">Независност судског система</a>
+          <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+          <a href="uradili.html">Шта смо до сада урадили</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </header>
 
+<div class="hero-space"></div>
+
+<div class="top-buttons">
+  <a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
+  <a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
+  <a href="doniraj.html" class="btn-gold">ПОДРЖИ НАШ РАД</a>
+</div>
+
 <div class="container">
+  <div class="main-grid">
 
-<section class="hero">
-<h1>О УДРУЖЕЊУ ИКСАН</h1>
-<p>Удружење грађана Иксан – Снага правде...</p>
-</section>
+    <div class="doc-card hero-card full-span reveal">
+      <h1>О УДРУЖЕЊУ ИКСАН</h1>
+      <p>
+        Удружење грађана Иксан – Снага правде посвећено је јачању владавине права, заштити достојанства грађана,
+        институционалној одговорности и развоју праведног друштва. Наш рад обједињује директну подршку грађанима,
+        правне иницијативе, јавни дијалог и конкретне законске предлоге.
+      </p>
+    </div>
 
-<!-- KPI -->
-<div class="kpi-grid">
-<div class="kpi-card"><strong>22.000+</strong><span>чланова</span></div>
-<div class="kpi-card"><strong>10.000+</strong><span>мејлова</span></div>
-<div class="kpi-card"><strong>1.000+</strong><span>разговора</span></div>
-<div class="kpi-card"><strong>150+</strong><span>иницијатива</span></div>
-<div class="kpi-card"><strong>170+</strong><span>сати</span></div>
+    <div class="doc-card full-span reveal">
+      <h2>Наш рад у бројкама</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <strong>22.000+</strong>
+          <span>чланова и пратилаца</span>
+        </div>
+        <div class="kpi-card">
+          <strong>10.000+</strong>
+          <span>примљених и обрађених мејлова</span>
+        </div>
+        <div class="kpi-card">
+          <strong>1.000+</strong>
+          <span>разговора са грађанима</span>
+        </div>
+        <div class="kpi-card">
+          <strong>150+</strong>
+          <span>поднетих иницијатива</span>
+        </div>
+        <div class="kpi-card">
+          <strong>170+</strong>
+          <span>сати уживо преноса</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-card reveal">
+      <h2>Ко смо</h2>
+      <p>
+        Иксан окупља грађане са циљем јачања правде и правне сигурности, кроз заједничко деловање, јавни притисак,
+        правну подршку и изградњу система у коме грађанин није препуштен сам себи.
+      </p>
+    </div>
+
+    <div class="doc-card reveal">
+      <h2>Назив „Иксан“</h2>
+      <p>
+        Назив симболизује правду, истину, одговорност и снагу заједнице. Он представља идеју да се достојанство човека,
+        владавина права и институционална одговорност морају вратити у само средиште друштва.
+      </p>
+    </div>
+
+    <div class="doc-card reveal">
+      <h2>Наша мисија</h2>
+      <p>
+        Реформа система, заштита права грађана и стварање друштва у коме закон важи једнако за све. Радимо на томе да
+        институције буду доступне, одговорне, контролисане и у служби јавног интереса.
+      </p>
+    </div>
+
+    <div class="doc-card reveal">
+      <h2>Разлог оснивања</h2>
+      <p>
+        Настали смо као одговор на неправде, злоупотребе и системску несигурност са којом се грађани свакодневно
+        суочавају. Наш циљ је да грађанима вратимо глас, правну сигурност и осећај да постоји организована,
+        озбиљна и истрајна подршка.
+      </p>
+    </div>
+
+    <div class="doc-card full-span reveal">
+      <h2>Графички приказ нашег рада</h2>
+      <p>
+        Наше деловање није симболично, већ мерљиво. Рад са грађанима, иницијативе, директни разговори,
+        јавни наступи и законски предлози чине окосницу нашег деловања.
+      </p>
+
+      <div class="chart-grid">
+        <div class="chart-item">
+          <div class="chart-wrap">
+            <canvas id="membersChart"></canvas>
+          </div>
+          <div class="chart-note">
+            Раст заједнице показује колико је снажна потреба за правдом, јавношћу и организованом заштитом права грађана.
+          </div>
+        </div>
+
+        <div class="chart-item">
+          <div class="chart-wrap">
+            <canvas id="activityChart"></canvas>
+          </div>
+          <div class="chart-note">
+            Структура рада показује да су грађани и конкретна подршка у центру деловања, уз паралелан рад на законима и иницијативама.
+          </div>
+        </div>
+
+        <div class="chart-item">
+          <div class="chart-wrap">
+            <canvas id="hoursChart"></canvas>
+          </div>
+          <div class="chart-note">
+            Време уложено у разговоре уживо, јавне наступе и директан рад са грађанима представља један од најважнијих темеља поверења.
+          </div>
+        </div>
+
+        <div class="chart-item">
+          <div class="chart-wrap">
+            <canvas id="impactChart"></canvas>
+          </div>
+          <div class="chart-note">
+            Наш утицај обухвата и индивидуалну подршку грађанима и системске иницијативе усмерене на промену закона и праксе.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="doc-card full-span reveal">
+      <h2>Шта смо до сада урадили</h2>
+      <div class="timeline">
+        <p><b>28.10.2025.</b> Удружење грађана „Иксан – Снага правде“ регистровано је у АПР-у.</p>
+        <p><b>01.11–14.12.2025.</b> Посетили смо 80 старијих лица у градовима и селима, разговарали са њима о њиховим потребама и проблемима.</p>
+        <p><b>15.12.2025.</b> Подржали смо иницијативу родитеља за увођење закона „Родитељ–неговатељ“.</p>
+        <p><b>Децембар 2025 – јануар 2026.</b> Пријавили смо учешће у процесу израде нацрта закона „Родитељ–неговатељ“.</p>
+        <p><b>05.01.2026.</b> Отворена је канцеларија на Вождовцу за грађане, у којој свакодневно пружамо правну и саветодавну подршку.</p>
+        <p><b>15.01.2026.</b> Поднета је иницијатива Уставном суду за оцену уставности одредби Закона о извршењу и обезбеђењу.</p>
+        <p><b>19.01.2026.</b> Поднете су иницијативе председнику Републике, Влади и Народној скупштини ради измене спорних одредби Закона о извршењу и обезбеђењу.</p>
+        <p><b>01.02–01.03.2026.</b> Обишли смо 15 градова и места у Србији, разговарали са грађанима.</p>
+        <p><b>06.03.2026.</b> Узели смо учешће на „инфо данима“ у организацији Министарства за људска и мањинска права и друштвени дијалог.</p>
+        <p><b>16.03.2026.</b> Узели смо учешће у јавној расправи поводом Нацрта закона о ауторском и сродним правима.</p>
+        <p><b>17.03.2026.</b> Припремили смо анализу и оцену уставности спорних одредби постојећег Закона о извршењу и обезбеђењу.</p>
+        <p><b>18.03.2026.</b> Израдили смо комплетан нацрт закона о инсолвентности физичких лица.</p>
+        <p><b>19.03.2026.</b> Израдили смо нацрт закона о заштити егзистенцијалних примања грађана.</p>
+        <p><b>20.03.2026.</b> Припремили смо измене и допуне Закона о заштити конкуренције.</p>
+        <p><b>Март 2026.</b> Путем представки грађана обратили смо се на више од 20 адреса надлежних институција, са иницијативама и ургенцијама.</p>
+        <p><b>Јануар–Април 2026.</b> Одржали смо преко 170 сати уживо преноса на друштвеној мрежи TikTok, у директној комуникацији са грађанима широм Србије.</p>
+        <p><b>Од 05.01.2026.</b> Грађани се свакодневно укључују са различитим проблемима, а ми им пружамо саветодавну и правну подршку, укључујући и помоћ у подношењу представки.</p>
+        <p><b>Свакодневно.</b> Наше активности прати на хиљаде грађана Србије.</p>
+      </div>
+    </div>
+
+    <div class="doc-card reveal">
+      <h2>Наше вредности</h2>
+      <p><strong>Правда</strong> — закон мора важити једнако за све.</p>
+      <p><strong>Одговорност</strong> — институције морају служити грађанима.</p>
+      <p><strong>Транспарентност</strong> — рад мора бити јаван, проверљив и видљив.</p>
+      <p><strong>Подршка</strong> — грађанин не сме остати сам пред системом.</p>
+    </div>
+
+    <div class="doc-card blue reveal">
+      <h2>Основни подаци</h2>
+      <p>Седиште: Београд</p>
+      <p>Адреса: Војводе Степе 127</p>
+
+      <hr>
+
+      <p>Email: iksan.snaga.pravde@gmail.com</p>
+      <p>Телефон: 066 585 7 707</p>
+
+      <hr>
+
+      <p>МБ: 28406312</p>
+      <p>ПИБ: 115357260</p>
+    </div>
+
+  </div>
 </div>
 
-<!-- CARDS -->
-<div class="cards-grid">
-<div class="card"><h3>Ко смо</h3><p>...</p></div>
-<div class="card"><h3>Назив</h3><p>...</p></div>
-</div>
-
-<!-- CHART -->
-<section class="section-card">
-<h2>Графички приказ</h2>
-<div class="chart-wrap">
-<canvas id="membersChart"></canvas>
-</div>
-</section>
-
-</div>
-
-<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
-<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
 </div>
 
-<a href="https://wa.me/381665857707" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Пишите нам
 </a>
 
 <script>
-const menu=document.getElementById('menu');
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+/* MENU */
+const menu = document.getElementById('menu');
+if(menu){
+  const menuBtn = menu.querySelector('.menu-btn');
+  if(menuBtn){
+    menuBtn.onclick = () => menu.classList.toggle('open');
+  }
 
-window.addEventListener("load",()=>{
-setTimeout(()=>{
-document.querySelector(".wa-btn").classList.add("show");
-document.getElementById("socialBar").classList.add("show");
-},400);
+  document.addEventListener('click', (e) => {
+    if(!menu.contains(e.target)){
+      menu.classList.remove('open');
+    }
+  });
+}
+
+/* REVEAL */
+const reveals = document.querySelectorAll('.reveal');
+function revealOnScroll(){
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 60){
+      el.classList.add('active');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+
+/* SOCIAL + WHATSAPP */
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("socialBar").classList.add("show");
+    const wa = document.querySelector(".wa-btn");
+    if(wa) wa.classList.add("show");
+  }, 400);
+});
+
+/* CHART COLORS */
+const chartTextColor = '#0a3f78';
+const chartGridColor = 'rgba(10,63,120,0.10)';
+
+/* MEMBERS CHART */
+new Chart(document.getElementById('membersChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Почетак', 'Раст заједнице', 'Данас'],
+    datasets: [{
+      label: 'Број чланова / пратилаца',
+      data: [1000, 12000, 22000],
+      backgroundColor: [
+        'rgba(255, 179, 0, 0.75)',
+        'rgba(10, 63, 120, 0.75)',
+        'rgba(37, 211, 102, 0.75)'
+      ],
+      borderColor: ['#ffb300','#0a3f78','#25D366'],
+      borderWidth: 2,
+      borderRadius: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: chartTextColor } }
+    },
+    scales: {
+      x: {
+        ticks: { color: chartTextColor },
+        grid: { color: chartGridColor }
+      },
+      y: {
+        ticks: { color: chartTextColor },
+        grid: { color: chartGridColor }
+      }
+    }
+  }
+});
+
+/* ACTIVITY CHART */
+new Chart(document.getElementById('activityChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Иницијативе', 'Разговори са грађанима', 'Посете', 'Јавни наступи'],
+    datasets: [{
+      data: [150, 1000, 95, 170],
+      backgroundColor: [
+        'rgba(255, 179, 0, 0.85)',
+        'rgba(10, 63, 120, 0.85)',
+        'rgba(37, 211, 102, 0.85)',
+        'rgba(255, 90, 31, 0.85)'
+      ],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: chartTextColor } }
+    }
+  }
+});
+
+/* HOURS CHART */
+new Chart(document.getElementById('hoursChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Правна подршка', 'Уживо преноси', 'Теренски рад', 'Иницијативе'],
+    datasets: [{
+      label: 'Обим рада',
+      data: [120, 170, 95, 150],
+      backgroundColor: [
+        'rgba(255, 179, 0, 0.75)',
+        'rgba(255, 90, 31, 0.75)',
+        'rgba(10, 63, 120, 0.75)',
+        'rgba(37, 211, 102, 0.75)'
+      ],
+      borderColor: ['#ffb300','#ff5a1f','#0a3f78','#25D366'],
+      borderWidth: 2,
+      borderRadius: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: chartTextColor } }
+    },
+    scales: {
+      x: {
+        ticks: { color: chartTextColor },
+        grid: { color: chartGridColor }
+      },
+      y: {
+        ticks: { color: chartTextColor },
+        grid: { color: chartGridColor }
+      }
+    }
+  }
+});
+
+/* IMPACT CHART */
+new Chart(document.getElementById('impactChart'), {
+  type: 'pie',
+  data: {
+    labels: ['Помоћ грађанима', 'Системске промене', 'Јавни дијалог'],
+    datasets: [{
+      data: [60, 25, 15],
+      backgroundColor: [
+        'rgba(37, 211, 102, 0.85)',
+        'rgba(255, 179, 0, 0.85)',
+        'rgba(10, 63, 120, 0.85)'
+      ],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: chartTextColor } }
+    }
+  }
 });
 </script>
 
