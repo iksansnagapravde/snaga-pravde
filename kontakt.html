@@ -31,43 +31,57 @@ padding-bottom:140px;
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* HEADER */
+/* 🔥 PREMIUM HEADER */
 header{
-position:sticky;
+position:fixed;
 top:0;
+width:100%;
 z-index:100;
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+header.scrolled{
 background:#ffffff;
 border-bottom:1px solid var(--border);
-padding-top:5px;
-padding-bottom:5px;
 }
 
 .head{
 display:flex;
 align-items:center;
 justify-content:space-between;
+padding:10px 0;
 }
 
 /* LOGO */
 .brand{
 display:flex;
 align-items:center;
+gap:12px;
 }
 
 .brand img{
-height:60px;
-margin-top:-10px;
+height:54px;
 }
 
-/* TITLE */
-.site-title{
-font-size:0.85rem;
-color:#5a5a5a;
-text-align:center;
-flex:1;
+/* TEXT */
+.brand-text{
+display:flex;
+flex-direction:column;
+line-height:1.1;
 }
 
-/* RIGHT SIDE */
+.brand-text div:first-child{
+font-size:0.65rem;
+color:#666;
+}
+
+.brand-text div:last-child{
+font-size:0.9rem;
+}
+
+/* RIGHT */
 .nav-right{
 display:flex;
 align-items:center;
@@ -80,14 +94,9 @@ background:#f26522;
 color:#fff;
 padding:8px 14px;
 font-size:0.75rem;
-letter-spacing:0.5px;
 }
 
-.donate-btn:hover{
-opacity:0.9;
-}
-
-/* HAMBURGER */
+/* MENU */
 .menu-btn{
 width:26px;
 height:18px;
@@ -103,7 +112,6 @@ background:#000;
 display:block;
 }
 
-/* DROPDOWN */
 .menu{position:relative}
 
 .dropdown{
@@ -119,19 +127,13 @@ min-width:240px;
 
 .menu.open .dropdown{display:block}
 
-.dropdown a{
-display:block;
-padding:8px 10px;
-color:#333;
-}
-
 /* BUTTONS */
 .top-buttons{
 display:flex;
 flex-direction:column;
 align-items:center;
 gap:12px;
-margin-top:30px;
+margin-top:120px;
 }
 
 .btn{
@@ -152,7 +154,7 @@ border-color:#8c1428;
 color:#8c1428;
 }
 
-/* GRID */
+/* CARDS */
 .main-grid{
 display:grid;
 gap:25px;
@@ -163,12 +165,11 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-/* CARDS */
 .doc-card{
-background:#fff;
+background:rgba(255,255,255,0.92);
+backdrop-filter:blur(4px);
 padding:30px;
-border:1px solid var(--border);
-border-radius:6px;
+border-radius:8px;
 }
 
 .doc-card h2,.doc-card h3{
@@ -180,14 +181,6 @@ font-weight:500;
 color:var(--soft);
 margin-bottom:10px;
 }
-
-.doc-card ul{
-margin-top:10px;
-padding-left:18px;
-color:var(--soft);
-}
-
-.doc-card a{color:var(--gold);}
 
 /* WHATSAPP */
 .wa-btn{
@@ -206,7 +199,6 @@ z-index:9999;
 transition:right 0.6s ease;
 }
 .wa-btn.show{right:12px;}
-.wa-btn img{width:20px;}
 
 /* SOCIAL */
 .social-bar{
@@ -216,12 +208,10 @@ bottom:110px;
 display:flex;
 flex-direction:column;
 gap:12px;
-z-index:9999;
-transition:right 0.6s ease, opacity 0.6s ease;
-opacity:0.5;
+opacity:0.4;
+transition:0.6s;
 }
-
-.social-bar.show{right:12px;opacity:0.35;}
+.social-bar.show{right:12px;}
 
 .social-bar a{
 width:44px;height:44px;border-radius:50%;
@@ -230,18 +220,10 @@ background:#fff;
 border:1px solid var(--border);
 }
 
-.social-bar img{
-width:20px;
-opacity:0.6;
-}
-
 /* MOBILE */
 @media(max-width:768px){
-.site-title{font-size:0.7rem;}
-.brand img{
-height:48px;
-margin-top:-8px;
-}
+.brand img{height:44px;}
+.brand-text div:last-child{font-size:0.75rem;}
 }
 
 </style>
@@ -249,18 +231,18 @@ margin-top:-8px;
 
 <body>
 
-<header>
+<header id="header">
 <div class="container head">
 
 <div class="brand">
-<a href="index.html"><img src="Logo.webp"></a>
-</div>
+<a href="index.html">
+<img src="univerzalnium.webp">
+</a>
 
 <div class="brand-text">
-<a href="index.html">
 <div>Удружење грађана</div>
 <div>Иксан Снага правде</div>
-</a>
+</div>
 </div>
 
 <div class="nav-right">
@@ -286,7 +268,6 @@ margin-top:-8px;
 </div>
 
 </div>
-
 </div>
 </header>
 
@@ -300,13 +281,9 @@ margin-top:-8px;
 <div class="main-grid">
 
 <div class="doc-card">
-
 <h2>Контакт и подршка</h2>
-
 <p>Контакт са удружењем се остварује искључиво на следеће начине:</p>
-
 <p>WhatsApp: дугме „Пишите нам“ у доњем десном углу.</p>
-
 <p>Правна питања: искључиво путем представке.</p>
 
 <hr style="margin:20px 0; opacity:0.2;">
@@ -314,7 +291,6 @@ margin-top:-8px;
 <p>За медије и институције:<br>066-585-7-707</p>
 
 <p>За грађане, раднике и предузетнике:</p>
-
 <ul>
 <li>преузмите формулар</li>
 <li>попуните податке</li>
@@ -323,19 +299,15 @@ margin-top:-8px;
 </ul>
 
 <p style="margin-top:15px;">Пошаљите на:</p>
-
 <p style="font-size:18px;">
 <a href="mailto:iksan.snaga.pravde@gmail.com">
 iksan.snaga.pravde@gmail.com
 </a>
 </p>
-
 </div>
 
 <div class="doc-card">
-
 <h3>Основни подаци</h3>
-
 <p>Седиште: Београд</p>
 <p>Адреса: Војводе Степе 127</p>
 
@@ -348,11 +320,9 @@ iksan.snaga.pravde@gmail.com
 
 <p>МБ: 28406312</p>
 <p>ПИБ: 115357260</p>
-
 </div>
 
 </div>
-
 </div>
 
 <div class="social-bar" id="socialBar">
@@ -370,6 +340,14 @@ iksan.snaga.pravde@gmail.com
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+
+window.addEventListener("scroll",()=>{
+if(window.scrollY>40){
+document.getElementById("header").classList.add("scrolled");
+}else{
+document.getElementById("header").classList.remove("scrolled");
+}
+});
 
 window.addEventListener("load",()=>{
 setTimeout(()=>{
