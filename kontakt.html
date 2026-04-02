@@ -15,10 +15,8 @@
 :root{
 --gold:#c6a25a;
 --text:#1f1f1f;
---soft:#6a6a6a;
 --border:rgba(0,0,0,0.08);
 --blue:#0d3b66;
---light-blue:#f4f7fb;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -57,17 +55,17 @@ gap:14px;
 }
 
 .logo-box{
-width:54px;
-height:54px;
-background:var(--blue);
+width:60px;
+height:60px;
+background:#0d3b66;
 display:flex;
 align-items:center;
 justify-content:center;
-border-radius:8px;
+border-radius:6px;
 }
 
 .logo-box img{
-width:40px;
+width:52px; /* 🔥 skoro do ivice */
 }
 
 /* TEXT */
@@ -78,13 +76,12 @@ line-height:1.1;
 }
 
 .brand-text div:first-child{
-font-size:0.68rem;
+font-size:0.7rem;
 color:#777;
 }
 
 .brand-text div:last-child{
 font-size:1rem;
-letter-spacing:0.3px;
 }
 
 /* RIGHT */
@@ -99,12 +96,6 @@ background:#f26522;
 color:#fff;
 padding:8px 14px;
 font-size:0.75rem;
-border-radius:4px;
-transition:0.2s;
-}
-
-.donate-btn:hover{
-opacity:0.9;
 }
 
 /* MENU */
@@ -133,28 +124,27 @@ border:1px solid var(--border);
 padding:10px 0;
 display:none;
 min-width:260px;
-box-shadow:0 12px 30px rgba(0,0,0,0.08);
-border-radius:8px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+border-radius:6px;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
 display:block;
-padding:11px 16px;
+padding:10px 16px;
 font-size:14px;
-transition:0.2s;
 }
 
 .dropdown a:hover{
-background:#f7f7f7;
+background:#f5f5f5;
 }
 
 /* CONTENT */
 .container{
 max-width:1150px;
 margin:auto;
-padding:25px 20px;
+padding:20px;
 }
 
 /* BUTTONS */
@@ -163,7 +153,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 gap:12px;
-margin-top:25px;
+margin-top:20px;
 }
 
 .btn{
@@ -171,13 +161,6 @@ padding:10px 18px;
 font-size:12px;
 border:1px solid var(--border);
 background:#fff;
-border-radius:4px;
-transition:0.2s;
-}
-
-.btn:hover{
-border-color:var(--gold);
-color:var(--gold);
 }
 
 .btn-danger{
@@ -185,7 +168,7 @@ border-color:#8c1428;
 color:#8c1428;
 }
 
-/* CARDS */
+/* GRID */
 .main-grid{
 display:grid;
 gap:20px;
@@ -196,42 +179,38 @@ margin-top:30px;
 .main-grid{grid-template-columns:1fr 1fr;}
 }
 
+/* CARDS */
 .doc-card{
 padding:22px;
-border-radius:8px;
-border:1px solid var(--border);
-background:#fff;
-box-shadow:0 6px 20px rgba(0,0,0,0.04);
-transition:0.2s;
+border-radius:6px;
 }
 
-.doc-card:hover{
-transform:translateY(-2px);
-box-shadow:0 10px 30px rgba(0,0,0,0.06);
+/* WHITE CARD */
+.doc-card.white{
+background:#ffffff;
+color:#1f1f1f;
 }
 
+/* BLUE CARD */
 .doc-card.blue{
-background:var(--light-blue);
+background:#0d3b66;
+color:#ffffff;
 }
 
-.doc-card h2,.doc-card h3{
-margin-bottom:10px;
-font-weight:500;
+/* TEXT FIX */
+.doc-card.blue p,
+.doc-card.blue li{
+color:#e6e6e6;
 }
 
-.doc-card p{
-color:var(--soft);
-margin-bottom:8px;
+.doc-card.blue a{
+color:#c6a25a;
 }
 
-.doc-card ul{
-padding-left:18px;
-color:var(--soft);
-margin-top:6px;
-}
-
-.doc-card a{
-color:var(--gold);
+.doc-card h2,
+.doc-card h3{
+margin-bottom:12px;
+font-size:18px;
 }
 
 /* WHATSAPP */
@@ -280,11 +259,6 @@ align-items:center;
 justify-content:center;
 background:#fff;
 border:1px solid var(--border);
-transition:0.2s;
-}
-
-.social-bar a:hover{
-opacity:0.8;
 }
 
 .social-bar img{
@@ -332,6 +306,7 @@ opacity:0.6;
 <a href="prijavi.html">Представка</a>
 <a href="doniraj.html">Донирај</a>
 </div>
+
 </div>
 
 </div>
@@ -348,7 +323,7 @@ opacity:0.6;
 
 <div class="main-grid">
 
-<div class="doc-card">
+<div class="doc-card white">
 
 <h2>Контакт и подршка</h2>
 
@@ -388,12 +363,12 @@ iksan.snaga.pravde@gmail.com
 <p>Седиште: Београд</p>
 <p>Адреса: Војводе Степе 127</p>
 
-<hr style="margin:10px 0; opacity:0.2;">
+<hr style="margin:10px 0; opacity:0.3;">
 
 <p>Email: iksan.snaga.pravde@gmail.com</p>
 <p>Телефон: 066 585 7 707</p>
 
-<hr style="margin:10px 0; opacity:0.2;">
+<hr style="margin:10px 0; opacity:0.3;">
 
 <p>МБ: 28406312</p>
 <p>ПИБ: 115357260</p>
