@@ -16,6 +16,7 @@
   --orange-dark:#e44e16;
   --text:#111;
   --line:rgba(0,0,0,0.12);
+  --green:#25D366;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -28,26 +29,20 @@ body{
   overflow-x:hidden;
 }
 
-/* POZADINA (ISTA KAO KONTAKT) */
+/* POZADINA */
 body::before{
   content:"";
   position:fixed;
   inset:0;
   z-index:-1;
   background:url('lady-justice-hero.webp') center top / cover no-repeat;
-  transform-origin:bottom right;
   animation:goddessReveal 1.3s ease-out both;
+  transform-origin:bottom right;
 }
 
 @keyframes goddessReveal{
-  0%{
-    transform:translate(120px,140px) scale(1.12);
-    opacity:0.82;
-  }
-  100%{
-    transform:translate(0,0) scale(1);
-    opacity:1;
-  }
+  0%{transform:translate(120px,140px) scale(1.12);opacity:0.82;}
+  100%{transform:translate(0,0) scale(1);opacity:1;}
 }
 
 /* HEADER */
@@ -86,17 +81,9 @@ header{
 
 .logo-box img{width:66px;}
 
-.brand-text .top{
-  font-size:0.6rem;
-  color:#777;
-}
+.brand-text .top{font-size:0.6rem;color:#777;}
+.brand-text .main{font-size:0.76rem;font-weight:600;}
 
-.brand-text .main{
-  font-size:0.76rem;
-  font-weight:600;
-}
-
-/* DESNO */
 .nav-right{
   display:flex;
   align-items:center;
@@ -110,6 +97,42 @@ header{
   padding:12px 14px;
   font-size:0.74rem;
   font-weight:700;
+}
+
+/* MENU */
+.menu{position:relative}
+
+.menu-btn{
+  width:26px;
+  height:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  cursor:pointer;
+}
+
+.menu-btn span{
+  height:2px;
+  background:#000;
+}
+
+.dropdown{
+  position:absolute;
+  top:calc(100% + 10px);
+  right:0;
+  background:#fff;
+  border:1px solid var(--line);
+  display:none;
+  min-width:270px;
+}
+
+.menu.open .dropdown{display:block}
+
+.dropdown a{
+  display:block;
+  padding:10px 14px;
+  font-size:0.85rem;
+  border-bottom:1px solid var(--line);
 }
 
 /* HERO */
@@ -185,7 +208,7 @@ header{
   cursor:pointer;
 }
 
-/* ZIRO */
+/* BANK */
 .bank-row{
   display:flex;
   justify-content:space-between;
@@ -194,9 +217,7 @@ header{
   font-size:0.75rem;
 }
 
-.bank-row:last-child{
-  border:none;
-}
+.bank-row:last-child{border:none}
 
 /* SOCIAL */
 .social-bar{
@@ -206,7 +227,8 @@ header{
   display:flex;
   flex-direction:column;
   gap:12px;
-  transition:.6s;
+  z-index:9999;
+  transition:0.6s;
   opacity:0;
 }
 
@@ -225,20 +247,38 @@ header{
   border:1px solid var(--line);
 }
 
-.social-bar img{width:20px;}
+.social-bar img{width:20px}
 
+/* WHATSAPP */
 .wa-btn{
   position:fixed;
   right:-220px;
   bottom:50px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
   padding:12px 14px;
   background:#25D366;
   color:#fff;
+
+  font-size:0.8rem;
+  font-weight:600;
+
   border-radius:40px;
-  transition:.6s;
+  box-shadow:0 10px 25px rgba(37,211,102,0.4);
+
+  transition:0.6s;
+  z-index:10000;
 }
 
 .wa-btn.show{right:12px;}
+
+.wa-btn img{
+  width:22px;
+  filter:brightness(0) invert(1);
+}
 </style>
 </head>
 
@@ -259,18 +299,34 @@ header{
 
 <div class="nav-right">
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+
+<div class="menu" id="menu">
+<div class="menu-btn">
+<span></span><span></span><span></span>
 </div>
 
+<div class="dropdown">
+<a href="index.html"><b>ПОЧЕТНА</b></a>
+<a href="kontakt.html">Контакт</a>
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Стратешки циљеви</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="doniraj.html" class="active">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Представка</a>
+</div>
+</div>
+
+</div>
 </div>
 </header>
 
 <div class="hero-space"></div>
 
 <div class="container">
-
 <div class="main-grid">
 
-<!-- PAYPAL -->
 <div class="doc-card">
 <h2>Подржи наш рад</h2>
 
@@ -292,7 +348,6 @@ header{
 </p>
 </div>
 
-<!-- ZIRO -->
 <div class="doc-card">
 <h2>Уплата путем банке</h2>
 
@@ -307,16 +362,31 @@ header{
 </div>
 </div>
 
+<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
 <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
 </div>
 
+<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
 </a>
 
 <script>
+const menu = document.getElementById('menu');
+
+menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
+
+document.addEventListener('click', (e)=>{
+if(!menu.contains(e.target)){
+menu.classList.remove('open');
+}
+});
+
 let amount=10;
 
 document.querySelectorAll('.amount-btn').forEach(btn=>{
