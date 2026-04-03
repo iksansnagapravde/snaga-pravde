@@ -75,6 +75,7 @@ header{
   align-items:center;
   gap:12px;
   padding-left:12px;
+  flex-shrink:0; /* 👈 да се не скупља */
 }
 
 .logo-box{
@@ -98,13 +99,15 @@ header{
 .brand-text .main{
   font-size:0.76rem;
   font-weight:600;
+  line-height:1.2;
+  max-width:120px;     /* 👈 контролише 2 реда */
 }
 
 /* RIGHT */
 .nav-right{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:10px; /* 👈 мањи размак */
   padding-right:12px;
 }
 
@@ -112,11 +115,10 @@ header{
 .donate-btn{
   background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
-  padding:14px 22px;
-  min-width:130px;
-  text-align:center;
-  font-size:0.8rem;
+  padding:12px 14px;   /* 👈 мање */
+  font-size:0.74rem;   /* 👈 мањи текст */
   font-weight:700;
+  white-space:nowrap;  /* 👈 да не расте */
 }
 
 /* MENU */
