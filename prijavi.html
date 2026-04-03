@@ -177,30 +177,64 @@ header{
   font-weight:600;
 }
 
+/* PREMIUM CTA */
 .btn-main{
-  background:var(--blue);
+  background:linear-gradient(135deg,#0a3f78,#082f5a);
   color:#fff;
-  padding:16px 30px;
-  font-size:0.95rem;
-  font-weight:700;
+
+  padding:18px 32px;
 
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  gap:2px;
+
   text-align:center;
+
+  font-family:"Playfair Display",serif;
+
+  box-shadow:
+    0 10px 25px rgba(10,63,120,0.35),
+    inset 0 1px 2px rgba(255,255,255,0.2);
+
+  transition:all 0.25s ease;
 }
 
+/* ICON */
+.btn-main .icon{
+  font-size:18px;
+  margin-bottom:2px;
+}
+
+/* TITLE */
 .btn-main .title{
+  font-size:0.95rem;
   font-weight:700;
+  letter-spacing:0.5px;
 }
 
+/* SUBTEXT */
 .btn-main .sub{
   font-size:0.72rem;
-  margin-top:4px;
   opacity:0.9;
+  letter-spacing:0.5px;
 }
 
+/* HOVER */
+.btn-main:hover{
+  transform:translateY(-2px) scale(1.02);
+  background:linear-gradient(135deg,#0c4b90,#083462);
+
+  box-shadow:
+    0 14px 30px rgba(10,63,120,0.45),
+    inset 0 1px 2px rgba(255,255,255,0.25);
+}
+
+/* CLICK */
+.btn-main:active{
+  transform:scale(0.98);
+}
 /* CONTENT */
 .container{
   max-width:1150px;
@@ -389,8 +423,13 @@ header{
 <div class="top-buttons">
 <a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
 <a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="btn-main">
+
+  <span class="icon">📄</span>
+
   <span class="title">ПРЕДСТАВКА ГРАЂАНИНА</span>
+
   <span class="sub">ОТВОРИ ДОКУМЕНТ</span>
+
 </a>
 </div>
 <div class="container">
