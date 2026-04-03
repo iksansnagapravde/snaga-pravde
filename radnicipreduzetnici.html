@@ -15,12 +15,7 @@
 --gold:#d3a451;
 --gold-soft:rgba(211,164,81,.18);
 --ink:#dcdcdc;
---glass:rgba(20,20,20,0.60);
---glass-strong:rgba(15,15,15,0.78);
 --line:rgba(255,255,255,.10);
---danger:rgba(140,20,40,0.72);
---danger-dark:rgba(80,10,25,0.62);
---ok:rgba(42,126,89,0.72);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -38,7 +33,7 @@ padding-bottom:140px;
 
 .container{max-width:1150px;margin:auto;padding:0 20px}
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
 position:sticky;
 top:0;
@@ -76,11 +71,6 @@ color:#fff;
 box-shadow:
 0 6px 0 rgba(0,0,0,.8),
 0 18px 35px rgba(0,0,0,.9);
-transition:.15s;
-}
-
-.nav a:hover,.menu-btn:hover{
-transform:translateY(-2px);
 }
 
 .menu-btn{
@@ -109,41 +99,31 @@ display:block;
 padding:9px 10px;
 }
 
-/* ===== CTA ===== */
+/* CTA */
 .top-buttons{
 display:flex;
 flex-direction:column;
 align-items:center;
 gap:14px;
-margin-top:20px;
+margin-top:10px;
 }
 
 .btn{
-padding:10px 20px;
-border-radius:30px;
+padding:12px 24px;
+font-size:0.85rem;
 font-weight:700;
-font-size:13px;
-box-shadow:
-0 6px 0 rgba(0,0,0,.6),
-0 18px 35px rgba(0,0,0,.8);
-transition:0.25s;
-}
-
-.btn:hover{
-transform:translateY(-2px) scale(1.03);
+border-radius:4px;
 }
 
 .btn-dark{
-background:rgba(20,20,20,0.6);
-color:#fff;
+background:#fff;
+border:1px solid rgba(10,63,120,0.25);
+color:#0a3f78;
 }
 
 .btn-danger{
-background: linear-gradient(
-135deg,
-rgba(140,20,40,0.65),
-rgba(80,10,25,0.55)
-);
+background:#0a3f78;
+color:#fff;
 }
 
 .btn-gold{
@@ -154,21 +134,19 @@ color:#000;
 /* HERO */
 .page-hero{
 text-align:center;
-padding:38px 0 10px;
+padding:30px 0 10px;
 }
 
 .page-hero h1{
 font-size:34px;
 margin-bottom:10px;
-letter-spacing:.3px;
 }
 
 .page-hero p{
 max-width:860px;
-margin:0 auto;
+margin:auto;
 color:var(--ink);
-line-height:1.65;
-font-size:17px;
+line-height:1.6;
 }
 
 /* GRID */
@@ -179,300 +157,54 @@ margin-top:30px;
 }
 
 @media(min-width:900px){
-.main-grid{
-grid-template-columns:repeat(12,1fr);
-}
+.main-grid{grid-template-columns:repeat(12,1fr);}
 .col-12{grid-column:span 12;}
-.col-8{grid-column:span 8;}
 .col-7{grid-column:span 7;}
 .col-6{grid-column:span 6;}
 .col-5{grid-column:span 5;}
 .col-4{grid-column:span 4;}
 }
 
-/* PREMIUM CARD */
+/* CARD */
 .card{
-position:relative;
-background:
-linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.015)),
-linear-gradient(135deg, rgba(60,10,20,0.22), rgba(20,20,20,0.74));
+background:rgba(20,20,20,0.75);
 padding:24px;
-border-radius:22px;
-border:1px solid rgba(255,255,255,.10);
-box-shadow:
-0 20px 50px rgba(0,0,0,.62),
-inset 0 1px 0 rgba(255,255,255,.09);
-overflow:hidden;
-backdrop-filter:blur(10px);
+border-radius:20px;
+border:1px solid var(--line);
 }
 
-.card::before{
-content:"";
-position:absolute;
-inset:0;
-background:linear-gradient(120deg, transparent, rgba(255,255,255,.06), transparent);
-opacity:.45;
-pointer-events:none;
-}
+.hero-card{padding:30px;}
 
-.hero-card{
-padding:30px;
-background:
-linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)),
-linear-gradient(135deg, rgba(92,18,30,0.38), rgba(16,16,16,0.86));
-}
+.card h2,.card h3{margin-bottom:10px}
+.card p,.card li{color:#ddd;line-height:1.6}
 
-.card h2,.card h3{
-margin-bottom:10px;
-position:relative;
-z-index:1;
-}
+.card ul{padding-left:18px;margin-top:10px}
 
-.card p,.card li{
-color:#ddd;
-line-height:1.68;
-position:relative;
-z-index:1;
-}
+.gold{color:#f0c979}
+.big-quote{font-size:26px;font-weight:700}
+.lead{font-size:16px}
+.divider{height:1px;background:rgba(255,255,255,.2);margin:16px 0}
 
-.card ul{
-padding-left:18px;
-margin-top:10px;
-display:grid;
-gap:8px;
-}
-
-.eyebrow{
-display:inline-flex;
-align-items:center;
-gap:8px;
-padding:7px 12px;
-border-radius:999px;
-background:rgba(255,255,255,.06);
-border:1px solid rgba(255,255,255,.08);
-font-size:12px;
-letter-spacing:.8px;
-text-transform:uppercase;
-color:#f3dfb1;
-margin-bottom:14px;
-position:relative;
-z-index:1;
-}
-
-.gold{
-color:#f0c979;
-}
-
-.big-quote{
-font-size:28px;
-line-height:1.4;
-font-weight:700;
-color:#fff;
-margin-top:4px;
-}
-
-.lead{
-font-size:17px;
-color:#eee;
-}
-
-.divider{
-height:1px;
-background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
-margin:16px 0;
-}
-
-/* STAT TILES */
+/* STATS */
 .stats{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:14px;
 margin-top:18px;
-position:relative;
-z-index:1;
 }
 
 .stat{
-padding:16px;
-border-radius:18px;
-background:rgba(255,255,255,.04);
-border:1px solid rgba(255,255,255,.08);
-box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+padding:14px;
+background:rgba(255,255,255,.05);
+border-radius:12px;
 }
 
-.stat .num{
-font-size:28px;
-font-weight:700;
-color:#fff;
-margin-bottom:4px;
-}
+.stat .num{font-size:22px;font-weight:700}
 
-.stat .label{
-font-size:13px;
-color:#d5d5d5;
-line-height:1.5;
-}
-
-/* BAR CHART */
-.chart{
-margin-top:16px;
-display:grid;
-gap:14px;
-position:relative;
-z-index:1;
-}
-
-.bar-group{
-display:grid;
-gap:7px;
-}
-
-.bar-head{
-display:flex;
-justify-content:space-between;
-gap:12px;
-font-size:14px;
-color:#f0f0f0;
-}
-
-.bar{
-height:12px;
-border-radius:999px;
-background:rgba(255,255,255,.08);
-overflow:hidden;
-border:1px solid rgba(255,255,255,.05);
-}
-
-.fill{
-height:100%;
-border-radius:999px;
-background:linear-gradient(90deg, #d3a451, #f6d28a);
-box-shadow:0 0 20px rgba(211,164,81,.25);
-}
-
-.fill.red{
-background:linear-gradient(90deg, rgba(163,31,55,.95), rgba(224,96,115,.9));
-box-shadow:0 0 20px rgba(180,40,60,.25);
-}
-
-/* SOLUTION CARD */
-.badge-num{
-width:42px;
-height:42px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-margin-bottom:14px;
-background:linear-gradient(135deg, rgba(211,164,81,.28), rgba(211,164,81,.10));
-border:1px solid rgba(211,164,81,.25);
-color:#f0d28f;
-font-weight:700;
-font-size:17px;
-box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
-position:relative;
-z-index:1;
-}
-
-.solution-title{
-font-size:22px;
-margin-bottom:10px;
-position:relative;
-z-index:1;
-}
-
-.message{
-font-size:19px;
-line-height:1.6;
-color:#fff;
-position:relative;
-z-index:1;
-}
-
-.check-list{
-list-style:none;
-padding-left:0;
-margin-top:12px;
-}
-
-.check-list li{
-padding-left:22px;
-position:relative;
-}
-
-.check-list li::before{
-content:"◆";
-position:absolute;
-left:0;
-top:0;
-color:#f0c979;
-font-size:12px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-
-.brand img{height:80px}
-
-.nav{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.top-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.page-hero h1{
-font-size:28px;
-}
-
-.page-hero p{
-font-size:16px;
-}
-
-.stats{
-grid-template-columns:1fr;
-}
-
-}
-
-/* ===== WHATSAPP SLIDE ===== */
-.wa-btn{
-position:fixed;
-bottom:35px;
-right:-180px;
-display:flex;
-align-items:center;
-gap:8px;
-padding:10px 16px;
-border-radius:40px;
-font-size:13px;
-font-weight:700;
-background:linear-gradient(
-135deg,
-rgba(37,211,102,0.55),
-rgba(40,120,160,0.45)
-);
-color:#fff;
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.15);
-box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 1px 2px rgba(255,255,255,0.25);
-z-index:9999;
-transition:right 0.6s ease;
-}
-
-.wa-btn.show{
-right:12px;
-}
-
-.wa-btn img{
-width:22px;
-height:22px;
-}
+/* GRAPH */
+.chart{margin-top:16px}
+.bar{height:10px;background:#333;border-radius:10px}
+.fill{height:100%;background:gold;border-radius:10px}
 
 </style>
 </head>
@@ -489,7 +221,6 @@ height:22px;
 </div>
 
 <nav class="nav">
-
 <a href="index.html">ПОЧЕТНА</a>
 <a href="kontakt.html">КОНТАКТ</a>
 
@@ -502,16 +233,14 @@ height:22px;
 <a href="ciljevi.html">Стратешки циљеви</a>
 <a href="inicijative.html">Захтеви-Закони-Предмети</a>
 <a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+<a href="prikljucise.html">Прикључите се</a>
+<a href="prijavi.html">Представка</a>
+<a href="ukidanjeizvrsitelja.html">Реформа система</a>
+<a href="porekloimovine.html">Транспарентност</a>
+<a href="sudpravda.html">Судство</a>
+<a href="radnicipreduzetnici.html">Правна сигурност</a>
 </div>
-
 </div>
-
 </nav>
 </div>
 </header>
@@ -519,235 +248,111 @@ height:22px;
 <div class="container">
 
 <div class="top-buttons">
-
-<a href="inicijative.html" class="btn btn-dark">
-ЗАКОНИ И ПРОПИСИ
-</a>
-
-<a href="prijavi.html" class="btn btn-danger">
-ПРЕДСТАВКА ГРАЂАНИНА
-</a>
-
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">
-ПОДРЖИ НАШ РАД
-</a>
-
+<a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
+<a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
+<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
 <section class="page-hero">
 <h1>Правна сигурност рада и привреде</h1>
 <p>
-Без правне сигурности нема ни рада ни привреде. Закон мора да штити и радника и поштеног послодавца, а судска заштита мора бити брза, јасна и доступна свима.
+Без правне сигурности нема ни рада ни привреде. Закон мора да штити и радника и поштеног послодавца.
 </p>
 </section>
 
 <div class="main-grid">
 
 <div class="card hero-card col-12">
-<span class="eyebrow">Кључна порука</span>
-<div class="big-quote">Рад постоји — али права пречесто <span class="gold">не постоје у пракси</span>.</div>
+<div class="big-quote">
+Рад постоји — али права пречесто <span class="gold">не постоје у пракси</span>.
+</div>
 <div class="divider"></div>
-<p class="lead">
-Наш предлог је да се радно законодавство поново постави на јасан темељ: свако ко ради мора бити заштићен, радни спор мора бити решен у разумном року, а тржиште мора имати једнака правила за све.
-</p>
 
 <div class="stats">
-<div class="stat">
-<div class="num">3 године</div>
-<div class="label">просечно трају радни спорови у првом степену</div>
+<div class="stat"><div class="num">3 године</div><div class="label">просечно трају спорови</div></div>
+<div class="stat"><div class="num">6 година</div><div class="label">до пресуде</div></div>
+<div class="stat"><div class="num">НЕВИДЉИВИ</div></div>
+<div class="stat"><div class="num">РЕФОРМА</div></div>
 </div>
-<div class="stat">
-<div class="num">6 година</div>
-<div class="label">може трајати чекање на правоснажну и извршну пресуду</div>
-</div>
-<div class="stat">
-<div class="num">НЕВИДЉИВИ</div>
-<div class="label">платформски радници често остају ван пуног оквира заштите</div>
-</div>
-<div class="stat">
-<div class="num">ПОТРЕБНА РЕФОРМА</div>
-<div class="label">потребан је нов закон о раду и ефикаснија судска заштита</div>
-</div>
-</div>
-</div>
-
-<div class="card col-7">
-<span class="eyebrow">Шта је проблем данас?</span>
-<h2>Када закон касни, неправда постаје правило</h2>
-<p>
-Данашњи систем оставља простор да права радника зависе од врсте уговора, добре воље послодавца или спорости суда. То није правна сигурност — то је несигурност под маском закона.
-</p>
-<ul class="check-list">
-<li>радници под различитим облицима ангажовања немају иста права</li>
-<li>радни спорови трају предуго и постају прескупи</li>
-<li>синдикално организовање је недовољно заштићено</li>
-<li>жене након породиљског и родитељи морају имати чврсту правну гаранцију повратка</li>
-<li>платформски радници и нови облици рада не смеју остати ван закона</li>
-</ul>
-</div>
-
-<div class="card col-5">
-<span class="eyebrow">Последица</span>
-<h3>Када нема јасних правила, губе и радници и привреда</h3>
-<ul class="check-list">
-<li>радник остаје без сигурности и без брзе правде</li>
-<li>поштени послодавци трпе због нелојалне конкуренције</li>
-<li>спорови постају дуги, скупи и исцрпљујући</li>
-<li>тржиште рада постаје нестабилно и неправедно</li>
-</ul>
-<div class="divider"></div>
-<p class="message">
-Без правне сигурности нема здраве економије. <span class="gold">Сигуран рад је темељ сигурне државе.</span>
-</p>
 </div>
 
 <div class="card col-6">
-<span class="eyebrow">Графикон — спорост система</span>
-<h3>Колико траје правда у радним споровима?</h3>
-<div class="chart">
-<div class="bar-group">
-<div class="bar-head"><span>Први степен</span><strong>3 године</strong></div>
-<div class="bar"><div class="fill red" style="width:50%"></div></div>
-</div>
+<h3>Колико траје правда?</h3>
 
-<div class="bar-group">
-<div class="bar-head"><span>Правоснажна и извршна пресуда</span><strong>6 година</strong></div>
+<div class="chart">
+<div class="bar"><div class="fill" style="width:50%"></div></div>
 <div class="bar"><div class="fill" style="width:100%"></div></div>
 </div>
-</div>
-<div class="divider"></div>
-<p>
-Радни спор не сме трајати толико дуго да радник изгуби и време и новац и веру у правду.
-</p>
-</div>
 
+</div>
 <div class="card col-6">
-<span class="eyebrow">Шта предлажемо</span>
-<h3>Нови систем за рад и привреду</h3>
-<ul class="check-list">
-<li>ново одређење запосленог: свако ко ради мора имати заштиту</li>
-<li>специјални судови рада за брже и стручније решавање спорова</li>
-<li>јача правна заштита синдиката и колективног преговарања</li>
-<li>фер зараде и јасна правила за минималну цену рада</li>
-<li>заштита жена, родитеља и радника под притиском</li>
-<li>уређени и јасни облици уговора без злоупотреба</li>
+<h3>Шта предлажемо</h3>
+<ul>
+<li>бржи судови</li>
+<li>заштита радника</li>
+<li>фер тржиште</li>
 </ul>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">1</div>
-<div class="solution-title">Свако ко ради мора бити заштићен</div>
-<p>
-Предлажемо да запослен није само лице са класичним уговором о раду, већ свако ко обавља рад код послодавца. Рад не сме бити без права.
-</p>
-<div class="divider"></div>
-<p class="message">Нема радника другог реда.</p>
+<h3>1. Заштита рада</h3>
+<p>Свако ко ради мора бити заштићен.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">2</div>
-<div class="solution-title">Судови рада за брзу правду</div>
-<p>
-Радни спорови морају се решавати пред специјализованим судовима, брже, стручније и уз мање трошкове за запослене.
-</p>
-<div class="divider"></div>
-<p class="message">Радни спор не сме трајати годинама.</p>
+<h3>2. Судови рада</h3>
+<p>Брже решавање спорова.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">3</div>
-<div class="solution-title">Јаки синдикати, јачи радник</div>
-<p>
-Синдикални представници морају бити заштићени од притисака, дискриминације и кажњавања због свог деловања.
-</p>
-<div class="divider"></div>
-<p class="message">Без јаких синдиката нема заштите радника.</p>
+<h3>3. Синдикати</h3>
+<p>Јачи радници.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">4</div>
-<div class="solution-title">Минималац мора значити живот</div>
-<p>
-Минимална цена рада мора бити везана за основне трошкове живота, а не за пуку статистику која не обезбеђује достојанствену егзистенцију.
-</p>
-<div class="divider"></div>
-<p class="message">Плата мора покрити живот, не голо преживљавање.</p>
+<h3>4. Минималац</h3>
+<p>Плата мора значити живот.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">5</div>
-<div class="solution-title">Јасни уговори, мање злоупотреба</div>
-<p>
-Облици рада морају бити прецизно уређени, а привремени и повремени послови не смеју служити за избегавање права која припадају запосленима.
-</p>
-<div class="divider"></div>
-<p class="message">Уговор мора штитити радника, не сакривати злоупотребу.</p>
+<h3>5. Уговори</h3>
+<p>Без злоупотреба.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">6</div>
-<div class="solution-title">Заштита жена и родитеља</div>
-<p>
-Повратак са породиљског и одсуства ради неге детета мора значити сигуран повратак на исте или одговарајуће послове, без смањења права и зараде.
-</p>
-<div class="divider"></div>
-<p class="message">Мајчинство не сме бити казна у каријери.</p>
+<h3>6. Родитељи</h3>
+<p>Заштита породице.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">7</div>
-<div class="solution-title">Нема отказа под притиском</div>
-<p>
-Споразум о престанку радног односа не сме важити ако је потписан под претњом, принудом или обманом. Терет доказивања мора бити на послодавцу.
-</p>
-<div class="divider"></div>
-<p class="message">Нема пристанка ако постоји уцена.</p>
+<h3>7. Притисци</h3>
+<p>Без уцене.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">8</div>
-<div class="solution-title">Колективно преговарање мора имати снагу</div>
-<p>
-Послодавац мора ући у преговоре у разумном року, а колективни уговор мора бити основ радних права, не изузетак.
-</p>
-<div class="divider"></div>
-<p class="message">Социјални дијалог мора бити обавеза, не декор.</p>
+<h3>8. Преговарање</h3>
+<p>Обавезно.</p>
 </div>
 
 <div class="card col-4">
-<div class="badge-num">9</div>
-<div class="solution-title">Платформски радници морају у закон</div>
-<p>
-Нови облици рада не смеју остати невидљиви. Држава мора препознати платформски рад и обезбедити институционалну и синдикалну заштиту.
-</p>
-<div class="divider"></div>
-<p class="message">Ко ради преко апликације, и даље је радник.</p>
+<h3>9. Платформе</h3>
+<p>И они су радници.</p>
 </div>
 
 <div class="card col-6">
-<span class="eyebrow">Програм реформе</span>
-<h3>Шта желимо да изградимо?</h3>
-<p>
-Желимо правни систем у коме се рад исплати, предузетништво развија под фер условима, а радни спор добија брз и стручан епилог. Циљ није сукоб радника и послодавца, већ равнотежа заснована на закону, одговорности и достојанству рада.
-</p>
-<ul class="check-list">
-<li>једнака права за све који раде</li>
-<li>бржа судска заштита</li>
-<li>јачање колективног преговарања</li>
-<li>правна сигурност за раднике и послодавце</li>
-<li>модерно законодавство за нове облике рада</li>
+<h3>Програм</h3>
+<ul>
+<li>једнака права</li>
+<li>бржи судови</li>
+<li>јачи систем</li>
 </ul>
 </div>
 
 <div class="card col-6">
-<span class="eyebrow">Завршна порука</span>
-<h3>Рад мора бити заштићен законом, а не препуштен случају</h3>
-<p class="message">
-Наш предлог није само поправка прописа. Ово је програм за државу у којој је рад заштићен, плата поштена, спор решив, а тржиште уређено. Само тако и радници и предузетници могу да граде будућност без страха.
-</p>
-<div class="divider"></div>
-<p class="big-quote" style="font-size:24px;">
-Без правне сигурности нема рада. <span class="gold">Без сигурног рада нема снажне привреде.</span>
+<h3>Завршна порука</h3>
+<p>
+Без правне сигурности нема рада.  
+<span class="gold">Без сигурног рада нема привреде.</span>
 </p>
 </div>
 
@@ -757,24 +362,14 @@ height:22px;
 
 <script>
 const menu=document.getElementById('menu');
-
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-document.addEventListener('click',(e)=>{
-if(!menu.contains(e.target)){
-menu.classList.remove('open');
-}
-});
-
-window.addEventListener("load", () => {
-setTimeout(()=>{
-document.querySelector(".wa-btn").classList.add("show");
-},300);
+window.addEventListener("load",()=>{
+setTimeout(()=>document.querySelector(".wa-btn").classList.add("show"),300);
 });
 </script>
 
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+<a href="https://wa.me/381665857707" class="wa-btn">
 Пишите нам
 </a>
 
