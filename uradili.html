@@ -403,20 +403,77 @@ header{
 <div class="kpi-card"><strong>150+</strong><span>иницијатива</span></div>
 <div class="kpi-card"><strong>170+</strong><span>сати уживо</span></div>
 </div>
+
 <div class="cards-grid">
+
+<div class="card">
+<h3>Ко смо</h3>
+<p>
+Иксан окупља грађане са циљем јачања правде и правне сигурности,
+кроз заједничко деловање, јавни притисак и правну подршку.
+</p>
+</div>
+
+<div class="card">
+<h3>САД И ОДМАХ</h3>
+<p>
+Јер немамо времена да чекамо — правда мора бити остварена сада.
+</p>
+</div>
+
+<div class="card">
+<h3>Наша мисија</h3>
+<p>
+Реформа система и заштита права грађана кроз транспарентност и одговорност.
+</p>
+</div>
+
+<div class="card">
+<h3>Разлог ангажовања</h3>
+<p>
+Настали смо као одговор на неправде и системску несигурност.
+</p>
+</div>
 
 <div class="card full-span">
 <h3>Шта смо урадили</h3>
 
 <div class="timeline">
-<p><b>28.10.2025.</b> Регистрација удружења</p>
-<p><b>01.11–14.12.2025.</b> 80 посета грађанима</p>
-<p><b>15.12.2025.</b> Иницијатива Родитељ–неговатељ</p>
-<p><b>05.01.2026.</b> Отварање канцеларије</p>
-<p><b>15.01.2026.</b> Уставна иницијатива</p>
-<p><b>01.02–01.03.2026.</b> Обилазак 15 градова</p>
-<p><b>Март 2026.</b> 20+ институција</p>
-<p><b>2026.</b> 170+ сати уживо</p>
+
+<p><b>28.10.2025.</b> Удружење грађана „Иксан – Снага правде“ регистровано у АПР-у.</p>
+
+<p><b>01.11–14.12.2025.</b> Посетили смо 80 старијих лица у градовима и селима.</p>
+
+<p><b>15.12.2025.</b> Подржали иницијативу „Родитељ–неговатељ“.</p>
+
+<p><b>Децембар 2025 – јануар 2026.</b> Учешће у изради закона.</p>
+
+<p><b>05.01.2026.</b> Отворена канцеларија на Вождовцу.</p>
+
+<p><b>15.01.2026.</b> Иницијатива Уставном суду.</p>
+
+<p><b>19.01.2026.</b> Иницијативе Влади и Народној скупштини.</p>
+
+<p><b>01.02–01.03.2026.</b> Обишли 15 градова и места у Србији.</p>
+
+<p><b>06.03.2026.</b> Учешће на инфо данима Министарства.</p>
+
+<p><b>16.03.2026.</b> Учешће у јавној расправи.</p>
+
+<p><b>17.03.2026.</b> Анализа закона о извршењу.</p>
+
+<p><b>18.03.2026.</b> Нацрт закона о инсолвентности.</p>
+
+<p><b>19.03.2026.</b> Закон о заштити примања грађана.</p>
+
+<p><b>20.03.2026.</b> Измене закона о конкуренцији.</p>
+
+<p><b>Март 2026.</b> 20+ институција.</p>
+
+<p><b>Јануар–Април 2026.</b> 170+ сати уживо преноса.</p>
+
+<p><b>Свакодневно.</b> Правна подршка грађанима.</p>
+
 </div>
 </div>
 
@@ -435,7 +492,6 @@ header{
 </div>
 
 </div>
-
 </div>
 
 <script>
@@ -444,10 +500,17 @@ menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
 window.addEventListener("load",()=>{
 setTimeout(()=>{
-document.querySelector(".wa-btn").classList.add("show");
+
+const wa = document.querySelector(".wa-btn");
+if(wa){ wa.classList.add("show"); }
+
+const social = document.getElementById("socialBar");
+if(social){ social.classList.add("show"); }
+
 },400);
 });
 
+/* CHARTS */
 new Chart(document.getElementById('chart1'),{
 type:'bar',
 data:{
@@ -471,6 +534,15 @@ backgroundColor:['#ffb300','#5aa0ff','#3cc878']
 });
 </script>
 
+<!-- SOCIAL -->
+<div class="social-bar" id="socialBar">
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
+</div>
+
+<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 Пишите нам
