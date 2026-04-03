@@ -404,9 +404,10 @@ header{
 }
 
 /* WHATSAPP */
+/* WHATSAPP (SLIDE KAO KONTAKT) */
 .wa-btn{
   position:fixed;
-  right:12px;
+  right:-220px; /* 👈 VAN EKRANA */
   bottom:50px;
 
   display:flex;
@@ -423,8 +424,12 @@ header{
   border-radius:40px;
   box-shadow:0 10px 25px rgba(37,211,102,0.4);
 
+  transition:0.6s;
   z-index:10000;
+}
 
+.wa-btn.show{
+  right:12px; /* 👈 ULAZI NA EKRAN */
 }
 
 .wa-btn img{
