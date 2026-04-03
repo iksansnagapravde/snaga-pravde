@@ -81,12 +81,21 @@ header{
   justify-content:center;
 }
 
-.logo-box img{width:66px;}
+.logo-box img{
+  width:66px;
+}
 
-.brand-text .top{font-size:0.6rem;color:#777;}
-.brand-text .main{font-size:0.76rem;font-weight:600;}
+.brand-text .top{
+  font-size:0.6rem;
+  color:#777;
+}
 
-/* RIGHT */
+.brand-text .main{
+  font-size:0.76rem;
+  font-weight:600;
+  white-space:nowrap;
+}
+
 .nav-right{
   display:flex;
   align-items:center;
@@ -98,19 +107,31 @@ header{
   background:linear-gradient(135deg,var(--orange),var(--orange-dark));
   color:#fff;
   padding:12px 14px;
+  min-width:110px;
+  text-align:center;
   font-size:0.74rem;
   font-weight:700;
+  letter-spacing:0.3px;
+  border:none;
+  box-shadow:none;
 }
 
 /* MENU */
 .menu{position:relative}
 
 .menu-btn{
-  width:26px;height:18px;
-  display:flex;flex-direction:column;justify-content:space-between;
+  width:26px;
+  height:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
   cursor:pointer;
 }
-.menu-btn span{height:2px;background:#000;}
+
+.menu-btn span{
+  height:2px;
+  background:#000;
+}
 
 .dropdown{
   position:absolute;
@@ -120,6 +141,7 @@ header{
   border:1px solid var(--line);
   display:none;
   min-width:270px;
+  z-index:1200;
 }
 
 .menu.open .dropdown{display:block}
@@ -131,10 +153,16 @@ header{
   border-bottom:1px solid var(--line);
 }
 
-/* HERO SPACE */
-.hero-space{height:260px}
+.dropdown a.active{
+  font-weight:700;
+  color:var(--blue);
+}
 
-/* BUTTONS */
+/* HERO */
+.hero-space{
+  height:260px;
+}
+
 .top-buttons{
   display:flex;
   flex-direction:column;
@@ -149,6 +177,7 @@ header{
   padding:12px 24px;
   font-size:0.85rem;
   color:#0a3f78;
+  font-weight:600;
 }
 
 .btn-main{
@@ -159,7 +188,14 @@ header{
   font-weight:700;
 }
 
-/* HERO */
+/* CONTAINER */
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:20px;
+}
+
+/* HERO CARD */
 .hero{
   margin-top:28px;
   padding:26px;
@@ -186,78 +222,7 @@ header{
   gap:16px;
   margin-top:24px;
 }
-<div class="cards-grid">
 
-<div class="card">
-<h3>Ко смо</h3>
-<p>
-Иксан окупља грађане са циљем јачања правде и правне сигурности,
-кроз заједничко деловање, јавни притисак и правну подршку.
-</p>
-</div>
-
-<div class="card">
-<h3>САД И ОДМАХ</h3>
-<p>
-Јер немамо времена да чекамо — правда мора бити остварена сада.
-</p>
-</div>
-
-<div class="card">
-<h3>Наша мисија</h3>
-<p>
-Реформа система и заштита права грађана кроз транспарентност и одговорност.
-</p>
-</div>
-<div class="card full-span">
-<h3>Шта смо урадили</h3>
-
-<div class="timeline">
-
-<p><b>28.10.2025.</b> Удружење регистровано у АПР-у.</p>
-
-<p><b>01.11–14.12.2025.</b> Посетили смо 80 старијих лица.</p>
-
-<p><b>15.12.2025.</b> Подржали иницијативу „Родитељ–неговатељ“.</p>
-
-<p><b>Дец 2025 – јан 2026.</b> Учешће у изради закона.</p>
-
-<p><b>05.01.2026.</b> Отворена канцеларија на Вождовцу.</p>
-
-<p><b>15.01.2026.</b> Иницијатива Уставном суду.</p>
-
-<p><b>19.01.2026.</b> Иницијативе Влади и Скупштини.</p>
-
-<p><b>01.02–01.03.2026.</b> Обишли 15 градова.</p>
-
-<p><b>06.03.2026.</b> Учешће на инфо данима.</p>
-
-<p><b>16.03.2026.</b> Јавна расправа – закон.</p>
-
-<p><b>17.03.2026.</b> Анализа закона.</p>
-
-<p><b>18.03.2026.</b> Нацрт закона о инсолвентности.</p>
-
-<p><b>19.03.2026.</b> Закон о егзистенцијалним примањима.</p>
-
-<p><b>20.03.2026.</b> Измене закона о конкуренцији.</p>
-
-<p><b>Март 2026.</b> 20+ институција.</p>
-
-<p><b>Јан–Апр 2026.</b> 170+ сати уживо.</p>
-
-<p><b>Свакодневно.</b> Правна подршка грађанима.</p>
-
-</div>
-
-<div class="card">
-<h3>Разлог ангажовања</h3>
-<p>
-Настали смо као одговор на неправде и системску несигурност.
-</p>
-</div>
-
-</div>
 .kpi-card{
   background:#fff;
   border:1px solid var(--line);
@@ -270,6 +235,7 @@ header{
   display:block;
   font-size:22px;
   color:var(--blue);
+  margin-bottom:6px;
 }
 
 .kpi-card span{
@@ -278,12 +244,6 @@ header{
 }
 
 /* GRID */
-.container{
-  max-width:1150px;
-  margin:auto;
-  padding:20px;
-}
-
 .cards-grid{
   display:grid;
   gap:20px;
@@ -301,6 +261,8 @@ header{
 .card h3{
   margin-bottom:10px;
   color:var(--blue);
+  font-size:18px;
+  font-weight:500;
 }
 
 .card p{
@@ -309,7 +271,9 @@ header{
   color:#333;
 }
 
-.full-span{grid-column:1/-1}
+.full-span{
+  grid-column:1 / -1;
+}
 
 /* TIMELINE */
 .timeline{
@@ -318,7 +282,9 @@ header{
   border-left:2px solid var(--gold);
 }
 
-.timeline p{margin-bottom:10px}
+.timeline p{
+  margin-bottom:10px;
+}
 
 /* CHART */
 .chart-wrap{
@@ -327,6 +293,40 @@ header{
   border:1px solid var(--line);
   padding:14px;
   height:320px;
+  position:relative;
+}
+
+/* SOCIAL */
+.social-bar{
+  position:fixed;
+  right:-80px;
+  bottom:120px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:9999;
+  transition:0.6s;
+  opacity:0;
+}
+
+.social-bar.show{
+  right:12px;
+  opacity:1;
+}
+
+.social-bar a{
+  width:44px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+
+.social-bar img{
+  width:20px;
 }
 
 /* WHATSAPP */
@@ -340,212 +340,278 @@ header{
   padding:12px 14px;
   background:#25D366;
   color:#fff;
+  font-size:0.8rem;
+  font-weight:600;
   border-radius:40px;
+  box-shadow:0 10px 25px rgba(37,211,102,0.4);
   transition:0.6s;
+  z-index:10000;
 }
 
-.wa-btn.show{right:12px;}
+.wa-btn.show{
+  right:12px;
+}
+
+.wa-btn img{
+  width:22px;
+  filter:brightness(0) invert(1);
+}
+
+@media(max-width:768px){
+  .hero-space{
+    height:180px;
+  }
+
+  .top-buttons{
+    margin-top:-50px;
+    padding:0 10px;
+  }
+
+  .brand-text .main{
+    white-space:normal;
+  }
+
+  .chart-wrap{
+    height:250px;
+  }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="head">
+  <div class="head">
 
-<div class="brand">
-<div class="logo-box">
-<img src="logo-white.png">
-</div>
-<div class="brand-text">
-<div class="top">Удружење грађана</div>
-<div class="main">Иксан Снага правде</div>
-</div>
-</div>
+    <div class="brand">
+      <div class="logo-box">
+        <img src="logo-white.png" alt="Иксан">
+      </div>
 
-<div class="nav-right">
-<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+      <div class="brand-text">
+        <div class="top">Удружење грађана</div>
+        <div class="main">Иксан Снага правде</div>
+      </div>
+    </div>
 
-<div class="menu" id="menu">
-<div class="menu-btn"><span></span><span></span><span></span></div>
+    <div class="nav-right">
+      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-<div class="dropdown">
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">Контакт</a>
-<a href="uradili.html" class="active">Шта смо урадили</a>
-</div>
-</div>
+      <div class="menu" id="menu">
+        <div class="menu-btn">
+          <span></span><span></span><span></span>
+        </div>
 
-</div>
-</div>
+        <div class="dropdown">
+          <a href="index.html"><b>ПОЧЕТНА</b></a>
+          <a href="kontakt.html">Контакт</a>
+          <a href="onama.html">О нама</a>
+          <a href="oblasti.html">Области деловања</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="inicijative.html">Иницијативе</a>
+          <a href="doniraj.html">Донирај</a>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="prijavi.html">Представка</a>
+          <a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
+          <a href="porekloimovine.html">Транспарентност јавних финансија</a>
+          <a href="sudpravda.html">Независност судског система</a>
+          <a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
+          <a href="uradili.html" class="active">Шта смо до сада урадили</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </header>
 
 <div class="hero-space"></div>
 
 <div class="top-buttons">
-<a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
-<a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
+  <a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
+  <a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
 </div>
 
 <div class="container">
 
-<section class="hero">
-<h1>ШТА СМО УРАДИЛИ</h1>
-<p>
-Посвећени смо јачању владавине права, заштити достојанства грађана и системским променама.
-</p>
-</section>
+  <section class="hero">
+    <h1>ШТА СМО УРАДИЛИ</h1>
+    <p>
+      Посвећени смо јачању владавине права, заштити достојанства грађана,
+      институционалној одговорности и развоју праведног друштва. Наш рад
+      обједињује директну подршку грађанима, правне иницијативе, јавни дијалог
+      и конкретне законске предлоге.
+    </p>
+  </section>
 
-<div class="kpi-grid">
-<div class="kpi-card"><strong>22.000+</strong><span>чланова</span></div>
-<div class="kpi-card"><strong>10.000+</strong><span>мејлова</span></div>
-<div class="kpi-card"><strong>1.000+</strong><span>разговора</span></div>
-<div class="kpi-card"><strong>150+</strong><span>иницијатива</span></div>
-<div class="kpi-card"><strong>170+</strong><span>сати уживо</span></div>
-</div>
+  <div class="kpi-grid">
+    <div class="kpi-card"><strong>22.000+</strong><span>чланова</span></div>
+    <div class="kpi-card"><strong>10.000+</strong><span>мејлова</span></div>
+    <div class="kpi-card"><strong>1.000+</strong><span>разговора</span></div>
+    <div class="kpi-card"><strong>150+</strong><span>иницијатива</span></div>
+    <div class="kpi-card"><strong>170+</strong><span>сати уживо</span></div>
+  </div>
 
-<div class="cards-grid">
+  <div class="cards-grid">
 
-<div class="card">
-<h3>Ко смо</h3>
-<p>
-Иксан окупља грађане са циљем јачања правде и правне сигурности,
-кроз заједничко деловање, јавни притисак и правну подршку.
-</p>
-</div>
+    <div class="card">
+      <h3>Ко смо</h3>
+      <p>
+        Иксан окупља грађане са циљем јачања правде и правне сигурности,
+        кроз заједничко деловање, јавни притисак, правну подршку и
+        изградњу система у коме грађанин није препуштен сам себи.
+      </p>
+    </div>
 
-<div class="card">
-<h3>САД И ОДМАХ</h3>
-<p>
-Јер немамо времена да чекамо — правда мора бити остварена сада.
-</p>
-</div>
+    <div class="card">
+      <h3>САД И ОДМАХ</h3>
+      <p>
+        Јер немамо времена да чекамо — живот пролази брже него што систем реагује.
+        Зато правда, истина и одговорност не могу бити питање будућности,
+        већ морају бити остварени сада и одмах.
+      </p>
+    </div>
 
-<div class="card">
-<h3>Наша мисија</h3>
-<p>
-Реформа система и заштита права грађана кроз транспарентност и одговорност.
-</p>
-</div>
+    <div class="card">
+      <h3>Наша мисија</h3>
+      <p>
+        Реформа система, заштита права грађана и стварање друштва у коме
+        закон важи једнако за све. Радимо на томе да институције буду
+        доступне, одговорне, контролисане и у служби јавног интереса.
+      </p>
+    </div>
 
-<div class="card">
-<h3>Разлог ангажовања</h3>
-<p>
-Настали смо као одговор на неправде и системску несигурност.
-</p>
-</div>
+    <div class="card">
+      <h3>Разлог ангажовања</h3>
+      <p>
+        Настали смо као одговор на неправде, злоупотребе и системску
+        несигурност са којом се грађани свакодневно суочавају. Наш циљ је
+        да грађанима вратимо глас, правну сигурност и осећај да постоји
+        организована, озбиљна и истрајна подршка.
+      </p>
+    </div>
 
-<div class="card full-span">
-<h3>Шта смо урадили</h3>
+    <div class="card full-span">
+      <h3>Шта смо урадили</h3>
 
-<div class="timeline">
+      <div class="timeline">
+        <p><b>28.10.2025.</b> Удружење грађана „Иксан – Снага правде“ регистровано у АПР-у.</p>
+        <p><b>01.11–14.12.2025.</b> Посетили смо 80 старијих лица у градовима и селима, разговарали са њима о њиховим потребама и проблемима.</p>
+        <p><b>15.12.2025.</b> Подржали смо иницијативу родитеља за увођење закона „Родитељ–неговатељ“.</p>
+        <p><b>Децембар 2025 – јануар 2026.</b> Пријавили смо учешће у процесу израде нацрта закона „Родитељ–неговатељ“.</p>
+        <p><b>05.01.2026.</b> Отворена је канцеларија на Вождовцу за грађане, у којој свакодневно пружамо правну и саветодавну подршку.</p>
+        <p><b>15.01.2026.</b> Поднета је иницијатива Уставном суду за оцену уставности одредби Закона о извршењу и обезбеђењу.</p>
+        <p><b>19.01.2026.</b> Поднете су иницијативе председнику Републике, Влади и Народној скупштини ради измене спорних одредби Закона о извршењу и обезбеђењу.</p>
+        <p><b>01.02–01.03.2026.</b> Обишли смо 15 градова и места у Србији, разговарали са грађанима.</p>
+        <p><b>06.03.2026.</b> Узели смо учешће на „инфо данима“ у организацији Министарства за људска и мањинска права и друштвени дијалог.</p>
+        <p><b>16.03.2026.</b> Узели смо учешће у јавној расправи поводом Нацрта закона о ауторском и сродним правима.</p>
+        <p><b>17.03.2026.</b> Припремили смо анализу и оцену уставности спорних одредби постојећег Закона о извршењу и обезбеђењу.</p>
+        <p><b>18.03.2026.</b> Израдили смо комплетан нацрт закона о инсолвентности физичких лица.</p>
+        <p><b>19.03.2026.</b> Израдили смо нацрт закона о заштити егзистенцијалних примања грађана.</p>
+        <p><b>20.03.2026.</b> Припремили смо измене и допуне Закона о заштити конкуренције.</p>
+        <p><b>Март 2026.</b> Путем представки грађана обратили смо се на више од 20 адреса надлежних институција, са иницијативама и ургенцијама.</p>
+        <p><b>Јануар–Април 2026.</b> Одржали смо преко 170 сати уживо преноса на друштвеној мрежи TikTok, у директној комуникацији са грађанима широм Србије.</p>
+        <p><b>Од 05.01.2026.</b> Грађани се свакодневно укључују са различитим проблемима, а ми им пружамо саветодавну и правну подршку, укључујући и помоћ у подношењу представки.</p>
+        <p><b>Свакодневно.</b> Наше активности прати на хиљаде грађана Србије.</p>
+      </div>
+    </div>
 
-<p><b>28.10.2025.</b> Удружење грађана „Иксан – Снага правде“ регистровано у АПР-у.</p>
+    <div class="card">
+      <h3>Графикон раста</h3>
+      <div class="chart-wrap">
+        <canvas id="chart1"></canvas>
+      </div>
+    </div>
 
-<p><b>01.11–14.12.2025.</b> Посетили смо 80 старијих лица у градовима и селима.</p>
+    <div class="card">
+      <h3>Активности</h3>
+      <div class="chart-wrap">
+        <canvas id="chart2"></canvas>
+      </div>
+    </div>
 
-<p><b>15.12.2025.</b> Подржали иницијативу „Родитељ–неговатељ“.</p>
+    <div class="card">
+      <h3>Наша мисија</h3>
+      <p><strong>Правда</strong> — закон мора важити једнако за све.</p>
+      <p><strong>Одговорност</strong> — институције морају служити грађанима.</p>
+      <p><strong>Транспарентност</strong> — рад мора бити јаван, проверљив и видљив.</p>
+      <p><strong>Подршка</strong> — грађанин не сме остати сам пред системом.</p>
+    </div>
 
-<p><b>Децембар 2025 – јануар 2026.</b> Учешће у изради закона.</p>
+    <div class="card">
+      <h3>Основни подаци</h3>
+      <p>Седиште: Београд</p>
+      <p>Адреса: Војводе Степе 127</p>
+      <p>Email: iksan.snaga.pravde@gmail.com</p>
+      <p>Телефон: 066 585 7 707</p>
+      <p>МБ: 28406312</p>
+      <p>ПИБ: 115357260</p>
+    </div>
 
-<p><b>05.01.2026.</b> Отворена канцеларија на Вождовцу.</p>
-
-<p><b>15.01.2026.</b> Иницијатива Уставном суду.</p>
-
-<p><b>19.01.2026.</b> Иницијативе Влади и Народној скупштини.</p>
-
-<p><b>01.02–01.03.2026.</b> Обишли 15 градова и места у Србији.</p>
-
-<p><b>06.03.2026.</b> Учешће на инфо данима Министарства.</p>
-
-<p><b>16.03.2026.</b> Учешће у јавној расправи.</p>
-
-<p><b>17.03.2026.</b> Анализа закона о извршењу.</p>
-
-<p><b>18.03.2026.</b> Нацрт закона о инсолвентности.</p>
-
-<p><b>19.03.2026.</b> Закон о заштити примања грађана.</p>
-
-<p><b>20.03.2026.</b> Измене закона о конкуренцији.</p>
-
-<p><b>Март 2026.</b> 20+ институција.</p>
-
-<p><b>Јануар–Април 2026.</b> 170+ сати уживо преноса.</p>
-
-<p><b>Свакодневно.</b> Правна подршка грађанима.</p>
-
-</div>
-</div>
-
-<div class="card">
-<h3>Графикон раста</h3>
-<div class="chart-wrap">
-<canvas id="chart1"></canvas>
-</div>
-</div>
-
-<div class="card">
-<h3>Активности</h3>
-<div class="chart-wrap">
-<canvas id="chart2"></canvas>
-</div>
-</div>
-
-</div>
+  </div>
 </div>
 
 <script>
 const menu = document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
-window.addEventListener("load",()=>{
-setTimeout(()=>{
-
-const wa = document.querySelector(".wa-btn");
-if(wa){ wa.classList.add("show"); }
-
-const social = document.getElementById("socialBar");
-if(social){ social.classList.add("show"); }
-
-},400);
+document.addEventListener('click', (e) => {
+  if(!menu.contains(e.target)){
+    menu.classList.remove('open');
+  }
 });
 
-/* CHARTS */
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const wa = document.querySelector(".wa-btn");
+    if(wa) wa.classList.add("show");
+
+    const social = document.getElementById("socialBar");
+    if(social) social.classList.add("show");
+  }, 400);
+});
+
 new Chart(document.getElementById('chart1'),{
-type:'bar',
-data:{
-labels:['Почетак','Раст','Данас'],
-datasets:[{
-data:[1000,12000,22000],
-backgroundColor:['#ffb300','#5aa0ff','#3cc878']
-}]
-}
+  type:'bar',
+  data:{
+    labels:['Почетак','Раст','Данас'],
+    datasets:[{
+      data:[1000,12000,22000],
+      backgroundColor:['#ffb300','#5aa0ff','#3cc878']
+    }]
+  },
+  options:{
+    responsive:true,
+    maintainAspectRatio:false,
+    plugins:{legend:{display:false}}
+  }
 });
 
 new Chart(document.getElementById('chart2'),{
-type:'doughnut',
-data:{
-labels:['Иницијативе','Разговори','Посете'],
-datasets:[{
-data:[150,1000,95],
-backgroundColor:['#ffb300','#5aa0ff','#3cc878']
-}]
-}
+  type:'doughnut',
+  data:{
+    labels:['Иницијативе','Разговори','Посете'],
+    datasets:[{
+      data:[150,1000,95],
+      backgroundColor:['#ffb300','#5aa0ff','#3cc878']
+    }]
+  },
+  options:{
+    responsive:true,
+    maintainAspectRatio:false
+  }
 });
 </script>
 
-<!-- SOCIAL -->
 <div class="social-bar" id="socialBar">
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
-  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+  <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"></a>
 </div>
 
-<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Пишите нам
 </a>
 
 </body>
