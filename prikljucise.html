@@ -8,252 +8,238 @@
 <title>Прикључите се — Иксан • Снага правде</title>
 
 <link rel="icon" href="logo-white.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 :root{
---gold:#d3a451;
+  --blue:#0a3f78;
+  --orange:#ff5a1f;
+  --orange-dark:#e44e16;
+  --line:rgba(0,0,0,0.12);
 }
 
+/* RESET */
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
 
+/* BODY */
 body{
-background:
-linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 60%),
-url('justice-bg.jpg') center 20% / cover no-repeat fixed;
-color:#fff;
-font-family:"Times New Roman";
-padding-bottom:140px;
+  font-family:"Playfair Display",serif;
+  padding-bottom:140px;
+  overflow-x:hidden;
 }
 
-.container{max-width:1150px;margin:auto;padding:0 20px}
+/* POZADINA */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:url('justice-bg.jpg') center / cover no-repeat;
+  opacity:0.25;
+}
 
-/* ===== HEADER ===== */
+/* ===== HEADER (ISTI KAO CONTACT) ===== */
 header{
-position:sticky;
-top:0;
-z-index:100;
-backdrop-filter:blur(6px);
-border-bottom:1px solid rgba(255,255,255,.1);
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  z-index:1000;
 }
 
 .head{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:4px 0;
+  max-width:1150px;
+  margin:auto;
+  padding:12px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 
-.brand img{
-height:95px;
-border-radius:10px;
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding-left:12px;
 }
 
-.nav{
-display:flex;
-align-items:center;
-gap:6px;
+.logo-box{
+  width:72px;
+  height:72px;
+  background:#0a3f78;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
-.nav a,.menu-btn{
-padding:6px 10px;
-border-radius:10px;
-font-weight:600;
-font-size:0.85rem;
+.logo-box img{width:66px;}
 
-background:rgba(0,0,0,0.45);
-color:#fff;
-
-box-shadow:
-0 5px 0 rgba(0,0,0,.7),
-0 15px 30px rgba(0,0,0,.8);
+.brand-text .top{
+  font-size:0.6rem;
+  color:#777;
 }
 
-.menu-btn{
-background:#fff;
-color:#000;
-font-weight:700;
+.brand-text .main{
+  font-size:0.76rem;
+  font-weight:600;
+  line-height:1.2;
+  max-width:120px;
 }
 
+/* DESNO */
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding-right:12px;
+}
+
+.donate-btn{
+  background:linear-gradient(135deg,var(--orange),var(--orange-dark));
+  color:#fff;
+  padding:12px 14px;
+  font-size:0.74rem;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+/* MENU */
 .menu{position:relative}
 
+.menu-btn{
+  width:26px;height:18px;
+  display:flex;flex-direction:column;justify-content:space-between;
+  cursor:pointer;
+}
+.menu-btn span{height:2px;background:#000;}
+
 .dropdown{
-position:absolute;
-top:calc(100% + 8px);
-right:0;
-background:rgba(20,20,20,0.95);
-border-radius:12px;
-padding:6px;
-display:none;
-min-width:260px;
+  position:absolute;
+  top:calc(100% + 10px);
+  right:0;
+  background:#fff;
+  border:1px solid var(--line);
+  display:none;
+  min-width:270px;
 }
 
 .menu.open .dropdown{display:block}
 
 .dropdown a{
-display:block;
-padding:9px 10px;
+  display:block;
+  padding:10px 14px;
+  font-size:0.85rem;
+  border-bottom:1px solid var(--line);
 }
 
-/* ===== CTA FIX ===== */
+/* CONTENT */
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:20px;
+}
+
 .top-buttons{
-display:flex;
-flex-direction:column;
-align-items:center;
-gap:14px;
-margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  margin-top:30px;
 }
 
 .btn{
-padding:10px 20px;
-border-radius:30px;
-font-weight:700;
-font-size:13px;
-
-box-shadow:
-0 6px 0 rgba(0,0,0,.5),
-0 15px 30px rgba(0,0,0,.6);
-
-transition:0.25s;
+  padding:12px 24px;
+  font-weight:700;
 }
 
-.btn:hover{
-transform: translateY(-2px) scale(1.03);
-}
+.btn-dark{background:#fff;border:1px solid rgba(0,0,0,0.2);}
+.btn-danger{background:#0a3f78;color:#fff;}
+.btn-gold{background:linear-gradient(135deg,var(--orange),var(--orange-dark));color:#fff;}
 
-.btn-dark{
-background:rgba(20,20,20,0.6);
-color:#fff;
-}
-
-.btn-danger{
-background: linear-gradient(
-135deg,
-rgba(140,20,40,0.65),
-rgba(80,10,25,0.55)
-);
-}
-
-.btn-gold{
-background:linear-gradient(135deg,#ffd700,#ffb300);
-color:#000;
-}
-
-/* ===== NASLOV ===== */
 .title{
-text-align:center;
-margin-top:30px;
+  text-align:center;
+  margin-top:30px;
 }
 
-.title h1{
-font-size:28px;
-margin-bottom:10px;
-}
-
-.title p{
-color:#ddd;
-max-width:700px;
-margin:auto;
-}
-
-/* ===== GRID ===== */
 .main-grid{
-display:grid;
-gap:30px;
-margin-top:30px;
+  display:grid;
+  gap:20px;
+  margin-top:30px;
 }
 
 @media(min-width:900px){
-.main-grid{grid-template-columns:1fr 1fr;}
+  .main-grid{grid-template-columns:1fr 1fr;}
 }
 
-.left{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
+.left,.right{
+  background:#fff;
+  border:1px solid var(--line);
+  padding:22px;
 }
 
-.left h2{
-margin-bottom:10px;
+/* ===== SOCIAL ===== */
+.social-bar{
+  position:fixed;
+  right:-80px;
+  bottom:120px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:9999;
+  transition:0.6s;
+  opacity:0;
 }
 
-.left p{
-color:#ddd;
-margin-bottom:10px;
+.social-bar.show{
+  right:12px;
+  opacity:1;
 }
 
-.right{
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
+.social-bar a{
+  width:44px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  border:1px solid var(--line);
 }
 
-form{
-display:grid;
-gap:12px;
-}
+.social-bar img{width:20px;}
 
-input,textarea{
-padding:10px;
-border-radius:10px;
-border:1px solid rgba(255,255,255,.3);
-background:rgba(255,255,255,.1);
-color:#fff;
-}
-
-button{
-background:var(--gold);
-border:none;
-padding:10px;
-border-radius:20px;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* ===== WHATSAPP STANDARD ===== */
+/* ===== WHATSAPP (ISTO KAO CONTACT) ===== */
 .wa-btn{
-position:fixed;
-bottom:35px;
-right:-180px;
+  position:fixed;
+  right:-220px;
+  bottom:50px;
 
-display:flex;
-align-items:center;
-gap:8px;
+  display:flex;
+  align-items:center;
+  gap:10px;
 
-padding:10px 16px;
-border-radius:40px;
+  padding:12px 14px;
+  background:#25D366;
+  color:#fff;
 
-font-size:13px;
-font-weight:700;
+  font-size:0.8rem;
+  font-weight:600;
 
-background:linear-gradient(
-135deg,
-rgba(37,211,102,0.55),
-rgba(40,120,160,0.45)
-);
+  border-radius:40px;
+  box-shadow:0 10px 25px rgba(37,211,102,0.4);
 
-color:#fff;
-
-backdrop-filter:blur(10px);
-border:1px solid rgba(255,255,255,0.15);
-
-box-shadow:
-0 4px 12px rgba(0,0,0,0.4),
-inset 0 1px 2px rgba(255,255,255,0.25);
-
-z-index:9999;
-transition:right 0.6s ease;
+  transition:0.6s;
+  z-index:10000;
 }
 
 .wa-btn.show{
-right:12px;
+  right:12px;
 }
 
 .wa-btn img{
-width:22px;
-height:22px;
+  width:22px;
+  filter:brightness(0) invert(1);
 }
 
 </style>
@@ -262,41 +248,34 @@ height:22px;
 <body>
 
 <header>
-<div class="container head">
+<div class="head">
 
 <div class="brand">
-<a href="index.html">
+<div class="logo-box">
 <img src="logo-white.png">
-</a>
+</div>
+<div class="brand-text">
+<div class="top">Удружење грађана</div>
+<div class="main">Иксан Снага правде</div>
+</div>
 </div>
 
-<nav class="nav">
-
-<a href="index.html">ПОЧЕТНА</a>
-<a href="kontakt.html">КОНТАКТ</a>
+<div class="nav-right">
+<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
 <div class="menu" id="menu">
-<button class="menu-btn">МЕНИ ▾</button>
+<div class="menu-btn"><span></span><span></span><span></span></div>
 
 <div class="dropdown">
-
-<a href="onama.html">о Нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви-Закони-Предмети</a>
-<a href="doniraj.html">Подржите наш рад</a>
-<a href="prikljucise.html">Прикључите се нашем раду</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа система извршења</a>
-<a href="porekloimovine.html">Транспарентност јавних финансија</a>
-<a href="sudpravda.html">Независност судског система</a>
-<a href="radnicipreduzetnici.html">Правна сигурност рада и привреде</a>
-
+<a href="index.html">ПОЧЕТНА</a>
+<a href="kontakt.html">Контакт</a>
+<a href="onama.html">О нама</a>
+<a href="inicijative.html">Иницијативе</a>
+<a href="prijavi.html">Представка</a>
+</div>
 </div>
 
 </div>
-
-</nav>
 </div>
 </header>
 
@@ -305,14 +284,11 @@ height:22px;
 <div class="top-buttons">
 <a href="inicijative.html" class="btn btn-dark">ЗАКОНИ И ПРОПИСИ</a>
 <a href="prijavi.html" class="btn btn-danger">ПРЕДСТАВКА ГРАЂАНИНА</a>
-<a href="https://www.paypal.com/ncp/payment/6BRVFA4JPL7D8" target="_blank" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
+<a href="#" class="btn btn-gold">ПОДРЖИ НАШ РАД</a>
 </div>
 
 <div class="title">
 <h1>ПРИКЉУЧИТЕ СЕ НАШЕМ РАДУ</h1>
-<p>
-Позивамо све грађане, стручњаке и сараднике да се укључе у рад удружења.
-</p>
 </div>
 
 <div class="main-grid">
@@ -322,40 +298,46 @@ height:22px;
 <p>✔ Помажете грађанима</p>
 <p>✔ Учествујете у иницијативама</p>
 <p>✔ Доприносите правди</p>
-<p>✔ Повезујете се са стручњацима</p>
 </div>
 
 <div class="right">
 <h2>Пријава за сарадњу</h2>
-
 <form>
-<input type="text" placeholder="Име и презиме" required>
-<input type="email" placeholder="Е-пошта" required>
-<textarea placeholder="Како желите да допринесете?" required></textarea>
+<input type="text" placeholder="Име и презиме">
+<input type="email" placeholder="Е-пошта">
+<textarea placeholder="Како желите да допринесете?"></textarea>
 <button>Пошаљи</button>
 </form>
-
 </div>
 
 </div>
 
 </div>
+
+<!-- SOCIAL -->
+<div class="social-bar" id="socialBar">
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"></a>
+<a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"></a>
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+Пишите нам
+</a>
 
 <script>
 const menu=document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
-window.addEventListener("load", () => {
+window.addEventListener("load",()=>{
 setTimeout(()=>{
+document.getElementById("socialBar").classList.add("show");
 document.querySelector(".wa-btn").classList.add("show");
-},300);
+},400);
 });
 </script>
-
-<a href="https://wa.me/381665857707" class="wa-btn" target="_blank">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
-</a>
 
 </body>
 </html>
