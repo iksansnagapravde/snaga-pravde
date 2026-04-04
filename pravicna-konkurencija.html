@@ -1175,25 +1175,11 @@ window.addEventListener("load", () => {
   }, 400);
 });
 new Chart(document.getElementById('impact2Chart'), {
+new Chart(document.getElementById('impact2Chart'), {
   type:'line',
   data:{
     labels:['Сада','1 година','3 године','5 година'],
-datasets:[
-  {
-    label:'Пре реформе',
-    data:[30,25,35,28],
-    backgroundColor:'rgba(255,92,92,0.75)',
-    borderColor:'#ff5c5c',
-    borderWidth:2
-  },
-  {
-    label:'После реформе',
-    data:[80,75,85,82],
-    backgroundColor:'rgba(10,63,120,0.75)',
-    borderColor:'#0a3f78',
-    borderWidth:2
-  }
-]
+    datasets:[
       {
         label:'Домаћи производи',
         data:[30,45,60,75],
@@ -1246,33 +1232,22 @@ new Chart(document.getElementById('reformImpactChart'), {
     labels:['Видљивост домаћих производа','Равноправност малих учесника','Информисаност потрошача','Тржишна транспарентност'],
     datasets:[
       {
-        label:'Пре реформе',
-        data:[30,25,35,28],
-        backgroundColor:'rgba(255,92,92,0.75)',
-        borderColor:'#ff5c5c',
-        borderWidth:2
-      }
-      {
-        label:'После реформе',
-        data:[80,75,85,82],
-        backgroundColor:'rgba(10,63,120,0.75)',
-        borderColor:'#0a3f78',
-        borderWidth:2
-      }
-    ]
+    datasets:[
+  {
+    label:'Пре реформе',
+    data:[30,25,35,28],
+    backgroundColor:'rgba(255,92,92,0.75)',
+    borderColor:'#ff5c5c',
+    borderWidth:2
   },
-  options:{
-    responsive:true,
-    maintainAspectRatio:false,
-    plugins:{
-      legend:{ labels:{ color:axisColor } }
-    },
-    scales:{
-      x:{ ticks:{ color:axisColor }, grid:{ color:gridColor } },
-      y:{ ticks:{ color:axisColor }, grid:{ color:gridColor } }
-    }
+  {
+    label:'После реформе',
+    data:[80,75,85,82],
+    backgroundColor:'rgba(10,63,120,0.75)',
+    borderColor:'#0a3f78',
+    borderWidth:2
   }
-});
+]
 </script>
 
 </body>
