@@ -240,10 +240,7 @@ header{
   transform:translateX(5px);
   opacity:0.9;
 } 
-.card.blue{
-  background:var(--blue);
-  color:#fff;
-}
+
 
 .card.blue{
   background:#0a3f78;
@@ -264,7 +261,30 @@ header{
   font-size:0.75rem;
   line-height:1.45;
 }
+/* INTRO CARD (PRVA KARTICA — NEKLIKABILNA) */
+.intro-card{
+  cursor:default;
+  box-shadow:0 4px 14px rgba(0,0,0,0.04);
+  border-top:4px solid #0a3f78;
+  background:linear-gradient(180deg,#ffffff,#f7f9fc);
+}
 
+/* ugasi hover */
+.intro-card:hover{
+  transform:none;
+  box-shadow:0 4px 14px rgba(0,0,0,0.04);
+  border-top:4px solid #0a3f78;
+}
+
+/* ugasi strelicu */
+.intro-card::after{
+  display:none;
+}
+
+/* MOBILE TAP EFEKAT */
+.card:active{
+  transform:scale(0.98);
+}
 /* SOCIAL */
 .social-bar{
   position:fixed;
@@ -386,7 +406,7 @@ header{
 
 <div class="grid">
 
-<div class="card">
+<div class="card intro-card">
 <h3>Заштита људских права</h3>
 <p>Основна мисија удружења је заштита права грађана и јачање институционалне одговорности.</p>
 </div>
@@ -418,13 +438,13 @@ header{
 </a>
 
 <a href="radnicipreduzetnici.html" class="card">
-<h3>Радник мора бити заштићен кроз специјализован праведан и брз суд</h3>
-<p>Сигуран рад и фер правила морају важити за све који раде и стварају.</p>
-
+  <h3>Радник мора бити заштићен...</h3>
+  <p>Сигуран рад...</p>
+</a>
 
 <a href="zastita-konkurencije.html" class="card blue">
-<h3>Стоп монополистичким праксама и деловању кроз измену Закона о заштити конкуренције</h3>
-<p>Здрава конкуренција је услов за праведно тржиште и развој привреде.</p>
+  <h3>Стоп монополистичким праксама...</h3>
+  <p>Здрава конкуренција...</p>
 </a>
 
 </div>
