@@ -223,7 +223,6 @@ header{
 .card:hover{
   transform:translateY(-4px);
   box-shadow:0 14px 32px rgba(10,63,120,0.12);
-  border-top:1px solid rgba(10,63,120,0.2);
 }
  .card::after{
   content:"→";
@@ -261,6 +260,32 @@ header{
   font-size:0.75rem;
   line-height:1.45;
 }
+/* PLAVA LINIJA */
+.card-top-line{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:6px;
+  background:#4da6ff;
+}
+
+/* ZUTO DUGME */
+.card-btn{
+  display:block;
+  margin-top:18px;
+
+  background:#ffea00;
+  color:#000;
+
+  text-align:center;
+  padding:12px;
+
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+}  
 /* INTRO CARD (PRVA KARTICA — NEKLIKABILNA) */
 .intro-card{
   cursor:default;
@@ -416,6 +441,8 @@ header{
 <a href="egzistencijalni-minimum.html" class="card">
 <h3>Нико не сме живети испод егзистенцијалног минимума</h3>
 <p>Минимум достојанства мора постати право, а не изузетак.</p>
+  
+  <div class="card-btn">САЗНАЈ ВИШЕ</div>
 
 </a>
 
@@ -423,11 +450,15 @@ header{
 <h3>Систем извршења акумулира нерешене предмете</h3>
 <p>Грађани морају имати излаз из презадужености кроз фер систем извршења и Закон о стечају физичких лица.</p>
 
+  <div class="card-btn">САЗНАЈ ВИШЕ</div>
+
 </a>
 
 <a href="porekloimovine.html" class="card">
 <h3>Систем јавних набавки и администрације под строгим правилима и контролом</h3>
 <p>Јавна функција мора значити и јавну одговорност у располагању јавном имовином и потпуну контролу.</p>
+
+  <div class="card-btn">САЗНАЈ ВИШЕ</div>
 
 </a>
 
@@ -435,16 +466,24 @@ header{
 <h3>Независно и транспарентно судство</h3>
 <p>Правда мора бити видљива, брза и једнака за све.</p>
 
+  <div class="card-btn">САЗНАЈ ВИШЕ</div>
+
 </a>
 
 <a href="radnicipreduzetnici.html" class="card">
   <h3>Радник мора бити заштићен...</h3>
   <p>Сигуран рад...</p>
+  
+  <div class="card-btn">САЗНАЈ ВИШЕ</div>
+
 </a>
 
 <a href="zastita-konkurencije.html" class="card blue">
   <h3>Стоп монополистичким праксама...</h3>
   <p>Здрава конкуренција...</p>
+  
+  <div class="card-btn">САЗНАЈ ВИШЕ</div>
+
 </a>
 
 </div>
