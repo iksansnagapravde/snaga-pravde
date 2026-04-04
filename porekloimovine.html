@@ -376,19 +376,23 @@ header{
 /* TABLE */
 .table-wrap,
 .detail-table{
-  overflow:auto;
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
   margin-top:20px;
   border:1px solid var(--line);
+  -webkit-overflow-scrolling:touch;
 }
 
 .table-wrap table,
 .detail-table table{
   width:100%;
-  min-width:700px;
+  min-width:600px; /* ↓ мање од 700 → мање гура */
   border-collapse:collapse;
   background:#fff;
 }
 
+/* ћелије */
 .table-wrap th,
 .table-wrap td,
 .detail-table th,
@@ -396,20 +400,25 @@ header{
   padding:12px 10px;
   text-align:center;
   border-bottom:1px solid var(--line);
+  word-break:break-word;
 }
 
+/* header */
 .table-wrap th,
 .detail-table th{
   background:#f3f7fc;
   font-size:12px;
+  white-space:nowrap;
 }
 
+/* text */
 .table-wrap td,
 .detail-table td{
   font-size:0.74rem;
   color:var(--soft);
 }
 
+/* последњи ред */
 .table-wrap tr:last-child td,
 .detail-table tr:last-child td{
   border-bottom:none;
