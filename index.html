@@ -271,21 +271,34 @@ header{
   background:#4da6ff;
 }
 
-/* ZUTO DUGME */
 .card-btn{
-  display:block;
   margin-top:18px;
-  background:#0a3f78; /* ISTA PLAVA */
-  color:#fff;
-}
-
-  text-align:center;
-  padding:12px;
 
   font-size:11px;
   font-weight:700;
   letter-spacing:0.5px;
-  text-transform:uppercase;
+
+  color:#0a3f78;
+
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+
+  transition:0.25s;
+}
+
+.card-btn::after{
+  content:"→";
+  font-size:14px;
+  transition:0.25s;
+}
+
+.card-btn:hover{
+  color:#08325e;
+}
+
+.card-btn:hover::after{
+  transform:translateX(4px);
 }
 
 /* hover ide odvojeno */
