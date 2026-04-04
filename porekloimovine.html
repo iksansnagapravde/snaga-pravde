@@ -374,6 +374,7 @@ header{
 }
 
 /* TABLE */
+/* TABLE — FIX PRAVI */
 .table-wrap,
 .detail-table{
   width:100%;
@@ -384,23 +385,27 @@ header{
   -webkit-overflow-scrolling:touch;
 }
 
+/* KLJUČNO */
 .table-wrap table,
 .detail-table table{
   width:100%;
-  min-width:600px; /* ↓ мање од 700 → мање гура */
+  table-layout:fixed; /* 👈 OVO rešava širenje */
   border-collapse:collapse;
   background:#fff;
 }
 
-/* ћелије */
+/* ćelije */
 .table-wrap th,
 .table-wrap td,
 .detail-table th,
 .detail-table td{
-  padding:12px 10px;
+  padding:10px 8px;
   text-align:center;
   border-bottom:1px solid var(--line);
-  word-break:break-word;
+
+  word-wrap:break-word;
+  overflow-wrap:break-word;
+  hyphens:auto;
 }
 
 /* header */
@@ -408,17 +413,16 @@ header{
 .detail-table th{
   background:#f3f7fc;
   font-size:12px;
-  white-space:nowrap;
 }
 
 /* text */
 .table-wrap td,
 .detail-table td{
-  font-size:0.74rem;
+  font-size:0.72rem;
   color:var(--soft);
 }
 
-/* последњи ред */
+/* poslednji red */
 .table-wrap tr:last-child td,
 .detail-table tr:last-child td{
   border-bottom:none;
