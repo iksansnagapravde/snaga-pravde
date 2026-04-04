@@ -205,18 +205,54 @@ header{
 
 /* CARDS — PELCER */
 .card{
-  padding:22px;
-  background:#fff;
-  border:1px solid var(--line);
+  position:relative;
+  padding:26px;
+
+  background:#ffffff;
+  border:1px solid rgba(10,63,120,0.10);
+  border-top:3px solid #0a3f78;
+
+  border-radius:6px;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
+  transition:all 0.25s ease;
+  cursor:pointer;
+  overflow:hidden;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 32px rgba(10,63,120,0.12);
+  border-top:3px solid #ff5a1f;
+}
+ .card::after{
+  content:"→";
+  position:absolute;
+  right:18px;
+  bottom:18px;
+  font-size:16px;
+  color:#0a3f78;
+  opacity:0.4;
+  transition:0.25s;
 }
 
+.card:hover::after{
+  transform:translateX(5px);
+  opacity:0.9;
+} 
 .card.blue{
   background:var(--blue);
   color:#fff;
 }
 
+.card.blue{
+  background:#0a3f78;
+  color:#fff;
+  border-top:3px solid #d3a451;
+}
+
 .card.blue p{
-  color:#eaeaea;
+  color:#e7edf5;
 }
 
 .card h3{
