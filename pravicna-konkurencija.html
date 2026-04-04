@@ -1173,59 +1173,59 @@ window.addEventListener("load", () => {
     const wa = document.querySelector(".wa-btn");
     if(wa) wa.classList.add("show");
   }, 400);
-});
-new Chart(document.getElementById('impact2Chart'), {
-new Chart(document.getElementById('impact2Chart'), {
-  type:'line',
-  data:{
-    labels:['Сада','1 година','3 године','5 година'],
-    datasets:[
-      {
-        label:'Домаћи производи',
-        data:[30,45,60,75],
-        borderColor:'#0a3f78',
-        backgroundColor:'rgba(10,63,120,0.2)',
-        tension:0.4
-      },
-      {
-        label:'Тржишна транспарентност',
-        data:[25,50,70,85],
-        borderColor:'#2e8b57',
-        backgroundColor:'rgba(46,139,87,0.2)',
-        tension:0.4
-      }
-    ]
-  },
-  options:{
-    responsive:true,
-    maintainAspectRatio:false
-  }
-});
-const axisColor = '#333';
-const gridColor = 'rgba(0,0,0,0.08)';
 
-new Chart(document.getElementById('marketStructureChart'), {
-  type: 'doughnut',
-  data: {
-    labels: ['Велики системи', 'Мали и средњи домаћи учесници'],
-    datasets: [{
-      data: [75, 25],
-      backgroundColor: [
-        'rgba(255, 92, 92, 0.80)',
-        'rgba(60, 200, 120, 0.80)'
-      ],
-      borderWidth: 0
-    }]
-  },
-  options: {
-    responsive:true,
-    maintainAspectRatio:false,
-    plugins:{
-      legend:{ labels:{ color:axisColor } }
+  new Chart(document.getElementById('impact2Chart'), {
+    type:'line',
+    data:{
+      labels:['Сада','1 година','3 године','5 година'],
+      datasets:[
+        {
+          label:'Домаћи производи',
+          data:[30,45,60,75],
+          borderColor:'#0a3f78',
+          backgroundColor:'rgba(10,63,120,0.2)',
+          tension:0.4
+        },
+        {
+          label:'Тржишна транспарентност',
+          data:[25,50,70,85],
+          borderColor:'#2e8b57',
+          backgroundColor:'rgba(46,139,87,0.2)',
+          tension:0.4
+        }
+      ]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false
     }
-  }
+  });
+
+  const axisColor = '#333';
+
+  new Chart(document.getElementById('marketStructureChart'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Велики системи', 'Мали и средњи домаћи учесници'],
+      datasets: [{
+        data: [75, 25],
+        backgroundColor: [
+          'rgba(255, 92, 92, 0.80)',
+          'rgba(60, 200, 120, 0.80)'
+        ],
+        borderWidth: 0
+      }]
+    },
+    options: {
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{ labels:{ color:axisColor } }
+      }
+    }
+  });
+
 });
-      
 </script>
 
 </body>
