@@ -1226,6 +1226,36 @@ window.addEventListener("load", () => {
       }
     }
   });
+new Chart(document.getElementById('reformImpactChart'), {
+  type:'bar',
+  data:{
+    labels:[
+      'Видљивост домаћих производа',
+      'Равноправност малих учесника',
+      'Информисаност потрошача',
+      'Тржишна транспарентност'
+    ],
+    datasets:[
+      {
+        label:'Пре реформе',
+        data:[30,25,35,28],
+        backgroundColor:'rgba(255,92,92,0.75)',
+        borderColor:'#ff5c5c',
+        borderWidth:2
+      },
+      {
+        label:'После реформе',
+        data:[80,75,85,82],
+        backgroundColor:'rgba(10,63,120,0.75)',
+        borderColor:'#0a3f78',
+        borderWidth:2
+      }
+    ]
+  },
+  options:{
+    responsive:true,
+    maintainAspectRatio:false
+  }
 
 });
 </script>
