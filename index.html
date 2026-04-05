@@ -194,23 +194,33 @@ header{
   background:#ffffff;
   color:#0a3f78;
 
-  padding:24px 30px;
+  padding:14px 22px; /* 👈 СМАЊЕНО */
   width:100%;
-  max-width:340px;
+  max-width:280px;   /* 👈 СМАЊЕНО */
 
-  border:1px solid rgba(10,63,120,0.18);
-  border-radius:4px;
+  border:1px solid rgba(10,63,120,0.25);
+  border-radius:6px;
 
-  box-shadow:0 12px 30px rgba(0,0,0,0.06);
+  box-shadow:0 6px 16px rgba(0,0,0,0.07);
 
   transition:0.2s ease;
 }
 
 .btn-highlight:hover{
-  background:#f8fafc;
+  background:#f5f8fc;
   transform:translateY(-2px);
 }
 
+.btn-title{
+  font-size:0.9rem; /* 👈 МАЊЕ */
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.btn-desc{
+  font-size:11px;
+  color:#666;
+}
 .btn-title{
   font-size:1rem;
   font-weight:700;
