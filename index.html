@@ -185,6 +185,44 @@ header{
   font-size:0.95rem;
   font-weight:700;
 }
+ .btn-highlight{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  background:#ffffff;
+  color:#0a3f78;
+
+  padding:20px 30px;
+  width:100%;
+  max-width:320px;
+
+  border:1px solid rgba(10,63,120,0.25);
+  border-top:4px solid #0a3f78;
+
+  border-radius:6px;
+
+  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+
+  transition:0.25s;
+}
+
+.btn-highlight:hover{
+  background:#f5f8fc;
+  transform:translateY(-2px);
+}
+
+.btn-title{
+  font-size:1rem;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.btn-desc{
+  font-size:12px;
+  color:#666;
+} 
 .btn-primary-big{
   background:#f4f6f8;
   color:#0a3f78;
@@ -469,20 +507,20 @@ header{
 
 <div class="top-buttons">
 
-<a href="uradili.html" class="btn-primary-big">
-ШТА СМО УРАДИЛИ
-</a>
-
-<div style="font-size:12px;color:#666;margin-top:6px;">
-Извештај о активностима и резултатима
-</div>
-
 <a href="prijavi.html" class="btn-main">
 ПРЕДСТАВКА ГРАЂАНИНА
 </a>
 
-<a href="inicijative.html" class="btn-lite">
-ЗАКОНИ И ПРОПИСИ
+<a href="uradili.html" class="btn-highlight">
+
+<div class="btn-title">
+ШТА СМО УРАДИЛИ
+</div>
+
+<div class="btn-desc">
+Извештај о активностима и резултатима
+</div>
+
 </a>
 
 </div>
