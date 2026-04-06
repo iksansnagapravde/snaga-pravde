@@ -169,59 +169,54 @@ header{
   margin-top:-80px;
 }
 
-.btn-lite{
-  background:#fff;
-  border:1px solid rgba(10,63,120,0.25);
-  padding:12px 24px;
-  font-size:0.85rem;
-  color:#0a3f78;
-  font-weight:600;
-}
+/* OSNOVNA VELIČINA (kao O NAMA) */
+.btn-lite,
+.btn-secondary{
+  width:auto;
+  max-width:none;
 
-.btn-main{
-  background:linear-gradient(180deg,#0a3f78,#08325e);
-  color:#fff;
-
-  width:100%;
-  max-width:340px; /* 👈 KLJUČNO (ista veličina kao „o nama“) */
-  margin:0 auto;
-
-  padding:22px 16px;
-
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:4px;
-
-  text-align:center;
-
-  font-weight:700;
-
-  border-radius:6px;
-
-  box-shadow:0 10px 25px rgba(10,63,120,0.22);
-
-  transition:0.25s ease;
-}
-.btn-primary-big{
-  background:#f4f6f8;
-  color:#0a3f78;
+  display:inline-block;
 
   padding:14px 26px;
   font-size:0.9rem;
   font-weight:700;
 
-  border:1px solid rgba(10,63,120,0.25);
+  text-align:center;
+
   border-radius:4px;
-
-  box-shadow:0 4px 12px rgba(0,0,0,0.06);
-
-  transition:0.2s ease;
 }
 
-.btn-primary-big:hover{
-  background:#eef2f6;
+/* GORNJE dugme */
+.btn-lite{
+  background:#fff;
+  border:1px solid rgba(10,63,120,0.25);
+  color:#0a3f78;
+}
+
+/* DONJE dugme */
+.btn-secondary{
+  background:#f4f6f8;
+  color:#0a3f78;
+  border:1px solid rgba(10,63,120,0.25);
+}
+
+/* 🔵 GLAVNO dugme (malo veće — fokus) */
+.btn-main{
+  background:var(--blue);
+  color:#fff;
+
+  width:auto;
+  max-width:none;
+
+  display:inline-block;
+
+  padding:18px 34px;   /* 👈 VEĆE od ostalih */
+  font-size:1rem;      /* 👈 malo veći tekst */
+  font-weight:700;
+
+  border-radius:4px;
+
+  box-shadow:0 10px 25px rgba(10,63,120,0.25);
 }
 /* GRID */
 .container{
@@ -507,11 +502,10 @@ header{
   </a>
 
   <a href="prijavi.html" class="btn-main">
-    <span class="title">ПРЕДСТАВКА ГРАЂАНИНА</span>
-    
+    ПРЕДСТАВКА ГРАЂАНИНА
   </a>
 
-  <a href="uradili.html" class="btn-primary-big">
+  <a href="uradili.html" class="btn-secondary">
     ШТА СМО УРАДИЛИ
   </a>
 
