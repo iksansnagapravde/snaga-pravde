@@ -179,77 +179,45 @@ header{
 }
 
 .btn-main{
-  background:var(--blue);
+  background:linear-gradient(180deg,#0a3f78,#08325e);
   color:#fff;
-  padding:16px 30px;
-  font-size:0.95rem;
-  font-weight:700;
-}
-.btn-highlight{
+
+  width:100%;
+  max-width:520px;
+  margin:0 auto;
+
+  padding:26px 20px;
+
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
+  gap:6px;
 
-  background:#ffffff;
-  color:#0a3f78;
+  text-align:center;
 
-  padding:14px 22px; /* 👈 СМАЊЕНО */
-  width:100%;
-  max-width:280px;   /* 👈 СМАЊЕНО */
+  font-weight:700;
 
-  border:1px solid rgba(10,63,120,0.25);
   border-radius:6px;
 
-  box-shadow:0 6px 16px rgba(0,0,0,0.07);
+  box-shadow:0 14px 35px rgba(10,63,120,0.25);
 
-  transition:0.2s ease;
+  transition:0.25s ease;
+}
+ .btn-main .icon{
+  font-size:20px;
+  opacity:0.9;
 }
 
-.btn-highlight:hover{
-  background:#f5f8fc;
-  transform:translateY(-2px);
+.btn-main .title{
+  font-size:1.1rem;
+  letter-spacing:0.5px;
 }
 
-.btn-title{
-  font-size:0.9rem; /* 👈 МАЊЕ */
-  font-weight:700;
-  margin-bottom:4px;
-}
-
-.btn-desc{
-  font-size:11px;
-  color:#666;
-}
-.btn-title{
-  font-size:1rem;
-  font-weight:700;
-  margin-bottom:6px;
-}
-
-.btn-desc{
-  font-size:12px;
-  color:#666;
+.btn-main .sub{
+  font-size:0.8rem;
+  opacity:0.85;
 } 
-.btn-primary-big{
-  background:#f4f6f8;
-  color:#0a3f78;
-
-  padding:16px 30px;
-  font-size:0.95rem;
-  font-weight:700;
-
-  border:1px solid rgba(10,63,120,0.25);
-  border-radius:4px;
-
-  box-shadow:0 4px 12px rgba(0,0,0,0.06);
-
-  transition:0.2s ease;
-}
-
-.btn-primary-big:hover{
-  background:#eef2f6;
-}
 /* GRID */
 .container{
   max-width:1150px;
