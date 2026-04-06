@@ -204,20 +204,25 @@ header{
 
   transition:0.25s ease;
 }
- .btn-main .icon{
-  font-size:20px;
-  opacity:0.9;
+.btn-primary-big{
+  background:#f4f6f8;
+  color:#0a3f78;
+
+  padding:14px 26px;
+  font-size:0.9rem;
+  font-weight:700;
+
+  border:1px solid rgba(10,63,120,0.25);
+  border-radius:4px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,0.06);
+
+  transition:0.2s ease;
 }
 
-.btn-main .title{
-  font-size:1.1rem;
-  letter-spacing:0.5px;
+.btn-primary-big:hover{
+  background:#eef2f6;
 }
-
-.btn-main .sub{
-  font-size:0.8rem;
-  opacity:0.85;
-} 
 /* GRID */
 .container{
   max-width:1150px;
@@ -497,16 +502,17 @@ header{
 
 <div class="top-buttons">
 
-<div class="top-buttons">
+  <a href="inicijative.html" class="btn-lite">
+    ЗАКОНИ И ПРОПИСИ
+  </a>
+
+  <a href="prijavi.html" class="btn-main">
+    <span class="title">ПРЕДСТАВКА ГРАЂАНИНА</span>
+    <span class="sub">ОТВОРИ ДОКУМЕНТ</span>
+  </a>
 
   <a href="uradili.html" class="btn-primary-big">
     ШТА СМО УРАДИЛИ
-  </a>
-
-  <a href="OBRAZAC_PREDSTAVKA_GRADJAN.pdf" target="_blank" class="btn-main">
-    <span class="icon">📄</span>
-    <span class="title">ПРЕДСТАВКА ГРАЂАНИНА</span>
-    <span class="sub">ОТВОРИ ДОКУМЕНТ</span>
   </a>
 
 </div>
