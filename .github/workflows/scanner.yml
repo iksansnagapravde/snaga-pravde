@@ -32,28 +32,37 @@ jobs:
           from email.utils import parsedate_to_datetime
 
           FEEDS = [
+              # DRŽAVNI / JAVNI
               ("RTS", "https://www.rts.rs/page/stories/sr/rss/1/vesti.html"),
               ("RTV", "https://www.rtv.rs/sr_lat/rss"),
               ("Tanjug", "https://www.tanjug.rs/rss"),
+              ("Beta", "https://beta.rs/rss"),
 
+              # DOMAĆI MEDIJI
               ("Blic", "https://www.blic.rs/rss/dnevne-vesti"),
               ("Kurir", "https://www.kurir.rs/rss"),
               ("Novosti", "https://www.novosti.rs/rss"),
               ("Politika", "https://www.politika.rs/rss"),
               ("B92", "https://www.b92.net/info/rss"),
-
               ("Informer", "https://informer.rs/rss"),
               ("Pink", "https://pink.rs/rss"),
-
               ("N1", "https://n1info.rs/feed/"),
               ("Nova", "https://nova.rs/feed/"),
               ("Danas", "https://www.danas.rs/feed/"),
               ("Insajder", "https://insajder.net/rss"),
+              ("Vreme", "https://www.vreme.com/feed/"),
+              ("NIN", "https://www.nin.rs/feed"),
+              ("Radar", "https://radar.nova.rs/feed/"),
+              ("Euronews Serbia", "https://www.euronews.rs/rss/srbija"),
+              ("FoNet", "https://fonet.rs/feed/"),
+              ("KTV", "https://ktv.rs/feed/"),
+
+              # ISTRAŽIVAČKI
               ("BIRN", "https://birn.rs/feed/"),
               ("CINS", "https://www.cins.rs/feed/"),
               ("KRIK", "https://www.krik.rs/feed/"),
-              ("Vreme", "https://www.vreme.com/feed/"),
 
+              # NVO / INSTITUCIJE
               ("EU Commission", "https://ec.europa.eu/commission/presscorner/api/rss"),
               ("EU Serbia", "https://europa.rs/feed/"),
               ("Council of Europe", "https://www.coe.int/en/web/portal/rss-news"),
@@ -63,16 +72,23 @@ jobs:
               ("Human Rights Watch", "https://www.hrw.org/rss/news"),
               ("Amnesty", "https://www.amnesty.org/en/latest/rss.xml"),
 
+              # MEĐUNARODNI
               ("Reuters", "https://www.reutersagency.com/feed/?best-topics=world&post_type=best"),
               ("BBC Serbian", "https://feeds.bbci.co.uk/serbian/rss.xml"),
               ("DW Balkan", "https://rss.dw.com/xml/rss-sr-all"),
-              ("Al Jazeera Balkans", "https://balkans.aljazeera.net/rss.xml")
+              ("Al Jazeera Balkans", "https://balkans.aljazeera.net/rss.xml"),
+              ("RSE Balkan", "https://www.slobodnaevropa.org/api/epiqq"),
+              ("VOA Balkan", "https://www.glasamerike.net/api/z-rqem"),
+              ("AP News", "https://apnews.com/hub/ap-top-news?output=rss"),
+              ("The Guardian World", "https://www.theguardian.com/world/rss"),
+              ("France24", "https://www.france24.com/en/rss")
           ]
 
           DOMESTIC_SOURCES = [
-              "RTS", "RTV", "Tanjug", "Blic", "Kurir", "Novosti", "Politika", "B92",
-              "Informer", "Pink", "N1", "Nova", "Danas", "Insajder",
-              "BIRN", "CINS", "KRIK", "Vreme"
+              "RTS", "RTV", "Tanjug", "Beta", "Blic", "Kurir", "Novosti", "Politika", "B92",
+              "Informer", "Pink", "N1", "Nova", "Danas", "Insajder", "Vreme",
+              "NIN", "Radar", "Euronews Serbia", "FoNet", "KTV",
+              "BIRN", "CINS", "KRIK"
           ]
 
           NGO_SOURCES = [
@@ -85,11 +101,13 @@ jobs:
           ]
 
           TOPIC_WORDS = [
+              # osnovno
               "korup", "коруп",
               "zloupotreb", "злоупотреб",
               "hapšen", "hapsenje", "hapšenja", "хапшењ", "ухапшен",
               "izvrš", "izvrs", "изврш", "dug", "дуг",
               "plata", "plate", "zarada", "зарада", "плата",
+              "primanja", "примања",
               "penzij", "пензи",
               "deca", "дет", "деца",
               "invalid", "инвалид",
@@ -104,7 +122,90 @@ jobs:
               "sloboda", "слобода",
               "medij", "медиј",
               "human rights",
-              "rule of law"
+              "rule of law",
+
+              # kriminal / mafija
+              "mafija", "мафија",
+              "kriminal", "криминал",
+              "organizovani kriminal", "организовани криминал",
+              "policija", "полиција",
+              "tužilaštvo", "tuzilastvo", "тужилаштво",
+              "mito", "мито",
+              "prevara", "превара",
+              "reket", "рекет",
+              "pranje novca", "прање новца",
+              "utaja poreza", "утаја пореза",
+              "zloupotreba službenog položaja", "злоупотреба службеног положаја",
+              "falsifikovanje dokumenata", "фалсификовање докумената",
+              "falsifikat", "фалсификат",
+              "pronevera", "проневера",
+
+              # socijalna prava
+              "socijalna pomoć", "социјална помоћ",
+              "socijalna davanja", "социјална давања",
+              "novčana pomoć", "новчана помоћ",
+              "socijalna ugroženost", "социјална угроженост",
+              "centar za socijalni rad", "центар за социјални рад",
+              "narodna kuhinja", "народна кухиња",
+              "siromaštvo", "сиромаштво",
+
+              # penzioneri / zarade
+              "penzioneri", "пензионери",
+              "minimalna penzija", "минимална пензија",
+              "invalidska penzija", "инвалидска пензија",
+              "minimalac", "минималац",
+              "minimalna zarada", "минимална зарада",
+              "neisplaćene zarade", "неисплаћене зараде",
+
+              # nasilje
+              "nasilje u porodici", "насиље у породици",
+              "porodično nasilje", "породично насиље",
+              "femicid", "фемицид",
+              "nasilje nad ženama", "насиље над женама",
+              "nasilje nad decom", "насиље над децом",
+              "vršnjačko nasilje", "вршњачко насиље",
+
+              # mediji / izbori
+              "sloboda medija", "слобода медија",
+              "cenzura", "цензура",
+              "pritisak na novinare", "притисак на новинаре",
+              "napad na novinare", "напад на новинаре",
+              "izborna krađa", "изборна крађа",
+              "birački spisak", "бирачки списак",
+              "izborna komisija", "изборна комисија",
+              "rik", "РИК",
+
+              # rad i stanovanje
+              "radni spor", "радни спор",
+              "mobing", "мобинг",
+              "otkaz", "отказ",
+              "deložacija", "деложација",
+              "stambeno pitanje", "стамбено питање",
+              "izvršitelj", "извршитељ",
+              "izvrsitelj", "извршитељ",
+
+              # pristupačnost i zaštita
+              "pristupačnost", "приступачност",
+              "osobe sa invaliditetom", "особе са инвалидитетом",
+              "zaštita dece", "заштита деце"
+          ]
+
+          BREAKING_WORDS = [
+              "breaking", "urgent", "alert", "hitno", "хитно", "ванредно",
+              "upozorenje", "упозорење", "vanredna sednica", "ванредна седница",
+              "saopštenje policije", "саопштење полиције"
+          ]
+
+          ALERT_WORDS = [
+              "mafija", "мафија",
+              "organizovani kriminal", "организовани криминал",
+              "pranje novca", "прање новца",
+              "mito", "мито",
+              "zloupotreba službenog položaja", "злоупотреба службеног положаја",
+              "falsifikovanje dokumenata", "фалсификовање докумената",
+              "korupcija", "корупција",
+              "tužilaštvo", "тужилаштво",
+              "uhapšen", "ухапшен"
           ]
 
           def clean_html(text):
@@ -132,7 +233,49 @@ jobs:
           def detect_category(text):
               t = (text or "").lower()
 
-              if "korup" in t or "тендер" in t:
+              if "nasilje u porodici" in t or "породично насиље" in t or "фемицид" in t:
+                  return "Насиље у породици"
+
+              if "socijalna ugroženost" in t or "социјална угроженост" in t or "siromaštvo" in t or "сиромаштво" in t:
+                  return "Социјална угроженост"
+
+              if "socijalna pomoć" in t or "социјална помоћ" in t or "socijalna davanja" in t or "социјална давања" in t:
+                  return "Социјална давања"
+
+              if "javne nabavke" in t or "јавне набавке" in t or "tender" in t or "тендер" in t:
+                  return "Јавне набавке"
+
+              if "zloupotreba službenog položaja" in t or "злоупотреба службеног положаја" in t:
+                  return "Злоупотреба положаја"
+
+              if "falsifikovanje dokumenata" in t or "фалсификовање докумената" in t or "falsifikat" in t or "фалсификат" in t:
+                  return "Фалсификовање докумената"
+
+              if "sloboda medija" in t or "слобода медија" in t or "cenzura" in t or "цензура" in t:
+                  return "Слобода медија"
+
+              if "radni spor" in t or "радни спор" in t or "mobing" in t or "мобинг" in t or "otkaz" in t or "отказ" in t:
+                  return "Радничка права"
+
+              if "penzij" in t or "пензи" in t:
+                  return "Пензионери"
+
+              if "plata" in t or "zarada" in t or "плата" in t or "примања" in t:
+                  return "Плате и зараде"
+
+              if "mafija" in t or "организовани криминал" in t:
+                  return "Организовани криминал"
+
+              if "kriminal" in t or "криминал" in t:
+                  return "Криминал"
+
+              if "policija" in t or "полиција" in t:
+                  return "Полиција"
+
+              if "tužilaštvo" in t or "тужилаштво" in t:
+                  return "Тужилаштво"
+
+              if "korup" in t or "коруп" in t:
                   return "Корупција"
 
               if "zloupotreb" in t or "злоупотреб" in t:
@@ -141,16 +284,10 @@ jobs:
               if "hapšen" in t or "hapsenje" in t or "хапшењ" in t or "ухапшен" in t:
                   return "Хапшења"
 
-              if "izvrš" in t or "dug" in t or "изврш" in t:
+              if "izvrš" in t or "dug" in t or "изврш" in t or "дуг" in t:
                   return "Извршења"
 
-              if "plata" in t or "zarada" in t or "плата" in t:
-                  return "Плате и зараде"
-
-              if "penzij" in t or "пензи" in t:
-                  return "Пензионери"
-
-              if "deca" in t or "дет" in t:
+              if "deca" in t or "дет" in t or "деца" in t:
                   return "Права деце"
 
               if "invalid" in t or "инвалид" in t:
@@ -159,10 +296,10 @@ jobs:
               if "manjin" in t or "мањин" in t:
                   return "Мањинска права"
 
-              if "pritvor" in t or "zatvor" in t or "притвор" in t:
+              if "pritvor" in t or "притвор" in t or "zatvor" in t or "затвор" in t:
                   return "Лишени слободе"
 
-              if "pravosu" in t or "суд" in t:
+              if "pravosu" in t or "правосу" in t or "суд" in t:
                   return "Правосуђе"
 
               if "socijal" in t or "социјал" in t:
@@ -189,11 +326,55 @@ jobs:
                       timeout=10
                   )
                   if r.status_code == 200:
-                      data = r.json()
-                      return data.get("translatedText", text)
+                      return r.json().get("translatedText", text)
               except Exception:
                   pass
               return text
+
+          def detect_breaking(text):
+              return contains_any(text, BREAKING_WORDS)
+
+          def detect_alert(text):
+              return contains_any(text, ALERT_WORDS)
+
+          def compute_priority(text, category, breaking, alert):
+              score = 0
+              t = (text or "").lower()
+
+              if breaking:
+                  score += 100
+              if alert:
+                  score += 60
+
+              if category == "Корупција":
+                  score += 30
+              elif category == "Злоупотребе":
+                  score += 28
+              elif category == "Хапшења":
+                  score += 26
+              elif category == "Правосуђе":
+                  score += 25
+              elif category == "Организовани криминал":
+                  score += 35
+              elif category == "Криминал":
+                  score += 24
+              elif category == "Социјална угроженост":
+                  score += 22
+              elif category == "Насиље у породици":
+                  score += 22
+              elif category == "Јавне набавке":
+                  score += 24
+
+              if "milion" in t or "милион" in t:
+                  score += 8
+              if "uhapšen" in t or "ухапшен" in t:
+                  score += 6
+              if "tužilaštvo" in t or "тужилаштво" in t:
+                  score += 6
+              if "policija" in t or "полиција" in t:
+                  score += 4
+
+              return score
 
           now = datetime.now(timezone.utc)
           cutoff = now - timedelta(days=30)
@@ -209,9 +390,7 @@ jobs:
                   link = (item.get("link") or "").strip()
                   summary = clean_html(item.get("summary") or item.get("description") or "")
 
-                  if not title or not link:
-                      continue
-                  if link in seen:
+                  if not title or not link or link in seen:
                       continue
 
                   blob = f"{title} {summary}"
@@ -220,17 +399,7 @@ jobs:
                   relevant_topic = contains_any(blob, TOPIC_WORDS)
 
                   if source in DOMESTIC_SOURCES:
-                      domestic_serbia_hint = any(x in blob.lower() for x in [
-                          "srbija", "srbij", "beograd", "београд", "србиј",
-                          "vlada", "skupština", "skupstina", "predsednik srbije",
-                          "ministarstvo", "tužilaštvo", "tuzilastvo", "ustavni sud",
-                          "vrhovni sud", "izborna komisija", "izvršitelj", "izvrsitelj",
-                          "penzioner", "penzija", "socijalna zaštita", "socijalna zastita",
-                          "javne nabavke", "korupcija", "pravosuđe", "pravosudje",
-                          "mediji u srbiji", "protest u srbiji", "hapšenje", "хапшење",
-                          "zloupotreba", "злоупотреба"
-                      ])
-                      if not (relevant_topic and domestic_serbia_hint):
+                      if not relevant_topic:
                           continue
                   else:
                       if not (relevant_serbia and relevant_topic):
@@ -246,6 +415,11 @@ jobs:
                   if is_english(title):
                       final_title = translate_to_serbian(title)
 
+                  category = detect_category(blob)
+                  breaking = detect_breaking(blob)
+                  alert = detect_alert(blob)
+                  priority = compute_priority(blob, category, breaking, alert)
+
                   collected.append({
                       "id": re.sub(r"[^a-zA-Z0-9]+", "-", link)[-60:],
                       "title": final_title,
@@ -254,11 +428,20 @@ jobs:
                       "datetime": dt.isoformat(),
                       "time": dt.strftime("%H:%M"),
                       "source": source,
-                      "category": detect_category(blob),
-                      "summary": ""
+                      "category": category,
+                      "summary": "",
+                      "breaking": breaking,
+                      "alert": alert,
+                      "priority": priority
                   })
 
-          collected.sort(key=lambda x: x["datetime"], reverse=True)
+          collected.sort(
+              key=lambda x: (
+                  x["priority"],
+                  x["datetime"]
+              ),
+              reverse=True
+          )
           collected = collected[:50]
 
           all_sources = sorted(list(set([x[0] for x in FEEDS] + NGO_SOURCES)))
