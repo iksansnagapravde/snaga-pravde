@@ -529,17 +529,8 @@ header{
 <section class="scanner-hero">
   <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
   <p>
-    Аутоматски избор најрелевантнијих наслова о Србији из домаћих и међународних извора —
-    људска права, корупција, правосуђе, социјална правда и права грађана.
-  </p>
-</section>
-
-<section class="card" style="margin-bottom:24px; text-align:center;">
-  <h3 style="color:#0a3f78; margin-bottom:12px;">ШТА ЈЕ СКЕНЕР СНАГЕ ПРАВДЕ</h3>
-  <p class="note" style="max-width:800px; margin:auto;">
-    Скенер Снаге Правде свакодневно прати најважније медијске објаве о Србији,
-    издваја теме од јавног интереса и приказује најновије релевантне наслове
-    са извором, датумом и простором за ваше анализе и коментаре.
+    Најрелевантнији наслови из домаћих и светских медија —
+    људска права, социјална правда, правосуђе, корупција, хапшења, медији, избори, страни наслови и важне теме о нашој земљи.
   </p>
 </section>
 
@@ -619,14 +610,13 @@ function saveComment(id, value){
 }
 
 function populateFilters(){
-  const categories = [...new Set(entries.map(e => e.category).filter(Boolean))].sort();
-  const sources = [...new Set(entries.map(e => e.source).filter(Boolean))].sort();
+  const categories = (window.allCategories || []).length
+      ? window.allCategories
+      : [...new Set(entries.map(e => e.category).filter(Boolean))].sort();
 
-  categoryFilter.innerHTML = '<option value="Све">Све категорије</option>' +
-    categories.map(c => `<option>${escapeHtml(c)}</option>`).join("");
-
-  sourceFilter.innerHTML = '<option value="Сви">Сви извори</option>' +
-    sources.map(s => `<option>${escapeHtml(s)}</option>`).join("");
+  const sources = (window.allSources || []).length
+      ? window.allSources
+      : [...new Set(entries.map(e => e.source).filter(Boolean))].sort();
 }
 
 function renderEntries(){
@@ -704,7 +694,11 @@ async function loadEntries(){
     const res = await fetch("scanner-data.json", {cache:"no-store"});
     if(!res.ok) throw new Error("Неуспешно учитавање JSON-а.");
     const data = await res.json();
+
     entries = Array.isArray(data.entries) ? data.entries : [];
+    window.allSources = data.all_sources || [];
+    window.allCategories = data.all_categories || [];
+
     populateFilters();
     renderEntries();
   }catch(e){
