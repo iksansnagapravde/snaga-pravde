@@ -118,20 +118,43 @@ jobs:
                           pass
               return datetime.now(timezone.utc)
 
-          def detect_category(text):
-              t = text.lower()
-              if "korup" in t: return "Корупција"
-              if "izvrš" in t or "dug" in t: return "Извршења"
-              if "plata" in t or "zarada" in t: return "Плате"
-              if "penzij" in t: return "Пензионери"
-              if "deca" in t or "дет" in t: return "Права деце"
-              if "invalid" in t: return "Инвалидитет"
-              if "manjin" in t: return "Мањинска права"
-              if "pritvor" in t or "zatvor" in t: return "Лишени слободе"
-              if "pravosu" in t: return "Правосуђе"
-              if "tender" in t: return "Јавне набавке"
-              if "izbor" in t: return "Избори"
-              return "Људска права"
+def detect_category(text):
+    t = text.lower()
+
+    if "korup" in t or "тендер" in t:
+        return "Корупција"
+
+    if "izvrš" in t or "dug" in t or "изврш" in t:
+        return "Извршења"
+
+    if "plata" in t or "zarada" in t or "плата" in t:
+        return "Плате и зараде"
+
+    if "penzij" in t or "пензи" in t:
+        return "Пензионери"
+
+    if "deca" in t or "дет" in t:
+        return "Права деце"
+
+    if "invalid" in t or "инвалид" in t:
+        return "Инвалидитет"
+
+    if "manjin" in t or "мањин" in t:
+        return "Мањинска права"
+
+    if "pritvor" in t or "zatvor" in t or "притвор" in t:
+        return "Лишени слободе"
+
+    if "pravosu" in t or "суд" in t:
+        return "Правосуђе"
+
+    if "socijal" in t or "социјал" in t:
+        return "Социјална права"
+
+    if "izbor" in t or "избор" in t:
+        return "Избори"
+
+    return "Људска права"
 
           def is_english(text):
               return re.match(r'^[A-Za-z0-9 ,.\':;!?()"/\\-]+$', text or "") is not None
@@ -176,11 +199,21 @@ jobs:
 
                   blob = f"{title} {summary}"
 
-                  if not contains_any(blob,SERBIA_WORDS):
-                      continue
+relevant_serbia = contains_any(blob, SERBIA_WORDS)
+relevant_topic = contains_any(blob, TOPIC_WORDS)
 
-                  if not contains_any(blob,TOPIC_WORDS):
-                      continue
+domestic_sources = [
+    "RTS","RTV","Tanjug","Blic","Kurir","Novosti","Politika","B92",
+    "Informer","Pink","N1","Nova","Danas","Insajder",
+    "BIRN","CINS","KRIK","Vreme"
+]
+
+if source in domestic_sources:
+    if not relevant_topic:
+        continue
+else:
+    if not (relevant_serbia and relevant_topic):
+        continue
 
                   dt = parse_date(item)
                   if dt < cutoff:
