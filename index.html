@@ -239,94 +239,116 @@ header{
 
 /* CARDS — PELCER */
 
-  font-size:0.75rem;
-  line-height:1.45;
+  /* =========================
+   CARDS — CEO KOMPLETAN BLOK
+========================= */
+
+.card{
+  position:relative;
+  padding:22px;
+  background:#1F3550;
+  color:#ffffff;
+  border-radius:6px;
+  border:1px solid rgba(255,255,255,0.04);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  transition:all 0.25s ease;
+  cursor:pointer;
+  overflow:hidden;
 }
-/* PLAVA LINIJA */
-.card-top-line{
+
+.card:hover{
+  transform:translateY(-2px);
+  background:#1A2E46;
+  box-shadow:0 10px 22px rgba(0,0,0,0.12);
+}
+
+.card:active{
+  transform:scale(0.98);
+}
+
+.card::after{
+  content:"→";
   position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:6px;
-  background:#4da6ff;
+  right:18px;
+  bottom:18px;
+  font-size:14px;
+  color:rgba(255,255,255,0.35);
+  transition:0.25s;
 }
 
+.card:hover::after{
+  transform:translateX(4px);
+  color:rgba(255,255,255,0.7);
+}
+
+.card h3{
+  font-size:13px;
+  font-weight:600;
+  line-height:1.45;
+  margin-bottom:10px;
+  color:#ffffff;
+}
+
+.card p{
+  font-size:0.72rem;
+  line-height:1.55;
+  color:#D6DEE8;
+}
+
+/* CARD BUTTON */
 .card-btn{
-  color:#C78A2C;
-}
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:0.5px;
-
-  color:#0a3f78;
-
+  margin-top:16px;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.4px;
+  color:#D8A94A;
   display:inline-flex;
   align-items:center;
   gap:6px;
-
+  text-transform:uppercase;
   transition:0.25s;
 }
-.card-btn{
-  margin-top:18px;
 
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:0.5px;
-
-  color:#0a3f78;
-
-  display:inline-flex;
-  align-items:center;
-  gap:6px;
-
-  transition:0.25s;
-}
 .card-btn::after{
   content:"→";
-  font-size:14px;
+  font-size:13px;
   transition:0.25s;
 }
 
 .card-btn:hover{
-  color:#08325e;
+  color:#F0C46A;
 }
 
 .card-btn:hover::after{
   transform:translateX(4px);
 }
 
-/* hover ide odvojeno */
-.card-btn:hover{
-  background:#08325e;
-}
-  text-align:center;
-  padding:12px;
-
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:0.5px;
-  text-transform:uppercase;
-}  
-/* INTRO CARD (PRVA KARTICA — NEKLIKABILNA) */
+/* INTRO CARD — PRVA KARTICA */
 .intro-card{
   cursor:default;
-  box-shadow:0 4px 14px rgba(0,0,0,0.04);
-  border-top:1px solid rgba(10,63,120,0.2);
-  background:linear-gradient(180deg,#ffffff,#f7f9fc);
+  background:#2A4461;
+  color:#ffffff;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* ugasi hover */
 .intro-card:hover{
   transform:none;
-  box-shadow:0 4px 14px rgba(0,0,0,0.04);
-  border-top:1px solid rgba(10,63,120,0.2);
+  background:#2A4461;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* ugasi strelicu */
 .intro-card::after{
   display:none;
 }
+
+.intro-card h3{
+  color:#ffffff;
+}
+
+.intro-card p{
+  color:#D6DEE8;
+}
+
 
 
 
