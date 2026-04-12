@@ -238,26 +238,25 @@ header{
 }
 
 /* =========================
-   CARDS
+   PREMIUM WHITE CARDS
 ========================= */
 
 .card{
-  position:relative;
-  padding:22px;
-  background:#0a3f78;
-  color:#ffffff;
-  border-radius:6px;
-  border:1px solid rgba(255,255,255,0.04);
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
-  transition:all 0.25s ease;
+  background:#f5f5f7;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.05);
+  transition:all 0.28s ease;
   cursor:pointer;
+  color:#111;
+  position:relative;
+  display:block;
   overflow:hidden;
 }
 
 .card:hover{
-  transform:translateY(-2px);
-  background:#08325e;
-  box-shadow:0 10px 22px rgba(0,0,0,0.12);
+  transform:translateY(-4px);
+  box-shadow:0 16px 30px rgba(0,0,0,0.08);
 }
 
 .card:active{
@@ -267,84 +266,78 @@ header{
 .card::after{
   content:"→";
   position:absolute;
-  right:18px;
-  bottom:18px;
-  font-size:14px;
-  color:rgba(255,255,255,0.35);
+  right:24px;
+  bottom:24px;
+  font-size:18px;
+  color:#0a3f78;
   transition:0.25s;
 }
 
 .card:hover::after{
   transform:translateX(4px);
-  color:rgba(255,255,255,0.7);
 }
 
+/* GLAVNI NASLOV */
 .card h3{
-  font-size:13px;
-  font-weight:600;
-  line-height:1.45;
-  margin-bottom:10px;
-  color:#ffffff;
+  font-size:28px;
+  line-height:1.18;
+  font-weight:700;
+  margin-bottom:14px;
+  color:#111;
 }
 
+/* PODNASLOV */
 .card p{
-  font-size:0.72rem;
-  line-height:1.55;
-  color:#D6DEE8;
+  font-size:18px;
+  line-height:1.6;
+  font-weight:400;
+  color:#555;
 }
 
-/* CARD BUTTON */
+/* CTA LINK */
 .card-btn{
-  margin-top:16px;
-  font-size:10px;
+  margin-top:22px;
+  font-size:15px;
   font-weight:600;
-  letter-spacing:0.4px;
-  color:#D8A94A;
+  color:#0a3f78;
   display:inline-flex;
   align-items:center;
-  gap:6px;
-  text-transform:uppercase;
-  transition:0.25s;
+  gap:8px;
+  text-transform:none;
 }
 
 .card-btn::after{
   content:"→";
-  font-size:13px;
+  font-size:16px;
   transition:0.25s;
 }
 
-.card-btn:hover{
-  color:#F0C46A;
-}
-
-.card-btn:hover::after{
+.card:hover .card-btn::after{
   transform:translateX(4px);
 }
 
-/* INTRO CARD — PRVA KARTICA */
+/* INTRO CARD — ISTA KAO OSTALE */
 .intro-card{
-  cursor:default;
-  background:#0a3f78 !important;
-  color:#ffffff;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  background:#f5f5f7 !important;
+  color:#111 !important;
+  cursor:pointer;
 }
 
 .intro-card:hover{
-  transform:none;
-  background:#0a3f78 !important;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  transform:translateY(-4px);
+  background:#f5f5f7 !important;
 }
 
 .intro-card::after{
-  display:none;
+  display:block;
 }
 
 .intro-card h3{
-  color:#ffffff;
+  color:#111 !important;
 }
 
 .intro-card p{
-  color:#D6DEE8;
+  color:#555 !important;
 }
 
 
