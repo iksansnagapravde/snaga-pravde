@@ -535,6 +535,69 @@ header{
   padding:20px;
   color:#666;
 } 
+/* REČ PREDSTAVNIKA */
+.stav-section{
+  margin-top:34px;
+  background:rgba(255,255,255,0.97);
+  border-radius:24px;
+  padding:26px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+.stav-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.stav-head h2{
+  font-size:1.05rem;
+  color:#0a3f78;
+}
+
+.stav-card{
+  background:#f5f5f7;
+  border-radius:18px;
+  padding:22px;
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.stav-title{
+  font-size:1.15rem;
+  color:#0a3f78;
+  margin-bottom:12px;
+  font-weight:700;
+}
+
+.stav-meta{
+  font-size:0.82rem;
+  color:#777;
+  margin-bottom:16px;
+}
+
+.stav-text{
+  font-size:0.95rem;
+  line-height:1.8;
+  color:#222;
+  white-space:pre-line;
+}
+
+.stav-author{
+  margin-top:20px;
+  padding-top:14px;
+  border-top:1px solid rgba(0,0,0,0.08);
+  font-size:0.88rem;
+  color:#555;
+}
+
+.stav-empty{
+  text-align:center;
+  color:#666;
+  padding:20px;
+}  
 </style>
 </head>
 
@@ -678,6 +741,15 @@ header{
     <div class="home-scanner-empty">Учитавање наслова...</div>
   </div>
 </section>
+  <section class="stav-section">
+  <div class="stav-head">
+    <h2>РЕЧ ПРЕДСТАВНИКА ИКСАН СНАГА ПРАВДЕ</h2>
+  </div>
+
+  <div id="stavContainer" class="stav-empty">
+    Учитавање текста...
+  </div>
+</section>
 <div class="social-bar" id="socialBar">
 
 <a href="https://www.tiktok.com/@snagapravde.rs" target="_blank">
@@ -775,6 +847,39 @@ loadHomeScannerPreview();
 setInterval(() => {
   loadHomeScannerPreview();
 }, 60000); 
+ async function loadStavPredstavnika(){
+  const container = document.getElementById("stavContainer");
+  if(!container) return;
+
+  try{
+    const res = await fetch("stav-data.json", { cache: "no-store" });
+    if(!res.ok) throw new Error();
+
+    const data = await res.json();
+
+    if(!data.title || !data.text){
+      container.innerHTML =
+        '<div class="stav-empty">Тренутно нема објављеног става.</div>';
+      return;
+    }
+
+    container.innerHTML = `
+      <article class="stav-card">
+        <div class="stav-title">${data.title}</div>
+        <div class="stav-text">${data.text}</div>
+        <div class="stav-meta">
+          Дејан Тадић · Иксан Снага правде · ${data.date || ""}
+        </div>
+      </article>
+    `;
+  } catch(e){
+    container.innerHTML =
+      '<div class="stav-empty">Није могуће учитати текст.</div>';
+  }
+}
+
+loadStavPredstavnika();
+setInterval(loadStavPredstavnika, 60000); 
 </script>
 
 </body>
