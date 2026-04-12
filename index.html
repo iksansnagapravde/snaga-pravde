@@ -735,10 +735,29 @@ window.addEventListener("load", () => {
 container.innerHTML = latest.map(item => `
   <article class="home-scanner-item">
     <div class="home-scanner-meta">
+
       <span class="home-scanner-badge">${item.source || ""}</span>
+
+      ${item.category ? `
+      <span class="home-scanner-badge" style="background:#eef4ff;color:#0a3f78;">
+        ${item.category}
+      </span>` : ""}
+
       <span class="home-scanner-badge">${item.date || ""}</span>
       <span class="home-scanner-badge">${item.time || ""}</span>
+
+      ${item.breaking ? `
+      <span class="home-scanner-badge" style="background:#ff2d2d;color:#fff;font-weight:700;">
+        BREAKING
+      </span>` : ""}
+
+      ${item.alert ? `
+      <span class="home-scanner-badge" style="background:#ff8c00;color:#fff;font-weight:700;">
+        ALERT
+      </span>` : ""}
+
     </div>
+
     <a href="${item.url || "#"}" target="_blank" rel="noopener" class="home-scanner-title">
       ${item.title || ""}
     </a>
