@@ -1,12 +1,84 @@
 {
   "entries": [
     {
-      "id": "primer-1",
-      "title": "Овде ће аутоматски доћи релевантан наслов о Србији",
-      "url": "https://example.com",
+      "id": "region-5924534-izbori-madjarska-orban-madjar-fides-tisa-html",
+      "title": "Орбанов Фидес или Мађарова Тиса – излазност знатно виша него на претходним изборима",
+      "url": "https://www.rts.rs/vesti/region/5924534/izbori-madjarska-orban-madjar-fides-tisa.html",
       "date": "2026-04-12",
-      "source": "Пример извора",
+      "source": "RTS",
+      "category": "Избори и грађанске слободе",
+      "summary": ""
+    },
+    {
+      "id": "ovcu-i-boru-sta-je-recept-za-odbranu-izborne-volje-gradjana-",
+      "title": "Pitali smo studente u Kuli, Aranđelovcu i Boru šta je recept za odbranu izborne volje građana",
+      "url": "https://nova.rs/vesti/politika/pitali-smo-studente-u-kuli-arandjelovcu-i-boru-sta-je-recept-za-odbranu-izborne-volje-gradjana/",
+      "date": "2026-04-12",
+      "source": "Nova",
+      "category": "Избори и грађанске слободе",
+      "summary": ""
+    },
+    {
+      "id": "aspise-predsednicke-izbore-sve-uloge-stavlja-na-jednu-kartu-",
+      "title": "Boris Tadić: Ako Vučić raspiše predsedničke izbore sve uloge stavlja na jednu kartu",
+      "url": "https://nova.rs/vesti/politika/boris-tadic-ako-vucic-raspise-predsednicke-izbore-sve-uloge-stavlja-na-jednu-kartu/",
+      "date": "2026-04-12",
+      "source": "Nova",
+      "category": "Избори и грађанске слободе",
+      "summary": ""
+    },
+    {
+      "id": "-jelena-krcedinac-marks-odlazak-lekara-srbija-odliv-mozgova-",
+      "title": "Lekarka koja je otišla iz Srbije, jer nije imala drugi izbor: U svojoj zemlji nisam imala \"vezu\", u Americi su mi sva vrata bila otvorena",
+      "url": "https://n1info.rs/vesti/dr-jelena-krcedinac-marks-odlazak-lekara-srbija-odliv-mozgova/",
+      "date": "2026-04-12",
+      "source": "N1",
+      "category": "Избори и грађанске слободе",
+      "summary": ""
+    },
+    {
+      "id": "bija-da-nezavisna-posmatracka-misija-prati-izbore-19-aprila-",
+      "title": "Zašto Lekarska komora odbija da nezavisna posmatračka misija prati izbore 19. aprila?",
+      "url": "https://www.danas.rs/vesti/drustvo/nismo-sigurni-da-ce-glas-koji-dajemo-otici-gde-treba-zasto-lekarska-komora-odbija-da-nezavisna-posmatracka-misija-prati-izbore-19-aprila/",
+      "date": "2026-04-12",
+      "source": "Danas",
+      "category": "Јавне набавке и инфраструктурни пројекти",
+      "summary": ""
+    },
+    {
+      "id": "tps-www-danas-rs-vesti-politika-intervju-boris-tadic-izbori-",
+      "title": "INTERVJU Boris Tadić: Vučić pred izuzetno teškom odlukom, ako raspiše i predsedničke izbore sve uloge stavlja na jednu kartu",
+      "url": "https://www.danas.rs/vesti/politika/intervju-boris-tadic-izbori/",
+      "date": "2026-04-12",
+      "source": "Danas",
       "category": "Социјална права",
+      "summary": ""
+    },
+    {
+      "id": "ndustriju-posle-udara-na-nis-ali-pitanje-koliko-ce-jos-dugo-",
+      "title": "Grande Panda blago oporavila industriju posle udara na NIS, ali pitanje koliko će još dugo",
+      "url": "https://www.danas.rs/vesti/ekonomija/grande-panda-blago-oporavila-industriju-posle-udara-na-nis-ali-pitanje-koliko-ce-jos-dugo/",
+      "date": "2026-04-12",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": ""
+    },
+    {
+      "id": "-zivot-beg-u-prirodu-3-vodopada-u-srbiji-koja-oduzimaju-dah-",
+      "title": "Beg u prirodu: 3 vodopada u Srbiji koja oduzimaju dah",
+      "url": "https://www.danas.rs/zivot/beg-u-prirodu-3-vodopada-u-srbiji-koja-oduzimaju-dah/",
+      "date": "2026-04-12",
+      "source": "Danas",
+      "category": "Избори и грађанске слободе",
+      "summary": ""
+    },
+    {
+      "id": "-vesti-region-5924605-orban-madjarska-izbori-budimpesta-html",
+      "title": "Избори у Мађарској – Трамп за Орбана, Брисел подржава Мађара",
+      "url": "https://www.rts.rs/vesti/region/5924605/orban-madjarska-izbori-budimpesta.html",
+      "date": "2026-04-11",
+      "source": "RTS",
+      "category": "Избори и грађанске слободе",
       "summary": ""
     }
   ]
