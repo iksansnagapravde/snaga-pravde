@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install feedparser python-dateutil
+      - run: pip install feedparser python-dateutil requests
 
       - name: Build scanner-data.json
         run: |
@@ -27,28 +27,25 @@ jobs:
           import json
           import re
           import feedparser
+          import requests
           from datetime import datetime, timezone, timedelta
           from email.utils import parsedate_to_datetime
 
           FEEDS = [
 
-          # SRBIJA DRŽAVNI / GLAVNI
           ("RTS","https://www.rts.rs/page/stories/sr/rss/1/vesti.html"),
           ("RTV","https://www.rtv.rs/sr_lat/rss"),
           ("Tanjug","https://www.tanjug.rs/rss"),
 
-          # KOMERCIJALNI
           ("Blic","https://www.blic.rs/rss/dnevne-vesti"),
           ("Kurir","https://www.kurir.rs/rss"),
           ("Novosti","https://www.novosti.rs/rss"),
           ("Politika","https://www.politika.rs/rss"),
           ("B92","https://www.b92.net/info/rss"),
 
-          # PROVLADINI
           ("Informer","https://informer.rs/rss"),
           ("Pink","https://pink.rs/rss"),
 
-          # NEZAVISNI
           ("N1","https://n1info.rs/feed/"),
           ("Nova","https://nova.rs/feed/"),
           ("Danas","https://www.danas.rs/feed/"),
@@ -58,7 +55,6 @@ jobs:
           ("KRIK","https://www.krik.rs/feed/"),
           ("Vreme","https://www.vreme.com/feed/"),
 
-          # EU / UN / INTERNATIONAL
           ("EU Commission","https://ec.europa.eu/commission/presscorner/api/rss"),
           ("EU Serbia","https://europa.rs/feed/"),
           ("Council of Europe","https://www.coe.int/en/web/portal/rss-news"),
@@ -68,7 +64,6 @@ jobs:
           ("Human Rights Watch","https://www.hrw.org/rss/news"),
           ("Amnesty","https://www.amnesty.org/en/latest/rss.xml"),
 
-          # FOREIGN MEDIA
           ("Reuters","https://www.reutersagency.com/feed/?best-topics=world&post_type=best"),
           ("BBC Serbian","https://feeds.bbci.co.uk/serbian/rss.xml"),
           ("DW Balkan","https://rss.dw.com/xml/rss-sr-all"),
@@ -125,7 +120,6 @@ jobs:
 
           def detect_category(text):
               t = text.lower()
-
               if "korup" in t: return "Корупција"
               if "izvrš" in t or "dug" in t: return "Извршења"
               if "plata" in t or "zarada" in t: return "Плате"
@@ -138,6 +132,28 @@ jobs:
               if "tender" in t: return "Јавне набавке"
               if "izbor" in t: return "Избори"
               return "Људска права"
+
+          def is_english(text):
+              return re.match(r'^[A-Za-z0-9 ,.\':;!?()"/\\-]+$', text or "") is not None
+
+          def translate_to_serbian(text):
+              try:
+                  r = requests.post(
+                      "https://libretranslate.de/translate",
+                      data={
+                          "q": text,
+                          "source": "en",
+                          "target": "sr",
+                          "format": "text"
+                      },
+                      timeout=10
+                  )
+                  if r.status_code == 200:
+                      data = r.json()
+                      return data.get("translatedText", text)
+              except:
+                  pass
+              return text
 
           now = datetime.now(timezone.utc)
           cutoff = now - timedelta(days=10)
@@ -172,9 +188,8 @@ jobs:
 
                   seen.add(link)
 
-                  # EN marker
-                  if re.match(r'^[A-Za-z0-9 ,.\'-]+$', title):
-                      title = "[EN] " + title
+                  if is_english(title):
+                      title = translate_to_serbian(title)
 
                   collected.append({
                       "id": re.sub(r"[^a-zA-Z0-9]+","-",link)[-60:],
@@ -190,7 +205,7 @@ jobs:
           collected = collected[:20]
 
           with open("scanner-data.json","w",encoding="utf-8") as f:
-              json.dump({"entries": collected},f,ensure_ascii=False,indent=2)
+              json.dump({"entries": collected,f,ensure_ascii=False,indent=2)
           PY
 
       - name: Commit changes
