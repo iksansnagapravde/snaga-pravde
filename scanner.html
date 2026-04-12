@@ -507,38 +507,76 @@ function populateSourcesDirectory(){
 }
 
 function renderEntries(){
-  const q=searchInput.value.trim().toLowerCase();
+  const q = searchInput.value.trim().toLowerCase();
 
-  let filtered=[...entries];
+  let filtered = [...entries];
 
-  if(activeSource!=="Сви"){
-    filtered=filtered.filter(e=>e.source===activeSource);
+  if(activeSource !== "Сви"){
+    filtered = filtered.filter(e => e.source === activeSource);
   }
 
   if(q){
-    filtered=filtered.filter(e=>
-      (e.title||"").toLowerCase().includes(q) ||
-      (e.source||"").toLowerCase().includes(q)
+    filtered = filtered.filter(e =>
+      (e.title || "").toLowerCase().includes(q) ||
+      (e.source || "").toLowerCase().includes(q)
     );
   }
 
-  entriesCount.textContent=`${filtered.length} наслова`;
+  entriesCount.textContent = `${filtered.length} наслова`;
 
-  entriesList.innerHTML=filtered.map(e=>`
+  if(!filtered.length){
+    entriesList.innerHTML = `
+      <div class="empty-state">
+        Тренутно нема доступних наслова.
+      </div>
+    `;
+    return;
+  }
+
+  entriesList.innerHTML = filtered.map(e => `
     <article class="entry">
-      <span class="badge">${escapeHtml(e.source||"Без извора")}</span>
-      <a class="entry-title" href="${e.url}" target="_blank">${escapeHtml(e.title)}</a>
-      <div class="entry-meta">${formatDateTime(e.datetime||e.date,e.time)}</div>
+
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+        <span class="badge">${escapeHtml(e.source || "Без извора")}</span>
+
+        ${e.category ? `
+          <span class="badge" style="background:#eef4ff;color:#0a3f78;">
+            ${escapeHtml(e.category)}
+          </span>
+        ` : ""}
+
+        ${e.breaking ? `
+          <span class="badge" style="background:#ff2d2d;color:#fff;font-weight:700;">
+            BREAKING
+          </span>
+        ` : ""}
+
+        ${e.alert ? `
+          <span class="badge" style="background:#ff8c00;color:#fff;font-weight:700;">
+            ALERT
+          </span>
+        ` : ""}
+      </div>
+
+      <a class="entry-title" href="${e.url}" target="_blank">
+        ${escapeHtml(e.title)}
+      </a>
+
+      <div class="entry-meta">
+        ${formatDateTime(e.datetime || e.date, e.time)}
+      </div>
 
       <div class="entry-comment">
         <h4>ВАШ РЕЗИМЕ / КОМЕНТАР / ПРЕДЛОГ</h4>
-        <textarea data-id="${e.id}">${comments[e.id]||""}</textarea>
+        <textarea data-id="${e.id}">${comments[e.id] || ""}</textarea>
+
         <div class="comment-actions">
           <button class="button button-primary" onclick="saveEntryComment('${e.id}')">
             САЧУВАЈ КОМЕНТАР
           </button>
         </div>
       </div>
+
     </article>
   `).join("");
 }
