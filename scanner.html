@@ -12,13 +12,17 @@
 <style>
 :root{
   --blue:#0a3f78;
+  --blue-dark:#082f5a;
   --orange:#ff5a1f;
   --text:#111;
-  --line:rgba(0,0,0,0.12);
-  --soft:#f5f5f7;
+  --muted:#5d6673;
+  --line:rgba(0,0,0,0.10);
+  --soft:#f5f6f8;
   --soft-blue:#eef4ff;
-  --danger:#ff2d2d;
-  --alert:#ff8c00;
+  --danger:#e53935;
+  --alert:#ff9800;
+  --white:#fff;
+  --shadow:0 12px 32px rgba(0,0,0,0.06);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -38,13 +42,13 @@ body::before{
   inset:0;
   z-index:-1;
   background:url('lady-justice-hero.webp') center top / cover no-repeat;
-  animation:goddessReveal 1.3s ease-out both;
+  animation:goddessReveal 1.2s ease-out both;
 }
 
 @keyframes goddessReveal{
   0%{
-    transform:translate(80px,100px) scale(1.08);
-    opacity:0.8;
+    transform:translate(60px,80px) scale(1.05);
+    opacity:.85;
   }
   100%{
     transform:translate(0,0) scale(1);
@@ -58,6 +62,7 @@ header{
   background:#fff;
   border-bottom:1px solid var(--line);
   z-index:1000;
+  backdrop-filter:blur(8px);
 }
 
 .head{
@@ -90,12 +95,12 @@ header{
 }
 
 .brand-text .top{
-  font-size:0.6rem;
+  font-size:.6rem;
   color:#777;
 }
 
 .brand-text .main{
-  font-size:0.78rem;
+  font-size:.78rem;
   font-weight:600;
   white-space:nowrap;
 }
@@ -111,7 +116,7 @@ header{
   background:var(--orange);
   color:#fff;
   padding:10px 20px;
-  font-size:0.75rem;
+  font-size:.75rem;
   font-weight:700;
 }
 
@@ -139,6 +144,7 @@ header{
   border:1px solid var(--line);
   display:none;
   min-width:290px;
+  box-shadow:var(--shadow);
 }
 
 .menu.open .dropdown{display:block}
@@ -146,14 +152,14 @@ header{
 .dropdown a{
   display:block;
   padding:10px 14px;
-  font-size:0.85rem;
+  font-size:.85rem;
   border-bottom:1px solid var(--line);
 }
 
 .dropdown a:last-child{border:none}
 
 .hero{
-  height:40px;
+  height:38px;
 }
 
 .container{
@@ -163,57 +169,114 @@ header{
 }
 
 .panel{
-  background:rgba(255,255,255,0.96);
-  border-radius:24px;
-  padding:28px;
-  box-shadow:0 12px 30px rgba(0,0,0,0.07);
+  background:rgba(255,255,255,.96);
+  border-radius:28px;
+  padding:24px;
+  box-shadow:0 14px 36px rgba(0,0,0,.08);
 }
 
 /* HERO */
-.scanner-hero-card{
-  margin-bottom:22px;
+.hero-shell{
+  margin-bottom:18px;
 }
 
-.scanner-hero-box{
-  background:linear-gradient(180deg,#ffffff 0%, #f7f9fc 100%);
-  border-radius:26px;
-  padding:34px 26px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.06);
-  text-align:center;
+.hero-card{
+  background:linear-gradient(135deg,rgba(255,255,255,.98) 0%,rgba(248,250,252,.98) 100%);
+  border-radius:28px;
+  box-shadow:var(--shadow);
+  border:1px solid rgba(10,63,120,.06);
+  padding:26px 26px 20px;
 }
 
-.scanner-hero-box h1{
-  font-size:2rem;
+.hero-top{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:20px;
+  align-items:center;
+}
+
+.hero-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.9px;
+  color:var(--blue);
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.hero-kicker::before{
+  content:"";
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--danger);
+  box-shadow:0 0 0 4px rgba(229,57,53,.12);
+}
+
+.hero-text h1{
+  font-size:1.9rem;
+  line-height:1.02;
   color:var(--blue);
   margin-bottom:10px;
 }
 
-.scanner-hero-box h2{
-  font-size:1.15rem;
-  color:#234;
-  margin-bottom:18px;
-  font-weight:600;
+.hero-text p{
+  font-size:.96rem;
+  line-height:1.62;
+  color:#46505c;
+  max-width:620px;
 }
 
-/* DETAILS PANELS */
+.hero-stat{
+  background:linear-gradient(180deg,#0a3f78 0%,#0d4b8f 100%);
+  color:#fff;
+  border-radius:24px;
+  padding:20px 22px;
+  box-shadow:0 12px 26px rgba(10,63,120,.18);
+}
+
+.hero-stat-label{
+  font-size:.72rem;
+  letter-spacing:.8px;
+  text-transform:uppercase;
+  opacity:.88;
+  margin-bottom:8px;
+}
+
+.hero-stat-title{
+  font-size:1.12rem;
+  line-height:1.4;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.hero-stat-sub{
+  font-size:.82rem;
+  line-height:1.55;
+  opacity:.92;
+}
+
 .info-toggle{
-  background:var(--soft);
+  margin-top:16px;
+  background:#f7f8fb;
+  border:1px solid rgba(10,63,120,.08);
   border-radius:20px;
-  padding:18px 20px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.05);
-  margin-bottom:22px;
+  padding:16px 18px;
 }
 
 .info-toggle summary{
   list-style:none;
   cursor:pointer;
-  font-size:1rem;
-  font-weight:700;
-  color:var(--blue);
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:12px;
+  color:var(--blue);
+  font-size:.98rem;
+  font-weight:700;
 }
 
 .info-toggle summary::-webkit-details-marker{display:none}
@@ -229,15 +292,15 @@ header{
   content:"−";
 }
 
-.info-toggle-content{
-  margin-top:16px;
+.info-toggle-body{
+  margin-top:14px;
 }
 
 .info-toggle-text{
-  font-size:0.88rem;
-  color:#666;
-  line-height:1.6;
-  margin-bottom:14px;
+  font-size:.86rem;
+  color:var(--muted);
+  line-height:1.65;
+  margin-bottom:12px;
 }
 
 .scanner-tags{
@@ -250,17 +313,17 @@ header{
   background:var(--soft-blue);
   color:var(--blue);
   border-radius:999px;
-  padding:10px 16px;
-  font-size:0.82rem;
+  padding:9px 14px;
+  font-size:.8rem;
   font-weight:600;
 }
 
-/* CARD */
+/* MAIN CARD */
 .card{
   background:var(--soft);
-  border-radius:20px;
+  border-radius:24px;
   padding:22px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  box-shadow:0 8px 22px rgba(0,0,0,.05);
 }
 
 .card + .card{
@@ -271,27 +334,23 @@ header{
   display:grid;
   grid-template-columns:1fr auto;
   gap:12px;
-  margin:0 0 18px;
-}
-
-@media(max-width:900px){
-  .toolbar{
-    grid-template-columns:1fr;
-  }
+  margin-bottom:18px;
 }
 
 .input{
   width:100%;
   background:#fff;
-  border:1px solid rgba(0,0,0,0.12);
-  border-radius:12px;
-  padding:12px 14px;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:16px;
+  padding:14px 16px;
+  font-size:.95rem;
+  color:#111;
 }
 
 .button{
   border:none;
-  border-radius:12px;
-  padding:10px 16px;
+  border-radius:16px;
+  padding:12px 16px;
   font-weight:700;
   cursor:pointer;
 }
@@ -299,7 +358,7 @@ header{
 .button-secondary{
   background:#fff;
   color:var(--blue);
-  border:1px solid rgba(10,63,120,0.18);
+  border:1px solid rgba(10,63,120,.18);
 }
 
 .entries-header{
@@ -312,43 +371,43 @@ header{
 }
 
 .entries-header h3{
-  font-size:1rem;
+  font-size:1.02rem;
   color:#111;
 }
 
 .entries-count{
-  font-size:0.86rem;
+  font-size:.86rem;
   color:#666;
 }
 
 .active-source-note{
-  font-size:0.9rem;
+  font-size:.9rem;
   color:var(--blue);
   margin-bottom:14px;
 }
 
-/* ENTRY */
+/* ENTRIES */
 .entry{
   background:#fff;
   border-radius:22px;
   padding:22px;
-  margin-bottom:18px;
-  border:1px solid rgba(0,0,0,0.04);
-  box-shadow:0 6px 18px rgba(0,0,0,0.04);
-  transition:all .25s ease;
+  margin-bottom:16px;
+  border:1px solid rgba(0,0,0,.04);
+  box-shadow:0 6px 18px rgba(0,0,0,.04);
+  transition:.25s ease;
 }
 
 .entry:hover{
   transform:translateY(-2px);
-  box-shadow:0 12px 24px rgba(0,0,0,0.07);
+  box-shadow:0 12px 24px rgba(0,0,0,.07);
 }
 
 .entry-top{
   display:flex;
-  gap:8px;
   flex-wrap:wrap;
+  gap:8px;
   align-items:center;
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 
 .badge{
@@ -356,7 +415,7 @@ header{
   padding:6px 11px;
   background:#f4f6f8;
   border-radius:999px;
-  font-size:0.74rem;
+  font-size:.74rem;
 }
 
 .badge-category{
@@ -378,20 +437,29 @@ header{
 
 .entry-title{
   display:block;
-  font-size:1.12rem;
-  line-height:1.5;
+  font-size:1.08rem;
+  line-height:1.52;
   color:var(--blue);
   font-weight:700;
-  margin:12px 0;
+  margin:10px 0;
 }
 
 .entry-title:hover{
-  color:#08325f;
+  color:var(--blue-dark);
 }
 
 .entry-meta{
-  font-size:0.82rem;
+  font-size:.82rem;
   color:#777;
+}
+
+.empty-state{
+  background:#fff;
+  border-radius:18px;
+  padding:26px;
+  text-align:center;
+  color:#666;
+  border:1px dashed rgba(0,0,0,.14);
 }
 
 /* SOURCES */
@@ -402,10 +470,10 @@ header{
 }
 
 .sources-subtitle{
-  font-size:0.85rem;
+  font-size:.85rem;
   color:#666;
-  line-height:1.5;
-  margin-bottom:16px;
+  line-height:1.55;
+  margin-bottom:14px;
 }
 
 .sources-directory{
@@ -416,20 +484,20 @@ header{
 
 .sources-group-title{
   width:100%;
-  margin-top:20px;
+  margin-top:18px;
   margin-bottom:2px;
   font-weight:700;
   color:var(--blue);
-  font-size:0.9rem;
+  font-size:.9rem;
 }
 
 .source-chip{
-  border:1px solid rgba(0,0,0,0.10);
+  border:1px solid rgba(0,0,0,.10);
   background:#fff;
   padding:10px 14px;
   border-radius:999px;
   cursor:pointer;
-  font-size:0.84rem;
+  font-size:.84rem;
   transition:.2s ease;
 }
 
@@ -443,13 +511,46 @@ header{
   border-color:var(--blue);
 }
 
-.empty-state{
-  background:#fff;
-  border-radius:18px;
-  padding:26px;
-  text-align:center;
-  color:#666;
-  border:1px dashed rgba(0,0,0,0.14);
+@media(max-width:900px){
+  .hero-top{
+    grid-template-columns:1fr;
+  }
+
+  .toolbar{
+    grid-template-columns:1fr;
+  }
+
+  .hero-card{
+    padding:20px 18px 18px;
+  }
+
+  .hero-text h1{
+    font-size:1.42rem;
+    line-height:1.08;
+  }
+
+  .hero-text p{
+    font-size:.88rem;
+    line-height:1.55;
+  }
+
+  .hero-stat{
+    padding:16px 16px;
+  }
+
+  .entry-title{
+    font-size:1rem;
+  }
+
+  .panel{
+    padding:16px;
+    border-radius:22px;
+  }
+
+  .card{
+    padding:16px;
+    border-radius:20px;
+  }
 }
 </style>
 </head>
@@ -457,196 +558,216 @@ header{
 <body>
 
 <header>
-<div class="head">
+  <div class="head">
 
-<div class="brand">
-<div class="logo-box">
-<img src="logo-white.png" alt="Лого">
-</div>
-<div class="brand-text">
-<div class="top">Удружење грађана</div>
-<div class="main">Иксан Снага правде</div>
-</div>
-</div>
+    <div class="brand">
+      <div class="logo-box">
+        <img src="logo-white.png" alt="Лого">
+      </div>
+      <div class="brand-text">
+        <div class="top">Удружење грађана</div>
+        <div class="main">Иксан Снага правде</div>
+      </div>
+    </div>
 
-<div class="nav-right">
-<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+    <div class="nav-right">
+      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-<div class="menu" id="menu">
-<div class="menu-btn">
-<span></span><span></span><span></span>
-</div>
+      <div class="menu" id="menu">
+        <div class="menu-btn">
+          <span></span><span></span><span></span>
+        </div>
 
-<div class="dropdown">
-<a href="index.html"><b>ПОЧЕТНА</b></a>
-<a href="scanner.html"><b>СКЕНЕР СНАГЕ ПРАВДЕ</b></a>
-<a href="kontakt.html">Контакт</a>
-<a href="onama.html">О нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви – закони – предмети</a>
-<a href="doniraj.html">Донирај</a>
-<a href="prikljucise.html">Прикључи се</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
-<a href="porekloimovine.html">Мере уштеде</a>
-<a href="sudpravda.html">Реформа судства</a>
-<a href="radnicipreduzetnici.html">Права радника</a>
-<a href="pravicna-konkurencija.html">Заштита предузетника</a>
-<a href="uradili.html">Шта смо урадили</a>
-</div>
-</div>
-</div>
+        <div class="dropdown">
+          <a href="index.html"><b>ПОЧЕТНА</b></a>
+          <a href="scanner.html"><b>СКЕНЕР СНАГЕ ПРАВДЕ</b></a>
+          <a href="kontakt.html">Контакт</a>
+          <a href="onama.html">О нама</a>
+          <a href="oblasti.html">Области деловања</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="inicijative.html">Захтеви – закони – предмети</a>
+          <a href="doniraj.html">Донирај</a>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="prijavi.html">Представка грађанина</a>
+          <a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
+          <a href="porekloimovine.html">Мере уштеде</a>
+          <a href="sudpravda.html">Реформа судства</a>
+          <a href="radnicipreduzetnici.html">Права радника</a>
+          <a href="pravicna-konkurencija.html">Заштита предузетника</a>
+          <a href="uradili.html">Шта смо урадили</a>
+        </div>
+      </div>
+    </div>
 
-</div>
+  </div>
 </header>
 
 <div class="hero"></div>
 
 <div class="container">
-<div class="panel">
+  <div class="panel">
 
-<section class="scanner-hero-card">
-  <div class="scanner-hero-box">
-    <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
-    <h2>Најновије вести — уживо, из минута у минут</h2>
+    <section class="hero-shell">
+      <div class="hero-card">
+        <div class="hero-top">
+          <div class="hero-text">
+            <div class="hero-kicker">Live monitoring</div>
+            <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+            <p>
+              Најновије вести из минута у минут о темама од јавног значаја:
+              корупција, правосуђе, хапшења, злоупотреба службеног положаја,
+              фалсификовање докумената, извршења, радници, предузетници,
+              закони, изборни процеси, медијске слободе, социјална права и људска права.
+            </p>
+          </div>
+
+          <div class="hero-stat">
+            <div class="hero-stat-label">Сада се прате</div>
+            <div class="hero-stat-title">Најновије вести, извори и теме — у једном месту</div>
+            <div class="hero-stat-sub">
+              Прве вести су одмах видљиве испод. Додатно можете отворити преглед тема
+              које скенирамо, као и све медије и организације из којих се повлаче наслови.
+            </div>
+          </div>
+        </div>
+
+        <details class="info-toggle">
+          <summary>ШТА СВЕ СКЕНИРАМО</summary>
+          <div class="info-toggle-body">
+            <p class="info-toggle-text">
+              Скенер прати теме од највишег јавног значаја: корупцију, хапшења, правосуђе,
+              тужилаштва, полицију, злоупотребу службеног положаја, фалсификовање докумената,
+              јавне набавке, извршитеље, извршне поступке, извршење и обезбеђење, раднике,
+              предузетнике, мала и средња предузећа, привреду, законе, законску регулативу,
+              законске прописе, изборе и изборне процесе, слободу медија, пензионере,
+              социјална права, социјална давања, социјалну угроженост, права деце,
+              инвалидитет, мањинска права, породично насиље и људска права.
+            </p>
+
+            <div class="scanner-tags">
+              <span>Корупција</span>
+              <span>Хапшења</span>
+              <span>Правосуђе</span>
+              <span>Тужилаштва</span>
+              <span>Полиција</span>
+              <span>Злоупотреба службеног положаја</span>
+              <span>Фалсификовање докумената</span>
+              <span>Јавне набавке</span>
+              <span>Извршитељи</span>
+              <span>Извршни поступци</span>
+              <span>Извршење и обезбеђење</span>
+              <span>Радници</span>
+              <span>Предузетници</span>
+              <span>Мала и средња предузећа</span>
+              <span>Привреда</span>
+              <span>Закони</span>
+              <span>Законска решења</span>
+              <span>Законска регулатива</span>
+              <span>Законски прописи</span>
+              <span>Изборни процеси</span>
+              <span>Изборне неправилности</span>
+              <span>Медијске слободе</span>
+              <span>Пензионери</span>
+              <span>Социјална права</span>
+              <span>Социјална давања</span>
+              <span>Социјална угроженост</span>
+              <span>Права деце</span>
+              <span>Инвалидитет</span>
+              <span>Мањинска права</span>
+              <span>Породично насиље</span>
+              <span>Људска права</span>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <input id="searchInput" class="input" placeholder="Претрага по наслову или извору...">
+        <button id="showAllBtn" class="button button-secondary" style="display:none;">Назад на све наслове</button>
+      </div>
+
+      <div class="entries-header">
+        <h3>НАЈНОВИЈЕ ВЕСТИ</h3>
+        <div class="entries-count" id="entriesCount">Учитавање...</div>
+      </div>
+
+      <div id="activeSourceNote" class="active-source-note"></div>
+
+      <div id="entriesList">
+        <div class="empty-state">Учитавање података...</div>
+      </div>
+    </section>
+
+    <details class="info-toggle">
+      <summary>ИЗ КОЈИХ МЕДИЈА И ОРГАНИЗАЦИЈА СКЕНИРАМО</summary>
+      <div class="info-toggle-body">
+        <p class="sources-subtitle">
+          Испод су сви домаћи и страни медији, међународне институције, watchdog организације
+          и тела за заштиту људских права из којих скенер повлачи наслове.
+        </p>
+
+        <div id="sourcesDirectory" class="sources-directory">
+
+          <div class="sources-group-title">ДОМАЋИ МЕДИЈИ</div>
+          <button class="source-chip" data-source="RTS">RTS</button>
+          <button class="source-chip" data-source="RTV">RTV</button>
+          <button class="source-chip" data-source="Tanjug">Tanjug</button>
+          <button class="source-chip" data-source="Beta">Beta</button>
+          <button class="source-chip" data-source="Blic">Blic</button>
+          <button class="source-chip" data-source="Kurir">Kurir</button>
+          <button class="source-chip" data-source="Novosti">Novosti</button>
+          <button class="source-chip" data-source="Politika">Politika</button>
+          <button class="source-chip" data-source="B92">B92</button>
+          <button class="source-chip" data-source="Informer">Informer</button>
+          <button class="source-chip" data-source="Pink">Pink</button>
+          <button class="source-chip" data-source="N1">N1</button>
+          <button class="source-chip" data-source="Nova">Nova</button>
+          <button class="source-chip" data-source="Danas">Danas</button>
+          <button class="source-chip" data-source="Insajder">Insajder</button>
+          <button class="source-chip" data-source="Vreme">Vreme</button>
+          <button class="source-chip" data-source="NIN">NIN</button>
+          <button class="source-chip" data-source="Radar">Radar</button>
+          <button class="source-chip" data-source="Euronews Serbia">Euronews Serbia</button>
+          <button class="source-chip" data-source="FoNet">FoNet</button>
+          <button class="source-chip" data-source="KTV">KTV</button>
+
+          <div class="sources-group-title">ИСТРАЖИВАЧКИ / WATCHDOG / NGO</div>
+          <button class="source-chip" data-source="BIRN">BIRN</button>
+          <button class="source-chip" data-source="CINS">CINS</button>
+          <button class="source-chip" data-source="KRIK">KRIK</button>
+          <button class="source-chip" data-source="CRTA">CRTA</button>
+          <button class="source-chip" data-source="Transparency Serbia">Transparency Serbia</button>
+          <button class="source-chip" data-source="YUCOM">YUCOM</button>
+          <button class="source-chip" data-source="Građanske inicijative">Građanske inicijative</button>
+
+          <div class="sources-group-title">МЕЂУНАРОДНЕ ИНСТИТУЦИЈЕ И ОРГАНИЗАЦИЈЕ</div>
+          <button class="source-chip" data-source="EU Commission">EU Commission</button>
+          <button class="source-chip" data-source="EU Serbia">EU Serbia</button>
+          <button class="source-chip" data-source="Council of Europe">Council of Europe</button>
+          <button class="source-chip" data-source="OSCE Serbia">OSCE Serbia</button>
+          <button class="source-chip" data-source="UN Serbia">UN Serbia</button>
+          <button class="source-chip" data-source="OHCHR">OHCHR</button>
+          <button class="source-chip" data-source="Human Rights Watch">Human Rights Watch</button>
+          <button class="source-chip" data-source="Amnesty">Amnesty</button>
+
+          <div class="sources-group-title">СТРАНИ И РЕГИОНАЛНИ МЕДИЈИ</div>
+          <button class="source-chip" data-source="Reuters">Reuters</button>
+          <button class="source-chip" data-source="BBC Serbian">BBC Serbian</button>
+          <button class="source-chip" data-source="DW Balkan">DW Balkan</button>
+          <button class="source-chip" data-source="Al Jazeera Balkans">Al Jazeera Balkans</button>
+          <button class="source-chip" data-source="RSE Balkan">RSE Balkan</button>
+          <button class="source-chip" data-source="VOA Balkan">VOA Balkan</button>
+          <button class="source-chip" data-source="AP News">AP News</button>
+          <button class="source-chip" data-source="The Guardian World">The Guardian World</button>
+          <button class="source-chip" data-source="France24">France24</button>
+
+        </div>
+      </div>
+    </details>
+
   </div>
-</section>
-
-<details class="info-toggle">
-  <summary>ШТА СВЕ СКЕНИРАМО</summary>
-  <div class="info-toggle-content">
-    <p class="info-toggle-text">
-      Скенер прати теме од највишег јавног значаја: корупцију, хапшења, правосуђе, тужилаштва,
-      полицију, злоупотребу службеног положаја, фалсификовање докумената, јавне набавке,
-      извршитеље, извршне поступке, извршење и обезбеђење, раднике, предузетнике, мала и средња
-      предузећа, привреду, законе, законску регулативу, законске прописе, изборе и изборне процесе,
-      слободу медија, пензионере, социјална права, социјална давања, права деце, инвалидитет,
-      мањинска права, породично насиље и људска права.
-    </p>
-
-    <div class="scanner-tags">
-      <span>Корупција</span>
-      <span>Хапшења</span>
-      <span>Правосуђе</span>
-      <span>Тужилаштва</span>
-      <span>Полиција</span>
-      <span>Злоупотреба службеног положаја</span>
-      <span>Фалсификовање докумената</span>
-      <span>Јавне набавке</span>
-      <span>Извршитељи</span>
-      <span>Извршни поступци</span>
-      <span>Извршење и обезбеђење</span>
-      <span>Радници</span>
-      <span>Предузетници</span>
-      <span>Мала и средња предузећа</span>
-      <span>Привреда</span>
-      <span>Закони</span>
-      <span>Законска решења</span>
-      <span>Законска регулатива</span>
-      <span>Законски прописи</span>
-      <span>Изборни процеси</span>
-      <span>Изборне неправилности</span>
-      <span>Медијске слободе</span>
-      <span>Пензионери</span>
-      <span>Социјална права</span>
-      <span>Социјална давања</span>
-      <span>Социјална угроженост</span>
-      <span>Права деце</span>
-      <span>Инвалидитет</span>
-      <span>Мањинска права</span>
-      <span>Породично насиље</span>
-      <span>Људска права</span>
-    </div>
-  </div>
-</details>
-
-<section class="card">
-  <div class="toolbar">
-    <input id="searchInput" class="input" placeholder="Претрага по наслову или извору...">
-    <button id="showAllBtn" class="button button-secondary" style="display:none;">Назад на све наслове</button>
-  </div>
-
-  <div class="entries-header">
-    <h3>НАЈНОВИЈЕ ВЕСТИ — УЖИВО</h3>
-    <div class="entries-count" id="entriesCount">Учитавање...</div>
-  </div>
-
-  <div id="activeSourceNote" class="active-source-note"></div>
-
-  <div id="entriesList">
-    <div class="empty-state">Учитавање података...</div>
-  </div>
-</section>
-
-<details class="info-toggle">
-  <summary>ИЗ КОЈИХ МЕДИЈА И ОРГАНИЗАЦИЈА СКЕНИРАМО</summary>
-  <div class="info-toggle-content">
-    <p class="sources-subtitle">
-      Испод су сви домаћи и страни медији, међународне институције, watchdog организације
-      и тела за заштиту људских права из којих скенер повлачи наслове.
-    </p>
-
-    <div id="sourcesDirectory" class="sources-directory">
-
-      <div class="sources-group-title">ДОМАЋИ МЕДИЈИ</div>
-      <button class="source-chip" data-source="RTS">RTS</button>
-      <button class="source-chip" data-source="RTV">RTV</button>
-      <button class="source-chip" data-source="Tanjug">Tanjug</button>
-      <button class="source-chip" data-source="Beta">Beta</button>
-      <button class="source-chip" data-source="Blic">Blic</button>
-      <button class="source-chip" data-source="Kurir">Kurir</button>
-      <button class="source-chip" data-source="Novosti">Novosti</button>
-      <button class="source-chip" data-source="Politika">Politika</button>
-      <button class="source-chip" data-source="B92">B92</button>
-      <button class="source-chip" data-source="Informer">Informer</button>
-      <button class="source-chip" data-source="Pink">Pink</button>
-      <button class="source-chip" data-source="N1">N1</button>
-      <button class="source-chip" data-source="Nova">Nova</button>
-      <button class="source-chip" data-source="Danas">Danas</button>
-      <button class="source-chip" data-source="Insajder">Insajder</button>
-      <button class="source-chip" data-source="Vreme">Vreme</button>
-      <button class="source-chip" data-source="NIN">NIN</button>
-      <button class="source-chip" data-source="Radar">Radar</button>
-      <button class="source-chip" data-source="Euronews Serbia">Euronews Serbia</button>
-      <button class="source-chip" data-source="FoNet">FoNet</button>
-      <button class="source-chip" data-source="KTV">KTV</button>
-
-      <div class="sources-group-title">ИСТРАЖИВАЧКИ / WATCHDOG / NGO</div>
-      <button class="source-chip" data-source="BIRN">BIRN</button>
-      <button class="source-chip" data-source="CINS">CINS</button>
-      <button class="source-chip" data-source="KRIK">KRIK</button>
-      <button class="source-chip" data-source="CRTA">CRTA</button>
-      <button class="source-chip" data-source="Transparency Serbia">Transparency Serbia</button>
-      <button class="source-chip" data-source="YUCOM">YUCOM</button>
-      <button class="source-chip" data-source="Građanske inicijative">Građanske inicijative</button>
-
-      <div class="sources-group-title">МЕЂУНАРОДНЕ ИНСТИТУЦИЈЕ И ОРГАНИЗАЦИЈЕ</div>
-      <button class="source-chip" data-source="EU Commission">EU Commission</button>
-      <button class="source-chip" data-source="EU Serbia">EU Serbia</button>
-      <button class="source-chip" data-source="Council of Europe">Council of Europe</button>
-      <button class="source-chip" data-source="OSCE Serbia">OSCE Serbia</button>
-      <button class="source-chip" data-source="UN Serbia">UN Serbia</button>
-      <button class="source-chip" data-source="OHCHR">OHCHR</button>
-      <button class="source-chip" data-source="Human Rights Watch">Human Rights Watch</button>
-      <button class="source-chip" data-source="Amnesty">Amnesty</button>
-
-      <div class="sources-group-title">СТРАНИ И РЕГИОНАЛНИ МЕДИЈИ</div>
-      <button class="source-chip" data-source="Reuters">Reuters</button>
-      <button class="source-chip" data-source="BBC Serbian">BBC Serbian</button>
-      <button class="source-chip" data-source="DW Balkan">DW Balkan</button>
-      <button class="source-chip" data-source="Al Jazeera Balkans">Al Jazeera Balkans</button>
-      <button class="source-chip" data-source="RSE Balkan">RSE Balkan</button>
-      <button class="source-chip" data-source="VOA Balkan">VOA Balkan</button>
-      <button class="source-chip" data-source="AP News">AP News</button>
-      <button class="source-chip" data-source="The Guardian World">The Guardian World</button>
-      <button class="source-chip" data-source="France24">France24</button>
-
-    </div>
-  </div>
-</details>
-
-</div>
 </div>
 
 <script>
@@ -667,8 +788,8 @@ function escapeHtml(str){
     .replaceAll("&","&amp;")
     .replaceAll("<","&lt;")
     .replaceAll(">","&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
 }
 
 function formatDateTime(dateStr, timeStr){
