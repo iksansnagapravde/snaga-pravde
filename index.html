@@ -857,7 +857,7 @@ setInterval(() => {
 
     const data = await res.json();
 
-    if(!data.title || !data.text){
+    if(!data.title || !data.content){
       container.innerHTML =
         '<div class="stav-empty">Тренутно нема објављеног става.</div>';
       return;
@@ -866,7 +866,7 @@ setInterval(() => {
     container.innerHTML = `
       <article class="stav-card">
         <div class="stav-title">${data.title}</div>
-        <div class="stav-text">${data.text}</div>
+        <div class="stav-text">${data.content}</div>
         <div class="stav-meta">
           Дејан Тадић · Иксан Снага правде · ${data.date || ""}
         </div>
