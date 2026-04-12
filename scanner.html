@@ -696,6 +696,10 @@ searchInput.addEventListener("input", renderEntries);
 
 loadComments();
 loadEntries();
+
+setInterval(() => {
+  loadEntries();
+}, 60000);
 </script>
 
 </body>
