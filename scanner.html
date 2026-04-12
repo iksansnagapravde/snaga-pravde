@@ -1,6 +1,3 @@
-<!-- КОМПЛЕТАН ИСПРАВЉЕН scanner.html -->
-<!-- ЗАДРЖАН САВ ТВОЈ КОД + ПРАВИЛАН РАСПОРЕД -->
-
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
@@ -19,11 +16,14 @@
   --text:#111;
   --line:rgba(0,0,0,0.12);
   --soft:#f5f5f7;
+  --soft-blue:#eef4ff;
+  --danger:#ff2d2d;
+  --alert:#ff8c00;
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
-button,input,select,textarea{font:inherit}
+button,input{font:inherit}
 
 body{
   font-family:"Playfair Display",serif;
@@ -42,8 +42,14 @@ body::before{
 }
 
 @keyframes goddessReveal{
-  0%{transform:translate(80px,100px) scale(1.08);opacity:0.8;}
-  100%{transform:translate(0,0) scale(1);opacity:1;}
+  0%{
+    transform:translate(80px,100px) scale(1.08);
+    opacity:0.8;
+  }
+  100%{
+    transform:translate(0,0) scale(1);
+    opacity:1;
+  }
 }
 
 header{
@@ -79,7 +85,9 @@ header{
   justify-content:center;
 }
 
-.logo-box img{width:66px;}
+.logo-box img{
+  width:66px;
+}
 
 .brand-text .top{
   font-size:0.6rem;
@@ -107,7 +115,7 @@ header{
   font-weight:700;
 }
 
-.menu{position:relative;}
+.menu{position:relative}
 
 .menu-btn{
   width:26px;
@@ -130,10 +138,10 @@ header{
   background:#fff;
   border:1px solid var(--line);
   display:none;
-  min-width:270px;
+  min-width:290px;
 }
 
-.menu.open .dropdown{display:block;}
+.menu.open .dropdown{display:block}
 
 .dropdown a{
   display:block;
@@ -142,9 +150,11 @@ header{
   border-bottom:1px solid var(--line);
 }
 
-.dropdown a:last-child{border:none;}
+.dropdown a:last-child{border:none}
 
-.hero{height:40px;}
+.hero{
+  height:40px;
+}
 
 .container{
   max-width:1150px;
@@ -160,30 +170,89 @@ header{
 }
 
 /* HERO */
-.scanner-hero{
-  text-align:center;
-  margin-bottom:20px;
+.scanner-hero-card{
+  margin-bottom:22px;
 }
 
-.scanner-hero h1{
-  font-size:2.1rem;
+.scanner-hero-box{
+  background:linear-gradient(180deg,#ffffff 0%, #f7f9fc 100%);
+  border-radius:26px;
+  padding:34px 26px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
+  text-align:center;
+}
+
+.scanner-hero-box h1{
+  font-size:2rem;
   color:var(--blue);
   margin-bottom:10px;
 }
 
-.scanner-hero h2{
+.scanner-hero-box h2{
   font-size:1.15rem;
-  color:#0a3f78;
-  margin-bottom:12px;
+  color:#234;
+  margin-bottom:18px;
   font-weight:600;
 }
 
-.scanner-hero p{
-  font-size:0.84rem;
+/* DETAILS PANELS */
+.info-toggle{
+  background:var(--soft);
+  border-radius:20px;
+  padding:18px 20px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  margin-bottom:22px;
+}
+
+.info-toggle summary{
+  list-style:none;
+  cursor:pointer;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--blue);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.info-toggle summary::-webkit-details-marker{display:none}
+
+.info-toggle summary::after{
+  content:"+";
+  font-size:1.3rem;
+  line-height:1;
+  color:var(--blue);
+}
+
+.info-toggle[open] summary::after{
+  content:"−";
+}
+
+.info-toggle-content{
+  margin-top:16px;
+}
+
+.info-toggle-text{
+  font-size:0.88rem;
   color:#666;
-  max-width:760px;
-  margin:0 auto;
-  line-height:1.55;
+  line-height:1.6;
+  margin-bottom:14px;
+}
+
+.scanner-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.scanner-tags span{
+  background:var(--soft-blue);
+  color:var(--blue);
+  border-radius:999px;
+  padding:10px 16px;
+  font-size:0.82rem;
+  font-weight:600;
 }
 
 /* CARD */
@@ -198,11 +267,134 @@ header{
   margin-top:22px;
 }
 
-.card h3{
+.toolbar{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:12px;
+  margin:0 0 18px;
+}
+
+@media(max-width:900px){
+  .toolbar{
+    grid-template-columns:1fr;
+  }
+}
+
+.input{
+  width:100%;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.12);
+  border-radius:12px;
+  padding:12px 14px;
+}
+
+.button{
+  border:none;
+  border-radius:12px;
+  padding:10px 16px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.button-secondary{
+  background:#fff;
+  color:var(--blue);
+  border:1px solid rgba(10,63,120,0.18);
+}
+
+.entries-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+  flex-wrap:wrap;
+}
+
+.entries-header h3{
   font-size:1rem;
+  color:#111;
+}
+
+.entries-count{
+  font-size:0.86rem;
+  color:#666;
+}
+
+.active-source-note{
+  font-size:0.9rem;
+  color:var(--blue);
   margin-bottom:14px;
 }
 
+/* ENTRY */
+.entry{
+  background:#fff;
+  border-radius:22px;
+  padding:22px;
+  margin-bottom:18px;
+  border:1px solid rgba(0,0,0,0.04);
+  box-shadow:0 6px 18px rgba(0,0,0,0.04);
+  transition:all .25s ease;
+}
+
+.entry:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 24px rgba(0,0,0,0.07);
+}
+
+.entry-top{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+.badge{
+  display:inline-block;
+  padding:6px 11px;
+  background:#f4f6f8;
+  border-radius:999px;
+  font-size:0.74rem;
+}
+
+.badge-category{
+  background:var(--soft-blue);
+  color:var(--blue);
+}
+
+.badge-breaking{
+  background:var(--danger);
+  color:#fff;
+  font-weight:700;
+}
+
+.badge-alert{
+  background:var(--alert);
+  color:#fff;
+  font-weight:700;
+}
+
+.entry-title{
+  display:block;
+  font-size:1.12rem;
+  line-height:1.5;
+  color:var(--blue);
+  font-weight:700;
+  margin:12px 0;
+}
+
+.entry-title:hover{
+  color:#08325f;
+}
+
+.entry-meta{
+  font-size:0.82rem;
+  color:#777;
+}
+
+/* SOURCES */
 .sources-title{
   font-size:1.05rem;
   color:var(--blue);
@@ -224,7 +416,8 @@ header{
 
 .sources-group-title{
   width:100%;
-  margin:10px 0 2px;
+  margin-top:20px;
+  margin-bottom:2px;
   font-weight:700;
   color:var(--blue);
   font-size:0.9rem;
@@ -237,110 +430,17 @@ header{
   border-radius:999px;
   cursor:pointer;
   font-size:0.84rem;
+  transition:.2s ease;
+}
+
+.source-chip:hover{
+  background:#f4f6f8;
 }
 
 .source-chip.active{
   background:var(--blue);
   color:#fff;
-}
-
-.toolbar{
-  display:grid;
-  grid-template-columns:1fr auto;
-  gap:12px;
-  margin:0 0 18px;
-}
-
-.input{
-  width:100%;
-  background:#fff;
-  border:1px solid rgba(0,0,0,0.12);
-  border-radius:12px;
-  padding:12px 14px;
-}
-
-.button{
-  border:none;
-  border-radius:12px;
-  padding:10px 16px;
-  font-weight:700;
-  cursor:pointer;
-}
-
-.button-primary{
-  background:var(--blue);
-  color:#fff;
-}
-
-.button-secondary{
-  background:#fff;
-  color:var(--blue);
-  border:1px solid rgba(10,63,120,0.18);
-}
-
-.entries-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:12px;
-}
-
-.entries-count{
-  font-size:0.86rem;
-  color:#666;
-}
-
-.entry{
-  background:#fff;
-  border-radius:18px;
-  padding:18px;
-  margin-bottom:18px;
-  border:1px solid rgba(0,0,0,0.05);
-}
-
-.badge{
-  display:inline-block;
-  padding:5px 10px;
-  background:#f4f6f8;
-  border-radius:999px;
-  font-size:0.74rem;
-}
-
-.entry-title{
-  display:block;
-  font-size:1.05rem;
-  color:var(--blue);
-  font-weight:700;
-  margin:10px 0;
-}
-
-.entry-meta{
-  font-size:0.82rem;
-  color:#777;
-  margin-bottom:12px;
-}
-
-.entry-comment{
-  margin-top:14px;
-  padding:14px;
-  background:#f8fbff;
-  border-left:4px solid var(--blue);
-  border-radius:12px;
-}
-
-.entry-comment textarea{
-  width:100%;
-  min-height:120px;
-  border:1px solid rgba(0,0,0,0.12);
-  border-radius:12px;
-  padding:12px;
-  margin-top:10px;
-}
-
-.comment-actions{
-  display:flex;
-  justify-content:flex-end;
-  margin-top:10px;
+  border-color:var(--blue);
 }
 
 .empty-state{
@@ -349,6 +449,7 @@ header{
   padding:26px;
   text-align:center;
   color:#666;
+  border:1px dashed rgba(0,0,0,0.14);
 }
 </style>
 </head>
@@ -396,6 +497,7 @@ header{
 </div>
 </div>
 </div>
+
 </div>
 </header>
 
@@ -404,44 +506,145 @@ header{
 <div class="container">
 <div class="panel">
 
-<!-- NASLOV GORE -->
-<section class="scanner-hero">
-<h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
-<h2>Најновије вести — уживо, из минута у минут</h2>
-<p>
-Пратимо теме: људска права, корупција, злоупотребе, хапшења, правосуђе,
-социјална правда, извршења, радничка права, пензионери, права деце,
-инвалидитет, мањинска права, избори, слобода медија и друге теме од јавног значаја,
-из свих релевантних домаћих и страних медија и организација.
-</p>
+<section class="scanner-hero-card">
+  <div class="scanner-hero-box">
+    <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+    <h2>Најновије вести — уживо, из минута у минут</h2>
+  </div>
 </section>
 
-<!-- VESTI ODMAH ISPOD -->
+<details class="info-toggle">
+  <summary>ШТА СВЕ СКЕНИРАМО</summary>
+  <div class="info-toggle-content">
+    <p class="info-toggle-text">
+      Скенер прати теме од највишег јавног значаја: корупцију, хапшења, правосуђе, тужилаштва,
+      полицију, злоупотребу службеног положаја, фалсификовање докумената, јавне набавке,
+      извршитеље, извршне поступке, извршење и обезбеђење, раднике, предузетнике, мала и средња
+      предузећа, привреду, законе, законску регулативу, законске прописе, изборе и изборне процесе,
+      слободу медија, пензионере, социјална права, социјална давања, права деце, инвалидитет,
+      мањинска права, породично насиље и људска права.
+    </p>
+
+    <div class="scanner-tags">
+      <span>Корупција</span>
+      <span>Хапшења</span>
+      <span>Правосуђе</span>
+      <span>Тужилаштва</span>
+      <span>Полиција</span>
+      <span>Злоупотреба службеног положаја</span>
+      <span>Фалсификовање докумената</span>
+      <span>Јавне набавке</span>
+      <span>Извршитељи</span>
+      <span>Извршни поступци</span>
+      <span>Извршење и обезбеђење</span>
+      <span>Радници</span>
+      <span>Предузетници</span>
+      <span>Мала и средња предузећа</span>
+      <span>Привреда</span>
+      <span>Закони</span>
+      <span>Законска решења</span>
+      <span>Законска регулатива</span>
+      <span>Законски прописи</span>
+      <span>Изборни процеси</span>
+      <span>Изборне неправилности</span>
+      <span>Медијске слободе</span>
+      <span>Пензионери</span>
+      <span>Социјална права</span>
+      <span>Социјална давања</span>
+      <span>Социјална угроженост</span>
+      <span>Права деце</span>
+      <span>Инвалидитет</span>
+      <span>Мањинска права</span>
+      <span>Породично насиље</span>
+      <span>Људска права</span>
+    </div>
+  </div>
+</details>
+
 <section class="card">
-<div class="toolbar">
-<input id="searchInput" class="input" placeholder="Претрага по наслову или извору...">
-<button id="showAllBtn" class="button button-secondary" style="display:none;">Назад на све наслове</button>
-</div>
+  <div class="toolbar">
+    <input id="searchInput" class="input" placeholder="Претрага по наслову или извору...">
+    <button id="showAllBtn" class="button button-secondary" style="display:none;">Назад на све наслове</button>
+  </div>
 
-<div class="entries-header">
-<h3>НАЈНОВИЈЕ ВЕСТИ — УЖИВО</h3>
-<div class="entries-count" id="entriesCount">Учитавање...</div>
-</div>
+  <div class="entries-header">
+    <h3>НАЈНОВИЈЕ ВЕСТИ — УЖИВО</h3>
+    <div class="entries-count" id="entriesCount">Учитавање...</div>
+  </div>
 
-<div id="activeSourceNote"></div>
-<div id="entriesList">
-<div class="empty-state">Учитавање података...</div>
-</div>
+  <div id="activeSourceNote" class="active-source-note"></div>
+
+  <div id="entriesList">
+    <div class="empty-state">Учитавање података...</div>
+  </div>
 </section>
 
-<!-- IZVORI TEK NA KRAJU -->
-<section class="card">
-<h3 class="sources-title">ИЗВОРИ КОЈЕ СКЕНЕР ПРАТИ</h3>
-<p class="sources-subtitle">
-Изаберите извор и одмах видите да ли тренутно има доступних наслова.
-</p>
-<div id="sourcesDirectory" class="sources-directory"></div>
-</section>
+<details class="info-toggle">
+  <summary>ИЗ КОЈИХ МЕДИЈА И ОРГАНИЗАЦИЈА СКЕНИРАМО</summary>
+  <div class="info-toggle-content">
+    <p class="sources-subtitle">
+      Испод су сви домаћи и страни медији, међународне институције, watchdog организације
+      и тела за заштиту људских права из којих скенер повлачи наслове.
+    </p>
+
+    <div id="sourcesDirectory" class="sources-directory">
+
+      <div class="sources-group-title">ДОМАЋИ МЕДИЈИ</div>
+      <button class="source-chip" data-source="RTS">RTS</button>
+      <button class="source-chip" data-source="RTV">RTV</button>
+      <button class="source-chip" data-source="Tanjug">Tanjug</button>
+      <button class="source-chip" data-source="Beta">Beta</button>
+      <button class="source-chip" data-source="Blic">Blic</button>
+      <button class="source-chip" data-source="Kurir">Kurir</button>
+      <button class="source-chip" data-source="Novosti">Novosti</button>
+      <button class="source-chip" data-source="Politika">Politika</button>
+      <button class="source-chip" data-source="B92">B92</button>
+      <button class="source-chip" data-source="Informer">Informer</button>
+      <button class="source-chip" data-source="Pink">Pink</button>
+      <button class="source-chip" data-source="N1">N1</button>
+      <button class="source-chip" data-source="Nova">Nova</button>
+      <button class="source-chip" data-source="Danas">Danas</button>
+      <button class="source-chip" data-source="Insajder">Insajder</button>
+      <button class="source-chip" data-source="Vreme">Vreme</button>
+      <button class="source-chip" data-source="NIN">NIN</button>
+      <button class="source-chip" data-source="Radar">Radar</button>
+      <button class="source-chip" data-source="Euronews Serbia">Euronews Serbia</button>
+      <button class="source-chip" data-source="FoNet">FoNet</button>
+      <button class="source-chip" data-source="KTV">KTV</button>
+
+      <div class="sources-group-title">ИСТРАЖИВАЧКИ / WATCHDOG / NGO</div>
+      <button class="source-chip" data-source="BIRN">BIRN</button>
+      <button class="source-chip" data-source="CINS">CINS</button>
+      <button class="source-chip" data-source="KRIK">KRIK</button>
+      <button class="source-chip" data-source="CRTA">CRTA</button>
+      <button class="source-chip" data-source="Transparency Serbia">Transparency Serbia</button>
+      <button class="source-chip" data-source="YUCOM">YUCOM</button>
+      <button class="source-chip" data-source="Građanske inicijative">Građanske inicijative</button>
+
+      <div class="sources-group-title">МЕЂУНАРОДНЕ ИНСТИТУЦИЈЕ И ОРГАНИЗАЦИЈЕ</div>
+      <button class="source-chip" data-source="EU Commission">EU Commission</button>
+      <button class="source-chip" data-source="EU Serbia">EU Serbia</button>
+      <button class="source-chip" data-source="Council of Europe">Council of Europe</button>
+      <button class="source-chip" data-source="OSCE Serbia">OSCE Serbia</button>
+      <button class="source-chip" data-source="UN Serbia">UN Serbia</button>
+      <button class="source-chip" data-source="OHCHR">OHCHR</button>
+      <button class="source-chip" data-source="Human Rights Watch">Human Rights Watch</button>
+      <button class="source-chip" data-source="Amnesty">Amnesty</button>
+
+      <div class="sources-group-title">СТРАНИ И РЕГИОНАЛНИ МЕДИЈИ</div>
+      <button class="source-chip" data-source="Reuters">Reuters</button>
+      <button class="source-chip" data-source="BBC Serbian">BBC Serbian</button>
+      <button class="source-chip" data-source="DW Balkan">DW Balkan</button>
+      <button class="source-chip" data-source="Al Jazeera Balkans">Al Jazeera Balkans</button>
+      <button class="source-chip" data-source="RSE Balkan">RSE Balkan</button>
+      <button class="source-chip" data-source="VOA Balkan">VOA Balkan</button>
+      <button class="source-chip" data-source="AP News">AP News</button>
+      <button class="source-chip" data-source="The Guardian World">The Guardian World</button>
+      <button class="source-chip" data-source="France24">France24</button>
+
+    </div>
+  </div>
+</details>
 
 </div>
 </div>
@@ -450,75 +653,63 @@ header{
 const menu = document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
-const COMMENT_KEY = "scanner_snage_pravde_comments_v1";
 let entries = [];
-let comments = {};
 let activeSource = "Сви";
 
 const searchInput = document.getElementById("searchInput");
 const entriesList = document.getElementById("entriesList");
 const entriesCount = document.getElementById("entriesCount");
 const showAllBtn = document.getElementById("showAllBtn");
+const activeSourceNote = document.getElementById("activeSourceNote");
 
 function escapeHtml(str){
   return String(str || "")
     .replaceAll("&","&amp;")
     .replaceAll("<","&lt;")
-    .replaceAll(">","&gt;");
+    .replaceAll(">","&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
-function formatDateTime(dateStr,timeStr){
+function formatDateTime(dateStr, timeStr){
   if(!dateStr) return "";
   const d = new Date(dateStr);
-  const datePart = d.toLocaleDateString("sr-RS");
+  const datePart = Number.isNaN(d.getTime()) ? dateStr : d.toLocaleDateString("sr-RS");
   return timeStr ? `${datePart} • ${timeStr}` : datePart;
 }
 
-function loadComments(){
-  try{
-    comments = JSON.parse(localStorage.getItem(COMMENT_KEY) || "{}");
-  }catch{
-    comments = {};
-  }
-}
-
-function saveComment(id,value){
-  comments[id]=value;
-  localStorage.setItem(COMMENT_KEY, JSON.stringify(comments));
-}
-
-function populateSourcesDirectory(){
-  const sources=[...new Set(entries.map(e=>e.source).filter(Boolean))].sort();
-  const directory=document.getElementById("sourcesDirectory");
-
-  directory.innerHTML=sources.map(s=>`
-    <button class="source-chip" data-source="${escapeHtml(s)}">${escapeHtml(s)}</button>
-  `).join("");
-
-  directory.querySelectorAll(".source-chip").forEach(btn=>{
-    btn.onclick=()=>{
-      activeSource=btn.dataset.source;
-      document.querySelectorAll(".source-chip").forEach(x=>x.classList.remove("active"));
+function bindSourceChips(){
+  document.querySelectorAll(".source-chip").forEach(btn => {
+    btn.onclick = () => {
+      activeSource = btn.dataset.source;
+      document.querySelectorAll(".source-chip").forEach(x => x.classList.remove("active"));
       btn.classList.add("active");
-      showAllBtn.style.display="inline-block";
+      showAllBtn.style.display = "inline-block";
       renderEntries();
+      window.scrollTo({
+        top: document.querySelector(".card").offsetTop - 90,
+        behavior: "smooth"
+      });
     };
   });
 }
 
 function renderEntries(){
   const q = searchInput.value.trim().toLowerCase();
-
   let filtered = [...entries];
 
   if(activeSource !== "Сви"){
     filtered = filtered.filter(e => e.source === activeSource);
+    activeSourceNote.innerHTML = `Приказ извора: <b>${escapeHtml(activeSource)}</b>`;
+  } else {
+    activeSourceNote.innerHTML = "";
   }
 
   if(q){
     filtered = filtered.filter(e =>
       (e.title || "").toLowerCase().includes(q) ||
-      (e.source || "").toLowerCase().includes(q)
+      (e.source || "").toLowerCase().includes(q) ||
+      (e.category || "").toLowerCase().includes(q)
     );
   }
 
@@ -527,7 +718,9 @@ function renderEntries(){
   if(!filtered.length){
     entriesList.innerHTML = `
       <div class="empty-state">
-        Тренутно нема доступних наслова.
+        ${activeSource !== "Сви"
+          ? `Тренутно нема доступних наслова из извора: <b>${escapeHtml(activeSource)}</b>.`
+          : "Тренутно нема доступних наслова."}
       </div>
     `;
     return;
@@ -535,88 +728,69 @@ function renderEntries(){
 
   entriesList.innerHTML = filtered.map(e => `
     <article class="entry">
-
-      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;">
+      <div class="entry-top">
         <span class="badge">${escapeHtml(e.source || "Без извора")}</span>
 
         ${e.category ? `
-          <span class="badge" style="background:#eef4ff;color:#0a3f78;">
+          <span class="badge badge-category">
             ${escapeHtml(e.category)}
           </span>
         ` : ""}
 
         ${e.breaking ? `
-          <span class="badge" style="background:#ff2d2d;color:#fff;font-weight:700;">
-            BREAKING
-          </span>
+          <span class="badge badge-breaking">BREAKING</span>
         ` : ""}
 
         ${e.alert ? `
-          <span class="badge" style="background:#ff8c00;color:#fff;font-weight:700;">
-            ALERT
-          </span>
+          <span class="badge badge-alert">ALERT</span>
         ` : ""}
       </div>
 
-      <a class="entry-title" href="${e.url}" target="_blank">
-        ${escapeHtml(e.title)}
+      <a class="entry-title"
+         href="${e.url || '#'}"
+         target="_blank"
+         rel="noopener noreferrer">
+         ${escapeHtml(e.title || "")}
       </a>
 
       <div class="entry-meta">
         ${formatDateTime(e.datetime || e.date, e.time)}
       </div>
-
-      <div class="entry-comment">
-        <h4>ВАШ РЕЗИМЕ / КОМЕНТАР / ПРЕДЛОГ</h4>
-        <textarea data-id="${e.id}">${comments[e.id] || ""}</textarea>
-
-        <div class="comment-actions">
-          <button class="button button-primary" onclick="saveEntryComment('${e.id}')">
-            САЧУВАЈ КОМЕНТАР
-          </button>
-        </div>
-      </div>
-
     </article>
   `).join("");
 }
 
-window.saveEntryComment=function(id){
-  const el=document.querySelector(`textarea[data-id="${id}"]`);
-  if(!el) return;
-  saveComment(id,el.value);
-  alert("Коментар је сачуван.");
-};
-
-showAllBtn.onclick=()=>{
-  activeSource="Сви";
-  document.querySelectorAll(".source-chip").forEach(x=>x.classList.remove("active"));
-  showAllBtn.style.display="none";
+showAllBtn.onclick = () => {
+  activeSource = "Сви";
+  document.querySelectorAll(".source-chip").forEach(x => x.classList.remove("active"));
+  showAllBtn.style.display = "none";
   renderEntries();
+  window.scrollTo({
+    top: document.querySelector(".card").offsetTop - 90,
+    behavior: "smooth"
+  });
 };
 
 async function loadEntries(){
   try{
-    const res=await fetch("scanner-data.json",{cache:"no-store"});
-    const data=await res.json();
+    const res = await fetch("scanner-data.json", {cache:"no-store"});
+    if(!res.ok) throw new Error("Неуспешно учитавање");
+    const data = await res.json();
 
-    entries=Array.isArray(data.entries)?data.entries:[];
-    entries.sort((a,b)=>new Date(b.datetime||b.date)-new Date(a.datetime||a.date));
+    entries = Array.isArray(data.entries) ? data.entries : [];
+    entries.sort((a,b) => new Date(b.datetime || b.date) - new Date(a.datetime || a.date));
 
-    populateSourcesDirectory();
     renderEntries();
-
+    bindSourceChips();
   }catch(e){
-    entriesList.innerHTML=`<div class="empty-state">Није могуће учитати наслове.</div>`;
+    entriesList.innerHTML = `<div class="empty-state">Није могуће учитати наслове.</div>`;
   }
 }
 
-searchInput.addEventListener("input",renderEntries);
+searchInput.addEventListener("input", renderEntries);
 
-loadComments();
 loadEntries();
-
-setInterval(loadEntries,60000);
+setInterval(loadEntries, 60000);
 </script>
 
 </body>
