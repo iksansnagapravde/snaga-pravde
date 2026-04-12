@@ -148,7 +148,7 @@ header{
   padding:20px;
 }
 
-/* SCANNER HERO */
+/* HERO TITLE */
 .scanner-hero{
   text-align:center;
   margin-bottom:40px;
@@ -237,59 +237,56 @@ grid-template-columns:1fr;
 .h90{height:90%;}
 .h85{height:85%;}
 
-/* ANALYSIS */
-.tag-red{
-  color:var(--orange);
-  font-size:0.8rem;
-  font-weight:700;
-  margin-bottom:14px;
-}
-
-.main-analysis h2{
-  font-size:1.4rem;
-  margin-bottom:20px;
-  line-height:1.5;
-}
-
-.source-line{
-  margin-bottom:25px;
-  font-size:0.9rem;
-}
-
-.source-line a{
-  color:var(--blue);
-  font-weight:700;
-}
-
-.analysis-block{
-  margin-bottom:25px;
-}
-
-.analysis-block h4{
-  color:var(--blue);
-  margin-bottom:10px;
-}
-
-.analysis-block p{
-  color:#444;
-  line-height:1.7;
-}
-
-/* HEADLINES */
+/* NEWS ITEMS */
 .headline-item{
-  padding:16px 0;
+  padding:18px 0;
   border-bottom:1px solid rgba(0,0,0,0.08);
 }
 
 .headline-item a{
   display:block;
   font-weight:600;
-  margin-bottom:6px;
+  margin-bottom:8px;
+  color:var(--blue);
 }
 
-.headline-item span{
-  font-size:0.85rem;
+.headline-date{
+  font-size:0.8rem;
   color:#777;
+  margin-bottom:12px;
+}
+
+.source-tag{
+  display:inline-block;
+  font-size:0.75rem;
+  background:#fff;
+  padding:4px 8px;
+  border-radius:8px;
+  margin-bottom:10px;
+  border:1px solid rgba(0,0,0,0.06);
+}
+
+/* ANALYSIS BOX */
+.analysis-box{
+  margin-top:12px;
+  padding:14px;
+  background:#fff;
+  border-left:4px solid var(--blue);
+  border-radius:10px;
+  font-size:0.85rem;
+}
+
+.analysis-box p{
+  margin-top:6px;
+  margin-bottom:10px;
+  color:#444;
+}
+
+/* LOADING */
+.loading{
+  text-align:center;
+  color:#777;
+  padding:20px;
 }
 
 /* SOCIAL */
@@ -408,7 +405,7 @@ grid-template-columns:1fr;
 <section class="scanner-hero">
 <h1>СКЕНЕР ЉУДСКИХ ПРАВА У СРБИЈИ</h1>
 <p>
-Актуелни медијски наслови, анализе, наша мишљења и предлози решења — непристрасно и аргументовано.
+Аутоматски прикупљени релевантни медијски наслови из 10 извора, наша анализа и препоруке — веродостојно, критички и непристрасно.
 </p>
 </section>
 
@@ -417,7 +414,6 @@ grid-template-columns:1fr;
 
 <div class="card">
 <h3>О ЧЕМУ СРБИЈА ДАНАС ГОВОРИ</h3>
-
 <table class="scanner-table">
 <tr><th>Област</th><th>Број тема</th><th>Тренд</th></tr>
 <tr><td>Радничка права</td><td>12</td><td><div class="bar w90"></div></td></tr>
@@ -438,59 +434,15 @@ grid-template-columns:1fr;
 <div class="chart-bar h90"></div>
 <div class="chart-bar h85"></div>
 </div>
-<p>Пораст тема које се односе на радничка права и социјалну несигурност.</p>
+<p>Подаци се ажурирају на основу актуелних медијских тема.</p>
 </div>
 
 </section>
 
-<!-- MAIN ANALYSIS -->
-<section class="card main-analysis">
-<div class="tag-red">ГЛАВНА АНАЛИЗА ДАНА</div>
-<h2>УН упозоравају на све веће ограничавање грађанских слобода у Србији</h2>
-<div class="source-line">
-Извор: <a href="#" target="_blank">Погледај оригинални текст</a>
-</div>
-
-<div class="analysis-block">
-<h4>ШТА ОВО ЗНАЧИ?</h4>
-<p>Повећани притисци на слободу медија и јавног говора утичу на способност грађана да траже заштиту својих права.</p>
-</div>
-
-<div class="analysis-block">
-<h4>НАША АНАЛИЗА</h4>
-<p>Када институције ослабе, највећу цену плаћају најугроженији — радници, породице под дуговима и деца у сиромаштву.</p>
-</div>
-
-<div class="analysis-block">
-<h4>НАШ ПРЕДЛОГ</h4>
-<p>Неопходно је ојачати независне механизме јавног надзора и обезбедити институционалну заштиту основних права.</p>
-</div>
-</section>
-
-<!-- HEADLINES -->
+<!-- LIVE NEWS FEED -->
 <section class="card">
-<h3>АКТУЕЛНИ НАСЛОВИ — СКЕНИРАНО ИЗ МЕДИЈА</h3>
-
-<div class="headline-item">
-<a href="#">Пораст броја породица под претњом принудне наплате</a>
-<span>→ Наша анализа у припреми</span>
-</div>
-
-<div class="headline-item">
-<a href="#">Радници у приватном сектору без исплаћених зарада</a>
-<span>→ Наша анализа у припреми</span>
-</div>
-
-<div class="headline-item">
-<a href="#">Деца у сиромаштву без приступа системској заштити</a>
-<span>→ Наша анализа у припреми</span>
-</div>
-
-<div class="headline-item">
-<a href="#">Све више грађана без правне помоћи у споровима</a>
-<span>→ Наша анализа у припреми</span>
-</div>
-
+<h3>СКЕНИРАНИ НАСЛОВИ — АУТОМАТСКИ ИЗ 10 РЕЛЕВАНТНИХ ИЗВОРА</h3>
+<div id="news-feed" class="loading">Учитавање актуелних наслова...</div>
 </section>
 
 </div>
@@ -523,14 +475,69 @@ grid-template-columns:1fr;
 </a>
 
 <script>
+/* MENU */
 const menu = document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
+/* SOCIAL LOAD */
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("socialBar").classList.add("show");
     document.querySelector(".wa-btn").classList.add("show");
   }, 400);
+});
+
+/* RSS SOURCES */
+const feeds = [
+{name:"N1", url:"https://n1info.rs/feed/"},
+{name:"Danas", url:"https://www.danas.rs/feed/"},
+{name:"Nova", url:"https://nova.rs/feed/"},
+{name:"BIRN", url:"https://birn.rs/feed/"},
+{name:"RTS", url:"https://www.rts.rs/page/stories/sr/rss/1/vesti.html"},
+{name:"CINS", url:"https://www.cins.rs/feed/"},
+{name:"Insajder", url:"https://insajder.net/rss"},
+{name:"Amnesty", url:"https://www.amnesty.org/en/latest/rss.xml"},
+{name:"HRW", url:"https://www.hrw.org/rss/news"},
+{name:"UN Human Rights", url:"https://www.ohchr.org/en/rss.xml"}
+];
+
+const container = document.getElementById("news-feed");
+container.innerHTML = "";
+
+feeds.forEach(feed => {
+fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`)
+.then(res => res.json())
+.then(data => {
+
+if(data.items){
+data.items.slice(0,2).forEach(item => {
+
+const div = document.createElement("div");
+div.className = "headline-item";
+
+div.innerHTML = `
+<div class="source-tag">${feed.name}</div>
+<a href="${item.link}" target="_blank">${item.title}</a>
+<div class="headline-date">${new Date(item.pubDate).toLocaleDateString('sr-RS')}</div>
+
+<div class="analysis-box">
+<strong>НАША АНАЛИЗА:</strong>
+<p>Овде унесите вашу анализу овог текста.</p>
+
+<strong>НАШ ПРЕДЛОГ:</strong>
+<p>Овде унесите ваше препоруке, решења и ставове.</p>
+</div>
+`;
+
+container.appendChild(div);
+
+});
+}
+
+})
+.catch(error=>{
+console.log("RSS error:", feed.name, error);
+});
 });
 </script>
 
