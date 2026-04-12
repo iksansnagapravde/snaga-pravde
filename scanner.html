@@ -617,6 +617,19 @@ function populateFilters(){
   const sources = (window.allSources || []).length
       ? window.allSources
       : [...new Set(entries.map(e => e.source).filter(Boolean))].sort();
+
+  categoryFilter.innerHTML =
+    '<option value="Све">Све категорије</option>' +
+    categories.map(c => `
+      <option value="${escapeHtml(c)}">${escapeHtml(c)}</option>
+    `).join("");
+
+  sourceFilter.innerHTML =
+    '<option value="Сви">Сви извори</option>' +
+    sources.map(s => `
+      <option value="${escapeHtml(s)}">${escapeHtml(s)}</option>
+    `).join("");
+}
 }
 
 function renderEntries(){
