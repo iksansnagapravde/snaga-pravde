@@ -418,51 +418,49 @@ header{
 <body>
 
 <header>
-<div class="head">
+  <div class="head">
 
-<div class="brand">
-<div class="logo-box">
-<img src="logo-white.png" alt="Лого">
-</div>
+    <div class="brand">
+      <div class="logo-box">
+        <img src="logo-white.png" alt="Лого">
+      </div>
 
-<div class="brand-text">
-<div class="top">Удружење грађана</div>
-<div class="main">Иксан Снага правде</div>
-</div>
-</div>
+      <div class="brand-text">
+        <div class="top">Удружење грађана</div>
+        <div class="main">Иксан Снага правде</div>
+      </div>
+    </div>
 
-<div class="nav-right">
-<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+    <div class="nav-right">
+      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-<div class="menu" id="menu">
-<div class="menu-btn">
-<span></span><span></span><span></span>
-</div>
+      <div class="menu" id="menu">
+        <div class="menu-btn">
+          <span></span><span></span><span></span>
+        </div>
 
-<div class="dropdown">
+        <div class="dropdown">
+          <a href="index.html"><b>ПОЧЕТНА</b></a>
+          <a href="scanner.html"><b>СКЕНЕР СНАГЕ ПРАВДЕ</b></a>
+          <a href="kontakt.html">Контакт</a>
+          <a href="onama.html">О нама</a>
+          <a href="oblasti.html">Области деловања</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="inicijative.html">Захтеви – закони – предмети</a>
+          <a href="doniraj.html">Донирај</a>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="prijavi.html">Представка грађанина</a>
+          <a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
+          <a href="porekloimovine.html">Мере уштеде</a>
+          <a href="sudpravda.html">Реформа судства</a>
+          <a href="radnicipreduzetnici.html">Права радника</a>
+          <a href="pravicna-konkurencija.html">Заштита предузетника</a>
+          <a href="uradili.html">Шта смо урадили</a>
+        </div>
+      </div>
+    </div>
 
-  <a href="index.html"><b>ПОЧЕТНА</b></a>
-  <a href="scanner.html"><b>СКЕНЕР СВИХ НАСЛОВА</b></a>
-  <a href="kontakt.html">Контакт</a>
-  <a href="onama.html">О нама</a>
-  <a href="oblasti.html">Области деловања</a>
-  <a href="ciljevi.html">Стратешки циљеви</a>
-  <a href="inicijative.html">Захтеви – закони – предмети</a>
-  <a href="doniraj.html">Донирај</a>
-  <a href="prikljucise.html">Прикључи се</a>
-  <a href="prijavi.html">Представка грађанина</a>
-  <a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
-  <a href="porekloimovine.html">Мере уштеде</a>
-  <a href="sudpravda.html">Реформа судства</a>
-  <a href="radnicipreduzetnici.html">Права радника</a>
-  <a href="pravicna-konkurencija.html">Заштита предузетника</a>
-  <a href="uradili.html">Шта смо урадили</a>
-
-</div>
-</div>
-
-</div>
-</div>
+  </div>
 </header>
 
 <div class="hero"></div>
@@ -470,18 +468,23 @@ header{
 <div class="container">
   <div class="panel">
 
-<section class="scanner-hero">
-  <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
-  <h2>Најновије вести — уживо, из минута у минут</h2>
-  <p>
-    Пратимо теме: људска права, корупција, злоупотребе, хапшења, правосуђе, социјална правда,
-    извршења, радничка права, пензионери, права деце, инвалидитет, мањинска права,
-    избори, слобода медија и друге теме од јавног значаја, из домаћих и страних извора наведених испод.
-  </p>
-  <p style="margin-top:10px;">
-    Избором одређеног извора можете одмах видети да ли тренутно има доступних наслова из тог медија или организације.
-  </p>
-</section>
+    <section class="scanner-hero">
+      <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+      <h2>Најновије вести — уживо, из минута у минут</h2>
+      <p>
+        Пратимо теме: људска права, корупција, злоупотребе, хапшења, правосуђе, социјална правда,
+        извршења, радничка права, пензионери, права деце, инвалидитет, мањинска права,
+        избори, слобода медија и друге теме од јавног значаја, из свих релевантних домаћих и страних медија и организација.
+      </p>
+    </section>
+
+    <section class="card">
+      <h3 class="sources-title">ИЗВОРИ КОЈЕ СКЕНЕР ПРАТИ</h3>
+      <p class="sources-subtitle">
+        Изаберите извор и одмах видите да ли тренутно има доступних наслова из тог медија или организације.
+      </p>
+      <div id="sourcesDirectory" class="sources-directory"></div>
+    </section>
 
     <section class="card">
       <div class="toolbar">
@@ -490,7 +493,7 @@ header{
       </div>
 
       <div class="entries-header">
-        <h3>ТРЕНУТНО ДОСТУПНИ НАСЛОВИ</h3>
+        <h3>НАЈНОВИЈЕ ВЕСТИ — УЖИВО</h3>
         <div class="entries-count" id="entriesCount">Учитавање...</div>
       </div>
 
@@ -528,11 +531,13 @@ function escapeHtml(str){
     .replaceAll("'", "&#039;");
 }
 
-function formatDate(dateStr){
-  if(!dateStr) return "";
+function formatDateTime(dateStr, timeStr){
+  if(!dateStr) return timeStr || "";
   const d = new Date(dateStr);
-  if(Number.isNaN(d.getTime())) return dateStr;
-  return d.toLocaleDateString("sr-RS");
+  const datePart = Number.isNaN(d.getTime())
+    ? dateStr
+    : d.toLocaleDateString("sr-RS");
+  return timeStr ? `${datePart} • ${timeStr}` : datePart;
 }
 
 function loadComments(){
@@ -589,7 +594,10 @@ function populateSourcesDirectory(){
       btn.classList.add("active");
       showAllBtn.style.display = "inline-block";
       renderEntries();
-      window.scrollTo({ top: document.querySelector(".card:last-of-type").offsetTop - 90, behavior: "smooth" });
+      window.scrollTo({
+        top: document.querySelector(".card:last-of-type").offsetTop - 90,
+        behavior: "smooth"
+      });
     });
   });
 }
@@ -638,9 +646,11 @@ function renderEntries(){
         <span class="badge">${escapeHtml(e.source || "Без извора")}</span>
       </div>
 
-      <a class="entry-title" href="${escapeHtml(e.url || "#")}" target="_blank" rel="noopener">${escapeHtml(e.title || "")}</a>
+      <a class="entry-title" href="${escapeHtml(e.url || "#")}" target="_blank" rel="noopener">
+        ${escapeHtml(e.title || "")}
+      </a>
 
-      <div class="entry-meta">${formatDate(e.date)}</div>
+      <div class="entry-meta">${formatDateTime(e.datetime || e.date, e.time)}</div>
 
       ${e.summary ? `
       <div class="entry-section">
@@ -671,12 +681,15 @@ showAllBtn.addEventListener("click", () => {
   document.querySelectorAll(".source-chip").forEach(x => x.classList.remove("active"));
   showAllBtn.style.display = "none";
   renderEntries();
-  window.scrollTo({ top: document.querySelector(".card:last-of-type").offsetTop - 90, behavior: "smooth" });
+  window.scrollTo({
+    top: document.querySelector(".card:last-of-type").offsetTop - 90,
+    behavior: "smooth"
+  });
 });
 
 async function loadEntries(){
   try{
-    const res = await fetch("scanner-data.json", {cache:"no-store"});
+    const res = await fetch("scanner-data.json", { cache: "no-store" });
     if(!res.ok) throw new Error("Неуспешно учитавање JSON-а.");
     const data = await res.json();
 
