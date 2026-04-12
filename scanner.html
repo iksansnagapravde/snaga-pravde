@@ -16,15 +16,43 @@
   --text:#111;
   --line:rgba(0,0,0,0.12);
   --green:#25D366;
+  --soft:#f5f5f7;
+  --soft2:#f9fafb;
+  --danger:#b42318;
 }
+
+/* RESET */
 *{box-sizing:border-box;margin:0;padding:0}
 a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
 
+/* BODY + ORIGINAL BACKGROUND */
 body{
   font-family:"Playfair Display",serif;
   color:var(--text);
   padding-bottom:140px;
+  overflow-x:hidden;
   background:#fafafa;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:url('lady-justice-hero.webp') center top / cover no-repeat;
+  animation:goddessReveal 1.3s ease-out both;
+}
+
+@keyframes goddessReveal{
+  0%{
+    transform:translate(80px,100px) scale(1.08);
+    opacity:0.8;
+  }
+  100%{
+    transform:translate(0,0) scale(1);
+    opacity:1;
+  }
 }
 
 /* HEADER */
@@ -35,20 +63,23 @@ header{
   border-bottom:1px solid var(--line);
   z-index:1000;
 }
+
 .head{
   max-width:1150px;
   margin:auto;
   padding:12px 0;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
+
 .brand{
   display:flex;
   align-items:center;
   gap:12px;
   padding-left:12px;
 }
+
 .logo-box{
   width:72px;
   height:72px;
@@ -57,9 +88,21 @@ header{
   align-items:center;
   justify-content:center;
 }
-.logo-box img{width:66px;}
-.brand-text .top{font-size:.6rem;color:#777;}
-.brand-text .main{font-size:.78rem;font-weight:600;}
+
+.logo-box img{
+  width:66px;
+}
+
+.brand-text .top{
+  font-size:0.6rem;
+  color:#777;
+}
+
+.brand-text .main{
+  font-size:0.78rem;
+  font-weight:600;
+  white-space:nowrap;
+}
 
 .nav-right{
   display:flex;
@@ -72,23 +115,27 @@ header{
   background:var(--orange);
   color:#fff;
   padding:10px 20px;
-  font-size:.75rem;
+  font-size:0.75rem;
   font-weight:700;
 }
 
 /* MENU */
 .menu{position:relative}
+
 .menu-btn{
-  width:26px;height:18px;
+  width:26px;
+  height:18px;
   display:flex;
   flex-direction:column;
   justify-content:space-between;
   cursor:pointer;
 }
+
 .menu-btn span{
   height:2px;
   background:#000;
 }
+
 .dropdown{
   position:absolute;
   top:calc(100% + 10px);
@@ -98,152 +145,426 @@ header{
   display:none;
   min-width:270px;
 }
-.menu.open .dropdown{display:block;}
+
+.menu.open .dropdown{display:block}
+
 .dropdown a{
   display:block;
   padding:10px 14px;
-  font-size:.85rem;
+  font-size:0.85rem;
   border-bottom:1px solid var(--line);
 }
 
-/* HERO */
-.hero{height:120px;}
+.dropdown a:last-child{border:none}
 
+/* HERO */
+.hero{
+  height:260px;
+}
+
+/* ORIGINAL TOP BUTTONS */
+.top-buttons{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  margin-top:-80px;
+}
+
+.btn-lite,
+.btn-secondary{
+  width:auto;
+  display:inline-block;
+  padding:14px 26px;
+  font-size:0.9rem;
+  font-weight:700;
+  text-align:center;
+  border-radius:4px;
+}
+
+.btn-lite{
+  background:#fff;
+  border:1px solid rgba(10,63,120,0.25);
+  color:#0a3f78;
+}
+
+.btn-secondary{
+  background:#f4f6f8;
+  color:#0a3f78;
+  border:1px solid rgba(10,63,120,0.25);
+}
+
+.btn-main{
+  background:var(--blue);
+  color:#fff;
+  width:auto;
+  display:inline-block;
+  padding:18px 34px;
+  font-size:1rem;
+  font-weight:700;
+  border-radius:4px;
+  box-shadow:0 10px 25px rgba(10,63,120,0.25);
+}
+
+/* MAIN */
 .container{
   max-width:1150px;
   margin:auto;
   padding:20px;
 }
 
-.scanner-hero{
-  text-align:center;
-  margin-bottom:40px;
-}
-.scanner-hero h1{
-  font-size:2.2rem;
-  color:var(--blue);
-  margin-bottom:10px;
-}
-.scanner-hero p{
-  color:#555;
-  font-size:1rem;
+.panel{
+  background:rgba(255,255,255,0.96);
+  border-radius:24px;
+  padding:28px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.07);
+  backdrop-filter:blur(2px);
 }
 
-/* DASHBOARD */
-.dashboard{
+.scanner-hero{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.scanner-hero h1{
+  font-size:2rem;
+  color:var(--blue);
+  margin-bottom:12px;
+}
+
+.scanner-hero p{
+  font-size:1rem;
+  color:#555;
+  max-width:850px;
+  margin:0 auto;
+  line-height:1.6;
+}
+
+.grid-2{
   display:grid;
   grid-template-columns:1.2fr 1fr;
   gap:20px;
-  margin-bottom:30px;
-}
-@media(max-width:900px){
-.dashboard{grid-template-columns:1fr;}
+  margin-top:24px;
 }
 
+@media(max-width:900px){
+  .grid-2{grid-template-columns:1fr}
+}
+
+/* CARDS */
 .card{
-  background:#f5f5f7;
+  background:var(--soft);
   border-radius:20px;
-  padding:24px;
-  box-shadow:0 6px 18px rgba(0,0,0,.05);
-  margin-bottom:25px;
+  padding:22px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.05);
+  margin-bottom:20px;
+}
+
+.card h3{
+  font-size:1rem;
+  margin-bottom:14px;
+  color:#111;
 }
 
 /* TABLE */
 .scanner-table{
   width:100%;
   border-collapse:collapse;
-  margin-top:20px;
 }
-.scanner-table th,.scanner-table td{
-  padding:12px;
-  border-bottom:1px solid rgba(0,0,0,.08);
+
+.scanner-table th,
+.scanner-table td{
+  padding:11px 10px;
+  border-bottom:1px solid rgba(0,0,0,0.08);
   text-align:left;
+  font-size:0.88rem;
 }
+
 .bar{
   height:10px;
   background:var(--blue);
   border-radius:20px;
 }
-.w90{width:90%}.w70{width:70%}.w60{width:60%}.w40{width:40%}.w30{width:30%}
+.w95{width:95%}
+.w85{width:85%}
+.w78{width:78%}
+.w70{width:70%}
+.w62{width:62%}
+.w55{width:55%}
 
 /* CHART */
 .chart-box{
   display:flex;
   align-items:flex-end;
-  gap:12px;
+  gap:10px;
   height:180px;
-  margin:30px 0;
+  margin:18px 0 8px;
 }
 .chart-bar{
   flex:1;
   background:var(--orange);
   border-radius:10px 10px 0 0;
 }
-.h50{height:50%}.h65{height:65%}.h80{height:80%}.h70{height:70%}.h90{height:90%}.h85{height:85%}
+.h45{height:45%}
+.h58{height:58%}
+.h70{height:70%}
+.h82{height:82%}
+.h76{height:76%}
+.h88{height:88%}
 
-/* NEWS */
-.headline-item{
-  padding:20px 0;
-  border-bottom:1px solid rgba(0,0,0,.08);
+.muted{
+  font-size:0.86rem;
+  color:#666;
+  line-height:1.6;
 }
-.headline-item a{
-  display:block;
+
+/* TOOLBAR */
+.toolbar{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr auto auto;
+  gap:12px;
+  margin:18px 0 22px;
+}
+
+@media(max-width:900px){
+  .toolbar{
+    grid-template-columns:1fr;
+  }
+}
+
+.input,
+.select,
+.textarea{
+  width:100%;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.12);
+  border-radius:12px;
+  padding:12px 14px;
+  color:#111;
+}
+
+.textarea{
+  min-height:110px;
+  resize:vertical;
+  line-height:1.6;
+}
+
+.button{
+  border:none;
+  border-radius:12px;
+  padding:12px 16px;
   font-weight:700;
+  cursor:pointer;
+}
+
+.button-primary{
+  background:var(--blue);
+  color:#fff;
+}
+
+.button-secondary{
+  background:#fff;
+  color:var(--blue);
+  border:1px solid rgba(10,63,120,0.18);
+}
+
+.button-danger{
+  background:#fff;
+  color:var(--danger);
+  border:1px solid rgba(180,35,24,0.18);
+}
+
+/* FILTER TAGS */
+.filter-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.filter-tag{
+  padding:8px 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,0.10);
+  font-size:0.82rem;
+  cursor:pointer;
+}
+
+.filter-tag.active{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+}
+
+/* ENTRY FORM */
+.admin-box{
+  display:none;
+  margin-bottom:22px;
+}
+
+.admin-box.open{
+  display:block;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.form-grid-1{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  margin-top:14px;
+}
+
+@media(max-width:900px){
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.form-title{
+  font-size:1rem;
+  color:var(--blue);
+  margin-bottom:14px;
+}
+
+.form-note{
+  font-size:0.84rem;
+  color:#666;
+  line-height:1.6;
+  margin-bottom:16px;
+}
+
+/* ENTRIES */
+.entries-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:10px;
+}
+
+.entries-count{
+  font-size:0.86rem;
+  color:#666;
+}
+
+.entry{
+  background:#fff;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.04);
+  margin-bottom:18px;
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.entry-top{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.badge{
+  display:inline-block;
+  padding:5px 10px;
+  background:#f4f6f8;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:999px;
+  font-size:0.74rem;
+}
+
+.entry-title{
+  font-size:1.02rem;
+  line-height:1.5;
+  color:var(--blue);
+  font-weight:700;
+  display:block;
+  margin-bottom:10px;
+}
+
+.entry-meta{
+  font-size:0.82rem;
+  color:#777;
+  margin-bottom:14px;
+}
+
+.entry-section{
+  margin-top:12px;
+  padding-top:12px;
+  border-top:1px solid rgba(0,0,0,0.07);
+}
+
+.entry-section h4{
+  font-size:0.86rem;
   color:var(--blue);
   margin-bottom:8px;
 }
-.headline-date{
-  font-size:.8rem;
-  color:#777;
-  margin-bottom:10px;
-}
-.category-tag{
-  display:inline-block;
-  padding:5px 10px;
-  background:#fff;
-  border-radius:10px;
-  font-size:.75rem;
-  margin-bottom:10px;
-  border:1px solid rgba(0,0,0,.08);
+
+.entry-section p{
+  font-size:0.9rem;
+  color:#333;
+  line-height:1.7;
+  white-space:pre-wrap;
 }
 
-.analysis-box{
-  margin-top:12px;
-  padding:14px;
-  background:#fff;
-  border-left:4px solid var(--blue);
-  border-radius:10px;
-  font-size:.9rem;
+.entry-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:14px;
 }
-.analysis-box p{
-  margin:6px 0 12px;
-  color:#444;
+
+.empty-state{
+  background:#fff;
+  border-radius:18px;
+  padding:26px;
+  text-align:center;
+  color:#666;
+  border:1px dashed rgba(0,0,0,0.14);
 }
 
 /* SOCIAL */
 .social-bar{
   position:fixed;
-  right:12px;
+  right:-80px;
   bottom:120px;
   display:flex;
   flex-direction:column;
   gap:12px;
   z-index:9999;
+  transition:0.6s;
+  opacity:0;
 }
+
+.social-bar.show{
+  right:12px;
+  opacity:1;
+}
+
 .social-bar a{
-  width:44px;height:44px;
+  width:44px;
+  height:44px;
   background:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
   border:1px solid var(--line);
 }
-.social-bar img{width:20px;}
+
+.social-bar img{
+  width:20px;
+}
 
 /* WHATSAPP */
 .wa-btn{
   position:fixed;
-  right:12px;
+  right:-220px;
   bottom:50px;
   display:flex;
   align-items:center;
@@ -251,8 +572,16 @@ header{
   padding:12px 18px;
   background:#25D366;
   color:#fff;
+  font-size:0.85rem;
   border-radius:40px;
+  transition:0.6s;
+  z-index:10000;
 }
+
+.wa-btn.show{
+  right:12px;
+}
+
 .wa-btn img{
   width:22px;
   filter:brightness(0) invert(1);
@@ -263,112 +592,267 @@ header{
 <body>
 
 <header>
-<div class="head">
+  <div class="head">
 
-<div class="brand">
-<div class="logo-box">
-<img src="logo-white.png">
-</div>
-<div class="brand-text">
-<div class="top">Удружење грађана</div>
-<div class="main">Иксан Снага правде</div>
-</div>
-</div>
+    <div class="brand">
+      <div class="logo-box">
+        <img src="logo-white.png" alt="Лого">
+      </div>
 
-<div class="nav-right">
+      <div class="brand-text">
+        <div class="top">Удружење грађана</div>
+        <div class="main">Иксан Снага правде</div>
+      </div>
+    </div>
 
-<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+    <div class="nav-right">
+      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-<div class="menu" id="menu">
-<div class="menu-btn">
-<span></span><span></span><span></span>
-</div>
-<div class="dropdown">
-<a href="index.html"><b>ПОЧЕТНА</b></a>
-<a href="scanner.html"><b>Скенер Снаге Правде</b></a>
-<a href="kontakt.html">Контакт</a>
-<a href="onama.html">О нама</a>
-<a href="oblasti.html">Области деловања</a>
-<a href="ciljevi.html">Стратешки циљеви</a>
-<a href="inicijative.html">Захтеви – закони – предмети</a>
-<a href="prijavi.html">Представка грађанина</a>
-<a href="uradili.html">Шта смо урадили</a>
-</div>
-</div>
+      <div class="menu" id="menu">
+        <div class="menu-btn" aria-label="Мени">
+          <span></span><span></span><span></span>
+        </div>
 
-</div>
-</div>
+        <div class="dropdown">
+          <a href="index.html"><b>ПОЧЕТНА</b></a>
+          <a href="kontakt.html">Контакт</a>
+          <a href="onama.html">О нама</a>
+          <a href="oblasti.html">Области деловања</a>
+          <a href="ciljevi.html">Стратешки циљеви</a>
+          <a href="inicijative.html">Захтеви – закони – предмети</a>
+          <a href="doniraj.html">Донирај</a>
+          <a href="prikljucise.html">Прикључи се</a>
+          <a href="prijavi.html">Представка грађанина</a>
+          <a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
+          <a href="porekloimovine.html">Мере уштеде</a>
+          <a href="sudpravda.html">Реформа судства</a>
+          <a href="radnicipreduzetnici.html">Права радника</a>
+          <a href="pravicna-konkurencija.html">Заштита предузетника</a>
+          <a href="uradili.html">Шта смо урадили</a>
+          <a href="scanner.html"><b>Скенер Снаге Правде</b></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </header>
 
 <div class="hero"></div>
 
+<div class="top-buttons">
+  <a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
+  <a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
+  <a href="uradili.html" class="btn-secondary">ШТА СМО УРАДИЛИ</a>
+</div>
+
 <div class="container">
+  <div class="panel">
 
-<section class="scanner-hero">
-<h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
-<p>
-Национални мониторинг људских, социјалних права, правосуђа, антикорупције и економске правде у Србији.
-</p>
-</section>
+    <section class="scanner-hero">
+      <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+      <p>
+        Национални уреднички мониторинг тема од јавног интереса у Србији: људска права, социјална права, права деце, пензионера и особа са инвалидитетом, мањинска права, притворени и лишени слободе, правосуђе, избори, корупција, јавне набавке, инфраструктурни пројекти, плате, минимална примања и егзистенција.
+      </p>
+    </section>
 
-<!-- DASHBOARD -->
-<section class="dashboard">
+    <section class="grid-2">
+      <div class="card">
+        <h3>КАТЕГОРИЈЕ КОЈЕ СКЕНЕР ПРАТИ</h3>
+        <table class="scanner-table">
+          <tr><th>Област</th><th>Тежина</th><th>Приоритет</th></tr>
+          <tr><td>Социјална права и егзистенција</td><td>висока</td><td><div class="bar w95"></div></td></tr>
+          <tr><td>Извршења, дугови, становање</td><td>висока</td><td><div class="bar w85"></div></td></tr>
+          <tr><td>Права деце, пензионера, инвалидитет</td><td>висока</td><td><div class="bar w78"></div></td></tr>
+          <tr><td>Правосуђе, притвор, лишење слободе</td><td>висока</td><td><div class="bar w70"></div></td></tr>
+          <tr><td>Корупција, јавне набавке, инфраструктура</td><td>висока</td><td><div class="bar w62"></div></td></tr>
+          <tr><td>Медији, избори, грађанске слободе</td><td>средња</td><td><div class="bar w55"></div></td></tr>
+        </table>
+      </div>
 
-<div class="card">
-<h3>О ЧЕМУ СРБИЈА ДАНАС ГОВОРИ</h3>
-<table class="scanner-table">
-<tr><th>Категорија</th><th>Број тема</th><th>Тренд</th></tr>
-<tr><td>Социјална права</td><td>14</td><td><div class="bar w90"></div></td></tr>
-<tr><td>Извршења и дугови</td><td>11</td><td><div class="bar w70"></div></td></tr>
-<tr><td>Права деце</td><td>9</td><td><div class="bar w60"></div></td></tr>
-<tr><td>Корупција / јавне набавке</td><td>8</td><td><div class="bar w60"></div></td></tr>
-<tr><td>Права притворених</td><td>5</td><td><div class="bar w40"></div></td></tr>
-</table>
+      <div class="card">
+        <h3>КАКО ОВО РАДИ</h3>
+        <div class="chart-box">
+          <div class="chart-bar h45"></div>
+          <div class="chart-bar h58"></div>
+          <div class="chart-bar h70"></div>
+          <div class="chart-bar h82"></div>
+          <div class="chart-bar h76"></div>
+          <div class="chart-bar h88"></div>
+        </div>
+        <p class="muted">
+          Ова верзија је намерно уређивачка: уносите само проверене и темељне наслове, са датумом, извором, кратким описом, вашом анализом и предлогом. Тако добијате тачност, контролу и озбиљност.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="entries-header">
+        <h3>УРЕДНИЧКИ ПАНЕЛ</h3>
+        <button class="button button-primary" id="toggleAdminBtn">ДОДАЈ НАСЛОВ</button>
+      </div>
+
+      <p class="muted" style="margin-bottom:16px;">
+        Уносите само темељне, релевантне наслове о Србији или са директним последицама по Србију. Не уносити пуке дневнополитичке изјаве без тежине.
+      </p>
+
+      <div class="admin-box" id="adminBox">
+        <div class="form-title">Нови унос</div>
+        <div class="form-note">
+          Препоручени извори: N1, Данас, Nova, BIRN, CINS, Insajder, RTS, Amnesty, Human Rights Watch, UN/OHCHR, Европска комисија. Можете унети и други извор ако је релевантан и проверљив.
+        </div>
+
+        <div class="form-grid">
+          <input id="title" class="input" placeholder="Наслов текста">
+          <input id="url" class="input" placeholder="Линк ка оригиналном тексту">
+        </div>
+
+        <div class="form-grid-1">
+          <input id="summary" class="input" placeholder="Кратко: о чему је текст и зашто је важан">
+        </div>
+
+        <div class="form-grid" style="margin-top:14px;">
+          <select id="source" class="select">
+            <option value="">Изабери извор</option>
+            <option>N1</option>
+            <option>Данас</option>
+            <option>Nova</option>
+            <option>BIRN</option>
+            <option>CINS</option>
+            <option>Insajder</option>
+            <option>RTS</option>
+            <option>Amnesty International</option>
+            <option>Human Rights Watch</option>
+            <option>UN / OHCHR</option>
+            <option>Европска комисија</option>
+            <option>Други</option>
+          </select>
+
+          <input id="customSource" class="input" placeholder="Ако је 'Други', упишите извор">
+
+          <input id="date" class="input" type="date">
+        </div>
+
+        <div class="form-grid" style="margin-top:14px;">
+          <select id="category" class="select">
+            <option value="">Изабери категорију</option>
+            <option>Социјална права</option>
+            <option>Извршења и дугови</option>
+            <option>Радничка права и плате</option>
+            <option>Права деце</option>
+            <option>Права пензионера</option>
+            <option>Права особа са инвалидитетом</option>
+            <option>Мањинска права</option>
+            <option>Правосуђе и приступ правди</option>
+            <option>Притворени, осуђени и лишени слободе</option>
+            <option>Здравство</option>
+            <option>Образовање</option>
+            <option>Слобода медија и грађанске слободе</option>
+            <option>Избори и институције</option>
+            <option>Корупција и хапшења</option>
+            <option>Јавне набавке и инфраструктурни пројекти</option>
+            <option>Економска правда и егзистенцијални минимум</option>
+          </select>
+
+          <select id="priority" class="select">
+            <option value="Праћење">Приоритет: Праћење</option>
+            <option value="Озбиљно">Приоритет: Озбиљно</option>
+            <option value="Хитно">Приоритет: Хитно</option>
+          </select>
+        </div>
+
+        <div class="form-grid-1">
+          <textarea id="analysis" class="textarea" placeholder="НАША АНАЛИЗА: ваша непристрасна, аргументована анализа"></textarea>
+          <textarea id="proposal" class="textarea" placeholder="НАШ ПРЕДЛОГ: препорука, решење, системска мера"></textarea>
+        </div>
+
+        <div class="entry-actions">
+          <button class="button button-primary" id="saveBtn">САЧУВАЈ УНОС</button>
+          <button class="button button-secondary" id="exportBtn">ИЗВЕЗИ JSON</button>
+          <button class="button button-secondary" id="importBtn">УВЕЗИ JSON</button>
+          <button class="button button-danger" id="clearAllBtn">ОБРИШИ СВЕ</button>
+          <input type="file" id="importFile" accept=".json" style="display:none;">
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>ПРЕТРАГА И ФИЛТЕРИ</h3>
+
+      <div class="toolbar">
+        <input id="searchInput" class="input" placeholder="Претрага по наслову, анализи, извору...">
+        <select id="categoryFilter" class="select">
+          <option value="Све">Све категорије</option>
+          <option>Социјална права</option>
+          <option>Извршења и дугови</option>
+          <option>Радничка права и плате</option>
+          <option>Права деце</option>
+          <option>Права пензионера</option>
+          <option>Права особа са инвалидитетом</option>
+          <option>Мањинска права</option>
+          <option>Правосуђе и приступ правди</option>
+          <option>Притворени, осуђени и лишени слободе</option>
+          <option>Здравство</option>
+          <option>Образовање</option>
+          <option>Слобода медија и грађанске слободе</option>
+          <option>Избори и институције</option>
+          <option>Корупција и хапшења</option>
+          <option>Јавне набавке и инфраструктурни пројекти</option>
+          <option>Економска правда и егзистенцијални минимум</option>
+        </select>
+
+        <select id="priorityFilter" class="select">
+          <option value="Све">Сви приоритети</option>
+          <option>Хитно</option>
+          <option>Озбиљно</option>
+          <option>Праћење</option>
+        </select>
+
+        <button class="button button-secondary" id="sortBtn">НАЈНОВИЈЕ ПРВО</button>
+        <button class="button button-secondary" id="seedBtn">УБАЦИ ПРИМЕРЕ</button>
+      </div>
+
+      <div class="filter-tags" id="quickTags">
+        <button class="filter-tag active" data-tag="Све">Све</button>
+        <button class="filter-tag" data-tag="Социјална права">Социјална права</button>
+        <button class="filter-tag" data-tag="Извршења и дугови">Извршења</button>
+        <button class="filter-tag" data-tag="Права деце">Деца</button>
+        <button class="filter-tag" data-tag="Права пензионера">Пензионери</button>
+        <button class="filter-tag" data-tag="Права особа са инвалидитетом">Инвалидитет</button>
+        <button class="filter-tag" data-tag="Мањинска права">Мањинска</button>
+        <button class="filter-tag" data-tag="Притворени, осуђени и лишени слободе">Лишени слободе</button>
+        <button class="filter-tag" data-tag="Корупција и хапшења">Корупција</button>
+        <button class="filter-tag" data-tag="Јавне набавке и инфраструктурни пројекти">Набавке</button>
+        <button class="filter-tag" data-tag="Радничка права и плате">Плате</button>
+      </div>
+
+      <div class="entries-header">
+        <div class="entries-count" id="entriesCount">0 уноса</div>
+      </div>
+
+      <div id="entriesList"></div>
+    </section>
+
+  </div>
 </div>
 
-<div class="card">
-<h3>ТРЕНД НЕПРАВДЕ — ПОСЛЕДЊИХ 30 ДАНА</h3>
-<div class="chart-box">
-<div class="chart-bar h50"></div>
-<div class="chart-bar h65"></div>
-<div class="chart-bar h80"></div>
-<div class="chart-bar h70"></div>
-<div class="chart-bar h90"></div>
-<div class="chart-bar h85"></div>
-</div>
-<p>Прати само теме које имају директан утицај на права грађана Србије.</p>
-</div>
-
-</section>
-
-<!-- NEWS FEED -->
-<section class="card">
-<h3>РЕЛЕВАНТНИ НАСЛОВИ — САМО ТЕМЕ ОД ЈАВНОГ ИНТЕРЕСА</h3>
-<div id="news-feed">Учитавање...</div>
-</section>
-
+<div class="social-bar" id="socialBar">
+  <a href="https://www.tiktok.com/@snagapravde.rs" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+  </a>
+  <a href="https://www.facebook.com/share/1Cg8eMT8Vz/" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+  </a>
+  <a href="https://www.instagram.com/snagapravde.rs" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+  </a>
+  <a href="https://youtube.com/@iksan.snaga.pravde" target="_blank" rel="noopener">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+  </a>
 </div>
 
-<!-- SOCIAL -->
-<div class="social-bar">
-<a href="https://www.tiktok.com/@snagapravde.rs" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
-</a>
-<a href="https://www.facebook.com/share/1Cg8eMT8Vz/" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg">
-</a>
-<a href="https://www.instagram.com/snagapravde.rs" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
-</a>
-<a href="https://youtube.com/@iksan.snaga.pravde" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
-</a>
-</div>
-
-<!-- WHATSAPP -->
 <a href="https://wa.me/381665857707" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-Пишите нам
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Пишите нам
 </a>
 
 <script>
@@ -376,100 +860,380 @@ header{
 const menu = document.getElementById('menu');
 menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
-/* SMART FILTER KEYWORDS */
-const keywords = [
-"извршење","дуг","извршитељ","плата","минимална зарада","пензија",
-"пензионери","деца","дечја права","инвалидитет","особе са инвалидитетом",
-"мањине","дискриминација","социјална заштита","сиромаштво",
-"корупција","јавне набавке","тендер","злоупотреба","хапшење",
-"притвор","осуђеници","затвор","лишење слободе","суђење",
-"радници","неисплаћене зараде","боловање","дечји додатак",
-"здравство","образовање","избори","слобода медија"
-];
-
-/* CATEGORY DETECTOR */
-function detectCategory(title){
-const t = title.toLowerCase();
-
-if(t.includes("извршење") || t.includes("дуг")) return "ИЗВРШЕЊА";
-if(t.includes("пензи")) return "ПЕНЗИОНЕРИ";
-if(t.includes("дец")) return "ПРАВА ДЕЦЕ";
-if(t.includes("инвалид")) return "ИНВАЛИДИТЕТ";
-if(t.includes("коруп") || t.includes("тендер")) return "КОРУПЦИЈА";
-if(t.includes("притвор") || t.includes("затвор")) return "ЛИШЕНИ СЛОБОДЕ";
-if(t.includes("радници") || t.includes("плата")) return "РАДНИЧКА ПРАВА";
-if(t.includes("мањин")) return "МАЊИНСКА ПРАВА";
-if(t.includes("социјал")) return "СОЦИЈАЛНА ПРАВА";
-return "ЉУДСКА ПРАВА";
-}
-
-/* RSS SOURCES */
-const feeds = [
-"https://n1info.rs/feed/",
-"https://www.danas.rs/feed/",
-"https://nova.rs/feed/",
-"https://birn.rs/feed/",
-"https://www.cins.rs/feed/",
-"https://insajder.net/rss",
-"https://www.rts.rs/page/stories/sr/rss/1/vesti.html",
-"https://www.amnesty.org/en/latest/rss.xml",
-"https://www.hrw.org/rss/news",
-"https://www.ohchr.org/en/rss.xml"
-];
-
-const container = document.getElementById("news-feed");
-container.innerHTML = "";
-
-feeds.forEach(feed => {
-fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed)}`)
-.then(res=>res.json())
-.then(data=>{
-if(!data.items) return;
-
-data.items.forEach(item=>{
-
-const title = item.title.toLowerCase();
-
-/* FILTER ONLY RELEVANT TOPICS */
-const relevant = keywords.some(k=>title.includes(k));
-
-/* MUST BE ABOUT SERBIA */
-const serbiaRelevant =
-title.includes("србиј") ||
-title.includes("serbia") ||
-title.includes("beograd") ||
-title.includes("srbija");
-
-if(relevant && serbiaRelevant){
-
-const cat = detectCategory(item.title);
-
-const div = document.createElement("div");
-div.className = "headline-item";
-
-div.innerHTML = `
-<div class="category-tag">${cat}</div>
-<a href="${item.link}" target="_blank">${item.title}</a>
-<div class="headline-date">${new Date(item.pubDate).toLocaleDateString('sr-RS')}</div>
-
-<div class="analysis-box">
-<strong>НАША АНАЛИЗА:</strong>
-<p>Овде уносите вашу стручну анализу овог текста.</p>
-
-<strong>НАШЕ ВИЂЕЊЕ И РЕШЕЊЕ:</strong>
-<p>Овде уносите предлоге, ставове и препоруке.</p>
-</div>
-`;
-
-container.appendChild(div);
-
-}
-
+/* LOAD ANIMATION */
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("socialBar").classList.add("show");
+    document.querySelector(".wa-btn").classList.add("show");
+  }, 400);
 });
 
-})
-.catch(err=>console.log(err));
+/* STORAGE */
+const STORAGE_KEY = "scanner_snage_pravde_entries_v1";
+
+/* STATE */
+let entries = [];
+let sortNewestFirst = true;
+
+/* ELEMENTS */
+const adminBox = document.getElementById("adminBox");
+const toggleAdminBtn = document.getElementById("toggleAdminBtn");
+const entriesList = document.getElementById("entriesList");
+const entriesCount = document.getElementById("entriesCount");
+
+const titleEl = document.getElementById("title");
+const urlEl = document.getElementById("url");
+const summaryEl = document.getElementById("summary");
+const sourceEl = document.getElementById("source");
+const customSourceEl = document.getElementById("customSource");
+const dateEl = document.getElementById("date");
+const categoryEl = document.getElementById("category");
+const priorityEl = document.getElementById("priority");
+const analysisEl = document.getElementById("analysis");
+const proposalEl = document.getElementById("proposal");
+
+const saveBtn = document.getElementById("saveBtn");
+const exportBtn = document.getElementById("exportBtn");
+const importBtn = document.getElementById("importBtn");
+const importFile = document.getElementById("importFile");
+const clearAllBtn = document.getElementById("clearAllBtn");
+const searchInput = document.getElementById("searchInput");
+const categoryFilter = document.getElementById("categoryFilter");
+const priorityFilter = document.getElementById("priorityFilter");
+const sortBtn = document.getElementById("sortBtn");
+const seedBtn = document.getElementById("seedBtn");
+
+/* HELPERS */
+function escapeHtml(str){
+  return String(str || "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function formatDate(dateStr){
+  if(!dateStr) return "";
+  const d = new Date(dateStr);
+  if(Number.isNaN(d.getTime())) return dateStr;
+  return d.toLocaleDateString("sr-RS");
+}
+
+function priorityBadge(priority){
+  if(priority === "Хитно") return "🔴 Хитно";
+  if(priority === "Озбиљно") return "🟠 Озбиљно";
+  return "🟡 Праћење";
+}
+
+function saveToStorage(){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
+}
+
+function loadFromStorage(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    entries = raw ? JSON.parse(raw) : [];
+  }catch{
+    entries = [];
+  }
+}
+
+function getSourceValue(){
+  if(sourceEl.value === "Други"){
+    return customSourceEl.value.trim();
+  }
+  return sourceEl.value.trim();
+}
+
+function clearForm(){
+  titleEl.value = "";
+  urlEl.value = "";
+  summaryEl.value = "";
+  sourceEl.value = "";
+  customSourceEl.value = "";
+  dateEl.value = "";
+  categoryEl.value = "";
+  priorityEl.value = "Праћење";
+  analysisEl.value = "";
+  proposalEl.value = "";
+}
+
+function validateEntry(){
+  if(!titleEl.value.trim()) return "Унесите наслов.";
+  if(!urlEl.value.trim()) return "Унесите линк.";
+  if(!getSourceValue()) return "Унесите извор.";
+  if(!dateEl.value) return "Унесите датум.";
+  if(!categoryEl.value) return "Изаберите категорију.";
+  return "";
+}
+
+function renderEntries(){
+  const q = searchInput.value.trim().toLowerCase();
+  const cat = categoryFilter.value;
+  const pr = priorityFilter.value;
+
+  let filtered = [...entries];
+
+  if(cat !== "Све"){
+    filtered = filtered.filter(e => e.category === cat);
+  }
+
+  if(pr !== "Све"){
+    filtered = filtered.filter(e => e.priority === pr);
+  }
+
+  if(q){
+    filtered = filtered.filter(e =>
+      e.title.toLowerCase().includes(q) ||
+      e.source.toLowerCase().includes(q) ||
+      (e.summary || "").toLowerCase().includes(q) ||
+      (e.analysis || "").toLowerCase().includes(q) ||
+      (e.proposal || "").toLowerCase().includes(q) ||
+      e.category.toLowerCase().includes(q)
+    );
+  }
+
+  filtered.sort((a,b)=>{
+    const da = new Date(a.date).getTime();
+    const db = new Date(b.date).getTime();
+    return sortNewestFirst ? db - da : da - db;
+  });
+
+  entriesCount.textContent = `${filtered.length} уноса`;
+
+  if(!filtered.length){
+    entriesList.innerHTML = `
+      <div class="empty-state">
+        Нема уноса за изабрани филтер. Додајте први проверени наслов преко „ДОДАЈ НАСЛОВ“.
+      </div>
+    `;
+    return;
+  }
+
+  entriesList.innerHTML = filtered.map((e, idx) => `
+    <article class="entry">
+      <div class="entry-top">
+        <span class="badge">${escapeHtml(e.category)}</span>
+        <span class="badge">${escapeHtml(priorityBadge(e.priority))}</span>
+        <span class="badge">${escapeHtml(e.source)}</span>
+      </div>
+
+      <a class="entry-title" href="${escapeHtml(e.url)}" target="_blank" rel="noopener">${escapeHtml(e.title)}</a>
+
+      <div class="entry-meta">${formatDate(e.date)}</div>
+
+      ${e.summary ? `
+      <div class="entry-section">
+        <h4>О ЧЕМУ ЈЕ ТЕКСТ</h4>
+        <p>${escapeHtml(e.summary)}</p>
+      </div>` : ""}
+
+      ${e.analysis ? `
+      <div class="entry-section">
+        <h4>НАША АНАЛИЗА</h4>
+        <p>${escapeHtml(e.analysis)}</p>
+      </div>` : ""}
+
+      ${e.proposal ? `
+      <div class="entry-section">
+        <h4>НАШ ПРЕДЛОГ</h4>
+        <p>${escapeHtml(e.proposal)}</p>
+      </div>` : ""}
+
+      <div class="entry-actions">
+        <button class="button button-secondary" onclick="editEntry('${e.id}')">ИЗМЕНИ</button>
+        <button class="button button-danger" onclick="deleteEntry('${e.id}')">ОБРИШИ</button>
+      </div>
+    </article>
+  `).join("");
+}
+
+function addEntry(){
+  const error = validateEntry();
+  if(error){
+    alert(error);
+    return;
+  }
+
+  const entry = {
+    id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()),
+    title: titleEl.value.trim(),
+    url: urlEl.value.trim(),
+    summary: summaryEl.value.trim(),
+    source: getSourceValue(),
+    date: dateEl.value,
+    category: categoryEl.value,
+    priority: priorityEl.value,
+    analysis: analysisEl.value.trim(),
+    proposal: proposalEl.value.trim()
+  };
+
+  entries.unshift(entry);
+  saveToStorage();
+  clearForm();
+  renderEntries();
+  adminBox.classList.remove("open");
+}
+
+function deleteEntry(id){
+  const ok = confirm("Да ли желите да обришете овај унос?");
+  if(!ok) return;
+  entries = entries.filter(e => e.id !== id);
+  saveToStorage();
+  renderEntries();
+}
+
+function editEntry(id){
+  const entry = entries.find(e => e.id === id);
+  if(!entry) return;
+
+  titleEl.value = entry.title || "";
+  urlEl.value = entry.url || "";
+  summaryEl.value = entry.summary || "";
+  dateEl.value = entry.date || "";
+  categoryEl.value = entry.category || "";
+  priorityEl.value = entry.priority || "Праћење";
+  analysisEl.value = entry.analysis || "";
+  proposalEl.value = entry.proposal || "";
+
+  const knownSources = [
+    "N1","Данас","Nova","BIRN","CINS","Insajder","RTS",
+    "Amnesty International","Human Rights Watch","UN / OHCHR","Европска комисија"
+  ];
+
+  if(knownSources.includes(entry.source)){
+    sourceEl.value = entry.source;
+    customSourceEl.value = "";
+  }else{
+    sourceEl.value = "Други";
+    customSourceEl.value = entry.source || "";
+  }
+
+  entries = entries.filter(e => e.id !== id);
+  saveToStorage();
+  adminBox.classList.add("open");
+  window.scrollTo({top: adminBox.offsetTop - 120, behavior: "smooth"});
+}
+
+function exportJSON(){
+  const blob = new Blob([JSON.stringify(entries, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "scanner-snage-pravde.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function importJSON(file){
+  const reader = new FileReader();
+  reader.onload = function(){
+    try{
+      const data = JSON.parse(reader.result);
+      if(!Array.isArray(data)) throw new Error("Фајл није исправан.");
+      entries = data;
+      saveToStorage();
+      renderEntries();
+      alert("Успешан увоз.");
+    }catch{
+      alert("JSON фајл није исправан.");
+    }
+  };
+  reader.readAsText(file);
+}
+
+function seedExamples(){
+  if(entries.length){
+    const ok = confirm("Већ постоје уноси. Да ли желите да додате пример уносе поред постојећих?");
+    if(!ok) return;
+  }
+
+  const sample = [
+    {
+      id: String(Date.now() + 1),
+      title: "Овде унесите проверени наслов о социјалним правима у Србији",
+      url: "https://example.com",
+      summary: "Кратко објасните суштину текста: шта се догодило, кога погађа и зашто је то важно за грађане Србије.",
+      source: "N1",
+      date: new Date().toISOString().slice(0,10),
+      category: "Социјална права",
+      priority: "Озбиљно",
+      analysis: "Овде унесите вашу непристрасну анализу. Повуците везу са системским проблемом, законом, праксом институција или стварним последицама по грађане.",
+      proposal: "Овде унесите ваш предлог: измена праксе, институционална мера, предлог закона, хитна заштита или препорука."
+    },
+    {
+      id: String(Date.now() + 2),
+      title: "Овде унесите проверени наслов о корупцији, јавним набавкама или инфраструктурном пројекту",
+      url: "https://example.com",
+      summary: "Овде укратко ставите о чему је текст и какве су могуће реперкусије по Србију и јавни интерес.",
+      source: "BIRN",
+      date: new Date().toISOString().slice(0,10),
+      category: "Јавне набавке и инфраструктурни пројекти",
+      priority: "Хитно",
+      analysis: "Покажите зашто ово није само вест, већ питање јавне одговорности, безбедности, буџета или права грађана.",
+      proposal: "Унесите предлог: јавни увид, ревизија, тужилачка реакција, парламентарни надзор, санкција или нови стандард."
+    }
+  ];
+
+  entries = [...sample, ...entries];
+  saveToStorage();
+  renderEntries();
+}
+
+/* EVENTS */
+toggleAdminBtn.addEventListener("click", () => {
+  adminBox.classList.toggle("open");
 });
+
+saveBtn.addEventListener("click", addEntry);
+exportBtn.addEventListener("click", exportJSON);
+importBtn.addEventListener("click", ()=> importFile.click());
+importFile.addEventListener("change", (e)=>{
+  const file = e.target.files[0];
+  if(file) importJSON(file);
+  e.target.value = "";
+});
+
+clearAllBtn.addEventListener("click", ()=>{
+  const ok = confirm("Да ли сте сигурни да желите да обришете све уносе?");
+  if(!ok) return;
+  entries = [];
+  saveToStorage();
+  renderEntries();
+});
+
+searchInput.addEventListener("input", renderEntries);
+categoryFilter.addEventListener("change", renderEntries);
+priorityFilter.addEventListener("change", renderEntries);
+
+sortBtn.addEventListener("click", ()=>{
+  sortNewestFirst = !sortNewestFirst;
+  sortBtn.textContent = sortNewestFirst ? "НАЈНОВИЈЕ ПРВО" : "НАЈСТАРИЈЕ ПРВО";
+  renderEntries();
+});
+
+seedBtn.addEventListener("click", seedExamples);
+
+/* QUICK TAGS */
+document.querySelectorAll(".filter-tag").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
+    document.querySelectorAll(".filter-tag").forEach(x=>x.classList.remove("active"));
+    btn.classList.add("active");
+    categoryFilter.value = btn.dataset.tag === "Све" ? "Све" : btn.dataset.tag;
+    renderEntries();
+  });
+});
+
+/* INIT */
+loadFromStorage();
+renderEntries();
+
+/* GLOBALS FOR BUTTONS */
+window.deleteEntry = deleteEntry;
+window.editEntry = editEntry;
 </script>
 
 </body>
