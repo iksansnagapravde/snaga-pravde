@@ -727,17 +727,18 @@ window.addEventListener("load", () => {
       return;
     }
 
-    container.innerHTML = latest.map(item => `
-      <article class="home-scanner-item">
-        <div class="home-scanner-meta">
-          <span class="home-scanner-badge">${item.source || ""}</span>
-          <span class="home-scanner-badge">${item.date || ""}</span>
-        </div>
-        <a href="${item.url || "#"}" target="_blank" rel="noopener" class="home-scanner-title">
-          ${item.title || ""}
-        </a>
-      </article>
-    `).join("");
+container.innerHTML = latest.map(item => `
+  <article class="home-scanner-item">
+    <div class="home-scanner-meta">
+      <span class="home-scanner-badge">${item.source || ""}</span>
+      <span class="home-scanner-badge">${item.date || ""}</span>
+      <span class="home-scanner-badge">${item.time || ""}</span>
+    </div>
+    <a href="${item.url || "#"}" target="_blank" rel="noopener" class="home-scanner-title">
+      ${item.title || ""}
+    </a>
+  </article>
+`).join("");
 
   }catch(e){
     container.innerHTML =
