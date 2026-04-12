@@ -745,7 +745,11 @@ window.addEventListener("load", () => {
   }
 }
 
-loadHomeScannerPreview(); 
+loadHomeScannerPreview();
+
+setInterval(() => {
+  loadHomeScannerPreview();
+}, 60000); 
 </script>
 
 </body>
