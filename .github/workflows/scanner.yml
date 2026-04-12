@@ -32,42 +32,51 @@ jobs:
           from email.utils import parsedate_to_datetime
 
           FEEDS = [
+              ("RTS","https://www.rts.rs/page/stories/sr/rss/1/vesti.html"),
+              ("RTV","https://www.rtv.rs/sr_lat/rss"),
+              ("Tanjug","https://www.tanjug.rs/rss"),
 
-          ("RTS","https://www.rts.rs/page/stories/sr/rss/1/vesti.html"),
-          ("RTV","https://www.rtv.rs/sr_lat/rss"),
-          ("Tanjug","https://www.tanjug.rs/rss"),
+              ("Blic","https://www.blic.rs/rss/dnevne-vesti"),
+              ("Kurir","https://www.kurir.rs/rss"),
+              ("Novosti","https://www.novosti.rs/rss"),
+              ("Politika","https://www.politika.rs/rss"),
+              ("B92","https://www.b92.net/info/rss"),
 
-          ("Blic","https://www.blic.rs/rss/dnevne-vesti"),
-          ("Kurir","https://www.kurir.rs/rss"),
-          ("Novosti","https://www.novosti.rs/rss"),
-          ("Politika","https://www.politika.rs/rss"),
-          ("B92","https://www.b92.net/info/rss"),
+              ("Informer","https://informer.rs/rss"),
+              ("Pink","https://pink.rs/rss"),
 
-          ("Informer","https://informer.rs/rss"),
-          ("Pink","https://pink.rs/rss"),
+              ("N1","https://n1info.rs/feed/"),
+              ("Nova","https://nova.rs/feed/"),
+              ("Danas","https://www.danas.rs/feed/"),
+              ("Insajder","https://insajder.net/rss"),
+              ("BIRN","https://birn.rs/feed/"),
+              ("CINS","https://www.cins.rs/feed/"),
+              ("KRIK","https://www.krik.rs/feed/"),
+              ("Vreme","https://www.vreme.com/feed/"),
 
-          ("N1","https://n1info.rs/feed/"),
-          ("Nova","https://nova.rs/feed/"),
-          ("Danas","https://www.danas.rs/feed/"),
-          ("Insajder","https://insajder.net/rss"),
-          ("BIRN","https://birn.rs/feed/"),
-          ("CINS","https://www.cins.rs/feed/"),
-          ("KRIK","https://www.krik.rs/feed/"),
-          ("Vreme","https://www.vreme.com/feed/"),
+              ("EU Commission","https://ec.europa.eu/commission/presscorner/api/rss"),
+              ("EU Serbia","https://europa.rs/feed/"),
+              ("Council of Europe","https://www.coe.int/en/web/portal/rss-news"),
+              ("OSCE Serbia","https://www.osce.org/rss"),
+              ("UN Serbia","https://serbia.un.org/en/rss.xml"),
+              ("OHCHR","https://www.ohchr.org/en/rss.xml"),
+              ("Human Rights Watch","https://www.hrw.org/rss/news"),
+              ("Amnesty","https://www.amnesty.org/en/latest/rss.xml"),
 
-          ("EU Commission","https://ec.europa.eu/commission/presscorner/api/rss"),
-          ("EU Serbia","https://europa.rs/feed/"),
-          ("Council of Europe","https://www.coe.int/en/web/portal/rss-news"),
-          ("OSCE Serbia","https://www.osce.org/rss"),
-          ("UN Serbia","https://serbia.un.org/en/rss.xml"),
-          ("OHCHR","https://www.ohchr.org/en/rss.xml"),
-          ("Human Rights Watch","https://www.hrw.org/rss/news"),
-          ("Amnesty","https://www.amnesty.org/en/latest/rss.xml"),
+              ("Reuters","https://www.reutersagency.com/feed/?best-topics=world&post_type=best"),
+              ("BBC Serbian","https://feeds.bbci.co.uk/serbian/rss.xml"),
+              ("DW Balkan","https://rss.dw.com/xml/rss-sr-all"),
+              ("Al Jazeera Balkans","https://balkans.aljazeera.net/rss.xml")
+          ]
 
-          ("Reuters","https://www.reutersagency.com/feed/?best-topics=world&post_type=best"),
-          ("BBC Serbian","https://feeds.bbci.co.uk/serbian/rss.xml"),
-          ("DW Balkan","https://rss.dw.com/xml/rss-sr-all"),
-          ("Al Jazeera Balkans","https://balkans.aljazeera.net/rss.xml")
+          DOMESTIC_SOURCES = [
+              "RTS","RTV","Tanjug","Blic","Kurir","Novosti","Politika","B92",
+              "Informer","Pink","N1","Nova","Danas","Insajder",
+              "BIRN","CINS","KRIK","Vreme"
+          ]
+
+          NGO_SOURCES = [
+              "CRTA","Transparency Serbia","YUCOM","Građanske inicijative"
           ]
 
           SERBIA_WORDS = [
@@ -102,62 +111,62 @@ jobs:
               return text.strip()
 
           def contains_any(text, words):
-              t = text.lower()
+              t = (text or "").lower()
               return any(w in t for w in words)
 
           def parse_date(entry):
-              for k in ["published","updated","created"]:
+              for k in ["published", "updated", "created"]:
                   v = entry.get(k)
                   if v:
                       try:
                           dt = parsedate_to_datetime(v)
                           if dt.tzinfo is None:
                               dt = dt.replace(tzinfo=timezone.utc)
-                          return dt
-                      except:
+                          return dt.astimezone(timezone.utc)
+                      except Exception:
                           pass
               return datetime.now(timezone.utc)
 
-def detect_category(text):
-    t = text.lower()
+          def detect_category(text):
+              t = (text or "").lower()
 
-    if "korup" in t or "тендер" in t:
-        return "Корупција"
+              if "korup" in t or "тендер" in t:
+                  return "Корупција"
 
-    if "izvrš" in t or "dug" in t or "изврш" in t:
-        return "Извршења"
+              if "izvrš" in t or "dug" in t or "изврш" in t:
+                  return "Извршења"
 
-    if "plata" in t or "zarada" in t or "плата" in t:
-        return "Плате и зараде"
+              if "plata" in t or "zarada" in t or "плата" in t:
+                  return "Плате и зараде"
 
-    if "penzij" in t or "пензи" in t:
-        return "Пензионери"
+              if "penzij" in t or "пензи" in t:
+                  return "Пензионери"
 
-    if "deca" in t or "дет" in t:
-        return "Права деце"
+              if "deca" in t or "дет" in t:
+                  return "Права деце"
 
-    if "invalid" in t or "инвалид" in t:
-        return "Инвалидитет"
+              if "invalid" in t or "инвалид" in t:
+                  return "Инвалидитет"
 
-    if "manjin" in t or "мањин" in t:
-        return "Мањинска права"
+              if "manjin" in t or "мањин" in t:
+                  return "Мањинска права"
 
-    if "pritvor" in t or "zatvor" in t or "притвор" in t:
-        return "Лишени слободе"
+              if "pritvor" in t or "zatvor" in t or "притвор" in t:
+                  return "Лишени слободе"
 
-    if "pravosu" in t or "суд" in t:
-        return "Правосуђе"
+              if "pravosu" in t or "суд" in t:
+                  return "Правосуђе"
 
-    if "socijal" in t or "социјал" in t:
-        return "Социјална права"
+              if "socijal" in t or "социјал" in t:
+                  return "Социјална права"
 
-    if "izbor" in t or "избор" in t:
-        return "Избори"
+              if "izbor" in t or "избор" in t:
+                  return "Избори"
 
-    return "Људска права"
+              return "Људска права"
 
           def is_english(text):
-              return re.match(r'^[A-Za-z0-9 ,.\':;!?()"/\\-]+$', text or "") is not None
+              return re.match(r"^[A-Za-z0-9 ,.\':;!?()/\\\\-]+$", text or "") is not None
 
           def translate_to_serbian(text):
               try:
@@ -174,12 +183,12 @@ def detect_category(text):
                   if r.status_code == 200:
                       data = r.json()
                       return data.get("translatedText", text)
-              except:
+              except Exception:
                   pass
               return text
 
           now = datetime.now(timezone.utc)
-          cutoff = now - timedelta(days=10)
+          cutoff = now - timedelta(days=30)
 
           collected = []
           seen = set()
@@ -188,9 +197,9 @@ def detect_category(text):
               feed = feedparser.parse(url)
 
               for item in feed.entries:
-                  title = item.get("title","").strip()
-                  link = item.get("link","").strip()
-                  summary = clean_html(item.get("summary",""))
+                  title = (item.get("title") or "").strip()
+                  link = (item.get("link") or "").strip()
+                  summary = clean_html(item.get("summary") or item.get("description") or "")
 
                   if not title or not link:
                       continue
@@ -199,21 +208,24 @@ def detect_category(text):
 
                   blob = f"{title} {summary}"
 
-relevant_serbia = contains_any(blob, SERBIA_WORDS)
-relevant_topic = contains_any(blob, TOPIC_WORDS)
+                  relevant_serbia = contains_any(blob, SERBIA_WORDS)
+                  relevant_topic = contains_any(blob, TOPIC_WORDS)
 
-domestic_sources = [
-    "RTS","RTV","Tanjug","Blic","Kurir","Novosti","Politika","B92",
-    "Informer","Pink","N1","Nova","Danas","Insajder",
-    "BIRN","CINS","KRIK","Vreme"
-]
-
-if source in domestic_sources:
-    if not relevant_topic:
-        continue
-else:
-    if not (relevant_serbia and relevant_topic):
-        continue
+                  if source in DOMESTIC_SOURCES:
+                      domestic_serbia_hint = any(x in blob.lower() for x in [
+                          "srbija", "srbij", "beograd", "београд", "србиј",
+                          "vlada", "skupština", "skupstina", "predsednik srbije",
+                          "ministarstvo", "tužilaštvo", "tuzilastvo", "ustavni sud",
+                          "vrhovni sud", "izborna komisija", "izvršitelj", "izvrsitelj",
+                          "penzioner", "penzija", "socijalna zaštita", "socijalna zastita",
+                          "javne nabavke", "korupcija", "pravosuđe", "pravosudje",
+                          "mediji u srbiji", "protest u srbiji"
+                      ])
+                      if not (relevant_topic and domestic_serbia_hint):
+                          continue
+                  else:
+                      if not (relevant_serbia and relevant_topic):
+                          continue
 
                   dt = parse_date(item)
                   if dt < cutoff:
@@ -221,12 +233,13 @@ else:
 
                   seen.add(link)
 
+                  final_title = title
                   if is_english(title):
-                      title = translate_to_serbian(title)
+                      final_title = translate_to_serbian(title)
 
                   collected.append({
-                      "id": re.sub(r"[^a-zA-Z0-9]+","-",link)[-60:],
-                      "title": title,
+                      "id": re.sub(r"[^a-zA-Z0-9]+", "-", link)[-60:],
+                      "title": final_title,
                       "url": link,
                       "date": dt.date().isoformat(),
                       "source": source,
@@ -234,11 +247,16 @@ else:
                       "summary": ""
                   })
 
-          collected.sort(key=lambda x:x["date"], reverse=True)
-          collected = collected[:20]
+          collected.sort(key=lambda x: x["date"], reverse=True)
+          collected = collected[:50]
 
-          with open("scanner-data.json","w",encoding="utf-8") as f:
-              json.dump({"entries": collected}, f, ensure_ascii=False, indent=2)
+          all_sources = sorted(list(set([x[0] for x in FEEDS] + NGO_SOURCES)))
+
+          with open("scanner-data.json", "w", encoding="utf-8") as f:
+              json.dump({
+                  "entries": collected,
+                  "all_sources": all_sources
+              }, f, ensure_ascii=False, indent=2)
           PY
 
       - name: Commit changes
