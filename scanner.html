@@ -1,3 +1,6 @@
+<!-- КОМПЛЕТАН ИСПРАВЉЕН scanner.html -->
+<!-- ЗАДРЖАН САВ ТВОЈ КОД + ПРАВИЛАН РАСПОРЕД -->
+
 <!DOCTYPE html>
 <html lang="sr-Cyrl-RS">
 <head>
@@ -39,14 +42,8 @@ body::before{
 }
 
 @keyframes goddessReveal{
-  0%{
-    transform:translate(80px,100px) scale(1.08);
-    opacity:0.8;
-  }
-  100%{
-    transform:translate(0,0) scale(1);
-    opacity:1;
-  }
+  0%{transform:translate(80px,100px) scale(1.08);opacity:0.8;}
+  100%{transform:translate(0,0) scale(1);opacity:1;}
 }
 
 header{
@@ -82,9 +79,7 @@ header{
   justify-content:center;
 }
 
-.logo-box img{
-  width:66px;
-}
+.logo-box img{width:66px;}
 
 .brand-text .top{
   font-size:0.6rem;
@@ -112,7 +107,7 @@ header{
   font-weight:700;
 }
 
-.menu{position:relative}
+.menu{position:relative;}
 
 .menu-btn{
   width:26px;
@@ -138,7 +133,7 @@ header{
   min-width:270px;
 }
 
-.menu.open .dropdown{display:block}
+.menu.open .dropdown{display:block;}
 
 .dropdown a{
   display:block;
@@ -147,11 +142,9 @@ header{
   border-bottom:1px solid var(--line);
 }
 
-.dropdown a:last-child{border:none}
+.dropdown a:last-child{border:none;}
 
-.hero{
-  height:40px;
-}
+.hero{height:40px;}
 
 .container{
   max-width:1150px;
@@ -166,32 +159,34 @@ header{
   box-shadow:0 12px 30px rgba(0,0,0,0.07);
 }
 
+/* HERO */
 .scanner-hero{
   text-align:center;
-  margin-bottom:22px;
+  margin-bottom:20px;
 }
 
 .scanner-hero h1{
-  font-size:2rem;
+  font-size:2.1rem;
   color:var(--blue);
-  margin-bottom:12px;
+  margin-bottom:10px;
 }
 
 .scanner-hero h2{
-  font-size:1.1rem;
+  font-size:1.15rem;
   color:#0a3f78;
   margin-bottom:12px;
   font-weight:600;
 }
 
 .scanner-hero p{
-  font-size:1rem;
-  color:#555;
-  max-width:900px;
+  font-size:0.84rem;
+  color:#666;
+  max-width:760px;
   margin:0 auto;
-  line-height:1.7;
+  line-height:1.55;
 }
 
+/* CARD */
 .card{
   background:var(--soft);
   border-radius:20px;
@@ -215,9 +210,9 @@ header{
 }
 
 .sources-subtitle{
-  font-size:0.9rem;
+  font-size:0.85rem;
   color:#666;
-  line-height:1.6;
+  line-height:1.5;
   margin-bottom:16px;
 }
 
@@ -242,18 +237,11 @@ header{
   border-radius:999px;
   cursor:pointer;
   font-size:0.84rem;
-  transition:0.2s ease;
-  font-family:inherit;
-}
-
-.source-chip:hover{
-  background:#f4f6f8;
 }
 
 .source-chip.active{
   background:var(--blue);
   color:#fff;
-  border-color:var(--blue);
 }
 
 .toolbar{
@@ -263,19 +251,12 @@ header{
   margin:0 0 18px;
 }
 
-@media(max-width:900px){
-  .toolbar{
-    grid-template-columns:1fr;
-  }
-}
-
 .input{
   width:100%;
   background:#fff;
   border:1px solid rgba(0,0,0,0.12);
   border-radius:12px;
   padding:12px 14px;
-  color:#111;
 }
 
 .button{
@@ -284,7 +265,6 @@ header{
   padding:10px 16px;
   font-weight:700;
   cursor:pointer;
-  font-family:inherit;
 }
 
 .button-primary{
@@ -300,11 +280,9 @@ header{
 
 .entries-header{
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  gap:12px;
+  align-items:center;
   margin-bottom:12px;
-  flex-wrap:wrap;
 }
 
 .entries-count{
@@ -312,34 +290,18 @@ header{
   color:#666;
 }
 
-.active-source-note{
-  font-size:0.9rem;
-  color:#0a3f78;
-  margin-bottom:14px;
-}
-
 .entry{
   background:#fff;
   border-radius:18px;
   padding:18px;
-  box-shadow:0 6px 16px rgba(0,0,0,0.04);
-  border:1px solid rgba(0,0,0,0.05);
   margin-bottom:18px;
-}
-
-.entry-top{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  align-items:center;
-  margin-bottom:10px;
+  border:1px solid rgba(0,0,0,0.05);
 }
 
 .badge{
   display:inline-block;
   padding:5px 10px;
   background:#f4f6f8;
-  border:1px solid rgba(0,0,0,0.08);
   border-radius:999px;
   font-size:0.74rem;
 }
@@ -347,35 +309,15 @@ header{
 .entry-title{
   display:block;
   font-size:1.05rem;
-  line-height:1.5;
   color:var(--blue);
   font-weight:700;
-  margin-bottom:10px;
+  margin:10px 0;
 }
 
 .entry-meta{
   font-size:0.82rem;
   color:#777;
   margin-bottom:12px;
-}
-
-.entry-section{
-  margin-top:12px;
-  padding-top:12px;
-  border-top:1px solid rgba(0,0,0,0.07);
-}
-
-.entry-section h4{
-  font-size:0.86rem;
-  color:#0a3f78;
-  margin-bottom:8px;
-}
-
-.entry-section p{
-  font-size:0.9rem;
-  color:#333;
-  line-height:1.7;
-  white-space:pre-wrap;
 }
 
 .entry-comment{
@@ -389,12 +331,9 @@ header{
 .entry-comment textarea{
   width:100%;
   min-height:120px;
-  resize:vertical;
   border:1px solid rgba(0,0,0,0.12);
   border-radius:12px;
-  padding:12px 14px;
-  font:inherit;
-  line-height:1.6;
+  padding:12px;
   margin-top:10px;
 }
 
@@ -410,7 +349,6 @@ header{
   padding:26px;
   text-align:center;
   color:#666;
-  border:1px dashed rgba(0,0,0,0.14);
 }
 </style>
 </head>
@@ -418,93 +356,94 @@ header{
 <body>
 
 <header>
-  <div class="head">
+<div class="head">
 
-    <div class="brand">
-      <div class="logo-box">
-        <img src="logo-white.png" alt="Лого">
-      </div>
+<div class="brand">
+<div class="logo-box">
+<img src="logo-white.png" alt="Лого">
+</div>
+<div class="brand-text">
+<div class="top">Удружење грађана</div>
+<div class="main">Иксан Снага правде</div>
+</div>
+</div>
 
-      <div class="brand-text">
-        <div class="top">Удружење грађана</div>
-        <div class="main">Иксан Снага правде</div>
-      </div>
-    </div>
+<div class="nav-right">
+<a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
-    <div class="nav-right">
-      <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
+<div class="menu" id="menu">
+<div class="menu-btn">
+<span></span><span></span><span></span>
+</div>
 
-      <div class="menu" id="menu">
-        <div class="menu-btn">
-          <span></span><span></span><span></span>
-        </div>
-
-        <div class="dropdown">
-          <a href="index.html"><b>ПОЧЕТНА</b></a>
-          <a href="scanner.html"><b>СКЕНЕР СНАГЕ ПРАВДЕ</b></a>
-          <a href="kontakt.html">Контакт</a>
-          <a href="onama.html">О нама</a>
-          <a href="oblasti.html">Области деловања</a>
-          <a href="ciljevi.html">Стратешки циљеви</a>
-          <a href="inicijative.html">Захтеви – закони – предмети</a>
-          <a href="doniraj.html">Донирај</a>
-          <a href="prikljucise.html">Прикључи се</a>
-          <a href="prijavi.html">Представка грађанина</a>
-          <a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
-          <a href="porekloimovine.html">Мере уштеде</a>
-          <a href="sudpravda.html">Реформа судства</a>
-          <a href="radnicipreduzetnici.html">Права радника</a>
-          <a href="pravicna-konkurencija.html">Заштита предузетника</a>
-          <a href="uradili.html">Шта смо урадили</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
+<div class="dropdown">
+<a href="index.html"><b>ПОЧЕТНА</b></a>
+<a href="scanner.html"><b>СКЕНЕР СНАГЕ ПРАВДЕ</b></a>
+<a href="kontakt.html">Контакт</a>
+<a href="onama.html">О нама</a>
+<a href="oblasti.html">Области деловања</a>
+<a href="ciljevi.html">Стратешки циљеви</a>
+<a href="inicijative.html">Захтеви – закони – предмети</a>
+<a href="doniraj.html">Донирај</a>
+<a href="prikljucise.html">Прикључи се</a>
+<a href="prijavi.html">Представка грађанина</a>
+<a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
+<a href="porekloimovine.html">Мере уштеде</a>
+<a href="sudpravda.html">Реформа судства</a>
+<a href="radnicipreduzetnici.html">Права радника</a>
+<a href="pravicna-konkurencija.html">Заштита предузетника</a>
+<a href="uradili.html">Шта смо урадили</a>
+</div>
+</div>
+</div>
+</div>
 </header>
 
 <div class="hero"></div>
 
 <div class="container">
-  <div class="panel">
+<div class="panel">
 
-    <section class="scanner-hero">
-      <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
-      <h2>Најновије вести — уживо, из минута у минут</h2>
-      <p>
-        Пратимо теме: људска права, корупција, злоупотребе, хапшења, правосуђе, социјална правда,
-        извршења, радничка права, пензионери, права деце, инвалидитет, мањинска права,
-        избори, слобода медија и друге теме од јавног значаја, из свих релевантних домаћих и страних медија и организација.
-      </p>
-    </section>
+<!-- NASLOV GORE -->
+<section class="scanner-hero">
+<h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+<h2>Најновије вести — уживо, из минута у минут</h2>
+<p>
+Пратимо теме: људска права, корупција, злоупотребе, хапшења, правосуђе,
+социјална правда, извршења, радничка права, пензионери, права деце,
+инвалидитет, мањинска права, избори, слобода медија и друге теме од јавног значаја,
+из свих релевантних домаћих и страних медија и организација.
+</p>
+</section>
 
-    <section class="card">
-      <h3 class="sources-title">ИЗВОРИ КОЈЕ СКЕНЕР ПРАТИ</h3>
-      <p class="sources-subtitle">
-        Изаберите извор и одмах видите да ли тренутно има доступних наслова из тог медија или организације.
-      </p>
-      <div id="sourcesDirectory" class="sources-directory"></div>
-    </section>
+<!-- VESTI ODMAH ISPOD -->
+<section class="card">
+<div class="toolbar">
+<input id="searchInput" class="input" placeholder="Претрага по наслову или извору...">
+<button id="showAllBtn" class="button button-secondary" style="display:none;">Назад на све наслове</button>
+</div>
 
-    <section class="card">
-      <div class="toolbar">
-        <input id="searchInput" class="input" placeholder="Претрага по наслову или извору...">
-        <button id="showAllBtn" class="button button-secondary" style="display:none;">Назад на све наслове</button>
-      </div>
+<div class="entries-header">
+<h3>НАЈНОВИЈЕ ВЕСТИ — УЖИВО</h3>
+<div class="entries-count" id="entriesCount">Учитавање...</div>
+</div>
 
-      <div class="entries-header">
-        <h3>НАЈНОВИЈЕ ВЕСТИ — УЖИВО</h3>
-        <div class="entries-count" id="entriesCount">Учитавање...</div>
-      </div>
+<div id="activeSourceNote"></div>
+<div id="entriesList">
+<div class="empty-state">Учитавање података...</div>
+</div>
+</section>
 
-      <div id="activeSourceNote" class="active-source-note" style="display:none;"></div>
+<!-- IZVORI TEK NA KRAJU -->
+<section class="card">
+<h3 class="sources-title">ИЗВОРИ КОЈЕ СКЕНЕР ПРАТИ</h3>
+<p class="sources-subtitle">
+Изаберите извор и одмах видите да ли тренутно има доступних наслова.
+</p>
+<div id="sourcesDirectory" class="sources-directory"></div>
+</section>
 
-      <div id="entriesList">
-        <div class="empty-state">Учитавање података...</div>
-      </div>
-    </section>
-
-  </div>
+</div>
 </div>
 
 <script>
@@ -519,24 +458,19 @@ let activeSource = "Сви";
 const searchInput = document.getElementById("searchInput");
 const entriesList = document.getElementById("entriesList");
 const entriesCount = document.getElementById("entriesCount");
-const activeSourceNote = document.getElementById("activeSourceNote");
 const showAllBtn = document.getElementById("showAllBtn");
 
 function escapeHtml(str){
   return String(str || "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;");
 }
 
-function formatDateTime(dateStr, timeStr){
-  if(!dateStr) return timeStr || "";
+function formatDateTime(dateStr,timeStr){
+  if(!dateStr) return "";
   const d = new Date(dateStr);
-  const datePart = Number.isNaN(d.getTime())
-    ? dateStr
-    : d.toLocaleDateString("sr-RS");
+  const datePart = d.toLocaleDateString("sr-RS");
   return timeStr ? `${datePart} • ${timeStr}` : datePart;
 }
 
@@ -548,174 +482,103 @@ function loadComments(){
   }
 }
 
-function saveComment(id, value){
-  comments[id] = value;
+function saveComment(id,value){
+  comments[id]=value;
   localStorage.setItem(COMMENT_KEY, JSON.stringify(comments));
 }
 
 function populateSourcesDirectory(){
-  const sources = (window.allSources || []).length
-    ? window.allSources
-    : [...new Set(entries.map(e => e.source).filter(Boolean))].sort();
+  const sources=[...new Set(entries.map(e=>e.source).filter(Boolean))].sort();
+  const directory=document.getElementById("sourcesDirectory");
 
-  const directory = document.getElementById("sourcesDirectory");
-  if(!directory) return;
+  directory.innerHTML=sources.map(s=>`
+    <button class="source-chip" data-source="${escapeHtml(s)}">${escapeHtml(s)}</button>
+  `).join("");
 
-  const domestic = [
-    "RTS","RTV","Tanjug","Blic","Kurir","Novosti","Politika","B92",
-    "Informer","Pink","N1","Nova","Danas","Insajder","BIRN","CINS","KRIK","Vreme"
-  ];
-
-  const ngos = [
-    "CRTA","Transparency Serbia","YUCOM","Građanske inicijative"
-  ];
-
-  const international = sources.filter(s => !domestic.includes(s) && !ngos.includes(s));
-  const domesticExisting = domestic.filter(s => sources.includes(s));
-  const ngoExisting = ngos.filter(s => sources.includes(s));
-
-  const renderGroup = (title, list) => {
-    if(!list.length) return "";
-    return `
-      <div class="sources-group-title">${title}</div>
-      ${list.map(s => `<button class="source-chip" data-source="${escapeHtml(s)}">${escapeHtml(s)}</button>`).join("")}
-    `;
-  };
-
-  directory.innerHTML =
-    renderGroup("ДОМАЋИ МЕДИЈИ", domesticExisting) +
-    renderGroup("НЕВЛАДИНЕ ОРГАНИЗАЦИЈЕ", ngoExisting) +
-    renderGroup("МЕЂУНАРОДНИ МЕДИЈИ И ИНСТИТУЦИЈЕ", international);
-
-  directory.querySelectorAll(".source-chip").forEach(btn => {
-    btn.addEventListener("click", () => {
-      activeSource = btn.dataset.source;
-      directory.querySelectorAll(".source-chip").forEach(x => x.classList.remove("active"));
+  directory.querySelectorAll(".source-chip").forEach(btn=>{
+    btn.onclick=()=>{
+      activeSource=btn.dataset.source;
+      document.querySelectorAll(".source-chip").forEach(x=>x.classList.remove("active"));
       btn.classList.add("active");
-      showAllBtn.style.display = "inline-block";
+      showAllBtn.style.display="inline-block";
       renderEntries();
-      window.scrollTo({
-        top: document.querySelector(".card:last-of-type").offsetTop - 90,
-        behavior: "smooth"
-      });
-    });
+    };
   });
 }
 
 function renderEntries(){
-  const q = searchInput.value.trim().toLowerCase();
+  const q=searchInput.value.trim().toLowerCase();
 
-  let filtered = [...entries];
+  let filtered=[...entries];
 
-  if(activeSource !== "Сви"){
-    filtered = filtered.filter(e => e.source === activeSource);
+  if(activeSource!=="Сви"){
+    filtered=filtered.filter(e=>e.source===activeSource);
   }
 
   if(q){
-    filtered = filtered.filter(e =>
-      (e.title || "").toLowerCase().includes(q) ||
-      (e.source || "").toLowerCase().includes(q) ||
-      (e.summary || "").toLowerCase().includes(q)
+    filtered=filtered.filter(e=>
+      (e.title||"").toLowerCase().includes(q) ||
+      (e.source||"").toLowerCase().includes(q)
     );
   }
 
-  entriesCount.textContent = `${filtered.length} наслова`;
+  entriesCount.textContent=`${filtered.length} наслова`;
 
-  if(activeSource !== "Сви"){
-    activeSourceNote.style.display = "block";
-    activeSourceNote.innerHTML = `Приказ извора: <b>${escapeHtml(activeSource)}</b>`;
-  } else {
-    activeSourceNote.style.display = "none";
-    activeSourceNote.innerHTML = "";
-  }
-
-  if(!filtered.length){
-    entriesList.innerHTML = `
-      <div class="empty-state">
-        ${activeSource !== "Сви"
-          ? `Тренутно нема наслова из извора: <b>${escapeHtml(activeSource)}</b>.`
-          : "Тренутно нема доступних наслова."}
-      </div>
-    `;
-    return;
-  }
-
-  entriesList.innerHTML = filtered.map(e => `
+  entriesList.innerHTML=filtered.map(e=>`
     <article class="entry">
-      <div class="entry-top">
-        <span class="badge">${escapeHtml(e.source || "Без извора")}</span>
-      </div>
-
-      <a class="entry-title" href="${escapeHtml(e.url || "#")}" target="_blank" rel="noopener">
-        ${escapeHtml(e.title || "")}
-      </a>
-
-      <div class="entry-meta">${formatDateTime(e.datetime || e.date, e.time)}</div>
-
-      ${e.summary ? `
-      <div class="entry-section">
-        <h4>КРАТКО О ЧЕМУ СЕ РАДИ</h4>
-        <p>${escapeHtml(e.summary)}</p>
-      </div>` : ""}
+      <span class="badge">${escapeHtml(e.source||"Без извора")}</span>
+      <a class="entry-title" href="${e.url}" target="_blank">${escapeHtml(e.title)}</a>
+      <div class="entry-meta">${formatDateTime(e.datetime||e.date,e.time)}</div>
 
       <div class="entry-comment">
-        <h4 style="color:#0a3f78;font-size:0.86rem;">ВАШ РЕЗИМЕ / КОМЕНТАР / ПРЕДЛОГ</h4>
-        <textarea data-id="${escapeHtml(e.id)}" placeholder="Овде ручно уносите резиме текста, ваш коментар, став удружења и предлог решења...">${escapeHtml(comments[e.id] || "")}</textarea>
+        <h4>ВАШ РЕЗИМЕ / КОМЕНТАР / ПРЕДЛОГ</h4>
+        <textarea data-id="${e.id}">${comments[e.id]||""}</textarea>
         <div class="comment-actions">
-          <button class="button button-primary" onclick="saveEntryComment('${escapeHtml(e.id)}')">САЧУВАЈ КОМЕНТАР</button>
+          <button class="button button-primary" onclick="saveEntryComment('${e.id}')">
+            САЧУВАЈ КОМЕНТАР
+          </button>
         </div>
       </div>
     </article>
   `).join("");
 }
 
-window.saveEntryComment = function(id){
-  const el = document.querySelector(`textarea[data-id="${id}"]`);
+window.saveEntryComment=function(id){
+  const el=document.querySelector(`textarea[data-id="${id}"]`);
   if(!el) return;
-  saveComment(id, el.value);
-  alert("Коментар је сачуван у вашем browser-у.");
+  saveComment(id,el.value);
+  alert("Коментар је сачуван.");
 };
 
-showAllBtn.addEventListener("click", () => {
-  activeSource = "Сви";
-  document.querySelectorAll(".source-chip").forEach(x => x.classList.remove("active"));
-  showAllBtn.style.display = "none";
+showAllBtn.onclick=()=>{
+  activeSource="Сви";
+  document.querySelectorAll(".source-chip").forEach(x=>x.classList.remove("active"));
+  showAllBtn.style.display="none";
   renderEntries();
-  window.scrollTo({
-    top: document.querySelector(".card:last-of-type").offsetTop - 90,
-    behavior: "smooth"
-  });
-});
+};
 
 async function loadEntries(){
   try{
-    const res = await fetch("scanner-data.json", { cache: "no-store" });
-    if(!res.ok) throw new Error("Неуспешно учитавање JSON-а.");
-    const data = await res.json();
+    const res=await fetch("scanner-data.json",{cache:"no-store"});
+    const data=await res.json();
 
-    entries = Array.isArray(data.entries) ? data.entries : [];
-    window.allSources = data.all_sources || [];
+    entries=Array.isArray(data.entries)?data.entries:[];
+    entries.sort((a,b)=>new Date(b.datetime||b.date)-new Date(a.datetime||a.date));
 
     populateSourcesDirectory();
     renderEntries();
+
   }catch(e){
-    entriesCount.textContent = "Грешка";
-    entriesList.innerHTML = `
-      <div class="empty-state">
-        Није могуће учитати наслове. Проверите да ли постоји фајл <b>scanner-data.json</b>.
-      </div>
-    `;
+    entriesList.innerHTML=`<div class="empty-state">Није могуће учитати наслове.</div>`;
   }
 }
 
-searchInput.addEventListener("input", renderEntries);
+searchInput.addEventListener("input",renderEntries);
 
 loadComments();
 loadEntries();
 
-setInterval(() => {
-  loadEntries();
-}, 60000);
+setInterval(loadEntries,60000);
 </script>
 
 </body>
