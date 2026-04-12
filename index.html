@@ -622,6 +622,23 @@ header{
   }
 
 }
+.stav-share{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.share-btn{
+  background:#0a3f78;
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:8px;
+  font-size:0.78rem;
+  cursor:pointer;
+  text-decoration:none;
+}
 </style>
 </style>
 </head>
@@ -888,14 +905,35 @@ setInterval(() => {
       return;
     }
 
-    container.innerHTML = `
-      <article class="stav-card">
-        <div class="stav-title">${data.title}</div>
-        <div class="stav-text">${data.content}</div>
-        <div class="stav-meta">
-          Дејан Тадић · Иксан Снага правде · ${data.date || ""}
-        </div>
-      </article>
+const shareUrl = "https://snagapravde.rs";
+const shareText = encodeURIComponent(data.title + " - " + data.content.substring(0,120));
+
+container.innerHTML = `
+  <article class="stav-card">
+    <div class="stav-title">${data.title}</div>
+    <div class="stav-text">${data.content}</div>
+
+    <div class="stav-meta">
+      Дејан Тадић · Иксан Снага правде · ${data.date || ""}
+    </div>
+
+    <div class="stav-share">
+
+      <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}"
+         target="_blank" class="share-btn">Facebook</a>
+
+      <a href="https://wa.me/?text=${shareText}%20${shareUrl}"
+         target="_blank" class="share-btn">WhatsApp</a>
+
+      <button onclick="copyTikTokLink('${shareUrl}')"
+              class="share-btn">TikTok</button>
+
+      <button onclick="copyInstagramCaption('${data.title}','${data.content}')"
+              class="share-btn">Instagram</button>
+
+    </div>
+  </article>
+`;
     `;
   } catch(e){
     container.innerHTML =
@@ -905,6 +943,15 @@ setInterval(() => {
 
 loadStavPredstavnika();
 setInterval(loadStavPredstavnika, 60000); 
+function copyTikTokLink(link){
+  navigator.clipboard.writeText(link);
+  alert("TikTok link copied.");
+}
+
+function copyInstagramCaption(title, content){
+  navigator.clipboard.writeText(title + "\n\n" + content);
+  alert("Instagram caption copied.");
+}
 </script>
 
 </body>
