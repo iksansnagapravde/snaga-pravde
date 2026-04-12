@@ -157,7 +157,7 @@ header{
 
 /* HERO */
 .hero{
-  height:260px;
+  height:90px;
 }
 
 /* BUTTONS */
@@ -458,53 +458,7 @@ header{
 }
 
 /* SOCIAL */
-.social-bar{
-  position:fixed;
-  right:-80px;
-  bottom:120px;
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  z-index:9999;
-  transition:0.6s;
-  opacity:0;
-}
 
-.social-bar.show{
-  right:12px;
-  opacity:1;
-}
-
-.social-bar a{
-  width:44px;
-  height:44px;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border:1px solid var(--line);
-}
-
-.social-bar img{
-  width:20px;
-}
-
-/* WHATSAPP */
-.wa-btn{
-  position:fixed;
-  right:-220px;
-  bottom:50px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:12px 18px;
-  background:#25D366;
-  color:#fff;
-  font-size:0.85rem;
-  border-radius:40px;
-  transition:0.6s;
-  z-index:10000;
-}
 
 .wa-btn.show{
   right:12px;
@@ -568,21 +522,16 @@ header{
 
 <div class="hero"></div>
 
-<div class="top-buttons">
-  <a href="inicijative.html" class="btn-lite">ЗАКОНИ И ПРОПИСИ</a>
-  <a href="prijavi.html" class="btn-main">ПРЕДСТАВКА ГРАЂАНИНА</a>
-  <a href="uradili.html" class="btn-secondary">ШТА СМО УРАДИЛИ</a>
-</div>
 
 <div class="container">
   <div class="panel">
 
-    <section class="scanner-hero">
-      <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
-      <p>
-        Аутоматски избор 10 најрелевантнијих наслова из последњих 7 дана о Србији: људска права, социјална права, егзистенција, плате, извршења, деца, пензионери, инвалидитет, мањинска права, притворени и лишени слободе, правосуђе, корупција, јавне набавке, инфраструктурни пројекти, избори и грађанске слободе. Резиме и коментар уносите ручно.
-      </p>
-    </section>
+<section class="scanner-hero">
+<h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+<p>
+Дневни мониторинг најважнијих тема у Србији: људска права, социјална правда, корупција, правосуђе и права грађана — из најрелевантнијих медијских извора.
+</p>
+</section>
 
     <section class="grid-2">
       <div class="card">
@@ -638,28 +587,6 @@ header{
   </div>
 </div>
 
-<div class="social-bar" id="socialBar">
-<a href="https://www.tiktok.com/@snagapravde.rs" target="_blank" rel="noopener">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
-</a>
-
-<a href="https://www.facebook.com/share/1Cg8eMT8Vz/" target="_blank" rel="noopener">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-</a>
-
-<a href="https://www.instagram.com/snagapravde.rs" target="_blank" rel="noopener">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-</a>
-
-<a href="https://youtube.com/@iksan.snaga.pravde" target="_blank" rel="noopener">
-<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
-</a>
-</div>
-
-<a href="https://wa.me/381665857707" class="wa-btn">
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-Пишите нам
-</a>
 
 <script>
 const menu = document.getElementById('menu');
