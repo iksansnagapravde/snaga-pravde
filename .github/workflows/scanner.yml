@@ -1,0 +1,94 @@
+name: Update Scanner Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-scanner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install feedparser python-dateutil
+
+      - name: Build scanner-data.json
+        run: |
+          python << 'PY'
+          import json, feedparser, re
+          from datetime import datetime, timezone, timedelta
+          from email.utils import parsedate_to_datetime
+
+          FEEDS = [
+              ("N1","https://n1info.rs/feed/"),
+              ("Danas","https://www.danas.rs/feed/"),
+              ("Nova","https://nova.rs/feed/"),
+              ("BIRN","https://birn.rs/feed/"),
+              ("CINS","https://www.cins.rs/feed/")
+          ]
+
+          KEYWORDS = [
+              "srbija","serbia","beograd","србија","београд",
+              "korup","коруп","izvrše","изврше",
+              "plata","плата","penzij","пензи",
+              "deca","деца","socijal","социјал"
+          ]
+
+          now = datetime.now(timezone.utc)
+          cutoff = now - timedelta(days=7)
+
+          collected = []
+
+          for source_name, url in FEEDS:
+              feed = feedparser.parse(url)
+              for item in feed.entries:
+                  title = item.get("title","")
+                  link = item.get("link","")
+
+                  text = title.lower()
+
+                  if not any(k in text for k in KEYWORDS):
+                      continue
+
+                  dt = None
+                  if "published" in item:
+                      try:
+                          dt = parsedate_to_datetime(item.published)
+                      except:
+                          pass
+
+                  if dt and dt < cutoff:
+                      continue
+
+                  collected.append({
+                      "id": re.sub(r'[^a-zA-Z0-9]+','-',link)[-50:],
+                      "title": title,
+                      "url": link,
+                      "date": dt.date().isoformat() if dt else now.date().isoformat(),
+                      "source": source_name,
+                      "category": "Људска права",
+                      "summary": ""
+                  })
+
+          collected = collected[:10]
+
+          with open("scanner-data.json","w",encoding="utf-8") as f:
+              json.dump({"entries": collected}, f, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
