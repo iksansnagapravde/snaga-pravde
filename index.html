@@ -943,13 +943,23 @@ container.innerHTML = `
 loadStavPredstavnika();
 setInterval(loadStavPredstavnika, 60000); 
 function copyTikTokLink(link){
-  navigator.clipboard.writeText(link);
-  alert("TikTok link copied.");
+  navigator.clipboard.writeText(link).then(() => {
+    window.location.href = "snssdk1233://";
+    setTimeout(() => {
+      alert("TikTok је отворен. Линк је копиран — налепите у опис.");
+    }, 800);
+  });
 }
 
 function copyInstagramCaption(title, content){
-  navigator.clipboard.writeText(title + "\n\n" + content);
-  alert("Instagram caption copied.");
+  const text = title + "\n\n" + content;
+
+  navigator.clipboard.writeText(text).then(() => {
+    window.location.href = "instagram://app";
+    setTimeout(() => {
+      alert("Instagram је отворен. Текст је копиран — налепите у објаву.");
+    }, 800);
+  });
 }
 </script>
 
