@@ -691,8 +691,30 @@ header{
 .info-toggle summary{
   list-style:none;
   cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
   color:#0a3f78;
   font-weight:700;
+}
+.summary-plus{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#0a3f78;
+  color:#fff;
+  font-size:1rem;
+  font-weight:700;
+  line-height:1;
+  transition:all .25s ease;
+}
+
+.info-toggle[open] .summary-plus{
+  transform:rotate(45deg);
 }
 
 .info-toggle-body{
@@ -856,7 +878,10 @@ header{
     </div>
 
     <details class="info-toggle">
-      <summary>ШТА СКЕНИРАМО</summary>
+      <summary>
+  <span>ШТА СКЕНИРАМО</span>
+  <span class="summary-plus">+</span>
+</summary>
       <div class="info-toggle-body">
         <p class="info-toggle-text">
           Скенер прати теме од највишег јавног значаја: корупцију, хапшења,
