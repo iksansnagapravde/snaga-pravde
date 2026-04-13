@@ -36,7 +36,7 @@ START_ID = 1
 END_ID = 5000000
 
 # Koliko ID-jeva obrađuje po jednom batch-u
-BATCH_SIZE = 500
+BATCH_SIZE = 50
 
 # Koliko puta pokušava isti request
 REQUEST_RETRIES = 3
