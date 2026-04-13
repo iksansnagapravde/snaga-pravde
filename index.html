@@ -1,1193 +1,2223 @@
 <!DOCTYPE html>
+
 <html lang="sr-Cyrl-RS">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 
 <title>Иксан — Снага правде</title>
 
+
+
 <link rel="icon" type="image/png" href="/fivicon.png">
+
 <link rel="apple-touch-icon" href="/fivicon.png">
+
 <script type="application/ld+json">
+
 {
+
  "@context": "https://schema.org",
+
  "@type": "Organization",
+
  "name": "Snaga pravde",
+
  "url": "https://snagapravde.rs",
+
  "logo": "https://snagapravde.rs/fivicon.png"
+
 }
+
 </script>
+
 <style>
+
 :root{
+
   --blue:#0a3f78;
+
   --orange:#ff5a1f;
+
   --text:#111;
+
   --line:rgba(0,0,0,0.12);
+
   --green:#25D366;
+
 }
+
+
 
 /* RESET */
+
 *{box-sizing:border-box;margin:0;padding:0}
+
 a{text-decoration:none;color:inherit}
 
+
+
 /* BODY + GODDESS */
+
 body{
+
   font-family:"Playfair Display",serif;
+
   color:var(--text);
+
   padding-bottom:140px;
+
   overflow-x:hidden;
+
 }
+
+
 
 body::before{
+
   content:"";
+
   position:fixed;
+
   inset:0;
+
   z-index:-1;
+
   background:url('lady-justice-hero.webp') center top / cover no-repeat;
+
   animation:goddessReveal 1.3s ease-out both;
+
 }
+
+
 
 @keyframes goddessReveal{
+
   0%{
+
     transform:translate(80px,100px) scale(1.08);
+
     opacity:0.8;
+
   }
+
   100%{
+
     transform:translate(0,0) scale(1);
+
     opacity:1;
+
   }
+
 }
+
+
 
 /* HEADER */
+
 header{
+
   position:sticky;
+
   top:0;
+
   background:#fff;
+
   border-bottom:1px solid var(--line);
+
   z-index:1000;
+
 }
+
+
 
 .head{
+
   max-width:1150px;
+
   margin:auto;
+
   padding:12px 0;
+
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
+
 }
+
+
 
 /* LOGO */
+
 .brand{
+
   display:flex;
+
   align-items:center;
+
   gap:12px;
+
   padding-left:12px;
+
 }
+
+
 
 .logo-box{
+
   width:72px;
+
   height:72px;
+
   background:var(--blue);
+
   display:flex;
+
   align-items:center;
+
   justify-content:center;
+
 }
+
+
 
 .logo-box img{
+
   width:66px;
+
 }
+
+
 
 .brand-text .top{
+
   font-size:0.6rem;
+
   color:#777;
+
 }
+
+
 
 .brand-text .main{
+
   font-size:0.78rem;
+
   font-weight:600;
+
   white-space:nowrap;
+
 }
+
+
 
 /* RIGHT */
+
 .nav-right{
+
   display:flex;
+
   align-items:center;
+
   gap:15px;
+
   padding-right:12px;
+
 }
+
+
 
 /* DONATE */
+
 .donate-btn{
+
   background:var(--orange);
+
   color:#fff;
+
   padding:10px 20px;
+
   font-size:0.75rem;
+
   font-weight:700;
+
 }
 
-.lang-switch{
-  display:flex;
-  gap:6px;
-}
 
-.lang-switch button{
-  background:#fff;
-  border:1px solid #0a3f78;
-  color:#0a3f78;
-  padding:6px 10px;
-  cursor:pointer;
-  font-weight:700;
-  border-radius:6px;
-}
 
-.dark-btn{
-  background:#111;
-  color:#fff;
-  border:none;
-  padding:8px 12px;
-  border-radius:6px;
-  cursor:pointer;
-  font-size:16px;
-}
+
+
+
 
 /* MENU */
+
 .menu{position:relative}
 
+
+
 .menu-btn{
+
   width:26px;
+
   height:18px;
+
   display:flex;
+
   flex-direction:column;
+
   justify-content:space-between;
+
   cursor:pointer;
+
 }
+
+
 
 .menu-btn span{
+
   height:2px;
+
   background:#000;
+
 }
 
+
+
 .dropdown{
+
   position:absolute;
+
   top:calc(100% + 10px);
+
   right:0;
+
   background:#fff;
+
   border:1px solid var(--line);
+
   display:none;
+
   min-width:270px;
+
 }
+
+
 
 .menu.open .dropdown{display:block}
 
+
+
 .dropdown a{
+
   display:block;
+
   padding:10px 14px;
+
   font-size:0.85rem;
+
   border-bottom:1px solid var(--line);
+
 }
+
+
 
 .dropdown a:last-child{border:none}
 
+
+
 /* HERO */
+
 .hero{
+
   height:260px;
+
 }
+
+
 
 .top-buttons{
+
   display:flex;
+
   flex-direction:column;
+
   align-items:center;
+
   gap:12px;
+
   margin-top:-105px;
+
 }
 
+
+
 /* OSNOVNA VELIČINA (kao O NAMA) */
+
 .btn-lite,
+
 .btn-secondary{
+
   width:auto;
+
   max-width:none;
+
+
 
   display:inline-block;
 
+
+
   padding:14px 26px;
+
   font-size:0.9rem;
+
   font-weight:700;
+
+
 
   text-align:center;
 
+
+
   border-radius:4px;
+
 }
+
+
 
 /* GORNJE dugme */
+
 .btn-lite{
+
   background:#fff;
+
   border:1px solid rgba(10,63,120,0.25);
+
   color:#0a3f78;
+
 }
+
+
 
 /* DONJE dugme */
+
 .btn-secondary{
+
   background:#f4f6f8;
+
   color:#0a3f78;
+
   border:1px solid rgba(10,63,120,0.25);
+
 }
 
+
+
 /* 🔵 GLAVNO dugme (malo veće — fokus) */
+
 .btn-main{
+
   background:var(--blue);
+
   color:#fff;
 
+
+
   width:auto;
+
   max-width:none;
+
+
 
   display:inline-block;
 
+
+
   padding:18px 34px;   /* 👈 VEĆE od ostalih */
+
   font-size:1rem;      /* 👈 malo veći tekst */
+
   font-weight:700;
+
+
 
   border-radius:4px;
 
+
+
   box-shadow:0 10px 25px rgba(10,63,120,0.25);
+
 }
+
 .btn-scanner{
+
   display:inline-flex;
+
   flex-direction:column;
+
   align-items:center;
+
   justify-content:center;
+
   gap:4px;
 
+
+
   width:auto;
+
   min-width:320px;
+
   max-width:88%;
 
+
+
   padding:16px 24px;
+
   border-radius:8px;
 
+
+
   background:#ffffff;
+
   color:#0a3f78;
+
+
 
   border:1px solid rgba(10,63,120,0.15);
+
   box-shadow:0 6px 16px rgba(10,63,120,0.06);
 
+
+
   transition:all .25s ease;
+
 }
+
+
 
 .btn-scanner:hover{
+
   transform:translateY(-2px);
+
   box-shadow:0 10px 22px rgba(10,63,120,0.10);
+
 }
+
+
 
 .btn-scanner .title{
+
   font-size:0.95rem;
+
   font-weight:700;
+
   color:#0a3f78;
+
   line-height:1.2;
+
 }
+
+
 
 .btn-scanner .sub{
+
   font-size:0.74rem;
+
   color:#4d6480;
+
   font-weight:500;
+
   line-height:1.2;
+
 }
+
+
 
 @media(max-width:600px){
+
   .btn-scanner{
+
     min-width:unset;
+
     width:92%;
+
     padding:15px 20px;
+
   }
+
+
 
   .btn-scanner .title{
+
     font-size:0.9rem;
+
   }
+
+
 
   .btn-scanner .sub{
+
     font-size:0.68rem;
+
   }
+
 }
+
 /* GRID */
+
 .container{
+
   max-width:1150px;
+
   margin:auto;
+
   padding:20px;
+
 }
+
+
 
 .grid{
+
   display:grid;
+
   gap:20px;
+
   margin-top:30px;
+
 }
 
+
+
 @media(min-width:900px){
+
   .grid{grid-template-columns:1fr 1fr;}
+
 }
+
+
+
 
 
 /* =========================
+
    REFINED PREMIUM CARDS
+
    (isti raspored, iste visine, bez pomeranja layout-a)
+
 ========================= */
 
+
+
 .card{
+
   background:rgba(255,255,255,0.94);
+
   border-radius:20px;
+
   padding:22px;
+
   box-shadow:0 8px 22px rgba(10,63,120,0.05);
+
   border:1px solid rgba(255,255,255,0.45);
+
   backdrop-filter:blur(6px);
+
   transition:all 0.28s ease;
+
   cursor:pointer;
+
   color:#111;
+
   position:relative;
+
   display:block;
+
   overflow:hidden;
+
 }
+
+
 
 .card:hover{
+
   transform:translateY(-3px);
+
   box-shadow:0 14px 28px rgba(10,63,120,0.08);
+
 }
+
+
 
 .card:active{
+
   transform:scale(0.98);
+
 }
+
+
 
 .card::after{
+
   content:"→";
+
   position:absolute;
+
   right:18px;
+
   bottom:18px;
+
   font-size:15px;
+
   color:#0a3f78;
+
   transition:0.25s;
+
 }
+
+
 
 .card:hover::after{
+
   transform:translateX(4px);
+
 }
+
+
 
 /* NASLOV U KARTICI — elegantniji, ali ne veći */
+
 .card h3{
+
   font-family:"Playfair Display", serif;
+
   font-size:0.98rem;
+
   line-height:1.38;
+
   font-weight:700;
+
   margin-bottom:12px;
+
   color:#0a3f78;
+
   letter-spacing:-0.1px;
+
 }
+
+
 
 /* PODNASLOV — lakši i moderniji */
+
 .card p{
+
   font-family:"Playfair Display", serif;
+
   font-size:0.85rem;
+
   line-height:1.6;
+
   font-weight:400;
+
   color:#5a6470;
+
 }
+
+
 
 /* CTA LINK */
+
 .card-btn{
+
   margin-top:16px;
+
   font-family:"Playfair Display", serif;
+
   font-size:0.78rem;
+
   font-weight:600;
+
   color:#0a3f78;
+
   display:inline-flex;
+
   align-items:center;
+
   gap:6px;
+
   text-transform:none;
+
 }
+
+
 
 .card-btn::after{
+
   content:"→";
+
   font-size:14px;
+
   transition:0.25s;
+
 }
+
+
 
 .card:hover .card-btn::after{
+
   transform:translateX(4px);
+
 }
+
+
 
 /* INTRO CARD ostaje vizuelno usklađena */
+
 .intro-card{
+
   background:rgba(255,255,255,0.94) !important;
+
   color:#111 !important;
+
 }
+
+
 
 .intro-card h3{
+
   color:#0a3f78 !important;
+
 }
 
+
+
 .intro-card p{
+
   color:#5a6470 !important;
+
 }
+
+
+
 
 
 /* MOBILE TAP EFEKAT */
+
 .card:active{
+
   transform:scale(0.98);
+
 }
+
 /* SOCIAL */
+
 .social-bar{
+
   position:fixed;
+
   right:-80px;
+
   bottom:120px;
+
   display:flex;
+
   flex-direction:column;
+
   gap:12px;
+
   z-index:9999;
+
   transition:0.6s;
+
   opacity:0;
+
 }
+
+
 
 .social-bar.show{
+
   right:12px;
+
   opacity:1;
+
 }
+
+
 
 .social-bar a{
+
   width:44px;
+
   height:44px;
+
   background:#fff;
+
   display:flex;
+
   align-items:center;
+
   justify-content:center;
+
   border:1px solid var(--line);
+
 }
+
+
 
 .social-bar img{
+
   width:20px;
+
 }
+
+
 
 /* WHATSAPP */
+
 .wa-btn{
+
   position:fixed;
+
   right:-220px;
+
   bottom:20px;
+
   display:flex;
+
   align-items:center;
+
   gap:10px;
+
   padding:12px 18px;
+
   background:#25D366;
+
   color:#fff;
+
   font-size:0.85rem;
+
   border-radius:40px;
+
   transition:0.6s;
+
   z-index:10000;
+
 }
+
+
 
 .wa-btn.show{
+
   right:12px;
+
 }
+
+
 
 .wa-btn img{
+
   width:22px;
+
   filter:brightness(0) invert(1);
+
 }
+
  .home-scanner-preview{
+
   margin-top:34px;
+
   background:rgba(255,255,255,0.96);
+
   border-radius:24px;
+
   padding:24px;
+
   box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
 }
+
+
 
 .home-scanner-head{
+
   display:flex;
+
   justify-content:space-between;
+
   align-items:center;
+
   margin-bottom:18px;
+
   flex-wrap:wrap;
+
   gap:12px;
+
 }
+
+
 
 .home-scanner-head h2{
+
   font-size:1.05rem;
+
   color:#0a3f78;
+
 }
+
 .home-scanner-desc{
+
   font-size:0.9rem;
+
   line-height:1.6;
+
   color:#555;
+
   margin-bottom:16px;
+
 }
+
 .home-scanner-link{
+
   background:#0a3f78;
+
   color:#fff;
+
   padding:10px 16px;
+
   border-radius:6px;
+
   font-size:0.75rem;
+
   font-weight:700;
+
 }
+
+
 
 .home-scanner-list{
+
   display:grid;
+
   gap:14px;
+
 }
+
+
 
 .home-scanner-item{
+
   background:#f5f5f7;
+
   border-radius:16px;
+
   padding:16px;
+
   border:1px solid rgba(0,0,0,0.05);
+
 }
+
+
 
 .home-scanner-meta{
+
   display:flex;
+
   gap:8px;
+
   flex-wrap:wrap;
+
   margin-bottom:8px;
+
 }
+
+
 
 .home-scanner-badge{
+
   padding:5px 10px;
+
   background:#fff;
+
   border-radius:999px;
+
   font-size:0.72rem;
+
   border:1px solid rgba(0,0,0,0.08);
+
 }
+
+
 
 .home-scanner-title{
+
   display:block;
+
   font-size:0.95rem;
+
   color:#0a3f78;
+
   font-weight:600;
+
   line-height:1.5;
+
 }
+
+
 
 .home-scanner-empty{
+
   text-align:center;
+
   padding:20px;
+
   color:#666;
+
 } 
+
 /* REČ PREDSTAVNIKA */
+
 .stav-section{
+
   margin-top:34px;
+
   background:rgba(255,255,255,0.97);
+
   border-radius:24px;
+
   padding:26px;
+
   box-shadow:0 6px 18px rgba(0,0,0,0.05);
+
 }
+
+
 
 .stav-head{
+
   display:flex;
+
   justify-content:space-between;
+
   align-items:center;
+
   margin-bottom:18px;
+
   flex-wrap:wrap;
+
   gap:12px;
+
 }
+
+
 
 .stav-head h2{
+
   font-size:1.05rem;
+
   color:#0a3f78;
+
 }
+
+
 
 .stav-card{
+
   background:#f5f5f7;
+
   border-radius:18px;
+
   padding:18px;
+
   border-left:5px solid #0a3f78;
+
   max-width:100%;
+
 }
+
+
 
 .stav-title{
+
   font-size:0.92rem;
+
   color:#0a3f78;
+
   margin-bottom:14px;
+
   font-weight:700;
+
   line-height:1.45;
+
   text-align:center;
+
 }
+
+
 
 .stav-meta{
+
   font-size:0.82rem;
+
   color:#777;
+
   margin-bottom:16px;
+
 }
+
+
 
 .stav-text{
+
   font-size:0.82rem;
+
   line-height:1.75;
+
   color:#222;
+
   white-space:pre-line;
+
   text-align:left;
+
 }
+
+
 
 .stav-author{
+
   margin-top:20px;
+
   padding-top:14px;
+
   border-top:1px solid rgba(0,0,0,0.08);
+
   font-size:0.88rem;
+
   color:#555;
+
 }
 
+
+
 .stav-empty{
+
   text-align:center;
+
   color:#666;
+
   padding:20px;
+
 }
+
+
 
 @media(max-width:600px){
 
+
+
   .stav-section{
+
     padding:18px;
+
   }
+
+
 
   .stav-head h2{
+
     font-size:0.92rem;
+
     text-align:center;
+
     width:100%;
+
   }
+
+
 
   .stav-meta{
+
     font-size:0.72rem;
+
     text-align:center;
+
     margin-top:14px;
+
   }
 
+
+
 }
+
 .stav-share{
+
   display:flex;
+
   gap:10px;
+
   flex-wrap:wrap;
+
   margin-top:18px;
+
 }
+
+
 
 .share-btn{
+
   background:#0a3f78;
+
   color:#fff;
+
   border:none;
+
   padding:10px 14px;
+
   border-radius:8px;
+
   font-size:0.78rem;
+
   cursor:pointer;
+
   text-decoration:none;
+
 }
+
   .hero-shell{
+
   margin-top:34px;
+
 }
+
+
 
 .hero-card{
+
   background:rgba(255,255,255,.96);
+
   border-radius:28px;
+
   padding:26px;
+
   box-shadow:0 14px 36px rgba(0,0,0,.08);
+
 }
+
+
 
 .hero-top.single-column{
+
   display:block;
+
 }
+
+
 
 .hero-kicker{
+
   display:inline-flex;
+
   align-items:center;
+
   gap:8px;
+
   font-size:.72rem;
+
   font-weight:700;
+
   letter-spacing:.9px;
+
   color:#0a3f78;
+
   margin-bottom:10px;
+
   text-transform:uppercase;
+
 }
+
+
 
 .hero-kicker::before{
+
   content:"";
+
   width:8px;
+
   height:8px;
+
   border-radius:50%;
+
   background:#e53935;
+
   box-shadow:0 0 0 4px rgba(229,57,53,.12);
+
 }
+
+
 
 .hero-text h1{
+
   font-size:1.35rem;
+
   line-height:1.15;
+
   color:#0a3f78;
+
   margin-bottom:14px;
 
+
+
   white-space:nowrap;
+
   letter-spacing:0.2px;
+
 }
+
+
 
 .scanner-subtitle{
+
   font-size:0.92rem;
+
   font-weight:600;
+
   line-height:1.5;
+
   color:#1f2d3d;
+
   margin-bottom:10px;
+
 }
+
+
 
 .hero-text p{
+
   font-size:0.82rem;
+
   line-height:1.7;
+
   color:#5a6470;
+
 }
+
+
 
 .info-toggle{
+
   margin-top:20px;
+
   background:#f7f8fb;
+
   border:1px solid rgba(10,63,120,.08);
+
   border-radius:20px;
+
   padding:16px 18px;
+
 }
+
+
 
 .info-toggle summary{
+
   list-style:none;
+
   cursor:pointer;
+
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
+
   gap:12px;
+
   color:#0a3f78;
+
   font-weight:700;
+
 }
+
 .summary-plus{
+
   width:26px;
+
   height:26px;
+
   border-radius:50%;
+
   display:flex;
+
   align-items:center;
+
   justify-content:center;
+
   background:#0a3f78;
+
   color:#fff;
+
   font-size:1rem;
+
   font-weight:700;
+
   line-height:1;
+
   transition:all .25s ease;
+
 }
+
+
 
 .info-toggle[open] .summary-plus{
+
   transform:rotate(45deg);
+
 }
+
+
 
 .info-toggle-body{
+
   margin-top:14px;
+
 }
+
+
 
 .info-toggle-text{
+
   font-size:.86rem;
+
   color:#666;
+
   line-height:1.65;
-}
-body.dark-mode{
-  background:#111;
-  color:#fff;
+
 }
 
-body.dark-mode header{
-  background:#111;
-}
-
-body.dark-mode .card,
-body.dark-mode .hero-card,
-body.dark-mode .stav-section,
-body.dark-mode .home-scanner-preview{
-  background:#1b1b1b !important;
-  color:#fff !important;
-}
-
-body.dark-mode .card h3,
-body.dark-mode .hero-text h1,
-body.dark-mode .stav-head h2,
-body.dark-mode .home-scanner-title{
-  color:#ffffff !important;
-}
-
-body.dark-mode .card p,
-body.dark-mode .info-toggle-text{
-  color:#cccccc !important;
-}
 </style>
+
 </head>
+
+
 
 <body>
 
+
+
 <header>
+
 <div class="head">
 
+
+
 <div class="brand">
+
 <div class="logo-box">
+
 <img src="logo-white.png">
+
 </div>
 
+
+
 <div class="brand-text">
+
 <div class="top">Удружење грађана</div>
+
 <div class="main">Иксан Снага правде</div>
+
 </div>
+
 </div>
+
+
 
 <div class="nav-right">
 
-<div class="lang-switch">
-<button onclick="setLanguage('sr')">SR</button>
-<button onclick="setLanguage('en')">EN</button>
-</div>
 
-<button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
 
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
+
+
 <div class="menu" id="menu">
+
 <div class="menu-btn">
+
 <span></span><span></span><span></span>
+
 </div>
+
+
 
 <div class="dropdown">
 
+
+
   <a href="index.html"><b>ПОЧЕТНА</b></a>
+
   <a href="scanner.html"><b>СКЕНЕР СВИХ НАСЛОВА</b></a>
+
   <a href="kontakt.html">Контакт</a>
+
   <a href="onama.html">О нама</a>
+
   <a href="oblasti.html">Области деловања</a>
+
   <a href="ciljevi.html">Стратешки циљеви</a>
+
   <a href="inicijative.html">Захтеви – закони – предмети</a>
+
   <a href="doniraj.html">Донирај</a>
+
   <a href="prikljucise.html">Прикључи се</a>
+
   <a href="prijavi.html">Представка грађанина</a>
+
   <a href="ukidanjeizvrsitelja.html">Реформа извршења</a>
+
   <a href="porekloimovine.html">Мере уштеде</a>
+
   <a href="sudpravda.html">Реформа судства</a>
+
   <a href="radnicipreduzetnici.html">Права радника</a>
+
   <a href="pravicna-konkurencija.html">Заштита предузетника</a>
+
   <a href="uradili.html">Шта смо урадили</a>
 
-</div>
+
+
 </div>
 
 </div>
+
+
+
 </div>
+
+</div>
+
 </header>
+
+
 
 <div class="hero"></div>
 
+
+
 <div class="top-buttons">
 
+
+
   <a href="inicijative.html" class="btn-lite">
+
     ЗАКОНИ И ПРОПИСИ
+
   </a>
 
+
+
   <a href="prijavi.html" class="btn-main">
+
     ПРЕДСТАВКА ГРАЂАНИНА
+
   </a>
+
+
+
+
 
 
 
 <a href="scanner.html" class="btn-scanner">
+
   <span class="title">СКЕНЕР СНАГЕ ПРАВДЕ</span>
+
   <span class="sub">Најновије вести — уживо, из минута у минут</span>
+
 </a>
 
+
+
 </div>
+
+
+
 
 
 <div class="container">
 
+
+
 <div class="grid">
 
+
+
 <div class="card intro-card">
+
 <h3>Заштита људских права</h3>
+
 <p>Основна мисија удружења је заштита права грађана и јачање институционалне одговорности.</p>
+
 </div>
+
+
 
 <a href="egzistencijalni-minimum.html" class="card">
+
 <h3>Нико не сме живети испод егзистенцијалног минимума</h3>
+
 <p>Минимум достојанства мора постати право, а не изузетак.</p>
+
 <div class="card-btn">САЗНАЈ ВИШЕ</div>
+
 </a>
+
+
 
 <a href="ukidanjeizvrsitelja.html" class="card blue">
+
 <h3>Систем извршења акумулира нерешене предмете</h3>
+
 <p>Грађани морају имати излаз из презадужености кроз фер систем извршења и Закон о стечају физичких лица.</p>
 
+
+
   <div class="card-btn">САЗНАЈ ВИШЕ</div>
 
+
+
 </a>
+
+
 
 <a href="porekloimovine.html" class="card">
+
 <h3>Систем јавних набавки и администрације под строгим правилима и контролом</h3>
+
 <p>Јавна функција мора значити и јавну одговорност у располагању јавном имовином и потпуну контролу.</p>
 
+
+
   <div class="card-btn">САЗНАЈ ВИШЕ</div>
 
+
+
 </a>
+
+
 
 <a href="sudpravda.html" class="card blue">
+
 <h3>Независно и транспарентно судство</h3>
+
 <p>Правда мора бити видљива, брза и једнака за све.</p>
 
+
+
   <div class="card-btn">САЗНАЈ ВИШЕ</div>
 
+
+
 </a>
+
+
 
 <a href="radnicipreduzetnici.html" class="card">
+
   <h3>Радник мора бити заштићен...</h3>
+
   <p>Сигуран рад...</p>
+
   
+
   <div class="card-btn">САЗНАЈ ВИШЕ</div>
 
+
+
 </a>
+
+
 
 <a href="pravicna-konkurencija.html" class="card">
+
   <h3>Праведна тржишна конкуренција</h3>
+
   <p>Заштита домаћег тржишта, фер услови и равноправност свих учесника.</p>
+
   
+
   <div class="card-btn">САЗНАЈ ВИШЕ</div>
+
 </a>
 
+
+
 </div>
+
 <section class="hero-shell">
+
   <div class="hero-card">
+
+
 
     <div class="hero-top single-column">
 
+
+
       <div class="hero-text">
+
         <div class="hero-kicker">Праћење уживо</div>
+
         
+
 <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
 
+
+
 <h2 class="scanner-subtitle">
+
   Најновије вести из минута у минут о темама од највишег јавног значаја.
+
 </h2>
 
+
+
 <p>
+
   Пратимо људска права, радничка права, правосуђе, борбу против корупције
+
   и кључне законске промене које утичу на живот грађана.
+
 </p>
+
         </p>
+
       </div>
+
+
 
     </div>
 
+
+
 <details class="info-toggle">
+
   <summary>
+
     <span>ШТА СКЕНИРАМО</span>
+
     <span class="summary-plus">+</span>
+
   </summary>
 
+
+
   <div class="info-toggle-body">
+
     <p class="info-toggle-text">
+
       Скенер прати теме од највишег јавног значаја, поређане по приоритету за
+
       заштиту достојанства грађана и владавину права: људска права, радничка
+
       и социјална права, права деце, пензионера, особа са инвалидитетом
+
       и мањинских заједница.
+
     </p>
 
+
+
     <p class="info-toggle-text">
+
       У фокусу су и правосуђе, тужилаштва, полиција, владавина права,
+
       борба против корупције, злоупотреба службеног положаја,
+
       фалсификовање докумената, јавне набавке, организовани криминал,
+
       прање новца, преваре и други облици незаконитих радњи.
+
     </p>
 
+
+
     <p class="info-toggle-text">
+
       Скенер обухвата и извршне поступке, рад извршитеља, заштиту од
+
       презадужености, положај радника и предузетника, законске прописе
+
       и њихову примену, изборне процесе, изборне неправилности, слободу
+
       медија, притиске на новинаре, као и све теме које непосредно утичу
+
       на правду, институционалну одговорност и свакодневни живот грађана.
+
     </p>
+
   </div>
+
 </details>
 
+
+
   </div>
+
+
 
   <div id="homeScannerList" class="home-scanner-list">
+
     <div class="home-scanner-empty">Учитавање наслова...</div>
+
   </div>
+
 </section>
+
 <section class="stav-section">
+
   <div class="stav-head">
+
     <h2>
+
       РЕЧ ПРЕДСТАВНИКА<br>
+
       ИКСАН СНАГА ПРАВДЕ
+
     </h2>
+
   </div>
+
+
 
   <div id="stavContainer" class="stav-empty">
+
     Учитавање текста...
+
   </div>
+
 </section>
+
 <div class="social-bar" id="socialBar">
 
+
+
 <a href="https://www.tiktok.com/@snagapravde.rs" target="_blank">
+
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
+
 </a>
+
+
 
 <a href="https://www.facebook.com/share/1Cg8eMT8Vz/" target="_blank">
+
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg">
+
 </a>
+
+
 
 <a href="https://www.instagram.com/snagapravde.rs" target="_blank">
+
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+
 </a>
 
+
+
 <a href="https://youtube.com/@iksan.snaga.pravde" target="_blank">
+
 <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg">
+
 </a>
+
+
 
 </div>
 
+
+
 <a href="https://wa.me/381665857707" class="wa-btn">
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+
 Пишите нам
+
 </a>
 
+
+
 <script>
+
 const menu = document.getElementById('menu');
+
 menu.querySelector('.menu-btn').onclick = () => menu.classList.toggle('open');
 
+
+
 window.addEventListener("load", () => {
+
   setTimeout(() => {
+
     document.getElementById("socialBar").classList.add("show");
+
     document.querySelector(".wa-btn").classList.add("show");
+
   }, 400);
+
 });
+
  async function loadHomeScannerPreview(){
+
   const container = document.getElementById("homeScannerList");
+
   if(!container) return;
 
+
+
   try{
+
     const res = await fetch("scanner-data.json", { cache: "no-store" });
+
     if(!res.ok) throw new Error("Неуспешно учитавање.");
 
+
+
     const data = await res.json();
+
  const entries = Array.isArray(data.entries) ? data.entries : [];
 
+
+
 entries.sort((a, b) => {
+
   const dateA = new Date(`${a.date || ""} ${a.time || "00:00"}`);
+
   const dateB = new Date(`${b.date || ""} ${b.time || "00:00"}`);
+
   return dateB - dateA;
+
 });
+
+
 
 const latest = entries;
 
+
+
     if(!latest.length){
+
       container.innerHTML =
+
         '<div class="home-scanner-empty">Тренутно нема доступних наслова.</div>';
+
       return;
+
     }
 
+
+
 container.innerHTML = latest.map(item => `
+
   <article class="home-scanner-item">
+
     <div class="home-scanner-meta">
+
+
 
       <span class="home-scanner-badge">${item.source || ""}</span>
 
+
+
       ${item.category ? `
+
       <span class="home-scanner-badge" style="background:#eef4ff;color:#0a3f78;">
+
         ${item.category}
+
       </span>` : ""}
 
+
+
       <span class="home-scanner-badge">${item.date || ""}</span>
+
       <span class="home-scanner-badge">${item.time || ""}</span>
 
 
+
+
+
       ${item.alert ? `
+
       <span class="home-scanner-badge" style="background:#ff8c00;color:#fff;font-weight:700;">
+
         УПОЗОРЕЊЕ
+
       </span>` : ""}
+
+
 
     </div>
 
+
+
     <a href="${item.url || "#"}" target="_blank" rel="noopener" class="home-scanner-title">
+
       ${item.title || ""}
+
     </a>
+
   </article>
+
 `).join("");
 
+
+
   }catch(e){
+
     container.innerHTML =
+
       '<div class="home-scanner-empty">Није могуће учитати наслове.</div>';
+
   }
+
 }
+
+
 
 loadHomeScannerPreview();
 
+
+
 setInterval(() => {
+
   loadHomeScannerPreview();
+
 }, 60000); 
+
  async function loadStavPredstavnika(){
+
   const container = document.getElementById("stavContainer");
+
   if(!container) return;
 
+
+
   try{
+
     const res = await fetch("stav-data.json", { cache: "no-store" });
+
     if(!res.ok) throw new Error();
+
+
 
     const data = await res.json();
 
+
+
     if(!data.title || !data.content){
+
       container.innerHTML =
+
         '<div class="stav-empty">Тренутно нема објављеног става.</div>';
+
       return;
+
     }
 
+
+
 const shareUrl = "https://snagapravde.rs";
+
 const shareText = encodeURIComponent(data.share_text || data.title);
 
+
+
 container.innerHTML = `
+
   <article class="stav-card">
+
     <div class="stav-title">${data.title}</div>
+
     <div class="stav-text">${data.content}</div>
 
+
+
     <div class="stav-meta">
+
       Дејан Тадић · Иксан Снага правде · ${data.date || ""}
+
     </div>
+
+
 
 <div class="stav-share">
 
+
+
   <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}"
+
      target="_blank"
+
      class="share-btn">
+
      Facebook
+
   </a>
+
+
 
   <a href="https://wa.me/?text=${shareText}%20${shareUrl}"
+
      target="_blank"
+
      class="share-btn">
+
      WhatsApp
+
   </a>
 
+
+
 </div>
+
 </article>
+
 `;
 
+
+
   } catch(e){
+
     container.innerHTML =
+
       '<div class="stav-empty">Није могуће учитати текст.</div>';
+
   }
+
 }
+
+
 
 loadStavPredstavnika();
+
 setInterval(loadStavPredstavnika, 60000);
-loadStavPredstavnika();
-setInterval(loadStavPredstavnika, 60000);
-
-function toggleDarkMode(){
-  document.body.classList.toggle("dark-mode");
-}
-
-function setLanguage(lang){
-
-  if(lang === "en"){
-    document.querySelector(".btn-main").innerText = "CITIZEN REPORT";
-    document.querySelector(".btn-lite").innerText = "LAWS AND REGULATIONS";
-    document.querySelector(".title").innerText = "JUSTICE POWER SCANNER";
-    document.querySelector(".sub").innerText = "Latest news — live, minute by minute";
-    document.querySelector(".hero-text h1").innerText = "JUSTICE POWER SCANNER";
-  }
-
-  if(lang === "sr"){
-    location.reload();
-  }
-}
 
 </script>
-</script>
+
+
 
 </body>
+
 </html>
