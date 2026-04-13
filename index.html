@@ -840,7 +840,7 @@ window.addEventListener("load", () => {
     const data = await res.json();
     const entries = Array.isArray(data.entries) ? data.entries : [];
 
-    const latest = entries.slice(0, 6);
+    const latest = entries;
 
     if(!latest.length){
       container.innerHTML =
