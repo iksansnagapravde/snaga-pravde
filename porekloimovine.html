@@ -509,21 +509,25 @@ canvas{
   border-color:rgba(255,255,255,0.12);
 }
 
+/* NASLOVI U KARTICAMA */
 .highlight-card h3,
 .card h3{
   font-size:14px;
-  font-weight:500;
-  margin-bottom:8px;
+  font-weight:600;
+  margin-bottom:10px;
   color:var(--text);
 }
 
+/* NORMALAN TEKST + BROJEVI U KARTICAMA */
 .highlight-card p,
 .card p{
-  font-size:0.72rem;
-  line-height:1.7;
+  font-size:1rem;
+  line-height:1.5;
   color:var(--soft);
+  font-weight:600;
 }
 
+/* PLAVA KARTICA TEKST */
 .highlight-card.blue h3,
 .highlight-card.blue p,
 .card.blue h3,
@@ -531,6 +535,18 @@ canvas{
   color:#edf4ff;
 }
 
+/* CRVENI MINUS GUBICI */
+.loss-negative{
+  color:#c0392b !important;
+  font-weight:800;
+  font-size:1.15rem;
+}
+
+.highlight-card.blue .loss-negative{
+  color:#ff8a8a !important;
+}
+
+/* STRELICA KARTICA */
 .card::before,
 .card .arrow-right{
   position:absolute;
