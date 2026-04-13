@@ -862,10 +862,6 @@ container.innerHTML = latest.map(item => `
       <span class="home-scanner-badge">${item.date || ""}</span>
       <span class="home-scanner-badge">${item.time || ""}</span>
 
-      ${item.breaking ? `
-      <span class="home-scanner-badge" style="background:#ff2d2d;color:#fff;font-weight:700;">
-        ХИТНО 
-      </span>` : ""}
 
       ${item.alert ? `
       <span class="home-scanner-badge" style="background:#ff8c00;color:#fff;font-weight:700;">
