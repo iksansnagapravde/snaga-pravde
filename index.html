@@ -639,6 +639,79 @@ header{
   cursor:pointer;
   text-decoration:none;
 }
+  .hero-shell{
+  margin-top:34px;
+}
+
+.hero-card{
+  background:rgba(255,255,255,.96);
+  border-radius:28px;
+  padding:26px;
+  box-shadow:0 14px 36px rgba(0,0,0,.08);
+}
+
+.hero-top.single-column{
+  display:block;
+}
+
+.hero-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.9px;
+  color:#0a3f78;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.hero-kicker::before{
+  content:"";
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#e53935;
+  box-shadow:0 0 0 4px rgba(229,57,53,.12);
+}
+
+.hero-text h1{
+  font-size:1.8rem;
+  line-height:1.05;
+  color:#0a3f78;
+  margin-bottom:12px;
+}
+
+.hero-text p{
+  font-size:.95rem;
+  line-height:1.65;
+  color:#46505c;
+}
+
+.info-toggle{
+  margin-top:20px;
+  background:#f7f8fb;
+  border:1px solid rgba(10,63,120,.08);
+  border-radius:20px;
+  padding:16px 18px;
+}
+
+.info-toggle summary{
+  list-style:none;
+  cursor:pointer;
+  color:#0a3f78;
+  font-weight:700;
+}
+
+.info-toggle-body{
+  margin-top:14px;
+}
+
+.info-toggle-text{
+  font-size:.86rem;
+  color:#666;
+  line-height:1.65;
+}
 </style>
 </head>
 
@@ -772,10 +845,37 @@ header{
 </a>
 
 </div>
-<section class="home-scanner-preview">
-  <div class="home-scanner-head">
-    <h2>СКЕНЕР СНАГЕ ПРАВДЕ — НАЈНОВИЈЕ ВЕСТИ УЖИВО</h2>
-    <a href="scanner.html" class="home-scanner-link">СВИ НАСЛОВИ</a>
+<section class="hero-shell">
+  <div class="hero-card">
+
+    <div class="hero-top single-column">
+
+      <div class="hero-text">
+        <div class="hero-kicker">Праћење уживо</div>
+        <h1>СКЕНЕР СНАГЕ ПРАВДЕ</h1>
+        <p>
+          Најновије вести из минута у минут о темама од јавног значаја:
+          корупција, правосуђе, хапшења, злоупотреба службеног положаја,
+          фалсификовање докумената, извршења, радници, предузетници,
+          закони, изборни процеси, медијске слободе, социјална права и људска права.
+        </p>
+      </div>
+
+    </div>
+
+    <details class="info-toggle">
+      <summary>ШТА СВЕ СКЕНИРАМО</summary>
+      <div class="info-toggle-body">
+        <p class="info-toggle-text">
+          Скенер прати теме од највишег јавног значаја: корупцију, хапшења,
+          правосуђе, тужилаштва, полицију, злоупотребу службеног положаја,
+          фалсификовање докумената, јавне набавке, извршитеље,
+          раднике, предузетнике, изборне процесе, медијске слободе,
+          социјална и људска права.
+        </p>
+      </div>
+    </details>
+
   </div>
 
   <div id="homeScannerList" class="home-scanner-list">
