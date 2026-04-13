@@ -2,27 +2,38 @@ name: Full Import Contracts
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/15 * * * *"
 
 jobs:
   import:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
-      - run: pip install requests beautifulsoup4
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
 
-      - run: python full_import.py
+      - name: Install ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
 
-      - run: |
+      - name: Install dependencies
+        run: |
+          pip install selenium beautifulsoup4 requests
+
+      - name: Run full import
+        run: python full_import.py
+
+      - name: Commit updated files
+        run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add contracts_db.json stats.json loss-data.json import_progress.json failed_ids.json
-          git commit -m "Full import batch update" || echo "No changes"
+          git add stats.json loss-data.json contracts.db last_id.txt
+          git commit -m "Full import update" || echo "No changes"
           git push
