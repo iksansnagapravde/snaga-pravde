@@ -1279,23 +1279,27 @@ async function loadLossCalculator(){
     const lossNajbolja = prihvacena - najbolja;
     const lossSrednja = prihvacena - srednja;
 
-    document.getElementById("najboljaPonuda").innerText =
-      najbolja.toLocaleString("sr-RS") + " RSD";
+document.getElementById("najboljaPonuda").innerText =
+  najbolja.toLocaleString("sr-RS") + " RSD";
 
-    document.getElementById("srednjaPonuda").innerText =
-      srednja.toLocaleString("sr-RS") + " RSD";
+document.getElementById("srednjaPonuda").innerText =
+  srednja.toLocaleString("sr-RS") + " RSD";
 
-    document.getElementById("prihvacenaPonuda").innerText =
-      prihvacena.toLocaleString("sr-RS") + " RSD";
+document.getElementById("prihvacenaPonuda").innerText =
+  prihvacena.toLocaleString("sr-RS") + " RSD";
 
-    document.getElementById("brojAnaliziranih").innerText =
-      broj.toLocaleString("sr-RS");
+document.getElementById("brojAnaliziranih").innerText =
+  broj.toLocaleString("sr-RS");
 
-    document.getElementById("gubitakNajbolja").innerText =
-      "-" + lossNajbolja.toLocaleString("sr-RS") + " RSD";
+const kurs = 117.2;
 
-    document.getElementById("gubitakSrednja").innerText =
-      "-" + lossSrednja.toLocaleString("sr-RS") + " RSD";
+document.getElementById("gubitakNajbolja").innerText =
+  "-" + lossNajbolja.toLocaleString("sr-RS") + " RSD / " +
+  Math.round(lossNajbolja / kurs).toLocaleString("sr-RS") + " EUR";
+
+document.getElementById("gubitakSrednja").innerText =
+  "-" + lossSrednja.toLocaleString("sr-RS") + " RSD / " +
+  Math.round(lossSrednja / kurs).toLocaleString("sr-RS") + " EUR";
 
     new Chart(document.getElementById("lossChart"), {
       type: "bar",
