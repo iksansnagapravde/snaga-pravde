@@ -1,6 +1,15 @@
 {
-  "najbolja_ponuda": 842500000,
-  "srednja_ponuda": 910300000,
-  "prihvacena_ponuda": 1084500000,
-  "broj_analiziranih": 9674
+  "najbolja_ponuda": 0,
+  "najbolja_ponuda_eur": 0,
+  "srednja_ponuda": 0,
+  "srednja_ponuda_eur": 0,
+  "prihvacena_ponuda": 0,
+  "prihvacena_ponuda_eur": 0,
+  "broj_analiziranih": 0,
+  "gubitak_prema_najboljoj": 0,
+  "gubitak_prema_najboljoj_eur": 0,
+  "gubitak_prema_srednjoj": 0,
+  "gubitak_prema_srednjoj_eur": 0,
+  "valuta_kurs_eur": 117.2,
+  "period_od": "2026-01-01"
 }
