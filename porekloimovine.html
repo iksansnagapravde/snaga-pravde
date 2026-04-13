@@ -1266,6 +1266,73 @@ async function loadTenderStats(){
 
 loadTenderStats();
 
+async function loadLossCalculator(){
+  try{
+    const res = await fetch("loss-data.json");
+    const data = await res.json();
+
+    const najbolja = data.najbolja_ponuda;
+    const srednja = data.srednja_ponuda;
+    const prihvacena = data.prihvacena_ponuda;
+    const broj = data.broj_analiziranih;
+
+    const lossNajbolja = prihvacena - najbolja;
+    const lossSrednja = prihvacena - srednja;
+
+    document.getElementById("najboljaPonuda").innerText =
+      najbolja.toLocaleString("sr-RS") + " RSD";
+
+    document.getElementById("srednjaPonuda").innerText =
+      srednja.toLocaleString("sr-RS") + " RSD";
+
+    document.getElementById("prihvacenaPonuda").innerText =
+      prihvacena.toLocaleString("sr-RS") + " RSD";
+
+    document.getElementById("brojAnaliziranih").innerText =
+      broj.toLocaleString("sr-RS");
+
+    document.getElementById("gubitakNajbolja").innerText =
+      "-" + lossNajbolja.toLocaleString("sr-RS") + " RSD";
+
+    document.getElementById("gubitakSrednja").innerText =
+      "-" + lossSrednja.toLocaleString("sr-RS") + " RSD";
+
+    new Chart(document.getElementById("lossChart"), {
+      type: "bar",
+      data: {
+        labels: [
+          "Најбоља понуда",
+          "Средња понуда",
+          "Прихваћена понуда"
+        ],
+        datasets: [{
+          label: "Износ у RSD",
+          data: [najbolja, srednja, prihvacena],
+          backgroundColor: [
+            "rgba(255,179,0,0.7)",
+            "rgba(76,166,255,0.7)",
+            "rgba(255,92,92,0.75)"
+          ],
+          borderWidth: 2,
+          borderRadius: 10
+        }]
+      },
+      options: {
+        responsive:true,
+        maintainAspectRatio:false,
+        plugins:{
+          legend:{display:false}
+        }
+      }
+    });
+
+  }catch(err){
+    console.log("Greška loss calculator:", err);
+  }
+}
+
+loadLossCalculator();
+
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
