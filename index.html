@@ -125,7 +125,30 @@ header{
   font-weight:700;
 }
 
+.lang-switch{
+  display:flex;
+  gap:6px;
+}
 
+.lang-switch button{
+  background:#fff;
+  border:1px solid #0a3f78;
+  color:#0a3f78;
+  padding:6px 10px;
+  cursor:pointer;
+  font-weight:700;
+  border-radius:6px;
+}
+
+.dark-btn{
+  background:#111;
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:16px;
+}
 
 /* MENU */
 .menu{position:relative}
@@ -750,6 +773,34 @@ header{
   color:#666;
   line-height:1.65;
 }
+body.dark-mode{
+  background:#111;
+  color:#fff;
+}
+
+body.dark-mode header{
+  background:#111;
+}
+
+body.dark-mode .card,
+body.dark-mode .hero-card,
+body.dark-mode .stav-section,
+body.dark-mode .home-scanner-preview{
+  background:#1b1b1b !important;
+  color:#fff !important;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .hero-text h1,
+body.dark-mode .stav-head h2,
+body.dark-mode .home-scanner-title{
+  color:#ffffff !important;
+}
+
+body.dark-mode .card p,
+body.dark-mode .info-toggle-text{
+  color:#cccccc !important;
+}
 </style>
 </head>
 
@@ -770,6 +821,13 @@ header{
 </div>
 
 <div class="nav-right">
+
+<div class="lang-switch">
+<button onclick="setLanguage('sr')">SR</button>
+<button onclick="setLanguage('en')">EN</button>
+</div>
+
+<button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
 
 <a href="doniraj.html" class="donate-btn">ДОНИРАЈ</a>
 
@@ -1106,6 +1164,29 @@ container.innerHTML = `
 
 loadStavPredstavnika();
 setInterval(loadStavPredstavnika, 60000);
+loadStavPredstavnika();
+setInterval(loadStavPredstavnika, 60000);
+
+function toggleDarkMode(){
+  document.body.classList.toggle("dark-mode");
+}
+
+function setLanguage(lang){
+
+  if(lang === "en"){
+    document.querySelector(".btn-main").innerText = "CITIZEN REPORT";
+    document.querySelector(".btn-lite").innerText = "LAWS AND REGULATIONS";
+    document.querySelector(".title").innerText = "JUSTICE POWER SCANNER";
+    document.querySelector(".sub").innerText = "Latest news — live, minute by minute";
+    document.querySelector(".hero-text h1").innerText = "JUSTICE POWER SCANNER";
+  }
+
+  if(lang === "sr"){
+    location.reload();
+  }
+}
+
+</script>
 </script>
 
 </body>
