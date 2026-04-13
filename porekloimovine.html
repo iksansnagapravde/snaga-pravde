@@ -1276,11 +1276,20 @@ async function loadLossCalculator(){
     const prihvacena = data.prihvacena_ponuda;
     const broj = data.broj_analiziranih;
 
+    /* AUTOMATSKI PERIOD: OD 01.01.2026 DO DANAS */
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, "0");
+    const mm = String(today.getMonth() + 1).padStart(2, "0");
+    const yyyy = today.getFullYear();
+
+    const periodOd = "01.01.2026";
+    const periodDo = `${dd}.${mm}.${yyyy}`;
+
     const lossNajbolja = prihvacena - najbolja;
     const lossSrednja = prihvacena - srednja;
-
     const kurs = 117.2;
 
+    /* ISPIS BROJEVA */
     document.getElementById("najboljaPonuda").innerText =
       najbolja.toLocaleString("sr-RS") + " RSD / " +
       Math.round(najbolja / kurs).toLocaleString("sr-RS") + " EUR";
@@ -1304,34 +1313,71 @@ async function loadLossCalculator(){
       "-" + lossSrednja.toLocaleString("sr-RS") + " RSD / " +
       Math.round(lossSrednja / kurs).toLocaleString("sr-RS") + " EUR";
 
-    new Chart(document.getElementById("lossChart"), {
-      type: "bar",
-      data: {
-        labels: [
-          "Најбоља понуда",
-          "Средња понуда",
-          "Прихваћена понуда"
-        ],
-        datasets: [{
-          label: "Износ у RSD",
-          data: [najbolja, srednja, prihvacena],
-          backgroundColor: [
-            "rgba(255,179,0,0.7)",
-            "rgba(76,166,255,0.7)",
-            "rgba(255,92,92,0.75)"
+    /* PERIOD ISPOD NASLOVA */
+    document.getElementById("lossPeriod").innerText =
+      `Период анализе: ${periodOd} — ${periodDo}`;
+
+    /* UNIŠTI PRETHODNI GRAFIKON */
+    if(window.lossChartInstance){
+      window.lossChartInstance.destroy();
+    }
+
+    /* GRAFIKON SE AUTOMATSKI AŽURIRA */
+    window.lossChartInstance = new Chart(
+      document.getElementById("lossChart"),
+      {
+        type: "bar",
+        data: {
+          labels: [
+            "Најбоља понуда",
+            "Средња понуда",
+            "Прихваћена понуда"
           ],
-          borderWidth: 2,
-          borderRadius: 10
-        }]
-      },
-      options: {
-        responsive:true,
-        maintainAspectRatio:false,
-        plugins:{
-          legend:{display:false}
+          datasets: [{
+            label: "Износ у RSD",
+            data: [najbolja, srednja, prihvacena],
+            backgroundColor: [
+              "rgba(255,179,0,0.7)",
+              "rgba(76,166,255,0.7)",
+              "rgba(255,92,92,0.75)"
+            ],
+            borderWidth: 2,
+            borderRadius: 10
+          }]
+        },
+        options: {
+          responsive:true,
+          maintainAspectRatio:false,
+          layout:{
+            padding:{ right:40 }
+          },
+          plugins:{
+            legend:{ display:false }
+          },
+          scales:{
+            x:{
+              offset:true,
+              ticks:{
+                maxRotation:20,
+                minRotation:20,
+                autoSkip:false,
+                font:{ size:11 }
+              },
+              grid:{ display:false }
+            },
+            y:{
+              beginAtZero:true,
+              ticks:{
+                callback:function(value){
+                  return value.toLocaleString("sr-RS");
+                },
+                font:{ size:11 }
+              }
+            }
+          }
         }
       }
-    });
+    );
 
   }catch(err){
     console.log("Greška loss calculator:", err);
