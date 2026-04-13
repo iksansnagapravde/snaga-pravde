@@ -1196,6 +1196,23 @@ footer{
 
 <script>
 const menu=document.getElementById('menu');
+
+async function loadTenderStats(){
+  try{
+    const res = await fetch("stats.json");
+    const data = await res.json();
+
+    document.getElementById("brojTendera").innerText = data.broj_tendera;
+    document.getElementById("ukupnaVrednost").innerText = data.ukupna_vrednost;
+    document.getElementById("brojUgovora").innerText = data.broj_ugovora;
+    document.getElementById("ugovorenaVrednost").innerText = data.ugovorena_vrednost;
+  } catch(err){
+    console.log("Greška pri učitavanju stats:", err);
+  }
+}
+
+loadTenderStats();
+
 menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
 
 document.addEventListener('click',(e)=>{
