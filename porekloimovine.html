@@ -1248,145 +1248,154 @@ footer{
 </a>
 
 <script>
-const menu=document.getElementById('menu');
+const menu = document.getElementById('menu');
 
+/* ========================================
+   TENDER STATS
+======================================== */
 async function loadTenderStats(){
   try{
     const res = await fetch("stats.json");
     const data = await res.json();
 
-    document.getElementById("brojTendera").innerText = data.broj_tendera;
-    document.getElementById("ukupnaVrednost").innerText = data.ukupna_vrednost;
-    document.getElementById("brojUgovora").innerText = data.broj_ugovora;
-    document.getElementById("ugovorenaVrednost").innerText = data.ugovorena_vrednost;
-  } catch(err){
+    document.getElementById("brojTendera").innerText =
+      Number(data.broj_tendera).toLocaleString("sr-RS");
+
+    document.getElementById("ukupnaVrednost").innerText =
+      data.ukupna_vrednost;
+
+    document.getElementById("brojUgovora").innerText =
+      Number(data.broj_ugovora).toLocaleString("sr-RS");
+
+    document.getElementById("ugovorenaVrednost").innerText =
+      data.ugovorena_vrednost;
+
+  }catch(err){
     console.log("Greška pri učitavanju stats:", err);
   }
 }
-
 loadTenderStats();
 
+/* ========================================
+   LOSS CALCULATOR
+======================================== */
 async function loadLossCalculator(){
   try{
     const res = await fetch("loss-data.json");
     const data = await res.json();
 
-    const najbolja = data.najbolja_ponuda;
-    const srednja = data.srednja_ponuda;
-    const prihvacena = data.prihvacena_ponuda;
-    const broj = data.broj_analiziranih;
-
-    /* AUTOMATSKI PERIOD: OD 01.01.2026 DO DANAS */
-    const today = new Date();
-    const dd = String(today.getDate()).padStart(2, "0");
-    const mm = String(today.getMonth() + 1).padStart(2, "0");
-    const yyyy = today.getFullYear();
-
-    const periodOd = "01.01.2026";
-    const periodDo = `${dd}.${mm}.${yyyy}`;
+    const najbolja   = Number(data.najbolja_ponuda);
+    const srednja    = Number(data.srednja_ponuda);
+    const prihvacena = Number(data.prihvacena_ponuda);
+    const broj       = Number(data.broj_analiziranih);
 
     const lossNajbolja = prihvacena - najbolja;
-    const lossSrednja = prihvacena - srednja;
+    const lossSrednja  = prihvacena - srednja;
     const kurs = 117.2;
+
+    /* PERIOD OD 01.01.2026 DO DANAS */
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2,"0");
+    const mm = String(today.getMonth()+1).padStart(2,"0");
+    const yyyy = today.getFullYear();
+
+    if(document.getElementById("lossPeriod")){
+      document.getElementById("lossPeriod").innerText =
+        `Период анализе: 01.01.2026 — ${dd}.${mm}.${yyyy}`;
+    }
 
     /* ISPIS BROJEVA */
     document.getElementById("najboljaPonuda").innerText =
-      najbolja.toLocaleString("sr-RS") + " RSD / " +
-      Math.round(najbolja / kurs).toLocaleString("sr-RS") + " EUR";
+      najbolja.toLocaleString("sr-RS");
 
     document.getElementById("srednjaPonuda").innerText =
-      srednja.toLocaleString("sr-RS") + " RSD / " +
-      Math.round(srednja / kurs).toLocaleString("sr-RS") + " EUR";
+      srednja.toLocaleString("sr-RS");
 
     document.getElementById("prihvacenaPonuda").innerText =
-      prihvacena.toLocaleString("sr-RS") + " RSD / " +
-      Math.round(prihvacena / kurs).toLocaleString("sr-RS") + " EUR";
+      prihvacena.toLocaleString("sr-RS");
 
     document.getElementById("brojAnaliziranih").innerText =
       broj.toLocaleString("sr-RS");
 
     document.getElementById("gubitakNajbolja").innerText =
-      "-" + lossNajbolja.toLocaleString("sr-RS") + " RSD / " +
-      Math.round(lossNajbolja / kurs).toLocaleString("sr-RS") + " EUR";
+      "-" + lossNajbolja.toLocaleString("sr-RS") +
+      " RSD / " +
+      Math.round(lossNajbolja/kurs).toLocaleString("sr-RS") +
+      " EUR";
 
     document.getElementById("gubitakSrednja").innerText =
-      "-" + lossSrednja.toLocaleString("sr-RS") + " RSD / " +
-      Math.round(lossSrednja / kurs).toLocaleString("sr-RS") + " EUR";
+      "-" + lossSrednja.toLocaleString("sr-RS") +
+      " RSD / " +
+      Math.round(lossSrednja/kurs).toLocaleString("sr-RS") +
+      " EUR";
 
-    /* PERIOD ISPOD NASLOVA */
-    document.getElementById("lossPeriod").innerText =
-      `Период анализе: ${periodOd} — ${periodDo}`;
-
-    /* UNIŠTI PRETHODNI GRAFIKON */
+    /* RESET GRAFIKONA */
     if(window.lossChartInstance){
       window.lossChartInstance.destroy();
     }
 
-    /* GRAFIKON SE AUTOMATSKI AŽURIRA */
-    window.lossChartInstance = new Chart(
-      document.getElementById("lossChart"),
-      {
-        type: "bar",
-        data: {
-          labels: [
-            "Најбоља понуда",
-            "Средња понуда",
-            "Прихваћена понуда"
+    const ctx = document.getElementById("lossChart").getContext("2d");
+
+    window.lossChartInstance = new Chart(ctx,{
+      type:"bar",
+      data:{
+        labels:[
+          "Најбоља понуда",
+          "Средња понуда",
+          "Прихваћена понуда"
+        ],
+        datasets:[{
+          label:"Износ у RSD",
+          data:[najbolja,srednja,prihvacena],
+          backgroundColor:[
+            "rgba(255,179,0,0.75)",
+            "rgba(76,166,255,0.75)",
+            "rgba(255,92,92,0.75)"
           ],
-          datasets: [{
-            label: "Износ у RSD",
-            data: [najbolja, srednja, prihvacena],
-            backgroundColor: [
-              "rgba(255,179,0,0.7)",
-              "rgba(76,166,255,0.7)",
-              "rgba(255,92,92,0.75)"
-            ],
-            borderWidth: 2,
-            borderRadius: 10
-          }]
+          borderWidth:2,
+          borderRadius:10
+        }]
+      },
+      options:{
+        responsive:true,
+        maintainAspectRatio:false,
+        animation:false,
+        plugins:{
+          legend:{display:false}
         },
-        options: {
-          responsive:true,
-          maintainAspectRatio:false,
-          layout:{
-            padding:{ right:40 }
+        scales:{
+          x:{
+            ticks:{
+              autoSkip:false,
+              maxRotation:15,
+              minRotation:15,
+              font:{size:11}
+            }
           },
-          plugins:{
-            legend:{ display:false }
-          },
-          scales:{
-            x:{
-              offset:true,
-              ticks:{
-                maxRotation:20,
-                minRotation:20,
-                autoSkip:false,
-                font:{ size:11 }
-              },
-              grid:{ display:false }
-            },
-            y:{
-              beginAtZero:true,
-              ticks:{
-                callback:function(value){
-                  return value.toLocaleString("sr-RS");
-                },
-                font:{ size:11 }
+          y:{
+            beginAtZero:true,
+            ticks:{
+              callback:function(value){
+                return value.toLocaleString("sr-RS");
               }
             }
           }
         }
       }
-    );
+    });
 
   }catch(err){
     console.log("Greška loss calculator:", err);
   }
 }
-
 loadLossCalculator();
 
-menu.querySelector('.menu-btn').onclick=()=>menu.classList.toggle('open');
+/* ========================================
+   MENU
+======================================== */
+menu.querySelector('.menu-btn').onclick=()=>{
+  menu.classList.toggle('open');
+};
 
 document.addEventListener('click',(e)=>{
   if(!menu.contains(e.target)){
@@ -1394,18 +1403,25 @@ document.addEventListener('click',(e)=>{
   }
 });
 
-window.addEventListener("load", () => {
+/* ========================================
+   SOCIAL + WHATSAPP
+======================================== */
+window.addEventListener("load",()=>{
   setTimeout(()=>{
     document.querySelector(".wa-btn").classList.add("show");
     document.getElementById("socialBar").classList.add("show");
   },400);
 });
 
-/* chart colors */
+/* ========================================
+   CHART COLORS
+======================================== */
 const axisColor = '#333';
 const gridColor = 'rgba(0,0,0,0.08)';
 
-/* price chart */
+/* ========================================
+   PRICE CHART
+======================================== */
 new Chart(document.getElementById('priceChart'), {
   type: 'bar',
   data: {
@@ -1414,10 +1430,10 @@ new Chart(document.getElementById('priceChart'), {
       label: 'Цена у динарима',
       data: [95,99,102,200],
       backgroundColor: [
-        'rgba(255, 179, 0, 0.70)',
-        'rgba(255, 179, 0, 0.70)',
-        'rgba(255, 179, 0, 0.70)',
-        'rgba(255, 92, 92, 0.75)'
+        'rgba(255,179,0,0.70)',
+        'rgba(255,179,0,0.70)',
+        'rgba(255,179,0,0.70)',
+        'rgba(255,92,92,0.75)'
       ],
       borderColor: [
         '#ffb300',
@@ -1433,40 +1449,28 @@ new Chart(document.getElementById('priceChart'), {
     responsive:true,
     maintainAspectRatio:false,
     plugins:{
-      legend:{display:false},
-      tooltip:{
-        callbacks:{
-          label:function(ctx){
-            return 'Цена: ' + ctx.raw.toLocaleString('sr-RS') + ' дин';
-          }
-        }
-      }
+      legend:{display:false}
     },
     scales:{
-      x:{
-        ticks:{color:axisColor},
-        grid:{color:gridColor}
-      },
-      y:{
-        ticks:{color:axisColor},
-        grid:{color:gridColor}
-      }
+      x:{ticks:{color:axisColor},grid:{color:gridColor}},
+      y:{ticks:{color:axisColor},grid:{color:gridColor}}
     }
   }
 });
 
-/* budget chart */
+/* ========================================
+   BUDGET CHART
+======================================== */
 new Chart(document.getElementById('budgetChart'), {
   type: 'bar',
   data: {
     labels: ['Јавне набавке годишње'],
     datasets: [{
-      label: 'Милијарде €',
       data: [9],
-      backgroundColor: 'rgba(255, 179, 0, 0.7)',
-      borderColor: '#ffb300',
-      borderWidth: 2,
-      borderRadius: 10
+      backgroundColor:'rgba(255,179,0,0.7)',
+      borderColor:'#ffb300',
+      borderWidth:2,
+      borderRadius:10
     }]
   },
   options: {
@@ -1474,36 +1478,27 @@ new Chart(document.getElementById('budgetChart'), {
     maintainAspectRatio:false,
     plugins:{legend:{display:false}},
     scales:{
-      y:{
-        ticks:{color:axisColor},
-        grid:{color:gridColor}
-      },
-      x:{
-        ticks:{color:axisColor},
-        grid:{color:gridColor}
-      }
+      x:{ticks:{color:axisColor},grid:{color:gridColor}},
+      y:{ticks:{color:axisColor},grid:{color:gridColor}}
     }
   }
 });
 
-/* reform savings */
+/* ========================================
+   REFORM SAVINGS CHART
+======================================== */
 new Chart(document.getElementById('reformSavingsChart'), {
   type: 'bar',
   data: {
     labels: ['Сада','После контроле'],
     datasets: [{
-      label: 'Милијарде €',
       data: [9,7],
-      backgroundColor: [
-        'rgba(255, 92, 92, 0.75)',
-        'rgba(60, 200, 120, 0.75)'
+      backgroundColor:[
+        'rgba(255,92,92,0.75)',
+        'rgba(60,200,120,0.75)'
       ],
-      borderColor: [
-        '#ff5c5c',
-        '#3cc878'
-      ],
-      borderWidth: 2,
-      borderRadius: 10
+      borderWidth:2,
+      borderRadius:10
     }]
   },
   options: {
@@ -1511,32 +1506,28 @@ new Chart(document.getElementById('reformSavingsChart'), {
     maintainAspectRatio:false,
     plugins:{legend:{display:false}},
     scales:{
-      y:{
-        ticks:{color:axisColor},
-        grid:{color:gridColor}
-      },
-      x:{
-        ticks:{color:axisColor},
-        grid:{color:gridColor}
-      }
+      x:{ticks:{color:axisColor},grid:{color:gridColor}},
+      y:{ticks:{color:axisColor},grid:{color:gridColor}}
     }
   }
 });
 
-/* sector chart */
+/* ========================================
+   SECTOR PIE CHART
+======================================== */
 new Chart(document.getElementById('sectorChart'), {
   type: 'pie',
   data: {
-    labels: [
+    labels:[
       'Инфраструктура',
       'Јавна предузећа',
       'Здравство',
       'Образовање',
       'Остало'
     ],
-    datasets: [{
-      data: [35,25,15,10,15],
-      backgroundColor: [
+    datasets:[{
+      data:[35,25,15,10,15],
+      backgroundColor:[
         '#ffb300',
         '#ff5c5c',
         '#3cc878',
@@ -1545,38 +1536,30 @@ new Chart(document.getElementById('sectorChart'), {
       ]
     }]
   },
-  options: {
+  options:{
     responsive:true,
-    maintainAspectRatio:false,
-    plugins:{
-      legend:{
-        labels:{color:axisColor}
-      }
-    }
+    maintainAspectRatio:false
   }
 });
 
-/* corruption chart */
+/* ========================================
+   CORRUPTION DONUT CHART
+======================================== */
 new Chart(document.getElementById('corruptionChart'), {
   type: 'doughnut',
   data: {
-    labels: ['Реална вредност','Губитак'],
-    datasets: [{
-      data: [70,30],
-      backgroundColor: [
+    labels:['Реална вредност','Губитак'],
+    datasets:[{
+      data:[70,30],
+      backgroundColor:[
         '#3cc878',
         '#ff5c5c'
       ]
     }]
   },
-  options: {
+options:{
     responsive:true,
-    maintainAspectRatio:false,
-    plugins:{
-      legend:{
-        labels:{color:axisColor}
-      }
-    }
+    maintainAspectRatio:false
   }
 });
 </script>
