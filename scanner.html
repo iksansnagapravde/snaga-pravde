@@ -858,13 +858,13 @@ function renderEntries(){
           </span>
         ` : ""}
 
-        ${e.breaking ? `
-          <span class="badge badge-breaking">BREAKING</span>
-        ` : ""}
+${e.breaking ? `
+  <span class="badge badge-breaking">ХИТНО</span>
+` : ""}
 
-        ${e.alert ? `
-          <span class="badge badge-alert">ALERT</span>
-        ` : ""}
+${e.alert ? `
+  <span class="badge badge-alert">УПОЗОРЕЊЕ</span>
+` : ""}
       </div>
 
       <a class="entry-title"
