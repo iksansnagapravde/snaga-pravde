@@ -838,9 +838,15 @@ window.addEventListener("load", () => {
     if(!res.ok) throw new Error("Неуспешно учитавање.");
 
     const data = await res.json();
-    const entries = Array.isArray(data.entries) ? data.entries : [];
+ const entries = Array.isArray(data.entries) ? data.entries : [];
 
-    const latest = entries;
+entries.sort((a, b) => {
+  const dateA = new Date(`${a.date || ""} ${a.time || "00:00"}`);
+  const dateB = new Date(`${b.date || ""} ${b.time || "00:00"}`);
+  return dateB - dateA;
+});
+
+const latest = entries;
 
     if(!latest.length){
       container.innerHTML =
