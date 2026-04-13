@@ -905,7 +905,7 @@ setInterval(() => {
     }
 
 const shareUrl = "https://snagapravde.rs";
-const shareText = encodeURIComponent(data.title + " - " + data.content.substring(0,120));
+const shareText = encodeURIComponent(data.share_text || data.title);
 
 container.innerHTML = `
   <article class="stav-card">
@@ -924,10 +924,10 @@ container.innerHTML = `
       <a href="https://wa.me/?text=${shareText}%20${shareUrl}"
          target="_blank" class="share-btn">WhatsApp</a>
 
-      <button onclick="copyTikTokLink('${shareUrl}')"
+      <button onclick="copyTikTokLink('${data.share_text || data.title}')"
               class="share-btn">TikTok</button>
 
-      <button onclick="copyInstagramCaption('${data.title}','${data.content}')"
+      <button onclick="copyInstagramCaption('${data.share_text || data.title}')"
               class="share-btn">Instagram</button>
 
     </div>
@@ -942,22 +942,20 @@ container.innerHTML = `
 
 loadStavPredstavnika();
 setInterval(loadStavPredstavnika, 60000); 
-function copyTikTokLink(link){
-  navigator.clipboard.writeText(link).then(() => {
-    window.location.href = "snssdk1233://";
+function copyTikTokLink(text){
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Текст је копиран. TikTok ће се сада отворити.");
     setTimeout(() => {
-      alert("TikTok је отворен. Линк је копиран — налепите у опис.");
-    }, 800);
+      window.location.href = "https://www.tiktok.com/";
+    }, 1200);
   });
 }
 
-function copyInstagramCaption(title, content){
-  const text = title + "\n\n" + content;
-
+function copyInstagramCaption(text){
   navigator.clipboard.writeText(text).then(() => {
     window.location.href = "instagram://app";
     setTimeout(() => {
-      alert("Instagram је отворен. Текст је копиран — налепите у објаву.");
+      alert("Instagram је отворен. Текст је копиран.");
     }, 800);
   });
 }
