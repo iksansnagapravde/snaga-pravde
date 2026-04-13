@@ -244,20 +244,48 @@ header{
   border:none;
 }
 
+.btn-scanner{
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+
+  width:400px;
+  max-width:88%;
+
+  padding:16px 26px;
+  border-radius:8px;
+
+  background:linear-gradient(180deg,#3d7cc0 0%, #2f6fb2 100%);
+  color:#fff;
+
+  border:1px solid rgba(255,255,255,0.18);
+  box-shadow:0 8px 20px rgba(47,111,178,0.14);
+
+  transition:all .25s ease;
+}
+
+.btn-scanner:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 24px rgba(47,111,178,0.18);
+}
+
 .btn-scanner .title{
   font-size:0.98rem;
   font-weight:700;
-  letter-spacing:0.3px;
   line-height:1.2;
   text-align:center;
+  color:#fff;
 }
 
 .btn-scanner .sub{
   font-size:0.72rem;
   font-weight:500;
-  opacity:0.92;
+  opacity:0.95;
   line-height:1.2;
   text-align:center;
+  color:#fff;
 }
 
 @media(max-width:600px){
