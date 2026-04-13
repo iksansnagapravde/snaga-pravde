@@ -916,24 +916,24 @@ container.innerHTML = `
       Дејан Тадић · Иксан Снага правде · ${data.date || ""}
     </div>
 
-    <div class="stav-share">
+<div class="stav-share">
 
-      <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}"
-         target="_blank" class="share-btn">Facebook</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=${shareUrl}"
+     target="_blank"
+     class="share-btn">
+     Facebook
+  </a>
 
-      <a href="https://wa.me/?text=${shareText}%20${shareUrl}"
-         target="_blank" class="share-btn">WhatsApp</a>
+  <a href="https://wa.me/?text=${shareText}%20${shareUrl}"
+     target="_blank"
+     class="share-btn">
+     WhatsApp
+  </a>
 
-      <button onclick="copyTikTokLink('${data.share_text || data.title}')"
-              class="share-btn">TikTok</button>
-
-      <button onclick="copyInstagramCaption('${data.share_text || data.title}')"
-              class="share-btn">Instagram</button>
-
-    </div>
-  </article>
+</div>
+</article>
 `;
-  
+
   } catch(e){
     container.innerHTML =
       '<div class="stav-empty">Није могуће учитати текст.</div>';
@@ -941,24 +941,7 @@ container.innerHTML = `
 }
 
 loadStavPredstavnika();
-setInterval(loadStavPredstavnika, 60000); 
-function copyTikTokLink(text){
-  navigator.clipboard.writeText(text).then(() => {
-    alert("Текст је копиран. TikTok ће се сада отворити.");
-    setTimeout(() => {
-      window.location.href = "https://www.tiktok.com/";
-    }, 1200);
-  });
-}
-
-function copyInstagramCaption(text){
-  navigator.clipboard.writeText(text).then(() => {
-    window.location.href = "instagram://app";
-    setTimeout(() => {
-      alert("Instagram је отворен. Текст је копиран.");
-    }, 800);
-  });
-}
+setInterval(loadStavPredstavnika, 60000);
 </script>
 
 </body>
