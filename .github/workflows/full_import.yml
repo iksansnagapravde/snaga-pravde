@@ -1,0 +1,28 @@
+name: Full Import Contracts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - run: pip install requests beautifulsoup4
+
+      - run: python full_import.py
+
+      - run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add contracts_db.json stats.json loss-data.json import_progress.json failed_ids.json
+          git commit -m "Full import batch update" || echo "No changes"
+          git push
