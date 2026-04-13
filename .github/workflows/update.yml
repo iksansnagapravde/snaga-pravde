@@ -1,253 +1,36 @@
-# =========================================================
-# update.py
-# KOMPLETAN FINALNI KOD
-# AUTOMATSKO PRAĆENJE JAVNIH NABAVKI SRBIJE
-# Portal: https://jnportal.ujn.gov.rs
-# Period: 01.01.2026 → danas
-# Ažuriranje: svakih 15 minuta preko GitHub Actions
-# =========================================================
+name: Update Tender Stats
 
-import requests
-from bs4 import BeautifulSoup
-import json
-import os
-import re
-from datetime import datetime
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
-# =========================================================
-# CONFIG
-# =========================================================
+jobs:
+  update:
+    runs-on: ubuntu-latest
 
-BASE_URL = "https://jnportal.ujn.gov.rs/contract-eo/"
-START_DATE = datetime(2026, 1, 1)
-EUR_RATE = 117.2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-LAST_ID_FILE = "last_id.txt"
-STATS_FILE = "stats.json"
-LOSS_FILE = "loss-data.json"
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
 
-SCAN_BATCH = 3000
-MAX_ID_LIMIT = 5000000
-DEFAULT_START_ID = 1000000
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+      - name: Run update script
+        run: python update.py
 
-# =========================================================
-# LAST ID MANAGEMENT
-# =========================================================
+      - name: Commit updated files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add stats.json loss-data.json contracts_db.json last_id.txt
+          git commit -m "Auto update tender stats" || echo "No changes"
 
-def load_last_id():
-    if os.path.exists(LAST_ID_FILE):
-        with open(LAST_ID_FILE, "r", encoding="utf-8") as f:
-            return int(f.read().strip())
-    return DEFAULT_START_ID
-
-
-def save_last_id(last_id):
-    with open(LAST_ID_FILE, "w", encoding="utf-8") as f:
-        f.write(str(last_id))
-
-
-# =========================================================
-# NUMBER CLEANER
-# =========================================================
-
-def extract_money(text):
-    if not text:
-        return 0
-
-    text = text.replace(".", "").replace(",", ".")
-    nums = re.findall(r"[\d\.]+", text)
-
-    if nums:
-        return float(nums[0])
-
-    return 0
-
-
-# =========================================================
-# CONTRACT PARSER
-# =========================================================
-
-def parse_contract(contract_id):
-    url = BASE_URL + str(contract_id)
-
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=15)
-
-        if r.status_code != 200:
-            return None
-
-        if "Нема података" in r.text:
-            return None
-
-        soup = BeautifulSoup(r.text, "html.parser")
-        text = soup.get_text(" ", strip=True)
-
-        # =====================================
-        # DATUM ZAKLJUČENJA
-        # =====================================
-        date_match = re.search(
-            r"Датум закључења[:\s]+(\d{2}\.\d{2}\.\d{4})",
-            text
-        )
-
-        if not date_match:
-            return None
-
-        contract_date = datetime.strptime(
-            date_match.group(1),
-            "%d.%m.%Y"
-        )
-
-        if contract_date < START_DATE:
-            return None
-
-        # =====================================
-        # VREDNOST SA PDV
-        # =====================================
-        vat_match = re.search(
-            r"Уговорена вредност са ПДВ[:\s]+([\d\.\,]+)",
-            text
-        )
-
-        if vat_match:
-            amount = extract_money(vat_match.group(1))
-        else:
-            amount = 0
-
-        return {
-            "id": contract_id,
-            "date": contract_date.strftime("%d.%m.%Y"),
-            "amount": amount
-        }
-
-    except Exception:
-        return None
-
-
-# =========================================================
-# MAIN UPDATE PROCESS
-# =========================================================
-
-def main():
-
-    start_id = load_last_id()
-    end_id = min(start_id + SCAN_BATCH, MAX_ID_LIMIT)
-
-    print(f"Scanning contracts from {start_id} to {end_id}")
-
-    contracts = []
-
-    # =====================================
-    # SCAN CONTRACTS
-    # =====================================
-    for contract_id in range(start_id, end_id):
-
-        data = parse_contract(contract_id)
-
-        if data:
-            contracts.append(data)
-            print(f"OK {contract_id}: {data['amount']}")
-
-    # =====================================
-    # TOTALS
-    # =====================================
-    total_contracts = len(contracts)
-    total_value = sum(x["amount"] for x in contracts)
-
-    total_value_eur = round(total_value / EUR_RATE)
-
-    # =====================================
-    # LOSS CALCULATOR
-    # =====================================
-    if total_contracts > 0:
-
-        values = [x["amount"] for x in contracts]
-        values_sorted = sorted(values)
-
-        najbolja = min(values_sorted)
-        srednja = values_sorted[len(values_sorted)//2]
-        prihvacena = max(values_sorted)
-
-    else:
-        najbolja = 0
-        srednja = 0
-        prihvacena = 0
-
-    loss_best = prihvacena - najbolja
-    loss_mid = prihvacena - srednja
-
-    # =====================================
-    # STATS.JSON
-    # =====================================
-    stats = {
-        "broj_tendera": total_contracts,
-        "ukupna_vrednost":
-            f"{round(total_value):,}".replace(",", ".") + " RSD",
-        "ukupna_vrednost_eur":
-            f"{total_value_eur:,}".replace(",", ".") + " EUR",
-        "broj_ugovora": total_contracts,
-        "ugovorena_vrednost":
-            f"{round(total_value):,}".replace(",", ".") + " RSD",
-        "ugovorena_vrednost_eur":
-            f"{total_value_eur:,}".replace(",", ".") + " EUR"
-    }
-
-    # =====================================
-    # LOSS-DATA.JSON
-    # =====================================
-    loss_data = {
-        "najbolja_ponuda": round(najbolja),
-        "najbolja_ponuda_eur": round(najbolja / EUR_RATE),
-
-        "srednja_ponuda": round(srednja),
-        "srednja_ponuda_eur": round(srednja / EUR_RATE),
-
-        "prihvacena_ponuda": round(prihvacena),
-        "prihvacena_ponuda_eur": round(prihvacena / EUR_RATE),
-
-        "broj_analiziranih": total_contracts,
-
-        "gubitak_prema_najboljoj": round(loss_best),
-        "gubitak_prema_najboljoj_eur":
-            round(loss_best / EUR_RATE),
-
-        "gubitak_prema_srednjoj": round(loss_mid),
-        "gubitak_prema_srednjoj_eur":
-            round(loss_mid / EUR_RATE),
-
-        "valuta_kurs_eur": EUR_RATE,
-        "period_od": "2026-01-01"
-    }
-
-    # =====================================
-    # SAVE FILES
-    # =====================================
-    with open(STATS_FILE, "w", encoding="utf-8") as f:
-        json.dump(stats, f, ensure_ascii=False, indent=2)
-
-    with open(LOSS_FILE, "w", encoding="utf-8") as f:
-        json.dump(loss_data, f, ensure_ascii=False, indent=2)
-
-    # SAVE LAST ID
-    save_last_id(end_id)
-
-    print("====================================")
-    print("DONE")
-    print("Contracts:", total_contracts)
-    print("Total RSD:", total_value)
-    print("Total EUR:", total_value_eur)
-    print("Saved:", STATS_FILE, LOSS_FILE)
-    print("Next start ID:", end_id)
-    print("====================================")
-
-
-# =========================================================
-# RUN
-# =========================================================
-
-if __name__ == "__main__":
-    main()
+      - name: Push changes
+        run: git push
