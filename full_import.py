@@ -1,382 +1,264 @@
-# =========================================================
 # full_import.py
-# POČETNI FULL IMPORT SVIH UGOVORA OD 01.01.2026.
-# Portal: https://jnportal.ujn.gov.rs/contract-eo/{id}
-# =========================================================
+# Selenium verzija — rešava HTTP 500 blokadu
 
 import json
 import os
 import re
+import sqlite3
 import time
 from datetime import datetime
 
-import requests
 from bs4 import BeautifulSoup
-
-# =========================================================
-# CONFIG
-# =========================================================
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 BASE_URL = "https://jnportal.ujn.gov.rs/contract-eo/"
+START_ID = 1
+BATCH_SIZE = 50
 START_DATE = datetime(2026, 1, 1)
-EUR_RATE = 117.2
 
-DB_FILE = "contracts_db.json"
+DB_FILE = "contracts.db"
+LAST_ID_FILE = "last_id.txt"
 STATS_FILE = "stats.json"
 LOSS_FILE = "loss-data.json"
-PROGRESS_FILE = "import_progress.json"
-FAILED_FILE = "failed_ids.json"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
-
-# Početni i krajnji opseg za pretragu
-START_ID = 1
-END_ID = 5000000
-
-# Koliko ID-jeva obrađuje po jednom batch-u
-BATCH_SIZE = 50
-
-# Koliko puta pokušava isti request
-REQUEST_RETRIES = 3
-
-# Pauza između request-ova
-REQUEST_SLEEP = 0.15
-
-# Pauza između batch-eva
-BATCH_SLEEP = 1.0
+EUR_RATE = 117.2
 
 
-# =========================================================
-# FILE HELPERS
-# =========================================================
+# =====================================================
+# LAST ID
+# =====================================================
 
-def load_json_file(path, default):
-    if os.path.exists(path):
-        try:
-            with open(path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception:
-            return default
-    return default
+def load_last_id():
+    if os.path.exists(LAST_ID_FILE):
+        with open(LAST_ID_FILE, "r", encoding="utf-8") as f:
+            return int(f.read().strip())
+    return START_ID
 
 
-def save_json_file(path, data):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+def save_last_id(last_id):
+    with open(LAST_ID_FILE, "w", encoding="utf-8") as f:
+        f.write(str(last_id))
 
 
-def load_db():
-    data = load_json_file(DB_FILE, [])
-    return data if isinstance(data, list) else []
+# =====================================================
+# DB
+# =====================================================
+
+def init_db():
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+
+    c.execute("""
+    CREATE TABLE IF NOT EXISTS contracts (
+        id INTEGER PRIMARY KEY,
+        contract_id INTEGER UNIQUE,
+        date TEXT,
+        amount REAL
+    )
+    """)
+
+    conn.commit()
+    conn.close()
 
 
-def save_db(data):
-    save_json_file(DB_FILE, data)
+def save_contract(contract_id, date_str, amount):
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+
+    c.execute("""
+    INSERT OR IGNORE INTO contracts
+    (contract_id, date, amount)
+    VALUES (?, ?, ?)
+    """, (contract_id, date_str, amount))
+
+    conn.commit()
+    conn.close()
 
 
-def load_progress():
-    data = load_json_file(PROGRESS_FILE, {})
-    if not isinstance(data, dict):
-        return {"next_id": START_ID}
-    return {
-        "next_id": int(data.get("next_id", START_ID))
-    }
+# =====================================================
+# SELENIUM DRIVER
+# =====================================================
+
+def create_driver():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=chrome_options)
+    return driver
 
 
-def save_progress(next_id):
-    save_json_file(PROGRESS_FILE, {"next_id": next_id})
-
-
-def load_failed_ids():
-    data = load_json_file(FAILED_FILE, [])
-    return data if isinstance(data, list) else []
-
-
-def save_failed_ids(failed_ids):
-    # unique + sorted
-    clean = sorted(set(int(x) for x in failed_ids))
-    save_json_file(FAILED_FILE, clean)
-
-
-# =========================================================
-# FORMAT HELPERS
-# =========================================================
-
-def format_int_rsd(value):
-    return f"{round(value):,}".replace(",", ".") + " RSD"
-
-
-def format_int_eur(value):
-    return f"{round(value):,}".replace(",", ".") + " EUR"
-
+# =====================================================
+# MONEY PARSER
+# =====================================================
 
 def extract_money(text):
     if not text:
-        return 0.0
+        return 0
 
-    cleaned = text.replace(".", "").replace(",", ".")
-    nums = re.findall(r"[\d]+(?:\.[\d]+)?", cleaned)
+    text = text.replace(".", "").replace(",", ".")
+    nums = re.findall(r"[\d\.]+", text)
 
     if nums:
-        try:
-            return float(nums[0])
-        except Exception:
-            return 0.0
+        return float(nums[0])
 
-    return 0.0
+    return 0
 
 
-def parse_date_from_text(text):
-    patterns = [
-        r"Датум закључења[:\s]+(\d{2}\.\d{2}\.\d{4})",
-        r"Datum zaključenja[:\s]+(\d{2}\.\d{2}\.\d{4})",
-        r"Закључен[:\s]+(\d{2}\.\d{2}\.\d{4})",
-        r"Zaključen[:\s]+(\d{2}\.\d{2}\.\d{4})",
-    ]
+# =====================================================
+# PARSE CONTRACT
+# =====================================================
 
-    for pattern in patterns:
-        match = re.search(pattern, text, flags=re.IGNORECASE)
-        if match:
-            try:
-                return datetime.strptime(match.group(1), "%d.%m.%Y")
-            except Exception:
-                pass
-
-    return None
-
-
-def parse_amount_from_text(text):
-    # prioritet: izmenjena vrednost sa PDV
-    priority_patterns = [
-        r"Уг\.?\s*вред\.?\s*са изменама\s*\(са ПДВ\)[:\s]+([\d\.,]+)",
-        r"Уговорена вредност са изменама\s*\(са ПДВ\)[:\s]+([\d\.,]+)",
-        r"Ug\.?\s*vred\.?\s*sa izmenama\s*\(sa PDV\)[:\s]+([\d\.,]+)",
-        r"Ugovorena vrednost sa izmenama\s*\(sa PDV\)[:\s]+([\d\.,]+)",
-    ]
-
-    for pattern in priority_patterns:
-        match = re.search(pattern, text, flags=re.IGNORECASE)
-        if match:
-            return extract_money(match.group(1))
-
-    # fallback: osnovna vrednost sa PDV
-    fallback_patterns = [
-        r"Уг\.?\s*вредност\s*\(са ПДВ\)[:\s]+([\d\.,]+)",
-        r"Уговорена вредност\s*\(са ПДВ\)[:\s]+([\d\.,]+)",
-        r"Ug\.?\s*vrednost\s*\(sa PDV\)[:\s]+([\d\.,]+)",
-        r"Ugovorena vrednost\s*\(sa PDV\)[:\s]+([\d\.,]+)",
-        r"Уговорена вредност са ПДВ[:\s]+([\d\.,]+)",
-        r"Ugovorena vrednost sa PDV[:\s]+([\d\.,]+)",
-    ]
-
-    for pattern in fallback_patterns:
-        match = re.search(pattern, text, flags=re.IGNORECASE)
-        if match:
-            return extract_money(match.group(1))
-
-    return 0.0
-
-
-# =========================================================
-# PARSER
-# =========================================================
-
-def parse_contract(contract_id):
+def parse_contract(driver, contract_id):
     url = BASE_URL + str(contract_id)
-    last_error = None
 
-    for attempt in range(REQUEST_RETRIES):
-        try:
-            response = requests.get(url, headers=HEADERS, timeout=10)
+    try:
+        driver.get(url)
+        time.sleep(2)
 
-            if response.status_code != 200:
-                last_error = f"HTTP {response.status_code}"
-                time.sleep(0.5)
-                continue
+        html = driver.page_source
 
-            html = response.text
+        if "Нема података" in html:
+            print(f"NOT FOUND {contract_id}")
+            return None
 
-            not_found_markers = [
-                "Нема података",
-                "Уговор није пронађен",
-                "Not Found",
-            ]
-            if any(marker in html for marker in not_found_markers):
-                return None, False
+        soup = BeautifulSoup(html, "html.parser")
+        text = soup.get_text(" ", strip=True)
 
-            soup = BeautifulSoup(html, "html.parser")
-            text = soup.get_text(" ", strip=True)
+        date_match = re.search(
+            r"Датум закључења[:\s]+(\d{2}\.\d{2}\.\d{4})",
+            text
+        )
 
-            contract_date = parse_date_from_text(text)
-            if not contract_date:
-                # stranica postoji ali nije ugovor koji možemo obraditi
-                return None, False
+        if not date_match:
+            print(f"NO DATE {contract_id}")
+            return None
 
-            if contract_date < START_DATE:
-                # postoji, ali nije u periodu
-                return None, False
+        contract_date = datetime.strptime(
+            date_match.group(1),
+            "%d.%m.%Y"
+        )
 
-            amount = parse_amount_from_text(text)
+        if contract_date < START_DATE:
+            print(f"OLD {contract_id}")
+            return None
 
-            item = {
-                "id": contract_id,
-                "url": url,
-                "date": contract_date.strftime("%d.%m.%Y"),
-                "date_iso": contract_date.strftime("%Y-%m-%d"),
-                "amount_rsd": round(amount),
-                "amount_eur": round(amount / EUR_RATE),
-            }
-            return item, False
+        vat_match = re.search(
+            r"Уговорена вредност са ПДВ[:\s]+([\d\.\,]+)",
+            text
+        )
 
-        except Exception as exc:
-            last_error = str(exc)
-            time.sleep(0.75)
+        amount = 0
+        if vat_match:
+            amount = extract_money(vat_match.group(1))
 
-    print(f"FAILED {contract_id}: {last_error}")
-    return None, True
+        print(f"OK {contract_id}: {amount}")
 
-
-# =========================================================
-# OUTPUT BUILDERS
-# =========================================================
-
-def build_loss_data(values):
-    if not values:
         return {
-            "najbolja_ponuda": 0,
-            "najbolja_ponuda_eur": 0,
-            "srednja_ponuda": 0,
-            "srednja_ponuda_eur": 0,
-            "prihvacena_ponuda": 0,
-            "prihvacena_ponuda_eur": 0,
-            "broj_analiziranih": 0,
-            "gubitak_prema_najboljoj": 0,
-            "gubitak_prema_najboljoj_eur": 0,
-            "gubitak_prema_srednjoj": 0,
-            "gubitak_prema_srednjoj_eur": 0,
-            "valuta_kurs_eur": EUR_RATE,
-            "period_od": "2026-01-01"
+            "id": contract_id,
+            "date": contract_date.strftime("%d.%m.%Y"),
+            "amount": amount
         }
 
-    values_sorted = sorted(values)
+    except Exception as e:
+        print(f"FAILED {contract_id}: {e}")
+        return None
 
-    najbolja = values_sorted[0]
-    srednja = values_sorted[len(values_sorted) // 2]
-    prihvacena = values_sorted[-1]
+
+# =====================================================
+# STATS
+# =====================================================
+
+def update_stats():
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+
+    c.execute("SELECT COUNT(*), SUM(amount) FROM contracts")
+    row = c.fetchone()
+
+    total_contracts = row[0] or 0
+    total_value = row[1] or 0
+
+    c.execute("SELECT amount FROM contracts ORDER BY amount ASC")
+    values = [x[0] for x in c.fetchall()]
+
+    conn.close()
+
+    total_value_eur = round(total_value / EUR_RATE)
+
+    if values:
+        najbolja = min(values)
+        srednja = values[len(values)//2]
+        prihvacena = max(values)
+    else:
+        najbolja = srednja = prihvacena = 0
 
     loss_best = prihvacena - najbolja
     loss_mid = prihvacena - srednja
 
-    return {
-        "najbolja_ponuda": round(najbolja),
-        "najbolja_ponuda_eur": round(najbolja / EUR_RATE),
-        "srednja_ponuda": round(srednja),
-        "srednja_ponuda_eur": round(srednja / EUR_RATE),
-        "prihvacena_ponuda": round(prihvacena),
-        "prihvacena_ponuda_eur": round(prihvacena / EUR_RATE),
-        "broj_analiziranih": len(values_sorted),
-        "gubitak_prema_najboljoj": round(loss_best),
-        "gubitak_prema_najboljoj_eur": round(loss_best / EUR_RATE),
-        "gubitak_prema_srednjoj": round(loss_mid),
-        "gubitak_prema_srednjoj_eur": round(loss_mid / EUR_RATE),
-        "valuta_kurs_eur": EUR_RATE,
-        "period_od": "2026-01-01"
-    }
-
-
-def write_outputs(db):
-    total_contracts = len(db)
-    total_value_rsd = sum(item.get("amount_rsd", 0) for item in db)
-    total_value_eur = round(total_value_rsd / EUR_RATE)
-
     stats = {
         "broj_tendera": total_contracts,
-        "ukupna_vrednost": format_int_rsd(total_value_rsd),
-        "ukupna_vrednost_eur": format_int_eur(total_value_eur),
+        "ukupna_vrednost":
+            f"{round(total_value):,}".replace(",", ".") + " RSD",
+        "ukupna_vrednost_eur":
+            f"{total_value_eur:,}".replace(",", ".") + " EUR",
         "broj_ugovora": total_contracts,
-        "ugovorena_vrednost": format_int_rsd(total_value_rsd),
-        "ugovorena_vrednost_eur": format_int_eur(total_value_eur)
+        "ugovorena_vrednost":
+            f"{round(total_value):,}".replace(",", ".") + " RSD",
+        "ugovorena_vrednost_eur":
+            f"{total_value_eur:,}".replace(",", ".") + " EUR"
     }
 
-    values = [item.get("amount_rsd", 0) for item in db if item.get("amount_rsd", 0) > 0]
-    loss_data = build_loss_data(values)
+    loss_data = {
+        "najbolja_ponuda": round(najbolja),
+        "srednja_ponuda": round(srednja),
+        "prihvacena_ponuda": round(prihvacena),
+        "broj_analiziranih": total_contracts,
+        "gubitak_prema_najboljoj": round(loss_best),
+        "gubitak_prema_srednjoj": round(loss_mid)
+    }
 
-    save_json_file(STATS_FILE, stats)
-    save_json_file(LOSS_FILE, loss_data)
+    with open(STATS_FILE, "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False, indent=2)
+
+    with open(LOSS_FILE, "w", encoding="utf-8") as f:
+        json.dump(loss_data, f, ensure_ascii=False, indent=2)
 
 
-# =========================================================
+# =====================================================
 # MAIN
-# =========================================================
+# =====================================================
 
 def main():
-    db = load_db()
-    known_ids = {item["id"] for item in db if isinstance(item, dict) and "id" in item}
+    init_db()
 
-    progress = load_progress()
-    next_id = progress["next_id"]
+    start_id = load_last_id()
+    end_id = start_id + BATCH_SIZE
 
-    failed_ids = load_failed_ids()
+    print("="*40)
+    print(f"FULL IMPORT BATCH: {start_id} -> {end_id}")
+    print("="*40)
 
-    if next_id < START_ID:
-        next_id = START_ID
+    driver = create_driver()
 
-    batch_start = next_id
-    batch_end = min(batch_start + BATCH_SIZE - 1, END_ID)
+    for contract_id in range(start_id, end_id):
+        data = parse_contract(driver, contract_id)
 
-    print("====================================")
-    print(f"FULL IMPORT BATCH: {batch_start} -> {batch_end}")
-    print(f"Known contracts in DB: {len(db)}")
-    print("====================================")
-
-    new_items = []
-    new_failed = []
-
-    for contract_id in range(batch_start, batch_end + 1):
-        if contract_id in known_ids:
-            continue
-
-        item, failed = parse_contract(contract_id)
-
-        if item:
-            new_items.append(item)
-            known_ids.add(contract_id)
-            print(
-                f"OK {contract_id} | {item['date']} | "
-                f"{item['amount_rsd']} RSD"
+        if data:
+            save_contract(
+                data["id"],
+                data["date"],
+                data["amount"]
             )
-        elif failed:
-            new_failed.append(contract_id)
 
-        time.sleep(REQUEST_SLEEP)
+    driver.quit()
 
-    if new_items:
-        db.extend(new_items)
-        db.sort(key=lambda x: x.get("id", 0))
-        save_db(db)
+    save_last_id(end_id)
+    update_stats()
 
-    failed_ids.extend(new_failed)
-    save_failed_ids(failed_ids)
-
-    write_outputs(db)
-
-    next_batch_start = batch_end + 1
-    if next_batch_start > END_ID:
-        next_batch_start = END_ID
-
-    save_progress(next_batch_start)
-
-    print("====================================")
-    print("BATCH DONE")
-    print("New contracts:", len(new_items))
-    print("Failed IDs in this batch:", len(new_failed))
-    print("Total contracts in DB:", len(db))
-    print("Next batch starts from:", next_batch_start)
-    print("====================================")
-
-    time.sleep(BATCH_SLEEP)
+    print("DONE")
 
 
 if __name__ == "__main__":
