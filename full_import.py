@@ -217,32 +217,22 @@ def get_latest_decision_rows(driver):
     time.sleep(PAGE_WAIT_SECONDS)
 
     soup = BeautifulSoup(driver.page_source, "html.parser")
-    rows = soup.find_all("tr")
+
+    cards = soup.find_all("a", href=True)
 
     parsed = []
 
-    for row in rows:
-        row_text = " ".join(row.get_text(" ", strip=True).split())
+    for a in cards:
+        href = a["href"]
 
-        if not row_text:
-            continue
+        if ".docx" in href.lower():
+            doc_url = urljoin(BASE_URL, href)
 
-        links = row.find_all("a", href=True)
+            parent = a.parent.get_text(" ", strip=True)
+            row_text = " ".join(parent.split())
 
-        doc_url = ""
-        detail_url = ""
+            detail_url = ""
 
-        for a in links:
-            href = a["href"]
-            full = urljoin(BASE_URL, href)
-
-            if ".docx" in href.lower():
-                doc_url = full
-
-            if "/contract-eo/" in href:
-                detail_url = full
-
-        if doc_url:
             parsed.append({
                 "row_text": row_text,
                 "doc_url": doc_url,
