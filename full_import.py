@@ -182,6 +182,8 @@ def parse_accepted_bid(text):
 
 def parse_supplier(text):
     patterns = [
+        r"Уговор додељује привредном субјекту[:\s]+(.+?)(?:\n|ПИБ|Адреса)",
+        r"Ugovor dodeljuje privrednom subjektu[:\s]+(.+?)(?:\n|PIB|Adresa)",
         r"Уговор се додељује привредном субјекту[:\s]+(.+?)(?:\n|ПИБ)",
         r"Ugovor se dodeljuje privrednom subjektu[:\s]+(.+?)(?:\n|PIB)",
     ]
