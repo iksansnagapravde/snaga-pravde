@@ -2,7 +2,6 @@ import json
 import re
 import sqlite3
 import statistics
-import time
 from datetime import datetime
 from io import BytesIO
 from urllib.parse import urljoin
@@ -17,7 +16,6 @@ from selenium.webdriver.chrome.options import Options
 # =====================================================
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
-DECISIONS_URL = f"{BASE_URL}/odluke-o-dodeli-ugovora"
 
 DB_FILE = "contracts.db"
 STATS_FILE = "stats.json"
@@ -223,7 +221,7 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# API FETCH (FIXED)
+# FETCH DECISIONS FROM API
 # =====================================================
 
 def get_latest_decision_rows(driver):
@@ -253,7 +251,14 @@ def get_latest_decision_rows(driver):
 
         for item in data.get("content", []):
             title = item.get("title", "")
-            pdf_path = item.get("pdfDocument", "")
+
+            pdf_path = (
+                item.get("pdfDocument")
+                or item.get("documentUrl")
+                or item.get("downloadUrl")
+                or ""
+            )
+
             detail_id = item.get("id", "")
 
             pdf_url = urljoin(BASE_URL, pdf_path) if pdf_path else ""
@@ -275,7 +280,7 @@ def get_latest_decision_rows(driver):
 
 
 # =====================================================
-# DB SAVE
+# DB HELPERS
 # =====================================================
 
 def tender_exists(key):
@@ -344,7 +349,7 @@ def save_suspicious_winner(record):
 
 
 # =====================================================
-# JSON EXPORT
+# EXPORT JSON
 # =====================================================
 
 def write_outputs():
