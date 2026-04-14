@@ -1,3 +1,4 @@
+import os
 import json
 import re
 import sqlite3
@@ -5,11 +6,9 @@ import statistics
 import time
 from datetime import datetime
 from io import BytesIO
-from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
-from pypdf import PdfReader
 from docx import Document
 
 from selenium import webdriver
@@ -31,14 +30,11 @@ STATS_FILE = "stats.json"
 LOSS_FILE = "loss-data.json"
 SUSPICIOUS_FILE = "suspicious-winners.json"
 
-EUR_RATE = 117.2
-REQUEST_TIMEOUT = 30
-PAGE_WAIT_SECONDS = 5
-MAX_ROWS_PER_RUN = 20
+DOWNLOAD_DIR = "/tmp/jn_downloads"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+EUR_RATE = 117.2
+MAX_ROWS_PER_RUN = 20
+REQUEST_TIMEOUT = 30
 
 
 # =====================================================
@@ -46,16 +42,27 @@ HEADERS = {
 # =====================================================
 
 def create_driver():
+    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
+
     chrome_options = Options()
     chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--window-size=1600,2200")
+
+    prefs = {
+        "download.default_directory": DOWNLOAD_DIR,
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "safebrowsing.enabled": True
+    }
+
+    chrome_options.add_experimental_option("prefs", prefs)
+
     return webdriver.Chrome(options=chrome_options)
 
 
 # =====================================================
-# DB INIT
+# DB
 # =====================================================
 
 def init_db():
@@ -74,23 +81,7 @@ def init_db():
         median_bid REAL DEFAULT 0,
         accepted_bid REAL DEFAULT 0,
         bidder_count INTEGER DEFAULT 0,
-        doc_url TEXT,
-        detail_url TEXT,
         raw_text TEXT
-    )
-    """)
-
-    c.execute("""
-    CREATE TABLE IF NOT EXISTS suspicious_winners (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        supplier TEXT,
-        title TEXT,
-        publish_date TEXT,
-        accepted_bid REAL,
-        median_bid REAL,
-        budget_loss REAL,
-        doc_url TEXT UNIQUE,
-        detail_url TEXT
     )
     """)
 
@@ -99,7 +90,7 @@ def init_db():
 
 
 # =====================================================
-# MONEY PARSER
+# HELPERS
 # =====================================================
 
 def money_to_float(value):
@@ -126,17 +117,43 @@ def format_eur(value):
     return f"{round(value):,}".replace(",", ".") + " EUR"
 
 
+def clear_download_folder():
+    for f in os.listdir(DOWNLOAD_DIR):
+        path = os.path.join(DOWNLOAD_DIR, f)
+        if os.path.isfile(path):
+            os.remove(path)
+
+
+def wait_for_download(timeout=20):
+    start = time.time()
+
+    while time.time() - start < timeout:
+        files = os.listdir(DOWNLOAD_DIR)
+
+        docx_files = [
+            f for f in files
+            if f.endswith(".docx") and not f.endswith(".crdownload")
+        ]
+
+        if docx_files:
+            latest = max(
+                [os.path.join(DOWNLOAD_DIR, f) for f in docx_files],
+                key=os.path.getmtime
+            )
+            return latest
+
+        time.sleep(1)
+
+    return None
+
+
 # =====================================================
 # DOCX READER
 # =====================================================
 
-def extract_docx_text_from_url(doc_url):
+def extract_docx_text(file_path):
     try:
-        r = requests.get(doc_url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        r.raise_for_status()
-
-        file_stream = BytesIO(r.content)
-        doc = Document(file_stream)
+        doc = Document(file_path)
 
         paragraphs = []
         for p in doc.paragraphs:
@@ -212,69 +229,47 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# DECISION LIST (FIXED)
+# DOWNLOAD CLICK MODE
 # =====================================================
 
-def get_latest_decision_rows(driver):
+def get_download_buttons(driver):
     driver.get(DECISIONS_URL)
 
     WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.TAG_NAME, "a"))
+        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "mat-icon"))
     )
 
     time.sleep(5)
 
-    soup = BeautifulSoup(driver.page_source, "html.parser")
+    buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
 
-    links = soup.find_all("a", href=True)
+    download_buttons = []
 
-    parsed = []
+    for btn in buttons:
+        try:
+            if btn.text.strip() == "download":
+                download_buttons.append(btn)
+        except:
+            pass
 
-    for a in links:
-        href = a["href"]
-
-        if ".docx" in href.lower():
-            doc_url = urljoin(BASE_URL, href)
-
-            parent = a.parent.get_text(" ", strip=True)
-            row_text = " ".join(parent.split())
-
-            parsed.append({
-                "row_text": row_text,
-                "doc_url": doc_url,
-                "detail_url": ""
-            })
-
-        if len(parsed) >= MAX_ROWS_PER_RUN:
-            break
-
-    print("FOUND ROWS:", len(parsed))
-    return parsed
+    print("FOUND BUTTONS:", len(download_buttons))
+    return download_buttons[:MAX_ROWS_PER_RUN]
 
 
 # =====================================================
 # DB SAVE
 # =====================================================
 
-def tender_exists(key):
-    conn = sqlite3.connect(DB_FILE)
-    c = conn.cursor()
-    c.execute("SELECT 1 FROM tenders WHERE tender_key=?", (key,))
-    exists = c.fetchone() is not None
-    conn.close()
-    return exists
-
-
 def save_tender(record):
     conn = sqlite3.connect(DB_FILE)
     c = conn.cursor()
 
     c.execute("""
-    INSERT OR REPLACE INTO tenders (
+    INSERT OR IGNORE INTO tenders (
         tender_key,title,supplier,publish_date,
-        budget_value,lowest_bid,median_bid,accepted_bid,
-        bidder_count,doc_url,detail_url,raw_text
-    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+        budget_value,lowest_bid,median_bid,
+        accepted_bid,bidder_count,raw_text
+    ) VALUES (?,?,?,?,?,?,?,?,?,?)
     """, (
         record["tender_key"],
         record["title"],
@@ -285,8 +280,6 @@ def save_tender(record):
         record["median_bid"],
         record["accepted_bid"],
         record["bidder_count"],
-        record["doc_url"],
-        record["detail_url"],
         record["raw_text"]
     ))
 
@@ -294,35 +287,8 @@ def save_tender(record):
     conn.close()
 
 
-def save_suspicious_winner(record):
-    budget_loss = record["accepted_bid"] - record["median_bid"]
-
-    conn = sqlite3.connect(DB_FILE)
-    c = conn.cursor()
-
-    c.execute("""
-    INSERT OR IGNORE INTO suspicious_winners (
-        supplier,title,publish_date,
-        accepted_bid,median_bid,budget_loss,
-        doc_url,detail_url
-    ) VALUES (?,?,?,?,?,?,?,?)
-    """, (
-        record["supplier"],
-        record["title"],
-        record["publish_date"],
-        record["accepted_bid"],
-        record["median_bid"],
-        budget_loss,
-        record["doc_url"],
-        record["detail_url"]
-    ))
-
-    conn.commit()
-    conn.close()
-
-
 # =====================================================
-# JSON EXPORT
+# OUTPUTS
 # =====================================================
 
 def write_outputs():
@@ -332,20 +298,15 @@ def write_outputs():
     c.execute("""
     SELECT COUNT(*),
            COALESCE(SUM(budget_value),0),
-           COALESCE(SUM(lowest_bid),0),
-           COALESCE(SUM(median_bid),0),
            COALESCE(SUM(accepted_bid),0)
     FROM tenders
     """)
     row = c.fetchone()
+    conn.close()
 
     total_tenders = row[0]
     total_budget = row[1]
-    total_lowest = row[2]
-    total_median = row[3]
-    total_accepted = row[4]
-
-    conn.close()
+    total_accepted = row[2]
 
     stats = {
         "broj_tendera": total_tenders,
@@ -368,73 +329,89 @@ def main():
     init_db()
     driver = create_driver()
 
-    rows = get_latest_decision_rows(driver)
+    driver.get(DECISIONS_URL)
+    time.sleep(5)
 
-    print("=" * 60)
-    print("LATEST DECISIONS FOUND")
-    print("=" * 60)
+    buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
 
-    for row in rows:
-        row_text = row["row_text"]
-        doc_url = row["doc_url"]
-        detail_url = row["detail_url"]
+    download_buttons = []
+    for b in buttons:
+        try:
+            if b.text.strip() == "download":
+                download_buttons.append(b)
+        except:
+            pass
 
-        tender_key = row_text[:150] + "|" + doc_url
+    print("FOUND DOWNLOAD BUTTONS:", len(download_buttons))
 
-        if tender_exists(tender_key):
-            print("SKIP:", row_text[:60])
-            continue
+    for idx, btn in enumerate(download_buttons[:MAX_ROWS_PER_RUN]):
+        try:
+            clear_download_folder()
 
-        doc_text = extract_docx_text_from_url(doc_url)
+            driver.execute_script("arguments[0].click();", btn)
 
-        if not doc_text:
-            print("EMPTY DOC:", doc_url)
-            continue
+            file_path = wait_for_download()
 
-        supplier = parse_supplier(doc_text)
-        budget_value = parse_budget_value(doc_text)
-        accepted_bid = parse_accepted_bid(doc_text)
+            if not file_path:
+                print("DOWNLOAD FAILED:", idx)
+                continue
 
-        prices = parse_bid_prices(doc_text)
+            doc_text = extract_docx_text(file_path)
 
-        if prices:
-            lowest_bid = min(prices)
-            median_bid = statistics.median(prices)
-            bidder_count = len(prices)
-        else:
-            lowest_bid = 0
-            median_bid = 0
-            bidder_count = 0
+            if not doc_text:
+                print("EMPTY DOC:", idx)
+                continue
 
-        record = {
-            "tender_key": tender_key,
-            "title": row_text[:250],
-            "supplier": supplier,
-            "publish_date": datetime.today().strftime("%d.%m.%Y"),
-            "budget_value": budget_value,
-            "lowest_bid": lowest_bid,
-            "median_bid": median_bid,
-            "accepted_bid": accepted_bid,
-            "bidder_count": bidder_count,
-            "doc_url": doc_url,
-            "detail_url": detail_url,
-            "raw_text": doc_text[:20000]
-        }
+            supplier = parse_supplier(doc_text)
+            budget_value = parse_budget_value(doc_text)
+            accepted_bid = parse_accepted_bid(doc_text)
 
-        save_tender(record)
+            prices = parse_bid_prices(doc_text)
 
-        if accepted_bid > median_bid and median_bid > 0:
-            save_suspicious_winner(record)
+            if prices:
+                lowest_bid = min(prices)
+                median_bid = statistics.median(prices)
+                bidder_count = len(prices)
+            else:
+                lowest_bid = 0
+                median_bid = 0
+                bidder_count = 0
 
-        print("SAVED:", supplier, "| accepted:", accepted_bid)
+            record = {
+                "tender_key": f"{supplier}_{idx}_{datetime.now()}",
+                "title": f"Tender {idx+1}",
+                "supplier": supplier,
+                "publish_date": datetime.today().strftime("%d.%m.%Y"),
+                "budget_value": budget_value,
+                "lowest_bid": lowest_bid,
+                "median_bid": median_bid,
+                "accepted_bid": accepted_bid,
+                "bidder_count": bidder_count,
+                "raw_text": doc_text[:20000]
+            }
+
+            save_tender(record)
+
+            print("SAVED:", supplier)
+
+            driver.get(DECISIONS_URL)
+            time.sleep(3)
+
+            buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
+            download_buttons = [
+                x for x in buttons if x.text.strip() == "download"
+            ]
+
+        except Exception as e:
+            print("ERROR:", e)
 
     driver.quit()
     write_outputs()
 
-    print("=" * 60)
+    print("=" * 50)
     print("DONE")
     print("stats.json updated")
-    print("=" * 60)
+    print("=" * 50)
 
 
 if __name__ == "__main__":
