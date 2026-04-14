@@ -11,8 +11,13 @@ import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 from docx import Document
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 # =====================================================
 # CONFIG
@@ -182,8 +187,6 @@ def parse_accepted_bid(text):
 
 def parse_supplier(text):
     patterns = [
-        r"Уговор додељује привредном субјекту[:\s]+(.+?)(?:\n|ПИБ|Адреса)",
-        r"Ugovor dodeljuje privrednom subjektu[:\s]+(.+?)(?:\n|PIB|Adresa)",
         r"Уговор се додељује привредном субјекту[:\s]+(.+?)(?:\n|ПИБ)",
         r"Ugovor se dodeljuje privrednom subjektu[:\s]+(.+?)(?:\n|PIB)",
     ]
@@ -209,20 +212,25 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# DECISION LIST
+# DECISION LIST (FIXED)
 # =====================================================
 
 def get_latest_decision_rows(driver):
     driver.get(DECISIONS_URL)
-    time.sleep(PAGE_WAIT_SECONDS)
+
+    WebDriverWait(driver, 20).until(
+        EC.presence_of_element_located((By.TAG_NAME, "a"))
+    )
+
+    time.sleep(5)
 
     soup = BeautifulSoup(driver.page_source, "html.parser")
 
-    cards = soup.find_all("a", href=True)
+    links = soup.find_all("a", href=True)
 
     parsed = []
 
-    for a in cards:
+    for a in links:
         href = a["href"]
 
         if ".docx" in href.lower():
@@ -231,12 +239,10 @@ def get_latest_decision_rows(driver):
             parent = a.parent.get_text(" ", strip=True)
             row_text = " ".join(parent.split())
 
-            detail_url = ""
-
             parsed.append({
                 "row_text": row_text,
                 "doc_url": doc_url,
-                "detail_url": detail_url
+                "detail_url": ""
             })
 
         if len(parsed) >= MAX_ROWS_PER_RUN:
@@ -244,6 +250,7 @@ def get_latest_decision_rows(driver):
 
     print("FOUND ROWS:", len(parsed))
     return parsed
+
 
 # =====================================================
 # DB SAVE
