@@ -1319,7 +1319,7 @@ async function loadLossCalculator(){
     const data = await res.json();
 
     const najbolja   = Number(data.najbolja_ponuda);
-    const srednja    = Number(data.srednja_ponuda);
+    const srednja    = Number(data.medijana_ponuda);
     const prihvacena = Number(data.prihvacena_ponuda);
     const broj       = Number(data.broj_analiziranih);
 
@@ -1377,7 +1377,7 @@ document.getElementById("gubitakNajbolja").innerHTML =
   ' EUR</span>';
 
 /* GUBITAK PREMA SREDNJOJ */
-document.getElementById("gubitakSrednja").innerHTML =
+document.getElementById("gubitak_prema_medijani").innerHTML =
   '<span class="loss-negative">-' +
   lossSrednja.toLocaleString("sr-RS") +
   ' RSD</span><br>' +
