@@ -257,22 +257,14 @@ def load_decision_page(driver):
 
     wait = WebDriverWait(driver, 60)
 
-    # čekaj Angular tabelu
+    # čekaj da Angular app učita glavni container
     wait.until(
         EC.presence_of_element_located(
-            (By.CSS_SELECTOR, "table")
+            (By.TAG_NAME, "app-root")
         )
     )
 
-    # čekaj da se pojave download ikonice
-    wait.until(
-        EC.presence_of_all_elements_located(
-            (By.XPATH, "//mat-icon[contains(text(),'download')]")
-        )
-    )
-
-    time.sleep(8)
-
+    time.sleep(12)
 
 # =====================================================
 # GET DOWNLOAD BUTTONS
