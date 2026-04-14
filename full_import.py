@@ -13,8 +13,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 BASE_URL = "https://jnportal.ujn.gov.rs/contract-eo/"
-START_ID = 1
-BATCH_SIZE = 50
+START_ID = 340000
+BATCH_SIZE = 20
 START_DATE = datetime(2026, 1, 1)
 
 DB_FILE = "contracts.db"
