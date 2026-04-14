@@ -10,8 +10,15 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+
+# NOVO:
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 # =====================================================
 # CONFIG
@@ -27,7 +34,6 @@ SUSPICIOUS_FILE = "suspicious-winners.json"
 
 EUR_RATE = 117.2
 REQUEST_TIMEOUT = 30
-PAGE_WAIT_SECONDS = 4
 MAX_ROWS_PER_RUN = 20
 
 HEADERS = {
@@ -195,10 +201,6 @@ def parse_supplier(text):
 
 
 def parse_bid_prices(text):
-    """
-    Izvlači samo realne ponuđene cene iz:
-    ANALITIČKI PRIKAZ PODNETIH PONUDA
-    """
     prices = []
 
     section_match = re.search(
@@ -235,7 +237,13 @@ def parse_bid_prices(text):
 
 def get_latest_decision_rows(driver):
     driver.get(DECISIONS_URL)
-    time.sleep(PAGE_WAIT_SECONDS)
+
+    # Čekaj da tabela zaista bude učitana
+    WebDriverWait(driver, 20).until(
+        EC.presence_of_element_located((By.TAG_NAME, "table"))
+    )
+
+    time.sleep(5)
 
     soup = BeautifulSoup(driver.page_source, "html.parser")
     rows = soup.find_all("tr")
@@ -276,6 +284,7 @@ def get_latest_decision_rows(driver):
         if len(parsed) >= MAX_ROWS_PER_RUN:
             break
 
+    print("FOUND ROWS:", len(parsed))
     return parsed
 
 
@@ -385,7 +394,6 @@ def write_outputs():
     total_loss_vs_lowest = total_accepted - total_lowest
     total_loss_vs_median = total_accepted - total_median
 
-    # ---------------- stats.json ----------------
     stats = {
         "broj_tendera": total_tenders,
         "ukupna_vrednost": format_rsd(total_budget),
@@ -395,7 +403,6 @@ def write_outputs():
         "ugovorena_vrednost_eur": format_eur(total_accepted / EUR_RATE)
     }
 
-    # ---------------- loss-data.json ----------------
     loss_data = {
         "najbolja_ponuda": round(total_lowest),
         "najbolja_ponuda_eur": round(total_lowest / EUR_RATE),
@@ -418,7 +425,6 @@ def write_outputs():
         "period_od": "2026-01-01"
     }
 
-    # ---------------- suspicious-winners.json ----------------
     suspicious_json = []
 
     for s in suspicious_rows:
@@ -504,7 +510,6 @@ def main():
 
         save_tender(record)
 
-        # suspicious winner = accepted above median
         if accepted_bid > median_bid and median_bid > 0:
             save_suspicious_winner(record)
 
