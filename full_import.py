@@ -10,12 +10,6 @@ import requests
 from bs4 import BeautifulSoup
 from docx import Document
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 
 # =====================================================
 # CONFIG
@@ -26,7 +20,6 @@ DECISIONS_URL = f"{BASE_URL}/odluke-o-dodeli-ugovora"
 
 DB_FILE = "contracts.db"
 STATS_FILE = "stats.json"
-
 DOWNLOAD_DIR = "/tmp/jn_downloads"
 
 EUR_RATE = 117.2
@@ -39,50 +32,7 @@ HEADERS = {
 
 
 # =====================================================
-# TEST PORTAL ACCESS
-# =====================================================
-
-def test_portal_access():
-    print("=" * 60)
-    print("TESTING PORTAL ACCESS")
-    print("=" * 60)
-
-    try:
-        r = requests.get(DECISIONS_URL, headers=HEADERS, timeout=30)
-        print("STATUS:", r.status_code)
-        print(r.text[:1000])
-        print("=" * 60)
-    except Exception as e:
-        print("REQUEST ERROR:", e)
-
-
-# =====================================================
-# DRIVER
-# =====================================================
-
-def create_driver():
-    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
-
-    chrome_options = Options()
-    chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--window-size=1600,2200")
-
-    prefs = {
-        "download.default_directory": DOWNLOAD_DIR,
-        "download.prompt_for_download": False,
-        "download.directory_upgrade": True,
-        "safebrowsing.enabled": True
-    }
-
-    chrome_options.add_experimental_option("prefs", prefs)
-
-    return webdriver.Chrome(options=chrome_options)
-
-
-# =====================================================
-# DB
+# DB INIT
 # =====================================================
 
 def init_db():
@@ -113,6 +63,15 @@ def init_db():
 # HELPERS
 # =====================================================
 
+def clear_download_folder():
+    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
+
+    for f in os.listdir(DOWNLOAD_DIR):
+        path = os.path.join(DOWNLOAD_DIR, f)
+        if os.path.isfile(path):
+            os.remove(path)
+
+
 def money_to_float(value):
     if not value:
         return 0.0
@@ -137,34 +96,75 @@ def format_eur(value):
     return f"{round(value):,}".replace(",", ".") + " EUR"
 
 
-def clear_download_folder():
-    for f in os.listdir(DOWNLOAD_DIR):
-        path = os.path.join(DOWNLOAD_DIR, f)
-        if os.path.isfile(path):
-            os.remove(path)
+# =====================================================
+# TEST PORTAL
+# =====================================================
+
+def test_portal_access():
+    print("=" * 60)
+    print("TESTING PORTAL ACCESS")
+    print("=" * 60)
+
+    r = requests.get(
+        DECISIONS_URL,
+        headers=HEADERS,
+        timeout=REQUEST_TIMEOUT
+    )
+
+    print("STATUS:", r.status_code)
+    print(r.text[:500])
+    print("=" * 60)
 
 
-def wait_for_download(timeout=25):
-    start = time.time()
+# =====================================================
+# GET DOCX LINKS
+# =====================================================
 
-    while time.time() - start < timeout:
-        files = os.listdir(DOWNLOAD_DIR)
+def get_docx_links():
+    print("=" * 60)
+    print("PARSING DOCX LINKS VIA REQUESTS")
+    print("=" * 60)
 
-        docx_files = [
-            f for f in files
-            if f.endswith(".docx") and not f.endswith(".crdownload")
-        ]
+    r = requests.get(
+        DECISIONS_URL,
+        headers=HEADERS,
+        timeout=REQUEST_TIMEOUT
+    )
 
-        if docx_files:
-            latest = max(
-                [os.path.join(DOWNLOAD_DIR, f) for f in docx_files],
-                key=os.path.getmtime
-            )
-            return latest
+    soup = BeautifulSoup(r.text, "html.parser")
 
-        time.sleep(1)
+    links = []
 
-    return None
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+
+        if ".docx" in href.lower():
+            if href.startswith("/"):
+                href = BASE_URL + href
+
+            links.append(href)
+
+    print("FOUND DOCX LINKS:", len(links))
+    return links[:MAX_ROWS_PER_RUN]
+
+
+# =====================================================
+# DOWNLOAD DOCX
+# =====================================================
+
+def download_docx(doc_url, idx):
+    file_path = os.path.join(DOWNLOAD_DIR, f"file_{idx}.docx")
+
+    r = requests.get(
+        doc_url,
+        headers=HEADERS,
+        timeout=REQUEST_TIMEOUT
+    )
+
+    with open(file_path, "wb") as f:
+        f.write(r.content)
+
+    return file_path
 
 
 # =====================================================
@@ -176,6 +176,7 @@ def extract_docx_text(file_path):
         doc = Document(file_path)
 
         paragraphs = []
+
         for p in doc.paragraphs:
             txt = p.text.strip()
             if txt:
@@ -249,41 +250,7 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# PAGE LOADER
-# =====================================================
-
-def load_decision_page(driver):
-    driver.get(DECISIONS_URL)
-
-    wait = WebDriverWait(driver, 60)
-
-    # čekaj da Angular app učita glavni container
-    wait.until(
-        EC.presence_of_element_located(
-            (By.TAG_NAME, "app-root")
-        )
-    )
-
-    time.sleep(12)
-
-# =====================================================
-# GET DOWNLOAD BUTTONS
-# =====================================================
-
-def get_download_buttons(driver):
-    load_decision_page(driver)
-
-    buttons = driver.find_elements(
-        By.XPATH,
-        "//mat-icon[contains(text(),'download')]"
-    )
-
-    print("FOUND DOWNLOAD BUTTONS:", len(buttons))
-    return buttons[:MAX_ROWS_PER_RUN]
-
-
-# =====================================================
-# DB SAVE
+# SAVE TO DB
 # =====================================================
 
 def save_tender(record):
@@ -314,7 +281,7 @@ def save_tender(record):
 
 
 # =====================================================
-# OUTPUTS
+# WRITE OUTPUTS
 # =====================================================
 
 def write_outputs():
@@ -327,6 +294,7 @@ def write_outputs():
            COALESCE(SUM(accepted_bid),0)
     FROM tenders
     """)
+
     row = c.fetchone()
     conn.close()
 
@@ -352,27 +320,16 @@ def write_outputs():
 # =====================================================
 
 def main():
+    init_db()
+    clear_download_folder()
+
     test_portal_access()
 
-    init_db()
-    driver = create_driver()
+    docx_links = get_docx_links()
 
-    download_buttons = get_download_buttons(driver)
-
-    for idx in range(len(download_buttons)):
+    for idx, doc_url in enumerate(docx_links):
         try:
-            clear_download_folder()
-
-            download_buttons = get_download_buttons(driver)
-            btn = download_buttons[idx]
-
-            driver.execute_script("arguments[0].click();", btn)
-
-            file_path = wait_for_download()
-
-            if not file_path:
-                print("DOWNLOAD FAILED:", idx)
-                continue
+            file_path = download_docx(doc_url, idx)
 
             doc_text = extract_docx_text(file_path)
 
@@ -415,13 +372,12 @@ def main():
         except Exception as e:
             print("ERROR:", e)
 
-    driver.quit()
     write_outputs()
 
-    print("=" * 50)
+    print("=" * 60)
     print("DONE")
     print("stats.json updated")
-    print("=" * 50)
+    print("=" * 60)
 
 
 if __name__ == "__main__":
