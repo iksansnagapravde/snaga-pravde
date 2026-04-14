@@ -1,5 +1,4 @@
 import json
-import os
 import re
 import sqlite3
 import statistics
@@ -26,9 +25,7 @@ STATS_FILE = "stats.json"
 LOSS_FILE = "loss-data.json"
 SUSPICIOUS_FILE = "suspicious-winners.json"
 
-START_DATE = datetime(2026, 1, 1)
 EUR_RATE = 117.2
-
 REQUEST_TIMEOUT = 30
 PAGE_WAIT_SECONDS = 4
 MAX_ROWS_PER_RUN = 20
@@ -67,6 +64,7 @@ def init_db():
         supplier TEXT,
         publish_date TEXT,
         budget_value REAL DEFAULT 0,
+        lowest_bid REAL DEFAULT 0,
         median_bid REAL DEFAULT 0,
         accepted_bid REAL DEFAULT 0,
         bidder_count INTEGER DEFAULT 0,
@@ -85,7 +83,7 @@ def init_db():
         accepted_bid REAL,
         median_bid REAL,
         budget_loss REAL,
-        pdf_url TEXT,
+        pdf_url TEXT UNIQUE,
         detail_url TEXT
     )
     """)
@@ -123,7 +121,7 @@ def format_eur(value):
 
 
 # =====================================================
-# PDF TEXT
+# PDF READER
 # =====================================================
 
 def extract_pdf_text_from_url(pdf_url):
@@ -132,14 +130,14 @@ def extract_pdf_text_from_url(pdf_url):
         r.raise_for_status()
 
         reader = PdfReader(BytesIO(r.content))
-        text_parts = []
+        pages = []
 
         for page in reader.pages:
             txt = page.extract_text()
             if txt:
-                text_parts.append(txt)
+                pages.append(txt)
 
-        return "\n".join(text_parts)
+        return "\n".join(pages)
 
     except Exception as e:
         print("PDF ERROR:", e)
@@ -147,7 +145,7 @@ def extract_pdf_text_from_url(pdf_url):
 
 
 # =====================================================
-# EXTRACT PDF DATA
+# PARSERS
 # =====================================================
 
 def parse_budget_value(text):
@@ -197,11 +195,38 @@ def parse_supplier(text):
 
 
 def parse_bid_prices(text):
-    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-    vals = [money_to_float(x) for x in prices if money_to_float(x) > 0]
+    """
+    Izvlači samo realne ponuđene cene iz:
+    ANALITIČKI PRIKAZ PODNETIH PONUDA
+    """
+    prices = []
 
-    vals = sorted(set(vals))
-    return vals
+    section_match = re.search(
+        r"Аналитички приказ поднетих понуда(.*?)(Стручна оцена|Уговор неће бити додељен|Образложење избора)",
+        text,
+        re.DOTALL | re.IGNORECASE
+    )
+
+    if not section_match:
+        section_match = re.search(
+            r"Analitički prikaz podnetih ponuda(.*?)(Stručna ocena|Ugovor neće biti dodeljen|Obrazloženje izbora)",
+            text,
+            re.DOTALL | re.IGNORECASE
+        )
+
+    if not section_match:
+        return []
+
+    section = section_match.group(1)
+
+    found = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", section)
+
+    for val in found:
+        num = money_to_float(val)
+        if num > 0:
+            prices.append(num)
+
+    return sorted(prices)
 
 
 # =====================================================
@@ -219,6 +244,7 @@ def get_latest_decision_rows(driver):
 
     for row in rows:
         row_text = " ".join(row.get_text(" ", strip=True).split())
+
         if not row_text:
             continue
 
@@ -226,6 +252,7 @@ def get_latest_decision_rows(driver):
             continue
 
         links = row.find_all("a", href=True)
+
         pdf_url = ""
         detail_url = ""
 
@@ -253,7 +280,7 @@ def get_latest_decision_rows(driver):
 
 
 # =====================================================
-# SAVE TENDER
+# DB SAVE
 # =====================================================
 
 def tender_exists(key):
@@ -272,15 +299,16 @@ def save_tender(record):
     c.execute("""
     INSERT OR REPLACE INTO tenders (
         tender_key,title,supplier,publish_date,
-        budget_value,median_bid,accepted_bid,bidder_count,
-        pdf_url,detail_url,raw_text
-    ) VALUES (?,?,?,?,?,?,?,?,?,?,?)
+        budget_value,lowest_bid,median_bid,accepted_bid,
+        bidder_count,pdf_url,detail_url,raw_text
+    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
     """, (
         record["tender_key"],
         record["title"],
         record["supplier"],
         record["publish_date"],
         record["budget_value"],
+        record["lowest_bid"],
         record["median_bid"],
         record["accepted_bid"],
         record["bidder_count"],
@@ -293,10 +321,6 @@ def save_tender(record):
     conn.close()
 
 
-# =====================================================
-# SAVE SUSPICIOUS
-# =====================================================
-
 def save_suspicious_winner(record):
     budget_loss = record["accepted_bid"] - record["median_bid"]
 
@@ -304,7 +328,7 @@ def save_suspicious_winner(record):
     c = conn.cursor()
 
     c.execute("""
-    INSERT INTO suspicious_winners (
+    INSERT OR IGNORE INTO suspicious_winners (
         supplier,title,publish_date,
         accepted_bid,median_bid,budget_loss,
         pdf_url,detail_url
@@ -325,7 +349,7 @@ def save_suspicious_winner(record):
 
 
 # =====================================================
-# EXPORT JSON
+# JSON EXPORT
 # =====================================================
 
 def write_outputs():
@@ -335,6 +359,7 @@ def write_outputs():
     c.execute("""
     SELECT COUNT(*),
            COALESCE(SUM(budget_value),0),
+           COALESCE(SUM(lowest_bid),0),
            COALESCE(SUM(median_bid),0),
            COALESCE(SUM(accepted_bid),0)
     FROM tenders
@@ -343,8 +368,9 @@ def write_outputs():
 
     total_tenders = row[0]
     total_budget = row[1]
-    total_median = row[2]
-    total_accepted = row[3]
+    total_lowest = row[2]
+    total_median = row[3]
+    total_accepted = row[4]
 
     c.execute("""
     SELECT supplier,title,publish_date,
@@ -352,12 +378,14 @@ def write_outputs():
     FROM suspicious_winners
     ORDER BY budget_loss DESC
     """)
-
     suspicious_rows = c.fetchall()
+
     conn.close()
 
+    total_loss_vs_lowest = total_accepted - total_lowest
     total_loss_vs_median = total_accepted - total_median
 
+    # ---------------- stats.json ----------------
     stats = {
         "broj_tendera": total_tenders,
         "ukupna_vrednost": format_rsd(total_budget),
@@ -367,28 +395,30 @@ def write_outputs():
         "ugovorena_vrednost_eur": format_eur(total_accepted / EUR_RATE)
     }
 
+    # ---------------- loss-data.json ----------------
     loss_data = {
-        "najbolja_ponuda": round(total_median),
-        "najbolja_ponuda_eur": round(total_median / EUR_RATE),
+        "najbolja_ponuda": round(total_lowest),
+        "najbolja_ponuda_eur": round(total_lowest / EUR_RATE),
 
-        "srednja_ponuda": round(total_median),
-        "srednja_ponuda_eur": round(total_median / EUR_RATE),
+        "medijana_ponuda": round(total_median),
+        "medijana_ponuda_eur": round(total_median / EUR_RATE),
 
         "prihvacena_ponuda": round(total_accepted),
         "prihvacena_ponuda_eur": round(total_accepted / EUR_RATE),
 
         "broj_analiziranih": total_tenders,
 
-        "gubitak_prema_najboljoj": round(total_loss_vs_median),
-        "gubitak_prema_najboljoj_eur": round(total_loss_vs_median / EUR_RATE),
+        "gubitak_prema_najboljoj": round(total_loss_vs_lowest),
+        "gubitak_prema_najboljoj_eur": round(total_loss_vs_lowest / EUR_RATE),
 
-        "gubitak_prema_srednjoj": round(total_loss_vs_median),
-        "gubitak_prema_srednjoj_eur": round(total_loss_vs_median / EUR_RATE),
+        "gubitak_prema_medijani": round(total_loss_vs_median),
+        "gubitak_prema_medijani_eur": round(total_loss_vs_median / EUR_RATE),
 
         "valuta_kurs_eur": EUR_RATE,
         "period_od": "2026-01-01"
     }
 
+    # ---------------- suspicious-winners.json ----------------
     suspicious_json = []
 
     for s in suspicious_rows:
@@ -421,9 +451,9 @@ def main():
 
     rows = get_latest_decision_rows(driver)
 
-    print("="*60)
+    print("=" * 60)
     print("LATEST DECISIONS FOUND")
-    print("="*60)
+    print("=" * 60)
 
     for row in rows:
         row_text = row["row_text"]
@@ -439,6 +469,7 @@ def main():
         pdf_text = extract_pdf_text_from_url(pdf_url)
 
         if not pdf_text:
+            print("EMPTY PDF:", pdf_url)
             continue
 
         supplier = parse_supplier(pdf_text)
@@ -446,8 +477,15 @@ def main():
         accepted_bid = parse_accepted_bid(pdf_text)
 
         prices = parse_bid_prices(pdf_text)
-        median_bid = statistics.median(prices) if prices else 0
-        bidder_count = len(prices)
+
+        if prices:
+            lowest_bid = min(prices)
+            median_bid = statistics.median(prices)
+            bidder_count = len(prices)
+        else:
+            lowest_bid = 0
+            median_bid = 0
+            bidder_count = 0
 
         record = {
             "tender_key": tender_key,
@@ -455,6 +493,7 @@ def main():
             "supplier": supplier,
             "publish_date": datetime.today().strftime("%d.%m.%Y"),
             "budget_value": budget_value,
+            "lowest_bid": lowest_bid,
             "median_bid": median_bid,
             "accepted_bid": accepted_bid,
             "bidder_count": bidder_count,
@@ -465,24 +504,27 @@ def main():
 
         save_tender(record)
 
-        # ===============================
-        # SUSPICIOUS RULE:
-        # ACCEPTED > MEDIAN
-        # ===============================
-        if accepted_bid > median_bid:
+        # suspicious winner = accepted above median
+        if accepted_bid > median_bid and median_bid > 0:
             save_suspicious_winner(record)
 
-        print("SAVED:", supplier, accepted_bid)
+        print(
+            "SAVED:",
+            supplier,
+            "| lowest:", lowest_bid,
+            "| median:", median_bid,
+            "| accepted:", accepted_bid
+        )
 
     driver.quit()
     write_outputs()
 
-    print("="*60)
+    print("=" * 60)
     print("DONE")
     print("stats.json updated")
     print("loss-data.json updated")
     print("suspicious-winners.json updated")
-    print("="*60)
+    print("=" * 60)
 
 
 if __name__ == "__main__":
