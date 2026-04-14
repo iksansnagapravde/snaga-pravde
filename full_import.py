@@ -48,6 +48,7 @@ def create_driver():
     chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--window-size=1600,2200")
 
     prefs = {
         "download.default_directory": DOWNLOAD_DIR,
@@ -124,7 +125,7 @@ def clear_download_folder():
             os.remove(path)
 
 
-def wait_for_download(timeout=20):
+def wait_for_download(timeout=25):
     start = time.time()
 
     while time.time() - start < timeout:
@@ -229,17 +230,29 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# DOWNLOAD CLICK MODE
+# WAIT FOR TABLE TO LOAD
 # =====================================================
 
-def get_download_buttons(driver):
+def load_decision_page(driver):
     driver.get(DECISIONS_URL)
 
-    WebDriverWait(driver, 20).until(
-        EC.presence_of_all_elements_located((By.CSS_SELECTOR, "mat-icon"))
+    wait = WebDriverWait(driver, 30)
+
+    wait.until(
+        EC.presence_of_element_located(
+            (By.CSS_SELECTOR, "table tbody tr")
+        )
     )
 
     time.sleep(5)
+
+
+# =====================================================
+# GET DOWNLOAD BUTTONS
+# =====================================================
+
+def get_download_buttons(driver):
+    load_decision_page(driver)
 
     buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
 
@@ -252,7 +265,7 @@ def get_download_buttons(driver):
         except:
             pass
 
-    print("FOUND BUTTONS:", len(download_buttons))
+    print("FOUND DOWNLOAD BUTTONS:", len(download_buttons))
     return download_buttons[:MAX_ROWS_PER_RUN]
 
 
@@ -329,24 +342,14 @@ def main():
     init_db()
     driver = create_driver()
 
-    driver.get(DECISIONS_URL)
-    time.sleep(5)
+    download_buttons = get_download_buttons(driver)
 
-    buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
-
-    download_buttons = []
-    for b in buttons:
-        try:
-            if b.text.strip() == "download":
-                download_buttons.append(b)
-        except:
-            pass
-
-    print("FOUND DOWNLOAD BUTTONS:", len(download_buttons))
-
-    for idx, btn in enumerate(download_buttons[:MAX_ROWS_PER_RUN]):
+    for idx in range(len(download_buttons)):
         try:
             clear_download_folder()
+
+            download_buttons = get_download_buttons(driver)
+            btn = download_buttons[idx]
 
             driver.execute_script("arguments[0].click();", btn)
 
@@ -393,14 +396,6 @@ def main():
             save_tender(record)
 
             print("SAVED:", supplier)
-
-            driver.get(DECISIONS_URL)
-            time.sleep(3)
-
-            buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
-            download_buttons = [
-                x for x in buttons if x.text.strip() == "download"
-            ]
 
         except Exception as e:
             print("ERROR:", e)
