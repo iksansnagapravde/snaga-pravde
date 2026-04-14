@@ -1284,7 +1284,6 @@ footer{
 <script>
 const menu = document.getElementById('menu');
 
-<script>
 /* ========================================
    TENDER STATS
 ======================================== */
@@ -1346,42 +1345,42 @@ async function loadLossCalculator(){
         `Период анализе: 01.01.2026 — ${dd}.${mm}.${yyyy}`;
     }
 
-    document.getElementById("najboljaPonuda").innerHTML =
-      najbolja.toLocaleString("sr-RS") +
-      ' RSD<br><span style="font-size:1.2rem;color:#0a3f78;font-weight:700;">' +
-      Math.round(najbolja/kurs).toLocaleString("sr-RS") +
-      ' EUR</span>';
+document.getElementById("najboljaPonuda").innerHTML =
+  najbolja.toLocaleString("sr-RS") +
+  ' RSD<br><span style="font-size:1.2rem;color:#0a3f78;font-weight:700;">' +
+  Math.round(najbolja/kurs).toLocaleString("sr-RS") +
+  ' EUR</span>';
 
-    document.getElementById("srednjaPonuda").innerHTML =
-      medijana.toLocaleString("sr-RS") +
-      ' RSD<br><span style="font-size:1.2rem;color:#0a3f78;font-weight:700;">' +
-      Math.round(medijana/kurs).toLocaleString("sr-RS") +
-      ' EUR</span>';
+document.getElementById("medijanaPonuda").innerHTML =
+  medijana.toLocaleString("sr-RS") +
+  ' RSD<br><span style="font-size:1.2rem;color:#0a3f78;font-weight:700;">' +
+  Math.round(medijana/kurs).toLocaleString("sr-RS") +
+  ' EUR</span>';
 
-    document.getElementById("prihvacenaPonuda").innerHTML =
-      prihvacena.toLocaleString("sr-RS") +
-      ' RSD<br><span style="font-size:1.2rem;color:#ffd700;font-weight:700;">' +
-      Math.round(prihvacena/kurs).toLocaleString("sr-RS") +
-      ' EUR</span>';
+document.getElementById("prihvacenaPonuda").innerHTML =
+  prihvacena.toLocaleString("sr-RS") +
+  ' RSD<br><span style="font-size:1.2rem;color:#ffd700;font-weight:700;">' +
+  Math.round(prihvacena/kurs).toLocaleString("sr-RS") +
+  ' EUR</span>';
 
-    document.getElementById("brojAnaliziranih").innerHTML =
-      broj.toLocaleString("sr-RS");
+document.getElementById("brojAnaliziranih").innerHTML =
+  broj.toLocaleString("sr-RS");
 
-    document.getElementById("gubitakNajbolja").innerHTML =
-      '<span class="loss-negative">-' +
-      lossNajbolja.toLocaleString("sr-RS") +
-      ' RSD</span><br>' +
-      '<span style="font-size:1.4rem;color:#c0392b;font-weight:700;">' +
-      Math.round(lossNajbolja/kurs).toLocaleString("sr-RS") +
-      ' EUR</span>';
+document.getElementById("gubitakNajbolja").innerHTML =
+  '<span class="loss-negative">-' +
+  lossNajbolja.toLocaleString("sr-RS") +
+  ' RSD</span><br>' +
+  '<span style="font-size:1.4rem;color:#c0392b;font-weight:700;">' +
+  Math.round(lossNajbolja/kurs).toLocaleString("sr-RS") +
+  ' EUR</span>';
 
-    document.getElementById("gubitakSrednja").innerHTML =
-      '<span class="loss-negative">-' +
-      lossMedijana.toLocaleString("sr-RS") +
-      ' RSD</span><br>' +
-      '<span style="font-size:1.4rem;color:#ff6b6b;font-weight:700;">' +
-      Math.round(lossMedijana/kurs).toLocaleString("sr-RS") +
-      ' EUR</span>';
+document.getElementById("gubitakSrednja").innerHTML =
+  '<span class="loss-negative">-' +
+  lossMedijana.toLocaleString("sr-RS") +
+  ' RSD</span><br>' +
+  '<span style="font-size:1.4rem;color:#ff6b6b;font-weight:700;">' +
+  Math.round(lossMedijana/kurs).toLocaleString("sr-RS") +
+  ' EUR</span>';
 
     if(window.lossChartInstance){
       window.lossChartInstance.destroy();
