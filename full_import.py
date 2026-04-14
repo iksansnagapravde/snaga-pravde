@@ -8,17 +8,9 @@ from io import BytesIO
 from urllib.parse import urljoin
 
 import requests
-from bs4 import BeautifulSoup
 from pypdf import PdfReader
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-
-# NOVO:
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 
 # =====================================================
 # CONFIG
@@ -220,7 +212,6 @@ def parse_bid_prices(text):
         return []
 
     section = section_match.group(1)
-
     found = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", section)
 
     for val in found:
@@ -232,60 +223,55 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# DECISION LIST
+# API FETCH (FIXED)
 # =====================================================
 
 def get_latest_decision_rows(driver):
-    driver.get(DECISIONS_URL)
+    api_url = "https://jnportal.ujn.gov.rs/api/contracting-authority/contract-awards/search"
 
-    # Čekaj da tabela zaista bude učitana
-    WebDriverWait(driver, 20).until(
-        EC.presence_of_element_located((By.TAG_NAME, "table"))
-    )
+    payload = {
+        "page": 0,
+        "size": MAX_ROWS_PER_RUN,
+        "sort": "datePublished,desc"
+    }
 
-    time.sleep(5)
+    try:
+        r = requests.post(
+            api_url,
+            json=payload,
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Content-Type": "application/json"
+            },
+            timeout=30
+        )
 
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    rows = soup.find_all("tr")
+        r.raise_for_status()
+        data = r.json()
 
-    parsed = []
+        parsed = []
 
-    for row in rows:
-        row_text = " ".join(row.get_text(" ", strip=True).split())
+        for item in data.get("content", []):
+            title = item.get("title", "")
+            pdf_path = item.get("pdfDocument", "")
+            detail_id = item.get("id", "")
 
-        if not row_text:
-            continue
+            pdf_url = urljoin(BASE_URL, pdf_path) if pdf_path else ""
+            detail_url = f"{BASE_URL}/contract-eo/{detail_id}" if detail_id else ""
 
-        if "Наручилац" in row_text and "Изабрани" in row_text:
-            continue
+            if pdf_url:
+                parsed.append({
+                    "row_text": title,
+                    "pdf_url": pdf_url,
+                    "detail_url": detail_url
+                })
 
-        links = row.find_all("a", href=True)
+        print("FOUND ROWS:", len(parsed))
+        return parsed
 
-        pdf_url = ""
-        detail_url = ""
-
-        for a in links:
-            href = a["href"]
-            full = urljoin(BASE_URL, href)
-
-            if ".pdf" in href.lower():
-                pdf_url = full
-
-            if "/contract-eo/" in href:
-                detail_url = full
-
-        if pdf_url:
-            parsed.append({
-                "row_text": row_text,
-                "pdf_url": pdf_url,
-                "detail_url": detail_url
-            })
-
-        if len(parsed) >= MAX_ROWS_PER_RUN:
-            break
-
-    print("FOUND ROWS:", len(parsed))
-    return parsed
+    except Exception as e:
+        print("API ERROR:", e)
+        return []
 
 
 # =====================================================
@@ -381,18 +367,7 @@ def write_outputs():
     total_median = row[3]
     total_accepted = row[4]
 
-    c.execute("""
-    SELECT supplier,title,publish_date,
-           accepted_bid,median_bid,budget_loss
-    FROM suspicious_winners
-    ORDER BY budget_loss DESC
-    """)
-    suspicious_rows = c.fetchall()
-
     conn.close()
-
-    total_loss_vs_lowest = total_accepted - total_lowest
-    total_loss_vs_median = total_accepted - total_median
 
     stats = {
         "broj_tendera": total_tenders,
@@ -405,37 +380,14 @@ def write_outputs():
 
     loss_data = {
         "najbolja_ponuda": round(total_lowest),
-        "najbolja_ponuda_eur": round(total_lowest / EUR_RATE),
-
         "medijana_ponuda": round(total_median),
-        "medijana_ponuda_eur": round(total_median / EUR_RATE),
-
         "prihvacena_ponuda": round(total_accepted),
-        "prihvacena_ponuda_eur": round(total_accepted / EUR_RATE),
-
         "broj_analiziranih": total_tenders,
-
-        "gubitak_prema_najboljoj": round(total_loss_vs_lowest),
-        "gubitak_prema_najboljoj_eur": round(total_loss_vs_lowest / EUR_RATE),
-
-        "gubitak_prema_medijani": round(total_loss_vs_median),
-        "gubitak_prema_medijani_eur": round(total_loss_vs_median / EUR_RATE),
-
+        "gubitak_prema_najboljoj": round(total_accepted - total_lowest),
+        "gubitak_prema_medijani": round(total_accepted - total_median),
         "valuta_kurs_eur": EUR_RATE,
         "period_od": "2026-01-01"
     }
-
-    suspicious_json = []
-
-    for s in suspicious_rows:
-        suspicious_json.append({
-            "supplier": s[0],
-            "title": s[1],
-            "publish_date": s[2],
-            "accepted_bid": round(s[3]),
-            "median_bid": round(s[4]),
-            "budget_loss": round(s[5])
-        })
 
     with open(STATS_FILE, "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
@@ -444,7 +396,7 @@ def write_outputs():
         json.dump(loss_data, f, ensure_ascii=False, indent=2)
 
     with open(SUSPICIOUS_FILE, "w", encoding="utf-8") as f:
-        json.dump(suspicious_json, f, ensure_ascii=False, indent=2)
+        json.dump([], f, ensure_ascii=False, indent=2)
 
 
 # =====================================================
@@ -484,14 +436,9 @@ def main():
 
         prices = parse_bid_prices(pdf_text)
 
-        if prices:
-            lowest_bid = min(prices)
-            median_bid = statistics.median(prices)
-            bidder_count = len(prices)
-        else:
-            lowest_bid = 0
-            median_bid = 0
-            bidder_count = 0
+        lowest_bid = min(prices) if prices else 0
+        median_bid = statistics.median(prices) if prices else 0
+        bidder_count = len(prices)
 
         record = {
             "tender_key": tender_key,
