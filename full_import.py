@@ -255,15 +255,23 @@ def parse_bid_prices(text):
 def load_decision_page(driver):
     driver.get(DECISIONS_URL)
 
-    wait = WebDriverWait(driver, 30)
+    wait = WebDriverWait(driver, 60)
 
+    # čekaj Angular tabelu
     wait.until(
         EC.presence_of_element_located(
-            (By.TAG_NAME, "body")
+            (By.CSS_SELECTOR, "table")
         )
     )
 
-    time.sleep(5)
+    # čekaj da se pojave download ikonice
+    wait.until(
+        EC.presence_of_all_elements_located(
+            (By.XPATH, "//mat-icon[contains(text(),'download')]")
+        )
+    )
+
+    time.sleep(8)
 
 
 # =====================================================
@@ -273,19 +281,13 @@ def load_decision_page(driver):
 def get_download_buttons(driver):
     load_decision_page(driver)
 
-    buttons = driver.find_elements(By.CSS_SELECTOR, "mat-icon")
+    buttons = driver.find_elements(
+        By.XPATH,
+        "//mat-icon[contains(text(),'download')]"
+    )
 
-    download_buttons = []
-
-    for btn in buttons:
-        try:
-            if btn.text.strip() == "download":
-                download_buttons.append(btn)
-        except:
-            pass
-
-    print("FOUND DOWNLOAD BUTTONS:", len(download_buttons))
-    return download_buttons[:MAX_ROWS_PER_RUN]
+    print("FOUND DOWNLOAD BUTTONS:", len(buttons))
+    return buttons[:MAX_ROWS_PER_RUN]
 
 
 # =====================================================
