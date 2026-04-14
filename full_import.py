@@ -245,7 +245,6 @@ def get_latest_decision_rows(driver):
     print("FOUND ROWS:", len(parsed))
     return parsed
 
-
 # =====================================================
 # DB SAVE
 # =====================================================
