@@ -5,7 +5,6 @@ import sqlite3
 import statistics
 import time
 from datetime import datetime
-from io import BytesIO
 
 import requests
 from bs4 import BeautifulSoup
@@ -27,14 +26,34 @@ DECISIONS_URL = f"{BASE_URL}/odluke-o-dodeli-ugovora"
 
 DB_FILE = "contracts.db"
 STATS_FILE = "stats.json"
-LOSS_FILE = "loss-data.json"
-SUSPICIOUS_FILE = "suspicious-winners.json"
 
 DOWNLOAD_DIR = "/tmp/jn_downloads"
 
 EUR_RATE = 117.2
 MAX_ROWS_PER_RUN = 20
 REQUEST_TIMEOUT = 30
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+
+# =====================================================
+# TEST PORTAL ACCESS
+# =====================================================
+
+def test_portal_access():
+    print("=" * 60)
+    print("TESTING PORTAL ACCESS")
+    print("=" * 60)
+
+    try:
+        r = requests.get(DECISIONS_URL, headers=HEADERS, timeout=30)
+        print("STATUS:", r.status_code)
+        print(r.text[:1000])
+        print("=" * 60)
+    except Exception as e:
+        print("REQUEST ERROR:", e)
 
 
 # =====================================================
@@ -230,7 +249,7 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# WAIT FOR TABLE TO LOAD
+# PAGE LOADER
 # =====================================================
 
 def load_decision_page(driver):
@@ -240,7 +259,7 @@ def load_decision_page(driver):
 
     wait.until(
         EC.presence_of_element_located(
-            (By.CSS_SELECTOR, "table tbody tr")
+            (By.TAG_NAME, "body")
         )
     )
 
@@ -339,6 +358,8 @@ def write_outputs():
 # =====================================================
 
 def main():
+    test_portal_access()
+
     init_db()
     driver = create_driver()
 
