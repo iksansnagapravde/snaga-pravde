@@ -15,16 +15,15 @@ from docx import Document
 # =====================================================
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
-API_URL = "https://jnportal.ujn.gov.rs/api/odluke-o-dodeli-ugovora/pretraga"
+HOME_URL = BASE_URL + "/"
+API_URL = BASE_URL + "/api/odluke-o-dodeli-ugovora/pretraga"
 
 DB_FILE = "contracts.db"
 STATS_FILE = "stats.json"
-LOSS_FILE = "loss-data.json"
-SUSPICIOUS_FILE = "suspicious-winners.json"
 
 EUR_RATE = 117.2
 MAX_ROWS_PER_RUN = 20
-REQUEST_TIMEOUT = 30
+REQUEST_TIMEOUT = 60
 
 
 # =====================================================
@@ -165,24 +164,33 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# API FETCH
+# AUTH SESSION API FETCH
 # =====================================================
 
 def fetch_decisions():
     print("=" * 50)
-    print("FETCHING API DATA")
+    print("FETCHING API DATA WITH SESSION")
     print("=" * 50)
+
+    session = requests.Session()
+
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json"
+    }
+
+    # STEP 1: open homepage to get cookies
+    home = session.get(HOME_URL, headers=headers, timeout=REQUEST_TIMEOUT)
+    print("HOME STATUS:", home.status_code)
 
     payload = {
         "page": 1,
         "pageSize": MAX_ROWS_PER_RUN
     }
 
-    headers = {
-        "Content-Type": "application/json"
-    }
-
-    r = requests.post(
+    # STEP 2: call API with session cookies
+    r = session.post(
         API_URL,
         json=payload,
         headers=headers,
@@ -192,6 +200,7 @@ def fetch_decisions():
     print("API STATUS:", r.status_code)
 
     if r.status_code != 200:
+        print(r.text[:500])
         return []
 
     data = r.json()
