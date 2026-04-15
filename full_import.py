@@ -8,6 +8,7 @@ from io import BytesIO
 
 import requests
 from docx import Document
+from pypdf import PdfReader
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -119,15 +120,25 @@ def format_eur(value):
 
 
 # =====================================================
-# DOCX
+# TEXT EXTRACTION
 # =====================================================
 
-def extract_docx_text_from_bytes(content):
+def extract_docx_text(content):
     try:
         doc = Document(BytesIO(content))
         return "\n".join(p.text.strip() for p in doc.paragraphs if p.text.strip())
-    except Exception as e:
-        print("DOCX ERROR:", e)
+    except:
+        return ""
+
+
+def extract_pdf_text(content):
+    try:
+        reader = PdfReader(BytesIO(content))
+        text = ""
+        for page in reader.pages:
+            text += page.extract_text() or ""
+        return text
+    except:
         return ""
 
 
@@ -137,9 +148,7 @@ def extract_docx_text_from_bytes(content):
 
 def parse_supplier(text):
     m = re.search(r"(додељује|dodeljuje).*?:\s*(.+?)(?:\n|PIB)", text, re.I)
-    if m:
-        return re.sub(r"\s+", " ", m.group(2)).strip()
-    return "UNKNOWN"
+    return re.sub(r"\s+", " ", m.group(2)).strip() if m else "UNKNOWN"
 
 
 def parse_budget_value(text):
@@ -192,54 +201,38 @@ def fetch_doc_links():
 
 
 # =====================================================
-# NEW: EXTRACT REAL DOCX LINK
+# DOWNLOAD (FINAL)
 # =====================================================
 
-def extract_real_docx_link(html):
-    matches = re.findall(r'href="([^"]+\.docx[^"]*)"', html, re.I)
-    if matches:
-        return BASE_URL + matches[0]
-    return None
-
-
-# =====================================================
-# DOWNLOAD (FIXED FINAL)
-# =====================================================
-
-def download_docx(url):
+def download_file(url):
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0"
-        }
+        headers = {"User-Agent": "Mozilla/5.0"}
 
-        print("OPENING PAGE:", url)
+        print("OPEN:", url)
 
         r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
 
-        if r.status_code != 200:
-            return None
-
         html = r.text
 
-        real_docx = extract_real_docx_link(html)
+        match = re.search(r'href="([^"]+\.(pdf|docx)[^"]*)"', html, re.I)
 
-        if not real_docx:
-            print("NO DOCX LINK FOUND")
-            return None
+        if not match:
+            print("NO FILE")
+            return None, None
 
-        print("REAL DOCX:", real_docx)
+        file_url = BASE_URL + match.group(1)
 
-        file = requests.get(real_docx, headers=headers, timeout=REQUEST_TIMEOUT)
+        print("FILE:", file_url)
 
-        print("DOCX STATUS:", file.status_code)
+        f = requests.get(file_url, headers=headers, timeout=REQUEST_TIMEOUT)
 
-        if file.status_code == 200:
-            return file.content
+        if f.status_code == 200:
+            return f.content, file_url
 
     except Exception as e:
-        print("DOWNLOAD ERROR:", e)
+        print("ERROR:", e)
 
-    return None
+    return None, None
 
 
 # =====================================================
@@ -289,14 +282,8 @@ def write_loss_data():
         print("NO VALID DATA FOR LOSS")
         return
 
-    loss_low = 0
-    loss_med = 0
-
-    for low, med, acc in rows:
-        if acc > low:
-            loss_low += acc - low
-        if acc > med:
-            loss_med += acc - med
+    loss_low = sum(acc - low for low, med, acc in rows if acc > low)
+    loss_med = sum(acc - med for low, med, acc in rows if acc > med)
 
     result = {
         "najbolja_ponuda": sum(r[0] for r in rows),
@@ -320,52 +307,47 @@ def write_loss_data():
 def main():
     init_db()
 
-    doc_links = fetch_doc_links()
+    links = fetch_doc_links()
 
-    for idx, doc_url in enumerate(doc_links):
-        try:
-            print("=" * 40)
-            print("PROCESSING:", doc_url)
+    for i, url in enumerate(links):
+        print("=" * 40)
 
-            if tender_exists(doc_url):
-                print("SKIPPED (EXISTS)")
-                continue
+        if tender_exists(url):
+            continue
 
-            content = download_docx(doc_url)
-            if not content:
-                print("NO CONTENT")
-                continue
+        content, file_url = download_file(url)
 
-            text = extract_docx_text_from_bytes(content)
+        if not content:
+            continue
 
-            if not text:
-                print("EMPTY TEXT")
-                continue
+        if file_url.endswith(".pdf"):
+            text = extract_pdf_text(content)
+        else:
+            text = extract_docx_text(content)
 
-            prices = parse_bid_prices(text)
-            supplier = parse_supplier(text)
+        if not text:
+            continue
 
-            record = {
-                "tender_key": doc_url,
-                "title": f"Tender {idx}",
-                "supplier": supplier,
-                "publish_date": datetime.today().strftime("%d.%m.%Y"),
-                "budget_value": parse_budget_value(text),
-                "lowest_bid": min(prices) if prices else 0,
-                "median_bid": statistics.median(prices) if prices else 0,
-                "accepted_bid": parse_accepted_bid(text),
-                "bidder_count": len(prices),
-                "raw_text": text[:20000]
-            }
+        prices = parse_bid_prices(text)
 
-            save_tender(record)
+        record = {
+            "tender_key": url,
+            "title": f"Tender {i}",
+            "supplier": parse_supplier(text),
+            "publish_date": datetime.today().strftime("%d.%m.%Y"),
+            "budget_value": parse_budget_value(text),
+            "lowest_bid": min(prices) if prices else 0,
+            "median_bid": statistics.median(prices) if prices else 0,
+            "accepted_bid": parse_accepted_bid(text),
+            "bidder_count": len(prices),
+            "raw_text": text[:20000]
+        }
 
-            print("SAVED:", supplier)
+        save_tender(record)
 
-            time.sleep(1)
+        print("SAVED:", record["supplier"])
 
-        except Exception as e:
-            print("ERROR:", e)
+        time.sleep(1)
 
     write_outputs()
     write_loss_data()
