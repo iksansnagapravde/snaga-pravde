@@ -24,13 +24,13 @@ jobs:
       # CHECKOUT
       # ===================================================
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # ===================================================
       # PYTHON
       # ===================================================
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -38,7 +38,7 @@ jobs:
       # CACHE (ubrzava instalaciju)
       # ===================================================
       - name: Cache pip
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -49,7 +49,7 @@ jobs:
       # CHROME (za Selenium)
       # ===================================================
       - name: Install Chrome
-        uses: browser-actions/setup-chrome@v1
+        uses: browser-actions/setup-chrome@v2
 
       - name: Install ChromeDriver
         uses: nanasess/setup-chromedriver@v2
