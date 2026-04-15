@@ -125,8 +125,7 @@ def format_eur(value):
 def extract_docx_text_from_bytes(content):
     try:
         doc = Document(BytesIO(content))
-        text = "\n".join(p.text.strip() for p in doc.paragraphs if p.text.strip())
-        return text
+        return "\n".join(p.text.strip() for p in doc.paragraphs if p.text.strip())
     except Exception as e:
         print("DOCX ERROR:", e)
         return ""
@@ -193,27 +192,49 @@ def fetch_doc_links():
 
 
 # =====================================================
-# DOWNLOAD (FIXED)
+# NEW: EXTRACT REAL DOCX LINK
+# =====================================================
+
+def extract_real_docx_link(html):
+    matches = re.findall(r'href="([^"]+\.docx[^"]*)"', html, re.I)
+    if matches:
+        return BASE_URL + matches[0]
+    return None
+
+
+# =====================================================
+# DOWNLOAD (FIXED FINAL)
 # =====================================================
 
 def download_docx(url):
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0",
-            "Accept": "*/*"
+            "User-Agent": "Mozilla/5.0"
         }
 
-        print("DOWNLOADING:", url)
+        print("OPENING PAGE:", url)
 
         r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
 
-        print("STATUS:", r.status_code, "| TYPE:", r.headers.get("Content-Type"))
+        if r.status_code != 200:
+            return None
 
-        if r.status_code == 200:
-            if "application" in r.headers.get("Content-Type", ""):
-                return r.content
-            else:
-                print("NOT DOCX → SKIP")
+        html = r.text
+
+        real_docx = extract_real_docx_link(html)
+
+        if not real_docx:
+            print("NO DOCX LINK FOUND")
+            return None
+
+        print("REAL DOCX:", real_docx)
+
+        file = requests.get(real_docx, headers=headers, timeout=REQUEST_TIMEOUT)
+
+        print("DOCX STATUS:", file.status_code)
+
+        if file.status_code == 200:
+            return file.content
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
@@ -316,16 +337,13 @@ def main():
                 continue
 
             text = extract_docx_text_from_bytes(content)
-            print("TEXT LENGTH:", len(text))
 
             if not text:
+                print("EMPTY TEXT")
                 continue
 
             prices = parse_bid_prices(text)
-            print("PRICES FOUND:", len(prices))
-
             supplier = parse_supplier(text)
-            print("SUPPLIER:", supplier)
 
             record = {
                 "tender_key": doc_url,
