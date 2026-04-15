@@ -125,8 +125,10 @@ def format_eur(value):
 def extract_docx_text_from_bytes(content):
     try:
         doc = Document(BytesIO(content))
-        return "\n".join(p.text.strip() for p in doc.paragraphs if p.text.strip())
-    except:
+        text = "\n".join(p.text.strip() for p in doc.paragraphs if p.text.strip())
+        return text
+    except Exception as e:
+        print("DOCX ERROR:", e)
         return ""
 
 
@@ -138,7 +140,7 @@ def parse_supplier(text):
     m = re.search(r"(додељује|dodeljuje).*?:\s*(.+?)(?:\n|PIB)", text, re.I)
     if m:
         return re.sub(r"\s+", " ", m.group(2)).strip()
-    return ""
+    return "UNKNOWN"
 
 
 def parse_budget_value(text):
@@ -191,16 +193,31 @@ def fetch_doc_links():
 
 
 # =====================================================
-# DOWNLOAD
+# DOWNLOAD (FIXED)
 # =====================================================
 
 def download_docx(url):
     try:
-        r = requests.get(url, timeout=REQUEST_TIMEOUT)
+        headers = {
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "*/*"
+        }
+
+        print("DOWNLOADING:", url)
+
+        r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
+
+        print("STATUS:", r.status_code, "| TYPE:", r.headers.get("Content-Type"))
+
         if r.status_code == 200:
-            return r.content
-    except:
-        pass
+            if "application" in r.headers.get("Content-Type", ""):
+                return r.content
+            else:
+                print("NOT DOCX → SKIP")
+
+    except Exception as e:
+        print("DOWNLOAD ERROR:", e)
+
     return None
 
 
@@ -248,6 +265,7 @@ def write_loss_data():
     conn.close()
 
     if not rows:
+        print("NO VALID DATA FOR LOSS")
         return
 
     loss_low = 0
@@ -261,11 +279,11 @@ def write_loss_data():
 
     result = {
         "najbolja_ponuda": sum(r[0] for r in rows),
-        "medijana_ponuda": sum(r[1] for r in rows),  # ✅ FIX
+        "medijana_ponuda": sum(r[1] for r in rows),
         "prihvacena_ponuda": sum(r[2] for r in rows),
         "broj_analiziranih": len(rows),
         "gubitak_prema_najboljoj": loss_low,
-        "gubitak_prema_medijani": loss_med,  # ✅ FIX
+        "gubitak_prema_medijani": loss_med,
         "valuta_kurs_eur": EUR_RATE,
         "period_od": "2026-01-01"
     }
@@ -285,23 +303,34 @@ def main():
 
     for idx, doc_url in enumerate(doc_links):
         try:
+            print("=" * 40)
+            print("PROCESSING:", doc_url)
+
             if tender_exists(doc_url):
+                print("SKIPPED (EXISTS)")
                 continue
 
             content = download_docx(doc_url)
             if not content:
+                print("NO CONTENT")
                 continue
 
             text = extract_docx_text_from_bytes(content)
+            print("TEXT LENGTH:", len(text))
+
             if not text:
                 continue
 
             prices = parse_bid_prices(text)
+            print("PRICES FOUND:", len(prices))
+
+            supplier = parse_supplier(text)
+            print("SUPPLIER:", supplier)
 
             record = {
                 "tender_key": doc_url,
                 "title": f"Tender {idx}",
-                "supplier": parse_supplier(text),
+                "supplier": supplier,
                 "publish_date": datetime.today().strftime("%d.%m.%Y"),
                 "budget_value": parse_budget_value(text),
                 "lowest_bid": min(prices) if prices else 0,
@@ -313,7 +342,7 @@ def main():
 
             save_tender(record)
 
-            print("SAVED:", record["supplier"])
+            print("SAVED:", supplier)
 
             time.sleep(1)
 
