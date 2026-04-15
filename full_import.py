@@ -3,11 +3,10 @@ import json
 import re
 import sqlite3
 import statistics
-import time
 from datetime import datetime
+from io import BytesIO
 
 import requests
-from bs4 import BeautifulSoup
 from docx import Document
 
 
@@ -16,23 +15,20 @@ from docx import Document
 # =====================================================
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
-DECISIONS_URL = f"{BASE_URL}/odluke-o-dodeli-ugovora"
+API_URL = "https://jnportal.ujn.gov.rs/api/odluke-o-dodeli-ugovora/pretraga"
 
 DB_FILE = "contracts.db"
 STATS_FILE = "stats.json"
-DOWNLOAD_DIR = "/tmp/jn_downloads"
+LOSS_FILE = "loss-data.json"
+SUSPICIOUS_FILE = "suspicious-winners.json"
 
 EUR_RATE = 117.2
 MAX_ROWS_PER_RUN = 20
 REQUEST_TIMEOUT = 30
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
-
 
 # =====================================================
-# DB INIT
+# DB
 # =====================================================
 
 def init_db():
@@ -63,15 +59,6 @@ def init_db():
 # HELPERS
 # =====================================================
 
-def clear_download_folder():
-    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
-
-    for f in os.listdir(DOWNLOAD_DIR):
-        path = os.path.join(DOWNLOAD_DIR, f)
-        if os.path.isfile(path):
-            os.remove(path)
-
-
 def money_to_float(value):
     if not value:
         return 0.0
@@ -97,86 +84,14 @@ def format_eur(value):
 
 
 # =====================================================
-# TEST PORTAL
-# =====================================================
-
-def test_portal_access():
-    print("=" * 60)
-    print("TESTING PORTAL ACCESS")
-    print("=" * 60)
-
-    r = requests.get(
-        DECISIONS_URL,
-        headers=HEADERS,
-        timeout=REQUEST_TIMEOUT
-    )
-
-    print("STATUS:", r.status_code)
-    print(r.text[:500])
-    print("=" * 60)
-
-
-# =====================================================
-# GET DOCX LINKS
-# =====================================================
-
-def get_docx_links():
-    print("=" * 60)
-    print("PARSING DOCX LINKS VIA REQUESTS")
-    print("=" * 60)
-
-    r = requests.get(
-        DECISIONS_URL,
-        headers=HEADERS,
-        timeout=REQUEST_TIMEOUT
-    )
-
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    links = []
-
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-
-        if ".docx" in href.lower():
-            if href.startswith("/"):
-                href = BASE_URL + href
-
-            links.append(href)
-
-    print("FOUND DOCX LINKS:", len(links))
-    return links[:MAX_ROWS_PER_RUN]
-
-
-# =====================================================
-# DOWNLOAD DOCX
-# =====================================================
-
-def download_docx(doc_url, idx):
-    file_path = os.path.join(DOWNLOAD_DIR, f"file_{idx}.docx")
-
-    r = requests.get(
-        doc_url,
-        headers=HEADERS,
-        timeout=REQUEST_TIMEOUT
-    )
-
-    with open(file_path, "wb") as f:
-        f.write(r.content)
-
-    return file_path
-
-
-# =====================================================
 # DOCX READER
 # =====================================================
 
-def extract_docx_text(file_path):
+def extract_docx_text_from_bytes(content):
     try:
-        doc = Document(file_path)
+        doc = Document(BytesIO(content))
 
         paragraphs = []
-
         for p in doc.paragraphs:
             txt = p.text.strip()
             if txt:
@@ -250,7 +165,63 @@ def parse_bid_prices(text):
 
 
 # =====================================================
-# SAVE TO DB
+# API FETCH
+# =====================================================
+
+def fetch_decisions():
+    print("=" * 50)
+    print("FETCHING API DATA")
+    print("=" * 50)
+
+    payload = {
+        "page": 1,
+        "pageSize": MAX_ROWS_PER_RUN
+    }
+
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    r = requests.post(
+        API_URL,
+        json=payload,
+        headers=headers,
+        timeout=REQUEST_TIMEOUT
+    )
+
+    print("API STATUS:", r.status_code)
+
+    if r.status_code != 200:
+        return []
+
+    data = r.json()
+
+    if isinstance(data, dict):
+        if "items" in data:
+            return data["items"]
+        if "data" in data:
+            return data["data"]
+
+    return []
+
+
+# =====================================================
+# DOWNLOAD DOCX
+# =====================================================
+
+def download_docx(url):
+    try:
+        r = requests.get(url, timeout=REQUEST_TIMEOUT)
+        if r.status_code == 200:
+            return r.content
+    except Exception as e:
+        print("DOWNLOAD ERROR:", e)
+
+    return None
+
+
+# =====================================================
+# DB SAVE
 # =====================================================
 
 def save_tender(record):
@@ -281,7 +252,7 @@ def save_tender(record):
 
 
 # =====================================================
-# WRITE OUTPUTS
+# OUTPUTS
 # =====================================================
 
 def write_outputs():
@@ -294,7 +265,6 @@ def write_outputs():
            COALESCE(SUM(accepted_bid),0)
     FROM tenders
     """)
-
     row = c.fetchone()
     conn.close()
 
@@ -321,20 +291,29 @@ def write_outputs():
 
 def main():
     init_db()
-    clear_download_folder()
 
-    test_portal_access()
+    decisions = fetch_decisions()
 
-    docx_links = get_docx_links()
+    print("FOUND DECISIONS:", len(decisions))
 
-    for idx, doc_url in enumerate(docx_links):
+    for idx, item in enumerate(decisions):
         try:
-            file_path = download_docx(doc_url, idx)
+            docx_url = item.get("dokumentUrl") or item.get("docxUrl")
 
-            doc_text = extract_docx_text(file_path)
+            if not docx_url:
+                continue
+
+            if docx_url.startswith("/"):
+                docx_url = BASE_URL + docx_url
+
+            content = download_docx(docx_url)
+
+            if not content:
+                continue
+
+            doc_text = extract_docx_text_from_bytes(content)
 
             if not doc_text:
-                print("EMPTY DOC:", idx)
                 continue
 
             supplier = parse_supplier(doc_text)
@@ -354,7 +333,7 @@ def main():
 
             record = {
                 "tender_key": f"{supplier}_{idx}_{datetime.now()}",
-                "title": f"Tender {idx+1}",
+                "title": item.get("nazivPredmetaNabavke", f"Tender {idx+1}"),
                 "supplier": supplier,
                 "publish_date": datetime.today().strftime("%d.%m.%Y"),
                 "budget_value": budget_value,
@@ -374,10 +353,10 @@ def main():
 
     write_outputs()
 
-    print("=" * 60)
+    print("=" * 50)
     print("DONE")
     print("stats.json updated")
-    print("=" * 60)
+    print("=" * 50)
 
 
 if __name__ == "__main__":
