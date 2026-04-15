@@ -5,11 +5,13 @@ on:
   schedule:
     - cron: "*/15 * * * *"
 
-# 🔐 dozvola za push u repo
+# ✅ forsira Node 24 (uklanja warning)
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write
 
-# 🚫 sprečava paralelne run-ove
 concurrency:
   group: full-import
   cancel-in-progress: false
@@ -35,7 +37,7 @@ jobs:
           python-version: "3.11"
 
       # ===================================================
-      # CACHE (ubrzava instalaciju)
+      # CACHE
       # ===================================================
       - name: Cache pip
         uses: actions/cache@v4
@@ -46,7 +48,7 @@ jobs:
             ${{ runner.os }}-pip-
 
       # ===================================================
-      # CHROME (za Selenium)
+      # CHROME
       # ===================================================
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v2
@@ -84,12 +86,3 @@ jobs:
             git commit -m "Auto full import update"
             git push
           fi
-
-      # ===================================================
-      # OPTIONAL: Upload DB (bez commit-a)
-      # ===================================================
-      # - name: Upload DB
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: contracts-db
-      #     path: contracts.db
