@@ -1,13 +1,14 @@
 import requests
-import json
 import os
-from datetime import datetime
+import re
+import pdfplumber
+import statistics
+import json
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Accept": "*/*"
+    "User-Agent": "Mozilla/5.0"
 }
 
 SAVE_FOLDER = "documents"
@@ -15,84 +16,138 @@ os.makedirs(SAVE_FOLDER, exist_ok=True)
 
 
 # =========================================
-# 1. UZIMANJE LISTE TENDERA
+# DOWNLOAD
 # =========================================
-def fetch_tenders():
-    print("FETCHING TENDERS...")
-
-    url = BASE_URL + "/get-documents"
-
-    params = {
-        "page": 1,
-        "pageSize": 20
-    }
-
-    r = requests.get(url, headers=HEADERS, params=params)
-
-    if r.status_code != 200:
-        print("ERROR fetching tenders")
-        return []
-
-    data = r.json()
-    return data
-
-
-# =========================================
-# 2. DOWNLOAD DOKUMENTA
-# =========================================
-def download_document(entity_id):
+def download_pdf(entity_id):
     url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
 
     try:
         r = requests.get(url, headers=HEADERS, timeout=60)
 
         if r.status_code == 200 and len(r.content) > 2000:
-            filename = os.path.join(SAVE_FOLDER, f"{entity_id}.pdf")
+            path = os.path.join(SAVE_FOLDER, f"{entity_id}.pdf")
 
-            with open(filename, "wb") as f:
+            with open(path, "wb") as f:
                 f.write(r.content)
 
-            print(f"SAVED: {filename}")
-            return True
-
-        else:
-            print(f"FAILED: {entity_id}")
-            return False
+            print(f"SAVED: {entity_id}")
+            return path
 
     except Exception as e:
         print("ERROR:", e)
-        return False
+
+    return None
 
 
 # =========================================
-# 3. GLAVNA LOGIKA
+# EXTRACT TEXT
+# =========================================
+def extract_text(pdf_path):
+    text = ""
+
+    try:
+        with pdfplumber.open(pdf_path) as pdf:
+            for page in pdf.pages:
+                t = page.extract_text()
+                if t:
+                    text += t + "\n"
+    except:
+        return ""
+
+    return text
+
+
+# =========================================
+# PARSE PRICES
+# =========================================
+def extract_prices(text):
+    prices = []
+
+    # hvata: 1.234.567,89 ili 1234567,89
+    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+
+    for m in matches:
+        try:
+            num = float(m.replace(".", "").replace(",", "."))
+            prices.append(num)
+        except:
+            pass
+
+    return prices
+
+
+# =========================================
+# ANALYSIS
+# =========================================
+def analyze(prices):
+    if not prices or len(prices) < 2:
+        return None
+
+    lowest = min(prices)
+    avg = statistics.mean(prices)
+
+    # pretpostavka: zadnja cena = prihvaćena
+    accepted = prices[-1]
+
+    return {
+        "lowest": lowest,
+        "average": avg,
+        "accepted": accepted,
+        "loss_vs_lowest": accepted - lowest,
+        "loss_vs_avg": accepted - avg
+    }
+
+
+# =========================================
+# FETCH ENTITY IDs (RUČNO ZA SADA)
+# =========================================
+def get_sample_ids():
+    return [
+        667697,
+        668108,
+        669001,
+        657421
+    ]
+
+
+# =========================================
+# MAIN
 # =========================================
 def main():
-    tenders = fetch_tenders()
+    ids = get_sample_ids()
 
-    if not tenders:
-        print("NO DATA")
-        return
+    results = []
 
-    print(f"FOUND: {len(tenders)}")
+    for eid in ids:
+        print(f"PROCESS: {eid}")
 
-    count = 0
-
-    for item in tenders:
-        entity_id = item.get("LotId") or item.get("EntityId")
-
-        if not entity_id:
+        pdf_path = download_pdf(eid)
+        if not pdf_path:
             continue
 
-        print(f"DOWNLOADING: {entity_id}")
+        text = extract_text(pdf_path)
 
-        success = download_document(entity_id)
+        if len(text) < 100:
+            print("NO TEXT")
+            continue
 
-        if success:
-            count += 1
+        prices = extract_prices(text)
 
-    print("====================================")
-    print(f"TOTAL DOWNLOADED: {count}")
+        print("PRICES:", prices[:5])
+
+        analysis = analyze(prices)
+
+        if analysis:
+            results.append(analysis)
+
+    # =====================================
+    # SAVE RESULT
+    # =====================================
+    if results:
+        with open("results.json", "w") as f:
+            json.dump(results, f, indent=2)
+
+        print("RESULTS SAVED")
 
 
 if __name__ == "__main__":
