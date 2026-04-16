@@ -158,20 +158,29 @@ def download_pdf(entity_id):
 # =========================================
 # EXTRACT TEXT
 # =========================================
+from pdf2image import convert_from_path
+import pytesseract
+
 def extract_text(pdf_path):
     text = ""
 
     try:
-        with pdfplumber.open(pdf_path) as pdf:
-            for page in pdf.pages:
-                t = page.extract_text()
-                if t:
-                    text += t + "\n"
-    except:
-        return ""
+        images = convert_from_path(
+            pdf_path,
+            dpi=300,
+            poppler_path="/usr/bin"
+        )
+
+        print("IMAGES:", len(images))
+
+        for img in images:
+            t = pytesseract.image_to_string(img)
+            text += t + "\n"
+
+    except Exception as e:
+        print("OCR ERROR:", e)
 
     return text
-
 # =========================================
 # EXTRACT PRICES
 # =========================================
