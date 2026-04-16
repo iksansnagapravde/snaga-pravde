@@ -15,20 +15,6 @@
       "priority": 184
     },
     {
-      "id": "https-n1info-rs-vesti-tepi-nikola-selakovic-mladen-nenadic-",
-      "title": "Tepić: Tužilac Nenadić da hitno obavesti javnost o tajnom sastanku na rakiji kod Nikole Selakovića",
-      "url": "https://n1info.rs/vesti/tepi-nikola-selakovic-mladen-nenadic/",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T11:31:25+00:00",
-      "time": "11:31",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 184
-    },
-    {
       "id": "crna-gora-njemacka-droga-organizovani-kriminal-33733783-html",
       "title": "Šta je poznato o balkanskom narko kartelu čiji su članovi uhapšeni u akciji Europola u Crnoj Gori?",
       "url": "https://www.slobodnaevropa.org/a/kokain-hapsenja-crna-gora-njemacka-droga-organizovani-kriminal-/33733783.html",
@@ -41,20 +27,6 @@
       "breaking": false,
       "alert": true,
       "priority": 111
-    },
-    {
-      "id": "ucni-most-u-libanu-dramaticno-upozorenje-za-gorivo-u-wrj1plg",
-      "title": "UDARAC ZA TRAMPA! \"Odbijam da razgovaram sa njim\": Drama na Bliskom istoku, RAZOREN KLJUČNI MOST, dramatično upozorenje za gorivo u Evropi",
-      "url": "https://www.blic.rs/vesti/svet/iran-najnovije-vesti-razoren-kljucni-most-u-libanu-dramaticno-upozorenje-za-gorivo-u/wrj1plg",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T15:53:36+00:00",
-      "time": "15:53",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
     },
     {
       "id": "dramaticno-upozorenje-premijera-grenlanda-tramp-nije-wyzh6wy",
@@ -111,6 +83,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "-danas-rs-vesti-politika-sud-u-pristini-pritvor-za-pelevica-",
+      "title": "Sud u Prištini odredio jednomesečni pritvor Dejanu Peleviću",
+      "url": "https://www.danas.rs/vesti/politika/sud-u-pristini-pritvor-za-pelevica/",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T16:45:57+00:00",
+      "time": "16:45",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "sti-politika-5928034-dejan-pelevic-pritvor-pristina-sud-html",
@@ -253,20 +239,6 @@
       "priority": 90
     },
     {
-      "id": "nadic-da-obavesti-javnost-o-sastanku-sa-nikolom-selakovicem-",
-      "title": "Marinika Tepić: Tužilac Nenadić da obavesti javnost o sastanku sa Nikolom Selakovićem",
-      "url": "https://www.danas.rs/vesti/politika/marinika-tepic-tuzilac-nenadic-da-obavesti-javnost-o-sastanku-sa-nikolom-selakovicem/",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T13:36:04+00:00",
-      "time": "13:36",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "https-www-rts-rs-vesti-hronika-5927985-zaplena-cigareta-html",
       "title": "Пронађено скоро 2.000 боксoва цигарета, возач ухапшен на Бездану",
       "url": "https://www.rts.rs/vesti/hronika/5927985/zaplena-cigareta.html",
@@ -379,20 +351,6 @@
       "priority": 66
     },
     {
-      "id": "opa-org-a-selakovic-sudjenje-odbrana-skupstina-33732864-html",
-      "title": "Ministar kulture Srbije izneo odbranu, u parlamentu odložena rasprava o poverenju Vladi",
-      "url": "https://www.slobodnaevropa.org/a/selakovic-sudjenje-odbrana-skupstina/33732864.html",
-      "date": "2026-04-15",
-      "datetime": "2026-04-15T12:50:41+00:00",
-      "time": "12:50",
-      "source": "RSE Balkan",
-      "category": "Фалсификовање докумената",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ja-plan-rasta-srbija-eu-isplata-uslovi-procena-33733670-html",
       "title": "Evropska komisija procenjuje da li Srbija ispunjava uslove za isplate iz EU",
       "url": "https://www.slobodnaevropa.org/a/evropska-komisija-plan-rasta-srbija-eu-isplata-uslovi-procena/33733670.html",
@@ -407,6 +365,62 @@
       "priority": 33
     },
     {
+      "id": "mena-ustava-u-crnoj-gori-clanovi-vlade-bez-imuniteta-ln71j70",
+      "title": "UKIDA SE IMUNITET ČLANOVIMA VLADE! Predložena promena Ustava u Crnoj Gori: \"Javna funkcija ne sme biti štit od zakona\"",
+      "url": "https://www.blic.rs/vesti/politika/predlozena-promena-ustava-u-crnoj-gori-clanovi-vlade-bez-imuniteta/ln71j70",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T17:19:44+00:00",
+      "time": "17:19",
+      "source": "Blic",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "s-svet-region-vlada-crne-gore-ukidanje-imuniteta-ministrima-",
+      "title": "Vlada Crne Gore utvrdila predlog za promenu ustava kojim se ukida imunitet ministrima",
+      "url": "https://www.danas.rs/svet/region/vlada-crne-gore-ukidanje-imuniteta-ministrima/",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T16:50:31+00:00",
+      "time": "16:50",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "unitet-ministrima-vlada-u-podgorici-predlaze-promenu-ustava-",
+      "title": "Crna Gora ukida imunitet ministrima?: Vlada u Podgorici predlaže promenu Ustava",
+      "url": "https://nova.rs/vesti/svet/crna-gora-ukida-imunitet-ministrima-vlada-u-podgorici-predlaze-promenu-ustava/",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T16:43:45+00:00",
+      "time": "16:43",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "crne-gore-saopstio-da-je-utvrdjen-predlog-za-promenu-ustava-",
+      "title": "\"Javna funkcija ne sme biti štit od zakona\": Potpredsednik Vlade Crne Gore saopštio da je utvrđen Predlog za promenu Ustava",
+      "url": "https://n1info.rs/region/javna-funkcija-ne-sme-biti-stit-od-zakona-potpredsednik-vlade-crne-gore-saopstio-da-je-utvrdjen-predlog-za-promenu-ustava/",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T16:25:39+00:00",
+      "time": "16:25",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "ije-dobila-17-preliminarnih-izvestaja-o-poslednjoj-kampanji-",
       "title": "Agencija za borbu protiv korupcije nije dobila 17 preliminarnih izveštaja o poslednjoj kampanji",
       "url": "https://www.ktv.rs/2026/04/16/agencija-za-borbu-protiv-korupcije-nije-dobila-17-preliminarnih-izvestaja-o-poslednjoj-kampanji/",
@@ -419,6 +433,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "to-nije-prvi-put-jednu-od-njih-vec-nazvao-ozbiljnim-ustasom-",
+      "title": "Nikola Selaković u sudnici pokušao da diskredituje svedoke i to nije prvi put: Jednu od njih već nazvao \"ozbiljnim ustašom\"",
+      "url": "https://nova.rs/vesti/hronika/nikola-selakovic-u-sudnici-pokusao-da-diskredituje-svedoke-i-to-nije-prvi-put-jednu-od-njih-vec-nazvao-ozbiljnim-ustasom/",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T17:01:40+00:00",
+      "time": "17:01",
+      "source": "Nova",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "ika-kako-izgleda-zloupotreba-skupstine-u-zarobljenoj-drzavi-",
@@ -450,26 +478,12 @@
     },
     {
       "id": "ice-skupstine-poslanici-vlasti-ulaze-u-salu-kad-im-odgovara-",
-      "title": "BLOG UŽIVO \"Da li je tužilac Nenadić 17. juna sprečio hapšenje Nikole Selakovića\": Opozicija traži odgovore u vezi postupka protiv ministra kulture",
+      "title": "BLOG \"Da li je tužilac Nenadić 17. juna sprečio hapšenje Nikole Selakovića\": Opozicija traži odgovore u vezi postupka protiv ministra kulture",
       "url": "https://nova.rs/vesti/politika/blog-uzivo-ima-kvoruma-nema-kvoruma-danas-dve-sednice-skupstine-poslanici-vlasti-ulaze-u-salu-kad-im-odgovara/",
       "date": "2026-04-16",
-      "datetime": "2026-04-16T16:01:41+00:00",
-      "time": "16:01",
+      "datetime": "2026-04-16T14:40:51+00:00",
+      "time": "14:40",
       "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "hapsenja-u-turskoj-privodeni-zbog-velicanja-napada-u-skolama",
-      "title": "Хапшења у Турској: привођени због величања напада у школама",
-      "url": "https://www.politika.rs/scc/clanak/747922/hapsenja-u-turskoj-privodeni-zbog-velicanja-napada-u-skolama",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T15:17:00+00:00",
-      "time": "15:17",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -484,20 +498,6 @@
       "datetime": "2026-04-16T12:15:00+00:00",
       "time": "12:15",
       "source": "Vreme",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "0265-sinovi-britni-spirs-naterali-pevacicu-da-ode-na-lecenje",
-      "title": "Nove informacije o lečenju Britni Spirs: Evo ko je pevačici rekao da ode na kliniku za odvikavanje nakon hapšenja",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/9970265/sinovi-britni-spirs-naterali-pevacicu-da-ode-na-lecenje",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T10:35:47+00:00",
-      "time": "10:35",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -547,34 +547,6 @@
       "priority": 24
     },
     {
-      "id": "acelnika-maribora-sase-aresnovica-zbog-primanja-mita-vmx273g",
-      "title": "GRADONAČELNIK MARIBORA POD LUPOM Pokrenuta istraga zbog primanja mita, naložen pretres stana i zaplena telefona",
-      "url": "https://www.blic.rs/vesti/svet/pokrenuta-istraga-protiv-gradonacelnika-maribora-sase-aresnovica-zbog-primanja-mita/vmx273g",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T13:04:09+00:00",
-      "time": "13:04",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "s-vesti-politika-poslanici-pitanja-pogibije-stranih-radnika-",
-      "title": "Poslanica pitala Vladu o pogibijama radnika",
-      "url": "https://www.danas.rs/vesti/politika/poslanici-pitanja-pogibije-stranih-radnika/",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T13:03:54+00:00",
-      "time": "13:03",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "nije-skinula-oznaku-tajnosti-sa-informacija-iz-ovog-slucaja-",
       "title": "Suđenje „Jovanjica“: BIA nije skinula oznaku tajnosti sa informacija iz ovog slučaja",
       "url": "https://www.krik.rs/sudjenje-jovanjica-bia-nije-skinula-oznaku-tajnosti-sa-informacija-iz-ovog-slucaja/",
@@ -603,6 +575,20 @@
       "priority": 24
     },
     {
+      "id": "a-org-a-srpsko-ruski-humanitarni-centar-razvoj-33733896-html",
+      "title": "Najavljen razvoj Srpsko-ruskog humanitarnog centra u Nišu",
+      "url": "https://www.slobodnaevropa.org/a/srpsko-ruski-humanitarni-centar-razvoj/33733896.html",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T17:30:34+00:00",
+      "time": "17:30",
+      "source": "RSE Balkan",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "duje-50-miliona-dolara-na-racunu-4-imanja-i-luksuzna-vozila-",
       "title": "Ko je američki prevarant koji se nalazi u kućnom pritvoru u Beogradu? Moćnim ljudima omogućavao vakcine protiv korone, poseduje 50 miliona dolara na računu, 4 imanja i luksuzna vozila",
       "url": "https://nova.rs/vesti/hronika/ko-je-americki-prevarant-koji-se-nalazi-u-kucnom-pritvoru-u-beogradu-mocnim-ljudima-omogucavao-vakcine-protiv-korone-poseduje-50-miliona-dolara-na-racunu-4-imanja-i-luksuzna-vozila/",
@@ -611,20 +597,6 @@
       "time": "15:10",
       "source": "Nova",
       "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "t-fudbal-9970313-pljacka-donarume-je-organizovana-iz-zatvora",
-      "title": "PLJAČKA LEGENDARNOG GOLMANA JE ORGANIZOVANA IZ ZATVORA: Jedan lopov je potom izvršio samoubistvo - evo kako su razbojnici ojadili Donarumu za pola miliona evra!",
-      "url": "https://www.kurir.rs/sport/fudbal/9970313/pljacka-donarume-je-organizovana-iz-zatvora",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T11:37:40+00:00",
-      "time": "11:37",
-      "source": "Kurir",
-      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -643,6 +615,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "olicija-pretrazila-kucu-brata-pape-lava-nakon-pretnje-bombom",
+      "title": "Полиција претражила кућу брата папе Лава након претње бомбом",
+      "url": "https://www.politika.rs/scc/clanak/747959/policija-pretrazila-kucu-brata-pape-lava-nakon-pretnje-bombom",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T17:31:00+00:00",
+      "time": "17:31",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "nt-243102-poginuo-bivsi-golman-arsenala-i-juventusa-meninger",
@@ -694,6 +680,20 @@
       "datetime": "2026-04-16T13:19:07+00:00",
       "time": "13:19",
       "source": "Vreme",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "w-kurir-rs-crna-hronika-9970538-uzicaninu-pritvor-zbog-droge",
+      "title": "IMAO DVE VRSTE DROGE: Užičaninu pritvor do 30 dana, evo šta je policija pronašla posle pretresa stana i garaže",
+      "url": "https://www.kurir.rs/crna-hronika/9970538/uzicaninu-pritvor-zbog-droge",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T13:02:35+00:00",
+      "time": "13:02",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
