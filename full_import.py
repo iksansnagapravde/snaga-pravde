@@ -311,6 +311,11 @@ def main():
 
         text = extract_text(pdf)
 
+        # 🔥 DEBUG (KLJUČNO)
+        print("TEXT LENGTH:", len(text))
+        print("SAMPLE TEXT:", text[:500])
+        print("----------")
+
         if len(text) < 100:
             continue
 
@@ -326,7 +331,6 @@ def main():
     write_loss_data()
 
     print("DONE")
-
 
 if __name__ == "__main__":
     main()
