@@ -178,15 +178,15 @@ def extract_text(pdf_path):
 def extract_prices(text):
     prices = []
 
-    for line in text.split("\n"):
-        if any(k in line.lower() for k in ["понуда", "вредност", "динара", "рсд"]):
-            matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+    # hvata sve brojeve tipa: 1.234.567,89
+    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
 
-            for m in matches:
-                try:
-                    prices.append(float(m.replace(".", "").replace(",", ".")))
-                except:
-                    pass
+    for m in matches:
+        try:
+            num = float(m.replace(".", "").replace(",", "."))
+            prices.append(num)
+        except:
+            pass
 
     return prices
 
