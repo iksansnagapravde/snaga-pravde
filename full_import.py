@@ -9,9 +9,19 @@ from datetime import datetime
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
+# 🔥 FULL BROWSER HEADERS (rešava 401)
 HEADERS = {
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "sr-RS,sr;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
+    "Origin": "https://jnportal.ujn.gov.rs",
+    "Connection": "keep-alive"
 }
+
+# 🔥 SESSION (KLJUČNO)
+session = requests.Session()
+session.headers.update(HEADERS)
 
 os.makedirs("documents", exist_ok=True)
 
@@ -21,7 +31,6 @@ os.makedirs("documents", exist_ok=True)
 conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
 
-# initial create (ako ne postoji)
 c.execute("""
 CREATE TABLE IF NOT EXISTS tenders (
     entity_id INTEGER PRIMARY KEY,
@@ -66,32 +75,26 @@ def fix_database():
 
 fix_database()
 
-
 # =========================================
-# FETCH IDS (fallback-safe)
+# FETCH IDS (FINAL)
 # =========================================
 def fetch_entity_ids():
     ids = []
 
     try:
-        for page in range(0, 50):  # možeš povećati kasnije
+        for page in range(0, 50):
             skip = page * 10
 
-            url = f"https://jnportal.ujn.gov.rs/api/searchgrid/VAwardDecisions/get?skip={skip}&take=10"
+            url = f"{BASE_URL}/api/searchgrid/VAwardDecisions/get?skip={skip}&take=10"
 
-            r = requests.get(url, headers=HEADERS)
+            r = session.get(url)
 
             if r.status_code != 200:
                 print("BAD STATUS:", r.status_code)
                 continue
 
-            try:
-                data = r.json()
-            except:
-                print("NOT JSON")
-                continue
+            data = r.json()
 
-            # 🔴 KLJUČNO: API vraća objekat sa "data"
             if not data or "data" not in data or not data["data"]:
                 break
 
@@ -108,6 +111,7 @@ def fetch_entity_ids():
     except Exception as e:
         print("FETCH ERROR:", e)
         return []
+
 # =========================================
 # DOWNLOAD PDF
 # =========================================
@@ -115,7 +119,7 @@ def download_pdf(entity_id):
     url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
 
     try:
-        r = requests.get(url, headers=HEADERS, timeout=60)
+        r = session.get(url, timeout=60)
 
         if r.status_code == 200 and len(r.content) > 2000:
             path = f"documents/{entity_id}.pdf"
@@ -129,7 +133,6 @@ def download_pdf(entity_id):
         print("DOWNLOAD ERROR:", e)
 
     return None
-
 
 # =========================================
 # EXTRACT TEXT
@@ -148,7 +151,6 @@ def extract_text(pdf_path):
 
     return text
 
-
 # =========================================
 # EXTRACT PRICES
 # =========================================
@@ -166,7 +168,6 @@ def extract_prices(text):
                     pass
 
     return prices
-
 
 # =========================================
 # FIND ACCEPTED
@@ -187,7 +188,6 @@ def find_accepted(text):
 
     return None
 
-
 # =========================================
 # ANALYZE
 # =========================================
@@ -203,14 +203,12 @@ def analyze(prices, accepted):
 
     return lowest, medijana, accepted, accepted - lowest, accepted - medijana
 
-
 # =========================================
 # EXISTS
 # =========================================
 def exists(eid):
     c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
-
 
 # =========================================
 # SAVE
@@ -221,7 +219,6 @@ def save(eid, data):
     VALUES (?, ?, ?, ?, ?, ?, ?)
     """, (eid, *data, datetime.now().isoformat()))
     conn.commit()
-
 
 # =========================================
 # STATS
@@ -242,20 +239,11 @@ def write_stats():
     with open("stats.json", "w") as f:
         json.dump(stats, f, indent=2)
 
-
 # =========================================
 # LOSS DATA
 # =========================================
 def write_loss_data():
-    try:
-        c.execute("""
-            SELECT lowest, medijana, accepted, loss_low, loss_medijana
-            FROM tenders
-        """)
-    except Exception as e:
-        print("DB ERROR:", e)
-        return
-
+    c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
     rows = c.fetchall()
 
     if not rows:
@@ -282,7 +270,6 @@ def write_loss_data():
     with open("loss-data.json", "w") as f:
         json.dump(data, f, indent=2)
 
-
 # =========================================
 # MAIN
 # =========================================
@@ -302,6 +289,7 @@ def main():
             continue
 
         text = extract_text(pdf)
+
         if len(text) < 100:
             continue
 
