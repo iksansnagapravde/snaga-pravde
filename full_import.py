@@ -21,6 +21,7 @@ os.makedirs("documents", exist_ok=True)
 conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
 
+# initial create (ako ne postoji)
 c.execute("""
 CREATE TABLE IF NOT EXISTS tenders (
     entity_id INTEGER PRIMARY KEY,
@@ -34,9 +35,40 @@ CREATE TABLE IF NOT EXISTS tenders (
 """)
 conn.commit()
 
+# =========================================
+# AUTO FIX DATABASE
+# =========================================
+def fix_database():
+    try:
+        c.execute("PRAGMA table_info(tenders)")
+        columns = [col[1] for col in c.fetchall()]
+
+        if "medijana" not in columns or "loss_medijana" not in columns:
+            print("RESET DATABASE")
+
+            c.execute("DROP TABLE IF EXISTS tenders")
+
+            c.execute("""
+            CREATE TABLE tenders (
+                entity_id INTEGER PRIMARY KEY,
+                lowest REAL,
+                medijana REAL,
+                accepted REAL,
+                loss_low REAL,
+                loss_medijana REAL,
+                created_at TEXT
+            )
+            """)
+            conn.commit()
+
+    except Exception as e:
+        print("DB FIX ERROR:", e)
+
+fix_database()
+
 
 # =========================================
-# FETCH IDS
+# FETCH IDS (fallback-safe)
 # =========================================
 def fetch_entity_ids():
     try:
@@ -59,8 +91,9 @@ def fetch_entity_ids():
         print("FETCH ERROR:", e)
         return []
 
+
 # =========================================
-# DOWNLOAD
+# DOWNLOAD PDF
 # =========================================
 def download_pdf(entity_id):
     url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
@@ -83,7 +116,7 @@ def download_pdf(entity_id):
 
 
 # =========================================
-# TEXT
+# EXTRACT TEXT
 # =========================================
 def extract_text(pdf_path):
     text = ""
@@ -101,7 +134,7 @@ def extract_text(pdf_path):
 
 
 # =========================================
-# PRICES
+# EXTRACT PRICES
 # =========================================
 def extract_prices(text):
     prices = []
@@ -120,7 +153,7 @@ def extract_prices(text):
 
 
 # =========================================
-# ACCEPTED
+# FIND ACCEPTED
 # =========================================
 def find_accepted(text):
     lines = text.split("\n")
@@ -140,7 +173,7 @@ def find_accepted(text):
 
 
 # =========================================
-# ANALYZE (MEDIJANA)
+# ANALYZE
 # =========================================
 def analyze(prices, accepted):
     if len(prices) < 2:
@@ -195,13 +228,17 @@ def write_stats():
 
 
 # =========================================
-# LOSS DATA (MEDIJANA)
+# LOSS DATA
 # =========================================
 def write_loss_data():
-    c.execute("""
-        SELECT lowest, medijana, accepted, loss_low, loss_medijana
-        FROM tenders
-    """)
+    try:
+        c.execute("""
+            SELECT lowest, medijana, accepted, loss_low, loss_medijana
+            FROM tenders
+        """)
+    except Exception as e:
+        print("DB ERROR:", e)
+        return
 
     rows = c.fetchall()
 
@@ -236,9 +273,13 @@ def write_loss_data():
 def main():
     ids = fetch_entity_ids()
 
+    print("IDS:", ids)
+
     for eid in ids:
         if exists(eid):
             continue
+
+        print("PROCESS:", eid)
 
         pdf = download_pdf(eid)
         if not pdf:
