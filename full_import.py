@@ -42,14 +42,22 @@ def fetch_entity_ids():
     try:
         url = BASE_URL + "/get-documents"
         r = requests.get(url, headers=HEADERS)
-        data = r.json()
+
+        if r.status_code != 200:
+            print("BAD STATUS:", r.status_code)
+            return []
+
+        try:
+            data = r.json()
+        except:
+            print("NOT JSON RESPONSE")
+            return []
 
         return [item["LotId"] for item in data if "LotId" in item]
 
     except Exception as e:
         print("FETCH ERROR:", e)
         return []
-
 
 # =========================================
 # DOWNLOAD
