@@ -47,6 +47,23 @@ jobs:
             ${{ runner.os }}-pip-
 
       # ==============================
+      # INSTALL CHROME (ZA SELENIUM)
+      # ==============================
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v2
+
+      - name: Install ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
+
+      # ==============================
+      # INSTALL TESSERACT (ZA OCR)
+      # ==============================
+      - name: Install Tesseract OCR
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+
+      # ==============================
       # INSTALL DEPENDENCIES
       # ==============================
       - name: Install dependencies
