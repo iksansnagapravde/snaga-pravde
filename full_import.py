@@ -74,10 +74,10 @@ def fetch_entity_ids():
     ids = []
 
     try:
-        for page in range(0, 50):  # uzima 50 stranica (možeš povećati)
+        for page in range(0, 50):  # možeš povećati kasnije
             skip = page * 10
 
-            url = f"https://jnportal.ujn.gov.rs/get?skip={skip}&take=10"
+            url = f"https://jnportal.ujn.gov.rs/api/searchgrid/VAwardDecisions/get?skip={skip}&take=10"
 
             r = requests.get(url, headers=HEADERS)
 
@@ -91,10 +91,11 @@ def fetch_entity_ids():
                 print("NOT JSON")
                 continue
 
-            if not data:
+            # 🔴 KLJUČNO: API vraća objekat sa "data"
+            if not data or "data" not in data or not data["data"]:
                 break
 
-            for item in data:
+            for item in data["data"]:
                 if "Id" in item:
                     ids.append(item["Id"])
 
@@ -107,7 +108,6 @@ def fetch_entity_ids():
     except Exception as e:
         print("FETCH ERROR:", e)
         return []
-
 # =========================================
 # DOWNLOAD PDF
 # =========================================
