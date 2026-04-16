@@ -71,26 +71,42 @@ fix_database()
 # FETCH IDS (fallback-safe)
 # =========================================
 def fetch_entity_ids():
+    ids = []
+
     try:
-        url = BASE_URL + "/get-documents"
-        r = requests.get(url, headers=HEADERS)
+        for page in range(0, 50):  # uzima 50 stranica (možeš povećati)
+            skip = page * 10
 
-        if r.status_code != 200:
-            print("BAD STATUS:", r.status_code)
-            return []
+            url = f"https://jnportal.ujn.gov.rs/get?skip={skip}&take=10"
 
-        try:
-            data = r.json()
-        except:
-            print("NOT JSON RESPONSE")
-            return []
+            r = requests.get(url, headers=HEADERS)
 
-        return [item["LotId"] for item in data if "LotId" in item]
+            if r.status_code != 200:
+                print("BAD STATUS:", r.status_code)
+                continue
+
+            try:
+                data = r.json()
+            except:
+                print("NOT JSON")
+                continue
+
+            if not data:
+                break
+
+            for item in data:
+                if "Id" in item:
+                    ids.append(item["Id"])
+
+        ids = list(set(ids))
+
+        print("FOUND IDS:", ids)
+
+        return ids
 
     except Exception as e:
         print("FETCH ERROR:", e)
         return []
-
 
 # =========================================
 # DOWNLOAD PDF
