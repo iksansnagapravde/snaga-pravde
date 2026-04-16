@@ -47,7 +47,7 @@ jobs:
             ${{ runner.os }}-pip-
 
       # ==============================
-      # INSTALL CHROME (ZA SELENIUM)
+      # INSTALL CHROME (SELENIUM)
       # ==============================
       - name: Install Chrome
         uses: browser-actions/setup-chrome@v2
@@ -56,15 +56,15 @@ jobs:
         uses: nanasess/setup-chromedriver@v2
 
       # ==============================
-      # INSTALL TESSERACT (ZA OCR)
+      # INSTALL SYSTEM DEPENDENCIES (OCR)
       # ==============================
-      - name: Install Tesseract OCR
+      - name: Install Tesseract + Poppler
         run: |
           sudo apt-get update
-          sudo apt-get install -y tesseract-ocr
+          sudo apt-get install -y tesseract-ocr poppler-utils
 
       # ==============================
-      # INSTALL DEPENDENCIES
+      # INSTALL PYTHON DEPENDENCIES
       # ==============================
       - name: Install dependencies
         run: |
