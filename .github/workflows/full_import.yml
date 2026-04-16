@@ -5,7 +5,6 @@ on:
   schedule:
     - cron: "*/15 * * * *"
 
-# ✅ forsira Node 24 (uklanja warning)
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -22,23 +21,23 @@ jobs:
     timeout-minutes: 45
 
     steps:
-      # ===================================================
+      # ==============================
       # CHECKOUT
-      # ===================================================
+      # ==============================
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ===================================================
+      # ==============================
       # PYTHON
-      # ===================================================
+      # ==============================
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ===================================================
+      # ==============================
       # CACHE
-      # ===================================================
+      # ==============================
       - name: Cache pip
         uses: actions/cache@v4
         with:
@@ -47,42 +46,33 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      # ===================================================
-      # CHROME
-      # ===================================================
-      - name: Install Chrome
-        uses: browser-actions/setup-chrome@v2
-
-      - name: Install ChromeDriver
-        uses: nanasess/setup-chromedriver@v2
-
-      # ===================================================
-      # DEPENDENCIES
-      # ===================================================
+      # ==============================
+      # INSTALL DEPENDENCIES
+      # ==============================
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
 
-      # ===================================================
+      # ==============================
       # RUN SCRIPT
-      # ===================================================
+      # ==============================
       - name: Run full import
         run: python full_import.py
 
-      # ===================================================
+      # ==============================
       # COMMIT RESULTS
-      # ===================================================
+      # ==============================
       - name: Commit updated files
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add stats.json loss-data.json suspicious-winners.json
+          git add stats.json loss-data.json contracts.db
 
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Auto full import update"
+            git commit -m "Auto update data"
             git push
           fi
