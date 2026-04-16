@@ -25,10 +25,10 @@ c.execute("""
 CREATE TABLE IF NOT EXISTS tenders (
     entity_id INTEGER PRIMARY KEY,
     lowest REAL,
-    average REAL,
+    medijana REAL,
     accepted REAL,
     loss_low REAL,
-    loss_avg REAL,
+    loss_medijana REAL,
     created_at TEXT
 )
 """)
@@ -36,7 +36,7 @@ conn.commit()
 
 
 # =========================================
-# FETCH ENTITY IDs (AUTO)
+# FETCH IDS
 # =========================================
 def fetch_entity_ids():
     try:
@@ -44,12 +44,7 @@ def fetch_entity_ids():
         r = requests.get(url, headers=HEADERS)
         data = r.json()
 
-        ids = []
-        for item in data:
-            if "LotId" in item:
-                ids.append(item["LotId"])
-
-        return ids
+        return [item["LotId"] for item in data if "LotId" in item]
 
     except Exception as e:
         print("FETCH ERROR:", e)
@@ -57,7 +52,7 @@ def fetch_entity_ids():
 
 
 # =========================================
-# DOWNLOAD PDF
+# DOWNLOAD
 # =========================================
 def download_pdf(entity_id):
     url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
@@ -80,7 +75,7 @@ def download_pdf(entity_id):
 
 
 # =========================================
-# EXTRACT TEXT
+# TEXT
 # =========================================
 def extract_text(pdf_path):
     text = ""
@@ -98,7 +93,7 @@ def extract_text(pdf_path):
 
 
 # =========================================
-# EXTRACT PRICES (SMART)
+# PRICES
 # =========================================
 def extract_prices(text):
     prices = []
@@ -117,7 +112,7 @@ def extract_prices(text):
 
 
 # =========================================
-# FIND ACCEPTED PRICE
+# ACCEPTED
 # =========================================
 def find_accepted(text):
     lines = text.split("\n")
@@ -137,23 +132,23 @@ def find_accepted(text):
 
 
 # =========================================
-# ANALYSIS
+# ANALYZE (MEDIJANA)
 # =========================================
 def analyze(prices, accepted):
     if len(prices) < 2:
         return None
 
     lowest = min(prices)
-    avg = statistics.mean(prices)
+    medijana = statistics.median(prices)
 
     if not accepted:
         accepted = prices[-1]
 
-    return lowest, avg, accepted, accepted - lowest, accepted - avg
+    return lowest, medijana, accepted, accepted - lowest, accepted - medijana
 
 
 # =========================================
-# CHECK EXISTS
+# EXISTS
 # =========================================
 def exists(eid):
     c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
@@ -172,17 +167,19 @@ def save(eid, data):
 
 
 # =========================================
-# WRITE STATS
+# STATS
 # =========================================
 def write_stats():
-    c.execute("SELECT COUNT(*), SUM(loss_low), SUM(loss_avg) FROM tenders")
-    count, loss_low, loss_avg = c.fetchone()
+    c.execute("SELECT COUNT(*) FROM tenders")
+    count = c.fetchone()[0]
 
     stats = {
-        "broj_analiziranih": count or 0,
-        "gubitak_prema_najboljoj": loss_low or 0,
-        "gubitak_prema_srednjoj": loss_avg or 0,
-        "timestamp": datetime.now().isoformat()
+        "broj_tendera": count,
+        "ukupna_vrednost": "0 RSD",
+        "ukupna_vrednost_eur": "0 EUR",
+        "broj_ugovora": count,
+        "ugovorena_vrednost": "0 RSD",
+        "ugovorena_vrednost_eur": "0 EUR"
     }
 
     with open("stats.json", "w") as f:
@@ -190,20 +187,36 @@ def write_stats():
 
 
 # =========================================
-# WRITE LOSS DATA (DETALJI)
+# LOSS DATA (MEDIJANA)
 # =========================================
 def write_loss_data():
-    c.execute("SELECT entity_id, loss_low, loss_avg FROM tenders")
+    c.execute("""
+        SELECT lowest, medijana, accepted, loss_low, loss_medijana
+        FROM tenders
+    """)
 
     rows = c.fetchall()
 
-    data = []
-    for r in rows:
-        data.append({
-            "entity_id": r[0],
-            "loss_low": r[1],
-            "loss_avg": r[2]
-        })
+    if not rows:
+        data = {
+            "najbolja_ponuda": 0,
+            "medijana_ponuda": 0,
+            "prihvacena_ponuda": 0,
+            "broj_analiziranih": 0,
+            "gubitak_prema_najboljoj": 0,
+            "gubitak_prema_medijani": 0,
+            "valuta_kurs_eur": 117.2
+        }
+    else:
+        data = {
+            "najbolja_ponuda": round(sum(r[0] for r in rows), 2),
+            "medijana_ponuda": round(sum(r[1] for r in rows), 2),
+            "prihvacena_ponuda": round(sum(r[2] for r in rows), 2),
+            "broj_analiziranih": len(rows),
+            "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2),
+            "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2),
+            "valuta_kurs_eur": 117.2
+        }
 
     with open("loss-data.json", "w") as f:
         json.dump(data, f, indent=2)
@@ -215,20 +228,15 @@ def write_loss_data():
 def main():
     ids = fetch_entity_ids()
 
-    print("FOUND IDS:", len(ids))
-
     for eid in ids:
         if exists(eid):
             continue
-
-        print("PROCESS:", eid)
 
         pdf = download_pdf(eid)
         if not pdf:
             continue
 
         text = extract_text(pdf)
-
         if len(text) < 100:
             continue
 
