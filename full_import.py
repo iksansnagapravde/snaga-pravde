@@ -16,7 +16,7 @@ os.makedirs(SAVE_FOLDER, exist_ok=True)
 
 
 # =========================================
-# DOWNLOAD
+# DOWNLOAD PDF
 # =========================================
 def download_pdf(entity_id):
     url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
@@ -33,6 +33,9 @@ def download_pdf(entity_id):
             print(f"SAVED: {entity_id}")
             return path
 
+        else:
+            print(f"FAILED: {entity_id}")
+
     except Exception as e:
         print("ERROR:", e)
 
@@ -40,7 +43,7 @@ def download_pdf(entity_id):
 
 
 # =========================================
-# EXTRACT TEXT
+# EXTRACT TEXT FROM PDF
 # =========================================
 def extract_text(pdf_path):
     text = ""
@@ -51,55 +54,91 @@ def extract_text(pdf_path):
                 t = page.extract_text()
                 if t:
                     text += t + "\n"
-    except:
+    except Exception as e:
+        print("PDF ERROR:", e)
         return ""
 
     return text
 
 
 # =========================================
-# PARSE PRICES
+# SMART PRICE EXTRACTION
 # =========================================
-def extract_prices(text):
+def extract_prices_smart(text):
     prices = []
 
-    # hvata: 1.234.567,89 ili 1234567,89
-    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+    lines = text.split("\n")
 
-    for m in matches:
-        try:
-            num = float(m.replace(".", "").replace(",", "."))
-            prices.append(num)
-        except:
-            pass
+    keywords = [
+        "понуда",
+        "вредност",
+        "износ",
+        "уговор",
+        "динара",
+        "рсд"
+    ]
+
+    for line in lines:
+        lower = line.lower()
+
+        if any(k in lower for k in keywords):
+            matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+
+            for m in matches:
+                try:
+                    num = float(m.replace(".", "").replace(",", "."))
+                    prices.append(num)
+                except:
+                    pass
 
     return prices
 
 
 # =========================================
+# FIND ACCEPTED PRICE (WINNER)
+# =========================================
+def find_accepted_price(text):
+    lines = text.split("\n")
+
+    for i, line in enumerate(lines):
+        lower = line.lower()
+
+        if "изабрана" in lower or "најповољнија" in lower:
+            for j in range(i, min(i + 5, len(lines))):
+                matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", lines[j])
+                if matches:
+                    try:
+                        return float(matches[0].replace(".", "").replace(",", "."))
+                    except:
+                        pass
+
+    return None
+
+
+# =========================================
 # ANALYSIS
 # =========================================
-def analyze(prices):
+def analyze(prices, accepted):
     if not prices or len(prices) < 2:
         return None
 
     lowest = min(prices)
-    avg = statistics.mean(prices)
+    average = statistics.mean(prices)
 
-    # pretpostavka: zadnja cena = prihvaćena
-    accepted = prices[-1]
+    if not accepted:
+        accepted = prices[-1]
 
     return {
-        "lowest": lowest,
-        "average": avg,
-        "accepted": accepted,
-        "loss_vs_lowest": accepted - lowest,
-        "loss_vs_avg": accepted - avg
+        "najbolja_ponuda": lowest,
+        "srednja_ponuda": average,
+        "prihvacena_ponuda": accepted,
+        "gubitak_prema_najboljoj": accepted - lowest,
+        "gubitak_prema_srednjoj": accepted - average
     }
 
 
 # =========================================
-# FETCH ENTITY IDs (RUČNO ZA SADA)
+# SAMPLE ENTITY IDS (ZA TEST)
 # =========================================
 def get_sample_ids():
     return [
@@ -119,6 +158,7 @@ def main():
     results = []
 
     for eid in ids:
+        print("===================================")
         print(f"PROCESS: {eid}")
 
         pdf_path = download_pdf(eid)
@@ -131,23 +171,32 @@ def main():
             print("NO TEXT")
             continue
 
-        prices = extract_prices(text)
+        # DEBUG: vidi linije
+        for line in text.split("\n"):
+            if "понуда" in line.lower():
+                print("LINE:", line)
 
-        print("PRICES:", prices[:5])
+        prices = extract_prices_smart(text)
+        print("PRICES:", prices)
 
-        analysis = analyze(prices)
+        accepted = find_accepted_price(text)
+        print("ACCEPTED:", accepted)
+
+        analysis = analyze(prices, accepted)
 
         if analysis:
             results.append(analysis)
 
     # =====================================
-    # SAVE RESULT
+    # SAVE JSON
     # =====================================
     if results:
-        with open("results.json", "w") as f:
-            json.dump(results, f, indent=2)
+        with open("results.json", "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=2, ensure_ascii=False)
 
         print("RESULTS SAVED")
+    else:
+        print("NO VALID DATA")
 
 
 if __name__ == "__main__":
