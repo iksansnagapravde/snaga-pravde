@@ -1,358 +1,98 @@
-import json
-import re
-import sqlite3
-import statistics
-import time
-from datetime import datetime
-from io import BytesIO
-
 import requests
-from docx import Document
-from pypdf import PdfReader
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
-
-# =====================================================
-# CONFIG
-# =====================================================
+import json
+import os
+from datetime import datetime
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
-DB_FILE = "contracts.db"
-STATS_FILE = "stats.json"
-LOSS_FILE = "loss-data.json"
 
-EUR_RATE = 117.2
-REQUEST_TIMEOUT = 60
+HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "*/*"
+}
 
-
-# =====================================================
-# DB
-# =====================================================
-
-def init_db():
-    conn = sqlite3.connect(DB_FILE, timeout=30)
-    c = conn.cursor()
-
-    c.execute("""
-    CREATE TABLE IF NOT EXISTS tenders (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        tender_key TEXT UNIQUE,
-        title TEXT,
-        supplier TEXT,
-        publish_date TEXT,
-        budget_value REAL DEFAULT 0,
-        lowest_bid REAL DEFAULT 0,
-        median_bid REAL DEFAULT 0,
-        accepted_bid REAL DEFAULT 0,
-        bidder_count INTEGER DEFAULT 0,
-        raw_text TEXT
-    )
-    """)
-
-    conn.commit()
-    conn.close()
+SAVE_FOLDER = "documents"
+os.makedirs(SAVE_FOLDER, exist_ok=True)
 
 
-def tender_exists(tender_key):
-    conn = sqlite3.connect(DB_FILE)
-    c = conn.cursor()
-    c.execute("SELECT 1 FROM tenders WHERE tender_key=?", (tender_key,))
-    exists = c.fetchone() is not None
-    conn.close()
-    return exists
+# =========================================
+# 1. UZIMANJE LISTE TENDERA
+# =========================================
+def fetch_tenders():
+    print("FETCHING TENDERS...")
+
+    url = BASE_URL + "/get-documents"
+
+    params = {
+        "page": 1,
+        "pageSize": 20
+    }
+
+    r = requests.get(url, headers=HEADERS, params=params)
+
+    if r.status_code != 200:
+        print("ERROR fetching tenders")
+        return []
+
+    data = r.json()
+    return data
 
 
-def save_tender(record):
-    conn = sqlite3.connect(DB_FILE)
-    c = conn.cursor()
-
-    c.execute("""
-    INSERT OR IGNORE INTO tenders (
-        tender_key,title,supplier,publish_date,
-        budget_value,lowest_bid,median_bid,
-        accepted_bid,bidder_count,raw_text
-    ) VALUES (?,?,?,?,?,?,?,?,?,?)
-    """, (
-        record["tender_key"],
-        record["title"],
-        record["supplier"],
-        record["publish_date"],
-        record["budget_value"],
-        record["lowest_bid"],
-        record["median_bid"],
-        record["accepted_bid"],
-        record["bidder_count"],
-        record["raw_text"]
-    ))
-
-    conn.commit()
-    conn.close()
-
-
-# =====================================================
-# HELPERS
-# =====================================================
-
-def money_to_float(value):
-    if not value:
-        return 0.0
-
-    cleaned = str(value).replace("\xa0", "").strip()
-    cleaned = re.sub(r"[^\d,.\-]", "", cleaned)
-
-    if "," in cleaned:
-        cleaned = cleaned.replace(".", "").replace(",", ".")
+# =========================================
+# 2. DOWNLOAD DOKUMENTA
+# =========================================
+def download_document(entity_id):
+    url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
 
     try:
-        return float(cleaned)
-    except:
-        return 0.0
+        r = requests.get(url, headers=HEADERS, timeout=60)
 
+        if r.status_code == 200 and len(r.content) > 2000:
+            filename = os.path.join(SAVE_FOLDER, f"{entity_id}.pdf")
 
-def format_rsd(value):
-    return f"{round(value):,}".replace(",", ".") + " RSD"
+            with open(filename, "wb") as f:
+                f.write(r.content)
 
+            print(f"SAVED: {filename}")
+            return True
 
-def format_eur(value):
-    return f"{round(value):,}".replace(",", ".") + " EUR"
-
-
-# =====================================================
-# TEXT EXTRACTION
-# =====================================================
-
-def extract_docx_text(content):
-    try:
-        doc = Document(BytesIO(content))
-        return "\n".join(p.text.strip() for p in doc.paragraphs if p.text.strip())
-    except:
-        return ""
-
-
-def extract_pdf_text(content):
-    try:
-        reader = PdfReader(BytesIO(content))
-        text = ""
-        for page in reader.pages:
-            text += page.extract_text() or ""
-        return text
-    except:
-        return ""
-
-
-# =====================================================
-# PARSERS
-# =====================================================
-
-def parse_supplier(text):
-    m = re.search(r"(додељује|dodeljuje).*?:\s*(.+?)(?:\n|PIB)", text, re.I)
-    return re.sub(r"\s+", " ", m.group(2)).strip() if m else "UNKNOWN"
-
-
-def parse_budget_value(text):
-    m = re.search(r"(процењена|procenjena).*?:\s*([\d\.,]+)", text, re.I)
-    return money_to_float(m.group(2)) if m else 0
-
-
-def parse_accepted_bid(text):
-    m = re.search(r"(вредност|vrednost).*?:\s*([\d\.,]+)", text, re.I)
-    return money_to_float(m.group(2)) if m else 0
-
-
-def parse_bid_prices(text):
-    prices = []
-    for val in re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text):
-        num = money_to_float(val)
-        if 1000 < num < 1_000_000_000:
-            prices.append(num)
-    return sorted(prices)
-
-
-# =====================================================
-# SELENIUM
-# =====================================================
-
-def fetch_doc_links():
-    print("FETCHING LINKS...")
-
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-
-    driver = webdriver.Chrome(options=options)
-    driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-
-    time.sleep(6)
-
-    links = driver.find_elements("tag name", "a")
-
-    doc_links = []
-    for a in links:
-        href = a.get_attribute("href")
-        if href and "GetDocuments.ashx" in href:
-            doc_links.append(href)
-
-    driver.quit()
-
-    print("FOUND:", len(doc_links))
-    return doc_links
-
-
-# =====================================================
-# DOWNLOAD (FINAL)
-# =====================================================
-
-def download_file(url):
-    try:
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        print("OPEN:", url)
-
-        r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
-
-        html = r.text
-
-        match = re.search(r'href="([^"]+\.(pdf|docx)[^"]*)"', html, re.I)
-
-        if not match:
-            print("NO FILE")
-            return None, None
-
-        file_url = BASE_URL + match.group(1)
-
-        print("FILE:", file_url)
-
-        f = requests.get(file_url, headers=headers, timeout=REQUEST_TIMEOUT)
-
-        if f.status_code == 200:
-            return f.content, file_url
+        else:
+            print(f"FAILED: {entity_id}")
+            return False
 
     except Exception as e:
         print("ERROR:", e)
-
-    return None, None
-
-
-# =====================================================
-# OUTPUTS
-# =====================================================
-
-def write_outputs():
-    conn = sqlite3.connect(DB_FILE)
-    c = conn.cursor()
-
-    c.execute("""
-    SELECT COUNT(*),
-           COALESCE(SUM(budget_value),0),
-           COALESCE(SUM(accepted_bid),0)
-    FROM tenders
-    """)
-    row = c.fetchone()
-    conn.close()
-
-    stats = {
-        "broj_tendera": row[0],
-        "ukupna_vrednost": format_rsd(row[1]),
-        "ukupna_vrednost_eur": format_eur(row[1] / EUR_RATE),
-        "broj_ugovora": row[0],
-        "ugovorena_vrednost": format_rsd(row[2]),
-        "ugovorena_vrednost_eur": format_eur(row[2] / EUR_RATE)
-    }
-
-    with open(STATS_FILE, "w", encoding="utf-8") as f:
-        json.dump(stats, f, ensure_ascii=False, indent=2)
+        return False
 
 
-def write_loss_data():
-    conn = sqlite3.connect(DB_FILE)
-    c = conn.cursor()
+# =========================================
+# 3. GLAVNA LOGIKA
+# =========================================
+def main():
+    tenders = fetch_tenders()
 
-    c.execute("""
-        SELECT lowest_bid, median_bid, accepted_bid
-        FROM tenders
-        WHERE accepted_bid > 0 AND lowest_bid > 0 AND bidder_count >= 2
-    """)
-
-    rows = c.fetchall()
-    conn.close()
-
-    if not rows:
-        print("NO VALID DATA FOR LOSS")
+    if not tenders:
+        print("NO DATA")
         return
 
-    loss_low = sum(acc - low for low, med, acc in rows if acc > low)
-    loss_med = sum(acc - med for low, med, acc in rows if acc > med)
+    print(f"FOUND: {len(tenders)}")
 
-    result = {
-        "najbolja_ponuda": sum(r[0] for r in rows),
-        "medijana_ponuda": sum(r[1] for r in rows),
-        "prihvacena_ponuda": sum(r[2] for r in rows),
-        "broj_analiziranih": len(rows),
-        "gubitak_prema_najboljoj": loss_low,
-        "gubitak_prema_medijani": loss_med,
-        "valuta_kurs_eur": EUR_RATE,
-        "period_od": "2026-01-01"
-    }
+    count = 0
 
-    with open(LOSS_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
+    for item in tenders:
+        entity_id = item.get("LotId") or item.get("EntityId")
 
-
-# =====================================================
-# MAIN
-# =====================================================
-
-def main():
-    init_db()
-
-    links = fetch_doc_links()
-
-    for i, url in enumerate(links):
-        print("=" * 40)
-
-        if tender_exists(url):
+        if not entity_id:
             continue
 
-        content, file_url = download_file(url)
+        print(f"DOWNLOADING: {entity_id}")
 
-        if not content:
-            continue
+        success = download_document(entity_id)
 
-        if file_url.endswith(".pdf"):
-            text = extract_pdf_text(content)
-        else:
-            text = extract_docx_text(content)
+        if success:
+            count += 1
 
-        if not text:
-            continue
-
-        prices = parse_bid_prices(text)
-
-        record = {
-            "tender_key": url,
-            "title": f"Tender {i}",
-            "supplier": parse_supplier(text),
-            "publish_date": datetime.today().strftime("%d.%m.%Y"),
-            "budget_value": parse_budget_value(text),
-            "lowest_bid": min(prices) if prices else 0,
-            "median_bid": statistics.median(prices) if prices else 0,
-            "accepted_bid": parse_accepted_bid(text),
-            "bidder_count": len(prices),
-            "raw_text": text[:20000]
-        }
-
-        save_tender(record)
-
-        print("SAVED:", record["supplier"])
-
-        time.sleep(1)
-
-    write_outputs()
-    write_loss_data()
-
-    print("DONE")
+    print("====================================")
+    print(f"TOTAL DOWNLOADED: {count}")
 
 
 if __name__ == "__main__":
