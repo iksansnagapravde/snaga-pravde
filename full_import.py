@@ -115,10 +115,30 @@ def fetch_entity_ids():
 # DOWNLOAD PDF
 # =========================================
 def download_pdf(entity_id):
-    url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+
+    driver = webdriver.Chrome(options=options)
 
     try:
-        r = session.get(url, timeout=60)
+        url = f"https://jnportal.ujn.gov.rs/tender-eo/{entity_id}"
+        driver.get(url)
+
+        time.sleep(5)
+
+        # traži link za dokument
+        links = driver.find_elements(By.XPATH, "//a[contains(@href, 'GetDocuments')]")
+
+        if not links:
+            print("NO PDF LINK:", entity_id)
+            return None
+
+        pdf_url = links[0].get_attribute("href")
+
+        print("PDF:", pdf_url)
+
+        r = session.get(pdf_url, timeout=60)
 
         if r.status_code == 200 and len(r.content) > 2000:
             path = f"documents/{entity_id}.pdf"
@@ -129,10 +149,12 @@ def download_pdf(entity_id):
             return path
 
     except Exception as e:
-        print("DOWNLOAD ERROR:", e)
+        print("PDF ERROR:", e)
+
+    finally:
+        driver.quit()
 
     return None
-
 # =========================================
 # EXTRACT TEXT
 # =========================================
