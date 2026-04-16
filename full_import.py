@@ -127,7 +127,6 @@ def download_pdf(entity_id):
 
         time.sleep(5)
 
-        # traži link za dokument
         links = driver.find_elements(By.XPATH, "//a[contains(@href, 'GetDocuments')]")
 
         if not links:
@@ -138,15 +137,24 @@ def download_pdf(entity_id):
 
         print("PDF:", pdf_url)
 
-        r = session.get(pdf_url, timeout=60)
+        # 🔥 НАЈВАЖНИЈЕ — отвори PDF у browser-у
+        driver.get(pdf_url)
 
-        if r.status_code == 200 and len(r.content) > 2000:
-            path = f"documents/{entity_id}.pdf"
+        time.sleep(5)
 
-            with open(path, "wb") as f:
-                f.write(r.content)
+        # 🔥 узми прави binary
+        pdf_data = driver.page_source.encode("utf-8")
 
-            return path
+        if len(pdf_data) < 2000:
+            print("BAD PDF SIZE")
+            return None
+
+        path = f"documents/{entity_id}.pdf"
+
+        with open(path, "wb") as f:
+            f.write(pdf_data)
+
+        return path
 
     except Exception as e:
         print("PDF ERROR:", e)
