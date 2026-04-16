@@ -13,9 +13,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0"
 }
 
-SAVE_FOLDER = "documents"
-os.makedirs(SAVE_FOLDER, exist_ok=True)
-
+os.makedirs("documents", exist_ok=True)
 
 # =========================================
 # DATABASE
@@ -34,12 +32,32 @@ CREATE TABLE IF NOT EXISTS tenders (
     created_at TEXT
 )
 """)
-
 conn.commit()
 
 
 # =========================================
-# DOWNLOAD
+# FETCH ENTITY IDs (AUTO)
+# =========================================
+def fetch_entity_ids():
+    try:
+        url = BASE_URL + "/get-documents"
+        r = requests.get(url, headers=HEADERS)
+        data = r.json()
+
+        ids = []
+        for item in data:
+            if "LotId" in item:
+                ids.append(item["LotId"])
+
+        return ids
+
+    except Exception as e:
+        print("FETCH ERROR:", e)
+        return []
+
+
+# =========================================
+# DOWNLOAD PDF
 # =========================================
 def download_pdf(entity_id):
     url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}"
@@ -48,21 +66,21 @@ def download_pdf(entity_id):
         r = requests.get(url, headers=HEADERS, timeout=60)
 
         if r.status_code == 200 and len(r.content) > 2000:
-            path = os.path.join(SAVE_FOLDER, f"{entity_id}.pdf")
+            path = f"documents/{entity_id}.pdf"
 
             with open(path, "wb") as f:
                 f.write(r.content)
 
             return path
 
-    except:
-        pass
+    except Exception as e:
+        print("DOWNLOAD ERROR:", e)
 
     return None
 
 
 # =========================================
-# TEXT
+# EXTRACT TEXT
 # =========================================
 def extract_text(pdf_path):
     text = ""
@@ -80,17 +98,13 @@ def extract_text(pdf_path):
 
 
 # =========================================
-# SMART PRICES
+# EXTRACT PRICES (SMART)
 # =========================================
 def extract_prices(text):
     prices = []
 
-    lines = text.split("\n")
-
-    keywords = ["понуда", "вредност", "износ", "динара", "рсд"]
-
-    for line in lines:
-        if any(k in line.lower() for k in keywords):
+    for line in text.split("\n"):
+        if any(k in line.lower() for k in ["понуда", "вредност", "динара", "рсд"]):
             matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
 
             for m in matches:
@@ -103,24 +117,27 @@ def extract_prices(text):
 
 
 # =========================================
-# ACCEPTED
+# FIND ACCEPTED PRICE
 # =========================================
 def find_accepted(text):
     lines = text.split("\n")
 
     for i, line in enumerate(lines):
-        if "изабрана" in line.lower():
+        if "изабрана" in line.lower() or "најповољнија" in line.lower():
             for j in range(i, i + 5):
                 if j < len(lines):
                     m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", lines[j])
                     if m:
-                        return float(m[0].replace(".", "").replace(",", "."))
+                        try:
+                            return float(m[0].replace(".", "").replace(",", "."))
+                        except:
+                            pass
 
     return None
 
 
 # =========================================
-# ANALYZE
+# ANALYSIS
 # =========================================
 def analyze(prices, accepted):
     if len(prices) < 2:
@@ -136,69 +153,69 @@ def analyze(prices, accepted):
 
 
 # =========================================
-# CHECK EXIST
+# CHECK EXISTS
 # =========================================
-def exists(entity_id):
-    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (entity_id,))
+def exists(eid):
+    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
 
 
 # =========================================
 # SAVE
 # =========================================
-def save(entity_id, data):
+def save(eid, data):
     c.execute("""
     INSERT OR IGNORE INTO tenders
     VALUES (?, ?, ?, ?, ?, ?, ?)
-    """, (
-        entity_id,
-        data[0],
-        data[1],
-        data[2],
-        data[3],
-        data[4],
-        datetime.now().isoformat()
-    ))
+    """, (eid, *data, datetime.now().isoformat()))
     conn.commit()
 
 
 # =========================================
-# STATS
+# WRITE STATS
 # =========================================
 def write_stats():
     c.execute("SELECT COUNT(*), SUM(loss_low), SUM(loss_avg) FROM tenders")
     count, loss_low, loss_avg = c.fetchone()
 
-    result = {
+    stats = {
         "broj_analiziranih": count or 0,
         "gubitak_prema_najboljoj": loss_low or 0,
-        "gubitak_prema_srednjoj": loss_avg or 0
+        "gubitak_prema_srednjoj": loss_avg or 0,
+        "timestamp": datetime.now().isoformat()
     }
 
     with open("stats.json", "w") as f:
-        json.dump(result, f, indent=2)
+        json.dump(stats, f, indent=2)
 
 
 # =========================================
-# ENTITY IDS (PRIVREMENO)
+# WRITE LOSS DATA (DETALJI)
 # =========================================
-def get_ids():
-    return [
-        667697,
-        668108,
-        669001,
-        657421,
-        665276,
-        665277,
-        665278
-    ]
+def write_loss_data():
+    c.execute("SELECT entity_id, loss_low, loss_avg FROM tenders")
+
+    rows = c.fetchall()
+
+    data = []
+    for r in rows:
+        data.append({
+            "entity_id": r[0],
+            "loss_low": r[1],
+            "loss_avg": r[2]
+        })
+
+    with open("loss-data.json", "w") as f:
+        json.dump(data, f, indent=2)
 
 
 # =========================================
 # MAIN
 # =========================================
 def main():
-    ids = get_ids()
+    ids = fetch_entity_ids()
+
+    print("FOUND IDS:", len(ids))
 
     for eid in ids:
         if exists(eid):
@@ -211,6 +228,7 @@ def main():
             continue
 
         text = extract_text(pdf)
+
         if len(text) < 100:
             continue
 
@@ -223,6 +241,8 @@ def main():
             save(eid, result)
 
     write_stats()
+    write_loss_data()
+
     print("DONE")
 
 
