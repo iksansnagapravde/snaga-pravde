@@ -1,28 +1,28 @@
-import requests
 import os
 import re
-import pdfplumber
-import statistics
 import json
+import time
+import statistics
 import sqlite3
 from datetime import datetime
 
+import pdfplumber
+import requests
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
-# 🔥 FULL BROWSER HEADERS (rešava 401)
-HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "sr-RS,sr;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
-    "Origin": "https://jnportal.ujn.gov.rs",
-    "Connection": "keep-alive"
-}
-
-# 🔥 SESSION (KLJUČNO)
+# =========================================
+# SESSION (za PDF)
+# =========================================
 session = requests.Session()
-session.headers.update(HEADERS)
 
+# =========================================
+# FOLDER
+# =========================================
 os.makedirs("documents", exist_ok=True)
 
 # =========================================
@@ -52,7 +52,7 @@ def fix_database():
         c.execute("PRAGMA table_info(tenders)")
         columns = [col[1] for col in c.fetchall()]
 
-        if "medijana" not in columns or "loss_medijana" not in columns:
+        if "medijana" not in columns:
             print("RESET DATABASE")
 
             c.execute("DROP TABLE IF EXISTS tenders")
@@ -69,48 +69,47 @@ def fix_database():
             )
             """)
             conn.commit()
-
     except Exception as e:
         print("DB FIX ERROR:", e)
 
 fix_database()
 
 # =========================================
-# FETCH IDS (FINAL)
+# SELENIUM FETCH IDS
 # =========================================
 def fetch_entity_ids():
     ids = []
 
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=options)
+
     try:
-        for page in range(0, 50):
-            skip = page * 10
+        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
 
-            url = f"{BASE_URL}/api/searchgrid/VAwardDecisions/get?skip={skip}&take=10"
+        time.sleep(5)
 
-            r = session.get(url)
+        links = driver.find_elements(By.XPATH, "//a[contains(@href, '/tender-eo/')]")
 
-            if r.status_code != 200:
-                print("BAD STATUS:", r.status_code)
-                continue
-
-            data = r.json()
-
-            if not data or "data" not in data or not data["data"]:
-                break
-
-            for item in data["data"]:
-                if "Id" in item:
-                    ids.append(item["Id"])
+        for link in links:
+            href = link.get_attribute("href")
+            if href:
+                try:
+                    eid = int(href.split("/")[-1])
+                    ids.append(eid)
+                except:
+                    pass
 
         ids = list(set(ids))
-
         print("FOUND IDS:", ids)
 
         return ids
 
-    except Exception as e:
-        print("FETCH ERROR:", e)
-        return []
+    finally:
+        driver.quit()
 
 # =========================================
 # DOWNLOAD PDF
