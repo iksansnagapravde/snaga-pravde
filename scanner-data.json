@@ -29,6 +29,20 @@
       "priority": 104
     },
     {
+      "id": "748008-ograniciti-negativne-posledice-rata-na-bliskom-istoku",
+      "title": "Ограничити негативне последице рата на Блиском истоку",
+      "url": "https://www.politika.rs/scc/clanak/748008/ograniciti-negativne-posledice-rata-na-bliskom-istoku",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T22:29:00+00:00",
+      "time": "22:29",
+      "source": "Politika",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "opa-org-a-zaplena-kosovo-sever-municija-oruzje-33733665-html",
       "title": "Zaplenjeno oružje i municija na severu Kosova",
       "url": "https://www.slobodnaevropa.org/a/zaplena-kosovo-sever-municija-oruzje/33733665.html",
@@ -83,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "u-izvadio-jetru-umro-na-operacionom-stolu-na-floridi-rdelmbv",
+      "title": "UMESTO SLEZINE PACIJENTU IZVADIO JETRU! Čovek umro na licu mesta, lekar se pravdao, a onda je otkrivena JEZIVA istina: Uhapšen na Floridi",
+      "url": "https://www.blic.rs/vesti/svet/umesto-slezine-doktor-pacijentu-izvadio-jetru-umro-na-operacionom-stolu-na-floridi/rdelmbv",
+      "date": "2026-04-16",
+      "datetime": "2026-04-16T22:29:37+00:00",
+      "time": "22:29",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-nakon-sto-je-iz-vatrenog-oruzja-pucao-na-trojicu-muskaraca-",
@@ -519,20 +547,6 @@
       "priority": 28
     },
     {
-      "id": "to-nije-prvi-put-jednu-od-njih-vec-nazvao-ozbiljnim-ustasom-",
-      "title": "Nikola Selaković u sudnici pokušao da diskredituje svedoke i to nije prvi put: Jednu od njih već nazvao \"ozbiljnim ustašom\"",
-      "url": "https://nova.rs/vesti/hronika/nikola-selakovic-u-sudnici-pokusao-da-diskredituje-svedoke-i-to-nije-prvi-put-jednu-od-njih-vec-nazvao-ozbiljnim-ustasom/",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T17:01:40+00:00",
-      "time": "17:01",
-      "source": "Nova",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "2-radojevic-peci-zloupotrebljava-decu-u-politicke-svrhe-vest",
       "title": "Gradonačelnik Severne Mitrovice: Peci zloupotrebljava decu u političke svrhe posetom studenata spomen-ploči",
       "url": "https://www.euronews.rs/srbija/politika/219312/radojevic-peci-zloupotrebljava-decu-u-politicke-svrhe/vest",
@@ -680,20 +694,6 @@
       "datetime": "2026-04-16T17:30:34+00:00",
       "time": "17:30",
       "source": "RSE Balkan",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "a-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem-",
-      "title": "Macut u žalbi Savetu za štampu tvrdi da mu KRIK ugrožava bezbednost, upoređuje sebe sa Đinđićem",
-      "url": "https://www.krik.rs/macut-u-zalbi-savetu-za-stampu-tvrdi-da-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem/",
-      "date": "2026-04-09",
-      "datetime": "2026-04-09T11:07:44+00:00",
-      "time": "11:07",
-      "source": "KRIK",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
