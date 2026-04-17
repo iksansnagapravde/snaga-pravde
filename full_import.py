@@ -111,45 +111,46 @@ def download_pdf(tender_id):
         doc_url = links[0].get_attribute("href")
         print("DOC URL:", doc_url)
 
-        # 🔥 UZMI JSON PREKO SELENIUM (SESSION!)
-        driver.get(doc_url)
-        time.sleep(3)
+        # 🔥 uzmi sadržaj (NIJE JSON!)
+        r = requests.get(doc_url, headers=HEADERS, timeout=30)
 
-        content = driver.page_source
-
-        try:
-            data = json.loads(content)
-        except:
-            print("NOT JSON:", tender_id)
+        if r.status_code != 200:
+            print("DOC FAIL:", r.status_code)
             return None
 
-        # 🔥 sada traži pravi PDF
-        for doc in data:
-            url = doc.get("DocumentUrl")
+        content = r.text
 
-            if not url:
-                continue
+        # 🔥 traži PDF link unutar sadržaja
+        pdf_links = re.findall(r'href="([^"]+\.pdf)"', content, re.IGNORECASE)
 
-            full = "https://jnportal.ujn.gov.rs" + url
+        if not pdf_links:
+            print("NO PDF LINK:", tender_id)
+            return None
 
-            pdf = requests.get(full, headers=HEADERS, timeout=60)
+        pdf_url = pdf_links[0]
 
-            if pdf.status_code != 200:
-                continue
+        if not pdf_url.startswith("http"):
+            pdf_url = "https://jnportal.ujn.gov.rs" + pdf_url
 
-            if not pdf.content.startswith(b"%PDF"):
-                continue
+        print("PDF URL:", pdf_url)
 
-            path = f"documents/{tender_id}.pdf"
+        pdf = requests.get(pdf_url, headers=HEADERS, timeout=60)
 
-            with open(path, "wb") as f:
-                f.write(pdf.content)
+        if pdf.status_code != 200:
+            print("PDF FAIL:", pdf.status_code)
+            return None
 
-            print("PDF SAVED:", tender_id)
-            return path
+        if not pdf.content.startswith(b"%PDF"):
+            print("INVALID PDF:", tender_id)
+            return None
 
-        print("NO PDF FOUND:", tender_id)
-        return None
+        path = f"documents/{tender_id}.pdf"
+
+        with open(path, "wb") as f:
+            f.write(pdf.content)
+
+        print("PDF SAVED:", tender_id)
+        return path
 
     except Exception as e:
         print("ERROR:", e)
