@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "s-rs-vesti-drustvo-akademski-plenum-falsifikovanje-glasanja-",
+      "title": "Akademski plenum: Uhapsiti sve učesnike falsifikovanja glasanja na Medicinskom fakultetu",
+      "url": "https://www.danas.rs/vesti/drustvo/akademski-plenum-falsifikovanje-glasanja/",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T15:54:59+00:00",
+      "time": "15:54",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 126
+    },
+    {
       "id": "crna-gora-njemacka-droga-organizovani-kriminal-33733783-html",
       "title": "Šta je poznato o balkanskom narko kartelu čiji su članovi uhapšeni u akciji Europola u Crnoj Gori?",
       "url": "https://www.slobodnaevropa.org/a/kokain-hapsenja-crna-gora-njemacka-droga-organizovani-kriminal-/33733783.html",
@@ -71,34 +85,6 @@
       "priority": 100
     },
     {
-      "id": "itno-organizuju-jer-u-tom-slucaju-za-njih-nece-biti-spremni-",
-      "title": "„Izbori će vrlo verovatno biti 5. ili 12. jula“: Dragan Milić poziva opoziciju i studente da se hitno organizuju jer, u tom slučaju, za njih neće biti spremni",
-      "url": "https://www.danas.rs/vesti/politika/izbori-ce-vrlo-verovatno-biti-5-ili-12-jula-dragan-milic-poziva-opoziciju-i-studente-da-se-hitno-organizuju-jer-u-tom-slucaju-za-njih-nece-biti-spremni/",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T12:56:13+00:00",
-      "time": "12:56",
-      "source": "Danas",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "opa-org-a-zaplena-kosovo-sever-municija-oruzje-33733665-html",
-      "title": "Zaplenjeno oružje i municija na severu Kosova",
-      "url": "https://www.slobodnaevropa.org/a/zaplena-kosovo-sever-municija-oruzje/33733665.html",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T11:59:10+00:00",
-      "time": "11:59",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "bog-sumnje-da-su-falsifikovale-diplome-ekonomskog-fakulteta-",
       "title": "MUP: Šest osoba uhapšeno zbog sumnje da su falsifikovale diplome Ekonomskog fakulteta",
       "url": "https://www.danas.rs/vesti/drustvo/mup-sest-osoba-uhapseno-zbog-sumnje-da-su-falsifikovale-diplome-ekonomskog-fakulteta/",
@@ -139,20 +125,6 @@
       "breaking": false,
       "alert": true,
       "priority": 95
-    },
-    {
-      "id": "-sest-osoba-zbog-falsifikovanja-diploma-ekonomskog-fakulteta",
-      "title": "Ухапшено шест особа због фалсификовања диплома Економског факултета",
-      "url": "https://www.politika.rs/scc/clanak/748173/uhapseno-sest-osoba-zbog-falsifikovanja-diploma-ekonomskog-fakulteta",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:32:00+00:00",
-      "time": "14:32",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
     },
     {
       "id": "bog-sumnje-da-su-falsifikovale-diplome-ekonomskog-fakulteta-",
@@ -309,6 +281,20 @@
       "priority": 68
     },
     {
+      "id": "osta-na-savi-tuzilastvo-zapecatilo-kran-koji-se-obrusio-html",
+      "title": "Затворено градилиште новог моста на Сави, тужилаштво запечатило кран који се обрушио",
+      "url": "https://www.rts.rs/vesti/hronika/5928755/zatvoreno-gradiliste-novog-mosta-na-savi-tuzilastvo-zapecatilo-kran-koji-se-obrusio.html",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T15:50:43+00:00",
+      "time": "15:50",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "stvo-tuzilastvo-zapecatilo-kran-na-gradilistu-savskog-mosta-",
       "title": "Tužilaštvo zapečatilo kran na gradilištu Savskog mosta",
       "url": "https://www.danas.rs/vesti/drustvo/tuzilastvo-zapecatilo-kran-na-gradilistu-savskog-mosta/",
@@ -330,20 +316,6 @@
       "datetime": "2026-04-17T14:31:31+00:00",
       "time": "14:31",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-hronika-9971575-ometanje-pravde-beograd-zadrzavanje-48-sati",
-      "title": "OGLASILO SE TUŽILAŠTVO ZBOG JEZIVE SCENE U PALATI PRAVDE: Muškarac uvredama i pretnjama ometao krivični postupak, određeno mu zadržđavanje",
-      "url": "https://www.kurir.rs/crna-hronika/9971575/ometanje-pravde-beograd-zadrzavanje-48-sati",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:07:09+00:00",
-      "time": "14:07",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -519,6 +491,20 @@
       "priority": 32
     },
     {
+      "id": "-banke-za-desetak-godina-od-str-stigao-do-poslovne-imperije-",
+      "title": "\"Vlasnik Alta banke za desetak godina od STR stigao do poslovne imperije\"",
+      "url": "https://nova.rs/vesti/biznis/vlasnik-alta-banke-za-desetak-godina-od-str-stigao-do-poslovne-imperije/",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T16:23:20+00:00",
+      "time": "16:23",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "anke-za-desetak-godina-od-str-a-stigao-do-poslovne-imperije-",
       "title": "Cvijić: Vlasnik Alta banke za desetak godina od STR-a stigao do poslovne imperije",
       "url": "https://n1info.rs/vesti/cvijic-vlasnik-alta-banke-za-desetak-godina-od-str-a-stigao-do-poslovne-imperije/",
@@ -659,6 +645,20 @@
       "priority": 26
     },
     {
+      "id": "https-www-kurir-rs-stars-9971149-ko-je-zena-marka-bulata",
+      "title": "HAPŠENA DVA PUTA ZBOG KOKAINA, BILA U RIJALITIJU, U NASLEDSTVO DOBILA PUMPU: Evo ko je Marija Bulat: Od ovoga zarađuje 5.000 evra mesečno!",
+      "url": "https://www.kurir.rs/stars/9971149/ko-je-zena-marka-bulata",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T08:58:54+00:00",
+      "time": "08:58",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "9483-policija-uhapsila-osumnjicene-za-iznudu-u-beogradu-vest",
       "title": "Hapšenje u Beogradu zbog iznude: Pretnjama tražili 1.000 evra, uhvaćeni tokom primopredaje novca (VIDEO)",
       "url": "https://www.euronews.rs/srbija/aktuelno/219483/policija-uhapsila-osumnjicene-za-iznudu-u-beogradu/vest",
@@ -673,6 +673,20 @@
       "priority": 26
     },
     {
+      "id": "-rs-scc-clanak-748197-eu-resursi-pomogli-uspon-petera-madara",
+      "title": "ЕУ ресурси помогли успон Петера Мађара",
+      "url": "https://www.politika.rs/scc/clanak/748197/eu-resursi-pomogli-uspon-petera-madara",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T15:43:00+00:00",
+      "time": "15:43",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "rs-drustvo-sudijski-pomocnici-nevidl-d1-98ivi-motori-pravde-",
       "title": "Pravosudni Titanik",
       "url": "https://radar.nova.rs/drustvo/sudijski-pomocnici-nevidl%d1%98ivi-motori-pravde/",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "suradnja-hrvastka-kosovo-albanija-prijetnja-rs-33733676-html",
-      "title": "'Ne postoji scenarij o ugroženosti RS', iako Dodik 'strahuje' od Zagreba, Prištine i Tirane",
-      "url": "https://www.slobodnaevropa.org/a/dodik-suradnja-hrvastka-kosovo-albanija-prijetnja-rs/33733676.html",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T14:30:11+00:00",
-      "time": "14:30",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     }
   ],
   "all_sources": [
