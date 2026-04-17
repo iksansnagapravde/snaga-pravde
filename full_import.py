@@ -20,9 +20,6 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*"
 }
 
-# =========================
-# SETUP
-# =========================
 os.makedirs("documents", exist_ok=True)
 
 conn = sqlite3.connect("contracts.db")
@@ -41,15 +38,12 @@ CREATE TABLE IF NOT EXISTS tenders (
 """)
 conn.commit()
 
-# =========================
-# EXISTS
-# =========================
 def exists(eid):
     c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
 
 # =========================
-# FETCH
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -68,8 +62,7 @@ def fetch_entity_ids():
         html = driver.page_source
 
         found = re.findall(r"/tender-eo/(\d+)", html)
-
-        found = list(dict.fromkeys(found))  # ukloni duplikate
+        found = list(dict.fromkeys(found))
 
         print("FOUND RAW:", found[:10])
 
@@ -87,21 +80,25 @@ def fetch_entity_ids():
         driver.quit()
 
 # =========================
-# DOWNLOAD PDF (FIXED)
+# DOWNLOAD PDF (FINAL FIX)
 # =========================
 def download_pdf(tender_id):
     try:
         url = f"{BASE_URL}/tender-eo/{tender_id}"
 
-        r = requests.get(url, headers=HEADERS, timeout=30)
+        # 🔥 Selenium da vidi JS
+        options = Options()
+        options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
 
-        if r.status_code != 200:
-            print("TENDER FAIL:", r.status_code)
-            return None
+        driver = webdriver.Chrome(options=options)
+        driver.get(url)
+        time.sleep(5)
 
-        html = r.text
+        html = driver.page_source
+        driver.quit()
 
-        # ✅ PRAVILNO
         match = re.search(r'"entityId"\s*:\s*(\d+)', html)
 
         if not match:
@@ -109,7 +106,6 @@ def download_pdf(tender_id):
             return None
 
         entity_id = match.group(1)
-
         print("ENTITY:", entity_id)
 
         api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
@@ -176,7 +172,7 @@ def extract_text(pdf_path):
     return text
 
 # =========================
-# PRICES (STABILNO)
+# PRICES
 # =========================
 def extract_prices(text):
     prices = []
@@ -235,7 +231,6 @@ def analyze(prices, accepted):
         return None
 
     lowest = min(prices)
-
     medijana = statistics.median(prices) if len(prices) > 1 else lowest
 
     if not accepted:
@@ -284,7 +279,7 @@ def write_stats():
         json.dump(stats, f, indent=2)
 
 # =========================
-# LOSS DATA
+# LOSS
 # =========================
 def write_loss_data():
     c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
