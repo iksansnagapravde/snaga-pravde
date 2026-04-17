@@ -6,19 +6,24 @@ import statistics
 import sqlite3
 from datetime import datetime
 
-import pdfplumber
 import requests
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
+from pdf2image import convert_from_path
+import pytesseract
+
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
-# =========================================
-# SESSION (za PDF)
-# =========================================
-session = requests.Session()
+# 🔥 HEADERS (OBAVEZNO)
+HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*",
+    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
+    "Origin": "https://jnportal.ujn.gov.rs",
+    "Connection": "keep-alive"
+}
 
 # =========================================
 # FOLDER
@@ -45,37 +50,7 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================================
-# AUTO FIX DATABASE
-# =========================================
-def fix_database():
-    try:
-        c.execute("PRAGMA table_info(tenders)")
-        columns = [col[1] for col in c.fetchall()]
-
-        if "medijana" not in columns:
-            print("RESET DATABASE")
-
-            c.execute("DROP TABLE IF EXISTS tenders")
-
-            c.execute("""
-            CREATE TABLE tenders (
-                entity_id INTEGER PRIMARY KEY,
-                lowest REAL,
-                medijana REAL,
-                accepted REAL,
-                loss_low REAL,
-                loss_medijana REAL,
-                created_at TEXT
-            )
-            """)
-            conn.commit()
-    except Exception as e:
-        print("DB FIX ERROR:", e)
-
-fix_database()
-
-# =========================================
-# SELENIUM FETCH IDS
+# FETCH IDS (SELENIUM)
 # =========================================
 def fetch_entity_ids():
     ids = []
@@ -89,7 +64,6 @@ def fetch_entity_ids():
 
     try:
         driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-
         time.sleep(5)
 
         links = driver.find_elements(By.XPATH, "//a[contains(@href, '/tender-eo/')]")
@@ -98,21 +72,19 @@ def fetch_entity_ids():
             href = link.get_attribute("href")
             if href:
                 try:
-                    eid = int(href.split("/")[-1])
-                    ids.append(eid)
+                    ids.append(int(href.split("/")[-1]))
                 except:
                     pass
 
         ids = list(set(ids))
         print("FOUND IDS:", ids)
-
         return ids
 
     finally:
         driver.quit()
 
 # =========================================
-# DOWNLOAD PDF
+# DOWNLOAD PDF (API + COOKIES)
 # =========================================
 def download_pdf(entity_id):
     options = Options()
@@ -122,19 +94,16 @@ def download_pdf(entity_id):
     driver = webdriver.Chrome(options=options)
 
     try:
-        # 🔥 OTVORI STRANICU (da dobije cookies)
         driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         time.sleep(3)
 
-        # 🔥 UZMI COOKIES
         cookies = driver.get_cookies()
 
         session = requests.Session()
         for cookie in cookies:
             session.cookies.set(cookie['name'], cookie['value'])
 
-        # 🔥 API POZIV (SADA RADI)
-        api_url = f"https://jnportal.ujn.gov.rs/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1&prefetch=true"
+        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1&prefetch=true"
 
         r = session.get(api_url, headers=HEADERS, timeout=30)
 
@@ -148,7 +117,6 @@ def download_pdf(entity_id):
             print("NO DOCUMENTS:", entity_id)
             return None
 
-        # 🔥 NAĐI PDF
         for doc in data:
             name = doc.get("FileName", "").lower()
             url = doc.get("DocumentUrl")
@@ -157,7 +125,7 @@ def download_pdf(entity_id):
                 continue
 
             if name.endswith(".pdf"):
-                full_url = "https://jnportal.ujn.gov.rs" + url
+                full_url = BASE_URL + url
 
                 print("PDF:", name)
 
@@ -188,47 +156,54 @@ def download_pdf(entity_id):
         driver.quit()
 
     return None
-# =========================================
-# EXTRACT TEXT
-# =========================================
-from pdf2image import convert_from_path
-import pytesseract
 
+# =========================================
+# OCR TEXT
+# =========================================
 def extract_text(pdf_path):
     text = ""
 
     try:
-        images = convert_from_path(
-            pdf_path,
-            dpi=300,
-            poppler_path="/usr/bin"
-        )
+        images = convert_from_path(pdf_path, dpi=300, poppler_path="/usr/bin")
 
         print("IMAGES:", len(images))
 
         for img in images:
-            t = pytesseract.image_to_string(img)
+            t = pytesseract.image_to_string(img, config="--psm 6")
             text += t + "\n"
 
     except Exception as e:
         print("OCR ERROR:", e)
 
     return text
+
 # =========================================
 # EXTRACT PRICES
 # =========================================
 def extract_prices(text):
     prices = []
 
-    # hvata sve brojeve tipa: 1.234.567,89
     matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
 
     for m in matches:
         try:
             num = float(m.replace(".", "").replace(",", "."))
+
+            if num < 10000:
+                continue
+
+            if num > 10000000000:
+                continue
+
             prices.append(num)
+
         except:
             pass
+
+    prices = list(set(prices))
+    prices.sort()
+
+    print("PRICES:", prices)
 
     return prices
 
@@ -353,9 +328,7 @@ def main():
 
         text = extract_text(pdf)
 
-        # 🔥 DEBUG (KLJUČNO)
         print("TEXT LENGTH:", len(text))
-        print("SAMPLE TEXT:", text[:500])
         print("----------")
 
         if len(text) < 100:
