@@ -100,14 +100,16 @@ def download_pdf(tender_id):
 
         html = r.text
 
-        # 🔥 прави entityId (из JS data)
+        # 🔥 entityId iz JS
         matches = re.findall(r'"entityId":\s*(\d+)', html)
 
         if not matches:
             print("NO ENTITY ID:", tender_id)
-            return None
 
-        entity_id = matches[0]
+            # 🔥 fallback — koristi tender_id
+            entity_id = tender_id
+        else:
+            entity_id = matches[0]
 
         print("REAL ENTITY:", entity_id)
 
@@ -155,26 +157,6 @@ def download_pdf(tender_id):
     except Exception as e:
         print("ERROR:", e)
         return None
-# =========================
-# OCR
-# =========================
-def extract_text(pdf_path):
-    text = ""
-
-    try:
-        images = convert_from_path(pdf_path, dpi=300)
-
-        print("IMAGES:", len(images))
-
-        for img in images:
-            t = pytesseract.image_to_string(img, config="--psm 6")
-            text += t + "\n"
-
-    except Exception as e:
-        print("OCR ERROR:", e)
-
-    return text
-
 # =========================
 # PRICES
 # =========================
