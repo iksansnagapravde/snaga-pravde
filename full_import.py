@@ -45,7 +45,7 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH NEW IDS (SMART)
+# FETCH IDS (HTML, NO API, NO 401)
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -53,8 +53,7 @@ def fetch_entity_ids():
     try:
         for page in range(0, 50):
             skip = page * 10
-
-            url = f"{BASE_URL}/api/searchgrid/VAwardDecisions/get?skip={skip}&take=10"
+            url = f"{BASE_URL}/odluke-o-dodeli-ugovora?skip={skip}"
 
             r = requests.get(url, headers=HEADERS, timeout=30)
 
@@ -62,21 +61,20 @@ def fetch_entity_ids():
                 print("BAD STATUS:", r.status_code)
                 continue
 
-            data = r.json()
+            html = r.text
 
-            if not data:
+            found = re.findall(r"/tender-eo/(\d+)", html)
+
+            if not found:
                 break
 
             stop = False
 
-            for item in data:
-                eid = item.get("Id")
-
-                if not eid:
-                    continue
+            for eid in found:
+                eid = int(eid)
 
                 if exists(eid):
-                    print("STOP — already in DB:", eid)
+                    print("STOP:", eid)
                     stop = True
                     break
 
@@ -93,34 +91,72 @@ def fetch_entity_ids():
         return []
 
 # =========================
-# DOWNLOAD PDF (DIRECT)
+# DOWNLOAD PDF (FIX ENTITY ID)
 # =========================
-def download_pdf(entity_id):
+def download_pdf(tender_id):
     try:
-        pdf_url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+        # 1. otvori tender stranicu
+        url = f"{BASE_URL}/tender-eo/{tender_id}"
 
-        print("TRY:", pdf_url)
-
-        r = requests.get(pdf_url, headers=HEADERS, timeout=60)
+        r = requests.get(url, headers=HEADERS, timeout=30)
 
         if r.status_code != 200:
-            print("FAIL:", r.status_code)
+            print("TENDER FAIL:", r.status_code)
             return None
 
-        if not r.content.startswith(b"%PDF"):
-            print("NOT PDF")
+        html = r.text
+
+        # 2. izvuci pravi entityId (660xxx)
+        match = re.search(r"entityId=(\d+)", html)
+
+        if not match:
+            print("NO ENTITY ID:", tender_id)
             return None
 
-        path = f"documents/{entity_id}.pdf"
+        entity_id = match.group(1)
 
-        with open(path, "wb") as f:
-            f.write(r.content)
+        print("ENTITY:", entity_id)
 
-        print("PDF SAVED:", entity_id)
-        return path
+        # 3. pozovi get-documents API
+        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+
+        r2 = requests.get(api_url, headers=HEADERS, timeout=30)
+
+        if r2.status_code != 200:
+            print("DOC FAIL:", r2.status_code)
+            return None
+
+        data = r2.json()
+
+        for doc in data:
+            url = doc.get("DocumentUrl")
+
+            if not url:
+                continue
+
+            full = BASE_URL + url
+
+            pdf = requests.get(full, headers=HEADERS, timeout=60)
+
+            if pdf.status_code != 200:
+                continue
+
+            if not pdf.content.startswith(b"%PDF"):
+                continue
+
+            path = f"documents/{tender_id}.pdf"
+
+            with open(path, "wb") as f:
+                f.write(pdf.content)
+
+            print("PDF SAVED:", tender_id)
+            return path
+
+        print("NO PDF:", tender_id)
+        return None
 
     except Exception as e:
-        print("DOWNLOAD ERROR:", e)
+        print("ERROR:", e)
         return None
 
 # =========================
@@ -144,7 +180,7 @@ def extract_text(pdf_path):
     return text
 
 # =========================
-# EXTRACT PRICES
+# PRICES
 # =========================
 def extract_prices(text):
     prices = []
@@ -164,7 +200,7 @@ def extract_prices(text):
 
             prices.append(num)
 
-        except ValueError:
+        except:
             continue
 
     prices = sorted(set(prices))
@@ -178,7 +214,7 @@ def extract_prices(text):
     return prices
 
 # =========================
-# ACCEPTED DETECTION
+# ACCEPTED
 # =========================
 def find_accepted(text):
     lines = text.split("\n")
@@ -259,7 +295,7 @@ def write_stats():
         json.dump(stats, f, indent=2)
 
 # =========================
-# LOSS DATA
+# LOSS
 # =========================
 def write_loss_data():
     c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
