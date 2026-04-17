@@ -71,20 +71,6 @@
       "priority": 100
     },
     {
-      "id": "nja-glasanjada-li-ovako-vlast-zeli-da-sacuva-svoje-pozicije-",
-      "title": "Akademski plenum o Medicinskom: Uhapsiti učesnike falsifikovanja glasanja, da li ovako vlast želi da sačuva svoje pozicije?",
-      "url": "https://n1info.rs/vesti/akademski-plenum-o-medicinskom-uhpasiti-ucesnike-falsifikovanja-glasanjada-li-ovako-vlast-zeli-da-sacuva-svoje-pozicije/",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:35:54+00:00",
-      "time": "14:35",
-      "source": "N1",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "u-zbog-vrsnjackog-nasilja-ministarstvo-hitno-uputilo-38ew07f",
       "title": "DRAMA U ŠKOLI U SMEDEREVU Roditelji ne šalju decu na nastavu zbog opasnih pretnji jednog đaka, oglasilo se i Ministarstvo: \"Uputili smo hitno prosvetnu inspekciju\"",
       "url": "https://www.blic.rs/vesti/drustvo/drama-u-skoli-u-smederevu-zbog-vrsnjackog-nasilja-ministarstvo-hitno-uputilo/38ew07f",
@@ -99,6 +85,20 @@
       "priority": 100
     },
     {
+      "id": "-vlasnik-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel",
+      "title": "OGLASIO SE VLASNIK POGREBNE RADNJE NA KOJU JE BAČEN MOLOTOVLJEV KOKTEL: \"Rekla mi je da će mi poslati neke mafijaše...\"",
+      "url": "https://www.kurir.rs/crna-hronika/9971694/oglasio-se-vlasnik-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T15:44:23+00:00",
+      "time": "15:44",
+      "source": "Kurir",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
       "id": "-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel-1tbe2z9",
       "title": "\"REKLA MI JE DA ĆE MI POSLATI MAFIJAŠE\" Oglasio je vlasnik radnje u Ripnju na koju je bačen Molotovljev koktel: \"Nedavno sam se posvađao s jednom ženom...\"",
       "url": "https://www.blic.rs/vesti/hronika/oglasio-je-vlasnik-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel/1tbe2z9",
@@ -111,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "vesti-dzeljalj-sveclja-stefan-radulovic-banjska-osumnjiceni-",
+      "title": "Dželjalj Svečlja objavio puno ime uhapšenog za slučaj Banjska",
+      "url": "https://n1info.rs/vesti/dzeljalj-sveclja-stefan-radulovic-banjska-osumnjiceni/",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T19:56:19+00:00",
+      "time": "19:56",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-danas-rs-svet-region-balkan-narko-kartel-europol-crna-gora-",
@@ -239,6 +253,34 @@
       "priority": 90
     },
     {
+      "id": "vesti-politika-5929033-kosovo-metohija-pristina-banjska-html",
+      "title": "На Мердару ухапшен С. Р, осумњичен за учешће у сукобу у Бањској",
+      "url": "https://www.rts.rs/vesti/politika/5929033/kosovo-metohija-pristina-banjska.html",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T20:04:18+00:00",
+      "time": "20:04",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
+      "id": "nas-rs-vesti-politika-uhapsen-osumnjiceni-za-slucaj-banjska-",
+      "title": "Na Merdaru uhapšen osumnjičeni za slučaj Banjska",
+      "url": "https://www.danas.rs/vesti/politika/uhapsen-osumnjiceni-za-slucaj-banjska/",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T19:48:22+00:00",
+      "time": "19:48",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "o-rs-vesti-na-merdaru-uhapsen-osumnjiceni-za-slucaj-banjska-",
       "title": "Na Merdaru uhapšen osumnjičeni za slučaj Banjska",
       "url": "https://n1info.rs/vesti/na-merdaru-uhapsen-osumnjiceni-za-slucaj-banjska/",
@@ -265,20 +307,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "djenja-bivsoj-gradonacelnici-nisa-dragani-sotirovski-svvpx64",
-      "title": "POČINJE SUĐENJE BIVŠOJ GRADONAČELNICI NIŠA Sumnja se da je oštetila budžet za 197 miliona dinara i SKUPOCENI SAT: Sotirovski optužena za dva krivična dela",
-      "url": "https://www.blic.rs/vesti/hronika/zakazan-pocetak-sudjenja-bivsoj-gradonacelnici-nisa-dragani-sotirovski/svvpx64",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:18:25+00:00",
-      "time": "14:18",
-      "source": "Blic",
-      "category": "Злоупотреба положаја",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 68
     },
     {
       "id": "tuznicu-protiv-srbina-zbog-ucestvovanja-u-protestima-nbk8r2b",
@@ -337,20 +365,6 @@
       "priority": 66
     },
     {
-      "id": "apsi-zlatibora-loncara-zbog-mesanja-u-izbore-na-medicinskom-",
-      "title": "Manojlović: Tužilaštvo bi moralo da uhapsi Zlatibora Lončara zbog mešanja u izbore na Medicinskom",
-      "url": "https://n1info.rs/vesti/manojlovic-tuzilastvo-bi-moralo-da-uhapsi-zlatibora-loncara-zbog-mesanja-u-izbore-na-medicinskom/",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T13:45:16+00:00",
-      "time": "13:45",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ignuta-optuznica-protiv-vozaca-zbog-saobracajne-nesrece-vest",
       "title": "Optužnica protiv mladića zbog saobraćajne nesreće u kojoj je poginula porodica na Novom Beogradu",
       "url": "https://www.euronews.rs/srbija/aktuelno/219545/podignuta-optuznica-protiv-vozaca-zbog-saobracajne-nesrece/vest",
@@ -358,20 +372,6 @@
       "datetime": "2026-04-17T11:46:00+00:00",
       "time": "11:46",
       "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "ikola-dj-saobracajna-nesreca-novi-beograd-poginule-tri-osobe",
-      "title": "NIKOLA PIJAN I DROGIRAN UBIO TROČLANU PORODICU NA NOVOM BEOGRADU: Podignuta optužnica zbog stravične nesreće! Tužilaštvo traži MAKSIMALNU KAZNU",
-      "url": "https://www.kurir.rs/crna-hronika/9971349/nikola-dj-saobracajna-nesreca-novi-beograd-poginule-tri-osobe",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T11:24:53+00:00",
-      "time": "11:24",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -393,18 +393,18 @@
       "priority": 66
     },
     {
-      "id": "ropa-org-a-radnik-poginuo-mint-fabrika-loznica-33733724-html",
-      "title": "Kineski radnik poginuo, drugi povređen u fabrici 'Mint' na zapadu Srbije",
-      "url": "https://www.slobodnaevropa.org/a/radnik-poginuo-mint-fabrika-loznica/33733724.html",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T13:05:32+00:00",
-      "time": "13:05",
-      "source": "RSE Balkan",
-      "category": "Тужилаштво",
+      "id": "-future-summit-a-2026-zajedno-ka-odrzivoj-buducnosti-pnp40zj",
+      "title": "UNIQA osiguranje partner Adria Future Summit-a 2026: Zajedno ka održivoj budućnosti",
+      "url": "https://www.blic.rs/biznis/uniqa-osiguranje-partner-adria-future-summit-a-2026-zajedno-ka-odrzivoj-buducnosti/pnp40zj",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T19:50:17+00:00",
+      "time": "19:50",
+      "source": "Blic",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 66
+      "priority": 60
     },
     {
       "id": "dnja-moravski-koridor-nadoknada-unisteni-usevi-33734480-html",
@@ -489,20 +489,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "vsoj-gradonacelnici-nisa-dragani-sotirovski-pocinje-20-maja-",
-      "title": "Suđenje bivšoj gradonačelnici Niša Dragani Sotirovski počinje 20. maja",
-      "url": "https://n1info.rs/vesti/sudjenje-bivsoj-gradonacelnici-nisa-dragani-sotirovski-pocinje-20-maja/",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:08:42+00:00",
-      "time": "14:08",
-      "source": "N1",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "2-sudenje-bivsoj-gradonacelnici-nisa-zakazano-za-20-maj-vest",
@@ -603,6 +589,20 @@
       "priority": 25
     },
     {
+      "id": "ttps-n1info-rs-video-360-stepeni-360-stepeni-mirko-poledica-",
+      "title": "360 stepeni: Mirko Poledica",
+      "url": "https://n1info.rs/video/360-stepeni/360-stepeni-mirko-poledica/",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T20:00:00+00:00",
+      "time": "20:00",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "a-tender-za-radove-na-rekonstrukciji-jedne-od-glavnih-ulica-",
       "title": "Gradska uprava Blaca raspisala tender za radove na rekonstrukciji jedne od glavnih ulica",
       "url": "https://n1info.rs/biznis/gradska-uprava-blaca-raspisala-tender-za-radove-na-rekonstrukciji-jedne-od-glavnih-ulica/",
@@ -617,13 +617,13 @@
       "priority": 24
     },
     {
-      "id": "-advokatima-kaznama-da-li-se-ogranicava-sloboda-izrazavanja-",
-      "title": "\"Deluje kao da je namera da se ućutkaju oni koji javno govore o sprezi kriminala i vlasti\": Komora preti advokatima kaznama, da li se ograničava sloboda izražavanja?",
-      "url": "https://nova.rs/vesti/hronika/deluje-kao-da-je-namera-da-se-ucutkaju-oni-koji-javno-govore-o-sprezi-kriminala-i-vlasti-komora-preti-advokatima-kaznama-da-li-se-ogranicava-sloboda-izrazavanja/",
+      "id": "ka-9971582-mladen-mijatovic-za-kurir-tv-o-balkanskom-kartelu",
+      "title": "\"ZADAT JE OZBILJAN UDARAC BALKANSKOM KARTELU\" Mladen Mijatović za Kurir TV: Svi osumnjičeni imaju debeo kriminalni dosije",
+      "url": "https://www.kurir.rs/crna-hronika/9971582/mladen-mijatovic-za-kurir-tv-o-balkanskom-kartelu",
       "date": "2026-04-17",
-      "datetime": "2026-04-17T16:01:23+00:00",
-      "time": "16:01",
-      "source": "Nova",
+      "datetime": "2026-04-17T17:16:14+00:00",
+      "time": "17:16",
+      "source": "Kurir",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -687,14 +687,14 @@
       "priority": 8
     },
     {
-      "id": "inara-provladini-mediji-u-indjiji-nudili-da-kupe-nas-portal-",
-      "title": "Urednica IN medija: Za SLAPP tužbe potrebno još oko pola miliona dinara, provladini mediji u Inđiji nudili da kupe naš portal",
-      "url": "https://n1info.rs/vesti/urednica-in-medija-za-slapp-tuzbe-potrebno-jos-oko-pola-miliona-dinara-provladini-mediji-u-indjiji-nudili-da-kupe-nas-portal/",
+      "id": "-zbog-vecere-meline-galic-zatvoren-restoran-na-azurnoj-obali",
+      "title": "ZBOG MELININE VEČERE ZATVORILI PRESTIŽNI RESTORAN: Ovde su kretorka i milioner okupili svatove: Pripremljeno 10 najskupljih šampanjaca (FOTO+VIDEO)",
+      "url": "https://www.kurir.rs/stars/9971586/zbog-vecere-meline-galic-zatvoren-restoran-na-azurnoj-obali",
       "date": "2026-04-17",
-      "datetime": "2026-04-17T15:41:13+00:00",
-      "time": "15:41",
-      "source": "N1",
-      "category": "Људска права",
+      "datetime": "2026-04-17T18:08:20+00:00",
+      "time": "18:08",
+      "source": "Kurir",
+      "category": "Лишени слободе",
       "summary": "",
       "breaking": false,
       "alert": false,
