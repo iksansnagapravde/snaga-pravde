@@ -118,6 +118,7 @@ def download_pdf(entity_id):
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Chrome(options=options)
 
@@ -137,22 +138,28 @@ def download_pdf(entity_id):
 
         print("PDF:", pdf_url)
 
-        # 🔥 НАЈВАЖНИЈЕ — отвори PDF у browser-у
-        driver.get(pdf_url)
+        # 🔥 UZMI COOKIES IZ BROWSER-A
+        cookies = driver.get_cookies()
 
-        time.sleep(5)
+        session = requests.Session()
+        for cookie in cookies:
+            session.cookies.set(cookie['name'], cookie['value'])
 
-        # 🔥 узми прави binary
-        pdf_data = driver.page_source.encode("utf-8")
+        # 🔥 PRAVI DOWNLOAD (OVO JE KLJUČ)
+        r = session.get(pdf_url, timeout=60)
 
-        if len(pdf_data) < 2000:
+        if r.status_code != 200:
+            print("BAD STATUS:", r.status_code)
+            return None
+
+        if len(r.content) < 2000:
             print("BAD PDF SIZE")
             return None
 
         path = f"documents/{entity_id}.pdf"
 
         with open(path, "wb") as f:
-            f.write(pdf_data)
+            f.write(r.content)
 
         return path
 
