@@ -15,6 +15,20 @@
       "priority": 111
     },
     {
+      "id": "ikanaca-dobilo-upozorenje-na-razorne-oluje-tornada-i-poplave",
+      "title": "ALARM U SAD: Više od 50 miliona Amerikanaca dobilo upozorenje na razorne oluje, tornada i poplave",
+      "url": "https://www.kurir.rs/planeta/9971912/vise-od-50-miliona-amerikanaca-dobilo-upozorenje-na-razorne-oluje-tornada-i-poplave",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T21:54:57+00:00",
+      "time": "21:54",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 108
+    },
+    {
       "id": "-ratu-rusije-i-evorope-putin-krece-sa-700000-vojnika-rb90twp",
       "title": "\"KRENUĆE NA NAS SA 700.000 VOJNIKA, A MOŽDA I SA 1,5 MILIONA!\" Putin spreman za rat s EVROPOM, čelnik ove zemlje poslao zastrašujuće upozorenje: \"Moramo da budemo jaki\"",
       "url": "https://www.blic.rs/vesti/svet/celnik-belgije-o-ratu-rusije-i-evorope-putin-krece-sa-700000-vojnika/rb90twp",
@@ -43,32 +57,18 @@
       "priority": 100
     },
     {
-      "id": "-vlasnik-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel",
-      "title": "OGLASIO SE VLASNIK POGREBNE RADNJE NA KOJU JE BAČEN MOLOTOVLJEV KOKTEL: \"Rekla mi je da će mi poslati neke mafijaše...\"",
-      "url": "https://www.kurir.rs/crna-hronika/9971694/oglasio-se-vlasnik-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel",
+      "id": "ac-uhapsen-zbog-pokusaja-podmicivanja-koleginice-u-podgorici",
+      "title": "POLICAJAC UHAPŠEN ZBOG POKUŠAJA PODMIĆIVANJA KOLEGINICE: Krivična prijava protiv muškarca (41)",
+      "url": "https://www.kurir.rs/region/crna-gora/9971709/policajac-uhapsen-zbog-pokusaja-podmicivanja-koleginice-u-podgorici",
       "date": "2026-04-17",
-      "datetime": "2026-04-17T15:44:23+00:00",
-      "time": "15:44",
+      "datetime": "2026-04-17T22:12:00+00:00",
+      "time": "22:12",
       "source": "Kurir",
-      "category": "Организовани криминал",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 95
-    },
-    {
-      "id": "-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel-1tbe2z9",
-      "title": "\"REKLA MI JE DA ĆE MI POSLATI MAFIJAŠE\" Oglasio je vlasnik radnje u Ripnju na koju je bačen Molotovljev koktel: \"Nedavno sam se posvađao s jednom ženom...\"",
-      "url": "https://www.blic.rs/vesti/hronika/oglasio-je-vlasnik-radnje-u-ripnju-na-koju-je-bacen-molotovljev-koktel/1tbe2z9",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T15:34:26+00:00",
-      "time": "15:34",
-      "source": "Blic",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
+      "priority": 92
     },
     {
       "id": "9654-uhapsena-osoba-na-merdaru-zbog-dogadaja-u-banjskoj-vest",
@@ -436,7 +436,7 @@
     },
     {
       "id": "ar-nova-rs-drustvo-laza-dzamic-flaneristika-srbija-madarska-",
-      "title": "Svaki kilometar koruptivno naduvanih puteva je jedna izgubljena škola ili dispanzer manje",
+      "title": "Svaki kilometar koruptivno naduvanih puteva je jedna izgubljena škola",
       "url": "https://radar.nova.rs/drustvo/laza-dzamic-flaneristika-srbija-madarska/",
       "date": "2026-04-17",
       "datetime": "2026-04-17T22:01:00+00:00",
