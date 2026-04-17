@@ -1,34 +1,24 @@
 import os
 import re
 import json
-import time
 import statistics
 import sqlite3
 from datetime import datetime
 
 import requests
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-
 from pdf2image import convert_from_path
 import pytesseract
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
-# ✅ STABILAN TOKEN (ključ za 401 problem)
-USER_TOKEN = "746fd3d9-a658-4559-aff6-ce28c6621268"
-
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
-    "Origin": "https://jnportal.ujn.gov.rs",
-    "Connection": "keep-alive",
-    "X-Requested-With": "XMLHttpRequest"
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*"
 }
 
+# =========================
+# SETUP
+# =========================
 os.makedirs("documents", exist_ok=True)
 
 conn = sqlite3.connect("contracts.db")
@@ -47,94 +37,95 @@ CREATE TABLE IF NOT EXISTS tenders (
 """)
 conn.commit()
 
-# =========================================
-# FETCH IDS
-# =========================================
+# =========================
+# EXISTS
+# =========================
+def exists(eid):
+    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
+# =========================
+# FETCH NEW IDS (SMART)
+# =========================
 def fetch_entity_ids():
     ids = []
 
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    driver = webdriver.Chrome(options=options)
-
     try:
-        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(5)
+        for page in range(0, 50):
+            skip = page * 10
 
-        links = driver.find_elements(By.XPATH, "//a[contains(@href, '/tender-eo/')]")
+            url = f"{BASE_URL}/api/searchgrid/VAwardDecisions/get?skip={skip}&take=10"
 
-        for link in links:
-            href = link.get_attribute("href")
-            if href:
-                try:
-                    ids.append(int(href.split("/")[-1]))
-                except:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+
+            if r.status_code != 200:
+                print("BAD STATUS:", r.status_code)
+                continue
+
+            data = r.json()
+
+            if not data:
+                break
+
+            stop = False
+
+            for item in data:
+                eid = item.get("Id")
+
+                if not eid:
                     continue
 
-        ids = list(set(ids))
-        print("FOUND IDS:", ids)
+                if exists(eid):
+                    print("STOP — already in DB:", eid)
+                    stop = True
+                    break
+
+                ids.append(eid)
+
+            if stop:
+                break
+
+        print("NEW IDS:", ids)
         return ids
 
-    finally:
-        driver.quit()
+    except Exception as e:
+        print("FETCH ERROR:", e)
+        return []
 
-# =========================================
-# DOWNLOAD PDF (FIX 401)
-# =========================================
+# =========================
+# DOWNLOAD PDF (DIRECT)
+# =========================
 def download_pdf(entity_id):
     try:
-        url = f"https://jnportal.ujn.gov.rs/api/searchgrid/VAwardDecisions/get?skip=0&take=10"
+        pdf_url = f"{BASE_URL}/GetDocuments.ashx?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
-        r = requests.get(url, headers=HEADERS, timeout=30)
+        print("TRY:", pdf_url)
+
+        r = requests.get(pdf_url, headers=HEADERS, timeout=60)
 
         if r.status_code != 200:
-            print("API FAIL:", r.status_code)
+            print("FAIL:", r.status_code)
             return None
 
-        data = r.json()
+        if not r.content.startswith(b"%PDF"):
+            print("NOT PDF")
+            return None
 
-        # 🔍 nađi naš entity
-        for item in data:
-            if item.get("Id") == entity_id:
-                doc_id = item.get("DocumentId") or item.get("Id")
+        path = f"documents/{entity_id}.pdf"
 
-                if not doc_id:
-                    continue
+        with open(path, "wb") as f:
+            f.write(r.content)
 
-                pdf_url = f"https://jnportal.ujn.gov.rs/GetDocuments.ashx?entityId={doc_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
-
-                print("PDF URL:", pdf_url)
-
-                pdf = requests.get(pdf_url, headers=HEADERS, timeout=60)
-
-                if pdf.status_code != 200:
-                    continue
-
-                if not pdf.content.startswith(b"%PDF"):
-                    print("NOT PDF")
-                    continue
-
-                path = f"documents/{entity_id}.pdf"
-
-                with open(path, "wb") as f:
-                    f.write(pdf.content)
-
-                print("PDF SAVED")
-                return path
-
-        print("NOT FOUND:", entity_id)
-        return None
+        print("PDF SAVED:", entity_id)
+        return path
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
         return None
 
-# =========================================
+# =========================
 # OCR
-# =========================================
+# =========================
 def extract_text(pdf_path):
     text = ""
 
@@ -152,9 +143,9 @@ def extract_text(pdf_path):
 
     return text
 
-# =========================================
-# EXTRACT PRICES (FIX)
-# =========================================
+# =========================
+# EXTRACT PRICES
+# =========================
 def extract_prices(text):
     prices = []
 
@@ -186,9 +177,9 @@ def extract_prices(text):
 
     return prices
 
-# =========================================
-# ACCEPTED
-# =========================================
+# =========================
+# ACCEPTED DETECTION
+# =========================
 def find_accepted(text):
     lines = text.split("\n")
 
@@ -205,9 +196,9 @@ def find_accepted(text):
 
     return None
 
-# =========================================
+# =========================
 # ANALYZE
-# =========================================
+# =========================
 def analyze(prices, accepted):
     if len(prices) < 2:
         return None
@@ -223,9 +214,9 @@ def analyze(prices, accepted):
 
     return lowest, medijana, accepted, loss_low, loss_med
 
-# =========================================
+# =========================
 # SAVE
-# =========================================
+# =========================
 def save(eid, data):
     c.execute("""
     INSERT OR IGNORE INTO tenders
@@ -233,16 +224,14 @@ def save(eid, data):
     """, (eid, *data, datetime.now().isoformat()))
     conn.commit()
 
-def exists(eid):
-    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
-
-# =========================================
-# STATS (FIX)
-# =========================================
+# =========================
+# STATS
+# =========================
 def write_stats():
     c.execute("SELECT lowest, accepted FROM tenders")
     rows = c.fetchall()
+
+    kurs = 117.2
 
     if not rows:
         stats = {
@@ -256,7 +245,6 @@ def write_stats():
     else:
         total_lowest = sum(r[0] for r in rows)
         total_accepted = sum(r[1] for r in rows)
-        kurs = 117.2
 
         stats = {
             "broj_tendera": len(rows),
@@ -270,9 +258,9 @@ def write_stats():
     with open("stats.json", "w") as f:
         json.dump(stats, f, indent=2)
 
-# =========================================
+# =========================
 # LOSS DATA
-# =========================================
+# =========================
 def write_loss_data():
     c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
     rows = c.fetchall()
@@ -301,16 +289,13 @@ def write_loss_data():
     with open("loss-data.json", "w") as f:
         json.dump(data, f, indent=2)
 
-# =========================================
+# =========================
 # MAIN
-# =========================================
+# =========================
 def main():
     ids = fetch_entity_ids()
 
     for eid in ids:
-        if exists(eid):
-            continue
-
         print("PROCESS:", eid)
 
         pdf = download_pdf(eid)
