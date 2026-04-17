@@ -101,36 +101,27 @@ def download_pdf(tender_id):
         driver.get(url)
         time.sleep(5)
 
-        # 🔥 uzmi link ka dokumentima
-        links = driver.find_elements("css selector", "a[href*='GetDocuments']")
+        # 🔥 klik na plavu strelicu (otvara dokumente)
+        arrows = driver.find_elements("css selector", "button")
+
+        for a in arrows:
+            try:
+                if "document" in a.get_attribute("innerHTML").lower():
+                    a.click()
+                    break
+            except:
+                continue
+
+        time.sleep(3)
+
+        # 🔥 sada traži PDF linkove direktno u DOM-u
+        links = driver.find_elements("css selector", "a[href$='.pdf']")
 
         if not links:
-            print("NO DOCUMENT LINK:", tender_id)
+            print("NO PDF FOUND:", tender_id)
             return None
 
-        doc_url = links[0].get_attribute("href")
-        print("DOC URL:", doc_url)
-
-        # 🔥 uzmi sadržaj (NIJE JSON!)
-        r = requests.get(doc_url, headers=HEADERS, timeout=30)
-
-        if r.status_code != 200:
-            print("DOC FAIL:", r.status_code)
-            return None
-
-        content = r.text
-
-        # 🔥 traži PDF link unutar sadržaja
-        pdf_links = re.findall(r'href="([^"]+\.pdf)"', content, re.IGNORECASE)
-
-        if not pdf_links:
-            print("NO PDF LINK:", tender_id)
-            return None
-
-        pdf_url = pdf_links[0]
-
-        if not pdf_url.startswith("http"):
-            pdf_url = "https://jnportal.ujn.gov.rs" + pdf_url
+        pdf_url = links[0].get_attribute("href")
 
         print("PDF URL:", pdf_url)
 
@@ -138,10 +129,6 @@ def download_pdf(tender_id):
 
         if pdf.status_code != 200:
             print("PDF FAIL:", pdf.status_code)
-            return None
-
-        if not pdf.content.startswith(b"%PDF"):
-            print("INVALID PDF:", tender_id)
             return None
 
         path = f"documents/{tender_id}.pdf"
