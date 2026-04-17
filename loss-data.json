@@ -1,27 +1,9 @@
-def extract_prices(text):
-    prices = []
-
-    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-
-    for m in matches:
-        try:
-            num = float(m.replace(".", "").replace(",", "."))
-
-            # 🔥 КРИТИЧНИ ФИЛТЕРИ
-            if num < 100000:     # испод 100k није тендер
-                continue
-
-            if num > 10000000000:  # OCR грешка
-                continue
-
-            prices.append(num)
-
-        except:
-            pass
-
-    prices = list(set(prices))
-    prices.sort()
-
-    print("PRICES:", prices)
-
-    return prices
+{
+  "najbolja_ponuda": 0,
+  "medijana_ponuda": 0,
+  "prihvacena_ponuda": 0,
+  "broj_analiziranih": 0,
+  "gubitak_prema_najboljoj": 0,
+  "gubitak_prema_medijani": 0,
+  "valuta_kurs_eur": 117.2
+}
