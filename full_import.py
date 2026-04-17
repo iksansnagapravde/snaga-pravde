@@ -3,11 +3,15 @@ import re
 import json
 import statistics
 import sqlite3
+import time
 from datetime import datetime
 
 import requests
 from pdf2image import convert_from_path
 import pytesseract
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
@@ -45,25 +49,27 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH IDS (HTML, NO API, NO 401)
+# FETCH (SELENIUM - LAST 10)
 # =========================
 def fetch_entity_ids():
     ids = []
 
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=options)
+
     try:
-        url = "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora"
+        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        time.sleep(5)
 
-        r = requests.get(url, headers=HEADERS, timeout=30)
-
-        if r.status_code != 200:
-            print("BAD STATUS:", r.status_code)
-            return []
-
-        html = r.text
+        html = driver.page_source
 
         found = re.findall(r"/tender-eo/(\d+)", html)
 
-        print("FOUND RAW:", found[:10])  # 👈 DEBUG
+        print("FOUND RAW:", found[:10])
 
         found = found[:10]
 
@@ -76,15 +82,14 @@ def fetch_entity_ids():
         print("LAST 10 IDS:", ids)
         return ids
 
-    except Exception as e:
-        print("FETCH ERROR:", e)
-        return []
+    finally:
+        driver.quit()
+
 # =========================
-# DOWNLOAD PDF (FIX ENTITY ID)
+# DOWNLOAD PDF
 # =========================
 def download_pdf(tender_id):
     try:
-        # 1. otvori tender stranicu
         url = f"{BASE_URL}/tender-eo/{tender_id}"
 
         r = requests.get(url, headers=HEADERS, timeout=30)
@@ -95,7 +100,6 @@ def download_pdf(tender_id):
 
         html = r.text
 
-        # 2. izvuci pravi entityId (660xxx)
         match = re.search(r"entityId=(\d+)", html)
 
         if not match:
@@ -106,7 +110,6 @@ def download_pdf(tender_id):
 
         print("ENTITY:", entity_id)
 
-        # 3. pozovi get-documents API
         api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
         r2 = requests.get(api_url, headers=HEADERS, timeout=30)
@@ -174,8 +177,7 @@ def extract_text(pdf_path):
 def extract_prices(text):
     prices = []
 
-    pattern = r"\d{1,3}(?:\.\d{3})*,\d{2}"
-    matches = re.findall(pattern, text)
+    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
 
     for m in matches:
         try:
@@ -284,7 +286,7 @@ def write_stats():
         json.dump(stats, f, indent=2)
 
 # =========================
-# LOSS
+# LOSS DATA
 # =========================
 def write_loss_data():
     c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
