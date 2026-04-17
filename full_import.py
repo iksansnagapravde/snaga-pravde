@@ -101,6 +101,7 @@ def download_pdf(tender_id):
         driver.get(url)
         time.sleep(5)
 
+        # 🔥 uzmi link ka dokumentima
         links = driver.find_elements("css selector", "a[href*='GetDocuments']")
 
         if not links:
@@ -110,26 +111,26 @@ def download_pdf(tender_id):
         doc_url = links[0].get_attribute("href")
         print("DOC URL:", doc_url)
 
-        # 🔥 OVDE JE GLAVNI FIX
-        r = requests.get(doc_url, headers=HEADERS, timeout=30)
+        # 🔥 UZMI JSON PREKO SELENIUM (SESSION!)
+        driver.get(doc_url)
+        time.sleep(3)
 
-        if r.status_code != 200:
-            print("DOC FAIL:", r.status_code)
-            return None
+        content = driver.page_source
 
         try:
-            data = r.json()
+            data = json.loads(content)
         except:
             print("NOT JSON:", tender_id)
             return None
 
+        # 🔥 sada traži pravi PDF
         for doc in data:
             url = doc.get("DocumentUrl")
 
             if not url:
                 continue
 
-            full = BASE_URL + url
+            full = "https://jnportal.ujn.gov.rs" + url
 
             pdf = requests.get(full, headers=HEADERS, timeout=60)
 
