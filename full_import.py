@@ -63,7 +63,8 @@ def fetch_entity_ids():
 
         found = re.findall(r"/tender-eo/(\d+)", html)
 
-        # 🔥 само првих 10
+        print("FOUND RAW:", found[:10])  # 👈 DEBUG
+
         found = found[:10]
 
         for eid in found:
