@@ -51,45 +51,33 @@ def fetch_entity_ids():
     ids = []
 
     try:
-        for page in range(0, 50):
-            skip = page * 10
-            url = f"{BASE_URL}/odluke-o-dodeli-ugovora?skip={skip}"
+        url = "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora"
 
-            r = requests.get(url, headers=HEADERS, timeout=30)
+        r = requests.get(url, headers=HEADERS, timeout=30)
 
-            if r.status_code != 200:
-                print("BAD STATUS:", r.status_code)
-                continue
+        if r.status_code != 200:
+            print("BAD STATUS:", r.status_code)
+            return []
 
-            html = r.text
+        html = r.text
 
-            found = re.findall(r"/tender-eo/(\d+)", html)
+        found = re.findall(r"/tender-eo/(\d+)", html)
 
-            if not found:
-                break
+        # 🔥 само првих 10
+        found = found[:10]
 
-            stop = False
+        for eid in found:
+            eid = int(eid)
 
-            for eid in found:
-                eid = int(eid)
-
-                if exists(eid):
-                    print("STOP:", eid)
-                    stop = True
-                    break
-
+            if not exists(eid):
                 ids.append(eid)
 
-            if stop:
-                break
-
-        print("NEW IDS:", ids)
+        print("LAST 10 IDS:", ids)
         return ids
 
     except Exception as e:
         print("FETCH ERROR:", e)
         return []
-
 # =========================
 # DOWNLOAD PDF (FIX ENTITY ID)
 # =========================
