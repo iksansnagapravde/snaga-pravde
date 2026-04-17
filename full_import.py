@@ -118,53 +118,71 @@ def download_pdf(entity_id):
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Chrome(options=options)
 
     try:
-        url = f"https://jnportal.ujn.gov.rs/tender-eo/{entity_id}"
-        driver.get(url)
+        # 🔥 OTVORI STRANICU (da dobije cookies)
+        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        time.sleep(3)
 
-        time.sleep(5)
-
-        links = driver.find_elements(By.XPATH, "//a[contains(@href, 'GetDocuments')]")
-
-        if not links:
-            print("NO PDF LINK:", entity_id)
-            return None
-
-        pdf_url = links[0].get_attribute("href")
-
-        print("PDF:", pdf_url)
-
-        # 🔥 UZMI COOKIES IZ BROWSER-A
+        # 🔥 UZMI COOKIES
         cookies = driver.get_cookies()
 
         session = requests.Session()
         for cookie in cookies:
             session.cookies.set(cookie['name'], cookie['value'])
 
-        # 🔥 PRAVI DOWNLOAD (OVO JE KLJUČ)
-        r = session.get(pdf_url, timeout=60)
+        # 🔥 API POZIV (SADA RADI)
+        api_url = f"https://jnportal.ujn.gov.rs/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1&prefetch=true"
+
+        r = session.get(api_url, headers=HEADERS, timeout=30)
 
         if r.status_code != 200:
-            print("BAD STATUS:", r.status_code)
+            print("DOC API FAIL:", r.status_code)
             return None
 
-        if len(r.content) < 2000:
-            print("BAD PDF SIZE")
+        data = r.json()
+
+        if not data:
+            print("NO DOCUMENTS:", entity_id)
             return None
 
-        path = f"documents/{entity_id}.pdf"
+        # 🔥 NAĐI PDF
+        for doc in data:
+            name = doc.get("FileName", "").lower()
+            url = doc.get("DocumentUrl")
 
-        with open(path, "wb") as f:
-            f.write(r.content)
+            if not url:
+                continue
 
-        return path
+            if name.endswith(".pdf"):
+                full_url = "https://jnportal.ujn.gov.rs" + url
+
+                print("PDF:", name)
+
+                pdf = session.get(full_url, headers=HEADERS, timeout=60)
+
+                if pdf.status_code != 200:
+                    continue
+
+                if not pdf.content.startswith(b"%PDF"):
+                    print("NOT REAL PDF")
+                    continue
+
+                path = f"documents/{entity_id}.pdf"
+
+                with open(path, "wb") as f:
+                    f.write(pdf.content)
+
+                print("PDF SAVED")
+                return path
+
+        print("NO VALID PDF:", entity_id)
+        return None
 
     except Exception as e:
-        print("PDF ERROR:", e)
+        print("DOWNLOAD ERROR:", e)
 
     finally:
         driver.quit()
