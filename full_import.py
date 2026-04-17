@@ -16,23 +16,21 @@ import pytesseract
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
-# 🔥 HEADERS (OBAVEZNO)
+# ✅ STABILAN TOKEN (ključ za 401 problem)
+USER_TOKEN = "746fd3d9-a658-4559-aff6-ce28c6621268"
+
 HEADERS = {
-    "User-Agent": "Mozilla/5.0",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
     "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
     "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
     "Origin": "https://jnportal.ujn.gov.rs",
-    "Connection": "keep-alive"
+    "Connection": "keep-alive",
+    "X-Requested-With": "XMLHttpRequest"
 }
 
-# =========================================
-# FOLDER
-# =========================================
 os.makedirs("documents", exist_ok=True)
 
-# =========================================
-# DATABASE
-# =========================================
 conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
 
@@ -50,7 +48,7 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================================
-# FETCH IDS (SELENIUM)
+# FETCH IDS
 # =========================================
 def fetch_entity_ids():
     ids = []
@@ -74,7 +72,7 @@ def fetch_entity_ids():
                 try:
                     ids.append(int(href.split("/")[-1]))
                 except:
-                    pass
+                    continue
 
         ids = list(set(ids))
         print("FOUND IDS:", ids)
@@ -84,12 +82,13 @@ def fetch_entity_ids():
         driver.quit()
 
 # =========================================
-# DOWNLOAD PDF (API + COOKIES)
+# DOWNLOAD PDF (FIX 401)
 # =========================================
 def download_pdf(entity_id):
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Chrome(options=options)
 
@@ -103,7 +102,9 @@ def download_pdf(entity_id):
         for cookie in cookies:
             session.cookies.set(cookie['name'], cookie['value'])
 
-        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1&prefetch=true"
+        timestamp = datetime.utcnow().isoformat()
+
+        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1&userToken={USER_TOKEN}&timestamp={timestamp}&prefetch=true"
 
         r = session.get(api_url, headers=HEADERS, timeout=30)
 
@@ -127,15 +128,12 @@ def download_pdf(entity_id):
             if name.endswith(".pdf"):
                 full_url = BASE_URL + url
 
-                print("PDF:", name)
-
                 pdf = session.get(full_url, headers=HEADERS, timeout=60)
 
                 if pdf.status_code != 200:
                     continue
 
                 if not pdf.content.startswith(b"%PDF"):
-                    print("NOT REAL PDF")
                     continue
 
                 path = f"documents/{entity_id}.pdf"
@@ -143,7 +141,7 @@ def download_pdf(entity_id):
                 with open(path, "wb") as f:
                     f.write(pdf.content)
 
-                print("PDF SAVED")
+                print("PDF SAVED:", entity_id)
                 return path
 
         print("NO VALID PDF:", entity_id)
@@ -158,13 +156,13 @@ def download_pdf(entity_id):
     return None
 
 # =========================================
-# OCR TEXT
+# OCR
 # =========================================
 def extract_text(pdf_path):
     text = ""
 
     try:
-        images = convert_from_path(pdf_path, dpi=300, poppler_path="/usr/bin")
+        images = convert_from_path(pdf_path, dpi=300)
 
         print("IMAGES:", len(images))
 
@@ -178,37 +176,41 @@ def extract_text(pdf_path):
     return text
 
 # =========================================
-# EXTRACT PRICES
+# EXTRACT PRICES (FIX)
 # =========================================
 def extract_prices(text):
     prices = []
 
-    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+    pattern = r"\d{1,3}(?:\.\d{3})*,\d{2}"
+    matches = re.findall(pattern, text)
 
     for m in matches:
         try:
             num = float(m.replace(".", "").replace(",", "."))
 
-            if num < 10000:
+            if num < 500000:
                 continue
 
-            if num > 10000000000:
+            if num > 10_000_000_000:
                 continue
 
             prices.append(num)
 
-        except:
-            pass
+        except ValueError:
+            continue
 
-    prices = list(set(prices))
-    prices.sort()
+    prices = sorted(set(prices))
+
+    if prices:
+        max_price = max(prices)
+        prices = [p for p in prices if p > max_price * 0.2]
 
     print("PRICES:", prices)
 
     return prices
 
 # =========================================
-# FIND ACCEPTED
+# ACCEPTED
 # =========================================
 def find_accepted(text):
     lines = text.split("\n")
@@ -222,7 +224,7 @@ def find_accepted(text):
                         try:
                             return float(m[0].replace(".", "").replace(",", "."))
                         except:
-                            pass
+                            continue
 
     return None
 
@@ -239,14 +241,10 @@ def analyze(prices, accepted):
     if not accepted:
         accepted = prices[-1]
 
-    return lowest, medijana, accepted, accepted - lowest, accepted - medijana
+    loss_low = max(0, accepted - lowest)
+    loss_med = max(0, accepted - medijana)
 
-# =========================================
-# EXISTS
-# =========================================
-def exists(eid):
-    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
+    return lowest, medijana, accepted, loss_low, loss_med
 
 # =========================================
 # SAVE
@@ -258,21 +256,39 @@ def save(eid, data):
     """, (eid, *data, datetime.now().isoformat()))
     conn.commit()
 
+def exists(eid):
+    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
 # =========================================
-# STATS
+# STATS (FIX)
 # =========================================
 def write_stats():
-    c.execute("SELECT COUNT(*) FROM tenders")
-    count = c.fetchone()[0]
+    c.execute("SELECT lowest, accepted FROM tenders")
+    rows = c.fetchall()
 
-    stats = {
-        "broj_tendera": count,
-        "ukupna_vrednost": "0 RSD",
-        "ukupna_vrednost_eur": "0 EUR",
-        "broj_ugovora": count,
-        "ugovorena_vrednost": "0 RSD",
-        "ugovorena_vrednost_eur": "0 EUR"
-    }
+    if not rows:
+        stats = {
+            "broj_tendera": 0,
+            "ukupna_vrednost": "0 RSD",
+            "ukupna_vrednost_eur": "0 EUR",
+            "broj_ugovora": 0,
+            "ugovorena_vrednost": "0 RSD",
+            "ugovorena_vrednost_eur": "0 EUR"
+        }
+    else:
+        total_lowest = sum(r[0] for r in rows)
+        total_accepted = sum(r[1] for r in rows)
+        kurs = 117.2
+
+        stats = {
+            "broj_tendera": len(rows),
+            "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
+            "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
+            "broj_ugovora": len(rows),
+            "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
+            "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
+        }
 
     with open("stats.json", "w") as f:
         json.dump(stats, f, indent=2)
@@ -314,8 +330,6 @@ def write_loss_data():
 def main():
     ids = fetch_entity_ids()
 
-    print("IDS:", ids)
-
     for eid in ids:
         if exists(eid):
             continue
@@ -327,9 +341,6 @@ def main():
             continue
 
         text = extract_text(pdf)
-
-        print("TEXT LENGTH:", len(text))
-        print("----------")
 
         if len(text) < 100:
             continue
