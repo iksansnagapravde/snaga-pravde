@@ -85,55 +85,36 @@ def fetch_entity_ids():
 # DOWNLOAD PDF (FIX 401)
 # =========================================
 def download_pdf(entity_id):
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    driver = webdriver.Chrome(options=options)
-
     try:
-        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(3)
+        url = f"https://jnportal.ujn.gov.rs/api/searchgrid/VAwardDecisions/get?skip=0&take=10"
 
-        cookies = driver.get_cookies()
-
-        session = requests.Session()
-        for cookie in cookies:
-            session.cookies.set(cookie['name'], cookie['value'])
-
-        timestamp = datetime.utcnow().isoformat()
-
-        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1&userToken={USER_TOKEN}&timestamp={timestamp}&prefetch=true"
-
-        r = session.get(api_url, headers=HEADERS, timeout=30)
+        r = requests.get(url, headers=HEADERS, timeout=30)
 
         if r.status_code != 200:
-            print("DOC API FAIL:", r.status_code)
+            print("API FAIL:", r.status_code)
             return None
 
         data = r.json()
 
-        if not data:
-            print("NO DOCUMENTS:", entity_id)
-            return None
+        # 🔍 nađi naš entity
+        for item in data:
+            if item.get("Id") == entity_id:
+                doc_id = item.get("DocumentId") or item.get("Id")
 
-        for doc in data:
-            name = doc.get("FileName", "").lower()
-            url = doc.get("DocumentUrl")
+                if not doc_id:
+                    continue
 
-            if not url:
-                continue
+                pdf_url = f"https://jnportal.ujn.gov.rs/GetDocuments.ashx?entityId={doc_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
-            if name.endswith(".pdf"):
-                full_url = BASE_URL + url
+                print("PDF URL:", pdf_url)
 
-                pdf = session.get(full_url, headers=HEADERS, timeout=60)
+                pdf = requests.get(pdf_url, headers=HEADERS, timeout=60)
 
                 if pdf.status_code != 200:
                     continue
 
                 if not pdf.content.startswith(b"%PDF"):
+                    print("NOT PDF")
                     continue
 
                 path = f"documents/{entity_id}.pdf"
@@ -141,19 +122,15 @@ def download_pdf(entity_id):
                 with open(path, "wb") as f:
                     f.write(pdf.content)
 
-                print("PDF SAVED:", entity_id)
+                print("PDF SAVED")
                 return path
 
-        print("NO VALID PDF:", entity_id)
+        print("NOT FOUND:", entity_id)
         return None
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
-
-    finally:
-        driver.quit()
-
-    return None
+        return None
 
 # =========================================
 # OCR
