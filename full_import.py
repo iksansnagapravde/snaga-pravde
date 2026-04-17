@@ -68,6 +68,7 @@ def fetch_entity_ids():
         html = driver.page_source
 
         found = re.findall(r"/tender-eo/(\d+)", html)
+
         found = list(dict.fromkeys(found))  # ukloni duplikate
 
         print("FOUND RAW:", found[:10])
@@ -86,65 +87,74 @@ def fetch_entity_ids():
         driver.quit()
 
 # =========================
-# DOWNLOAD PDF (FINAL FIX)
+# DOWNLOAD PDF (FIXED)
 # =========================
 def download_pdf(tender_id):
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    driver = webdriver.Chrome(options=options)
-
     try:
-        url = f"https://jnportal.ujn.gov.rs/tender-eo/{tender_id}"
-        driver.get(url)
-        time.sleep(5)
+        url = f"{BASE_URL}/tender-eo/{tender_id}"
 
-        # 🔥 klik na plavu strelicu (otvara dokumente)
-        arrows = driver.find_elements("css selector", "button")
+        r = requests.get(url, headers=HEADERS, timeout=30)
 
-        for a in arrows:
-            try:
-                if "document" in a.get_attribute("innerHTML").lower():
-                    a.click()
-                    break
-            except:
+        if r.status_code != 200:
+            print("TENDER FAIL:", r.status_code)
+            return None
+
+        html = r.text
+
+        # ✅ PRAVILNO
+        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
+
+        if not match:
+            print("NO ENTITY ID:", tender_id)
+            return None
+
+        entity_id = match.group(1)
+
+        print("ENTITY:", entity_id)
+
+        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+
+        r2 = requests.get(api_url, headers=HEADERS, timeout=30)
+
+        if r2.status_code != 200:
+            print("DOC FAIL:", r2.status_code)
+            return None
+
+        try:
+            data = r2.json()
+        except:
+            print("NOT JSON")
+            return None
+
+        for doc in data:
+            url = doc.get("DocumentUrl")
+            if not url:
                 continue
 
-        time.sleep(3)
+            full = BASE_URL + url
 
-        # 🔥 sada traži PDF linkove direktno u DOM-u
-        links = driver.find_elements("css selector", "a[href$='.pdf']")
+            pdf = requests.get(full, headers=HEADERS, timeout=60)
 
-        if not links:
-            print("NO PDF FOUND:", tender_id)
-            return None
+            if pdf.status_code != 200:
+                continue
 
-        pdf_url = links[0].get_attribute("href")
+            if not pdf.content.startswith(b"%PDF"):
+                continue
 
-        print("PDF URL:", pdf_url)
+            path = f"documents/{tender_id}.pdf"
 
-        pdf = requests.get(pdf_url, headers=HEADERS, timeout=60)
+            with open(path, "wb") as f:
+                f.write(pdf.content)
 
-        if pdf.status_code != 200:
-            print("PDF FAIL:", pdf.status_code)
-            return None
+            print("PDF SAVED:", tender_id)
+            return path
 
-        path = f"documents/{tender_id}.pdf"
-
-        with open(path, "wb") as f:
-            f.write(pdf.content)
-
-        print("PDF SAVED:", tender_id)
-        return path
+        print("NO PDF:", tender_id)
+        return None
 
     except Exception as e:
         print("ERROR:", e)
         return None
-
-    finally:
-        driver.quit()
 
 # =========================
 # OCR
@@ -154,7 +164,6 @@ def extract_text(pdf_path):
 
     try:
         images = convert_from_path(pdf_path, dpi=300)
-
         print("IMAGES:", len(images))
 
         for img in images:
@@ -167,7 +176,7 @@ def extract_text(pdf_path):
     return text
 
 # =========================
-# PRICES
+# PRICES (STABILNO)
 # =========================
 def extract_prices(text):
     prices = []
@@ -181,7 +190,7 @@ def extract_prices(text):
             if num < 500000:
                 continue
 
-            if num > 10_000_000_000:
+            if num > 1_000_000_000:
                 continue
 
             prices.append(num)
@@ -195,7 +204,7 @@ def extract_prices(text):
         max_price = max(prices)
         prices = [p for p in prices if p > max_price * 0.2]
 
-    print("PRICES:", prices)
+    print("FINAL PRICES:", prices)
 
     return prices
 
@@ -226,6 +235,7 @@ def analyze(prices, accepted):
         return None
 
     lowest = min(prices)
+
     medijana = statistics.median(prices) if len(prices) > 1 else lowest
 
     if not accepted:
