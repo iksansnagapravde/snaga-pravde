@@ -49,7 +49,7 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH (SELENIUM)
+# FETCH
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -68,9 +68,7 @@ def fetch_entity_ids():
         html = driver.page_source
 
         found = re.findall(r"/tender-eo/(\d+)", html)
-
-        # 🔥 ukloni duplikate
-        found = list(dict.fromkeys(found))
+        found = list(dict.fromkeys(found))  # ukloni duplikate
 
         print("FOUND RAW:", found[:10])
 
@@ -88,7 +86,7 @@ def fetch_entity_ids():
         driver.quit()
 
 # =========================
-# DOWNLOAD PDF (SELENIUM FIX)
+# DOWNLOAD PDF (FINAL FIX)
 # =========================
 def download_pdf(tender_id):
     options = Options()
@@ -103,7 +101,6 @@ def download_pdf(tender_id):
         driver.get(url)
         time.sleep(5)
 
-        # 🔥 klik na dugme za dokumente (plava strelica)
         links = driver.find_elements("css selector", "a[href*='GetDocuments']")
 
         if not links:
@@ -111,26 +108,47 @@ def download_pdf(tender_id):
             return None
 
         doc_url = links[0].get_attribute("href")
-
         print("DOC URL:", doc_url)
 
-        pdf = requests.get(doc_url, headers=HEADERS, timeout=60)
+        # 🔥 OVDE JE GLAVNI FIX
+        r = requests.get(doc_url, headers=HEADERS, timeout=30)
 
-        if pdf.status_code != 200:
-            print("PDF FAIL:", pdf.status_code)
+        if r.status_code != 200:
+            print("DOC FAIL:", r.status_code)
             return None
 
-        if not pdf.content.startswith(b"%PDF"):
-            print("NOT PDF:", tender_id)
+        try:
+            data = r.json()
+        except:
+            print("NOT JSON:", tender_id)
             return None
 
-        path = f"documents/{tender_id}.pdf"
+        for doc in data:
+            url = doc.get("DocumentUrl")
 
-        with open(path, "wb") as f:
-            f.write(pdf.content)
+            if not url:
+                continue
 
-        print("PDF SAVED:", tender_id)
-        return path
+            full = BASE_URL + url
+
+            pdf = requests.get(full, headers=HEADERS, timeout=60)
+
+            if pdf.status_code != 200:
+                continue
+
+            if not pdf.content.startswith(b"%PDF"):
+                continue
+
+            path = f"documents/{tender_id}.pdf"
+
+            with open(path, "wb") as f:
+                f.write(pdf.content)
+
+            print("PDF SAVED:", tender_id)
+            return path
+
+        print("NO PDF FOUND:", tender_id)
+        return None
 
     except Exception as e:
         print("ERROR:", e)
@@ -138,6 +156,27 @@ def download_pdf(tender_id):
 
     finally:
         driver.quit()
+
+# =========================
+# OCR
+# =========================
+def extract_text(pdf_path):
+    text = ""
+
+    try:
+        images = convert_from_path(pdf_path, dpi=300)
+
+        print("IMAGES:", len(images))
+
+        for img in images:
+            t = pytesseract.image_to_string(img, config="--psm 6")
+            text += t + "\n"
+
+    except Exception as e:
+        print("OCR ERROR:", e)
+
+    return text
+
 # =========================
 # PRICES
 # =========================
