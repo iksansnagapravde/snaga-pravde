@@ -1,30 +1,8 @@
-def write_stats():
-    c.execute("SELECT lowest, accepted FROM tenders")
-    rows = c.fetchall()
-
-    if not rows:
-        stats = {
-            "broj_tendera": 0,
-            "ukupna_vrednost": "0 RSD",
-            "ukupna_vrednost_eur": "0 EUR",
-            "broj_ugovora": 0,
-            "ugovorena_vrednost": "0 RSD",
-            "ugovorena_vrednost_eur": "0 EUR"
-        }
-    else:
-        total_lowest = sum(r[0] for r in rows if r[0])
-        total_accepted = sum(r[1] for r in rows if r[1])
-
-        kurs = 117.2
-
-        stats = {
-            "broj_tendera": len(rows),
-            "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
-            "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
-            "broj_ugovora": len(rows),
-            "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
-            "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
-        }
-
-    with open("stats.json", "w") as f:
-        json.dump(stats, f, indent=2)
+{
+  "broj_tendera": 0,
+  "ukupna_vrednost": "0 RSD",
+  "ukupna_vrednost_eur": "0 EUR",
+  "broj_ugovora": 0,
+  "ugovorena_vrednost": "0 RSD",
+  "ugovorena_vrednost_eur": "0 EUR"
+}
