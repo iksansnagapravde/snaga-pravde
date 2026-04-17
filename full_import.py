@@ -49,7 +49,7 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH (SELENIUM - LAST 10)
+# FETCH
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -69,8 +69,7 @@ def fetch_entity_ids():
 
         found = re.findall(r"/tender-eo/(\d+)", html)
 
-        # 🔥 ukloni duplikate
-        found = list(dict.fromkeys(found))
+        found = list(dict.fromkeys(found))  # ukloni duplikate
 
         print("FOUND RAW:", found[:10])
 
@@ -78,7 +77,6 @@ def fetch_entity_ids():
 
         for eid in found:
             eid = int(eid)
-
             if not exists(eid):
                 ids.append(eid)
 
@@ -89,7 +87,7 @@ def fetch_entity_ids():
         driver.quit()
 
 # =========================
-# DOWNLOAD PDF
+# DOWNLOAD PDF (FIXED)
 # =========================
 def download_pdf(tender_id):
     try:
@@ -103,16 +101,16 @@ def download_pdf(tender_id):
 
         html = r.text
 
-        # 🔥 pravi entityId iz JS
+        # ✅ PRAVILNO
         match = re.search(r'"entityId"\s*:\s*(\d+)', html)
 
-        if not matches:
+        if not match:
             print("NO ENTITY ID:", tender_id)
             return None
 
-        entity_id = matches[0]
+        entity_id = match.group(1)
 
-        print("REAL ENTITY:", entity_id)
+        print("ENTITY:", entity_id)
 
         api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
@@ -125,12 +123,11 @@ def download_pdf(tender_id):
         try:
             data = r2.json()
         except:
-            print("NOT JSON RESPONSE")
+            print("NOT JSON")
             return None
 
         for doc in data:
             url = doc.get("DocumentUrl")
-
             if not url:
                 continue
 
@@ -167,7 +164,6 @@ def extract_text(pdf_path):
 
     try:
         images = convert_from_path(pdf_path, dpi=300)
-
         print("IMAGES:", len(images))
 
         for img in images:
@@ -180,7 +176,7 @@ def extract_text(pdf_path):
     return text
 
 # =========================
-# PRICES (FIXED)
+# PRICES (STABILNO)
 # =========================
 def extract_prices(text):
     prices = []
@@ -191,7 +187,6 @@ def extract_prices(text):
         try:
             num = float(m.replace(".", "").replace(",", "."))
 
-            # 🔥 minimalna realna cena tendera
             if num < 500000:
                 continue
 
@@ -205,7 +200,6 @@ def extract_prices(text):
 
     prices = sorted(set(prices))
 
-    # 🔥 ključni filter: ukloni ekstremno male u odnosu na najveću
     if prices:
         max_price = max(prices)
         prices = [p for p in prices if p > max_price * 0.2]
@@ -213,6 +207,7 @@ def extract_prices(text):
     print("FINAL PRICES:", prices)
 
     return prices
+
 # =========================
 # ACCEPTED
 # =========================
@@ -241,10 +236,7 @@ def analyze(prices, accepted):
 
     lowest = min(prices)
 
-    if len(prices) >= 2:
-        medijana = statistics.median(prices)
-    else:
-        medijana = lowest
+    medijana = statistics.median(prices) if len(prices) > 1 else lowest
 
     if not accepted:
         accepted = prices[-1]
@@ -265,7 +257,7 @@ def save(eid, data):
     conn.commit()
 
 # =========================
-# STATS (FIXED)
+# STATS
 # =========================
 def write_stats():
     c.execute("SELECT lowest, accepted FROM tenders")
@@ -273,8 +265,8 @@ def write_stats():
 
     kurs = 117.2
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 1000000]
-    valid_accepted = [r[1] for r in rows if r[1] and r[1] > 1000000]
+    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
+    valid_accepted = [r[1] for r in rows if r[1] and r[1] > 500000]
 
     total_lowest = sum(valid_lowest) if valid_lowest else 0
     total_accepted = sum(valid_accepted) if valid_accepted else 0
@@ -292,13 +284,13 @@ def write_stats():
         json.dump(stats, f, indent=2)
 
 # =========================
-# LOSS DATA (FIXED)
+# LOSS DATA
 # =========================
 def write_loss_data():
     c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
     rows = c.fetchall()
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 1000000]
+    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
 
     data = {
         "najbolja_ponuda": round(sum(valid_lowest), 2) if valid_lowest else 0,
