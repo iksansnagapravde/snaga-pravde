@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "s-rs-vesti-drustvo-akademski-plenum-falsifikovanje-glasanja-",
-      "title": "Akademski plenum: Uhapsiti sve učesnike falsifikovanja glasanja na Medicinskom fakultetu",
-      "url": "https://www.danas.rs/vesti/drustvo/akademski-plenum-falsifikovanje-glasanja/",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T15:54:59+00:00",
-      "time": "15:54",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 126
-    },
-    {
       "id": "crna-gora-njemacka-droga-organizovani-kriminal-33733783-html",
       "title": "Šta je poznato o balkanskom narko kartelu čiji su članovi uhapšeni u akciji Europola u Crnoj Gori?",
       "url": "https://www.slobodnaevropa.org/a/kokain-hapsenja-crna-gora-njemacka-droga-organizovani-kriminal-/33733783.html",
@@ -83,6 +69,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "9654-uhapsena-osoba-na-merdaru-zbog-dogadaja-u-banjskoj-vest",
+      "title": "Uhapšena jedna osoba na Merdaru zbog navodne umešanosti u događaje u Banjskoj",
+      "url": "https://www.euronews.rs/srbija/aktuelno/219654/uhapsena-osoba-na-merdaru-zbog-dogadaja-u-banjskoj/vest",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T20:47:00+00:00",
+      "time": "20:47",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "vesti-dzeljalj-sveclja-stefan-radulovic-banjska-osumnjiceni-",
@@ -281,6 +281,20 @@
       "priority": 72
     },
     {
+      "id": "og-sumnje-da-je-ucestvovao-u-teroristickom-napadu-u-banjskoj",
+      "title": "Priveden zbog sumnje da je učestvovao u terorističkom napadu u Banjskoj",
+      "url": "https://beta.rs/content/243185-priveden-zbog-sumnje-da-je-ucestvovao-u-teroristickom-napadu-u-banjskoj",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T21:10:09+00:00",
+      "time": "21:10",
+      "source": "Beta",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "-falsifikovanje-diploma-ekonomskog-fakulteta-u-beogradu-html",
       "title": "Ухапшено шесторо осумњичених за фалсификовање диплома Економског факултета у Београду",
       "url": "https://www.rts.rs/vesti/hronika/5928681/uhapseno-sestoro-osumnjicenih-za-falsifikovanje-diploma-ekonomskog-fakulteta-u-beogradu.html",
@@ -344,20 +358,6 @@
       "datetime": "2026-04-17T14:31:31+00:00",
       "time": "14:31",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-hronika-9971575-ometanje-pravde-beograd-zadrzavanje-48-sati",
-      "title": "OGLASILO SE TUŽILAŠTVO ZBOG JEZIVE SCENE U PALATI PRAVDE: Muškarac uvredama i pretnjama ometao krivični postupak, određeno mu zadržđavanje",
-      "url": "https://www.kurir.rs/crna-hronika/9971575/ometanje-pravde-beograd-zadrzavanje-48-sati",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:07:09+00:00",
-      "time": "14:07",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -491,18 +491,18 @@
       "priority": 28
     },
     {
-      "id": "2-radojevic-peci-zloupotrebljava-decu-u-politicke-svrhe-vest",
-      "title": "Gradonačelnik Severne Mitrovice: Peci zloupotrebljava decu u političke svrhe posetom studenata spomen-ploči",
-      "url": "https://www.euronews.rs/srbija/politika/219312/radojevic-peci-zloupotrebljava-decu-u-politicke-svrhe/vest",
-      "date": "2026-04-15",
-      "datetime": "2026-04-15T21:11:00+00:00",
-      "time": "21:11",
-      "source": "Euronews Serbia",
-      "category": "Злоупотребе",
+      "id": "-vodeni-topovi-sukob-sa-policijom-i-hapsenja-tokom-protesta-",
+      "title": "Haos na ulicama Tirane: Vodeni topovi, sukob sa policijom i hapšenja tokom protesta",
+      "url": "https://nova.rs/vesti/svet/haos-na-ulicama-tirane-vodeni-topovi-sukob-sa-policijom-i-hapsenja-tokom-protesta/",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T21:02:06+00:00",
+      "time": "21:02",
+      "source": "Nova",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 28
+      "priority": 26
     },
     {
       "id": "ttps-n1info-rs-region-protest-tirana-albanija-17-april-2026-",
@@ -645,18 +645,32 @@
       "priority": 24
     },
     {
-      "id": "ujemo-koje-su-sve-estradne-zvezde-bile-zrtve-nasilja-9ky0d5v",
-      "title": "Istražujemo: Koje su sve estradne zvezde bile žrtve nasilja,  a koje su optuživali za zlostavljanje najbližih",
-      "url": "https://www.blic.rs/vesti/drustvo/blic-uzivo-istrazujemo-koje-su-sve-estradne-zvezde-bile-zrtve-nasilja/9ky0d5v",
+      "id": "-planeta-9971877-papa-lav-xiv-kamerun-korupcija-mladi-afrika",
+      "title": "PAPA LAV XIV U KAMERUNU POZVAO MLADE DA OSTANU U ZEMLJI I BORE SE PROTIV KORUPCIJE: Afrika se suočava s odlaskom mladih i siromaštvom",
+      "url": "https://www.kurir.rs/planeta/9971877/papa-lav-xiv-kamerun-korupcija-mladi-afrika",
       "date": "2026-04-17",
-      "datetime": "2026-04-17T14:58:12+00:00",
-      "time": "14:58",
-      "source": "Blic",
-      "category": "Насиље у породици",
+      "datetime": "2026-04-17T20:22:37+00:00",
+      "time": "20:22",
+      "source": "Kurir",
+      "category": "Социјална угроженост",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "-skriveni-zagadjivac-u-kuci-koji-svakodnevno-udisemo-2cwkq9m",
+      "title": "Nevidljiva pretnja u zatvorenim prostorima: Ova čestica je prisutna svuda, a deca najugroženija",
+      "url": "https://www.blic.rs/slobodno-vreme/skriveni-zagadjivac-u-kuci-koji-svakodnevno-udisemo/2cwkq9m",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T21:28:00+00:00",
+      "time": "21:28",
+      "source": "Blic",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "ni-park-pa-pao-sa-litice-sad-mora-da-plati-4-miliona-lj0bbpr",
@@ -681,20 +695,6 @@
       "time": "18:08",
       "source": "Kurir",
       "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "1-vojimir-carapic-kljucni-projekti-za-decu-i-socijalnu-pomoc",
-      "title": "Rezultati zalaganja lokalne vlasti: U Kuršumliji višemilionske investicije za decu i unapređenje socijalne zaštite",
-      "url": "https://www.kurir.rs/vesti/drustvo/9971711/vojimir-carapic-kljucni-projekti-za-decu-i-socijalnu-pomoc",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T15:56:04+00:00",
-      "time": "15:56",
-      "source": "Kurir",
-      "category": "Социјална права",
       "summary": "",
       "breaking": false,
       "alert": false,
