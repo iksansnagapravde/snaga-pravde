@@ -42,6 +42,7 @@ def exists(eid):
     c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
 
+
 # =========================
 # FETCH IDS
 # =========================
@@ -79,34 +80,15 @@ def fetch_entity_ids():
     finally:
         driver.quit()
 
+
 # =========================
-# DOWNLOAD PDF (FINAL FIX)
+# DOWNLOAD PDF (FIX)
 # =========================
 def download_pdf(tender_id):
     try:
-        url = f"{BASE_URL}/tender-eo/{tender_id}"
-
-        # 🔥 Selenium da vidi JS
-        options = Options()
-        options.add_argument("--headless=new")
-        options.add_argument("--no-sandbox")
-        options.add_argument("--disable-dev-shm-usage")
-
-        driver = webdriver.Chrome(options=options)
-        driver.get(url)
-        time.sleep(5)
-
-        html = driver.page_source
-        driver.quit()
-
-        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
-
-        if not match:
-            print("NO ENTITY ID:", tender_id)
-            return None
-
-        entity_id = match.group(1)
-        print("ENTITY:", entity_id)
+        # 🔥 koristimo direktno tender_id
+        entity_id = tender_id
+        print("ENTITY (DIRECT):", entity_id)
 
         api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
@@ -119,11 +101,12 @@ def download_pdf(tender_id):
         try:
             data = r2.json()
         except:
-            print("NOT JSON")
+            print("NOT JSON:", tender_id)
             return None
 
         for doc in data:
             url = doc.get("DocumentUrl")
+
             if not url:
                 continue
 
@@ -152,6 +135,7 @@ def download_pdf(tender_id):
         print("ERROR:", e)
         return None
 
+
 # =========================
 # OCR
 # =========================
@@ -170,6 +154,7 @@ def extract_text(pdf_path):
         print("OCR ERROR:", e)
 
     return text
+
 
 # =========================
 # PRICES
@@ -204,6 +189,7 @@ def extract_prices(text):
 
     return prices
 
+
 # =========================
 # ACCEPTED
 # =========================
@@ -223,6 +209,7 @@ def find_accepted(text):
 
     return None
 
+
 # =========================
 # ANALYZE
 # =========================
@@ -241,6 +228,7 @@ def analyze(prices, accepted):
 
     return lowest, medijana, accepted, loss_low, loss_med
 
+
 # =========================
 # SAVE
 # =========================
@@ -250,6 +238,7 @@ def save(eid, data):
     VALUES (?, ?, ?, ?, ?, ?, ?)
     """, (eid, *data, datetime.now().isoformat()))
     conn.commit()
+
 
 # =========================
 # STATS
@@ -278,6 +267,7 @@ def write_stats():
     with open("stats.json", "w") as f:
         json.dump(stats, f, indent=2)
 
+
 # =========================
 # LOSS
 # =========================
@@ -299,6 +289,7 @@ def write_loss_data():
 
     with open("loss-data.json", "w") as f:
         json.dump(data, f, indent=2)
+
 
 # =========================
 # MAIN
@@ -330,6 +321,7 @@ def main():
     write_loss_data()
 
     print("DONE")
+
 
 if __name__ == "__main__":
     main()
