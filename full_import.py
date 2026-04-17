@@ -49,7 +49,7 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH
+# FETCH (SELENIUM - LAST 10)
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -69,14 +69,13 @@ def fetch_entity_ids():
 
         found = re.findall(r"/tender-eo/(\d+)", html)
 
-        found = list(dict.fromkeys(found))  # ukloni duplikate
-
         print("FOUND RAW:", found[:10])
 
         found = found[:10]
 
         for eid in found:
             eid = int(eid)
+
             if not exists(eid):
                 ids.append(eid)
 
@@ -87,11 +86,11 @@ def fetch_entity_ids():
         driver.quit()
 
 # =========================
-# DOWNLOAD PDF (FIXED)
+# DOWNLOAD PDF
 # =========================
 def download_pdf(tender_id):
     try:
-        url = f"{BASE_URL}/tender-eo/{tender_id}"
+        url = f"https://jnportal.ujn.gov.rs/tender-eo/{tender_id}"
 
         r = requests.get(url, headers=HEADERS, timeout=30)
 
@@ -101,18 +100,18 @@ def download_pdf(tender_id):
 
         html = r.text
 
-        # ✅ PRAVILNO
-        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
+        # 🔥 прави entityId (из JS data)
+        matches = re.findall(r'"entityId":\s*(\d+)', html)
 
-        if not match:
+        if not matches:
             print("NO ENTITY ID:", tender_id)
             return None
 
-        entity_id = match.group(1)
+        entity_id = matches[0]
 
-        print("ENTITY:", entity_id)
+        print("REAL ENTITY:", entity_id)
 
-        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+        api_url = f"https://jnportal.ujn.gov.rs/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
         r2 = requests.get(api_url, headers=HEADERS, timeout=30)
 
@@ -123,15 +122,16 @@ def download_pdf(tender_id):
         try:
             data = r2.json()
         except:
-            print("NOT JSON")
+            print("NOT JSON RESPONSE")
             return None
 
         for doc in data:
             url = doc.get("DocumentUrl")
+
             if not url:
                 continue
 
-            full = BASE_URL + url
+            full = "https://jnportal.ujn.gov.rs" + url
 
             pdf = requests.get(full, headers=HEADERS, timeout=60)
 
@@ -155,7 +155,6 @@ def download_pdf(tender_id):
     except Exception as e:
         print("ERROR:", e)
         return None
-
 # =========================
 # OCR
 # =========================
@@ -164,6 +163,7 @@ def extract_text(pdf_path):
 
     try:
         images = convert_from_path(pdf_path, dpi=300)
+
         print("IMAGES:", len(images))
 
         for img in images:
@@ -176,7 +176,7 @@ def extract_text(pdf_path):
     return text
 
 # =========================
-# PRICES (STABILNO)
+# PRICES
 # =========================
 def extract_prices(text):
     prices = []
@@ -190,7 +190,7 @@ def extract_prices(text):
             if num < 500000:
                 continue
 
-            if num > 1_000_000_000:
+            if num > 10_000_000_000:
                 continue
 
             prices.append(num)
@@ -204,7 +204,7 @@ def extract_prices(text):
         max_price = max(prices)
         prices = [p for p in prices if p > max_price * 0.2]
 
-    print("FINAL PRICES:", prices)
+    print("PRICES:", prices)
 
     return prices
 
@@ -231,12 +231,11 @@ def find_accepted(text):
 # ANALYZE
 # =========================
 def analyze(prices, accepted):
-    if len(prices) < 1:
+    if len(prices) < 2:
         return None
 
     lowest = min(prices)
-
-    medijana = statistics.median(prices) if len(prices) > 1 else lowest
+    medijana = statistics.median(prices)
 
     if not accepted:
         accepted = prices[-1]
@@ -265,20 +264,27 @@ def write_stats():
 
     kurs = 117.2
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
-    valid_accepted = [r[1] for r in rows if r[1] and r[1] > 500000]
+    if not rows:
+        stats = {
+            "broj_tendera": 0,
+            "ukupna_vrednost": "0 RSD",
+            "ukupna_vrednost_eur": "0 EUR",
+            "broj_ugovora": 0,
+            "ugovorena_vrednost": "0 RSD",
+            "ugovorena_vrednost_eur": "0 EUR"
+        }
+    else:
+        total_lowest = sum(r[0] for r in rows)
+        total_accepted = sum(r[1] for r in rows)
 
-    total_lowest = sum(valid_lowest) if valid_lowest else 0
-    total_accepted = sum(valid_accepted) if valid_accepted else 0
-
-    stats = {
-        "broj_tendera": len(rows),
-        "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
-        "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
-        "broj_ugovora": len(rows),
-        "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
-        "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
-    }
+        stats = {
+            "broj_tendera": len(rows),
+            "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
+            "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
+            "broj_ugovora": len(rows),
+            "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
+            "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
+        }
 
     with open("stats.json", "w") as f:
         json.dump(stats, f, indent=2)
@@ -290,17 +296,26 @@ def write_loss_data():
     c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
     rows = c.fetchall()
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
-
-    data = {
-        "najbolja_ponuda": round(sum(valid_lowest), 2) if valid_lowest else 0,
-        "medijana_ponuda": round(sum(r[1] for r in rows), 2) if rows else 0,
-        "prihvacena_ponuda": round(sum(r[2] for r in rows), 2) if rows else 0,
-        "broj_analiziranih": len(rows),
-        "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2) if rows else 0,
-        "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2) if rows else 0,
-        "valuta_kurs_eur": 117.2
-    }
+    if not rows:
+        data = {
+            "najbolja_ponuda": 0,
+            "medijana_ponuda": 0,
+            "prihvacena_ponuda": 0,
+            "broj_analiziranih": 0,
+            "gubitak_prema_najboljoj": 0,
+            "gubitak_prema_medijani": 0,
+            "valuta_kurs_eur": 117.2
+        }
+    else:
+        data = {
+            "najbolja_ponuda": round(sum(r[0] for r in rows), 2),
+            "medijana_ponuda": round(sum(r[1] for r in rows), 2),
+            "prihvacena_ponuda": round(sum(r[2] for r in rows), 2),
+            "broj_analiziranih": len(rows),
+            "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2),
+            "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2),
+            "valuta_kurs_eur": 117.2
+        }
 
     with open("loss-data.json", "w") as f:
         json.dump(data, f, indent=2)
