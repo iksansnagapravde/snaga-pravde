@@ -191,8 +191,8 @@ def extract_prices(text):
         try:
             num = float(m.replace(".", "").replace(",", "."))
 
-            # 🔥 ukloni OCR smeće (19.12 itd)
-            if num < 1000000:
+            # 🔥 minimalna realna cena tendera
+            if num < 500000:
                 continue
 
             if num > 1_000_000_000:
@@ -205,15 +205,14 @@ def extract_prices(text):
 
     prices = sorted(set(prices))
 
-    # 🔥 ukloni male u odnosu na max
+    # 🔥 ključni filter: ukloni ekstremno male u odnosu na najveću
     if prices:
         max_price = max(prices)
-        prices = [p for p in prices if p > max_price * 0.3]
+        prices = [p for p in prices if p > max_price * 0.2]
 
-    print("CLEAN PRICES:", prices)
+    print("FINAL PRICES:", prices)
 
     return prices
-
 # =========================
 # ACCEPTED
 # =========================
