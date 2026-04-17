@@ -104,7 +104,7 @@ def download_pdf(tender_id):
         html = r.text
 
         # 🔥 pravi entityId iz JS
-        matches = re.findall(r'"entityId":\s*(\d+)', html)
+        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
 
         if not matches:
             print("NO ENTITY ID:", tender_id)
