@@ -155,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "apsen-osumnjiceni-za-napad-na-jevrejski-restoran-1982-godine",
-      "title": "Ухапшен осумњичени за напад на јеврејски ресторан 1982. године",
-      "url": "https://www.politika.rs/scc/clanak/747994/uhapsen-osumnjiceni-za-napad-na-jevrejski-restoran-1982-godine",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T20:21:00+00:00",
-      "time": "20:21",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-velika-akcija-policije-specijalci-uhapsili-muskarca-wm8tzzn",
       "title": "SPECIJALCI U POZNATOM TRŽNOM CENTRU! Drama u centru Beograda: Uhapšena grupa muškaraca",
       "url": "https://www.blic.rs/vesti/hronika/velika-akcija-policije-specijalci-uhapsili-muskarca/wm8tzzn",
@@ -694,6 +680,20 @@
       "datetime": "2026-04-16T17:30:34+00:00",
       "time": "17:30",
       "source": "RSE Balkan",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "a-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem-",
+      "title": "Macut u žalbi Savetu za štampu tvrdi da mu KRIK ugrožava bezbednost, upoređuje sebe sa Đinđićem",
+      "url": "https://www.krik.rs/macut-u-zalbi-savetu-za-stampu-tvrdi-da-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem/",
+      "date": "2026-04-09",
+      "datetime": "2026-04-09T11:07:44+00:00",
+      "time": "11:07",
+      "source": "KRIK",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
