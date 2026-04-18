@@ -29,6 +29,20 @@
       "priority": 111
     },
     {
+      "id": "ikanaca-dobilo-upozorenje-na-razorne-oluje-tornada-i-poplave",
+      "title": "ALARM U SAD: Više od 50 miliona Amerikanaca dobilo upozorenje na razorne oluje, tornada i poplave",
+      "url": "https://www.kurir.rs/planeta/9971912/vise-od-50-miliona-amerikanaca-dobilo-upozorenje-na-razorne-oluje-tornada-i-poplave",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T21:54:57+00:00",
+      "time": "21:54",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 108
+    },
+    {
       "id": "m-nove-pretnje-miljku-stojanovicu-nadlezni-da-hitno-reaguju-",
       "title": "ANEM: Nove pretnje Miljku Stojanoviću, nadležni da hitno reaguju",
       "url": "https://www.danas.rs/vesti/drustvo/anem-nove-pretnje-miljku-stojanovicu-nadlezni-da-hitno-reaguju/",
@@ -225,6 +239,34 @@
       "priority": 92
     },
     {
+      "id": "je-policije-u-beogradu-uhapsen-clan-vracarskog-klana-1epndvl",
+      "title": "UHAPŠEN VISOKORANGIRANI ČLAN VRAČARSKOG KLANA? \"Blic\" saznaje detalje velike akcije UKP: Sumnja se da su pripremali likvidaciju",
+      "url": "https://www.blic.rs/vesti/hronika/blic-saznaje-detalje-velike-akcije-policije-u-beogradu-uhapsen-clan-vracarskog-klana/1epndvl",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T10:04:33+00:00",
+      "time": "10:04",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "48362-irski-kriminalni-bos-danijel-kinahan-uhapsen-u-dubaiju",
+      "title": "​Ирски криминални бос Данијел Кинахан ухапшен у Дубаију",
+      "url": "https://www.politika.rs/scc/clanak/748362/irski-kriminalni-bos-danijel-kinahan-uhapsen-u-dubaiju",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T09:59:00+00:00",
+      "time": "09:59",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "-poto-formira-skupstina-u-zajecaru-i-izbegnu-ponovni-izbori-",
       "title": "Rašić: Odluka Ustavnog suda ima za cilj da se pošto poto formira Skupština u Zaječaru i izbegnu ponovni izbori",
       "url": "https://www.danas.rs/vesti/politika/rasic-odluka-ustavnog-suda-ima-za-cilj-da-se-posto-poto-formira-skupstina-u-zajecaru-i-izbegnu-ponovni-izbori/",
@@ -295,18 +337,18 @@
       "priority": 72
     },
     {
-      "id": "o-rs-vesti-na-merdaru-uhapsen-osumnjiceni-za-slucaj-banjska-",
-      "title": "Na Merdaru uhapšen osumnjičeni za slučaj Banjska",
-      "url": "https://n1info.rs/vesti/na-merdaru-uhapsen-osumnjiceni-za-slucaj-banjska/",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T19:14:18+00:00",
-      "time": "19:14",
-      "source": "N1",
-      "category": "Тужилаштво",
+      "id": "njeni-snajper-eksploziv-i-oprema-za-pakovanje-narkotika-html",
+      "title": "Три особе ухапшене у Београду – заплењени снајпер, експлозив и опрема за паковање наркотика",
+      "url": "https://www.rts.rs/vesti/hronika/5929169/tri-osobe-uhapsene-u-beogradu--zaplenjeni-snajper-eksploziv-i-oprema-za-pakovanje-narkotika.html",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T10:02:18+00:00",
+      "time": "10:02",
+      "source": "RTS",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
     },
     {
       "id": "adiliste-novog-mosta-na-savi-zapecacen-kran-koji-se-obrusio-",
@@ -349,6 +391,34 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "vi-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine",
+      "title": "SRCE: Kabinet Macure krije raspodelu 103 miliona dinara za 2024.",
+      "url": "https://beta.rs/content/243197-srce-kabinet-macure-odbio-da-dostavi-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T09:45:09+00:00",
+      "time": "09:45",
+      "source": "Beta",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 38
+    },
+    {
+      "id": "i-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine-",
+      "title": "SRCE: Kabinet Macure odbio da dostavi informacije o raspodeli 103 miliona dinara iz 2024. godine",
+      "url": "https://n1info.rs/vesti/srce-kabinet-macure-odbio-da-dostavi-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine/",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T09:34:43+00:00",
+      "time": "09:34",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 38
     },
     {
       "id": "dnja-moravski-koridor-nadoknada-unisteni-usevi-33734480-html",
@@ -449,6 +519,20 @@
       "priority": 28
     },
     {
+      "id": "-hapsenja-zaplenjeno-oruzje-droga-zastrasujuca-maska-3c0plfx",
+      "title": "(FOTO, VIDEO) OGLASIO SE MUP O VELIKOJ AKCIJI UKP-A Zaplenjeni pištolji, puške i droga: Od ove maske PODILAZI JEZA",
+      "url": "https://www.blic.rs/vesti/hronika/oglasio-se-mup-o-velikoj-akciji-hapsenja-zaplenjeno-oruzje-droga-zastrasujuca-maska/3c0plfx",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T09:51:24+00:00",
+      "time": "09:51",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "ttps-n1info-rs-region-protest-tirana-albanija-17-april-2026-",
       "title": "(FOTO) Vodeni topovi, sukob sa policijom i hapšenja tokom protesta u Tirani",
       "url": "https://n1info.rs/region/protest-tirana-albanija-17-april-2026/",
@@ -505,6 +589,34 @@
       "priority": 25
     },
     {
+      "id": "-raspisao-vrlo-sumnjiv-tender-jos-jedan-korupcionaski-posao-",
+      "title": "Novi DSS: Ekspo raspisao vrlo sumnjiv tender, još jedan „korupcionaški posao“",
+      "url": "https://www.danas.rs/vesti/ekonomija/novi-dss-ekspo-raspisao-vrlo-sumnjiv-tender-jos-jedan-korupcionaski-posao/",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T09:41:19+00:00",
+      "time": "09:41",
+      "source": "Danas",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "sao-vrlo-sumnjiv-tender-podsticu-uvoz-umesto-domace-privrede",
+      "title": "Novi DSS: Ekspo 27 raspisao sumnjiv tender za uvoz materijala",
+      "url": "https://beta.rs/content/243196-novi-dss-ekspo-raspisao-vrlo-sumnjiv-tender-podsticu-uvoz-umesto-domace-privrede",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T09:40:07+00:00",
+      "time": "09:40",
+      "source": "Beta",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "ukp-sprecio-tesko-ubistvo-razbio-deo-vracarske-grupa-hnvn4wv",
       "title": "EKSKLUZIVNO Veliko hapšenje u Beogradu: UKP sprečio teško ubistvo, zaplenio veliku količinu oružja i razbio deo Vračarske grupe",
       "url": "https://www.blic.rs/vesti/hronika/veliko-hapsenje-u-beogradu-ukp-sprecio-tesko-ubistvo-razbio-deo-vracarske-grupa/hnvn4wv",
@@ -526,20 +638,6 @@
       "datetime": "2026-04-17T20:00:00+00:00",
       "time": "20:00",
       "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "suradnja-hrvastka-kosovo-albanija-prijetnja-rs-33733676-html",
-      "title": "'Ne postoji scenarij o ugroženosti RS', iako Dodik 'strahuje' od Zagreba, Prištine i Tirane",
-      "url": "https://www.slobodnaevropa.org/a/dodik-suradnja-hrvastka-kosovo-albanija-prijetnja-rs/33733676.html",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T14:30:11+00:00",
-      "time": "14:30",
-      "source": "RSE Balkan",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -575,20 +673,6 @@
       "priority": 8
     },
     {
-      "id": "lji-prvog-dana-svadbe-meline-dzinovic-i-milionera-70-r55wst4",
-      "title": "DUGA BELA VENČANICA I SLAVLJE BEZ SINA Svi detalji prvog dana svadbe Meline Džinović i milionera (70): Na veselju i bend sa kojim je Haris sarađivao",
-      "url": "https://www.blic.rs/zabava/svi-detalji-prvog-dana-svadbe-meline-dzinovic-i-milionera-70/r55wst4",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T05:30:00+00:00",
-      "time": "05:30",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "a-org-a-srpsko-ruski-humanitarni-centar-razvoj-33733896-html",
       "title": "Najavljen razvoj Srpsko-ruskog humanitarnog centra u Nišu",
       "url": "https://www.slobodnaevropa.org/a/srpsko-ruski-humanitarni-centar-razvoj/33733896.html",
@@ -615,90 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "-je-legitimisala-policija-tokom-blokade-u-novom-sadu-793bqd4",
-      "title": "\"JA VAS MOLIM DA OPROSTITE I MENI I DRŽAVI\" Vučić pozvao Mirka, čoveka kog je legitimisala policija tokom blokade u Novom Sadu: \"Od mene imate najdublje poštovanje\"",
-      "url": "https://www.blic.rs/vesti/politika/vucic-pozvao-mirka-coveka-kog-je-legitimisala-policija-tokom-blokade-u-novom-sadu/793bqd4",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T09:05:34+00:00",
-      "time": "09:05",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "cijativa-za-pokretanje-disciplinskog-postupka-protiv-ybktebn",
-      "title": "PU Novi Sad: Policija preduzela mere kako bi utvrdila odgovornost u incidentu u Novom Sadu",
-      "url": "https://www.blic.rs/vesti/hronika/oglasio-se-mup-podneta-inicijativa-za-pokretanje-disciplinskog-postupka-protiv/ybktebn",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T08:51:37+00:00",
-      "time": "08:51",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-219690-incident-u-novom-sadu-policija-pokrece-postupak-vest",
-      "title": "PU Novi Sad: Policija preduzela mere kako bi utvrdila odgovornost u incidentu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/219690/incident-u-novom-sadu-policija-pokrece-postupak/vest",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T08:45:00+00:00",
-      "time": "08:45",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ps-www-kurir-rs-vesti-politika-9972014-novi-sad-policija-sns",
-      "title": "VUČIĆ POZVAO GOSPODINA KOG JE MALTRETIRALA POLICIJA U NOVOM SADU: \"Molim da oprostite i meni i državi, od mene imate najdublje poštovanje... Sramota me je\"",
-      "url": "https://www.kurir.rs/vesti/politika/9972014/novi-sad-policija-sns",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T08:34:22+00:00",
-      "time": "08:34",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "tiv-policijske-brutalnosti-prisutni-vucevic-gojkovic-i-micin",
-      "title": "NOVOSAĐANI IZAŠLI NA ULICE ZBOG NASILJA! Policija zbog blokadera brutalno postupala prema starijem čoveku - Vučević, Gojković i Mićin zajedno sa narodom (VIDEO)",
-      "url": "https://www.kurir.rs/vesti/politika/9972010/protest-novosadjana-protiv-policijske-brutalnosti-prisutni-vucevic-gojkovic-i-micin",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T08:26:54+00:00",
-      "time": "08:26",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "a-uhapsila-trojicu-zbog-pokusaja-izazivanja-pozara-u-londonu",
-      "title": "LONDONSKA POLICIJA UHAPSILA TROJICU: Pokušali da izazovu spaljivanje jednog persijskog medija",
-      "url": "https://www.kurir.rs/planeta/9971316/britanska-policija-uhapsila-trojicu-zbog-pokusaja-izazivanja-pozara-u-londonu",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T23:01:00+00:00",
-      "time": "23:01",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
