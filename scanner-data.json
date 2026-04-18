@@ -379,20 +379,6 @@
       "priority": 66
     },
     {
-      "id": "ikola-dj-saobracajna-nesreca-novi-beograd-poginule-tri-osobe",
-      "title": "NIKOLA PIJAN I DROGIRAN UBIO TROČLANU PORODICU NA NOVOM BEOGRADU: Podignuta optužnica zbog stravične nesreće! Tužilaštvo traži MAKSIMALNU KAZNU",
-      "url": "https://www.kurir.rs/crna-hronika/9971349/nikola-dj-saobracajna-nesreca-novi-beograd-poginule-tri-osobe",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T11:24:53+00:00",
-      "time": "11:24",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "428-vjt-ceka-se-vestacenje-video-nadzora-na-filozofskom-vest",
       "title": "Više javno tužilaštvo: Predistražni postupak u toku, čeka se veštačenje video nadzora na Filozofskom",
       "url": "https://www.euronews.rs/srbija/aktuelno/219428/vjt-ceka-se-vestacenje-video-nadzora-na-filozofskom/vest",
@@ -639,6 +625,20 @@
       "time": "18:41",
       "source": "N1",
       "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "ka-9971582-mladen-mijatovic-za-kurir-tv-o-balkanskom-kartelu",
+      "title": "\"ZADAT JE OZBILJAN UDARAC BALKANSKOM KARTELU\" Mladen Mijatović za Kurir TV: Svi osumnjičeni imaju debeo kriminalni dosije",
+      "url": "https://www.kurir.rs/crna-hronika/9971582/mladen-mijatovic-za-kurir-tv-o-balkanskom-kartelu",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T17:16:14+00:00",
+      "time": "17:16",
+      "source": "Kurir",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
