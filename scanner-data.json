@@ -71,6 +71,34 @@
       "priority": 94
     },
     {
+      "id": "pritvoru-srbinu-uhapsenom-zbog-navodne-umesanosti-u-banjskoj",
+      "title": "Одржана седница о притвору Србину ухапшеном због наводне умешаности у Бањској",
+      "url": "https://www.politika.rs/scc/clanak/748445/odrzana-sednica-o-pritvoru-srbinu-uhapsenom-zbog-navodne-umesanosti-u-banjskoj",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T16:41:00+00:00",
+      "time": "16:41",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "219738-radulovic-osumnjicen-za-banjsku-ceka-odluku-suda-vest",
+      "title": "Održana sednica o pritvoru Raduloviću uhapšenom zbog navodne umešanosti u Banjskoj: Poruke u telefonu \"ključni dokaz\"",
+      "url": "https://www.euronews.rs/srbija/aktuelno/219738/radulovic-osumnjicen-za-banjsku-ceka-odluku-suda/vest",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T16:39:00+00:00",
+      "time": "16:39",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "0-sara-monteiro-uhapsena-zbog-pranja-novca-i-trgovine-drogom",
       "title": "Sara je uhapšena zbog trgovine drogom i pranje novca: Misica pala u akciji \"Luksuz\"",
       "url": "https://www.kurir.rs/zabava/pop-kultura/9972360/sara-monteiro-uhapsena-zbog-pranja-novca-i-trgovine-drogom",
@@ -255,34 +283,6 @@
     {
       "id": "e-uhapsene-u-beogradu-oduzet-arsenal-oruzja-snajper-i-droga-",
       "title": "MUP: Tri osobe uhapšene u Beogradu, oduzet arsenal oružja, snajper i droga",
-      "url": "https://www.danas.rs/vesti/drustvo/mup-tri-osobe-uhapsene-u-beogradu-oduzet-arsenal-oruzja-snajper-i-droga/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T10:42:59+00:00",
-      "time": "10:42",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "du-tri-osobe-uhapsene-oduzet-arsenal-oruzja-snajper-i-droga-",
-      "title": "Akcija MUP-a u Beogradu: Tri osobe uhapšene, oduzet arsenal oružja, snajper i droga",
-      "url": "https://nova.rs/vesti/hronika/akcija-mup-a-u-beogradu-tri-osobe-uhapsene-oduzet-arsenal-oruzja-snajper-i-droga/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T10:34:38+00:00",
-      "time": "10:34",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "e-uhapsene-u-beogradu-oduzet-arsenal-oruzja-snajper-i-droga-",
-      "title": "MUP: Tri osobe uhapšene u Beogradu, oduzet arsenal oružja, snajper i droga",
       "url": "https://n1info.rs/vesti/mup-tri-osobe-uhapsene-u-beogradu-oduzet-arsenal-oruzja-snajper-i-droga/",
       "date": "2026-04-18",
       "datetime": "2026-04-18T10:19:35+00:00",
@@ -323,6 +323,20 @@
       "priority": 68
     },
     {
+      "id": "radulovicu-osumnjicenom-da-je-umesan-u-sukob-u-banjskoj-html",
+      "title": "Суд у Приштини одредио једномесечни притвор Стефану Радуловићу осумњиченом да је умешан у сукоб у Бањској",
+      "url": "https://www.rts.rs/vesti/politika/5929397/sud-u-pristini-odredio-jednomesecni-pritvor-stefanu-radulovicu-osumnjicenom-da-je-umesan-u-sukob-u-banjskoj.html",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T17:16:57+00:00",
+      "time": "17:16",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "ignuta-optuznica-protiv-vozaca-zbog-saobracajne-nesrece-vest",
       "title": "Optužnica protiv mladića zbog saobraćajne nesreće u kojoj je poginula porodica na Novom Beogradu",
       "url": "https://www.euronews.rs/srbija/aktuelno/219545/podignuta-optuznica-protiv-vozaca-zbog-saobracajne-nesrece/vest",
@@ -335,20 +349,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "i-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine-",
-      "title": "SRCE: Kabinet Macure odbio da dostavi informacije o raspodeli 103 miliona dinara iz 2024. godine",
-      "url": "https://nova.rs/vesti/politika/srce-kabinet-macure-odbio-da-dostavi-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T10:11:25+00:00",
-      "time": "10:11",
-      "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 38
     },
     {
       "id": "i-informacije-o-raspodeli-103-miliona-dinara-iz-2024-godine-",
@@ -547,20 +547,6 @@
       "priority": 24
     },
     {
-      "id": "cc-clanak-748430-mol-isplacuje-dividende-od-630-miliona-evra",
-      "title": "МОЛ исплаћује дивиденде од 630 милиона евра",
-      "url": "https://www.politika.rs/scc/clanak/748430/mol-isplacuje-dividende-od-630-miliona-evra",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T15:16:00+00:00",
-      "time": "15:16",
-      "source": "Politika",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "https-n1info-rs-vesti-branko-brkic-daily-maverick-mediji-",
       "title": "Otišao iz Srbije u Južnu Afriku i napravio sajt koji je pratilo više od 14 miliona ljudi: \"Bez medija bismo za 30 dana završili ubijajući jedni druge\"",
       "url": "https://n1info.rs/vesti/branko-brkic-daily-maverick-mediji/",
@@ -603,13 +589,13 @@
       "priority": 8
     },
     {
-      "id": "cnjava-u-kijevu-petoro-mrtvih-vise-od-desetoro-ranjenih-html",
-      "title": "Пуцњава у Кијеву, петоро мртвих, више од десеторо рањених",
-      "url": "https://www.rts.rs/vesti/svet/5929355/pucnjava-u-kijevu-petoro-mrtvih-vise-od-desetoro-ranjenih.html",
+      "id": "vovala-dva-petera-madjara-policija-pokrenula-istragu-676dt2l",
+      "title": "VANREDNO SAOPŠTENJE O IZBORIMA U MAĐARSKOJ! Skandal trese zemlju! Učestvovao još jedan Peter Mađar: \"Lažni\" pomogao stranci da pobedi kandidatkinju PRAVOG lidera Tise, uključila se i POLICIJA",
+      "url": "https://www.blic.rs/vesti/svet/na-izborima-u-madjarskoj-ucestvovala-dva-petera-madjara-policija-pokrenula-istragu/676dt2l",
       "date": "2026-04-18",
-      "datetime": "2026-04-18T16:33:23+00:00",
-      "time": "16:33",
-      "source": "RTS",
+      "datetime": "2026-04-18T16:51:55+00:00",
+      "time": "16:51",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -694,6 +680,20 @@
       "datetime": "2026-04-18T13:44:00+00:00",
       "time": "13:44",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-za-necinjenje-prilikom-napada-na-ekipu-n1-ispred-skupstine-",
+      "title": "ANEM: Policija prikriva odgovornost za nečinjenje prilikom napada na ekipu N1 ispred Skupštine",
+      "url": "https://n1info.rs/vesti/anem-policija-prikriva-odgovornost-za-necinjenje-prilikom-napada-na-ekipu-n1-ispred-skupstine/",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T13:40:42+00:00",
+      "time": "13:40",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
