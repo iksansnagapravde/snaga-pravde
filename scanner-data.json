@@ -85,6 +85,20 @@
       "priority": 95
     },
     {
+      "id": "psen-zbog-postavljanja-replike-kapije-koncentracionog-logora",
+      "title": "Пољак ухапшен због постављања реплике капије концентрационог логора",
+      "url": "https://www.politika.rs/scc/clanak/748482/poljak-uhapsen-zbog-postavljanja-replike-kapije-koncentracionog-logora",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T19:48:00+00:00",
+      "time": "19:48",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "etucen-ispred-splava-u-obrenovcu-uhapsen-osumnjiceni-ndvltsg",
       "title": "PIJAN PRETUKAO MUŠKARCA ISPRED SPLAVA Brutalno nasilje u Obrenovcu: Tukao ga palicom i čekićem, pretio da će da mu zlostavlja ženu i decu",
       "url": "https://www.blic.rs/vesti/hronika/muskarac-pretucen-ispred-splava-u-obrenovcu-uhapsen-osumnjiceni/ndvltsg",
@@ -134,34 +148,6 @@
       "datetime": "2026-04-18T15:34:46+00:00",
       "time": "15:34",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "l-saslusani-jedan-ostao-u-pritvoru-a-drugi-pusten-na-slobodu",
-      "title": "DVOJICA REKETAŠA IZNELA ODBRANU PRED SUDOM Uhapšeni usred primopredaje u poznatom tržnom centru, iznuđivali novac od mladića (19), a sad se desio obrt",
-      "url": "https://www.kurir.rs/crna-hronika/9972278/hapsenje-zbog-iznude-d-b-i-m-l-saslusani-jedan-ostao-u-pritvoru-a-drugi-pusten-na-slobodu",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T14:01:08+00:00",
-      "time": "14:01",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "enovcu-muskarca-udarao-palicom-u-glavu-pa-ga-gadjao-cekicem-",
-      "title": "Uhapšen mladić u Obrenovcu: Muškarca udarao palicom u glavu, pa ga gađao čekićem",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-mladic-u-obrenovcu-muskarca-udarao-palicom-u-glavu-pa-ga-gadjao-cekicem/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T13:13:01+00:00",
-      "time": "13:13",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -223,6 +209,34 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "ka-dvojica-ranjenih-u-kladionici-u-mirijevu-uhapsen-napadac-",
+      "title": "Dvojica ranjenih u kladionici u Mirijevu: Uhapšen napadač",
+      "url": "https://nova.rs/vesti/hronika/dvojica-ranjenih-u-kladionici-u-mirijevu-uhapsen-napadac/",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T19:38:43+00:00",
+      "time": "19:38",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "njava-u-kladionici-u-mirijevu-ranjen-radnik-uhapsen-napadac-",
+      "title": "Pucnjava u kladionici u Mirijevu – ranjen radnik, uhapšen napadač",
+      "url": "https://n1info.rs/vesti/pucnjava-u-kladionici-u-mirijevu-ranjen-radnik-uhapsen-napadac/",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T19:27:23+00:00",
+      "time": "19:27",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "a-uhapsila-napadaca-na-radnika-kladionice-u-mirijevu-z3x2w0g",
@@ -407,20 +421,6 @@
       "priority": 32
     },
     {
-      "id": "ika-birodi-trazi-ciljane-sankcije-eu-za-lokalne-funkcionere-",
-      "title": "BIRODI traži ciljane sankcije EU za lokalne funkcionere",
-      "url": "https://www.danas.rs/vesti/politika/birodi-trazi-ciljane-sankcije-eu-za-lokalne-funkcionere/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T12:58:19+00:00",
-      "time": "12:58",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "ar-nova-rs-drustvo-laza-dzamic-flaneristika-srbija-madarska-",
       "title": "Svaki kilometar koruptivno naduvanih puteva je jedna izgubljena škola",
       "url": "https://radar.nova.rs/drustvo/laza-dzamic-flaneristika-srbija-madarska/",
@@ -450,7 +450,7 @@
     },
     {
       "id": "ac-na-euronews-u-pokusao-da-prevaspita-i-cenzurise-novinare-",
-      "title": "Kako je urednički dvojac na Euronews-u pokušao da \"prevaspita\" i cenzuriše novinare",
+      "title": "Kako je urednički dvojac na Euronews-u pokušao da  kazni i cenzuriše novinare",
       "url": "https://n1info.rs/vesti/kako-je-urednicki-dvojac-na-euronews-u-pokusao-da-prevaspita-i-cenzurise-novinare/",
       "date": "2026-04-18",
       "datetime": "2026-04-18T19:18:01+00:00",
@@ -603,6 +603,20 @@
       "priority": 8
     },
     {
+      "id": "753-beograd-uhapsen-muskarac-zbog-pucnjave-u-kladionici-vest",
+      "title": "Policija uhapsila napadača na radnika kladionice u Mirijevu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/219753/beograd-uhapsen-muskarac-zbog-pucnjave-u-kladionici/vest",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T19:26:00+00:00",
+      "time": "19:26",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ala-porodici-policija-je-zatekla-u-sobi-kako-igra-video-igre",
       "title": "Пензионерка се није јављала породици, полиција је затекла у соби како игра видео игре",
       "url": "https://www.politika.rs/scc/clanak/748467/penzionerka-se-nije-javljala-porodici-policija-je-zatekla-u-sobi-kako-igra-video-igre",
@@ -679,20 +693,6 @@
       "date": "2026-04-18",
       "datetime": "2026-04-18T16:51:55+00:00",
       "time": "16:51",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ude-na-ulici-u-kijevu-policija-ga-ubila-u-prodavnicu-grsjw55",
-      "title": "(VIDEO) IŠAO ULICOM S PUŠKOM I PUCAO NA LJUDE, IMA MRTVIH! Horor u Kijevu: Napadač uzeo i TAOCE, policija ga UBILA U PRODAVNICI",
-      "url": "https://www.blic.rs/vesti/svet/napadac-pucao-na-ljude-na-ulici-u-kijevu-policija-ga-ubila-u-prodavnicu/grsjw55",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T15:36:12+00:00",
-      "time": "15:36",
       "source": "Blic",
       "category": "Полиција",
       "summary": "",
