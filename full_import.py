@@ -1,6 +1,5 @@
 import os
 import re
-import json
 import time
 import statistics
 import sqlite3
@@ -42,47 +41,51 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================
-# SESSION (NO COOKIES)
+# SESSION
 # =========================
 def get_session():
     s = requests.Session()
     s.headers.update({
         "User-Agent": "Mozilla/5.0",
-        "Accept": "application/json, text/plain, */*"
+        "Accept": "application/json, text/plain, */*",
+        "Referer": BASE_URL
     })
     return s
 
 # =========================
-# FETCH IDS (API)
+# RETRY HELPER
+# =========================
+def safe_request(func, retries=3, delay=2):
+    for _ in range(retries):
+        try:
+            r = func()
+            if r.status_code == 200:
+                return r
+        except:
+            pass
+        time.sleep(delay)
+    return None
+
+# =========================
+# FETCH IDS
 # =========================
 def fetch_ids(session, page):
-    payload = {
-        "page": page,
-        "pageSize": 50,
-        "filters": []
-    }
+    payload = {"page": page, "pageSize": 50, "filters": []}
 
-    try:
-        r = session.post(SEARCH_URL, json=payload, timeout=30)
-        if r.status_code != 200:
-            return []
-
-        data = r.json()
-        items = data.get("items") or data.get("Data") or []
-
-        ids = []
-        for i in items:
-            eid = i.get("entityId") or i.get("EntityId")
-            if eid:
-                ids.append(eid)
-
-        return ids
-
-    except:
+    r = safe_request(lambda: session.post(SEARCH_URL, json=payload, timeout=30))
+    if not r:
         return []
 
+    data = r.json()
+    items = data.get("items") or data.get("Data") or []
+
+    return [
+        i.get("entityId") or i.get("EntityId")
+        for i in items if i.get("entityId") or i.get("EntityId")
+    ]
+
 # =========================
-# DOWNLOAD PDF
+# DOWNLOAD PDF (SMART)
 # =========================
 def download_pdf(session, eid):
     params = {
@@ -92,34 +95,39 @@ def download_pdf(session, eid):
         "associationTypeId": 1
     }
 
+    r = safe_request(lambda: session.get(DOCS_URL, params=params, timeout=30))
+    if not r:
+        return None
+
     try:
-        r = session.get(DOCS_URL, params=params, timeout=30)
         docs = r.json()
-
-        for doc in docs:
-            url = doc.get("url") or doc.get("DocumentUrl")
-            if not url:
-                continue
-
-            full = BASE_URL + url
-
-            pdf = session.get(full, timeout=60)
-
-            if pdf.status_code != 200:
-                continue
-
-            if not pdf.content.startswith(b"%PDF"):
-                continue
-
-            path = f"{DOCUMENTS_DIR}/{eid}.pdf"
-
-            with open(path, "wb") as f:
-                f.write(pdf.content)
-
-            return path
-
     except:
         return None
+
+    for doc in docs:
+        name = (doc.get("name") or "").lower()
+
+        # 🔥 uzmi samo odluke
+        if not any(k in name for k in ["odluka", "dodel", "ponuda"]):
+            continue
+
+        url = doc.get("url") or doc.get("DocumentUrl")
+        if not url:
+            continue
+
+        full = BASE_URL + url
+        pdf = safe_request(lambda: session.get(full, timeout=60))
+        if not pdf:
+            continue
+
+        if not pdf.content.startswith(b"%PDF"):
+            continue
+
+        path = f"{DOCUMENTS_DIR}/{eid}.pdf"
+        with open(path, "wb") as f:
+            f.write(pdf.content)
+
+        return path
 
     return None
 
@@ -136,45 +144,52 @@ def extract_text(pdf):
     except:
         pass
 
-    if len(text) < 100:
+    # OCR fallback (limited pages)
+    if len(text) < 200:
         try:
-            images = convert_from_path(pdf, dpi=250)
+            images = convert_from_path(pdf, dpi=200, first_page=1, last_page=3)
             for img in images:
-                text += pytesseract.image_to_string(img)
+                text += pytesseract.image_to_string(img, lang="srp+eng")
         except:
             pass
 
     return text
 
 # =========================
-# PRICE EXTRACTION
+# PRICE EXTRACTION (SMARTER)
 # =========================
 def extract_prices(text):
-    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-
     prices = []
-    for m in matches:
-        try:
-            val = float(m.replace(".", "").replace(",", "."))
-            if 500000 < val < 1_000_000_000:
-                prices.append(val)
-        except:
-            pass
 
-    prices = sorted(set(prices))
+    for line in text.split("\n"):
+        if not any(w in line.lower() for w in ["ponuda", "cena", "ukupno"]):
+            continue
 
-    if prices:
-        maxp = max(prices)
-        prices = [p for p in prices if p > maxp * 0.2]
+        matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
 
-    return prices
+        for m in matches:
+            try:
+                val = float(m.replace(".", "").replace(",", "."))
+                if 500000 < val < 1_000_000_000:
+                    prices.append(val)
+            except:
+                pass
+
+    return sorted(set(prices))
 
 # =========================
 # ACCEPTED PRICE
 # =========================
 def find_accepted(text):
+    keywords = [
+        "izabrana ponuda",
+        "najpovoljnija",
+        "dodeljuje se",
+        "odluka o dodeli"
+    ]
+
     for line in text.split("\n"):
-        if "изабрана" in line.lower() or "најповољнија" in line.lower():
+        if any(k in line.lower() for k in keywords):
             m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
             if m:
                 try:
@@ -194,7 +209,7 @@ def analyze(prices, accepted):
     med = statistics.median(prices)
 
     if not accepted:
-        accepted = max(prices)
+        accepted = med  # 🔥 bolja pretpostavka
 
     return (
         low,
@@ -209,9 +224,18 @@ def analyze(prices, accepted):
 # =========================
 def save(eid, data):
     c.execute("""
-    INSERT OR IGNORE INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
+    INSERT OR REPLACE INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
     """, (eid, *data, datetime.now().isoformat()))
     conn.commit()
+
+# =========================
+# CLEANUP
+# =========================
+def cleanup(path):
+    try:
+        os.remove(path)
+    except:
+        pass
 
 # =========================
 # MAIN LOOP
@@ -222,8 +246,8 @@ def run():
 
     while True:
         print(f"\nPAGE {page}")
-
         ids = fetch_ids(session, page)
+
         if not ids:
             break
 
@@ -240,8 +264,11 @@ def run():
             accepted = find_accepted(text)
 
             result = analyze(prices, accepted)
+
             if result:
                 save(eid, result)
+
+            cleanup(pdf)
 
         page += 1
         time.sleep(1)
