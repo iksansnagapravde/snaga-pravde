@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "-sto-je-u-mirijevu-upucao-radnika-sportske-kladionice-u-nogu",
-      "title": "UHAPŠEN NAPADAČ IZ MIRIJЕVA! Posle svađe upucao radnika kladionice: Ranjenik hitno prebačen u Urgentni centar",
-      "url": "https://www.kurir.rs/crna-hronika/9972430/policija-je-uhapsila-muskarca-nakon-sto-je-u-mirijevu-upucao-radnika-sportske-kladionice-u-nogu",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T17:24:32+00:00",
-      "time": "17:24",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "g-a-srbija-vucic-balans-politika-eu-rusija-sad-33734615-html",
       "title": "Srbija sa Vučićem od balansiranja do distanciranja",
       "url": "https://www.slobodnaevropa.org/a/srbija-vucic-balans-politika-eu-rusija-sad/33734615.html",
@@ -27,6 +13,20 @@
       "breaking": true,
       "alert": false,
       "priority": 125
+    },
+    {
+      "id": "euz-ce-biti-zatovoren-dok-sad-ne-prekine-blokadu-nasih-luka-",
+      "title": "Iran poslao upozorenje: Ormuski moreuz će biti zatovoren dok SAD ne prekine blokadu naših luka",
+      "url": "https://nova.rs/vesti/svet/iran-poslao-upozorenje-ormuski-moreuz-ce-biti-zatovoren-dok-sad-ne-prekine-blokadu-nasih-luka/",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T20:47:59+00:00",
+      "time": "20:47",
+      "source": "Nova",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "et-ulazi-u-fazu-velikih-promena-preplicu-se-politika-lnb7f8g",
@@ -141,12 +141,12 @@
       "priority": 92
     },
     {
-      "id": "0-sara-monteiro-uhapsena-zbog-pranja-novca-i-trgovine-drogom",
-      "title": "Sara je uhapšena zbog trgovine drogom i pranje novca: Misica pala u akciji \"Luksuz\"",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/9972360/sara-monteiro-uhapsena-zbog-pranja-novca-i-trgovine-drogom",
+      "id": "akovu-uhapsen-ukrajinac-koji-je-prevario-zenu-za-10-000-evra",
+      "title": "NA BAJAKOVU UHAPŠEN UKRAJINAC: Glumio je lekara i ženu (80) prevario za 70.000€",
+      "url": "https://www.kurir.rs/region/hrvatska/9972069/na-bajakovu-uhapsen-ukrajinac-koji-je-prevario-zenu-za-10-000-evra",
       "date": "2026-04-18",
-      "datetime": "2026-04-18T15:34:46+00:00",
-      "time": "15:34",
+      "datetime": "2026-04-18T09:53:44+00:00",
+      "time": "09:53",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -477,13 +477,13 @@
       "priority": 28
     },
     {
-      "id": "1-osumnjiceni-za-ubistvo-transrodne-osobe-izneo-odbranu-vest",
-      "title": "Osumnjičeni za ubistvo transrodne osobe u Beogradu izneo odbranu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/219571/osumnjiceni-za-ubistvo-transrodne-osobe-izneo-odbranu/vest",
-      "date": "2026-04-17",
-      "datetime": "2026-04-17T14:24:00+00:00",
-      "time": "14:24",
-      "source": "Euronews Serbia",
+      "id": "-vracarskog-klana-razbijen-lanac-trgovine-oruzjem-u-beogradu",
+      "title": "SNIMAK HAPŠENJA VRAČARACA Ovako je UKP i SBPOK razbio lanac trgovine oružja i droge u centru Beograda: Snajper spreman za likvidaciju, ekploziv, droga",
+      "url": "https://www.kurir.rs/crna-hronika/9972094/snimak-hapsenja-vracarskog-klana-razbijen-lanac-trgovine-oruzjem-u-beogradu",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T10:18:57+00:00",
+      "time": "10:18",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -491,12 +491,12 @@
       "priority": 26
     },
     {
-      "id": "9483-policija-uhapsila-osumnjicene-za-iznudu-u-beogradu-vest",
-      "title": "Hapšenje u Beogradu zbog iznude: Pretnjama tražili 1.000 evra, uhvaćeni tokom primopredaje novca (VIDEO)",
-      "url": "https://www.euronews.rs/srbija/aktuelno/219483/policija-uhapsila-osumnjicene-za-iznudu-u-beogradu/vest",
-      "date": "2026-04-16",
-      "datetime": "2026-04-16T20:50:00+00:00",
-      "time": "20:50",
+      "id": "1-osumnjiceni-za-ubistvo-transrodne-osobe-izneo-odbranu-vest",
+      "title": "Osumnjičeni za ubistvo transrodne osobe u Beogradu izneo odbranu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/219571/osumnjiceni-za-ubistvo-transrodne-osobe-izneo-odbranu/vest",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T14:24:00+00:00",
+      "time": "14:24",
       "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
@@ -561,6 +561,20 @@
       "priority": 8
     },
     {
+      "id": "9-ko-je-ajlin-gu-skijasica-koja-ce-sa-novakom-voditi-laureus",
+      "title": "AMERI NE MOGU DA JE SMISLE! Ovo je prelepa MILIONERKA koja će sa Novakom voditi prestižni Laureus: Izdala Amerikance, pa im se brutalno smejala u lice!",
+      "url": "https://www.kurir.rs/sport/ostali-sportovi/9972079/ko-je-ajlin-gu-skijasica-koja-ce-sa-novakom-voditi-laureus",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T10:01:51+00:00",
+      "time": "10:01",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "a-org-a-srpsko-ruski-humanitarni-centar-razvoj-33733896-html",
       "title": "Najavljen razvoj Srpsko-ruskog humanitarnog centra u Nišu",
       "url": "https://www.slobodnaevropa.org/a/srpsko-ruski-humanitarni-centar-razvoj/33733896.html",
@@ -618,7 +632,7 @@
     },
     {
       "id": "zbori-studentski-parlament-medicinski-fakulet-incident-sila-",
-      "title": "Policija, sila, falsifikati: Kad vlast hoda po ivici diktature, ni izbori za Studentski parlament nisu slobodni",
+      "title": "Policija, sila, falsifikati: \"Kad vlast hoda po ivici diktature\", ni izbori za studentski parlament nisu slobodni",
       "url": "https://n1info.rs/vesti/izbori-studentski-parlament-medicinski-fakulet-incident-sila/",
       "date": "2026-04-18",
       "datetime": "2026-04-18T18:01:33+00:00",
@@ -680,20 +694,6 @@
       "datetime": "2026-04-18T15:36:12+00:00",
       "time": "15:36",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "litika-ds-oni-koji-napaduju-studente-su-neprijatelji-srbije-",
-      "title": "DS: Oni koji napadaju studente su neprijatelji Srbije",
-      "url": "https://www.danas.rs/vesti/politika/ds-oni-koji-napaduju-studente-su-neprijatelji-srbije/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T15:17:17+00:00",
-      "time": "15:17",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
