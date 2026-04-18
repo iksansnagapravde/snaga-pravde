@@ -42,18 +42,9 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================
-# EXISTS
-# =========================
-def exists(eid):
-    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
-
-# =========================
-# FETCH
+# FETCH IDS (BUFFER 50)
 # =========================
 def fetch_entity_ids():
-    ids = []
-
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
@@ -69,25 +60,22 @@ def fetch_entity_ids():
 
         found = re.findall(r"/tender-eo/(\d+)", html)
 
-        found = list(dict.fromkeys(found))  # ukloni duplikate
+        # ukloni duplikate + sortiraj (najnoviji prvi)
+        found = list(dict.fromkeys(found))
+        found = sorted([int(x) for x in found], reverse=True)
 
-        print("FOUND RAW:", found[:10])
+        # 🔥 BUFFER 50
+        found = found[:50]
 
-        found = found[:10]
+        print("FOUND IDS:", found)
 
-        for eid in found:
-            eid = int(eid)
-            if not exists(eid):
-                ids.append(eid)
-
-        print("LAST 10 IDS:", ids)
-        return ids
+        return found
 
     finally:
         driver.quit()
 
 # =========================
-# DOWNLOAD PDF (FIXED)
+# DOWNLOAD PDF
 # =========================
 def download_pdf(tender_id):
     try:
@@ -96,34 +84,27 @@ def download_pdf(tender_id):
         r = requests.get(url, headers=HEADERS, timeout=30)
 
         if r.status_code != 200:
-            print("TENDER FAIL:", r.status_code)
             return None
 
         html = r.text
 
-        # ✅ PRAVILNO
         match = re.search(r'"entityId"\s*:\s*(\d+)', html)
 
         if not match:
-            print("NO ENTITY ID:", tender_id)
             return None
 
         entity_id = match.group(1)
-
-        print("ENTITY:", entity_id)
 
         api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
         r2 = requests.get(api_url, headers=HEADERS, timeout=30)
 
         if r2.status_code != 200:
-            print("DOC FAIL:", r2.status_code)
             return None
 
         try:
             data = r2.json()
         except:
-            print("NOT JSON")
             return None
 
         for doc in data:
@@ -146,14 +127,12 @@ def download_pdf(tender_id):
             with open(path, "wb") as f:
                 f.write(pdf.content)
 
-            print("PDF SAVED:", tender_id)
+            print("PDF:", tender_id)
             return path
 
-        print("NO PDF:", tender_id)
         return None
 
-    except Exception as e:
-        print("ERROR:", e)
+    except:
         return None
 
 # =========================
@@ -164,19 +143,18 @@ def extract_text(pdf_path):
 
     try:
         images = convert_from_path(pdf_path, dpi=300)
-        print("IMAGES:", len(images))
 
         for img in images:
             t = pytesseract.image_to_string(img, config="--psm 6")
             text += t + "\n"
 
-    except Exception as e:
-        print("OCR ERROR:", e)
+    except:
+        pass
 
     return text
 
 # =========================
-# PRICES (STABILNO)
+# PRICES
 # =========================
 def extract_prices(text):
     prices = []
@@ -203,8 +181,6 @@ def extract_prices(text):
     if prices:
         max_price = max(prices)
         prices = [p for p in prices if p > max_price * 0.2]
-
-    print("FINAL PRICES:", prices)
 
     return prices
 
@@ -235,7 +211,6 @@ def analyze(prices, accepted):
         return None
 
     lowest = min(prices)
-
     medijana = statistics.median(prices) if len(prices) > 1 else lowest
 
     if not accepted:
@@ -249,12 +224,17 @@ def analyze(prices, accepted):
 # =========================
 # SAVE
 # =========================
-def save(eid, data):
+def save(eid, data, existing_ids):
+    if eid in existing_ids:
+        return False
+
     c.execute("""
-    INSERT OR IGNORE INTO tenders
+    INSERT INTO tenders
     VALUES (?, ?, ?, ?, ?, ?, ?)
     """, (eid, *data, datetime.now().isoformat()))
+
     conn.commit()
+    return True
 
 # =========================
 # STATS
@@ -268,8 +248,8 @@ def write_stats():
     valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
     valid_accepted = [r[1] for r in rows if r[1] and r[1] > 500000]
 
-    total_lowest = sum(valid_lowest) if valid_lowest else 0
-    total_accepted = sum(valid_accepted) if valid_accepted else 0
+    total_lowest = sum(valid_lowest)
+    total_accepted = sum(valid_accepted)
 
     stats = {
         "broj_tendera": len(rows),
@@ -293,12 +273,12 @@ def write_loss_data():
     valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
 
     data = {
-        "najbolja_ponuda": round(sum(valid_lowest), 2) if valid_lowest else 0,
-        "medijana_ponuda": round(sum(r[1] for r in rows), 2) if rows else 0,
-        "prihvacena_ponuda": round(sum(r[2] for r in rows), 2) if rows else 0,
+        "najbolja_ponuda": round(sum(valid_lowest), 2),
+        "medijana_ponuda": round(sum(r[1] for r in rows), 2),
+        "prihvacena_ponuda": round(sum(r[2] for r in rows), 2),
         "broj_analiziranih": len(rows),
-        "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2) if rows else 0,
-        "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2) if rows else 0,
+        "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2),
+        "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2),
         "valuta_kurs_eur": 117.2
     }
 
@@ -306,13 +286,18 @@ def write_loss_data():
         json.dump(data, f, indent=2)
 
 # =========================
-# MAIN
+# MAIN LOOP (AUTO UPDATE)
 # =========================
-def main():
+def run_cycle():
     ids = fetch_entity_ids()
 
+    existing_ids = set(r[0] for r in c.execute("SELECT entity_id FROM tenders"))
+
     for eid in ids:
-        print("PROCESS:", eid)
+        if eid in existing_ids:
+            continue
+
+        print("NEW:", eid)
 
         pdf = download_pdf(eid)
         if not pdf:
@@ -329,12 +314,17 @@ def main():
         result = analyze(prices, accepted)
 
         if result:
-            save(eid, result)
+            save(eid, result, existing_ids)
 
     write_stats()
     write_loss_data()
 
-    print("DONE")
+    print("CYCLE DONE")
 
+# =========================
+# AUTO LOOP
+# =========================
 if __name__ == "__main__":
-    main()
+    while True:
+        run_cycle()
+        time.sleep(300)  # 5 minuta
