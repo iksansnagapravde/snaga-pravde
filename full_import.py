@@ -7,7 +7,6 @@ import sqlite3
 from datetime import datetime
 
 import requests
-import browser_cookie3
 from pypdf import PdfReader
 from pdf2image import convert_from_path
 import pytesseract
@@ -21,14 +20,12 @@ SEARCH_URL = f"{BASE_URL}/api/Search/GetSearchResults"
 DOCS_URL = f"{BASE_URL}/get-documents"
 
 DOCUMENTS_DIR = "documents"
-DB_PATH = "contracts.db"
-
 os.makedirs(DOCUMENTS_DIR, exist_ok=True)
 
 # =========================
 # DB
 # =========================
-conn = sqlite3.connect(DB_PATH)
+conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
 
 c.execute("""
@@ -45,7 +42,7 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================
-# SESSION
+# SESSION (NO COOKIES)
 # =========================
 def get_session():
     s = requests.Session()
@@ -53,19 +50,10 @@ def get_session():
         "User-Agent": "Mozilla/5.0",
         "Accept": "application/json, text/plain, */*"
     })
-
-    try:
-        s.cookies.update(browser_cookie3.edge(domain_name="jnportal.ujn.gov.rs"))
-    except:
-        try:
-            s.cookies.update(browser_cookie3.chrome(domain_name="jnportal.ujn.gov.rs"))
-        except:
-            pass
-
     return s
 
 # =========================
-# FETCH IDS
+# FETCH IDS (API)
 # =========================
 def fetch_ids(session, page):
     payload = {
@@ -74,21 +62,24 @@ def fetch_ids(session, page):
         "filters": []
     }
 
-    r = session.post(SEARCH_URL, json=payload)
-    if r.status_code != 200:
+    try:
+        r = session.post(SEARCH_URL, json=payload, timeout=30)
+        if r.status_code != 200:
+            return []
+
+        data = r.json()
+        items = data.get("items") or data.get("Data") or []
+
+        ids = []
+        for i in items:
+            eid = i.get("entityId") or i.get("EntityId")
+            if eid:
+                ids.append(eid)
+
+        return ids
+
+    except:
         return []
-
-    data = r.json()
-
-    items = data.get("items") or data.get("Data") or []
-
-    ids = []
-    for i in items:
-        eid = i.get("entityId") or i.get("EntityId")
-        if eid:
-            ids.append(eid)
-
-    return ids
 
 # =========================
 # DOWNLOAD PDF
@@ -102,7 +93,7 @@ def download_pdf(session, eid):
     }
 
     try:
-        r = session.get(DOCS_URL, params=params)
+        r = session.get(DOCS_URL, params=params, timeout=30)
         docs = r.json()
 
         for doc in docs:
@@ -112,7 +103,7 @@ def download_pdf(session, eid):
 
             full = BASE_URL + url
 
-            pdf = session.get(full)
+            pdf = session.get(full, timeout=60)
 
             if pdf.status_code != 200:
                 continue
@@ -133,7 +124,7 @@ def download_pdf(session, eid):
     return None
 
 # =========================
-# TEXT
+# TEXT EXTRACTION
 # =========================
 def extract_text(pdf):
     text = ""
@@ -156,7 +147,7 @@ def extract_text(pdf):
     return text
 
 # =========================
-# PRICES
+# PRICE EXTRACTION
 # =========================
 def extract_prices(text):
     matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
@@ -179,7 +170,7 @@ def extract_prices(text):
     return prices
 
 # =========================
-# ACCEPTED
+# ACCEPTED PRICE
 # =========================
 def find_accepted(text):
     for line in text.split("\n"):
