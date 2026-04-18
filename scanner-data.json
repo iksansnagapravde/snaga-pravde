@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "apadac-pucao-na-ljude-u-kijevu-ima-mrtvih-i-ranjenih-grsjw55",
-      "title": "OPSADNO STANJE U KIJEVU Nepoznati napadač pucao na ljude: Ima mrtvih i ranjenih",
-      "url": "https://www.blic.rs/vesti/svet/nepoznati-napadac-pucao-na-ljude-u-kijevu-ima-mrtvih-i-ranjenih/grsjw55",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T15:36:12+00:00",
-      "time": "15:36",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 126
-    },
-    {
       "id": "g-a-srbija-vucic-balans-politika-eu-rusija-sad-33734615-html",
       "title": "Srbija sa Vučićem od balansiranja do distanciranja",
       "url": "https://www.slobodnaevropa.org/a/srbija-vucic-balans-politika-eu-rusija-sad/33734615.html",
@@ -533,28 +519,14 @@
       "priority": 25
     },
     {
-      "id": "ao-vrlo-sumnjiv-tender-podsticu-uvoz-umesto-domace-privrede-",
-      "title": "\"EXPO raspisao vrlo sumnjiv tender, podstiču uvoz umesto domaće privrede\"",
-      "url": "https://nova.rs/vesti/politika/expo-raspisao-vrlo-sumnjiv-tender-podsticu-uvoz-umesto-domace-privrede/",
+      "id": "unkcioneru-otkrio-pravi-razlog-belivukove-posete-crnoj-gori-",
+      "title": "Šta krije sveska Srđana Lalića koju je videlo tek nekoliko ljudi? Na suđenju tužiocima i bivšem policijskom funkcioneru otkrio pravi razlog Belivukove posete Crnoj Gori",
+      "url": "https://nova.rs/vesti/hronika/sta-krije-sveska-srdjana-lalica-koju-je-videlo-tek-nekoliko-ljudi-na-sudjenju-tuziocima-i-bivsem-policijskom-funkcioneru-otkrio-pravi-razlog-belivukove-posete-crnoj-gori/",
       "date": "2026-04-18",
-      "datetime": "2026-04-18T10:08:02+00:00",
-      "time": "10:08",
+      "datetime": "2026-04-18T16:01:52+00:00",
+      "time": "16:01",
       "source": "Nova",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "-raspisao-vrlo-sumnjiv-tender-jos-jedan-korupcionaski-posao-",
-      "title": "Novi DSS: Ekspo raspisao vrlo sumnjiv tender, još jedan „korupcionaški posao“",
-      "url": "https://www.danas.rs/vesti/ekonomija/novi-dss-ekspo-raspisao-vrlo-sumnjiv-tender-jos-jedan-korupcionaski-posao/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T09:41:19+00:00",
-      "time": "09:41",
-      "source": "Danas",
-      "category": "Јавне набавке",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -629,6 +601,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "cnjava-u-kijevu-petoro-mrtvih-vise-od-desetoro-ranjenih-html",
+      "title": "Пуцњава у Кијеву, петоро мртвих, више од десеторо рањених",
+      "url": "https://www.rts.rs/vesti/svet/5929355/pucnjava-u-kijevu-petoro-mrtvih-vise-od-desetoro-ranjenih.html",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T16:33:23+00:00",
+      "time": "16:33",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ude-na-ulici-u-kijevu-policija-ga-ubila-u-prodavnicu-grsjw55",
+      "title": "(VIDEO) IŠAO ULICOM S PUŠKOM I PUCAO NA LJUDE, IMA MRTVIH! Horor u Kijevu: Napadač uzeo i TAOCE, policija ga UBILA U PRODAVNICI",
+      "url": "https://www.blic.rs/vesti/svet/napadac-pucao-na-ljude-na-ulici-u-kijevu-policija-ga-ubila-u-prodavnicu/grsjw55",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T15:36:12+00:00",
+      "time": "15:36",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "litika-ds-oni-koji-napaduju-studente-su-neprijatelji-srbije-",
