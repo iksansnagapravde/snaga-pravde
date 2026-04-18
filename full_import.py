@@ -1,31 +1,34 @@
 import os
 import re
 import json
+import time
 import statistics
 import sqlite3
-import time
 from datetime import datetime
 
 import requests
+import browser_cookie3
+from pypdf import PdfReader
 from pdf2image import convert_from_path
 import pytesseract
+from tqdm import tqdm
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
+# =========================
+# CONFIG
+# =========================
 BASE_URL = "https://jnportal.ujn.gov.rs"
+SEARCH_URL = f"{BASE_URL}/api/Search/GetSearchResults"
+DOCS_URL = f"{BASE_URL}/get-documents"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*"
-}
+DOCUMENTS_DIR = "documents"
+DB_PATH = "contracts.db"
+
+os.makedirs(DOCUMENTS_DIR, exist_ok=True)
 
 # =========================
-# SETUP
+# DB
 # =========================
-os.makedirs("documents", exist_ok=True)
-
-conn = sqlite3.connect("contracts.db")
+conn = sqlite3.connect(DB_PATH)
 c = conn.cursor()
 
 c.execute("""
@@ -42,79 +45,74 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================
-# FETCH IDS (BUFFER 50)
+# SESSION
 # =========================
-def fetch_entity_ids():
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    driver = webdriver.Chrome(options=options)
+def get_session():
+    s = requests.Session()
+    s.headers.update({
+        "User-Agent": "Mozilla/5.0",
+        "Accept": "application/json, text/plain, */*"
+    })
 
     try:
-        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(5)
+        s.cookies.update(browser_cookie3.edge(domain_name="jnportal.ujn.gov.rs"))
+    except:
+        try:
+            s.cookies.update(browser_cookie3.chrome(domain_name="jnportal.ujn.gov.rs"))
+        except:
+            pass
 
-        html = driver.page_source
+    return s
 
-        found = re.findall(r"/tender-eo/(\d+)", html)
+# =========================
+# FETCH IDS
+# =========================
+def fetch_ids(session, page):
+    payload = {
+        "page": page,
+        "pageSize": 50,
+        "filters": []
+    }
 
-        # ukloni duplikate + sortiraj (najnoviji prvi)
-        found = list(dict.fromkeys(found))
-        found = sorted([int(x) for x in found], reverse=True)
+    r = session.post(SEARCH_URL, json=payload)
+    if r.status_code != 200:
+        return []
 
-        # 🔥 BUFFER 50
-        found = found[:50]
+    data = r.json()
 
-        print("FOUND IDS:", found)
+    items = data.get("items") or data.get("Data") or []
 
-        return found
+    ids = []
+    for i in items:
+        eid = i.get("entityId") or i.get("EntityId")
+        if eid:
+            ids.append(eid)
 
-    finally:
-        driver.quit()
+    return ids
 
 # =========================
 # DOWNLOAD PDF
 # =========================
-def download_pdf(tender_id):
+def download_pdf(session, eid):
+    params = {
+        "entityId": eid,
+        "objectMetaId": 2,
+        "documentGroupId": 169,
+        "associationTypeId": 1
+    }
+
     try:
-        url = f"{BASE_URL}/tender-eo/{tender_id}"
+        r = session.get(DOCS_URL, params=params)
+        docs = r.json()
 
-        r = requests.get(url, headers=HEADERS, timeout=30)
-
-        if r.status_code != 200:
-            return None
-
-        html = r.text
-
-        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
-
-        if not match:
-            return None
-
-        entity_id = match.group(1)
-
-        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
-
-        r2 = requests.get(api_url, headers=HEADERS, timeout=30)
-
-        if r2.status_code != 200:
-            return None
-
-        try:
-            data = r2.json()
-        except:
-            return None
-
-        for doc in data:
-            url = doc.get("DocumentUrl")
+        for doc in docs:
+            url = doc.get("url") or doc.get("DocumentUrl")
             if not url:
                 continue
 
             full = BASE_URL + url
 
-            pdf = requests.get(full, headers=HEADERS, timeout=60)
+            pdf = session.get(full)
 
             if pdf.status_code != 200:
                 continue
@@ -122,34 +120,38 @@ def download_pdf(tender_id):
             if not pdf.content.startswith(b"%PDF"):
                 continue
 
-            path = f"documents/{tender_id}.pdf"
+            path = f"{DOCUMENTS_DIR}/{eid}.pdf"
 
             with open(path, "wb") as f:
                 f.write(pdf.content)
 
-            print("PDF:", tender_id)
             return path
-
-        return None
 
     except:
         return None
 
+    return None
+
 # =========================
-# OCR
+# TEXT
 # =========================
-def extract_text(pdf_path):
+def extract_text(pdf):
     text = ""
 
     try:
-        images = convert_from_path(pdf_path, dpi=300)
-
-        for img in images:
-            t = pytesseract.image_to_string(img, config="--psm 6")
-            text += t + "\n"
-
+        reader = PdfReader(pdf)
+        for p in reader.pages:
+            text += p.extract_text() or ""
     except:
         pass
+
+    if len(text) < 100:
+        try:
+            images = convert_from_path(pdf, dpi=250)
+            for img in images:
+                text += pytesseract.image_to_string(img)
+        except:
+            pass
 
     return text
 
@@ -157,30 +159,22 @@ def extract_text(pdf_path):
 # PRICES
 # =========================
 def extract_prices(text):
-    prices = []
-
     matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
 
+    prices = []
     for m in matches:
         try:
-            num = float(m.replace(".", "").replace(",", "."))
-
-            if num < 500000:
-                continue
-
-            if num > 1_000_000_000:
-                continue
-
-            prices.append(num)
-
+            val = float(m.replace(".", "").replace(",", "."))
+            if 500000 < val < 1_000_000_000:
+                prices.append(val)
         except:
-            continue
+            pass
 
     prices = sorted(set(prices))
 
     if prices:
-        max_price = max(prices)
-        prices = [p for p in prices if p > max_price * 0.2]
+        maxp = max(prices)
+        prices = [p for p in prices if p > maxp * 0.2]
 
     return prices
 
@@ -188,143 +182,84 @@ def extract_prices(text):
 # ACCEPTED
 # =========================
 def find_accepted(text):
-    lines = text.split("\n")
-
-    for i, line in enumerate(lines):
+    for line in text.split("\n"):
         if "изабрана" in line.lower() or "најповољнија" in line.lower():
-            for j in range(i, i + 5):
-                if j < len(lines):
-                    m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", lines[j])
-                    if m:
-                        try:
-                            return float(m[0].replace(".", "").replace(",", "."))
-                        except:
-                            continue
-
+            m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+            if m:
+                try:
+                    return float(m[0].replace(".", "").replace(",", "."))
+                except:
+                    pass
     return None
 
 # =========================
 # ANALYZE
 # =========================
 def analyze(prices, accepted):
-    if len(prices) < 1:
+    if not prices:
         return None
 
-    lowest = min(prices)
-    medijana = statistics.median(prices) if len(prices) > 1 else lowest
+    low = min(prices)
+    med = statistics.median(prices)
 
     if not accepted:
-        accepted = prices[-1]
+        accepted = max(prices)
 
-    loss_low = max(0, accepted - lowest)
-    loss_med = max(0, accepted - medijana)
-
-    return lowest, medijana, accepted, loss_low, loss_med
+    return (
+        low,
+        med,
+        accepted,
+        max(0, accepted - low),
+        max(0, accepted - med)
+    )
 
 # =========================
 # SAVE
 # =========================
-def save(eid, data, existing_ids):
-    if eid in existing_ids:
-        return False
-
+def save(eid, data):
     c.execute("""
-    INSERT INTO tenders
-    VALUES (?, ?, ?, ?, ?, ?, ?)
+    INSERT OR IGNORE INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
     """, (eid, *data, datetime.now().isoformat()))
-
     conn.commit()
-    return True
 
 # =========================
-# STATS
+# MAIN LOOP
 # =========================
-def write_stats():
-    c.execute("SELECT lowest, accepted FROM tenders")
-    rows = c.fetchall()
+def run():
+    session = get_session()
+    page = 1
 
-    kurs = 117.2
+    while True:
+        print(f"\nPAGE {page}")
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
-    valid_accepted = [r[1] for r in rows if r[1] and r[1] > 500000]
+        ids = fetch_ids(session, page)
+        if not ids:
+            break
 
-    total_lowest = sum(valid_lowest)
-    total_accepted = sum(valid_accepted)
+        for eid in tqdm(ids):
+            if c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,)).fetchone():
+                continue
 
-    stats = {
-        "broj_tendera": len(rows),
-        "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
-        "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
-        "broj_ugovora": len(rows),
-        "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
-        "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
-    }
+            pdf = download_pdf(session, eid)
+            if not pdf:
+                continue
 
-    with open("stats.json", "w") as f:
-        json.dump(stats, f, indent=2)
+            text = extract_text(pdf)
+            prices = extract_prices(text)
+            accepted = find_accepted(text)
 
-# =========================
-# LOSS DATA
-# =========================
-def write_loss_data():
-    c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
-    rows = c.fetchall()
+            result = analyze(prices, accepted)
+            if result:
+                save(eid, result)
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
-
-    data = {
-        "najbolja_ponuda": round(sum(valid_lowest), 2),
-        "medijana_ponuda": round(sum(r[1] for r in rows), 2),
-        "prihvacena_ponuda": round(sum(r[2] for r in rows), 2),
-        "broj_analiziranih": len(rows),
-        "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2),
-        "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2),
-        "valuta_kurs_eur": 117.2
-    }
-
-    with open("loss-data.json", "w") as f:
-        json.dump(data, f, indent=2)
-
-# =========================
-# MAIN LOOP (AUTO UPDATE)
-# =========================
-def run_cycle():
-    ids = fetch_entity_ids()
-
-    existing_ids = set(r[0] for r in c.execute("SELECT entity_id FROM tenders"))
-
-    for eid in ids:
-        if eid in existing_ids:
-            continue
-
-        print("NEW:", eid)
-
-        pdf = download_pdf(eid)
-        if not pdf:
-            continue
-
-        text = extract_text(pdf)
-
-        if len(text) < 100:
-            continue
-
-        prices = extract_prices(text)
-        accepted = find_accepted(text)
-
-        result = analyze(prices, accepted)
-
-        if result:
-            save(eid, result, existing_ids)
-
-    write_stats()
-    write_loss_data()
-
-    print("CYCLE DONE")
+        page += 1
+        time.sleep(1)
 
 # =========================
 # AUTO LOOP
 # =========================
 if __name__ == "__main__":
     while True:
-        run_cycle()
-        time.sleep(300)  # 5 minuta
+        run()
+        print("WAIT 5 MIN")
+        time.sleep(300)
