@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "-sto-je-u-mirijevu-upucao-radnika-sportske-kladionice-u-nogu",
-      "title": "UHAPŠEN NAPADAČ IZ MIRIJЕVA! Posle svađe upucao radnika kladionice: Ranjenik hitno prebačen u Urgentni centar",
-      "url": "https://www.kurir.rs/crna-hronika/9972430/policija-je-uhapsila-muskarca-nakon-sto-je-u-mirijevu-upucao-radnika-sportske-kladionice-u-nogu",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T17:24:32+00:00",
-      "time": "17:24",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "g-a-srbija-vucic-balans-politika-eu-rusija-sad-33734615-html",
       "title": "Srbija sa Vučićem od balansiranja do distanciranja",
       "url": "https://www.slobodnaevropa.org/a/srbija-vucic-balans-politika-eu-rusija-sad/33734615.html",
@@ -57,6 +43,20 @@
       "priority": 95
     },
     {
+      "id": "ovina-9972375-dvojica-bosanaca-opljackala-9-firmi-u-austriji",
+      "title": "DVOJICA BOSANACA OPLJAČKALA 9 FIRMI U AUSTRIJI: Jedan uhapšen, za drugim se traga - evo šta su krali",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/9972375/dvojica-bosanaca-opljackala-9-firmi-u-austriji",
+      "date": "2026-04-19",
+      "datetime": "2026-04-19T03:14:00+00:00",
+      "time": "03:14",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "enih-za-banjsku-ali-mu-odredjen-pritvor-cutao-pred-dokazima-",
       "title": "Koha: Radulović nije na spisku 45 optuženih za Banjsku ali mu određen pritvor, ćutao pred dokazima",
       "url": "https://nova.rs/vesti/hronika/koha-radulovic-nije-na-spisku-45-optuzenih-za-banjsku-ali-mu-odredjen-pritvor-cutao-pred-dokazima/",
@@ -78,20 +78,6 @@
       "datetime": "2026-04-18T21:31:07+00:00",
       "time": "21:31",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "etucen-ispred-splava-u-obrenovcu-uhapsen-osumnjiceni-ndvltsg",
-      "title": "PIJAN PRETUKAO MUŠKARCA ISPRED SPLAVA Brutalno nasilje u Obrenovcu: Tukao ga palicom i čekićem, pretio da će da mu zlostavlja ženu i decu",
-      "url": "https://www.blic.rs/vesti/hronika/muskarac-pretucen-ispred-splava-u-obrenovcu-uhapsen-osumnjiceni/ndvltsg",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T18:00:42+00:00",
-      "time": "18:00",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -153,6 +139,20 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "ika-rs-scc-clanak-748510-uhapseni-pripadnici-vracarske-grupe",
+      "title": "Ухапшени припадници врачарске групе",
+      "url": "https://www.politika.rs/scc/clanak/748510/uhapseni-pripadnici-vracarske-grupe",
+      "date": "2026-04-19",
+      "datetime": "2026-04-19T06:30:00+00:00",
+      "time": "06:30",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "j-akciji-u-crnoj-gori-uhapsen-vazan-clan-balkanskog-kartela-",
@@ -260,20 +260,6 @@
       "datetime": "2026-04-19T03:53:00+00:00",
       "time": "03:53",
       "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "clanak-748520-tuzilastvo-pozvalo-maska-na-saslusanje-u-pariz",
-      "title": "Тужилаштво позвало Маска на саслушање у Париз",
-      "url": "https://www.politika.rs/scc/clanak/748520/tuzilastvo-pozvalo-maska-na-saslusanje-u-pariz",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T22:09:00+00:00",
-      "time": "22:09",
-      "source": "Politika",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -491,20 +477,6 @@
       "priority": 25
     },
     {
-      "id": "unkcioneru-otkrio-pravi-razlog-belivukove-posete-crnoj-gori-",
-      "title": "Šta krije sveska Srđana Lalića koju je videlo tek nekoliko ljudi? Na suđenju tužiocima i bivšem policijskom funkcioneru otkrio pravi razlog Belivukove posete Crnoj Gori",
-      "url": "https://nova.rs/vesti/hronika/sta-krije-sveska-srdjana-lalica-koju-je-videlo-tek-nekoliko-ljudi-na-sudjenju-tuziocima-i-bivsem-policijskom-funkcioneru-otkrio-pravi-razlog-belivukove-posete-crnoj-gori/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T16:01:52+00:00",
-      "time": "16:01",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "nije-skinula-oznaku-tajnosti-sa-informacija-iz-ovog-slucaja-",
       "title": "Suđenje „Jovanjica“: BIA nije skinula oznaku tajnosti sa informacija iz ovog slučaja",
       "url": "https://www.krik.rs/sudjenje-jovanjica-bia-nije-skinula-oznaku-tajnosti-sa-informacija-iz-ovog-slucaja/",
@@ -575,6 +547,34 @@
       "priority": 8
     },
     {
+      "id": "-skocila-sa-13-sprata-hotela-srbija-horor-u-beogradu-h1xl2m5",
+      "title": "HOROR U BEOGRADU Žena (43) skočila sa 13. sprata Hotela Srbija: Evo šta je policija zatekla u njenoj sobi",
+      "url": "https://www.blic.rs/vesti/hronika/zena-43-skocila-sa-13-sprata-hotela-srbija-horor-u-beogradu/h1xl2m5",
+      "date": "2026-04-19",
+      "datetime": "2026-04-19T06:09:07+00:00",
+      "time": "06:09",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ion-crna-gora-9972332-zeta-mahala-eksplozija-pozar-automobil",
+      "title": "ODJEKNULA SNAŽNA DETONACIJA U ZETI: Izbio požar na automobilu, policija istražuje da li je namerno zapaljeno vozilo",
+      "url": "https://www.kurir.rs/region/crna-gora/9972332/zeta-mahala-eksplozija-pozar-automobil",
+      "date": "2026-04-18",
+      "datetime": "2026-04-18T22:32:00+00:00",
+      "time": "22:32",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "753-beograd-uhapsen-muskarac-zbog-pucnjave-u-kladionici-vest",
       "title": "Policija uhapsila napadača na radnika kladionice u Mirijevu",
       "url": "https://www.euronews.rs/srbija/aktuelno/219753/beograd-uhapsen-muskarac-zbog-pucnjave-u-kladionici/vest",
@@ -617,20 +617,6 @@
       "priority": 4
     },
     {
-      "id": "nik-rodjen-u-moskvi-sejao-smrt-oglasio-se-i-zelenski-fpt63e2",
-      "title": "MASAKR U KIJEVU POČINIO RUSKI POTPUKOVNIK Išao ulicom i pucao na ljude, UBIO PETORO, više od 10 ranio, oglasio se Zelenski: \"Spasli smo taoce!\" (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/svet/bivsi-ruski-potpukovnik-rodjen-u-moskvi-sejao-smrt-oglasio-se-i-zelenski/fpt63e2",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T17:42:08+00:00",
-      "time": "17:42",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "ada-u-kladionici-u-rableovoj-ulici-zavrsena-ranjavanjem-vest",
       "title": "Pucnjava u Mirijevu: Svađa u kladionici u Rableovoj ulici završena ranjavanjem",
       "url": "https://www.euronews.rs/srbija/aktuelno/219744/svada-u-kladionici-u-rableovoj-ulici-zavrsena-ranjavanjem/vest",
@@ -638,34 +624,6 @@
       "datetime": "2026-04-18T17:34:00+00:00",
       "time": "17:34",
       "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "litika-ds-oni-koji-napaduju-studente-su-neprijatelji-srbije-",
-      "title": "DS: Oni koji napadaju studente su neprijatelji Srbije",
-      "url": "https://www.danas.rs/vesti/politika/ds-oni-koji-napaduju-studente-su-neprijatelji-srbije/",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T15:17:17+00:00",
-      "time": "15:17",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-svet-5929252-london-policija-pozar-jevrejska-zajednica-html",
-      "title": "Британска антитерористичка полиција истражује паљевину у Лондону",
-      "url": "https://www.rts.rs/vesti/svet/5929252/london-policija-pozar-jevrejska-zajednica.html",
-      "date": "2026-04-18",
-      "datetime": "2026-04-18T14:16:17+00:00",
-      "time": "14:16",
-      "source": "RTS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "9597-inspekcija-na-medicinskom-provera-izbora-studenata-vest",
+      "title": "Prosvetna inspekcija na Medicinskom fakultetu utvrđuje činjenice o izborima za studentski parlament",
+      "url": "https://www.euronews.rs/srbija/aktuelno/219597/inspekcija-na-medicinskom-provera-izbora-studenata/vest",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T16:13:00+00:00",
+      "time": "16:13",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-aktuelno-219562-oglasio-se-mup-o-medicinskom-fakultetu-vest",
+      "title": "MUP: Policija postupala po prijavi zaposlenih na Medicinskom, nije ulazila u prostorije fakulteta",
+      "url": "https://www.euronews.rs/srbija/aktuelno/219562/oglasio-se-mup-o-medicinskom-fakultetu/vest",
+      "date": "2026-04-17",
+      "datetime": "2026-04-17T12:23:00+00:00",
+      "time": "12:23",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "https-n1info-rs-najave-emisija-novi-dan-gosca-anica-dobra-",
+      "title": "Gledajte UŽIVO Novi dan na N1",
+      "url": "https://n1info.rs/najave-emisija/novi-dan-gosca-anica-dobra/",
+      "date": "2026-04-19",
+      "datetime": "2026-04-19T07:02:30+00:00",
+      "time": "07:02",
+      "source": "N1",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
