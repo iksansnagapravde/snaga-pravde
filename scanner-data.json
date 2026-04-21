@@ -421,20 +421,6 @@
       "priority": 30
     },
     {
-      "id": "n-zloupotrebljava-rat-radi-prazne-retorike-o-velikoj-americi",
-      "title": "Калибаф: Вашингтон злоупотребљава рат ради празне реторике о „великој Америци”",
-      "url": "https://www.politika.rs/scc/clanak/749293/kalibaf-vasington-zloupotrebljava-rat-radi-prazne-retorike-o-velikoj-americi",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T20:06:00+00:00",
-      "time": "20:06",
-      "source": "Politika",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "los-vucevic-o-zloupotrebi-rektorske-funkcije-vladana-djokica",
       "title": "\"ZLOUPOTREBLJAVA FUNKCIJU, ON ODAVNO NIJE REKTOR\" Vučević o političaru Đokiću: Zabrinjava da ide u Brisel i lobira da Srbija bude kažnjena",
       "url": "https://www.kurir.rs/vesti/politika/9974945/milos-vucevic-o-zloupotrebi-rektorske-funkcije-vladana-djokica",
@@ -442,20 +428,6 @@
       "datetime": "2026-04-21T17:29:14+00:00",
       "time": "17:29",
       "source": "Kurir",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "-rektor-djokic-bio-u-briselu-da-rezim-to-ne-bi-zloupotrebio-",
-      "title": "Milan St. Protić: EU nije suspendovala novac Srbiji kada je rektor Đokić bio u Briselu - da režim to ne bi zloupotrebio",
-      "url": "https://nova.rs/vesti/politika/milan-st-protic-eu-nije-suspendovala-novac-srbiji-kada-je-rektor-djokic-bio-u-briselu-da-rezim-to-ne-bi-zloupotrebio/",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T16:57:13+00:00",
-      "time": "16:57",
-      "source": "Nova",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
@@ -589,20 +561,6 @@
       "priority": 25
     },
     {
-      "id": "v-lgbt-zajednice-krse-prava-eu-presudio-evropski-sud-pravde-",
-      "title": "Mađarski zakoni protiv LGBT zajednice krše prava EU, presudio Evropski sud pravde",
-      "url": "https://www.danas.rs/bbc-news-serbian/madjarski-zakoni-protiv-lgbt-zajednice-krse-prava-eu-presudio-evropski-sud-pravde/",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T16:25:23+00:00",
-      "time": "16:25",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "920-petrov-o-misljenju-venecijanske-komisije-o-zakonima-vest",
       "title": "Petrov: Očekujem da mišljenje Venecijanske komisije bude stručno i neutralno",
       "url": "https://www.euronews.rs/srbija/politika/219920/petrov-o-misljenju-venecijanske-komisije-o-zakonima/vest",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "a-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem-",
+      "title": "Macut u žalbi Savetu za štampu tvrdi da mu KRIK ugrožava bezbednost, upoređuje sebe sa Đinđićem",
+      "url": "https://www.krik.rs/macut-u-zalbi-savetu-za-stampu-tvrdi-da-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem/",
+      "date": "2026-04-09",
+      "datetime": "2026-04-09T11:07:44+00:00",
+      "time": "11:07",
+      "source": "KRIK",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "s-u-splitu-odjeknula-eksplozija-jedna-osoba-poginula-ehlggdd",
+      "title": "UŽAS U SPLITU Odjeknula snažna eksplozija, jedna osoba POGINULA: Policija blokirala ceo kraj",
+      "url": "https://www.blic.rs/vesti/svet/uzas-u-splitu-odjeknula-eksplozija-jedna-osoba-poginula/ehlggdd",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T22:34:02+00:00",
+      "time": "22:34",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ion-hrvatska-9975067-tragedija-u-splitu-detalji-o-eksploziji",
+      "title": "UŽAS U SPLITU Odjeknula eksplozija, najmanje jedna osoba stradala: Policija blokirala prilaze",
+      "url": "https://www.kurir.rs/region/hrvatska/9975067/tragedija-u-splitu-detalji-o-eksploziji",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T22:30:37+00:00",
+      "time": "22:30",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
