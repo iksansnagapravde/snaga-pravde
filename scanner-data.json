@@ -29,6 +29,20 @@
       "priority": 102
     },
     {
+      "id": "nobelovca-covecanstvu-ostalo-jos-35-godina-na-zemlji-7rcw07l",
+      "title": "\"ČOVEČANSTVU JE OSTALO JOŠ SAMO 35 GODINA\" Uznemirujuće upozorenje poznatog nobelovca: Dve katastrofe će nas zbrisati sa lica Zemlje",
+      "url": "https://www.blic.rs/vesti/svet/uznemirujuce-upozorenje-nobelovca-covecanstvu-ostalo-jos-35-godina-na-zemlji/7rcw07l",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T20:00:29+00:00",
+      "time": "20:00",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "s-vreme-com-vesti-haski-tribunal-ratni-zlocini-ratko-mladic-",
       "title": "Koje je sve Srbe Haški tribunal ranije otpustio iz zatvora",
       "url": "https://vreme.com/vesti/haski-tribunal-ratni-zlocini-ratko-mladic/",
@@ -55,6 +69,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "s-ubio-osumnjiceni-vehid-muric-kao-i-mladica-iz-novog-pazara",
+      "title": "(FOTO) OVO SU BRAĆA KOJA SU UBIJENA U PODGORICI! Sa njima ubijen i državljanin Srbije, krvnik nakon zločina pobegao, a OVAKO JE UHAPŠEN!",
+      "url": "https://www.kurir.rs/crna-hronika/9974998/ovo-su-braca-hot-iz-rozaja-koje-je-danas-ubio-osumnjiceni-vehid-muric-kao-i-mladica-iz-novog-pazara",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T19:57:06+00:00",
+      "time": "19:57",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "lanak-749282-trostruki-ubica-iz-podgorice-uhapsen-u-rozajama",
@@ -176,20 +204,6 @@
       "datetime": "2026-04-21T15:27:06+00:00",
       "time": "15:27",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "3-ovo-je-osumnjiceni-tinejdzer-koji-je-ubio-decka-svoje-mame",
-      "title": "OVO JE TINEJDŽER UHAPŠEN ZBOG JEZIVOG UBISTVA U RUMI: Sekirom ubio, pa spalilo maminog dečka jer je čuo da ju je tukao?! (foto)",
-      "url": "https://www.kurir.rs/crna-hronika/9974733/ovo-je-osumnjiceni-tinejdzer-koji-je-ubio-decka-svoje-mame",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T14:17:05+00:00",
-      "time": "14:17",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -365,20 +379,6 @@
       "priority": 70
     },
     {
-      "id": "-hronika-5931364-pljacka-zlatare-veli-trnovac-bujanovac-html",
-      "title": "Опљачкано возило са златом и сребром у Великом Трновцу, нападачи у бекству",
-      "url": "https://www.rts.rs/vesti/hronika/5931364/pljacka-zlatare-veli-trnovac-bujanovac.html",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T18:30:07+00:00",
-      "time": "18:30",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "radar-nova-rs-drustvo-tuzilac-dragoljub-miladinovic-rdr-109-",
       "title": "Urušen je temelj na kome počiva tužilaštvo",
       "url": "https://radar.nova.rs/drustvo/tuzilac-dragoljub-miladinovic-rdr-109/",
@@ -447,6 +447,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "n-zloupotrebljava-rat-radi-prazne-retorike-o-velikoj-americi",
+      "title": "Калибаф: Вашингтон злоупотребљава рат ради празне реторике о „великој Америци”",
+      "url": "https://www.politika.rs/scc/clanak/749293/kalibaf-vasington-zloupotrebljava-rat-radi-prazne-retorike-o-velikoj-americi",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T20:06:00+00:00",
+      "time": "20:06",
+      "source": "Politika",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "los-vucevic-o-zloupotrebi-rektorske-funkcije-vladana-djokica",
@@ -680,20 +694,6 @@
       "datetime": "2026-04-21T17:42:21+00:00",
       "time": "17:42",
       "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "-pretresaju-mup-federacije-bih-na-meti-i-ministar-ramo-isak-",
-      "title": "Pripadnici POSKOK-a pretresaju MUP Federacije BiH, na meti i ministar Ramo Isak",
-      "url": "https://www.danas.rs/svet/region/pripadnici-poskok-a-pretresaju-mup-federacije-bih-na-meti-i-ministar-ramo-isak/",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T15:21:32+00:00",
-      "time": "15:21",
-      "source": "Danas",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
