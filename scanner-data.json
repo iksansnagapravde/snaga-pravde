@@ -71,20 +71,6 @@
       "priority": 95
     },
     {
-      "id": "s-crna-hronika-9974529-hapsenje-u-crnoj-gori-zbog-6-ubistava",
-      "title": "U TOKU HAPŠENJA ZBOG 6 MAFIJAŠKIH UBISTAVA: Specijalci u Crnoj Gori od jutros u akciji u Baru i Tivtu!",
-      "url": "https://www.kurir.rs/crna-hronika/9974529/hapsenje-u-crnoj-gori-zbog-6-ubistava",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T11:26:16+00:00",
-      "time": "11:26",
-      "source": "Kurir",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "clanak-749304-uhapsen-osumnjiceni-za-tesku-kradu-u-prokuplju",
       "title": "Ухапшен осумњичени за тешку крађу у Прокупљу",
       "url": "https://www.politika.rs/scc/clanak/749304/uhapsen-osumnjiceni-za-tesku-kradu-u-prokuplju",
@@ -92,6 +78,20 @@
       "datetime": "2026-04-21T21:01:00+00:00",
       "time": "21:01",
       "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "s-ubio-osumnjiceni-vehid-muric-kao-i-mladica-iz-novog-pazara",
+      "title": "(FOTO) OVO SU BRAĆA KOJA SU UBIJENA U PODGORICI! Sa njima ubijen i državljanin Srbije, krvnik nakon zločina pobegao, a OVAKO JE UHAPŠEN!",
+      "url": "https://www.kurir.rs/crna-hronika/9974998/ovo-su-braca-hot-iz-rozaja-koje-je-danas-ubio-osumnjiceni-vehid-muric-kao-i-mladica-iz-novog-pazara",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T19:57:06+00:00",
+      "time": "19:57",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -183,6 +183,20 @@
       "priority": 92
     },
     {
+      "id": "-na-trgovinu-ljudima-i-pokusaj-prodaje-kcerke-za-20-000-evra",
+      "title": "UHAPŠEN OTAC (36) IZ PAKLA U BERANAMA! Zlostavljao ćerku, držao je zaključanu i hteo da je PRODA ZA 20.000 EVRA: Svi detalji užasa!",
+      "url": "https://www.kurir.rs/region/crna-gora/9974892/otac-iz-berana-uhapsen-zbog-sumnje-na-trgovinu-ljudima-i-pokusaj-prodaje-kcerke-za-20-000-evra",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T16:08:22+00:00",
+      "time": "16:08",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "147-u-nisu-uhapsen-osumnjiceni-za-zlostavljanje-i-kradu-vest",
       "title": "U Nišu uhapšen osumnjičeni za zlostavljanje, mučenje i krađu: Pretukao ženu, pokrao decu na ulici",
       "url": "https://www.euronews.rs/srbija/aktuelno/220147/u-nisu-uhapsen-osumnjiceni-za-zlostavljanje-i-kradu/vest",
@@ -197,20 +211,6 @@
       "priority": 92
     },
     {
-      "id": "real-sosijedada-pokusali-da-izguraju-kombi-sa-grbom-atletika",
-      "title": "HOROR SCENA NA AUTOPUTU! ISPLIVAO UZNEMIRUJUĆ SNIMAK! Huligani Real Sosijedada pokušali da izguraju kombi sa grbom Atletika, odmah su uhapšeni! VIDEO",
-      "url": "https://www.kurir.rs/sport/fudbal/9974440/huligani-real-sosijedada-pokusali-da-izguraju-kombi-sa-grbom-atletika",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T10:29:30+00:00",
-      "time": "10:29",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "ladic-osumnjicen-da-je-ubio-muskarca-sekirom-pa-zapalio-vest",
       "title": "Težak zločin kod Sremske Mitrovice: Mladić osumnjičen da je sekirom ubio muškarca, pa ga zapalio benzinom",
       "url": "https://www.euronews.rs/srbija/aktuelno/220105/mladic-osumnjicen-da-je-ubio-muskarca-sekirom-pa-zapalio/vest",
@@ -218,20 +218,6 @@
       "datetime": "2026-04-21T10:21:00+00:00",
       "time": "10:21",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-9974411-uhapsen-osumnjiceni-za-ubistvo-u-sremskoj-mitrovici",
-      "title": "HOROR KOD RUME! SEKIROM UBIO ČOVEKA, PA TELO ZAPALIO: Uhapšen tinejdžer (19) zbog teškog zločina!",
-      "url": "https://www.kurir.rs/crna-hronika/9974411/uhapsen-osumnjiceni-za-ubistvo-u-sremskoj-mitrovici",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T10:09:05+00:00",
-      "time": "10:09",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -379,20 +365,6 @@
       "priority": 70
     },
     {
-      "id": "zasto-nije-pokrenut-krivicni-postupak-protiv-vladana-djokica",
-      "title": "''ZAŠTO PROTIV POLITIČARA ĐOKIĆA NIJE POKRENUT KRIVIČNI POSTUPAK?\" Atlagić zakucao Vrhovno Javno tužilaštvo: Prostorije fakulteta pretvorio u političke štabove",
-      "url": "https://www.kurir.rs/vesti/politika/9974370/marko-atlagic-zasto-nije-pokrenut-krivicni-postupak-protiv-vladana-djokica",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T10:14:09+00:00",
-      "time": "10:14",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "radar-nova-rs-drustvo-tuzilac-dragoljub-miladinovic-rdr-109-",
       "title": "Urušen je temelj na kome počiva tužilaštvo",
       "url": "https://radar.nova.rs/drustvo/tuzilac-dragoljub-miladinovic-rdr-109/",
@@ -463,6 +435,20 @@
       "priority": 28
     },
     {
+      "id": "los-vucevic-o-zloupotrebi-rektorske-funkcije-vladana-djokica",
+      "title": "\"ZLOUPOTREBLJAVA FUNKCIJU, ON ODAVNO NIJE REKTOR\" Vučević o političaru Đokiću: Zabrinjava da ide u Brisel i lobira da Srbija bude kažnjena",
+      "url": "https://www.kurir.rs/vesti/politika/9974945/milos-vucevic-o-zloupotrebi-rektorske-funkcije-vladana-djokica",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T17:29:14+00:00",
+      "time": "17:29",
+      "source": "Kurir",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "-rektor-djokic-bio-u-briselu-da-rezim-to-ne-bi-zloupotrebio-",
       "title": "Milan St. Protić: EU nije suspendovala novac Srbiji kada je rektor Đokić bio u Briselu - da režim to ne bi zloupotrebio",
       "url": "https://nova.rs/vesti/politika/milan-st-protic-eu-nije-suspendovala-novac-srbiji-kada-je-rektor-djokic-bio-u-briselu-da-rezim-to-ne-bi-zloupotrebio/",
@@ -485,20 +471,6 @@
       "time": "16:18",
       "source": "RSE Balkan",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "-rektor-djokic-bio-u-briselu-da-rezim-to-ne-bi-zloupotrebio-",
-      "title": "Milan St. Protić: EU nije suspendovala novac Srbiji kada je rektor Đokić bio u Briselu - da režim to ne bi zloupotrebio",
-      "url": "https://n1info.rs/vesti/milan-st-protic-eu-nije-suspendovala-novac-srbiji-kada-je-rektor-djokic-bio-u-briselu-da-rezim-to-ne-bi-zloupotrebio/",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T16:08:42+00:00",
-      "time": "16:08",
-      "source": "N1",
-      "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -575,6 +547,20 @@
       "priority": 28
     },
     {
+      "id": "9974984-uhapsen-osumnjiceni-za-trostruko-ubistvo-u-podgorici",
+      "title": "PRVA SLIKA HAPŠENJA OSUMNJIČENOG ZA TROSTRUKO UBISTVO U PODGORICI Među ubijenima i muškarac iz Srbije (FOTO)",
+      "url": "https://www.kurir.rs/crna-hronika/9974984/uhapsen-osumnjiceni-za-trostruko-ubistvo-u-podgorici",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T18:40:31+00:00",
+      "time": "18:40",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "https-vreme-com-podkast-intervju-vremena-stefan-simic-",
       "title": "Intervju Vremena Stefan Simić: „Voleo bih da budem gradonačelnik Beograda“",
       "url": "https://vreme.com/podkast/intervju-vremena-stefan-simic/",
@@ -645,6 +631,20 @@
       "priority": 25
     },
     {
+      "id": "asnosti-iza-svega-stoji-frustracija-jednog-korisnika-pl13zwv",
+      "title": "Windows je u opasnosti: iza svega stoji frustracija jednog korisnika",
+      "url": "https://www.blic.rs/it/windows-je-u-opasnosti-iza-svega-stoji-frustracija-jednog-korisnika/pl13zwv",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T21:30:51+00:00",
+      "time": "21:30",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "astitom-cime-se-bavi-jedinica-kojom-ce-rukovoditi-vasojevic-",
       "title": "Bagziju dozvoljavali da se viđa sa kriminalcima, Joksoviću ubili rođaka i zapalili imovinu dok je bio pod njihovom zaštitom: Čime se bavi jedinica kojom će rukovoditi Vasojević?",
       "url": "https://nova.rs/vesti/hronika/bagziju-dozvoljavali-da-se-vidja-sa-kriminalcima-joksovicu-ubili-rodjaka-i-zapalili-imovinu-dok-je-bio-pod-njihovom-zastitom-cime-se-bavi-jedinica-kojom-ce-rukovoditi-vasojevic/",
@@ -659,32 +659,18 @@
       "priority": 24
     },
     {
-      "id": "a-hronika-9974566-ko-je-darko-elez-koji-je-izasao-iz-zatvora",
-      "title": "EVO KO JE DARKO ELEZ, NAJOPASNIJI BALKANSKI KRIMINALAC: Zbog misice pucao, sarađivao s Belivukom i Zvicerom, pominjan i na suđenju Dijani Hrkalović!",
-      "url": "https://www.kurir.rs/crna-hronika/9974566/ko-je-darko-elez-koji-je-izasao-iz-zatvora",
+      "id": "na-pevacica-ima-milione-a-njen-brat-zivi-kao-beskucnik-foto-",
+      "title": "\"Ovo je najniža tačka na kojoj sam ikada bio\": Slavna pevačica ima milione, a njen brat živi kao beskućnik FOTO",
+      "url": "https://nova.rs/zabava/sudbine/ovo-je-najniza-tacka-na-kojoj-sam-ikada-bio-slavna-pevacica-ima-milione-a-njen-brat-zivi-kao-beskucnik-foto/",
       "date": "2026-04-21",
-      "datetime": "2026-04-21T12:50:44+00:00",
-      "time": "12:50",
-      "source": "Kurir",
-      "category": "Криминал",
+      "datetime": "2026-04-21T21:36:54+00:00",
+      "time": "21:36",
+      "source": "Nova",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "w-kurir-rs-crna-hronika-9974458-darko-elez-izasao-iz-zatvora",
-      "title": "DARKO ELEZ IZAŠAO IZ ZATVORA: Kriminalac iz Bosne odslužio kaznu koju je služio u KPZ Sremska Mitrovica!",
-      "url": "https://www.kurir.rs/crna-hronika/9974458/darko-elez-izasao-iz-zatvora",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T10:48:27+00:00",
-      "time": "10:48",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
+      "priority": 8
     },
     {
       "id": "odnaevropa-org-a-bih-dodik-covic-plan-rasta-eu-33737112-html",
@@ -695,6 +681,20 @@
       "time": "11:15",
       "source": "RSE Balkan",
       "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "republika-srpska-bih-rusija-zvanicnici-posjete-33736442-html",
+      "title": "Šta Republika Srpska ima od posjeta ruskih zvaničnika?",
+      "url": "https://www.slobodnaevropa.org/a/republika-srpska-bih-rusija-zvanicnici-posjete/33736442.html",
+      "date": "2026-04-21",
+      "datetime": "2026-04-21T05:29:39+00:00",
+      "time": "05:29",
+      "source": "RSE Balkan",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
