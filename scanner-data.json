@@ -15,34 +15,6 @@
       "priority": 102
     },
     {
-      "id": "je-svojim-drzavljanima-opasno-se-zakuvalo-u-ormuskom-vy83q0v",
-      "title": "\"OVO JE SRAMNO\" SAD uputile upozorenje svojim državljanima: Opasno se zakuvalo u Ormuskom moreuzu, Iranci zaplenili brodove, Kina ODGOVORILA Trampu",
-      "url": "https://www.blic.rs/vesti/svet/iran-vesti-sad-uputile-upozorenje-svojim-drzavljanima-opasno-se-zakuvalo-u-ormuskom/vy83q0v",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T16:40:19+00:00",
-      "time": "16:40",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "https-nova-rs-vesti-hronika-dve-osobe-uhapsene-u-leskovcu-",
-      "title": "Dve osobe uhapšene u Leskovcu: Oštetili budžet Srbije za skoro 13 miliona dinara",
-      "url": "https://nova.rs/vesti/hronika/dve-osobe-uhapsene-u-leskovcu/",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T13:09:19+00:00",
-      "time": "13:09",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "onika-9975636-krivicne-prijave-zbog-poreske-utaje-u-leskovcu",
       "title": "OŠTETILI DRŽAVU ZA 12,8 MILIONA! Uhapšena dva muškarca iz Leskovca zbog utaje poreza!",
       "url": "https://www.kurir.rs/crna-hronika/9975636/krivicne-prijave-zbog-poreske-utaje-u-leskovcu",
@@ -55,6 +27,20 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "o-220355-u-leskovcu-uhapsen-muskarac-zbog-smrti-supruge-vest",
+      "title": "Porodično nasilje kod Lebana: Uhapšen muškarac (75) zbog sumnje da je nasmrt pretukao suprugu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/220355/u-leskovcu-uhapsen-muskarac-zbog-smrti-supruge/vest",
+      "date": "2026-04-22",
+      "datetime": "2026-04-22T16:45:00+00:00",
+      "time": "16:45",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "ak-749511-uhapsen-muskarac-zbog-sumnje-da-je-usmrtio-suprugu",
@@ -239,18 +225,18 @@
       "priority": 90
     },
     {
-      "id": "li-pa-odneli-20000-evra-i-dukate-vredne-vise-od-milion-evra-",
-      "title": "Tužilaštvo traži 37 godina za razbojnike: Upali u kuću starije žene i njenog sina, brutalno ih mučili, pa odneli 20.000 evra i dukate vredne više od milion evra",
-      "url": "https://nova.rs/vesti/hronika/tuzilastvo-trazi-37-godina-za-razbojnike-upali-u-kucu-starije-zene-i-njenog-sina-brutalno-ih-mucili-pa-odneli-20000-evra-i-dukate-vredne-vise-od-milion-evra/",
+      "id": "vesti-mup-uhapsen-osumnjiceni-za-ubistvo-supruge-u-leskovcu-",
+      "title": "MUP: Uhapšen osumnjičeni za ubistvo supruge u Leskovcu",
+      "url": "https://n1info.rs/vesti/mup-uhapsen-osumnjiceni-za-ubistvo-supruge-u-leskovcu/",
       "date": "2026-04-22",
-      "datetime": "2026-04-22T12:15:40+00:00",
-      "time": "12:15",
-      "source": "Nova",
-      "category": "Тужилаштво",
+      "datetime": "2026-04-22T16:52:01+00:00",
+      "time": "16:52",
+      "source": "N1",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 74
+      "priority": 70
     },
     {
       "id": "esti-hronika-uhapsen-muskarac-za-ubistvo-supruge-kod-lebana-",
@@ -645,20 +631,6 @@
       "priority": 24
     },
     {
-      "id": "acija-iz-vremena-bivse-direktorke-svedoka-protiv-selakovica-",
-      "title": "UKP u Zavodu za zaštitu spomenka kulture: Zaplenjena dokumentacija iz vremena bivše direktorke - svedoka protiv Selakovića",
-      "url": "https://nova.rs/vesti/hronika/ukp-u-zavodu-za-zastitu-spomenka-kulture-zaplenjena-dokumentacija-iz-vremena-bivse-direktorke-svedoka-protiv-selakovica/",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T12:31:09+00:00",
-      "time": "12:31",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "ve-osobe-u-leskovcu-zbog-utaje-poreza-od-128-miliona-dinara-",
       "title": "MUP: Krivične prijave protiv dve osobe u Leskovcu zbog utaje poreza od 12,8 miliona dinara",
       "url": "https://n1info.rs/vesti/mup-krivicne-prijave-protiv-dve-osobe-u-leskovcu-zbog-utaje-poreza-od-128-miliona-dinara/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 12
+    },
+    {
+      "id": "aevropa-org-a-srbija-evropska-unija-plan-rasta-33737933-html",
+      "title": "'Udar na budžet': Koja sredstva bi EU mogla uskratiti Srbiji?",
+      "url": "https://www.slobodnaevropa.org/a/srbija-evropska-unija-plan-rasta/33737933.html",
+      "date": "2026-04-22",
+      "datetime": "2026-04-22T11:57:17+00:00",
+      "time": "11:57",
+      "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
+      "id": "folksvagen-automobili-nemacka-automobilska-industrija-kriza-",
+      "title": "Folksvagen smanjuje proizvodnju za milion automobila godišnje",
+      "url": "https://vreme.com/ekonomija/folksvagen-automobili-nemacka-automobilska-industrija-kriza/",
+      "date": "2026-04-22",
+      "datetime": "2026-04-22T13:57:08+00:00",
+      "time": "13:57",
+      "source": "Vreme",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
