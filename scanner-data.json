@@ -29,18 +29,18 @@
       "priority": 104
     },
     {
-      "id": "sumnjiceni-za-likvidaciju-ace-kostura-u-beogradu-2008-godine",
-      "title": "UHAPŠEN UBICA ACE KOSTURA U PODGORICI! Velika akcija policije Srbije i Crne Gore: \"Pao\" po Interpolovoj poternici nakon 18 GODINA!",
-      "url": "https://www.kurir.rs/crna-hronika/9976000/u-podgorici-uhapsen-osumnjiceni-za-likvidaciju-ace-kostura-u-beogradu-2008-godine",
+      "id": "onika-9975636-krivicne-prijave-zbog-poreske-utaje-u-leskovcu",
+      "title": "OŠTETILI DRŽAVU ZA 12,8 MILIONA! Uhapšena dva muškarca iz Leskovca zbog utaje poreza!",
+      "url": "https://www.kurir.rs/crna-hronika/9975636/krivicne-prijave-zbog-poreske-utaje-u-leskovcu",
       "date": "2026-04-22",
-      "datetime": "2026-04-22T19:07:58+00:00",
-      "time": "19:07",
+      "datetime": "2026-04-22T13:04:55+00:00",
+      "time": "13:04",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 92
+      "priority": 100
     },
     {
       "id": "-u-crnoj-gori-po-interpolovoj-poternici-trazila-ga-i-2f8wcff",
@@ -267,14 +267,14 @@
       "priority": 70
     },
     {
-      "id": "eni-u-nigeriji-za-planiranje-drzavnog-udara-negirali-optuzbe",
-      "title": "Оптужени у Нигерији за планирање државног удара негирали оптужбе",
-      "url": "https://www.politika.rs/scc/clanak/749539/optuzeni-u-nigeriji-za-planiranje-drzavnog-udara-negirali-optuzbe",
+      "id": "rostruko-ubistvo-u-podgorici-satima-pricao-o-zlocinu-h17d3cb",
+      "title": "OSUMNJIČENI ZA TROSTRUKO UBISTVO U PODGORICI SATIMA PRIČAO O ZLOČINU PRED TUŽILAŠTVOM Žrtve svirepo ubio na spavanju? Sahranjena braća, proglašen dan žalosti",
+      "url": "https://www.blic.rs/vesti/hronika/osumnjiceni-za-trostruko-ubistvo-u-podgorici-satima-pricao-o-zlocinu/h17d3cb",
       "date": "2026-04-22",
-      "datetime": "2026-04-22T18:17:00+00:00",
-      "time": "18:17",
-      "source": "Politika",
-      "category": "Пензионери",
+      "datetime": "2026-04-22T20:19:50+00:00",
+      "time": "20:19",
+      "source": "Blic",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
@@ -405,20 +405,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "i-hronika-sta-se-krije-iza-hapsenja-skaljaraca-u-crnoj-gori-",
-      "title": "Leskovčanina mučili do smrti na planini kod Bara, informacije koje su iznudili dovele do spirale likvidacija: Šta se krije iza hapšenja \"škaljaraca\" u Crnoj Gori",
-      "url": "https://nova.rs/vesti/hronika/sta-se-krije-iza-hapsenja-skaljaraca-u-crnoj-gori/",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T16:18:03+00:00",
-      "time": "16:18",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "disnjica-bombardovanja-rts-a-vec-27-godina-pitamo-zasto-html",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "ustvo-5932378-studenti-parlament-izbori-dunp-novi-pazar-html",
+      "title": "Избори за Студентски парламент ДУНП-а – победила листа \"Слободни студенти\"",
+      "url": "https://www.rts.rs/vesti/drustvo/5932378/studenti-parlament-izbori-dunp-novi-pazar.html",
+      "date": "2026-04-22",
+      "datetime": "2026-04-22T20:40:10+00:00",
+      "time": "20:40",
+      "source": "RTS",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
