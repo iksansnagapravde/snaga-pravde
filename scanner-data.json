@@ -29,6 +29,20 @@
       "priority": 104
     },
     {
+      "id": "onika-9975636-krivicne-prijave-zbog-poreske-utaje-u-leskovcu",
+      "title": "OŠTETILI DRŽAVU ZA 12,8 MILIONA! Uhapšena dva muškarca iz Leskovca zbog utaje poreza!",
+      "url": "https://www.kurir.rs/crna-hronika/9975636/krivicne-prijave-zbog-poreske-utaje-u-leskovcu",
+      "date": "2026-04-22",
+      "datetime": "2026-04-22T13:04:55+00:00",
+      "time": "13:04",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "-recima-oprostio-od-novopazarca-ubijenog-u-podgorici-hq5gd01",
       "title": "\"MOJ DOBRI KOMŠIJA\" Ministar Memić se oprostio od Novopazarca ubijenog u Podgorici",
       "url": "https://www.blic.rs/vesti/hronika/ministar-memic-se-potresnim-recima-oprostio-od-novopazarca-ubijenog-u-podgorici/hq5gd01",
@@ -36,20 +50,6 @@
       "datetime": "2026-04-22T20:39:46+00:00",
       "time": "20:39",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vodnog-clana-vracarskog-klana-trazen-zbog-dvostrukog-ubistva",
-      "title": "UHAPŠEN \"VRAČARAC\" PO INTERPOLOVOJ POTERNICI! Velika akcija policije u Podgorici: Traže ga i Srbija i Hrvatska zbog OVA dva ubistva",
-      "url": "https://www.kurir.rs/crna-hronika/9976000/interpol-u-podgorici-uhapsio-navodnog-clana-vracarskog-klana-trazen-zbog-dvostrukog-ubistva",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T19:07:58+00:00",
-      "time": "19:07",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -281,20 +281,6 @@
       "priority": 66
     },
     {
-      "id": "mnjicen-za-ubistvo-partnera-svoje-majke-u-hrkovcima-kod-rume",
-      "title": "SASLUŠAN TINEJDŽER (19) OSUMNJIČEN ZA UBISTVO U RUMI! Izneo odbranu pred tužilaštvom: Presudio maminom dečku sekirom, pa njegovo telo ZAPALIO! (FOTO)",
-      "url": "https://www.kurir.rs/crna-hronika/9975793/saslusan-tinejdzer-19-koji-je-osumnjicen-za-ubistvo-partnera-svoje-majke-u-hrkovcima-kod-rume",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T16:00:28+00:00",
-      "time": "16:00",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "radar-nova-rs-drustvo-tuzilac-dragoljub-miladinovic-rdr-109-",
       "title": "Urušen je temelj na kome počiva tužilaštvo",
       "url": "https://radar.nova.rs/drustvo/tuzilac-dragoljub-miladinovic-rdr-109/",
@@ -307,6 +293,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "drustvo-5931990-pomen-rts-bombardovanje-secanje-neduzni-html",
+      "title": "Помен код споменика \"Зашто\" – сећање на недужно страдале раднике РТС-а у НАТО бомбардовању",
+      "url": "https://www.rts.rs/vesti/drustvo/5931990/pomen-rts-bombardovanje-secanje-neduzni.html",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T00:00:01+00:00",
+      "time": "00:00",
+      "source": "RTS",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "rebalo-da-brine-o-njima-je-srecan-kad-moze-da-ne-radi-nista-",
@@ -617,6 +617,20 @@
       "priority": 4
     },
     {
+      "id": "eror-srusene-23-garaze-srpskih-vlasnika-u-severnoj-mitrovici",
+      "title": "KOSOVSKA POLICIJA PREUZELA IZVRŠNU VLAST! Milan Radojević: Svedočimo gaženju zakona u Severnoj Mitrovici, podnećemo tužbu zbog rušenja srpskih garaža!",
+      "url": "https://www.kurir.rs/vesti/srbi-na-kim/9975432/kurtijeva-policija-nastavlja-teror-srusene-23-garaze-srpskih-vlasnika-u-severnoj-mitrovici",
+      "date": "2026-04-22",
+      "datetime": "2026-04-22T11:03:31+00:00",
+      "time": "11:03",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "udenti-medicinskog-u-beogradu-blokada-dekanata-33737333-html",
       "title": "Studenti Medicinskog u Beogradu pokušali da blokiraju Dekanat",
       "url": "https://www.slobodnaevropa.org/a/studenti-medicinskog-u-beogradu-blokada-dekanata/33737333.html",
@@ -680,20 +694,6 @@
       "datetime": "2026-04-22T22:46:00+00:00",
       "time": "22:46",
       "source": "Blic",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "mun-posle-sedam-godina-izborio-promociju-u-superligu-srbije-",
-      "title": "Zemun posle sedam godina izborio promociju u Superligu Srbije",
-      "url": "https://nova.rs/sport/fudbal/zemun-posle-sedam-godina-izborio-promociju-u-superligu-srbije/",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T22:44:23+00:00",
-      "time": "22:44",
-      "source": "Nova",
       "category": "Избори",
       "summary": "",
       "breaking": false,
