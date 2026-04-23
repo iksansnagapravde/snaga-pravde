@@ -29,20 +29,6 @@
       "priority": 104
     },
     {
-      "id": "orak-unazad-povratak-uglju-i-alternativama-ako-rat-u-wckxd54",
-      "title": "Odricanje od skupog gasa i korak unazad: Povratak uglju i alternativama ako rat u Iranu potraje",
-      "url": "https://www.blic.rs/biznis/vesti/odricanje-od-skupog-gasa-i-korak-unazad-povratak-uglju-i-alternativama-ako-rat-u/wckxd54",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T12:32:02+00:00",
-      "time": "12:32",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "adovi-bez-prijave-posed-beograd-milan-radoicic-33740929-html",
       "title": "Stotine kvadrata i radovi bez prijave: Šta se gradi na posedu Radoičića u Beogradu?",
       "url": "https://www.slobodnaevropa.org/a/stotine-kvadrata-i-radovi-bez-prijave-posed-beograd-milan-radoicic/33740929.html",
@@ -55,6 +41,48 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "rpol-u-hrvatskoj-ko-je-vracarac-koji-je-uhapsen-u-podgorici-",
+      "title": "Povezuju ga sa dve likvidacije u Beogradu, traži ga i Interpol u Hrvatskoj: Ko je \"vračarac\" koji je uhapšen u Podgorici?",
+      "url": "https://nova.rs/vesti/hronika/povezuju-ga-sa-dve-likvidacije-u-beogradu-trazi-ga-i-interpol-u-hrvatskoj-ko-je-vracarac-koji-je-uhapsen-u-podgorici/",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T17:05:12+00:00",
+      "time": "17:05",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "na-hronika-9976836-snimak-hapsenja-laznog-hirurga-u-beogradu",
+      "title": "POLICAJCI GA BACAJU NA BETON, STAVLJAJU LISICE I OTVARAJU NOVČANIK PUN PARA! Ovako je u Beogradu uhapšen LAŽNI HIRURG - kod sebe imao skoro 18.000 EVRA (VIDEO)",
+      "url": "https://www.kurir.rs/crna-hronika/9976836/snimak-hapsenja-laznog-hirurga-u-beogradu",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T15:53:49+00:00",
+      "time": "15:53",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "na-hronika-9976826-u-beogradu-uhapsen-makedonac-lazni-hirurg",
+      "title": "LAŽNI HIRURG UZIMAO LJUDIMA OGROMNE PARE! U Beogradu uhapšen Makedonac koji je varao porodice povređenih u saobraćajnim nesrećama: Uzeo im više od 100.000 EVRA",
+      "url": "https://www.kurir.rs/crna-hronika/9976826/u-beogradu-uhapsen-makedonac-lazni-hirurg",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T15:38:35+00:00",
+      "time": "15:38",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "e-ubijena-zena-iz-lebana-muz-je-tukao-drvenom-motkom-4gz8yq9",
@@ -133,34 +161,6 @@
       "date": "2026-04-23",
       "datetime": "2026-04-23T13:12:55+00:00",
       "time": "13:12",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vojica-sumnja-se-da-su-provalili-u-tri-crkve-dve-opljackali-",
-      "title": "PU Niš: Uhapšena dvojica, sumnja se da su provalili u tri crkve, dve opljačkali",
-      "url": "https://n1info.rs/vesti/pu-nis-uhapsena-dvojica-sumnja-se-da-su-provalili-u-tri-crkve-dve-opljackali/",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T12:03:08+00:00",
-      "time": "12:03",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "hronika-9976493-vracarac-uhapsen-u-grckoj-prvi-put-u-sudnici",
-      "title": "\"PUKAO MI JE FILM, IŠEVIO SAM GA, ISTRESAO SAM 6 METAKA\" Vračarac, koji je uhapšen u Grčkoj, danas prvi put u sudnici Specijalnog suda!",
-      "url": "https://www.kurir.rs/crna-hronika/9976493/vracarac-uhapsen-u-grckoj-prvi-put-u-sudnici",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T11:31:36+00:00",
-      "time": "11:31",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -253,20 +253,6 @@
       "priority": 92
     },
     {
-      "id": "cen-zahtev-potvrden-pritvor-panticu-i-zaricu-u-pristini-vest",
-      "title": "Odbačen zahtev za zaštitu zakonitosti, potvrđen pritvor Pantiću i Zariću u Prištini",
-      "url": "https://www.euronews.rs/srbija/aktuelno/220181/odbacen-zahtev-potvrden-pritvor-panticu-i-zaricu-u-pristini/vest",
-      "date": "2026-04-21",
-      "datetime": "2026-04-21T16:50:00+00:00",
-      "time": "16:50",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "azni-hirurg-iz-severne-makedonije-zgrnuo-100000-evra-93g9gxv",
       "title": "LAŽNI HIRURG VARAO LJUDE PO BEOGRADU I UZIMAO \"MASNE\" PARE! Makedonac se predstavljao kao lekar, pa tražio novac za \"HITNE\" operacije: Zgrnuo 100.000 EVRA",
       "url": "https://www.blic.rs/vesti/hronika/u-beogradu-uhapsen-lazni-hirurg-iz-severne-makedonije-zgrnuo-100000-evra/93g9gxv",
@@ -307,6 +293,48 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "gradu-uhapsen-muskarac-koji-se-lazno-predstavljao-kao-hirurg",
+      "title": "У Београду ухапшен мушкарац који се лажно представљао као хирург",
+      "url": "https://www.politika.rs/scc/clanak/749794/u-beogradu-uhapsen-muskarac-koji-se-lazno-predstavljao-kao-hirurg",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T17:16:00+00:00",
+      "time": "17:16",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "n-lazni-hirurg-koji-je-varao-ljude-po-beogradu-video-wyhemf0",
+      "title": "(VIDEO) POLICIJA GA SRUŠILA NA ZEMLJU, A TORBICA PRELIVA OD PARA! Ovako je uhapšen lažni hirurg koji je varao po Beogradu: Obećavao HITNE operacije i otimao novac",
+      "url": "https://www.blic.rs/vesti/hronika/ovako-je-uhapsen-lazni-hirurg-koji-je-varao-ljude-po-beogradu-video/wyhemf0",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T16:35:18+00:00",
+      "time": "16:35",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "uelno-220547-hapsenje-makedonca-zbog-prevare-u-beogradu-vest",
+      "title": "Uhapšen lažni hirurg u Beogradu: Državljanin Severne Makedonije varao ljude i uzimao im novac za operacije (VIDEO)",
+      "url": "https://www.euronews.rs/srbija/aktuelno/220547/hapsenje-makedonca-zbog-prevare-u-beogradu/vest",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T16:17:00+00:00",
+      "time": "16:17",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "onika-5933353-hapsenje-lazno-se-predstavljao-kao-hirurg-html",
@@ -421,6 +449,20 @@
       "priority": 70
     },
     {
+      "id": "gimnazije-zbog-nelegalne-kupole-raselio-ucenike-u-tri-skole-",
+      "title": "Tužilaštvo pokrenulo postupak protiv direktora Jovine gimnazije: Zbog nelegalne kupole raselio učenike u tri škole",
+      "url": "https://nova.rs/vesti/drustvo/tuzilastvo-pokrenulo-postupak-protiv-direktora-jovine-gimnazije-zbog-nelegalne-kupole-raselio-ucenike-u-tri-skole/",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T17:02:05+00:00",
+      "time": "17:02",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "itelji-ucenika-traze-da-se-on-razresi-funkcije-koju-obavlja-",
       "title": "Pokrenut postupak protiv direktora Jovine gimnazije: Roditelji učenika traže da se on razreši funkcije koju obavlja",
       "url": "https://nova.rs/vesti/drustvo/pokrenut-postupak-protiv-direktora-jovine-gimnazije-roditelji-ucenika-traze-da-se-on-razresi-funkcije-koju-obavlja/",
@@ -477,6 +519,20 @@
       "priority": 66
     },
     {
+      "id": "va-jedna-vrsta-cenzure-nadam-se-da-je-uskoro-vise-nece-biti-",
+      "title": "Borka Tomović: Na RTS-u se dešava jedna vrsta cenzure, nadam se da je uskoro više neće biti",
+      "url": "https://n1info.rs/vesti/borka-tomovic-na-rts-u-se-desava-jedna-vrsta-cenzure-nadam-se-da-je-uskoro-vise-nece-biti/",
+      "date": "2026-04-23",
+      "datetime": "2026-04-23T17:16:00+00:00",
+      "time": "17:16",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "e-jedna-vrsta-cenzure-za-koju-se-nadam-da-nece-dugo-trajati-",
       "title": "Borka Tomović o promenama na RTS-u: \"To je jedna vrsta cenzure, za koju se nadam da neće dugo trajati\"",
       "url": "https://nova.rs/zabava/showbiz/borka-tomovic-o-promenama-na-rts-u-to-je-jedna-vrsta-cenzure-za-koju-se-nadam-da-nece-dugo-trajati/",
@@ -485,20 +541,6 @@
       "time": "14:16",
       "source": "Nova",
       "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "https-www-danas-rs-kultura-borka-tomovic-o-cenzuri-na-rtsu-",
-      "title": "Borka Tomović: Na RTS-u se dešava jedna vrsta cenzure, za koju se nadam da uskoro više neće biti",
-      "url": "https://www.danas.rs/kultura/borka-tomovic-o-cenzuri-na-rtsu/",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T13:50:34+00:00",
-      "time": "13:50",
-      "source": "Danas",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": true,
@@ -519,18 +561,18 @@
       "priority": 60
     },
     {
-      "id": "nda-o-gasenju-zvezda-granda-reagovao-posle-ane-sevic-7rkpm23",
-      "title": "POSLE PRIČA O GAŠENJU \"ZVEZDA GRANDA\" Oglasio se i direktor \"Granda\" nakon Ane Sević:\"Ovo je već postala tradicija\"",
-      "url": "https://www.blic.rs/zabava/direktor-granda-o-gasenju-zvezda-granda-reagovao-posle-ane-sevic/7rkpm23",
+      "id": "vodio-socijalista-osudjen-za-korupciju-u-eps-ovom-preduzecu-",
+      "title": "Dvoje odbornika DS-a napušta rad niške skupštine:  Sednicu vodio socijalista osuđen za korupciju u EPS-ovom preduzeću",
+      "url": "https://n1info.rs/vesti/dvoje-odbornika-ds-a-napusta-rad-niske-skupstine-sednicu-vodio-socijalista-osudjen-za-korupciju-u-eps-ovom-preduzecu/",
       "date": "2026-04-23",
-      "datetime": "2026-04-23T13:15:40+00:00",
-      "time": "13:15",
-      "source": "Blic",
-      "category": "Људска права",
+      "datetime": "2026-04-23T17:39:10+00:00",
+      "time": "17:39",
+      "source": "N1",
+      "category": "Корупција",
       "summary": "",
       "breaking": false,
-      "alert": true,
-      "priority": 60
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "m-savamale-na-zgaristu-pravne-drzave-podigla-leglo-korupcije",
@@ -631,20 +673,6 @@
       "priority": 26
     },
     {
-      "id": "or-fbi-kes-patel-popuni-test-o-konzumiranju-alkohola-kp6yx2w",
-      "title": "BURA U AMERICI Posle pisanja da se direktor FBI napije i ne dođe na posao, demokrate traže da uradi alko-test: \"To bi moglo da ima posledice po državu\"",
-      "url": "https://www.blic.rs/vesti/svet/demokrate-traze-da-direktor-fbi-kes-patel-popuni-test-o-konzumiranju-alkohola/kp6yx2w",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T13:38:48+00:00",
-      "time": "13:38",
-      "source": "Blic",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "www-rts-rs-vesti-drustvo-5932987-bombardovanje-rts-nato-html",
       "title": "Помен код споменика \"Зашто\" – сећање на недужно страдале раднике РТС-а у НАТО бомбардовању",
       "url": "https://www.rts.rs/vesti/drustvo/5932987/bombardovanje-rts-nato-.html",
@@ -652,20 +680,6 @@
       "datetime": "2026-04-23T12:48:06+00:00",
       "time": "12:48",
       "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "lobiranje-nevladinih-organizacija-protiv-pravosudnog-sistema",
-      "title": "STRUKOVNE TUŽILAČKE NVO LOBIRAJU PROTIV PRAVOSUDNOG SUVERENITETA? Otvorena sprega nevladinih organizacija sa opozicijom",
-      "url": "https://www.kurir.rs/vesti/politika/9976479/lobiranje-nevladinih-organizacija-protiv-pravosudnog-sistema",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T11:08:48+00:00",
-      "time": "11:08",
-      "source": "Kurir",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "zoluciju-un-za-jacu-borbu-protiv-seksualne-ucene-maloletnika",
-      "title": "САД најављују резолуцију УН за јачу борбу против сексуалне уцене малолетника",
-      "url": "https://www.politika.rs/scc/clanak/749779/sad-najavljuju-rezoluciju-un-za-jacu-borbu-protiv-seksualne-ucene-maloletnika",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T15:54:00+00:00",
-      "time": "15:54",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     }
   ],
   "all_sources": [
