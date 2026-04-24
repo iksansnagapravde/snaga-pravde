@@ -561,20 +561,6 @@
       "priority": 30
     },
     {
-      "id": "-vesti-drustvo-istraga-politicki-pritisak-zbog-generalstaba-",
-      "title": "Zaposleni u Zavodu za zaštitu spomenika: Istraga protiv koleginice politički pritisak zbog Generalštaba",
-      "url": "https://nova.rs/vesti/drustvo/istraga-politicki-pritisak-zbog-generalstaba/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T15:47:46+00:00",
-      "time": "15:47",
-      "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "ar-nova-rs-drustvo-laza-dzamic-flaneristika-srbija-madarska-",
       "title": "Svaki kilometar koruptivno naduvanih puteva je jedna izgubljena škola",
       "url": "https://radar.nova.rs/drustvo/laza-dzamic-flaneristika-srbija-madarska/",
@@ -694,6 +680,20 @@
       "datetime": "2026-04-24T17:47:59+00:00",
       "time": "17:47",
       "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "vlasti-najavio-za-ponedeljak-jednocasovni-strajk-upozorenja-",
+      "title": "Sindikat sudske vlasti najavio za ponedeljak jednočasovni štrajk upozorenja",
+      "url": "https://n1info.rs/vesti/sindikat-sudske-vlasti-najavio-za-ponedeljak-jednocasovni-strajk-upozorenja/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T17:13:59+00:00",
+      "time": "17:13",
+      "source": "N1",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
