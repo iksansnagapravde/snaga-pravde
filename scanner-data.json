@@ -449,20 +449,6 @@
       "priority": 60
     },
     {
-      "id": "inskom-fakultetu-u-vezi-sa-izborima-za-studentski-parlament-",
-      "title": "Izborni proces nepopravljivo kompromitovan: Završen sastanak na Medicinskom fakultetu u vezi sa izborima za Studentski parlament",
-      "url": "https://nova.rs/vesti/drustvo/zavrsen-sastanak-na-medicinskom-fakultetu-u-vezi-sa-izborima-za-studentski-parlament/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T16:04:41+00:00",
-      "time": "16:04",
-      "source": "Nova",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "disnjica-bombardovanja-rts-a-27-godina-od-smrti-radnika-vest",
       "title": "Godišnjica bombardovanja RTS-a: 27 godina od smrti 16 radnika i pitanja \"Zašto\" na koje porodice još čekaju odgovor",
       "url": "https://www.euronews.rs/srbija/drustvo/220553/godisnjica-bombardovanja-rts-a-27-godina-od-smrti-radnika/vest",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "ce-snose-obicni-gradjani-a-odgovorni-zaradjuju-na-tenderima-",
+      "title": "Radoičić preuzeo odgovornost za Banjsku, a u Srbiji je slobodan čovek: \"Posledice snose obični građani, a odgovorni zarađuju na tenderima\"",
+      "url": "https://n1info.rs/vesti/radoicic-preuzeo-odgovornost-za-banjsku-a-u-srbiji-je-slobodan-covek-posledice-snose-obicni-gradjani-a-odgovorni-zaradjuju-na-tenderima/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T19:04:31+00:00",
+      "time": "19:04",
+      "source": "N1",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
