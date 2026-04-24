@@ -1,18 +1,18 @@
 {
   "entries": [
     {
-      "id": "-sedam-kljucnih-preporuka-za-otklanjanje-uocenih-nedostataka",
-      "title": "Venecijanska komisija dala sedam ključnih preporuka za otklanjanje uočenih nedostataka",
-      "url": "https://beta.rs/content/243548-venecijanska-komisija-dala-sedam-kljucnih-preporuka-za-otklanjanje-uocenih-nedostataka",
+      "id": "anska-komisija-srbija-izmene-pravosudni-zakoni-33741597-html",
+      "title": "Venecijanska komisija izdala Srbiji preporuke za otklanjanje nedostataka pravosudnih zakona",
+      "url": "https://www.slobodnaevropa.org/a/venecijanska-komisija-srbija-izmene-pravosudni-zakoni/33741597.html",
       "date": "2026-04-24",
-      "datetime": "2026-04-24T10:40:11+00:00",
-      "time": "10:40",
-      "source": "Beta",
-      "category": "Тужилаштво",
+      "datetime": "2026-04-24T10:51:26+00:00",
+      "time": "10:51",
+      "source": "RSE Balkan",
+      "category": "Криминал",
       "summary": "",
       "breaking": true,
       "alert": true,
-      "priority": 166
+      "priority": 190
     },
     {
       "id": "sti-drustvo-venecijanska-komisija-mrdicevi-zakoni-misljenje-",
@@ -29,6 +29,62 @@
       "priority": 166
     },
     {
+      "id": "ka-komisija-se-izjasnila-o-izmenama-zakona-o-pravosudju-html",
+      "title": "Венецијанска комисија се изјаснила о изменама закона о правосуђу",
+      "url": "https://www.rts.rs/vesti/politika/5934024/venecijanska-komisija-se-izjasnila-o-izmenama-zakona-o-pravosudju.html",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:25:20+00:00",
+      "time": "11:25",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 125
+    },
+    {
+      "id": "astva-pogledajte-9-kljucnih-preporuka-venecijanske-komisije-",
+      "title": "Vratiti tužioce u JTOK i ostala tužilaštva: Pogledajte 9 ključnih preporuka Venecijanske komisije",
+      "url": "https://nova.rs/vesti/politika/vratiti-tuzioce-u-jtok-i-ostala-tuzilastva-pogledajte-9-kljucnih-preporuka-venecijanske-komisije/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:14:48+00:00",
+      "time": "11:14",
+      "source": "Nova",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 125
+    },
+    {
+      "id": "-www-danas-rs-vesti-drustvo-preporuke-venecijanska-komisija-",
+      "title": "Sedam ključnih preporuka Venecijanske komisije",
+      "url": "https://www.danas.rs/vesti/drustvo/preporuke-venecijanska-komisija/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:05:27+00:00",
+      "time": "11:05",
+      "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 125
+    },
+    {
+      "id": "-sedam-kljucnih-preporuka-za-otklanjanje-uocenih-nedostataka",
+      "title": "Venecijanska komisija dala sedam ključnih preporuka za otklanjanje uočenih nedostataka",
+      "url": "https://beta.rs/content/243548-venecijanska-komisija-dala-sedam-kljucnih-preporuka-za-otklanjanje-uocenih-nedostataka",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T10:40:11+00:00",
+      "time": "10:40",
+      "source": "Beta",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 125
+    },
+    {
       "id": "adovi-bez-prijave-posed-beograd-milan-radoicic-33740929-html",
       "title": "Stotine kvadrata i radovi bez prijave: Šta se gradi na posedu Radoičića u Beogradu?",
       "url": "https://www.slobodnaevropa.org/a/stotine-kvadrata-i-radovi-bez-prijave-posed-beograd-milan-radoicic/33740929.html",
@@ -41,6 +97,48 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "www-danas-rs-vesti-drustvo-saslusan-lazni-hirurg-u-beogradu-",
+      "title": "Saslušan lažni hirurg u Beogradu",
+      "url": "https://www.danas.rs/vesti/drustvo/saslusan-lazni-hirurg-u-beogradu/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:41:10+00:00",
+      "time": "11:41",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "s-vesti-makedonac-se-lazno-predstavljao-kao-hirurg-hapsenje-",
+      "title": "Uhapšen Makedonac, lažno se predstavljao kao hirurg i obećavao operaciju u zamenu za novac",
+      "url": "https://n1info.rs/vesti/makedonac-se-lazno-predstavljao-kao-hirurg-hapsenje/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:13:31+00:00",
+      "time": "11:13",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "i-osumnjiceni-za-masakr-u-damasku-priveden-u-provinciji-hama",
+      "title": "Главни осумњичени за масакр у Дамаску приведен у провинцији Хама",
+      "url": "https://www.politika.rs/scc/clanak/749975/glavni-osumnjiceni-za-masakr-u-damasku-priveden-u-provinciji-hama",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:09:00+00:00",
+      "time": "11:09",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "62-pripadnik-krimi-grupe-uhapsen-zbog-falsifikovanja-isprava",
@@ -127,18 +225,18 @@
       "priority": 92
     },
     {
-      "id": "-uhapsen-mladic-u-beogradu-zbog-sumnje-na-ucesce-u-ratu-vest",
-      "title": "Uhapšen mladić u Beogradu zbog sumnje na učešće u ratu: Kod sebe imao vojnu knjižicu ukrajinske vojske (FOTO)",
-      "url": "https://www.euronews.rs/srbija/aktuelno/220273/uhapsen-mladic-u-beogradu-zbog-sumnje-na-ucesce-u-ratu/vest",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T11:04:00+00:00",
-      "time": "11:04",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
+      "id": "a-operaciju-tvrdio-da-je-njen-clan-porodice-doziveo-nesrecu-",
+      "title": "Saslušan lažni hirurg: Oštećenoj tražio novac za operaciju, tvrdio da je njen član porodice doživeo nesreću",
+      "url": "https://nova.rs/vesti/hronika/saslusan-lazni-hirurg-ostecenoj-trazio-novac-za-operaciju-tvrdio-da-je-njen-clan-porodice-doziveo-nesrecu/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:16:34+00:00",
+      "time": "11:16",
+      "source": "Nova",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 92
+      "priority": 90
     },
     {
       "id": "-aktuelno-220618-uhapsen-drzavljanin-crne-gore-u-srbiji-vest",
@@ -184,7 +282,7 @@
     },
     {
       "id": "p-uhapsen-drzavljanin-crne-gore-zbog-falsifikovanja-isprave-",
-      "title": "MUP: Uhapšen državljanin Crne Gore zbog falsifikovanja isprave",
+      "title": "(VIDEO) MUP: Uhapšen državljanin Crne Gore zbog falsifikovanja isprave",
       "url": "https://n1info.rs/vesti/mup-uhapsen-drzavljanin-crne-gore-zbog-falsifikovanja-isprave/",
       "date": "2026-04-24",
       "datetime": "2026-04-24T09:16:28+00:00",
@@ -253,6 +351,20 @@
       "priority": 72
     },
     {
+      "id": "edna-osoba-nakon-pogibije-radnika-na-gradilistu-u-djakovici-",
+      "title": "Uhapšena jedna osoba nakon pogibije radnika na gradilištu u Đakovici",
+      "url": "https://nova.rs/vesti/hronika/uhapsena-jedna-osoba-nakon-pogibije-radnika-na-gradilistu-u-djakovici/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T10:55:25+00:00",
+      "time": "10:55",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "uelno-220547-hapsenje-makedonca-zbog-prevare-u-beogradu-vest",
       "title": "Uhapšen lažni hirurg u Beogradu: Državljanin Severne Makedonije varao ljude i uzimao im novac za operacije (VIDEO)",
       "url": "https://www.euronews.rs/srbija/aktuelno/220547/hapsenje-makedonca-zbog-prevare-u-beogradu/vest",
@@ -293,6 +405,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "lastvo-trazi-pritvor-za-laznog-hirurga-iz-severne-makedonije",
+      "title": "LAŽNI HIRURG IZ MAKEDONIJE ZAĆUTAO NA SASLUŠANJU: Imao i pomagače, tužilaštvo traži da mu bude određen pritvor",
+      "url": "https://www.kurir.rs/crna-hronika/9977412/tuzilastvo-trazi-pritvor-za-laznog-hirurga-iz-severne-makedonije",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:24:22+00:00",
+      "time": "11:24",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "skaljarskog-klana-sumnja-se-da-je-zazidan-u-tvrdjavi-pephgwj",
@@ -379,20 +505,6 @@
       "priority": 66
     },
     {
-      "id": "ik-razbija-mitove-u-cernobilju-nikada-nisu-pronadeni-mutanti",
-      "title": "Белоруски научник разбија митове: У Чернобиљу никада нису пронађени мутанти",
-      "url": "https://www.politika.rs/scc/clanak/749961/beloruski-naucnik-razbija-mitove-u-cernobilju-nikada-nisu-pronadeni-mutanti",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T10:21:00+00:00",
-      "time": "10:21",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "teninu-italijanski-kuvari-otkrivaju-sta-je-istina-a-sta-mit-",
       "title": "Da li treba dodavati ulje u vodu za testeninu? Italijanski kuvari otkrivaju šta je istina, a šta mit",
       "url": "https://www.danas.rs/zivot/da-li-treba-dodavati-ulje-u-vodu-za-testeninu-italijanski-kuvari-otkrivaju-sta-je-istina-a-sta-mit/",
@@ -463,20 +575,6 @@
       "priority": 30
     },
     {
-      "id": "inu-opozicija-porucuje-policija-u-sluzbi-kriminalnog-rezima-",
-      "title": "Privedeni aktivisti u Zrenjaninu, opozicija poručuje: Policija u službi kriminalnog režima",
-      "url": "https://n1info.rs/vesti/privedeni-aktivisti-u-zrenjaninu-opozicija-porucuje-policija-u-sluzbi-kriminalnog-rezima/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T08:20:48+00:00",
-      "time": "08:20",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "ps-radar-nova-rs-drustvo-medicinski-fakultet-izbori-nasilje-",
       "title": "Pod ovom vlašću, ne mogu se organizovati nijedni izbori bez zloupotreba i nasilja",
       "url": "https://radar.nova.rs/drustvo/medicinski-fakultet-izbori-nasilje/",
@@ -492,7 +590,7 @@
     },
     {
       "id": "ka-9977293-pogledajte-snimak-hapsenja-pripadnika-krimi-grupe",
-      "title": "FILMSKO HAPŠENJE ČLANA KRIMI-GRUPE U POZNATOM RESTORANU! Pogledajte spektakularnu akciju, oborili ga na pod i odmah lisice! VIDEO",
+      "title": "FILMSKO HAPŠENJE KAVČANINA U POZNATOM RESTORANU! Pogledajte spektakularnu akciju, oborili ga na pod i odmah lisice! VIDEO",
       "url": "https://www.kurir.rs/crna-hronika/9977293/pogledajte-snimak-hapsenja-pripadnika-krimi-grupe",
       "date": "2026-04-24",
       "datetime": "2026-04-24T09:38:36+00:00",
@@ -517,6 +615,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "5-venecijanska-komisija-o-zakonima-o-pravosudu-u-srbiji-vest",
+      "title": "Mišljenje Venecijanske komisije: \"Izmene zakona o pravosuđu sadrže nedostatke, ugrožena autonomija pravosuđa\"",
+      "url": "https://www.euronews.rs/srbija/drustvo/220655/venecijanska-komisija-o-zakonima-o-pravosudu-u-srbiji/vest",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T11:30:00+00:00",
+      "time": "11:30",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "www-krik-rs-jasmina-vasovic-vise-nije-na-celu-vrhovnog-suda-",
@@ -575,34 +687,6 @@
       "priority": 8
     },
     {
-      "id": "o-brzo-morati-da-odgovori-na-brojna-pitanja-i-polozi-racune-",
-      "title": "\"Balint Pastor će vrlo brzo morati da odgovori na brojna pitanja i položi račune\"",
-      "url": "https://nova.rs/vesti/politika/balint-pastor-ce-vrlo-brzo-morati-da-odgovori-na-brojna-pitanja-i-polozi-racune/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T08:06:53+00:00",
-      "time": "08:06",
-      "source": "Nova",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "o-brzo-morati-da-odgovori-na-brojna-pitanja-i-polozi-racune-",
-      "title": "LSV Vojvođani: Balint Pastor će vrlo brzo morati da odgovori na brojna pitanja i položi račune",
-      "url": "https://n1info.rs/vesti/lsv-vojvodjani-balint-pastor-ce-vrlo-brzo-morati-da-odgovori-na-brojna-pitanja-i-polozi-racune/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T07:55:57+00:00",
-      "time": "07:55",
-      "source": "N1",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "a-otpad-eu-bih-gorivo-lukavac-kakanj-cementara-33740740-html",
       "title": "BiH sve više koristi otpad iz EU kao gorivo",
       "url": "https://www.slobodnaevropa.org/a/otpad-eu-bih-gorivo-lukavac-kakanj-cementara/33740740.html",
@@ -615,90 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "da-odsteta-porodice-dvoje-nastradalih-novi-sad-nadstresnica-",
-      "title": "Sud dosudio naknadu štete porodicama dve žrtve tragedije u Novom Sadu",
-      "url": "https://vreme.com/drustvo/presuda-odsteta-porodice-dvoje-nastradalih-novi-sad-nadstresnica/",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T17:06:02+00:00",
-      "time": "17:06",
-      "source": "Vreme",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "icne-prijave-u-leskovcu-utajili-skoro-13-miliona-poreza-vest",
-      "title": "Akcija protiv sive ekonomije: Podnete krivične prijave u Leskovcu, oštetili budžet Srbije za skoro 13 miliona",
-      "url": "https://www.euronews.rs/srbija/aktuelno/220321/krivicne-prijave-u-leskovcu-utajili-skoro-13-miliona-poreza/vest",
-      "date": "2026-04-22",
-      "datetime": "2026-04-22T12:40:00+00:00",
-      "time": "12:40",
-      "source": "Euronews Serbia",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "a-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem-",
-      "title": "Macut u žalbi Savetu za štampu tvrdi da mu KRIK ugrožava bezbednost, upoređuje sebe sa Đinđićem",
-      "url": "https://www.krik.rs/macut-u-zalbi-savetu-za-stampu-tvrdi-da-mu-krik-ugrozava-bezbednost-uporedjuje-sebe-sa-djindjicem/",
-      "date": "2026-04-09",
-      "datetime": "2026-04-09T11:07:44+00:00",
-      "time": "11:07",
-      "source": "KRIK",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "eogradu-ukp-mu-prisao-sa-ledja-dok-je-sedeo-za-stolom-video-",
-      "title": "Pogledajte snimak hapšenja \"kavčanina\" u restoranu u Beogradu: UKP mu prišao sa leđa dok je sedeo za stolom VIDEO",
-      "url": "https://nova.rs/vesti/hronika/pogledajte-snimak-hapsenja-kavcanina-u-restoranu-u-beogradu-ukp-mu-prisao-sa-ledja-dok-je-sedeo-za-stolom-video/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T10:31:47+00:00",
-      "time": "10:31",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "https-vreme-com-svet-vozovi-zeleznica-danska-neserca-",
-      "title": "Sudar vozova u Danskoj, povređeno 17 osoba – četiri u kritičnom stanju",
-      "url": "https://vreme.com/svet/vozovi-zeleznica-danska-neserca/",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T16:45:23+00:00",
-      "time": "16:45",
-      "source": "Vreme",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "tvrde-da-nije-bilo-odluke-oglasila-se-kosovska-policija-vest",
-      "title": "Rušenje garaža u Severnoj Mitrovici: Opština i građani tvrde da nije bilo odluke, oglasila se kosovska policija",
-      "url": "https://www.euronews.rs/srbija/politika/220405/rusenje-garaza-u-severnoj-mitrovici-opstina-i-gradani-tvrde-da-nije-bilo-odluke-oglasila-se-kosovska-policija/vest",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T07:09:00+00:00",
-      "time": "07:09",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
