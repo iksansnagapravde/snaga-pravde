@@ -29,20 +29,6 @@
       "priority": 190
     },
     {
-      "id": "astva-pogledajte-9-kljucnih-preporuka-venecijanske-komisije-",
-      "title": "Vratiti tužioce u JTOK i ostala tužilaštva: Pogledajte 9 ključnih preporuka Venecijanske komisije",
-      "url": "https://nova.rs/vesti/politika/vratiti-tuzioce-u-jtok-i-ostala-tuzilastva-pogledajte-9-kljucnih-preporuka-venecijanske-komisije/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T11:14:48+00:00",
-      "time": "11:14",
-      "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 125
-    },
-    {
       "id": "sen-muskarac-u-velikoj-plani-eksploatisao-veliku-moravu-vest",
       "title": "Uhapšen muškarac u Velikoj Plani: Nelegalnom eksploatacijom Velike Morave stekao više od 200 miliona",
       "url": "https://www.euronews.rs/srbija/aktuelno/220656/uhapsen-muskarac-u-velikoj-plani-eksploatisao-veliku-moravu/vest",
@@ -55,6 +41,20 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "ww-slobodnaevropa-org-a-kosovo-presuda-banjska-33741544-html",
+      "title": "Optuženi za napad u Banjskoj  Spasojević i Tolić osuđeni na doživotnu kaznu zatvora, Maksimoviću 30 godina",
+      "url": "https://www.slobodnaevropa.org/a/kosovo-presuda-banjska/33741544.html",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T13:13:26+00:00",
+      "time": "13:13",
+      "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 96
     },
     {
       "id": "adovi-bez-prijave-posed-beograd-milan-radoicic-33740929-html",
@@ -113,48 +113,6 @@
       "priority": 92
     },
     {
-      "id": "vosadski-zborovi-organizuju-blokade-zbog-uhapsenih-saboraca-",
-      "title": "Novosadski zborovi organizuju blokade zbog uhapšenih saboraca: U zatvoru na Klisi mladić u pritvoru više od 17 meseci",
-      "url": "https://www.danas.rs/vesti/drustvo/novosadski-zborovi-organizuju-blokade-zbog-uhapsenih-saboraca/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T11:54:56+00:00",
-      "time": "11:54",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "www-danas-rs-vesti-drustvo-saslusan-lazni-hirurg-u-beogradu-",
-      "title": "Saslušan lažni hirurg u Beogradu",
-      "url": "https://www.danas.rs/vesti/drustvo/saslusan-lazni-hirurg-u-beogradu/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T11:41:10+00:00",
-      "time": "11:41",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "s-vesti-makedonac-se-lazno-predstavljao-kao-hirurg-hapsenje-",
-      "title": "Uhapšen Makedonac, lažno se predstavljao kao hirurg i obećavao operaciju u zamenu za novac",
-      "url": "https://n1info.rs/vesti/makedonac-se-lazno-predstavljao-kao-hirurg-hapsenje/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T11:13:31+00:00",
-      "time": "11:13",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "hapsen-muskarac-iz-lebana-osumnjicen-da-je-ubio-suprugu-vest",
       "title": "Uhapšen muškarac iz Lebana osumnjičen da je ubio suprugu: Pretukao je nasmrt",
       "url": "https://www.euronews.rs/srbija/aktuelno/220479/uhapsen-muskarac-iz-lebana-osumnjicen-da-je-ubio-suprugu/vest",
@@ -183,20 +141,6 @@
       "priority": 92
     },
     {
-      "id": "-gradonacelnik-beograda-ratko-mladic-velicanje-33740683-html",
-      "title": "Pritužba protiv gradonačelnika Beograda zbog veličanja ratnog zločinca Ratka Mladića",
-      "url": "https://www.slobodnaevropa.org/a/gradonacelnik-beograda-ratko-mladic-velicanje/33740683.html",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T08:48:08+00:00",
-      "time": "08:48",
-      "source": "RSE Balkan",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "o-220355-u-leskovcu-uhapsen-muskarac-zbog-smrti-supruge-vest",
       "title": "Porodično nasilje kod Lebana: Uhapšen muškarac (75) zbog sumnje da je nasmrt pretukao suprugu",
       "url": "https://www.euronews.rs/srbija/aktuelno/220355/u-leskovcu-uhapsen-muskarac-zbog-smrti-supruge/vest",
@@ -211,27 +155,13 @@
       "priority": 92
     },
     {
-      "id": "ww-slobodnaevropa-org-a-kosovo-presuda-banjska-33741544-html",
-      "title": "Optuženi za napad u Banjskoj  Spasojević i Tolić osuđeni na doživotnu kaznu zatvora, Maksimoviću 30 godina",
-      "url": "https://www.slobodnaevropa.org/a/kosovo-presuda-banjska/33741544.html",
+      "id": "na-paliluli-u-stanu-mu-pronadjeni-marihuana-i-kokain-q8cx90r",
+      "title": "U STANU KRIO MARIHUANU I KOKAIN Mladić uhapšen na Paliluli",
+      "url": "https://www.blic.rs/vesti/hronika/mladic-uhapsen-na-paliluli-u-stanu-mu-pronadjeni-marihuana-i-kokain/q8cx90r",
       "date": "2026-04-24",
-      "datetime": "2026-04-24T13:13:26+00:00",
-      "time": "13:13",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "a-operaciju-tvrdio-da-je-njen-clan-porodice-doziveo-nesrecu-",
-      "title": "Saslušan lažni hirurg: Oštećenoj tražio novac za operaciju, tvrdio da je njen član porodice doživeo nesreću",
-      "url": "https://nova.rs/vesti/hronika/saslusan-lazni-hirurg-ostecenoj-trazio-novac-za-operaciju-tvrdio-da-je-njen-clan-porodice-doziveo-nesrecu/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T11:16:34+00:00",
-      "time": "11:16",
-      "source": "Nova",
+      "datetime": "2026-04-24T14:47:58+00:00",
+      "time": "14:47",
+      "source": "Blic",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -295,6 +225,34 @@
       "priority": 90
     },
     {
+      "id": "ntar-preporuke-venecijanske-komisije-crveni-karton-za-vlast-",
+      "title": "Srbija centar: Preporuke Venecijanske komisije crveni karton za vlast",
+      "url": "https://www.danas.rs/vesti/drustvo/srbija-centar-preporuke-venecijanske-komisije-crveni-karton-za-vlast/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:19:26+00:00",
+      "time": "15:19",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
+      "id": "skarac-kod-kog-je-pronadjeno-pet-kilograma-maruane-i-kokain-",
+      "title": "Uhapšen muškarac kod kog je pronađeno pet kilograma marihuane i kokain",
+      "url": "https://n1info.rs/vesti/uhapsen-muskarac-kod-kog-je-pronadjeno-pet-kilograma-maruane-i-kokain/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:18:40+00:00",
+      "time": "15:18",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "uelno-220547-hapsenje-makedonca-zbog-prevare-u-beogradu-vest",
       "title": "Uhapšen lažni hirurg u Beogradu: Državljanin Severne Makedonije varao ljude i uzimao im novac za operacije (VIDEO)",
       "url": "https://www.euronews.rs/srbija/aktuelno/220547/hapsenje-makedonca-zbog-prevare-u-beogradu/vest",
@@ -335,6 +293,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "nezakonitog-rusenja-u-savamali-vrh-vlasti-prosao-nekaznjeno-",
+      "title": "Decenija od nezakonitog rušenja u Savamali – vrh vlasti prošao nekažnjeno",
+      "url": "https://www.krik.rs/decenija-od-nezakonitog-rusenja-u-savamali-vrh-vlasti-prosao-nekaznjeno/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T14:20:17+00:00",
+      "time": "14:20",
+      "source": "KRIK",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "elno-220666-saslusan-lazni-hirurg-iz-severne-makedonije-vest",
@@ -435,27 +407,13 @@
       "priority": 60
     },
     {
-      "id": "bi-htela-sve-ljude-da-drzi-na-merama-ali-to-nije-izvodljivo-",
-      "title": "Milan Dumanović – Ova vlast bi htela sve ljude da drži na merama, ali to nije izvodljivo",
-      "url": "https://www.ktv.rs/2026/04/23/milan-dumanovic-ova-vlast-bi-htela-sve-ljude-da-drzi-na-merama-ali-to-nije-izvodljivo/",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T13:23:55+00:00",
-      "time": "13:23",
-      "source": "KTV",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "institut-kareja-povuci-nacrt-zakona-o-unutrasnjim-poslovima-",
-      "title": "Institut Kareja: Povući Nacrt zakona o unutrašnjim poslovima",
-      "url": "https://www.ktv.rs/2026/04/23/institut-kareja-povuci-nacrt-zakona-o-unutrasnjim-poslovima/",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T12:53:42+00:00",
-      "time": "12:53",
-      "source": "KTV",
+      "id": "za-zastitu-spomenika-istraga-politicki-pritisak-generalstab-",
+      "title": "Zaposleni u Zavodu za zaštitu spomenika: Istraga protiv koleginice politički pritisak zbog Generalštaba",
+      "url": "https://n1info.rs/vesti/zaposleni-zavod-za-zastitu-spomenika-istraga-politicki-pritisak-generalstab/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:17:17+00:00",
+      "time": "15:17",
+      "source": "N1",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -475,6 +433,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "ka-220697-vucevic-picula-zloupotrebljava-eu-institucije-vest",
+      "title": "Vučević: Picula zloupotrebljava evropske institucije za obračun sa srpskim narodom",
+      "url": "https://www.euronews.rs/srbija/politika/220697/vucevic-picula-zloupotrebljava-eu-institucije/vest",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:27:00+00:00",
+      "time": "15:27",
+      "source": "Euronews Serbia",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "ps-radar-nova-rs-drustvo-medicinski-fakultet-izbori-nasilje-",
@@ -505,6 +477,62 @@
       "priority": 26
     },
     {
+      "id": "e-venecijanske-komisije-primedbe-na-izmene-mrdicevih-zakona-",
+      "title": "Mišljenje Venecijanske komisije: Primedbe na izmene Mrdićevih zakona",
+      "url": "https://www.ktv.rs/2026/04/24/misljenje-venecijanske-komisije-primedbe-na-izmene-mrdicevih-zakona/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:36:08+00:00",
+      "time": "15:36",
+      "source": "KTV",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "vosudu-stupaju-u-jednocasovni-strajk-upozorenja-u-ponedeljak",
+      "title": "Zaposleni u pravosuđu stupaju u jednočasovni štrajk upozorenja u ponedeljak",
+      "url": "https://beta.rs/content/243577-zaposleni-u-pravosudu-stupaju-u-jednocasovni-strajk-upozorenja-u-ponedeljak",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:35:12+00:00",
+      "time": "15:35",
+      "source": "Beta",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "-vlasti-u-ponedeljak-najavio-jednocasovni-strajk-upozorenja-",
+      "title": "Sindikat sudske vlasti u ponedeljak najavio jednočasovni štrajk upozorenja",
+      "url": "https://www.danas.rs/vesti/drustvo/sindikat-sudske-vlasti-u-ponedeljak-najavio-jednocasovni-strajk-upozorenja/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:25:28+00:00",
+      "time": "15:25",
+      "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "rs-vesti-vladica-ilic-venecijanska-komisija-mrdicevi-zakoni-",
+      "title": "Ilić: Jasno da je i Venecijanska komisija shvatila u kom pravcu su izmene pravosudnih zakona išle",
+      "url": "https://n1info.rs/vesti/vladica-ilic-venecijanska-komisija-mrdicevi-zakoni/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:21:40+00:00",
+      "time": "15:21",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "ja-ponistila-alate-vlasti-za-cistku-u-pravosudu-i-tuzilastvu",
       "title": "Tepić (SSP): Venecijanska komisija poništila alate vlasti za čistku u pravosuđu i tužilaštvu",
       "url": "https://beta.rs/content/243568-tepic-ssp-venecijanska-komisija-ponistila-alate-vlasti-za-cistku-u-pravosudu-i-tuzilastvu",
@@ -533,20 +561,6 @@
       "priority": 25
     },
     {
-      "id": "-kojim-se-ponistavaju-mrdicevi-zakoni-i-sve-pravne-posledice",
-      "title": "Paunović: Vlast da donese zakon kojim se poništavaju Mrdićevi zakoni i sve pravne posledice",
-      "url": "https://beta.rs/content/243561-paunovic-vlast-da-donese-zakon-kojim-se-ponistavaju-mrdicevi-zakoni-i-sve-pravne-posledice",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T12:40:08+00:00",
-      "time": "12:40",
-      "source": "Beta",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "esti-venecijanska-komisija-mrdicevi-zakoni-skupstina-srbije-",
       "title": "Venecijanska komisija peporučuje suštinsku ispravku „Mrdićevih zakona“",
       "url": "https://vreme.com/vesti/venecijanska-komisija-mrdicevi-zakoni-skupstina-srbije/",
@@ -562,7 +576,7 @@
     },
     {
       "id": "venecijanska-komisija-pozdravila-izmene-u-oblasti-pravosudja",
-      "title": "TRIJUMF SRPSKOG PRAVOSUĐA! Venecijanska komisija dala zeleno 'Mrdićevim zakonima' - SRUŠENE LAŽI BLOKADERA: Politika Vlade dobila najveću međunardonu potvrdu",
+      "title": "TRIJUMF SRPSKOG PRAVOSUĐA! Venecijanska komisija dala zeleno 'Mrdićevim zakonima' - SRUŠENE LAŽI BLOKADERA: Politika Vlade dobila najveću međunarodnu potvrdu",
       "url": "https://www.kurir.rs/vesti/politika/9977456/venecijanska-komisija-pozdravila-izmene-u-oblasti-pravosudja",
       "date": "2026-04-24",
       "datetime": "2026-04-24T12:00:08+00:00",
@@ -601,6 +615,34 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "-dacic-u-atini-razmena-iskustava-u-okviru-akaba-procesa-vest",
+      "title": "Dačić u Atini: Srbija kooperativan partner u borbi protiv kriminala, razmena iskustava u okviru \"Akaba procesa\"",
+      "url": "https://www.euronews.rs/srbija/politika/220691/dacic-u-atini-razmena-iskustava-u-okviru-akaba-procesa/vest",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T15:11:00+00:00",
+      "time": "15:11",
+      "source": "Euronews Serbia",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "estauratorske-radove-na-na-kuli-antickog-grada-horeum-margi-",
+      "title": "Tender za konzervatorsko-restauratorske radove na na kuli antičkog grada Horeum Margi",
+      "url": "https://n1info.rs/biznis/tender-za-konzervatorsko-restauratorske-radove-na-na-kuli-antickog-grada-horeum-margi/",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T14:41:27+00:00",
+      "time": "14:41",
+      "source": "N1",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "0686-dacic-u-atini-sa-grckim-ministrom-jacanje-saradnje-vest",
@@ -645,20 +687,6 @@
       "priority": 24
     },
     {
-      "id": "aevropa-org-a-srbija-nafta-rusija-druzba-orban-33738028-html",
-      "title": "Srbija sa Orbanom dogovarala priključenje na rusku 'Družbu'. Šta sad?",
-      "url": "https://www.slobodnaevropa.org/a/srbija-nafta-rusija-druzba-orban/33738028.html",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T05:27:15+00:00",
-      "time": "05:27",
-      "source": "RSE Balkan",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "ravio-akumulaciono-jezero-steta-za-budet-200-miliona-dinara-",
       "title": "Nelegalno vadio šljunak: Napravio akumulaciono jezero i zaradio 200 miliona dinara",
       "url": "https://www.danas.rs/vesti/ekonomija/uhapsen-zbog-nelegalnog-vadjenja-sljunka-napravio-akumulaciono-jezero-steta-za-budet-200-miliona-dinara/",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 12
-    },
-    {
-      "id": "a-sljunka-i-peska-iz-velike-morave-steta-200-miliona-dinara-",
-      "title": "Hapšenje zbog nelegalnog vađenja šljunka i peska iz Velike Morave, šteta 200 miliona dinara",
-      "url": "https://n1info.rs/vesti/hapsenje-zbog-nelegalnog-vadjenja-sljunka-i-peska-iz-velike-morave-steta-200-miliona-dinara/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T12:45:57+00:00",
-      "time": "12:45",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
-    },
-    {
-      "id": "a-otpad-eu-bih-gorivo-lukavac-kakanj-cementara-33740740-html",
-      "title": "BiH sve više koristi otpad iz EU kao gorivo",
-      "url": "https://www.slobodnaevropa.org/a/otpad-eu-bih-gorivo-lukavac-kakanj-cementara/33740740.html",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T05:28:19+00:00",
-      "time": "05:28",
-      "source": "RSE Balkan",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
