@@ -141,20 +141,6 @@
       "priority": 92
     },
     {
-      "id": "urir-rs-vesti-politika-9977751-vucevic-na-presudu-za-banjsku",
-      "title": "JOŠ JEDAN JE U NIZU DOKAZA STVARNIH NAMERA KURTIJEVOG REŽIMA Vučević o presudi uhapšenim Srbima za slučaj Banjska: Progonu nema kraja",
-      "url": "https://www.kurir.rs/vesti/politika/9977751/vucevic-na-presudu-za-banjsku",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T16:13:51+00:00",
-      "time": "16:13",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-uhapsen-osumnjiceni-za-dilovanje-narkotika-na-paliluli-vest",
       "title": "Uhapšen osumnjičeni za dilovanje narkotika na Paliluli: Nađeno mu više oko pet kila dve vrste droge",
       "url": "https://www.euronews.rs/srbija/aktuelno/220695/uhapsen-osumnjiceni-za-dilovanje-narkotika-na-paliluli/vest",
@@ -693,6 +679,20 @@
       "date": "2026-04-24",
       "datetime": "2026-04-24T21:45:00+00:00",
       "time": "21:45",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "5-falsifikovani-lekovi-severna-makedonija-privedeno-14-osoba",
+      "title": "ZAPLENJENI BOTOKS, FILERI I NOVAC, PRIVEDENO 14 - \"PALI\" I LEKARI: Velika akcija policije u Severnoj Makedoniji, razbijene 2 kriminalne grupe",
+      "url": "https://www.kurir.rs/region/severna-makedonija/9977865/falsifikovani-lekovi-severna-makedonija-privedeno-14-osoba",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T19:35:45+00:00",
+      "time": "19:35",
       "source": "Kurir",
       "category": "Криминал",
       "summary": "",
