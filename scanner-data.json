@@ -435,20 +435,6 @@
       "priority": 30
     },
     {
-      "id": "svet-bivsi-britanski-ambasador-u-sad-mandelson-pod-istragom-",
-      "title": "Bivši britanski ambasador u SAD Mandelson pod istragom EU zbog zloupotrebe službenog položaja",
-      "url": "https://nova.rs/vesti/svet/bivsi-britanski-ambasador-u-sad-mandelson-pod-istragom/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T19:35:23+00:00",
-      "time": "19:35",
-      "source": "Nova",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "d-istragom-eu-zbog-sumnje-na-zloupotrebu-sluzbenog-polozaja-",
       "title": "Piter Mandelson pod istragom EU zbog sumnje na zloupotrebu službenog položaja",
       "url": "https://n1info.rs/svet/piter-mandelson-pod-istragom-eu-zbog-sumnje-na-zloupotrebu-sluzbenog-polozaja/",
@@ -456,20 +442,6 @@
       "datetime": "2026-04-24T19:13:55+00:00",
       "time": "19:13",
       "source": "N1",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "https-www-danas-rs-svet-piter-mendelson-pod-istragom-eu-",
-      "title": "Bivši britanski ambasador u SAD pod istragom EU zbog zloupotrebe službenog položaja",
-      "url": "https://www.danas.rs/svet/piter-mendelson-pod-istragom-eu/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T18:57:34+00:00",
-      "time": "18:57",
-      "source": "Danas",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
@@ -517,6 +489,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "0770-vucic-o-misljenju-venecijanske-komisije-o-zakonima-vest",
+      "title": "Vučić: Poštovaćemo ekspertsko mišljenje Venecijanske komisije o pravosudnim zakonima",
+      "url": "https://www.euronews.rs/srbija/politika/220770/vucic-o-misljenju-venecijanske-komisije-o-zakonima/vest",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T08:50:00+00:00",
+      "time": "08:50",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "natorski-postupila-prema-decaku-sa-autizmom-2017-godine-html",
@@ -575,6 +561,20 @@
       "priority": 25
     },
     {
+      "id": "-banjska-kosovo-srbija-radoicic-dijalog-sad-eu-33742232-html",
+      "title": "Kanin: Samo novac može natjerati Srbiju da djeluje u vezi s Banjskom",
+      "url": "https://www.slobodnaevropa.org/a/davin-kanin-presuda-banjska-kosovo-srbija-radoicic-dijalog-sad-eu/33742232.html",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T08:36:49+00:00",
+      "time": "08:36",
+      "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "i-sistem-socijalne-zastite-pretvorila-u-glasacku-masineriju-",
       "title": "Ministarka Stamenkovski sistem socijalne zaštite pretvorila u glasačku mašineriju",
       "url": "https://www.danas.rs/vesti/politika/ministarka-stamenkovski-sistem-socijalne-zastite-pretvorila-u-glasacku-masineriju/",
@@ -597,20 +597,6 @@
       "time": "21:45",
       "source": "Kurir",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "ce-snose-obicni-gradjani-a-odgovorni-zaradjuju-na-tenderima-",
-      "title": "Radoičić preuzeo odgovornost za Banjsku, a u Srbiji je slobodan čovek: \"Posledice snose obični građani, a odgovorni zarađuju na tenderima\"",
-      "url": "https://n1info.rs/vesti/radoicic-preuzeo-odgovornost-za-banjsku-a-u-srbiji-je-slobodan-covek-posledice-snose-obicni-gradjani-a-odgovorni-zaradjuju-na-tenderima/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T19:04:31+00:00",
-      "time": "19:04",
-      "source": "N1",
-      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "govina-9977994-covek-koji-se-sumnjici-za-pucnjavu-u-sarajevu",
+      "title": "OVO JE ČOVEK KOJI SE SUMNJIČI ZA PUCNJAVU U SARAJEVSKOM KAFIĆU! Braća Livnjak ranjena, policija  intenzivno traga za njim (FOTO)",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/9977994/covek-koji-se-sumnjici-za-pucnjavu-u-sarajevu",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T07:31:01+00:00",
+      "time": "07:31",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
