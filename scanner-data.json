@@ -29,6 +29,20 @@
       "priority": 176
     },
     {
+      "id": "https-www-kurir-rs-planeta-9978124-tornado-pogodio-oklahomu",
+      "title": "SNAŽAN TORNADO PROTUTNJAO AMERIKOM! Ima povređenih, stravični snimci iz Oklahome: Izdato upozorenje na NOVU KATAKLIZMU (VIDEO)",
+      "url": "https://www.kurir.rs/planeta/9978124/tornado-pogodio-oklahomu",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T09:53:21+00:00",
+      "time": "09:53",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "-jutro-na-blic-da-li-nestaje-amerika-kakvu-poznajemo-vhfc9h5",
       "title": "UPRAVO NA BLIC TV: U \"Jutru na Blic\" saznajte: Da li nestaje Amerika kakvu poznajemo",
       "url": "https://www.blic.rs/vesti/drustvo/jutro-na-blic-da-li-nestaje-amerika-kakvu-poznajemo/vhfc9h5",
@@ -71,34 +85,6 @@
       "priority": 100
     },
     {
-      "id": "g-uvoza-i-koriscenja-botoksa-i-filera-u-severnoj-makedoniji-",
-      "title": "Uhapšeno 14 osoba zbog ilegalnog uvoza i korišćenja botoksa i filera u Severnoj Makedoniji",
-      "url": "https://n1info.rs/region/uhapseno-14-osoba-zbog-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera-u-severnoj-makedoniji/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T19:35:08+00:00",
-      "time": "19:35",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
-      "id": "nas-rs-svet-region-severna-makedonija-hapsenje-botoks-filer-",
-      "title": "Severna Makedonija: Uhapšeno 14 osoba zbog ilegalnog uvoza i korišćenja botoksa i filera",
-      "url": "https://www.danas.rs/svet/region/severna-makedonija-hapsenje-botoks-filer/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T19:31:28+00:00",
-      "time": "19:31",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
       "id": "ww-slobodnaevropa-org-a-kosovo-presuda-banjska-33741544-html",
       "title": "Optuženi za napad u Banjskoj  Spasojević i Tolić osuđeni na doživotnu kaznu zatvora, Maksimoviću 30 godina",
       "url": "https://www.slobodnaevropa.org/a/kosovo-presuda-banjska/33741544.html",
@@ -127,18 +113,18 @@
       "priority": 96
     },
     {
-      "id": "ja-9977806-uhapsen-loznicanin-zbog-ostecenja-zivotne-sredine",
-      "title": "OSUMNJIČEN ZA OŠTEĆENJE ŽIVOTNE SREDINE: Uhapšen Lozničanin, protivzakonito organizovao eksploataciju i separaciju mineralnih sirovina",
-      "url": "https://www.kurir.rs/vesti/srbija/9977806/uhapsen-loznicanin-zbog-ostecenja-zivotne-sredine",
+      "id": "ki-rezim-proteruje-profesionalce-to-radi-i-pripadnicima-saj-",
+      "title": "Milivojević: Vučićev mafijaški režim proteruje profesionalce, to radi i pripadnicima SAJ",
+      "url": "https://www.danas.rs/vesti/politika/milivojevic-vucicev-mafijaski-rezim-proteruje-profesionalce-to-radi-i-pripadnicima-saj/",
       "date": "2026-04-25",
-      "datetime": "2026-04-25T00:00:00+00:00",
-      "time": "00:00",
-      "source": "Kurir",
-      "category": "Хапшења",
+      "datetime": "2026-04-25T09:19:34+00:00",
+      "time": "09:19",
+      "source": "Danas",
+      "category": "Организовани криминал",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 92
+      "priority": 95
     },
     {
       "id": "-uhapsen-osumnjiceni-za-dilovanje-narkotika-na-paliluli-vest",
@@ -148,20 +134,6 @@
       "datetime": "2026-04-24T15:45:00+00:00",
       "time": "15:45",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "https-vreme-com-vesti-banjska-kosovo-milan-radoicic-",
-      "title": "Slučaj Banjska: Dvojica Srba dobila doživotnu, treći 30 godina zatvora",
-      "url": "https://vreme.com/vesti/banjska-kosovo-milan-radoicic/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T13:29:27+00:00",
-      "time": "13:29",
-      "source": "Vreme",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -365,20 +337,6 @@
       "priority": 66
     },
     {
-      "id": "0453-naknada-porodicama-nastradalih-u-padu-nadstresnice-vest",
-      "title": "Presuđena naknada štete porodicama dvoje nastradalih prilikom pada nadstrešnice u Novom Sadu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/220453/naknada-porodicama-nastradalih-u-padu-nadstresnice/vest",
-      "date": "2026-04-23",
-      "datetime": "2026-04-23T09:43:00+00:00",
-      "time": "09:43",
-      "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "radar-nova-rs-drustvo-tuzilac-dragoljub-miladinovic-rdr-109-",
       "title": "Urušen je temelj na kome počiva tužilaštvo",
       "url": "https://radar.nova.rs/drustvo/tuzilac-dragoljub-miladinovic-rdr-109/",
@@ -433,20 +391,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "d-istragom-eu-zbog-sumnje-na-zloupotrebu-sluzbenog-polozaja-",
-      "title": "Piter Mandelson pod istragom EU zbog sumnje na zloupotrebu službenog položaja",
-      "url": "https://n1info.rs/svet/piter-mandelson-pod-istragom-eu-zbog-sumnje-na-zloupotrebu-sluzbenog-polozaja/",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T19:13:55+00:00",
-      "time": "19:13",
-      "source": "N1",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "ka-220697-vucevic-picula-zloupotrebljava-eu-institucije-vest",
@@ -561,6 +505,20 @@
       "priority": 25
     },
     {
+      "id": "ca-koji-nece-da-budu-batina-u-rukama-kriminalizovane-vlasti-",
+      "title": "Milivojević: Masovni odlasci iz SAJ - proterivanje profesionalaca koji neće da budu \"batina u rukama kriminalizovane vlasti\"",
+      "url": "https://n1info.rs/vesti/milivojevic-masovni-odlasci-iz-saj-proterivanje-profesionalaca-koji-nece-da-budu-batina-u-rukama-kriminalizovane-vlasti/",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T09:21:45+00:00",
+      "time": "09:21",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "-banjska-kosovo-srbija-radoicic-dijalog-sad-eu-33742232-html",
       "title": "Kanin: Samo novac može natjerati Srbiju da djeluje u vezi s Banjskom",
       "url": "https://www.slobodnaevropa.org/a/davin-kanin-presuda-banjska-kosovo-srbija-radoicic-dijalog-sad-eu/33742232.html",
@@ -582,20 +540,6 @@
       "datetime": "2026-04-25T08:00:09+00:00",
       "time": "08:00",
       "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "tivan-partner-u-borbi-protiv-kriminala-dacic-o-akaba-procesu",
-      "title": "DAČIĆ PRISUSTVOVAO SASTANKU U AKABA PROCESA: Srbija pouzdan partner u borbi protiv kriminala",
-      "url": "https://www.kurir.rs/vesti/politika/9977674/srbija-kao-kooperativan-partner-u-borbi-protiv-kriminala-dacic-o-akaba-procesu",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T21:45:00+00:00",
-      "time": "21:45",
-      "source": "Kurir",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -687,6 +631,20 @@
       "priority": 8
     },
     {
+      "id": "d-povredjen-decak-petarda-baterija-ili-dezodorans-iz-r8rh5fw",
+      "title": "ŠTA JE EKSPLODIRALO U NOVOM SADU?! Otkriveno stanje povređenog dečaka (13): Napravu pronašao u đubretu, policija pokrenula istragu",
+      "url": "https://www.blic.rs/vesti/hronika/eksplozivna-naprava-novi-sad-povredjen-decak-petarda-baterija-ili-dezodorans-iz/r8rh5fw",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T09:23:59+00:00",
+      "time": "09:23",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "govina-9977994-covek-koji-se-sumnjici-za-pucnjavu-u-sarajevu",
       "title": "OVO JE ČOVEK KOJI SE SUMNJIČI ZA PUCNJAVU U SARAJEVSKOM KAFIĆU! Braća Livnjak ranjena, policija  intenzivno traga za njim (FOTO)",
       "url": "https://www.kurir.rs/region/bosna-i-hercegovina/9977994/covek-koji-se-sumnjici-za-pucnjavu-u-sarajevu",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "tuelno-220714-pljacka-banke-u-nisu-uz-pretnju-pistoljem-vest",
+      "title": "Uz pretnju pištoljem opljačkana banka u Bulevaru dr Zorana Đinđića u Nišu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/220714/pljacka-banke-u-nisu-uz-pretnju-pistoljem/vest",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T19:03:00+00:00",
+      "time": "19:03",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ura-do-strazbura-veceras-u-kampusu-novosadskog-univerziteta-",
+      "title": "Projekcija filma Tura do Strazbura večeras u kampusu novosadskog univerziteta",
+      "url": "https://nova.rs/vesti/drustvo/projekcija-filma-tura-do-strazbura-veceras-u-kampusu-novosadskog-univerziteta/",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T09:56:27+00:00",
+      "time": "09:56",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ilip-matijasevic-intervju-nakon-transfera-cukaricki-salcburg",
+      "title": "\"ENO, MAJKA I DALJE PLAČE, OTAC PRIKRIVA...\" Mladi srpski fudbaler posle istorijskog transfera priznao: Tata me nikada nije štitio i gurao!",
+      "url": "https://www.kurir.rs/sport/fudbal/9978120/filip-matijasevic-intervju-nakon-transfera-cukaricki-salcburg",
+      "date": "2026-04-25",
+      "datetime": "2026-04-25T09:51:42+00:00",
+      "time": "09:51",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
