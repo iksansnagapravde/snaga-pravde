@@ -2,11 +2,11 @@
   "entries": [
     {
       "id": "tramp-bela-kuca-dopisnici-pucnji-tajni-agent-evakuacija-html",
-      "title": "Тужилаштво: Трамп и званичници његове администрације вероватне мете напада, осумњичени не жели да сарађује",
+      "title": "Тужилаштво: Трамп и сарадници вероватне мете напада; Медији: У соби осумњиченог пронађен његовм манифест",
       "url": "https://www.rts.rs/vesti/svet/5934872/donald-tramp-bela-kuca-dopisnici-pucnji-tajni-agent-evakuacija.html",
       "date": "2026-04-26",
-      "datetime": "2026-04-26T15:39:29+00:00",
-      "time": "15:39",
+      "datetime": "2026-04-26T16:38:15+00:00",
+      "time": "16:38",
       "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
@@ -19,8 +19,8 @@
       "title": "(FOTO, VIDEO) \"PEDOFIL, SILOVATELJ I IZDAJNIK KALJA MOJE RUKE SVOJIM ZLOČINIMA\" Napadač s Trampove večere otkrio ko su mu METE: Odjeknuli PUCNJI, Donald pao na pod!",
       "url": "https://www.blic.rs/vesti/svet/uzivo-donald-tramp-najnovije-vesti-hitno-se-oglasio-napadac-hteo-da-ubije-njega-i/3xr0tsz",
       "date": "2026-04-26",
-      "datetime": "2026-04-26T16:19:01+00:00",
-      "time": "16:19",
+      "datetime": "2026-04-26T16:39:01+00:00",
+      "time": "16:39",
       "source": "Blic",
       "category": "Лишени слободе",
       "summary": "",
@@ -169,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "0693-uhapsen-osumnjiceni-za-ekoloski-kriminal-u-loznici-vest",
-      "title": "Uhapšen osumnjičeni za ekološki kriminal u Loznici: Eksploatisao pesak i šljunak u priobalju Drine i Jadra",
-      "url": "https://www.euronews.rs/srbija/aktuelno/220693/uhapsen-osumnjiceni-za-ekoloski-kriminal-u-loznici/vest",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T16:53:00+00:00",
-      "time": "16:53",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "j-akciji-u-crnoj-gori-uhapsen-vazan-clan-balkanskog-kartela-",
       "title": "U međunarodnoj akciji u Crnoj Gori uhapšen važan član Balkanskog kartela",
       "url": "https://www.krik.rs/u-medjunarodnoj-akciji-u-crnoj-gori-uhapsen-vazan-clan-balkanskog-kartela/",
@@ -265,20 +251,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "-makedoniji-silovao-14-godisnjakinju-i-objavio-njene-snimke-",
-      "title": "Zaposleni u osnovnoj školi u S. Makedoniji silovao 14-godišnjakinju i objavio njene snimke",
-      "url": "https://nova.rs/vesti/svet/zaposleni-u-osnovnoj-skoli-u-s-makedoniji-silovao-14-godisnjakinju-i-objavio-njene-snimke/",
-      "date": "2026-04-26",
-      "datetime": "2026-04-26T10:26:40+00:00",
-      "time": "10:26",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "-makedoniji-silovao-14-godisnjakinju-i-objavio-njene-snimke-",
@@ -447,20 +419,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "a-9978881-uhapsena-trojica-muskaraca-sa-15-kilograma-kokaina",
-      "title": "VELIKA AKCIJA HAPŠENJA: Zaplenjeno 15 kilograma kokaina, trojici stavljene lisice!",
-      "url": "https://www.kurir.rs/crna-hronika/9978881/uhapsena-trojica-muskaraca-sa-15-kilograma-kokaina",
-      "date": "2026-04-26",
-      "datetime": "2026-04-26T10:29:27+00:00",
-      "time": "10:29",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "-venecijanske-komisije-u-skladu-sa-interesima-srbije-bjdsg5p",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "tuelno-220714-pljacka-banke-u-nisu-uz-pretnju-pistoljem-vest",
+      "title": "Uz pretnju pištoljem opljačkana banka u Bulevaru dr Zorana Đinđića u Nišu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/220714/pljacka-banke-u-nisu-uz-pretnju-pistoljem/vest",
+      "date": "2026-04-24",
+      "datetime": "2026-04-24T19:03:00+00:00",
+      "time": "19:03",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ovi-kako-smo-od-kneza-milosa-stigli-do-pobunjenih-studenata-",
+      "title": "Kako smo od kneza Miloša stigli do pobunjenih studenata: Srbi su uvek imali veru u vođu umesto vere u proceduru",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/kako-smo-od-kneza-milosa-stigli-do-pobunjenih-studenata/",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T17:02:29+00:00",
+      "time": "17:02",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "aprila-i-za-1-maj-nad-srbijom-se-nadvija-hladna-masa-y6s7reh",
+      "title": "(MAPE) NAD SRBIJOM SE NADVIJA HLADNA MASA Temperature negde padaju ispod nule, u ovim delovima PAŠĆE PUNO KIŠE, hladno do daljeg!",
+      "url": "https://www.blic.rs/vremenska-prognoza/mape-vremenska-prognoza-do-karaj-aprila-i-za-1-maj-nad-srbijom-se-nadvija-hladna-masa/y6s7reh",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T16:58:59+00:00",
+      "time": "16:58",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
