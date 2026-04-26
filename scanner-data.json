@@ -16,7 +16,7 @@
     },
     {
       "id": "https-www-danas-rs-svet-pucnjava-bela-kuca-tramp-",
-      "title": "Pucnjava na večeri dopsinika Bele kuće: Tramp evakuisan, Melanija se krila ispod stola, napadač uhapšen, ranjen agent (FOTO, VIDEO)",
+      "title": "Pucnjava na večeri dopisnika Bele kuće: Tramp evakuisan, Melanija se krila ispod stola, napadač uhapšen, ranjen agent (FOTO, VIDEO)",
       "url": "https://www.danas.rs/svet/pucnjava-bela-kuca-tramp/",
       "date": "2026-04-26",
       "datetime": "2026-04-26T04:46:40+00:00",
@@ -61,8 +61,8 @@
       "title": "(VIDEO) KREĆE PUCNJAVA, TRAMP PADA! Hitna evakuacija nakon drame u Vašingtonu, ovo je NOVI ATENTAT?! Ima ranjenih, isplivali jezivi detalji o napadaču",
       "url": "https://www.blic.rs/vesti/svet/donald-tramp-trump-najnovije-vesti-krece-pucnjava-on-pada-otkriveno-ko-je-napadac/3xr0tsz",
       "date": "2026-04-26",
-      "datetime": "2026-04-26T08:38:01+00:00",
-      "time": "08:38",
+      "datetime": "2026-04-26T09:46:01+00:00",
+      "time": "09:46",
       "source": "Blic",
       "category": "Лишени слободе",
       "summary": "",
@@ -75,8 +75,8 @@
       "title": "Трамп евакуисан током вечере са дописницима Беле куће – чули се пуцњи, погођен тајни агент",
       "url": "https://www.rts.rs/vesti/svet/5934872/donald-tramp-bela-kuca-dopisnici-pucnji-tajni-agent-evakuacija.html",
       "date": "2026-04-26",
-      "datetime": "2026-04-26T08:33:08+00:00",
-      "time": "08:33",
+      "datetime": "2026-04-26T09:12:33+00:00",
+      "time": "09:12",
       "source": "RTS",
       "category": "Лишени слободе",
       "summary": "",
@@ -111,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "a-iz-bele-kuce-pogodjen-radnik-obezbedjenja-tramp-evakuisan-",
+      "title": "(VIDEO) Uhapšen osumnjičeni za pucnjavu na godišnjoj večeri izveštača iz Bele kuće, pogođen radnik obezbeđenja, Tramp evakuisan",
+      "url": "https://n1info.rs/svet/pucnjava-na-godisnjoj-veceri-izvestaca-iz-bele-kuce-pogodjen-radnik-obezbedjenja-tramp-evakuisan/",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T09:07:04+00:00",
+      "time": "09:07",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-mladic-i-devojka-uhapseni-zbog-mucenja-mojkovcanina-p925mkg",
@@ -155,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "na-gora-9978360-pojacane-kontrole-saobracaja-ulcinj-praznici",
-      "title": "POJAČANA KONTROLA SAOBRAĆAJA U ULCINJU PRED PRAZNIKE: Sankcionisano 35 vozača, jedan uhapšen zbog vožnje pod dejstvom supstanci",
-      "url": "https://www.kurir.rs/region/crna-gora/9978360/pojacane-kontrole-saobracaja-ulcinj-praznici",
-      "date": "2026-04-25",
-      "datetime": "2026-04-25T22:52:00+00:00",
-      "time": "22:52",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-rasvetljen-pokusaj-oruzane-pljacke-zlatare-u-smederevu-vest",
       "title": "MUP: Rasvetljen pokušaj oružane pljačke zlatare u Smederevu, uhapšena tri lica",
       "url": "https://www.euronews.rs/srbija/aktuelno/220828/rasvetljen-pokusaj-oruzane-pljacke-zlatare-u-smederevu/vest",
@@ -203,20 +203,6 @@
       "date": "2026-04-24",
       "datetime": "2026-04-24T16:53:00+00:00",
       "time": "16:53",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "-aktuelno-220618-uhapsen-drzavljanin-crne-gore-u-srbiji-vest",
-      "title": "Uhapšen državljanin Crne Gore u Srbiji: Imao lažna dokumenta, sumnja se da je pripadnik kriminalne grupe",
-      "url": "https://www.euronews.rs/srbija/aktuelno/220618/uhapsen-drzavljanin-crne-gore-u-srbiji/vest",
-      "date": "2026-04-24",
-      "datetime": "2026-04-24T09:55:00+00:00",
-      "time": "09:55",
       "source": "Euronews Serbia",
       "category": "Криминал",
       "summary": "",
@@ -337,20 +323,6 @@
       "priority": 66
     },
     {
-      "id": "policija-zaplenila-vise-od-1-3-miliona-evra-u-kriptovalutama",
-      "title": "Полиција запленила више од 1,3 милиона евра у криптовалутама",
-      "url": "https://www.politika.rs/scc/clanak/750374/policija-zaplenila-vise-od-1-3-miliona-evra-u-kriptovalutama",
-      "date": "2026-04-26",
-      "datetime": "2026-04-26T08:15:00+00:00",
-      "time": "08:15",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 36
-    },
-    {
       "id": "ic-madjar-magyar-protesti-izbori-rektor-djokic-33742356-html",
       "title": "Može li rektor Đokić biti srpski Peter Magyar?",
       "url": "https://www.slobodnaevropa.org/a/srbija-madjarska-vucic-madjar-magyar-protesti-izbori-rektor-djokic/33742356.html",
@@ -363,6 +335,20 @@
       "breaking": false,
       "alert": false,
       "priority": 36
+    },
+    {
+      "id": "vo-5934914-visokotehnoloski-kriminal-mup-onlajn-prevare-html",
+      "title": "МУП: Борба против сајбер криминала даје резултате – разбијени ланци онлајн превара и заплењени милиони у криптовалутама",
+      "url": "https://www.rts.rs/vesti/drustvo/5934914/visokotehnoloski-kriminal-mup-onlajn-prevare.html",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T09:07:00+00:00",
+      "time": "09:07",
+      "source": "RTS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
     },
     {
       "id": "ka-220697-vucevic-picula-zloupotrebljava-eu-institucije-vest",
@@ -547,20 +533,6 @@
       "priority": 24
     },
     {
-      "id": "-je-devojka-prevarila-sa-saigracem-amerika-bruji-o-skandalu-",
-      "title": "NBA superstar stao pred milione i ispričao kako ga je devojka prevarila sa saigračem, Amerika bruji o skandalu",
-      "url": "https://nova.rs/sport/kosarka/nba-superstar-stao-pred-milione-i-ispricao-kako-ga-je-devojka-prevarila-sa-saigracem-amerika-bruji-o-skandalu/",
-      "date": "2026-04-25",
-      "datetime": "2026-04-25T23:33:32+00:00",
-      "time": "23:33",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "tinaca-glasalo-na-lokalnim-izborima-uprkos-teskoj-situaciji-",
       "title": "Više od pola miliona Palestinaca glasalo na lokalnim izborima uprkos teškoj situaciji",
       "url": "https://www.danas.rs/svet/vise-od-pola-miliona-palestinaca-glasalo-na-lokalnim-izborima-uprkos-teskoj-situaciji/",
@@ -587,6 +559,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "-je-pucao-na-trampovoj-veceri-otkrio-ko-su-bile-mete-e55mj6f",
+      "title": "NAPADAČ KOJI JE PUCAO NA TRAMPOVOJ VEČERI OTKRIO KO SU BILE METE! Upao u luksuzni hotel NAORUŽAN DO ZUBA: Policija otkrila nove detalje pucnjave u Vašingtonu",
+      "url": "https://www.blic.rs/vesti/svet/napadac-koji-je-pucao-na-trampovoj-veceri-otkrio-ko-su-bile-mete/e55mj6f",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T09:26:46+00:00",
+      "time": "09:26",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "muskarac-osuden-zbog-spijuniranja-opozicionog-medija-u-iranu",
@@ -673,20 +659,6 @@
       "priority": 4
     },
     {
-      "id": "jaci-ponovo-napadaju-i-da-li-im-policija-daje-vetar-u-ledja-",
-      "title": "Zašto naprednjaci ponovo napadaju i da li im policija daje vetar u leđa?",
-      "url": "https://www.danas.rs/vesti/drustvo/zasto-naprednjaci-ponovo-napadaju-i-da-li-im-policija-daje-vetar-u-ledja/",
-      "date": "2026-04-25",
-      "datetime": "2026-04-25T18:10:52+00:00",
-      "time": "18:10",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "tuelno-220714-pljacka-banke-u-nisu-uz-pretnju-pistoljem-vest",
       "title": "Uz pretnju pištoljem opljačkana banka u Bulevaru dr Zorana Đinđića u Nišu",
       "url": "https://www.euronews.rs/srbija/aktuelno/220714/pljacka-banke-u-nisu-uz-pretnju-pistoljem/vest",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "jednako-su-mi-vazni-studenti-penzioneri-i-svi-gradani-srbije",
+      "title": "Вучић: Подједнако су ми важни студенти, пензионери и сви грађани Србије",
+      "url": "https://www.politika.rs/scc/clanak/750395/vucic-podjednako-su-mi-vazni-studenti-penzioneri-i-svi-gradani-srbije",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T09:57:00+00:00",
+      "time": "09:57",
+      "source": "Politika",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ji-je-bio-na-veceri-s-trampom-kako-je-zakazalo-obezbedjenje-",
+      "title": "Dopisnik BBC-a koji je bio na večeri s Trampom: Kako je zakazalo obezbeđenje",
+      "url": "https://n1info.rs/svet/dopisnik-bbc-a-koji-je-bio-na-veceri-s-trampom-kako-je-zakazalo-obezbedjenje/",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T09:51:36+00:00",
+      "time": "09:51",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
