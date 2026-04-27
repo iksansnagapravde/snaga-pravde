@@ -169,20 +169,6 @@
       "priority": 70
     },
     {
-      "id": "lisan-muskarac-u-americi-pucao-dogadjaju-na-kojem-je-on-bio-",
-      "title": "Panika u Vašingtonu: Donald i Melanija Tramp evakuisani posle pucnjave (VIDEO)",
-      "url": "https://vreme.com/svet/donald-tramp-evakulisan-muskarac-u-americi-pucao-dogadjaju-na-kojem-je-on-bio/",
-      "date": "2026-04-26",
-      "datetime": "2026-04-26T06:48:53+00:00",
-      "time": "06:48",
-      "source": "Vreme",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "nezakonitog-rusenja-u-savamali-vrh-vlasti-prosao-nekaznjeno-",
       "title": "Decenija od nezakonitog rušenja u Savamali – vrh vlasti prošao nekažnjeno",
       "url": "https://www.krik.rs/decenija-od-nezakonitog-rusenja-u-savamali-vrh-vlasti-prosao-nekaznjeno/",
@@ -603,20 +589,6 @@
       "priority": 4
     },
     {
-      "id": "tps-vreme-com-svet-zasto-policija-nosi-duge-cevi-u-beranama-",
-      "title": "Zašto policija nosi duge cevi u Beranama",
-      "url": "https://vreme.com/svet/zasto-policija-nosi-duge-cevi-u-beranama/",
-      "date": "2026-04-26",
-      "datetime": "2026-04-26T10:35:35+00:00",
-      "time": "10:35",
-      "source": "Vreme",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "537-lokalni-izbori-korak-ka-predsednickim-i-stvaranju-drzave",
       "title": "Локални избори корак ка председничким и стварању државе",
       "url": "https://www.politika.rs/scc/clanak/750537/lokalni-izbori-korak-ka-predsednickim-i-stvaranju-drzave",
@@ -695,6 +667,34 @@
       "time": "22:02",
       "source": "Politika",
       "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "a-moze-zajedno-sa-studentima-ideja-postoji-dogovor-izostaje-",
+      "title": "Utisak nedelje: Da li opozicija može zajedno sa studentima – ideja postoji, dogovor izostaje",
+      "url": "https://www.danas.rs/vesti/politika/utisak-nedelje-da-li-opozicija-moze-zajedno-sa-studentima-ideja-postoji-dogovor-izostaje/",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T21:45:07+00:00",
+      "time": "21:45",
+      "source": "Danas",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "orima-gosti-utiska-izmedju-jedinstvene-liste-ili-dve-kolone-",
+      "title": "Da li je referendumska atmosfera moguća na parlamentarnim izborima: Gosti \"Utiska\" između jedinstvene liste i dve kolone",
+      "url": "https://n1info.rs/vesti/da-li-je-referendumska-atmosfera-moguca-na-parlamentarnim-izborima-gosti-utiska-izmedju-jedinstvene-liste-ili-dve-kolone/",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T21:39:41+00:00",
+      "time": "21:39",
+      "source": "N1",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
