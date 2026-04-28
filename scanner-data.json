@@ -267,6 +267,20 @@
       "priority": 92
     },
     {
+      "id": "110-odbijeno-jemstvo-za-tuzioca-povezanog-sa-kavackim-klanom",
+      "title": "Одбијено јемство за тужиоца повезаног са кавачким кланом",
+      "url": "https://www.politika.rs/scc/clanak/751110/odbijeno-jemstvo-za-tuzioca-povezanog-sa-kavackim-klanom",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T20:25:00+00:00",
+      "time": "20:25",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "com-vesti-vst-odbio-preporuku-venecijanske-komisije-tuzioci-",
       "title": "Danas: Visoki savet tužilaštva odbio preporuku Venecijanske komisije",
       "url": "https://vreme.com/vesti/vst-odbio-preporuku-venecijanske-komisije-tuzioci/",
@@ -372,20 +386,6 @@
       "datetime": "2026-04-28T15:47:22+00:00",
       "time": "15:47",
       "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "d-na-studente-u-novom-sadu-tuzilastvo-trazi-zatvorsku-kaznu-",
-      "title": "KRIK: Gorski Matović optužen za napad na studente u Novom Sadu, tužilaštvo traži zatvorsku kaznu",
-      "url": "https://n1info.rs/vesti/krik-gorski-matovic-optuzen-za-napad-na-studente-u-novom-sadu-tuzilastvo-trazi-zatvorsku-kaznu/",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T15:29:54+00:00",
-      "time": "15:29",
-      "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -520,7 +520,7 @@
     },
     {
       "id": "ura-9981151-glumac-son-vajs-zavrsio-kao-zavisnik-i-beskucnik",
-      "title": "Glumac nadrogiran, završio kao beskućnik hapšen zbog provala: Bio je velika zvezda, pa završio kao beskućnik \"Mislio sam da mogu da se izvučem iz kandža droge\"",
+      "title": "Glumac nadrogiran, završio kao beskućnik hapšen zbog provala: Bio je velika zvezda \"Mislio sam da mogu da se izvučem iz kandža droge\"",
       "url": "https://www.kurir.rs/zabava/pop-kultura/9981151/glumac-son-vajs-zavrsio-kao-zavisnik-i-beskucnik",
       "date": "2026-04-28",
       "datetime": "2026-04-28T17:25:02+00:00",
@@ -533,18 +533,18 @@
       "priority": 26
     },
     {
-      "id": "eci-dede-89-koji-je-sacmarom-pucao-na-ljude-po-atini-243rfxh",
-      "title": "\"VIDEĆETE ME U VESTIMA\" Deda (89) sačmarom pucao na ljude po Atini, pa policiji rekao JEDNU rečenicu: Tokom hapšenja se SMEJAO",
-      "url": "https://www.blic.rs/vesti/svet/prve-reci-dede-89-koji-je-sacmarom-pucao-na-ljude-po-atini/243rfxh",
+      "id": "a-preporukama-venecijanske-komisije-prvi-sastanak-vec-sutra-",
+      "title": "Oformljena Radna grupa u cilju usklađivanja sa preporukama Venecijanske komisije, prvi sastanak već sutra",
+      "url": "https://nova.rs/vesti/politika/oformljena-radna-grupa-u-cilju-uskladjivanja-sa-preporukama-venecijanske-komisije-prvi-sastanak-vec-sutra/",
       "date": "2026-04-28",
-      "datetime": "2026-04-28T15:54:40+00:00",
-      "time": "15:54",
-      "source": "Blic",
-      "category": "Хапшења",
+      "datetime": "2026-04-28T20:27:13+00:00",
+      "time": "20:27",
+      "source": "Nova",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
     },
     {
       "id": "astanak-radne-grupe-povodom-misljenja-venecijanske-komisije-",
