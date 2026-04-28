@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "-brat-ubio-rodjenog-brata-usred-dana-motiv-misterija-17vfg5f",
-      "title": "UBIO BRATA U MAJČINOJ KUĆI! Jezivi detalji ubistva i samoubistva kod Sombora: Žena bila u prodavnici dok je trajao UŽAS",
-      "url": "https://www.blic.rs/vesti/hronika/tragedija-u-staparu-kod-sombora-brat-ubio-rodjenog-brata-usred-dana-motiv-misterija/17vfg5f",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T16:17:34+00:00",
-      "time": "16:17",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "89-izbor-predsednika-privremenih-institucija-u-pristini-vest",
       "title": "Počela vanredna sednica parlamenta u Prištini o izboru predsednika",
       "url": "https://www.euronews.rs/srbija/politika/221089/izbor-predsednika-privremenih-institucija-u-pristini/vest",
@@ -253,20 +239,6 @@
       "priority": 92
     },
     {
-      "id": "ronika-9981039-uhapseni-skaljarac-brat-zvicerovog-atentatora",
-      "title": "OVO JE \"ŠKALJARAC\" UHAPŠEN U HRVATSKOJ, TRAŽILI GA ZBOG UBISTAVA: Otkrivamo ko je Vuk Lakićević - rođak mu Zvicerov atentator, pretio sudiji, pobegao... FOTO",
-      "url": "https://www.kurir.rs/crna-hronika/9981039/uhapseni-skaljarac-brat-zvicerovog-atentatora",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T15:24:53+00:00",
-      "time": "15:24",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "110-odbijeno-jemstvo-za-tuzioca-povezanog-sa-kavackim-klanom",
       "title": "Одбијено јемство за тужиоца повезаног са кавачким кланом",
       "url": "https://www.politika.rs/scc/clanak/751110/odbijeno-jemstvo-za-tuzioca-povezanog-sa-kavackim-klanom",
@@ -379,20 +351,6 @@
       "priority": 70
     },
     {
-      "id": "ka-gorski-matovic-optuzen-za-napad-na-studente-u-novom-sadu-",
-      "title": "KRIK: Gorski Matović optužen za napad na studente u Novom Sadu, tužilaštvo traži zatvorsku kaznu",
-      "url": "https://nova.rs/vesti/hronika/gorski-matovic-optuzen-za-napad-na-studente-u-novom-sadu/",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T15:47:22+00:00",
-      "time": "15:47",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "tovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu-",
       "title": "Gorski Matović optužen za napad na studente na protestu u Novom Sadu",
       "url": "https://www.krik.rs/gorski-matovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu/",
@@ -433,20 +391,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "https-www-danas-rs-kultura-treca-sezona-kuca-zmaja-22-juna-",
-      "title": "Premijera treće sezone serije „Kuća zmaja“ 22. juna na HBO Max-u",
-      "url": "https://www.danas.rs/kultura/treca-sezona-kuca-zmaja-22-juna/",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T16:00:51+00:00",
-      "time": "16:00",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "radjuju-i-sta-imaju-od-nepokretnosti-poslanici-srpske-liste-",
@@ -673,20 +617,6 @@
       "priority": 24
     },
     {
-      "id": "aju-prijave-pod-lupom-nacelnica-uprave-za-komunalne-poslove-",
-      "title": "EKSKLUZIVNO UKP u zgradi Skupštine Kragujevca: Inspektori dobili nalog da poništavaju prijave, pod lupom načelnica Uprave za komunalne poslove",
-      "url": "https://nova.rs/vesti/politika/ekskluzivno-ukp-u-zgradi-skupstine-kragujevca-inspektori-dobili-nalog-da-ponistavaju-prijave-pod-lupom-nacelnica-uprave-za-komunalne-poslove/",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T15:42:17+00:00",
-      "time": "15:42",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "bodnaevropa-org-a-igor-bozic-n1-raskid-ugovora-33744477-html",
       "title": "Okončana profesionalna saradnja doskorašnjeg direktora vesti N1 Igora Božića i Adria News Network",
       "url": "https://www.slobodnaevropa.org/a/igor-bozic-n1-raskid-ugovora/33744477.html",
@@ -699,6 +629,76 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "tps-vreme-com-ekonomija-eps-brojila-za-struju-dane-sijan-tm-",
+      "title": "Dane Šijan i partneri traže da „podele plen“ od posla sa brojilima",
+      "url": "https://vreme.com/ekonomija/eps-brojila-za-struju-dane-sijan-tm/",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T12:41:53+00:00",
+      "time": "12:41",
+      "source": "Vreme",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-radar-nova-rs-ekonomija-sumnjive-javne-nabavke-u-zdravstvu-",
+      "title": "I novac dele na pogrešan recept",
+      "url": "https://radar.nova.rs/ekonomija/sumnjive-javne-nabavke-u-zdravstvu/",
+      "date": "2026-04-27",
+      "datetime": "2026-04-27T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "a-beograd-svratiste-finansiranje-ugrozena-deca-33741584-html",
+      "title": "Beogradsko Svratište za ugroženu decu na rubu opstanka",
+      "url": "https://www.slobodnaevropa.org/a/srbija-beograd-svratiste-finansiranje-ugrozena-deca/33741584.html",
+      "date": "2026-04-26",
+      "datetime": "2026-04-26T12:13:46+00:00",
+      "time": "12:13",
+      "source": "RSE Balkan",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "sata-cuva-policija-evo-kako-bivsa-misica-izgleda-sad-lm4y79y",
+      "title": "SRPKINJU U EMIRATIMA 24 SATA ČUVA POLICIJA Kraljica pustinje! Bivša misica se opušta u SVOJOJ PALATI: Snimila se za mreže i evo kako sad izgleda u 46. godini (FOTO)",
+      "url": "https://www.blic.rs/zabava/srpkinju-u-emiratima-24-sata-cuva-policija-evo-kako-bivsa-misica-izgleda-sad/lm4y79y",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T18:38:00+00:00",
+      "time": "18:38",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
+      "id": "-hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda-vest",
+      "title": "Hapšenje u Rumi: Zaplenjeno pola tone duvana u listu, budžet oštećen za 4,4 miliona dinara (FOTO)",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221086/hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda/vest",
+      "date": "2026-04-27",
+      "datetime": "2026-04-27T16:09:00+00:00",
+      "time": "16:09",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
     }
   ],
   "all_sources": [
