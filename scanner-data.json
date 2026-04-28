@@ -99,6 +99,20 @@
       "priority": 94
     },
     {
+      "id": "cki-vojnik-uhapsen-zbog-javne-pretnje-da-ce-napasti-sinagogu",
+      "title": "Амерички војник ухапшен због јавне претње да ће напасти синагогу",
+      "url": "https://www.politika.rs/scc/clanak/751135/americki-vojnik-uhapsen-zbog-javne-pretnje-da-ce-napasti-sinagogu",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T22:06:00+00:00",
+      "time": "22:06",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "za-ubistvo-na-novom-beogradu-uhapsen-u-trznom-centru-7cgxltt",
       "title": "MLADIĆ (22) OSUMNJIČEN DA JE UBIO STARCA UHAPŠEN U TRŽNOM CENTRU! Otkriveni novi detalji zločina na Novom Beogradu",
       "url": "https://www.blic.rs/vesti/hronika/osumnjiceni-za-ubistvo-na-novom-beogradu-uhapsen-u-trznom-centru/7cgxltt",
@@ -393,6 +407,20 @@
       "priority": 66
     },
     {
+      "id": "https-radar-nova-rs-drustvo-destrukcija-srca-beograda-",
+      "title": "Nemar ili koruptivno kruženje novca",
+      "url": "https://radar.nova.rs/drustvo/destrukcija-srca-beograda/",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "radjuju-i-sta-imaju-od-nepokretnosti-poslanici-srpske-liste-",
       "title": "Mesečna primanja od nekoliko hiljada evra i funkcije u srpskom i kosovskom sistemu: Koliko zarađuju i šta imaju od nepokretnosti poslanici Srpske liste",
       "url": "https://nova.rs/vesti/politika/mesecna-primanja-od-nekoliko-hiljada-evra-i-funkcije-u-srpskom-i-kosovskom-sistemu-koliko-zaradjuju-i-sta-imaju-od-nepokretnosti-poslanici-srpske-liste/",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "sata-cuva-policija-evo-kako-bivsa-misica-izgleda-sad-lm4y79y",
-      "title": "SRPKINJU U EMIRATIMA 24 SATA ČUVA POLICIJA Kraljica pustinje! Bivša misica se opušta u SVOJOJ PALATI: Snimila se za mreže i evo kako sad izgleda u 46. godini (FOTO)",
-      "url": "https://www.blic.rs/zabava/srpkinju-u-emiratima-24-sata-cuva-policija-evo-kako-bivsa-misica-izgleda-sad/lm4y79y",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T18:38:00+00:00",
-      "time": "18:38",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
-    },
-    {
-      "id": "-hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda-vest",
-      "title": "Hapšenje u Rumi: Zaplenjeno pola tone duvana u listu, budžet oštećen za 4,4 miliona dinara (FOTO)",
-      "url": "https://www.euronews.rs/srbija/aktuelno/221086/hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda/vest",
-      "date": "2026-04-27",
-      "datetime": "2026-04-27T16:09:00+00:00",
-      "time": "16:09",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
     }
   ],
   "all_sources": [
