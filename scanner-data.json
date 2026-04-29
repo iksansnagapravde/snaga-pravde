@@ -407,20 +407,6 @@
       "priority": 28
     },
     {
-      "id": "lca-nekretnine-vojska-i-kladjenje-na-hapsenje-madura-h9vm6nj",
-      "title": "Dvostruki život američkog specijalca: Nekretnine, vojska i klađenje na hapšenje Madura",
-      "url": "https://www.blic.rs/bbc/dvostruki-zivot-americkog-specijalca-nekretnine-vojska-i-kladjenje-na-hapsenje-madura/h9vm6nj",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T17:00:31+00:00",
-      "time": "17:00",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "s-n1info-rs-vesti-zakoni-pravosudje-tuzioci-radna-grupa-vst-",
       "title": "Zašto VST nije uvrstio na dnevni red raspravu o preporukama Venecijanske komisije",
       "url": "https://n1info.rs/vesti/zakoni-pravosudje-tuzioci-radna-grupa-vst/",
@@ -533,20 +519,6 @@
       "priority": 24
     },
     {
-      "id": "ma-stigao-za-70-miliona-evra-a-suspendovan-je-vec-18-meseci-",
-      "title": "Zaboravljena zvezda Čelsija u novim problemima: Stigao za 70 miliona evra, a suspendovan je već 18 meseci",
-      "url": "https://nova.rs/sport/fudbal/zaboravljena-zvezda-celsija-u-novim-problemima-stigao-za-70-miliona-evra-a-suspendovan-je-vec-18-meseci/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T16:06:53+00:00",
-      "time": "16:06",
-      "source": "Nova",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "oliko-ce-pristinu-kostati-politicki-zastoj-u-parlamentu-vest",
       "title": "Milioni dolara za nove izbore: Koliko će Prištinu koštati politički zastoj u parlamentu?",
       "url": "https://www.euronews.rs/srbija/politika/221362/koliko-ce-pristinu-kostati-politicki-zastoj-u-parlamentu/vest",
@@ -582,20 +554,6 @@
       "datetime": "2026-04-29T20:28:14+00:00",
       "time": "20:28",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "dska-policija-odbila-infantinov-zahtev-za-policijsku-pratnju",
-      "title": "Канадска полиција одбила Инфантинов захтев за полицијску пратњу",
-      "url": "https://www.politika.rs/scc/clanak/751388/sport/sport-tabele/fudbal/kanadska-policija-odbila-infantinov-zahtev-za-policijsku-pratnju",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T20:23:00+00:00",
-      "time": "20:23",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "21302-policija-istrazuje-grafite-na-hemijskom-fakultetu-vest",
+      "title": "Policija traga za osobama koje su ispisala grafite na Hemijskom fakultetu u Beogradu, oglasilo se ministarstvo prosvete",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221302/policija-istrazuje-grafite-na-hemijskom-fakultetu/vest",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T20:41:00+00:00",
+      "time": "20:41",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "tps-radar-nova-rs-kultura-radar-izbor-urednika-preporuke-13-",
+      "title": "Izbor urednika: Spletkarenje tirana, 1. maj posle Černobilja…",
+      "url": "https://radar.nova.rs/kultura-radar/izbor-urednika-preporuke-13/",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "https-radar-nova-rs-misljenja-vesna-malisic-uvodnik-111-",
+      "title": "Čekajući izborni megdan",
+      "url": "https://radar.nova.rs/misljenja/vesna-malisic-uvodnik-111/",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
