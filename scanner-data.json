@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "biji-mogu-da-menjaju-pol-i-da-se-ne-identifikuju-kao-04bpljp",
-      "title": "Da li deca u Srbiji mogu svojevoljno da MENJAJU POL i da se ne identifikuju kao LJUDSKA BIĆA?! Bura u javnosti zbog porodičnog zakona, hitno se oglasilo ministarstvo",
-      "url": "https://www.blic.rs/vesti/drustvo/porodicni-zakon-da-li-deca-u-srbiji-mogu-da-menjaju-pol-i-da-se-ne-identifikuju-kao/04bpljp",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T16:04:57+00:00",
-      "time": "16:04",
-      "source": "Blic",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "apseno-11-njih-za-milionsku-utaju-poreza-i-pranje-novca-vest",
       "title": "Velika akcija MUP-a i Poreske policije: Razbijena prevara teška 621 milion, uhapšeno 11 njih za pranje novca i utaju",
       "url": "https://www.euronews.rs/srbija/aktuelno/221414/uhapseno-11-njih-za-milionsku-utaju-poreza-i-pranje-novca/vest",
@@ -365,20 +351,6 @@
       "priority": 60
     },
     {
-      "id": "g-poreske-prevare-budzet-srbije-ostecen-za-621-milion-dinara",
-      "title": "PALA KRIMINALNA GRUPA U AKCIJI BORBE PROTIV KORUPCIJE: Oštetili budžet Srbije za 621 MILION dinara kroz fiktivne fakture, fantomske firme i utaju poreza",
-      "url": "https://www.kurir.rs/crna-hronika/9981827/uhapseno-11-osoba-zbog-poreske-prevare-budzet-srbije-ostecen-za-621-milion-dinara",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T12:27:30+00:00",
-      "time": "12:27",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "https-radar-nova-rs-drustvo-destrukcija-srca-beograda-",
       "title": "Nemar ili koruptivno kruženje novca",
       "url": "https://radar.nova.rs/drustvo/destrukcija-srca-beograda/",
@@ -391,20 +363,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "https-www-danas-rs-svet-sloboda-govora-tramp-amerika-",
-      "title": "Dva slučaja u jednom danu: Ima li slobode govora u Trampovoj Americi?",
-      "url": "https://www.danas.rs/svet/sloboda-govora-tramp-amerika/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T16:56:11+00:00",
-      "time": "16:56",
-      "source": "Danas",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "vljanje-instituta-u-un-i-zloupotrebljava-sindikalne-zahteve-",
@@ -617,6 +575,20 @@
       "priority": 8
     },
     {
+      "id": "a-infantinov-zahtev-za-policijsku-pratnju-dok-je-u-vankuveru",
+      "title": "\"NE ISPUNJAVA STANDARDE ZAŠTIĆENIH OSOBA\" Kanadska policija odbila Infantinov zahtev za policijsku pratnju",
+      "url": "https://www.kurir.rs/sport/fudbal/9982255/kanadska-policija-odbila-infantinov-zahtev-za-policijsku-pratnju-dok-je-u-vankuveru",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T20:28:14+00:00",
+      "time": "20:28",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "dska-policija-odbila-infantinov-zahtev-za-policijsku-pratnju",
       "title": "Канадска полиција одбила Инфантинов захтев за полицијску пратњу",
       "url": "https://www.politika.rs/scc/clanak/751388/sport/sport-tabele/fudbal/kanadska-policija-odbila-infantinov-zahtev-za-policijsku-pratnju",
@@ -659,20 +631,6 @@
       "priority": 4
     },
     {
-      "id": "duska-jovanovica-ubistvo-mog-brata-je-izvrseno-iz-dva-oruzja",
-      "title": "Брат Душка Јовановића: Убиство мог брата је извршено из два оружја",
-      "url": "https://www.politika.rs/scc/clanak/751381/brat-duska-jovanovica-ubistvo-mog-brata-je-izvrseno-iz-dva-oruzja",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T19:47:00+00:00",
-      "time": "19:47",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "e-u-krusevcu-komunalna-policija-kaznjavala-one-koji-ih-lepe-",
       "title": "Studenti delili nalepnice u Kruševcu, komunalna policija kažnjavala one koji ih lepe",
       "url": "https://www.danas.rs/vesti/drustvo/studenti-delili-nalepnice-u-krusevcu-komunalna-policija-kaznjavala-one-koji-ih-lepe/",
@@ -693,6 +651,48 @@
       "date": "2026-04-29",
       "datetime": "2026-04-29T19:10:00+00:00",
       "time": "19:10",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "p-kultura-9982133-cerka-glumca-pitera-falka-pronadjena-mrtva",
+      "title": "Ćerka legendarnog glumca pronađena mrtva: Policija sumnja na samoubistvo",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/9982133/cerka-glumca-pitera-falka-pronadjena-mrtva",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T16:40:07+00:00",
+      "time": "16:40",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ws-rs-srbija-aktuelno-221435-uhapsen-diler-u-novom-sadu-vest",
+      "title": "Hapšenje u Novom Sadu: Policija zaplenila marihuanu, ekstazi, amfetamin i LSD",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221435/uhapsen-diler-u-novom-sadu/vest",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T13:55:00+00:00",
+      "time": "13:55",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "221303-vozac-iskljucen-iz-saobracaja-pronadene-cigarete-vest",
+      "title": "Policija ga zaustavila zbog prevelike brzine a u kolima našla 350 boksova cigareta",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221303/vozac-iskljucen-iz-saobracaja-pronadene-cigarete/vest",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T21:35:00+00:00",
+      "time": "21:35",
       "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
