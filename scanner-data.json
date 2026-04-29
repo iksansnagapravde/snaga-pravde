@@ -57,20 +57,6 @@
       "priority": 100
     },
     {
-      "id": "psen-osumnjiceni-za-ubistvo-starca-na-novom-beogradu-sr5fb39",
-      "title": "(VIDEO) UHAPŠEN OSUMNJIČENI ZA UBISTVO STARCA NA NOVOM BEOGRADU Izudarao ga po glavi, pa pobegao",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-osumnjiceni-za-ubistvo-starca-na-novom-beogradu/sr5fb39",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T18:04:51+00:00",
-      "time": "18:04",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
       "id": "215-uhapsena-dvojica-osumnjicena-za-pedofiliju-u-srbiji-vest",
       "title": "Uhapšena dvojica osumnjičena za pedofiliju u Loznici i Paraćinu: MUP razbio još jednu mrežu zloupotrebe dece (VIDEO)",
       "url": "https://www.euronews.rs/srbija/aktuelno/221215/uhapsena-dvojica-osumnjicena-za-pedofiliju-u-srbiji/vest",
@@ -97,6 +83,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "-maloletnice-osumnjicene-za-nasilnicko-ponasanje-u-podgorici",
+      "title": "UHAPŠENE DVE MALOLETNICE U PODGORICI Osumnjičene za nasilničko ponašanje i neovlašćeno fotografisanje",
+      "url": "https://www.kurir.rs/region/crna-gora/9980906/dve-maloletnice-osumnjicene-za-nasilnicko-ponasanje-u-podgorici",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T01:00:00+00:00",
+      "time": "01:00",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "cki-vojnik-uhapsen-zbog-javne-pretnje-da-ce-napasti-sinagogu",
@@ -232,20 +232,6 @@
       "datetime": "2026-04-28T18:07:25+00:00",
       "time": "18:07",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "an-vodja-zloglasne-meksicke-bande-skrivao-se-u-jarku-jeesb4f",
-      "title": "Uhapšen 'Baštovan', vođa zloglasne meksičke bande, skrivao se u jarku",
-      "url": "https://www.blic.rs/bbc/uhapsen-bastovan-vodja-zloglasne-meksicke-bande-skrivao-se-u-jarku/jeesb4f",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T17:53:11+00:00",
-      "time": "17:53",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -477,18 +463,18 @@
       "priority": 26
     },
     {
-      "id": "ura-9981151-glumac-son-vajs-zavrsio-kao-zavisnik-i-beskucnik",
-      "title": "Glumac nadrogiran, završio kao beskućnik hapšen zbog provala: Bio je velika zvezda \"Mislio sam da mogu da se izvučem iz kandža droge\"",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/9981151/glumac-son-vajs-zavrsio-kao-zavisnik-i-beskucnik",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T17:25:02+00:00",
-      "time": "17:25",
-      "source": "Kurir",
-      "category": "Хапшења",
+      "id": "kladjivanju-zakona-sa-preporukama-venecijanske-komisije-html",
+      "title": "Вујић: Почиње рад на усклађивању закона са препорукама Венецијанске комисије",
+      "url": "https://www.rts.rs/vesti/politika/5936741/vujic-pocinje-rad-na-uskladjivanju-zakona-sa-preporukama-venecijanske-komisije.html",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T04:10:28+00:00",
+      "time": "04:10",
+      "source": "RTS",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
     },
     {
       "id": "a-preporukama-venecijanske-komisije-prvi-sastanak-vec-sutra-",
@@ -512,20 +498,6 @@
       "datetime": "2026-04-28T19:51:56+00:00",
       "time": "19:51",
       "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "kladjivanju-zakona-sa-preporukama-venecijanske-komisije-html",
-      "title": "Вујић: Сутра почиње рад на усклађивању закона са препорукама Венецијанске комисије",
-      "url": "https://www.rts.rs/vesti/politika/5936741/vujic-sutra-pocinje-rad-na-uskladjivanju-zakona-sa-preporukama-venecijanske-komisije.html",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T19:45:12+00:00",
-      "time": "19:45",
-      "source": "RTS",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 12
+    },
+    {
+      "id": "-hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda-vest",
+      "title": "Hapšenje u Rumi: Zaplenjeno pola tone duvana u listu, budžet oštećen za 4,4 miliona dinara (FOTO)",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221086/hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda/vest",
+      "date": "2026-04-27",
+      "datetime": "2026-04-27T16:09:00+00:00",
+      "time": "16:09",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
+      "id": "www-danas-rs-svet-hasan-servet-oktem-bugarska-pobeda-radeva-",
+      "title": "„Očekivanja od Radeva su velika, samo da ne postane novi Orban“: Bivši ambasador Turske u Beogradu analizira ishod izbora u Bugarskoj",
+      "url": "https://www.danas.rs/svet/hasan-servet-oktem-bugarska-pobeda-radeva/",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T19:00:01+00:00",
+      "time": "19:00",
+      "source": "Danas",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
