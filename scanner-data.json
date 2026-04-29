@@ -99,6 +99,20 @@
       "priority": 94
     },
     {
+      "id": "ni-identitet-glumio-julija-cezara-i-marvelove-junake-2efbsv9",
+      "title": "NEVEROVATNO Bosanac koristio čak 31 lažni identitet, glumio Julija Cezara i Marvelove junake, ali nije zbog toga uhapšen",
+      "url": "https://www.blic.rs/vesti/republika-srpska/bosanac-koristio-cak-31-lazni-identitet-glumio-julija-cezara-i-marvelove-junake/2efbsv9",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T22:43:00+00:00",
+      "time": "22:43",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "i-na-novom-beogradu-lazar-22-cekicem-ubio-penzionera-3vx1bp4",
       "title": "LAZAR (22) SA POLICE UZEO ČEKIĆ I UBIO PENZIONERA (89)! Horor detalji zločina u garaži na Novom Beogradu: Ukrao žrtvin auto i SLUPAO ga dok se kretao u rikverc",
       "url": "https://www.blic.rs/vesti/hronika/detalji-ubistva-u-garazi-na-novom-beogradu-lazar-22-cekicem-ubio-penzionera/3vx1bp4",
@@ -167,20 +181,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "oni-sta-stoji-iza-odlaganja-preporuka-venecijanske-komisije-",
-      "title": "VST i Mrdićevi zakoni: Šta stoji iza odlaganja preporuka Venecijanske komisije?",
-      "url": "https://www.danas.rs/vesti/drustvo/vst-i-mrdicevi-zakoni-sta-stoji-iza-odlaganja-preporuka-venecijanske-komisije/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T18:01:27+00:00",
-      "time": "18:01",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "sovo-zatvor-presuda-napad-kfor-policija-zvecan-33745219-html",
@@ -307,34 +307,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "https-www-danas-rs-vesti-ekonomija-zaduzivanje-srbije-",
-      "title": "Siniša Mali: Sada se zadužujemo po povoljnijim uslovima nego pre 15 godina",
-      "url": "https://www.danas.rs/vesti/ekonomija/zaduzivanje-srbije/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T18:13:53+00:00",
-      "time": "18:13",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "ttps-www-danas-rs-kultura-mortal-kombat-ii-stize-u-bioskope-",
-      "title": "„Mortal Kombat II“ stiže u bioskope",
-      "url": "https://www.danas.rs/kultura/mortal-kombat-ii-stize-u-bioskope/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T18:00:59+00:00",
-      "time": "18:00",
-      "source": "Danas",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "-miodrag-gavrilovic-i-sonja-pernat-bez-razgovora-i-dogovora-",
@@ -589,20 +561,6 @@
       "priority": 4
     },
     {
-      "id": "e-u-krusevcu-komunalna-policija-kaznjavala-one-koji-ih-lepe-",
-      "title": "Studenti delili nalepnice u Kruševcu, komunalna policija kažnjavala one koji ih lepe",
-      "url": "https://www.danas.rs/vesti/drustvo/studenti-delili-nalepnice-u-krusevcu-komunalna-policija-kaznjavala-one-koji-ih-lepe/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T19:17:58+00:00",
-      "time": "19:17",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "icija-rasvetlila-5-slucajeva-kretanja-u-suprotnom-smeru-vest",
       "title": "Opasne vožnje na putevima Srbije: Policija rasvetlila pet slučajeva kretanja u suprotnom smeru",
       "url": "https://www.euronews.rs/srbija/aktuelno/221490/policija-rasvetlila-5-slucajeva-kretanja-u-suprotnom-smeru/vest",
@@ -695,6 +653,48 @@
       "time": "22:03",
       "source": "Radar",
       "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ar-nova-rs-drustvo-saj-smene-prebacivanje-penzije-radar-111-",
+      "title": "Smene, penzije i prebacivanja neposlušnih",
+      "url": "https://radar.nova.rs/drustvo/saj-smene-prebacivanje-penzije-radar-111/",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "no-vreme-slatkis-sa-alkoholom-koji-je-jeo-ceo-balkan-1mzhkxk",
+      "title": "Ovaj slatkiš su u Jugoslaviji jeli i odrasli i deca, a danas ga se zgražavaju: Obeležio je jedno doba, a sada takav ukus mnogi ne mogu da zamisle",
+      "url": "https://www.blic.rs/slobodno-vreme/slatkis-sa-alkoholom-koji-je-jeo-ceo-balkan/1mzhkxk",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T21:59:00+00:00",
+      "time": "21:59",
+      "source": "Blic",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "t-britanija-formira-savez-sa-devet-evropskih-zemalja-esh9lhg",
+      "title": "BRITANIJA FORMIRA SAVEZ SA DEVET EVROPSKIH ZEMALJA Udružuju se pomorske snage, Amerika isključena: Ovo je glavni cilj",
+      "url": "https://www.blic.rs/vesti/svet/britanija-formira-savez-sa-devet-evropskih-zemalja/esh9lhg",
+      "date": "2026-04-29",
+      "datetime": "2026-04-29T21:58:02+00:00",
+      "time": "21:58",
+      "source": "Blic",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
