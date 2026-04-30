@@ -169,20 +169,6 @@
       "priority": 90
     },
     {
-      "id": "iz-beograda-policija-zaplenila-marihuanu-i-amfetamin-44wvczz",
-      "title": "UHAPŠENI DILERI IZ BEOGRADA Policija zaplenila marihuanu i amfetamin (FOTO)",
-      "url": "https://www.blic.rs/vesti/hronika/uhapseni-dileri-iz-beograda-policija-zaplenila-marihuanu-i-amfetamin/44wvczz",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T14:16:12+00:00",
-      "time": "14:16",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
-    },
-    {
       "id": "aga-zlocina-u-nisu-evo-zasto-ubica-nece-ici-u-zatvor-j30tzlr",
       "title": "UBIO KUMU PRED KUĆOM Tužilaštvo okončalo istragu stravičnog zločina u Nišu: Brutalni ubica izgleda NEĆE u zatvor, evo i zašto (FOTO)",
       "url": "https://www.blic.rs/vesti/hronika/kumi-pucao-u-glavu-zavrsena-istraga-zlocina-u-nisu-evo-zasto-ubica-nece-ici-u-zatvor/j30tzlr",
@@ -209,20 +195,6 @@
       "breaking": false,
       "alert": true,
       "priority": 72
-    },
-    {
-      "id": "osobe-u-beogradu-pronadjeno-gotovo-pola-kilograma-marihuane-",
-      "title": "MUP: Uhapšene dve osobe u Beogradu, pronađeno gotovo pola kilograma marihuane",
-      "url": "https://n1info.rs/vesti/mup-uhapsene-dve-osobe-u-beogradu-pronadjeno-gotovo-pola-kilograma-marihuane/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T14:45:49+00:00",
-      "time": "14:45",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "ronika-9983160-dvojica-uhapsena-na-novom-beogradu-zbog-droge",
@@ -393,20 +365,6 @@
       "priority": 30
     },
     {
-      "id": "83041-haos-bez-kraja-u-partizanu-klub-se-oglasio-saopstenjem",
-      "title": "\"PREPOZNAJE SE AGENDA, MIJATOVIĆ ZLOUPOTREBIO POZICIJU!\" Haos bez kraja u Partizanu, klub se oglasio saopštenjem",
-      "url": "https://www.kurir.rs/sport/fudbal/9983041/haos-bez-kraja-u-partizanu-klub-se-oglasio-saopstenjem",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T13:13:02+00:00",
-      "time": "13:13",
-      "source": "Kurir",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "-finalu-evropskog-slapp-takmicenja-zbog-tuzbi-protiv-krik-a-",
       "title": "Tanasković i Starting u finalu evropskog SLAPP takmičenja zbog tužbi protiv KRIK-a",
       "url": "https://www.krik.rs/tanaskovic-i-starting-u-finalu-evropskog-slapp-takmicenja-zbog-tuzbi-protiv-krik-a/",
@@ -505,20 +463,6 @@
       "priority": 25
     },
     {
-      "id": "sanaciju-terena-i-konstrukcije-vojnog-muzeja-na-kalemegdanu-",
-      "title": "Tender za sanaciju terena i konstrukcije Vojnog muzeja na Kalemegdanu",
-      "url": "https://n1info.rs/biznis/tender-za-sanaciju-terena-i-konstrukcije-vojnog-muzeja-na-kalemegdanu/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T15:13:23+00:00",
-      "time": "15:13",
-      "source": "N1",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "-radar-nova-rs-ekonomija-sumnjive-javne-nabavke-u-zdravstvu-",
       "title": "I novac dele na pogrešan recept",
       "url": "https://radar.nova.rs/ekonomija/sumnjive-javne-nabavke-u-zdravstvu/",
@@ -547,20 +491,6 @@
       "priority": 22
     },
     {
-      "id": "ti-preduzeca-mogu-ostvariti-ustedu-od-milion-dinara-godisnje",
-      "title": "Подршком инклузивности предузећа могу остварити уштеду од милион динара годишње",
-      "url": "https://www.politika.rs/scc/clanak/751621/podrskom-inkluzivnosti-preduzeca-mogu-ostvariti-ustedu-od-milion-dinara-godisnje",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T17:21:00+00:00",
-      "time": "17:21",
-      "source": "Politika",
-      "category": "Инвалидитет",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "oliko-ce-pristinu-kostati-politicki-zastoj-u-parlamentu-vest",
       "title": "Milioni dolara za nove izbore: Koliko će Prištinu koštati politički zastoj u parlamentu?",
       "url": "https://www.euronews.rs/srbija/politika/221362/koliko-ce-pristinu-kostati-politicki-zastoj-u-parlamentu/vest",
@@ -573,6 +503,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ka-teska-saobracajna-nesreca-u-novom-sadu-ima-mrtvih-kqb8ekx",
+      "title": "(FOTO, VIDEO) TEŠKA SAOBRAĆAJNA NESREĆA U NOVOM SADU, IMA MRTVIH! Policija i Hitna na licu mesta: Obustavljen saobraćaj",
+      "url": "https://www.blic.rs/vesti/hronika/teska-saobracajna-nesreca-u-novom-sadu-ima-mrtvih/kqb8ekx",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T19:06:17+00:00",
+      "time": "19:06",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "ri-dzamije-na-teritoriji-sandzaka-policija-na-nogama-wkkyd1z",
@@ -610,20 +554,6 @@
       "datetime": "2026-04-30T14:03:00+00:00",
       "time": "14:03",
       "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "je-cerka-povredjena-u-saobracajki-i-trazili-pare-za-lecenje-",
-      "title": "Niška policija traga za surovim prevarantima: Žrtve lagali da im je ćerka povređena u saobraćajki i tražili pare za lečenje",
-      "url": "https://nova.rs/vesti/hronika/niska-policija-traga-za-surovim-prevarantima-zrtve-lagali-da-im-je-cerka-povredjena-u-saobracajki-i-trazili-pare-za-lecenje/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T13:55:55+00:00",
-      "time": "13:55",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +629,76 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "21302-policija-istrazuje-grafite-na-hemijskom-fakultetu-vest",
+      "title": "Policija traga za osobama koje su ispisala grafite na Hemijskom fakultetu u Beogradu, oglasilo se ministarstvo prosvete",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221302/policija-istrazuje-grafite-na-hemijskom-fakultetu/vest",
+      "date": "2026-04-28",
+      "datetime": "2026-04-28T20:41:00+00:00",
+      "time": "20:41",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "t-zatvorska-kazna-aung-san-su-ci-preinacena-u-kucni-pritvor-",
+      "title": "Zatvorska kazna Aung San Su Ći preinačena u kućni pritvor",
+      "url": "https://www.danas.rs/svet/zatvorska-kazna-aung-san-su-ci-preinacena-u-kucni-pritvor/",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T19:59:36+00:00",
+      "time": "19:59",
+      "source": "Danas",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "t-zatvorska-kazna-aung-san-su-ci-preinacena-u-kucni-pritvor-",
+      "title": "Zatvorska kazna Aung San Su Ći preinačena u kućni pritvor",
+      "url": "https://n1info.rs/svet/zatvorska-kazna-aung-san-su-ci-preinacena-u-kucni-pritvor/",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T19:54:17+00:00",
+      "time": "19:54",
+      "source": "N1",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "cku-na-rat-s-amerikom-tramp-priznao-da-je-to-najgori-h67rvkh",
+      "title": "OVAJ ČOVEK MOŽE DA STAVI TAČKU NA RAT I... AMERIKU Moć \"komandanta iz senke\" rapidno raste u Iranu, Tramp priznao: \"To je najgori scenario za nas\" (FOTO)",
+      "url": "https://www.blic.rs/vesti/svet/ahmad-vahidi-bi-mogao-da-stavi-tacku-na-rat-s-amerikom-tramp-priznao-da-je-to-najgori/h67rvkh",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T19:50:51+00:00",
+      "time": "19:50",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-clanak-751641-sport-zvezde-izborila-novo-finale-kupa-srbije",
+      "title": "Звезде изборила ново финале Купа Србије",
+      "url": "https://www.politika.rs/scc/clanak/751641/sport/zvezde-izborila-novo-finale-kupa-srbije",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T19:46:00+00:00",
+      "time": "19:46",
+      "source": "Politika",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
