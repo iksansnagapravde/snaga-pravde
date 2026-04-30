@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "info-rs-vesti-medicinski-fakultet-izbori-parlament-novi-sad-",
-      "title": "Studentkinja: Izbori na Medicinskom protiču bez neregularnosti, problem nam je prevelika izlaznost",
-      "url": "https://n1info.rs/vesti/medicinski-fakultet-izbori-parlament-novi-sad/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T12:25:58+00:00",
-      "time": "12:25",
-      "source": "N1",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-5938238-hapsenje-futog-novi-sad-pronevera-ukp-policija-html",
       "title": "Хапшење због проневере четири милиона динара добијених од Града Новог Сада и Покрајине",
       "url": "https://www.rts.rs/vesti/hronika/5938238/hapsenje-futog-novi-sad-pronevera-ukp-policija.html",
@@ -111,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "ni-zbog-laznih-dojava-suocavaju-se-sa-optuzbama-za-terorizam",
+      "title": "Ухапшени због лажних дојава суочавају се са оптужбама за тероризам",
+      "url": "https://www.politika.rs/scc/clanak/751602/uhapseni-zbog-laznih-dojava-suocavaju-se-sa-optuzbama-za-terorizam",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T15:55:00+00:00",
+      "time": "15:55",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-uhapsena-zena-koja-je-kolima-udarila-mladica-16-u-nisu-vest",
@@ -351,6 +351,34 @@
       "priority": 70
     },
     {
+      "id": "tesku-nesrecu-na-autoputu-novi-sad-poginuo-policajac-fr9dqet",
+      "title": "POLICAJAC POGINUO NA AUTO-PUTU! Kamiondžija iz Lučana optužen za tešku nesreću: Saobraćajac zaustavio AUTO u zaustavnoj traci, na njega naleteo KAMION",
+      "url": "https://www.blic.rs/vesti/hronika/kamiondzija-iz-lucana-optuzen-za-tesku-nesrecu-na-autoputu-novi-sad-poginuo-policajac/fr9dqet",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T15:52:55+00:00",
+      "time": "15:52",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "ni-za-ubistvo-kod-novobeogradskih-garaza-branio-se-cutanjem-",
+      "title": "Osumnjičeni za ubistvo kod novobeogradskih garaža branio se ćutanjem",
+      "url": "https://www.danas.rs/vesti/drustvo/osumnjiceni-za-ubistvo-kod-novobeogradskih-garaza-branio-se-cutanjem/",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T15:32:28+00:00",
+      "time": "15:32",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "humanitarno-pravo-sudjenja-ratni-zlocin-srbija-33746237-html",
       "title": "Suđenja za ratne zločine u Srbiji u 'atmosferi poricanja'",
       "url": "https://www.slobodnaevropa.org/a/fond-za-humanitarno-pravo-sudjenja-ratni-zlocin-srbija/33746237.html",
@@ -372,20 +400,6 @@
       "datetime": "2026-04-30T12:27:56+00:00",
       "time": "12:27",
       "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "nasilnika-iz-zemuna-nozem-izbo-muskarca-i-tesko-ga-povredio-",
-      "title": "Tužilaštvo traži pritvor za nasilnika iz Zemuna: Nožem izbo muškarca i teško ga povredio",
-      "url": "https://nova.rs/vesti/hronika/tuzilastvo-trazi-pritvor-za-nasilnika-iz-zemuna-nozem-izbo-muskarca-i-tesko-ga-povredio/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T12:08:56+00:00",
-      "time": "12:08",
-      "source": "Nova",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -463,6 +477,20 @@
       "priority": 66
     },
     {
+      "id": "s-rs-vesti-ekonomija-srbija-obveznice-zaduzivanje-javni-dug-",
+      "title": "Srbija se zadužila za nove tri milijarde evra: Stare dugove vraćamo novim, skupljim obveznicama",
+      "url": "https://www.danas.rs/vesti/ekonomija/srbija-obveznice-zaduzivanje-javni-dug/",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T16:02:13+00:00",
+      "time": "16:02",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "-premijera-predstave-bozanstva-narodnog-pozorista-pirot-html",
       "title": "Премијера представе \"Божанства\" Народног позоришта Пирот",
       "url": "https://www.rts.rs/vesti/srbija-danas/5936498/premijera-predstave-bozanstva-narodnog-pozorista-pirot.html",
@@ -505,20 +533,6 @@
       "priority": 60
     },
     {
-      "id": "-miodrag-gavrilovic-i-sonja-pernat-bez-razgovora-i-dogovora-",
-      "title": "Danica Grujičić, Miodrag Gavrilović i Sonja Pernat – Bez razgovora i dogovora",
-      "url": "https://www.ktv.rs/2026/04/29/danica-grujicic-miodrag-gavrilovic-i-sonja-pernat-bez-razgovora-i-dogovora/",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T14:27:48+00:00",
-      "time": "14:27",
-      "source": "KTV",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "https-radar-nova-rs-drustvo-destrukcija-srca-beograda-",
       "title": "Nemar ili koruptivno kruženje novca",
       "url": "https://radar.nova.rs/drustvo/destrukcija-srca-beograda/",
@@ -531,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "rt-kako-je-zloupotrebljena-inicijativa-apel-za-spas-partizan",
+      "title": "Како је злоупотребљена иницијатива „Апел за спас Партизан”",
+      "url": "https://www.politika.rs/scc/clanak/751603/sport/kako-je-zloupotrebljena-inicijativa-apel-za-spas-partizan",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T15:57:00+00:00",
+      "time": "15:57",
+      "source": "Politika",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "83041-haos-bez-kraja-u-partizanu-klub-se-oglasio-saopstenjem",
@@ -561,18 +589,18 @@
       "priority": 28
     },
     {
-      "id": "-clanak-751582-hapsenje-u-beogradu-zbog-trgovine-narkoticima",
-      "title": "Хапшење у Београду због трговине наркотицима",
-      "url": "https://www.politika.rs/scc/clanak/751582/hapsenje-u-beogradu-zbog-trgovine-narkoticima",
+      "id": "odnim-institucijama-zbog-procesa-izmena-zakona-u-pravosudju-",
+      "title": "Sindikat sudske vlasti pisao međunarodnim institucijama zbog procesa izmena zakona u pravosuđu",
+      "url": "https://www.ktv.rs/2026/04/30/sindikat-sudske-vlasti-pisao-medjunarodnim-institucijama-zbog-procesa-izmena-zakona-u-pravosudju/",
       "date": "2026-04-30",
-      "datetime": "2026-04-30T14:35:00+00:00",
-      "time": "14:35",
-      "source": "Politika",
-      "category": "Хапшења",
+      "datetime": "2026-04-30T15:36:48+00:00",
+      "time": "15:36",
+      "source": "KTV",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
     },
     {
       "id": "sti-pisao-medjunarodnim-institucijama-zbog-mrdicevih-zakona-",
@@ -595,48 +623,6 @@
       "date": "2026-04-30",
       "datetime": "2026-04-30T13:37:54+00:00",
       "time": "13:37",
-      "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "jevcu-u-ponedeljak-sednica-o-izmenama-cetiri-izborna-zakona-",
-      "title": "U Kragujevcu u ponedeljak sednica o izmenama četiri izborna zakona",
-      "url": "https://nova.rs/vesti/politika/u-kragujevcu-u-ponedeljak-sednica-o-izmenama-cetiri-izborna-zakona/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T12:14:43+00:00",
-      "time": "12:14",
-      "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "-vesti-politika-zakazano-javno-slusanje-o-izbornim-zakonima-",
-      "title": "Zakazano javno slušanje o izbornim zakonima",
-      "url": "https://www.danas.rs/vesti/politika/zakazano-javno-slusanje-o-izbornim-zakonima/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T11:58:54+00:00",
-      "time": "11:58",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "eljak-u-kragujevcu-sednica-o-izmenama-cetiri-izborna-zakona-",
-      "title": "U Kragujevcu u ponedeljak sednica o izmenama četiri izborna zakona",
-      "url": "https://n1info.rs/vesti/u-ponedeljak-u-kragujevcu-sednica-o-izmenama-cetiri-izborna-zakona/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T11:57:44+00:00",
-      "time": "11:57",
       "source": "N1",
       "category": "Правосуђе",
       "summary": "",
@@ -673,14 +659,14 @@
       "priority": 25
     },
     {
-      "id": "n1info-rs-vesti-anketna-komisija-pad-nadstresnice-18-meseci-",
-      "title": "Anketna komisija: Srbija sve dalja od utvrđivanja odgovornosti za pad nadstrešnice, na snazi odbrana kriminalne grupe",
-      "url": "https://n1info.rs/vesti/anketna-komisija-pad-nadstresnice-18-meseci/",
+      "id": "sanaciju-terena-i-konstrukcije-vojnog-muzeja-na-kalemegdanu-",
+      "title": "Tender za sanaciju terena i konstrukcije Vojnog muzeja na Kalemegdanu",
+      "url": "https://n1info.rs/biznis/tender-za-sanaciju-terena-i-konstrukcije-vojnog-muzeja-na-kalemegdanu/",
       "date": "2026-04-30",
-      "datetime": "2026-04-30T11:14:55+00:00",
-      "time": "11:14",
+      "datetime": "2026-04-30T15:13:23+00:00",
+      "time": "15:13",
       "source": "N1",
-      "category": "Криминал",
+      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "elno-221568-apelacioni-sud-osudio-muskarca-na-14-godina-vest",
+      "title": "Zlostavljao, pa ubio vanbračnu suprugu: Apelacioni sud u Beogradu osudio muškarca na 14 godina zatvora",
+      "url": "https://www.euronews.rs/srbija/aktuelno/221568/apelacioni-sud-osudio-muskarca-na-14-godina/vest",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T10:05:00+00:00",
+      "time": "10:05",
+      "source": "Euronews Serbia",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
     }
   ],
   "all_sources": [
