@@ -197,20 +197,6 @@
       "priority": 70
     },
     {
-      "id": "ronika-9983160-dvojica-uhapsena-na-novom-beogradu-zbog-droge",
-      "title": "DVOJICA UHAPŠENA NA NOVOM BEOGRADU ZBOG DROGE: Jedan (44) je držao po džepovima, a drugom (21) u kolima policija pronašla 559 KESICA",
-      "url": "https://www.kurir.rs/crna-hronika/9983160/dvojica-uhapsena-na-novom-beogradu-zbog-droge",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T14:33:02+00:00",
-      "time": "14:33",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "1421-muskarac-povreden-prilikom-pada-sa-cetvrtog-sprata-vest",
       "title": "Pedesetpetogodišnji muškarac povređen nakon pada sa četvrtog sprata zgrade u izgradnji",
       "url": "https://www.euronews.rs/srbija/drustvo/221421/muskarac-povreden-prilikom-pada-sa-cetvrtog-sprata/vest",
@@ -223,20 +209,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "ni-za-ubistvo-kod-novobeogradskih-garaza-branio-se-cutanjem-",
-      "title": "Osumnjičeni za ubistvo kod novobeogradskih garaža branio se ćutanjem",
-      "url": "https://www.danas.rs/vesti/drustvo/osumnjiceni-za-ubistvo-kod-novobeogradskih-garaza-branio-se-cutanjem/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T15:32:28+00:00",
-      "time": "15:32",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "humanitarno-pravo-sudjenja-ratni-zlocin-srbija-33746237-html",
@@ -317,20 +289,6 @@
       "time": "20:34",
       "source": "Danas",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "s-rs-vesti-ekonomija-srbija-obveznice-zaduzivanje-javni-dug-",
-      "title": "Srbija se zadužila za nove tri milijarde evra: Stare dugove vraćamo novim, skupljim obveznicama",
-      "url": "https://www.danas.rs/vesti/ekonomija/srbija-obveznice-zaduzivanje-javni-dug/",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T16:02:13+00:00",
-      "time": "16:02",
-      "source": "Danas",
-      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": true,
@@ -461,6 +419,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "tps-radar-nova-rs-politika-majkl-davenport-intervju-rdr-111-",
+      "title": "Političari u Srbiji nagrađuju kriminalno ponašanje",
+      "url": "https://radar.nova.rs/politika/majkl-davenport-intervju-rdr-111/",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "-radar-nova-rs-ekonomija-sumnjive-javne-nabavke-u-zdravstvu-",
@@ -645,18 +617,32 @@
       "priority": 4
     },
     {
-      "id": "221303-vozac-iskljucen-iz-saobracaja-pronadene-cigarete-vest",
-      "title": "Policija ga zaustavila zbog prevelike brzine a u kolima našla 350 boksova cigareta",
-      "url": "https://www.euronews.rs/srbija/aktuelno/221303/vozac-iskljucen-iz-saobracaja-pronadene-cigarete/vest",
-      "date": "2026-04-28",
-      "datetime": "2026-04-28T21:35:00+00:00",
-      "time": "21:35",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
+      "id": "style-opasne-kornjace-poznate-i-kao-killer-vidjene-kod-rima-",
+      "title": "Opasne kornjače poznate i kao \"killer\" viđene kod Rima",
+      "url": "https://n1info.rs/magazin/lifestyle/opasne-kornjace-poznate-i-kao-killer-vidjene-kod-rima/",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T21:59:24+00:00",
+      "time": "21:59",
+      "source": "N1",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 4
+      "priority": 0
+    },
+    {
+      "id": "hrvatska-9983361-crnogorci-uhapseni-zbog-opasne-voznje-na-a1",
+      "title": "ŠOK U HRVATSKOJ Crnogorac autom gurao auto drugog Crnogorca na A1, preti im do 5 godina zatvora",
+      "url": "https://www.kurir.rs/region/hrvatska/9983361/crnogorci-uhapseni-zbog-opasne-voznje-na-a1",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T21:09:47+00:00",
+      "time": "21:09",
+      "source": "Kurir",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "a-na-putu-u-srbiji-evo-sta-vozac-radi-u-kruznom-toku-05y8bt5",
@@ -695,6 +681,20 @@
       "time": "20:55",
       "source": "Blic",
       "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ttps-www-rts-rs-vesti-politika-5938844-aleksandar-vucic-html",
+      "title": "Вучић: Избори или 12. јула или у периоду од октобра до краја новембра",
+      "url": "https://www.rts.rs/vesti/politika/5938844/aleksandar-vucic-.html",
+      "date": "2026-04-30",
+      "datetime": "2026-04-30T20:55:02+00:00",
+      "time": "20:55",
+      "source": "RTS",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
