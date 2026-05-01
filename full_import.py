@@ -12,7 +12,8 @@ BASE_URL = "https://jnportal.ujn.gov.rs"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*"
+    "Accept": "application/json, text/plain, */*",
+    "usertoken": "3aaf6626-5f2d-4218-bada-d72ab171983d"
 }
 
 # =========================
