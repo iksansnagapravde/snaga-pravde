@@ -3,7 +3,7 @@ name: Tender Monitor Import
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"   # na 30 min (stabilnije)
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
@@ -19,52 +19,38 @@ jobs:
 
     steps:
 
-      # ==============================
-      # CHECKOUT
-      # ==============================
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ==============================
-      # PYTHON
-      # ==============================
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ==============================
-      # CACHE
-      # ==============================
       - name: Cache pip
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
 
-      # ==============================
-      # INSTALL DEPENDENCIES
-      # ==============================
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # ==============================
-      # RUN IMPORT
-      # ==============================
+      # 🔥 KLJUČNO
+      - name: Reset DB
+        run: rm -f contracts.db
+
       - name: Run import
         run: python full_import.py
 
-      # ==============================
-      # COMMIT RESULTS
-      # ==============================
       - name: Commit updated data
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add tenders.json contracts.db
+          git add tenders.json stats.json loss-data.json contracts.db
 
           if git diff --cached --quiet; then
             echo "No changes"
