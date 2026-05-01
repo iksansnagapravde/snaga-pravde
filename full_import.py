@@ -99,54 +99,37 @@ def download_pdf(tender_id):
 
         url = f"{BASE_URL}/tender-eo/{tender_id}"
         driver.get(url)
-        time.sleep(5)
 
-        html = driver.page_source
+        time.sleep(6)
 
-        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
+        # 🔥 nađi sve linkove koji vode na PDF
+        links = driver.find_elements("xpath", "//a[contains(@href, '.pdf')]")
 
-        if not match:
-            print("NO ENTITY:", tender_id)
-            return None
+        for l in links:
+            href = l.get_attribute("href")
 
-        entity_id = match.group(1)
-        print("ENTITY:", entity_id)
-
-        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
-
-        r = requests.get(api_url, headers=HEADERS)
-
-        if r.status_code != 200:
-            print("DOC FAIL:", tender_id)
-            return None
-
-        data = r.json()
-
-        for doc in data:
-            url = doc.get("DocumentUrl")
-
-            if not url:
+            if not href:
                 continue
 
-            full = BASE_URL + url
+            print("PDF LINK:", href)
 
-            pdf = requests.get(full, headers=HEADERS)
+            r = requests.get(href, headers=HEADERS)
 
-            if pdf.status_code != 200:
+            if r.status_code != 200:
                 continue
 
-            if not pdf.content.startswith(b"%PDF"):
+            if not r.content.startswith(b"%PDF"):
                 continue
 
             path = f"documents/{tender_id}.pdf"
 
             with open(path, "wb") as f:
-                f.write(pdf.content)
+                f.write(r.content)
 
             print("PDF SAVED:", tender_id)
             return path
 
-        print("NO PDF:", tender_id)
+        print("NO PDF FOUND:", tender_id)
         return None
 
     finally:
