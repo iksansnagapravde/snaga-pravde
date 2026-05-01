@@ -5,6 +5,11 @@ import sqlite3
 from pdfminer.high_level import extract_text
 
 # =========================
+# OSIGURAJ FOLDER
+# =========================
+os.makedirs("documents", exist_ok=True)
+
+# =========================
 # DB
 # =========================
 conn = sqlite3.connect("contracts.db")
@@ -18,11 +23,11 @@ CREATE TABLE IF NOT EXISTS tenders (
     accepted REAL
 )
 """)
+
 conn.commit()
 
-
 # =========================
-# PARSER (PARTIJE)
+# PARSER
 # =========================
 def parse_tender(text):
 
@@ -57,15 +62,20 @@ def parse_tender(text):
 
     return results
 
-
 # =========================
-# PROCESS PDF
+# PROCESS FILES
 # =========================
 def process_files():
 
-    for file in os.listdir("documents"):
+    files = os.listdir("documents")
 
-        if not file.endswith(".pdf"):
+    if not files:
+        print("NEMA PDF FAJLOVA U documents/")
+        return
+
+    for file in files:
+
+        if not file.lower().endswith(".pdf"):
             continue
 
         path = os.path.join("documents", file)
@@ -75,7 +85,15 @@ def process_files():
         try:
             text = extract_text(path)
 
+            if not text or len(text) < 50:
+                print("PRAZAN ILI OCR POTREBAN:", file)
+                continue
+
             data = parse_tender(text)
+
+            if not data:
+                print("NIŠTA NIJE NAĐENO:", file)
+                continue
 
             for d in data:
                 c.execute(
@@ -87,7 +105,6 @@ def process_files():
             print("ERROR:", e)
 
     conn.commit()
-
 
 # =========================
 # EXPORT JSON
@@ -109,7 +126,6 @@ def export_json():
     with open("tenders.json", "w") as f:
         json.dump(data, f, indent=2)
 
-
 # =========================
 # MAIN
 # =========================
@@ -117,7 +133,6 @@ def main():
     process_files()
     export_json()
     print("DONE")
-
 
 if __name__ == "__main__":
     main()
