@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>Tender Monitor</title>
+
+<style>
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f5f7fb;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #0a3f78;
+}
+
+.risk-high { border-color: red; }
+.risk-mid { border-color: orange; }
+.risk-low { border-color: green; }
+
+h2 { margin: 0 0 5px 0; }
+p { margin: 2px 0; }
+</style>
+</head>
+
+<body>
+
+<h1>📊 Tender Monitor (LIVE)</h1>
+
+<div id="list">Loading...</div>
+
+<script>
+fetch("tenders.json?" + Date.now())
+.then(r => r.json())
+.then(data => {
+
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+
+  data.forEach(t => {
+
+    let cls = "risk-low";
+    if (t.risk >= 5) cls = "risk-high";
+    else if (t.risk >= 3) cls = "risk-mid";
+
+    const div = document.createElement("div");
+    div.className = "card " + cls;
+
+    div.innerHTML = `
+      <h2>${t.subject || "Без назива"}</h2>
+      <p><b>Победник:</b> ${t.winner || "-"}</p>
+      <p>Најнижа: ${format(t.lowest)}</p>
+      <p>Медијана: ${format(t.median)}</p>
+      <p>Прихваћена: ${format(t.accepted)}</p>
+      <p><b>Ризик:</b> ${t.risk}</p>
+    `;
+
+    list.appendChild(div);
+  });
+
+});
+
+function format(x){
+  if(!x) return "-";
+  return x.toLocaleString("sr-RS") + " RSD";
+}
+</script>
+
+</body>
+</html>
