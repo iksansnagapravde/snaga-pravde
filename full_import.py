@@ -9,10 +9,6 @@ from playwright.sync_api import sync_playwright
 from pdf2image import convert_from_path
 import pytesseract
 
-# =========================
-# CONFIG
-# =========================
-
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
@@ -34,21 +30,33 @@ CREATE TABLE IF NOT EXISTS tenders (
     created_at TEXT
 )
 """)
-
 conn.commit()
 
 # =========================
-# TEST IDS
+# IDS
 # =========================
 
 def fetch_entity_ids():
     return [675152, 670413, 666041]
 
 # =========================
-# PLAYWRIGHT DOWNLOAD
+# DETECT TYPE
 # =========================
 
-def download_pdf(eid):
+def detect_type(content):
+    if content.startswith(b"%PDF"):
+        return "pdf"
+    if b"<?xml" in content[:200]:
+        return "xml"
+    if b"<html" in content[:500].lower():
+        return "html"
+    return "unknown"
+
+# =========================
+# DOWNLOAD (MULTI FORMAT)
+# =========================
+
+def download_document(eid):
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -61,40 +69,43 @@ def download_pdf(eid):
 
             for link in links:
                 href = link.get_attribute("href") or ""
-                if str(eid) in href and "document" in href.lower():
+
+                if str(eid) in href:
 
                     if href.startswith("/"):
                         href = BASE_URL + href
 
                     response = page.request.get(href)
+                    content = response.body()
 
-                    filename = f"documents/{eid}.pdf"
+                    doc_type = detect_type(content)
+
+                    filename = f"documents/{eid}.{doc_type}"
 
                     with open(filename, "wb") as f:
-                        f.write(response.body())
+                        f.write(content)
 
-                    print("DOWNLOADED:", filename)
+                    print(f"DOWNLOADED {doc_type.upper()}:", filename)
 
                     browser.close()
-                    return filename
+                    return filename, doc_type
 
-            print("NO LINK FOUND")
             browser.close()
-            return None
+            print("NO DOCUMENT FOUND")
+            return None, None
 
     except Exception as e:
-        print("PLAYWRIGHT ERROR:", e)
-        return None
+        print("DOWNLOAD ERROR:", e)
+        return None, None
 
 # =========================
-# OCR
+# OCR (PDF)
 # =========================
 
-def extract_text(pdf_path):
+def extract_text_pdf(path):
     text = ""
-
     try:
-        images = convert_from_path(pdf_path, dpi=300)
+        images = convert_from_path(path, dpi=300)
         print("IMAGES:", len(images))
 
         for img in images:
@@ -104,14 +115,13 @@ def extract_text(pdf_path):
                 config="--oem 3 --psm 6"
             )
             text += t + "\n"
-
     except Exception as e:
         print("OCR ERROR:", e)
 
     return text
 
 # =========================
-# CLEAN TEXT
+# CLEAN
 # =========================
 
 def clean_text(text):
@@ -125,27 +135,18 @@ def clean_text(text):
 
 def extract_prices(text):
     prices = []
-
     matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
 
     for m in matches:
         try:
             num = float(m.replace(".", "").replace(",", "."))
-
-            if num < 10000:
-                continue
-
-            if num > 1_000_000_000:
-                continue
-
-            prices.append(num)
-
+            if 10000 < num < 1_000_000_000:
+                prices.append(num)
         except:
             continue
 
     prices = sorted(set(prices))
     print("FINAL PRICES:", prices)
-
     return prices
 
 # =========================
@@ -158,7 +159,6 @@ def find_accepted(text):
             m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", part)
             if m:
                 return float(m[0].replace(".", "").replace(",", "."))
-
     return None
 
 # =========================
@@ -167,14 +167,12 @@ def find_accepted(text):
 
 def find_winner(text):
     parts = text.split(".")
-
     for i, part in enumerate(parts):
         if "додељује" in part.lower():
             for j in range(i, i + 3):
                 if j < len(parts):
                     if "доо" in parts[j].lower() or "a.d." in parts[j].lower():
                         return parts[j].strip()
-
     return None
 
 # =========================
@@ -186,25 +184,15 @@ def analyze(prices, accepted):
         return None
 
     lowest = min(prices)
-    medijana = statistics.median(prices)
+    med = statistics.median(prices)
 
     if not accepted:
         accepted = prices[-1]
 
     loss_low = max(0, accepted - lowest)
-    loss_med = max(0, accepted - medijana)
+    loss_med = max(0, accepted - med)
 
-    return lowest, medijana, accepted, loss_low, loss_med
-
-# =========================
-# SAVE DB
-# =========================
-
-def save(eid, data):
-    c.execute("""
-    INSERT OR IGNORE INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
-    """, (eid, *data, datetime.now().isoformat()))
-    conn.commit()
+    return lowest, med, accepted, loss_low, loss_med
 
 # =========================
 # MAIN
@@ -217,13 +205,18 @@ def main():
     for eid in ids:
         print("\nPROCESS:", eid)
 
-        pdf = download_pdf(eid)
-        if not pdf:
+        path, doc_type = download_document(eid)
+        if not path:
             continue
 
-        text = extract_text(pdf)
+        # 👉 PARSING PO TIPU
+        if doc_type == "pdf":
+            text = extract_text_pdf(path)
+        else:
+            with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                text = f.read()
 
-        if len(text) < 100:
+        if len(text) < 50:
             print("TEXT TOO SHORT")
             continue
 
@@ -236,21 +229,18 @@ def main():
         result = analyze(prices, accepted)
 
         if result:
-            lowest, medijana, accepted, loss_low, loss_med = result
+            lowest, med, accepted, loss_low, loss_med = result
 
             output.append({
                 "id": eid,
                 "winner": winner,
                 "accepted": accepted,
                 "lowest": lowest,
-                "median": medijana,
+                "median": med,
                 "loss_low": loss_low,
                 "loss_median": loss_med
             })
 
-            save(eid, result)
-
-    # SAVE JSON
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
