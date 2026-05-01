@@ -20,6 +20,10 @@ body {
 
 h2 { margin: 0 0 5px 0; }
 p { margin: 4px 0; }
+
+.bad { border-left: 5px solid red !important; }
+.warn { border-left: 5px solid orange !important; }
+.ok { border-left: 5px solid #0a3f78 !important; }
 </style>
 </head>
 
@@ -50,9 +54,24 @@ fetch("tenders.json?" + Date.now())
     const div = document.createElement("div");
     div.className = "card";
 
+    // 🔴 logika za boju (VAŽNO)
+    if (t.loss_low > 100000) {
+      div.classList.add("bad");
+    } else if (t.loss_low > 0) {
+      div.classList.add("warn");
+    } else {
+      div.classList.add("ok");
+    }
+
     div.innerHTML = `
       <h2>${t.winner || "Без назива"}</h2>
-      <p><b>Прихваћена цена:</b> ${format(t.accepted)}</p>
+
+      <p><b>Прихваћена:</b> ${format(t.accepted)}</p>
+      <p><b>Најнижа:</b> ${format(t.lowest)}</p>
+      <p><b>Медијана:</b> ${format(t.median)}</p>
+
+      <p><b>Губитак (од најниже):</b> ${format(t.loss_low)}</p>
+      <p><b>Губитак (од медијане):</b> ${format(t.loss_median)}</p>
     `;
 
     list.appendChild(div);
