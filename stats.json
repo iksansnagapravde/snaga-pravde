@@ -1,8 +1,32 @@
-{
-  "broj_tendera": 2,
-  "ukupna_vrednost": "0 RSD",
-  "ukupna_vrednost_eur": "0.0 EUR",
-  "broj_ugovora": 2,
-  "ugovorena_vrednost": "3258276.0 RSD",
-  "ugovorena_vrednost_eur": "27800.99 EUR"
-}
+def write_stats():
+    c.execute("SELECT lowest, accepted FROM tenders")
+    rows = c.fetchall()
+
+    kurs = 117.2
+
+    total_lowest = 0
+    total_accepted = 0
+    valid_count = 0
+
+    for r in rows:
+        lowest, accepted = r
+
+        if lowest is None or accepted is None:
+            continue
+
+        valid_count += 1
+
+        total_lowest += lowest
+        total_accepted += accepted
+
+    stats = {
+        "broj_tendera": valid_count,
+        "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
+        "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
+        "broj_ugovora": valid_count,
+        "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
+        "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
+    }
+
+    with open("stats.json", "w") as f:
+        json.dump(stats, f, indent=2)
