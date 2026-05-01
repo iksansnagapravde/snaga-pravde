@@ -1,6 +1,5 @@
 import os
 import re
-import json
 import statistics
 import sqlite3
 from datetime import datetime
@@ -11,12 +10,15 @@ from pdfminer.high_level import extract_text
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*"
+    "Accept": "*/*"
 }
 
 os.makedirs("documents", exist_ok=True)
@@ -43,7 +45,7 @@ def exists(eid):
 
 
 # =========================
-# FETCH IDS (SELENIUM)
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     options = Options()
@@ -57,7 +59,7 @@ def fetch_entity_ids():
         driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         time.sleep(6)
 
-        links = driver.find_elements("xpath", "//a[contains(@href, '/tender-eo/')]")
+        links = driver.find_elements(By.XPATH, "//a[contains(@href, '/tender-eo/')]")
 
         ids = []
 
@@ -77,16 +79,16 @@ def fetch_entity_ids():
         ids = list(dict.fromkeys(ids))
 
         print("NEW IDS:", ids[:10])
-        return ids
+        return ids[:10]
 
     finally:
         driver.quit()
 
 
 # =========================
-# DOWNLOAD PDF (SELENIUM SESSION)
+# DOWNLOAD FILE (PRAVI FIX)
 # =========================
-def download_pdf(tender_id):
+def download_file(tender_id):
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
@@ -102,20 +104,42 @@ def download_pdf(tender_id):
 
         time.sleep(5)
 
-        # 🔥 klik na strelicu / expand
-        buttons = driver.find_elements("xpath", "//button")
+        # 🔥 klik na expand strelicu (PRAVA META)
+        expand_buttons = driver.find_elements(
+            By.XPATH,
+            "//mat-icon[contains(text(),'expand_more') or contains(text(),'keyboard_arrow_down')]"
+        )
 
-        for b in buttons:
+        clicked = False
+
+        for btn in expand_buttons:
             try:
-                b.click()
-                time.sleep(1)
+                driver.execute_script("arguments[0].click();", btn)
+                clicked = True
+                break
             except:
-                pass
+                continue
 
-        time.sleep(3)
+        if not clicked:
+            print("NO EXPAND:", tender_id)
+            return None
 
-        # 🔥 sada traži dokumente
-        links = driver.find_elements("xpath", "//a")
+        # 🔥 čekaj da se pojave dokumenti
+        try:
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, "//a[contains(@href,'.pdf') or contains(@href,'.doc')]")
+                )
+            )
+        except:
+            print("NO DOC LOADED:", tender_id)
+            return None
+
+        # 🔥 uzmi samo dokument linkove
+        links = driver.find_elements(
+            By.XPATH,
+            "//a[contains(@href,'.pdf') or contains(@href,'.doc')]"
+        )
 
         for l in links:
             href = l.get_attribute("href")
@@ -123,26 +147,25 @@ def download_pdf(tender_id):
             if not href:
                 continue
 
-            if ".pdf" in href or ".doc" in href:
-                print("DOC:", href)
+            print("DOC:", href)
 
-                r = requests.get(href, headers=HEADERS)
+            r = requests.get(href, headers=HEADERS)
 
-                if r.status_code != 200:
-                    continue
+            if r.status_code != 200:
+                continue
 
-                path = f"documents/{tender_id}"
+            path = f"documents/{tender_id}"
 
-                if ".pdf" in href:
-                    path += ".pdf"
-                else:
-                    path += ".docx"
+            if ".pdf" in href:
+                path += ".pdf"
+            else:
+                path += ".docx"
 
-                with open(path, "wb") as f:
-                    f.write(r.content)
+            with open(path, "wb") as f:
+                f.write(r.content)
 
-                print("FILE SAVED:", path)
-                return path
+            print("FILE SAVED:", path)
+            return path
 
         print("NO DOCUMENT:", tender_id)
         return None
@@ -150,14 +173,16 @@ def download_pdf(tender_id):
     finally:
         driver.quit()
 
+
 # =========================
 # TEXT
 # =========================
-def extract_text_safe(pdf_path):
+def extract_text_safe(path):
     try:
-        text = extract_text(pdf_path)
-        if text and len(text) > 200:
-            return text
+        if path.endswith(".pdf"):
+            text = extract_text(path)
+            if text and len(text) > 200:
+                return text
     except:
         pass
     return ""
@@ -232,12 +257,12 @@ def main():
     ids = fetch_entity_ids()
 
     for eid in ids:
-        pdf = download_pdf(eid)
+        file_path = download_file(eid)
 
-        if not pdf:
+        if not file_path:
             continue
 
-        text = extract_text_safe(pdf)
+        text = extract_text_safe(file_path)
 
         if len(text) < 100:
             continue
