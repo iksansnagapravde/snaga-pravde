@@ -62,37 +62,54 @@ def download_document(eid):
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
 
+            # 👉 otvorimo stranicu da dobijemo session
             page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-            page.wait_for_timeout(5000)
+            page.wait_for_timeout(3000)
 
-            links = page.query_selector_all("a")
+            # 👉 sada zovemo PRAVI API iz browsera
+            api_url = f"https://jnportal.ujn.gov.rs/get-documents?entityId={eid}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
-            for link in links:
-                href = link.get_attribute("href") or ""
+            response = page.request.get(api_url)
+            data = response.json()
 
-                if str(eid) in href:
+            if not data:
+                print("NO DOCUMENTS")
+                browser.close()
+                return None, None
 
-                    if href.startswith("/"):
-                        href = BASE_URL + href
+            # 👉 uzmi prvi pravi dokument
+            file_url = data[0].get("url") or data[0].get("downloadUrl")
 
-                    response = page.request.get(href)
-                    content = response.body()
+            if not file_url:
+                print("NO FILE URL")
+                browser.close()
+                return None, None
 
-                    doc_type = detect_type(content)
+            if file_url.startswith("/"):
+                file_url = BASE_URL + file_url
 
-                    filename = f"documents/{eid}.{doc_type}"
+            file_response = page.request.get(file_url)
+            content = file_response.body()
 
-                    with open(filename, "wb") as f:
-                        f.write(content)
+            # 👉 DETEKCIJA
+            if content.startswith(b"%PDF"):
+                doc_type = "pdf"
+            elif b"<?xml" in content[:200]:
+                doc_type = "xml"
+            elif b"<html" in content[:500].lower():
+                doc_type = "html"
+            else:
+                doc_type = "unknown"
 
-                    print(f"DOWNLOADED {doc_type.upper()}:", filename)
+            filename = f"documents/{eid}.{doc_type}"
 
-                    browser.close()
-                    return filename, doc_type
+            with open(filename, "wb") as f:
+                f.write(content)
+
+            print(f"DOWNLOADED {doc_type.upper()}:", filename)
 
             browser.close()
-            print("NO DOCUMENT FOUND")
-            return None, None
+            return filename, doc_type
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
