@@ -38,10 +38,6 @@ jobs:
           pip install --upgrade pip
           pip install --prefer-binary -r requirements.txt
 
-      # 🔥 KLJUČNO
-      - name: Reset DB
-        run: rm -f contracts.db
-
       - name: Run import
         run: python full_import.py
 
