@@ -11,7 +11,11 @@ def write_stats():
     for r in rows:
         lowest, accepted = r
 
+        # ✅ validacija
         if lowest is None or accepted is None:
+            continue
+
+        if lowest <= 0 or accepted <= 0:
             continue
 
         valid_count += 1
