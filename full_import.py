@@ -45,7 +45,7 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH IDS (NO SELENIUM)
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     url = f"{BASE_URL}/odluke-o-dodeli-ugovora"
@@ -56,7 +56,6 @@ def fetch_entity_ids():
     found = re.findall(r"/tender-eo/(\d+)", html)
     found = list(dict.fromkeys(found))
 
-    # 🔥 uzmi više da ne promašiš
     found = found[:100]
 
     new_ids = []
@@ -129,7 +128,7 @@ def download_pdf(tender_id):
         return None
 
 # =========================
-# PDF TEXT (NO OCR)
+# TEXT EXTRACTION
 # =========================
 def extract_text_safe(pdf_path):
     try:
@@ -161,6 +160,10 @@ def extract_bids(text):
             try:
                 price = float(matches[0].replace(".", "").replace(",", "."))
 
+                # filtriranje smeća
+                if price < 10000 or price > 1_000_000_000:
+                    continue
+
                 company = line[:80].strip()
 
                 bids.append({
@@ -178,18 +181,17 @@ def extract_bids(text):
 # ANALYZE
 # =========================
 def analyze(bids):
-    if len(bids) < 1:
+    if len(bids) < 2:
         return None
 
     prices = [b["price"] for b in bids]
 
     lowest = min(prices)
+    median = statistics.median(prices)
 
-    median = statistics.median(prices) if len(prices) >= 2 else lowest
+    # 👉 privremeno: accepted = lowest (realnije nego max)
+    accepted = lowest
 
-    accepted = max(prices)  # fallback
-
-    # 🔥 RISK SCORE
     risk = 0
 
     if accepted > lowest:
@@ -229,7 +231,7 @@ def save(eid, bids, analysis):
     conn.commit()
 
 # =========================
-# EXPORT JSON
+# EXPORT JSON (debug)
 # =========================
 def export_json():
     c.execute("SELECT entity_id, lowest, median, accepted, risk FROM tenders")
@@ -247,6 +249,99 @@ def export_json():
         })
 
     with open("tenders.json", "w") as f:
+        json.dump(data, f, indent=2)
+
+# =========================
+# WRITE STATS
+# =========================
+def write_stats():
+    c.execute("SELECT lowest, accepted FROM tenders")
+    rows = c.fetchall()
+
+    kurs = 117.2
+
+    total_lowest = 0
+    total_accepted = 0
+    valid_count = 0
+
+    for r in rows:
+        lowest, accepted = r
+
+        if lowest is None or accepted is None:
+            continue
+
+        if lowest <= 0 or accepted <= 0:
+            continue
+
+        valid_count += 1
+
+        total_lowest += lowest
+        total_accepted += accepted
+
+    stats = {
+        "broj_tendera": valid_count,
+        "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
+        "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
+        "broj_ugovora": valid_count,
+        "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
+        "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
+    }
+
+    with open("stats.json", "w") as f:
+        json.dump(stats, f, indent=2)
+
+# =========================
+# WRITE LOSS
+# =========================
+def write_loss_data():
+    c.execute("SELECT lowest, median, accepted FROM tenders")
+    rows = c.fetchall()
+
+    total_lowest = 0
+    total_median = 0
+    total_accepted = 0
+
+    loss_low_total = 0
+    loss_med_total = 0
+
+    valid_count = 0
+
+    for r in rows:
+        lowest, median, accepted = r
+
+        if lowest is None or accepted is None:
+            continue
+
+        if lowest <= 0 or accepted <= 0:
+            continue
+
+        valid_count += 1
+
+        total_lowest += lowest
+        total_accepted += accepted
+        total_median += median if median is not None else 0
+
+        loss_low = max(0, accepted - lowest)
+
+        if median is not None:
+            loss_med = max(0, accepted - median)
+        else:
+            loss_med = 0
+
+        loss_low_total += loss_low
+        loss_med_total += loss_med
+
+    data = {
+        "najbolja_ponuda": round(total_lowest, 2),
+        "medijana_ponuda": round(total_median, 2),
+        "prihvacena_ponuda": round(total_accepted, 2),
+        "broj_analiziranih": valid_count,
+        "gubitak_prema_najboljoj": round(loss_low_total, 2),
+        "gubitak_prema_medijani": round(loss_med_total, 2),
+        "valuta_kurs_eur": 117.2
+    }
+
+    with open("loss-data.json", "w") as f:
         json.dump(data, f, indent=2)
 
 # =========================
@@ -269,7 +364,7 @@ def main():
 
         bids = extract_bids(text)
 
-        if len(bids) < 1:
+        if len(bids) < 2:
             continue
 
         analysis = analyze(bids)
@@ -278,6 +373,8 @@ def main():
             save(eid, bids, analysis)
 
     export_json()
+    write_stats()
+    write_loss_data()
 
     print("DONE")
 
