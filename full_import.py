@@ -62,59 +62,66 @@ def download_document(eid):
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
 
-            # 👉 otvorimo stranicu da dobijemo session
             page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-            page.wait_for_timeout(3000)
 
-            # 👉 sada zovemo PRAVI API iz browsera
-            api_url = f"https://jnportal.ujn.gov.rs/get-documents?entityId={eid}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+            # čekaj tabelu
+            page.wait_for_timeout(5000)
 
-            response = page.request.get(api_url)
-            data = response.json()
+            # nađi red sa ID-jem
+            row = page.locator(f"text={eid}").first
 
-            if not data:
-                print("NO DOCUMENTS")
+            if not row:
+                print("ROW NOT FOUND")
                 browser.close()
                 return None, None
 
-            # 👉 uzmi prvi pravi dokument
-            file_url = data[0].get("url") or data[0].get("downloadUrl")
+            # klikni dugme za dokument (strelica)
+            row.click()
 
-            if not file_url:
-                print("NO FILE URL")
+            page.wait_for_timeout(2000)
+
+            # sad tražimo linkove za download
+            links = page.locator("a[href*='download'], a[href*='document']").all()
+
+            for link in links:
+                href = link.get_attribute("href")
+
+                if not href:
+                    continue
+
+                if href.startswith("/"):
+                    href = BASE_URL + href
+
+                response = page.request.get(href)
+                content = response.body()
+
+                # DETEKCIJA
+                if content.startswith(b"%PDF"):
+                    doc_type = "pdf"
+                elif b"<?xml" in content[:200]:
+                    doc_type = "xml"
+                elif b"<html" in content[:500].lower():
+                    continue  # preskoči HTML
+                else:
+                    continue
+
+                filename = f"documents/{eid}.{doc_type}"
+
+                with open(filename, "wb") as f:
+                    f.write(content)
+
+                print(f"DOWNLOADED {doc_type.upper()}:", filename)
+
                 browser.close()
-                return None, None
+                return filename, doc_type
 
-            if file_url.startswith("/"):
-                file_url = BASE_URL + file_url
-
-            file_response = page.request.get(file_url)
-            content = file_response.body()
-
-            # 👉 DETEKCIJA
-            if content.startswith(b"%PDF"):
-                doc_type = "pdf"
-            elif b"<?xml" in content[:200]:
-                doc_type = "xml"
-            elif b"<html" in content[:500].lower():
-                doc_type = "html"
-            else:
-                doc_type = "unknown"
-
-            filename = f"documents/{eid}.{doc_type}"
-
-            with open(filename, "wb") as f:
-                f.write(content)
-
-            print(f"DOWNLOADED {doc_type.upper()}:", filename)
-
+            print("NO VALID DOCUMENT")
             browser.close()
-            return filename, doc_type
+            return None, None
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
         return None, None
-
 # =========================
 # OCR (PDF)
 # =========================
