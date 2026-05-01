@@ -3,21 +3,15 @@ import re
 import json
 import statistics
 import sqlite3
-import time
 from datetime import datetime
 
 import requests
-from pdf2image import convert_from_path
-import pytesseract
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from pdfminer.high_level import extract_text
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*"
+    "User-Agent": "Mozilla/5.0"
 }
 
 # =========================
@@ -31,11 +25,13 @@ c = conn.cursor()
 c.execute("""
 CREATE TABLE IF NOT EXISTS tenders (
     entity_id INTEGER PRIMARY KEY,
+    subject TEXT,
+    winner TEXT,
     lowest REAL,
-    medijana REAL,
+    median REAL,
     accepted REAL,
-    loss_low REAL,
-    loss_medijana REAL,
+    risk INTEGER,
+    bids_json TEXT,
     created_at TEXT
 )
 """)
@@ -49,81 +45,58 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH
+# FETCH IDS (NO SELENIUM)
 # =========================
 def fetch_entity_ids():
-    ids = []
+    url = f"{BASE_URL}/odluke-o-dodeli-ugovora"
 
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
+    r = requests.get(url, headers=HEADERS)
+    html = r.text
 
-    driver = webdriver.Chrome(options=options)
+    found = re.findall(r"/tender-eo/(\d+)", html)
+    found = list(dict.fromkeys(found))
 
-    try:
-        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(5)
+    # 🔥 uzmi više da ne promašiš
+    found = found[:100]
 
-        html = driver.page_source
+    new_ids = []
 
-        found = re.findall(r"/tender-eo/(\d+)", html)
+    for eid in found:
+        eid = int(eid)
+        if not exists(eid):
+            new_ids.append(eid)
 
-        found = list(dict.fromkeys(found))  # ukloni duplikate
-
-        print("FOUND RAW:", found[:10])
-
-        found = found[:10]
-
-        for eid in found:
-            eid = int(eid)
-            if not exists(eid):
-                ids.append(eid)
-
-        print("LAST 10 IDS:", ids)
-        return ids
-
-    finally:
-        driver.quit()
+    print("NEW IDS:", new_ids)
+    return new_ids
 
 # =========================
-# DOWNLOAD PDF (FIXED)
+# DOWNLOAD PDF
 # =========================
 def download_pdf(tender_id):
     try:
         url = f"{BASE_URL}/tender-eo/{tender_id}"
 
         r = requests.get(url, headers=HEADERS, timeout=30)
-
         if r.status_code != 200:
-            print("TENDER FAIL:", r.status_code)
             return None
 
         html = r.text
 
-        # ✅ PRAVILNO
         match = re.search(r'"entityId"\s*:\s*(\d+)', html)
-
         if not match:
-            print("NO ENTITY ID:", tender_id)
             return None
 
         entity_id = match.group(1)
 
-        print("ENTITY:", entity_id)
-
         api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
         r2 = requests.get(api_url, headers=HEADERS, timeout=30)
-
         if r2.status_code != 200:
-            print("DOC FAIL:", r2.status_code)
             return None
 
         try:
             data = r2.json()
         except:
-            print("NOT JSON")
             return None
 
         for doc in data:
@@ -149,160 +122,131 @@ def download_pdf(tender_id):
             print("PDF SAVED:", tender_id)
             return path
 
-        print("NO PDF:", tender_id)
         return None
 
     except Exception as e:
-        print("ERROR:", e)
+        print("DOWNLOAD ERROR:", e)
         return None
 
 # =========================
-# OCR
+# PDF TEXT (NO OCR)
 # =========================
-def extract_text(pdf_path):
-    text = ""
-
+def extract_text_safe(pdf_path):
     try:
-        images = convert_from_path(pdf_path, dpi=300)
-        print("IMAGES:", len(images))
+        text = extract_text(pdf_path)
 
-        for img in images:
-            t = pytesseract.image_to_string(img, config="--psm 6")
-            text += t + "\n"
+        if text and len(text) > 200:
+            return text
 
     except Exception as e:
-        print("OCR ERROR:", e)
+        print("TEXT ERROR:", e)
 
-    return text
+    return ""
 
 # =========================
-# PRICES (STABILNO)
+# EXTRACT BIDS
 # =========================
-def extract_prices(text):
-    prices = []
+def extract_bids(text):
+    bids = []
 
-    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+    for line in text.split("\n"):
 
-    for m in matches:
-        try:
-            num = float(m.replace(".", "").replace(",", "."))
+        if any(k in line.lower() for k in ["rsd", "динара"]):
 
-            if num < 500000:
+            matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+
+            if not matches:
                 continue
 
-            if num > 1_000_000_000:
+            try:
+                price = float(matches[0].replace(".", "").replace(",", "."))
+
+                company = line[:80].strip()
+
+                bids.append({
+                    "company": company,
+                    "price": price
+                })
+
+            except:
                 continue
 
-            prices.append(num)
-
-        except:
-            continue
-
-    prices = sorted(set(prices))
-
-    if prices:
-        max_price = max(prices)
-        prices = [p for p in prices if p > max_price * 0.2]
-
-    print("FINAL PRICES:", prices)
-
-    return prices
-
-# =========================
-# ACCEPTED
-# =========================
-def find_accepted(text):
-    lines = text.split("\n")
-
-    for i, line in enumerate(lines):
-        if "изабрана" in line.lower() or "најповољнија" in line.lower():
-            for j in range(i, i + 5):
-                if j < len(lines):
-                    m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", lines[j])
-                    if m:
-                        try:
-                            return float(m[0].replace(".", "").replace(",", "."))
-                        except:
-                            continue
-
-    return None
+    print("BIDS:", bids)
+    return bids
 
 # =========================
 # ANALYZE
 # =========================
-def analyze(prices, accepted):
-    if len(prices) < 1:
+def analyze(bids):
+    if len(bids) < 1:
         return None
+
+    prices = [b["price"] for b in bids]
 
     lowest = min(prices)
 
-    medijana = statistics.median(prices) if len(prices) > 1 else lowest
+    median = statistics.median(prices) if len(prices) >= 2 else lowest
 
-    if not accepted:
-        accepted = prices[-1]
+    accepted = max(prices)  # fallback
 
-    loss_low = max(0, accepted - lowest)
-    loss_med = max(0, accepted - medijana)
+    # 🔥 RISK SCORE
+    risk = 0
 
-    return lowest, medijana, accepted, loss_low, loss_med
+    if accepted > lowest:
+        risk += 3
+
+    if accepted > median * 1.2:
+        risk += 2
+
+    if len(prices) <= 2:
+        risk += 2
+
+    return {
+        "lowest": lowest,
+        "median": median,
+        "accepted": accepted,
+        "risk": risk
+    }
 
 # =========================
 # SAVE
 # =========================
-def save(eid, data):
+def save(eid, bids, analysis):
     c.execute("""
-    INSERT OR IGNORE INTO tenders
-    VALUES (?, ?, ?, ?, ?, ?, ?)
-    """, (eid, *data, datetime.now().isoformat()))
+    INSERT OR REPLACE INTO tenders
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        eid,
+        "",
+        "",
+        analysis["lowest"],
+        analysis["median"],
+        analysis["accepted"],
+        analysis["risk"],
+        json.dumps(bids),
+        datetime.now().isoformat()
+    ))
     conn.commit()
 
 # =========================
-# STATS
+# EXPORT JSON
 # =========================
-def write_stats():
-    c.execute("SELECT lowest, accepted FROM tenders")
+def export_json():
+    c.execute("SELECT entity_id, lowest, median, accepted, risk FROM tenders")
     rows = c.fetchall()
 
-    kurs = 117.2
+    data = []
 
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
-    valid_accepted = [r[1] for r in rows if r[1] and r[1] > 500000]
+    for r in rows:
+        data.append({
+            "id": r[0],
+            "lowest": r[1],
+            "median": r[2],
+            "accepted": r[3],
+            "risk": r[4]
+        })
 
-    total_lowest = sum(valid_lowest) if valid_lowest else 0
-    total_accepted = sum(valid_accepted) if valid_accepted else 0
-
-    stats = {
-        "broj_tendera": len(rows),
-        "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
-        "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
-        "broj_ugovora": len(rows),
-        "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
-        "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
-    }
-
-    with open("stats.json", "w") as f:
-        json.dump(stats, f, indent=2)
-
-# =========================
-# LOSS DATA
-# =========================
-def write_loss_data():
-    c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
-    rows = c.fetchall()
-
-    valid_lowest = [r[0] for r in rows if r[0] and r[0] > 500000]
-
-    data = {
-        "najbolja_ponuda": round(sum(valid_lowest), 2) if valid_lowest else 0,
-        "medijana_ponuda": round(sum(r[1] for r in rows), 2) if rows else 0,
-        "prihvacena_ponuda": round(sum(r[2] for r in rows), 2) if rows else 0,
-        "broj_analiziranih": len(rows),
-        "gubitak_prema_najboljoj": round(sum(r[3] for r in rows), 2) if rows else 0,
-        "gubitak_prema_medijani": round(sum(r[4] for r in rows), 2) if rows else 0,
-        "valuta_kurs_eur": 117.2
-    }
-
-    with open("loss-data.json", "w") as f:
+    with open("tenders.json", "w") as f:
         json.dump(data, f, indent=2)
 
 # =========================
@@ -318,21 +262,22 @@ def main():
         if not pdf:
             continue
 
-        text = extract_text(pdf)
+        text = extract_text_safe(pdf)
 
         if len(text) < 100:
             continue
 
-        prices = extract_prices(text)
-        accepted = find_accepted(text)
+        bids = extract_bids(text)
 
-        result = analyze(prices, accepted)
+        if len(bids) < 1:
+            continue
 
-        if result:
-            save(eid, result)
+        analysis = analyze(bids)
 
-    write_stats()
-    write_loss_data()
+        if analysis:
+            save(eid, bids, analysis)
+
+    export_json()
 
     print("DONE")
 
