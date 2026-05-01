@@ -31,21 +31,32 @@ p { margin: 2px 0; }
 
 <h1>📊 Tender Monitor (LIVE)</h1>
 
-<div id="list">Loading...</div>
+<div id="list">Учитавање...</div>
 
 <script>
 fetch("tenders.json?" + Date.now())
-.then(r => r.json())
+.then(r => {
+  if (!r.ok) throw new Error("Greška u učitavanju");
+  return r.json();
+})
 .then(data => {
 
   const list = document.getElementById("list");
   list.innerHTML = "";
 
+  // ✅ zaštita ako nema podataka
+  if (!Array.isArray(data) || data.length === 0) {
+    list.innerHTML = "Нема података";
+    return;
+  }
+
   data.forEach(t => {
 
+    let risk = t.risk || 0;
+
     let cls = "risk-low";
-    if (t.risk >= 5) cls = "risk-high";
-    else if (t.risk >= 3) cls = "risk-mid";
+    if (risk >= 5) cls = "risk-high";
+    else if (risk >= 3) cls = "risk-mid";
 
     const div = document.createElement("div");
     div.className = "card " + cls;
@@ -56,17 +67,22 @@ fetch("tenders.json?" + Date.now())
       <p>Најнижа: ${format(t.lowest)}</p>
       <p>Медијана: ${format(t.median)}</p>
       <p>Прихваћена: ${format(t.accepted)}</p>
-      <p><b>Ризик:</b> ${t.risk}</p>
+      <p><b>Ризик:</b> ${risk}</p>
     `;
 
     list.appendChild(div);
   });
 
+})
+.catch(err => {
+  document.getElementById("list").innerHTML = "Грешка или нема података.";
+  console.log(err);
 });
 
+// ✅ stabilna format funkcija
 function format(x){
-  if(!x) return "-";
-  return x.toLocaleString("sr-RS") + " RSD";
+  if (x === null || x === undefined) return "-";
+  return Number(x).toLocaleString("sr-RS") + " RSD";
 }
 </script>
 
