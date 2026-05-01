@@ -18,18 +18,14 @@ body {
   border-left: 5px solid #0a3f78;
 }
 
-.risk-high { border-color: red; }
-.risk-mid { border-color: orange; }
-.risk-low { border-color: green; }
-
 h2 { margin: 0 0 5px 0; }
-p { margin: 2px 0; }
+p { margin: 4px 0; }
 </style>
 </head>
 
 <body>
 
-<h1>📊 Tender Monitor (LIVE)</h1>
+<h1>📊 Tender Monitor</h1>
 
 <div id="list">Учитавање...</div>
 
@@ -44,7 +40,6 @@ fetch("tenders.json?" + Date.now())
   const list = document.getElementById("list");
   list.innerHTML = "";
 
-  // ✅ zaštita ako nema podataka
   if (!Array.isArray(data) || data.length === 0) {
     list.innerHTML = "Нема података";
     return;
@@ -52,22 +47,12 @@ fetch("tenders.json?" + Date.now())
 
   data.forEach(t => {
 
-    let risk = t.risk || 0;
-
-    let cls = "risk-low";
-    if (risk >= 5) cls = "risk-high";
-    else if (risk >= 3) cls = "risk-mid";
-
     const div = document.createElement("div");
-    div.className = "card " + cls;
+    div.className = "card";
 
     div.innerHTML = `
-      <h2>${t.subject || "Без назива"}</h2>
-      <p><b>Победник:</b> ${t.winner || "-"}</p>
-      <p>Најнижа: ${format(t.lowest)}</p>
-      <p>Медијана: ${format(t.median)}</p>
-      <p>Прихваћена: ${format(t.accepted)}</p>
-      <p><b>Ризик:</b> ${risk}</p>
+      <h2>${t.winner || "Без назива"}</h2>
+      <p><b>Прихваћена цена:</b> ${format(t.accepted)}</p>
     `;
 
     list.appendChild(div);
@@ -79,7 +64,7 @@ fetch("tenders.json?" + Date.now())
   console.log(err);
 });
 
-// ✅ stabilna format funkcija
+// format broja
 function format(x){
   if (x === null || x === undefined) return "-";
   return Number(x).toLocaleString("sr-RS") + " RSD";
