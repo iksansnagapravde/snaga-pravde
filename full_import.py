@@ -89,70 +89,60 @@ def fetch_entity_ids():
 # =========================
 # DOWNLOAD PDF
 # =========================
-def download_pdf(tender_id):
+def download_pdf(_):
+    from selenium.webdriver.common.by import By
+
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    prefs = {
+        "download.default_directory": os.path.abspath("documents"),
+        "download.prompt_for_download": False,
+        "plugins.always_open_pdf_externally": True
+    }
+    options.add_experimental_option("prefs", prefs)
+
+    driver = webdriver.Chrome(options=options)
+
     try:
-        url = f"{BASE_URL}/tender-eo/{tender_id}"
+        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        time.sleep(5)
 
-        r = requests.get(url, headers=HEADERS, timeout=30)
+        rows = driver.find_elements(By.XPATH, "//div[contains(@class,'mat-row')]")
 
-        if r.status_code != 200:
-            print("TENDER FAIL:", r.status_code)
+        if not rows:
+            print("NO ROWS")
             return None
 
-        html = r.text
-
-        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
-
-        if not match:
-            print("NO ENTITY ID:", tender_id)
-            return None
-
-        entity_id = match.group(1)
-        print("ENTITY:", entity_id)
-
-        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
-
-        r2 = requests.get(api_url, headers=HEADERS, timeout=30)
-
-        if r2.status_code != 200:
-            print("DOC FAIL:", r2.status_code)
-            return None
+        row = rows[0]
 
         try:
-            data = r2.json()
+            btn = row.find_element(By.XPATH, ".//button")
+            driver.execute_script("arguments[0].click();", btn)
+
+            print("CLICKED DOWNLOAD")
+
+            time.sleep(5)
+
         except:
-            print("NOT JSON")
+            print("NO BUTTON")
             return None
 
-        for doc in data:
-            url = doc.get("DocumentUrl")
-            if not url:
-                continue
+        files = os.listdir("documents")
+        pdfs = [f for f in files if f.endswith(".pdf")]
 
-            full = BASE_URL + url
+        if pdfs:
+            latest = max(pdfs, key=lambda x: os.path.getmtime(os.path.join("documents", x)))
+            print("DOWNLOADED:", latest)
+            return os.path.join("documents", latest)
 
-            pdf = requests.get(full, headers=HEADERS, timeout=60)
-
-            if pdf.status_code != 200:
-                continue
-
-            if not pdf.content.startswith(b"%PDF"):
-                continue
-
-            path = f"documents/{tender_id}.pdf"
-
-            with open(path, "wb") as f:
-                f.write(pdf.content)
-
-            print("PDF SAVED:", tender_id)
-            return path
-
-        print("NO PDF:", tender_id)
+        print("NO PDF FOUND")
         return None
 
-    except Exception as e:
-        print("ERROR:", e)
-        return None
+    finally:
+        driver.quit()
 
 # =========================
 # OCR
