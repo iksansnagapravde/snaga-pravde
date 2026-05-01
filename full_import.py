@@ -1,31 +1,59 @@
 import os
-import re
 import time
-import requests
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-BASE_URL = "https://jnportal.ujn.gov.rs"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
-
-os.makedirs("documents", exist_ok=True)
+# =========================
+# PODEŠAVANJE
+# =========================
+DOWNLOAD_DIR = os.path.abspath("documents")
+os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 
 # =========================
-# GLAVNA FUNKCIJA
+# ČEKANJE DOWNLOADA
+# =========================
+def wait_for_download(timeout=20):
+    start = time.time()
+
+    while True:
+        files = os.listdir(DOWNLOAD_DIR)
+
+        # ignoriši .crdownload (Chrome još skida)
+        ready_files = [f for f in files if not f.endswith(".crdownload")]
+
+        if ready_files:
+            # uzmi najnoviji fajl
+            ready_files.sort(key=lambda x: os.path.getmtime(os.path.join(DOWNLOAD_DIR, x)))
+            return ready_files[-1]
+
+        if time.time() - start > timeout:
+            return None
+
+        time.sleep(1)
+
+
+# =========================
+# GLAVNA LOGIKA
 # =========================
 def process_from_list():
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
+    chrome_options = Options()
+    chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
 
-    driver = webdriver.Chrome(options=options)
+    # 🔥 KRITIČNO: automatski download bez popup-a
+    prefs = {
+        "download.default_directory": DOWNLOAD_DIR,
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "plugins.always_open_pdf_externally": True
+    }
+    chrome_options.add_experimental_option("prefs", prefs)
+
+    driver = webdriver.Chrome(options=chrome_options)
 
     try:
         print("OPEN LIST PAGE")
@@ -33,75 +61,35 @@ def process_from_list():
         driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         time.sleep(6)
 
-        rows = driver.find_elements(By.XPATH, "//tr")
+        rows = driver.find_elements(By.XPATH, "//div[contains(@class,'mat-row')]")
 
-        print("TOTAL ROWS:", len(rows))
+        print("ROWS FOUND:", len(rows))
 
-        counter = 0
+        for i, row in enumerate(rows[:5]):  # prvih 5 za test
 
-        for row in rows:
-
-            if counter >= 10:
-                break
+            print("\nROW:", i)
 
             try:
-                # 🔥 NAĐI STRELICU U REDU
-                expand = row.find_element(
-                    By.XPATH,
-                    ".//mat-icon[contains(text(),'expand_more') or contains(text(),'keyboard_arrow_down')]"
-                )
+                # 🔥 PRONAĐI DOWNLOAD/STRELICU DUGME
+                button = row.find_element(By.XPATH, ".//button")
+                driver.execute_script("arguments[0].click();", button)
 
-                driver.execute_script("arguments[0].click();", expand)
+                print("CLICKED DOWNLOAD")
 
-                print("\nEXPANDED ROW:", counter)
-
-                time.sleep(2)
-
-            except:
+            except Exception as e:
+                print("NO BUTTON:", e)
                 continue
 
-            # 🔥 TRAŽI DOKUMENTE U TOM REDU
-            links = row.find_elements(
-                By.XPATH,
-                ".//a[contains(@href,'.pdf') or contains(@href,'.doc')]"
-            )
+            # 🔥 ČEKAJ DOWNLOAD
+            downloaded_file = wait_for_download()
 
-            if not links:
-                print("NO DOCUMENT IN ROW")
+            if not downloaded_file:
+                print("DOWNLOAD FAILED")
                 continue
 
-            for l in links:
-                href = l.get_attribute("href")
+            print("DOWNLOADED:", downloaded_file)
 
-                if not href:
-                    continue
-
-                print("FOUND DOC:", href)
-
-                try:
-                    r = requests.get(href, headers=HEADERS)
-
-                    if r.status_code != 200:
-                        continue
-
-                    filename = f"documents/tender_{counter}"
-
-                    if ".pdf" in href:
-                        filename += ".pdf"
-                    else:
-                        filename += ".docx"
-
-                    with open(filename, "wb") as f:
-                        f.write(r.content)
-
-                    print("SAVED:", filename)
-
-                except Exception as e:
-                    print("DOWNLOAD ERROR:", e)
-
-            counter += 1
-
-        print("\nDONE PROCESSING")
+        print("\nDONE")
 
     finally:
         driver.quit()
@@ -110,9 +98,5 @@ def process_from_list():
 # =========================
 # MAIN
 # =========================
-def main():
-    process_from_list()
-
-
 if __name__ == "__main__":
-    main()
+    process_from_list()
