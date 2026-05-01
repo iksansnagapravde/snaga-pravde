@@ -100,10 +100,22 @@ def download_pdf(tender_id):
         url = f"{BASE_URL}/tender-eo/{tender_id}"
         driver.get(url)
 
-        time.sleep(6)
+        time.sleep(5)
 
-        # 🔥 nađi sve linkove koji vode na PDF
-        links = driver.find_elements("xpath", "//a[contains(@href, '.pdf')]")
+        # 🔥 klik na strelicu / expand
+        buttons = driver.find_elements("xpath", "//button")
+
+        for b in buttons:
+            try:
+                b.click()
+                time.sleep(1)
+            except:
+                pass
+
+        time.sleep(3)
+
+        # 🔥 sada traži dokumente
+        links = driver.find_elements("xpath", "//a")
 
         for l in links:
             href = l.get_attribute("href")
@@ -111,30 +123,32 @@ def download_pdf(tender_id):
             if not href:
                 continue
 
-            print("PDF LINK:", href)
+            if ".pdf" in href or ".doc" in href:
+                print("DOC:", href)
 
-            r = requests.get(href, headers=HEADERS)
+                r = requests.get(href, headers=HEADERS)
 
-            if r.status_code != 200:
-                continue
+                if r.status_code != 200:
+                    continue
 
-            if not r.content.startswith(b"%PDF"):
-                continue
+                path = f"documents/{tender_id}"
 
-            path = f"documents/{tender_id}.pdf"
+                if ".pdf" in href:
+                    path += ".pdf"
+                else:
+                    path += ".docx"
 
-            with open(path, "wb") as f:
-                f.write(r.content)
+                with open(path, "wb") as f:
+                    f.write(r.content)
 
-            print("PDF SAVED:", tender_id)
-            return path
+                print("FILE SAVED:", path)
+                return path
 
-        print("NO PDF FOUND:", tender_id)
+        print("NO DOCUMENT:", tender_id)
         return None
 
     finally:
         driver.quit()
-
 
 # =========================
 # TEXT
