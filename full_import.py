@@ -9,7 +9,6 @@ import time
 import requests
 from pdfminer.high_level import extract_text
 
-# 🔥 NOVO
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
@@ -51,7 +50,7 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# 🔥 FINAL FETCH (SELENIUM)
+# 🔥 FETCH IDS (STABILNO)
 # =========================
 def fetch_entity_ids():
     options = Options()
@@ -63,33 +62,33 @@ def fetch_entity_ids():
 
     try:
         driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(5)
+        time.sleep(6)
 
-        # 🔥 uzmi data iz browsera
-        data = driver.execute_script("""
-            return window.angular.element(document.body)
-                .injector()
-                .get('$http')
-        """)
+        links = driver.find_elements("xpath", "//a[contains(@href, '/tender-eo/')]")
 
-    except Exception as e:
-        print("JS ERROR:", e)
+        ids = []
 
-    # fallback metoda:
-    html = driver.page_source
+        for l in links:
+            href = l.get_attribute("href")
 
-    found = re.findall(r'\d{6}', html)
+            if not href:
+                continue
 
-    driver.quit()
+            match = re.search(r'/tender-eo/(\d+)', href)
 
-    ids = []
-    for f in found:
-        eid = int(f)
-        if not exists(eid):
-            ids.append(eid)
+            if match:
+                eid = int(match.group(1))
 
-    print("NEW IDS:", ids[:10])
-    return ids[:100]
+                if not exists(eid):
+                    ids.append(eid)
+
+        ids = list(dict.fromkeys(ids))
+
+        print("NEW IDS:", ids[:10])
+        return ids[:100]
+
+    finally:
+        driver.quit()
 
 # =========================
 # DOWNLOAD PDF
