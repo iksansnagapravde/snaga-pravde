@@ -14,8 +14,11 @@ def write_loss_data():
     for r in rows:
         lowest, median, accepted = r
 
-        # ✅ striktna validacija
+        # ✅ validacija podataka
         if lowest is None or accepted is None:
+            continue
+
+        if lowest <= 0 or accepted <= 0:
             continue
 
         valid_count += 1
@@ -23,10 +26,10 @@ def write_loss_data():
         total_lowest += lowest
         total_accepted += accepted
 
-        if median is not None:
-            total_median += median
+        # median može biti None
+        total_median += median if median is not None else 0
 
-        # ✅ gubitak nikad negativan
+        # ✅ gubici nikad negativni
         loss_low = max(0, accepted - lowest)
 
         if median is not None:
