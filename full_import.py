@@ -51,7 +51,7 @@ def fetch_entity_ids():
     return [675152, 670413, 666041]
 
 # =========================
-# DOWNLOAD PDF (KLJUČNO)
+# DOWNLOAD PDF
 # =========================
 
 def download_pdf(eid):
@@ -112,12 +112,25 @@ def extract_text(pdf_path):
         print("IMAGES:", len(images))
 
         for img in images:
-            t = pytesseract.image_to_string(img, config="--psm 6")
+            t = pytesseract.image_to_string(
+                img,
+                lang="eng",  # ako imaš srp može "srp"
+                config="--oem 3 --psm 6"
+            )
             text += t + "\n"
 
     except Exception as e:
         print("OCR ERROR:", e)
 
+    return text
+
+# =========================
+# CLEAN TEXT
+# =========================
+
+def clean_text(text):
+    text = text.replace("\x0c", " ")
+    text = re.sub(r"\s+", " ", text)
     return text
 
 # =========================
@@ -133,7 +146,7 @@ def extract_prices(text):
         try:
             num = float(m.replace(".", "").replace(",", "."))
 
-            if num < 50000:
+            if num < 10000:
                 continue
 
             if num > 1_000_000_000:
@@ -155,11 +168,18 @@ def extract_prices(text):
 # =========================
 
 def find_accepted(text):
-    for line in text.split("\n"):
-        if "вредност уговора" in line.lower():
-            m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-            if m:
-                return float(m[0].replace(".", "").replace(",", "."))
+    patterns = [
+        "вредност уговора",
+        "уговорена вредност",
+        "износ уговора"
+    ]
+
+    for part in text.split("."):
+        for p in patterns:
+            if p in part.lower():
+                m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", part)
+                if m:
+                    return float(m[0].replace(".", "").replace(",", "."))
 
     return None
 
@@ -168,14 +188,14 @@ def find_accepted(text):
 # =========================
 
 def find_winner(text):
-    lines = text.split("\n")
+    parts = text.split(".")
 
-    for i, line in enumerate(lines):
-        if "додељује" in line.lower():
-            for j in range(i, i + 5):
-                if j < len(lines):
-                    if "доо" in lines[j].lower():
-                        return lines[j].strip()
+    for i, part in enumerate(parts):
+        if "додељује" in part.lower():
+            for j in range(i, i + 3):
+                if j < len(parts):
+                    if "доо" in parts[j].lower() or "a.d." in parts[j].lower():
+                        return parts[j].strip()
 
     return None
 
@@ -230,6 +250,8 @@ def main():
             print("TEXT TOO SHORT")
             continue
 
+        text = clean_text(text)
+
         prices = extract_prices(text)
         accepted = find_accepted(text)
         winner = find_winner(text)
@@ -254,6 +276,7 @@ def main():
     # =========================
     # JSON OUTPUT
     # =========================
+
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
