@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
 
-      # Playwright system libs (FIX za Ubuntu 24)
+      # Playwright system libs
       - name: Install Playwright system deps
         run: |
           sudo apt-get update
@@ -45,22 +45,19 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Python paketi
+      # 🔥 OVDE JE FIX
       - name: Install Python deps
         run: |
           pip install --upgrade pip
-          pip install playwright pdf2image pytesseract
+          pip install playwright pdf2image pytesseract requests
 
-      # 🔥 Instalacija Playwright browsera (OVO JE KLJUČNO)
       - name: Install Playwright browsers
         run: |
           playwright install
 
-      # Pokretanje skripte
       - name: Run script
         run: python full_import.py
 
-      # Commit rezultata
       - name: Commit results
         run: |
           git config --global user.name "github-actions"
