@@ -15,38 +15,37 @@ concurrency:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
 
     steps:
 
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # 🔥 KLJUČNO (bez ovoga OCR NE radi)
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils tesseract-ocr
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-
-      - name: Install dependencies
+      - name: Install Python deps
         run: |
           pip install --upgrade pip
-          pip install --prefer-binary -r requirements.txt
+          pip install requests pdf2image pytesseract
 
-      - name: Run import
+      - name: Run script
         run: python full_import.py
 
-      - name: Commit updated data
+      - name: Commit results
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add tenders.json stats.json loss-data.json contracts.db
+          git add tenders.json contracts.db
 
           if git diff --cached --quiet; then
             echo "No changes"
