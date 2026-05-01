@@ -71,6 +71,34 @@
       "priority": 100
     },
     {
+      "id": "etucen-nasred-ulice-pred-detetom-u-malom-mokrom-lugu-24yf1kz",
+      "title": "MUŠKARAC PRETUČEN NASRED ULICE PRED DETETOM! Užas u Beogradu: Mladić izašao iz auta i BRUTALNO ga prebio",
+      "url": "https://www.blic.rs/vesti/hronika/muskarac-pretucen-nasred-ulice-pred-detetom-u-malom-mokrom-lugu/24yf1kz",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T20:28:40+00:00",
+      "time": "20:28",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "-brutalno-pretukao-muskarca-pred-detetom-u-malom-mokrom-lugu",
+      "title": "HOROR U MALOM MOKROM LUGU: Muškarac (57) brutalno pretučen pred detetom nasred ulice! Lekari mu se u operacionoj sali bore za život - napadač (25) uhapšen",
+      "url": "https://www.kurir.rs/crna-hronika/9984016/mladic-brutalno-pretukao-muskarca-pred-detetom-u-malom-mokrom-lugu",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T20:08:17+00:00",
+      "time": "20:08",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "inarka-koju-je-bivsi-muz-ubio-u-sarajevu-za-prvi-maj-jlbdskp",
       "title": "(FOTO) OVO JE ELMA KOJU JE SUPRUG UBIO ZA PRVI MAJ U SARAJEVU Ranio joj i brata, pa OTEO ćerku (5): Uhapšen na Baščaršiji dok je jeo ćevape",
       "url": "https://www.blic.rs/vesti/hronika/ovo-je-elma-godinjak-novinarka-koju-je-bivsi-muz-ubio-u-sarajevu-za-prvi-maj/jlbdskp",
@@ -239,20 +267,6 @@
       "priority": 70
     },
     {
-      "id": "a-izbegne-zatvor-nakon-voznje-pod-uticajem-alkohola-i-droga-",
-      "title": "Britni Spirs ponuđena uslovna kazna: Uspeće da izbegne zatvor nakon vožnje pod uticajem alkohola i droga?",
-      "url": "https://nova.rs/zabava/showbiz/britni-spirs-ponudjena-uslovna-kazna-uspece-da-izbegne-zatvor-nakon-voznje-pod-uticajem-alkohola-i-droga/",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T13:20:38+00:00",
-      "time": "13:20",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "humanitarno-pravo-sudjenja-ratni-zlocin-srbija-33746237-html",
       "title": "Suđenja za ratne zločine u Srbiji u 'atmosferi poricanja'",
       "url": "https://www.slobodnaevropa.org/a/fond-za-humanitarno-pravo-sudjenja-ratni-zlocin-srbija/33746237.html",
@@ -351,6 +365,20 @@
       "priority": 33
     },
     {
+      "id": "51860-kijev-u-kotlu-elitne-korupcije-na-snimcima-i-prva-dama",
+      "title": "Кијев у котлу елитне корупције, на снимцима и Прва дама",
+      "url": "https://www.politika.rs/scc/clanak/751860/kijev-u-kotlu-elitne-korupcije-na-snimcima-i-prva-dama",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T20:18:00+00:00",
+      "time": "20:18",
+      "source": "Politika",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "https-radar-nova-rs-drustvo-destrukcija-srca-beograda-",
       "title": "Nemar ili koruptivno kruženje novca",
       "url": "https://radar.nova.rs/drustvo/destrukcija-srca-beograda/",
@@ -377,6 +405,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "ac-uhapsen-zbog-spaljivanja-supruge-u-zooloskom-vrtu-crs5lhc",
+      "title": "(FOTO) Spalio suprugu (33) u zoološkom vrtu: Telo odvezao na popularnu turističku destinaciju pa priznao da je hteo da je se \"OTARASI ZA NEKOLIKO SATI\"",
+      "url": "https://www.blic.rs/vesti/svet/japanac-uhapsen-zbog-spaljivanja-supruge-u-zooloskom-vrtu/crs5lhc",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T20:19:48+00:00",
+      "time": "20:19",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "https-vreme-com-vesti-eu-srbija-plan-rasta-zamrzavanje-kos-",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "u-blokadi-cestitali-praznik-rada-najavili-aktivnosti-u-maju-",
-      "title": "Studenti u blokadi čestitali Praznik rada, najavili aktivnosti u maju",
-      "url": "https://n1info.rs/vesti/studenti-u-blokadi-cestitali-praznik-rada-najavili-aktivnosti-u-maju/",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T19:44:11+00:00",
-      "time": "19:44",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "je-bivsi-ubio-u-sarajevu-strahovala-je-za-svoj-zivot-wvw7esy",
-      "title": "\"IMAO ZABRANU PRILASKA, UHODIO JU JE\" Oglasila se advokatica Elme koju je bivši ubio u Sarajevu: \"Strahovala je za svoj život, više puta ga je prijavljivala policiji\"",
-      "url": "https://www.blic.rs/vesti/hronika/oglasila-se-advokatica-elme-koju-je-bivsi-ubio-u-sarajevu-strahovala-je-za-svoj-zivot/wvw7esy",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T19:41:03+00:00",
-      "time": "19:41",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "https-www-danas-rs-vesti-politika-srpska-lista-izbori-",
-      "title": "Srpska lista se žali kosovskoj instituciji uoči izbora na Kosova",
-      "url": "https://www.danas.rs/vesti/politika/srpska-lista-izbori/",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T19:28:46+00:00",
-      "time": "19:28",
-      "source": "Danas",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
