@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "je-udario-u-trafiku-radnica-sa-teskim-povredama-u-urgentnom-",
-      "title": "Uhapšen vozač poršea koji je udario u trafiku: Radnica sa teškim povredama u Urgentnom",
-      "url": "https://n1info.rs/vesti/uhapsen-vozac-porsea-koji-je-udario-u-trafiku-radnica-sa-teskim-povredama-u-urgentnom/",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T09:22:28+00:00",
-      "time": "09:22",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "hapsen-vozac-koji-je-udario-u-trafiku-povredena-radnica-vest",
       "title": "U Obrenovcu uhapšen vozač koji je izleteo van kolovoza i udario u trafiku, povređena radnica",
       "url": "https://www.euronews.rs/srbija/aktuelno/221728/uhapsen-vozac-koji-je-udario-u-trafiku-povredena-radnica/vest",
@@ -111,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "k-751790-najmanje-550-uhapsenih-na-protestima-povodom-1-maja",
+      "title": "Најмање 550 ухапшених на протестима поводом 1. маја",
+      "url": "https://www.politika.rs/scc/clanak/751790/najmanje-550-uhapsenih-na-protestima-povodom-1-maja",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T14:24:00+00:00",
+      "time": "14:24",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-uhapseni-osumnjiceni-za-pripremanje-ubistva-u-beogradu-vest",
@@ -225,20 +225,6 @@
       "priority": 92
     },
     {
-      "id": "-aktuelno-221438-uhapsen-zbog-napada-na-decaka-u-vrbasu-vest",
-      "title": "Uhapšen zbog napada na dečaka u Vrbasu: Opljačkao ga i tukao nakon što ga je oborio sa bicikla",
-      "url": "https://www.euronews.rs/srbija/aktuelno/221438/uhapsen-zbog-napada-na-decaka-u-vrbasu/vest",
-      "date": "2026-04-29",
-      "datetime": "2026-04-29T14:11:00+00:00",
-      "time": "14:11",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-kod-drugog-uhapsenog-instrukcije-za-izvrsenje-zlocina-foto-",
       "title": "Kod maloletnika pronađena dva pištolja, kod drugog uhapšenog instrukcije za izvršenje zločina: Oglasio se MUP o planiranju ubistva u Beogradu FOTO",
       "url": "https://nova.rs/vesti/hronika/oglasio-se-mup-o-planiranju-ubistva-u-beogradu-kod-maloletnika-pronadjena-dva-pistolja-kod-drugog-uhapsenog-instrukcije-za-izvrsenje-zlocina-foto/",
@@ -274,20 +260,6 @@
       "datetime": "2026-05-01T13:48:08+00:00",
       "time": "13:48",
       "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "a-sin-i-maloletnik-razradili-plan-pa-krenuli-u-sprovodjenje-",
-      "title": "Policija sprečila ubistvo u Beogradu: Uhapšeni majka, sin i maloletnik, razradili plan, pa krenuli u sprovođenje",
-      "url": "https://nova.rs/vesti/hronika/policija-sprecila-ubistvo-u-beogradu-uhapseni-majka-sin-i-maloletnik-razradili-plan-pa-krenuli-u-sprovodjenje/",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T10:37:36+00:00",
-      "time": "10:37",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -421,9 +393,9 @@
       "priority": 30
     },
     {
-      "id": "uparnika-od-dolaska-iz-spanije-vise-spreceno-njegovo-fzynhl3",
+      "id": "i-suparnika-od-dolaska-iz-spanije-vise-puta-spreceno-fzynhl3",
       "title": "\"POLICIJA ME JE OBAVESTILA DA MI JE BEZBEDNOST UGROŽENA\" Luka Bojović ponovo na meti suparnika: Od dolaska iz Španije, VIŠE PUTA sprečeno njegovo ubistvo!",
-      "url": "https://www.blic.rs/vesti/hronika/luka-bojovic-ponovo-na-meti-suparnika-od-dolaska-iz-spanije-vise-spreceno-njegovo/fzynhl3",
+      "url": "https://www.blic.rs/vesti/hronika/luka-bojovic-ponovo-na-meti-suparnika-od-dolaska-iz-spanije-vise-puta-spreceno/fzynhl3",
       "date": "2026-05-01",
       "datetime": "2026-05-01T12:51:24+00:00",
       "time": "12:51",
@@ -461,20 +433,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "517-turska-policija-u-akciji-protiv-klana-nedzati-arabadzija",
-      "title": "VELIKA AKCIJA TURSKE POLICIJE U ISTANBULU I TRI PROVINCIJE! U toku hapšenja ljudi i zaplena imovine i droge klana OZLOGLAŠENOG narko-bosa Arabadžija (VIDEO)",
-      "url": "https://www.kurir.rs/planeta/9983517/turska-policija-u-akciji-protiv-klana-nedzati-arabadzija",
-      "date": "2026-05-01",
-      "datetime": "2026-05-01T08:48:34+00:00",
-      "time": "08:48",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "misija-finansijska-sredstva-za-srbiju-nisu-blokirana-9dtc8yc",
@@ -645,13 +603,13 @@
       "priority": 8
     },
     {
-      "id": "51380-carska-policija-pokusala-da-spreci-radnicko-okupljanje",
-      "title": "Царска полиција покушала да спречи радничко окупљање",
-      "url": "https://www.politika.rs/scc/clanak/751380/carska-policija-pokusala-da-spreci-radnicko-okupljanje",
+      "id": "taksim-upotrebila-vodene-topove-i-suzavac-na-demonstrantima-",
+      "title": "VIDEO Sukobi na ulicama Istanbula: Policija blokirala Taksim, upotrebila vodene topove i suzavac na demonstrantima",
+      "url": "https://nova.rs/vesti/svet/video-sukobi-na-ulicama-istanbula-policija-blokirala-taksim-upotrebila-vodene-topove-i-suzavac-na-demonstrantima/",
       "date": "2026-05-01",
-      "datetime": "2026-05-01T13:00:00+00:00",
-      "time": "13:00",
-      "source": "Politika",
+      "datetime": "2026-05-01T14:32:02+00:00",
+      "time": "14:32",
+      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -694,6 +652,48 @@
       "datetime": "2026-05-01T12:09:18+00:00",
       "time": "12:09",
       "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "a-9983682-policija-uhapsila-vozaca-nakon-nesrece-u-obrenovcu",
+      "title": "OGLASILA SE POLICIJA NAKON NESREĆE U OBRENOVCU Uleteo u kiosk besnim automobilom i teško povredio radnicu, evo gde se vozač nalazi i koje mere se preduzimaju",
+      "url": "https://www.kurir.rs/crna-hronika/9983682/policija-uhapsila-vozaca-nakon-nesrece-u-obrenovcu",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T11:24:55+00:00",
+      "time": "11:24",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "adjani-rostiljaju-kod-parka-usce-policija-cuva-ogradu-video-",
+      "title": "Dok građani roštiljaju kod parka Ušće, policija čuva ogradu VIDEO",
+      "url": "https://nova.rs/vesti/drustvo/dok-gradjani-rostiljaju-kod-parka-usce-policija-cuva-ogradu-video/",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T11:07:57+00:00",
+      "time": "11:07",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "nfo-rs-vesti-krivicna-prijava-nislijka-300-kilograma-duvana-",
+      "title": "Krivična prijava protiv Nišlijke kod koje je pronađeno oko 300 kilograma duvana",
+      "url": "https://n1info.rs/vesti/krivicna-prijava-nislijka-300-kilograma-duvana/",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T11:05:21+00:00",
+      "time": "11:05",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
