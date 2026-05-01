@@ -21,25 +21,37 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # 🔥 KLJUČNO (bez ovoga OCR NE radi)
+      # 🔥 OCR dependencies
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
+
+      # 🔥 PLAYWRIGHT dependencies (KLJUČNO)
+      - name: Install Playwright system deps
+        run: |
+          sudo apt-get install -y libnss3 libatk-bridge2.0-0 libxss1 libasound2
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      # 🔥 Python packages
       - name: Install Python deps
         run: |
           pip install --upgrade pip
-          pip install requests pdf2image pytesseract
+          pip install playwright pdf2image pytesseract
 
+      # 🔥 Instalacija browsera
+      - name: Install Playwright browsers
+        run: playwright install
+
+      # RUN
       - name: Run script
         run: python full_import.py
 
+      # SAVE
       - name: Commit results
         run: |
           git config --global user.name "github-actions"
