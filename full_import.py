@@ -77,42 +77,155 @@ def fetch_entity_ids():
         ids = list(dict.fromkeys(ids))
 
         print("NEW IDS:", ids[:10])
-        return ids[:10]   # samo 10 za debug
+        return ids
 
     finally:
         driver.quit()
 
 
 # =========================
-# DOWNLOAD PDF (DEBUG)
+# DOWNLOAD PDF (SELENIUM SESSION)
 # =========================
 def download_pdf(tender_id):
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=options)
+
     try:
-        print("\n====================")
-        print("OPEN:", tender_id)
+        print("PROCESS:", tender_id)
 
         url = f"{BASE_URL}/tender-eo/{tender_id}"
+        driver.get(url)
+        time.sleep(5)
 
-        r = requests.get(url, headers=HEADERS, timeout=30)
-
-        print("URL:", url)
-
-        if r.status_code != 200:
-            print("PAGE FAIL:", r.status_code)
-            return None
-
-        html = r.text
+        html = driver.page_source
 
         match = re.search(r'"entityId"\s*:\s*(\d+)', html)
 
-        print("ENTITY MATCH:", match)
-        print("HTML SAMPLE:", html[:500])
+        if not match:
+            print("NO ENTITY:", tender_id)
+            return None
 
-        return None  # za sada samo debug
+        entity_id = match.group(1)
+        print("ENTITY:", entity_id)
 
-    except Exception as e:
-        print("ERROR:", e)
+        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+
+        r = requests.get(api_url, headers=HEADERS)
+
+        if r.status_code != 200:
+            print("DOC FAIL:", tender_id)
+            return None
+
+        data = r.json()
+
+        for doc in data:
+            url = doc.get("DocumentUrl")
+
+            if not url:
+                continue
+
+            full = BASE_URL + url
+
+            pdf = requests.get(full, headers=HEADERS)
+
+            if pdf.status_code != 200:
+                continue
+
+            if not pdf.content.startswith(b"%PDF"):
+                continue
+
+            path = f"documents/{tender_id}.pdf"
+
+            with open(path, "wb") as f:
+                f.write(pdf.content)
+
+            print("PDF SAVED:", tender_id)
+            return path
+
+        print("NO PDF:", tender_id)
         return None
+
+    finally:
+        driver.quit()
+
+
+# =========================
+# TEXT
+# =========================
+def extract_text_safe(pdf_path):
+    try:
+        text = extract_text(pdf_path)
+        if text and len(text) > 200:
+            return text
+    except:
+        pass
+    return ""
+
+
+# =========================
+# BIDS
+# =========================
+def extract_bids(text):
+    prices = []
+
+    matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+
+    for m in matches:
+        try:
+            num = float(m.replace(".", "").replace(",", "."))
+
+            if num < 10000 or num > 1_000_000_000:
+                continue
+
+            prices.append(num)
+
+        except:
+            continue
+
+    prices = sorted(set(prices))
+
+    print("PRICES:", prices)
+    return prices
+
+
+# =========================
+# ANALYZE
+# =========================
+def analyze(prices):
+    if len(prices) < 1:
+        return None
+
+    lowest = min(prices)
+    median = statistics.median(prices) if len(prices) > 1 else lowest
+    accepted = lowest
+
+    risk = 0
+
+    if accepted > lowest:
+        risk += 3
+
+    if accepted > median * 1.2:
+        risk += 2
+
+    if len(prices) <= 2:
+        risk += 2
+
+    return lowest, median, accepted, risk
+
+
+# =========================
+# SAVE
+# =========================
+def save(eid, data):
+    c.execute("""
+    INSERT OR REPLACE INTO tenders
+    VALUES (?, ?, ?, ?, ?, ?)
+    """, (eid, *data, datetime.now().isoformat()))
+    conn.commit()
 
 
 # =========================
@@ -122,7 +235,22 @@ def main():
     ids = fetch_entity_ids()
 
     for eid in ids:
-        download_pdf(eid)
+        pdf = download_pdf(eid)
+
+        if not pdf:
+            continue
+
+        text = extract_text_safe(pdf)
+
+        if len(text) < 100:
+            continue
+
+        prices = extract_bids(text)
+
+        result = analyze(prices)
+
+        if result:
+            save(eid, result)
 
     print("DONE")
 
