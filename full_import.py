@@ -65,25 +65,31 @@ def fetch_entity_ids():
         driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         time.sleep(5)
 
-        html = driver.page_source
+        # 🔥 uzmi data iz browsera
+        data = driver.execute_script("""
+            return window.angular.element(document.body)
+                .injector()
+                .get('$http')
+        """)
 
-        # 🔥 hvata LotId iz JS
-        found = re.findall(r'"LotId":\s*(\d+)', html)
+    except Exception as e:
+        print("JS ERROR:", e)
 
-        found = list(dict.fromkeys(found))
+    # fallback metoda:
+    html = driver.page_source
 
-        ids = []
+    found = re.findall(r'\d{6}', html)
 
-        for eid in found:
-            eid = int(eid)
-            if not exists(eid):
-                ids.append(eid)
+    driver.quit()
 
-        print("NEW IDS:", ids[:10])
-        return ids[:100]
+    ids = []
+    for f in found:
+        eid = int(f)
+        if not exists(eid):
+            ids.append(eid)
 
-    finally:
-        driver.quit()
+    print("NEW IDS:", ids[:10])
+    return ids[:100]
 
 # =========================
 # DOWNLOAD PDF
