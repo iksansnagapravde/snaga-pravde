@@ -56,15 +56,30 @@ def fetch_entity_ids():
 
 def download_pdf(eid):
     try:
-        meta_url = f"{BASE_URL}/get-documents?entityId={eid}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+        url = f"{BASE_URL}/get-documents"
 
-        r = requests.get(meta_url, headers=HEADERS)
+        params = {
+            "entityId": eid,
+            "objectMetaId": 2,
+            "documentGroupId": 169,
+            "associationTypeId": 1
+        }
 
-        if r.status_code != 200:
-            print("META FAIL:", r.status_code)
+        headers = {
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "application/json",
+            "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora"
+        }
+
+        r = requests.get(url, params=params, headers=headers)
+
+        print("META STATUS:", r.status_code)
+
+        try:
+            data = r.json()
+        except:
+            print("NOT JSON RESPONSE")
             return None
-
-        data = r.json()
 
         if not data:
             print("NO DOCUMENTS")
@@ -79,10 +94,11 @@ def download_pdf(eid):
         if file_url.startswith("/"):
             file_url = BASE_URL + file_url
 
-        pdf = requests.get(file_url, headers=HEADERS)
+        pdf = requests.get(file_url, headers=headers)
+
+        print("PDF STATUS:", pdf.status_code)
 
         if pdf.status_code != 200:
-            print("PDF FAIL:", pdf.status_code)
             return None
 
         filename = f"documents/{eid}.pdf"
