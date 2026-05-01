@@ -60,9 +60,8 @@ def download_pdf(eid):
 
         r = requests.get(meta_url, headers=HEADERS)
 
-        print("META STATUS:", r.status_code)
-
         if r.status_code != 200:
+            print("META FAIL:", r.status_code)
             return None
 
         data = r.json()
@@ -82,9 +81,8 @@ def download_pdf(eid):
 
         pdf = requests.get(file_url, headers=HEADERS)
 
-        print("PDF STATUS:", pdf.status_code)
-
         if pdf.status_code != 200:
+            print("PDF FAIL:", pdf.status_code)
             return None
 
         filename = f"documents/{eid}.pdf"
@@ -114,7 +112,7 @@ def extract_text(pdf_path):
         for img in images:
             t = pytesseract.image_to_string(
                 img,
-                lang="eng",  # ako imaš srp može "srp"
+                lang="eng",
                 config="--oem 3 --psm 6"
             )
             text += t + "\n"
@@ -274,11 +272,49 @@ def main():
             save(eid, result)
 
     # =========================
-    # JSON OUTPUT
+    # SAVE TENDERS
     # =========================
 
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
+
+    # =========================
+    # LOSS DATA
+    # =========================
+
+    total_lowest = sum(t["lowest"] for t in output)
+    total_median = sum(t["median"] for t in output)
+    total_accepted = sum(t["accepted"] for t in output)
+
+    loss_low_sum = sum(t["loss_low"] for t in output)
+    loss_med_sum = sum(t["loss_median"] for t in output)
+
+    loss_data = {
+        "najbolja_ponuda": total_lowest,
+        "medijana_ponuda": total_median,
+        "prihvacena_ponuda": total_accepted,
+        "broj_analiziranih": len(output),
+        "gubitak_prema_najboljoj": loss_low_sum,
+        "gubitak_prema_medijani": loss_med_sum
+    }
+
+    with open("loss-data.json", "w", encoding="utf-8") as f:
+        json.dump(loss_data, f, ensure_ascii=False, indent=2)
+
+    # =========================
+    # STATS
+    # =========================
+
+    stats = {
+        "broj_tendera": len(output),
+        "ukupna_vrednost": total_lowest,
+        "ukupna_vrednost_eur": round(total_lowest / 117, 2),
+        "ugovorena_vrednost": total_accepted,
+        "ugovorena_vrednost_eur": round(total_accepted / 117, 2)
+    }
+
+    with open("stats.json", "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False, indent=2)
 
     print("\nDONE")
 
