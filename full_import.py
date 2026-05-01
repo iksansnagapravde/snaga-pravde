@@ -45,28 +45,36 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# FETCH IDS
+# 🔥 FETCH IDS (NOVO - API)
 # =========================
 def fetch_entity_ids():
-    url = f"{BASE_URL}/odluke-o-dodeli-ugovora"
+    url = f"{BASE_URL}/odluke-o-dodeli-ugovora?initFilter=[\"PublishDate\",\">=\",\"2026-04-21\"]"
 
     r = requests.get(url, headers=HEADERS)
     html = r.text
 
-    found = re.findall(r"/tender-eo/(\d+)", html)
-    found = list(dict.fromkeys(found))
+    match = re.search(r'"data":\s*(\[[\s\S]*?\])', html)
 
-    found = found[:100]
+    if not match:
+        print("NO DATA FOUND")
+        return []
 
-    new_ids = []
+    try:
+        data = json.loads(match.group(1))
+    except Exception as e:
+        print("JSON ERROR:", e)
+        return []
 
-    for eid in found:
-        eid = int(eid)
-        if not exists(eid):
-            new_ids.append(eid)
+    ids = []
 
-    print("NEW IDS:", new_ids)
-    return new_ids
+    for item in data:
+        lot_id = item.get("LotId")
+
+        if lot_id and not exists(lot_id):
+            ids.append(int(lot_id))
+
+    print("NEW IDS:", ids[:10])
+    return ids[:100]
 
 # =========================
 # DOWNLOAD PDF
@@ -128,28 +136,24 @@ def download_pdf(tender_id):
         return None
 
 # =========================
-# TEXT EXTRACTION
+# TEXT
 # =========================
 def extract_text_safe(pdf_path):
     try:
         text = extract_text(pdf_path)
-
         if text and len(text) > 200:
             return text
-
-    except Exception as e:
-        print("TEXT ERROR:", e)
-
+    except:
+        pass
     return ""
 
 # =========================
-# EXTRACT BIDS
+# BIDS
 # =========================
 def extract_bids(text):
     bids = []
 
     for line in text.split("\n"):
-
         if any(k in line.lower() for k in ["rsd", "динара"]):
 
             matches = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
@@ -160,14 +164,11 @@ def extract_bids(text):
             try:
                 price = float(matches[0].replace(".", "").replace(",", "."))
 
-                # filtriranje smeća
                 if price < 10000 or price > 1_000_000_000:
                     continue
 
-                company = line[:80].strip()
-
                 bids.append({
-                    "company": company,
+                    "company": line[:80].strip(),
                     "price": price
                 })
 
@@ -188,8 +189,6 @@ def analyze(bids):
 
     lowest = min(prices)
     median = statistics.median(prices)
-
-    # 👉 privremeno: accepted = lowest (realnije nego max)
     accepted = lowest
 
     risk = 0
@@ -231,7 +230,7 @@ def save(eid, bids, analysis):
     conn.commit()
 
 # =========================
-# EXPORT JSON (debug)
+# EXPORT
 # =========================
 def export_json():
     c.execute("SELECT entity_id, lowest, median, accepted, risk FROM tenders")
@@ -252,7 +251,7 @@ def export_json():
         json.dump(data, f, indent=2)
 
 # =========================
-# WRITE STATS
+# STATS
 # =========================
 def write_stats():
     c.execute("SELECT lowest, accepted FROM tenders")
@@ -262,27 +261,19 @@ def write_stats():
 
     total_lowest = 0
     total_accepted = 0
-    valid_count = 0
+    valid = 0
 
-    for r in rows:
-        lowest, accepted = r
-
-        if lowest is None or accepted is None:
-            continue
-
-        if lowest <= 0 or accepted <= 0:
-            continue
-
-        valid_count += 1
-
-        total_lowest += lowest
-        total_accepted += accepted
+    for lowest, accepted in rows:
+        if lowest and accepted and lowest > 0 and accepted > 0:
+            total_lowest += lowest
+            total_accepted += accepted
+            valid += 1
 
     stats = {
-        "broj_tendera": valid_count,
+        "broj_tendera": valid,
         "ukupna_vrednost": f"{round(total_lowest, 2)} RSD",
         "ukupna_vrednost_eur": f"{round(total_lowest / kurs, 2)} EUR",
-        "broj_ugovora": valid_count,
+        "broj_ugovora": valid,
         "ugovorena_vrednost": f"{round(total_accepted, 2)} RSD",
         "ugovorena_vrednost_eur": f"{round(total_accepted / kurs, 2)} EUR"
     }
@@ -291,53 +282,34 @@ def write_stats():
         json.dump(stats, f, indent=2)
 
 # =========================
-# WRITE LOSS
+# LOSS
 # =========================
 def write_loss_data():
     c.execute("SELECT lowest, median, accepted FROM tenders")
     rows = c.fetchall()
 
-    total_lowest = 0
-    total_median = 0
-    total_accepted = 0
+    total_low = total_med = total_acc = 0
+    loss_low = loss_med = 0
+    valid = 0
 
-    loss_low_total = 0
-    loss_med_total = 0
+    for lowest, median, accepted in rows:
+        if lowest and accepted and lowest > 0 and accepted > 0:
+            valid += 1
+            total_low += lowest
+            total_acc += accepted
+            total_med += median if median else 0
 
-    valid_count = 0
-
-    for r in rows:
-        lowest, median, accepted = r
-
-        if lowest is None or accepted is None:
-            continue
-
-        if lowest <= 0 or accepted <= 0:
-            continue
-
-        valid_count += 1
-
-        total_lowest += lowest
-        total_accepted += accepted
-        total_median += median if median is not None else 0
-
-        loss_low = max(0, accepted - lowest)
-
-        if median is not None:
-            loss_med = max(0, accepted - median)
-        else:
-            loss_med = 0
-
-        loss_low_total += loss_low
-        loss_med_total += loss_med
+            loss_low += max(0, accepted - lowest)
+            if median:
+                loss_med += max(0, accepted - median)
 
     data = {
-        "najbolja_ponuda": round(total_lowest, 2),
-        "medijana_ponuda": round(total_median, 2),
-        "prihvacena_ponuda": round(total_accepted, 2),
-        "broj_analiziranih": valid_count,
-        "gubitak_prema_najboljoj": round(loss_low_total, 2),
-        "gubitak_prema_medijani": round(loss_med_total, 2),
+        "najbolja_ponuda": round(total_low, 2),
+        "medijana_ponuda": round(total_med, 2),
+        "prihvacena_ponuda": round(total_acc, 2),
+        "broj_analiziranih": valid,
+        "gubitak_prema_najboljoj": round(loss_low, 2),
+        "gubitak_prema_medijani": round(loss_med, 2),
         "valuta_kurs_eur": 117.2
     }
 
@@ -358,12 +330,10 @@ def main():
             continue
 
         text = extract_text_safe(pdf)
-
         if len(text) < 100:
             continue
 
         bids = extract_bids(text)
-
         if len(bids) < 2:
             continue
 
