@@ -5,7 +5,7 @@ import statistics
 import sqlite3
 from datetime import datetime
 
-import requests
+from playwright.sync_api import sync_playwright
 from pdf2image import convert_from_path
 import pytesseract
 
@@ -14,12 +14,6 @@ import pytesseract
 # =========================
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*"
-}
-
 os.makedirs("documents", exist_ok=True)
 
 # =========================
@@ -44,74 +38,52 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================
-# TEST IDS (MVP)
+# TEST IDS
 # =========================
 
 def fetch_entity_ids():
     return [675152, 670413, 666041]
 
 # =========================
-# DOWNLOAD PDF
+# PLAYWRIGHT DOWNLOAD
 # =========================
 
 def download_pdf(eid):
     try:
-        url = f"{BASE_URL}/get-documents"
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
 
-        params = {
-            "entityId": eid,
-            "objectMetaId": 2,
-            "documentGroupId": 169,
-            "associationTypeId": 1
-        }
+            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+            page.wait_for_timeout(5000)
 
-        headers = {
-            "User-Agent": "Mozilla/5.0",
-            "Accept": "application/json",
-            "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora"
-        }
+            links = page.query_selector_all("a")
 
-        r = requests.get(url, params=params, headers=headers)
+            for link in links:
+                href = link.get_attribute("href") or ""
+                if str(eid) in href and "document" in href.lower():
 
-        print("META STATUS:", r.status_code)
+                    if href.startswith("/"):
+                        href = BASE_URL + href
 
-        try:
-            data = r.json()
-        except:
-            print("NOT JSON RESPONSE")
+                    response = page.request.get(href)
+
+                    filename = f"documents/{eid}.pdf"
+
+                    with open(filename, "wb") as f:
+                        f.write(response.body())
+
+                    print("DOWNLOADED:", filename)
+
+                    browser.close()
+                    return filename
+
+            print("NO LINK FOUND")
+            browser.close()
             return None
-
-        if not data:
-            print("NO DOCUMENTS")
-            return None
-
-        file_url = data[0].get("url") or data[0].get("downloadUrl")
-
-        if not file_url:
-            print("NO FILE URL")
-            return None
-
-        if file_url.startswith("/"):
-            file_url = BASE_URL + file_url
-
-        pdf = requests.get(file_url, headers=headers)
-
-        print("PDF STATUS:", pdf.status_code)
-
-        if pdf.status_code != 200:
-            return None
-
-        filename = f"documents/{eid}.pdf"
-
-        with open(filename, "wb") as f:
-            f.write(pdf.content)
-
-        print("DOWNLOADED:", filename)
-
-        return filename
 
     except Exception as e:
-        print("DOWNLOAD ERROR:", e)
+        print("PLAYWRIGHT ERROR:", e)
         return None
 
 # =========================
@@ -172,7 +144,6 @@ def extract_prices(text):
             continue
 
     prices = sorted(set(prices))
-
     print("FINAL PRICES:", prices)
 
     return prices
@@ -182,18 +153,11 @@ def extract_prices(text):
 # =========================
 
 def find_accepted(text):
-    patterns = [
-        "вредност уговора",
-        "уговорена вредност",
-        "износ уговора"
-    ]
-
     for part in text.split("."):
-        for p in patterns:
-            if p in part.lower():
-                m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", part)
-                if m:
-                    return float(m[0].replace(".", "").replace(",", "."))
+        if "вредност уговора" in part.lower():
+            m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", part)
+            if m:
+                return float(m[0].replace(".", "").replace(",", "."))
 
     return None
 
@@ -248,7 +212,6 @@ def save(eid, data):
 
 def main():
     ids = fetch_entity_ids()
-
     output = []
 
     for eid in ids:
@@ -287,54 +250,11 @@ def main():
 
             save(eid, result)
 
-    # =========================
-    # SAVE TENDERS
-    # =========================
-
+    # SAVE JSON
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    # =========================
-    # LOSS DATA
-    # =========================
-
-    total_lowest = sum(t["lowest"] for t in output)
-    total_median = sum(t["median"] for t in output)
-    total_accepted = sum(t["accepted"] for t in output)
-
-    loss_low_sum = sum(t["loss_low"] for t in output)
-    loss_med_sum = sum(t["loss_median"] for t in output)
-
-    loss_data = {
-        "najbolja_ponuda": total_lowest,
-        "medijana_ponuda": total_median,
-        "prihvacena_ponuda": total_accepted,
-        "broj_analiziranih": len(output),
-        "gubitak_prema_najboljoj": loss_low_sum,
-        "gubitak_prema_medijani": loss_med_sum
-    }
-
-    with open("loss-data.json", "w", encoding="utf-8") as f:
-        json.dump(loss_data, f, ensure_ascii=False, indent=2)
-
-    # =========================
-    # STATS
-    # =========================
-
-    stats = {
-        "broj_tendera": len(output),
-        "ukupna_vrednost": total_lowest,
-        "ukupna_vrednost_eur": round(total_lowest / 117, 2),
-        "ugovorena_vrednost": total_accepted,
-        "ugovorena_vrednost_eur": round(total_accepted / 117, 2)
-    }
-
-    with open("stats.json", "w", encoding="utf-8") as f:
-        json.dump(stats, f, ensure_ascii=False, indent=2)
-
     print("\nDONE")
-
-# =========================
 
 if __name__ == "__main__":
     main()
