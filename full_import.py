@@ -3,15 +3,15 @@ import re
 import json
 import statistics
 import sqlite3
-import time
 from datetime import datetime
 
 import requests
 from pdf2image import convert_from_path
 import pytesseract
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+# =========================
+# CONFIG
+# =========================
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
@@ -20,10 +20,11 @@ HEADERS = {
     "Accept": "application/json, text/plain, */*"
 }
 
-# =========================
-# SETUP
-# =========================
 os.makedirs("documents", exist_ok=True)
+
+# =========================
+# DATABASE
+# =========================
 
 conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
@@ -43,110 +44,66 @@ CREATE TABLE IF NOT EXISTS tenders (
 conn.commit()
 
 # =========================
-# EXISTS
+# TEST IDS (MVP)
 # =========================
-def exists(eid):
-    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
 
-# =========================
-# FETCH
-# =========================
 def fetch_entity_ids():
-    ids = []
-
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    driver = webdriver.Chrome(options=options)
-
-    try:
-        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(5)
-
-        html = driver.page_source
-
-        found = re.findall(r"/tender-eo/(\d+)", html)
-        found = list(dict.fromkeys(found))
-
-        print("FOUND RAW:", found[:10])
-
-        found = found[:10]
-
-        for eid in found:
-            eid = int(eid)
-            if not exists(eid):
-                ids.append(eid)
-
-        print("LAST 10 IDS:", ids)
-        return ids
-
-    finally:
-        driver.quit()
+    return [675152, 670413, 666041]
 
 # =========================
-# DOWNLOAD PDF
+# DOWNLOAD PDF (KLJUČNO)
 # =========================
-def download_pdf(_):
-    from selenium.webdriver.common.by import By
 
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    prefs = {
-        "download.default_directory": os.path.abspath("documents"),
-        "download.prompt_for_download": False,
-        "plugins.always_open_pdf_externally": True
-    }
-    options.add_experimental_option("prefs", prefs)
-
-    driver = webdriver.Chrome(options=options)
-
+def download_pdf(eid):
     try:
-        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        time.sleep(5)
+        meta_url = f"{BASE_URL}/get-documents?entityId={eid}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
 
-        rows = driver.find_elements(By.XPATH, "//div[contains(@class,'mat-row')]")
+        r = requests.get(meta_url, headers=HEADERS)
 
-        if not rows:
-            print("NO ROWS")
+        print("META STATUS:", r.status_code)
+
+        if r.status_code != 200:
             return None
 
-        row = rows[0]
+        data = r.json()
 
-        try:
-            btn = row.find_element(By.XPATH, ".//button")
-            driver.execute_script("arguments[0].click();", btn)
-
-            print("CLICKED DOWNLOAD")
-
-            time.sleep(5)
-
-        except:
-            print("NO BUTTON")
+        if not data:
+            print("NO DOCUMENTS")
             return None
 
-        files = os.listdir("documents")
-        pdfs = [f for f in files if f.endswith(".pdf")]
+        file_url = data[0].get("url") or data[0].get("downloadUrl")
 
-        if pdfs:
-            latest = max(pdfs, key=lambda x: os.path.getmtime(os.path.join("documents", x)))
-            print("DOWNLOADED:", latest)
-            return os.path.join("documents", latest)
+        if not file_url:
+            print("NO FILE URL")
+            return None
 
-        print("NO PDF FOUND")
+        if file_url.startswith("/"):
+            file_url = BASE_URL + file_url
+
+        pdf = requests.get(file_url, headers=HEADERS)
+
+        print("PDF STATUS:", pdf.status_code)
+
+        if pdf.status_code != 200:
+            return None
+
+        filename = f"documents/{eid}.pdf"
+
+        with open(filename, "wb") as f:
+            f.write(pdf.content)
+
+        print("DOWNLOADED:", filename)
+
+        return filename
+
+    except Exception as e:
+        print("DOWNLOAD ERROR:", e)
         return None
-
-    finally:
-        driver.quit()
 
 # =========================
 # OCR
 # =========================
+
 def extract_text(pdf_path):
     text = ""
 
@@ -166,6 +123,7 @@ def extract_text(pdf_path):
 # =========================
 # PRICES
 # =========================
+
 def extract_prices(text):
     prices = []
 
@@ -175,7 +133,7 @@ def extract_prices(text):
         try:
             num = float(m.replace(".", "").replace(",", "."))
 
-            if num < 500000:
+            if num < 50000:
                 continue
 
             if num > 1_000_000_000:
@@ -188,10 +146,6 @@ def extract_prices(text):
 
     prices = sorted(set(prices))
 
-    if prices:
-        max_price = max(prices)
-        prices = [p for p in prices if p > max_price * 0.2]
-
     print("FINAL PRICES:", prices)
 
     return prices
@@ -199,31 +153,42 @@ def extract_prices(text):
 # =========================
 # ACCEPTED
 # =========================
+
 def find_accepted(text):
+    for line in text.split("\n"):
+        if "вредност уговора" in line.lower():
+            m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+            if m:
+                return float(m[0].replace(".", "").replace(",", "."))
+
+    return None
+
+# =========================
+# WINNER
+# =========================
+
+def find_winner(text):
     lines = text.split("\n")
 
     for i, line in enumerate(lines):
-        if "изабрана" in line.lower() or "најповољнија" in line.lower():
+        if "додељује" in line.lower():
             for j in range(i, i + 5):
                 if j < len(lines):
-                    m = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", lines[j])
-                    if m:
-                        try:
-                            return float(m[0].replace(".", "").replace(",", "."))
-                        except:
-                            continue
+                    if "доо" in lines[j].lower():
+                        return lines[j].strip()
 
     return None
 
 # =========================
 # ANALYZE
 # =========================
+
 def analyze(prices, accepted):
-    if len(prices) < 1:
+    if not prices:
         return None
 
     lowest = min(prices)
-    medijana = statistics.median(prices) if len(prices) > 1 else lowest
+    medijana = statistics.median(prices)
 
     if not accepted:
         accepted = prices[-1]
@@ -234,8 +199,9 @@ def analyze(prices, accepted):
     return lowest, medijana, accepted, loss_low, loss_med
 
 # =========================
-# SAVE
+# SAVE DB
 # =========================
+
 def save(eid, data):
     c.execute("""
     INSERT OR IGNORE INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
@@ -245,11 +211,14 @@ def save(eid, data):
 # =========================
 # MAIN
 # =========================
+
 def main():
     ids = fetch_entity_ids()
 
+    output = []
+
     for eid in ids:
-        print("PROCESS:", eid)
+        print("\nPROCESS:", eid)
 
         pdf = download_pdf(eid)
         if not pdf:
@@ -258,18 +227,39 @@ def main():
         text = extract_text(pdf)
 
         if len(text) < 100:
+            print("TEXT TOO SHORT")
             continue
 
         prices = extract_prices(text)
         accepted = find_accepted(text)
+        winner = find_winner(text)
 
         result = analyze(prices, accepted)
 
         if result:
+            lowest, medijana, accepted, loss_low, loss_med = result
+
+            output.append({
+                "id": eid,
+                "winner": winner,
+                "accepted": accepted,
+                "lowest": lowest,
+                "median": medijana,
+                "loss_low": loss_low,
+                "loss_median": loss_med
+            })
+
             save(eid, result)
 
-    print("DONE")
+    # =========================
+    # JSON OUTPUT
+    # =========================
+    with open("tenders.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
 
+    print("\nDONE")
+
+# =========================
 
 if __name__ == "__main__":
     main()
