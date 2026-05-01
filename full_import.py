@@ -4,16 +4,20 @@ import json
 import statistics
 import sqlite3
 from datetime import datetime
+import time
 
 import requests
 from pdfminer.high_level import extract_text
+
+# 🔥 NOVO
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
-    "Accept": "application/json, text/plain, */*",
-    "usertoken": "3aaf6626-5f2d-4218-bada-d72ab171983d"
+    "Accept": "application/json, text/plain, */*"
 }
 
 # =========================
@@ -47,41 +51,39 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# 🔥 FETCH IDS (FINAL API)
+# 🔥 FINAL FETCH (SELENIUM)
 # =========================
 def fetch_entity_ids():
-    url = f"{BASE_URL}/api/searchgrid/VAwardDecisions/get"
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
 
-    params = {
-        "filter": '["PublishDate",">=","2026-04-20T22:00:00.000Z"]',
-        "skip": 0,
-        "take": 50
-    }
+    driver = webdriver.Chrome(options=options)
 
     try:
-        r = requests.get(url, headers=HEADERS, params=params)
+        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        time.sleep(5)
 
-        if r.status_code != 200:
-            print("API FAIL:", r.status_code)
-            return []
+        html = driver.page_source
 
-        data = r.json()
-        items = data.get("data", [])
+        # 🔥 hvata LotId iz JS
+        found = re.findall(r'"LotId":\s*(\d+)', html)
+
+        found = list(dict.fromkeys(found))
 
         ids = []
 
-        for item in items:
-            lot_id = item.get("LotId")
-
-            if lot_id and not exists(lot_id):
-                ids.append(int(lot_id))
+        for eid in found:
+            eid = int(eid)
+            if not exists(eid):
+                ids.append(eid)
 
         print("NEW IDS:", ids[:10])
-        return ids
+        return ids[:100]
 
-    except Exception as e:
-        print("API ERROR:", e)
-        return []
+    finally:
+        driver.quit()
 
 # =========================
 # DOWNLOAD PDF
@@ -197,7 +199,6 @@ def analyze(bids):
     lowest = min(prices)
     median = statistics.median(prices)
 
-    # trenutno uzimamo najnižu kao prihvaćenu
     accepted = lowest
 
     risk = 0
