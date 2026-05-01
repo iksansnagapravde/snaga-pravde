@@ -45,36 +45,39 @@ def exists(eid):
     return c.fetchone() is not None
 
 # =========================
-# 🔥 FETCH IDS (NOVO - API)
+# 🔥 FETCH IDS (FINAL API)
 # =========================
 def fetch_entity_ids():
-    url = f"{BASE_URL}/odluke-o-dodeli-ugovora?initFilter=[\"PublishDate\",\">=\",\"2026-04-21\"]"
+    url = f"{BASE_URL}/get"
 
-    r = requests.get(url, headers=HEADERS)
-    html = r.text
-
-    match = re.search(r'"data":\s*(\[[\s\S]*?\])', html)
-
-    if not match:
-        print("NO DATA FOUND")
-        return []
+    params = {
+        "filter": '["PublishDate",">=","2026-04-21"]'
+    }
 
     try:
-        data = json.loads(match.group(1))
+        r = requests.get(url, headers=HEADERS, params=params)
+
+        if r.status_code != 200:
+            print("API FAIL:", r.status_code)
+            return []
+
+        data = r.json()
+        items = data.get("data", [])
+
+        ids = []
+
+        for item in items:
+            lot_id = item.get("LotId")
+
+            if lot_id and not exists(lot_id):
+                ids.append(int(lot_id))
+
+        print("NEW IDS:", ids[:10])
+        return ids[:100]
+
     except Exception as e:
-        print("JSON ERROR:", e)
+        print("API ERROR:", e)
         return []
-
-    ids = []
-
-    for item in data:
-        lot_id = item.get("LotId")
-
-        if lot_id and not exists(lot_id):
-            ids.append(int(lot_id))
-
-    print("NEW IDS:", ids[:10])
-    return ids[:100]
 
 # =========================
 # DOWNLOAD PDF
@@ -189,6 +192,8 @@ def analyze(bids):
 
     lowest = min(prices)
     median = statistics.median(prices)
+
+    # trenutno uzimamo najnižu kao prihvaćenu (kasnije ćemo unaprediti)
     accepted = lowest
 
     risk = 0
