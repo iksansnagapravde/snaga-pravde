@@ -1,54 +1,9 @@
-def write_loss_data():
-    c.execute("SELECT lowest, median, accepted FROM tenders")
-    rows = c.fetchall()
-
-    total_lowest = 0
-    total_median = 0
-    total_accepted = 0
-
-    loss_low_total = 0
-    loss_med_total = 0
-
-    valid_count = 0
-
-    for r in rows:
-        lowest, median, accepted = r
-
-        # ✅ validacija podataka
-        if lowest is None or accepted is None:
-            continue
-
-        if lowest <= 0 or accepted <= 0:
-            continue
-
-        valid_count += 1
-
-        total_lowest += lowest
-        total_accepted += accepted
-
-        # median može biti None
-        total_median += median if median is not None else 0
-
-        # ✅ gubici nikad negativni
-        loss_low = max(0, accepted - lowest)
-
-        if median is not None:
-            loss_med = max(0, accepted - median)
-        else:
-            loss_med = 0
-
-        loss_low_total += loss_low
-        loss_med_total += loss_med
-
-    data = {
-        "najbolja_ponuda": round(total_lowest, 2),
-        "medijana_ponuda": round(total_median, 2),
-        "prihvacena_ponuda": round(total_accepted, 2),
-        "broj_analiziranih": valid_count,
-        "gubitak_prema_najboljoj": round(loss_low_total, 2),
-        "gubitak_prema_medijani": round(loss_med_total, 2),
-        "valuta_kurs_eur": 117.2
-    }
-
-    with open("loss-data.json", "w") as f:
-        json.dump(data, f, indent=2)
+{
+  "najbolja_ponuda": 0,
+  "medijana_ponuda": 0,
+  "prihvacena_ponuda": 0,
+  "broj_analiziranih": 0,
+  "gubitak_prema_najboljoj": 0,
+  "gubitak_prema_medijani": 0,
+  "valuta_kurs_eur": 117.2
+}
