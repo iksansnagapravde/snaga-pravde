@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
 
-      # Playwright system libs (da Chromium radi)
+      # Playwright system libs (FIX za Ubuntu 24)
       - name: Install Playwright system deps
         run: |
           sudo apt-get update
@@ -35,7 +35,7 @@ jobs:
             libnss3 \
             libatk-bridge2.0-0 \
             libxss1 \
-            libasound2 \
+            libasound2t64 \
             libgtk-3-0 \
             libgbm1 \
             libxshmfence1
@@ -51,7 +51,7 @@ jobs:
           pip install --upgrade pip
           pip install playwright pdf2image pytesseract
 
-      # 🔥 OVO SI PITAO — OVDE IDE
+      # 🔥 Instalacija Playwright browsera (OVO JE KLJUČNO)
       - name: Install Playwright browsers
         run: |
           playwright install
