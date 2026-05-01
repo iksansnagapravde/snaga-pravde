@@ -3,26 +3,34 @@ import re
 import json
 import statistics
 import sqlite3
+import time
 from datetime import datetime
 
+import requests
 from pdf2image import convert_from_path
 import pytesseract
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+BASE_URL = "https://jnportal.ujn.gov.rs"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*"
+}
 
 # =========================
 # SETUP
 # =========================
 os.makedirs("documents", exist_ok=True)
 
-# 🔥 reset baze svaki put (rešava tvoj problem)
-if os.path.exists("contracts.db"):
-    os.remove("contracts.db")
-
 conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
 
 c.execute("""
-CREATE TABLE tenders (
-    entity_id INTEGER,
+CREATE TABLE IF NOT EXISTS tenders (
+    entity_id INTEGER PRIMARY KEY,
     lowest REAL,
     medijana REAL,
     accepted REAL,
@@ -31,7 +39,120 @@ CREATE TABLE tenders (
     created_at TEXT
 )
 """)
+
 conn.commit()
+
+# =========================
+# EXISTS
+# =========================
+def exists(eid):
+    c.execute("SELECT 1 FROM tenders WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
+# =========================
+# FETCH
+# =========================
+def fetch_entity_ids():
+    ids = []
+
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=options)
+
+    try:
+        driver.get("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        time.sleep(5)
+
+        html = driver.page_source
+
+        found = re.findall(r"/tender-eo/(\d+)", html)
+        found = list(dict.fromkeys(found))
+
+        print("FOUND RAW:", found[:10])
+
+        found = found[:10]
+
+        for eid in found:
+            eid = int(eid)
+            if not exists(eid):
+                ids.append(eid)
+
+        print("LAST 10 IDS:", ids)
+        return ids
+
+    finally:
+        driver.quit()
+
+# =========================
+# DOWNLOAD PDF
+# =========================
+def download_pdf(tender_id):
+    try:
+        url = f"{BASE_URL}/tender-eo/{tender_id}"
+
+        r = requests.get(url, headers=HEADERS, timeout=30)
+
+        if r.status_code != 200:
+            print("TENDER FAIL:", r.status_code)
+            return None
+
+        html = r.text
+
+        match = re.search(r'"entityId"\s*:\s*(\d+)', html)
+
+        if not match:
+            print("NO ENTITY ID:", tender_id)
+            return None
+
+        entity_id = match.group(1)
+        print("ENTITY:", entity_id)
+
+        api_url = f"{BASE_URL}/get-documents?entityId={entity_id}&objectMetaId=2&documentGroupId=169&associationTypeId=1"
+
+        r2 = requests.get(api_url, headers=HEADERS, timeout=30)
+
+        if r2.status_code != 200:
+            print("DOC FAIL:", r2.status_code)
+            return None
+
+        try:
+            data = r2.json()
+        except:
+            print("NOT JSON")
+            return None
+
+        for doc in data:
+            url = doc.get("DocumentUrl")
+            if not url:
+                continue
+
+            full = BASE_URL + url
+
+            pdf = requests.get(full, headers=HEADERS, timeout=60)
+
+            if pdf.status_code != 200:
+                continue
+
+            if not pdf.content.startswith(b"%PDF"):
+                continue
+
+            path = f"documents/{tender_id}.pdf"
+
+            with open(path, "wb") as f:
+                f.write(pdf.content)
+
+            print("PDF SAVED:", tender_id)
+            return path
+
+        print("NO PDF:", tender_id)
+        return None
+
+    except Exception as e:
+        print("ERROR:", e)
+        return None
 
 # =========================
 # OCR
@@ -41,6 +162,7 @@ def extract_text(pdf_path):
 
     try:
         images = convert_from_path(pdf_path, dpi=300)
+        print("IMAGES:", len(images))
 
         for img in images:
             t = pytesseract.image_to_string(img, config="--psm 6")
@@ -76,6 +198,12 @@ def extract_prices(text):
 
     prices = sorted(set(prices))
 
+    if prices:
+        max_price = max(prices)
+        prices = [p for p in prices if p > max_price * 0.2]
+
+    print("FINAL PRICES:", prices)
+
     return prices
 
 # =========================
@@ -101,7 +229,7 @@ def find_accepted(text):
 # ANALYZE
 # =========================
 def analyze(prices, accepted):
-    if not prices:
+    if len(prices) < 1:
         return None
 
     lowest = min(prices)
@@ -116,28 +244,30 @@ def analyze(prices, accepted):
     return lowest, medijana, accepted, loss_low, loss_med
 
 # =========================
-# PROCESS FILES
+# SAVE
 # =========================
-def process_files():
-    files = os.listdir("documents")
+def save(eid, data):
+    c.execute("""
+    INSERT OR IGNORE INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
+    """, (eid, *data, datetime.now().isoformat()))
+    conn.commit()
 
-    if not files:
-        print("NEMA PDF FAJLOVA")
-        return
+# =========================
+# MAIN
+# =========================
+def main():
+    ids = fetch_entity_ids()
 
-    for i, file in enumerate(files):
+    for eid in ids:
+        print("PROCESS:", eid)
 
-        if not file.lower().endswith(".pdf"):
+        pdf = download_pdf(eid)
+        if not pdf:
             continue
 
-        path = os.path.join("documents", file)
-
-        print("PROCESS:", file)
-
-        text = extract_text(path)
+        text = extract_text(pdf)
 
         if len(text) < 100:
-            print("PRAZAN PDF")
             continue
 
         prices = extract_prices(text)
@@ -146,62 +276,10 @@ def process_files():
         result = analyze(prices, accepted)
 
         if result:
-            c.execute("""
-            INSERT INTO tenders VALUES (?, ?, ?, ?, ?, ?, ?)
-            """, (i, *result, datetime.now().isoformat()))
+            save(eid, result)
 
-    conn.commit()
-
-# =========================
-# STATS
-# =========================
-def write_stats():
-    c.execute("SELECT lowest, accepted FROM tenders")
-    rows = c.fetchall()
-
-    kurs = 117.2
-
-    total_lowest = sum(r[0] for r in rows)
-    total_accepted = sum(r[1] for r in rows)
-
-    stats = {
-        "broj_tendera": len(rows),
-        "ukupna_vrednost": total_lowest,
-        "ukupna_vrednost_eur": round(total_lowest / kurs, 2),
-        "ugovorena_vrednost": total_accepted,
-        "ugovorena_vrednost_eur": round(total_accepted / kurs, 2)
-    }
-
-    with open("stats.json", "w") as f:
-        json.dump(stats, f, indent=2)
-
-# =========================
-# LOSS
-# =========================
-def write_loss_data():
-    c.execute("SELECT lowest, medijana, accepted, loss_low, loss_medijana FROM tenders")
-    rows = c.fetchall()
-
-    data = {
-        "najbolja_ponuda": sum(r[0] for r in rows),
-        "medijana_ponuda": sum(r[1] for r in rows),
-        "prihvacena_ponuda": sum(r[2] for r in rows),
-        "broj_analiziranih": len(rows),
-        "gubitak_prema_najboljoj": sum(r[3] for r in rows),
-        "gubitak_prema_medijani": sum(r[4] for r in rows)
-    }
-
-    with open("loss-data.json", "w") as f:
-        json.dump(data, f, indent=2)
-
-# =========================
-# MAIN
-# =========================
-def main():
-    process_files()
-    write_stats()
-    write_loss_data()
     print("DONE")
+
 
 if __name__ == "__main__":
     main()
