@@ -48,7 +48,7 @@ def exists(eid):
 # 🔥 FETCH IDS (FINAL API)
 # =========================
 def fetch_entity_ids():
-    url = f"{BASE_URL}/get"
+    url = f"{BASE_URL}/odluke-o-dodeli-ugovora/get"
 
     params = {
         "filter": '["PublishDate",">=","2026-04-21"]'
