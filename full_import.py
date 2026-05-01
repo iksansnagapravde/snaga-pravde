@@ -11,7 +11,8 @@ from pdfminer.high_level import extract_text
 BASE_URL = "https://jnportal.ujn.gov.rs"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0"
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json, text/plain, */*"
 }
 
 # =========================
@@ -48,10 +49,12 @@ def exists(eid):
 # 🔥 FETCH IDS (FINAL API)
 # =========================
 def fetch_entity_ids():
-    url = f"{BASE_URL}/odluke-o-dodeli-ugovora/get"
+    url = f"{BASE_URL}/api/searchgrid/VAwardDecisions/get"
 
     params = {
-        "filter": '["PublishDate",">=","2026-04-21"]'
+        "filter": '["PublishDate",">=","2026-04-20T22:00:00.000Z"]',
+        "skip": 0,
+        "take": 50
     }
 
     try:
@@ -73,7 +76,7 @@ def fetch_entity_ids():
                 ids.append(int(lot_id))
 
         print("NEW IDS:", ids[:10])
-        return ids[:100]
+        return ids
 
     except Exception as e:
         print("API ERROR:", e)
@@ -193,7 +196,7 @@ def analyze(bids):
     lowest = min(prices)
     median = statistics.median(prices)
 
-    # trenutno uzimamo najnižu kao prihvaćenu (kasnije ćemo unaprediti)
+    # trenutno uzimamo najnižu kao prihvaćenu
     accepted = lowest
 
     risk = 0
