@@ -1,23 +1,24 @@
-name: Full Import Contracts
+name: Tender Monitor Import
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/30 * * * *"   # na 30 min (stabilnije)
 
 permissions:
   contents: write
 
 concurrency:
-  group: full-import
-  cancel-in-progress: false
+  group: tender-import
+  cancel-in-progress: true
 
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 30
 
     steps:
+
       # ==============================
       # CHECKOUT
       # ==============================
@@ -40,54 +41,34 @@ jobs:
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
 
       # ==============================
-      # INSTALL CHROME (SELENIUM AUTO)
-      # ==============================
-      - name: Install Chrome
-        uses: browser-actions/setup-chrome@v2
-
-      # 🔥 Selenium će sam uzeti driver (bez konflikta)
-      - name: Set Chrome path
-        run: echo "CHROME_BIN=$(which google-chrome)" >> $GITHUB_ENV
-
-      # ==============================
-      # SYSTEM DEPENDENCIES (OCR)
-      # ==============================
-      - name: Install Tesseract + Poppler
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y tesseract-ocr poppler-utils
-
-      # ==============================
-      # PYTHON DEPENDENCIES
+      # INSTALL DEPENDENCIES
       # ==============================
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install --prefer-binary -r requirements.txt
 
       # ==============================
-      # RUN SCRIPT
+      # RUN IMPORT
       # ==============================
-      - name: Run full import
+      - name: Run import
         run: python full_import.py
 
       # ==============================
       # COMMIT RESULTS
       # ==============================
-      - name: Commit updated files
+      - name: Commit updated data
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add stats.json loss-data.json contracts.db
+          git add tenders.json contracts.db
 
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Auto update data"
+            git commit -m "Auto update tenders"
             git push
           fi
