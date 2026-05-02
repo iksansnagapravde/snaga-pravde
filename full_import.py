@@ -55,7 +55,6 @@ def fetch_entity_ids():
 
         for row in rows:
             text = row.inner_text()
-
             match = re.search(r"\b\d{6,}\b", text)
             if match:
                 ids.append(int(match.group()))
@@ -63,9 +62,7 @@ def fetch_entity_ids():
         browser.close()
 
     ids = list(dict.fromkeys(ids))
-
     print("AUTO IDS:", ids[:10])
-
     return ids[:10]
 
 # =========================
@@ -167,6 +164,48 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
+# =========================
+# LEVEL 2 – DETEKCIJE
+# =========================
+
+REJECTION_PATTERNS = [
+    "odbijena ponuda",
+    "ponuda se odbija",
+    "neprihvatljiva",
+    "nije prihvatljiva",
+    "nije dostavio",
+    "ne ispunjava uslove",
+    "odbijaju se ponude"
+]
+
+def detect_rejections(text):
+    t = text.lower()
+    return [p for p in REJECTION_PATTERNS if p in t]
+
+def extract_companies(text):
+    return list(set(re.findall(r"[A-ZČĆŠĐŽ][A-ZČĆŠĐŽa-z0-9\s\.\-]{3,}(?:doo|d\.o\.o\.)", text, re.IGNORECASE)))
+
+# 🔥 NOVO: VEZIVANJE FIRMA ↔ CENA
+def extract_company_price_pairs(text):
+    pairs = []
+    lines = text.split("\n")
+
+    for line in lines:
+        if "doo" in line.lower():
+            price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+            if price_match:
+                price = float(price_match.group().replace(".", "").replace(",", "."))
+                pairs.append({
+                    "company": line.strip(),
+                    "price": price
+                })
+
+    return pairs
+
+# =========================
+# GLAVNA ANALIZA (LEVEL 2)
+# =========================
+
 def analyze(text):
     text = clean_text(text)
 
@@ -179,14 +218,67 @@ def analyze(text):
         return None
 
     lowest = min(prices)
-    accepted = max(prices)
+    highest = max(prices)
+
+    winner = find_winner(text)
+    rejections = detect_rejections(text)
+    companies = extract_companies(text)
+
+    pairs = extract_company_price_pairs(text)
+
+    # 🔥 GUBITNICI
+    losers = []
+    cheapest_loser = None
+
+    for p in pairs:
+        if winner and p["company"] not in winner:
+            losers.append(p)
+
+        if p["price"] == lowest and (not winner or p["company"] not in winner):
+            cheapest_loser = p
+
+    suspicious_price = highest > lowest
+    multiple_bidders = len(prices) > 1 or len(companies) > 1
+
+    # 🔥 LEADOVI
+    leads = []
+
+    if rejections:
+        leads.append("ODBIJENI PONUĐAČ")
+
+    if cheapest_loser:
+        leads.append("NAJJEFTINIJI IZGUBIO")
+
+    if suspicious_price:
+        leads.append("SKUPlJI POBEDNIK")
 
     return {
-        "winner": find_winner(text),
-        "accepted": accepted,
+        "winner": winner,
+        "accepted": highest,
         "lowest": lowest,
-        "difference": accepted - lowest,
-        "suspicious": accepted > lowest
+        "difference": highest - lowest,
+
+        "prices": prices,
+        "companies": companies,
+        "pairs": pairs,
+
+        "losers": losers,
+        "cheapest_loser": cheapest_loser,
+
+        "multiple_bidders": multiple_bidders,
+        "rejections_detected": len(rejections) > 0,
+        "rejection_keywords": rejections,
+
+        "suspicious_price": suspicious_price,
+        "red_flag": multiple_bidders and suspicious_price,
+
+        "leads": leads,
+
+        "priority": (
+            "VERY HIGH"
+            if cheapest_loser or rejections or suspicious_price
+            else "NORMAL"
+        )
     }
 
 # =========================
