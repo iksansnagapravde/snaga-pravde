@@ -1,21 +1,59 @@
 import os
 import re
 import json
-import xml.etree.ElementTree as ET
+import sqlite3
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 from playwright.sync_api import sync_playwright
+from docx import Document
+from pdf2image import convert_from_path
+import pytesseract
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
 # =========================
-# TEST IDS
+# EMAIL CONFIG (UBACI SVOJE)
 # =========================
-def fetch_entity_ids():
-    return [675152, 670413, 666041]
+EMAIL_FROM = "tvojemail@gmail.com"
+EMAIL_PASS = "tvoj_app_password"
+EMAIL_TO = "tvojemail@gmail.com"
 
 # =========================
-# DOWNLOAD PREKO BROWSER-A
+# DATABASE (da ne duplira)
+# =========================
+conn = sqlite3.connect("contracts.db")
+c = conn.cursor()
+
+c.execute("""
+CREATE TABLE IF NOT EXISTS processed (
+    entity_id INTEGER PRIMARY KEY
+)
+""")
+conn.commit()
+
+# =========================
+# UZMI POSLEDNJIH 10 ID
+# =========================
+def fetch_entity_ids():
+    # trenutno ručno (kasnije možemo automatski scrape)
+    return [675152, 670413, 666041][:10]
+
+# =========================
+# CHECK PROCESSED
+# =========================
+def already_processed(eid):
+    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
+def mark_processed(eid):
+    c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
+    conn.commit()
+
+# =========================
+# DOWNLOAD
 # =========================
 def download_document(eid):
     try:
@@ -25,12 +63,8 @@ def download_document(eid):
             page = context.new_page()
 
             page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-
-            # čekaj da se učita
             page.wait_for_timeout(5000)
 
-            # 🔴 PRONAĐI DOWNLOAD DUGME (STRELICA)
-            # uzimamo sve linkove koji imaju download
             links = page.locator("a[href*='GetDocuments']").all()
 
             for link in links:
@@ -41,15 +75,11 @@ def download_document(eid):
                         link.click()
 
                     download = download_info.value
-
                     path = f"documents/{eid}_{download.suggested_filename}"
                     download.save_as(path)
 
-                    print("DOWNLOADED:", path)
-
                     browser.close()
 
-                    # detekcija tipa
                     with open(path, "rb") as f:
                         head = f.read(200)
 
@@ -57,10 +87,11 @@ def download_document(eid):
                         return path, "pdf"
                     elif b"<?xml" in head:
                         return path, "xml"
+                    elif path.endswith(".docx"):
+                        return path, "docx"
                     else:
                         return path, "unknown"
 
-            print("❌ NIJE NAĐEN LINK ZA ID")
             browser.close()
             return None, None
 
@@ -69,70 +100,137 @@ def download_document(eid):
         return None, None
 
 # =========================
-# XML PARSER
+# READERS
 # =========================
-def parse_xml(path):
-    try:
-        tree = ET.parse(path)
-        root = tree.getroot()
+def read_docx(path):
+    doc = Document(path)
+    return "\n".join([p.text for p in doc.paragraphs])
 
-        text = ET.tostring(root, encoding="unicode")
+def read_pdf(path):
+    text = ""
+    images = convert_from_path(path, dpi=300)
+    for img in images:
+        text += pytesseract.image_to_string(img)
+    return text
 
-        prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-        prices = [float(p.replace(".", "").replace(",", ".")) for p in prices]
-        prices = sorted(set(prices))
+# =========================
+# ANALIZA
+# =========================
+def clean_text(text):
+    return re.sub(r"\s+", " ", text)
 
-        if not prices:
-            return None
+def is_cancelled(text):
+    t = text.lower()
+    return any(k in t for k in [
+        "obustavi postupak",
+        "postupak se obustavlja",
+        "odluka o obustavi"
+    ])
 
-        lowest = min(prices)
-        accepted = max(prices)
-        second = prices[1] if len(prices) > 1 else None
+def extract_prices(text):
+    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+    return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
 
-        return {
-            "accepted": accepted,
-            "lowest": lowest,
-            "second": second,
-            "difference": accepted - lowest,
-            "suspicious": accepted > lowest
-        }
+def find_winner(text):
+    parts = text.split(".")
+    for i, part in enumerate(parts):
+        if "dodeljuje" in part.lower():
+            for j in range(i, i+3):
+                if j < len(parts):
+                    if "doo" in parts[j].lower():
+                        return parts[j].strip()
+    return None
 
-    except Exception as e:
-        print("XML ERROR:", e)
+def analyze(text):
+    text = clean_text(text)
+
+    if is_cancelled(text):
+        print("⛔ OBUSTAVLJEN")
         return None
+
+    prices = extract_prices(text)
+    if not prices:
+        return None
+
+    lowest = min(prices)
+    accepted = max(prices)
+
+    return {
+        "winner": find_winner(text),
+        "accepted": accepted,
+        "lowest": lowest,
+        "difference": accepted - lowest,
+        "suspicious": accepted > lowest
+    }
+
+# =========================
+# EMAIL
+# =========================
+def send_email(data):
+    msg = MIMEMultipart()
+    msg["From"] = EMAIL_FROM
+    msg["To"] = EMAIL_TO
+    msg["Subject"] = "🚨 Sumnjiv tender"
+
+    body = f"""
+Tender ID: {data['id']}
+Pobednik: {data['winner']}
+Prihvaćena: {data['accepted']}
+Najniža: {data['lowest']}
+Razlika: {data['difference']}
+"""
+
+    msg.attach(MIMEText(body, "plain"))
+
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    server.login(EMAIL_FROM, EMAIL_PASS)
+    server.send_message(msg)
+    server.quit()
 
 # =========================
 # MAIN
 # =========================
 def main():
-    ids = fetch_entity_ids()
     results = []
 
-    for eid in ids:
+    for eid in fetch_entity_ids():
         print("\nPROCESS:", eid)
 
-        path, ext = download_document(eid)
+        if already_processed(eid):
+            print("SKIP (already)")
+            continue
 
+        path, ext = download_document(eid)
         if not path:
             continue
 
-        if ext == "xml":
-            data = parse_xml(path)
+        if ext == "docx":
+            text = read_docx(path)
+        elif ext == "pdf":
+            text = read_pdf(path)
+        elif ext == "xml":
+            text = open(path, encoding="utf-8", errors="ignore").read()
         else:
-            data = {
-                "note": "PDF - parser ide kasnije"
-            }
+            continue
 
-        if data:
-            results.append({
-                "id": eid,
-                **data
-            })
+        data = analyze(text)
+        if not data:
+            mark_processed(eid)
+            continue
+
+        data["id"] = eid
+        results.append(data)
+
+        if data["suspicious"]:
+            send_email(data)
+
+        mark_processed(eid)
 
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
-    print("\nDONE")
+    print("DONE")
 
 if __name__ == "__main__":
     main()
