@@ -57,6 +57,20 @@
       "priority": 94
     },
     {
+      "id": "njiceni-zbog-pljacki-dzamija-u-novom-pazaru-tutinu-i-sjenici",
+      "title": "Ухапшен осумњичени због пљачки џамија у Новом Пазару, Тутину и Сјеници",
+      "url": "https://www.politika.rs/scc/clanak/751978/uhapsen-osumnjiceni-zbog-pljacki-dzamija-u-novom-pazaru-tutinu-i-sjenici",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T16:05:00+00:00",
+      "time": "16:05",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "lno-221881-hapsenje-m-z-u-novom-pazaru-zbog-teske-krade-vest",
       "title": "Rasvetljene pljačke džamija u Novom Pazaru, Tutinu i Sjenici: Uhapšen osumnjičeni",
       "url": "https://www.euronews.rs/srbija/aktuelno/221881/hapsenje-m-z-u-novom-pazaru-zbog-teske-krade/vest",
@@ -251,6 +265,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "verne-makedonije-zbog-sumnje-da-je-opljackao-cetiri-dzamije-",
+      "title": "Uhapšen državljanin Severne Makedonije zbog sumnje da je opljačkao četiri džamije",
+      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-drzavljanin-severne-makedonije-zbog-sumnje-da-je-opljackao-cetiri-dzamije/",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T16:19:22+00:00",
+      "time": "16:19",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "-uhapsen-krusevljanin-za-kog-se-sumnja-da-je-pretio-tuziocu-",
@@ -617,13 +645,13 @@
       "priority": 25
     },
     {
-      "id": "omobile-nisu-politicki-protivnici-vec-kriminalci-i-siledzije",
-      "title": "Вучић: Они који пале аутомобиле нису политички противници, већ криминалци и силеџије",
-      "url": "https://www.politika.rs/scc/clanak/751950/vucic-oni-koji-pale-automobile-nisu-politicki-protivnici-vec-kriminalci-i-siledzije",
+      "id": "elu-radonjic-zivkov-uvod-za-trece-rociste-nikoli-selakovicu-",
+      "title": "Moguće da je hajka na Estelu Radonjić Živkov uvod za treće ročište Nikoli Selakoviću",
+      "url": "https://vreme.com/kultura/moguce-da-je-hajka-na-estelu-radonjic-zivkov-uvod-za-trece-rociste-nikoli-selakovicu/",
       "date": "2026-05-02",
-      "datetime": "2026-05-02T14:18:00+00:00",
-      "time": "14:18",
-      "source": "Politika",
+      "datetime": "2026-05-02T16:30:11+00:00",
+      "time": "16:30",
+      "source": "Vreme",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "rs-zabava-zena-9775610-odmah-sklonite-jedan-predmet-sa-stola",
-      "title": "Odmah sklonite jedan predmet sa stola: Novac vam beži iz kuće, pravi je magnet za siromaštvo",
-      "url": "https://www.kurir.rs/zabava/zena/9775610/odmah-sklonite-jedan-predmet-sa-stola",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T13:56:46+00:00",
-      "time": "13:56",
-      "source": "Kurir",
-      "category": "Социјална угроженост",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 22
-    },
-    {
-      "id": "va-pop-kultura-9984370-sin-toma-henksa-zivi-u-kamp-prikolici",
-      "title": "Sin glumca milionera živi u kamp-prikolici: Do detalja opisao kako izgleda njegov život",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/9984370/sin-toma-henksa-zivi-u-kamp-prikolici",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T13:13:22+00:00",
-      "time": "13:13",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
