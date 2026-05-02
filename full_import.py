@@ -151,7 +151,7 @@ def extract_prices(text):
     return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
 
 # =========================
-# 🔥 FINAL PARSER
+# 🔥 FINAL PARSER (OTPORNOST NA OCR)
 # =========================
 def extract_full_analysis(text):
     result = {
@@ -163,24 +163,31 @@ def extract_full_analysis(text):
 
     lines = text.split("\n")
 
-    # WINNER
+    # 🔥 WINNER (otporniji)
     for i, line in enumerate(lines):
-        if "dodeljuje privrednom subjektu" in line.lower():
-            if i + 1 < len(lines):
-                result["winner"] = lines[i+1].strip()
+        l = line.lower()
+
+        if "dodelj" in l and ("subjekt" in l or "ugovor" in l):
+            for j in range(i+1, min(i+6, len(lines))):
+                candidate = lines[j].strip()
+
+                if any(x in candidate.lower() for x in ["doo", "d.o.o", "pr", "ad"]):
+                    result["winner"] = candidate
+                    break
             break
 
-    # TABELA
+    # 🔥 TABELA (otpornija)
     in_table = False
 
     for line in lines:
+        l = line.lower()
 
-        if "analitički prikaz" in line.lower():
+        if "analiti" in l:
             in_table = True
             continue
 
         if in_table:
-            if "stručna ocena" in line.lower():
+            if "ocena" in l:
                 break
 
             price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
@@ -222,28 +229,24 @@ def analyze(text):
 
     structured = extract_full_analysis(original_text)
 
-    winner = structured["winner"]
+    winner = structured["winner"] if structured["winner"] else "NEPOZNATO"
     lowest_company = structured["lowest_company"]
     lowest_price = structured["lowest_price"]
 
     suspicious = False
 
-    if winner and lowest_company:
+    if winner != "NEPOZNATO" and lowest_company:
         if winner.lower() not in lowest_company.lower():
             suspicious = True
 
     return {
         "winner": winner,
-
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
-
         "lowest_company": lowest_company,
         "lowest_price": lowest_price,
-
         "all_bids": structured["pairs"],
-
         "status": "SUMNJIVO" if suspicious else "OK",
         "suspicious": suspicious
     }
@@ -274,6 +277,7 @@ def main():
         data = analyze(text)
 
         if data:
+            print("✅", data)
             data["id"] = eid
             results.append(data)
 
