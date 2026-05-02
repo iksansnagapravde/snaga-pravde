@@ -55,16 +55,22 @@ def fetch_entity_ids():
 
         for row in rows:
             text = row.inner_text()
+
             match = re.search(r"\b\d{6,}\b", text)
             if match:
-                ids.append(int(match.group()))
+                eid = int(match.group())
+
+                # 🔥 SAMO NOVI
+                if not already_processed(eid):
+                    ids.append(eid)
 
         browser.close()
 
     ids = list(dict.fromkeys(ids))
-    print("AUTO IDS:", ids[:10])
-    return ids[:10]
 
+    print("NEW IDS:", ids[:20])
+
+    return ids[:20]
 # =========================
 # DOWNLOAD
 # =========================
