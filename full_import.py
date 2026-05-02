@@ -13,7 +13,7 @@ BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
 # =========================
-# DATABASE (da ne duplira)
+# DATABASE
 # =========================
 conn = sqlite3.connect("contracts.db")
 c = conn.cursor()
@@ -32,7 +32,7 @@ def fetch_entity_ids():
     return [675152, 670413, 666041]
 
 # =========================
-# CHECK PROCESSED
+# PROCESSED
 # =========================
 def already_processed(eid):
     c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
@@ -43,7 +43,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# DOWNLOAD
+# DOWNLOAD (KLJUČNI DEO)
 # =========================
 def download_document(eid):
     try:
@@ -53,23 +53,29 @@ def download_document(eid):
             page = context.new_page()
 
             page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-            page.wait_for_timeout(5000)
+            page.wait_for_load_state("networkidle")
 
-            links = page.locator("a[href*='GetDocuments']").all()
+            # tražimo red gde se pojavljuje ID
+            rows = page.locator("tr").all()
 
-            for link in links:
-                href = link.get_attribute("href") or ""
+            for row in rows:
+                if str(eid) in row.inner_text():
 
-                if str(eid) in href:
-                    with page.expect_download() as download_info:
-                        link.click()
+                    # pokušaj klik na download dugme u tom redu
+                    button = row.locator("a, button").first
+
+                    with page.expect_download(timeout=15000) as download_info:
+                        button.click()
 
                     download = download_info.value
                     path = f"documents/{eid}_{download.suggested_filename}"
                     download.save_as(path)
 
+                    print("DOWNLOADED:", path)
+
                     browser.close()
 
+                    # detekcija tipa
                     with open(path, "rb") as f:
                         head = f.read(200)
 
@@ -82,6 +88,7 @@ def download_document(eid):
                     else:
                         return path, "unknown"
 
+            print("❌ ID NIJE NAĐEN NA STRANICI:", eid)
             browser.close()
             return None, None
 
@@ -93,14 +100,20 @@ def download_document(eid):
 # READERS
 # =========================
 def read_docx(path):
-    doc = Document(path)
-    return "\n".join([p.text for p in doc.paragraphs])
+    try:
+        doc = Document(path)
+        return "\n".join([p.text for p in doc.paragraphs])
+    except:
+        return ""
 
 def read_pdf(path):
     text = ""
-    images = convert_from_path(path, dpi=300)
-    for img in images:
-        text += pytesseract.image_to_string(img)
+    try:
+        images = convert_from_path(path, dpi=300)
+        for img in images:
+            text += pytesseract.image_to_string(img)
+    except:
+        pass
     return text
 
 # =========================
@@ -167,6 +180,7 @@ def main():
             continue
 
         path, ext = download_document(eid)
+
         if not path:
             continue
 
