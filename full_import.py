@@ -37,10 +37,8 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# FETCH 70 TENDERA (JEDINA IZMENA)
+# AUTO FETCH IDS
 # =========================
-# (ceo tvoj kod isti do fetch funkcije...)
-
 def fetch_entity_ids():
     ids = []
 
@@ -51,42 +49,25 @@ def fetch_entity_ids():
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
 
-        for page_num in range(1, 8):  # ~70 tendera
+        page.wait_for_selector("tr", timeout=15000)
 
-            print(f"PAGE: {page_num}")
+        rows = page.locator("tr").all()
 
-            # ✅ KLJUČNO — samo pravi redovi
-            page.wait_for_selector("tr.dx-row", timeout=15000)
+        for row in rows:
+            text = row.inner_text()
 
-            rows = page.locator("tr.dx-row").all()
-
-            for row in rows:
-                text = row.inner_text()
-
-                match = re.search(r"\b\d{6,}\b", text)
-                if match:
-                    ids.append(int(match.group()))
-
-            ids = list(dict.fromkeys(ids))
-            print(f"Collected: {len(ids)}")
-
-            # sledeća stranica
-            next_page = page.locator(f"text={page_num + 1}").first
-
-            if next_page.count() > 0:
-                next_page.click()
-
-                # ✅ stabilno čekanje (NE networkidle)
-                page.wait_for_timeout(1500)
-                page.wait_for_selector("tr.dx-row", timeout=15000)
-            else:
-                print("Nema više stranica")
-                break
+            match = re.search(r"\b\d{6,}\b", text)
+            if match:
+                ids.append(int(match.group()))
 
         browser.close()
 
-    print("AUTO IDS:", ids[:70])
-    return ids[:70]
+    ids = list(dict.fromkeys(ids))
+
+    print("AUTO IDS:", ids[:10])
+
+    return ids[:10]
+
 # =========================
 # DOWNLOAD
 # =========================
@@ -159,7 +140,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA (TVOJA + SIGURAN UPGRADE)
+# ANALIZA
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -201,19 +182,29 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
+    # =========================
+    # NOVO: DETEKCIJA VIŠE PONUĐAČA
+    # =========================
     multiple_bidders = len(prices) > 1
 
+    # =========================
+    # NOVO: DETEKCIJA ODBIJENIH
+    # =========================
     rejection_keywords = [
         "odbijena ponuda",
         "ponuda se odbija",
         "neprihvatljiva",
         "nije prihvatljiva",
         "nije moguće utvrditi",
-        "ne ispunjava uslove"
+        "ne ispunjava uslove",
+        "odbijaju se ponude"
     ]
 
     rejection_detected = any(k in t for k in rejection_keywords)
 
+    # =========================
+    # NOVO: SUMNJIVA SITUACIJA
+    # =========================
     suspicious_price = accepted > lowest
 
     red_flag = (
@@ -226,13 +217,16 @@ def analyze(text):
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
+
+        # postojeće
         "suspicious": suspicious_price,
+
+        # NOVO
         "multiple_bidders": multiple_bidders,
         "rejection_detected": rejection_detected,
         "red_flag": red_flag,
         "priority": "HIGH" if red_flag else "NORMAL"
     }
-
 # =========================
 # MAIN
 # =========================
