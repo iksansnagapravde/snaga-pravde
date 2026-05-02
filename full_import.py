@@ -37,7 +37,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# AUTO FETCH IDS
+# FETCH 70 TENDERA (JEDINA IZMENA)
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -49,24 +49,37 @@ def fetch_entity_ids():
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
 
-        page.wait_for_selector("tr", timeout=15000)
+        collected_pages = 0
 
-        rows = page.locator("tr").all()
+        while len(ids) < 80 and collected_pages < 8:
+            page.wait_for_selector("tr", timeout=15000)
 
-        for row in rows:
-            text = row.inner_text()
+            rows = page.locator("tr").all()
 
-            match = re.search(r"\b\d{6,}\b", text)
-            if match:
-                ids.append(int(match.group()))
+            for row in rows:
+                text = row.inner_text()
+
+                match = re.search(r"\b\d{6,}\b", text)
+                if match:
+                    ids.append(int(match.group()))
+
+            ids = list(dict.fromkeys(ids))
+
+            print(f"Collected: {len(ids)}")
+
+            next_btn = page.locator("text=Sledeća").first
+
+            if next_btn.is_visible():
+                next_btn.click()
+                page.wait_for_load_state("networkidle")
+                collected_pages += 1
+            else:
+                break
 
         browser.close()
 
-    ids = list(dict.fromkeys(ids))
-
-    print("AUTO IDS:", ids[:10])
-
-    return ids[:10]
+    print("AUTO IDS:", ids[:70])
+    return ids[:70]
 
 # =========================
 # DOWNLOAD
@@ -140,7 +153,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA
+# ANALIZA (TVOJA + SIGURAN UPGRADE)
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -182,7 +195,6 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    # 🔥 NOVO (ali sigurno)
     multiple_bidders = len(prices) > 1
 
     rejection_keywords = [
@@ -198,7 +210,6 @@ def analyze(text):
 
     suspicious_price = accepted > lowest
 
-    # 🔥 GLAVNI SIGNAL
     red_flag = (
         (multiple_bidders and suspicious_price) or
         rejection_detected
@@ -209,21 +220,13 @@ def analyze(text):
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
-
-        # postojeće
         "suspicious": suspicious_price,
-
-        # 🔥 NOVO
         "multiple_bidders": multiple_bidders,
         "rejection_detected": rejection_detected,
         "red_flag": red_flag,
-
-        "priority": (
-            "HIGH"
-            if red_flag
-            else "NORMAL"
-        )
+        "priority": "HIGH" if red_flag else "NORMAL"
     }
+
 # =========================
 # MAIN
 # =========================
