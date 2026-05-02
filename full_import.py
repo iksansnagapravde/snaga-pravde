@@ -26,47 +26,35 @@ def fetch_entity_ids():
 # =========================
 def download_document(eid):
     try:
-        url = f"{BASE_URL}/GetDocuments.ashx"
+        url = f"https://jnportal.ujn.gov.rs/GetDocuments.ashx"
 
         params = {
             "entityId": eid,
             "objectMetaId": 2,
-            "documentGroupId": 169,
+            "documentGroupId": 168,
             "associationTypeId": 1,
             "userToken": TOKEN
         }
 
         r = requests.get(url, params=params, headers=HEADERS)
 
-        data = r.json()
-
-        if not data:
-            print("NO DOCUMENTS")
-            return None, None
-
-        file_url = data[0].get("url") or data[0].get("downloadUrl")
-
-        if file_url.startswith("/"):
-            file_url = BASE_URL + file_url
-
-        file = requests.get(file_url, headers=HEADERS)
-        content = file.content
+        content = r.content
 
         if content.startswith(b"%PDF"):
-            doc_type = "pdf"
+            ext = "pdf"
         elif b"<?xml" in content[:200]:
-            doc_type = "xml"
+            ext = "xml"
         else:
-            doc_type = "unknown"
+            ext = "unknown"
 
-        filename = f"documents/{eid}.{doc_type}"
+        path = f"documents/{eid}.{ext}"
 
-        with open(filename, "wb") as f:
+        with open(path, "wb") as f:
             f.write(content)
 
-        print(f"DOWNLOADED {doc_type.upper()}:", filename)
+        print(f"DOWNLOADED {ext.upper()}:", path)
 
-        return filename, doc_type
+        return path, ext
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
