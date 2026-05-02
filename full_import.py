@@ -164,6 +164,24 @@ def find_winner(text):
     return None
 
 # =========================
+# 🔥 NOVO – ROBUST WINNER
+# =========================
+def extract_winner_robust(text):
+    lines = text.split("\n")
+
+    for i, line in enumerate(lines):
+        l = line.lower()
+
+        if "dodelj" in l or "dodjelj" in l or "ugovor" in l:
+            for j in range(i+1, min(i+6, len(lines))):
+                candidate = lines[j].strip()
+
+                if len(candidate) > 10 and not any(x in candidate.lower() for x in ["rsd", "pdv", "broj"]):
+                    return candidate
+
+    return None
+
+# =========================
 # ANALYZE
 # =========================
 def analyze(text):
@@ -180,8 +198,11 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
+    # 🔥 SAMO OVO JE DODATO
+    winner = extract_winner_robust(text) or find_winner(text)
+
     return {
-        "winner": find_winner(text),
+        "winner": winner,
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
@@ -211,13 +232,11 @@ def main():
         else:
             continue
 
-        # 🔥 DEBUG TEKST
         print("\n--- TEKST (PRVIH 800 KARAKTERA) ---")
         print(text[:800])
 
         data = analyze(text)
 
-        # 🔥 DEBUG REZULTAT
         if data:
             print("✅ DETEKTOVANO:", data)
         else:
