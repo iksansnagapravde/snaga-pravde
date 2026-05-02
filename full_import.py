@@ -48,14 +48,12 @@ def fetch_entity_ids():
 
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
-
         page.wait_for_selector("tr", timeout=15000)
 
         rows = page.locator("tr").all()
 
         for row in rows:
             text = row.inner_text()
-
             match = re.search(r"\b\d{6,}\b", text)
             if match:
                 ids.append(int(match.group()))
@@ -63,9 +61,7 @@ def fetch_entity_ids():
         browser.close()
 
     ids = list(dict.fromkeys(ids))
-
     print("AUTO IDS:", ids[:10])
-
     return ids[:10]
 
 # =========================
@@ -140,7 +136,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA
+# ANALIZA – HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -167,6 +163,64 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
+# =========================
+# 🔥 NOVO – FIRME
+# =========================
+def extract_companies(text):
+    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
+
+# =========================
+# 🔥 NOVO – KONKURENCIJA
+# =========================
+def detect_competition(text):
+    lines = text.split("\n")
+
+    companies = []
+    prices = []
+
+    for line in lines:
+        if "doo" in line.lower():
+            companies.append(line.strip())
+
+        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+        if match:
+            for m in match:
+                prices.append(float(m.replace(".", "").replace(",", ".")))
+
+    companies = list(dict.fromkeys(companies))
+    prices = sorted(list(set(prices)))
+
+    return {
+        "companies": companies,
+        "prices": prices
+    }
+
+# =========================
+# 🔥 NOVO – RAZLOZI ODBIJANJA
+# =========================
+def detect_rejection_reasons(text):
+    patterns = [
+        "neprihvatljiva ponuda",
+        "ponuda se odbija",
+        "nije prihvatljiva",
+        "ne ispunjava uslove",
+        "diskvalifikovan",
+        "nije dostavio",
+        "ne odgovara"
+    ]
+
+    found = []
+    t = text.lower()
+
+    for p in patterns:
+        if p in t:
+            found.append(p)
+
+    return found
+
+# =========================
+# ANALYZE (GLAVNA LOGIKA)
+# =========================
 def analyze(text):
     text = clean_text(text)
 
@@ -181,11 +235,40 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
+    competition = detect_competition(text)
+    companies = extract_companies(text)
+    reasons = detect_rejection_reasons(text)
+
+    broj_ponudjaca = len(competition["companies"]) if competition else 0
+
+    status = "nepoznato"
+
+    if broj_ponudjaca == 1:
+        status = "jedan_ponudjac"
+
+    elif broj_ponudjaca > 1:
+        if accepted == lowest:
+            status = "najjeftiniji_pobedio"
+        elif accepted > lowest:
+            if reasons:
+                status = "skuplji_pobedio_ali_objasnjeno"
+            else:
+                status = "SUMNJIVO"
+
     return {
         "winner": find_winner(text),
+
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
+
+        "companies": companies,
+        "competition": competition,
+
+        "broj_ponudjaca": broj_ponudjaca,
+        "razlozi_odbijanja": reasons,
+
+        "status": status,
         "suspicious": accepted > lowest
     }
 
