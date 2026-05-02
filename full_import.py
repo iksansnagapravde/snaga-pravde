@@ -49,41 +49,25 @@ def fetch_entity_ids():
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
 
-        # 🔥 PROLAZIMO 5 STRANICA
-        for page_num in range(1, 6):
+        page.wait_for_selector("tr", timeout=15000)
 
-            print(f"PAGE: {page_num}")
+        rows = page.locator("tr").all()
 
-            page.wait_for_selector("tr", timeout=15000)
+        for row in rows:
+            text = row.inner_text()
 
-            rows = page.locator("tr").all()
-
-            for row in rows:
-                text = row.inner_text()
-
-                match = re.search(r"\b\d{6,}\b", text)
-                if match:
-                    eid = int(match.group())
-
-                    if not already_processed(eid):
-                        ids.append(eid)
-
-            # 🔥 klik na sledeću stranicu
-            next_button = page.locator("text=Sledeća").first
-
-            if next_button.is_visible():
-                next_button.click()
-                page.wait_for_load_state("networkidle")
-            else:
-                break
+            match = re.search(r"\b\d{6,}\b", text)
+            if match:
+                ids.append(int(match.group()))
 
         browser.close()
 
     ids = list(dict.fromkeys(ids))
 
-    print("NEW IDS:", ids[:20])
+    print("AUTO IDS:", ids[:10])
 
-    return ids[:20]
+    return ids[:10]
+
 # =========================
 # DOWNLOAD
 # =========================
@@ -158,6 +142,7 @@ def read_pdf(path):
 # =========================
 # ANALIZA
 # =========================
+
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
 
@@ -184,7 +169,7 @@ def find_winner(text):
     return None
 
 # =========================
-# LEVEL 2 – DETEKCIJE
+# NOVO: DETEKCIJA ODBIJENIH
 # =========================
 
 REJECTION_PATTERNS = [
@@ -201,28 +186,16 @@ def detect_rejections(text):
     t = text.lower()
     return [p for p in REJECTION_PATTERNS if p in t]
 
+# =========================
+# NOVO: DETEKCIJA FIRMI
+# =========================
+
 def extract_companies(text):
-    return list(set(re.findall(r"[A-ZČĆŠĐŽ][A-ZČĆŠĐŽa-z0-9\s\.\-]{3,}(?:doo|d\.o\.o\.)", text, re.IGNORECASE)))
-
-# 🔥 NOVO: VEZIVANJE FIRMA ↔ CENA
-def extract_company_price_pairs(text):
-    pairs = []
-    lines = text.split("\n")
-
-    for line in lines:
-        if "doo" in line.lower():
-            price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-            if price_match:
-                price = float(price_match.group().replace(".", "").replace(",", "."))
-                pairs.append({
-                    "company": line.strip(),
-                    "price": price
-                })
-
-    return pairs
+    companies = re.findall(r"[A-ZČĆŠĐŽ][A-ZČĆŠĐŽa-z0-9\s\.\-]{3,}(?:doo|d\.o\.o\.)", text, re.IGNORECASE)
+    return list(set(companies))
 
 # =========================
-# GLAVNA ANALIZA (LEVEL 2)
+# GLAVNA ANALIZA (UNAPREĐENA)
 # =========================
 
 def analyze(text):
@@ -240,62 +213,39 @@ def analyze(text):
     highest = max(prices)
 
     winner = find_winner(text)
+
+    # NOVO
     rejections = detect_rejections(text)
     companies = extract_companies(text)
 
-    pairs = extract_company_price_pairs(text)
-
-    # 🔥 GUBITNICI
-    losers = []
-    cheapest_loser = None
-
-    for p in pairs:
-        if winner and p["company"] not in winner:
-            losers.append(p)
-
-        if p["price"] == lowest and (not winner or p["company"] not in winner):
-            cheapest_loser = p
-
-    suspicious_price = highest > lowest
     multiple_bidders = len(prices) > 1 or len(companies) > 1
-
-    # 🔥 LEADOVI
-    leads = []
-
-    if rejections:
-        leads.append("ODBIJENI PONUĐAČ")
-
-    if cheapest_loser:
-        leads.append("NAJJEFTINIJI IZGUBIO")
-
-    if suspicious_price:
-        leads.append("SKUPlJI POBEDNIK")
+    suspicious_price = highest > lowest
 
     return {
         "winner": winner,
         "accepted": highest,
         "lowest": lowest,
         "difference": highest - lowest,
+        "suspicious": suspicious_price,
 
+        # 🔥 NOVO
         "prices": prices,
         "companies": companies,
-        "pairs": pairs,
-
-        "losers": losers,
-        "cheapest_loser": cheapest_loser,
+        "num_prices": len(prices),
+        "num_companies": len(companies),
 
         "multiple_bidders": multiple_bidders,
+
         "rejections_detected": len(rejections) > 0,
         "rejection_keywords": rejections,
 
-        "suspicious_price": suspicious_price,
+        # 🔥 GLAVNI SIGNAL
         "red_flag": multiple_bidders and suspicious_price,
 
-        "leads": leads,
-
+        # PRIORITET
         "priority": (
-            "VERY HIGH"
-            if cheapest_loser or rejections or suspicious_price
+            "HIGH"
+            if (len(rejections) > 0 or suspicious_price)
             else "NORMAL"
         )
     }
