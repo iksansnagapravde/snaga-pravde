@@ -2,12 +2,14 @@ import os
 import re
 import json
 import sqlite3
-import xml.etree.ElementTree as ET
 
 from playwright.sync_api import sync_playwright
 from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
+
+# 🔥 NOVO – PDF TEXT (BEZ OCR)
+from pdfminer.high_level import extract_text
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
@@ -25,19 +27,12 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
-# =========================
-# PROCESSED
-# =========================
-def already_processed(eid):
-    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
-
 def mark_processed(eid):
     c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
     conn.commit()
 
 # =========================
-# AUTO FETCH IDS
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -46,7 +41,7 @@ def fetch_entity_ids():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
         page.wait_for_selector("tr", timeout=15000)
 
@@ -74,7 +69,7 @@ def download_document(eid):
             context = browser.new_context(accept_downloads=True)
             page = context.new_page()
 
-            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+            page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
             page.wait_for_load_state("networkidle")
 
             rows = page.locator("tr").all()
@@ -100,14 +95,11 @@ def download_document(eid):
 
                     if head.startswith(b"%PDF"):
                         return path, "pdf"
-                    elif b"<?xml" in head:
-                        return path, "xml"
                     elif path.endswith(".docx"):
                         return path, "docx"
                     else:
                         return path, "unknown"
 
-            print("❌ ID NIJE NAĐEN:", eid)
             browser.close()
             return None, None
 
@@ -125,92 +117,57 @@ def read_docx(path):
     except:
         return ""
 
+# 🔥 KLJUČNO – PRVO PDF TEXT, PA OCR
 def read_pdf(path):
+    try:
+        text = extract_text(path)
+        if text and len(text) > 100:
+            return text
+    except:
+        pass
+
+    print("⚠ OCR fallback")
+
     text = ""
     try:
         images = convert_from_path(path, dpi=300)
         for img in images:
-            text += pytesseract.image_to_string(img)
+            text += pytesseract.image_to_string(img, lang="srp")
     except:
         pass
+
     return text
 
 # =========================
-# HELPERS
+# ANALIZA
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
-
-def is_cancelled(text):
-    t = text.lower()
-    return any(k in t for k in [
-        "obustavi postupak",
-        "postupak se obustavlja",
-        "odluka o obustavi"
-    ])
 
 def extract_prices(text):
     prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
     return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
 
-def find_winner(text):
-    parts = text.split(".")
-    for i, part in enumerate(parts):
-        if "dodeljuje" in part.lower():
-            for j in range(i, i+3):
-                if j < len(parts):
-                    if "doo" in parts[j].lower():
-                        return parts[j].strip()
-    return None
+# 🔥 FINAL – PRECIZAN WINNER
+def extract_winner(text):
+    # traži deo gde se dodeljuje ugovor
+    match = re.search(
+        r"dodeljuje\s+se\s+ugovor.*?\n(.*)",
+        text,
+        re.IGNORECASE
+    )
+    if match:
+        return match.group(1).strip()
 
-# =========================
-# 🔥 ROBUST (OCR SAFE)
-# =========================
-def extract_winner_robust(text):
+    # fallback – firma sa DOO/PR
     lines = text.split("\n")
-
-    for i, line in enumerate(lines):
-        l = line.lower()
-
-        if "dodelj" in l or "ugovor" in l:
-            for j in range(i+1, min(i+6, len(lines))):
-                candidate = lines[j].strip()
-
-                if len(candidate) > 10 and not any(x in candidate.lower() for x in ["rsd", "pdv", "broj"]):
-                    return candidate
-
-    return None
-
-# =========================
-# 🔥 FINAL FALLBACK (NAJVAŽNIJE)
-# =========================
-def extract_winner_fallback(text):
-    lines = text.split("\n")
-
-    candidates = []
-
     for line in lines:
-        l = line.strip()
-
-        if len(l) > 15 and not any(x in l.lower() for x in ["rsd", "broj", "datum"]):
-            candidates.append(l)
-
-    if candidates:
-        return max(candidates, key=len)
+        if any(x in line.lower() for x in ["doo", "d.o.o", "pr", "ad"]):
+            return line.strip()
 
     return None
 
-# =========================
-# ANALYZE
-# =========================
 def analyze(text):
-    original_text = text
-    text = clean_text(text)
-
-    if is_cancelled(text):
-        print("⛔ OBUSTAVLJEN")
-        return None
-
     prices = extract_prices(text)
     if not prices:
         return None
@@ -218,12 +175,7 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    # 🔥 FINAL WINNER LOGIKA
-    winner = (
-        extract_winner_robust(original_text)
-        or find_winner(text)
-        or extract_winner_fallback(original_text)
-    )
+    winner = extract_winner(text)
 
     return {
         "winner": winner,
@@ -243,7 +195,6 @@ def main():
         print("\nPROCESS:", eid)
 
         path, ext = download_document(eid)
-
         if not path:
             continue
 
@@ -251,24 +202,20 @@ def main():
             text = read_docx(path)
         elif ext == "pdf":
             text = read_pdf(path)
-        elif ext == "xml":
-            text = open(path, encoding="utf-8", errors="ignore").read()
         else:
             continue
 
-        print("\n--- TEKST (PRVIH 800 KARAKTERA) ---")
-        print(text[:800])
+        print("\n--- TEKST ---")
+        print(text[:500])
 
         data = analyze(text)
 
         if data:
             print("✅ DETEKTOVANO:", data)
-        else:
-            print("❌ NIŠTA NIJE NAĐENO")
-
-        if data:
             data["id"] = eid
             results.append(data)
+        else:
+            print("❌ NIŠTA")
 
         mark_processed(eid)
 
