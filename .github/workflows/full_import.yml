@@ -3,7 +3,7 @@ name: Tender Monitor Import
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"   # 🔥 svakih 5 minuta
 
 permissions:
   contents: write
@@ -21,16 +21,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # OCR dependencies
+      # =========================
+      # SYSTEM DEPENDENCIES
+      # =========================
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
 
-      # Playwright system libs
+      # Playwright dependencies
       - name: Install Playwright system deps
         run: |
-          sudo apt-get update
           sudo apt-get install -y \
             libnss3 \
             libatk-bridge2.0-0 \
@@ -40,30 +41,41 @@ jobs:
             libgbm1 \
             libxshmfence1
 
+      # =========================
+      # PYTHON
+      # =========================
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 🔥 OVDE JE FIX
       - name: Install Python deps
         run: |
           pip install --upgrade pip
-          pip install playwright pdf2image pytesseract requests
+          pip install playwright pdf2image pytesseract python-docx
 
+      # =========================
+      # PLAYWRIGHT
+      # =========================
       - name: Install Playwright browsers
         run: |
-          playwright install
+          playwright install chromium
 
+      # =========================
+      # RUN SCRIPT
+      # =========================
       - name: Run script
         run: python full_import.py
 
+      # =========================
+      # SAVE RESULTS
+      # =========================
       - name: Commit results
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add tenders.json contracts.db loss-data.json stats.json
+          git add tenders.json contracts.db
 
           if git diff --cached --quiet; then
             echo "No changes"
