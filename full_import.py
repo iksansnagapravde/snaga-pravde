@@ -2,9 +2,7 @@ import os
 import re
 import json
 import sqlite3
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+import xml.etree.ElementTree as ET
 
 from playwright.sync_api import sync_playwright
 from docx import Document
@@ -13,13 +11,6 @@ import pytesseract
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
-
-# =========================
-# EMAIL CONFIG (UBACI SVOJE)
-# =========================
-EMAIL_FROM = "tvojemail@gmail.com"
-EMAIL_PASS = "tvoj_app_password"
-EMAIL_TO = "tvojemail@gmail.com"
 
 # =========================
 # DATABASE (da ne duplira)
@@ -35,11 +26,10 @@ CREATE TABLE IF NOT EXISTS processed (
 conn.commit()
 
 # =========================
-# UZMI POSLEDNJIH 10 ID
+# TEST IDS
 # =========================
 def fetch_entity_ids():
-    # trenutno ručno (kasnije možemo automatski scrape)
-    return [675152, 670413, 666041][:10]
+    return [675152, 670413, 666041]
 
 # =========================
 # CHECK PROCESSED
@@ -164,31 +154,6 @@ def analyze(text):
     }
 
 # =========================
-# EMAIL
-# =========================
-def send_email(data):
-    msg = MIMEMultipart()
-    msg["From"] = EMAIL_FROM
-    msg["To"] = EMAIL_TO
-    msg["Subject"] = "🚨 Sumnjiv tender"
-
-    body = f"""
-Tender ID: {data['id']}
-Pobednik: {data['winner']}
-Prihvaćena: {data['accepted']}
-Najniža: {data['lowest']}
-Razlika: {data['difference']}
-"""
-
-    msg.attach(MIMEText(body, "plain"))
-
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login(EMAIL_FROM, EMAIL_PASS)
-    server.send_message(msg)
-    server.quit()
-
-# =========================
 # MAIN
 # =========================
 def main():
@@ -215,15 +180,10 @@ def main():
             continue
 
         data = analyze(text)
-        if not data:
-            mark_processed(eid)
-            continue
 
-        data["id"] = eid
-        results.append(data)
-
-        if data["suspicious"]:
-            send_email(data)
+        if data:
+            data["id"] = eid
+            results.append(data)
 
         mark_processed(eid)
 
