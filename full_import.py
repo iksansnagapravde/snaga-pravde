@@ -37,7 +37,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# FETCH IDS (STABILNO)
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -53,7 +53,6 @@ def fetch_entity_ids():
 
         for row in rows:
             text = row.inner_text()
-
             match = re.search(r"\b\d{6,}\b", text)
             if match:
                 ids.append(int(match.group()))
@@ -61,9 +60,7 @@ def fetch_entity_ids():
         browser.close()
 
     ids = list(dict.fromkeys(ids))
-
     print("AUTO IDS:", ids[:10])
-
     return ids[:10]
 
 # =========================
@@ -130,15 +127,15 @@ def read_docx(path):
 def read_pdf(path):
     text = ""
     try:
-        images = convert_from_path(path, dpi=300)
+        images = convert_from_path(path, dpi=400)
         for img in images:
-            text += pytesseract.image_to_string(img)
-    except:
-        pass
+            text += pytesseract.image_to_string(img, lang="srp+eng") + "\n"
+    except Exception as e:
+        print("OCR ERROR:", e)
     return text
 
 # =========================
-# ANALYSIS HELPERS
+# HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -151,6 +148,18 @@ def is_cancelled(text):
         "odluka o obustavi"
     ])
 
+def extract_reason(text):
+    t = text.lower()
+
+    if "nije dostavljena nijedna ponuda" in t:
+        return "nije bilo ponuda"
+    if "sve ponude neprihvatljive" in t:
+        return "sve ponude neprihvatljive"
+    if "neprihvatljiva" in t:
+        return "neprihvatljiva ponuda"
+
+    return "nepoznato"
+
 def extract_prices(text):
     prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
     return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
@@ -162,17 +171,14 @@ def extract_companies(text):
 def extract_company_price_map(text):
     lines = text.split("\n")
     mapping = {}
-
     current_company = None
 
     for line in lines:
-        line_clean = line.strip()
-
-        company_match = re.search(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", line_clean)
+        company_match = re.search(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", line)
         if company_match:
             current_company = company_match.group().strip()
 
-        price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line_clean)
+        price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
 
         if current_company and price_match:
             price = float(price_match.group().replace(".", "").replace(",", "."))
@@ -181,15 +187,19 @@ def extract_company_price_map(text):
     return mapping
 
 # =========================
-# ANALYZE (GLAVNI ENGINE)
+# ANALYZE
 # =========================
 def analyze(text):
     text = clean_text(text)
-    t = text.lower()
 
+    # 🔴 OBUSTAVLJENI (NOVO)
     if is_cancelled(text):
-        print("⛔ OBUSTAVLJEN")
-        return None
+        return {
+            "status": "OBUSTAVLJEN",
+            "reason": extract_reason(text),
+            "companies": extract_companies(text),
+            "priority": "HIGH"
+        }
 
     prices = extract_prices(text)
     if not prices:
@@ -198,7 +208,6 @@ def analyze(text):
     companies = extract_companies(text)
     company_prices = extract_company_price_map(text)
 
-    # fallback ako OCR nije savršen
     if not company_prices and companies:
         for i, c in enumerate(companies):
             if i < len(prices):
@@ -216,37 +225,20 @@ def analyze(text):
 
     multiple_bidders = len(sorted_bidders) > 1
 
-    rejection_keywords = [
-        "odbijena ponuda",
-        "ponuda se odbija",
-        "neprihvatljiva",
-        "nije prihvatljiva",
-        "nije moguće utvrditi",
-        "ne ispunjava uslove",
-        "odbijaju se ponude"
-    ]
-
-    rejection_detected = any(k in t for k in rejection_keywords)
-
     suspicious_price = winner_price > lowest_price
 
     if not (suspicious_price or not multiple_bidders):
         return None
 
-    red_flag = (
-        (multiple_bidders and suspicious_price) or
-        rejection_detected
-    )
-
     return {
-        "winner": winner_company or "NEPOZNAT",
+        "status": "DODELJEN",
 
+        "winner": winner_company,
         "accepted_value": winner_price,
         "lowest_value": lowest_price,
         "difference": winner_price - lowest_price,
 
         "multiple_bidders": multiple_bidders,
-        "single_bidder": not multiple_bidders,
 
         "losers": [
             {"company": c, "price": p}
@@ -258,11 +250,8 @@ def analyze(text):
             for c, p in sorted_bidders
         ],
 
-        "rejection_detected": rejection_detected,
-        "suspicious_price": suspicious_price,
-        "red_flag": red_flag,
-
-        "priority": "HIGH" if red_flag else "MEDIUM"
+        "red_flag": suspicious_price,
+        "priority": "HIGH" if suspicious_price else "MEDIUM"
     }
 
 # =========================
