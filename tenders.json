@@ -1,118 +1,111 @@
 [
   {
-    "winner": "Bpeanoct yrosopa (6e3 IIIB):",
-    "lowest_company": "Bpeanoct yrosopa (6e3 IIIB):",
-    "lowest_price": 1434497.0,
+    "winner": null,
     "accepted": 3000000.0,
+    "lowest": 1434497.0,
     "difference": 1565503.0,
-    "all_bids": [
-      {
-        "company": "[pouerbexa BpezHoct npeaMeta / naptuje (6e3 I1)[B-a):",
-        "price": 3000000.0
-      },
-      {
-        "company": "Bpeanoct yrosopa (6e3 IIIB):",
-        "price": 1434497.0
-      },
-      {
-        "company": "Bpeauoct yrosopa (ca IIIB):",
-        "price": 1721396.4
-      }
-    ],
-    "status": "OK",
-    "suspicious": false,
+    "companies": [],
+    "competition": {
+      "companies": [],
+      "prices": [
+        1434497.0,
+        1721396.4,
+        3000000.0
+      ]
+    },
+    "broj_ponudjaca": 0,
+    "razlozi_odbijanja": [],
+    "status": "nepoznato",
+    "suspicious": true,
     "id": 103749810
   },
   {
-    "winner": "6. Bmaroppemeno, oyHocHo 40 ana 20.04.2026. romuue yo",
-    "lowest_company": "6. Bmaroppemeno, oyHocHo 40 ana 20.04.2026. romuue yo",
-    "lowest_price": 11.0,
+    "winner": null,
     "accepted": 87318.0,
-    "difference": 87307.0,
-    "all_bids": [
-      {
-        "company": "2.  Tipomemena speyuoct japHe HaOasKe ca IIJIB-a je",
-        "price": 79722.0
-      },
-      {
-        "company": "2026. roquuy y u3HOcy OF",
-        "price": 79722.0
-      },
-      {
-        "company": "2) ykynHa BpezHoct yroBopa 6e3 ILJIB-a",
-        "price": 66435.0
-      },
-      {
-        "company": "3) ykymHa BpeaHoct ca ITJ[B-om",
-        "price": 79722.0
-      },
-      {
-        "company": "6. Bmaroppemeno, oyHocHo 40 ana 20.04.2026. romuue yo",
-        "price": 11.0
-      },
-      {
-        "company": "1 | _BPAHAKOMEPI|Kpymesay | _",
-        "price": 79722.0
-      },
-      {
-        "company": "[2 TYLBAJIKAH 100 Hum | _",
-        "price": 87318.0
-      },
-      {
-        "company": "Yxyrno (30up BpeqHOCTH pasa HM We0Ba — MaTepujaza u",
-        "price": 66.43
-      }
-    ],
-    "status": "OK",
-    "suspicious": false,
+    "lowest": 0.0,
+    "difference": 87318.0,
+    "companies": [],
+    "competition": {
+      "companies": [],
+      "prices": [
+        0.0,
+        1.02,
+        1.03,
+        1.06,
+        1.14,
+        1.21,
+        1.23,
+        1.45,
+        1.5,
+        1.7,
+        1.77,
+        1.8,
+        2.04,
+        2.12,
+        2.4,
+        2.88,
+        3.36,
+        4.03,
+        6.0,
+        7.2,
+        8.91,
+        10.69,
+        11.0,
+        12.65,
+        15.18,
+        21.6,
+        25.92,
+        66.43,
+        79.72,
+        66435.0,
+        79722.0,
+        87318.0
+      ]
+    },
+    "broj_ponudjaca": 0,
+    "razlozi_odbijanja": [],
+    "status": "nepoznato",
+    "suspicious": true,
     "id": 100259155
   },
   {
-    "winner": "Вредност уговора (без ПДВ):",
-    "lowest_company": "Вредност уговора (без ПДВ):",
-    "lowest_price": 48200.0,
+    "winner": null,
     "accepted": 42000000.0,
+    "lowest": 48200.0,
     "difference": 41951800.0,
-    "all_bids": [
-      {
-        "company": "Процењена вредност предмета / партије (без ПДВ-а):",
-        "price": 42000000.0
-      },
-      {
-        "company": "Вредност уговора (без ПДВ):",
-        "price": 48200.0
-      },
-      {
-        "company": "Вредност уговора (са ПДВ):",
-        "price": 57840.0
-      }
-    ],
-    "status": "OK",
-    "suspicious": false,
+    "companies": [],
+    "competition": {
+      "companies": [],
+      "prices": [
+        48200.0,
+        57840.0,
+        42000000.0
+      ]
+    },
+    "broj_ponudjaca": 0,
+    "razlozi_odbijanja": [],
+    "status": "nepoznato",
+    "suspicious": true,
     "id": 100143422
   },
   {
-    "winner": "Bpeaxoct yrosopa (6e3 MAB):",
-    "lowest_company": "Bpeaxoct yrosopa (6e3 MAB):",
-    "lowest_price": 4964600.0,
+    "winner": null,
     "accepted": 5957520.0,
+    "lowest": 4964600.0,
     "difference": 992920.0,
-    "all_bids": [
-      {
-        "company": "MpouetbeHa Bpegdoct npegmera / naptuje (6e3 MB-a):",
-        "price": 5000000.0
-      },
-      {
-        "company": "Bpeaxoct yrosopa (6e3 MAB):",
-        "price": 4964600.0
-      },
-      {
-        "company": "Bpeaxoct yrosopa (ca MB):",
-        "price": 5957520.0
-      }
-    ],
-    "status": "OK",
-    "suspicious": false,
+    "companies": [],
+    "competition": {
+      "companies": [],
+      "prices": [
+        4964600.0,
+        5000000.0,
+        5957520.0
+      ]
+    },
+    "broj_ponudjaca": 0,
+    "razlozi_odbijanja": [],
+    "status": "nepoznato",
+    "suspicious": true,
     "id": 102547430
   }
 ]
