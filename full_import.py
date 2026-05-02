@@ -2,12 +2,12 @@ import os
 import re
 import json
 import sqlite3
+import xml.etree.ElementTree as ET
 
 from playwright.sync_api import sync_playwright
 from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
-import pdfplumber
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
@@ -25,12 +25,19 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
+# =========================
+# PROCESSED
+# =========================
+def already_processed(eid):
+    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
 def mark_processed(eid):
     c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
     conn.commit()
 
 # =========================
-# FETCH IDS
+# AUTO FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -39,7 +46,7 @@ def fetch_entity_ids():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
+        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
         page.wait_for_selector("tr", timeout=15000)
 
@@ -67,7 +74,7 @@ def download_document(eid):
             context = browser.new_context(accept_downloads=True)
             page = context.new_page()
 
-            page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
+            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
             page.wait_for_load_state("networkidle")
 
             rows = page.locator("tr").all()
@@ -88,13 +95,19 @@ def download_document(eid):
 
                     browser.close()
 
-                    if path.endswith(".pdf"):
+                    with open(path, "rb") as f:
+                        head = f.read(200)
+
+                    if head.startswith(b"%PDF"):
                         return path, "pdf"
+                    elif b"<?xml" in head:
+                        return path, "xml"
                     elif path.endswith(".docx"):
                         return path, "docx"
                     else:
                         return path, "unknown"
 
+            print("❌ ID NIJE NAĐEN:", eid)
             browser.close()
             return None, None
 
@@ -114,97 +127,149 @@ def read_docx(path):
 
 def read_pdf(path):
     text = ""
-
-    # pokušaj normalno čitanje
     try:
-        with pdfplumber.open(path) as pdf:
-            for page in pdf.pages:
-                t = page.extract_text()
-                if t:
-                    text += t + "\n"
+        images = convert_from_path(path, dpi=300)
+        for img in images:
+            text += pytesseract.image_to_string(img)
     except:
         pass
-
-    # fallback OCR
-    if len(text.strip()) < 100:
-        print("⚠ OCR fallback:", path)
-        try:
-            images = convert_from_path(path, dpi=300)
-            for img in images:
-                text += pytesseract.image_to_string(img)
-        except:
-            pass
-
     return text
 
 # =========================
-# HELPERS
+# ANALIZA – HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
 
+def is_cancelled(text):
+    t = text.lower()
+    return any(k in t for k in [
+        "obustavi postupak",
+        "postupak se obustavlja",
+        "odluka o obustavi"
+    ])
+
 def extract_prices(text):
-    return sorted(set(
-        float(p.replace(".", "").replace(",", "."))
-        for p in re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-    ))
+    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+    return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
 
-# 🔥 SAMO PRAVE FIRME
-def extract_companies(text):
-    matches = re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]{3,}(DOO|D\.O\.O|AD|PR)", text)
-    return list(set(matches))
-
-# 🔥 PAROVI FIRMA + CENA
-def extract_pairs(text):
-    lines = text.split("\n")
-    pairs = []
-
-    for line in lines:
-        price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-        if not price_match:
-            continue
-
-        price = float(price_match.group().replace(".", "").replace(",", "."))
-        company = line.split(price_match.group())[0].strip()
-        l = company.lower()
-
-        if any(x in l for x in ["vrednost", "pdv", "ukupno", "procenjena"]):
-            continue
-
-        if re.search(r"(doo|d\.o\.o| ad | pr )", l):
-            pairs.append({"company": company, "price": price})
-
-    return pairs
+def find_winner(text):
+    parts = text.split(".")
+    for i, part in enumerate(parts):
+        if "dodeljuje" in part.lower():
+            for j in range(i, i+3):
+                if j < len(parts):
+                    if "doo" in parts[j].lower():
+                        return parts[j].strip()
+    return None
 
 # =========================
-# ANALYZE
+# 🔥 NOVO – FIRME
+# =========================
+def extract_companies(text):
+    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
+
+# =========================
+# 🔥 NOVO – KONKURENCIJA
+# =========================
+def detect_competition(text):
+    lines = text.split("\n")
+
+    companies = []
+    prices = []
+
+    for line in lines:
+        if "doo" in line.lower():
+            companies.append(line.strip())
+
+        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+        if match:
+            for m in match:
+                prices.append(float(m.replace(".", "").replace(",", ".")))
+
+    companies = list(dict.fromkeys(companies))
+    prices = sorted(list(set(prices)))
+
+    return {
+        "companies": companies,
+        "prices": prices
+    }
+
+# =========================
+# 🔥 NOVO – RAZLOZI ODBIJANJA
+# =========================
+def detect_rejection_reasons(text):
+    patterns = [
+        "neprihvatljiva ponuda",
+        "ponuda se odbija",
+        "nije prihvatljiva",
+        "ne ispunjava uslove",
+        "diskvalifikovan",
+        "nije dostavio",
+        "ne odgovara"
+    ]
+
+    found = []
+    t = text.lower()
+
+    for p in patterns:
+        if p in t:
+            found.append(p)
+
+    return found
+
+# =========================
+# ANALYZE (GLAVNA LOGIKA)
 # =========================
 def analyze(text):
     text = clean_text(text)
 
-    pairs = extract_pairs(text)
-    prices = extract_prices(text)
-
-    if not pairs:
+    if is_cancelled(text):
+        print("⛔ OBUSTAVLJEN")
         return None
 
-    lowest = min(pairs, key=lambda x: x["price"])
-    highest = max(pairs, key=lambda x: x["price"])
+    prices = extract_prices(text)
+    if not prices:
+        return None
 
-    status = "OK"
+    lowest = min(prices)
+    accepted = max(prices)
 
-    if highest["price"] > lowest["price"]:
-        status = "SUMNJIVO"
+    competition = detect_competition(text)
+    companies = extract_companies(text)
+    reasons = detect_rejection_reasons(text)
+
+    broj_ponudjaca = len(competition["companies"]) if competition else 0
+
+    status = "nepoznato"
+
+    if broj_ponudjaca == 1:
+        status = "jedan_ponudjac"
+
+    elif broj_ponudjaca > 1:
+        if accepted == lowest:
+            status = "najjeftiniji_pobedio"
+        elif accepted > lowest:
+            if reasons:
+                status = "skuplji_pobedio_ali_objasnjeno"
+            else:
+                status = "SUMNJIVO"
 
     return {
-        "winner": lowest["company"],
-        "lowest_company": lowest["company"],
-        "lowest_price": lowest["price"],
-        "accepted": highest["price"],
-        "difference": highest["price"] - lowest["price"],
-        "all_bids": pairs,
+        "winner": find_winner(text),
+
+        "accepted": accepted,
+        "lowest": lowest,
+        "difference": accepted - lowest,
+
+        "companies": companies,
+        "competition": competition,
+
+        "broj_ponudjaca": broj_ponudjaca,
+        "razlozi_odbijanja": reasons,
+
         "status": status,
-        "suspicious": status == "SUMNJIVO"
+        "suspicious": accepted > lowest
     }
 
 # =========================
@@ -217,6 +282,7 @@ def main():
         print("\nPROCESS:", eid)
 
         path, ext = download_document(eid)
+
         if not path:
             continue
 
@@ -224,13 +290,14 @@ def main():
             text = read_docx(path)
         elif ext == "pdf":
             text = read_pdf(path)
+        elif ext == "xml":
+            text = open(path, encoding="utf-8", errors="ignore").read()
         else:
             continue
 
         data = analyze(text)
 
         if data:
-            print("✅", data)
             data["id"] = eid
             results.append(data)
 
