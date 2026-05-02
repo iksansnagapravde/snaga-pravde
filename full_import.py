@@ -49,9 +49,11 @@ def fetch_entity_ids():
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
 
-        collected_pages = 0
+        # 👉 koliko stranica da prođe (svaka ~10-20 tendera)
+        for page_num in range(1, 8):  # ~70 tendera
 
-        while len(ids) < 80 and collected_pages < 8:
+            print(f"PAGE: {page_num}")
+
             page.wait_for_selector("tr", timeout=15000)
 
             rows = page.locator("tr").all()
@@ -64,23 +66,22 @@ def fetch_entity_ids():
                     ids.append(int(match.group()))
 
             ids = list(dict.fromkeys(ids))
-
             print(f"Collected: {len(ids)}")
 
-            next_btn = page.locator("text=Sledeća").first
+            # 👉 klik na sledeći broj stranice
+            next_page = page.locator(f"text={page_num + 1}").first
 
-            if next_btn.is_visible():
-                next_btn.click()
+            if next_page.is_visible():
+                next_page.click()
                 page.wait_for_load_state("networkidle")
-                collected_pages += 1
             else:
+                print("Nema više stranica")
                 break
 
         browser.close()
 
     print("AUTO IDS:", ids[:70])
     return ids[:70]
-
 # =========================
 # DOWNLOAD
 # =========================
