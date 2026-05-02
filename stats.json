@@ -1,7 +1,8 @@
 {
   "broj_tendera": 0,
-  "ukupna_vrednost": 0,
-  "ukupna_vrednost_eur": 0.0,
-  "ugovorena_vrednost": 0,
-  "ugovorena_vrednost_eur": 0.0
+  "ukupna_vrednost": "0 RSD",
+  "ukupna_vrednost_eur": "0 EUR",
+  "broj_ugovora": 0,
+  "ugovorena_vrednost": "0 RSD",
+  "ugovorena_vrednost_eur": "0 EUR"
 }
