@@ -25,9 +25,6 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
-# =========================
-# PROCESSED
-# =========================
 def already_processed(eid):
     c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
@@ -37,7 +34,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# AUTO FETCH IDS
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -46,7 +43,7 @@ def fetch_entity_ids():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
         page.wait_for_selector("tr", timeout=15000)
 
@@ -74,7 +71,7 @@ def download_document(eid):
             context = browser.new_context(accept_downloads=True)
             page = context.new_page()
 
-            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+            page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
             page.wait_for_load_state("networkidle")
 
             rows = page.locator("tr").all()
@@ -136,7 +133,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA – HELPERS
+# HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -153,75 +150,63 @@ def extract_prices(text):
     prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
     return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
 
-def find_winner(text):
-    parts = text.split(".")
-    for i, part in enumerate(parts):
-        if "dodeljuje" in part.lower():
-            for j in range(i, i+3):
-                if j < len(parts):
-                    if "doo" in parts[j].lower():
-                        return parts[j].strip()
-    return None
-
 # =========================
-# 🔥 NOVO – FIRME
+# 🔥 FINAL PARSER
 # =========================
-def extract_companies(text):
-    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
-
-# =========================
-# 🔥 NOVO – KONKURENCIJA
-# =========================
-def detect_competition(text):
-    lines = text.split("\n")
-
-    companies = []
-    prices = []
-
-    for line in lines:
-        if "doo" in line.lower():
-            companies.append(line.strip())
-
-        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-        if match:
-            for m in match:
-                prices.append(float(m.replace(".", "").replace(",", ".")))
-
-    companies = list(dict.fromkeys(companies))
-    prices = sorted(list(set(prices)))
-
-    return {
-        "companies": companies,
-        "prices": prices
+def extract_full_analysis(text):
+    result = {
+        "winner": None,
+        "pairs": [],
+        "lowest_company": None,
+        "lowest_price": None
     }
 
+    lines = text.split("\n")
+
+    # WINNER
+    for i, line in enumerate(lines):
+        if "dodeljuje privrednom subjektu" in line.lower():
+            if i + 1 < len(lines):
+                result["winner"] = lines[i+1].strip()
+            break
+
+    # TABELA
+    in_table = False
+
+    for line in lines:
+
+        if "analitički prikaz" in line.lower():
+            in_table = True
+            continue
+
+        if in_table:
+            if "stručna ocena" in line.lower():
+                break
+
+            price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+
+            if price_match:
+                price = float(price_match.group().replace(".", "").replace(",", "."))
+                company = line.split(price_match.group())[0].strip()
+
+                if len(company) > 5:
+                    result["pairs"].append({
+                        "company": company,
+                        "price": price
+                    })
+
+    if result["pairs"]:
+        lowest = min(result["pairs"], key=lambda x: x["price"])
+        result["lowest_company"] = lowest["company"]
+        result["lowest_price"] = lowest["price"]
+
+    return result
+
 # =========================
-# 🔥 NOVO – RAZLOZI ODBIJANJA
-# =========================
-def detect_rejection_reasons(text):
-    patterns = [
-        "neprihvatljiva ponuda",
-        "ponuda se odbija",
-        "nije prihvatljiva",
-        "ne ispunjava uslove",
-        "diskvalifikovan",
-        "nije dostavio",
-        "ne odgovara"
-    ]
-
-    found = []
-    t = text.lower()
-
-    for p in patterns:
-        if p in t:
-            found.append(p)
-
-    return found
-
-# =========================
-# ANALYZE (GLAVNA LOGIKA)
+# ANALYZE
 # =========================
 def analyze(text):
+    original_text = text
     text = clean_text(text)
 
     if is_cancelled(text):
@@ -235,41 +220,32 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    competition = detect_competition(text)
-    companies = extract_companies(text)
-    reasons = detect_rejection_reasons(text)
+    structured = extract_full_analysis(original_text)
 
-    broj_ponudjaca = len(competition["companies"]) if competition else 0
+    winner = structured["winner"]
+    lowest_company = structured["lowest_company"]
+    lowest_price = structured["lowest_price"]
 
-    status = "nepoznato"
+    suspicious = False
 
-    if broj_ponudjaca == 1:
-        status = "jedan_ponudjac"
-
-    elif broj_ponudjaca > 1:
-        if accepted == lowest:
-            status = "najjeftiniji_pobedio"
-        elif accepted > lowest:
-            if reasons:
-                status = "skuplji_pobedio_ali_objasnjeno"
-            else:
-                status = "SUMNJIVO"
+    if winner and lowest_company:
+        if winner.lower() not in lowest_company.lower():
+            suspicious = True
 
     return {
-        "winner": find_winner(text),
+        "winner": winner,
 
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
 
-        "companies": companies,
-        "competition": competition,
+        "lowest_company": lowest_company,
+        "lowest_price": lowest_price,
 
-        "broj_ponudjaca": broj_ponudjaca,
-        "razlozi_odbijanja": reasons,
+        "all_bids": structured["pairs"],
 
-        "status": status,
-        "suspicious": accepted > lowest
+        "status": "SUMNJIVO" if suspicious else "OK",
+        "suspicious": suspicious
     }
 
 # =========================
