@@ -26,7 +26,18 @@ CREATE TABLE IF NOT EXISTS processed (
 conn.commit()
 
 # =========================
-# TEST IDS
+# PROCESSED
+# =========================
+def already_processed(eid):
+    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
+def mark_processed(eid):
+    c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
+    conn.commit()
+
+# =========================
+# AUTO FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -51,14 +62,14 @@ def fetch_entity_ids():
 
         browser.close()
 
-    # ukloni duplikate
     ids = list(dict.fromkeys(ids))
 
     print("AUTO IDS:", ids[:10])
 
     return ids[:10]
+
 # =========================
-# DOWNLOAD (KLJUČNI DEO)
+# DOWNLOAD
 # =========================
 def download_document(eid):
     try:
@@ -70,13 +81,11 @@ def download_document(eid):
             page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
             page.wait_for_load_state("networkidle")
 
-            # tražimo red gde se pojavljuje ID
             rows = page.locator("tr").all()
 
             for row in rows:
                 if str(eid) in row.inner_text():
 
-                    # pokušaj klik na download dugme u tom redu
                     button = row.locator("a, button").first
 
                     with page.expect_download(timeout=15000) as download_info:
@@ -90,7 +99,6 @@ def download_document(eid):
 
                     browser.close()
 
-                    # detekcija tipa
                     with open(path, "rb") as f:
                         head = f.read(200)
 
@@ -103,7 +111,7 @@ def download_document(eid):
                     else:
                         return path, "unknown"
 
-            print("❌ ID NIJE NAĐEN NA STRANICI:", eid)
+            print("❌ ID NIJE NAĐEN:", eid)
             browser.close()
             return None, None
 
