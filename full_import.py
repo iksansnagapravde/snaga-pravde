@@ -164,62 +164,7 @@ def find_winner(text):
     return None
 
 # =========================
-# 🔥 NOVO – FIRME
-# =========================
-def extract_companies(text):
-    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
-
-# =========================
-# 🔥 NOVO – KONKURENCIJA
-# =========================
-def detect_competition(text):
-    lines = text.split("\n")
-
-    companies = []
-    prices = []
-
-    for line in lines:
-        if "doo" in line.lower():
-            companies.append(line.strip())
-
-        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-        if match:
-            for m in match:
-                prices.append(float(m.replace(".", "").replace(",", ".")))
-
-    companies = list(dict.fromkeys(companies))
-    prices = sorted(list(set(prices)))
-
-    return {
-        "companies": companies,
-        "prices": prices
-    }
-
-# =========================
-# 🔥 NOVO – RAZLOZI ODBIJANJA
-# =========================
-def detect_rejection_reasons(text):
-    patterns = [
-        "neprihvatljiva ponuda",
-        "ponuda se odbija",
-        "nije prihvatljiva",
-        "ne ispunjava uslove",
-        "diskvalifikovan",
-        "nije dostavio",
-        "ne odgovara"
-    ]
-
-    found = []
-    t = text.lower()
-
-    for p in patterns:
-        if p in t:
-            found.append(p)
-
-    return found
-
-# =========================
-# ANALYZE (GLAVNA LOGIKA)
+# ANALYZE
 # =========================
 def analyze(text):
     text = clean_text(text)
@@ -235,40 +180,11 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    competition = detect_competition(text)
-    companies = extract_companies(text)
-    reasons = detect_rejection_reasons(text)
-
-    broj_ponudjaca = len(competition["companies"]) if competition else 0
-
-    status = "nepoznato"
-
-    if broj_ponudjaca == 1:
-        status = "jedan_ponudjac"
-
-    elif broj_ponudjaca > 1:
-        if accepted == lowest:
-            status = "najjeftiniji_pobedio"
-        elif accepted > lowest:
-            if reasons:
-                status = "skuplji_pobedio_ali_objasnjeno"
-            else:
-                status = "SUMNJIVO"
-
     return {
         "winner": find_winner(text),
-
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
-
-        "companies": companies,
-        "competition": competition,
-
-        "broj_ponudjaca": broj_ponudjaca,
-        "razlozi_odbijanja": reasons,
-
-        "status": status,
         "suspicious": accepted > lowest
     }
 
@@ -295,7 +211,17 @@ def main():
         else:
             continue
 
+        # 🔥 DEBUG TEKST
+        print("\n--- TEKST (PRVIH 800 KARAKTERA) ---")
+        print(text[:800])
+
         data = analyze(text)
+
+        # 🔥 DEBUG REZULTAT
+        if data:
+            print("✅ DETEKTOVANO:", data)
+        else:
+            print("❌ NIŠTA NIJE NAĐENO")
 
         if data:
             data["id"] = eid
