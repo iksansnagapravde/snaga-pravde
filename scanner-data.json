@@ -43,18 +43,18 @@
       "priority": 104
     },
     {
-      "id": "nja-koristili-marihuanu-u-kolima-pa-zajedno-uhapseni-ynpfpvv",
-      "title": "KORISTILI MARIHUANU U KOLIMA, PA ZAJEDNO I UHAPŠENI Uhapšena dvojica mladića iz Gustinja, policajci u vozilu pronašli manju količinu narkotika",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsena-dvojica-mladica-iz-gustinja-koristili-marihuanu-u-kolima-pa-zajedno-uhapseni/ynpfpvv",
+      "id": "5-uhapsen-osumnjiceni-u-slucaju-trovanja-hranom-za-bebe-hipp",
+      "title": "Ухапшен осумњичени у случају тровања храном за бебе HiPP",
+      "url": "https://www.politika.rs/scc/clanak/751995/uhapsen-osumnjiceni-u-slucaju-trovanja-hranom-za-bebe-hipp",
       "date": "2026-05-02",
-      "datetime": "2026-05-02T11:52:12+00:00",
-      "time": "11:52",
-      "source": "Blic",
-      "category": "Злоупотребе",
+      "datetime": "2026-05-02T17:49:00+00:00",
+      "time": "17:49",
+      "source": "Politika",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 94
+      "priority": 92
     },
     {
       "id": "njiceni-zbog-pljacki-dzamija-u-novom-pazaru-tutinu-i-sjenici",
@@ -169,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "uzilastvu-pratili-kretanje-direktora-policije-lazara-5lq5jg7",
-      "title": "DRONOM SNIMAO KRETANJE DIREKTORA POLICIJE Uhapšena saradnica u nikšićkom tužilaštvu, sa njom pao muškarac: Pratili AUTO I POLICAJCE, pa snimak delili na društvenim mrežama",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsena-saradnica-u-niksickom-tuzilastvu-pratili-kretanje-direktora-policije-lazara/5lq5jg7",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T11:50:37+00:00",
-      "time": "11:50",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "apsenih-na-prvomajskom-skupu-u-istanbulu-pusteno-na-slobodu-",
       "title": "Više od 500 uhapšenih na prvomajskom skupu u Istanbulu pušteno na slobodu",
       "url": "https://n1info.rs/svet/vise-od-500-uhapsenih-na-prvomajskom-skupu-u-istanbulu-pusteno-na-slobodu/",
@@ -253,18 +239,46 @@
       "priority": 72
     },
     {
-      "id": "og-ugrozavanja-sigurnosti-pretio-tuziocu-u-restoranu-w4fsv7b",
-      "title": "PRETIO TUŽIOCU U RESTORANU Uhapšen Kruševljanin zbog ugrožavanja sigurnosti, određeno mu zadržavanje do 48 sati",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-krusevljanin-zbog-ugrozavanja-sigurnosti-pretio-tuziocu-u-restoranu/w4fsv7b",
+      "id": "jene-pljacke-dzamija-u-novom-pazaru-tutinu-i-sjenici-nb75fss",
+      "title": "RASVETLJENE PLJAČKE DŽAMIJA Uhapšen osumnjičeni: Evo šta je pronađeno prilikom hapšenja",
+      "url": "https://www.blic.rs/vesti/hronika/rasvetljene-pljacke-dzamija-u-novom-pazaru-tutinu-i-sjenici/nb75fss",
       "date": "2026-05-02",
-      "datetime": "2026-05-02T11:51:11+00:00",
-      "time": "11:51",
+      "datetime": "2026-05-02T17:43:46+00:00",
+      "time": "17:43",
       "source": "Blic",
-      "category": "Тужилаштво",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
+    },
+    {
+      "id": "mnjiceni-za-trovanje-hrane-za-bebe-otrovom-za-pacove-my1fc04",
+      "title": "Uhapšen osumnjičeni za trovanje hrane za bebe otrovom za pacove",
+      "url": "https://www.blic.rs/biznis/uhapsen-osumnjiceni-za-trovanje-hrane-za-bebe-otrovom-za-pacove/my1fc04",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T17:41:16+00:00",
+      "time": "17:41",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "sumnjiceni-za-trovanje-kasica-za-bebe-otrovom-za-pacove-html",
+      "title": "У Аустрији ухапшен осумњичени за тровање кашица за бебе отровом за пацове",
+      "url": "https://www.rts.rs/vesti/region/5940139/u-austriji-uhapsen-osumnjiceni-za-trovanje-kasica-za-bebe-otrovom-za-pacove.html",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T17:41:10+00:00",
+      "time": "17:41",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "verne-makedonije-zbog-sumnje-da-je-opljackao-cetiri-dzamije-",
@@ -391,34 +405,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "7-bugarki-predlozen-pritvor-zbog-zloupotrebe-platnih-kartica",
-      "title": "Бугарки предложен притвор због злоупотребе платних картица",
-      "url": "https://www.politika.rs/scc/clanak/751977/bugarki-predlozen-pritvor-zbog-zloupotrebe-platnih-kartica",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T16:00:00+00:00",
-      "time": "16:00",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "a-istraga-u-beogradu-zbog-oruzja-i-priprema-za-tesko-ubistvo",
-      "title": "Покренута истрага у Београду због оружја и припрема за тешко убиство",
-      "url": "https://www.politika.rs/scc/clanak/751973/pokrenuta-istraga-u-beogradu-zbog-oruzja-i-priprema-za-tesko-ubistvo",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T15:20:00+00:00",
-      "time": "15:20",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "i-tuzilastvo-trazi-pritvor-zbog-pripreme-ubistva-u-beogradu-",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "rs-zabava-zena-9775610-odmah-sklonite-jedan-predmet-sa-stola",
+      "title": "Odmah sklonite jedan predmet sa stola: Novac vam beži iz kuće, pravi je magnet za siromaštvo",
+      "url": "https://www.kurir.rs/zabava/zena/9775610/odmah-sklonite-jedan-predmet-sa-stola",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T13:56:46+00:00",
+      "time": "13:56",
+      "source": "Kurir",
+      "category": "Социјална угроженост",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
     }
   ],
   "all_sources": [
