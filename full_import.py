@@ -29,19 +29,34 @@ conn.commit()
 # TEST IDS
 # =========================
 def fetch_entity_ids():
-    return [675152, 670413, 666041]
+    ids = []
 
-# =========================
-# PROCESSED
-# =========================
-def already_processed(eid):
-    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
 
-def mark_processed(eid):
-    c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
-    conn.commit()
+        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        page.wait_for_load_state("networkidle")
 
+        page.wait_for_selector("tr", timeout=15000)
+
+        rows = page.locator("tr").all()
+
+        for row in rows:
+            text = row.inner_text()
+
+            match = re.search(r"\b\d{6,}\b", text)
+            if match:
+                ids.append(int(match.group()))
+
+        browser.close()
+
+    # ukloni duplikate
+    ids = list(dict.fromkeys(ids))
+
+    print("AUTO IDS:", ids[:10])
+
+    return ids[:10]
 # =========================
 # DOWNLOAD (KLJUČNI DEO)
 # =========================
