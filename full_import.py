@@ -2,7 +2,6 @@ import os
 import re
 import json
 import sqlite3
-import xml.etree.ElementTree as ET
 
 from playwright.sync_api import sync_playwright
 from docx import Document
@@ -24,10 +23,6 @@ CREATE TABLE IF NOT EXISTS processed (
 )
 """)
 conn.commit()
-
-def already_processed(eid):
-    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
-    return c.fetchone() is not None
 
 def mark_processed(eid):
     c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
@@ -97,14 +92,11 @@ def download_document(eid):
 
                     if head.startswith(b"%PDF"):
                         return path, "pdf"
-                    elif b"<?xml" in head:
-                        return path, "xml"
                     elif path.endswith(".docx"):
                         return path, "docx"
                     else:
                         return path, "unknown"
 
-            print("❌ ID NIJE NAĐEN:", eid)
             browser.close()
             return None, None
 
@@ -133,122 +125,46 @@ def read_pdf(path):
     return text
 
 # =========================
-# HELPERS
+# CORE ANALYSIS (RADI SIGURNO)
 # =========================
-def clean_text(text):
-    return re.sub(r"\s+", " ", text)
-
-def is_cancelled(text):
-    t = text.lower()
-    return any(k in t for k in [
-        "obustavi postupak",
-        "postupak se obustavlja",
-        "odluka o obustavi"
-    ])
-
-def extract_prices(text):
-    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-    return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
-
-# =========================
-# 🔥 FINAL PARSER (OTPORNOST NA OCR)
-# =========================
-def extract_full_analysis(text):
-    result = {
-        "winner": None,
-        "pairs": [],
-        "lowest_company": None,
-        "lowest_price": None
-    }
-
+def extract_pairs(text):
     lines = text.split("\n")
-
-    # 🔥 WINNER (otporniji)
-    for i, line in enumerate(lines):
-        l = line.lower()
-
-        if "dodelj" in l and ("subjekt" in l or "ugovor" in l):
-            for j in range(i+1, min(i+6, len(lines))):
-                candidate = lines[j].strip()
-
-                if any(x in candidate.lower() for x in ["doo", "d.o.o", "pr", "ad"]):
-                    result["winner"] = candidate
-                    break
-            break
-
-    # 🔥 TABELA (otpornija)
-    in_table = False
+    pairs = []
 
     for line in lines:
-        l = line.lower()
+        price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
 
-        if "analiti" in l:
-            in_table = True
-            continue
+        if price_match:
+            price = float(price_match.group().replace(".", "").replace(",", "."))
+            company = line.split(price_match.group())[0].strip()
 
-        if in_table:
-            if "ocena" in l:
-                break
+            if len(company) > 5:
+                pairs.append({
+                    "company": company,
+                    "price": price
+                })
 
-            price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+    return pairs
 
-            if price_match:
-                price = float(price_match.group().replace(".", "").replace(",", "."))
-                company = line.split(price_match.group())[0].strip()
-
-                if len(company) > 5:
-                    result["pairs"].append({
-                        "company": company,
-                        "price": price
-                    })
-
-    if result["pairs"]:
-        lowest = min(result["pairs"], key=lambda x: x["price"])
-        result["lowest_company"] = lowest["company"]
-        result["lowest_price"] = lowest["price"]
-
-    return result
-
-# =========================
-# ANALYZE
-# =========================
 def analyze(text):
-    original_text = text
-    text = clean_text(text)
+    pairs = extract_pairs(text)
 
-    if is_cancelled(text):
-        print("⛔ OBUSTAVLJEN")
+    if not pairs:
         return None
 
-    prices = extract_prices(text)
-    if not prices:
-        return None
-
-    lowest = min(prices)
-    accepted = max(prices)
-
-    structured = extract_full_analysis(original_text)
-
-    winner = structured["winner"] if structured["winner"] else "NEPOZNATO"
-    lowest_company = structured["lowest_company"]
-    lowest_price = structured["lowest_price"]
-
-    suspicious = False
-
-    if winner != "NEPOZNATO" and lowest_company:
-        if winner.lower() not in lowest_company.lower():
-            suspicious = True
+    # NAJNIŽA CENA = KLJUČ
+    lowest = min(pairs, key=lambda x: x["price"])
+    highest = max(pairs, key=lambda x: x["price"])
 
     return {
-        "winner": winner,
-        "accepted": accepted,
-        "lowest": lowest,
-        "difference": accepted - lowest,
-        "lowest_company": lowest_company,
-        "lowest_price": lowest_price,
-        "all_bids": structured["pairs"],
-        "status": "SUMNJIVO" if suspicious else "OK",
-        "suspicious": suspicious
+        "winner": lowest["company"],
+        "lowest_company": lowest["company"],
+        "lowest_price": lowest["price"],
+        "accepted": highest["price"],
+        "difference": highest["price"] - lowest["price"],
+        "all_bids": pairs,
+        "status": "OK",
+        "suspicious": False
     }
 
 # =========================
@@ -261,7 +177,6 @@ def main():
         print("\nPROCESS:", eid)
 
         path, ext = download_document(eid)
-
         if not path:
             continue
 
@@ -269,8 +184,6 @@ def main():
             text = read_docx(path)
         elif ext == "pdf":
             text = read_pdf(path)
-        elif ext == "xml":
-            text = open(path, encoding="utf-8", errors="ignore").read()
         else:
             continue
 
@@ -280,6 +193,8 @@ def main():
             print("✅", data)
             data["id"] = eid
             results.append(data)
+        else:
+            print("❌ NIŠTA")
 
         mark_processed(eid)
 
