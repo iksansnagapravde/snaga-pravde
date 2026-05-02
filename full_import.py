@@ -169,7 +169,6 @@ def find_winner(text):
 
 def analyze(text):
     text = clean_text(text)
-    t = text.lower()
 
     if is_cancelled(text):
         print("⛔ OBUSTAVLJEN")
@@ -182,51 +181,14 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    # =========================
-    # NOVO: DETEKCIJA VIŠE PONUĐAČA
-    # =========================
-    multiple_bidders = len(prices) > 1
-
-    # =========================
-    # NOVO: DETEKCIJA ODBIJENIH
-    # =========================
-    rejection_keywords = [
-        "odbijena ponuda",
-        "ponuda se odbija",
-        "neprihvatljiva",
-        "nije prihvatljiva",
-        "nije moguće utvrditi",
-        "ne ispunjava uslove",
-        "odbijaju se ponude"
-    ]
-
-    rejection_detected = any(k in t for k in rejection_keywords)
-
-    # =========================
-    # NOVO: SUMNJIVA SITUACIJA
-    # =========================
-    suspicious_price = accepted > lowest
-
-    red_flag = (
-        (multiple_bidders and suspicious_price) or
-        rejection_detected
-    )
-
     return {
         "winner": find_winner(text),
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
-
-        # postojeće
-        "suspicious": suspicious_price,
-
-        # NOVO
-        "multiple_bidders": multiple_bidders,
-        "rejection_detected": rejection_detected,
-        "red_flag": red_flag,
-        "priority": "HIGH" if red_flag else "NORMAL"
+        "suspicious": accepted > lowest
     }
+
 # =========================
 # MAIN
 # =========================
