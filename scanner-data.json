@@ -86,7 +86,7 @@
     },
     {
       "id": "psena-saradnica-u-niksickom-tuzilastvu-sa-njom-pao-muskarac-",
-      "title": "Dronom snimao kretanje direktorka crnogorske policije: Uhapšena saradnica u nikšićkom tužilaštvu, sa njom \"pao\" muškarac",
+      "title": "Dronom snimao kretanje direktora crnogorske policije: Uhapšena saradnica u nikšićkom tužilaštvu, sa njom \"pao\" muškarac",
       "url": "https://nova.rs/vesti/svet/dronom-snimao-kretanje-direktorka-crnogorske-policije-uhapsena-saradnica-u-niksickom-tuzilastvu-sa-njom-pao-muskarac/",
       "date": "2026-05-02",
       "datetime": "2026-05-02T13:10:06+00:00",
@@ -183,20 +183,6 @@
       "priority": 92
     },
     {
-      "id": "-uhapsena-zena-koja-je-kolima-udarila-mladica-16-u-nisu-vest",
-      "title": "Uhapšena žena u Nišu: Osumnjičena da je kolima udarila tinejdžera (16) i pobegla sa mesta nesreće",
-      "url": "https://www.euronews.rs/srbija/aktuelno/221633/uhapsena-zena-koja-je-kolima-udarila-mladica-16-u-nisu/vest",
-      "date": "2026-04-30",
-      "datetime": "2026-04-30T14:40:00+00:00",
-      "time": "14:40",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "j-akciji-u-crnoj-gori-uhapsen-vazan-clan-balkanskog-kartela-",
       "title": "U međunarodnoj akciji u Crnoj Gori uhapšen važan član Balkanskog kartela",
       "url": "https://www.krik.rs/u-medjunarodnoj-akciji-u-crnoj-gori-uhapsen-vazan-clan-balkanskog-kartela/",
@@ -209,6 +195,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "nje-u-beogradu-majka-sin-i-maloletnik-osumnjiceni-za-ubistvo",
+      "title": "MALOLETNIK ČUVAO ORUŽJE, ON PRATIO ŽRTVU, A MAJKA IZVRŠILA KLJUČAN ZADATAK Oglasilo se tužilaštvo o uhapšenim VRAČARCIMA zbog teškog ubistva",
+      "url": "https://www.kurir.rs/crna-hronika/9984487/hapsenje-u-beogradu-majka-sin-i-maloletnik-osumnjiceni-za-ubistvo",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T14:16:41+00:00",
+      "time": "14:16",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
     },
     {
       "id": "u-u-restoranu-uhapsen-krusevljanin-odredjeno-mu-zadrzavanje-",
@@ -237,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "-uhapsen-krusevljanin-za-kog-se-sumnja-da-je-pretio-tuziocu-",
+      "title": "Uhapšen Kruševljanin za kog se sumnja da je pretio tužiocu, mediji navode da je reč o Jotki",
+      "url": "https://n1info.rs/vesti/uhapsen-krusevljanin-za-kog-se-sumnja-da-je-pretio-tuziocu/",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T14:37:20+00:00",
+      "time": "14:37",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "-ponovo-uhapsen-zoran-jotic-jotka-pretio-tuziocu-u-krusevcu-",
@@ -274,20 +288,6 @@
       "datetime": "2026-05-02T13:25:48+00:00",
       "time": "13:25",
       "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-uhapsen-krusevljanin-za-kog-se-sumnja-da-je-pretio-tuziocu-",
-      "title": "Uhapšen Kruševljanin za kog se sumnja da je pretio tužiocu",
-      "url": "https://n1info.rs/vesti/uhapsen-krusevljanin-za-kog-se-sumnja-da-je-pretio-tuziocu/",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T13:25:03+00:00",
-      "time": "13:25",
-      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -349,6 +349,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "a-istraga-u-beogradu-zbog-oruzja-i-priprema-za-tesko-ubistvo",
+      "title": "Покренута истрага у Београду због оружја и припрема за тешко убиство",
+      "url": "https://www.politika.rs/scc/clanak/751973/pokrenuta-istraga-u-beogradu-zbog-oruzja-i-priprema-za-tesko-ubistvo",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T15:20:00+00:00",
+      "time": "15:20",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "i-tuzilastvo-trazi-pritvor-zbog-pripreme-ubistva-u-beogradu-",
@@ -463,6 +477,20 @@
       "priority": 33
     },
     {
+      "id": "-video-video-ambasador-srbije-u-svajcarskoj-ivan-trifunovic-",
+      "title": "N1 intervju: Ambasador Srbije u Švajcarskoj Ivan Trifunović",
+      "url": "https://n1info.rs/video/video-ambasador-srbije-u-svajcarskoj-ivan-trifunovic/",
+      "date": "2026-05-02",
+      "datetime": "2026-05-02T15:00:00+00:00",
+      "time": "15:00",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "https-radar-nova-rs-drustvo-destrukcija-srca-beograda-",
       "title": "Nemar ili koruptivno kruženje novca",
       "url": "https://radar.nova.rs/drustvo/destrukcija-srca-beograda/",
@@ -475,20 +503,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "oko-ono-pritisla-malu-pivaru-pivo-dzon-lemon-mora-da-nzp6jzx",
-      "title": "Pravna drama u Francuskoj: Joko Ono pritisla malu pivaru, pivo \"Džon Lemon\" mora da nestane sa rafova, evo zašto",
-      "url": "https://www.blic.rs/biznis/after-hour/pravna-drama-u-francuskoj-joko-ono-pritisla-malu-pivaru-pivo-dzon-lemon-mora-da/nzp6jzx",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T09:48:21+00:00",
-      "time": "09:48",
-      "source": "Blic",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "-finalu-evropskog-slapp-takmicenja-zbog-tuzbi-protiv-krik-a-",
@@ -505,13 +519,13 @@
       "priority": 28
     },
     {
-      "id": "no-vujic-kaze-drugo-korumpiranoj-vlasti-se-ne-moze-verovati-",
-      "title": "Milanović (SRCE): Starović tvrdi jedno, Vujić kaže drugo, korumpiranoj vlasti se ne može verovati",
-      "url": "https://www.danas.rs/vesti/drustvo/milanovic-srce-starovic-tvrdi-jedno-vujic-kaze-drugo-korumpiranoj-vlasti-se-ne-moze-verovati/",
+      "id": "ecijanske-komisije-priznanje-gresaka-u-pravosudnim-zakonima-",
+      "title": "FBD: Implementacija preporuka Venecijanske komisije priznanje grešaka u pravosudnim zakonima",
+      "url": "https://n1info.rs/vesti/fbd-implementacija-preporuka-venecijanske-komisije-priznanje-gresaka-u-pravosudnim-zakonima/",
       "date": "2026-05-02",
-      "datetime": "2026-05-02T09:21:59+00:00",
-      "time": "09:21",
-      "source": "Danas",
+      "datetime": "2026-05-02T15:03:55+00:00",
+      "time": "15:03",
+      "source": "N1",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
@@ -673,28 +687,14 @@
       "priority": 8
     },
     {
-      "id": "-na-osam-godina-zatvora-opravo-je-vise-od-470-miliona-dolara",
-      "title": "Naslednik Kartijea osuđen na osam godina zatvora: Oprao je više od 470 miliona dolara",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/9984156/naslednik-kartijea-osudjen-na-osam-godina-zatvora-opravo-je-vise-od-470-miliona-dolara",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T09:26:32+00:00",
-      "time": "09:26",
-      "source": "Kurir",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "vreme-com-vesti-madjar-vraca-sto-miliona-forinti-biznismenu-",
-      "title": "Mađar vraća sto miliona forinti biznismenu",
-      "url": "https://vreme.com/vesti/madjar-vraca-sto-miliona-forinti-biznismenu/",
-      "date": "2026-05-02",
-      "datetime": "2026-05-02T05:38:05+00:00",
-      "time": "05:38",
-      "source": "Vreme",
-      "category": "Избори",
+      "id": "lobodnaevropa-org-a-bih-nafta-uvoz-kruh-i-voda-33746102-html",
+      "title": "BiH ne uvozi samo naftu, već i kruh i vodu",
+      "url": "https://www.slobodnaevropa.org/a/bih-nafta-uvoz-kruh-i-voda/33746102.html",
+      "date": "2026-05-01",
+      "datetime": "2026-05-01T12:24:55+00:00",
+      "time": "12:24",
+      "source": "RSE Balkan",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
