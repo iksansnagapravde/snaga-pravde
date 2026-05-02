@@ -1,66 +1,68 @@
 import os
 import re
 import json
-import requests
 import xml.etree.ElementTree as ET
+
+from playwright.sync_api import sync_playwright
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
-# 🔴 OBAVEZNO UBACI SVOJE VREDNOSTI
-TOKEN = "OVDE_USER_TOKEN"
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0",
-    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
-    # 🔴 UBACI IZ DEVTOOLS (Application -> Cookies)
-    "Cookie": "ASP.NET_SessionId=OVDE; .ASPXFORMSAUTH=OVDE"
-}
-
-# TEST IDS (posle širiš)
+# =========================
+# TEST IDS
+# =========================
 def fetch_entity_ids():
     return [675152, 670413, 666041]
 
 # =========================
-# DOWNLOAD
+# DOWNLOAD PREKO BROWSER-A
 # =========================
 def download_document(eid):
     try:
-        url = f"{BASE_URL}/GetDocuments.ashx"
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(accept_downloads=True)
+            page = context.new_page()
 
-        params = {
-            "entityId": eid,
-            "objectMetaId": 2,
-            "documentGroupId": 169,
-            "associationTypeId": 1,
-            "userToken": TOKEN
-        }
+            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
 
-        r = requests.get(url, params=params, headers=HEADERS)
-        content = r.content
+            # čekaj da se učita
+            page.wait_for_timeout(5000)
 
-        # DEBUG (ostavi za sada)
-        print("FIRST BYTES:", content[:80])
+            # 🔴 PRONAĐI DOWNLOAD DUGME (STRELICA)
+            # uzimamo sve linkove koji imaju download
+            links = page.locator("a[href*='GetDocuments']").all()
 
-        # DETEKCIJA TIPA
-        if content.startswith(b"%PDF"):
-            ext = "pdf"
-        elif b"<?xml" in content[:200]:
-            ext = "xml"
-        elif b"<html" in content[:200].lower():
-            print("❌ DOBIO HTML → TOKEN/COOKIE NE VALJA")
+            for link in links:
+                href = link.get_attribute("href") or ""
+
+                if str(eid) in href:
+                    with page.expect_download() as download_info:
+                        link.click()
+
+                    download = download_info.value
+
+                    path = f"documents/{eid}_{download.suggested_filename}"
+                    download.save_as(path)
+
+                    print("DOWNLOADED:", path)
+
+                    browser.close()
+
+                    # detekcija tipa
+                    with open(path, "rb") as f:
+                        head = f.read(200)
+
+                    if head.startswith(b"%PDF"):
+                        return path, "pdf"
+                    elif b"<?xml" in head:
+                        return path, "xml"
+                    else:
+                        return path, "unknown"
+
+            print("❌ NIJE NAĐEN LINK ZA ID")
+            browser.close()
             return None, None
-        else:
-            ext = "unknown"
-
-        path = f"documents/{eid}.{ext}"
-
-        with open(path, "wb") as f:
-            f.write(content)
-
-        print(f"DOWNLOADED {ext.upper()}:", path)
-
-        return path, ext
 
     except Exception as e:
         print("DOWNLOAD ERROR:", e)
@@ -76,7 +78,6 @@ def parse_xml(path):
 
         text = ET.tostring(root, encoding="unicode")
 
-        # izvuci cene
         prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
         prices = [float(p.replace(".", "").replace(",", ".")) for p in prices]
         prices = sorted(set(prices))
