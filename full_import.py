@@ -37,7 +37,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# AUTO FETCH IDS
+# FETCH IDS (STABILNO)
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -47,9 +47,7 @@ def fetch_entity_ids():
         page = browser.new_page()
 
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-        page.wait_for_load_state("networkidle")
-
-        page.wait_for_selector("tr", timeout=15000)
+        page.wait_for_timeout(3000)
 
         rows = page.locator("tr").all()
 
@@ -79,7 +77,7 @@ def download_document(eid):
             page = context.new_page()
 
             page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
-            page.wait_for_load_state("networkidle")
+            page.wait_for_timeout(3000)
 
             rows = page.locator("tr").all()
 
@@ -140,7 +138,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA
+# ANALYSIS HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -157,45 +155,67 @@ def extract_prices(text):
     prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
     return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
 
-def find_winner(text):
-    parts = text.split(".")
-    for i, part in enumerate(parts):
-        if "dodeljuje" in part.lower():
-            for j in range(i, i+3):
-                if j < len(parts):
-                    if "doo" in parts[j].lower():
-                        return parts[j].strip()
-    return None
+def extract_companies(text):
+    companies = re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)
+    return list(set(c.strip() for c in companies))
 
+def extract_company_price_map(text):
+    lines = text.split("\n")
+    mapping = {}
+
+    current_company = None
+
+    for line in lines:
+        line_clean = line.strip()
+
+        company_match = re.search(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", line_clean)
+        if company_match:
+            current_company = company_match.group().strip()
+
+        price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line_clean)
+
+        if current_company and price_match:
+            price = float(price_match.group().replace(".", "").replace(",", "."))
+            mapping[current_company] = price
+
+    return mapping
+
+# =========================
+# ANALYZE (GLAVNI ENGINE)
+# =========================
 def analyze(text):
     text = clean_text(text)
     t = text.lower()
 
-    # =========================
-    # IGNORIŠI OBUSTAVE
-    # =========================
     if is_cancelled(text):
         print("⛔ OBUSTAVLJEN")
         return None
 
-    # =========================
-    # CENE
-    # =========================
     prices = extract_prices(text)
     if not prices:
         return None
 
-    lowest = min(prices)
-    accepted = max(prices)
+    companies = extract_companies(text)
+    company_prices = extract_company_price_map(text)
 
-    # =========================
-    # VIŠE PONUĐAČA
-    # =========================
-    multiple_bidders = len(prices) > 1
+    # fallback ako OCR nije savršen
+    if not company_prices and companies:
+        for i, c in enumerate(companies):
+            if i < len(prices):
+                company_prices[c] = prices[i]
 
-    # =========================
-    # DETEKCIJA ODBIJENIH
-    # =========================
+    if not company_prices:
+        return None
+
+    sorted_bidders = sorted(company_prices.items(), key=lambda x: x[1])
+
+    lowest_company, lowest_price = sorted_bidders[0]
+    winner_company, winner_price = sorted_bidders[-1]
+
+    losers = sorted_bidders[:-1]
+
+    multiple_bidders = len(sorted_bidders) > 1
+
     rejection_keywords = [
         "odbijena ponuda",
         "ponuda se odbija",
@@ -208,43 +228,37 @@ def analyze(text):
 
     rejection_detected = any(k in t for k in rejection_keywords)
 
-    # =========================
-    # SKUPlJI POBEDNIK
-    # =========================
-    suspicious_price = accepted > lowest
+    suspicious_price = winner_price > lowest_price
 
-    # =========================
-    # NAJVAŽNIJE – FILTER
-    # =========================
-    # ✔ čuvamo samo:
-    # - ako je skuplji pobedio
-    # - ili je bio samo jedan ponuđač
     if not (suspicious_price or not multiple_bidders):
         return None
 
-    # =========================
-    # RED FLAG
-    # =========================
     red_flag = (
         (multiple_bidders and suspicious_price) or
         rejection_detected
     )
 
-    # =========================
-    # OUTPUT
-    # =========================
     return {
-        "winner": find_winner(text),
+        "winner": winner_company or "NEPOZNAT",
 
-        "accepted_value": accepted,
-        "lowest_value": lowest,
-        "difference": accepted - lowest,
+        "accepted_value": winner_price,
+        "lowest_value": lowest_price,
+        "difference": winner_price - lowest_price,
 
         "multiple_bidders": multiple_bidders,
         "single_bidder": not multiple_bidders,
 
-        "rejection_detected": rejection_detected,
+        "losers": [
+            {"company": c, "price": p}
+            for c, p in losers
+        ],
 
+        "all_bidders": [
+            {"company": c, "price": p}
+            for c, p in sorted_bidders
+        ],
+
+        "rejection_detected": rejection_detected,
         "suspicious_price": suspicious_price,
         "red_flag": red_flag,
 
@@ -259,6 +273,10 @@ def main():
 
     for eid in fetch_entity_ids():
         print("\nPROCESS:", eid)
+
+        if already_processed(eid):
+            print("SKIP (already)")
+            continue
 
         path, ext = download_document(eid)
 
