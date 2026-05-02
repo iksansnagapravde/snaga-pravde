@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 1434497.0,
+    "difference": 1565503.0,
+    "suspicious": true,
+    "id": 103749810
+  },
+  {
+    "winner": null,
+    "accepted": 87318.0,
+    "lowest": 0.0,
+    "difference": 87318.0,
+    "suspicious": true,
+    "id": 100259155
+  },
+  {
+    "winner": null,
+    "accepted": 42000000.0,
+    "lowest": 48200.0,
+    "difference": 41951800.0,
+    "suspicious": true,
+    "id": 100143422
+  },
+  {
+    "winner": null,
+    "accepted": 5957520.0,
+    "lowest": 4964600.0,
+    "difference": 992920.0,
+    "suspicious": true,
+    "id": 102547430
+  }
+]
