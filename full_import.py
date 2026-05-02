@@ -169,11 +169,18 @@ def find_winner(text):
 
 def analyze(text):
     text = clean_text(text)
+    t = text.lower()
 
+    # =========================
+    # IGNORIŠI OBUSTAVE
+    # =========================
     if is_cancelled(text):
         print("⛔ OBUSTAVLJEN")
         return None
 
+    # =========================
+    # CENE
+    # =========================
     prices = extract_prices(text)
     if not prices:
         return None
@@ -181,12 +188,67 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
+    # =========================
+    # VIŠE PONUĐAČA
+    # =========================
+    multiple_bidders = len(prices) > 1
+
+    # =========================
+    # DETEKCIJA ODBIJENIH
+    # =========================
+    rejection_keywords = [
+        "odbijena ponuda",
+        "ponuda se odbija",
+        "neprihvatljiva",
+        "nije prihvatljiva",
+        "nije moguće utvrditi",
+        "ne ispunjava uslove",
+        "odbijaju se ponude"
+    ]
+
+    rejection_detected = any(k in t for k in rejection_keywords)
+
+    # =========================
+    # SKUPlJI POBEDNIK
+    # =========================
+    suspicious_price = accepted > lowest
+
+    # =========================
+    # NAJVAŽNIJE – FILTER
+    # =========================
+    # ✔ čuvamo samo:
+    # - ako je skuplji pobedio
+    # - ili je bio samo jedan ponuđač
+    if not (suspicious_price or not multiple_bidders):
+        return None
+
+    # =========================
+    # RED FLAG
+    # =========================
+    red_flag = (
+        (multiple_bidders and suspicious_price) or
+        rejection_detected
+    )
+
+    # =========================
+    # OUTPUT
+    # =========================
     return {
         "winner": find_winner(text),
-        "accepted": accepted,
-        "lowest": lowest,
+
+        "accepted_value": accepted,
+        "lowest_value": lowest,
         "difference": accepted - lowest,
-        "suspicious": accepted > lowest
+
+        "multiple_bidders": multiple_bidders,
+        "single_bidder": not multiple_bidders,
+
+        "rejection_detected": rejection_detected,
+
+        "suspicious_price": suspicious_price,
+        "red_flag": red_flag,
+
+        "priority": "HIGH" if red_flag else "MEDIUM"
     }
 
 # =========================
