@@ -49,20 +49,33 @@ def fetch_entity_ids():
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
 
-        page.wait_for_selector("tr", timeout=15000)
+        # 🔥 PROLAZIMO 5 STRANICA
+        for page_num in range(1, 6):
 
-        rows = page.locator("tr").all()
+            print(f"PAGE: {page_num}")
 
-        for row in rows:
-            text = row.inner_text()
+            page.wait_for_selector("tr", timeout=15000)
 
-            match = re.search(r"\b\d{6,}\b", text)
-            if match:
-                eid = int(match.group())
+            rows = page.locator("tr").all()
 
-                # 🔥 SAMO NOVI
-                if not already_processed(eid):
-                    ids.append(eid)
+            for row in rows:
+                text = row.inner_text()
+
+                match = re.search(r"\b\d{6,}\b", text)
+                if match:
+                    eid = int(match.group())
+
+                    if not already_processed(eid):
+                        ids.append(eid)
+
+            # 🔥 klik na sledeću stranicu
+            next_button = page.locator("text=Sledeća").first
+
+            if next_button.is_visible():
+                next_button.click()
+                page.wait_for_load_state("networkidle")
+            else:
+                break
 
         browser.close()
 
