@@ -185,6 +185,8 @@ def extract_winner_robust(text):
 # ANALYZE
 # =========================
 def analyze(text):
+    original_text = text  # 🔥 SAČUVAJ ORIGINAL
+
     text = clean_text(text)
 
     if is_cancelled(text):
@@ -198,8 +200,8 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    # 🔥 SAMO OVO JE DODATO
-    winner = extract_winner_robust(text) or find_winner(text)
+    # 🔥 KLJUČ: koristi ORIGINAL za winner
+    winner = extract_winner_robust(original_text) or find_winner(text)
 
     return {
         "winner": winner,
@@ -208,7 +210,6 @@ def analyze(text):
         "difference": accepted - lowest,
         "suspicious": accepted > lowest
     }
-
 # =========================
 # MAIN
 # =========================
