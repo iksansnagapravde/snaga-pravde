@@ -136,7 +136,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA – HELPERS
+# HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -164,7 +164,7 @@ def find_winner(text):
     return None
 
 # =========================
-# 🔥 NOVO – ROBUST WINNER
+# 🔥 ROBUST (OCR SAFE)
 # =========================
 def extract_winner_robust(text):
     lines = text.split("\n")
@@ -172,7 +172,7 @@ def extract_winner_robust(text):
     for i, line in enumerate(lines):
         l = line.lower()
 
-        if "dodelj" in l or "dodjelj" in l or "ugovor" in l:
+        if "dodelj" in l or "ugovor" in l:
             for j in range(i+1, min(i+6, len(lines))):
                 candidate = lines[j].strip()
 
@@ -182,11 +182,29 @@ def extract_winner_robust(text):
     return None
 
 # =========================
+# 🔥 FINAL FALLBACK (NAJVAŽNIJE)
+# =========================
+def extract_winner_fallback(text):
+    lines = text.split("\n")
+
+    candidates = []
+
+    for line in lines:
+        l = line.strip()
+
+        if len(l) > 15 and not any(x in l.lower() for x in ["rsd", "broj", "datum"]):
+            candidates.append(l)
+
+    if candidates:
+        return max(candidates, key=len)
+
+    return None
+
+# =========================
 # ANALYZE
 # =========================
 def analyze(text):
-    original_text = text  # 🔥 SAČUVAJ ORIGINAL
-
+    original_text = text
     text = clean_text(text)
 
     if is_cancelled(text):
@@ -200,8 +218,12 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
-    # 🔥 KLJUČ: koristi ORIGINAL za winner
-    winner = extract_winner_robust(original_text) or find_winner(text)
+    # 🔥 FINAL WINNER LOGIKA
+    winner = (
+        extract_winner_robust(original_text)
+        or find_winner(text)
+        or extract_winner_fallback(original_text)
+    )
 
     return {
         "winner": winner,
@@ -210,6 +232,7 @@ def analyze(text):
         "difference": accepted - lowest,
         "suspicious": accepted > lowest
     }
+
 # =========================
 # MAIN
 # =========================
