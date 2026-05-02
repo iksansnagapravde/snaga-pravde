@@ -1,14 +1,18 @@
 [
   {
-    "id": 675152,
-    "note": "PDF - parser ide kasnije"
+    "winner": null,
+    "accepted": 42000000.0,
+    "lowest": 48200.0,
+    "difference": 41951800.0,
+    "suspicious": true,
+    "id": 675152
   },
   {
-    "id": 670413,
-    "note": "PDF - parser ide kasnije"
-  },
-  {
-    "id": 666041,
-    "note": "PDF - parser ide kasnije"
+    "winner": null,
+    "accepted": 5957520.0,
+    "lowest": 4964600.0,
+    "difference": 992920.0,
+    "suspicious": true,
+    "id": 670413
   }
 ]
