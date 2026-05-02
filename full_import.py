@@ -198,10 +198,6 @@ def main():
     for eid in fetch_entity_ids():
         print("\nPROCESS:", eid)
 
-        if already_processed(eid):
-            print("SKIP (already)")
-            continue
-
         path, ext = download_document(eid)
 
         if not path:
