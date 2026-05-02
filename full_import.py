@@ -39,6 +39,8 @@ def mark_processed(eid):
 # =========================
 # FETCH 70 TENDERA (JEDINA IZMENA)
 # =========================
+# (ceo tvoj kod isti do fetch funkcije...)
+
 def fetch_entity_ids():
     ids = []
 
@@ -49,14 +51,14 @@ def fetch_entity_ids():
         page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
 
-        # 👉 koliko stranica da prođe (svaka ~10-20 tendera)
         for page_num in range(1, 8):  # ~70 tendera
 
             print(f"PAGE: {page_num}")
 
-            page.wait_for_selector("tr", timeout=15000)
+            # ✅ KLJUČNO — samo pravi redovi
+            page.wait_for_selector("tr.dx-row", timeout=15000)
 
-            rows = page.locator("tr").all()
+            rows = page.locator("tr.dx-row").all()
 
             for row in rows:
                 text = row.inner_text()
@@ -68,12 +70,15 @@ def fetch_entity_ids():
             ids = list(dict.fromkeys(ids))
             print(f"Collected: {len(ids)}")
 
-            # 👉 klik na sledeći broj stranice
+            # sledeća stranica
             next_page = page.locator(f"text={page_num + 1}").first
 
-            if next_page.is_visible():
+            if next_page.count() > 0:
                 next_page.click()
-                page.wait_for_load_state("networkidle")
+
+                # ✅ stabilno čekanje (NE networkidle)
+                page.wait_for_timeout(1500)
+                page.wait_for_selector("tr.dx-row", timeout=15000)
             else:
                 print("Nema više stranica")
                 break
