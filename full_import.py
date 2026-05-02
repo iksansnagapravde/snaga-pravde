@@ -142,7 +142,6 @@ def read_pdf(path):
 # =========================
 # ANALIZA
 # =========================
-
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
 
@@ -168,36 +167,6 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
-# =========================
-# NOVO: DETEKCIJA ODBIJENIH
-# =========================
-
-REJECTION_PATTERNS = [
-    "odbijena ponuda",
-    "ponuda se odbija",
-    "neprihvatljiva",
-    "nije prihvatljiva",
-    "nije dostavio",
-    "ne ispunjava uslove",
-    "odbijaju se ponude"
-]
-
-def detect_rejections(text):
-    t = text.lower()
-    return [p for p in REJECTION_PATTERNS if p in t]
-
-# =========================
-# NOVO: DETEKCIJA FIRMI
-# =========================
-
-def extract_companies(text):
-    companies = re.findall(r"[A-ZČĆŠĐŽ][A-ZČĆŠĐŽa-z0-9\s\.\-]{3,}(?:doo|d\.o\.o\.)", text, re.IGNORECASE)
-    return list(set(companies))
-
-# =========================
-# GLAVNA ANALIZA (UNAPREĐENA)
-# =========================
-
 def analyze(text):
     text = clean_text(text)
 
@@ -210,44 +179,14 @@ def analyze(text):
         return None
 
     lowest = min(prices)
-    highest = max(prices)
-
-    winner = find_winner(text)
-
-    # NOVO
-    rejections = detect_rejections(text)
-    companies = extract_companies(text)
-
-    multiple_bidders = len(prices) > 1 or len(companies) > 1
-    suspicious_price = highest > lowest
+    accepted = max(prices)
 
     return {
-        "winner": winner,
-        "accepted": highest,
+        "winner": find_winner(text),
+        "accepted": accepted,
         "lowest": lowest,
-        "difference": highest - lowest,
-        "suspicious": suspicious_price,
-
-        # 🔥 NOVO
-        "prices": prices,
-        "companies": companies,
-        "num_prices": len(prices),
-        "num_companies": len(companies),
-
-        "multiple_bidders": multiple_bidders,
-
-        "rejections_detected": len(rejections) > 0,
-        "rejection_keywords": rejections,
-
-        # 🔥 GLAVNI SIGNAL
-        "red_flag": multiple_bidders and suspicious_price,
-
-        # PRIORITET
-        "priority": (
-            "HIGH"
-            if (len(rejections) > 0 or suspicious_price)
-            else "NORMAL"
-        )
+        "difference": accepted - lowest,
+        "suspicious": accepted > lowest
     }
 
 # =========================
