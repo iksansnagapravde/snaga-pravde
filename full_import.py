@@ -7,43 +7,49 @@ import xml.etree.ElementTree as ET
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
-# 🔥 UBACI SVOJ TOKEN OVDE
-TOKEN = "OVDE_STAVI_TOKEN"
+# 🔴 OBAVEZNO UBACI SVOJE VREDNOSTI
+TOKEN = "OVDE_USER_TOKEN"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
-    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora"
+    "Referer": "https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora",
+    # 🔴 UBACI IZ DEVTOOLS (Application -> Cookies)
+    "Cookie": "ASP.NET_SessionId=OVDE; .ASPXFORMSAUTH=OVDE"
 }
 
-# =========================
 # TEST IDS (posle širiš)
-# =========================
 def fetch_entity_ids():
     return [675152, 670413, 666041]
 
 # =========================
-# DOWNLOAD DOKUMENTA
+# DOWNLOAD
 # =========================
 def download_document(eid):
     try:
-        url = f"https://jnportal.ujn.gov.rs/GetDocuments.ashx"
+        url = f"{BASE_URL}/GetDocuments.ashx"
 
         params = {
             "entityId": eid,
             "objectMetaId": 2,
-            "documentGroupId": 168,
+            "documentGroupId": 169,
             "associationTypeId": 1,
             "userToken": TOKEN
         }
 
         r = requests.get(url, params=params, headers=HEADERS)
-
         content = r.content
 
+        # DEBUG (ostavi za sada)
+        print("FIRST BYTES:", content[:80])
+
+        # DETEKCIJA TIPA
         if content.startswith(b"%PDF"):
             ext = "pdf"
         elif b"<?xml" in content[:200]:
             ext = "xml"
+        elif b"<html" in content[:200].lower():
+            print("❌ DOBIO HTML → TOKEN/COOKIE NE VALJA")
+            return None, None
         else:
             ext = "unknown"
 
@@ -61,7 +67,7 @@ def download_document(eid):
         return None, None
 
 # =========================
-# XML PARSER (GLAVNI)
+# XML PARSER
 # =========================
 def parse_xml(path):
     try:
@@ -70,15 +76,10 @@ def parse_xml(path):
 
         text = ET.tostring(root, encoding="unicode")
 
-        # izvuci sve cene
+        # izvuci cene
         prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
         prices = [float(p.replace(".", "").replace(",", ".")) for p in prices]
         prices = sorted(set(prices))
-
-        # firme
-        companies = re.findall(r"[A-ZČĆŠĐŽ][A-Za-zČĆŠĐŽčćšđž\s\-]+(доо|a\.d\.)", text)
-
-        winner = companies[0] if companies else None
 
         if not prices:
             return None
@@ -88,7 +89,6 @@ def parse_xml(path):
         second = prices[1] if len(prices) > 1 else None
 
         return {
-            "winner": winner,
             "accepted": accepted,
             "lowest": lowest,
             "second": second,
@@ -105,30 +105,31 @@ def parse_xml(path):
 # =========================
 def main():
     ids = fetch_entity_ids()
-    output = []
+    results = []
 
     for eid in ids:
         print("\nPROCESS:", eid)
 
-        path, doc_type = download_document(eid)
+        path, ext = download_document(eid)
 
         if not path:
             continue
 
-        if doc_type != "xml":
-            print("SKIP NON XML")
-            continue
+        if ext == "xml":
+            data = parse_xml(path)
+        else:
+            data = {
+                "note": "PDF - parser ide kasnije"
+            }
 
-        result = parse_xml(path)
-
-        if result:
-            output.append({
+        if data:
+            results.append({
                 "id": eid,
-                **result
+                **data
             })
 
     with open("tenders.json", "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+        json.dump(results, f, indent=2, ensure_ascii=False)
 
     print("\nDONE")
 
