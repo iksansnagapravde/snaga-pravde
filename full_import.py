@@ -8,11 +8,17 @@ from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
 
-# 🔥 SAFE AI IMPORT
+# =========================
+# SAFE AI
+# =========================
+AI_ENABLED = False
+client = None
+
 try:
     from openai import OpenAI
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-    AI_ENABLED = True
+    if os.getenv("OPENAI_API_KEY"):
+        client = OpenAI()
+        AI_ENABLED = True
 except:
     AI_ENABLED = False
 
@@ -32,9 +38,6 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
-# =========================
-# PROCESSED
-# =========================
 def already_processed(eid):
     c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
@@ -42,80 +45,6 @@ def already_processed(eid):
 def mark_processed(eid):
     c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
     conn.commit()
-
-# =========================
-# FETCH IDS
-# =========================
-def fetch_entity_ids():
-    ids = []
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-
-        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
-        page.wait_for_load_state("networkidle")
-        page.wait_for_selector("tr")
-
-        rows = page.locator("tr").all()
-
-        for row in rows:
-            text = row.inner_text()
-            match = re.search(r"\b\d{6,}\b", text)
-            if match:
-                ids.append(int(match.group()))
-
-        browser.close()
-
-    return list(dict.fromkeys(ids))[:10]
-
-# =========================
-# DOWNLOAD
-# =========================
-def download_document(eid):
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(accept_downloads=True)
-            page = context.new_page()
-
-            page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
-            page.wait_for_load_state("networkidle")
-
-            rows = page.locator("tr").all()
-
-            for row in rows:
-                if str(eid) in row.inner_text():
-
-                    button = row.locator("a, button").first
-
-                    with page.expect_download(timeout=15000) as download_info:
-                        button.click()
-
-                    download = download_info.value
-                    path = f"documents/{eid}_{download.suggested_filename}"
-                    download.save_as(path)
-
-                    with open(path, "rb") as f:
-                        head = f.read(200)
-
-                    browser.close()
-
-                    if head.startswith(b"%PDF"):
-                        return path, "pdf"
-                    elif b"<?xml" in head:
-                        return path, "xml"
-                    elif path.endswith(".docx"):
-                        return path, "docx"
-                    else:
-                        return path, "unknown"
-
-            browser.close()
-            return None, None
-
-    except Exception as e:
-        print("DOWNLOAD ERROR:", e)
-        return None, None
 
 # =========================
 # READERS
@@ -157,9 +86,6 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
-# =========================
-# ANALYZE (STABILNO)
-# =========================
 def analyze(text):
     text = clean_text(text)
 
@@ -179,85 +105,92 @@ def analyze(text):
     }
 
 # =========================
-# 🔥 AI (SAFE)
+# AI (SAFE)
 # =========================
 def ai_enhance(text):
-    if not AI_ENABLED:
+    if not AI_ENABLED or not client:
         return None
-
     try:
         res = client.chat.completions.create(
             model="gpt-4o-mini",
-            messages=[
-                {
-                    "role": "user",
-                    "content": f"""
-Izvuci:
-- sve firme
-- pobednika
-- sve cene
-
-Vrati JSON.
-
-{text[:8000]}
-"""
-                }
-            ],
+            messages=[{"role": "user", "content": text[:6000]}],
             temperature=0
         )
-
         return res.choices[0].message.content
-
     except Exception as e:
         print("AI FAIL:", e)
         return None
 
 # =========================
-# MAIN
+# MAIN (KLJUČ)
 # =========================
 def main():
     results = []
 
-    for eid in fetch_entity_ids():
-        print("PROCESS:", eid)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(accept_downloads=True)
+        page = context.new_page()
 
-        if already_processed(eid):
-            continue
+        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
+        page.wait_for_load_state("networkidle")
+        page.wait_for_selector("tr")
 
-        path, ext = download_document(eid)
-        if not path:
-            continue
+        rows = page.locator("tr").all()
 
-        if ext == "docx":
-            text = read_docx(path)
-        elif ext == "pdf":
-            text = read_pdf(path)
-        elif ext == "xml":
-            text = open(path, encoding="utf-8", errors="ignore").read()
-        else:
-            continue
+        for row in rows[:10]:
+            text_row = row.inner_text()
+            match = re.search(r"\b\d{6,}\b", text_row)
+            if not match:
+                continue
 
-        data = analyze(text)
+            eid = int(match.group())
+            print("PROCESS:", eid)
 
-        if data:
-            # 🔥 AI samo ako ima smisla
-            if data["suspicious"]:
-                ai = ai_enhance(text)
-                if ai:
-                    data["ai"] = ai
+            if already_processed(eid):
+                continue
 
-            data["id"] = eid
-            results.append(data)
+            try:
+                with page.expect_download(timeout=15000) as d:
+                    row.locator("a, button").first.click()
 
-        mark_processed(eid)
+                download = d.value
+                path = f"documents/{eid}_{download.suggested_filename}"
+                download.save_as(path)
+
+                with open(path, "rb") as f:
+                    head = f.read(200)
+
+                if head.startswith(b"%PDF"):
+                    text = read_pdf(path)
+                elif path.endswith(".docx"):
+                    text = read_docx(path)
+                else:
+                    continue
+
+                data = analyze(text)
+
+                if data:
+                    if data["suspicious"]:
+                        ai = ai_enhance(text)
+                        if ai:
+                            data["ai"] = ai
+
+                    data["id"] = eid
+                    results.append(data)
+
+                mark_processed(eid)
+
+            except Exception as e:
+                print("ROW ERROR:", e)
+                continue
+
+        browser.close()
 
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
     print("DONE")
-
-if __name__ == "__main__":
-    main()
 
 if __name__ == "__main__":
     main()
