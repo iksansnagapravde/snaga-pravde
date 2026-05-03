@@ -161,16 +161,34 @@ def extract_prices(text):
     return sorted(set(prices))
 
 def find_winner(text):
-    parts = text.split(".")
-    for i, part in enumerate(parts):
-        if "dodeljuje" in part.lower():
-            for j in range(i, i+3):
-                if j < len(parts):
-                    if "doo" in parts[j].lower():
-                        return parts[j].strip()
-    return None
+    lines = text.split("\n")
+
+    # 1. traži ključne fraze + firmu blizu
+    for i, line in enumerate(lines):
+        l = line.lower()
+
+        if any(k in l for k in [
+            "dodeljuje",
+            "dodela ugovora",
+            "izabrana ponuda",
+            "ponuđač kome se",
+            "ugovor se dodeljuje"
+        ]):
+            for j in range(i, min(i+6, len(lines))):
+                if "doo" in lines[j].lower():
+                    return lines[j].strip()
+
+    # 2. fallback – uzmi prvu firmu u dokumentu
+    for line in lines:
+        if "doo" in line.lower():
+            return line.strip()
+
+    return "Nepoznato"
+
 
 def detect_rejection_reasons(text):
+    t = text.lower()
+
     patterns = [
         "neprihvatljiva ponuda",
         "ponuda se odbija",
@@ -178,9 +196,18 @@ def detect_rejection_reasons(text):
         "ne ispunjava uslove",
         "diskvalifikovan",
         "nije dostavio",
-        "ne odgovara"
+        "ne odgovara",
+        "odbijena ponuda",
+        "nevažeća ponuda"
     ]
-    return [p for p in patterns if p in text.lower()]
+
+    found = []
+
+    for p in patterns:
+        if p in t:
+            found.append(p)
+
+    return found
 
 # =========================
 # ANALYZE
