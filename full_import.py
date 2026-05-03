@@ -12,11 +12,6 @@ BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
 # =========================
-# AI SAFE FLAG
-# =========================
-AI_ENABLED = bool(os.getenv("OPENAI_API_KEY"))
-
-# =========================
 # DATABASE
 # =========================
 conn = sqlite3.connect("contracts.db")
@@ -96,31 +91,6 @@ def analyze(text):
     }
 
 # =========================
-# AI (SAFE)
-# =========================
-def ai_enhance(text):
-    if not AI_ENABLED:
-        return None
-
-    try:
-        from openai import OpenAI
-        client = OpenAI()
-
-        res = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "user", "content": text[:6000]}
-            ],
-            temperature=0
-        )
-
-        return res.choices[0].message.content
-
-    except Exception as e:
-        print("AI FAIL:", e)
-        return None
-
-# =========================
 # MAIN
 # =========================
 def main():
@@ -157,7 +127,6 @@ def main():
                 path = f"documents/{eid}_{download.suggested_filename}"
                 download.save_as(path)
 
-                # tip fajla
                 with open(path, "rb") as f:
                     head = f.read(200)
 
@@ -171,11 +140,6 @@ def main():
                 data = analyze(text)
 
                 if data:
-                    if data["suspicious"]:
-                        ai = ai_enhance(text)
-                        if ai:
-                            data["ai"] = ai
-
                     data["id"] = eid
                     results.append(data)
 
