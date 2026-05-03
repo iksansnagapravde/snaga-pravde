@@ -3,7 +3,7 @@ name: Tender Monitor Import
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"   # 🔥 svakih 5 minuta
+    - cron: "*/5 * * * *"   # svakih 5 minuta
 
 permissions:
   contents: write
@@ -18,6 +18,9 @@ jobs:
 
     steps:
 
+      # =========================
+      # CHECKOUT
+      # =========================
       - name: Checkout repo
         uses: actions/checkout@v4
 
@@ -29,14 +32,16 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
 
-      # Playwright dependencies
+      # =========================
+      # PLAYWRIGHT SYSTEM DEPS
+      # =========================
       - name: Install Playwright system deps
         run: |
           sudo apt-get install -y \
             libnss3 \
             libatk-bridge2.0-0 \
             libxss1 \
-            libasound2t64 \
+            libasound2 \
             libgtk-3-0 \
             libgbm1 \
             libxshmfence1
@@ -49,10 +54,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Python deps
+      - name: Install Python dependencies
         run: |
           pip install --upgrade pip
-          pip install playwright pdf2image pytesseract python-docx
+          pip install playwright pdf2image pytesseract python-docx openai
 
       # =========================
       # PLAYWRIGHT
@@ -65,6 +70,8 @@ jobs:
       # RUN SCRIPT
       # =========================
       - name: Run script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python full_import.py
 
       # =========================
