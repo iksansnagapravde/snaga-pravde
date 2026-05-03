@@ -25,9 +25,6 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
-# =========================
-# PROCESSED
-# =========================
 def already_processed(eid):
     c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
@@ -37,7 +34,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# AUTO FETCH IDS
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -46,7 +43,7 @@ def fetch_entity_ids():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
         page.wait_for_selector("tr", timeout=15000)
 
@@ -74,7 +71,7 @@ def download_document(eid):
             context = browser.new_context(accept_downloads=True)
             page = context.new_page()
 
-            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+            page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
             page.wait_for_load_state("networkidle")
 
             rows = page.locator("tr").all()
@@ -107,7 +104,6 @@ def download_document(eid):
                     else:
                         return path, "unknown"
 
-            print("❌ ID NIJE NAĐEN:", eid)
             browser.close()
             return None, None
 
@@ -130,13 +126,13 @@ def read_pdf(path):
     try:
         images = convert_from_path(path, dpi=300)
         for img in images:
-            text += pytesseract.image_to_string(img)
+            text += pytesseract.image_to_string(img, lang="srp+eng")
     except:
         pass
     return text
 
 # =========================
-# ANALIZA – HELPERS
+# ANALYZE HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -150,8 +146,19 @@ def is_cancelled(text):
     ])
 
 def extract_prices(text):
-    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-    return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
+    matches = re.findall(r"\d{1,3}(?:[.\s]\d{3})*(?:,\d{2})?", text)
+
+    prices = []
+    for m in matches:
+        clean = m.replace(" ", "").replace(".", "").replace(",", ".")
+        try:
+            val = float(clean)
+            if val > 1000:
+                prices.append(val)
+        except:
+            pass
+
+    return sorted(set(prices))
 
 def find_winner(text):
     parts = text.split(".")
@@ -163,41 +170,6 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
-# =========================
-# 🔥 NOVO – FIRME
-# =========================
-def extract_companies(text):
-    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
-
-# =========================
-# 🔥 NOVO – KONKURENCIJA
-# =========================
-def detect_competition(text):
-    lines = text.split("\n")
-
-    companies = []
-    prices = []
-
-    for line in lines:
-        if "doo" in line.lower():
-            companies.append(line.strip())
-
-        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-        if match:
-            for m in match:
-                prices.append(float(m.replace(".", "").replace(",", ".")))
-
-    companies = list(dict.fromkeys(companies))
-    prices = sorted(list(set(prices)))
-
-    return {
-        "companies": companies,
-        "prices": prices
-    }
-
-# =========================
-# 🔥 NOVO – RAZLOZI ODBIJANJA
-# =========================
 def detect_rejection_reasons(text):
     patterns = [
         "neprihvatljiva ponuda",
@@ -208,66 +180,35 @@ def detect_rejection_reasons(text):
         "nije dostavio",
         "ne odgovara"
     ]
-
-    found = []
-    t = text.lower()
-
-    for p in patterns:
-        if p in t:
-            found.append(p)
-
-    return found
+    return [p for p in patterns if p in text.lower()]
 
 # =========================
-# ANALYZE (GLAVNA LOGIKA)
+# ANALYZE
 # =========================
 def analyze(text):
     text = clean_text(text)
 
     if is_cancelled(text):
-        print("⛔ OBUSTAVLJEN")
         return None
 
     prices = extract_prices(text)
-    if not prices:
+    if len(prices) < 2:
         return None
 
     lowest = min(prices)
     accepted = max(prices)
-
-    competition = detect_competition(text)
-    companies = extract_companies(text)
     reasons = detect_rejection_reasons(text)
 
-    broj_ponudjaca = len(competition["companies"]) if competition else 0
+    status = "ok"
 
-    status = "nepoznato"
-
-    if broj_ponudjaca == 1:
-        status = "jedan_ponudjac"
-
-    elif broj_ponudjaca > 1:
-        if accepted == lowest:
-            status = "najjeftiniji_pobedio"
-        elif accepted > lowest:
-            if reasons:
-                status = "skuplji_pobedio_ali_objasnjeno"
-            else:
-                status = "SUMNJIVO"
+    if accepted > lowest:
+        status = "SUMNJIVO" if not reasons else "objasnjeno"
 
     return {
         "winner": find_winner(text),
-
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
-
-        "companies": companies,
-        "competition": competition,
-
-        "broj_ponudjaca": broj_ponudjaca,
-        "razlozi_odbijanja": reasons,
-
         "status": status,
         "suspicious": accepted > lowest
     }
@@ -282,7 +223,6 @@ def main():
         print("\nPROCESS:", eid)
 
         path, ext = download_document(eid)
-
         if not path:
             continue
 
@@ -303,8 +243,51 @@ def main():
 
         mark_processed(eid)
 
-    with open("tenders.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+    # =========================
+    # STATS + LOSS
+    # =========================
+    total_value = 0
+    total_loss = 0
+    count = 0
+    prices = []
+
+    for r in results:
+        accepted = r["accepted"]
+        lowest = r["lowest"]
+
+        total_value += accepted
+        total_loss += (accepted - lowest)
+        prices.append(accepted)
+        count += 1
+
+    median = sorted(prices)[len(prices)//2] if prices else 0
+
+    stats = {
+        "broj_tendera": count,
+        "ukupna_vrednost": f"{int(total_value)} RSD",
+        "ukupna_vrednost_eur": f"{int(total_value/117.2)} EUR",
+        "broj_ugovora": count,
+        "ugovorena_vrednost": f"{int(total_value)} RSD",
+        "ugovorena_vrednost_eur": f"{int(total_value/117.2)} EUR"
+    }
+
+    loss = {
+        "najbolja_ponuda": f"{int(min(prices)) if prices else 0} RSD",
+        "srednja_ponuda": f"{int(median)} RSD",
+        "prihvacena_ponuda": f"{int(max(prices)) if prices else 0} RSD",
+        "gubitak_prema_najboljoj": f"{int(total_loss)} RSD",
+        "gubitak_prema_srednjoj": f"{int(total_loss - median)} RSD",
+        "broj_analiziranih": count
+    }
+
+    with open("tenders.json", "w") as f:
+        json.dump(results, f, indent=2)
+
+    with open("stats.json", "w") as f:
+        json.dump(stats, f, indent=2)
+
+    with open("loss-data.json", "w") as f:
+        json.dump(loss, f, indent=2)
 
     print("DONE")
 
