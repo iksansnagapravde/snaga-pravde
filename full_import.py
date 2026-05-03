@@ -223,31 +223,28 @@ def extract_prices(text):
 
 
 def find_winner(text):
-    parts = re.split(r"[.\n]", text)
+    text = text.replace("\n", " ")
 
-    company_patterns = [
-        "doo",
-        "d.o.o",
-        "d.o.o.",
-        "ad",
-        "a.d",
-        "a.d.",
-        "preduzetnik",
-        "pr",
-        "javno preduzeće",
-        "jp"
-    ]
+    # traži rečenice gde se dodeljuje ugovor
+    sentences = re.split(r"[.]", text)
 
-    for i, part in enumerate(parts):
-        if "dodeljuje" in part.lower() or "ugovor se dodeljuje" in part.lower():
-            for j in range(i, min(i + 5, len(parts))):
-                chunk = parts[j].strip()
-                low = chunk.lower()
+    for s in sentences:
+        s_low = s.lower()
 
-                if any(p in low for p in company_patterns):
-                    return chunk
+        if "dodeljuje" in s_low or "ugovor se dodeljuje" in s_low:
 
-            return part.strip()
+            # pokušaj da izvučeš firmu (DOO, AD, itd)
+            match = re.search(
+                r"([A-ZČĆŽŠĐ][A-Za-zČĆŽŠĐčćžšđ0-9\s\-\.\,]{3,}?(doo|d\.o\.o\.|ad|a\.d\.|pr|preduzetnik))",
+                s,
+                re.IGNORECASE
+            )
+
+            if match:
+                return match.group(1).strip()
+
+            # fallback — vrati celu rečenicu
+            return s.strip()
 
     return None
 
