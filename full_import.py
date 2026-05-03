@@ -354,10 +354,6 @@ def main():
         for eid in ids:
             print("\nPROCESS:", eid)
 
-            if already_processed(eid):
-                print("SKIP - already processed:", eid)
-                continue
-
             path, ext = download_document(page, eid)
 
             if not path:
