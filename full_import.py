@@ -11,9 +11,6 @@ import pytesseract
 
 import openai
 
-# =========================
-# CONFIG
-# =========================
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
@@ -142,24 +139,24 @@ def read_xml(path):
         return ""
 
 # =========================
-# AI ANALYSIS
+# AI ANALYSIS (GOTOVO)
 # =========================
 def analyze_with_ai(text):
     try:
         prompt = f"""
-Analiziraj dokument javne nabavke.
+Analiziraj dokument javne nabavke iz Srbije.
 
-Izvuci sve dodele ugovora.
+Vrati JSON niz svih ponuđača.
 
-Za svaku dodelu vrati:
+Za svakog ponuđača vrati:
 - firma
 - cena_bez_pdv
 - cena_sa_pdv
 - status (validna ili odbijena)
-- partija (ako postoji, inače null)
 
-Ako postoji samo jedan ponuđač označi:
-"jedan_ponudjac": true
+Posebno označi:
+- pobednika ("pobednik": true)
+- ako postoji samo jedan ponuđač ("jedan_ponudjac": true)
 
 Vrati ISKLJUČIVO JSON niz.
 
@@ -184,15 +181,36 @@ TEKST:
 # =========================
 # DETECTION
 # =========================
-def detect_anomalies(results):
-    anomalies = []
+def detect_anomalies(data):
+    results = []
 
-    for r in results:
-        if r.get("jedan_ponudjac"):
-            r["flag"] = "jedan_ponudjac"
-            anomalies.append(r)
+    if not data:
+        return results
 
-    return anomalies
+    # jedan ponudjac
+    if any(p.get("jedan_ponudjac") for p in data):
+        for p in data:
+            p["flag"] = "jedan_ponudjac"
+            results.append(p)
+        return results
+
+    valid = [p for p in data if p.get("status") == "validna"]
+
+    if len(valid) < 2:
+        return results
+
+    winner = next((p for p in valid if p.get("pobednik")), None)
+    lowest = min(valid, key=lambda x: x.get("cena_bez_pdv", 0))
+
+    if winner and winner != lowest:
+        results.append({
+            "winner": winner,
+            "lowest": lowest,
+            "difference": winner["cena_bez_pdv"] - lowest["cena_bez_pdv"],
+            "flag": "skuplji_pobedio"
+        })
+
+    return results
 
 # =========================
 # MAIN
@@ -220,7 +238,6 @@ def main():
             continue
 
         if not text:
-            print("NO TEXT")
             continue
 
         ai_data = analyze_with_ai(text)
