@@ -9,12 +9,9 @@ from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
 
-from openai import OpenAI
+import openai
 
-# =========================
-# CONFIG
-# =========================
-client = OpenAI(api_key="YOUR_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
@@ -64,8 +61,7 @@ def fetch_entity_ids():
 
         browser.close()
 
-    ids = list(dict.fromkeys(ids))
-    return ids[:20]  # povećano na 20
+    return list(dict.fromkeys(ids))[:20]
 
 # =========================
 # DOWNLOAD
@@ -77,14 +73,13 @@ def download_document(eid):
             context = browser.new_context(accept_downloads=True)
             page = context.new_page()
 
-            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+            page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
             page.wait_for_load_state("networkidle")
 
             rows = page.locator("tr").all()
 
             for row in rows:
                 if str(eid) in row.inner_text():
-
                     button = row.locator("a, button").first
 
                     with page.expect_download(timeout=15000) as download_info:
@@ -144,7 +139,7 @@ def read_xml(path):
         return ""
 
 # =========================
-# AI ANALYZA
+# AI PARSING
 # =========================
 def analyze_with_ai(text):
     try:
@@ -168,13 +163,15 @@ TEKST:
 {text[:12000]}
 """
 
-        response = client.chat.completions.create(
-            model="gpt-4.1-mini",
+        response = openai.ChatCompletion.create(
+            model="gpt-4o-mini",
             messages=[{"role": "user", "content": prompt}],
             temperature=0
         )
 
-        return json.loads(response.choices[0].message.content)
+        content = response["choices"][0]["message"]["content"]
+
+        return json.loads(content)
 
     except Exception as e:
         print("AI ERROR:", e)
@@ -248,10 +245,13 @@ def main():
             continue
 
         ai_data = analyze_with_ai(text)
+
         if not ai_data:
+            print("AI FAIL")
             continue
 
         result = detect_anomalies(ai_data)
+
         if result:
             result["id"] = eid
             results.append(result)
