@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 1920.0,
+    "difference": 2998080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103749810,
+    "file": "documents/103749810_Odluka o dodeli ugovora 03 26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 79722.0,
+    "lowest": 3202.0,
+    "difference": 76520.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100259155,
+    "file": "documents/100259155_Odluka Fiat dukato.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 42000000.0,
+    "lowest": 5202.0,
+    "difference": 41994798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100143422,
+    "file": "documents/100143422_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 5957520.0,
+    "lowest": 2223.0,
+    "difference": 5955297.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102547430,
+    "file": "documents/102547430_7-9-26 odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4212.0,
+    "lowest": 4202.0,
+    "difference": 10.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100239277,
+    "file": "documents/100239277_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 4212.0,
+    "lowest": 4202.0,
+    "difference": 10.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103925945,
+    "file": "documents/103925945_Odluka o dodeli.docx"
+  }
+]
