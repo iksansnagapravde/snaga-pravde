@@ -24,6 +24,11 @@ body {
 
 h2 { margin: 0 0 5px 0; }
 p { margin: 4px 0; }
+
+.small {
+  font-size: 12px;
+  color: #666;
+}
 </style>
 </head>
 
@@ -31,8 +36,8 @@ p { margin: 4px 0; }
 
 <h1>📊 Tender Monitor</h1>
 
-<div id="stats" class="card">Учитавање...</div>
-<div id="loss" class="card">Учитавање...</div>
+<div id="stats" class="card">Učitavanje...</div>
+<div id="loss" class="card">Učitavanje...</div>
 
 <h2>📄 Lista tendera</h2>
 <div id="list"></div>
@@ -64,7 +69,11 @@ fetch("stats.json?" + Date.now())
     <h2>📈 Statistika</h2>
     <p><b>Broj tendera:</b> ${s.broj_tendera}</p>
     <p><b>Ukupna vrednost:</b> ${s.ukupna_vrednost}</p>
+    <p><b>Ukupna vrednost (EUR):</b> ${s.ukupna_vrednost_eur}</p>
   `;
+})
+.catch(() => {
+  document.getElementById("stats").innerHTML = "Greška učitavanja stats.json";
 });
 
 // =======================
@@ -76,16 +85,26 @@ fetch("loss-data.json?" + Date.now())
 
   const div = document.getElementById("loss");
 
-  if (parseNumber(l.gubitak_prema_najboljoj) > 1000000) {
+  const lossValue = parseNumber(l.gubitak_prema_najboljoj);
+
+  if (lossValue > 1000000) {
     div.classList.add("bad");
-  } else if (parseNumber(l.gubitak_prema_najboljoj) > 0) {
+  } else if (lossValue > 0) {
     div.classList.add("warn");
+  } else {
+    div.classList.add("ok");
   }
 
   div.innerHTML = `
     <h2>⚠ Gubici</h2>
-    <p>Gubitak: ${l.gubitak_prema_najboljoj}</p>
+    <p><b>Gubitak prema najboljoj:</b> ${l.gubitak_prema_najboljoj}</p>
+    <p><b>Najbolja ponuda:</b> ${l.najbolja_ponuda}</p>
+    <p><b>Srednja ponuda:</b> ${l.srednja_ponuda}</p>
+    <p><b>Prihvaćena ponuda:</b> ${l.prihvacena_ponuda}</p>
   `;
+})
+.catch(() => {
+  document.getElementById("loss").innerHTML = "Greška učitavanja loss-data.json";
 });
 
 // =======================
@@ -98,6 +117,11 @@ fetch("tenders.json?" + Date.now())
   const list = document.getElementById("list");
   const rankingMap = {};
 
+  if (!data || data.length === 0) {
+    list.innerHTML = "<p>Nema podataka</p>";
+    return;
+  }
+
   data.forEach(t => {
 
     const div = document.createElement("div");
@@ -105,22 +129,36 @@ fetch("tenders.json?" + Date.now())
 
     if (t.suspicious) {
       div.classList.add("bad");
+    } else if (t.status === "objasnjeno") {
+      div.classList.add("warn");
+    } else {
+      div.classList.add("ok");
     }
 
+    // 👇 KLJUČNO: fallback ako nema winner
+    const name = t.winner || "Nepoznato";
+
     div.innerHTML = `
-      <h2>${t.winner || "Nepoznato"}</h2>
+      <h2>${name}</h2>
+
+      <p><b>ID:</b> ${t.id}</p>
 
       <p><b>Prihvaćena:</b> ${format(t.accepted)}</p>
       <p><b>Najniža:</b> ${format(t.lowest)}</p>
       <p><b>Razlika:</b> ${format(t.difference)}</p>
 
       <p><b>Status:</b> ${t.status}</p>
+
+      ${t.rejection_reasons && t.rejection_reasons.length ? 
+        `<p class="small"><b>Razlozi:</b> ${t.rejection_reasons.join(", ")}</p>` 
+        : ""
+      }
     `;
 
     list.appendChild(div);
 
     // =======================
-    // RANKING
+    // RANKING (samo ako postoji firma)
     // =======================
     if (t.winner) {
       if (!rankingMap[t.winner]) {
@@ -144,6 +182,11 @@ fetch("tenders.json?" + Date.now())
 
   const rankingDiv = document.getElementById("ranking");
 
+  if (ranking.length === 0) {
+    rankingDiv.innerHTML = "<p>Nema rangiranih firmi</p>";
+    return;
+  }
+
   ranking.forEach(([name, val], i) => {
     const d = document.createElement("div");
     d.className = "card";
@@ -157,6 +200,9 @@ fetch("tenders.json?" + Date.now())
     rankingDiv.appendChild(d);
   });
 
+})
+.catch(() => {
+  document.getElementById("list").innerHTML = "Greška učitavanja tenders.json";
 });
 
 </script>
