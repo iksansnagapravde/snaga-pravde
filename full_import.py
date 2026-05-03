@@ -153,7 +153,7 @@ def extract_prices(text):
         clean = m.replace(" ", "").replace(".", "").replace(",", ".")
         try:
             val = float(clean)
-            if val > 1000:
+            if 1000 < val < 1000000000:
                 prices.append(val)
         except:
             pass
