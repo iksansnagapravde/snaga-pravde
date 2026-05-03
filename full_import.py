@@ -9,6 +9,13 @@ from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
 
+from openai import OpenAI
+
+# =========================
+# CONFIG
+# =========================
+client = OpenAI(api_key="YOUR_API_KEY")
+
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
 
@@ -25,9 +32,6 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
-# =========================
-# PROCESSED
-# =========================
 def already_processed(eid):
     c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
@@ -37,7 +41,7 @@ def mark_processed(eid):
     conn.commit()
 
 # =========================
-# AUTO FETCH IDS
+# FETCH IDS
 # =========================
 def fetch_entity_ids():
     ids = []
@@ -61,8 +65,7 @@ def fetch_entity_ids():
         browser.close()
 
     ids = list(dict.fromkeys(ids))
-    print("AUTO IDS:", ids[:10])
-    return ids[:10]
+    return ids[:20]  # povećano na 20
 
 # =========================
 # DOWNLOAD
@@ -91,8 +94,6 @@ def download_document(eid):
                     path = f"documents/{eid}_{download.suggested_filename}"
                     download.save_as(path)
 
-                    print("DOWNLOADED:", path)
-
                     browser.close()
 
                     with open(path, "rb") as f:
@@ -107,7 +108,6 @@ def download_document(eid):
                     else:
                         return path, "unknown"
 
-            print("❌ ID NIJE NAĐEN:", eid)
             browser.close()
             return None, None
 
@@ -135,129 +135,88 @@ def read_pdf(path):
         pass
     return text
 
-# =========================
-# HELPERS
-# =========================
-def clean_text(text):
-    return re.sub(r"\s+", " ", text)
-
-def is_cancelled(text):
-    t = text.lower()
-    return any(k in t for k in [
-        "obustavi postupak",
-        "postupak se obustavlja",
-        "odluka o obustavi"
-    ])
+def read_xml(path):
+    try:
+        tree = ET.parse(path)
+        root = tree.getroot()
+        return ET.tostring(root, encoding="unicode")
+    except:
+        return ""
 
 # =========================
-# 🔥 FIRMA + CENA + STATUS
+# AI ANALYZA
 # =========================
-def extract_company_price_pairs(text):
-    pairs = []
-    lines = text.split("\n")
+def analyze_with_ai(text):
+    try:
+        prompt = f"""
+Izvuci podatke o javnoj nabavci.
 
-    for line in lines:
-        if "doo" in line.lower():
-            company_match = re.search(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", line)
-            price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+Vrati JSON:
 
-            if company_match and price_match:
-                company = company_match.group().strip()
-                price = float(price_match.group().replace(".", "").replace(",", "."))
+{{
+  "ponude": [
+    {{
+      "firma": "",
+      "cena": 0,
+      "status": "validna ili odbijena"
+    }}
+  ],
+  "pobednik": ""
+}}
 
-                status = "validna"
-                low = line.lower()
+TEKST:
+{text[:12000]}
+"""
 
-                if any(k in low for k in [
-                    "odbij", "neprihvat", "ne ispunjava", "diskvalifik"
-                ]):
-                    status = "odbijena"
+        response = client.chat.completions.create(
+            model="gpt-4.1-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0
+        )
 
-                pairs.append({
-                    "firma": company,
-                    "cena": price,
-                    "status": status
-                })
+        return json.loads(response.choices[0].message.content)
 
-    return pairs
-
-# =========================
-# 🔥 WINNER DETEKCIJA
-# =========================
-def find_winner_company(text, companies):
-    t = text.lower()
-
-    for c in companies:
-        if c.lower() in t:
-            idx = t.find(c.lower())
-            snippet = t[max(0, idx-100):idx+100]
-
-            if any(k in snippet for k in [
-                "dodeljuje", "izabrana", "ugovor se dodeljuje"
-            ]):
-                return c
-
-    return None
-
-# =========================
-# ANALYZE
-# =========================
-def analyze(text):
-    text = clean_text(text)
-
-    if is_cancelled(text):
-        print("⛔ OBUSTAVLJEN")
+    except Exception as e:
+        print("AI ERROR:", e)
         return None
 
-    pairs = extract_company_price_pairs(text)
+# =========================
+# DETEKCIJA
+# =========================
+def detect_anomalies(data):
+    ponude = data.get("ponude", [])
+    pobednik = data.get("pobednik")
 
-    if not pairs:
+    if not ponude:
         return None
 
-    validne = [p for p in pairs if p["status"] == "validna"]
-
+    validne = [p for p in ponude if p["status"] == "validna"]
     if not validne:
         return None
 
-    companies = [p["firma"] for p in pairs]
-    winner_name = find_winner_company(text, companies)
-
-    winner = None
-    if winner_name:
-        winner = next((p for p in pairs if p["firma"] == winner_name), None)
-
+    winner = next((p for p in ponude if p["firma"] == pobednik), None)
     if not winner:
         winner = max(validne, key=lambda x: x["cena"])
 
-    lowest_valid = min(validne, key=lambda x: x["cena"])
-    lowest_all = min(pairs, key=lambda x: x["cena"])
-
-    broj_ponudjaca = len(pairs)
+    lowest = min(validne, key=lambda x: x["cena"])
 
     flags = []
 
-    if broj_ponudjaca == 1:
+    if len(ponude) == 1:
         flags.append("jedan_ponudjac")
 
-    if winner["cena"] > lowest_valid["cena"]:
+    if winner["cena"] > lowest["cena"]:
         flags.append("skuplji_pobedio")
-
-    if lowest_all["status"] == "odbijena":
-        flags.append("najjeftiniji_odbijen")
 
     if not flags:
         return None
 
     return {
-        "winner": winner["firma"],
-        "winner_price": winner["cena"],
-        "lowest_valid": lowest_valid["firma"],
-        "lowest_valid_price": lowest_valid["cena"],
-        "difference": winner["cena"] - lowest_valid["cena"],
-        "broj_ponudjaca": broj_ponudjaca,
-        "ponude": pairs,
+        "winner": winner,
+        "lowest": lowest,
+        "difference": winner["cena"] - lowest["cena"],
         "flags": flags,
-        "suspicious": True
+        "ponude": ponude
     }
 
 # =========================
@@ -267,27 +226,35 @@ def main():
     results = []
 
     for eid in fetch_entity_ids():
-        print("\nPROCESS:", eid)
+        print("PROCESS:", eid)
+
+        if already_processed(eid):
+            continue
 
         path, ext = download_document(eid)
-
         if not path:
             continue
 
-        if ext == "docx":
+        if ext == "xml":
+            text = read_xml(path)
+        elif ext == "docx":
             text = read_docx(path)
         elif ext == "pdf":
             text = read_pdf(path)
-        elif ext == "xml":
-            text = open(path, encoding="utf-8", errors="ignore").read()
         else:
             continue
 
-        data = analyze(text)
+        if not text:
+            continue
 
-        if data:
-            data["id"] = eid
-            results.append(data)
+        ai_data = analyze_with_ai(text)
+        if not ai_data:
+            continue
+
+        result = detect_anomalies(ai_data)
+        if result:
+            result["id"] = eid
+            results.append(result)
 
         mark_processed(eid)
 
