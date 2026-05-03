@@ -2,6 +2,7 @@ import os
 import re
 import json
 import sqlite3
+import xml.etree.ElementTree as ET
 
 from playwright.sync_api import sync_playwright
 from docx import Document
@@ -24,6 +25,9 @@ CREATE TABLE IF NOT EXISTS processed (
 """)
 conn.commit()
 
+# =========================
+# PROCESSED
+# =========================
 def already_processed(eid):
     c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
     return c.fetchone() is not None
@@ -31,6 +35,85 @@ def already_processed(eid):
 def mark_processed(eid):
     c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
     conn.commit()
+
+# =========================
+# AUTO FETCH IDS
+# =========================
+def fetch_entity_ids():
+    ids = []
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+
+        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        page.wait_for_load_state("networkidle")
+        page.wait_for_selector("tr", timeout=15000)
+
+        rows = page.locator("tr").all()
+
+        for row in rows:
+            text = row.inner_text()
+            match = re.search(r"\b\d{6,}\b", text)
+            if match:
+                ids.append(int(match.group()))
+
+        browser.close()
+
+    ids = list(dict.fromkeys(ids))
+    print("AUTO IDS:", ids[:10])
+    return ids[:10]
+
+# =========================
+# DOWNLOAD
+# =========================
+def download_document(eid):
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(accept_downloads=True)
+            page = context.new_page()
+
+            page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+            page.wait_for_load_state("networkidle")
+
+            rows = page.locator("tr").all()
+
+            for row in rows:
+                if str(eid) in row.inner_text():
+
+                    button = row.locator("a, button").first
+
+                    with page.expect_download(timeout=15000) as download_info:
+                        button.click()
+
+                    download = download_info.value
+                    path = f"documents/{eid}_{download.suggested_filename}"
+                    download.save_as(path)
+
+                    print("DOWNLOADED:", path)
+
+                    browser.close()
+
+                    with open(path, "rb") as f:
+                        head = f.read(200)
+
+                    if head.startswith(b"%PDF"):
+                        return path, "pdf"
+                    elif b"<?xml" in head:
+                        return path, "xml"
+                    elif path.endswith(".docx"):
+                        return path, "docx"
+                    else:
+                        return path, "unknown"
+
+            print("❌ ID NIJE NAĐEN:", eid)
+            browser.close()
+            return None, None
+
+    except Exception as e:
+        print("DOWNLOAD ERROR:", e)
+        return None, None
 
 # =========================
 # READERS
@@ -47,16 +130,24 @@ def read_pdf(path):
     try:
         images = convert_from_path(path, dpi=300)
         for img in images:
-            text += pytesseract.image_to_string(img, lang="srp+eng")
+            text += pytesseract.image_to_string(img)
     except:
         pass
     return text
 
 # =========================
-# HELPERS
+# ANALIZA – HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
+
+def is_cancelled(text):
+    t = text.lower()
+    return any(k in t for k in [
+        "obustavi postupak",
+        "postupak se obustavlja",
+        "odluka o obustavi"
+    ])
 
 def extract_prices(text):
     prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
@@ -72,8 +163,70 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
+# =========================
+# 🔥 NOVO – FIRME
+# =========================
+def extract_companies(text):
+    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
+
+# =========================
+# 🔥 NOVO – KONKURENCIJA
+# =========================
+def detect_competition(text):
+    lines = text.split("\n")
+
+    companies = []
+    prices = []
+
+    for line in lines:
+        if "doo" in line.lower():
+            companies.append(line.strip())
+
+        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
+        if match:
+            for m in match:
+                prices.append(float(m.replace(".", "").replace(",", ".")))
+
+    companies = list(dict.fromkeys(companies))
+    prices = sorted(list(set(prices)))
+
+    return {
+        "companies": companies,
+        "prices": prices
+    }
+
+# =========================
+# 🔥 NOVO – RAZLOZI ODBIJANJA
+# =========================
+def detect_rejection_reasons(text):
+    patterns = [
+        "neprihvatljiva ponuda",
+        "ponuda se odbija",
+        "nije prihvatljiva",
+        "ne ispunjava uslove",
+        "diskvalifikovan",
+        "nije dostavio",
+        "ne odgovara"
+    ]
+
+    found = []
+    t = text.lower()
+
+    for p in patterns:
+        if p in t:
+            found.append(p)
+
+    return found
+
+# =========================
+# ANALYZE (GLAVNA LOGIKA)
+# =========================
 def analyze(text):
     text = clean_text(text)
+
+    if is_cancelled(text):
+        print("⛔ OBUSTAVLJEN")
+        return None
 
     prices = extract_prices(text)
     if not prices:
@@ -82,11 +235,40 @@ def analyze(text):
     lowest = min(prices)
     accepted = max(prices)
 
+    competition = detect_competition(text)
+    companies = extract_companies(text)
+    reasons = detect_rejection_reasons(text)
+
+    broj_ponudjaca = len(competition["companies"]) if competition else 0
+
+    status = "nepoznato"
+
+    if broj_ponudjaca == 1:
+        status = "jedan_ponudjac"
+
+    elif broj_ponudjaca > 1:
+        if accepted == lowest:
+            status = "najjeftiniji_pobedio"
+        elif accepted > lowest:
+            if reasons:
+                status = "skuplji_pobedio_ali_objasnjeno"
+            else:
+                status = "SUMNJIVO"
+
     return {
         "winner": find_winner(text),
+
         "accepted": accepted,
         "lowest": lowest,
         "difference": accepted - lowest,
+
+        "companies": companies,
+        "competition": competition,
+
+        "broj_ponudjaca": broj_ponudjaca,
+        "razlozi_odbijanja": reasons,
+
+        "status": status,
         "suspicious": accepted > lowest
     }
 
@@ -96,60 +278,30 @@ def analyze(text):
 def main():
     results = []
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(accept_downloads=True)
-        page = context.new_page()
+    for eid in fetch_entity_ids():
+        print("\nPROCESS:", eid)
 
-        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
-        page.wait_for_load_state("networkidle")
-        page.wait_for_selector("tr")
+        path, ext = download_document(eid)
 
-        rows = page.locator("tr").all()
+        if not path:
+            continue
 
-        for row in rows[:10]:
-            text_row = row.inner_text()
-            match = re.search(r"\b\d{6,}\b", text_row)
-            if not match:
-                continue
+        if ext == "docx":
+            text = read_docx(path)
+        elif ext == "pdf":
+            text = read_pdf(path)
+        elif ext == "xml":
+            text = open(path, encoding="utf-8", errors="ignore").read()
+        else:
+            continue
 
-            eid = int(match.group())
-            print("PROCESS:", eid)
+        data = analyze(text)
 
-            if already_processed(eid):
-                continue
+        if data:
+            data["id"] = eid
+            results.append(data)
 
-            try:
-                with page.expect_download(timeout=15000) as d:
-                    row.locator("a, button").first.click()
-
-                download = d.value
-                path = f"documents/{eid}_{download.suggested_filename}"
-                download.save_as(path)
-
-                with open(path, "rb") as f:
-                    head = f.read(200)
-
-                if head.startswith(b"%PDF"):
-                    text = read_pdf(path)
-                elif path.endswith(".docx"):
-                    text = read_docx(path)
-                else:
-                    continue
-
-                data = analyze(text)
-
-                if data:
-                    data["id"] = eid
-                    results.append(data)
-
-                mark_processed(eid)
-
-            except Exception as e:
-                print("ROW ERROR:", e)
-                continue
-
-        browser.close()
+        mark_processed(eid)
 
     with open("tenders.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
