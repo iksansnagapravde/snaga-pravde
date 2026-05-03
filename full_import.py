@@ -2,16 +2,19 @@ import os
 import re
 import json
 import sqlite3
-import xml.etree.ElementTree as ET
 
 from playwright.sync_api import sync_playwright
 from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
 
-# 🔥 NOVO – AI
-from openai import OpenAI
-client = OpenAI()
+# 🔥 SAFE AI IMPORT
+try:
+    from openai import OpenAI
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    AI_ENABLED = True
+except:
+    AI_ENABLED = False
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
 os.makedirs("documents", exist_ok=True)
@@ -154,11 +157,8 @@ def find_winner(text):
                         return parts[j].strip()
     return None
 
-def extract_companies(text):
-    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
-
 # =========================
-# ANALYZE (STARI, NE DIRAMO)
+# ANALYZE (STABILNO)
 # =========================
 def analyze(text):
     text = clean_text(text)
@@ -179,9 +179,12 @@ def analyze(text):
     }
 
 # =========================
-# 🔥 AI DODATAK (NE RUŠI SISTEM)
+# 🔥 AI (SAFE)
 # =========================
 def ai_enhance(text):
+    if not AI_ENABLED:
+        return None
+
     try:
         res = client.chat.completions.create(
             model="gpt-4o-mini",
@@ -237,9 +240,11 @@ def main():
         data = analyze(text)
 
         if data:
-            # 🔥 AI samo ako je sumnjivo
+            # 🔥 AI samo ako ima smisla
             if data["suspicious"]:
-                data["ai"] = ai_enhance(text)
+                ai = ai_enhance(text)
+                if ai:
+                    data["ai"] = ai
 
             data["id"] = eid
             results.append(data)
@@ -250,6 +255,9 @@ def main():
         json.dump(results, f, indent=2, ensure_ascii=False)
 
     print("DONE")
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
