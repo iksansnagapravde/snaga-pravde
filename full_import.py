@@ -136,7 +136,7 @@ def read_pdf(path):
     return text
 
 # =========================
-# ANALIZA – HELPERS
+# HELPERS
 # =========================
 def clean_text(text):
     return re.sub(r"\s+", " ", text)
@@ -149,77 +149,58 @@ def is_cancelled(text):
         "odluka o obustavi"
     ])
 
-def extract_prices(text):
-    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
-    return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
-
-def find_winner(text):
-    parts = text.split(".")
-    for i, part in enumerate(parts):
-        if "dodeljuje" in part.lower():
-            for j in range(i, i+3):
-                if j < len(parts):
-                    if "doo" in parts[j].lower():
-                        return parts[j].strip()
-    return None
-
 # =========================
-# 🔥 NOVO – FIRME
+# 🔥 FIRMA + CENA + STATUS
 # =========================
-def extract_companies(text):
-    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
-
-# =========================
-# 🔥 NOVO – KONKURENCIJA
-# =========================
-def detect_competition(text):
+def extract_company_price_pairs(text):
+    pairs = []
     lines = text.split("\n")
-
-    companies = []
-    prices = []
 
     for line in lines:
         if "doo" in line.lower():
-            companies.append(line.strip())
+            company_match = re.search(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", line)
+            price_match = re.search(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
 
-        match = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", line)
-        if match:
-            for m in match:
-                prices.append(float(m.replace(".", "").replace(",", ".")))
+            if company_match and price_match:
+                company = company_match.group().strip()
+                price = float(price_match.group().replace(".", "").replace(",", "."))
 
-    companies = list(dict.fromkeys(companies))
-    prices = sorted(list(set(prices)))
+                status = "validna"
+                low = line.lower()
 
-    return {
-        "companies": companies,
-        "prices": prices
-    }
+                if any(k in low for k in [
+                    "odbij", "neprihvat", "ne ispunjava", "diskvalifik"
+                ]):
+                    status = "odbijena"
+
+                pairs.append({
+                    "firma": company,
+                    "cena": price,
+                    "status": status
+                })
+
+    return pairs
 
 # =========================
-# 🔥 NOVO – RAZLOZI ODBIJANJA
+# 🔥 WINNER DETEKCIJA
 # =========================
-def detect_rejection_reasons(text):
-    patterns = [
-        "neprihvatljiva ponuda",
-        "ponuda se odbija",
-        "nije prihvatljiva",
-        "ne ispunjava uslove",
-        "diskvalifikovan",
-        "nije dostavio",
-        "ne odgovara"
-    ]
-
-    found = []
+def find_winner_company(text, companies):
     t = text.lower()
 
-    for p in patterns:
-        if p in t:
-            found.append(p)
+    for c in companies:
+        if c.lower() in t:
+            idx = t.find(c.lower())
+            snippet = t[max(0, idx-100):idx+100]
 
-    return found
+            if any(k in snippet for k in [
+                "dodeljuje", "izabrana", "ugovor se dodeljuje"
+            ]):
+                return c
+
+    return None
 
 # =========================
-# ANALYZE (GLAVNA LOGIKA)
+# ANALYZE
 # =========================
 def analyze(text):
     text = clean_text(text)
@@ -228,48 +209,55 @@ def analyze(text):
         print("⛔ OBUSTAVLJEN")
         return None
 
-    prices = extract_prices(text)
-    if not prices:
+    pairs = extract_company_price_pairs(text)
+
+    if not pairs:
         return None
 
-    lowest = min(prices)
-    accepted = max(prices)
+    validne = [p for p in pairs if p["status"] == "validna"]
 
-    competition = detect_competition(text)
-    companies = extract_companies(text)
-    reasons = detect_rejection_reasons(text)
+    if not validne:
+        return None
 
-    broj_ponudjaca = len(competition["companies"]) if competition else 0
+    companies = [p["firma"] for p in pairs]
+    winner_name = find_winner_company(text, companies)
 
-    status = "nepoznato"
+    winner = None
+    if winner_name:
+        winner = next((p for p in pairs if p["firma"] == winner_name), None)
+
+    if not winner:
+        winner = max(validne, key=lambda x: x["cena"])
+
+    lowest_valid = min(validne, key=lambda x: x["cena"])
+    lowest_all = min(pairs, key=lambda x: x["cena"])
+
+    broj_ponudjaca = len(pairs)
+
+    flags = []
 
     if broj_ponudjaca == 1:
-        status = "jedan_ponudjac"
+        flags.append("jedan_ponudjac")
 
-    elif broj_ponudjaca > 1:
-        if accepted == lowest:
-            status = "najjeftiniji_pobedio"
-        elif accepted > lowest:
-            if reasons:
-                status = "skuplji_pobedio_ali_objasnjeno"
-            else:
-                status = "SUMNJIVO"
+    if winner["cena"] > lowest_valid["cena"]:
+        flags.append("skuplji_pobedio")
+
+    if lowest_all["status"] == "odbijena":
+        flags.append("najjeftiniji_odbijen")
+
+    if not flags:
+        return None
 
     return {
-        "winner": find_winner(text),
-
-        "accepted": accepted,
-        "lowest": lowest,
-        "difference": accepted - lowest,
-
-        "companies": companies,
-        "competition": competition,
-
+        "winner": winner["firma"],
+        "winner_price": winner["cena"],
+        "lowest_valid": lowest_valid["firma"],
+        "lowest_valid_price": lowest_valid["cena"],
+        "difference": winner["cena"] - lowest_valid["cena"],
         "broj_ponudjaca": broj_ponudjaca,
-        "razlozi_odbijanja": reasons,
-
-        "status": status,
-        "suspicious": accepted > lowest
+        "ponude": pairs,
+        "flags": flags,
+        "suspicious": True
     }
 
 # =========================
