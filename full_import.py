@@ -11,6 +11,9 @@ import pytesseract
 
 import openai
 
+# =========================
+# CONFIG
+# =========================
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
@@ -47,7 +50,7 @@ def fetch_entity_ids():
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
 
-        page.goto("https://jnportal.ujn.gov.rs/odluke-o-dodeli-ugovora")
+        page.goto(BASE_URL + "/odluke-o-dodeli-ugovora")
         page.wait_for_load_state("networkidle")
         page.wait_for_selector("tr", timeout=15000)
 
@@ -125,9 +128,9 @@ def read_pdf(path):
     try:
         images = convert_from_path(path, dpi=300)
         for img in images:
-            text += pytesseract.image_to_string(img)
-    except:
-        pass
+            text += pytesseract.image_to_string(img, lang="srp+eng")
+    except Exception as e:
+        print("OCR ERROR:", e)
     return text
 
 def read_xml(path):
@@ -139,25 +142,26 @@ def read_xml(path):
         return ""
 
 # =========================
-# AI PARSING
+# AI ANALYSIS
 # =========================
 def analyze_with_ai(text):
     try:
         prompt = f"""
-Izvuci podatke o javnoj nabavci.
+Analiziraj dokument javne nabavke.
 
-Vrati JSON:
+Izvuci sve dodele ugovora.
 
-{{
-  "ponude": [
-    {{
-      "firma": "",
-      "cena": 0,
-      "status": "validna ili odbijena"
-    }}
-  ],
-  "pobednik": ""
-}}
+Za svaku dodelu vrati:
+- firma
+- cena_bez_pdv
+- cena_sa_pdv
+- status (validna ili odbijena)
+- partija (ako postoji, inače null)
+
+Ako postoji samo jedan ponuđač označi:
+"jedan_ponudjac": true
+
+Vrati ISKLJUČIVO JSON niz.
 
 TEKST:
 {text[:12000]}
@@ -178,49 +182,23 @@ TEKST:
         return None
 
 # =========================
-# DETEKCIJA
+# DETECTION
 # =========================
-def detect_anomalies(data):
-    ponude = data.get("ponude", [])
-    pobednik = data.get("pobednik")
+def detect_anomalies(results):
+    anomalies = []
 
-    if not ponude:
-        return None
+    for r in results:
+        if r.get("jedan_ponudjac"):
+            r["flag"] = "jedan_ponudjac"
+            anomalies.append(r)
 
-    validne = [p for p in ponude if p["status"] == "validna"]
-    if not validne:
-        return None
-
-    winner = next((p for p in ponude if p["firma"] == pobednik), None)
-    if not winner:
-        winner = max(validne, key=lambda x: x["cena"])
-
-    lowest = min(validne, key=lambda x: x["cena"])
-
-    flags = []
-
-    if len(ponude) == 1:
-        flags.append("jedan_ponudjac")
-
-    if winner["cena"] > lowest["cena"]:
-        flags.append("skuplji_pobedio")
-
-    if not flags:
-        return None
-
-    return {
-        "winner": winner,
-        "lowest": lowest,
-        "difference": winner["cena"] - lowest["cena"],
-        "flags": flags,
-        "ponude": ponude
-    }
+    return anomalies
 
 # =========================
 # MAIN
 # =========================
 def main():
-    results = []
+    final_results = []
 
     for eid in fetch_entity_ids():
         print("PROCESS:", eid)
@@ -242,6 +220,7 @@ def main():
             continue
 
         if not text:
+            print("NO TEXT")
             continue
 
         ai_data = analyze_with_ai(text)
@@ -250,16 +229,16 @@ def main():
             print("AI FAIL")
             continue
 
-        result = detect_anomalies(ai_data)
+        anomalies = detect_anomalies(ai_data)
 
-        if result:
-            result["id"] = eid
-            results.append(result)
+        for a in anomalies:
+            a["id"] = eid
+            final_results.append(a)
 
         mark_processed(eid)
 
     with open("tenders.json", "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
+        json.dump(final_results, f, indent=2, ensure_ascii=False)
 
     print("DONE")
 
