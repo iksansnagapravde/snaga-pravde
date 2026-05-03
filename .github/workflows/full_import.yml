@@ -3,7 +3,7 @@ name: Tender Monitor Import
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # 🔥 svakih 5 minuta
 
 permissions:
   contents: write
@@ -18,9 +18,6 @@ jobs:
 
     steps:
 
-      # =========================
-      # CHECKOUT
-      # =========================
       - name: Checkout repo
         uses: actions/checkout@v4
 
@@ -32,9 +29,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y poppler-utils tesseract-ocr
 
-      # =========================
-      # PLAYWRIGHT SYSTEM DEPS (FIXED)
-      # =========================
+      # Playwright dependencies
       - name: Install Playwright system deps
         run: |
           sudo apt-get install -y \
@@ -54,10 +49,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Python dependencies
+      - name: Install Python deps
         run: |
           pip install --upgrade pip
-        pip install playwright pdf2image pytesseract python-docx openai==0.28
+          pip install playwright pdf2image pytesseract python-docx
 
       # =========================
       # PLAYWRIGHT
@@ -70,8 +65,6 @@ jobs:
       # RUN SCRIPT
       # =========================
       - name: Run script
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python full_import.py
 
       # =========================
@@ -82,11 +75,11 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
 
-          git add stats.json loss-data.json
+          git add tenders.json contracts.db
 
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "Auto update stats"
+            git commit -m "Auto update tenders"
             git push
           fi
