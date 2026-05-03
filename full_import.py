@@ -1,15 +1,44 @@
 import os
 import re
 import json
+import sqlite3
+import xml.etree.ElementTree as ET
+
 from playwright.sync_api import sync_playwright
 from docx import Document
 from pdf2image import convert_from_path
 import pytesseract
-import openai
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# 🔥 NOVO – AI
+from openai import OpenAI
+client = OpenAI()
 
 BASE_URL = "https://jnportal.ujn.gov.rs"
+os.makedirs("documents", exist_ok=True)
+
+# =========================
+# DATABASE
+# =========================
+conn = sqlite3.connect("contracts.db")
+c = conn.cursor()
+
+c.execute("""
+CREATE TABLE IF NOT EXISTS processed (
+    entity_id INTEGER PRIMARY KEY
+)
+""")
+conn.commit()
+
+# =========================
+# PROCESSED
+# =========================
+def already_processed(eid):
+    c.execute("SELECT 1 FROM processed WHERE entity_id=?", (eid,))
+    return c.fetchone() is not None
+
+def mark_processed(eid):
+    c.execute("INSERT OR IGNORE INTO processed VALUES (?)", (eid,))
+    conn.commit()
 
 # =========================
 # FETCH IDS
@@ -28,7 +57,8 @@ def fetch_entity_ids():
         rows = page.locator("tr").all()
 
         for row in rows:
-            match = re.search(r"\d{6,}", row.inner_text())
+            text = row.inner_text()
+            match = re.search(r"\b\d{6,}\b", text)
             if match:
                 ids.append(int(match.group()))
 
@@ -37,9 +67,9 @@ def fetch_entity_ids():
     return list(dict.fromkeys(ids))[:10]
 
 # =========================
-# DOWNLOAD + OCR
+# DOWNLOAD
 # =========================
-def read_pdf_from_portal(eid):
+def download_document(eid):
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
@@ -53,120 +83,171 @@ def read_pdf_from_portal(eid):
 
             for row in rows:
                 if str(eid) in row.inner_text():
+
                     button = row.locator("a, button").first
 
-                    with page.expect_download() as download_info:
+                    with page.expect_download(timeout=15000) as download_info:
                         button.click()
 
                     download = download_info.value
-                    path = f"{eid}.pdf"
+                    path = f"documents/{eid}_{download.suggested_filename}"
                     download.save_as(path)
+
+                    with open(path, "rb") as f:
+                        head = f.read(200)
 
                     browser.close()
 
-                    images = convert_from_path(path, dpi=300)
-                    text = ""
+                    if head.startswith(b"%PDF"):
+                        return path, "pdf"
+                    elif b"<?xml" in head:
+                        return path, "xml"
+                    elif path.endswith(".docx"):
+                        return path, "docx"
+                    else:
+                        return path, "unknown"
 
-                    for img in images:
-                        text += pytesseract.image_to_string(img, lang="srp+eng")
-
-                    return text
-
-        return ""
+            browser.close()
+            return None, None
 
     except Exception as e:
-        print("ERROR:", e)
+        print("DOWNLOAD ERROR:", e)
+        return None, None
+
+# =========================
+# READERS
+# =========================
+def read_docx(path):
+    try:
+        doc = Document(path)
+        return "\n".join([p.text for p in doc.paragraphs])
+    except:
         return ""
 
+def read_pdf(path):
+    text = ""
+    try:
+        images = convert_from_path(path, dpi=300)
+        for img in images:
+            text += pytesseract.image_to_string(img, lang="srp+eng")
+    except:
+        pass
+    return text
+
 # =========================
-# AI PARSING
+# HELPERS
+# =========================
+def clean_text(text):
+    return re.sub(r"\s+", " ", text)
+
+def extract_prices(text):
+    prices = re.findall(r"\d{1,3}(?:\.\d{3})*,\d{2}", text)
+    return sorted(set(float(p.replace(".", "").replace(",", ".")) for p in prices))
+
+def find_winner(text):
+    parts = text.split(".")
+    for i, part in enumerate(parts):
+        if "dodeljuje" in part.lower():
+            for j in range(i, i+3):
+                if j < len(parts):
+                    if "doo" in parts[j].lower():
+                        return parts[j].strip()
+    return None
+
+def extract_companies(text):
+    return list(set(re.findall(r"[A-ZČĆŽŠĐ][A-ZČĆŽŠĐ\s]+DOO", text)))
+
+# =========================
+# ANALYZE (STARI, NE DIRAMO)
 # =========================
 def analyze(text):
+    text = clean_text(text)
+
+    prices = extract_prices(text)
+    if not prices:
+        return None
+
+    lowest = min(prices)
+    accepted = max(prices)
+
+    return {
+        "winner": find_winner(text),
+        "accepted": accepted,
+        "lowest": lowest,
+        "difference": accepted - lowest,
+        "suspicious": accepted > lowest
+    }
+
+# =========================
+# 🔥 AI DODATAK (NE RUŠI SISTEM)
+# =========================
+def ai_enhance(text):
     try:
-        prompt = f"""
-Izvuci sve ponude iz dokumenta javne nabavke.
-
-Vrati JSON:
-
-[
-  {{
-    "firma": "",
-    "cena": 0,
-    "pobednik": true/false
-  }}
-]
-
-TEKST:
-{text[:12000]}
-"""
-
-        res = openai.ChatCompletion.create(
+        res = client.chat.completions.create(
             model="gpt-4o-mini",
-            messages=[{"role": "user", "content": prompt}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"""
+Izvuci:
+- sve firme
+- pobednika
+- sve cene
+
+Vrati JSON.
+
+{text[:8000]}
+"""
+                }
+            ],
             temperature=0
         )
 
-        return json.loads(res["choices"][0]["message"]["content"])
+        return res.choices[0].message.content
 
     except Exception as e:
-        print("AI ERROR:", e)
-        return []
+        print("AI FAIL:", e)
+        return None
 
 # =========================
-# MAIN LOGIC
+# MAIN
 # =========================
 def main():
-    total_value = 0
-    total_loss = 0
-    count = 0
+    results = []
 
     for eid in fetch_entity_ids():
         print("PROCESS:", eid)
 
-        text = read_pdf_from_portal(eid)
-        if not text:
+        if already_processed(eid):
+            continue
+
+        path, ext = download_document(eid)
+        if not path:
+            continue
+
+        if ext == "docx":
+            text = read_docx(path)
+        elif ext == "pdf":
+            text = read_pdf(path)
+        elif ext == "xml":
+            text = open(path, encoding="utf-8", errors="ignore").read()
+        else:
             continue
 
         data = analyze(text)
-        if not data:
-            continue
 
-        if len(data) == 1:
-            continue  # jedan ponuđač
+        if data:
+            # 🔥 AI samo ako je sumnjivo
+            if data["suspicious"]:
+                data["ai"] = ai_enhance(text)
 
-        winner = next((x for x in data if x["pobednik"]), None)
-        lowest = min(data, key=lambda x: x["cena"])
+            data["id"] = eid
+            results.append(data)
 
-        if winner and winner["cena"] > lowest["cena"]:
-            diff = winner["cena"] - lowest["cena"]
-            total_loss += diff
-            total_value += winner["cena"]
-            count += 1
+        mark_processed(eid)
 
-    # =========================
-    # STATS
-    # =========================
-    stats = {
-        "broj_tendera": count,
-        "ukupna_vrednost": f"{int(total_value)} RSD",
-        "ukupna_vrednost_eur": f"{int(total_value/117.2)} EUR",
-        "broj_ugovora": count,
-        "ugovorena_vrednost": f"{int(total_value)} RSD",
-        "ugovorena_vrednost_eur": f"{int(total_value/117.2)} EUR"
-    }
-
-    loss = {
-        "broj_analiziranih": count,
-        "gubitak_prema_najboljoj": int(total_loss),
-        "gubitak_prema_najboljoj_eur": int(total_loss/117.2),
-        "period_od": "2026-01-01"
-    }
-
-    with open("stats.json", "w") as f:
-        json.dump(stats, f, indent=2)
-
-    with open("loss-data.json", "w") as f:
-        json.dump(loss, f, indent=2)
+    with open("tenders.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
 
     print("DONE")
 
