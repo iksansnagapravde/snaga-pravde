@@ -1,101 +1,24 @@
 [
   {
     "winner": null,
-    "accepted": 29999040.0,
-    "lowest": 1127.0,
-    "difference": 29997913.0,
+    "accepted": 873600.0,
+    "lowest": 4202.0,
+    "difference": 869398.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100501967,
-    "file": "documents/100501967_Odluka o dodeli ugovora JN 77-2026.pdf"
+    "id": 100239084,
+    "file": "documents/100239084_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 1363000.0,
-    "lowest": 3370.0,
-    "difference": 1359630.0,
+    "accepted": 180000000.0,
+    "lowest": 3258.0,
+    "difference": 179996742.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 114543624,
-    "file": "documents/114543624_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 15650.4,
-    "lowest": 1202.0,
-    "difference": 14448.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_doc02740720260504124722.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 3600000.0,
-    "lowest": 2110.0,
-    "difference": 3597890.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107948144,
-    "file": "documents/107948144_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104217668,
-    "file": "documents/104217668_Odluka o dodeli Narudzbenice.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 8000000.0,
-    "lowest": 1970.0,
-    "difference": 7998030.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 114014101,
-    "file": "documents/114014101_IMG_20260504_0001.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 3630000.0,
-    "lowest": 4110.0,
-    "difference": 3625890.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100002887,
-    "file": "documents/100002887_odluka o dodeli ug.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 40000000.0,
-    "lowest": 1363.0,
-    "difference": 39998637.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103920327,
-    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 47146.0,
-    "lowest": 1202.0,
-    "difference": 45944.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100038783,
-    "file": "documents/100038783_doc02740420260504124611.pdf"
+    "id": 100293779,
+    "file": "documents/100293779_Odluka o dodeli narudzbenice El-ex garant.pdf"
   }
 ]
