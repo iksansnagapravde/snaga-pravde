@@ -1,68 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 3000000.0,
-    "lowest": 1920.0,
-    "difference": 2998080.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103749810,
-    "file": "documents/103749810_Odluka o dodeli ugovora 03 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 79722.0,
-    "lowest": 3202.0,
-    "difference": 76520.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100259155,
-    "file": "documents/100259155_Odluka Fiat dukato.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 42000000.0,
+    "accepted": 7414801.06,
     "lowest": 5202.0,
-    "difference": 41994798.0,
+    "difference": 7409599.06,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100143422,
-    "file": "documents/100143422_Odluka o dodeli ugovora.docx"
+    "id": 111704644,
+    "file": "documents/111704644_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 5957520.0,
-    "lowest": 2223.0,
-    "difference": 5955297.0,
+    "accepted": 12063072.2,
+    "lowest": 2210.0,
+    "difference": 12060862.2,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102547430,
-    "file": "documents/102547430_7-9-26 odluka o dodeli.pdf"
+    "id": 105289396,
+    "file": "documents/105289396_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 4212.0,
+    "accepted": 4202.0,
+    "lowest": 2202.0,
+    "difference": 2000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100155659,
+    "file": "documents/100155659_odluka 158.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 136700.0,
+    "lowest": 1202.0,
+    "difference": 135498.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100038783,
+    "file": "documents/100038783_ODLUKA 033-26-D PU NS1773.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 240000.0,
     "lowest": 4202.0,
-    "difference": 10.0,
+    "difference": 235798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100239277,
-    "file": "documents/100239277_Odluka o dodeli.docx"
+    "id": 100974574,
+    "file": "documents/100974574_Odluka 032.pdf"
   },
   {
     "winner": null,
-    "accepted": 4212.0,
-    "lowest": 4202.0,
-    "difference": 10.0,
+    "accepted": 108350.0,
+    "lowest": 1202.0,
+    "difference": 107148.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103925945,
-    "file": "documents/103925945_Odluka o dodeli.docx"
+    "id": 101690860,
+    "file": "documents/101690860_ODLUKA 031-26-D PU NS1767.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 36360.0,
+    "lowest": 2202.0,
+    "difference": 34158.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_ODLUKA 108-26-P PU NS1764.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 10891.67,
+    "lowest": 2202.0,
+    "difference": 8689.67,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112284857,
+    "file": "documents/112284857_ODLUKA 107-26-P PU NS1761.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 15183.0,
+    "lowest": 5202.0,
+    "difference": 9981.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104696754,
+    "file": "documents/104696754_Odluka o dodeli.docx"
   }
 ]
