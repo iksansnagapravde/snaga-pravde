@@ -267,20 +267,6 @@
       "priority": 70
     },
     {
-      "id": "ozem-nenad-m-pritvor-produzen-zbog-divljackog-napada-4g0pzz5",
-      "title": "\"KRV JE ŠIKLJALA NA SVE STRANE\" Nenadu je prerezan vrat na dočeku Božića, a evo šta se dešava sa osumnjičenim za jezivi zločin u kafani: Mladić ubijen pred GOMILOM GOSTIJU",
-      "url": "https://www.blic.rs/vesti/hronika/nenad-gojic-ubijen-nozem-nenad-m-pritvor-produzen-zbog-divljackog-napada/4g0pzz5",
-      "date": "2026-05-04",
-      "datetime": "2026-05-04T16:43:32+00:00",
-      "time": "16:43",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "zacije-javne-nabavke-zavod-za-zastitu-spomenika-kulture-html",
       "title": "Истрага због малверзација у Заводу за заштиту споменика културе Града Новог Сада",
       "url": "https://www.rts.rs/vesti/hronika/5941030/novi-sad-malverzacije-javne-nabavke-zavod-za-zastitu-spomenika-kulture.html",
@@ -694,6 +680,20 @@
       "datetime": "2026-05-04T17:00:39+00:00",
       "time": "17:00",
       "source": "Vreme",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "st-dana-ignorise-otmicu-i-zlostavljanje-aktiviste-u-resniku-",
+      "title": "Policija šest dana ignoriše otmicu i zlostavljanje aktiviste u Resniku: Gde su otmičari koji su izašli iz kombija \"Srbija pobeđuje\" i ugurali žrtvu u \"škodu\" bez tablica?",
+      "url": "https://nova.rs/vesti/hronika/policija-sest-dana-ignorise-otmicu-i-zlostavljanje-aktiviste-u-resniku/",
+      "date": "2026-05-04",
+      "datetime": "2026-05-04T16:15:37+00:00",
+      "time": "16:15",
+      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
