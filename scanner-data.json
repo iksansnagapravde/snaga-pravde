@@ -197,20 +197,6 @@
       "priority": 92
     },
     {
-      "id": "mo-pokazatelj-sta-ce-morati-da-urade-i-sa-drugim-uhapsenima-",
-      "title": "Vasić: Nemaju nijedan zakonski dokaz, mi smo pokazatelj šta će morati da urade i sa drugim uhapšenima",
-      "url": "https://n1info.rs/vesti/vasic-nemaju-nijedan-zakonski-dokaz-mi-smo-pokazatelj-sta-ce-morati-da-urade-i-sa-drugim-uhapsenima/",
-      "date": "2026-05-05",
-      "datetime": "2026-05-05T17:09:11+00:00",
-      "time": "17:09",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "r-rs-crna-hronika-9987282-preminuo-mladic-izboden-u-rakovici",
       "title": "MLADIĆ (19) UBIJEN U RAKOVICI! Krvavi obračun nasred ulice, napadači pobegli autobusom, obojica uhapšena",
       "url": "https://www.kurir.rs/crna-hronika/9987282/preminuo-mladic-izboden-u-rakovici",
@@ -274,34 +260,6 @@
       "datetime": "2026-05-05T16:59:57+00:00",
       "time": "16:59",
       "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "skvi-uhapsen-zvicerov-saradnik-pao-odbegli-kristijan-dresaj-",
-      "title": "U Moskvi uhapšen Zvicerov saradnik: \"Pao\" odbegli Kristijan Drešaj",
-      "url": "https://nova.rs/vesti/hronika/u-moskvi-uhapsen-zvicerov-saradnik-pao-odbegli-kristijan-dresaj/",
-      "date": "2026-05-05",
-      "datetime": "2026-05-05T16:45:33+00:00",
-      "time": "16:45",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "an-dresaj-uhapsen-u-moskvi-po-interpolovoj-poternici-p52vw21",
-      "title": "ZVICEROV SARADNIK UHAPŠEN U MOSKVI Za \"kavčaninom\" bila raspisana Interpolova poternica: Filmska akcija u Rusiji",
-      "url": "https://www.blic.rs/vesti/hronika/kavcanin-kristijan-dresaj-uhapsen-u-moskvi-po-interpolovoj-poternici/p52vw21",
-      "date": "2026-05-05",
-      "datetime": "2026-05-05T16:25:40+00:00",
-      "time": "16:25",
-      "source": "Blic",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -419,6 +377,20 @@
       "breaking": false,
       "alert": false,
       "priority": 32
+    },
+    {
+      "id": "2310-petrasinovic-izmene-zakona-o-korupciji-i-strankama-vest",
+      "title": "Petrašinović: Intervencije i u zakonima o sprečavanju korupcije i finansiranju stranaka",
+      "url": "https://www.euronews.rs/srbija/politika/222310/petrasinovic-izmene-zakona-o-korupciji-i-strankama/vest",
+      "date": "2026-05-05",
+      "datetime": "2026-05-05T21:28:00+00:00",
+      "time": "21:28",
+      "source": "Euronews Serbia",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "https-radar-nova-rs-drustvo-destrukcija-srca-beograda-",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "https-vreme-com-svet-deca-rat-sudan-tik-tok-drustvene-mreze-",
+      "title": "Dete, vojnik, influenser: Milioni pratilaca na TikToku",
+      "url": "https://vreme.com/svet/deca-rat-sudan-tik-tok-drustvene-mreze/",
+      "date": "2026-05-05",
+      "datetime": "2026-05-05T12:05:19+00:00",
+      "time": "12:05",
+      "source": "Vreme",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "a-9987405-potvrdjen-uzrok-smrti-rijaliti-zvezde-darela-sitsa",
+      "title": "Policija potvrdila da je rijaliti učesnik izvršio samoubistvo: Mesecima se suočavao sa internet nasiljem",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/9987405/potvrdjen-uzrok-smrti-rijaliti-zvezde-darela-sitsa",
+      "date": "2026-05-05",
+      "datetime": "2026-05-05T19:46:45+00:00",
+      "time": "19:46",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
