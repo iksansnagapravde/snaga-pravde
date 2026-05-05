@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 6187640.0,
+    "lowest": 4202.0,
+    "difference": 6183438.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107333925,
+    "file": "documents/107333925_Odluka o dodeli ugovora JN 14-O-26.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 33140.0,
     "lowest": 5202.0,
     "difference": 27938.0,
