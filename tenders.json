@@ -1,90 +1,112 @@
 [
   {
     "winner": null,
-    "accepted": 35940000.0,
-    "lowest": 1263.0,
-    "difference": 35938737.0,
+    "accepted": 400000000.0,
+    "lowest": 5202.0,
+    "difference": 399994798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111624183,
-    "file": "documents/111624183_Odluka o dodeli ugovora.pdf"
+    "id": 100892360,
+    "file": "documents/100892360_Odluka 1191.pdf"
   },
   {
     "winner": null,
-    "accepted": 2000000.0,
-    "lowest": 4202.0,
-    "difference": 1995798.0,
+    "accepted": 25000.0,
+    "lowest": 1202.0,
+    "difference": 23798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104129463,
-    "file": "documents/104129463_12.1 Odluka o dodeli ugovora.pdf"
+    "id": 112723288,
+    "file": "documents/112723288_ODLUKA 056.pdf"
   },
   {
     "winner": null,
-    "accepted": 450000000.0,
-    "lowest": 4345.0,
-    "difference": 449995655.0,
+    "accepted": 50188.0,
+    "lowest": 1202.0,
+    "difference": 48986.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka 802-0194-26.pdf"
+    "id": 106085391,
+    "file": "documents/106085391_ODLUKA 059.pdf"
   },
   {
     "winner": null,
-    "accepted": 25430497.0,
-    "lowest": 4202.0,
-    "difference": 25426295.0,
+    "accepted": 3600000.0,
+    "lowest": 1920.0,
+    "difference": 3598080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100172395,
-    "file": "documents/100172395_567105-1-3100-0460-2025 P-5.pdf"
+    "id": 114539521,
+    "file": "documents/114539521_Odluka sken hortikultura.pdf"
   },
   {
     "winner": null,
-    "accepted": 1169444.4,
-    "lowest": 4202.0,
-    "difference": 1165242.4,
+    "accepted": 400000.0,
+    "lowest": 2202.0,
+    "difference": 397798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101293388,
-    "file": "documents/101293388_Odluka.pdf"
+    "id": 100974574,
+    "file": "documents/100974574_ODLUKA 188.pdf"
   },
   {
     "winner": null,
-    "accepted": 2127588.0,
-    "lowest": 1772.99,
-    "difference": 2125815.01,
+    "accepted": 400000000.0,
+    "lowest": 5202.0,
+    "difference": 399994798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100255775,
-    "file": "documents/100255775_Odluka o dodeli ugovora 10-O-26.pdf"
+    "id": 100336082,
+    "file": "documents/100336082_Odluka 1190.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 14000000.0,
+    "lowest": 10110.0,
+    "difference": 13989890.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100001716,
+    "file": "documents/100001716_Odluka o dodeli ugovora jn D-10-26.pdf"
   },
   {
     "winner": null,
-    "accepted": 2500000.0,
-    "lowest": 4202.0,
-    "difference": 2495798.0,
+    "accepted": 26520.0,
+    "lowest": 3202.0,
+    "difference": 23318.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103920327,
-    "file": "documents/103920327_Odluka 6.pdf"
+    "id": 101708085,
+    "file": "documents/101708085_Odluka o dodeli kategorizacija opasnog otpada.pdf"
   },
   {
     "winner": null,
-    "accepted": 34000000.0,
-    "lowest": 4141.0,
-    "difference": 33995859.0,
+    "accepted": 4202.0,
+    "lowest": 1750.0,
+    "difference": 2452.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100038783,
-    "file": "documents/100038783_Odluka o dodeli ugovora 27-2026.pdf"
+    "id": 100230403,
+    "file": "documents/100230403_ODLUKA 176.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 15350522.4,
+    "lowest": 2323.0,
+    "difference": 15348199.4,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106339959,
+    "file": "documents/106339959_Odluka o dodeli ugovora.docx"
   }
 ]
