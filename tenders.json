@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 4202.0,
+    "difference": 399995798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100501967,
+    "file": "documents/100501967_5147-5 Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 1498.0,
+    "difference": 399998502.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106001296,
+    "file": "documents/106001296_5143-5 Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 3118800.0,
     "lowest": 5202.0,
     "difference": 3113598.0,
@@ -75,38 +97,5 @@
     "rejection_reasons": [],
     "id": 100892360,
     "file": "documents/100892360_Odluka 1191.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 25000.0,
-    "lowest": 1202.0,
-    "difference": 23798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112723288,
-    "file": "documents/112723288_ODLUKA 056.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 50188.0,
-    "lowest": 1202.0,
-    "difference": 48986.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106085391,
-    "file": "documents/106085391_ODLUKA 059.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 3600000.0,
-    "lowest": 1920.0,
-    "difference": 3598080.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 114539521,
-    "file": "documents/114539521_Odluka sken hortikultura.pdf"
   }
 ]
