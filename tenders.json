@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 44000.0,
+    "lowest": 5202.0,
+    "difference": 38798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101743912,
+    "file": "documents/101743912_Odluka o dodeli ugov-aminofilin.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 400000000.0,
     "lowest": 4202.0,
     "difference": 399995798.0,
@@ -31,71 +42,5 @@
     "rejection_reasons": [],
     "id": 100118806,
     "file": "documents/100118806_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 3029167.0,
-    "lowest": 5202.0,
-    "difference": 3023965.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100897904,
-    "file": "documents/100897904_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 5807990.0,
-    "lowest": 2202.0,
-    "difference": 5805788.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103923567,
-    "file": "documents/103923567_D-3-26 Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 11311757.0,
-    "lowest": 2245.0,
-    "difference": 11309512.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100041150,
-    "file": "documents/100041150_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 8440081.2,
-    "lowest": 2322.0,
-    "difference": 8437759.2,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106339959,
-    "file": "documents/106339959_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10000000.0,
-    "lowest": 5202.0,
-    "difference": 9994798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100048877,
-    "file": "documents/100048877_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 400000000.0,
-    "lowest": 5202.0,
-    "difference": 399994798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100892360,
-    "file": "documents/100892360_Odluka 1191.pdf"
   }
 ]
