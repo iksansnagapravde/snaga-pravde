@@ -57,6 +57,20 @@
       "priority": 100
     },
     {
+      "id": "-rs-scc-clanak-753152-uhapsen-zbog-ubistva-na-kanarevom-brdu",
+      "title": "Ухапшен због убиства на Канаревом брду",
+      "url": "https://www.politika.rs/scc/clanak/753152/uhapsen-zbog-ubistva-na-kanarevom-brdu",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T05:38:00+00:00",
+      "time": "05:38",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "-crna-gora-9988308-velika-akcija-granicne-policije-crne-gore",
       "title": "KOKAIN, MARIHUANA, EKSTAZI, PUŠKE, PIŠTOLJI, MUNICIJA... Velika akcija Granične policije Crne Gore: Evo šta je sve zaplenjeno - jedna osoba uhapšena",
       "url": "https://www.kurir.rs/region/crna-gora/9988308/velika-akcija-granicne-policije-crne-gore",
@@ -267,20 +281,6 @@
       "priority": 70
     },
     {
-      "id": "-muskarac-zbog-pretnji-porodici-sudije-viseg-suda-u-krusevcu",
-      "title": "Ухапшен мушкарац због претњи породици судије Вишег суда у Крушевцу",
-      "url": "https://www.politika.rs/scc/clanak/753128/uhapsen-muskarac-zbog-pretnji-porodici-sudije-viseg-suda-u-krusevcu",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T20:56:00+00:00",
-      "time": "20:56",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "22511-policija-u-beogradu-uhapsila-dvojicu-zbog-prevare-vest",
       "title": "Policija uhapsila dva lica osumnjičena za krivično delo prevara: Sumnja se da su oštetili više osoba za 25.000 evra",
       "url": "https://www.euronews.rs/srbija/aktuelno/222511/policija-u-beogradu-uhapsila-dvojicu-zbog-prevare/vest",
@@ -309,27 +309,13 @@
       "priority": 70
     },
     {
-      "id": "ava-za-napad-na-posmatrace-crte-u-izbornom-danu-2023-godine-",
-      "title": "\"Ne nadajte se pravdi\": Odbačena krivična prijava za napad na posmatrače CRTE  u izbornom danu 2023. godine",
-      "url": "https://nova.rs/vesti/politika/ne-nadajte-se-pravdi-odbacena-krivicna-prijava-za-napad-na-posmatrace-crte-u-izbornom-danu-2023-godine/",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T17:01:29+00:00",
-      "time": "17:01",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "ava-za-napad-na-nase-posmatrace-u-izbornom-danu-2023-godine-",
-      "title": "CRTA: Odbačena krivična prijava za napad na naše posmatrače u izbornom danu 2023. godine",
-      "url": "https://www.danas.rs/vesti/drustvo/crta-odbacena-krivicna-prijava-za-napad-na-nase-posmatrace-u-izbornom-danu-2023-godine/",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T16:42:04+00:00",
-      "time": "16:42",
-      "source": "Danas",
+      "id": "-od-100-ljudi-iz-rudnika-u-rusiji-16-rudara-zivotno-ugrozeno",
+      "title": "Евакусиано више од 100 људи из рудника у Русији, 16 рудара животно угрожено",
+      "url": "https://www.politika.rs/scc/clanak/753171/evakusiano-vise-od-100-ljudi-iz-rudnika-u-rusiji-16-rudara-zivotno-ugrozeno",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T05:21:00+00:00",
+      "time": "05:21",
+      "source": "Politika",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -363,20 +349,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "-dubravica-selo-izmestanje-rudnik-uglja-srbija-33748718-html",
-      "title": "Izmeštanje sela dok Srbija širi rudnike uprkos obavezi ukidanja struje na ugalj",
-      "url": "https://www.slobodnaevropa.org/a/dubravica-selo-izmestanje-rudnik-uglja-srbija/33748718.html",
-      "date": "2026-05-05",
-      "datetime": "2026-05-05T08:29:29+00:00",
-      "time": "08:29",
-      "source": "RSE Balkan",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
     },
     {
       "id": "a-rs-ekonomija-tok-saslusanje-kineskih-izvodaca-mup-igorise-",
@@ -491,6 +463,20 @@
       "priority": 26
     },
     {
+      "id": "ps-www-rts-rs-vesti-svet-5943568-nikola-sarkozi-presuda-html",
+      "title": "Саркози пуштен на условну слободу у случају \"Бигмалион\", неће носити наногицу",
+      "url": "https://www.rts.rs/vesti/svet/5943568/nikola-sarkozi-presuda.html",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T05:14:15+00:00",
+      "time": "05:14",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "n-lazic-javno-slusanje-o-mrdicevim-zakonima-ocigledna-farsa-",
       "title": "Lazić: Javno slušanje o izmenama Mrdićevih zakona je farsa, vlast nema za cilj ispunjenje preporuka Venecijanske komisije",
       "url": "https://n1info.rs/vesti/radovan-lazic-javno-slusanje-o-mrdicevim-zakonima-ocigledna-farsa/",
@@ -498,34 +484,6 @@
       "datetime": "2026-05-06T19:37:45+00:00",
       "time": "19:37",
       "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "1info-rs-najave-emisija-n1-direktno-izmene-mrdicevih-zakona-",
-      "title": "N1 Direktno:  Izmene \"Mrdićevih zakona\"",
-      "url": "https://n1info.rs/najave-emisija/n1-direktno-izmene-mrdicevih-zakona/",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T18:01:10+00:00",
-      "time": "18:01",
-      "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "rzano-prvo-javno-slusanje-o-izmenama-pravosudnih-zakona-html",
-      "title": "Одржано прво јавно слушање о изменама правосудних закона",
-      "url": "https://www.rts.rs/vesti/drustvo/5943198/odrzano-prvo-javno-slusanje-o-izmenama-pravosudnih-zakona.html",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T15:37:52+00:00",
-      "time": "15:37",
-      "source": "RTS",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
@@ -631,6 +589,20 @@
       "priority": 24
     },
     {
+      "id": "oj-skotskoj-i-velsu-danas-na-lokalnim-i-regionalnim-izborima",
+      "title": "Милиони бирача у Енглеској, Шкотској и Велсу данас на локалним и регионалним изборима",
+      "url": "https://www.politika.rs/scc/clanak/753182/milioni-biraca-u-engleskoj-skotskoj-i-velsu-danas-na-lokalnim-i-regionalnim-izborima",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T06:13:00+00:00",
+      "time": "06:13",
+      "source": "Politika",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "o-kompanija-kroacija-erlajns-otkazala-cak-900-letova-ks00f8d",
       "title": "Hrvatska nacionalna avio-kompanija Kroacija erlajns otkazala čak 900 letova",
       "url": "https://www.blic.rs/biznis/hrvatska-nacionalna-avio-kompanija-kroacija-erlajns-otkazala-cak-900-letova/ks00f8d",
@@ -673,20 +645,6 @@
       "priority": 8
     },
     {
-      "id": "nska-policija-zabranila-ruske-i-sovjetske-simbole-8-i-9-maja",
-      "title": "Берлинска полиција забранила руске и совјетске симболе 8. и 9. маја",
-      "url": "https://www.politika.rs/scc/clanak/753164/berlinska-policija-zabranila-ruske-i-sovjetske-simbole-8-i-9-maja",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T23:25:00+00:00",
-      "time": "23:25",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "a-uhapsila-dve-osobe-u-beogradu-zbog-prevare-od-25-000-evra-",
       "title": "Policija uhapsila dve osobe u Beogradu zbog prevare od 25.000 evra.",
       "url": "https://www.danas.rs/vesti/drustvo/policija-uhapsila-dve-osobe-u-beogradu-zbog-prevare-od-25-000-evra/",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "vesti-region-5943436-dve-zene-napadnute-nozem-ljubljana-html",
+      "title": "Две жене нападнуте ножем у Љубљани, једној се боре за живот",
+      "url": "https://www.rts.rs/vesti/region/5943436/dve-zene-napadnute-nozem-ljubljana.html",
+      "date": "2026-05-06",
+      "datetime": "2026-05-06T17:16:38+00:00",
+      "time": "17:16",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-apeluje-za-durdevdan-ako-konzumirate-alkohol-ne-vozite-vest",
+      "title": "MUP apeluje za Đurđevdan: Ako konzumirate alkohol, ne sedajte za volan - saobraćajna policija biće pojačano prisutna",
+      "url": "https://www.euronews.rs/srbija/aktuelno/222465/mup-apeluje-za-durdevdan-ako-konzumirate-alkohol-ne-vozite/vest",
+      "date": "2026-05-06",
+      "datetime": "2026-05-06T12:35:00+00:00",
+      "time": "12:35",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "https-n1info-rs-vesti-izbori-srbija-datum-analiticari-",
+      "title": "Đurđevdan, Petrovdan, možda ipak Mitrovdan ili Sveti Nikola: Prođe crkveni kalendar, a izbora nigde",
+      "url": "https://n1info.rs/vesti/izbori-srbija-datum-analiticari/",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T06:17:51+00:00",
+      "time": "06:17",
+      "source": "N1",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
