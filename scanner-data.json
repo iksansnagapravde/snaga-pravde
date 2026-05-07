@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "straliji-tri-opasne-zene-uhapsene-po-hitnom-postupku-qgds962",
-      "title": "UZBUNA NA AERODROMIMA U AUSTRALIJI! Policija uletela u avione čim su sleteli, TRI OPASNE ŽENE uhapšene po hitnom postupku",
-      "url": "https://www.blic.rs/vesti/svet/uzbuna-na-aerodromima-u-australiji-tri-opasne-zene-uhapsene-po-hitnom-postupku/qgds962",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T12:25:24+00:00",
-      "time": "12:25",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 170
-    },
-    {
       "id": "12-3-zene-povezane-s-islamskom-drzavom-uhapsene-u-australiji",
       "title": "UZBUNA NA AERODROMIMA U AUSTRALIJI! Policija uletela u avione čim su sleteli u Melburn i Sidnej, TRI OPASNE ŽENE uhapšene po HITNOM postupku! (FOTO)",
       "url": "https://www.kurir.rs/planeta/9988912/3-zene-povezane-s-islamskom-drzavom-uhapsene-u-australiji",
@@ -78,34 +64,6 @@
       "datetime": "2026-05-07T11:39:00+00:00",
       "time": "11:39",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "elo-saslusanje-studenta-uhapsenog-na-aerodromu-nikola-tesla-",
-      "title": "Počelo saslušanje studenta uhapšenog na Aerodromu \"Nikola Tesla\"",
-      "url": "https://nova.rs/vesti/hronika/pocelo-saslusanje-studenta-uhapsenog-na-aerodromu-nikola-tesla/",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T11:38:23+00:00",
-      "time": "11:38",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "onika-9988682-mladic-slao-devojcici-svoje-eksplicitne-snimke",
-      "title": "RASKRINKAN PEDOFIL, DEVOJČICI OD 12 GODINA SLAO EKSPLICITNE SNIMKE PREKO TIKTOKA! Otkriveno kako je pokušao da je nasamari, odmah uhapšen!",
-      "url": "https://www.kurir.rs/crna-hronika/9988682/mladic-slao-devojcici-svoje-eksplicitne-snimke",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T09:50:03+00:00",
-      "time": "09:50",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -183,6 +141,20 @@
       "priority": 92
     },
     {
+      "id": "esti-drustvo-mup-sabotira-tuzilastvo-u-slucaju-nadstresnica-",
+      "title": "MUP sabotira tužilaštvo u slučaju „Nadstrešnica“",
+      "url": "https://www.danas.rs/vesti/drustvo/mup-sabotira-tuzilastvo-u-slucaju-nadstresnica/",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T16:04:11+00:00",
+      "time": "16:04",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "je-mi-najjasnije-zasto-bi-ministar-pozvao-tuzioca-u-kabinet-",
       "title": "Radmilo Marković o sastanku Selakovića i Nenadića: Nije mi najjasnije zašto bi ministar pozvao tužioca u kabinet",
       "url": "https://n1info.rs/vesti/radmilo-markovic-o-sastanku-selakovica-i-nenadica-nije-mi-najjasnije-zasto-bi-ministar-pozvao-tuzioca-u-kabinet/",
@@ -253,6 +225,20 @@
       "priority": 70
     },
     {
+      "id": "ica-protiv-tri-osobe-zbog-ubistva-u-francuskoj-ulici-kjydpn5",
+      "title": "(FOTO) VALENTINA, SRĐAN I MIHALJ BRUTALNO UBILI MUŠKARCA U CENTRU BEOGRADA Tukli ga po telu metalnim i drvenim šipkama do smrti, tužilaštvo podiglo optužnicu",
+      "url": "https://www.blic.rs/vesti/hronika/podignuta-optuznica-protiv-tri-osobe-zbog-ubistva-u-francuskoj-ulici/kjydpn5",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T16:02:54+00:00",
+      "time": "16:02",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "tovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu-",
       "title": "Gorski Matović optužen za napad na studente na protestu u Novom Sadu",
       "url": "https://www.krik.rs/gorski-matovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu/",
@@ -279,6 +265,34 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "meru-mup-planira-veliku-novinu-na-nasim-autoputevima-dpq77cv",
+      "title": "\"OPASNOST! UOČENO VOZILO U KONTRASMERU!\" Uz presretače, srpska policija prekršaje lovi iz HELIKOPTERA, a u planu je i jedna velika novina na našim autoputevima",
+      "url": "https://www.blic.rs/vesti/drustvo/opasnost-uoceno-vozilo-u-kontrasmeru-mup-planira-veliku-novinu-na-nasim-autoputevima/dpq77cv",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T16:13:28+00:00",
+      "time": "16:13",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 64
+    },
+    {
+      "id": "07-gosti-emisije-bez-cenzure-o-sukobu-rezima-i-univerziteta-",
+      "title": "Gosti emisije „Bez cenzure“ o sukobu režima i univerziteta",
+      "url": "https://www.ktv.rs/2026/05/07/gosti-emisije-bez-cenzure-o-sukobu-rezima-i-univerziteta/",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T15:37:57+00:00",
+      "time": "15:37",
+      "source": "KTV",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "ma-obalu-i-kopno-a-kljucno-je-za-ovu-stvar-na-zemlji-h07fb1r",
@@ -337,20 +351,6 @@
       "priority": 60
     },
     {
-      "id": "eri-danijel-dasic-i-jelena-milosevic-pozvali-tok-da-reaguje-",
-      "title": "„Tokom gradnje akva parka u Nišu iz budžeta opljačkano 716 miliona dinara, umešani gradski i SNS funkcioneri“: Danijel Dašić i Jelena Milošević pozvali TOK da reaguje",
-      "url": "https://www.danas.rs/vesti/drustvo/tokom-gradnje-akva-parka-u-nisu-iz-budzeta-opljackano-716-miliona-dinara-umesani-gradski-i-sns-funkcioneri-danijel-dasic-i-jelena-milosevic-pozvali-tok-da-reaguje/",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T13:13:30+00:00",
-      "time": "13:13",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 38
-    },
-    {
       "id": "inu-zelenski-pod-pritiskom-zbog-afere-od-100-miliona-dolara-",
       "title": "Korupcijski skandal drma Ukrajinu: Zelenski pod pritiskom zbog afere od 100 miliona dolara",
       "url": "https://nova.rs/vesti/svet/korupcijski-skandal-drma-ukrajinu-zelenski-pod-pritiskom-zbog-afere-od-100-miliona-dolara/",
@@ -386,20 +386,6 @@
       "datetime": "2026-05-07T14:55:42+00:00",
       "time": "14:55",
       "source": "Blic",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "https-www-danas-rs-svet-kina-smrtna-kazna-ministri-odbrane-",
-      "title": "Smrtna kazna za dvojicu bivših ministara odbrane Kine",
-      "url": "https://www.danas.rs/svet/kina-smrtna-kazna-ministri-odbrane/",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T12:36:40+00:00",
-      "time": "12:36",
-      "source": "Danas",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -449,6 +435,20 @@
       "priority": 30
     },
     {
+      "id": "w-danas-rs-vesti-politika-psg-povuci-promene-izborne-zakone-",
+      "title": "PSG traži da se iz procedure povuku Petrašinovićeve izmene izbornih zakona",
+      "url": "https://www.danas.rs/vesti/politika/psg-povuci-promene-izborne-zakone/",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T15:38:42+00:00",
+      "time": "15:38",
+      "source": "Danas",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "e-iz-procedure-povuku-petrasinoviceve-izmene-izbornih-zakona",
       "title": "PSG traži da se iz procedure povuku Petrašinovićeve izmene izbornih zakona",
       "url": "https://beta.rs/content/244283-psg-trazi-da-se-iz-procedure-povuku-petrasinoviceve-izmene-izbornih-zakona",
@@ -470,20 +470,6 @@
       "datetime": "2026-05-07T14:01:16+00:00",
       "time": "14:01",
       "source": "Blic",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "izije-orf-traze-kraj-partijskih-veza-zloupotreba-i-nepotizma",
-      "title": "Novinari austrijske televizije ORF traže kraj partijskih veza, zloupotreba i nepotizma",
-      "url": "https://beta.rs/content/244275-novinari-austrijske-televizije-orf-traze-kraj-partijskih-veza-zloupotreba-i-nepotizma",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T13:45:12+00:00",
-      "time": "13:45",
-      "source": "Beta",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
@@ -533,32 +519,46 @@
       "priority": 28
     },
     {
-      "id": "ujem-da-ce-se-sve-zavrsiti-u-redovnom-postupku-bez-pritvora-",
-      "title": "Vučić o studentu Mišiću: Mogla je Srbija da ostane bez struje, verujem da će se sve završiti u redovnom postupku, bez pritvora",
-      "url": "https://n1info.rs/vesti/vucic-o-hapsenju-studenta-misica-mogla-je-srbija-da-bude-ostavljena-bez-struje-verujem-da-ce-se-sve-zavrsiti-u-redovnom-postupku-bez-pritvora/",
+      "id": "osudnih-zakona-u-skladu-sa-preporukama-venecijanske-komisije",
+      "title": "Министар Вујић представио измене правосудних закона у складу са препорукама Венецијанске комисије",
+      "url": "https://www.politika.rs/scc/clanak/753345/ministar-vujic-predstavio-izmene-pravosudnih-zakona-u-skladu-sa-preporukama-venecijanske-komisije",
       "date": "2026-05-07",
-      "datetime": "2026-05-07T11:22:05+00:00",
-      "time": "11:22",
-      "source": "N1",
-      "category": "Хапшења",
+      "datetime": "2026-05-07T17:16:00+00:00",
+      "time": "17:16",
+      "source": "Politika",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
     },
     {
-      "id": "kiran-avijaticarski-trg-zbog-hapsenja-studenta-na-aerodromu-",
-      "title": "Studenti i građani blokirali Avijatičarski trg zbog hapšenja studenta Lazara na Aerodromu",
-      "url": "https://nova.rs/vesti/drustvo/blokiran-avijaticarski-trg-zbog-hapsenja-studenta-na-aerodromu/",
+      "id": "-politika-5944475-izmene-izbornih-zakona-javno-slusanje-html",
+      "title": "Четврто јавно слушање о изменама изборних закона – присуствовали посланици и представници стручне јавности",
+      "url": "https://www.rts.rs/vesti/politika/5944475/izmene-izbornih-zakona-javno-slusanje.html",
       "date": "2026-05-07",
-      "datetime": "2026-05-07T11:20:30+00:00",
-      "time": "11:20",
-      "source": "Nova",
-      "category": "Хапшења",
+      "datetime": "2026-05-07T17:08:35+00:00",
+      "time": "17:08",
+      "source": "RTS",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
+    },
+    {
+      "id": "81-reforme-pravosudnih-zakona-predstavljene-na-sastanku-vest",
+      "title": "Vujić predstavio rešenja za usklađivanje seta pravosudnih zakona sa mišljenjem Venecijanske komisije",
+      "url": "https://www.euronews.rs/srbija/politika/222681/reforme-pravosudnih-zakona-predstavljene-na-sastanku/vest",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T15:40:00+00:00",
+      "time": "15:40",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "-student-u-skupstini-o-izbornim-zakonima-studenti-pobedjuju-",
@@ -603,34 +603,6 @@
       "priority": 25
     },
     {
-      "id": "-miodrag-markovic-u-skupstini-podrzao-antiblokadni-mehanizam",
-      "title": "TUŽILAC MARKOVIĆ U SKUPŠTINI PODRŽAO ANTIBLOKADNI MEHANIZAM: Upozorio da srpsko pravosuđe ne smeju da vode ''izdiktirana imena''",
-      "url": "https://www.kurir.rs/vesti/politika/9988727/tuzilac-miodrag-markovic-u-skupstini-podrzao-antiblokadni-mehanizam",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T10:23:09+00:00",
-      "time": "10:23",
-      "source": "Kurir",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "43726-kosovo-i-metohija-odalovic-sudjenja-ratni-zlocini-html",
-      "title": "Одаловић: Добро се продаје прича да су Срби криви за све",
-      "url": "https://www.rts.rs/vesti/politika/5943726/kosovo-i-metohija-odalovic-sudjenja-ratni-zlocini.html",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T09:19:29+00:00",
-      "time": "09:19",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "2-javna-slusanja-o-izmenama-pravosudnih-zakona-u-srbiji-vest",
       "title": "Održano prvo javno slušanje o izmenama pravosudnih zakona, a u vezi sa mišljenjem Venecijanske komisije",
       "url": "https://www.euronews.rs/srbija/politika/222472/javna-slusanja-o-izmenama-pravosudnih-zakona-u-srbiji/vest",
@@ -657,6 +629,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "voje-jovovic-duznost-mi-je-da-trpim-batine-umesto-studenata-",
+      "title": "Podkast „Neposlušni“ – Gost 17. epizode profesor Radivoje Jovović: Dužnost mi je da trpim batine umesto studenata",
+      "url": "https://www.danas.rs/podkast/podkast-neposlusni-gost-17-epizode-profesor-radivoje-jovovic-duznost-mi-je-da-trpim-batine-umesto-studenata/",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T16:41:40+00:00",
+      "time": "16:41",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "-alonso-otkriva-razloge-odlaska-iz-popularne-netflix-l3dn9kn",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "dru-mauntbaten-vindzor-policija-uhapsila-naoruzanog-muskarca",
+      "title": "Нападнут Ендру Маунтбатен-Виндзор, полиција ухапсила наоружаног мушкарца",
+      "url": "https://www.politika.rs/scc/clanak/753361/napadnut-endru-mauntbaten-vindzor-policija-uhapsila-naoruzanog-muskarca",
+      "date": "2026-05-07",
+      "datetime": "2026-05-07T16:28:00+00:00",
+      "time": "16:28",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
