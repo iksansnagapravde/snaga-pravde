@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "pocetku-lici-na-grip-a-onda-otkazuju-pluca-i-bubrezi-83egstc",
-      "title": "\"U početku liči na grip, a onda OTKAZUJU PLUĆA I BUBREZI\" Ovo su bili prvi simptomi hantavirusa na kruzeru smrti: IMA SLIČNU SMRTNOST KAO KUGA",
-      "url": "https://www.blic.rs/vesti/svet/prvi-simptomi-hantavirusa-u-pocetku-lici-na-grip-a-onda-otkazuju-pluca-i-bubrezi/83egstc",
-      "date": "2026-05-08",
-      "datetime": "2026-05-08T13:14:10+00:00",
-      "time": "13:14",
-      "source": "Blic",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "uhapsen-muskarac-u-leskovcu-zbog-sumnje-na-utaju-poreza-vest",
       "title": "Uhapšen muškarac u Leskovcu: Sumnja se da je za dve godine utajio više od 150 miliona na porezu",
       "url": "https://www.euronews.rs/srbija/aktuelno/222816/uhapsen-muskarac-u-leskovcu-zbog-sumnje-na-utaju-poreza/vest",
@@ -113,18 +99,18 @@
       "priority": 92
     },
     {
-      "id": "ripremili-teren-ali-presudni-potez-povukli-pojedinci-iz-vst-",
-      "title": "Lični stav Tamare Tankosić: Pravosudni zakoni pripremili teren, ali presudni potez povukli pojedinci iz VST",
-      "url": "https://nova.rs/vesti/hronika/licni-stav-tamare-tankosic-pravosudni-zakoni-pripremili-teren-ali-presudni-potez-povukli-pojedinci-iz-vst/",
+      "id": "protiv-pripadnika-obezbedjenja-premijera-severne-makedonije-",
+      "title": "Podignuta optužnica protiv pripadnika obezbeđenja premijera Severne Makedonije",
+      "url": "https://nova.rs/vesti/svet/podignuta-optuznica-protiv-pripadnika-obezbedjenja-premijera-severne-makedonije/",
       "date": "2026-05-08",
-      "datetime": "2026-05-08T14:15:59+00:00",
-      "time": "14:15",
+      "datetime": "2026-05-08T18:31:41+00:00",
+      "time": "18:31",
       "source": "Nova",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 84
+      "priority": 90
     },
     {
       "id": "-nis-mol-prodaja-kupac-srbija-rusija-madjarska-33752107-html",
@@ -239,6 +225,34 @@
       "priority": 66
     },
     {
+      "id": "rigliceride-najcesce-zablude-i-saveti-za-zdravo-srce-crwvdpk",
+      "title": "Reč struke: Pet opasnih mitova o trigliceridima u koje mnogi i dalje veruju",
+      "url": "https://www.blic.rs/zdravlje/zdravstvena-stanja/kako-sniziti-trigliceride-najcesce-zablude-i-saveti-za-zdravo-srce/crwvdpk",
+      "date": "2026-05-08",
+      "datetime": "2026-05-08T17:45:00+00:00",
+      "time": "17:45",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
+      "id": "ara-iz-budzeta-vojvodine-firmi-andreasa-miscevica-u-indjiji-",
+      "title": "Tri miliona dinara iz budžeta Vojvodine firmi Andreasa Miščevića u Inđiji",
+      "url": "https://nova.rs/vesti/politika/tri-miliona-dinara-iz-budzeta-vojvodine-firmi-andreasa-miscevica-u-indjiji/",
+      "date": "2026-05-08",
+      "datetime": "2026-05-08T18:13:49+00:00",
+      "time": "18:13",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 38
+    },
+    {
       "id": "inara-iz-budzeta-vojvodine-firmi-andreasa-miscevica-u-indiji",
       "title": "SRCE: Tri miliona dinara iz budžeta Vojvodine firmi Andreasa Miščevića u Inđiji",
       "url": "https://beta.rs/content/244346-srce-tri-miliona-dinara-iz-budzeta-vojvodine-firmi-andreasa-miscevica-u-indiji",
@@ -295,6 +309,20 @@
       "priority": 30
     },
     {
+      "id": "https-n1info-rs-vesti-vaterpolo-reprezentacija-soro-srbija-",
+      "title": "Ko se bavi politikom, a ko zloupotrebljava sport: Ne smiruju se strasti nakon povlačenja vaterpolista iz reprezentacije",
+      "url": "https://n1info.rs/vesti/vaterpolo-reprezentacija-soro-srbija/",
+      "date": "2026-05-08",
+      "datetime": "2026-05-08T18:45:33+00:00",
+      "time": "18:45",
+      "source": "N1",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "-222573-upozorenje-ne-otvarajte-prevarantske-sms-poruke-vest",
       "title": "Putevi Srbije: Ne otvarajte SMS poruke o navodnim saobraćajnim prekršajima",
       "url": "https://www.euronews.rs/srbija/drustvo/222573/upozorenje-ne-otvarajte-prevarantske-sms-poruke/vest",
@@ -321,6 +349,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "-osam-zahteva-tok-a-da-li-su-kinezi-van-domasaja-pravosudja-",
+      "title": "MUP ignorisao čak osam zahteva TOK-a: Da li su Kinezi van domašaja pravosuđa?",
+      "url": "https://n1info.rs/vesti/mup-ignorisao-cak-osam-zahteva-tok-a-da-li-su-kinezi-van-domasaja-pravosudja/",
+      "date": "2026-05-08",
+      "datetime": "2026-05-08T18:10:00+00:00",
+      "time": "18:10",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "53-izmene-pravosudnih-zakona-stigle-u-narodnu-skupstinu-vest",
@@ -491,34 +533,6 @@
       "priority": 24
     },
     {
-      "id": "erpolo-reprezentacija-srbije-slobodan-soro-aleksandar-sapic-",
-      "title": "(VIDEO) Šefik stao uz vaterpoliste: „Od najtrofejnijih saveza sveta do organizovanog kriminala“",
-      "url": "https://www.danas.rs/sport/denis-sefik-vaterpolo-reprezentacija-srbije-slobodan-soro-aleksandar-sapic/",
-      "date": "2026-05-08",
-      "datetime": "2026-05-08T13:50:12+00:00",
-      "time": "13:50",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "esti-drustvo-premestanje-legije-u-zatvor-sa-boljim-uslovima-",
-      "title": "Premeštanje Legije u zatvor sa blažim merama bila bi poruka vlasti šta misli o njegovim ubistvima i kriminalu",
-      "url": "https://www.danas.rs/vesti/drustvo/premestanje-legije-u-zatvor-sa-boljim-uslovima/",
-      "date": "2026-05-08",
-      "datetime": "2026-05-08T13:15:43+00:00",
-      "time": "13:15",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "pa-org-a-crvene-beretke-veterani-srbija-budzet-33752156-html",
       "title": "Novac iz budžeta Srbije za veterane Crvenih beretki",
       "url": "https://www.slobodnaevropa.org/a/crvene-beretke-veterani-srbija-budzet/33752156.html",
@@ -652,20 +666,6 @@
       "datetime": "2026-05-08T15:40:09+00:00",
       "time": "15:40",
       "source": "Beta",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "z-banke-u-nemackoj-drama-trajala-satima-osumnjiceni-pobegli-",
-      "title": "Specijalci oslobodili taoce iz banke u Nemačkoj: Drama trajala satima, osumnjičeni pobegli",
-      "url": "https://nova.rs/vesti/svet/specijalci-oslobodili-taoce-iz-banke-u-nemackoj-drama-trajala-satima-osumnjiceni-pobegli/",
-      "date": "2026-05-08",
-      "datetime": "2026-05-08T14:36:33+00:00",
-      "time": "14:36",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
