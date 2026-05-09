@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 24000000.0,
+    "lowest": 5202.0,
+    "difference": 23994798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104425803,
+    "file": "documents/104425803_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 35606127.38,
     "lowest": 5202.0,
     "difference": 35600925.38,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 102128144,
     "file": "documents/102128144_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 8000000.0,
-    "lowest": 1680.0,
-    "difference": 7998320.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109485762,
-    "file": "documents/109485762_Odluka o dodeli ugovora.pdf"
   }
 ]
