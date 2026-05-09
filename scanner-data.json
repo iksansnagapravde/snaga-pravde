@@ -127,18 +127,18 @@
       "priority": 92
     },
     {
-      "id": "9-uhapsen-osumnjiceni-za-pedofiliju-iz-okoline-beograda-vest",
-      "title": "Uhapšen osumnjičeni iz okoline Beograda za pedofiliju: \"Vrbovao\" devojčicu (12) na TikToku i Vajberu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/222629/uhapsen-osumnjiceni-za-pedofiliju-iz-okoline-beograda/vest",
-      "date": "2026-05-07",
-      "datetime": "2026-05-07T11:39:00+00:00",
-      "time": "11:39",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
+      "id": "lje-od-pravde-umesto-presuda-stize-plutajuca-betonska-kocka-",
+      "title": "Slučaj „nadstrešnica“ sve dalje od pravde: Umesto presuda stiže plutajuća betonska kocka",
+      "url": "https://www.danas.rs/vesti/drustvo/slucaj-nadstresnica-sve-dalje-od-pravde-umesto-presuda-stize-plutajuca-betonska-kocka/",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:53:36+00:00",
+      "time": "11:53",
+      "source": "Danas",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 92
+      "priority": 90
     },
     {
       "id": "svet-gabor-bodis-peter-madjar-prvi-potez-vlada-inauguracija-",
@@ -153,6 +153,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "e-govori-sve-ali-tuzilastvo-i-policija-i-dalje-ne-postupaju-",
+      "title": "\"Terali su me da priznam da posedujem narkotike\": Jeziva ispovest člana zbora Rakovica kog su oteli i pretukli SNS batinaši. Njegovo lice govori sve, ali tužilaštvo i policija i dalje ne postupaju",
+      "url": "https://nova.rs/vesti/hronika/terali-su-me-da-priznam-da-posedujem-narkotike-jeziva-ispovest-clana-zbora-rakovica-kog-su-pretukli-sns-batinasi-njegovo-lice-govori-sve-ali-tuzilastvo-i-policija-i-dalje-ne-postupaju/",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T12:07:20+00:00",
+      "time": "12:07",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "esti-ubijen-mladic-u-krusevcu-uhapsena-dvojica-osumnjicenih-",
@@ -181,6 +195,20 @@
       "breaking": false,
       "alert": true,
       "priority": 68
+    },
+    {
+      "id": "17-u-italiji-se-srusila-betonska-konstrukcija-poginuo-radnik",
+      "title": "У Италији се срушила бетонска конструкција, погинуо радник",
+      "url": "https://www.politika.rs/scc/clanak/753817/u-italiji-se-srusila-betonska-konstrukcija-poginuo-radnik",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:35:00+00:00",
+      "time": "11:35",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "tovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu-",
@@ -281,20 +309,6 @@
       "priority": 26
     },
     {
-      "id": "s-sport-kosarka-9989497-bivsi-kosarkas-partizana-suspendovan",
-      "title": "BIVŠI KOŠARKAŠ PARTIZANA KOJI JE HAPŠEN ZBOG DROGE U CENTRU NOVOG SKANDALA! Bio je miljenik navijača, a sada je upao u novi problem!",
-      "url": "https://www.kurir.rs/sport/kosarka/9989497/bivsi-kosarkas-partizana-suspendovan",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T04:59:41+00:00",
-      "time": "04:59",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "ww-rts-rs-vesti-region-5945654-albanija-protesti-tirana-html",
       "title": "Протести у Тирани – поново сукоби полиције и демонстраната",
       "url": "https://www.rts.rs/vesti/region/5945654/albanija-protesti-tirana.html",
@@ -307,6 +321,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "www-rts-rs-vesti-politika-5945911-venecijanska-komisija-html",
+      "title": "Вујић: Очекујем хитан одговор  Венецијанске комисије на предлог измена правосудних закона",
+      "url": "https://www.rts.rs/vesti/politika/5945911/venecijanska-komisija.html",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:56:46+00:00",
+      "time": "11:56",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "tovala-preporuke-venecijanske-komisije-o-mrdicevim-zakonima-",
@@ -393,20 +421,6 @@
       "priority": 24
     },
     {
-      "id": "k-753798-trampov-medijski-gigant-u-minusu-406-miliona-dolara",
-      "title": "Трампов медијски гигант у минусу 406 милиона долара",
-      "url": "https://www.politika.rs/scc/clanak/753798/trampov-medijski-gigant-u-minusu-406-miliona-dolara",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:03:00+00:00",
-      "time": "10:03",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "miliona-putnika-moglo-bi-ostati-bez-letova-cene-avio-z6kd0tv",
       "title": "Nemačka upozorava: Više od 20 miliona putnika moglo bi ostati bez letova, cene avio-karata idu u nebo",
       "url": "https://www.blic.rs/biznis/vesti/nemacka-upozorava-vise-od-20-miliona-putnika-moglo-bi-ostati-bez-letova-cene-avio/z6kd0tv",
@@ -463,20 +477,6 @@
       "priority": 4
     },
     {
-      "id": "-automobil-udario-vise-pesaka-u-notingamsiru-vozac-u-bekstvu",
-      "title": "Аутомобил ударио више пешака у Нотингамширу, возач у бекству",
-      "url": "https://www.politika.rs/scc/clanak/753803/automobil-udario-vise-pesaka-u-notingamsiru-vozac-u-bekstvu",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:16:00+00:00",
-      "time": "10:16",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-9990358-milenu-vitanovu-ubio-muz-pa-pokusao-sebi-da-presudi",
       "title": "OVO JE MILENA KOJU JE MUŽ ZVERSKI UBIO: Otišao na grob sina koji je živ izgoreo pa uradio nešto podmuklo, policija zatekla jeziv prizor (foto)",
       "url": "https://www.kurir.rs/planeta/9990358/milenu-vitanovu-ubio-muz-pa-pokusao-sebi-da-presudi",
@@ -503,6 +503,76 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "atislav-braca-markovic-glasao-bih-za-vucica-ali-sam-zbunjen-",
+      "title": "Glasao bih za Vučića, ali sam zbunjen",
+      "url": "https://www.danas.rs/kolumna/bratislav-braca-markovic/glasao-bih-za-vucica-ali-sam-zbunjen/",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T12:00:44+00:00",
+      "time": "12:00",
+      "source": "Danas",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "automobil-dok-porodica-u-vozilu-vristi-deca-su-istraumirana-",
+      "title": "Snimak medveda koji napada automobil dok porodica u vozilu vrišti: \"Deca su istraumirana\"",
+      "url": "https://nova.rs/magazin/prica-se/snimak-medveda-koji-napada-automobil-dok-porodica-u-vozilu-vristi-deca-su-istraumirana/",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:59:15+00:00",
+      "time": "11:59",
+      "source": "Nova",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ova-rs-zabava-sudbine-poginuo-bubnjar-novosadskog-benda-snb-",
+      "title": "Poginuo bubnjar novosadskog benda SNB",
+      "url": "https://nova.rs/zabava/sudbine/poginuo-bubnjar-novosadskog-benda-snb/",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:57:03+00:00",
+      "time": "11:57",
+      "source": "Nova",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "at-ruke-svejedno-je-da-li-ce-biti-za-dva-ili-pet-meseci-html",
+      "title": "Вучић: Избори су надохват руке, свеједно је да ли ће бити за два или пет месеци",
+      "url": "https://www.rts.rs/vesti/politika/5945879/vucic-izbori-su-nadohvat-ruke-svejedno-je-da-li-ce-biti-za-dva-ili-pet-meseci.html",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:43:52+00:00",
+      "time": "11:43",
+      "source": "RTS",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "agradjena-zbog-svoje-istorijske-uloge-u-borbi-protiv-fasizma",
+      "title": "\"DAN SLOBODARSKE TEKOVINE I NASLEĐA\" Đurđević Stamenkovski: Srbija treba da bude nagrađena, zbog svoje istorijske uloge u borbi protiv fašizma",
+      "url": "https://www.kurir.rs/vesti/politika/9990509/DAN-SLOBODARSKE-TEKOVINE-I-NASLEDjA-Djurdjevic-Stamenkovski-Srbija-treba-da-bude-nagradjena-zbog-svoje-istorijske-uloge-u-borbi-protiv-fasizma",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T11:35:50+00:00",
+      "time": "11:35",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "ja-svesna-poraza-na-izborima-priziva-haos-i-nasilje-na-ulici",
@@ -575,20 +645,6 @@
       "priority": 0
     },
     {
-      "id": "at-ruke-svejedno-je-da-li-ce-biti-za-dva-ili-pet-meseci-html",
-      "title": "Вучић: Избори су надохват руке, свеједно је да ли ће бити за два или пет месеци",
-      "url": "https://www.rts.rs/vesti/politika/5945879/vucic-izbori-su-nadohvat-ruke-svejedno-je-da-li-ce-biti-za-dva-ili-pet-meseci.html",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:49:45+00:00",
-      "time": "10:49",
-      "source": "RTS",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "i-cipela-sokantna-ispovest-pacijenta-doktorke-marije-2kdsfbx",
       "title": "Doktorka Marija zavela psihički labilnog čoveka - radili \"one stvari\" na zadnjem sedištu auta i u bolnici: Odlučio je da PROGOVORI O SVEMU",
       "url": "https://www.blic.rs/slobodno-vreme/ses-u-ordinaciji-i-300-pari-cipela-sokantna-ispovest-pacijenta-doktorke-marije/2kdsfbx",
@@ -631,20 +687,6 @@
       "priority": 0
     },
     {
-      "id": "05-ruski-mediji-kolumbijac-se-predao-u-borbama-kod-kupjanska",
-      "title": "Руски медији: Колумбијац се предао у борбама код Купјанска",
-      "url": "https://www.politika.rs/scc/clanak/753805/ruski-mediji-kolumbijac-se-predao-u-borbama-kod-kupjanska",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:32:00+00:00",
-      "time": "10:32",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "udenti-u-blokadi-su-sve-deca-bogatih-i-privilegovanih-ljudi-",
       "title": "Vučić: Studenti u blokadi su sve deca bogatih i privilegovanih ljudi",
       "url": "https://nova.rs/vesti/politika/vucic-studenti-u-blokadi-su-sve-deca-bogatih-i-privilegovanih-ljudi/",
@@ -653,48 +695,6 @@
       "time": "10:28",
       "source": "Nova",
       "category": "Права деце",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "ila-za-5000-evra-10-polovnih-automobila-za-5000-evra-6cnv3vt",
-      "title": "Od malih gradskih do Roadstera i porodičnih vozila: Ovo je top 10 polovnih automobila za 5.000 evra",
-      "url": "https://www.blic.rs/biznis/vesti/ovo-je-top-10-polovnih-automobila-za-5000-evra-10-polovnih-automobila-za-5000-evra/6cnv3vt",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:12:01+00:00",
-      "time": "10:12",
-      "source": "Blic",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "-9990453-vucic-izbore-raspisujemo-kada-je-to-dobro-za-drzavu",
-      "title": "\"IZBORE RASPISUJETE KADA JE TO DOBRO ZA DRŽAVU\" Vučić o blokaderima: Dobro je da svoje ideje suprotstave idejama napretka, izgradnje škola, bolnica, puteva...",
-      "url": "https://www.kurir.rs/vesti/politika/9990453/vucic-izbore-raspisujemo-kada-je-to-dobro-za-drzavu",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:06:34+00:00",
-      "time": "10:06",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "a-u-srbiji-raspisuju-se-kada-su-pogodni-uslovi-za-to-68dqmwt",
-      "title": "\"IZBORI SU TU\" Vučić: \"Raspisujete ih kada je to dobro za državu, da li će biti za dva ili pet meseci, potpuno je svejedno\" (VIDEO)",
-      "url": "https://www.blic.rs/vesti/politika/vucic-o-izborima-u-srbiji-raspisuju-se-kada-su-pogodni-uslovi-za-to/68dqmwt",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T10:03:58+00:00",
-      "time": "10:03",
-      "source": "Blic",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
