@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "-u-krusevcu-izboli-ga-i-ostavili-ga-na-ulici-da-umre-brp2b65",
-      "title": "IZBO GA NA ULICI I OSTAVIO GA DA UMRE Detalji brutalnog ubistva mladića (22) u Kruševcu: Prolaznici ga našli u lokvi krvi, uhapšene dve osobe, jedna žrtvi DUGOVALA NOVAC?",
-      "url": "https://www.blic.rs/vesti/hronika/detalji-ubistva-mladica-u-krusevcu-izboli-ga-i-ostavili-ga-na-ulici-da-umre/brp2b65",
-      "date": "2026-05-08",
-      "datetime": "2026-05-08T22:54:22+00:00",
-      "time": "22:54",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "en-mladic-u-krusevackom-naselju-bare-dve-osobe-uhapsene-html",
       "title": "Убијен младић у крушевачком насељу Баре, две особе ухапшене",
       "url": "https://www.rts.rs/vesti/hronika/5945701/ubijen-mladic-u-krusevackom-naselju-bare-dve-osobe-uhapsene-.html",
@@ -601,6 +587,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "a-mladica-u-krusevcu-osumnjiceni-zrtvi-dugovao-novac-brp2b65",
+      "title": "OSUMNJIČENI ZA UBISTVO ŽRTVI DUGOVAO NOVAC? Detalji brutalnog zločina u Kruševcu: Izbo ga na ulici i ostavio ga da umre, telo u lokvi krvi pronašli prolaznici",
+      "url": "https://www.blic.rs/vesti/hronika/detalji-ubistva-mladica-u-krusevcu-osumnjiceni-zrtvi-dugovao-novac/brp2b65",
+      "date": "2026-05-08",
+      "datetime": "2026-05-08T22:54:22+00:00",
+      "time": "22:54",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "uru-za-novi-mandat-na-mestu-gradonacelnika-ljubljane-xqv8qvc",
