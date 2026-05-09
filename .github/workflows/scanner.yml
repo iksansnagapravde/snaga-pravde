@@ -103,6 +103,14 @@ jobs:
           TOPIC_WORDS = [
               # osnovno
               "korup", "коруп",
+              "udruženj","удружењ",
+              "poziv", "позив",
+              "hapš", "хапш",
+              "zakon", "закон",
+              "konkurs", "конкурс",
+              "tender", "тендер",
+              "razreš", "разреш",
+              "smenjen", "смењен",
               "zloupotreb", "злоупотреб",
               "hapšen", "hapsenje", "hapšenja", "хапшењ", "ухапшен",
               "izvrš", "izvrs", "изврш", "dug", "дуг",
