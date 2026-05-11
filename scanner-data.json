@@ -99,20 +99,6 @@
       "priority": 84
     },
     {
-      "id": "isic-ga-predstavljao-kao-pojacanje-sad-zavrsio-iza-resetaka-",
-      "title": "SAZNAJEMO Funkcioner SNS-a Predrag Milošević uhapšen sa pola miliona tableta bensedina: Darko Glišić ga predstavljao kao pojačanje, sad završio iza rešetaka",
-      "url": "https://nova.rs/vesti/hronika/saznajemo-funkcioner-sns-a-predrag-milosevic-uhapsen-sa-pola-miliona-tableta-bensedina-darko-glisic-ga-predstavljao-kao-pojacanje-sad-zavrsio-iza-resetaka/",
-      "date": "2026-05-11",
-      "datetime": "2026-05-11T16:35:57+00:00",
-      "time": "16:35",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 78
-    },
-    {
       "id": "ovako-su-pohapseni-placenici-skaljarskog-klana-video-nrh1wtx",
       "title": "(FOTO,VIDEO) POGLEDAJTE KAKO SU POHAPŠENI PLAĆENICI ŠKALJARSKOG KLANA Policija upala u štek stanove, \"pali\" u donjem vešu! Sumnjiče se za NAJTEŽA DELA",
       "url": "https://www.blic.rs/vesti/hronika/ovako-su-pohapseni-placenici-skaljarskog-klana-video/nrh1wtx",
@@ -345,20 +331,6 @@
       "time": "18:13",
       "source": "Nova",
       "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "ukciju-meta-dejmona-i-bena-afleka-zbog-filma-the-rip-mc7sfv6",
-      "title": "POLICIJA TUŽI DEJMONA I AFLEKA Skandal oko filma \"The Rip\": \"Ljudi me pitaju koliko sam novca ukrao\"",
-      "url": "https://www.blic.rs/kultura/policija-majamija-tuzi-produkciju-meta-dejmona-i-bena-afleka-zbog-filma-the-rip/mc7sfv6",
-      "date": "2026-05-11",
-      "datetime": "2026-05-11T15:15:00+00:00",
-      "time": "15:15",
-      "source": "Blic",
-      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -603,20 +575,6 @@
       "priority": 4
     },
     {
-      "id": "-danas-rs-svet-region-hrvatska-policija-traga-za-crnogorcem-",
-      "title": "Hrvatska policija traga za Crnogorcem zbog prevoza migranata koji su umrli",
-      "url": "https://www.danas.rs/svet/region/hrvatska-policija-traga-za-crnogorcem/",
-      "date": "2026-05-11",
-      "datetime": "2026-05-11T16:31:32+00:00",
-      "time": "16:31",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "ja-traga-za-crnogorcem-zbog-prevoza-migranata-koji-su-umrli-",
       "title": "Hrvatska policija traga za Crnogorcem zbog prevoza migranata koji su umrli",
       "url": "https://n1info.rs/region/hrvatska-policija-traga-za-crnogorcem-zbog-prevoza-migranata-koji-su-umrli/",
@@ -659,20 +617,6 @@
       "priority": 4
     },
     {
-      "id": "icija-ne-primenjuje-zakon-stiti-cacilend-umesto-reda-i-mira-",
-      "title": "SRCE: Policija ne primenjuje zakon, štiti Ćacilend umesto reda i mira",
-      "url": "https://n1info.rs/vesti/srce-policija-ne-primenjuje-zakon-stiti-cacilend-umesto-reda-i-mira/",
-      "date": "2026-05-11",
-      "datetime": "2026-05-11T15:27:49+00:00",
-      "time": "15:27",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "zrenjanin-kod-avale-studenti-pobedjuju-ili-srbija-pobedjuje-",
       "title": "Zrenjanin kod Avale: Studenti pobeđuju ili Srbija pobeđuje",
       "url": "https://www.ktv.rs/2026/05/11/zrenjanin-kod-avale-studenti-pobedjuju-ili-srbija-pobedjuje/",
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "ija-aktuelno-223017-policija-traga-za-muskarcem-na-umki-vest",
+      "title": "Policija traga za muškarcem koji je nakon proslave na Umki upao u reku Savu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/223017/policija-traga-za-muskarcem-na-umki/vest",
+      "date": "2026-05-10",
+      "datetime": "2026-05-10T09:10:00+00:00",
+      "time": "09:10",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "et-usvojen-zakon-o-specijalnom-sudu-za-napadace-od-7-oktobra",
+      "title": "Кнесет: Усвојен закон о специјалном суду за нападаче од 7. oктобра",
+      "url": "https://www.politika.rs/scc/clanak/754457/kneset-usvojen-zakon-o-specijalnom-sudu-za-napadace-od-7-oktobra",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T22:26:00+00:00",
+      "time": "22:26",
+      "source": "Politika",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "svet-tramp-ponovo-zaspao-tokom-sastanka-u-beloj-kuci-mzejmz5",
+      "title": "(VIDEO) TRAMP PONOVO ZASPAO TOKOM SASTANKA! Odmah se oglasili iz Bele kuće: \"Treptao je, MORONU\"",
+      "url": "https://www.blic.rs/vesti/svet/tramp-ponovo-zaspao-tokom-sastanka-u-beloj-kuci/mzejmz5",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T22:19:00+00:00",
+      "time": "22:19",
+      "source": "Blic",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "anak-754456-brazilska-opozicija-trazi-amnestiju-za-bolsonara",
+      "title": "Бразилска опозиција тражи амнестију за Болсонара",
+      "url": "https://www.politika.rs/scc/clanak/754456/brazilska-opozicija-trazi-amnestiju-za-bolsonara",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T22:16:00+00:00",
+      "time": "22:16",
+      "source": "Politika",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
