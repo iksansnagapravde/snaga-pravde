@@ -1,6 +1,62 @@
 {
   "entries": [
     {
+      "id": "el-hiljade-gradana-dobilo-pretece-poruke-o-raketnim-napadima",
+      "title": "Израел: хиљаде грађана добило претеће поруке о ракетним нападима",
+      "url": "https://www.politika.rs/scc/clanak/754677/izrael-hiljade-gradana-dobilo-pretece-poruke-o-raketnim-napadima",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T19:19:00+00:00",
+      "time": "19:19",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
+      "id": "skoplju-izboden-ucenik-14-lekari-mu-se-bore-za-zivot-y2w288t",
+      "title": "IZBODEN UČENIK (14) U OSNOVNOJ ŠKOLI! Užas u komšiluku: Lekari mu se bore za život, maloletni napadač uhapšen",
+      "url": "https://www.blic.rs/vesti/svet/uzas-u-skoli-u-skoplju-izboden-ucenik-14-lekari-mu-se-bore-za-zivot/y2w288t",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T19:49:45+00:00",
+      "time": "19:49",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "3357-za-ova-ubistva-roganovica-osumnjicen-je-mili-bajramovic",
+      "title": "JEDNOG ROGANOVIĆA IZREŠETAO U BEČU, DRUGOG U HERCEG NOVOM! Zvicer mu to nikad nije oprostio - za ova ubistva se tereti uhapšeni škaljarac s nadimkom SMRT",
+      "url": "https://www.kurir.rs/crna-hronika/9993357/za-ova-ubistva-roganovica-osumnjicen-je-mili-bajramovic",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T19:47:54+00:00",
+      "time": "19:47",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "ajinski-obavestajni-oficir-priveden-zbog-spijunaze-za-rusiju",
+      "title": "UHAPŠENA \"RUSKA KRTICA\": Ukrajinski obaveštajni oficir priveden zbog špijunaže za Moskvu",
+      "url": "https://www.kurir.rs/planeta/9993320/ukrajinski-obavestajni-oficir-priveden-zbog-spijunaze-za-rusiju",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T18:45:28+00:00",
+      "time": "18:45",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "ane-ko-je-ubica-skaljarskog-klana-koji-je-uhapsen-u-italiji-",
       "title": "Hladnokrvno priđe žrtvi, ispali hice iz pištolja i nestane: Ko je ubica \"škaljarskog klana\" koji je uhapšen u Italiji?",
       "url": "https://nova.rs/vesti/hronika/hladnokrvno-pridje-zrtvi-ispali-hice-iz-pistolja-i-nestane-ko-je-ubica-skaljarskog-klana-koji-je-uhapsen-u-italiji/",
@@ -113,20 +169,6 @@
       "priority": 90
     },
     {
-      "id": "-koju-tok-trazi-za-istragu-u-vezi-sa-predmetom-nadstresnica-",
-      "title": "MUP neće formirati novu Udarnu grupu koju TOK traži za istragu u vezi sa predmetom „Nadstrešnica“",
-      "url": "https://nova.rs/vesti/hronika/mup-nece-formirati-novu-udarnu-grupu-koju-tok-trazi-za-istragu-u-vezi-sa-predmetom-nadstresnica/",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T15:53:16+00:00",
-      "time": "15:53",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "https-n1info-rs-vesti-mup-udarna-grupa-istraga-nadstresnica-",
       "title": "Danas: MUP neće formirati novu Udarnu grupu koju TOK traži za istragu u vezi sa nadstrešnicom",
       "url": "https://n1info.rs/vesti/mup-udarna-grupa-istraga-nadstresnica/",
@@ -155,46 +197,18 @@
       "priority": 84
     },
     {
-      "id": "-koju-tok-trazi-za-istragu-u-vezi-sa-predmetom-nadstresnica-",
-      "title": "Danas saznaje: MUP neće formirati novu Udarnu grupu koju TOK traži za istragu u vezi sa predmetom „Nadstrešnica“",
-      "url": "https://www.danas.rs/vesti/drustvo/danas-saznaje-mup-nece-formirati-novu-udarnu-grupu-koju-tok-trazi-za-istragu-u-vezi-sa-predmetom-nadstresnica/",
+      "id": "pravnik-obrazovnog-cetra-u-stipu-jer-je-dodirovao-devojcice-",
+      "title": "Uhapšen upravnik Obrazovnog cetra u Štipu jer je dodirovao devojčice",
+      "url": "https://n1info.rs/region/uhapsen-upravnik-obrazovnog-cetra-u-stipu-jer-je-dodirovao-devojcice/",
       "date": "2026-05-12",
-      "datetime": "2026-05-12T15:11:29+00:00",
-      "time": "15:11",
-      "source": "Danas",
-      "category": "Криминал",
+      "datetime": "2026-05-12T20:18:21+00:00",
+      "time": "20:18",
+      "source": "N1",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 84
-    },
-    {
-      "id": "-sap-trazi-pritvor-za-jermaka-uz-kauciju-od-4-2-miliona-evra",
-      "title": "Кијев: САП тражи притвор за Јермака уз кауцију од 4,2 милиона евра",
-      "url": "https://www.politika.rs/scc/clanak/754667/kijev-sap-trazi-pritvor-za-jermaka-uz-kauciju-od-4-2-miliona-evra",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T18:31:00+00:00",
-      "time": "18:31",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 74
-    },
-    {
-      "id": "lma-sinanovic-ne-odustaje-od-borbe-za-firmu-pokojnog-supruga",
-      "title": "\"TUŽILAŠTVO RADI SVOJ POSAO\" Elmi Sinanović prijatelj oteo firmu, ona veruje u pravdu: Duguje joj 120 miliona dinara",
-      "url": "https://www.kurir.rs/stars/9993091/elma-sinanovic-ne-odustaje-od-borbe-za-firmu-pokojnog-supruga",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T14:08:23+00:00",
-      "time": "14:08",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 74
+      "priority": 70
     },
     {
       "id": "tvor-u-vikendici-policija-pronasla-500000-tableta-bensedina-",
@@ -204,20 +218,6 @@
       "datetime": "2026-05-12T17:35:11+00:00",
       "time": "17:35",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "kilograma-marihuane-pronadjeno-i-vise-od-sedam-hiljada-evra-",
-      "title": "Uhapšen muškarac iz Kragujevca: U stanu držao 2,5 kilograma marihuane, pronađeno i više od sedam hiljada evra",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-muskarac-iz-kragujevca-u-stanu-drzao-25-kilograma-marihuane-pronadjeno-i-vise-od-sedam-hiljada-evra/",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T15:46:42+00:00",
-      "time": "15:46",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -449,20 +449,6 @@
       "priority": 26
     },
     {
-      "id": "rna-hronika-9993079-u-kragujevcu-uhapsen-muskarac-zbog-droge",
-      "title": "ODUZETI MDMA, MARIHUANA I PEČURKE: Hapšenje u Kragujevcu, lisice stavljene na ruke muškarcu (49)!",
-      "url": "https://www.kurir.rs/crna-hronika/9993079/u-kragujevcu-uhapsen-muskarac-zbog-droge",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T13:56:29+00:00",
-      "time": "13:56",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "s-vreme-com-drustvo-droga-narkotici-zaplena-droge-marihuana-",
       "title": "Otkud tolika droga u Srbiji: Pet tona marihuane kod Kruševca, dvesta kila na Batrovcima",
       "url": "https://vreme.com/drustvo/droga-narkotici-zaplena-droge-marihuana/",
@@ -547,20 +533,6 @@
       "priority": 24
     },
     {
-      "id": "r-rs-vesti-politika-9991912-uros-piper-o-nepalskom-scenariju",
-      "title": "PIPER UPOZORIO NA NEPALSKI SCENARIO POSLE NJIHOVE \"STUDENTSKE\" REVOLUCIJE: Kriminalci im bauljaju po zemlji, NEZAPOSLENOST 60 ODSTO! (VIDEO)",
-      "url": "https://www.kurir.rs/vesti/politika/9991912/uros-piper-o-nepalskom-scenariju",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T14:24:02+00:00",
-      "time": "14:24",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "https-radar-nova-rs-global-fatih-kol-sarajevo-radar-112-",
       "title": "Perač novca konzul u Panami",
       "url": "https://radar.nova.rs/global/fatih-kol-sarajevo-radar-112/",
@@ -575,34 +547,6 @@
       "priority": 24
     },
     {
-      "id": "ka-milioner-je-imao-173-kilograma-a-onda-smrsao-40-evo-kako-",
-      "title": "\"Nisam mogao da uđem u aparat za magnetnu rezonancu, bukvalno sam bio invalid\": Zeka Milioner je imao 173 kilograma, a onda smršao 40 - evo kako",
-      "url": "https://nova.rs/zabava/showbiz/nisam-mogao-da-udjem-u-aparat-za-magnetnu-rezonancu-bukvalno-sam-bio-invalid-zeka-milioner-je-imao-173-kilograma-a-onda-smrsao-40-evo-kako/",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T15:52:48+00:00",
-      "time": "15:52",
-      "source": "Nova",
-      "category": "Инвалидитет",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "-vesti-politika-koliko-para-je-potrebno-za-izbore-na-kosovu-",
-      "title": "Koliko para je potrebno za izbore na Kosovu?",
-      "url": "https://www.danas.rs/vesti/politika/koliko-para-je-potrebno-za-izbore-na-kosovu/",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T15:39:17+00:00",
-      "time": "15:39",
-      "source": "Danas",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
       "title": "SNS platio milione za skup u Areni pred lokalne izbore",
       "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
@@ -615,6 +559,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "93054-evo-kako-je-placeni-ubica-skaljaraca-menjao-licni-opis",
+      "title": "POGLEDAJTE KAKO JE UBICA ŠKALJARSKOG KLANA MENJAO LIČNI OPIS! Živeo kao DUH, šokirao se kad mu policija upala u stan: \"KAKO STE ME PRONAŠLI?\" Detalji potrage",
+      "url": "https://www.kurir.rs/crna-hronika/9993054/evo-kako-je-placeni-ubica-skaljaraca-menjao-licni-opis",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T18:53:25+00:00",
+      "time": "18:53",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "avnicu-u-subotici-pa-iz-nje-ukrao-robu-vrednu-200000-2vy8j4g",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "o-223371-cetvoro-povredeno-u-sudaru-hitne-i-kola-u-nisu-vest",
+      "title": "Sudar automobila i vozila Hitne pomoći u Nišu: Četiri osobe povređene",
+      "url": "https://www.euronews.rs/srbija/aktuelno/223371/cetvoro-povredeno-u-sudaru-hitne-i-kola-u-nisu/vest",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T13:31:00+00:00",
+      "time": "13:31",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "zrenjanin-kod-avale-studenti-pobedjuju-ili-srbija-pobedjuje-",
+      "title": "Zrenjanin kod Avale: Studenti pobeđuju ili Srbija pobeđuje",
+      "url": "https://www.ktv.rs/2026/05/11/zrenjanin-kod-avale-studenti-pobedjuju-ili-srbija-pobedjuje/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:27:31+00:00",
+      "time": "15:27",
+      "source": "KTV",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "sta-nauka-kaze-da-li-su-ljudi-zaista-stvoreni-za-monogamiju-",
+      "title": "Šta nauka kaže - da li su ljudi zaista stvoreni za monogamiju?",
+      "url": "https://n1info.rs/magazin/lifestyle/sta-nauka-kaze-da-li-su-ljudi-zaista-stvoreni-za-monogamiju/",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T20:26:20+00:00",
+      "time": "20:26",
+      "source": "N1",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
