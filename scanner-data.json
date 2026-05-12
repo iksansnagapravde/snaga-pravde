@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "itika-rs-scc-clanak-754688-muskarac-uhapsen-zbog-krade-alata",
-      "title": "Мушкарац ухапшен због крађе алата",
-      "url": "https://www.politika.rs/scc/clanak/754688/muskarac-uhapsen-zbog-krade-alata",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T20:20:00+00:00",
-      "time": "20:20",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "skoplju-izboden-ucenik-14-lekari-mu-se-bore-za-zivot-y2w288t",
       "title": "IZBODEN UČENIK (14) U OSNOVNOJ ŠKOLI! Užas u komšiluku: Lekari mu se bore za život, maloletni napadač uhapšen",
       "url": "https://www.blic.rs/vesti/svet/uzas-u-skoli-u-skoplju-izboden-ucenik-14-lekari-mu-se-bore-za-zivot/y2w288t",
@@ -519,6 +505,20 @@
       "priority": 4
     },
     {
+      "id": "-planeta-9993211-policija-ubila-muskarca-u-velikoj-britaniji",
+      "title": "POLICIJA UBILA MUŠKARCA U VELIKOJ BRITANIJI: Pucnjavi prethodila višesatna drama, napadač se zabarikadirao u objektu i pretio",
+      "url": "https://www.kurir.rs/planeta/9993211/policija-ubila-muskarca-u-velikoj-britaniji",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T16:44:54+00:00",
+      "time": "16:44",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "o-223371-cetvoro-povredeno-u-sudaru-hitne-i-kola-u-nisu-vest",
       "title": "Sudar automobila i vozila Hitne pomoći u Nišu: Četiri osobe povređene",
       "url": "https://www.euronews.rs/srbija/aktuelno/223371/cetvoro-povredeno-u-sudaru-hitne-i-kola-u-nisu/vest",
@@ -545,6 +545,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "754734-sport-florentino-perez-raspisao-izbore-u-real-madridu",
+      "title": "Флорентино Перез расписао изборе у Реал Мадриду",
+      "url": "https://www.politika.rs/scc/clanak/754734/sport/florentino-perez-raspisao-izbore-u-real-madridu",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T22:58:00+00:00",
+      "time": "22:58",
+      "source": "Politika",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "omacinstvu-evo-koliko-struje-i-vode-u-evrima-mesecno-mtpdg1z",
+      "title": "Jednostavni trikovi za uštedu u domaćinstvu: Evo koliko struje i vode u evrima mesečno troši mašina za veš",
+      "url": "https://www.blic.rs/biznis/moj-novcanik/jednostavni-trikovi-za-ustedu-u-domacinstvu-evo-koliko-struje-i-vode-u-evrima-mesecno/mtpdg1z",
+      "date": "2026-05-12",
+      "datetime": "2026-05-12T22:54:00+00:00",
+      "time": "22:54",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "des-benz-prodao-sve-svoje-izlozbene-salone-u-berlinu-g0hpwxz",
@@ -667,34 +695,6 @@
       "time": "20:39",
       "source": "Blic",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "rencija-crvena-zvezda-poraz-cedevita-olimpija-aba-liga-2026-",
-      "title": "Obradović kratak posle nedopustivog pada Zvezde, otkrio šta je presudilo protiv Cedevita Olimpije",
-      "url": "https://nova.rs/sport/kosarka/sasa-obradovic-konferencija-crvena-zvezda-poraz-cedevita-olimpija-aba-liga-2026/",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T20:35:31+00:00",
-      "time": "20:35",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "esovite-signale-sada-je-trenutak-da-srusite-rezim-u-teheranu",
-      "title": "Реза Пахлави поручио Трампу: Не шаљите мешовите сигнале, сада је тренутак да срушите режим у Техерану",
-      "url": "https://www.politika.rs/scc/clanak/754693/reza-pahlavi-porucio-trampu-ne-saljite-mesovite-signale-sada-je-trenutak-da-srusite-rezim-u-teheranu",
-      "date": "2026-05-12",
-      "datetime": "2026-05-12T20:33:00+00:00",
-      "time": "20:33",
-      "source": "Politika",
-      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
