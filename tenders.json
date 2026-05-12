@@ -1,68 +1,79 @@
 [
   {
     "winner": null,
-    "accepted": 15000000.0,
+    "accepted": 454202.0,
+    "lowest": 2537.0,
+    "difference": 451665.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104217668,
+    "file": "documents/104217668_Odluka Gornji M..pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 28025000.0,
     "lowest": 5202.0,
-    "difference": 14994798.0,
+    "difference": 28019798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 113331893,
-    "file": "documents/113331893_Odluka o dodeli ugovora.docx"
+    "id": 100038783,
+    "file": "documents/100038783_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 500000.0,
-    "lowest": 4202.0,
-    "difference": 495798.0,
+    "accepted": 15200000.0,
+    "lowest": 5202.0,
+    "difference": 15194798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100803414,
-    "file": "documents/100803414_Odluka o dodeli narudžbenice za JN 87_2026.pdf"
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 22200.0,
+    "accepted": 16000000.0,
+    "lowest": 1109.0,
+    "difference": 15998891.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100167461,
+    "file": "documents/100167461_Odluka o dodeli ugovora - PARTIJA 2.PDF"
+  },
+  {
+    "winner": null,
+    "accepted": 16000000.0,
+    "lowest": 1109.0,
+    "difference": 15998891.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100918689,
+    "file": "documents/100918689_Odluka o dodeli ugovora - PARTIJA 3.PDF"
+  },
+  {
+    "winner": null,
+    "accepted": 13757759.0,
+    "lowest": 3202.0,
+    "difference": 13754557.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100120489,
+    "file": "documents/100120489_Odluka+Izvestaj OP 13- 2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 41146.0,
     "lowest": 2202.0,
-    "difference": 19998.0,
+    "difference": 38944.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101322995,
-    "file": "documents/101322995_doc02773020260512114746.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 400000.0,
-    "lowest": 3136.0,
-    "difference": 396864.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104276295,
-    "file": "documents/104276295_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 3194640.0,
-    "lowest": 4202.0,
-    "difference": 3190438.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103864992,
-    "file": "documents/103864992_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1060000.0,
-    "lowest": 5202.0,
-    "difference": 1054798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101289775,
-    "file": "documents/101289775_Odluka o dodeli ugovora.docx"
+    "id": 106759467,
+    "file": "documents/106759467_Odluka o izdavanju pojedinacne narudžbenice - 29.pdf"
   }
 ]
