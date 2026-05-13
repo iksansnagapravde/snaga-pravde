@@ -1,57 +1,79 @@
 [
   {
     "winner": null,
-    "accepted": 2999952.0,
+    "accepted": 300000.0,
     "lowest": 5202.0,
-    "difference": 2994750.0,
+    "difference": 294798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 108627281,
-    "file": "documents/108627281_Odluka o dodeli ugovora (1).docx"
+    "id": 113622180,
+    "file": "documents/113622180_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 27486571.13,
-    "lowest": 5202.0,
-    "difference": 27481369.13,
+    "accepted": 65000.0,
+    "lowest": 4202.0,
+    "difference": 60798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104327032,
-    "file": "documents/104327032_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "ORNAMENT-INVESTINZENJERING DOO",
-    "accepted": 170680159.0,
-    "lowest": 1970.0,
-    "difference": 170678189.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100027506,
-    "file": "documents/100027506_odluka-gradska kuca (1).pdf"
+    "id": 100001958,
+    "file": "documents/100001958_Odluka o zakljucenju ugovora - 96-26.pdf"
   },
   {
     "winner": null,
-    "accepted": 21625168.0,
-    "lowest": 3202.0,
-    "difference": 21621966.0,
+    "accepted": 65000.0,
+    "lowest": 4202.0,
+    "difference": 60798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 105486107,
-    "file": "documents/105486107_0006 ODL o DODELI UG 13.05.26..pdf"
+    "id": 102608229,
+    "file": "documents/102608229_Odluka o zakljucenju ugovora - 96-26.pdf"
   },
   {
     "winner": null,
-    "accepted": 104110.0,
-    "lowest": 4322.0,
-    "difference": 99788.0,
+    "accepted": 765000.0,
+    "lowest": 4202.0,
+    "difference": 760798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_Odluka o dodeli ugovora.docx"
+    "id": 104570038,
+    "file": "documents/104570038_Odluka o dodeli ugovora - Perimetar 92.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 765000.0,
+    "lowest": 4202.0,
+    "difference": 760798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100239084,
+    "file": "documents/100239084_Odluka o dodeli ugovora - Perimetar 92.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 765000.0,
+    "lowest": 4202.0,
+    "difference": 760798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100009013,
+    "file": "documents/100009013_Odluka o dodeli ugovora - Perimetar 92.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2217000.0,
+    "lowest": 1103.0,
+    "difference": 2215897.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100002959,
+    "file": "documents/100002959_ODLUKA  O DODELI  UGOVORA.pdf"
   }
 ]
