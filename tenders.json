@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 86400.0,
+    "lowest": 1920.0,
+    "difference": 84480.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_Odluka defektacija Fiat 500  (1).pdf"
+  },
+  {
+    "winner": null,
     "accepted": 10315200.0,
     "lowest": 5202.0,
     "difference": 10309998.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 104570038,
     "file": "documents/104570038_Odluka o dodeli ugovora - Perimetar 92.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 765000.0,
-    "lowest": 4202.0,
-    "difference": 760798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100239084,
-    "file": "documents/100239084_Odluka o dodeli ugovora - Perimetar 92.pdf"
   }
 ]
