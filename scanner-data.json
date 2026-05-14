@@ -1,34 +1,6 @@
 {
   "entries": [
     {
-      "id": "lokade-ispred-pravnog-fakulteta-povredjene-dve-osobe-7rw8f0b",
-      "title": "\"OVAKVI DOGAĐAJI MOGU DOVESTI DO NEPREDVIDIVIH I TEŠKIH POSLEDICA\" MUP o incidentu tokom blokade ispred Pravnog fakulteta: \"Povređena dvojica sugrađana\"",
-      "url": "https://www.blic.rs/vesti/hronika/mup-o-incidentu-tokom-blokade-ispred-pravnog-fakulteta-povredjene-dve-osobe/7rw8f0b",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T15:59:44+00:00",
-      "time": "15:59",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "taje-bez-objasnjenja-pravi-kristalni-met-i-ona-je-negativac-",
-      "title": "Brajan Krenston stao u odbranu lika Skajler iz serije Breaking Bad: \"Njen muž nestaje bez objašnjenja, pravi kristalni met... I ona je negativac?\"",
-      "url": "https://nova.rs/zabava/film/brajan-krenston-stao-u-odbranu-lika-skajler-iz-serije-breaking-bad-njen-muz-nestaje-bez-objasnjenja-pravi-kristalni-met-i-ona-je-negativac/",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T15:50:46+00:00",
-      "time": "15:50",
-      "source": "Nova",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "o-223496-uhapsena-dvojica-zbog-utaje-poreza-u-prokuplju-vest",
       "title": "Uhapšena dvojica zbog utaje poreza: Radili obezbeđenje objekata u Prokuplju, \"sakrili\" 2 miliona",
       "url": "https://www.euronews.rs/srbija/aktuelno/223496/uhapsena-dvojica-zbog-utaje-poreza-u-prokuplju/vest",
@@ -41,6 +13,20 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "ti-hronika-5950255-incident-pravni-fakultet-protest-rts-html",
+      "title": "Инциденти код Правног факултета – оборен мушкарац током блокаде раскрснице, ухапшен возач, протест испред РТС-а",
+      "url": "https://www.rts.rs/vesti/hronika/5950255/incident-pravni-fakultet-protest-rts.html",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:35:17+00:00",
+      "time": "21:35",
+      "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "senjaku-osmoro-uhapsenih-medju-njima-trojica-policajaca-html",
@@ -106,20 +92,6 @@
       "datetime": "2026-05-14T19:33:33+00:00",
       "time": "19:33",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "ti-hronika-5950255-incident-pravni-fakultet-protest-rts-html",
-      "title": "Инциденти код Правног факултета – оборен мушкарац током блокаде раскрснице, ухапшен возач, протест испред РТС-а",
-      "url": "https://www.rts.rs/vesti/hronika/5950255/incident-pravni-fakultet-protest-rts.html",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T19:32:07+00:00",
-      "time": "19:32",
-      "source": "RTS",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -338,7 +310,7 @@
     },
     {
       "id": "hapsena-i-tri-policajca-zbog-nestanka-kekinog-coveka-s4cn2ck",
-      "title": "UHAPŠENA I TRI POLICAJCA ZBOG NESTANKA KEKINOG ČOVEKA! Palo već sedam osoba: Među njima i vlasnik lokala u kom je poslednji put viđen",
+      "title": "UHAPŠENA I TRI POLICAJCA ZBOG NESTANKA KEKINOG ČOVEKA! Palo već osam osoba: Među njima i vlasnik lokala u kom je poslednji put viđen",
       "url": "https://www.blic.rs/vesti/hronika/uhapsena-i-tri-policajca-zbog-nestanka-kekinog-coveka/s4cn2ck",
       "date": "2026-05-14",
       "datetime": "2026-05-14T19:44:30+00:00",
@@ -391,6 +363,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "ndar-nesovic-zbog-cijeg-nestanka-je-uhapseno-7-osoba-z6cwb1k",
+      "title": "(FOTO) OVO JE KEKIN ČOVEK ZBOG ČIJEG NESTANKA JE UHAPŠENO 8 OSOBA Aleksandar poslednji put viđen u restoranu na Senjaku, nađeni tragovi KRVI! Otišao na sastanak, pa mu se izgubio trag",
+      "url": "https://www.blic.rs/vesti/hronika/ovo-je-kekin-covek-aleksandar-nesovic-zbog-cijeg-nestanka-je-uhapseno-7-osoba/z6cwb1k",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T20:49:58+00:00",
+      "time": "20:49",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "ktuelno-223781-hapsenje-zbog-teskog-ubistva-u-obrenovcu-vest",
@@ -477,6 +463,20 @@
       "priority": 70
     },
     {
+      "id": "www-danas-rs-svet-region-prvi-serijski-ubica-u-s-makedoniji-",
+      "title": "Prvi serijski ubica u Severnoj Makedoniji osumnjičen za četiri ubistva i dva pokušaja ubistva",
+      "url": "https://www.danas.rs/svet/region/prvi-serijski-ubica-u-s-makedoniji/",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:25:11+00:00",
+      "time": "21:25",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "tovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu-",
       "title": "Gorski Matović optužen za napad na studente na protestu u Novom Sadu",
       "url": "https://www.krik.rs/gorski-matovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu/",
@@ -503,6 +503,34 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "azvala-prekide-u-komunikacijama-i-najavila-polarnu-svetlost-",
+      "title": "Snažna solarna baklja izazvala prekide u komunikacijama i najavila polarnu svetlost",
+      "url": "https://n1info.rs/magazin/scitech/snazna-solarna-baklja-izazvala-prekide-u-komunikacijama-i-najavila-polarnu-svetlost/",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:43:00+00:00",
+      "time": "21:43",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
+      "id": "je-rts-a-zbog-neprimerene-izjave-tragaca-u-kvizu-potera-html",
+      "title": "Извињење РТС-а због непримерене изјаве трагача у квизу \"Потера\"",
+      "url": "https://www.rts.rs/vesti/drustvo/5950645/izvinjenje-rts-a-zbog-neprimerene-izjave-tragaca-u-kvizu-potera.html",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:03:04+00:00",
+      "time": "21:03",
+      "source": "RTS",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "ze-da-se-vest-o-incidentima-ispred-pravnog-objavi-u-dnevniku",
@@ -575,6 +603,34 @@
       "priority": 28
     },
     {
+      "id": "edajte-hapsenje-policajaca-zbog-nestanka-aleksandra-nesovica",
+      "title": "POGLEDAJTE HAPŠENJE POLICAJCA ZBOG NESTANKA KEKINOG ČOVEKA! Trojica privedena, evo šta im se sastavlja na teret u slučaju Aleksandra Nešovića (VIDEO)",
+      "url": "https://www.kurir.rs/crna-hronika/9995519/pogledajte-hapsenje-policajaca-zbog-nestanka-aleksandra-nesovica",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:23:54+00:00",
+      "time": "21:23",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "23768-hapsenje-u-zrenjaninu-proizvodnja-droge-i-bedzeva-vest",
+      "title": "Hapšenje u Zrenjaninu: Kod osumnjičenog (24) pronađena marihuana, politički bedževi i pištaljke sa natpisom \"pumpaj\"",
+      "url": "https://www.euronews.rs/srbija/aktuelno/223768/hapsenje-u-zrenjaninu-proizvodnja-droge-i-bedzeva/vest",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:00:00+00:00",
+      "time": "21:00",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "io-posle-hapsenja-osumnjicenog-za-ubistvo-misela-u-obrenovcu",
       "title": "MIŠEL (29) UBIJEN U SAČEKUŠI ISPRED KUĆE! MUP Srbije se oglasio posle hapšenja osumnjičenog: Ubo ga je u grudi i usmrtio",
       "url": "https://www.kurir.rs/crna-hronika/9995438/mup-se-oglasio-posle-hapsenja-osumnjicenog-za-ubistvo-misela-u-obrenovcu",
@@ -617,20 +673,6 @@
       "priority": 26
     },
     {
-      "id": "imenile-preporuke-venecijanske-komisije-krenula-bi-hapsenja-",
-      "title": "Preradović: Izbora neće biti ni na jesen - kad bi se primenile preporuke Venecijanske komisije, krenula bi hapšenja",
-      "url": "https://n1info.rs/vesti/preradovic-izbora-nece-biti-ni-na-jesen-kad-bi-se-primenile-preporuke-venecijanske-komisije-krenula-bi-hapsenja/",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T15:58:08+00:00",
-      "time": "15:58",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "www-krik-rs-jasmina-vasovic-vise-nije-na-celu-vrhovnog-suda-",
       "title": "Jasmina Vasović više nije na čelu Vrhovnog suda",
       "url": "https://www.krik.rs/jasmina-vasovic-vise-nije-na-celu-vrhovnog-suda/",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "suncem-sta-se-krije-iza-smena-sefova-u-novosadskoj-policiji-",
-      "title": "\"Sunovrat krenuo sa dolaskom SNS, brojni kriminalci pronašli svoje mesto pod suncem\": Šta se krije iza smena šefova u novosadskoj policiji",
-      "url": "https://nova.rs/vesti/hronika/sunovrat-krenuo-sa-dolaskom-sns-brojni-kriminalci-pronasli-svoje-mesto-pod-suncem-sta-se-krije-iza-smena-sefova-u-novosadskoj-policiji/",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T15:56:39+00:00",
-      "time": "15:56",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "https-radar-nova-rs-global-fatih-kol-sarajevo-radar-112-",
-      "title": "Perač novca konzul u Panami",
-      "url": "https://radar.nova.rs/global/fatih-kol-sarajevo-radar-112/",
-      "date": "2026-05-09",
-      "datetime": "2026-05-09T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "sredstva-iz-alimentacionog-fonda-do-sada-ostvarilo-771-dete-",
-      "title": "Prava na sredstva iz Alimentacionog fonda do sada ostvarilo 771 dete",
-      "url": "https://www.ktv.rs/2026/05/14/prava-na-sredstva-iz-alimentacionog-fonda-do-sada-ostvarilo-771-dete/",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T15:01:36+00:00",
-      "time": "15:01",
-      "source": "KTV",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
