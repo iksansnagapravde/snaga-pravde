@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 15217392.3,
+    "lowest": 1260.0,
+    "difference": 15216132.3,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107487639,
+    "file": "documents/107487639_ODLUKA VLAJKOVAC.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 9000000.0,
+    "lowest": 1111.0,
+    "difference": 8998889.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101301372,
+    "file": "documents/101301372_Odluka KN39.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 6320849.22,
     "lowest": 5202.0,
     "difference": 6315647.22,
@@ -86,27 +108,5 @@
     "rejection_reasons": [],
     "id": 104217668,
     "file": "documents/104217668_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 5000000.0,
-    "lowest": 5202.0,
-    "difference": 4994798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112360356,
-    "file": "documents/112360356_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 9001001.0,
-    "lowest": 1001.0,
-    "difference": 9000000.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104518987,
-    "file": "documents/104518987_Odluka o dodeli ugovora.pdf"
   }
 ]
