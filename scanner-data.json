@@ -15,20 +15,6 @@
       "priority": 100
     },
     {
-      "id": "ti-hronika-5950255-incident-pravni-fakultet-protest-rts-html",
-      "title": "Инциденти код Правног факултета – оборен мушкарац током блокаде раскрснице, ухапшен возач, протест испред РТС-а",
-      "url": "https://www.rts.rs/vesti/hronika/5950255/incident-pravni-fakultet-protest-rts.html",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T21:35:17+00:00",
-      "time": "21:35",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "senjaku-osmoro-uhapsenih-medju-njima-trojica-policajaca-html",
       "title": "Истрага нестанка мушкарца на Сењаку – осморо ухапшених, међу њима тројица полицајаца",
       "url": "https://www.rts.rs/vesti/hronika/5950597/istraga-nestanka-muskarca-na-senjaku--osmoro-uhapsenih-medju-njima-trojica-policajaca.html",
@@ -310,7 +296,7 @@
     },
     {
       "id": "hapsena-i-tri-policajca-zbog-nestanka-kekinog-coveka-s4cn2ck",
-      "title": "UHAPŠENA I TRI POLICAJCA ZBOG NESTANKA KEKINOG ČOVEKA! Palo već osam osoba: Među njima i vlasnik lokala u kom je poslednji put viđen",
+      "title": "UHAPŠENA I TRI POLICAJCA ZBOG NESTANKA KEKINOG ČOVEKA! Palo već osam osoba: Među njima i vlasnik lokala u kom je poslednji put viđen (VIDEO)",
       "url": "https://www.blic.rs/vesti/hronika/uhapsena-i-tri-policajca-zbog-nestanka-kekinog-coveka/s4cn2ck",
       "date": "2026-05-14",
       "datetime": "2026-05-14T19:44:30+00:00",
@@ -505,6 +491,20 @@
       "priority": 66
     },
     {
+      "id": "tps-www-rts-rs-vesti-drustvo-5950674-kosovska-mitrovica-html",
+      "title": "Влада у Приштини усвојила одлуку о реконструкцији Ибарске џамије у северном делу Косовске Митровице",
+      "url": "https://www.rts.rs/vesti/drustvo/5950674/kosovska-mitrovica.html",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T21:59:57+00:00",
+      "time": "21:59",
+      "source": "RTS",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "azvala-prekide-u-komunikacijama-i-najavila-polarnu-svetlost-",
       "title": "Snažna solarna baklja izazvala prekide u komunikacijama i najavila polarnu svetlost",
       "url": "https://n1info.rs/magazin/scitech/snazna-solarna-baklja-izazvala-prekide-u-komunikacijama-i-najavila-polarnu-svetlost/",
@@ -566,20 +566,6 @@
       "url": "https://radar.nova.rs/drustvo/aleksandar-barac-javni-tuzilac-intervju/",
       "date": "2026-05-13",
       "datetime": "2026-05-13T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "a-rs-ekonomija-tok-saslusanje-kineskih-izvodaca-mup-igorise-",
-      "title": "TOK čak osam puta tražio da se saslušaju kineski izvođači, MUP sve ignorisao",
-      "url": "https://radar.nova.rs/ekonomija/tok-saslusanje-kineskih-izvodaca-mup-igorise/",
-      "date": "2026-05-06",
-      "datetime": "2026-05-06T22:03:00+00:00",
       "time": "22:03",
       "source": "Radar",
       "category": "Корупција",
@@ -694,6 +680,20 @@
       "datetime": "2026-05-14T19:12:52+00:00",
       "time": "19:12",
       "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "https-radar-nova-rs-global-fatih-kol-sarajevo-radar-112-",
+      "title": "Perač novca konzul u Panami",
+      "url": "https://radar.nova.rs/global/fatih-kol-sarajevo-radar-112/",
+      "date": "2026-05-09",
+      "datetime": "2026-05-09T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
