@@ -43,6 +43,34 @@
       "priority": 95
     },
     {
+      "id": "s-vesti-drustvo-veselinu-milicu-odredjen-pritvor-do-30-dana-",
+      "title": "Veselinu Miliću određen pritvor do 30 dana",
+      "url": "https://www.danas.rs/vesti/drustvo/veselinu-milicu-odredjen-pritvor-do-30-dana/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T22:26:43+00:00",
+      "time": "22:26",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "-n1info-rs-svet-veselinu-milicu-odredjen-pritvor-do-30-dana-",
+      "title": "Veselinu Miliću određen pritvor do 30 dana",
+      "url": "https://n1info.rs/svet/veselinu-milicu-odredjen-pritvor-do-30-dana/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T22:01:11+00:00",
+      "time": "22:01",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "epublika-srpska-kamiondzija-iz-bih-uhapsen-u-danskoj-tt9vqse",
       "title": "PRETI MU PROTERIVANJE I ZABRANA ULASKA Kamiondžija iz BiH uhapšen u Danskoj: Napravio je OZBILJAN PREKRŠAJ",
       "url": "https://www.blic.rs/vesti/republika-srpska/kamiondzija-iz-bih-uhapsen-u-danskoj/tt9vqse",
@@ -113,20 +141,6 @@
       "priority": 92
     },
     {
-      "id": "za-planiranje-18-teroristickih-napada-sirom-evrope-i-amerike",
-      "title": "Ухапшен Ирачанин осумњичен за планирање 18 терористичких напада широм Европе и Америке",
-      "url": "https://www.politika.rs/scc/clanak/755464/uhapsen-iracanin-osumnjicen-za-planiranje-18-teroristickih-napada-sirom-evrope-i-amerike",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T19:53:00+00:00",
-      "time": "19:53",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "kup-podrske-studentima-uhapsenim-posle-vidovdanskog-protesta",
       "title": "Skup podrške studentima uhapšenim posle Vidovdanskog protesta",
       "url": "https://beta.rs/content/244739-skup-podrske-studentima-uhapsenim-posle-vidovdanskog-protesta",
@@ -176,20 +190,6 @@
       "datetime": "2026-05-15T18:39:37+00:00",
       "time": "18:39",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "toran-senjak-hapsenje-veselin-milic-ivica-dacic-ubistvo-mup-",
-      "title": "Šta se sve dešavalo u restoranu na Senjaku zbog čega je Veselin Milić uhapšen: Da li bi Dačić i Vasiljević trebalo da podnesu ostavke?",
-      "url": "https://www.danas.rs/vesti/drustvo/restoran-senjak-hapsenje-veselin-milic-ivica-dacic-ubistvo-mup/",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T14:50:32+00:00",
-      "time": "14:50",
-      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -631,6 +631,20 @@
       "priority": 28
     },
     {
+      "id": "-content-244744-naslovne-strane-za-subotu-16-maj-2026-godine",
+      "title": "Naslovne strane za subotu, 16. maj 2026. godine",
+      "url": "https://beta.rs/content/244744-naslovne-strane-za-subotu-16-maj-2026-godine",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T22:00:09+00:00",
+      "time": "22:00",
+      "source": "Beta",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "ilica-ozbiljan-udar-na-sistem-unutrasnje-bezbednosti-srbije-",
       "title": "Analiza Centra za istraživanje bezbednosti o hapšenju Milića: Ozbiljan udar na sistem unutrašnje bezbednosti Srbije",
       "url": "https://n1info.rs/vesti/analiza-centra-za-istrazivanje-bezbednosti-o-hapsenju-milica-ozbiljan-udar-na-sistem-unutrasnje-bezbednosti-srbije/",
@@ -680,20 +694,6 @@
       "datetime": "2026-05-15T17:19:06+00:00",
       "time": "17:19",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "r-nova-rs-drustvo-aleksandar-nesovic-hapsenje-veselin-milic-",
-      "title": "Panika vlasti i pitanja bez odgovora",
-      "url": "https://radar.nova.rs/drustvo/aleksandar-nesovic-hapsenje-veselin-milic/",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T16:20:32+00:00",
-      "time": "16:20",
-      "source": "Radar",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
