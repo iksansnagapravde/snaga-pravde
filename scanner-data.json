@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "zilastvo-u-beogradu-se-oglasilo-o-nestanku-kekinog-saradnika",
-      "title": "HITNO SE OGLASILO TUŽILAŠTVO POVODOM NESTANKA KEKINOG SARADNIKA: Javnost će dobijati sve informacije kontinuirano i blagovremeno",
-      "url": "https://www.kurir.rs/crna-hronika/9996099/vise-tuzilastvo-u-beogradu-se-oglasilo-o-nestanku-kekinog-saradnika",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T14:11:56+00:00",
-      "time": "14:11",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 166
-    },
-    {
       "id": "e-policije-veselin-milic-u-vezi-sa-ubistvom-baje-na-senjaku-",
       "title": "Saslušan Veselin Milić, tužilaštvo predložilo pritvor",
       "url": "https://vreme.com/drustvo/rts-uhapsen-nacelnik-beogradske-policije-veselin-milic-u-vezi-sa-ubistvom-baje-na-senjaku/",
@@ -55,6 +41,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "epublika-srpska-kamiondzija-iz-bih-uhapsen-u-danskoj-tt9vqse",
+      "title": "PRETI MU PROTERIVANJE I ZABRANA ULASKA Kamiondžija iz BiH uhapšen u Danskoj: Napravio je OZBILJAN PREKRŠAJ",
+      "url": "https://www.blic.rs/vesti/republika-srpska/kamiondzija-iz-bih-uhapsen-u-danskoj/tt9vqse",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T20:47:24+00:00",
+      "time": "20:47",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "in-koji-je-planirao-18-teroristickih-napada-u-evropi-ntb7ep6",
@@ -211,20 +211,6 @@
       "priority": 92
     },
     {
-      "id": "https-www-danas-rs-vesti-drustvo-dacic-ostavka-",
-      "title": "Monarhisti zahtevaju: Dačiću, podnesi ostavku",
-      "url": "https://www.danas.rs/vesti/drustvo/dacic-ostavka/",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T14:39:10+00:00",
-      "time": "14:39",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "tuelno-223895-ko-je-veselin-milic-koji-je-danas-uhapsen-vest",
       "title": "Od policajca i pomoćnika komandira u Užicu do načelnika PU za grad Beograd: Ko je Veselin Milić koji je danas uhapšen?",
       "url": "https://www.euronews.rs/srbija/aktuelno/223895/ko-je-veselin-milic-koji-je-danas-uhapsen/vest",
@@ -315,20 +301,6 @@
       "date": "2026-05-14",
       "datetime": "2026-05-14T07:15:00+00:00",
       "time": "07:15",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "3-u-nisu-uhapsen-osumnjiceni-za-dilovanje-20-kila-droge-vest",
-      "title": "Uhapšen vozač \"opela\" iz Prizrena: Prevozio 20 kilograma droge, \"pao\" na auto-putu kod Niša",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223513/u-nisu-uhapsen-osumnjiceni-za-dilovanje-20-kila-droge/vest",
-      "date": "2026-05-13",
-      "datetime": "2026-05-13T21:00:00+00:00",
-      "time": "21:00",
       "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
@@ -617,18 +589,18 @@
       "priority": 60
     },
     {
-      "id": "ntervju-nemackom-novinaru-pa-pokusao-da-spreci-objavljivanje",
-      "title": "Кристијан Шмит дао интервју немачком новинару па покушао да спречи објављивање",
-      "url": "https://www.politika.rs/scc/clanak/755461/kristijan-smit-dao-intervju-nemackom-novinaru-pa-pokusao-da-spreci-objavljivanje",
+      "id": "rajinskog-vrha-bivsi-mocnik-komunicirao-sa-veronikom-tfc6fsg",
+      "title": "\"ILI ONI ILI TI, ELIMINIŠI IH\" Otkrivena najmračnija tajna ukrajinskog vrha: Bivši moćnik komunicirao sa \"Veronikom Feng Šui\"",
+      "url": "https://www.blic.rs/vesti/svet/otkrivena-najmracnija-tajna-ukrajinskog-vrha-bivsi-mocnik-komunicirao-sa-veronikom/tfc6fsg",
       "date": "2026-05-15",
-      "datetime": "2026-05-15T19:30:00+00:00",
-      "time": "19:30",
-      "source": "Politika",
-      "category": "Људска права",
+      "datetime": "2026-05-15T21:37:07+00:00",
+      "time": "21:37",
+      "source": "Blic",
+      "category": "Корупција",
       "summary": "",
       "breaking": false,
-      "alert": true,
-      "priority": 60
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "dar-nova-rs-drustvo-aleksandar-barac-javni-tuzilac-intervju-",
@@ -694,6 +666,34 @@
       "datetime": "2026-05-15T17:43:18+00:00",
       "time": "17:43",
       "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "stvo-nije-me-iznenadilo-katarina-petrovic-o-hapsenju-milica-",
+      "title": "„Nije me iznenadilo…“: Katarina Petrović o hapšenju Milića i „osećaju nebezbednosti“",
+      "url": "https://www.danas.rs/vesti/drustvo/nije-me-iznenadilo-katarina-petrovic-o-hapsenju-milica/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T17:19:06+00:00",
+      "time": "17:19",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "r-nova-rs-drustvo-aleksandar-nesovic-hapsenje-veselin-milic-",
+      "title": "Panika vlasti i pitanja bez odgovora",
+      "url": "https://radar.nova.rs/drustvo/aleksandar-nesovic-hapsenje-veselin-milic/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T16:20:32+00:00",
+      "time": "16:20",
+      "source": "Radar",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
