@@ -1,6 +1,50 @@
 [
   {
     "winner": null,
+    "accepted": 2392200.0,
+    "lowest": 2920.0,
+    "difference": 2389280.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100809378,
+    "file": "documents/100809378_Odluka o dodeli - cebad i jastuci.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 20664.0,
+    "lowest": 5202.0,
+    "difference": 15462.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104424757,
+    "file": "documents/104424757_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 200000000.0,
+    "lowest": 5202.0,
+    "difference": 199994798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100259155,
+    "file": "documents/100259155_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 17000000.0,
+    "lowest": 3340.0,
+    "difference": 16996660.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107732601,
+    "file": "documents/107732601_4. Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1755000.0,
     "lowest": 5202.0,
     "difference": 1749798.0,
@@ -31,38 +75,5 @@
     "rejection_reasons": [],
     "id": 104518987,
     "file": "documents/104518987_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 9500000.0,
-    "lowest": 4202.0,
-    "difference": 9495798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105249896,
-    "file": "documents/105249896_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 10004405.0,
-    "lowest": 4202.0,
-    "difference": 10000203.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104231493,
-    "file": "documents/104231493_Odl. o dodeli+Izvestaj OP 17-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 10004405.0,
-    "lowest": 4202.0,
-    "difference": 10000203.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103408614,
-    "file": "documents/103408614_Odl. o dodeli+Izvestaj OP 17-2026.pdf"
   }
 ]
