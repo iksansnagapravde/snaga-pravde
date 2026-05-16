@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2652000.0,
+    "lowest": 5202.0,
+    "difference": 2646798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100239068,
+    "file": "documents/100239068_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 1018790.0,
     "lowest": 5202.0,
     "difference": 1013588.0,
@@ -86,16 +97,5 @@
     "rejection_reasons": [],
     "id": 100501967,
     "file": "documents/100501967_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2392200.0,
-    "lowest": 2920.0,
-    "difference": 2389280.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100809378,
-    "file": "documents/100809378_Odluka o dodeli - cebad i jastuci.pdf"
   }
 ]
