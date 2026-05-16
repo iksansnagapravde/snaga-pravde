@@ -519,20 +519,6 @@
       "priority": 66
     },
     {
-      "id": "tps-www-kurir-rs-crna-hronika-9996229-saslusan-veselin-milic",
-      "title": "SASLUŠAN VESELIN MILIĆ U SLUČAJU NESTANKA ALEKSANDRA NEŠOVIĆA! Tužilaštvo traži pritvor za bivšeg načelnika beogradske policije - EVO ZA ŠTA SE TERETI",
-      "url": "https://www.kurir.rs/crna-hronika/9996229/saslusan-veselin-milic",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T17:03:29+00:00",
-      "time": "17:03",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "pel-beogradskog-tuzilastva-o-neproverenim-informacijama-vest",
       "title": "Više javno tužilaštvo u Beogradu apeluje na medije da ne objavljuju neproverene informacije o nestanku A.N.",
       "url": "https://www.euronews.rs/srbija/aktuelno/223899/apel-beogradskog-tuzilastva-o-neproverenim-informacijama/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-05-15T17:19:06+00:00",
       "time": "17:19",
       "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "r-nova-rs-drustvo-aleksandar-nesovic-hapsenje-veselin-milic-",
+      "title": "Panika vlasti i pitanja bez odgovora",
+      "url": "https://radar.nova.rs/drustvo/aleksandar-nesovic-hapsenje-veselin-milic/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T16:20:32+00:00",
+      "time": "16:20",
+      "source": "Radar",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
