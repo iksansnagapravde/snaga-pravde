@@ -29,34 +29,6 @@
       "priority": 104
     },
     {
-      "id": "a-napustila-vma-uhvatili-smo-je-sa-flasterom-na-ruci-bchy44g",
-      "title": "ŽENA SLOBE VASIĆA NAPUSTILA VMA Supruga joj izbacili alkoholisanog iz aviona, a nju smo uhvatili sa flasterom na ruci",
-      "url": "https://www.blic.rs/zabava/zena-slobe-vasica-napustila-vma-uhvatili-smo-je-sa-flasterom-na-ruci/bchy44g",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T14:53:26+00:00",
-      "time": "14:53",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "-vasica-utucena-napustila-vma-on-zadrzan-nemam-snage-gf7wt3b",
-      "title": "(VIDEO) UHVATILI SMO SUPRUGU SLOBE VASIĆA ISPRED VMA Utučena napustila ustanovu, pevač zadržan, ona je jedva izustila nekoliko rečenica: \"Nemam snage\"",
-      "url": "https://www.blic.rs/zabava/supruga-slobe-vasica-utucena-napustila-vma-on-zadrzan-nemam-snage/gf7wt3b",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T14:23:08+00:00",
-      "time": "14:23",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-slobodnaevropa-org-a-srbija-sud-pritvor-milic-33758250-html",
       "title": "Sud odredio pritvor smenjenom načelniku beogradske policije osumnjičenom za prikrivanje pokušaja ubistva",
       "url": "https://www.slobodnaevropa.org/a/srbija-sud-pritvor-milic/33758250.html",
@@ -225,20 +197,6 @@
       "priority": 92
     },
     {
-      "id": "2-policajaci-uhapseni-zbog-nestanka-muskarca-na-senjaku-vest",
-      "title": "Misteriozni nestanak na Senjaku: Među uhapšenima policajci i vlasnik lokala, traga se za telom ili preživelim",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223782/policajaci-uhapseni-zbog-nestanka-muskarca-na-senjaku/vest",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T20:00:00+00:00",
-      "time": "20:00",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "pijevac-optuzen-za-napad-na-novinarku-insajdera-u-cacilendu-",
       "title": "Jelenko Pijevac optužen za napad na novinarku Insajdera u Ćacilendu",
       "url": "https://www.krik.rs/jelenko-pijevac-optuzen-za-napad-na-novinarku-insajdera-u-cacilendu/",
@@ -293,6 +251,20 @@
       "breaking": false,
       "alert": true,
       "priority": 84
+    },
+    {
+      "id": "a-9997085-tuzilastvo-o-slucaju-nestanka-aleiksandra-nesovica",
+      "title": "OGLASILO SE VIŠE TUŽILAŠTVO O SLUČAJU NESTANKA ALEKSANDRA NEŠOVIĆA: Dokazi upućuju na to da je ubijen, devetoro uhapšenih se brani ćutanjem",
+      "url": "https://www.kurir.rs/crna-hronika/9997085/tuzilastvo-o-slucaju-nestanka-aleiksandra-nesovica",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T19:33:07+00:00",
+      "time": "19:33",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
     },
     {
       "id": "kal-bez-obezbedjenja-otkriva-naredba-o-sprovodjenju-istrage-",
@@ -365,20 +337,6 @@
       "priority": 70
     },
     {
-      "id": "9996839-uhapsen-mladic-iz-priboja-droga-pronadjena-kod-skola",
-      "title": "KRIO DROGU NA ŠKOLSKIM TERENIMA! Policija odmah reagovala, uhapšen mladić (21) iz Priboja",
-      "url": "https://www.kurir.rs/crna-hronika/9996839/uhapsen-mladic-iz-priboja-droga-pronadjena-kod-skola",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T14:21:07+00:00",
-      "time": "14:21",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "-org-a-dmitrij-lagovski-rusij-srbija-izrucenje-33756952-html",
       "title": "Ruski državljanin u strahu od izručenja, poslednja reč na ministru",
       "url": "https://www.slobodnaevropa.org/a/dmitrij-lagovski-rusij-srbija-izrucenje/33756952.html",
@@ -393,18 +351,60 @@
       "priority": 70
     },
     {
-      "id": "ktuelno-223781-hapsenje-zbog-teskog-ubistva-u-obrenovcu-vest",
-      "title": "Policija rasvetlila ubistvo u Obrenovcu: Osumnjičeni nakon svađe usmrtio muškarca oštrim predmetom",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223781/hapsenje-zbog-teskog-ubistva-u-obrenovcu/vest",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T20:23:00+00:00",
-      "time": "20:23",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
+      "id": "danas-rs-vesti-drustvo-vjt-istraga-10-osoba-ubistvo-nesovic-",
+      "title": "VJT: Pokrenuta istraga protiv 10 osoba zbog sumnje da su učestvovale u ubistvu Nešovića",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-istraga-10-osoba-ubistvo-nesovic/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T20:11:51+00:00",
+      "time": "20:11",
+      "source": "Danas",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 70
+      "priority": 66
+    },
+    {
+      "id": "anka-kekinog-saradnika-delo-kvalifikovano-kao-tesko-ubistvo-",
+      "title": "Oglasilo se tužilaštvo povodom slučaja nestanka Kekinog saradnika: Pokrenuta istraga protiv 10 osoba, delo kvalifikovano kao teško ubistvo",
+      "url": "https://nova.rs/vesti/hronika/oglasilo-se-tuzilastvo-povodom-slucaja-nestanka-kekinog-saradnika-delo-kvalifikovano-kao-tesko-ubistvo/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T20:08:31+00:00",
+      "time": "20:08",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "oba-zbog-sumnje-da-su-ucestvovali-u-teskom-ubistvu-nesovica-",
+      "title": "VJT: Pokrenuta istraga protiv 10 osoba zbog sumnje da su učestvovali u teškom ubistvu Nešovića",
+      "url": "https://n1info.rs/vesti/vjt-pokrenuta-istraga-protiv-10-osoba-zbog-sumnje-da-su-ucestvovali-u-teskom-ubistvu-nesovica/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T19:49:58+00:00",
+      "time": "19:49",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "-na-senjaku-nakon-kojeg-je-nestao-aleksandar-nesovic-5f87db1",
+      "title": "\"ALEKSANDAR NEŠOVIĆ JE UBIJEN\" Oglasilo se tužilaštvo povodom slučaja nestanka Kekinog saradnika: Otkrivena uloga svih osumnjičenih, među njima i Veselin Milić",
+      "url": "https://www.blic.rs/vesti/hronika/otkriveni-svi-detalji-sukoba-na-senjaku-nakon-kojeg-je-nestao-aleksandar-nesovic/5f87db1",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T19:45:03+00:00",
+      "time": "19:45",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "e-da-su-izvrsili-vise-krivicnih-dela-u-vezi-sa-ubistvom-html",
@@ -414,20 +414,6 @@
       "datetime": "2026-05-16T19:41:25+00:00",
       "time": "19:41",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "j-ubistva-novinara-dzamala-kasogija-2018-godine-u-istanbulu-",
-      "title": "Francuski sudija preuzima slučaj ubistva novinara Džamala Kašogija 2018. godine u Istanbulu",
-      "url": "https://n1info.rs/svet/francuski-sudija-preuzima-slucaj-ubistva-novinara-dzamala-kasogija-2018-godine-u-istanbulu/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T12:14:58+00:00",
-      "time": "12:14",
-      "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "-223928-razgovor-o-izmenama-pravosudnih-zakona-u-srbiji-vest",
+      "title": "Ministar Vujić održao onlajn sastanak sa ekspertima Venecijanske komisije",
+      "url": "https://www.euronews.rs/srbija/politika/223928/razgovor-o-izmenama-pravosudnih-zakona-u-srbiji/vest",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T17:52:00+00:00",
+      "time": "17:52",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     }
   ],
   "all_sources": [
