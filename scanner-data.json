@@ -85,6 +85,34 @@
       "priority": 94
     },
     {
+      "id": "950-granicna-policija-crne-gore-uhapsila-drzavljanina-srbije",
+      "title": "NEZAKONITO PREŠAO GRANICU, PA PAO U RUKE POLICIJE U Crnoj Gori uhapšen državljanina Srbije",
+      "url": "https://www.kurir.rs/region/crna-gora/9996950/granicna-policija-crne-gore-uhapsila-drzavljanina-srbije",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T22:50:00+00:00",
+      "time": "22:50",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "945-uhapsene-dve-osobe-osumnjicene-za-kradju-goriva-u-kotoru",
+      "title": "KRALI GORIVO IZ AUTOBUSA I KAMIONA Uhapšene dve osobe u Kotoru, istočili 330 litara",
+      "url": "https://www.kurir.rs/region/crna-gora/9996945/uhapsene-dve-osobe-osumnjicene-za-kradju-goriva-u-kotoru",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T21:45:00+00:00",
+      "time": "21:45",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "evnik-dnevnik-u-22-dan-kad-je-uhapsen-veselin-milic-1552026-",
       "title": "Dnevnik u 22: Dan kad je uhapšen Veselin Milić (15.5.2026)",
       "url": "https://n1info.rs/video/dnevnik/dnevnik-u-22-dan-kad-je-uhapsen-veselin-milic-1552026/",
@@ -309,13 +337,13 @@
       "priority": 72
     },
     {
-      "id": "kal-bez-obezbedjenja-otkriva-naredba-o-sprovodjenju-istrage-",
-      "title": "EKSKLUZIVNO Više tužilaštvo sumnja da je Vesko Milić namamio Aleksandra Nešovića da dođe u lokal bez obezbeđenja, otkriva naredba o sprovođenju istrage",
-      "url": "https://nova.rs/vesti/hronika/ekskluzivno-vise-tuzilastvo-sumnja-da-je-vesko-milic-namamio-aleksandra-nesovica-da-dodje-u-lokal-bez-obezbedjenja-otkriva-naredba-o-sprovodjenju-istrage/",
+      "id": "a-9997085-tuzilastvo-o-slucaju-nestanka-aleiksandra-nesovica",
+      "title": "OGLASILO SE VIŠE TUŽILAŠTVO O SLUČAJU NESTANKA ALEKSANDRA NEŠOVIĆA: Dokazi upućuju na to da je ubijen, devetoro uhapšenih se brani ćutanjem",
+      "url": "https://www.kurir.rs/crna-hronika/9997085/tuzilastvo-o-slucaju-nestanka-aleiksandra-nesovica",
       "date": "2026-05-16",
-      "datetime": "2026-05-16T16:34:42+00:00",
-      "time": "16:34",
-      "source": "Nova",
+      "datetime": "2026-05-16T19:33:07+00:00",
+      "time": "19:33",
+      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -358,20 +386,6 @@
       "datetime": "2026-05-16T16:42:46+00:00",
       "time": "16:42",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "onika-novosadjanin-sa-poternice-uhapsen-u-crnoj-gori-enfblcs",
-      "title": "SRBIN SA POTERNICE UHAPŠEN U CRNOJ GORI Ilegalno prešao granicu: Policija dobila dojavu, pa ga presrela u šumi",
-      "url": "https://www.blic.rs/vesti/hronika/novosadjanin-sa-poternice-uhapsen-u-crnoj-gori/enfblcs",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T15:48:52+00:00",
-      "time": "15:48",
-      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "-223928-razgovor-o-izmenama-pravosudnih-zakona-u-srbiji-vest",
-      "title": "Ministar Vujić održao onlajn sastanak sa ekspertima Venecijanske komisije",
-      "url": "https://www.euronews.rs/srbija/politika/223928/razgovor-o-izmenama-pravosudnih-zakona-u-srbiji/vest",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T17:52:00+00:00",
-      "time": "17:52",
-      "source": "Euronews Serbia",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     }
   ],
   "all_sources": [
