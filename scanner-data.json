@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "i-da-se-obrati-dacic-zbog-hapsenja-sefa-beogradske-policije-",
-      "title": "Ekološki ustanak traži da se obrati Dačić zbog hapšenja šefa beogradske policije",
-      "url": "https://www.danas.rs/vesti/drustvo/ekoloski-ustanak-trazi-da-se-obrati-dacic-zbog-hapsenja-sefa-beogradske-policije/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T12:00:55+00:00",
-      "time": "12:00",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 126
-    },
-    {
       "id": "-a-sef-policije-beograd-pritvor-pucnjava-vucic-33758403-html",
       "title": "Šef beogradske policije u pritvoru, Vučić najavljuje zakon protiv onih koji 'štite kriminalce'",
       "url": "https://www.slobodnaevropa.org/a/sef-policije-beograd-pritvor-pucnjava-vucic/33758403.html",
@@ -65,20 +51,6 @@
       "time": "14:23",
       "source": "Blic",
       "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "olitika-milos-jovanovic-pocinjemo-zvanicno-izbornu-kampanju-",
-      "title": "Miloš Jovanović: Počinjemo zvanično izbornu kampanju",
-      "url": "https://www.danas.rs/vesti/politika/milos-jovanovic-pocinjemo-zvanicno-izbornu-kampanju/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T12:36:05+00:00",
-      "time": "12:36",
-      "source": "Danas",
-      "category": "Избори",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -141,6 +113,20 @@
       "priority": 94
     },
     {
+      "id": "novaca-kako-se-nizu-afere-sa-narkoticima-povezane-sa-sns-om-",
+      "title": "Od Jovanjice do Novih Banovaca: Kako se nižu afere sa narkoticima povezane sa SNS-om?",
+      "url": "https://www.danas.rs/vesti/drustvo/od-jovanjice-do-novih-banovaca-kako-se-nizu-afere-sa-narkoticima-povezane-sa-sns-om/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T17:59:20+00:00",
+      "time": "17:59",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "psen-drzavljanin-srbije-koga-ona-potrazuje-usao-iz-albanije-",
       "title": "U Crnoj Gori uhapšen državljanin Srbije za kojim je raspisana poternica, ušao ilegalno iz Albanije",
       "url": "https://n1info.rs/region/u-crnoj-gori-uhapsen-drzavljanin-srbije-koga-ona-potrazuje-usao-iz-albanije/",
@@ -162,20 +148,6 @@
       "datetime": "2026-05-16T12:00:07+00:00",
       "time": "12:00",
       "source": "Vreme",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vrsi-najteze-krivicno-delo-i-mrtav-hladan-sedne-i-pije-pice-",
-      "title": "Vučić se oglasio i o Vesku Miliću: Izvrši najteže krivično delo i mrtav hladan sedne i popije piće",
-      "url": "https://nova.rs/vesti/hronika/vucic-se-oglasio-i-o-vesku-milicu-izvrsi-najteze-krivicno-delo-i-mrtav-hladan-sedne-i-pije-pice/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T11:29:34+00:00",
-      "time": "11:29",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -273,20 +245,6 @@
       "date": "2026-05-14",
       "datetime": "2026-05-14T20:00:00+00:00",
       "time": "20:00",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "3765-nestanak-an-u-beogradu-tuzilastvo-istrazuje-slucaj-vest",
-      "title": "Nestanak muškarca u Beogradu: Pronađene čaure i tragovi krvi, dve osobe uhapšene zbog sumnje na pokušaj ubistva",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223765/nestanak-an-u-beogradu-tuzilastvo-istrazuje-slucaj/vest",
-      "date": "2026-05-14",
-      "datetime": "2026-05-14T17:55:00+00:00",
-      "time": "17:55",
       "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
@@ -435,20 +393,6 @@
       "priority": 70
     },
     {
-      "id": "850-grama-amfetamina-21-godisnju-odredjeno-zadrzavanje-foto-",
-      "title": "Pretresom stana pronađeno 850 grama amfetamina, 21-godišnjaku određeno zadržavanje (FOTO)",
-      "url": "https://n1info.rs/vesti/pretresom-stana-pronadjeno-850-grama-amfetamina-21-godisnju-odredjeno-zadrzavanje-foto/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T09:17:33+00:00",
-      "time": "09:17",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "-org-a-dmitrij-lagovski-rusij-srbija-izrucenje-33756952-html",
       "title": "Ruski državljanin u strahu od izručenja, poslednja reč na ministru",
       "url": "https://www.slobodnaevropa.org/a/dmitrij-lagovski-rusij-srbija-izrucenje/33756952.html",
@@ -475,6 +419,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "okurugu-tulca-pronaden-projektil-sa-dva-kilograma-eksploziva",
+      "title": "​У румунском окуругу Тулча пронађен пројектил са два килограма експлозива",
+      "url": "https://www.politika.rs/scc/clanak/755670/u-rumunskom-okurugu-tulca-pronaden-projektil-sa-dva-kilograma-eksploziva",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T17:37:00+00:00",
+      "time": "17:37",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "j-ubistva-novinara-dzamala-kasogija-2018-godine-u-istanbulu-",
@@ -545,6 +503,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "i-svet-objavljena-istraga-o-korupciji-donalda-trampa-me49ly9",
+      "title": "SKANDAL U AMERICI! Objavljena najveća istraga IKADA o KORUPCIJI Donalda Trampa i njegove supruge Melanije: Ovo je teško opisati",
+      "url": "https://www.blic.rs/vesti/svet/objavljena-istraga-o-korupciji-donalda-trampa/me49ly9",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T17:51:34+00:00",
+      "time": "17:51",
+      "source": "Blic",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "ovima-bezbednosnih-sluzbi-zasticenih-nema-dosta-je-bilo-vest",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "-223928-razgovor-o-izmenama-pravosudnih-zakona-u-srbiji-vest",
+      "title": "Ministar Vujić održao onlajn sastanak sa ekspertima Venecijanske komisije",
+      "url": "https://www.euronews.rs/srbija/politika/223928/razgovor-o-izmenama-pravosudnih-zakona-u-srbiji/vest",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T17:52:00+00:00",
+      "time": "17:52",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "n1info-rs-vesti-andrej-vucic-milos-medenica-senjak-restoran-",
+      "title": "Vučić: Andrej u restoranu na Senjaku bio možda jednom, priču da je njegov plasira osuđeni kriminalac Miloš Medenica",
+      "url": "https://n1info.rs/vesti/andrej-vucic-milos-medenica-senjak-restoran/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T11:56:39+00:00",
+      "time": "11:56",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
