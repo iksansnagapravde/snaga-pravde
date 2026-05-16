@@ -29,6 +29,20 @@
       "priority": 126
     },
     {
+      "id": "-vasica-utucena-napustila-vma-on-zadrzan-nemam-snage-gf7wt3b",
+      "title": "(VIDEO) UHVATILI SMO SUPRUGU SLOBE VASIĆA ISPRED VMA Utučena napustila ustanovu, pevač zadržan, ona je jedva izustila nekoliko rečenica: \"Nemam snage\"",
+      "url": "https://www.blic.rs/zabava/supruga-slobe-vasica-utucena-napustila-vma-on-zadrzan-nemam-snage/gf7wt3b",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T14:23:08+00:00",
+      "time": "14:23",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "olitika-milos-jovanovic-pocinjemo-zvanicno-izbornu-kampanju-",
       "title": "Miloš Jovanović: Počinjemo zvanično izbornu kampanju",
       "url": "https://www.danas.rs/vesti/politika/milos-jovanovic-pocinjemo-zvanicno-izbornu-kampanju/",
@@ -170,7 +184,7 @@
     },
     {
       "id": "si-najteze-krivicno-delo-i-mrtav-hladan-sedne-i-popije-pice-",
-      "title": "Vučić o Miliću: Država uložila u njega, a on izvrši najteže krivično delo, i mrtav hladan sedne i popije piće",
+      "title": "Vučić: Donećemo zakon, jer ako neko izvrši najteže krivično delo i mrtav hladan sedne i popije piće - nema šta da tražiš u policiji",
       "url": "https://n1info.rs/vesti/vucic-o-milicu-drzava-ulozila-u-njega-a-on-izvrsi-najteze-krivicno-delo-i-mrtav-hladan-sedne-i-popije-pice/",
       "date": "2026-05-16",
       "datetime": "2026-05-16T11:13:41+00:00",
@@ -267,20 +281,6 @@
       "priority": 92
     },
     {
-      "id": "vackog-klana-poznato-ko-je-bio-na-meti-uhapsenih-skaljaraca-",
-      "title": "Snajperom hteli da ubiju člana kavačkog klana: Poznato ko je bio na meti uhapšenih škaljaraca",
-      "url": "https://nova.rs/vesti/hronika/snajperom-hteli-da-ubiju-clana-kavackog-klana-poznato-ko-je-bio-na-meti-uhapsenih-skaljaraca/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T08:41:28+00:00",
-      "time": "08:41",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "apsen-iracanin-optuzen-za-napade-na-americke-interesne-zone-",
       "title": "Ministarstvo pravde SAD: Uhapšen Iračanin optužen za napade na američke interesne zone",
       "url": "https://n1info.rs/svet/ministarstvo-pravde-sad-uhapsen-iracanin-optuzen-za-napade-na-americke-interesne-zone/",
@@ -301,20 +301,6 @@
       "date": "2026-05-16",
       "datetime": "2026-05-16T07:59:20+00:00",
       "time": "07:59",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "n1info-rs-vesti-veselinu-milicu-odredjen-pritvor-do-30-dana-",
-      "title": "Veselinu Miliću određen pritvor do 30 dana",
-      "url": "https://n1info.rs/vesti/veselinu-milicu-odredjen-pritvor-do-30-dana/",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T22:01:11+00:00",
-      "time": "22:01",
       "source": "N1",
       "category": "Хапшења",
       "summary": "",
@@ -463,6 +449,20 @@
       "priority": 90
     },
     {
+      "id": "rg-a-sever-kosovo-veselinovic-radoicic-beograd-33756925-html",
+      "title": "Bogatstvo trojca sa američke crne liste u Srbiji",
+      "url": "https://www.slobodnaevropa.org/a/sever-kosovo-veselinovic-radoicic-beograd-/33756925.html",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T14:31:50+00:00",
+      "time": "14:31",
+      "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
       "id": "s-ko-je-veselin-milic-uhapseni-nacelnik-beogradske-policije-",
       "title": "Ko je Veselin Milić, uhapšeni načelnik beogradske policije",
       "url": "https://www.krik.rs/ko-je-veselin-milic-uhapseni-nacelnik-beogradske-policije/",
@@ -475,6 +475,34 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "9996839-uhapsen-mladic-iz-priboja-droga-pronadjena-kod-skola",
+      "title": "KRIO DROGU NA ŠKOLSKIM TERENIMA! Policija odmah reagovala, uhapšen mladić (21) iz Priboja",
+      "url": "https://www.kurir.rs/crna-hronika/9996839/uhapsen-mladic-iz-priboja-droga-pronadjena-kod-skola",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T14:21:07+00:00",
+      "time": "14:21",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "olicija-na-skolskim-terenima-pronasla-drogu-uhapsen-muskarac",
+      "title": "Полиција на школским теренима пронашла дрогу, ухапшен мушкарац",
+      "url": "https://www.politika.rs/scc/clanak/755627/policija-na-skolskim-terenima-pronasla-drogu-uhapsen-muskarac",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T14:12:00+00:00",
+      "time": "14:12",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "850-grama-amfetamina-21-godisnju-odredjeno-zadrzavanje-foto-",
@@ -645,40 +673,12 @@
       "priority": 28
     },
     {
-      "id": "a-novi-dan-u-nedelju-o-posledicama-hapsenja-veselina-milica-",
-      "title": "Novi dan u nedelju o posledicama hapšenja Veselina Milića",
-      "url": "https://n1info.rs/najave-emisija/novi-dan-u-nedelju-o-posledicama-hapsenja-veselina-milica/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T12:51:31+00:00",
-      "time": "12:51",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "itanje-da-li-je-milic-zrtveni-jarac-koji-je-pusten-niz-vodu-",
-      "title": "Srđan Cvijić: Postavlja se pitanje da li je Milić \"žrtveni jarac\", koji je pušten niz vodu",
-      "url": "https://n1info.rs/vesti/srdjan-cvijic-postavlja-se-pitanje-da-li-je-milic-zrtveni-jarac-koji-je-pusten-niz-vodu/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T12:38:21+00:00",
-      "time": "12:38",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "om-obracanju-i-slucaju-veselina-milica-trazi-se-odgovornost-",
       "title": "Opozicija o Vučićevom obraćanju i slučaju Veselina Milića: Traži se odgovornost",
       "url": "https://www.danas.rs/vesti/politika/opozicija-o-vucicevom-obracanju-i-slucaju-veselina-milica-trazi-se-odgovornost/",
       "date": "2026-05-16",
-      "datetime": "2026-05-16T12:07:33+00:00",
-      "time": "12:07",
+      "datetime": "2026-05-16T14:37:33+00:00",
+      "time": "14:37",
       "source": "Danas",
       "category": "Хапшења",
       "summary": "",
@@ -687,12 +687,12 @@
       "priority": 26
     },
     {
-      "id": "-gangsterski-film-i-pokazuje-isprepletanost-vlasti-i-mafije-",
-      "title": "Prelević o hapšenju Milića: Podseća na gangsterski film i pokazuje isprepletanost vlasti i mafije",
-      "url": "https://n1info.rs/vesti/prelevic-o-hapsenju-milica-podseca-na-gangsterski-film-i-pokazuje-isprepletanost-vlasti-i-mafije/",
+      "id": "a-novi-dan-u-nedelju-o-posledicama-hapsenja-veselina-milica-",
+      "title": "Novi dan u nedelju o posledicama hapšenja Veselina Milića",
+      "url": "https://n1info.rs/najave-emisija/novi-dan-u-nedelju-o-posledicama-hapsenja-veselina-milica/",
       "date": "2026-05-16",
-      "datetime": "2026-05-16T08:54:35+00:00",
-      "time": "08:54",
+      "datetime": "2026-05-16T12:51:31+00:00",
+      "time": "12:51",
       "source": "N1",
       "category": "Хапшења",
       "summary": "",
