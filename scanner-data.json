@@ -155,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "si-najteze-krivicno-delo-i-mrtav-hladan-sedne-i-popije-pice-",
-      "title": "Vučić: Donećemo zakon, jer ako neko izvrši najteže krivično delo i mrtav hladan sedne i popije piće - nema šta da traži u policiji",
-      "url": "https://n1info.rs/vesti/vucic-o-milicu-drzava-ulozila-u-njega-a-on-izvrsi-najteze-krivicno-delo-i-mrtav-hladan-sedne-i-popije-pice/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T11:13:41+00:00",
-      "time": "11:13",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "23982-policija-u-beogradu-uhapsila-dilera-opojnih-droga-vest",
       "title": "Uhapšen  mladić u Beogradu zbog sumnje na trgovinu amfetaminom, zaplenjeno oko 850 grama droge",
       "url": "https://www.euronews.rs/srbija/aktuelno/223982/policija-u-beogradu-uhapsila-dilera-opojnih-droga/vest",
@@ -421,13 +407,13 @@
       "priority": 70
     },
     {
-      "id": "okurugu-tulca-pronaden-projektil-sa-dva-kilograma-eksploziva",
-      "title": "​У румунском окуругу Тулча пронађен пројектил са два килограма експлозива",
-      "url": "https://www.politika.rs/scc/clanak/755670/u-rumunskom-okurugu-tulca-pronaden-projektil-sa-dva-kilograma-eksploziva",
+      "id": "e-da-su-izvrsili-vise-krivicnih-dela-u-vezi-sa-ubistvom-html",
+      "title": "ВЈТ: Истрага против 10 особа међу којима је Веселин Милић због сумње да су извршили више кривичних дела у вези са убиством",
+      "url": "https://www.rts.rs/vesti/hronika/5952098/vjt-istraga-protiv-10-osoba-medju-kojima-je-veselin-milic-zbog-sumnje-da-su-izvrsili-vise-krivicnih-dela-u-vezi-sa-ubistvom.html",
       "date": "2026-05-16",
-      "datetime": "2026-05-16T17:37:00+00:00",
-      "time": "17:37",
-      "source": "Politika",
+      "datetime": "2026-05-16T19:41:25+00:00",
+      "time": "19:41",
+      "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -505,6 +491,20 @@
       "priority": 66
     },
     {
+      "id": "ka-srpska-ce-uciniti-sve-da-ponisti-inckove-i-smitove-odluke",
+      "title": "Минић: Република Српска ће учинити све да поништи Инцкове и Шмитове одлуке",
+      "url": "https://www.politika.rs/scc/clanak/755688/minic-republika-srpska-ce-uciniti-sve-da-ponisti-inckove-i-smitove-odluke",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T19:14:00+00:00",
+      "time": "19:14",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "i-svet-objavljena-istraga-o-korupciji-donalda-trampa-me49ly9",
       "title": "SKANDAL U AMERICI! Objavljena najveća istraga IKADA o KORUPCIJI Donalda Trampa i njegove supruge Melanije: Ovo je teško opisati",
       "url": "https://www.blic.rs/vesti/svet/objavljena-istraga-o-korupciji-donalda-trampa/me49ly9",
@@ -573,6 +573,34 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "-ostavku-dacica-na-mesto-ministra-mup-nakon-hapsenja-milica-",
+      "title": "Tončev: SPS nije razmatrao eventualnu ostavku Dačića na mesto ministra MUP nakon hapšenja Milića",
+      "url": "https://n1info.rs/vesti/toncev-sps-nije-razmatrao-eventualnu-ostavku-dacica-na-mesto-ministra-mup-nakon-hapsenja-milica/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T19:29:39+00:00",
+      "time": "19:29",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "as-rs-vesti-politika-toncev-sps-ne-razmatra-dacicevu-ostvku-",
+      "title": "Tončev: SPS ne razmatra Dačićevu ostavku",
+      "url": "https://www.danas.rs/vesti/politika/toncev-sps-ne-razmatra-dacicevu-ostvku/",
+      "date": "2026-05-16",
+      "datetime": "2026-05-16T19:14:56+00:00",
+      "time": "19:14",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "icijskoj-stanici-nakon-hapsenja-u-istrazi-nestanka-nesovica-",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "-223928-razgovor-o-izmenama-pravosudnih-zakona-u-srbiji-vest",
-      "title": "Ministar Vujić održao onlajn sastanak sa ekspertima Venecijanske komisije",
-      "url": "https://www.euronews.rs/srbija/politika/223928/razgovor-o-izmenama-pravosudnih-zakona-u-srbiji/vest",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T17:52:00+00:00",
-      "time": "17:52",
-      "source": "Euronews Serbia",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "n1info-rs-vesti-andrej-vucic-milos-medenica-senjak-restoran-",
-      "title": "Vučić: Andrej u restoranu na Senjaku bio možda jednom, priču da je njegov plasira osuđeni kriminalac Miloš Medenica",
-      "url": "https://n1info.rs/vesti/andrej-vucic-milos-medenica-senjak-restoran/",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T11:56:39+00:00",
-      "time": "11:56",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     }
   ],
   "all_sources": [
