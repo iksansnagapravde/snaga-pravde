@@ -99,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "ju-nestanka-aleksandra-nesovica-baje-odvezao-do-ovog-jezera-",
-      "title": "Dejan je osumnjičene u slučaju nestanka Aleksandra Nešovića Baje iz restorana na Senjaku odvezao do ovog jezera",
-      "url": "https://nova.rs/vesti/hronika/osumnjicene-u-slucaju-nestanka-aleksandra-nesovica-baje-odvezao-do-ovog-jezera/",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T08:49:53+00:00",
-      "time": "08:49",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "23982-policija-u-beogradu-uhapsila-dilera-opojnih-droga-vest",
       "title": "Uhapšen  mladić u Beogradu zbog sumnje na trgovinu amfetaminom, zaplenjeno oko 850 grama droge",
       "url": "https://www.euronews.rs/srbija/aktuelno/223982/policija-u-beogradu-uhapsila-dilera-opojnih-droga/vest",
@@ -295,6 +281,34 @@
       "priority": 72
     },
     {
+      "id": "nejdzer-izboden-nozem-napadac-uhapsen-zbog-pokusaja-ubistva-",
+      "title": "Drama u Vrnjačkoj Banji: Tinejdžer izboden nožem, napadač uhapšen zbog pokušaja ubistva",
+      "url": "https://nova.rs/vesti/hronika/drama-u-vrnjackoj-banji-tinejdzer-izboden-nozem-napadac-uhapsen-zbog-pokusaja-ubistva/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T16:14:53+00:00",
+      "time": "16:14",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "il-koriscen-za-transport-ubijenog-pritvor-osumnjicenima-html",
+      "title": "Случај Сењак – потрага за телом код Јарковачког језера, пронађен аутомобил коришћен за транспорт убијеног, притвор осумњиченима",
+      "url": "https://www.rts.rs/vesti/hronika/5952191/slucaj-senjak--potraga-za-telom-kod-jarkovackog-jezera-pronadjen-automobil-koriscen-za-transport-ubijenog-pritvor-osumnjicenima.html",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T15:56:55+00:00",
+      "time": "15:56",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "a-prijavila-nestanak-a-n-slucaj-nema-veze-sa-narko-dilerima-",
       "title": "Vučić o slučaju „Senjak“: Policija reagovala kad je supruga prijavila nestanak A.N, slučaj nema veze sa narko dilerima",
       "url": "https://www.danas.rs/vesti/drustvo/vucic-o-slucaju-senjak-policija-reagovala-kad-je-supruga-prijavila-nestanak-a-n-slucaj-nema-veze-sa-narko-dilerima/",
@@ -372,20 +386,6 @@
       "datetime": "2026-05-17T11:24:32+00:00",
       "time": "11:24",
       "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "il-koriscen-za-transport-ubijenog-pritvor-osumnjicenima-html",
-      "title": "Случај Сењак – потрага за телом код Јарковачког језера, пронађен аутомобил коришћен за транспорт убијеног, притвор осумњиченима",
-      "url": "https://www.rts.rs/vesti/hronika/5952191/slucaj-senjak--potraga-za-telom-kod-jarkovackog-jezera-pronadjen-automobil-koriscen-za-transport-ubijenog-pritvor-osumnjicenima.html",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T11:19:02+00:00",
-      "time": "11:19",
-      "source": "RTS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -561,20 +561,6 @@
       "priority": 60
     },
     {
-      "id": "agom-nabu-dokazi-za-hapsenje-supruge-lidera-kijevskog-rezima",
-      "title": "Олена Зеленска под истрагом НАБУ: докази за хапшење супруге лидера кијевског режима",
-      "url": "https://www.politika.rs/scc/clanak/755872/olena-zelenska-pod-istragom-nabu-dokazi-za-hapsenje-supruge-lidera-kijevskog-rezima",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T14:58:00+00:00",
-      "time": "14:58",
-      "source": "Politika",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "ada-zelenskog-istraga-korupcije-potresa-vrh-vlasti-u-kijevu-",
       "title": "Da li je ovo početak pada Zelenskog? Istraga korupcije potresa vrh vlasti u Kijevu",
       "url": "https://nova.rs/vesti/svet/da-li-je-ovo-pocetak-pada-zelenskog-istraga-korupcije-potresa-vrh-vlasti-u-kijevu/",
@@ -694,6 +680,20 @@
       "datetime": "2026-05-17T13:12:52+00:00",
       "time": "13:12",
       "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "ustvo-sta-ce-biti-sa-dacicem-posle-hapsenja-veselina-milica-",
+      "title": "Šta će biti sa Dačićem posle hapšenja Veselina Milića?",
+      "url": "https://www.danas.rs/vesti/drustvo/sta-ce-biti-sa-dacicem-posle-hapsenja-veselina-milica/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T10:55:54+00:00",
+      "time": "10:55",
+      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
