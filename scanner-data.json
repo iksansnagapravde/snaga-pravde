@@ -29,20 +29,6 @@
       "priority": 96
     },
     {
-      "id": "nje-veselin-milic-nacelnik-beogradska-policija-33757556-html",
-      "title": "Prvi čovek beogradske policije osumnjičen za prikrivanje pokušaja ubistva, tužilaštvo traži pritvor",
-      "url": "https://www.slobodnaevropa.org/a/hapsenje-veselin-milic-nacelnik-beogradska-policija/33757556.html",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T09:16:32+00:00",
-      "time": "09:16",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
       "id": "obodnaevropa-org-a-srbija-policija-vucic-milic-33758287-html",
       "title": "Policija demantuje da je pronađeno telo u slučaju u koji je umešan Veselin Milić",
       "url": "https://www.slobodnaevropa.org/a/srbija-policija-vucic-milic/33758287.html",
@@ -141,20 +127,6 @@
       "priority": 92
     },
     {
-      "id": "tuelno-223895-ko-je-veselin-milic-koji-je-danas-uhapsen-vest",
-      "title": "Od policajca i pomoćnika komandira u Užicu do načelnika PU za grad Beograd: Ko je Veselin Milić koji je danas uhapšen?",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223895/ko-je-veselin-milic-koji-je-danas-uhapsen/vest",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T14:18:00+00:00",
-      "time": "14:18",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "up-podrske-studentima-uhapsenim-posle-vidovdanskog-protesta-",
       "title": "Ispred Palate pravde u Beogradu skup podrške studentima uhapšenim posle Vidovdanskog protesta",
       "url": "https://www.ktv.rs/2026/05/15/ispred-palate-pravde-u-beogradu-skup-podrske-studentima-uhapsenim-posle-vidovdanskog-protesta/",
@@ -162,20 +134,6 @@
       "datetime": "2026-05-15T13:34:22+00:00",
       "time": "13:34",
       "source": "KTV",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda-vest",
-      "title": "U Leskovcu zaplenjena velika količina duvana i cigareta: Uhapšena žena",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223877/hapsenje-zbog-nedozvoljenog-prometa-akciznih-proizvoda/vest",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T13:29:00+00:00",
-      "time": "13:29",
-      "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -267,6 +225,20 @@
       "priority": 84
     },
     {
+      "id": "zuje-teren-pronadjen-automobil-u-vezi-sa-nestalim-muskarcem-",
+      "title": "‘Slučaj Senjak’: Policija pretražuje teren, pronađen automobil u vezi sa nestalim muškarcem",
+      "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-policija-pretrazuje-teren-pronadjen-automobil-u-vezi-sa-nestalim-muskarcem/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T14:10:14+00:00",
+      "time": "14:10",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 76
+    },
+    {
       "id": "za-koji-se-sumnja-da-je-u-njemu-bilo-telo-nestalog-muskarca-",
       "title": "‘Slučaj Senjak’: Pronađen automobil za koji se sumnja da je u njemu bilo telo nestalog muškarca",
       "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-pronadjen-automobil-za-koji-se-sumnja-da-je-u-njemu-bilo-telo-nestalog-muskarca/",
@@ -323,6 +295,20 @@
       "priority": 72
     },
     {
+      "id": "etali-osumnjicene-ubice-sa-telom-aleksandra-nesovica-zepxdx0",
+      "title": "(MAPA) OVUDA SU SE OSUMNJIČENI KRETALI SA TELOM UBIJENOG ALEKSANDRA NEŠOVIĆA Policija češlja jezera i sela po Vojvodini, pored Inđije OPSADNO STANJE",
+      "url": "https://www.blic.rs/vesti/hronika/mapa-evo-kuda-su-se-kretali-osumnjicene-ubice-sa-telom-aleksandra-nesovica/zepxdx0",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T13:59:41+00:00",
+      "time": "13:59",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "vo-uhapsen-osumnjiceni-za-pokusaj-ubistva-u-vrnjackoj-banji-",
       "title": "Uhapšen osumnjičeni za pokušaj ubistva u Vrnjačkoj Banji",
       "url": "https://www.danas.rs/vesti/drustvo/uhapsen-osumnjiceni-za-pokusaj-ubistva-u-vrnjackoj-banji/",
@@ -377,6 +363,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "aleksandar-nesovic-boske-vjt-ubistvo-policija-veselin-milic-",
+      "title": "VJT potvrdio da je u toku potraga za telom Aleksandra Nešovića",
+      "url": "https://vreme.com/vesti/aleksandar-nesovic-boske-vjt-ubistvo-policija-veselin-milic/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T14:05:36+00:00",
+      "time": "14:05",
+      "source": "Vreme",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "potraga-za-telom-aleksandra-nesovica-kod-jarkovackog-jezera-",
@@ -463,20 +463,6 @@
       "priority": 66
     },
     {
-      "id": "aleksandar-nesovic-boske-vjt-ubistvo-policija-veselin-milic-",
-      "title": "VJT pokrenuo istragu u slučaju ubistva Aleksandra Nešovića",
-      "url": "https://vreme.com/vesti/aleksandar-nesovic-boske-vjt-ubistvo-policija-veselin-milic/",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T07:16:36+00:00",
-      "time": "07:16",
-      "source": "Vreme",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "e-da-su-izvrsili-vise-krivicnih-dela-u-vezi-sa-ubistvom-html",
       "title": "ВЈТ: Истрага против 10 особа међу којима је Веселин Милић због сумње да су извршили више кривичних дела у вези са убиством",
       "url": "https://www.rts.rs/vesti/hronika/5952098/vjt-istraga-protiv-10-osoba-medju-kojima-je-veselin-milic-zbog-sumnje-da-su-izvrsili-vise-krivicnih-dela-u-vezi-sa-ubistvom.html",
@@ -497,20 +483,6 @@
       "date": "2026-05-15",
       "datetime": "2026-05-15T17:15:00+00:00",
       "time": "17:15",
-      "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "pel-beogradskog-tuzilastva-o-neproverenim-informacijama-vest",
-      "title": "Više javno tužilaštvo u Beogradu apeluje na medije da ne objavljuju neproverene informacije o nestanku A.N.",
-      "url": "https://www.euronews.rs/srbija/aktuelno/223899/apel-beogradskog-tuzilastva-o-neproverenim-informacijama/vest",
-      "date": "2026-05-15",
-      "datetime": "2026-05-15T14:35:00+00:00",
-      "time": "14:35",
       "source": "Euronews Serbia",
       "category": "Тужилаштво",
       "summary": "",
@@ -573,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 33
+    },
+    {
+      "id": "ada-zelenskog-istraga-korupcije-potresa-vrh-vlasti-u-kijevu-",
+      "title": "Da li je ovo početak pada Zelenskog? Istraga korupcije potresa vrh vlasti u Kijevu",
+      "url": "https://nova.rs/vesti/svet/da-li-je-ovo-pocetak-pada-zelenskog-istraga-korupcije-potresa-vrh-vlasti-u-kijevu/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T14:27:42+00:00",
+      "time": "14:27",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "-se-desava-s-konkursom-za-agenciju-za-sprecavanje-korupcije-",
@@ -645,6 +631,48 @@
       "priority": 28
     },
     {
+      "id": "fo-rs-najave-emisija-n1-studio-live-misterija-slucaja-milic-",
+      "title": "N1 Studio Live: Misterija slučaja Milić",
+      "url": "https://n1info.rs/najave-emisija/n1-studio-live-misterija-slucaja-milic/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T13:52:03+00:00",
+      "time": "13:52",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "atra-da-se-milic-namestio-i-da-to-ima-veze-sa-zvucnim-topom-",
+      "title": "Miloš Pavlović smatra da se Milić \"namestio\" i da to ima veze sa zvučnim topom",
+      "url": "https://nova.rs/vesti/hronika/milos-pavlovic-smatra-da-se-milic-namestio-i-da-to-ima-veze-sa-zvucnim-topom/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T13:50:14+00:00",
+      "time": "13:50",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "vic-smatra-da-se-namestio-i-da-to-ima-veze-sa-zvucnim-topom-",
+      "title": "Sagovornici N1 saglasni da je Veselin Milić \"znao mnogo\": Pavlović smatra da se \"namestio\" i da to ima veze sa zvučnim topom",
+      "url": "https://n1info.rs/vesti/sagovornici-n1-saglasni-da-je-veselin-milic-znao-mnogo-pavlovic-smatra-da-se-namestio-i-da-to-ima-veze-sa-zvucnim-topom/",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T13:12:52+00:00",
+      "time": "13:12",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "ustvo-sta-ce-biti-sa-dacicem-posle-hapsenja-veselina-milica-",
       "title": "Šta će biti sa Dačićem posle hapšenja Veselina Milića?",
       "url": "https://www.danas.rs/vesti/drustvo/sta-ce-biti-sa-dacicem-posle-hapsenja-veselina-milica/",
@@ -666,34 +694,6 @@
       "datetime": "2026-05-17T10:40:24+00:00",
       "time": "10:40",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "ikaciju-dela-u-tesko-ubistvo-jer-zvanicno-telo-nije-nadjeno-",
-      "title": "Milićević: Nejasno zašto je VJT promenio kvalifikaciju dela u \"teško ubistvo\", jer zvanično telo nije nađeno",
-      "url": "https://n1info.rs/vesti/milicevic-nejasno-zasto-je-vjt-promenio-kvalifikaciju-dela-u-tesko-ubistvo-jer-zvanicno-telo-nije-nadjeno/",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T09:22:24+00:00",
-      "time": "09:22",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "danas-rs-vesti-politika-boris-tadic-veselin-milic-crna-gora-",
-      "title": "Boris Tadić o Miliću i Crnoj Gori: Vučić jeste predsednik nečega, ali to odavno nije država",
-      "url": "https://www.danas.rs/vesti/politika/boris-tadic-veselin-milic-crna-gora/",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T07:52:31+00:00",
-      "time": "07:52",
-      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
