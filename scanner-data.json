@@ -351,20 +351,6 @@
       "priority": 70
     },
     {
-      "id": "-ubistva-nesovica-drzava-pokazala-da-nema-zasticenih-3k6pqyr",
-      "title": "\"POLICIJA KRENULA DA RADI KAD JE SUPRUGA PRIJAVILA NESTANAK\" Vučić iz Bakua o slučaju ubistva Nešovića: \"Država pokazala da nema zaštićenih\"(VIDEO)",
-      "url": "https://www.blic.rs/vesti/politika/vucic-iz-bakua-o-slucaju-ubistva-nesovica-drzava-pokazala-da-nema-zasticenih/3k6pqyr",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T14:49:46+00:00",
-      "time": "14:49",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ti-uhapsen-osumnjiceni-za-pokusaj-ubistva-u-vrnjackoj-banji-",
       "title": "Uhapšen osumnjičeni za pokušaj ubistva u Vrnjačkoj Banji",
       "url": "https://n1info.rs/vesti/uhapsen-osumnjiceni-za-pokusaj-ubistva-u-vrnjackoj-banji/",
@@ -477,6 +463,20 @@
       "priority": 66
     },
     {
+      "id": "region-crna-gora-9997779-fenomen-pucanja-celina-na-durmitoru",
+      "title": "PRIRODNI FENOMEN Pukle čeline na Durmitoru, prizori ostavljaju bez daha (FOTO)",
+      "url": "https://www.kurir.rs/region/crna-gora/9997779/fenomen-pucanja-celina-na-durmitoru",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T22:20:00+00:00",
+      "time": "22:20",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "ada-zelenskog-istraga-korupcije-potresa-vrh-vlasti-u-kijevu-",
       "title": "Da li je ovo početak pada Zelenskog? Istraga korupcije potresa vrh vlasti u Kijevu",
       "url": "https://nova.rs/vesti/svet/da-li-je-ovo-pocetak-pada-zelenskog-istraga-korupcije-potresa-vrh-vlasti-u-kijevu/",
@@ -545,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "-9997555-mks-odbacio-navode-o-hapsenju-izraelskih-zvanicnika",
+      "title": "MKS ODBACIO NAVODE IZRAELSKIH MEDIJA: Nisu izdati novi nalozi za hapšenje političara i vojnih zvaničnika",
+      "url": "https://www.kurir.rs/planeta/9997555/mks-odbacio-navode-o-hapsenju-izraelskih-zvanicnika",
+      "date": "2026-05-17",
+      "datetime": "2026-05-17T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "vo-veselin-milic-i-poslednji-ekser-u-kovceg-srpske-policije-",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "a-telo-muskarca-izvuceno-iz-automobila-u-jezeru-kod-becmena-",
-      "title": "Telo muškarca izvučeno iz automobila u jezeru kod Bečmena: Policija radi na identifikaciji",
-      "url": "https://nova.rs/vesti/hronika/telo-muskarca-izvuceno-iz-automobila-u-jezeru-kod-becmena/",
-      "date": "2026-05-17",
-      "datetime": "2026-05-17T19:44:17+00:00",
-      "time": "19:44",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
