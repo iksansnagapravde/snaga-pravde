@@ -43,18 +43,18 @@
       "priority": 111
     },
     {
-      "id": "ja-zabranila-koncert-baja-malog-knindze-u-pljevljima-dxmdllg",
-      "title": "ZABRANJEN KONCERT BAJE MALOG KNINDŽE U PLJEVLJIMA Policija izdala hitno saopštenje",
-      "url": "https://www.blic.rs/zabava/policija-zabranila-koncert-baja-malog-knindze-u-pljevljima/dxmdllg",
+      "id": "u-od-ebole-hitno-uvedene-drasticne-mere-na-granicama-vgl17y8",
+      "title": "AMERIKA U STRAHU OD EBOLE Hitno uvedene drastične mere na granicama: Zaraženi misionar i lekar prebačen iz Konga u Nemačku",
+      "url": "https://www.blic.rs/vesti/svet/amerika-u-strahu-od-ebole-hitno-uvedene-drasticne-mere-na-granicama/vgl17y8",
       "date": "2026-05-18",
-      "datetime": "2026-05-18T15:51:03+00:00",
-      "time": "15:51",
+      "datetime": "2026-05-18T20:46:56+00:00",
+      "time": "20:46",
       "source": "Blic",
-      "category": "Полиција",
+      "category": "Људска права",
       "summary": "",
       "breaking": true,
       "alert": false,
-      "priority": 104
+      "priority": 100
     },
     {
       "id": "ecavanja-sukoba-interesa-i-ocuvanja-ugleda-ministarstva-html",
@@ -86,7 +86,7 @@
     },
     {
       "id": "ija-aktuelno-224236-izbegnuta-nesreca-na-milosu-velikom-vest",
-      "title": "Izbegnuta nesreća na autoputu Miloš Veliki: Hitno upozorenje razglasom spečilo vozilo da uđe u suprotnom smeru u tunel",
+      "title": "Izbegnuta nesreća na autoputu Miloš Veliki: Hitno upozorenje razglasom sprečilo vozilo da uđe u suprotnom smeru u tunel",
       "url": "https://www.euronews.rs/srbija/aktuelno/224236/izbegnuta-nesreca-na-milosu-velikom/vest",
       "date": "2026-05-18",
       "datetime": "2026-05-18T10:32:00+00:00",
@@ -111,20 +111,6 @@
       "breaking": false,
       "alert": true,
       "priority": 95
-    },
-    {
-      "id": "obodnaevropa-org-a-srbija-policija-vucic-milic-33758287-html",
-      "title": "Policija demantuje da je pronađeno telo u slučaju u koji je umešan Veselin Milić",
-      "url": "https://www.slobodnaevropa.org/a/srbija-policija-vucic-milic/33758287.html",
-      "date": "2026-05-16",
-      "datetime": "2026-05-16T10:37:31+00:00",
-      "time": "10:37",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 94
     },
     {
       "id": "luksuzna-vila-bracnog-para-uhapsenog-zbog-ubistva-na-senjaku",
@@ -162,20 +148,6 @@
       "datetime": "2026-05-18T16:23:32+00:00",
       "time": "16:23",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "adju-nakita-i-novca-vrednosti-35-miliona-dinara-u-svilajncu-",
-      "title": "Uhapšen osumnjičeni za krađu nakita i novca u Svilajncu",
-      "url": "https://n1info.rs/vesti/uhapsen-osumnjiceni-za-kradju-nakita-i-novca-vrednosti-35-miliona-dinara-u-svilajncu/",
-      "date": "2026-05-18",
-      "datetime": "2026-05-18T15:42:36+00:00",
-      "time": "15:42",
-      "source": "N1",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -337,20 +309,6 @@
       "priority": 70
     },
     {
-      "id": "98438-sudija-doneo-odluku-u-slucaju-ubistva-brajana-tompsona",
-      "title": "SUDIJA DONEO ODLUKU U SLUČAJU UBISTVA BRAJANA TOMPSONA! Optuženi Luiđi Manđione u teškoj situaciji, TUŽILAŠTVO ima KECA u RUKAVU! (FOTO)",
-      "url": "https://www.kurir.rs/planeta/9998438/sudija-doneo-odluku-u-slucaju-ubistva-brajana-tompsona",
-      "date": "2026-05-18",
-      "datetime": "2026-05-18T15:05:54+00:00",
-      "time": "15:05",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "24265-istraga-protiv-sase-v-zbog-pranja-novca-i-ubistva-vest",
       "title": "Tužilaštvo istražuje poreklo imovine osumnjičenog za ubistvo na Senjaku",
       "url": "https://www.euronews.rs/srbija/aktuelno/224265/istraga-protiv-sase-v-zbog-pranja-novca-i-ubistva/vest",
@@ -393,18 +351,18 @@
       "priority": 66
     },
     {
-      "id": "nis-milenijum-tim-izgubio-na-tenderu-za-izgradnju-naftovoda-",
-      "title": "Milenijum tim izgubio na tenderu za izgradnju naftovoda: Posao vredan 120 miliona evra dobila firma Dragoljuba Zbiljića i njeni partneri",
-      "url": "https://nova.rs/vesti/biznis/milenijum-tim-izgubio-na-tenderu-za-izgradnju-naftovoda/",
+      "id": "-planeta-9998651-nezapaceni-korupcionaski-skandal-u-ukrajini",
+      "title": "VELIKI KORUPCIONAŠKI SKANDAL TRESE UKRAJINU! Otkriven TAJANSTVENI kompleks luksuznih vila saradnika Zelenskog! Četvrta kuća bila namenjena šefu države? (VIDEO)",
+      "url": "https://www.kurir.rs/planeta/9998651/nezapaceni-korupcionaski-skandal-u-ukrajini",
       "date": "2026-05-18",
-      "datetime": "2026-05-18T14:55:48+00:00",
-      "time": "14:55",
-      "source": "Nova",
-      "category": "Јавне набавке",
+      "datetime": "2026-05-18T20:08:11+00:00",
+      "time": "20:08",
+      "source": "Kurir",
+      "category": "Корупција",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 32
+      "priority": 30
     },
     {
       "id": "w-danas-rs-svet-albanija-dejvid-j-kostelancik-endrju-rajnus-",
@@ -533,6 +491,20 @@
       "priority": 26
     },
     {
+      "id": "anak-756241-pravosudni-zakoni-poslati-venecijanskoj-komisiji",
+      "title": "Правосудни закони послати Венецијанској комисији",
+      "url": "https://www.politika.rs/scc/clanak/756241/pravosudni-zakoni-poslati-venecijanskoj-komisiji",
+      "date": "2026-05-18",
+      "datetime": "2026-05-18T20:03:00+00:00",
+      "time": "20:03",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "tvo-pravde-uputilo-unapredjene-zakone-venecijanskoj-komisiji",
       "title": "MINISTARSTVO PRAVDE: Unapređeni tekstovi seta pravosudnih zakona prosleđeni Venecijanskoj komisiji",
       "url": "https://www.kurir.rs/vesti/politika/9998638/ministarstvo-pravde-uputilo-unapredjene-zakone-venecijanskoj-komisiji",
@@ -645,20 +617,6 @@
       "priority": 25
     },
     {
-      "id": "vic-najavio-promene-zakona-nakon-ubistva-tinejdzera-u-drnisu",
-      "title": "Пленковић најавио промене закона након убиства тинејџера у Дрнишу",
-      "url": "https://www.politika.rs/scc/clanak/756231/plenkovic-najavio-promene-zakona-nakon-ubistva-tinejdzera-u-drnisu",
-      "date": "2026-05-18",
-      "datetime": "2026-05-18T19:04:00+00:00",
-      "time": "19:04",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "ka-224327-unapredene-izmene-pravosudnih-zakona-u-srbiji-vest",
       "title": "Ministarstvo pravde poslalo izmene pravosudnih zakona Venecijanskoj komisiji",
       "url": "https://www.euronews.rs/srbija/politika/224327/unapredene-izmene-pravosudnih-zakona-u-srbiji/vest",
@@ -687,6 +645,20 @@
       "priority": 25
     },
     {
+      "id": "sko-lopandic-o-tome-kako-eu-gleda-na-slucaj-veselina-milica-",
+      "title": "\"Više ne znate ko je kriminalac, a ko nije, to je daleko od normalnog sistem\": Duško Lopandić o tome kako EU gleda na slučaj Veselina Milića",
+      "url": "https://nova.rs/vesti/politika/vise-ne-znate-ko-je-kriminalac-a-ko-nije-to-je-daleko-od-normalnog-sistem-dusko-lopandic-o-tome-kako-eu-gleda-na-slucaj-veselina-milica/",
+      "date": "2026-05-18",
+      "datetime": "2026-05-18T20:11:58+00:00",
+      "time": "20:11",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "eme-com-drustvo-potraga-telo-aleksandar-nesovic-fruska-gora-",
       "title": "Novi detalji ubistva Aleksandra Nešovića Baje: Krv, sona kiselina i napušteni džip",
       "url": "https://vreme.com/drustvo/potraga-telo-aleksandar-nesovic-fruska-gora/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "https-vreme-com-vesti-nemanja-djuran-ukp-ubistvo-senjak-",
+      "title": "Priveden pa pušten bivši načelnik UKP Nemanja Đuran zbog ubistva na Senjaku",
+      "url": "https://vreme.com/vesti/nemanja-djuran-ukp-ubistvo-senjak/",
+      "date": "2026-05-18",
+      "datetime": "2026-05-18T11:00:33+00:00",
+      "time": "11:00",
+      "source": "Vreme",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "s-drustvo-raskrikavanje-vlasnici-euronjuza-kupuju-medije-um-",
+      "title": "Raskrikavanje: Vlasnici Euronjuza kupuju N1, Nova S i još desetak regionalnih medija; ANN: Bez komentara do zvanične potvrde, redakcije rade normalno",
+      "url": "https://radar.nova.rs/drustvo/raskrikavanje-vlasnici-euronjuza-kupuju-medije-um/",
+      "date": "2026-05-14",
+      "datetime": "2026-05-14T11:31:10+00:00",
+      "time": "11:31",
+      "source": "Radar",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
