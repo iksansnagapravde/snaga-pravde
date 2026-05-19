@@ -2,7 +2,7 @@
   "entries": [
     {
       "id": "slobodnaevropa-org-a-kosovo-otkazi-privodjenja-33760419-html",
-      "title": "Pet ljudi privedeno nakon tvrdnji o otkazima u institucijama Srbije na Kosovu zbog politike, Dačić preti zbog 'antisrpskog čina'",
+      "title": "Sedam privedeno nakon tvrdnji o otkazima u institucijama Srbije na Kosovu zbog politike, Dačić preti zbog 'antisrpskog čina'",
       "url": "https://www.slobodnaevropa.org/a/kosovo-otkazi-privodjenja/33760419.html",
       "date": "2026-05-19",
       "datetime": "2026-05-19T17:24:04+00:00",
@@ -111,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "-kanadski-policajci-na-odmoru-brutalno-napali-zenu-u-taksiju",
+      "title": "Канадски полицајци на одмору брутално напали жену у таксију",
+      "url": "https://www.politika.rs/scc/clanak/756555/kanadski-policajci-na-odmoru-brutalno-napali-zenu-u-taksiju",
+      "date": "2026-05-19",
+      "datetime": "2026-05-19T20:53:00+00:00",
+      "time": "20:53",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-nisa-koju-je-u-hostelu-pokusao-da-obljubi-starac-74-lxm5y04",
@@ -281,6 +295,34 @@
       "priority": 70
     },
     {
+      "id": "ki-kandidat-na-meti-istrage-za-zloupotrebu-javnih-sredstava-",
+      "title": "Bivši premijer Francuske i predsednički kandidat na meti istrage za zloupotrebu javnih sredstava",
+      "url": "https://www.danas.rs/svet/bivsi-premijer-francuske-i-predsednicki-kandidat-na-meti-istrage-za-zloupotrebu-javnih-sredstava/",
+      "date": "2026-05-19",
+      "datetime": "2026-05-19T21:49:24+00:00",
+      "time": "21:49",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "6560-ukrajinac-pretucen-u-radomu-jer-nije-znao-poljske-pesme",
+      "title": "Украјинац претучен у Радому јер није знао пољске песме",
+      "url": "https://www.politika.rs/scc/clanak/756560/ukrajinac-pretucen-u-radomu-jer-nije-znao-poljske-pesme",
+      "date": "2026-05-19",
+      "datetime": "2026-05-19T21:28:00+00:00",
+      "time": "21:28",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "ici-zbog-sumnje-na-narusavanje-slobodnog-opredeljenja-biraca",
       "title": "Gračanica: Petoro Srba privedeno zbog sumnje na pritisak na birače",
       "url": "https://beta.rs/content/244938-kosovo-petoro-srba-privedeno-u-gracanici-zbog-sumnje-na-narusavanje-slobodnog-opredeljenja-biraca",
@@ -391,20 +433,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "-whatsapp-uvodi-inkognito-rezim-evo-kako-funkcionise-ncnmq48",
-      "title": "WhatsApp uvodi inkognito režim: Evo kako funkcioniše",
-      "url": "https://www.blic.rs/it/whatsapp-uvodi-inkognito-rezim-evo-kako-funkcionise/ncnmq48",
-      "date": "2026-05-19",
-      "datetime": "2026-05-19T16:03:19+00:00",
-      "time": "16:03",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "dar-nova-rs-drustvo-aleksandar-barac-javni-tuzilac-intervju-",
@@ -631,20 +659,6 @@
       "priority": 24
     },
     {
-      "id": "slom-drzave-izbrisane-su-granice-izmedju-drzave-i-kriminala-",
-      "title": "Stefanović o hapšenju Veselina Milića: Ovaj slučaj predstavlja slom države, izbrisane su granice između države i kriminala",
-      "url": "https://n1info.rs/vesti/stefanovic-o-hapsenju-veselina-milica-ovaj-slucaj-predstavlja-slom-drzave-izbrisane-su-granice-izmedju-drzave-i-kriminala/",
-      "date": "2026-05-19",
-      "datetime": "2026-05-19T16:31:14+00:00",
-      "time": "16:31",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "ubistvu-aleksandra-nesovica-baje-i-hapsenju-veselina-milica-",
       "title": "Uglješa Bokić i Vuk Cvijić o ubistvu Aleksandra Nešovića Baje i hapšenju Veselina Milića",
       "url": "https://www.ktv.rs/2026/05/19/ugljesa-bokic-i-vuk-cvijic-o-ubistvu-aleksandra-nesovica-baje-i-hapsenju-veselina-milica/",
@@ -681,20 +695,6 @@
       "time": "11:31",
       "source": "Radar",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
-      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
-      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
-      "date": "2026-05-11",
-      "datetime": "2026-05-11T15:08:58+00:00",
-      "time": "15:08",
-      "source": "CINS",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
