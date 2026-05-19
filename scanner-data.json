@@ -29,20 +29,6 @@
       "priority": 111
     },
     {
-      "id": "azarevic-a-dugo-se-muci-znao-da-ne-spava-po-dve-noci-m38yhyk",
-      "title": "DVE NOĆI NIJE SPAVAO Sloba Vasić je u bolnici Laza Lazarević, a dugo muči muku sa nizom komplikacija: Zbog OVOG PROBLEMA je znao sam da se prijavi u Urgentni",
-      "url": "https://www.blic.rs/zabava/sloba-vasic-je-u-lazi-lazarevic-a-dugo-se-muci-znao-da-ne-spava-po-dve-noci/m38yhyk",
-      "date": "2026-05-19",
-      "datetime": "2026-05-19T16:10:00+00:00",
-      "time": "16:10",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "naevropa-org-a-kosovo-kbs-vojska-vojna-bolnica-33759507-html",
       "title": "Kosovske bezbednosne snage u transformaciji u vojsku, ali bez vojne bolnice",
       "url": "https://www.slobodnaevropa.org/a/kosovo-kbs-vojska-vojna-bolnica/33759507.html",
@@ -211,20 +197,6 @@
       "priority": 90
     },
     {
-      "id": "du-policija-zaplenila-gomilu-duvana-cigareta-i-novac-c0er063",
-      "title": "(FOTO) VELIKA AKCIJA POLICIJE Pala švercerka (49) usred Beograda, u stanu i autu krila pravo bogatstvo: Pogledajte šta joj je sve zaplenjeno",
-      "url": "https://www.blic.rs/vesti/hronika/pala-svercerka-u-beogradu-policija-zaplenila-gomilu-duvana-cigareta-i-novac/c0er063",
-      "date": "2026-05-19",
-      "datetime": "2026-05-19T16:20:08+00:00",
-      "time": "16:20",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "jotka-pretio-tuziocu-sve-si-mi-unistio-to-ne-moze-da-prodje-",
       "title": "Kako je kruševački kriminalac Jotka pretio tužiocu: „Sve si mi uništio, to ne može da prođe”",
       "url": "https://www.krik.rs/kako-je-krusevacki-kriminalac-jotka-pretio-tuziocu-sve-si-mi-unistio-to-ne-moze-da-prodje/",
@@ -265,20 +237,6 @@
       "breaking": false,
       "alert": true,
       "priority": 72
-    },
-    {
-      "id": "ogradu-zaplenjeno-767-boksova-cigareta-i-50-kilograma-duvana",
-      "title": "UHAPŠENA ŽENA (41) U BEOGRADU! Policija joj pregledala stan i automobil, pa se ŠOKIRALA količinom nedozvoljenih proizvoda: Pronađen i novac! (FOTO)",
-      "url": "https://www.kurir.rs/crna-hronika/9999421/akcija-policije-u-beogradu-zaplenjeno-767-boksova-cigareta-i-50-kilograma-duvana",
-      "date": "2026-05-19",
-      "datetime": "2026-05-19T16:05:01+00:00",
-      "time": "16:05",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "2-antonijevic-policija-i-tuzilastvo-pokazali-ozbiljnost-vest",
@@ -358,20 +316,6 @@
       "datetime": "2026-05-19T17:35:16+00:00",
       "time": "17:35",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "99467-istraga-protiv-kristijana-aleksica-zbog-teskog-ubistva",
-      "title": "\"SVE JE UNAPRED SMISLIO, LUKU (19) UBIO JEDNIM HICEM\" Tužilaštvo saopštilo jezive detalje smrti maturanta",
-      "url": "https://www.kurir.rs/region/hrvatska/9999467/istraga-protiv-kristijana-aleksica-zbog-teskog-ubistva",
-      "date": "2026-05-19",
-      "datetime": "2026-05-19T17:10:42+00:00",
-      "time": "17:10",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "o-rs-svet-rijaliti-married-at-first-sight-optuzbe-silovanje-",
+      "title": "Učesnice rijalitija \"Brak na neviđeno\" u Engleskoj optužile svoje TV partnere za zlostavljanje",
+      "url": "https://n1info.rs/svet/rijaliti-married-at-first-sight-optuzbe-silovanje/",
+      "date": "2026-05-19",
+      "datetime": "2026-05-19T20:30:40+00:00",
+      "time": "20:30",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "svet-engleska-sari-istraga-zlostavljanje-dece-dzefri-epstin-",
+      "title": "Policija u Engleskoj pokrenula još jednu istragu o Epstinu i zlostavljanju dece",
+      "url": "https://n1info.rs/svet/engleska-sari-istraga-zlostavljanje-dece-dzefri-epstin/",
+      "date": "2026-05-19",
+      "datetime": "2026-05-19T20:01:50+00:00",
+      "time": "20:01",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "u-temerinskoj-ulici-u-novom-sadu-oboren-motociklista-fyqpv51",
+      "title": "(FOTO) OBOREN MOTOCIKLISTA Saobraćajna nesreća u Temerinskoj ulici u Novom Sadu: Policija na licu mesta",
+      "url": "https://www.blic.rs/vesti/hronika/saobracajna-nesreca-u-temerinskoj-ulici-u-novom-sadu-oboren-motociklista/fyqpv51",
+      "date": "2026-05-19",
+      "datetime": "2026-05-19T19:53:42+00:00",
+      "time": "19:53",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
