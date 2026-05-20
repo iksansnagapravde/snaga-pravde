@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 1222920.0,
+    "lowest": 5202.0,
+    "difference": 1217718.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100135044,
+    "file": "documents/100135044_odluka o dodeli ugovora-rezervni delovi za opremu za FHL.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1222920.0,
+    "lowest": 5202.0,
+    "difference": 1217718.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104119050,
+    "file": "documents/104119050_odluka o dodeli ugovora-rezervni delovi za opremu za FHL.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1050000.0,
+    "lowest": 5202.0,
+    "difference": 1044798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103605787,
+    "file": "documents/103605787_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 15281830.08,
     "lowest": 1920.0,
     "difference": 15279910.08,
@@ -64,38 +97,5 @@
     "rejection_reasons": [],
     "id": 112498667,
     "file": "documents/112498667_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10000000.0,
-    "lowest": 5202.0,
-    "difference": 9994798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100048877,
-    "file": "documents/100048877_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 226000.0,
-    "lowest": 5202.0,
-    "difference": 220798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105007638,
-    "file": "documents/105007638_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 139260.0,
-    "lowest": 5202.0,
-    "difference": 134058.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105561258,
-    "file": "documents/105561258_Odluka o dodeli ugovora.docx"
   }
 ]
