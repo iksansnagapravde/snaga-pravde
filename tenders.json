@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 200000000.0,
+    "lowest": 5202.0,
+    "difference": 199994798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100239084,
+    "file": "documents/100239084_Odluka o dodeli Bineks.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1188000.0,
     "lowest": 2214.0,
     "difference": 1185786.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100822891,
     "file": "documents/100822891_014. Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 235000060.0,
-    "lowest": 5202.0,
-    "difference": 234994858.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100065171,
-    "file": "documents/100065171_skenirana Odluka.pdf"
   }
 ]
