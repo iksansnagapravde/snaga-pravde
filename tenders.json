@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 11324045.0,
+    "lowest": 2202.0,
+    "difference": 11321843.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100048422,
+    "file": "documents/100048422_Odluka o izdavanju narudžbenice 112U24 - 63.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 16000000.0,
     "lowest": 5202.0,
     "difference": 15994798.0,
