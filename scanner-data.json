@@ -99,20 +99,6 @@
       "priority": 100
     },
     {
-      "id": "ronika-10001264-uhapseni-zbog-prevare-od-20-9-miliona-dinara",
-      "title": "LAŽNO SE PREDSTAVLJALI, PRODAVALI ROBU \"NA CRNO\" I ZGRNULI MILIONE! Uhapšeni zbog prevare, MUP otkrio detalje šeme!",
-      "url": "https://www.kurir.rs/crna-hronika/10001264/uhapseni-zbog-prevare-od-20-9-miliona-dinara",
-      "date": "2026-05-21",
-      "datetime": "2026-05-21T13:57:36+00:00",
-      "time": "13:57",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "psen-blagajnik-zbog-pronevere-vise-od-24-miliona-dinara-vest",
       "title": "Uhapšen blagajnik iz Užica: Sumnja se da je iz firme proneverio više od 24 miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/224557/uhapsen-blagajnik-zbog-pronevere-vise-od-24-miliona-dinara/vest",
@@ -162,6 +148,20 @@
       "datetime": "2026-05-21T21:10:43+00:00",
       "time": "21:10",
       "source": "RTS",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 94
+    },
+    {
+      "id": "www-danas-rs-vesti-drustvo-uhapsen-bivsi-gradonacelnik-bora-",
+      "title": "Uhapšen bivši gradonačelnik Bora i čelnici grada",
+      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-bivsi-gradonacelnik-bora/",
+      "date": "2026-05-21",
+      "datetime": "2026-05-21T20:54:52+00:00",
+      "time": "20:54",
+      "source": "Danas",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
@@ -267,6 +267,20 @@
       "priority": 92
     },
     {
+      "id": "1386-dvojica-uhapsena-u-prizrenu-zbog-prodaje-srpske-imovine",
+      "title": "DVOJICA UHAPŠENA U PRIZRENU: Prodali srpsku imovinu uz falsifikovana dokumenta",
+      "url": "https://www.kurir.rs/crna-hronika/10001386/dvojica-uhapsena-u-prizrenu-zbog-prodaje-srpske-imovine",
+      "date": "2026-05-21",
+      "datetime": "2026-05-21T16:02:01+00:00",
+      "time": "16:02",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "lno-224773-pronadeno-telo-an-u-indiji-sumnja-na-ubistvo-vest",
       "title": "U buretu na teritoriji Inđije je nađeno telo za koje se veruje da je nestali muškarac iz restorana na Senjaku",
       "url": "https://www.euronews.rs/srbija/aktuelno/224773/pronadeno-telo-an-u-indiji-sumnja-na-ubistvo/vest",
@@ -323,20 +337,6 @@
       "priority": 92
     },
     {
-      "id": "olicije-na-vise-lokacija-na-podrucju-Bihaca-i-Velike-Kladuse",
-      "title": "JEDAN FEDERALNI MINISTAR UHAPŠEN, DRUGOM PRETRESAJU KABINET! Akcije policije na više lokacija na području Bihaća i Velike Kladuše",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10001143/JEDAN-FEDERALNI-MINISTAR-UHAPSEN-DRUGOM-PRETRESAJU-KABINET-Akcije-policije-na-vise-lokacija-na-podrucju-Bihaca-i-Velike-Kladuse",
-      "date": "2026-05-21",
-      "datetime": "2026-05-21T12:09:50+00:00",
-      "time": "12:09",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-gracanici-i-okolnim-mestima-skupovi-podrske-uhapsenima-vest",
       "title": "I danas protesti na KiM: U Gračanici i okolnim mestima skupovi podrške uhapšenim Srbima",
       "url": "https://www.euronews.rs/srbija/politika/224692/u-gracanici-i-okolnim-mestima-skupovi-podrske-uhapsenima/vest",
@@ -363,20 +363,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "www-danas-rs-vesti-drustvo-uhapsen-bivsi-gradonacelnik-bora-",
-      "title": "Nova.rs: Uhapšen bivši gradonačelnik Bora i čelnici grada",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-bivsi-gradonacelnik-bora/",
-      "date": "2026-05-21",
-      "datetime": "2026-05-21T20:54:52+00:00",
-      "time": "20:54",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "da-njegovo-privodjenje-trazeno-jos-u-decembru-prosle-godine-",
@@ -461,6 +447,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "dokumentima-hapsenja-u-prizrenu-otkriveno-18-parcela-f1dhq90",
+      "title": "DVE OSOBE UHAPŠENE U PRIZRENU Prodavali srpsku imovinu preko falsifikovanih dokumenata",
+      "url": "https://www.blic.rs/vesti/hronika/srbima-otimali-zemlju-laznim-dokumentima-hapsenja-u-prizrenu-otkriveno-18-parcela/f1dhq90",
+      "date": "2026-05-21",
+      "datetime": "2026-05-21T22:16:06+00:00",
+      "time": "22:16",
+      "source": "Blic",
+      "category": "Злоупотреба положаја",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "tskoj-lutala-auto-putem-pregazilo-je-vise-automobila-1e2q1ws",
@@ -575,13 +575,13 @@
       "priority": 66
     },
     {
-      "id": "umnja-da-je-aleksandar-nesovic-objavljen-snimak-iskopavanja-",
-      "title": "(VIDEO) Ovde je pronađeno bure sa telom za koje se sumnja da je Aleksandar Nešović, objavljen snimak iskopavanja",
-      "url": "https://nova.rs/vesti/hronika/video-ovde-je-pronadjeno-bure-sa-telom-za-koje-se-sumnja-da-je-aleksandar-nesovic-objavljen-snimak-iskopavanja/",
+      "id": "ww-kurir-rs-planeta-10001389-iran-planirao-napade-u-nemackoj",
+      "title": "IRAN PLANIRAO NAPADE U NEMAČKOJ: Tužilaštvo podiglo optužnice protiv dvojice pripadnika tajne službe Teherana",
+      "url": "https://www.kurir.rs/planeta/10001389/iran-planirao-napade-u-nemackoj",
       "date": "2026-05-21",
-      "datetime": "2026-05-21T16:08:27+00:00",
-      "time": "16:08",
-      "source": "Nova",
+      "datetime": "2026-05-21T16:18:48+00:00",
+      "time": "16:18",
+      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -624,20 +624,6 @@
       "datetime": "2026-05-21T13:02:34+00:00",
       "time": "13:02",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "oviji-detalji-istrage-ubistva-aleksandra-nesovica-na-senjaku",
-      "title": "OVO SU NAJNOVIJE INFORMACIJE O UBISTVU ALEKSANDRA NEŠOVIĆA BAJE NA SENJAKU: Oglasilo se Više javno tužilaštvo u Beogradu",
-      "url": "https://www.kurir.rs/crna-hronika/10001207/najnoviji-detalji-istrage-ubistva-aleksandra-nesovica-na-senjaku",
-      "date": "2026-05-21",
-      "datetime": "2026-05-21T13:00:24+00:00",
-      "time": "13:00",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": true,
       "priority": 64
+    },
+    {
+      "id": "eksandra-nesovica-ovo-sto-smo-videli-je-zastrasujuce-vm15xjz",
+      "title": "\"OVO ŠTO SMO DANAS VIDELI JE ZASTRAŠUJUĆE\" Vučić na RTS o slučaju smrti Aleksandra Nešovića: \"Ne mogu da verujem da je to uradio bivši policajac\"",
+      "url": "https://www.blic.rs/vesti/politika/vucic-o-ubistvu-aleksandra-nesovica-ovo-sto-smo-videli-je-zastrasujuce/vm15xjz",
+      "date": "2026-05-21",
+      "datetime": "2026-05-21T20:17:49+00:00",
+      "time": "20:17",
+      "source": "Blic",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     }
   ],
   "all_sources": [
