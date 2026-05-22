@@ -57,20 +57,6 @@
       "priority": 92
     },
     {
-      "id": "apseni-sa-flotile-koji-su-spreceni-da-isporuce-pomoc-u-gazu-",
-      "title": "Aktivisti optužuju čak i za silovanje, Izrael demantuje: Kako su prošli uhapšeni sa flotile koji su sprečeni da isporuče pomoć u Gazu?",
-      "url": "https://www.danas.rs/svet/aktivisti-optuzuju-cak-i-za-silovanje-izrael-demantuje-kako-su-prosli-uhapseni-sa-flotile-koji-su-spreceni-da-isporuce-pomoc-u-gazu/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T16:38:26+00:00",
-      "time": "16:38",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "avljaju-podrska-uhapsenim-srpskim-direktorima-sirom-kim-vest",
       "title": "Protesti u Gračanici se nastavljaju: Podrška uhapšenim srpskim direktorima širom KiM",
       "url": "https://www.euronews.rs/srbija/aktuelno/224852/protesti-u-gracanici-se-nastavljaju-podrska-uhapsenim-srpskim-direktorima-sirom-kim/vest",
@@ -365,6 +351,20 @@
       "priority": 60
     },
     {
+      "id": "-crnogorska-policija-otkrila-imovinu-vrednu-2-5-miliona-evra",
+      "title": "VELIKA AKCIJA POLICIJE U CRNOJ GORI Otkrivena imovina stečena kriminalom vredna 2,5 miliona evra",
+      "url": "https://www.kurir.rs/region/crna-gora/10002297/crnogorska-policija-otkrila-imovinu-vrednu-2-5-miliona-evra",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T22:11:00+00:00",
+      "time": "22:11",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
+    },
+    {
       "id": "pa-org-a-kina-rs-bih-energetika-infrastruktura-33762663-html",
       "title": "Nova kineska 'ofanziva' na energetsko tržište Republike Srpske",
       "url": "https://www.slobodnaevropa.org/a/kina-rs-bih-energetika-infrastruktura/33762663.html",
@@ -491,18 +491,18 @@
       "priority": 26
     },
     {
-      "id": "668-protest-u-gracanici-zbog-hapsenja-srba-na-kim-sutra-vest",
-      "title": "U Gračanici sutra protest zdravstvenih i prosvetnih radnika zbog hapšenja Srba na KiM",
-      "url": "https://www.euronews.rs/srbija/politika/224668/protest-u-gracanici-zbog-hapsenja-srba-na-kim-sutra/vest",
-      "date": "2026-05-20",
-      "datetime": "2026-05-20T21:40:00+00:00",
-      "time": "21:40",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
+      "id": "ideo-radar-forum-miodrag-majic-miodrag-jovanovic-lustracija-",
+      "title": "„Lustracija je neophodna za one koji su lažima i gebelsovskim spinovima zatrovali javnost“",
+      "url": "https://radar.nova.rs/video/radar-forum/miodrag-majic-miodrag-jovanovic-lustracija/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
     },
     {
       "id": "ropa-org-a-sad-stejt-department-zapadni-balkan-33762818-html",
@@ -569,20 +569,6 @@
       "time": "17:43",
       "source": "Kurir",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "encije-iz-njujorka-berlina-i-dubajia-podnele-ponude-za-expo-",
-      "title": "PR agencije iz Njujorka, Berlina i Dubaija podnele ponude za EXPO",
-      "url": "https://n1info.rs/biznis/pr-agencije-iz-njujorka-berlina-i-dubajia-podnele-ponude-za-expo/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T16:15:56+00:00",
-      "time": "16:15",
-      "source": "N1",
-      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -695,6 +681,20 @@
       "time": "12:49",
       "source": "KTV",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
