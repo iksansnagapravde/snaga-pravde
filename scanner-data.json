@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "zio-aleksandru-popovic-za-clanicu-komisije-za-javne-nabavke-",
-      "title": "Skupštinski odbor predložio Aleksandru Popović za članicu Komisije za javne nabavke",
-      "url": "https://n1info.rs/biznis/skupstinski-odbor-predlozio-aleksandru-popovic-za-clanicu-komisije-za-javne-nabavke/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T11:30:02+00:00",
-      "time": "11:30",
-      "source": "N1",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 124
-    },
-    {
       "id": "dnaevropa-org-a-srbija-brnabic-mrdicevi-zakoni-33761958-html",
       "title": "Brnabić izjavila da se nada da će Srbija uskoro rešiti situaciju sa spornim 'Mrdićevim zakonima'",
       "url": "https://www.slobodnaevropa.org/a/srbija-brnabic-mrdicevi-zakoni/33761958.html",
@@ -43,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "ga-ubijenog-nesovica-vodila-kol-centar-za-vladajucu-stranku-",
-      "title": "\"Mafija nije oko SNS, mafija je SNS\": Burne reakcije nakon otkrića Nova.rs da je supruga ubijenog Nešovića vodila kol centar za vladajuću stranku",
-      "url": "https://nova.rs/vesti/politika/mafija-nije-oko-sns-mafija-je-sns-burne-reakcije-nakon-otkrica-novars-da-je-supruga-ubijenog-nesovica-vodila-kol-centar-za-vladajucu-stranku/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T11:42:21+00:00",
-      "time": "11:42",
-      "source": "Nova",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "srbija-aktuelno-224842-hapsenja-u-nisu-zbog-zloupotrebe-vest",
       "title": "Akcija policije u Boru: Uhapšeno više osoba zbog sumnje na zloupotrebe u sportu",
       "url": "https://www.euronews.rs/srbija/aktuelno/224842/hapsenja-u-nisu-zbog-zloupotrebe/vest",
@@ -71,13 +43,27 @@
       "priority": 94
     },
     {
-      "id": "-uhapsen-muskarac-zbog-pretnji-masovnim-ubistvima-u-sarajevu",
-      "title": "Ухапшен мушкарац због претњи масовним убиствима у Сарајеву",
-      "url": "https://www.politika.rs/scc/clanak/757241/uhapsen-muskarac-zbog-pretnji-masovnim-ubistvima-u-sarajevu",
+      "id": "m-strankom-i-ogromnom-imovinom-koja-nije-logicki-objasnjiva-",
+      "title": "Šabić: Akteri ubistva na Senjaku po svoj prilici imaju vezu sa vladajućom strankom i ogromnom imovinom koja nije logički objašnjiva",
+      "url": "https://n1info.rs/vesti/sabic-akteri-ubistva-na-senjaku-po-svoj-prilici-imaju-vezu-sa-vladajucom-strankom-i-ogromnom-imovinom-koja-nije-logicki-objasnjiva/",
       "date": "2026-05-22",
-      "datetime": "2026-05-22T15:02:00+00:00",
-      "time": "15:02",
-      "source": "Politika",
+      "datetime": "2026-05-22T17:19:45+00:00",
+      "time": "17:19",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "apseni-sa-flotile-koji-su-spreceni-da-isporuce-pomoc-u-gazu-",
+      "title": "Aktivisti optužuju čak i za silovanje, Izrael demantuje: Kako su prošli uhapšeni sa flotile koji su sprečeni da isporuče pomoć u Gazu?",
+      "url": "https://www.danas.rs/svet/aktivisti-optuzuju-cak-i-za-silovanje-izrael-demantuje-kako-su-prosli-uhapseni-sa-flotile-koji-su-spreceni-da-isporuce-pomoc-u-gazu/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T16:38:26+00:00",
+      "time": "16:38",
+      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -211,34 +197,6 @@
       "priority": 90
     },
     {
-      "id": "-svarm-o-slucaju-senjak-milic-vrlo-nezgodan-svedok-za-rezim-",
-      "title": "Švarm o slučaju Senjak: Dokaz da korupcija ubija, Milić vrlo nezgodan svedok za režim",
-      "url": "https://n1info.rs/vesti/svarm-o-slucaju-senjak-milic-vrlo-nezgodan-svedok-za-rezim/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T12:53:29+00:00",
-      "time": "12:53",
-      "source": "N1",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "lje-u-valjevu-preuzima-tuzilastvo-organizovani-kriminal-tok-",
-      "title": "Slučaj policijskog nasilja u Valjevu preuzima Tužilaštvo za organizovani kriminal",
-      "url": "https://vreme.com/drustvo/policijsko-nasilje-u-valjevu-preuzima-tuzilastvo-organizovani-kriminal-tok/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T07:58:00+00:00",
-      "time": "07:58",
-      "source": "Vreme",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "jotka-pretio-tuziocu-sve-si-mi-unistio-to-ne-moze-da-prodje-",
       "title": "Kako je kruševački kriminalac Jotka pretio tužiocu: „Sve si mi uništio, to ne može da prođe”",
       "url": "https://www.krik.rs/kako-je-krusevacki-kriminalac-jotka-pretio-tuziocu-sve-si-mi-unistio-to-ne-moze-da-prodje/",
@@ -309,20 +267,6 @@
       "priority": 72
     },
     {
-      "id": "ika-ko-je-bacio-suzavac-u-sali-skupstine-grada-uzica-g632bge",
-      "title": "Gužva u Skupštini Užica: Policija izašla na teren nakon prijave da je bačen suzavac, evo šta je ustanovljeno",
-      "url": "https://www.blic.rs/vesti/politika/ko-je-bacio-suzavac-u-sali-skupstine-grada-uzica/g632bge",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T12:55:57+00:00",
-      "time": "12:55",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "njava-u-restoranu-na-novom-beogradu-jedna-osoba-ranjena-vest",
       "title": "Pucnjava u restoranu na Novom Beogradu - jedna osoba ranjena, jedna uhapšena",
       "url": "https://www.euronews.rs/srbija/aktuelno/224722/pucnjava-u-restoranu-na-novom-beogradu-jedna-osoba-ranjena/vest",
@@ -335,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-uhapseno-sedam-srpskih-direktora-bolnica-i-skola-na-kosovu-",
+      "title": "„Kriva je i Srpska lista“: Zašto je uhapšeno sedam srpskih direktora bolnica i škola na Kosovu",
+      "url": "https://vreme.com/drustvo/kriva-je-i-srpska-lista-zasto-je-uhapseno-sedam-srpskih-direktora-bolnica-i-skola-na-kosovu/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T17:24:07+00:00",
+      "time": "17:24",
+      "source": "Vreme",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "a-mestani-jarkovaca-o-telu-pronadjenom-u-buretu-kraj-jezera-",
@@ -449,6 +407,20 @@
       "priority": 64
     },
     {
+      "id": "https-www-danas-rs-kultura-kosingas-red-zmaja-novo-izdanje-",
+      "title": "„Kosingas: Red Zmaja“ ponovo među čitaocima u luksuznom Laguninom izdanju",
+      "url": "https://www.danas.rs/kultura/kosingas-red-zmaja-novo-izdanje/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T16:12:37+00:00",
+      "time": "16:12",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "1info-rs-magazin-showbiz-stiven-kolber-kraj-late-night-show-",
       "title": "Stiven Kolber se oprostio od \"Lejt najt šou\"",
       "url": "https://n1info.rs/magazin/showbiz/stiven-kolber-kraj-late-night-show/",
@@ -470,34 +442,6 @@
       "datetime": "2026-05-22T12:07:01+00:00",
       "time": "12:07",
       "source": "Vreme",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "ari-u-podrumu-zmija-vam-je-verovatno-vec-usla-u-kucu-7s2d1hm",
-      "title": "PANIKA NA PRAGU LETA Zmije okupiraju srpska domaćinstva, a jedna prostorija im je OMILJENA meta",
-      "url": "https://www.blic.rs/slobodno-vreme/ako-drzite-ove-stvari-u-podrumu-zmija-vam-je-verovatno-vec-usla-u-kucu/7s2d1hm",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T11:43:00+00:00",
-      "time": "11:43",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "patologija-samoprezira-odgovor-na-dekonstrukciju-mile-pajic-",
-      "title": "Patologija samoprezira: Odgovor na dekonstrukciju Mile Pajić",
-      "url": "https://www.danas.rs/dijalog/licni-stavovi/patologija-samoprezira-odgovor-na-dekonstrukciju-mile-pajic/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T11:39:24+00:00",
-      "time": "11:39",
-      "source": "Danas",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
@@ -575,6 +519,20 @@
       "priority": 28
     },
     {
+      "id": "j-kosovske-vlasti-jedva-cekaju-da-udju-u-srpske-institucije-",
+      "title": "Tatjana Lazarević: Hapšenje Srba u Gračanici \"trojanski konj\" - kosovske vlasti jedva čekaju da uđu u srpske institucije",
+      "url": "https://n1info.rs/vesti/tatjana-lazarevic-hapsenje-srba-u-gracanici-trojanski-konj-kosovske-vlasti-jedva-cekaju-da-udju-u-srpske-institucije/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T17:07:46+00:00",
+      "time": "17:07",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "https-www-danas-rs-vesti-politika-hapsenje-srba-kosovo-",
       "title": "„Poruka Srpske liste je da ne glasaju za nekog drugog, oni vrše najveći pritisak“: Nenad Rašić o hapšenju Srba u Gračanici",
       "url": "https://www.danas.rs/vesti/politika/hapsenje-srba-kosovo/",
@@ -610,20 +568,6 @@
       "datetime": "2026-05-22T11:20:00+00:00",
       "time": "11:20",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "g-hapsenja-direktora-zdravstvenih-i-obrazovnih-ustanova-html",
-      "title": "Трећи дан протеста у Грачаници због хапшења директора здравствених и образовних установа",
-      "url": "https://www.rts.rs/vesti/politika/5955904/treci-dan-protesta-u-gracanici-zbog-hapsenja-direktora-zdravstvenih-i-obrazovnih-ustanova.html",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T09:38:11+00:00",
-      "time": "09:38",
-      "source": "RTS",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -687,18 +631,74 @@
       "priority": 25
     },
     {
-      "id": "ilaca-nezavisnost-pravosudja-i-ljudska-prava-sve-ugrozeniji-",
-      "title": "Evropsko udruženje sudija i tužilaca: Nezavisnost pravosuđa i ljudska prava sve ugroženiji",
-      "url": "https://n1info.rs/svet/evropsko-udruzenje-sudija-i-tuzilaca-nezavisnost-pravosudja-i-ljudska-prava-sve-ugrozeniji/",
+      "id": "10002423-vucic-srbija-je-spremna-da-se-bori-protiv-kriminala",
+      "title": "NAŠA DRŽAVA JE VEOMA SNAŽNA, I U NJOJ NEMA ZAŠTIĆENIH! Predsednik Vučić: Srbija je spremna da se bori protiv kriminala (VIDEO)",
+      "url": "https://www.kurir.rs/vesti/politika/10002423/vucic-srbija-je-spremna-da-se-bori-protiv-kriminala",
       "date": "2026-05-22",
-      "datetime": "2026-05-22T11:29:49+00:00",
-      "time": "11:29",
-      "source": "N1",
-      "category": "Правосуђе",
+      "datetime": "2026-05-22T17:43:31+00:00",
+      "time": "17:43",
+      "source": "Kurir",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 25
+      "priority": 24
+    },
+    {
+      "id": "vetsku-promociju-stigle-ponude-iz-njujorka-berlina-i-dubaija",
+      "title": "Експо 2027 бира агенцију за светску промоцију: стигле понуде из Њујорка, Берлина и Дубаија",
+      "url": "https://www.politika.rs/scc/clanak/757254/ekspo-2027-bira-agenciju-za-svetsku-promociju-stigle-ponude-iz-njujorka-berlina-i-dubaija",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T17:04:00+00:00",
+      "time": "17:04",
+      "source": "Politika",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "encije-iz-njujorka-berlina-i-dubajia-podnele-ponude-za-expo-",
+      "title": "PR agencije iz Njujorka, Berlina i Dubaija podnele ponude za EXPO",
+      "url": "https://n1info.rs/biznis/pr-agencije-iz-njujorka-berlina-i-dubajia-podnele-ponude-za-expo/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T16:15:56+00:00",
+      "time": "16:15",
+      "source": "N1",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "https-www-danas-rs-vesti-politika-izbori-zlf-studenti-",
+      "title": "Vučić odustao od letnjih izbora: Podrška ZLF-a studentima ostaje i dalje?",
+      "url": "https://www.danas.rs/vesti/politika/izbori-zlf-studenti/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T16:00:05+00:00",
+      "time": "16:00",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-pristigle-tri-ponude-za-usluge-globalne-pr-agencije-q6kte29",
+      "title": "EKSPO 2027: Pristigle tri ponude za usluge globalne PR agencije",
+      "url": "https://www.blic.rs/biznis/ekspo-2027-pristigle-tri-ponude-za-usluge-globalne-pr-agencije/q6kte29",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T15:16:06+00:00",
+      "time": "15:16",
+      "source": "Blic",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
