@@ -15,20 +15,6 @@
       "priority": 95
     },
     {
-      "id": "a-kultura-10002878-tom-hardi-izbacen-iz-serije-mafija-u-ratu",
-      "title": "Novi sukob Toma Hardija na snimanju: Izbačen iz serije \"Mafija u ratu\"",
-      "url": "https://www.kurir.rs/zabava/kultura/10002878/tom-hardi-izbacen-iz-serije-mafija-u-ratu",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T12:37:56+00:00",
-      "time": "12:37",
-      "source": "Kurir",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "vica-pozivao-da-se-dronom-napadnu-objekti-u-beogradu-62cpmvj",
       "title": "(VIDEO) Policija mu upala u stan, on PODIGAO RUKE i NASLONIO SE NA ZID Ovako je uhapšen Miloš Kovačević nakon što je pozivao da se DRONOM gađaju AERODROM, HRAM SVETOG SAVE i drugi objekti u Beogradu",
       "url": "https://www.blic.rs/vesti/politika/snimak-hapsenja-milosa-kovacevica-pozivao-da-se-dronom-napadnu-objekti-u-beogradu/62cpmvj",
@@ -55,6 +41,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "10003160-na-vracaru-uhapsen-maloletni-blokader-pisao-grafite",
+      "title": "UHAPŠEN MALOLETNI BLOKADER: Divljao po Vračaru! Uništavao zidove, pa razbio izlog ugostiteljskog objekta",
+      "url": "https://www.kurir.rs/crna-hronika/10003160/na-vracaru-uhapsen-maloletni-blokader-pisao-grafite",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T18:15:14+00:00",
+      "time": "18:15",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-uvredljive-grafite-upucene-drzavnim-organima-srbije-ehld91m",
@@ -134,20 +134,6 @@
       "datetime": "2026-05-23T14:32:49+00:00",
       "time": "14:32",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "a-zbog-ubistva-u-nemackoj-jedan-osumnjiceni-je-srbin-43n27pr",
-      "title": "UHAPŠEN SRBIN (30) U NEMAČKOJ Sumnja se da je Nenad učestvovao u ubistvu muškarca (93): Sumnja se da je sa još dvojicom mučio žrtvu pre smrti",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsena-trojica-balkanaca-zbog-ubistva-u-nemackoj-jedan-osumnjiceni-je-srbin/43n27pr",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T14:10:24+00:00",
-      "time": "14:10",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -309,6 +295,20 @@
       "priority": 72
     },
     {
+      "id": "rka-cuju-se-topovski-udari-na-lice-mesta-stize-zandarmerija-",
+      "title": "UŽIVO Policija u potpunosti zauzela Slaviju: Bačen suzavac, tokom akcije uhapšeno više osoba FOTO, VIDEO",
+      "url": "https://nova.rs/vesti/drustvo/incidenti-kod-pionirskog-parka-cuju-se-topovski-udari-na-lice-mesta-stize-zandarmerija/",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T19:45:07+00:00",
+      "time": "19:45",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "oceku-aktivista-sumud-flotile-u-bilbau-uhapsene-cetiri-osobe",
       "title": "На дочеку активиста „Сумуд флотиле” у Билбау ухапшене четири особе",
       "url": "https://www.politika.rs/scc/clanak/757483/na-doceku-aktivista-sumud-flotile-u-bilbau-uhapsene-cetiri-osobe",
@@ -335,6 +335,48 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "li-policijske-sluzbenike-bice-identifikovani-i-procesuirani-",
+      "title": "VJT: Svi koji su napali policijske službenike biće identifikovani i procesuirani",
+      "url": "https://n1info.rs/vesti/vjt-svi-koji-su-napali-policijske-sluzbenike-bice-identifikovani-i-procesuirani/",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T19:16:37+00:00",
+      "time": "19:16",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "su-napali-policiju-posle-skupa-na-slaviji-bice-procesuirani-",
+      "title": "Oglasilo se VJT: Svi koji su napali policiju posle skupa na Slaviji biće procesuirani",
+      "url": "https://www.danas.rs/vesti/drustvo/oglasilo-se-vjt-svi-koji-su-napali-policiju-posle-skupa-na-slaviji-bice-procesuirani/",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T19:13:36+00:00",
+      "time": "19:13",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "ad-o-incidentima-na-slaviji-napadi-na-policiju-bice-kaznjeni",
+      "title": "\"SVI KOJI SU NAPALI POLICIJU BIĆE IDENTIFIKOVANI I PROCESUIRANI!\" Oglasilo se Više javno tužilaštvo u Beogradu nakon brutalnog napada blokadera!",
+      "url": "https://www.kurir.rs/vesti/politika/10003180/vise-javno-tuzilastvo-beograd-o-incidentima-na-slaviji-napadi-na-policiju-bice-kaznjeni",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T18:51:11+00:00",
+      "time": "18:51",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "lusan-osumnjiceni-za-pucnjavu-u-restoranu-na-novom-beogradu-",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "du-je-nastavak-pritisaka-na-festival-zbog-podrske-studentima",
-      "title": "EXIT tim: Hapšenje u Novom Sadu je nastavak pritisaka na festival, zbog podrške studentima",
-      "url": "https://beta.rs/content/245176-exit-tim-hapsenje-u-novom-sadu-je-nastavak-pritisaka-na-festival-zbog-podrske-studentima",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T16:55:08+00:00",
-      "time": "16:55",
-      "source": "Beta",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "acevica-nastavak-pritisaka-zbog-podrske-studentskom-pokretu-",
-      "title": "EXIT o hapšenju brata direkora festivala: Hapšenje Miloša Kovačevića nastavak pritisaka zbog podrške studentskom pokretu",
-      "url": "https://www.danas.rs/vesti/drustvo/exit-o-hapsenju-brata-dusana-kovacevica-hapsenje-milosa-kovacevica-nastavak-pritisaka-zbog-podrske-studentskom-pokretu/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T14:45:08+00:00",
-      "time": "14:45",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "astao-na-90-uhapseni-direktori-sumnja-se-na-propuste-ylee2v6",
-      "title": "90 MRTVIH Detalji tragedije u rudniku u Kini: Procureo smrtonosni gas, POHAPŠENI DIREKTORI, sumnja se na ozbiljne propuste (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/svet/broj-zrtava-u-rudniku-u-kini-porastao-na-90-uhapseni-direktori-sumnja-se-na-propuste/ylee2v6",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T14:29:22+00:00",
-      "time": "14:29",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     }
   ],
   "all_sources": [
