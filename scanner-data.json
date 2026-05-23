@@ -15,20 +15,6 @@
       "priority": 100
     },
     {
-      "id": "ping-nakon-eksplozije-u-rudniku-raste-broj-stradalih-96428gc",
-      "title": "(VIDEO) HITNO SE OGLASIO SI ĐINPING Ljudi zarobljeni pod zemljom nakon eksplozije u rudniku: Raste broj stradalih",
-      "url": "https://www.blic.rs/vesti/svet/hitno-se-oglasio-si-djinping-nakon-eksplozije-u-rudniku-raste-broj-stradalih/96428gc",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T07:06:03+00:00",
-      "time": "07:06",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "uelno-224762-hapsenja-u-borbi-protiv-korupcije-u-srbiji-vest",
       "title": "Uhapšene tri osobe osumnjičene da su protivpravno prisvojile skoro 30 miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/224762/hapsenja-u-borbi-protiv-korupcije-u-srbiji/vest",
@@ -41,6 +27,48 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "ju-za-pobedu-studenata-najavila-krivicnu-prijavu-zbog-vozova",
+      "title": "DS formirala Tim za izbornu mobilizaciju za pobedu studenata, najavila krivičnu prijavu zbog vozova",
+      "url": "https://beta.rs/content/245162-ds-formirala-tim-za-izbornu-mobilizaciju-za-pobedu-studenata-najavila-krivicnu-prijavu-zbog-vozova",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:40:08+00:00",
+      "time": "11:40",
+      "source": "Beta",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
+      "id": "-donela-je-odluku-o-formiranju-tima-za-izbornu-mobilizaciju-",
+      "title": "\"Ili Srbija ili mafija\": Demokratska stranka donela je odluku o formiranju tima za izbornu mobilizaciju",
+      "url": "https://nova.rs/vesti/politika/ili-srbija-ili-mafija-demokratska-stranka-donela-je-odluku-o-formiranju-tima-za-izbornu-mobilizaciju/",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:07:59+00:00",
+      "time": "11:07",
+      "source": "Nova",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
+      "id": "https-www-danas-rs-vesti-drustvo-ds-ili-srbija-ili-mafija-",
+      "title": "DS: Ili Srbija ili mafija",
+      "url": "https://www.danas.rs/vesti/drustvo/ds-ili-srbija-ili-mafija/",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:02:28+00:00",
+      "time": "11:02",
+      "source": "Danas",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
     },
     {
       "id": "emestano-i-pocinje-li-zbog-toga-novi-mafijaski-rat-u-srbiji-",
@@ -83,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "-planeta-10001926-pas-progutao-krek-kokain-vlasnica-uhapsena",
+      "title": "BULDOG PROGUTAO 55 KOMADA KREK KOKAINA: Pas upao u apstinencijsku krizu, vlasnica uhapšena",
+      "url": "https://www.kurir.rs/planeta/10001926/pas-progutao-krek-kokain-vlasnica-uhapsena",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T04:10:00+00:00",
+      "time": "04:10",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "avljaju-podrska-uhapsenim-srpskim-direktorima-sirom-kim-vest",
@@ -225,6 +267,20 @@
       "priority": 72
     },
     {
+      "id": "djen-na-mestu-ubistva-aleksandra-nesovica-na-senjaku-0e49cmg",
+      "title": "(FOTO) OVO JE METAK NAĐEN  U RESTORANU NA SENJAKU Tužilaštvo i policija nastavili uviđaj na mestu gde je upucan Aleksandar Nešović",
+      "url": "https://www.blic.rs/vesti/hronika/foto-ovo-je-metak-nadjen-na-mestu-ubistva-aleksandra-nesovica-na-senjaku/0e49cmg",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:37:54+00:00",
+      "time": "11:37",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "-225014-pronaden-jos-jedan-metak-u-restoranu-na-senjaku-vest",
       "title": "Pronađen metak u restoranu na Senjaku, policija ponovo pretražuje teren",
       "url": "https://www.euronews.rs/srbija/aktuelno/225014/pronaden-jos-jedan-metak-u-restoranu-na-senjaku/vest",
@@ -265,6 +321,48 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "ovca-od-jutjubera-bogdana-ilica-poznatog-kao-baka-prase-html",
+      "title": "Оптужница против осумњиченог за покушај изнуде новца од јутјубера Богдана Илића, познатог као Бака Прасе",
+      "url": "https://www.rts.rs/vesti/hronika/5956932/optuznica-protiv-osumnjicenog-za-pokusaj-iznude-novca-od-jutjubera-bogdana-ilica-poznatog-kao-baka-prase.html",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:35:04+00:00",
+      "time": "11:35",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "-paljenje-automobila-bake-praseta-protiv-zorana-r-22-3epkt72",
+      "title": "ZBOG AUTOMOBILA OD 500.000 EVRA PRETI MU ZATVOR: Podignuta optužnica za paljenje automobila Bake Praseta",
+      "url": "https://www.blic.rs/zabava/podignuta-optuznica-za-paljenje-automobila-bake-praseta-protiv-zorana-r-22/3epkt72",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:14:47+00:00",
+      "time": "11:14",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "vo-u-restoranu-na-senjaku-naden-metak-nalozena-nova-pretraga",
+      "title": "Tužilaštvo: U restoranu na Senjaku nađen metak, naložena nova pretraga",
+      "url": "https://beta.rs/content/245158-tuzilastvo-u-restoranu-na-senjaku-naden-metak-nalozena-nova-pretraga",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T11:00:09+00:00",
+      "time": "11:00",
+      "source": "Beta",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "-u-restoranu-27-na-senjaku-nalozena-ponovna-pretraga-terena-",
@@ -463,20 +561,6 @@
       "priority": 32
     },
     {
-      "id": "a-10002781-da-li-ce-volodimir-zelenski-pasti-zbog-afere-vova",
-      "title": "DA LI ZELENSKI PADA ZBOG NAJVEĆE KORUPCIONAŠKE AFERE? Otkriveno ko je misteriozni Vova, tajni nadimak zapečatio sudbinu ukrajinskog predsednika?",
-      "url": "https://www.kurir.rs/planeta/10002781/da-li-ce-volodimir-zelenski-pasti-zbog-afere-vova",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T10:31:15+00:00",
-      "time": "10:31",
-      "source": "Kurir",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "24863-veljko-jovanovic-i-nenad-pekez-o-aktuelnim-temama-vest",
       "title": "Kako razumeti najavu izbora za period septembar-novembar, i kakva se reforma policije i borba protiv korupcije sprema?",
       "url": "https://www.euronews.rs/srbija/politika/224863/veljko-jovanovic-i-nenad-pekez-o-aktuelnim-temama/vest",
@@ -531,20 +615,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "ic-milo-dukanovic-destabilizuje-drzavu-da-bi-sacuvao-slobodu",
-      "title": "Медојевић: Мило Ђукановић дестабилизује државу да би сачувао слободу",
-      "url": "https://www.politika.rs/scc/clanak/757392/medojevic-milo-dukanovic-destabilizuje-drzavu-da-bi-sacuvao-slobodu",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T09:42:00+00:00",
-      "time": "09:42",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "itika-224996-dalibor-jevtic-o-hapsenju-srba-u-gracanici-vest",
@@ -617,88 +687,18 @@
       "priority": 26
     },
     {
-      "id": "ideo-radar-forum-miodrag-majic-miodrag-jovanovic-lustracija-",
-      "title": "„Lustracija je neophodna za one koji su lažima i gebelsovskim spinovima zatrovali javnost“",
-      "url": "https://radar.nova.rs/video/radar-forum/miodrag-majic-miodrag-jovanovic-lustracija/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
+      "id": "-raspisala-medjunarodnu-poternicu-za-garijem-kasparovim-html",
+      "title": "Русија расписала међународну потерницу за Гаријем Каспаровим",
+      "url": "https://www.rts.rs/vesti/ratu-u-ukrajini/5956889/rusija-raspisala-medjunarodnu-poternicu-za-garijem-kasparovim.html",
+      "date": "2026-05-23",
+      "datetime": "2026-05-23T10:45:54+00:00",
+      "time": "10:45",
+      "source": "RTS",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "gion-organizovani-kriminal-srbija-poverenje-policija-senjak-",
-      "title": "Bivši načelnik POSKOK-a: \"Senjak\" podseća na slučaj Stambolića, sprega kriminala i državnih službi počela devedesetih",
-      "url": "https://n1info.rs/region/organizovani-kriminal-srbija-poverenje-policija-senjak/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T07:24:52+00:00",
-      "time": "07:24",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "ropa-org-a-sad-stejt-department-zapadni-balkan-33762818-html",
-      "title": "SAD posvećene teritorijalnom integritetu BiH, ohrabruju Srbiju i Kosovo da normalizuju odnose, navodi Stejt department",
-      "url": "https://www.slobodnaevropa.org/a/sad-stejt-department-zapadni-balkan/33762818.html",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T19:53:23+00:00",
-      "time": "19:53",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "ena-pavlovic-sam-politicki-vrh-je-duboko-upleten-u-kriminal-",
-      "title": "Jelena Pavlović – Sam politički vrh je duboko upleten u kriminal",
-      "url": "https://www.ktv.rs/2026/05/22/jelena-pavlovic-sam-politicki-vrh-je-duboko-upleten-u-kriminal/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T14:18:56+00:00",
-      "time": "14:18",
-      "source": "KTV",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "-srbija-medu-najboljima-u-borbi-protiv-sajber-kriminala-vest",
-      "title": "Srbija među najboljima na svetu u borbi protiv sajber kriminala",
-      "url": "https://www.euronews.rs/srbija/aktuelno/224881/srbija-medu-najboljima-u-borbi-protiv-sajber-kriminala/vest",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T11:09:00+00:00",
-      "time": "11:09",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "va-rs-politika-kriminal-i-politika-koja-je-cena-afere-milic-",
-      "title": "Spinovanje, naše vlasti radovanje",
-      "url": "https://radar.nova.rs/politika/kriminal-i-politika-koja-je-cena-afere-milic/",
-      "date": "2026-05-20",
-      "datetime": "2026-05-20T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     }
   ],
   "all_sources": [
