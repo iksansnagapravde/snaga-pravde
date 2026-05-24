@@ -435,6 +435,20 @@
       "priority": 70
     },
     {
+      "id": "c-clanak-757500-pronaden-projektil-u-restoranu-27-na-senjaku",
+      "title": "Пронађен пројектил у ресторану „27” на Сењаку",
+      "url": "https://www.politika.rs/scc/clanak/757500/pronaden-projektil-u-restoranu-27-na-senjaku",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T04:45:00+00:00",
+      "time": "04:45",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "entski-protest-beograd-slavija-policija-sukobi-33763332-html",
       "title": "Sukobi antivladinih demostranata i policije nakon protesta u Beogradu",
       "url": "https://www.slobodnaevropa.org/a/studentski-protest-beograd-slavija-policija-sukobi/33763332.html",
@@ -575,20 +589,6 @@
       "priority": 66
     },
     {
-      "id": "ovca-od-jutjubera-bogdana-ilica-poznatog-kao-baka-prase-html",
-      "title": "Оптужница против осумњиченог за покушај изнуде новца од јутјубера Богдана Илића, познатог као Бака Прасе",
-      "url": "https://www.rts.rs/vesti/hronika/5956932/optuznica-protiv-osumnjicenog-za-pokusaj-iznude-novca-od-jutjubera-bogdana-ilica-poznatog-kao-baka-prase.html",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T11:35:04+00:00",
-      "time": "11:35",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "tovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu-",
       "title": "Gorski Matović optužen za napad na studente na protestu u Novom Sadu",
       "url": "https://www.krik.rs/gorski-matovic-optuzen-za-napad-na-studente-na-protestu-u-novom-sadu/",
@@ -601,20 +601,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "j-karl-fris-forkhamera-otkriva-istinu-o-kristijaniji-s8yhk93",
-      "title": "KRISTIJANIJA POD LUPOM Novi dokumentarac na Beldoksu razbija mitove o NAJČUDNIJEM mestu Evrope",
-      "url": "https://www.blic.rs/kultura/danski-reditelj-karl-fris-forkhamera-otkriva-istinu-o-kristijaniji/s8yhk93",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T16:48:38+00:00",
-      "time": "16:48",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "pa-org-a-kina-rs-bih-energetika-infrastruktura-33762663-html",
@@ -695,6 +681,20 @@
       "time": "16:05",
       "source": "RTS",
       "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "https-www-slobodnaevropa-org-a-33762455-html",
+      "title": "Izmenama izbornih zakona u Srbiji nisu rešene brojne dugogodišnje preporuke, kaže ODIHR",
+      "url": "https://www.slobodnaevropa.org/a/33762455.html",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T08:49:49+00:00",
+      "time": "08:49",
+      "source": "RSE Balkan",
+      "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
       "alert": false,
