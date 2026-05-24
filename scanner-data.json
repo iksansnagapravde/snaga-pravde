@@ -57,6 +57,48 @@
       "priority": 95
     },
     {
+      "id": "3594-novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
+      "title": "NIŠLIJA TEK IZAŠAO IZ ZATVORA, PA ISPLANIRAO JOŠ JEZIVIJI ZLOČIN! Isplivali novi detalji ubistva penzionera u Nemačkoj, evo ko je uhapšeni Nenad!",
+      "url": "https://www.kurir.rs/crna-hronika/10003594/novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T11:49:40+00:00",
+      "time": "11:49",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "https-vreme-com-vesti-ivica-dacic-ostavka-senjak-",
+      "title": "Dačić o slučaju „Senjak“: Zašto bih podnosio ostavku",
+      "url": "https://vreme.com/vesti/ivica-dacic-ostavka-senjak/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T11:45:29+00:00",
+      "time": "11:45",
+      "source": "Vreme",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "laviji-i-nastaviti-pritisak-na-exit-zbog-podrske-studentima-",
+      "title": "Dušan Kovačević o pozadini hapšenja rođenog brata: Kreirati medijski skandal i nastaviti pritisak na EXIT zbog podrške studentima",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/pozadina-hapsenja-mk-kreirati-medijski-skandal-uoci-protesta-na-slaviji-i-nastaviti-pritisak-na-exit-zbog-podrske-studentima/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T11:44:21+00:00",
+      "time": "11:44",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "olitika-5957303-ivica-dacic-senjak-ubistvo-skup-slavija-html",
       "title": "Дачић: Сви повезани са убиством на Сењаку ухапшени у рекордном року",
       "url": "https://www.rts.rs/vesti/politika/5957303/ivica-dacic-senjak-ubistvo-skup-slavija.html",
@@ -183,20 +225,6 @@
       "priority": 92
     },
     {
-      "id": "va-na-senjaku-novi-obrt-u-slucaju-aleksandra-nesovic-bnn7n0p",
-      "title": "NOVO HAPŠENJE U SLUČAJU UBISTVA NA SENJAKU Konobar lagao policiju, a onda je otkrivena i njegova ULOGA U ZLOČINU: Evo za šta se tačno tereti",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-konobar-zbog-ubistva-na-senjaku-novi-obrt-u-slucaju-aleksandra-nesovic/bnn7n0p",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T06:54:56+00:00",
-      "time": "06:54",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "obodi-o-slucaju-rasprava-i-u-skupstini-a-mup-se-ne-oglasava-",
       "title": "Begunci iz zatvora u Prokuplju još na slobodi: O slučaju rasprava i u Skupštini, a MUP se ne oglašava",
       "url": "https://n1info.rs/vesti/begunci-iz-zatvora-u-prokuplju-jos-na-slobodi-o-slucaju-rasprava-i-u-skupstini-a-mup-se-ne-oglasava/",
@@ -204,20 +232,6 @@
       "datetime": "2026-05-24T06:00:00+00:00",
       "time": "06:00",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "optuzio-policiju-za-teror-nad-slobodnim-ljudima-posle-skupa-",
-      "title": "Uhapšen odbornik NLS iz Valjeva: Parandilović optužio policiju za „teror nad slobodnim ljudima” posle skupa",
-      "url": "https://www.danas.rs/vesti/politika/uhapsen-odbornik-nls-iz-valjeva-parandilovic-optuzio-policiju-za-teror-nad-slobodnim-ljudima-posle-skupa/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T21:21:56+00:00",
-      "time": "21:21",
-      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -265,20 +279,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "an-sta-smo-videli-i-culi-na-slaviji-tokom-studentskog-skupa-",
-      "title": "Šta smo videli i čuli na Slaviji tokom studentskog skupa",
-      "url": "https://www.danas.rs/bbc-news-serbian/sta-smo-videli-i-culi-na-slaviji-tokom-studentskog-skupa/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T21:10:19+00:00",
-      "time": "21:10",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "me-com-razno-hapsenje-novi-sad-brat-direktora-exit-festival-",
@@ -433,6 +433,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "lobodnaevropa-org-a-kosovo-srbija-vucic-sjever-33763243-html",
+      "title": "Da li je Vučić digao ruke od Kosova?",
+      "url": "https://www.slobodnaevropa.org/a/kosovo-srbija-vucic-sjever-/33763243.html",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T11:52:50+00:00",
+      "time": "11:52",
+      "source": "RSE Balkan",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "pa-org-a-kina-rs-bih-energetika-infrastruktura-33762663-html",
@@ -681,20 +695,6 @@
       "time": "09:55",
       "source": "Kurir",
       "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "a-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks-",
-      "title": "ANEM: Podeljeno 355 miliona dinara za medijsko sufinansiranje, milioni onima koji krše Kodeks",
-      "url": "https://www.ktv.rs/2026/05/22/anem-podeljeno-355-miliona-dinara-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks/",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T12:49:53+00:00",
-      "time": "12:49",
-      "source": "KTV",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
