@@ -141,20 +141,6 @@
       "priority": 92
     },
     {
-      "id": "3594-novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
-      "title": "NIŠLIJA TEK IZAŠAO IZ ZATVORA, PA ISPLANIRAO JOŠ JEZIVIJI ZLOČIN! Isplivali novi detalji ubistva penzionera u Nemačkoj, evo ko je uhapšeni Nenad!",
-      "url": "https://www.kurir.rs/crna-hronika/10003594/novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T11:49:40+00:00",
-      "time": "11:49",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "https-vreme-com-vesti-ivica-dacic-ostavka-senjak-",
       "title": "Dačić o slučaju „Senjak“: Zašto bih podnosio ostavku",
       "url": "https://vreme.com/vesti/ivica-dacic-ostavka-senjak/",
@@ -295,6 +281,20 @@
       "priority": 76
     },
     {
+      "id": "ivica-dacic-veselin-milic-slucaj-ubistvo-senjak-odgovornost-",
+      "title": "Posle 10 dana, Dačić smislio da su \"Milića doveli oni bivši\": Javnost sluti - pokušaj da se zabašure ključni detalji slučaja",
+      "url": "https://n1info.rs/vesti/ivica-dacic-veselin-milic-slucaj-ubistvo-senjak-odgovornost/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T18:59:34+00:00",
+      "time": "18:59",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "s-ko-je-veselin-milic-uhapseni-nacelnik-beogradske-policije-",
       "title": "Ko je Veselin Milić, uhapšeni načelnik beogradske policije",
       "url": "https://www.krik.rs/ko-je-veselin-milic-uhapseni-nacelnik-beogradske-policije/",
@@ -307,6 +307,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "a-pronadjen-pistolj-kod-tutina-cetiri-osobe-uhapsene-3k2vlv0",
+      "title": "OBRAČUN ZBOG MEĐE KOD TUTINA Pronađen pištolj kojim je jedan muškarac ranjen, četiri osobe uhapšene",
+      "url": "https://www.blic.rs/vesti/hronika/pronadjen-pistolj-kod-tutina-cetiri-osobe-uhapsene/3k2vlv0",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T19:36:22+00:00",
+      "time": "19:36",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "ji-iz-istrage-ubistva-aleksandra-nesovica-na-senjaku-gnek8et",
@@ -533,20 +547,6 @@
       "priority": 24
     },
     {
-      "id": "ttps-www-danas-rs-dijalog-licni-stavovi-studenti-su-u-pravu-",
-      "title": "Studenti su u pravu",
-      "url": "https://www.danas.rs/dijalog/licni-stavovi/studenti-su-u-pravu/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T12:46:30+00:00",
-      "time": "12:46",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "slobodnaevropa-org-a-srbija-vucic-kina-posjeta-33762740-html",
       "title": "Vučić u Kini u jačanju 'čeličnog prijateljstva'",
       "url": "https://www.slobodnaevropa.org/a/srbija-vucic-kina-posjeta-/33762740.html",
@@ -673,20 +673,6 @@
       "priority": 8
     },
     {
-      "id": "s-uvodi-vestacku-inteligenciju-za-pisanje-i-obradu-tekstova-",
-      "title": "RTS uvodi veštačku inteligenciju za pisanje i obradu tekstova",
-      "url": "https://www.danas.rs/vesti/drustvo/rts-uvodi-vestacku-inteligenciju-za-pisanje-i-obradu-tekstova/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T13:04:48+00:00",
-      "time": "13:04",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "a-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks-",
       "title": "ANEM: Podeljeno 355 miliona dinara za medijsko sufinansiranje, milioni onima koji krše Kodeks",
       "url": "https://www.ktv.rs/2026/05/22/anem-podeljeno-355-miliona-dinara-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks/",
@@ -695,6 +681,20 @@
       "time": "12:49",
       "source": "KTV",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
