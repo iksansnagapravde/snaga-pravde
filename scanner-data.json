@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "ti-svet-ajkula-ubila-muskarca-39-na-popularnoj-plazi-pshmqj6",
-      "title": "AJKULA UBILA MUŠKARCA (39) NA POPULARNOJ PLAŽI! Hitno je prebačen u bolnicu, ali nije mu bilo spasa",
-      "url": "https://www.blic.rs/vesti/svet/ajkula-ubila-muskarca-39-na-popularnoj-plazi/pshmqj6",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T08:19:33+00:00",
-      "time": "08:19",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "-ubisto-beograd-srbija-milic-nacelnik-policije-33763666-html",
       "title": "Još jedna osoba uhapšena u slučaju ubistva u Beogradu",
       "url": "https://www.slobodnaevropa.org/a/ubisto-beograd-srbija-milic-nacelnik-policije-/33763666.html",
@@ -29,32 +15,32 @@
       "priority": 96
     },
     {
-      "id": "pristalice-za-sukobe-kod-pionirskog-parka-srbija-ili-mafija-",
-      "title": "Studenti optužili kriminalce i režimske pristalice za sukobe kod Pionirskog parka: Srbija ili mafija",
-      "url": "https://www.danas.rs/vesti/drustvo/studenti-optuzili-kriminalce-i-rezimske-pristalice-za-sukobe-kod-pionirskog-parka-srbija-ili-mafija/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T21:57:17+00:00",
-      "time": "21:57",
+      "id": "-slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-2-",
+      "title": "‘Slučaj Senjak’: U nastavku istrage uhapšen još jedan čovek",
+      "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-2/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T13:40:06+00:00",
+      "time": "13:40",
       "source": "Danas",
-      "category": "Организовани криминал",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 95
+      "priority": 92
     },
     {
-      "id": "enti-u-blokadi-izbor-je-na-svima-nama-ili-srbija-ili-mafija-",
-      "title": "Studenti u blokadi: Izbor je na svima nama, ili Srbija ili mafija",
-      "url": "https://n1info.rs/vesti/studenti-u-blokadi-izbor-je-na-svima-nama-ili-srbija-ili-mafija/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T21:45:36+00:00",
-      "time": "21:45",
-      "source": "N1",
-      "category": "Организовани криминал",
+      "id": "an-slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-",
+      "title": "‘Slučaj Senjak’: U nastavku istrage uhapšen još jedan čovek",
+      "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T13:40:05+00:00",
+      "time": "13:40",
+      "source": "Danas",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 95
+      "priority": 92
     },
     {
       "id": "3594-novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
@@ -225,20 +211,6 @@
       "priority": 92
     },
     {
-      "id": "obodi-o-slucaju-rasprava-i-u-skupstini-a-mup-se-ne-oglasava-",
-      "title": "Begunci iz zatvora u Prokuplju još na slobodi: O slučaju rasprava i u Skupštini, a MUP se ne oglašava",
-      "url": "https://n1info.rs/vesti/begunci-iz-zatvora-u-prokuplju-jos-na-slobodi-o-slucaju-rasprava-i-u-skupstini-a-mup-se-ne-oglasava/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T06:00:00+00:00",
-      "time": "06:00",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "no-225057-uhapsen-novosadanin-zbog-pozivanja-na-nasilje-vest",
       "title": "Uhapšen Novosađanin: Pozivao na napade dronovima sa eksplozivom na SANU I Hram Svetog Save (VIDEO)",
       "url": "https://www.euronews.rs/srbija/aktuelno/225057/uhapsen-novosadanin-zbog-pozivanja-na-nasilje/vest",
@@ -279,20 +251,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "me-com-razno-hapsenje-novi-sad-brat-direktora-exit-festival-",
-      "title": "Uhapšen brat direktora EXIT-a, festival tvrdi da je zbog podrške studentima",
-      "url": "https://vreme.com/razno/hapsenje-novi-sad-brat-direktora-exit-festival/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T20:00:15+00:00",
-      "time": "20:00",
-      "source": "Vreme",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "jotka-pretio-tuziocu-sve-si-mi-unistio-to-ne-moze-da-prodje-",
@@ -477,20 +435,6 @@
       "priority": 30
     },
     {
-      "id": "24863-veljko-jovanovic-i-nenad-pekez-o-aktuelnim-temama-vest",
-      "title": "Kako razumeti najavu izbora za period septembar-novembar, i kakva se reforma policije i borba protiv korupcije sprema?",
-      "url": "https://www.euronews.rs/srbija/politika/224863/veljko-jovanovic-i-nenad-pekez-o-aktuelnim-temama/vest",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T13:38:00+00:00",
-      "time": "13:38",
-      "source": "Euronews Serbia",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "tiv-predsednika-skupstine-grada-zrenjanina-cedomira-janjica-",
       "title": "Očekuje se podizanje optužnice protiv predsednika Skupštine grada Zrenjanina Čedomira Janjića",
       "url": "https://www.ktv.rs/2026/05/22/ocekuje-se-podizanje-optuznice-protiv-predsednika-skupstine-grada-zrenjanina-cedomira-janjica/",
@@ -512,20 +456,6 @@
       "datetime": "2026-05-24T10:23:57+00:00",
       "time": "10:23",
       "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "ttps-vreme-com-vesti-studentski-protest-beograd-23-maj-2026-",
-      "title": "Protest na prepunoj Slaviji: Najmanje 100.000 ljudi, provokacije, sukobi i hapšenja",
-      "url": "https://vreme.com/vesti/studentski-protest-beograd-23-maj-2026/",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T19:47:33+00:00",
-      "time": "19:47",
-      "source": "Vreme",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -601,6 +531,34 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "-politika-rs-scc-clanak-757629-london-pod-senkom-belog-praha",
+      "title": "Лондон под сенком белог праха",
+      "url": "https://www.politika.rs/scc/clanak/757629/london-pod-senkom-belog-praha",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T12:59:00+00:00",
+      "time": "12:59",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "ttps-www-danas-rs-dijalog-licni-stavovi-studenti-su-u-pravu-",
+      "title": "Studenti su u pravu",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/studenti-su-u-pravu/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T12:46:30+00:00",
+      "time": "12:46",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "slobodnaevropa-org-a-srbija-vucic-kina-posjeta-33762740-html",
@@ -687,6 +645,20 @@
       "priority": 24
     },
     {
+      "id": "s-uvodi-vestacku-inteligenciju-za-pisanje-i-obradu-tekstova-",
+      "title": "RTS uvodi veštačku inteligenciju za pisanje i obradu tekstova",
+      "url": "https://www.danas.rs/vesti/drustvo/rts-uvodi-vestacku-inteligenciju-za-pisanje-i-obradu-tekstova/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T13:04:48+00:00",
+      "time": "13:04",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "sport-fudbal-10003496-arsenal-blizu-900-miliona-evra-prihoda",
       "title": "EVROPA U NEVERICI! Arsenal obrće NOVAC kakav fudbal ne pamti - milioni samo pljušte! Nikad veća zarada jednog engleskog kluba!",
       "url": "https://www.kurir.rs/sport/fudbal/10003496/arsenal-blizu-900-miliona-evra-prihoda",
@@ -695,6 +667,34 @@
       "time": "09:55",
       "source": "Kurir",
       "category": "Плате и зараде",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "a-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks-",
+      "title": "ANEM: Podeljeno 355 miliona dinara za medijsko sufinansiranje, milioni onima koji krše Kodeks",
+      "url": "https://www.ktv.rs/2026/05/22/anem-podeljeno-355-miliona-dinara-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks/",
+      "date": "2026-05-22",
+      "datetime": "2026-05-22T12:49:53+00:00",
+      "time": "12:49",
+      "source": "KTV",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
