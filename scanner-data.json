@@ -29,13 +29,13 @@
       "priority": 95
     },
     {
-      "id": "n-muskarac-zbog-sumnje-da-je-pretio-smrcu-predsedniku-vucicu",
-      "title": "Ухапшен мушкарац због сумње да је претио смрћу председнику Вучићу",
-      "url": "https://www.politika.rs/scc/clanak/757668/uhapsen-muskarac-zbog-sumnje-da-je-pretio-smrcu-predsedniku-vucicu",
+      "id": "apsen-zbog-sumnje-da-je-pretio-smrcu-predsedniku-vucicu-html",
+      "title": "Ухапшен због сумње да је претио смрћу председнику Вучићу",
+      "url": "https://www.rts.rs/vesti/hronika/5957435/uhapsen-zbog-sumnje-da-je-pretio-smrcu-predsedniku-vucicu.html",
       "date": "2026-05-24",
-      "datetime": "2026-05-24T15:55:00+00:00",
-      "time": "15:55",
-      "source": "Politika",
+      "datetime": "2026-05-24T16:13:38+00:00",
+      "time": "16:13",
+      "source": "RTS",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -176,6 +176,20 @@
       "datetime": "2026-05-24T10:22:00+00:00",
       "time": "10:22",
       "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "ir-rs-crna-hronika-10003508-ivica-dacic-o-ubistvu-na-senjaku",
+      "title": "IVICA DAČIĆ O UBISTVU NA SENJAKU: Svi umešani uhapšeni u rekordnom roku, nema zaštićenih!",
+      "url": "https://www.kurir.rs/crna-hronika/10003508/ivica-dacic-o-ubistvu-na-senjaku",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T10:21:56+00:00",
+      "time": "10:21",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -449,20 +463,6 @@
       "priority": 26
     },
     {
-      "id": "57117-predsednik-vucic-osudio-nasilje-poziva-na-dijalog-html",
-      "title": "Председник Вучић осудио насиље, позива на дијалог",
-      "url": "https://www.rts.rs/vesti/politika/5957117/predsednik-vucic-osudio-nasilje-poziva-na-dijalog.html",
-      "date": "2026-05-23",
-      "datetime": "2026-05-23T20:34:53+00:00",
-      "time": "20:34",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "vladan-petrov-o-unapredenju-pravosudnih-zakona-u-srbiji-vest",
       "title": "Petrov: Očekujem da Venecijanska komisija pozitivno oceni novi set pravosudnih zakona",
       "url": "https://www.euronews.rs/srbija/drustvo/225060/vladan-petrov-o-unapredenju-pravosudnih-zakona-u-srbiji/vest",
@@ -489,6 +489,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "poginulo-stiteci-kriminalce-nego-prilikom-njihovog-hapsenja-",
+      "title": "Veliko otkriće predsednika Vučića da policajci čuvaju kriminalce duže od 30 godina: Više ih poginulo štiteći kriminalce nego prilikom njihovog hapšenja",
+      "url": "https://nova.rs/vesti/hronika/veliko-otkrice-predsednika-vucica-da-policajci-cuvaju-kriminalce-duze-od-30-godina-vise-ih-poginulo-stiteci-kriminalce-nego-prilikom-njihovog-hapsenja/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T16:40:39+00:00",
+      "time": "16:40",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "ttps-www-danas-rs-dijalog-licni-stavovi-studenti-su-u-pravu-",
@@ -589,6 +603,20 @@
       "priority": 24
     },
     {
+      "id": "-sa-seikom-porodica-je-trazila-milion-dolara-za-mene-24zq9gm",
+      "title": "PORODICA NA SVADBI TRAŽILA MILION DOLARA ZA NJU Poznata Srpkinja o braku sa šeikom: \"Muž i deca su muslimani, ja sam pravoslavka\"",
+      "url": "https://www.blic.rs/zabava/poznata-srpkinja-o-braku-sa-seikom-porodica-je-trazila-milion-dolara-za-mene/24zq9gm",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T16:24:29+00:00",
+      "time": "16:24",
+      "source": "Blic",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "ona-evra-za-nabavku-novih-vozova-za-expo-vlada-garant-zajma-",
       "title": "Srbijavoz uzima kredit od 47 miliona evra za nabavku novih vozova za EXPO: Vlada garant zajma",
       "url": "https://nova.rs/vesti/biznis/srbijavoz-uzima-kredit-od-47-miliona-evra-za-nabavku-novih-vozova-za-expo-vlada-garant-zajma/",
@@ -631,6 +659,20 @@
       "priority": 8
     },
     {
+      "id": "sport-fudbal-10003496-arsenal-blizu-900-miliona-evra-prihoda",
+      "title": "EVROPA U NEVERICI! Arsenal obrće NOVAC kakav fudbal ne pamti - milioni samo pljušte! Nikad veća zarada jednog engleskog kluba!",
+      "url": "https://www.kurir.rs/sport/fudbal/10003496/arsenal-blizu-900-miliona-evra-prihoda",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T09:55:04+00:00",
+      "time": "09:55",
+      "source": "Kurir",
+      "category": "Плате и зараде",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "a-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks-",
       "title": "ANEM: Podeljeno 355 miliona dinara za medijsko sufinansiranje, milioni onima koji krše Kodeks",
       "url": "https://www.ktv.rs/2026/05/22/anem-podeljeno-355-miliona-dinara-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks/",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "ackoj-telo-otetog-biznismena-ismeta-k-nadjeno-u-sumi-epnjnel",
-      "title": "HOROR U NEMAČKOJ Poznati biznismen iz BiH otet u belom kombiju, nađen zakopan duboko u šumi",
-      "url": "https://www.blic.rs/vesti/svet/tragican-kraj-potrage-u-nemackoj-telo-otetog-biznismena-ismeta-k-nadjeno-u-sumi/epnjnel",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T13:53:14+00:00",
-      "time": "13:53",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "avne-opozicione-stranke-suzavac-i-gumeni-meci-na-pristalice-",
-      "title": "Turska policija upala u zgradu glavne opozicione stranke, suzavac i gumeni meci na pristalice",
-      "url": "https://n1info.rs/svet/turska-policija-upala-u-zgradu-glavne-opozicione-stranke-suzavac-i-gumeni-meci-na-pristalice/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T13:47:17+00:00",
-      "time": "13:47",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "avne-opozicione-stranke-suzavac-i-gumeni-meci-na-pristalice-",
-      "title": "Turska policija upala u zgradu glavne opozicione stranke, suzavac i gumeni meci na pristalice",
-      "url": "https://www.danas.rs/svet/turska-policija-upala-u-zgradu-glavne-opozicione-stranke-suzavac-i-gumeni-meci-na-pristalice/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T13:39:59+00:00",
-      "time": "13:39",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
