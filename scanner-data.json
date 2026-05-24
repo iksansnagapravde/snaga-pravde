@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "-bude-gorivo-buducnosti-pronadjena-ogromna-nalazista-m3595y2",
+      "title": "Ovo bi moglo da bude gorivo budućnosti: Pronađena ogromna nalazišta",
+      "url": "https://www.blic.rs/biznis/moj-novac/ovo-bi-moglo-da-bude-gorivo-buducnosti-pronadjena-ogromna-nalazista/m3595y2",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T20:41:00+00:00",
+      "time": "20:41",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "-ubisto-beograd-srbija-milic-nacelnik-policije-33763666-html",
       "title": "Još jedna osoba uhapšena u slučaju ubistva u Beogradu",
       "url": "https://www.slobodnaevropa.org/a/ubisto-beograd-srbija-milic-nacelnik-policije-/33763666.html",
@@ -105,48 +119,6 @@
       "date": "2026-05-24",
       "datetime": "2026-05-24T15:31:08+00:00",
       "time": "15:31",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-2-",
-      "title": "‘Slučaj Senjak’: U nastavku istrage uhapšen još jedan čovek",
-      "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-2/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T13:40:06+00:00",
-      "time": "13:40",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "an-slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-",
-      "title": "‘Slučaj Senjak’: U nastavku istrage uhapšen još jedan čovek",
-      "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T13:40:05+00:00",
-      "time": "13:40",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "3594-novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
-      "title": "NIŠLIJA TEK IZAŠAO IZ ZATVORA, PA ISPLANIRAO JOŠ JEZIVIJI ZLOČIN! Isplivali novi detalji ubistva penzionera u Nemačkoj, evo ko je uhapšeni Nenad!",
-      "url": "https://www.kurir.rs/crna-hronika/10003594/novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T11:49:40+00:00",
-      "time": "11:49",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -435,6 +407,20 @@
       "priority": 66
     },
     {
+      "id": "opa-org-a-republikanski-kongresmeni-u-sarajevu-33763833-html",
+      "title": "Republikanski kongresmeni u Sarajevu sa predstavnicima državne vlasti i OHR-a",
+      "url": "https://www.slobodnaevropa.org/a/republikanski-kongresmeni-u-sarajevu/33763833.html",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T21:21:19+00:00",
+      "time": "21:21",
+      "source": "RSE Balkan",
+      "category": "Мањинска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "disy-i-levicarski-akel-osvojili-najvise-glasova-na-izborima-",
       "title": "Izlazne ankete na Kipru: Desničarski DISY i levičarski Akel osvojili najviše glasova na izborima",
       "url": "https://www.danas.rs/svet/izlazne-ankete-na-kipru-desnicarski-disy-i-levicarski-akel-osvojili-najvise-glasova-na-izborima/",
@@ -685,6 +671,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "-dolara-za-mladu-prica-o-jeleni-bin-drai-i-njenom-muzu-seiku",
+      "title": "TRAŽILI MILION DOLARA DA BI JE DALI MUŽU Poznata Srpkinja se udala za bogatog muslimana, pa otkrila detalje: Deca i on klanjaju pet puta dnevno, a ja...",
+      "url": "https://www.kurir.rs/stars/10003967/milion-dolara-za-mladu-prica-o-jeleni-bin-drai-i-njenom-muzu-seiku",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T20:24:12+00:00",
+      "time": "20:24",
+      "source": "Kurir",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "o-rs-vesti-restoran-kod-cira-kula-lokalni-izbori-sns-budzet-",
