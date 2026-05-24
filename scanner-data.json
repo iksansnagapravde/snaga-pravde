@@ -15,6 +15,20 @@
       "priority": 96
     },
     {
+      "id": "www-danas-rs-dijalog-licni-stavovi-dnevnik-djordja-zujovica-",
+      "title": "„Sve manje verujem u miran rasplet“: Dnevnik Đorđa Žujovića",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/dnevnik-djordja-zujovica/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T14:07:59+00:00",
+      "time": "14:07",
+      "source": "Danas",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
       "id": "-slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-2-",
       "title": "‘Slučaj Senjak’: U nastavku istrage uhapšen još jedan čovek",
       "url": "https://www.danas.rs/bbc-news-serbian/slucaj-senjak-u-nastavku-istrage-uhapsen-jos-jedan-covek-2/",
@@ -148,34 +162,6 @@
       "datetime": "2026-05-24T08:29:20+00:00",
       "time": "08:29",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-svi-privedeni-nakon-protesta-na-slaviji-pusteni-na-slobodu-",
-      "title": "Ljiljana Borović: Svi privedeni nakon protesta na Slaviji pušteni na slobodu",
-      "url": "https://www.danas.rs/vesti/drustvo/ljiljana-borovic-svi-privedeni-nakon-protesta-na-slaviji-pusteni-na-slobodu/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T08:15:29+00:00",
-      "time": "08:15",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "jedna-osoba-u-okviru-istrage-ubistva-u-restoranu-na-senjaku-",
-      "title": "Oglasilo se VJT o ubistvu na Senjaku: Uhapšena još jedna osoba u okviru istrage",
-      "url": "https://nova.rs/vesti/hronika/vjt-uhapsena-jos-jedna-osoba-u-okviru-istrage-ubistva-u-restoranu-na-senjaku/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T08:05:07+00:00",
-      "time": "08:05",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -393,6 +379,20 @@
       "priority": 66
     },
     {
+      "id": "rs-planeta-10003701-zaseda-demonstranata-ministru-u-boliviji",
+      "title": "HAOS U BOLIVIJI, MINISTAR UPAO U ZASEDU I NESTAO! Ključa na ulicama, demonstranti dinamitom raznose vojne kamione – predsednik poslao dramatičnu poruku! (VIDEO)",
+      "url": "https://www.kurir.rs/planeta/10003701/zaseda-demonstranata-ministru-u-boliviji",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T14:08:00+00:00",
+      "time": "14:08",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "lobodnaevropa-org-a-kosovo-srbija-vucic-sjever-33763243-html",
       "title": "Da li je Vučić digao ruke od Kosova?",
       "url": "https://www.slobodnaevropa.org/a/kosovo-srbija-vucic-sjever-/33763243.html",
@@ -421,20 +421,6 @@
       "priority": 32
     },
     {
-      "id": "je-sa-kinom-srbiju-dovodi-u-preveliku-finansijsku-zavisnost-",
-      "title": "Brkić: Postojeći model saradnje sa Kinom, Srbiju dovodi u preveliku finansijsku zavisnost",
-      "url": "https://www.danas.rs/vesti/politika/brkic-postojeci-model-saradnje-sa-kinom-srbiju-dovodi-u-preveliku-finansijsku-zavisnost/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T08:14:37+00:00",
-      "time": "08:14",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "tiv-predsednika-skupstine-grada-zrenjanina-cedomira-janjica-",
       "title": "Očekuje se podizanje optužnice protiv predsednika Skupštine grada Zrenjanina Čedomira Janjića",
       "url": "https://www.ktv.rs/2026/05/22/ocekuje-se-podizanje-optuznice-protiv-predsednika-skupstine-grada-zrenjanina-cedomira-janjica/",
@@ -447,6 +433,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "29-hapsenje-u-dubaiju-daniel-zbog-tiktoka-zavrsio-u-policiji",
+      "title": "\"Strpali su nas u džip sa rešetkama\": Daniel ušao u ženski WC luksuznog hotela u Dubaiju zbog TikToka, a onda je usledilo filmsko hapšenje",
+      "url": "https://www.kurir.rs/vesti/drustvo/10002829/hapsenje-u-dubaiju-daniel-zbog-tiktoka-zavrsio-u-policiji",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T14:15:36+00:00",
+      "time": "14:15",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "nika-dacic-prvi-put-o-hapsenju-milica-nakon-10-dana-cutanja-",
@@ -531,20 +531,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "-politika-rs-scc-clanak-757629-london-pod-senkom-belog-praha",
-      "title": "Лондон под сенком белог праха",
-      "url": "https://www.politika.rs/scc/clanak/757629/london-pod-senkom-belog-praha",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T12:59:00+00:00",
-      "time": "12:59",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     },
     {
       "id": "ttps-www-danas-rs-dijalog-licni-stavovi-studenti-su-u-pravu-",
@@ -643,6 +629,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "otornih-vozova-za-expo-zeleznicu-drzava-garantuje-za-kredit-",
+      "title": "Srbijavoz se zadužuje 46,9 miliona evra za nabavku 30 novih elektromotornih vozova za EXPO železnicu: Država garantuje za kredit",
+      "url": "https://www.danas.rs/vesti/ekonomija/srbijavoz-se-zaduzuje-469-miliona-evra-za-nabavku-30-novih-elektromotornih-vozova-za-expo-zeleznicu-drzava-garantuje-za-kredit/",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T14:54:32+00:00",
+      "time": "14:54",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "s-uvodi-vestacku-inteligenciju-za-pisanje-i-obradu-tekstova-",
