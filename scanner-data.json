@@ -85,20 +85,6 @@
       "priority": 92
     },
     {
-      "id": "ac-u-sremskoj-mitrovici-zbog-pretnji-smrcu-aleksandru-vucicu",
-      "title": "UPUTIO PRETNJE SMRĆU PREDSEDNIKU VUČIĆU PUTEM DRUŠTVENIH MREŽA! Uhapšen muškarac (51) iz Sremske Mitrovice zbog ugrožavanja bezbednosti!",
-      "url": "https://www.kurir.rs/vesti/politika/10003811/uhapsen-muskarac-u-sremskoj-mitrovici-zbog-pretnji-smrcu-aleksandru-vucicu",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T15:31:08+00:00",
-      "time": "15:31",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "https-vreme-com-vesti-ivica-dacic-ostavka-senjak-",
       "title": "Dačić o slučaju „Senjak“: Zašto bih podnosio ostavku",
       "url": "https://vreme.com/vesti/ivica-dacic-ostavka-senjak/",
@@ -695,6 +681,20 @@
       "time": "12:49",
       "source": "KTV",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
