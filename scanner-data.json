@@ -85,34 +85,6 @@
       "priority": 92
     },
     {
-      "id": "ic-protesti-ce-se-nastaviti-dok-se-ne-oslobode-uhapseni-srbi",
-      "title": "PROTESTI ĆE SE NASTAVITI DOK SE NE OSLOBODE UHAPŠENI SRBI! Elek i Simić: Zabrinjavajuće je što međunarodna zajednica ćuti na sve ovo",
-      "url": "https://www.kurir.rs/vesti/politika/10004724/zlatan-elek-i-igor-simic-protesti-ce-se-nastaviti-dok-se-ne-oslobode-uhapseni-srbi",
-      "date": "2026-05-25",
-      "datetime": "2026-05-25T15:20:35+00:00",
-      "time": "15:20",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "4718-dete-11-ubijeno-u-renu-u-francuskoj-uhapseni-tinejdzeri",
-      "title": "DETE (11) PRONAĐENO MRTVO KRAJ REKE! Uhapšeno dvoje tinejdžera starosti 15 i 16 godina, žrtva BRUTALNO ubijena! \"Tu žive beskućnici, ali nisu problematični\"",
-      "url": "https://www.kurir.rs/planeta/10004718/dete-11-ubijeno-u-renu-u-francuskoj-uhapseni-tinejdzeri",
-      "date": "2026-05-25",
-      "datetime": "2026-05-25T15:03:26+00:00",
-      "time": "15:03",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "25207-elek-o-hapsenjima-zabrinjavajuce-stanje-na-kosovu-vest",
       "title": "Elek i Simić: Protesti će se nastaviti dok se uhapšeni Srbi ne oslobode",
       "url": "https://www.euronews.rs/srbija/politika/225207/elek-o-hapsenjima-zabrinjavajuce-stanje-na-kosovu/vest",
@@ -237,6 +209,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "ra-10004647-maloletnik-uhapsen-podgorica-decija-pornografija",
+      "title": "MALOLETNIK UHAPŠEN U PODGORICI ZBOG DEČIJE PORNOGRAFIJE: Policija pronašla sporni sadržaj na elektronskim uređajima",
+      "url": "https://www.kurir.rs/region/crna-gora/10004647/maloletnik-uhapsen-podgorica-decija-pornografija",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T22:12:00+00:00",
+      "time": "22:12",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "i-u-centru-sefilda-policija-pokrenula-veliku-istragu-gvn60cj",
@@ -561,6 +547,20 @@
       "priority": 8
     },
     {
+      "id": "0004609-maloletnik-uhapsen-bar-kradje-falsifikovanje-isprave",
+      "title": "BARSKA POLICIJA UHAPSILA MALOLETNIKA ZBOG KRAĐA: Lisice na ruke stavljene i Nikšićaninu zbog falsifikovanja vozačke dozvole",
+      "url": "https://www.kurir.rs/region/crna-gora/10004609/maloletnik-uhapsen-bar-kradje-falsifikovanje-isprave",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ps-n1info-rs-svet-pljacka-poznati-sportisti-drustvene-mreze-",
       "title": "Lopovi pratili poznate sportiste na društvenim mrežama, pa provaljivali u njihove kuće kad su prazne",
       "url": "https://n1info.rs/svet/pljacka-poznati-sportisti-drustvene-mreze/",
@@ -645,6 +645,34 @@
       "priority": 4
     },
     {
+      "id": "spisak-pomilovanih-zatvorenika-u-okviru-najavljene-amnestije",
+      "title": "Куба објавила списак помилованих затвореника у оквиру најављене амнестије",
+      "url": "https://www.politika.rs/scc/clanak/758028/kuba-objavila-spisak-pomilovanih-zatvorenika-u-okviru-najavljene-amnestije",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T23:38:00+00:00",
+      "time": "23:38",
+      "source": "Politika",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "bava-zena-10004437-kako-se-resiti-komaraca-na-prirodan-nacin",
+      "title": "Kako se rešiti komaraca na prirodan način? Trikovi koji ih brzo teraju iz doma i dvorišta bez hemije",
+      "url": "https://www.kurir.rs/zabava/zena/10004437/kako-se-resiti-komaraca-na-prirodan-nacin",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T22:45:00+00:00",
+      "time": "22:45",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "https-www-danas-rs-sport-volsfburg-ispao-iz-bundeslige-",
       "title": "(VIDEO) Volfsburg posle 19 godina ispao iz Bundeslige: Potencijalni reprezentativac Srbije jedan od junaka revanša baraža",
       "url": "https://www.danas.rs/sport/volsfburg-ispao-iz-bundeslige/",
@@ -667,34 +695,6 @@
       "time": "21:55",
       "source": "Nova",
       "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "naredio-obnovu-pristupa-internetu-posle-visemesecne-blokade-",
-      "title": "Predsednik Irana naredio obnovu pristupa internetu posle višemesečne blokade",
-      "url": "https://www.danas.rs/svet/predsednik-irana-naredio-obnovu-pristupa-internetu-posle-visemesecne-blokade/",
-      "date": "2026-05-25",
-      "datetime": "2026-05-25T21:49:58+00:00",
-      "time": "21:49",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "-koju-nikako-ne-smete-da-pravite-kada-perete-peskire-6z6n2ne",
-      "title": "Ovo je greška koju nikako ne smete da pravite kada perete peškire",
-      "url": "https://www.blic.rs/slobodno-vreme/ovo-je-greska-koju-nikako-ne-smete-da-pravite-kada-perete-peskire/6z6n2ne",
-      "date": "2026-05-25",
-      "datetime": "2026-05-25T21:48:00+00:00",
-      "time": "21:48",
-      "source": "Blic",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
