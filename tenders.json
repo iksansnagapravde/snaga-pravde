@@ -1,112 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 1623300.0,
+    "accepted": 41146.0,
+    "lowest": 1202.0,
+    "difference": 39944.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112723288,
+    "file": "documents/112723288_odluka 404 jn 180 25 04 26 15 4.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 37086.2,
     "lowest": 5202.0,
-    "difference": 1618098.0,
+    "difference": 31884.199999999997,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106794951,
-    "file": "documents/106794951_Odluka o dodeli ugovora.docx"
+    "id": 100412508,
+    "file": "documents/100412508_Odluka - 09.pdf"
   },
   {
     "winner": null,
-    "accepted": 28306200.14,
-    "lowest": 4202.0,
-    "difference": 28301998.14,
+    "accepted": 4500000.0,
+    "lowest": 1109.0,
+    "difference": 4498891.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100115555,
-    "file": "documents/100115555_09 Odluka o izdavanju narudzbenice 017.pdf"
+    "id": 100167978,
+    "file": "documents/100167978_Odluka o dodeli ugovora 120-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 66666666.67,
+    "accepted": 960300.0,
     "lowest": 5202.0,
-    "difference": 66661464.67,
+    "difference": 955098.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104305502,
-    "file": "documents/104305502_Odluka o dodeli ugovora.docx"
+    "id": 102009324,
+    "file": "documents/102009324_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 12463187.18,
-    "lowest": 3202.0,
-    "difference": 12459985.18,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106419975,
-    "file": "documents/106419975_JN 85-2026 Odluka o dodeli.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 14216667.0,
+    "accepted": 481200.0,
     "lowest": 5202.0,
-    "difference": 14211465.0,
+    "difference": 475998.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102142866,
-    "file": "documents/102142866_Odluka o dodeli ugovora.pdf"
+    "id": 114578561,
+    "file": "documents/114578561_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 7688143.32,
+    "accepted": 1890000.0,
     "lowest": 5202.0,
-    "difference": 7682941.32,
+    "difference": 1884798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101645836,
-    "file": "documents/101645836_Odluka o dodeli ugovora.docx"
+    "id": 114018558,
+    "file": "documents/114018558_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 2818181.82,
-    "lowest": 2141.0,
-    "difference": 2816040.82,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100002006,
-    "file": "documents/100002006_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2600000.0,
-    "lowest": 4202.0,
-    "difference": 2595798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 1811972762913,
-    "file": "documents/1811972762913_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1393200.0,
+    "accepted": 386520.0,
     "lowest": 5202.0,
-    "difference": 1387998.0,
+    "difference": 381318.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101198459,
-    "file": "documents/101198459_Odluka o dodeli ugovora.docx"
+    "id": 106773596,
+    "file": "documents/106773596_ODLUKA - REAGENSI USTANOVA.pdf"
   },
   {
     "winner": null,
-    "accepted": 7326000.0,
+    "accepted": 386520.0,
     "lowest": 5202.0,
-    "difference": 7320798.0,
+    "difference": 381318.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106076085,
-    "file": "documents/106076085_Odluka o dodeli ugovora.docx"
+    "id": 101547957,
+    "file": "documents/101547957_ODLUKA - REAGENSI USTANOVA.pdf"
+  },
+  {
+    "winner": "U otvorenom postupku javne nabavke Usluga hotela i restorana, smeStaja i ishrane za zensku repr",
+    "accepted": 2900000.0,
+    "lowest": 5202.0,
+    "difference": 2894798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105920040,
+    "file": "documents/105920040_Odluka o dodeli ugovora JN 28.pdf"
   }
 ]
