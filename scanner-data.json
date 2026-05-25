@@ -29,6 +29,34 @@
       "priority": 96
     },
     {
+      "id": "mna-misa-brkic-sprega-drzave-i-kriminala-ugrozava-ekonomiju-",
+      "title": "Sprega države i kriminala ugrožava ekonomiju",
+      "url": "https://www.danas.rs/kolumna/misa-brkic/sprega-drzave-i-kriminala-ugrozava-ekonomiju/",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T04:44:35+00:00",
+      "time": "04:44",
+      "source": "Danas",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
+      "id": "dna-osoba-zbog-sumnje-da-je-povezana-sa-nesovicevim-ubistvom",
+      "title": "Ухапшена још једна особа због сумње да је повезана са Нешовићевим убиством",
+      "url": "https://www.politika.rs/scc/clanak/757726/uhapsena-jos-jedna-osoba-zbog-sumnje-da-je-povezana-sa-nesovicevim-ubistvom",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T05:05:00+00:00",
+      "time": "05:05",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "apsen-zbog-sumnje-da-je-pretio-smrcu-predsedniku-vucicu-html",
       "title": "Ухапшен због сумње да је претио смрћу председнику Вучићу",
       "url": "https://www.rts.rs/vesti/hronika/5957435/uhapsen-zbog-sumnje-da-je-pretio-smrcu-predsedniku-vucicu.html",
@@ -71,13 +99,27 @@
       "priority": 92
     },
     {
-      "id": "itrovici-pretio-predsedniku-srbije-aleksandru-vucicu-y5c4vgr",
-      "title": "PRETIO SMRĆU VUČIĆU Uhapšen muškarac u Sremskoj Mitrovici zbog ugrožavanja sigurnosti predsednika Srbije",
-      "url": "https://www.blic.rs/vesti/politika/muskarac-uhapsen-u-sremskoj-mitrovici-pretio-predsedniku-srbije-aleksandru-vucicu/y5c4vgr",
+      "id": "ac-u-sremskoj-mitrovici-zbog-pretnji-smrcu-aleksandru-vucicu",
+      "title": "UPUTIO PRETNJE SMRĆU PREDSEDNIKU VUČIĆU PUTEM DRUŠTVENIH MREŽA! Uhapšen muškarac (51) iz Sremske Mitrovice zbog ugrožavanja bezbednosti!",
+      "url": "https://www.kurir.rs/vesti/politika/10003811/uhapsen-muskarac-u-sremskoj-mitrovici-zbog-pretnji-smrcu-aleksandru-vucicu",
       "date": "2026-05-24",
-      "datetime": "2026-05-24T15:40:39+00:00",
-      "time": "15:40",
-      "source": "Blic",
+      "datetime": "2026-05-24T15:31:08+00:00",
+      "time": "15:31",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "3594-novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
+      "title": "NIŠLIJA TEK IZAŠAO IZ ZATVORA, PA ISPLANIRAO JOŠ JEZIVIJI ZLOČIN! Isplivali novi detalji ubistva penzionera u Nemačkoj, evo ko je uhapšeni Nenad!",
+      "url": "https://www.kurir.rs/crna-hronika/10003594/novi-detalji-o-uhapsenom-srbinu-zbog-ubistva-u-nemackoj",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T11:49:40+00:00",
+      "time": "11:49",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -295,20 +337,6 @@
       "priority": 70
     },
     {
-      "id": "ji-iz-istrage-ubistva-aleksandra-nesovica-na-senjaku-gnek8et",
-      "title": "LAŽNI TRAGOVI SKRETALI ISTRAGU Forenzičari sklapaju mozaik UBISTVA NA SENJAKU: Šta kriju mobilni telefoni osumnjičenih za likvidaciju Nešovića",
-      "url": "https://www.blic.rs/vesti/hronika/ovo-su-detalji-iz-istrage-ubistva-aleksandra-nesovica-na-senjaku/gnek8et",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T17:33:03+00:00",
-      "time": "17:33",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "-225014-pronaden-jos-jedan-metak-u-restoranu-na-senjaku-vest",
       "title": "Pronađen metak u restoranu na Senjaku, policija ponovo pretražuje teren",
       "url": "https://www.euronews.rs/srbija/aktuelno/225014/pronaden-jos-jedan-metak-u-restoranu-na-senjaku/vest",
@@ -380,7 +408,7 @@
     },
     {
       "id": "opa-org-a-republikanski-kongresmeni-u-sarajevu-33763833-html",
-      "title": "Republikanski kongresmeni u Sarajevu sa predstavnicima državne vlasti i OHR-a",
+      "title": "Republikanski kongresmeni u Sarajevu sa predstavnicima državne vlasti i Kancelarije visokog predstavnika",
       "url": "https://www.slobodnaevropa.org/a/republikanski-kongresmeni-u-sarajevu/33763833.html",
       "date": "2026-05-24",
       "datetime": "2026-05-24T21:21:19+00:00",
@@ -421,6 +449,20 @@
       "priority": 60
     },
     {
+      "id": "rs-planeta-10003701-zaseda-demonstranata-ministru-u-boliviji",
+      "title": "HAOS U BOLIVIJI, MINISTAR UPAO U ZASEDU I NESTAO! Ključa na ulicama, demonstranti dinamitom raznose vojne kamione – predsednik poslao dramatičnu poruku! (VIDEO)",
+      "url": "https://www.kurir.rs/planeta/10003701/zaseda-demonstranata-ministru-u-boliviji",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T14:08:00+00:00",
+      "time": "14:08",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "lobodnaevropa-org-a-kosovo-srbija-vucic-sjever-33763243-html",
       "title": "Da li je Vučić digao ruke od Kosova?",
       "url": "https://www.slobodnaevropa.org/a/kosovo-srbija-vucic-sjever-/33763243.html",
@@ -435,20 +477,6 @@
       "priority": 60
     },
     {
-      "id": "pa-org-a-kina-rs-bih-energetika-infrastruktura-33762663-html",
-      "title": "Nova kineska 'ofanziva' na energetsko tržište Republike Srpske",
-      "url": "https://www.slobodnaevropa.org/a/kina-rs-bih-energetika-infrastruktura/33762663.html",
-      "date": "2026-05-22",
-      "datetime": "2026-05-22T14:16:54+00:00",
-      "time": "14:16",
-      "source": "RSE Balkan",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "tiv-predsednika-skupstine-grada-zrenjanina-cedomira-janjica-",
       "title": "Očekuje se podizanje optužnice protiv predsednika Skupštine grada Zrenjanina Čedomira Janjića",
       "url": "https://www.ktv.rs/2026/05/22/ocekuje-se-podizanje-optuznice-protiv-predsednika-skupstine-grada-zrenjanina-cedomira-janjica/",
@@ -461,6 +489,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "29-hapsenje-u-dubaiju-daniel-zbog-tiktoka-zavrsio-u-policiji",
+      "title": "\"Strpali su nas u džip sa rešetkama\": Daniel ušao u ženski WC luksuznog hotela u Dubaiju zbog TikToka, a onda je usledilo filmsko hapšenje",
+      "url": "https://www.kurir.rs/vesti/drustvo/10002829/hapsenje-u-dubaiju-daniel-zbog-tiktoka-zavrsio-u-policiji",
+      "date": "2026-05-24",
+      "datetime": "2026-05-24T14:15:36+00:00",
+      "time": "14:15",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "itika-224996-dalibor-jevtic-o-hapsenju-srba-u-gracanici-vest",
@@ -491,6 +533,20 @@
       "priority": 26
     },
     {
+      "id": "ke-dece-iz-starobeljska-videces-da-finansiras-terorizam-html",
+      "title": "Макрон: Париз уз Украјину; Захарова: Погледај слике деце из Старобељска, видећеш да финансираш тероризам",
+      "url": "https://www.rts.rs/vesti/ratu-u-ukrajini/5957470/makron-pariz-uz-ukrajinu-zaharova-pogledaj-slike-dece-iz-starobeljska-videces-da-finansiras-terorizam.html",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T03:52:09+00:00",
+      "time": "03:52",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "vladan-petrov-o-unapredenju-pravosudnih-zakona-u-srbiji-vest",
       "title": "Petrov: Očekujem da Venecijanska komisija pozitivno oceni novi set pravosudnih zakona",
       "url": "https://www.euronews.rs/srbija/drustvo/225060/vladan-petrov-o-unapredenju-pravosudnih-zakona-u-srbiji/vest",
@@ -517,20 +573,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "poginulo-stiteci-kriminalce-nego-prilikom-njihovog-hapsenja-",
-      "title": "Veliko otkriće predsednika Vučića da policajci čuvaju kriminalce duže od 30 godina: Više ih poginulo štiteći kriminalce nego prilikom njihovog hapšenja",
-      "url": "https://nova.rs/vesti/hronika/veliko-otkrice-predsednika-vucica-da-policajci-cuvaju-kriminalce-duze-od-30-godina-vise-ih-poginulo-stiteci-kriminalce-nego-prilikom-njihovog-hapsenja/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T16:40:39+00:00",
-      "time": "16:40",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     },
     {
       "id": "slobodnaevropa-org-a-srbija-vucic-kina-posjeta-33762740-html",
@@ -617,18 +659,18 @@
       "priority": 24
     },
     {
-      "id": "-dolara-za-mladu-prica-o-jeleni-bin-drai-i-njenom-muzu-seiku",
-      "title": "TRAŽILI MILION DOLARA DA BI JE DALI MUŽU Poznata Srpkinja se udala za bogatog muslimana, pa otkrila detalje: Deca i on klanjaju pet puta dnevno, a ja...",
-      "url": "https://www.kurir.rs/stars/10003967/milion-dolara-za-mladu-prica-o-jeleni-bin-drai-i-njenom-muzu-seiku",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T20:24:12+00:00",
-      "time": "20:24",
-      "source": "Kurir",
-      "category": "Права деце",
+      "id": "ovica-nije-imala-za-hleb-i-mleko-nakon-njegove-smrti-4cbt2fe",
+      "title": "\"Nisam imala za hleb i mleko, morala sam da prihvatim da sam socijalni slučaj\": Luisova udovica o siromaštvu sa kojim se borila nakon njegove smrti, a onda se sve preokrenulo",
+      "url": "https://www.blic.rs/zabava/luisova-udovica-nije-imala-za-hleb-i-mleko-nakon-njegove-smrti/4cbt2fe",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T05:50:10+00:00",
+      "time": "05:50",
+      "source": "Blic",
+      "category": "Социјална угроженост",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 8
+      "priority": 22
     },
     {
       "id": "o-rs-vesti-restoran-kod-cira-kula-lokalni-izbori-sns-budzet-",
@@ -645,34 +687,6 @@
       "priority": 8
     },
     {
-      "id": "-sa-seikom-porodica-je-trazila-milion-dolara-za-mene-24zq9gm",
-      "title": "PORODICA NA SVADBI TRAŽILA MILION DOLARA ZA NJU Poznata Srpkinja o braku sa šeikom: \"Muž i deca su muslimani, ja sam pravoslavka\"",
-      "url": "https://www.blic.rs/zabava/poznata-srpkinja-o-braku-sa-seikom-porodica-je-trazila-milion-dolara-za-mene/24zq9gm",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T16:24:29+00:00",
-      "time": "16:24",
-      "source": "Blic",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "otornih-vozova-za-expo-zeleznicu-drzava-garantuje-za-kredit-",
-      "title": "Srbijavoz se zadužuje 46,9 miliona evra za nabavku 30 novih elektromotornih vozova za EXPO železnicu: Država garantuje za kredit",
-      "url": "https://www.danas.rs/vesti/ekonomija/srbijavoz-se-zaduzuje-469-miliona-evra-za-nabavku-30-novih-elektromotornih-vozova-za-expo-zeleznicu-drzava-garantuje-za-kredit/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T14:54:32+00:00",
-      "time": "14:54",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "a-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks-",
       "title": "ANEM: Podeljeno 355 miliona dinara za medijsko sufinansiranje, milioni onima koji krše Kodeks",
       "url": "https://www.ktv.rs/2026/05/22/anem-podeljeno-355-miliona-dinara-za-medijsko-sufinansiranje-milioni-onima-koji-krse-kodeks/",
@@ -681,20 +695,6 @@
       "time": "12:49",
       "source": "KTV",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
-      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
-      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
-      "date": "2026-05-11",
-      "datetime": "2026-05-11T15:08:58+00:00",
-      "time": "15:08",
-      "source": "CINS",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
