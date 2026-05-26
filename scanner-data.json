@@ -113,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "racijom-traze-da-se-uhapseni-direktori-brane-sa-slobode-html",
-      "title": "Одборници СО Грачаница Декларацијом траже да се ухапшени директори бране са слободе",
-      "url": "https://www.rts.rs/vesti/politika/5958754/odbornici-so-gracanica-deklaracijom-traze-da-se-uhapseni-direktori-brane-sa-slobode.html",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T12:37:30+00:00",
-      "time": "12:37",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "iju-kojom-se-trazi-da-se-uhapseni-srbi-brane-sa-slobode-vest",
       "title": "SO Gračanica usvojila Deklaraciju kojom se traži da se uhapšeni Srbi brane sa slobode",
       "url": "https://www.euronews.rs/srbija/politika/225374/so-gracanica-usvojila-deklaraciju-kojom-se-trazi-da-se-uhapseni-srbi-brane-sa-slobode/vest",
@@ -547,20 +533,6 @@
       "priority": 26
     },
     {
-      "id": "da-podeli-i-unese-razdor-unutar-univerziteta-nece-im-uspeti-",
-      "title": "Rektor Đokić: Vlast čini sve da podeli i unese razdor unutar Univerziteta – neće im uspeti",
-      "url": "https://www.danas.rs/vesti/drustvo/rektor-djokic-vlast-cini-sve-da-podeli-i-unese-razdor-unutar-univerziteta-nece-im-uspeti/",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T14:20:01+00:00",
-      "time": "14:20",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "ideo-radar-forum-miodrag-majic-miodrag-jovanovic-lustracija-",
       "title": "„Lustracija je neophodna za one koji su lažima i gebelsovskim spinovima zatrovali javnost“",
       "url": "https://radar.nova.rs/video/radar-forum/miodrag-majic-miodrag-jovanovic-lustracija/",
@@ -673,20 +645,6 @@
       "priority": 8
     },
     {
-      "id": "sle-20-godina-vila-i-hotel-sa-najvisim-standardima-u-qh47bnh",
-      "title": "Hotel InterContinental u Delta Districtu dostigao 95 metara visine - otvaranje krajem 2026.",
-      "url": "https://www.blic.rs/biznis/intercontinental-otvara-vrata-posle-20-godina-vila-i-hotel-sa-najvisim-standardima-u/qh47bnh",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T15:02:28+00:00",
-      "time": "15:02",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
       "title": "SNS platio milione za skup u Areni pred lokalne izbore",
       "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ars-10005909-kristijan-otkrio-detalje-pomirenja-sa-kristinom",
+      "title": "\"NAŠLI SU MI KESU SA BELIM PRAHOM, UHAPSILI SU ME U CRNOJ GORI\" Kristijan otkrio detalje pomirenja sa Kristinom, prošli kroz pakao: Opkolila me policija...",
+      "url": "https://www.kurir.rs/stars/10005909/kristijan-otkrio-detalje-pomirenja-sa-kristinom",
+      "date": "2026-05-26",
+      "datetime": "2026-05-26T18:23:58+00:00",
+      "time": "18:23",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-otkrio-detalje-pomirenja-sa-kristinom-hapsili-su-me-1hpbxyp",
+      "title": "KRISTIJAN GOLUBOVIĆ OTKRIO DETALJE POMIRENJA SA KRISTINOM Prošli haos zbog krštenja sinova: \"Opkolila me je policija\" (Video)",
+      "url": "https://www.blic.rs/zabava/kristijan-golubovic-otkrio-detalje-pomirenja-sa-kristinom-hapsili-su-me/1hpbxyp",
+      "date": "2026-05-26",
+      "datetime": "2026-05-26T18:03:47+00:00",
+      "time": "18:03",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "drustvo-225419-ubistvo-u-zajecaru-policija-uhapsila-s-z-vest",
+      "title": "Policija uhapsila osumnjičenog za ubistvo u Zaječaru: Muškarcu zadato više ubodnih rana",
+      "url": "https://www.euronews.rs/srbija/drustvo/225419/ubistvo-u-zajecaru-policija-uhapsila-s-z/vest",
+      "date": "2026-05-26",
+      "datetime": "2026-05-26T15:15:00+00:00",
+      "time": "15:15",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
