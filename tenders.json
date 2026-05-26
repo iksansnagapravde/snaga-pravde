@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 1560000.0,
+    "lowest": 5202.0,
+    "difference": 1554798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106076085,
+    "file": "documents/106076085_Odluka o dodeli ugovora (I-75.4 2026).pdf"
+  },
+  {
+    "winner": null,
     "accepted": 7462776.0,
     "lowest": 3108.0,
     "difference": 7459668.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 114083113,
     "file": "documents/114083113_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 11490000.0,
-    "lowest": 3202.0,
-    "difference": 11486798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105651105,
-    "file": "documents/105651105_Odluka 4-2026-7185-1201 od 26.05.2026. o dodeli ugovora JN 27-2026.PDF"
   }
 ]
