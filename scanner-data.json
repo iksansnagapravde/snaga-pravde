@@ -15,20 +15,6 @@
       "priority": 166
     },
     {
-      "id": "-a-onda-je-jednim-pregledom-otkrila-ozbiljan-problem-9sypsnt",
-      "title": "Godinama mislila da je samo premorena od posla i brzog života - a ona je jedan pregled otkrio dijagnozu koja joj je promenila život",
-      "url": "https://www.blic.rs/slobodno-vreme/mislila-da-je-samo-iscrpljena-a-onda-je-jednim-pregledom-otkrila-ozbiljan-problem/9sypsnt",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T16:17:08+00:00",
-      "time": "16:17",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "lno-225392-krivicna-prijava-zbog-poreske-utaje-u-srbiji-vest",
       "title": "Uhapšen osumnjičeni za utaju poreza, oštetio budžet za više od 5 miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/225392/krivicna-prijava-zbog-poreske-utaje-u-srbiji/vest",
@@ -225,20 +211,6 @@
       "priority": 72
     },
     {
-      "id": "donacelniku-bora-ukinuto-zadrzavanje-nema-osnova-za-pritvor-",
-      "title": "Oglasilo se tužilaštvo u Nišu: Bivšem gradonačelniku Bora ukinuto zadržavanje, nema osnova za pritvor",
-      "url": "https://nova.rs/vesti/hronika/oglasilo-se-tuzilastvo-u-nisu-bivsem-gradonacelniku-bora-ukinuto-zadrzavanje-nema-osnova-za-pritvor/",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T14:28:16+00:00",
-      "time": "14:28",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
       "id": "vropa-org-a-novinari-institucije-srpske-kosovo-33764542-html",
       "title": "Novinari o pritisku nakon hapšenja direktora srpskih institucija na Kosovu",
       "url": "https://www.slobodnaevropa.org/a/novinari-institucije-srpske-kosovo-/33764542.html",
@@ -265,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "na-gora-10005425-bijelo-polje-uhapseni-maloletnici-marihuana",
+      "title": "DVA MALOLETNIKA UHAPŠENA ZBOG MARIHUANE: Sumnjiče se da su drogu prodavali i prosleđivali dalje, policija odmah reagovala",
+      "url": "https://www.kurir.rs/region/crna-gora/10005425/bijelo-polje-uhapseni-maloletnici-marihuana",
+      "date": "2026-05-26",
+      "datetime": "2026-05-26T22:52:00+00:00",
+      "time": "22:52",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "225377-policija-u-beogradu-uhapsila-organizatore-nereda-vest",
@@ -489,6 +475,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "kedonija-10005455-turci-uhaseni-u-skoplju-napali-dostavljaca",
+      "title": "NEREDI U SKOPLJU: Turci pohapšeni kada su fizički napali dostavljača",
+      "url": "https://www.kurir.rs/region/severna-makedonija/10005455/turci-uhaseni-u-skoplju-napali-dostavljaca",
+      "date": "2026-05-26",
+      "datetime": "2026-05-26T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "4-protesti-zaposlenih-na-kosovu-zbog-hapsenja-direktora-vest",
