@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "s-www-kurir-rs-zabava-zena-10005877-buran-zivot-alise-macado",
-      "title": "Misicu je Tramp brutalno ponizio, a onda je u rijalitiju i imala odnose pred celom nacijom: Verenik je sve to gledao, a umešala se i mafija",
-      "url": "https://www.kurir.rs/zabava/zena/10005877/buran-zivot-alise-macado",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T17:24:59+00:00",
-      "time": "17:24",
-      "source": "Kurir",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "okala-osumnjiceni-tvrdi-da-je-sve-uradio-zbog-trudne-fyv678s",
       "title": "TRENER IZ RUSIJE ZAPALIO KAFIĆ U ČUMIĆEVOM Procurio snimak paljenja lokala, osumnjičeni tvrdi da je sve uradio zbog TRUDNE DEVOJKE (VIDEO)",
       "url": "https://www.blic.rs/vesti/hronika/procurio-snimak-paljenja-lokala-osumnjiceni-tvrdi-da-je-sve-uradio-zbog-trudne/fyv678s",
@@ -78,20 +64,6 @@
       "datetime": "2026-05-26T19:06:10+00:00",
       "time": "19:06",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "kultura-10005887-uhapseni-provalnici-kuca-poznatih-sportista",
-      "title": "Uhapšen pljačkaš kuće verenika Tejlor Svift: Ovi poznati sportisti su bili mete lanca pljački",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/10005887/uhapseni-provalnici-kuca-poznatih-sportista",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T17:41:24+00:00",
-      "time": "17:41",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -265,20 +237,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "sudilo-u-korist-drzave-kompanija-mol-placa-troskove-postupka",
-      "title": "Хрватско тужилаштво пресудило у корист државе, компанија МОЛ плаћа трошкове поступка",
-      "url": "https://www.politika.rs/scc/clanak/758289/hrvatsko-tuzilastvo-presudilo-u-korist-drzave-kompanija-mol-placa-troskove-postupka",
-      "date": "2026-05-26",
-      "datetime": "2026-05-26T20:00:00+00:00",
-      "time": "20:00",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "rotiv-mol-a-madjarska-kompanija-mora-da-isplati-775000-evra-",
@@ -659,6 +617,20 @@
       "priority": 8
     },
     {
+      "id": "-muskarac-iz-okoline-sjenice-u-komi-nakon-prebijanja-34wntd3",
+      "title": "ZBOG OVACA ZAVRŠIO U KOMI! Muškarac kod Sjenice brutalno pretučen na njivi, napadač u bekstvu: Policija pretražila močvaru i pronašla KLJUČAN TRAG",
+      "url": "https://www.blic.rs/vesti/hronika/muskarac-iz-okoline-sjenice-u-komi-nakon-prebijanja/34wntd3",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T03:52:00+00:00",
+      "time": "03:52",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ars-10005909-kristijan-otkrio-detalje-pomirenja-sa-kristinom",
       "title": "\"NAŠLI SU MI KESU SA BELIM PRAHOM, UHAPSILI SU ME U CRNOJ GORI\" Kristijan otkrio detalje pomirenja sa Kristinom, prošli kroz pakao: Opkolila me policija...",
       "url": "https://www.kurir.rs/stars/10005909/kristijan-otkrio-detalje-pomirenja-sa-kristinom",
@@ -694,6 +666,34 @@
       "datetime": "2026-05-26T15:15:00+00:00",
       "time": "15:15",
       "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "s-rs-srbija-aktuelno-225222-pucnjava-u-centru-prokuplja-vest",
+      "title": "Pucnjava u centru Prokuplja: Svađa dvojice muškaraca prerasla u incident",
+      "url": "https://www.euronews.rs/srbija/aktuelno/225222/pucnjava-u-centru-prokuplja/vest",
+      "date": "2026-05-25",
+      "datetime": "2026-05-25T10:35:00+00:00",
+      "time": "10:35",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "og-nasilja-u-valjevu-sta-pise-u-belesci-zastitnika-gradjana-",
+      "title": "Slučaj policijskog nasilja u Valjevu: Šta piše u belešci Zaštitnika građana",
+      "url": "https://www.cins.rs/slucaj-policijskog-nasilja-u-valjevu-sta-pise-u-belesci-zastitnika-gradjana/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T07:15:23+00:00",
+      "time": "07:15",
+      "source": "CINS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
