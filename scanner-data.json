@@ -71,6 +71,34 @@
       "priority": 95
     },
     {
+      "id": "ovina-10006489-bih-uhapsen-clan-kriminalne-bande-pink-panter",
+      "title": "UHAPŠEN ČLAN BANDE \"PINK PANTER\"! Otkriven na graničnom prelazu sa Hrvatskom",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10006489/bih-uhapsen-clan-kriminalne-bande-pink-panter",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T22:30:00+00:00",
+      "time": "22:30",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "s-crna-hronika-10007018-u-surcinu-uhapsen-serijski-provalnik",
+      "title": "SERIJSKI PROVALNIK UHAPŠEN NA DELU U SURČINU! Uhvaćen u kupatilu dok je pljačkao kuću, kod njega pronađeni pajser, gumene rukavice i 14.000 evra",
+      "url": "https://www.kurir.rs/crna-hronika/10007018/u-surcinu-uhapsen-serijski-provalnik",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T21:46:09+00:00",
+      "time": "21:46",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "o-su-vlasnici-zapaljenih-i-demoliranih-restorana-u-beogradu-",
       "title": "Ko su vlasnici zapaljenih i demoliranih restorana u Beogradu",
       "url": "https://vreme.com/vreme/ko-su-vlasnici-zapaljenih-i-demoliranih-restorana-u-beogradu/",
@@ -183,20 +211,6 @@
       "priority": 84
     },
     {
-      "id": "eni-jevtic-na-sudjenju-vracarcima-ovo-je-bas-nerealna-prica-",
-      "title": "Optuženi Jevtić na suđenju \"vračarcima\": Ovo je baš nerealna priča",
-      "url": "https://n1info.rs/vesti/optuzeni-jevtic-na-sudjenju-vracarcima-ovo-je-bas-nerealna-prica/",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T15:06:34+00:00",
-      "time": "15:06",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "vropa-org-a-srbija-slucaj-senjak-veselin-milic-33766096-html",
       "title": "Identifikovano telo žrtve u slučaju u kojem je uhapšen načelnik beogradske policije",
       "url": "https://www.slobodnaevropa.org/a/srbija-slucaj-senjak-veselin-milic/33766096.html",
@@ -223,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "psen-serijski-provalnik-uhvacen-dok-je-pljackao-kucu-jh66kzv",
+      "title": "SERIJSKI PROVALNIK UHAPŠEN U SURČINU Uhvaćen dok je pljačkao kuću: Policija pronašla pajser, rukavice i 14.000 evra",
+      "url": "https://www.blic.rs/vesti/hronika/u-surcinu-uhapsen-serijski-provalnik-uhvacen-dok-je-pljackao-kucu/jh66kzv",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T22:42:57+00:00",
+      "time": "22:42",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "eme-com-vreme-policijski-crni-labud-u-predsednikovom-bazenu-",
@@ -379,20 +407,6 @@
       "priority": 66
     },
     {
-      "id": "-optuznica-zbog-bacanja-bombe-na-kucu-zdravka-colica-bxm5q5w",
-      "title": "PODIGNUTA OPTUŽNICA ZBOG BACANJA BOMBE NA KUĆU ZDRAVKA ČOLIĆA Tužilaštvo tražilo da se produži pritvor osumnjičenima",
-      "url": "https://www.blic.rs/zabava/podignuta-optuznica-zbog-bacanja-bombe-na-kucu-zdravka-colica/bxm5q5w",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T16:29:41+00:00",
-      "time": "16:29",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ktuelno-225446-ubistvo-a-n-u-beogradu-detalji-i-istraga-vest",
       "title": "VJT o identitetu tela pronađenog u buretu kod Inđije: Reč je o A. N., potvrdila DNK analiza",
       "url": "https://www.euronews.rs/srbija/aktuelno/225446/ubistvo-a-n-u-beogradu-detalji-i-istraga/vest",
@@ -405,6 +419,62 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "ce-beogradske-pijace-za-nov-izgled-kalenica-20-miliona-evra-",
+      "title": "Raspisan tender za rekonstrukciju najveće beogradske pijace: Za nov izgled Kalenića - 20 miliona evra",
+      "url": "https://nova.rs/vesti/biznis/raspisan-tender-za-rekonstrukciju-najvece-beogradske-pijace-za-nov-izgled-kalenica-20-miliona-evra/",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T22:05:17+00:00",
+      "time": "22:05",
+      "source": "Nova",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
+    },
+    {
+      "id": "ukciju-najvece-beogradske-kalenic-pijace-za-20-miliona-evra-",
+      "title": "Raspisan tender za rekonstrukciju najveće beogradske Kalenić pijace za 20 miliona evra",
+      "url": "https://n1info.rs/biznis/raspisan-tender-za-rekonstrukciju-najvece-beogradske-kalenic-pijace-za-20-miliona-evra/",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T21:55:43+00:00",
+      "time": "21:55",
+      "source": "N1",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
+    },
+    {
+      "id": "ukciju-najvece-beogradske-kalenic-pijace-za-20-miliona-evra-",
+      "title": "Raspisan tender za rekonstrukciju najveće beogradske Kalenić pijace za 20 miliona evra",
+      "url": "https://www.danas.rs/vesti/ekonomija/raspisan-tender-za-rekonstrukciju-najvece-beogradske-kalenic-pijace-za-20-miliona-evra/",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T21:47:22+00:00",
+      "time": "21:47",
+      "source": "Danas",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
+    },
+    {
+      "id": "rukciju-najvece-beogradske-kalenic-pijace-za-20-miliona-evra",
+      "title": "Raspisan tender za rekonstrukciju najveće beogradske Kalenić pijace za 20 miliona evra",
+      "url": "https://beta.rs/content/245440-raspisan-tender-za-rekonstrukciju-najvece-beogradske-kalenic-pijace-za-20-miliona-evra",
+      "date": "2026-05-27",
+      "datetime": "2026-05-27T21:35:08+00:00",
+      "time": "21:35",
+      "source": "Beta",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
     },
     {
       "id": "no-225625-tender-za-kalenic-pijacu-rok-za-ponude-30-jun-vest",
@@ -575,20 +645,6 @@
       "priority": 24
     },
     {
-      "id": "va-rs-politika-kriminal-i-politika-koja-je-cena-afere-milic-",
-      "title": "Spinovanje, naše vlasti radovanje",
-      "url": "https://radar.nova.rs/politika/kriminal-i-politika-koja-je-cena-afere-milic/",
-      "date": "2026-05-20",
-      "datetime": "2026-05-20T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji-",
       "title": "Milan Ostojić Sandokan, kriminalac iz Ćacilenda, napao studenta na Slaviji",
       "url": "https://www.krik.rs/milan-ostojic-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji/",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "aju-kontejneri-i-napada-policija-od-dovodjenja-investicija-i",
-      "title": "VUČIĆ O BLOKADERIMA: Ako misle da je važnije da se bacaju kontejneri i napada policija od dovođenja investicija i prijateljstva sa Kinom, to govori o njima",
-      "url": "https://www.kurir.rs/vesti/politika/10006944/vucic-ako-misle-da-je-vaznije-da-se-bacaju-kontejneri-i-napada-policija-od-dovodjenja-investicija-i",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T18:59:29+00:00",
-      "time": "18:59",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ija-u-pojacanoj-kontroli-saobracaja-usmerenoj-na-pesake-html",
-      "title": "Црвено светло није пречица - полиција у појачаној контроли саобраћаја усмереној на пешаке",
-      "url": "https://www.rts.rs/vesti/drustvo/5959840/crveno-svetlo-nije-precica---policija-u-pojacanoj-kontroli-saobracaja-usmerenoj-na-pesake.html",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T18:35:22+00:00",
-      "time": "18:35",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "li-da-su-im-kolege-prosle-srede-napadnute-na-novom-beogradu-",
-      "title": "\"Policija ili batinaši, da li postoji granica\": Studenti u blokadi objavili da su im kolege prošle srede napadnute na Novom Beogradu",
-      "url": "https://nova.rs/vesti/drustvo/policija-ili-batinasi-da-li-postoji-granica-studenti-u-blokadi-objavili-da-su-im-kolege-prosle-srede-napadnute-na-novom-beogradu/",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T16:39:42+00:00",
-      "time": "16:39",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "loletnici-prislonio-noz-na-lice-drugu-cupao-i-udarao-w2en3ep",
-      "title": "MALOLETNICI PRISLONIO NOŽ NA LICE, DRUGU ČUPAO I UDARAO Užas u kafiću u Beogradu: Policija uhapsila nasilnika (26)",
-      "url": "https://www.blic.rs/vesti/hronika/horor-u-lokalu-u-beogradu-maloletnici-prislonio-noz-na-lice-drugu-cupao-i-udarao/w2en3ep",
-      "date": "2026-05-27",
-      "datetime": "2026-05-27T16:28:01+00:00",
-      "time": "16:28",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
