@@ -267,20 +267,6 @@
       "priority": 70
     },
     {
-      "id": "58735-zaplenjena-imovina-koza-nostre-vredna-200-miliona-evra",
-      "title": "Заплењена имовина Коза ностре вредна 200 милиона евра",
-      "url": "https://www.politika.rs/scc/clanak/758735/zaplenjena-imovina-koza-nostre-vredna-200-miliona-evra",
-      "date": "2026-05-28",
-      "datetime": "2026-05-28T20:14:00+00:00",
-      "time": "20:14",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 68
-    },
-    {
       "id": "-225782-optuznica-protiv-ms-za-silovanje-i-razbojnistvo-vest",
       "title": "Optužnica protiv osumnjičenog da je opljačkao i silovao taksistkinju u Merošini",
       "url": "https://www.euronews.rs/srbija/aktuelno/225782/optuznica-protiv-ms-za-silovanje-i-razbojnistvo/vest",
@@ -645,20 +631,6 @@
       "priority": 8
     },
     {
-      "id": "rir-rs-sport-tenis-10007983-goran-ivanisevic-izgubio-na-sudu",
-      "title": "GORAN IVANIŠEVIĆ IZGUBIO NA SUDU: Tražio da mu bivša supruga plati 2,4 miliona evra, sud presudio - Tatjana mu ne duguje ni evro!",
-      "url": "https://www.kurir.rs/sport/tenis/10007983/goran-ivanisevic-izgubio-na-sudu",
-      "date": "2026-05-28",
-      "datetime": "2026-05-28T16:45:19+00:00",
-      "time": "16:45",
-      "source": "Kurir",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "rbija-uzima-kredit-od-264-miliona-evra-za-nabavku-30-vozova-",
       "title": "Srbija uzima kredit od 264 miliona evra za nabavku 30 vozova",
       "url": "https://vreme.com/ekonomija/srbija-uzima-kredit-od-264-miliona-evra-za-nabavku-30-vozova/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "-225791-zaplenjeno-20kg-kokaina-u-blizini-backe-palanke-vest",
+      "title": "Zaplena droge na Dunavu: Kokain pronađen u čamcu kod Bačke Palanke, policija traga za osumnjičenima",
+      "url": "https://www.euronews.rs/srbija/aktuelno/225791/zaplenjeno-20kg-kokaina-u-blizini-backe-palanke/vest",
+      "date": "2026-05-28",
+      "datetime": "2026-05-28T18:06:00+00:00",
+      "time": "18:06",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
