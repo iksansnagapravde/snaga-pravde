@@ -393,20 +393,6 @@
       "priority": 70
     },
     {
-      "id": "s-crna-hronika-10008995-pretres-u-slucaju-ubistva-na-senjaku",
-      "title": "NOVI PRETRESI U SLUČAJU UBISTVA NA SENJAKU: Oglasilo se tužilaštvo",
-      "url": "https://www.kurir.rs/crna-hronika/10008995/pretres-u-slucaju-ubistva-na-senjaku",
-      "date": "2026-05-29",
-      "datetime": "2026-05-29T16:41:39+00:00",
-      "time": "16:41",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "-225782-optuznica-protiv-ms-za-silovanje-i-razbojnistvo-vest",
       "title": "Optužnica protiv osumnjičenog da je opljačkao i silovao taksistkinju u Merošini",
       "url": "https://www.euronews.rs/srbija/aktuelno/225782/optuznica-protiv-ms-za-silovanje-i-razbojnistvo/vest",
@@ -695,6 +681,20 @@
       "time": "22:03",
       "source": "Radar",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "s-rs-sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore-",
+      "title": "SNS platio milione za skup u Areni pred lokalne izbore",
+      "url": "https://www.cins.rs/sns-platio-milione-za-skup-u-areni-pred-lokalne-izbore/",
+      "date": "2026-05-11",
+      "datetime": "2026-05-11T15:08:58+00:00",
+      "time": "15:08",
+      "source": "CINS",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
