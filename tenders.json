@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 34000000.0,
+    "lowest": 5202.0,
+    "difference": 33994798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100892724,
+    "file": "documents/100892724_Odluka o dodeli INTERPROGRES.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 8110.0,
     "lowest": 5202.0,
     "difference": 2908.0,
@@ -53,16 +64,5 @@
     "rejection_reasons": [],
     "id": 100163802,
     "file": "documents/100163802_ODLUKA O DODELI UGOVORA - stampa racuna 2026-compressed.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 41414928.0,
-    "lowest": 4184.0,
-    "difference": 41410744.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100367006,
-    "file": "documents/100367006_Odluka o dodeli ugovora.docx"
   }
 ]
