@@ -1,5 +1,16 @@
 [
   {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 40000000.0,
+    "lowest": 4202.0,
+    "difference": 39995798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.pdf"
+  },
+  {
     "winner": null,
     "accepted": 34000000.0,
     "lowest": 5202.0,
@@ -53,16 +64,5 @@
     "rejection_reasons": [],
     "id": 100276831,
     "file": "documents/100276831_Odluka o dodeli ugovora - hrana i namirnice za pripremanje hrane, partije 3,4 i 5.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5488800.0,
-    "lowest": 2340.0,
-    "difference": 5486460.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100163802,
-    "file": "documents/100163802_ODLUKA O DODELI UGOVORA - stampa racuna 2026-compressed.pdf"
   }
 ]
