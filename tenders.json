@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 178740840.0,
+    "lowest": 2110.0,
+    "difference": 178738730.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101743996,
+    "file": "documents/101743996_Odluka o dodeli ugovora (1).pdf"
+  },
+  {
+    "winner": null,
     "accepted": 400000000.0,
     "lowest": 5202.0,
     "difference": 399994798.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 3007986800110,
     "file": "documents/3007986800110_Odluka o dodeli ugovora - hrana i namirnice za pripremanje hrane, partije 3,4 i 5.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 975000.0,
-    "lowest": 3214.0,
-    "difference": 971786.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100276831,
-    "file": "documents/100276831_Odluka o dodeli ugovora - hrana i namirnice za pripremanje hrane, partije 3,4 i 5.pdf"
   }
 ]
