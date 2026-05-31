@@ -43,6 +43,20 @@
       "priority": 100
     },
     {
+      "id": "na-hronika-10010242-uhapsen-vozac-zbog-davanja-mita-policiji",
+      "title": "AKCIJA SUZBIJANJA KORUPCIJE U PUNOM JEKU Uhapšen vozač zbog davanja mita policiji! Odbio alkotest, pa dao gas i pobegao",
+      "url": "https://www.kurir.rs/crna-hronika/10010242/uhapsen-vozac-zbog-davanja-mita-policiji",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T13:59:06+00:00",
+      "time": "13:59",
+      "source": "Kurir",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 96
+    },
+    {
       "id": "ceni-policijska-znacka-vise-nece-biti-zastita-za-kriminalce-",
       "title": "Milivojević: Kada Vučić i mafija budu razvlašćeni, policijska značka više neće biti zaštita za kriminalce",
       "url": "https://n1info.rs/vesti/milivojevic-kada-vucic-i-mafija-budu-razvlasceni-policijska-znacka-vise-nece-biti-zastita-za-kriminalce/",
@@ -71,6 +85,20 @@
       "priority": 95
     },
     {
+      "id": "pohinula-vise-od-200-povredjeno-tokom-slavlja-navijaca-psz-a",
+      "title": "STRAVIČAN BILANS HAOSA U FRANCUSKOJ! Jedan navijač mrtav, 780 uhapšenih – tinejdžer (17) završio u komi!",
+      "url": "https://www.kurir.rs/sport/fudbal/10010176/jedna-osoba-pohinula-vise-od-200-povredjeno-tokom-slavlja-navijaca-psz-a",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T12:21:31+00:00",
+      "time": "12:21",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "h-i-povredjenih-tokom-proslave-pobede-psz-a-u-ligi-sampiona-",
       "title": "Haos u Parizu: Stotine uhapšenih i povređenih tokom proslave pobede PSŽ-a u Ligi šampiona",
       "url": "https://www.danas.rs/bbc-news-serbian/haos-u-parizu-stotine-uhapsenih-i-povredjenih-tokom-proslave-pobede-psz-a-u-ligi-sampiona/",
@@ -91,34 +119,6 @@
       "date": "2026-05-31",
       "datetime": "2026-05-31T08:21:02+00:00",
       "time": "08:21",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "posle-finala-cak-416-uhapsenih-navijaci-divljali-tokom-noci-",
-      "title": "VIDEO U Parizu haos posle finala: Čak 416 uhapšenih, navijači divljali tokom noći",
-      "url": "https://nova.rs/sport/fudbal/video-u-parizu-haos-posle-finala-cak-416-uhapsenih-navijaci-divljali-tokom-noci/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T07:00:20+00:00",
-      "time": "07:00",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "400-uhapsenih-tokom-proslave-trijumfa-psz-a-u-ligi-sampiona-",
-      "title": "Haos u Parizu: Više od 400 uhapšenih tokom proslave trijumfa PSŽ-a u Ligi šampiona",
-      "url": "https://www.danas.rs/bbc-news-serbian/haos-u-parizu-vise-od-400-uhapsenih-tokom-proslave-trijumfa-psz-a-u-ligi-sampiona/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T06:30:04+00:00",
-      "time": "06:30",
       "source": "Danas",
       "category": "Хапшења",
       "summary": "",
@@ -225,13 +225,13 @@
       "priority": 72
     },
     {
-      "id": "-nita-ne-zatakava-i-da-su-osumnjieni-uhapeni-u-najbrem-roku-",
-      "title": "Dačić ponovo o slučaju Senjak: Tvrdi da policija ništa ne zataškava i da su osumnjičeni uhapšeni u najbržem roku",
-      "url": "https://nova.rs/vesti/hronika/dai-ponovo-o-sluaju-senjak-tvrdi-da-policija-nita-ne-zatakava-i-da-su-osumnjieni-uhapeni-u-najbrem-roku/",
+      "id": "fo-rs-vesti-uhapsen-muskarac-iz-nisa-nudio-policajcima-mito-",
+      "title": "Uhapšen muškarac iz Niša: Odbio da se alkotestira i nudio policajcima mito, pa pobegao",
+      "url": "https://n1info.rs/vesti/uhapsen-muskarac-iz-nisa-nudio-policajcima-mito/",
       "date": "2026-05-31",
-      "datetime": "2026-05-31T07:11:43+00:00",
-      "time": "07:11",
-      "source": "Nova",
+      "datetime": "2026-05-31T13:57:08+00:00",
+      "time": "13:57",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -259,20 +259,6 @@
       "date": "2026-05-30",
       "datetime": "2026-05-30T13:38:00+00:00",
       "time": "13:38",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-225888-policija-u-novom-sadu-uhapsila-dilera-narkotika-vest",
-      "title": "Uhapšen muškarac iz Kule: Policija pronašla različite vrste narkotika, osumnjičeni pokušao da pobegne",
-      "url": "https://www.euronews.rs/srbija/aktuelno/225888/policija-u-novom-sadu-uhapsila-dilera-narkotika/vest",
-      "date": "2026-05-29",
-      "datetime": "2026-05-29T13:08:00+00:00",
-      "time": "13:08",
       "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
@@ -309,20 +295,6 @@
       "priority": 60
     },
     {
-      "id": "avnica-poste-kod-sapca-prisvojila-oko-15-miliona-dinara-vest",
-      "title": "Upravnica pošte kod Šapca osumnjičena da je prisvojila skoro 1,5 miliona dinara",
-      "url": "https://www.euronews.rs/srbija/aktuelno/225890/upravnica-poste-kod-sapca-prisvojila-oko-15-miliona-dinara/vest",
-      "date": "2026-05-29",
-      "datetime": "2026-05-29T13:32:00+00:00",
-      "time": "13:32",
-      "source": "Euronews Serbia",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 36
-    },
-    {
       "id": "nova-rs-misljenja-dzamic-sluzenje-vazalstvo-kao-patriotizam-",
       "title": "Služenje i koruptivno vazalstvo kao patriotizam",
       "url": "https://radar.nova.rs/misljenja/dzamic-sluzenje-vazalstvo-kao-patriotizam/",
@@ -351,20 +323,6 @@
       "priority": 26
     },
     {
-      "id": "nkovic-osudio-incident-u-skoli-na-osnovu-etnicke-pripadnosti",
-      "title": "Станковић осудио инцидент у школи на основу етничке припадности",
-      "url": "https://www.politika.rs/scc/clanak/759255/stankovic-osudio-incident-u-skoli-na-osnovu-etnicke-pripadnosti",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T11:11:00+00:00",
-      "time": "11:11",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "deo-radar-forum-miodrag-majic-radovan-lazic-pravosude-forum-",
       "title": "„Nenad Stefanović je uspeo da me prevari“",
       "url": "https://radar.nova.rs/video/radar-forum/miodrag-majic-radovan-lazic-pravosude-forum/",
@@ -379,6 +337,20 @@
       "priority": 25
     },
     {
+      "id": "g-a-desni-c4-8dari-evropa-konferencija-beograd-33769491-html",
+      "title": "Okupljanje evropskih ekstremnih desničara na konferenciji u Beogradu",
+      "url": "https://www.slobodnaevropa.org/a/desni%c4%8dari-evropa-konferencija-beograd/33769491.html",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T12:26:42+00:00",
+      "time": "12:26",
+      "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji-",
       "title": "Milan Ostojić Sandokan, kriminalac iz Ćacilenda, napao studenta na Slaviji",
       "url": "https://www.krik.rs/milan-ostojic-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji/",
@@ -391,6 +363,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "nemackog-trzista-rada-nezaposlenost-pala-na-63-odsto-2cnl44j",
+      "title": "Najnoviji podaci sa nemačkog tržišta rada! Nezaposlenost pala na 6,3 odsto: Evo koliko ljudi sada prima socijalnu pomoć",
+      "url": "https://www.blic.rs/biznis/moj-novac/najnoviji-podaci-sa-nemackog-trzista-rada-nezaposlenost-pala-na-63-odsto/2cnl44j",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T13:20:44+00:00",
+      "time": "13:20",
+      "source": "Blic",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "ivse-zene-skrivena-je-od-javnosti-pep-zeli-samo-jednu-stvar-",
@@ -433,6 +419,76 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "https-n1info-rs-vesti-vucic-policija-nadleznosti-sluga-",
+      "title": "Vučić: Neću dozvoliti da se policiji oduzmu nadležnosti i da postane nečiji sluga",
+      "url": "https://n1info.rs/vesti/vucic-policija-nadleznosti-sluga/",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T13:33:09+00:00",
+      "time": "13:33",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "i-10010191-hrvatskom-influenseru-podstanarka-demolirala-stan",
+      "title": "\"Dočekalo me je kilo bubašvaba\" Influenseru Marku podstanarka demolirala stan: Ni policija nije mogla da je izbaci, a kad su joj proverili identitet - šok",
+      "url": "https://www.kurir.rs/zabava/zanimljivosti/10010191/hrvatskom-influenseru-podstanarka-demolirala-stan",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T12:57:32+00:00",
+      "time": "12:57",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-laze-mina-kostic-priznala-da-joj-je-bivsi-uzeo-stan-tpzffqt",
+      "title": "PRIZNALA DA JOJ JE BIVŠI ODUZEO STAN Pre nego što je završila u \"Lazi\", Mina Kostić šokirala priznanjem: \"Dozvolila sam da manipulišu\"",
+      "url": "https://www.blic.rs/zabava/pre-laze-mina-kostic-priznala-da-joj-je-bivsi-uzeo-stan/tpzffqt",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T12:44:21+00:00",
+      "time": "12:44",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "https-n1info-rs-vesti-zatvorena-srpska-ambulanta-u-obilicu-",
+      "title": "Zatvorena srpska ambulanta u Obiliću",
+      "url": "https://n1info.rs/vesti/zatvorena-srpska-ambulanta-u-obilicu/",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T12:33:16+00:00",
+      "time": "12:33",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-226139-kosovska-policija-zatvorila-ambulantu-u-obilicu-vest",
+      "title": "Policija u Prištini: U Obiliću slučaj nezakonitog obavljanja medicinske delatnosti",
+      "url": "https://www.euronews.rs/srbija/drustvo/226139/kosovska-policija-zatvorila-ambulantu-u-obilicu/vest",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T12:29:00+00:00",
+      "time": "12:29",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "hijatrijsku-bolnicu-pokazivala-znakove-agresivnog-ponasanja-",
@@ -547,20 +603,6 @@
       "priority": 4
     },
     {
-      "id": "udi-privedeno-zbog-nereda-posle-pobede-psz-a-u-ligi-sampiona",
-      "title": "Stotine ljudi privedeno zbog nereda posle pobede PSŽ-a u Ligi šampiona",
-      "url": "https://beta.rs/content/245622-stotine-ljudi-privedeno-zbog-nereda-posle-pobede-psz-a-u-ligi-sampiona",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T10:25:07+00:00",
-      "time": "10:25",
-      "source": "Beta",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "2-dacic-slavimo-hrabrost-i-pozrtvovanost-pripadnika-mup-vest",
       "title": "Dačić: Slavimo hrabrost i požrtvovanost pripadnika MUP-a koji svakodnevno čuvaju mir",
       "url": "https://www.euronews.rs/srbija/drustvo/226122/dacic-slavimo-hrabrost-i-pozrtvovanost-pripadnika-mup/vest",
@@ -589,20 +631,6 @@
       "priority": 4
     },
     {
-      "id": "onika-zapaljen-lokal-na-vozdovcu-policija-pronasla-kanister-",
-      "title": "Zapaljen lokal na Voždovcu, policija na licu mesta pronašla kanister: U toku potraga za napadačem",
-      "url": "https://nova.rs/vesti/hronika/zapaljen-lokal-na-vozdovcu-policija-pronasla-kanister/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T07:33:12+00:00",
-      "time": "07:33",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-slucaju-senjak-u-najbrzem-roku-policija-nista-ne-zataskava-",
       "title": "Dačić: Uhapsili smo osumnjičene u slučaju Senjak u najbržem roku, policija ništa ne zataškava",
       "url": "https://n1info.rs/vesti/dacic-uhapsili-smo-osumnjicene-u-slucaju-senjak-u-najbrzem-roku-policija-nista-ne-zataskava/",
@@ -617,20 +645,6 @@
       "priority": 4
     },
     {
-      "id": "s-rs-vesti-drustvo-dacic-nema-zataskavanja-u-slucaju-senjak-",
-      "title": "Dačić: Uhapsili smo osumnjičene u slučaju Senjak u najbržem roku, policija ništa ne zataškava",
-      "url": "https://www.danas.rs/vesti/drustvo/dacic-nema-zataskavanja-u-slucaju-senjak/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T07:09:45+00:00",
-      "time": "07:09",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "i-politika-10009887-vucic-na-svecanoj-akademiji-dan-policije",
       "title": "PREDSEDNIK VUČIĆ URUČIO MEDALJE POVODOM DANA POLICIJE I PORUČIO: Dok se god budem pitao za bilo šta, neću dozvoliti da policija bude ponižavana! Plate će rasti",
       "url": "https://www.kurir.rs/vesti/politika/10009887/vucic-na-svecanoj-akademiji-dan-policije",
@@ -638,20 +652,6 @@
       "datetime": "2026-05-31T06:02:25+00:00",
       "time": "06:02",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ija-upala-u-srpsku-ambulantu-u-obilicu-i-zapecatila-objekat-",
-      "title": "Kosovska policija upala u srpsku ambulantu u Obiliću i zapečatila objekat",
-      "url": "https://n1info.rs/vesti/kosovska-policija-upala-u-srpsku-ambulantu-u-obilicu-i-zapecatila-objekat/",
-      "date": "2026-05-30",
-      "datetime": "2026-05-30T21:13:07+00:00",
-      "time": "21:13",
-      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
