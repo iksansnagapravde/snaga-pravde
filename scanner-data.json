@@ -85,20 +85,6 @@
       "priority": 92
     },
     {
-      "id": "nisa-odbio-alkotest-pokusao-da-podmiti-policajce-pa-pobegao-",
-      "title": "Uhapšen vozač iz Niša: Odbio alkotest, pokušao da podmiti policajce, pa pobegao",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-vozac-iz-nisa-odbio-alkotest-pokusao-da-podmiti-policajce-pa-pobegao/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T15:24:54+00:00",
-      "time": "15:24",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "pijevac-optuzen-za-napad-na-novinarku-insajdera-u-cacilendu-",
       "title": "Jelenko Pijevac optužen za napad na novinarku Insajdera u Ćacilendu",
       "url": "https://www.krik.rs/jelenko-pijevac-optuzen-za-napad-na-novinarku-insajdera-u-cacilendu/",
@@ -111,20 +97,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "ar-nova-rs-ekonomija-danica-popovic-kolumna-radar-korupcija-",
-      "title": "Korupcija i inflacija, glavni motori srpskog rasta",
-      "url": "https://radar.nova.rs/ekonomija/danica-popovic-kolumna-radar-korupcija/",
-      "date": "2026-05-24",
-      "datetime": "2026-05-24T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "jotka-pretio-tuziocu-sve-si-mi-unistio-to-ne-moze-da-prodje-",
@@ -237,20 +209,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "ja-nikad-vise-osramocena-i-kriminalizovana-nego-pod-vucicem-",
-      "title": "Tepić: Policija nikad više osramoćena i kriminalizovana nego pod Vučićem",
-      "url": "https://nova.rs/vesti/politika/tepic-policija-nikad-vise-osramocena-i-kriminalizovana-nego-pod-vucicem/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T15:12:46+00:00",
-      "time": "15:12",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "fo-rs-vesti-tepic-policija-osramocena-kriminalizovana-vucic-",
@@ -547,6 +505,34 @@
       "priority": 4
     },
     {
+      "id": "12-gripeni-i-rakete-meteor-nova-snaga-ukrajine-protiv-rusije",
+      "title": "GRIPENI STIŽU U UKRAJINU, NE TREBA IM DUG ZALET! Snažne rakete Meteor prekidaju rusku ofanzivu na frontu?",
+      "url": "https://www.kurir.rs/planeta/10010212/gripeni-i-rakete-meteor-nova-snaga-ukrajine-protiv-rusije",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "245647-u-eksploziji-u-zgradi-u-mjanmaru-vise-od-45-poginulih",
+      "title": "Mjanmar: Eksplozija skladišta eksploziva, 46 žrtava",
+      "url": "https://beta.rs/content/245647-u-eksploziji-u-zgradi-u-mjanmaru-vise-od-45-poginulih",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T22:00:09+00:00",
+      "time": "22:00",
+      "source": "Beta",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "8-gradska-cistoca-beograd-obelezila-dan-otvorenih-vrata-vest",
       "title": "Dan otvorenih vrata u \"Gradskoj čistoći\": Deca uživala u druženju, učenju i vožnji",
       "url": "https://www.euronews.rs/srbija/drustvo/226178/gradska-cistoca-beograd-obelezila-dan-otvorenih-vrata/vest",
@@ -695,6 +681,20 @@
       "time": "20:10",
       "source": "Politika",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "10010446-lukasenko-upozorio-jermeniju-na-ukrajinski-scenario",
+      "title": "\"PAZITE DA VAM SE NE DOGODI UKRAJINSKI SCENARIO!\" Lukašenko poslao poruku Jermenima uoči izbora",
+      "url": "https://www.kurir.rs/planeta/10010446/lukasenko-upozorio-jermeniju-na-ukrajinski-scenario",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T20:09:10+00:00",
+      "time": "20:09",
+      "source": "Kurir",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
