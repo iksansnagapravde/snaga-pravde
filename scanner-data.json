@@ -71,18 +71,18 @@
       "priority": 95
     },
     {
-      "id": "-klan-prica-o-pocetku-najkrvavijeg-rata-balkanskog-podzemlja",
-      "title": "KAKO SU NASTALI KAVAČKI I ŠKALJARSKI KLAN: Prelomni događaj iz 2014. izazvao je raskol i tada je počeo jedan od najkrvavijih mafijaških ratova na Balkanu",
-      "url": "https://www.kurir.rs/crna-hronika/9992148/kako-su-nastali-kavacki-i-skaljarski-klan-prica-o-pocetku-najkrvavijeg-rata-balkanskog-podzemlja",
+      "id": "e-koja-gradi-americki-konzulat-u-milanu-eksploatisao-radnike",
+      "title": "Ухапшен менаџер фирме која гради амерички конзулат у Милану, експлоатисао раднике",
+      "url": "https://www.politika.rs/scc/clanak/759313/uhapsen-menadzer-firme-koja-gradi-americki-konzulat-u-milanu-eksploatisao-radnike",
       "date": "2026-05-31",
-      "datetime": "2026-05-31T11:09:49+00:00",
-      "time": "11:09",
-      "source": "Kurir",
-      "category": "Организовани криминал",
+      "datetime": "2026-05-31T16:50:00+00:00",
+      "time": "16:50",
+      "source": "Politika",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 95
+      "priority": 92
     },
     {
       "id": "lija-uhapsen-zbog-pokusaja-podmicivanja-saobracajne-policije",
@@ -379,6 +379,20 @@
       "priority": 26
     },
     {
+      "id": "ni-izbori-ili-cemo-sacuvati-drzavu-ili-ce-nas-vratiti-unazad",
+      "title": "Вучевић: Судбоносни избори - или ћемо сачувати државу или ће нас вратити уназад",
+      "url": "https://www.politika.rs/scc/clanak/759309/vucevic-sudbonosni-izbori-ili-cemo-sacuvati-drzavu-ili-ce-nas-vratiti-unazad",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T16:23:00+00:00",
+      "time": "16:23",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "deo-radar-forum-miodrag-majic-radovan-lazic-pravosude-forum-",
       "title": "„Nenad Stefanović je uspeo da me prevari“",
       "url": "https://radar.nova.rs/video/radar-forum/miodrag-majic-radovan-lazic-pravosude-forum/",
@@ -435,20 +449,6 @@
       "priority": 8
     },
     {
-      "id": "ivse-zene-skrivena-je-od-javnosti-pep-zeli-samo-jednu-stvar-",
-      "title": "Gvardiola kupuje skupocenu vilu od 16 miliona evra na 100 metara od bivše žene: Skrivena je od javnosti, Pep želi samo jednu stvar",
-      "url": "https://nova.rs/sport/fudbal/gvardiola-kupuje-skupocenu-vilu-od-16-miliona-evra-na-100-metara-od-bivse-zene-skrivena-je-od-javnosti-pep-zeli-samo-jednu-stvar/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T10:37:48+00:00",
-      "time": "10:37",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "nova-rs-ekonomija-ccecc-ostetio-budzet-za-30-miliona-dinara-",
       "title": "Kineski CCECC za samo mesec dana oštetio srpski budžet za 30 miliona dinara",
       "url": "https://radar.nova.rs/ekonomija/ccecc-ostetio-budzet-za-30-miliona-dinara/",
@@ -477,12 +477,40 @@
       "priority": 8
     },
     {
+      "id": "a-u-akva-parku-mladic-se-sudario-na-toboganu-pa-umro-rwx5y48",
+      "title": "NEZAPAMĆENA TRAGEDIJA U AKVA-PARKU! Zabava se pretvorila u horor: Mladić (25) se sudario s nekoliko ljudi na toboganu i PREMINUO",
+      "url": "https://www.blic.rs/vesti/svet/nezapamcena-tragedija-u-akva-parku-mladic-se-sudario-na-toboganu-pa-umro/rwx5y48",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T17:25:11+00:00",
+      "time": "17:25",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "https-n1info-rs-vesti-dan-policije-korupcija-skandal-",
+      "title": "Dan policije iza kulisa korupcije i skandala: \"Koja to policija laže da je građanin umro prirodnom smrću, a on umro od batina\"",
+      "url": "https://n1info.rs/vesti/dan-policije-korupcija-skandal/",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T17:09:43+00:00",
+      "time": "17:09",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "cija-proverava-upotrebu-sile-nad-trudnicom-i-njenim-suprugom",
       "title": "Узнемирујући снимак из Холандије: полиција проверава употребу силе над трудницом и њеним супругом",
-      "url": "https://www.politika.rs/scc/clanak/759307/uznemirujuci-snimak-iz-holandije-policija-proverava-upotrebu-sile-nad-trudnicom-i-njenim-suprugom",
+      "url": "https://www.politika.rs/scc/clanak/759315/uznemirujuci-snimak-iz-holandije-policija-proverava-upotrebu-sile-nad-trudnicom-i-njenim-suprugom",
       "date": "2026-05-31",
-      "datetime": "2026-05-31T16:12:00+00:00",
-      "time": "16:12",
+      "datetime": "2026-05-31T16:55:00+00:00",
+      "time": "16:55",
       "source": "Politika",
       "category": "Полиција",
       "summary": "",
@@ -589,34 +617,6 @@
       "priority": 4
     },
     {
-      "id": "hijatrijsku-bolnicu-pokazivala-znakove-agresivnog-ponasanja-",
-      "title": "Minu Kostić policija dovela u psihijatrijsku bolnicu: Pokazivala znakove agresivnog ponašanja",
-      "url": "https://nova.rs/zabava/showbiz/minu-kostic-policija-dovela-u-psihijatrijsku-bolnicu-pokazivala-znakove-agresivnog-ponasanja/",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T11:48:42+00:00",
-      "time": "11:48",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "minu-kostic-policija-dovela-u-psihijatrijsku-bolnicu-w5nwx2w",
-      "title": "MINU KOSTIĆ POLICIJA DOVELA U PSIHIJATRIJSKU BOLNICU Pevačica pokazivala znakove agresivnog ponašanja",
-      "url": "https://www.blic.rs/zabava/minu-kostic-policija-dovela-u-psihijatrijsku-bolnicu/w5nwx2w",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T11:39:43+00:00",
-      "time": "11:39",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "0139-minu-kostic-policija-smestila-u-psihijatrijsku-ustanovu",
       "title": "MINU KOSTIĆ POLICIJA DOVELA U PSIHIJATRIJSKU BOLNICU! Pevačica pokazuje znakove agresivnog ponašanja",
       "url": "https://www.kurir.rs/stars/10010139/minu-kostic-policija-smestila-u-psihijatrijsku-ustanovu",
@@ -673,20 +673,6 @@
       "priority": 4
     },
     {
-      "id": "esti-politika-10010091-vucic-o-pritiscima-na-srpsku-policiju",
-      "title": "LJUDI U VRHU MUP DOBRO ZNAJU DA POSTOJE TAKVI POKUŠAJI... Predsednik Vučić jasno poručio - Neću dozvoliti da policija bude ponižena",
-      "url": "https://www.kurir.rs/vesti/politika/10010091/vucic-o-pritiscima-na-srpsku-policiju",
-      "date": "2026-05-31",
-      "datetime": "2026-05-31T10:36:09+00:00",
-      "time": "10:36",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "da-se-policiji-oduzmu-nadleznosti-i-da-postane-neciji-sluga-",
       "title": "Vučić: Neću dozvoliti da se policiji oduzmu nadležnosti i da postane nečiji sluga",
       "url": "https://www.danas.rs/vesti/drustvo/vucic-necu-dozvoliti-da-se-policiji-oduzmu-nadleznosti-i-da-postane-neciji-sluga/",
@@ -694,6 +680,20 @@
       "datetime": "2026-05-31T10:35:53+00:00",
       "time": "10:35",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "2-dacic-slavimo-hrabrost-i-pozrtvovanost-pripadnika-mup-vest",
+      "title": "Dačić: Slavimo hrabrost i požrtvovanost pripadnika MUP-a koji svakodnevno čuvaju mir",
+      "url": "https://www.euronews.rs/srbija/drustvo/226122/dacic-slavimo-hrabrost-i-pozrtvovanost-pripadnika-mup/vest",
+      "date": "2026-05-31",
+      "datetime": "2026-05-31T09:53:00+00:00",
+      "time": "09:53",
+      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
