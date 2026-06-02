@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "com-vesti-vulin-zakon-o-drzavljanstvu-eu-srbija-odnosi-viza-",
-      "title": "Može li „Vulinovo državljanstvo“ da ugrozi bezvizni režim Srbije",
-      "url": "https://vreme.com/vesti/vulin-zakon-o-drzavljanstvu-eu-srbija-odnosi-viza/",
-      "date": "2026-06-01",
-      "datetime": "2026-06-01T18:00:28+00:00",
-      "time": "18:00",
-      "source": "Vreme",
-      "category": "Социјална права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "privatizacije-sapicu-rodjendanska-torta-u-obliku-trolejbusa-",
       "title": "Protest radnika GSP zbog privatizacije, Šapiću rođendanska torta u obliku trolejbusa",
       "url": "https://www.ktv.rs/2026/06/01/protest-radnika-gsp-zbog-privatizacije-sapicu-rodjendanska-torta-u-obliku-trolejbusa/",
@@ -379,20 +365,6 @@
       "priority": 66
     },
     {
-      "id": "https-vreme-com-svet-borba-za-jermeniju-hoce-li-i-oni-u-eu-",
-      "title": "Borba za Jermeniju: Hoće li i oni u EU",
-      "url": "https://vreme.com/svet/borba-za-jermeniju-hoce-li-i-oni-u-eu/",
-      "date": "2026-06-01",
-      "datetime": "2026-06-01T13:51:17+00:00",
-      "time": "13:51",
-      "source": "Vreme",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "s-www-danas-rs-vesti-ekonomija-srce-nabavka-30-novih-vozova-",
       "title": "SRCE: Nabavka 30 novih vozova – paravan za koruptivne poslove i politički kontrolisane tendere",
       "url": "https://www.danas.rs/vesti/ekonomija/srce-nabavka-30-novih-vozova/",
@@ -617,20 +589,6 @@
       "priority": 4
     },
     {
-      "id": "1287-eksplodirala-bomba-iz-drugog-svetskog-rata-u-indoneziji",
-      "title": "EKSPLODIRALA BOMBA IZ DRUGOG SVETSKOG RATA, IMA MRTVIH! Iz ruševina izvučeno telo dečaka, policija traga za nestalima, UNIŠTENE su i KUĆE! (VIDEO)",
-      "url": "https://www.kurir.rs/planeta/10011287/eksplodirala-bomba-iz-drugog-svetskog-rata-u-indoneziji",
-      "date": "2026-06-01",
-      "datetime": "2026-06-01T15:54:12+00:00",
-      "time": "15:54",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "anas-do-7-juna-pojacana-kontrola-vozaca-dvotockasa-u-srbiji-",
       "title": "Od danas do 7. juna pojačana kontrola vozača dvotočkaša u Srbiji",
       "url": "https://www.ktv.rs/2026/06/01/od-danas-do-7-juna-pojacana-kontrola-vozaca-dvotockasa-u-srbiji/",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "n-ne-verujem-da-ce-vlada-srbije-uvesti-vize-gradanima-rusije",
+      "title": "Вулин: Не верујем да ће Влада Србије увести визе грађанима Русије",
+      "url": "https://www.politika.rs/scc/clanak/759691/vulin-ne-verujem-da-ce-vlada-srbije-uvesti-vize-gradanima-rusije",
+      "date": "2026-06-01",
+      "datetime": "2026-06-01T23:39:00+00:00",
+      "time": "23:39",
+      "source": "Politika",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "dodu-na-skup-u-beogradu-27-juna-bice-predstavljene-nove-mere",
+      "title": "Александар Вучић: Позивам све да дођу на скуп у Београду 27. јуна, биће представљене нове мере",
+      "url": "https://www.politika.rs/scc/clanak/759690/aleksandar-vucic-pozivam-sve-da-dodu-na-skup-u-beogradu-27-juna-bice-predstavljene-nove-mere",
+      "date": "2026-06-01",
+      "datetime": "2026-06-01T23:09:00+00:00",
+      "time": "23:09",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ala-toskana-poznati-su-po-picu-koje-se-nekad-sluzilo-ln74r79",
+      "title": "Na korak od Beograda krije se \"mala Toskana\": Poznati su po piću koje se nekad služilo na evropskim dvorovima",
+      "url": "https://www.blic.rs/biznis/after-hour/na-korak-od-beograda-krije-se-mala-toskana-poznati-su-po-picu-koje-se-nekad-sluzilo/ln74r79",
+      "date": "2026-06-01",
+      "datetime": "2026-06-01T22:57:00+00:00",
+      "time": "22:57",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
