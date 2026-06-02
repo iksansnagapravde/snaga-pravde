@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 5689706.79,
+    "lowest": 5202.0,
+    "difference": 5684504.79,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100001079,
+    "file": "documents/100001079_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2280951.6,
+    "lowest": 4202.0,
+    "difference": 2276749.6,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107379803,
+    "file": "documents/107379803_Odluka o dodeli Ugovora - JN 5.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 4000000.0,
     "lowest": 6202.0,
     "difference": 3993798.0,
@@ -75,27 +97,5 @@
     "rejection_reasons": [],
     "id": 103388756,
     "file": "documents/103388756_Odluka o dodeli ugovora jn U-27-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 270000.0,
-    "lowest": 5202.0,
-    "difference": 264798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101727796,
-    "file": "documents/101727796_Odluka o dodeli ugovora -antivitrus.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 833333.33,
-    "lowest": 5202.0,
-    "difference": 828131.33,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102608229,
-    "file": "documents/102608229_Odluka o dodeli ugovora.pdf"
   }
 ]
