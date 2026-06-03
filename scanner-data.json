@@ -113,20 +113,6 @@
       "priority": 94
     },
     {
-      "id": "rna-hronika-10012162-drogirani-nemac-pravio-haos-po-beogradu",
-      "title": "DROGIRANI NEMAC (27) PRAVIO HAOS PO BEOGRADU! Polugo vitlao nožem, razbio staklo, pa uhapšen",
-      "url": "https://www.kurir.rs/crna-hronika/10012162/drogirani-nemac-pravio-haos-po-beogradu",
-      "date": "2026-06-02",
-      "datetime": "2026-06-02T15:15:16+00:00",
-      "time": "15:15",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "9-uhapsena-dvojica-policajaca-zbog-zloupotrebe-polozaja-vest",
       "title": "Uhapšeni policajci osumnjičeni da su jednom licu omogućili ponovnu nabavku oružja",
       "url": "https://www.euronews.rs/srbija/aktuelno/226449/uhapsena-dvojica-policajaca-zbog-zloupotrebe-polozaja/vest",
@@ -281,20 +267,6 @@
       "priority": 72
     },
     {
-      "id": "-postupka-protiv-maloletnika-zbog-paljenja-madjarske-zastave",
-      "title": "PALILI MAĐARSKU ZASTAVU NA ISPRAĆAJU MATURANATA Skandal u Subotici: Tužilaštvo traži postupak protiv dvojice maloletnika zbog povreda ugleda strane države!",
-      "url": "https://www.kurir.rs/crna-hronika/10012174/subotica-pokretanje-postupka-protiv-maloletnika-zbog-paljenja-madjarske-zastave",
-      "date": "2026-06-02",
-      "datetime": "2026-06-02T15:28:52+00:00",
-      "time": "15:28",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ttps-www-rts-rs-vesti-hronika-5963420-slucaj-senjak-vjt-html",
       "title": "ВЈТ о случају \"Сењак\": Изношењем детаља истрага се угрожава",
       "url": "https://www.rts.rs/vesti/hronika/5963420/slucaj-senjak-vjt.html",
@@ -335,20 +307,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "https-www-politika-rs-scc-clanak-759921-mitovi-stari-i-novi",
-      "title": "Митови – стари и нови",
-      "url": "https://www.politika.rs/scc/clanak/759921/mitovi-stari-i-novi",
-      "date": "2026-06-02",
-      "datetime": "2026-06-02T20:01:00+00:00",
-      "time": "20:01",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "nova-rs-misljenja-dzamic-sluzenje-vazalstvo-kao-patriotizam-",
@@ -547,6 +505,20 @@
       "priority": 8
     },
     {
+      "id": "a-pronasla-improvizovani-migrantski-kamp-privedeno-pet-osoba",
+      "title": "Beogradska policija pronašla improvizovani migrantski kamp, privedeno pet osoba",
+      "url": "https://beta.rs/content/245781-beogradska-policija-pronasla-improvizovani-migrantski-kamp--privedeno-pet-osoba",
+      "date": "2026-06-02",
+      "datetime": "2026-06-02T22:25:08+00:00",
+      "time": "22:25",
+      "source": "Beta",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ronasla-improvizovani-kamp-sa-migrantima-u-okolini-beograda-",
       "title": "Policija pronašla improvizovani kamp sa migrantima u okolini Beograda",
       "url": "https://nova.rs/vesti/hronika/policija-pronasla-improvizovani-kamp-sa-migrantima-u-okolini-beograda/",
@@ -610,6 +582,20 @@
       "datetime": "2026-06-02T20:42:39+00:00",
       "time": "20:42",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "2315-talacka-situacija-u-dortmundu-srbin-drzi-decu-kao-taoce",
+      "title": "UZEO 3 ĆERKE ZA TAOCE! Policija objavila detalje o Srbinu (51) zbog kog je policija u Dortmundu satima na nogama",
+      "url": "https://www.kurir.rs/crna-hronika/10012315/talacka-situacija-u-dortmundu-srbin-drzi-decu-kao-taoce",
+      "date": "2026-06-02",
+      "datetime": "2026-06-02T19:41:11+00:00",
+      "time": "19:41",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -687,18 +673,32 @@
       "priority": 4
     },
     {
-      "id": "r-rs-stars-rijaliti-10012160-anastasijin-drug-o-bori-santani",
-      "title": "BORU SANTANU ČEKA 10 TUŽBI! Anastasijin drug zgoržen njihovim odnosom i uvredama: Reagovaće advokat i policija...",
-      "url": "https://www.kurir.rs/stars/rijaliti/10012160/anastasijin-drug-o-bori-santani",
-      "date": "2026-06-02",
-      "datetime": "2026-06-02T15:14:01+00:00",
-      "time": "15:14",
-      "source": "Kurir",
+      "id": "og-nasilja-u-valjevu-sta-pise-u-belesci-zastitnika-gradjana-",
+      "title": "Slučaj policijskog nasilja u Valjevu: Šta piše u belešci Zaštitnika građana",
+      "url": "https://www.cins.rs/slucaj-policijskog-nasilja-u-valjevu-sta-pise-u-belesci-zastitnika-gradjana/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T07:15:23+00:00",
+      "time": "07:15",
+      "source": "CINS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "rajini-se-javljaju-ruske-porodice-koje-traze-nestale-vojnike",
+      "title": "Украјини се јављају руске породице, које траже нестале војнике",
+      "url": "https://www.politika.rs/scc/clanak/759964/ukrajini-se-javljaju-ruske-porodice-koje-traze-nestale-vojnike",
+      "date": "2026-06-02",
+      "datetime": "2026-06-02T23:19:00+00:00",
+      "time": "23:19",
+      "source": "Politika",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
