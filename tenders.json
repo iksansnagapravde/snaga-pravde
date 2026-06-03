@@ -1,1 +1,90 @@
-[]
+[
+  {
+    "winner": null,
+    "accepted": 16563689.74,
+    "lowest": 3230.0,
+    "difference": 16560459.74,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102223168,
+    "file": "documents/102223168_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 4614831.78,
+    "lowest": 1313.0,
+    "difference": 4613518.78,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103854737,
+    "file": "documents/103854737_ODLUKA O DODELI UGOVORA -ZAVRŠETAK IZGRADNjE VODOVODA ALjINOVICI.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 342429360.0,
+    "lowest": 1920.0,
+    "difference": 342427440.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100139699,
+    "file": "documents/100139699_Odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6202.0,
+    "lowest": 2202.0,
+    "difference": 4000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103283883,
+    "file": "documents/103283883_ODLUKA 142-26-D PU NS1901.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 2500000.0,
+    "lowest": 2210.0,
+    "difference": 2497790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112342396,
+    "file": "documents/112342396_Odluka o dodelii OP-U-15.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 14249.2,
+    "lowest": 1202.0,
+    "difference": 13047.2,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100007569,
+    "file": "documents/100007569_Odluka.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 81000.0,
+    "lowest": 2210.0,
+    "difference": 78790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107035738,
+    "file": "documents/107035738_9. Odluka o dodeli OP-D-12-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6202.0,
+    "lowest": 2370.0,
+    "difference": 3832.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104989776,
+    "file": "documents/104989776_Odluka o dodeli.docx"
+  }
+]
