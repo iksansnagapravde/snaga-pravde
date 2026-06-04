@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 5907000.0,
+    "lowest": 4202.0,
+    "difference": 5902798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100001958,
+    "file": "documents/100001958_odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 20032449.84,
+    "lowest": 6202.0,
+    "difference": 20026247.84,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113098846,
+    "file": "documents/113098846_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 8400000.0,
+    "lowest": 3108.0,
+    "difference": 8396892.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108562457,
+    "file": "documents/108562457_Odluka o dodeli hemikalije.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1800000.0,
     "lowest": 6202.0,
     "difference": 1793798.0,
@@ -31,27 +64,5 @@
     "rejection_reasons": [],
     "id": 100143422,
     "file": "documents/100143422_14 Odlka o dodeli ugovora P1.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 6270950.0,
-    "lowest": 1920.0,
-    "difference": 6269030.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100572192,
-    "file": "documents/100572192_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5000000.0,
-    "lowest": 5202.0,
-    "difference": 4994798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100211266,
-    "file": "documents/100211266_Odluka o dodeli JN5.pdf"
   }
 ]
