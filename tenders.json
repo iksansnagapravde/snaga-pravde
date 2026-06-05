@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 2240000.0,
+    "lowest": 6202.0,
+    "difference": 2233798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105951014,
+    "file": "documents/105951014_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "MIKAJILO GAJIC PR",
+    "accepted": 3000.0,
+    "lowest": 1099.0,
+    "difference": 1901.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104814333,
+    "file": "documents/104814333_Odlukao o dodeli ugovora JN 2-2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1660902.0,
     "lowest": 4202.0,
     "difference": 1656700.0,
@@ -64,16 +86,5 @@
     "rejection_reasons": [],
     "id": 100249211,
     "file": "documents/100249211_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 173183.0,
-    "lowest": 6202.0,
-    "difference": 166981.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104696754,
-    "file": "documents/104696754_Odluka o dodeli.docx"
   }
 ]
