@@ -15,20 +15,6 @@
       "priority": 166
     },
     {
-      "id": "eti-kazna-od-300-evra-a-mozda-i-hapsenje-po-hitnom-postupku-",
-      "title": "Grčka upozorava i pooštrava mere: Za ovo turistima preti kazna od 300 evra, a možda i hapšenje po hitnom postupku",
-      "url": "https://nova.rs/magazin/putovanja/grcka-upozorava-i-poostrava-mere-za-ovo-turistima-preti-kazna-od-300-evra-a-mozda-i-hapsenje-po-hitnom-postupku/",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T11:53:36+00:00",
-      "time": "11:53",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 126
-    },
-    {
       "id": "rcegovina-10014799-oglasila-se-policija-o-pozaru-u-banjaluci",
       "title": "OGLASILA SE POLICIJA O POŽARU U BANJALUCI! Jedno dete stradalo, drugo koje je zadobilo teške telesne povrede HITNO prebačeno u klinički centar! (FOTO)",
       "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10014799/oglasila-se-policija-o-pozaru-u-banjaluci",
@@ -55,6 +41,20 @@
       "breaking": false,
       "alert": true,
       "priority": 98
+    },
+    {
+      "id": "ova-rs-vesti-hronika-serija-pljacki-supermarketa-u-beogradu-",
+      "title": "Serija pljački supermarketa u Beogradu: Uhapšen muškarac, određeno mu zadržavanje",
+      "url": "https://nova.rs/vesti/hronika/serija-pljacki-supermarketa-u-beogradu/",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:29:16+00:00",
+      "time": "16:29",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "ucicev-advokat-branilac-vlasnika-restorana-u-slucaju-senjak-",
@@ -211,6 +211,20 @@
       "priority": 92
     },
     {
+      "id": "s-www-danas-rs-svet-region-istrage-bih-skaj-anom-aplikacije-",
+      "title": "Istrage protiv 30 pripadnika bezbednosnih agencija BiH zbog dokaza iz aplikacija Skaj i Anom",
+      "url": "https://www.danas.rs/svet/region/istrage-bih-skaj-anom-aplikacije/",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:18:47+00:00",
+      "time": "16:18",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "26682-hapsenje-zbog-pranja-novca-p-g-uhapsen-u-beogradu-vest",
       "title": "Mladić uhapšten zbog pranja novca u Beogradu: Sumnjiči da je imao desetine hiljada evra  iz kriminalnih aktivnosti",
       "url": "https://www.euronews.rs/srbija/aktuelno/226682/hapsenje-zbog-pranja-novca-p-g-uhapsen-u-beogradu/vest",
@@ -237,6 +251,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "rts-rs-vesti-hronika-5967074-hapsenje-kradja-prodavnice-html",
+      "title": "Београђанин ухапшен због више пљачки продавница два трговинска ланца",
+      "url": "https://www.rts.rs/vesti/hronika/5967074/hapsenje-kradja-prodavnice.html",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:09:57+00:00",
+      "time": "16:09",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 78
     },
     {
       "id": "enuta-istraga-protiv-osumnjicenog-za-ubistvo-dede-u-beogradu",
@@ -274,20 +302,6 @@
       "datetime": "2026-06-05T13:44:41+00:00",
       "time": "13:44",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "https-www-rts-rs-vesti-hronika-5966442-hapsenje-ubistvo-html",
-      "title": "Ухапшен осумњичени за убиство мушкарца у Београду",
-      "url": "https://www.rts.rs/vesti/hronika/5966442/hapsenje-ubistvo.html",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T09:30:41+00:00",
-      "time": "09:30",
-      "source": "RTS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -337,20 +351,6 @@
       "priority": 66
     },
     {
-      "id": "-savskom-vencu-lede-krv-mladic-ubio-dedu-na-spavanju-p3v80mt",
-      "title": "TESARSKOM SEKIROM UBIO DEDU (92) NA SPAVANJU Najnoviji detalji zločina na Savskom vencu LEDE KRV!",
-      "url": "https://www.blic.rs/vesti/hronika/najnoviji-detalji-ubistva-na-savskom-vencu-lede-krv-mladic-ubio-dedu-na-spavanju/p3v80mt",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T11:38:01+00:00",
-      "time": "11:38",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "sumnjiceni-policajci-saslusani-zbog-ubistva-u-restoranu-vest",
       "title": "Tužilaštvo traži pritvor za dva policajca osumnjičena u okviru istrage za ubistvo u restoranu na Senjaku",
       "url": "https://www.euronews.rs/srbija/aktuelno/226853/osumnjiceni-policajci-saslusani-zbog-ubistva-u-restoranu/vest",
@@ -365,22 +365,8 @@
       "priority": 66
     },
     {
-      "id": "rtu-na-hrt-za-dom-spremni-je-sada-i-drzavni-i-verski-cgzx3bm",
-      "title": "Orešković o emitovanju Tompsonovog koncerta na HRT: \"Za dom spremni\" je sada i državni i verski pozdrav",
-      "url": "https://www.blic.rs/vesti/svet/oreskovic-o-tompsonovom-koncertu-na-hrt-za-dom-spremni-je-sada-i-drzavni-i-verski/cgzx3bm",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T12:11:16+00:00",
-      "time": "12:11",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "lanac-pa-uz-pretnju-pistoljem-uzeo-17-miliona-dinara-ej6qkzx",
-      "title": "ORUŽANA PLJAČKA U BEOGRADU Razbojnik upadao u prodavnice, pa uz pretnju pištoljem ukrao 1.7 miliona",
+      "title": "ORUŽANA PLJAČKA U BEOGRADU Razbojnik upadao u prodavnice, pa uz pretnju pištoljem ukrao 1,7 miliona",
       "url": "https://www.blic.rs/vesti/hronika/beogradjanin-upao-u-trgovinski-lanac-pa-uz-pretnju-pistoljem-uzeo-17-miliona-dinara/ej6qkzx",
       "date": "2026-06-05",
       "datetime": "2026-06-05T15:18:02+00:00",
@@ -407,18 +393,18 @@
       "priority": 30
     },
     {
-      "id": "odnaevropa-org-a-vucic-tivat-deportovana-grupa-33772759-html",
-      "title": "Vučić: Deportovani iz Crne Gore hteli da razvuku banere 'Srbija pobeđuje', to je bila pogrešna odluka",
-      "url": "https://www.slobodnaevropa.org/a/vucic-tivat-deportovana-grupa/33772759.html",
-      "date": "2026-06-04",
-      "datetime": "2026-06-04T16:38:52+00:00",
-      "time": "16:38",
-      "source": "RSE Balkan",
-      "category": "Криминал",
+      "id": "227030-trajkovicu-odreden-pritvor-do-30-dana-u-pristini-vest",
+      "title": "Aleksandru Trajkoviću određen jednomesečni pritvor",
+      "url": "https://www.euronews.rs/srbija/aktuelno/227030/trajkovicu-odreden-pritvor-do-30-dana-u-pristini/vest",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:39:00+00:00",
+      "time": "16:39",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 28
+      "priority": 26
     },
     {
       "id": "10014639-kako-je-lopov-iskoristio-robotaksi-za-beg-od-pravde",
@@ -461,6 +447,48 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "stene-imigracione-mere-trampove-administracije-za-39-zemalja",
+      "title": "​Поништене имиграционе мере Трампове администрације за 39 земаља",
+      "url": "https://www.politika.rs/scc/clanak/760795/ponistene-imigracione-mere-trampove-administracije-za-39-zemalja",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:44:00+00:00",
+      "time": "16:44",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "rme-mora-da-sprovede-pravosudje-rem-izbori-spoljna-politika-",
+      "title": "Fon der Lajen: Srbija zna koje reforme mora da sprovede – pravosuđe, REM, izbori, spoljna politika",
+      "url": "https://www.danas.rs/vesti/politika/fon-der-lajen-srbija-zna-koje-reforme-mora-da-sprovede-pravosudje-rem-izbori-spoljna-politika/",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:10:49+00:00",
+      "time": "16:10",
+      "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "forme-mora-da-sprovede-pravosude-rem-izbori-spoljna-politika",
+      "title": "Fon der Lajen: Srbija zna koje reforme mora da sprovede - pravosuđe, REM, izbori, spoljna politika",
+      "url": "https://beta.rs/content/246022-fon-der-lajen-srbija-zna-koje-reforme-mora-da-sprovede--pravosude-rem-izbori-spoljna-politika",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T16:10:09+00:00",
+      "time": "16:10",
+      "source": "Beta",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "ova-rs-politika-nezakonit-hobi-predsednika-srbije-pravosude-",
@@ -511,6 +539,20 @@
       "date": "2026-06-05",
       "datetime": "2026-06-05T11:34:48+00:00",
       "time": "11:34",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "4710-bane-bumbar-bio-ljut-na-sarmu-jer-nije-upisao-akademiju",
+      "title": "Čuveni glumac bio ljut na Sarmu jer je izabrao kriminal umesto glume: \"Uvek ću pamtiti šta mi je rekao\"",
+      "url": "https://www.kurir.rs/zabava/kultura/10014710/bane-bumbar-bio-ljut-na-sarmu-jer-nije-upisao-akademiju",
+      "date": "2026-06-05",
+      "datetime": "2026-06-05T10:15:24+00:00",
+      "time": "10:15",
       "source": "Kurir",
       "category": "Криминал",
       "summary": "",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "to-mu-je-policija-pronasla-236-kutija-sa-sportskim-patikama-",
-      "title": "Muškarac završio u pritvoru nakon što mu je policija pronašla 236 kutija sa sportskim patikama",
-      "url": "https://nova.rs/vesti/hronika/muskarac-zavrsio-u-pritvoru-nakon-sto-mu-je-policija-pronasla-236-kutija-sa-sportskim-patikama/",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T14:19:39+00:00",
-      "time": "14:19",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-05-petar-boskovic-mi-smo-se-vise-nego-vratili-u-devedesete-",
-      "title": "Petar Bošković – Mi smo se više nego vratili u devedesete",
-      "url": "https://www.ktv.rs/2026/06/05/petar-boskovic-mi-smo-se-vise-nego-vratili-u-devedesete/",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T14:06:34+00:00",
-      "time": "14:06",
-      "source": "KTV",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "a-policija-upala-u-lokal-i-kucu-aleksandra-trajkovica-na-kim",
-      "title": "TZV. KOSOVSKA POLICIJA TRETRESLA LOKAL I KUĆU ALEKSANDRA TRAJKOVIĆA! Petković: Rašić i Kurti nervozni pred izbore,novi pritisak na srpski narod",
-      "url": "https://www.kurir.rs/vesti/politika/10014742/tzv-kosovska-policija-upala-u-lokal-i-kucu-aleksandra-trajkovica-na-kim",
-      "date": "2026-06-05",
-      "datetime": "2026-06-05T13:15:19+00:00",
-      "time": "13:15",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
