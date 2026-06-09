@@ -1,79 +1,101 @@
 [
   {
-    "winner": null,
-    "accepted": 1375000.0,
-    "lowest": 6202.0,
-    "difference": 1368798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 115557063,
-    "file": "documents/115557063_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 11919647.5,
-    "lowest": 2363.0,
-    "difference": 11917284.5,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 111816022,
-    "file": "documents/111816022_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1559868.0,
-    "lowest": 6202.0,
-    "difference": 1553666.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112295021,
-    "file": "documents/112295021_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2463000.0,
+    "winner": "Digital Archiving Solutions doo",
+    "accepted": 1550000.0,
     "lowest": 5202.0,
-    "difference": 2457798.0,
+    "difference": 1544798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111174930,
-    "file": "documents/111174930_ODLUKA PARTIJA 1.docx"
+    "id": 106838925,
+    "file": "documents/106838925_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 5500000.0,
-    "lowest": 3202.0,
-    "difference": 5496798.0,
+    "accepted": 50000000.0,
+    "lowest": 1920.0,
+    "difference": 49998080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111125956,
-    "file": "documents/111125956_Odluka Partija 2.pdf"
+    "id": 100992478,
+    "file": "documents/100992478_Odluka o dodeli ugovora za JN 6937.pdf"
   },
   {
     "winner": null,
-    "accepted": 2463000.0,
-    "lowest": 1115.0,
-    "difference": 2461885.0,
+    "accepted": 27180.0,
+    "lowest": 4202.0,
+    "difference": 22978.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 113921325,
-    "file": "documents/113921325_Odluka Partija 4.pdf"
+    "id": 100377655,
+    "file": "documents/100377655_133 O-95.pdf"
   },
   {
     "winner": null,
-    "accepted": 2463000.0,
-    "lowest": 3202.0,
-    "difference": 2459798.0,
+    "accepted": 253273.76,
+    "lowest": 4202.0,
+    "difference": 249071.76,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107620084,
-    "file": "documents/107620084_Odluka Partija 7.pdf"
+    "id": 104646704,
+    "file": "documents/104646704_132 O-95.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 200000000.0,
+    "lowest": 2370.0,
+    "difference": 199997630.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110031484,
+    "file": "documents/110031484_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 36835.0,
+    "lowest": 2202.0,
+    "difference": 34633.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100172240,
+    "file": "documents/100172240_432 O-181.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6591079.32,
+    "lowest": 3193.0,
+    "difference": 6587886.32,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100057630,
+    "file": "documents/100057630_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 200000000.0,
+    "lowest": 2370.0,
+    "difference": 199997630.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100367006,
+    "file": "documents/100367006_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 4202.0,
+    "lowest": 2202.0,
+    "difference": 2000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109780192,
+    "file": "documents/109780192_440 O-181.pdf"
   }
 ]
