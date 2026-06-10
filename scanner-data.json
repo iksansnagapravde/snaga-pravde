@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "-poruka-studenata-posle-odluke-tuzilastva-o-veselinu-milicu-",
-      "title": "\"Srbija ili mafija. Ti biraš“: Nova poruka studenata posle odluke tužilaštva o Veselinu Miliću",
-      "url": "https://nova.rs/vesti/hronika/srbija-ili-mafija-ti-biras-nova-poruka-studenata-posle-odluke-tuzilastva-o-veselinu-milicu/",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T15:46:47+00:00",
-      "time": "15:46",
-      "source": "Nova",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 101
-    },
-    {
       "id": "s-proteinske-plocice-se-povlace-sa-trzista-u-zagrebu-92p76kg",
       "title": "OVA ČOKOLADICA SE HITNO POVLAČI SA TRŽIŠTA Dve stvari NISU OZNAČENE na proizvodu, a opasne su po zdravlje",
       "url": "https://www.blic.rs/biznis/proteinske-plocice-se-povlace-sa-trzista-u-zagrebu/92p76kg",
@@ -69,20 +55,6 @@
       "breaking": false,
       "alert": true,
       "priority": 96
-    },
-    {
-      "id": "roko-uhapseno-11-osumnjicenih-za-medunarodnu-trgovinu-drogom",
-      "title": "Мароко: Ухапшено 11 осумњичених за међународну трговину дрогом",
-      "url": "https://www.politika.rs/scc/clanak/761871/maroko-uhapseno-11-osumnjicenih-za-medunarodnu-trgovinu-drogom",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T22:39:00+00:00",
-      "time": "22:39",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
     },
     {
       "id": "227517-uhapsen-beogradanin-zbog-krijumcarenja-migranata-vest",
@@ -281,12 +253,12 @@
       "priority": 70
     },
     {
-      "id": "izu-dokaza-o-odbacivanju-dela-krivicne-prijave-protiv-milica",
-      "title": "Тужилаштво објавило анализу доказа о одбацивању дела кривичне пријаве против Милића",
-      "url": "https://www.politika.rs/scc/clanak/761872/tuzilastvo-objavilo-analizu-dokaza-o-odbacivanju-dela-krivicne-prijave-protiv-milica",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T22:54:00+00:00",
-      "time": "22:54",
+      "id": "ma-dokaza-da-je-veselin-milic-pomogao-ubicama-u-restoranu-27",
+      "title": "ВЈТ. нема доказа да је Веселин Милић помогао убицама у ресторану „27”",
+      "url": "https://www.politika.rs/scc/clanak/761859/vjt-nema-dokaza-da-je-veselin-milic-pomogao-ubicama-u-restoranu-27",
+      "date": "2026-06-10",
+      "datetime": "2026-06-10T04:45:00+00:00",
+      "time": "04:45",
       "source": "Politika",
       "category": "Тужилаштво",
       "summary": "",
@@ -421,20 +393,6 @@
       "priority": 66
     },
     {
-      "id": "1info-rs-vesti-opozicija-vjt-veselin-milic-krivicna-prijava-",
-      "title": "Opozicija o Miliću: Kapitulacija pravosuđa pred političkom moći",
-      "url": "https://n1info.rs/vesti/opozicija-vjt-veselin-milic-krivicna-prijava/",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T16:23:24+00:00",
-      "time": "16:23",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "m-vesti-vjt-veselin-milic-ubistvo-senjak-aleksandar-nesovic-",
       "title": "VJT: Odbačen deo krivične prijave protiv Veselina Milića",
       "url": "https://vreme.com/vesti/vjt-veselin-milic-ubistvo-senjak-aleksandar-nesovic/",
@@ -533,20 +491,6 @@
       "priority": 25
     },
     {
-      "id": "lica-po-oprobanom-sablonu-jos-jedna-kapitulacija-pravosudja-",
-      "title": "SRCE: Odbacivanje prijave protiv Milića po oprobanom šablonu, još jedna kapitulacija pravosuđa",
-      "url": "https://nova.rs/vesti/politika/srce-odbacivanje-prijave-protiv-milica-po-oprobanom-sablonu-jos-jedna-kapitulacija-pravosudja/",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T16:35:52+00:00",
-      "time": "16:35",
-      "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "ova-rs-politika-nezakonit-hobi-predsednika-srbije-pravosude-",
       "title": "Nezakonit hobi predsednika Srbije",
       "url": "https://radar.nova.rs/politika/nezakonit-hobi-predsednika-srbije-pravosude/",
@@ -603,20 +547,6 @@
       "priority": 24
     },
     {
-      "id": "onomija-srpsko-madjarski-naftovod-za-jucerasnju-geopolitiku-",
-      "title": "Srpsko-mađarski naftovod za jučerašnju geopolitiku",
-      "url": "https://vreme.com/ekonomija/srpsko-madjarski-naftovod-za-jucerasnju-geopolitiku/",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T08:45:22+00:00",
-      "time": "08:45",
-      "source": "Vreme",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "r-nova-rs-drustvo-slucaj-senjak-sprega-vlasti-sa-kriminalom-",
       "title": "Slučaj Senjak pokazuje da smo taoci vlasti i njihove sprege sa kriminalom",
       "url": "https://radar.nova.rs/drustvo/slucaj-senjak-sprega-vlasti-sa-kriminalom/",
@@ -659,20 +589,6 @@
       "priority": 8
     },
     {
-      "id": "la-za-milionera-a-nekada-je-brisala-soferke-na-pumpi-s3dxsx4",
-      "title": "BRISALA ŠOFERKE NA PUMPI, A SADA IMA MILIONE Poznata Srpkinja rodila troje dece fudbaleru: Danas se kupa u luksuzu",
-      "url": "https://www.blic.rs/zabava/poznata-srpkinja-se-udala-za-milionera-a-nekada-je-brisala-soferke-na-pumpi/s3dxsx4",
-      "date": "2026-06-09",
-      "datetime": "2026-06-09T18:44:00+00:00",
-      "time": "18:44",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "eljeno-10-mil-dinara-za-adaptaciju-stare-zgrade-opstine-vest",
       "title": "Novoj Varoši opredeljeno 10 mil dinara za adaptaciju stare zgrade opštine",
       "url": "https://www.euronews.rs/srbija/politika/227444/novoj-varosi-opredeljeno-10-mil-dinara-za-adaptaciju-stare-zgrade-opstine/vest",
@@ -699,6 +615,90 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ta-10018565-muskarac-iz-haife-uhapsen-zbog-spijunaze-za-iran",
+      "title": "OPTUŽEN ZA ŠPIJUNAŽU ZA IRAN: Izraelska policija uhapsila muškarca iz Haife",
+      "url": "https://www.kurir.rs/planeta/10018565/muskarac-iz-haife-uhapsen-zbog-spijunaze-za-iran",
+      "date": "2026-06-09",
+      "datetime": "2026-06-09T22:22:00+00:00",
+      "time": "22:22",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "licama-evropskog-grada-zapaljeni-autobusi-i-tramvaji-hdv09yf",
+      "title": "(FOTO, VIDEO) GORE AUTOBUSI, TRAMVAJI I ULICE! Totalni haos u evropskom gradu, buknuli neredi na ulicama: Jeziv snimak se proširio mrežama, došlo do sukoba s policijom",
+      "url": "https://www.blic.rs/vesti/svet/foto-video-bukte-neredi-na-ulicama-evropskog-grada-zapaljeni-autobusi-i-tramvaji/hdv09yf",
+      "date": "2026-06-09",
+      "datetime": "2026-06-09T22:14:13+00:00",
+      "time": "22:14",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ivsi-pilot-vise-od-15-godina-leteo-bez-odgovarajuce-dozvole-",
+      "title": "Bivši pilot više od 15 godina leteo bez odgovarajuće dozvole",
+      "url": "https://n1info.rs/svet/bivsi-pilot-vise-od-15-godina-leteo-bez-odgovarajuce-dozvole/",
+      "date": "2026-06-09",
+      "datetime": "2026-06-09T19:35:08+00:00",
+      "time": "19:35",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "onisano-tokom-akcije-roadpol-148-njih-pod-dejstvom-alkohola-",
+      "title": "MUP: Najviše biciklista sankcionisano tokom akcije ROADPOL, 148 njih pod dejstvom alkohola",
+      "url": "https://www.ktv.rs/2026/06/09/mup-najvise-biciklista-sankcionisano-tokom-akcije-roadpol-148-njih-pod-dejstvom-alkohola/",
+      "date": "2026-06-09",
+      "datetime": "2026-06-09T14:24:22+00:00",
+      "time": "14:24",
+      "source": "KTV",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "rs-srbija-politika-227286-muskarac-pretucen-na-vozdovcu-vest",
+      "title": "Muškarac pretučen na Voždovcu, policija radi na slučaju",
+      "url": "https://www.euronews.rs/srbija/politika/227286/muskarac-pretucen-na-vozdovcu/vest",
+      "date": "2026-06-08",
+      "datetime": "2026-06-08T08:17:00+00:00",
+      "time": "08:17",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "og-nasilja-u-valjevu-sta-pise-u-belesci-zastitnika-gradjana-",
+      "title": "Slučaj policijskog nasilja u Valjevu: Šta piše u belešci Zaštitnika građana",
+      "url": "https://www.cins.rs/slucaj-policijskog-nasilja-u-valjevu-sta-pise-u-belesci-zastitnika-gradjana/",
+      "date": "2026-05-15",
+      "datetime": "2026-05-15T07:15:23+00:00",
+      "time": "07:15",
+      "source": "CINS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
