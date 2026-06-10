@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 1172160.0,
+    "lowest": 1362.0,
+    "difference": 1170798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106126762,
+    "file": "documents/106126762_8. Odluka o dodeli ugovora ogrevno drvo.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 450000009.0,
     "lowest": 6202.0,
     "difference": 449993807.0,
@@ -86,16 +97,5 @@
     "rejection_reasons": [],
     "id": 105140729,
     "file": "documents/105140729_odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 1247500.0,
-    "lowest": 3210.0,
-    "difference": 1244290.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104922335,
-    "file": "documents/104922335_OP-2-06-291-13 Odluka o dodeli ugovora.pdf"
   }
 ]
