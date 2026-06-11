@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2000000.0,
+    "lowest": 2214.0,
+    "difference": 1997786.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 115546659,
+    "file": "documents/115546659_RB 0015-2026 Odluka o dodeli ugovora potpisano.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2223000.0,
     "lowest": 1920.0,
     "difference": 2221080.0,
