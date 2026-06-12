@@ -1,101 +1,112 @@
 [
   {
+    "winner": null,
+    "accepted": 450000000.0,
+    "lowest": 4127.96,
+    "difference": 449995872.04,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104812439,
+    "file": "documents/104812439_Odluka o dodeli ugovora.pdf"
+  },
+  {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 3333200.0,
-    "lowest": 1920.0,
-    "difference": 3331280.0,
+    "accepted": 2200000.0,
+    "lowest": 5202.0,
+    "difference": 2194798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101690353,
-    "file": "documents/101690353_Odluka o dodeli ugovora.pdf"
+    "id": 111796610,
+    "file": "documents/111796610_Jn_odluka_dodela.pdf"
   },
   {
     "winner": null,
-    "accepted": 1634880.0,
-    "lowest": 1110.0,
-    "difference": 1633770.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102465541,
-    "file": "documents/102465541_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 5499999.98,
-    "lowest": 1212.0,
-    "difference": 5498787.98,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100236320,
-    "file": "documents/100236320_10_Odluka o dodeli ugovora_JN_5-26 potpisano.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 38360000.0,
-    "lowest": 3202.0,
-    "difference": 38356798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112615046,
-    "file": "documents/112615046_Odluka o dodeli ugovora JN 32-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1350000.0,
+    "accepted": 16000000.0,
     "lowest": 6202.0,
-    "difference": 1343798.0,
+    "difference": 15993798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103920327,
-    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+    "id": 101728416,
+    "file": "documents/101728416_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 38506800.0,
-    "lowest": 3202.0,
-    "difference": 38503598.0,
+    "accepted": 40000000.0,
+    "lowest": 5202.0,
+    "difference": 39994798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100822561,
-    "file": "documents/100822561_Odluka o dodeli ugovora JN 36-2026.pdf"
+    "id": 100040911,
+    "file": "documents/100040911_Dodela narudzbenice.pdf"
   },
   {
     "winner": null,
-    "accepted": 3175380.0,
+    "accepted": 15000.0,
+    "lowest": 2202.0,
+    "difference": 12798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100974574,
+    "file": "documents/100974574_ODLUKA  251.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 11324045.0,
+    "lowest": 2202.0,
+    "difference": 11321843.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100048422,
+    "file": "documents/100048422_Odluka o izdavanju narudžbenice 112U24 - 66.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 18125.0,
+    "lowest": 2202.0,
+    "difference": 15923.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100010829,
+    "file": "documents/100010829_19 O-181-1.pdf"
+  },
+  {
+    "winner": "ANDELKA POPOV PR",
+    "accepted": 2100000.0,
     "lowest": 1920.0,
-    "difference": 3173460.0,
+    "difference": 2098080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 105911463,
-    "file": "documents/105911463_Odluka o dodeli.pdf"
+    "id": 114183111,
+    "file": "documents/114183111_odluka o dodeli ugovora 01-12-7-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 23000000.0,
-    "lowest": 3102.0,
-    "difference": 22996898.0,
+    "accepted": 1440000.0,
+    "lowest": 5310.0,
+    "difference": 1434690.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100827025,
-    "file": "documents/100827025_odluka o dodeli ug.pdf"
+    "id": 108627281,
+    "file": "documents/108627281_Odluka o dodeli ugovora 7_2026.pdf"
   },
   {
-    "winner": "NPN DOO",
-    "accepted": 11000.0,
-    "lowest": 6202.0,
-    "difference": 4798.0,
+    "winner": null,
+    "accepted": 19738044.5,
+    "lowest": 2026.0,
+    "difference": 19736018.5,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111169325,
-    "file": "documents/111169325_odluka-zlatne grede 13.pdf"
+    "id": 100213098,
+    "file": "documents/100213098_Odluka o dodeli potpisana.pdf"
   }
 ]
