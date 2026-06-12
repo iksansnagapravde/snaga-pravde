@@ -85,20 +85,6 @@
       "priority": 96
     },
     {
-      "id": "0700-Podgorica-Uhapsen-muskarac-zbog-paljenja-kamiona-u-Zeti",
-      "title": "ZAPALIO KAMION I IZAZVAO ŠTETU  OD OKO 90 HILJADA EVRA: Uhapšen muškarac u Podgorici zbog paljenja vozila u Zeti",
-      "url": "https://www.kurir.rs/region/crna-gora/10020700/Podgorica-Uhapsen-muskarac-zbog-paljenja-kamiona-u-Zeti",
-      "date": "2026-06-11",
-      "datetime": "2026-06-11T22:12:00+00:00",
-      "time": "22:12",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "c-u-paracinu-osumnjicenom-odredjeno-zadrzavanje-48-sati-html",
       "title": "Убијен мушкарац у Параћину, осумњиченом одређено задржавање 48 сати",
       "url": "https://www.rts.rs/vesti/hronika/5971880/ubijen-muskarac-u-paracinu-osumnjicenom-odredjeno-zadrzavanje-48-sati.html",
@@ -694,6 +680,20 @@
       "datetime": "2026-06-10T12:58:38+00:00",
       "time": "12:58",
       "source": "KRIK",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "86-dragana-sotirovski-pred-sudenjem-u-visem-sudu-u-nisu-vest",
+      "title": "Danas počinje suđenje bivšoj gradonačelnici Niša, optuženoj za zloupotrebu položaja",
+      "url": "https://www.euronews.rs/srbija/aktuelno/227586/dragana-sotirovski-pred-sudenjem-u-visem-sudu-u-nisu/vest",
+      "date": "2026-06-10",
+      "datetime": "2026-06-10T07:22:00+00:00",
+      "time": "07:22",
+      "source": "Euronews Serbia",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
