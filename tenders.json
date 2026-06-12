@@ -1,5 +1,60 @@
 [
   {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 1800000.0,
+    "lowest": 3110.0,
+    "difference": 1796890.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Potpisana odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 588000.0,
+    "lowest": 1920.0,
+    "difference": 586080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100779389,
+    "file": "documents/100779389_ODLUKA O DODELI UGOVORA.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 155000000.0,
+    "lowest": 6202.0,
+    "difference": 154993798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100803414,
+    "file": "documents/100803414_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 4879790.0,
+    "lowest": 2240.3,
+    "difference": 4877549.7,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1700000.0,
+    "lowest": 1210.0,
+    "difference": 1698790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105007638,
+    "file": "documents/105007638_Odluka o dodeli ugovora.docx"
+  },
+  {
     "winner": null,
     "accepted": 450000000.0,
     "lowest": 4127.96,
@@ -53,60 +108,5 @@
     "rejection_reasons": [],
     "id": 100974574,
     "file": "documents/100974574_ODLUKA  251.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 11324045.0,
-    "lowest": 2202.0,
-    "difference": 11321843.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100048422,
-    "file": "documents/100048422_Odluka o izdavanju narudžbenice 112U24 - 66.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 18125.0,
-    "lowest": 2202.0,
-    "difference": 15923.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100010829,
-    "file": "documents/100010829_19 O-181-1.pdf"
-  },
-  {
-    "winner": "ANDELKA POPOV PR",
-    "accepted": 2100000.0,
-    "lowest": 1920.0,
-    "difference": 2098080.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 114183111,
-    "file": "documents/114183111_odluka o dodeli ugovora 01-12-7-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1440000.0,
-    "lowest": 5310.0,
-    "difference": 1434690.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 108627281,
-    "file": "documents/108627281_Odluka o dodeli ugovora 7_2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 19738044.5,
-    "lowest": 2026.0,
-    "difference": 19736018.5,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100213098,
-    "file": "documents/100213098_Odluka o dodeli potpisana.pdf"
   }
 ]
