@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "a-aktuelno-228030-mup-uhapsio-novosadanina-u-zrenjaninu-vest",
+      "title": "Uhapšen muškarac kod koga je pronađeno milion tableta i 5.000 boksova cigareta",
+      "url": "https://www.euronews.rs/srbija/aktuelno/228030/mup-uhapsio-novosadanina-u-zrenjaninu/vest",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T21:39:00+00:00",
+      "time": "21:39",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "021610-novosadjanin-uhapsen-u-zrenjaninu-zbog-droge-i-duvana",
       "title": "NOVOSAĐANIN (50) UHAPŠEN U ZRANJANINU: Pronašli mu milion tableta i 5.000 boksova različitih marki cigareta (FOTO)",
       "url": "https://www.kurir.rs/crna-hronika/10021610/novosadjanin-uhapsen-u-zrenjaninu-zbog-droge-i-duvana",
@@ -37,20 +51,6 @@
       "time": "17:43",
       "source": "Blic",
       "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "ww-danas-rs-svet-ostavka-britanski-ministar-odbrane-analiza-",
-      "title": "Pol Tejlor analizira za Gardijan: Ostavka britanskog ministra odbrane je upozorenje za celu Evropu",
-      "url": "https://www.danas.rs/svet/ostavka-britanski-ministar-odbrane-analiza/",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T16:00:05+00:00",
-      "time": "16:00",
-      "source": "Danas",
-      "category": "Извршења",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -155,6 +155,20 @@
       "priority": 95
     },
     {
+      "id": "osna-i-hercegovina-10021062-pijana-napala-policajca-sarajevo",
+      "title": "NAPILA SE PA FIZIČKI NAPALA POLICAJCA: U Sarajevu uhapšena žena (33), čuvaru reda nanela povrede",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10021062/pijana-napala-policajca-sarajevo",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "8025-prokuplje-uhapsen-zbog-pozara-i-nasilja-u-porodici-vest",
       "title": "Uhapšen muškarac u Prokuplju: Pretio ženi i zapalio kuću",
       "url": "https://www.euronews.rs/srbija/aktuelno/228025/prokuplje-uhapsen-zbog-pozara-i-nasilja-u-porodici/vest",
@@ -190,20 +204,6 @@
       "datetime": "2026-06-12T18:09:06+00:00",
       "time": "18:09",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "10021464-novosadska-policija-uhapsila-bracni-par-ubistvo-psa",
-      "title": "UHAPŠEN BRAČNI PAR IZ NOVOG SADA NAKON SNIMKA KOJI JE ZGROZIO SRPSKU JAVNOST: Sumnjiče se za monstruozan čin nad psom - prolaznica SNIMILA KRIKE ŽIVOTINJE",
-      "url": "https://www.kurir.rs/crna-hronika/10021464/novosadska-policija-uhapsila-bracni-par-ubistvo-psa",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T15:17:43+00:00",
-      "time": "15:17",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -365,6 +365,34 @@
       "priority": 72
     },
     {
+      "id": "skarac-u-prokuplju-pretio-supruzi-pa-zapalio-porodicnu-kucu-",
+      "title": "Uhapšen muškarac u Prokuplju, pretio supruzi pa zapalio porodičnu kuću",
+      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-muskarac-u-prokuplju-pretio-supruzi-pa-zapalio-porodicnu-kucu/",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T21:54:00+00:00",
+      "time": "21:54",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "skarac-u-prokuplju-pretio-supruzi-pa-zapalio-porodicnu-kucu-",
+      "title": "Uhapšen muškarac u Prokuplju: Pretio supruzi, pa zapalio porodičnu kuću",
+      "url": "https://n1info.rs/vesti/uhapsen-muskarac-u-prokuplju-pretio-supruzi-pa-zapalio-porodicnu-kucu/",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T21:22:17+00:00",
+      "time": "21:22",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "27842-leskovac-uhapsen-vozac-pronadeno-197-kg-marihuane-vest",
       "title": "Leskovačka policija zaplenila skoro 20 kilograma marihuane, uhapšen muškarac iz Beograda",
       "url": "https://www.euronews.rs/srbija/aktuelno/227842/leskovac-uhapsen-vozac-pronadeno-197-kg-marihuane/vest",
@@ -442,20 +470,6 @@
       "datetime": "2026-06-12T14:06:23+00:00",
       "time": "14:06",
       "source": "Vreme",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "traga-za-slucaj-senjak-nastavlja-se-prikupljanje-dokaza-html",
-      "title": "ВЈТ: Оборене поједине тврдње на основу којих је покренута истрага за случај \"Сењак\", наставља се прикупљање доказа",
-      "url": "https://www.rts.rs/vesti/hronika/5972082/vjt-oborene-pojedine-tvrdnje-na-osnovu-kojih-je-pokrenuta-istraga-za-slucaj-senjak-nastavlja-se-prikupljanje-dokaza.html",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T10:27:03+00:00",
-      "time": "10:27",
-      "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -561,20 +575,6 @@
       "priority": 66
     },
     {
-      "id": "a-10021437-novi-primer-dvostrukih-arsina-blokaderskih-medija",
-      "title": "BLOKADERSKIM MEDIJIMA SU DVOSTRUKI ARŠINI DRUGO IME! Juče su posete EXPU nazivali \"zloupotrebom dece\", danas regrutuju mlade za svoje radionice",
-      "url": "https://www.kurir.rs/vesti/politika/10021437/novi-primer-dvostrukih-arsina-blokaderskih-medija",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T14:41:22+00:00",
-      "time": "14:41",
-      "source": "Kurir",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "tps-radar-nova-rs-global-britanija-rasni-odnosi-henri-novak-",
       "title": "Tragedija i njena zloupotreba",
       "url": "https://radar.nova.rs/global/britanija-rasni-odnosi-henri-novak/",
@@ -645,20 +645,6 @@
       "priority": 25
     },
     {
-      "id": "strage-za-vise-od-2-000-osumnjicenih-na-prostoru-jugoslavije",
-      "title": "Bramerc: Još se čekaju istrage za više od 2.000 osumnjičenih na prostoru Jugoslavije",
-      "url": "https://beta.rs/content/246437-bramerc-jos-se-cekaju-istrage-za-vise-od-2-000-osumnjicenih-na-prostoru-jugoslavije",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T19:40:08+00:00",
-      "time": "19:40",
-      "source": "Beta",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "trage-za-vise-od-2-000-osumnjicenih-na-prostoru-jugoslavije-",
       "title": "Bramerc: Još se čekaju istrage za više od 2.000 osumnjičenih na prostoru Jugoslavije",
       "url": "https://www.danas.rs/svet/region/bramerc-jos-se-cekaju-istrage-za-vise-od-2-000-osumnjicenih-na-prostoru-jugoslavije/",
@@ -694,6 +680,20 @@
       "datetime": "2026-06-12T17:47:43+00:00",
       "time": "17:47",
       "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "udnih-zakona-usaglasen-sa-standardima-venecijanske-komisije-",
+      "title": "Vujić: Set pravosudnih zakona usaglašen sa standardima Venecijanske komisije",
+      "url": "https://www.danas.rs/vesti/drustvo/vujic-set-pravosudnih-zakona-usaglasen-sa-standardima-venecijanske-komisije/",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T16:28:40+00:00",
+      "time": "16:28",
+      "source": "Danas",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
