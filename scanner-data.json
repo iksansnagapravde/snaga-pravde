@@ -183,20 +183,6 @@
       "priority": 92
     },
     {
-      "id": "psen-muskarac-koji-je-pretio-zeni-i-zapalio-kucu-u-prokuplju",
-      "title": "Ухапшен мушкарац који је претио жени и запалио кућу у Прокупљу",
-      "url": "https://www.politika.rs/scc/clanak/762771/uhapsen-muskarac-koji-je-pretio-zeni-i-zapalio-kucu-u-prokuplju",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T19:55:00+00:00",
-      "time": "19:55",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-srusio-blokirana-glavna-linija-koja-spaja-london-i-skotsku-",
       "title": "U Britaniji kamionom udario u železnički most, koji se srušio - blokirana glavna linija koja spaja London i Škotsku",
       "url": "https://n1info.rs/svet/u-britaniji-kamionom-udario-u-zeleznicki-most-koji-se-srusio-blokirana-glavna-linija-koja-spaja-london-i-skotsku/",
@@ -463,20 +449,6 @@
       "priority": 66
     },
     {
-      "id": "https-vreme-com-vesti-veselin-milic-ostaje-u-pritvoru-",
-      "title": "Veselin Milić ostaje u pritvoru",
-      "url": "https://vreme.com/vesti/veselin-milic-ostaje-u-pritvoru/",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T14:06:23+00:00",
-      "time": "14:06",
-      "source": "Vreme",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "o-227931-jtok-trazi-pritvor-zbog-falsifikovanja-diploma-vest",
       "title": "Tužilaštvo traži pritvor za osumnjičene da su izradili 120 lažnih diploma",
       "url": "https://www.euronews.rs/srbija/aktuelno/227931/jtok-trazi-pritvor-zbog-falsifikovanja-diploma/vest",
@@ -573,6 +545,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "a-bajdena-da-progovori-o-korupciji-svoje-porodice-u-ukrajini",
+      "title": "Дмитријев позвао Хантера Бајдена да проговори о корупцији своје породице у Украјини",
+      "url": "https://www.politika.rs/scc/clanak/762789/dmitrijev-pozvao-hantera-bajdena-da-progovori-o-korupciji-svoje-porodice-u-ukrajini",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T23:14:00+00:00",
+      "time": "23:14",
+      "source": "Politika",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "tps-radar-nova-rs-global-britanija-rasni-odnosi-henri-novak-",
@@ -694,6 +680,20 @@
       "datetime": "2026-06-12T16:28:40+00:00",
       "time": "16:28",
       "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "litika-228002-vujic-srbija-unapredila-pravosudne-zakone-vest",
+      "title": "Vujić: Venecijanska komisija potvrdila da je Srbija unapredila set pravosudnih zakona",
+      "url": "https://www.euronews.rs/srbija/politika/228002/vujic-srbija-unapredila-pravosudne-zakone/vest",
+      "date": "2026-06-12",
+      "datetime": "2026-06-12T16:00:00+00:00",
+      "time": "16:00",
+      "source": "Euronews Serbia",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
