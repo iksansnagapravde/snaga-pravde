@@ -71,6 +71,34 @@
       "priority": 95
     },
     {
+      "id": "apsen-mladic-brza-voznja-autoput-severna-makedonija-244-km-h",
+      "title": "DIVLJAO 244 KM/H, DVOSTRUKO BRŽE OD DOZVOLJENOG: Uhapšen mladić (21) u Severnoj Makedoniji zbog nasilničke vožnje",
+      "url": "https://www.kurir.rs/region/severna-makedonija/10022788/uhapsen-mladic-brza-voznja-autoput-severna-makedonija-244-km-h",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T22:32:00+00:00",
+      "time": "22:32",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "22698-muskarac-uhapsen-nakon-prijave-incidenta-sa-devojcicom",
+      "title": "UHAPŠEN MUŠKARAC (40) IZ KOTORA: Sumnjiči se za polno uznemiravanje devojčice (9)",
+      "url": "https://www.kurir.rs/region/crna-gora/10022698/muskarac-uhapsen-nakon-prijave-incidenta-sa-devojcicom",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "-hronika-10022957-ubistvo-u-prizrenu-mladic-nastradao-u-tuci",
       "title": "UŽAS KOD PRIZRENA Mladić ubijen u tuči, uhapšene dve osobe",
       "url": "https://www.kurir.rs/crna-hronika/10022957/ubistvo-u-prizrenu-mladic-nastradao-u-tuci",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "-rs-slobodno-vreme-pena-za-brijanje-cisti-tus-kabinu-me29rft",
-      "title": "\"Mama vam ovo sigurno nije pokazala\": Njeni neobični trikovi za čišćenje postali su hit među milionima",
-      "url": "https://www.blic.rs/slobodno-vreme/pena-za-brijanje-cisti-tus-kabinu/me29rft",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T18:30:00+00:00",
-      "time": "18:30",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "-nova-rs-ekonomija-starting-rekordni-prihod-gazda-u-zatvoru-",
-      "title": "Rekordni prihodi dok je gazda bio u pritvoru",
-      "url": "https://radar.nova.rs/ekonomija/starting-rekordni-prihod-gazda-u-zatvoru/",
-      "date": "2026-06-10",
-      "datetime": "2026-06-10T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
