@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "ski-specijalci-upali-na-ruski-tanker-u-lamansu-video-z4yjxrl",
-      "title": "(VIDEO) NAORUŽANI SPECIJALCI NA UŽADIMA UPALI NA RUSKI TANKER Snimljena drama u Lamanšu: Počeo pretres, HITNO se oglasio britanski premijer",
-      "url": "https://www.blic.rs/vesti/svet/ovako-su-britanski-specijalci-upali-na-ruski-tanker-u-lamansu-video/z4yjxrl",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T16:42:18+00:00",
-      "time": "16:42",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 124
-    },
-    {
       "id": "dan-od-ranjenih-tokom-mafijaskog-obracuna-u-sarajevu-3gpbb4h",
       "title": "UMRO MUŠKARAC UPUCAN U MAFIJAŠKOM OBRAČUNU Sedam dana mu se borili za život: Dvojica uhapšena zbog pokušaja ubistva u Sarajevu",
       "url": "https://www.blic.rs/vesti/hronika/umro-branislav-janjic-jedan-od-ranjenih-tokom-mafijaskog-obracuna-u-sarajevu/3gpbb4h",
@@ -27,20 +13,6 @@
       "breaking": false,
       "alert": true,
       "priority": 101
-    },
-    {
-      "id": "a-aktuelno-228030-mup-uhapsio-novosadanina-u-zrenjaninu-vest",
-      "title": "Uhapšen muškarac kod koga je pronađeno milion tableta i 5.000 boksova cigareta",
-      "url": "https://www.euronews.rs/srbija/aktuelno/228030/mup-uhapsio-novosadanina-u-zrenjaninu/vest",
-      "date": "2026-06-12",
-      "datetime": "2026-06-12T21:39:00+00:00",
-      "time": "21:39",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
     },
     {
       "id": "rg-a-srbija-beograd-tuzilastvo-ubistvo-nesovic-33779680-html",
@@ -71,6 +43,20 @@
       "priority": 96
     },
     {
+      "id": "cnjava-u-sarajevu-branislav-janjic-preminuo-nakon-ranjavanja",
+      "title": "BRANISLAV UMRO 7 DANA NAKON RANJAVANJA! Pogođen u mafijaškom obračunu u parku, lekari nisu mogli da ga spasu",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10023016/pucnjava-u-sarajevu-branislav-janjic-preminuo-nakon-ranjavanja",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T21:00:17+00:00",
+      "time": "21:00",
+      "source": "Kurir",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
       "id": "ce-biti-u-obliku-referenduma-ili-srbija-ili-napredna-mafija-",
       "title": "Milivojević (DS): „Naredni izbori će biti u obliku referenduma – ‘ili Srbija ili napredna mafija'“",
       "url": "https://www.danas.rs/vesti/politika/milivojevic-ds-naredni-izbori-ce-biti-u-obliku-referenduma-ili-srbija-ili-napredna-mafija/",
@@ -83,6 +69,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "-hronika-10022957-ubistvo-u-prizrenu-mladic-nastradao-u-tuci",
+      "title": "UŽAS KOD PRIZRENA Mladić ubijen u tuči, uhapšene dve osobe",
+      "url": "https://www.kurir.rs/crna-hronika/10022957/ubistvo-u-prizrenu-mladic-nastradao-u-tuci",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T21:20:00+00:00",
+      "time": "21:20",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "litika-228230-jevtic-hapsenja-srba-sluze-sejanju-straha-vest",
@@ -148,34 +148,6 @@
       "datetime": "2026-06-14T13:25:00+00:00",
       "time": "13:25",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vojici-direktora-u-kosovskoj-kamenici-odredjen-kucni-pritvor",
-      "title": "UHAPŠENIM DIREKTORIMA U KOSOVSKOJ KAMENICI ODREĐEN KUĆNI PRITVOR! Kancelarija za KiM: Privideni su po nalogu Prištine na političkoj osnovi",
-      "url": "https://www.kurir.rs/vesti/srbi-na-kim/10021930/dvojici-direktora-u-kosovskoj-kamenici-odredjen-kucni-pritvor",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T13:22:44+00:00",
-      "time": "13:22",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "https-www-kurir-rs-planeta-10022549-uhapsen-tomi-robinson",
-      "title": "UHAPŠEN VOĐA BRITANSKIH NACIONALISTA NA AERODROMU HITROU! Vraćao se sa putovanja u Rusiji gde se sastao sa OCEM Ilona Maska! (FOTO/VIDEO)",
-      "url": "https://www.kurir.rs/planeta/10022549/uhapsen-tomi-robinson",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T10:40:46+00:00",
-      "time": "10:40",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -251,20 +223,6 @@
       "breaking": false,
       "alert": true,
       "priority": 90
-    },
-    {
-      "id": "nfo-rs-vesti-uhapseno-pet-osoba-na-kosovu-u-slucaju-racak-2-",
-      "title": "Uhapšeno pet osoba na Kosovu u slučaju \"Račak 2\"",
-      "url": "https://n1info.rs/vesti/uhapseno-pet-osoba-na-kosovu-u-slucaju-racak-2/",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T12:35:32+00:00",
-      "time": "12:35",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
     },
     {
       "id": "i-zlocini-na-kosovu-ko-su-ljudi-uhapseni-u-slucaju-racak-ii-",
@@ -449,20 +407,6 @@
       "priority": 66
     },
     {
-      "id": "okaderskoj-fabrici-lazi-to-bi-jedan-u-milion-mogao-da-izdrzi",
-      "title": "GODINU I PO DANA KAMPANJE KRIMINALIZACIJE I DEHUMANIZACIJE! Vučić otkrio sve o blokaderskoj fabrici laži: To bi jedan u milion mogao da izdrži",
-      "url": "https://www.kurir.rs/vesti/politika/10022461/vucic-otkrio-sve-o-blokaderskoj-fabrici-lazi-to-bi-jedan-u-milion-mogao-da-izdrzi",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T09:13:11+00:00",
-      "time": "09:13",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "-identitet-novinarke-jelene-zoric-i-ime-i-logo-organizacije-",
       "title": "BIRN: U toku internet prevara, zloupotrebljeni identitet novinarke Jelene Zorić i ime i logo organizacije",
       "url": "https://www.danas.rs/vesti/drustvo/birn-u-toku-internet-prevara-zloupotrebljeni-identitet-novinarke-jelene-zoric-i-ime-i-logo-organizacije/",
@@ -533,27 +477,13 @@
       "priority": 28
     },
     {
-      "id": "10022574-srpska-lista-se-oglasila-nakon-hapsenja-srba-na-kim",
-      "title": "OGLASILA SE SRPSKA LISTA NAKON NOVOG HAPŠENJA SRBA NA KiM: \"Neosnovana privođenja su institucionalno nasilje i nastavak progona našeg naroda!\"",
-      "url": "https://www.kurir.rs/vesti/politika/10022574/srpska-lista-se-oglasila-nakon-hapsenja-srba-na-kim",
+      "id": "dzi-dzamping-u-brazilu-i-umrla-zaboravili-da-je-vezu-6g5k2kt",
+      "title": "SOFIJA OTIŠLA NA BANDŽI DŽAMPING I UMRLA! Zaboravili da je vežu, pa je bacili s mosta u Brazilu: Užas gledala i deca",
+      "url": "https://www.blic.rs/vesti/svet/sofija-otisla-na-bandzi-dzamping-u-brazilu-i-umrla-zaboravili-da-je-vezu/6g5k2kt",
       "date": "2026-06-14",
-      "datetime": "2026-06-14T13:03:27+00:00",
-      "time": "13:03",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "osarka-10022499-klivlend-se-oglasio-posle-hapsenja-klivlenda",
-      "title": "KONAČNO PREKINUTO ĆUTANJE! KLIVLEND SE OGLASIO POSLE HAPŠENJA HARDENA! Košarkašu našli oružje, evo šta je klub imao da poruči!",
-      "url": "https://www.kurir.rs/sport/kosarka/10022499/klivlend-se-oglasio-posle-hapsenja-klivlenda",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T10:47:17+00:00",
-      "time": "10:47",
-      "source": "Kurir",
+      "datetime": "2026-06-14T22:09:00+00:00",
+      "time": "22:09",
+      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -673,6 +603,20 @@
       "priority": 24
     },
     {
+      "id": "elo-rumunskog-kriminalca-romika-katalija-pronadjeno-u-dunavu",
+      "title": "TELO POZNATOG KRIMINALCA PRONAĐENO U DUNAVU! Prolaznici uočili jeziv prizor u vodi (FOTO/VIDEO)",
+      "url": "https://www.kurir.rs/planeta/10022903/telo-rumunskog-kriminalca-romika-katalija-pronadjeno-u-dunavu",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T18:05:51+00:00",
+      "time": "18:05",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "-zapadni-balkan-ekonomska-saradnja-bezbjednost-33779126-html",
       "title": "Američki kišobran nad Balkanom polako se zatvara",
       "url": "https://www.slobodnaevropa.org/a/sad-amerika-zapadni-balkan-ekonomska-saradnja-bezbjednost/33779126.html",
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "nova-rs-drustvo-tivat-kriminalci-policajci-na-istom-zadatku-",
+      "title": "Operacija Tivat: Kriminalci i policajci na istom zadatku",
+      "url": "https://radar.nova.rs/drustvo/tivat-kriminalci-policajci-na-istom-zadatku/",
+      "date": "2026-06-11",
+      "datetime": "2026-06-11T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji-",
+      "title": "Milan Ostojić Sandokan, kriminalac iz Ćacilenda, napao studenta na Slaviji",
+      "url": "https://www.krik.rs/milan-ostojic-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji/",
+      "date": "2026-05-20",
+      "datetime": "2026-05-20T13:20:49+00:00",
+      "time": "13:20",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-rs-slobodno-vreme-pena-za-brijanje-cisti-tus-kabinu-me29rft",
+      "title": "\"Mama vam ovo sigurno nije pokazala\": Njeni neobični trikovi za čišćenje postali su hit među milionima",
+      "url": "https://www.blic.rs/slobodno-vreme/pena-za-brijanje-cisti-tus-kabinu/me29rft",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T18:30:00+00:00",
+      "time": "18:30",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "-nova-rs-ekonomija-starting-rekordni-prihod-gazda-u-zatvoru-",
+      "title": "Rekordni prihodi dok je gazda bio u pritvoru",
+      "url": "https://radar.nova.rs/ekonomija/starting-rekordni-prihod-gazda-u-zatvoru/",
+      "date": "2026-06-10",
+      "datetime": "2026-06-10T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
