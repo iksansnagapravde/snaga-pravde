@@ -85,6 +85,20 @@
       "priority": 95
     },
     {
+      "id": "esti-politika-5973196-kosovo-metohija-sudjenja-hapsenja-html",
+      "title": "Суђења на КиМ – више од 50 Срба у притвору, адвокати указују на спорне праксе",
+      "url": "https://www.rts.rs/vesti/politika/5973196/kosovo-metohija-sudjenja-hapsenja.html",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T18:02:20+00:00",
+      "time": "18:02",
+      "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "rs-vesti-svet-5973245-njujork-nba-neredi-navijaci-niksi-html",
       "title": "Нереди у Њујорку током прославе НБА титуле – спаљени аутобуси, рањен тинејџер",
       "url": "https://www.rts.rs/vesti/svet/5973245/njujork-nba-neredi-navijaci-niksi.html",
@@ -225,34 +239,6 @@
       "priority": 90
     },
     {
-      "id": "s-www-rts-rs-vesti-politika-5972905-akcija-policije-kim-html",
-      "title": "Петоро Срба ухапшено на КиМ – Приштина их терети за наводну умешаност у случај Рачак",
-      "url": "https://www.rts.rs/vesti/politika/5972905/akcija-policije-kim.html",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T14:01:52+00:00",
-      "time": "14:01",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
-    },
-    {
-      "id": "bog-cega-je-kosovska-policija-uhapsila-petoricu-srba-z7thph7",
-      "title": "Tužilaštvo u Prištini otkrilo zbog čega je tzv. kosovska policija uhapsila petoricu Srba iz Štrpca i Gnjilana",
-      "url": "https://www.blic.rs/vesti/politika/tuzilastvo-u-pristini-otkrilo-zbog-cega-je-kosovska-policija-uhapsila-petoricu-srba/z7thph7",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T13:17:01+00:00",
-      "time": "13:17",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
-    },
-    {
       "id": "nfo-rs-vesti-uhapseno-pet-osoba-na-kosovu-u-slucaju-racak-2-",
       "title": "Uhapšeno pet osoba na Kosovu u slučaju \"Račak 2\"",
       "url": "https://n1info.rs/vesti/uhapseno-pet-osoba-na-kosovu-u-slucaju-racak-2/",
@@ -260,20 +246,6 @@
       "datetime": "2026-06-14T12:35:32+00:00",
       "time": "12:35",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
-      "id": "enja-na-kosovu-privedeno-pet-osoba-u-okviru-istrage-racak-2-",
-      "title": "Nova hapšenja na Kosovu: Privedeno pet osoba u okviru istrage „Račak 2“",
-      "url": "https://nova.rs/vesti/hronika/nova-hapsenja-na-kosovu-privedeno-pet-osoba-u-okviru-istrage-racak-2/",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T10:43:38+00:00",
-      "time": "10:43",
-      "source": "Nova",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -449,20 +421,6 @@
       "priority": 66
     },
     {
-      "id": "ovalo-vucicev-intervju-smanjena-raznolikost-medijske-ponude-",
-      "title": "BIRODI: Pet televizija reemitovalo Vučićev intervju, smanjena raznolikost medijske ponude",
-      "url": "https://www.danas.rs/vesti/drustvo/birodi-pet-televizija-reemitovalo-vucicev-intervju-smanjena-raznolikost-medijske-ponude/",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T11:01:30+00:00",
-      "time": "11:01",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "i-birodi-pet-lokalnih-televizija-prenosilo-vucicev-intervju-",
       "title": "BIRODI: Pet lokalnih televizija prenosilo Vučićev intervju, nadležni da objasne pravni osnov emitovanja",
       "url": "https://n1info.rs/vesti/birodi-pet-lokalnih-televizija-prenosilo-vucicev-intervju/",
@@ -489,6 +447,34 @@
       "breaking": false,
       "alert": true,
       "priority": 60
+    },
+    {
+      "id": "evaru-zloupotrebljeni-identitet-jelene-zoric-i-organizacije-",
+      "title": "BIRN Srbija upozorava građane na internet prevaru: Zloupotrebljeni identitet Jelene Zorić i organizacije",
+      "url": "https://n1info.rs/vesti/birn-srbija-upozorava-gradjane-na-internet-prevaru-zloupotrebljeni-identitet-jelene-zoric-i-organizacije/",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T17:42:35+00:00",
+      "time": "17:42",
+      "source": "N1",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "net-prevaru-zloupotrebljeni-identitet-jelene-zoric-i-birn-a-",
+      "title": "BIRN Srbija upozorava građane na internet prevaru: Zloupotrebljeni identitet Jelene Zorić i BIRN-a",
+      "url": "https://nova.rs/vesti/hronika/birn-srbija-upozorava-gradjane-na-internet-prevaru-zloupotrebljeni-identitet-jelene-zoric-i-birn-a/",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T17:31:56+00:00",
+      "time": "17:31",
+      "source": "Nova",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "tps-radar-nova-rs-global-britanija-rasni-odnosi-henri-novak-",
@@ -629,6 +615,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "elo-rumunskog-kriminalca-romika-katalija-pronadjeno-u-dunavu",
+      "title": "TELO POZNATOG KRIMINALCA PRONAĐENO U DUNAVU! Prolaznici uočili jeziv prizor u vodi (FOTO/VIDEO)",
+      "url": "https://www.kurir.rs/planeta/10022903/telo-rumunskog-kriminalca-romika-katalija-pronadjeno-u-dunavu",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T18:05:51+00:00",
+      "time": "18:05",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "-zapadni-balkan-ekonomska-saradnja-bezbjednost-33779126-html",
