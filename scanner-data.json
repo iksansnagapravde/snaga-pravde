@@ -85,6 +85,20 @@
       "priority": 95
     },
     {
+      "id": "litika-228230-jevtic-hapsenja-srba-sluze-sejanju-straha-vest",
+      "title": "Jevtić: Kurti nastavlja da seje strah u cilju proterivanja srpkog naroda sa KiM",
+      "url": "https://www.euronews.rs/srbija/politika/228230/jevtic-hapsenja-srba-sluze-sejanju-straha/vest",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T18:50:00+00:00",
+      "time": "18:50",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "esti-politika-5973196-kosovo-metohija-sudjenja-hapsenja-html",
       "title": "Суђења на КиМ – више од 50 Срба у притвору, адвокати указују на спорне праксе",
       "url": "https://www.rts.rs/vesti/politika/5973196/kosovo-metohija-sudjenja-hapsenja.html",
@@ -134,20 +148,6 @@
       "datetime": "2026-06-14T13:25:00+00:00",
       "time": "13:25",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vojici-direktora-u-kosovskoj-kamenici-odredjen-kucni-pritvor",
-      "title": "UHAPŠENIM DIREKTORIMA U KOSOVSKOJ KAMENICI ODREĐEN KUĆNI PRITVOR! Kancelarija za KiM: Privideni su po nalogu Prištine na političkoj osnovi",
-      "url": "https://www.kurir.rs/vesti/srbi-na-kim/10021930/dvojici-direktora-u-kosovskoj-kamenici-odredjen-kucni-pritvor",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T13:22:44+00:00",
-      "time": "13:22",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -295,6 +295,20 @@
       "priority": 72
     },
     {
+      "id": "oricu-srba-uhapsenih-na-kosovu-zbog-sumnje-na-ratne-zlocine-",
+      "title": "Advokati traže odbacivanje pritvora za petoricu Srba uhapšenih na Kosovu zbog sumnje na ratne zločine",
+      "url": "https://nova.rs/vesti/hronika/advokati-traze-odbacivanje-pritvora-za-petoricu-srba-uhapsenih-na-kosovu-zbog-sumnje-na-ratne-zlocine/",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T19:49:32+00:00",
+      "time": "19:49",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "u-severnoj-makedoniji-vozio-brzinom-od-244-kilometra-na-sat-",
       "title": "Uhapšen 21-godišnjak u Severnoj Makedoniji, vozio brzinom od 244 kilometra na sat",
       "url": "https://n1info.rs/region/uhapsen-21-godisnjak-u-severnoj-makedoniji-vozio-brzinom-od-244-kilometra-na-sat/",
@@ -421,32 +435,18 @@
       "priority": 66
     },
     {
-      "id": "i-birodi-pet-lokalnih-televizija-prenosilo-vucicev-intervju-",
-      "title": "BIRODI: Pet lokalnih televizija prenosilo Vučićev intervju, nadležni da objasne pravni osnov emitovanja",
-      "url": "https://n1info.rs/vesti/birodi-pet-lokalnih-televizija-prenosilo-vucicev-intervju/",
+      "id": "-identitet-novinarke-jelene-zoric-i-ime-i-logo-organizacije-",
+      "title": "BIRN: U toku internet prevara, zloupotrebljeni identitet novinarke Jelene Zorić i ime i logo organizacije",
+      "url": "https://www.danas.rs/vesti/drustvo/birn-u-toku-internet-prevara-zloupotrebljeni-identitet-novinarke-jelene-zoric-i-ime-i-logo-organizacije/",
       "date": "2026-06-14",
-      "datetime": "2026-06-14T10:38:56+00:00",
-      "time": "10:38",
-      "source": "N1",
-      "category": "Људска права",
+      "datetime": "2026-06-14T18:53:34+00:00",
+      "time": "18:53",
+      "source": "Danas",
+      "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "pet-godina-zatvora-onlajn-prenos-ubistava-silovanja-nasilja-",
-      "title": "Poljska uvodi do pet godina zatvora za onlajn prenos ubistava, silovanja i nasilja",
-      "url": "https://n1info.rs/svet/poljska-pet-godina-zatvora-onlajn-prenos-ubistava-silovanja-nasilja/",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T10:21:19+00:00",
-      "time": "10:21",
-      "source": "N1",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "evaru-zloupotrebljeni-identitet-jelene-zoric-i-organizacije-",
@@ -503,20 +503,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "10022574-srpska-lista-se-oglasila-nakon-hapsenja-srba-na-kim",
-      "title": "OGLASILA SE SRPSKA LISTA NAKON NOVOG HAPŠENJA SRBA NA KiM: \"Neosnovana privođenja su institucionalno nasilje i nastavak progona našeg naroda!\"",
-      "url": "https://www.kurir.rs/vesti/politika/10022574/srpska-lista-se-oglasila-nakon-hapsenja-srba-na-kim",
-      "date": "2026-06-14",
-      "datetime": "2026-06-14T13:03:27+00:00",
-      "time": "13:03",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "jima-krajiskih-boraca-hrvatska-zastrasuje-prognane-srbe-html",
@@ -617,6 +603,20 @@
       "priority": 25
     },
     {
+      "id": "e-trziste-ubistva-naruce-preko-aplikacije-pa-nestanu-2st335k",
+      "title": "UBISTVA NARUČUJU PREKO APLIKACIJE, PA NESTAJU BEZ TRAGA! Ova banda preuzima najmoćnije tržište, otkriveno ko su vođe MRAČNE HOBOTNICE",
+      "url": "https://www.blic.rs/vesti/svet/ova-banda-preuzima-najmocnije-trziste-ubistva-naruce-preko-aplikacije-pa-nestanu/2st335k",
+      "date": "2026-06-14",
+      "datetime": "2026-06-14T18:53:13+00:00",
+      "time": "18:53",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "elo-rumunskog-kriminalca-romika-katalija-pronadjeno-u-dunavu",
       "title": "TELO POZNATOG KRIMINALCA PRONAĐENO U DUNAVU! Prolaznici uočili jeziv prizor u vodi (FOTO/VIDEO)",
       "url": "https://www.kurir.rs/planeta/10022903/telo-rumunskog-kriminalca-romika-katalija-pronadjeno-u-dunavu",
@@ -687,18 +687,18 @@
       "priority": 24
     },
     {
-      "id": "ka-u-penziju-ostao-bez-doma-vec-9-meseci-zivi-u-autu-6flztl3",
-      "title": "Otišao u prevremenu penziju pa ostao bez krova nad glavom! Penzioner (63) već 9 meseci živi u autu: Sada ima samo jednu molbu",
-      "url": "https://www.blic.rs/slobodno-vreme/penzioner-nakon-odlaska-u-penziju-ostao-bez-doma-vec-9-meseci-zivi-u-autu/6flztl3",
+      "id": "-rs-slobodno-vreme-pena-za-brijanje-cisti-tus-kabinu-me29rft",
+      "title": "\"Mama vam ovo sigurno nije pokazala\": Njeni neobični trikovi za čišćenje postali su hit među milionima",
+      "url": "https://www.blic.rs/slobodno-vreme/pena-za-brijanje-cisti-tus-kabinu/me29rft",
       "date": "2026-06-14",
-      "datetime": "2026-06-14T13:30:00+00:00",
-      "time": "13:30",
+      "datetime": "2026-06-14T18:30:00+00:00",
+      "time": "18:30",
       "source": "Blic",
-      "category": "Социјална угроженост",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 22
+      "priority": 8
     }
   ],
   "all_sources": [
