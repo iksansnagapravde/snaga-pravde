@@ -1,6 +1,83 @@
 [
   {
     "winner": null,
+    "accepted": 16110.0,
+    "lowest": 6202.0,
+    "difference": 9908.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100270433,
+    "file": "documents/100270433_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 16110.0,
+    "lowest": 6202.0,
+    "difference": 9908.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100000266,
+    "file": "documents/100000266_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 13580953.74,
+    "lowest": 6202.0,
+    "difference": 13574751.74,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101767165,
+    "file": "documents/101767165_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 2186836.8,
+    "lowest": 1920.0,
+    "difference": 2184916.8,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101261442,
+    "file": "documents/101261442_Odluka o dodeli ugovora za partiju 4.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 21600000.0,
+    "lowest": 2202.0,
+    "difference": 21597798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112900383,
+    "file": "documents/112900383_Odluka o dodeli ugovora + izvestaj OP - U 8-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4017600.0,
+    "lowest": 2110.0,
+    "difference": 4015490.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100653144,
+    "file": "documents/100653144_1656-Odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 471146.0,
+    "lowest": 6202.0,
+    "difference": 464944.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104762757,
+    "file": "documents/104762757_Odluka JN-110-26-26.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 979800.0,
     "lowest": 1920.0,
     "difference": 977880.0,
@@ -31,82 +108,5 @@
     "rejection_reasons": [],
     "id": 100974558,
     "file": "documents/100974558_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 59674568.4,
-    "lowest": 2202.0,
-    "difference": 59672366.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100014609,
-    "file": "documents/100014609_Odluka o dodeli ugovora R-2-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 15598920.0,
-    "lowest": 6202.0,
-    "difference": 15592718.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107340607,
-    "file": "documents/107340607_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 6059760.0,
-    "lowest": 1920.0,
-    "difference": 6057840.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 110712050,
-    "file": "documents/110712050_Odluka o dodeli Ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 48182.0,
-    "lowest": 6202.0,
-    "difference": 41980.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100335334,
-    "file": "documents/100335334_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 48182.0,
-    "lowest": 6202.0,
-    "difference": 41980.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100405324,
-    "file": "documents/100405324_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 250000.0,
-    "lowest": 3202.0,
-    "difference": 246798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101464080,
-    "file": "documents/101464080_ODLUKA  020.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 25000.0,
-    "lowest": 1202.0,
-    "difference": 23798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112723288,
-    "file": "documents/112723288_ODLUKA  086.pdf"
   }
 ]
