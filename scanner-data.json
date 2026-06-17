@@ -197,20 +197,6 @@
       "priority": 92
     },
     {
-      "id": "a-wc-2026-10025676-fudbaler-uhapsen-zbog-namestanja-utakmica",
-      "title": "OGROMAN SKANDAL POTRESA MUNDIJAL: Fudbaler uhapšen zbog nameštanja utakmica!",
-      "url": "https://www.kurir.rs/sport/fudbal/fifa-wc-2026/10025676/fudbaler-uhapsen-zbog-namestanja-utakmica",
-      "date": "2026-06-17",
-      "datetime": "2026-06-17T16:08:58+00:00",
-      "time": "16:08",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "tuelno-228610-uhapsen-osumnjiceni-diler-iz-stare-pazove-vest",
       "title": "Uhapšen osumnjičeni diler iz Stare Pazove: Našli mu tri vrste droge, sumnjiv novac i vagicu",
       "url": "https://www.euronews.rs/srbija/aktuelno/228610/uhapsen-osumnjiceni-diler-iz-stare-pazove/vest",
@@ -251,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "64126-sasa-vukovic-boske-saslusavan-12-sati-u-vjt-u-beogradu",
+      "title": "Саша Вуковић Боске саслушаван 12 сати у ВЈТ у Београду",
+      "url": "https://www.politika.rs/scc/clanak/764126/sasa-vukovic-boske-saslusavan-12-sati-u-vjt-u-beogradu",
+      "date": "2026-06-17",
+      "datetime": "2026-06-17T22:39:00+00:00",
+      "time": "22:39",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "no-228651-tuzilastvo-trazi-pritvor-zbog-otmice-taksiste-vest",
@@ -358,20 +358,6 @@
       "datetime": "2026-06-17T19:09:25+00:00",
       "time": "19:09",
       "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "ttps-www-danas-rs-svet-sapatero-ispitivan-na-sudu-korupcija-",
-      "title": "Bivši španski premijer Sapatero ispitivan na sudu u istrazi o korupciji",
-      "url": "https://www.danas.rs/svet/sapatero-ispitivan-na-sudu-korupcija/",
-      "date": "2026-06-17",
-      "datetime": "2026-06-17T16:15:03+00:00",
-      "time": "16:15",
-      "source": "Danas",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -575,20 +561,6 @@
       "priority": 25
     },
     {
-      "id": "esti-politika-nastavak-skupstinske-sednice-sutra-od-10-sati-",
-      "title": "Nastavak skupštinske sednice sutra od 10 sati",
-      "url": "https://www.danas.rs/vesti/politika/nastavak-skupstinske-sednice-sutra-od-10-sati/",
-      "date": "2026-06-17",
-      "datetime": "2026-06-17T16:14:53+00:00",
-      "time": "16:14",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "-228680-poslanici-sutra-nastavljaju-raspravu-o-32-tacke-vest",
       "title": "Skupština završila sa radom za danas, poslanici sutra nastavljaju debatu o pravosudnim zakonima",
       "url": "https://www.euronews.rs/srbija/politika/228680/poslanici-sutra-nastavljaju-raspravu-o-32-tacke/vest",
@@ -694,6 +666,34 @@
       "datetime": "2026-06-17T20:33:17+00:00",
       "time": "20:33",
       "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "nova-rs-drustvo-tivat-kriminalci-policajci-na-istom-zadatku-",
+      "title": "Operacija Tivat: Kriminalci i policajci na istom zadatku",
+      "url": "https://radar.nova.rs/drustvo/tivat-kriminalci-policajci-na-istom-zadatku/",
+      "date": "2026-06-11",
+      "datetime": "2026-06-11T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji-",
+      "title": "Milan Ostojić Sandokan, kriminalac iz Ćacilenda, napao studenta na Slaviji",
+      "url": "https://www.krik.rs/milan-ostojic-sandokan-kriminalac-iz-cacilenda-napao-studenta-na-slaviji/",
+      "date": "2026-05-20",
+      "datetime": "2026-05-20T13:20:49+00:00",
+      "time": "13:20",
+      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
