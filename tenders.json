@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 5000000.0,
+    "lowest": 6202.0,
+    "difference": 4993798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101602583,
+    "file": "documents/101602583_Odluka o dodeli ugovora OPJN 01-26, overena.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2219760.0,
     "lowest": 5202.0,
     "difference": 2214558.0,
@@ -75,27 +86,5 @@
     "rejection_reasons": [],
     "id": 106241014,
     "file": "documents/106241014_ODLUKA_dod_ug_Parking_LE.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2900000.0,
-    "lowest": 6202.0,
-    "difference": 2893798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101633677,
-    "file": "documents/101633677_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 156000.0,
-    "lowest": 3504.0,
-    "difference": 152496.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100239084,
-    "file": "documents/100239084_Odluka o dodeli.pdf"
   }
 ]
