@@ -1,5 +1,16 @@
 [
   {
+    "winner": "000,00 Valuta: RSD Ugovor se dodeljuje grupi ponuđača: Vrednost ugovora (bez PDV): 1",
+    "accepted": 1600000.0,
+    "lowest": 6202.0,
+    "difference": 1593798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109139299,
+    "file": "documents/109139299_Odluka o dodeli ugovora konzerv 2026.docx"
+  },
+  {
     "winner": null,
     "accepted": 5000000.0,
     "lowest": 6202.0,
