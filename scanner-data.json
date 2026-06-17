@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "74816-venecijanska-komisija-preporuke-pravosudni-zakoni-html",
-      "title": "Венецијанска комисија: Поздрављамо чињеницу да је Србија у потпуности усвојила седам од девет  препорука",
-      "url": "https://www.rts.rs/vesti/politika/5974816/venecijanska-komisija-preporuke-pravosudni-zakoni.html",
-      "date": "2026-06-16",
-      "datetime": "2026-06-16T21:18:30+00:00",
-      "time": "21:18",
-      "source": "RTS",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 201
-    },
-    {
       "id": "a-srbija-venecijanska-komisija-mrdicevi-zakoni-33782454-html",
       "title": "Venecijanska komisija: Srbija nije primenila sve preporuke za izmene 'Mrdićevih zakona'",
       "url": "https://www.slobodnaevropa.org/a/srbija-venecijanska-komisija-mrdicevi-zakoni/33782454.html",
@@ -195,20 +181,6 @@
       "breaking": true,
       "alert": false,
       "priority": 100
-    },
-    {
-      "id": "-rts-rs-vesti-hronika-5974776-prevare-za-klima-uredjaje-html",
-      "title": "Ухапшен мушкарац у Београду, лажно продавао клима уређаје и \"зарадио\" два милиона динара",
-      "url": "https://www.rts.rs/vesti/hronika/5974776/prevare-za-klima-uredjaje.html",
-      "date": "2026-06-16",
-      "datetime": "2026-06-16T17:35:24+00:00",
-      "time": "17:35",
-      "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 98
     },
     {
       "id": "a-uredjajima-gradjane-ostetio-za-vise-od-dva-miliona-dinara-",
@@ -519,20 +491,6 @@
       "priority": 64
     },
     {
-      "id": "sti-drustvo-5974630-miroslav-johan-radnik-radio-beograd-html",
-      "title": "Преминуо Мирослав Јохан, радник Радио Београда у пензији",
-      "url": "https://www.rts.rs/vesti/drustvo/5974630/miroslav-johan-radnik-radio-beograd.html",
-      "date": "2026-06-16",
-      "datetime": "2026-06-16T13:52:45+00:00",
-      "time": "13:52",
-      "source": "RTS",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "elno-228311-hapsenja-zbog-poreskih-prevara-u-novom-sadu-vest",
       "title": "Hapšenja zbog poreskih prevara i pranja novca: Budžet oštećen za više od devet miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/228311/hapsenja-zbog-poreskih-prevara-u-novom-sadu/vest",
@@ -645,20 +603,6 @@
       "priority": 25
     },
     {
-      "id": "ps-www-rts-rs-vesti-drustvo-5974492-pravo-sudija-izazov-html",
-      "title": "Правосуђе пред кадровским изазовом, судије траже хитне системске промене",
-      "url": "https://www.rts.rs/vesti/drustvo/5974492/pravo-sudija-izazov.html",
-      "date": "2026-06-16",
-      "datetime": "2026-06-16T15:36:48+00:00",
-      "time": "15:36",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "6-skupstina-sutra-o-mrdicevim-zakonima-i-kreditima-za-mlade-",
       "title": "Skupština sutra o „Mrdićevim zakonima“ i kreditima za mlade",
       "url": "https://www.ktv.rs/2026/06/16/skupstina-sutra-o-mrdicevim-zakonima-i-kreditima-za-mlade/",
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "228341-vlada-srbije-utvrdila-izmene-zakona-iz-pravosuda-vest",
+      "title": "Vlada Srbije utvrdila predloge izmena i dopuna više zakona iz oblasti pravosuđa",
+      "url": "https://www.euronews.rs/srbija/politika/228341/vlada-srbije-utvrdila-izmene-zakona-iz-pravosuda/vest",
+      "date": "2026-06-15",
+      "datetime": "2026-06-15T14:16:00+00:00",
+      "time": "14:16",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "iz-novog-sada-davao-lazni-pasos-ubicama-iz-crne-gore-6mpd1d0",
+      "title": "PENZIONISANI POLICAJAC IZ NOVOG SADA DAVAO LAŽNE PASOŠE UBICAMA IZ CRNE GORE?! Isplivala neverovatna otkrića iz istrage, na spisku OGROMAN broj kriminalaca, među njima i VOĐE KLANOVA",
+      "url": "https://www.blic.rs/vesti/hronika/penzionisani-policajac-iz-novog-sada-davao-lazni-pasos-ubicama-iz-crne-gore/6mpd1d0",
+      "date": "2026-06-16",
+      "datetime": "2026-06-16T20:02:22+00:00",
+      "time": "20:02",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "licajac-iz-novog-sada-davao-lazni-pasos-ubicama-iz-crne-gore",
+      "title": "POLICAJAC IZ NOVOG SADA DAVAO LAŽNE PASOŠE UBICAMA IZ CRNE GORE?! Frapantna otkrića iz istrage, spisak kriminalaca OGROMAN, koristio Zvicerov recept!",
+      "url": "https://www.kurir.rs/crna-hronika/10024568/policajac-iz-novog-sada-davao-lazni-pasos-ubicama-iz-crne-gore",
+      "date": "2026-06-16",
+      "datetime": "2026-06-16T19:23:06+00:00",
+      "time": "19:23",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "nova-rs-drustvo-tivat-kriminalci-policajci-na-istom-zadatku-",
+      "title": "Operacija Tivat: Kriminalci i policajci na istom zadatku",
+      "url": "https://radar.nova.rs/drustvo/tivat-kriminalci-policajci-na-istom-zadatku/",
+      "date": "2026-06-11",
+      "datetime": "2026-06-11T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
