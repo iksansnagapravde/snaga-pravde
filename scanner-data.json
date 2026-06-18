@@ -57,6 +57,20 @@
       "priority": 100
     },
     {
+      "id": "rt-uhapseno-sest-navijaca-tokom-utakmice-engleske-i-hrvatske",
+      "title": "Ухапшено шест навијача током утакмице Енглеске и Хрватске",
+      "url": "https://www.politika.rs/scc/clanak/764379/sport/uhapseno-sest-navijaca-tokom-utakmice-engleske-i-hrvatske",
+      "date": "2026-06-18",
+      "datetime": "2026-06-18T22:48:00+00:00",
+      "time": "22:48",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "2-zaplenjeno-100-kg-droge-u-novom-sadu-uhapsena-dvojica-vest",
       "title": "Zaplenjeno 100 kilograma droge u Novom Sadu: Uhapšena dvojica osumnjičenih",
       "url": "https://www.euronews.rs/srbija/aktuelno/228772/zaplenjeno-100-kg-droge-u-novom-sadu-uhapsena-dvojica/vest",
@@ -218,20 +232,6 @@
       "datetime": "2026-06-18T16:53:34+00:00",
       "time": "16:53",
       "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "1info-rs-vesti-mrcajevci-seksualno-zlostavljanje-dete-skola-",
-      "title": "Za roditelje seksualno zlostavljanje, za tužilaštvo \"egzibicionizam\": Protest u Mrčajevcima zbog incidenta u školi",
-      "url": "https://n1info.rs/vesti/mrcajevci-seksualno-zlostavljanje-dete-skola/",
-      "date": "2026-06-18",
-      "datetime": "2026-06-18T16:43:56+00:00",
-      "time": "16:43",
-      "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -491,20 +491,6 @@
       "priority": 25
     },
     {
-      "id": "ica-skupstine-srbije-na-dnevnom-redu-izmene-32-tacke-xrbjzgy",
-      "title": "ZAVRŠEN DRUGI DAN VANREDNE SEDNICE SKUPŠTINE SRBIJE Na dnevnom redu izmene 32 tačke, među njima i izmene seta pravosudnih zakona (VIDEO)",
-      "url": "https://www.blic.rs/vesti/politika/sednica-skupstine-srbije-na-dnevnom-redu-izmene-32-tacke/xrbjzgy",
-      "date": "2026-06-18",
-      "datetime": "2026-06-18T16:07:37+00:00",
-      "time": "16:07",
-      "source": "Blic",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "nredno-zasedanje-skupstine-nastavlja-se-naredne-sedmice-vest",
       "title": "Skupština završila današnji rad, nastavak u utorak u 10.00 časova",
       "url": "https://www.euronews.rs/srbija/drustvo/228829/vanredno-zasedanje-skupstine-nastavlja-se-naredne-sedmice/vest",
@@ -685,6 +671,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "gion-bosna-i-hercegovina-10026081-bascarsija-kradja-sarajevo",
+      "title": "ŠTA ON TO RADI U GLUVO DOBA NOĆI NA BAŠČARŠIJI: Isplivao bizaran snimak, oglasila se i policija - Javnost u BiH u čudu (VIDEO)",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10026081/bascarsija-kradja-sarajevo",
+      "date": "2026-06-18",
+      "datetime": "2026-06-18T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "ginisa-kod-kamiondzije-iz-bih-otkrivena-44-prekrsaja-fxq2t87",
