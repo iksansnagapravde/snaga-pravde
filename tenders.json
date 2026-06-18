@@ -1,101 +1,79 @@
 [
   {
-    "winner": "000,00 Valuta: RSD Ugovor se dodeljuje grupi ponuđača: Vrednost ugovora (bez PDV): 1",
-    "accepted": 1600000.0,
-    "lowest": 6202.0,
-    "difference": 1593798.0,
+    "winner": null,
+    "accepted": 10784400.0,
+    "lowest": 6920.0,
+    "difference": 10777480.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 109139299,
-    "file": "documents/109139299_Odluka o dodeli ugovora konzerv 2026.docx"
+    "id": 112615046,
+    "file": "documents/112615046_Odluka o dodeli ugovora -U-26-26.pdf"
   },
   {
     "winner": null,
-    "accepted": 5000000.0,
-    "lowest": 6202.0,
-    "difference": 4993798.0,
+    "accepted": 648000.0,
+    "lowest": 6067.0,
+    "difference": 641933.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101602583,
-    "file": "documents/101602583_Odluka o dodeli ugovora OPJN 01-26, overena.pdf"
+    "id": 101744155,
+    "file": "documents/101744155_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 2219760.0,
+    "accepted": 33025000.0,
+    "lowest": 6202.0,
+    "difference": 33018798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100038783,
+    "file": "documents/100038783_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 4202.0,
+    "difference": 2995798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113235044,
+    "file": "documents/113235044_Odluka o dodeli ugovora 386-2026.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 894600.0,
     "lowest": 5202.0,
-    "difference": 2214558.0,
+    "difference": 889398.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107155413,
-    "file": "documents/107155413_8 Odluka o dodeli ugovora, dongl.pdf"
+    "id": 100456236,
+    "file": "documents/100456236_Odluka o dodeli ugovora JN12-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 115800.0,
-    "lowest": 6202.0,
-    "difference": 109598.0,
+    "accepted": 350000000.0,
+    "lowest": 1100.0,
+    "difference": 349998900.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100803414,
-    "file": "documents/100803414_Odluka o dodeli ugovora.docx"
+    "id": 100561279,
+    "file": "documents/100561279_Odluka o dodeli narudzbenice JN39.pdf"
   },
   {
     "winner": null,
-    "accepted": 718800.0,
-    "lowest": 6202.0,
-    "difference": 712598.0,
+    "accepted": 13200000.0,
+    "lowest": 1152.0,
+    "difference": 13198848.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100075755,
-    "file": "documents/100075755_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2154720.0,
-    "lowest": 6202.0,
-    "difference": 2148518.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100337350,
-    "file": "documents/100337350_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10000000.0,
-    "lowest": 6202.0,
-    "difference": 9993798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104217668,
-    "file": "documents/104217668_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 13766218.0,
-    "lowest": 6202.0,
-    "difference": 13760016.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106512878,
-    "file": "documents/106512878_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 6180000.0,
-    "lowest": 1202.0,
-    "difference": 6178798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106241014,
-    "file": "documents/106241014_ODLUKA_dod_ug_Parking_LE.pdf"
+    "id": 109501836,
+    "file": "documents/109501836_Odluka o dodeli ugovora.pdf"
   }
 ]
