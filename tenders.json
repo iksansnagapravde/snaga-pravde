@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 422041019.0,
+    "lowest": 5976.0,
+    "difference": 422035043.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109545785,
+    "file": "documents/109545785_Odluka_o_dodeli_ugovora_FTO.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 750000.0,
     "lowest": 6202.0,
     "difference": 743798.0,
