@@ -505,20 +505,6 @@
       "priority": 25
     },
     {
-      "id": "cni-propisi-dostavljeni-venecijanskoj-komisiji-i-poslanicima",
-      "title": "Ministarstvo pravde: Identični propisi dostavljeni Venecijanskoj komisiji i poslanicima",
-      "url": "https://beta.rs/content/246770-ministarstvo-pravde-identicni-propisi-dostavljeni-venecijanskoj-komisiji-i-poslanicima",
-      "date": "2026-06-17",
-      "datetime": "2026-06-17T17:15:13+00:00",
-      "time": "17:15",
-      "source": "Beta",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "rdicevih-zakona-da-li-ih-je-venecijanska-komisija-popravila-",
       "title": "Nove izmene Mrdićevih zakona: Da li ih je Venecijanska komisija popravila",
       "url": "https://www.danas.rs/bbc-news-serbian/nove-izmene-mrdicevih-zakona-da-li-ih-je-venecijanska-komisija-popravila/",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "nija-janez-jansa-orban-vucic-zapadni-balkan-eu-33782987-html",
+      "title": "Janša se vratio, Orban pao, dok na Balkanu populisti ostaju i traju",
+      "url": "https://www.slobodnaevropa.org/a/populizam-srbija-slovenija-janez-jansa-orban-vucic-zapadni-balkan-eu/33782987.html",
+      "date": "2026-06-17",
+      "datetime": "2026-06-17T12:47:25+00:00",
+      "time": "12:47",
+      "source": "RSE Balkan",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
