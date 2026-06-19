@@ -477,34 +477,6 @@
       "priority": 66
     },
     {
-      "id": "erznim-saopstenjem-pokrenulo-kampanju-targetiranja-novinara-",
-      "title": "Koalicija za slobodu medija: VJT kontroverznim saopštenjem pokrenulo kampanju targetiranja novinara",
-      "url": "https://www.danas.rs/vesti/drustvo/koalicija-za-slobodu-medija-vjt-kontroverznim-saopstenjem-pokrenulo-kampanju-targetiranja-novinara/",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T15:55:09+00:00",
-      "time": "15:55",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-tekst-objavljen-na-portalu-novars-o-istrazi-o-zvucnom-topu-",
-      "title": "VJT reagovalo na tekst objavljen na portalu Nova.rs o istrazi o “zvučnom topu”",
-      "url": "https://nova.rs/vesti/hronika/vjt-reagovao-na-tekst-objavljen-na-portalu-novars-o-istrazi-o-zvucnom-topu/",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T15:32:30+00:00",
-      "time": "15:32",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "strazuje-da-li-su-za-slucaj-zvucnog-topa-odgovorni-studenti-",
       "title": "Tužilaštvo u Beogradu istražuje da li su za slučaj ‘zvučnog topa’ odgovorni studenti",
       "url": "https://www.ktv.rs/2026/06/19/tuzilastvo-u-beogradu-istrazuje-da-li-su-za-slucaj-zvucnog-topa-odgovorni-studenti/",
@@ -617,6 +589,20 @@
       "priority": 60
     },
     {
+      "id": "ender-za-remont-29-caf-tramvaja-vredan-oko-44-5-miliona-evra",
+      "title": "VELIKA INVESTICIJA U PRESTONICI! GSP raspisao tender, ulaže se preko 40 miliona evra u modernizaciju tramvaja",
+      "url": "https://www.kurir.rs/vesti/beograd/10026956/gsp-beograd-raspisao-tender-za-remont-29-caf-tramvaja-vredan-oko-44-5-miliona-evra",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T23:00:00+00:00",
+      "time": "23:00",
+      "source": "Kurir",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
+    },
+    {
       "id": "ala-preporuke-o-sprecavanju-korucpije-u-vrhu-izvrsne-vlasti-",
       "title": "GREKO izveštaj: Srbija nije do kraja ispoštovala preporuke o sprečavanju korucpije u vrhu izvršne vlasti",
       "url": "https://nova.rs/vesti/politika/greko-izvestaj-srbija-nije-do-kraja-ispostovala-preporuke-o-sprecavanju-korucpije-u-vrhu-izvrsne-vlasti/",
@@ -693,6 +679,20 @@
       "date": "2026-06-19",
       "datetime": "2026-06-19T19:56:37+00:00",
       "time": "19:56",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "ika-10027602-ovo-je-ubijeni-srbin-u-barseloni-kristijan-kiki",
+      "title": "KO JE UBIJENI SRBIN U BARSELONI: Kiki dobro poznat policiji, hapšen zbog kokaina još 2017, pa dogurao do balkanskog kartela!",
+      "url": "https://www.kurir.rs/crna-hronika/10027602/ovo-je-ubijeni-srbin-u-barseloni-kristijan-kiki",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T16:50:57+00:00",
+      "time": "16:50",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
