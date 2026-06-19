@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2241667.0,
+    "lowest": 1100.0,
+    "difference": 2240567.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100285623,
+    "file": "documents/100285623_Odluka o dodeli ugovora OPJN-10-26, overena.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 91920.0,
     "lowest": 6202.0,
     "difference": 85718.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 114814160,
     "file": "documents/114814160_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 56000000.0,
-    "lowest": 1202.0,
-    "difference": 55998798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100268699,
-    "file": "documents/100268699_Odluka o dodeli ugovora.pdf"
   }
 ]
