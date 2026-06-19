@@ -15,18 +15,18 @@
       "priority": 184
     },
     {
-      "id": "tika-10027461-uznemirujuce-pretnje-stigle-predsedniku-vucicu",
-      "title": "UZNEMIRUJUĆE PRETNJE PREDSEDNIKU VUČIĆU STIGLE POSLE SAOPŠTENJA VJT U BEOGRADU O LAŽIMA O ZVUČNOM TOPU Tužilaštvo hitno reagovalo, dalo nalog za identifikaciju",
-      "url": "https://www.kurir.rs/vesti/politika/10027461/uznemirujuce-pretnje-stigle-predsedniku-vucicu",
+      "id": "a-benda-hitno-se-oglasili-iz-grupe-i-otkazali-nastup-vcbemln",
+      "title": "POZLILO VLADI IZ MAGLA BENDA Hitno se oglasili iz grupe i otkazali nastup: \"Žao nam je, odluka nije bila laka\"",
+      "url": "https://www.blic.rs/zabava/pozlilo-vladi-iz-magla-benda-hitno-se-oglasili-iz-grupe-i-otkazali-nastup/vcbemln",
       "date": "2026-06-19",
-      "datetime": "2026-06-19T12:57:17+00:00",
-      "time": "12:57",
-      "source": "Kurir",
-      "category": "Тужилаштво",
+      "datetime": "2026-06-19T20:04:43+00:00",
+      "time": "20:04",
+      "source": "Blic",
+      "category": "Радничка права",
       "summary": "",
       "breaking": true,
-      "alert": true,
-      "priority": 166
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "trajne-atmosfere-nekaznjivosti-institucije-hitno-da-reaguju-",
@@ -85,20 +85,6 @@
       "priority": 100
     },
     {
-      "id": "onika-5976845-backa-palanka-prevara-crna-magija-prevare-html",
-      "title": "Ухапшене две особе из Бачке Паланке осумњичене за превару, нудили услуге скидања црне магије",
-      "url": "https://www.rts.rs/vesti/hronika/5976845/backa-palanka-prevara-crna-magija-prevare.html",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T11:44:02+00:00",
-      "time": "11:44",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "apsena-cetvorica-zbog-poreske-utaje-i-pranja-novca-u-ns-vest",
       "title": "Milionska prevara u Novom Sadu: Uhapšena četvorica zbog poreske utaje i pranja novca",
       "url": "https://www.euronews.rs/srbija/aktuelno/228768/uhapsena-cetvorica-zbog-poreske-utaje-i-pranja-novca-u-ns/vest",
@@ -125,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "od-mostarske-petlje-veliki-broj-policajaca-na-terenu-cpvj06f",
+      "title": "HAPŠENJE KOD MOSTARSKE PETLJE! Veliki broj policajaca na terenu, pronađen i pištolj?",
+      "url": "https://www.blic.rs/vesti/hronika/hapsenje-kod-mostarske-petlje-veliki-broj-policajaca-na-terenu/cpvj06f",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T20:07:12+00:00",
+      "time": "20:07",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "https-www-danas-rs-svet-u-jermeniji-uhapseni-opozicionari-",
@@ -209,20 +209,6 @@
       "breaking": false,
       "alert": true,
       "priority": 84
-    },
-    {
-      "id": "aranti-iz-backe-palanke-skidali-crnu-magiju-za-pare-i-nakit-",
-      "title": "Uhapšeni prevaranti iz Bačke Palanke: Skidali crnu magiju za pare i nakit",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapseni-prevaranti-iz-backe-palanke-skidali-crnu-magiju-za-pare-i-nakit/",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T14:57:49+00:00",
-      "time": "14:57",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 78
     },
     {
       "id": "opa-org-a-srbija-kina-zidjing-prinudni-rad-sad-33784646-html",
@@ -323,8 +309,78 @@
       "priority": 70
     },
     {
+      "id": "-pucao-u-svoj-narod-to-je-pokusaj-stvaranja-oruzanog-945fmx8",
+      "title": "\"REKLI SU DA JE VUČIĆ PUCAO U SVOJ NAROD\" Advokat o aferi \"zvučni top\": \"To je direktan pokušaj stvaranja oružanog sukoba u Srbiji\"",
+      "url": "https://www.blic.rs/vesti/politika/ljubicanovic-rekli-su-da-je-vucic-pucao-u-svoj-narod-to-je-pokusaj-stvaranja-oruzanog/945fmx8",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T20:03:57+00:00",
+      "time": "20:03",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "-pronaslo-dokaze-o-blokaderskom-planiranju-akcije-zvucni-top",
+      "title": "Тужилаштво пронашло доказе о блокадерском планирању акције „звучни топ”",
+      "url": "https://www.politika.rs/scc/clanak/764632/tuzilastvo-pronaslo-dokaze-o-blokaderskom-planiranju-akcije-zvucni-top",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T19:47:00+00:00",
+      "time": "19:47",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "rizma-skupi-podatke-procesuirace-se-cetiri-grupe-sa-plenuma-",
+      "title": "Tužilac VJT: Nakon što Služba za borbu protiv terorizma skupi podatke, procesuiraće se četiri grupe sa plenuma",
+      "url": "https://nova.rs/vesti/hronika/tuzilac-vjt-nakon-sto-sluzba-za-borbu-protiv-terorizma-skupi-podatke-procesuirace-se-cetiri-grupe-sa-plenuma/",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T19:34:23+00:00",
+      "time": "19:34",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "o-mladic-linglong-tuzilastvo-brzo-iznelo-detalje-firma-cuti-",
+      "title": "Poginuo mladić u fabrici koja obećava \"bezbedno okruženje po meri\": Tužilaštvo okrivilo radnika, Linglong ćuti",
+      "url": "https://n1info.rs/vesti/poginuo-mladic-linglong-tuzilastvo-brzo-iznelo-detalje-firma-cuti/",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T19:33:38+00:00",
+      "time": "19:33",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "vjt-uskoro-procesuiranje-cetiri-grupe-sa-plenuma-zvucni-top-",
+      "title": "Tužilac VJT: Nakon što Služba za borbu protiv terorizma skupi podatke, procesuiraće se četiri grupe lica",
+      "url": "https://n1info.rs/vesti/tuzilac-vjt-uskoro-procesuiranje-cetiri-grupe-sa-plenuma-zvucni-top/",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T19:21:40+00:00",
+      "time": "19:21",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "ikacija-cetiri-grupe-lica-u-vezi-sa-dogadjajima-od-15-marta-",
-      "title": "Tužilac Miodrag Marković najavio identifikacija četiri grupe lica u vezi sa događajima od 15. marta",
+      "title": "Tužilac Miodrag Marković najavio identifikaciju i procesuiranje četiri grupe lica u vezi sa događajima od 15. marta",
       "url": "https://www.danas.rs/vesti/drustvo/tuzilac-miodrag-markovic-najavio-identifikacija-cetiri-grupe-lica-u-vezi-sa-dogadjajima-od-15-marta/",
       "date": "2026-06-19",
       "datetime": "2026-06-19T18:52:57+00:00",
@@ -421,20 +477,6 @@
       "priority": 66
     },
     {
-      "id": "okat-sabic-o-nastavku-obracuna-sa-studentima-i-zvucnom-topu-",
-      "title": "\"Više javno tužilaštvo zloupotrebljava tragediju i svoj položaj\": Šabić nakon saopštenja tužilaštva o \"zvučnom topu\"",
-      "url": "https://nova.rs/vesti/hronika/advokat-sabic-o-nastavku-obracuna-sa-studentima-i-zvucnom-topu/",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T13:35:42+00:00",
-      "time": "13:35",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "strazuje-da-li-su-za-slucaj-zvucnog-topa-odgovorni-studenti-",
       "title": "Tužilaštvo u Beogradu istražuje da li su za slučaj ‘zvučnog topa’ odgovorni studenti",
       "url": "https://www.ktv.rs/2026/06/19/tuzilastvo-u-beogradu-istrazuje-da-li-su-za-slucaj-zvucnog-topa-odgovorni-studenti/",
@@ -519,6 +561,20 @@
       "priority": 66
     },
     {
+      "id": "vo-je-dokument-u-kom-se-prvi-put-spominje-zvucni-top-vcw9mnt",
+      "title": "(FOTO) OVO JE DOKUMENT U KOM SE PRVI PUT SPOMINJE \"ZVUČNI TOP\" Zapisnik sa sastanka Studenata u blokadi i rekonstrukcija događaja sa protesta 15. marta objavljeni na RTS",
+      "url": "https://www.blic.rs/vesti/politika/foto-ovo-je-dokument-u-kom-se-prvi-put-spominje-zvucni-top/vcw9mnt",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T18:45:05+00:00",
+      "time": "18:45",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "ala-preporuke-o-sprecavanju-korucpije-u-vrhu-izvrsne-vlasti-",
       "title": "GREKO izveštaj: Srbija nije do kraja ispoštovala preporuke o sprečavanju korucpije u vrhu izvršne vlasti",
       "url": "https://nova.rs/vesti/politika/greko-izvestaj-srbija-nije-do-kraja-ispostovala-preporuke-o-sprecavanju-korucpije-u-vrhu-izvrsne-vlasti/",
@@ -526,20 +582,6 @@
       "datetime": "2026-06-19T15:42:03+00:00",
       "time": "15:42",
       "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "esti-greko-izvestaj-srbija-korupcija-izvrsna-vlast-problemi-",
-      "title": "GREKO izveštaj: Srbija nije do kraja ispoštovala preporuke o sprečavanju korupcije u vrhu izvršne vlasti",
-      "url": "https://n1info.rs/vesti/greko-izvestaj-srbija-korupcija-izvrsna-vlast-problemi/",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T15:22:48+00:00",
-      "time": "15:22",
-      "source": "N1",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -617,6 +659,20 @@
       "priority": 28
     },
     {
+      "id": "-suspendovan-disciplinski-postupak-medjunarodni-krivicni-sud",
+      "title": "BRITANCI SUSPENDOVALI TUŽIOCA KOJI JE IZDAO NALOGE ZA HAPŠENJE PUTINA I NETANJAHUA: Kan čeka odluku o smeni zbog optužbi za neprikladne odnose sa saradnicom",
+      "url": "https://www.kurir.rs/planeta/10027782/karim-kan-suspendovan-disciplinski-postupak-medjunarodni-krivicni-sud",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T19:56:37+00:00",
+      "time": "19:56",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "ika-10027602-ovo-je-ubijeni-srbin-u-barseloni-kristijan-kiki",
       "title": "KO JE UBIJENI SRBIN U BARSELONI: Kiki dobro poznat policiji, hapšen zbog kokaina još 2017, pa dogurao do balkanskog kartela!",
       "url": "https://www.kurir.rs/crna-hronika/10027602/ovo-je-ubijeni-srbin-u-barseloni-kristijan-kiki",
@@ -632,7 +688,7 @@
     },
     {
       "id": "-10027414-ko-je-beren-sat-turska-glumica-privdena-zbog-droge",
-      "title": "Glumicu privedenu zbog droge Srbi zavoleli kao Bihter: Beren Sat usred skandala s hapšenje napravila šok potez, a evo šta je uradila",
+      "title": "Glumicu privedenu zbog droge Srbi zavoleli kao Bihter: Beren Sat usred skandala s hapšenjem napravila šok potez, a evo šta je uradila",
       "url": "https://www.kurir.rs/zabava/zena/10027414/ko-je-beren-sat-turska-glumica-privdena-zbog-droge",
       "date": "2026-06-19",
       "datetime": "2026-06-19T16:18:22+00:00",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "rs-srbija-politika-228931-sta-stoji-iza-procesa-racak-2-vest",
-      "title": "Šta stoji iza procesa \"Račak 2\": Novi talas optužbi za ratne zločine i ponovno pokretanje slučaja",
-      "url": "https://www.euronews.rs/srbija/politika/228931/sta-stoji-iza-procesa-racak-2/vest",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T14:59:00+00:00",
-      "time": "14:59",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "eopravdano-zovu-mrdicevi-napravljeni-u-nekoj-drugoj-kuhinji-",
-      "title": "Terzić: Zakoni se neopravdano zovu \"Mrdićevi\", napravljeni u nekoj drugoj kuhinji",
-      "url": "https://n1info.rs/vesti/terzic-zakoni-se-neopravdano-zovu-mrdicevi-napravljeni-u-nekoj-drugoj-kuhinji/",
-      "date": "2026-06-19",
-      "datetime": "2026-06-19T16:45:52+00:00",
-      "time": "16:45",
-      "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "nredno-zasedanje-skupstine-nastavlja-se-naredne-sedmice-vest",
-      "title": "Skupština završila današnji rad, nastavak u utorak u 10.00 časova",
-      "url": "https://www.euronews.rs/srbija/drustvo/228829/vanredno-zasedanje-skupstine-nastavlja-se-naredne-sedmice/vest",
-      "date": "2026-06-18",
-      "datetime": "2026-06-18T15:31:00+00:00",
-      "time": "15:31",
-      "source": "Euronews Serbia",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "0-poslanici-nastavljaju-raspravu-o-pravosudnim-zakonima-vest",
-      "title": "Poslanička pitanja otvorila teme od nevremena do EU: Nastavljena rasprava o pravosudnim zakonima",
-      "url": "https://www.euronews.rs/srbija/politika/228740/poslanici-nastavljaju-raspravu-o-pravosudnim-zakonima/vest",
-      "date": "2026-06-18",
-      "datetime": "2026-06-18T10:52:00+00:00",
-      "time": "10:52",
-      "source": "Euronews Serbia",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     }
   ],
   "all_sources": [
