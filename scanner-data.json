@@ -29,20 +29,6 @@
       "priority": 166
     },
     {
-      "id": "-se-hitno-utvrdi-ko-preti-veselinu-milicu-u-okruznom-vrm6cwb",
-      "title": "Više javno tužilaštvo naložilo da se hitno utvrdi ko PRETI Veselinu Miliću u Okružnom zatvoru: Advokat bivšeg načelnika beogradske policije podneo prijavu protiv VIŠE NN lica!",
-      "url": "https://www.blic.rs/vesti/hronika/vise-javno-tuzilastvo-nalozilo-da-se-hitno-utvrdi-ko-preti-veselinu-milicu-u-okruznom/vrm6cwb",
-      "date": "2026-06-20",
-      "datetime": "2026-06-20T07:55:11+00:00",
-      "time": "07:55",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 166
-    },
-    {
       "id": "licu-prete-u-pritvoru-vjt-nalozilo-hitno-formiranje-predmeta",
       "title": "VESELINU MILIĆU PRETE U PRITVORU: Više javno tužilaštvo u Beogradu naložilo hitno formiranje predmeta",
       "url": "https://www.kurir.rs/crna-hronika/10027920/veselinu-milicu-prete-u-pritvoru-vjt-nalozilo-hitno-formiranje-predmeta",
@@ -55,6 +41,20 @@
       "breaking": true,
       "alert": true,
       "priority": 166
+    },
+    {
+      "id": "toplotnog-talasa-bukte-pozari-a-u-holandiji-nepogode-tvpczh9",
+      "title": "(FOTO) GORI EVROPA! Brutalni toplotni talas OBARA REKORDE: Bukte požari, nižu se upozorenja, sazvani krizni sastanci, a u ovoj zemlji NEPOGODE odnose živote",
+      "url": "https://www.blic.rs/vesti/svet/foto-evropa-na-udaru-toplotnog-talasa-bukte-pozari-a-u-holandiji-nepogode/tvpczh9",
+      "date": "2026-06-20",
+      "datetime": "2026-06-20T12:43:27+00:00",
+      "time": "12:43",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 108
     },
     {
       "id": "1tvo-zvu-c4-8dni-top-studenti-u-blokadi-srbija-33784467-html",
@@ -127,20 +127,6 @@
       "priority": 74
     },
     {
-      "id": "a-hapsenja-u-novom-sadu-zbog-odavanja-mup-ovih-podataka-vest",
-      "title": "Uhapšeno još osumnjičenih u slučaju bivšeg policajca koji je odavao podatke: Oglasilo se Više tužilaštvo u Novom Sadu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/228802/nova-hapsenja-u-novom-sadu-zbog-odavanja-mup-ovih-podataka/vest",
-      "date": "2026-06-18",
-      "datetime": "2026-06-18T12:44:00+00:00",
-      "time": "12:44",
-      "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
       "id": "s-2026-06-19-poginuo-radnik-u-fabrici-linglong-u-zrenjaninu-",
       "title": "Poginuo radnik u fabrici Linglong u Zrenjaninu",
       "url": "https://www.ktv.rs/2026/06/19/poginuo-radnik-u-fabrici-linglong-u-zrenjaninu/",
@@ -181,6 +167,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "iti-identitet-onih-koji-prete-veselinu-milicu-u-zatvoru-html",
+      "title": "ВЈТ у Београду: Без одлагања утврдити идентитет оних који прете Веселину Милићу у затвору",
+      "url": "https://www.rts.rs/vesti/hronika/5977454/vjt-u-beogradu-bez-odlaganja-utvrditi-identitet-onih-koji-prete-veselinu-milicu-u-zatvoru.html",
+      "date": "2026-06-20",
+      "datetime": "2026-06-20T11:45:58+00:00",
+      "time": "11:45",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "o-nema-nijedan-dokaz-da-je-simulirana-upotreba-zvucnog-topa-",
@@ -295,34 +295,6 @@
       "priority": 66
     },
     {
-      "id": "iti-identitet-onih-koji-prete-veselinu-milicu-u-zatvoru-html",
-      "title": "ВЈТ у Београду: Без одлагања утврдити идентитет оних који прете Веселину Милићу у затвору",
-      "url": "https://www.rts.rs/vesti/hronika/5977454/vjt-u-beogradu-bez-odlaganja-utvrditi-identitet-onih-koji-prete-veselinu-milicu-u-zatvoru.html",
-      "date": "2026-06-20",
-      "datetime": "2026-06-20T08:52:54+00:00",
-      "time": "08:52",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "vorenici-prete-veselinu-milicu-njegov-advokat-podneo-dg9hzw5",
-      "title": "OTKRIVENO NA KOJI NAČIN PRITVORENICI PRETE VESELINU MILIĆU Njegov advokat podneo prijavu protiv više NN lica, tužilaštvo naložilo HITNU istragu",
-      "url": "https://www.blic.rs/vesti/hronika/otkriveno-na-koji-nacin-pritvorenici-prete-veselinu-milicu-njegov-advokat-podneo/dg9hzw5",
-      "date": "2026-06-20",
-      "datetime": "2026-06-20T08:46:55+00:00",
-      "time": "08:46",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "s-vreme-com-vesti-nenad-vujic-studenti-zvucni-top-terorizam-",
       "title": "Ministar Vujić o studentima i „zvučnom topu“: Tu ima elemenata terorizma",
       "url": "https://vreme.com/vesti/nenad-vujic-studenti-zvucni-top-terorizam/",
@@ -357,20 +329,6 @@
       "date": "2026-06-20",
       "datetime": "2026-06-20T08:30:17+00:00",
       "time": "08:30",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "rs-najave-emisija-novi-dan-ostaci-mrdicevih-zakona-u-praksi-",
-      "title": "Novi dan: Ostaci \"Mrdićevih zakona\" u praksi",
-      "url": "https://n1info.rs/najave-emisija/novi-dan-ostaci-mrdicevih-zakona-u-praksi/",
-      "date": "2026-06-20",
-      "datetime": "2026-06-20T06:53:11+00:00",
-      "time": "06:53",
       "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
@@ -449,32 +407,18 @@
       "priority": 66
     },
     {
-      "id": "o-zaista-biti-poslednja-epizoda-kvadrature-kruga-koju-znamo-",
-      "title": "\"Suza Evrope\": Da li će ovo zaista biti poslednja epizoda \"Kvadrature kruga\" koju znamo?",
-      "url": "https://nova.rs/magazin/prica-se/suza-evrope-da-li-ce-ovo-zaista-biti-poslednja-epizoda-kvadrature-kruga-koju-znamo/",
+      "id": "anak-764775-podignuta-optuznica-protiv-supruge-pedra-sanceza",
+      "title": "Подигнута оптужница против супруге Педра Санчеза",
+      "url": "https://www.politika.rs/scc/clanak/764775/podignuta-optuznica-protiv-supruge-pedra-sanceza",
       "date": "2026-06-20",
-      "datetime": "2026-06-20T07:46:30+00:00",
-      "time": "07:46",
-      "source": "Nova",
-      "category": "Људска права",
+      "datetime": "2026-06-20T13:02:00+00:00",
+      "time": "13:02",
+      "source": "Politika",
+      "category": "Корупција",
       "summary": "",
       "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "amna-emisija-o-zvucnom-topu-na-rts-trazimo-smenu-urednistva-",
-      "title": "\"Naš protest\": Sramna emisija o \"zvučnom topu\" na RTS, tražimo smenu uredništva",
-      "url": "https://n1info.rs/vesti/nas-protest-sramna-emisija-o-zvucnom-topu-na-rts-trazimo-smenu-urednistva/",
-      "date": "2026-06-20",
-      "datetime": "2026-06-20T07:39:32+00:00",
-      "time": "07:39",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "mo-dozvoliti-da-sns-u-nedelju-slavi-korupciju-u-nasem-gradu-",
@@ -603,6 +547,20 @@
       "priority": 26
     },
     {
+      "id": "0028147-deo-pravosudja-opstruisao-istragu-u-aferi-zvucni-top",
+      "title": "DEO PRAVOSUĐA OPSTRUISAO ISTRAGU U AFERI \"ZVUČNI TOP\": Sumnja se da su pojedinci pomagali da se istina ne sazna?",
+      "url": "https://www.kurir.rs/vesti/politika/10028147/deo-pravosudja-opstruisao-istragu-u-aferi-zvucni-top",
+      "date": "2026-06-20",
+      "datetime": "2026-06-20T11:57:16+00:00",
+      "time": "11:57",
+      "source": "Kurir",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "nredno-zasedanje-skupstine-nastavlja-se-naredne-sedmice-vest",
       "title": "Skupština završila današnji rad, nastavak u utorak u 10.00 časova",
       "url": "https://www.euronews.rs/srbija/drustvo/228829/vanredno-zasedanje-skupstine-nastavlja-se-naredne-sedmice/vest",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ropa-org-a-wizz-air-srbija-spor-baza-er-srbija-33783951-html",
+      "title": "'Ugrožen' rad avio kompanije Wizz Air, Brisel proverava poteze Srbije",
+      "url": "https://www.slobodnaevropa.org/a/wizz-air-srbija-spor-baza-er-srbija/33783951.html",
+      "date": "2026-06-19",
+      "datetime": "2026-06-19T05:15:00+00:00",
+      "time": "05:15",
+      "source": "RSE Balkan",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "https-www-danas-rs-svet-sudar-dva-teretna-voza-u-minhenu-",
+      "title": "Sudar dva teretna voza u Minhenu, jedna osoba poginula",
+      "url": "https://www.danas.rs/svet/sudar-dva-teretna-voza-u-minhenu/",
+      "date": "2026-06-20",
+      "datetime": "2026-06-20T12:51:58+00:00",
+      "time": "12:51",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "tps-beta-rs-content-246942-sudari-vozova-u-minhenu-i-londonu",
+      "title": "Sudari vozova u Minhenu i Londonu",
+      "url": "https://beta.rs/content/246942-sudari-vozova-u-minhenu-i-londonu",
+      "date": "2026-06-20",
+      "datetime": "2026-06-20T12:50:08+00:00",
+      "time": "12:50",
+      "source": "Beta",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
