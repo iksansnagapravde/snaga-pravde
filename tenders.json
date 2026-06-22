@@ -1,79 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 5202.0,
-    "lowest": 2202.0,
-    "difference": 3000.0,
+    "accepted": 400000000.0,
+    "lowest": 1296.0,
+    "difference": 399998704.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100010829,
-    "file": "documents/100010829_459 O-181.pdf"
+    "id": 100454087,
+    "file": "documents/100454087_Odluka o dodeli Astra Kikinda.pdf"
   },
   {
     "winner": null,
-    "accepted": 134672.14,
-    "lowest": 2202.0,
-    "difference": 132470.14,
+    "accepted": 5000000.0,
+    "lowest": 6202.0,
+    "difference": 4993798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 109780192,
-    "file": "documents/109780192_458 O-181.pdf"
+    "id": 101637029,
+    "file": "documents/101637029_Odluka o dodeli ugovora - 0001-2026-2  P2.docx"
   },
   {
     "winner": null,
-    "accepted": 62400.0,
-    "lowest": 2202.0,
-    "difference": 60198.0,
+    "accepted": 28000.0,
+    "lowest": 1202.0,
+    "difference": 26798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 165302,
-    "file": "documents/165302_96-O-164.pdf"
+    "id": 100038783,
+    "file": "documents/100038783_ODLUKA 051-26-D.pdf"
   },
   {
     "winner": null,
-    "accepted": 752736.0,
-    "lowest": 2252.0,
-    "difference": 750484.0,
+    "accepted": 6202.0,
+    "lowest": 5202.0,
+    "difference": 1000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100579471,
-    "file": "documents/100579471_Odluka o dodeli.pdf"
+    "id": 102156404,
+    "file": "documents/102156404_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 752736.0,
-    "lowest": 2252.0,
-    "difference": 750484.0,
+    "accepted": 6202.0,
+    "lowest": 5202.0,
+    "difference": 1000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101534073,
+    "file": "documents/101534073_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 6202.0,
+    "lowest": 5202.0,
+    "difference": 1000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112295021,
+    "file": "documents/112295021_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 6202.0,
+    "lowest": 5202.0,
+    "difference": 1000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100345259,
+    "file": "documents/100345259_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 6202.0,
+    "lowest": 5202.0,
+    "difference": 1000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 101822498,
-    "file": "documents/101822498_Odluka o dodeli.pdf"
+    "file": "documents/101822498_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 752736.0,
-    "lowest": 2252.0,
-    "difference": 750484.0,
+    "accepted": 6202.0,
+    "lowest": 5202.0,
+    "difference": 1000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100388569,
-    "file": "documents/100388569_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 752736.0,
-    "lowest": 2252.0,
-    "difference": 750484.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100348281,
-    "file": "documents/100348281_Odluka o dodeli.pdf"
+    "id": 110162255,
+    "file": "documents/110162255_Odluka o dodeli.docx"
   }
 ]
