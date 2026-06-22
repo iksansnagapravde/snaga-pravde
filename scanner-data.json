@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "id": "a-mladic-izboden-u-ulici-patrijarha-joanikija-u-toku-istraga",
+      "title": "IZBODEN MLADIĆ U BEOGRADU! Krvavi obračun u Rakovici: Hitno prebačen u bolnicu, policija traga za napadačem!",
+      "url": "https://www.kurir.rs/crna-hronika/10030015/rakovica-mladic-izboden-u-ulici-patrijarha-joanikija-u-toku-istraga",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T21:56:39+00:00",
+      "time": "21:56",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
+      "id": "ika-uhapsena-zena-na-cetinju-pretila-muzu-pred-decom-g5tp4hc",
+      "title": "PRETILA MUŽU PRED DECOM Uhapšena žena na Cetinju: Tužilaštvo traži zabranu prilaska",
+      "url": "https://www.blic.rs/vesti/hronika/uhapsena-zena-na-cetinju-pretila-muzu-pred-decom/g5tp4hc",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T22:32:43+00:00",
+      "time": "22:32",
+      "source": "Blic",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 98
+    },
+    {
       "id": "om-drustvo-mafijaska-drzava-srbija-kao-palermo-sedamdesetih-",
       "title": "Mafijaška država: Zašto je cela Srbija kao Palermo sedamdesetih",
       "url": "https://vreme.com/drustvo/mafijaska-drzava-srbija-kao-palermo-sedamdesetih/",
@@ -29,6 +57,34 @@
       "priority": 94
     },
     {
+      "id": "gora-10029983-uhapsen-mladic-zbog-prebijanja-na-rimskom-trgu",
+      "title": "ŽESTOKO SE POTUKLI, JEDAN ZAVRŠIO TEŠKO POVREĐEN Uhapšen osumnjičeni za prebijanje na Rimskom trgu",
+      "url": "https://www.kurir.rs/region/crna-gora/10029983/uhapsen-mladic-zbog-prebijanja-na-rimskom-trgu",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T22:40:00+00:00",
+      "time": "22:40",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "34-uhapsen-osumnjiceni-da-je-uvukao-decaka-u-auto-i-tukao-ga",
+      "title": "Ухапшен осумњичени да је увукао дечака у ауто и тукао га",
+      "url": "https://www.politika.rs/scc/clanak/765334/uhapsen-osumnjiceni-da-je-uvukao-decaka-u-auto-i-tukao-ga",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T22:33:00+00:00",
+      "time": "22:33",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "eni-da-je-tukao-decaka-na-parkingu-trznog-centra-u-krusevcu-",
       "title": "Uhapšen osumnjičeni da je tukao dečaka na parkingu tržnog centra u Kruševcu",
       "url": "https://www.danas.rs/vesti/drustvo/uhapsen-osumnjiceni-da-je-tukao-decaka-na-parkingu-trznog-centra-u-krusevcu/",
@@ -44,7 +100,7 @@
     },
     {
       "id": "u-krusevcu-nasilnik-uhvacen-nakon-brutalnog-napada-na-decaka",
-      "title": "UHAPŠEN MUŠKARAC KOJI JE PRETUKAO DEČAKA (13) U KRUŠEVCU Oglasio se MUP: Ubacio ga u auto pa ga brutalno udarao",
+      "title": "UHAPŠEN MUŠKARAC KOJI JE PRETUKAO DEČAKA (13) U KRUŠEVCU Oglasio se MUP: Ubacio ga u auto, pa ga brutalno udarao",
       "url": "https://www.kurir.rs/crna-hronika/10030005/hapsenje-u-krusevcu-nasilnik-uhvacen-nakon-brutalnog-napada-na-decaka",
       "date": "2026-06-22",
       "datetime": "2026-06-22T21:07:24+00:00",
@@ -547,6 +603,20 @@
       "priority": 60
     },
     {
+      "id": "g-za-hapsenje-bivseg-komsara-eu-zbog-afere-katargejt-vkc77jt",
+      "title": "Izdat nalog za hapšenje bivšeg komesara EU zbog afere \"Katargejt\"",
+      "url": "https://www.blic.rs/vesti/svet/izdat-nalog-za-hapsenje-bivseg-komsara-eu-zbog-afere-katargejt/vkc77jt",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T22:59:00+00:00",
+      "time": "22:59",
+      "source": "Blic",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "edovic-nije-na-vreme-prijavila-vlasnistvo-u-hrvatskoj-firmi-",
       "title": "Agencija potvrdila za KRIK da Đedović nije na vreme prijavila vlasništvo u hrvatskoj firmi",
       "url": "https://www.krik.rs/agencija-potvrdila-za-krik-da-djedovic-nije-na-vreme-prijavila-vlasnistvo-u-hrvatskoj-firmi/",
@@ -629,76 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "-229450-mup-zlonamerne-tvrdnje-urednika-bete-o-pritisku-vest",
-      "title": "MUP o optužbama urednika Bete: Zlonamerne tvrdnje o pritisku na medije - otkriveni novi detalji slučaja",
-      "url": "https://www.euronews.rs/srbija/aktuelno/229450/mup-zlonamerne-tvrdnje-urednika-bete-o-pritisku/vest",
-      "date": "2026-06-22",
-      "datetime": "2026-06-22T20:29:00+00:00",
-      "time": "20:29",
-      "source": "Euronews Serbia",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "ojnog-analiticara-aleksandra-radica-zbog-slucaja-zvucni-top-",
-      "title": "Zašto je Aleksandar Radić među prvima pomenuo zvučni top",
-      "url": "https://vreme.com/vesti/policija-pretresa-stan-i-kancelariju-vojnog-analiticara-aleksandra-radica-zbog-slucaja-zvucni-top/",
-      "date": "2026-06-22",
-      "datetime": "2026-06-22T16:17:47+00:00",
-      "time": "16:17",
-      "source": "Vreme",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "ps-radar-nova-rs-drustvo-novi-radar-najavni-tekst-mup-krimi-",
-      "title": "Novi Radar: Kako policija obezbeđuje kriminalce",
-      "url": "https://radar.nova.rs/drustvo/novi-radar-najavni-tekst-mup-krimi/",
-      "date": "2026-06-17",
-      "datetime": "2026-06-17T17:00:00+00:00",
-      "time": "17:00",
-      "source": "Radar",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "lucaju-generalstab-selakovic-targetiran-casno-obavlja-posao-",
-      "title": "Sekretarka Ministarstva kulture iznela odbranu u slučaju „Generalštab“: Selaković targetiran, časno obavlja posao",
-      "url": "https://www.krik.rs/sekretarka-ministarstva-kulture-iznela-odbranu-u-slucaju-generalstab-selakovic-targetiran-casno-obavlja-posao/",
-      "date": "2026-06-10",
-      "datetime": "2026-06-10T12:58:38+00:00",
-      "time": "12:58",
-      "source": "KRIK",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "evropski-nalog-za-hapsenje-avramopulosa-zbog-afere-katargejt",
-      "title": "Белгија издала европски налог за хапшење Аврамопулоса због афере „Катаргејт”",
-      "url": "https://www.politika.rs/scc/clanak/765332/belgija-izdala-evropski-nalog-za-hapsenje-avramopulosa-zbog-afere-katargejt",
-      "date": "2026-06-22",
-      "datetime": "2026-06-22T21:59:00+00:00",
-      "time": "21:59",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     }
   ],
   "all_sources": [
