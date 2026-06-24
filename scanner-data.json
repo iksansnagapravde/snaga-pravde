@@ -267,20 +267,6 @@
       "priority": 66
     },
     {
-      "id": "631-pozar-u-trznom-centru-enjub-sta-dalje-za-vlasnike-lokala",
-      "title": "OGLASILO SE TUŽILAŠTVO \"Vlasnicima oštećenih lokala u Enjubu biće omogućen ulazak kada se steknu uslovi za to\"",
-      "url": "https://www.kurir.rs/crna-hronika/10031631/pozar-u-trznom-centru-enjub-sta-dalje-za-vlasnike-lokala",
-      "date": "2026-06-24",
-      "datetime": "2026-06-24T15:57:09+00:00",
-      "time": "15:57",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "-229727-vjt-beograd-akb-vrsi-pritisak-i-preti-tuziocima-vest",
       "title": "Više javno tužilaštvo u Beogradu: Advokatska komora Beograda vrši neprimereni uticaj i preti tužiocima",
       "url": "https://www.euronews.rs/srbija/aktuelno/229727/vjt-beograd-akb-vrsi-pritisak-i-preti-tuziocima/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-06-23T11:36:00+00:00",
       "time": "11:36",
       "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "tps-radar-nova-rs-drustvo-sta-je-spiri-dzepara-volja-vlasti-",
+      "title": "Džeparac po volji vlasti",
+      "url": "https://radar.nova.rs/drustvo/sta-je-spiri-dzepara-volja-vlasti/",
+      "date": "2026-06-21",
+      "datetime": "2026-06-21T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Radar",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
