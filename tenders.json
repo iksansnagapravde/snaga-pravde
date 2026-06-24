@@ -1,6 +1,50 @@
 [
   {
     "winner": null,
+    "accepted": 3930627.0,
+    "lowest": 2231.0,
+    "difference": 3928396.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112019982,
+    "file": "documents/112019982_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 130000000.0,
+    "lowest": 6202.0,
+    "difference": 129993798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105031233,
+    "file": "documents/105031233_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 2083333.33,
+    "lowest": 6202.0,
+    "difference": 2077131.33,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 3500000.0,
+    "lowest": 2110.0,
+    "difference": 3497890.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107862803,
+    "file": "documents/107862803_13 Odluka o dodeli ugovora SKUTER 2026 PDF.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 123672.0,
     "lowest": 6202.0,
     "difference": 117470.0,
@@ -42,38 +86,5 @@
     "rejection_reasons": [],
     "id": 112615046,
     "file": "documents/112615046_Odluka o dodeli ugovora jn U-25-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2177993.03,
-    "lowest": 6202.0,
-    "difference": 2171791.03,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100575829,
-    "file": "documents/100575829_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2600000.0,
-    "lowest": 6202.0,
-    "difference": 2593798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105301922,
-    "file": "documents/105301922_24-OP 14.26 - Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 3742800.0,
-    "lowest": 4202.0,
-    "difference": 3738598.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101670463,
-    "file": "documents/101670463_08a_Odluka o dodeli ugovora_92 26.pdf"
   }
 ]
