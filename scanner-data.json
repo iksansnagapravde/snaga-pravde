@@ -57,20 +57,6 @@
       "priority": 100
     },
     {
-      "id": "-decu-samu-u-vozilima-na-visokim-temperaturama-ni-na-kratko-",
-      "title": "Upozorenje roditeljima: Ne ostavljajte decu samu u vozilima na visokim temperaturama, ni na kratko",
-      "url": "https://n1info.rs/magazin/zdravlje/upozorenje-roditeljima-ne-ostavljajte-decu-samu-u-vozilima-na-visokim-temperaturama-ni-na-kratko/",
-      "date": "2026-06-24",
-      "datetime": "2026-06-24T15:08:44+00:00",
-      "time": "15:08",
-      "source": "N1",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-milionska-prevara-u-jagodini-uhapsena-zena-iz-beograda-vest",
       "title": "Otkrivena milionska prevara u Jagodini: Uhapšena žena iz Beograda, sumnja se da je falsifikovala važne papire",
       "url": "https://www.euronews.rs/srbija/aktuelno/229673/milionska-prevara-u-jagodini-uhapsena-zena-iz-beograda/vest",
@@ -125,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "adar-nova-rs-drustvo-petar-filipovic-vucic-heroin-napao-mup-",
+      "title": "Vučićev čuvar dilovao heroin i napao policajce",
+      "url": "https://radar.nova.rs/drustvo/petar-filipovic-vucic-heroin-napao-mup/",
+      "date": "2026-06-24",
+      "datetime": "2026-06-24T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-aktivista-raska-zbog-objave-na-instagramu-aleksandar-vucic-",
@@ -225,20 +225,6 @@
       "priority": 70
     },
     {
-      "id": "s-srbija-aktuelno-229455-u-krusevcu-uhapsen-osumnjiceni-vest",
-      "title": "U Kruševcu uhapšen osumnjičeni da je uvukao dečaka u auto i tukao ga",
-      "url": "https://www.euronews.rs/srbija/aktuelno/229455/u-krusevcu-uhapsen-osumnjiceni/vest",
-      "date": "2026-06-22",
-      "datetime": "2026-06-22T21:18:00+00:00",
-      "time": "21:18",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ght-u-20h-prvo-zvucni-talas-a-sada-talas-sumnje-oko-svedoka-",
       "title": "Newsnight: Prvo zvučni talas - a sada talas sumnje oko svedoka?",
       "url": "https://n1info.rs/najave-emisija/newsnight-u-20h-prvo-zvucni-talas-a-sada-talas-sumnje-oko-svedoka/",
@@ -260,20 +246,6 @@
       "datetime": "2026-06-24T16:40:00+00:00",
       "time": "16:40",
       "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "uzilastvo-o-pozaru-u-trznom-centru-na-novom-beogradu-rzqn2zb",
-      "title": "Oglasilo se Tužilaštvo o požaru u TC \"Enjub\" na Novom Beogradu: Angažovan tim veštaka, zabranjeno korišćenje dela objekta",
-      "url": "https://www.blic.rs/vesti/hronika/oglasilo-se-tuzilastvo-o-pozaru-u-trznom-centru-na-novom-beogradu/rzqn2zb",
-      "date": "2026-06-24",
-      "datetime": "2026-06-24T16:19:23+00:00",
-      "time": "16:19",
-      "source": "Blic",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -463,6 +435,20 @@
       "priority": 30
     },
     {
+      "id": "aferi-zvucni-top-vucic-zloupotrebljava-vba-i-vojnu-policiju-",
+      "title": "Bošković (SRCE): U aferi zvučni top Vučić zloupotrebljava VBA i Vojnu policiju",
+      "url": "https://nova.rs/vesti/politika/boskovic-srce-u-aferi-zvucni-top-vucic-zloupotrebljava-vba-i-vojnu-policiju/",
+      "date": "2026-06-24",
+      "datetime": "2026-06-24T21:00:17+00:00",
+      "time": "21:00",
+      "source": "Nova",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "as-rs-vesti-drustvo-dacic-upotreba-zvucnog-topa-zloupotreba-",
       "title": "Dačić: Tvrdnje da sam priznao upotrebu zvučnog topa predstavljaju brutalnu zloupotrebu",
       "url": "https://www.danas.rs/vesti/drustvo/dacic-upotreba-zvucnog-topa-zloupotreba/",
@@ -631,20 +617,6 @@
       "priority": 28
     },
     {
-      "id": "ps-radar-nova-rs-drustvo-novi-radar-najavni-tekst-mup-krimi-",
-      "title": "Novi Radar: Kako policija obezbeđuje kriminalce",
-      "url": "https://radar.nova.rs/drustvo/novi-radar-najavni-tekst-mup-krimi/",
-      "date": "2026-06-17",
-      "datetime": "2026-06-17T17:00:00+00:00",
-      "time": "17:00",
-      "source": "Radar",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "lucaju-generalstab-selakovic-targetiran-casno-obavlja-posao-",
       "title": "Sekretarka Ministarstva kulture iznela odbranu u slučaju „Generalštab“: Selaković targetiran, časno obavlja posao",
       "url": "https://www.krik.rs/sekretarka-ministarstva-kulture-iznela-odbranu-u-slucaju-generalstab-selakovic-targetiran-casno-obavlja-posao/",
@@ -657,6 +629,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "-krivicnog-suda-tuzile-trampovu-administraciju-zbog-sankcija",
+      "title": "Судије Међународног кривичног суда тужиле Трампову администрацију због санкција",
+      "url": "https://www.politika.rs/scc/clanak/765826/sudije-medunarodnog-krivicnog-suda-tuzile-trampovu-administraciju-zbog-sankcija",
+      "date": "2026-06-24",
+      "datetime": "2026-06-24T20:57:00+00:00",
+      "time": "20:57",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "olitika-rezolucija-o-srbiji-ps-se-izvestaj-kovac-djordjevic-",
@@ -693,6 +679,20 @@
       "date": "2026-06-23",
       "datetime": "2026-06-23T16:17:00+00:00",
       "time": "16:17",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "prava-u-skupstini-o-pravosudnim-zakonima-i-zvucnom-topu-vest",
+      "title": "Polemika u parlamentu o zvučnom topu i Venecijanskoj komisiji",
+      "url": "https://www.euronews.rs/srbija/politika/229532/rasprava-u-skupstini-o-pravosudnim-zakonima-i-zvucnom-topu/vest",
+      "date": "2026-06-23",
+      "datetime": "2026-06-23T11:36:00+00:00",
+      "time": "11:36",
       "source": "Euronews Serbia",
       "category": "Правосуђе",
       "summary": "",
