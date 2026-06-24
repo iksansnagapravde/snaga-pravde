@@ -1,6 +1,50 @@
 [
   {
     "winner": null,
+    "accepted": 123672.0,
+    "lowest": 6202.0,
+    "difference": 117470.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 5109180.0,
+    "lowest": 6202.0,
+    "difference": 5102978.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 111971365,
+    "file": "documents/111971365_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "ORNAMENT-INVESTINZENJERING DOO",
+    "accepted": 5988726.0,
+    "lowest": 6202.0,
+    "difference": 5982524.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107487639,
+    "file": "documents/107487639_Odluka o dodeli ugovora-radovi Kisac.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 4000000.0,
+    "lowest": 10110.0,
+    "difference": 3989890.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112615046,
+    "file": "documents/112615046_Odluka o dodeli ugovora jn U-25-26.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2177993.03,
     "lowest": 6202.0,
     "difference": 2171791.03,
@@ -31,49 +75,5 @@
     "rejection_reasons": [],
     "id": 101670463,
     "file": "documents/101670463_08a_Odluka o dodeli ugovora_92 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 93500.0,
-    "lowest": 1202.0,
-    "difference": 92298.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112723288,
-    "file": "documents/112723288_Odluka.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 112362.0,
-    "lowest": 6202.0,
-    "difference": 106160.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101578054,
-    "file": "documents/101578054_Odluka JN-110-26-33.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 120917.9,
-    "lowest": 2202.0,
-    "difference": 118715.9,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106555378,
-    "file": "documents/106555378_667 O-181.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 657500.0,
-    "lowest": 1920.0,
-    "difference": 655580.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101728336,
-    "file": "documents/101728336_Odluka o dodeli ugovora.pdf"
   }
 ]
