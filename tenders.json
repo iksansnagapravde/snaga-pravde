@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2615220.0,
+    "lowest": 6202.0,
+    "difference": 2609018.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100809812,
+    "file": "documents/100809812_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 3930627.0,
     "lowest": 2231.0,
     "difference": 3928396.0,
@@ -75,16 +86,5 @@
     "rejection_reasons": [],
     "id": 107487639,
     "file": "documents/107487639_Odluka o dodeli ugovora-radovi Kisac.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 4000000.0,
-    "lowest": 10110.0,
-    "difference": 3989890.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112615046,
-    "file": "documents/112615046_Odluka o dodeli ugovora jn U-25-26.pdf"
   }
 ]
