@@ -253,20 +253,6 @@
       "priority": 66
     },
     {
-      "id": "https-www-danas-rs-vesti-drustvo-tabloidi-zvucni-top-",
-      "title": "Kako tabloidi pre svih saznaju ko će biti pozvan na razgovor zbog slučaja „zvučni top“?",
-      "url": "https://www.danas.rs/vesti/drustvo/tabloidi-zvucni-top/",
-      "date": "2026-06-24",
-      "datetime": "2026-06-24T16:12:14+00:00",
-      "time": "16:12",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "-229727-vjt-beograd-akb-vrsi-pritisak-i-preti-tuziocima-vest",
       "title": "Više javno tužilaštvo u Beogradu: Advokatska komora Beograda vrši neprimereni uticaj i preti tužiocima",
       "url": "https://www.euronews.rs/srbija/aktuelno/229727/vjt-beograd-akb-vrsi-pritisak-i-preti-tuziocima/vest",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "a-rat-klanova-sve-vidljiviji-ko-se-bori-za-naklonost-vlasti-",
+      "title": "Serije ubistava, pucanjava i bombaških napada: Rat klanova sve vidljiviji – ko se bori za naklonost vlasti",
+      "url": "https://n1info.rs/vesti/serije-ubistava-pucanjava-i-bombaskih-napada-rat-klanova-sve-vidljiviji-ko-se-bori-za-naklonost-vlasti/",
+      "date": "2026-06-24",
+      "datetime": "2026-06-24T19:15:18+00:00",
+      "time": "19:15",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
