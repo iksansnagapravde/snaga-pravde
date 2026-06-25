@@ -43,20 +43,6 @@
       "priority": 104
     },
     {
-      "id": "rustvo-obecali-30000-vaucera-za-odmor-nije-podeljen-nijedan-",
-      "title": "Obećali 30.000 vaučera za odmor, nije podeljen nijedan: Udruženje Moja Srbija traži od ministra Memića da hitno reaguje i spasi turističku sezonu",
-      "url": "https://nova.rs/vesti/drustvo/obecali-30000-vaucera-za-odmor-nije-podeljen-nijedan/",
-      "date": "2026-06-25",
-      "datetime": "2026-06-25T15:40:51+00:00",
-      "time": "15:40",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-milionska-prevara-u-jagodini-uhapsena-zena-iz-beograda-vest",
       "title": "Otkrivena milionska prevara u Jagodini: Uhapšena žena iz Beograda, sumnja se da je falsifikovala važne papire",
       "url": "https://www.euronews.rs/srbija/aktuelno/229673/milionska-prevara-u-jagodini-uhapsena-zena-iz-beograda/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-06-25T14:48:38+00:00",
       "time": "14:48",
       "source": "KTV",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "itika-229667-mrdic-o-opoziciji-i-venecijanskoj-komisiji-vest",
+      "title": "Mrdić: Opozicija nervozna jer je Venecijanska komisija podržala set pravosudnih zakona",
+      "url": "https://www.euronews.rs/srbija/politika/229667/mrdic-o-opoziciji-i-venecijanskoj-komisiji/vest",
+      "date": "2026-06-24",
+      "datetime": "2026-06-24T09:46:00+00:00",
+      "time": "09:46",
+      "source": "Euronews Serbia",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
