@@ -29,34 +29,6 @@
       "priority": 100
     },
     {
-      "id": "n-moler-zbog-teske-kradje-nakita-vrednog-11-5-miliona-dinara",
-      "title": "KREČIO KUĆU, PA BAKI POKRAO NAKIT VREDAN MILIONE! Uhapšen lopov iz Subotice nakon krađe dragocenosti vrednih 11.500.000 dinara",
-      "url": "https://www.kurir.rs/crna-hronika/10033733/u-subotici-uhapsen-moler-zbog-teske-kradje-nakita-vrednog-11-5-miliona-dinara",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T08:48:49+00:00",
-      "time": "08:48",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
-      "id": "ika-moler-osumnjicen-da-je-opljackao-penzionerku-u-subotici-",
-      "title": "Moler osumnjičen da je ukrao nakit vredan 11,5 miliona dinara iz kuće penzionerke u Subotici",
-      "url": "https://nova.rs/vesti/hronika/moler-osumnjicen-da-je-opljackao--penzionerku-u-subotici/",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T08:03:20+00:00",
-      "time": "08:03",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "opa-org-a-milosevic-izrucenje-25-godina-srbija-33787861-html",
       "title": "Četvrt veka od ekstradicije Miloševića: U Hagu neosuđen, u Srbiji rehabilitovan",
       "url": "https://www.slobodnaevropa.org/a/milosevic-izrucenje-25-godina-srbija/33787861.html",
@@ -97,6 +69,34 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "clanak-766430-u-nisu-uhapsen-muskarac-zbog-posedovanja-droge",
+      "title": "У Нишу ухапшен мушкарац због поседовања дроге",
+      "url": "https://www.politika.rs/scc/clanak/766430/u-nisu-uhapsen-muskarac-zbog-posedovanja-droge",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:26:00+00:00",
+      "time": "15:26",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "5-uhapsen-australijanac-osumnjicen-za-ubistvo-tajlandanke-17",
+      "title": "Ухапшен Аустралијанац осумњичен за убиство Тајланђанке (17)",
+      "url": "https://www.politika.rs/scc/clanak/766425/uhapsen-australijanac-osumnjicen-za-ubistvo-tajlandanke-17",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T14:40:00+00:00",
+      "time": "14:40",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "n-5982932-prekoracenje-brzina-srbija-severna-makedonija-html",
@@ -267,20 +267,6 @@
       "priority": 70
     },
     {
-      "id": "oji-su-ucestvovali-u-bacanju-bombe-na-kucu-na-novom-beogradu",
-      "title": "Покренута истрага против четворице који су учествовали у бацању бомбе на кућу на Новом Београду",
-      "url": "https://www.politika.rs/scc/clanak/766415/pokrenuta-istraga-protiv-cetvorice-koji-su-ucestvovali-u-bacanju-bombe-na-kucu-na-novom-beogradu",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T13:58:00+00:00",
-      "time": "13:58",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "tuzilastvo-istrazuje-napad-bombom-na-kucu-na-novom-beogradu-",
       "title": "Više javno tužilaštvo istražuje napad bombom na kuću na Novom Beogradu",
       "url": "https://www.danas.rs/vesti/drustvo/vise-javno-tuzilastvo-istrazuje-napad-bombom-na-kucu-na-novom-beogradu/",
@@ -391,20 +377,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "urir-rs-licni-stav-10033513-sta-je-berza-mitovi-i-hladan-tus",
-      "title": "Šta je berza - mitovi i hladan tuš",
-      "url": "https://www.kurir.rs/licni-stav/10033513/sta-je-berza-mitovi-i-hladan-tus",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T10:00:00+00:00",
-      "time": "10:00",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "06-26-advokati-kokanovic-rajic-i-ninic-o-slucaju-zvucni-top-",
@@ -519,20 +491,6 @@
       "priority": 25
     },
     {
-      "id": "bija-napravila-vazan-korak-ispravljanjem-pravosudnih-zakona-",
-      "title": "Kos: Srbija napravila važan korak ispravljanjem pravosudnih zakona, potez obnavlja poverenje",
-      "url": "https://nova.rs/vesti/politika/srbija-napravila-vazan-korak-ispravljanjem-pravosudnih-zakona/",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T07:24:59+00:00",
-      "time": "07:24",
-      "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "tps-radar-nova-rs-drustvo-sta-je-spiri-dzepara-volja-vlasti-",
       "title": "Džeparac po volji vlasti",
       "url": "https://radar.nova.rs/drustvo/sta-je-spiri-dzepara-volja-vlasti/",
@@ -545,20 +503,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "m-svet-ujedinjene-nacije-narkotici-droga-bolesti-zavisnosti-",
-      "title": "UN upozoravaju: Tržište narkotika se širi",
-      "url": "https://vreme.com/svet/ujedinjene-nacije-narkotici-droga-bolesti-zavisnosti/",
-      "date": "2026-06-26",
-      "datetime": "2026-06-26T16:53:17+00:00",
-      "time": "16:53",
-      "source": "Vreme",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     },
     {
       "id": "naevropa-org-a-srbija-evropska-komisija-zakoni-33789432-html",
@@ -603,6 +547,20 @@
       "priority": 24
     },
     {
+      "id": "enih-topova-u-berlinu-do-presusivanja-reke-po-u-italiji-html",
+      "title": "Рекордне врућине широм Европе – од водених топова у Берлину до пресушивања реке По у Италији",
+      "url": "https://www.rts.rs/vesti/svet/5983063/rekordne-vrucine-sirom-evrope--od-vodenih-topova-u-berlinu-do-presusivanja-reke-po-u-italiji.html",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:23:48+00:00",
+      "time": "15:23",
+      "source": "RTS",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
       "id": "koje-vredi-milione-odmah-im-se-policija-pojavila-na-vratima-",
       "title": "Čistili su dvorište i pronašli bogatstvo koje vredi milione: Odmah im se policija pojavila na vratima",
       "url": "https://nova.rs/magazin/nauka/cistili-su-dvoriste-i-pronasli-bogatstvo-koje-vredi-milione-odmah-im-se-policija-pojavila-na-vratima/",
@@ -631,20 +589,6 @@
       "priority": 8
     },
     {
-      "id": "opi-suocava-se-sa-temperaturom-visom-od-35-celzijusa-qfzvmt7",
-      "title": "150 MILIONA EVROPLJANA NA UDARU! Stotine ljudi umrlo, gori i Balkan, padaju rekordi, događaji se masovno otkazuju: Evo gde se POMERA TOPLOTNI TALAS",
-      "url": "https://www.blic.rs/vesti/svet/najmanje-150-miliona-ljudi-u-evropi-suocava-se-sa-temperaturom-visom-od-35-celzijusa/qfzvmt7",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T09:55:22+00:00",
-      "time": "09:55",
-      "source": "Blic",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "6-26-za-ribarstvo-u-vojvodini-bespovratno-30-miliona-dinara-",
       "title": "Za ribarstvo u Vojvodini bespovratno 30 miliona dinara",
       "url": "https://www.ktv.rs/2026/06/26/za-ribarstvo-u-vojvodini-bespovratno-30-miliona-dinara/",
@@ -659,13 +603,13 @@
       "priority": 8
     },
     {
-      "id": "a-u-batocini-zaplenila-513-grama-amfetamina-uhapsen-muskarac",
-      "title": "POLICIJA ZAPLENILA POLA KILOGRAMA AMFETAMINA U BATOČINI Zaustavili vozilo zbog rutinske kontrole, a razotkrili proizvodnju i prodaju droge",
-      "url": "https://www.kurir.rs/crna-hronika/10033749/policija-u-batocini-zaplenila-513-grama-amfetamina-uhapsen-muskarac",
+      "id": "rs-vesti-hronika-policija-pronasla-marihuanu-i-novac-u-nisu-",
+      "title": "Zaustavili muškarca na četvorociklu, a on pokušao da pobegne: Policija pronašla marihuanu i novac u Nišu",
+      "url": "https://nova.rs/vesti/hronika/policija-pronasla-marihuanu-i-novac-u-nisu/",
       "date": "2026-06-27",
-      "datetime": "2026-06-27T09:17:38+00:00",
-      "time": "09:17",
-      "source": "Kurir",
+      "datetime": "2026-06-27T15:09:19+00:00",
+      "time": "15:09",
+      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -673,32 +617,88 @@
       "priority": 4
     },
     {
-      "id": "9-zagreb-policija-traga-za-muskarcem-zbog-seksualnog-zlocina",
-      "title": "POLICIJA UPUTILA HITAN APEL! Muškarac u crnom seje stah u Dubravi, ako ga primetite, ODMAH okrenite 192! (FOTO)",
-      "url": "https://www.kurir.rs/region/hrvatska/10033729/zagreb-policija-traga-za-muskarcem-zbog-seksualnog-zlocina",
+      "id": "esti-politika-ucesnici-skupa-sns-prelaze-brankov-most-peske-",
+      "title": "SNS skup u Beogradu: Počelo razvijanje zastave, mnoge ulice zatvorene za saobraćaj",
+      "url": "https://www.danas.rs/vesti/politika/ucesnici-skupa-sns-prelaze-brankov-most-peske/",
       "date": "2026-06-27",
-      "datetime": "2026-06-27T09:07:41+00:00",
-      "time": "09:07",
-      "source": "Kurir",
-      "category": "Полиција",
+      "datetime": "2026-06-27T15:34:46+00:00",
+      "time": "15:34",
+      "source": "Danas",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 4
+      "priority": 0
     },
     {
-      "id": "9931-tesko-povreden-radnik-na-gradilistu-u-novom-pazaru-vest",
-      "title": "Teško povređen radnik na gradilištu u Novom Pazaru",
-      "url": "https://www.euronews.rs/srbija/aktuelno/229931/tesko-povreden-radnik-na-gradilistu-u-novom-pazaru/vest",
-      "date": "2026-06-25",
-      "datetime": "2026-06-25T14:38:00+00:00",
-      "time": "14:38",
+      "id": "najvecom-trobojkom-na-skupu-sns-krenula-ka-skupstini-1elkwhx",
+      "title": "(FOTO) UČESNICI SKUPA SNS PONELI NAJVEĆU ZASTAVU Kolona sa trobojkom širokom 10 metara ide ka Skupštini",
+      "url": "https://www.blic.rs/vesti/politika/kolona-sa-najvecom-trobojkom-na-skupu-sns-krenula-ka-skupstini/1elkwhx",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:28:17+00:00",
+      "time": "15:28",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "a-celu-kolone-sa-najvecom-zastavom-na-sns-skupu-foto-grqn9ht",
+      "title": "\"PONOSNI NA SRPSKU TROBOJKU\" Učesnici mitinga SNS razvili zastavu dugačku 500 metara u Ulici kneza Miloša, na čelu kolone Siniša Mali (FOTO)",
+      "url": "https://www.blic.rs/vesti/politika/sinisa-mali-na-celu-kolone-sa-najvecom-zastavom-na-sns-skupu-foto/grqn9ht",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:23:14+00:00",
+      "time": "15:23",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "olitika-10034035-snimci-najvece-trobojke-na-skupu-u-beogradu",
+      "title": "OVAKO SE VOLI SRBIJA! NAROD RAZVIO DŽINOVSKU TROBOJKU Duga čak 500, široka devet metara! Ovaj trenutak su svi čekali, POGLEDAJTE NESVAKIDAŠNJE PRIZORE",
+      "url": "https://www.kurir.rs/vesti/politika/10034035/snimci-najvece-trobojke-na-skupu-u-beogradu",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:13:50+00:00",
+      "time": "15:13",
+      "source": "Kurir",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "om-obuke-pregazilo-ga-oklopno-vozilo-od-27-tona-foto-6tt024x",
+      "title": "NA VOJNIKA NALETELO OKLOPNO VOZILO OD 27 TONA Amerikanac poginuo tokom vojne vežbe u pustinji (FOTO)",
+      "url": "https://www.blic.rs/vesti/svet/americki-vojnik-poginuo-tokom-obuke-pregazilo-ga-oklopno-vozilo-od-27-tona-foto/6tt024x",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:05:00+00:00",
+      "time": "15:05",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ika-230226-ana-brnabic-o-skupu-ispred-narodne-skupstine-vest",
+      "title": "Brnabić: Građani koji pristižu na skup već poslali poruku da je Srbija jedna porodica",
+      "url": "https://www.euronews.rs/srbija/politika/230226/ana-brnabic-o-skupu-ispred-narodne-skupstine/vest",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T15:05:00+00:00",
+      "time": "15:05",
       "source": "Euronews Serbia",
-      "category": "Полиција",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 4
+      "priority": 0
     }
   ],
   "all_sources": [
