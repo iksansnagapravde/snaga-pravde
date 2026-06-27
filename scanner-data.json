@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "dila-rusku-vojnu-fabriku-u-volgogradu-10-povredjenih-086wjd5",
-      "title": "ČUJU SE EKSPLOZIJE, IZDATO UPOZORENJE! Ukrajina krstarećim raketama razorila ključnu fabriku oružja u Rusiji, ima povređenih",
-      "url": "https://www.blic.rs/vesti/svet/ukrajina-raketama-pogodila-rusku-vojnu-fabriku-u-volgogradu-10-povredjenih/086wjd5",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T08:23:45+00:00",
-      "time": "08:23",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "ika-moler-osumnjicen-da-je-opljackao-penzionerku-u-subotici-",
       "title": "Moler osumnjičen da je ukrao nakit vredan 11,5 miliona dinara iz kuće penzionerke u Subotici",
       "url": "https://nova.rs/vesti/hronika/moler-osumnjicen-da-je-opljackao--penzionerku-u-subotici/",
@@ -183,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "ao-drzavljanin-bih-na-zlatiboru-zaplenjeno-25-tone-mesa-vest",
-      "title": "Uhapšen državljanin Bosne i Hercegovine na Zlatiboru: Našli mu više od dve tone \"otrovnog\" junećeg mesa",
-      "url": "https://www.euronews.rs/srbija/aktuelno/229909/pao-drzavljanin-bih-na-zlatiboru-zaplenjeno-25-tone-mesa/vest",
-      "date": "2026-06-25",
-      "datetime": "2026-06-25T12:55:00+00:00",
-      "time": "12:55",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "adar-nova-rs-drustvo-petar-filipovic-vucic-heroin-napao-mup-",
       "title": "Vučićev čuvar dilovao heroin i napao policajce",
       "url": "https://radar.nova.rs/drustvo/petar-filipovic-vucic-heroin-napao-mup/",
@@ -225,20 +197,6 @@
       "priority": 90
     },
     {
-      "id": "c-ako-je-tuzilastvo-verovalo-nikoli-miricu-onda-mora-i-narod",
-      "title": "Dumanović: Ako je tužilaštvo verovalo Nikoli Miriću, onda mora i narod",
-      "url": "https://beta.rs/content/247358-dumanovic-ako-je-tuzilastvo-verovalo-nikoli-miricu-onda-mora-i-narod",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T11:20:08+00:00",
-      "time": "11:20",
-      "source": "Beta",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "tps-www-cins-rs-cuvaj-nam-ledja-podrzi-rad-cins-a-donacijom-",
       "title": "Čuvaj nam leđa – podrži rad CINS-a donacijom",
       "url": "https://www.cins.rs/cuvaj-nam-ledja-podrzi-rad-cins-a-donacijom/",
@@ -251,6 +209,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "-www-rts-rs-vesti-hronika-5982986-subotiva-nakit-kradja-html",
+      "title": "Суботица, ухапшен мушкарац осумњичен да је украо накит вредан више од 11 милиона динара",
+      "url": "https://www.rts.rs/vesti/hronika/5982986/subotiva-nakit-kradja.html",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T12:21:56+00:00",
+      "time": "12:21",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 78
     },
     {
       "id": "sovo-srbija-osumnjiceni-sudski-pozivi-sudjenje-33789650-html",
@@ -267,6 +239,20 @@
       "priority": 72
     },
     {
+      "id": "www-kurir-rs-sport-kosarka-10033911-uhapsen-sin-dvejna-vejda",
+      "title": "SKANDAL! SIN JEDNE OD NAJVEĆIH LEGENDI NBA LIGE ZAVRŠIO IZA REŠETAKA! Uhapšen zbog nasilja u porodici, policija zatekla jeziv prizor!",
+      "url": "https://www.kurir.rs/sport/kosarka/10033911/uhapsen-sin-dvejna-vejda",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T12:50:24+00:00",
+      "time": "12:50",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "orki-pa-bezao-preko-evrope-evo-kako-je-pao-na-kosovu-8se34qg",
       "title": "OTAC OTEO ĆERKU, PA BEŽAO PREKO EVROPE Krio dete u prtljažniku, gasio račune i menjao izgled: Uhapšen NA KOSOVU, evo kako je pao",
       "url": "https://www.blic.rs/vesti/svet/otac-oteo-cerku-na-majorki-pa-bezao-preko-evrope-evo-kako-je-pao-na-kosovu/8se34qg",
@@ -281,32 +267,46 @@
       "priority": 70
     },
     {
-      "id": "ivljao-autoputem-u-makedoniji-vozio-preko-220-na-sat-mnykpn5",
-      "title": "SRBIN DIVLJAO NA AUTO-PUTU U MAKEDONIJI Vozio BMW preko 220 na sat, policija ga zaustavila i ODMAH uhapsila",
-      "url": "https://www.blic.rs/vesti/hronika/srbin-divljao-autoputem-u-makedoniji-vozio-preko-220-na-sat/mnykpn5",
+      "id": "oji-su-ucestvovali-u-bacanju-bombe-na-kucu-na-novom-beogradu",
+      "title": "Покренута истрага против четворице који су учествовали у бацању бомбе на кућу на Новом Београду",
+      "url": "https://www.politika.rs/scc/clanak/766415/pokrenuta-istraga-protiv-cetvorice-koji-su-ucestvovali-u-bacanju-bombe-na-kucu-na-novom-beogradu",
       "date": "2026-06-27",
-      "datetime": "2026-06-27T09:09:53+00:00",
-      "time": "09:09",
-      "source": "Blic",
-      "category": "Полиција",
+      "datetime": "2026-06-27T13:58:00+00:00",
+      "time": "13:58",
+      "source": "Politika",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 70
+      "priority": 66
     },
     {
-      "id": "la-auto-minut-kasnije-vozac-je-uhapsen-ovo-je-razlog-de8vykt",
-      "title": "Policija u Batočini zaustavila auto, a zbog onoga što je nađeno u najlonskim kesama, vozač je ODMAH uhapšen!",
-      "url": "https://www.blic.rs/vesti/hronika/policija-u-batocini-zaustavila-auto-minut-kasnije-vozac-je-uhapsen-ovo-je-razlog/de8vykt",
+      "id": "tuzilastvo-istrazuje-napad-bombom-na-kucu-na-novom-beogradu-",
+      "title": "Više javno tužilaštvo istražuje napad bombom na kuću na Novom Beogradu",
+      "url": "https://www.danas.rs/vesti/drustvo/vise-javno-tuzilastvo-istrazuje-napad-bombom-na-kucu-na-novom-beogradu/",
       "date": "2026-06-27",
-      "datetime": "2026-06-27T09:00:19+00:00",
-      "time": "09:00",
-      "source": "Blic",
-      "category": "Полиција",
+      "datetime": "2026-06-27T13:01:35+00:00",
+      "time": "13:01",
+      "source": "Danas",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 70
+      "priority": 66
+    },
+    {
+      "id": "tvovali-u-bacanju-bombe-na-porodicnu-kucu-na-novom-beogradu-",
+      "title": "Istraga protiv četvorice: Osumnjičeni da su učestvovali u bacanju bombe na porodičnu kuću na Novom Beogradu",
+      "url": "https://n1info.rs/vesti/vjt-pokrenulo-istragu-protiv-cetvorice-muskaraca-osumnjiceni-da-su-ucestvovali-u-bacanju-bombe-na-porodicnu-kucu-na-novom-beogradu/",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T12:53:40+00:00",
+      "time": "12:53",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "slav-braca-markovic-zvucni-top-njise-grane-a-cela-varos-vri-",
@@ -407,20 +407,6 @@
       "priority": 60
     },
     {
-      "id": "eme-com-vesti-dragan-j-vucicevic-crna-gora-informer-urednik-",
-      "title": "Draganu J. Vučićeviću zabranjen ulazak u Crnu Goru",
-      "url": "https://vreme.com/vesti/dragan-j-vucicevic-crna-gora-informer-urednik/",
-      "date": "2026-06-26",
-      "datetime": "2026-06-26T16:03:34+00:00",
-      "time": "16:03",
-      "source": "Vreme",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "06-26-advokati-kokanovic-rajic-i-ninic-o-slucaju-zvucni-top-",
       "title": "Advokati Kokanović, Rajić i Ninić o slučaju zvučni top",
       "url": "https://www.ktv.rs/2026/06/26/advokati-kokanovic-rajic-i-ninic-o-slucaju-zvucni-top/",
@@ -449,13 +435,13 @@
       "priority": 30
     },
     {
-      "id": "6-kako-da-proverite-da-li-je-vasa-kucna-mreza-kompromitovana",
-      "title": "Da li je neko upao u vašu kućnu mrežu i zloupotrebljava je? Evo kako možete da proverite",
-      "url": "https://www.kurir.rs/techvision/vesti/10032596/kako-da-proverite-da-li-je-vasa-kucna-mreza-kompromitovana",
+      "id": "s-www-danas-rs-vesti-politika-srce-zloupotreba-autobusa-gsp-",
+      "title": "SRCE: Zloupotreba autobusa GSP",
+      "url": "https://www.danas.rs/vesti/politika/srce-zloupotreba-autobusa-gsp/",
       "date": "2026-06-27",
-      "datetime": "2026-06-27T08:00:00+00:00",
-      "time": "08:00",
-      "source": "Kurir",
+      "datetime": "2026-06-27T13:47:14+00:00",
+      "time": "13:47",
+      "source": "Danas",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
@@ -533,34 +519,6 @@
       "priority": 25
     },
     {
-      "id": "-hvali-vlast-za-pomak-u-pravosudnim-zakonima-kojeg-nije-bilo",
-      "title": "Đilas: Kos hvali vlast za pomak u pravosudnim zakonima kojeg nije bilo",
-      "url": "https://beta.rs/content/247355-dilas-kos-hvali-vlast-za-pomak-u-pravosudnim-zakonima-kojeg-nije-bilo",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T09:30:08+00:00",
-      "time": "09:30",
-      "source": "Beta",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "ak-ispravljanjem-pravosudnih-zakona-potez-obnavlja-poverenje",
-      "title": "Kos: Srbija napravila važan korak ispravljanjem pravosudnih zakona, potez obnavlja poverenje",
-      "url": "https://beta.rs/content/247353-kos-srbija-napravila-vazan-korak-ispravljanjem-pravosudnih-zakona-potez-obnavlja-poverenje",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T08:50:09+00:00",
-      "time": "08:50",
-      "source": "Beta",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "bija-napravila-vazan-korak-ispravljanjem-pravosudnih-zakona-",
       "title": "Kos: Srbija napravila važan korak ispravljanjem pravosudnih zakona, potez obnavlja poverenje",
       "url": "https://nova.rs/vesti/politika/srbija-napravila-vazan-korak-ispravljanjem-pravosudnih-zakona/",
@@ -568,20 +526,6 @@
       "datetime": "2026-06-27T07:24:59+00:00",
       "time": "07:24",
       "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "k-ispravljanjem-pravosudnih-zakona-potez-obnavlja-poverenje-",
-      "title": "Kos: Srbija napravila važan korak ispravljanjem pravosudnih zakona, potez obnavlja poverenje",
-      "url": "https://n1info.rs/vesti/kos-srbija-napravila-vazan-korak-ispravljanjem-pravosudnih-zakona-potez-obnavlja-poverenje/",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T06:28:11+00:00",
-      "time": "06:28",
-      "source": "N1",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
@@ -673,6 +617,20 @@
       "priority": 12
     },
     {
+      "id": "-nije-progovorio-nijednu-rec-a-zaradio-je-vise-od-20-miliona",
+      "title": "Nije progovorio nijednu reč, a zaradio je više od 20 miliona: Sve je počelo kad je dobio otkaz u fabrici",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/10032352/nije-progovorio-nijednu-rec-a-zaradio-je-vise-od-20-miliona",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T13:43:57+00:00",
+      "time": "13:43",
+      "source": "Kurir",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "opi-suocava-se-sa-temperaturom-visom-od-35-celzijusa-qfzvmt7",
       "title": "150 MILIONA EVROPLJANA NA UDARU! Stotine ljudi umrlo, gori i Balkan, padaju rekordi, događaji se masovno otkazuju: Evo gde se POMERA TOPLOTNI TALAS",
       "url": "https://www.blic.rs/vesti/svet/najmanje-150-miliona-ljudi-u-evropi-suocava-se-sa-temperaturom-visom-od-35-celzijusa/qfzvmt7",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "a-u-batocini-zaplenila-513-grama-amfetamina-uhapsen-muskarac",
+      "title": "POLICIJA ZAPLENILA POLA KILOGRAMA AMFETAMINA U BATOČINI Zaustavili vozilo zbog rutinske kontrole, a razotkrili proizvodnju i prodaju droge",
+      "url": "https://www.kurir.rs/crna-hronika/10033749/policija-u-batocini-zaplenila-513-grama-amfetamina-uhapsen-muskarac",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T09:17:38+00:00",
+      "time": "09:17",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "9-zagreb-policija-traga-za-muskarcem-zbog-seksualnog-zlocina",
+      "title": "POLICIJA UPUTILA HITAN APEL! Muškarac u crnom seje stah u Dubravi, ako ga primetite, ODMAH okrenite 192! (FOTO)",
+      "url": "https://www.kurir.rs/region/hrvatska/10033729/zagreb-policija-traga-za-muskarcem-zbog-seksualnog-zlocina",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T09:07:41+00:00",
+      "time": "09:07",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "9931-tesko-povreden-radnik-na-gradilistu-u-novom-pazaru-vest",
+      "title": "Teško povređen radnik na gradilištu u Novom Pazaru",
+      "url": "https://www.euronews.rs/srbija/aktuelno/229931/tesko-povreden-radnik-na-gradilistu-u-novom-pazaru/vest",
+      "date": "2026-06-25",
+      "datetime": "2026-06-25T14:38:00+00:00",
+      "time": "14:38",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
