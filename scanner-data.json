@@ -29,20 +29,6 @@
       "priority": 125
     },
     {
-      "id": "anizacije-stavili-su-oznaku-auto-put-aleksandra-vucica-foto-",
-      "title": "\"Umesto putokaza za Zabelu i Požarevac, članovi napredne mafijaške organizacije stavili su oznaku 'Auto put Aleksandra Vučića'\" FOTO",
-      "url": "https://nova.rs/vesti/politika/umesto-putokaza-za-zabelu-i-pozarevac-clanovi-napredne-mafijaske-organizacije-stavili-su-oznaku-auto-put-aleksandra-vucica-foto/",
-      "date": "2026-06-26",
-      "datetime": "2026-06-26T16:41:16+00:00",
-      "time": "16:41",
-      "source": "Nova",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "pa-org-a-spijunski-softver-srbija-bugarska-hrw-33789585-html",
       "title": "'Veoma zabrinjavajuće': Novi nalazi HRW o potencijalnom uvozu špijunskih softvera u Srbiju",
       "url": "https://www.slobodnaevropa.org/a/spijunski-softver-srbija-bugarska-hrw/33789585.html",
@@ -393,20 +379,6 @@
       "priority": 66
     },
     {
-      "id": "ti-hronika-5982401-vjt-pretnje-imejl-predsednik-tuzilac-html",
-      "title": "Саслушан осумњичени да је путем имејла претио председнику Србије и главном тужиоцу ВЈТ",
-      "url": "https://www.rts.rs/vesti/hronika/5982401/vjt-pretnje-imejl-predsednik-tuzilac.html",
-      "date": "2026-06-26",
-      "datetime": "2026-06-26T12:24:46+00:00",
-      "time": "12:24",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "8-tuzilastvo-trazi-poternicu-za-osumnjicenim-za-ubistvo-vest",
       "title": "Tužilaštvo traži poternicu za osumnjičenim za ubistvo u restoranu na Voždovcu",
       "url": "https://www.euronews.rs/srbija/aktuelno/229958/tuzilastvo-trazi-poternicu-za-osumnjicenim-za-ubistvo/vest",
@@ -694,6 +666,34 @@
       "datetime": "2026-06-26T11:09:32+00:00",
       "time": "11:09",
       "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom-",
+      "title": "U čijim rukama su poslovi za EXPO: sestra Ace Rošavog, osuđeni u slučaju Arkan, Pink Panter, Bagzijev sin, firma koja se povezuje sa Čumetom",
+      "url": "https://www.cins.rs/u-cijim-rukama-su-poslovi-za-expo-sestra-ace-rosavog-osudjeni-u-slucaju-arkan-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom/",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T06:51:19+00:00",
+      "time": "06:51",
+      "source": "CINS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "adar-nova-rs-drustvo-korupcija-u-policiji-mup-bele-rukavice-",
+      "title": "Prljavi policajci u belim rukavicama",
+      "url": "https://radar.nova.rs/drustvo/korupcija-u-policiji-mup-bele-rukavice/",
+      "date": "2026-06-21",
+      "datetime": "2026-06-21T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Radar",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
