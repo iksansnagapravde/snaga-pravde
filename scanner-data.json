@@ -211,20 +211,6 @@
       "priority": 66
     },
     {
-      "id": "tuzilastvo-istrazuje-napad-bombom-na-kucu-na-novom-beogradu-",
-      "title": "Više javno tužilaštvo istražuje napad bombom na kuću na Novom Beogradu",
-      "url": "https://www.danas.rs/vesti/drustvo/vise-javno-tuzilastvo-istrazuje-napad-bombom-na-kucu-na-novom-beogradu/",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T13:01:35+00:00",
-      "time": "13:01",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "https-www-krik-rs-veselin-milic-ostaje-u-pritvoru-",
       "title": "Veselin Milić ostaje u pritvoru",
       "url": "https://www.krik.rs/veselin-milic-ostaje-u-pritvoru/",
@@ -603,20 +589,6 @@
       "priority": 4
     },
     {
-      "id": "rs-vesti-hronika-policija-pronasla-marihuanu-i-novac-u-nisu-",
-      "title": "Zaustavili muškarca na četvorociklu, a on pokušao da pobegne: Policija pronašla marihuanu i novac u Nišu",
-      "url": "https://nova.rs/vesti/hronika/policija-pronasla-marihuanu-i-novac-u-nisu/",
-      "date": "2026-06-27",
-      "datetime": "2026-06-27T15:09:19+00:00",
-      "time": "15:09",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "rt-hrvatska-gana-svetsko-prvenstvo-mundijal-engleska-panama-",
       "title": "Hrvatska izborila drugo mesto i saznala potencijalnog rivala u nokaut fazi, Engleska slomila otpor Paname",
       "url": "https://www.danas.rs/sport/hrvatska-gana-svetsko-prvenstvo-mundijal-engleska-panama/",
@@ -695,6 +667,34 @@
       "time": "22:34",
       "source": "Blic",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-svet-amerika-ponovo-napala-iran-odjekuju-eksplozije-d6bnj82",
+      "title": "ODJEKUJU EKSPLOZIJE, PRIMIRJE NAČISTO PUKLO! Upravo se desio novi napad: Oglasila se Centralna komanda",
+      "url": "https://www.blic.rs/vesti/svet/amerika-ponovo-napala-iran-odjekuju-eksplozije/d6bnj82",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T22:14:41+00:00",
+      "time": "22:14",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "r-nova-rs-politika-milos-besic-opozicija-na-izborima-kolone-",
+      "title": "Što je manje opozicionih kolona, veće su šanse za njen uspeh",
+      "url": "https://radar.nova.rs/politika/milos-besic-opozicija-na-izborima-kolone/",
+      "date": "2026-06-27",
+      "datetime": "2026-06-27T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
