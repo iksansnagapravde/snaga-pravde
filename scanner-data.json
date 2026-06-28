@@ -169,34 +169,6 @@
       "priority": 92
     },
     {
-      "id": "86-beograd-uhapsen-zbog-laznog-predstavljanja-policajca-vest",
-      "title": "Uhapšen muškarac koji se lažno predstavljao kao policajac i uzimao novac od građana",
-      "url": "https://www.euronews.rs/srbija/aktuelno/230086/beograd-uhapsen-zbog-laznog-predstavljanja-policajca/vest",
-      "date": "2026-06-26",
-      "datetime": "2026-06-26T21:46:00+00:00",
-      "time": "21:46",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "rbija-aktuelno-230137-u-novom-pazaru-uhapsene-dve-osobe-vest",
-      "title": "U Novom Pazaru uhapšene dve osobe zbog pogibije radnika na gradilištu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/230137/u-novom-pazaru-uhapsene-dve-osobe/vest",
-      "date": "2026-06-26",
-      "datetime": "2026-06-26T21:16:00+00:00",
-      "time": "21:16",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "adar-nova-rs-drustvo-petar-filipovic-vucic-heroin-napao-mup-",
       "title": "Vučićev čuvar dilovao heroin i napao policajce",
       "url": "https://radar.nova.rs/drustvo/petar-filipovic-vucic-heroin-napao-mup/",
@@ -379,6 +351,20 @@
       "priority": 60
     },
     {
+      "id": "a-prvih-50-dana-vlade-ispunili-smo-desetine-obecanja-6tqetyk",
+      "title": "\"MNOGO JE VIŠE NASMEJANIH LJUDI NA ULICI\" Mađar: Ponosan sam na prvih 50 dana vlade, ispunili smo desetine obećanja",
+      "url": "https://www.blic.rs/vesti/svet/madjar-ponosan-sam-na-prvih-50-dana-vlade-ispunili-smo-desetine-obecanja/6tqetyk",
+      "date": "2026-06-28",
+      "datetime": "2026-06-28T21:59:00+00:00",
+      "time": "21:59",
+      "source": "Blic",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "-donalda-trampa-gubitnikom-i-optuzio-ga-za-korupciju-y6260k7",
       "title": "(VIDEO) \"VAU, KAKAV LUZER\" Bajden opleo po Trampu: \"Simbol nesposobnosti i narcisoidnosti\"",
       "url": "https://www.blic.rs/vesti/svet/dzo-bajden-nazvao-donalda-trampa-gubitnikom-i-optuzio-ga-za-korupciju/y6260k7",
@@ -519,20 +505,6 @@
       "priority": 26
     },
     {
-      "id": "tps-radar-nova-rs-drustvo-sta-je-spiri-dzepara-volja-vlasti-",
-      "title": "Džeparac po volji vlasti",
-      "url": "https://radar.nova.rs/drustvo/sta-je-spiri-dzepara-volja-vlasti/",
-      "date": "2026-06-21",
-      "datetime": "2026-06-21T22:01:00+00:00",
-      "time": "22:01",
-      "source": "Radar",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "vozno-sredstvo-najcesce-koriste-kriminalne-grupe-na-balkanu-",
       "title": "Teško ih je pratiti, lako nestaju u gužvi, kriminalci ih često koriste: Ubica Prike iz Kumodraža nije jedini koji je ovako izmakao policiji",
       "url": "https://nova.rs/vesti/hronika/ovo-prevozno-sredstvo-najcesce-koriste-kriminalne-grupe-na-balkanu/",
@@ -554,20 +526,6 @@
       "datetime": "2026-06-22T06:51:19+00:00",
       "time": "06:51",
       "source": "CINS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "adar-nova-rs-drustvo-korupcija-u-policiji-mup-bele-rukavice-",
-      "title": "Prljavi policajci u belim rukavicama",
-      "url": "https://radar.nova.rs/drustvo/korupcija-u-policiji-mup-bele-rukavice/",
-      "date": "2026-06-21",
-      "datetime": "2026-06-21T22:01:00+00:00",
-      "time": "22:01",
-      "source": "Radar",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "as-rs-vesti-drustvo-vise-desetina-privedenih-na-gazimestanu-",
+      "title": "Više desetina privedenih na Gazimestanu",
+      "url": "https://www.danas.rs/vesti/drustvo/vise-desetina-privedenih-na-gazimestanu/",
+      "date": "2026-06-28",
+      "datetime": "2026-06-28T14:11:06+00:00",
+      "time": "14:11",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ttps-vreme-com-vesti-kosovska-policija-hapsi-na-gazimestanu-",
+      "title": "Kosovska policija hapsi na Gazimestanu",
+      "url": "https://vreme.com/vesti/kosovska-policija-hapsi-na-gazimestanu/",
+      "date": "2026-06-28",
+      "datetime": "2026-06-28T13:31:30+00:00",
+      "time": "13:31",
+      "source": "Vreme",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "sukob-erdogana-i-netanjahua-poziva-na-nase-unistenje-g67qvx5",
+      "title": "BUKTI SUKOB IZMEĐU NETANJAHUA I ERDOGANA! Pljušte pretnje, umešali i Trampa: \"Poziva na naše UNIŠTENJE\"",
+      "url": "https://www.blic.rs/vesti/svet/bukti-sukob-erdogana-i-netanjahua-poziva-na-nase-unistenje/g67qvx5",
+      "date": "2026-06-28",
+      "datetime": "2026-06-28T22:12:00+00:00",
+      "time": "22:12",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
