@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 6202.0,
+    "difference": 399993798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106001296,
+    "file": "documents/106001296_7562-5 Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 6202.0,
+    "difference": 399993798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100501967,
+    "file": "documents/100501967_7483-5 Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 59391637.39,
+    "lowest": 6202.0,
+    "difference": 59385435.39,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 111094052,
+    "file": "documents/111094052_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 100000.0,
     "lowest": 6202.0,
     "difference": 93798.0,
@@ -75,27 +108,5 @@
     "rejection_reasons": [],
     "id": 102933000,
     "file": "documents/102933000_JN 74 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1555848.0,
-    "lowest": 6202.0,
-    "difference": 1549646.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 108591782,
-    "file": "documents/108591782_8. Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5150000.0,
-    "lowest": 5202.0,
-    "difference": 5144798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104471224,
-    "file": "documents/104471224_Odluka o dodeli 35-26 Par.4 Hlorinat.pdf"
   }
 ]
