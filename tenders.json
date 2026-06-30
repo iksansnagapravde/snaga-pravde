@@ -1,57 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 599815.2,
-    "lowest": 3022.0,
-    "difference": 596793.2,
+    "accepted": 336000.0,
+    "lowest": 2202.0,
+    "difference": 333798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104570038,
-    "file": "documents/104570038_4381 Odluka.pdf"
+    "id": 104728976,
+    "file": "documents/104728976_505 O-181.pdf"
   },
   {
     "winner": null,
-    "accepted": 200000000.0,
+    "accepted": 140265.6,
+    "lowest": 5202.0,
+    "difference": 135063.6,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100143422,
+    "file": "documents/100143422_Odluka o dodeli narudžbenice.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4754.0,
+    "lowest": 4618.0,
+    "difference": 136.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100000555,
+    "file": "documents/100000555_Odluka o dodeli-Premija osiguranja zaposlenih .zip"
+  },
+  {
+    "winner": null,
+    "accepted": 1200000.0,
+    "lowest": 2202.0,
+    "difference": 1197798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104426919,
+    "file": "documents/104426919_494 O-181.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 45600000.0,
+    "lowest": 1920.0,
+    "difference": 45598080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 10110.0,
     "lowest": 6202.0,
-    "difference": 199993798.0,
+    "difference": 3908.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100454087,
-    "file": "documents/100454087_Odluka o dodeli ugovora.docx"
+    "id": 107304324,
+    "file": "documents/107304324_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 117419.4,
-    "lowest": 4000.0,
-    "difference": 113419.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107659818,
-    "file": "documents/107659818_Olduka 4382.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 12193.0,
+    "accepted": 10110.0,
     "lowest": 6202.0,
-    "difference": 5991.0,
+    "difference": 3908.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106738146,
-    "file": "documents/106738146_Odluka o dodeli.docx"
+    "id": 101288330,
+    "file": "documents/101288330_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 12193.0,
+    "accepted": 10110.0,
     "lowest": 6202.0,
-    "difference": 5991.0,
+    "difference": 3908.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101880234,
-    "file": "documents/101880234_Odluka o dodeli.docx"
+    "id": 100256884,
+    "file": "documents/100256884_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 10110.0,
+    "lowest": 6202.0,
+    "difference": 3908.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108585471,
+    "file": "documents/108585471_Odluka o dodeli.docx"
   }
 ]
