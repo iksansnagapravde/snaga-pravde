@@ -1,6 +1,48 @@
 {
   "entries": [
     {
+      "id": "-procesuirati-osobu-koja-je-pretila-smrcu-marku-vidojkovicu-",
+      "title": "SafeJournalists: Hitno identifikovati i procesuirati osobu koja je pretila smrću Marku Vidojkoviću",
+      "url": "https://n1info.rs/vesti/safejournalists-hitno-identifikovati-i-procesuirati-osobu-koja-je-pretila-smrcu-marku-vidojkovicu/",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:51:00+00:00",
+      "time": "12:51",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
+      "id": "h-zbog-sunje-da-su-ostetili-budzet-za-12-miliona-dinara-vest",
+      "title": "Dvoje uhapšenih zbog sunje da su oštetili budžet za 12 miliona dinara",
+      "url": "https://www.b92.net/info/hronika/246935/dvoje-uhapsenih-zbog-sunje-da-su-ostetili-budzet-za-12-miliona-dinara/vest",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:35:00+00:00",
+      "time": "12:35",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
+      "id": "88-uhapseni-zbog-milionske-poreske-prevare-u-novom-sadu-vest",
+      "title": "Uhapšena dvojica zbog sumnje na milionsku prevaru: Preko agencije u Novom Sadu razradili \"šemu\" za skidanje poreza",
+      "url": "https://www.euronews.rs/srbija/aktuelno/230988/uhapseni-zbog-milionske-poreske-prevare-u-novom-sadu/vest",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:07:00+00:00",
+      "time": "12:07",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "prevare-u-vranju-zovu-i-traze-pare-a-povod-je-uzasan-qmjtkyl",
       "title": "LAŽU DA SU DECA POVREĐENA U UDESU I TRAŽE PARE Hitno se oglasio MUP zbog jezive prevare: Ako čujete OVO, odmah zovite policiju!",
       "url": "https://www.blic.rs/vesti/drustvo/mup-se-hitno-oglasio-zbog-jezive-prevare-u-vranju-zovu-i-traze-pare-a-povod-je-uzasan/qmjtkyl",
@@ -29,20 +71,6 @@
       "priority": 100
     },
     {
-      "id": "ike-sumnja-da-su-nikolas-i-danilo-unajmljeni-za-likvidaciju-",
-      "title": "U središtu mafijaške likvidacije u Kumodražu ponovo mladi plaćenici? Potraga za ubicama Darka Veskovića Prike, sumnja da su Nikolas i Danilo unajmljeni za likvidaciju",
-      "url": "https://nova.rs/vesti/hronika/u-sredistu-mafijaske-likvidacije-u-kumodrazu-ponovo-mladi-placenici-potraga-za-ubicama-darka-veskovica-prike-sumnja-da-su-nikolas-i-danilo-unajmljeni-za-likvidaciju/",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:14:10+00:00",
-      "time": "08:14",
-      "source": "Nova",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 99
-    },
-    {
       "id": "0773-korupcija-u-posti-srbije-hapsenje-zbog-zloupotreba-vest",
       "title": "Raskrinkana korupcija u Pošti Srbije: Hapšenje zbog sumnje na milionske zloupotrebe",
       "url": "https://www.euronews.rs/srbija/aktuelno/230773/korupcija-u-posti-srbije-hapsenje-zbog-zloupotreba/vest",
@@ -55,20 +83,6 @@
       "breaking": false,
       "alert": true,
       "priority": 98
-    },
-    {
-      "id": "k-u-protiv-tuzioca-za-organizovani-kriminal-mladena-nenadica",
-      "title": "Мрдић поднео пријаву АСК-у против тужиоца за организовани криминал Младена Ненадића",
-      "url": "https://www.politika.rs/scc/clanak/767576/mrdic-podneo-prijavu-ask-u-protiv-tuzioca-za-organizovani-kriminal-mladena-nenadica",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T10:28:00+00:00",
-      "time": "10:28",
-      "source": "Politika",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
     },
     {
       "id": "rotiv-tuzioca-za-organizovani-kriminal-mladena-nenadica-html",
@@ -99,13 +113,41 @@
       "priority": 94
     },
     {
-      "id": "-optuzen-u-nemackoj-za-sabotazu-severnog-toka-i-ratni-zlocin",
-      "title": "Украјинац оптужен у Немачкој за саботажу „Северног тока”  и ратни злочин",
-      "url": "https://www.politika.rs/scc/clanak/767584/ukrajinac-optuzen-u-nemackoj-za-sabotazu-severnog-toka-i-ratni-zlocin",
+      "id": "n-blizu-istanbula-zahtevamo-od-vlasti-turske-da-ga-oslobodi-",
+      "title": "SKOJ: Drug Miloš Karavezić je uhapšen blizu Istanbula, zahtevamo od vlasti Turske da ga oslobodi",
+      "url": "https://www.danas.rs/vesti/politika/skoj-drug-milos-karavezic-je-uhapsen-blizu-istanbula-zahtevamo-od-vlasti-turske-da-ga-oslobodi/",
       "date": "2026-07-02",
-      "datetime": "2026-07-02T11:07:00+00:00",
-      "time": "11:07",
-      "source": "Politika",
+      "datetime": "2026-07-02T13:03:41+00:00",
+      "time": "13:03",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "fo-rs-vesti-zaplena-oruzja-u-leskovcu-uhapsen-muskarac-foto-",
+      "title": "Zaplena oružja u Leskovcu, uhapšen muškarac (FOTO)",
+      "url": "https://n1info.rs/vesti/zaplena-oruzja-u-leskovcu-uhapsen-muskarac-foto/",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T13:03:24+00:00",
+      "time": "13:03",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "rcegovina-10038298-oduzeta-ratna-zastava-armije-bih-u-doboju",
+      "title": "ODUZETA RATNA ZASTAVA ARMIJE BIH U DOBOJU! Uhapšen muškarac iz Maglaja! (FOTO/VIDEO)",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10038298/oduzeta-ratna-zastava-armije-bih-u-doboju",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T11:56:31+00:00",
+      "time": "11:56",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -211,34 +253,6 @@
       "priority": 90
     },
     {
-      "id": "lavni-list-objavio-pricu-organizovani-kriminal-umesao-prste-",
-      "title": "Šokantne pretnje Vidiću potresle evropsku javnost, slavni list objavio priču: \"Organizovani kriminal umešao prste\"",
-      "url": "https://nova.rs/sport/fudbal/sokantne-pretnje-vidicu-potresle-evropsku-javnost-slavni-list-objavio-pricu-organizovani-kriminal-umesao-prste/",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:59:49+00:00",
-      "time": "08:59",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
-      "id": "iv-tuzioca-za-organizovani-kriminal-mladena-nenadica-sr3v53l",
-      "title": "Mrdić podneo prijavu ASK-u protiv tužioca za organizovani kriminal Mladena Nenadića",
-      "url": "https://www.blic.rs/vesti/politika/mrdic-podneo-prijavu-ask-u-protiv-tuzioca-za-organizovani-kriminal-mladena-nenadica/sr3v53l",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:51:00+00:00",
-      "time": "08:51",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "ika-230934-mrdic-podneo-prijavu-protiv-mladena-nenadica-vest",
       "title": "Mrdić podneo prijavu ASK-u protiv tužioca za organizovani kriminal Mladena Nenadića",
       "url": "https://www.euronews.rs/srbija/politika/230934/mrdic-podneo-prijavu-protiv-mladena-nenadica/vest",
@@ -267,6 +281,34 @@
       "priority": 84
     },
     {
+      "id": "7-u-nisu-uhapseni-osumnjiceni-za-posedovanje-i-prodaju-droge",
+      "title": "У Нишу ухапшени осумњичени за поседовање и продају дроге",
+      "url": "https://www.politika.rs/scc/clanak/767647/u-nisu-uhapseni-osumnjiceni-za-posedovanje-i-prodaju-droge",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T13:00:00+00:00",
+      "time": "13:00",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "6946-policija-u-nisu-zaplenila-drogu-uhapsene-dve-osobe-vest",
+      "title": "Policija u Nišu zaplenila drogu, uhapšene dve osobe",
+      "url": "https://www.b92.net/lokal/nis/hronika/246946/policija-u-nisu-zaplenila-drogu-uhapsene-dve-osobe/vest",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:43:00+00:00",
+      "time": "12:43",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "naevropa-org-a-zvucni-top-uvid-beograd-protest-33794075-html",
       "title": "Zašto je teško snimiti 'zvučni top'?",
       "url": "https://www.slobodnaevropa.org/a/zvucni-top-uvid-beograd-protest/33794075.html",
@@ -279,6 +321,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "boskovic-optuznica-protiv-bivseg-ministra-odbrane-crne-gore-",
+      "title": "Podignuta optužnica protiv bivšeg ministra odbrane Crne Gore",
+      "url": "https://www.danas.rs/svet/region/predrag-boskovic-optuznica-protiv-bivseg-ministra-odbrane-crne-gore/",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:34:18+00:00",
+      "time": "12:34",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "t-ovo-je-ukrajinac-optuzen-za-sabotazu-veka-u-evropi-gmjce1j",
@@ -379,18 +435,46 @@
       "priority": 66
     },
     {
-      "id": "-u-beogradu-bi-moglo-da-se-ustedi-140-miliona-evra-godisnje-",
-      "title": "Jovanović (CLS): Iskorenjivanjem korupcije u Beogradu bi moglo da se uštedi 140 miliona evra godišnje",
-      "url": "https://n1info.rs/vesti/jovanovic-cls-iskorenjivanjem-korupcije-u-beogradu-bi-moglo-da-se-ustedi-140-miliona-evra-godisnje/",
+      "id": "6-07-02-vukotic-cacilend-je-otudjeni-smrdljivi-deo-beograda-",
+      "title": "Vukotić- Ćacilend je otuđeni, smrdljivi deo Beograda",
+      "url": "https://www.ktv.rs/2026/07/02/vukotic-cacilend-je-otudjeni-smrdljivi-deo-beograda/",
       "date": "2026-07-02",
-      "datetime": "2026-07-02T07:23:11+00:00",
-      "time": "07:23",
-      "source": "N1",
-      "category": "Корупција",
+      "datetime": "2026-07-02T12:16:06+00:00",
+      "time": "12:16",
+      "source": "KTV",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
+      "id": "na-dinara-krivicne-prijave-protiv-knjigovodja-iz-novog-sada-",
+      "title": "Hapšenje zbog poreske prevare, oštetili budžet za 12 miliona dinara: Krivične prijave protiv knjigovođa iz Novog Sada",
+      "url": "https://nova.rs/vesti/hronika/hapsenje-zbog-poreske-prevare-ostetili-budzet-za-12-miliona-dinara-krivicne-prijave-protiv-knjigovodja-iz-novog-sada/",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:02:26+00:00",
+      "time": "12:02",
+      "source": "Nova",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 38
+      "priority": 34
+    },
+    {
+      "id": "abavile-18-fiktivnih-racuna-pa-ostetili-budzet-za-12-0yspl14",
+      "title": "OŠTETILI BUDŽET ZA 12 MILIONA! Knjigovođe iz Novog Sada nabavile 18 fiktivnih računa, pa na prevaru dobile povraćaj PDV: Otkriveni detalji prevare",
+      "url": "https://www.blic.rs/vesti/hronika/knjigovodje-iz-novog-sada-nabavile-18-fiktivnih-racuna-pa-ostetili-budzet-za-12/0yspl14",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T11:57:10+00:00",
+      "time": "11:57",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
     },
     {
       "id": "vu-agenciji-za-sprecavanje-korupcije-protiv-mladena-nenadica",
@@ -400,34 +484,6 @@
       "datetime": "2026-07-02T09:51:48+00:00",
       "time": "09:51",
       "source": "Kurir",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "vanje-korupcije-da-ispita-angazovanje-olivere-zekic-u-rem-u-",
-      "title": "BIRODI: Agencija za sprečavanje korupcije da ispita angažovanje Olivere Zekić u REM-u",
-      "url": "https://n1info.rs/vesti/birodi-agencija-za-sprecavanje-korupcije-da-ispita-angazovanje-olivere-zekic-u-rem-u/",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:17:24+00:00",
-      "time": "08:17",
-      "source": "N1",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "vanje-korupcije-da-ispita-angazovanje-olivere-zekic-u-rem-u-",
-      "title": "BIRODI: Agencija za sprečavanje korupcije da ispita angažovanje Olivere Zekić u REM-u",
-      "url": "https://www.danas.rs/vesti/drustvo/birodi-agencija-za-sprecavanje-korupcije-da-ispita-angazovanje-olivere-zekic-u-rem-u/",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:09:28+00:00",
-      "time": "08:09",
-      "source": "Danas",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -449,20 +505,6 @@
       "priority": 30
     },
     {
-      "id": "svet-5985892-malta-ubistvo-novinarka-sudjenje-biznismen-html",
-      "title": "Малта, почело суђење богатом бизнисмену оптуженом за убиство новинарке Дафне Галиције",
-      "url": "https://www.rts.rs/vesti/svet/5985892/malta-ubistvo-novinarka-sudjenje-biznismen.html",
-      "date": "2026-07-01",
-      "datetime": "2026-07-01T19:03:33+00:00",
-      "time": "19:03",
-      "source": "RTS",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "edovic-nije-na-vreme-prijavila-vlasnistvo-u-hrvatskoj-firmi-",
       "title": "Agencija potvrdila za KRIK da Đedović nije na vreme prijavila vlasništvo u hrvatskoj firmi",
       "url": "https://www.krik.rs/agencija-potvrdila-za-krik-da-djedovic-nije-na-vreme-prijavila-vlasnistvo-u-hrvatskoj-firmi/",
@@ -475,6 +517,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "budem-nosila-nanogicu-necu-da-ucestvujem-na-izborima-vrs1nst",
+      "title": "BURNO U FRANCUSKOJ Marin Le Pen: Ako budem nosila NANOGICU neću da učestvujem na predsedničkim izborima!",
+      "url": "https://www.blic.rs/vesti/svet/marin-le-pen-ako-budem-nosila-nanogicu-necu-da-ucestvujem-na-izborima/vrs1nst",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T11:48:11+00:00",
+      "time": "11:48",
+      "source": "Blic",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "teror-i-lazi-blokadera-su-prosli-ali-ne-smeju-da-se-zaborave",
@@ -519,20 +575,6 @@
       "priority": 28
     },
     {
-      "id": "anu-nastavak-antisrpske-politike-koju-sprovodi-kurti-sq7rhk9",
-      "title": "Terzić: Hapšenja na Gazimestanu nastavak antisrpske politike koju sprovodi Kurti",
-      "url": "https://www.blic.rs/vesti/politika/terzic-hapsenja-na-gazimestanu-nastavak-antisrpske-politike-koju-sprovodi-kurti/sq7rhk9",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:32:55+00:00",
-      "time": "08:32",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "zic-hapsenja-na-gazimestanu-antisrpska-politika-kurtija-vest",
       "title": "Terzić: Hapšenja na Gazimestanu nastavak antisrpske politike koju sprovodi Kurti",
       "url": "https://www.euronews.rs/srbija/politika/230929/terzic-hapsenja-na-gazimestanu-antisrpska-politika-kurtija/vest",
@@ -559,20 +601,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "nih-na-nove-pretnje-marku-vidojkovicu-na-drustvenim-mrezama-",
-      "title": "ANEM traži hitnu reakciju nadležnih na nove pretnje Marku Vidojkoviću na društvenim mrežama",
-      "url": "https://www.danas.rs/vesti/drustvo/anem-trazi-hitnu-reakciju-nadleznih-na-nove-pretnje-marku-vidojkovicu-na-drustvenim-mrezama/",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T09:17:07+00:00",
-      "time": "09:17",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     },
     {
       "id": "icnu-prijavu-protiv-kokeze-zbog-planiranja-napada-na-vidica-",
@@ -631,6 +659,34 @@
       "priority": 24
     },
     {
+      "id": "voje-poreskom-prevarom-ostetili-budzet-za-12-miliona-dinara-",
+      "title": "MUP: Krivična prijava protiv dvoje, poreskom prevarom oštetili budžet za 12 miliona dinara",
+      "url": "https://n1info.rs/vesti/mup-krivicna-prijava-protiv-dvoje-poreskom-prevarom-ostetili-budzet-za-12-miliona-dinara/",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T12:31:13+00:00",
+      "time": "12:31",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
+      "id": "la-imanje-u-dvoristu-lavanda-u-kuci-kristalni-luster-q3lhpk1",
+      "title": "Bivša voditeljka se UDALA ZA MILIONERA, sad pokazala deo RASKOŠNOG IMANJA: U dvorištu sama gaji lavandu, u kući kristalni luster (FOTO)",
+      "url": "https://www.blic.rs/zabava/bivsa-voditeljka-pokazala-imanje-u-dvoristu-lavanda-u-kuci-kristalni-luster/q3lhpk1",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T11:30:17+00:00",
+      "time": "11:30",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "vca-iz-gradskog-budzeta-za-medijske-projekte-je-skandalozna-",
       "title": "Lokalni mediji u Čačku: Podela novca iz gradskog budžeta za medijske projekte je skandalozna",
       "url": "https://www.danas.rs/vesti/drustvo/lokalni-mediji-u-cacku-podela-novca-iz-gradskog-budzeta-za-medijske-projekte-je-skandalozna/",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "-rs-sport-zarada-selekcije-bosne-i-hercegovine-na-mundijalu-",
-      "title": "Basnoslovna zarada selekcije Bosne i Hercegovine na Mundijalu",
-      "url": "https://www.danas.rs/sport/zarada-selekcije-bosne-i-hercegovine-na-mundijalu/",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T10:47:05+00:00",
-      "time": "10:47",
-      "source": "Danas",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "a-evo-koliko-vam-novca-leze-na-racun-sa-novom-pomoci-hh69bpb",
-      "title": "Ako primate 56.848 dinara, evo koliko vam novca leže na račun sa novom pomoći države: Detaljna računica za penzionere",
-      "url": "https://www.blic.rs/biznis/moj-novcanik/ako-imate-penziju-56848-dinara-evo-koliko-vam-novca-leze-na-racun-sa-novom-pomoci/hh69bpb",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T10:25:54+00:00",
-      "time": "10:25",
-      "source": "Blic",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "rok-reforme-plan-rasta-novac-evropska-komisija-33794604-html",
-      "title": "Istekao četvrti rok za ispunjenje reformi u okviru Plana rasta za Zapadni Balkan, Brisel čeka procenu",
-      "url": "https://www.slobodnaevropa.org/a/eu-zapadni-balkan-istekao-rok-reforme-plan-rasta-novac-evropska-komisija/33794604.html",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T08:42:35+00:00",
-      "time": "08:42",
-      "source": "RSE Balkan",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "en-na-ulici-na-mrezama-joj-zapretili-sonom-kiselinom-fsn3pnn",
-      "title": "Baka napunila bazen nasred ulice za unuke, odmah počele da joj stižu pretnje, INTERVENISALA POLICIJA: \"Nek na duši imaju troje dečice\"",
-      "url": "https://www.blic.rs/slobodno-vreme/baka-za-unuke-postavila-bazen-na-ulici-na-mrezama-joj-zapretili-sonom-kiselinom/fsn3pnn",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T10:47:24+00:00",
-      "time": "10:47",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
