@@ -57,20 +57,6 @@
       "priority": 100
     },
     {
-      "id": "ica-skupstine-srbije-u-ponedeljak-na-dnevnom-redu-18-tacaka-",
-      "title": "Vanredna sednica Skupštine Srbije u ponedeljak, na dnevnom redu 18 tačaka",
-      "url": "https://n1info.rs/vesti/vanredna-sednica-skupstine-srbije-u-ponedeljak-na-dnevnom-redu-18-tacaka/",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T13:36:43+00:00",
-      "time": "13:36",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "155-autenticno-tumacenje-zakona-o-rem-u-ide-u-skupstinu-vest",
       "title": "Odbor podržao predlog za autentično tumačenje Zakona o elektronskim medijima",
       "url": "https://www.euronews.rs/srbija/politika/231155/autenticno-tumacenje-zakona-o-rem-u-ide-u-skupstinu/vest",
@@ -139,6 +125,20 @@
       "breaking": false,
       "alert": true,
       "priority": 100
+    },
+    {
+      "id": "icenih-uhapsena-zbog-razbojnistva-nad-71-godisnjim-muskarcem",
+      "title": "Двојица осумњичених ухапшена због разбојништва над 71-годишњим мушкарцем",
+      "url": "https://www.politika.rs/scc/clanak/768007/dvojica-osumnjicenih-uhapsena-zbog-razbojnistva-nad-71-godisnjim-muskarcem",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T18:08:00+00:00",
+      "time": "18:08",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "k-osumnjicen-za-svirepo-ubistvo-srpskog-bracnog-para-nlzqrg4",
@@ -295,6 +295,48 @@
       "priority": 85
     },
     {
+      "id": "-krivicnu-prijavu-protiv-pripadnika-mup-i-vlasnika-informera",
+      "title": "Ponoš podneo krivičnu prijavu protiv pripadnika MUP i vlasnika Informera",
+      "url": "https://beta.rs/content/247796-ponos-podneo-krivicnu-prijavu-protiv-pripadnika-mup-i-vlasnika-informera",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T18:15:09+00:00",
+      "time": "18:15",
+      "source": "Beta",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
+      "id": "icnu-prijavu-protiv-inspektora-ukp-a-i-dragana-j-vucicevica-",
+      "title": "Zdravko Ponoš podneo krivičnu prijavu protiv inspektora UKP-a i Dragana J. Vučićevića",
+      "url": "https://nova.rs/vesti/politika/zdravko-ponos-podneo-krivicnu-prijavu-protiv-inspektora-ukp-a-i-dragana-j-vucicevica/",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T18:12:22+00:00",
+      "time": "18:12",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
+      "id": "ps-www-danas-rs-vesti-drustvo-ponos-podneo-krivicne-prijave-",
+      "title": "Ponoš podneo krivične prijave protiv Dragana Vučićevića i pripadnika policije",
+      "url": "https://www.danas.rs/vesti/drustvo/ponos-podneo-krivicne-prijave/",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T18:04:17+00:00",
+      "time": "18:04",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
       "id": "krivicnu-prijavu-protiv-pripadnika-ukp-i-dragana-vucicevica-",
       "title": "Ponoš podneo krivičnu prijavu protiv pripadnika UKP i Dragana Vučićevića",
       "url": "https://n1info.rs/vesti/ponos-podneo-krivicnu-prijavu-protiv-pripadnika-ukp-i-dragana-vucicevica/",
@@ -393,6 +435,20 @@
       "priority": 70
     },
     {
+      "id": "a-razbojnici-pretukli-muskarca-i-oteli-mi-20000-evra-537zpcf",
+      "title": "PRETUKLI STARCA, PA MU OTELI 20.000 EVRA Tužilaštvo pokrenulo istragu protiv dve osobe zbog razbojništva u Pančevu",
+      "url": "https://www.blic.rs/vesti/hronika/razbojnici-pretukli-muskarca-i-oteli-mi-20000-evra/537zpcf",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T18:03:35+00:00",
+      "time": "18:03",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "e-galicije-platio-vise-od-400000-evra-za-odbranu-atentatora-",
       "title": "Optuženi za ubistvo Dafne Karuane Galicije platio više od 400.000 evra za odbranu atentatora",
       "url": "https://nova.rs/vesti/svet/optuzeni-za-ubistvo-dafne-karuane-galicije-platio-vise-od-400000-evra-za-odbranu-atentatora/",
@@ -428,20 +484,6 @@
       "datetime": "2026-07-03T13:44:04+00:00",
       "time": "13:44",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "redio-veroljuba-sarica-tokom-protesta-kod-pravnog-fakulteta-",
-      "title": "Optužni predlog protiv vozača koji je u maju povredio Veroljuba Sarića tokom protesta kod Pravnog fakulteta",
-      "url": "https://www.danas.rs/vesti/drustvo/optuzni-predlog-protiv-vozaca-koji-je-u-maju-povredio-veroljuba-sarica-tokom-protesta-kod-pravnog-fakulteta/",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T13:05:11+00:00",
-      "time": "13:05",
-      "source": "Danas",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -503,20 +545,6 @@
       "breaking": false,
       "alert": true,
       "priority": 64
-    },
-    {
-      "id": "aze-zabranu-mase-i-medveda-zbog-sirenja-meke-ruske-moci-vest",
-      "title": "Britanski poslanici traže zabranu popularnog crtaća &quot;Maša i Medved&quot;: Evo i zašto VIDEO",
-      "url": "https://www.b92.net/kultura/filmtv/247322/britanci-traze-zabranu-mase-i-medveda-zbog-sirenja-meke-ruske-moci/vest",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T17:25:00+00:00",
-      "time": "17:25",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "a-bljesak-radara-znaci-kazna-evo-sta-je-prava-istina-plzsjk9",
@@ -659,20 +687,6 @@
       "priority": 25
     },
     {
-      "id": "rts-rs-vesti-politika-5987070-srpska-lista-mandat-rasic-html",
-      "title": "Српска листа поднела жалбу суду у Приштини због доделе мандата Рашићу",
-      "url": "https://www.rts.rs/vesti/politika/5987070/srpska-lista-mandat-rasic.html",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T11:36:15+00:00",
-      "time": "11:36",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "tvo-nove-jezive-pretnje-marku-vidojkovicu-i-nenadu-kulacinu-",
       "title": "ANEM: Nove jezive pretnje Marku Vidojkoviću i Nenadu Kulačinu",
       "url": "https://nova.rs/vesti/drustvo/nove-jezive-pretnje-marku-vidojkovicu-i-nenadu-kulacinu/",
@@ -680,20 +694,6 @@
       "datetime": "2026-07-03T16:23:47+00:00",
       "time": "16:23",
       "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "rs-vesti-drustvo-tuzilastvu-prijavljene-pretnje-vidojkovicu-",
-      "title": "Tužilaštvu za visokotehnološki kriminal prijavljene nove pretnje Vidojkoviću i Kulačinu",
-      "url": "https://www.danas.rs/vesti/drustvo/tuzilastvu-prijavljene-pretnje-vidojkovicu/",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T16:15:38+00:00",
-      "time": "16:15",
-      "source": "Danas",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
