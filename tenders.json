@@ -1,79 +1,101 @@
 [
   {
-    "winner": null,
-    "accepted": 360000.0,
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 4750000.0,
+    "lowest": 6210.0,
+    "difference": 4743790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103964172,
+    "file": "documents/103964172_Odluka o dodeli Ugovora-Stage pro doo.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 4990990.0,
+    "lowest": 6210.0,
+    "difference": 4984780.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104144462,
+    "file": "documents/104144462_Odluka o dodeli ugovora-Zoom media (2).pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 588000.0,
     "lowest": 7202.0,
-    "difference": 352798.0,
+    "difference": 580798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 105046072,
-    "file": "documents/105046072_Odluka o dodeli ugovora.docx"
+    "file": "documents/105046072_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 1200000.0,
-    "lowest": 2110.0,
-    "difference": 1197890.0,
+    "accepted": 13200000.0,
+    "lowest": 1115.0,
+    "difference": 13198885.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102141031,
-    "file": "documents/102141031_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "000,00 Valuta: RSD Ugovor se dodeljuje grupi ponudaéa: G",
-    "accepted": 5000000.0,
-    "lowest": 3202.0,
-    "difference": 4996798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100711927,
-    "file": "documents/100711927_09-Odluka o dodeli ugovora 066-3-26.pdf"
+    "id": 101737537,
+    "file": "documents/101737537_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 65153.0,
-    "lowest": 7202.0,
-    "difference": 57951.0,
+    "accepted": 140000000.0,
+    "lowest": 6202.0,
+    "difference": 139993798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100211258,
-    "file": "documents/100211258_Odluka o dodeli.docx"
+    "id": 103920327,
+    "file": "documents/103920327_8-05-22-2026-3.PDF"
   },
   {
     "winner": null,
-    "accepted": 65153.0,
-    "lowest": 7202.0,
-    "difference": 57951.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101738634,
-    "file": "documents/101738634_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 17000000.0,
+    "accepted": 27785.69,
     "lowest": 2202.0,
-    "difference": 16997798.0,
+    "difference": 25583.69,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100001716,
-    "file": "documents/100001716_503 - 2026 - ODLUKA O DODELI UGOVORA.pdf"
+    "id": 109780192,
+    "file": "documents/109780192_Odluka.pdf"
   },
   {
     "winner": null,
-    "accepted": 60888.0,
-    "lowest": 1202.0,
-    "difference": 59686.0,
+    "accepted": 16170000.0,
+    "lowest": 1920.0,
+    "difference": 16168080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 112723288,
-    "file": "documents/112723288_Odluka o izdavanju pojedinacne narudžbenice - 36.pdf"
+    "id": 103605787,
+    "file": "documents/103605787_Odluka o dodeli ugovora, RIK JN br. 4-26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 28000000.0,
+    "lowest": 11920.0,
+    "difference": 27988080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100093505,
+    "file": "documents/100093505_Odluka o dodeli ugovora, RIK JN br. 3-26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 36000000.0,
+    "lowest": 1920.0,
+    "difference": 35998080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100220186,
+    "file": "documents/100220186_Odluka o dodeli ugovora, RIK JN br. 2-26.pdf"
   }
 ]
