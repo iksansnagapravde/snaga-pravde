@@ -491,20 +491,6 @@
       "priority": 70
     },
     {
-      "id": "rdela-nadam-se-da-ce-le-pen-pobediti-na-izborima-2027-godine",
-      "title": "Бардела: Надам се да ће Ле Пен победити на изборима 2027. године",
-      "url": "https://www.politika.rs/scc/clanak/768254/bardela-nadam-se-da-ce-le-pen-pobediti-na-izborima-2027-godine",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T19:52:00+00:00",
-      "time": "19:52",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ski-oligarh-izasao-iz-kome-nakon-eksplozije-u-monaku-214w0vn",
       "title": "(FOTO) OLIGARH IZAŠAO IZ KOME NAKON EKSPLOZIJE U MONAKU! Ljubavnica u TEŠKOM stanju, može da izgubi ČULA: Interpol traga za ovom ženom",
       "url": "https://www.blic.rs/vesti/svet/ukrajinski-oligarh-izasao-iz-kome-nakon-eksplozije-u-monaku/214w0vn",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-02T22:03:00+00:00",
       "time": "22:03",
       "source": "Radar",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "icnu-prijavu-protiv-kokeze-zbog-planiranja-napada-na-vidica-",
+      "title": "Ninić podneo krivičnu prijavu protiv Kokeze zbog planiranja napada na Vidića",
+      "url": "https://www.krik.rs/ninic-podneo-krivicnu-prijavu-protiv-kokeze-zbog-planiranja-napada-na-vidica/",
+      "date": "2026-07-01",
+      "datetime": "2026-07-01T14:50:07+00:00",
+      "time": "14:50",
+      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
