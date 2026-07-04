@@ -57,20 +57,6 @@
       "priority": 95
     },
     {
-      "id": "uhapsen-pripadnik-vracarskog-klana-zbog-nasilnckog-ponasanja",
-      "title": "Ухапшен припадник „врачарског клана” због насилнчког понашања",
-      "url": "https://www.politika.rs/scc/clanak/768211/uhapsen-pripadnik-vracarskog-klana-zbog-nasilnckog-ponasanja",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T17:34:00+00:00",
-      "time": "17:34",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "nas-rs-vesti-drustvo-mup-uhapsen-pripadnik-vracarskog-klana-",
       "title": "MUP: Uhapšen pripadnik „vračarskog klana“",
       "url": "https://www.danas.rs/vesti/drustvo/mup-uhapsen-pripadnik-vracarskog-klana/",
@@ -204,20 +190,6 @@
       "datetime": "2026-07-04T13:59:50+00:00",
       "time": "13:59",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "40081-hapsenje-srbina-na-interpolovoj-poternici-u-crnoj-gori",
-      "title": "UHAPŠEN SRBIN S INTERPOLOVE POTERNICE: Lociran u Crnoj Gori, smešten u ekstradicioni pritvor! (video)",
-      "url": "https://www.kurir.rs/crna-hronika/10040081/hapsenje-srbina-na-interpolovoj-poternici-u-crnoj-gori",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T13:45:41+00:00",
-      "time": "13:45",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -379,20 +351,6 @@
       "priority": 90
     },
     {
-      "id": "31066-sabac-uhapsene-tri-osobe-zbog-ekoloskog-kriminala-vest",
-      "title": "Ekološki kriminal kod Šapca: Uhapšene tri osobe zbog nelegalne eksploatacije peska i šljunka na Drini (FOTO)",
-      "url": "https://www.euronews.rs/srbija/aktuelno/231066/sabac-uhapsene-tri-osobe-zbog-ekoloskog-kriminala/vest",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T20:24:00+00:00",
-      "time": "20:24",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "tps-www-cins-rs-cuvaj-nam-ledja-podrzi-rad-cins-a-donacijom-",
       "title": "Čuvaj nam leđa – podrži rad CINS-a donacijom",
       "url": "https://www.cins.rs/cuvaj-nam-ledja-podrzi-rad-cins-a-donacijom/",
@@ -414,20 +372,6 @@
       "datetime": "2026-07-04T17:03:35+00:00",
       "time": "17:03",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "ka-10040068-troje-maloletnika-uhapseno-zbog-pljacke-picerije",
-      "title": "DEČACI UHAPŠENI U PICERIJI U BEOGRADU: Policija ih zatekla na delu, u džepovima im našli dokaz!",
-      "url": "https://www.kurir.rs/crna-hronika/10040068/troje-maloletnika-uhapseno-zbog-pljacke-picerije",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T13:51:01+00:00",
-      "time": "13:51",
-      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -461,6 +405,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "rdela-nadam-se-da-ce-le-pen-pobediti-na-izborima-2027-godine",
+      "title": "Бардела: Надам се да ће Ле Пен победити на изборима 2027. године",
+      "url": "https://www.politika.rs/scc/clanak/768254/bardela-nadam-se-da-ce-le-pen-pobediti-na-izborima-2027-godine",
+      "date": "2026-07-04",
+      "datetime": "2026-07-04T19:52:00+00:00",
+      "time": "19:52",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "ski-oligarh-izasao-iz-kome-nakon-eksplozije-u-monaku-214w0vn",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "dnu-nemanju-vidica-ako-ne-odustane-od-saveza-ide-na-groblje-",
+      "title": "Kokeza na „skaju” angažovao kriminalce da napadnu Nemanju Vidića: „Ako ne odustane od saveza, ide na groblje”",
+      "url": "https://www.krik.rs/kokeza-na-skaju-angazovao-kriminalce-da-napadnu-nemanju-vidica-ako-ne-odustane-od-saveza-ide-na-groblje/",
+      "date": "2026-06-30",
+      "datetime": "2026-06-30T06:00:35+00:00",
+      "time": "06:00",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom-",
+      "title": "U čijim rukama su poslovi za EXPO: sestra Ace Rošavog, osuđeni u slučaju Arkan, Pink Panter, Bagzijev sin, firma koja se povezuje sa Čumetom",
+      "url": "https://www.cins.rs/u-cijim-rukama-su-poslovi-za-expo-sestra-ace-rosavog-osudjeni-u-slucaju-arkan-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom/",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T06:51:19+00:00",
+      "time": "06:51",
+      "source": "CINS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "h-milionera-i-jos-veci-jaz-izmedju-bogatih-i-siromasnih-vest",
+      "title": "Bogati postaju još bogatiji: Svet dobio milion novih milionera za godinu dana",
+      "url": "https://www.b92.net/biz/svet/vesti/247490/milion-novih-milionera-i-jos-veci-jaz-izmedju-bogatih-i-siromasnih/vest",
+      "date": "2026-07-04",
+      "datetime": "2026-07-04T19:29:00+00:00",
+      "time": "19:29",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
