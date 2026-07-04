@@ -407,20 +407,6 @@
       "priority": 85
     },
     {
-      "id": "-krivicnu-prijavu-protiv-pripadnika-mup-i-vlasnika-informera",
-      "title": "Ponoš podneo krivičnu prijavu protiv pripadnika MUP i vlasnika Informera",
-      "url": "https://beta.rs/content/247796-ponos-podneo-krivicnu-prijavu-protiv-pripadnika-mup-i-vlasnika-informera",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T18:15:09+00:00",
-      "time": "18:15",
-      "source": "Beta",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "icnu-prijavu-protiv-inspektora-ukp-a-i-dragana-j-vucicevica-",
       "title": "Zdravko Ponoš podneo krivičnu prijavu protiv inspektora UKP-a i Dragana J. Vučićevića",
       "url": "https://nova.rs/vesti/politika/zdravko-ponos-podneo-krivicnu-prijavu-protiv-inspektora-ukp-a-i-dragana-j-vucicevica/",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "2026-ko-moze-da-dobije-10-000-dinara-i-kako-izgleda-prijava-",
+      "title": "Sve o turističkim vaučerima 2026 – Ko može da dobije 10.000 dinara i kako izgleda prijava",
+      "url": "https://www.ktv.rs/2026/07/03/sve-o-turistickim-vaucerima-2026-ko-moze-da-dobije-10-000-dinara-i-kako-izgleda-prijava/",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T15:06:31+00:00",
+      "time": "15:06",
+      "source": "KTV",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     }
   ],
   "all_sources": [
