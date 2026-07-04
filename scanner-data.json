@@ -113,20 +113,6 @@
       "priority": 100
     },
     {
-      "id": "-za-autenticno-tumacenje-zakona-o-elektronskim-medijima-html",
-      "title": "Одбор подржао предлог за аутентично тумачење Закона о електронским медијима",
-      "url": "https://www.rts.rs/vesti/politika/5987096/odbor-podrzao-predlog-za-autenticno-tumacenje-zakona-o-elektronskim-medijima.html",
-      "date": "2026-07-03",
-      "datetime": "2026-07-03T11:55:08+00:00",
-      "time": "11:55",
-      "source": "RTS",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "057-taci-krsi-uslove-pritvora-moguce-stroze-mere-u-hagu-vest",
       "title": "Haški sud izdao novo upozorenje Tačiju: Krši uslove pritvora, moguće i strože mere",
       "url": "https://www.euronews.rs/srbija/aktuelno/231057/taci-krsi-uslove-pritvora-moguce-stroze-mere-u-hagu/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-03T15:06:31+00:00",
       "time": "15:06",
       "source": "KTV",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "rbija-politika-230952-danica-marinkovic-o-slucaju-racak-vest",
+      "title": "Danica Marinković o Račku: Postupci prištinskih institucija su zloupotreba već okončane istrage",
+      "url": "https://www.euronews.rs/srbija/politika/230952/danica-marinkovic-o-slucaju-racak/vest",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T09:45:00+00:00",
+      "time": "09:45",
+      "source": "Euronews Serbia",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
