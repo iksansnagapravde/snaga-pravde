@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "showbiz-goca-trzan-iskoriscena-za-prevaru-hitno-se-oglasila-",
-      "title": "Goca Tržan iskorišćena za prevaru: Hitno se oglasila",
-      "url": "https://nova.rs/zabava/showbiz/goca-trzan-iskoriscena-za-prevaru-hitno-se-oglasila/",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T13:07:00+00:00",
-      "time": "13:07",
-      "source": "Nova",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 128
-    },
-    {
       "id": "i-sad-na-vodi-dunav-izgadnja-prituzbe-gradjana-33795667-html",
       "title": "'Žele da nam oduzmu prirodu': Šta je sporno u izgradnji stambenog kompleksa u Novom Sadu?",
       "url": "https://www.slobodnaevropa.org/a/novi-sad-na-vodi-dunav-izgadnja-prituzbe-gradjana/33795667.html",
@@ -37,20 +23,6 @@
       "time": "12:54",
       "source": "Euronews Serbia",
       "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "057-taci-krsi-uslove-pritvora-moguce-stroze-mere-u-hagu-vest",
-      "title": "Haški sud izdao novo upozorenje Tačiju: Krši uslove pritvora, moguće i strože mere",
-      "url": "https://www.euronews.rs/srbija/aktuelno/231057/taci-krsi-uslove-pritvora-moguce-stroze-mere-u-hagu/vest",
-      "date": "2026-07-02",
-      "datetime": "2026-07-02T19:04:00+00:00",
-      "time": "19:04",
-      "source": "Euronews Serbia",
-      "category": "Лишени слободе",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -83,20 +55,6 @@
       "breaking": false,
       "alert": true,
       "priority": 95
-    },
-    {
-      "id": "istri-uhvacen-63-godisnji-pedofil-naocarima-snimao-decu-vest",
-      "title": "Horor u Istri: Uhapšen 63-godišnjak koji je specijalnim naočarima krišom snimao nagu decu",
-      "url": "https://www.b92.net/zivot/aktuelno/247557/u-istri-uhvacen-63-godisnji-pedofil-naocarima-snimao-decu/vest",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T18:05:00+00:00",
-      "time": "18:05",
-      "source": "B92",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
     },
     {
       "id": "uhapsen-pripadnik-vracarskog-klana-zbog-nasilnckog-ponasanja",
@@ -267,20 +225,6 @@
       "priority": 92
     },
     {
-      "id": "anin-srbije-koji-se-nalazi-na-interpolovoj-potrenici-7cztp6t",
-      "title": "SRBIN SA INTERPOLOVE POTERNICE UHAPŠEN U CRNOJ GORI Kragujevčanin pao u Beranama, evo za šta se sve tereti",
-      "url": "https://www.blic.rs/vesti/hronika/u-beranama-uhapsen-drzavljanin-srbije-koji-se-nalazi-na-interpolovoj-potrenici/7cztp6t",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T13:27:23+00:00",
-      "time": "13:27",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "no-osmoro-osumnjicenih-medju-njima-cetvorica-policajaca-html",
       "title": "Пронађено тело отете мексичке новинарке – ухапшено осморо осумњичених, међу њима четворица полицајаца",
       "url": "https://www.rts.rs/vesti/svet/5987726/pronadjeno-telo-otete-meksicke-novinarke--uhapseno-osmoro-osumnjicenih-medju-njima-cetvorica-policajaca.html",
@@ -288,20 +232,6 @@
       "datetime": "2026-07-04T13:12:07+00:00",
       "time": "13:12",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "kurir-rs-crna-hronika-10040016-uhapsen-narko-diler-u-pancevu",
-      "title": "UHAPŠEN NARKO DILER U PANČEVU: Prevozio marihuanu radi dalje prodaje!",
-      "url": "https://www.kurir.rs/crna-hronika/10040016/uhapsen-narko-diler-u-pancevu",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T12:22:26+00:00",
-      "time": "12:22",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -477,20 +407,6 @@
       "priority": 90
     },
     {
-      "id": "pripadnik-vracarskog-klana-uhapsen-nakon-pretnji-vozacu-vest",
-      "title": "Incident na ulici: Pripadnik &quot;vračarskog klana&quot; uhapšen nakon pretnji vozaču",
-      "url": "https://www.b92.net/info/hronika/247562/incident-na-ulici-pripadnik-vracarskog-klana-uhapsen-nakon-pretnji-vozacu/vest",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T17:41:00+00:00",
-      "time": "17:41",
-      "source": "B92",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
       "id": "u-nemackoj-posle-tuce-i-pucnjave-na-benzinskoj-pumpi-xgrwsbv",
       "title": "TUKLI SE, GAZILI KOLIMA I PUCALI JEDNI NA DRUGE Srbi uhapšeni posle haosa na BENZINSKOJ PUMPI u Nemačkoj: Policija poslala i HELIKOPTER",
       "url": "https://www.blic.rs/vesti/hronika/srbi-uhapseni-u-nemackoj-posle-tuce-i-pucnjave-na-benzinskoj-pumpi/xgrwsbv",
@@ -533,20 +449,6 @@
       "priority": 70
     },
     {
-      "id": "narke-roksane-guzman-njenu-otmicu-gledao-je-ceo-svet-x8xxgp4",
-      "title": "NAĐENO TELO NOVINARKE Njenu otmicu gledao je ceo svet, a u sve umešana i policija: Pre 7 godina tražila ZAŠTITU (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/svet/pronadjeno-telo-novinarke-roksane-guzman-njenu-otmicu-gledao-je-ceo-svet/x8xxgp4",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T12:52:04+00:00",
-      "time": "12:52",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "-org-a-srbija-kosovo-hapsenje-ratni-zlocin-ovk-33795621-html",
       "title": "Policija Srbije na granici sa Kosovom uhapsila muškarca zbog sumnje na ratni zločin",
       "url": "https://www.slobodnaevropa.org/a/srbija-kosovo-hapsenje-ratni-zlocin-ovk/33795621.html",
@@ -559,6 +461,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "ski-oligarh-izasao-iz-kome-nakon-eksplozije-u-monaku-214w0vn",
+      "title": "(FOTO) OLIGARH IZAŠAO IZ KOME NAKON EKSPLOZIJE U MONAKU! Ljubavnica u TEŠKOM stanju, može da izgubi ČULA: Interpol traga za ovom ženom",
+      "url": "https://www.blic.rs/vesti/svet/ukrajinski-oligarh-izasao-iz-kome-nakon-eksplozije-u-monaku/214w0vn",
+      "date": "2026-07-04",
+      "datetime": "2026-07-04T19:26:53+00:00",
+      "time": "19:26",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "pa-org-a-zvucni-top-beograd-earshot-svedocenja-33795514-html",
@@ -645,20 +561,6 @@
       "priority": 36
     },
     {
-      "id": "s-www-danas-rs-svet-si-djinping-proglasio-dva-nova-generala-",
-      "title": "Si Đinping proglasio dva nova generala nakon antikorupcijske čistke",
-      "url": "https://www.danas.rs/svet/si-djinping-proglasio-dva-nova-generala/",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T11:31:43+00:00",
-      "time": "11:31",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "tps-radar-nova-rs-politika-istrazivanje-bcbp-mup-zvucni-top-",
       "title": "Većina bi da živi u zemlji bez korupcije, zvučnih topova i Ćacilenda",
       "url": "https://radar.nova.rs/politika/istrazivanje-bcbp-mup-zvucni-top/",
@@ -699,6 +601,104 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "ije-odbacio-zahtev-proruske-opozicije-za-ponistavanje-izbora",
+      "title": "Врховни суд Јерменије одбацио захтев проруске опозиције за поништавање избора",
+      "url": "https://www.politika.rs/scc/clanak/768220/vrhovni-sud-jermenije-odbacio-zahtev-proruske-opozicije-za-ponistavanje-izbora",
+      "date": "2026-07-04",
+      "datetime": "2026-07-04T18:11:00+00:00",
+      "time": "18:11",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "e-sa-drustvenih-mreza-mogu-biti-zloupotrebljene-uz-pomoc-ai-",
+      "title": "Britanska agencija upozorava roditelje: Fotografije dece sa društvenih mreža mogu biti zloupotrebljene uz pomoć AI",
+      "url": "https://n1info.rs/svet/britanska-agencija-upozorava-roditelje-fotografije-dece-sa-drustvenih-mreza-mogu-biti-zloupotrebljene-uz-pomoc-ai/",
+      "date": "2026-07-04",
+      "datetime": "2026-07-04T18:39:31+00:00",
+      "time": "18:39",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-doneo-odluke-o-dodeli-ugovora-u-postupku-javne-nabavke-vest",
+      "title": "RIK doneo Odluke o dodeli ugovora u postupku javne nabavke",
+      "url": "https://www.euronews.rs/srbija/politika/231170/rik-doneo-odluke-o-dodeli-ugovora-u-postupku-javne-nabavke/vest",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T13:50:00+00:00",
+      "time": "13:50",
+      "source": "Euronews Serbia",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "itika-231152-dacic-i-posfai-o-migracijama-i-bezbednosti-vest",
+      "title": "Dačić se sastao sa ministrom unutrašnjih poslova Mađarske Gaborom Pošfaijem",
+      "url": "https://www.euronews.rs/srbija/politika/231152/dacic-i-posfai-o-migracijama-i-bezbednosti/vest",
+      "date": "2026-07-03",
+      "datetime": "2026-07-03T12:18:00+00:00",
+      "time": "12:18",
+      "source": "Euronews Serbia",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "r-nova-rs-drustvo-marko-samardzic-zvucni-top-intervju-radar-",
+      "title": "I kriminalci devedesetih su imali više morala",
+      "url": "https://radar.nova.rs/drustvo/marko-samardzic-zvucni-top-intervju-radar/",
+      "date": "2026-07-02",
+      "datetime": "2026-07-02T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "icnu-prijavu-protiv-kokeze-zbog-planiranja-napada-na-vidica-",
+      "title": "Ninić podneo krivičnu prijavu protiv Kokeze zbog planiranja napada na Vidića",
+      "url": "https://www.krik.rs/ninic-podneo-krivicnu-prijavu-protiv-kokeze-zbog-planiranja-napada-na-vidica/",
+      "date": "2026-07-01",
+      "datetime": "2026-07-01T14:50:07+00:00",
+      "time": "14:50",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "nenadjuje-me-nacin-na-koji-se-kokeza-obracunavao-sa-vidicem-",
+      "title": "Berić o otkriću KRIK-a: Ne iznenađuje me način na koji se Kokeza obračunavao sa Vidićem",
+      "url": "https://www.krik.rs/beric-o-otkricu-krik-a-ne-iznenadjuje-me-nacin-na-koji-se-kokeza-obracunavao-sa-vidicem/",
+      "date": "2026-06-30",
+      "datetime": "2026-06-30T15:38:04+00:00",
+      "time": "15:38",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
