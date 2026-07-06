@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 960000.0,
+    "lowest": 7202.0,
+    "difference": 952798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109190905,
+    "file": "documents/109190905_Odluka o dodeli narudzbenice Kotao.docx"
+  },
+  {
+    "winner": null,
     "accepted": 242820.0,
     "lowest": 6202.0,
     "difference": 236618.0,
