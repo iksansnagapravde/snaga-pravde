@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "ica-iz-prodaje-u-nemackoj-otkrivena-opasna-bakterija-p6x16xn",
-      "title": "POPULARNA KOBASICA SE HITNO POVLAČI SA TRŽIŠTA! Otkrivena opasna bakterija, izaziva OTKAZIVANJE BUBREGA",
-      "url": "https://www.blic.rs/biznis/hitno-se-povlaci-popularna-kobasica-iz-prodaje-u-nemackoj-otkrivena-opasna-bakterija/p6x16xn",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T15:42:05+00:00",
-      "time": "15:42",
-      "source": "Blic",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-cetiri-saobracajne-nesrece-109-poziva-ka-hitnoj-pomoci-vest",
       "title": "U Beogradu noćas četiri saobraćajne nesreće: 109 poziva ka Hitnoj pomoći",
       "url": "https://www.euronews.rs/srbija/aktuelno/231458/u-beogradu-nocas-cetiri-saobracajne-nesrece-109-poziva-ka-hitnoj-pomoci/vest",
@@ -85,6 +71,20 @@
       "priority": 96
     },
     {
+      "id": "nje-u-pozarevcu-muskarac-osumnjicen-za-nedozvoljenu-trgovinu",
+      "title": "NA TEZGI PRODAVAO LEKOVE I SUPLEMENTE BEZ POREKLA Uhapšen muškarac iz Požarevca",
+      "url": "https://www.kurir.rs/crna-hronika/10041975/hapsenje-u-pozarevcu-muskarac-osumnjicen-za-nedozvoljenu-trgovinu",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:30:15+00:00",
+      "time": "20:30",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "uga-uhapsenog-sase-vukovica-bosketa-pustena-u-kucni-pritvor-",
       "title": "Nova.rs: Supruga uhapšenog Saše Vukovića Bosketa puštena u kućni pritvor",
       "url": "https://www.danas.rs/vesti/drustvo/nova-rs-supruga-uhapsenog-sase-vukovica-bosketa-pustena-u-kucni-pritvor/",
@@ -111,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "iz-pozarevca-prodavao-lekove-na-improvizovanoj-tezgi-84xlwye",
+      "title": "UHAPŠEN MUŠKARAC IZ POŽAREVCA Prodavao lekove i suplemente na improvizovanoj tezgi",
+      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-iz-pozarevca-prodavao-lekove-na-improvizovanoj-tezgi/84xlwye",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:23:37+00:00",
+      "time": "20:23",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "tkrica-krik-a-trazicemo-od-mup-a-skaj-poruke-slavise-kokeze-",
@@ -155,18 +169,18 @@
       "priority": 84
     },
     {
-      "id": "rac-iz-pristine-zbog-nedozvoljene-trgovine-suplementima-vest",
-      "title": "Akcija MUP-a u Vranju: Uhapšen muškarac iz Prištine zbog nedozvoljene trgovine suplementima",
-      "url": "https://www.euronews.rs/srbija/aktuelno/231348/akcija-mup-a-u-vranju-uhapsen-muskarac-iz-pristine-zbog-nedozvoljene-trgovine-suplementima/vest",
-      "date": "2026-07-04",
-      "datetime": "2026-07-04T20:57:00+00:00",
-      "time": "20:57",
-      "source": "Euronews Serbia",
-      "category": "Тужилаштво",
+      "id": "i-mup-uhapsen-osumnjiceni-za-nedozvoljenu-trgovinu-lekovima-",
+      "title": "MUP: Uhapšen osumnjičeni za nedozvoljenu trgovinu lekovima",
+      "url": "https://n1info.rs/vesti/mup-uhapsen-osumnjiceni-za-nedozvoljenu-trgovinu-lekovima/",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:41:49+00:00",
+      "time": "20:41",
+      "source": "N1",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
     },
     {
       "id": "otkrila-plantazu-sa-201-biljkom-kanabisa-uhapsene-dve-osobe-",
@@ -225,6 +239,20 @@
       "priority": 66
     },
     {
+      "id": "mljivosti-10041462-rudar-grant-dzonson-izgradio-kucu-u-steni",
+      "title": "Rudar od pećine napravio luksuznu kuću: Dinamitom pravio hodnike, sad je izdaje za vrtoglavu cifru (foto)",
+      "url": "https://www.kurir.rs/zabava/zanimljivosti/10041462/rudar-grant-dzonson-izgradio-kucu-u-steni",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:20:46+00:00",
+      "time": "20:20",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "-org-a-srbija-crna-gora-zabrana-ulaska-novinar-33797757-html",
       "title": "Još jednom crnogorskom novinaru zabranjen ulazak u Srbiju",
       "url": "https://www.slobodnaevropa.org/a/srbija-crna-gora-zabrana-ulaska-novinar/33797757.html",
@@ -279,6 +307,34 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "senje-alibega-kako-je-vodja-zabranjenih-uhvacen-u-novom-sadu",
+      "title": "\"BILO JE 11 POKUŠAJA UBISTVA, PA JE BUKVALNO NESTAO\" Rajko Nedić o hapšenju Alibega: \"Njegova priča je gotovo filmska\"",
+      "url": "https://www.kurir.rs/crna-hronika/10041876/hapsenje-alibega-kako-je-vodja-zabranjenih-uhvacen-u-novom-sadu",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:51:39+00:00",
+      "time": "20:51",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "-clanak-768767-hapsenje-u-pozarevcu-nelegalna-prodaja-lekova",
+      "title": "Хапшење у Пожаревцу, нелегална продаја лекова",
+      "url": "https://www.politika.rs/scc/clanak/768767/hapsenje-u-pozarevcu-nelegalna-prodaja-lekova",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:35:00+00:00",
+      "time": "20:35",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "ja-aktuelno-231522-na-sudenju-dabeticu-prikazani-snimci-vest",
@@ -561,6 +617,34 @@
       "priority": 8
     },
     {
+      "id": "u-zbog-snimka-na-kom-granicar-ubacuje-sok-bombu-u-automobil-",
+      "title": "Izraelska policija pokrenula istragu zbog snimka na kom policajac ubacuje šok bombu u automobil",
+      "url": "https://n1info.rs/svet/izraelska-policija-pokrenula-istragu-zbog-snimka-na-kom-granicar-ubacuje-sok-bombu-u-automobil/",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T21:06:48+00:00",
+      "time": "21:06",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-gusi-u-suzama-njegove-cerke-su-me-udarale-u-bolnici-rchen3e",
+      "title": "\"NJEGOVE ĆERKE SU ME UDARALE, REAGOVALA JE POLICIJA\" 41 godinu mlađa žena Andrije Bajića se guši u suzama: \"Godinama smo lagali javnost\"",
+      "url": "https://www.blic.rs/zabava/zena-andrije-bajica-se-gusi-u-suzama-njegove-cerke-su-me-udarale-u-bolnici/rchen3e",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T20:15:20+00:00",
+      "time": "20:15",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "-slavonskom-brodu-ubijte-srbina-i-izvadite-mu-organe-ps9t0z2",
       "title": "(FOTO) SKANDAL U SLAVONSKOM BRODU Osvanuo gnusan grafit s pozivom na brutalno ubistvo Srba",
       "url": "https://www.blic.rs/vesti/politika/monstruozan-grafit-u-slavonskom-brodu-ubijte-srbina-i-izvadite-mu-organe/ps9t0z2",
@@ -615,90 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "elno-231539-pu-novi-sad-upozorava-na-telefonske-prevare-vest",
-      "title": "Novi Sad na meti telefonskih prevaranata: Masovno zovu građane i traže novac, oglasila se policija",
-      "url": "https://www.euronews.rs/srbija/aktuelno/231539/pu-novi-sad-upozorava-na-telefonske-prevare/vest",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T12:44:00+00:00",
-      "time": "12:44",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "31515-policija-zaplenila-vise-od-2-kg-amfetamina-u-sidu-vest",
-      "title": "Policija zaplenila više od 2 kilograma amfetamina u Šidu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/231515/policija-zaplenila-vise-od-2-kg-amfetamina-u-sidu/vest",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T10:26:00+00:00",
-      "time": "10:26",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "1415-subotica-vozac-iskljucen-zbog-alkohola-i-narkotika-vest",
-      "title": "Policija isključila vozača u Subotici: Vozio sa 2,55 promila alkohola i pod dejstvom droge",
-      "url": "https://www.euronews.rs/srbija/aktuelno/231415/subotica-vozac-iskljucen-zbog-alkohola-i-narkotika/vest",
-      "date": "2026-07-05",
-      "datetime": "2026-07-05T14:42:00+00:00",
-      "time": "14:42",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "opa-org-a-srbija-rusija-vladimir-putin-beograd-33796734-html",
-      "title": "Zašto Putin nikada nije prespavao u Beogradu?",
-      "url": "https://www.slobodnaevropa.org/a/srbija-rusija-vladimir-putin-beograd/33796734.html",
-      "date": "2026-07-05",
-      "datetime": "2026-07-05T10:03:22+00:00",
-      "time": "10:03",
-      "source": "RSE Balkan",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "la-zatvorio-vazdusni-prostor-iznad-americke-baze-na-siciliji",
-      "title": "Облак пепела затворио ваздушни простор изнад америчке базе на Сицилији",
-      "url": "https://www.politika.rs/scc/clanak/768754/oblak-pepela-zatvorio-vazdusni-prostor-iznad-americke-baze-na-siciliji",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T20:09:00+00:00",
-      "time": "20:09",
-      "source": "Politika",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "okica-zaradjuje-100000-dolara-a-evo-sta-je-po-struci-4l0mvp7",
-      "title": "PLATA JOJ JE 100.000 DOLARA, A MALO KO ZNA ČIME SE BAVI Nikolu Jokića žena i deca bodre sa tribina, a evo šta je lepa Natalija po struci: Završila je težak fakultet i jako je cenjena",
-      "url": "https://www.blic.rs/zabava/zena-nikole-jokica-zaradjuje-100000-dolara-a-evo-sta-je-po-struci/4l0mvp7",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T19:49:21+00:00",
-      "time": "19:49",
-      "source": "Blic",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
