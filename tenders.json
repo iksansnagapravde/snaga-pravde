@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 29978845.2,
+    "lowest": 3110.0,
+    "difference": 29975735.2,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113658282,
+    "file": "documents/113658282_Odluka o dodeli ugovora (8).pdf"
+  },
+  {
+    "winner": null,
     "accepted": 4120756.8,
     "lowest": 5210.0,
     "difference": 4115546.8,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100376470,
     "file": "documents/100376470_Odluka o dodeli ugovora 30 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 224988000.0,
-    "lowest": 7202.0,
-    "difference": 224980798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112906931,
-    "file": "documents/112906931_odluka mobilne ambulante.pdf"
   }
 ]
