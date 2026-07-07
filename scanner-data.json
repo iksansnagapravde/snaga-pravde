@@ -351,20 +351,6 @@
       "priority": 26
     },
     {
-      "id": "-clanak-768767-hapsenje-u-pozarevcu-nelegalna-prodaja-lekova",
-      "title": "Хапшење у Пожаревцу, нелегална продаја лекова",
-      "url": "https://www.politika.rs/scc/clanak/768767/hapsenje-u-pozarevcu-nelegalna-prodaja-lekova",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T20:35:00+00:00",
-      "time": "20:35",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "ja-aktuelno-231522-na-sudenju-dabeticu-prikazani-snimci-vest",
       "title": "Na suđenju Dabetiću prikazani snimci ubijene transrodne osobe",
       "url": "https://www.euronews.rs/srbija/aktuelno/231522/na-sudenju-dabeticu-prikazani-snimci/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-06T18:05:30+00:00",
       "time": "18:05",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "elno-231539-pu-novi-sad-upozorava-na-telefonske-prevare-vest",
+      "title": "Novi Sad na meti telefonskih prevaranata: Masovno zovu građane i traže novac, oglasila se policija",
+      "url": "https://www.euronews.rs/srbija/aktuelno/231539/pu-novi-sad-upozorava-na-telefonske-prevare/vest",
+      "date": "2026-07-06",
+      "datetime": "2026-07-06T12:44:00+00:00",
+      "time": "12:44",
+      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
