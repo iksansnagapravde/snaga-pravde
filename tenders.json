@@ -1,6 +1,61 @@
 [
   {
     "winner": null,
+    "accepted": 2448000.0,
+    "lowest": 7202.0,
+    "difference": 2440798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108461847,
+    "file": "documents/108461847_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 99840.0,
+    "lowest": 7202.0,
+    "difference": 92638.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100000266,
+    "file": "documents/100000266_01 Odluka o dodeli ugovora - Partija 1.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 1200000.0,
+    "lowest": 6202.0,
+    "difference": 1193798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100009056,
+    "file": "documents/100009056_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": "TESLA SISTEMI DOO",
+    "accepted": 20000000.0,
+    "lowest": 5202.0,
+    "difference": 19994798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107768913,
+    "file": "documents/107768913_9.2. Odluka o dod.ugov.PP vrata JN-19-D-26.pdf"
+  },
+  {
+    "winner": "DBS DOO",
+    "accepted": 105000000.0,
+    "lowest": 6202.0,
+    "difference": 104993798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106156245,
+    "file": "documents/106156245_10.1.Odluka o dod ugov. JM-09-R-26.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 142000000.0,
     "lowest": 7202.0,
     "difference": 141992798.0,
@@ -42,49 +97,5 @@
     "rejection_reasons": [],
     "id": 102771609,
     "file": "documents/102771609_Odluka o dodeli ugovora Lešnica.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5400000.0,
-    "lowest": 2210.0,
-    "difference": 5397790.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103832670,
-    "file": "documents/103832670_Odluka o dodeli ugovora - transport.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2940000.0,
-    "lowest": 7202.0,
-    "difference": 2932798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109168957,
-    "file": "documents/109168957_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 5754240.0,
-    "lowest": 4117.0,
-    "difference": 5750123.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106762037,
-    "file": "documents/106762037_18 - Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": "PROIZVODNO-TRGOVINSKO PR",
-    "accepted": 2000.0,
-    "lowest": 1099.0,
-    "difference": 901.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103961805,
-    "file": "documents/103961805_Odluka o o dodeli ugovora JN 4-2026.pdf"
   }
 ]
