@@ -29,20 +29,6 @@
       "priority": 104
     },
     {
-      "id": "s-www-kurir-rs-stars-10042770-radi-manojlovic-otkazan-nastup",
-      "title": "\"ČUVAJTE SE LJUDI...\" Radi Manojlović otkazan nastup, hitno se oglasila i otkrila razlog: Jako mi je žao...",
-      "url": "https://www.kurir.rs/stars/10042770/radi-manojlovic-otkazan-nastup",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T14:37:48+00:00",
-      "time": "14:37",
-      "source": "Kurir",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "ja-da-li-je-srbija-na-brzom-koloseku-ka-evropskoj-uniji-vest",
       "title": "Milinčić i Mihajlović za Euronews Srbija: Da li je Srbija na \"brzom koloseku“ ka Evropskoj uniji?",
       "url": "https://www.euronews.rs/srbija/politika/231665/milincic-i-mihajlovic-za-euronews-srbija-da-li-je-srbija-na-brzom-koloseku-ka-evropskoj-uniji/vest",
@@ -97,6 +83,20 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "oje-osumnjicenih-za-pljacku-advokatske-kancelarije-tomanovic",
+      "title": "Ухапшено троје осумњичених за пљачку адвокатске канцеларије Томановић",
+      "url": "https://www.politika.rs/scc/clanak/768990/uhapseno-troje-osumnjicenih-za-pljacku-advokatske-kancelarije-tomanovic",
+      "date": "2026-07-07",
+      "datetime": "2026-07-07T18:26:00+00:00",
+      "time": "18:26",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "o-231756-beograd-uhapsene-tri-osobe-zbog-krade-i-napada-vest",
@@ -197,6 +197,48 @@
       "priority": 90
     },
     {
+      "id": "e-zbog-navoda-o-zlostavljanju-srba-uhapsenih-na-gazimestanu-",
+      "title": "Kosovski ombudsman pokreće istrage zbog navoda o zlostavljanju Srba uhapšenih na Gazimestanu",
+      "url": "https://nova.rs/vesti/hronika/kosovski-ombudsman-pokrece-istrage-zbog-navoda-o-zlostavljanju-srba-uhapsenih-na-gazimestanu/",
+      "date": "2026-07-07",
+      "datetime": "2026-07-07T20:07:06+00:00",
+      "time": "20:07",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "ge-zbog-navoda-o-zlostavljanju-srba-uhapsenih-na-gazimestanu",
+      "title": "Kosovski ombudsman pokreće istrage zbog navoda o zlostavljanju Srba uhapšenih na Gazimestanu",
+      "url": "https://beta.rs/content/248034-kosovski-ombudsman-pokrece-istrage-zbog-navoda-o-zlostavljanju-srba-uhapsenih-na-gazimestanu",
+      "date": "2026-07-07",
+      "datetime": "2026-07-07T19:35:09+00:00",
+      "time": "19:35",
+      "source": "Beta",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "u-zbog-navoda-o-zlostavljanju-srba-uhapsenih-na-gazimestanu-",
+      "title": "Kosovski ombudsman pokrenuo istragu zbog navoda o zlostavljanju Srba uhapšenih na Gazimestanu",
+      "url": "https://www.danas.rs/vesti/politika/kosovski-ombudsman-pokrenuo-istragu-zbog-navoda-o-zlostavljanju-srba-uhapsenih-na-gazimestanu/",
+      "date": "2026-07-07",
+      "datetime": "2026-07-07T19:15:01+00:00",
+      "time": "19:15",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "se-sumnjice-da-su-provalile-u-kancelariju-zdenka-tomanovica-",
       "title": "MUP: Uhapšene osobe koje se sumnjiče da su provalile u kancelariju Zdenka Tomanovića",
       "url": "https://n1info.rs/vesti/mup-uhapsene-osobe-koje-se-sumnjice-da-su-provalile-u-kancelariju-zdenka-tomanovica/",
@@ -223,6 +265,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "avo-strbac-o-povezanosti-brace-tompson-sa-masakrom-u-uzdolju",
+      "title": "ZAŠTO TOMPSON JOŠ NIJE SASLUŠAN O MASAKRU SEDMORO SRBA 1995. KOD KNINA? Štrbac: Tužilaštvo ignoriše nalog Ustavnog suda, neće da \"uznemiravaju\" Tompsona!",
+      "url": "https://www.kurir.rs/vesti/politika/10042627/savo-strbac-o-povezanosti-brace-tompson-sa-masakrom-u-uzdolju",
+      "date": "2026-07-07",
+      "datetime": "2026-07-07T18:26:41+00:00",
+      "time": "18:26",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "o-231714-optuznica-za-ratni-zlocin-u-vucitrnu-protiv-rd-vest",
@@ -337,20 +393,6 @@
       "priority": 60
     },
     {
-      "id": "-servis-obustavio-informativni-program-u-toku-reorganizacija",
-      "title": "Mađarski javni servis obustavio informativni program, u toku reorganizacija",
-      "url": "https://beta.rs/content/248026-madarski-javni-servis-obustavio-informativni-program-u-toku-reorganizacija",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T17:20:08+00:00",
-      "time": "17:20",
-      "source": "Beta",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "privremeno-obustavila-vesti-zbog-reforme-javnog-servisa-html",
       "title": "Мађарска државна телевизија привремено обуставила вести због реформе јавног сервиса",
       "url": "https://www.rts.rs/vesti/region/5990345/madjarska-drzavna-televizija-privremeno-obustavila-vesti-zbog-reforme-javnog-servisa.html",
@@ -363,34 +405,6 @@
       "breaking": false,
       "alert": true,
       "priority": 60
-    },
-    {
-      "id": "-org-a-srbija-crna-gora-zabrana-ulaska-novinar-33797757-html",
-      "title": "Još jednom crnogorskom novinaru zabranjen ulazak u Srbiju",
-      "url": "https://www.slobodnaevropa.org/a/srbija-crna-gora-zabrana-ulaska-novinar/33797757.html",
-      "date": "2026-07-06",
-      "datetime": "2026-07-06T10:32:19+00:00",
-      "time": "10:32",
-      "source": "RSE Balkan",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "ovala-parfeme-pecenje-i-benzin-sada-u-centru-novog-skandala-",
-      "title": "Tužiteljka Stanojković u službenom stanu i dve godine po prestanku funkcije: Karticama tužilaštva kupovala parfeme, pečenje i benzin, sada u centru novog skandala",
-      "url": "https://nova.rs/vesti/hronika/tuziteljka-stanojkovic-u-sluzbenom-stanu-i-dve-godine-po-prestanku-funkcije-karticama-tuzilastva-kupovala-parfeme-pecenje-i-benzin-sada-u-centru-novog-skandala/",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T14:03:41+00:00",
-      "time": "14:03",
-      "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
     },
     {
       "id": "tps-radar-nova-rs-politika-istrazivanje-bcbp-mup-zvucni-top-",
@@ -421,20 +435,6 @@
       "priority": 28
     },
     {
-      "id": "ps-n1info-rs-najave-emisija-novi-dan-crveni-alarm-za-drzavu-",
-      "title": "Novi dan: Crveni alarm za državu?",
-      "url": "https://n1info.rs/najave-emisija/novi-dan-crveni-alarm-za-drzavu/",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T14:32:18+00:00",
-      "time": "14:32",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "ja-aktuelno-231522-na-sudenju-dabeticu-prikazani-snimci-vest",
       "title": "Na suđenju Dabetiću prikazani snimci ubijene transrodne osobe",
       "url": "https://www.euronews.rs/srbija/aktuelno/231522/na-sudenju-dabeticu-prikazani-snimci/vest",
@@ -447,6 +447,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "eporucila-otvaranje-klastera-3-srbija-nacinila-vazne-sykt9k6",
+      "title": "\"SRBIJA JE NAČINILA VAŽNE POMAKE, NE SME DA ZAOSTAJE\" Evropska komisija ponovo preporučila otvaranje Klastera 3: \"Posebno je napredovala u reformi pravosuđa\"",
+      "url": "https://www.blic.rs/vesti/politika/evropska-komisija-ponovo-preporucila-otvaranje-klastera-3-srbija-nacinila-vazne/sykt9k6",
+      "date": "2026-07-07",
+      "datetime": "2026-07-07T19:04:32+00:00",
+      "time": "19:04",
+      "source": "Blic",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "ve-zalbe-cik-u-sredu-o-potvrdjivanju-konacnih-rezultata-html",
@@ -513,20 +527,6 @@
       "time": "16:24",
       "source": "Nova",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "r-za-rekonstrukciju-glavasevog-parka-u-smederevskoj-palanci-",
-      "title": "Tender za rekonstrukciju Glavaševog parka u Smederevskoj Palanci",
-      "url": "https://n1info.rs/biznis/tender-za-rekonstrukciju-glavasevog-parka-u-smederevskoj-palanci/",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T14:42:31+00:00",
-      "time": "14:42",
-      "source": "N1",
-      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -687,13 +687,13 @@
       "priority": 8
     },
     {
-      "id": "-advokatska-kancelarija-tomanovic-uhapsene-tri-osobe-lkp3v6v",
-      "title": "OPLJAČKANA ADVOKATSKA KANCELARIJA TOMANOVIĆ Lopovi pokrali nakit, satove i novac: Policija uhapsila trojicu osumnjičenih",
-      "url": "https://www.blic.rs/vesti/hronika/opljackana-advokatska-kancelarija-tomanovic-uhapsene-tri-osobe/lkp3v6v",
+      "id": "43007-nestanak-devetogodisnje-devojcice-u-becu-apel-policije",
+      "title": "DEVOJČICA (9) UŠLA U TOALET I NESTALA! Policija na nogama: U toku opsežna potraga",
+      "url": "https://www.kurir.rs/planeta/10043007/nestanak-devetogodisnje-devojcice-u-becu-apel-policije",
       "date": "2026-07-07",
-      "datetime": "2026-07-07T17:40:31+00:00",
-      "time": "17:40",
-      "source": "Blic",
+      "datetime": "2026-07-07T19:16:16+00:00",
+      "time": "19:16",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
