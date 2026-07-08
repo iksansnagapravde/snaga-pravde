@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 10627910.0,
+    "lowest": 7202.0,
+    "difference": 10620708.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108362499,
+    "file": "documents/108362499_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 2400000.0,
     "lowest": 6202.0,
     "difference": 2393798.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100001159,
     "file": "documents/100001159_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 5055570.0,
-    "lowest": 6202.0,
-    "difference": 5049368.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 108090164,
-    "file": "documents/108090164_Odluka o dodeli ugovora.docx"
   }
 ]
