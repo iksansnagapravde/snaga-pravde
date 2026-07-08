@@ -29,6 +29,20 @@
       "priority": 104
     },
     {
+      "id": "ttps-www-rts-rs-vesti-politika-5990370-skupstina-srbije-html",
+      "title": "Посланици Скупштине Србије настављају расправу о 18 тачака дневног реда",
+      "url": "https://www.rts.rs/vesti/politika/5990370/skupstina-srbije.html",
+      "date": "2026-07-08",
+      "datetime": "2026-07-08T03:42:06+00:00",
+      "time": "03:42",
+      "source": "RTS",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "c-podigao-nivo-pretnje-za-brodove-u-ormuskom-moreuzu-sv4s8yt",
       "title": "MISTERIOZNI PROJEKTILI SEJU STRAH! Amerikanci hitno upalili \"crveni alarm\" u Ormuskom moreuzu: Nivo pretnje podignut na OZBILJAN, evo šta vreba iz mračnih voda!",
       "url": "https://www.blic.rs/vesti/svet/jmic-podigao-nivo-pretnje-za-brodove-u-ormuskom-moreuzu/sv4s8yt",
@@ -111,6 +125,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "saobracaju-nikola-31-napravio-haos-u-centru-beograda-z26wcey",
+      "title": "\"MI SMO VRAČARSKI KLAN, UBIĆU TE!\" Zbog svađe u saobraćaju Nikola (31) napravio HAOS u centru Beograda: Žrtvi pretio, a onda svojom krvlju na kolima napisao \"VR\"",
+      "url": "https://www.blic.rs/vesti/hronika/zbog-svadje-u-saobracaju-nikola-31-napravio-haos-u-centru-beograda/z26wcey",
+      "date": "2026-07-08",
+      "datetime": "2026-07-08T03:52:00+00:00",
+      "time": "03:52",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-turske-odrzavaju-se-protesti-protiv-nato-a-i-trampa-qn03vwb",
@@ -393,20 +421,6 @@
       "priority": 60
     },
     {
-      "id": "privremeno-obustavila-vesti-zbog-reforme-javnog-servisa-html",
-      "title": "Мађарска државна телевизија привремено обуставила вести због реформе јавног сервиса",
-      "url": "https://www.rts.rs/vesti/region/5990345/madjarska-drzavna-televizija-privremeno-obustavila-vesti-zbog-reforme-javnog-servisa.html",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T16:02:06+00:00",
-      "time": "16:02",
-      "source": "RTS",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "tps-radar-nova-rs-politika-istrazivanje-bcbp-mup-zvucni-top-",
       "title": "Većina bi da živi u zemlji bez korupcije, zvučnih topova i Ćacilenda",
       "url": "https://radar.nova.rs/politika/istrazivanje-bcbp-mup-zvucni-top/",
@@ -447,6 +461,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "-koplja-oko-srbije-evo-koje-zemlje-nam-prave-problem-n8dyrnh",
+      "title": "KLJUČNA NEDELJA ZA SRBIJU! Ambasadori EU danas lome koplja oko Beograda i Klastera 3, EK zadovoljna izmenama pravosudnih zakona, OVE ZEMLJE NAM PRAVE PROBLEM",
+      "url": "https://www.blic.rs/vesti/politika/ambasadori-eu-danas-lome-koplja-oko-srbije-evo-koje-zemlje-nam-prave-problem/n8dyrnh",
+      "date": "2026-07-08",
+      "datetime": "2026-07-08T04:16:00+00:00",
+      "time": "04:16",
+      "source": "Blic",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "rin-le-pen-potvrdila-kandidaturu-za-predsednicke-izbore-html",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "667-kamper-za-podrsku-osobama-sa-invaliditetom-u-srbiji-vest",
-      "title": "Đurđević Stamenkovski: Nabavljen kamper za terensku podršku osoba sa invaliditetom",
-      "url": "https://www.euronews.rs/srbija/politika/231667/kamper-za-podrsku-osobama-sa-invaliditetom-u-srbiji/vest",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T10:28:00+00:00",
-      "time": "10:28",
-      "source": "Euronews Serbia",
-      "category": "Инвалидитет",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "43007-nestanak-devetogodisnje-devojcice-u-becu-apel-policije",
-      "title": "DEVOJČICA (9) UŠLA U TOALET I NESTALA! Policija na nogama: U toku opsežna potraga",
-      "url": "https://www.kurir.rs/planeta/10043007/nestanak-devetogodisnje-devojcice-u-becu-apel-policije",
-      "date": "2026-07-07",
-      "datetime": "2026-07-07T19:16:16+00:00",
-      "time": "19:16",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
