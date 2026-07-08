@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2183330.0,
+    "lowest": 6312.0,
+    "difference": 2177018.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 330000.0,
     "lowest": 7202.0,
     "difference": 322798.0,
@@ -75,16 +86,5 @@
     "rejection_reasons": [],
     "id": 106297827,
     "file": "documents/106297827_Odluka Ženeva.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 23817273.6,
-    "lowest": 6202.0,
-    "difference": 23811071.6,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102793206,
-    "file": "documents/102793206_Odluka o dodeli.docx"
   }
 ]
