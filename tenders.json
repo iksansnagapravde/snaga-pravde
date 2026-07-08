@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 7202.0,
+    "lowest": 6153.0,
+    "difference": 1049.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109765089,
+    "file": "documents/109765089_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 7202.0,
+    "lowest": 6153.0,
+    "difference": 1049.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109370746,
+    "file": "documents/109370746_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
     "accepted": 2183330.0,
     "lowest": 6312.0,
     "difference": 2177018.0,
@@ -64,27 +86,5 @@
     "rejection_reasons": [],
     "id": 101017664,
     "file": "documents/101017664_Odluka o dodeli narudzbenice 426-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 125600000.0,
-    "lowest": 11000.0,
-    "difference": 125589000.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103121274,
-    "file": "documents/103121274_Odluka o dodeli ugovora, RIK JN br. 1-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka Ženeva.pdf"
   }
 ]
