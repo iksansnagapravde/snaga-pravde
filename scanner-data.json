@@ -29,6 +29,20 @@
       "priority": 124
     },
     {
+      "id": "a-5991244-sednica-skupstina-vanredno-zasedanje-nastavak-html",
+      "title": "Наставак ванредног заседања Скупштине Србије у 10 часова",
+      "url": "https://www.rts.rs/vesti/politika/5991244/sednica-skupstina-vanredno-zasedanje-nastavak.html",
+      "date": "2026-07-09",
+      "datetime": "2026-07-09T03:53:05+00:00",
+      "time": "03:53",
+      "source": "RTS",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "877-uhapseni-zbog-pretakanja-nafte-iz-jedne-u-drugu-cisternu",
       "title": "PRETAKALI NAFTU IZ JEDNE U DRUGU CISTERNU! Uhapšena trojica, hteli da steknu protivpravnu korist veću od milion i po dinara",
       "url": "https://www.kurir.rs/crna-hronika/10043877/uhapseni-zbog-pretakanja-nafte-iz-jedne-u-drugu-cisternu",
@@ -223,20 +237,6 @@
       "breaking": false,
       "alert": true,
       "priority": 76
-    },
-    {
-      "id": "na-hronika-10044038-lomio-stakla-po-kolima-i-kucama-u-zemunu",
-      "title": "LOMIO STAKLA PO KOLIMA I KUĆAMA U ZEMUNU: Uhapšen nasilnik (21), policija mu pronašla drogu",
-      "url": "https://www.kurir.rs/crna-hronika/10044038/lomio-stakla-po-kolima-i-kucama-u-zemunu",
-      "date": "2026-07-08",
-      "datetime": "2026-07-08T18:23:10+00:00",
-      "time": "18:23",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "ivljao-po-novoj-galenici-lomio-i-razbijao-automobile-qmk8f1n",
@@ -449,6 +449,20 @@
       "priority": 26
     },
     {
+      "id": "tps-vreme-com-vreme-zemlja-za-kokeze-a-ne-za-nemanju-vidica-",
+      "title": "Zemlja za kokeze, a ne za Nemanju Vidića",
+      "url": "https://vreme.com/vreme/zemlja-za-kokeze-a-ne-za-nemanju-vidica/",
+      "date": "2026-07-09",
+      "datetime": "2026-07-09T04:43:45+00:00",
+      "time": "04:43",
+      "source": "Vreme",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "https-nova-rs-vesti-svet-iran-tramp-je-ubica-",
       "title": "Iran: Tramp je ubica",
       "url": "https://nova.rs/vesti/svet/iran-tramp-je-ubica/",
@@ -561,6 +575,20 @@
       "priority": 24
     },
     {
+      "id": "-finansijskog-sloma-na-dno-bi-mogao-da-povuce-i-ameriku-html",
+      "title": "Јапан на ивици финансијског слома – на дно би могао да повуче и Америку",
+      "url": "https://www.rts.rs/vesti/svet/5991198/japan-na-ivici-finansijskog-sloma--na-dno-bi-mogao-da-povuce-i-ameriku.html",
+      "date": "2026-07-09",
+      "datetime": "2026-07-09T03:51:18+00:00",
+      "time": "03:51",
+      "source": "RTS",
+      "category": "Социјална угроженост",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
+    },
+    {
       "id": "a-dolara-kolumnistkinji-koju-je-tramp-seksualno-zlostavljao-",
       "title": "Sudija dozvolio da se isplati 5 miliona dolara kolumnistkinji koju je Tramp seksualno zlostavljao",
       "url": "https://www.danas.rs/svet/sudija-dozvolio-da-se-isplati-5-miliona-dolara-kolumnistkinji-koju-je-tramp-seksualno-zlostavljao/",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "0044157-pucnjava-u-sapcu-muskarac-ranjen-blizu-trznog-centra",
-      "title": "PUCNJAVA U ŠAPCU Ranjen muškarac, policija na licu mesta (VIDEO)",
-      "url": "https://www.kurir.rs/crna-hronika/10044157/pucnjava-u-sapcu-muskarac-ranjen-blizu-trznog-centra",
-      "date": "2026-07-08",
-      "datetime": "2026-07-08T21:43:38+00:00",
-      "time": "21:43",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ucnjava-u-sapcu-ranjen-muskarac-ispred-trznog-centra-r1vemqy",
-      "title": "MUŠKARAC UPUCAN U ŠAPCU Opsadno stanje ispred tržnog centra: Policija blokirala ulicu (VIDEO)",
-      "url": "https://www.blic.rs/vesti/hronika/pucnjava-u-sapcu-ranjen-muskarac-ispred-trznog-centra/r1vemqy",
-      "date": "2026-07-08",
-      "datetime": "2026-07-08T21:38:06+00:00",
-      "time": "21:38",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
