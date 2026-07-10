@@ -99,34 +99,6 @@
       "priority": 92
     },
     {
-      "id": "10045740-italija-proteruje-ruske-vojne-atasee-zbog-spijunaze",
-      "title": "ŠPIJUNSKA AFERA U ITALIJI, PROTERUJU GORBAČOVA, IMA 72 SATA DA NAPUSTI ZEMLJU! Nepoželjnim proglašen i drugi ruski vojni ataše, uhapšeni i obaveštajci iz Rima",
-      "url": "https://www.kurir.rs/planeta/10045740/italija-proteruje-ruske-vojne-atasee-zbog-spijunaze",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T14:28:02+00:00",
-      "time": "14:28",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "ka-10045715-zaplenjeno-58-3-kilograma-marihuane-u-novom-sadu",
-      "title": "ZAPLENJENO SKORO 60 KILOGRAMA DROGE Uhapšen Beograđanin u Novom Sadu (foto)",
-      "url": "https://www.kurir.rs/crna-hronika/10045715/zaplenjeno-58-3-kilograma-marihuane-u-novom-sadu",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T14:07:39+00:00",
-      "time": "14:07",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "32170-dvojica-uhapsena-zbog-ranjavanja-muskarca-u-sapcu-vest",
       "title": "Dvojica uhapšena zbog ranjavanja muškarca u Šapcu",
       "url": "https://www.euronews.rs/srbija/aktuelno/232170/dvojica-uhapsena-zbog-ranjavanja-muskarca-u-sapcu/vest",
@@ -167,6 +139,34 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "nih-u-istrazi-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera-",
+      "title": "Još osumnjičenih u istrazi ilegalnog uvoza i korišćenja botoksa i filera",
+      "url": "https://n1info.rs/region/jos-osumnjicenih-u-istrazi-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera/",
+      "date": "2026-07-10",
+      "datetime": "2026-07-10T20:41:26+00:00",
+      "time": "20:41",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "sobe-u-istrazi-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera",
+      "title": "Severna Makedonija:Osumnjičene još 4 osobe u istrazi ilegalnog uvoza i korišćenja botoksa i filera",
+      "url": "https://beta.rs/content/248239-severna-makedonija-osumnjicene-jos-4-osobe-u-istrazi-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera",
+      "date": "2026-07-10",
+      "datetime": "2026-07-10T20:30:08+00:00",
+      "time": "20:30",
+      "source": "Beta",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "https-www-krik-rs-aleksandar-papic-optuzen-za-pranje-novca-",
@@ -659,34 +659,6 @@
       "priority": 30
     },
     {
-      "id": "-je-jasno-da-naprednjacka-vlast-korupcionaska-i-autoritarna-",
-      "title": "Pajić (PSG) za Danas nakon posete Strazburu: „Svima je jasno da je naprednjačka vlast korupcionaška i autoritarna“",
-      "url": "https://www.danas.rs/vesti/politika/pajic-psg-za-danas-nakon-posete-strazburu-svima-je-jasno-da-naprednjacka-vlast-korupcionaska-i-autoritarna/",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T14:53:55+00:00",
-      "time": "14:53",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "oravka-za-madjarsku-otvoren-put-ka-10-milijardi-evra-82f4tn2",
-      "title": "Odobren plan oporavka za Mađarsku, otvoren put ka 10 milijardi evra",
-      "url": "https://www.blic.rs/vesti/svet/odobren-plan-oporavka-za-madjarsku-otvoren-put-ka-10-milijardi-evra/82f4tn2",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T14:33:00+00:00",
-      "time": "14:33",
-      "source": "Blic",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "tv-rs-2026-07-10-portal-ko-si-bre-ti-poceo-je-danas-da-radi-",
       "title": "Portal „Ko si, bre, ti“ počeo je danas da radi",
       "url": "https://www.ktv.rs/2026/07/10/portal-ko-si-bre-ti-poceo-je-danas-da-radi/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "bija-aktuelno-232130-poceo-sa-radom-portal-ko-si-bre-ti-vest",
+      "title": "Počeo sa radom portal \"Ko si bre ti?\": Kako građani mogu da prijave korupciju i druge nepravilnosti?",
+      "url": "https://www.euronews.rs/srbija/aktuelno/232130/poceo-sa-radom-portal-ko-si-bre-ti/vest",
+      "date": "2026-07-10",
+      "datetime": "2026-07-10T07:51:00+00:00",
+      "time": "07:51",
+      "source": "Euronews Serbia",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "82-uhapseni-lekari-makedonija-ilegalni-uvoz-botoksa-i-filera",
+      "title": "LEKARI POHAPŠENI ZBOG ILEGALNOG BOTOKSA I FILERA: Akcija policije u Severnoj Makedoniji, zaplenjena ogromna količina preparata",
+      "url": "https://www.kurir.rs/region/severna-makedonija/10045982/uhapseni-lekari-makedonija-ilegalni-uvoz-botoksa-i-filera",
+      "date": "2026-07-10",
+      "datetime": "2026-07-10T20:59:13+00:00",
+      "time": "20:59",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     }
   ],
   "all_sources": [
