@@ -435,6 +435,20 @@
       "priority": 32
     },
     {
+      "id": "nfo-rs-video-novi-dan-tema-jutra-kosibretiorg-i-kosibretirs-",
+      "title": "Tema jutra: kosibreti.org i kosibreti.rs",
+      "url": "https://n1info.rs/video/novi-dan/tema-jutra-kosibretiorg-i-kosibretirs/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T16:00:00+00:00",
+      "time": "16:00",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "ps-n1info-rs-vesti-draskovic-ko-si-bre-ti-aleksandre-vucicu-",
       "title": "Drašković: Ko si, bre, ti Aleksandre Vučiću?",
       "url": "https://n1info.rs/vesti/draskovic-ko-si-bre-ti-aleksandre-vucicu/",
@@ -449,34 +463,6 @@
       "priority": 30
     },
     {
-      "id": "javu-korupcije-u-zemlji-gde-niko-ne-odgovara-za-nadstresnicu",
-      "title": "Rokvić (NPS): Vučić otvara portal za prijavu korupcije u zemlji gde niko ne odgovara za nadstrešnicu",
-      "url": "https://beta.rs/content/248253-rokvic-nps-vucic-otvara-portal-za-prijavu-korupcije-u-zemlji-gde-niko-ne-odgovara-za-nadstresnicu",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T10:25:08+00:00",
-      "time": "10:25",
-      "source": "Beta",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "tal-za-prijavu-korupcije-a-niko-ne-odgovara-za-nadstresnicu-",
-      "title": "Rokvić (NPS): Vučić otvara portal za prijavu korupcije u zemlji gde niko ne odgovara za nadstrešnicu",
-      "url": "https://nova.rs/vesti/politika/vucic-otvora-portal-za-prijavu-korupcije-a-niko-ne-odgovara-za-nadstresnicu/",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T09:59:27+00:00",
-      "time": "09:59",
-      "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "-si-bre-ti-platforma-na-kojoj-gradjani-prijavljuju-i-vucica-",
       "title": "„Ko si bre ti“: Narod Vučiću prijavljuje i Vučića",
       "url": "https://vreme.com/vesti/ko-si-bre-ti-platforma-na-kojoj-gradjani-prijavljuju-i-vucica/",
@@ -484,20 +470,6 @@
       "datetime": "2026-07-11T09:52:06+00:00",
       "time": "09:52",
       "source": "Vreme",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "avu-korupcije-u-zemlji-gde-niko-ne-odgovara-za-nadstresnicu-",
-      "title": "Rokvić (NPS): Vučić otvara portal za prijavu korupcije u zemlji gde niko ne odgovara za nadstrešnicu",
-      "url": "https://www.danas.rs/vesti/politika/rokvic-nps-vucic-otvara-portal-za-prijavu-korupcije-u-zemlji-gde-niko-ne-odgovara-za-nadstresnicu/",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T09:47:55+00:00",
-      "time": "09:47",
-      "source": "Danas",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -531,6 +503,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "rci-pripremali-napad-na-bivseg-pripadnika-vozdovackog-klana-",
+      "title": "\"Neka leti kao raketa\": Kako su pripadnici kriminalne grupe \"vračarci\" pripremali napad na bivšeg pripadnika \"voždovačkog klana\"",
+      "url": "https://nova.rs/vesti/hronika/neka-leti-kao-raketa-kako-su-pripadnici-kriminalne-grupe-vracarci-pripremali-napad-na-bivseg-pripadnika-vozdovackog-klana/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T15:10:54+00:00",
+      "time": "15:10",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "tin-paravan-vlasti-prijave-o-kriminalu-u-se-kriju-u-fiokama-",
@@ -575,20 +561,6 @@
       "priority": 24
     },
     {
-      "id": "77-srbija-i-bugarska-uspostavljaju-novi-granicni-prelaz-vest",
-      "title": "Dačić i Demerdžijev potpisali Memorandum o novom graničnom prelazu između Srbije i Bugarske",
-      "url": "https://www.euronews.rs/srbija/drustvo/232077/srbija-i-bugarska-uspostavljaju-novi-granicni-prelaz/vest",
-      "date": "2026-07-09",
-      "datetime": "2026-07-09T16:00:00+00:00",
-      "time": "16:00",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "ww-krik-rs-kriminalac-milan-ostojic-sandokan-upucan-u-sapcu-",
       "title": "Kriminalac Milan Ostojić Sandokan upucan u Šapcu",
       "url": "https://www.krik.rs/kriminalac-milan-ostojic-sandokan-upucan-u-sapcu/",
@@ -615,6 +587,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "www-danas-rs-svet-hanter-bajden-donald-tramp-saveznik-tuzba-",
+      "title": "Bajdenov sin dobio spor vredan 1,7 miliona dolara protiv saveznika Donalda Trampa",
+      "url": "https://www.danas.rs/svet/hanter-bajden-donald-tramp-saveznik-tuzba/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T15:49:07+00:00",
+      "time": "15:49",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "-otkrica-kako-se-nositi-sa-saznanjem-da-je-deda-bio-nacista-",
@@ -660,7 +646,7 @@
     },
     {
       "id": "https-n1info-rs-vesti-subotica-hapsenje-droga-marihuana-",
-      "title": "Subotička policija uhpasila dve osoba, pronađeno više kilograma droge",
+      "title": "Subotička policija uhpasila dve osobe, pronađeno više kilograma droge",
       "url": "https://n1info.rs/vesti/subotica-hapsenje-droga-marihuana/",
       "date": "2026-07-11",
       "datetime": "2026-07-11T14:51:11+00:00",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-11T12:20:36+00:00",
       "time": "12:20",
       "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "sumnjiceni-za-ubistvo-bivse-poslanice-i-ucesnice-rijalitija-",
+      "title": "U Britaniji pušten na slobodu osumnjičeni za ubistvo bivše poslanice i učesnice rijalitija",
+      "url": "https://n1info.rs/svet/u-britaniji-pusten-na-slobodu-osumnjiceni-za-ubistvo-bivse-poslanice-i-ucesnice-rijalitija/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T11:48:57+00:00",
+      "time": "11:48",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
