@@ -29,20 +29,6 @@
       "priority": 104
     },
     {
-      "id": "ubistvo-restoran-27-sasa-vukovic-veselin-milic-33800970-html",
-      "title": "Tužilaštvo u Beogradu podiglo optužnice za slučaj Senjak, Milić se tereti za neprijavljivanje ubistva",
-      "url": "https://www.slobodnaevropa.org/a/srbija-beograd-tuzilastvo-optuznica-ubistvo-restoran-27-sasa-vukovic-veselin-milic/33800970.html",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T13:20:45+00:00",
-      "time": "13:20",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
       "id": "-jos-nema-optuznice-protiv-grcica-zbog-malverzacija-u-eps-u-",
       "title": "Još nema optužnice protiv Grčića zbog malverzacija u EPS-u",
       "url": "https://www.krik.rs/jos-nema-optuznice-protiv-grcica-zbog-malverzacija-u-eps-u/",
@@ -83,6 +69,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "rzavljanin-na-auto-putu-vozio-mercedes-203-kilometra-na-sat-",
+      "title": "Turski državljanin na auto-putu vozio 203 kilometra na sat",
+      "url": "https://n1info.rs/region/turski-drzavljanin-na-auto-putu-vozio-mercedes-203-kilometra-na-sat/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T12:17:16+00:00",
+      "time": "12:17",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "djane-prilikom-hapsenja-izbo-policajce-pa-se-polio-benzinom-",
@@ -183,18 +183,32 @@
       "priority": 90
     },
     {
-      "id": "ruski-agenti-srbija-hapsenje-eksploziv-nemacka-33800908-html",
-      "title": "Navodni ruski agenti u pritvoru u Srbiji u slučaju planiranja sabotaže u Nemačkoj",
-      "url": "https://www.slobodnaevropa.org/a/ruski-agenti-srbija-hapsenje-eksploziv-nemacka/33800908.html",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T11:29:00+00:00",
-      "time": "11:29",
-      "source": "RSE Balkan",
+      "id": "ila-golf-pa-zaplenila-11-kilograma-droge-uhapsene-dve-osobe-",
+      "title": "Policija iz Subotice na auto-putu zaustavila \"golf\", pa zaplenila 11 kilograma droge: Uhapšene dve osobe",
+      "url": "https://nova.rs/vesti/hronika/policija-iz-subotice-na-auto-putu-zaustavila-golf-pa-zaplenila-11-kilograma-droge-uhapsene-dve-osobe/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T12:19:32+00:00",
+      "time": "12:19",
+      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 76
+      "priority": 70
+    },
+    {
+      "id": "e-na-auto-putu-zaustavila-golf-a-onda-je-usledio-sok-h4ce7hn",
+      "title": "Policija iz Subotice na auto-putu zaustavila \"golf\", a onda je usledio ŠOK! Zbog onoga šta je prevozio vozač je ODMAH uhapšen!",
+      "url": "https://www.blic.rs/vesti/hronika/policija-iz-subotice-na-auto-putu-zaustavila-golf-a-onda-je-usledio-sok/h4ce7hn",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T12:13:51+00:00",
+      "time": "12:13",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "s-rs-vesti-svet-5993743-britanija-ministarka-en-videkom-html",
@@ -218,20 +232,6 @@
       "datetime": "2026-07-11T08:45:43+00:00",
       "time": "08:45",
       "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "ecak-16-vitlao-nozem-po-gradu-pa-nasrnuo-na-policiju-61tqn3c",
-      "title": "DEČAK (16) VITLAO NOŽEM PO GRADU, PA NASRNUO I NA POLICIJU Drama u centru Uroševca: Majka pokušala da spreči hapšenje",
-      "url": "https://www.blic.rs/vesti/hronika/drama-u-centru-urosevca-decak-16-vitlao-nozem-po-gradu-pa-nasrnuo-na-policiju/61tqn3c",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T08:29:48+00:00",
-      "time": "08:29",
-      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -351,6 +351,20 @@
       "priority": 66
     },
     {
+      "id": "strazuje-spajiceve-veze-sa-ljudima-kompromitovane-reputacije",
+      "title": "„Фајненшел тајмс“ истражује Спајићеве везе са људима компромитоване репутације",
+      "url": "https://www.politika.rs/scc/clanak/769963/fajnensel-tajms-istrazuje-spajiceve-veze-sa-ljudima-kompromitovane-reputacije",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T11:54:00+00:00",
+      "time": "11:54",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "kroz-mitsku-grcku-turisti-mogu-hodati-stazama-bogova-34qpb79",
       "title": "Top 5 putovanja kroz mitsku Grčku: Turisti mogu hodati stazama bogova i kupati se u kristalno čistoj vodi",
       "url": "https://www.blic.rs/biznis/after-hour/top-5-putovanja-kroz-mitsku-grcku-turisti-mogu-hodati-stazama-bogova/34qpb79",
@@ -363,6 +377,20 @@
       "breaking": false,
       "alert": true,
       "priority": 60
+    },
+    {
+      "id": "ps-n1info-rs-vesti-draskovic-ko-si-bre-ti-aleksandre-vucicu-",
+      "title": "Drašković: Ko si, bre, ti Aleksandre Vučiću?",
+      "url": "https://n1info.rs/vesti/draskovic-ko-si-bre-ti-aleksandre-vucicu/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T12:25:32+00:00",
+      "time": "12:25",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "javu-korupcije-u-zemlji-gde-niko-ne-odgovara-za-nadstresnicu",
@@ -435,20 +463,6 @@
       "priority": 30
     },
     {
-      "id": "gradjanima-anonimnu-prijavu-korupcije-i-zloupotreba-polozaja",
-      "title": "NOVO ORUĐE U RUKAMA GRAĐANA SRBIJE: Vučić narodu dao priliku da prijavi korupciju, zloupotrebe i bahato ponašanje funkcionera - evo kako sve funkcioniše (FOTO)",
-      "url": "https://www.kurir.rs/vesti/politika/10046033/ko-si-bre-ti-nova-platforma-omogucava-gradjanima-anonimnu-prijavu-korupcije-i-zloupotreba-polozaja",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T05:44:10+00:00",
-      "time": "05:44",
-      "source": "Kurir",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "jave-za-korupciju-sud-crne-gore-o-satovima-mila-djukanovica-",
       "title": "Prijave za korupciju: Sud Crne Gore o satovima Mila Đukanovića",
       "url": "https://vreme.com/svet/prijave-za-korupciju-sud-crne-gore-o-satovima-mila-djukanovica/",
@@ -505,6 +519,20 @@
       "priority": 28
     },
     {
+      "id": "politika-rs-scc-clanak-769964-hapsenje-zbog-droge-u-subotici",
+      "title": "Хапшење због дроге у Суботици",
+      "url": "https://www.politika.rs/scc/clanak/769964/hapsenje-zbog-droge-u-subotici",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T11:57:00+00:00",
+      "time": "11:57",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "-petkovic-s-ambasadorom-holandije-o-dijalogu-i-pristini-vest",
       "title": "Petković ambasadoru Holandije ukazao na jednostrane i antisrpske poteze vlasti u Prištini",
       "url": "https://www.euronews.rs/srbija/politika/232037/petkovic-s-ambasadorom-holandije-o-dijalogu-i-pristini/vest",
@@ -555,20 +583,6 @@
       "time": "10:37",
       "source": "Kurir",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "ozicionara-u-ankari-zbog-navodnog-mita-i-namestanja-tendera-",
-      "title": "Akcija privođenja opozicionara u Ankari zbog navodnog mita i nameštanja tendera",
-      "url": "https://nova.rs/vesti/svet/akcija-privodjenja-opozicionara-u-ankari-zbog-navodnog-mita-i-namestanja-tendera/",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T08:00:12+00:00",
-      "time": "08:00",
-      "source": "Nova",
-      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -631,6 +645,34 @@
       "priority": 24
     },
     {
+      "id": "-otkrica-kako-se-nositi-sa-saznanjem-da-je-deda-bio-nacista-",
+      "title": "Nemci došli su do neprijatnih otkrića: Kako se nositi sa saznanjem da je deda bio nacista?",
+      "url": "https://www.danas.rs/svet/nemci-dosli-su-do-neprijatnih-otkrica-kako-se-nositi-sa-saznanjem-da-je-deda-bio-nacista/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T12:31:11+00:00",
+      "time": "12:31",
+      "source": "Danas",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "tajfun-bavi-ide-ka-kini-evakuisano-vise-od-1-8-miliona-ljudi",
+      "title": "KINA EVAKUISALA SKORO DVA MILIONA LJUDI! Približava joj se RAZORNI TAJFUN, juri prema kopnu! Na Tajvanu otkazani letovi, na Filipinima čak 17 MRTVIH! (VIDEO)",
+      "url": "https://www.kurir.rs/planeta/10046253/tajfun-bavi-ide-ka-kini-evakuisano-vise-od-1-8-miliona-ljudi",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T11:36:01+00:00",
+      "time": "11:36",
+      "source": "Kurir",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "ova-vrsta-dinosaurusa-na-tajlandu-sa-vratom-dugim-20-metara-",
       "title": "Pronađena nova vrsta dinosaurusa na Tajlandu, sa vratom dugim 20 metara",
       "url": "https://www.danas.rs/bbc-news-serbian/pronadjena-nova-vrsta-dinosaurusa-na-tajlandu-sa-vratom-dugim-20-metara/",
@@ -645,54 +687,12 @@
       "priority": 8
     },
     {
-      "id": "ao-zalog-za-kredit-zasto-ove-banke-otkupljuju-zalihe-62858q1",
-      "title": "Kolut parmezana kao zalog za kredit: Banke otkupljuju zalihe od proizvođača, evo šta se krije iza neobične prakse",
-      "url": "https://www.blic.rs/biznis/moj-novac/kolut-parmezana-kao-zalog-za-kredit-zasto-ove-banke-otkupljuju-zalihe/62858q1",
+      "id": "-232310-policija-u-subotici-uhapsila-dvojicu-zbog-droge-vest",
+      "title": "Policija u Subotici uhapsila dvojicu muškaraca zbog droge",
+      "url": "https://www.euronews.rs/srbija/aktuelno/232310/policija-u-subotici-uhapsila-dvojicu-zbog-droge/vest",
       "date": "2026-07-11",
-      "datetime": "2026-07-11T08:20:01+00:00",
-      "time": "08:20",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "u-u-berlinu-policajci-upali-kroz-prozor-i-oslobodili-bxb8ph7",
-      "title": "(FOTO) 11 SATI DRŽAO TAOCA U SUPERMARKETU! Prišao kasi, izvukao nož i zarobio ženu: Policajci upali kroz krovni prozor i savladali ga elektrošokerom",
-      "url": "https://www.blic.rs/vesti/svet/foto-11-sati-drzao-taoca-u-marketu-u-berlinu-policajci-upali-kroz-prozor-i-oslobodili/bxb8ph7",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T09:53:05+00:00",
-      "time": "09:53",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "6042-brazilska-influenserka-kauana-biljar-poginula-u-dubaiju",
-      "title": "POZNATA INFLUENSERKA (26) POGINULA U DUBAIJU: Pala sa 27. sprata zgrade, bila u stanu sa svojom devojkom! Policija pronašla MISTERIOZNU glasovnu poruku! (FOTO)",
-      "url": "https://www.kurir.rs/planeta/10046042/brazilska-influenserka-kauana-biljar-poginula-u-dubaiju",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T06:29:57+00:00",
-      "time": "06:29",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-drustvo-231975-najavljena-pojacana-kontrola-saobracaja-vest",
-      "title": "Najavljena pojačana kontrola saobraćaja: Koje prekršaje će policija otkrivati i na kojim putevima",
-      "url": "https://www.euronews.rs/srbija/drustvo/231975/najavljena-pojacana-kontrola-saobracaja/vest",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T05:06:00+00:00",
-      "time": "05:06",
+      "datetime": "2026-07-11T12:30:00+00:00",
+      "time": "12:30",
       "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
