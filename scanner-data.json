@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "a-249485-devojka-izbodena-u-parku-kod-vukovog-spomenika-vest",
+      "title": "Devojka izbodena u parku kod Vukovog spomenika; Napadač uhapšen VIDEO",
+      "url": "https://www.b92.net/info/hronika/249485/devojka-izbodena-u-parku-kod-vukovog-spomenika/vest",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T21:19:00+00:00",
+      "time": "21:19",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": true,
+      "alert": true,
+      "priority": 192
+    },
+    {
       "id": "trage-i-smrti-bivseg-specijalca-srdjana-aleksica-u-sloveniji",
       "title": "BIVŠI SPECIJALAC SRĐAN ALEKSIĆ PRONAĐEN MRTAV! Zbog njega je izdato hitno UPOZORENJE građanima, oglasila se policija: \"Nema više opasnosti...\" (FOTO)",
       "url": "https://www.kurir.rs/region/hrvatska/10046531/detalji-potrage-i-smrti-bivseg-specijalca-srdjana-aleksica-u-sloveniji",
@@ -99,6 +113,48 @@
       "priority": 94
     },
     {
+      "id": "-devojka-izbodena-kod-vukovog-spomenika-napadac-uhapsen-html",
+      "title": "Девојка избодена код Вуковог споменика, нападач ухапшен",
+      "url": "https://www.rts.rs/vesti/hronika/5993988/devojka-izbodena-kod-vukovog-spomenika-napadac-uhapsen.html",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T21:55:29+00:00",
+      "time": "21:55",
+      "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "0-u-beogradu-uhapsen-begunac-sa-interpolove-crvene-poternice",
+      "title": "U Beogradu uhapšen begunac sa Interpolove crvene poternice",
+      "url": "https://beta.rs/content/248270-u-beogradu-uhapsen-begunac-sa-interpolove-crvene-poternice",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T21:25:08+00:00",
+      "time": "21:25",
+      "source": "Beta",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "https-www-danas-rs-svet-region-uk-vulevic-uhapsen-ubeogradu-",
+      "title": "Vijesti: Odbegli Beranac Vuk Vulević uhapšen u Beogradu",
+      "url": "https://www.danas.rs/svet/region/uk-vulevic-uhapsen-ubeogradu/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T21:05:58+00:00",
+      "time": "21:05",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "osovskim-dokumentima-trazili-ga-interpol-srbija-i-crna-gora-",
       "title": "MUP: Vuk Vulević uhapšen sa kosovskim dokumentima, tražili ga Interpol, Srbija i Crna Gora",
       "url": "https://n1info.rs/vesti/mup-vuk-vulevic-uhapsen-sa-kosovskim-dokumentima-trazili-ga-interpol-srbija-i-crna-gora/",
@@ -128,7 +184,7 @@
     },
     {
       "id": "lica-mesta-izbodena-devojka-20-kod-vukovog-spomenika-pjxs36x",
-      "title": "(FOTO) SVE VRVI OD POLICIJE KOD VUKOVOG SPOMENIKA! Prve slike sa lica mesta gde je izbodena devojka (20): Uhapšen muškarac",
+      "title": "(FOTO) SVE VRVI OD POLICIJE KOD VUKOVOG SPOMENIKA! Prve slike sa lica mesta gde je izbodena devojka (20): Uhapšen muškarac (VIDEO)",
       "url": "https://www.blic.rs/vesti/hronika/prve-slike-sa-lica-mesta-izbodena-devojka-20-kod-vukovog-spomenika/pjxs36x",
       "date": "2026-07-11",
       "datetime": "2026-07-11T20:33:25+00:00",
@@ -575,34 +631,6 @@
       "priority": 30
     },
     {
-      "id": "obamin-sluzbenik-krao-od-kolega-da-bi-placao-zavisnost-droge",
-      "title": "Бивши Обамин службеник крао од колега да би плаћао зависност дроге",
-      "url": "https://www.politika.rs/scc/clanak/770055/bivsi-obamin-sluzbenik-krao-od-kolega-da-bi-placao-zavisnost-droge",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T19:32:00+00:00",
-      "time": "19:32",
-      "source": "Politika",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "-zloupotreba-antibiotika-veoma-je-opasna-za-covecanstvo-vest",
-      "title": "Virusolog upozorava: Zloupotreba ovih lekova postaje jedna od najvećih pretnji čovečanstvu",
-      "url": "https://www.b92.net/zdravlje/aktuelno/249477/banko-zloupotreba-antibiotika-veoma-je-opasna-za-covecanstvo/vest",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T19:30:00+00:00",
-      "time": "19:30",
-      "source": "B92",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "rci-pripremali-napad-na-bivseg-pripadnika-vozdovackog-klana-",
       "title": "\"Neka leti kao raketa\": Kako su pripadnici kriminalne grupe \"vračarci\" pripremali napad na bivšeg pripadnika \"voždovačkog klana\"",
       "url": "https://nova.rs/vesti/hronika/neka-leti-kao-raketa-kako-su-pripadnici-kriminalne-grupe-vracarci-pripremali-napad-na-bivseg-pripadnika-vozdovackog-klana/",
@@ -659,20 +687,6 @@
       "priority": 8
     },
     {
-      "id": "olimpijakos-trazi-od-dubaija-3-miliona-za-tomasa-vokapa-vest",
-      "title": "Dubai ne žali novac – 3 miliona za Amerikanca?",
-      "url": "https://www.b92.net/sport/kosarka/euroleague/249476/olimpijakos-trazi-od-dubaija-3-miliona-za-tomasa-vokapa/vest",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T20:00:00+00:00",
-      "time": "20:00",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "www-danas-rs-svet-hanter-bajden-donald-tramp-saveznik-tuzba-",
       "title": "Bajdenov sin dobio spor vredan 1,7 miliona dolara protiv saveznika Donalda Trampa",
       "url": "https://www.danas.rs/svet/hanter-bajden-donald-tramp-saveznik-tuzba/",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "Engleskoj-Tokom-decje-igre-pronadjen-kofer-sa-telom-muskarca",
-      "title": "PRONAŠLI SU KOFER, A KADA SU GA OTVORILI USLEDIO JE UŽAS! Jezivo otkriće u parku gde su se igrala deca! Tražili su plišane medvede, a ona je došla policija!",
-      "url": "https://www.kurir.rs/planeta/10046574/Horor-u-Engleskoj-Tokom-decje-igre-pronadjen-kofer-sa-telom-muskarca",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T20:32:18+00:00",
-      "time": "20:32",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
