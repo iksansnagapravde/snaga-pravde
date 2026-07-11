@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "-protiv-muskarca-u-varazdinu-zbog-pokusaja-ubistva-i-nasilja",
-      "title": "POKUŠAO DA UDAVI UKUĆANKU, GODINAMA ZLOSTAVLJAO ČESTVORO DECE Užas u Varaždinu, muškarac hitno uhapšen",
-      "url": "https://www.kurir.rs/region/hrvatska/10045899/istraga-protiv-muskarca-u-varazdinu-zbog-pokusaja-ubistva-i-nasilja",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T22:40:00+00:00",
-      "time": "22:40",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "-genocid-skole-bih-evropa-izucavanje-prirucnik-33800826-html",
       "title": "Kako lekcije o genocidu u Srebrenici dovesti do učionica u BiH i Evropi?",
       "url": "https://www.slobodnaevropa.org/a/srebrenica-genocid-skole-bih-evropa-izucavanje-prirucnik/33800826.html",
@@ -27,6 +13,20 @@
       "breaking": true,
       "alert": false,
       "priority": 126
+    },
+    {
+      "id": "a-arsenijevic-pretucen-srebrenica-komemoracija-33801537-html",
+      "title": "Pretučen pisac Vladimir Arsenijević u Beogradu, otkazana komemoracija žrtvama Srebrenice",
+      "url": "https://www.slobodnaevropa.org/a/arsenijevic-pretucen-srebrenica-komemoracija/33801537.html",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T08:50:43+00:00",
+      "time": "08:50",
+      "source": "RSE Balkan",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
     },
     {
       "id": "ubistvo-restoran-27-sasa-vukovic-veselin-milic-33800970-html",
@@ -85,41 +85,13 @@
       "priority": 94
     },
     {
-      "id": "rancuskoj-uhapsene-32-osobe-osumnjicene-za-podmetanje-pozara",
-      "title": "У Француској ухапшене 32 особе осумњичене за подметање пожара",
-      "url": "https://www.politika.rs/scc/clanak/769933/u-francuskoj-uhapsene-32-osobe-osumnjicene-za-podmetanje-pozara",
+      "id": "djane-prilikom-hapsenja-izbo-policajce-pa-se-polio-benzinom-",
+      "title": "Tinejdžer (16) Uroševca nožem napao građane: Prilikom hapšenja izbo policajce, pa se polio benzinom",
+      "url": "https://nova.rs/vesti/hronika/tinejdzer-16-urosevca-nozem-napao-gradjane-prilikom-hapsenja-izbo-policajce-pa-se-polio-benzinom/",
       "date": "2026-07-11",
-      "datetime": "2026-07-11T09:51:00+00:00",
-      "time": "09:51",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "cka-policija-uhapsila-dve-osobe-zbog-napada-na-banku-iz-2010",
-      "title": "POSLE 15 GODINA PALI OSUMNJIČENI: Uhapšene dve osobe u Grčkoj zbog jezivog napada na banku u kojem su poginule tri osobe",
-      "url": "https://www.kurir.rs/planeta/10045957/grcka-policija-uhapsila-dve-osobe-zbog-napada-na-banku-iz-2010",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T00:02:00+00:00",
-      "time": "00:02",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "ra-10045745-racija-hotel-podgorica-kokain-uhapsene-dve-osobe",
-      "title": "RACIJA U PODGORIČKOM HOTELU: Uhapšene dve osobe, pronađeno 18 grama kokaina",
-      "url": "https://www.kurir.rs/region/crna-gora/10045745/racija-hotel-podgorica-kokain-uhapsene-dve-osobe",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T22:01:00+00:00",
-      "time": "22:01",
-      "source": "Kurir",
+      "datetime": "2026-07-11T11:03:48+00:00",
+      "time": "11:03",
+      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -169,20 +141,6 @@
       "priority": 90
     },
     {
-      "id": "nih-u-istrazi-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera-",
-      "title": "Još osumnjičenih u istrazi ilegalnog uvoza i korišćenja botoksa i filera",
-      "url": "https://n1info.rs/region/jos-osumnjicenih-u-istrazi-ilegalnog-uvoza-i-koriscenja-botoksa-i-filera/",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T20:41:26+00:00",
-      "time": "20:41",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "https-www-krik-rs-aleksandar-papic-optuzen-za-pranje-novca-",
       "title": "Aleksandar Papić optužen za pranje novca",
       "url": "https://www.krik.rs/aleksandar-papic-optuzen-za-pranje-novca/",
@@ -225,20 +183,6 @@
       "priority": 90
     },
     {
-      "id": "-vidic-podneo-krivicnu-prijavu-zbog-ugrozavanja-bezbednosti-",
-      "title": "Nemanja Vidić podneo krivičnu prijavu zbog ugrožavanja bezbednosti",
-      "url": "https://vreme.com/vesti/nemanja-vidic-podneo-krivicnu-prijavu-zbog-ugrozavanja-bezbednosti/",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T16:43:40+00:00",
-      "time": "16:43",
-      "source": "Vreme",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "ruski-agenti-srbija-hapsenje-eksploziv-nemacka-33800908-html",
       "title": "Navodni ruski agenti u pritvoru u Srbiji u slučaju planiranja sabotaže u Nemačkoj",
       "url": "https://www.slobodnaevropa.org/a/ruski-agenti-srbija-hapsenje-eksploziv-nemacka/33800908.html",
@@ -251,6 +195,20 @@
       "breaking": false,
       "alert": true,
       "priority": 76
+    },
+    {
+      "id": "s-rs-vesti-svet-5993743-britanija-ministarka-en-videkom-html",
+      "title": "Мушкарац пуштен након хапшења због смрти бивше британске министарке Ен Видекомб",
+      "url": "https://www.rts.rs/vesti/svet/5993743/britanija-ministarka-en-videkom.html",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T10:54:40+00:00",
+      "time": "10:54",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "u-uhapsen-muskarac-koji-je-drzao-radnicu-u-supermarketu-html",
@@ -307,6 +265,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "ubistva-na-senjaku-kleknuo-pred-zrtvu-pa-mu-sasuo-10-p5135yv",
+      "title": "\"BRATE, MOLIM TE, VRATI SE\":  Otkriveni ŠOKANTNI DETALJI ubistva na Senjaku: Kleknuo pred žrtvu pa mu sasuo 10 hitaca, a onda su telo zabetonirali u buretu!",
+      "url": "https://www.blic.rs/vesti/hronika/otkriveni-sokantni-detalji-ubistva-na-senjaku-kleknuo-pred-zrtvu-pa-mu-sasuo-10/p5135yv",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T11:28:25+00:00",
+      "time": "11:28",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "-politika-232274-test-za-pravosude-slucaj-veselin-milic-vest",
@@ -547,6 +519,20 @@
       "priority": 26
     },
     {
+      "id": "tin-paravan-vlasti-prijave-o-kriminalu-u-se-kriju-u-fiokama-",
+      "title": "SSP: Vučićev portal jeftin paravan vlasti, prijave o kriminalu u se kriju u fiokama",
+      "url": "https://www.danas.rs/vesti/politika/ssp-vucicev-portal-jeftin-paravan-vlasti-prijave-o-kriminalu-u-se-kriju-u-fiokama/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T11:07:53+00:00",
+      "time": "11:07",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "1info-rs-magazin-showbiz-serija-mobland-tom-hardi-preporuke-",
       "title": "Kriminalistički hit Gaja Ričija i Toma Hardija zvanično stiže i na Netflix",
       "url": "https://n1info.rs/magazin/showbiz/serija-mobland-tom-hardi-preporuke/",
@@ -561,13 +547,13 @@
       "priority": 24
     },
     {
-      "id": "stajem-pokusali-da-opravdaju-izostanak-kriminalca-sa-sudenja",
-      "title": "Лажним лекарским извештајем покушали да оправдају изостанак криминалца са суђења",
-      "url": "https://www.politika.rs/scc/clanak/769935/laznim-lekarskim-izvestajem-pokusali-da-opravdaju-izostanak-kriminalca-sa-sudenja",
+      "id": "lucaju-senjak-pojedini-mediji-i-politicari-zloupotrebljavali",
+      "title": "ODBEGLI KRIMINALAC MEDENICA SA SLUŽBAMA KOJE MU PRUŽAJU UTOČIŠTE PREVESLAO BLOKADERSKU JAVNOST!? Dokazano da su njegovim neistinama pokušavali da ruše sistem",
+      "url": "https://www.kurir.rs/vesti/politika/10046120/milos-medenica-lagao-o-slucaju-senjak-pojedini-mediji-i-politicari-zloupotrebljavali",
       "date": "2026-07-11",
-      "datetime": "2026-07-11T09:56:00+00:00",
-      "time": "09:56",
-      "source": "Politika",
+      "datetime": "2026-07-11T10:37:07+00:00",
+      "time": "10:37",
+      "source": "Kurir",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -583,20 +569,6 @@
       "time": "08:00",
       "source": "Nova",
       "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "snimanju-filma-savages-dobio-17-samara-od-koleginice-1v99h0t",
-      "title": "SUROVO SNIMANJE KULTNOG TRILERA Benisio del Toro priznao: \"NIJE BILO PRIJATNO DOBITI 17 ŠAMARA OD NJE!\"",
-      "url": "https://www.blic.rs/kultura/benisio-del-toro-je-na-snimanju-filma-savages-dobio-17-samara-od-koleginice/1v99h0t",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T07:00:00+00:00",
-      "time": "07:00",
-      "source": "Blic",
-      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -659,6 +631,20 @@
       "priority": 24
     },
     {
+      "id": "ova-vrsta-dinosaurusa-na-tajlandu-sa-vratom-dugim-20-metara-",
+      "title": "Pronađena nova vrsta dinosaurusa na Tajlandu, sa vratom dugim 20 metara",
+      "url": "https://www.danas.rs/bbc-news-serbian/pronadjena-nova-vrsta-dinosaurusa-na-tajlandu-sa-vratom-dugim-20-metara/",
+      "date": "2026-07-11",
+      "datetime": "2026-07-11T10:50:10+00:00",
+      "time": "10:50",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "ao-zalog-za-kredit-zasto-ove-banke-otkupljuju-zalihe-62858q1",
       "title": "Kolut parmezana kao zalog za kredit: Banke otkupljuju zalihe od proizvođača, evo šta se krije iza neobične prakse",
       "url": "https://www.blic.rs/biznis/moj-novac/kolut-parmezana-kao-zalog-za-kredit-zasto-ove-banke-otkupljuju-zalihe/62858q1",
@@ -687,14 +673,28 @@
       "priority": 4
     },
     {
-      "id": "a-arsenijevic-pretucen-srebrenica-komemoracija-33801537-html",
-      "title": "Pretučen pisac Vladimir Arsenijević u Beogradu, otkazana komemoracija žrtvama Srebrenice",
-      "url": "https://www.slobodnaevropa.org/a/arsenijevic-pretucen-srebrenica-komemoracija/33801537.html",
+      "id": "6042-brazilska-influenserka-kauana-biljar-poginula-u-dubaiju",
+      "title": "POZNATA INFLUENSERKA (26) POGINULA U DUBAIJU: Pala sa 27. sprata zgrade, bila u stanu sa svojom devojkom! Policija pronašla MISTERIOZNU glasovnu poruku! (FOTO)",
+      "url": "https://www.kurir.rs/planeta/10046042/brazilska-influenserka-kauana-biljar-poginula-u-dubaiju",
       "date": "2026-07-11",
-      "datetime": "2026-07-11T08:50:43+00:00",
-      "time": "08:50",
-      "source": "RSE Balkan",
-      "category": "Радничка права",
+      "datetime": "2026-07-11T06:29:57+00:00",
+      "time": "06:29",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-drustvo-231975-najavljena-pojacana-kontrola-saobracaja-vest",
+      "title": "Najavljena pojačana kontrola saobraćaja: Koje prekršaje će policija otkrivati i na kojim putevima",
+      "url": "https://www.euronews.rs/srbija/drustvo/231975/najavljena-pojacana-kontrola-saobracaja/vest",
+      "date": "2026-07-10",
+      "datetime": "2026-07-10T05:06:00+00:00",
+      "time": "05:06",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
