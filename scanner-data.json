@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "ad-i-iran-da-okoncaju-neprijateljstva-i-vrate-se-razgovorima",
+      "title": "Гутереш позива САД и Иран да окончају непријатељства и врате се разговорима",
+      "url": "https://www.politika.rs/scc/clanak/770236/guteres-poziva-sad-i-iran-da-okoncaju-neprijateljstva-i-vrate-se-razgovorima",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T18:12:00+00:00",
+      "time": "18:12",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "bivsi-policajac-todor-dosen-koji-je-uhapsen-u-jakovu-4flkb2m",
       "title": "OPTUŽEN DA JE U DŽEP STAVIO PREKO 3 MILIONA! Ko je kontroverzni BIVŠI POLICAJAC koji je uhapšen u Jakovu? Došen javnosti poznat po slučaju UBIJENE PEVAČICE",
       "url": "https://www.blic.rs/vesti/hronika/ko-je-bivsi-policajac-todor-dosen-koji-je-uhapsen-u-jakovu/4flkb2m",
@@ -71,6 +85,20 @@
       "priority": 94
     },
     {
+      "id": "rbija-aktuelno-232397-groblja-na-udaru-vandala-i-lopova-vest",
+      "title": "Groblja na udaru vandala i lopova: Kome mogu da se žale korisnici grobnih mesta u slučaju krađe?",
+      "url": "https://www.euronews.rs/srbija/aktuelno/232397/groblja-na-udaru-vandala-i-lopova/vest",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T18:36:00+00:00",
+      "time": "18:36",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "a-hronika-10046942-ko-je-uhapseni-inspektor-todor-dosen-tosa",
       "title": "EVO KO JE KONTROVERZNI INSPEKTOR TOŠA UHAPŠEN U JAKOVU: Bivši policajac postao poznat posle ubistva pevačice Jelene Marjanović, i ranije je hapšen! (foto)",
       "url": "https://www.kurir.rs/crna-hronika/10046942/ko-je-uhapseni-inspektor-todor-dosen-tosa",
@@ -106,20 +134,6 @@
       "datetime": "2026-07-12T13:18:00+00:00",
       "time": "13:18",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "hronika-todor-dosen-bivsi-policajac-uhapsen-u-jakovu-pbcr17z",
-      "title": "PRONAĐEN ARSENAL HLADNOG ORUŽJA, OBELEŽJA \"UKP\"... Uhapšen kontroverzni bivši policajac: Utvrđeno da je vozio NADROGIRAN, u javnosti poznat po slučaju Jelene Marjanović",
-      "url": "https://www.blic.rs/vesti/hronika/todor-dosen-bivsi-policajac-uhapsen-u-jakovu/pbcr17z",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T13:13:57+00:00",
-      "time": "13:13",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -253,6 +267,20 @@
       "priority": 70
     },
     {
+      "id": "a-da-li-je-istraga-o-simulaciji-zvucnog-topa-bila-samo-spin-",
+      "title": "Velike najave, pa tišina: Da li je istraga o simulaciji zvučnog topa bila samo spin?",
+      "url": "https://www.danas.rs/vesti/drustvo/velike-najave-pa-tisina-da-li-je-istraga-o-simulaciji-zvucnog-topa-bila-samo-spin/",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T18:55:20+00:00",
+      "time": "18:55",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "sta-sme-da-se-kaze-a-sta-ne-advokat-olenik-o-slucaju-senjak-",
       "title": "\"Deluje kao da je napravljen dogovor između Milića i vlasti - šta sme da se kaže, a šta ne\": Advokat Olenik o slučaju \"Senjak\"",
       "url": "https://nova.rs/vesti/hronika/deluje-kao-da-je-napravljen-dogovor-izmedju-milica-i-vlasti-sta-sme-da-se-kaze-a-sta-ne-advokat-olenik-o-slucaju-senjak/",
@@ -321,6 +349,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "w-danas-rs-kolumna-bozidar-andrejic-zloupotreba-tolerancije-",
+      "title": "Zloupotreba tolerancije (Dve neobične od više običnih ostavki1)",
+      "url": "https://www.danas.rs/kolumna/bozidar-andrejic/zloupotreba-tolerancije/",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T19:00:09+00:00",
+      "time": "19:00",
+      "source": "Danas",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "ekuje-izrucenje-vuka-vulevica-trazila-ga-od-srbije-jos-2025-",
@@ -449,18 +491,18 @@
       "priority": 8
     },
     {
-      "id": "ik-kako-bi-izgradila-masivni-grad-sa-morskim-zidom-od-84-km-",
-      "title": "Afrička država baca 120 miliona tona peska u Atlantik kako bi izgradila masivni grad sa morskim zidom od 8,4 km",
-      "url": "https://nova.rs/magazin/nauka/africka-drzava-baca-120-miliona-tona-peska-u-atlantik-kako-bi-izgradila-masivni-grad-sa-morskim-zidom-od-84-km/",
+      "id": "aneta-10047176-ubio-devojku-umro-dok-je-skrivao-telo-alabama",
+      "title": "(FOTO) OVO JE MAJKA TROJE DECE KOJA JE ŽRTVA JEZIVOG ZLOČINA Danijel vukao njeno telo u žbunju, pa usledio ŠOKANTAN OBRT: Ono što je POLICIJA ZATEKLA ledi krv",
+      "url": "https://www.kurir.rs/planeta/10047176/ubio-devojku-umro-dok-je-skrivao-telo-alabama",
       "date": "2026-07-12",
-      "datetime": "2026-07-12T11:22:50+00:00",
-      "time": "11:22",
-      "source": "Nova",
-      "category": "Људска права",
+      "datetime": "2026-07-12T18:49:11+00:00",
+      "time": "18:49",
+      "source": "Kurir",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 8
+      "priority": 4
     },
     {
       "id": "tav-nakon-pucnjave-ovo-je-jedna-od-najtezih-akcija-u-6n8zqk3",
@@ -478,7 +520,7 @@
     },
     {
       "id": "otor-niksic-u-kojoj-je-jedna-osoba-poginula-a-17-povredjeno-",
-      "title": "Crnogorska policija otkrila uzrok nesreće na putu Kotor-Nikšić, u kojoj je jedna osoba poginula, a 17 povređeno",
+      "title": "Crnogorska policija otkrila uzrok nesreće na putu Kotor-Nikšić, u kojoj je jedna osoba poginula, a 16 povređeno",
       "url": "https://nova.rs/vesti/svet/crnogorska-policija-otkrila-uzrok-nesrece-na-putu-kotor-niksic-u-kojoj-je-jedna-osoba-poginula-a-17-povredjeno/",
       "date": "2026-07-12",
       "datetime": "2026-07-12T15:50:02+00:00",
@@ -631,13 +673,13 @@
       "priority": 4
     },
     {
-      "id": "inale-vimbldona-siner-zverev-live-gde-gledati-tv-prenos-vest",
-      "title": "Brejk! Zverev bacio reket – Siner vodi",
-      "url": "https://www.b92.net/sport/tenis/vesti/249613/uzivo-finale-vimbldona-siner-zverev-live-gde-gledati-tv-prenos/vest",
+      "id": "-tajlandu-najmanje-27-mrtvih-turisti-urmli-u-toaletu-j2cwxwc",
+      "title": "(VIDEO) HOROR U POPULARNOM LETOVALIŠTU, NAJMANJE 27 MRTVIH Požar \"progutao\" bar na Tajlandu: Turisti UMRLI U TOALETU pokušavajući da pobegnu od vatre",
+      "url": "https://www.blic.rs/vesti/svet/pozar-progutao-bar-na-tajlandu-najmanje-27-mrtvih-turisti-urmli-u-toaletu/j2cwxwc",
       "date": "2026-07-12",
-      "datetime": "2026-07-12T18:07:00+00:00",
-      "time": "18:07",
-      "source": "B92",
+      "datetime": "2026-07-12T19:20:02+00:00",
+      "time": "19:20",
+      "source": "Blic",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
@@ -645,55 +687,13 @@
       "priority": 0
     },
     {
-      "id": "clanak-770212-vucic-isplata-pomoci-gradanima-do-15-septembra",
-      "title": "Вучић: Исплата помоћи грађанима до 15. септембра",
-      "url": "https://www.politika.rs/scc/clanak/770212/vucic-isplata-pomoci-gradanima-do-15-septembra",
+      "id": "a-politika-232466-vucevic-narod-i-drzava-su-iznad-svega-vest",
+      "title": "Vučević: Narod i država su iznad svega, ljudi žele da žive normalno i bez podela",
+      "url": "https://www.euronews.rs/srbija/politika/232466/vucevic-narod-i-drzava-su-iznad-svega/vest",
       "date": "2026-07-12",
-      "datetime": "2026-07-12T17:53:00+00:00",
-      "time": "17:53",
-      "source": "Politika",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "ujuci-izbori-da-li-ce-srbija-u-buducnost-ili-u-proslost-vest",
-      "title": "Vučić: &quot;Pred građanima odlučujući izbori – da li će Srbija u budućnost ili u prošlost&quot;",
-      "url": "https://www.b92.net/info/politika/249660/vucic-pred-gradjanima-odlucujuci-izbori-da-li-ce-srbija-u-buducnost-ili-u-proslost/vest",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T17:53:00+00:00",
-      "time": "17:53",
-      "source": "B92",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "vine-septembra-izdvojicemo-vise-novca-za-lokalne-puteve-html",
-      "title": "Вучић: Исплата помоћи грађанима до половине септембра; издвојићемо више новца за локалне путеве",
-      "url": "https://www.rts.rs/vesti/politika/5994736/vucic-isplata-pomoci-gradjanima-do-polovine-septembra-izdvojicemo-vise-novca-za-lokalne-puteve.html",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T17:52:50+00:00",
-      "time": "17:52",
-      "source": "RTS",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "t-u-ukrajini-1600-dan-12-jul-2026-rusija-putin-zelenski-html",
-      "title": "Руси погодили брод у Черноморску, објавили снимак; ко су кандидати за новог премијера Украјине",
-      "url": "https://www.rts.rs/vesti/ratu-u-ukrajini/5993915/rat-u-ukrajini--1600-dan-12-jul-2026-rusija-putin-zelenski.html",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T17:51:34+00:00",
-      "time": "17:51",
-      "source": "RTS",
+      "datetime": "2026-07-12T19:16:00+00:00",
+      "time": "19:16",
+      "source": "Euronews Serbia",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
