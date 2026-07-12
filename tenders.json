@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 7860547.2,
+    "lowest": 6202.0,
+    "difference": 7854345.2,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100644826,
+    "file": "documents/100644826_Odluka portal pdf pot.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1420000.0,
     "lowest": 7202.0,
     "difference": 1412798.0,
