@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "a-arsenijevic-pretucen-srebrenica-komemoracija-33801537-html",
-      "title": "Pretučen pisac Vladimir Arsenijević u Beogradu uoči komemorativnog skupa za žrtve genocida u Srebrenici",
-      "url": "https://www.slobodnaevropa.org/a/arsenijevic-pretucen-srebrenica-komemoracija/33801537.html",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T08:50:43+00:00",
-      "time": "08:50",
-      "source": "RSE Balkan",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "bivsi-policajac-todor-dosen-koji-je-uhapsen-u-jakovu-4flkb2m",
       "title": "OPTUŽEN DA JE U DŽEP STAVIO PREKO 3 MILIONA! Ko je kontroverzni BIVŠI POLICAJAC koji je uhapšen u Jakovu? Došen javnosti poznat po slučaju UBIJENE PEVAČICE",
       "url": "https://www.blic.rs/vesti/hronika/ko-je-bivsi-policajac-todor-dosen-koji-je-uhapsen-u-jakovu/4flkb2m",
@@ -204,20 +190,6 @@
       "datetime": "2026-07-12T09:33:33+00:00",
       "time": "09:33",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-mup-uhapsen-drzavljanin-crne-gore-sa-interpolove-poternice-",
-      "title": "MUP: Uhapšen državljanin Crne Gore sa Interpolove poternice",
-      "url": "https://www.danas.rs/vesti/drustvo/mup-uhapsen-drzavljanin-crne-gore-sa-interpolove-poternice/",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T07:19:38+00:00",
-      "time": "07:19",
-      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -435,20 +407,6 @@
       "priority": 28
     },
     {
-      "id": "prednosti-prema-anketama-za-predsednicke-izbore-u-francuskoj",
-      "title": "Marin Le Pen u velikoj prednosti prema anketama za predsedničke izbore u Francuskoj",
-      "url": "https://beta.rs/content/248289-marin-le-pen-u-velikoj-prednosti-prema-anketama-za-predsednicke-izbore-u-francuskoj",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T12:25:09+00:00",
-      "time": "12:25",
-      "source": "Beta",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "https-www-danas-rs-svet-region-crna-gora-srbija-vuk-vulevic-",
       "title": "Crna Gora još 2025. tražila od Srbije izručenje Vuka Vulevića, očekuje ga i sad",
       "url": "https://www.danas.rs/svet/region/crna-gora-srbija-vuk-vulevic/",
@@ -533,18 +491,18 @@
       "priority": 26
     },
     {
-      "id": "-kurir-rs-crna-hronika-10046737-mup-o-hapsenju-vuka-vulevica",
-      "title": "LOCIRANJE I HAPŠENJE REZULTAT RADA PRIPADNIKA SRPSKE POLICIJE: Oglasio se MUP posle privođenja Vuka Vulevića u Beogradu",
-      "url": "https://www.kurir.rs/crna-hronika/10046737/mup-o-hapsenju-vuka-vulevica",
+      "id": "okusaj-da-yunex-traffic-dobije-posao-modernizacije-semafora-",
+      "title": "Treći pokušaj da Yunex Traffic dobije posao modernizacije semafora",
+      "url": "https://vreme.com/vesti/treci-pokusaj-da-yunex-traffic-dobije-posao-modernizacije-semafora/",
       "date": "2026-07-12",
-      "datetime": "2026-07-12T08:46:25+00:00",
-      "time": "08:46",
-      "source": "Kurir",
-      "category": "Хапшења",
+      "datetime": "2026-07-12T14:22:55+00:00",
+      "time": "14:22",
+      "source": "Vreme",
+      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 24
     },
     {
       "id": "ww-krik-rs-kriminalac-milan-ostojic-sandokan-upucan-u-sapcu-",
@@ -629,6 +587,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "lazama-u-hrvatskoj-u-punom-jeku-policija-objavila-upozorenja",
+      "title": "Индекс: Крађе на плажама у Хрватској у пуном јеку, полиција објавила упозорења",
+      "url": "https://www.politika.rs/scc/clanak/770208/indeks-krade-na-plazama-u-hrvatskoj-u-punom-jeku-policija-objavila-upozorenja",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T14:58:00+00:00",
+      "time": "14:58",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-Pronadjeno-ratno-oruzje-pored-sinagoge-evakuisano-300-ljudi",
+      "title": "EVAKUISANO 300 LJUDI, POLICIJA BLOKIRALA PODRUČJE Pronađen ARSENAL ORUŽJA u automobilu! Drama u predgrađu Pariza",
+      "url": "https://www.kurir.rs/planeta/10047019/Drama-kod-Pariza-Pronadjeno-ratno-oruzje-pored-sinagoge-evakuisano-300-ljudi",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T14:35:48+00:00",
+      "time": "14:35",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "mnjivog-automobila-kod-pariza-policija-nasla-arsenal-e39mfrp",
+      "title": "EVAKUISANO 300 LJUDI, PRONAĐEN SUMNJIV AUTOMOBIL! Policija blokirala područje, unutra nađen ARSENAL ORUŽJA: Drama u predgrađu Pariza",
+      "url": "https://www.blic.rs/vesti/svet/evakuisano-300-ljudi-zbog-sumnjivog-automobila-kod-pariza-policija-nasla-arsenal/e39mfrp",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T14:20:00+00:00",
+      "time": "14:20",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "upstanci-u-automobilu-pronadjene-lisice-palice-i-sokeri-html",
