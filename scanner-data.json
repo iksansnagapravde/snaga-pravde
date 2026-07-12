@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "enika-u-beogradu-hitno-prevezena-u-urgentni-napadac-uhapsen-",
-      "title": "Devojka izbodena nožem kod Vukovog spomenika u Beogradu: Hitno prevezena u Urgentni, napadač uhapšen",
-      "url": "https://nova.rs/vesti/hronika/devojka-izbodena-nozem-kod-vukovog-spomenika-u-beogradu-hitno-prevezena-u-urgentni-napadac-uhapsen/",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T07:20:42+00:00",
-      "time": "07:20",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "a-arsenijevic-pretucen-srebrenica-komemoracija-33801537-html",
       "title": "Pretučen pisac Vladimir Arsenijević u Beogradu uoči komemorativnog skupa za žrtve genocida u Srebrenici",
       "url": "https://www.slobodnaevropa.org/a/arsenijevic-pretucen-srebrenica-komemoracija/33801537.html",
@@ -69,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "da-je-bio-deo-mreze-koja-je-planirala-sverc-25-tona-kokaina-",
+      "title": "Ko je Vuk Vulević, koji je uhapšen u Beogradu po Interpolovoj poternici? \"Pao\" zbog slučaja \"General\", sumnjiči ga da je bio deo mreže koja je planirala šverc 2,5 tona kokaina",
+      "url": "https://nova.rs/vesti/hronika/ko-je-vuk-vulevic-koji-je-uhapsen-u-beogradu-po-interpolovoj-poternici-pao-zbog-slucaja-general-sumnjici-ga-da-je-bio-deo-mreze-koja-je-planirala-sverc-25-tona-kokaina/",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T10:59:02+00:00",
+      "time": "10:59",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-mladic-22-iz-batajnice-zbog-napada-na-sluzbeno-lice-2v0e6g6",
@@ -183,20 +183,6 @@
       "priority": 92
     },
     {
-      "id": "32170-dvojica-uhapsena-zbog-ranjavanja-muskarca-u-sapcu-vest",
-      "title": "Dvojica uhapšena zbog ranjavanja muškarca u Šapcu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/232170/dvojica-uhapsena-zbog-ranjavanja-muskarca-u-sapcu/vest",
-      "date": "2026-07-10",
-      "datetime": "2026-07-10T11:19:00+00:00",
-      "time": "11:19",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "https-n1info-rs-vesti-uhapsen-vuk-vulevic-",
       "title": "Vijesti: Odbegli Vuk Vulević uhapšen u Beogradu s lažnim dokumentima",
       "url": "https://n1info.rs/vesti/uhapsen-vuk-vulevic/",
@@ -267,6 +253,20 @@
       "priority": 76
     },
     {
+      "id": "-org-a-most-srbija-protesti-represija-vucic-eu-33801617-html",
+      "title": "Zašto Brisel zatvara oči pred represijom u Srbiji?",
+      "url": "https://www.slobodnaevropa.org/a/most-srbija-protesti-represija-vucic-eu/33801617.html",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T11:34:36+00:00",
+      "time": "11:34",
+      "source": "RSE Balkan",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "00-evra-uhapsen-navodni-saradnik-kavackog-klana-u-podgorici-",
       "title": "Blindirani auto, četiri kilograma droge i više od 5.000 evra: Uhapšen navodni saradnik kavačkog klana u Podgorici",
       "url": "https://nova.rs/vesti/hronika/blindirani-auto-cetiri-kilograma-droge-i-vise-od-5000-evra-uhapsen-navodni-saradnik-kavackog-klana-u-podgorici/",
@@ -293,20 +293,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "vno-tuzilastvo-hoce-li-stefanovic-naslediti-zagorku-dolovac-",
-      "title": "Velika seoba iz Višeg u Vrhovno tužilaštvo: Hoće li Stefanović naslediti Zagorku Dolovac",
-      "url": "https://n1info.rs/vesti/velika-seoba-iz-viseg-u-vrhovno-tuzilastvo-hoce-li-stefanovic-naslediti-zagorku-dolovac/",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T18:27:45+00:00",
-      "time": "18:27",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "-politika-232274-test-za-pravosude-slucaj-veselin-milic-vest",
@@ -363,20 +349,6 @@
       "breaking": false,
       "alert": false,
       "priority": 32
-    },
-    {
-      "id": "-si-bre-ti-platforma-na-kojoj-gradjani-prijavljuju-i-vucica-",
-      "title": "„Ko si bre ti“: Narod Vučiću prijavljuje i Vučića",
-      "url": "https://vreme.com/vesti/ko-si-bre-ti-platforma-na-kojoj-gradjani-prijavljuju-i-vucica/",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T09:52:06+00:00",
-      "time": "09:52",
-      "source": "Vreme",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
     },
     {
       "id": "tv-rs-2026-07-10-portal-ko-si-bre-ti-poceo-je-danas-da-radi-",
@@ -575,6 +547,34 @@
       "priority": 24
     },
     {
+      "id": "io-bogatstvo-za-stan-u-puli-kvadrat-kostao-5500-evra-wqex4bh",
+      "title": "ČOLA IZDVOJIO BOGATSTVO ZA STAN U PULI Kvadrat nekretnine koštao 5.500 evra, reč je o luksuznom kompleksu gde pogled puca na more",
+      "url": "https://www.blic.rs/zabava/cola-izdvojio-bogatstvo-za-stan-u-puli-kvadrat-kostao-5500-evra/wqex4bh",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T11:31:05+00:00",
+      "time": "11:31",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ik-kako-bi-izgradila-masivni-grad-sa-morskim-zidom-od-84-km-",
+      "title": "Afrička država baca 120 miliona tona peska u Atlantik kako bi izgradila masivni grad sa morskim zidom od 8,4 km",
+      "url": "https://nova.rs/magazin/nauka/africka-drzava-baca-120-miliona-tona-peska-u-atlantik-kako-bi-izgradila-masivni-grad-sa-morskim-zidom-od-84-km/",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T11:22:50+00:00",
+      "time": "11:22",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "nis-u-srbiji-na-imanju-uzgaja-voce-ulozila-6-miliona-fjwlzvw",
       "title": "ANA IVANOVIĆ IMA BIZNIS U SRBIJI ZA KOJI SE MALO ZNA Kupila imanje na kojem uzgaja voće, uložila ŠEST MILIONA evra - ovo su svi detalji",
       "url": "https://www.blic.rs/zabava/ana-ivanovic-ima-biznis-u-srbiji-na-imanju-uzgaja-voce-ulozila-6-miliona/fjwlzvw",
@@ -603,18 +603,18 @@
       "priority": 8
     },
     {
-      "id": "ta-drzavne-pomoci-za-penzionere-i-punoletne-gradjane-eqndf9s",
-      "title": "Novi detalji o velikoj pomoći države! Evo kada kreću isplate za penzionere i ko dobija najviše novca: Sprema se pomoć i za punoletne građane",
-      "url": "https://www.blic.rs/biznis/pomoc-drzave/kada-pocinje-isplata-drzavne-pomoci-za-penzionere-i-punoletne-gradjane/eqndf9s",
+      "id": "e-izvodili-penali-ispalo-bi-da-je-vulevic-uhapsio-samog-sebe",
+      "title": "Кнежевић: Да су се изводили пенали испало би да је Вулевић ухапсио самог себе",
+      "url": "https://www.politika.rs/scc/clanak/770176/knezevic-da-su-se-izvodili-penali-ispalo-bi-da-je-vulevic-uhapsio-samog-sebe",
       "date": "2026-07-12",
-      "datetime": "2026-07-12T07:41:32+00:00",
-      "time": "07:41",
-      "source": "Blic",
-      "category": "Плате и зараде",
+      "datetime": "2026-07-12T11:16:00+00:00",
+      "time": "11:16",
+      "source": "Politika",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 8
+      "priority": 4
     },
     {
       "id": "s-www-rts-rs-vesti-region-5994262-kradje-plaze-hrvatska-html",
@@ -638,6 +638,20 @@
       "datetime": "2026-07-12T10:38:41+00:00",
       "time": "10:38",
       "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-sumadiji-vozac-jurio-168-km-h-drugi-imali-preko-2-7-promila",
+      "title": "POLICIJA ZAUSTAVILA PAKAO NA PUTEVIMA ŠUMADIJE! Za 12 sati uhvaćeno 1.300 vozača u prekršaju, jedan jurio 168 km/h, drugi mrtav pijan seo za volan",
+      "url": "https://www.kurir.rs/crna-hronika/10046833/vise-od-1-300-prekrsaja-za-12-sati-u-sumadiji-vozac-jurio-168-km-h-drugi-imali-preko-2-7-promila",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T10:38:33+00:00",
+      "time": "10:38",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "i-drustvo-tamo-gde-bi-vuciceva-aplikacija-za-rupe-pregorela-",
-      "title": "Tamo gde bi Vučićeva „aplikacija za rupe“ – pregorela",
-      "url": "https://www.danas.rs/vesti/drustvo/tamo-gde-bi-vuciceva-aplikacija-za-rupe-pregorela/",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T10:31:17+00:00",
-      "time": "10:31",
-      "source": "Danas",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
