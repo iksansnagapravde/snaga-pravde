@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 6490.0,
+    "lowest": 4562.0,
+    "difference": 1928.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100153737,
+    "file": "documents/100153737_OP 42-26 Odluka o dodeli ugovora -Periferni uredaji za racunare.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 7765200.0,
     "lowest": 7202.0,
     "difference": 7757998.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100066385,
     "file": "documents/100066385_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 57278.4,
-    "lowest": 1202.0,
-    "difference": 56076.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 165540,
-    "file": "documents/165540_412-O-195.pdf"
   }
 ]
