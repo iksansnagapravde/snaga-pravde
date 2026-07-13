@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "-hajka-na-srpsku-porodicu-hrvatska-policija-hitno-reagovala-",
-      "title": "Zbog registarskih tablica krenula hajka na srpsku porodicu: Hrvatska policija hitno reagovala",
-      "url": "https://nova.rs/vesti/svet/zbog-registarskih-tablica-krenula-hajka-na-srpsku-porodicu-hrvatska-policija-hitno-reagovala/",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T14:17:03+00:00",
-      "time": "14:17",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "u-ponasanja-u-eliti-sve-ovo-je-ucesnicima-zabranjeno-zjpkr6p",
       "title": "OVO SU SVIH 30 STAVKI O PRAVILU PONAŠANJA U \"ELITI\" Sve ovo je učesnicima STROGO ZABRANJENO: Čeka se hitna odluka produkcije zbog učinjenog samo 7 dana pred finale",
       "url": "https://www.blic.rs/zabava/ovo-su-30-stavki-o-pravilu-ponasanja-u-eliti-sve-ovo-je-ucesnicima-zabranjeno/zjpkr6p",
@@ -97,6 +83,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "apada-na-migrante-opljackali-ih-skinuli-gole-i-zlostavljali-",
+      "title": "Uhapšena dvojica muškaraca u Novom Pazaru zbog napada na migrante: Opljačkali ih, skinuli gole i zlostavljali",
+      "url": "https://nova.rs/vesti/hronika/uhapsena-dvojica-muskaraca-u-novom-pazaru-zbog-napada-na-migrante-opljackali-ih-skinuli-gole-i-zlostavljali/",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T20:43:53+00:00",
+      "time": "20:43",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "652-uhapsene-dve-osobe-u-novom-pazaru-zbog-razbojnistva-vest",
@@ -251,20 +251,6 @@
       "breaking": false,
       "alert": true,
       "priority": 90
-    },
-    {
-      "id": "hapsen-drzavljanin-srbije-i-cg-sa-interpolove-poternice-vest",
-      "title": "U Beogradu uhapšen državljanin Crne Gore i Srbije sa crvene Interpolove poternice, kod sebe imao lažna dokumenta",
-      "url": "https://www.euronews.rs/srbija/aktuelno/232371/uhapsen-drzavljanin-srbije-i-cg-sa-interpolove-poternice/vest",
-      "date": "2026-07-11",
-      "datetime": "2026-07-11T20:37:00+00:00",
-      "time": "20:37",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
     },
     {
       "id": "-www-danas-rs-svet-muskarac-uhapsen-ispred-sedista-kongresa-",
@@ -561,6 +547,20 @@
       "priority": 24
     },
     {
+      "id": "im-pust-u-jeku-sezone-nema-turista-otkazano-milion-aranzmana",
+      "title": "KRIM PUST U JEKU SEZONE! Otkazano čak MILION aranžmana, vlada nestašica SVEGA! Ruska turistkinja zaprepašćena: \"Ovde apsolutno nema nikoga, sve je prazno\"",
+      "url": "https://www.kurir.rs/planeta/10048079/krim-pust-u-jeku-sezone-nema-turista-otkazano-milion-aranzmana",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T20:23:28+00:00",
+      "time": "20:23",
+      "source": "Kurir",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "-www-danas-rs-kultura-konkurs-gradovi-u-fokusu-dom-cirilice-",
       "title": "Kroz konkurs „Gradovi u fokusu“ 25 miliona dinara za Dom ćirilice",
       "url": "https://www.danas.rs/kultura/konkurs-gradovi-u-fokusu-dom-cirilice/",
@@ -569,20 +569,6 @@
       "time": "16:32",
       "source": "Danas",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "-prodaje-se-za-sicu-preko-oglasa-na-internetu-pogoni-6h99jxc",
-      "title": "NEKADA JE HRANILA STOTINE DUŠA U JUGOSLAVIJI! Fabrika sa 65 godina istorije prodaje se za siću preko oglasa na internetu: Pogoni ugašeni, stavili ključ u bravu",
-      "url": "https://www.blic.rs/biznis/privreda/fabrika-sa-65-godina-istorije-prodaje-se-za-sicu-preko-oglasa-na-internetu-pogoni/6h99jxc",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T15:01:00+00:00",
-      "time": "15:01",
-      "source": "Blic",
-      "category": "Лишени слободе",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -694,6 +680,20 @@
       "datetime": "2026-07-13T16:04:26+00:00",
       "time": "16:04",
       "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-policija-u-jakovu-zaustavila-vozaca-pod-dejstvom-droge-vest",
+      "title": "Policija u Jakovu zaustavila vozača pod dejstvom droge: U vozilu pronađeni lisice, šokeri i tablica \"stop policija\"",
+      "url": "https://www.euronews.rs/srbija/aktuelno/232429/policija-u-jakovu-zaustavila-vozaca-pod-dejstvom-droge/vest",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T13:23:00+00:00",
+      "time": "13:23",
+      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
