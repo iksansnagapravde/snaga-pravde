@@ -99,6 +99,34 @@
       "priority": 94
     },
     {
+      "id": "652-uhapsene-dve-osobe-u-novom-pazaru-zbog-razbojnistva-vest",
+      "title": "Uhapšene dve osobe u Novom Pazaru zbog razbojništva",
+      "url": "https://www.euronews.rs/srbija/aktuelno/232652/uhapsene-dve-osobe-u-novom-pazaru-zbog-razbojnistva/vest",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T20:04:00+00:00",
+      "time": "20:04",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "520-razbojnistvo-u-novom-pazaru-povredeni-drzavljani-jordana",
+      "title": "Разбојништво у Новом Пазару, повређени држављани Јордана",
+      "url": "https://www.politika.rs/scc/clanak/770520/razbojnistvo-u-novom-pazaru-povredeni-drzavljani-jordana",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T19:46:00+00:00",
+      "time": "19:46",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "https-www-kurir-rs-planeta-10047885-uhapsen-boris-nadezdin",
       "title": "UHAPŠEN BORIS NADEŽDIN! Poznati antiratni političar pokušao da se suprotstavi Putinu!",
       "url": "https://www.kurir.rs/planeta/10047885/uhapsen-boris-nadezdin",
@@ -162,34 +190,6 @@
       "datetime": "2026-07-13T15:03:06+00:00",
       "time": "15:03",
       "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "-uhapsena-cetvorica-osumnjicenih-na-granicnom-prelazu-video-",
-      "title": "Ukrali 66.000 evra iz kuće u BiH, pa pokušali da pobegnu u Srbiju: Pogledajte kako su uhapšena četvorica osumnjičenih VIDEO",
-      "url": "https://nova.rs/vesti/hronika/ukrali-66000-evra-iz-kuce-u-bih-pa-pokusali-da-pobegnu-u-srbiju-pogledajte-kako-su-uhapsena-cetvorica-osumnjicenih-na-granicnom-prelazu-video/",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T13:39:20+00:00",
-      "time": "13:39",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "i-pranje-novca-potresla-projekat-povezan-sa-trampovim-zetom-",
-      "title": "Novi skandal u Albaniji: Sumnja na krijumčarenje kokaina i pranje novca potresla projekat povezan sa Trampovim zetom",
-      "url": "https://nova.rs/vesti/svet/novi-skandal-u-albaniji-sumnja-na-krijumcarenje-kokaina-i-pranje-novca-potresla-projekat-povezan-sa-trampovim-zetom/",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T13:30:50+00:00",
-      "time": "13:30",
-      "source": "Nova",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -393,6 +393,20 @@
       "priority": 66
     },
     {
+      "id": "gion-dzared-kusner-artur-sehu-falsifikovana-dokumenta-sazan-",
+      "title": "Rojters: Albanac iz SAD, optužen za pranje novca od droge, falsifikovao papire i prodao Kušneru deo albanske obale",
+      "url": "https://n1info.rs/region/dzared-kusner-artur-sehu-falsifikovana-dokumenta-sazan/",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T20:20:09+00:00",
+      "time": "20:20",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "da-se-uprkos-ustavom-ogranicenim-ovlascenijima-pitas-o-svemu",
       "title": "Studenti pitali Vučića: Ko si bre ti da se, uprkos Ustavom ograničenim ovlašćenijima, pitaš o svemu?",
       "url": "https://beta.rs/content/248346-studenti-pitali-vucica-ko-si-bre-ti-da-se-uprkos-ustavom-ogranicenim-ovlascenijima-pitas-o-svemu",
@@ -477,20 +491,6 @@
       "priority": 26
     },
     {
-      "id": "a-10047302-spasic-o-hapsenju-policijskog-inspektora-u-jakovu",
-      "title": "\"TAKVA OPREMA NE MOŽE DA SE KUPI, NEKO JU JE IZNEO IZ SISTEMA\" Spasić o hapšenju policijskog inspektora u Jakovu: \"Istražiti šta je svih ovih godina radio\"",
-      "url": "https://www.kurir.rs/crna-hronika/10047302/spasic-o-hapsenju-policijskog-inspektora-u-jakovu",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T13:36:08+00:00",
-      "time": "13:36",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "232398-u-beogradu-uhapsen-v-v-po-interpolovoj-poternici-vest",
       "title": "Hapšenje državljanina Crne Gore i Srbije  sa Interpolove poternice rezultat rada pripadnika MUP-a",
       "url": "https://www.euronews.rs/srbija/aktuelno/232398/u-beogradu-uhapsen-v-v-po-interpolovoj-poternici/vest",
@@ -503,6 +503,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "adske-kuce-grad-nezadovoljan-stanjem-u-akva-parku-na-palicu-",
+      "title": "Zamenik gradonačelnika Subotice: Novi tender za krov Gradske kuće, Grad nezadovoljan stanjem u akva parku na Paliću",
+      "url": "https://n1info.rs/biznis/zamenik-gradonacelnika-subotice-novi-tender-za-krov-gradske-kuce-grad-nezadovoljan-stanjem-u-akva-parku-na-palicu/",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T19:49:20+00:00",
+      "time": "19:49",
+      "source": "N1",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "eliko-privode-kraju-prvo-dodelili-posao-pa-raspisali-tender-",
@@ -545,20 +559,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "pozoriste-249951-prica-o-kitu-timu-zavrsila-u-pozoristu-vest",
-      "title": "Timi - Nada umire poslednja: Drama o kitu u hamburškom pozorištu",
-      "url": "https://www.b92.net/kultura/pozoriste/249951/prica-o-kitu-timu-zavrsila-u-pozoristu/vest",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T18:48:00+00:00",
-      "time": "18:48",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     },
     {
       "id": "-www-danas-rs-kultura-konkurs-gradovi-u-fokusu-dom-cirilice-",
