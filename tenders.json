@@ -1,5 +1,16 @@
 [
   {
+    "winner": "U otvorenom postupku javne nabavke Usluga hotela i restorana, smeStaja i ishrane za Zensku seniorsku repr",
+    "accepted": 16522.54,
+    "lowest": 6202.0,
+    "difference": 10320.54,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109907576,
+    "file": "documents/109907576_odluka o dodeli ugovora Jn 34 2026.pdf"
+  },
+  {
     "winner": null,
     "accepted": 6490.0,
     "lowest": 4562.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 111752049,
     "file": "documents/111752049_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 4996800.0,
-    "lowest": 1970.0,
-    "difference": 4994830.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100066385,
-    "file": "documents/100066385_Odluka o dodeli.pdf"
   }
 ]
