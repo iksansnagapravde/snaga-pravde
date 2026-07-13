@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "u-ponasanja-u-eliti-sve-ovo-je-ucesnicima-zabranjeno-zjpkr6p",
-      "title": "OVO SU SVIH 30 STAVKI O PRAVILU PONAŠANJA U \"ELITI\" Sve ovo je učesnicima STROGO ZABRANJENO: Čeka se hitna odluka produkcije zbog učinjenog samo 7 dana pred finale",
-      "url": "https://www.blic.rs/zabava/ovo-su-30-stavki-o-pravilu-ponasanja-u-eliti-sve-ovo-je-ucesnicima-zabranjeno/zjpkr6p",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T16:24:00+00:00",
-      "time": "16:24",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "a-org-a-srbija-crna-gora-kriminal-esktradicija-33802659-html",
       "title": "Crnogorskom beguncu ekstradicioni pritvor nakon hapšenja u Beogradu",
       "url": "https://www.slobodnaevropa.org/a/srbija-crna-gora-kriminal-esktradicija/33802659.html",
@@ -120,20 +106,6 @@
       "datetime": "2026-07-13T19:46:00+00:00",
       "time": "19:46",
       "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "https-www-kurir-rs-planeta-10047885-uhapsen-boris-nadezdin",
-      "title": "UHAPŠEN BORIS NADEŽDIN! Poznati antiratni političar pokušao da se suprotstavi Putinu!",
-      "url": "https://www.kurir.rs/planeta/10047885/uhapsen-boris-nadezdin",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T16:08:10+00:00",
-      "time": "16:08",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "avlja-mokar-ubrus-oko-flase-razlog-odusevio-internet-bd2beph",
+      "title": "Pre nego što otvorite flašu omiljenog pića, uradite ovo: Viralni trik sa mokrim ubrusom osvojio mreže",
+      "url": "https://www.blic.rs/slobodno-vreme/sve-vise-ljudi-stavlja-mokar-ubrus-oko-flase-razlog-odusevio-internet/bd2beph",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T22:57:00+00:00",
+      "time": "22:57",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "8015-krivicne-prijave-podgorica-kradja-motocikla-prikrivanje",
+      "title": "PROCESUIRANO PETORO, MEĐU NJIMA I DVA MALOLETNIKA: Zbog krađe motocikla i prikrivanja krivičnog dela u Crnoj Gori",
+      "url": "https://www.kurir.rs/region/crna-gora/10048015/krivicne-prijave-podgorica-kradja-motocikla-prikrivanje",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T22:40:00+00:00",
+      "time": "22:40",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
