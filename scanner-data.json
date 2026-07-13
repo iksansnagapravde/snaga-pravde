@@ -337,20 +337,6 @@
       "priority": 66
     },
     {
-      "id": "-pritvor-osumnjicenima-za-pokusaj-ubistva-sandokana-u-sapcu-",
-      "title": "Predložen pritvor osumnjičenima za pokušaj ubistva Sandokana u Šapcu",
-      "url": "https://n1info.rs/vesti/predlozen-pritvor-osumnjicenima-za-pokusaj-ubistva-sandokana-u-sapcu/",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T16:11:01+00:00",
-      "time": "16:11",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ja-aktuelno-232577-sumnja-na-trovanje-hranom-u-pristini-vest",
       "title": "Istraga zbog sumnje na trovanje hranom u Prištini: Više od 20 osoba hospitalizovano",
       "url": "https://www.euronews.rs/srbija/aktuelno/232577/sumnja-na-trovanje-hranom-u-pristini/vest",
@@ -456,20 +442,6 @@
       "datetime": "2026-07-13T16:21:48+00:00",
       "time": "16:21",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "kurir-rs-crna-hronika-10047856-svedok-saradnik-bojan-hrvatin",
-      "title": "\"AKO JE NEKO CINKAROŠ, POBIĆEMO MU SVE ŠTO GMIŽE\" Jezive poruke svedoka saradnika posle hapšenja Belivukovog klana!",
-      "url": "https://www.kurir.rs/crna-hronika/10047856/svedok-saradnik-bojan-hrvatin",
-      "date": "2026-07-13",
-      "datetime": "2026-07-13T15:01:24+00:00",
-      "time": "15:01",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -589,6 +561,20 @@
       "priority": 8
     },
     {
+      "id": "47764-policija-krece-u-pojacanu-kontrolu-saobracaja-u-srbiji",
+      "title": "POLICIJA KREĆE U VELIKU AKCIJU KONTROLE SAOBRAĆAJA: Evo šta će sve kontrolisati na putevima Srbije",
+      "url": "https://www.kurir.rs/crna-hronika/10047764/policija-krece-u-pojacanu-kontrolu-saobracaja-u-srbiji",
+      "date": "2026-07-13",
+      "datetime": "2026-07-13T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "uca-vandalizovana-s-druge-strane-policija-i-aktivisti-sns-a-",
       "title": "Dva skupa u Dobanovcima: Podrška studentu čija je kuća vandalizovana, s druge strane policija i aktivisti SNS-a",
       "url": "https://nova.rs/vesti/drustvo/dva-skupa-u-dobanovcima-podrska-studentu-cija-je-kuca-vandalizovana-s-druge-strane-policija-i-aktivisti-sns-a/",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-12T13:23:00+00:00",
       "time": "13:23",
       "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "en-nasilje-drustvo-empatija-srebrenica-genocid-33802024-html",
+      "title": "Arsenijević za RSE posle napada zbog Srebrenice: Empatija prema patnjama drugih ovde je antipatriotizam",
+      "url": "https://www.slobodnaevropa.org/a/srbija-vladimir-aresnijevic-pretucen-nasilje-drustvo-empatija-srebrenica-genocid/33802024.html",
+      "date": "2026-07-12",
+      "datetime": "2026-07-12T10:38:41+00:00",
+      "time": "10:38",
+      "source": "RSE Balkan",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
