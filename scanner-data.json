@@ -141,20 +141,6 @@
       "priority": 92
     },
     {
-      "id": "umnja-da-je-bacio-flasu-sa-zapaljivom-tecnoscu-na-automobil-",
-      "title": "Uhapšen Novosađanin za kog se sumnja da je bacio flašu sa zapaljivom tečnošću na automobil",
-      "url": "https://n1info.rs/vesti/uhapsen-novosadjanin-za-kog-se-sumnja-da-je-bacio-flasu-sa-zapaljivom-tecnoscu-na-automobil/",
-      "date": "2026-07-14",
-      "datetime": "2026-07-14T13:31:24+00:00",
-      "time": "13:31",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "o-uhapsen-pripadnik-obezbedenja-sefa-sbpok-marka-zafirovica-",
       "title": "Kričkov saradnik priveden zbog iznude",
       "url": "https://radar.nova.rs/drustvo/uhapsen-pripadnik-obezbedenja-sefa-sbpok-marka-zafirovica/",
@@ -231,20 +217,6 @@
       "date": "2026-07-13",
       "datetime": "2026-07-13T12:05:00+00:00",
       "time": "12:05",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "rbija-aktuelno-232397-groblja-na-udaru-vandala-i-lopova-vest",
-      "title": "Groblja na udaru vandala i lopova: Kome mogu da se žale korisnici grobnih mesta u slučaju krađe?",
-      "url": "https://www.euronews.rs/srbija/aktuelno/232397/groblja-na-udaru-vandala-i-lopova/vest",
-      "date": "2026-07-12",
-      "datetime": "2026-07-12T18:36:00+00:00",
-      "time": "18:36",
       "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
@@ -421,6 +393,20 @@
       "priority": 66
     },
     {
+      "id": "gordana-comic-za-kompas-kad-srbija-kaze-fuj-demokratija-vest",
+      "title": "Gordana Čomić za &quot;Kompas&quot;: &quot;Kad Srbija kaže: &#039;Fuj demokratija!&#039;&quot;",
+      "url": "https://www.b92.net/info/politika/250273/gordana-comic-za-kompas-kad-srbija-kaze-fuj-demokratija/vest",
+      "date": "2026-07-14",
+      "datetime": "2026-07-14T17:56:00+00:00",
+      "time": "17:56",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "avo-visoka-dara-bubamara-otkrivena-istina-reci-svima-dntzef0",
       "title": "OTKRIVENA ISTINA O VISINI DARE BUBAMARE Među najnižima je na estradi! Evo koliko je ZAPRAVO VISOKA: \"Reci svima\"",
       "url": "https://www.blic.rs/zabava/evo-koliko-je-zapravo-visoka-dara-bubamara-otkrivena-istina-reci-svima/dntzef0",
@@ -519,20 +505,6 @@
       "priority": 30
     },
     {
-      "id": "aspisan-tender-za-radove-u-novom-sadu-kragujevcu-i-nisu-vest",
-      "title": "EU finansira otvaranje novih Evropskih kuća u Srbiji",
-      "url": "https://www.b92.net/biz/svet/vesti/250237/eu-finansira-otvaranje-novih-evropskih-kuca-u-srbiji-raspisan-tender-za-radove-u-novom-sadu-kragujevcu-i-nisu/vest",
-      "date": "2026-07-14",
-      "datetime": "2026-07-14T17:21:00+00:00",
-      "time": "17:21",
-      "source": "B92",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "fo-rs-vesti-krickov-saradnik-dragisa-grujic-priveden-iznuda-",
       "title": "Radar: Kričkov saradnik i pripadnik obezbeđenja šefa SBPOK priveden zbog iznude",
       "url": "https://n1info.rs/vesti/krickov-saradnik-dragisa-grujic-priveden-iznuda/",
@@ -541,20 +513,6 @@
       "time": "14:22",
       "source": "N1",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "otvorenog-olimpijskog-bazena-src-11-april-na-novom-beogradu-",
-      "title": "Tender za rekonstrukciju otvorenog olimpijskog bazena SRC \"11. april\" na Novom Beogradu",
-      "url": "https://n1info.rs/biznis/tender-za-rekonstrukciju-otvorenog-olimpijskog-bazena-src-11-april-na-novom-beogradu/",
-      "date": "2026-07-14",
-      "datetime": "2026-07-14T13:38:49+00:00",
-      "time": "13:38",
-      "source": "N1",
-      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -601,6 +559,34 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "https-www-danas-rs-sport-deni-alves-zatvor-",
+      "title": "„U zatvoru sam bio sam srećniji nego dok sam zarađivao milione“",
+      "url": "https://www.danas.rs/sport/deni-alves-zatvor/",
+      "date": "2026-07-14",
+      "datetime": "2026-07-14T18:24:22+00:00",
+      "time": "18:24",
+      "source": "Danas",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "et-i-dzin-kerol-dobila-vise-od-pet-miliona-dolara-od-trampa-",
+      "title": "I. Džin Kerol dobila više od pet miliona dolara od Trampa na osnovu presude za seksualno zlostavljanje i klevetu",
+      "url": "https://n1info.rs/svet/i-dzin-kerol-dobila-vise-od-pet-miliona-dolara-od-trampa/",
+      "date": "2026-07-14",
+      "datetime": "2026-07-14T18:18:13+00:00",
+      "time": "18:18",
+      "source": "N1",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "-beceju-20-miliona-dinara-kroz-konkurs-gradovi-u-fokusu-2026",
@@ -657,6 +643,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "mnogi-ne-znaju-zbog-njega-mozete-ostati-bez-250-evra-tpjcysf",
+      "title": "Turisti u Grčkoj ostali bez 250 evra zbog jedne greške u vodi! Mnogi Srbi ne znaju za OVO PRAVILO, a policija zbog njega ODMAH piše kazne (VIDEO)",
+      "url": "https://www.blic.rs/slobodno-vreme/ovo-pravilo-u-grckoj-mnogi-ne-znaju-zbog-njega-mozete-ostati-bez-250-evra/tpjcysf",
+      "date": "2026-07-14",
+      "datetime": "2026-07-14T18:04:20+00:00",
+      "time": "18:04",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "i-su-sa-250-evra-zbog-voznje-sup-daske-bez-zastitnog-prsluka",
