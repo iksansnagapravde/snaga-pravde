@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 1900757.58,
+    "lowest": 6202.0,
+    "difference": 1894555.58,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113475887,
+    "file": "documents/113475887_Odluka o dodeli ugovora 14.7.2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 13195482.0,
+    "lowest": 6202.0,
+    "difference": 13189280.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109780192,
+    "file": "documents/109780192_Odluka o dodeli ugovora JN br. 14 2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 10000000.0,
     "lowest": 7202.0,
     "difference": 9992798.0,
@@ -64,16 +86,5 @@
     "rejection_reasons": [],
     "id": 101289775,
     "file": "documents/101289775_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 17709216.0,
-    "lowest": 7202.0,
-    "difference": 17702014.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100181280,
-    "file": "documents/100181280_Odluka o dodeli Ugovora JN 08_2026.pdf"
   }
 ]
