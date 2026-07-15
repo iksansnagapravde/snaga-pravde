@@ -1,90 +1,68 @@
 [
   {
     "winner": null,
-    "accepted": 2317934.03,
+    "accepted": 40368.0,
+    "lowest": 2202.0,
+    "difference": 38166.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100259155,
+    "file": "documents/100259155_Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 10211.0,
     "lowest": 7202.0,
-    "difference": 2310732.03,
+    "difference": 3009.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101183160,
-    "file": "documents/101183160_Odluka o dodeli ugovora.docx"
+    "id": 101743912,
+    "file": "documents/101743912_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 805920.0,
-    "lowest": 1008.0,
-    "difference": 804912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101533265,
-    "file": "documents/101533265_ODLUKA o DODELI UGOVORA -  SERVISIRANJE OSTALE MEDICINSKE OPREME 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 805920.0,
-    "lowest": 1008.0,
-    "difference": 804912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101599486,
-    "file": "documents/101599486_ODLUKA o DODELI UGOVORA -  SERVISIRANJE OSTALE MEDICINSKE OPREME 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 805920.0,
-    "lowest": 1008.0,
-    "difference": 804912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100057630,
-    "file": "documents/100057630_ODLUKA o DODELI UGOVORA -  SERVISIRANJE OSTALE MEDICINSKE OPREME 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 805920.0,
-    "lowest": 1008.0,
-    "difference": 804912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101822498,
-    "file": "documents/101822498_ODLUKA o DODELI UGOVORA -  SERVISIRANJE OSTALE MEDICINSKE OPREME 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 805920.0,
-    "lowest": 1008.0,
-    "difference": 804912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102010306,
-    "file": "documents/102010306_ODLUKA o DODELI UGOVORA -  SERVISIRANJE OSTALE MEDICINSKE OPREME 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 805920.0,
-    "lowest": 1008.0,
-    "difference": 804912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101627620,
-    "file": "documents/101627620_ODLUKA o DODELI UGOVORA -  SERVISIRANJE OSTALE MEDICINSKE OPREME 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1540000.0,
+    "accepted": 10211.0,
     "lowest": 7202.0,
-    "difference": 1532798.0,
+    "difference": 3009.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101780900,
-    "file": "documents/101780900_Odluka o dodeli ugovora.docx"
+    "id": 100352764,
+    "file": "documents/100352764_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 10211.0,
+    "lowest": 7202.0,
+    "difference": 3009.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100125653,
+    "file": "documents/100125653_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 101492801.17,
+    "lowest": 1104.0,
+    "difference": 101491697.17,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109989454,
+    "file": "documents/109989454_Odluka o dodeli 126.26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 2095.0,
+    "difference": 399997905.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100501967,
+    "file": "documents/100501967_Odluka o dodeli narudzbenice.pdf"
   }
 ]
