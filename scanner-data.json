@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "u-zbog-targetiranja-novinara-nove-s-na-televiziji-u-valjevu-",
-      "title": "ANEM: Nadležni hitno da reaguju zbog targetiranja novinara Nove S na televiziji u Valjevu",
-      "url": "https://n1info.rs/vesti/anem-nadlezni-hitno-da-reaguju-zbog-targetiranja-novinara-nove-s-na-televiziji-u-valjevu/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T12:24:20+00:00",
-      "time": "12:24",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-jos-nema-optuznice-protiv-grcica-zbog-malverzacija-u-eps-u-",
       "title": "Još nema optužnice protiv Grčića zbog malverzacija u EPS-u",
       "url": "https://www.krik.rs/jos-nema-optuznice-protiv-grcica-zbog-malverzacija-u-eps-u/",
@@ -99,13 +85,27 @@
       "priority": 94
     },
     {
-      "id": "ic-becirovic-bi-u-svakoj-drugoj-drzavi-bio-uhapsen-i-smenjen",
-      "title": "Стевандић: Бећировић би у свакој другој држави био ухапшен и смењен",
-      "url": "https://www.politika.rs/scc/clanak/771310/stevandic-becirovic-bi-u-svakoj-drugoj-drzavi-bio-uhapsen-i-smenjen",
+      "id": "k-771327-americki-ministar-finansija-pokusali-su-da-me-ubiju",
+      "title": "Амерички министар финансија: Покушали су да ме убију",
+      "url": "https://www.politika.rs/scc/clanak/771327/americki-ministar-finansija-pokusali-su-da-me-ubiju",
       "date": "2026-07-16",
-      "datetime": "2026-07-16T15:33:00+00:00",
-      "time": "15:33",
+      "datetime": "2026-07-16T16:42:00+00:00",
+      "time": "16:42",
       "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "ala-se-sa-cimerkom-pa-joj-iglom-i-koncem-zasila-usta-zksyrzs",
+      "title": "Posvađala sa cimerkom pa joj u besu iglom i koncem zašila usne: Žrtva (42) dotrčala do prve prodavnice pa otkrila jeziv detalj",
+      "url": "https://www.blic.rs/slobodno-vreme/posvadjala-se-sa-cimerkom-pa-joj-iglom-i-koncem-zasila-usta/zksyrzs",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T16:30:00+00:00",
+      "time": "16:30",
+      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -127,6 +127,20 @@
       "priority": 92
     },
     {
+      "id": "6-uhapsen-vozac-bez-dozvole-zbog-smrti-pesaka-u-malom-orasju",
+      "title": "UDARIO PEŠAKA U MALOM ORAŠJU, ODBACIO GA U KANAL I POBEGAO: Zbog smrti muškarca uhapšen vozač bez dozvole, još dvoje pod lupom!",
+      "url": "https://www.kurir.rs/crna-hronika/10050556/uhapsen-vozac-bez-dozvole-zbog-smrti-pesaka-u-malom-orasju",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T12:26:09+00:00",
+      "time": "12:26",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "6-sverc-kokaina-zatvor-atlantski-okean-dve-tone-presuda-html",
       "title": "Пресуда за шверц кокаина преко Атлантског океана, ухапшенима у Србији вишегодишње казне затвора",
       "url": "https://www.rts.rs/vesti/hronika/5998236/sverc-kokaina-zatvor-atlantski-okean-dve-tone-presuda.html",
@@ -134,6 +148,34 @@
       "datetime": "2026-07-16T12:24:34+00:00",
       "time": "12:24",
       "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "dajte-hapsenje-bombasa-bacio-tri-bombe-na-lokale-u-smederevu",
+      "title": "POGLEDAJTE KAKO JE UHAPŠEN BOMBAŠ: Sav u crnom, ruke iza leđa, policajci ga drže (video, foto)",
+      "url": "https://www.kurir.rs/crna-hronika/10050530/pogledajte-hapsenje-bombasa-bacio-tri-bombe-na-lokale-u-smederevu",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T12:08:05+00:00",
+      "time": "12:08",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "hapsen-bombas-iz-beograda-na-meti-mu-bili-lokali-u-smederevu",
+      "title": "UHAPŠEN BOMBAŠ (18) IZ BEOGRADA: Bacio eksplozivne naprave na splav i klub u Smederevu",
+      "url": "https://www.kurir.rs/crna-hronika/10050479/uhapsen-bombas-iz-beograda-na-meti-mu-bili-lokali-u-smederevu",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T11:22:31+00:00",
+      "time": "11:22",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -225,34 +267,6 @@
       "priority": 90
     },
     {
-      "id": "https-n1info-rs-vesti-balkanski-kartel-presuda-cetvorici-",
-      "title": "Četvorici pripadnika \"balkanskog kartela\" ukupno 59 godina zatvora",
-      "url": "https://n1info.rs/vesti/balkanski-kartel-presuda-cetvorici/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T11:58:25+00:00",
-      "time": "11:58",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
-      "id": "udjena-zbog-sverca-kokaina-zaplenjenog-na-atlantskom-okeanu-",
-      "title": "59 godina zatvora optuženima za šverc kokaina zaplenjenog na Atlantskom okeanu",
-      "url": "https://nova.rs/vesti/hronika/59-godina-zatvora-za-pripadnike-balkanskog-kartela-cetvorica-osudjena-zbog-sverca-kokaina-zaplenjenog-na-atlantskom-okeanu/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T11:40:06+00:00",
-      "time": "11:40",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "migranti-srbija-krijumcarenje-granica-uhapseni-33804864-html",
       "title": "Pet osoba uhapšeno na srpsko-bugarskoj granici zbog krijumčarenja migranata",
       "url": "https://www.slobodnaevropa.org/a/migranti-srbija-krijumcarenje-granica-uhapseni-/33804864.html",
@@ -265,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 74
+    },
+    {
+      "id": "razi-pritvor-za-osumnjicenu-za-nasilje-u-porodici-nad-majkom",
+      "title": "UHAPŠENA ŽENA KOJA JE U STANU NA ZVEZDARI PRETUKLA MAJKU: Tužilaštvo traži pritvor da ne bi ponovila krivično delo",
+      "url": "https://www.kurir.rs/crna-hronika/10050523/tuzilastvo-trazi-pritvor-za-osumnjicenu-za-nasilje-u-porodici-nad-majkom",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T12:00:22+00:00",
+      "time": "12:00",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
     },
     {
       "id": "-beograd-arsenijevic-napad-tuzilastvo-prekrsaj-33805162-html",
@@ -302,20 +330,6 @@
       "datetime": "2026-07-16T13:31:07+00:00",
       "time": "13:31",
       "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "jeva-uhapsen-muskarac-43-sumnja-se-da-je-ubio-majku-i-brata-",
-      "title": "Dvostruko ubistvo kod Sarajeva: Uhapšen muškarac (43), sumnja se da je ubio majku i brata",
-      "url": "https://nova.rs/vesti/svet/dvostruko-ubistvo-kod-sarajeva-uhapsen-muskarac-43-sumnja-se-da-je-ubio-majku-i-brata/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T11:40:57+00:00",
-      "time": "11:40",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -365,34 +379,6 @@
       "priority": 66
     },
     {
-      "id": "etica-tuzilastvima-srbije-i-bih-zbog-sumnje-na-pranje-novca-",
-      "title": "Tepić prijavila Kruževića i Radetića tužilaštvima Srbije i BiH zbog sumnje na pranje novca",
-      "url": "https://n1info.rs/vesti/tepic-prijavila-kruzevica-i-radetica-tuzilastvima-srbije-i-bih-zbog-sumnje-na-pranje-novca/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T12:20:29+00:00",
-      "time": "12:20",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "r-za-rekonstrukciju-jaksiceve-ulice-vredan-35-miliona-dinara",
-      "title": "NOVA INVESTICIJA U KRUŠEVCU! Objavljen tender za obnovu Jakšićeve ulice, procenjena vrednost radova preko 35 MILIONA DINARA",
-      "url": "https://www.kurir.rs/vesti/srbija/10049122/krusevac-raspisao-tender-za-rekonstrukciju-jaksiceve-ulice-vredan-35-miliona-dinara",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T02:00:00+00:00",
-      "time": "02:00",
-      "source": "Kurir",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "i-doktori-protiv-korupcije-medicinski-stomatoloski-fakultet-",
       "title": "Doktori protiv korupcije: Medicinski i Stomatološki fakultet drastičan primer pogrešnog planiranja u školovanju kadrova",
       "url": "https://n1info.rs/vesti/doktori-protiv-korupcije-medicinski-stomatoloski-fakultet/",
@@ -433,6 +419,34 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "naevropa-org-a-eu-spijunski-softver-srbija-hrw-33805195-html",
+      "title": "Evropska komisija zabrinuta zbog nalaza HRW o mogućim zloupotrebama špijunskih softvera u Srbiji",
+      "url": "https://www.slobodnaevropa.org/a/eu-spijunski-softver-srbija-hrw/33805195.html",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T16:27:34+00:00",
+      "time": "16:27",
+      "source": "RSE Balkan",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "adarska-vlada-istrazuje-zloupotrebu-sredstava-u-vreme-orbana",
+      "title": "Мађарска влада истражује злоупотребу средстава у време Орбана",
+      "url": "https://www.politika.rs/scc/clanak/771323/madarska-vlada-istrazuje-zloupotrebu-sredstava-u-vreme-orbana",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T16:22:00+00:00",
+      "time": "16:22",
+      "source": "Politika",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "-na-zloupotrebe-i-nezakonitosti-u-radu-drzavnih-institucija-",
@@ -492,7 +506,7 @@
     },
     {
       "id": "-ponovnog-obaranja-beogradske-optuznice-za-pad-nadstresnice-",
-      "title": "\"Politički pritisak na pravosuđe\": Petrović Škero i Pajtić o ponovnom obaranju beogradske optužnice za pad nadstrešnice",
+      "title": "\"Politički pritisak na pravosuđe\": Petrović Škero i Pajtić o beogradskoj optužnici za pad nadstrešnice",
       "url": "https://n1info.rs/vesti/petrovic-skero-i-pajtic-povodom-ponovnog-obaranja-beogradske-optuznice-za-pad-nadstresnice/",
       "date": "2026-07-16",
       "datetime": "2026-07-16T14:54:09+00:00",
@@ -533,6 +547,34 @@
       "priority": 25
     },
     {
+      "id": "scc-clanak-771136-propao-tender-za-obnovu-krova-gradske-kuce",
+      "title": "Пропао тендер за обнову крова Градске куће",
+      "url": "https://www.politika.rs/scc/clanak/771136/propao-tender-za-obnovu-krova-gradske-kuce",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T16:15:00+00:00",
+      "time": "16:15",
+      "source": "Politika",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "10050198-kako-prepoznati-fising-napade-na-lastpass-korisnike",
+      "title": "Sajber kriminalci krenuli na korisnike LastPass-a: Evo kako pokušavaju da vas prevare",
+      "url": "https://www.kurir.rs/techvision/saveti/10050198/kako-prepoznati-fising-napade-na-lastpass-korisnike",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T12:00:00+00:00",
+      "time": "12:00",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "ww-krik-rs-kriminalac-milan-ostojic-sandokan-upucan-u-sapcu-",
       "title": "Kriminalac Milan Ostojić Sandokan upucan u Šapcu",
       "url": "https://www.krik.rs/kriminalac-milan-ostojic-sandokan-upucan-u-sapcu/",
@@ -559,6 +601,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "lic-rs-biznis-privreda-otkriveno-zlato-kod-ljubovije-00hfve4",
+      "title": "PRONAĐENO ZLATO I SREBRO U SRBIJI! Stranci otkrili ogromno bogatstvo na Bobiji, šta sledi dalje (VIDEO)",
+      "url": "https://www.blic.rs/biznis/privreda/otkriveno-zlato-kod-ljubovije/00hfve4",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T16:04:10+00:00",
+      "time": "16:04",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "153-vrnjackoj-banji-dva-miliona-dinara-za-zamak-kulture-vest",
@@ -631,20 +687,6 @@
       "priority": 8
     },
     {
-      "id": "-www-blic-rs-biznis-pomoc-drzave-nove-ekonomske-mere-fjgcxbq",
-      "title": "Detalji državne pomoći za 3,5 miliona građana! Vučević: Na spisku su ove kategorije ljudi",
-      "url": "https://www.blic.rs/biznis/pomoc-drzave/nove-ekonomske-mere/fjgcxbq",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T12:50:36+00:00",
-      "time": "12:50",
-      "source": "Blic",
-      "category": "Инвалидитет",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "org-a-bosna-izvjestaj-plan-rasta-kosovo-rok-eu-33805008-html",
       "title": "Pet partnera sa Zapadnog Balkana zatražilo sredstva iz Plana rasta, BiH zaostaje zbog neratifikovanih sporazuma",
       "url": "https://www.slobodnaevropa.org/a/bosna-izvjestaj-plan-rasta-kosovo-rok-eu-/33805008.html",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "osumnjicenog-bacio-tri-rucne-bombe-na-ugostiteljske-objekte-",
-      "title": "Smederevska policija uhapsila osumnjičenog - bacio tri ručne bombe na ugostiteljske objekte",
-      "url": "https://n1info.rs/vesti/smederevska-policija-uhapsila-osumnjicenog-bacio-tri-rucne-bombe-na-ugostiteljske-objekte/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T13:11:05+00:00",
-      "time": "13:11",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "radar-nova-rs-drustvo-opasna-spirala-nasilja-nad-novinarima-",
-      "title": "Opasna spirala nasilja nad novinarima: Vlast targetira, policija bije",
-      "url": "https://radar.nova.rs/drustvo/opasna-spirala-nasilja-nad-novinarima/",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T11:11:45+00:00",
-      "time": "11:11",
-      "source": "Radar",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "nke-pronadene-tri-vrste-droga-vagice-i-ilegalni-pistolj-vest",
-      "title": "Policija \"upala\" u kuću kod Bačke Palanke: Pronađene tri vrste droga, vagice i ilegalni pištolj",
-      "url": "https://www.euronews.rs/srbija/aktuelno/232956/policija-upala-u-kucu-kod-backe-palanke-pronadene-tri-vrste-droga-vagice-i-ilegalni-pistolj/vest",
-      "date": "2026-07-15",
-      "datetime": "2026-07-15T13:05:00+00:00",
-      "time": "13:05",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
