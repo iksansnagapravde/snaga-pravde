@@ -71,20 +71,6 @@
       "priority": 125
     },
     {
-      "id": "ija-odmah-reagovala-prvi-rezultati-portala-ko-si-bre-ti-vest",
-      "title": "Građani prijavili, inspekcija odmah reagovala: Prvi rezultati portala &quot;Ko si bre ti?&quot;",
-      "url": "https://www.b92.net/info/politika/250900/gradjani-prijavili-inspekcija-odmah-reagovala-prvi-rezultati-portala-ko-si-bre-ti/vest",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T19:51:00+00:00",
-      "time": "19:51",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-vesti-svet-amerika-izvela-novu-seriju-udara-na-iran-hrtpgth",
       "title": "POČELA JE NOVA SERIJA NAPADA! Stiglo hitno saopštenje iz Amerike: \"Krenulo je\"",
       "url": "https://www.blic.rs/vesti/svet/amerika-izvela-novu-seriju-udara-na-iran/hrtpgth",
@@ -259,20 +245,6 @@
       "date": "2026-07-16",
       "datetime": "2026-07-16T17:04:26+00:00",
       "time": "17:04",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "ala-se-sa-cimerkom-pa-joj-iglom-i-koncem-zasila-usta-zksyrzs",
-      "title": "Posvađala sa cimerkom pa joj u besu iglom i koncem zašila usne: Žrtva (42) dotrčala do prve prodavnice pa otkrila jeziv detalj",
-      "url": "https://www.blic.rs/slobodno-vreme/posvadjala-se-sa-cimerkom-pa-joj-iglom-i-koncem-zasila-usta/zksyrzs",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T16:30:00+00:00",
-      "time": "16:30",
       "source": "Blic",
       "category": "Хапшења",
       "summary": "",
@@ -671,6 +643,34 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "danas-rs-vesti-politika-evropska-komisija-spijunski-softver-",
+      "title": "Evropska komisija zabrinuta zbog mogućih zloupotreba špijunskog softvera u Srbiji",
+      "url": "https://www.danas.rs/vesti/politika/evropska-komisija-spijunski-softver/",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T21:34:38+00:00",
+      "time": "21:34",
+      "source": "Danas",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "050916-uhapsen-u-prizrenu-zbog-zloupotrebe-bankovnih-kartica",
+      "title": "HAPŠENJE U PRIZRENU: Sumnja se da je zloupotrebljavao bankovne i lične kartice američkih državljana",
+      "url": "https://www.kurir.rs/crna-hronika/10050916/uhapsen-u-prizrenu-zbog-zloupotrebe-bankovnih-kartica",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T21:31:00+00:00",
+      "time": "21:31",
+      "source": "Kurir",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "inuta-zbog-mogucih-zloupotreba-spijunskog-softvera-u-srbiji-",
