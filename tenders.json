@@ -1,68 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 807400.0,
-    "lowest": 7202.0,
-    "difference": 800198.0,
+    "accepted": 800000.0,
+    "lowest": 2920.0,
+    "difference": 797080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103901396,
-    "file": "documents/103901396_Odluka o dodeli ugovora.docx"
+    "id": 102655170,
+    "file": "documents/102655170_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 1407500.0,
-    "lowest": 7202.0,
-    "difference": 1400298.0,
+    "accepted": 42000000.0,
+    "lowest": 5202.0,
+    "difference": 41994798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101907258,
-    "file": "documents/101907258_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 450000000.0,
-    "lowest": 7202.0,
-    "difference": 449992798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka 802-0238-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1596000.0,
-    "lowest": 1596.0,
-    "difference": 1594404.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101735058,
-    "file": "documents/101735058_30-37 ODLUKA CARICIN GRAD 01.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 4328100.0,
-    "lowest": 7202.0,
-    "difference": 4320898.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100014828,
-    "file": "documents/100014828_Odluka o dodeli ugovora.docx"
+    "id": 100143422,
+    "file": "documents/100143422_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 8333333.33,
-    "lowest": 1920.0,
-    "difference": 8331413.33,
+    "accepted": 5416666.66,
+    "lowest": 1240.0,
+    "difference": 5415426.66,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101393951,
-    "file": "documents/101393951_Odluka o dodeli ugovora, jn 0004 26.pdf"
+    "id": 100660867,
+    "file": "documents/100660867_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8300000.0,
+    "lowest": 1210.0,
+    "difference": 8298790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104119050,
+    "file": "documents/104119050_07-2 Odluka o dodeli - 27-11-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8300000.0,
+    "lowest": 1210.0,
+    "difference": 8298790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 111599729,
+    "file": "documents/111599729_07-2 Odluka o dodeli - 27-11-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8300000.0,
+    "lowest": 1210.0,
+    "difference": 8298790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100134880,
+    "file": "documents/100134880_07-2 Odluka o dodeli - 27-11-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8300000.0,
+    "lowest": 1210.0,
+    "difference": 8298790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100135044,
+    "file": "documents/100135044_07-2 Odluka o dodeli - 27-11-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8300000.0,
+    "lowest": 1210.0,
+    "difference": 8298790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107403789,
+    "file": "documents/107403789_07-2 Odluka o dodeli - 27-11-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8300000.0,
+    "lowest": 1210.0,
+    "difference": 8298790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107392312,
+    "file": "documents/107392312_07-2 Odluka o dodeli - 27-11-2026.pdf"
   }
 ]
