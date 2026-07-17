@@ -1,5 +1,38 @@
 [
   {
+    "winner": "RATKO MITROVIE CONSTRUCTION DOO",
+    "accepted": 12404300.4,
+    "lowest": 2363.0,
+    "difference": 12401937.4,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101795144,
+    "file": "documents/101795144_Odluka o dodeli broj 404-75-26.PDF"
+  },
+  {
+    "winner": null,
+    "accepted": 1300000.0,
+    "lowest": 7202.0,
+    "difference": 1292798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101266668,
+    "file": "documents/101266668_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 1704216.96,
+    "lowest": 7202.0,
+    "difference": 1697014.96,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100604538,
+    "file": "documents/100604538_Odluka o dodeli ugovora.docx"
+  },
+  {
     "winner": null,
     "accepted": 1944600.0,
     "lowest": 2214.0,
@@ -64,38 +97,5 @@
     "rejection_reasons": [],
     "id": 101599486,
     "file": "documents/101599486_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1150000.0,
-    "lowest": 1970.0,
-    "difference": 1148030.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101708085,
-    "file": "documents/101708085_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 692450000.0,
-    "lowest": 6202.0,
-    "difference": 692443798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100000889,
-    "file": "documents/100000889_odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 692450000.0,
-    "lowest": 6202.0,
-    "difference": 692443798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100002348,
-    "file": "documents/100002348_odluka o dodeli ugovora.pdf"
   }
 ]
