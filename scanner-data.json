@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "u-i-salju-upozorenje-novinarima-da-se-ne-bave-zvucnim-topom-",
-      "title": "Medijska udruženja osudila saopštenje VJT: Zastrašuju i šalju upozorenje novinarima da se ne bave \"zvučnim topom\"",
-      "url": "https://n1info.rs/vesti/medijska-udruzenja-osudila-saopstenje-vjt-zastrasuju-i-salju-upozorenje-novinarima-da-se-ne-bave-zvucnim-topom/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:27:55+00:00",
-      "time": "14:27",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "9-uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji-vest",
       "title": "Uhapšen predsednik poznatog fudbalskog kluba u Srbiji: \"Pali\" i pomagači za milionsku prevaru",
       "url": "https://www.euronews.rs/srbija/aktuelno/233279/uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji/vest",
@@ -69,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "emske-mitrovice-zbog-sumnje-da-je-promovisao-pedofiliju-html",
+      "title": "Ухапшен мушкарац из Сремске Митровице због сумње да је промовисао педофилију",
+      "url": "https://www.rts.rs/vesti/hronika/5999720/uhapsen-muskarac-iz-sremske-mitrovice-zbog-sumnje-da-je-promovisao-pedofiliju.html",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T19:40:58+00:00",
+      "time": "19:40",
+      "source": "RTS",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 94
     },
     {
       "id": "r-rs-crna-hronika-10051668-majka-pijana-tukla-cerku-u-zemunu",
@@ -113,6 +113,20 @@
       "priority": 94
     },
     {
+      "id": "s-nova-rs-vesti-hronika-uhapsen-faraon-iz-sremske-mitrovice-",
+      "title": "Uhapšen \"Faraon\" iz Sremske Mitrovice: Muškarac  koji kroz muziku promoviše pedofiliju već imao krivične prijave zbog pokušaja obljube više maloletnih devojčica",
+      "url": "https://nova.rs/vesti/hronika/uhapsen-faraon-iz-sremske-mitrovice/",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T19:37:27+00:00",
+      "time": "19:37",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "u-rusiji-u-jednom-danu-uhapsen-bloger-i-osudjen-opozicionar-",
       "title": "Obračun sa protivnicima Putina u Rusiji: U jednom danu uhapšen bloger i osuđen opozicionar",
       "url": "https://n1info.rs/svet/obracun-sa-protivnicima-putina-u-rusiji-u-jednom-danu-uhapsen-bloger-i-osudjen-opozicionar/",
@@ -147,34 +161,6 @@
       "date": "2026-07-17",
       "datetime": "2026-07-17T14:18:37+00:00",
       "time": "14:18",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "bojnistava-u-novom-sadu-izigravao-policajca-pa-otimao-novac-",
-      "title": "Uhapšen osumnjičeni za seriju razbojništava u Novom Sadu: Izigravao policajca, pa otimao novac",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-osumnjiceni-za-seriju-razbojnistava-u-novom-sadu-izigravao-policajca-pa-otimao-novac/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T13:27:48+00:00",
-      "time": "13:27",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "isi-sud-u-beogradu-raspisao-poternicu-za-aleksandrom-radicem",
-      "title": "RASPISANA POTERNICA ZA ODBEGLIM ALEKSANDROM RADIĆEM! Čim bude uhapšen, ide u pritvor!",
-      "url": "https://www.kurir.rs/vesti/politika/10051582/visi-sud-u-beogradu-raspisao-poternicu-za-aleksandrom-radicem",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T13:17:47+00:00",
-      "time": "13:17",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -393,6 +379,20 @@
       "priority": 84
     },
     {
+      "id": "urir-rs-crna-hronika-10051864-uhapsen-faraon-zbog-pedofilije",
+      "title": "UHAPŠEN \"FARAON\": Policija otkrila ko promoviše pedofiliju - protiv njega i ranije podnošene prijave zbog pokušaja obljube više maloletnih devojčica",
+      "url": "https://www.kurir.rs/crna-hronika/10051864/uhapsen-faraon-zbog-pedofilije",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T19:30:35+00:00",
+      "time": "19:30",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "ivela-dvojicu-osumnjicenih-za-prebijanje-maloletnika-k1wj48k",
       "title": "(VIDEO) DEČAKA (15) BRUTALNO TUKLI PALICAMA Ovako su uhapšeni osumnjičeni za napad u Novom Sadu: Policija im upala u stan",
       "url": "https://www.blic.rs/vesti/hronika/policija-privela-dvojicu-osumnjicenih-za-prebijanje-maloletnika/k1wj48k",
@@ -435,20 +435,6 @@
       "priority": 70
     },
     {
-      "id": "https-www-danas-rs-vesti-drustvo-uhapsen-lazni-policajac-",
-      "title": "Uhapšen lažni policajac",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-lazni-policajac/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T13:21:25+00:00",
-      "time": "13:21",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -463,8 +449,22 @@
       "priority": 70
     },
     {
+      "id": "33369-tuzilastvo-trazi-pritvor-za-cetvoricu-zbog-napada-vest",
+      "title": "Tužilaštvo traži pritvor za osumnjičene da su pretukli advokata i još jednog mladića",
+      "url": "https://www.euronews.rs/srbija/aktuelno/233369/tuzilastvo-trazi-pritvor-za-cetvoricu-zbog-napada/vest",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T19:23:00+00:00",
+      "time": "19:23",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "nika-10051835-istraga-droga-jagodina-10-kilograma-amfetamina",
-      "title": "PALI ZBOG 10 KILOGRAMA AMFETAMINA U JAGODINI: Tužilaštvo pokrenulo istragu protiv šest osoba, među njima i lice za kojim je RASPISANA POTERNICA (VIDEO)",
+      "title": "TUŽILAŠTVO TRAŽI PRITVOR ZA ŠESTORICU IZ JAGODINE: Pali sa 10 kilograma amfetamina, za jednim osumnjičenim raspisana poternica (VIDEO)",
       "url": "https://www.kurir.rs/crna-hronika/10051835/istraga-droga-jagodina-10-kilograma-amfetamina",
       "date": "2026-07-17",
       "datetime": "2026-07-17T18:29:28+00:00",
@@ -547,54 +547,12 @@
       "priority": 66
     },
     {
-      "id": "ojice-osumnjicenih-za-bacanje-bombe-na-fitnes-klub-u-zemunu-",
-      "title": "VJT podiglo optužnicu protiv trojice osumnjičenih za bacanje bombe na fitnes klub u Zemunu",
-      "url": "https://n1info.rs/vesti/vjt-podiglo-optuznicu-protiv-trojice-osumnjicenih-za-bacanje-bombe-na-fitnes-klub-u-zemunu/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:08:48+00:00",
-      "time": "14:08",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "94-srbi-institucije-napustanje-kosovo-mitrovica-ostavke-html",
       "title": "Срби који су 2022. напустили тужилаштво у Косовској Митровици повлаче оставке",
       "url": "https://www.rts.rs/vesti/politika/5999394/srbi-institucije-napustanje-kosovo-mitrovica-ostavke.html",
       "date": "2026-07-17",
       "datetime": "2026-07-17T14:05:53+00:00",
       "time": "14:05",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "jka-40-pijana-tukla-cerku-u-zemunu-tuzilastvo-trazi-pritvor-",
-      "title": "Majka (40) pijana tukla ćerku u Zemunu: Tužilaštvo traži pritvor",
-      "url": "https://nova.rs/vesti/hronika/majka-40-pijana-tukla-cerku-u-zemunu-tuzilastvo-trazi-pritvor/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:00:07+00:00",
-      "time": "14:00",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-komisije-ostaje-zabrinutost-zbog-autonomije-tuzilastva-html",
-      "title": "ЕК: Србија испунила значајан део препорука Венецијанске комисије, остаје забринутост због аутономије тужилаштва",
-      "url": "https://www.rts.rs/vesti/politika/5999338/ek-srbija-ispunila-znacajan-deo-preporuka-venecijanske-komisije-ostaje-zabrinutost-zbog-autonomije-tuzilastva.html",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T13:24:58+00:00",
-      "time": "13:24",
       "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": true,
       "priority": 60
+    },
+    {
+      "id": "-rezim-mrzi-bilo-kakvu-nezavisnu-profesiju-i-slobodnu-misao-",
+      "title": "Rajić: Svaki autokratski režim mrzi bilo kakvu nezavisnu profesiju i slobodnu misao",
+      "url": "https://www.ktv.rs/2026/07/17/rajic-svaki-autokratski-rezim-mrzi-bilo-kakvu-nezavisnu-profesiju-i-slobodnu-misao/",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T12:32:23+00:00",
+      "time": "12:32",
+      "source": "KTV",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
+      "id": "aevropa-org-a-srbija-eps-ugalj-kina-indonezija-33805265-html",
+      "title": "Milioni tona i kineski partner: Put uglja iz Indonezije do Srbije",
+      "url": "https://www.slobodnaevropa.org/a/srbija-eps-ugalj-kina-indonezija/33805265.html",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T05:48:48+00:00",
+      "time": "05:48",
+      "source": "RSE Balkan",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 32
+    },
+    {
+      "id": "ri-i-dalje-veoma-niska-nivo-korupcije-u-javnom-sektoru-visok",
+      "title": "EK: Nezavisnost pravosuđa u Crnoj Gori i dalje veoma niska, nivo korupcije u javnom sektoru visok",
+      "url": "https://beta.rs/content/248621-ek-nezavisnost-pravosuda-u-crnoj-gori-i-dalje-veoma-niska-nivo-korupcije-u-javnom-sektoru-visok",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T19:00:10+00:00",
+      "time": "19:00",
+      "source": "Beta",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     }
   ],
   "all_sources": [
