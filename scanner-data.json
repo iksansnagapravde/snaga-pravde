@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "id": "-osumnjicene-za-pokusaj-prodaje-10-kilograma-amfetamina-html",
+      "title": "Предложен притвор за осумњичене за покушај продаје 10 килограма амфетамина",
+      "url": "https://www.rts.rs/vesti/hronika/5999526/predlozen-pritvor-za-osumnjicene-za-pokusaj-prodaje-10-kilograma-amfetamina.html",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T17:03:26+00:00",
+      "time": "17:03",
+      "source": "RTS",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 101
+    },
+    {
+      "id": "letnice-u-srbiji-na-meti-jezivog-influensera-faraona-5yg9fxj",
+      "title": "PEVA O ŽIGOSANJU DEVOJČICA, POZIVA IH NA POKORNOST Maloletnice u Srbiji na meti JEZIVOG influensera, poverenik pozvao nadležne da HITNO REAGUJU",
+      "url": "https://www.blic.rs/vesti/drustvo/maloletnice-u-srbiji-na-meti-jezivog-influensera-faraona/5yg9fxj",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T17:00:01+00:00",
+      "time": "17:00",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "u-i-salju-upozorenje-novinarima-da-se-ne-bave-zvucnim-topom-",
       "title": "Medijska udruženja osudila saopštenje VJT: Zastrašuju i šalju upozorenje novinarima da se ne bave \"zvučnim topom\"",
       "url": "https://n1info.rs/vesti/medijska-udruzenja-osudila-saopstenje-vjt-zastrasuju-i-salju-upozorenje-novinarima-da-se-ne-bave-zvucnim-topom/",
@@ -162,20 +190,6 @@
       "datetime": "2026-07-17T13:17:47+00:00",
       "time": "13:17",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-dve-osobe-sumnja-se-da-su-prevarile-zenu-60-za-70-000-evra-",
-      "title": "MUP: Uhapšene dve osobe, sumnja se da su prevarile ženu (60) za 70.000 evra",
-      "url": "https://www.danas.rs/vesti/drustvo/mup-uhapsene-dve-osobe-sumnja-se-da-su-prevarile-zenu-60-za-70-000-evra/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T12:23:14+00:00",
-      "time": "12:23",
-      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -351,20 +365,6 @@
       "priority": 90
     },
     {
-      "id": "-da-su-proizvodili-marihuanu-u-laboratoriji-u-batajnici-html",
-      "title": "Ухапшено пет особа због сумње да су производили марихуану у лабораторији у Батајници",
-      "url": "https://www.rts.rs/vesti/hronika/5999260/uhapseno-pet-osoba-zbog-sumnje-da-su-proizvodili-marihuanu-u-laboratoriji-u-batajnici.html",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:07:27+00:00",
-      "time": "14:07",
-      "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "a-evropska-komisija-izvjestaj-crna-gora-srbija-33805843-html",
       "title": "Evropska komisija: Crna Gora napreduje, Srbija i dalje suočena s ozbiljnim izazovima",
       "url": "https://www.slobodnaevropa.org/a/evropska-komisija-izvjestaj-crna-gora-srbija-/33805843.html",
@@ -419,6 +419,20 @@
       "breaking": false,
       "alert": true,
       "priority": 84
+    },
+    {
+      "id": "ivela-dvojicu-osumnjicenih-za-prebijanje-maloletnika-k1wj48k",
+      "title": "(VIDEO) DEČAKA (15) BRUTALNO TUKLI PALICAMA Ovako su uhapšeni osumnjičeni za napad u Novom Sadu: Policija im upala u stan",
+      "url": "https://www.blic.rs/vesti/hronika/policija-privela-dvojicu-osumnjicenih-za-prebijanje-maloletnika/k1wj48k",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T16:57:55+00:00",
+      "time": "16:57",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "-pod-dejstvom-kokaina-mladic-iz-srbije-uhapsen-u-crnoj-gori-",
@@ -610,20 +624,6 @@
       "datetime": "2026-07-17T13:19:25+00:00",
       "time": "13:19",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "je-nema-debate-pravosudje-i-mediji-suoceni-sa-opstrukcijama-",
-      "title": "EK: U parlamentu Srbije nema debate, pravosuđe i mediji suočeni sa opstrukcijama",
-      "url": "https://n1info.rs/vesti/ek-u-parlamentu-srbije-nema-debate-pravosudje-i-mediji-suoceni-sa-opstrukcijama/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T13:11:56+00:00",
-      "time": "13:11",
-      "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
