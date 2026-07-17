@@ -15,20 +15,6 @@
       "priority": 100
     },
     {
-      "id": "e-uredniku-tv-n1-branislavu-sovljanskom-i-njegovoj-porodici-",
-      "title": "NUNS: Hitno procesuirati pretnje uredniku TV N1 Branislavu Šovljanskom i njegovoj porodici",
-      "url": "https://www.danas.rs/vesti/drustvo/nuns-hitno-procesuirati-pretnje-uredniku-tv-n1-branislavu-sovljanskom-i-njegovoj-porodici/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T11:24:17+00:00",
-      "time": "11:24",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "9-uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji-vest",
       "title": "Uhapšen predsednik poznatog fudbalskog kluba u Srbiji: \"Pali\" i pomagači za milionsku prevaru",
       "url": "https://www.euronews.rs/srbija/aktuelno/233279/uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji/vest",
@@ -111,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "imak-hapsenja-osumnjicenih-za-prebijanje-decaka-u-novom-sadu",
+      "title": "INTERVENTNA UPADA U STAN, BACA IH NA POD I STAVLJA LISICE! Ovako su uhapšeni osumnjičeni za brutalno prebijanje dečaka u Novom Sadu - jednog izvukli iz kreveta",
+      "url": "https://www.kurir.rs/crna-hronika/10051729/snimak-hapsenja-osumnjicenih-za-prebijanje-decaka-u-novom-sadu",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T15:43:34+00:00",
+      "time": "15:43",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "n-bosna-i-hercegovina-10051660-sipa-u-bih-izvela-akciju-ford",
@@ -218,20 +218,6 @@
       "datetime": "2026-07-17T11:07:00+00:00",
       "time": "11:07",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "alo-veselin-vujovic-studenti-kavacki-klan-interpol-slobodan-",
-      "title": "Veselin Vujović o optužbama da je deo Kavačkog klana: \"Ne juri me Interpol, nisam uhapšen\"",
-      "url": "https://nova.rs/sport/sport-ostalo/veselin-vujovic-studenti-kavacki-klan-interpol-slobodan/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T10:50:16+00:00",
-      "time": "10:50",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -351,6 +337,20 @@
       "priority": 92
     },
     {
+      "id": "vesti-tok-trazi-pritvor-za-sestoricu-prodaja-droge-jagodina-",
+      "title": "TOK traži pritvor za šestoricu: Sumnja se da su kao organizovana grupa trgovali drogom u Jagodini",
+      "url": "https://n1info.rs/vesti/tok-trazi-pritvor-za-sestoricu-prodaja-droge-jagodina/",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T16:34:01+00:00",
+      "time": "16:34",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "-da-su-proizvodili-marihuanu-u-laboratoriji-u-batajnici-html",
       "title": "Ухапшено пет особа због сумње да су производили марихуану у лабораторији у Батајници",
       "url": "https://www.rts.rs/vesti/hronika/5999260/uhapseno-pet-osoba-zbog-sumnje-da-su-proizvodili-marihuanu-u-laboratoriji-u-batajnici.html",
@@ -407,18 +407,32 @@
       "priority": 90
     },
     {
-      "id": "-ukrajinac-uhapseni-zbog-prevare-ojadili-zenu-za-70000-evra-",
-      "title": "Srbin i Ukrajinac uhapšeni zbog prevare: Ojadili ženu za 70.000 evra",
-      "url": "https://nova.rs/vesti/hronika/srbin-i-ukrajinac-uhapseni-zbog-prevare-ojadili-zenu-za-70000-evra/",
+      "id": "-branilo-cutanjem-jedan-izneo-odbranu-raspisana-i-poternica-",
+      "title": "Oglasio se JTOK o kriminalnoj grupi iz Jagodine: Petoro se branilo ćutanjem, jedan izneo odbranu, raspisana i poternica",
+      "url": "https://nova.rs/vesti/hronika/oglasio-se-jtok-o-kriminalnoj-grupi-iz-jagodine-petoro-se-branilo-cutanjem-jedan-izneo-odbranu-raspisana-i-poternica/",
       "date": "2026-07-17",
-      "datetime": "2026-07-17T11:54:17+00:00",
-      "time": "11:54",
+      "datetime": "2026-07-17T16:43:24+00:00",
+      "time": "16:43",
       "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
+      "id": "-pod-dejstvom-kokaina-mladic-iz-srbije-uhapsen-u-crnoj-gori-",
+      "title": "Vozio pod dejstvom kokaina: Mladić iz Srbije uhapšen u Crnoj Gori",
+      "url": "https://www.danas.rs/svet/region/vozio-pod-dejstvom-kokaina-mladic-iz-srbije-uhapsen-u-crnoj-gori/",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T16:13:12+00:00",
+      "time": "16:13",
+      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 76
+      "priority": 70
     },
     {
       "id": "ladic-iz-srbije-uhapsen-kod-bara-vozio-pod-dejstvom-kokaina-",
@@ -461,6 +475,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "liticki-motivisan-progon-rezim-instrumentalizuje-tuzilastvo-",
+      "title": "Srđan Cvijić o Radiću: Politički motivisan progon, režim instrumentalizuje tužilaštvo",
+      "url": "https://n1info.rs/vesti/srdjan-cvijic-o-radicu-politicki-motivisan-progon-rezim-instrumentalizuje-tuzilastvo/",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T16:26:08+00:00",
+      "time": "16:26",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "ija-aktuelno-233336-optuznica-za-bacanje-bombe-u-zemunu-vest",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": true,
       "priority": 60
-    },
-    {
-      "id": "aevropa-org-a-srbija-eps-ugalj-kina-indonezija-33805265-html",
-      "title": "Milioni tona i kineski partner: Put uglja iz Indonezije do Srbije",
-      "url": "https://www.slobodnaevropa.org/a/srbija-eps-ugalj-kina-indonezija/33805265.html",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T05:48:48+00:00",
-      "time": "05:48",
-      "source": "RSE Balkan",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
-      "id": "naevropa-org-a-eu-spijunski-softver-srbija-hrw-33805195-html",
-      "title": "Evropska komisija zabrinuta zbog nalaza HRW o mogućim zloupotrebama špijunskih softvera u Srbiji",
-      "url": "https://www.slobodnaevropa.org/a/eu-spijunski-softver-srbija-hrw/33805195.html",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T16:27:34+00:00",
-      "time": "16:27",
-      "source": "RSE Balkan",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     }
   ],
   "all_sources": [
