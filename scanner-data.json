@@ -71,20 +71,6 @@
       "priority": 94
     },
     {
-      "id": "r-rs-crna-hronika-10051668-majka-pijana-tukla-cerku-u-zemunu",
-      "title": "UHAPŠENA MAJKA IZ PAKLA: Pijana u Zemunu tukla maloletnu ćerku! Tužilaštvo traži pritvor da ne bi ponovila počinila nasilje u porodici",
-      "url": "https://www.kurir.rs/crna-hronika/10051668/majka-pijana-tukla-cerku-u-zemunu",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:39:20+00:00",
-      "time": "14:39",
-      "source": "Kurir",
-      "category": "Насиље у породици",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 94
-    },
-    {
       "id": "a-krivicna-prijava-aleksandar-radic-zvucni-top-33805738-html",
       "title": "Podignuta krivična prijava protiv vojnog analitičara Aleksandra Radića zbog slučaja 'zvučni top'",
       "url": "https://www.slobodnaevropa.org/a/krivicna-prijava-aleksandar-radic-zvucni-top/33805738.html",
@@ -407,20 +393,6 @@
       "priority": 70
     },
     {
-      "id": "ladic-iz-srbije-uhapsen-kod-bara-vozio-pod-dejstvom-kokaina-",
-      "title": "Mladić iz Srbije uhapšen kod Bara, vozio pod dejstvom kokaina",
-      "url": "https://n1info.rs/vesti/mladic-iz-srbije-uhapsen-kod-bara-vozio-pod-dejstvom-kokaina/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T15:44:13+00:00",
-      "time": "15:44",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "-promovise-pedofiliju-mup-se-oglasio-povodom-faraona-h7j8ve4",
+      "title": "POKUŠAO DA OBLJUBI VIŠE MALOLETNICA! Identifikovan influenser koji se krije iza profila \"Faraon\" i poziva na pokornost i kažnjavanje devojčica: Policija mu upala u stan",
+      "url": "https://www.blic.rs/vesti/drustvo/identifikovan-influenser-koji-promovise-pedofiliju-mup-se-oglasio-povodom-faraona/h7j8ve4",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T19:35:29+00:00",
+      "time": "19:35",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "uristicki-vauceri-za-2026-30000-vaucera-od-10000-dinara-vest",
+      "title": "Kada će početi podela turističkih vaučera, ko može na njih da računa i kako sprečiti zloupotrebe",
+      "url": "https://www.euronews.rs/srbija/drustvo/233051/turisticki-vauceri-za-2026-30000-vaucera-od-10000-dinara/vest",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T08:52:00+00:00",
+      "time": "08:52",
+      "source": "Euronews Serbia",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     }
   ],
   "all_sources": [
