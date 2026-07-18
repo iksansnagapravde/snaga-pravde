@@ -113,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "471-maloletnik-pretucen-u-beogradu-uhapsena-dvojica-napadaca",
-      "title": "BRUTALNO PRETUKLI DEČAKA (16), UDARALI GA PESNICAMA I NOGAMA U GLAVU DOK JE BIO NA ZEMLJI! Jezivo nasilje na Trgu Republike, uhapšena dvojica napadača",
-      "url": "https://www.kurir.rs/crna-hronika/10052471/maloletnik-pretucen-u-beogradu-uhapsena-dvojica-napadaca",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:57:11+00:00",
-      "time": "14:57",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "s-vesti-hronika-6000184-bor-automobil-maloletnik-bicikl-html",
       "title": "Бор, ухапшен осумњичени да је \"аудијем\" без возачке дозволе оборио малолетника и побегао",
       "url": "https://www.rts.rs/vesti/hronika/6000184/bor-automobil-maloletnik-bicikl.html",
@@ -217,20 +203,6 @@
       "date": "2026-07-17",
       "datetime": "2026-07-17T07:46:00+00:00",
       "time": "07:46",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "233214-uhapsena-cetvorica-osumnjicenih-za-fizicki-napad-vest",
-      "title": "Uhapšena četvorica osumnjičenih za fizički napad na Novom Beogradu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233214/uhapsena-cetvorica-osumnjicenih-za-fizicki-napad/vest",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T20:34:00+00:00",
-      "time": "20:34",
       "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
@@ -533,20 +505,6 @@
       "priority": 66
     },
     {
-      "id": "ozen-pritvor-za-osumnjicene-za-napad-na-decake-u-novom-sadu-",
-      "title": "Predložen pritvor za osumnjičene za napad na dečake u Novom Sadu",
-      "url": "https://n1info.rs/vesti/predlozen-pritvor-za-osumnjicene-za-napad-na-decake-u-novom-sadu/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T13:14:09+00:00",
-      "time": "13:14",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "a-aktuelno-233449-vjt-novi-sad-istraga-brutalnog-napada-vest",
       "title": "Pokušaj teškog ubistva: Novi detalji prebijanja maloletnika u Novom Sadu, tužilaštvo otkrilo sledeće korake",
       "url": "https://www.euronews.rs/srbija/aktuelno/233449/vjt-novi-sad-istraga-brutalnog-napada/vest",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "ww-krik-rs-kriminalac-milan-ostojic-sandokan-upucan-u-sapcu-",
+      "title": "Kriminalac Milan Ostojić Sandokan upucan u Šapcu",
+      "url": "https://www.krik.rs/kriminalac-milan-ostojic-sandokan-upucan-u-sapcu/",
+      "date": "2026-07-09",
+      "datetime": "2026-07-09T08:46:30+00:00",
+      "time": "08:46",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom-",
+      "title": "U čijim rukama su poslovi za EXPO: sestra Ace Rošavog, osuđeni u slučaju Arkan, Pink Panter, Bagzijev sin, firma koja se povezuje sa Čumetom",
+      "url": "https://www.cins.rs/u-cijim-rukama-su-poslovi-za-expo-sestra-ace-rosavog-osudjeni-u-slucaju-arkan-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom/",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T06:51:19+00:00",
+      "time": "06:51",
+      "source": "CINS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "tps-vreme-com-mozaik-fifa-pobednik-dobija-50-miliona-dolara-",
+      "title": "FIFA: Pobednik dobija 50 miliona dolara",
+      "url": "https://vreme.com/mozaik/fifa-pobednik-dobija-50-miliona-dolara/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T18:23:04+00:00",
+      "time": "18:23",
+      "source": "Vreme",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
