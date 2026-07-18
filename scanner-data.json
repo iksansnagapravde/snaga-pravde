@@ -351,20 +351,6 @@
       "priority": 70
     },
     {
-      "id": "ivela-dvojicu-osumnjicenih-za-prebijanje-maloletnika-k1wj48k",
-      "title": "(VIDEO) DEČAKA (15) BRUTALNO TUKLI PALICAMA Ovako su uhapšeni osumnjičeni za napad u Novom Sadu: Policija im upala u stan",
-      "url": "https://www.blic.rs/vesti/hronika/policija-privela-dvojicu-osumnjicenih-za-prebijanje-maloletnika/k1wj48k",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T16:57:55+00:00",
-      "time": "16:57",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "-pod-dejstvom-kokaina-mladic-iz-srbije-uhapsen-u-crnoj-gori-",
       "title": "Vozio pod dejstvom kokaina: Mladić iz Srbije uhapšen u Crnoj Gori",
       "url": "https://www.danas.rs/svet/region/vozio-pod-dejstvom-kokaina-mladic-iz-srbije-uhapsen-u-crnoj-gori/",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "o-hapsenju-i-detaljima-iz-istrage-roditelji-cekaju-odgovore-",
+      "title": "Prebijeni dečak i dalje u teškom stanju: Tabloidi prvi o hapšenju i detaljima iz istrage, roditelji čekaju odgovore",
+      "url": "https://n1info.rs/vesti/govorila-mi-je-mama-palice-fantomke-tukli-su-ga-tabloidi-prvi-o-hapsenju-i-detaljima-iz-istrage-roditelji-cekaju-odgovore/",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T18:16:18+00:00",
+      "time": "18:16",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     }
   ],
   "all_sources": [
