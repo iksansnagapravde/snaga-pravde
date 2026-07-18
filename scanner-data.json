@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "vesti-hronika-5999789-eksplozija-pancevo-starcevo-bomba-html",
+      "title": "Експлодирала бомба у дворишту куће у Панчеву – једна особа погинула, две повређене",
+      "url": "https://www.rts.rs/vesti/hronika/5999789/eksplozija-pancevo-starcevo-bomba.html",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T04:37:58+00:00",
+      "time": "04:37",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
       "id": "-osumnjicene-za-pokusaj-prodaje-10-kilograma-amfetamina-html",
       "title": "Предложен притвор за осумњичене за покушај продаје 10 килограма амфетамина",
       "url": "https://www.rts.rs/vesti/hronika/5999526/predlozen-pritvor-za-osumnjicene-za-pokusaj-prodaje-10-kilograma-amfetamina.html",
@@ -13,20 +27,6 @@
       "breaking": false,
       "alert": true,
       "priority": 101
-    },
-    {
-      "id": "letnice-u-srbiji-na-meti-jezivog-influensera-faraona-5yg9fxj",
-      "title": "PEVA O ŽIGOSANJU DEVOJČICA, POZIVA IH NA POKORNOST Maloletnice u Srbiji na meti JEZIVOG influensera, poverenik pozvao nadležne da HITNO REAGUJU",
-      "url": "https://www.blic.rs/vesti/drustvo/maloletnice-u-srbiji-na-meti-jezivog-influensera-faraona/5yg9fxj",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T17:00:01+00:00",
-      "time": "17:00",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
     },
     {
       "id": "9-uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji-vest",
@@ -55,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "ca-dadilje-likvidacija-rubezicevog-ubice-ostala-je-misterija",
+      "title": "ALBANSKA MAFIJA PRESUDILA BEOGRADSKOM ŽESTOKOM MOMKU? Izdao je i ubio čoveka koji je bio STRAH I TREPET asfalta, radio za Slobinog sina, pa skončao u lokvi krvi",
+      "url": "https://www.kurir.rs/crna-hronika/10050529/ubistvo-dragana-popovica-dadilje-likvidacija-rubezicevog-ubice-ostala-je-misterija",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T05:00:00+00:00",
+      "time": "05:00",
+      "source": "Kurir",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
     },
     {
       "id": "emske-mitrovice-zbog-sumnje-da-je-promovisao-pedofiliju-html",
@@ -97,6 +111,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "e-liste-ponovo-uhapsen-pokusao-da-opljacka-bankomate-m5x7tw3",
+      "title": "POKUŠAO DA OPLJAČKA JEDNU OD NAJVEĆIH BANAKA NA SVETU! Crnogorac sa TRAMPOVE zloglasne liste ponovo uhapšen: Sa saučesnicima prokopao RUPU U ZIDU, ovo je bio plan! (FOTO)",
+      "url": "https://www.blic.rs/vesti/hronika/crnogorac-sa-trampove-zloglasne-liste-ponovo-uhapsen-pokusao-da-opljacka-bankomate/m5x7tw3",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T05:01:00+00:00",
+      "time": "05:01",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "s-nova-rs-vesti-hronika-uhapsen-faraon-iz-sremske-mitrovice-",
@@ -337,6 +365,20 @@
       "priority": 84
     },
     {
+      "id": "s-scc-clanak-771620-uhapseni-direktor-i-sekretar-fk-bor-1919",
+      "title": "Ухапшени директор и секретар ФК „Бор 1919”",
+      "url": "https://www.politika.rs/scc/clanak/771620/uhapseni-direktor-i-sekretar-fk-bor-1919",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T05:15:00+00:00",
+      "time": "05:15",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "urir-rs-crna-hronika-10051864-uhapsen-faraon-zbog-pedofilije",
       "title": "UHAPŠEN \"FARAON\": Policija otkrila ko promoviše pedofiliju - protiv njega i ranije podnošene prijave zbog pokušaja obljube više maloletnih devojčica",
       "url": "https://www.kurir.rs/crna-hronika/10051864/uhapsen-faraon-zbog-pedofilije",
@@ -449,20 +491,6 @@
       "priority": 66
     },
     {
-      "id": "liticki-motivisan-progon-rezim-instrumentalizuje-tuzilastvo-",
-      "title": "Srđan Cvijić o Radiću: Politički motivisan progon, režim instrumentalizuje tužilaštvo",
-      "url": "https://n1info.rs/vesti/srdjan-cvijic-o-radicu-politicki-motivisan-progon-rezim-instrumentalizuje-tuzilastvo/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T16:26:08+00:00",
-      "time": "16:26",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "ija-aktuelno-233336-optuznica-za-bacanje-bombe-u-zemunu-vest",
       "title": "Optužnica protiv dvojice zbog bacanja bombe na fitnes klub u Zemunu",
       "url": "https://www.euronews.rs/srbija/aktuelno/233336/optuznica-za-bacanje-bombe-u-zemunu/vest",
@@ -477,22 +505,8 @@
       "priority": 66
     },
     {
-      "id": "94-srbi-institucije-napustanje-kosovo-mitrovica-ostavke-html",
-      "title": "Срби који су 2022. напустили тужилаштво у Косовској Митровици повлаче оставке",
-      "url": "https://www.rts.rs/vesti/politika/5999394/srbi-institucije-napustanje-kosovo-mitrovica-ostavke.html",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:05:53+00:00",
-      "time": "14:05",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vucni-top-vjt-tuzba-aleksandar-radic-zastrasivanje-novinara-",
-      "title": "Kako VJT objavljuje lične podatke i tako crta metu na čelo novinara",
+      "title": "Aleksandar Radić na poternici: Rušenje ustavnog poretka u interpretaciji Višeg javnog tužilaštva",
       "url": "https://vreme.com/vesti/zvucni-top-vjt-tuzba-aleksandar-radic-zastrasivanje-novinara/",
       "date": "2026-07-17",
       "datetime": "2026-07-17T13:05:49+00:00",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "o-hapsenju-i-detaljima-iz-istrage-roditelji-cekaju-odgovore-",
-      "title": "Prebijeni dečak i dalje u teškom stanju: Tabloidi prvi o hapšenju i detaljima iz istrage, roditelji čekaju odgovore",
-      "url": "https://n1info.rs/vesti/govorila-mi-je-mama-palice-fantomke-tukli-su-ga-tabloidi-prvi-o-hapsenju-i-detaljima-iz-istrage-roditelji-cekaju-odgovore/",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T18:16:18+00:00",
-      "time": "18:16",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     }
   ],
   "all_sources": [
