@@ -197,20 +197,6 @@
       "priority": 92
     },
     {
-      "id": "ova-rs-sport-kosarka-nevidjeni-skandal-uhapsen-uros-plavsic-",
-      "title": "Neviđeni skandal: Uhapšen Uroš Plavšić, nasrnuo na vojno lice",
-      "url": "https://nova.rs/sport/kosarka/nevidjeni-skandal-uhapsen-uros-plavsic/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T07:50:40+00:00",
-      "time": "07:50",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-na-granici-s-madjarskom-osumnjiceni-za-vise-krivicnih-dela-",
       "title": "\"Ruski agenti\" uhapšeni na granici s Mađarskom osumnjičeni za više krivičnih dela",
       "url": "https://n1info.rs/vesti/ruski-agenti-uhapseni-na-granici-s-madjarskom-osumnjiceni-za-vise-krivicnih-dela/",
@@ -393,20 +379,6 @@
       "priority": 90
     },
     {
-      "id": "-10052177-uhapsena-dvojica-egipcanina-na-aerodromu-podgorica",
-      "title": "DVA STRANCA UHAPŠENA NA AERODROMU U PODGORICI! Granična policija sprečila ULAZ u zemlju sa FALSIFIKOVANIM dokumentima! Otkriveno odakle su došli",
-      "url": "https://www.kurir.rs/region/crna-gora/10052177/uhapsena-dvojica-egipcanina-na-aerodromu-podgorica",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T09:50:28+00:00",
-      "time": "09:50",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -419,20 +391,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "-tuziocu-stefanovicu-i-ministru-vujicu-posle-teksta-u-danasu",
-      "title": "Претње тужиоцу Стефановићу и министру Вујићу после текста у „Данасу”",
-      "url": "https://www.politika.rs/scc/clanak/771750/pretnje-tuziocu-stefanovicu-i-ministru-vujicu-posle-teksta-u-danasu",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T09:28:00+00:00",
-      "time": "09:28",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "politika-10052072-nenad-vujic-nenad-stefanovic-pretnje-danas",
@@ -694,6 +652,48 @@
       "datetime": "2026-07-18T09:14:39+00:00",
       "time": "09:14",
       "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ljanje-227-tona-zlata-kako-bi-se-drzavi-pomoglo-tokom-krize-",
+      "title": "Više od 3 miliona građana predalo venčano i dečje prstenje i nakit za prikupljanje 227 tona zlata kako bi se državi pomoglo tokom krize",
+      "url": "https://nova.rs/magazin/lifestyle/vise-od-3-miliona-gradjana-predalo-vencano-i-decje-prstenje-i-nakit-za-prikupljanje-227-tona-zlata-kako-bi-se-drzavi-pomoglo-tokom-krize/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T08:33:27+00:00",
+      "time": "08:33",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "bodnaevropa-org-a-srbija-sad-strateski-dijalog-33805728-html",
+      "title": "SAD i Srbija potpisale sporazume o energetici i obrazovanju, jačaju saradnju u odbrani i tehnologiji",
+      "url": "https://www.slobodnaevropa.org/a/srbija-sad-strateski-dijalog/33805728.html",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T14:53:15+00:00",
+      "time": "14:53",
+      "source": "RSE Balkan",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "153-vrnjackoj-banji-dva-miliona-dinara-za-zamak-kulture-vest",
+      "title": "Ministarstvo kulture: Dva miliona dinara za Zamak kulture kroz konkurs \"Gradovi u fokusu\"",
+      "url": "https://www.euronews.rs/srbija/drustvo/233153/vrnjackoj-banji-dva-miliona-dinara-za-zamak-kulture/vest",
+      "date": "2026-07-16",
+      "datetime": "2026-07-16T15:25:00+00:00",
+      "time": "15:25",
+      "source": "Euronews Serbia",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
