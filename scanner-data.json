@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "et-info-svet-251226-rat-amerike-izraela-i-irana-140-dan-vest",
-      "title": "&quot;Pakao&quot; u Kuvajtu – žestok napad; Katastrofa za Iran: Odsečeni su; Izdato upozorenje: &quot;Evakuacija&quot; FOTO/VIDEO",
-      "url": "https://www.b92.net/info/svet/251226/rat-amerike-izraela-i-irana-140-dan/vest",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T15:36:00+00:00",
-      "time": "15:36",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "9-uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji-vest",
       "title": "Uhapšen predsednik poznatog fudbalskog kluba u Srbiji: \"Pali\" i pomagači za milionsku prevaru",
       "url": "https://www.euronews.rs/srbija/aktuelno/233279/uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji/vest",
@@ -351,6 +337,90 @@
       "priority": 70
     },
     {
+      "id": "ani-da-rade-svoj-posao-niko-nikada-nije-koristio-zvucni-top-",
+      "title": "Vučić o Radiću: Nadležni organi da rade svoj posao, niko nikada nije koristio zvučni top",
+      "url": "https://www.danas.rs/vesti/drustvo/vucic-o-radicu-nadlezni-organi-da-rade-svoj-posao-niko-nikada-nije-koristio-zvucni-top/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T17:25:17+00:00",
+      "time": "17:25",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "ts-rs-vesti-hronika-6000242-eksplozija-starcevo-pancevo-html",
+      "title": "Преминула и друга особа повређена у експлозији бомбе у Старчеву",
+      "url": "https://www.rts.rs/vesti/hronika/6000242/eksplozija-starcevo-pancevo-.html",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T17:06:55+00:00",
+      "time": "17:06",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "avicnoj-eksploziji-u-starcevu-u-kojoj-su-stradala-dva-druga-",
+      "title": "Oglasilo se tužilaštvo o stravičnoj eksploziji u Starčevu u kojoj su stradala dva druga",
+      "url": "https://nova.rs/vesti/hronika/oglasilo-se-tuzilastvo-o-stravicnoj-eksploziji-u-starcevu-u-kojoj-su-stradala-dva-druga/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T17:05:13+00:00",
+      "time": "17:05",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "0-pancevo-tuzilastvo-postupa-zbog-eksplozije-u-starcevu-vest",
+      "title": "Više javno tužilaštvo u Pančevu: Tužilaštvo postupa zbog aktiviranja eksploziva u Starčevu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/233470/pancevo-tuzilastvo-postupa-zbog-eksplozije-u-starcevu/vest",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T17:05:00+00:00",
+      "time": "17:05",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "adlezni-organi-da-rade-svoj-posao-u-slucaju-a-radica-x5wjddz",
+      "title": "\"SVE SU ZNALI OD POČETKA\" Vučić o slučaju Aleksandra Radića: \"Tužilaštvo i nadležni organi treba da rade svoj posao\" (VIDEO)",
+      "url": "https://www.blic.rs/vesti/politika/vucic-tuzilastvo-i-nadlezni-organi-da-rade-svoj-posao-u-slucaju-a-radica/x5wjddz",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T16:42:27+00:00",
+      "time": "16:42",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "233467-vucic-o-slucaju-aleksandra-radica-i-zvucnom-topu-vest",
+      "title": "Vučić o slučaju Aleksandra Radića i zvučnom topu:  Čudan je to lanac, tužilaštvo da radi svoj posao",
+      "url": "https://www.euronews.rs/srbija/politika/233467/vucic-o-slucaju-aleksandra-radica-i-zvucnom-topu/vest",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T16:32:00+00:00",
+      "time": "16:32",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "2-trg-republike-tuzilastvo-odredilo-zadrzavanje-dvojici-vest",
       "title": "Hapšenje zbog nasilja na Trgu republike: Pretukli dečaka (16), udarali ga pesnicama i nogama, naneli mu teške povrede",
       "url": "https://www.euronews.rs/srbija/aktuelno/233462/trg-republike-tuzilastvo-odredilo-zadrzavanje-dvojici/vest",
@@ -393,20 +463,6 @@
       "priority": 66
     },
     {
-      "id": "ozen-pritvor-za-osumnjicene-za-napad-na-decaka-u-novom-sadu-",
-      "title": "Predložen pritvor za osumnjičene za napad na dečaka u Novom Sadu",
-      "url": "https://www.danas.rs/vesti/drustvo/predlozen-pritvor-za-osumnjicene-za-napad-na-decaka-u-novom-sadu/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:38:35+00:00",
-      "time": "14:38",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "znajemo-kosarkas-hoce-da-zakljuci-oportunitet-sa-tuzilastvom",
       "title": "SAZNAJEMO: Košarkaš hoće da zaključi oportunitet sa tužilaštvom!",
       "url": "https://www.kurir.rs/sport/kosarka/10052460/saznajemo-kosarkas-hoce-da-zakljuci-oportunitet-sa-tuzilastvom",
@@ -442,20 +498,6 @@
       "datetime": "2026-07-18T13:46:53+00:00",
       "time": "13:46",
       "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-sad-prebijanje-maloletnik-napadaci-policija-tuzilastvo-html",
-      "title": "Тужилаштво покренуло истрагу због напада на малолетнике у Новом Саду, један осумњичени у бекству",
-      "url": "https://www.rts.rs/vesti/hronika/6000118/novi-sad-prebijanje-maloletnik-napadaci-policija-tuzilastvo.html",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T13:46:52+00:00",
-      "time": "13:46",
-      "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -533,20 +575,6 @@
       "priority": 66
     },
     {
-      "id": "vi-napad-nozem-na-paliluli-pretio-bivsoj-pa-joj-izbo-lrb8t8l",
-      "title": "PRETIO BIVŠOJ DA ĆE JE UBITI, PA JOJ IZBO BRAĆU! Novi detalji krvavog ubadanja na Paliluli: Saslušan napadač, tužilaštvo traži pritvor (FOTO)",
-      "url": "https://www.blic.rs/vesti/hronika/saslusan-osumnjiceni-za-krvavi-napad-nozem-na-paliluli-pretio-bivsoj-pa-joj-izbo/lrb8t8l",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T12:37:36+00:00",
-      "time": "12:37",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "a-na-osnovu-onoga-sto-je-navelo-tuzilastvo-cista-besmislica-",
       "title": "Ivanji: Optužiti Radića na osnovu onoga što je navelo tužilaštvo - čista besmislica",
       "url": "https://n1info.rs/vesti/ivanji-optuziti-radica-na-osnovu-onoga-sto-je-navelo-tuzilastvo-cista-besmislica/",
@@ -617,6 +645,20 @@
       "priority": 60
     },
     {
+      "id": "anicili-bez-razloga-ovo-je-profil-klasicnog-sns-simpatizera-",
+      "title": "Ne zabrinjava ih policijska brutalnost, podržavaju neograničenu vlast predsednika, a 15. marta su građani \"paničili bez razloga\": Ovo je profil klasičnog SNS simpatizera",
+      "url": "https://nova.rs/vesti/politika/ne-zabrinjava-ih-policijska-brutalnost-podrzavaju-neogranicenu-vlast-predsednika-a-15-marta-su-gradjani-panicili-bez-razloga-ovo-je-profil-klasicnog-sns-simpatizera/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T17:06:23+00:00",
+      "time": "17:06",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "osti-ukrajine-imenovani-uprkos-njihovim-korupcijskim-aferama",
       "title": "Нови шефови полиције и безбедности Украјине именовани упркос њиховим корупцијским аферама",
       "url": "https://www.politika.rs/scc/clanak/771855/novi-sefovi-policije-i-bezbednosti-ukrajine-imenovani-uprkos-njihovim-korupcijskim-aferama",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "-visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu-vest",
-      "title": "Raspisana poternica za Aleksandrom Radićem, po hapšenju će ići u pritvor",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233344/visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu/vest",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T15:16:00+00:00",
-      "time": "15:16",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "tate-ankete-cak-662-odsto-gradjana-izabralo-je-ovaj-odgovor-",
-      "title": "Koja oblast je najveći problem u Srbiji? Studenti objavili rezultate ankete: Čak 66,2 odsto građana izabralo je ovaj odgovor",
-      "url": "https://nova.rs/vesti/politika/koja-oblast-je-najveci-problem-u-srbiji-studenti-objavili-rezultate-ankete-cak-662-odsto-gradjana-izabralo-je-ovaj-odgovor/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T15:11:46+00:00",
-      "time": "15:11",
-      "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "https-www-danas-rs-vesti-politika-studenti-u-blokadi-nis-",
-      "title": "Studenti u blokadi iz Niša odgovorili na pitanje ko će voditi Srbiju?",
-      "url": "https://www.danas.rs/vesti/politika/studenti-u-blokadi-nis/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T13:14:20+00:00",
-      "time": "13:14",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     }
   ],
   "all_sources": [
