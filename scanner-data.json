@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "et-upozorenje-stejt-deparmenta-za-drzavljane-amerike-92wyx21",
+      "title": "\"BUDITE NA OPREZU!\" Stejt department poslao hitno  upozorenje državljanima Amerike: Bliski istok na ivici nove eskalacije",
+      "url": "https://www.blic.rs/vesti/svet/upozorenje-stejt-deparmenta-za-drzavljane-amerike/92wyx21",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T21:16:05+00:00",
+      "time": "21:16",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "-novinare-u-pirotu-hitno-identifikovati-i-kazniti-odgovorne-",
       "title": "UNS osudio napad na novinare u Pirotu: Hitno identifikovati i kazniti odgovorne",
       "url": "https://n1info.rs/vesti/uns-osudio-napad-na-novinare-u-pirotu-hitno-identifikovati-i-kazniti-odgovorne/",
@@ -223,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "va-rs-drustvo-hajdinov-most-infrastruktura-zeleznice-srbije-",
+      "title": "Vozovi i mostovi opasni po život",
+      "url": "https://radar.nova.rs/drustvo/hajdinov-most-infrastruktura-zeleznice-srbije/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "boratorije-za-proizvodnju-marihuane-uhapseno-sedmoro-osumnji",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom-",
-      "title": "U čijim rukama su poslovi za EXPO: sestra Ace Rošavog, osuđeni u slučaju Arkan, Pink Panter, Bagzijev sin, firma koja se povezuje sa Čumetom",
-      "url": "https://www.cins.rs/u-cijim-rukama-su-poslovi-za-expo-sestra-ace-rosavog-osudjeni-u-slucaju-arkan-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom/",
-      "date": "2026-06-22",
-      "datetime": "2026-06-22T06:51:19+00:00",
-      "time": "06:51",
-      "source": "CINS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "tps-vreme-com-mozaik-fifa-pobednik-dobija-50-miliona-dolara-",
-      "title": "FIFA: Pobednik dobija 50 miliona dolara",
-      "url": "https://vreme.com/mozaik/fifa-pobednik-dobija-50-miliona-dolara/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T18:23:04+00:00",
-      "time": "18:23",
-      "source": "Vreme",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
