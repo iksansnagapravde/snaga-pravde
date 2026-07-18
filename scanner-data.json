@@ -1,26 +1,12 @@
 {
   "entries": [
     {
-      "id": "vesti-hronika-5999789-eksplozija-pancevo-starcevo-bomba-html",
-      "title": "Експлодирала бомба у дворишту куће у Панчеву – једна особа погинула, две повређене",
-      "url": "https://www.rts.rs/vesti/hronika/5999789/eksplozija-pancevo-starcevo-bomba.html",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T04:37:58+00:00",
-      "time": "04:37",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "et-info-svet-251226-rat-amerike-izraela-i-irana-140-dan-vest",
       "title": "&quot;Pakao&quot; u Kuvajtu – žestok napad; Katastrofa za Iran: Odsečeni su; Izdato upozorenje: &quot;Evakuacija&quot; FOTO/VIDEO",
       "url": "https://www.b92.net/info/svet/251226/rat-amerike-izraela-i-irana-140-dan/vest",
       "date": "2026-07-18",
-      "datetime": "2026-07-18T14:56:00+00:00",
-      "time": "14:56",
+      "datetime": "2026-07-18T15:36:00+00:00",
+      "time": "15:36",
       "source": "B92",
       "category": "Људска права",
       "summary": "",
@@ -120,20 +106,6 @@
       "datetime": "2026-07-18T14:46:32+00:00",
       "time": "14:46",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "da-je-kod-bora-autom-oborio-maloletnika-na-biciklu-i-pobegao",
-      "title": "Ухапшен осумњичени да је код Бора аутом оборио малолетника на бициклу и побегао",
-      "url": "https://www.politika.rs/scc/clanak/771836/uhapsen-osumnjiceni-da-je-kod-bora-autom-oborio-maloletnika-na-biciklu-i-pobegao",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:46:00+00:00",
-      "time": "14:46",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -365,20 +337,6 @@
       "priority": 72
     },
     {
-      "id": "u-kraljevu-policija-mu-u-stanu-nasla-razlicite-droge-ft39fm1",
-      "title": "UHAPŠEN MUŠKARAC U KRALJEVU Policija mu u stanu našla različite droge, određeno mu zadržavanje do 18 sati",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-u-kraljevu-policija-mu-u-stanu-nasla-razlicite-droge/ft39fm1",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T12:10:33+00:00",
-      "time": "12:10",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -391,6 +349,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "2-trg-republike-tuzilastvo-odredilo-zadrzavanje-dvojici-vest",
+      "title": "Hapšenje zbog nasilja na Trgu republike: Pretukli dečaka (16), udarali ga pesnicama i nogama, naneli mu teške povrede",
+      "url": "https://www.euronews.rs/srbija/aktuelno/233462/trg-republike-tuzilastvo-odredilo-zadrzavanje-dvojici/vest",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T15:42:00+00:00",
+      "time": "15:42",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "senje-teskih-telesnih-povreda-maloletniku-na-trgu-republike-",
@@ -414,20 +386,6 @@
       "datetime": "2026-07-18T14:54:50+00:00",
       "time": "14:54",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "343-tuzilastvo-o-hapsenju-urosa-plavsica-sve-je-priznao-vest",
-      "title": "Oglasilo se Tužilaštvo: Plavšić sve priznao!",
-      "url": "https://www.b92.net/sport/kosarka/srpska-kosarka/251343/tuzilastvo-o-hapsenju-urosa-plavsica-sve-je-priznao/vest",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:39:00+00:00",
-      "time": "14:39",
-      "source": "B92",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -659,6 +617,20 @@
       "priority": 60
     },
     {
+      "id": "osti-ukrajine-imenovani-uprkos-njihovim-korupcijskim-aferama",
+      "title": "Нови шефови полиције и безбедности Украјине именовани упркос њиховим корупцијским аферама",
+      "url": "https://www.politika.rs/scc/clanak/771855/novi-sefovi-policije-i-bezbednosti-ukrajine-imenovani-uprkos-njihovim-korupcijskim-aferama",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T16:20:00+00:00",
+      "time": "16:20",
+      "source": "Politika",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "politika-233372-ek-izvestaj-o-vladavini-prava-za-srbiju-vest",
       "title": "Evropska komisija objavila izveštaj o vladavini prava: Srbija ostvarila napredak, ostaju brojni izazovi",
       "url": "https://www.euronews.rs/srbija/politika/233372/ek-izvestaj-o-vladavini-prava-za-srbiju/vest",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "tate-ankete-cak-662-odsto-gradjana-izabralo-je-ovaj-odgovor-",
+      "title": "Koja oblast je najveći problem u Srbiji? Studenti objavili rezultate ankete: Čak 66,2 odsto građana izabralo je ovaj odgovor",
+      "url": "https://nova.rs/vesti/politika/koja-oblast-je-najveci-problem-u-srbiji-studenti-objavili-rezultate-ankete-cak-662-odsto-gradjana-izabralo-je-ovaj-odgovor/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T15:11:46+00:00",
+      "time": "15:11",
+      "source": "Nova",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "https-www-danas-rs-vesti-politika-studenti-u-blokadi-nis-",
+      "title": "Studenti u blokadi iz Niša odgovorili na pitanje ko će voditi Srbiju?",
+      "url": "https://www.danas.rs/vesti/politika/studenti-u-blokadi-nis/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T13:14:20+00:00",
+      "time": "13:14",
+      "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     }
   ],
   "all_sources": [
