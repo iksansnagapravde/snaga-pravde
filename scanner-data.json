@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "-novinare-u-pirotu-hitno-identifikovati-i-kazniti-odgovorne-",
+      "title": "UNS osudio napad na novinare u Pirotu: Hitno identifikovati i kazniti odgovorne",
+      "url": "https://n1info.rs/vesti/uns-osudio-napad-na-novinare-u-pirotu-hitno-identifikovati-i-kazniti-odgovorne/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T19:45:55+00:00",
+      "time": "19:45",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "9-uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji-vest",
       "title": "Uhapšen predsednik poznatog fudbalskog kluba u Srbiji: \"Pali\" i pomagači za milionsku prevaru",
       "url": "https://www.euronews.rs/srbija/aktuelno/233279/uhapsen-predsednik-poznatog-fudbalskog-kluba-u-srbiji/vest",
@@ -57,6 +71,20 @@
       "priority": 94
     },
     {
+      "id": "-beograd-policija-otkrila-tri-laboratorije-za-marihuanu-vest",
+      "title": "U Beogradu otkrivene tri laboratorije za proizvodnju marihuane, sedmoro uhapšenih",
+      "url": "https://www.euronews.rs/srbija/aktuelno/233487/beograd-policija-otkrila-tri-laboratorije-za-marihuanu/vest",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T20:15:00+00:00",
+      "time": "20:15",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "boratorije-za-proizvodnju-marihuane-uhapseno-sedmoro-h43dfls",
       "title": "ZA JEDAN DAN OTKRIVENE TRI LABORATORIJE ZA MARIHUANU Velika akcija policije u Beogradu: Uhapšeno SEDMORO osumnjičenih",
       "url": "https://www.blic.rs/vesti/hronika/u-beogradu-otkrivene-cak-tri-laboratorije-za-proizvodnju-marihuane-uhapseno-sedmoro/h43dfls",
@@ -106,34 +134,6 @@
       "datetime": "2026-07-18T14:46:32+00:00",
       "time": "14:46",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "10052445-rus-uhapsen-u-herceg-novom-zbog-napada-na-policajce",
-      "title": "INCIDENT NA GRANIČNOM PRELAZU \"DEBELI BRIJEG\": Ruski državljanin uhapšen zbog napada na dvojicu policajca",
-      "url": "https://www.kurir.rs/region/crna-gora/10052445/rus-uhapsen-u-herceg-novom-zbog-napada-na-policajce",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:19:31+00:00",
-      "time": "14:19",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "hercegovina-10052437-uhapsen-odbegli-zatvorenik-iz-kpz-tuzla",
-      "title": "UHAPŠEN ODBEGLI ZATVORENIK  IZ KPZ-a TUZLA! Evo gde je pronađen",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10052437/uhapsen-odbegli-zatvorenik-iz-kpz-tuzla",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:05:26+00:00",
-      "time": "14:05",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -239,20 +239,6 @@
       "priority": 92
     },
     {
-      "id": "aktuelno-233210-uhapsena-dvojica-muskaraca-u-novom-sadu-vest",
-      "title": "Uhapšena dvojica muškaraca ocumnjičena da su pretukli maloletnike u Novom Sadu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233210/uhapsena-dvojica-muskaraca-u-novom-sadu/vest",
-      "date": "2026-07-16",
-      "datetime": "2026-07-16T20:08:00+00:00",
-      "time": "20:08",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "o-uhapsen-pripadnik-obezbedenja-sefa-sbpok-marka-zafirovica-",
       "title": "Kričkov saradnik priveden zbog iznude",
       "url": "https://radar.nova.rs/drustvo/uhapsen-pripadnik-obezbedenja-sefa-sbpok-marka-zafirovica/",
@@ -265,6 +251,20 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "boratorije-za-proizvodnju-marihuane-uhapseno-sedmoro-osumnji",
+      "title": "BESKOMPROMISNA BORBA PROTIV KRIMINALA: U jednom danu u Beogradu otkrivene čak tri laboratorije za proizvodnju marihuane, uhapšeno sedmoro osumnjičenih",
+      "url": "https://www.kurir.rs/crna-hronika/10052651/u-petak-u-beogradu-otkrivene-cak-tri-laboratorije-za-proizvodnju-marihuane-uhapseno-sedmoro-osumnji",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T19:37:51+00:00",
+      "time": "19:37",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "a-evropska-komisija-izvjestaj-crna-gora-srbija-33805843-html",
@@ -335,6 +335,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "reminuo-jos-jedan-muskarac-nakon-eksplozije-bombe-u-starcevu",
+      "title": "Тужилаштво: преминуо још један мушкарац након експлозије бомбе у Старчеву",
+      "url": "https://www.politika.rs/scc/clanak/771902/tuzilastvo-preminuo-jos-jedan-muskarac-nakon-eksplozije-bombe-u-starcevu",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T19:55:00+00:00",
+      "time": "19:55",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "vucic-se-oglasio-o-slucaju-aleksandra-radica-i-zvucnom-topu-",
@@ -491,20 +505,6 @@
       "priority": 66
     },
     {
-      "id": "senje-teskih-telesnih-povreda-maloletniku-na-trgu-republike-",
-      "title": "Određen pritvor osumnjičenima za nanošenje teških telesnih povreda maloletniku na Trgu republike",
-      "url": "https://www.danas.rs/vesti/drustvo/odredjen-pritvor-osumnjicenima-za-nanosenje-teskih-telesnih-povreda-maloletniku-na-trgu-republike/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T15:03:25+00:00",
-      "time": "15:03",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "nih-za-nanosenje-teskih-telesnih-povreda-jednom-maloletniku-",
       "title": "OJT u Beogradu: Određen pritvor osumnjičenima za nanošenje teških telesnih povreda maloletniku na Trgu republike",
       "url": "https://n1info.rs/vesti/ojt-u-beogradu-odredjen-pritvor-dvojici-osumnjicenih-za-nanosenje-teskih-telesnih-povreda-jednom-maloletniku/",
@@ -519,20 +519,6 @@
       "priority": 66
     },
     {
-      "id": "znajemo-kosarkas-hoce-da-zakljuci-oportunitet-sa-tuzilastvom",
-      "title": "SAZNAJEMO: Košarkaš hoće da zaključi oportunitet sa tužilaštvom!",
-      "url": "https://www.kurir.rs/sport/kosarka/10052460/saznajemo-kosarkas-hoce-da-zakljuci-oportunitet-sa-tuzilastvom",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T14:29:37+00:00",
-      "time": "14:29",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "233456-uros-p-saslusan-zbog-napada-na-vojno-lice-na-vma-vest",
       "title": "Oglasilo se Više javno tužilaštvo u Beogradu povodom hapšenja košarkaša: Osumnjičeni na saslušanju izneo odbranu",
       "url": "https://www.euronews.rs/srbija/aktuelno/233456/uros-p-saslusan-zbog-napada-na-vojno-lice-na-vma/vest",
@@ -540,20 +526,6 @@
       "datetime": "2026-07-18T14:26:00+00:00",
       "time": "14:26",
       "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "ozen-pritvor-za-osumnjicene-za-napad-na-decake-u-novom-sadu-",
-      "title": "Predložen pritvor za osumnjičene za napad na dečake u Novom Sadu",
-      "url": "https://nova.rs/vesti/hronika/predlozen-pritvor-za-osumnjicene-za-napad-na-decake-u-novom-sadu/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T13:30:06+00:00",
-      "time": "13:30",
-      "source": "Nova",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -582,20 +554,6 @@
       "datetime": "2026-07-18T13:13:00+00:00",
       "time": "13:13",
       "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "or-muskarcu-iz-peci-zbog-sumnje-na-tesko-ubistvo-u-pokusaju-",
-      "title": "VJT predložilo pritvor muškarcu iz Peći zbog sumnje na teško ubistvo u pokušaju",
-      "url": "https://n1info.rs/vesti/vjt-predlozilo-pritvor-muskarcu-iz-peci-zbog-sumnje-na-tesko-ubistvo-u-pokusaju/",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T12:52:01+00:00",
-      "time": "12:52",
-      "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -645,20 +603,6 @@
       "priority": 66
     },
     {
-      "id": "st-veze-i-odnosi-251138-koliko-puta-se-zaista-zaljubimo-vest",
-      "title": "Koliko puta se zaista zaljubimo u životu?",
-      "url": "https://superzena.b92.net/ljubav-i-strast/veze-i-odnosi/251138/koliko-puta-se-zaista-zaljubimo/vest",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T18:38:00+00:00",
-      "time": "18:38",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "-rezim-mrzi-bilo-kakvu-nezavisnu-profesiju-i-slobodnu-misao-",
       "title": "Rajić: Svaki autokratski režim mrzi bilo kakvu nezavisnu profesiju i slobodnu misao",
       "url": "https://www.ktv.rs/2026/07/17/rajic-svaki-autokratski-rezim-mrzi-bilo-kakvu-nezavisnu-profesiju-i-slobodnu-misao/",
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "-visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu-vest",
+      "title": "Raspisana poternica za Aleksandrom Radićem, po hapšenju će ići u pritvor",
+      "url": "https://www.euronews.rs/srbija/aktuelno/233344/visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu/vest",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T15:16:00+00:00",
+      "time": "15:16",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "tate-ankete-cak-662-odsto-gradjana-izabralo-je-ovaj-odgovor-",
+      "title": "Koja oblast je najveći problem u Srbiji? Studenti objavili rezultate ankete: Čak 66,2 odsto građana izabralo je ovaj odgovor",
+      "url": "https://nova.rs/vesti/politika/koja-oblast-je-najveci-problem-u-srbiji-studenti-objavili-rezultate-ankete-cak-662-odsto-gradjana-izabralo-je-ovaj-odgovor/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T15:11:46+00:00",
+      "time": "15:11",
+      "source": "Nova",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "-ko-su-srbi-u-americkoj-bazi-kriminalaca-i-prestupnika-foto-",
+      "title": "\"Najgori od najgorih\": Ko su Srbi u američkoj bazi kriminalaca i prestupnika? FOTO",
+      "url": "https://nova.rs/vesti/hronika/najgori-od-najgorih-ko-su-srbi-u-americkoj-bazi-kriminalaca-i-prestupnika-foto/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T16:08:04+00:00",
+      "time": "16:08",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-vujicu-na-mrezi-iks-vjt-nalozilo-identifikaciju-autora-html",
+      "title": "Претње смрћу тужиоцу Стефановићу и министру Вујићу на мрежи \"Икс\"; ВЈТ наложило идентификацију аутора",
+      "url": "https://www.rts.rs/vesti/hronika/5999837/pretnje-smrcu-tuziocu-stefanovicu-i-ministru-vujicu-na-mrezi-iks-vjt-nalozilo-identifikaciju-autora.html",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T08:49:22+00:00",
+      "time": "08:49",
+      "source": "RTS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
