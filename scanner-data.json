@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "e-bubamare-u-becicima-policija-hitno-uletela-u-lokal-lp8qsk5",
+      "title": "PREKINUT NASTUP DARE BUBAMARE U BEČIĆIMA Policija hitno uletela u lokal gde je bila žurka",
+      "url": "https://www.blic.rs/zabava/prekinut-nastup-dare-bubamare-u-becicima-policija-hitno-uletela-u-lokal/lp8qsk5",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T14:44:18+00:00",
+      "time": "14:44",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
       "id": "-jos-nema-optuznice-protiv-grcica-zbog-malverzacija-u-eps-u-",
       "title": "Još nema optužnice protiv Grčića zbog malverzacija u EPS-u",
       "url": "https://www.krik.rs/jos-nema-optuznice-protiv-grcica-zbog-malverzacija-u-eps-u/",
@@ -43,13 +57,41 @@
       "priority": 94
     },
     {
-      "id": "stru-vidjen-je-na-svim-protestima-sa-liderima-opozicije-vest",
-      "title": "Uhapšeni zbog pretnji smrću tužiocu i ministru viđen je na svim protestima sa liderima opozicije",
-      "url": "https://www.b92.net/info/politika/251533/uhapseni-zbog-pretnji-smrcu-tuziocu-i-ministru-vidjen-je-na-svim-protestima-sa-liderima-opozicije/vest",
+      "id": "p-uhapseni-napadaci-na-ekipu-n1-pred-prajd-karavan-u-pirotu-",
+      "title": "MUP: Uhapšeni napadači na ekipu N1 pred Prajd karavan u Pirotu",
+      "url": "https://www.danas.rs/vesti/drustvo/mup-uhapseni-napadaci-na-ekipu-n1-pred-prajd-karavan-u-pirotu/",
       "date": "2026-07-19",
-      "datetime": "2026-07-19T13:40:00+00:00",
-      "time": "13:40",
-      "source": "B92",
+      "datetime": "2026-07-19T15:33:32+00:00",
+      "time": "15:33",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "i-uhapseni-napadaci-na-ekipu-n1-pred-prajd-karavan-u-pirotu-",
+      "title": "Uhapšeni osumnjičeni za napad na ekipu N1 pred Prajd karavan u Pirotu",
+      "url": "https://n1info.rs/vesti/uhapseni-napadaci-na-ekipu-n1-pred-prajd-karavan-u-pirotu/",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T15:30:18+00:00",
+      "time": "15:30",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "rac-zbog-pretnji-smrcu-ministru-vujicu-i-tuziocu-stefanovicu",
+      "title": "Ухапшен мушкарац због претњи смрћу министру Вујићу и тужиоцу Стефановићу",
+      "url": "https://www.politika.rs/scc/clanak/772032/uhapsen-muskarac-zbog-pretnji-smrcu-ministru-vujicu-i-tuziocu-stefanovicu",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T15:24:00+00:00",
+      "time": "15:24",
+      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -211,20 +253,6 @@
       "priority": 92
     },
     {
-      "id": "ija-trazi-njihovo-izrucenje-suocavaju-se-sa-novim-optuzbama-",
-      "title": "Endru i Tristan Tejt uhapšeni u SAD zbog optužbi za silovanje i trgovinu ljudima: Britanija traži njihovo izručenje",
-      "url": "https://nova.rs/vesti/svet/endru-i-tristan-tejt-uhapseni-u-sad-britanija-trazi-njihovo-izrucenje-suocavaju-se-sa-novim-optuzbama/",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T10:09:10+00:00",
-      "time": "10:09",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-beograd-policija-otkrila-tri-laboratorije-za-marihuanu-vest",
       "title": "U Beogradu otkrivene tri laboratorije za proizvodnju marihuane, sedmoro uhapšenih",
       "url": "https://www.euronews.rs/srbija/aktuelno/233487/beograd-policija-otkrila-tri-laboratorije-za-marihuanu/vest",
@@ -363,6 +391,34 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "a-6000835-mup-uhapseni-osumnjiceni-za-napad-na-ekipu-n1-html",
+      "title": "МУП: Ухапшени осумњичени за напад на екипу Н1",
+      "url": "https://www.rts.rs/vesti/hronika/6000835/mup-uhapseni-osumnjiceni-za-napad-na-ekipu-n1.html",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T15:35:59+00:00",
+      "time": "15:35",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "istolj-kod-osumnjicenog-za-pretnje-stefanovicu-i-vujicu-vest",
+      "title": "Pronađen pištolj kod osumnjičenog za pretnje Stefanoviću i Vujiću",
+      "url": "https://www.b92.net/info/politika/251550/pronadjen-pistolj-kod-osumnjicenog-za-pretnje-stefanovicu-i-vujicu/vest",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T15:14:00+00:00",
+      "time": "15:14",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "ceni-za-pretnje-smrcu-ministru-pravde-i-tuziocu-stefanovicu-",
@@ -505,20 +561,6 @@
       "priority": 66
     },
     {
-      "id": "ija-aktuelno-233336-optuznica-za-bacanje-bombe-u-zemunu-vest",
-      "title": "Optužnica protiv dvojice zbog bacanja bombe na fitnes klub u Zemunu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233336/optuznica-za-bacanje-bombe-u-zemunu/vest",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T14:42:00+00:00",
-      "time": "14:42",
-      "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "gnuta-optuznica-za-ubistvo-na-senjaku-milic-optuzen-zasebno-",
       "title": "Podignuta optužnica za ubistvo na Senjaku, Milić optužen zasebno",
       "url": "https://www.krik.rs/podignuta-optuznica-za-ubistvo-na-senjaku-milic-optuzen-zasebno/",
@@ -615,48 +657,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "-visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu-vest",
-      "title": "Raspisana poternica za Aleksandrom Radićem, po hapšenju će ići u pritvor",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233344/visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu/vest",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T15:16:00+00:00",
-      "time": "15:16",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "nak-772045-vucevic-u-ribarima-izbori-imaju-sudbonosni-znacaj",
-      "title": "Вучевић у Рибарима: Избори имају судбоносни значај",
-      "url": "https://www.politika.rs/scc/clanak/772045/vucevic-u-ribarima-izbori-imaju-sudbonosni-znacaj",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T14:16:00+00:00",
-      "time": "14:16",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "nak-772038-dodik-pravosude-u-bih-podredeno-borbi-protiv-srba",
-      "title": "Додик: Правосуђе у БиХ подређено борби против Срба",
-      "url": "https://www.politika.rs/scc/clanak/772038/dodik-pravosude-u-bih-podredeno-borbi-protiv-srba",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T13:44:00+00:00",
-      "time": "13:44",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     },
     {
       "id": "-sprovede-inkluzivnu-javnu-raspravu-o-pravosudnoj-akademiji-",
