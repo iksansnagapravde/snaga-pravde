@@ -99,34 +99,6 @@
       "priority": 92
     },
     {
-      "id": "a-10052420-makedonac-uhapsen-u-baru-zbog-prebijanja-muskarca",
-      "title": "BRUTALNO PRETUKAO MUŠKARCA POSLE RASPRAVE U SAOBRAĆAJU: Državljanin Severne Makedonije uhapšen u Baru, žrtvi slomio rame",
-      "url": "https://www.kurir.rs/region/crna-gora/10052420/makedonac-uhapsen-u-baru-zbog-prebijanja-muskarca",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T22:32:00+00:00",
-      "time": "22:32",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "052507-zaplenjeno-310-boksova-cigareta-na-putu-rozaje-berane",
-      "title": "Na putu Rožaje–Berane otkriven bunker sa 310 šteka krijumčarenih cigareta: Uhapšen srpski državljanin",
-      "url": "https://www.kurir.rs/region/crna-gora/10052507/zaplenjeno-310-boksova-cigareta-na-putu-rozaje-berane",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T22:10:00+00:00",
-      "time": "22:10",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-beograd-policija-otkrila-tri-laboratorije-za-marihuanu-vest",
       "title": "U Beogradu otkrivene tri laboratorije za proizvodnju marihuane, sedmoro uhapšenih",
       "url": "https://www.euronews.rs/srbija/aktuelno/233487/beograd-policija-otkrila-tri-laboratorije-za-marihuanu/vest",
@@ -659,20 +631,6 @@
       "priority": 28
     },
     {
-      "id": "aneta-10052712-Netanjahu-bi-mogao-da-bude-uhapsen-u-Njujorku",
-      "title": "SPREMA SE HAPŠENJE NETANJAHUA? Gradonačelnik Njujorka pokrenuo pravne konsultacije pred dolazak izraelskog premijera! \"Njemu je mesto u Hagu\"",
-      "url": "https://www.kurir.rs/planeta/10052712/Netanjahu-bi-mogao-da-bude-uhapsen-u-Njujorku",
-      "date": "2026-07-18",
-      "datetime": "2026-07-18T22:45:00+00:00",
-      "time": "22:45",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "-visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu-vest",
       "title": "Raspisana poternica za Aleksandrom Radićem, po hapšenju će ići u pritvor",
       "url": "https://www.euronews.rs/srbija/aktuelno/233344/visi-sud-odredio-pritvor-aleksandru-radicu-i-poternicu/vest",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "-ko-su-srbi-u-americkoj-bazi-kriminalaca-i-prestupnika-foto-",
+      "title": "\"Najgori od najgorih\": Ko su Srbi u američkoj bazi kriminalaca i prestupnika? FOTO",
+      "url": "https://nova.rs/vesti/hronika/najgori-od-najgorih-ko-su-srbi-u-americkoj-bazi-kriminalaca-i-prestupnika-foto/",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T16:08:04+00:00",
+      "time": "16:08",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-vujicu-na-mrezi-iks-vjt-nalozilo-identifikaciju-autora-html",
+      "title": "Претње смрћу тужиоцу Стефановићу и министру Вујићу на мрежи \"Икс\"; ВЈТ наложило идентификацију аутора",
+      "url": "https://www.rts.rs/vesti/hronika/5999837/pretnje-smrcu-tuziocu-stefanovicu-i-ministru-vujicu-na-mrezi-iks-vjt-nalozilo-identifikaciju-autora.html",
+      "date": "2026-07-18",
+      "datetime": "2026-07-18T08:49:22+00:00",
+      "time": "08:49",
+      "source": "RTS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "ww-krik-rs-kriminalac-milan-ostojic-sandokan-upucan-u-sapcu-",
+      "title": "Kriminalac Milan Ostojić Sandokan upucan u Šapcu",
+      "url": "https://www.krik.rs/kriminalac-milan-ostojic-sandokan-upucan-u-sapcu/",
+      "date": "2026-07-09",
+      "datetime": "2026-07-09T08:46:30+00:00",
+      "time": "08:46",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
