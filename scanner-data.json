@@ -127,20 +127,6 @@
       "priority": 92
     },
     {
-      "id": "rac-zbog-pretnji-smrcu-ministru-vujicu-i-tuziocu-stefanovicu",
-      "title": "Ухапшен мушкарац због претњи смрћу министру Вујићу и тужиоцу Стефановићу",
-      "url": "https://www.politika.rs/scc/clanak/772032/uhapsen-muskarac-zbog-pretnji-smrcu-ministru-vujicu-i-tuziocu-stefanovicu",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T15:24:00+00:00",
-      "time": "15:24",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "552-uhapsen-muskarac-zbog-pretnji-smrcu-ministru-vujicu-vest",
       "title": "Uhapšen muškarac zbog pretnji smrću ministru Vujiću i tužiocu Stefanoviću",
       "url": "https://www.euronews.rs/srbija/aktuelno/233552/uhapsen-muskarac-zbog-pretnji-smrcu-ministru-vujicu/vest",
@@ -253,20 +239,6 @@
       "priority": 92
     },
     {
-      "id": "upno-59-optuzbi-ukljucujuci-za-silovanje-i-trgovinu-ljudima-",
-      "title": "Uhapšena braća Tejt, suočavaju se sa ukupno 59 optužbi, uključujući za silovanje i trgovinu ljudima",
-      "url": "https://www.danas.rs/svet/uhapsena-braca-tejt-suocavaju-se-sa-ukupno-59-optuzbi-ukljucujuci-za-silovanje-i-trgovinu-ljudima/",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T10:30:39+00:00",
-      "time": "10:30",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "r-faraon-istraga-sporni-sadrzaji-maloletnici-mup-pedofilija-",
       "title": "Priča o „Faraonu“: Influenser iz Sremske Mitrovice uhapšen zbog promocije pedofilije",
       "url": "https://vreme.com/drustvo/influenser-faraon-istraga-sporni-sadrzaji-maloletnici-mup-pedofilija/",
@@ -349,20 +321,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "-pretnji-smrcu-tuziocu-stefanovicu-i-ministru-vujicu-7ez2wpq",
-      "title": "PRETIO TUŽIOCU I MINISTRU \"STRELJAČKIM STROJEM\"! Zemunac iz Rožaja uhapšen zbog jezivih objava na društvenim mrežama",
-      "url": "https://www.blic.rs/vesti/hronika/zemunac-iz-rozaja-uhapsen-zbog-pretnji-smrcu-tuziocu-stefanovicu-i-ministru-vujicu/7ez2wpq",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T12:45:00+00:00",
-      "time": "12:45",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "pske-komisije-razotkriva-surovu-istinu-o-severnoj-makedoniji",
@@ -645,20 +603,6 @@
       "priority": 30
     },
     {
-      "id": "politika-233372-ek-izvestaj-o-vladavini-prava-za-srbiju-vest",
-      "title": "Evropska komisija objavila izveštaj o vladavini prava: Srbija ostvarila napredak, ostaju brojni izazovi",
-      "url": "https://www.euronews.rs/srbija/politika/233372/ek-izvestaj-o-vladavini-prava-za-srbiju/vest",
-      "date": "2026-07-17",
-      "datetime": "2026-07-17T17:30:00+00:00",
-      "time": "17:30",
-      "source": "Euronews Serbia",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "e-zabrinut-jer-nema-prepreka-bahatosti-i-zloupotrebi-zakona-",
       "title": "Popović: Radić treba da bude zabrinut jer nema prepreka bahatosti i zloupotrebi zakona",
       "url": "https://n1info.rs/vesti/popovic-radic-treba-da-bude-zabrinut-jer-nema-prepreka-bahatosti-i-zloupotrebi-zakona/",
@@ -687,18 +631,74 @@
       "priority": 26
     },
     {
-      "id": "nak-772045-vucevic-u-ribarima-izbori-imaju-sudbonosni-znacaj",
-      "title": "Вучевић у Рибарима: Избори имају судбоносни значај",
-      "url": "https://www.politika.rs/scc/clanak/772045/vucevic-u-ribarima-izbori-imaju-sudbonosni-znacaj",
+      "id": "s-rs-srbija-politika-233519-linta-o-hrvatskom-pravosudu-vest",
+      "title": "Linta: Hrvatsko pravosuđe doprinosi rehabilitaciji ustaštva i NDH",
+      "url": "https://www.euronews.rs/srbija/politika/233519/linta-o-hrvatskom-pravosudu/vest",
       "date": "2026-07-19",
-      "datetime": "2026-07-19T15:53:00+00:00",
-      "time": "15:53",
-      "source": "Politika",
+      "datetime": "2026-07-19T08:40:00+00:00",
+      "time": "08:40",
+      "source": "Euronews Serbia",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "ww-krik-rs-kriminalac-milan-ostojic-sandokan-upucan-u-sapcu-",
+      "title": "Kriminalac Milan Ostojić Sandokan upucan u Šapcu",
+      "url": "https://www.krik.rs/kriminalac-milan-ostojic-sandokan-upucan-u-sapcu/",
+      "date": "2026-07-09",
+      "datetime": "2026-07-09T08:46:30+00:00",
+      "time": "08:46",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom-",
+      "title": "U čijim rukama su poslovi za EXPO: sestra Ace Rošavog, osuđeni u slučaju Arkan, Pink Panter, Bagzijev sin, firma koja se povezuje sa Čumetom",
+      "url": "https://www.cins.rs/u-cijim-rukama-su-poslovi-za-expo-sestra-ace-rosavog-osudjeni-u-slucaju-arkan-pink-panter-bagzijev-sin-firma-koja-se-povezuje-sa-cumetom/",
+      "date": "2026-06-22",
+      "datetime": "2026-06-22T06:51:19+00:00",
+      "time": "06:51",
+      "source": "CINS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "arka-nba-251563-oklahoma-trejdovala-lua-dorta-u-atlantu-vest",
+      "title": "Dort napustio Oklahomu – uštedeli su 224 miliona dolara!",
+      "url": "https://www.b92.net/sport/kosarka/nba/251563/oklahoma-trejdovala-lua-dorta-u-atlantu/vest",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T16:31:00+00:00",
+      "time": "16:31",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "bodnaevropa-org-a-srbija-sad-strateski-dijalog-33805728-html",
+      "title": "SAD i Srbija potpisale sporazume o energetici i obrazovanju, jačaju saradnju u odbrani i tehnologiji",
+      "url": "https://www.slobodnaevropa.org/a/srbija-sad-strateski-dijalog/33805728.html",
+      "date": "2026-07-17",
+      "datetime": "2026-07-17T14:53:15+00:00",
+      "time": "14:53",
+      "source": "RSE Balkan",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
