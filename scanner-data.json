@@ -183,20 +183,6 @@
       "priority": 92
     },
     {
-      "id": "r-faraon-istraga-sporni-sadrzaji-maloletnici-mup-pedofilija-",
-      "title": "Priča o „Faraonu“: Influenser iz Sremske Mitrovice uhapšen zbog promocije pedofilije",
-      "url": "https://vreme.com/drustvo/influenser-faraon-istraga-sporni-sadrzaji-maloletnici-mup-pedofilija/",
-      "date": "2026-07-19",
-      "datetime": "2026-07-19T10:14:23+00:00",
-      "time": "10:14",
-      "source": "Vreme",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-beograd-policija-otkrila-tri-laboratorije-za-marihuanu-vest",
       "title": "U Beogradu otkrivene tri laboratorije za proizvodnju marihuane, sedmoro uhapšenih",
       "url": "https://www.euronews.rs/srbija/aktuelno/233487/beograd-policija-otkrila-tri-laboratorije-za-marihuanu/vest",
@@ -695,6 +681,20 @@
       "time": "22:56",
       "source": "Politika",
       "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "sa-kreditom-ako-duznik-premine-ovo-su-zlatna-pravila-1sfl3ks",
+      "title": "Šta sa kreditom ako dužnik premine? Jedna zabluda može da vas \"ukopa\": Evo kada dugove ne morate da plaćate",
+      "url": "https://www.blic.rs/biznis/moj-novcanik/sta-sa-kreditom-ako-duznik-premine-ovo-su-zlatna-pravila/1sfl3ks",
+      "date": "2026-07-19",
+      "datetime": "2026-07-19T22:44:00+00:00",
+      "time": "22:44",
+      "source": "Blic",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
