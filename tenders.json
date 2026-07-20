@@ -1,112 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 5965080.0,
+    "accepted": 14592.0,
+    "lowest": 1202.0,
+    "difference": 13390.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100038783,
+    "file": "documents/100038783_doc02909620260720134906.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2376000.0,
+    "lowest": 6035.0,
+    "difference": 2369965.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100249211,
+    "file": "documents/100249211_Odluka o dodeli ugovora JNPPBOJP 1-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2400000.0,
+    "lowest": 6134.0,
+    "difference": 2393866.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100377462,
+    "file": "documents/100377462_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 19830400.0,
+    "lowest": 1202.0,
+    "difference": 19829198.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113067905,
+    "file": "documents/113067905_Odluka o dodeli ugovora OP U-03-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 41146.0,
+    "lowest": 2202.0,
+    "difference": 38944.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101322995,
+    "file": "documents/101322995_doc02909320260720134803.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 58167072.0,
+    "lowest": 2000.0,
+    "difference": 58165072.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107304412,
+    "file": "documents/107304412_2026-53681-21 - Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2539140.0,
     "lowest": 7202.0,
-    "difference": 5957878.0,
+    "difference": 2531938.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 108165533,
-    "file": "documents/108165533_Odluka o dodeli ugovora.docx"
+    "id": 100958919,
+    "file": "documents/100958919_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 55025000.0,
+    "accepted": 2000000.0,
     "lowest": 7202.0,
-    "difference": 55017798.0,
+    "difference": 1992798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100111832,
-    "file": "documents/100111832_Odluka o dodeli ugovora.docx"
+    "id": 101727796,
+    "file": "documents/101727796_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 6000000.0,
+    "accepted": 5398800.0,
     "lowest": 7202.0,
-    "difference": 5992798.0,
+    "difference": 5391598.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100959905,
-    "file": "documents/100959905_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 130164.0,
-    "lowest": 1210.0,
-    "difference": 128954.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101877940,
-    "file": "documents/101877940_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 4699200.0,
-    "lowest": 6202.0,
-    "difference": 4692998.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103247375,
-    "file": "documents/103247375_Odluka o dodeli ugovora JN 23  2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 4778142.0,
-    "lowest": 4230.0,
-    "difference": 4773912.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107096604,
-    "file": "documents/107096604_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 762080.0,
-    "lowest": 2110.0,
-    "difference": 759970.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100279686,
-    "file": "documents/100279686_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 16370.0,
-    "lowest": 7202.0,
-    "difference": 9168.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101492908,
-    "file": "documents/101492908_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 16370.0,
-    "lowest": 7202.0,
-    "difference": 9168.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100427272,
-    "file": "documents/100427272_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 16370.0,
-    "lowest": 7202.0,
-    "difference": 9168.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112523287,
-    "file": "documents/112523287_Odluka o dodeli.docx"
+    "id": 101290179,
+    "file": "documents/101290179_Odluka o dodeli ugovora.docx"
   }
 ]
