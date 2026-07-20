@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "-hrvatskoj-kupci-se-pozivaju-da-hitno-vrate-proizvod-mn8x3xe",
-      "title": "Povlači se tiganj iz prodaje: Kupci se pozivaju da hitno vrate proizvod",
-      "url": "https://www.blic.rs/biznis/povlacni-se-tiganj-iz-prodaje-u-hrvatskoj-kupci-se-pozivaju-da-hitno-vrate-proizvod/mn8x3xe",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T16:48:54+00:00",
-      "time": "16:48",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "bodnaevropa-org-a-srbija-africka-svinjska-kuga-33807696-html",
       "title": "Srbija pogođena afričkom svinjskom kugom",
       "url": "https://www.slobodnaevropa.org/a/srbija-africka-svinjska-kuga/33807696.html",
@@ -83,6 +69,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "ijala-ljudi-leze-na-ulici-bacen-suzavac-ima-uhapsenih-video-",
+      "title": "Uznemirujuće scene u Argentini nakon poraza u finalu Mundijala: Ljudi leže na ulici, bačen suzavac, ima uhapšenih VIDEO",
+      "url": "https://nova.rs/sport/fudbal/uznemirujuce-scene-u-argentini-nakon-poraza-u-finalu-mundijala-ljudi-leze-na-ulici-bacen-suzavac-ima-uhapsenih-video/",
+      "date": "2026-07-20",
+      "datetime": "2026-07-20T22:38:00+00:00",
+      "time": "22:38",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "ps-www-danas-rs-vesti-drustvo-uhapsena-zena-izbola-muskarca-",
@@ -477,20 +477,6 @@
       "priority": 28
     },
     {
-      "id": "enju-muskarca-60-u-zemunu-zbog-pretnji-stefanovicu-i-vujicu-",
-      "title": "\"Vlast ulazi u predizbornu kampanju zastrašivanja\": Penzionisana pukovnica MUP o hapšenju muškarca (60) u Zemunu zbog pretnji Stefanoviću i Vujiću",
-      "url": "https://nova.rs/vesti/hronika/vlast-ulazi-u-predizbornu-kampanju-zastrasivanja-penzionisana-pukovnica-mup-o-hapsenju-muskarca-60-u-zemunu-zbog-pretnji-stefanovicu-i-vujicu/",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T15:25:02+00:00",
-      "time": "15:25",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "emeno-stopirao-spajanje-vorner-bros-diskaverija-i-paramaunta",
       "title": "Амерички суд привремено стопирао спајање „Ворнер брос дискаверија” и „Парамаунта”",
       "url": "https://www.politika.rs/scc/clanak/772384/americki-sud-privremeno-stopirao-spajanje-vorner-bros-diskaverija-i-paramaunta",
@@ -671,6 +657,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ovca-policija-helikopterima-trazi-lopove-u-sloveniji-s24r9e4",
+      "title": "OPLJAČKALI KOMBI ZA PREVOZ NOVCA Pokrenuta velika potraga u Sloveniji: Policija helikopterima traži LOPOVE",
+      "url": "https://www.blic.rs/vesti/svet/opljackali-kombi-za-prevoz-novca-policija-helikopterima-trazi-lopove-u-sloveniji/s24r9e4",
+      "date": "2026-07-20",
+      "datetime": "2026-07-20T22:24:00+00:00",
+      "time": "22:24",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "vet-svajcarac-snimao-nagu-decu-u-istri-odmah-uhapsen-wdm9mm5",
