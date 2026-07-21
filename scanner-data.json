@@ -15,20 +15,6 @@
       "priority": 104
     },
     {
-      "id": "io-predsednika-Libana-SAD-ce-pomoci-u-borbi-protiv-Hezbolaha",
-      "title": "AMERIKANCI KREĆU U NOVU AKCIJU NA BLISKOM ISTOKU? Hitno se oglasio Tramp: \"Nismo još završili!\" Glavna meta je ZAJEDNIČKI neprijatelj",
-      "url": "https://www.kurir.rs/planeta/10055196/Tramp-ugostio-predsednika-Libana-SAD-ce-pomoci-u-borbi-protiv-Hezbolaha",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T16:21:58+00:00",
-      "time": "16:21",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "bodnaevropa-org-a-srbija-africka-svinjska-kuga-33807696-html",
       "title": "Srbija pogođena afričkom svinjskom kugom",
       "url": "https://www.slobodnaevropa.org/a/srbija-africka-svinjska-kuga/33807696.html",
@@ -113,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "e-u-pozarevcu-uhapseni-mladici-zaplenjeno-16-kilograma-droge",
-      "title": "VELIKA AKCIJA POLICIJE U POŽAREVCU! Uhapšena dva muškarca zbog prodaje droge: Zaplenjeno čak 16 KILOGRAMA marihuane, amfetamina i hašiša! (FOTO)",
-      "url": "https://www.kurir.rs/crna-hronika/10055198/u-velikoj-akciji-policije-u-pozarevcu-uhapseni-mladici-zaplenjeno-16-kilograma-droge",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T16:22:35+00:00",
-      "time": "16:22",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "o-233796-akcija-vjt-i-ukp-pao-zbog-10-kilograma-kokaina-vest",
       "title": "Uhapšen zbog 10 kilograma kokaina i 3 heroina: Velika akcija VJT i UKP u Beogradu",
       "url": "https://www.euronews.rs/srbija/aktuelno/233796/akcija-vjt-i-ukp-pao-zbog-10-kilograma-kokaina/vest",
@@ -195,34 +167,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "o-uhapsen-pripadnik-obezbedenja-sefa-sbpok-marka-zafirovica-",
-      "title": "Kričkov saradnik priveden zbog iznude",
-      "url": "https://radar.nova.rs/drustvo/uhapsen-pripadnik-obezbedenja-sefa-sbpok-marka-zafirovica/",
-      "date": "2026-07-14",
-      "datetime": "2026-07-14T13:29:49+00:00",
-      "time": "13:29",
-      "source": "Radar",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "la-16-kilograma-droge-uhapseni-dileri-imali-i-oruzje-l2m1ccs",
-      "title": "(FOTO, VIDEO) ZAPLENJENO SKORO 17 KILOGRAMA DROGE Velika policijska akcija u Požarevcu: Uhapšena dvojica muškaraca",
-      "url": "https://www.blic.rs/vesti/hronika/policija-u-pozarevcu-zaplenila-16-kilograma-droge-uhapseni-dileri-imali-i-oruzje/l2m1ccs",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T16:34:31+00:00",
-      "time": "16:34",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "va-rs-drustvo-hajdinov-most-infrastruktura-zeleznice-srbije-",
@@ -561,6 +505,20 @@
       "priority": 8
     },
     {
+      "id": "-gora-10055301-zena-stradala-u-pozaru-u-stanu-u-danilovgradu",
+      "title": "TRAGEDIJA U DANILOVGRADU: Žena (66) stradala u požaru u stanu, policija utvrđuje uzrok nesreće",
+      "url": "https://www.kurir.rs/region/crna-gora/10055301/zena-stradala-u-pozaru-u-stanu-u-danilovgradu",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "70-kilograma-kokaina-iz-ekvadora-na-paketima-zastava-srbije-",
       "title": "U Italiji zaplenjeno 770 kilograma kokaina iz Ekvadora, na paketima zastava Srbije",
       "url": "https://vreme.com/svet/u-italiji-zaplenjeno-770-kilograma-kokaina-iz-ekvadora-na-paketima-zastava-srbije/",
@@ -601,6 +559,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "odbija-na-ostrvu-u-komsiluku-nude-platu-od-3600-evra-gc2116m",
+      "title": "Ponuda koja se ne odbija! Na ostrvu u komšiluku nude platu od 3.600 evra: Konkurs otvoren, ovo su uslovi",
+      "url": "https://www.blic.rs/biznis/moj-novac/ponuda-koja-se-ne-odbija-na-ostrvu-u-komsiluku-nude-platu-od-3600-evra/gc2116m",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T22:57:00+00:00",
+      "time": "22:57",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "enski-ponovo-razgovarao-sa-Fedorovim-usred-protesta-u-Kijevu",
+      "title": "ZELENSKI PONOVO POZVAO FEDOROVA! Novi sastanak usred protesta koji tresu Ukrajinu! Sastanak iza zatvorenih vrata",
+      "url": "https://www.kurir.rs/planeta/10055338/Zelenski-ponovo-razgovarao-sa-Fedorovim-usred-protesta-u-Kijevu",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T22:30:00+00:00",
+      "time": "22:30",
+      "source": "Kurir",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "stog-kokaina-u-tovaru-banana-paketi-oznaceni-srpskim-10sy61p",
@@ -695,6 +681,20 @@
       "time": "21:31",
       "source": "Danas",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "r-rs-stars-rijaliti-10052413-sve-transformacije-mine-vrbaski",
+      "title": "ĆELAVA, DUGA ILI KRATKA KOSA, CRNA, PA PLAVA Mina Vrbaški je kraljica novih ljubavi, ali i transformacija: Od neobuzdane do smerne učesnice rijalitija",
+      "url": "https://www.kurir.rs/stars/rijaliti/10052413/sve-transformacije-mine-vrbaski",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T21:30:00+00:00",
+      "time": "21:30",
+      "source": "Kurir",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
