@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "rs-vesti-drustvo-zena-upala-u-provaliju-na-durmitoru-s57mkdd",
-      "title": "(FOTO) DRAMA NA DURMITORU Žena upala u provaliju: Spasioci hitno stigli na lice mesta",
-      "url": "https://www.blic.rs/vesti/drustvo/zena-upala-u-provaliju-na-durmitoru/s57mkdd",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T15:36:37+00:00",
-      "time": "15:36",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 160
-    },
-    {
       "id": "evropa-org-a-kosovo-gazivode-rusenje-vikendice-33809151-html",
       "title": "Zašto se ruše vikendice na Gazivodama?",
       "url": "https://www.slobodnaevropa.org/a/kosovo-gazivode-rusenje-vikendice/33809151.html",
@@ -41,6 +27,20 @@
       "breaking": false,
       "alert": true,
       "priority": 102
+    },
+    {
+      "id": "e-zbog-pozara-koji-se-siri-ka-madridu-ukljucuje-se-i-7vq4f43",
+      "title": "(FOTO, VIDEO) \"NE IZLAZITE IZ KUĆA, ZATVORITE SVE!\" Građani dobili hitno SMS upozorenje, uključuje se i VOJSKA: Hiljade ljudi u opasnosti od POŽARA u Španiji",
+      "url": "https://www.blic.rs/vesti/svet/gradjani-dobili-sms-upozorenje-zbog-pozara-koji-se-siri-ka-madridu-ukljucuje-se-i/7vq4f43",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T20:01:28+00:00",
+      "time": "20:01",
+      "source": "Blic",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "-na-pisce-i-novinare-situacija-u-srbiji-je-na-ivici-pucanja-",
@@ -133,20 +133,6 @@
       "date": "2026-07-22",
       "datetime": "2026-07-22T17:06:49+00:00",
       "time": "17:06",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "s-crna-hronika-10055843-zena-skaljarca-uhapsena-zbog-ubistva",
-      "title": "OTKRIVENO ZBOG ČEGA JE UHAPŠENA ŽENA ŠKALJARCA: Za 50.000 evra organizovali likvidaciju kavčanina!",
-      "url": "https://www.kurir.rs/crna-hronika/10055843/zena-skaljarca-uhapsena-zbog-ubistva",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T14:35:48+00:00",
-      "time": "14:35",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -253,6 +239,20 @@
       "priority": 84
     },
     {
+      "id": "-orban-fides-politicki-prezive-period-nakon-gubljenja-vlast-",
+      "title": "Novinar iz Budimpešte: Orban i Fides se iz petnih žila trude da politički prežive period nakon gubljenja vlasti",
+      "url": "https://n1info.rs/svet/orban-fides-politicki-prezive-period-nakon-gubljenja-vlast/",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T20:20:07+00:00",
+      "time": "20:20",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 74
+    },
+    {
       "id": "g-a-srbija-krusevac-tuzilastvo-albanska-pekara-33809137-html",
       "title": "U Kruševcu bez krivičnog postupka zbog plakata sa pozivom na bojkot albanskih pekara",
       "url": "https://www.slobodnaevropa.org/a/srbija-krusevac-tuzilastvo-albanska-pekara/33809137.html",
@@ -279,6 +279,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "s-vesti-svet-madjarski-vrhovni-javni-tuzilac-podneo-ostavku-",
+      "title": "Mađarski vrhovni javni tužilac podneo ostavku: Tužilaštvo ne sme postati oruđe u borbi političkih aktera",
+      "url": "https://nova.rs/vesti/svet/madjarski-vrhovni-javni-tuzilac-podneo-ostavku/",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T20:06:40+00:00",
+      "time": "20:06",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "ika-za-ljudska-prava-katarina-golubovic-iznela-neistine-vest",
+      "title": "VJT u Beogradu: Predsednica Komiteta pravnika za ljudska prava Katarina Golubović iznela neistine",
+      "url": "https://www.b92.net/info/politika/252519/vjt-u-beogradu-predsednica-komiteta-pravnika-za-ljudska-prava-katarina-golubovic-iznela-neistine/vest",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T20:06:00+00:00",
+      "time": "20:06",
+      "source": "B92",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "-tuzilastvo-ne-sme-postati-orudje-u-borbi-politickih-aktera-",
@@ -393,20 +421,6 @@
       "priority": 66
     },
     {
-      "id": "ajave-emisija-dan-uzivo-u-1630h-danas-pod-lupom-fides-sutra-",
-      "title": "Dan uživo: Danas pod lupom Fides, sutra...",
-      "url": "https://n1info.rs/najave-emisija/dan-uzivo-u-1630h-danas-pod-lupom-fides-sutra/",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T14:28:04+00:00",
-      "time": "14:28",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "no-233788-decak-5-utopio-se-u-bazenu-jugovo-u-smederevu-vest",
       "title": "Tragedija u akva parku \"Jugovo\" u Smederevu: Utopio se dečak star pet godina, bazen zatvoren do daljnjeg",
       "url": "https://www.euronews.rs/srbija/aktuelno/233788/decak-5-utopio-se-u-bazenu-jugovo-u-smederevu/vest",
@@ -433,6 +447,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "adbi-u-rumuniji-pa-dobio-jos-jedne-batine-u-policiji-7j65w1b",
+      "title": "MLADOŽENJA PRETUČEN NA SVADBI Skandal u komšiluku: Otišao u policiju da prijavi napad, pa zatekao pijanog načelnika - dobio još jedne batine",
+      "url": "https://www.blic.rs/vesti/svet/mladozenja-pretucen-na-svadbi-u-rumuniji-pa-dobio-jos-jedne-batine-u-policiji/7j65w1b",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T20:37:28+00:00",
+      "time": "20:37",
+      "source": "Blic",
+      "category": "Злоупотреба положаја",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "rs-region-crna-gora-10056109-spasena-kanadjanka-na-durmitoru",
@@ -484,20 +512,6 @@
       "datetime": "2026-07-22T16:01:13+00:00",
       "time": "16:01",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "s-video-novi-dan-tema-jutra-slucaj-faraon-na-meti-predatora-",
-      "title": "Tema jutra: Slučaj \"Faraon\" - na meti predatora",
-      "url": "https://n1info.rs/video/novi-dan/tema-jutra-slucaj-faraon-na-meti-predatora/",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T15:10:57+00:00",
-      "time": "15:10",
-      "source": "N1",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -561,20 +575,6 @@
       "priority": 24
     },
     {
-      "id": "-gori-skaljarski-klan-mu-nudio-stan-i-100000-evra-za-51r2237",
-      "title": "NIŠLIJA OSUĐEN U PODGORICI Pripadnik \"škaljarskog\" klana mu nudio STAN U SRBIJI I 100.000 EVRA za likvidaciju Slobodana Šaranovića",
-      "url": "https://www.blic.rs/vesti/hronika/nislija-osudjen-u-crnoj-gori-skaljarski-klan-mu-nudio-stan-i-100000-evra-za/51r2237",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T15:23:13+00:00",
-      "time": "15:23",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "tavak-saradnje-srbije-i-rusije-u-borbi-protiv-kriminala-vest",
       "title": "Dačić i Bocan-Harčenko: Nastavak saradnje Srbije i Rusije u borbi protiv kriminala",
       "url": "https://www.euronews.rs/srbija/politika/234046/nastavak-saradnje-srbije-i-rusije-u-borbi-protiv-kriminala/vest",
@@ -631,20 +631,6 @@
       "priority": 22
     },
     {
-      "id": "erno-paleci-komsiji-seno-izazvao-stetu-od-12-miliona-dinara-",
-      "title": "Teško krivično delo protiv opšte sigurnosti: Namerno paleći komšiji seno izazvao štetu od 12 miliona dinara",
-      "url": "https://www.danas.rs/vesti/drustvo/tesko-krivicno-delo-protiv-opste-sigurnosti-namerno-paleci-komsiji-seno-izazvao-stetu-od-12-miliona-dinara/",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T14:44:23+00:00",
-      "time": "14:44",
-      "source": "Danas",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "ar-dobija-obnovljenu-fabriku-vode-vrednu-3-miliona-evra-vest",
       "title": "Glišić u Zaječaru o rekonstrukciji fabrike vode - projakat vredan tri miliona evra",
       "url": "https://www.euronews.rs/srbija/drustvo/233917/zajecar-dobija-obnovljenu-fabriku-vode-vrednu-3-miliona-evra/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-22T17:03:00+00:00",
       "time": "17:03",
       "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-blokada-nijedna-strana-policija-nije-imala-primedbe-t557pqf",
+      "title": "\"NIJEDNA STRANA POLICIJA NIJE IMALA PRIMEDBE NA NAŠ RAD\" Dačić o postupanju nadležnih tokom blokada i protesta: \"Oni bi bili mnogo oštriji od nas\"",
+      "url": "https://www.blic.rs/vesti/politika/dacic-o-postupanju-tokom-blokada-nijedna-strana-policija-nije-imala-primedbe/t557pqf",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T16:56:09+00:00",
+      "time": "16:56",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
