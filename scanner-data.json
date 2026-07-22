@@ -225,20 +225,6 @@
       "priority": 74
     },
     {
-      "id": "dravu-otkriveni-detalji-o-skrivanju-opasnog-ubice-iz-s7k8spj",
-      "title": "UBIO ŽENU, PA SKOČIO U DRAVU I PREPLIVAO JE! Otkriveni detalji o skrivanju opasnog ubice: Nije mogao a da se ne vrati na mesto zločina, a tu ga je ČEKALA POLICIJA",
-      "url": "https://www.blic.rs/vesti/svet/tokom-bekstva-preplivao-dravu-otkriveni-detalji-o-skrivanju-opasnog-ubice-iz/s7k8spj",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T17:28:26+00:00",
-      "time": "17:28",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "umnjicene-za-trgovinu-drogom-pronadjeno-oko-17-kg-narkotika-",
       "title": "U Požarevcu uhapšene dve osobe osumnjičene za trgovinu drogom, pronađeno oko 17 kg narkotika",
       "url": "https://nova.rs/vesti/hronika/u-pozarevcu-uhapsene-dve-osobe-osumnjicene-za-trgovinu-drogom-pronadjeno-oko-17-kg-narkotika/",
@@ -561,6 +547,20 @@
       "priority": 4
     },
     {
+      "id": "a-vozaca-hitne-pomoci-doktorka-prevezla-dete-u-nisku-bolnicu",
+      "title": "Камион налетео на возача Хитне помоћи, докторка превезла дете у нишку болницу",
+      "url": "https://www.politika.rs/scc/clanak/772706/kamion-naleteo-na-vozaca-hitne-pomoci-doktorka-prevezla-dete-u-nisku-bolnicu",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T23:11:00+00:00",
+      "time": "23:11",
+      "source": "Politika",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "odbija-na-ostrvu-u-komsiluku-nude-platu-od-3600-evra-gc2116m",
       "title": "Ponuda koja se ne odbija! Na ostrvu u komšiluku nude platu od 3.600 evra: Konkurs otvoren, ovo su uslovi",
       "url": "https://www.blic.rs/biznis/moj-novac/ponuda-koja-se-ne-odbija-na-ostrvu-u-komsiluku-nude-platu-od-3600-evra/gc2116m",
@@ -603,20 +603,6 @@
       "priority": 0
     },
     {
-      "id": "-net-info-svet-251930-rat-u-ukrajini-21-jul-2026-godine-vest",
-      "title": "Rat – dan 1.608: Rusija presrela 123 drona; Zelenski smenio Sirskog; Drastično porastao broj žrtava u Ukrajini",
-      "url": "https://www.b92.net/info/svet/251930/rat-u-ukrajini-21-jul-2026-godine/vest",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T21:49:00+00:00",
-      "time": "21:49",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "n1info-rs-svet-greska-strani-drzavljani-glasanje-nju-dzersi-",
       "title": "Zbog softverske greške 6.600 stranih državljana registrovano za glasanje u Nju Džersiju",
       "url": "https://n1info.rs/svet/greska-strani-drzavljani-glasanje-nju-dzersi/",
@@ -631,20 +617,6 @@
       "priority": 0
     },
     {
-      "id": "ladni-golova-voleo-bih-da-kostov-ostane-do-kraja-sezone-vest",
-      "title": "Stanković: &quot;Moramo da budemo gladni, a ne alavi&quot;",
-      "url": "https://www.b92.net/sport/fudbal/evrokupovi/252228/stankovic-posle-40-moramo-da-budemo-gladni-golova-voleo-bih-da-kostov-ostane-do-kraja-sezone/vest",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T21:48:00+00:00",
-      "time": "21:48",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "spanija-uvodi-zabranu-pusenja-kazne-i-do-600000-evra-7b5d0mf",
       "title": "ŠOK ZA SVE TURISTE! Omiljena letnja destinacija uvodi novi zakon: Ako prekršite OVO PRAVILO, preti vam kazna i do neverovatnih 600.000 evra",
       "url": "https://www.blic.rs/vesti/svet/spanija-uvodi-zabranu-pusenja-kazne-i-do-600000-evra/7b5d0mf",
@@ -652,20 +624,6 @@
       "datetime": "2026-07-21T21:44:00+00:00",
       "time": "21:44",
       "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "227-novi-potez-vasingtona-amerika-salje-pomoc-kubancima-vest",
-      "title": "Novi potez Vašingtona: Amerika šalje pomoć Kubancima",
-      "url": "https://www.b92.net/info/svet/252227/novi-potez-vasingtona-amerika-salje-pomoc-kubancima/vest",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T21:38:00+00:00",
-      "time": "21:38",
-      "source": "B92",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
@@ -694,6 +652,48 @@
       "datetime": "2026-07-21T21:30:00+00:00",
       "time": "21:30",
       "source": "Kurir",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-zasto-casa-alkohola-uz-letnji-rucak-uhvati-brze-nego-uvece-",
+      "title": "Zašto čaša alkohola uz letnji ručak „uhvati“ brže nego uveče",
+      "url": "https://n1info.rs/magazin/zdravlje/zasto-casa-alkohola-uz-letnji-rucak-uhvati-brze-nego-uvece/",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T21:28:48+00:00",
+      "time": "21:28",
+      "source": "N1",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "eri-daju-bolji-rezultat-nego-stalno-ribanje-evo-kako-hznxhz6",
+      "title": "Ulje se nikada ne sipa u sudoperu - osim u OVOM slučaju: Daje bolji rezultat nego stalno ribanje",
+      "url": "https://www.blic.rs/slobodno-vreme/nekoliko-kapi-ulja-u-sudoperi-daju-bolji-rezultat-nego-stalno-ribanje-evo-kako/hznxhz6",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T21:26:28+00:00",
+      "time": "21:26",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "s-www-blic-rs-kultura-preminuo-pesnik-rados-markovic-wb01ssf",
+      "title": "Preminuo pesnik Radoš Marković",
+      "url": "https://www.blic.rs/kultura/preminuo-pesnik-rados-markovic/wb01ssf",
+      "date": "2026-07-21",
+      "datetime": "2026-07-21T21:16:30+00:00",
+      "time": "21:16",
+      "source": "Blic",
       "category": "Извршења",
       "summary": "",
       "breaking": false,
