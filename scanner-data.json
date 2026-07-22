@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "rs-vesti-drustvo-zena-upala-u-provaliju-na-durmitoru-s57mkdd",
+      "title": "(FOTO) DRAMA NA DURMITORU Žena upala u provaliju: Spasioci hitno stigli na lice mesta",
+      "url": "https://www.blic.rs/vesti/drustvo/zena-upala-u-provaliju-na-durmitoru/s57mkdd",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T15:36:37+00:00",
+      "time": "15:36",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": true,
+      "priority": 160
+    },
+    {
       "id": "evropa-org-a-kosovo-gazivode-rusenje-vikendice-33809151-html",
       "title": "Zašto se ruše vikendice na Gazivodama?",
       "url": "https://www.slobodnaevropa.org/a/kosovo-gazivode-rusenje-vikendice/33809151.html",
@@ -41,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 101
+    },
+    {
+      "id": "dica-na-jezeru-gazivode-oglasio-se-linta-reagovala-i-vzcxg8e",
+      "title": "\"KURTIJEV REŽIM ODBIJA RAZGOVOR\" Bura zbog rušenja vikendica na jezeru Gazivode, oglasio se Linta, reagovala i kancelarija EU: \"Hitno to OBUSTAVITE\"",
+      "url": "https://www.blic.rs/vesti/politika/bura-zbog-rusenja-vikendica-na-jezeru-gazivode-oglasio-se-linta-reagovala-i/vzcxg8e",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T14:40:00+00:00",
+      "time": "14:40",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "ni-ambasada-reagovala-zbog-tuzioca-obezbedite-srbima-6gjf8vs",
@@ -113,6 +141,20 @@
       "priority": 94
     },
     {
+      "id": "s-crna-hronika-10055843-zena-skaljarca-uhapsena-zbog-ubistva",
+      "title": "OTKRIVENO ZBOG ČEGA JE UHAPŠENA ŽENA ŠKALJARCA: Za 50.000 evra organizovali likvidaciju kavčanina!",
+      "url": "https://www.kurir.rs/crna-hronika/10055843/zena-skaljarca-uhapsena-zbog-ubistva",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T14:35:48+00:00",
+      "time": "14:35",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "rir-rs-crna-hronika-10056028-zapalio-komsijino-seno-u-topoli",
       "title": "KOMŠIJI ZAPALIO SENO! Uhapšen piroman iz Topole, pričinjena šteta procenjena na 100.000 evra",
       "url": "https://www.kurir.rs/crna-hronika/10056028/zapalio-komsijino-seno-u-topoli",
@@ -169,20 +211,6 @@
       "priority": 92
     },
     {
-      "id": "danas-rs-vesti-ekonomija-uhapsen-zaraza-africka-kuga-svinja-",
-      "title": "Uhapšen zbog širenja zaraze: Pronađeno i poslano na uništavanje sedam tona svinjetine u Salašu Noćajskom",
-      "url": "https://www.danas.rs/vesti/ekonomija/uhapsen-zaraza-africka-kuga-svinja/",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T12:19:33+00:00",
-      "time": "12:19",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "hapsen-kamiondzija-koji-je-pokosio-vozaca-saniteta-iz-vranja",
       "title": "UHAPŠEN KAMIONDŽIJA KOJI JE POKOSIO VOZAČA SANITETA IZ VRANJA: Državljaninu Severne Makedonije određen pritvor, povređeni životno ugrožen!",
       "url": "https://www.kurir.rs/crna-hronika/10055863/uhapsen-kamiondzija-koji-je-pokosio-vozaca-saniteta-iz-vranja",
@@ -218,20 +246,6 @@
       "datetime": "2026-07-22T10:16:00+00:00",
       "time": "10:16",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "55710-uhapseni-drumski-razbojnici-na-auto-putu-kod-smedereva",
-      "title": "UHAPŠENI DRUMSKI RAZBOJNICI NA AUTO-PUTU KOD SMEDEREVA: Onesposobili auto nemačkog državljanina, pa mu nudili pomoć! (foto)",
-      "url": "https://www.kurir.rs/crna-hronika/10055710/uhapseni-drumski-razbojnici-na-auto-putu-kod-smedereva",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T09:47:38+00:00",
-      "time": "09:47",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -287,20 +301,6 @@
       "date": "2026-07-20",
       "datetime": "2026-07-20T16:29:00+00:00",
       "time": "16:29",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "6-prokuplje-uhapsen-nemac-zbog-nesrece-sa-jednom-zrtvom-vest",
-      "title": "Uhapšen Nemac osumnjičen za izazivanje nesreće u kojoj je poginula jedna osoba, a četiri povređeno",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233716/prokuplje-uhapsen-nemac-zbog-nesrece-sa-jednom-zrtvom/vest",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T15:23:00+00:00",
-      "time": "15:23",
       "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
@@ -365,6 +365,20 @@
       "priority": 90
     },
     {
+      "id": "ozara-koji-je-izazvao-havariju-u-topoli-odredjeno-mu-fsysqmm",
+      "title": "Muškarac (33) namerno zapalio seno, pa izazvao štetu od 12 MILIONA DINARA! Uhapšen zbog požara koji je izazvao havariju u Topoli, određeno mu zadržavanje",
+      "url": "https://www.blic.rs/vesti/hronika/muskarac-33-uhapsen-zbog-pozara-koji-je-izazvao-havariju-u-topoli-odredjeno-mu/fsysqmm",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T14:33:35+00:00",
+      "time": "14:33",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 78
+    },
+    {
       "id": "-miliona-dolara-medju-uhapsenima-i-osoba-sa-srpskim-pasosem-",
       "title": "Istorijska zaplena kokaina u Liberiji: Droga vredna 370 miliona dolara, među uhapšenima i osoba sa srpskim pasošem",
       "url": "https://nova.rs/vesti/hronika/istorijska-zaplena-kokaina-u-liberiji-droga-vredna-370-miliona-dolara-medju-uhapsenima-i-osoba-sa-srpskim-pasosem/",
@@ -421,13 +435,13 @@
       "priority": 70
     },
     {
-      "id": "odnaevropa-org-a-kosovo-srpski-tuzioci-ostavke-33808866-html",
-      "title": "Vršiteljica dužnosti predsednice Kosova potpisala ukaze o razrešenju sedam srpskih tužilaca",
-      "url": "https://www.slobodnaevropa.org/a/kosovo-srpski-tuzioci-ostavke/33808866.html",
-      "date": "2026-07-21",
-      "datetime": "2026-07-21T08:48:00+00:00",
-      "time": "08:48",
-      "source": "RSE Balkan",
+      "id": "ajave-emisija-dan-uzivo-u-1630h-danas-pod-lupom-fides-sutra-",
+      "title": "Gledajte UŽIVO Dan uživo u 16.30h: Danas pod lupom Fides, sutra...",
+      "url": "https://n1info.rs/najave-emisija/dan-uzivo-u-1630h-danas-pod-lupom-fides-sutra/",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T14:28:04+00:00",
+      "time": "14:28",
+      "source": "N1",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -463,26 +477,26 @@
       "priority": 66
     },
     {
-      "id": "etanjahua-u-njujork-on-je-ratni-zlocinac-uhapsite-ga-8tzg6v5",
-      "title": "(VIDEO) Gradonačelnik Zohran Mamdani o dolasku Netanjahua u Njujork: \"On je ratni zločinac, UHAPSITE GA\"",
-      "url": "https://www.blic.rs/vesti/svet/gradonacelnik-mamdani-o-dolasku-netanjahua-u-njujork-on-je-ratni-zlocinac-uhapsite-ga/8tzg6v5",
+      "id": "rs-region-crna-gora-10056109-spasena-kanadjanka-na-durmitoru",
+      "title": "DRAMA NA DURMITORU SA SREĆNIM KRAJEM! Spasioci iz provalije izvukli Kanađanku",
+      "url": "https://www.kurir.rs/region/crna-gora/10056109/spasena-kanadjanka-na-durmitoru",
       "date": "2026-07-22",
-      "datetime": "2026-07-22T11:57:14+00:00",
-      "time": "11:57",
-      "source": "Blic",
-      "category": "Хапшења",
+      "datetime": "2026-07-22T15:09:59+00:00",
+      "time": "15:09",
+      "source": "Kurir",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
-      "alert": false,
-      "priority": 26
+      "alert": true,
+      "priority": 60
     },
     {
-      "id": "https-n1info-rs-vesti-sta-ce-se-desiti-sa-slucajem-faraon-",
-      "title": "Šta će se desiti sa slučajem \"Faraon\": \"To što je pušten ne znači da je postupak završen, nadamo se da se istraga nastavlja\"",
-      "url": "https://n1info.rs/vesti/sta-ce-se-desiti-sa-slucajem-faraon/",
+      "id": "s-video-novi-dan-tema-jutra-slucaj-faraon-na-meti-predatora-",
+      "title": "Tema jutra: Slučaj \"Faraon\" - na meti predatora",
+      "url": "https://n1info.rs/video/novi-dan/tema-jutra-slucaj-faraon-na-meti-predatora/",
       "date": "2026-07-22",
-      "datetime": "2026-07-22T11:06:36+00:00",
-      "time": "11:06",
+      "datetime": "2026-07-22T15:10:57+00:00",
+      "time": "15:10",
       "source": "N1",
       "category": "Хапшења",
       "summary": "",
@@ -547,6 +561,20 @@
       "priority": 25
     },
     {
+      "id": "-gori-skaljarski-klan-mu-nudio-stan-i-100000-evra-za-51r2237",
+      "title": "NIŠLIJA OSUĐEN U PODGORICI Pripadnik \"škaljarskog\" klana mu nudio STAN U SRBIJI I 100.000 EVRA za likvidaciju Slobodana Šaranovića",
+      "url": "https://www.blic.rs/vesti/hronika/nislija-osudjen-u-crnoj-gori-skaljarski-klan-mu-nudio-stan-i-100000-evra-za/51r2237",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T15:23:13+00:00",
+      "time": "15:23",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "tavak-saradnje-srbije-i-rusije-u-borbi-protiv-kriminala-vest",
       "title": "Dačić i Bocan-Harčenko: Nastavak saradnje Srbije i Rusije u borbi protiv kriminala",
       "url": "https://www.euronews.rs/srbija/politika/234046/nastavak-saradnje-srbije-i-rusije-u-borbi-protiv-kriminala/vest",
@@ -589,20 +617,6 @@
       "priority": 24
     },
     {
-      "id": "-srbija-aktuelno-233726-mup-ugasio-tiktok-nalog-faraona-vest",
-      "title": "MUP ugasio TikTok nalog \"Faraona“, traži i uklanjanje sadržaja sa Jutjuba",
-      "url": "https://www.euronews.rs/srbija/aktuelno/233726/mup-ugasio-tiktok-nalog-faraona/vest",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T15:04:00+00:00",
-      "time": "15:04",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "-rs-ekonomija-gos-siromastvo-nejednakost-su-politicki-izbor-",
       "title": "Siromaštvo i nejednakost su izbor političara",
       "url": "https://radar.nova.rs/ekonomija/gos-siromastvo-nejednakost-su-politicki-izbor/",
@@ -629,6 +643,20 @@
       "breaking": false,
       "alert": false,
       "priority": 12
+    },
+    {
+      "id": "erno-paleci-komsiji-seno-izazvao-stetu-od-12-miliona-dinara-",
+      "title": "Teško krivično delo protiv opšte sigurnosti: Namerno paleći komšiji seno izazvao štetu od 12 miliona dinara",
+      "url": "https://www.danas.rs/vesti/drustvo/tesko-krivicno-delo-protiv-opste-sigurnosti-namerno-paleci-komsiji-seno-izazvao-stetu-od-12-miliona-dinara/",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T14:44:23+00:00",
+      "time": "14:44",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "rzava-prodaje-jat-apartmane-na-kopaoniku-za-52-miliona-evra-",
@@ -666,34 +694,6 @@
       "datetime": "2026-07-22T13:25:39+00:00",
       "time": "13:25",
       "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "rzava-prodaje-jat-apartmane-na-kopaoniku-za-52-miliona-evra-",
-      "title": "Država prodaje „Jat apartmane“ na Kopaoniku za 5,2 miliona evra",
-      "url": "https://www.danas.rs/vesti/ekonomija/drzava-prodaje-jat-apartmane-na-kopaoniku-za-52-miliona-evra/",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T13:05:57+00:00",
-      "time": "13:05",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "ic-posetio-porodicu-sa-sedmoro-dece-poklonio-im-pola-miliona",
-      "title": "LJUBAV JE IZNAD ZAKONA! Željko Mitrović posetio porodicu sa sedmoro dece: Poklonio im pola miliona, a onda ih iznenadio ponudom koja se ne odbija!",
-      "url": "https://www.kurir.rs/stars/tv-sou/10055825/ljubav-je-iznad-zakona-zeljko-mitrovic-posetio-porodicu-sa-sedmoro-dece-poklonio-im-pola-miliona",
-      "date": "2026-07-22",
-      "datetime": "2026-07-22T11:16:41+00:00",
-      "time": "11:16",
-      "source": "Kurir",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
