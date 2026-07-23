@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 4950000.0,
+    "lowest": 4344.0,
+    "difference": 4945656.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101568249,
+    "file": "documents/101568249_OODU - udzbenici - SS.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 6247434.72,
     "lowest": 6202.0,
     "difference": 6241232.72,
