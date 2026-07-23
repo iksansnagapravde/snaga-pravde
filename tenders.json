@@ -1,35 +1,68 @@
 [
   {
     "winner": null,
-    "accepted": 16000000.0,
+    "accepted": 3400000.0,
+    "lowest": 1920.0,
+    "difference": 3398080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108642230,
+    "file": "documents/108642230_Odluka o dodeli ugovora JN br. 5024-26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 73748736.07,
+    "lowest": 1970.0,
+    "difference": 73746766.07,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora za JN Rukovanje i održavanje skladišta, skladištenje roba obaveznih rezervi naftnih derivata u skaldištima Direkcije.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1090909.0,
     "lowest": 7202.0,
-    "difference": 15992798.0,
+    "difference": 1083707.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103605787,
-    "file": "documents/103605787_Odluka o dodeli ugovora.docx"
+    "id": 101180072,
+    "file": "documents/101180072_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 47146.0,
-    "lowest": 5000.0,
-    "difference": 42146.0,
+    "accepted": 1300000.0,
+    "lowest": 2202.0,
+    "difference": 1297798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101578054,
-    "file": "documents/101578054_O26-4005970020260723110949.pdf"
+    "id": 108625219,
+    "file": "documents/108625219_Odluka o dodeli JN-2000-0176-2026 P-1.pdf"
   },
   {
     "winner": null,
-    "accepted": 2600000.0,
-    "lowest": 1400.0,
-    "difference": 2598600.0,
+    "accepted": 1300000.0,
+    "lowest": 2202.0,
+    "difference": 1297798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100043776,
-    "file": "documents/100043776_1066 -Odluka o dodeli.pdf"
+    "id": 103465565,
+    "file": "documents/103465565_Odluka o dodeli JN-2000-0176-2026 P-2.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4608000.0,
+    "lowest": 1251.0,
+    "difference": 4606749.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101485179,
+    "file": "documents/101485179_Odluka o dodeli ugovora 003087537.pdf"
   }
 ]
