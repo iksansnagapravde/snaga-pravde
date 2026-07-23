@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 2592000.0,
+    "lowest": 1110.0,
+    "difference": 2590890.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108460959,
+    "file": "documents/108460959_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 4700000.0,
+    "lowest": 3768.69,
+    "difference": 4696231.31,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101327330,
+    "file": "documents/101327330_Odluka_o_dodeli_ugovora_Kontrola_vode_i_sedimenta..pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4700000.0,
+    "lowest": 3768.69,
+    "difference": 4696231.31,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101708085,
+    "file": "documents/101708085_Odluka_o_dodeli_ugovora_Kontrola_vode_i_sedimenta..pdf"
+  },
+  {
+    "winner": null,
     "accepted": 4950000.0,
     "lowest": 4344.0,
     "difference": 4945656.0,
@@ -75,27 +108,5 @@
     "rejection_reasons": [],
     "id": 100285623,
     "file": "documents/100285623_Odluka o dodeli ugovora  hrana za ucenike u dnevnom boravku OPJN 11 26, overena.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1605045.0,
-    "lowest": 7202.0,
-    "difference": 1597843.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100120497,
-    "file": "documents/100120497_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 41146.0,
-    "lowest": 2202.0,
-    "difference": 38944.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106759467,
-    "file": "documents/106759467_Odluka JN-194-26-66.pdf"
   }
 ]
