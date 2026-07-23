@@ -1,68 +1,90 @@
 [
   {
     "winner": null,
-    "accepted": 3400000.0,
-    "lowest": 1920.0,
-    "difference": 3398080.0,
+    "accepted": 2520000.0,
+    "lowest": 3115.0,
+    "difference": 2516885.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 108642230,
-    "file": "documents/108642230_Odluka o dodeli ugovora JN br. 5024-26.pdf"
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 73748736.07,
-    "lowest": 1970.0,
-    "difference": 73746766.07,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Odluka o dodeli ugovora za JN Rukovanje i održavanje skladišta, skladištenje roba obaveznih rezervi naftnih derivata u skaldištima Direkcije.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1090909.0,
+    "accepted": 1605045.0,
     "lowest": 7202.0,
-    "difference": 1083707.0,
+    "difference": 1597843.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101180072,
-    "file": "documents/101180072_Odluka o dodeli ugovora.docx"
+    "id": 100120497,
+    "file": "documents/100120497_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 1300000.0,
+    "accepted": 41146.0,
     "lowest": 2202.0,
-    "difference": 1297798.0,
+    "difference": 38944.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 108625219,
-    "file": "documents/108625219_Odluka o dodeli JN-2000-0176-2026 P-1.pdf"
+    "id": 106759467,
+    "file": "documents/106759467_Odluka JN-194-26-66.pdf"
   },
   {
     "winner": null,
-    "accepted": 1300000.0,
+    "accepted": 47146.0,
     "lowest": 2202.0,
-    "difference": 1297798.0,
+    "difference": 44944.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103465565,
-    "file": "documents/103465565_Odluka o dodeli JN-2000-0176-2026 P-2.pdf"
+    "id": 101458518,
+    "file": "documents/101458518_Odluka JN-194-26-64.pdf"
   },
   {
     "winner": null,
-    "accepted": 4608000.0,
-    "lowest": 1251.0,
-    "difference": 4606749.0,
+    "accepted": 299760000.0,
+    "lowest": 5202.0,
+    "difference": 299754798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101485179,
-    "file": "documents/101485179_Odluka o dodeli ugovora 003087537.pdf"
+    "id": 100001716,
+    "file": "documents/100001716_JN 127 26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 561600000.0,
+    "lowest": 6202.0,
+    "difference": 561593798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106264886,
+    "file": "documents/106264886_JN 114 26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2314000.0,
+    "lowest": 7202.0,
+    "difference": 2306798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100195621,
+    "file": "documents/100195621_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "000,00 Valuta: RSD Ugovor se dodeljuje grupi ponudaéa: Dunav osiguranje a",
+    "accepted": 666666.0,
+    "lowest": 2000.0,
+    "difference": 664666.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100002516,
+    "file": "documents/100002516_Odluka_o_dodeli_JN_Osiguranje_prema_trecim_i_kasko[1].pdf"
   }
 ]
