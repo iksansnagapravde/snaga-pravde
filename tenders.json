@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 6247434.72,
+    "lowest": 6202.0,
+    "difference": 6241232.72,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101997891,
+    "file": "documents/101997891_Odluka o dodeli ugovora - tekuce odrzavanje-potpis - PS.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1636363.63,
+    "lowest": 7202.0,
+    "difference": 1629161.63,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109857293,
+    "file": "documents/109857293_Odluka o dodeli ugovora - udzbenici-potpis - PS.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 416666.0,
     "lowest": 1142.0,
     "difference": 415524.0,
@@ -64,27 +86,5 @@
     "rejection_reasons": [],
     "id": 106759467,
     "file": "documents/106759467_Odluka JN-194-26-66.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 47146.0,
-    "lowest": 2202.0,
-    "difference": 44944.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101458518,
-    "file": "documents/101458518_Odluka JN-194-26-64.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 299760000.0,
-    "lowest": 5202.0,
-    "difference": 299754798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100001716,
-    "file": "documents/100001716_JN 127 26.pdf"
   }
 ]
