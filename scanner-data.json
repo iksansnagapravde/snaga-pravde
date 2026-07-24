@@ -99,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "ela-vere-p-ubijene-u-dalasu-deca-su-ostala-bez-majke-9jjfdtt",
-      "title": "(FOTO, VIDEO) \"DECA SU OSTALA BEZ MAJKE, VERA JE BILA...\" Potresne scene u rodnom mestu Srpkinje koju je bodibilder TUKAO DO SMRTI u Dalasu, meštani šokirani: \"Ovo nas je mnogo pogodilo\"",
-      "url": "https://www.blic.rs/vesti/hronika/mestani-rodnog-sela-vere-p-ubijene-u-dalasu-deca-su-ostala-bez-majke/9jjfdtt",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T16:24:29+00:00",
-      "time": "16:24",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "bog-utapanja-deteta-uhapseni-direktor-i-spasilac-jugova-vest",
       "title": "Uhapšeni direktor akva-parka \"Jugovo\", rukovodilac i spasilac zbog utapanja deteta (5) u bazenu",
       "url": "https://www.euronews.rs/srbija/aktuelno/234337/zbog-utapanja-deteta-uhapseni-direktor-i-spasilac-jugova/vest",
@@ -435,6 +421,20 @@
       "priority": 30
     },
     {
+      "id": "k-londona-netanjahu-je-pocinilac-genocida-i-mora-da-odgovara",
+      "title": "Градоначелник Лондона: Нетањаху је починилац геноцида и мора да одговара",
+      "url": "https://www.politika.rs/scc/clanak/773589/gradonacelnik-londona-netanjahu-je-pocinilac-genocida-i-mora-da-odgovara",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T22:45:00+00:00",
+      "time": "22:45",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "umnjicen-da-je-usmrtio-biciklistu-i-pobegao-sa-mesta-nesrece",
       "title": "Возач осумњичен да је усмртио бициклисту и побегао са места несреће",
       "url": "https://www.politika.rs/scc/clanak/773578/vozac-osumnjicen-da-je-usmrtio-biciklistu-i-pobegao-sa-mesta-nesrece",
@@ -475,20 +475,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "ostali-glasnogovornici-kriminalaca-i-fabrika-politickih-lazi",
-      "title": "Како су самопроглашени борци за правду постали гласноговорници криминалаца и фабрика политичких лажи",
-      "url": "https://www.politika.rs/scc/clanak/773562/kako-su-samoproglaseni-borci-za-pravdu-postali-glasnogovornici-kriminalaca-i-fabrika-politickih-lazi",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T19:26:00+00:00",
-      "time": "19:26",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     },
     {
       "id": "tps-vreme-com-drustvo-hrvatska-vojska-ne-zeli-srpske-duseke-",
@@ -554,20 +540,6 @@
       "datetime": "2026-07-24T16:45:32+00:00",
       "time": "16:45",
       "source": "N1",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "mora-da-plati-vise-od-milion-dolara-sudskih-troskova-qqzqdkk",
-      "title": "Šer mora da plati više od milion dolara sudskih troškova",
-      "url": "https://www.blic.rs/kultura/ser-mora-da-plati-vise-od-milion-dolara-sudskih-troskova/qqzqdkk",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T16:20:00+00:00",
-      "time": "16:20",
-      "source": "Blic",
       "category": "Извршења",
       "summary": "",
       "breaking": false,
@@ -645,20 +617,6 @@
       "priority": 4
     },
     {
-      "id": "na-hronika-10058265-uhapseni-osumnjiceni-smrt-pesaka-pecinci",
-      "title": "POKOSILI MUŠKARCA \"FORDOM\", PA POBEGLI S MESTA NESREĆE Užas u Pećincima: Čovek na licu mesta stradao dok je gurao bicikl, policija uhapsila dvojicu",
-      "url": "https://www.kurir.rs/crna-hronika/10058265/uhapseni-osumnjiceni-smrt-pesaka-pecinci",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T20:14:51+00:00",
-      "time": "20:14",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-kit-plivao-ka-centru-kila-policija-prati-svaki-njegov-korak",
       "title": "Грбави кит пливао ка центру Кила, полиција прати сваки његов корак",
       "url": "https://www.politika.rs/scc/clanak/773568/grbavi-kit-plivao-ka-centru-kila-policija-prati-svaki-njegov-korak",
@@ -694,6 +652,48 @@
       "datetime": "2026-07-24T19:50:00+00:00",
       "time": "19:50",
       "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "hapsen-beogradjanin-u-surdulici-zbog-krijumcarenja-migranata",
+      "title": "BEOGRAĐANIN PRESRETNUT U SURDULICI, PAO ZBOG KRIJUMČARENJA: Policija mu pretresla kombi, evo šta su zatekli unutra",
+      "url": "https://www.kurir.rs/crna-hronika/10058228/uhapsen-beogradjanin-u-surdulici-zbog-krijumcarenja-migranata",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T19:14:43+00:00",
+      "time": "19:14",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-eliti-10-i-svadbi-s-anitom-policija-trazi-pocinioca-c6g0ns1",
+      "title": "\"POLICIJA TRAŽI POČINIOCA\" Luka Vujović o majci, Eliti 10 i svadbi s Anitom: \"Ona i ja IZNAJMLJUJEMO STAN\", evo zašto ne želi da komentariše njenu porodicu (VIDEO)",
+      "url": "https://www.blic.rs/zabava/luka-vujovic-o-majci-eliti-10-i-svadbi-s-anitom-policija-trazi-pocinioca/c6g0ns1",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T18:08:00+00:00",
+      "time": "18:08",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "s-crna-hronika-10058045-kradja-luksuznog-mercedesa-u-surcinu",
+      "title": "NEVIĐENA DRAMA U SURČINU Ostavio ključ u mercedesu, pa doživeo šok! Dok se okrenuo, auto nestao - policija na nogama",
+      "url": "https://www.kurir.rs/crna-hronika/10058045/kradja-luksuznog-mercedesa-u-surcinu",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T15:15:53+00:00",
+      "time": "15:15",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
