@@ -85,20 +85,6 @@
       "priority": 92
     },
     {
-      "id": "en-beogradanin-zbog-krijumcarenja-13-migranata-kod-surdulice",
-      "title": "Ухапшен Београђанин због кријумчарења 13 миграната код Сурдулице",
-      "url": "https://www.politika.rs/scc/clanak/773554/uhapsen-beogradanin-zbog-krijumcarenja-13-migranata-kod-surdulice",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T19:02:00+00:00",
-      "time": "19:02",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "anja-i-leskovca-iznudili-vecu-sumu-novca-i-zlatni-nakit-html",
       "title": "Обманом да су им ћерке повређене, од две жене из Врања и Лесковца изнудили већу суму новца и златни накит",
       "url": "https://www.rts.rs/vesti/hronika/6005572/obmanom-da-su-im-cerke-povredjene-od-dve-zene-iz-vranja-i-leskovca-iznudili-vecu-sumu-novca-i-zlatni-nakit.html",
@@ -337,20 +323,6 @@
       "priority": 70
     },
     {
-      "id": "aradnik-dzefrija-epstajna-preminuo-nema-znakova-nasilja-vest",
-      "title": "Smrt ključnog Epstajnovog saradnika uzburkala javnost: Oglasilo se tužilaštvo",
-      "url": "https://www.b92.net/zivot/aktuelno/253071/saradnik-dzefrija-epstajna-preminuo-nema-znakova-nasilja/vest",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T19:40:00+00:00",
-      "time": "19:40",
-      "source": "B92",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "s-dijalog-licni-stavovi-interpol-smanjio-poverenje-u-srbiju-",
       "title": "Interpol smanjio poverenje u Srbiju",
       "url": "https://www.danas.rs/dijalog/licni-stavovi/interpol-smanjio-poverenje-u-srbiju/",
@@ -477,6 +449,20 @@
       "priority": 26
     },
     {
+      "id": "sorensen-i-kurti-u-pristini-razgovarali-o-povratku-srba-vest",
+      "title": "Sorensen iznenada u Prištini: Povratak Srba u institucije glavna tema razgovora sa Kurtijem",
+      "url": "https://www.euronews.rs/srbija/politika/234509/sorensen-i-kurti-u-pristini-razgovarali-o-povratku-srba/vest",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T21:23:00+00:00",
+      "time": "21:23",
+      "source": "Euronews Serbia",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "lno-234427-vujic-i-mekgrat-o-reformi-pravosuda-u-srbiji-vest",
       "title": "Vujić sa evropskim komesarom Mekgratom o reformi pravosuđa i vladavini prava",
       "url": "https://www.euronews.rs/srbija/aktuelno/234427/vujic-i-mekgrat-o-reformi-pravosuda-u-srbiji/vest",
@@ -499,20 +485,6 @@
       "time": "19:26",
       "source": "Politika",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "ish-news-eps-offers-123-million-for-social-media-monitoring-",
-      "title": "EPS offers €1.23 million for social media monitoring",
-      "url": "https://n1info.rs/english/news/eps-offers-123-million-for-social-media-monitoring/",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T15:24:43+00:00",
-      "time": "15:24",
-      "source": "N1",
-      "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -659,6 +631,20 @@
       "priority": 8
     },
     {
+      "id": "ranjen-mladic-21-u-toku-potraga-za-crvenim-sitroenom-1707gfw",
+      "title": "U TOKU POTRAGA ZA CRVENIM \"SITROENOM\" Opsadno stanje u Rakovici: Napadači pucali u mladića (21), pokrenuta akcija Vihor 3",
+      "url": "https://www.blic.rs/vesti/hronika/pucnjava-u-rakovici-ranjen-mladic-21-u-toku-potraga-za-crvenim-sitroenom/1707gfw",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T21:46:00+00:00",
+      "time": "21:46",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "na-hronika-10058265-uhapseni-osumnjiceni-smrt-pesaka-pecinci",
       "title": "POKOSILI MUŠKARCA \"FORDOM\", PA POBEGLI S MESTA NESREĆE Užas u Pećincima: Čovek na licu mesta stradao dok je gurao bicikl, policija uhapsila dvojicu",
       "url": "https://www.kurir.rs/crna-hronika/10058265/uhapseni-osumnjiceni-smrt-pesaka-pecinci",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-24T19:57:02+00:00",
       "time": "19:57",
       "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "nglesku-vise-od-100-vatrogasaca-bori-se-sa-vatrenom-pecurkom",
+      "title": "Снажна експлозија потресла Енглеску: више од 100 ватрогасаца бори се са ватреном „печурком”",
+      "url": "https://www.politika.rs/scc/clanak/773563/snazna-eksplozija-potresla-englesku-vise-od-100-vatrogasaca-bori-se-sa-vatrenom-pecurkom",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T19:50:00+00:00",
+      "time": "19:50",
+      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
