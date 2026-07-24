@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "ete-preminulo-u-vrticu-u-italiji-jos-cetvoro-hospitalizovano",
+      "title": "TRAGEDIJA U OBDANIŠTU! Dete (1) preminulo u vrtiću, još četvoro mališana hitno hospitalizovano: Tužilaštvo Italije pokrenulo istragu, sumnja se da je OVO uzrok",
+      "url": "https://www.kurir.rs/planeta/10057161/dete-preminulo-u-vrticu-u-italiji-jos-cetvoro-hospitalizovano",
+      "date": "2026-07-23",
+      "datetime": "2026-07-23T16:57:50+00:00",
+      "time": "16:57",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": true,
+      "alert": true,
+      "priority": 166
+    },
+    {
       "id": "-vesti-drustvo-bomba-pronadjena-na-sumarickom-jezeru-vzr6hx5",
       "title": "PRONAĐENA RUČNA BOMBA NA ŠUMARIČKOM JEZERU Policija hitno izašla na teren: Upućen apel građanima",
       "url": "https://www.blic.rs/vesti/drustvo/bomba-pronadjena-na-sumarickom-jezeru/vzr6hx5",
@@ -13,6 +27,20 @@
       "breaking": true,
       "alert": false,
       "priority": 104
+    },
+    {
+      "id": "ustvo-6004936-pronadji-me-nestanak-andjela-dimitrijevic-html",
+      "title": "Затворен систем \"Пронађи ме\"",
+      "url": "https://www.rts.rs/vesti/drustvo/6004936/pronadji-me-nestanak-andjela-dimitrijevic.html",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T02:57:47+00:00",
+      "time": "02:57",
+      "source": "RTS",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "riminolog-otkriva-zasto-je-africka-ruta-raj-za-narko-dilere-",
@@ -141,20 +169,6 @@
       "priority": 94
     },
     {
-      "id": "gora-10056959-akcija-policije-crna-gora-stoj-kokain-uhapseni",
-      "title": "AKCIJA POLICIJE U CRNOJ GORI: Uhapšene četiri osobe, 15 stranaca bez prijavljenog boravka",
-      "url": "https://www.kurir.rs/region/crna-gora/10056959/akcija-policije-crna-gora-stoj-kokain-uhapseni",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T22:12:00+00:00",
-      "time": "22:12",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-n1info-rs-region-severna-makedonija-uhapsen-vozac-pocetnik-",
       "title": "U Severnoj Makedoniji uhapšen vozač početnik, vozio folksvagen 211 kilometara na sat",
       "url": "https://n1info.rs/region/severna-makedonija-uhapsen-vozac-pocetnik/",
@@ -184,7 +198,7 @@
     },
     {
       "id": "pa-uhapsen-u-podgorici-a-evo-zbog-kog-ubistva-robija-u-sapcu",
-      "title": "MAČETOM ISKASAPIO DRUGA IZ DETINJSTVA NASRED ULICE! Vasiljković pobegao iz šabačkog zatvora, pa uhapšen u Podgorici: Evo šta je bio motiv brutalnog ubistva",
+      "title": "MAČETOM ISKASAPIO DRUGA IZ DETINJSTVA NASRED ULICE! Ovo je Vasiljković koji je pobegao iz šabačkog zatvora, pa uhapšen u Podgorici: Evo šta je bio motiv ubistva",
       "url": "https://www.kurir.rs/crna-hronika/10057229/vasiljkovic-pobegao-pa-uhapsen-u-podgorici-a-evo-zbog-kog-ubistva-robija-u-sapcu",
       "date": "2026-07-23",
       "datetime": "2026-07-23T18:43:47+00:00",
@@ -211,13 +225,27 @@
       "priority": 92
     },
     {
-      "id": "zatvora-u-sapcu-pa-planirao-novi-zlocin-u-crnoj-gori-cq75xfn",
-      "title": "UBICA IZ ŠAPCA POBEGAO IZ ZATVORA, PA KRENUO U NOVI ZLOČIN! Izašao na vikend, a onda ilegalno ušao u Crnu Goru: Imao i saučesnika",
-      "url": "https://www.blic.rs/vesti/hronika/srboljub-vasiljkovic-pobegao-iz-zatvora-u-sapcu-pa-planirao-novi-zlocin-u-crnoj-gori/cq75xfn",
+      "id": "-kosarka-10057137-taj-loson-uhapsen-jer-je-ukrao-flasu-vodke",
+      "title": "SKANDAL! BIVŠA NBA ZVEZDA UHAPŠENA ZBOG FLAŠE VODKE! Ukrao piće, pa seo za šank, a onda su mu policajci stavili LISICE NA RUKE!",
+      "url": "https://www.kurir.rs/sport/kosarka/10057137/taj-loson-uhapsen-jer-je-ukrao-flasu-vodke",
       "date": "2026-07-23",
-      "datetime": "2026-07-23T17:04:12+00:00",
-      "time": "17:04",
-      "source": "Blic",
+      "datetime": "2026-07-23T16:25:21+00:00",
+      "time": "16:25",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "w-kurir-rs-planeta-10057017-talacka-kriza-u-banci-u-nemackoj",
+      "title": "TALAČKA KRIZA U BANCI U NEMAČKOJ! Radnik ubijen, napadač uhapšen",
+      "url": "https://www.kurir.rs/planeta/10057017/talacka-kriza-u-banci-u-nemackoj",
+      "date": "2026-07-23",
+      "datetime": "2026-07-23T14:22:46+00:00",
+      "time": "14:22",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -547,6 +575,20 @@
       "priority": 25
     },
     {
+      "id": "kako-provalnici-obelezavaju-stan-3-znaka-da-ste-meta-3yn7270",
+      "title": "Ako na vratima stana vidite OVE ZNAKOVE, imate samo nekoliko sati da reagujete! Ovo je alarm da ste meta lopova",
+      "url": "https://www.blic.rs/vesti/drustvo/evo-kako-provalnici-obelezavaju-stan-3-znaka-da-ste-meta/3yn7270",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T03:01:00+00:00",
+      "time": "03:01",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "-i-organizacija-povezanih-sa-mocnim-meksickim-narko-kartelom",
       "title": "САД санкционисале 50 особа и организација повезаних са моћним мексичким нарко-картелом",
       "url": "https://www.politika.rs/scc/clanak/773255/sad-sankcionisale-50-osoba-i-organizacija-povezanih-sa-mocnim-meksickim-narko-kartelom",
@@ -631,32 +673,18 @@
       "priority": 8
     },
     {
-      "id": "0057056-pretio-stricu-pistoljem-i-drzao-marihuanu-u-dvoristu",
-      "title": "STRICU PRETIO PIŠTOLJEM KOD BANJALUKE: Policija mu u dvorištu pronašla drogu",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10057056/pretio-stricu-pistoljem-i-drzao-marihuanu-u-dvoristu",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T21:43:00+00:00",
-      "time": "21:43",
+      "id": "milan-gurovic-o-menadzeru-koji-ga-je-lagao-u-podkastu-1-na-1",
+      "title": "\"ON JE LAŽOV ZBOG KOGA NISAM OTIŠAO U REAL I NBA! ZBOG TOGA JE DOBIO OTKAZ\" Milan Gurović otvorio dušu: Čovek mi pokazao milion poruka, a ovaj sve PREĆUTAO...",
+      "url": "https://www.kurir.rs/sport/kosarka/10055674/milan-gurovic-o-menadzeru-koji-ga-je-lagao-u-podkastu-1-na-1",
+      "date": "2026-07-22",
+      "datetime": "2026-07-22T09:26:32+00:00",
+      "time": "09:26",
       "source": "Kurir",
-      "category": "Полиција",
+      "category": "Радничка права",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "na-plazi-u-hrvatskoj-fizicki-napad-na-porodicu-zbog-lezaljki",
-      "title": "\"TUKLI SU ME ZBOG LEŽALJKE PRED DETETOM\" Drama na hrvatskom primorju, reagovala i policija",
-      "url": "https://www.kurir.rs/region/hrvatska/10057280/incident-na-plazi-u-hrvatskoj-fizicki-napad-na-porodicu-zbog-lezaljki",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T19:29:38+00:00",
-      "time": "19:29",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
+      "priority": 8
     },
     {
       "id": "s-vesti-beograd-video-oboren-motociklista-na-dedinju-3gc7wyh",
@@ -666,34 +694,6 @@
       "datetime": "2026-07-23T18:37:30+00:00",
       "time": "18:37",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ps-n1info-rs-vesti-grad-beograd-privatno-obezbedjenje-sapic-",
-      "title": "Zašto je Beogradu potrebno privatno obezbeđenje: Šapić kaže da policija ne može ni sebe da obezbedi",
-      "url": "https://n1info.rs/vesti/grad-beograd-privatno-obezbedjenje-sapic/",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T18:15:15+00:00",
-      "time": "18:15",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "rbije-ilegalno-presao-granicu-i-planirao-teza-krivicna-dela-",
-      "title": "Crnogorska policija uhapsila državljanina Srbije:  Ilegalno prešao granicu i planirao teža krivična dela",
-      "url": "https://nova.rs/vesti/hronika/crnogorska-policija-uhapsila-drzavljanina-srbije-ilegalno-presao-granicu-i-planirao-teza-krivicna-dela/",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T17:32:13+00:00",
-      "time": "17:32",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
