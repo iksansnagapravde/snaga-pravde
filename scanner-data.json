@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "ete-preminulo-u-vrticu-u-italiji-jos-cetvoro-hospitalizovano",
-      "title": "TRAGEDIJA U OBDANIŠTU! Dete (1) preminulo u vrtiću, još četvoro mališana hitno hospitalizovano: Tužilaštvo Italije pokrenulo istragu, sumnja se da je OVO uzrok",
-      "url": "https://www.kurir.rs/planeta/10057161/dete-preminulo-u-vrticu-u-italiji-jos-cetvoro-hospitalizovano",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T16:57:50+00:00",
-      "time": "16:57",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 166
-    },
-    {
       "id": "-vesti-drustvo-bomba-pronadjena-na-sumarickom-jezeru-vzr6hx5",
       "title": "PRONAĐENA RUČNA BOMBA NA ŠUMARIČKOM JEZERU Policija hitno izašla na teren: Upućen apel građanima",
       "url": "https://www.blic.rs/vesti/drustvo/bomba-pronadjena-na-sumarickom-jezeru/vzr6hx5",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-23T18:15:15+00:00",
       "time": "18:15",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "rbije-ilegalno-presao-granicu-i-planirao-teza-krivicna-dela-",
+      "title": "Crnogorska policija uhapsila državljanina Srbije:  Ilegalno prešao granicu i planirao teža krivična dela",
+      "url": "https://nova.rs/vesti/hronika/crnogorska-policija-uhapsila-drzavljanina-srbije-ilegalno-presao-granicu-i-planirao-teza-krivicna-dela/",
+      "date": "2026-07-23",
+      "datetime": "2026-07-23T17:32:13+00:00",
+      "time": "17:32",
+      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
