@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "crvenim-sitroenom-pucali-na-nikolu-21-pa-nestali-bez-mrzmngm",
-      "title": "BEOGRADSKA POLICIJA NA NOGAMA, SVI TRAŽE CRVENI \"SITROEN\"! Iz vozila u pokretu pucali na Nikolu (21), pa NESTALI BEZ TRAGA: Mladić ranjen u Rakovici u Urgentnom centru",
-      "url": "https://www.blic.rs/vesti/hronika/beogradska-policija-traga-za-crvenim-sitroenom-pucali-na-nikolu-21-pa-nestali-bez/mrzmngm",
-      "date": "2026-07-25",
-      "datetime": "2026-07-25T09:57:36+00:00",
-      "time": "09:57",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "esti-ekonomija-srbija-centar-hitno-uvesti-socijalne-penzije-",
       "title": "Srbija centar: Hitno uvesti socijalne penzije",
       "url": "https://www.danas.rs/vesti/ekonomija/srbija-centar-hitno-uvesti-socijalne-penzije/",
@@ -111,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "ara-uhapsen-zbog-400-kilograma-duvana-bez-dokumentacije-vest",
+      "title": "Policijska akcija kod Novog Pazara: Uhapšen zbog 400 kilograma duvana bez dokumentacije",
+      "url": "https://www.b92.net/lokal/novi-pazar/hronika/253256/policijska-akcija-kod-novog-pazara-uhapsen-zbog-400-kilograma-duvana-bez-dokumentacije/vest",
+      "date": "2026-07-25",
+      "datetime": "2026-07-25T13:45:00+00:00",
+      "time": "13:45",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "u-povredjeni-i-krvavi-seli-u-dzip-pa-krenuli-da-beze-frcmjx0",
@@ -267,34 +267,6 @@
       "priority": 70
     },
     {
-      "id": "snimak-ubistva-psa-monstrum-da-zavrsi-u-istim-mukama-n76bvgl",
-      "title": "\"MONSTRUM DA ZAVRŠI U ISTIM MUKAMA\" Luni Đogani poslali snimak ubistva psa u Ulcinju: Policija uhapsila ženu, na teret joj stavljaju TRI KRIVIČNA DELA",
-      "url": "https://www.blic.rs/zabava/luni-djogani-stigao-snimak-ubistva-psa-monstrum-da-zavrsi-u-istim-mukama/n76bvgl",
-      "date": "2026-07-25",
-      "datetime": "2026-07-25T09:24:04+00:00",
-      "time": "09:24",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-bombom-na-kucu-srpskog-biznismena-zorana-matijevica-9d582c4",
-      "title": "UHAPŠEN OSUMNJIČENI ZA NAPAD BOMBOM NA KUĆU SRPSKOG BIZNISMENA! Mladić iz Srbije (21) aktivirao eksplozivnu napravu kod vile Matijevića u Herceg Novom: Evo kolika kazna mu preti",
-      "url": "https://www.blic.rs/vesti/hronika/mladic-21-uhapsen-zbog-napada-bombom-na-kucu-srpskog-biznismena-zorana-matijevica/9d582c4",
-      "date": "2026-07-25",
-      "datetime": "2026-07-25T08:44:52+00:00",
-      "time": "08:44",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ka-mladic-iz-srbije-uhapsen-u-crnoj-gori-zbog-bacanja-bombe-",
       "title": "Mladić (21) iz Srbije uhapšen u Crnoj Gori: Bacio ručnu bombu na vilu srpskog privrednika Matijevića u Herceg Novom",
       "url": "https://nova.rs/vesti/hronika/mladic-iz-srbije-uhapsen-u-crnoj-gori-zbog-bacanja-bombe/",
@@ -323,40 +295,12 @@
       "priority": 70
     },
     {
-      "id": "ti-mup-uhapsene-dve-osobe-pecinc-stradao-sezdesetogodisnjak-",
-      "title": "Uhapšeni vozač i suvozač zbog sumnje da su kolima udarili muškarca koji je preminuo",
-      "url": "https://n1info.rs/vesti/mup-uhapsene-dve-osobe-pecinc-stradao-sezdesetogodisnjak/",
-      "date": "2026-07-24",
-      "datetime": "2026-07-24T20:17:09+00:00",
-      "time": "20:17",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ija-sumnjici-drzavljanina-severne-makedonije-za-prevaru-vest",
       "title": "Uhapšen državljanin Severne Makedonije zbog sumnje da je izvršio krivično delo prevara",
       "url": "https://www.euronews.rs/srbija/aktuelno/234441/policija-sumnjici-drzavljanina-severne-makedonije-za-prevaru/vest",
       "date": "2026-07-24",
       "datetime": "2026-07-24T14:14:00+00:00",
       "time": "14:14",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "o-234244-nis-uhapsen-boranin-osumnjicen-za-cetiri-krade-vest",
-      "title": "Niška policija uhapsila osumnjičenog za četiri krađe",
-      "url": "https://www.euronews.rs/srbija/aktuelno/234244/nis-uhapsen-boranin-osumnjicen-za-cetiri-krade/vest",
-      "date": "2026-07-23",
-      "datetime": "2026-07-23T12:30:00+00:00",
-      "time": "12:30",
       "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
@@ -377,20 +321,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "lastvo-mora-da-prosiri-istragu-na-clanove-revizione-komisije",
-      "title": "Гајић: Тужилаштво мора да прошири истрагу на чланове Ревизионе комисије",
-      "url": "https://www.politika.rs/scc/clanak/773689/gajic-tuzilastvo-mora-da-prosiri-istragu-na-clanove-revizione-komisije",
-      "date": "2026-07-25",
-      "datetime": "2026-07-25T11:33:00+00:00",
-      "time": "11:33",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "gnuta-optuznica-za-ubistvo-na-senjaku-milic-optuzen-zasebno-",
@@ -449,18 +379,18 @@
       "priority": 28
     },
     {
-      "id": "la-skriveni-bunker-u-kamionu-a-u-njemu-400-kg-duvana-8t6gvvp",
-      "title": "(FOTO) Policija otkrila SKRIVENI BUNKER u kamionu, a u njemu - 400 kg duvana! Šteta budžetu Srbije oko 4.400.000 dinara",
-      "url": "https://www.blic.rs/vesti/hronika/policija-otkrila-skriveni-bunker-u-kamionu-a-u-njemu-400-kg-duvana/8t6gvvp",
+      "id": "https-www-danas-rs-svet-karim-kan-biografija-tuzilac-",
+      "title": "Glavni tužilac Međunarodnog krivičnog suda, smenjen i osumnjičen za seksualno uznemiravanje: Ko je Karim Kan?",
+      "url": "https://www.danas.rs/svet/karim-kan-biografija-tuzilac/",
       "date": "2026-07-25",
-      "datetime": "2026-07-25T08:56:50+00:00",
-      "time": "08:56",
-      "source": "Blic",
-      "category": "Криминал",
+      "datetime": "2026-07-25T12:14:09+00:00",
+      "time": "12:14",
+      "source": "Danas",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 28
+      "priority": 26
     },
     {
       "id": "gao-povredama-zadobijenim-u-lancanom-sudaru-u-bugarskoj-html",
@@ -533,20 +463,6 @@
       "priority": 24
     },
     {
-      "id": "ska-preispituje-mogucnost-upotrebe-napustenih-vojnih-bunkera",
-      "title": "Швајцарска војска преиспитује могућност употребе напуштених војних бункера",
-      "url": "https://www.politika.rs/scc/clanak/773681/svajcarska-vojska-preispituje-mogucnost-upotrebe-napustenih-vojnih-bunkera",
-      "date": "2026-07-25",
-      "datetime": "2026-07-25T11:02:00+00:00",
-      "time": "11:02",
-      "source": "Politika",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "-rs-ekonomija-gos-siromastvo-nejednakost-su-politicki-izbor-",
       "title": "Siromaštvo i nejednakost su izbor političara",
       "url": "https://radar.nova.rs/ekonomija/gos-siromastvo-nejednakost-su-politicki-izbor/",
@@ -559,6 +475,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "adranu-nije-mit-austrijanci-masovno-otkazuju-smestaj-llth10w",
+      "title": "Julska rupa na Jadranu nije mit:  Austrijanci i Nemci masovno otkazuju, vlasnici apartmana snižavaju cene",
+      "url": "https://www.blic.rs/biznis/moj-novac/julska-rupa-na-jadranu-nije-mit-austrijanci-masovno-otkazuju-smestaj/llth10w",
+      "date": "2026-07-25",
+      "datetime": "2026-07-25T12:55:52+00:00",
+      "time": "12:55",
+      "source": "Blic",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "portovi-10058432-nfl-legenda-toni-romo-privedena-u-milvokiju",
@@ -645,6 +575,20 @@
       "priority": 8
     },
     {
+      "id": "ila-osumnjicenog-da-je-upravljajuci-autom-ubio-biciklitistu-",
+      "title": "Policija u Pećincima uhapsila osumnjičenog da je upravljajući autom ubio biciklistu",
+      "url": "https://www.danas.rs/vesti/drustvo/policija-u-pecincima-uhapsila-osumnjicenog-da-je-upravljajuci-autom-ubio-biciklitistu/",
+      "date": "2026-07-25",
+      "datetime": "2026-07-25T13:57:25+00:00",
+      "time": "13:57",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ima-upali-u-kucu-zbog-pljacke-nisu-imali-pojma-da-ih-k12y159",
       "title": "(VIDEO) POLICIJA TRAGA ZA OVIM LJUDIMA! Upali u kuću zbog pljačke, nisu imali pojma da ih kamera snima: Žena upozorila muškarca, onda su se DALI U BEG",
       "url": "https://www.blic.rs/vesti/hronika/policija-traga-za-ovim-ljudima-upali-u-kucu-zbog-pljacke-nisu-imali-pojma-da-ih/k12y159",
@@ -694,6 +638,62 @@
       "datetime": "2026-07-25T09:05:06+00:00",
       "time": "09:05",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "in-srbije-odgovoran-za-bombaski-napad-4-jula-u-herceg-novom-",
+      "title": "Crnogorska policija: Državljanin Srbije odgovoran za bombaški napad 4. jula u Herceg Novom",
+      "url": "https://n1info.rs/vesti/crnogorska-policija-drzavljanin-srbije-odgovoran-za-bombaski-napad-4-jula-u-herceg-novom/",
+      "date": "2026-07-25",
+      "datetime": "2026-07-25T08:38:51+00:00",
+      "time": "08:38",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "a-duvana-bez-dokumentacije-uhapsen-muskarac-kod-novog-pazara",
+      "title": "ZAPLENJENO 400 KILOGRAMA DUVANA! Policija otkrila skriveni bunker u kamionu na putu Raška–Novi Pazar (FOTO)",
+      "url": "https://www.kurir.rs/crna-hronika/10058420/u-kamionu-pronasli-400-kilograma-duvana-bez-dokumentacije-uhapsen-muskarac-kod-novog-pazara",
+      "date": "2026-07-25",
+      "datetime": "2026-07-25T08:34:28+00:00",
+      "time": "08:34",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "o-234436-lazni-doktor-prevario-zenu-iz-vranja-telefonom-vest",
+      "title": "\"Ćerka vam je teško povređena\": Posle telefonskog poziva lažnog doktora žena iz Vranja ostala bez novca",
+      "url": "https://www.euronews.rs/srbija/aktuelno/234436/lazni-doktor-prevario-zenu-iz-vranja-telefonom/vest",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T14:30:00+00:00",
+      "time": "14:30",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "naevropa-org-a-kosovo-srbija-sudije-razresenje-33812042-html",
+      "title": "Kurti i Haxhiu traže od Sudskog saveta da zahteva razrešenje srpskih sudija koje su podnele ostavke",
+      "url": "https://www.slobodnaevropa.org/a/kosovo-srbija-sudije-razresenje-/33812042.html",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T12:34:47+00:00",
+      "time": "12:34",
+      "source": "RSE Balkan",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
