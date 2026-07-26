@@ -15,34 +15,6 @@
       "priority": 124
     },
     {
-      "id": "-nadbubrezne-zlezde-i-sakupljanju-novca-za-lecenje-u-americi",
-      "title": "Mala Darija (4) se po drugi put izborila s opakim tumorom, ali joj je sada HITNO POTREBNA NAŠA POMOĆ: Samo jedan SMS deli je od pobede i odlaska u Ameriku!",
-      "url": "https://www.kurir.rs/vesti/drustvo/10059485/pomozimo-dariji-u-borbi-protiv-tumora-nadbubrezne-zlezde-i-sakupljanju-novca-za-lecenje-u-americi",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T15:39:52+00:00",
-      "time": "15:39",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "udruzenje-za-zastitu-zivotinja-o-optuzbama-protiv-kristijana",
-      "title": "\"OVO ZAHTEVA HITNU ISTRAGU!\" Jezivi snimci Golubovića kako muči i ubija čivavu podigli Srbiju na noge: Hitno se oglasilo Udruženje za zaštitu životinja",
-      "url": "https://www.kurir.rs/stars/10059483/oglasilo-se-udruzenje-za-zastitu-zivotinja-o-optuzbama-protiv-kristijana",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T15:26:05+00:00",
-      "time": "15:26",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "com-kultura-lazar-jovanov-nasledio-ljubisu-ristica-u-kpgt-u-",
       "title": "Lazar Jovanov nasledio Ljubišu Ristića u KPGT-u",
       "url": "https://vreme.com/kultura/lazar-jovanov-nasledio-ljubisu-ristica-u-kpgt-u/",
@@ -97,6 +69,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "rceg-novog-uhapsen-zbog-uznemiravanja-maloletnice-u-autobusu",
+      "title": "UHAPŠEN MUŠKARAC IZ HERCEG NOVOG ZBOG SUMNJE NA UZNEMIRAVANJE MALOLETNICE: Državljanka Rusije prijavila slučaj, određeno mu zadržavanje do 72 sata",
+      "url": "https://www.kurir.rs/region/crna-gora/10059542/muskarac-iz-herceg-novog-uhapsen-zbog-uznemiravanja-maloletnice-u-autobusu",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "4753-mup-uhapsen-zbog-pretnji-smrcu-vucicu-i-vucicevicu-vest",
@@ -519,13 +505,27 @@
       "priority": 8
     },
     {
-      "id": "n-funkcioner-erdoganove-stranke-i-dva-clana-njegove-porodice",
-      "title": "На гробљу убијен функционер Ердоганове странке и два члана његове породице",
-      "url": "https://www.politika.rs/scc/clanak/774015/na-groblju-ubijen-funkcioner-erdoganove-stranke-i-dva-clana-njegove-porodice",
+      "id": "orki-ispaljivala-gumene-metke-na-demonstrante-protiv-turista",
+      "title": "Полиција на Палма де Мајорки испаљивала гумене метке на демонстранте против туриста",
+      "url": "https://www.politika.rs/scc/clanak/774055/policija-na-palma-de-majorki-ispaljivala-gumene-metke-na-demonstrante-protiv-turista",
       "date": "2026-07-26",
-      "datetime": "2026-07-26T19:50:00+00:00",
-      "time": "19:50",
+      "datetime": "2026-07-26T22:52:00+00:00",
+      "time": "22:52",
       "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-bosna-i-hercegovina-10059181-bosanac-kradja-bakar-francuska",
+      "title": "BOSANAC PRED SUDOM ZBOG SPEKTAKULARNE PLJAČKE U FRANCUSKOJ: Kada ga je policija zaustavila uradio je nešto BIZARNO, odmah su ga uhapsili",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10059181/bosanac-kradja-bakar-francuska",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
