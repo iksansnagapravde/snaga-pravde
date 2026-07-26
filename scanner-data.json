@@ -15,14 +15,14 @@
       "priority": 124
     },
     {
-      "id": "-sutra-vanredna-sednica-skupstine-o-nepoverenju-vladi-srbije",
-      "title": "Сутра ванредна седница Скупштине о неповерењу Влади Србије",
-      "url": "https://www.politika.rs/scc/clanak/773935/sutra-vanredna-sednica-skupstine-o-nepoverenju-vladi-srbije",
+      "id": "com-kultura-lazar-jovanov-nasledio-ljubisu-ristica-u-kpgt-u-",
+      "title": "Lazar Jovanov nasledio Ljubišu Ristića u KPGT-u",
+      "url": "https://vreme.com/kultura/lazar-jovanov-nasledio-ljubisu-ristica-u-kpgt-u/",
       "date": "2026-07-26",
-      "datetime": "2026-07-26T13:47:00+00:00",
-      "time": "13:47",
-      "source": "Politika",
-      "category": "Права деце",
+      "datetime": "2026-07-26T15:14:31+00:00",
+      "time": "15:14",
+      "source": "Vreme",
+      "category": "Људска права",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -55,20 +55,6 @@
       "breaking": false,
       "alert": true,
       "priority": 94
-    },
-    {
-      "id": "rs-crna-hronika-10059151-bivsi-zet-joj-zapalio-kucu-u-ripnju",
-      "title": "BIVŠI ZET JOJ ZAPALIO KUĆU, JEDVA SE SPASILA: Uhapšen muškarac u Ripnju!",
-      "url": "https://www.kurir.rs/crna-hronika/10059151/bivsi-zet-joj-zapalio-kucu-u-ripnju",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T09:18:19+00:00",
-      "time": "09:18",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
     },
     {
       "id": "esti-svet-6006400-nemacka-automobil-uleteo-u-masu-ljudi-html",
@@ -141,6 +127,20 @@
       "priority": 90
     },
     {
+      "id": "ista-iz-berlina-hteo-da-se-pridruzi-islamskoj-drzavi-56x95ed",
+      "title": "ALARMANTNA SAZNANJA O TERORISTI (21) IZ BERLINA Policija ga \"držala na oku\", bio u procesu deradikalizacije: Hteo da se pridruži Islamskoj državi, nedavno PUŠTEN IZ ZATVORA",
+      "url": "https://www.blic.rs/vesti/svet/ko-je-abdul-b-terorista-iz-berlina-hteo-da-se-pridruzi-islamskoj-drzavi/56x95ed",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T15:25:57+00:00",
+      "time": "15:25",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -153,6 +153,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "lji-ubistva-klikovca-na-optuzenickoj-klupi-muz-zena-i-dever-",
+      "title": "Hapšenje fatalne Almire ponovo otvorilo slučaj likvidacije kavčanina u Zeti: Otkriveni detalji ubistva Klikovca, na optuženičkoj klupi muž, žena i dever",
+      "url": "https://nova.rs/vesti/hronika/hapsenje-fatalne-almire-ponovo-otvorilo-slucaj-likvidacije-kavcanina-u-zeti-otkriveni-detalji-ubistva-klikovca-na-optuzenickoj-klupi-muz-zena-i-dever/",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T15:27:06+00:00",
+      "time": "15:27",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "o-moze-da-ugasi-istragu-o-upotrebi-sonicnog-oruzja-15-marta-",
+      "title": "Da li VJT gasi istragu o incidentu od 15. marta i oštećene pretvara u osumnjičene? Šabić upozorava na novi obrt u slučaju \"zvučnog topa\"",
+      "url": "https://nova.rs/vesti/hronika/da-li-vise-javno-tuzilastvo-moze-da-ugasi-istragu-o-upotrebi-sonicnog-oruzja-15-marta/",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T15:19:23+00:00",
+      "time": "15:19",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "ic-nagradjen-slobodom-iako-je-tesko-povredio-devojku-4ebvthl",
@@ -309,20 +337,6 @@
       "priority": 28
     },
     {
-      "id": "vseg-glavnog-tuzioca-medunarodnog-krivicnog-suda-karima-kana",
-      "title": "Москва тражи изручење бившег главног тужиоца Међународног кривичног суда Карима Кана",
-      "url": "https://www.politika.rs/scc/clanak/773938/moskva-trazi-izrucenje-bivseg-glavnog-tuzioca-medunarodnog-krivicnog-suda-karima-kana",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T13:51:00+00:00",
-      "time": "13:51",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "rs-crna-hronika-10059177-zoran-jotic-jotka-ponovo-na-slobodi",
       "title": "JOTKA PONOVO NA SLOBODI! Nekadašnji vođa opakog klana hapšen po izlasku iz zatvora",
       "url": "https://www.kurir.rs/crna-hronika/10059177/zoran-jotic-jotka-ponovo-na-slobodi",
@@ -335,34 +349,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "https-www-danas-rs-vesti-politika-vucic-tv-prva-porodica-",
-      "title": "Vučić za TV Prva: Sa Andrejem se čujem pet do sedam puta dnevno",
-      "url": "https://www.danas.rs/vesti/politika/vucic-tv-prva-porodica/",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T07:56:01+00:00",
-      "time": "07:56",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "ja-maric-uziva-na-havajima-nakon-sto-je-oslobodila-nasilnike",
-      "title": "Медији: Судија Ксенија Марић ужива на Хавајима након што је ослободила насилнике",
-      "url": "https://www.politika.rs/scc/clanak/773933/mediji-sudija-ksenija-maric-uziva-na-havajima-nakon-sto-je-oslobodila-nasilnike",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T13:20:00+00:00",
-      "time": "13:20",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     },
     {
       "id": "ika-234532-vujic-o-novom-zakonu-o-pravosudnoj-akademiji-vest",
@@ -393,6 +379,20 @@
       "priority": 25
     },
     {
+      "id": "fliksu-elize-otkriva-mracnu-istinu-o-zlocinu-koji-je-ccks9q1",
+      "title": "Najkontroverzniji slučaj iz crne hronike stigao na Netfliks: Psihološki triler o ljubavi, izdaji i zločinu koji je šokirao Brazil",
+      "url": "https://www.blic.rs/kultura/novi-psiholoski-triler-na-netfliksu-elize-otkriva-mracnu-istinu-o-zlocinu-koji-je/ccks9q1",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T14:45:00+00:00",
+      "time": "14:45",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "-rs-ekonomija-gos-siromastvo-nejednakost-su-politicki-izbor-",
       "title": "Siromaštvo i nejednakost su izbor političara",
       "url": "https://radar.nova.rs/ekonomija/gos-siromastvo-nejednakost-su-politicki-izbor/",
@@ -405,20 +405,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "e-dva-javna-poziva-za-kredite-u-iznosu-od-50-miliona-km-vest",
-      "title": "Federacija Bosne i Hercegovine se zadužuje za dodatnih 100 miliona KM",
-      "url": "https://www.b92.net/biz/region/vesti/253466/ministarstvo-finansija-federacije-bosne-i-hercegovine-objavilo-je-dva-javna-poziva-za-kredite-u-iznosu-od-50-miliona-km/vest",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T13:58:00+00:00",
-      "time": "13:58",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     },
     {
       "id": "vetski-rekord-ovo-je-najduzi-tunel-za-automobile-na-planeti-",
@@ -491,6 +477,34 @@
       "priority": 8
     },
     {
+      "id": "on-sto-je-kosovska-policija-kontrolisala-pravoslavne-55smkfr",
+      "title": "\"PRETRESALI SU MAJKE SA BEBAMA U KOLICIMA, ŽENE I MLADIĆE\" Oglasio se Petar Petković nakon što je kosovska policija kontrolisala pravoslavne vernike: \"Jedinstvo i vera su jači od svakog terora\"",
+      "url": "https://www.blic.rs/vesti/politika/oglasio-se-petar-petkovic-nakon-sto-je-kosovska-policija-kontrolisala-pravoslavne/55smkfr",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T14:32:35+00:00",
+      "time": "14:32",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-ponovi-gazimestan-policija-pretresala-kolica-sa-bebama-vest",
+      "title": "Petković: Kurti želi da se ponovi Gazimestan, policija pretresala kolica sa bebama",
+      "url": "https://www.euronews.rs/srbija/politika/234712/petkovic-kurti-zeli-da-se-ponovi-gazimestan-policija-pretresala-kolica-sa-bebama/vest",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T14:26:00+00:00",
+      "time": "14:26",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "-pucano-na-kucu-policajca-u-podgorici-traga-se-za-napadacem-",
       "title": "Pucano na kuću policajca u Podgorici, traga se za napadačem",
       "url": "https://n1info.rs/region/pucano-na-kucu-policajca-u-podgorici-traga-se-za-napadacem/",
@@ -540,20 +554,6 @@
       "datetime": "2026-07-26T13:33:28+00:00",
       "time": "13:33",
       "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "stan-oduzet-telefon-tereti-se-za-ugrozavanje-sigurnosti-vest",
-      "title": "Policija privela blokadera iz Loznice; Pretresen stan, oduzet telefon, tereti se za ugrožavanje sigurnosti",
-      "url": "https://www.b92.net/info/politika/253462/policija-privela-blokadera-iz-loznice-pretresen-stan-oduzet-telefon-tereti-se-za-ugrozavanje-sigurnosti/vest",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T13:05:00+00:00",
-      "time": "13:05",
-      "source": "B92",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -687,13 +687,13 @@
       "priority": 4
     },
     {
-      "id": "u-masu-gej-parada-berlin-jedna-osoba-poginula-15-povredjeno-",
-      "title": "Vozilo uletelo u masu na Prajdu u Berlinu: Jedna osoba poginula, 16 povređeno - identifikovan osumnjičeni",
-      "url": "https://n1info.rs/svet/vozilo-uletelo-u-masu-gej-parada-berlin-jedna-osoba-poginula-15-povredjeno/",
-      "date": "2026-07-26",
-      "datetime": "2026-07-26T05:54:12+00:00",
-      "time": "05:54",
-      "source": "N1",
+      "id": "naevropa-org-a-kosovo-srbija-sudije-razresenje-33812042-html",
+      "title": "Kurti i Haxhiu traže od Sudskog saveta da zahteva razrešenje srpskih sudija koje su podnele ostavke",
+      "url": "https://www.slobodnaevropa.org/a/kosovo-srbija-sudije-razresenje-/33812042.html",
+      "date": "2026-07-24",
+      "datetime": "2026-07-24T12:34:47+00:00",
+      "time": "12:34",
+      "source": "RSE Balkan",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
