@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 2800000.0,
+    "lowest": 7202.0,
+    "difference": 2792798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100659965,
+    "file": "documents/100659965_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 2400000.0,
+    "lowest": 7202.0,
+    "difference": 2392798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 7202.0,
+    "difference": 2992798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 2793854.42,
     "lowest": 7202.0,
     "difference": 2786652.42,
@@ -20,17 +53,6 @@
     "rejection_reasons": [],
     "id": 111816022,
     "file": "documents/111816022_Odluka o dodeli ugovora 27.7.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 13057500.0,
-    "lowest": 7202.0,
-    "difference": 13050298.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Odluka o dodeli ugovora JN 14-26 Benzin i nafta.pdf"
   },
   {
     "winner": null,
@@ -75,38 +97,5 @@
     "rejection_reasons": [],
     "id": 111181766,
     "file": "documents/111181766_Odluka o dodeli ugovora 0014 26..pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 48000000.0,
-    "lowest": 7202.0,
-    "difference": 47992798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100139699,
-    "file": "documents/100139699_Odluka o dodeli ugovora 0038 26..pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 91666666.67,
-    "lowest": 7202.0,
-    "difference": 91659464.67,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103312371,
-    "file": "documents/103312371_Odluka o dodeli ugovora, jn 0036 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 11324045.0,
-    "lowest": 4201.0,
-    "difference": 11319844.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102008321,
-    "file": "documents/102008321_Odluka o dodeli ugovora 34R26.pdf"
   }
 ]
