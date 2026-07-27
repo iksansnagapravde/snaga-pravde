@@ -141,20 +141,6 @@
       "priority": 92
     },
     {
-      "id": "karac-zbog-nasilja-u-porodici-i-nedozvoljenog-drzanja-oruzja",
-      "title": "У Панчеву ухапшен мушкарац због насиља у породици и недозвољеног држања оружја",
-      "url": "https://www.politika.rs/scc/clanak/774290/u-pancevu-uhapsen-muskarac-zbog-nasilja-u-porodici-i-nedozvoljenog-drzanja-oruzja",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T19:03:00+00:00",
-      "time": "19:03",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "mup-u-zajecaru-uhapseno-troje-zbog-falsifikovanja-novca-vest",
       "title": "Na Vrškoj Čuki zaplenjeno više od 60.000 falsifikovanih funti, uhapšeno troje stranaca",
       "url": "https://www.euronews.rs/srbija/drustvo/234840/mup-u-zajecaru-uhapseno-troje-zbog-falsifikovanja-novca/vest",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "-rs-ekonomija-gos-siromastvo-nejednakost-su-politicki-izbor-",
+      "title": "Siromaštvo i nejednakost su izbor političara",
+      "url": "https://radar.nova.rs/ekonomija/gos-siromastvo-nejednakost-su-politicki-izbor/",
+      "date": "2026-07-20",
+      "datetime": "2026-07-20T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Социјална угроженост",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
     }
   ],
   "all_sources": [
