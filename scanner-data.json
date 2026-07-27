@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "kalo-se-da-ima-diplomatski-pasos-oglasilo-se-i-ministarstvo-",
-      "title": "Ko je Srbin, uhapšen sa kokainom vrednim skoro 400 miliona dolara u Liberiji? Govorkalo se da ima diplomatski pasoš, oglasilo se i Ministarstvo",
-      "url": "https://nova.rs/vesti/hronika/ko-je-srbin-uhapsen-sa-kokainom-vrednim-skoro-400-miliona-dolara-u-liberiji-govorkalo-se-da-ima-diplomatski-pasos-oglasilo-se-i-ministarstvo/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T13:48:41+00:00",
-      "time": "13:48",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "e-zali-da-policija-koci-istrage-i-ne-radi-nista-tim-povodom-",
       "title": "TOK se žali da policija koči istrage – i ne radi ništa tim povodom",
       "url": "https://www.krik.rs/tok-se-zali-da-policija-koci-istrage-i-ne-radi-nista-tim-povodom/",
@@ -55,6 +41,34 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "pretio-zeni-i-cerkama-pistoljem-pa-vredjao-policajca-rqt2znd",
+      "title": "PRETIO PIŠTOLJEM ŽENI I MALOLETNIM ĆERKAMA! Užas u Pančevu: Policija pronašla još oružja, vređao i policijskog službenika",
+      "url": "https://www.blic.rs/vesti/hronika/muskarac-u-pancevu-pretio-zeni-i-cerkama-pistoljem-pa-vredjao-policajca/rqt2znd",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T19:12:19+00:00",
+      "time": "19:12",
+      "source": "Blic",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "karac-zbog-nasilja-u-porodici-i-nedozvoljenog-drzanja-oruzja",
+      "title": "У Панчеву ухапшен мушкарац због насиља у породици и недозвољеног држања оружја",
+      "url": "https://www.politika.rs/scc/clanak/774290/u-pancevu-uhapsen-muskarac-zbog-nasilja-u-porodici-i-nedozvoljenog-drzanja-oruzja",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T19:03:00+00:00",
+      "time": "19:03",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "mup-u-zajecaru-uhapseno-troje-zbog-falsifikovanja-novca-vest",
@@ -183,18 +197,18 @@
       "priority": 78
     },
     {
-      "id": "ika-tuzilastvo-trazi-pritvor-za-miroslava-filipovica-rhlnk00",
-      "title": "Tužilaštvo traži pritvor za Miroslava Filipovića: Uhapšen zbog pretnji Draganu J. Vučićeviću",
-      "url": "https://www.blic.rs/vesti/hronika/tuzilastvo-trazi-pritvor-za-miroslava-filipovica/rhlnk00",
+      "id": "-pretio-porodici-pistoljem-uhapsen-muskarac-kod-panceva-vest",
+      "title": "Pištoljem pretio supruzi i ćerkama, među kojima su dve maloletne: Uhapšen osumnjičeni za teško nasilje u Pančevu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/234922/pretio-porodici-pistoljem-uhapsen-muskarac-kod-panceva/vest",
       "date": "2026-07-27",
-      "datetime": "2026-07-27T14:29:38+00:00",
-      "time": "14:29",
-      "source": "Blic",
-      "category": "Тужилаштво",
+      "datetime": "2026-07-27T18:28:00+00:00",
+      "time": "18:28",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
     },
     {
       "id": "hapsen-drzavljanim-severne-makedonije-osumnjicen-za-prevare-",
@@ -237,6 +251,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "djao-policijskog-sluzbenika-odredjeno-mu-zadrzavanje-do-48h-",
+      "title": "Pretio pištoljem supruzi i ćerkama, prilikom hapšenja vređao policijskog službenika: Određeno mu zadržavanje do 48h",
+      "url": "https://n1info.rs/vesti/pretio-pistoljem-supruzi-i-cerkama-prilikom-hapsenja-vredjao-policijskog-sluzbenika-odredjeno-mu-zadrzavanje-do-48h/",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T18:15:23+00:00",
+      "time": "18:15",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "-za-tuzilastvo-koje-nije-trazilo-pritvor-za-tosketovog-sina-",
+      "title": "\"Driftovao\" 200 na sat kod Ušća i povredio devojku: Ovo su dva pitanja za tužilaštvo koje nije tražilo pritvor za Tošketovog sina",
+      "url": "https://nova.rs/vesti/hronika/driftovao-200-na-sat-kod-usca-i-povredio-devojku-ovo-su-dva-pitanja-za-tuzilastvo-koje-nije-trazilo-pritvor-za-tosketovog-sina/",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T18:02:48+00:00",
+      "time": "18:02",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "r-osumnjicenom-za-pretnje-predsedniku-srbije-preko-fejsbuka-",
@@ -351,34 +393,6 @@
       "priority": 66
     },
     {
-      "id": "o-odgovara-vjt-u-ne-trazi-se-pritvor-kada-okrivljeni-prizna-",
-      "title": "Treće tužilaštvo odgovara VJT-u: Ne traži se pritvor kada okrivljeni prizna",
-      "url": "https://n1info.rs/vesti/trece-tuzilastvo-odgovara-vjt-u-ne-trazi-se-pritvor-kada-okrivljeni-prizna/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T13:40:35+00:00",
-      "time": "13:40",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "e-koji-su-pretili-vucicu-i-vucicevicu-na-drustvenim-mrezama-",
-      "title": "Tužilaštvo predložilo pritvor za muškarce koji su pretili Vučiću i Vučićeviću na društvenim mrežama",
-      "url": "https://www.danas.rs/vesti/drustvo/tuzilastvo-predlozilo-pritvor-za-muskarce-koji-su-pretili-vucicu-i-vucicevicu-na-drustvenim-mrezama/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T13:18:39+00:00",
-      "time": "13:18",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "4807-zajecar-nalozio-obdukciju-tela-pronadenih-kod-bora-vest",
       "title": "Tužilaštvo naložilo obdukciju tela muškarca i žene pronađenih u selu kod Bora",
       "url": "https://www.euronews.rs/srbija/drustvo/234807/zajecar-nalozio-obdukciju-tela-pronadenih-kod-bora/vest",
@@ -433,6 +447,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "avio-prekrsaj-emitujuci-titl-sa-psovkom-gordona-remzija-vest",
+      "title": "Propust koji je šokirao gledaoce: Zbog psovke Gordona Remzija prekršili pravila emitovanja",
+      "url": "https://www.b92.net/zivot/aktuelno/253681/ofkom-kanal-itv-napravio-prekrsaj-emitujuci-titl-sa-psovkom-gordona-remzija/vest",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T18:53:00+00:00",
+      "time": "18:53",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "omija-eps-tender-pracenje-interneta-reputacione-krize-afere-",
@@ -531,6 +559,34 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "m-faraon-kristijan-golubovic-kurir-pink-kriminal-pedofilija-",
+      "title": "REM pred novim ispitom: Hoće li reagovati na promociju kriminala i pedofilije na televizijama sa nacionalnom pokrivenošću?",
+      "url": "https://www.danas.rs/vesti/drustvo/rem-faraon-kristijan-golubovic-kurir-pink-kriminal-pedofilija/",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T18:22:48+00:00",
+      "time": "18:22",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "en-pritvor-osumnjicenom-za-pretnje-smrcu-predsedniku-vucicu-",
+      "title": "Određen pritvor osumnjičenom za pretnje smrću predsedniku Vučiću",
+      "url": "https://n1info.rs/vesti/odredjen-pritvor-osumnjicenom-za-pretnje-smrcu-predsedniku-vucicu/",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T17:57:32+00:00",
+      "time": "17:57",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "icenom-za-pretnje-smrcu-predsedniku-drzave-odredjen-pritvor-",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "-rs-ekonomija-gos-siromastvo-nejednakost-su-politicki-izbor-",
-      "title": "Siromaštvo i nejednakost su izbor političara",
-      "url": "https://radar.nova.rs/ekonomija/gos-siromastvo-nejednakost-su-politicki-izbor/",
-      "date": "2026-07-20",
-      "datetime": "2026-07-20T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Социјална угроженост",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 22
-    },
-    {
-      "id": "iko-sati-privukla-vise-od-21-milion-pregleda-na-mrezama-vest",
-      "title": "Filmski skandal potresa Holivud; &quot;Odiseja&quot; Kristofera Nolana završila na društvenim mrežama",
-      "url": "https://www.b92.net/kultura/filmtv/253801/piratska-kopija-nolanove-odiseje-za-nekoliko-sati-privukla-vise-od-21-milion-pregleda-na-mrezama/vest",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T17:00:00+00:00",
-      "time": "17:00",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "lni-jezik-igre-kako-globalni-ambasadori-spajaju-svet-9fcjfzv",
-      "title": "Snaga discipline i univerzalni jezik igre: Kako globalni ambasadori spajaju svet u Beogradu- Lin Dan kao ambasador Ekspa 2027",
-      "url": "https://www.blic.rs/biznis/snaga-discipline-i-univerzalni-jezik-igre-kako-globalni-ambasadori-spajaju-svet/9fcjfzv",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T16:28:04+00:00",
-      "time": "16:28",
-      "source": "Blic",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "o-da-je-miroslav-aleksic-sa-tastom-ostetio-budzet-za-9gp1g25",
-      "title": "\"MIROSLAV ALEKSIĆ I NJEGOV TAST OŠTETILI BUDŽET ZA MILIONE\" Siniša Mali odgovorio na izlaganje predsednika NPS u Skupštini: \"KO O ČEMU, ALEKSIĆ O POŠTENJU!\"",
-      "url": "https://www.blic.rs/vesti/politika/sinisa-mali-u-skupstini-rekao-da-je-miroslav-aleksic-sa-tastom-ostetio-budzet-za/9gp1g25",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T14:44:31+00:00",
-      "time": "14:44",
-      "source": "Blic",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
