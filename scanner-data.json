@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "rijava-protiv-kristijana-golubovica-zbog-ubistva-psa-etdp4x1",
-      "title": "PODNETA KRIVIČNA PRIJAVA PROTIV KRISTIJANA GOLUBOVIĆA Nakon smrti psa hitno preduzete mere: Evo šta mu se sve stavlja na teret",
-      "url": "https://www.blic.rs/zabava/podneta-krivicna-prijava-protiv-kristijana-golubovica-zbog-ubistva-psa/etdp4x1",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T20:21:20+00:00",
-      "time": "20:21",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "aevropa-org-a-dunav-nizak-vodostaj-susa-srbija-33816022-html",
       "title": "Povlačenje Dunava pred klimatskim promenama",
       "url": "https://www.slobodnaevropa.org/a/dunav-nizak-vodostaj-susa-srbija/33816022.html",
@@ -85,20 +71,6 @@
       "priority": 92
     },
     {
-      "id": "-pritvora-nakon-skandala-u-dubrovniku-prihvatam-delo-drwefpv",
-      "title": "\"PRIHVATAM DELO KOJE MI SE STAVLJA NA TERET\" Rijaliti učesnica izašla iz pritvora nakon skandala u Dubrovniku: Vređala policajce i otimala se hapšenju",
-      "url": "https://www.blic.rs/zabava/rijaliti-ucesnica-izasla-iz-pritvora-nakon-skandala-u-dubrovniku-prihvatam-delo/drwefpv",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T19:43:00+00:00",
-      "time": "19:43",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "va-zbog-sumnje-na-nasilje-u-porodici-i-nelegalno-oruzje-html",
       "title": "Ухапшен мушкарац код Панчева због сумње на насиље у породици и нелегално оружје",
       "url": "https://www.rts.rs/vesti/hronika/6007847/uhapsen-muskarac-kod-panceva-zbog-sumnje-na-nasilje-u-porodici-i-nelegalno-oruzje.html",
@@ -107,20 +79,6 @@
       "time": "19:29",
       "source": "RTS",
       "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "pretio-zeni-i-cerkama-pistoljem-pa-vredjao-policajca-rqt2znd",
-      "title": "PRETIO PIŠTOLJEM ŽENI I MALOLETNIM ĆERKAMA! Užas u Pančevu: Policija pronašla još oružja, vređao i policijskog službenika",
-      "url": "https://www.blic.rs/vesti/hronika/muskarac-u-pancevu-pretio-zeni-i-cerkama-pistoljem-pa-vredjao-policajca/rqt2znd",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T19:12:19+00:00",
-      "time": "19:12",
-      "source": "Blic",
-      "category": "Насиље у породици",
       "summary": "",
       "breaking": false,
       "alert": true,
@@ -239,20 +197,6 @@
       "priority": 70
     },
     {
-      "id": "hapsen-drzavljanim-severne-makedonije-osumnjicen-za-prevare-",
-      "title": "U Vranju uhapšen državljanin Severne Makedonije osumnjičen za prevare",
-      "url": "https://n1info.rs/vesti/u-vranju-uhapsen-drzavljanim-severne-makedonije-osumnjicen-za-prevare/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T17:01:38+00:00",
-      "time": "17:01",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -265,6 +209,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-dizelgejt-zasto-je-protiv-renoa-pokrenut-krivicni-postupak-",
+      "title": "„Dizelgejt“: Zašto je protiv Renoa pokrenut krivični postupak",
+      "url": "https://vreme.com/mozaik/dizelgejt-zasto-je-protiv-renoa-pokrenut-krivicni-postupak/",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T05:35:13+00:00",
+      "time": "05:35",
+      "source": "Vreme",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "t-dobija-nastavak-reno-optuzen-za-prevaru-sa-dizel-motorima-",
@@ -302,48 +260,6 @@
       "datetime": "2026-07-27T18:02:48+00:00",
       "time": "18:02",
       "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "r-osumnjicenom-za-pretnje-predsedniku-srbije-preko-fejsbuka-",
-      "title": "Beogradsko VJT predložilo pritvor osumnjičenom za pretnje predsedniku Srbije preko Fejsbuka",
-      "url": "https://www.danas.rs/vesti/drustvo/beogradsko-vjt-predlozilo-pritvor-osumnjicenom-za-pretnje-predsedniku-srbije-preko-fejsbuka/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T17:48:16+00:00",
-      "time": "17:48",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "o-predmet-u-slucaju-isplate-dnevnica-na-sns-mitingu-u-areni-",
-      "title": "Tužilaštvo formiralo predmet u slučaju isplate dnevnica na SNS mitingu u Areni",
-      "url": "https://nova.rs/vesti/hronika/tuzilastvo-formiralo-predmet-u-slucaju-isplate-dnevnica-na-sns-mitingu-u-areni/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T16:17:51+00:00",
-      "time": "16:17",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "o-predmet-u-slucaju-isplate-dnevnica-na-sns-mitingu-u-areni-",
-      "title": "N1: Tužilaštvo formiralo predmet u slučaju isplate dnevnica na SNS mitingu u Areni",
-      "url": "https://www.danas.rs/vesti/politika/n1-tuzilastvo-formiralo-predmet-u-slucaju-isplate-dnevnica-na-sns-mitingu-u-areni/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T15:53:20+00:00",
-      "time": "15:53",
-      "source": "Danas",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -435,6 +351,20 @@
       "priority": 60
     },
     {
+      "id": "rbija-5g-mreza-sad-amerika-telekom-kina-huawei-33815930-html",
+      "title": "Američki kredit i evropska oprema: Da li 5G udaljava Srbiju od Kine?",
+      "url": "https://www.slobodnaevropa.org/a/srbija-5g-mreza-sad-amerika-telekom-kina-huawei/33815930.html",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T05:38:22+00:00",
+      "time": "05:38",
+      "source": "RSE Balkan",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 36
+    },
+    {
       "id": "omija-eps-tender-pracenje-interneta-reputacione-krize-afere-",
       "title": "Tender vredan 14,4 miliona dinara: Zašto EPS plaća borbu protiv „negativnih narativa“",
       "url": "https://vreme.com/ekonomija/eps-tender-pracenje-interneta-reputacione-krize-afere/",
@@ -447,6 +377,20 @@
       "breaking": false,
       "alert": false,
       "priority": 32
+    },
+    {
+      "id": "ttps-www-danas-rs-dijalog-licni-stavovi-ko-si-ti-bre-vucicu-",
+      "title": "Ko si ti, bre, Vučiću?",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/ko-si-ti-bre-vucicu/",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T06:08:16+00:00",
+      "time": "06:08",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "-slobodnaevropa-org-a-kosovo-lobiranje-amerika-33813907-html",
@@ -477,6 +421,20 @@
       "priority": 30
     },
     {
+      "id": "ps-n1info-rs-svet-nemacka-policija-410-islamisticka-pretnja-",
+      "title": "Nemačka policija 410 ljudi smatra islamističkom pretnjom",
+      "url": "https://n1info.rs/svet/nemacka-policija-410-islamisticka-pretnja/",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T06:16:13+00:00",
+      "time": "06:16",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "zloupotreba-prava-na-pristup-informacijama-i-cutanje-uprave-",
       "title": "Poverenik: Najveći problem zloupotreba prava na pristup informacijama i ćutanje uprave",
       "url": "https://www.ktv.rs/2026/07/27/poverenik-najveci-problem-zloupotreba-prava-na-pristup-informacijama-i-cutanje-uprave/",
@@ -505,6 +463,20 @@
       "priority": 28
     },
     {
+      "id": "sen-pa-pustan-zasto-terorista-iz-berlina-nije-bio-u-zatvoru-",
+      "title": "Abdul B. hapšen pa puštan: Zašto terorista iz Berlina nije bio u zatvoru?",
+      "url": "https://www.danas.rs/svet/abdul-b-hapsen-pa-pustan-zasto-terorista-iz-berlina-nije-bio-u-zatvoru/",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T05:02:10+00:00",
+      "time": "05:02",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "-hapsenje-almire-vukadinovic-znaci-za-borbu-protiv-kriminala",
       "title": "\"ŽENE KLANOVA SU KLJUČNA LOGISTIKA\": Otkriveni detalji hapšenja Almire Vukadinović i kako je pala u ruke policije",
       "url": "https://www.kurir.rs/crna-hronika/10055537/sta-hapsenje-almire-vukadinovic-znaci-za-borbu-protiv-kriminala",
@@ -531,34 +503,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "urir-rs-stars-10060536-ispovest-laure-prgomet-nakon-hapsenja",
-      "title": "\"STIDIM SE, POTRAŽILA SAM STRUČNU POMOĆ\" Laura se oglasila prvi put nakon skandala i hapšenja, rijaliti zvezda surovo iskrena: Izuzetno mi je teško",
-      "url": "https://www.kurir.rs/stars/10060536/ispovest-laure-prgomet-nakon-hapsenja",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T17:44:13+00:00",
-      "time": "17:44",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "stavni-sud-podela-besplatnih-akcija-eps-a-uredena-je-zakonom",
-      "title": "Уставни суд: подела бесплатних акција ЕПС-а уређена је законом",
-      "url": "https://www.politika.rs/scc/clanak/774302/ustavni-sud-podela-besplatnih-akcija-eps-a-uredena-je-zakonom",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T20:23:00+00:00",
-      "time": "20:23",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     },
     {
       "id": "4787-pristina-odbija-povratak-srpskih-sudija-i-tuzilaca-vest",
@@ -617,20 +561,6 @@
       "priority": 24
     },
     {
-      "id": "https-www-danas-rs-kultura-neuromant-prvi-tizer-",
-      "title": "„Neuromant“: Kalum Tarner je sajber kriminalac u tizeru za novu SF seriju",
-      "url": "https://www.danas.rs/kultura/neuromant-prvi-tizer/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T16:00:20+00:00",
-      "time": "16:00",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "a-6007790-srbija-policija-izrucenje-crna-gora-kilibarda-html",
       "title": "Србија изручила Марка Килибарду Црној Гори",
       "url": "https://www.rts.rs/vesti/hronika/6007790/srbija-policija-izrucenje-crna-gora-kilibarda.html",
@@ -638,20 +568,6 @@
       "datetime": "2026-07-27T15:41:49+00:00",
       "time": "15:41",
       "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "renovu-pod-satore-nego-oni-glasova-u-celom-rasinskom-okrugu-",
-      "title": "Ministar Gašić na sednici o nepoverenju vladi: „Mi dovedemo više ljudi u Drenovu pod šatore, nego oni glasova u celom Rasinskom okrugu“",
-      "url": "https://www.danas.rs/vesti/politika/ministar-gasic-na-sednici-o-nepoverenju-vladi-mi-dovedemo-vise-ljudi-u-drenovu-pod-satore-nego-oni-glasova-u-celom-rasinskom-okrugu/",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T15:09:34+00:00",
-      "time": "15:09",
-      "source": "Danas",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -687,6 +603,20 @@
       "priority": 22
     },
     {
+      "id": "sionalni-fotograf-otkrio-zasto-su-scene-u-odiseji-mutne-vest",
+      "title": "Gledaoci zbunjeni zbog &quot;mutnih&quot; scena u &quot;Odiseji&quot;: Stručnjak otkrio razlog koji je sve iznenadio",
+      "url": "https://www.b92.net/kultura/filmtv/253788/profesionalni-fotograf-otkrio-zasto-su-scene-u-odiseji-mutne/vest",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T06:10:00+00:00",
+      "time": "06:10",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "ruzja-izraelu-za-pet-meseci-odobreno-skoro-800-miliona-evra-",
       "title": "Berlin povećao izvoz oružja Izraelu: Za pet meseci odobreno skoro 800 miliona evra",
       "url": "https://www.danas.rs/svet/berlin-povecao-izvoz-oruzja-izraelu-za-pet-meseci-odobreno-skoro-800-miliona-evra/",
@@ -699,6 +629,76 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "port-ostali-sportovi-10059968-zivotna-prica-aleksa-rodrigeza",
+      "title": "ROMANSA SA DŽEJ LO, 275 MILIONA DOLARA I PAD KOJI JE ŠOKIRAO AMERIKU! Imao je sve - novac, moć i jednu od najlepših žena sveta, a onda - potpuni sunovrat!",
+      "url": "https://www.kurir.rs/sport/ostali-sportovi/10059968/zivotna-prica-aleksa-rodrigeza",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T21:11:31+00:00",
+      "time": "21:11",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ic-predsednik-penzije-plate-povecanje-obecanje-33812822-html",
+      "title": "Da li Vučić poklanja građanima njihov vlastiti novac?",
+      "url": "https://www.slobodnaevropa.org/a/srbija-aleksandar-vucic-predsednik-penzije-plate-povecanje-obecanje/33812822.html",
+      "date": "2026-07-26",
+      "datetime": "2026-07-26T08:05:46+00:00",
+      "time": "08:05",
+      "source": "RSE Balkan",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "haos-posle-meca-kopera-i-radomlja-potukli-se-celnici-klubova",
+      "title": "SKANDAL TRESE REGION! Posle utakmice izbila tuča čelnika klubova - sevale pesnice na parkingu, policija morala da reaguje!",
+      "url": "https://www.kurir.rs/sport/fudbal/10060679/haos-posle-meca-kopera-i-radomlja-potukli-se-celnici-klubova",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T05:47:44+00:00",
+      "time": "05:47",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "nogorska-policija-dronovima-registruje-saobracajne-prekrsaje",
+      "title": "Црногорска полиција дроновима региструје саобраћајне прекршаје",
+      "url": "https://www.politika.rs/scc/clanak/774313/crnogorska-policija-dronovima-registruje-saobracajne-prekrsaje",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T05:30:00+00:00",
+      "time": "05:30",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "presudio-sebi-jeziv-zlocin-trese-ameriku-oglasila-se-0ezq5n2",
+      "title": "POBIO PORODICU, PA SPALIO KUĆU!? Pronađena tela majke, oca i njihovo šestoro dece, mrtvi i svi kućni ljubimci, oglasila se policija Mičigena: \"To je neopisiva tragedija\"",
+      "url": "https://www.blic.rs/vesti/svet/otac-ubio-zenu-i-decu-pa-presudio-sebi-jeziv-zlocin-trese-ameriku-oglasila-se/0ezq5n2",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T05:20:33+00:00",
+      "time": "05:20",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
