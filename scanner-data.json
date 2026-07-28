@@ -15,20 +15,6 @@
       "priority": 100
     },
     {
-      "id": "ovo-dugme-u-automobilu-moglo-bi-da-skrati-vek-motora-y3mrk85",
-      "title": "Vozači, ovo dugme u automobilu moglo bi da skrati vek motora: Stručnjaci poslali upozorenje",
-      "url": "https://www.blic.rs/slobodno-vreme/ovo-dugme-u-automobilu-moglo-bi-da-skrati-vek-motora/y3mrk85",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T17:33:22+00:00",
-      "time": "17:33",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "aevropa-org-a-dunav-nizak-vodostaj-susa-srbija-33816022-html",
       "title": "Povlačenje Dunava pred klimatskim promenama",
       "url": "https://www.slobodnaevropa.org/a/dunav-nizak-vodostaj-susa-srbija/33816022.html",
@@ -519,6 +505,20 @@
       "priority": 28
     },
     {
+      "id": "-hapsenje-almire-vukadinovic-znaci-za-borbu-protiv-kriminala",
+      "title": "\"ŽENE KLANOVA SU KLJUČNA LOGISTIKA\": Otkriveni detalji hapšenja Almire Vukadinović i kako je pala u ruke policije",
+      "url": "https://www.kurir.rs/crna-hronika/10055537/sta-hapsenje-almire-vukadinovic-znaci-za-borbu-protiv-kriminala",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T04:15:00+00:00",
+      "time": "04:15",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "-pobedio-svaki-teror-vlasti-izaziva-samo-veci-otpor-i-borbu-",
       "title": "Ofanziva na Atelje 212: Pozorište niko nije pobedio, svaki teror vlasti izaziva samo veći otpor i borbu",
       "url": "https://www.danas.rs/kultura/ofanziva-na-atelje-212-pozoriste-niko-nije-pobedio-svaki-teror-vlasti-izaziva-samo-veci-otpor-i-borbu/",
@@ -631,20 +631,6 @@
       "priority": 24
     },
     {
-      "id": "esti-hronika-6007630-saslusanje-pritvor-vucicevic-vucic-html",
-      "title": "После саслушања осумњиченом за претње смрћу председнику државе одређен притвор",
-      "url": "https://www.rts.rs/vesti/hronika/6007630/saslusanje-pritvor-vucicevic-vucic-.html",
-      "date": "2026-07-27",
-      "datetime": "2026-07-27T15:46:06+00:00",
-      "time": "15:46",
-      "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "a-6007790-srbija-policija-izrucenje-crna-gora-kilibarda-html",
       "title": "Србија изручила Марка Килибарду Црној Гори",
       "url": "https://www.rts.rs/vesti/hronika/6007790/srbija-policija-izrucenje-crna-gora-kilibarda.html",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "ruzja-izraelu-za-pet-meseci-odobreno-skoro-800-miliona-evra-",
+      "title": "Berlin povećao izvoz oružja Izraelu: Za pet meseci odobreno skoro 800 miliona evra",
+      "url": "https://www.danas.rs/svet/berlin-povecao-izvoz-oruzja-izraelu-za-pet-meseci-odobreno-skoro-800-miliona-evra/",
+      "date": "2026-07-27",
+      "datetime": "2026-07-27T21:27:16+00:00",
+      "time": "21:27",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
