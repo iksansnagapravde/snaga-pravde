@@ -85,6 +85,20 @@
       "priority": 104
     },
     {
+      "id": "s-vesti-drustvo-mavrodijev-srbija-begunci-vucic-rumen-radev-",
+      "title": "Mavrodijev, Vasilev, Gruevski…: Koji stranci sumnjivih biografija su našli utočište u Srbiji i zašto baš ovde?",
+      "url": "https://www.danas.rs/vesti/drustvo/mavrodijev-srbija-begunci-vucic-rumen-radev/",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T20:14:45+00:00",
+      "time": "20:14",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "nje-srbiju-ocekuju-temperature-do-40-stepeni-i-tropske-noci-",
       "title": "RHMZ poslao hitno SMS upozorenje: Srbiju očekuju temperature do 40 stepeni i tropske noći",
       "url": "https://vreme.com/drustvo/rhmz-poslao-hitno-sms-upozorenje-srbiju-ocekuju-temperature-do-40-stepeni-i-tropske-noci/",
@@ -162,20 +176,6 @@
       "datetime": "2026-07-29T15:43:00+00:00",
       "time": "15:43",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "230-zena-ubila-muza-u-loznici-pa-iznela-odbranu-novi-detalji",
-      "title": "PROGOVORILA ŽENA UHAPŠENA ZBOG RADENKOVOG UBISTVA: Osumnjičenoj posle saslušanja u tužilaštvu određen pritvor do 30 dana!",
-      "url": "https://www.kurir.rs/crna-hronika/10062230/zena-ubila-muza-u-loznici-pa-iznela-odbranu-novi-detalji",
-      "date": "2026-07-29",
-      "datetime": "2026-07-29T14:05:04+00:00",
-      "time": "14:05",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -351,20 +351,6 @@
       "priority": 70
     },
     {
-      "id": "na-makedonija-dvojica-uhapsena-zbog-organizovanja-borbi-pasa",
-      "title": "Severna Makedonija: Dvojica uhapšena zbog organizovanja borbi pasa",
-      "url": "https://beta.rs/content/249279-severna-makedonija-dvojica-uhapsena-zbog-organizovanja-borbi-pasa",
-      "date": "2026-07-29",
-      "datetime": "2026-07-29T15:50:10+00:00",
-      "time": "15:50",
-      "source": "Beta",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ww-rts-rs-vesti-hronika-6009073-sombor-ubistvo-hapsenje-html",
       "title": "Ухапшен мушкарац осумњичен за убиство у Сомбору",
       "url": "https://www.rts.rs/vesti/hronika/6009073/sombor-ubistvo-hapsenje.html",
@@ -491,6 +477,20 @@
       "priority": 66
     },
     {
+      "id": "-korupcija-nepostovanje-zakona-o-kakvoj-drzavi-masta-aleksic",
+      "title": "Мобинг, корупција, непоштовање закона – о каквој држави машта Алексић",
+      "url": "https://www.politika.rs/scc/clanak/774845/mobing-korupcija-nepostovanje-zakona-o-kakvoj-drzavi-masta-aleksic",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T20:12:00+00:00",
+      "time": "20:12",
+      "source": "Politika",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "om-vesti-skupstina-srbije-glasala-za-poverenje-vladi-srbije-",
       "title": "Skupština Srbije glasala za poverenje Vladi Srbije",
       "url": "https://vreme.com/vesti/skupstina-srbije-glasala-za-poverenje-vladi-srbije/",
@@ -554,20 +554,6 @@
       "datetime": "2026-07-29T16:10:31+00:00",
       "time": "16:10",
       "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "parlamentarna-skupstina-srbija-sad-kongresmeni-33816790-html",
-      "title": "Zašto američki zastupnici žele premjestiti skupštinu OSCE-a iz Srbije u SAD?",
-      "url": "https://www.slobodnaevropa.org/a/parlamentarna-skupstina-srbija-sad-kongresmeni-/33816790.html",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T17:20:27+00:00",
-      "time": "17:20",
-      "source": "RSE Balkan",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -687,18 +673,32 @@
       "priority": 8
     },
     {
-      "id": "-tvorac-plana-za-penzije-401k-priznaje-veliku-gresku-vzkdggc",
-      "title": "Tvorac čuvenog penzionog plana priznaje veliku grešku: Čovek koji je promenio penzije stvara nov model, evo kako radnici mogu doći do novca bez odbijanja od plate",
-      "url": "https://www.blic.rs/biznis/saveti/tvorac-plana-za-penzije-401k-priznaje-veliku-gresku/vzkdggc",
+      "id": "nicna-policija-na-prelazu-spiljani-otkrila-oruzje-i-94-metka",
+      "title": "Гранична полиција на прелазу Шпиљани открила оружје и 94 метка",
+      "url": "https://www.politika.rs/scc/clanak/774857/granicna-policija-na-prelazu-spiljani-otkrila-oruzje-i-94-metka",
       "date": "2026-07-29",
-      "datetime": "2026-07-29T15:01:14+00:00",
-      "time": "15:01",
-      "source": "Blic",
-      "category": "Пензионери",
+      "datetime": "2026-07-29T20:57:00+00:00",
+      "time": "20:57",
+      "source": "Politika",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 8
+      "priority": 4
+    },
+    {
+      "id": "rila-oruzje-i-94-metka-kod-dvojice-drzavljana-crne-gore-html",
+      "title": "Гранична полиција на Шпиљанима открила оружје и 94 метка код двојице држављана Црне Горе",
+      "url": "https://www.rts.rs/vesti/hronika/6009324/granicna-policija-na-spiljanima-otkrila-oruzje-i-94-metka-kod-dvojice-drzavljana-crne-gore.html",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T20:52:33+00:00",
+      "time": "20:52",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
