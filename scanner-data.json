@@ -127,6 +127,20 @@
       "priority": 94
     },
     {
+      "id": "10062312-uhapsen-zbog-pucnjave-na-kucu-policajca-u-podgorici",
+      "title": "PUCAO NA KUĆU POLICAJCA U PODGORICI: Uhapšen osumnjičeni posle četiri dana potrage",
+      "url": "https://www.kurir.rs/region/crna-gora/10062312/uhapsen-zbog-pucnjave-na-kucu-policajca-u-podgorici",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "relazu-oruzje-i-metke-pokusali-da-unesu-u-srbijufoto-ls25jyv",
       "title": "ORUŽJE I METKE POKUŠALI DA UNESU U SRBIJU Uhapšena dva muškarca na granici sa Crnom Gorom (FOTO)",
       "url": "https://www.blic.rs/vesti/hronika/uhapseni-crnogorci-na-granicnom-prelazu-oruzje-i-metke-pokusali-da-unesu-u-srbijufoto/ls25jyv",
@@ -393,20 +407,6 @@
       "priority": 66
     },
     {
-      "id": "ama-u-zemunu-stanodavac-pokusao-da-izbode-podstanare-69gr428",
-      "title": "STANODAVAC POKUŠAO DA IZBODE PODSTANARE Drama u Zemunu: Nožem krenuo na staricu (73), pa uzeo šrafciger",
-      "url": "https://www.blic.rs/vesti/hronika/drama-u-zemunu-stanodavac-pokusao-da-izbode-podstanare/69gr428",
-      "date": "2026-07-29",
-      "datetime": "2026-07-29T16:00:35+00:00",
-      "time": "16:00",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "tuelno-235264-vjt-trazi-maksimalne-kazne-za-kecmanovice-vest",
       "title": "Više javno tužilaštvo uložilo žalbu: Maksimalne kazne za roditelje dečaka koji je počinio masovno ubistvo u \"Ribnikaru\"",
       "url": "https://www.euronews.rs/srbija/aktuelno/235264/vjt-trazi-maksimalne-kazne-za-kecmanovice/vest",
@@ -447,20 +447,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "-korupcija-nepostovanje-zakona-o-kakvoj-drzavi-masta-aleksic",
-      "title": "Мобинг, корупција, непоштовање закона – о каквој држави машта Алексић",
-      "url": "https://www.politika.rs/scc/clanak/774845/mobing-korupcija-nepostovanje-zakona-o-kakvoj-drzavi-masta-aleksic",
-      "date": "2026-07-29",
-      "datetime": "2026-07-29T20:12:00+00:00",
-      "time": "20:12",
-      "source": "Politika",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "-novi-sad-uhapsen-zbog-zloupotrebe-7-miliona-iz-budzeta-vest",
@@ -561,20 +547,6 @@
       "priority": 24
     },
     {
-      "id": "vision-saveti-10062397-fising-kampanja-za-call-of-duty-poene",
-      "title": "Gejmeri na udaru sajber kriminalaca: Lažni Call of Duty Mobile sajt širi se internetom",
-      "url": "https://www.kurir.rs/techvision/saveti/10062397/fising-kampanja-za-call-of-duty-poene",
-      "date": "2026-07-29",
-      "datetime": "2026-07-29T16:00:00+00:00",
-      "time": "16:00",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "iku-Sergeja-Sojgua-smanjena-kazna-sa-19-na-10-godina-zatvora",
       "title": "MASNO SE OBOGATIO NA RAČUN DRŽAVE, A ONA MU SMANJILA KAZNU! Bivšem zameniku Sergeja Šojgua prepolovljena kazna zatvora! Teretili ga da je proneverio milione",
       "url": "https://www.kurir.rs/planeta/10062529/Bivsem-zameniku-Sergeja-Sojgua-smanjena-kazna-sa-19-na-10-godina-zatvora",
@@ -615,6 +587,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "umnjiceni-za-nedozvoljeno-nosenje-oruzja-uhvaceni-na-prelazu",
+      "title": "ZAPLENA Granična policija na ulazu u Srbiju otkrila oružje i 94 metka kod dvojice državljana Crne Gore",
+      "url": "https://www.kurir.rs/crna-hronika/10062604/osumnjiceni-za-nedozvoljeno-nosenje-oruzja-uhvaceni-na-prelazu",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T21:47:14+00:00",
+      "time": "21:47",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "nicna-policija-na-prelazu-spiljani-otkrila-oruzje-i-94-metka",
@@ -694,6 +680,20 @@
       "datetime": "2026-07-29T16:25:35+00:00",
       "time": "16:25",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "djzera-na-sup-daskama-vetar-i-talasi-udaljavali-ih-od-obale-",
+      "title": "Na Ohridskom jezeru spasena dva tinejdžera na SUP daskama, vetar i talasi udaljavali ih od obale",
+      "url": "https://n1info.rs/region/na-ohridskom-jezeru-spasena-dva-tinedjzera-na-sup-daskama-vetar-i-talasi-udaljavali-ih-od-obale/",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T16:21:10+00:00",
+      "time": "16:21",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
