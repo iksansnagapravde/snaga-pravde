@@ -15,20 +15,6 @@
       "priority": 104
     },
     {
-      "id": "se-sastao-sa-Trampom-u-Beloj-kuci-Oglasio-se-posle-razgovora",
-      "title": "HITNO SE OGLASIO ZELENSKI Završen sastanak sa Trampom u Beloj kući! Evo o čemu su dva lidera razgovarala iza zatvorenih vrata",
-      "url": "https://www.kurir.rs/planeta/10061514/Zelenski-se-sastao-sa-Trampom-u-Beloj-kuci-Oglasio-se-posle-razgovora",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T16:44:08+00:00",
-      "time": "16:44",
-      "source": "Kurir",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "aevropa-org-a-dunav-nizak-vodostaj-susa-srbija-33816022-html",
       "title": "Povlačenje Dunava pred klimatskim promenama",
       "url": "https://www.slobodnaevropa.org/a/dunav-nizak-vodostaj-susa-srbija/33816022.html",
@@ -69,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "oljub-iz-sapca-izbo-mladica-22-pa-pobegao-iz-zatvora-wxrvzns",
+      "title": "\"LEŽAO JE NA TRAVNJAKU I JAUKAO, ČUO SAM SVAĐU\" Srboljub iz Šapca BRUTALNO IZBO mladića (22), pa pobegao iz zatvora: Sprečen jeziv KRVAVI PIR u Crnoj Gori?!",
+      "url": "https://www.blic.rs/vesti/hronika/srboljub-iz-sapca-izbo-mladica-22-pa-pobegao-iz-zatvora/wxrvzns",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T03:52:00+00:00",
+      "time": "03:52",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "aestogodisnjak-uhapsen-u-sijetlu-bio-naoruzan-gost-pistoljem",
@@ -183,20 +183,6 @@
       "priority": 92
     },
     {
-      "id": "uke-skaljaraca-iz-zatvora-nakon-ubistva-alana-kozara-5tyhm80",
-      "title": "\"IDEMO, BRATE MOJ, DA POKASAPIMO TU BAGRU!\" Isplivale poruke \"škaljaraca\" iz zatvora nakon ubistva Alana Kožara: \"Kralj mora da se osveti!\" (FOTO)",
-      "url": "https://www.blic.rs/vesti/hronika/isplivale-poruke-skaljaraca-iz-zatvora-nakon-ubistva-alana-kozara/5tyhm80",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T18:29:32+00:00",
-      "time": "18:29",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "s-tok-od-mup-a-trazio-skaj-poruke-vidica-pozvao-da-da-iskaz-",
       "title": "TOK od MUP-a tražio „skaj“ poruke, Vidića pozvao da da iskaz",
       "url": "https://www.krik.rs/tok-od-mup-a-trazio-skaj-poruke-vidica-pozvao-da-da-iskaz/",
@@ -295,34 +281,6 @@
       "priority": 70
     },
     {
-      "id": "mijeru-poljske-donaldu-tusku-policija-pronasla-municiju-vest",
-      "title": "Tusk na meti? Policija pronašla tri metka kalibra 9 mm",
-      "url": "https://www.b92.net/info/svet/254187/pretili-smrcu-premijeru-poljske-donaldu-tusku-policija-pronasla-municiju/vest",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T21:48:00+00:00",
-      "time": "21:48",
-      "source": "B92",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "n-za-pokusaj-ubistva-kana-pucao-mu-u-glavu-na-bazenu-21m0dth",
-      "title": "ANDREJ (19) HLADNOKRVNO PUCAO KANU U GLAVU NA BAZENU, PA PRESKOČIO OGRADU Osumnjičeni za pucnjavu u \"Maestralu\" se krio godinu dana: Koristio lažni identitet, ovako mu je policija ušla u trag (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/hronika/andrej-19-osumnjicen-za-pokusaj-ubistva-kana-pucao-mu-u-glavu-na-bazenu/21m0dth",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T18:03:34+00:00",
-      "time": "18:03",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "-pretio-porodici-pistoljem-uhapsen-muskarac-kod-panceva-vest",
       "title": "Pištoljem pretio supruzi i ćerkama, među kojima su dve maloletne: Uhapšen osumnjičeni za teško nasilje u Pančevu",
       "url": "https://www.euronews.rs/srbija/aktuelno/234922/pretio-porodici-pistoljem-uhapsen-muskarac-kod-panceva/vest",
@@ -386,20 +344,6 @@
       "datetime": "2026-07-28T18:08:45+00:00",
       "time": "18:08",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "vesti-drustvo-krivicna-prijava-protiv-vucevica-dnevnice-sns-",
-      "title": "Krivična prijava protiv Vučevića zbog dnevnica za miting SNS-a: Koji zakon je prekršen i kolika kazna preti?",
-      "url": "https://www.danas.rs/vesti/drustvo/krivicna-prijava-protiv-vucevica-dnevnice-sns/",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T15:27:39+00:00",
-      "time": "15:27",
-      "source": "Danas",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -491,20 +435,6 @@
       "priority": 66
     },
     {
-      "id": "je-nasrnuo-na-milana-knezevica-u-skupstini-crne-gore-ln2lecs",
-      "title": "(VIDEO) MINISTAR NASRNUO NA KNEŽEVIĆA, POSLANICI MORALI DA GA OBUZDAJU! Haos na sednici Skupštine Crne Gore: \"Dok si se sunčao čuvalo te 50 policajaca\"",
-      "url": "https://www.blic.rs/vesti/politika/video-ministar-policije-nasrnuo-na-milana-knezevica-u-skupstini-crne-gore/ln2lecs",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T19:25:18+00:00",
-      "time": "19:25",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "-novi-sad-uhapsen-zbog-zloupotrebe-7-miliona-iz-budzeta-vest",
       "title": "Hapšenje zbog korupcije u Novom Sadu: \"Pao\" zastupnik udruženja građana, ukrao 7 miliona iz budžeta grada",
       "url": "https://www.euronews.rs/srbija/aktuelno/235022/novi-sad-uhapsen-zbog-zloupotrebe-7-miliona-iz-budzeta/vest",
@@ -575,6 +505,20 @@
       "priority": 30
     },
     {
+      "id": "rir-rs-stars-10060815-poznate-licnosti-koje-su-promenile-pol",
+      "title": "OVE DAME NEKADA SU BILE MUŠKARCI Poznate ličnosti koje su promenile pol: Influenserka snimala operaciju, ona nakon hapšenja prebačena u ženski zatvor",
+      "url": "https://www.kurir.rs/stars/10060815/poznate-licnosti-koje-su-promenile-pol",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T04:59:00+00:00",
+      "time": "04:59",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "ova-zemlja-sledeca-na-udaru-izdata-jeziva-upozorenja-24b3k1w",
       "title": "VATRENA OLUJA SE ŠIRI, OVA ZEMLJA SLEDEĆA NA UDARU?! Jeziva upozorenja stižu građanima, počela i hapšenja zbog istorijske KATASTROFE: \"Ne izlazite iz kuća\"",
       "url": "https://www.blic.rs/vesti/svet/vatrena-oluja-se-siri-ova-zemlja-sledeca-na-udaru-izdata-jeziva-upozorenja/24b3k1w",
@@ -603,20 +547,6 @@
       "priority": 26
     },
     {
-      "id": "e-andreja-tanaskovskog-detalji-potrage-i-organizacije-napada",
-      "title": "\"DANIMA JE BORAVIO U HOTELU, DOBIO SIGNAL, UZEO PIŠTOLJ I...\" Radulović o hapšenju Makedonca zbog pokušaja ubistva Marka Ljubiše Kana - škaljarca sa 9 života",
-      "url": "https://www.kurir.rs/crna-hronika/10061458/hapsenje-andreja-tanaskovskog-detalji-potrage-i-organizacije-napada",
-      "date": "2026-07-28",
-      "datetime": "2026-07-28T17:15:32+00:00",
-      "time": "17:15",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "4787-pristina-odbija-povratak-srpskih-sudija-i-tuzilaca-vest",
       "title": "Pitanje povratka srpskih tužilaca: Međunarodna zajednica zahteva da pravosuđe bude multietničko",
       "url": "https://www.euronews.rs/srbija/politika/234787/pristina-odbija-povratak-srpskih-sudija-i-tuzilaca/vest",
@@ -629,6 +559,34 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "put-od-ekvadora-do-evrope-bbc-u-patroli-sa-policijom-fqz8bn1",
+      "title": "Kokainski super-autoput od Ekvadora do Evrope: BBC u patroli sa policijom",
+      "url": "https://www.blic.rs/bbc/kokainski-super-autoput-od-ekvadora-do-evrope-bbc-u-patroli-sa-policijom/fqz8bn1",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T05:35:10+00:00",
+      "time": "05:35",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "er-autoput-od-ekvadora-do-evrope-bbc-u-patroli-sa-policijom-",
+      "title": "Kokainski super-autoput od Ekvadora do Evrope: BBC u patroli sa policijom",
+      "url": "https://www.danas.rs/bbc-news-serbian/kokainski-super-autoput-od-ekvadora-do-evrope-bbc-u-patroli-sa-policijom/",
+      "date": "2026-07-29",
+      "datetime": "2026-07-29T05:20:08+00:00",
+      "time": "05:20",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "zimori-preuzela-vlast-u-peruu-obecala-obracun-sa-kriminalom-",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ska-policija-u-kuci-para-pronasla-posmrtne-ostatke-pet-beba-",
+      "title": "Francuska policija u kući pronašla posmrtne ostatke pet beba",
+      "url": "https://n1info.rs/svet/mond-francuska-policija-u-kuci-para-pronasla-posmrtne-ostatke-pet-beba/",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T20:46:20+00:00",
+      "time": "20:46",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ozvoljeno-voziti-bos-ili-u-papucama-i-kakve-su-kazne-ccsmc58",
+      "title": "DA LI JE U SRBIJI DOZVOLJENO VOZITI U PAPUČAMA ILI BOSI Svi su ubeđeni da je strogo zabranjeno, a istina o KAZNAMA će vas iznenaditi",
+      "url": "https://www.blic.rs/vesti/drustvo/da-li-je-u-srbiji-dozvoljeno-voziti-bos-ili-u-papucama-i-kakve-su-kazne/ccsmc58",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T20:27:30+00:00",
+      "time": "20:27",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "et-policija-u-francuskoj-pronasla-posmrtne-ostatke-pet-beba-",
+      "title": "Horor na jugoistoku Francuske: Policija u porodičnoj kući pronašla posmrtne ostatke pet beba",
+      "url": "https://nova.rs/vesti/svet/policija-u-francuskoj-pronasla-posmrtne-ostatke-pet-beba/",
+      "date": "2026-07-28",
+      "datetime": "2026-07-28T20:19:41+00:00",
+      "time": "20:19",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
