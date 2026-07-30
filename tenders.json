@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 2158180.0,
+    "lowest": 7202.0,
+    "difference": 2150978.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 111652576,
+    "file": "documents/111652576_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 150000000.0,
+    "lowest": 3500.0,
+    "difference": 149996500.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100015945,
+    "file": "documents/100015945_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3178800.0,
+    "lowest": 2214.0,
+    "difference": 3176586.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100630194,
+    "file": "documents/100630194_RB 0021-2026 Odluka o dodeli ugovora - RADOVI NA ZAMENI KOTLA potpisano.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 699000.0,
     "lowest": 7202.0,
     "difference": 691798.0,
@@ -75,27 +108,5 @@
     "rejection_reasons": [],
     "id": 100454087,
     "file": "documents/100454087_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 27602200.0,
-    "lowest": 3276.0,
-    "difference": 27598924.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112363342,
-    "file": "documents/112363342_37.2026 Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2880000.0,
-    "lowest": 7202.0,
-    "difference": 2872798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 108461847,
-    "file": "documents/108461847_Odluka o dodeli ugovora.docx"
   }
 ]
