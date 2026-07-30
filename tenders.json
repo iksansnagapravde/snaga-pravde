@@ -1,90 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 301400780.4,
+    "accepted": 699000.0,
+    "lowest": 7202.0,
+    "difference": 691798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107955264,
+    "file": "documents/107955264_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 632000.0,
+    "lowest": 7202.0,
+    "difference": 624798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 114929846,
+    "file": "documents/114929846_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 20370684.0,
     "lowest": 4201.0,
-    "difference": 301396579.4,
+    "difference": 20366483.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103312371,
-    "file": "documents/103312371_Odluka OU NO 451 5 od 30 07 2026 JN 32 D 26.pdf"
+    "id": 100012105,
+    "file": "documents/100012105_Odluka o dodeli ugovora 18R26.pdf"
   },
   {
     "winner": null,
-    "accepted": 950000.0,
-    "lowest": 1920.0,
-    "difference": 948080.0,
+    "accepted": 203139888.38,
+    "lowest": 4201.0,
+    "difference": 203135687.38,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104424757,
-    "file": "documents/104424757_ODLUKA O DODELI UGOVORA.pdf"
+    "id": 2739461,
+    "file": "documents/2739461_Odluka o dodeli ugovora 14R26.pdf"
   },
   {
     "winner": null,
-    "accepted": 9997898.65,
-    "lowest": 4202.0,
-    "difference": 9993696.65,
+    "accepted": 3300000.0,
+    "lowest": 6000.0,
+    "difference": 3294000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 113600327,
-    "file": "documents/113600327_4538-7 Odluka o dodeli ugovora.pdf"
+    "id": 110082271,
+    "file": "documents/110082271_Odluka o dodeli ugovora JN 165 2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 210200.0,
+    "accepted": 7202.0,
+    "lowest": 2202.0,
+    "difference": 5000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102609502,
+    "file": "documents/102609502_801 O-181.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
     "lowest": 7202.0,
-    "difference": 202998.0,
+    "difference": 399992798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100143422,
-    "file": "documents/100143422_Odluka o dodeli narudžbenice K-5090.pdf"
+    "id": 100454087,
+    "file": "documents/100454087_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 27602200.0,
+    "lowest": 3276.0,
+    "difference": 27598924.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112363342,
+    "file": "documents/112363342_37.2026 Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 9410860.0,
+    "accepted": 2880000.0,
     "lowest": 7202.0,
-    "difference": 9403658.0,
+    "difference": 2872798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103223995,
-    "file": "documents/103223995_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 37000000.0,
-    "lowest": 3103.0,
-    "difference": 36996897.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102399740,
-    "file": "documents/102399740_Odluka OU NO 451 4 od 30 07 2026 JN 37 D 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 37000000.0,
-    "lowest": 3103.0,
-    "difference": 36996897.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106382099,
-    "file": "documents/106382099_Odluka OU NO 451 4 od 30 07 2026 JN 37 D 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 37000000.0,
-    "lowest": 3103.0,
-    "difference": 36996897.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101824235,
-    "file": "documents/101824235_Odluka OU NO 451 4 od 30 07 2026 JN 37 D 26.pdf"
+    "id": 108461847,
+    "file": "documents/108461847_Odluka o dodeli ugovora.docx"
   }
 ]
