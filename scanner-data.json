@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "ti-hronika-6010073-mup-hapsenje-utaja-poreza-kursumlija-html",
-      "title": "МУП: Ухапшен осумњичени да је оштетио буџет Србије за 52 милиона динара",
-      "url": "https://www.rts.rs/vesti/hronika/6010073/mup-hapsenje-utaja-poreza-kursumlija.html",
-      "date": "2026-07-30",
-      "datetime": "2026-07-30T14:07:55+00:00",
-      "time": "14:07",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "elno-235468-uhapsen-zbog-milionske-prevare-u-krusumliji-vest",
       "title": "Uhapšen zbog milionske prevare u Krušumliji: Razvio \"šemu\" preko lažnog povraćaja PDV-a",
       "url": "https://www.euronews.rs/srbija/aktuelno/235468/uhapsen-zbog-milionske-prevare-u-krusumliji/vest",
@@ -533,6 +519,20 @@
       "priority": 72
     },
     {
+      "id": "-uzicanke-vere-otvorili-auto-zatekao-ih-horor-prizor-5n22wse",
+      "title": "Videli ženu bez svesti u kolima na auto-putu, ubrzo je otkrivena STRAVIČNA ISTINA! Policija je ovako našla telo lepe Užičanke Vere: Otvorili vozilo, zatekao ih HOROR PRIZOR",
+      "url": "https://www.blic.rs/vesti/hronika/policija-je-ovako-nasla-telo-lepe-uzicanke-vere-otvorili-auto-zatekao-ih-horor-prizor/5n22wse",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T03:22:00+00:00",
+      "time": "03:22",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "sao-da-podmiti-sluzbnika-u-presevu-da-dobije-brze-dokumenta-",
       "title": "MUP: Uhapšen, pokušao da podmiti službnika u Preševu da dobije brže dokumenta",
       "url": "https://www.danas.rs/vesti/drustvo/mup-uhapsen-pokusao-da-podmiti-sluzbnika-u-presevu-da-dobije-brze-dokumenta/",
@@ -587,6 +587,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-slucaju-porodice-kecmanovic-evo-sta-sada-moze-da-se-l1p8jm7",
+      "title": "APELACIJA DONOSI KONAČNU ODLUKU U SLUČAJU KECMANOVIĆA! Dostavljene žalbe na odluku Višeg suda, evo šta sada može da se desi sa postupkom",
+      "url": "https://www.blic.rs/vesti/hronika/apelacija-donosi-konacnu-odluku-u-slucaju-porodice-kecmanovic-evo-sta-sada-moze-da-se/l1p8jm7",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T02:51:00+00:00",
+      "time": "02:51",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "stvo-vanjskih-poslova-razgovor-ruski-ambasador-33818604-html",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "ovi-justicija-je-pobegla-iz-srbije-a-neko-drugi-drzi-kantar-",
-      "title": "Justicija je pobegla iz Srbije, a neko drugi drži kantar",
-      "url": "https://www.danas.rs/dijalog/licni-stavovi/justicija-je-pobegla-iz-srbije-a-neko-drugi-drzi-kantar/",
-      "date": "2026-07-30",
-      "datetime": "2026-07-30T17:30:51+00:00",
-      "time": "17:30",
-      "source": "Danas",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     }
   ],
   "all_sources": [
