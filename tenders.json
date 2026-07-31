@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 24506900.0,
+    "lowest": 1113.0,
+    "difference": 24505787.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100442911,
+    "file": "documents/100442911_Odluka o dodeli ugovora P1.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 23000000.0,
+    "lowest": 1113.0,
+    "difference": 22998887.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104053488,
+    "file": "documents/104053488_Odluka o dodeli ugovora P2.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1488000.0,
     "lowest": 1142.0,
     "difference": 1486858.0,
@@ -88,27 +110,5 @@
     "rejection_reasons": [],
     "id": 111353930,
     "file": "documents/111353930_JN 78 Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 34484400.0,
-    "lowest": 7202.0,
-    "difference": 34477198.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101349834,
-    "file": "documents/101349834_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 11324045.0,
-    "lowest": 2202.0,
-    "difference": 11321843.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104518987,
-    "file": "documents/104518987_Odluka o izdavanju narudžbenice 112U24 - 73.pdf"
   }
 ]
