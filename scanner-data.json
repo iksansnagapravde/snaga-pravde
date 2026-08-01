@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "ika-10064726-roditelji-dece-koja-su-tukla-konja-pod-istragom",
-      "title": "DECA DANIMA ZLOSTAVLJALA KONJA, UZNEMIRJUĆI SNIMCI ZGROZILI JAVNOST: VIše javno tužilaštvo u Beogradu hitno reagovalo, pod istragom roditelji dece! (video)",
-      "url": "https://www.kurir.rs/crna-hronika/10064726/roditelji-dece-koja-su-tukla-konja-pod-istragom",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T10:55:06+00:00",
-      "time": "10:55",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 166
-    },
-    {
       "id": "grinkevica-moracu-da-biram-izmedju-odbrane-izraela-i-mrp4nfv",
       "title": "\"Moraću da BIRAM između odbrane Izraela i SAD\": Upozorenje Komandanta Evropske komande američke vojske Pentagonu",
       "url": "https://www.blic.rs/vesti/svet/upozorenje-americkog-generala-grinkevica-moracu-da-biram-izmedju-odbrane-izraela-i/mrp4nfv",
@@ -36,20 +22,6 @@
       "datetime": "2026-08-01T10:13:00+00:00",
       "time": "10:13",
       "source": "Euronews Serbia",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "srbiji-temperature-i-do-40-stepeni-povecan-rizk-za-zdravlje-",
-      "title": "Novo upozorenje RHMZ: Temperature i do 40 stepeni, povećan rizik za zdravlje",
-      "url": "https://n1info.rs/vesti/upozorenje-rhmz-na-dugotrajni-toplotni-talas-u-srbiji-temperature-i-do-40-stepeni-povecan-rizk-za-zdravlje/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T09:46:43+00:00",
-      "time": "09:46",
-      "source": "N1",
       "category": "Извршења",
       "summary": "",
       "breaking": true,
@@ -83,6 +55,34 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "alice-sns-uhapsen-muskarac-sa-hladnim-oruzjem-fotovideo-vest",
+      "title": "Incident u Kragujevcu; Pokušaj napada na pristalice SNS: Uhapšen muškarac sa hladnim oružjem FOTO/VIDEO",
+      "url": "https://www.b92.net/info/politika/255288/incident-u-kragujevcu-pokusaj-napada-na-pristalice-sns-uhapsen-muskarac-sa-hladnim-oruzjem-fotovideo/vest",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T16:34:00+00:00",
+      "time": "16:34",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "n-uhapsen-za-ubistvo-ruskinje-na-saslusanju-negirao-krivicu-",
+      "title": "VJT: Turčin uhapšen za ubistvo Ruskinje na saslušanju negirao krivicu",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-turcin-uhapsen-za-ubistvo-ruskinje-na-saslusanju-negirao-krivicu/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T16:22:56+00:00",
+      "time": "16:22",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "apsen-zamenik-direktora-gazprom-suvlasnik-toplane-u-pancevu-",
@@ -237,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 76
+    },
+    {
+      "id": "i-deportaciju-za-21-aktivistu-uhapsenih-tokom-lova-na-kitove",
+      "title": "Исланд: Полиција тражи депортацију за 21 активисту ухапшених током лова на китове",
+      "url": "https://www.politika.rs/scc/clanak/775610/island-policija-trazi-deportaciju-za-21-aktivistu-uhapsenih-tokom-lova-na-kitove",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T17:09:00+00:00",
+      "time": "17:09",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "0-niska-policija-sprecila-unos-pistolja-dronom-u-zatvor-vest",
@@ -407,20 +421,6 @@
       "priority": 66
     },
     {
-      "id": "vnicki-tukli-konja-u-beogradu-oglasilo-se-tuzilastvo-92hvdj2",
-      "title": "DEČACI KRVNIČKI TUKLI KONJA ŠTAPOM Tužilaštvo se oglasilo o jezivom nasilju u Beogradu: Roditelji će morati da odgovaraju",
-      "url": "https://www.blic.rs/vesti/beograd/decaci-krvnicki-tukli-konja-u-beogradu-oglasilo-se-tuzilastvo/92hvdj2",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T11:26:33+00:00",
-      "time": "11:26",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "znica-protiv-osumnjicenih-za-bacanje-bombi-na-restorane-vest",
       "title": "Optužnica protiv osumnjičenih za bacanje bombi na dva poznata restorana u Beogradu: VJT otkrilo detalje",
       "url": "https://www.euronews.rs/srbija/aktuelno/235757/optuznica-protiv-osumnjicenih-za-bacanje-bombi-na-restorane/vest",
@@ -519,20 +519,6 @@
       "priority": 30
     },
     {
-      "id": "-10064684-ukc-nis-ekspresne-promene-i-ukidanje-lista-cekanja",
-      "title": "Ekspresne promene u UKC Niš dale rezultate za samo dva i po meseca: Bez čekanja, bez korupcije, uz novu opremu i podršku države!",
-      "url": "https://www.kurir.rs/vesti/drustvo/10064684/ukc-nis-ekspresne-promene-i-ukidanje-lista-cekanja",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T10:33:08+00:00",
-      "time": "10:33",
-      "source": "Kurir",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid-",
       "title": "Direktor Centra Srebrenica: Policija RS pokušava da kriminalizuje preživele i sećanje na genocid",
       "url": "https://www.danas.rs/svet/region/direktor-centra-srebrenica-policija-rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid/",
@@ -547,46 +533,32 @@
       "priority": 28
     },
     {
-      "id": "amp-potvrdio-da-podrzava-toda-blansa-za-drzavnog-tuzioca-sad",
-      "title": "Трамп потврдио да подржава Тода Бланша за државног тужиоца САД",
-      "url": "https://www.politika.rs/scc/clanak/775587/tramp-potvrdio-da-podrzava-toda-blansa-za-drzavnog-tuzioca-sad",
+      "id": "vac-zadrzan-na-granici-ukp-ga-ispitivao-u-vezi-zvucnog-topa-",
+      "title": "Eko straža: Osnivač zadržan na granici, UKP ga ispitivao u vezi zvučnog topa",
+      "url": "https://www.danas.rs/vesti/drustvo/eko-straza-osnivac-zadrzan-na-granici-ukp-ga-ispitivao-u-vezi-zvucnog-topa/",
       "date": "2026-08-01",
-      "datetime": "2026-08-01T15:03:00+00:00",
-      "time": "15:03",
-      "source": "Politika",
-      "category": "Злоупотребе",
+      "datetime": "2026-08-01T16:50:48+00:00",
+      "time": "16:50",
+      "source": "Danas",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 28
+      "priority": 24
     },
     {
-      "id": "vi-dss-zloupotrebe-u-javnim-nabavkama-ikt-sektora-u-beogradu",
-      "title": "Novi DSS: Zloupotrebe u javnim nabavkama IKT sektora u Beogradu",
-      "url": "https://beta.rs/content/249444-novi-dss-zloupotrebe-u-javnim-nabavkama-ikt-sektora-u-beogradu",
+      "id": "pektorima-ukp-dao-izjavu-o-navodnoj-simulaciji-zvucnog-topa-",
+      "title": "Osnivač Eko straže zadržan na granici, inspektorima UKP dao izjavu o navodnoj simulaciji zvučnog topa",
+      "url": "https://nova.rs/vesti/hronika/osnivac-eko-straze-zadrzan-na-granici-inspektorima-ukp-dao-izjavu-o-navodnoj-simulaciji-zvucnog-topa/",
       "date": "2026-08-01",
-      "datetime": "2026-08-01T13:00:10+00:00",
-      "time": "13:00",
-      "source": "Beta",
-      "category": "Злоупотребе",
+      "datetime": "2026-08-01T16:40:37+00:00",
+      "time": "16:40",
+      "source": "Nova",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "rts-rs-vesti-svet-6011216-spanija-seuta-maroko-hapsenja-html",
-      "title": "Сеута појачава заштиту границе након мигрантске кризе, хапшења због нереда у Мароку",
-      "url": "https://www.rts.rs/vesti/svet/6011216/spanija-seuta-maroko-hapsenja.html",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T12:31:54+00:00",
-      "time": "12:31",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
+      "priority": 24
     },
     {
       "id": "bojan-simisic-zadrzan-na-granici-ukp-ispitivanje-zvuzni-top-",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "-policija-prikupila-protiv-decka-srpkinje-ubijene-u-teksasu-",
+      "title": "Telefon, iskaz bivše devojke i sumnjivi predmeti u kući: Ovo su dokazi koje je američka policija prikupila protiv dečka Srpkinje ubijene u Teksasu",
+      "url": "https://nova.rs/vesti/hronika/telefon-iskaz-bivse-devojke-i-sumnjivi-predmeti-u-kuci-ovo-su-dokazi-koje-je-americka-policija-prikupila-protiv-decka-srpkinje-ubijene-u-teksasu/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T17:09:19+00:00",
+      "time": "17:09",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "jskoj-kosi-u-kojoj-su-pronadjena-tela-brata-i-sestre-htlkhqn",
+      "title": "(FOTO, VIDEO) OVO JE ZGRADA U KOJOJ SU NAĐENA TELA BRATA I SESTRE Detalji užasa na Bežanijskoj kosi: Tim forenzike i policija na uviđaju",
+      "url": "https://www.blic.rs/vesti/hronika/ovo-je-zgrada-na-bezanijskoj-kosi-u-kojoj-su-pronadjena-tela-brata-i-sestre/htlkhqn",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T15:24:43+00:00",
+      "time": "15:24",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
