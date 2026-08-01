@@ -477,20 +477,6 @@
       "priority": 66
     },
     {
-      "id": "onja-u-beogradu-dostavljen-prvom-osnovnom-javnom-tuzilastvu-",
-      "title": "Slučaj zlostavljanja konja u Beogradu dostavljen Prvom osnovnom javnom tužilaštvu",
-      "url": "https://n1info.rs/vesti/slucaj-zlostavljanja-konja-u-beogradu-dostavljen-prvom-osnovnom-javnom-tuzilastvu/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T12:52:34+00:00",
-      "time": "12:52",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "jen-izvestaj-o-maloletnicima-koji-su-zlostavljali-konja-html",
       "title": "ВЈТ: Првом ОЈТ прослеђен извештај о малолетницима који су злостављали коња",
       "url": "https://www.rts.rs/vesti/hronika/6011392/vjt-prvom-ojt-prosledjen-izvestaj-o-maloletnicima-koji-su-zlostavljali-konja.html",
@@ -559,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 32
+    },
+    {
+      "id": "snica-nije-bila-slucajnost-vec-posledica-nemara-i-korupcije-",
+      "title": "Komemorativni skup u Nišu: \"Nadstrešnica nije bila slučajnost, već posledica nemara i korupcije\"",
+      "url": "https://nova.rs/vesti/drustvo/komemorativni-skup-u-nisu-nadstresnica-nije-bila-slucajnost-vec-posledica-nemara-i-korupcije/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T20:29:52+00:00",
+      "time": "20:29",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid-",
