@@ -71,6 +71,20 @@
       "priority": 100
     },
     {
+      "id": "k-uhapsen-sa-arsenalom-oruzja-kod-standa-sns-a-u-kragujevcu-",
+      "title": "Devetnaestogodišnjak uhapšen sa arsenalom oružja kod štanda SNS-a u Kragujevcu",
+      "url": "https://www.danas.rs/vesti/drustvo/devetnaestogodisnjak-uhapsen-sa-arsenalom-oruzja-kod-standa-sns-a-u-kragujevcu/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T19:49:11+00:00",
+      "time": "19:49",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "-n1-muskarac-sa-oruzjem-uhapsen-kod-standa-sns-u-kragujevcu-",
       "title": "N1: Muškarac sa oružjem uhapšen kod štanda SNS u Kragujevcu",
       "url": "https://www.danas.rs/vesti/politika/n1-muskarac-sa-oruzjem-uhapsen-kod-standa-sns-u-kragujevcu/",
@@ -120,20 +134,6 @@
       "datetime": "2026-08-01T17:54:18+00:00",
       "time": "17:54",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "612-uhapsen-direktor-kompanije-gasprom-energoholding-zakupki",
-      "title": "Ухапшен директор компаније „Гаспром енергохолдинг - закупки”",
-      "url": "https://www.politika.rs/scc/clanak/775612/uhapsen-direktor-kompanije-gasprom-energoholding-zakupki",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T17:16:00+00:00",
-      "time": "17:16",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -295,6 +295,34 @@
       "priority": 70
     },
     {
+      "id": "niceve-tvrdnje-da-je-cvijan-ubijen-neodgovorne-i-zlonamerne-",
+      "title": "VJT: Ninićeve tvrdnje da je Cvijan ubijen neodgovorne i zlonamerne",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-niniceve-tvrdnje-da-je-cvijan-ubijen-neodgovorne-i-zlonamerne/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T19:56:36+00:00",
+      "time": "19:56",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "cvijana-uznemiravaju-porodicu-predmet-arhiviran-2018-godine-",
+      "title": "VJT: Neodgovorne tvrdnje o ubistvu Vladimira Cvijana uznemiravaju porodicu, predmet arhiviran 2018. godine",
+      "url": "https://nova.rs/vesti/hronika/vjt-neodgovorne-tvrdnje-o-ubistvu-vladimira-cvijana-uznemiravaju-porodicu-predmet-arhiviran-2018-godine/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T19:39:47+00:00",
+      "time": "19:39",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "uzan-muskarac-priveden-nedaleko-od-standa-sns-a-u-kragujevcu",
       "title": "Тешко наоружан мушкарац приведен недалеко од штанда СНС-а у Крагујевцу",
       "url": "https://www.politika.rs/scc/clanak/775633/tesko-naoruzan-muskarac-priveden-nedaleko-od-standa-sns-a-u-kragujevcu",
@@ -316,6 +344,20 @@
       "datetime": "2026-08-01T19:15:10+00:00",
       "time": "19:15",
       "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "vo-235825-zemun-muskarac-osumnjicen-za-pucnjavu-u-azilu-vest",
+      "title": "Više javno tužilaštvo: Predložen pritvor za muškarca zbog pucnjave u azilu za životinje u Zemunu",
+      "url": "https://www.euronews.rs/srbija/drustvo/235825/zemun-muskarac-osumnjicen-za-pucnjavu-u-azilu/vest",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T19:15:00+00:00",
+      "time": "19:15",
+      "source": "Euronews Serbia",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -358,20 +400,6 @@
       "datetime": "2026-08-01T18:28:37+00:00",
       "time": "18:28",
       "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "rti-advokata-vladimira-cvijana-neodgovorno-i-zlonamerno-vest",
-      "title": "VJT o širenju dezinformacija o smrti advokata Vladimira Cvijana: &quot;Neodgovorno i zlonamerno&quot;",
-      "url": "https://www.b92.net/info/politika/255314/vjt-o-sirenju-dezinformacija-o-smrti-advokata-vladimira-cvijana-neodgovorno-i-zlonamerno/vest",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T18:28:00+00:00",
-      "time": "18:28",
-      "source": "B92",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -519,20 +547,6 @@
       "priority": 66
     },
     {
-      "id": "https-www-danas-rs-kultura-kosingas-2-bezdanj-u-novom-ruhu-",
-      "title": "„Kosingas 2: Bezdanj“ u novom ruhu: Drugi deo fascinantne epske trilogije Aleksandra Tešića u knjižarama",
-      "url": "https://www.danas.rs/kultura/kosingas-2-bezdanj-u-novom-ruhu/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T13:00:00+00:00",
-      "time": "13:00",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "https-www-danas-rs-kultura-propao-milionski-ugovor-roman-ai-",
       "title": "Propao milionski ugovor za kriminalistički roman prvenac nakon sumnji da je u pisanju korišćena veštačka inteligencija",
       "url": "https://www.danas.rs/kultura/propao-milionski-ugovor-roman-ai/",
@@ -562,7 +576,7 @@
     },
     {
       "id": "5081-mup-se-oglasio-povodom-naoruzanog-muskarca-u-kragujevcu",
-      "title": "NOSIO SEKIRU, NOŽ, GASNI PIŠTOLJ... MUP se oglasio posle hapšenja naoružanog mladića (19) u centru Kragujevca",
+      "title": "NOSIO SEKIRU, NOŽ, GASNI PIŠTOLJ... MUP se oglasio posle hapšenja naoružanog mladića (19) u centru Kragujevca, blizu štanda SNS",
       "url": "https://www.kurir.rs/crna-hronika/10065081/mup-se-oglasio-povodom-naoruzanog-muskarca-u-kragujevcu",
       "date": "2026-08-01",
       "datetime": "2026-08-01T18:56:43+00:00",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "s-rs-vesti-hronika-6011659-policija-kragujevac-hapsenje-html",
-      "title": "Код младића у центру Крагујевца пронађени нож, секира и гасно-стартни пиштољ",
-      "url": "https://www.rts.rs/vesti/hronika/6011659/policija-kragujevac-hapsenje.html",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T19:19:02+00:00",
-      "time": "19:19",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
