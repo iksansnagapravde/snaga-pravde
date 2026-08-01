@@ -15,6 +15,20 @@
       "priority": 166
     },
     {
+      "id": "grinkevica-moracu-da-biram-izmedju-odbrane-izraela-i-mrp4nfv",
+      "title": "\"Moraću da BIRAM između odbrane Izraela i SAD\": Upozorenje Komandanta Evropske komande američke vojske Pentagonu",
+      "url": "https://www.blic.rs/vesti/svet/upozorenje-americkog-generala-grinkevica-moracu-da-biram-izmedju-odbrane-izraela-i/mrp4nfv",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T14:27:13+00:00",
+      "time": "14:27",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "onovi-napali-Rusiju-Dim-iznad-rafinerije-zatvoreni-aerodromi",
       "title": "POMRAČENJE NA NEBU IZNAD RUSIJE Više aerodroma hitno zatvoreno - gust crni dim prekrio ovaj grad! Napadnuta jedna od ključnih rafinerija",
       "url": "https://www.kurir.rs/planeta/10064708/Dronovi-napali-Rusiju-Dim-iznad-rafinerije-zatvoreni-aerodromi",
@@ -365,48 +379,6 @@
       "priority": 66
     },
     {
-      "id": "uzilastvo-povodom-smrti-hirurga-u-banatskom-karlovcu-6f034rp",
-      "title": "DEČAK (14) NOŽEM UBIO OČUHA Oglasilo se tužilaštvo povodom smrti hirurga u Banatskom Karlovcu: Maloletniku preti kazna VEĆA OD 10 GODINA!",
-      "url": "https://www.blic.rs/vesti/hronika/oglasilo-se-tuzilastvo-povodom-smrti-hirurga-u-banatskom-karlovcu/6f034rp",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T10:17:41+00:00",
-      "time": "10:17",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "i-hronika-podignuta-optuznica-za-bacanje-bombi-na-restorane-",
-      "title": "VJT: Podignuta optužnica za bacanje bombi na restorane \"Babaroga\" i \"Džeri\" u Beogradu",
-      "url": "https://nova.rs/vesti/hronika/podignuta-optuznica-za-bacanje-bombi-na-restorane/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T09:12:09+00:00",
-      "time": "09:12",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "a-za-bacanje-bombi-na-restorane-babaroga-i-dzeri-u-beogradu-",
-      "title": "VJT: Podignuta optužnica za bacanje bombi na restorane \"Babaroga\" i \"Džeri\" u Beogradu",
-      "url": "https://n1info.rs/vesti/vjt-podignuta-optuznica-za-bacanje-bombi-na-restorane-babaroga-i-dzeri-u-beogradu/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T08:34:01+00:00",
-      "time": "08:34",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "znica-protiv-osumnjicenih-za-bacanje-bombi-na-restorane-vest",
       "title": "Optužnica protiv osumnjičenih za bacanje bombi na dva poznata restorana u Beogradu: VJT otkrilo detalje",
       "url": "https://www.euronews.rs/srbija/aktuelno/235757/optuznica-protiv-osumnjicenih-za-bacanje-bombi-na-restorane/vest",
@@ -477,18 +449,18 @@
       "priority": 60
     },
     {
-      "id": "e-su-bile-u-svim-sezonama-zadruge-ovo-su-im-honorari-b0c9979",
-      "title": "OVE TRI RIJALITI ZVEZDE BILE SU U SVIM SEZONAMA \"ZADRUGE\" Šuška se da ulaze u \"Elitu 10\" - jedna od njih je NAJPLAĆENIJA, do sada zaradila 720.000 evra",
-      "url": "https://www.blic.rs/zabava/ove-tri-rijaliti-zvezde-su-bile-u-svim-sezonama-zadruge-ovo-su-im-honorari/b0c9979",
+      "id": "https-www-danas-rs-kultura-propao-milionski-ugovor-roman-ai-",
+      "title": "Propao milionski ugovor za kriminalistički roman prvenac nakon sumnji da je u pisanju korišćena veštačka inteligencija",
+      "url": "https://www.danas.rs/kultura/propao-milionski-ugovor-roman-ai/",
       "date": "2026-08-01",
-      "datetime": "2026-08-01T10:42:21+00:00",
-      "time": "10:42",
-      "source": "Blic",
-      "category": "Људска права",
+      "datetime": "2026-08-01T15:02:03+00:00",
+      "time": "15:02",
+      "source": "Danas",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
-      "alert": true,
-      "priority": 60
+      "alert": false,
+      "priority": 32
     },
     {
       "id": "za-borbu-protiv-korupcije-sta-koci-slucaj-pada-nadstresnice-",
@@ -517,6 +489,34 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid-",
+      "title": "Direktor Centra Srebrenica: Policija RS pokušava da kriminalizuje preživele i sećanje na genocid",
+      "url": "https://www.danas.rs/svet/region/direktor-centra-srebrenica-policija-rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid/",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T15:07:23+00:00",
+      "time": "15:07",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "amp-potvrdio-da-podrzava-toda-blansa-za-drzavnog-tuzioca-sad",
+      "title": "Трамп потврдио да подржава Тода Бланша за државног тужиоца САД",
+      "url": "https://www.politika.rs/scc/clanak/775587/tramp-potvrdio-da-podrzava-toda-blansa-za-drzavnog-tuzioca-sad",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T15:03:00+00:00",
+      "time": "15:03",
+      "source": "Politika",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "vi-dss-zloupotrebe-u-javnim-nabavkama-ikt-sektora-u-beogradu",
@@ -645,6 +645,20 @@
       "priority": 8
     },
     {
+      "id": "na-hronika-10064935-dva-tela-pronadjena-stan-bezanijska-kosa",
+      "title": "KURIR SAZNAJE! TELA BRATA I SESTRE PRONAĐENA U STANU U BEOGRADU: Horor na Bežaniji, policija na licu mesta",
+      "url": "https://www.kurir.rs/crna-hronika/10064935/dva-tela-pronadjena-stan-bezanijska-kosa",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T14:31:40+00:00",
+      "time": "14:31",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "jen-nijedan-ilegalni-migrant-nije-stigao-do-evropskog-kopna-",
       "title": "Fon der Lajen: Nijedan ilegalni migrant koji je upao u Seutu nije stigao do evropskog kopna",
       "url": "https://nova.rs/vesti/svet/fon-der-lajen-nijedan-ilegalni-migrant-nije-stigao-do-evropskog-kopna/",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-01T13:11:39+00:00",
       "time": "13:11",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-migrant-koji-je-upao-u-seutu-nije-stigao-do-evropskog-kopna",
-      "title": "Fon der Lajen: Nijedan ilegalni migrant koji je upao u Seutu nije stigao do evropskog kopna",
-      "url": "https://beta.rs/content/249442-fon-der-lajen-nijedan-ilegalni-migrant-koji-je-upao-u-seutu-nije-stigao-do-evropskog-kopna",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T12:45:08+00:00",
-      "time": "12:45",
-      "source": "Beta",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
