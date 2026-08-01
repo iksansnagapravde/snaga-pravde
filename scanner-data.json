@@ -15,20 +15,6 @@
       "priority": 104
     },
     {
-      "id": "grinkevica-moracu-da-biram-izmedju-odbrane-izraela-i-mrp4nfv",
-      "title": "\"Moraću da BIRAM između odbrane Izraela i SAD\": Upozorenje Komandanta Evropske komande američke vojske Pentagonu",
-      "url": "https://www.blic.rs/vesti/svet/upozorenje-americkog-generala-grinkevica-moracu-da-biram-izmedju-odbrane-izraela-i/mrp4nfv",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T14:27:13+00:00",
-      "time": "14:27",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "hmz-izdao-hitno-upozorenje-stize-najjaci-toplotni-talas-vest",
       "title": "RHMZ izdao hitno upozorenje: Stiže najjači toplotni talas, tri oblasti pod crvenim alarmom",
       "url": "https://www.euronews.rs/srbija/drustvo/235765/rhmz-izdao-hitno-upozorenje-stize-najjaci-toplotni-talas/vest",
@@ -251,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 76
+    },
+    {
+      "id": "ora-10065083-tri-fizicka-napada-crna-gora-uhapsene-dve-osobe",
+      "title": "POLICIJA RASVETLILA TRI NAPADA U CRNOJ GORI: Četvoro osumnjičeno za nasilje, dvoje uhapšeno",
+      "url": "https://www.kurir.rs/region/crna-gora/10065083/tri-fizicka-napada-crna-gora-uhapsene-dve-osobe",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T22:10:00+00:00",
+      "time": "22:10",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "0-niska-policija-sprecila-unos-pistolja-dronom-u-zatvor-vest",
