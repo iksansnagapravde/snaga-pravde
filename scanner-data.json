@@ -15,6 +15,20 @@
       "priority": 104
     },
     {
+      "id": "cu-nedelju-najekstremnije-vreme-pocinje-od-ovog-dana-c0zlheg",
+      "title": "SRBIJA NA UDARU EKSTREMNOG VREMENA! Celu sledeću nedelju bićemo u čeljustima vreline, a NAJŽEŠĆI PAKAO počinje od ovog dana: Evo šta nas čeka",
+      "url": "https://www.blic.rs/vremenska-prognoza/rhmz-objavio-prognozu-za-sledecu-nedelju-najekstremnije-vreme-pocinje-od-ovog-dana/c0zlheg",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T05:26:00+00:00",
+      "time": "05:26",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "ps-www-b92-net-info-svet-255137-rat-u-ukrajini-1619-dan-vest",
       "title": "Rat – dan 1.619: Rusi izvršili brutalan napad na Kijev; Ukrajinci nastavili udare na Krim FOTO/VIDEO",
       "url": "https://www.b92.net/info/svet/255137/rat-u-ukrajini-1619-dan/vest",
@@ -134,20 +148,6 @@
       "datetime": "2026-08-01T17:54:31+00:00",
       "time": "17:54",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "nozem-i-pistoljem-u-blizini-okupljenih-gradjana-u-kragujevcu",
-      "title": "DRAMA U KRAGUJEVCU! Uhapšen muškarac sa sekirom, nožem i pištoljem u blizini okupljenih građana",
-      "url": "https://www.kurir.rs/vesti/politika/10065051/uhapsen-muskarac-sa-sekirom-nozem-i-pistoljem-u-blizini-okupljenih-gradjana-u-kragujevcu",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T17:54:18+00:00",
-      "time": "17:54",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -309,20 +309,6 @@
       "priority": 70
     },
     {
-      "id": "w-rts-rs-vesti-hronika-6011455-hapsenje-nis-pistolj-kpz-html",
-      "title": "Мушкарац ухапшен у Нишу, сумња се да је дроном хтео да унесе пиштољ у затвор",
-      "url": "https://www.rts.rs/vesti/hronika/6011455/hapsenje-nis-pistolj-kpz.html",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T12:34:11+00:00",
-      "time": "12:34",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana-",
       "title": "Uhapšeni osumnjičeni za pokušaj ubistva Milana Ostojića Sandokana",
       "url": "https://www.krik.rs/uhapseni-osumnjiceni-za-pokusaj-ubistva-milana-ostojica-sandokana/",
@@ -335,6 +321,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-danas-rs-vesti-politika-snezana-paunovic-agencija-postupak-",
+      "title": "Slučaj Snežane Paunović: Da li bi tužilaštvo trebalo da ispita plate direktorki likvidiranog preduzeća?",
+      "url": "https://www.danas.rs/vesti/politika/snezana-paunovic-agencija-postupak/",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T05:59:19+00:00",
+      "time": "05:59",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "niceve-tvrdnje-da-je-cvijan-ubijen-neodgovorne-i-zlonamerne-",
@@ -421,20 +421,6 @@
       "priority": 66
     },
     {
-      "id": "ovodom-manipulacija-ivana-ninica-oko-smrti-vladimira-cvijana",
-      "title": "NEODGOVORNO I ZLONAMERNO! Više javno tužilaštvo se oglasilo povodom manipulacija činjenicama Ivana Ninića oko smrti Vladimira Cvijana",
-      "url": "https://www.kurir.rs/vesti/politika/10065067/vise-javno-tuzilastvo-se-oglasilo-povodom-manipulacija-ivana-ninica-oko-smrti-vladimira-cvijana",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T18:28:37+00:00",
-      "time": "18:28",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "-a-pred-tuzilastvom-detalji-postupka-nisu-dostupni-javnosti-",
       "title": "Slučaj isplate dnevnica na ruke na mitingu SNS-a pred tužilaštvom: Detalji postupka nisu dostupni javnosti",
       "url": "https://n1info.rs/vesti/slucaj-isplate-dnevnica-na-ruke-na-mitingu-sns-a-pred-tuzilastvom-detalji-postupka-nisu-dostupni-javnosti/",
@@ -463,20 +449,6 @@
       "priority": 66
     },
     {
-      "id": "a-ruskinja-namamio-je-u-stan-a-onda-je-usledio-horor-n4mp0qk",
-      "title": "NAMAMIO JE U STAN I ZADAVIO ODEĆOM! Otkriveno kako je Turčin ubio Ruskinju u Borči, oglasilo se tužilaštvo: Telo strpao u kofer i bacio ga u kanal (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/hronika/otkriveno-kako-je-ubijena-ruskinja-namamio-je-u-stan-a-onda-je-usledio-horor/n4mp0qk",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T16:06:47+00:00",
-      "time": "16:06",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "5808-vjt-trazi-pritvor-zbog-ubistva-ruskinje-u-beogradu-vest",
       "title": "Tužilaštvo traži pritvor za osumnjičenog da je ubio Ruskinju, on negirao krivično delo",
       "url": "https://www.euronews.rs/srbija/aktuelno/235808/vjt-trazi-pritvor-zbog-ubistva-ruskinje-u-beogradu/vest",
@@ -498,20 +470,6 @@
       "datetime": "2026-08-01T15:37:08+00:00",
       "time": "15:37",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "jen-izvestaj-o-maloletnicima-koji-su-zlostavljali-konja-html",
-      "title": "ВЈТ: Првом ОЈТ прослеђен извештај о малолетницима који су злостављали коња",
-      "url": "https://www.rts.rs/vesti/hronika/6011392/vjt-prvom-ojt-prosledjen-izvestaj-o-maloletnicima-koji-su-zlostavljali-konja.html",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T12:08:34+00:00",
-      "time": "12:08",
-      "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -561,20 +519,6 @@
       "priority": 66
     },
     {
-      "id": "https-www-danas-rs-kultura-propao-milionski-ugovor-roman-ai-",
-      "title": "Propao milionski ugovor za kriminalistički roman prvenac nakon sumnji da je u pisanju korišćena veštačka inteligencija",
-      "url": "https://www.danas.rs/kultura/propao-milionski-ugovor-roman-ai/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T15:02:03+00:00",
-      "time": "15:02",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "snica-nije-bila-slucajnost-vec-posledica-nemara-i-korupcije-",
       "title": "Komemorativni skup u Nišu: \"Nadstrešnica nije bila slučajnost, već posledica nemara i korupcije\"",
       "url": "https://nova.rs/vesti/drustvo/komemorativni-skup-u-nisu-nadstresnica-nije-bila-slucajnost-vec-posledica-nemara-i-korupcije/",
@@ -587,20 +531,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid-",
-      "title": "Direktor Centra Srebrenica: Policija RS pokušava da kriminalizuje preživele i sećanje na genocid",
-      "url": "https://www.danas.rs/svet/region/direktor-centra-srebrenica-policija-rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid/",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T15:07:23+00:00",
-      "time": "15:07",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "5081-mup-se-oglasio-povodom-naoruzanog-muskarca-u-kragujevcu",
@@ -617,18 +547,18 @@
       "priority": 26
     },
     {
-      "id": "i-10064463-kako-prepoznati-lazne-rezervacije-tokom-putovanja",
-      "title": "Lažne rezervacije seju paniku među putnicima: Sajber-kriminalci osmislili novu prevaru!",
-      "url": "https://www.kurir.rs/techvision/vesti/10064463/kako-prepoznati-lazne-rezervacije-tokom-putovanja",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T18:00:00+00:00",
-      "time": "18:00",
-      "source": "Kurir",
-      "category": "Криминал",
+      "id": "https-www-rts-rs-vesti-region-6011738-savo-strbac-html",
+      "title": "Штрбац за РТС: Пресуда генералу Ђукићу политичко-правосудни трофеј уочи \"Олује\"",
+      "url": "https://www.rts.rs/vesti/region/6011738/savo-strbac.html",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T06:20:44+00:00",
+      "time": "06:20",
+      "source": "RTS",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 24
+      "priority": 25
     },
     {
       "id": "vac-zadrzan-na-granici-ukp-ga-ispitivao-u-vezi-zvucnog-topa-",
@@ -699,6 +629,76 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
+      "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
+      "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T10:16:52+00:00",
+      "time": "10:16",
+      "source": "CINS",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
+    },
+    {
+      "id": "evropa-org-a-crna-gora-vize-rusija-turska-kina-33819104-html",
+      "title": "Rusi u Crnoj Gori traže nove adrese nakon uvođenja viza",
+      "url": "https://www.slobodnaevropa.org/a/crna-gora-vize-rusija-turska-kina/33819104.html",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T11:23:57+00:00",
+      "time": "11:23",
+      "source": "RSE Balkan",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "2-pucnjava-u-ajdahu-troje-mrtvih-osumnjiceni-likvidiran-vest",
+      "title": "Krvavi pir kod poznatog restorana: Ima mrtvih FOTO/VIDEO",
+      "url": "https://www.b92.net/info/svet/255352/pucnjava-u-ajdahu-troje-mrtvih-osumnjiceni-likvidiran/vest",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T05:43:00+00:00",
+      "time": "05:43",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "test-desnice-i-kontraskup-u-seuti-policija-sprecavala-sukobe",
+      "title": "Протест деснице и контраскуп у Сеути, полиција спречавала сукобе",
+      "url": "https://www.politika.rs/scc/clanak/775683/protest-desnice-i-kontraskup-u-seuti-policija-sprecavala-sukobe",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T05:27:00+00:00",
+      "time": "05:27",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-prokuplju-policija-istrazuje-ko-je-tokom-noci-ispustio-vodu",
+      "title": "ISPRAŽNJEN OLIMPIJSKI BAZEN U PROKUPLJU! Policija istražuje ko je tokom noći napravio haos na kupalištu",
+      "url": "https://www.kurir.rs/vesti/srbija/10064683/ispraznjen-olimpijski-bazen-u-prokuplju-policija-istrazuje-ko-je-tokom-noci-ispustio-vodu",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T23:00:00+00:00",
+      "time": "23:00",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
