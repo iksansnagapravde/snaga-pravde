@@ -85,20 +85,6 @@
       "priority": 92
     },
     {
-      "id": "hronika-10065641-akcija-ulcinj-uhapsene-tri-osobe-zbog-droge",
-      "title": "BEOGRAĐANKA UHAPŠENA NA CRNOGORSKOJ PLAŽI, PORED NJE \"PAO\" I BOSANAC: Evo zbog čega su im stavljene lisice na ruke",
-      "url": "https://www.kurir.rs/crna-hronika/10065641/akcija-ulcinj-uhapsene-tri-osobe-zbog-droge",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T15:06:59+00:00",
-      "time": "15:06",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-n1info-rs-region-ulcinj-uhapsena-drzavljanka-srbije-kokain-",
       "title": "U Ulcinju uhapšena državljanka Srbije, kod nje pronađen kokain",
       "url": "https://n1info.rs/region/ulcinj-uhapsena-drzavljanka-srbije-kokain/",
@@ -267,20 +253,6 @@
       "priority": 76
     },
     {
-      "id": "onika-beogradjanka-37-uhapsena-na-plazi-u-crnoj-gori-5bvnx1b",
-      "title": "BEOGRAĐANKA UHAPŠENA NA PLAŽI U CRNOJ GORI! Sa njom \"pao\" i muškarac iz \"BiH\", evo zbog čega joj je policija stavila lisice na ruke",
-      "url": "https://www.blic.rs/vesti/hronika/beogradjanka-37-uhapsena-na-plazi-u-crnoj-gori/5bvnx1b",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T15:20:40+00:00",
-      "time": "15:20",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "a-zubin-potok-kosovo-masovna-grobnica-hapsenja-33820166-html",
       "title": "Kosovo uhapsilo još jednog osumnjičenog za ratne zločine u Zubinom Potoku",
       "url": "https://www.slobodnaevropa.org/a/zubin-potok-kosovo-masovna-grobnica-hapsenja-/33820166.html",
@@ -377,6 +349,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "ptuzila-za-korupciju-i-cenzuru-on-je-glavni-problem-ukrajine",
+      "title": "Бивша портпаролка Зеленског га оптужила за корупцију и цензуру: Он је главни проблем Украјине",
+      "url": "https://www.politika.rs/scc/clanak/775924/bivsa-portparolka-zelenskog-ga-optuzila-za-korupciju-i-cenzuru-on-je-glavni-problem-ukrajine",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T22:05:00+00:00",
+      "time": "22:05",
+      "source": "Politika",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "jim-policija-traga-zbog-pucnjave-u-kaficu-u-istocnom-e94wylk",
@@ -505,6 +491,20 @@
       "priority": 25
     },
     {
+      "id": "ruzje-iz-ukrajine-pojavilo-se-kod-kriminalnih-grupa-u-evropi",
+      "title": "Мирошник: оружје из Украјине појавило се код криминалних група у Европи",
+      "url": "https://www.politika.rs/scc/clanak/775928/mirosnik-oruzje-iz-ukrajine-pojavilo-se-kod-kriminalnih-grupa-u-evropi",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -561,6 +561,20 @@
       "priority": 8
     },
     {
+      "id": "i-svet-more-izbacilo-700000-evra-na-plazi-u-siciliji-wrfzr2p",
+      "title": "MORE \"IZBACILO\" 700.000 EVRA Filmska scena na plaži: Kupači nisu mogli da veruju šta vide (VIDEO)",
+      "url": "https://www.blic.rs/vesti/svet/more-izbacilo-700000-evra-na-plazi-u-siciliji/wrfzr2p",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T21:39:39+00:00",
+      "time": "21:39",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ronovi-ce-loviti-prekrsaje-menja-se-i-probna-vozacka-151js5w",
       "title": "VELIKA PROMENA U SAOBRAĆAJU! Policija dobija MOĆNO POJAČANJE od kojeg bahati vozači ne mogu da pobegnu, ALI TO NIJE SVE: Još jedna važna izmena stiže u septembru",
       "url": "https://www.blic.rs/vesti/drustvo/velike-promene-za-vozace-dronovi-ce-loviti-prekrsaje-menja-se-i-probna-vozacka/151js5w",
@@ -582,20 +596,6 @@
       "datetime": "2026-08-02T20:41:45+00:00",
       "time": "20:41",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-muskarca-pronadeno-na-krovu-skole-mozda-je-tu-bio-nedeljama",
-      "title": "САД: Тело мушкарца пронађено на крову школе, можда је ту био недељама",
-      "url": "https://www.politika.rs/scc/clanak/775896/sad-telo-muskarca-pronadeno-na-krovu-skole-mozda-je-tu-bio-nedeljama",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T20:05:00+00:00",
-      "time": "20:05",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
