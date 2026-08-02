@@ -85,20 +85,6 @@
       "priority": 94
     },
     {
-      "id": "arodnoj-poternici-trazi-ga-grcka-zbog-kompjuterskih-prevara-",
-      "title": "Državljanin Makedonije uhapšen na granici sa Srbijom po međunarodnoj poternici, traži ga Grčka zbog kompjuterskih prevara",
-      "url": "https://www.danas.rs/vesti/drustvo/drzavljanin-makedonije-uhapsen-na-granici-sa-srbijom-po-medjunarodnoj-poternici-trazi-ga-grcka-zbog-kompjuterskih-prevara/",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T11:33:35+00:00",
-      "time": "11:33",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 94
-    },
-    {
       "id": "hronika-10065641-akcija-ulcinj-uhapsene-tri-osobe-zbog-droge",
       "title": "BEOGRAĐANKA UHAPŠENA NA CRNOGORSKOJ PLAŽI, PORED NJE \"PAO\" I BOSANAC: Evo zbog čega su im stavljene lisice na ruke",
       "url": "https://www.kurir.rs/crna-hronika/10065641/akcija-ulcinj-uhapsene-tri-osobe-zbog-droge",
@@ -218,20 +204,6 @@
       "datetime": "2026-08-02T11:50:51+00:00",
       "time": "11:50",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "41-musakarc-uhapsen-na-zlatiboru-scena-kao-iz-akcionog-filma",
-      "title": "SAV U BELOM I BOS, SA RUKAMA IZA LEĐA, POLICAJCI GA DRŽE: Na Zlatiboru zabeležena scena kao u akcionom filmu, jedan muškarac uhapšen! (video)",
-      "url": "https://www.kurir.rs/crna-hronika/10065441/musakarc-uhapsen-na-zlatiboru-scena-kao-iz-akcionog-filma",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T11:18:54+00:00",
-      "time": "11:18",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -407,20 +379,6 @@
       "priority": 70
     },
     {
-      "id": "o-medjunarodnoj-poternici-ceka-ga-16-godina-robije-u-grckoj-",
-      "title": "Državljanin Severne Makedonije uhapšen na granici po međunarodnoj poternici: Čeka ga 16 godina robije u Grčkoj",
-      "url": "https://nova.rs/vesti/hronika/drzavljanin-severne-makedonije-uhapsen-na-granici-po-medjunarodnoj-poternici-ceka-ga-16-godina-robije-u-grckoj/",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T11:34:39+00:00",
-      "time": "11:34",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "a-zubin-potok-kosovo-masovna-grobnica-hapsenja-33820166-html",
       "title": "Kosovo uhapsilo još jednog osumnjičenog za ratne zločine u Zubinom Potoku",
       "url": "https://www.slobodnaevropa.org/a/zubin-potok-kosovo-masovna-grobnica-hapsenja-/33820166.html",
@@ -547,6 +505,20 @@
       "priority": 28
     },
     {
+      "id": "apsenja-srba-na-kim-nezapamcen-pritisak-na-srpski-narod-vest",
+      "title": "Srpska lista: &quot;Učestala hapšenja Srba na KiM nezapamćen pritisak na srpski narod&quot;",
+      "url": "https://www.b92.net/info/kosovo/255516/srpska-lista-ucestala-hapsenja-srba-na-kim-nezapamcen-pritisak-na-srpski-narod/vest",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T16:20:00+00:00",
+      "time": "16:20",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "5912-srpska-lista-o-hapsenjima-srba-u-ibarskom-kolasinu-vest",
       "title": "Srpska lista: Hapšenja i pretresi u Ibarskom Kolašinu predstavljaju pritisak na srpski narod",
       "url": "https://www.euronews.rs/srbija/politika/235912/srpska-lista-o-hapsenjima-srba-u-ibarskom-kolasinu/vest",
@@ -631,20 +603,6 @@
       "priority": 24
     },
     {
-      "id": "rpolove-poternice-hapsenje-na-aerodromu-nikola-tesla-gkv5lv5",
-      "title": "HAPŠENJE NA AERODROMU \"NIKOLA TESLA\"! Pao kriminalac sa Interpolove poternice",
-      "url": "https://www.blic.rs/vesti/hronika/pao-kriminalac-sa-interpolove-poternice-hapsenje-na-aerodromu-nikola-tesla/gkv5lv5",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T12:37:30+00:00",
-      "time": "12:37",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -687,6 +645,20 @@
       "priority": 8
     },
     {
+      "id": "et-255524-napad-bombasa-samoubice-u-pakistanu-14-mrtvih-vest",
+      "title": "Napad bombaša samoubice; Najmanje 14 mrtvih – preko 20 ranjenih VIDEO",
+      "url": "https://www.b92.net/info/svet/255524/napad-bombasa-samoubice-u-pakistanu-14-mrtvih/vest",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T16:42:00+00:00",
+      "time": "16:42",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "d-nove-varosi-otkriveno-15-slucajeva-nepropisnog-preticanja-",
       "title": "MUP: Za nekoliko sati, dronom kod Nove Varoši, otkriveno 15 slučajeva nepropisnog preticanja",
       "url": "https://www.danas.rs/vesti/drustvo/mup-za-nekoliko-sati-dronom-kod-nove-varosi-otkriveno-15-slucajeva-nepropisnog-preticanja/",
@@ -694,6 +666,34 @@
       "datetime": "2026-08-02T15:18:32+00:00",
       "time": "15:18",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "on-otkrio-15-nepropisnih-preticanja-nova-varos-borova-glava-",
+      "title": "(VIDEO) Za nekoliko sati dronom otkriveno 15 preticanja na punoj liniji kod Nove Varoši",
+      "url": "https://n1info.rs/vesti/dron-otkrio-15-nepropisnih-preticanja-nova-varos-borova-glava/",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T15:18:30+00:00",
+      "time": "15:18",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "j-ovo-je-prvo-sto-morate-da-uradite-kazne-su-ogromne-rd1rsxd",
+      "title": "KAZNE SU OGROMNE Ako vam skinu tablice u Grčkoj, ovo je prvo što morate da uradite",
+      "url": "https://www.blic.rs/vesti/drustvo/ako-vam-skinu-tablice-u-grckoj-ovo-je-prvo-sto-morate-da-uradite-kazne-su-ogromne/rd1rsxd",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T13:47:17+00:00",
+      "time": "13:47",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
