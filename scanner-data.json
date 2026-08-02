@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "ika-10064726-roditelji-dece-koja-su-tukla-konja-pod-istragom",
-      "title": "DECA DANIMA ZLOSTAVLJALA KONJA, UZNEMIRJUĆI SNIMCI ZGROZILI JAVNOST: VIše javno tužilaštvo u Beogradu hitno reagovalo, pod istragom roditelji dece! (video)",
-      "url": "https://www.kurir.rs/crna-hronika/10064726/roditelji-dece-koja-su-tukla-konja-pod-istragom",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T10:55:06+00:00",
-      "time": "10:55",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 166
-    },
-    {
       "id": "om-nozem-i-pistoljem-u-blizini-okupljenih-gradjana-u-805hm5g",
       "title": "\"DOŠAO JE IZ PRAVCA ŠTANDA STUDENTSKE LISTE\" Sprečen napad na aktivistu SNS: Mladić u torbi nosio SEKIRU, NOŽ i PIŠTOLJ",
       "url": "https://www.blic.rs/vesti/politika/uhapsen-mladic-sa-sekirom-nozem-i-pistoljem-u-blizini-okupljenih-gradjana-u/805hm5g",
@@ -37,20 +23,6 @@
       "time": "21:55",
       "source": "B92",
       "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "onovi-napali-Rusiju-Dim-iznad-rafinerije-zatvoreni-aerodromi",
-      "title": "POMRAČENJE NA NEBU IZNAD RUSIJE Više aerodroma hitno zatvoreno - gust crni dim prekrio ovaj grad! Napadnuta jedna od ključnih rafinerija",
-      "url": "https://www.kurir.rs/planeta/10064708/Dronovi-napali-Rusiju-Dim-iznad-rafinerije-zatvoreni-aerodromi",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T10:25:17+00:00",
-      "time": "10:25",
-      "source": "Kurir",
-      "category": "Лишени слободе",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -97,6 +69,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "ra-10065036-crna-gora-falsifikovane-vozacke-dozvole-uhapseni",
+      "title": "DRŽAVLJANI INDIJE I RUSIJE POKAZALI DOKUMENTA NA GRANICI - ODMAH UHAPŠENI! Drama na crnogorskoj granici: Stavljene im LISICE na ruke, zbog ovoga im preti zatvor",
+      "url": "https://www.kurir.rs/region/crna-gora/10065036/crna-gora-falsifikovane-vozacke-dozvole-uhapseni",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "k-uhapsen-sa-arsenalom-oruzja-kod-standa-sns-a-u-kragujevcu-",
@@ -148,6 +134,20 @@
       "datetime": "2026-08-01T17:54:31+00:00",
       "time": "17:54",
       "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "nozem-i-pistoljem-u-blizini-okupljenih-gradjana-u-kragujevcu",
+      "title": "DRAMA U KRAGUJEVCU! Uhapšen muškarac sa sekirom, nožem i pištoljem u blizini okupljenih građana",
+      "url": "https://www.kurir.rs/vesti/politika/10065051/uhapsen-muskarac-sa-sekirom-nozem-i-pistoljem-u-blizini-okupljenih-gradjana-u-kragujevcu",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T17:54:18+00:00",
+      "time": "17:54",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -265,6 +265,20 @@
       "breaking": false,
       "alert": true,
       "priority": 76
+    },
+    {
+      "id": "ora-10065083-tri-fizicka-napada-crna-gora-uhapsene-dve-osobe",
+      "title": "POLICIJA RASVETLILA TRI NAPADA U CRNOJ GORI: Četvoro osumnjičeno za nasilje, dvoje uhapšeno",
+      "url": "https://www.kurir.rs/region/crna-gora/10065083/tri-fizicka-napada-crna-gora-uhapsene-dve-osobe",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T22:10:00+00:00",
+      "time": "22:10",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "0-niska-policija-sprecila-unos-pistolja-dronom-u-zatvor-vest",
@@ -393,6 +407,20 @@
       "priority": 66
     },
     {
+      "id": "ovodom-manipulacija-ivana-ninica-oko-smrti-vladimira-cvijana",
+      "title": "NEODGOVORNO I ZLONAMERNO! Više javno tužilaštvo se oglasilo povodom manipulacija činjenicama Ivana Ninića oko smrti Vladimira Cvijana",
+      "url": "https://www.kurir.rs/vesti/politika/10065067/vise-javno-tuzilastvo-se-oglasilo-povodom-manipulacija-ivana-ninica-oko-smrti-vladimira-cvijana",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T18:28:37+00:00",
+      "time": "18:28",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "-a-pred-tuzilastvom-detalji-postupka-nisu-dostupni-javnosti-",
       "title": "Slučaj isplate dnevnica na ruke na mitingu SNS-a pred tužilaštvom: Detalji postupka nisu dostupni javnosti",
       "url": "https://n1info.rs/vesti/slucaj-isplate-dnevnica-na-ruke-na-mitingu-sns-a-pred-tuzilastvom-detalji-postupka-nisu-dostupni-javnosti/",
@@ -456,20 +484,6 @@
       "datetime": "2026-08-01T15:37:08+00:00",
       "time": "15:37",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-influenserka-kortni-kleni-ubila-decka-kristijana-obumselija",
-      "title": "\"IZLAZIM SAMO SA BOGATIM CRNCIMA\" Influenserka i \"OnlyFans\" model BRUTALNO ubila svog dečka Kristijana! Sklopila je dogovor sa tužilaštvom! (FOTO)",
-      "url": "https://www.kurir.rs/planeta/10064853/influenserka-kortni-kleni-ubila-decka-kristijana-obumselija",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T13:09:03+00:00",
-      "time": "13:09",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -561,20 +575,6 @@
       "priority": 30
     },
     {
-      "id": "-10064684-ukc-nis-ekspresne-promene-i-ukidanje-lista-cekanja",
-      "title": "Ekspresne promene u UKC Niš dale rezultate za samo dva i po meseca: Bez čekanja, bez korupcije, uz novu opremu i podršku države!",
-      "url": "https://www.kurir.rs/vesti/drustvo/10064684/ukc-nis-ekspresne-promene-i-ukidanje-lista-cekanja",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T10:33:08+00:00",
-      "time": "10:33",
-      "source": "Kurir",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid-",
       "title": "Direktor Centra Srebrenica: Policija RS pokušava da kriminalizuje preživele i sećanje na genocid",
       "url": "https://www.danas.rs/svet/region/direktor-centra-srebrenica-policija-rs-pokusava-da-kriminalizuje-prezivele-i-secanje-na-genocid/",
@@ -587,6 +587,34 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "5081-mup-se-oglasio-povodom-naoruzanog-muskarca-u-kragujevcu",
+      "title": "NOSIO SEKIRU, NOŽ, GASNI PIŠTOLJ... MUP se oglasio posle hapšenja naoružanog mladića (19) u centru Kragujevca, blizu štanda SNS",
+      "url": "https://www.kurir.rs/crna-hronika/10065081/mup-se-oglasio-povodom-naoruzanog-muskarca-u-kragujevcu",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T18:56:43+00:00",
+      "time": "18:56",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "i-10064463-kako-prepoznati-lazne-rezervacije-tokom-putovanja",
+      "title": "Lažne rezervacije seju paniku među putnicima: Sajber-kriminalci osmislili novu prevaru!",
+      "url": "https://www.kurir.rs/techvision/vesti/10064463/kako-prepoznati-lazne-rezervacije-tokom-putovanja",
+      "date": "2026-08-01",
+      "datetime": "2026-08-01T18:00:00+00:00",
+      "time": "18:00",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "vac-zadrzan-na-granici-ukp-ga-ispitivao-u-vezi-zvucnog-topa-",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "evropa-org-a-crna-gora-vize-rusija-turska-kina-33819104-html",
-      "title": "Rusi u Crnoj Gori traže nove adrese nakon uvođenja viza",
-      "url": "https://www.slobodnaevropa.org/a/crna-gora-vize-rusija-turska-kina/33819104.html",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T11:23:57+00:00",
-      "time": "11:23",
-      "source": "RSE Balkan",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "en-u-niksicu-policija-traga-za-ubicom-nakon-pucnjave-nst87dr",
-      "title": "OVO JE \"ŠKALJARAC\" KOJI JE UBIJEN U NIKŠIĆU Stavljali mu kesu na glavu, gušili ga i pretili mu silovanjem, on za sve optužio Zvicerove policajce",
-      "url": "https://www.blic.rs/vesti/hronika/jovan-mrvaljevic-ubijen-u-niksicu-policija-traga-za-ubicom-nakon-pucnjave/nst87dr",
-      "date": "2026-08-01",
-      "datetime": "2026-08-01T21:49:16+00:00",
-      "time": "21:49",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
