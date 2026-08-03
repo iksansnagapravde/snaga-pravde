@@ -155,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "https-www-danas-rs-svet-francuska-privedeno-375-osoba-pozar-",
-      "title": "U Francuskoj privedeno 375 osoba povezanih sa izbijanjem požara, među njima 142 maloletnika",
-      "url": "https://www.danas.rs/svet/francuska-privedeno-375-osoba-pozar/",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T15:37:49+00:00",
-      "time": "15:37",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "ts-rs-vesti-hronika-6012395-mup-mladic-tuca-niska-banja-html",
       "title": "Ухапшенe три особе осумњичене да су тукле младића у околини Нишке Бање",
       "url": "https://www.rts.rs/vesti/hronika/6012395/mup-mladic-tuca-niska-banja.html",
@@ -407,20 +393,6 @@
       "priority": 60
     },
     {
-      "id": "nu-goru-otisao-na-jedno-od-omiljenih-mesta-novaka-djokovica-",
-      "title": "Najbolj igrač Mundijala došao u Crnu Goru, otišao na jedno od omiljenih mesta Novaka Đokovića",
-      "url": "https://nova.rs/sport/fudbal/najbolj-igrac-mundijala-dosao-u-crnu-goru-otisao-na-jedno-od-omiljenih-mesta-novaka-djokovica/",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T15:39:42+00:00",
-      "time": "15:39",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "nas-rs-vesti-politika-preseljenje-biraca-biracki-spisak-mup-",
       "title": "Birači migriraju i dalje, tvrde opozicionari i aktivisti, dok se odgovor MUP-a čeka",
       "url": "https://www.danas.rs/vesti/politika/preseljenje-biraca-biracki-spisak-mup/",
@@ -503,6 +475,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "ovo-je-davor-dabic-koji-je-upucan-u-glavu-u-sarajevu-jxx6e0b",
+      "title": "OVO JE MUŠKARAC KOJI JE UPUCAN U GLAVU ISPRED KAFIĆA! Ima debeo dosije, član jednog od najopasnijih kriminalnih grupa u regionu: Opsadno stanje u Sarajevu",
+      "url": "https://www.blic.rs/vesti/hronika/ovo-je-davor-dabic-koji-je-upucan-u-glavu-u-sarajevu/jxx6e0b",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T21:25:24+00:00",
+      "time": "21:25",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "-glavu-u-sarajevu-sumnja-se-da-je-clan-elezove-grupe-ms19t27",
@@ -589,18 +575,18 @@
       "priority": 8
     },
     {
-      "id": "sport-fudbal-10066528-dzejdon-sanco-trenira-sa-desetoligasem",
-      "title": "NEKADA SU GA PLATILI 85 MILIONA EVRA, A ON SADA TRENIRA SA DESETOLIGAŠEM! Kakav sunovrat čuvenog fudbalera, engleski mediji bruje o njemu!",
-      "url": "https://www.kurir.rs/sport/fudbal/10066528/dzejdon-sanco-trenira-sa-desetoligasem",
+      "id": "teska-saobracajna-nesreca-kod-vrbasa-ima-povredjenih-6fdfvk1",
+      "title": "(FOTO) TEŠKA SAOBRAĆAJNA NESREĆA KOD VRBASA Ima povređenih: Policija na licu mesta",
+      "url": "https://www.blic.rs/vesti/hronika/teska-saobracajna-nesreca-kod-vrbasa-ima-povredjenih/6fdfvk1",
       "date": "2026-08-03",
-      "datetime": "2026-08-03T15:11:24+00:00",
-      "time": "15:11",
-      "source": "Kurir",
-      "category": "Људска права",
+      "datetime": "2026-08-03T21:37:50+00:00",
+      "time": "21:37",
+      "source": "Blic",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 8
+      "priority": 4
     },
     {
       "id": "nom-sarajevu-ranjen-davor-dabic-policija-traga-za-napadacem-",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "iji-moze-da-trazi-novi-obracun-penzije-ovo-su-uslovi-mvtebmb",
+      "title": "Ova grupa penzionera ima pravo na novi obračun primanja: Oglasio se PIO fond, evo koji su uslovi",
+      "url": "https://www.blic.rs/biznis/ova-grupa-penzionera-u-srbiji-moze-da-trazi-novi-obracun-penzije-ovo-su-uslovi/mvtebmb",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T22:01:59+00:00",
+      "time": "22:01",
+      "source": "Blic",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
