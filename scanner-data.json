@@ -155,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "s-rs-vesti-hronika-6011786-horgos-hapsenje-ratni-zlocin-html",
-      "title": "Хапшење на Хоргошу, мушкарац осумњичен за ратни злочин",
-      "url": "https://www.rts.rs/vesti/hronika/6011786/horgos-hapsenje-ratni-zlocin.html",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T09:21:33+00:00",
-      "time": "09:21",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "5865-horgos-uhapsen-osumnjiceni-za-ratni-zlocin-iz-1999-vest",
       "title": "Na Horgošu uhapšen osumnjičeni za ratni zločin nad civilima na Kosovu i Metohiji",
       "url": "https://www.euronews.rs/srbija/drustvo/235865/horgos-uhapsen-osumnjiceni-za-ratni-zlocin-iz-1999/vest",
@@ -449,18 +435,18 @@
       "priority": 26
     },
     {
-      "id": "i-politika-6011773-hapsenja-na-kim-navodni-ratni-zlocin-html",
-      "title": "Још једно хапшење за наводни ратни злочин у Зубином Потоку",
-      "url": "https://www.rts.rs/vesti/politika/6011773/hapsenja-na-kim-navodni-ratni-zlocin.html",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T09:00:41+00:00",
-      "time": "09:00",
-      "source": "RTS",
-      "category": "Хапшења",
+      "id": "ole-koji-je-svirepo-ubijen-u-indjiji-njegovo-srce-je-ze3cgpk",
+      "title": "\"GLEDALA SAM KAKO MU SE GASI SRCE NA APARATIMA\" Bolna ispovest majke Zorana Gole koji je svirepo ubijen u Inđiji: \"Njegovo srce je bilo PRESEČENO\"",
+      "url": "https://www.blic.rs/vesti/hronika/bolna-ispovest-majke-zorana-gole-koji-je-svirepo-ubijen-u-indjiji-njegovo-srce-je/ze3cgpk",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T03:42:00+00:00",
+      "time": "03:42",
+      "source": "Blic",
+      "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 26
+      "priority": 25
     },
     {
       "id": "https-www-danas-rs-svet-moldavija-pravosudje-reforma-",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-02T17:39:43+00:00",
       "time": "17:39",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-u-grckoj-na-identican-nacin-kao-ruskinja-u-beogradu-syp0lfm",
+      "title": "TURISTKINJA NAĐENA MRTVA U KOFERU U GRČKOJ Liza ubijena u zgradi u Atini na identičan način kao Ruskinja u Beogradu: U oba slučaja osumnjičeni radili gotovo iste stvari",
+      "url": "https://www.blic.rs/vesti/svet/turistkinja-ubijena-u-grckoj-na-identican-nacin-kao-ruskinja-u-beogradu/syp0lfm",
+      "date": "2026-08-02",
+      "datetime": "2026-08-02T17:29:59+00:00",
+      "time": "17:29",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
