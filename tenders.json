@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 13440.0,
+    "lowest": 1202.0,
+    "difference": 12238.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 165906,
+    "file": "documents/165906_477-O-195.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 7202.0,
+    "lowest": 1202.0,
+    "difference": 6000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 165905,
+    "file": "documents/165905_476-O-195.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 35280000.0,
     "lowest": 8202.0,
     "difference": 35271798.0,
@@ -64,16 +86,5 @@
     "rejection_reasons": [],
     "id": 100164032,
     "file": "documents/100164032_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 81180.0,
-    "lowest": 8202.0,
-    "difference": 72978.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101822498,
-    "file": "documents/101822498_Odluka o dodeli.docx"
   }
 ]
