@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "lasila-zbog-uznemiravanja-koje-dozivljava-nemam-mira-4xks5lb",
+      "title": "NE MOŽE VIŠE DA TRPI TORTURU Maja Marinković se hitno oglasila zbog UZNEMIRAVANJA koje doživljava: \"Ja nemam mira\" (FOTO)",
+      "url": "https://www.blic.rs/zabava/maja-marinkovic-se-oglasila-zbog-uznemiravanja-koje-dozivljava-nemam-mira/4xks5lb",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T17:28:00+00:00",
+      "time": "17:28",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "sen-zastupnik-udruzenja-iz-futoga-zbog-pronevere-87-mil-vest",
       "title": "Uhapšen zastupnik udruženja iz Futoga: Oštetio budžet Novog Sada i Vojvodine za skoro 8,7 miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/236020/uhapsen-zastupnik-udruzenja-iz-futoga-zbog-pronevere-87-mil/vest",
@@ -55,6 +69,34 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "ncanja-zapalila-crkvu-napravila-stetu-od-100000-evra-3zx82xl",
+      "title": "Mlada dan pre venčanja ZAPALILA crkvu: Umesto svadbe usledilo hapšenje",
+      "url": "https://www.blic.rs/slobodno-vreme/mlada-dan-pre-vencanja-zapalila-crkvu-napravila-stetu-od-100000-evra/3zx82xl",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T17:21:45+00:00",
+      "time": "17:21",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "6091-uhapsen-zbog-sumnje-da-je-podstrekao-bacanje-bombi-vest",
+      "title": "Uhapšen mladić u Smederevu zbog podstrekivanja drugih da bace bombe na ugostiteljske objekte",
+      "url": "https://www.euronews.rs/srbija/aktuelno/236091/uhapsen-zbog-sumnje-da-je-podstrekao-bacanje-bombi/vest",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T16:24:00+00:00",
+      "time": "16:24",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-povezanih-sa-izbijanjem-pozara-medju-njima-142-maloletnika-",
@@ -141,34 +183,6 @@
       "priority": 92
     },
     {
-      "id": "kradja-automobila-iz-kuca-krali-kljuceve-pa-odvozili-vozila-",
-      "title": "Uhapšeni zbog serije krađa automobila: Iz kuća krali ključeve, pa odvozili vozila",
-      "url": "https://nova.rs/vesti/hronika/uhapseni-zbog-serije-kradja-automobila-iz-kuca-krali-kljuceve-pa-odvozili-vozila/",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T13:17:33+00:00",
-      "time": "13:17",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-nova-rs-vesti-hronika-uhapsen-mladic-iz-zablja-zbog-kradja-",
-      "title": "Uhapšen mladić iz Žablja: Sumnja se da je obio trafiku i još tri lokala u Novom Sadu",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-mladic-iz-zablja-zbog-kradja/",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T13:09:33+00:00",
-      "time": "13:09",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "ijatelji-ubijene-ruskinje-tvrde-da-je-ubica-njen-bivsi-decko",
       "title": "NOVI DETALJI UBISTVA LEPE LJUDMILE U BEOGRADU: Iz Istanbula stigla tri dana pre nego što je zadavljena, prijatelji tvrde da je uhapšeni Turčin njen bivši dečko?",
       "url": "https://www.kurir.rs/crna-hronika/10066344/prijatelji-ubijene-ruskinje-tvrde-da-je-ubica-njen-bivsi-decko",
@@ -176,20 +190,6 @@
       "datetime": "2026-08-03T12:44:35+00:00",
       "time": "12:44",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "apsenje-novosadska-fabrika-znanja-policija-malverzacije-html",
-      "title": "Заступник удружења \"Новосадска фабрика знања\" ухапшен због малверзација",
-      "url": "https://www.rts.rs/vesti/hronika/6012154/hapsenje-novosadska-fabrika-znanja-policija-malverzacije.html",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T09:13:29+00:00",
-      "time": "09:13",
-      "source": "RTS",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -421,20 +421,6 @@
       "priority": 66
     },
     {
-      "id": "or-za-drzavljanina-turske-osumnjicenog-za-napad-na-policajce",
-      "title": "Tužilaštvo u Beogradu traži pritvor za državljanina Turske osumnjičenog za napad na policajce",
-      "url": "https://beta.rs/content/249556-tuzilastvo-u-beogradu-trazi-pritvor-za-drzavljanina-turske-osumnjicenog-za-napad-na-policajce",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T14:10:10+00:00",
-      "time": "14:10",
-      "source": "Beta",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "r-za-drzavljanina-turske-osumnjicenog-za-napad-na-policajce-",
       "title": "Tužilaštvo u Beogradu traži pritvor za državljanina Turske osumnjičenog za napad na policajce",
       "url": "https://n1info.rs/vesti/tuzilastvo-u-beogradu-trazi-pritvor-za-drzavljanina-turske-osumnjicenog-za-napad-na-policajce/",
@@ -491,6 +477,20 @@
       "priority": 66
     },
     {
+      "id": "rama-na-durmitoru-grk-slomio-nogu-tokom-planinarenja-x557p29",
+      "title": "GRK SLOMIO NOGU TOKOM PLANINARENJA Drama na Durmitoru: Usledila hitna akcija spasavanja",
+      "url": "https://www.blic.rs/vesti/drustvo/drama-na-durmitoru-grk-slomio-nogu-tokom-planinarenja/x557p29",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T16:46:31+00:00",
+      "time": "16:46",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "nu-goru-otisao-na-jedno-od-omiljenih-mesta-novaka-djokovica-",
       "title": "Najbolj igrač Mundijala došao u Crnu Goru, otišao na jedno od omiljenih mesta Novaka Đokovića",
       "url": "https://nova.rs/sport/fudbal/najbolj-igrac-mundijala-dosao-u-crnu-goru-otisao-na-jedno-od-omiljenih-mesta-novaka-djokovica/",
@@ -519,20 +519,6 @@
       "priority": 28
     },
     {
-      "id": "etohija-zubin-potok-nestali-hapsenja-kancelarija-za-kim-html",
-      "title": "Петковић: Приштина политизује питање несталих и жигоше Зубин Поток",
-      "url": "https://www.rts.rs/vesti/politika/6012265/kosovo-i-metohija-zubin-potok-nestali-hapsenja-kancelarija-za-kim.html",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T11:46:34+00:00",
-      "time": "11:46",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "80-nikolic-hapsenja-srba-na-kim-puzece-etnicko-ciscenje-vest",
       "title": "Nikolić: Hapšenja Srba na Kosovu i Metohiji \"puzeće\" etničko čišćenje",
       "url": "https://www.euronews.rs/srbija/politika/235980/nikolic-hapsenja-srba-na-kim-puzece-etnicko-ciscenje/vest",
@@ -559,20 +545,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "tati-dok-ne-saznamo-sudbinu-poslednjeg-nestalog-u-oluji-html",
-      "title": "Станисављевић: Нећемо стати док не сазнамо судбину последњег несталог у \"Олуји\"",
-      "url": "https://www.rts.rs/vesti/drustvo/6012102/stanisavljevic-necemo-stati-dok-ne-saznamo-sudbinu-poslednjeg-nestalog-u-oluji.html",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T11:51:04+00:00",
-      "time": "11:51",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     },
     {
       "id": "60-strbac-presuda-borislavu-dukicu-tempirana-uoci-oluje-vest",
@@ -631,6 +603,20 @@
       "priority": 22
     },
     {
+      "id": "-u-beogradu-vucic-i-dejna-vajt-privukli-2-5-miliona-pregleda",
+      "title": "OBJAVA ZA PAMĆENJE! Aleksandar Vučić i Dejna Vajt prikupili 2,5 miliona pregleda i 104.000 lajkova - UFC spektakl iz Beograda obišao čitav svet! (FOTO)",
+      "url": "https://www.kurir.rs/sport/mma/10066606/ufc-spektakl-u-beogradu-vucic-i-dejna-vajt-privukli-2-5-miliona-pregleda",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T16:40:17+00:00",
+      "time": "16:40",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "sport-fudbal-10066528-dzejdon-sanco-trenira-sa-desetoligasem",
       "title": "NEKADA SU GA PLATILI 85 MILIONA EVRA, A ON SADA TRENIRA SA DESETOLIGAŠEM! Kakav sunovrat čuvenog fudbalera, engleski mediji bruje o njemu!",
       "url": "https://www.kurir.rs/sport/fudbal/10066528/dzejdon-sanco-trenira-sa-desetoligasem",
@@ -645,13 +631,13 @@
       "priority": 8
     },
     {
-      "id": "a-u-nisu-muskarac-pratio-konobara-pa-izvadio-pistolj-yyrvfh5",
-      "title": "GOST PRATIO KONOBARA PA IZVADIO PIŠTOLJ! Svi detalji noćne drame u ugostiteljskom objektu u Nišu zbog koje je intervenisala policija",
-      "url": "https://www.blic.rs/vesti/hronika/drama-u-nisu-muskarac-pratio-konobara-pa-izvadio-pistolj/yyrvfh5",
+      "id": "-kilometra-na-sat-na-putu-nis-merosina-gde-je-ogranicenje-80",
+      "title": "Motociklista vozio 234 kilometra na sat na putu Niš - Merošina gde je ograničenje 80",
+      "url": "https://beta.rs/content/249573-motociklista-vozio-234-kilometra-na-sat-na-putu-nis--merosina-gde-je-ogranicenje-80",
       "date": "2026-08-03",
-      "datetime": "2026-08-03T13:38:20+00:00",
-      "time": "13:38",
-      "source": "Blic",
+      "datetime": "2026-08-03T18:05:08+00:00",
+      "time": "18:05",
+      "source": "Beta",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -659,13 +645,13 @@
       "priority": 4
     },
     {
-      "id": "73-za-kog-se-sumnja-da-je-umro-tokom-intimnog-odnosa-l2ewdr7",
-      "title": "OVO JE PEKAR (73) ZA KOG SE SUMNJA DA JE UMRO TOKOM INTIMNOG ODNOSA! Radivojevo telo nađeno golo i vezano na tavanu (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/hronika/ovo-je-pekar-73-za-kog-se-sumnja-da-je-umro-tokom-intimnog-odnosa/l2ewdr7",
+      "id": "234-kmh-putem-kod-merosine-policija-mu-oduzela-motocikl-vest",
+      "title": "Jurio 234 km/h putem kod Merošine: Policija mu oduzela motocikl",
+      "url": "https://www.b92.net/lokal/nis/hronika/255846/jurio-234-kmh-putem-kod-merosine-policija-mu-oduzela-motocikl/vest",
       "date": "2026-08-03",
-      "datetime": "2026-08-03T12:42:30+00:00",
-      "time": "12:42",
-      "source": "Blic",
+      "datetime": "2026-08-03T17:58:00+00:00",
+      "time": "17:58",
+      "source": "B92",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -673,13 +659,13 @@
       "priority": 4
     },
     {
-      "id": "ck-zabranjen-u-singapuru-bend-izdao-hitno-saopstenje-85qz8yz",
-      "title": "Bend Massive Attack izdao saopštenje: Evo zašto ih je policija ispitivala i sada im je zabranjen ulazak u zemlju",
-      "url": "https://www.blic.rs/kultura/massive-attack-zabranjen-u-singapuru-bend-izdao-hitno-saopstenje/85qz8yz",
+      "id": "-u-krusevcu-pa-u-njemu-nasli-vise-od-kilogram-marihuane-vest",
+      "title": "Zaustavili automobil u Kruševcu, pa u njemu našli više od kilogram marihuane",
+      "url": "https://www.b92.net/lokal/krusevac/hronika/255845/zaustavili-automobil-u-krusevcu-pa-u-njemu-nasli-vise-od-kilogram-marihuane/vest",
       "date": "2026-08-03",
-      "datetime": "2026-08-03T12:25:11+00:00",
-      "time": "12:25",
-      "source": "Blic",
+      "datetime": "2026-08-03T17:51:00+00:00",
+      "time": "17:51",
+      "source": "B92",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -687,13 +673,27 @@
       "priority": 4
     },
     {
-      "id": "235190-forenzicar-otkriva-greska-koja-odaje-svaku-ubicu-vest",
-      "title": "Misle da su izbrisali sve tragove, ali prave kobnu grešku: Forenzičar Ristić otkriva kako policija razotkriva ubice",
-      "url": "https://www.euronews.rs/srbija/aktuelno/235190/forenzicar-otkriva-greska-koja-odaje-svaku-ubicu/vest",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T12:27:00+00:00",
-      "time": "12:27",
-      "source": "Euronews Serbia",
+      "id": "dnutosti-vampirima-upucen-na-obavezno-psihijatrijsko-lecenje",
+      "title": "Британац због опседнутости вампирима упућен на обавезно психијатријско лечење",
+      "url": "https://www.politika.rs/scc/clanak/776117/britanac-zbog-opsednutosti-vampirima-upucen-na-obavezno-psihijatrijsko-lecenje",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T17:42:00+00:00",
+      "time": "17:42",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "beniku-pronadjena-dva-skupocena-glisera-ukradena-u-svedskoj-",
+      "title": "U Šibeniku pronađena dva skupocena glisera ukradena u Švedskoj",
+      "url": "https://n1info.rs/region/u-sibeniku-pronadjena-dva-skupocena-glisera-ukradena-u-svedskoj/",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T17:40:16+00:00",
+      "time": "17:40",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
