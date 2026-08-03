@@ -85,6 +85,34 @@
       "priority": 95
     },
     {
+      "id": "ka-10066689-hapsenje-u-krusevcu-oduzeta-marihuana-od-1-25-kg",
+      "title": "OTKRIVENO VIŠE OD KILOGRAM MARIHUANE U Kruševcu uhapšen osumnjičeni za neovlašćenu proizvodnju i prodaju opojnih droga",
+      "url": "https://www.kurir.rs/crna-hronika/10066689/hapsenje-u-krusevcu-oduzeta-marihuana-od-1-25-kg",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T22:50:00+00:00",
+      "time": "22:50",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "hapsenje-vukote-vujosevica-u-italiji-kriminalna-organizacija",
+      "title": "PALA JOŠ JEDNA KARIKA DUVANSKE MAFIJE! Uhapšen Crnogorac u Italiji: Pao po poternici zbog šverca cigareta",
+      "url": "https://www.kurir.rs/region/crna-gora/10066588/hapsenje-vukote-vujosevica-u-italiji-kriminalna-organizacija",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T22:30:00+00:00",
+      "time": "22:30",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "krusevac-uhapsen-osumnjiceni-pronadeno-125-kg-marihuane-vest",
       "title": "U Kruševcu uhapšen osumnjičeni za neovlašćenu proizvodnju i prodaju opojnih droga",
       "url": "https://www.euronews.rs/srbija/aktuelno/236106/krusevac-uhapsen-osumnjiceni-pronadeno-125-kg-marihuane/vest",
@@ -134,20 +162,6 @@
       "datetime": "2026-08-03T16:24:00+00:00",
       "time": "16:24",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-povezanih-sa-izbijanjem-pozara-medju-njima-142-maloletnika-",
-      "title": "U Francuskoj privedeno 375 osoba povezanih sa izbijanjem požara, među njima 142 maloletnika",
-      "url": "https://nova.rs/vesti/svet/u-francuskoj-privedeno-375-osoba-povezanih-sa-izbijanjem-pozara-medju-njima-142-maloletnika/",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T16:08:33+00:00",
-      "time": "16:08",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -393,6 +407,20 @@
       "priority": 60
     },
     {
+      "id": "ps-radar-nova-rs-ekonomija-fudbal-u-dubokoj-senci-korupcije-",
+      "title": "Crne torbe, vile i ofšor računi",
+      "url": "https://radar.nova.rs/ekonomija/fudbal-u-dubokoj-senci-korupcije/",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "nas-rs-vesti-politika-preseljenje-biraca-biracki-spisak-mup-",
       "title": "Birači migriraju i dalje, tvrde opozicionari i aktivisti, dok se odgovor MUP-a čeka",
       "url": "https://www.danas.rs/vesti/politika/preseljenje-biraca-biracki-spisak-mup/",
@@ -505,20 +533,6 @@
       "priority": 24
     },
     {
-      "id": "0-blokade-i-licemerje-opozicija-hvali-ono-sto-je-kritikovala",
-      "title": "NEVEROVATNO LICEMERJE OPOZICIONIH MEDIJA: Sada hvale blokadere za ono za šta su do juče kriminalizovali vlast!",
-      "url": "https://www.kurir.rs/vesti/politika/10066270/blokade-i-licemerje-opozicija-hvali-ono-sto-je-kritikovala",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T15:51:30+00:00",
-      "time": "15:51",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -573,6 +587,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "a-gora-10066581-ulcinjanin-uhapsen-zbog-nedozvoljenog-oruzja",
+      "title": "POLICIJA NAŠLA ARSENAL NAKON HAPŠENJA ULCINJANINA! Katana od metar i po, luk i strele, municija i bodeži u BMW-u",
+      "url": "https://www.kurir.rs/region/crna-gora/10066581/ulcinjanin-uhapsen-zbog-nedozvoljenog-oruzja",
+      "date": "2026-08-03",
+      "datetime": "2026-08-03T22:01:00+00:00",
+      "time": "22:01",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "teska-saobracajna-nesreca-kod-vrbasa-ima-povredjenih-6fdfvk1",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "868-zubin-potok-uhapsen-j-r-zbog-sumnje-na-ratni-zlocin-vest",
-      "title": "Još jedno hapšenje za navodni ratni zločin u Zubinom Potoku",
-      "url": "https://www.euronews.rs/srbija/drustvo/235868/zubin-potok-uhapsen-j-r-zbog-sumnje-na-ratni-zlocin/vest",
-      "date": "2026-08-02",
-      "datetime": "2026-08-02T09:48:00+00:00",
-      "time": "09:48",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "iji-moze-da-trazi-novi-obracun-penzije-ovo-su-uslovi-mvtebmb",
-      "title": "Ova grupa penzionera ima pravo na novi obračun primanja: Oglasio se PIO fond, evo koji su uslovi",
-      "url": "https://www.blic.rs/biznis/ova-grupa-penzionera-u-srbiji-moze-da-trazi-novi-obracun-penzije-ovo-su-uslovi/mvtebmb",
-      "date": "2026-08-03",
-      "datetime": "2026-08-03T22:01:59+00:00",
-      "time": "22:01",
-      "source": "Blic",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
