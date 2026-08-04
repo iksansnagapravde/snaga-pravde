@@ -71,20 +71,6 @@
       "priority": 100
     },
     {
-      "id": "rir-rs-sport-tenis-10067555-janik-siner-hitno-hospitalizovan",
-      "title": "ŠOK ZA TENISKI SVET: Prvi reket planete hitno hospitalizovan!",
-      "url": "https://www.kurir.rs/sport/tenis/10067555/janik-siner-hitno-hospitalizovan",
-      "date": "2026-08-04",
-      "datetime": "2026-08-04T17:03:21+00:00",
-      "time": "17:03",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "novom-zelandu-zatvorene-skole-vrtici-otkazani-letovi-66dqcjs",
       "title": "ZEMLJU PARALISAO - SNEG! Zbog polarne eksplozije zatvorene škole i vrtići, otkazani letovi, građani dobili hitno upozorenje: \"Biće još gore!\"",
       "url": "https://www.blic.rs/vesti/svet/snezna-eksplozija-na-novom-zelandu-zatvorene-skole-vrtici-otkazani-letovi/66dqcjs",
@@ -435,20 +421,6 @@
       "priority": 80
     },
     {
-      "id": "ka-uhapsena-dvojica-zbog-sumnje-da-su-krali-luksuzna-vozila-",
-      "title": "Bačka Palanka: Uhapšena dvojica zbog sumnje da su krali luksuzna vozila",
-      "url": "https://www.danas.rs/vesti/drustvo/backa-palanka-uhapsena-dvojica-zbog-sumnje-da-su-krali-luksuzna-vozila/",
-      "date": "2026-08-04",
-      "datetime": "2026-08-04T16:26:49+00:00",
-      "time": "16:26",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
       "id": "ropa-org-a-kosovo-masovne-grobnice-rat-nestali-33821811-html",
       "title": "Kosovo istražuje još jednu masovnu grobnicu, EU poziva Srbiju da sprovede Deklaraciju o nestalim osobama",
       "url": "https://www.slobodnaevropa.org/a/kosovo-masovne-grobnice-rat-nestali-/33821811.html",
@@ -631,6 +603,20 @@
       "priority": 66
     },
     {
+      "id": "crna-gora-10067561-uhvacen-britanac-u-herceg-novom-zbog-mita",
+      "title": "NEVEROVATNA DRAMA U HERCEG NOVOM! Britanac nudio mito policajcima, pa se sa ženom i decom ZAKLJUČAO U KOLA: Pet sati odbijao da izađe",
+      "url": "https://www.kurir.rs/region/crna-gora/10067561/uhvacen-britanac-u-herceg-novom-zbog-mita",
+      "date": "2026-08-04",
+      "datetime": "2026-08-04T22:10:00+00:00",
+      "time": "22:10",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "e-adiko-u-srbiji-od-menjacnice-do-aktive-od-29-miliona-evra-",
       "title": "Otvoren put da Alta banka preuzme Adiko u Srbiji: Od menjačnice do aktive od 2,9 miliona evra",
       "url": "https://www.danas.rs/vesti/ekonomija/otvoren-put-da-alta-banka-preuzme-adiko-u-srbiji-od-menjacnice-do-aktive-od-29-miliona-evra/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-04T17:03:26+00:00",
       "time": "17:03",
       "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "2841-nenad-vujic-ministar-pravda-jutro-je-radio-beograd-html",
+      "title": "Вујић: Спора правда је негација правде, реформа и дигитализација мењају правосуђе",
+      "url": "https://www.rts.rs/vesti/politika/6012841/nenad-vujic-ministar-pravda-jutro-je-radio-beograd.html",
+      "date": "2026-08-04",
+      "datetime": "2026-08-04T10:41:51+00:00",
+      "time": "10:41",
+      "source": "RTS",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
