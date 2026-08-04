@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 1629450.0,
+    "lowest": 1920.0,
+    "difference": 1627530.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103239684,
+    "file": "documents/103239684_Odluka o dodeli ugovora (6).pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1629450.0,
+    "lowest": 1920.0,
+    "difference": 1627530.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107895467,
+    "file": "documents/107895467_Odluka o dodeli ugovora (6).pdf"
+  },
+  {
+    "winner": null,
     "accepted": 650000.0,
     "lowest": 8202.0,
     "difference": 641798.0,
@@ -86,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100217419,
     "file": "documents/100217419_Odluka o dodeli ugovora JN br. 10-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2640000.0,
-    "lowest": 6148.0,
-    "difference": 2633852.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100205581,
-    "file": "documents/100205581_Odluka_o_dodeli_ugovora_za_nabavku_sprovodjenje_istrazivackog_monitoringa.pdf"
   }
 ]
