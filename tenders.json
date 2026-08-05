@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 18134760.0,
+    "lowest": 8110.0,
+    "difference": 18126650.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107392312,
+    "file": "documents/107392312_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 17345592.0,
+    "lowest": 8110.0,
+    "difference": 17337482.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100135044,
+    "file": "documents/100135044_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 56266800.0,
     "lowest": 5202.0,
     "difference": 56261598.0,
@@ -75,16 +97,5 @@
     "rejection_reasons": [],
     "id": 100389094,
     "file": "documents/100389094_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 285600000.0,
-    "lowest": 1035.0,
-    "difference": 285598965.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101718592,
-    "file": "documents/101718592_ODLUKA O DODELI UGOVORA I OBUSTAVI POSTUPKA br. 494-35.pdf"
   }
 ]
