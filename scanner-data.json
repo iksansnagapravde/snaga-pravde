@@ -57,20 +57,6 @@
       "priority": 100
     },
     {
-      "id": "novom-zelandu-zatvorene-skole-vrtici-otkazani-letovi-66dqcjs",
-      "title": "ZEMLJU PARALISAO - SNEG! Zbog polarne eksplozije zatvorene škole i vrtići, otkazani letovi, građani dobili hitno upozorenje: \"Biće još gore!\"",
-      "url": "https://www.blic.rs/vesti/svet/snezna-eksplozija-na-novom-zelandu-zatvorene-skole-vrtici-otkazani-letovi/66dqcjs",
-      "date": "2026-08-04",
-      "datetime": "2026-08-04T16:31:00+00:00",
-      "time": "16:31",
-      "source": "Blic",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "ja-drustvo-236130-toplotni-talas-u-srbiji-do-40-stepeni-vest",
       "title": "Beograd jutros ponovo najtopliji u Srbiji: Temperature rastu, a u ovom gradu je najprijatnije",
       "url": "https://www.euronews.rs/srbija/drustvo/236130/toplotni-talas-u-srbiji-do-40-stepeni/vest",
@@ -615,6 +601,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "066982-drama-na-durmitoru-grk-slomio-nogu-tokom-planinarenja",
+      "title": "DRAMA NA DURMITORU: Grk slomio nogu tokom planinarenja, spasilačka akcija trajala nekoliko sati (FOTO)",
+      "url": "https://www.kurir.rs/region/crna-gora/10066982/drama-na-durmitoru-grk-slomio-nogu-tokom-planinarenja",
+      "date": "2026-08-05",
+      "datetime": "2026-08-05T03:00:00+00:00",
+      "time": "03:00",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "crna-gora-10067561-uhvacen-britanac-u-herceg-novom-zbog-mita",
