@@ -155,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "planeta-10068590-haos-u-londonu-izbodena-cetvorica-muskaraca",
-      "title": "HAOS U CENTRU LONDONA: Četvorica muškaraca izbodena u turističkoj četvrti, uhapšena žena (VIDEO)",
-      "url": "https://www.kurir.rs/planeta/10068590/haos-u-londonu-izbodena-cetvorica-muskaraca",
-      "date": "2026-08-05",
-      "datetime": "2026-08-05T16:53:40+00:00",
-      "time": "16:53",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "https-www-danas-rs-svet-london-zena-makazama-izbola-cetvoro-",
       "title": "U centru Londona žena makazama izbola četvoricu ljudi",
       "url": "https://www.danas.rs/svet/london-zena-makazama-izbola-cetvoro/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-05T20:15:56+00:00",
       "time": "20:15",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-crna-hronika-10068686-vozili-174-171-kmh-auto-put-crna-gora",
+      "title": "JURIO AUTO-PUTEM 171 NA SAT, OGRANIČENJE BILO 100: Policija zaustavila Srbina u Crnoj Gori, priveden sudu za prekršaje",
+      "url": "https://www.kurir.rs/crna-hronika/10068686/vozili-174-171-kmh-auto-put-crna-gora",
+      "date": "2026-08-05",
+      "datetime": "2026-08-05T19:25:56+00:00",
+      "time": "19:25",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
