@@ -1,36 +1,69 @@
 [
   {
     "winner": null,
-    "accepted": 9336.0,
-    "lowest": 1202.0,
-    "difference": 8134.0,
+    "accepted": 120000000.0,
+    "lowest": 8202.0,
+    "difference": 119991798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_o 56.pdf"
+    "id": 101636698,
+    "file": "documents/101636698_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 800000.0,
+    "lowest": 2211.0,
+    "difference": 797789.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100043776,
+    "file": "documents/100043776_Odluka o dodeli ugovora-poz -Monit. i izmene i dopune programa upravlj. ribarskim podrucjima 2026.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 32944000.0,
+    "lowest": 2211.0,
+    "difference": 32941789.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100723392,
+    "file": "documents/100723392_Odl. o dodeli ugovora-poz 115  -Korišcenje šuma 2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 2620440.0,
-    "lowest": 4111.0,
-    "difference": 2616329.0,
+    "accepted": 1730000.0,
+    "lowest": 6148.0,
+    "difference": 1723852.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 105046072,
-    "file": "documents/105046072_Odluka o dodeli ugovora.docx"
+    "file": "documents/105046072_odluka o dodeli ugovora-hemikalije za analizu pesticida i metala.pdf"
   },
   {
     "winner": null,
-    "accepted": 1450000.0,
+    "accepted": 1135000.0,
     "lowest": 8202.0,
-    "difference": 1441798.0,
+    "difference": 1126798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101612478,
-    "file": "documents/101612478_Odluka o dodeli ugovora.docx"
+    "id": 115524655,
+    "file": "documents/115524655_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 1687950.0,
+    "lowest": 7372.0,
+    "difference": 1680578.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102066556,
+    "file": "documents/102066556_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
@@ -40,62 +73,29 @@
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100259155,
-    "file": "documents/100259155_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 779898.0,
-    "lowest": 6086.0,
-    "difference": 773812.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100816717,
-    "file": "documents/100816717_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1550000.0,
-    "lowest": 7202.0,
-    "difference": 1542798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101727796,
-    "file": "documents/101727796_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 4000000.0,
-    "lowest": 1210.0,
-    "difference": 3998790.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100958919,
-    "file": "documents/100958919_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 8202.0,
-    "lowest": 3700.0,
-    "difference": 4502.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112723288,
-    "file": "documents/112723288_Odluka.pdf"
+    "id": 104762757,
+    "file": "documents/104762757_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 4200000.0,
-    "lowest": 2214.0,
-    "difference": 4197786.0,
+    "accepted": 1583333.0,
+    "lowest": 7202.0,
+    "difference": 1576131.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103920327,
-    "file": "documents/103920327_305-2 Odluka o dodeli ugovora El.Energija.pdf"
+    "id": 101586302,
+    "file": "documents/101586302_Odluka o dodeli ugovora JN br.5-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 9336.0,
+    "lowest": 1202.0,
+    "difference": 8134.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100007569,
+    "file": "documents/100007569_o 56.pdf"
   }
 ]
