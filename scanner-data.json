@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "vropa-org-a-reditelj-stevan-filipovic-pretucen-33823370-html",
-      "title": "Reditelj Stevan Filipović pretučen u centru Beograda, Vučić osudio napad i traži kažnjavanje odgovornih",
-      "url": "https://www.slobodnaevropa.org/a/reditelj-stevan-filipovic-pretucen/33823370.html",
-      "date": "2026-08-06",
-      "datetime": "2026-08-06T09:24:30+00:00",
-      "time": "09:24",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 196
-    },
-    {
       "id": "ntar-zbog-supruge-sergeja-trifunovica-pisali-prijavu-dzshp7y",
       "title": "POLICIJA STIGLA U TRŽNI CENTAR ZBOG SUPRUGE SERGEJA TRIFUNOVIĆA Saznajemo: Obezbeđenje hitno reagovalo zbog SUMNJE NA KRAĐU, pa joj pisali krivičnu prijavu",
       "url": "https://www.blic.rs/zabava/policija-stigla-u-trzni-centar-zbog-supruge-sergeja-trifunovica-pisali-prijavu/dzshp7y",
@@ -57,6 +43,20 @@
       "priority": 100
     },
     {
+      "id": "ostavljanje-i-mucenje-odredjen-mu-je-pritvor-od-30-dana-html",
+      "title": "Ухапшен у Београду осумњичени за злостављање и мучење, одређен му је притвор од 30 дана",
+      "url": "https://www.rts.rs/vesti/hronika/6015260/uhapsen-u-beogradu-osumnjiceni-za-zlostavljanje-i-mucenje-odredjen-mu-je-pritvor-od-30-dana.html",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T18:03:48+00:00",
+      "time": "18:03",
+      "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "ana-za-dr-iz-nisa-dronom-hteo-da-ubaci-pistolj-u-kpz-q60413d",
       "title": "PLAN BEKSTVA IZ ZATVORA DRONOM?! Nišlija osumnjičen da vazdušnim putem unese oružje u KPZ Niš završio u pritvoru: Postoji strah da će PONOVITI delo (FOTO)",
       "url": "https://www.blic.rs/vesti/hronika/pritvor-30-dana-za-dr-iz-nisa-dronom-hteo-da-ubaci-pistolj-u-kpz/q60413d",
@@ -78,20 +78,6 @@
       "datetime": "2026-08-07T13:33:14+00:00",
       "time": "13:33",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-i-hercegovina-10070458-ubistvo-u-bih-telo-pronadjeno-u-kuci",
-      "title": "UBISTVO U BIH! Pronađeno telo u kući kod Bosanske Krupe! Muškarac ležao sa prostrelnom ranom! Uhapšena osumnjičena osoba!",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10070458/ubistvo-u-bih-telo-pronadjeno-u-kuci",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:04:34+00:00",
-      "time": "13:04",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -169,20 +155,6 @@
       "priority": 90
     },
     {
-      "id": "ika-uhapsen-muskarac-za-kojim-su-bile-raspisane-dve-potrage-",
-      "title": "Uhapšen muškarac za kojim su bile raspisane dve potrage",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-muskarac-za-kojim-su-bile-raspisane-dve-potrage/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:49:46+00:00",
-      "time": "17:49",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "s-tok-od-mup-a-trazio-skaj-poruke-vidica-pozvao-da-da-iskaz-",
       "title": "TOK od MUP-a tražio „skaj“ poruke, Vidića pozvao da da iskaz",
       "url": "https://www.krik.rs/tok-od-mup-a-trazio-skaj-poruke-vidica-pozvao-da-da-iskaz/",
@@ -225,20 +197,6 @@
       "priority": 76
     },
     {
-      "id": "e-lopov-uhapsen-nakon-sto-je-pokusao-da-pobegne-policajcima-",
-      "title": "Krao automobile u kojima su vlasnici ostavljali ključeve, izazvao dve saobraćajne nezgode: Lopov uhapšen nakon što je pokušao da pobegne policajcima",
-      "url": "https://nova.rs/vesti/hronika/krao-automobile-u-kojima-su-vlasnici-ostavljali-kljuceve-izazvao-dve-saobracajne-nezgode-lopov-uhapsen-nakon-sto-je-pokusao-da-pobegne-policajcima/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:46:45+00:00",
-      "time": "13:46",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "je-dilera-u-pozarevcu-i-kucevu-pronadjeni-kokain-i-marihuana",
       "title": "UHAPŠENA DVOJICA DILERA U POŽAREVCU: Policija im u stanovima pronašla kokain i marihuanu!",
       "url": "https://www.kurir.rs/crna-hronika/10070508/hapsenje-dilera-u-pozarevcu-i-kucevu-pronadjeni-kokain-i-marihuana",
@@ -246,20 +204,6 @@
       "datetime": "2026-08-07T13:44:05+00:00",
       "time": "13:44",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-kradje-automobila-u-rumi-i-izazivanje-saobracajnih-nesreca-",
-      "title": "Uhapšen zbog krađe automobila u Rumi i izazivanja saobraćajnih nesreća",
-      "url": "https://n1info.rs/vesti/uhapsen-zbog-kradje-automobila-u-rumi-i-izazivanje-saobracajnih-nesreca/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:12:21+00:00",
-      "time": "13:12",
-      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -349,6 +293,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "oman-napisala-vestacka-inteligencija-kritike-emitovane-uzivo",
+      "title": "Оптужили ауторку да је роман написала вештачка интелигенција, критике емитоване уживо",
+      "url": "https://www.politika.rs/scc/clanak/777055/optuzili-autorku-da-je-roman-napisala-vestacka-inteligencija-kritike-emitovane-uzivo",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:54:00+00:00",
+      "time": "17:54",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "abava-kultura-10070221-knjige-inspirisane-grckom-mitologijom",
@@ -477,18 +435,18 @@
       "priority": 25
     },
     {
-      "id": "a-10070433-sastanak-ministra-pravde-i-sudije-ivane-josifovic",
-      "title": "MINISTARSTVO PRAVDE ĆE SA MINISTARSTVOM FINANSIJA RAZMOTRITI PREDLOG UST ZA BRISANJE SPORNE ODREDBE IZ PREDLOGA ZAKONA: Traži se najbolje rešenje za pravosuđe",
-      "url": "https://www.kurir.rs/vesti/politika/10070433/sastanak-ministra-pravde-i-sudije-ivane-josifovic",
+      "id": "ika-uhapsen-muskarac-za-kojim-su-bile-raspisane-dve-potrage-",
+      "title": "U Beogradu uhapšten osumnjičeni za više krivičnih dela, u Valjevu mu određen pritvor do 30 dana",
+      "url": "https://nova.rs/vesti/hronika/uhapsen-muskarac-za-kojim-su-bile-raspisane-dve-potrage/",
       "date": "2026-08-07",
-      "datetime": "2026-08-07T12:42:37+00:00",
-      "time": "12:42",
-      "source": "Kurir",
-      "category": "Правосуђе",
+      "datetime": "2026-08-07T17:49:46+00:00",
+      "time": "17:49",
+      "source": "Nova",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 25
+      "priority": 24
     },
     {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
@@ -533,6 +491,34 @@
       "priority": 12
     },
     {
+      "id": "0728-kotor-falsifikovana-roba-2-miliona-evra-uhapsen-bugarin",
+      "title": "\"LAŽNI LUKSUZ\" VREDAN 2 MILIONA EVRA KRIO U MAGACINU U STAROM GRADU! Pao Bugarin u Kotoru, zaplenjeni falsifikati poznatih svetskih brendova",
+      "url": "https://www.kurir.rs/region/crna-gora/10070728/kotor-falsifikovana-roba-2-miliona-evra-uhapsen-bugarin",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T18:24:27+00:00",
+      "time": "18:24",
+      "source": "Kurir",
+      "category": "Фалсификовање докумената",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "o-crtaju-bele-linije-po-prozorima-razlog-je-potresan-f0jly5x",
+      "title": "Ljudi masovno crtaju bele linije po prozorima, razlog je tužan",
+      "url": "https://www.blic.rs/slobodno-vreme/ljudi-masovno-crtaju-bele-linije-po-prozorima-razlog-je-potresan/f0jly5x",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T18:08:17+00:00",
+      "time": "18:08",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "ps-www-danas-rs-sport-barselona-mancester-siti-rodri-ponuda-",
       "title": "Barselona poslala prvu ponudu za Rodrija, Mančester siti traži znatno više",
       "url": "https://www.danas.rs/sport/barselona-mancester-siti-rodri-ponuda/",
@@ -555,20 +541,6 @@
       "time": "15:48",
       "source": "RSE Balkan",
       "category": "Мањинска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "obija-drzavnu-pomockoliko-novca-stize-i-kada-su-isplate-vest",
-      "title": "Sve na jednom mestu: Ko dobija državnu pomoć, koliko novca stiže i kada su isplate",
-      "url": "https://www.euronews.rs/srbija/drustvo/236443/ko-dobija-drzavnu-pomockoliko-novca-stize-i-kada-su-isplate/vest",
-      "date": "2026-08-05",
-      "datetime": "2026-08-05T18:01:00+00:00",
-      "time": "18:01",
-      "source": "Euronews Serbia",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -659,20 +631,6 @@
       "priority": 4
     },
     {
-      "id": "rema-pronadjena-u-otvorenom-sahtu-u-severnoj-mitrovici-foto-",
-      "title": "Vojna oprema pronađena u otvorenom šahtu u Severnoj Mitrovici FOTO",
-      "url": "https://nova.rs/vesti/hronika/vojna-oprema-pronadjena-u-otvorenom-sahtu-u-severnoj-mitrovici-foto/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T14:18:36+00:00",
-      "time": "14:18",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "https-www-danas-rs-vesti-drustvo-deliblatka-pescara-pozar-",
       "title": "„Borovi gore kao baklje“: Bili smo na mestu požara koji već danima guta Deliblatsku peščaru (FOTO)",
       "url": "https://www.danas.rs/vesti/drustvo/deliblatka-pescara-pozar/",
@@ -687,18 +645,60 @@
       "priority": 4
     },
     {
-      "id": "5-uhapsen-zbog-kradje-sest-automobila-u-rumi-i-staroj-pazovi",
-      "title": "UKRAO ČAK 6 VOZILA, SLUPAO DVA, PA BEŽAO! Policija u Rumi stala na put osumnjičenom za seriju teških krađa i apelovali na sve građane!",
-      "url": "https://www.kurir.rs/crna-hronika/10070465/uhapsen-zbog-kradje-sest-automobila-u-rumi-i-staroj-pazovi",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:05:40+00:00",
-      "time": "13:05",
-      "source": "Kurir",
+      "id": "tvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku-vest",
+      "title": "Zločin na Novom Beogradu: Žena pronađena mrtva u stanu, sumnja se da ju je ubio sin",
+      "url": "https://www.euronews.rs/srbija/aktuelno/236615/ubistvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku/vest",
+      "date": "2026-08-06",
+      "datetime": "2026-08-06T14:04:00+00:00",
+      "time": "14:04",
+      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "ku-sa-kolegom-okrutno-me-je-varala-a-verovao-sam-joj-01bgj84",
+      "title": "\"SLEPO SAM JOJ VEROVAO, A ONA ME JE OKRUTNO VARALA\" Pevačicu nakon razvoda bivši javno pljuvao, ona nestala iz javnosti: \"Zabola mi nož u leđa\"",
+      "url": "https://www.blic.rs/zabava/pevacica-bila-u-braku-sa-kolegom-okrutno-me-je-varala-a-verovao-sam-joj/01bgj84",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T18:46:15+00:00",
+      "time": "18:46",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "park-cacilend-izbori-opozicija-radomir-lazovic-stefan-simic-",
+      "title": "Lakše pobediti Vučića na izborima nego osloboditi Pionirski park",
+      "url": "https://vreme.com/vesti/pionirski-park-cacilend-izbori-opozicija-radomir-lazovic-stefan-simic/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T18:43:56+00:00",
+      "time": "18:43",
+      "source": "Vreme",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "64-naslovne-strane-sutrasnjih-novina-za-subotu-8-avgust-vest",
+      "title": "Novine: &quot;Tramp zna da NATO nikada ne bi ginuo za Ameriku&quot;; &quot;Kurti pojačao hajku&quot;",
+      "url": "https://www.b92.net/info/razno/257164/naslovne-strane-sutrasnjih-novina-za-subotu-8-avgust/vest",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T18:38:00+00:00",
+      "time": "18:38",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
