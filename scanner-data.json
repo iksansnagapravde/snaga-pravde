@@ -15,20 +15,6 @@
       "priority": 196
     },
     {
-      "id": "region-hrvatska-10070382-pupovac-osudio-govor-mrznje-u-kninu",
-      "title": "PUPOVAC NAJOŠTRIJE OSUDIO USTAŠKI PIR U KNINU! Pozvao hrvatsko pravosuđe da HITNO reaguje! Snimak Marka Skeje ga posebno UZNEMIRAVA i zabrinjava!",
-      "url": "https://www.kurir.rs/region/hrvatska/10070382/pupovac-osudio-govor-mrznje-u-kninu",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:08:45+00:00",
-      "time": "12:08",
-      "source": "Kurir",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 125
-    },
-    {
       "id": "ntar-zbog-supruge-sergeja-trifunovica-pisali-prijavu-dzshp7y",
       "title": "POLICIJA STIGLA U TRŽNI CENTAR ZBOG SUPRUGE SERGEJA TRIFUNOVIĆA Saznajemo: Obezbeđenje hitno reagovalo zbog SUMNJE NA KRAĐU, pa joj pisali krivičnu prijavu",
       "url": "https://www.blic.rs/zabava/policija-stigla-u-trzni-centar-zbog-supruge-sergeja-trifunovica-pisali-prijavu/dzshp7y",
@@ -41,6 +27,20 @@
       "breaking": true,
       "alert": false,
       "priority": 104
+    },
+    {
+      "id": "icu-marketa-u-leskovu-vetar-iscupao-nekoliko-stabala-t2yjm5v",
+      "title": "DRVO PALO NA RADNICU MARKETA Užas u Leskovcu usled jakog nevremena: Vetar iščupao nekoliko stabala, građani očajni: \"Škripi i izaziva strah!\"",
+      "url": "https://www.blic.rs/vesti/drustvo/drvo-palo-na-radnicu-marketa-u-leskovu-vetar-iscupao-nekoliko-stabala/t2yjm5v",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:19:26+00:00",
+      "time": "17:19",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "-u-beogradu-donela-osvezenje-posle-temperatura-blizu-40-vest",
@@ -57,18 +57,18 @@
       "priority": 100
     },
     {
-      "id": "mak-hapsenja-zbog-laboratorije-marihuane-u-smederevu-362bt43",
-      "title": "SPECIJALCI SA GAS MASKAMA ULETELI U KUĆU U SMEDEREVU Ovako su otkrili čak pola tona marihuane u ilegalnoj laboratoriji: Uhapšeno 6 osoba (FOTO, VIDEO)",
-      "url": "https://www.blic.rs/vesti/hronika/pogledajte-snimak-hapsenja-zbog-laboratorije-marihuane-u-smederevu/362bt43",
+      "id": "ana-za-dr-iz-nisa-dronom-hteo-da-ubaci-pistolj-u-kpz-q60413d",
+      "title": "PLAN BEKSTVA IZ ZATVORA DRONOM?! Nišlija osumnjičen da vazdušnim putem unese oružje u KPZ Niš završio u pritvoru: Postoji strah da će PONOVITI delo (FOTO)",
+      "url": "https://www.blic.rs/vesti/hronika/pritvor-30-dana-za-dr-iz-nisa-dronom-hteo-da-ubaci-pistolj-u-kpz/q60413d",
       "date": "2026-08-07",
-      "datetime": "2026-08-07T12:31:53+00:00",
-      "time": "12:31",
+      "datetime": "2026-08-07T17:06:33+00:00",
+      "time": "17:06",
       "source": "Blic",
-      "category": "Криминал",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 96
+      "priority": 92
     },
     {
       "id": "ti-hronika-6015007-mup-smederevo-marihuana-laboratorija-html",
@@ -155,6 +155,34 @@
       "priority": 92
     },
     {
+      "id": "gradu-pokusao-da-pobegne-policiji-ali-su-ga-sustigli-v2xhgnq",
+      "title": "(VIDEO) SPECIJALCI GA JURE PO DVORIŠTU I IMANJU! U Valjevu uhapšen begunac za kojim je bila raspisana potraga: Objavljen dramatičan snimak akcije",
+      "url": "https://www.blic.rs/vesti/hronika/ovako-je-uhapsen-m-s-30-u-beogradu-pokusao-da-pobegne-policiji-ali-su-ga-sustigli/v2xhgnq",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:50:30+00:00",
+      "time": "17:50",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "ika-uhapsen-muskarac-za-kojim-su-bile-raspisane-dve-potrage-",
+      "title": "Uhapšen muškarac za kojim su bile raspisane dve potrage",
+      "url": "https://nova.rs/vesti/hronika/uhapsen-muskarac-za-kojim-su-bile-raspisane-dve-potrage/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:49:46+00:00",
+      "time": "17:49",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "s-tok-od-mup-a-trazio-skaj-poruke-vidica-pozvao-da-da-iskaz-",
       "title": "TOK od MUP-a tražio „skaj“ poruke, Vidića pozvao da da iskaz",
       "url": "https://www.krik.rs/tok-od-mup-a-trazio-skaj-poruke-vidica-pozvao-da-da-iskaz/",
@@ -211,20 +239,6 @@
       "priority": 70
     },
     {
-      "id": "ronasla-55-kilograma-marihuane-uhapsen-muskarac-iz-batocine-",
-      "title": "Policija mu u kolima pronašla 5,5 kilograma marihuane: Uhapšen muškarac iz Batočine",
-      "url": "https://nova.rs/vesti/hronika/policija-mu-u-kolima-pronasla-55-kilograma-marihuane-uhapsen-muskarac-iz-batocine/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:44:42+00:00",
-      "time": "13:44",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "je-dilera-u-pozarevcu-i-kucevu-pronadjeni-kokain-i-marihuana",
       "title": "UHAPŠENA DVOJICA DILERA U POŽAREVCU: Policija im u stanovima pronašla kokain i marihuanu!",
       "url": "https://www.kurir.rs/crna-hronika/10070508/hapsenje-dilera-u-pozarevcu-i-kucevu-pronadjeni-kokain-i-marihuana",
@@ -265,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "ilastvo-u-beogradu-da-pokrene-istragu-o-likvidaciji-500-srba",
+      "title": "Линта позвао Тужилаштво у Београду да покрене истрагу о ликвидацији 500 Срба",
+      "url": "https://www.politika.rs/scc/clanak/777048/linta-pozvao-tuzilastvo-u-beogradu-da-pokrene-istragu-o-likvidaciji-500-srba",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:09:00+00:00",
+      "time": "17:09",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "vcima-branili-se-cutanjem-tuzilastvo-predlozilo-pritvor-html",
@@ -337,6 +365,34 @@
       "priority": 60
     },
     {
+      "id": "asiljevic-ssp-pozari-u-srbiji-ogolili-naprednjacku-korupciju",
+      "title": "Vasiljević (SSP): Požari u Srbiji ogolili naprednjačku korupciju",
+      "url": "https://beta.rs/content/249833-vasiljevic-ssp-pozari-u-srbiji-ogolili-naprednjacku-korupciju",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:40:08+00:00",
+      "time": "17:40",
+      "source": "Beta",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "ragujevacka-vlast-opstruise-prestanak-mandata-sns-odbornika-",
+      "title": "Ujedinjena opozicija: Kragujevačka vlast opstruiše prestanak mandata SNS odbornika",
+      "url": "https://www.danas.rs/vesti/politika/ujedinjena-opozicija-kragujevacka-vlast-opstruise-prestanak-mandata-sns-odbornika/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:22:31+00:00",
+      "time": "17:22",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "ps-radar-nova-rs-ekonomija-fudbal-u-dubokoj-senci-korupcije-",
       "title": "Crne torbe, vile i ofšor računi",
       "url": "https://radar.nova.rs/ekonomija/fudbal-u-dubokoj-senci-korupcije/",
@@ -365,6 +421,20 @@
       "priority": 28
     },
     {
+      "id": "sen-opasan-begunac-tereti-se-za-mucenje-i-napad-na-policajca",
+      "title": "DRAMATIČNO HAPŠENJE OPASNOG BEGUNCA U BEOGRADU! Pokušao da pobegne, policajci ga stigli i bacili na zemlju - POGLEDAJTE! Evo šta mu se sve stavlja na teret",
+      "url": "https://www.kurir.rs/crna-hronika/10070699/uhapsen-opasan-begunac-tereti-se-za-mucenje-i-napad-na-policajca",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:20:15+00:00",
+      "time": "17:20",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "0070310-turcin-ziveo-sa-zenom-u-stanu-u-kom-je-ubio-ruskinju",
       "title": "TURČIN ŽIVEO SA ŽENOM U STANU U KOM JE UBIO RUSKINJU! Kurir otkriva šta je sve osumnjičeni radio do hapšenja - HLADNOKRVNO!",
       "url": "https://www.kurir.rs/crna-hronika/10070310/turcin-ziveo-sa-zenom-u-stanu-u-kom-je-ubio-ruskinju",
@@ -377,6 +447,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "oze-po-svom-izboru-da-menja-belu-kucu-bez-odobrenja-kongresa",
+      "title": "Апелациони суд: Трамп не може по свом избору да мења Белу кућу без одобрења Конгреса",
+      "url": "https://www.politika.rs/scc/clanak/777049/apelacioni-sud-tramp-ne-moze-po-svom-izboru-da-menja-belu-kucu-bez-odobrenja-kongresa",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:31:00+00:00",
+      "time": "17:31",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "starstvo-pravde-vujic-odredba-predlog-zakona-povlacenje-html",
@@ -407,20 +491,6 @@
       "priority": 25
     },
     {
-      "id": "asporedila-vojsku-zbog-nereda-u-zatvorima-i-pokusaja-bekstva",
-      "title": "Шри Ланка распоредила војску због нереда у затворима и покушаја бекства",
-      "url": "https://www.politika.rs/scc/clanak/776948/sri-lanka-rasporedila-vojsku-zbog-nereda-u-zatvorima-i-pokusaja-bekstva",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T16:28:00+00:00",
-      "time": "16:28",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -447,6 +517,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "o-svet-257152-spanska-policija-razbila-mrezu-krijumcara-vest",
+      "title": "Pala jedna od najvećih mreža krijumčara na Mediteranu: &quot;Prebacili&quot; više od 2.000 migranata",
+      "url": "https://www.b92.net/info/svet/257152/spanska-policija-razbila-mrezu-krijumcara/vest",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:41:00+00:00",
+      "time": "17:41",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
     },
     {
       "id": "ps-www-danas-rs-sport-barselona-mancester-siti-rodri-ponuda-",
@@ -477,20 +561,6 @@
       "priority": 8
     },
     {
-      "id": "i-s-jednim-zaposlenim-tri-miliona-iz-budzeta-a-nisvilu-nista",
-      "title": "Berar (SSP) Selakoviću: Kako to firmi s jednim zaposlenim tri miliona iz budžeta, a Nišvilu ništa",
-      "url": "https://beta.rs/content/249823-berar-ssp-selakovicu-kako-to-firmi-s-jednim-zaposlenim-tri-miliona-iz-budzeta-a-nisvilu-nista",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T14:10:10+00:00",
-      "time": "14:10",
-      "source": "Beta",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "obija-drzavnu-pomockoliko-novca-stize-i-kada-su-isplate-vest",
       "title": "Sve na jednom mestu: Ko dobija državnu pomoć, koliko novca stiže i kada su isplate",
       "url": "https://www.euronews.rs/srbija/drustvo/236443/ko-dobija-drzavnu-pomockoliko-novca-stize-i-kada-su-isplate/vest",
@@ -503,6 +573,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ovom-beogradu-da-li-je-tragedija-mogla-biti-sprecena-fbbpfjz",
+      "title": "\"OVO JE UBISTVO U AFEKTU, REKONSTRUKCIJA ĆE OTKRITI KOJI JE UDARAC BIO FATALAN!\" Stručnjaci o zločinu na Novom Beogradu: Da li je tragedija mogla biti sprečena?",
+      "url": "https://www.blic.rs/vesti/hronika/strucnjaci-o-ubistvu-na-novom-beogradu-da-li-je-tragedija-mogla-biti-sprecena/fbbpfjz",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:53:31+00:00",
+      "time": "17:53",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "https-www-danas-rs-kolumna-marko-vidojkovic-proto-cacilend-",
@@ -615,90 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "w-danas-rs-vesti-politika-pretresi-u-selima-na-kosovu-video-",
-      "title": "Pretresi u selima na Kosovu (VIDEO)",
-      "url": "https://www.danas.rs/vesti/politika/pretresi-u-selima-na-kosovu-video/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:58:43+00:00",
-      "time": "12:58",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-parking-firme-pa-krao-vozila-i-izazivao-saobracajke-zj62598",
-      "title": "HAOS U RUMI! Ušao na parking firme, pa krao vozila i izazivao saobraćajke: Kada ga je policija zaustavila usledila je NOVA DRAMA",
-      "url": "https://www.blic.rs/vesti/hronika/haos-u-rumi-usao-na-parking-firme-pa-krao-vozila-i-izazivao-saobracajke/zj62598",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:54:57+00:00",
-      "time": "12:54",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "tvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku-vest",
-      "title": "Zločin na Novom Beogradu: Žena pronađena mrtva u stanu, sumnja se da ju je ubio sin",
-      "url": "https://www.euronews.rs/srbija/aktuelno/236615/ubistvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku/vest",
-      "date": "2026-08-06",
-      "datetime": "2026-08-06T14:04:00+00:00",
-      "time": "14:04",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "pljenje-aranzmana-sta-kaze-zakon-a-sta-rade-agencije-glptt21",
-      "title": "SPAKOVALI STE KOFERE, A ONDA ŠOK PRED PUT! Agencije traže i preko 50 evra više za letovanje: Evo kada NISTE DUŽNI da im platite ni dinar",
-      "url": "https://www.blic.rs/vesti/drustvo/pravila-za-poskupljenje-aranzmana-sta-kaze-zakon-a-sta-rade-agencije/glptt21",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:03:05+00:00",
-      "time": "17:03",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "jalog-licni-stavovi-dacic-na-izbore-sa-ostavkom-u-dzepu-sps-",
-      "title": "Dačić na izbore sa ostavkom u džepu: Godina raspleta Socijalističke partije Srbije",
-      "url": "https://www.danas.rs/dijalog/licni-stavovi/dacic-na-izbore-sa-ostavkom-u-dzepu-sps/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:02:09+00:00",
-      "time": "17:02",
-      "source": "Danas",
-      "category": "Социјална права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "svet-ruski-napad-na-odesu-ostecen-stadion-cernomorec-xqg0pwx",
-      "title": "RUSI RAZORILI ČUVENI STADION U ODESI Ima povređenih: Uništen deo krova (VIDEO)",
-      "url": "https://www.blic.rs/vesti/svet/ruski-napad-na-odesu-ostecen-stadion-cernomorec/xqg0pwx",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T16:48:46+00:00",
-      "time": "16:48",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
