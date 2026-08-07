@@ -71,20 +71,6 @@
       "priority": 96
     },
     {
-      "id": "cija-upala-u-ilegalnu-laboratoriju-uhapseno-sest-osoba-foto-",
-      "title": "Pola tone marihuane zaplenjeno u okolini Smedereva: Policija upala u ilegalnu laboratoriju, uhapšeno šest osoba FOTO",
-      "url": "https://nova.rs/vesti/hronika/pola-tone-marihuane-zaplenjeno-u-okolini-smedereva-policija-upala-u-ilegalnu-laboratoriju-uhapseno-sest-osoba-foto/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:36:58+00:00",
-      "time": "12:36",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 94
-    },
-    {
       "id": "ti-hronika-6015007-mup-smederevo-marihuana-laboratorija-html",
       "title": "Пола тоне дроге заплењено код Смедерева",
       "url": "https://www.rts.rs/vesti/hronika/6015007/mup-smederevo-marihuana-laboratorija.html",
@@ -281,34 +267,6 @@
       "priority": 70
     },
     {
-      "id": "ih-zbog-sverca-narkotika-u-kamionu-krili-85-kilograma-droge-",
-      "title": "Tužilaštvo u Beogradu pokrenulo istragu protiv trojice osumnjičenih zbog šverca narkotika: U kamionu krili 85 kilograma droge",
-      "url": "https://nova.rs/vesti/hronika/tuzilastvo-u-beogradu-pokrenulo-istragu-protiv-trojice-osumnjicenih-zbog-sverca-narkotika-u-kamionu-krili-85-kilograma-droge/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:38:19+00:00",
-      "time": "12:38",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "ta-istraga-protiv-tri-osobe-zbog-drzanja-85-kilograma-droge-",
-      "title": "VJT: Pokrenuta istraga protiv tri osobe zbog držanja 85 kilograma droge",
-      "url": "https://www.danas.rs/vesti/drustvo/vjt-pokrenuta-istraga-protiv-tri-osobe-zbog-drzanja-85-kilograma-droge/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T11:55:57+00:00",
-      "time": "11:55",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vcima-branili-se-cutanjem-tuzilastvo-predlozilo-pritvor-html",
       "title": "Осумњичени код којих је пронађена дрога у Добановцима бранили се ћутањем, тужилаштво предложило притвор",
       "url": "https://www.rts.rs/vesti/hronika/6014971/osumnjiceni-kod-kojih-je-pronadjena-droga-u-dobanovcima-branili-se-cutanjem-tuzilastvo-predlozilo-pritvor.html",
@@ -421,20 +379,6 @@
       "priority": 26
     },
     {
-      "id": "se-jabloku-ukine-mogucnost-ucesca-na-parlamentarnim-izborima",
-      "title": "Врховни суд Русије одлучује о тужби да се Јаблоку укине могућност учешћа на парламентарним изборима",
-      "url": "https://www.politika.rs/scc/clanak/777012/vrhovni-sud-rusije-odlucuje-o-tuzbi-da-se-jabloku-ukine-mogucnost-ucesca-na-parlamentarnim-izborima",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T14:49:00+00:00",
-      "time": "14:49",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "starstvo-pravde-vujic-odredba-predlog-zakona-povlacenje-html",
       "title": "Министар Вујић прихватио иницијативу за брисање спорне одредбе из предлога закона o јавном тужилаштву",
       "url": "https://www.rts.rs/vesti/politika/6015068/ministarstvo-pravde-vujic-odredba-predlog-zakona-povlacenje.html",
@@ -461,6 +405,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "asporedila-vojsku-zbog-nereda-u-zatvorima-i-pokusaja-bekstva",
+      "title": "Шри Ланка распоредила војску због нереда у затворима и покушаја бекства",
+      "url": "https://www.politika.rs/scc/clanak/776948/sri-lanka-rasporedila-vojsku-zbog-nereda-u-zatvorima-i-pokusaja-bekstva",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T16:28:00+00:00",
+      "time": "16:28",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
@@ -491,6 +449,20 @@
       "priority": 22
     },
     {
+      "id": "ps-www-danas-rs-sport-barselona-mancester-siti-rodri-ponuda-",
+      "title": "Barselona poslala prvu ponudu za Rodrija, Mančester siti traži znatno više",
+      "url": "https://www.danas.rs/sport/barselona-mancester-siti-rodri-ponuda/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T16:17:06+00:00",
+      "time": "16:17",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "-zelenski-poseta-srbija-rusi-ukrajinci-beograd-33824329-html",
       "title": "'Nadamo se promeni odnosa Beograda prema Kijevu': Ukrajinci i Rusi o poseti Zelenskog",
       "url": "https://www.slobodnaevropa.org/a/zelenski-poseta-srbija-rusi-ukrajinci-beograd/33824329.html",
@@ -519,20 +491,6 @@
       "priority": 8
     },
     {
-      "id": "https-www-danas-rs-svet-orban-biznis-brisel-",
-      "title": "Omiljeno jelo Viktora Orbana je punjeni kupus i neće se služiti u centru Brisela: Mađarski mediji otkrivaju kako je propao unosan biznis bivše vlade Mađarske vredan milione evra",
-      "url": "https://www.danas.rs/svet/orban-biznis-brisel/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T12:04:12+00:00",
-      "time": "12:04",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "obija-drzavnu-pomockoliko-novca-stize-i-kada-su-isplate-vest",
       "title": "Sve na jednom mestu: Ko dobija državnu pomoć, koliko novca stiže i kada su isplate",
       "url": "https://www.euronews.rs/srbija/drustvo/236443/ko-dobija-drzavnu-pomockoliko-novca-stize-i-kada-su-isplate/vest",
@@ -545,6 +503,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "https-www-danas-rs-kolumna-marko-vidojkovic-proto-cacilend-",
+      "title": "Proto-ćacilend",
+      "url": "https://www.danas.rs/kolumna/marko-vidojkovic/proto-cacilend/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:00:28+00:00",
+      "time": "17:00",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "eja-trifunovica-nakon-sto-su-zvali-policiju-zbog-nje-fzsfr8h",
@@ -568,34 +540,6 @@
       "datetime": "2026-08-07T15:38:42+00:00",
       "time": "15:38",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "sergej-trifunovic-i-njegova-supruga-zavrsili-u-policiji-vest",
-      "title": "Incident u tržnom centru: Sergej Trifunović i njegova supruga završili u policiji",
-      "url": "https://www.b92.net/zivot/aktuelno/257122/incident-u-trznom-centru-sergej-trifunovic-i-njegova-supruga-zavrsili-u-policiji/vest",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T15:37:00+00:00",
-      "time": "15:37",
-      "source": "B92",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-razbila-jednu-od-najvecih-mreza-krijumcarenja-na-mediteranu",
-      "title": "Шпанска полиција разбила једну од највећих мрежа кријумчарења na Медитерану",
-      "url": "https://www.politika.rs/scc/clanak/777019/spanska-policija-razbila-jednu-od-najvecih-mreza-krijumcarenja-na-mediteranu",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T15:11:00+00:00",
-      "time": "15:11",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "tvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku-vest",
+      "title": "Zločin na Novom Beogradu: Žena pronađena mrtva u stanu, sumnja se da ju je ubio sin",
+      "url": "https://www.euronews.rs/srbija/aktuelno/236615/ubistvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku/vest",
+      "date": "2026-08-06",
+      "datetime": "2026-08-06T14:04:00+00:00",
+      "time": "14:04",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "pljenje-aranzmana-sta-kaze-zakon-a-sta-rade-agencije-glptt21",
+      "title": "SPAKOVALI STE KOFERE, A ONDA ŠOK PRED PUT! Agencije traže i preko 50 evra više za letovanje: Evo kada NISTE DUŽNI da im platite ni dinar",
+      "url": "https://www.blic.rs/vesti/drustvo/pravila-za-poskupljenje-aranzmana-sta-kaze-zakon-a-sta-rade-agencije/glptt21",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:03:05+00:00",
+      "time": "17:03",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "jalog-licni-stavovi-dacic-na-izbore-sa-ostavkom-u-dzepu-sps-",
+      "title": "Dačić na izbore sa ostavkom u džepu: Godina raspleta Socijalističke partije Srbije",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/dacic-na-izbore-sa-ostavkom-u-dzepu-sps/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:02:09+00:00",
+      "time": "17:02",
+      "source": "Danas",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "svet-ruski-napad-na-odesu-ostecen-stadion-cernomorec-xqg0pwx",
+      "title": "RUSI RAZORILI ČUVENI STADION U ODESI Ima povređenih: Uništen deo krova (VIDEO)",
+      "url": "https://www.blic.rs/vesti/svet/ruski-napad-na-odesu-ostecen-stadion-cernomorec/xqg0pwx",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T16:48:46+00:00",
+      "time": "16:48",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
