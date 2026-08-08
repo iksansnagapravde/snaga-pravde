@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "a-trampa-sad-moraju-da-pronadju-izlaz-iz-rata-sa-iranom-vest",
+      "title": "Amerika u ćorsokaku?; Trampu stiglo upozorenje – &quot;Rat ne daje rezultate&quot;",
+      "url": "https://www.b92.net/info/svet/257195/americki-general-upozorava-trampa-sad-moraju-da-pronadju-izlaz-iz-rata-sa-iranom/vest",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T05:34:00+00:00",
+      "time": "05:34",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "57-uhapsena-jedna-od-najvecih-mreza-krijumcara-na-mediteranu",
       "title": "UHAPŠENA JEDNA OD NAJVEĆIH GRUPA KRIJUMČARA NA MEDITERANU: Doveli više od 2.000 migranata u Španiju, zaradili 24 miliona evra",
       "url": "https://www.kurir.rs/planeta/10070757/uhapsena-jedna-od-najvecih-mreza-krijumcara-na-mediteranu",
@@ -141,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "ti-hronika-6015007-mup-smederevo-marihuana-laboratorija-html",
-      "title": "Пола тоне дроге заплењено код Смедерева",
-      "url": "https://www.rts.rs/vesti/hronika/6015007/mup-smederevo-marihuana-laboratorija.html",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T13:33:14+00:00",
-      "time": "13:33",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "8-policija-zaplenila-falsifikovanu-robu-uhapsen-pazarac-vest",
       "title": "Uhapšen Pazarac zbog falsifikovane robe zaštićenih robnih marki i neprijavljenih radnika",
       "url": "https://www.euronews.rs/srbija/aktuelno/236668/policija-zaplenila-falsifikovanu-robu-uhapsen-pazarac/vest",
@@ -281,20 +281,6 @@
       "priority": 70
     },
     {
-      "id": "info-svet-257183-sumski-pozar-u-kaliforniji-odneo-zivot-vest",
-      "title": "Tragedija u Kaliforniji: Jedna osoba poginula u požaru; Uhapšen muškarac VIDEO",
-      "url": "https://www.b92.net/info/svet/257183/sumski-pozar-u-kaliforniji-odneo-zivot/vest",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T21:04:00+00:00",
-      "time": "21:04",
-      "source": "B92",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "mederevo-otkrivena-laboratorija-marihuane-uhapseno-sest-vest",
       "title": "Akcija UKP i SAJ kod Smedereva: Otkrivena laboratorija sa pola tone marihuane, šestoro uhapšeno (VIDEO)",
       "url": "https://www.euronews.rs/srbija/politika/236764/smederevo-otkrivena-laboratorija-marihuane-uhapseno-sest/vest",
@@ -351,6 +337,20 @@
       "priority": 66
     },
     {
+      "id": "sti-od-institucija-samo-ignorisanje-omalovazavanje-i-uvrede-",
+      "title": "Izveštaj Saveta za borbu protiv korupcije o transparentnosti: Od institucija samo ignorisanje, omalovažavanje i uvrede",
+      "url": "https://www.danas.rs/vesti/ekonomija/izvestaj-saveta-za-borbu-protiv-korupcije-o-transparentnosti-od-institucija-samo-ignorisanje-omalovazavanje-i-uvrede/",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T05:55:29+00:00",
+      "time": "05:55",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "asiljevic-ssp-pozari-u-srbiji-ogolili-naprednjacku-korupciju",
       "title": "Vasiljević (SSP): Požari u Srbiji ogolili naprednjačku korupciju",
       "url": "https://beta.rs/content/249833-vasiljevic-ssp-pozari-u-srbiji-ogolili-naprednjacku-korupciju",
@@ -393,32 +393,18 @@
       "priority": 30
     },
     {
-      "id": "anju-jeftini-lekovi-ili-spasavanje-redova-aleksandra-vucica-",
-      "title": "„Pacijentima se nudi hleb za tri dinara u novom pakovanju“: Jeftini lekovi ili „spasavanje redova Aleksandra Vučića“",
-      "url": "https://www.danas.rs/vesti/drustvo/pacijentima-se-nudi-hleb-za-tri-dinara-u-novom-pakovanju-jeftini-lekovi-ili-spasavanje-redova-aleksandra-vucica/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T15:04:53+00:00",
-      "time": "15:04",
-      "source": "Danas",
+      "id": "vnicu-u-uefa-za-basnoslovnu-platu-novi-skandal-potresa-uefa-",
+      "title": "Infantino zaposlio ljubavnicu u UEFA za basnoslovnu platu, novi skandal potresa fudbal",
+      "url": "https://nova.rs/sport/fudbal/infantino-zaposlio-ljubavnicu-u-uefa-za-basnoslovnu-platu-novi-skandal-potresa-uefa/",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T05:23:32+00:00",
+      "time": "05:23",
+      "source": "Nova",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "sen-opasan-begunac-tereti-se-za-mucenje-i-napad-na-policajca",
-      "title": "DRAMATIČNO HAPŠENJE OPASNOG BEGUNCA U BEOGRADU! Pokušao da pobegne, policajci ga stigli i bacili na zemlju - POGLEDAJTE! Evo šta mu se sve stavlja na teret",
-      "url": "https://www.kurir.rs/crna-hronika/10070699/uhapsen-opasan-begunac-tereti-se-za-mucenje-i-napad-na-policajca",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:20:15+00:00",
-      "time": "17:20",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "starstvo-pravde-vujic-odredba-predlog-zakona-povlacenje-html",
@@ -433,6 +419,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "region-bosna-i-hercegovina-10069984-austrija-bosanac-pljacka",
+      "title": "ZBOG BOLESNE ĆERKICE SE UPUSTIO U KRIMINAL? Bosanac osuđen u Austriji zbog serije provala, nije se proslavio u ovom \"zanatu\"",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10069984/austrija-bosanac-pljacka",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T03:30:00+00:00",
+      "time": "03:30",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "a-predsednika-ko-cini-jedinicu-koja-napada-kriticare-rezima-",
@@ -505,20 +505,6 @@
       "priority": 8
     },
     {
-      "id": "0728-kotor-falsifikovana-roba-2-miliona-evra-uhapsen-bugarin",
-      "title": "\"LAŽNI LUKSUZ\" VREDAN 2 MILIONA EVRA KRIO U MAGACINU U STAROM GRADU! Pao Bugarin u Kotoru, zaplenjeni falsifikati poznatih svetskih brendova",
-      "url": "https://www.kurir.rs/region/crna-gora/10070728/kotor-falsifikovana-roba-2-miliona-evra-uhapsen-bugarin",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T18:24:27+00:00",
-      "time": "18:24",
-      "source": "Kurir",
-      "category": "Фалсификовање докумената",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "o-crtaju-bele-linije-po-prozorima-razlog-je-potresan-f0jly5x",
       "title": "Ljudi masovno crtaju bele linije po prozorima, razlog je tužan",
       "url": "https://www.blic.rs/slobodno-vreme/ljudi-masovno-crtaju-bele-linije-po-prozorima-razlog-je-potresan/f0jly5x",
@@ -559,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "070871-telo-muskarca-71-pronadjeno-u-kuci-u-slavonskom-brodu",
+      "title": "PRONAĐENO TELO MUŠKARCA (71) U KUĆI! Policija uhapsila jednu osobu! Užas u Slavonskom Brodu!",
+      "url": "https://www.kurir.rs/region/hrvatska/10070871/telo-muskarca-71-pronadjeno-u-kuci-u-slavonskom-brodu",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T05:21:21+00:00",
+      "time": "05:21",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "0-evra-koji-su-nestali-iz-sefa-ubijenog-pekara-73-na-lt70tcf",
@@ -609,20 +609,6 @@
       "date": "2026-08-07",
       "datetime": "2026-08-07T21:49:00+00:00",
       "time": "21:49",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "7074-majka-vojnika-pretucena-sam-zbog-ruskog-jezika-u-lavovu",
-      "title": "Мајка војника: Претучена сам због руског језика у Лавову",
-      "url": "https://www.politika.rs/scc/clanak/777074/majka-vojnika-pretucena-sam-zbog-ruskog-jezika-u-lavovu",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T20:04:00+00:00",
-      "time": "20:04",
       "source": "Politika",
       "category": "Полиција",
       "summary": "",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-07T14:54:16+00:00",
       "time": "14:54",
       "source": "Vreme",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "tvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku-vest",
+      "title": "Zločin na Novom Beogradu: Žena pronađena mrtva u stanu, sumnja se da ju je ubio sin",
+      "url": "https://www.euronews.rs/srbija/aktuelno/236615/ubistvo-na-novom-beogradu-sumnja-se-da-je-sin-usmrtio-majku/vest",
+      "date": "2026-08-06",
+      "datetime": "2026-08-06T14:04:00+00:00",
+      "time": "14:04",
+      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
