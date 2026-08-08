@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 1488000.0,
+    "lowest": 8202.0,
+    "difference": 1479798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100451473,
+    "file": "documents/100451473_ODLUKA O DODELIUGOVORA.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 8640000.0,
     "lowest": 8202.0,
     "difference": 8631798.0,
