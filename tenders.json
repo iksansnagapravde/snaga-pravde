@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 8640000.0,
+    "lowest": 8202.0,
+    "difference": 8631798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100345259,
+    "file": "documents/100345259_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 5753166.18,
     "lowest": 8202.0,
     "difference": 5744964.18,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 100211090,
     "file": "documents/100211090_Odluka o dodeli ugovora JN br. 03-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 122880.0,
-    "lowest": 8202.0,
-    "difference": 114678.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109190905,
-    "file": "documents/109190905_Odluka o dodeli ugovora.docx"
   }
 ]
