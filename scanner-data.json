@@ -281,6 +281,20 @@
       "priority": 76
     },
     {
+      "id": "on-crna-gora-10070627-ulcinj-zelenastvo-uhapseni-400000-evra",
+      "title": "ZELENAŠENJEM UZELI 400.000 EVRA: Uhapšena dvojica u Ulcinju - jednom oštećenom pretili zbog duga, policija zaplenila vozila i oružje",
+      "url": "https://www.kurir.rs/region/crna-gora/10070627/ulcinj-zelenastvo-uhapseni-400000-evra",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T02:05:00+00:00",
+      "time": "02:05",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "info-svet-257183-sumski-pozar-u-kaliforniji-odneo-zivot-vest",
       "title": "Tragedija u Kaliforniji: Jedna osoba poginula u požaru; Uhapšen muškarac VIDEO",
       "url": "https://www.b92.net/info/svet/257183/sumski-pozar-u-kaliforniji-odneo-zivot/vest",
@@ -447,6 +461,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "region-bosna-i-hercegovina-10069984-austrija-bosanac-pljacka",
+      "title": "ZBOG BOLESNE ĆERKICE SE UPUSTIO U KRIMINAL? Bosanac osuđen u Austriji zbog serije provala, nije se proslavio u ovom \"zanatu\"",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10069984/austrija-bosanac-pljacka",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T03:30:00+00:00",
+      "time": "03:30",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "a-predsednika-ko-cini-jedinicu-koja-napada-kriticare-rezima-",
@@ -665,34 +693,6 @@
       "date": "2026-08-07",
       "datetime": "2026-08-07T17:53:31+00:00",
       "time": "17:53",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "https-www-danas-rs-kolumna-marko-vidojkovic-proto-cacilend-",
-      "title": "Proto-ćacilend",
-      "url": "https://www.danas.rs/kolumna/marko-vidojkovic/proto-cacilend/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:00:28+00:00",
-      "time": "17:00",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "eja-trifunovica-nakon-sto-su-zvali-policiju-zbog-nje-fzsfr8h",
-      "title": "ISIDORA ISPRED POLICIJSKE STANICE Prvo oglašavanje žene Sergeja Trifunovića nakon što su ZVALI NADLEŽNE zbog nje: \"Samo zato sam došla\"",
-      "url": "https://www.blic.rs/zabava/prvo-oglasavanje-zene-sergeja-trifunovica-nakon-sto-su-zvali-policiju-zbog-nje/fzsfr8h",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T15:42:00+00:00",
-      "time": "15:42",
       "source": "Blic",
       "category": "Полиција",
       "summary": "",
