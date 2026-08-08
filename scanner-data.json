@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "ntar-zbog-supruge-sergeja-trifunovica-pisali-prijavu-dzshp7y",
-      "title": "POLICIJA STIGLA U TRŽNI CENTAR ZBOG SUPRUGE SERGEJA TRIFUNOVIĆA Saznajemo: Obezbeđenje hitno reagovalo zbog SUMNJE NA KRAĐU, pa joj pisali krivičnu prijavu",
-      "url": "https://www.blic.rs/zabava/policija-stigla-u-trzni-centar-zbog-supruge-sergeja-trifunovica-pisali-prijavu/dzshp7y",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T15:13:00+00:00",
-      "time": "15:13",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "57-uhapsena-jedna-od-najvecih-mreza-krijumcara-na-mediteranu",
       "title": "UHAPŠENA JEDNA OD NAJVEĆIH GRUPA KRIJUMČARA NA MEDITERANU: Doveli više od 2.000 migranata u Španiju, zaradili 24 miliona evra",
       "url": "https://www.kurir.rs/planeta/10070757/uhapsena-jedna-od-najvecih-mreza-krijumcara-na-mediteranu",
@@ -321,20 +307,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "vcima-branili-se-cutanjem-tuzilastvo-predlozilo-pritvor-html",
-      "title": "Осумњичени код којих је пронађена дрога у Добановцима бранили се ћутањем, тужилаштво предложило притвор",
-      "url": "https://www.rts.rs/vesti/hronika/6014971/osumnjiceni-kod-kojih-je-pronadjena-droga-u-dobanovcima-branili-se-cutanjem-tuzilastvo-predlozilo-pritvor.html",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T11:52:04+00:00",
-      "time": "11:52",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "6625-otkriven-uzrok-teske-saobracajne-nesrece-kod-sabca-vest",
@@ -693,6 +665,34 @@
       "date": "2026-08-07",
       "datetime": "2026-08-07T17:53:31+00:00",
       "time": "17:53",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "https-www-danas-rs-kolumna-marko-vidojkovic-proto-cacilend-",
+      "title": "Proto-ćacilend",
+      "url": "https://www.danas.rs/kolumna/marko-vidojkovic/proto-cacilend/",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T17:00:28+00:00",
+      "time": "17:00",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "eja-trifunovica-nakon-sto-su-zvali-policiju-zbog-nje-fzsfr8h",
+      "title": "ISIDORA ISPRED POLICIJSKE STANICE Prvo oglašavanje žene Sergeja Trifunovića nakon što su ZVALI NADLEŽNE zbog nje: \"Samo zato sam došla\"",
+      "url": "https://www.blic.rs/zabava/prvo-oglasavanje-zene-sergeja-trifunovica-nakon-sto-su-zvali-policiju-zbog-nje/fzsfr8h",
+      "date": "2026-08-07",
+      "datetime": "2026-08-07T15:42:00+00:00",
+      "time": "15:42",
       "source": "Blic",
       "category": "Полиција",
       "summary": "",
