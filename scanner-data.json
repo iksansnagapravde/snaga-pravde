@@ -393,20 +393,6 @@
       "priority": 24
     },
     {
-      "id": "-hercegovina-10071304-sarajevo-u-grotlu-pucnjava-i-kriminala",
-      "title": "SVE JE POČELO UBISTVOM ZBOG DUGA ZVICERU I JEDNOM ČITULJOM, A ONDA JE USLEDIO HAOS! Sarajevo u grotlu pucnjava i kriminala, opsadno stanje na ulicama",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10071304/sarajevo-u-grotlu-pucnjava-i-kriminala",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T16:37:31+00:00",
-      "time": "16:37",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "-a-osuda-prijetnje-safejournalists-veran-matic-33824818-html",
       "title": "Regionalna mreža SafeJournalists osudila prijetnje smrću Veranu Matiću",
       "url": "https://www.slobodnaevropa.org/a/osuda-prijetnje-safejournalists-veran-matic/33824818.html",
@@ -587,6 +573,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "nak-777270-baka-prihvatio-nominaciju-za-predsednika-madarske",
+      "title": "Бака прихватио номинацију за председника Мађарске",
+      "url": "https://www.politika.rs/scc/clanak/777270/baka-prihvatio-nominaciju-za-predsednika-madarske",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T23:32:00+00:00",
+      "time": "23:32",
+      "source": "Politika",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "anik-detaljan-cenovnik-lezaljki-u-grckoj-2026-godine-kjlnphx",
