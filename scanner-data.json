@@ -15,6 +15,20 @@
       "priority": 160
     },
     {
+      "id": "SAD-i-Ukrajina-postigle-dogovor-o-napadima-na-naftne-tankere",
+      "title": "AMERIKANCI POSTIGLI DOGOVOR SA UKRAJINOM: Stigla naredba za obustavu svih napada! Hitno se oglasio Kijev",
+      "url": "https://www.kurir.rs/planeta/10070937/SAD-i-Ukrajina-postigle-dogovor-o-napadima-na-naftne-tankere",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T07:45:44+00:00",
+      "time": "07:45",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "jucio-u-emisiju-otkrio-detalje-video-poziva-sa-majom-nmnvje9",
       "title": "Hitno uključivanje Mustafe Durdžića u emisiju, otkrio detalje video poziva sa Majom: \"Mevlida je ljuta na nju\"",
       "url": "https://www.blic.rs/zabava/mustafa-durdzic-se-ukljucio-u-emisiju-otkrio-detalje-video-poziva-sa-majom/nmnvje9",
@@ -30,7 +44,7 @@
     },
     {
       "id": "ssian-missile-strikes-near-kyiv-kill-three-including-a-child",
-      "title": "Russian strikes kill three near Kyiv, Zelensky makes landmark visit to Serbia",
+      "title": "Russian strikes kill four near Kyiv, Zelensky makes landmark visit to Serbia",
       "url": "https://www.france24.com/en/europe/20260808-russian-missile-strikes-near-kyiv-kill-three-including-a-child",
       "date": "2026-08-08",
       "datetime": "2026-08-08T06:10:11+00:00",
@@ -40,20 +54,6 @@
       "summary": "",
       "breaking": true,
       "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "57-uhapsena-jedna-od-najvecih-mreza-krijumcara-na-mediteranu",
-      "title": "UHAPŠENA JEDNA OD NAJVEĆIH GRUPA KRIJUMČARA NA MEDITERANU: Doveli više od 2.000 migranata u Španiju, zaradili 24 miliona evra",
-      "url": "https://www.kurir.rs/planeta/10070757/uhapsena-jedna-od-najvecih-mreza-krijumcara-na-mediteranu",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T19:20:18+00:00",
-      "time": "19:20",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
       "priority": 100
     },
     {
@@ -69,6 +69,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "j-poginulih-migranata-u-seuti-i-melilji-porastao-na-141-vest",
+      "title": "Novi bilans migrantske tragedije: 141 osoba poginula u pokušajima ulaska u Seutu FOTO",
+      "url": "https://www.b92.net/info/svet/257229/broj-poginulih-migranata-u-seuti-i-melilji-porastao-na-141/vest",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T08:07:00+00:00",
+      "time": "08:07",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "ronika-10070857-pucano-na-vilu-srpskog-biznismena-u-nemackoj",
@@ -393,20 +407,6 @@
       "priority": 28
     },
     {
-      "id": "sen-opasan-begunac-tereti-se-za-mucenje-i-napad-na-policajca",
-      "title": "DRAMATIČNO HAPŠENJE OPASNOG BEGUNCA U BEOGRADU! Pokušao da pobegne, policajci ga stigli i bacili na zemlju - POGLEDAJTE! Evo šta mu se sve stavlja na teret",
-      "url": "https://www.kurir.rs/crna-hronika/10070699/uhapsen-opasan-begunac-tereti-se-za-mucenje-i-napad-na-policajca",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:20:15+00:00",
-      "time": "17:20",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "https-n1info-rs-vesti-pretnje-smrcu-veran-matic-anem-",
       "title": "Nove pretnje Veranu Matiću - vešanjem, javnom egzekucijom, žrtvovanjem",
       "url": "https://n1info.rs/vesti/pretnje-smrcu-veran-matic-anem/",
@@ -505,20 +505,6 @@
       "priority": 8
     },
     {
-      "id": "0728-kotor-falsifikovana-roba-2-miliona-evra-uhapsen-bugarin",
-      "title": "\"LAŽNI LUKSUZ\" VREDAN 2 MILIONA EVRA KRIO U MAGACINU U STAROM GRADU! Pao Bugarin u Kotoru, zaplenjeni falsifikati poznatih svetskih brendova",
-      "url": "https://www.kurir.rs/region/crna-gora/10070728/kotor-falsifikovana-roba-2-miliona-evra-uhapsen-bugarin",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T18:24:27+00:00",
-      "time": "18:24",
-      "source": "Kurir",
-      "category": "Фалсификовање докумената",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "-zelenski-poseta-srbija-rusi-ukrajinci-beograd-33824329-html",
       "title": "'Nadamo se promeni odnosa Beograda prema Kijevu': Ukrajinci i Rusi o poseti Zelenskog",
       "url": "https://www.slobodnaevropa.org/a/zelenski-poseta-srbija-rusi-ukrajinci-beograd/33824329.html",
@@ -531,6 +517,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "onika-ubile-radivoja-na-karaburmi-pa-odmah-kupile-automobil-",
+      "title": "Ubile Radivoja na Karaburmi, pa odmah kupile automobil: Policija ostatak novca pronašla sakriven u Subotici",
+      "url": "https://nova.rs/vesti/hronika/ubile-radivoja-na-karaburmi-pa-odmah-kupile-automobil/",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T08:14:05+00:00",
+      "time": "08:14",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "https-nova-rs-vesti-hronika-bacena-bomba-na-rakovici-",
+      "title": "Bačena bomba na Rakovici: Policija traga za napadačem",
+      "url": "https://nova.rs/vesti/hronika/bacena-bomba-na-rakovici/",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T08:06:40+00:00",
+      "time": "08:06",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "-rs-vesti-drustvo-veran-matic-o-eskalaciji-nasilja-u-srbiji-",
@@ -568,6 +582,20 @@
       "datetime": "2026-08-08T07:05:48+00:00",
       "time": "07:05",
       "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "070871-telo-muskarca-71-pronadjeno-u-kuci-u-slavonskom-brodu",
+      "title": "PRONAĐENO TELO MUŠKARCA (71) U KUĆI! Policija uhapsila jednu osobu! Užas u Slavonskom Brodu!",
+      "url": "https://www.kurir.rs/region/hrvatska/10070871/telo-muskarca-71-pronadjeno-u-kuci-u-slavonskom-brodu",
+      "date": "2026-08-08",
+      "datetime": "2026-08-08T05:21:21+00:00",
+      "time": "05:21",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -617,20 +645,6 @@
       "priority": 4
     },
     {
-      "id": "vo-u-bosanskoj-krupi-u-kuci-pronadjeno-telo-muskarca-198d8hw",
-      "title": "UBISTVO U BOSANSKOJ KRUPI U kući pronađeno telo muškarca: Policija uhapsila osumnjičenog",
-      "url": "https://www.blic.rs/vesti/republika-srpska/ubistvo-u-bosanskoj-krupi-u-kuci-pronadjeno-telo-muskarca/198d8hw",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T19:54:05+00:00",
-      "time": "19:54",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "1info-rs-vesti-mestani-deliblatska-pescara-evakuacija-pozar-",
       "title": "Nebo se ne vidi od dima, policija zabranila povratak: Suze u očima evakuisanih meštana zbog požara u Deliblatskoj peščari",
       "url": "https://n1info.rs/vesti/mestani-deliblatska-pescara-evakuacija-pozar/",
@@ -638,20 +652,6 @@
       "datetime": "2026-08-07T18:49:21+00:00",
       "time": "18:49",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "https-www-danas-rs-kolumna-marko-vidojkovic-proto-cacilend-",
-      "title": "Proto-ćacilend",
-      "url": "https://www.danas.rs/kolumna/marko-vidojkovic/proto-cacilend/",
-      "date": "2026-08-07",
-      "datetime": "2026-08-07T17:00:28+00:00",
-      "time": "17:00",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -673,14 +673,14 @@
       "priority": 4
     },
     {
-      "id": "6873-beograd-gde-su-radovi-i-zatvorene-trake-ovog-jutra-vest",
-      "title": "Ovako izgleda saobraćaj u Beogradu danas: Radovi širom grada u toku, jutarnjih gužvi nema",
-      "url": "https://www.euronews.rs/srbija/drustvo/236873/beograd-gde-su-radovi-i-zatvorene-trake-ovog-jutra/vest",
+      "id": "lenskog-potvrda-vojne-saradnje-vuciceve-vlasti-sa-ukrajinom-",
+      "title": "Monarhisti: Poseta Zelenskog potvrda vojne saradnje Vučićeve vlasti sa Ukrajinom",
+      "url": "https://www.danas.rs/vesti/politika/monarhisti-poseta-zelenskog-potvrda-vojne-saradnje-vuciceve-vlasti-sa-ukrajinom/",
       "date": "2026-08-08",
-      "datetime": "2026-08-08T07:44:00+00:00",
-      "time": "07:44",
-      "source": "Euronews Serbia",
-      "category": "Лишени слободе",
+      "datetime": "2026-08-08T08:23:05+00:00",
+      "time": "08:23",
+      "source": "Danas",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -688,11 +688,11 @@
     },
     {
       "id": "ps-www-b92-net-info-svet-257196-rat-u-ukrajini-1626-dan-vest",
-      "title": "Veliki ruski udar: Meta – Kijev; Dron pogodio putnički voz; Lokomotivu guta plamen VIDEO",
+      "title": "Veliki ruski udar: Meta – Kijev; Dron pogodio putnički voz; Lokomotivu guta plamen FOTO/VIDEO",
       "url": "https://www.b92.net/info/svet/257196/rat-u-ukrajini-1626-dan/vest",
       "date": "2026-08-08",
-      "datetime": "2026-08-08T07:43:00+00:00",
-      "time": "07:43",
+      "datetime": "2026-08-08T08:20:00+00:00",
+      "time": "08:20",
       "source": "B92",
       "category": "Људска права",
       "summary": "",
