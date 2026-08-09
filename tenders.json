@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 6150000.0,
+    "lowest": 2214.0,
+    "difference": 6147786.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112287281,
+    "file": "documents/112287281_RB 0022-2026 Odluka o dodeli ugovora - NADZOR ZA RADOVE NA ZAMENI KOTLA U OŠ JAN KOLAR potpisano.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 400000000.0,
     "lowest": 8202.0,
     "difference": 399991798.0,
