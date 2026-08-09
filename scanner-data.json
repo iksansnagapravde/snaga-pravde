@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "c-21-pogodjen-u-stomak-svemu-prethodila-zestoka-tuca-qgf4m9l",
-      "title": "PUCNJAVA NA DORĆOLU! Mladić (21) pogođen direktno u stomak, sve prethodila ŽESTOKA TUČA: Drugovi ga dovezli u Urgentni, policija češlja snimke sa kamera",
-      "url": "https://www.blic.rs/vesti/hronika/pucnjava-na-dorcolu-mladic-21-pogodjen-u-stomak-svemu-prethodila-zestoka-tuca/qgf4m9l",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T08:37:07+00:00",
-      "time": "08:37",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "6015986-pozar-svet-indonezija-britanska-kolumbija-grcka-html",
       "title": "Регион и свет у борби са пожарима – хиљаде евакуисаних, затворени путеви и туристичке зоне",
       "url": "https://www.rts.rs/vesti/svet/6015986/pozar-svet-indonezija-britanska-kolumbija-grcka.html",
@@ -169,6 +155,20 @@
       "priority": 76
     },
     {
+      "id": "ika-u-krusevcu-uhapsene-dve-osobe-osumnjicene-za-zelenastvo-",
+      "title": "U Kruševcu uhapšene dve osobe osumnjičene za zelenaštvo",
+      "url": "https://nova.rs/vesti/hronika/u-krusevcu-uhapsene-dve-osobe-osumnjicene-za-zelenastvo/",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:30:17+00:00",
+      "time": "13:30",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "ju-vozio-sa-213-promila-alkohola-u-krvi-bez-vozacke-dozvole-",
       "title": "Uhapšen muškarac u Skoplju: Vozio sa 2,13 promila alkohola u krvi bez vozačke dozvole",
       "url": "https://n1info.rs/region/uhapsen-muskarac-u-skoplju-vozio-sa-213-promila-alkohola-u-krvi-bez-vozacke-dozvole/",
@@ -211,34 +211,6 @@
       "priority": 70
     },
     {
-      "id": "voda-izbo-muskarca-u-parku-brutalan-napad-usred-dana-09fde6v",
-      "title": "Prišao muškarcu u parku i bez ikakvog povoda ga UBADAO NOŽEM I REZAO: Brutalan napad usred dana, policija uhapsila mladića (25)",
-      "url": "https://www.blic.rs/vesti/svet/mladic-25-bez-povoda-izbo-muskarca-u-parku-brutalan-napad-usred-dana/09fde6v",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T08:58:32+00:00",
-      "time": "08:58",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-danas-rs-vesti-drustvo-uhapsen-muskarac-ubistvo-u-petrovcu-",
-      "title": "Uhapšen muškarac osumnjičen za ubistvo u Petrovcu na Mlavi",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-muskarac-ubistvo-u-petrovcu/",
-      "date": "2026-08-08",
-      "datetime": "2026-08-08T21:41:09+00:00",
-      "time": "21:41",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "no-236946-mup-o-nesreci-u-kikindi-dva-radnika-povredena-vest",
       "title": "Nesreća u fabrici u Kikindi: Povređena dva radnika",
       "url": "https://www.euronews.rs/srbija/aktuelno/236946/mup-o-nesreci-u-kikindi-dva-radnika-povredena/vest",
@@ -251,6 +223,48 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "a-da-je-u-trznom-centru-ukrala-robu-vrednu-1200-evra-fr32h0z",
+      "title": "SRPKINJA OSUMNJIČENA DA JE OROBILA TRŽNI CENTAR! Oglasilo se tužilaštvo u Podgorici: Skidala čipove, pa gurala stvari u torbu",
+      "url": "https://www.blic.rs/vesti/hronika/drzavljanka-srbije-osumnjicena-da-je-u-trznom-centru-ukrala-robu-vrednu-1200-evra/fr32h0z",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:11:30+00:00",
+      "time": "13:11",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "i-sluzbenik-udario-maloletnu-devojcicu-sluzbenim-motociklom-",
+      "title": "\"Tužilaštvo neka obavesti javnost o toku istrage u slučaju saobraćajne nesreće kada je policijski službenik udario maloletnu devojčicu službenim motociklom\"",
+      "url": "https://nova.rs/vesti/hronika/tuzilastvo-neka-obavesti-javnost-o-toku-istrage-u-slucaju-saobracajne-nesrece-kada-je-policijski-sluzbenik-udario-maloletnu-devojcicu-sluzbenim-motociklom/",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:07:10+00:00",
+      "time": "13:07",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "an-beogradski-fantom-tuzilastvo-otkrilo-semu-prevare-whwwvzt",
+      "title": "SASLUŠAN \"BEOGRADSKI FANTOM\" Evo kako je upadao u automobile, tužilaštvo otkrilo šemu: U jednim kolima je izveo NEVIĐENU PREVARU",
+      "url": "https://www.blic.rs/vesti/hronika/saslusan-beogradski-fantom-tuzilastvo-otkrilo-semu-prevare/whwwvzt",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:04:35+00:00",
+      "time": "13:04",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "918-vjt-beograd-trazi-pritvor-za-zc-zbog-teskog-ubistva-vest",
@@ -365,6 +379,20 @@
       "priority": 25
     },
     {
+      "id": "lmtv-257496-nova-serija-rajana-marfija-stigla-na-disney-vest",
+      "title": "Nova serija Rajana Marfija stigla na Disney+; Mračni triler o tinejdžerima već privlači pažnju kritičara VIDEO",
+      "url": "https://www.b92.net/kultura/filmtv/257496/nova-serija-rajana-marfija-stigla-na-disney/vest",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:18:00+00:00",
+      "time": "13:18",
+      "source": "B92",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "rete-od-desetak-pretnji-koje-sam-prijavio-nijedna-razresena-",
       "title": "\"Nekažnjivost motiviše one koji prete, od desetak pretnji koje sam prijavio- nijedna razrešena\"",
       "url": "https://nova.rs/vesti/drustvo/nekaznjivost-motivise-one-koji-prete-od-desetak-pretnji-koje-sam-prijavio-nijedna-razresena/",
@@ -449,6 +477,20 @@
       "priority": 22
     },
     {
+      "id": "t-od-1237-miliona-evra-za-izgradnju-naftovoda-ka-madjarskoj-",
+      "title": "Država garantuje za kredit od 123,7 miliona evra za izgradnju naftovoda ka Mađarskoj",
+      "url": "https://www.danas.rs/vesti/ekonomija/drzava-garantuje-za-kredit-od-1237-miliona-evra-za-izgradnju-naftovoda-ka-madjarskoj/",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:11:33+00:00",
+      "time": "13:11",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "o-kroz-pakao-slali-im-bubasvabe-larve-i-krvavu-masku-svinje-",
       "title": "Čuvena kompanija će platiti 55,7 miliona dolara paru koji je prošao kroz pakao: Slali im bubašvabe, larve i krvavu masku svinje",
       "url": "https://nova.rs/vesti/svet/cuvena-kompanija-ce-platiti-557-miliona-dolara-paru-koji-je-prosao-kroz-pakao-slali-im-bubasvabe-larve-i-krvavu-masku-svinje/",
@@ -519,6 +561,20 @@
       "priority": 8
     },
     {
+      "id": "aka-donela-dve-bombe-u-crkvu-u-parizu-evakuisano-100-vernika",
+      "title": "BAKA UNELA DVE BOMBE U KATEDRALU U PARIZU! Ušla u svetinju i eksplozivne naprave izvadila pred sveštenikom, policija opkolila Notr Dam de la Gar (FOTO)",
+      "url": "https://www.kurir.rs/planeta/10071849/baka-donela-dve-bombe-u-crkvu-u-parizu-evakuisano-100-vernika",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T13:30:42+00:00",
+      "time": "13:30",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "071780-srbija-uvodi-android-uredjaje-za-saobracajnu-policiju",
       "title": "Srbija uvodi novu opremu za policiju: Saobraćajna policija dobija moćno oružje, sve se vidi u sekundi!",
       "url": "https://www.kurir.rs/vesti/drustvo/10071780/srbija-uvodi-android-uredjaje-za-saobracajnu-policiju",
@@ -554,20 +610,6 @@
       "datetime": "2026-08-09T11:46:20+00:00",
       "time": "11:46",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "edoniji-uhapsila-vozaca-bez-dozvole-sa-2-13-promila-alkohola",
-      "title": "Полиција у Северној Македонији ухапсила возача без дозволе са 2,13 промила алкохола",
-      "url": "https://www.politika.rs/scc/clanak/777325/policija-u-severnoj-makedoniji-uhapsila-vozaca-bez-dozvole-sa-2-13-promila-alkohola",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T11:31:00+00:00",
-      "time": "11:31",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "zdrzavanja-kazne-spekulisalo-se-da-je-zbog-ovog-ubijen-foto-",
-      "title": "Ko je naručio smrt Jagodinca i poslao ubice u Niš? Ivana ganjao Interpol, izrešetali ga tokom izdržavanja kazne, spekulisalo se da je zbog ovog ubijen FOTO",
-      "url": "https://nova.rs/vesti/hronika/ko-je-narucio-smrt-jagodinca-i-poslao-ubice-u-nis-ivana-ganjao-interpol-izresetali-ga-tokom-izdrzavanja-kazne-spekulisalo-se-da-je-zbog-ovog-ubijen-foto/",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T12:51:44+00:00",
-      "time": "12:51",
-      "source": "Nova",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "ruge-niski-studenti-veceras-prikupljaju-pomoc-za-vatrogasce-",
-      "title": "„Državu nemamo, ali imamo jedni druge“: Niški studenti večeras prikupljaju pomoć za vatrogasce",
-      "url": "https://www.danas.rs/vesti/drustvo/drzavu-nemamo-ali-imamo-jedni-druge-niski-studenti-veceras-prikupljaju-pomoc-za-vatrogasce/",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T12:49:48+00:00",
-      "time": "12:49",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "tim-srbije-u-trostavu-peti-na-ep-za-mlade-seniore-i-seniorke",
-      "title": "Стрељаштво: Дует тим Србије у троставу пети на ЕП за млађе сениоре и сениорке",
-      "url": "https://www.politika.rs/scc/clanak/777339/sport/ostali-sportovi/streljastvo-duet-tim-srbije-u-trostavu-peti-na-ep-za-mlade-seniore-i-seniorke",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T12:47:00+00:00",
-      "time": "12:47",
-      "source": "Politika",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
