@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 8202.0,
+    "difference": 399991798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100352949,
+    "file": "documents/100352949_Odluka o dodeli narudzbenice JN 59-2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1488000.0,
     "lowest": 8202.0,
     "difference": 1479798.0,
