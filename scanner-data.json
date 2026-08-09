@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "0071864-uhapsen-skopljanac-vozio-bez-dozvole-sa-2-13-promila",
-      "title": "VOZIO MORTUS PIJAN I BEZ DOZVOLE! Skopljanac hitno uhapšen, vozilo zaplenjeno!",
-      "url": "https://www.kurir.rs/region/severna-makedonija/10071864/uhapsen-skopljanac-vozio-bez-dozvole-sa-2-13-promila",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T13:51:43+00:00",
-      "time": "13:51",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "6015986-pozar-svet-indonezija-britanska-kolumbija-grcka-html",
       "title": "Регион и свет у борби са пожарима – хиљаде евакуисаних, затворени путеви и туристичке зоне",
       "url": "https://www.rts.rs/vesti/svet/6015986/pozar-svet-indonezija-britanska-kolumbija-grcka.html",
@@ -57,40 +43,26 @@
       "priority": 92
     },
     {
-      "id": "fudbal-10071920-rasid-mazaheri-hapsenje-bivseg-golmana-irana",
-      "title": "UHAPŠEN POZNATI GOLMAN! Protiv njega se vodi ozbiljna istraga, oglasila se i porodica!",
-      "url": "https://www.kurir.rs/sport/fudbal/10071920/rasid-mazaheri-hapsenje-bivseg-golmana-irana",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T14:50:00+00:00",
-      "time": "14:50",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "10-srpkinja-uhapsena-zbog-kradje-u-trznom-centru-u-podgorici",
-      "title": "SRPKINJA UHAPŠENA U PODGORICI! Osumnjičena da je u tržnom centru ukrala robu u vrednosti od 1.200 evra - evo kako je krala",
-      "url": "https://www.kurir.rs/crna-hronika/10071910/srpkinja-uhapsena-zbog-kradje-u-trznom-centru-u-podgorici",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T14:37:07+00:00",
-      "time": "14:37",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-novom-beogradu-koristio-5-tudjih-automobila-i-ukrao-torbicu",
       "title": "MLADIĆ (21) UHAPŠEN ZBOG SERIJE INCIDENATA U BEOGRADU: Ulazio u tuđa kola i vozio ih po gradu, iz jednog ukrao i TORBICU",
       "url": "https://www.kurir.rs/crna-hronika/10071699/mladic-21-osumnjicen-da-je-na-novom-beogradu-koristio-5-tudjih-automobila-i-ukrao-torbicu",
       "date": "2026-08-09",
       "datetime": "2026-08-09T10:19:48+00:00",
       "time": "10:19",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "a-10071675-decak-4-utopio-se-u-bazenu-bara-na-plazi-u-grckoj",
+      "title": "TRAGEDIJA U GRČKOJ! Dečak (4) se utopio u bazenu bara na plaži na popularnom ostrvu, a evo gde su bili roditelji nesrećnog deteta - odmah su uhapšeni!",
+      "url": "https://www.kurir.rs/planeta/10071675/decak-4-utopio-se-u-bazenu-bara-na-plazi-u-grckoj",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T09:54:58+00:00",
+      "time": "09:54",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -435,6 +407,20 @@
       "priority": 22
     },
     {
+      "id": "w-danas-rs-zivot-najstrasniji-predator-u-istoriji-megalodon-",
+      "title": "Najstrašniji predator svih vremena: Ajkula duga i do 20 metara koja je mogla da proguta sve pre sobom",
+      "url": "https://www.danas.rs/zivot/najstrasniji-predator-u-istoriji-megalodon/",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T16:04:10+00:00",
+      "time": "16:04",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "t-od-1237-miliona-evra-za-izgradnju-naftovoda-ka-madjarskoj-",
       "title": "Država garantuje za kredit od 123,7 miliona evra za izgradnju naftovoda ka Mađarskoj",
       "url": "https://www.danas.rs/vesti/ekonomija/drzava-garantuje-za-kredit-od-1237-miliona-evra-za-izgradnju-naftovoda-ka-madjarskoj/",
@@ -533,20 +519,6 @@
       "priority": 4
     },
     {
-      "id": "aka-donela-dve-bombe-u-crkvu-u-parizu-evakuisano-100-vernika",
-      "title": "BAKA UNELA DVE BOMBE U KATEDRALU U PARIZU! Ušla u svetinju i eksplozivne naprave izvadila pred sveštenikom, policija opkolila Notr Dam de la Gar (FOTO)",
-      "url": "https://www.kurir.rs/planeta/10071849/baka-donela-dve-bombe-u-crkvu-u-parizu-evakuisano-100-vernika",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T13:30:42+00:00",
-      "time": "13:30",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "071780-srbija-uvodi-android-uredjaje-za-saobracajnu-policiju",
       "title": "Srbija uvodi novu opremu za policiju: Saobraćajna policija dobija moćno oružje, sve se vidi u sekundi!",
       "url": "https://www.kurir.rs/vesti/drustvo/10071780/srbija-uvodi-android-uredjaje-za-saobracajnu-policiju",
@@ -589,6 +561,34 @@
       "priority": 4
     },
     {
+      "id": "rvatska-10071665-muskarac-62-izboden-nozem-u-parku-u-osijeku",
+      "title": "UŽAS U OSIJEKU, MUŠKARAC (62) USRED DANA U  PARKU IZBODEN NOŽEM! Policija uhapsila 25-godišnjaka koji je pobegao sa mesta napada, žrtva u teškom stanju",
+      "url": "https://www.kurir.rs/region/hrvatska/10071665/muskarac-62-izboden-nozem-u-parku-u-osijeku",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T09:45:31+00:00",
+      "time": "09:45",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "1-ranjen-u-stomak-policija-pronasla-cauru-i-neispaljen-metak",
+      "title": "PUCNJAVA NA DORĆOLU, TROJICA SA NARKO-DOSIJEIMA DOJURILA U BOLNICU! Mladić (21) upucan u stomak, policija pronašla čauru i metak",
+      "url": "https://www.kurir.rs/crna-hronika/10071592/pucnjava-na-dorcolu-mladic-21-ranjen-u-stomak-policija-pronasla-cauru-i-neispaljen-metak",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T08:35:00+00:00",
+      "time": "08:35",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "zavljanstvo-jer-je-pripadnik-policijskih-snaga-druge-drzave-",
       "title": "Srpskom policajcu na Jarinju oduzeto kosovsko državljanstvo jer je „pripadnik policijskih snaga druge države“",
       "url": "https://vreme.com/drustvo/srpskom-policajcu-na-jarinju-oduzeto-kosovsko-drzavljanstvo-jer-je-pripadnik-policijskih-snaga-druge-drzave/",
@@ -601,6 +601,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "s-nova-rs-sport-tenis-janik-siner-se-povukao-sa-sinsinatija-",
+      "title": "Katastrofalne vesti za Sinera, odluka od koje je strepeo",
+      "url": "https://nova.rs/sport/tenis/janik-siner-se-povukao-sa-sinsinatija/",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T15:57:43+00:00",
+      "time": "15:57",
+      "source": "Nova",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "37056-danijela-nikolic-kurti-nece-moci-da-formira-vladu-vest",
+      "title": "Predsednica skupštinskog Odbora za KiM: Kurtiju došla na naplatu politika isključivosti, terora i konflikta",
+      "url": "https://www.euronews.rs/srbija/politika/237056/danijela-nikolic-kurti-nece-moci-da-formira-vladu/vest",
+      "date": "2026-08-09",
+      "datetime": "2026-08-09T15:55:00+00:00",
+      "time": "15:55",
+      "source": "Euronews Serbia",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "vesti-ruski-mediji-analiza-posete-volodimir-zelenski-srbija-",
@@ -638,34 +666,6 @@
       "datetime": "2026-08-09T15:39:00+00:00",
       "time": "15:39",
       "source": "Politika",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "71941-dragoslav-pavlovic-osudio-pretnje-upucene-zarku-micinu",
-      "title": "PAVLOVIĆ OSUDIO PRETNJE UPUĆENE ŽARKU MIĆINU: \"Političke razlike ne smeju da budu poziv na nasilje\"",
-      "url": "https://www.kurir.rs/vesti/politika/10071941/dragoslav-pavlovic-osudio-pretnje-upucene-zarku-micinu",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T15:30:40+00:00",
-      "time": "15:30",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "r-rs-zabava-zena-10071947-kejt-o-zivotu-sa-oziljcima-na-licu",
-      "title": "\"Govorili su mi da sam zver i nakaza, deca su bežala od mene\": Kao beba dobila opekotine, a onda joj je sudbina zadala okrutan udarac",
-      "url": "https://www.kurir.rs/zabava/zena/10071947/kejt-o-zivotu-sa-oziljcima-na-licu",
-      "date": "2026-08-09",
-      "datetime": "2026-08-09T15:26:55+00:00",
-      "time": "15:26",
-      "source": "Kurir",
       "category": "Права деце",
       "summary": "",
       "breaking": false,
