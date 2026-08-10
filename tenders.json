@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 450000000.0,
+    "lowest": 1569.0,
+    "difference": 449998431.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106297827,
+    "file": "documents/106297827_odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 816000.0,
+    "lowest": 8202.0,
+    "difference": 807798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106262815,
+    "file": "documents/106262815_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 9250770.6,
     "lowest": 8202.0,
     "difference": 9242568.6,
@@ -75,27 +97,5 @@
     "rejection_reasons": [],
     "id": 196572,
     "file": "documents/196572_odluka o dodeli ugovora 8-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1526094.0,
-    "lowest": 7202.0,
-    "difference": 1518892.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105007638,
-    "file": "documents/105007638_odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": "DOO GRAD",
-    "accepted": 3998427.4,
-    "lowest": 1190.0,
-    "difference": 3997237.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100897816,
-    "file": "documents/100897816_Odluka 405-215-40001.pdf"
   }
 ]
