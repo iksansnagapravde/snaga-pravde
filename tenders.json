@@ -1,5 +1,16 @@
 [
   {
+    "winner": "VP 3160 Zrenjanin Rezervni delovi za neborbena vozila - Teretni pr",
+    "accepted": 788616.0,
+    "lowest": 7202.0,
+    "difference": 781414.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100892724,
+    "file": "documents/100892724_Odluka o dodeli ugovora rd 2026.pdf"
+  },
+  {
     "winner": null,
     "accepted": 4543632.75,
     "lowest": 1110.0,
@@ -64,27 +75,5 @@
     "rejection_reasons": [],
     "id": 101534073,
     "file": "documents/101534073_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 790202.0,
-    "lowest": 6043.0,
-    "difference": 784159.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104231493,
-    "file": "documents/104231493_Odluka o dodeli ugovora - 2026-08-11T145541.435.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 8202.0,
-    "lowest": 2202.0,
-    "difference": 6000.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109780192,
-    "file": "documents/109780192_887 O-181.pdf"
   }
 ]
