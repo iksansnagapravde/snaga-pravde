@@ -1,90 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 2500000.0,
-    "lowest": 7202.0,
-    "difference": 2492798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "VP 3160 Zrenjanin Rezervni delovi za neborbena vozila - Teretni pr",
-    "accepted": 788616.0,
-    "lowest": 7202.0,
-    "difference": 781414.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100892724,
-    "file": "documents/100892724_Odluka o dodeli ugovora rd 2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 4543632.75,
-    "lowest": 1110.0,
-    "difference": 4542522.75,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 125506730,
-    "file": "documents/125506730_odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 456000.0,
+    "accepted": 862000.0,
     "lowest": 1920.0,
-    "difference": 454080.0,
+    "difference": 860080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102548184,
-    "file": "documents/102548184_112. Odluka o dodeli ugovora - Neurowerk EEG - 1847.pdf"
+    "id": 101708085,
+    "file": "documents/101708085_Odluka o dodeli ugovora.PDF"
   },
   {
-    "winner": null,
-    "accepted": 47146.0,
-    "lowest": 2202.0,
-    "difference": 44944.0,
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 5228000.0,
+    "lowest": 2211.0,
+    "difference": 5225789.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101322995,
-    "file": "documents/101322995_doc06002420260811151437.pdf"
+    "id": 112498722,
+    "file": "documents/112498722_Odl. o dodeli ugovora-poz 100-Putnicka i laka teretna vozila 2026.pdf"
   },
   {
-    "winner": null,
-    "accepted": 4100000.0,
-    "lowest": 1101.0,
-    "difference": 4098899.0,
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 5228000.0,
+    "lowest": 2211.0,
+    "difference": 5225789.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101200256,
-    "file": "documents/101200256_Odluka o dodeli ugovora za partiju 2 156-26.pdf"
+    "id": 103355728,
+    "file": "documents/103355728_Odl. o dodeli ugovora-poz 100-Putnicka i laka teretna vozila 2026.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 5228000.0,
+    "lowest": 2211.0,
+    "difference": 5225789.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101290179,
+    "file": "documents/101290179_Odl. o dodeli ugovora-poz 100-Putnicka i laka teretna vozila 2026.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 5228000.0,
+    "lowest": 2211.0,
+    "difference": 5225789.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103594127,
+    "file": "documents/103594127_Odl. o dodeli ugovora-poz 100-Putnicka i laka teretna vozila 2026.pdf"
   },
   {
     "winner": null,
     "accepted": 8202.0,
-    "lowest": 2202.0,
-    "difference": 6000.0,
+    "lowest": 3193.0,
+    "difference": 5009.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100352949,
-    "file": "documents/100352949_888 O-181.pdf"
+    "id": 105425574,
+    "file": "documents/105425574_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 1023360.0,
-    "lowest": 8202.0,
-    "difference": 1015158.0,
+    "accepted": 8202.0,
+    "lowest": 3193.0,
+    "difference": 5009.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101534073,
-    "file": "documents/101534073_Odluka o dodeli ugovora.docx"
+    "id": 104022451,
+    "file": "documents/104022451_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 8202.0,
+    "lowest": 3193.0,
+    "difference": 5009.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108795831,
+    "file": "documents/108795831_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 8202.0,
+    "lowest": 3193.0,
+    "difference": 5009.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108585471,
+    "file": "documents/108585471_Odluka o dodeli.docx"
   }
 ]
