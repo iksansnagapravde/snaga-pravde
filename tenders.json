@@ -1,68 +1,112 @@
 [
   {
     "winner": null,
-    "accepted": 4200000.0,
-    "lowest": 7310.0,
-    "difference": 4192690.0,
+    "accepted": 376202.0,
+    "lowest": 1263.0,
+    "difference": 374939.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107659818,
-    "file": "documents/107659818_Odluka o dodeli ugovora.docx"
+    "id": 104830593,
+    "file": "documents/104830593_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 29699210.26,
-    "lowest": 7202.0,
-    "difference": 29692008.26,
+    "accepted": 4559028.0,
+    "lowest": 2201.0,
+    "difference": 4556827.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100015945,
-    "file": "documents/100015945_Odluka o dodeli ugovora.docx"
+    "id": 100065171,
+    "file": "documents/100065171_Odluka o dodeli 3666-4.pdf"
   },
   {
     "winner": null,
-    "accepted": 7327225.0,
-    "lowest": 7202.0,
-    "difference": 7320023.0,
+    "accepted": 5000000.0,
+    "lowest": 3202.0,
+    "difference": 4996798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 112807192,
-    "file": "documents/112807192_Odluka o dodeli 2026.pdf"
+    "id": 112236585,
+    "file": "documents/112236585_7.1 Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 15601080.0,
+    "accepted": 22400797.0,
+    "lowest": 6202.0,
+    "difference": 22394595.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104327032,
+    "file": "documents/104327032_Odluka o stavljanju van snage odluke.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1900000.0,
+    "lowest": 1682.0,
+    "difference": 1898318.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100720850,
+    "file": "documents/100720850_Odluka o dodeli ugovora, Partija 1.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 507237202.0,
+    "lowest": 6202.0,
+    "difference": 507231000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105085251,
+    "file": "documents/105085251_Odluka o dodeli ugovora, Partija 2.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 34128.0,
     "lowest": 8202.0,
-    "difference": 15592878.0,
+    "difference": 25926.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101735648,
-    "file": "documents/101735648_Odluka o dodeli ugovora - Parket u Hali Cair.pdf"
+    "id": 100007569,
+    "file": "documents/100007569_Odluka.pdf"
   },
   {
     "winner": null,
-    "accepted": 5525508.0,
-    "lowest": 4100.0,
-    "difference": 5521408.0,
+    "accepted": 24978555.0,
+    "lowest": 6202.0,
+    "difference": 24972353.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 902607,
-    "file": "documents/902607_Odluka lab potrošni 090_170.pdf"
+    "id": 100579471,
+    "file": "documents/100579471_odluka podloge.pdf"
   },
   {
     "winner": null,
-    "accepted": 5525508.0,
-    "lowest": 4100.0,
-    "difference": 5521408.0,
+    "accepted": 24978555.0,
+    "lowest": 6202.0,
+    "difference": 24972353.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 1702607,
-    "file": "documents/1702607_Odluka lab potrošni 090_170.pdf"
+    "id": 101580908,
+    "file": "documents/101580908_odluka podloge.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 24000000.0,
+    "lowest": 1244.0,
+    "difference": 23998756.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100731198,
+    "file": "documents/100731198_Odluka o dodeli ugovora.pdf"
   }
 ]
