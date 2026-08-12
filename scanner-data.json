@@ -71,20 +71,6 @@
       "priority": 100
     },
     {
-      "id": "-zatvoren-zbog-putina-ne-izlazite-i-ne-gledajte-kroz-w408nmd",
-      "title": "\"NA IZLAZITE IZ KUĆA I NE GLEDAJTE KROZ PROZORE!\" Treći najveći grad u Rusiji zatvoren zbog Putina, bezbednosna agencija poslala dramatično upozorenje: \"Shvatite ozbiljno\"",
-      "url": "https://www.blic.rs/vesti/svet/treci-najveci-grad-u-rusiji-zatvoren-zbog-putina-ne-izlazite-i-ne-gledajte-kroz/w408nmd",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T18:16:07+00:00",
-      "time": "18:16",
-      "source": "Blic",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-237138-macut-najavio-dugorocnu-vodnu-strategiju-srbije-vest",
       "title": "Macut: Ovo leto poslalo upozorenje, potrebna nam dugoročna vodna strategija",
       "url": "https://www.euronews.rs/srbija/politika/237138/macut-najavio-dugorocnu-vodnu-strategiju-srbije/vest",
@@ -267,20 +253,6 @@
       "priority": 70
     },
     {
-      "id": "ici-policija-iznosi-zaplenjeni-materijal-u-kamionima-v60x5jb",
-      "title": "(FOTO) OPSADNO STANJE, POLICIJA ZAPLENJENI MATERIJAL IZNOSI U KAMIONIMA! Nezapamćeno hapšenje u Podgorici: Palo 50 osoba u JEDNOJ kući, spremali nešto OPASNO?",
-      "url": "https://www.blic.rs/vesti/hronika/opsadno-stanje-u-podgorici-policija-iznosi-zaplenjeni-materijal-u-kamionima/v60x5jb",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T18:06:27+00:00",
-      "time": "18:06",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "aljevu-policija-u-autu-pronasla-22-kilograma-marihuane-foto-",
       "title": "Muškarac uhapšen u Kraljevu: Policija u autu pronašla 22 kilograma marihuane (FOTO)",
       "url": "https://nova.rs/vesti/hronika/muskarac-uhapsen-u-kraljevu-policija-u-autu-pronasla-22-kilograma-marihuane-foto/",
@@ -419,6 +391,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "-decak-je-simbol-borbe-protiv-rezima-basara-al-asada-syzegtt",
+      "title": "DEČAK (13) KOJI JE POSTAO SIMBOL BORBE PROTIV ASADOVOG REŽIMA Uhapsili su ga, mučili, a onda UNAKAŽENO TELO vratili porodici i zapretili da ćute! Njegov dželat je sada osuđen na smrt u Siriji",
+      "url": "https://www.blic.rs/vesti/svet/hamza-al-katib-13-ovaj-decak-je-simbol-borbe-protiv-rezima-basara-al-asada/syzegtt",
+      "date": "2026-08-12",
+      "datetime": "2026-08-12T03:37:00+00:00",
+      "time": "03:37",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "vropske-komisije-ne-postuju-ni-svoje-ugovore-i-dogovore-html",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "-danas-rs-kolumna-nemanja-rujevic-drug-marks-je-bio-u-pravu-",
+      "title": "Drug Marks je bio u pravu",
+      "url": "https://www.danas.rs/kolumna/nemanja-rujevic/drug-marks-je-bio-u-pravu/",
+      "date": "2026-08-12",
+      "datetime": "2026-08-12T05:00:25+00:00",
+      "time": "05:00",
+      "source": "Danas",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
