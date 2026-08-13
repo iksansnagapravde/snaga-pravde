@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "daje-pronadjen-opasan-virus-deca-posebno-u-opasnosti-sfmsjxv",
+      "title": "U OVOM VOĆU JE PRONAĐEN OPAKI VIRUS! Hitno se povlači iz prodaje! U najvećoj opasnosti DECA, kompanija upozorila: \"Zovite lekara!\"",
+      "url": "https://www.blic.rs/biznis/jagode-povucene-iz-prodaje-pronadjen-opasan-virus-deca-posebno-u-opasnosti/sfmsjxv",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T20:09:07+00:00",
+      "time": "20:09",
+      "source": "Blic",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "-hrvatskoj-i-crnoj-gori-magistrala-potpuno-blokirana-1v8d720",
       "title": "PAKAO NA JADRANU! Bukte stravični požari u Hrvatskoj i Crnoj Gori: Magistrala potpuno blokirana, kanaderi hitno poslati na ostrva!",
       "url": "https://www.blic.rs/vesti/svet/bukte-stravicni-pozari-u-hrvatskoj-i-crnoj-gori-magistrala-potpuno-blokirana/1v8d720",
@@ -9,20 +23,6 @@
       "time": "19:29",
       "source": "Blic",
       "category": "Лишени слободе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "c-zvala-dreg-queen-alexis-plastic-nakon-napada-nozem-06mqgq3",
-      "title": "\"ZVALA ME CECA IZ ŠPANIJE I NUDILA POMOĆ\" Nakon jezivog napada u Beogradu influenser završio u Hitnoj: Ostao u šoku posle poziva pevačice",
-      "url": "https://www.blic.rs/zabava/svetlana-ceca-raznatovic-zvala-dreg-queen-alexis-plastic-nakon-napada-nozem/06mqgq3",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:30:55+00:00",
-      "time": "15:30",
-      "source": "Blic",
-      "category": "Људска права",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -99,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "psen-leskovcanin-zbog-poziva-na-ubistvo-predstavnika-vlasti-",
-      "title": "Uhapšen Leskovčanin zbog poziva na ubistvo predstavnika vlasti",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-leskovcanin-zbog-poziva-na-ubistvo-predstavnika-vlasti/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:25:43+00:00",
-      "time": "15:25",
-      "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "psenje-zbog-poziva-na-nasilnu-promenu-ustavnog-uredenja-vest",
       "title": "Uhapšen muškarac iz Leskovca: Preko društvenih mreža pozivao na ubistvo zvaničnika i nasilnu promenu ustavnog uređenja",
       "url": "https://www.euronews.rs/srbija/aktuelno/237735/hapsenje-zbog-poziva-na-nasilnu-promenu-ustavnog-uredenja/vest",
@@ -148,20 +134,6 @@
       "datetime": "2026-08-13T15:39:31+00:00",
       "time": "15:39",
       "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "predstavnicima-vlasti-delio-jezive-poruke-na-mrezama-vl80d69",
-      "title": "UHAPŠEN MUŠKARAC ZBOG PRETNJI PREDSTAVNICIMA VLASTI, MUP-A I BIA-E! Pozivao na nasilnu promenu uređenja, delio JEZIVE PORUKE na društvenim mrežama (FOTO)",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-zbog-pretnji-predstavnicima-vlasti-delio-jezive-poruke-na-mrezama/vl80d69",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:00:48+00:00",
-      "time": "15:00",
-      "source": "Blic",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -323,6 +295,34 @@
       "priority": 70
     },
     {
+      "id": "-sejao-strah-po-novom-beogradu-saslusan-u-tuzilastvu-37t3dsr",
+      "title": "ŽENE ČUPAO, SEKAO STAKLOM I NAPADAO ELEKTROŠOKEROM Manijak koji je sejao STRAH po Novom Beogradu pred Tužilaštvom: Presreo Amerikanca sa nožem i tražio novac",
+      "url": "https://www.blic.rs/vesti/beograd/manijak-koji-je-sejao-strah-po-novom-beogradu-saslusan-u-tuzilastvu/37t3dsr",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T21:16:47+00:00",
+      "time": "21:16",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "epremijera-s-makedonije-zbog-zloupotreba-u-drzavnoj-lutriji-",
+      "title": "Optužnica protiv bivšeg vicepremijera S. Makedonije zbog zloupotreba u Državnoj lutriji",
+      "url": "https://n1info.rs/region/optuznica-protiv-bivseg-vicepremijera-s-makedonije-zbog-zloupotreba-u-drzavnoj-lutriji/",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T21:15:04+00:00",
+      "time": "21:15",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "ije-krajnika-ne-istrazuje-osnovno-tuzilastvo-jer-nema-novca-",
       "title": "Neviđeni presedan u Čačku: Smrt mladića nakon operacije krajnika ne istražuje Osnovno tužilaštvo jer - nema novca!",
       "url": "https://nova.rs/vesti/hronika/nevidjeni-presedan-u-cacku-smrt-mladica-nakon-operacije-krajnika-ne-istrazuje-osnovno-tuzilastvo-jer-nema-novca/",
@@ -419,20 +419,6 @@
       "breaking": false,
       "alert": true,
       "priority": 60
-    },
-    {
-      "id": "tps-www-danas-rs-vesti-drustvo-sudjenje-gradonacelnici-nisa-",
-      "title": "Suđenje bivšoj gradonačelnici Niša zakazano za drugi septembar u niškom Višem sudu",
-      "url": "https://www.danas.rs/vesti/drustvo/sudjenje-gradonacelnici-nisa/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:22:39+00:00",
-      "time": "15:22",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
     },
     {
       "id": "vesica-pod-vanrednom-proverom-da-li-ga-vucic-pusta-niz-vodu-",
@@ -589,6 +575,34 @@
       "priority": 8
     },
     {
+      "id": "govarao-studenti-novom-porukom-pozvali-na-sutrasnji-protest-",
+      "title": "VIDEO \"Valjevo pamti. Tukli ste žene, decu, a niko nije odgovarao\": Studenti novom porukom pozvali na sutrašnji protest",
+      "url": "https://nova.rs/vesti/drustvo/video-valjevo-pamti-tukli-ste-zene-decu-a-niko-nije-odgovarao-studenti-novom-porukom-pozvali-na-sutrasnji-protest/",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T21:05:23+00:00",
+      "time": "21:05",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-predgradu-omisa-policija-spremna-za-evakuaciju-stanovnistva",
+      "title": "Пожар у предграђу Омиша, полиција спремна за евакуацију становништва",
+      "url": "https://www.politika.rs/scc/clanak/778368/pozar-u-predgradu-omisa-policija-spremna-za-evakuaciju-stanovnistva",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T20:59:00+00:00",
+      "time": "20:59",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "https-www-danas-rs-svet-voz-u-engleskoj-iskocio-iz-sina-",
       "title": "Putnički voz u Engleskoj iskočio iz šina i prevrnuo se, ima povređenih",
       "url": "https://www.danas.rs/svet/voz-u-engleskoj-iskocio-iz-sina/",
@@ -652,20 +666,6 @@
       "datetime": "2026-08-13T19:32:02+00:00",
       "time": "19:32",
       "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-policija-crne-gore-najavila-pojacane-aktivnosti-zbog-pozara",
-      "title": "Полиција Црне Горе најавила појачане активности због пожара",
-      "url": "https://www.politika.rs/scc/clanak/778351/policija-crne-gore-najavila-pojacane-aktivnosti-zbog-pozara",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T19:22:00+00:00",
-      "time": "19:22",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
