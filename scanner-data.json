@@ -29,6 +29,20 @@
       "priority": 100
     },
     {
+      "id": "ik-centra-za-regrutovanje-uhapsen-zbog-mita-od-15-000-dolara",
+      "title": "Корупција у Украјини: начелник центра за регрутовање ухапшен због мита од 15.000 долара",
+      "url": "https://www.politika.rs/scc/clanak/778326/korupcija-u-ukrajini-nacelnik-centra-za-regrutovanje-uhapsen-zbog-mita-od-15-000-dolara",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T17:05:00+00:00",
+      "time": "17:05",
+      "source": "Politika",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 96
+    },
+    {
       "id": "naevropa-org-a-napad-stevan-filipovic-hapsenje-33827761-html",
       "title": "Otkriven jedan od napadača na Stevana Filipovića, braniće se sa slobode",
       "url": "https://www.slobodnaevropa.org/a/napad-stevan-filipovic-hapsenje/33827761.html",
@@ -41,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "us-koji-je-planiro-ubistvo-americko-ukrajinskog-drzavljanina",
+      "title": "DRAMA U VARŠAVI! Poljski premijer: Uhapšen Rus koji je planirao ubistvo američko-ukrajinskog državljanina",
+      "url": "https://www.kurir.rs/planeta/10075756/poljski-premijer-uhapsen-rus-koji-je-planiro-ubistvo-americko-ukrajinskog-drzavljanina",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T16:26:00+00:00",
+      "time": "16:26",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "hapsen-zbog-pozivanja-na-nasilnu-promenu-ustavnog-uredjenja-",
@@ -267,18 +295,32 @@
       "priority": 76
     },
     {
-      "id": "-nova-rs-vesti-hronika-uhapsen-drzavljanin-bih-u-novom-sadu-",
-      "title": "Uhapšen državljanin BiH u Novom Sadu: Sumnjiči se za sedam razbojništava, tešku krađu i pretnje",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-drzavljanin-bih-u-novom-sadu/",
+      "id": "i-u-sloveniji-pokusali-da-prosvercuju-99-migranata-u-kamonu-",
+      "title": "Srbin i Slovak uhapšeni u Sloveniji: Pokušali da prošvercuju 99 migranata u kamionu",
+      "url": "https://nova.rs/vesti/hronika/srbin-i-slovak-uhapseni-u-sloveniji-pokusali-da-prosvercuju-99-migranata-u-kamonu/",
       "date": "2026-08-13",
-      "datetime": "2026-08-13T12:02:48+00:00",
-      "time": "12:02",
+      "datetime": "2026-08-13T17:02:23+00:00",
+      "time": "17:02",
       "source": "Nova",
-      "category": "Тужилаштво",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
+    },
+    {
+      "id": "u-sloveniji-pokusao-da-prokrijumcari-99-migranata-u-kamionu-",
+      "title": "Uhapšen državljanin Srbije u Sloveniji: Pokušao da prokrijumčari 99 migranata u kamionu",
+      "url": "https://n1info.rs/region/uhapsen-drzavljanin-srbije-u-sloveniji-pokusao-da-prokrijumcari-99-migranata-u-kamionu/",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T16:46:04+00:00",
+      "time": "16:46",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "umnjicen-za-pozivanje-na-nasilnu-promenu-ustavnog-uredjenja-",
@@ -365,6 +407,34 @@
       "priority": 70
     },
     {
+      "id": "ije-krajnika-ne-istrazuje-osnovno-tuzilastvo-jer-nema-novca-",
+      "title": "Neviđeni presedan u Čačku: Smrt mladića nakon operacije krajnika ne istražuje Osnovno tužilaštvo jer - nema novca!",
+      "url": "https://nova.rs/vesti/hronika/nevidjeni-presedan-u-cacku-smrt-mladica-nakon-operacije-krajnika-ne-istrazuje-osnovno-tuzilastvo-jer-nema-novca/",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T17:15:21+00:00",
+      "time": "17:15",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "om-petrovcu-tuzilastvo-jos-nije-ispitalo-ni-sve-osumnjicene-",
+      "title": "Godinu dana nakon napada naprednjaka na građane u Bačkom Petrovcu, tužilaštvo još nije ispitalo ni sve osumnjičene",
+      "url": "https://nova.rs/vesti/hronika/godinu-dana-nakon-napada-naprednjaka-na-gradjane-u-backom-petrovcu-tuzilastvo-jos-nije-ispitalo-ni-sve-osumnjicene/",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T16:51:08+00:00",
+      "time": "16:51",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "3-kosovska-mitrovica-saslusanje-zvanicnika-srpske-liste-vest",
       "title": "Počelo saslušanje zvaničnika Srpske liste zbog navodnog izdavanja falsifikovanih dokumenata",
       "url": "https://www.euronews.rs/srbija/politika/237653/kosovska-mitrovica-saslusanje-zvanicnika-srpske-liste/vest",
@@ -393,6 +463,20 @@
       "priority": 66
     },
     {
+      "id": "ije-selo-gori-a-baba-se-ceslja-ovo-je-svima-promaklo-25d3vm7",
+      "title": "DUGO ČUVANA TAJNA SERIJE \"SELO GORI, A BABA SE ČEŠLJA\" Ovaj detalj je mnogima promakao: Radoš Bajić bio primoran da odmah reaguje",
+      "url": "https://www.blic.rs/zabava/dugo-cuvana-tajna-serije-selo-gori-a-baba-se-ceslja-ovo-je-svima-promaklo/25d3vm7",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T17:15:00+00:00",
+      "time": "17:15",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "evetog-clana-saveta-rem-a-desavale-su-se-nedopustive-stvari-",
       "title": "Rodoljub Šabić – Pri izboru devetog člana Saveta REM-a dešavale su se nedopustive stvari",
       "url": "https://www.ktv.rs/2026/08/13/rodoljub-sabic-pri-izboru-devetog-clana-saveta-rem-a-desavale-su-se-nedopustive-stvari/",
@@ -401,20 +485,6 @@
       "time": "15:23",
       "source": "KTV",
       "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
-      "id": "sti-politika-kosovo-igor-simic-se-odazvao-pozivu-tuzilastva-",
-      "title": "Kosovo: Igor Simić se odazvao pozivu tužilaštva",
-      "url": "https://www.danas.rs/vesti/politika/kosovo-igor-simic-se-odazvao-pozivu-tuzilastva/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T12:49:03+00:00",
-      "time": "12:49",
-      "source": "Danas",
-      "category": "Фалсификовање докумената",
       "summary": "",
       "breaking": false,
       "alert": true,
@@ -561,20 +631,6 @@
       "priority": 26
     },
     {
-      "id": "0075396-severna-mitrovica-igor-simic-dao-izjavu-u-tuzilastvu",
-      "title": "IGOR SIMIĆ POSLE DAVANJA IZJAVE U TUŽILAŠTVU: \"Dobro znamo kakav je odnos pravosudnog sistema Kosova prema Srbima\" (VIDEO)",
-      "url": "https://www.kurir.rs/vesti/politika/10075396/severna-mitrovica-igor-simic-dao-izjavu-u-tuzilastvu",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T11:26:28+00:00",
-      "time": "11:26",
-      "source": "Kurir",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "ernice-pao-u-sarajevu-evo-zasto-ga-je-srbija-trazila-ytx3728",
       "title": "SRBIN SA INTERPOLOVE POTERNICE PAO U SARAJEVU! Tražen zbog oružane pljačke, evo kako su mu stavljene lisice na ruke",
       "url": "https://www.blic.rs/vesti/hronika/srbin-sa-interpolove-poternice-pao-u-sarajevu-evo-zasto-ga-je-srbija-trazila/ytx3728",
@@ -631,34 +687,6 @@
       "priority": 12
     },
     {
-      "id": "-automobili-oborili-rekord-prodato-vise-od-15-vozila-8tsph74",
-      "title": "Kineski NEV automobili oborili rekord: Prodato više od 1,5 vozila, izvoz ključan za kinesku industriju",
-      "url": "https://www.blic.rs/biznis/vesti/kineski-nev-automobili-oborili-rekord-prodato-vise-od-15-vozila/8tsph74",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T13:30:17+00:00",
-      "time": "13:30",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "-skotlandjanki-koja-pesaci-do-hongkonga-u-dobrotvorne-svrhe-",
-      "title": "Srpska policajka navodno pretila zatvorom Škotlanđanki koja pešači do Hongkonga u dobrotvorne svrhe",
-      "url": "https://vreme.com/drustvo/srpska-policajka-navodno-pretila-zatvorom-skotlandjanki-koja-pesaci-do-hongkonga-u-dobrotvorne-svrhe/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T10:14:00+00:00",
-      "time": "10:14",
-      "source": "Vreme",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "ar-nova-rs-global-republika-srpska-200-miliona-evra-kredita-",
       "title": "Pet miliona dnevno, stižu izbori",
       "url": "https://radar.nova.rs/global/republika-srpska-200-miliona-evra-kredita/",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "a-u-luci-roterdam-jedna-osoba-poginula-nekoliko-povredjenih-",
-      "title": "Snažna eksplozija u luci Roterdam, jedna osoba poginula, nekoliko povređenih",
-      "url": "https://n1info.rs/svet/snazna-eksplozija-u-luci-roterdam-jedna-osoba-poginula-nekoliko-povredjenih/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T16:07:13+00:00",
-      "time": "16:07",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "anas-rs-svet-region-slovenacka-policija-hapsenje-krijumcari-",
-      "title": "Slovenačka policija uhapsila državljane Srbije i Slovačke: Pokušali da prokrijumčare 126 ljudi",
-      "url": "https://www.danas.rs/svet/region/slovenacka-policija-hapsenje-krijumcari/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T16:00:07+00:00",
-      "time": "16:00",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
