@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "ode-a-zapravo-je-strogo-zabranjeno-ako-primetite-ovo-clwe8sp",
+      "title": "Zvuči kao poznati zvuk iz prirode, a zapravo je strogo zabranjeno: Ako primetite ovo, hitno obavestite nadležne!",
+      "url": "https://www.blic.rs/vesti/drustvo/zvuci-kao-poznati-zvuk-iz-prirode-a-zapravo-je-strogo-zabranjeno-ako-primetite-ovo/clwe8sp",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T22:06:00+00:00",
+      "time": "22:06",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "daje-pronadjen-opasan-virus-deca-posebno-u-opasnosti-sfmsjxv",
       "title": "U OVOM VOĆU JE PRONAĐEN OPAKI VIRUS! Hitno se povlači iz prodaje! U najvećoj opasnosti DECA, kompanija upozorila: \"Zovite lekara!\"",
       "url": "https://www.blic.rs/biznis/jagode-povucene-iz-prodaje-pronadjen-opasan-virus-deca-posebno-u-opasnosti/sfmsjxv",
@@ -421,20 +435,6 @@
       "priority": 60
     },
     {
-      "id": "vesica-pod-vanrednom-proverom-da-li-ga-vucic-pusta-niz-vodu-",
-      "title": "Imovina Gorana Vesića pod vanrednom proverom: Da li ga Vučić “pušta niz vodu”?",
-      "url": "https://nova.rs/vesti/politika/imovina-gorana-vesica-pod-vanrednom-proverom-da-li-ga-vucic-pusta-niz-vodu/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:13:46+00:00",
-      "time": "15:13",
-      "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "iromasni-i-ponizeni-ali-ne-odustaju-od-sprovodjenja-promena-",
       "title": "KOMS: Mladi danas obespravljeni, siromašni i poniženi, ali ne odustaju od sprovođenja promena",
       "url": "https://www.ktv.rs/2026/08/13/koms-mladi-danas-obespravljeni-siromasni-i-ponizeni-ali-ne-odustaju-od-sprovodjenja-promena/",
@@ -512,20 +512,6 @@
       "datetime": "2026-08-13T19:55:24+00:00",
       "time": "19:55",
       "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "ernice-pao-u-sarajevu-evo-zasto-ga-je-srbija-trazila-ytx3728",
-      "title": "SRBIN SA INTERPOLOVE POTERNICE PAO U SARAJEVU! Tražen zbog oružane pljačke, evo kako su mu stavljene lisice na ruke",
-      "url": "https://www.blic.rs/vesti/hronika/srbin-sa-interpolove-poternice-pao-u-sarajevu-evo-zasto-ga-je-srbija-trazila/ytx3728",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:33:28+00:00",
-      "time": "15:33",
-      "source": "Blic",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -693,6 +679,20 @@
       "date": "2026-08-13",
       "datetime": "2026-08-13T19:14:58+00:00",
       "time": "19:14",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "nom-na-studente-i-zasto-policija-nije-odmah-izasla-na-teren-",
+      "title": "Ko je čovek koji je krenuo kamionom na studente i zašto policija nije odmah izašla na teren",
+      "url": "https://n1info.rs/vesti/ko-je-covek-koji-je-krenuo-kamionom-na-studente-i-zasto-policija-nije-odmah-izasla-na-teren/",
+      "date": "2026-08-13",
+      "datetime": "2026-08-13T18:20:09+00:00",
+      "time": "18:20",
       "source": "N1",
       "category": "Полиција",
       "summary": "",
