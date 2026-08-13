@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 543202.0,
+    "lowest": 6148.0,
+    "difference": 537054.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105046072,
+    "file": "documents/105046072_odluka o dodeli ugovora-geneticka karakterizacija.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 28738000.0,
     "lowest": 5202.0,
     "difference": 28732798.0,
@@ -75,16 +86,5 @@
     "rejection_reasons": [],
     "id": 100050538,
     "file": "documents/100050538_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 70000000.0,
-    "lowest": 6002.0,
-    "difference": 69993998.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100012105,
-    "file": "documents/100012105_Odluka o dodeli narudzbenice elektromaterijal (prekidaci).pdf"
   }
 ]
