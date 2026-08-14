@@ -15,18 +15,18 @@
       "priority": 100
     },
     {
-      "id": "n-oprez-zasto-sad-upozoravaju-na-putovanja-u-nemacku-7bce5gv",
-      "title": "\"POVEĆAN OPREZ\" Amerika izdala HITNO UPOZORENJE ZA EVROPSKU SILU: Nije bezbedna za putovanja - prete teroristički napadi",
-      "url": "https://www.blic.rs/vesti/svet/povecan-oprez-zasto-sad-upozoravaju-na-putovanja-u-nemacku/7bce5gv",
+      "id": "vesti-politika-10076685-Na-Batrovcima-uhapsen-ratni-zlocinac",
+      "title": "NA BATROVCIMA UHAPŠEN RATNI ZLOČINAC (47): Počinio strašne zločine nad dve porodice na KiM 1999. godine",
+      "url": "https://www.kurir.rs/vesti/politika/10076685/Na-Batrovcima-uhapsen-ratni-zlocinac",
       "date": "2026-08-14",
-      "datetime": "2026-08-14T11:45:22+00:00",
-      "time": "11:45",
-      "source": "Blic",
-      "category": "Људска права",
+      "datetime": "2026-08-14T15:52:12+00:00",
+      "time": "15:52",
+      "source": "Kurir",
+      "category": "Хапшења",
       "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "641-Poljska-uhapsila-Rusa-zbog-planiranja-atentata-u-Varsavi",
@@ -239,6 +239,20 @@
       "priority": 70
     },
     {
+      "id": "ifikovanje-uhapseno-ili-se-predalo-zbog-britanskih-sankcija-",
+      "title": "Britanske sankcije pritisle kosovsku mrežu za falsifikovanje dokumenata: Sedam od devet članova uhapšeno ili se predalo",
+      "url": "https://nova.rs/vesti/hronika/sedam-clanova-grupe-za-falsifikovanje-uhapseno-ili-se-predalo-zbog-britanskih-sankcija/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T15:38:12+00:00",
+      "time": "15:38",
+      "source": "Nova",
+      "category": "Фалсификовање докумената",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "a-pucao-coveku-u-stomak-nakon-svadje-na-starom-gradu-nzfnlr2",
       "title": "PUCAO ČOVEKU U STOMAK NAKON SVAĐE Saslušan pucač sa Starog grada: Tužilaštvo otkrilo detalje drame",
       "url": "https://www.blic.rs/vesti/hronika/pucao-coveku-u-stomak-nakon-svadje-na-starom-gradu/nzfnlr2",
@@ -351,20 +365,6 @@
       "priority": 28
     },
     {
-      "id": "emanuel-makron-pozdravio-zakon-koji-daje-pravo-na-eutanaziju",
-      "title": "Председник Емануел Макрон поздравио закон који даје право на еутаназију",
-      "url": "https://www.politika.rs/scc/clanak/778511/predsednik-emanuel-makron-pozdravio-zakon-koji-daje-pravo-na-eutanaziju",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T14:17:00+00:00",
-      "time": "14:17",
-      "source": "Politika",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "er-za-tehnicki-pregled-svih-objekata-vetroparka-vetrozelena-",
       "title": "Tender za tehnički pregled svih objekata vetroparka Vetrozelena",
       "url": "https://n1info.rs/biznis/tender-za-tehnicki-pregled-svih-objekata-vetroparka-vetrozelena/",
@@ -407,20 +407,6 @@
       "priority": 24
     },
     {
-      "id": "ja-za-slucaj-nenada-raskovica-koji-je-sledeci-korak-beograda",
-      "title": "TRI SCENARIJA ZA SLUČAJ NENADA RAŠKOVIĆA: Advokat poručio da su Kurtijevi policajci KRIMINALCI SA ZNAČKAMA, pa objasnio šta treba da bude SLEDEĆI KORAK BEOGRADA",
-      "url": "https://www.kurir.rs/vesti/politika/10076315/tri-scenarija-za-slucaj-nenada-raskovica-koji-je-sledeci-korak-beograda",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T10:18:37+00:00",
-      "time": "10:18",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -447,6 +433,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "-osvojila-14-miliona-evra-na-lotou-listic-joj-bacili-u-smece",
+      "title": "Osvojila 14 miliona evra na lotou, dobitni listić joj bacili u smeće: 20 godina igra iste brojeve, sada se izborila da joj isplate novac",
+      "url": "https://www.kurir.rs/zabava/zanimljivosti/10076664/osvojila-14-miliona-evra-na-lotou-listic-joj-bacili-u-smece",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T15:20:45+00:00",
+      "time": "15:20",
+      "source": "Kurir",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "n1-udario-na-spasioca-iz-amerike-gde-su-obecani-milioni-vest",
@@ -491,8 +491,36 @@
       "priority": 8
     },
     {
+      "id": "as-rs-kultura-italijanska-policija-slike-renoar-sezan-matis-",
+      "title": "Italijanska policija pronašla ukradene slike Renoara, Sezana i Matisa",
+      "url": "https://www.danas.rs/kultura/italijanska-policija-slike-renoar-sezan-matis/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T15:51:16+00:00",
+      "time": "15:51",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-tokom-pozara-u-hrvatskoj-bila-u-autu-s-prijateljima-xvgbjv6",
+      "title": "OVO JE DRAGANA KOJA JE NESTALA TOKOM ARMAGEDONA U HRVATSKOJ Bila u autu s prijateljima, a onda joj se izgubio trag: Policija pretražuje OVO PODRUČJE (FOTO)",
+      "url": "https://www.blic.rs/vesti/svet/ovo-je-dragana-koja-je-nestala-tokom-pozara-u-hrvatskoj-bila-u-autu-s-prijateljima/xvgbjv6",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T15:25:45+00:00",
+      "time": "15:25",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ion-pozar-u-omisu-zbrinuto-2400-ljudi-jedno-telo-pronadjeno-",
-      "title": "Zbog požara u Omišu zbrinuto skoro 2.400 ljudi",
+      "title": "Zbog požara u Omišu zbrinuto skoro 2.400 ljudi, kod Zadra i u kanjonu Cetine buknula nova žarišta",
       "url": "https://n1info.rs/region/pozar-u-omisu-zbrinuto-2400-ljudi-jedno-telo-pronadjeno/",
       "date": "2026-08-14",
       "datetime": "2026-08-14T14:50:36+00:00",
@@ -666,34 +694,6 @@
       "datetime": "2026-08-14T11:35:56+00:00",
       "time": "11:35",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-www-rts-rs-vesti-hronika-6019613-bomba-bezanijska-kosa-html",
-      "title": "Пронађена  бомба у дворишту куће на Бежанијској коси",
-      "url": "https://www.rts.rs/vesti/hronika/6019613/bomba-bezanijska-kosa.html",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T11:18:45+00:00",
-      "time": "11:18",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "lazi-dolaze-iz-pristine-dok-medjunarodna-zajednica-cuti-html",
-      "title": "Вучић о претученом Рашковићу: Страшне лажи долазе из Приштине, док међународна заједница ћути",
-      "url": "https://www.rts.rs/vesti/politika/6019496/vucic-o-pretucenom-raskovicu-strasne-lazi-dolaze-iz-pristine-dok-medjunarodna-zajednica-cuti.html",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T10:59:37+00:00",
-      "time": "10:59",
-      "source": "RTS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
