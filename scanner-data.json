@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "-cerka-ide-na-hitnu-operaciju-i-ukrali-vise-od-20000-ffff3ys",
-      "title": "SLAGALI BEOGRAĐANKU DA JOJ ĆERKA IDE NA HITNU OPERACIJU, PA JE OPELJEŠILI Lažni lekari \"zgrnuli\" više od 20.000 evra jednim POZIVOM, odmah su uhapšeni",
-      "url": "https://www.blic.rs/vesti/hronika/prevarili-beogradjanku-da-joj-cerka-ide-na-hitnu-operaciju-i-ukrali-vise-od-20000/ffff3ys",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T17:53:22+00:00",
-      "time": "17:53",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
       "id": "naevropa-org-a-napad-stevan-filipovic-hapsenje-33827761-html",
       "title": "Otkriven jedan od napadača na Stevana Filipovića, braniće se sa slobode",
       "url": "https://www.slobodnaevropa.org/a/napad-stevan-filipovic-hapsenje/33827761.html",
@@ -351,20 +337,6 @@
       "priority": 66
     },
     {
-      "id": "ije-selo-gori-a-baba-se-ceslja-ovo-je-svima-promaklo-25d3vm7",
-      "title": "DUGO ČUVANA TAJNA SERIJE \"SELO GORI, A BABA SE ČEŠLJA\" Ovaj detalj je mnogima promakao: Radoš Bajić bio primoran da odmah reaguje",
-      "url": "https://www.blic.rs/zabava/dugo-cuvana-tajna-serije-selo-gori-a-baba-se-ceslja-ovo-je-svima-promaklo/25d3vm7",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T17:15:00+00:00",
-      "time": "17:15",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "evetog-clana-saveta-rem-a-desavale-su-se-nedopustive-stvari-",
       "title": "Rodoljub Šabić – Pri izboru devetog člana Saveta REM-a dešavale su se nedopustive stvari",
       "url": "https://www.ktv.rs/2026/08/13/rodoljub-sabic-pri-izboru-devetog-clana-saveta-rem-a-desavale-su-se-nedopustive-stvari/",
@@ -517,6 +489,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "edicinsku-pomoc-nakon-sto-je-policija-pretukla-demonstrante-",
+      "title": "Na današnji dan, 14. avgust: U Valjevu desetine ljudi zatražilo medicinsku pomoć nakon što je policija pretukla demonstrante",
+      "url": "https://n1info.rs/vesti/na-danasnji-dan-14-avgust-u-valjevu-desetine-ljudi-zatrazilo-medicinsku-pomoc-nakon-sto-je-policija-pretukla-demonstrante/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T04:05:00+00:00",
+      "time": "04:05",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "govarao-studenti-novom-porukom-pozvali-na-sutrasnji-protest-",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-13T17:20:28+00:00",
       "time": "17:20",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "67-policija-uvodi-android-uredaje-body-kamere-i-dronove-vest",
+      "title": "Android uređaji, body kamere i dronovi: Pukovnik Marković za Euronews Srbija otkriva novine koje uvodi policija",
+      "url": "https://www.euronews.rs/srbija/aktuelno/237467/policija-uvodi-android-uredaje-body-kamere-i-dronove/vest",
+      "date": "2026-08-12",
+      "datetime": "2026-08-12T17:00:00+00:00",
+      "time": "17:00",
+      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
