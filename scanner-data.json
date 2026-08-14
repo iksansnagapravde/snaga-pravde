@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "lomata-kritikovao-vojni-savez-pristine-tirane-i-zagreba-vest",
+      "title": "Oštro upozorenje Rusije: &quot;Hrvatska, Albanija i tzv. Kosovo stvaraju vojni kvaziblok koji destabilizuje region&quot;",
+      "url": "https://www.b92.net/info/region/258813/ruski-diplomata-kritikovao-vojni-savez-pristine-tirane-i-zagreba/vest",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T05:27:00+00:00",
+      "time": "05:27",
+      "source": "B92",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "ode-a-zapravo-je-strogo-zabranjeno-ako-primetite-ovo-clwe8sp",
       "title": "Zvuči kao poznati zvuk iz prirode, a zapravo je strogo zabranjeno: Ako primetite ovo, hitno obavestite nadležne!",
       "url": "https://www.blic.rs/vesti/drustvo/zvuci-kao-poznati-zvuk-iz-prirode-a-zapravo-je-strogo-zabranjeno-ako-primetite-ovo/clwe8sp",
@@ -99,20 +113,6 @@
       "priority": 90
     },
     {
-      "id": "82-leskovac-hapsenje-nasilna-promena-ustavnog-uredjenja-html",
-      "title": "Лесковац, ухапшен мушкарац због сумње да је позивао на насилну промену уставног уређења",
-      "url": "https://www.rts.rs/vesti/hronika/6018982/leskovac-hapsenje-nasilna-promena-ustavnog-uredjenja.html",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T15:39:31+00:00",
-      "time": "15:39",
-      "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "rbija-aktuelno-237686-slucaj-ubistva-prike-preuzeo-jtok-vest",
       "title": "Novi detalji ubistva Prike u Kumodražu: Slučaj preuzelo Tužilaštvo za organizovani kriminal, osumnjičeni u bekstvu",
       "url": "https://www.euronews.rs/srbija/aktuelno/237686/slucaj-ubistva-prike-preuzeo-jtok/vest",
@@ -197,20 +197,6 @@
       "priority": 70
     },
     {
-      "id": "u-sloveniji-pokusao-da-prokrijumcari-99-migranata-u-kamionu-",
-      "title": "Uhapšen državljanin Srbije u Sloveniji: Pokušao da prokrijumčari 99 migranata u kamionu",
-      "url": "https://n1info.rs/region/uhapsen-drzavljanin-srbije-u-sloveniji-pokusao-da-prokrijumcari-99-migranata-u-kamionu/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T16:46:04+00:00",
-      "time": "16:46",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "630-merdare-uhapsen-fs-zbog-sumnje-na-navodnu-spijunazu-vest",
       "title": "Tzv. kosovska policija na Merdaru uhapsila osumnjičenog za navodnu špijunažu",
       "url": "https://www.euronews.rs/srbija/aktuelno/237630/merdare-uhapsen-fs-zbog-sumnje-na-navodnu-spijunazu/vest",
@@ -287,20 +273,6 @@
       "date": "2026-08-13",
       "datetime": "2026-08-13T17:15:21+00:00",
       "time": "17:15",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "om-petrovcu-tuzilastvo-jos-nije-ispitalo-ni-sve-osumnjicene-",
-      "title": "Godinu dana nakon napada naprednjaka na građane u Bačkom Petrovcu, tužilaštvo još nije ispitalo ni sve osumnjičene",
-      "url": "https://nova.rs/vesti/hronika/godinu-dana-nakon-napada-naprednjaka-na-gradjane-u-backom-petrovcu-tuzilastvo-jos-nije-ispitalo-ni-sve-osumnjicene/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T16:51:08+00:00",
-      "time": "16:51",
       "source": "Nova",
       "category": "Тужилаштво",
       "summary": "",
@@ -435,6 +407,20 @@
       "priority": 26
     },
     {
+      "id": "a-ispitu-casti-tomic-test-da-li-je-zakon-iznad-uniforme-html",
+      "title": "Адвокат Пешић о пребијању Рашковића: Тужилац у Приштини на испиту части; Томић: Тест да ли је закон изнад униформе",
+      "url": "https://www.rts.rs/vesti/politika/6019345/advokat-pesic-o-prebijanju-raskovica-tuzilac-u-pristini-na-ispitu-casti-tomic-test-da-li-je-zakon-iznad-uniforme-.html",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T06:10:57+00:00",
+      "time": "06:10",
+      "source": "RTS",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "ba-zbog-sirenja-laznih-vesti-da-je-voda-zagadjena-u-skoplju-",
       "title": "MUP S. Makedonije:  Na informativnim razgovorima 13 osoba zbog širenja lažnih vesti da je voda zagađena u Skoplju",
       "url": "https://n1info.rs/region/mup-s-makedonije-na-informativnim-razgovorima-13-osoba-zbog-sirenja-laznih-vesti-da-je-voda-zagadjena-u-skoplju/",
@@ -491,8 +477,22 @@
       "priority": 8
     },
     {
+      "id": "ustvo-veliki-pozari-crna-gora-herceg-novi-ulcinj-evakuacija-",
+      "title": "Požari u Crnoj Gori ne jenjavaju: Vatra kod Herceg Novog stigla blizu kuća",
+      "url": "https://vreme.com/drustvo/veliki-pozari-crna-gora-herceg-novi-ulcinj-evakuacija/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T05:39:25+00:00",
+      "time": "05:39",
+      "source": "Vreme",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "edicinsku-pomoc-nakon-sto-je-policija-pretukla-demonstrante-",
-      "title": "Na današnji dan, 14. avgust: U Valjevu desetine ljudi zatražilo medicinsku pomoć nakon što je policija pretukla demonstrante",
+      "title": "Na današnji dan, 14. avgust: U Valjevu desetine ljudi zatražile medicinsku pomoć nakon što je policija pretukla demonstrante",
       "url": "https://n1info.rs/vesti/na-danasnji-dan-14-avgust-u-valjevu-desetine-ljudi-zatrazilo-medicinsku-pomoc-nakon-sto-je-policija-pretukla-demonstrante/",
       "date": "2026-08-14",
       "datetime": "2026-08-14T04:05:00+00:00",
@@ -512,20 +512,6 @@
       "datetime": "2026-08-13T21:05:23+00:00",
       "time": "21:05",
       "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-predgradu-omisa-policija-spremna-za-evakuaciju-stanovnistva",
-      "title": "Пожар у предграђу Омиша, полиција спремна за евакуацију становништва",
-      "url": "https://www.politika.rs/scc/clanak/778368/pozar-u-predgradu-omisa-policija-spremna-za-evakuaciju-stanovnistva",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T20:59:00+00:00",
-      "time": "20:59",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -645,20 +631,6 @@
       "priority": 4
     },
     {
-      "id": "vrsila-pretrese-u-vise-sela-u-okolini-zubinog-potoka-m8prtzy",
-      "title": "Tzv. kosovska policija izvršila pretrese u više sela u okolini Zubinog Potoka: Privedene dve osobe",
-      "url": "https://www.blic.rs/vesti/politika/tzv-kosovska-policija-izvrsila-pretrese-u-vise-sela-u-okolini-zubinog-potoka/m8prtzy",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T18:13:50+00:00",
-      "time": "18:13",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "om-kolasinu-pretresi-u-oklacu-i-drenu-pronadjen-kalasnjikov-",
       "title": "Višednevna akcija kosovske policije u Ibarskom Kolašinu: Pretresi u Oklacu i Drenu, pronađen kalašnjikov",
       "url": "https://n1info.rs/vesti/visednevna-akcija-u-kosovske-policije-u-ibarskom-kolasinu-pretresi-u-oklacu-i-drenu-pronadjen-kalasnjikov/",
@@ -666,20 +638,6 @@
       "datetime": "2026-08-13T17:59:31+00:00",
       "time": "17:59",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "talnosti-u-valjevu-pojacava-se-kampanja-prorezimskih-medija-",
-      "title": "Godinu dana od policijske brutalnosti u Valjevu: Pojačava se kampanja prorežimskih medija",
-      "url": "https://www.danas.rs/vesti/drustvo/godinu-dana-od-policijske-brutalnosti-u-valjevu-pojacava-se-kampanja-prorezimskih-medija/",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T17:20:28+00:00",
-      "time": "17:20",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "i-sad-u-rastinju-pronadena-sumnjiva-eksplozivna-naprava-vest",
+      "title": "Pronađena sumnjiva eskplozivna naprava u Novom Sadu: Policija odmah reagovala",
+      "url": "https://www.euronews.rs/srbija/aktuelno/237488/novi-sad-u-rastinju-pronadena-sumnjiva-eksplozivna-naprava/vest",
+      "date": "2026-08-12",
+      "datetime": "2026-08-12T09:54:00+00:00",
+      "time": "09:54",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-istice-rok-za-placanje-trece-rate-poreza-na-imovinu-ebc1vnk",
+      "title": "Važno za ove poreske obveznike: Danas ističe rok za plaćanje treće rate, evo kolika je novčana kazna  kašnjenje",
+      "url": "https://www.blic.rs/biznis/danas-istice-rok-za-placanje-trece-rate-poreza-na-imovinu/ebc1vnk",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T06:16:41+00:00",
+      "time": "06:16",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-pusten-iz-samice-nakon-tule-pomeren-izlazak-iz-zatvora-vest",
+      "title": "Novi haos oko Didija: Potukao se u zatvoru, završio u samici, a sada je pušten",
+      "url": "https://www.b92.net/zivot/aktuelno/258844/reper-didi-pusten-iz-samice-nakon-tule-pomeren-izlazak-iz-zatvora/vest",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T06:16:00+00:00",
+      "time": "06:16",
+      "source": "B92",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
