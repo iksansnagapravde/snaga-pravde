@@ -57,6 +57,34 @@
       "priority": 95
     },
     {
+      "id": "95-uhapsen-u-surcinu-zbog-falsifikovanja-registarske-tablice",
+      "title": "UHAPŠEN (48) U SURČINU ZBOG FALSIFIKOVANJA: Evo šta je uradio sa automobilom",
+      "url": "https://www.kurir.rs/crna-hronika/10076695/uhapsen-u-surcinu-zbog-falsifikovanja-registarske-tablice",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T22:20:00+00:00",
+      "time": "22:20",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "0-tivat-uhapseni-vozaci-alkohol-218-promila-testiranje-droga",
+      "title": "ŠVEĐANIN VOZIO SA 2,18 PROMILA, PAO U RUKE POLICIJI: Uhapšena još trojica vozača u Tivtu",
+      "url": "https://www.kurir.rs/region/crna-gora/10076640/tivat-uhapseni-vozaci-alkohol-218-promila-testiranje-droga",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T22:11:00+00:00",
+      "time": "22:11",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "hronika-6019978-hapsenje-ratni-zlocin-kim-djakovica-bec-html",
       "title": "Мушкарац ухапшен на Батровцима због ратног злочина на КиМ",
       "url": "https://www.rts.rs/vesti/hronika/6019978/hapsenje-ratni-zlocin-kim-djakovica-bec.html",
@@ -106,20 +134,6 @@
       "datetime": "2026-08-14T16:25:21+00:00",
       "time": "16:25",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vesti-politika-10076685-Na-Batrovcima-uhapsen-ratni-zlocinac",
-      "title": "NA BATROVCIMA UHAPŠEN RATNI ZLOČINAC (47): Počinio strašne zločine nad dve porodice na KiM 1999. godine - oglasio se Dačić",
-      "url": "https://www.kurir.rs/vesti/politika/10076685/Na-Batrovcima-uhapsen-ratni-zlocinac",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T15:52:12+00:00",
-      "time": "15:52",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -547,20 +561,6 @@
       "priority": 8
     },
     {
-      "id": "-osvojila-14-miliona-evra-na-lotou-listic-joj-bacili-u-smece",
-      "title": "Osvojila 14 miliona evra na lotou, dobitni listić joj bacili u smeće: 20 godina igra iste brojeve, sada se izborila da joj isplate novac",
-      "url": "https://www.kurir.rs/zabava/zanimljivosti/10076664/osvojila-14-miliona-evra-na-lotou-listic-joj-bacili-u-smece",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T15:20:45+00:00",
-      "time": "15:20",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "ar-nova-rs-global-republika-srpska-200-miliona-evra-kredita-",
       "title": "Pet miliona dnevno, stižu izbori",
       "url": "https://radar.nova.rs/global/republika-srpska-200-miliona-evra-kredita/",
@@ -573,6 +573,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ckog-u-ovoj-drzavi-kostace-vas-kao-rucak-u-restoranu-set8946",
+      "title": "Za GADNU NAVIKU koju Srbi imaju na svakom koraku u Italiji se plaća PAPRENA KAZNA: Pravilo 100 metara o kom mnogi nemaju pojma",
+      "url": "https://www.blic.rs/slobodno-vreme/prelazak-ulice-mimo-pesackog-u-ovoj-drzavi-kostace-vas-kao-rucak-u-restoranu/set8946",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T22:44:00+00:00",
+      "time": "22:44",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "s-www-danas-rs-kultura-pronadjen-ukraden-print-pabla-pikasa-",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-14T18:50:05+00:00",
       "time": "18:50",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "inu-dana-pretucen-u-valjevu-danas-se-vratio-na-mesto-napada-",
-      "title": "\"Režimi Aleksandra Vučića i na Kosovu su isti, svi biju Srbe\": Vladimir je pre godinu dana pretučen u Valjevu, danas se vratio na mesto napada",
-      "url": "https://nova.rs/vesti/hronika/vladimir-je-pre-godinu-dana-pretucen-u-valjevu-danas-se-vratio-na-mesto-napada/",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:32:18+00:00",
-      "time": "18:32",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
