@@ -99,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "onika-10076723-b-m-zadrzan-zbog-falsifikovanja-novca-i-droge",
-      "title": "UHAPŠEN MLADIĆ (25) NA NOVOM BEOGRADU U stanu mu našli KOVERTU PUNU LAŽNOG NOVCA, a kada su videli šta je u elektronskim cigaretama ODMAH SVE ODUZELI",
-      "url": "https://www.kurir.rs/crna-hronika/10076723/b-m-zadrzan-zbog-falsifikovanja-novca-i-droge",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:45:36+00:00",
-      "time": "16:45",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "37891-na-batrovcima-uhapsen-osumnjiceni-za-ratni-zlocin-vest",
       "title": "Dačić: Na graničnom prelazu Batrovci uhapšen osumnjičeni za ratni zločin",
       "url": "https://www.euronews.rs/srbija/aktuelno/237891/na-batrovcima-uhapsen-osumnjiceni-za-ratni-zlocin/vest",
@@ -659,20 +645,6 @@
       "priority": 4
     },
     {
-      "id": "c-clanak-778563-zena-pljuvala-i-udarala-ukrajince-u-poljskoj",
-      "title": "Жена пљувала и ударала Украјинце у Пољској",
-      "url": "https://www.politika.rs/scc/clanak/778563/zena-pljuvala-i-udarala-ukrajince-u-poljskoj",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:21:00+00:00",
-      "time": "19:21",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "ti-vladica-ilic-policijska-brutalnost-valjevo-pamti-nasilje-",
       "title": "Vladica Ilić: Policija ima zeleno svetlo da sprovodi nasilje nad građanima i da za to ne odgovara",
       "url": "https://n1info.rs/vesti/vladica-ilic-policijska-brutalnost-valjevo-pamti-nasilje/",
@@ -694,6 +666,34 @@
       "datetime": "2026-08-14T18:50:05+00:00",
       "time": "18:50",
       "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "inu-dana-pretucen-u-valjevu-danas-se-vratio-na-mesto-napada-",
+      "title": "\"Režimi Aleksandra Vučića i na Kosovu su isti, svi biju Srbe\": Vladimir je pre godinu dana pretučen u Valjevu, danas se vratio na mesto napada",
+      "url": "https://nova.rs/vesti/hronika/vladimir-je-pre-godinu-dana-pretucen-u-valjevu-danas-se-vratio-na-mesto-napada/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T18:32:18+00:00",
+      "time": "18:32",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-politika-10076787-evo-koliko-blokadera-se-okupilo-u-valjevu",
+      "title": "EVO KOLIKO SE TAČNO BLOKADERA OKUPILO U VALJEVU: Policija pronašla palice i gas maske! (FOTO)",
+      "url": "https://www.kurir.rs/vesti/politika/10076787/evo-koliko-blokadera-se-okupilo-u-valjevu",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T18:17:04+00:00",
+      "time": "18:17",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
