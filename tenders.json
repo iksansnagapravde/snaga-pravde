@@ -1,101 +1,90 @@
 [
   {
     "winner": null,
-    "accepted": 416666.67,
-    "lowest": 6005.0,
-    "difference": 410661.67,
+    "accepted": 45000000.0,
+    "lowest": 3202.0,
+    "difference": 44996798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101528493,
-    "file": "documents/101528493_Odluka o dodeli ugovora.pdf"
+    "id": 110980041,
+    "file": "documents/110980041_3JNOP6~1.PDF"
   },
   {
     "winner": null,
-    "accepted": 11352000.0,
-    "lowest": 2920.0,
-    "difference": 11349080.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101454776,
-    "file": "documents/101454776_Odluka o dodeli ugovora 2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 21449.0,
-    "lowest": 2202.0,
-    "difference": 19247.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101861695,
-    "file": "documents/101861695_o 50.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 150000000.0,
-    "lowest": 8202.0,
-    "difference": 149991798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100423518,
-    "file": "documents/100423518_4478- Odluka.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 14800000.0,
+    "accepted": 4697144.4,
     "lowest": 7202.0,
-    "difference": 14792798.0,
+    "difference": 4689942.4,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101032283,
-    "file": "documents/101032283_12b. Odluka o dodeli ugovora.pdf"
+    "id": 100447637,
+    "file": "documents/100447637_Odluka o dodeli ugovora SA PORTALA 53-2026-5.pdf"
   },
   {
     "winner": null,
-    "accepted": 40213.2,
+    "accepted": 20139121.53,
+    "lowest": 4171.0,
+    "difference": 20134950.53,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103378960,
+    "file": "documents/103378960_odluka o dodeli ugovora cisterna.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8202.0,
     "lowest": 1202.0,
-    "difference": 39011.2,
+    "difference": 7000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100038783,
-    "file": "documents/100038783_o 58.pdf"
+    "id": 166169,
+    "file": "documents/166169_513-O-195.pdf"
   },
   {
     "winner": null,
-    "accepted": 6500000.0,
-    "lowest": 1251.0,
-    "difference": 6498749.0,
+    "accepted": 89604538.91,
+    "lowest": 7202.0,
+    "difference": 89597336.91,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 113087933,
-    "file": "documents/113087933_Odluka o dodeli ugovora  003557028.pdf"
+    "id": 101518008,
+    "file": "documents/101518008_JN 144-2026 Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 17000000.0,
-    "lowest": 6202.0,
-    "difference": 16993798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106382099,
-    "file": "documents/106382099_75 OU- Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 8400.0,
+    "accepted": 8202.0,
     "lowest": 1202.0,
-    "difference": 7198.0,
+    "difference": 7000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_o 57.pdf"
+    "id": 166170,
+    "file": "documents/166170_512-O-195.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 21661374.0,
+    "lowest": 7202.0,
+    "difference": 21654172.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100563665,
+    "file": "documents/100563665_odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 100000000.0,
+    "lowest": 8202.0,
+    "difference": 99991798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100892724,
+    "file": "documents/100892724_Odluka o dodeli ugovora.docx"
   }
 ]
