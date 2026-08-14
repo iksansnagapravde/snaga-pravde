@@ -29,6 +29,20 @@
       "priority": 166
     },
     {
+      "id": "donacelnik-uhapsen-zbog-korona-kredita-od-1-5-miliona-dolara",
+      "title": "Градоначелник ухапшен због корона-кредита од 1,5 милиона долара",
+      "url": "https://www.politika.rs/scc/clanak/778567/gradonacelnik-uhapsen-zbog-korona-kredita-od-1-5-miliona-dolara",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T20:02:00+00:00",
+      "time": "20:02",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
       "title": "REKAO 3 REČI NA SRPSKOM I PUCAO BALKANSKOM \"KRALJU PROSTITUCIJE\" U SLEPOOČNICU! Albanski mafijaški bos odlučio da prekine krvnu osvetu i potpisao smrtnu presudu",
       "url": "https://www.kurir.rs/crna-hronika/10076749/pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
@@ -63,34 +77,6 @@
       "date": "2026-08-14",
       "datetime": "2026-08-14T17:44:00+00:00",
       "time": "17:44",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "vom-sadu-uhapsen-drzavljanin-bih-zbog-vise-dela-razbojnistva",
-      "title": "У Новом Саду ухапшен држављанин БиХ због више дела разбојништва",
-      "url": "https://www.politika.rs/scc/clanak/778547/u-novom-sadu-uhapsen-drzavljanin-bih-zbog-vise-dela-razbojnistva",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:29:00+00:00",
-      "time": "17:29",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "8546-ubica-iz-tirane-uhapsen-u-atini-posle-20-godina-potrage",
-      "title": "Убица из Тиране ухапшен у Атини после 20 година потраге",
-      "url": "https://www.politika.rs/scc/clanak/778546/ubica-iz-tirane-uhapsen-u-atini-posle-20-godina-potrage",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:17:00+00:00",
-      "time": "17:17",
       "source": "Politika",
       "category": "Хапшења",
       "summary": "",
@@ -265,6 +251,20 @@
       "breaking": false,
       "alert": true,
       "priority": 84
+    },
+    {
+      "id": "ps-nova-rs-vesti-svet-nemacka-razotkrila-prevarantsku-mrezu-",
+      "title": "Nemačka razotkrila prevarantsku mrežu: Uzeli milione s računa korisnika onlajn bankarstva",
+      "url": "https://nova.rs/vesti/svet/nemacka-razotkrila-prevarantsku-mrezu/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T19:55:42+00:00",
+      "time": "19:55",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 78
     },
     {
       "id": "https-n1info-rs-svet-hakovanje-onlajn-bankarstvo-nemacka-",
@@ -589,6 +589,20 @@
       "priority": 8
     },
     {
+      "id": "a-sumnja-da-je-pozar-ispred-rumunske-ambasade-podmetnut-vest",
+      "title": "Policija traži svedoke požara ispred rumunske ambasade; Namerno je izazvan?",
+      "url": "https://www.b92.net/info/svet/259111/svajcarska-policija-sumnja-da-je-pozar-ispred-rumunske-ambasade-podmetnut/vest",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T19:52:00+00:00",
+      "time": "19:52",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "c-clanak-778563-zena-pljuvala-i-udarala-ukrajince-u-poljskoj",
       "title": "Жена пљувала и ударала Украјинце у Пољској",
       "url": "https://www.politika.rs/scc/clanak/778563/zena-pljuvala-i-udarala-ukrajince-u-poljskoj",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-14T17:35:45+00:00",
       "time": "17:35",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ske-policije-kod-zubinog-potoka-privedeno-sest-osoba-fpne8k0",
-      "title": "NOVI TEROR U ZUBINOM POTOKU Tzv. kosovska policija izvršila pretres, privedeno ŠEST OSOBA",
-      "url": "https://www.blic.rs/vesti/politika/novi-pretresi-tzv-kosovske-policije-kod-zubinog-potoka-privedeno-sest-osoba/fpne8k0",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:57:53+00:00",
-      "time": "16:57",
-      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
