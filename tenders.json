@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 10564844.4,
+    "lowest": 6920.0,
+    "difference": 10557924.4,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Sken odluka gorivo i mazivo 14.08.2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 5495000.0,
     "lowest": 7202.0,
     "difference": 5487798.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100426309,
     "file": "documents/100426309_897 O-181.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5969967.6,
-    "lowest": 7202.0,
-    "difference": 5962765.6,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101833424,
-    "file": "documents/101833424_Odluka o dodeli ugovora JN 90-2026.PDF"
   }
 ]
