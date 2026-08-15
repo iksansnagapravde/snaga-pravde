@@ -113,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "-holivudski-glumac-uhapsen-zbog-sumnji-na-zlostavljanje-dece",
-      "title": "Glumac uhapšen zbog zlostavljanja dece: Koristio je kastinge kako bi namamio žrtve",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/10077459/holivudski-glumac-uhapsen-zbog-sumnji-na-zlostavljanje-dece",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T16:42:17+00:00",
-      "time": "16:42",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "i-makedonski-i-kosovski-gradjani-sa-324-kilograma-marihuane-",
       "title": "U Solunu uhapšeni makedonski i kosovski građani sa 324 kilograma marihuane",
       "url": "https://www.danas.rs/vesti/drustvo/u-solunu-uhapseni-makedonski-i-kosovski-gradjani-sa-324-kilograma-marihuane/",
@@ -659,9 +645,9 @@
       "priority": 0
     },
     {
-      "id": "a-rs-scc-clanak-778777-katar-nismo-pritvorili-iranske-pilote",
-      "title": "Катар: Нисмо притворили иранске пилоте",
-      "url": "https://www.politika.rs/scc/clanak/778777/katar-nismo-pritvorili-iranske-pilote",
+      "id": "ka-rs-sr-clanak-778777-katar-nismo-pritvorili-iranske-pilote",
+      "title": "Katar: Nismo pritvorili iranske pilote",
+      "url": "https://www.politika.rs/sr/clanak/778777/katar-nismo-pritvorili-iranske-pilote",
       "date": "2026-08-15",
       "datetime": "2026-08-15T21:00:00+00:00",
       "time": "21:00",
@@ -688,13 +674,27 @@
     },
     {
       "id": "bokser-vuk-milenkovic-izborio-plasman-na-evropskom-prvenstvu",
-      "title": "Млади српски боксер Вук Миленковић изборио пласман на Европском првенству",
-      "url": "https://www.politika.rs/scc/clanak/778773/sport/ostali-sportovi/mladi-srpski-bokser-vuk-milenkovic-izborio-plasman-na-evropskom-prvenstvu",
+      "title": "Mladi srpski bokser Vuk Milenković izborio plasman na Evropskom prvenstvu",
+      "url": "https://www.politika.rs/sr/clanak/778773/sport/ostali-sportovi/mladi-srpski-bokser-vuk-milenkovic-izborio-plasman-na-evropskom-prvenstvu",
       "date": "2026-08-15",
       "datetime": "2026-08-15T20:27:00+00:00",
       "time": "20:27",
       "source": "Politika",
       "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "tkriva-karte-ovo-su-putinova-dva-plana-za-nastavak-rata-vest",
+      "title": "Kremlj otkriva karte: Ovo su Putinova dva plana za nastavak rata",
+      "url": "https://www.b92.net/info/svet/259312/kremlj-otkriva-karte-ovo-su-putinova-dva-plana-za-nastavak-rata/vest",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T20:17:00+00:00",
+      "time": "20:17",
+      "source": "B92",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
