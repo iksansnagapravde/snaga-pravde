@@ -29,20 +29,6 @@
       "priority": 166
     },
     {
-      "id": "pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
-      "title": "REKAO 3 REČI NA SRPSKOM I PUCAO BALKANSKOM \"KRALJU PROSTITUCIJE\" U SLEPOOČNICU! Albanski mafijaški bos odlučio da prekine krvnu osvetu i potpisao smrtnu presudu",
-      "url": "https://www.kurir.rs/crna-hronika/10076749/pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:30:14+00:00",
-      "time": "18:30",
-      "source": "Kurir",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "95-uhapsen-u-surcinu-zbog-falsifikovanja-registarske-tablice",
       "title": "UHAPŠEN (48) U SURČINU ZBOG FALSIFIKOVANJA: Evo šta je uradio sa automobilom",
       "url": "https://www.kurir.rs/crna-hronika/10076695/uhapsen-u-surcinu-zbog-falsifikovanja-registarske-tablice",
@@ -463,18 +449,32 @@
       "priority": 26
     },
     {
-      "id": "vog-pravosuda-iza-slucaja-dakovica-krije-se-nastavak-progona",
-      "title": "Срби на нишану Куртијевог правосуђа: иза случаја „Ђаковица” крије се наставак прогона",
-      "url": "https://www.politika.rs/scc/clanak/778569/srbi-na-nisanu-kurtijevog-pravosuda-iza-slucaja-dakovica-krije-se-nastavak-progona",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:18:00+00:00",
-      "time": "20:18",
+      "id": "-za-dlaku-izbegnut-sudar-dva-aviona-sa-istim-pozivnim-znakom",
+      "title": "Невероватан пропуст: за длаку избегнут судар два авиона са истим позивним знаком",
+      "url": "https://www.politika.rs/scc/clanak/778590/neverovatan-propust-za-dlaku-izbegnut-sudar-dva-aviona-sa-istim-pozivnim-znakom",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:34:00+00:00",
+      "time": "05:34",
       "source": "Politika",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "r-rs-crna-hronika-10071181-zasto-zene-biraju-opasne-muskarce",
+      "title": "OVAKVE ŽENE BIRAJU KRIMINALCE: \"Vole te opasne momke koji brzo žive! Neće sa nekim ko nema para i ko pošteno zarađuje\"",
+      "url": "https://www.kurir.rs/crna-hronika/10071181/zasto-zene-biraju-opasne-muskarce",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:10:00+00:00",
+      "time": "05:10",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
@@ -505,20 +505,6 @@
       "priority": 22
     },
     {
-      "id": "evic-stamenkovski-posetila-preduzece-novitas-consult-u-sapcu",
-      "title": "\"Opredelili 64 miliona dinara, a već u avgustu nova sredstva!\" Đurđević Stamenkovski o pomoći preduzeću sa zaposlenima sa invaliditetom: Koliko njima znači...",
-      "url": "https://www.kurir.rs/vesti/drustvo/10076799/djurdjevic-stamenkovski-posetila-preduzece-novitas-consult-u-sapcu",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:47:14+00:00",
-      "time": "18:47",
-      "source": "Kurir",
-      "category": "Инвалидитет",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "svecanosti-i-traju-do-19-avgusta-pozoriste-izlozbe-koncerti-",
       "title": "Počinju 32. Raške duhovne svečanosti  i traju do 19. avgusta: Pozorište, izložbe, koncerti",
       "url": "https://www.danas.rs/kultura/pocinju-32-raske-duhovne-svecanosti-i-traju-do-19-avgusta-pozoriste-izlozbe-koncerti/",
@@ -545,6 +531,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "vi-pir-u-Micigenu-Petoro-ubijeno-osumnjiceni-pronadjen-mrtav",
+      "title": "KRVAVI PIR U MIČIGENU, ŠESTORO MRTVIH! Monstrum sejao smrt po kućama, a onda je usledio najcrnji scenario! Policija noćas zatekla horor scene",
+      "url": "https://www.kurir.rs/planeta/10076915/Krvavi-pir-u-Micigenu-Petoro-ubijeno-osumnjiceni-pronadjen-mrtav",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:08:28+00:00",
+      "time": "05:08",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "ckog-u-ovoj-drzavi-kostace-vas-kao-rucak-u-restoranu-set8946",
@@ -595,34 +595,6 @@
       "date": "2026-08-14",
       "datetime": "2026-08-14T20:38:00+00:00",
       "time": "20:38",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "lokadere-posle-skupa-u-valjevu-pronadjen-arsenal-oruzja-vest",
-      "title": "Naoružani do zuba; Policija zaustavila blokadere posle skupa u Valjevu – pronađen arsenal oružja",
-      "url": "https://www.b92.net/info/politika/259085/naoruzani-do-zuba-policija-zaustavila-blokadere-posle-skupa-u-valjevu-pronadjen-arsenal-oruzja/vest",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:36:00+00:00",
-      "time": "20:36",
-      "source": "B92",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "unskog-letovalista-pronadeni-ostaci-drona-turisti-evakuisani",
-      "title": "На плажи румунског летовалишта пронађени остаци дрона, туристи евакуисани",
-      "url": "https://www.politika.rs/scc/clanak/778571/na-plazi-rumunskog-letovalista-pronadeni-ostaci-drona-turisti-evakuisani",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:28:00+00:00",
-      "time": "20:28",
       "source": "Politika",
       "category": "Полиција",
       "summary": "",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "leopatra-otkriva-gde-su-i-sta-rade-deca-slobodana-milosevica",
+      "title": "Čuvena proročica Kleopatra otkrila gde su i šta rade deca Slobodana Miloševića: Marko u Rusiji pliva u luksuzu, a Marija... Tuga",
+      "url": "https://www.kurir.rs/vesti/drustvo/10032022/kleopatra-otkriva-gde-su-i-sta-rade-deca-slobodana-milosevica",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:30:00+00:00",
+      "time": "05:30",
+      "source": "Kurir",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ekari-preporucuju-da-dan-zapocnete-toplim-biljnim-cajem-vest",
+      "title": "Zaboravite kafu: Lekari preporučuju da dan započnete ovim napitkom",
+      "url": "https://www.b92.net/zdravlje/aktuelno/259128/zaboravite-kafu-lekari-preporucuju-da-dan-zapocnete-toplim-biljnim-cajem/vest",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:26:00+00:00",
+      "time": "05:26",
+      "source": "B92",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
