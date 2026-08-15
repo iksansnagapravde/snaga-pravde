@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 5622837.0,
+    "lowest": 3240.0,
+    "difference": 5619597.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101542188,
+    "file": "documents/101542188_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 10564844.4,
     "lowest": 6920.0,
     "difference": 10557924.4,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 111151114,
     "file": "documents/111151114_Odluka o dodeli ugovora Beli mehur.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 14214.0,
-    "lowest": 2202.0,
-    "difference": 12012.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100426309,
-    "file": "documents/100426309_897 O-181.pdf"
   }
 ]
