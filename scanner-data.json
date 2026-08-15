@@ -169,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "zni-lekari-prevarili-zenu-trazili-20360-evra-za-lecenje-vest",
-      "title": "Uhapšen Kazahstanac u Beogradu: Od žene uzeo 20.360 evra za \"lečenje\" njene ćerke",
-      "url": "https://www.euronews.rs/srbija/aktuelno/237752/lazni-lekari-prevarili-zenu-trazili-20360-evra-za-lecenje/vest",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T18:52:00+00:00",
-      "time": "18:52",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "rs-tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze-",
       "title": "TOK: MUP i dalje nije dostavio „skaj” poruke Slaviše Kokeze",
       "url": "https://www.krik.rs/tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze/",
@@ -379,20 +365,6 @@
       "priority": 26
     },
     {
-      "id": "crna-hronika-10077274-danijel-kinahan-uspon-i-pad-narko-bosa",
-      "title": "\"PRATILO GA 70.000 LJUDI, A ONDA JE STIGAO U ZATVOR!\" Gosti emisije \"Puls Srbije vikend\" o padu i hapšenju Danijela Kinahana: \"Ulagao je novac u boks\"",
-      "url": "https://www.kurir.rs/crna-hronika/10077274/danijel-kinahan-uspon-i-pad-narko-bosa",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T12:58:51+00:00",
-      "time": "12:58",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "acionalna-platforma-sajber-straza-za-bezbednost-na-netu-vest",
       "title": "Nacionalna platforma \"Sajber straža\" za bezbedno korišćenje interneta: Kriminal se menja, a žrtva može postati svako",
       "url": "https://www.euronews.rs/srbija/aktuelno/237942/nacionalna-platforma-sajber-straza-za-bezbednost-na-netu/vest",
@@ -519,20 +491,6 @@
       "priority": 4
     },
     {
-      "id": "778744-aktivisti-blokirali-auto-put-a12-policija-ih-uklonila",
-      "title": "Активисти блокирали ауто-пут А12, полиција их уклонила",
-      "url": "https://www.politika.rs/scc/clanak/778744/aktivisti-blokirali-auto-put-a12-policija-ih-uklonila",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T16:59:00+00:00",
-      "time": "16:59",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "ronasao-ukradenu-pikasovu-grafiku-bila-je-na-zidu-sa-1k89ktf",
       "title": "Ukradenu Pikasovu grafiku pronašao stanodavac dok je čistio stan: \"Bila je na zidu, sa debelim slojem prašine\"",
       "url": "https://www.blic.rs/kultura/stanodavac-u-praznom-stanu-pronasao-ukradenu-pikasovu-grafiku-bila-je-na-zidu-sa/1k89ktf",
@@ -545,6 +503,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "rs-scc-clanak-778759-svecano-otvoren-13-etno-fest-u-paracinu",
+      "title": "Свечано отворен 13. Етно фест у Параћину",
+      "url": "https://www.politika.rs/scc/clanak/778759/svecano-otvoren-13-etno-fest-u-paracinu",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T18:54:00+00:00",
+      "time": "18:54",
+      "source": "Politika",
+      "category": "Плате и зараде",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "apsule-za-spavanje-koje-pomazu-u-borbi-protiv-dzetleg-video-",
+      "title": "Lakše presedanje između letova: Aerodrom u Istanbulu nudi kapsule za spavanje koje pomažu u borbi protiv džetleg (VIDEO)",
+      "url": "https://n1info.rs/magazin/lifestyle/lakse-presedanje-izmedju-letova-aerodrom-u-istanbulu-nudi-kapsule-za-spavanje-koje-pomazu-u-borbi-protiv-dzetleg-video/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T18:46:13+00:00",
+      "time": "18:46",
+      "source": "N1",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "38016-u-srbiji-39-aktivnih-pozara-nema-restrikcija-vode-vest",
@@ -687,13 +673,27 @@
       "priority": 0
     },
     {
-      "id": "-beogradu-nizu-se-ostre-reakcije-uveli-nerad-i-javasluk-vest",
-      "title": "Đokić i blokaderi uništili Univerzitet u Beogradu; Nižu se oštre reakcije: &quot;Uveli nerad i javašluk&quot;",
-      "url": "https://www.b92.net/info/politika/259165/djokic-i-blokaderi-unistili-univerzitet-u-beogradu-nizu-se-ostre-reakcije-uveli-nerad-i-javasluk/vest",
+      "id": "https-www-danas-rs-vesti-drustvo-sabic-rem-",
+      "title": "Rodoljub Šabić odgovorio DS na poziv da podnese ostavku u REM",
+      "url": "https://www.danas.rs/vesti/drustvo/sabic-rem/",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T17:31:00+00:00",
-      "time": "17:31",
-      "source": "B92",
+      "datetime": "2026-08-15T17:27:28+00:00",
+      "time": "17:27",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "i-vestacki-generisani-voditelji-kontrola-upotrebe-ai-mediji-",
+      "title": "Veštački generisani voditelji i tekstovi: Ko će u Srbiji kontrolisati upotrebu AI u medijima?",
+      "url": "https://n1info.rs/vesti/vestacki-generisani-voditelji-kontrola-upotrebe-ai-mediji/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T17:25:11+00:00",
+      "time": "17:25",
+      "source": "N1",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
