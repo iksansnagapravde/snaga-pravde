@@ -29,20 +29,6 @@
       "priority": 166
     },
     {
-      "id": "pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
-      "title": "REKAO 3 REČI NA SRPSKOM I PUCAO BALKANSKOM \"KRALJU PROSTITUCIJE\" U SLEPOOČNICU! Albanski mafijaški bos odlučio da prekine krvnu osvetu i potpisao smrtnu presudu",
-      "url": "https://www.kurir.rs/crna-hronika/10076749/pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:30:14+00:00",
-      "time": "18:30",
-      "source": "Kurir",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "95-uhapsen-u-surcinu-zbog-falsifikovanja-registarske-tablice",
       "title": "UHAPŠEN (48) U SURČINU ZBOG FALSIFIKOVANJA: Evo šta je uradio sa automobilom",
       "url": "https://www.kurir.rs/crna-hronika/10076695/uhapsen-u-surcinu-zbog-falsifikovanja-registarske-tablice",
@@ -323,20 +309,6 @@
       "priority": 70
     },
     {
-      "id": "vesti-politika-uhapsen-osimnjicen-za-ratni-zlocin-na-kosovu-",
-      "title": "Dačić: Uhapšen osumnjičeni za ratni zločin nad civilima 1999. na Kosovu",
-      "url": "https://www.danas.rs/vesti/politika/uhapsen-osimnjicen-za-ratni-zlocin-na-kosovu/",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:57:05+00:00",
-      "time": "16:57",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "630-merdare-uhapsen-fs-zbog-sumnje-na-navodnu-spijunazu-vest",
       "title": "Tzv. kosovska policija na Merdaru uhapsila osumnjičenog za navodnu špijunažu",
       "url": "https://www.euronews.rs/srbija/aktuelno/237630/merdare-uhapsen-fs-zbog-sumnje-na-navodnu-spijunazu/vest",
@@ -421,20 +393,6 @@
       "priority": 30
     },
     {
-      "id": "rmuski-moreuz-gaza-izrael-sad-doseljenici-zapadna-obala-html",
-      "title": "Иран реаговао на Трампову идеју о припајању Ормуског мореуза САД: Не може се заузети објавом на Иксу, ни носачем авиона",
-      "url": "https://www.rts.rs/vesti/svet/6020022/rat-bliski-istok-iran-ormuski-moreuz-gaza-izrael-sad-doseljenici-zapadna-obala.html",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T05:52:42+00:00",
-      "time": "05:52",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "-bosna-i-hercegovina-10076088-hapsenje-sarajevo-teska-kradja",
       "title": "HAPŠENJE ZBOG TEŠKE KRAĐE: Policijska akcija u Sarajevu",
       "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10076088/hapsenje-sarajevo-teska-kradja",
@@ -477,6 +435,20 @@
       "priority": 25
     },
     {
+      "id": "r-rs-crna-hronika-10071181-zasto-zene-biraju-opasne-muskarce",
+      "title": "OVAKVE ŽENE BIRAJU KRIMINALCE: \"Vole te opasne momke koji brzo žive! Neće sa nekim ko nema para i ko pošteno zarađuje\"",
+      "url": "https://www.kurir.rs/crna-hronika/10071181/zasto-zene-biraju-opasne-muskarce",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T05:10:00+00:00",
+      "time": "05:10",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -503,6 +475,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "se-vesti-iz-nemacke-gubici-vec-dostizu-600-miliona-evra-vest",
+      "title": "Stižu loše vesti iz Nemačke: Gubici već dostižu 600 miliona evra",
+      "url": "https://www.b92.net/biz/svet/vesti/259114/stizu-lose-vesti-iz-nemacke-gubici-vec-dostizu-600-miliona-evra/vest",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T06:00:00+00:00",
+      "time": "06:00",
+      "source": "B92",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "evic-stamenkovski-posetila-preduzece-novitas-consult-u-sapcu",
@@ -631,20 +617,6 @@
       "priority": 4
     },
     {
-      "id": "-politika-10076787-evo-koliko-blokadera-se-okupilo-u-valjevu",
-      "title": "EVO KOLIKO SE TAČNO BLOKADERA OKUPILO U VALJEVU: Policija pronašla palice i gas maske! (FOTO)",
-      "url": "https://www.kurir.rs/vesti/politika/10076787/evo-koliko-blokadera-se-okupilo-u-valjevu",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:17:04+00:00",
-      "time": "18:17",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-policijska-akcija-ibarski-kolasin-pretresi-brnjak-i-strmac-",
       "title": "Nastavljena policijska akcija u Ibarskom Kolašinu: Pretresi u Brnjaku i Strmcu, šest osoba na saslušanju",
       "url": "https://n1info.rs/vesti/policijska-akcija-ibarski-kolasin-pretresi-brnjak-i-strmac/",
@@ -652,20 +624,6 @@
       "datetime": "2026-08-14T17:57:48+00:00",
       "time": "17:57",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "stala-zena-tokom-pozara-kod-omisa-policija-trazi-informacije",
-      "title": "OVO JE DRAGANA KOJA JE NESTALA TOKOM STRAVIČNOG POŽARA Uletela u auto sa prijateljima, a onda joj se izgubio trag! Policija je traži u buktinji kod Omiša",
-      "url": "https://www.kurir.rs/region/hrvatska/10076754/nestala-zena-tokom-pozara-kod-omisa-policija-trazi-informacije",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T17:35:45+00:00",
-      "time": "17:35",
-      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -687,14 +645,56 @@
       "priority": 4
     },
     {
-      "id": "www-danas-rs-vesti-ekonomija-minimalac-u-srbiji-kao-sudbina-",
-      "title": "Minimalac u Srbiji kao sudbina",
-      "url": "https://www.danas.rs/vesti/ekonomija/minimalac-u-srbiji-kao-sudbina/",
+      "id": "liki-pozar-na-dugom-otoku-vatrogasci-celu-noc-na-terenu-vest",
+      "title": "Vatrogasci se celu noć borili protiv požara na Dugom otoku; Još nije pod kontrolom, stigli kanaderi VIDEO",
+      "url": "https://www.b92.net/info/region/259140/veliki-pozar-na-dugom-otoku-vatrogasci-celu-noc-na-terenu/vest",
       "date": "2026-08-15",
-      "datetime": "2026-08-15T05:52:18+00:00",
-      "time": "05:52",
-      "source": "Danas",
-      "category": "Социјална права",
+      "datetime": "2026-08-15T06:30:00+00:00",
+      "time": "06:30",
+      "source": "B92",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "menila-vladana-djokica-nebojsu-bojovica-i-dejana-filipovica-",
+      "title": "Vlada smenila Đokića, Bojovića i Filipovića iz upravnih odbora Instituta za arhitekturu i Agencije za prostorno planiranje",
+      "url": "https://n1info.rs/vesti/vlada-smenila-vladana-djokica-nebojsu-bojovica-i-dejana-filipovica/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T06:27:19+00:00",
+      "time": "06:27",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "anske-la-lige-sezona-20262027-barselona-ili-real-madrid-vest",
+      "title": "Murinjov spas karijere ili Barsin het-trik?",
+      "url": "https://www.b92.net/sport/fudbal/lige-petice/259045/najava-spanske-la-lige-sezona-20262027-barselona-ili-real-madrid/vest",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T06:24:00+00:00",
+      "time": "06:24",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ogasci-celu-noc-branili-kuce-i-vikendice-u-hrvatskoj-dcb4pxw",
+      "title": "(VIDEO) SNAŽNA BORBA SA VATROM NA DUGOM OTOKU Još jedan požar u Hrvatskoj: Stotinu vatrogasaca ČUVALO KUĆE, vatra još besni!",
+      "url": "https://www.blic.rs/vesti/svet/pozar-na-dugom-otoku-vatrogasci-celu-noc-branili-kuce-i-vikendice-u-hrvatskoj/dcb4pxw",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T06:13:11+00:00",
+      "time": "06:13",
+      "source": "Blic",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
