@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 1800000.0,
+    "lowest": 8202.0,
+    "difference": 1791798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 5622837.0,
     "lowest": 3240.0,
     "difference": 5619597.0,
@@ -9,17 +20,6 @@
     "rejection_reasons": [],
     "id": 101542188,
     "file": "documents/101542188_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10564844.4,
-    "lowest": 6920.0,
-    "difference": 10557924.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Sken odluka gorivo i mazivo 14.08.2026.pdf"
   },
   {
     "winner": null,
@@ -97,16 +97,5 @@
     "rejection_reasons": [],
     "id": 101116811,
     "file": "documents/101116811_Odluka o dodeli.docx"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 8000000.0,
-    "lowest": 3202.0,
-    "difference": 7996798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 111151114,
-    "file": "documents/111151114_Odluka o dodeli ugovora Beli mehur.pdf"
   }
 ]
