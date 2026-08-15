@@ -365,20 +365,6 @@
       "priority": 26
     },
     {
-      "id": "-jedan-klik-moze-biti-dovoljan-da-kriminal-ude-u-vas-telefon",
-      "title": "МУП: један клик може бити довољан да криминал уђе у ваш телефон",
-      "url": "https://www.politika.rs/scc/clanak/778622/mup-jedan-klik-moze-biti-dovoljan-da-kriminal-ude-u-vas-telefon",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T08:26:00+00:00",
-      "time": "08:26",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "r-rs-crna-hronika-10071181-zasto-zene-biraju-opasne-muskarce",
       "title": "OVAKVE ŽENE BIRAJU KRIMINALCE: \"Vole te opasne momke koji brzo žive! Neće sa nekim ko nema para i ko pošteno zarađuje\"",
       "url": "https://www.kurir.rs/crna-hronika/10071181/zasto-zene-biraju-opasne-muskarce",
@@ -533,18 +519,32 @@
       "priority": 4
     },
     {
-      "id": "ti-vladica-ilic-policijska-brutalnost-valjevo-pamti-nasilje-",
-      "title": "Vladica Ilić: Policija ima zeleno svetlo da sprovodi nasilje nad građanima i da za to ne odgovara",
-      "url": "https://n1info.rs/vesti/vladica-ilic-policijska-brutalnost-valjevo-pamti-nasilje/",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T19:17:59+00:00",
-      "time": "19:17",
-      "source": "N1",
-      "category": "Полиција",
+      "id": "r-i-manje-guzve-ovo-su-najbolji-drugi-gradovi-evrope-m1lk3r3",
+      "title": "Gde turisti beže od gužve i velikih cena? Ovo je TOP 10 evropskih gradova koji odolevaju masovnom turizmu",
+      "url": "https://www.blic.rs/biznis/after-hour/povoljniji-odmor-i-manje-guzve-ovo-su-najbolji-drugi-gradovi-evrope/m1lk3r3",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T09:30:56+00:00",
+      "time": "09:30",
+      "source": "Blic",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 4
+      "priority": 0
+    },
+    {
+      "id": "sti-259182-fs-francuske-izdaje-uefa-na-strani-infantina-vest",
+      "title": "Izdaja u UEFA – Infantino ima novog najboljeg prijatelja",
+      "url": "https://www.b92.net/sport/fudbal/vesti/259182/fs-francuske-izdaje-uefa-na-strani-infantina/vest",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T09:30:00+00:00",
+      "time": "09:30",
+      "source": "B92",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "anijak-proganja-slavnog-fudbalera-i-nakon-izlaska-iz-zatvora",
