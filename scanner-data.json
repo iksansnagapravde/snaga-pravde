@@ -71,20 +71,6 @@
       "priority": 92
     },
     {
-      "id": "obelezena-mesta-nasilja-policije-2025-i-dalje-bez-optuznica-",
-      "title": "‘Valjevo ne zaboravlja’: Obeležena mesta nasilja policije 2025, i dalje bez optužnica",
-      "url": "https://www.danas.rs/bbc-news-serbian/valjevo-ne-zaboravlja-obelezena-mesta-nasilja-policije-2025-i-dalje-bez-optuznica/",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T21:12:52+00:00",
-      "time": "21:12",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "rbija-aktuelno-237686-slucaj-ubistva-prike-preuzeo-jtok-vest",
       "title": "Novi detalji ubistva Prike u Kumodražu: Slučaj preuzelo Tužilaštvo za organizovani kriminal, osumnjičeni u bekstvu",
       "url": "https://www.euronews.rs/srbija/aktuelno/237686/slucaj-ubistva-prike-preuzeo-jtok/vest",
@@ -125,20 +111,6 @@
       "breaking": false,
       "alert": true,
       "priority": 88
-    },
-    {
-      "id": "s-www-danas-rs-svet-nemacka-prevarantska-mreza-razotkrivena-",
-      "title": "Nemačka razotkrila prevarantsku mrežu: Uzeli milione sa računa korisnika onlajn bankarstva",
-      "url": "https://www.danas.rs/svet/nemacka-prevarantska-mreza-razotkrivena/",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T21:19:18+00:00",
-      "time": "21:19",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 78
     },
     {
       "id": "reme-com-vesti-policija-tuzilastvo-studenti-kamion-kupinovo-",
@@ -295,20 +267,6 @@
       "priority": 26
     },
     {
-      "id": "-bosna-i-hercegovina-10076088-hapsenje-sarajevo-teska-kradja",
-      "title": "HAPŠENJE ZBOG TEŠKE KRAĐE: Policijska akcija u Sarajevu",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10076088/hapsenje-sarajevo-teska-kradja",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T03:15:00+00:00",
-      "time": "03:15",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "nisa-brzinom-200-na-sat-otvoren-tender-za-brzu-prugu-4dkrmtq",
       "title": "Od Beograda do juga zemlje brzinom 200 na sat: Otvoren tender za brzu prugu, Srbija postaje \"glavno čvorište Balkana\"",
       "url": "https://www.blic.rs/biznis/vesti/od-beograda-do-nisa-brzinom-200-na-sat-otvoren-tender-za-brzu-prugu/4dkrmtq",
@@ -449,34 +407,6 @@
       "priority": 4
     },
     {
-      "id": "vi-pir-u-Micigenu-Petoro-ubijeno-osumnjiceni-pronadjen-mrtav",
-      "title": "KRVAVI PIR U MIČIGENU, ŠESTORO MRTVIH! Monstrum sejao smrt po kućama, a onda je usledio najcrnji scenario! Policija noćas zatekla horor scene",
-      "url": "https://www.kurir.rs/planeta/10076915/Krvavi-pir-u-Micigenu-Petoro-ubijeno-osumnjiceni-pronadjen-mrtav",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T05:08:28+00:00",
-      "time": "05:08",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "s-www-danas-rs-kultura-pronadjen-ukraden-print-pabla-pikasa-",
-      "title": "Pronađen ukraden print Pabla Pikasa i vraćen galeriji u Milvokiju odakle je delo odneto 2018.",
-      "url": "https://www.danas.rs/kultura/pronadjen-ukraden-print-pabla-pikasa/",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T21:34:37+00:00",
-      "time": "21:34",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "sa-i-vracen-galeriji-u-milvokiju-odakle-je-delo-odneto-2018-",
       "title": "Pronađen ukraden print Pabla Pikasa i vraćen galeriji u Milvokiju odakle je delo odneto 2018.",
       "url": "https://nova.rs/kultura/pronadjen-ukraden-print-pabla-pikasa-i-vracen-galeriji-u-milvokiju-odakle-je-delo-odneto-2018/",
@@ -491,6 +421,34 @@
       "priority": 4
     },
     {
+      "id": "https-www-danas-rs-zivot-ploca-za-kuvanje-ciscenje-",
+      "title": "Zagorela ploča za kuvanje: Ovi jednostavni trikovi uklanjaju tvrdokorne naslage bez mnogo ribanja",
+      "url": "https://www.danas.rs/zivot/ploca-za-kuvanje-ciscenje/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T11:02:19+00:00",
+      "time": "11:02",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "gleda-luksuzno-za-malo-novca-top-3-dizajnerska-trika-2cyc1v7",
+      "title": "Kako da mali stan izgleda luksuzno za malo novca: Top 3 dizajnerska trika da unapredite svoj dom",
+      "url": "https://www.blic.rs/biznis/moj-novac/kako-da-mali-stan-izgleda-luksuzno-za-malo-novca-top-3-dizajnerska-trika/2cyc1v7",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T11:00:49+00:00",
+      "time": "11:00",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "og-protesta-u-valjevu-ispratio-u-grubom-neskladu-sa-zakonom-",
       "title": "Šabić: RTS godišnjicu studentskog protesta u Valjevu ispratio u grubom neskladu sa zakonom",
       "url": "https://nova.rs/vesti/drustvo/rts-godisnjicu-studentskog-protesta-u-valjevu-ispratio-u-grubom-neskladu-sa-zakonom/",
@@ -499,6 +457,20 @@
       "time": "10:57",
       "source": "Nova",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "zar-u-deliblatskoj-pescari-vidi-se-i-iz-okolnih-gradova-vest",
+      "title": "Požar u Deliblatskoj peščari vidi se i iz okolnih gradova: Deo puta Kovin-Bela Crkva zatvoren (VIDEO)",
+      "url": "https://www.euronews.rs/srbija/aktuelno/237962/pozar-u-deliblatskoj-pescari-vidi-se-i-iz-okolnih-gradova/vest",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T10:57:00+00:00",
+      "time": "10:57",
+      "source": "Euronews Serbia",
+      "category": "Лишени слободе",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -617,6 +589,20 @@
       "priority": 0
     },
     {
+      "id": "io-otkaz-u-alavesu-jer-se-nije-dovoljno-trudio-na-treninzima",
+      "title": "BIZARNO! SRBIN DOBIO OTKAZ U KLUBU JER SE NIJE DOVOLJNO TRUDIO NA TRENINZIMA! Leti iz Španije, stiglo je i zvanično saopštenje!",
+      "url": "https://www.kurir.rs/sport/fudbal/10076318/nikola-maras-dobio-otkaz-u-alavesu-jer-se-nije-dovoljno-trudio-na-treninzima",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T10:20:27+00:00",
+      "time": "10:20",
+      "source": "Kurir",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "ko-260-policajaca-gadjali-su-ih-motkama-i-sipkama-video-vest",
       "title": "Brutalna blokaderska kampanja: Povređeno oko 260 policajaca; &quot;Gađali su ih motkama i šipkama&quot; VIDEO",
       "url": "https://www.b92.net/info/politika/259194/brutalna-blokaderska-kampanja-povredjeno-oko-260-policajaca-gadjali-su-ih-motkama-i-sipkama-video/vest",
@@ -673,20 +659,6 @@
       "priority": 0
     },
     {
-      "id": "portovi-martina-bukvic-bez-polufinala-na-evropskom-prvenstvu",
-      "title": "Мартина Буквић без полуфинала на Европском првенству",
-      "url": "https://www.politika.rs/scc/clanak/778644/sport/ostali-sportovi/martina-bukvic-bez-polufinala-na-evropskom-prvenstvu",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T09:46:00+00:00",
-      "time": "09:46",
-      "source": "Politika",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "r-i-manje-guzve-ovo-su-najbolji-drugi-gradovi-evrope-m1lk3r3",
       "title": "Gde turisti beže od gužve i velikih cena? Ovo je TOP 10 evropskih gradova koji odolevaju masovnom turizmu",
       "url": "https://www.blic.rs/biznis/after-hour/povoljniji-odmor-i-manje-guzve-ovo-su-najbolji-drugi-gradovi-evrope/m1lk3r3",
@@ -695,6 +667,34 @@
       "time": "09:30",
       "source": "Blic",
       "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "anijak-proganja-slavnog-fudbalera-i-nakon-izlaska-iz-zatvora",
+      "title": "\"DOŠAO SAM DA ZAVRŠIM ŠTA SAM ZAPOČEO!\" Manijak proganja slavnog fudbalera! Izašao je iz zatvora, pronašao ga i poslao jezivu poruku",
+      "url": "https://www.kurir.rs/sport/fudbal/10077083/manijak-proganja-slavnog-fudbalera-i-nakon-izlaska-iz-zatvora",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T09:19:11+00:00",
+      "time": "09:19",
+      "source": "Kurir",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "biznis-akcize-na-gorivo-i-dalje-20-odsto-nize-do-23-avgusta-",
+      "title": "Akcize na gorivo 20 odsto niže i sledeće nedelje",
+      "url": "https://n1info.rs/biznis/akcize-na-gorivo-i-dalje-20-odsto-nize-do-23-avgusta/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T09:12:51+00:00",
+      "time": "09:12",
+      "source": "N1",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
