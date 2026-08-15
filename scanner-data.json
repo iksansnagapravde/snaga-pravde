@@ -113,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "ma-uhapsen-osumnjiceni-za-ratni-zlocin-kod-djakovice-e307cj6",
-      "title": "MUŠKARAC UHAPŠEN NA BATROVCIMA Osumnjičen za ratne zločine nad dve porodice na KiM 1999.",
-      "url": "https://www.blic.rs/vesti/politika/na-batrovcima-uhapsen-osumnjiceni-za-ratni-zlocin-kod-djakovice/e307cj6",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:25:21+00:00",
-      "time": "16:25",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "zni-lekari-prevarili-zenu-trazili-20360-evra-za-lecenje-vest",
       "title": "Uhapšen Kazahstanac u Beogradu: Od žene uzeo 20.360 evra za \"lečenje\" njene ćerke",
       "url": "https://www.euronews.rs/srbija/aktuelno/237752/lazni-lekari-prevarili-zenu-trazili-20360-evra-za-lecenje/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-14T18:50:05+00:00",
       "time": "18:50",
       "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "inu-dana-pretucen-u-valjevu-danas-se-vratio-na-mesto-napada-",
+      "title": "\"Režimi Aleksandra Vučića i na Kosovu su isti, svi biju Srbe\": Vladimir je pre godinu dana pretučen u Valjevu, danas se vratio na mesto napada",
+      "url": "https://nova.rs/vesti/hronika/vladimir-je-pre-godinu-dana-pretucen-u-valjevu-danas-se-vratio-na-mesto-napada/",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T18:32:18+00:00",
+      "time": "18:32",
+      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
