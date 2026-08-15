@@ -71,20 +71,6 @@
       "priority": 92
     },
     {
-      "id": "rbija-aktuelno-237686-slucaj-ubistva-prike-preuzeo-jtok-vest",
-      "title": "Novi detalji ubistva Prike u Kumodražu: Slučaj preuzelo Tužilaštvo za organizovani kriminal, osumnjičeni u bekstvu",
-      "url": "https://www.euronews.rs/srbija/aktuelno/237686/slucaj-ubistva-prike-preuzeo-jtok/vest",
-      "date": "2026-08-13",
-      "datetime": "2026-08-13T11:58:00+00:00",
-      "time": "11:58",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "rs-tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze-",
       "title": "TOK: MUP i dalje nije dostavio „skaj” poruke Slaviše Kokeze",
       "url": "https://www.krik.rs/tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze/",
@@ -111,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 88
+    },
+    {
+      "id": "-u-doboju-dvoje-uhapseno-zaplenjeno-17-6-kilograma-marihuane",
+      "title": "Полиција упала на плантажу у Добоју: двоје ухапшено, заплењено 17,6 килограма марихуане",
+      "url": "https://www.politika.rs/scc/clanak/778676/policija-upala-na-plantazu-u-doboju-dvoje-uhapseno-zaplenjeno-17-6-kilograma-marihuane",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T11:53:00+00:00",
+      "time": "11:53",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "reme-com-vesti-policija-tuzilastvo-studenti-kamion-kupinovo-",
@@ -379,6 +379,34 @@
       "priority": 4
     },
     {
+      "id": "as-rs-kultura-muzicki-film-linkin-park-unshatter-u-bioskopu-",
+      "title": "Muzički film „Linkin Park: Unshatter“ u 4DX i ScreenX formatima od 30. septembra",
+      "url": "https://www.danas.rs/kultura/muzicki-film-linkin-park-unshatter-u-bioskopu/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T12:00:29+00:00",
+      "time": "12:00",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "rs-sport-andrej-barna-izborio-plasman-u-polufinale-u-parizu-",
+      "title": "Andrej Barna izborio plasman u polufinale u Parizu",
+      "url": "https://www.danas.rs/sport/andrej-barna-izborio-plasman-u-polufinale-u-parizu/",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T11:54:09+00:00",
+      "time": "11:54",
+      "source": "Danas",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "mac-reditelj-i-producent-filma-animals-stize-na-netflix-vest",
       "title": "Novo ostvarenje Bena Afleka stiže na Netflix: Poziv koji menja sve VIDEO",
       "url": "https://www.b92.net/kultura/filmtv/258888/ben-aflek-kao-glumac-reditelj-i-producent-filma-animals-stize-na-netflix/vest",
@@ -450,7 +478,7 @@
     },
     {
       "id": "borbe-za-zivot-Otac-ovako-spasao-dvoje-dece-iz-morskog-pakla",
-      "title": "JEZIVIH 15 SATI BORBE ZA ŽIVOT! Otac se držao za pokvareni džet-ski dok su deca plutala u morskom paklu: Porodična drama dobila neverovatan epilog!",
+      "title": "JEZIVIH 15 SATI BORBE ZA ŽIVOT! Otac se držao za pokvareni džet-ski dok su deca plutala u morskom paklu: Porodična drama dobila neverovatan epilog! (VIDEO)",
       "url": "https://www.kurir.rs/planeta/10077175/Jezivih-15-sati-borbe-za-zivot-Otac-ovako-spasao-dvoje-dece-iz-morskog-pakla",
       "date": "2026-08-15",
       "datetime": "2026-08-15T11:15:11+00:00",
@@ -603,20 +631,6 @@
       "priority": 0
     },
     {
-      "id": "startap-decart-za-6-milijardi-dolara-detalji-akvizicije-vest",
-      "title": "Anthropic sprema akviziciju od šest milijardi dolara: Koga kupuje tvorac Claude AI-ja?",
-      "url": "https://www.b92.net/tehnopolis/aktuelno/258760/anthropic-kupuje-ai-startap-decart-za-6-milijardi-dolara-detalji-akvizicije/vest",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T10:28:00+00:00",
-      "time": "10:28",
-      "source": "B92",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "-intenzivni-zemljotresi-kao-u-grckoj-turskoj-italiji-5tkcstw",
       "title": "AFRIKA SE PODVLAČI POD EVROPU I IZAZIVA TALAS ZEMLJOTRESA Geolog otkrio da li je Srbija u senci tih događaja, ili može da se TRESE KAO NEKADA",
       "url": "https://www.blic.rs/vesti/drustvo/da-li-srbiji-prete-jaci-i-intenzivni-zemljotresi-kao-u-grckoj-turskoj-italiji/5tkcstw",
@@ -681,20 +695,6 @@
       "time": "09:30",
       "source": "Blic",
       "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "anijak-proganja-slavnog-fudbalera-i-nakon-izlaska-iz-zatvora",
-      "title": "\"DOŠAO SAM DA ZAVRŠIM ŠTA SAM ZAPOČEO!\" Manijak proganja slavnog fudbalera! Izašao je iz zatvora, pronašao ga i poslao jezivu poruku",
-      "url": "https://www.kurir.rs/sport/fudbal/10077083/manijak-proganja-slavnog-fudbalera-i-nakon-izlaska-iz-zatvora",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T09:19:11+00:00",
-      "time": "09:19",
-      "source": "Kurir",
-      "category": "Лишени слободе",
       "summary": "",
       "breaking": false,
       "alert": false,
