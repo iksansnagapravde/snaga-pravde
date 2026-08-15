@@ -29,20 +29,6 @@
       "priority": 166
     },
     {
-      "id": "donacelnik-uhapsen-zbog-korona-kredita-od-1-5-miliona-dolara",
-      "title": "Градоначелник ухапшен због корона-кредита од 1,5 милиона долара",
-      "url": "https://www.politika.rs/scc/clanak/778567/gradonacelnik-uhapsen-zbog-korona-kredita-od-1-5-miliona-dolara",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T20:02:00+00:00",
-      "time": "20:02",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
       "title": "REKAO 3 REČI NA SRPSKOM I PUCAO BALKANSKOM \"KRALJU PROSTITUCIJE\" U SLEPOOČNICU! Albanski mafijaški bos odlučio da prekine krvnu osvetu i potpisao smrtnu presudu",
       "url": "https://www.kurir.rs/crna-hronika/10076749/pre-devet-godina-ubijen-albanski-mafijaski-bos-dilaver-bojku",
@@ -449,6 +435,20 @@
       "priority": 26
     },
     {
+      "id": "-bosna-i-hercegovina-10076088-hapsenje-sarajevo-teska-kradja",
+      "title": "HAPŠENJE ZBOG TEŠKE KRAĐE: Policijska akcija u Sarajevu",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10076088/hapsenje-sarajevo-teska-kradja",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T03:15:00+00:00",
+      "time": "03:15",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "senja-za-ratne-zlocine-na-kosovu-dok-se-ceka-presuda-taciju-",
       "title": "Opet hapšenja za ratne zločine na Kosovu – dok se čeka presuda Tačiju",
       "url": "https://vreme.com/drustvo/opet-hapsenja-za-ratne-zlocine-na-kosovu-dok-se-ceka-presuda-taciju/",
@@ -673,20 +673,6 @@
       "priority": 4
     },
     {
-      "id": "-politika-10076787-evo-koliko-blokadera-se-okupilo-u-valjevu",
-      "title": "EVO KOLIKO SE TAČNO BLOKADERA OKUPILO U VALJEVU: Policija pronašla palice i gas maske! (FOTO)",
-      "url": "https://www.kurir.rs/vesti/politika/10076787/evo-koliko-blokadera-se-okupilo-u-valjevu",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T18:17:04+00:00",
-      "time": "18:17",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-policijska-akcija-ibarski-kolasin-pretresi-brnjak-i-strmac-",
       "title": "Nastavljena policijska akcija u Ibarskom Kolašinu: Pretresi u Brnjaku i Strmcu, šest osoba na saslušanju",
       "url": "https://n1info.rs/vesti/policijska-akcija-ibarski-kolasin-pretresi-brnjak-i-strmac/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-14T17:57:48+00:00",
       "time": "17:57",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "etresi-kim-privedeno-sest-osoba-zubin-potok-selo-strmac-html",
+      "title": "Нови претреси на КиМ, приведено шест особа код Зубиног Потока",
+      "url": "https://www.rts.rs/vesti/politika/6019937/pretresi-kim-privedeno-sest-osoba-zubin-potok-selo-strmac.html",
+      "date": "2026-08-14",
+      "datetime": "2026-08-14T16:23:15+00:00",
+      "time": "16:23",
+      "source": "RTS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
