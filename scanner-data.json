@@ -15,20 +15,6 @@
       "priority": 195
     },
     {
-      "id": "a-10078114-nasilje-u-porodici-cerka-napala-majku-u-lazarevcu",
-      "title": "ĆERKA DAVILA MAJKU, PA BESOMUČNO ŠUTIRALA Stravično porodično nasilje u Lazarevu: Sa povredama hitno prevezena u bolnicu",
-      "url": "https://www.kurir.rs/crna-hronika/10078114/nasilje-u-porodici-cerka-napala-majku-u-lazarevcu",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T15:34:21+00:00",
-      "time": "15:34",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca-vest",
       "title": "Uhapšen vlasnik firme Taneo group: Sumnja se da je izvršio prevaru od 4,9 miliona evra",
       "url": "https://www.euronews.rs/srbija/aktuelno/238036/uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca/vest",
@@ -181,6 +167,20 @@
       "breaking": false,
       "alert": true,
       "priority": 88
+    },
+    {
+      "id": "ovi-muskarac-napao-devojku-iz-srbije-kojoj-je-iznajmio-sobu-",
+      "title": "Uhapšen muškarac u Herceg Novom, napastvovao turistkinju iz Srbije kojoj je iznajmio sobu",
+      "url": "https://n1info.rs/region/herceg-novi-muskarac-napao-devojku-iz-srbije-kojoj-je-iznajmio-sobu/",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T21:53:15+00:00",
+      "time": "21:53",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "-bacio-iz-automobila-paket-sa-marihuanom-bezeci-od-policije-",
@@ -687,13 +687,13 @@
       "priority": 4
     },
     {
-      "id": "077-selektor-egipta-pao-u-nesvest-dok-su-mu-se-supruge-tukle",
-      "title": "SKANDAL! DVE ŽENE LEGENDARNOG SELEKTORA SE TUKLE! Proslavljeni stručnjak pao u nesvest dok su mu se SUPRUGE makljale - reagovala i POLICIJA!",
-      "url": "https://www.kurir.rs/sport/fudbal/10078077/selektor-egipta-pao-u-nesvest-dok-su-mu-se-supruge-tukle",
+      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
+      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
+      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
       "date": "2026-08-16",
-      "datetime": "2026-08-16T14:58:05+00:00",
-      "time": "14:58",
-      "source": "Kurir",
+      "datetime": "2026-08-16T09:20:51+00:00",
+      "time": "09:20",
+      "source": "RSE Balkan",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
