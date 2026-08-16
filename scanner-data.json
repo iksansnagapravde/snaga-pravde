@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "-amadeus-benda-u-crnoj-gori-policija-hitno-reagovala-fe2s799",
+      "title": "HAOS U CRNOJ GORI Masovna tuča na koncertu Amadeus benda, obezbeđenje i policija hitno reagovali (VIDEO)",
+      "url": "https://www.blic.rs/zabava/tuca-na-koncertu-amadeus-benda-u-crnoj-gori-policija-hitno-reagovala/fe2s799",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T07:00:06+00:00",
+      "time": "07:00",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
       "id": "ane-sumnje-da-je-falsifikovao-sluzbene-isprave-i-prao-novac-",
       "title": "Uhapšen poznati beogradski biznismen: Falsifikovao službene isprave i prao novac, umešan u prevaru od 4,9 miliona evra",
       "url": "https://nova.rs/vesti/hronika/uhapsen-vlasnik-taneo-group-iz-beograda-zbog-osnovane-sumnje-da-je-falsifikovao-sluzbene-isprave-i-prao-novac/",
@@ -57,6 +71,20 @@
       "priority": 100
     },
     {
+      "id": "-muskarac-47-koji-je-stranu-firmu-prevario-za-5-miliona-evra",
+      "title": "BESNI AUTOMOBILI, SKUPOCENI SATOVI, KAMARA PARA... Uhapšen muškarac (47) koji je stranu firmu prevario za 5 MILIONA EVRA - evo šta mu je sve pronađeno (FOTO)",
+      "url": "https://www.kurir.rs/crna-hronika/10077485/uhapsen-muskarac-47-koji-je-stranu-firmu-prevario-za-5-miliona-evra",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T17:22:40+00:00",
+      "time": "17:22",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca-vest",
       "title": "Uhapšen vlasnik firme Taneo group: Sumnja se da je izvršio prevaru od 4,9 miliona evra",
       "url": "https://www.euronews.rs/srbija/aktuelno/238036/uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca/vest",
@@ -91,6 +119,20 @@
       "date": "2026-08-15",
       "datetime": "2026-08-15T19:54:23+00:00",
       "time": "19:54",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "-holivudski-glumac-uhapsen-zbog-sumnji-na-zlostavljanje-dece",
+      "title": "Glumac uhapšen zbog zlostavljanja dece: Koristio je kastinge kako bi namamio žrtve",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/10077459/holivudski-glumac-uhapsen-zbog-sumnji-na-zlostavljanje-dece",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T16:42:17+00:00",
+      "time": "16:42",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -211,20 +253,6 @@
       "priority": 70
     },
     {
-      "id": "-crna-gora-10077306-kotor-uhapseno-pet-osoba-kazne-saobracaj",
-      "title": "PET OSOBA UHAPŠENO U KOTORU: Zbog saobraćajnih prekršaja policija izrekla kazne od 4.275 evra",
-      "url": "https://www.kurir.rs/region/crna-gora/10077306/kotor-uhapseno-pet-osoba-kazne-saobracaj",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T22:12:00+00:00",
-      "time": "22:12",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "reme-com-vesti-policija-tuzilastvo-studenti-kamion-kupinovo-",
       "title": "Policija i tužilaštvo i dalje ćute o čoveku koji se kamionom zaleteo na studente",
       "url": "https://vreme.com/vesti/policija-tuzilastvo-studenti-kamion-kupinovo/",
@@ -251,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "zasto-sve-vise-mladjih-oboleva-od-raka-debelog-creva-xcerw14",
+      "title": "Porast raka debelog creva kod mlađih naučna misterija: Epidemiolog ruši mitove i otkriva 2 moguća razloga",
+      "url": "https://www.blic.rs/zdravlje/zdravstvena-stanja/epidemiolog-otkriva-zasto-sve-vise-mladjih-oboleva-od-raka-debelog-creva/xcerw14",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T07:00:00+00:00",
+      "time": "07:00",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "evetog-clana-saveta-rem-a-desavale-su-se-nedopustive-stvari-",
@@ -281,18 +323,18 @@
       "priority": 36
     },
     {
-      "id": "ak-778789-u-tirani-odrzan-77-protest-protiv-vlade-edija-rame",
-      "title": "У Тирани одржан 77. протест против владе Едија Раме",
-      "url": "https://www.politika.rs/scc/clanak/778789/u-tirani-odrzan-77-protest-protiv-vlade-edija-rame",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T00:01:00+00:00",
-      "time": "00:01",
-      "source": "Politika",
-      "category": "Корупција",
+      "id": "uhapsen-vlasnik-firme-prevara-pranje-novca-satovi-automobili",
+      "title": "POGLEDAJTE SNIMAK HAPŠENJA BEOGRADSKOG BIZNISMENA! Prevario Jordance za VIŠE MILIONA EVRA, pa se BAŠKARIO U LUKSUZU: Oduzete mu besne mašine i skupoceni satovi",
+      "url": "https://www.kurir.rs/crna-hronika/10077501/uhapsen-vlasnik-firme-prevara-pranje-novca-satovi-automobili",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T17:41:04+00:00",
+      "time": "17:41",
+      "source": "Kurir",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 30
+      "priority": 34
     },
     {
       "id": "ja-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica-",
@@ -316,20 +358,6 @@
       "datetime": "2026-08-15T19:20:04+00:00",
       "time": "19:20",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "u-kurtijeve-torture-strahuje-se-da-najgore-tek-sledi-f4s7k58",
-      "title": "ZUBIN POTOK U GROTLU KURTIJEVE TORTURE Nova hapšenja Srba, strah da najgore tek sledi: \"Vlasti u Prištini su PIJANE OD MOĆI koju dobijaju\"",
-      "url": "https://www.blic.rs/vesti/politika/zubin-potok-u-grotlu-kurtijeve-torture-strahuje-se-da-najgore-tek-sledi/f4s7k58",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T18:49:56+00:00",
-      "time": "18:49",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -377,20 +405,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "asto-i-dalje-zivi-kao-podstanarka-ljudi-su-u-zabludi-6d0nyet",
-      "title": "Zarađuje milione, ali i dalje živi u iznajmljenom stanu: \"Ljudi su jednostavno u zabludi\"",
-      "url": "https://www.blic.rs/slobodno-vreme/milionerka-otkrila-zasto-i-dalje-zivi-kao-podstanarka-ljudi-su-u-zabludi/6d0nyet",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T18:40:07+00:00",
-      "time": "18:40",
-      "source": "Blic",
-      "category": "Плате и зараде",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     },
     {
       "id": "a-milione-dok-nadlezni-prebacuju-odgovornost-zgrada-propada-",
@@ -463,20 +477,6 @@
       "priority": 4
     },
     {
-      "id": "77309-policija-dron-podgorica-cetinje-preticanje-puna-linija",
-      "title": "POLICIJA DRONOM SNIMALA VOZAČE U CRNOJ GORI: Preticali preko pune linije na putu Podgorica–Cetinje",
-      "url": "https://www.kurir.rs/region/crna-gora/10077309/policija-dron-podgorica-cetinje-preticanje-puna-linija",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T22:50:00+00:00",
-      "time": "22:50",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "ker-pokosio-zenu-iz-bih-reanimirana-je-na-licu-mesta-9g3w0dd",
       "title": "MOTOROM UDARIO DRŽAVLJANKU BIH, OD SILINE UDARCA ODLETELA NA LIVADU Horor u Austriji: Lekari se bore za život žene",
       "url": "https://www.blic.rs/vesti/republika-srpska/austrijski-bajker-pokosio-zenu-iz-bih-reanimirana-je-na-licu-mesta/9g3w0dd",
@@ -533,12 +533,26 @@
       "priority": 4
     },
     {
+      "id": "ija-identifikovala-muskarca-vredjao-milana-knezevica-fejsbuk",
+      "title": "IDENTIFIKOVAN OSUMNJIČENI ZA JEZIVE PRETNJE UPUĆENE MILANU KNEŽEVIĆU: Policija ga procesuirala zbog objave na Fejsbuku",
+      "url": "https://www.kurir.rs/vesti/politika/10077507/beranska-policija-identifikovala-muskarca-vredjao-milana-knezevica-fejsbuk",
+      "date": "2026-08-15",
+      "datetime": "2026-08-15T18:01:12+00:00",
+      "time": "18:01",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "tobus-pun-putnika-sleteo-sa-puta-ima-mnogo-stradalih-911ymvn",
       "title": "(FOTO) AUTOBUS PUN PUTNIKA SLETEO SA PUTA, IMA MNOGO STRADALIH! Stravična nesreća u Mađarskoj: Vozilo se prevrnulo, ljudi ostali ZAROBLJENI ispod",
       "url": "https://www.blic.rs/vesti/svet/stravicna-nesreca-u-madjarskoj-autobus-pun-putnika-sleteo-sa-puta-ima-mnogo-stradalih/911ymvn",
       "date": "2026-08-16",
-      "datetime": "2026-08-16T06:44:21+00:00",
-      "time": "06:44",
+      "datetime": "2026-08-16T07:10:35+00:00",
+      "time": "07:10",
       "source": "Blic",
       "category": "Људска права",
       "summary": "",
@@ -547,8 +561,22 @@
       "priority": 0
     },
     {
+      "id": "-tompson-je-osmo-pojacanje-partizana-za-sezonu-20262027-vest",
+      "title": "Velika vest iz Partizana – stiglo dugo čekano pojačanje! VIDEO",
+      "url": "https://www.b92.net/sport/kosarka/euroleague/259345/itan-tompson-je-osmo-pojacanje-partizana-za-sezonu-20262027/vest",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T06:58:00+00:00",
+      "time": "06:58",
+      "source": "B92",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "kevarijus-hejs-stigao-u-beograd-i-obukao-dres-partizana-vest",
-      "title": "Partizanu stiglo novo pojačanje VIDEO",
+      "title": "Partizanu dočekao centra FOTO/VIDEO",
       "url": "https://www.b92.net/sport/kosarka/euroleague/259340/kevarijus-hejs-stigao-u-beograd-i-obukao-dres-partizana/vest",
       "date": "2026-08-16",
       "datetime": "2026-08-16T06:30:00+00:00",
@@ -603,20 +631,6 @@
       "priority": 0
     },
     {
-      "id": "urenje-podataka-steam-korisnika-u-evropi-moguce-prevare-vest",
-      "title": "Curenje podataka na Steam-u: Ako ste naručivali hardver, budite na oprezu",
-      "url": "https://www.b92.net/tehnopolis/aktuelno/257963/valve-potvrdio-curenje-podataka-steam-korisnika-u-evropi-moguce-prevare/vest",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T06:00:00+00:00",
-      "time": "06:00",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "ogradu-posvadjale-se-mlada-i-kuma-pale-su-teske-reci-y85r9wj",
       "title": "SKANDAL NA SVADBI U BEOGRADU! Posvađale se mlada i kuma, jedna stvar je bila \"kap koja je prelila čašu\", gosti ih RAZDVAJALI",
       "url": "https://www.blic.rs/vesti/beograd/skandal-na-svadbi-u-beogradu-posvadjale-se-mlada-i-kuma-pale-su-teske-reci/y85r9wj",
@@ -631,20 +645,6 @@
       "priority": 0
     },
     {
-      "id": "politika-10077643-mrdic-o-vladanu-djokicu-i-sangajskoj-listi",
-      "title": "\"ZATO SU DRŽAVNI FAKULTETI U SLOVENIJI, ITALIJI, AUSTRIJI... PUNI SRPSKIH STUDENATA\" Mrdić o bruci BU na Šangajskoj listi: Đokić ga pretvorio u izborni štab",
-      "url": "https://www.kurir.rs/vesti/politika/10077643/mrdic-o-vladanu-djokicu-i-sangajskoj-listi",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T05:43:37+00:00",
-      "time": "05:43",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "-www-danas-rs-kolumna-aleksej-kisjuhas-od-plenuma-do-izbora-",
       "title": "Od plenuma do izbora",
       "url": "https://www.danas.rs/kolumna/aleksej-kisjuhas/od-plenuma-do-izbora/",
@@ -653,20 +653,6 @@
       "time": "05:41",
       "source": "Danas",
       "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "-sangajskoj-listi-eto-sta-su-uradili-djokic-i-blokaderi-vest",
-      "title": "Istorijski pad Beogradskog univerziteta na Šangajskoj listi; Eto šta su uradili Đokić i blokaderi",
-      "url": "https://www.b92.net/info/politika/259325/istorijski-pad-beogradskog-univerziteta-na-sangajskoj-listi-eto-sta-su-uradili-djokic-i-blokaderi/vest",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T05:37:00+00:00",
-      "time": "05:37",
-      "source": "B92",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -695,6 +681,20 @@
       "time": "05:03",
       "source": "Danas",
       "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "asovno-udaljava-od-studenata-koga-da-podrzim-djokica-z2q8p66",
+      "title": "\"KOGA TAČNO JA DA PODRŽIM, ĐOKIĆA?\" Opozicija se masovno udaljava od studenata: Referendumska atmosfera slovo na papiru, sukobi se razbuktavaju iz dana u dan",
+      "url": "https://www.blic.rs/vesti/politika/opozicija-se-masovno-udaljava-od-studenata-koga-da-podrzim-djokica/z2q8p66",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T05:03:00+00:00",
+      "time": "05:03",
+      "source": "Blic",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
