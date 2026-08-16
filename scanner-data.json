@@ -239,20 +239,6 @@
       "priority": 70
     },
     {
-      "id": "-crna-gora-10077306-kotor-uhapseno-pet-osoba-kazne-saobracaj",
-      "title": "PET OSOBA UHAPŠENO U KOTORU: Zbog saobraćajnih prekršaja policija izrekla kazne od 4.275 evra",
-      "url": "https://www.kurir.rs/region/crna-gora/10077306/kotor-uhapseno-pet-osoba-kazne-saobracaj",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T22:12:00+00:00",
-      "time": "22:12",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "a-dacic-batrovci-hapsenje-ratni-zlocini-kosovo-33830585-html",
       "title": "Dačić: Uhapšen osumnjičeni za ratni zločin nad civilima 1999. na Kosovu",
       "url": "https://www.slobodnaevropa.org/a/srbija-dacic-batrovci-hapsenje-ratni-zlocini-kosovo/33830585.html",
@@ -463,6 +449,20 @@
       "priority": 8
     },
     {
+      "id": "je-esp-novi-android-sistem-ministarstva-unutrasnjih-poslova-",
+      "title": "Papirni prekršajni nalozi odlaze u istoriju: Saobraćajci imaju novi sistem kažnjavanja vozača, kaznu ćete moći da platite odmah, a uvedena i važna novina za strance",
+      "url": "https://nova.rs/vesti/hronika/sta-je-esp-novi-android-sistem-ministarstva-unutrasnjih-poslova/",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T09:58:12+00:00",
+      "time": "09:58",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
       "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
       "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
@@ -533,20 +533,6 @@
       "priority": 4
     },
     {
-      "id": "77309-policija-dron-podgorica-cetinje-preticanje-puna-linija",
-      "title": "POLICIJA DRONOM SNIMALA VOZAČE U CRNOJ GORI: Preticali preko pune linije na putu Podgorica–Cetinje",
-      "url": "https://www.kurir.rs/region/crna-gora/10077309/policija-dron-podgorica-cetinje-preticanje-puna-linija",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T22:50:00+00:00",
-      "time": "22:50",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "arac-potegao-noz-nakon-tuce-zrtvi-probijena-plucna-maramica-",
       "title": "Pokušaj ubistva u Nikšiću: Muškarac potegao nož nakon tuče, žrtvi probijena plućna maramica",
       "url": "https://nova.rs/vesti/hronika/pokusaj-ubistva-u-niksicu-muskarac-potegao-noz-nakon-tuce-zrtvi-probijena-plucna-maramica/",
@@ -559,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "iran-grok-46-spacexai-predstavio-novi-vrhunski-ai-model-vest",
+      "title": "Grok 4.6 je tu: Brutalne performanse i drastično niža cena šokirale AI svet",
+      "url": "https://www.b92.net/tehnopolis/aktuelno/258783/lansiran-grok-46-spacexai-predstavio-novi-vrhunski-ai-model/vest",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T10:00:00+00:00",
+      "time": "10:00",
+      "source": "B92",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "-n1info-rs-svet-foto-suse-rim-2000-godina-star-neronov-most-",
@@ -631,6 +631,20 @@
       "priority": 0
     },
     {
+      "id": "onjicki-klub-se-oprostio-od-decaka-zauvek-galopiraj-slobodan",
+      "title": "KLUB SE OPROSTIO OD DEČAKA KOJI JE POGINUO U PADU KONJA: Zauvek galopiraj slobodan, tamo gde nema bola!",
+      "url": "https://www.kurir.rs/crna-hronika/10077789/konjicki-klub-se-oprostio-od-decaka-zauvek-galopiraj-slobodan",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T09:29:23+00:00",
+      "time": "09:29",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "ta-fasada-2026-i-kako-da-dobijete-drzavnu-subvenciju-p4ec33g",
       "title": "Fasada na kući ne mora da košta 7.500 evra, moguća ušteda! Koliko država vraća novca i gde stanari najčešće greše",
       "url": "https://www.blic.rs/biznis/moj-novcanik/koliko-kosta-fasada-2026-i-kako-da-dobijete-drzavnu-subvenciju/p4ec33g",
@@ -639,6 +653,20 @@
       "time": "09:20",
       "source": "Blic",
       "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "rzavanje-belog-luka-mu-produzava-rok-trajanja-do-godinu-dana",
+      "title": "Ako vam se beli luk stalno kvari, ovaj trik je spas: Ostaje svež i do godinu dana, a postoje 4 metode",
+      "url": "https://www.kurir.rs/zabava/zena/10067847/zamrzavanje-belog-luka-mu-produzava-rok-trajanja-do-godinu-dana",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T09:19:45+00:00",
+      "time": "09:19",
+      "source": "Kurir",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -667,34 +695,6 @@
       "time": "08:58",
       "source": "Danas",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "et-259373-cnn-amerika-ublazava-ciljeve-u-ratu-sa-iranom-vest",
-      "title": "Šok zaokret Vašingtona; Amerika odustaje?",
-      "url": "https://www.b92.net/info/svet/259373/cnn-amerika-ublazava-ciljeve-u-ratu-sa-iranom/vest",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T08:54:00+00:00",
-      "time": "08:54",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "sprema-haos-pred-izbore-danasnji-puls-srbije-vikend-od-12-10",
-      "title": "OPOZICIJA SPREMA HAOS PRED IZBORE! -  današnji Puls Srbije vikend, od 12.10",
-      "url": "https://www.kurir.rs/vesti/drustvo/10077749/opozicija-sprema-haos-pred-izbore-danasnji-puls-srbije-vikend-od-12-10",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T08:44:16+00:00",
-      "time": "08:44",
-      "source": "Kurir",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
