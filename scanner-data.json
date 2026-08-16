@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "a-10078114-nasilje-u-porodici-cerka-napala-majku-u-lazarevcu",
-      "title": "ĆERKA DAVILA MAJKU, PA BESOMUČNO ŠUTIRALA Stravično porodično nasilje u Lazarevu: Sa povredama hitno prevezena u bolnicu",
-      "url": "https://www.kurir.rs/crna-hronika/10078114/nasilje-u-porodici-cerka-napala-majku-u-lazarevcu",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T15:34:21+00:00",
-      "time": "15:34",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca-vest",
       "title": "Uhapšen vlasnik firme Taneo group: Sumnja se da je izvršio prevaru od 4,9 miliona evra",
       "url": "https://www.euronews.rs/srbija/aktuelno/238036/uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca/vest",
@@ -78,20 +64,6 @@
       "datetime": "2026-08-16T10:47:31+00:00",
       "time": "10:47",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "37891-na-batrovcima-uhapsen-osumnjiceni-za-ratni-zlocin-vest",
-      "title": "Dačić: Na graničnom prelazu Batrovci uhapšen osumnjičeni za ratni zločin",
-      "url": "https://www.euronews.rs/srbija/aktuelno/237891/na-batrovcima-uhapsen-osumnjiceni-za-ratni-zlocin/vest",
-      "date": "2026-08-14",
-      "datetime": "2026-08-14T16:34:00+00:00",
-      "time": "16:34",
-      "source": "Euronews Serbia",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -575,20 +547,6 @@
       "priority": 4
     },
     {
-      "id": "je-esp-novi-android-sistem-ministarstva-unutrasnjih-poslova-",
-      "title": "Papirni prekršajni nalozi odlaze u istoriju: Saobraćajci imaju novi sistem kažnjavanja vozača, kaznu ćete moći da platite odmah, a uvedena i važna novina za strance",
-      "url": "https://nova.rs/vesti/hronika/sta-je-esp-novi-android-sistem-ministarstva-unutrasnjih-poslova/",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T09:58:12+00:00",
-      "time": "09:58",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
       "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
       "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
@@ -601,6 +559,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "s-n1info-rs-biznis-ai-fotografije-internet-kupovina-prevare-",
+      "title": "Od Etsija do Temua: Kako su AI generatori slika pretvorili online kupovinu u industriju prevara?",
+      "url": "https://n1info.rs/biznis/ai-fotografije-internet-kupovina-prevare/",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T16:38:23+00:00",
+      "time": "16:38",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "-net-biz-svet-vesti-259451-lg-otvorio-fabriku-u-brazilu-vest",
@@ -695,6 +667,34 @@
       "time": "15:36",
       "source": "N1",
       "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-javnog-mnjenja-navode-njihovih-pet-kljucnih-karakteristika-",
+      "title": "Fotorobot birača koji će odlučiti izbore: Istraživači javnog mnjenja navode njihovih pet ključnih karakteristika",
+      "url": "https://nova.rs/vesti/politika/fotorobot-biraca-koji-ce-odluciti-izbore-istrazivaci-javnog-mnjenja-navode-njihovih-pet-kljucnih-karakteristika/",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T15:16:10+00:00",
+      "time": "15:16",
+      "source": "Nova",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "fo-rs-biznis-zastita-imovine-od-pozara-obaveze-i-osiguranje-",
+      "title": "Od pečenja paprike do elementarne nepogode: Kako zaštititi imovinu od požara i koje su obaveze profesionalnih upravnika",
+      "url": "https://n1info.rs/biznis/zastita-imovine-od-pozara-obaveze-i-osiguranje/",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T15:05:57+00:00",
+      "time": "15:05",
+      "source": "N1",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
