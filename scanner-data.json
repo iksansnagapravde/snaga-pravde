@@ -15,20 +15,6 @@
       "priority": 195
     },
     {
-      "id": "a-10078114-nasilje-u-porodici-cerka-napala-majku-u-lazarevcu",
-      "title": "ĆERKA DAVILA MAJKU, PA BESOMUČNO ŠUTIRALA Stravično porodično nasilje u Lazarevu: Sa povredama hitno prevezena u bolnicu",
-      "url": "https://www.kurir.rs/crna-hronika/10078114/nasilje-u-porodici-cerka-napala-majku-u-lazarevcu",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T15:34:21+00:00",
-      "time": "15:34",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca-vest",
       "title": "Uhapšen vlasnik firme Taneo group: Sumnja se da je izvršio prevaru od 4,9 miliona evra",
       "url": "https://www.euronews.rs/srbija/aktuelno/238036/uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca/vest",
@@ -43,6 +29,20 @@
       "priority": 98
     },
     {
+      "id": "otelu-u-sarm-el-seiku-vlasti-kazu-da-je-krsio-pravila-islama",
+      "title": "Руски туриста ухапшен у хотелу у Шарм ел Шеику, власти кажу да је кршио правила ислама",
+      "url": "https://www.politika.rs/scc/clanak/778972/ruski-turista-uhapsen-u-hotelu-u-sarm-el-seiku-vlasti-kazu-da-je-krsio-pravila-islama",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T22:38:00+00:00",
+      "time": "22:38",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "isu-odbio-da-stane-na-znak-policije-pa-poceo-da-bezi-b5l44jm",
       "title": "ODBIO DA STANE NA ZNAK POLICIJE, PA POČEO DA BEŽI Uhapšen mladić (20) u Nišu: Tokom bežanja BACIO PAKET PUN DROGE",
       "url": "https://www.blic.rs/vesti/hronika/uhapsen-mladic-zbog-droge-u-nisu-odbio-da-stane-na-znak-policije-pa-poceo-da-bezi/b5l44jm",
@@ -50,6 +50,20 @@
       "datetime": "2026-08-16T22:04:15+00:00",
       "time": "22:04",
       "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "10078302-hapsenje-u-nisu-mup-u-akciji-protiv-trgovine-drogom",
+      "title": "BEŽAO OD POLICIJE, BACIO DROGU Uhapšen mladić u Nišu",
+      "url": "https://www.kurir.rs/crna-hronika/10078302/hapsenje-u-nisu-mup-u-akciji-protiv-trgovine-drogom",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T21:59:55+00:00",
+      "time": "21:59",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -195,6 +209,20 @@
       "breaking": false,
       "alert": true,
       "priority": 88
+    },
+    {
+      "id": "n-crna-gora-10078112-uhapsen-tivat-prodaja-kokaina-1545-evra",
+      "title": "MUŠKARAC UHAPŠEN ZBOG PRODAJE KOKAINA U TIVTU: Kod osumnjičenog pronađeno 1.545 evra, policija sumnja da potiču od droge",
+      "url": "https://www.kurir.rs/region/crna-gora/10078112/uhapsen-tivat-prodaja-kokaina-1545-evra",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T22:12:00+00:00",
+      "time": "22:12",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "ovi-muskarac-napao-devojku-iz-srbije-kojoj-je-iznajmio-sobu-",
@@ -603,6 +631,20 @@
       "priority": 8
     },
     {
+      "id": "-10078086-austrijanac-36-dana-zatvora-preticanje-puna-linija",
+      "title": "AUSTRIJANAC DOBIO 36 DANA ZATVORA ZBOG PRETICANJA PREKO PUNE LINIJE: Dan nakon kazne ponovio isti prekršaj u Baru, policija mu oduzela vozilo",
+      "url": "https://www.kurir.rs/region/crna-gora/10078086/austrijanac-36-dana-zatvora-preticanje-puna-linija",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T22:20:00+00:00",
+      "time": "22:20",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ic-zavrsila-u-zatvoru-evo-zasto-je-policija-uhapsila-p8zt86e",
       "title": "UČESNICA ELITE ZAVRŠILA U ZATVORU Evo zbog čega je policija UHAPSILA Sandru Todić: \"Pravo na jedan poziv\", hoće da kontaktira SOFIJINOG DANETA (VIDEO)",
       "url": "https://www.blic.rs/zabava/ucesnica-elite-sandra-todic-zavrsila-u-zatvoru-evo-zasto-je-policija-uhapsila/p8zt86e",
@@ -652,48 +694,6 @@
       "datetime": "2026-08-16T16:55:18+00:00",
       "time": "16:55",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-hronika-10078137-devojka-24-iz-srbije-dozivela-uzas-na-moru",
-      "title": "GAZDA JE USRED NOĆI SAČEKAO NAG SA PUŠKOM Devojka (24) iz Srbije iznajmila sobu u Herceg Novom pa doživela užas: Reagovala policija",
-      "url": "https://www.kurir.rs/crna-hronika/10078137/devojka-24-iz-srbije-dozivela-uzas-na-moru",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T16:11:38+00:00",
-      "time": "16:11",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "78125-andjela-s-osumnjicena-za-neovlasceno-drzanje-marihuane",
-      "title": "POLICIJA ZAUSTAVILA ANĐELU (24) U RAKOVICI U kolima imala 203 specijalne plastične kesice: Šok zaplena ih sačekala i u stanu",
-      "url": "https://www.kurir.rs/crna-hronika/10078125/andjela-s-osumnjicena-za-neovlasceno-drzanje-marihuane",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T15:47:53+00:00",
-      "time": "15:47",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "www-danas-rs-svet-irina-borogan-andrej-soldatov-fsb-dronovi-",
-      "title": "Od oružja do gulaga: Ruski istraživački novinari pojašnjavaju zašto FSB nije više samo tajna policija",
-      "url": "https://www.danas.rs/svet/irina-borogan-andrej-soldatov-fsb-dronovi/",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T15:01:09+00:00",
-      "time": "15:01",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
