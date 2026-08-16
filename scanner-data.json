@@ -351,20 +351,6 @@
       "priority": 66
     },
     {
-      "id": "abljaka-najvise-stalno-naseljeno-mesto-na-celom-balkanu-vest",
-      "title": "Posebno selo na Balkanu: Jedino stalno naseljeno mesto na 1.600 metara nadmorske visine FOTO",
-      "url": "https://www.b92.net/putovanja/aktuelno/aktuelno/259514/selo-bosaca-kod-zabljaka-najvise-stalno-naseljeno-mesto-na-celom-balkanu/vest",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T19:00:00+00:00",
-      "time": "19:00",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "stvenim-koristima-kurkume-jesu-li-dodaci-ishrani-delotvorni-",
       "title": "Razbijanje mitova o zdravstvenim koristima kurkume: jesu li dodaci ishrani delotvorni",
       "url": "https://www.danas.rs/bbc-news-serbian/razbijanje-mitova-o-zdravstvenim-koristima-kurkume-jesu-li-dodaci-ishrani-delotvorni/",
@@ -673,20 +659,6 @@
       "priority": 4
     },
     {
-      "id": "077-selektor-egipta-pao-u-nesvest-dok-su-mu-se-supruge-tukle",
-      "title": "SKANDAL! DVE ŽENE LEGENDARNOG SELEKTORA SE TUKLE! Proslavljeni stručnjak pao u nesvest dok su mu se SUPRUGE makljale - reagovala i POLICIJA!",
-      "url": "https://www.kurir.rs/sport/fudbal/10078077/selektor-egipta-pao-u-nesvest-dok-su-mu-se-supruge-tukle",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T14:58:05+00:00",
-      "time": "14:58",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
       "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
       "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "siti-ciljana-ubistva-eliminisanjem-svake-noci-njih-30-do-40-",
+      "title": "Izrarelski ministar: U Gazi bi trebalo izvršiti ciljana ubistva, eliminisanjem svake noći njih 30 do 40",
+      "url": "https://www.danas.rs/svet/izrarelski-ministar-u-gazi-bi-trebalo-izvrsiti-ciljana-ubistva-eliminisanjem-svake-noci-njih-30-do-40/",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T20:40:00+00:00",
+      "time": "20:40",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ka-rs-scc-clanak-778957-tramp-dosta-je-bilo-pomeranja-satova",
+      "title": "Трамп: Доста је било померања сатова",
+      "url": "https://www.politika.rs/scc/clanak/778957/tramp-dosta-je-bilo-pomeranja-satova",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T20:33:00+00:00",
+      "time": "20:33",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
