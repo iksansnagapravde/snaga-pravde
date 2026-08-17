@@ -57,20 +57,6 @@
       "priority": 98
     },
     {
-      "id": "i-crvenog-ferarija-svi-se-pitaju-odakle-joj-ova-zver-jvd1t31",
-      "title": "MILENA KAČAVENDA VOZI CRVENOG FERARIJA Bivša učesnica \"Elite 9\" juri u BESNOJ MAŠINI centrom Beograda, zapalila mreže: \"Nigde mafijaša, samo ON\"",
-      "url": "https://www.blic.rs/zabava/milena-kacavenda-vozi-crvenog-ferarija-svi-se-pitaju-odakle-joj-ova-zver/jvd1t31",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T14:35:00+00:00",
-      "time": "14:35",
-      "source": "Blic",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "izazivanje-pozara-kod-zadra-na-saslusanju-priznali-paljenje-",
       "title": "Srpski državljanin među uhapšenima za izazivanje požara kod Zadra, na saslušanju priznali paljenje",
       "url": "https://n1info.rs/region/srpski-drzavljanin-medju-uhapsenima-za-izazivanje-pozara-kod-zadra-na-saslusanju-priznali-paljenje/",
@@ -631,20 +617,6 @@
       "priority": 24
     },
     {
-      "id": "tonela-da-mesine-moguce-povezana-sa-organizovanim-kriminalom",
-      "title": "Крађа слика Антонела да Месине могуће повезана са организованим криминалом",
-      "url": "https://www.politika.rs/scc/clanak/779162/krada-slika-antonela-da-mesine-moguce-povezana-sa-organizovanim-kriminalom",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T17:25:00+00:00",
-      "time": "17:25",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "Muskarac-preminuo-posle-tuce-na-svadbi-privedeno-sedam-osoba",
+      "title": "KRVAVA SVADBA! Upao nepozvan, pa izbila OPŠTA TUČA sa gostima: Muškarac (38) umro u bolnici, policija POHAPSILA SVATOVE!",
+      "url": "https://www.kurir.rs/planeta/10079112/Muskarac-preminuo-posle-tuce-na-svadbi-privedeno-sedam-osoba",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T18:31:29+00:00",
+      "time": "18:31",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "tska-10079035-Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
+      "title": "BOSONOGO DETE OD TRI I PO GODINE LUTALO ULICOM U PLAKALO Roditelji 40 minuta nisu otvarali vrata, a kada je policija ušla, zatekla je JEZIV PRIZOR",
+      "url": "https://www.kurir.rs/region/hrvatska/10079035/Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:10:10+00:00",
+      "time": "16:10",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
