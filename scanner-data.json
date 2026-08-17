@@ -57,6 +57,20 @@
       "priority": 95
     },
     {
+      "id": "958-deda-osumnjicen-za-nedozvoljene-polne-radnje-nad-detetom",
+      "title": "JEZIV SLUČAJ U ZEMUNU! Deda (75) uhapšen zbog nedozvoljenih polnih radnji nad detetom, pred tužiocem nije hteo ni reč da kaže!",
+      "url": "https://www.kurir.rs/crna-hronika/10078958/deda-osumnjicen-za-nedozvoljene-polne-radnje-nad-detetom",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:44:10+00:00",
+      "time": "14:44",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "a-10078795-uhapseni-srbi-pljacke-na-plazama-sutomora-i-canja",
       "title": "UHAPŠENI OPASNI LOPOVI SA JADRANA: Srbi krali po Čanju i Sutomoru sve što su stigli - ljudi ostali bez ičega!",
       "url": "https://www.kurir.rs/crna-hronika/10078795/uhapseni-srbi-pljacke-na-plazama-sutomora-i-canja",
@@ -78,20 +92,6 @@
       "datetime": "2026-08-17T10:28:45+00:00",
       "time": "10:28",
       "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "ediji-javljaju-da-su-trojica-uhapsenih-srpske-nacionalnosti-",
-      "title": "USKOK istražuje mogući terorizam u slučaju požara kod Zadra: Pojedini mediji javljaju da su trojica uhapšenih srpske nacionalnosti",
-      "url": "https://n1info.rs/region/uskok-istrazuje-moguci-terorizam-u-slucaju-pozara-kod-zadra-pojedini-mediji-javljaju-da-su-trojica-uhapsenih-srpske-nacionalnosti/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:13:14+00:00",
-      "time": "10:13",
-      "source": "N1",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -183,6 +183,20 @@
       "priority": 88
     },
     {
+      "id": "https-www-krik-rs-nemanja-vidic-dao-iskaz-u-tok-u-",
+      "title": "Nemanja Vidić dao iskaz u TOK-u",
+      "url": "https://www.krik.rs/nemanja-vidic-dao-iskaz-u-tok-u/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:53:56+00:00",
+      "time": "14:53",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
       "id": "en-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru-vest",
       "title": "Uhapšen osumnjičeni za izazivanje požara na Bovanskom jezeru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238201/uhapsen-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru/vest",
@@ -237,6 +251,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "danas-rs-vesti-drustvo-vjt-valjevo-postupak-protiv-28-osoba-",
+      "title": "VJT u Valjevu: Vodi se postupak protiv 28 osoba zbog nasilničkog ponašanja",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-valjevo-postupak-protiv-28-osoba/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:57:11+00:00",
+      "time": "14:57",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "-ojt-valjevo-tuzilastvo-vujicic-tuzilac-paljenje-vozila-html",
+      "title": "ВЈТ и ОЈТ у Ваљеву: Подршка тужиоцу Вујичићу, недопустиво паљење возила",
+      "url": "https://www.rts.rs/vesti/drustvo/6021311/vjt-ojt-valjevo-tuzilastvo-vujicic-tuzilac-paljenje-vozila.html",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:48:25+00:00",
+      "time": "14:48",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "-nasilnickog-ponasanja-na-protestu-16-avgusta-prosle-godine-",
@@ -414,20 +456,6 @@
       "datetime": "2026-08-17T12:30:08+00:00",
       "time": "12:30",
       "source": "KTV",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "milica-nije-podvrgnut-nijednom-testu-integriteta-pet-godina-",
-      "title": "Danas: VJT u Beogradu odbilo da dostavi evidenciju imovine Veselina Milića, nije podvrgnut nijednom testu integriteta pet godina",
-      "url": "https://n1info.rs/vesti/danas-vjt-u-beogradu-odbilo-da-dostavi-evidenciju-imovine-veselina-milica-nije-podvrgnut-nijednom-testu-integriteta-pet-godina/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:19:06+00:00",
-      "time": "10:19",
-      "source": "N1",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
-      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
-      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T09:20:51+00:00",
-      "time": "09:20",
-      "source": "RSE Balkan",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "tvo-sindikati-novars-radara-n1-i-forbsa-o-smenama-direktora-",
-      "title": "Sindikati Nova.rs, Radara, N1 i Forbsa osuđuju način na koji su smenjeni svi direktori: Nećemo prihvatiti da novinarstvo bude bilo čiji plen",
-      "url": "https://nova.rs/vesti/drustvo/sindikati-novars-radara-n1-i-forbsa-o-smenama-direktora/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T14:41:32+00:00",
-      "time": "14:41",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
