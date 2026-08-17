@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "vesti-sumnja-se-na-predoziranje-oglasila-se-hitna-pomoc-vest",
-      "title": "Isplivali novi detalji: Otkriven uzrok smrti Hejden Penetijer",
-      "url": "https://www.b92.net/zivot/aktuelno/259715/hejden-panetijer-pronadjena-bez-svesti-sumnja-se-na-predoziranje-oglasila-se-hitna-pomoc/vest",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T13:18:00+00:00",
-      "time": "13:18",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "78604-firma-iz-beograda-prevarila-strance-za-isporuku-oruzja",
       "title": "UHAPŠENOM BIZNISMENU IZ BEOGRADA KOJI JE TRGOVAO ORUŽJEM ZAPLENJEN I PRIVATNI AVION: Mijatović za Kurir otkrio kako je prevario stranca za 5 miliona evra",
       "url": "https://www.kurir.rs/crna-hronika/10078604/firma-iz-beograda-prevarila-strance-za-isporuku-oruzja",
@@ -57,13 +43,13 @@
       "priority": 98
     },
     {
-      "id": "sti-politika-opozicija-koalicija-milic-aleksic-parandilovic-",
-      "title": "„Učvršćivanje saradnje proverenih boraca u jedan antirežimski front“: Sagovornici Danasa o „najavi” nove opozicione kolone",
-      "url": "https://www.danas.rs/vesti/politika/opozicija-koalicija-milic-aleksic-parandilovic/",
+      "id": "i-crvenog-ferarija-svi-se-pitaju-odakle-joj-ova-zver-jvd1t31",
+      "title": "MILENA KAČAVENDA VOZI CRVENOG FERARIJA Bivša učesnica \"Elite 9\" juri u BESNOJ MAŠINI centrom Beograda, zapalila mreže: \"Nigde mafijaša, samo ON\"",
+      "url": "https://www.blic.rs/zabava/milena-kacavenda-vozi-crvenog-ferarija-svi-se-pitaju-odakle-joj-ova-zver/jvd1t31",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T10:37:14+00:00",
-      "time": "10:37",
-      "source": "Danas",
+      "datetime": "2026-08-17T14:35:00+00:00",
+      "time": "14:35",
+      "source": "Blic",
       "category": "Организовани криминал",
       "summary": "",
       "breaking": false,
@@ -155,20 +141,6 @@
       "priority": 90
     },
     {
-      "id": "apsenima-zbog-pozara-kod-zadra-u-slucaj-se-ukljucio-i-uskok-",
-      "title": "Troje Srba među uhapšenima zbog požara kod Zadra: U slučaj se uključio i USKOK",
-      "url": "https://nova.rs/vesti/svet/troje-srba-medju-uhapsenima-zbog-pozara-kod-zadra-u-slucaj-se-ukljucio-i-uskok/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T09:06:52+00:00",
-      "time": "09:06",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "ttps-radar-nova-rs-global-kusner-tirana-protesti-u-albaniji-",
       "title": "Beskrajna tranzicija i državna korupcija",
       "url": "https://radar.nova.rs/global/kusner-tirana-protesti-u-albaniji/",
@@ -223,20 +195,6 @@
       "breaking": false,
       "alert": true,
       "priority": 72
-    },
-    {
-      "id": "anak-779102-troje-ubijenih-u-pucnjavi-u-spanskom-letovalistu",
-      "title": "Троје убијених у пуцњави у шпанском летовалишту",
-      "url": "https://www.politika.rs/scc/clanak/779102/troje-ubijenih-u-pucnjavi-u-spanskom-letovalistu",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T13:24:00+00:00",
-      "time": "13:24",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "a-kokaina-u-beogradu-dilera-i-musteriju-nadgledala-policija-",
@@ -365,20 +323,6 @@
       "priority": 66
     },
     {
-      "id": "rmira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost-",
-      "title": "VJT formira predmet zbog curenja informacija iz istraga u javnost",
-      "url": "https://www.danas.rs/vesti/drustvo/vjt-formira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:34:29+00:00",
-      "time": "10:34",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -435,6 +379,20 @@
       "priority": 60
     },
     {
+      "id": "com-vesti-srbija-milan-kovacevic-aleksandar-vucic-korupcija-",
+      "title": "Ekonomista Milan Kovačević: Obilaskom sela i davanjem kome šta treba Vučić širi korupciju",
+      "url": "https://vreme.com/vesti/srbija-milan-kovacevic-aleksandar-vucic-korupcija/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:17:19+00:00",
+      "time": "14:17",
+      "source": "Vreme",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "eme-vucic-obilazi-sela-daje-sta-kome-treba-i-siri-korupciju-",
       "title": "Ekonomista: Umesto da institucije rešavaju probleme, Vučić obilazi sela, daje šta kome treba i širi korupciju",
       "url": "https://n1info.rs/vesti/ekonomista-umesto-da-institucije-resavaju-probleme-vucic-obilazi-sela-daje-sta-kome-treba-i-siri-korupciju/",
@@ -456,20 +414,6 @@
       "datetime": "2026-08-17T12:30:08+00:00",
       "time": "12:30",
       "source": "KTV",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "a-nacrtima-i-izmenama-pravosudnih-zakona-sutra-u-kragujevcu-",
-      "title": "Javno slušanje o predlozima, nacrtima i izmenama pravosudnih zakona sutra u Kragujevcu",
-      "url": "https://www.danas.rs/vesti/drustvo/javno-slusanje-o-predlozima-nacrtima-i-izmenama-pravosudnih-zakona-sutra-u-kragujevcu/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:34:27+00:00",
-      "time": "10:34",
-      "source": "Danas",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -505,6 +449,20 @@
       "priority": 30
     },
     {
+      "id": "ezbednosti-zbog-straha-od-zloupotrebe-vestacke-inteligencije",
+      "title": "Бела кућа пооштрава мере биобезбедности због страха од злоупотребе вештачке интелигенције",
+      "url": "https://www.politika.rs/scc/clanak/779126/bela-kuca-poostrava-mere-biobezbednosti-zbog-straha-od-zloupotrebe-vestacke-inteligencije",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:37:00+00:00",
+      "time": "14:37",
+      "source": "Politika",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "i-palila-na-10-lokacija-kod-njih-pronadjeni-puska-i-pistolj-",
       "title": "Policija otkrila nove detalje požara kod Zadra: Četvorka osumnjičena da je planski palila na 10 lokacija, kod njih pronađeni puška i pištolj",
       "url": "https://nova.rs/vesti/svet/policija-otkrila-nove-detalje-pozara-kod-zadra-cetvorka-osumnjicena-da-je-planski-palila-na-10-lokacija-kod-njih-pronadjeni-puska-i-pistolj/",
@@ -513,20 +471,6 @@
       "time": "13:24",
       "source": "Nova",
       "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "ti-politika-10078582-ministarstvo-o-smeni-djokica-i-bojovica",
-      "title": "ĐOKIĆ I BOJOVIĆ SMENJENI ZBOG ZAPOSTAVLJANJA DUŽNOSTI! Ministarstvo: Osuđujemo svaku zloupotrebu redovnih poslova ovog resora u dnevno-političke svrhe",
-      "url": "https://www.kurir.rs/vesti/politika/10078582/ministarstvo-o-smeni-djokica-i-bojovica",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T09:38:53+00:00",
-      "time": "09:38",
-      "source": "Kurir",
-      "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -631,6 +575,34 @@
       "priority": 8
     },
     {
+      "id": "ula-italijan-priveden-zbog-paljenja-vatre-na-plazi-lungomare",
+      "title": "Пула: Италијан приведен због паљења ватре на плажи Лунгомаре",
+      "url": "https://www.politika.rs/scc/clanak/779119/pula-italijan-priveden-zbog-paljenja-vatre-na-plazi-lungomare",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:20:00+00:00",
+      "time": "14:20",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "toputem-u-suprotnom-smeru-zbog-lajkova-na-drustvenim-mrezama",
+      "title": "Irska policija: Mladi voze auto-putem u suprotnom smeru zbog lajkova na društvenim mrežama",
+      "url": "https://beta.rs/content/250321-irska-policija-mladi-voze-autoputem-u-suprotnom-smeru-zbog-lajkova-na-drustvenim-mrezama",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:10:11+00:00",
+      "time": "14:10",
+      "source": "Beta",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "nasred-ulice-u-spaniji-ranjeni-sin-trudnice-uspeo-da-sqswstb",
       "title": "Detalji SMAKNUĆA NASRED ULICE u poznatom letovalištu: Otkriveno s kim su u vezi UBIJENE ŽENE, maskirani egzekutor na motoru pobegao! Cure STRAVIČNI SNIMCI, španska policija na nogama",
       "url": "https://www.blic.rs/vesti/svet/detalji-brutalnog-obracuna-nasred-ulice-u-spaniji-ranjeni-sin-trudnice-uspeo-da/sqswstb",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
+      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
+      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T09:20:51+00:00",
+      "time": "09:20",
+      "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "tvo-sindikati-novars-radara-n1-i-forbsa-o-smenama-direktora-",
+      "title": "Sindikati Nova.rs, Radara, N1 i Forbsa osuđuju način na koji su smenjeni svi direktori: Nećemo prihvatiti da novinarstvo bude bilo čiji plen",
+      "url": "https://nova.rs/vesti/drustvo/sindikati-novars-radara-n1-i-forbsa-o-smenama-direktora/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T14:41:32+00:00",
+      "time": "14:41",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
