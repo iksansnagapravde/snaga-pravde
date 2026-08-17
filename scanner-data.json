@@ -71,6 +71,20 @@
       "priority": 95
     },
     {
+      "id": "n-muskarac-u-zemunu-polno-zlostavljao-maloletno-dete-whleggw",
+      "title": "POLNO ZLOSTAVLJAO DETE Uhapšen muškarac u Zemunu",
+      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-u-zemunu-polno-zlostavljao-maloletno-dete/whleggw",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T17:32:44+00:00",
+      "time": "17:32",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "uhapsen-zbog-sumnje-da-je-izazvao-pozar-kod-bovanskog-jezera",
       "title": "Књажевчанин ухапшен  због сумње да је изазвао пожар код Бованског језера",
       "url": "https://www.politika.rs/scc/clanak/779146/knjazevcanin-uhapsen-zbog-sumnje-da-je-izazvao-pozar-kod-bovanskog-jezera",
@@ -183,6 +197,20 @@
       "priority": 88
     },
     {
+      "id": "emanja-vidic-dao-iskaz-u-tuzilastvu-za-organizovani-kriminal",
+      "title": "KRIK: Nemanja Vidić dao iskaz u Tužilaštvu za organizovani kriminal",
+      "url": "https://beta.rs/content/250332-krik-nemanja-vidic-dao-iskaz-u-tuzilastvu-za-organizovani-kriminal",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T17:10:10+00:00",
+      "time": "17:10",
+      "source": "Beta",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
       "id": "https-www-danas-rs-sport-nemanja-vidic-iskaz-tok-",
       "title": "Nemanja Vidić dao iskaz u Javnom tužilaštvu za organizovani kriminal",
       "url": "https://www.danas.rs/sport/nemanja-vidic-iskaz-tok/",
@@ -265,6 +293,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "tvora-za-osumnjicene-za-napad-u-parku-na-novom-beogradu-html",
+      "title": "Тужилаштво тражи казну затвора за осумњичене за напад у парку на Новом Београду",
+      "url": "https://www.rts.rs/vesti/hronika/6021504/tuzilastvo-trazi-kaznu-zatvora-za-osumnjicene-za-napad-u-parku-na-novom-beogradu.html",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T17:08:10+00:00",
+      "time": "17:08",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "nu-zatvora-za-osumnjicene-za-napad-u-parku-na-novom-beogradu",
+      "title": "Тужилаштво тражи казну затвора за осумњичене за напад у парку на Новом Београду",
+      "url": "https://www.politika.rs/scc/clanak/779157/tuzilastvo-trazi-kaznu-zatvora-za-osumnjicene-za-napad-u-parku-na-novom-beogradu",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T17:02:00+00:00",
+      "time": "17:02",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "ps-www-danas-rs-vesti-drustvo-vjt-pokusaj-ubistva-partnerke-",
@@ -358,20 +414,6 @@
       "datetime": "2026-08-17T12:43:50+00:00",
       "time": "12:43",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "esti-drustvo-vjt-i-ojt-u-valjevu-podrzali-vukasina-vujicica-",
-      "title": "VJT i OJT u Valjevu podržali Vukašina Vujičića",
-      "url": "https://www.danas.rs/vesti/drustvo/vjt-i-ojt-u-valjevu-podrzali-vukasina-vujicica/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T12:35:13+00:00",
-      "time": "12:35",
-      "source": "Danas",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -505,6 +547,20 @@
       "priority": 26
     },
     {
+      "id": "-zatrazilo-povlacenje-iz-procedure-vise-zakona-o-pravosudju-",
+      "title": "Društvo sudija zatražilo povlačenje iz procedure više zakona o pravosuđu",
+      "url": "https://n1info.rs/vesti/drustvo-sudija-zatrazilo-povlacenje-iz-procedure-vise-zakona-o-pravosudju/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T17:32:26+00:00",
+      "time": "17:32",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "-rs-vesti-drustvo-vujic-osudio-paljenje-automobila-vujicica-",
       "title": "Ministar Vujić osudio paljenje automobila javnog tužioca u Valjevu",
       "url": "https://www.danas.rs/vesti/drustvo/vujic-osudio-paljenje-automobila-vujicica/",
@@ -531,6 +587,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "tonela-da-mesine-moguce-povezana-sa-organizovanim-kriminalom",
+      "title": "Крађа слика Антонела да Месине могуће повезана са организованим криминалом",
+      "url": "https://www.politika.rs/scc/clanak/779162/krada-slika-antonela-da-mesine-moguce-povezana-sa-organizovanim-kriminalom",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T17:25:00+00:00",
+      "time": "17:25",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "zeci-sela-i-deleci-sta-kome-treba-siri-korupciju-i-kriminal-",
@@ -589,20 +659,6 @@
       "priority": 8
     },
     {
-      "id": "92-net-sport-fudbal-lige-petice-259743-moreira-u-milanu-vest",
-      "title": "&quot;Mali&quot; Moreira dolazi u Milan",
-      "url": "https://www.b92.net/sport/fudbal/lige-petice/259743/moreira-u-milanu/vest",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T16:00:00+00:00",
-      "time": "16:00",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "ar-nova-rs-global-republika-srpska-200-miliona-evra-kredita-",
       "title": "Pet miliona dnevno, stižu izbori",
       "url": "https://radar.nova.rs/global/republika-srpska-200-miliona-evra-kredita/",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "pronasla-u-besvesnom-stanju-policija-istrazuje-smrt-glumice-",
-      "title": "Drugarica pozvala pomoć nakon što ju je pronašla u besvesnom stanju: Policija istražuje smrt glumice",
-      "url": "https://nova.rs/zabava/sudbine/drugarica-pozvala-pomoc-nakon-sto-ju-je-pronasla-u-besvesnom-stanju-policija-istrazuje-smrt-glumice/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T12:38:40+00:00",
-      "time": "12:38",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "anskom-letovalistu-ubijene-tri-osobe-medju-njima-i-trudnica-",
-      "title": "U pucnjavi u španskom letovalištu ubijene tri osobe, među njima i trudnica",
-      "url": "https://n1info.rs/svet/u-pucnjavi-u-spanskom-letovalistu-ubijene-tri-osobe-medju-njima-i-trudnica/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T12:30:50+00:00",
-      "time": "12:30",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
-      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
-      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T09:20:51+00:00",
-      "time": "09:20",
-      "source": "RSE Balkan",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "macka-izmene-zakona-o-zastiti-politicara-od-uvreda-i-klevete",
-      "title": "Немачка: измене закона о заштити политичара од увреда и клевете",
-      "url": "https://www.politika.rs/scc/clanak/779156/nemacka-izmene-zakona-o-zastiti-politicara-od-uvreda-i-klevete",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T16:59:00+00:00",
-      "time": "16:59",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
