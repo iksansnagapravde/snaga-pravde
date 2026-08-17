@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "brenici-metalnom-sipkom-pretukao-dvojicu-sunarodnika-e1vgpec",
+      "title": "METALNOM ŠIPKOM PRETUKAO DVOJICU SUNARODNIKA Uhapšen državljanin Srbije u Srebrenici, žrtve hitno prevezene u bolnicu",
+      "url": "https://www.blic.rs/vesti/hronika/uhapsen-drzavljanin-srbije-u-srebrenici-metalnom-sipkom-pretukao-dvojicu-sunarodnika/e1vgpec",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:23:51+00:00",
+      "time": "10:23",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": true,
+      "priority": 170
+    },
+    {
       "id": "-potrebna-pomoc-rok-za-uplatu-novca-za-lecenje-istice-danas-",
       "title": "Kosti hitno potrebna pomoć, rok za uplatu novca za lečenje ističe danas",
       "url": "https://www.danas.rs/zivot/kosti-hitno-potrebna-pomoc-rok-za-uplatu-novca-za-lecenje-istice-danas/",
@@ -9,20 +23,6 @@
       "time": "09:45",
       "source": "Danas",
       "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "nas-rs-vesti-drustvo-anem-osudio-pretnje-biljani-stepanovic-",
-      "title": "ANEM osudio pretnje Biljani Stepanović",
-      "url": "https://www.danas.rs/vesti/drustvo/anem-osudio-pretnje-biljani-stepanovic/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T07:28:05+00:00",
-      "time": "07:28",
-      "source": "Danas",
-      "category": "Људска права",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -57,6 +57,20 @@
       "priority": 98
     },
     {
+      "id": "sti-politika-opozicija-koalicija-milic-aleksic-parandilovic-",
+      "title": "„Učvršćivanje saradnje proverenih boraca u jedan antirežimski front“: Sagovornici Danasa o „najavi” nove opozicione kolone",
+      "url": "https://www.danas.rs/vesti/politika/opozicija-koalicija-milic-aleksic-parandilovic/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:37:14+00:00",
+      "time": "10:37",
+      "source": "Danas",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
       "id": "ila-tuzioca-je-dokaz-da-je-drzava-kapitulirala-pred-mafijom-",
       "title": "Olenik (LSV): Paljenje automobila tužioca je dokaz da je država kapitulirala pred mafijom",
       "url": "https://www.danas.rs/vesti/drustvo/olenik-lsv-paljenje-automobila-tuzioca-je-dokaz-da-je-drzava-kapitulirala-pred-mafijom/",
@@ -83,6 +97,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "nog-ruskog-komandanta-bomba-bila-sakrivena-u-kanti-za-smece-",
+      "title": "Elitna prostitutka ubila moćnog ruskog komandanta: Bomba bila sakrivena u kanti za smeće",
+      "url": "https://nova.rs/vesti/svet/elitna-prostitutka-ubila-mocnog-ruskog-komandanta-bomba-bila-sakrivena-u-kanti-za-smece/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:28:45+00:00",
+      "time": "10:28",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "koji-je-osumnjicen-za-ubistvo-zeta-igora-41-na-slavi-k796vk5",
@@ -309,6 +337,20 @@
       "priority": 88
     },
     {
+      "id": "-ko-je-zena-koja-je-uhapsena-zbog-pozara-u-hrvatskoj-t1vm6qs",
+      "title": "\"ŠTA TE BRIGA ŠTA JA RADIM?\" Otkriveno ODAKLE JE ŽENA koja je uhapšena zbog PALJENJA POŽARA u Hrvatskoj: Strana državljanaka među privedenima",
+      "url": "https://www.blic.rs/vesti/svet/otkriveno-ko-je-zena-koja-je-uhapsena-zbog-pozara-u-hrvatskoj/t1vm6qs",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:40:21+00:00",
+      "time": "10:40",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "en-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru-vest",
       "title": "Uhapšen osumnjičeni za izazivanje požara na Bovanskom jezeru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238201/uhapsen-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru/vest",
@@ -363,6 +405,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "rmira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost-",
+      "title": "VJT formira predmet zbog curenja informacija iz istraga u javnost",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-formira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:34:29+00:00",
+      "time": "10:34",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
+      "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
+      "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:21:00+00:00",
+      "time": "10:21",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "3-hapsenje-pozar-na-bovanskom-jezeru-muskarac-knjazevac-html",
@@ -421,6 +491,34 @@
       "priority": 60
     },
     {
+      "id": "a-nacrtima-i-izmenama-pravosudnih-zakona-sutra-u-kragujevcu-",
+      "title": "Javno slušanje o predlozima, nacrtima i izmenama pravosudnih zakona sutra u Kragujevcu",
+      "url": "https://www.danas.rs/vesti/drustvo/javno-slusanje-o-predlozima-nacrtima-i-izmenama-pravosudnih-zakona-sutra-u-kragujevcu/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:34:27+00:00",
+      "time": "10:34",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "milica-nije-podvrgnut-nijednom-testu-integriteta-pet-godina-",
+      "title": "Danas: VJT u Beogradu odbilo da dostavi evidenciju imovine Veselina Milića, nije podvrgnut nijednom testu integriteta pet godina",
+      "url": "https://n1info.rs/vesti/danas-vjt-u-beogradu-odbilo-da-dostavi-evidenciju-imovine-veselina-milica-nije-podvrgnut-nijednom-testu-integriteta-pet-godina/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:19:06+00:00",
+      "time": "10:19",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "ja-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica-",
       "title": "Agencija za sprečavanje korupcije proverava imovinu Gorana Vesića",
       "url": "https://www.krik.rs/agencija-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica/",
@@ -447,34 +545,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "ika-10077853-vladimir-vuletic-o-odgovornosti-vladana-djokica",
-      "title": "\"ĐOKIĆ JE ODAVNO TREBALO DA PODNESE OSTAVKU!\" Prof. Vuletić: Ljudi koji su zloupotrebili univerzitet u političke svrhe nisu dostojni da predstavljaju bilo koga",
-      "url": "https://www.kurir.rs/vesti/politika/10077853/vladimir-vuletic-o-odgovornosti-vladana-djokica",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T05:57:10+00:00",
-      "time": "05:57",
-      "source": "Kurir",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
-      "id": "rustvo-6020665-sudije-tuzioci-pravosudna-akademija-spor-html",
-      "title": "Ко ће бирати будуће судије и тужиоце – спор око нове улоге Правосудне академије",
-      "url": "https://www.rts.rs/vesti/drustvo/6020665/sudije-tuzioci-pravosudna-akademija-spor.html",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T18:41:35+00:00",
-      "time": "18:41",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     },
     {
       "id": "sti-drustvo-mup-veselin-milic-podobnost-testiranje-nacelnik-",
@@ -519,6 +589,20 @@
       "priority": 22
     },
     {
+      "id": "5-isplivali-detalji-ugovora-itana-tompsona-plata-u-partizanu",
+      "title": "TOMPSONU 1,7 MILIONA OD PARTIZANA! Isplivali detalji ugovora Amerikanca sa crno-belima! Saradnja na dve godine, ali posle prve sezone...",
+      "url": "https://www.kurir.rs/sport/kosarka/evroliga/10078645/isplivali-detalji-ugovora-itana-tompsona-plata-u-partizanu",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:18:01+00:00",
+      "time": "10:18",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "z-pomoc-eu-promene-za-rad-od-kuce-frilensere-i-plate-2bk7hep",
       "title": "NOVI ZAKON O RADU MENJA ŽIVOTE MILIONA RADNIKA U SRBIJI! \"Blic Biznis\" otkriva detalje: Velike promene za rad od kuće, frilensere i plate",
       "url": "https://www.blic.rs/biznis/privreda/srbija-sprema-novi-zakon-o-radu-uz-pomoc-eu-promene-za-rad-od-kuce-frilensere-i-plate/2bk7hep",
@@ -545,6 +629,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ww-rts-rs-vesti-svet-6020911-brazil-saobracajna-nesreca-html",
+      "title": "Преврнуо се туристички аутобус у Рио де Жанеиру, погинуло 10 људи",
+      "url": "https://www.rts.rs/vesti/svet/6020911/brazil-saobracajna-nesreca.html",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T10:28:06+00:00",
+      "time": "10:28",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "-259634-policija-otkrila-detalje-smrti-hejden-panetijer-vest",
@@ -601,104 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "ww-danas-rs-svet-severna-irska-poginuli-tinejdzeri-autombil-",
-      "title": "Poginulo petoro tinejdžera, još četvoro ljudi u teškom stanju: Automobil išao u suprotnom smeru na autoputu u Republici Irskoj",
-      "url": "https://www.danas.rs/svet/severna-irska-poginuli-tinejdzeri-autombil/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T08:41:16+00:00",
-      "time": "08:41",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-pogledajte-sta-rade-maskirani-navijaci-dok-sve-stoji-video-",
-      "title": "Novi snimak haosa na auto-putu: Pogledajte šta rade maskirani navijači dok sve stoji VIDEO",
-      "url": "https://nova.rs/sport/fudbal/novi-snimak-haosa-na-auto-putu-pogledajte-sta-rade-maskirani-navijaci-dok-sve-stoji-video/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T06:52:33+00:00",
-      "time": "06:52",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ww-rts-rs-vesti-svet-6020911-brazil-saobracajna-nesreca-html",
-      "title": "Преврнуо се туристички аутобус у Рио де Жанеиру, погинуло 10 људи",
-      "url": "https://www.rts.rs/vesti/svet/6020911/brazil-saobracajna-nesreca.html",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T06:24:38+00:00",
-      "time": "06:24",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
-      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
-      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T09:20:51+00:00",
-      "time": "09:20",
-      "source": "RSE Balkan",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "259641-aba-liga-otvorila-konkurs-za-sportskog-direktora-vest",
-      "title": "ABA liga traži sportskog direktora – ostalo je još malo vremena za prijavu",
-      "url": "https://www.b92.net/sport/kosarka/aba/259641/aba-liga-otvorila-konkurs-za-sportskog-direktora/vest",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:14:00+00:00",
-      "time": "10:14",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "sa-bojovic-smenjeni-sa-pozicija-uo-instituta-za-arhitekturu-",
-      "title": "Vladan Đokić i Nebojša Bojović smenjeni sa funkcija u Institutu za arhitekturu: \"Zapostavljali dužnost i zanemarivali interese Srbije\"",
-      "url": "https://nova.rs/vesti/drustvo/vladan-djokic-i-nebojsa-bojovic-smenjeni-sa-pozicija-uo-instituta-za-arhitekturu/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:12:54+00:00",
-      "time": "10:12",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "rio-havaje-unisteno-vise-od-100-kuca-ima-i-poginulih-2tzw3zj",
-      "title": "URAGAN LALA RAZORIO HAVAJE! Podivljala prirodna neman potopila Veliko ostrvo: Uništeno više od 100 kuća, ima i POGINULIH",
-      "url": "https://www.blic.rs/vesti/svet/uragan-lala-razorio-havaje-unisteno-vise-od-100-kuca-ima-i-poginulih/2tzw3zj",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:08:50+00:00",
-      "time": "10:08",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
