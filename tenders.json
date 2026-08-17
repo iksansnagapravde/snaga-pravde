@@ -1,1 +1,101 @@
-[]
+[
+  {
+    "winner": null,
+    "accepted": 18000000.0,
+    "lowest": 1202.0,
+    "difference": 17998798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 111201848,
+    "file": "documents/111201848_JNOP R 040-2026 ODLUKA O DODELI.pdf"
+  },
+  {
+    "winner": "219,93 Valuta: RSD Ugovor se dodeljuje grupi ponudaéa: Telegroup d",
+    "accepted": 114363219.93,
+    "lowest": 8202.0,
+    "difference": 114355017.93,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113376278,
+    "file": "documents/113376278_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 37800.0,
+    "lowest": 1146.0,
+    "difference": 36654.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101322995,
+    "file": "documents/101322995_Odluka o izdavanju pojedinacne narudžbenice - 61.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 791666.66,
+    "lowest": 1920.0,
+    "difference": 789746.66,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100931119,
+    "file": "documents/100931119_ODLUKA O DODELI UGOVORA.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 5723636.36,
+    "lowest": 2019.92,
+    "difference": 5721616.44,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100270693,
+    "file": "documents/100270693_PDF ODLUKA O DODELI.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 7316000.0,
+    "lowest": 8202.0,
+    "difference": 7307798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101301372,
+    "file": "documents/101301372_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 6007.0,
+    "difference": 2993993.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105997929,
+    "file": "documents/105997929_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 6341700.0,
+    "lowest": 6020.0,
+    "difference": 6335680.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110244960,
+    "file": "documents/110244960_Odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6341700.0,
+    "lowest": 6020.0,
+    "difference": 6335680.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105046072,
+    "file": "documents/105046072_Odluka o dodeli.pdf"
+  }
+]
