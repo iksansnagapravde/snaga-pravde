@@ -141,6 +141,20 @@
       "priority": 92
     },
     {
+      "id": "novih-sedam-osumnjicenih-za-krujumcarenje-marihuane-u-srbiju",
+      "title": "Severna Makedonija: Novih sedam osumnjičenih za krujumčarenje marihuane u Srbiju",
+      "url": "https://beta.rs/content/250340-severna-makedonija-novih-sedam-osumnjicenih-za-krujumcarenje-marihuane-u-srbiju",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T19:55:08+00:00",
+      "time": "19:55",
+      "source": "Beta",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
       "id": "ttps-radar-nova-rs-global-kusner-tirana-protesti-u-albaniji-",
       "title": "Beskrajna tranzicija i državna korupcija",
       "url": "https://radar.nova.rs/global/kusner-tirana-protesti-u-albaniji/",
@@ -181,20 +195,6 @@
       "breaking": false,
       "alert": true,
       "priority": 88
-    },
-    {
-      "id": "emanja-vidic-dao-iskaz-u-tuzilastvu-za-organizovani-kriminal",
-      "title": "KRIK: Nemanja Vidić dao iskaz u Tužilaštvu za organizovani kriminal",
-      "url": "https://beta.rs/content/250332-krik-nemanja-vidic-dao-iskaz-u-tuzilastvu-za-organizovani-kriminal",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T17:10:10+00:00",
-      "time": "17:10",
-      "source": "Beta",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
     },
     {
       "id": "https-www-danas-rs-sport-nemanja-vidic-iskaz-tok-",
@@ -365,20 +365,6 @@
       "priority": 66
     },
     {
-      "id": "danas-rs-vesti-drustvo-vjt-valjevo-postupak-protiv-28-osoba-",
-      "title": "VJT u Valjevu: Vodi se postupak protiv 28 osoba zbog nasilničkog ponašanja",
-      "url": "https://www.danas.rs/vesti/drustvo/vjt-valjevo-postupak-protiv-28-osoba/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T14:57:11+00:00",
-      "time": "14:57",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "-ojt-valjevo-tuzilastvo-vujicic-tuzilac-paljenje-vozila-html",
       "title": "ВЈТ и ОЈТ у Ваљеву: Подршка тужиоцу Вујичићу, недопустиво паљење возила",
       "url": "https://www.rts.rs/vesti/drustvo/6021311/vjt-ojt-valjevo-tuzilastvo-vujicic-tuzilac-paljenje-vozila.html",
@@ -475,6 +461,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "ndijske-snage-uhapsile-oko-200-pripadnika-teroristicke-grupe",
+      "title": "Индијске снаге ухапсиле око 200 припадника терористичке групе",
+      "url": "https://www.politika.rs/scc/clanak/779184/indijske-snage-uhapsile-oko-200-pripadnika-teroristicke-grupe",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T19:52:00+00:00",
+      "time": "19:52",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "raga-u-crnoj-gori-i-sve-vise-sumnji-da-pozari-nisu-slucajni-",
