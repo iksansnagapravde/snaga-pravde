@@ -43,20 +43,6 @@
       "priority": 100
     },
     {
-      "id": "uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca-vest",
-      "title": "Uhapšen vlasnik firme Taneo group: Sumnja se da je izvršio prevaru od 4,9 miliona evra",
-      "url": "https://www.euronews.rs/srbija/aktuelno/238036/uhapsen-vlasnik-taneo-group-zbog-prevare-i-pranja-novca/vest",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T21:21:00+00:00",
-      "time": "21:21",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 98
-    },
-    {
       "id": "nje-u-Leposavicu-Falsifikovanje-dokumenata-i-zaplenjeni-meci",
       "title": "ZAPLENJENI MECI I TELEFON Muškarac iz Leposavića uhapšen na Jarinju, osumnjičen za navodno falisifikovanje dokumenata",
       "url": "https://www.kurir.rs/crna-hronika/10079177/Hapsenje-u-Leposavicu-Falsifikovanje-dokumenata-i-zaplenjeni-meci",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-17T18:36:38+00:00",
       "time": "18:36",
       "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
+      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
+      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
+      "date": "2026-07-30",
+      "datetime": "2026-07-30T15:13:36+00:00",
+      "time": "15:13",
+      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
