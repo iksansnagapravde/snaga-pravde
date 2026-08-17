@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "brenici-metalnom-sipkom-pretukao-dvojicu-sunarodnika-e1vgpec",
-      "title": "METALNOM ŠIPKOM PRETUKAO DVOJICU SUNARODNIKA Uhapšen državljanin Srbije u Srebrenici, žrtve hitno prevezene u bolnicu",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-drzavljanin-srbije-u-srebrenici-metalnom-sipkom-pretukao-dvojicu-sunarodnika/e1vgpec",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:23:51+00:00",
-      "time": "10:23",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 170
-    },
-    {
       "id": "vesti-sumnja-se-na-predoziranje-oglasila-se-hitna-pomoc-vest",
       "title": "Isplivali novi detalji: Otkriven uzrok smrti Hejden Penetijer",
       "url": "https://www.b92.net/zivot/aktuelno/259715/hejden-panetijer-pronadjena-bez-svesti-sumnja-se-na-predoziranje-oglasila-se-hitna-pomoc/vest",
@@ -141,20 +127,6 @@
       "priority": 92
     },
     {
-      "id": "ars-10078528-sandra-todic-o-hapsenju-nikad-se-necu-promeniti",
-      "title": "UHAPŠENA UČESNICA ELITE 9: Oglasila se nakon hapšenja: Nikad se neću promeniti!",
-      "url": "https://www.kurir.rs/stars/10078528/sandra-todic-o-hapsenju-nikad-se-necu-promeniti",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T08:41:40+00:00",
-      "time": "08:41",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "38-u-zvecanu-uhapsen-srbin-zbog-sumnje-za-napad-na-kfor-vest",
       "title": "U Zvečanu uhapšen Srbin zbog napada na KFOR i tzv. kosovsku policiju",
       "url": "https://www.euronews.rs/srbija/aktuelno/238138/u-zvecanu-uhapsen-srbin-zbog-sumnje-za-napad-na-kfor/vest",
@@ -239,20 +211,6 @@
       "priority": 88
     },
     {
-      "id": "-ko-je-zena-koja-je-uhapsena-zbog-pozara-u-hrvatskoj-t1vm6qs",
-      "title": "\"ŠTA TE BRIGA ŠTA JA RADIM?\" Otkriveno ODAKLE JE ŽENA koja je uhapšena zbog PALJENJA POŽARA u Hrvatskoj: Strana državljanaka među privedenima",
-      "url": "https://www.blic.rs/vesti/svet/otkriveno-ko-je-zena-koja-je-uhapsena-zbog-pozara-u-hrvatskoj/t1vm6qs",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:40:21+00:00",
-      "time": "10:40",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
       "id": "en-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru-vest",
       "title": "Uhapšen osumnjičeni za izazivanje požara na Bovanskom jezeru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238201/uhapsen-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru/vest",
@@ -321,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-nasilnickog-ponasanja-na-protestu-16-avgusta-prosle-godine-",
+      "title": "VJT u Valjevu: Postupak protiv 28 osoba zbog nasilničkog ponašanja na protestu 16. avgusta prošle godine",
+      "url": "https://n1info.rs/vesti/vjt-u-valjevu-postupak-protiv-28-osoba-zbog-nasilnickog-ponasanja-na-protestu-16-avgusta-prosle-godine/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T13:55:09+00:00",
+      "time": "13:55",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "apad-u-poslednjih-osam-meseci-pokusaj-uticaja-na-njihov-rad-",
@@ -694,6 +666,34 @@
       "datetime": "2026-08-17T12:30:50+00:00",
       "time": "12:30",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "svet-region-policija-tri-hrvatska-drzavljanina-i-poljakinja-",
+      "title": "Policija objavila: Tri hrvatska državljanina i Poljakinja zapalili požar na 10 mesta, imali i poluautomatsko oružje",
+      "url": "https://www.danas.rs/svet/region/policija-tri-hrvatska-drzavljanina-i-poljakinja/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T12:01:55+00:00",
+      "time": "12:01",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "va-ludi-svet-10078632-turistkinja-plivala-u-fontani-di-trevi",
+      "title": "Turistkinja zaplivala u Fontani di Trevi: Policija odmah reagovala, evo kakva je kazna čeka (video)",
+      "url": "https://www.kurir.rs/zabava/ludi-svet/10078632/turistkinja-plivala-u-fontani-di-trevi",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T11:01:05+00:00",
+      "time": "11:01",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
