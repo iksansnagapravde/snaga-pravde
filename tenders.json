@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 22000.0,
+    "lowest": 8202.0,
+    "difference": 13798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101289775,
+    "file": "documents/101289775_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 8363.0,
+    "lowest": 8202.0,
+    "difference": 161.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113574111,
+    "file": "documents/113574111_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 8363.0,
+    "lowest": 8202.0,
+    "difference": 161.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102020336,
+    "file": "documents/102020336_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
     "accepted": 1607907.56,
     "lowest": 7202.0,
     "difference": 1600705.56,
@@ -64,49 +97,5 @@
     "rejection_reasons": [],
     "id": 100001636,
     "file": "documents/100001636_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 800000.0,
-    "lowest": 8202.0,
-    "difference": 791798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101109316,
-    "file": "documents/101109316_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 600000.0,
-    "lowest": 8202.0,
-    "difference": 591798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101508227,
-    "file": "documents/101508227_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 4999000.0,
-    "lowest": 8202.0,
-    "difference": 4990798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 115479307,
-    "file": "documents/115479307_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1800000.0,
-    "lowest": 8202.0,
-    "difference": 1791798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
   }
 ]
