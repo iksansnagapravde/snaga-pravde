@@ -225,20 +225,6 @@
       "priority": 92
     },
     {
-      "id": "ljale-pristini-ponudio-besplatnu-pomoc-za-odbranu-uhapsenih-",
-      "title": "Koci: Srpske vlasti me tri puta zaustavljale, Prištini ponudio besplatnu pomoć za odbranu uhapšenih",
-      "url": "https://nova.rs/vesti/politika/koci-srpske-vlasti-me-tri-puta-zaustavljale-pristini-ponudio-besplatnu-pomoc-za-odbranu-uhapsenih/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T07:30:46+00:00",
-      "time": "07:30",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "38-u-zvecanu-uhapsen-srbin-zbog-sumnje-za-napad-na-kfor-vest",
       "title": "U Zvečanu uhapšen Srbin zbog napada na KFOR i tzv. kosovsku policiju",
       "url": "https://www.euronews.rs/srbija/aktuelno/238138/u-zvecanu-uhapsen-srbin-zbog-sumnje-za-napad-na-kfor/vest",
@@ -365,6 +351,34 @@
       "priority": 72
     },
     {
+      "id": "a-milosa-i-maje-zbog-droge-policija-zaplenila-oruzje-2ncvydt",
+      "title": "PODIGNUTA OPTUŽNICA PROTIV \"PAKLENE TROJKE\" ZBOG DROGE! Otkriveno kako je funkcionisala mračna šema za koju se sumnjiče Dušan, Miloš i Maja: Policija zaplenila kokain, oružje, lažna dokumenta, novac...",
+      "url": "https://www.blic.rs/vesti/hronika/podignuta-optuznica-protiv-dusana-milosa-i-maje-zbog-droge-policija-zaplenila-oruzje/2ncvydt",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T11:32:52+00:00",
+      "time": "11:32",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "-cetiri-osobe-za-izazivanje-pozara-na-10-lokacija-kod-zadra-",
+      "title": "Hrvatska policija: Osumnjičene četiri osobe za izazivanje požara na 10 lokacija kod Zadra",
+      "url": "https://n1info.rs/region/hrvatska-policija-osumnjicene-cetiri-osobe-za-izazivanje-pozara-na-10-lokacija-kod-zadra/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T11:11:24+00:00",
+      "time": "11:11",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "rmira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost-",
       "title": "VJT formira predmet zbog curenja informacija iz istraga u javnost",
       "url": "https://www.danas.rs/vesti/drustvo/vjt-formira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost/",
@@ -414,20 +428,6 @@
       "datetime": "2026-08-17T10:15:45+00:00",
       "time": "10:15",
       "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "e-postupak-protiv-nn-sluzbenih-lica-zbog-curenja-informacija",
-      "title": "Тужилаштво покреће поступак против НН службених лица због цурења информација",
-      "url": "https://www.politika.rs/scc/clanak/779044/tuzilastvo-pokrece-postupak-protiv-nn-sluzbenih-lica-zbog-curenja-informacija",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:01:00+00:00",
-      "time": "10:01",
-      "source": "Politika",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -533,20 +533,6 @@
       "priority": 26
     },
     {
-      "id": "sti-drustvo-mup-veselin-milic-podobnost-testiranje-nacelnik-",
-      "title": "Danas dobio odgovor od MUP-a: Da li je podobnost Veselina Milića za obavljanje funkcije načelnika PU ikada testirana?",
-      "url": "https://www.danas.rs/vesti/drustvo/mup-veselin-milic-podobnost-testiranje-nacelnik/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T08:11:54+00:00",
-      "time": "08:11",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -582,20 +568,6 @@
       "datetime": "2026-08-17T10:18:01+00:00",
       "time": "10:18",
       "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "z-pomoc-eu-promene-za-rad-od-kuce-frilensere-i-plate-2bk7hep",
-      "title": "NOVI ZAKON O RADU MENJA ŽIVOTE MILIONA RADNIKA U SRBIJI! \"Blic Biznis\" otkriva detalje: Velike promene za rad od kuće, frilensere i plate",
-      "url": "https://www.blic.rs/biznis/privreda/srbija-sprema-novi-zakon-o-radu-uz-pomoc-eu-promene-za-rad-od-kuce-frilensere-i-plate/2bk7hep",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T07:45:46+00:00",
-      "time": "07:45",
-      "source": "Blic",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
+      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
+      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T09:20:51+00:00",
+      "time": "09:20",
+      "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-je-vlast-obecala-2023-a-sta-ispunila-pred-najavljene-izbore",
+      "title": "Šta je vlast obećala 2023, a šta ispunila pred najavljene izbore",
+      "url": "https://beta.rs/content/250305-sta-je-vlast-obecala-2023-a-sta-ispunila-pred-najavljene-izbore",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T11:35:10+00:00",
+      "time": "11:35",
+      "source": "Beta",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
