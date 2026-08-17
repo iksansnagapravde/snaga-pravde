@@ -71,6 +71,34 @@
       "priority": 95
     },
     {
+      "id": "uhapsen-zbog-sumnje-da-je-izazvao-pozar-kod-bovanskog-jezera",
+      "title": "Књажевчанин ухапшен  због сумње да је изазвао пожар код Бованског језера",
+      "url": "https://www.politika.rs/scc/clanak/779146/knjazevcanin-uhapsen-zbog-sumnje-da-je-izazvao-pozar-kod-bovanskog-jezera",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:10:00+00:00",
+      "time": "16:10",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "zara-kod-bovanskog-jezera-vatra-zahvatila-tri-vikendice-vest",
+      "title": "Uhapšen zbog požara kod Bovanskog jezera: Vatra zahvatila tri vikendice",
+      "url": "https://www.b92.net/lokal/nis/hronika/259770/uhapsen-zbog-pozara-kod-bovanskog-jezera-vatra-zahvatila-tri-vikendice/vest",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T15:56:00+00:00",
+      "time": "15:56",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "-deda-osumnjicen-za-polno-zlostavljanje-deteta-u-zemunu-vest",
       "title": "Muškarac (75) uhapšen zbog sumnje na polno zlostavljanje deteta u Zemunu: Otkriveno kako se branio pred tužiocem",
       "url": "https://www.euronews.rs/srbija/aktuelno/238277/deda-osumnjicen-za-polno-zlostavljanje-deteta-u-zemunu/vest",
@@ -167,6 +195,20 @@
       "breaking": false,
       "alert": true,
       "priority": 88
+    },
+    {
+      "id": "nika-nemanja-vidic-dao-iskaz-u-jtok-u-povodom-skaj-prepiski-",
+      "title": "Nemanja Vidić dao iskaz u JTOK-u povodom \"skaj\" prepiski Slaviše Kokeze",
+      "url": "https://nova.rs/vesti/hronika/nemanja-vidic-dao-iskaz-u-jtok-u-povodom-skaj-prepiski/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:18:32+00:00",
+      "time": "16:18",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
     },
     {
       "id": "https-n1info-rs-vesti-krik-nemanja-vidic-dao-iskaz-u-tok-u-",
@@ -477,20 +519,6 @@
       "priority": 26
     },
     {
-      "id": "a-pozare-u-hrvatskoj-je-skretanje-paznje-sa-otpada-u-gospicu",
-      "title": "\"HRVATSKA AMATERSKA PRIČA ZA NAIVNE\" Savo Štrbac za Kurir o hapšenju Srba osumnjičenih za požare u Hrvatskoj: \"Skretanje pažnje s odlaganja OTROVNOG OTPADA\"",
-      "url": "https://www.kurir.rs/region/hrvatska/10078547/savo-strbac-za-kurir-hapsenje-srba-za-pozare-u-hrvatskoj-je-skretanje-paznje-sa-otpada-u-gospicu",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T11:04:57+00:00",
-      "time": "11:04",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "vde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu-html",
       "title": "Министар правде осудио паљење аутомобила јавног тужиоца у Ваљеву",
       "url": "https://www.rts.rs/vesti/politika/6021498/ministar-pravde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu.html",
@@ -503,20 +531,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "azeci-sela-i-deleci-sta-kome-treba-siri-korupciju-i-kriminal",
-      "title": "Ekonomista Kovačević: Vučić, obilazeći sela i deleći šta kome treba, širi korupciju i kriminal",
-      "url": "https://beta.rs/content/250320-ekonomista-kovacevic-vucic-obilazeci-sela-i-deleci-sta-kome-treba-siri-korupciju-i-kriminal",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T13:45:08+00:00",
-      "time": "13:45",
-      "source": "Beta",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
     },
     {
       "id": "zeci-sela-i-deleci-sta-kome-treba-siri-korupciju-i-kriminal-",
@@ -561,6 +575,20 @@
       "priority": 22
     },
     {
+      "id": "stra-ovako-ministarstvo-milice-zavetnice-deli-drzavni-novac-",
+      "title": "Milion evra iz budžeta za udruženja SNS poslanika i oca ministra: Ovako ministarstvo Milice Zavetnice deli državni novac",
+      "url": "https://nova.rs/vesti/politika/milion-evra-iz-budzeta-za-udruzenja-sns-poslanika-i-oca-ministra-ovako-ministarstvo-milice-zavetnice-deli-drzavni-novac/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:15:12+00:00",
+      "time": "16:15",
+      "source": "Nova",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "92-net-sport-fudbal-lige-petice-259743-moreira-u-milanu-vest",
       "title": "&quot;Mali&quot; Moreira dolazi u Milan",
       "url": "https://www.b92.net/sport/fudbal/lige-petice/259743/moreira-u-milanu/vest",
@@ -589,13 +617,13 @@
       "priority": 8
     },
     {
-      "id": "s-scc-clanak-779133-pet-tinejdzera-poginulo-u-irskoj-na-putu",
-      "title": "Пет тинејџера погинуло у Ирској на путу",
-      "url": "https://www.politika.rs/scc/clanak/779133/pet-tinejdzera-poginulo-u-irskoj-na-putu",
+      "id": "tska-10079035-Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
+      "title": "BOSONOGO DETE OD TRI I PO GODINE LUDALO ULICOM U PLAKALO Roditelji 40 minuta nisu otvarali vrata, a kada je policija ušla, zatekla je JEZIV PRIZOR",
+      "url": "https://www.kurir.rs/region/hrvatska/10079035/Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T15:03:00+00:00",
-      "time": "15:03",
-      "source": "Politika",
+      "datetime": "2026-08-17T16:10:10+00:00",
+      "time": "16:10",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -603,13 +631,13 @@
       "priority": 4
     },
     {
-      "id": "toputem-u-suprotnom-smeru-zbog-lajkova-na-drustvenim-mrezama",
-      "title": "Irska policija: Mladi voze auto-putem u suprotnom smeru zbog lajkova na društvenim mrežama",
-      "url": "https://beta.rs/content/250321-irska-policija-mladi-voze-autoputem-u-suprotnom-smeru-zbog-lajkova-na-drustvenim-mrezama",
+      "id": "s-scc-clanak-779133-pet-tinejdzera-poginulo-u-irskoj-na-putu",
+      "title": "Пет тинејџера погинуло у Ирској на путу",
+      "url": "https://www.politika.rs/scc/clanak/779133/pet-tinejdzera-poginulo-u-irskoj-na-putu",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T14:10:11+00:00",
-      "time": "14:10",
-      "source": "Beta",
+      "datetime": "2026-08-17T15:03:00+00:00",
+      "time": "15:03",
+      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -666,34 +694,6 @@
       "datetime": "2026-08-17T12:01:55+00:00",
       "time": "12:01",
       "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "va-ludi-svet-10078632-turistkinja-plivala-u-fontani-di-trevi",
-      "title": "Turistkinja zaplivala u Fontani di Trevi: Policija odmah reagovala, evo kakva je kazna čeka (video)",
-      "url": "https://www.kurir.rs/zabava/ludi-svet/10078632/turistkinja-plivala-u-fontani-di-trevi",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T11:01:05+00:00",
-      "time": "11:01",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
-      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
-      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T09:20:51+00:00",
-      "time": "09:20",
-      "source": "RSE Balkan",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
