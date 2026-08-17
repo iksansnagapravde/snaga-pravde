@@ -1,57 +1,112 @@
 [
   {
     "winner": null,
-    "accepted": 601895.0,
-    "lowest": 6202.0,
-    "difference": 595693.0,
+    "accepted": 27500000.0,
+    "lowest": 12110.0,
+    "difference": 27487890.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101153146,
-    "file": "documents/101153146_8. Odluka o dodeli ugovora - izmenjena.pdf"
+    "id": 100016260,
+    "file": "documents/100016260_Odluka o dodeli ugovora JN 127-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 1548000.0,
-    "lowest": 5148.0,
-    "difference": 1542852.0,
+    "accepted": 6400000.0,
+    "lowest": 7202.0,
+    "difference": 6392798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 109698358,
-    "file": "documents/109698358_Odluka o dodeli ugovora.pdf"
+    "id": 106515039,
+    "file": "documents/106515039_Odluka o dodeli ugovora - Nabavka racunarske opreme 2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 840000.0,
-    "lowest": 6343.0,
-    "difference": 833657.0,
+    "accepted": 59000000.0,
+    "lowest": 8202.0,
+    "difference": 58991798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100143422,
+    "file": "documents/100143422_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 104110.0,
+    "lowest": 2950.0,
+    "difference": 101160.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112723288,
+    "file": "documents/112723288_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljujepr",
+    "accepted": 1600000.0,
+    "lowest": 8202.0,
+    "difference": 1591798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100001958,
+    "file": "documents/100001958_Odluka o dodeli-Usluge osiguranja.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 5000000.0,
+    "lowest": 7180.0,
+    "difference": 4992820.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100667096,
+    "file": "documents/100667096_Odluka o izdavanju narudzbenice.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 23020810.5,
+    "lowest": 4972.6,
+    "difference": 23015837.9,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101735648,
+    "file": "documents/101735648_ODLUKA O DODELI UGOVORA.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 14156372.88,
+    "lowest": 2263.0,
+    "difference": 14154109.88,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107300089,
+    "file": "documents/107300089_Odluka o dodeli ugovora KPC 2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 11025723.0,
+    "lowest": 2184.0,
+    "difference": 11023539.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109678379,
+    "file": "documents/109678379_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": "dodeljuje IBREA DOO",
+    "accepted": 8202.0,
+    "lowest": 7202.0,
+    "difference": 1000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 107659818,
-    "file": "documents/107659818_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2531841.73,
-    "lowest": 8202.0,
-    "difference": 2523639.73,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100002942,
-    "file": "documents/100002942_Odluka o dodeli ugovora.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 404700.0,
-    "lowest": 8110.0,
-    "difference": 396590.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101877940,
-    "file": "documents/101877940_Odluka o dodeli ugovora.docx"
+    "file": "documents/107659818_Odluka o dodeli Elektromaterijal opšte namene 2026.pdf"
   }
 ]
