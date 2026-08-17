@@ -239,20 +239,6 @@
       "priority": 92
     },
     {
-      "id": "-rs-crna-hronika-10078334-bivsi-policajac-uhapsen-zbog-droge",
-      "title": "MUNJEVITA AKCIJA UKP U BEOGRADU, UHAPŠEN BIVŠI POLICAJAC: Suspendovan iz službe zbog krađe puške iz stanice u Zemunu, a sad priveden zbog dilovanja",
-      "url": "https://www.kurir.rs/crna-hronika/10078334/bivsi-policajac-uhapsen-zbog-droge",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T06:05:02+00:00",
-      "time": "06:05",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "38-u-zvecanu-uhapsen-srbin-zbog-sumnje-za-napad-na-kfor-vest",
       "title": "U Zvečanu uhapšen Srbin zbog napada na KFOR i tzv. kosovsku policiju",
       "url": "https://www.euronews.rs/srbija/aktuelno/238138/u-zvecanu-uhapsen-srbin-zbog-sumnje-za-napad-na-kfor/vest",
@@ -377,34 +363,6 @@
       "breaking": false,
       "alert": true,
       "priority": 72
-    },
-    {
-      "id": "karac-65-zbog-izazivanja-pozara-kod-bovanskog-jezera-730h721",
-      "title": "BRUSILICOM SEKAO METAL, VARNICE ZAPALILE TRAVU Uhapšen muškarac (65) zbog izazivanja požara kod Bovanskog jezera: Plamen se proširio na šumu i objekte, na saslušanju sve PRIZNAO",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-65-zbog-izazivanja-pozara-kod-bovanskog-jezera/730h721",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T07:16:47+00:00",
-      "time": "07:16",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
-      "id": "du-sedam-osoba-uhapseno-tukli-se-palicama-i-kocevima-5k8j2p3",
-      "title": "TUKLI SE PALICAMA I KOČEVIMA! Masovna makljaža u Bosilegradu: IMA POVREĐENIH, sedam osoba uhapšeno",
-      "url": "https://www.blic.rs/vesti/hronika/masovna-tuca-u-bosilegradu-sedam-osoba-uhapseno-tukli-se-palicama-i-kocevima/5k8j2p3",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T07:26:42+00:00",
-      "time": "07:26",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "rmira-predmet-zbog-curenja-informacija-iz-istraga-u-javnost-",
@@ -533,6 +491,20 @@
       "priority": 30
     },
     {
+      "id": "ampova-administracija-krenula-u-obracun-sa-turizmom-porodaja",
+      "title": "Трампова администрација кренула у обрачун са „туризмом порођаја”",
+      "url": "https://www.politika.rs/scc/clanak/779062/trampova-administracija-krenula-u-obracun-sa-turizmom-porodaja",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T11:05:00+00:00",
+      "time": "11:05",
+      "source": "Politika",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "ti-politika-10078582-ministarstvo-o-smeni-djokica-i-bojovica",
       "title": "ĐOKIĆ I BOJOVIĆ SMENJENI ZBOG ZAPOSTAVLJANJA DUŽNOSTI! Ministarstvo: Osuđujemo svaku zloupotrebu redovnih poslova ovog resora u dnevno-političke svrhe",
       "url": "https://www.kurir.rs/vesti/politika/10078582/ministarstvo-o-smeni-djokica-i-bojovica",
@@ -545,6 +517,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "a-pozare-u-hrvatskoj-je-skretanje-paznje-sa-otpada-u-gospicu",
+      "title": "\"HRVATSKA AMATERSKA PRIČA ZA NAIVNE\" Savo Štrbac za Kurir o hapšenju Srba osumnjičenih za požare u Hrvatskoj: \"Skretanje pažnje s odlaganja OTROVNOG OTPADA\"",
+      "url": "https://www.kurir.rs/region/hrvatska/10078547/savo-strbac-za-kurir-hapsenje-srba-za-pozare-u-hrvatskoj-je-skretanje-paznje-sa-otpada-u-gospicu",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T11:04:57+00:00",
+      "time": "11:04",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "sti-drustvo-mup-veselin-milic-podobnost-testiranje-nacelnik-",
@@ -631,13 +617,13 @@
       "priority": 8
     },
     {
-      "id": "ww-rts-rs-vesti-svet-6020911-brazil-saobracajna-nesreca-html",
-      "title": "Преврнуо се туристички аутобус у Рио де Жанеиру, погинуло 10 људи",
-      "url": "https://www.rts.rs/vesti/svet/6020911/brazil-saobracajna-nesreca.html",
+      "id": "va-ludi-svet-10078632-turistkinja-plivala-u-fontani-di-trevi",
+      "title": "Turistkinja zaplivala u Fontani di Trevi: Policija odmah reagovala, evo kakva je kazna čeka (video)",
+      "url": "https://www.kurir.rs/zabava/ludi-svet/10078632/turistkinja-plivala-u-fontani-di-trevi",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T10:28:06+00:00",
-      "time": "10:28",
-      "source": "RTS",
+      "datetime": "2026-08-17T11:01:05+00:00",
+      "time": "11:01",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -645,13 +631,13 @@
       "priority": 4
     },
     {
-      "id": "-259634-policija-otkrila-detalje-smrti-hejden-panetijer-vest",
-      "title": "Policija se oglasila povodom smrti Hejden Panetijer: Evo šta ih je sačekalo na licu mesta",
-      "url": "https://www.b92.net/zivot/aktuelno/259634/policija-otkrila-detalje-smrti-hejden-panetijer/vest",
+      "id": "ww-rts-rs-vesti-svet-6020911-brazil-saobracajna-nesreca-html",
+      "title": "Преврнуо се туристички аутобус у Рио де Жанеиру, погинуло 10 људи",
+      "url": "https://www.rts.rs/vesti/svet/6020911/brazil-saobracajna-nesreca.html",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T09:58:00+00:00",
-      "time": "09:58",
-      "source": "B92",
+      "datetime": "2026-08-17T10:28:06+00:00",
+      "time": "10:28",
+      "source": "RTS",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -694,6 +680,20 @@
       "datetime": "2026-08-17T09:10:22+00:00",
       "time": "09:10",
       "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ww-danas-rs-svet-severna-irska-poginuli-tinejdzeri-autombil-",
+      "title": "Poginulo petoro tinejdžera, još četvoro ljudi u teškom stanju: Automobil išao u suprotnom smeru na autoputu u Republici Irskoj",
+      "url": "https://www.danas.rs/svet/severna-irska-poginuli-tinejdzeri-autombil/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T08:41:16+00:00",
+      "time": "08:41",
+      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
