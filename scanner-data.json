@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "lena-kacavenda-vozi-crveni-ferari-da-li-je-upecala-milionera",
-      "title": "MILENA KAČAVENDA UPECALA MILIONERA?! Uhvaćena kako vozi crvenog Ferarija: \"Nigde mafijaša, samo ON\" (FOTO)",
-      "url": "https://www.kurir.rs/stars/10078995/milena-kacavenda-vozi-crveni-ferari-da-li-je-upecala-milionera",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T15:12:19+00:00",
-      "time": "15:12",
-      "source": "Kurir",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 103
-    },
-    {
       "id": "78604-firma-iz-beograda-prevarila-strance-za-isporuku-oruzja",
       "title": "UHAPŠENOM BIZNISMENU IZ BEOGRADA KOJI JE TRGOVAO ORUŽJEM ZAPLENJEN I PRIVATNI AVION: Mijatović za Kurir otkrio kako je prevario stranca za 5 miliona evra",
       "url": "https://www.kurir.rs/crna-hronika/10078604/firma-iz-beograda-prevarila-strance-za-isporuku-oruzja",
@@ -69,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "-deda-osumnjicen-za-polno-zlostavljanje-deteta-u-zemunu-vest",
+      "title": "Muškarac (75) uhapšen zbog sumnje na polno zlostavljanje deteta u Zemunu: Otkriveno kako se branio pred tužiocem",
+      "url": "https://www.euronews.rs/srbija/aktuelno/238277/deda-osumnjicen-za-polno-zlostavljanje-deteta-u-zemunu/vest",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T15:48:00+00:00",
+      "time": "15:48",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "958-deda-osumnjicen-za-nedozvoljene-polne-radnje-nad-detetom",
@@ -197,18 +197,18 @@
       "priority": 70
     },
     {
-      "id": "-cetiri-osobe-za-izazivanje-pozara-na-10-lokacija-kod-zadra-",
-      "title": "Hrvatska policija: Osumnjičene četiri osobe za izazivanje požara na 10 lokacija kod Zadra",
-      "url": "https://n1info.rs/region/hrvatska-policija-osumnjicene-cetiri-osobe-za-izazivanje-pozara-na-10-lokacija-kod-zadra/",
+      "id": "ps-www-danas-rs-vesti-drustvo-vjt-pokusaj-ubistva-partnerke-",
+      "title": "VJT: Predložen pritvor osumnjičenom za pokušaj ubistva partnerke u Mladenovcu",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-pokusaj-ubistva-partnerke/",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T11:11:24+00:00",
-      "time": "11:11",
-      "source": "N1",
-      "category": "Полиција",
+      "datetime": "2026-08-17T15:37:51+00:00",
+      "time": "15:37",
+      "source": "Danas",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 70
+      "priority": 66
     },
     {
       "id": "danas-rs-vesti-drustvo-vjt-valjevo-postupak-protiv-28-osoba-",
@@ -337,20 +337,6 @@
       "priority": 66
     },
     {
-      "id": "3-hapsenje-pozar-na-bovanskom-jezeru-muskarac-knjazevac-html",
-      "title": "Хапшење због пожара на Бованском језеру, осумњичен мушкарац из Књажевца",
-      "url": "https://www.rts.rs/vesti/hronika/6021023/hapsenje-pozar-na-bovanskom-jezeru-muskarac-knjazevac.html",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T10:15:58+00:00",
-      "time": "10:15",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "informacije-predistrazne-radnje-istraga-predmet-nn-lice-html",
       "title": "ВЈТ: Месецима цуре информације из истрага, формираћемо предмет",
       "url": "https://www.rts.rs/vesti/hronika/6021121/vjt-cure-informacije-predistrazne-radnje-istraga-predmet-nn-lice.html",
@@ -463,6 +449,20 @@
       "priority": 28
     },
     {
+      "id": "sumnjicen-za-nedozvoljene-polne-radnje-nad-maloletnim-licem-",
+      "title": "Hapšenje u Zemunu: Muškarac (75) osumnjičen za nedozvoljene polne radnje nad maloletnim licem",
+      "url": "https://nova.rs/vesti/hronika/hapsenje-u-zemunu-muskarac-75-osumnjicen-za-nedozvoljene-polne-radnje-nad-maloletnim-licem/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T15:48:09+00:00",
+      "time": "15:48",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "a-pozare-u-hrvatskoj-je-skretanje-paznje-sa-otpada-u-gospicu",
       "title": "\"HRVATSKA AMATERSKA PRIČA ZA NAIVNE\" Savo Štrbac za Kurir o hapšenju Srba osumnjičenih za požare u Hrvatskoj: \"Skretanje pažnje s odlaganja OTROVNOG OTPADA\"",
       "url": "https://www.kurir.rs/region/hrvatska/10078547/savo-strbac-za-kurir-hapsenje-srba-za-pozare-u-hrvatskoj-je-skretanje-paznje-sa-otpada-u-gospicu",
@@ -475,6 +475,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "vde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu-html",
+      "title": "Министар правде осудио паљење аутомобила јавног тужиоца у Ваљеву",
+      "url": "https://www.rts.rs/vesti/politika/6021498/ministar-pravde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu.html",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T15:36:20+00:00",
+      "time": "15:36",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "azeci-sela-i-deleci-sta-kome-treba-siri-korupciju-i-kriminal",
@@ -575,13 +589,13 @@
       "priority": 4
     },
     {
-      "id": "ula-italijan-priveden-zbog-paljenja-vatre-na-plazi-lungomare",
-      "title": "Пула: Италијан приведен због паљења ватре на плажи Лунгомаре",
-      "url": "https://www.politika.rs/scc/clanak/779119/pula-italijan-priveden-zbog-paljenja-vatre-na-plazi-lungomare",
+      "id": "078971-Cetvoro-osumnjiceno-za-podmetanje-10-pozara-kod-Zadra",
+      "title": "OVO SU LJUDI OSUMNJIČENI ZA PODMETANJE ČAK 10 POŽARA KOD ZADRA! Policija otkrila nove detalje, sumnja se da su sve unapred isplanirali",
+      "url": "https://www.kurir.rs/region/hrvatska/10078971/Cetvoro-osumnjiceno-za-podmetanje-10-pozara-kod-Zadra",
       "date": "2026-08-17",
-      "datetime": "2026-08-17T14:20:00+00:00",
-      "time": "14:20",
-      "source": "Politika",
+      "datetime": "2026-08-17T14:54:15+00:00",
+      "time": "14:54",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "https-www-danas-rs-sport-nikola-kalinic-penzija-",
-      "title": "Nikola Kalinić otišao u penziju, ali ostaje u Zvezdi",
-      "url": "https://www.danas.rs/sport/nikola-kalinic-penzija/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T15:27:18+00:00",
-      "time": "15:27",
-      "source": "Danas",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
