@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 904424.0,
+    "lowest": 1920.0,
+    "difference": 902504.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103268925,
+    "file": "documents/103268925_Odluka-djubriva.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 631393.11,
+    "lowest": 1920.0,
+    "difference": 629473.11,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100001958,
+    "file": "documents/100001958_Odluka-osiguranje_imovine.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 21882376.67,
     "lowest": 8202.0,
     "difference": 21874174.67,
@@ -75,27 +97,5 @@
     "rejection_reasons": [],
     "id": 114983968,
     "file": "documents/114983968_Odluka o dodeli ugovora 0016-815-34-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 69520000.0,
-    "lowest": 1113.0,
-    "difference": 69518887.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100629352,
-    "file": "documents/100629352_Odluka o dodeli ugovora 0016-815-34-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 69520000.0,
-    "lowest": 1113.0,
-    "difference": 69518887.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106156606,
-    "file": "documents/106156606_Odluka o dodeli ugovora 0016-815-34-2026.pdf"
   }
 ]
