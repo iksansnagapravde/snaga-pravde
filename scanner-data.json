@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "-10079133-Ruska-raketa-usla-u-Moldaviju-odjeknula-eksplozija",
+      "title": "RUSKA RAKETA \"BANDEROL\" ULETELA U MOLDAVIJU Hitno zatvoren vazdušni prostor, policija zatekla HOROR U POLJU KUKURUZA!",
+      "url": "https://www.kurir.rs/planeta/10079133/Ruska-raketa-usla-u-Moldaviju-odjeknula-eksplozija",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T18:48:47+00:00",
+      "time": "18:48",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
       "id": "lena-kacavenda-vozi-crveni-ferari-da-li-je-upecala-milionera",
       "title": "MILENA KAČAVENDA UPECALA MILIONERA?! Uhvaćena kako vozi crvenog Ferarija: \"Nigde mafijaša, samo ON\" (FOTO)",
       "url": "https://www.kurir.rs/stars/10078995/milena-kacavenda-vozi-crveni-ferari-da-li-je-upecala-milionera",
@@ -119,20 +133,6 @@
       "date": "2026-08-17",
       "datetime": "2026-08-17T14:44:10+00:00",
       "time": "14:44",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "a-10078795-uhapseni-srbi-pljacke-na-plazama-sutomora-i-canja",
-      "title": "UHAPŠENI OPASNI LOPOVI SA JADRANA: Srbi krali po Čanju i Sutomoru sve što su stigli - ljudi ostali bez ičega!",
-      "url": "https://www.kurir.rs/crna-hronika/10078795/uhapseni-srbi-pljacke-na-plazama-sutomora-i-canja",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T12:44:40+00:00",
-      "time": "12:44",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -279,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 72
+    },
+    {
+      "id": "oljskoj-nezvani-gost-preminuo-posle-tuce-na-proslavi-g39g1ce",
+      "title": "KRVAVA SVADBA Muškarac upao nepozvan na proslavu, pa UMRO POSLE BRUTALNE TUČE: Uhapšeno 7 gostiju",
+      "url": "https://www.blic.rs/vesti/svet/tragedija-na-svadbi-u-poljskoj-nezvani-gost-preminuo-posle-tuce-na-proslavi/g39g1ce",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T19:25:34+00:00",
+      "time": "19:25",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "-politika-na-jarinju-uhapsen-zbog-falsifikovanih-dokumenata-",
@@ -533,6 +547,20 @@
       "priority": 26
     },
     {
+      "id": "oji-je-javno-ustao-protiv-vucicevih-pritisaka-na-pravosudje-",
+      "title": "Vujičić - jedini tužilac iz Valjeva koji je javno ustao protiv Vučićevih pritisaka na pravosuđe",
+      "url": "https://n1info.rs/vesti/vujicic-jedini-tuzilac-iz-valjeva-koji-je-javno-ustao-protiv-vucicevih-pritisaka-na-pravosudje/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T19:16:37+00:00",
+      "time": "19:16",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "-zatrazilo-povlacenje-iz-procedure-vise-zakona-o-pravosudju-",
       "title": "Društvo sudija zatražilo povlačenje iz procedure više zakona o pravosuđu",
       "url": "https://n1info.rs/vesti/drustvo-sudija-zatrazilo-povlacenje-iz-procedure-vise-zakona-o-pravosudju/",
@@ -573,6 +601,20 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "ne-sa-gubitkom-plaze-kojom-su-upravljale-u-dobrotvorne-svrhe",
+      "title": "Италијанске монахиње суочене са губитком плаже којом су управљале у добротворне сврхе",
+      "url": "https://www.politika.rs/scc/clanak/779177/italijanske-monahinje-suocene-sa-gubitkom-plaze-kojom-su-upravljale-u-dobrotvorne-svrhe",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T19:13:00+00:00",
+      "time": "19:13",
+      "source": "Politika",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "zatvorske-kazne-za-one-koji-razgovaraju-sa-stranim-medijima-",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "tska-10079035-Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
-      "title": "BOSONOGO DETE OD TRI I PO GODINE LUTALO ULICOM U PLAKALO Roditelji 40 minuta nisu otvarali vrata, a kada je policija ušla, zatekla je JEZIV PRIZOR",
-      "url": "https://www.kurir.rs/region/hrvatska/10079035/Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T16:10:10+00:00",
-      "time": "16:10",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
-      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
-      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
-      "date": "2026-08-16",
-      "datetime": "2026-08-16T09:20:51+00:00",
-      "time": "09:20",
-      "source": "RSE Balkan",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-i-ruzic-okrenuli-curak-idu-protiv-vucica-i-naprednjaka-vest",
-      "title": "SPS i Ružić okrenuli ćurak – idu protiv Vučića i naprednjaka?",
-      "url": "https://www.b92.net/info/politika/259726/sps-i-ruzic-okrenuli-curak-idu-protiv-vucica-i-naprednjaka/vest",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T19:07:00+00:00",
-      "time": "19:07",
-      "source": "B92",
-      "category": "Социјална права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
