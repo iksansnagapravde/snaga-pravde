@@ -85,20 +85,6 @@
       "priority": 92
     },
     {
-      "id": "zara-kod-bovanskog-jezera-vatra-zahvatila-tri-vikendice-vest",
-      "title": "Uhapšen zbog požara kod Bovanskog jezera: Vatra zahvatila tri vikendice",
-      "url": "https://www.b92.net/lokal/nis/hronika/259770/uhapsen-zbog-pozara-kod-bovanskog-jezera-vatra-zahvatila-tri-vikendice/vest",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T15:56:00+00:00",
-      "time": "15:56",
-      "source": "B92",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-deda-osumnjicen-za-polno-zlostavljanje-deteta-u-zemunu-vest",
       "title": "Muškarac (75) uhapšen zbog sumnje na polno zlostavljanje deteta u Zemunu: Otkriveno kako se branio pred tužiocem",
       "url": "https://www.euronews.rs/srbija/aktuelno/238277/deda-osumnjicen-za-polno-zlostavljanje-deteta-u-zemunu/vest",
@@ -195,6 +181,20 @@
       "breaking": false,
       "alert": true,
       "priority": 88
+    },
+    {
+      "id": "https-www-danas-rs-sport-nemanja-vidic-iskaz-tok-",
+      "title": "Nemanja Vidić dao iskaz u Javnom tužilaštvu za organizovani kriminal",
+      "url": "https://www.danas.rs/sport/nemanja-vidic-iskaz-tok/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:55:12+00:00",
+      "time": "16:55",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
     },
     {
       "id": "nika-nemanja-vidic-dao-iskaz-u-jtok-u-povodom-skaj-prepiski-",
@@ -379,20 +379,6 @@
       "priority": 66
     },
     {
-      "id": "ca-protiv-tri-osobe-zbog-trgovine-kokainom-i-drzanja-oruzja-",
-      "title": "VJT: Podignuta optužnica protiv tri osobe zbog trgovine kokainom i držanja oružja",
-      "url": "https://n1info.rs/vesti/vjt-podignuta-optuznica-protiv-tri-osobe-zbog-trgovine-kokainom-i-drzanja-oruzja/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T11:40:10+00:00",
-      "time": "11:40",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -519,6 +505,20 @@
       "priority": 26
     },
     {
+      "id": "-rs-vesti-drustvo-vujic-osudio-paljenje-automobila-vujicica-",
+      "title": "Ministar Vujić osudio paljenje automobila javnog tužioca u Valjevu",
+      "url": "https://www.danas.rs/vesti/drustvo/vujic-osudio-paljenje-automobila-vujicica/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:46:15+00:00",
+      "time": "16:46",
+      "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "vde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu-html",
       "title": "Министар правде осудио паљење аутомобила јавног тужиоца у Ваљеву",
       "url": "https://www.rts.rs/vesti/politika/6021498/ministar-pravde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu.html",
@@ -618,26 +618,12 @@
     },
     {
       "id": "tska-10079035-Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
-      "title": "BOSONOGO DETE OD TRI I PO GODINE LUDALO ULICOM U PLAKALO Roditelji 40 minuta nisu otvarali vrata, a kada je policija ušla, zatekla je JEZIV PRIZOR",
+      "title": "BOSONOGO DETE OD TRI I PO GODINE LUTALO ULICOM U PLAKALO Roditelji 40 minuta nisu otvarali vrata, a kada je policija ušla, zatekla je JEZIV PRIZOR",
       "url": "https://www.kurir.rs/region/hrvatska/10079035/Dete-3-samo-u-pelenama-lutalo-ulicom-u-Zagrebu",
       "date": "2026-08-17",
       "datetime": "2026-08-17T16:10:10+00:00",
       "time": "16:10",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "s-scc-clanak-779133-pet-tinejdzera-poginulo-u-irskoj-na-putu",
-      "title": "Пет тинејџера погинуло у Ирској на путу",
-      "url": "https://www.politika.rs/scc/clanak/779133/pet-tinejdzera-poginulo-u-irskoj-na-putu",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T15:03:00+00:00",
-      "time": "15:03",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -687,18 +673,32 @@
       "priority": 4
     },
     {
-      "id": "svet-region-policija-tri-hrvatska-drzavljanina-i-poljakinja-",
-      "title": "Policija objavila: Tri hrvatska državljanina i Poljakinja zapalili požar na 10 mesta, imali i poluautomatsko oružje",
-      "url": "https://www.danas.rs/svet/region/policija-tri-hrvatska-drzavljanina-i-poljakinja/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T12:01:55+00:00",
-      "time": "12:01",
-      "source": "Danas",
+      "id": "www-slobodnaevropa-org-a-most-srbi-region-svet-33830992-html",
+      "title": "Da li je Vučić 'poglavar' svih Srba u regionu i svetu?",
+      "url": "https://www.slobodnaevropa.org/a/most-srbi-region-svet/33830992.html",
+      "date": "2026-08-16",
+      "datetime": "2026-08-16T09:20:51+00:00",
+      "time": "09:20",
+      "source": "RSE Balkan",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "macka-izmene-zakona-o-zastiti-politicara-od-uvreda-i-klevete",
+      "title": "Немачка: измене закона о заштити политичара од увреда и клевете",
+      "url": "https://www.politika.rs/scc/clanak/779156/nemacka-izmene-zakona-o-zastiti-politicara-od-uvreda-i-klevete",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:59:00+00:00",
+      "time": "16:59",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
