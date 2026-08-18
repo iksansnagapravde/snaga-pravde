@@ -29,20 +29,6 @@
       "priority": 104
     },
     {
-      "id": "na-adresu-nato-ovo-je-nova-pretnja-za-srbe-na-kosovu-7e9zrxx",
-      "title": "STIŽE HITNO PISMO NA ADRESU NATO SAVEZA! Kurti na silu pokušava ono što mu nije uspelo pre dve godine, ovo je NOVA PRETNJA ZA SRBE na Kosovu: \"Nervoza je ušla u njihove redove\"",
-      "url": "https://www.blic.rs/vesti/politika/pismo-hitno-stize-na-adresu-nato-ovo-je-nova-pretnja-za-srbe-na-kosovu/7e9zrxx",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T16:50:59+00:00",
-      "time": "16:50",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "bog-opasnog-otpada-nezakonito-odlozenog-na-podrucju-gospica-",
       "title": "Vanredna sednica Hrvatskog sabora zbog opasnog otpada nezakonito odloženog na području Gospića",
       "url": "https://www.danas.rs/svet/region/vanredna-sednica-hrvatskog-sabora-zbog-opasnog-otpada-nezakonito-odlozenog-na-podrucju-gospica/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-18T18:25:26+00:00",
       "time": "18:25",
       "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "diji-grupa-mladica-napala-dvojicu-drzavljana-srbije-na-pagu-",
+      "title": "Hrvatski mediji: Grupa mladića napala dvojicu državljana Srbije na Pagu",
+      "url": "https://n1info.rs/region/hrvatski-mediji-grupa-mladica-napala-dvojicu-drzavljana-srbije-na-pagu/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T17:54:01+00:00",
+      "time": "17:54",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
