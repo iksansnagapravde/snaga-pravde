@@ -15,6 +15,20 @@
       "priority": 100
     },
     {
+      "id": "-238451-zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici-vest",
+      "title": "Nasilje u porodici u Zemunu: Pijan udarao suprugu, pretio joj smrću i uzeo sekiru",
+      "url": "https://www.euronews.rs/srbija/aktuelno/238451/zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici/vest",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:27:00+00:00",
+      "time": "15:27",
+      "source": "Euronews Serbia",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 94
+    },
+    {
       "id": "w-rts-rs-vesti-politika-6022093-pritvor-uhapseni-zvecan-html",
       "title": "Притвор мушкарцу из Звечана, осумњиченом за напад на припаднике Кфора и полиције пре три године",
       "url": "https://www.rts.rs/vesti/politika/6022093/pritvor-uhapseni-zvecan-.html",
@@ -169,6 +183,20 @@
       "priority": 84
     },
     {
+      "id": "osumnjiceni-za-napad-na-reditelja-stevana-filipovica-1zwgp36",
+      "title": "Uhapšen i drugi osumnjičeni za napad na reditelja Stevana Filipovića, policija traga za trećim licem",
+      "url": "https://www.blic.rs/vesti/hronika/uhapsen-i-drugi-osumnjiceni-za-napad-na-reditelja-stevana-filipovica/1zwgp36",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:46:29+00:00",
+      "time": "15:46",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 76
+    },
+    {
       "id": "en-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru-vest",
       "title": "Uhapšen osumnjičeni za izazivanje požara na Bovanskom jezeru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238201/uhapsen-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru/vest",
@@ -218,34 +246,6 @@
       "datetime": "2026-08-18T11:56:58+00:00",
       "time": "11:56",
       "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "zi-se-u-bolnici-mup-otkrio-moguci-motiv-otmice-u-novom-sadu-",
-      "title": "Novosađanin kog su ugurali u \"G klasu\" ima teške telesne povrede i nalazi se u bolnici: MUP otkrio mogući motiv otmice u Novom Sadu",
-      "url": "https://nova.rs/vesti/hronika/novosadjanin-kog-su-ugurali-u-g-klasu-ima-teske-telesne-povrede-i-nalazi-se-u-bolnici-mup-otkrio-moguci-motiv-otmice-u-novom-sadu/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:46:32+00:00",
-      "time": "11:46",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "anje-pozara-kod-zadra-medju-uhapsenima-i-srpski-drzavljanin-",
-      "title": "Namerno izazivanje požara kod Zadra: Među uhapšenima i srpski državljanin",
-      "url": "https://vreme.com/drustvo/namerno-izazivanje-pozara-kod-zadra-medju-uhapsenima-i-srpski-drzavljanin/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T06:43:59+00:00",
-      "time": "06:43",
-      "source": "Vreme",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -379,34 +379,6 @@
       "priority": 66
     },
     {
-      "id": "https-n1info-rs-vesti-pozar-smederevo-smrt-tuzilastvo-",
-      "title": "Tužilaštvo ispituje smrt muškarca koji je preminuo tokom požara u Smederevu",
-      "url": "https://n1info.rs/vesti/pozar-smederevo-smrt-tuzilastvo/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T10:52:00+00:00",
-      "time": "10:52",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "tps-n1info-rs-vesti-kfor-sudjenje-kosovo-incidenti-maj-2023-",
-      "title": "Pred sud izveden osumnjičeni za napad na pripadnike KFOR-a na severu Kosova u maju 2023. godine",
-      "url": "https://n1info.rs/vesti/kfor-sudjenje-kosovo--incidenti-maj-2023/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T10:45:59+00:00",
-      "time": "10:45",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -519,20 +491,6 @@
       "priority": 30
     },
     {
-      "id": "di-smena-dejan-damjanovic-agencija-za-sprecavanje-korupcije-",
-      "title": "BIRODI traži od Skupštine Srbije da razreši direktora Agencije za sprečavanje korupcije",
-      "url": "https://n1info.rs/vesti/birodi-smena-dejan-damjanovic-agencija-za-sprecavanje-korupcije/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:06:10+00:00",
-      "time": "11:06",
-      "source": "N1",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "ja-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica-",
       "title": "Agencija za sprečavanje korupcije proverava imovinu Gorana Vesića",
       "url": "https://www.krik.rs/agencija-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica/",
@@ -561,6 +519,20 @@
       "priority": 28
     },
     {
+      "id": "om-krvave-g-klase-pretucenog-muskarca-gurnuli-u-auto-wqbcx67",
+      "title": "MISTERIOZNA ŽENA ZA VOLANOM  Pretučenog i krvavog muškarca ugurali u auto, onda je ona POČELA DA JURI Novim Sadom: Usledila je drama, pa filmsko hapšenje (FOTO, VIDEO)",
+      "url": "https://www.blic.rs/vesti/hronika/misteriozna-zena-za-volanom-krvave-g-klase-pretucenog-muskarca-gurnuli-u-auto/wqbcx67",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:26:13+00:00",
+      "time": "15:26",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "ka-238371-strucnjaci-o-progonu-kako-hrvatska-hapsi-srbe-vest",
       "title": "\"Žele da Srbi ne dolaze\": Svedočenja o hapšenjima zbog pesama i objava na društvenim mrežama u Hrvatskoj",
       "url": "https://www.euronews.rs/srbija/politika/238371/strucnjaci-o-progonu-kako-hrvatska-hapsi-srbe/vest",
@@ -587,6 +559,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "ilanovic-srce-vlast-zeli-monopol-za-izbor-sudija-i-tuzilaca-",
+      "title": "Milanović (SRCE): Vlast želi monopol za izbor sudija i tužilaca",
+      "url": "https://n1info.rs/vesti/milanovic-srce-vlast-zeli-monopol-za-izbor-sudija-i-tuzilaca/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:45:25+00:00",
+      "time": "15:45",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "o-slusanje-o-predlogu-zakona-o-pravosudnoj-akademiji-52b502q",
@@ -659,20 +645,6 @@
       "priority": 24
     },
     {
-      "id": "ogradsku-arenu-u-koncesiju-iz-arene-kazu-da-nisu-na-prodaju-",
-      "title": "N1: Vučić bi da da Beogradsku arenu u koncesiju, iz Arene kažu da nisu na prodaju",
-      "url": "https://www.danas.rs/vesti/ekonomija/vucic-bi-da-da-beogradsku-arenu-u-koncesiju-iz-arene-kazu-da-nisu-na-prodaju/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:27:39+00:00",
-      "time": "11:27",
-      "source": "Danas",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "pa-org-a-ibar-most-evropska-komisija-mitrovica-33832841-html",
+      "title": "Evropska komisija o otvaranju mosta preko Ibra: Očekujemo konsultacije i koordinaciju",
+      "url": "https://www.slobodnaevropa.org/a/ibar-most-evropska-komisija-mitrovica/33832841.html",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:08:32+00:00",
+      "time": "12:08",
+      "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
+      "id": "pokazala-luksuznu-jahtu-melininog-muza-od-10-miliona-2enzq9j",
+      "title": "(FOTO) ĐINA DŽINOVIĆ SE BAŠKARI NA JAHTI BOGATOG BIZNISMENA I MAJKE MELINE Objavila prve kadrove unutrašnjosti plovila od 10.000.000 evra",
+      "url": "https://www.blic.rs/zabava/djina-dzinovic-pokazala-luksuznu-jahtu-melininog-muza-od-10-miliona/2enzq9j",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:40:55+00:00",
+      "time": "12:40",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
