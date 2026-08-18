@@ -1,79 +1,79 @@
 [
   {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 184800.0,
-    "lowest": 7202.0,
-    "difference": 177598.0,
+    "winner": null,
+    "accepted": 1500000.0,
+    "lowest": 1866.0,
+    "difference": 1498134.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 109071832,
-    "file": "documents/109071832_ZC Aleksinac -Odluka o dodeli ugovora - Mitomicin 20 mg.pdf"
+    "id": 101107896,
+    "file": "documents/101107896_Odluka o dodeli ugovora JN 1119-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 261956172.14,
-    "lowest": 1202.0,
-    "difference": 261954970.14,
+    "accepted": 127980.6,
+    "lowest": 1363.0,
+    "difference": 126617.6,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102502760,
-    "file": "documents/102502760_Odluka o dodeli ugovora JANA 2536 2025.pdf"
+    "id": 103925945,
+    "file": "documents/103925945_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 42360000.0,
-    "lowest": 3202.0,
-    "difference": 42356798.0,
+    "accepted": 2700000.0,
+    "lowest": 4202.0,
+    "difference": 2695798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101684773,
-    "file": "documents/101684773_Odluka o dodeli ugovora - program za finansije NTE 2026.pdf"
+    "id": 100222817,
+    "file": "documents/100222817_1042853-1-3100-0333-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 8202.0,
-    "lowest": 1212.0,
-    "difference": 6990.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101648537,
-    "file": "documents/101648537_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 150300.0,
+    "accepted": 2238000.0,
     "lowest": 8202.0,
-    "difference": 142098.0,
+    "difference": 2229798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100548995,
-    "file": "documents/100548995_odluka VR-JN-110-25-5-26-87.pdf"
+    "id": 105662486,
+    "file": "documents/105662486_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 333000.0,
-    "lowest": 1109.0,
-    "difference": 331891.0,
+    "accepted": 803202.0,
+    "lowest": 4184.0,
+    "difference": 799018.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101822498,
-    "file": "documents/101822498_Odluka o dodeli 1105 2026.pdf"
+    "id": 113574568,
+    "file": "documents/113574568_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 5000000.0,
-    "lowest": 8202.0,
-    "difference": 4991798.0,
+    "accepted": 803202.0,
+    "lowest": 4184.0,
+    "difference": 799018.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100495556,
-    "file": "documents/100495556_Odluka o dodeli ugovora.docx"
+    "id": 113593097,
+    "file": "documents/113593097_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 803202.0,
+    "lowest": 4184.0,
+    "difference": 799018.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112460082,
+    "file": "documents/112460082_Odluka o dodeli.docx"
   }
 ]
