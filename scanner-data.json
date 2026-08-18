@@ -547,20 +547,6 @@
       "priority": 26
     },
     {
-      "id": "ndijske-snage-uhapsile-oko-200-pripadnika-teroristicke-grupe",
-      "title": "Индијске снаге ухапсиле око 200 припадника терористичке групе",
-      "url": "https://www.politika.rs/scc/clanak/779184/indijske-snage-uhapsile-oko-200-pripadnika-teroristicke-grupe",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T19:52:00+00:00",
-      "time": "19:52",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "raga-u-crnoj-gori-i-sve-vise-sumnji-da-pozari-nisu-slucajni-",
       "title": "Ko pali Balkan? Hapšenja kod Zadra, potraga u Crnoj Gori i sve više sumnji da požari nisu slučajni",
       "url": "https://nova.rs/vesti/svet/ko-pali-balkan-hapsenja-kod-zadra-potraga-u-crnoj-gori-i-sve-vise-sumnji-da-pozari-nisu-slucajni/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-17T18:36:38+00:00",
       "time": "18:36",
       "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
+      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
+      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
+      "date": "2026-07-30",
+      "datetime": "2026-07-30T15:13:36+00:00",
+      "time": "15:13",
+      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
