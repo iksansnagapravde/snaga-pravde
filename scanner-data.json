@@ -393,20 +393,6 @@
       "priority": 66
     },
     {
-      "id": "-ojt-valjevo-tuzilastvo-vujicic-tuzilac-paljenje-vozila-html",
-      "title": "ВЈТ и ОЈТ у Ваљеву: Подршка тужиоцу Вујичићу, недопустиво паљење возила",
-      "url": "https://www.rts.rs/vesti/drustvo/6021311/vjt-ojt-valjevo-tuzilastvo-vujicic-tuzilac-paljenje-vozila.html",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T14:48:25+00:00",
-      "time": "14:48",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -589,20 +575,6 @@
       "priority": 26
     },
     {
-      "id": "sumnjicen-za-nedozvoljene-polne-radnje-nad-maloletnim-licem-",
-      "title": "Hapšenje u Zemunu: Muškarac (75) osumnjičen za nedozvoljene polne radnje nad maloletnim licem",
-      "url": "https://nova.rs/vesti/hronika/hapsenje-u-zemunu-muskarac-75-osumnjicen-za-nedozvoljene-polne-radnje-nad-maloletnim-licem/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T15:48:09+00:00",
-      "time": "15:48",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "valo-vladu-da-povuce-izmene-pravosudnih-zakona-iz-procedure-",
       "title": "Društvo sudija pozvalo vladu da povuče izmene pravosudnih zakona iz procedure",
       "url": "https://www.danas.rs/vesti/drustvo/drustvo-sudija-pozvalo-vladu-da-povuce-izmene-pravosudnih-zakona-iz-procedure/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
+      "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
+      "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T10:16:52+00:00",
+      "time": "10:16",
+      "source": "CINS",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
+    },
+    {
+      "id": "stra-ovako-ministarstvo-milice-zavetnice-deli-drzavni-novac-",
+      "title": "Milion evra iz budžeta za udruženja SNS poslanika i oca ministra: Ovako ministarstvo Milice Zavetnice deli državni novac",
+      "url": "https://nova.rs/vesti/politika/milion-evra-iz-budzeta-za-udruzenja-sns-poslanika-i-oca-ministra-ovako-ministarstvo-milice-zavetnice-deli-drzavni-novac/",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T16:15:12+00:00",
+      "time": "16:15",
+      "source": "Nova",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
