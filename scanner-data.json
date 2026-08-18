@@ -239,20 +239,6 @@
       "priority": 84
     },
     {
-      "id": "osumnjiceni-za-napad-na-reditelja-stevana-filipovica-1zwgp36",
-      "title": "Uhapšen i drugi osumnjičeni za napad na reditelja Stevana Filipovića, policija traga za trećim licem",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-i-drugi-osumnjiceni-za-napad-na-reditelja-stevana-filipovica/1zwgp36",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T15:46:29+00:00",
-      "time": "15:46",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
-    },
-    {
       "id": "en-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru-vest",
       "title": "Uhapšen osumnjičeni za izazivanje požara na Bovanskom jezeru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238201/uhapsen-osumnjiceni-za-izazivanje-pozara-na-bovanskom-jezeru/vest",
@@ -265,20 +251,6 @@
       "breaking": false,
       "alert": true,
       "priority": 72
-    },
-    {
-      "id": "sti-drustvo-osumnjiceni-priznao-napad-na-stevana-filipovica-",
-      "title": "Tužilaštvo: Još jedan osumnjičeni za napad na Stevana Filipovića priznao delo",
-      "url": "https://www.danas.rs/vesti/drustvo/osumnjiceni-priznao-napad-na-stevana-filipovica/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T16:08:35+00:00",
-      "time": "16:08",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "i-hronika-6021890-hapsenje-otmica-novi-sad-petrovaradin-html",
@@ -695,6 +667,34 @@
       "time": "19:55",
       "source": "N1",
       "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ko-ne-smete-jesti-za-veceru-ako-imate-visok-pritisak-h9wbdgv",
+      "title": "Crna lista: Šta nikako ne smete jesti za večeru ako imate visok pritisak",
+      "url": "https://www.blic.rs/zdravlje/zdravstvena-stanja/crna-lista-sta-nikako-ne-smete-jesti-za-veceru-ako-imate-visok-pritisak/h9wbdgv",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:30:00+00:00",
+      "time": "16:30",
+      "source": "Blic",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ar-nova-rs-global-republika-srpska-200-miliona-evra-kredita-",
+      "title": "Pet miliona dnevno, stižu izbori",
+      "url": "https://radar.nova.rs/global/republika-srpska-200-miliona-evra-kredita/",
+      "date": "2026-08-10",
+      "datetime": "2026-08-10T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
