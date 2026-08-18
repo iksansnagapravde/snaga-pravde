@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "2-net-lokal-novi-sad-drustvo-259989-otmica-u-novom-sadu-vest",
-      "title": "Otmica u Novom Sadu, osumnjičene dve osobe; Policija hitno reagovala VIDEO",
-      "url": "https://www.b92.net/lokal/novi-sad/drustvo/259989/otmica-u-novom-sadu/vest",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:11:00+00:00",
-      "time": "11:11",
-      "source": "B92",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "snog-otpada-milanovic-trazi-hitnu-sednicu-parlamenta-pr7e1tz",
       "title": "Uzbuna u Hrvatskoj: Milanović traži VANREDNU SEDNICU PARLAMENTA, kreće da teče rok od osam dana! Evo šta je razlog HITNOG ZAHTEVA",
       "url": "https://www.blic.rs/vesti/svet/uzbuna-u-hrvatskoj-zbog-opasnog-otpada-milanovic-trazi-hitnu-sednicu-parlamenta/pr7e1tz",
@@ -43,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "ene-dve-osobe-osumnjicene-za-pokusaj-otmice-na-petrovaradinu",
-      "title": "Ухапшене две особе осумњичене за покушај отмице на Петроварадину",
-      "url": "https://www.politika.rs/scc/clanak/779297/uhapsene-dve-osobe-osumnjicene-za-pokusaj-otmice-na-petrovaradinu",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:33:00+00:00",
-      "time": "11:33",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "8-otmica-u-novom-sadu-pretucen-muskarac-i-uguran-u-auto-vest",
       "title": "Brutalna otmica u Novom Sadu: Pretukli ga zbog navodnog duga, strpali u auto, pa bežali ka Mišeluku",
       "url": "https://www.euronews.rs/srbija/aktuelno/238398/otmica-u-novom-sadu-pretucen-muskarac-i-uguran-u-auto/vest",
@@ -64,20 +36,6 @@
       "datetime": "2026-08-18T11:23:00+00:00",
       "time": "11:23",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "uskarca-u-novom-sadu-u-svemu-ucestvovala-i-jedna-zena-video-",
-      "title": "\"Ne mogu da uđem u kola, ubićeš me!\" Pogledajte snimak otmice muškarca u Novom Sadu, u svemu učestvovala i jedna žena VIDEO",
-      "url": "https://nova.rs/vesti/hronika/ne-mogu-da-udjem-u-kola-ubices-me-pogledajte-snimak-otmice-muskarca-u-novom-sadu-u-svemu-ucestvovala-i-jedna-zena-video/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T09:04:07+00:00",
-      "time": "09:04",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -125,20 +83,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "ma-zbog-pozara-kod-zadra-palili-su-i-hrvatska-i-srpska-sela-",
-      "title": "Pupovac o uhapšenima zbog požara kod Zadra: „Palili su i hrvatska i srpska sela“",
-      "url": "https://nova.rs/vesti/svet/pupovac-o-uhapsenima-zbog-pozara-kod-zadra-palili-su-i-hrvatska-i-srpska-sela/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T09:10:44+00:00",
-      "time": "09:10",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "eme-com-drustvo-konjuh-marihuana-istraga-severna-makedonija-",
@@ -239,6 +183,20 @@
       "priority": 72
     },
     {
+      "id": "5-novi-sad-uhapsene-dve-osobe-osumnjicene-za-otmicu-muskarca",
+      "title": "Novi Sad: Uhapšene dve osobe osumnjičene za otmicu muškarca",
+      "url": "https://beta.rs/content/250375-novi-sad-uhapsene-dve-osobe-osumnjicene-za-otmicu-muskarca",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:30:09+00:00",
+      "time": "12:30",
+      "source": "Beta",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "i-hronika-6021890-hapsenje-otmica-novi-sad-petrovaradin-html",
       "title": "Ухапшене две особе осумњичене за покушај отмице у Петроварадину",
       "url": "https://www.rts.rs/vesti/hronika/6021890/hapsenje-otmica-novi-sad-petrovaradin.html",
@@ -295,18 +253,32 @@
       "priority": 70
     },
     {
-      "id": "ce-od-50-miliona-evra-za-izgradnju-solarne-i-vetroelektrane-",
-      "title": "Kodar Energomontaža emituje obveznice od 50 miliona evra za izgradnju solarne i vetroelektrane",
-      "url": "https://www.danas.rs/vesti/ekonomija/kodar-energomontaza-emituje-obveznice-od-50-miliona-evra-za-izgradnju-solarne-i-vetroelektrane/",
+      "id": "ar-u-srbiji-koje-su-kazne-i-kako-se-dokazuje-krivica-s3qd0j5",
+      "title": "OPUŠAK, ROŠTILJ, JEDAN TRENUTAK NEPAŽNJE, A ONDA I DO 8 GODINA ZATVORA! Evo šta čeka one koji izazovu požar u Srbiji (VIDEO)",
+      "url": "https://www.blic.rs/vesti/hronika/evo-sta-ceka-one-koji-izazovu-pozar-u-srbiji-koje-su-kazne-i-kako-se-dokazuje-krivica/s3qd0j5",
       "date": "2026-08-18",
-      "datetime": "2026-08-18T09:17:18+00:00",
-      "time": "09:17",
-      "source": "Danas",
-      "category": "Извршења",
+      "datetime": "2026-08-18T12:52:45+00:00",
+      "time": "12:52",
+      "source": "Blic",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 68
+      "priority": 66
+    },
+    {
+      "id": "onstrukcija-zlocina-u-novom-sadu-detalji-filmske-otmice-vest",
+      "title": "Kompletna rekonstrukcija zločina u Novom Sadu: Detalji filmske otmice",
+      "url": "https://www.b92.net/lokal/novi-sad/hronika/260026/kompletna-rekonstrukcija-zlocina-u-novom-sadu-detalji-filmske-otmice/vest",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:35:00+00:00",
+      "time": "12:35",
+      "source": "B92",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "oglasilo-se-tuzilastvo-o-saobracajnoj-nesreci-kod-aleksinca-",
@@ -449,6 +421,20 @@
       "priority": 60
     },
     {
+      "id": "-obavljao-dve-javne-funkcije-i-primao-prihode-po-oba-osnova-",
+      "title": "BIRODI: Direktor Agencije za sprečavanje korupcije 22 meseca istovremeno obavljao dve javne funkcije i primao prihode po oba osnova",
+      "url": "https://nova.rs/vesti/politika/birodi-razresiti-direktora-agencije-za-sprecavanje-korupcije-22-meseca-istovremeno-obavljao-dve-javne-funkcije-i-primao-prihode-po-oba-osnova/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:26:18+00:00",
+      "time": "12:26",
+      "source": "Nova",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "orupcije-zato-sto-je-skoro-dve-godine-obavljao-dve-funkcije-",
       "title": "BIRODI traži razrešenje direktora Agencije za sprečavanje korupcije, zato što je skoro dve godine obavljao dve funkcije",
       "url": "https://www.danas.rs/vesti/ekonomija/birodi-trazi-razresenje-direktora-agencije-za-sprecavanje-korupcije-zato-sto-je-skoro-dve-godine-obavljao-dve-funkcije/",
@@ -519,34 +505,6 @@
       "priority": 30
     },
     {
-      "id": "-od-24-sprovela-samo-tri-preporuke-za-sprecavanje-korupcije-",
-      "title": "GRECO: Srbija od 24 sprovela samo tri preporuke za sprečavanje korupcije",
-      "url": "https://www.danas.rs/vesti/drustvo/greco-srbija-od-24-sprovela-samo-tri-preporuke-za-sprecavanje-korupcije/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T09:45:05+00:00",
-      "time": "09:45",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "rbija-na-zadovoljavajuci-nacin-sprovela-tri-od-24-preporuke-",
-      "title": "GRECO izveštaj: Srbija na zadovoljavajući način sprovela tri od 24 preporuke",
-      "url": "https://n1info.rs/vesti/greco-izvestaj-srbija-na-zadovoljavajuci-nacin-sprovela-tri-od-24-preporuke/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T08:16:54+00:00",
-      "time": "08:16",
-      "source": "N1",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "edjunarodne-analize-pokazuju-vucicu-je-istekao-rok-trajanja-",
       "title": "Međunarodne analize pokazuju: Vučiću je istekao rok trajanja",
       "url": "https://www.ktv.rs/2026/08/17/medjunarodne-analize-pokazuju-vucicu-je-istekao-rok-trajanja/",
@@ -589,6 +547,20 @@
       "priority": 28
     },
     {
+      "id": "ka-238371-strucnjaci-o-progonu-kako-hrvatska-hapsi-srbe-vest",
+      "title": "\"Žele da Srbi ne dolaze\": Svedočenja o hapšenjima zbog pesama i objava na društvenim mrežama u Hrvatskoj",
+      "url": "https://www.euronews.rs/srbija/politika/238371/strucnjaci-o-progonu-kako-hrvatska-hapsi-srbe/vest",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T13:04:00+00:00",
+      "time": "13:04",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "287-uhapsen-zbog-izazivanja-pozara-kod-bovanskog-jezera-vest",
       "title": "Hapšenje zbog požara kod Bovanskog jezera: Jednim potezom na placu izazvao vatru koja je \"progutala\" vikendice i kuću",
       "url": "https://www.euronews.rs/srbija/aktuelno/238287/uhapsen-zbog-izazivanja-pozara-kod-bovanskog-jezera/vest",
@@ -601,20 +573,6 @@
       "breaking": false,
       "alert": false,
       "priority": 26
-    },
-    {
-      "id": "s-n1info-rs-najave-emisija-dan-uzivo-pritisci-na-pravosudje-",
-      "title": "Dan uživo: Pritisci na pravosuđe",
-      "url": "https://n1info.rs/najave-emisija/dan-uzivo-pritisci-na-pravosudje/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T08:36:47+00:00",
-      "time": "08:36",
-      "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
     },
     {
       "id": "ogradsku-arenu-u-koncesiju-iz-arene-kazu-da-nisu-na-prodaju-",
@@ -673,6 +631,20 @@
       "priority": 12
     },
     {
+      "id": "pokazala-luksuznu-jahtu-melininog-muza-od-10-miliona-2enzq9j",
+      "title": "(FOTO) ĐINA DŽINOVIĆ SE BAŠKARI NA JAHTI BOGATOG BIZNISMENA I MAJKE MELINE Objavila prve kadrove unutrašnjosti plovila od 10.000.000 evra",
+      "url": "https://www.blic.rs/zabava/djina-dzinovic-pokazala-luksuznu-jahtu-melininog-muza-od-10-miliona/2enzq9j",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:40:55+00:00",
+      "time": "12:40",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "mija-6021626-adriana-mesarovic-paket-pomoci-privrednici-html",
       "title": "Месаровићева за РТС: Десет програма за малу привреду, од 40 до 100 одсто бесповратних средстава",
       "url": "https://www.rts.rs/vesti/ekonomija/6021626/adriana-mesarovic-paket-pomoci-privrednici.html",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "acenje-kfora-s-mosta-na-ibru-zasto-je-beograd-zatecen-gogic-",
+      "title": "\"Ako je Vulin znao, svi su znali\": Zašto je zvanični Beograd zatečen povlačenjem Kfora?",
+      "url": "https://n1info.rs/vesti/povlacenje-kfora-s-mosta-na-ibru-zasto-je-beograd-zatecen-gogic/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T13:02:58+00:00",
+      "time": "13:02",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-pretnjama-i-napadima-ocekujem-da-policija-otkrije-napadace-",
+      "title": "Tužilac Vujičić: Neću podleći nikakvim pretnjama i napadima, očekujem da policija otkrije napadače",
+      "url": "https://n1info.rs/vesti/tuzilac-vujicic-necu-podleci-nikakvim-pretnjama-i-napadima-ocekujem-da-policija-otkrije-napadace/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:51:50+00:00",
+      "time": "12:51",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
