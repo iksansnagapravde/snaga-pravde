@@ -253,6 +253,20 @@
       "priority": 72
     },
     {
+      "id": "vadjali-pa-zasevale-pesnice-nevidjena-drama-u-rozaju-f0mljfz",
+      "title": "SUDARILI SE, POSVAĐALI, A ONDA SU POČELE DA SEVAJU PESNICE! Neviđena drama u saobraćaju u Rožaju: Uhapšen jedan muškarac",
+      "url": "https://www.blic.rs/vesti/hronika/sudarili-se-posvadjali-pa-zasevale-pesnice-nevidjena-drama-u-rozaju/f0mljfz",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T22:14:53+00:00",
+      "time": "22:14",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "i-hronika-6021890-hapsenje-otmica-novi-sad-petrovaradin-html",
       "title": "Ухапшене две особе осумњичене за покушај отмице у Петроварадину",
       "url": "https://www.rts.rs/vesti/hronika/6021890/hapsenje-otmica-novi-sad-petrovaradin.html",
@@ -335,20 +349,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "-rts-do-kraja-avgusta-kultni-domaci-i-svetski-hitovi-77enssw",
-      "title": "RTS objavio listu filmova koje će emitovati do kraja avgusta: Evo kojih 25 naslova vas čeka na programu",
-      "url": "https://www.blic.rs/kultura/25-filmova-na-rts-do-kraja-avgusta-kultni-domaci-i-svetski-hitovi/77enssw",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T16:00:00+00:00",
-      "time": "16:00",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "ska-policija-uhapsila-muskarca-iz-leposavica-na-jarinju-vest",
@@ -471,20 +471,6 @@
       "time": "16:28",
       "source": "Nova",
       "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "ac-koji-je-tukao-suprugu-i-pretio-joj-smrcu-u-zemunu-be9rg9c",
-      "title": "TUKAO SUPRUGU, PA IZVADIO SEKIRU I PRETIO UBISTVOM! Užas u Zemunu: Policija ga odmah uhapsila, a ovako se branio",
-      "url": "https://www.blic.rs/vesti/hronika/saslusan-muskarac-koji-je-tukao-suprugu-i-pretio-joj-smrcu-u-zemunu/be9rg9c",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T16:00:54+00:00",
-      "time": "16:00",
-      "source": "Blic",
-      "category": "Насиље у породици",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -631,20 +617,6 @@
       "priority": 8
     },
     {
-      "id": "ar-nova-rs-global-republika-srpska-200-miliona-evra-kredita-",
-      "title": "Pet miliona dnevno, stižu izbori",
-      "url": "https://radar.nova.rs/global/republika-srpska-200-miliona-evra-kredita/",
-      "date": "2026-08-10",
-      "datetime": "2026-08-10T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "rna-makedonija-letonac-krijumcario-deset-migranata-u-fijatu-",
       "title": "Severna Makedonija: Letonac krijumčario deset migranata u fijatu",
       "url": "https://n1info.rs/region/severna-makedonija-letonac-krijumcario-deset-migranata-u-fijatu/",
@@ -694,6 +666,34 @@
       "datetime": "2026-08-18T19:28:38+00:00",
       "time": "19:28",
       "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-rs-sport-fudbal-10080064-frka-pred-mec-srba-u-ligi-sampiona",
+      "title": "HAOS PRED MEČ SRBA U LIGI ŠAMPIONA! Navijači izazvali nerede, policija upotrebila suzavac!",
+      "url": "https://www.kurir.rs/sport/fudbal/10080064/frka-pred-mec-srba-u-ligi-sampiona",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T19:03:59+00:00",
+      "time": "19:03",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "nas-rs-svet-region-mladici-napali-drzavljane-srbije-na-pagu-",
+      "title": "Grupa mladića napala dvojicu državljana Srbije na Pagu",
+      "url": "https://www.danas.rs/svet/region/mladici-napali-drzavljane-srbije-na-pagu/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T18:25:26+00:00",
+      "time": "18:25",
+      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
