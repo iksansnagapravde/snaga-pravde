@@ -1,6 +1,50 @@
 [
   {
     "winner": null,
+    "accepted": 5000000.0,
+    "lowest": 3202.0,
+    "difference": 4996798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100394517,
+    "file": "documents/100394517_Scan ODU Plana ZOP i pp centrala 2026 23.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 20000000.0,
+    "lowest": 2666.0,
+    "difference": 19997334.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 55025000.0,
+    "lowest": 8202.0,
+    "difference": 55016798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100111832,
+    "file": "documents/100111832_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 55025000.0,
+    "lowest": 8202.0,
+    "difference": 55016798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100892360,
+    "file": "documents/100892360_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 142000000.0,
     "lowest": 8202.0,
     "difference": 141991798.0,
@@ -42,49 +86,5 @@
     "rejection_reasons": [],
     "id": 105007638,
     "file": "documents/105007638_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "Broj oglasa na Portalu javnih LD Rad",
-    "accepted": 3367.0,
-    "lowest": 7202.0,
-    "difference": -3835.0,
-    "status": "ok",
-    "suspicious": false,
-    "rejection_reasons": [],
-    "id": 101992718,
-    "file": "documents/101992718_Odluka o dodeli ugovora - 0009.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 3686856.0,
-    "lowest": 6074.0,
-    "difference": 3680782.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103974218,
-    "file": "documents/103974218_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 15169458.0,
-    "lowest": 1101.0,
-    "difference": 15168357.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103034716,
-    "file": "documents/103034716_ODLUKA O DODELI UGOVORA JNO-1000-0024-2026 (JANA 327-2026) P1.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 15169458.0,
-    "lowest": 4112.0,
-    "difference": 15165346.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100172395,
-    "file": "documents/100172395_ODLUKA O DODELI UGOVORA JNO-1000-0024-2026 (JANA 327-2026) P2.pdf"
   }
 ]
