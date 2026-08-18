@@ -15,6 +15,20 @@
       "priority": 104
     },
     {
+      "id": "bog-opasnog-otpada-nezakonito-odlozenog-na-podrucju-gospica-",
+      "title": "Vanredna sednica Hrvatskog sabora zbog opasnog otpada nezakonito odloženog na području Gospića",
+      "url": "https://www.danas.rs/svet/region/vanredna-sednica-hrvatskog-sabora-zbog-opasnog-otpada-nezakonito-odlozenog-na-podrucju-gospica/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T18:20:56+00:00",
+      "time": "18:20",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "hitno-sprovesti-nadzor-nad-preuzimanjem-medija-iz-ann-mreze-",
       "title": "Evropska federacija novinara pisala Evropskoj komisiji: Hitno sprovesti nadzor nad preuzimanjem medija iz ANN mreže",
       "url": "https://nova.rs/vesti/drustvo/evropska-federacija-novinara-pisala-evropskoj-komisiji-hitno-sprovesti-nadzor-nad-preuzimanjem-medija-iz-ann-mreze/",
@@ -26,20 +40,6 @@
       "summary": "",
       "breaking": true,
       "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "ropa-org-a-kosovo-hapsenje-nasilje-kfor-zvecan-33831921-html",
-      "title": "Osumnjičeni za napad na KFOR i policiju Kosova uhapšen u Zvečanu",
-      "url": "https://www.slobodnaevropa.org/a/kosovo-hapsenje-nasilje-kfor-zvecan/33831921.html",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T06:18:57+00:00",
-      "time": "06:18",
-      "source": "RSE Balkan",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
       "priority": 100
     },
     {
@@ -309,6 +309,20 @@
       "priority": 68
     },
     {
+      "id": "www-rts-rs-vesti-hronika-6022186-stevan-filipovic-napad-html",
+      "title": "Други осимњичени за напад на редитеља Стевана Филиповића признао кривицу, за трећим се трага",
+      "url": "https://www.rts.rs/vesti/hronika/6022186/stevan-filipovic-napad.html",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T18:36:13+00:00",
+      "time": "18:36",
+      "source": "RTS",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "tiv-muskarca-zbog-neovlascenog-nosenja-pistolja-u-durmitoru-",
       "title": "VJT podiglo optužnicu protiv muškarca zbog neovlašćenog nošenja pištolja u „Durmitoru“",
       "url": "https://n1info.rs/vesti/vjt-podiglo-optuznicu-protiv-muskarca-zbog-neovlascenog-nosenja-pistolja-u-durmitoru/",
@@ -358,20 +372,6 @@
       "datetime": "2026-08-18T14:40:00+00:00",
       "time": "14:40",
       "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "a-alibega-nosio-pistolj-bez-dozvole-kada-su-pucali-na-njega-",
-      "title": "Podignuta optužnica protiv Nenada Alajbegovića Alibega: Nosio pištolj bez dozvole kada su pucali na njega",
-      "url": "https://nova.rs/vesti/hronika/podignuta-optuznica-protiv-nenada-alajbegovica-alibega-nosio-pistolj-bez-dozvole-kada-su-pucali-na-njega/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T13:24:40+00:00",
-      "time": "13:24",
-      "source": "Nova",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -433,20 +433,6 @@
       "breaking": false,
       "alert": true,
       "priority": 60
-    },
-    {
-      "id": "uca-hapsenja-u-septembru-zbog-vredne-imovine-u-starom-gradu-",
-      "title": "SPC pod udarom poreske inspekcije u Crnoj Gori: Sumnja se na milionsku utaju poreza, moguća hapšenja u septembru zbog vredne imovine u Starom gradu",
-      "url": "https://nova.rs/vesti/drustvo/spc-pod-udarom-poreske-inspekcije-u-crnoj-gori-sumnja-se-na-milionsku-utaju-poreza-moguca-hapsenja-u-septembru-zbog-vredne-imovine-u-starom-gradu/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T13:23:18+00:00",
-      "time": "13:23",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 34
     },
     {
       "id": "ttps-n1info-rs-vesti-borba-protiv-korupcije-greco-preporuke-",
@@ -545,20 +531,6 @@
       "breaking": false,
       "alert": false,
       "priority": 28
-    },
-    {
-      "id": "usija-stavila-konora-kenedija-na-medjunarodnu-poternicu-vest",
-      "title": "Rusija &quot;lovi&quot; sina američkog ministra; Odobreno hapšenje FOTO",
-      "url": "https://www.b92.net/info/svet/260100/rusija-stavila-konora-kenedija-na-medjunarodnu-poternicu/vest",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T17:13:00+00:00",
-      "time": "17:13",
-      "source": "B92",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
     },
     {
       "id": "a-oteli-coveka-u-novom-sadu-policija-odmah-krenula-u-poteru-",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "ttps-www-danas-rs-kultura-nova-korejska-serija-na-netfliksu-",
+      "title": "Nova korejska serija je osvojila gledaoce na Netfliksu širom sveta",
+      "url": "https://www.danas.rs/kultura/nova-korejska-serija-na-netfliksu/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T18:02:34+00:00",
+      "time": "18:02",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "ako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao-",
+      "title": "Novi skandal Milana Stamatovića: Pred Vučićem se hvalio kako krši zakon i izbegava javne nabavke. Predsednik aminovao",
+      "url": "https://nova.rs/vesti/politika/novi-skandal-milana-stamatovica-pred-vucicem-se-hvalio-kako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T14:11:08+00:00",
+      "time": "14:11",
+      "source": "Nova",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
