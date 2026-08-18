@@ -29,6 +29,20 @@
       "priority": 94
     },
     {
+      "id": "anak-779372-uhapsen-zemunac-osumnjicen-za-nasilje-u-porodici",
+      "title": "Ухапшен Земунац осумњичен за насиље у породици",
+      "url": "https://www.politika.rs/scc/clanak/779372/uhapsen-zemunac-osumnjicen-za-nasilje-u-porodici",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:56:00+00:00",
+      "time": "15:56",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "w-rts-rs-vesti-politika-6022093-pritvor-uhapseni-zvecan-html",
       "title": "Притвор мушкарцу из Звечана, осумњиченом за напад на припаднике Кфора и полиције пре три године",
       "url": "https://www.rts.rs/vesti/politika/6022093/pritvor-uhapseni-zvecan-.html",
@@ -50,20 +64,6 @@
       "datetime": "2026-08-18T14:07:00+00:00",
       "time": "14:07",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "10079799-uhapsen-muskarac-zbog-izazivanja-pozara-u-knjazevcu",
-      "title": "DOK BUKTE POŽARI ŠIROM SRBIJE, ON MORAO DA PALI TRAVU! Uhapšen muškarac iz Knjaževca - komšiji spalio celo domaćinstvo!",
-      "url": "https://www.kurir.rs/crna-hronika/10079799/uhapsen-muskarac-zbog-izazivanja-pozara-u-knjazevcu",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T13:36:45+00:00",
-      "time": "13:36",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -211,6 +211,20 @@
       "priority": 72
     },
     {
+      "id": "sti-drustvo-osumnjiceni-priznao-napad-na-stevana-filipovica-",
+      "title": "Tužilaštvo: Još jedan osumnjičeni za napad na Stevana Filipovića priznao delo",
+      "url": "https://www.danas.rs/vesti/drustvo/osumnjiceni-priznao-napad-na-stevana-filipovica/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:08:35+00:00",
+      "time": "16:08",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "zar-na-susednoj-parceli-u-kom-su-izgorele-masine-i-vinograd-",
       "title": "Uhapšen jer je palio suvu travu na imanju pa izazvao požar na susednoj parceli u kom su izgorele mašine i vinograd",
       "url": "https://www.danas.rs/vesti/drustvo/uhapsen-jer-je-palio-suvu-travu-na-imanju-pa-izazvao-pozar-na-susednoj-parceli-u-kom-su-izgorele-masine-i-vinograd/",
@@ -246,6 +260,20 @@
       "datetime": "2026-08-18T11:56:58+00:00",
       "time": "11:56",
       "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "57-banjalucani-uhapseni-zbog-kradje-sefa-iz-privatne-klinike",
+      "title": "PROVALILI U PRIVATNU KLINIKU I UKRALI SEF! Uhapšeno troje Banjalučana, policija otkrila o kojoj količini novca se radi",
+      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10079557/banjalucani-uhapseni-zbog-kradje-sefa-iz-privatne-klinike",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T10:30:59+00:00",
+      "time": "10:30",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -351,34 +379,6 @@
       "priority": 66
     },
     {
-      "id": "oglasilo-se-tuzilastvo-o-saobracajnoj-nesreci-kod-aleksinca-",
-      "title": "Žena bila putnica na električnom mopedu, usled sudara pala i poginula na licu mesta: Oglasilo se tužilaštvo o saobraćajnoj nesreći kod Aleksinca",
-      "url": "https://nova.rs/vesti/hronika/zena-bila-putnica-na-elektricnom-mopedu-usled-sudara-pala-i-poginula-na-licu-mesta-oglasilo-se-tuzilastvo-o-saobracajnoj-nesreci-kod-aleksinca/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T12:09:28+00:00",
-      "time": "12:09",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "aru-stradala-jedna-osoba-tuzilastvo-istrazuje-uzrok-nesrece-",
-      "title": "U Smederevu u požaru stradala jedna osoba, tužilaštvo istražuje uzrok nesreće",
-      "url": "https://www.danas.rs/vesti/drustvo/u-smederevu-u-pozaru-stradala-jedna-osoba-tuzilastvo-istrazuje-uzrok-nesrece/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:35:08+00:00",
-      "time": "11:35",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -391,6 +391,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "-rts-do-kraja-avgusta-kultni-domaci-i-svetski-hitovi-77enssw",
+      "title": "RTS objavio listu filmova koje će emitovati do kraja avgusta: Evo kojih 25 naslova vas čeka na programu",
+      "url": "https://www.blic.rs/kultura/25-filmova-na-rts-do-kraja-avgusta-kultni-domaci-i-svetski-hitovi/77enssw",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:00:00+00:00",
+      "time": "16:00",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "ska-policija-uhapsila-muskarca-iz-leposavica-na-jarinju-vest",
@@ -442,20 +456,6 @@
       "datetime": "2026-08-18T12:26:18+00:00",
       "time": "12:26",
       "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "orupcije-zato-sto-je-skoro-dve-godine-obavljao-dve-funkcije-",
-      "title": "BIRODI traži razrešenje direktora Agencije za sprečavanje korupcije, zato što je skoro dve godine obavljao dve funkcije",
-      "url": "https://www.danas.rs/vesti/ekonomija/birodi-trazi-razresenje-direktora-agencije-za-sprecavanje-korupcije-zato-sto-je-skoro-dve-godine-obavljao-dve-funkcije/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:48:56+00:00",
-      "time": "11:48",
-      "source": "Danas",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -517,6 +517,34 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "i-10079345-tramp-tuzen-zbog-placenog-pristupa-truth-social-u",
+      "title": "Tramp tužen zbog usluge od 100.000 dolara: Plaćeni pristup Truth Social-a otvorio pitanje zloupotrebe",
+      "url": "https://www.kurir.rs/techvision/vesti/10079345/tramp-tuzen-zbog-placenog-pristupa-truth-social-u",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T10:00:00+00:00",
+      "time": "10:00",
+      "source": "Kurir",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
+      "id": "ac-koji-je-tukao-suprugu-i-pretio-joj-smrcu-u-zemunu-be9rg9c",
+      "title": "TUKAO SUPRUGU, PA IZVADIO SEKIRU I PRETIO UBISTVOM! Užas u Zemunu: Policija ga odmah uhapsila, a ovako se branio",
+      "url": "https://www.blic.rs/vesti/hronika/saslusan-muskarac-koji-je-tukao-suprugu-i-pretio-joj-smrcu-u-zemunu/be9rg9c",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:00:54+00:00",
+      "time": "16:00",
+      "source": "Blic",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "om-krvave-g-klase-pretucenog-muskarca-gurnuli-u-auto-wqbcx67",
@@ -590,7 +618,7 @@
     },
     {
       "id": "s-n1info-rs-najave-emisija-dan-uzivo-pritisci-na-pravosudje-",
-      "title": "Gledajte Dan uživo: Pritisci na pravosuđe",
+      "title": "Dan uživo: Pritisci na pravosuđe",
       "url": "https://n1info.rs/najave-emisija/dan-uzivo-pritisci-na-pravosudje/",
       "date": "2026-08-18",
       "datetime": "2026-08-18T14:30:41+00:00",
@@ -617,20 +645,6 @@
       "priority": 25
     },
     {
-      "id": "ika-10079820-novi-zakon-o-pravosudnoj-akademiji-sta-se-menja",
-      "title": "VELIKE PROMENE U PRAVOSUĐU! Ministar Vujić u Kragujevcu predstavio novi Predlog zakona o Pravosudnoj akademiji (foto)",
-      "url": "https://www.kurir.rs/crna-hronika/10079820/novi-zakon-o-pravosudnoj-akademiji-sta-se-menja",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T13:46:12+00:00",
-      "time": "13:46",
-      "source": "Kurir",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "ako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao-",
       "title": "Novi skandal Milana Stamatovića: Pred Vučićem se hvalio kako krši zakon i izbegava javne nabavke. Predsednik aminovao",
       "url": "https://nova.rs/vesti/politika/novi-skandal-milana-stamatovica-pred-vucicem-se-hvalio-kako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao/",
@@ -639,6 +653,20 @@
       "time": "14:11",
       "source": "Nova",
       "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "o-bivsem-policajcu-koji-je-uhapsen-zbog-droge-i-kradje-puske",
+      "title": "BIVŠI POLICAJAC PAO ZBOG DROGE, A PRE TOGA SUSPENDOVAN ZBOG PUŠKE! Blažo Marković o kriminalu u MUP-u: \"On nikada nije bio dobar u svom poslu\"",
+      "url": "https://www.kurir.rs/crna-hronika/10079287/blazo-markovic-o-bivsem-policajcu-koji-je-uhapsen-zbog-droge-i-kradje-puske",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T07:19:54+00:00",
+      "time": "07:19",
+      "source": "Kurir",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "pa-org-a-ibar-most-evropska-komisija-mitrovica-33832841-html",
-      "title": "Evropska komisija o otvaranju mosta preko Ibra: Očekujemo konsultacije i koordinaciju",
-      "url": "https://www.slobodnaevropa.org/a/ibar-most-evropska-komisija-mitrovica/33832841.html",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T12:08:32+00:00",
-      "time": "12:08",
-      "source": "RSE Balkan",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
-    },
-    {
-      "id": "pokazala-luksuznu-jahtu-melininog-muza-od-10-miliona-2enzq9j",
-      "title": "(FOTO) ĐINA DŽINOVIĆ SE BAŠKARI NA JAHTI BOGATOG BIZNISMENA I MAJKE MELINE Objavila prve kadrove unutrašnjosti plovila od 10.000.000 evra",
-      "url": "https://www.blic.rs/zabava/djina-dzinovic-pokazala-luksuznu-jahtu-melininog-muza-od-10-miliona/2enzq9j",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T12:40:55+00:00",
-      "time": "12:40",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
