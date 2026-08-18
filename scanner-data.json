@@ -225,20 +225,6 @@
       "priority": 88
     },
     {
-      "id": "https-www-danas-rs-sport-nemanja-vidic-iskaz-tok-",
-      "title": "Nemanja Vidić dao iskaz u Javnom tužilaštvu za organizovani kriminal",
-      "url": "https://www.danas.rs/sport/nemanja-vidic-iskaz-tok/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T16:55:12+00:00",
-      "time": "16:55",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "nika-nemanja-vidic-dao-iskaz-u-jtok-u-povodom-skaj-prepiski-",
       "title": "Nemanja Vidić dao iskaz u JTOK-u povodom \"skaj\" prepiski Slaviše Kokeze",
       "url": "https://nova.rs/vesti/hronika/nemanja-vidic-dao-iskaz-u-jtok-u-povodom-skaj-prepiski/",
@@ -246,20 +232,6 @@
       "datetime": "2026-08-17T16:18:32+00:00",
       "time": "16:18",
       "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
-      "id": "https-n1info-rs-vesti-krik-nemanja-vidic-dao-iskaz-u-tok-u-",
-      "title": "KRIK: Nemanja Vidić dao iskaz u TOK-u",
-      "url": "https://n1info.rs/vesti/krik-nemanja-vidic-dao-iskaz-u-tok-u/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T16:04:42+00:00",
-      "time": "16:04",
-      "source": "N1",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -617,20 +589,6 @@
       "priority": 25
     },
     {
-      "id": "-rs-vesti-drustvo-vujic-osudio-paljenje-automobila-vujicica-",
-      "title": "Ministar Vujić osudio paljenje automobila javnog tužioca u Valjevu",
-      "url": "https://www.danas.rs/vesti/drustvo/vujic-osudio-paljenje-automobila-vujicica/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T16:46:15+00:00",
-      "time": "16:46",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "vde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu-html",
       "title": "Министар правде осудио паљење аутомобила јавног тужиоца у Ваљеву",
       "url": "https://www.rts.rs/vesti/politika/6021498/ministar-pravde-osudio-paljenje-automobila-javnog-tuzioca-u-valjevu.html",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ar-nova-rs-global-republika-srpska-200-miliona-evra-kredita-",
+      "title": "Pet miliona dnevno, stižu izbori",
+      "url": "https://radar.nova.rs/global/republika-srpska-200-miliona-evra-kredita/",
+      "date": "2026-08-10",
+      "datetime": "2026-08-10T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "kosovska-policija-uhapsila-muskarca-iz-leposavica-na-jarinju",
+      "title": "Тзв. косовска полиција ухапсила мушкарца из Лепосавића на Јарињу",
+      "url": "https://www.politika.rs/scc/clanak/779190/tzv-kosovska-policija-uhapsila-muskarca-iz-leposavica-na-jarinju",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T20:33:00+00:00",
+      "time": "20:33",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "Muskarac-preminuo-posle-tuce-na-svadbi-privedeno-sedam-osoba",
+      "title": "KRVAVA SVADBA! Upao nepozvan, pa izbila OPŠTA TUČA sa gostima: Muškarac (38) umro u bolnici, policija POHAPSILA SVATOVE!",
+      "url": "https://www.kurir.rs/planeta/10079112/Muskarac-preminuo-posle-tuce-na-svadbi-privedeno-sedam-osoba",
+      "date": "2026-08-17",
+      "datetime": "2026-08-17T18:31:29+00:00",
+      "time": "18:31",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
