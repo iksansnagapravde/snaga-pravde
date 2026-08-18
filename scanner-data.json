@@ -239,6 +239,20 @@
       "priority": 72
     },
     {
+      "id": "i-hronika-6021890-hapsenje-otmica-novi-sad-petrovaradin-html",
+      "title": "Ухапшене две особе осумњичене за покушај отмице у Петроварадину",
+      "url": "https://www.rts.rs/vesti/hronika/6021890/hapsenje-otmica-novi-sad-petrovaradin.html",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T11:56:58+00:00",
+      "time": "11:56",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "zi-se-u-bolnici-mup-otkrio-moguci-motiv-otmice-u-novom-sadu-",
       "title": "Novosađanin kog su ugurali u \"G klasu\" ima teške telesne povrede i nalazi se u bolnici: MUP otkrio mogući motiv otmice u Novom Sadu",
       "url": "https://nova.rs/vesti/hronika/novosadjanin-kog-su-ugurali-u-g-klasu-ima-teske-telesne-povrede-i-nalazi-se-u-bolnici-mup-otkrio-moguci-motiv-otmice-u-novom-sadu/",
@@ -293,6 +307,20 @@
       "breaking": false,
       "alert": true,
       "priority": 68
+    },
+    {
+      "id": "oglasilo-se-tuzilastvo-o-saobracajnoj-nesreci-kod-aleksinca-",
+      "title": "Žena bila putnica na električnom mopedu, usled sudara pala i poginula na licu mesta: Oglasilo se tužilaštvo o saobraćajnoj nesreći kod Aleksinca",
+      "url": "https://nova.rs/vesti/hronika/zena-bila-putnica-na-elektricnom-mopedu-usled-sudara-pala-i-poginula-na-licu-mesta-oglasilo-se-tuzilastvo-o-saobracajnoj-nesreci-kod-aleksinca/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:09:28+00:00",
+      "time": "12:09",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "aru-stradala-jedna-osoba-tuzilastvo-istrazuje-uzrok-nesrece-",
@@ -631,6 +659,20 @@
       "priority": 22
     },
     {
+      "id": "pa-org-a-ibar-most-evropska-komisija-mitrovica-33832841-html",
+      "title": "Evropska komisija o otvaranju mosta preko Ibra: Očekujemo konsultacije i koordinaciju",
+      "url": "https://www.slobodnaevropa.org/a/ibar-most-evropska-komisija-mitrovica/33832841.html",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:08:32+00:00",
+      "time": "12:08",
+      "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
       "id": "mija-6021626-adriana-mesarovic-paket-pomoci-privrednici-html",
       "title": "Месаровићева за РТС: Десет програма за малу привреду, од 40 до 100 одсто бесповратних средстава",
       "url": "https://www.rts.rs/vesti/ekonomija/6021626/adriana-mesarovic-paket-pomoci-privrednici.html",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "nja-od-1-do-16-septembra-evo-gde-je-zabrana-kretanja-g1bpq27",
-      "title": "\"ZABRANJUJE SE KRETANJE, BIĆE SVE OBELEŽENO ZASTAVICAMA!\" Oglasila se policija u Vranju: Od 1. septembra izbegavajte OVA mesta",
-      "url": "https://www.blic.rs/vesti/drustvo/policija-upozorava-bojeva-gadjanja-od-1-do-16-septembra-evo-gde-je-zabrana-kretanja/g1bpq27",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:51:29+00:00",
-      "time": "11:51",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-uhvacen-na-delu-pokusao-da-pokida-lance-sa-bicikala-zzxt86d",
-      "title": "FILMSKO HAPŠENJE U NIŠU! Policija zatekla osumnjičenog usred noći u zgradi: Hteo da pokida lance i ukrade bicikle, a evo šta ga sada čeka",
-      "url": "https://www.blic.rs/vesti/hronika/lopov-u-nisu-uhvacen-na-delu-pokusao-da-pokida-lance-sa-bicikala/zzxt86d",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:09:25+00:00",
-      "time": "11:09",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "sadjanina-i-pokusali-da-ga-otmu-policija-uhapsila-dve-osobe-",
-      "title": "Pretukli Novosađanina i pokušali da ga otmu: Policija uhapsila dve osobe",
-      "url": "https://n1info.rs/vesti/pretukli-novosadjanina-i-pokusali-da-ga-otmu-policija-uhapsila-dve-osobe/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T10:51:07+00:00",
-      "time": "10:51",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
