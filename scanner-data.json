@@ -71,6 +71,20 @@
       "priority": 92
     },
     {
+      "id": "10079799-uhapsen-muskarac-zbog-izazivanja-pozara-u-knjazevcu",
+      "title": "DOK BUKTE POŽARI ŠIROM SRBIJE, ON MORAO DA PALI TRAVU! Uhapšen muškarac iz Knjaževca - komšiji spalio celo domaćinstvo!",
+      "url": "https://www.kurir.rs/crna-hronika/10079799/uhapsen-muskarac-zbog-izazivanja-pozara-u-knjazevcu",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T13:36:45+00:00",
+      "time": "13:36",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "8-otmica-u-novom-sadu-pretucen-muskarac-i-uguran-u-auto-vest",
       "title": "Brutalna otmica u Novom Sadu: Pretukli ga zbog navodnog duga, strpali u auto, pa bežali ka Mišeluku",
       "url": "https://www.euronews.rs/srbija/aktuelno/238398/otmica-u-novom-sadu-pretucen-muskarac-i-uguran-u-auto/vest",
@@ -139,6 +153,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "en-muskarac-koji-je-pretukao-suprugu-i-pretio-joj-smrcu-vest",
+      "title": "Porodično nasilje u Zemunu: Uhapšen muškarac koji je pretukao suprugu i pretio joj smrću",
+      "url": "https://www.b92.net/lokal/beograd/hronika/260092/porodicno-nasilje-u-zemunu-uhapsen-muskarac-koji-je-pretukao-suprugu-i-pretio-joj-smrcu/vest",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:13:00+00:00",
+      "time": "16:13",
+      "source": "B92",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 88
     },
     {
       "id": "raga-protiv-vesica-i-momirovica-stoji-u-mestu-zbog-policije-",
@@ -267,20 +295,6 @@
       "priority": 70
     },
     {
-      "id": "57-banjalucani-uhapseni-zbog-kradje-sefa-iz-privatne-klinike",
-      "title": "PROVALILI U PRIVATNU KLINIKU I UKRALI SEF! Uhapšeno troje Banjalučana, policija otkrila o kojoj količini novca se radi",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10079557/banjalucani-uhapseni-zbog-kradje-sefa-iz-privatne-klinike",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T10:30:59+00:00",
-      "time": "10:30",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "bodnaevropa-org-a-srbija-ruski-narativi-mediji-33832857-html",
       "title": "Ko širi narative Kremlja u Srbiji? Od anonimnih stranica do ruskih državnih medija",
       "url": "https://www.slobodnaevropa.org/a/srbija-ruski-narativi-mediji/33832857.html",
@@ -295,13 +309,41 @@
       "priority": 68
     },
     {
-      "id": "odreden-pritvor-vozacu-autobusa-koji-se-prevrnuo-u-madarskoj",
-      "title": "Одређен притвор возачу аутобуса који се преврнуо у Мађарској",
-      "url": "https://www.politika.rs/scc/clanak/779360/odreden-pritvor-vozacu-autobusa-koji-se-prevrnuo-u-madarskoj",
+      "id": "tiv-muskarca-zbog-neovlascenog-nosenja-pistolja-u-durmitoru-",
+      "title": "VJT podiglo optužnicu protiv muškarca zbog neovlašćenog nošenja pištolja u „Durmitoru“",
+      "url": "https://n1info.rs/vesti/vjt-podiglo-optuznicu-protiv-muskarca-zbog-neovlascenog-nosenja-pistolja-u-durmitoru/",
       "date": "2026-08-18",
-      "datetime": "2026-08-18T15:04:00+00:00",
-      "time": "15:04",
-      "source": "Politika",
+      "datetime": "2026-08-18T16:33:18+00:00",
+      "time": "16:33",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "s-vreme-com-drustvo-stevan-filipovic-napad-nasilje-batinasi-",
+      "title": "Saslušan i drugi napadač na Stevana Filipovića, i on se brani sa slobode",
+      "url": "https://vreme.com/drustvo/stevan-filipovic-napad-nasilje-batinasi/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:23:20+00:00",
+      "time": "16:23",
+      "source": "Vreme",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "bog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
+      "title": "PIJAN UZEO SEKIRU I PRETIO ŽENI SMRĆU! Horor u Zemunu: Nasilnik pretukao suprugu pa dohvatio oruđe iz garaže, tužilaštvo traži pritvor!",
+      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-na-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:57:02+00:00",
+      "time": "15:57",
+      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -449,6 +491,20 @@
       "priority": 34
     },
     {
+      "id": "danas-rs-dijalog-licni-stavovi-ma-nema-korupcije-u-policiji-",
+      "title": "Ma, nema korupcije u policiji",
+      "url": "https://www.danas.rs/dijalog/licni-stavovi/ma-nema-korupcije-u-policiji/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:16:31+00:00",
+      "time": "16:16",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
       "id": "-obavljao-dve-javne-funkcije-i-primao-prihode-po-oba-osnova-",
       "title": "BIRODI: Direktor Agencije za sprečavanje korupcije 22 meseca istovremeno obavljao dve javne funkcije i primao prihode po oba osnova",
       "url": "https://nova.rs/vesti/politika/birodi-razresiti-direktora-agencije-za-sprecavanje-korupcije-22-meseca-istovremeno-obavljao-dve-javne-funkcije-i-primao-prihode-po-oba-osnova/",
@@ -470,20 +526,6 @@
       "datetime": "2026-08-18T11:37:16+00:00",
       "time": "11:37",
       "source": "KTV",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "a-ispunila-samo-tri-preporuke-greco-za-suzbijanje-korupcije-",
-      "title": "Transparentnost: Porazno što je Srbija ispunila samo tri preporuke GRECO za suzbijanje korupcije",
-      "url": "https://n1info.rs/vesti/transparentnost-porazno-sto-je-srbija-ispunila-samo-tri-preporuke-greco-za-suzbijanje-korupcije/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T11:31:09+00:00",
-      "time": "11:31",
-      "source": "N1",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -519,18 +561,18 @@
       "priority": 28
     },
     {
-      "id": "i-10079345-tramp-tuzen-zbog-placenog-pristupa-truth-social-u",
-      "title": "Tramp tužen zbog usluge od 100.000 dolara: Plaćeni pristup Truth Social-a otvorio pitanje zloupotrebe",
-      "url": "https://www.kurir.rs/techvision/vesti/10079345/tramp-tuzen-zbog-placenog-pristupa-truth-social-u",
+      "id": "a-oteli-coveka-u-novom-sadu-policija-odmah-krenula-u-poteru-",
+      "title": "Misteriozna žena za volanom skupocene \"G klase\": Oteli čoveka u Novom Sadu, krvavog ga ubacili u auto, a onda je usledilo filmsko hapšenje VIDEO",
+      "url": "https://nova.rs/vesti/hronika/oteli-coveka-u-novom-sadu-policija-odmah-krenula-u-poteru/",
       "date": "2026-08-18",
-      "datetime": "2026-08-18T10:00:00+00:00",
-      "time": "10:00",
-      "source": "Kurir",
-      "category": "Злоупотребе",
+      "datetime": "2026-08-18T16:28:59+00:00",
+      "time": "16:28",
+      "source": "Nova",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 28
+      "priority": 26
     },
     {
       "id": "ac-koji-je-tukao-suprugu-i-pretio-joj-smrcu-u-zemunu-be9rg9c",
@@ -589,6 +631,20 @@
       "priority": 26
     },
     {
+      "id": "kciju-ohr-a-i-vsts-a-zbog-pritisaka-i-pretnji-sudijama-u-rs-",
+      "title": "BHRT traži hitnu reakciju OHR-a i VSTS-a zbog pritisaka i pretnji sudijama u RS",
+      "url": "https://www.danas.rs/svet/region/bhrt-trazi-hitnu-reakciju-ohr-a-i-vsts-a-zbog-pritisaka-i-pretnji-sudijama-u-rs/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T16:26:14+00:00",
+      "time": "16:26",
+      "source": "Danas",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "ilanovic-srce-vlast-zeli-monopol-za-izbor-sudija-i-tuzilaca-",
       "title": "Milanović (SRCE): Vlast želi monopol za izbor sudija i tužilaca",
       "url": "https://n1info.rs/vesti/milanovic-srce-vlast-zeli-monopol-za-izbor-sudija-i-tuzilaca/",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 25
-    },
-    {
-      "id": "ako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao-",
-      "title": "Novi skandal Milana Stamatovića: Pred Vučićem se hvalio kako krši zakon i izbegava javne nabavke. Predsednik aminovao",
-      "url": "https://nova.rs/vesti/politika/novi-skandal-milana-stamatovica-pred-vucicem-se-hvalio-kako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:11:08+00:00",
-      "time": "14:11",
-      "source": "Nova",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "o-bivsem-policajcu-koji-je-uhapsen-zbog-droge-i-kradje-puske",
-      "title": "BIVŠI POLICAJAC PAO ZBOG DROGE, A PRE TOGA SUSPENDOVAN ZBOG PUŠKE! Blažo Marković o kriminalu u MUP-u: \"On nikada nije bio dobar u svom poslu\"",
-      "url": "https://www.kurir.rs/crna-hronika/10079287/blazo-markovic-o-bivsem-policajcu-koji-je-uhapsen-zbog-droge-i-kradje-puske",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T07:19:54+00:00",
-      "time": "07:19",
-      "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
-      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
-      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
-      "date": "2026-07-30",
-      "datetime": "2026-07-30T15:13:36+00:00",
-      "time": "15:13",
-      "source": "KRIK",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
-      "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
-      "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T10:16:52+00:00",
-      "time": "10:16",
-      "source": "CINS",
-      "category": "Насиље у породици",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 22
     }
   ],
   "all_sources": [
