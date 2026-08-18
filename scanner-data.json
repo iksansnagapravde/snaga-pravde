@@ -285,8 +285,8 @@
       "title": "Други осумњичени за напад на редитеља Стевана Филиповића признао кривицу, за трећим се трага",
       "url": "https://www.rts.rs/vesti/hronika/6022186/stevan-filipovic-napad.html",
       "date": "2026-08-18",
-      "datetime": "2026-08-18T19:12:19+00:00",
-      "time": "19:12",
+      "datetime": "2026-08-18T19:27:59+00:00",
+      "time": "19:27",
       "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
@@ -325,7 +325,7 @@
     {
       "id": "bog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
       "title": "PIJAN UZEO SEKIRU I PRETIO ŽENI SMRĆU! Horor u Zemunu: Nasilnik pretukao suprugu pa dohvatio oruđe iz garaže, tužilaštvo traži pritvor!",
-      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-u-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
+      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-na-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
       "date": "2026-08-18",
       "datetime": "2026-08-18T15:57:02+00:00",
       "time": "15:57",
@@ -673,20 +673,6 @@
       "priority": 24
     },
     {
-      "id": "ako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao-",
-      "title": "Novi skandal Milana Stamatovića: Pred Vučićem se hvalio kako krši zakon i izbegava javne nabavke. Predsednik aminovao",
-      "url": "https://nova.rs/vesti/politika/novi-skandal-milana-stamatovica-pred-vucicem-se-hvalio-kako-krsi-zakon-i-izbegava-javne-nabavke-predsednik-aminovao/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:11:08+00:00",
-      "time": "14:11",
-      "source": "Nova",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
+      "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
+      "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T10:16:52+00:00",
+      "time": "10:16",
+      "source": "CINS",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
     }
   ],
   "all_sources": [
