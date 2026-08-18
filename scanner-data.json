@@ -337,20 +337,6 @@
       "priority": 66
     },
     {
-      "id": "bog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
-      "title": "PIJAN UZEO SEKIRU I PRETIO ŽENI SMRĆU! Horor u Zemunu: Nasilnik pretukao suprugu pa dohvatio oruđe iz garaže, tužilaštvo traži pritvor!",
-      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-u-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T15:57:02+00:00",
-      "time": "15:57",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -615,6 +601,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "079956-budva-pet-vozaca-uhapseno-zbog-saobracajnih-prekrsaja",
+      "title": "DIVLJANJE NA PRIMORJU! Pijan se zakucao u četiri vozila, Turčin i Srbi odbili test na drogu - policija im odmah stavila lisice",
+      "url": "https://www.kurir.rs/region/crna-gora/10079956/budva-pet-vozaca-uhapseno-zbog-saobracajnih-prekrsaja",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T22:20:00+00:00",
+      "time": "22:20",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "rna-makedonija-letonac-krijumcario-deset-migranata-u-fijatu-",
