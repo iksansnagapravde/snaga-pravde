@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "id": "tinejdzer-unistio-stand-srpske-napredne-stranke-u-kragujevcu",
+      "title": "VANDALSKI NAPAD BLOKADERA U KRAGUJEVCU! Tinejdžer divljao, pocepao zastavu i baner na štandu SNS, pa počeo da ih gazi! Hitno reagovala policija! (FOTO)",
+      "url": "https://www.kurir.rs/vesti/politika/10080084/tinejdzer-unistio-stand-srpske-napredne-stranke-u-kragujevcu",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T19:39:46+00:00",
+      "time": "19:39",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
+      "id": "skoj-muskarac-sa-lisicama-na-rukama-pobegao-policiji-l35g3z4",
+      "title": "OPASAN ZATVORENIK NA SLOBODI, POLICIJA IZDALA HITNO UPOZORENJE GRAĐANIMA! Filmsko bekstvo u Hrvatskoj: Muškarac sa lisicama na rukama pobegao dok su ga uvodili u maricu",
+      "url": "https://www.blic.rs/vesti/svet/filmsko-bekstvo-u-hrvatskoj-muskarac-sa-lisicama-na-rukama-pobegao-policiji/l35g3z4",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T19:16:59+00:00",
+      "time": "19:16",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
       "id": "na-adresu-nato-ovo-je-nova-pretnja-za-srbe-na-kosovu-7e9zrxx",
       "title": "STIŽE HITNO PISMO NA ADRESU NATO SAVEZA! Kurti na silu pokušava ono što mu nije uspelo pre dve godine, ovo je NOVA PRETNJA ZA SRBE na Kosovu: \"Nervoza je ušla u njihove redove\"",
       "url": "https://www.blic.rs/vesti/politika/pismo-hitno-stize-na-adresu-nato-ovo-je-nova-pretnja-za-srbe-na-kosovu/7e9zrxx",
@@ -92,20 +120,6 @@
       "datetime": "2026-08-18T14:07:00+00:00",
       "time": "14:07",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "10079799-uhapsen-muskarac-zbog-izazivanja-pozara-u-knjazevcu",
-      "title": "DOK BUKTE POŽARI ŠIROM SRBIJE, ON MORAO DA PALI TRAVU! Uhapšen muškarac iz Knjaževca - komšiji spalio celo domaćinstvo!",
-      "url": "https://www.kurir.rs/crna-hronika/10079799/uhapsen-muskarac-zbog-izazivanja-pozara-u-knjazevcu",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T13:36:45+00:00",
-      "time": "13:36",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -325,7 +339,7 @@
     {
       "id": "bog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
       "title": "PIJAN UZEO SEKIRU I PRETIO ŽENI SMRĆU! Horor u Zemunu: Nasilnik pretukao suprugu pa dohvatio oruđe iz garaže, tužilaštvo traži pritvor!",
-      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-na-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
+      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-u-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
       "date": "2026-08-18",
       "datetime": "2026-08-18T15:57:02+00:00",
       "time": "15:57",
@@ -491,20 +505,6 @@
       "priority": 28
     },
     {
-      "id": "tica-pritisci-na-zaposlene-lekari-medicinski-radnici-miting-",
-      "title": "„Moraš na miting, moraš u autobus“: Sindikati o pritiscima na zaposlene u OB Studenica",
-      "url": "https://www.danas.rs/vesti/drustvo/ob-studentica-pritisci-na-zaposlene-lekari-medicinski-radnici-miting/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:16:40+00:00",
-      "time": "14:16",
-      "source": "Danas",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "a-oteli-coveka-u-novom-sadu-policija-odmah-krenula-u-poteru-",
       "title": "Misteriozna žena za volanom skupocene \"G klase\": Oteli čoveka u Novom Sadu, krvavog ga ubacili u auto, a onda je usledilo filmsko hapšenje VIDEO",
       "url": "https://nova.rs/vesti/hronika/oteli-coveka-u-novom-sadu-policija-odmah-krenula-u-poteru/",
@@ -617,34 +617,6 @@
       "priority": 25
     },
     {
-      "id": "s-n1info-rs-najave-emisija-dan-uzivo-pritisci-na-pravosudje-",
-      "title": "Dan uživo: Pritisci na pravosuđe",
-      "url": "https://n1info.rs/najave-emisija/dan-uzivo-pritisci-na-pravosudje/",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:30:41+00:00",
-      "time": "14:30",
-      "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "ika-10079820-novi-zakon-o-pravosudnoj-akademiji-sta-se-menja",
-      "title": "VELIKE PROMENE U PRAVOSUĐU! Ministar Vujić u Kragujevcu predstavio novi Predlog zakona o Pravosudnoj akademiji (foto)",
-      "url": "https://www.kurir.rs/crna-hronika/10079820/novi-zakon-o-pravosudnoj-akademiji-sta-se-menja",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T13:46:12+00:00",
-      "time": "13:46",
-      "source": "Kurir",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "rs-kultura-vudi-harelson-da-nisam-glumac-bih-bio-kriminalac-",
       "title": "\"Da nisam postao glumac, sigurno bih bio kriminalac\": Vudi Harelson pevao, igrao, pio, otkrio sve tajne i očarao Sarajevo",
       "url": "https://nova.rs/kultura/vudi-harelson-da-nisam-glumac-bih-bio-kriminalac/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "pa-org-a-ibar-most-evropska-komisija-mitrovica-33832841-html",
+      "title": "Evropska komisija o otvaranju mosta preko Ibra: Očekujemo konsultacije i koordinaciju",
+      "url": "https://www.slobodnaevropa.org/a/ibar-most-evropska-komisija-mitrovica/33832841.html",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T12:08:32+00:00",
+      "time": "12:08",
+      "source": "RSE Balkan",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 12
+    },
+    {
+      "id": "iterijumi-za-dodelu-gotovo-milion-evra-borackim-udruzenjima-",
+      "title": "SRCE: Nejasni kriterijumi za dodelu gotovo milion evra boračkim udruženjima",
+      "url": "https://n1info.rs/vesti/srce-nejasni-kriterijumi-za-dodelu-gotovo-milion-evra-borackim-udruzenjima/",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T19:55:50+00:00",
+      "time": "19:55",
+      "source": "N1",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
