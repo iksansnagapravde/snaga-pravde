@@ -351,20 +351,6 @@
       "priority": 66
     },
     {
-      "id": "egovic-alibeg-optuzen-da-je-nosio-oruzje-bez-dozvole-qd7z8tl",
-      "title": "OPTUŽEN NENAD ALAJBEGOVIĆ ALIBEG! Preživeo 10 atentata, produžen mu pritvor: Pištolj sa metkom u cevi uneo u \"Durmitor\"",
-      "url": "https://www.blic.rs/vesti/hronika/nenad-alajbegovic-alibeg-optuzen-da-je-nosio-oruzje-bez-dozvole/qd7z8tl",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:40:00+00:00",
-      "time": "14:40",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -475,6 +461,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "fatalno-politizovani-sud-zlonamerno-zloupotrebio-ovlasc-enja",
+      "title": "AMERIKA UVELA SANKCIJE PROTIV ZVANIČNIKA MEĐUNARODNOG KRIVIČNOG SUDA: \"Korumpirani i fatalno politizovani sud zlonamerno zloupotrebio ovlašćenja\"",
+      "url": "https://www.kurir.rs/planeta/10080098/AMERIKA-UVELA-SANKCIJE-PROTIV-ZVANICNIKA-MEDjUNARODNOG-KRIVICNOG-SUDA-Korumpirani-i-fatalno-politizovani-sud-zlonamerno-zloupotrebio-ovlasc-enja",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T20:05:59+00:00",
+      "time": "20:05",
+      "source": "Kurir",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
     },
     {
       "id": "ps-nova-rs-vesti-hronika-dvojica-srba-pretucena-u-hrvatskoj-",
@@ -603,20 +603,6 @@
       "priority": 25
     },
     {
-      "id": "o-slusanje-o-predlogu-zakona-o-pravosudnoj-akademiji-52b502q",
-      "title": "U Kragujevcu održano javno slušanje o Predlogu zakona o Pravosudnoj akademiji",
-      "url": "https://www.blic.rs/vesti/politika/u-kragujevcu-odrzano-javno-slusanje-o-predlogu-zakona-o-pravosudnoj-akademiji/52b502q",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:50:00+00:00",
-      "time": "14:50",
-      "source": "Blic",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "rs-kultura-vudi-harelson-da-nisam-glumac-bih-bio-kriminalac-",
       "title": "\"Da nisam postao glumac, sigurno bih bio kriminalac\": Vudi Harelson pevao, igrao, pio, otkrio sve tajne i očarao Sarajevo",
       "url": "https://nova.rs/kultura/vudi-harelson-da-nisam-glumac-bih-bio-kriminalac/",
@@ -685,6 +671,20 @@
       "breaking": false,
       "alert": false,
       "priority": 12
+    },
+    {
+      "id": "riterijumi-za-dodelu-gotovo-milion-evra-borackim-udruzenjima",
+      "title": "SRCE: Nejasni kriterijumi za dodelu gotovo milion evra boračkim udruženjima",
+      "url": "https://beta.rs/content/250402-srce-nejasni-kriterijumi-za-dodelu-gotovo-milion-evra-borackim-udruzenjima",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T20:05:08+00:00",
+      "time": "20:05",
+      "source": "Beta",
+      "category": "Социјална права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "iterijumi-za-dodelu-gotovo-milion-evra-borackim-udruzenjima-",
