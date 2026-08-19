@@ -99,20 +99,6 @@
       "priority": 100
     },
     {
-      "id": "-moskve-uvode-kvote-za-prodaju-goriva-na-benzinskim-pumpama-",
-      "title": "Gradske vlasti Moskve uvode kvote za prodaju goriva na benzinskim pumpama",
-      "url": "https://www.danas.rs/svet/gradske-vlasti-moskve-uvode-kvote-za-prodaju-goriva-na-benzinskim-pumpama/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T13:31:18+00:00",
-      "time": "13:31",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-238451-zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici-vest",
       "title": "Nasilje u porodici u Zemunu: Pijan udarao suprugu, pretio joj smrću i uzeo sekiru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238451/zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici/vest",
@@ -141,6 +127,20 @@
       "priority": 92
     },
     {
+      "id": "la-dva-stranca-koji-su-pokusali-da-zapale-energetski-objekat",
+      "title": "AKCIJA UKRAJINSKE SBU: Uhapšena dva ruska agenta koji su pokušali da zapale energetski objekat",
+      "url": "https://www.kurir.rs/planeta/10081004/ukrajinska-sbu-privela-dva-stranca-koji-su-pokusali-da-zapale-energetski-objekat",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T17:36:32+00:00",
+      "time": "17:36",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "-b92-net-info-svet-260430-sbu-uhapsila-dva-ruska-agenta-vest",
       "title": "Putine, uhvaćeni su",
       "url": "https://www.b92.net/info/svet/260430/sbu-uhapsila-dva-ruska-agenta/vest",
@@ -162,6 +162,20 @@
       "datetime": "2026-08-19T17:05:14+00:00",
       "time": "17:05",
       "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "ltura-10080903-dva-muskarca-uhapsena-zbog-smrti-influenserke",
+      "title": "Sonjino spaljeno telo pronađeno u vinogradu: Dva muškarca uhapšena zbog smrti influenserke",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/10080903/dva-muskarca-uhapsena-zbog-smrti-influenserke",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T15:54:15+00:00",
+      "time": "15:54",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -281,20 +295,6 @@
       "priority": 92
     },
     {
-      "id": "ece-u-nisu-kolima-udarila-staricu-78-koja-je-sedela-na-klupi",
-      "title": "BAKA POGINULA DOK JE SEDELA NA KLUPI! Novi detalji jezive saobraćajke u Nišu: Uhapšena žena koja je kolima sletela sa puta i pokosila staricu",
-      "url": "https://www.kurir.rs/crna-hronika/10080704/uhapsena-zena-58-nakon-nesrece-u-nisu-kolima-udarila-staricu-78-koja-je-sedela-na-klupi",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T12:40:44+00:00",
-      "time": "12:40",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "rajinac-osumnjicen-za-diverziju-na-gasovodu-severni-tok-html",
       "title": "У Хрватској ухапшен Украјинац осумњичен за диверзију на гасоводу \"Северни ток\"",
       "url": "https://www.rts.rs/vesti/svet/6022486/u-hrvatskoj-uhapsen-ukrajinac-osumnjicen-za-diverziju-na-gasovodu-severni-tok.html",
@@ -302,34 +302,6 @@
       "datetime": "2026-08-19T11:30:57+00:00",
       "time": "11:30",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "80598-ovo-je-vladimir-z-osumnjicen-za-sabotazu-severnog-toka",
-      "title": "OVO JE UKRAJINAC UHAPŠEN ZBOG SABOTAŽE SEVERNOG TOKA: Vladimir Z. već jednom izmakao Nemcima, sada mu sledi IZRUČENJE",
-      "url": "https://www.kurir.rs/planeta/10080598/ovo-je-vladimir-z-osumnjicen-za-sabotazu-severnog-toka",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T11:16:49+00:00",
-      "time": "11:16",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "rna-hronika-10080546-mladic-23-uhapsen-u-bojniku-zbog-napada",
-      "title": "POSLE SVAĐE SEO U AUTO I POKOSIO LJUDE ISPRED RESTORANA! Mladić (23) uhapšen u Bojniku, povređene četiri osobe",
-      "url": "https://www.kurir.rs/crna-hronika/10080546/mladic-23-uhapsen-u-bojniku-zbog-napada",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T10:40:16+00:00",
-      "time": "10:40",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -419,6 +391,20 @@
       "breaking": false,
       "alert": true,
       "priority": 84
+    },
+    {
+      "id": "emacke-vlasti-za-pasivnost-posle-eksplozija-na-severnom-toku",
+      "title": "Лидерка АфД оптужила немачке власти за пасивност после експлозија на „Северном току“",
+      "url": "https://www.politika.rs/scc/clanak/779627/liderka-afd-optuzila-nemacke-vlasti-za-pasivnost-posle-eksplozija-na-severnom-toku",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T18:09:00+00:00",
+      "time": "18:09",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
     },
     {
       "id": "-10080857-uhapsena-sluzbenica-policijske-stanice-u-alibunaru",
@@ -519,20 +505,6 @@
       "priority": 66
     },
     {
-      "id": "itke-simpa-dugove-za-porez-i-doprinose-pretvorili-u-kapital-",
-      "title": "Država pokriva gubitke Simpa: Dugove za porez i doprinose pretvorili u kapital",
-      "url": "https://www.danas.rs/vesti/ekonomija/drzava-pokriva-gubitke-simpa-dugove-za-porez-i-doprinose-pretvorili-u-kapital/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T13:27:21+00:00",
-      "time": "13:27",
-      "source": "Danas",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "emisije-bez-cenzure-o-poseti-zelenskog-i-sastanku-s-vucicem-",
       "title": "Gosti emisije „Bez cenzure“ o poseti Zelenskog i sastanku s Vučićem",
       "url": "https://www.ktv.rs/2026/08/19/gosti-emisije-bez-cenzure-o-poseti-zelenskog-i-sastanku-s-vucicem/",
@@ -617,6 +589,20 @@
       "priority": 28
     },
     {
+      "id": "iku-sina-sa-sajkacom-pa-zavrsila-u-hrvatskom-zatvoru-ffw4zkr",
+      "title": "\"MALI, GDE TI JE ČETNIČKA KAPA\" Nikolina je objavila sliku sina (7) sa šajkačom i završila u hrvatskom zatvoru: Dete istraumirano gledalo hapšenje majke",
+      "url": "https://www.blic.rs/vesti/drustvo/srpkinje-objavila-sliku-sina-sa-sajkacom-pa-zavrsila-u-hrvatskom-zatvoru/ffw4zkr",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T17:59:11+00:00",
+      "time": "17:59",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "kinja-zbog-slike-sina-sa-sajkacom-u-zatvoru-u-hrvatskoj-vest",
       "title": "\"Sina (7) su mi pitali gde mu je četnička kapa\": Nikolina Bačkonja Filipović o hapšenju i danima u hrvatskom zatvoru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238551/srpkinja-zbog-slike-sina-sa-sajkacom-u-zatvoru-u-hrvatskoj/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-19T15:00:38+00:00",
       "time": "15:00",
       "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
+      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
+      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
+      "date": "2026-07-30",
+      "datetime": "2026-07-30T15:13:36+00:00",
+      "time": "15:13",
+      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
