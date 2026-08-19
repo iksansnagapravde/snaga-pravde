@@ -113,20 +113,6 @@
       "priority": 100
     },
     {
-      "id": "u-nisu-nije-dobio-zaostale-zarade-zbog-gresaka-u-spiskovima-",
-      "title": "„Ispravite nepravdu“: Upozorenje da „veliki broj“ radnika propalih preduzeća u Nišu nije dobio zaostale zarade zbog grešaka u spiskovima",
-      "url": "https://www.danas.rs/vesti/ekonomija/ispravite-nepravdu-upozorenje-da-veliki-broj-radnika-propalih-preduzeca-u-nisu-nije-dobio-zaostale-zarade-zbog-gresaka-u-spiskovima/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T14:34:47+00:00",
-      "time": "14:34",
-      "source": "Danas",
-      "category": "Социјална права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-238451-zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici-vest",
       "title": "Nasilje u porodici u Zemunu: Pijan udarao suprugu, pretio joj smrću i uzeo sekiru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238451/zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici/vest",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
+      "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
+      "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
+      "date": "2026-07-31",
+      "datetime": "2026-07-31T10:16:52+00:00",
+      "time": "10:16",
+      "source": "CINS",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 22
     }
   ],
   "all_sources": [
