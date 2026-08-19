@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "id": "ja-povredila-studentkinju-pa-joj-uskratila-medicinsku-pomoc-",
+      "title": "Niški studenti: Policija povredila studentkinju, pa joj uskratila medicinsku pomoć",
+      "url": "https://vreme.com/drustvo/niski-studenti-policija-povredila-studentkinju-pa-joj-uskratila-medicinsku-pomoc/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T16:44:09+00:00",
+      "time": "16:44",
+      "source": "Vreme",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
+      "id": "odnaevropa-org-a-policija-greco-optuzbe-srbija-33833763-html",
+      "title": "Mogu li građani Srbije do pravde kada se žale na ponašanje policije?",
+      "url": "https://www.slobodnaevropa.org/a/policija-greco-optuzbe-srbija/33833763.html",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T16:19:12+00:00",
+      "time": "16:19",
+      "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "u-nisu-nije-dobio-zaostale-zarade-zbog-gresaka-u-spiskovima-",
       "title": "„Ispravite nepravdu“: Upozorenje da „veliki broj“ radnika propalih preduzeća u Nišu nije dobio zaostale zarade zbog grešaka u spiskovima",
       "url": "https://www.danas.rs/vesti/ekonomija/ispravite-nepravdu-upozorenje-da-veliki-broj-radnika-propalih-preduzeca-u-nisu-nije-dobio-zaostale-zarade-zbog-gresaka-u-spiskovima/",
@@ -253,20 +281,6 @@
       "priority": 92
     },
     {
-      "id": "80598-ovo-je-vladimir-z-osumnjicen-za-sabotazu-severnog-toka",
-      "title": "OVO JE UKRAJINAC UHAPŠEN ZBOG SABOTAŽE SEVERNOG TOKA: Vladimir Z. već jednom izmakao Nemcima, sada mu sledi IZRUČENJE",
-      "url": "https://www.kurir.rs/planeta/10080598/ovo-je-vladimir-z-osumnjicen-za-sabotazu-severnog-toka",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T11:16:49+00:00",
-      "time": "11:16",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "36-uhapsen-kod-knjazevca-izazvao-pozar-i-unistio-imanje-vest",
       "title": "Uhapšen muškarac kod Knjaževca: Izazvao požar na svojoj parceli",
       "url": "https://www.euronews.rs/srbija/aktuelno/238436/uhapsen-kod-knjazevca-izazvao-pozar-i-unistio-imanje/vest",
@@ -379,6 +393,20 @@
       "priority": 72
     },
     {
+      "id": "www-danas-rs-vesti-politika-kosovo-posmrtni-ostaci-23-osobe-",
+      "title": "U Zubinom Potoku pronađeni posmrtni ostaci najmanje 23 osobe",
+      "url": "https://www.danas.rs/vesti/politika/kosovo-posmrtni-ostaci-23-osobe/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T16:44:01+00:00",
+      "time": "16:44",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "er-su-nosili-majice-s-ljiljanima-ratnim-simbolom-armije-bih-",
       "title": "U Brčkom uhapšene četiri osobe zbog napada na maloletnike, jer su nosili majice s ljiljanima - ratnim simbolom Armije BiH",
       "url": "https://n1info.rs/region/u-brckom-uhapsene-cetiri-osobe-zbog-napada-na-maloletnike-jer-su-nosili-majice-s-ljiljanima-ratnim-simbolom-armije-bih/",
@@ -391,20 +419,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "bodnaevropa-org-a-srbija-ruski-narativi-mediji-33832857-html",
-      "title": "Ko širi narative Kremlja u Srbiji? Od anonimnih stranica do ruskih državnih medija",
-      "url": "https://www.slobodnaevropa.org/a/srbija-ruski-narativi-mediji/33832857.html",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T14:06:59+00:00",
-      "time": "14:06",
-      "source": "RSE Balkan",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 68
     },
     {
       "id": "sumnjicenom-zemuncu-jer-je-tukao-suprugu-i-pretio-joj-smrcu-",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-19T15:47:29+00:00",
       "time": "15:47",
       "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "ede-raspisalo-konkurs-za-povratnike-vredan-70-miliona-dinara",
-      "title": "Министарство привреде расписало конкурс за повратнике вредан 70 милиона динара",
-      "url": "https://www.politika.rs/scc/clanak/779587/ministarstvo-privrede-raspisalo-konkurs-za-povratnike-vredan-70-miliona-dinara",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T15:06:00+00:00",
-      "time": "15:06",
-      "source": "Politika",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
