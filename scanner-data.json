@@ -15,20 +15,6 @@
       "priority": 125
     },
     {
-      "id": "arac-iz-bajine-baste-ukrao-vise-od-40-miliona-dinara-pjf3jet",
-      "title": "(VIDEO) LAŽIRAO DOKUMENTACIJU, PA POKRAO VIŠE OD 40 MILIONA DINARA! Uhapšen prevarant iz Bajine Bašte: Policija ga uvela u kola s lisicama na rukama",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-iz-bajine-baste-ukrao-vise-od-40-miliona-dinara/pjf3jet",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T16:51:28+00:00",
-      "time": "16:51",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 102
-    },
-    {
       "id": "ije-uputio-hitan-apel-gradjanima-zbog-dvodnevnih-zaliha-krvi",
       "title": "HITAN APEL IZ INSTITUTA ZA TRANSFUZIJU KRVI! Zalihe krvi na kritičnom minimumu, nedostaju ove grupe: Lekari pozivaju sve zdrave građane da hitno daju krv!",
       "url": "https://www.kurir.rs/vesti/drustvo/10081120/institut-za-transfuziju-krvi-srbije-uputio-hitan-apel-gradjanima-zbog-dvodnevnih-zaliha-krvi",
@@ -139,6 +125,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "ju-filma-o-severnom-toku-uhapsen-glavni-osunjiceni-ukrajinac",
+      "title": "На снимању филма о  „Северном току“ ухапшен главни осуњичени Украјинац",
+      "url": "https://www.politika.rs/scc/clanak/779662/na-snimanju-filma-o-severnom-toku-uhapsen-glavni-osunjiceni-ukrajinac",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T22:26:00+00:00",
+      "time": "22:26",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "baste-zbog-zloupotrebe-polozaja-i-stete-od-40-miliona-dinara",
@@ -673,6 +673,20 @@
       "priority": 4
     },
     {
+      "id": "u-smenjen-svestenik-koji-je-obezbedjivao-smestaj-za-migrante",
+      "title": "SKANDAL U VATIKANU: Smenjen sveštenik koji je stekao slavu i kritike zbog obezbeđivanja smeštaja za migrante",
+      "url": "https://www.kurir.rs/planeta/10081151/skandal-u-vatikanu-smenjen-svestenik-koji-je-obezbedjivao-smestaj-za-migrante",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T22:41:51+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "ti-svet-portugal-zabranio-burke-kazne-i-do-3000-evra-jscz47y",
       "title": "PORTUGAL ZABRANIO BURKE  Kazne i do 3.000 evra, evo ko je izuzet od novog zakona",
       "url": "https://www.blic.rs/vesti/svet/portugal-zabranio-burke-kazne-i-do-3000-evra/jscz47y",
@@ -681,20 +695,6 @@
       "time": "22:25",
       "source": "Blic",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "oblematicnije-mesto-u-frizideru-nisu-u-pitanju-vrata-m8sysdf",
-      "title": "Najproblematičnije mesto u frižideru - nisu u pitanju vrata",
-      "url": "https://www.blic.rs/slobodno-vreme/najproblematicnije-mesto-u-frizideru-nisu-u-pitanju-vrata/m8sysdf",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T22:15:48+00:00",
-      "time": "22:15",
-      "source": "Blic",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
