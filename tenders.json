@@ -1,79 +1,101 @@
 [
   {
-    "winner": null,
-    "accepted": 300000.0,
-    "lowest": 1182.0,
-    "difference": 298818.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101306497,
-    "file": "documents/101306497_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 3000000.0,
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 155000.0,
     "lowest": 8202.0,
-    "difference": 2991798.0,
+    "difference": 146798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101184783,
-    "file": "documents/101184783_Odluka- Ventili.pdf"
+    "id": 107006237,
+    "file": "documents/107006237_ZC Aleksinac -Odluka o dodeli ugovora - Natrijum hlorid.pdf"
   },
   {
     "winner": null,
-    "accepted": 2667180.0,
-    "lowest": 1109.0,
-    "difference": 2666071.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100071471,
-    "file": "documents/100071471_0129- odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 42000000.0,
+    "accepted": 510000.0,
     "lowest": 8202.0,
-    "difference": 41991798.0,
+    "difference": 501798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100793282,
+    "file": "documents/100793282_ODLUKA  003.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1083333.33,
+    "lowest": 8202.0,
+    "difference": 1075131.33,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101727796,
+    "file": "documents/101727796_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 6417500.0,
+    "lowest": 8202.0,
+    "difference": 6409298.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100486993,
+    "file": "documents/100486993_JN 17-26 Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 700000.0,
+    "lowest": 8202.0,
+    "difference": 691798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107772196,
+    "file": "documents/107772196_ZC Aleksinac -Odluka o dodeli ugovora - Ugr.mat. u ortop. III.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2000000.0,
+    "lowest": 8202.0,
+    "difference": 1991798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100637667,
+    "file": "documents/100637667_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 237070.0,
+    "lowest": 8202.0,
+    "difference": 228868.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100336710,
+    "file": "documents/100336710_ZC Aleksinac -Odluka o dodeli ugovora - Cem.proteza za koleno.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 155000000.0,
+    "lowest": 8202.0,
+    "difference": 154991798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101017664,
+    "file": "documents/101017664_Odluka o dodeli narudzbenice 542-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 45000000.0,
+    "lowest": 8202.0,
+    "difference": 44991798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 100143422,
-    "file": "documents/100143422_Odluka o dodeli narudzbenice 537-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 200000000.0,
-    "lowest": 8202.0,
-    "difference": 199991798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100501967,
-    "file": "documents/100501967_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 39357432.0,
-    "lowest": 6202.0,
-    "difference": 39351230.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101032283,
-    "file": "documents/101032283_jn 139 26 - odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 120570.0,
-    "lowest": 2202.0,
-    "difference": 118368.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106787124,
-    "file": "documents/106787124_917 O-181.pdf"
+    "file": "documents/100143422_Odluka o dodeli narudzbenice 539-2026.pdf"
   }
 ]
