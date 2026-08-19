@@ -113,6 +113,20 @@
       "priority": 100
     },
     {
+      "id": "https-vreme-com-vreme-kako-policajci-razvaljuju-policiju-",
+      "title": "Kako policajci razvaljuju policiju",
+      "url": "https://vreme.com/vreme/kako-policajci-razvaljuju-policiju/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T20:58:25+00:00",
+      "time": "20:58",
+      "source": "Vreme",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
       "id": "-238451-zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici-vest",
       "title": "Nasilje u porodici u Zemunu: Pijan udarao suprugu, pretio joj smrću i uzeo sekiru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238451/zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici/vest",
@@ -407,9 +421,9 @@
       "priority": 38
     },
     {
-      "id": "enice-sefa-kabineta-Zelenskog-ona-negirala-navode-o-hapsenju",
+      "id": "-rs-planeta-10081107-sema-pranja-tri-miliona-evra-u-ukrajini",
       "title": "ŠEMA PRANJA TRI MILIONA EVRA U UKRAJINI: Pokrenuta istraga protiv bivše zamenice šefa kabineta Zelenskog, ona negirala navode o hapšenju",
-      "url": "https://www.kurir.rs/planeta/10081107/SEMA-PRANJA-TRI-MILIONA-EVRA-U-UKRAJINI-Pokrenuta-istraga-protiv-bivse-zamenice-sefa-kabineta-Zelenskog-ona-negirala-navode-o-hapsenju",
+      "url": "https://www.kurir.rs/planeta/10081107/sema-pranja-tri-miliona-evra-u-ukrajini",
       "date": "2026-08-19",
       "datetime": "2026-08-19T20:27:21+00:00",
       "time": "20:27",
@@ -561,20 +575,6 @@
       "priority": 24
     },
     {
-      "id": "s-rs-vesti-drustvo-vasiljevic-sva-ubistva-resena-ove-godine-",
-      "title": "Vasiljević u PU Beograd: Sva ubistva od početka godine rešena",
-      "url": "https://www.danas.rs/vesti/drustvo/vasiljevic-sva-ubistva-resena-ove-godine/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T15:14:39+00:00",
-      "time": "15:14",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -601,20 +601,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "-novi-clan-kviza-superpotera-otkrivamo-petog-tragaca-41f4s4q",
-      "title": "OVO JE NOVI ČLAN KVIZA \"SUPERPOTERA\" Peti Tragač ima samo 25 godina, a već je osvojio dva miliona i srušio konkurenciju",
-      "url": "https://www.blic.rs/zabava/ovo-je-novi-clan-kviza-superpotera-otkrivamo-petog-tragaca/41f4s4q",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T15:47:29+00:00",
-      "time": "15:47",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     },
     {
       "id": "bodnaevropa-org-a-bih-spomenik-lazar-banjaluka-33833689-html",
@@ -659,20 +645,6 @@
       "priority": 4
     },
     {
-      "id": "10080878-policija-upala-u-kucu-bivseg-decka-hejden-panetijer",
-      "title": "Nakon smrti Kličkove bivše, policija pokucala na vrata: Glumičina smrt se dodatno istražuje, Brajan je bio sa njom u trenutku smrti",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/10080878/policija-upala-u-kucu-bivseg-decka-hejden-panetijer",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T15:24:50+00:00",
-      "time": "15:24",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-haos-u-bojniku-posle-svade-kolima-pokosio-cetiri-osobe-vest",
       "title": "Haos u Bojniku: Posle svađe kolima pokosio četiri osobe",
       "url": "https://www.euronews.rs/srbija/aktuelno/238567/haos-u-bojniku-posle-svade-kolima-pokosio-cetiri-osobe/vest",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "0-biliona-dolara-vise-nego-udvostrucen-za-manje-od-decenije-",
+      "title": "Američki dug premašio 40 biliona dolara, više nego udvostručen za manje od decenije",
+      "url": "https://www.danas.rs/svet/americki-dug-premasio-40-biliona-dolara-vise-nego-udvostrucen-za-manje-od-decenije/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T21:08:57+00:00",
+      "time": "21:08",
+      "source": "Danas",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-potresa-jedna-od-najvecih-politickih-kriza-od-pocetka-rata-",
+      "title": "Ukrajinu potresa jedna od najvećih političkih kriza od početka rata",
+      "url": "https://n1info.rs/svet/ukrajinu-potresa-jedna-od-najvecih-politickih-kriza-od-pocetka-rata/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T20:59:53+00:00",
+      "time": "20:59",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
