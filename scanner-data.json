@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "tinejdzer-unistio-stand-srpske-napredne-stranke-u-kragujevcu",
-      "title": "VANDALSKI NAPAD BLOKADERA U KRAGUJEVCU! Tinejdžer divljao, pocepao zastavu i baner na štandu SNS, pa počeo da ih gazi! Hitno reagovala policija! (FOTO)",
-      "url": "https://www.kurir.rs/vesti/politika/10080084/tinejdzer-unistio-stand-srpske-napredne-stranke-u-kragujevcu",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T19:39:46+00:00",
-      "time": "19:39",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "skoj-muskarac-sa-lisicama-na-rukama-pobegao-policiji-l35g3z4",
       "title": "OPASAN ZATVORENIK NA SLOBODI, POLICIJA IZDALA HITNO UPOZORENJE GRAĐANIMA! Filmsko bekstvo u Hrvatskoj: Muškarac sa lisicama na rukama pobegao dok su ga uvodili u maricu",
       "url": "https://www.blic.rs/vesti/svet/filmsko-bekstvo-u-hrvatskoj-muskarac-sa-lisicama-na-rukama-pobegao-policiji/l35g3z4",
@@ -323,6 +309,20 @@
       "priority": 66
     },
     {
+      "id": "bog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
+      "title": "PIJAN UZEO SEKIRU I PRETIO ŽENI SMRĆU! Horor u Zemunu: Nasilnik pretukao suprugu pa dohvatio oruđe iz garaže, tužilaštvo traži pritvor!",
+      "url": "https://www.kurir.rs/crna-hronika/10079937/uhapsen-muskarac-u-zemunu-zbog-sumnje-da-je-pijan-pretukao-suprugu-i-pretio-joj-sekirom",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T15:57:02+00:00",
+      "time": "15:57",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "vjt-u-beogradu-formira-predmet-zbog-curenja-informacija-vest",
       "title": "VJT u Beogradu formiraće predmet zbog curenja informacija iz predistražnog postupka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238211/vjt-u-beogradu-formira-predmet-zbog-curenja-informacija/vest",
@@ -405,20 +405,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "vela-sankcije-protiv-zvanicnika-medjunarodnog-krivicnog-suda",
-      "title": "AMERIKA UVELA SANKCIJE PROTIV ZVANIČNIKA MEĐUNARODNOG KRIVIČNOG SUDA: \"Korumpirani i fatalno politizovani sud zlonamerno zloupotrebio ovlašćenja\"",
-      "url": "https://www.kurir.rs/planeta/10080098/amerika-uvela-sankcije-protiv-zvanicnika-medjunarodnog-krivicnog-suda",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T20:05:59+00:00",
-      "time": "20:05",
-      "source": "Kurir",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "ps-nova-rs-vesti-hronika-dvojica-srba-pretucena-u-hrvatskoj-",
@@ -589,20 +575,6 @@
       "priority": 8
     },
     {
-      "id": "079956-budva-pet-vozaca-uhapseno-zbog-saobracajnih-prekrsaja",
-      "title": "DIVLJANJE NA PRIMORJU! Pijan se zakucao u četiri vozila, Turčin i Srbi odbili test na drogu - policija im odmah stavila lisice",
-      "url": "https://www.kurir.rs/region/crna-gora/10079956/budva-pet-vozaca-uhapseno-zbog-saobracajnih-prekrsaja",
-      "date": "2026-08-18",
-      "datetime": "2026-08-18T22:20:00+00:00",
-      "time": "22:20",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "rna-makedonija-letonac-krijumcario-deset-migranata-u-fijatu-",
       "title": "Severna Makedonija: Letonac krijumčario deset migranata u fijatu",
       "url": "https://n1info.rs/region/severna-makedonija-letonac-krijumcario-deset-migranata-u-fijatu/",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "g-izazova-kako-policija-pokusava-da-reformise-hakere-xkflbd3",
+      "title": "'Uradio sam to zbog izazova': Kako policija pokušava da reformiše hakere",
+      "url": "https://www.blic.rs/bbc/uradio-sam-to-zbog-izazova-kako-policija-pokusava-da-reformise-hakere/xkflbd3",
+      "date": "2026-08-18",
+      "datetime": "2026-08-18T17:43:55+00:00",
+      "time": "17:43",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-katastar-mozda-imate-pravo-na-desetine-hiljada-evra-vfgzkb8",
+      "title": "IMATE BANDERU NA SVOM PLACU? Proverite katastar - možda imate pravo na nekoliko hiljada evra",
+      "url": "https://www.blic.rs/biznis/moj-novac/proverite-katastar-mozda-imate-pravo-na-desetine-hiljada-evra/vfgzkb8",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T02:35:00+00:00",
+      "time": "02:35",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
