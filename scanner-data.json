@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "akademija-postaje-levak-za-izbor-podobnih-sudija-i-tuzilaca-",
+      "title": "Đurić: Pravosudna akademija postaje „levak“ za izbor podobnih sudija i tužilaca",
+      "url": "https://n1info.rs/vesti/djuric-pravosudna-akademija-postaje-levak-za-izbor-podobnih-sudija-i-tuzilaca/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T19:14:35+00:00",
+      "time": "19:14",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 125
+    },
+    {
       "id": "ja-povredila-studentkinju-pa-joj-uskratila-medicinsku-pomoc-",
       "title": "Niški studenti: Policija povredila studentkinju, pa joj uskratila medicinsku pomoć",
       "url": "https://vreme.com/drustvo/niski-studenti-policija-povredila-studentkinju-pa-joj-uskratila-medicinsku-pomoc/",
@@ -54,20 +68,6 @@
       "summary": "",
       "breaking": true,
       "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "snik-firme-laznom-dokumentacijom-pribavio-vise-od-40-miliona",
-      "title": "Ухапшен власник фирме, лажном документацијом прибавио више од 40 милиона",
-      "url": "https://www.politika.rs/scc/clanak/779612/uhapsen-vlasnik-firme-laznom-dokumentacijom-pribavio-vise-od-40-miliona",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T17:16:00+00:00",
-      "time": "17:16",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
       "priority": 100
     },
     {
@@ -162,20 +162,6 @@
       "datetime": "2026-08-19T17:36:32+00:00",
       "time": "17:36",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-b92-net-info-svet-260430-sbu-uhapsila-dva-ruska-agenta-vest",
-      "title": "Putine, uhvaćeni su",
-      "url": "https://www.b92.net/info/svet/260430/sbu-uhapsila-dva-ruska-agenta/vest",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T17:35:00+00:00",
-      "time": "17:35",
-      "source": "B92",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -337,48 +323,6 @@
       "priority": 90
     },
     {
-      "id": "rs-tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze-",
-      "title": "TOK: MUP i dalje nije dostavio „skaj” poruke Slaviše Kokeze",
-      "url": "https://www.krik.rs/tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze/",
-      "date": "2026-08-11",
-      "datetime": "2026-08-11T11:16:53+00:00",
-      "time": "11:16",
-      "source": "KRIK",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
-      "id": "raga-protiv-vesica-i-momirovica-stoji-u-mestu-zbog-policije-",
-      "title": "TOK: Istraga protiv Vesića i Momirovića stoji u mestu zbog policije",
-      "url": "https://www.krik.rs/tok-istraga-protiv-vesica-i-momirovica-stoji-u-mestu-zbog-policije/",
-      "date": "2026-07-30",
-      "datetime": "2026-07-30T12:54:39+00:00",
-      "time": "12:54",
-      "source": "KRIK",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 88
-    },
-    {
-      "id": "https-www-krik-rs-nemanja-vidic-dao-iskaz-u-tok-u-",
-      "title": "Nemanja Vidić dao iskaz u TOK-u",
-      "url": "https://www.krik.rs/nemanja-vidic-dao-iskaz-u-tok-u/",
-      "date": "2026-08-17",
-      "datetime": "2026-08-17T14:53:56+00:00",
-      "time": "14:53",
-      "source": "KRIK",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "emacke-vlasti-za-pasivnost-posle-eksplozija-na-severnom-toku",
       "title": "Лидерка АфД оптужила немачке власти за пасивност после експлозија на „Северном току“",
       "url": "https://www.politika.rs/scc/clanak/779627/liderka-afd-optuzila-nemacke-vlasti-za-pasivnost-posle-eksplozija-na-severnom-toku",
@@ -533,18 +477,18 @@
       "priority": 30
     },
     {
-      "id": "ja-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica-",
-      "title": "Agencija za sprečavanje korupcije proverava imovinu Gorana Vesića",
-      "url": "https://www.krik.rs/agencija-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica/",
-      "date": "2026-08-12",
-      "datetime": "2026-08-12T11:01:24+00:00",
-      "time": "11:01",
-      "source": "KRIK",
-      "category": "Корупција",
+      "id": "tps-www-danas-rs-kultura-selakovic-nemamo-zakon-o-pozoristu-",
+      "title": "Selaković: Nemamo zakon o pozorištu, zato je moguć javašluk kakav imamo",
+      "url": "https://www.danas.rs/kultura/selakovic-nemamo-zakon-o-pozoristu/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T19:03:13+00:00",
+      "time": "19:03",
+      "source": "Danas",
+      "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 30
+      "priority": 28
     },
     {
       "id": "ti-hronika-decak-15-dilovao-drogu-na-plazi-u-ulcinju-z0yk92l",
@@ -603,6 +547,20 @@
       "priority": 26
     },
     {
+      "id": "8658-aleksandar-durdev-osudio-napade-na-spc-i-porfirija-vest",
+      "title": "Đurđev: Licemerno je što Crna Gora decenijama nije rešila pitanje kriminala, a sada pokušava da blati patrijarha SPC",
+      "url": "https://www.euronews.rs/srbija/politika/238658/aleksandar-durdev-osudio-napade-na-spc-i-porfirija/vest",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T19:07:00+00:00",
+      "time": "19:07",
+      "source": "Euronews Serbia",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "60444-mup-upozorava-na-prevare-putem-telefonskih-poziva-vest",
       "title": "MUP upozorava građane: Kruži opasna prevara",
       "url": "https://www.b92.net/info/drustvo/260444/mup-upozorava-na-prevare-putem-telefonskih-poziva/vest",
@@ -659,34 +617,6 @@
       "priority": 24
     },
     {
-      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
-      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
-      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
-      "date": "2026-07-30",
-      "datetime": "2026-07-30T15:13:36+00:00",
-      "time": "15:13",
-      "source": "KRIK",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
-      "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
-      "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
-      "date": "2026-07-31",
-      "datetime": "2026-07-31T10:16:52+00:00",
-      "time": "10:16",
-      "source": "CINS",
-      "category": "Насиље у породици",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 22
-    },
-    {
       "id": "-novi-clan-kviza-superpotera-otkrivamo-petog-tragaca-41f4s4q",
       "title": "OVO JE NOVI ČLAN KVIZA \"SUPERPOTERA\" Peti Tragač ima samo 25 godina, a već je osvojio dva miliona i srušio konkurenciju",
       "url": "https://www.blic.rs/zabava/ovo-je-novi-clan-kviza-superpotera-otkrivamo-petog-tragaca/41f4s4q",
@@ -699,6 +629,76 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "bodnaevropa-org-a-bih-spomenik-lazar-banjaluka-33833689-html",
+      "title": "Statua kneza Lazara od četiri tone uskoro iz Srbije stiže u Banjaluku",
+      "url": "https://www.slobodnaevropa.org/a/bih-spomenik-lazar-banjaluka/33833689.html",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T14:20:27+00:00",
+      "time": "14:20",
+      "source": "RSE Balkan",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "lmskog-bekstva-kod-zagreba-robijas-zbrisao-u-sekundi-dgwkked",
+      "title": "(FOTO) AKO GA VIDITE, NE OSTVARUJTE KONTAKT, ODMAH POZOVITE POLICIJU! Opasni zločinac pobegao policajcu \"ispred nosa\" u Hrvatskoj: Žalio se da je gladan, službenik mu otišao po burek, a on se dao u FILMSKI BEG",
+      "url": "https://www.blic.rs/vesti/svet/detalji-filmskog-bekstva-kod-zagreba-robijas-zbrisao-u-sekundi/dgwkked",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T16:35:55+00:00",
+      "time": "16:35",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ina-azerbejdzana-na-elektricnom-biciklu-u-zemunu-pa-pobegao-",
+      "title": "Pijan udario državljanina Azerbejdžana na električnom biciklu u Zemunu, pa pobegao",
+      "url": "https://n1info.rs/vesti/pijan-udario-drzavljanina-azerbejdzana-na-elektricnom-biciklu-u-zemunu-pa-pobegao/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T16:26:47+00:00",
+      "time": "16:26",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "10080878-policija-upala-u-kucu-bivseg-decka-hejden-panetijer",
+      "title": "Nakon smrti Kličkove bivše, policija pokucala na vrata: Glumičina smrt se dodatno istražuje, Brajan je bio sa njom u trenutku smrti",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/10080878/policija-upala-u-kucu-bivseg-decka-hejden-panetijer",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T15:24:50+00:00",
+      "time": "15:24",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-haos-u-bojniku-posle-svade-kolima-pokosio-cetiri-osobe-vest",
+      "title": "Haos u Bojniku: Posle svađe kolima pokosio četiri osobe",
+      "url": "https://www.euronews.rs/srbija/aktuelno/238567/haos-u-bojniku-posle-svade-kolima-pokosio-cetiri-osobe/vest",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T10:47:00+00:00",
+      "time": "10:47",
+      "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
