@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "adarske-sprecite-da-orbanovi-mehanizmi-uguse-medije-u-srbiji",
-      "title": "Ješić u otvorenom pismu premijeru Mađarske: Sprečite da Orbanovi  mehanizmi uguše medije u Srbiji",
-      "url": "https://beta.rs/content/250436-jesic-u-otvorenom-pismu-premijeru-madarske-sprecite-da-orbanovi-mehanizmi-uguse-medije-u-srbiji",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T10:55:11+00:00",
-      "time": "10:55",
-      "source": "Beta",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "-238451-zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici-vest",
       "title": "Nasilje u porodici u Zemunu: Pijan udarao suprugu, pretio joj smrću i uzeo sekiru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238451/zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici/vest",
@@ -27,6 +13,48 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "a-koja-je-automobilom-usmrtila-zenu-koja-je-sedela-na-klupi-",
+      "title": "Uhapšena Nišlijka koja je automobilom usmrtila ženu koja je sedela na klupi",
+      "url": "https://n1info.rs/vesti/uhapsena-nislijka-koja-je-automobilom-usmrtila-zenu-koja-je-sedela-na-klupi/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T12:52:10+00:00",
+      "time": "12:52",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "zena-sletela-sa-puta-i-udarila-baku-dok-je-sedela-na-ypzwzrl",
+      "title": "BAKA STRADALA DOK JE SEDELA NA KLUPI! Jezivi detalji nesreće u Nišu: Žena sletela sa puta i udarila je \"sitroenom\", odmah je uhapšena",
+      "url": "https://www.blic.rs/vesti/hronika/jezivi-detalji-nesrece-u-nisu-zena-sletela-sa-puta-i-udarila-baku-dok-je-sedela-na/ypzwzrl",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T12:42:52+00:00",
+      "time": "12:42",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "ece-u-nisu-kolima-udarila-staricu-78-koja-je-sedela-na-klupi",
+      "title": "BAKA POGINULA DOK JE SEDELA NA KLUPI! Novi detalji jezive saobraćajke u Nišu: Uhapšena žena koja je kolima sletela sa puta i pokosila staricu",
+      "url": "https://www.kurir.rs/crna-hronika/10080704/uhapsena-zena-58-nakon-nesrece-u-nisu-kolima-udarila-staricu-78-koja-je-sedela-na-klupi",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T12:40:44+00:00",
+      "time": "12:40",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "rajinac-osumnjicen-za-diverziju-na-gasovodu-severni-tok-html",
@@ -43,13 +71,13 @@
       "priority": 92
     },
     {
-      "id": "sen-kod-leskovca-automobilom-udario-cetiri-osobe-posle-svade",
-      "title": "Ухапшен код Лесковца: аутомобилом ударио четири особе после свађе",
-      "url": "https://www.politika.rs/scc/clanak/779532/uhapsen-kod-leskovca-automobilom-udario-cetiri-osobe-posle-svade",
+      "id": "80598-ovo-je-vladimir-z-osumnjicen-za-sabotazu-severnog-toka",
+      "title": "OVO JE UKRAJINAC UHAPŠEN ZBOG SABOTAŽE SEVERNOG TOKA: Vladimir Z. već jednom izmakao Nemcima, sada mu sledi IZRUČENJE",
+      "url": "https://www.kurir.rs/planeta/10080598/ovo-je-vladimir-z-osumnjicen-za-sabotazu-severnog-toka",
       "date": "2026-08-19",
-      "datetime": "2026-08-19T11:22:00+00:00",
-      "time": "11:22",
-      "source": "Politika",
+      "datetime": "2026-08-19T11:16:49+00:00",
+      "time": "11:16",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -119,20 +147,6 @@
       "date": "2026-08-19",
       "datetime": "2026-08-19T10:12:26+00:00",
       "time": "10:12",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-nova-rs-vesti-svet-dvojica-pijanih-mladica-pretukli-srbina-",
-      "title": "Srbin pretučen na Pagu: Napala ga dvojica pijanih mladića, jednom određen istražni zatvor",
-      "url": "https://nova.rs/vesti/svet/dvojica-pijanih-mladica-pretukli-srbina/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T09:59:07+00:00",
-      "time": "09:59",
       "source": "Nova",
       "category": "Хапшења",
       "summary": "",
@@ -407,6 +421,20 @@
       "priority": 66
     },
     {
+      "id": "emisije-bez-cenzure-o-poseti-zelenskog-i-sastanku-s-vucicem-",
+      "title": "Gosti emisije „Bez cenzure“ o poseti Zelenskog i sastanku s Vučićem",
+      "url": "https://www.ktv.rs/2026/08/19/gosti-emisije-bez-cenzure-o-poseti-zelenskog-i-sastanku-s-vucicem/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T13:04:03+00:00",
+      "time": "13:04",
+      "source": "KTV",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "ska-policija-uhapsila-muskarca-iz-leposavica-na-jarinju-vest",
       "title": "Hapšenje na Jarinju: Priveden Srbin zbog sumnje na falsifikovanje dokumenata",
       "url": "https://www.euronews.rs/srbija/aktuelno/238322/kosovska-policija-uhapsila-muskarca-iz-leposavica-na-jarinju/vest",
@@ -477,20 +505,6 @@
       "priority": 30
     },
     {
-      "id": "ncije-pokrenule-istragu-poslanika-i-predsednickih-savetnika-",
-      "title": "Ukrajinske antikorupcijske agencije pokrenule istragu poslanika i predsedničkih savetnika",
-      "url": "https://www.danas.rs/svet/ukrajinske-antikorupcijske-agencije-pokrenule-istragu-poslanika-i-predsednickih-savetnika/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T09:12:35+00:00",
-      "time": "09:12",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "-od-24-sprovela-samo-tri-preporuke-za-sprecavanje-korupcije-",
       "title": "GREKO: Srbija od 24 sprovela samo tri preporuke za sprečavanje korupcije",
       "url": "https://www.ktv.rs/2026/08/18/greko-srbija-od-24-sprovela-samo-tri-preporuke-za-sprecavanje-korupcije/",
@@ -517,6 +531,20 @@
       "breaking": false,
       "alert": false,
       "priority": 30
+    },
+    {
+      "id": "rvatskom-zatvoru-sina-su-pitali-gde-mu-je-cetnicka-kapa-vest",
+      "title": "Nikolina Bačkonja Filipović o hapšenju i danima u hrvatskom zatvoru: &quot;Sina su pitali gde mu je četnička kapa&quot;",
+      "url": "https://www.b92.net/info/politika/260323/nikolina-backonja-filipovic-o-hapsenju-i-danima-u-hrvatskom-zatvoru-sina-su-pitali-gde-mu-je-cetnicka-kapa/vest",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T12:18:00+00:00",
+      "time": "12:18",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "kinja-zbog-slike-sina-sa-sajkacom-u-zatvoru-u-hrvatskoj-vest",
@@ -561,6 +589,20 @@
       "priority": 26
     },
     {
+      "id": "0-merc-zestoko-osudio-izjave-ben-gvira-nehumano-i-nezakonito",
+      "title": "Мерц жестоко осудио изјаве Бен Гвира: Нехумано и незаконито",
+      "url": "https://www.politika.rs/scc/clanak/779550/merc-zestoko-osudio-izjave-ben-gvira-nehumano-i-nezakonito",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T12:32:00+00:00",
+      "time": "12:32",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "zamenicu-sefa-kabineta-irinu-mudru-usred-korupcionaske-afere",
       "title": "Зеленски сменио заменицу шефа кабинета Ирину Мудру усред корупционашке афере",
       "url": "https://www.politika.rs/scc/clanak/779481/zelenski-smenio-zamenicu-sefa-kabineta-irinu-mudru-usred-korupcionaske-afere",
@@ -568,20 +610,6 @@
       "datetime": "2026-08-19T12:08:00+00:00",
       "time": "12:08",
       "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "stio-zamenicu-sefa-predsednicke-kancelarije-irinu-mudru-vest",
-      "title": "Zelenski otpustio zamenicu šefa svog kabineta: U sred istrage &quot;Forest Gamp&quot;",
-      "url": "https://www.b92.net/info/svet/260299/zelenski-otpustio-zamenicu-sefa-predsednicke-kancelarije-irinu-mudru/vest",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T11:17:00+00:00",
-      "time": "11:17",
-      "source": "B92",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -645,20 +673,6 @@
       "priority": 12
     },
     {
-      "id": "smeta-novac-za-borce-ali-ne-i-milioni-iz-inostranstva-za-nvo",
-      "title": "Јованов: Слободној Европи смета новац за борце, али не и милиони из иностранства за НВО",
-      "url": "https://www.politika.rs/scc/clanak/779537/jovanov-slobodnoj-evropi-smeta-novac-za-borce-ali-ne-i-milioni-iz-inostranstva-za-nvo",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T11:32:00+00:00",
-      "time": "11:32",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "rijecku-luku-uplovila-solakovna-jahta-vredna-70-miliona-evra",
       "title": "ŠOLAKOVA JAHTA VREDNA 70 MILIONA EVRA UPLOVILA U RIJEČKU LUKU! Hrvatski mediji tvrde: Luksuz za deset gostiju koju služi brojna posada",
       "url": "https://www.kurir.rs/vesti/politika/10080549/hrvatski-mediji-u-rijecku-luku-uplovila-solakovna-jahta-vredna-70-miliona-evra",
@@ -673,27 +687,13 @@
       "priority": 8
     },
     {
-      "id": "-privela-srpsku-pevacicu-svetlanu-spajic-u-hrvatskoj-xkzx8s6",
-      "title": "POLICIJA PRIVELA SRPSKU PEVAČICU SVETLANU SPAJIĆ U HRVATSKOJ Izrečena joj kazna zbog pesme iz 19. veka",
-      "url": "https://www.blic.rs/zabava/policija-privela-srpsku-pevacicu-svetlanu-spajic-u-hrvatskoj/xkzx8s6",
+      "id": "svetlana-spajic-je-proglasena-krivom-pred-sudom-u-zadru-vest",
+      "title": "Policija privela srpsku pevačicu u Hrvatskoj: Izrečena joj kazna zbog pesme iz 19. veka",
+      "url": "https://www.b92.net/zivot/aktuelno/260338/svetlana-spajic-je-proglasena-krivom-pred-sudom-u-zadru/vest",
       "date": "2026-08-19",
-      "datetime": "2026-08-19T11:58:24+00:00",
-      "time": "11:58",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "https-www-danas-rs-svet-region-hapsenje-napad-liljani-",
-      "title": "Hapšenje u Brčkom: Napali dva maloletnika, jer su nosili majice sa ljiljanima",
-      "url": "https://www.danas.rs/svet/region/hapsenje-napad-liljani/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T11:54:23+00:00",
-      "time": "11:54",
-      "source": "Danas",
+      "datetime": "2026-08-19T12:52:00+00:00",
+      "time": "12:52",
+      "source": "B92",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
