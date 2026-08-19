@@ -15,20 +15,6 @@
       "priority": 125
     },
     {
-      "id": "ja-povredila-studentkinju-pa-joj-uskratila-medicinsku-pomoc-",
-      "title": "Niški studenti: Policija povredila studentkinju, pa joj uskratila medicinsku pomoć",
-      "url": "https://vreme.com/drustvo/niski-studenti-policija-povredila-studentkinju-pa-joj-uskratila-medicinsku-pomoc/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T16:44:09+00:00",
-      "time": "16:44",
-      "source": "Vreme",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "arac-iz-bajine-baste-ukrao-vise-od-40-miliona-dinara-pjf3jet",
       "title": "(VIDEO) LAŽIRAO DOKUMENTACIJU, PA POKRAO VIŠE OD 40 MILIONA DINARA! Uhapšen prevarant iz Bajine Bašte: Policija ga uvela u kola s lisicama na rukama",
       "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-iz-bajine-baste-ukrao-vise-od-40-miliona-dinara/pjf3jet",
@@ -41,6 +27,20 @@
       "breaking": false,
       "alert": true,
       "priority": 102
+    },
+    {
+      "id": "ije-uputio-hitan-apel-gradjanima-zbog-dvodnevnih-zaliha-krvi",
+      "title": "HITAN APEL IZ INSTITUTA ZA TRANSFUZIJU KRVI! Zalihe krvi na kritičnom minimumu, nedostaju ove grupe: Lekari pozivaju sve zdrave građane da hitno daju krv!",
+      "url": "https://www.kurir.rs/vesti/drustvo/10081120/institut-za-transfuziju-krvi-srbije-uputio-hitan-apel-gradjanima-zbog-dvodnevnih-zaliha-krvi",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T20:33:48+00:00",
+      "time": "20:33",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
     },
     {
       "id": "biznis-pakao-u-rusiji-putin-hitno-povukao-ovaj-potez-lew6176",
@@ -323,18 +323,18 @@
       "priority": 84
     },
     {
-      "id": "skoj-uhapsen-ukrajinac-osumnjicen-za-sabotazu-severnog-toka-",
-      "title": "U Hrvatskoj uhapšen Ukrajinac osumnjičen za sabotažu Severnog toka",
-      "url": "https://vreme.com/svet/u-hrvatskoj-uhapsen-ukrajinac-osumnjicen-za-sabotazu-severnog-toka/",
+      "id": "asni-begunac-iz-hrvatske-za-kojim-se-tragalo-30-sati-pq695kh",
+      "title": "UHVAĆEN OPASNI BEGUNAC ZA KOJIM SE TRAGALO 30 SATI! Pobegao s lisicama na rukama dok mu je policajac kupovao BUREK kod Zagreba, umalo ga pokosio automobil dok je trčao",
+      "url": "https://www.blic.rs/vesti/svet/uhvacen-opasni-begunac-iz-hrvatske-za-kojim-se-tragalo-30-sati/pq695kh",
       "date": "2026-08-19",
-      "datetime": "2026-08-19T10:48:11+00:00",
-      "time": "10:48",
-      "source": "Vreme",
-      "category": "Тужилаштво",
+      "datetime": "2026-08-19T20:42:41+00:00",
+      "time": "20:42",
+      "source": "Blic",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
     },
     {
       "id": "-uhapsen-muskarac-iz-bajine-baste-zbog-zloupotrebe-polozaja-",
@@ -407,6 +407,20 @@
       "priority": 38
     },
     {
+      "id": "enice-sefa-kabineta-Zelenskog-ona-negirala-navode-o-hapsenju",
+      "title": "ŠEMA PRANJA TRI MILIONA EVRA U UKRAJINI: Pokrenuta istraga protiv bivše zamenice šefa kabineta Zelenskog, ona negirala navode o hapšenju",
+      "url": "https://www.kurir.rs/planeta/10081107/SEMA-PRANJA-TRI-MILIONA-EVRA-U-UKRAJINI-Pokrenuta-istraga-protiv-bivse-zamenice-sefa-kabineta-Zelenskog-ona-negirala-navode-o-hapsenju",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T20:27:21+00:00",
+      "time": "20:27",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 34
+    },
+    {
       "id": "i-da-pokazu-bankovne-racune-zakonska-norma-nije-obavezujuca-",
       "title": "Spajić i 17 ministara Crne Gore odbili da pokažu bankovne račune: Zakonska norma nije obavezujuća",
       "url": "https://nova.rs/vesti/svet/spajic-i-17-ministara-crne-gore-odbili-da-pokazu-bankovne-racune-zakonska-norma-nije-obavezujuca/",
@@ -414,20 +428,6 @@
       "datetime": "2026-08-19T20:15:51+00:00",
       "time": "20:15",
       "source": "Nova",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "https-vreme-com-vesti-bojana-selakovic-greco-evropska-unija-",
-      "title": "Selaković: Reforme stoje tamo gde bi vlast trebalo samu sebe da podvrgne kontroli",
-      "url": "https://vreme.com/vesti/bojana-selakovic-greco-evropska-unija/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T16:09:21+00:00",
-      "time": "16:09",
-      "source": "Vreme",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -517,6 +517,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "nje-o-predlogu-zakona-o-pravosudnoj-akademiji-odrzano-u-nisu",
+      "title": "Шесто јавно слушање о Предлогу закона о Правосудној академији одржано у Нишу",
+      "url": "https://www.politika.rs/scc/clanak/779650/sesto-javno-slusanje-o-predlogu-zakona-o-pravosudnoj-akademiji-odrzano-u-nisu",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T20:40:00+00:00",
+      "time": "20:40",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "8658-aleksandar-durdev-osudio-napade-na-spc-i-porfirija-vest",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "r-trazi-izbore-usred-rata-ankete-donele-veliko-iznenadjenje-",
-      "title": "Zelenski dobio najopasnijeg rivala: Smenjeni ministar traži izbore usred rata, ankete donele veliko iznenađenje",
-      "url": "https://nova.rs/vesti/svet/zelenski-dobio-najopasnijeg-rivala-smenjeni-ministar-trazi-izbore-usred-rata-ankete-donele-veliko-iznenadjenje/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T20:26:27+00:00",
-      "time": "20:26",
-      "source": "Nova",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
