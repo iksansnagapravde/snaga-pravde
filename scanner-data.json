@@ -57,20 +57,6 @@
       "priority": 94
     },
     {
-      "id": "urir-rs-sport-fudbal-10082188-uros-milosevic-kokain-hapsenje",
-      "title": "DRAMA! Srpski fudbaler uhapšen sa 1,5 tona kokaina!",
-      "url": "https://www.kurir.rs/sport/fudbal/10082188/uros-milosevic-kokain-hapsenje",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T21:45:16+00:00",
-      "time": "21:45",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-srpski-fudbaler-uhapsen-u-portugalu-sa-15-tona-kokaina-vest",
       "title": "Srpski fudbaler &quot;pao&quot; sa 1,5 tona kokaina",
       "url": "https://www.b92.net/info/hronika/260761/srpski-fudbaler-uhapsen-u-portugalu-sa-15-tona-kokaina/vest",
@@ -127,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "-hrvatskoj-za-ukrajinca-uhapsenog-zbog-napada-na-severni-tok",
-      "title": "Istražni pritvoru u Hrvatskoj za Ukrajinca uhapšenog zbog napada na Severni tok",
-      "url": "https://beta.rs/content/250534-istrazni-pritvoru-u-hrvatskoj-za-ukrajinca-uhapsenog-zbog-napada-na-severni-tok",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T18:45:08+00:00",
-      "time": "18:45",
-      "source": "Beta",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "kovic-jedan-od-vodja-kavackog-klana-uhapsen-na-kritu-1v9rjwr",
       "title": "(FOTO) JEDAN OD VOĐA \"KAVČANA\" UHAPŠEN NA KRITU! \"Vojnik-ubica\" kod sebe imao lažna dokumenta, Srbija za njim raspisala poternicu",
       "url": "https://www.blic.rs/vesti/hronika/uros-ninkovic-jedan-od-vodja-kavackog-klana-uhapsen-na-kritu/1v9rjwr",
@@ -162,6 +134,20 @@
       "datetime": "2026-08-20T17:21:21+00:00",
       "time": "17:21",
       "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "0081979-maloletnik-uhapsen-zbog-pretnji-pistoljem-u-beogradu",
+      "title": "PRETIO DA ĆE DONETI PIŠTOLJ I OBRAČUNATI SE SA SVIMA Haos nakon popravnog ispita u Beogradu: Uhapšen maloletnik",
+      "url": "https://www.kurir.rs/crna-hronika/10081979/maloletnik-uhapsen-zbog-pretnji-pistoljem-u-beogradu",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T15:55:02+00:00",
+      "time": "15:55",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -547,6 +533,20 @@
       "priority": 8
     },
     {
+      "id": "maju-informacije-o-navodnim-napadima-na-devojke-na-vozdovcu-",
+      "title": "Policija pozvala građane da se jave ako imaju informacije o navodnim napadima na devojke na Voždovcu",
+      "url": "https://www.danas.rs/vesti/drustvo/policija-pozvala-gradjane-da-se-jave-ako-imaju-informacije-o-navodnim-napadima-na-devojke-na-vozdovcu/",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T22:53:27+00:00",
+      "time": "22:53",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "im-napadima-na-devojke-u-brace-jerkovic-i-medakovicu-88nbwtv",
       "title": "UZBUNA U BRAĆE JERKOVIĆ I MEDAKOVIĆU Kruže jezive tvrdnje o zlostavljanju devojaka, oglasila se policija: Ako imate ove informacije, ODMAH SE JAVITE",
       "url": "https://www.blic.rs/vesti/beograd/oglasila-se-policija-o-navodnim-napadima-na-devojke-u-brace-jerkovic-i-medakovicu/88nbwtv",
@@ -603,6 +603,20 @@
       "priority": 4
     },
     {
+      "id": "no-30-kilograma-marihuane-u-ilegalnoj-laboratoriji-u-grockoj",
+      "title": "\"PAO\" DILERSKI DVOJAC KOD GROCKE! Policija otkrila tajnu laboratoriju za uzgoj marihuane: Evo kako su im stavljene lisice na ruke (FOTO)",
+      "url": "https://www.kurir.rs/crna-hronika/10081976/uhapsene-dve-osobe-i-zaplenjeno-30-kilograma-marihuane-u-ilegalnoj-laboratoriji-u-grockoj",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T15:53:44+00:00",
+      "time": "15:53",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "7-putujete-autobusom-na-letovanje-mup-pojacava-kontrole-vest",
       "title": "Putujete autobusom na letovanje? MUP pojačava kontrole - evo šta policija proverava",
       "url": "https://www.euronews.rs/srbija/aktuelno/238687/putujete-autobusom-na-letovanje-mup-pojacava-kontrole/vest",
@@ -645,6 +659,34 @@
       "priority": 4
     },
     {
+      "id": "ovac-hrvatska-ukida-naplatne-kucice-na-auto-putevima-0gzdlt7",
+      "title": "Ukidaju se naplatne rampe u komšiluku: Evo kako će se ubuduće putovati do mora i šta to znači za srpske vozače",
+      "url": "https://www.blic.rs/biznis/moj-novac/hrvatska-ukida-naplatne-kucice-na-auto-putevima/0gzdlt7",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T22:53:00+00:00",
+      "time": "22:53",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-bezbedan-grad-preko-koje-strani-vozaci-mogu-da-plate-kazne-",
+      "title": "MUP S. Makedonije pustio u rad aplikaciju Bezbedan grad preko koje strani vozači mogu da plate kazne",
+      "url": "https://www.danas.rs/svet/region/mup-s-makedonije-pustio-u-rad-aplikaciju-bezbedan-grad-preko-koje-strani-vozaci-mogu-da-plate-kazne/",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T22:43:23+00:00",
+      "time": "22:43",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "al-albert-rijera-debi-crvena-zvezda-pobeda-viktorija-plzenj-",
       "title": "Rijera nezadovoljan posle velike pobede Zvezde: \"Nemamo čarobni štapić - ovo nije golf ili tenis, MVP je tim\"",
       "url": "https://nova.rs/sport/fudbal/albert-rijera-debi-crvena-zvezda-pobeda-viktorija-plzenj/",
@@ -652,48 +694,6 @@
       "datetime": "2026-08-20T22:12:55+00:00",
       "time": "22:12",
       "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "tps-radar-nova-rs-kultura-radar-izbor-urednika-preporuke-26-",
-      "title": "Izbor urednika: Mračni grad, Zebnja na rasklapanje…",
-      "url": "https://radar.nova.rs/kultura-radar/izbor-urednika-preporuke-26/",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "u-bezbedan-grad-preko-koje-strani-vozaci-mogu-da-plate-kazne",
-      "title": "MUP S. Makedonije pustio u rad aplikaciju Bezbedan grad preko koje strani vozači mogu da plate kazne",
-      "url": "https://beta.rs/content/250544-mup-s-makedonije-pustio-u-rad-aplikaciju-bezbedan-grad-preko-koje-strani-vozaci-mogu-da-plate-kazne",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T22:00:09+00:00",
-      "time": "22:00",
-      "source": "Beta",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "-grada-zabranio-bicikle-nakon-sto-ga-je-jedan-udario-yj579b1",
-      "title": "GRADONAČELNIKA UDARIO BICIKL, ON IH ODMAH ZABRANIO! Šokantna odluka u italijanskom gradu: Građani pobesneli",
-      "url": "https://www.blic.rs/vesti/svet/gradonacelnik-evropskog-grada-zabranio-bicikle-nakon-sto-ga-je-jedan-udario/yj579b1",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T21:59:00+00:00",
-      "time": "21:59",
-      "source": "Blic",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
