@@ -57,20 +57,6 @@
       "priority": 95
     },
     {
-      "id": "https-vreme-com-vreme-kako-policajci-razvaljuju-policiju-",
-      "title": "Kako policajci razvaljuju policiju",
-      "url": "https://vreme.com/vreme/kako-policajci-razvaljuju-policiju/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T20:58:25+00:00",
-      "time": "20:58",
-      "source": "Vreme",
-      "category": "Организовани криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 95
-    },
-    {
       "id": "-238451-zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici-vest",
       "title": "Nasilje u porodici u Zemunu: Pijan udarao suprugu, pretio joj smrću i uzeo sekiru",
       "url": "https://www.euronews.rs/srbija/aktuelno/238451/zemun-uhapsen-osumnjiceni-za-nasilje-u-porodici/vest",
@@ -120,20 +106,6 @@
       "datetime": "2026-08-20T09:02:36+00:00",
       "time": "09:02",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-uhapsena-na-derdapu-2-u-vozilu-pronadeni-narkotici-i-oruzje",
-      "title": "Двојица Француза ухапшена на Ђердапу 2, у возилу пронађени наркотици и оружје",
-      "url": "https://www.politika.rs/scc/clanak/779714/dvojica-francuza-uhapsena-na-derdapu-2-u-vozilu-pronadeni-narkotici-i-oruzje",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T08:49:00+00:00",
-      "time": "08:49",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -281,6 +253,20 @@
       "priority": 84
     },
     {
+      "id": "jani-u-negotinu-pronadjeno-440-semenki-marihuane-i-municija-",
+      "title": "Uhapšeni francuski državljani u Negotinu, pronađeno 440 semenki marihuane i municija",
+      "url": "https://n1info.rs/vesti/uhapseni-francuski-drzavljani-u-negotinu-pronadjeno-440-semenki-marihuane-i-municija/",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T09:53:00+00:00",
+      "time": "09:53",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "pu-2-u-kolima-svercovali-semenke-kanabisa-i-municiju-kf8rmmm",
       "title": "FRANCUZI PALI NA \"ĐERDAPU 2\" U kolima švercovali semenke KANABISA i municiju, policija ih odmah uhapsila",
       "url": "https://www.blic.rs/vesti/hronika/francuzi-pali-na-djerdapu-2-u-kolima-svercovali-semenke-kanabisa-i-municiju/kf8rmmm",
@@ -351,18 +337,32 @@
       "priority": 30
     },
     {
-      "id": "sef-kompanije-evergrande-osudjen-na-dozivotni-zatvor-lw2mbjx",
-      "title": "Kraj za čoveka koji je napravio kinesko carstvo nekretnina! Bivši šef kompanije \"Evergrande\" osuđen na doživotni zatvor: Kompanija ostavila dug od 300 milijardi dolara",
-      "url": "https://www.blic.rs/biznis/vesti/bivsi-sef-kompanije-evergrande-osudjen-na-dozivotni-zatvor/lw2mbjx",
+      "id": "tranke-zbog-prevremene-kampanje-i-zloupotrebe-javnih-resursa",
+      "title": "ЦИК БиХ казнио странке због превремене кампање и злоупотребе јавних ресурса",
+      "url": "https://www.politika.rs/scc/clanak/779732/cik-bih-kaznio-stranke-zbog-prevremene-kampanje-i-zloupotrebe-javnih-resursa",
       "date": "2026-08-20",
-      "datetime": "2026-08-20T06:03:46+00:00",
-      "time": "06:03",
-      "source": "Blic",
+      "datetime": "2026-08-20T09:47:00+00:00",
+      "time": "09:47",
+      "source": "Politika",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "slednjih-pet-godina-neprekidan-progon-nad-srbima-na-kim-html",
+      "title": "Вучић: Упутио сам писмо Рутеу, последњих пет година непрекидан прогон над Србима на КиМ",
+      "url": "https://www.rts.rs/vesti/politika/6023254/vucic-uputio-sam-pismo-ruteu-poslednjih-pet-godina-neprekidan-progon-nad-srbima-na-kim.html",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T10:01:43+00:00",
+      "time": "10:01",
+      "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "hapseni-francuzi-na-granici-srbije-imali-drogu-i-oruzje-vest",
@@ -505,6 +505,20 @@
       "priority": 8
     },
     {
+      "id": "-plazi-u-albaniji-evo-gde-je-nadjen-ubica-turiste-20-mby4fxd",
+      "title": "(VIDEO) DETALJI KRVAVOG PIRA NA PLAŽI U ALBANIJI! Turistu (20) tukli konobari, radnik obezbeđenja ga IZBO NOŽEM: Evo gde se SKRIVAO ubica",
+      "url": "https://www.blic.rs/vesti/svet/video-detalji-krvavog-obracuna-na-plazi-u-albaniji-evo-gde-je-nadjen-ubica-turiste-20/mby4fxd",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T10:00:58+00:00",
+      "time": "10:00",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "-video-snimke-otkriveni-novi-detalji-smrti-hejden-panetijer-",
       "title": "Policija čeka ključne video-snimke: Otkriveni novi detalji smrti Hejden Panetijer",
       "url": "https://nova.rs/zabava/sudbine/policija-ceka-kljucne-video-snimke-otkriveni-novi-detalji-smrti-hejden-panetijer/",
@@ -624,20 +638,6 @@
       "datetime": "2026-08-20T06:14:16+00:00",
       "time": "06:14",
       "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-putevima-ka-moru-mup-ceslja-sve-turisticke-autobuse-dnssnsf",
-      "title": "MUP NA NOGAMA, OPŠTI PRETRES NA PUTEVIMA KA MORU! Češljaju se svi turistički autobusi: Policija proverava stvar koja može da SPASI ŽIVOT",
-      "url": "https://www.blic.rs/vesti/drustvo/opsti-pretres-na-putevima-ka-moru-mup-ceslja-sve-turisticke-autobuse/dnssnsf",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T06:10:25+00:00",
-      "time": "06:10",
-      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
