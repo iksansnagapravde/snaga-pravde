@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 1920.0,
+    "difference": 399998080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_Odluka popravka Fiat doblo.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2800000.0,
     "lowest": 3370.0,
     "difference": 2796630.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 113783751,
     "file": "documents/113783751_Odluka.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 34220.4,
-    "lowest": 2202.0,
-    "difference": 32018.4,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100172240,
-    "file": "documents/100172240_924 O-181.pdf"
   }
 ]
