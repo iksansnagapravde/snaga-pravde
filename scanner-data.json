@@ -15,20 +15,6 @@
       "priority": 125
     },
     {
-      "id": "ije-uputio-hitan-apel-gradjanima-zbog-dvodnevnih-zaliha-krvi",
-      "title": "HITAN APEL IZ INSTITUTA ZA TRANSFUZIJU KRVI! Zalihe krvi na kritičnom minimumu, nedostaju ove grupe: Lekari pozivaju sve zdrave građane da hitno daju krv!",
-      "url": "https://www.kurir.rs/vesti/drustvo/10081120/institut-za-transfuziju-krvi-srbije-uputio-hitan-apel-gradjanima-zbog-dvodnevnih-zaliha-krvi",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T20:33:48+00:00",
-      "time": "20:33",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "biznis-pakao-u-rusiji-putin-hitno-povukao-ovaj-potez-lew6176",
       "title": "PAKAO U RUSIJI! Kilometarski redovi na pumpama, rafinerije SPRŽENE! Putin hitno uveo RESTRIKCIJE!",
       "url": "https://www.blic.rs/biznis/pakao-u-rusiji-putin-hitno-povukao-ovaj-potez/lew6176",
@@ -197,6 +183,20 @@
       "priority": 92
     },
     {
+      "id": "ltura-10080903-dva-muskarca-uhapsena-zbog-smrti-influenserke",
+      "title": "Sonjino spaljeno telo pronađeno u vinogradu: Dva muškarca uhapšena zbog smrti influenserke",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/10080903/dva-muskarca-uhapsena-zbog-smrti-influenserke",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T15:54:15+00:00",
+      "time": "15:54",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "evo-zadrzavanje-zbog-sumnje-na-odavanje-tajnih-podataka-vest",
       "title": "Uhapšena službenica policije kod Alibunara: Sumnja se da je uzimala poverljive podatke iz evidencije",
       "url": "https://www.euronews.rs/srbija/aktuelno/238625/pancevo-zadrzavanje-zbog-sumnje-na-odavanje-tajnih-podataka/vest",
@@ -309,18 +309,18 @@
       "priority": 84
     },
     {
-      "id": "one-pronasla-marihuanu-i-kokain-oduzeti-i-motocikl-i-skutera",
-      "title": "UHAPŠEN MALOLETNI DILER U ULCINJU! Pao sa sedam paketića marihuane, policija privela i muškarca sa Kosmeta zbog kokaina, oduzeti motocikl i osam vodenih skutera",
-      "url": "https://www.kurir.rs/region/crna-gora/10080712/policija-u-ulcinju-tokom-turisticke-sezone-pronasla-marihuanu-i-kokain-oduzeti-i-motocikl-i-skutera",
+      "id": "-10080857-uhapsena-sluzbenica-policijske-stanice-u-alibunaru",
+      "title": "UHAPŠENA POLICIJSKA SLUŽBENICA IZ STANICE ALIBUNAR: Tužilaštvo otkrilo sve detalje, evo šta joj se stavlja na teret!",
+      "url": "https://www.kurir.rs/crna-hronika/10080857/uhapsena-sluzbenica-policijske-stanice-u-alibunaru",
       "date": "2026-08-19",
-      "datetime": "2026-08-19T22:01:00+00:00",
-      "time": "22:01",
+      "datetime": "2026-08-19T14:43:32+00:00",
+      "time": "14:43",
       "source": "Kurir",
-      "category": "Полиција",
+      "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 70
+      "priority": 72
     },
     {
       "id": "asni-begunac-iz-hrvatske-za-kojim-se-tragalo-30-sati-pq695kh",
@@ -405,20 +405,6 @@
       "breaking": false,
       "alert": false,
       "priority": 38
-    },
-    {
-      "id": "-rs-planeta-10081107-sema-pranja-tri-miliona-evra-u-ukrajini",
-      "title": "ŠEMA PRANJA TRI MILIONA EVRA U UKRAJINI: Pokrenuta istraga protiv bivše zamenice šefa kabineta Zelenskog, ona negirala navode o hapšenju",
-      "url": "https://www.kurir.rs/planeta/10081107/sema-pranja-tri-miliona-evra-u-ukrajini",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T20:27:21+00:00",
-      "time": "20:27",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 34
     },
     {
       "id": "i-da-pokazu-bankovne-racune-zakonska-norma-nije-obavezujuca-",
@@ -645,6 +631,20 @@
       "priority": 4
     },
     {
+      "id": "10080878-policija-upala-u-kucu-bivseg-decka-hejden-panetijer",
+      "title": "Nakon smrti Kličkove bivše, policija pokucala na vrata: Glumičina smrt se dodatno istražuje, Brajan je bio sa njom u trenutku smrti",
+      "url": "https://www.kurir.rs/zabava/pop-kultura/10080878/policija-upala-u-kucu-bivseg-decka-hejden-panetijer",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T15:24:50+00:00",
+      "time": "15:24",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "-haos-u-bojniku-posle-svade-kolima-pokosio-cetiri-osobe-vest",
       "title": "Haos u Bojniku: Posle svađe kolima pokosio četiri osobe",
       "url": "https://www.euronews.rs/srbija/aktuelno/238567/haos-u-bojniku-posle-svade-kolima-pokosio-cetiri-osobe/vest",
@@ -687,13 +687,13 @@
       "priority": 0
     },
     {
-      "id": "u-smenjen-svestenik-koji-je-obezbedjivao-smestaj-za-migrante",
-      "title": "SKANDAL U VATIKANU: Smenjen sveštenik koji je stekao slavu i kritike zbog obezbeđivanja smeštaja za migrante",
-      "url": "https://www.kurir.rs/planeta/10081151/skandal-u-vatikanu-smenjen-svestenik-koji-je-obezbedjivao-smestaj-za-migrante",
+      "id": "ti-svet-portugal-zabranio-burke-kazne-i-do-3000-evra-jscz47y",
+      "title": "PORTUGAL ZABRANIO BURKE  Kazne i do 3.000 evra, evo ko je izuzet od novog zakona",
+      "url": "https://www.blic.rs/vesti/svet/portugal-zabranio-burke-kazne-i-do-3000-evra/jscz47y",
       "date": "2026-08-19",
-      "datetime": "2026-08-19T22:41:51+00:00",
-      "time": "22:41",
-      "source": "Kurir",
+      "datetime": "2026-08-19T22:25:00+00:00",
+      "time": "22:25",
+      "source": "Blic",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
