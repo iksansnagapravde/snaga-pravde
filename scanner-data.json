@@ -239,6 +239,20 @@
       "priority": 84
     },
     {
+      "id": "edsednica-liberije-uhapsena-zbog-ucesca-u-isporukama-kokaina",
+      "title": "Бивша потпредседница Либерије ухапшена због учешћа у испорукама кокаина",
+      "url": "https://www.politika.rs/scc/clanak/779909/bivsa-potpredsednica-liberije-uhapsena-zbog-ucesca-u-isporukama-kokaina",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T20:40:00+00:00",
+      "time": "20:40",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 78
+    },
+    {
       "id": "abisom-zaplenjeno-30-kilograma-marihuane-uhapsene-dve-osobe-",
       "title": "Policija u Grockoj pronašla njivu zasejanu kanabisom: Zaplenjeno 30 kilograma marihuane, uhapšene dve osobe",
       "url": "https://nova.rs/vesti/hronika/policija-u-grockoj-pronasla-njivu-zasejanu-kanabisom-zaplenjeno-30-kilograma-marihuane-uhapsene-dve-osobe/",
@@ -251,6 +265,20 @@
       "breaking": false,
       "alert": true,
       "priority": 76
+    },
+    {
+      "id": "inirali-po-pragu-parohijskog-doma-uz-muziku-i-parole-17p4g1g",
+      "title": "MLADIĆ I MALOLETNIK ALBANSKE NACIONALNOSTI URINIRALI PO PRAGU PAROHIJSKOG DOMA Skandal u Bujanovcu: Uzvikivali parole tzv, UČK, vređali srpskog sveštenika, pa uhapšeni",
+      "url": "https://www.blic.rs/vesti/politika/skandal-u-bujanovcu-albanci-urinirali-po-pragu-parohijskog-doma-uz-muziku-i-parole/17p4g1g",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T20:25:33+00:00",
+      "time": "20:25",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "s-vesti-foto-kod-beograda-zaplenjeno-30-kilograma-marihunae-",
@@ -293,20 +321,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "ww-slobodnaevropa-org-a-kosovo-bia-islam-mreze-33833040-html",
-      "title": "Zašto se BIA interesuje za 'islamističke krugove' na Kosovu?",
-      "url": "https://www.slobodnaevropa.org/a/kosovo-bia-islam-mreze/33833040.html",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T05:31:01+00:00",
-      "time": "05:31",
-      "source": "RSE Balkan",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "on-6023386-crna-gora-za-informacije-zvicer-kavacki-klan-html",
@@ -380,7 +394,7 @@
     },
     {
       "id": "aevropa-org-a-most-reka-ibar-kosovo-vucic-nato-33834961-html",
-      "title": "Vučić od NATO-a zatražio da se zaustavi povlačenje KFORA sa mosta na Ibru",
+      "title": "NATO povodom Vučićeve izjave: Odluka o otvaranju mosta u Mitrovici za vozila treba da uzme u obzir potrebe svih zajednica",
       "url": "https://www.slobodnaevropa.org/a/most-reka-ibar-kosovo-vucic-nato/33834961.html",
       "date": "2026-08-20",
       "datetime": "2026-08-20T12:40:10+00:00",
@@ -673,27 +687,13 @@
       "priority": 4
     },
     {
-      "id": "ttps-www-danas-rs-vesti-politika-sta-se-sprema-iza-paravana-",
-      "title": "Šta se sprema iza paravana?",
-      "url": "https://www.danas.rs/vesti/politika/sta-se-sprema-iza-paravana/",
+      "id": "anas-rs-vesti-drustvo-maja-sever-pismo-bratina-novi-vlasnik-",
+      "title": "Maja Sever o pismu Bratine: Odakle ideja da se piše novom vlasniku?",
+      "url": "https://www.danas.rs/vesti/drustvo/maja-sever-pismo-bratina-novi-vlasnik/",
       "date": "2026-08-20",
-      "datetime": "2026-08-20T20:14:31+00:00",
-      "time": "20:14",
+      "datetime": "2026-08-20T20:48:42+00:00",
+      "time": "20:48",
       "source": "Danas",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "rijera-nije-skroz-zadovoljan-uprkos-30-protiv-viktorije-vest",
-      "title": "Rijera: &quot;Možda ću iznervirati mnoge ljude, ali...&quot;",
-      "url": "https://www.b92.net/sport/fudbal/evrokupovi/260741/rijera-nije-skroz-zadovoljan-uprkos-30-protiv-viktorije/vest",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T20:08:00+00:00",
-      "time": "20:08",
-      "source": "B92",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
