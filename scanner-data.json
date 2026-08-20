@@ -15,20 +15,6 @@
       "priority": 100
     },
     {
-      "id": "partment-kina-protivpravno-pritvorila-americkog-drzavljanina",
-      "title": "Стејт департмент: Кина противправно притворила америчког држављанина",
-      "url": "https://www.politika.rs/scc/clanak/779901/stejt-department-kina-protivpravno-pritvorila-americkog-drzavljanina",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T19:57:00+00:00",
-      "time": "19:57",
-      "source": "Politika",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "ajina-basta-uhapsen-zbog-sumnje-na-zloupotrebu-polozaja-vest",
       "title": "Uhapšen muškarac iz Bajine Bašte: Sumnja se da je prevarom pribavio više od 40 miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/238636/bajina-basta-uhapsen-zbog-sumnje-na-zloupotrebu-polozaja/vest",
@@ -183,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "niksicu-napadacu-smanjili-kaznu-za-silovanje-on-izbo-47pyzgq",
-      "title": "Manijak devojci pretio da će joj baciti BOMBU u stan, SILOVAO JE, pa pobegao u Bugarsku! Otkriven debeo dosije osumnjičenog za napad nožem u Nikšiću",
-      "url": "https://www.blic.rs/vesti/hronika/novi-detalji-uzasa-u-niksicu-napadacu-smanjili-kaznu-za-silovanje-on-izbo/47pyzgq",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T16:33:32+00:00",
-      "time": "16:33",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "evo-zadrzavanje-zbog-sumnje-na-odavanje-tajnih-podataka-vest",
       "title": "Uhapšena službenica policije kod Alibunara: Sumnja se da je uzimala poverljive podatke iz evidencije",
       "url": "https://www.euronews.rs/srbija/aktuelno/238625/pancevo-zadrzavanje-zbog-sumnje-na-odavanje-tajnih-podataka/vest",
@@ -281,20 +253,6 @@
       "priority": 78
     },
     {
-      "id": "abisom-zaplenjeno-30-kilograma-marihuane-uhapsene-dve-osobe-",
-      "title": "Policija u Grockoj pronašla njivu zasejanu kanabisom: Zaplenjeno 30 kilograma marihuane, uhapšene dve osobe",
-      "url": "https://nova.rs/vesti/hronika/policija-u-grockoj-pronasla-njivu-zasejanu-kanabisom-zaplenjeno-30-kilograma-marihuane-uhapsene-dve-osobe/",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T16:11:30+00:00",
-      "time": "16:11",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
-    },
-    {
       "id": "inirali-po-pragu-parohijskog-doma-uz-muziku-i-parole-17p4g1g",
       "title": "MLADIĆ I MALOLETNIK ALBANSKE NACIONALNOSTI URINIRALI PO PRAGU PAROHIJSKOG DOMA Skandal u Bujanovcu: Uzvikivali parole tzv, UČK, vređali srpskog sveštenika, pa uhapšeni",
       "url": "https://www.blic.rs/vesti/politika/skandal-u-bujanovcu-albanci-urinirali-po-pragu-parohijskog-doma-uz-muziku-i-parole/17p4g1g",
@@ -335,6 +293,20 @@
       "breaking": false,
       "alert": false,
       "priority": 32
+    },
+    {
+      "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
+      "title": "Inženjeri na optuženičkoj klupi, koruptivni sistem u senci",
+      "url": "https://radar.nova.rs/drustvo/nadstresnica-inzenjeri-korupcija-optuznica/",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "ja-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica-",
@@ -673,13 +645,13 @@
       "priority": 4
     },
     {
-      "id": "-grada-zabranio-bicikle-nakon-sto-ga-je-jedan-udario-yj579b1",
-      "title": "GRADONAČELNIKA UDARIO BICIKL, ON IH ODMAH ZABRANIO! Šokantna odluka u italijanskom gradu: Građani pobesneli",
-      "url": "https://www.blic.rs/vesti/svet/gradonacelnik-evropskog-grada-zabranio-bicikle-nakon-sto-ga-je-jedan-udario/yj579b1",
+      "id": "al-albert-rijera-debi-crvena-zvezda-pobeda-viktorija-plzenj-",
+      "title": "Rijera nezadovoljan posle velike pobede Zvezde: \"Nemamo čarobni štapić - ovo nije golf ili tenis, MVP je tim\"",
+      "url": "https://nova.rs/sport/fudbal/albert-rijera-debi-crvena-zvezda-pobeda-viktorija-plzenj/",
       "date": "2026-08-20",
-      "datetime": "2026-08-20T21:59:00+00:00",
-      "time": "21:59",
-      "source": "Blic",
+      "datetime": "2026-08-20T22:12:55+00:00",
+      "time": "22:12",
+      "source": "Nova",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
@@ -687,13 +659,41 @@
       "priority": 0
     },
     {
-      "id": "www-kurir-rs-zabava-zena-10082093-paprike-sa-kupusom-zimnica",
-      "title": "Starinska zimnica po receptu naših baka: Paprike punjene kiselim kupusom idealne su za hladne dane",
-      "url": "https://www.kurir.rs/zabava/zena/10082093/paprike-sa-kupusom-zimnica",
+      "id": "tps-radar-nova-rs-kultura-radar-izbor-urednika-preporuke-26-",
+      "title": "Izbor urednika: Mračni grad, Zebnja na rasklapanje…",
+      "url": "https://radar.nova.rs/kultura-radar/izbor-urednika-preporuke-26/",
       "date": "2026-08-20",
-      "datetime": "2026-08-20T21:53:00+00:00",
-      "time": "21:53",
-      "source": "Kurir",
+      "datetime": "2026-08-20T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "u-bezbedan-grad-preko-koje-strani-vozaci-mogu-da-plate-kazne",
+      "title": "MUP S. Makedonije pustio u rad aplikaciju Bezbedan grad preko koje strani vozači mogu da plate kazne",
+      "url": "https://beta.rs/content/250544-mup-s-makedonije-pustio-u-rad-aplikaciju-bezbedan-grad-preko-koje-strani-vozaci-mogu-da-plate-kazne",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T22:00:09+00:00",
+      "time": "22:00",
+      "source": "Beta",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-grada-zabranio-bicikle-nakon-sto-ga-je-jedan-udario-yj579b1",
+      "title": "GRADONAČELNIKA UDARIO BICIKL, ON IH ODMAH ZABRANIO! Šokantna odluka u italijanskom gradu: Građani pobesneli",
+      "url": "https://www.blic.rs/vesti/svet/gradonacelnik-evropskog-grada-zabranio-bicikle-nakon-sto-ga-je-jedan-udario/yj579b1",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T21:59:00+00:00",
+      "time": "21:59",
+      "source": "Blic",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
