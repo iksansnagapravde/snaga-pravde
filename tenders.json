@@ -1,68 +1,90 @@
 [
   {
     "winner": null,
-    "accepted": 10000000.0,
-    "lowest": 8202.0,
-    "difference": 9991798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104217668,
-    "file": "documents/104217668_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2300000.0,
-    "lowest": 3148.0,
-    "difference": 2296852.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 108656411,
-    "file": "documents/108656411_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5436480.0,
-    "lowest": 8202.0,
-    "difference": 5428278.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101599486,
-    "file": "documents/101599486_odluka dodela ugovora ICU CMF.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2000000.0,
+    "accepted": 1430630.4,
     "lowest": 4112.0,
-    "difference": 1995888.0,
+    "difference": 1426518.4,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101727796,
-    "file": "documents/101727796_Odluka o dodeli 119-26.pdf"
+    "id": 105368221,
+    "file": "documents/105368221_Odluka o dodeli Ugovora JN 65-26.pdf"
   },
   {
     "winner": null,
-    "accepted": 533298.12,
+    "accepted": 216000.0,
+    "lowest": 6202.0,
+    "difference": 209798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108791488,
+    "file": "documents/108791488_ODLUKA - PU KRUŠEVAC.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 44406.0,
+    "lowest": 6372.0,
+    "difference": 38034.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102156404,
+    "file": "documents/102156404_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 58800.0,
+    "lowest": 6372.0,
+    "difference": 52428.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100579471,
+    "file": "documents/100579471_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 160000.0,
     "lowest": 8202.0,
-    "difference": 525096.12,
+    "difference": 151798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100001079,
-    "file": "documents/100001079_Uskuge osiguranja partija 5.pdf"
+    "id": 101633677,
+    "file": "documents/101633677_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 400129.0,
-    "lowest": 1321.0,
-    "difference": 398808.0,
+    "accepted": 113623.2,
+    "lowest": 8202.0,
+    "difference": 105421.2,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103605787,
-    "file": "documents/103605787_Odluka o dodeli.pdf"
+    "id": 100810743,
+    "file": "documents/100810743_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 216000.0,
+    "lowest": 6202.0,
+    "difference": 209798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100003775,
+    "file": "documents/100003775_ODLUKA - PU KRAGUJEVAC.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 65153.0,
+    "lowest": 8202.0,
+    "difference": 56951.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101196002,
+    "file": "documents/101196002_Odluka o dodeli.docx"
   }
 ]
