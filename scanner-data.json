@@ -155,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "0081979-maloletnik-uhapsen-zbog-pretnji-pistoljem-u-beogradu",
-      "title": "PRETIO DA ĆE DONETI PIŠTOLJ I OBRAČUNATI SE SA SVIMA Haos nakon popravnog ispita u Beogradu: Uhapšen maloletnik",
-      "url": "https://www.kurir.rs/crna-hronika/10081979/maloletnik-uhapsen-zbog-pretnji-pistoljem-u-beogradu",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T15:55:02+00:00",
-      "time": "15:55",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "evo-zadrzavanje-zbog-sumnje-na-odavanje-tajnih-podataka-vest",
       "title": "Uhapšena službenica policije kod Alibunara: Sumnja se da je uzimala poverljive podatke iz evidencije",
       "url": "https://www.euronews.rs/srbija/aktuelno/238625/pancevo-zadrzavanje-zbog-sumnje-na-odavanje-tajnih-podataka/vest",
@@ -435,6 +421,20 @@
       "priority": 26
     },
     {
+      "id": "a-za-raspravu-tokom-javnog-slusanja-o-pravosudnoj-akademiji-",
+      "title": "Društvo sudija Srbije traži više vremena za raspravu tokom javnog slušanja o Pravosudnoj akademiji",
+      "url": "https://n1info.rs/vesti/drustvo-sudija-srbije-trazi-vise-vremena-za-raspravu-tokom-javnog-slusanja-o-pravosudnoj-akademiji/",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T21:25:18+00:00",
+      "time": "21:25",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "8658-aleksandar-durdev-osudio-napade-na-spc-i-porfirija-vest",
       "title": "Đurđev: Licemerno je što Crna Gora decenijama nije rešila pitanje kriminala, a sada pokušava da blati patrijarha SPC",
       "url": "https://www.euronews.rs/srbija/politika/238658/aleksandar-durdev-osudio-napade-na-spc-i-porfirija/vest",
@@ -617,34 +617,6 @@
       "priority": 4
     },
     {
-      "id": "no-30-kilograma-marihuane-u-ilegalnoj-laboratoriji-u-grockoj",
-      "title": "\"PAO\" DILERSKI DVOJAC KOD GROCKE! Policija otkrila tajnu laboratoriju za uzgoj marihuane: Evo kako su im stavljene lisice na ruke (FOTO)",
-      "url": "https://www.kurir.rs/crna-hronika/10081976/uhapsene-dve-osobe-i-zaplenjeno-30-kilograma-marihuane-u-ilegalnoj-laboratoriji-u-grockoj",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T15:53:44+00:00",
-      "time": "15:53",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "danas-rs-vesti-politika-kosovska-policija-zaplenjeno-oruzje-",
-      "title": "Kosovska policija: U Zubinom Potoku zaplenjeno 72 komada oružja, municija, eksplozivne naprave, unifome i dokumentacija",
-      "url": "https://www.danas.rs/vesti/politika/kosovska-policija-zaplenjeno-oruzje/",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T15:46:48+00:00",
-      "time": "15:46",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "7-putujete-autobusom-na-letovanje-mup-pojacava-kontrole-vest",
       "title": "Putujete autobusom na letovanje? MUP pojačava kontrole - evo šta policija proverava",
       "url": "https://www.euronews.rs/srbija/aktuelno/238687/putujete-autobusom-na-letovanje-mup-pojacava-kontrole/vest",
@@ -685,6 +657,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "i-milenko-jovanovic-susa-padavine-temperatura-pozari-srbija-",
+      "title": "Vrelina ne popušta, a leto ulazi u završnicu: Meteorolog Jovanović o tome kakvo nas vreme čeka",
+      "url": "https://n1info.rs/vesti/milenko-jovanovic-susa-padavine-temperatura-pozari-srbija/",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T21:26:04+00:00",
+      "time": "21:26",
+      "source": "N1",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ija-alberta-rijere-posle-crvena-zvezda-viktorija-plzenj-vest",
+      "title": "Rijera: &quot;Nemam čarobni štapić – neke stvari su me razočarale&quot;",
+      "url": "https://www.b92.net/sport/fudbal/evrokupovi/260718/konferencija-alberta-rijere-posle-crvena-zvezda-viktorija-plzenj/vest",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T21:25:00+00:00",
+      "time": "21:25",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "-238837-policija-proverava-navode-o-napadima-na-devojke-vest",
