@@ -435,20 +435,6 @@
       "priority": 26
     },
     {
-      "id": "ja-pozvalo-izrael-da-ne-gradi-naselje-na-zapadnoj-obali-vest",
-      "title": "&quot;Povucite se – odmah&quot;",
-      "url": "https://www.b92.net/info/svet/260738/sedam-zemalja-pozvalo-izrael-da-ne-gradi-naselje-na-zapadnoj-obali/vest",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T19:46:00+00:00",
-      "time": "19:46",
-      "source": "B92",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "8658-aleksandar-durdev-osudio-napade-na-spc-i-porfirija-vest",
       "title": "Đurđev: Licemerno je što Crna Gora decenijama nije rešila pitanje kriminala, a sada pokušava da blati patrijarha SPC",
       "url": "https://www.euronews.rs/srbija/politika/238658/aleksandar-durdev-osudio-napade-na-spc-i-porfirija/vest",
@@ -559,6 +545,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "im-napadima-na-devojke-u-brace-jerkovic-i-medakovicu-88nbwtv",
+      "title": "UZBUNA U BRAĆE JERKOVIĆ I MEDAKOVIĆU Kruže jezive tvrdnje o zlostavljanju devojaka, oglasila se policija: Ako imate ove informacije, ODMAH SE JAVITE",
+      "url": "https://www.blic.rs/vesti/beograd/oglasila-se-policija-o-navodnim-napadima-na-devojke-u-brace-jerkovic-i-medakovicu/88nbwtv",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T20:58:43+00:00",
+      "time": "20:58",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "decko-hejden-panetijer-se-oglasio-prvi-put-nakon-njene-smrti",
@@ -687,13 +687,13 @@
       "priority": 4
     },
     {
-      "id": "anas-rs-vesti-drustvo-maja-sever-pismo-bratina-novi-vlasnik-",
-      "title": "Maja Sever o pismu Bratine: Odakle ideja da se piše novom vlasniku?",
-      "url": "https://www.danas.rs/vesti/drustvo/maja-sever-pismo-bratina-novi-vlasnik/",
+      "id": "-238837-policija-proverava-navode-o-napadima-na-devojke-vest",
+      "title": "MUP poziva sugrađanke da prijave policiji ukoliko su bile žrtve seksualnog napada",
+      "url": "https://www.euronews.rs/srbija/aktuelno/238837/policija-proverava-navode-o-napadima-na-devojke/vest",
       "date": "2026-08-20",
-      "datetime": "2026-08-20T20:48:42+00:00",
-      "time": "20:48",
-      "source": "Danas",
+      "datetime": "2026-08-20T21:11:00+00:00",
+      "time": "21:11",
+      "source": "Euronews Serbia",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
