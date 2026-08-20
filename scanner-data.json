@@ -113,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "a-pripadnici-vracarskog-klana-zrtvu-dva-dana-tukli-i-mucili-",
-      "title": "Oteli mladića, pa ga dva dana mučili i tukli: Uhapšen dvojac iz Beograda, sumnja se da su su pripadnici \"vračarskog klana\"",
-      "url": "https://nova.rs/vesti/hronika/pripadnici-vracarskog-klana-zrtvu-dva-dana-tukli-i-mucili/",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T13:36:30+00:00",
-      "time": "13:36",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "apsen-albanski-drzavljanin-osumnjicen-za-silovanje-u-grckoj-",
       "title": "Uhapšen albanski državljanin osumnjičen za silovanje u Grčkoj",
       "url": "https://n1info.rs/region/uhapsen-albanski-drzavljanin-osumnjicen-za-silovanje-u-grckoj/",
@@ -309,20 +295,6 @@
       "priority": 32
     },
     {
-      "id": "na-gora-radoje-zvicer-novcana-nagrada-interpolova-poternica-",
-      "title": "Crna Gora nudi pola miliona evra za informacije o Radoju Zviceru",
-      "url": "https://vreme.com/svet/crna-gora-radoje-zvicer-novcana-nagrada-interpolova-poternica/",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T11:49:06+00:00",
-      "time": "11:49",
-      "source": "Vreme",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "ja-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica-",
       "title": "Agencija za sprečavanje korupcije proverava imovinu Gorana Vesića",
       "url": "https://www.krik.rs/agencija-za-sprecavanje-korupcije-proverava-imovinu-gorana-vesica/",
@@ -435,6 +407,20 @@
       "priority": 26
     },
     {
+      "id": "orucili-da-ce-ponovo-pokusati-da-ugase-izraelski-vojni-radio",
+      "title": "Израелски министри бесни због одлуке суда, поручили да ће поново покушати да угасе израелски војни радио",
+      "url": "https://www.politika.rs/scc/clanak/779875/izraelski-ministri-besni-zbog-odluke-suda-porucili-da-ce-ponovo-pokusati-da-ugase-izraelski-vojni-radio",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T17:49:00+00:00",
+      "time": "17:49",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "ntinov-izbori-u-ukrajini-bili-bi-smrtna-presuda-za-zelenskog",
       "title": "Константинов: Избори у Украјини били би „смртна пресуда“ за Зеленског",
       "url": "https://www.politika.rs/scc/clanak/779870/konstantinov-izbori-u-ukrajini-bili-bi-smrtna-presuda-za-zelenskog",
@@ -491,6 +477,34 @@
       "priority": 22
     },
     {
+      "id": "rt-kosarka-dzejms-harden-dogovorio-novi-ugovor-sa-klivlendom",
+      "title": "Џејмс Харден договорио нови уговор са Кливлендом",
+      "url": "https://www.politika.rs/scc/clanak/779878/sport/kosarka/dzejms-harden-dogovorio-novi-ugovor-sa-klivlendom",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T18:04:00+00:00",
+      "time": "18:04",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "olitika-10082070-otvaranje-fabrike-robota-u-sapcu-29-avgusta",
+      "title": "FABRIKA ROBOTA BIĆE OTVORENA 29. AVGUSTA, A ONDA STIŽE JOŠ JEDNA INVESTICIJA OD 100 MILIONA EVRA! Vučić saopštio sjajne vesti: To je ono što donosi budućnost",
+      "url": "https://www.kurir.rs/vesti/politika/10082070/otvaranje-fabrike-robota-u-sapcu-29-avgusta",
+      "date": "2026-08-20",
+      "datetime": "2026-08-20T18:01:17+00:00",
+      "time": "18:01",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "-zavirite-u-dvorac-mocne-srpkinje-koji-vredi-milione-5k12cwn",
       "title": "ODRASLA U SUVOJ RASKOŠI, PA PREŽIVELA PAKAO U ovom dvorcu je odrasla moćna Srpkinja: Kuća vredi milione i važi za jednu od najlepših u gradu",
       "url": "https://www.blic.rs/zabava/zavirite-u-dvorac-mocne-srpkinje-koji-vredi-milione/5k12cwn",
@@ -540,20 +554,6 @@
       "datetime": "2026-08-20T17:12:21+00:00",
       "time": "17:12",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "aboratoriju-marihuane-u-grockoj-zaplenila-30-kilograma-droge",
-      "title": "Полиција открила лабораторију марихуанe у Гроцкој, запленила 30 килограма дроге",
-      "url": "https://www.politika.rs/scc/clanak/779861/policija-otkrila-laboratoriju-marihuane-u-grockoj-zaplenila-30-kilograma-droge",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T16:53:00+00:00",
-      "time": "16:53",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -687,14 +687,14 @@
       "priority": 4
     },
     {
-      "id": "https-www-danas-rs-sport-karlos-alkaraz-us-open-",
-      "title": "Čekanju je došao kraj: Alkaraz će braniti trofej na US openu",
-      "url": "https://www.danas.rs/sport/karlos-alkaraz-us-open/",
+      "id": "https-vreme-com-vesti-aleksandar-vucic-izbori-",
+      "title": "Vučić: Izbori 18. ili 25. oktobra",
+      "url": "https://vreme.com/vesti/aleksandar-vucic-izbori/",
       "date": "2026-08-20",
-      "datetime": "2026-08-20T17:45:32+00:00",
-      "time": "17:45",
-      "source": "Danas",
-      "category": "Извршења",
+      "datetime": "2026-08-20T18:10:40+00:00",
+      "time": "18:10",
+      "source": "Vreme",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
