@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 65000000.0,
+    "lowest": 1201.0,
+    "difference": 64998799.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103196763,
+    "file": "documents/103196763_3JNOP6~3.PDF"
+  },
+  {
+    "winner": null,
+    "accepted": 65000000.0,
+    "lowest": 1201.0,
+    "difference": 64998799.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110980041,
+    "file": "documents/110980041_3JNOP6~3.PDF"
+  },
+  {
+    "winner": null,
     "accepted": 1570580.0,
     "lowest": 8202.0,
     "difference": 1562378.0,
@@ -86,16 +108,5 @@
     "rejection_reasons": [],
     "id": 114917213,
     "file": "documents/114917213_933 O-181.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 46107.15,
-    "lowest": 2202.0,
-    "difference": 43905.15,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106555378,
-    "file": "documents/106555378_935 O-181.pdf"
   }
 ]
