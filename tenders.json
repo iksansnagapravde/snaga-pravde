@@ -1,5 +1,38 @@
 [
   {
+    "winner": null,
+    "accepted": 102342.0,
+    "lowest": 8202.0,
+    "difference": 94140.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105339718,
+    "file": "documents/105339718_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 102342.0,
+    "lowest": 8202.0,
+    "difference": 94140.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101116811,
+    "file": "documents/101116811_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 102342.0,
+    "lowest": 8202.0,
+    "difference": 94140.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101479361,
+    "file": "documents/101479361_Odluka o dodeli.docx"
+  },
+  {
     "winner": "JN 3-2026 dodeljuje se ponudacu ATPSPORT DOO",
     "accepted": 3000.0,
     "lowest": 1099.0,
@@ -9,104 +42,5 @@
     "rejection_reasons": [],
     "id": 105705032,
     "file": "documents/105705032_Odluka o o dodeli ugovora JN 3-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 65000000.0,
-    "lowest": 1201.0,
-    "difference": 64998799.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103196763,
-    "file": "documents/103196763_3JNOP6~3.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 65000000.0,
-    "lowest": 1201.0,
-    "difference": 64998799.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 110980041,
-    "file": "documents/110980041_3JNOP6~3.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 1570580.0,
-    "lowest": 8202.0,
-    "difference": 1562378.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 113475887,
-    "file": "documents/113475887_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 27794810.0,
-    "lowest": 8202.0,
-    "difference": 27786608.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100038515,
-    "file": "documents/100038515_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 11436000.0,
-    "lowest": 2363.0,
-    "difference": 11433637.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100220854,
-    "file": "documents/100220854_Odluka o dodeli ugovora - Partija 1 - Ugovor.PDF"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 10322432.3,
-    "lowest": 2363.0,
-    "difference": 10320069.3,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101776633,
-    "file": "documents/101776633_Odluka o dodeli ugovora - Partija 2 - Drva.PDF"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 47432395.2,
-    "lowest": 2363.0,
-    "difference": 47430032.2,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102013345,
-    "file": "documents/102013345_Odluka o dodeli ugovora - Partija 3-Pelet.PDF"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 26700200.0,
-    "lowest": 2363.0,
-    "difference": 26697837.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Odluka o dodeli - Partija 4-Lož ulje.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 8202.0,
-    "lowest": 1202.0,
-    "difference": 7000.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100038783,
-    "file": "documents/100038783_Odluka.pdf"
   }
 ]
