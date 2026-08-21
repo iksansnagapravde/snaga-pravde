@@ -15,20 +15,6 @@
       "priority": 104
     },
     {
-      "id": "nja-pasa-u-mladenovcu-zgrozio-srbiju-ovo-je-mucitelj-gwywdx2",
-      "title": "\"TO JE NAŠ PAS, DECA SU PREPLAKALA DAN\" Radnik poznate pečenjare mučio, pa motkom usmrtio dva kučeta i odvukao ih u klanicu: Oglasila se vlasnica, objekat hitno zatvoren",
-      "url": "https://www.blic.rs/vesti/hronika/jeziv-snimak-zlostavljanja-pasa-u-mladenovcu-zgrozio-srbiju-ovo-je-mucitelj/gwywdx2",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T11:43:34+00:00",
-      "time": "11:43",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "en-sa-tonom-i-po-kokaina-vrednim-preko-70-miliona-evra-foto-",
       "title": "Pogledajte kako izgleda bivši srpski fudbaler uhapšen sa tonom i po kokaina vrednim preko 70 miliona evra FOTO",
       "url": "https://nova.rs/sport/fudbal/pogledajte-kako-izgleda-bivsi-srpski-fudbaler-uhapsen-sa-tonom-i-po-kokaina-vrednim-preko-70-miliona-evra-foto/",
@@ -68,20 +54,6 @@
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 100
-    },
-    {
-      "id": "lanoviceve-i-usvojio-zakljucke-hdz-a-o-otpadu-u-gospicu-html",
-      "title": "Сабор одбацио Милановићеве и усвојио закључке ХДЗ-а о отпаду у Госпићу",
-      "url": "https://www.rts.rs/vesti/region/6023762/sabor-odbacio-milanoviceve-i-usvojio-zakljucke-hdz-a-o-otpadu-u-gospicu.html",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T10:48:30+00:00",
-      "time": "10:48",
-      "source": "RTS",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
       "priority": 100
     },
     {
@@ -239,20 +211,6 @@
       "priority": 92
     },
     {
-      "id": "paniji-i-portugalu-kada-je-uhapsen-bivsi-fudbaler-iz-srbije-",
-      "title": "Tona i po kokaina i dve napunjene puške: Pogledajte akciju u kojoj je bivši srpski fudbaler uhapšen u kombiju punom droge VIDEO",
-      "url": "https://nova.rs/vesti/hronika/pogledajte-snimak-akcije-policije-u-spaniji-i-portugalu-kada-je-uhapsen-bivsi-fudbaler-iz-srbije/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T12:00:49+00:00",
-      "time": "12:00",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "a-hronika-10082631-napad-nozem-u-borci-tinejdzerka-privedena",
       "title": "UHAPŠENA DEVOJČICA KOJA JE IZBOLA DEVOJKU U BORČI: Napala je na stanici, pa je krvnički tukla i nanela teške povrede!",
       "url": "https://www.kurir.rs/crna-hronika/10082631/napad-nozem-u-borci-tinejdzerka-privedena",
@@ -273,6 +231,20 @@
       "date": "2026-08-21",
       "datetime": "2026-08-21T10:56:06+00:00",
       "time": "10:56",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "a-hronika-10082528-uros-milosevic-od-fudbalera-do-narko-bosa",
+      "title": "OVO JE SRPSKI FUDBALER UHAPŠEN U PORTUGALU ZBOG ŠVERCA KOKAINA: Uroš Milošević od uspešnog sportiste do narko-bosa! (foto)",
+      "url": "https://www.kurir.rs/crna-hronika/10082528/uros-milosevic-od-fudbalera-do-narko-bosa",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T09:42:19+00:00",
+      "time": "09:42",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -393,20 +365,6 @@
       "priority": 70
     },
     {
-      "id": "ana-zbog-sumnje-ostetio-budzet-novog-sada-za-5580000-dinara-",
-      "title": "Uhapšen zastupnik udruženja građana zbog sumnje da je oštetio budžet Novog Sada za 5.580.000 dinara",
-      "url": "https://n1info.rs/vesti/uhapsen-zastupnik-udruzenja-gradjana-zbog-sumnje-ostetio-budzet-novog-sada-za-5580000-dinara/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T11:14:06+00:00",
-      "time": "11:14",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "na-hronika-10082619-uhapsen-diler-u-velikoj-plani-zbog-droge",
       "title": "POLICIJA GA ZAUSTAVILA ZBOG PREKRŠAJA, PA MU NAŠLI GOMILU DROGE: Uhapšen diler u Velikoj Plani, gradom vozio drogiran!",
       "url": "https://www.kurir.rs/crna-hronika/10082619/uhapsen-diler-u-velikoj-plani-zbog-droge",
@@ -419,6 +377,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-dana-tuzilastvo-otkrilo-detalje-brutalnog-zlocina-u-zemunu-",
+      "title": "Nudili im 2.000 evra za otmicu, žrtvu vezali i tukli dva dana: Tužilaštvo otkrilo detalje brutalnog zločina u Zemunu",
+      "url": "https://nova.rs/vesti/hronika/nudili-im-2000-evra-za-otmicu-zrtvu-vezali-i-tukli-dva-dana-tuzilastvo-otkrilo-detalje-brutalnog-zlocina-u-zemunu/",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T16:05:50+00:00",
+      "time": "16:05",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "tanja-i-postupanja-prema-zivotinjama-u-zooloskom-vrtu-palic-",
+      "title": "Tužilaštvo u Subotici odbacilo krivične prijave zbog stanja i postupanja prema životinjama u Zoološkom vrtu Palić",
+      "url": "https://n1info.rs/vesti/tuzilastvo-u-subotici-odbacilo-krivicne-prijave-zbog-stanja-i-postupanja-prema-zivotinjama-u-zooloskom-vrtu-palic/",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T15:54:32+00:00",
+      "time": "15:54",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "odigao-optuznica-protiv-muskarca-zbog-10-kilograma-kanabisa-",
@@ -547,20 +533,6 @@
       "priority": 28
     },
     {
-      "id": "875-Turska-trazi-Interpolovu-crvenu-poternicu-za-Netanjahuom",
-      "title": "IZDAT NALOG ZA HAPŠENJE NETANJAHUA Traži se međunarodna crvena poternica za premijera Izraela",
-      "url": "https://www.kurir.rs/planeta/10082875/Turska-trazi-Interpolovu-crvenu-poternicu-za-Netanjahuom",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T14:28:18+00:00",
-      "time": "14:28",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "-mihael-martens-na-ruskoj-poternici-zbog-podsticanja-mrznje-",
       "title": "Novinar Mihael Martens na ruskoj poternici zbog „podsticanja mržnje“",
       "url": "https://vreme.com/svet/novinar-mihael-martens-na-ruskoj-poternici-zbog-podsticanja-mrznje/",
@@ -568,6 +540,20 @@
       "datetime": "2026-08-21T10:27:44+00:00",
       "time": "10:27",
       "source": "Vreme",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "ka-10082567-pogledajte-kako-su-uhapseni-piromani-iz-beograda",
+      "title": "POGLEDAJTE KAKO SU POHAPŠENI PIROMANI IZ CENTRA BEOGRADA: Zapalili nekoliko motora i pobegli (video)",
+      "url": "https://www.kurir.rs/crna-hronika/10082567/pogledajte-kako-su-uhapseni-piromani-iz-beograda",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T10:26:02+00:00",
+      "time": "10:26",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -695,6 +681,20 @@
       "time": "15:09",
       "source": "B92",
       "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "-miliona-evra-objavljeni-snimci-nakon-razaranja-foto-sg3jtfe",
+      "title": "POGOĐEN AVION OD 43 MILIONA EVRA! Objavljeni snimci nakon brutalnog udara, evo šta je od njega OSTALO (FOTO)",
+      "url": "https://www.blic.rs/vesti/svet/pogodjen-avion-su-34-od-43-miliona-evra-objavljeni-snimci-nakon-razaranja-foto/sg3jtfe",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T14:47:10+00:00",
+      "time": "14:47",
+      "source": "Blic",
+      "category": "Извршења",
       "summary": "",
       "breaking": false,
       "alert": false,
