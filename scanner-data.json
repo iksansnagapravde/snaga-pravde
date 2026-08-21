@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "iznismenu-koji-je-uhapsen-zbog-prevare-od-49-miliona-sng2d7p",
+      "title": "(FOTO, VIDEO) OJADIO STRANCE ZA 4,9 MILIONA EVRA, A U DOMU - NEMA ČEGA NEMA! Otkriveni detalji o beogradskom biznismenu koji je uhapšen zbog prevare: Firma ima 6 zaposlenih, a prihodi MUNJEVITO RASLI",
+      "url": "https://www.blic.rs/vesti/hronika/otkriveni-detalji-o-beogradskom-biznismenu-koji-je-uhapsen-zbog-prevare-od-49-miliona/sng2d7p",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T04:02:00+00:00",
+      "time": "04:02",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "svaki-cetvrti-pozar-nastaje-zbog-neispravnog-punjaca-56rr82c",
       "title": "Nije više briga \"da li sam isključio/la peglu\", već OVAJ UREĐAJ: Navika koju svi imamo je TEMPIRANA BOMBA, a požar u domu bukne za tili čas!",
       "url": "https://www.blic.rs/vesti/beograd/svaki-cetvrti-pozar-nastaje-zbog-neispravnog-punjaca/56rr82c",
@@ -295,20 +309,6 @@
       "priority": 70
     },
     {
-      "id": "on-6023386-crna-gora-za-informacije-zvicer-kavacki-klan-html",
-      "title": "Црна Гора нуди пола милиона евра за информације које би довеле до хапшења Звицера",
-      "url": "https://www.rts.rs/vesti/region/6023386/crna-gora-za-informacije-zvicer-kavacki-klan.html",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T18:29:36+00:00",
-      "time": "18:29",
-      "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 32
-    },
-    {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
       "title": "Inženjeri na optuženičkoj klupi, koruptivni sistem u senci",
       "url": "https://radar.nova.rs/drustvo/nadstresnica-inzenjeri-korupcija-optuznica/",
@@ -547,20 +547,6 @@
       "priority": 8
     },
     {
-      "id": "-19-godisnjak-zbog-sumnje-da-je-zeni-oteo-tasnu-na-setalistu",
-      "title": "DRSKA PLJAČKA NA ŠETALIŠTU U NIKŠIĆU! Mladić (19) odgurnuo ženu i oteo joj tašnu, policija ga brzo pronašla",
-      "url": "https://www.kurir.rs/region/crna-gora/10081268/niksic-uhapsen-19-godisnjak-zbog-sumnje-da-je-zeni-oteo-tasnu-na-setalistu",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T01:00:00+00:00",
-      "time": "01:00",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "-bolnice-u-novom-pazaru-vredan-vise-od-800000-dinara-e64l1tl",
       "title": "UKRAO MATERIJAL VREDAN VIŠE OD 800.000 DINARA Roba bila namenjena za izgradnju bolnice u Novom Pazaru: Policija ga uhapsila",
       "url": "https://www.blic.rs/vesti/hronika/muskarac-ukrao-materijal-iz-kruga-bolnice-u-novom-pazaru-vredan-vise-od-800000-dinara/e64l1tl",
@@ -687,14 +673,28 @@
       "priority": 4
     },
     {
-      "id": "rka-17-godina-bila-na-bolovanju-i-primala-punu-platu-420pwd0",
-      "title": "Pola radnog veka bila na bolovanju, pa razvila privatni biznis: Sada je šalju u penziju, a ona ljuta, podnela tužbu",
-      "url": "https://www.blic.rs/biznis/moj-novac/profesorka-17-godina-bila-na-bolovanju-i-primala-punu-platu/420pwd0",
+      "id": "a-ona-je-na-kraju-morala-da-je-proda-prica-je-nesvakidasnja-",
+      "title": "Zatvorenici gradili kuću naše pevačice, a ona je na kraju morala da je proda: Priča je nesvakidašnja",
+      "url": "https://nova.rs/zabava/showbiz/zatvorenici-gradili-kucu-nase-pevacice-a-ona-je-na-kraju-morala-da-je-proda-prica-je-nesvakidasnja/",
       "date": "2026-08-21",
-      "datetime": "2026-08-21T02:33:00+00:00",
-      "time": "02:33",
+      "datetime": "2026-08-21T04:00:00+00:00",
+      "time": "04:00",
+      "source": "Nova",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "kom-novi-rival-ga-javno-prozvao-a-isplivao-je-i-novi-vymkvfb",
+      "title": "IGRA PRESTOLA USRED RATA!  Nevolje Zelenskog se gomilaju - skandali tresu vrh države, a novi rival ga javno PROZIVA: \"Završiće kao Čerčil\"",
+      "url": "https://www.blic.rs/vesti/svet/zelenski-pod-sve-vecim-pritiskom-novi-rival-ga-javno-prozvao-a-isplivao-je-i-novi/vymkvfb",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T03:53:00+00:00",
+      "time": "03:53",
       "source": "Blic",
-      "category": "Пензионери",
+      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
