@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "nja-pasa-u-mladenovcu-zgrozio-srbiju-ovo-je-mucitelj-gwywdx2",
+      "title": "\"TO JE NAŠ PAS, DECA SU PREPLAKALA DAN\" Radnik poznate pečenjare mučio, pa motkom usmrtio dva kučeta i odvukao ih u klanicu: Oglasila se vlasnica, objekat hitno zatvoren",
+      "url": "https://www.blic.rs/vesti/hronika/jeziv-snimak-zlostavljanja-pasa-u-mladenovcu-zgrozio-srbiju-ovo-je-mucitelj/gwywdx2",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T11:43:34+00:00",
+      "time": "11:43",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 104
+    },
+    {
       "id": "im-igracima-zvezde-i-partizana-igrao-za-filijalu-crno-belih-",
       "title": "Ko je fudbaler koji je uhapšen sa tonom i po kokaina: Bio u timu sa bivšim igračima Zvezde i Partizana, igrao za filijalu crno-belih",
       "url": "https://nova.rs/sport/fudbal/ko-je-fudbaler-koji-je-uhapsen-sa-tonom-i-po-kokaina-bio-u-timu-sa-bivsim-igracima-zvezde-i-partizana-igrao-za-filijalu-crno-belih/",
@@ -35,20 +49,6 @@
       "date": "2026-08-21",
       "datetime": "2026-08-21T10:21:55+00:00",
       "time": "10:21",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
-      "id": "dbaler-uhapsen-u-portugalu-sa-kokainom-od-70-miliona-ze2ezr4",
-      "title": "(FOTO) IMA POSEBNU ULOGU U NAJMOĆNIJOJ KRIMI ORGANIZACIJI Srpski fudbaler uhapšen u Portugalu sa kokainom vrednim 70 miliona evra: Sa njim pala još dvojica naših državljana?!",
-      "url": "https://www.blic.rs/vesti/hronika/ko-je-uros-milosevic-srpski-fudbaler-uhapsen-u-portugalu-sa-kokainom-od-70-miliona/ze2ezr4",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T09:03:13+00:00",
-      "time": "09:03",
       "source": "Blic",
       "category": "Хапшења",
       "summary": "",
@@ -421,20 +421,6 @@
       "priority": 30
     },
     {
-      "id": "a-odmrzavanju-novca-eu-i-dalje-potreban-oprez-zbog-korupcije",
-      "title": "Mađarska radi na odmrzavanju novca EU, i dalje potreban oprez zbog korupcije",
-      "url": "https://beta.rs/content/250570-madarska-radi-na-odmrzavanju-novca-eu-i-dalje-potreban-oprez-zbog-korupcije",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T10:20:10+00:00",
-      "time": "10:20",
-      "source": "Beta",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
       "title": "Inženjeri na optuženičkoj klupi, koruptivni sistem u senci",
       "url": "https://radar.nova.rs/drustvo/nadstresnica-inzenjeri-korupcija-optuznica/",
@@ -631,20 +617,6 @@
       "priority": 8
     },
     {
-      "id": "jedne-stvari-od-putarina-stize-i-do-600-miliona-evra-wk3flbh",
-      "title": "Stranci biraju Srbiju zbog jedne stvari, od putarina stiže i do 600 miliona evra",
-      "url": "https://www.blic.rs/biznis/vesti/stranci-biraju-srbiju-zbog-jedne-stvari-od-putarina-stize-i-do-600-miliona-evra/wk3flbh",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T09:07:02+00:00",
-      "time": "09:07",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "bodnaevropa-org-a-bih-spomenik-lazar-banjaluka-33833689-html",
       "title": "Statua kneza Lazara od četiri tone uskoro iz Srbije stiže u Banjaluku",
       "url": "https://www.slobodnaevropa.org/a/bih-spomenik-lazar-banjaluka/33833689.html",
@@ -657,6 +629,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "-otisao-na-pecanje-i-nestao-bez-traga-potraga-u-toku-2sevh4j",
+      "title": "MISTERIOZNI NESTANAK MILANA IZ ĐUNISA! Otišao na pecanje, pa nestao bez traga: Preplašena supruga odmah alarmirala policiju, komšije strepe zbog jedne stvari",
+      "url": "https://www.blic.rs/vesti/hronika/nestao-milan-iz-krusevca-otisao-na-pecanje-i-nestao-bez-traga-potraga-u-toku/2sevh4j",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T11:46:02+00:00",
+      "time": "11:46",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "onika-10082600-policija-traga-za-nestalim-mestaninom-djunisa",
+      "title": "MISTERIOZNI NESTANAK U SELU ĐUNIS: Milan krenuo na pecanje i nestao bez traga, policija na tertenu!",
+      "url": "https://www.kurir.rs/crna-hronika/10082600/policija-traga-za-nestalim-mestaninom-djunisa",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T11:20:26+00:00",
+      "time": "11:20",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "lili-vise-motocikala-u-starom-gradu-osteceno-i-jedno-vozilo-",
