@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 4233600.0,
+    "lowest": 1360.0,
+    "difference": 4232240.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109698358,
+    "file": "documents/109698358_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "IMPERIAL BUILDINGS DOO",
+    "accepted": 53414869.6,
+    "lowest": 1325.6,
+    "difference": 53413544.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 112189961,
+    "file": "documents/112189961_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 7377160.11,
+    "lowest": 4112.0,
+    "difference": 7373048.11,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109912518,
+    "file": "documents/109912518_Odluka 3100-0733-2026.PDF"
+  },
+  {
+    "winner": null,
     "accepted": 12300.0,
     "lowest": 1202.0,
     "difference": 11098.0,
@@ -42,27 +75,5 @@
     "rejection_reasons": [],
     "id": 101624137,
     "file": "documents/101624137_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 39322.0,
-    "lowest": 8202.0,
-    "difference": 31120.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104141087,
-    "file": "documents/104141087_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 39322.0,
-    "lowest": 8202.0,
-    "difference": 31120.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101109316,
-    "file": "documents/101109316_Odluka o dodeli.docx"
   }
 ]
