@@ -1,101 +1,90 @@
 [
   {
     "winner": null,
-    "accepted": 17974308.0,
-    "lowest": 7202.0,
-    "difference": 17967106.0,
+    "accepted": 27794810.0,
+    "lowest": 8202.0,
+    "difference": 27786608.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 112238064,
-    "file": "documents/112238064_odluka o dodeli ugovora 25.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 61792406.1,
-    "lowest": 1372.0,
-    "difference": 61791034.1,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105977194,
-    "file": "documents/105977194_Odluka o dodeli ugovora.docx"
+    "id": 100038515,
+    "file": "documents/100038515_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 300000.0,
-    "lowest": 8202.0,
-    "difference": 291798.0,
+    "accepted": 11436000.0,
+    "lowest": 2363.0,
+    "difference": 11433637.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101367749,
-    "file": "documents/101367749_Odluka 405-230-40001.pdf"
+    "id": 100220854,
+    "file": "documents/100220854_Odluka o dodeli ugovora - Partija 1 - Ugovor.PDF"
   },
   {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 300000.0,
-    "lowest": 8202.0,
-    "difference": 291798.0,
+    "accepted": 10322432.3,
+    "lowest": 2363.0,
+    "difference": 10320069.3,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102015530,
-    "file": "documents/102015530_Odluka 405-230-40001.pdf"
+    "id": 101776633,
+    "file": "documents/101776633_Odluka o dodeli ugovora - Partija 2 - Drva.PDF"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 47432395.2,
+    "lowest": 2363.0,
+    "difference": 47430032.2,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102013345,
+    "file": "documents/102013345_Odluka o dodeli ugovora - Partija 3-Pelet.PDF"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 26700200.0,
+    "lowest": 2363.0,
+    "difference": 26697837.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli - Partija 4-Lož ulje.PDF"
   },
   {
     "winner": null,
-    "accepted": 4500000.0,
+    "accepted": 8202.0,
     "lowest": 1202.0,
-    "difference": 4498798.0,
+    "difference": 7000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107657970,
-    "file": "documents/107657970_Odluka o dodeli ugovora - Mobilni aparati.pdf"
+    "id": 100038783,
+    "file": "documents/100038783_Odluka.pdf"
   },
   {
     "winner": null,
-    "accepted": 11311757.0,
-    "lowest": 8202.0,
-    "difference": 11303555.0,
+    "accepted": 8202.0,
+    "lowest": 2202.0,
+    "difference": 6000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100394832,
-    "file": "documents/100394832_Odluka o dodeli ugovora.pdf"
+    "id": 114917213,
+    "file": "documents/114917213_933 O-181.pdf"
   },
   {
     "winner": null,
-    "accepted": 70000.0,
-    "lowest": 8202.0,
-    "difference": 61798.0,
+    "accepted": 46107.15,
+    "lowest": 2202.0,
+    "difference": 43905.15,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107392312,
-    "file": "documents/107392312_IMG_20260821_0004.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 4863940.0,
-    "lowest": 1109.0,
-    "difference": 4862831.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101676046,
-    "file": "documents/101676046_Odluka o dodeli ugovora JN-0529-65-2026.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 155000000.0,
-    "lowest": 8202.0,
-    "difference": 154991798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100376461,
-    "file": "documents/100376461_9814-5 Odluka.pdf"
+    "id": 106555378,
+    "file": "documents/106555378_935 O-181.pdf"
   }
 ]
