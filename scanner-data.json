@@ -71,20 +71,6 @@
       "priority": 92
     },
     {
-      "id": "a-10082802-uhapsen-osumnjiceni-za-pokusaj-ubistva-u-sarajevu",
-      "title": "OSUMNJIČENI ZA POKUŠAJ UBISTVA U SARAJEVU UHAPŠEN U SRBIJI: Ispalio osam hitaca u Davora Dabića, pa prešao granicu! (video, foto)",
-      "url": "https://www.kurir.rs/crna-hronika/10082802/uhapsen-osumnjiceni-za-pokusaj-ubistva-u-sarajevu",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T13:36:11+00:00",
-      "time": "13:36",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-u-centru-beograda-jedan-uhapsen-drugi-vec-iza-resetaka-vest",
       "title": "Dolijali posle 10 dana: Palili motocikle u centru Beograda, jedan uhapšen, drugi već iza rešetaka",
       "url": "https://www.euronews.rs/srbija/aktuelno/238909/dolijali-posle-10-dana-palili-motocikle-u-centru-beograda-jedan-uhapsen-drugi-vec-iza-resetaka/vest",
@@ -167,20 +153,6 @@
       "breaking": false,
       "alert": true,
       "priority": 78
-    },
-    {
-      "id": "-uhapsen-osumnjiceni-za-pokusaj-ubistva-u-istocnom-sarajevu-",
-      "title": "MUP: U Sremskoj Mitrovici uhapšen osumnjičeni za pokušaj ubistva u Istočnom Sarajevu",
-      "url": "https://www.danas.rs/vesti/drustvo/mup-u-sremskoj-mitrovici-uhapsen-osumnjiceni-za-pokusaj-ubistva-u-istocnom-sarajevu/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T14:15:35+00:00",
-      "time": "14:15",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "263-hapsenje-pokusaj-ubistva-istocno-sarajevo-bijeljina-html",
@@ -309,20 +281,6 @@
       "priority": 66
     },
     {
-      "id": "a-hronika-10082734-policajka-iz-alibunara-pustena-na-slobodu",
-      "title": "ZAPOSLENA U POLICIJSKOJ STANICI ALIBUNAR ODAVALA TAJNE PODATKE IZ SISTEMA, A BRANI SE SA SLOBODE: Više javno tužilaštvo u Pančevu najavilo žalbu na odluku suda!",
-      "url": "https://www.kurir.rs/crna-hronika/10082734/policajka-iz-alibunara-pustena-na-slobodu",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T13:19:52+00:00",
-      "time": "13:19",
-      "source": "Kurir",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "238862-zastupnik-udruzenja-zgrnuo-55-miliona-iz-budzeta-vest",
       "title": "Zastupnik udruženja \"zgrnuo\" više od 5,5 miliona iz budžeta: Dobio novac za 15 projekata, krao preko lažnih izveštaja",
       "url": "https://www.euronews.rs/srbija/aktuelno/238862/zastupnik-udruzenja-zgrnuo-55-miliona-iz-budzeta/vest",
@@ -400,20 +358,6 @@
       "datetime": "2026-08-21T19:02:46+00:00",
       "time": "19:02",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "-kritikovao-erdogana-zbog-naloga-za-hapsenje-netanjahua-vest",
-      "title": "Erdogane, stigao ti je odgovor",
-      "url": "https://www.b92.net/info/svet/261007/izrael-kritikovao-erdogana-zbog-naloga-za-hapsenje-netanjahua/vest",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T18:15:00+00:00",
-      "time": "18:15",
-      "source": "B92",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -519,20 +463,6 @@
       "priority": 24
     },
     {
-      "id": "z-bijeljine-zbog-pokusaja-ubistva-evo-detalja-akcije-4y9r9jj",
-      "title": "DRAMA U SREMSKOJ MITROVICI Spektakularno hapšenje osumnjičenog za POKUŠAJ TEŠKOG UBISTVA, čeka ga izručenje",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-bd-24-iz-bijeljine-zbog-pokusaja-ubistva-evo-detalja-akcije/4y9r9jj",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T14:00:04+00:00",
-      "time": "14:00",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -589,6 +519,20 @@
       "priority": 8
     },
     {
+      "id": "antomom-sa-klise-nadzorne-kamere-snimile-upad-u-kucu-5zgykpm",
+      "title": "POLICIJA TRAGA ZA FANTOMOM SA KLISE! U crnoj jakni sa kapuljačom usred noći upao u kuću, nadzorne kamere sve snimile: \"To je trauma, kako je uopšte znao?!\" (VIDEO)",
+      "url": "https://www.blic.rs/vesti/hronika/policija-traga-za-fantomom-sa-klise-nadzorne-kamere-snimile-upad-u-kucu/5zgykpm",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T19:22:55+00:00",
+      "time": "19:22",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ksica-od-njega-se-oprostili-skaljarci-koji-su-pali-u-9w1x5ch",
       "title": "\"A IMA NAS, KUME, NE ZNA NAM SE BROJA - NAJJAČI SA NAJJAČIMA!\" Jovan izrešetan u potiljak u okolini Nikšića, od njega se oprostili \"škaljarci\" koji su PALI U BEOGRADU",
       "url": "https://www.blic.rs/vesti/hronika/jovan-izresetan-u-okolini-niksica-od-njega-se-oprostili-skaljarci-koji-su-pali-u/9w1x5ch",
@@ -624,20 +568,6 @@
       "datetime": "2026-08-21T14:05:39+00:00",
       "time": "14:05",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "se-osoba-povredjeno-u-napadu-macem-policija-pucala-u-v2ldqs6",
-      "title": "HOROR U ŠKOLI U ŠVEDSKOJ! Više osoba povređeno u napadu MAČEM, policija pucala u napadača: \"Roditelji očajnički pokušavaju da stupe u kontakt sa decom\"",
-      "url": "https://www.blic.rs/vesti/svet/drama-u-skoli-u-svedskoj-vise-osoba-povredjeno-u-napadu-macem-policija-pucala-u/v2ldqs6",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T13:48:13+00:00",
-      "time": "13:48",
-      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +629,76 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "ocava-sa-rizikom-od-nestasice-gasa-tokom-zimskih-meseci-vest",
+      "title": "Nemačkoj preti nestašica gasa",
+      "url": "https://www.b92.net/biz/svet/vesti/260937/nemacka-se-suocava-sa-rizikom-od-nestasice-gasa-tokom-zimskih-meseci/vest",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T19:34:00+00:00",
+      "time": "19:34",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "osarka-nba-261024-espn-klej-tompson-potpisuje-za-majami-vest",
+      "title": "Bum – Klej Tompson u Majamiju!",
+      "url": "https://www.b92.net/sport/kosarka/nba/261024/espn-klej-tompson-potpisuje-za-majami/vest",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T19:30:00+00:00",
+      "time": "19:30",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-svet-261023-penzionisani-general-fsb-a-pronadjen-mrtav-vest",
+      "title": "Ruski general pronađen mrtav; Izveštaji iz Moskve: &quot;Samoubistvo&quot;",
+      "url": "https://www.b92.net/info/svet/261023/penzionisani-general-fsb-a-pronadjen-mrtav/vest",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T19:22:00+00:00",
+      "time": "19:22",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "port-fudbal-10083071-fk-crvena-zvezda-pojacanja-bamba-dijeng",
+      "title": "OVO MOŽE SAMO ZVEZDA I NIKO VIŠE! Crveno-beli na spektakularan način najavili bombastično pojačanje koje su svi dugo čekali! Uvertira bacila Delije u trans!",
+      "url": "https://www.kurir.rs/sport/fudbal/10083071/fk-crvena-zvezda-pojacanja-bamba-dijeng",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T19:16:05+00:00",
+      "time": "19:16",
+      "source": "Kurir",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "vesti-260982-toni-kros-odabrao-favorita-za-zlatnu-loptu-vest",
+      "title": "Kros otpisao Mesija, Mbapea, Rodriga i Belingema",
+      "url": "https://www.b92.net/sport/fudbal/vesti/260982/toni-kros-odabrao-favorita-za-zlatnu-loptu/vest",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T19:15:00+00:00",
+      "time": "19:15",
+      "source": "B92",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
