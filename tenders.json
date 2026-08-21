@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 12300.0,
+    "lowest": 1202.0,
+    "difference": 11098.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 166270,
+    "file": "documents/166270_529-O-195.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 45500000.0,
+    "lowest": 8202.0,
+    "difference": 45491798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 166268,
+    "file": "documents/166268_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 39322.0,
     "lowest": 8202.0,
     "difference": 31120.0,
