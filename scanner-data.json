@@ -239,20 +239,6 @@
       "priority": 66
     },
     {
-      "id": "-kod-njega-pronadjeni-novac-i-telefon-za-ugovaranje-prodaje-",
-      "title": "Podignuta optužnica protiv muškarca koji je u Barajevu prenosio skoro 10 kilograma droge: Kod njega pronađeni novac i telefon za ugovaranje prodaje",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-makedonac-u-albaniji-iznajmio-stan-u-valoni-i-pretvorio-ga-u-bazu-droge-kod-njega-pronadjeni-novac-i-telefon-za-ugovaranje-prodaje/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T15:34:34+00:00",
-      "time": "15:34",
-      "source": "Nova",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "o-da-utvrdi-nepravilnosti-u-istrazi-smrti-vladimira-cvijana-",
       "title": "Kokanović: Apelaciono tužilaštvo da utvrdi nepravilnosti u istrazi smrti Vladimira Cvijana",
       "url": "https://www.ktv.rs/2026/08/21/kokanovic-apelaciono-tuzilastvo-da-utvrdi-nepravilnosti-u-istrazi-smrti-vladimira-cvijana/",
@@ -449,6 +435,20 @@
       "priority": 22
     },
     {
+      "id": "da-podigne-socijalnu-pomoc-na-racunu-zatekao-milione-rvsrks0",
+      "title": "Penzioner otišao na šalter da podigne socijalnu pomoć, na računu zatekao milione: Službenik ostao bez teksta kad je video vrtoglavu cifru",
+      "url": "https://www.blic.rs/biznis/moj-novac/penzioner-otisao-na-salter-da-podigne-socijalnu-pomoc-na-racunu-zatekao-milione/rvsrks0",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T20:59:00+00:00",
+      "time": "20:59",
+      "source": "Blic",
+      "category": "Пензионери",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "-825-miliona-evra-zbog-automatizovanog-suspendovanja-vozaca-",
       "title": "Uber kažnjen sa 825 miliona evra zbog automatizovanog suspendovanja vozača",
       "url": "https://www.danas.rs/vesti/ekonomija/uber-kaznjen-sa-825-miliona-evra-zbog-automatizovanog-suspendovanja-vozaca/",
@@ -475,6 +475,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "-stvaraju-se-velike-kolone-policija-i-hitna-pomoc-na-terenu-",
+      "title": "Lančani sudar kod Šimanovaca, stvaraju se velike kolone: Policija i hitna pomoć na terenu",
+      "url": "https://nova.rs/vesti/hronika/lancani-sudar-kod-simanovaca-stvaraju-se-velike-kolone-policija-i-hitna-pomoc-na-terenu/",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T21:08:44+00:00",
+      "time": "21:08",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "et-jedna-osoba-ubijena-u-pucnjavi-u-skoli-u-svedskoj-bnq9pdd",
@@ -617,6 +631,20 @@
       "priority": 4
     },
     {
+      "id": "kako-se-pozar-se-priblizava-srednjovekovnoj-tvrdjavi-maglic-",
+      "title": "VIDEO Snimak iz drona pokazuje kako se požar se približava srednjovekovnoj tvrđavi Maglič",
+      "url": "https://nova.rs/vesti/hronika/video-snimak-iz-drona-pokazuje-kako-se-pozar-se-priblizava-srednjovekovnoj-tvrdjavi-maglic/",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T21:07:33+00:00",
+      "time": "21:07",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "tvo-tribina-promena-vlasti-revizija-gradjevinskih-projekata-",
       "title": "Tribina u Novom Sadu: Nakon promene vlasti izvršiti reviziju svih građevinskih projekata",
       "url": "https://www.danas.rs/vesti/drustvo/tribina-promena-vlasti-revizija-gradjevinskih-projekata/",
@@ -667,34 +695,6 @@
       "time": "20:31",
       "source": "N1",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "o-celnike-vojnog-lista-urednik-kritikovao-mogucnost-cenzure-",
-      "title": "Pentagon otpustio čelnike vojnog lista, urednik kritikovao mogućnost cenzure u američkoj vojsci",
-      "url": "https://www.danas.rs/svet/pentagon-otpustio-celnike-vojnog-lista-urednik-kritikovao-mogucnost-cenzure/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T20:30:57+00:00",
-      "time": "20:30",
-      "source": "Danas",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "m-nalog-glumca-robina-vilijamsa-njegova-deca-otkrila-razlog-",
-      "title": "Ponovo aktivan Instagram nalog glumca Robina Vilijamsa - njegova deca otkrila razlog",
-      "url": "https://n1info.rs/magazin/showbiz/ponovo-aktivan-instagram-nalog-glumca-robina-vilijamsa-njegova-deca-otkrila-razlog/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T20:20:38+00:00",
-      "time": "20:20",
-      "source": "N1",
-      "category": "Права деце",
       "summary": "",
       "breaking": false,
       "alert": false,
