@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 117088359.29,
+    "lowest": 1202.0,
+    "difference": 117087157.29,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100068813,
+    "file": "documents/100068813_RB 0003-2026 Odluka o dodeli ugovora potpisano.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 102342.0,
     "lowest": 8202.0,
     "difference": 94140.0,
@@ -31,16 +42,5 @@
     "rejection_reasons": [],
     "id": 101479361,
     "file": "documents/101479361_Odluka o dodeli.docx"
-  },
-  {
-    "winner": "JN 3-2026 dodeljuje se ponudacu ATPSPORT DOO",
-    "accepted": 3000.0,
-    "lowest": 1099.0,
-    "difference": 1901.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105705032,
-    "file": "documents/105705032_Odluka o o dodeli ugovora JN 3-2026.pdf"
   }
 ]
