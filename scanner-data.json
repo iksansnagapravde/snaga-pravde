@@ -71,20 +71,6 @@
       "priority": 100
     },
     {
-      "id": "im-igracima-zvezde-i-partizana-igrao-za-filijalu-crno-belih-",
-      "title": "Ko je fudbaler koji je uhapšen sa tonom i po kokaina: Bio u timu sa bivšim igračima Zvezde i Partizana, igrao za filijalu crno-belih",
-      "url": "https://nova.rs/sport/fudbal/ko-je-fudbaler-koji-je-uhapsen-sa-tonom-i-po-kokaina-bio-u-timu-sa-bivsim-igracima-zvezde-i-partizana-igrao-za-filijalu-crno-belih/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T11:18:56+00:00",
-      "time": "11:18",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "lanoviceve-i-usvojio-zakljucke-hdz-a-o-otpadu-u-gospicu-html",
       "title": "Сабор одбацио Милановићеве и усвојио закључке ХДЗ-а о отпаду у Госпићу",
       "url": "https://www.rts.rs/vesti/region/6023762/sabor-odbacio-milanoviceve-i-usvojio-zakljucke-hdz-a-o-otpadu-u-gospicu.html",
@@ -421,20 +407,6 @@
       "priority": 70
     },
     {
-      "id": "vesti-hronika-ko-je-uros-ninkovic-kavcanin-uhapsen-na-kritu-",
-      "title": "Uhvaćen na aerodromu na Kritu sa lažnim češkim dokumentima i satovima od 90.000 evra: Ko je Uroš Ninković , kavčanin kog traži beogradska policija?",
-      "url": "https://nova.rs/vesti/hronika/ko-je-uros-ninkovic-kavcanin-uhapsen-na-kritu/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T11:27:52+00:00",
-      "time": "11:27",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "ana-zbog-sumnje-ostetio-budzet-novog-sada-za-5580000-dinara-",
       "title": "Uhapšen zastupnik udruženja građana zbog sumnje da je oštetio budžet Novog Sada za 5.580.000 dinara",
       "url": "https://n1info.rs/vesti/uhapsen-zastupnik-udruzenja-gradjana-zbog-sumnje-ostetio-budzet-novog-sada-za-5580000-dinara/",
@@ -603,9 +575,9 @@
       "priority": 26
     },
     {
-      "id": "za-hapsenje-netanjahua-zbog-presretanja-flotile-za-gazu-vest",
+      "id": "-crvenoj-poternici-turska-izdala-novi-nalog-za-hapsenje-vest",
       "title": "Izdat nalog za hapšenje Netanjahua",
-      "url": "https://www.b92.net/info/svet/260949/turska-izdala-novi-nalog-za-hapsenje-netanjahua-zbog-presretanja-flotile-za-gazu/vest",
+      "url": "https://www.b92.net/info/svet/260949/netanjahu-ponovo-na-crvenoj-poternici-turska-izdala-novi-nalog-za-hapsenje/vest",
       "date": "2026-08-21",
       "datetime": "2026-08-21T14:11:00+00:00",
       "time": "14:11",
@@ -624,20 +596,6 @@
       "datetime": "2026-08-21T10:27:44+00:00",
       "time": "10:27",
       "source": "Vreme",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
-      "id": "ka-10082567-pogledajte-kako-su-uhapseni-piromani-iz-beograda",
-      "title": "POGLEDAJTE KAKO SU POHAPŠENI PIROMANI IZ CENTRA BEOGRADA: Zapalili nekoliko motora i pobegli (video)",
-      "url": "https://www.kurir.rs/crna-hronika/10082567/pogledajte-kako-su-uhapseni-piromani-iz-beograda",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T10:26:02+00:00",
-      "time": "10:26",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "z-bijeljine-zbog-pokusaja-ubistva-evo-detalja-akcije-4y9r9jj",
+      "title": "DRAMA U SREMSKOJ MITROVICI Spektakularno hapšenje osumnjičenog za POKUŠAJ TEŠKOG UBISTVA, čeka ga izručenje",
+      "url": "https://www.blic.rs/vesti/hronika/uhapsen-bd-24-iz-bijeljine-zbog-pokusaja-ubistva-evo-detalja-akcije/4y9r9jj",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T14:00:04+00:00",
+      "time": "14:00",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "8658-aleksandar-durdev-osudio-napade-na-spc-i-porfirija-vest",
+      "title": "Đurđev: Licemerno je što Crna Gora decenijama nije rešila pitanje kriminala, a sada pokušava da blati patrijarha SPC",
+      "url": "https://www.euronews.rs/srbija/politika/238658/aleksandar-durdev-osudio-napade-na-spc-i-porfirija/vest",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T19:07:00+00:00",
+      "time": "19:07",
+      "source": "Euronews Serbia",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
+      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
+      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
+      "date": "2026-07-30",
+      "datetime": "2026-07-30T15:13:36+00:00",
+      "time": "15:13",
+      "source": "KRIK",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     }
   ],
   "all_sources": [
