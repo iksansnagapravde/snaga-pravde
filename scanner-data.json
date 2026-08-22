@@ -15,34 +15,6 @@
       "priority": 104
     },
     {
-      "id": "083659-zelenski-od-amerikanaca-hitno-zatrazio-rakete-patriot",
-      "title": "ZELENSKI OD AMERIKANACA HITNO ZATRAŽIO RAKETE \"PATRIOT\": Ukrajinski predsednik naglasio potrebu jačanja balističke odbrane zemlje uoči zime",
-      "url": "https://www.kurir.rs/planeta/10083659/zelenski-od-amerikanaca-hitno-zatrazio-rakete-patriot",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:00:57+00:00",
-      "time": "16:00",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "grckoj-u-toku-je-dugotrajni-toplotni-talas-evo-dokle-yhd8gx5",
-      "title": "\"TRAJAĆE DUGO\" Upozorenje Meteorološke službe u Grčkoj, u toku TOPLOTNI TALAS: Za vikend će biti pakleno, u ovim delovima biće najviše temperature",
-      "url": "https://www.blic.rs/vesti/svet/upozorenje-meteoroloska-sluzbe-u-grckoj-u-toku-je-dugotrajni-toplotni-talas-evo-dokle/yhd8gx5",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T12:25:50+00:00",
-      "time": "12:25",
-      "source": "Blic",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "iceru-anonimnost-garantuju-ljudi-pod-njegovom-kontrolom-vest",
       "title": "Mafijaški Montenegro: Za informacije o Zviceru anonimnost garantuju ljudi pod njegovom kontrolom?",
       "url": "https://www.b92.net/info/politika/261194/mafijaski-montenegro-za-informacije-o-zviceru-anonimnost-garantuju-ljudi-pod-njegovom-kontrolom/vest",
@@ -78,6 +50,20 @@
       "datetime": "2026-08-22T16:40:49+00:00",
       "time": "16:40",
       "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "isplivali-novi-detalji-o-urosu-ninkovicu-uhapsenoim-na-kritu",
+      "title": "\"MA, BATO, IMA SLIKE UROŠA NINKOVIĆA, SPREMA NEKO ZLO, REŽI I LAJE\" Isplivali novi detalji o uhapšenom Srbinu na Kritu - jednom ga ODALA TETOVAŽA!",
+      "url": "https://www.kurir.rs/crna-hronika/10082887/isplivali-novi-detalji-o-urosu-ninkovicu-uhapsenoim-na-kritu",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T08:34:55+00:00",
+      "time": "08:34",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -379,6 +365,20 @@
       "priority": 25
     },
     {
+      "id": "litika-10083386-ugljesa-mrdic-porucio-ko-nece-s-nama-ne-mora",
+      "title": "PREDSEDNIK SKUPŠTINSKOG ODBORA ZA PRAVOSUĐE O PREDSTOJEĆIM IZBORIMA: Uglješa Mrdić: Ko neće s nama, ne mora!",
+      "url": "https://www.kurir.rs/vesti/politika/10083386/ugljesa-mrdic-porucio-ko-nece-s-nama-ne-mora",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T10:16:03+00:00",
+      "time": "10:16",
+      "source": "Kurir",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
       "id": "crna-hronika-10083368-srpski-fudbaleri-s-druge-strane-zakona",
       "title": "NARKO-FUDBALERI! OD STADIONA DO CRNE HRONIKE: Sportsku karijeru zamenili kriminalnom, Milošević poslednji pao s kokainom (foto)",
       "url": "https://www.kurir.rs/crna-hronika/10083368/srpski-fudbaleri-s-druge-strane-zakona",
@@ -519,6 +519,20 @@
       "priority": 4
     },
     {
+      "id": "a-10083365-bojana-pesevska-nestala-hrvatska-policija-potraga",
+      "title": "POLICIJA DANIMA TRAGA ZA BOJANOM: Nestala sa detetom, upletena je u slučaj brutalnog zločina: Ako je vidite, odmah pozovite 192!",
+      "url": "https://www.kurir.rs/region/hrvatska/10083365/bojana-pesevska-nestala-hrvatska-policija-potraga",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T10:04:01+00:00",
+      "time": "10:04",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "ps-www-rts-rs-vesti-svet-6024454-pucnjava-skola-svedska-html",
       "title": "Напад у школи у Шведској – једна особа страдала, две тешко повређене",
       "url": "https://www.rts.rs/vesti/svet/6024454/pucnjava-skola-svedska.html",
@@ -559,6 +573,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "travnjak-ce-izgleda-kao-tepih-ovaj-trik-spasava-zutu-9z5gc0v",
+      "title": "Uradite ovo do kraja avgusta i travnjak će izgleda kao tepih: Ovaj trik spasava žutu travu posle suše",
+      "url": "https://www.blic.rs/slobodno-vreme/uradite-ovo-do-kraja-avgusta-i-travnjak-ce-izgleda-kao-tepih-ovaj-trik-spasava-zutu/9z5gc0v",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T17:07:00+00:00",
+      "time": "17:07",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ti-261201-kanada-uvodi-uzvratne-carine-na-americku-robu-vest",
+      "title": "Vraćaju milo za drago: Ameriko, spremi se",
+      "url": "https://www.b92.net/biz/svet/vesti/261201/kanada-uvodi-uzvratne-carine-na-americku-robu/vest",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T17:05:00+00:00",
+      "time": "17:05",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "-pa-novi-toplotni-talas-sledi-niz-dana-od-40-stepeni-wdmwgxp",
@@ -631,20 +673,6 @@
       "priority": 0
     },
     {
-      "id": "port-dijego-simeone-hulijan-alvarez-izajava-atletiko-madrid-",
-      "title": "Čolo Simeone pokušao da se „opere“ pred medijima zbog nespretne izjave o Hulijanu Alvarezu",
-      "url": "https://www.danas.rs/sport/dijego-simeone-hulijan-alvarez-izajava-atletiko-madrid/",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:30:29+00:00",
-      "time": "16:30",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "tuelno-261191-georgina-rodrigez-usvojila-ronaldovu-decu-vest",
       "title": "Georgina Rodrigez usvojila Ronaldovu decu? Procurili detalji pravnog postupka",
       "url": "https://www.b92.net/zivot/aktuelno/261191/georgina-rodrigez-usvojila-ronaldovu-decu/vest",
@@ -667,34 +695,6 @@
       "time": "16:23",
       "source": "Danas",
       "category": "Социјална права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "rbije-pripremamo-se-za-izbore-narod-odlucuje-a-ne-oni-spolja",
-      "title": "Председник Србије: Припремамо се за изборе, народ одлучује, а не они споља",
-      "url": "https://www.politika.rs/scc/clanak/780255/predsednik-srbije-pripremamo-se-za-izbore-narod-odlucuje-a-ne-oni-spolja",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:21:00+00:00",
-      "time": "16:21",
-      "source": "Politika",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "2-godine-upala-u-tesku-depresiju-potrazila-sam-pomoc-7hkz0mq",
-      "title": "NAŠA PEVAČICA SA 22 GODINE UPALA U TEŠKU DEPRESIJU Progovorila o problemima: \"U Srbiji je tabu tema pričati o ovome, POTRAŽILA SAM POMOĆ\", prisetila se mučnih detalja",
-      "url": "https://www.blic.rs/zabava/nasa-peveacica-sa-22-godine-upala-u-tesku-depresiju-potrazila-sam-pomoc/7hkz0mq",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:20:00+00:00",
-      "time": "16:20",
-      "source": "Blic",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
