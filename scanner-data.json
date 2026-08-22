@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "ora-10082881-podgorica-cetinje-uhapsen-vozac-slepera-alkohol",
-      "title": "VOZAČ ŠLEPERA UHAPŠEN SA 1,41 PROMILA: Vozio na putu Podgorica – Cetinje pod dejstvom alkohola",
-      "url": "https://www.kurir.rs/region/crna-gora/10082881/podgorica-cetinje-uhapsen-vozac-slepera-alkohol",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T22:21:00+00:00",
-      "time": "22:21",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "anas-rs-svet-da-li-ce-hrvatska-izruciti-ukrajinca-u-nemacku-",
       "title": "Da li će Hrvatska izručiti Ukrajinca u Nemačku?",
       "url": "https://www.danas.rs/svet/da-li-ce-hrvatska-izruciti-ukrajinca-u-nemacku/",
@@ -153,20 +139,6 @@
       "breaking": false,
       "alert": true,
       "priority": 78
-    },
-    {
-      "id": "crna-gora-10082813-hapsenje-zbog-prodaje-heroina-u-podgorici",
-      "title": "BACIO HEROIN KROZ PROZOR DOK JE POLICIJA RAZVALJIVALA VRATA! Drama u Podgorici: Uhapšeni višestruki povratnici, pao dilerski dvojac",
-      "url": "https://www.kurir.rs/region/crna-gora/10082813/hapsenje-zbog-prodaje-heroina-u-podgorici",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T21:45:00+00:00",
-      "time": "21:45",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
     },
     {
       "id": "263-hapsenje-pokusaj-ubistva-istocno-sarajevo-bijeljina-html",
@@ -316,6 +288,20 @@
       "datetime": "2026-08-21T19:02:46+00:00",
       "time": "19:02",
       "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "zrael-kritikovao-erdogana-zbog-naloga-za-hapsenje-netanjahua",
+      "title": "\"ANTISEMITSKI DIKTATOR\": Izrael kritikovao Erdogana zbog naloga za hapšenje Netanjahua",
+      "url": "https://www.kurir.rs/planeta/10082938/izrael-kritikovao-erdogana-zbog-naloga-za-hapsenje-netanjahua",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T15:58:57+00:00",
+      "time": "15:58",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -575,6 +561,20 @@
       "priority": 4
     },
     {
+      "id": "0082844-Napad-macem-u-skoli-u-Svedskoj-Vise-osoba-povredjeno",
+      "title": "KRVOPROLIĆE U ŠVEDSKOJ ŠKOLI! Manijak naoružan MAČEM upao na čas i počeo da napada: Ima povređenih, policija ODMAH reagovala! (FOTO)",
+      "url": "https://www.kurir.rs/planeta/10082844/Napad-macem-u-skoli-u-Svedskoj-Vise-osoba-povredjeno",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T14:05:39+00:00",
+      "time": "14:05",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "-238941-kragujevac-vozio-212-na-sat-na-putu-ka-batocini-vest",
       "title": "Policija u Kragujevcu zaustavila vozača koji je vozio brzinom od 212 kilometara na čas",
       "url": "https://www.euronews.rs/srbija/aktuelno/238941/kragujevac-vozio-212-na-sat-na-putu-ka-batocini/vest",
@@ -631,20 +631,6 @@
       "priority": 4
     },
     {
-      "id": "w-kurir-rs-planeta-10082324-ukrajina-dezerteri-nemacka-obuka",
-      "title": "POSLALI IH NA OBUKU U SAKSONIJU, ONI DEZERTIRALI: Nemački mediji o dramatičnoj situaciji - Ako se vrate u Ukrajinu, čeka ih duga robija",
-      "url": "https://www.kurir.rs/planeta/10082324/ukrajina-dezerteri-nemacka-obuka",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T23:00:00+00:00",
-      "time": "23:00",
-      "source": "Kurir",
-      "category": "Извршења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
       "id": "svedskoj-tesko-ranjena-dvojica-tinejdzera-i-jos-jedna-osoba-",
       "title": "Napad mačem u školi u Švedskoj: Jedna osoba ubijena mačem u srednjoj školi, ima i povređenih",
       "url": "https://www.danas.rs/svet/napad-macem-u-skoli-u-svedskoj-tesko-ranjena-dvojica-tinejdzera-i-jos-jedna-osoba/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-21T21:17:00+00:00",
       "time": "21:17",
       "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "kako-se-pozar-se-priblizava-srednjovekovnoj-tvrdjavi-maglic-",
+      "title": "VIDEO Snimak iz drona pokazuje kako se požar približava srednjovekovnoj tvrđavi Maglič",
+      "url": "https://nova.rs/vesti/hronika/video-snimak-iz-drona-pokazuje-kako-se-pozar-se-priblizava-srednjovekovnoj-tvrdjavi-maglic/",
+      "date": "2026-08-21",
+      "datetime": "2026-08-21T21:07:33+00:00",
+      "time": "21:07",
+      "source": "Nova",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
