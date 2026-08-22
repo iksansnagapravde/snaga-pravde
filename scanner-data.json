@@ -29,6 +29,20 @@
       "priority": 104
     },
     {
+      "id": "grckoj-u-toku-je-dugotrajni-toplotni-talas-evo-dokle-yhd8gx5",
+      "title": "\"TRAJAĆE DUGO\" Upozorenje Meteorološka službe u Grčkoj, u toku TOPLOTNI TALAS: Za vikend će biti pakleno, u ovim delovima biće najviše temperature",
+      "url": "https://www.blic.rs/vesti/svet/upozorenje-meteoroloska-sluzbe-u-grckoj-u-toku-je-dugotrajni-toplotni-talas-evo-dokle/yhd8gx5",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T12:25:50+00:00",
+      "time": "12:25",
+      "source": "Blic",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "isplivali-novi-detalji-o-urosu-ninkovicu-uhapsenoim-na-kritu",
       "title": "\"MA, BATO, IMA SLIKE UROŠA NINKOVIĆA, SPREMA NEKO ZLO, REŽI I LAJE\" Isplivali novi detalji o uhapšenom Srbinu na Kritu - jednom ga ODALA TETOVAŽA!",
       "url": "https://www.kurir.rs/crna-hronika/10082887/isplivali-novi-detalji-o-urosu-ninkovicu-uhapsenoim-na-kritu",
@@ -211,6 +225,20 @@
       "priority": 66
     },
     {
+      "id": "aca-markovic-od-baneta-bumbara-do-naprednjaka-put-je-kratak-",
+      "title": "Od Baneta Bumbara do naprednjaka put je kratak",
+      "url": "https://www.danas.rs/kolumna/bratislav-braca-markovic/od-baneta-bumbara-do-naprednjaka-put-je-kratak/",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T12:00:15+00:00",
+      "time": "12:00",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "238862-zastupnik-udruzenja-zgrnuo-55-miliona-iz-budzeta-vest",
       "title": "Zastupnik udruženja \"zgrnuo\" više od 5,5 miliona iz budžeta: Dobio novac za 15 projekata, krao preko lažnih izveštaja",
       "url": "https://www.euronews.rs/srbija/aktuelno/238862/zastupnik-udruzenja-zgrnuo-55-miliona-iz-budzeta/vest",
@@ -223,6 +251,20 @@
       "breaking": false,
       "alert": false,
       "priority": 38
+    },
+    {
+      "id": "s-svet-mihailo-fedorov-volodimir-zelenski-politika-ukrajina-",
+      "title": "DW: Da li je Fedorov zaista konkurencija za Zelenskog?",
+      "url": "https://n1info.rs/svet/mihailo-fedorov-volodimir-zelenski-politika-ukrajina/",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T12:05:02+00:00",
+      "time": "12:05",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
@@ -253,13 +295,13 @@
       "priority": 30
     },
     {
-      "id": "a-vucicu-volja-gradana-je-sveta-ali-ako-je-slobodno-izrazena",
-      "title": "Stranka Srbija centar poručila Vučiću: Volja građana je sveta ali ako je slobodno izražena",
-      "url": "https://beta.rs/content/250619-stranka-srbija-centar-porucila-vucicu-volja-gradana-je-sveta-ali-ako-je-slobodno-izrazena",
+      "id": "80212-dodik-ne-gradi-se-poverenje-u-bih-zloupotrebom-dejtona",
+      "title": "Додик: Не гради се поверење у БиХ злоупотребом Дејтона",
+      "url": "https://www.politika.rs/scc/clanak/780212/dodik-ne-gradi-se-poverenje-u-bih-zloupotrebom-dejtona",
       "date": "2026-08-22",
-      "datetime": "2026-08-22T09:00:10+00:00",
-      "time": "09:00",
-      "source": "Beta",
+      "datetime": "2026-08-22T12:18:00+00:00",
+      "time": "12:18",
+      "source": "Politika",
       "category": "Злоупотребе",
       "summary": "",
       "breaking": false,
@@ -293,6 +335,34 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "dnaevropa-org-a-kurti-ibar-most-otvaranje-kfor-33836177-html",
+      "title": "Kurti: U stalnoj smo komunikaciji s KFOR-om oko potpunog otvaranja mosta preko Ibra",
+      "url": "https://www.slobodnaevropa.org/a/kurti-ibar-most-otvaranje-kfor-/33836177.html",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T12:42:52+00:00",
+      "time": "12:42",
+      "source": "RSE Balkan",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
+      "id": "39083-sever-kosova-tvrdnje-o-pojacanom-pritisku-na-srbe-vest",
+      "title": "Pritisci na Srbe na KiM: Fizički napadi, pretnje, hapšenja bez dokaza...",
+      "url": "https://www.euronews.rs/srbija/politika/239083/sever-kosova-tvrdnje-o-pojacanom-pritisku-na-srbe/vest",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T12:29:00+00:00",
+      "time": "12:29",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "aevropa-org-a-most-reka-ibar-kosovo-vucic-nato-33834961-html",
@@ -533,6 +603,20 @@
       "priority": 8
     },
     {
+      "id": "adske-cistoce-nasao-bombu-policija-blokirala-naselje-z2y7nx4",
+      "title": "Radnik \"Čistoće\" NAŠAO BOMBU U ŠAHTU, policija blokirala naselje, stigli DEMINERI: Drama u Kotežu",
+      "url": "https://www.blic.rs/vesti/hronika/drama-u-kotezu-radnik-gradske-cistoce-nasao-bombu-policija-blokirala-naselje/z2y7nx4",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T12:19:52+00:00",
+      "time": "12:19",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "gersti-policija-ispituje-jezive-objave-na-drustvenim-mrezama",
       "title": "Напад мачем у Фагерсти: полиција испитује језиве објаве на друштвеним мрежама",
       "url": "https://www.politika.rs/scc/clanak/780203/napad-macem-u-fagersti-policija-ispituje-jezive-objave-na-drustvenim-mrezama",
@@ -615,90 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "-strave-Par-optuzen-i-za-seksualno-zlostavljanje-maloletnika",
-      "title": "\"ČISTO ZLO\" U SAD, POLICIJA OSTALA U ŠOKU! Upali u dom sa 16 zapuštene dece, pa razotkrili mračnu porodičnu tajnu i ZLOSTAVLJANJE! (VIDEO)",
-      "url": "https://www.kurir.rs/planeta/10083209/Novi-uzas-u-kuci-strave-Par-optuzen-i-za-seksualno-zlostavljanje-maloletnika",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T06:22:44+00:00",
-      "time": "06:22",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ps-www-rts-rs-vesti-svet-6024454-pucnjava-skola-svedska-html",
-      "title": "Напад у школи у Шведској – једна особа страдала, две тешко повређене",
-      "url": "https://www.rts.rs/vesti/svet/6024454/pucnjava-skola-svedska.html",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T20:07:11+00:00",
-      "time": "20:07",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-238941-kragujevac-vozio-212-na-sat-na-putu-ka-batocini-vest",
-      "title": "Policija u Kragujevcu zaustavila vozača koji je vozio brzinom od 212 kilometara na čas",
-      "url": "https://www.euronews.rs/srbija/aktuelno/238941/kragujevac-vozio-212-na-sat-na-putu-ka-batocini/vest",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T12:37:00+00:00",
-      "time": "12:37",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "rocka-otkrivena-laboratorija-marihuane-zaplenjeno-30-kg-vest",
-      "title": "Policija u Grockoj otkrila laboratoriju za uzgoj marihuane, zaplenjeno oko 30 kilograma droge (VIDEO, FOTO)",
-      "url": "https://www.euronews.rs/srbija/aktuelno/238809/grocka-otkrivena-laboratorija-marihuane-zaplenjeno-30-kg/vest",
-      "date": "2026-08-20",
-      "datetime": "2026-08-20T16:11:00+00:00",
-      "time": "16:11",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ps-radar-nova-rs-politika-policija-kao-udarna-batina-rezima-",
-      "title": "Može li se sve rešiti državnim terorom",
-      "url": "https://radar.nova.rs/politika/policija-kao-udarna-batina-rezima/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-muskarac-iz-srbije-osudjen-na-30-dana-zatvora-u-crnoj-gori-",
-      "title": "Muškarac iz Srbije osuđen na 30 dana zatvora u Crnoj Gori: Odbio da uradi test na drogu i alkohol, pa dobio i zabranu",
-      "url": "https://nova.rs/vesti/hronika/muskarac-iz-srbije-osudjen-na-30-dana-zatvora-u-crnoj-gori/",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T11:50:51+00:00",
-      "time": "11:50",
-      "source": "Nova",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
