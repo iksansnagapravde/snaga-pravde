@@ -15,13 +15,27 @@
       "priority": 104
     },
     {
-      "id": "3838-makedonac-uhapsen-priboj-placeni-ubica-naruceno-ubistvo",
-      "title": "UHAPŠEN MAKEDONAC U PRIBOJU: Sumnja se da je plaćeni ubica i da je došao u Srbiju da IZVRŠI LIKVIDACIJU! Veruje se da radi za \"kavčane\"",
-      "url": "https://www.kurir.rs/crna-hronika/10083838/makedonac-uhapsen-priboj-placeni-ubica-naruceno-ubistvo",
+      "id": "083659-zelenski-od-amerikanaca-hitno-zatrazio-rakete-patriot",
+      "title": "ZELENSKI OD AMERIKANACA HITNO ZATRAŽIO RAKETE \"PATRIOT\": Ukrajinski predsednik naglasio potrebu jačanja balističke odbrane zemlje uoči zime",
+      "url": "https://www.kurir.rs/planeta/10083659/zelenski-od-amerikanaca-hitno-zatrazio-rakete-patriot",
       "date": "2026-08-22",
-      "datetime": "2026-08-22T20:33:04+00:00",
-      "time": "20:33",
+      "datetime": "2026-08-22T16:00:57+00:00",
+      "time": "16:00",
       "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
+      "id": "bjekat-radio-tokom-vazdusne-uzbune-kada-je-poginulo-16-ljudi",
+      "title": "Директор супермаркета у Кривом Рогу ухапшен јер је објекат радио током ваздушне узбуне када је погинуло 16 људи",
+      "url": "https://www.politika.rs/scc/clanak/780303/direktor-supermarketa-u-krivom-rogu-uhapsen-jer-je-objekat-radio-tokom-vazdusne-uzbune-kada-je-poginulo-16-ljudi",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T22:10:00+00:00",
+      "time": "22:10",
+      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -477,20 +491,6 @@
       "priority": 22
     },
     {
-      "id": "-kultura-10083841-netflixu-ukraden-film-sa-nikolasom-kejdzom",
-      "title": "Ukraden film sa Nikolasom Kejdžom, tužba vredna 105 miliona dolara: U slučaj se uključila i policija",
-      "url": "https://www.kurir.rs/zabava/kultura/10083841/netflixu-ukraden-film-sa-nikolasom-kejdzom",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T20:37:25+00:00",
-      "time": "20:37",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
-    },
-    {
       "id": "aciju-o-laznoj-samanki-iz-srbije-marijani-mijailovic-2ys334x",
       "title": "AKO SAZNATE NEŠTO O NJOJ, DOBIĆETE 5.000 EVRA! Policija nudi nagradu za informaciju o SRPKINJI koja je pokrala MILIONE: \"Tvoj novac je proklet, donosi ti bolest!\" (FOTO)",
       "url": "https://www.blic.rs/vesti/hronika/policija-nudi-5000-evra-za-informaciju-o-laznoj-samanki-iz-srbije-marijani-mijailovic/2ys334x",
@@ -589,20 +589,6 @@
       "priority": 4
     },
     {
-      "id": "o-10083828-policija-u-zajecaru-otkrila-sest-prekrsaja-dronom",
-      "title": "Policija lansirala dronove na srpske puteve, pljušte kazne: 6 vozača već palo u zamku",
-      "url": "https://www.kurir.rs/vesti/drustvo/10083828/policija-u-zajecaru-otkrila-sest-prekrsaja-dronom",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T21:15:00+00:00",
-      "time": "21:15",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "je-ljudi-povredjeno-policija-traga-za-dvojicom-osumnjicenih-",
       "title": "(UZNEMIRUJUĆI VIDEO) Drama kod Bileće: Automobilom gazio ljude na konjičkim trkama, troje povređenih, policija traga za dvojicom osumnjičenih",
       "url": "https://nova.rs/vesti/svet/uznemirujuci-video-drama-kod-bilece-automobilom-gazio-ljude-na-konjickim-trkama-troje-ljudi-povredjeno-policija-traga-za-dvojicom-osumnjicenih/",
@@ -657,6 +643,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "tev-bbc-a-da-uruce-sudske-pozive-clanovima-njegove-porodice-",
+      "title": "Tramp pozvao sud da odbije zahtev BBC-a da uruče sudske pozive članovima njegove porodice",
+      "url": "https://n1info.rs/svet/tramp-pozvao-sud-da-odbije-zahtev-bbc-a-da-uruce-sudske-pozive-clanovima-njegove-porodice/",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T21:59:00+00:00",
+      "time": "21:59",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "ucnost-da-je-njenom-suprugu-nesto-sipano-u-pice-tokom-debate",
