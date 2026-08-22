@@ -295,20 +295,6 @@
       "priority": 38
     },
     {
-      "id": "https-www-danas-rs-svet-konkurencija-za-zelenskog-",
-      "title": "Konkurencija za Zelenskog?",
-      "url": "https://www.danas.rs/svet/konkurencija-za-zelenskog/",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:00:24+00:00",
-      "time": "16:00",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
       "title": "Inženjeri na optuženičkoj klupi, koruptivni sistem u senci",
       "url": "https://radar.nova.rs/drustvo/nadstresnica-inzenjeri-korupcija-optuznica/",
@@ -575,6 +561,20 @@
       "priority": 8
     },
     {
+      "id": "mobilom-zaleteo-u-ljude-kod-bilece-tri-osobe-povredjene-html",
+      "title": "Мушкарац се аутомобилом залетео у људе код Билеће, три особе повређене",
+      "url": "https://www.rts.rs/vesti/region/6025084/muskarac-se-automobilom-zaleteo-u-ljude-kod-bilece-tri-osobe-povredjene.html",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T21:54:20+00:00",
+      "time": "21:54",
+      "source": "RTS",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "8-vise-od-100-ljudi-oteto-u-napadima-na-nigerijska-sela-vest",
       "title": "Masovni napad u Nigeriji: Naoružani muškarci upali u sela; Više od 100 ljudi oteto",
       "url": "https://www.b92.net/info/svet/261248/vise-od-100-ljudi-oteto-u-napadima-na-nigerijska-sela/vest",
@@ -659,6 +659,20 @@
       "priority": 4
     },
     {
+      "id": "ucnost-da-je-njenom-suprugu-nesto-sipano-u-pice-tokom-debate",
+      "title": "Џил Бајден не искључује могућност да је њеном супругу нешто сипано у пиће током дебате",
+      "url": "https://www.politika.rs/scc/clanak/780302/dzil-bajden-ne-iskljucuje-mogucnost-da-je-njenom-suprugu-nesto-sipano-u-pice-tokom-debate",
+      "date": "2026-08-22",
+      "datetime": "2026-08-22T21:47:00+00:00",
+      "time": "21:47",
+      "source": "Politika",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "aglic-odbranjena-od-pozara-situacija-trenutno-pod-kontrolom-",
       "title": "Udruženje: Tvrđava Maglič odbranjena od požara, situacija trenutno pod kontrolom",
       "url": "https://www.danas.rs/vesti/drustvo/udruzenje-tvrdjava-maglic-odbranjena-od-pozara-situacija-trenutno-pod-kontrolom/",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-22T21:31:05+00:00",
       "time": "21:31",
       "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "a-je-zasticeno-prirodno-dobro-status-se-ne-menja-zbog-pozara",
-      "title": "Ministarka Pavkov: Deliblatska peščara je zaštićeno prirodno dobro, status se ne menja zbog požara",
-      "url": "https://beta.rs/content/250658-ministarka-pavkov-deliblatska-pescara-je-zasticeno-prirodno-dobro-status-se-ne-menja-zbog-pozara",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T21:20:09+00:00",
-      "time": "21:20",
-      "source": "Beta",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
