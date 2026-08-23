@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "kako-su-carinici-otkrili-prevaru-na-granicnom-prelazu-batina",
+      "title": "CARINICI U HRVATSKOJ ZAUSTAVILI SRBINA Vozač izašao i prenerazio policiju! Tvrdio da nema šta da prijavi, kad su razgrnuli tovar USLEDILA DRAMA! Hitno uhapšen",
+      "url": "https://www.kurir.rs/crna-hronika/10084522/kako-su-carinici-otkrili-prevaru-na-granicnom-prelazu-batina",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T19:02:58+00:00",
+      "time": "19:02",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": true,
+      "alert": true,
+      "priority": 192
+    },
+    {
       "id": "-Zelenski-Ukrajina-nije-ucestvovala-u-sabotazi-Severnog-toka",
       "title": "PALA PRVA HAPŠENJA ZBOG SEVERNOG TOKA, ZELENSKI HITNO PORUČIO: Ukrajina nije organizovala napad na gasovod, Nemačkoj smo sve rekli!",
       "url": "https://www.kurir.rs/planeta/10084479/Zelenski-Ukrajina-nije-ucestvovala-u-sabotazi-Severnog-toka",
@@ -225,34 +239,6 @@
       "priority": 92
     },
     {
-      "id": "ka-10084262-ovo-je-makedonac-placeni-ubica-uhapsen-u-priboju",
-      "title": "OVO JE PLAĆENI UBICA IZ SEVERNE MAKEDONIJE: Uhapšen u Priboju, radio za kavčane?! (FOTO)",
-      "url": "https://www.kurir.rs/crna-hronika/10084262/ovo-je-makedonac-placeni-ubica-uhapsen-u-priboju",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T12:51:10+00:00",
-      "time": "12:51",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "4270-sukob-migranata-i-grcke-policije-blizu-bugarske-granice",
-      "title": "SUKOB MIGRANATA SA GRČKOM POLICIJOM, ŠOK BOMBE BLIZU BUGARSKE GRANICE! Obračun trajao celu noć, presekli ogradu prihvatnog centra i pobegli, uhapšena polovina",
-      "url": "https://www.kurir.rs/planeta/10084270/sukob-migranata-i-grcke-policije-blizu-bugarske-granice",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T12:49:21+00:00",
-      "time": "12:49",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-spaniji-zaplenjeno-tona-i-po-kokaina-cetvoro-uhapsenih-html",
       "title": "У Шпанији заплењено тона и по кокаина – четворо ухапшених",
       "url": "https://www.rts.rs/vesti/svet/6025324/u-spaniji-zaplenjeno-tona-i-po-kokaina--cetvoro-uhapsenih.html",
@@ -400,20 +386,6 @@
       "datetime": "2026-08-23T14:08:34+00:00",
       "time": "14:08",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "ece-osumnjicen-da-je-kolima-gazio-ljude-na-konjickim-trkama-",
-      "title": "Uhapšen Željko Vujović posle jezivog napada kod Bileće: Osumnjičen da je kolima gazio ljude na konjičkim trkama",
-      "url": "https://nova.rs/vesti/svet/uhapsen-zeljko-vujovic-posle-jezivog-napada-kod-bilece-osumnjicen-da-je-kolima-gazio-ljude-na-konjickim-trkama/",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T13:27:06+00:00",
-      "time": "13:27",
-      "source": "Nova",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "cja-zahvacena-pozarima-pakete-i-vise-od-pola-miliona-dinara-",
+      "title": "Novosađani poslali u područja zahvaćena požarima pakete i više od pola miliona dinara",
+      "url": "https://www.danas.rs/vesti/drustvo/novosadjani-poslali-u-podrucja-zahvacena-pozarima-pakete-i-vise-od-pola-miliona-dinara/",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T14:18:22+00:00",
+      "time": "14:18",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "gradu-lopov-usao-u-kucu-i-odneo-sef-sa-400000-evra-i-zlatom-",
+      "title": "Filmska pljačka u Beogradu: Lopov ušao u kuću i odneo sef sa 400.000 evra i zlatom",
+      "url": "https://nova.rs/vesti/hronika/filmska-pljacka-u-beogradu-lopov-usao-u-kucu-i-odneo-sef-sa-400000-evra-i-zlatom/",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T19:07:51+00:00",
+      "time": "19:07",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
