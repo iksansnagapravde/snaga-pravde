@@ -407,20 +407,6 @@
       "priority": 70
     },
     {
-      "id": "karac-koji-je-gazio-ljude-dzipom-na-konjickim-trkama-jmsg0mk",
-      "title": "UHAPŠEN ŽELJKO VUJOVIĆ! Policija uhvatila pomahnitalog muškarca koji je džipom NAMERNO GAZIO LJUDE na konjičkim trkama (VIDEO)",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-zeljko-vujovic-muskarac-koji-je-gazio-ljude-dzipom-na-konjickim-trkama/jmsg0mk",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T13:22:49+00:00",
-      "time": "13:22",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "https-www-danas-rs-svet-region-pojacane-kontrole-u-ulcinju-",
       "title": "Pojačane kontrole u Ulcinju: Uhapšeno devet osoba, vozačima kazne od preko 10.000 evra",
       "url": "https://www.danas.rs/svet/region/pojacane-kontrole-u-ulcinju/",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-23T14:45:09+00:00",
       "time": "14:45",
       "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "cja-zahvacena-pozarima-pakete-i-vise-od-pola-miliona-dinara-",
+      "title": "Novosađani poslali u područja zahvaćena požarima pakete i više od pola miliona dinara",
+      "url": "https://www.danas.rs/vesti/drustvo/novosadjani-poslali-u-podrucja-zahvacena-pozarima-pakete-i-vise-od-pola-miliona-dinara/",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T14:18:22+00:00",
+      "time": "14:18",
+      "source": "Danas",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
