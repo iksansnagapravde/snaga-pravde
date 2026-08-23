@@ -85,20 +85,6 @@
       "priority": 92
     },
     {
-      "id": "og-fudbalera-ovo-je-bila-njegova-uloga-u-transportu-kokaina-",
-      "title": "Novi detalji hapšenja srpskog fudbalera, ovo je bila njegova uloga u transportu kokaina",
-      "url": "https://nova.rs/sport/fudbal/novi-detalji-hapsenja-srpskog-fudbalera-ovo-je-bila-njegova-uloga-u-transportu-kokaina/",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:40:49+00:00",
-      "time": "16:40",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "o-238953-uhapsen-osumnjiceni-za-pokusaj-ubistva-dd-u-sm-vest",
       "title": "Velika akcija UKP-a i BIA u Sremskoj Mitrovici: Uhapšen osumnjičeni za pokušaj ubistva D.D.",
       "url": "https://www.euronews.rs/srbija/aktuelno/238953/uhapsen-osumnjiceni-za-pokusaj-ubistva-dd-u-sm/vest",
@@ -239,20 +225,6 @@
       "priority": 66
     },
     {
-      "id": "ri-veca-zarista-vatrogasni-timovi-eu-stigli-u-srbiju-239nf5c",
-      "title": "(FOTO, VIDEO) VATROGASNI TIMOVI IZ EU STIGLI U SRBIJU Bukte požari širom zemlje: Vučić sutra u Deliblatskoj peščari, tužilaštvo pokrenulo istragu zbog širenja panike",
-      "url": "https://www.blic.rs/vesti/drustvo/pozari-u-srbiji-cetiri-veca-zarista-vatrogasni-timovi-eu-stigli-u-srbiju/239nf5c",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T17:07:48+00:00",
-      "time": "17:07",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "https-www-danas-rs-vesti-drustvo-vjt-curenje-infromacija-",
       "title": "Disciplinovanje insajdera, uzbunjivača i medija",
       "url": "https://www.danas.rs/vesti/drustvo/vjt-curenje-infromacija/",
@@ -307,6 +279,20 @@
       "breaking": false,
       "alert": false,
       "priority": 38
+    },
+    {
+      "id": "-scc-clanak-780315-francuska-moze-da-ubrza-odlazak-zelenskog",
+      "title": "Француска може да убрза одлазак Зеленског",
+      "url": "https://www.politika.rs/scc/clanak/780315/francuska-moze-da-ubrza-odlazak-zelenskog",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T05:39:00+00:00",
+      "time": "05:39",
+      "source": "Politika",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
@@ -519,20 +505,6 @@
       "priority": 12
     },
     {
-      "id": "u-samanku-marijanu-koja-je-zlatne-poluge-krila-ispod-bazena-",
-      "title": "\"Ojadila\" građane tri zemlje EU za 10 miliona evra, promenila lični opis i nestala bez traga: Policija i dalje traži lažnu šamanku Marijanu, koja je zlatne poluge krila ispod bazena",
-      "url": "https://nova.rs/vesti/hronika/ojadila-gradjane-tri-zemlje-eu-za-10-miliona-evra-promenila-licni-opis-i-nestala-bez-traga-policija-i-dalje-trazi-laznu-samanku-marijanu-koja-je-zlatne-poluge-krila-ispod-bazena/",
-      "date": "2026-08-22",
-      "datetime": "2026-08-22T16:48:30+00:00",
-      "time": "16:48",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
-    },
-    {
       "id": "00-miliona-evra-mogli-bismo-da-resimo-pitanje-simpa-i-jumka-",
       "title": "Vučić: Sa 500 miliona evra mogli bismo da rešimo pitanje „Simpa“ i „Jumka“",
       "url": "https://www.danas.rs/vesti/ekonomija/vucic-sa-500-miliona-evra-mogli-bismo-da-resimo-pitanje-simpa-i-jumka/",
@@ -687,12 +659,40 @@
       "priority": 4
     },
     {
-      "id": "-odseli-a-i-dalje-zivi-na-brodu-u-gradu-pokazala-dom-et7yzd0",
-      "title": "I DALJE ŽIVI NA BRODU USRED BEOGRADA Morala da se odseli, pa pokazala kako joj sad IZGLEDA UNUTRAŠNJOST DOMA: Voditeljka pročišćava vodu, živi po svojim pravilima (FOTO)",
-      "url": "https://www.blic.rs/zabava/voditeljka-morala-da-se-odseli-a-i-dalje-zivi-na-brodu-u-gradu-pokazala-dom/et7yzd0",
+      "id": "-onda-se-sve-raspalo-godinama-kasnije-otkrila-mracnu-istinu-",
+      "title": "\"Debela, bezvredna gubitnica\": Bila je savršena devojka, onda se sve raspalo - godinama kasnije otkrila mračnu istinu",
+      "url": "https://nova.rs/sport/sport-ostalo/debela-bezvredna-gubitnica-bila-je-savrsena-devojka-onda-se-sve-raspalo-godinama-kasnije-otkrila-mracnu-istinu/",
       "date": "2026-08-23",
-      "datetime": "2026-08-23T04:45:00+00:00",
-      "time": "04:45",
+      "datetime": "2026-08-23T05:33:35+00:00",
+      "time": "05:33",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "info-rs-svet-bolnica-dadilje-deca-bez-roditeljskog-staranja-",
+      "title": "„Htela sam da je odvedem sa sobom“: Kako bolničke dadilje spasavaju siročad od usamljenosti",
+      "url": "https://n1info.rs/svet/bolnica-dadilje-deca-bez-roditeljskog-staranja/",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T05:33:00+00:00",
+      "time": "05:33",
+      "source": "N1",
+      "category": "Права деце",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "nde-5-godina-rata-u-ukrajini-donosi-najopasniji-obrt-95dtjbe",
+      "title": "PUTIN PRIMENJUJE \"STRATEGIJU ANAKONDE\"! 5. godina rata u Ukrajini donosi NAJOPASNIJI PREOKRET: Cilj više nije zauzimanje teritorije",
+      "url": "https://www.blic.rs/vesti/svet/putin-primenjuje-strategiju-anakonde-5-godina-rata-u-ukrajini-donosi-najopasniji-obrt/95dtjbe",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T05:28:00+00:00",
+      "time": "05:28",
       "source": "Blic",
       "category": "Извршења",
       "summary": "",
