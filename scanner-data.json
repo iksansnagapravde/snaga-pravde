@@ -211,20 +211,6 @@
       "priority": 90
     },
     {
-      "id": "ttps-radar-nova-rs-global-kusner-tirana-protesti-u-albaniji-",
-      "title": "Beskrajna tranzicija i državna korupcija",
-      "url": "https://radar.nova.rs/global/kusner-tirana-protesti-u-albaniji/",
-      "date": "2026-08-15",
-      "datetime": "2026-08-15T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "rs-tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze-",
       "title": "TOK: MUP i dalje nije dostavio „skaj” poruke Slaviše Kokeze",
       "url": "https://www.krik.rs/tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze/",
@@ -265,6 +251,20 @@
       "breaking": false,
       "alert": true,
       "priority": 84
+    },
+    {
+      "id": "on-crna-gora-10084467-pojacana-kontrola-saobracaja-u-ulcinju",
+      "title": "NOĆNA RACIJA NA VELIKOJ PLAŽI: Ulcinjska policija kontrolisala 300 osoba, devetoro uhapšeno zbog prekršaja u saobraćaju, kazne od preko 10.000 evra",
+      "url": "https://www.kurir.rs/region/crna-gora/10084467/pojacana-kontrola-saobracaja-u-ulcinju",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T21:45:00+00:00",
+      "time": "21:45",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "njena-15-tona-kokaina-sumnja-se-na-balkanske-klanove-cz1q05c",
