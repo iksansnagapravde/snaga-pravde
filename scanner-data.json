@@ -43,6 +43,20 @@
       "priority": 126
     },
     {
+      "id": "anak-780487-veliki-pozar-na-obodu-ankare-plamen-se-brzo-siri",
+      "title": "Велики пожар на ободу Анкаре, пламен се брзо шири",
+      "url": "https://www.politika.rs/scc/clanak/780487/veliki-pozar-na-obodu-ankare-plamen-se-brzo-siri",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T22:53:00+00:00",
+      "time": "22:53",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "rckoj-bacali-kamenje-ima-povredjenih-ostecene-zgrade-l3gxb1c",
       "title": "BACALI KAMENJE I PREDMETE NA POLICIJU, IZBIO OPŠTI HAOS! Oštećene zgrade, ima POVREĐENIH u oštrom sukobu u Grčkoj",
       "url": "https://www.blic.rs/vesti/svet/migranti-napali-policiju-u-grckoj-bacali-kamenje-ima-povredjenih-ostecene-zgrade/l3gxb1c",
@@ -155,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "10084442-pozar-u-pekari-u-niksicu-uhapsen-drzavljanin-srbije",
-      "title": "IZAZVAO POŽAR U PEKARI U NIKŠIĆU Uhapšen muškarac iz Srbije",
-      "url": "https://www.kurir.rs/crna-hronika/10084442/pozar-u-pekari-u-niksicu-uhapsen-drzavljanin-srbije",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T16:40:20+00:00",
-      "time": "16:40",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "-nis-uhapsena-zbog-unosenja-droge-u-kpz-pritvor-30-dana-vest",
       "title": "Hapšenje u Nišu: Devojka (22) u zatvor unela 760 tableta i više od 30 grama droge",
       "url": "https://www.euronews.rs/srbija/aktuelno/239205/nis-uhapsena-zbog-unosenja-droge-u-kpz-pritvor-30-dana/vest",
@@ -237,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 88
+    },
+    {
+      "id": "4492-crvene-poternice-interpola-crna-gora-traga-za-294-osobe",
+      "title": "CRVENE POTERNICE INTERPOLA Crna Gora traga za 294 osobe: Među njima brojni osumnjičeni za organizovani kriminal",
+      "url": "https://www.kurir.rs/region/crna-gora/10084492/crvene-poternice-interpola-crna-gora-traga-za-294-osobe",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T22:40:00+00:00",
+      "time": "22:40",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
     },
     {
       "id": "https-www-krik-rs-nemanja-vidic-dao-iskaz-u-tok-u-",
@@ -631,6 +645,20 @@
       "priority": 8
     },
     {
+      "id": "10084525-Misterija-u-Londonu-U-sumi-pronadjene-ljudske-kosti",
+      "title": "JEZIVO OTKRIĆE U ŠUMI, PRONAĐENE LJUDSKE KOSTI! Policija pokrenula istragu ubistva: Sumnja se da ostaci pripadaju mlađoj ženi!",
+      "url": "https://www.kurir.rs/planeta/10084525/Misterija-u-Londonu-U-sumi-pronadjene-ljudske-kosti",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T22:10:00+00:00",
+      "time": "22:10",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
       "id": "rir-rs-stars-10084548-bebi-dol-policija-nasla-sekiru-u-torbi",
       "title": "POLICIJA JOJ JE TADA NAŠLA SEKIRU U TORBI Naša pevačica je bila velika zvezda, a posle rijalitija se povukla iz javnosti: Sad ulazi u Elitu 10!",
       "url": "https://www.kurir.rs/stars/10084548/bebi-dol-policija-nasla-sekiru-u-torbi",
@@ -666,34 +694,6 @@
       "datetime": "2026-08-23T18:27:42+00:00",
       "time": "18:27",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "blic-rs-vesti-drustvo-pozar-u-selu-lukovo-kod-vranja-5vxke83",
-      "title": "BUKTI POŽAR KOD VRANJA Obaveštena policija, na licu mesta zatekli osobe koje su ga izazvale",
-      "url": "https://www.blic.rs/vesti/drustvo/pozar-u-selu-lukovo-kod-vranja/5vxke83",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T18:14:13+00:00",
-      "time": "18:14",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "no-239223-sumski-pozar-kod-vranja-objekti-nisu-ugrozeni-vest",
-      "title": "Šumski požar u Lukovu kod Vranja, na mestu zatečene osobe koje su izazvale vatru",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239223/sumski-pozar-kod-vranja-objekti-nisu-ugrozeni/vest",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T17:51:00+00:00",
-      "time": "17:51",
-      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
