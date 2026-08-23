@@ -1,8 +1,22 @@
 {
   "entries": [
     {
+      "id": "n-cacanin-u-niksicu-osumnjicen-da-je-u-pekari-izazvao-pozar-",
+      "title": "Uhapšen Čačanin u Nikšiću: Osumnjičen da je izazvao požar",
+      "url": "https://www.danas.rs/svet/region/uhapsen-cacanin-u-niksicu-osumnjicen-da-je-u-pekari-izazvao-pozar/",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T17:06:52+00:00",
+      "time": "17:06",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "u-ljubavnoj-sobi-iz-sebe-izvukla-760-tableta-i-pakete-spida-",
-      "title": "Došla da poseti dečka u zatvoru \"natovarena\" drogom: Uhapšena nakon što je u ljubavnoj sobi \"iz sebe\" izvukla 760 tableta i pakete \"spida\"",
+      "title": "Došla da poseti dečka u zatvoru \"natovarena\" drogom: Uhapšena nakon što je u ljubavnoj sobi  izvukla 760 tableta i pakete \"spida\"",
       "url": "https://nova.rs/vesti/hronika/dosla-da-poseti-decka-u-zatvoru-natovarena-drogom-uhapsena-nakon-sto-je-u-ljubavnoj-sobi-iz-sebe-izvukla-760-tableta-i-pakete-spida/",
       "date": "2026-08-23",
       "datetime": "2026-08-23T16:52:53+00:00",
@@ -43,20 +57,6 @@
       "priority": 92
     },
     {
-      "id": "10084442-pozar-u-pekari-u-niksicu-uhapsen-drzavljanin-srbije",
-      "title": "IZAZVAO POŽAR U PEKARI U NIKŠIĆU Uhapšen muškarac iz Srbije",
-      "url": "https://www.kurir.rs/crna-hronika/10084442/pozar-u-pekari-u-niksicu-uhapsen-drzavljanin-srbije",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T16:40:20+00:00",
-      "time": "16:40",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "sene-72-osobe-osumnjicene-da-su-izazvale-pozare-na-otvorenom",
       "title": "У Индонезији ухапшене 72 особе осумњичене да су изазвале пожаре на отвореном",
       "url": "https://www.politika.rs/scc/clanak/780427/u-indoneziji-uhapsene-72-osobe-osumnjicene-da-su-izazvale-pozare-na-otvorenom",
@@ -78,20 +78,6 @@
       "datetime": "2026-08-23T15:30:00+00:00",
       "time": "15:30",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "na-zatvoreniku-predala-vecu-kolicinu-psihoaktivnih-supstanci",
-      "title": "У Нишу ухапшена жена, затворенику предала већу количину психоактивних супстанци",
-      "url": "https://www.politika.rs/scc/clanak/780412/u-nisu-uhapsena-zena-zatvoreniku-predala-vecu-kolicinu-psihoaktivnih-supstanci",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T15:29:00+00:00",
-      "time": "15:29",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -671,6 +657,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "-b92-net-biz-svet-vesti-261419-amerikanci-vracaju-novac-vest",
+      "title": "Amerikanci vraćaju novac",
+      "url": "https://www.b92.net/biz/svet/vesti/261419/amerikanci-vracaju-novac/vest",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T17:09:00+00:00",
+      "time": "17:09",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "cja-zahvacena-pozarima-pakete-i-vise-od-pola-miliona-dinara-",
