@@ -113,20 +113,6 @@
       "priority": 92
     },
     {
-      "id": "u-ljubavnoj-sobi-iz-sebe-izvukla-760-tableta-i-pakete-spida-",
-      "title": "Došla da poseti dečka u zatvoru \"natovarena\" drogom: Uhapšena nakon što je u ljubavnoj sobi  izvukla 760 tableta i pakete \"spida\"",
-      "url": "https://nova.rs/vesti/hronika/dosla-da-poseti-decka-u-zatvoru-natovarena-drogom-uhapsena-nakon-sto-je-u-ljubavnoj-sobi-iz-sebe-izvukla-760-tableta-i-pakete-spida/",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T16:52:53+00:00",
-      "time": "16:52",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "gion-niksic-uhapsen-drzavljanin-srbije-zbog-pozara-u-pekari-",
       "title": "Uhapšen Čačanin u Nikšiću: Osumnjičen da je u pekari izazvao požar",
       "url": "https://n1info.rs/region/niksic-uhapsen-drzavljanin-srbije-zbog-pozara-u-pekari/",
@@ -134,20 +120,6 @@
       "datetime": "2026-08-23T16:51:18+00:00",
       "time": "16:51",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "pozar-zapalili-fabriku-jahti-cuvenog-kosarkasa-dzanana-muse-",
-      "title": "Sarajevski narko bos angažovao ministrovog sina da podmetne požar, zapalili fabriku jahti čuvenog košarkaša Džanana Muse",
-      "url": "https://nova.rs/vesti/svet/sarajevski-narko-bos-angazovao-ministrovog-sina-da-podmetne-pozar-zapalili-fabriku-jahti-cuvenog-kosarkasa-dzanana-muse/",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T16:41:34+00:00",
-      "time": "16:41",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -253,6 +225,20 @@
       "priority": 84
     },
     {
+      "id": "https-www-danas-rs-svet-sudjenje-artanu-grubiju-",
+      "title": "Počinje suđenje Artanu Grubiju za proneveru u Državnoj lutriji",
+      "url": "https://www.danas.rs/svet/sudjenje-artanu-grubiju/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T05:29:49+00:00",
+      "time": "05:29",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 74
+    },
+    {
       "id": "on-crna-gora-10084467-pojacana-kontrola-saobracaja-u-ulcinju",
       "title": "NOĆNA RACIJA NA VELIKOJ PLAŽI: Ulcinjska policija kontrolisala 300 osoba, devetoro uhapšeno zbog prekršaja u saobraćaju, kazne od preko 10.000 evra",
       "url": "https://www.kurir.rs/region/crna-gora/10084467/pojacana-kontrola-saobracaja-u-ulcinju",
@@ -337,20 +323,6 @@
       "priority": 70
     },
     {
-      "id": "https-www-danas-rs-svet-region-pojacane-kontrole-u-ulcinju-",
-      "title": "Pojačane kontrole u Ulcinju: Uhapšeno devet osoba, vozačima kazne od preko 10.000 evra",
-      "url": "https://www.danas.rs/svet/region/pojacane-kontrole-u-ulcinju/",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T13:15:50+00:00",
-      "time": "13:15",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "o-239179-stara-pazova-zaplenjeno-38-kilograma-marihuane-vest",
       "title": "Velika zaplena u Staroj Pazovi: Uhapšen osumnjičeni, na tavanu pronađeno više od 38 kilograma marihuane",
       "url": "https://www.euronews.rs/srbija/aktuelno/239179/stara-pazova-zaplenjeno-38-kilograma-marihuane/vest",
@@ -363,6 +335,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "remijeru-severne-makedonije-za-proneveru-u-drzavnoj-lutriji-",
+      "title": "Počinje suđenje bivšem vicepremijeru Severne Makedonije za proneveru u Državnoj lutriji",
+      "url": "https://n1info.rs/region/pocinje-sudjenje-bivsem-vicepremijeru-severne-makedonije-za-proneveru-u-drzavnoj-lutriji/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T05:21:57+00:00",
+      "time": "05:21",
+      "source": "N1",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "sudenje-bivsem-vicepremijeru-za-proneveru-u-drzavnoj-lutriji",
+      "title": "Severna Makedonije: Počinje suđenje bivšem vicepremijeru za proneveru u Državnoj lutriji",
+      "url": "https://beta.rs/content/250690-severna-makedonije-pocinje-sudenje-bivsem-vicepremijeru-za-proneveru-u-drzavnoj-lutriji",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T05:15:08+00:00",
+      "time": "05:15",
+      "source": "Beta",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "m-vicepremijeru-s-makedonije-za-pronevere-u-drzavnoj-lutriji",
@@ -449,20 +449,6 @@
       "priority": 30
     },
     {
-      "id": "fo-rs-svet-mihailo-fedorov-volodimir-zelenski-korupcija-bbc-",
-      "title": "Fedorov za BBC: Zelenski mora da odgovori na pitanja o korupciji u svojoj vladi",
-      "url": "https://n1info.rs/svet/mihailo-fedorov-volodimir-zelenski-korupcija-bbc/",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T12:52:07+00:00",
-      "time": "12:52",
-      "source": "N1",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
       "title": "Inženjeri na optuženičkoj klupi, koruptivni sistem u senci",
       "url": "https://radar.nova.rs/drustvo/nadstresnica-inzenjeri-korupcija-optuznica/",
@@ -503,6 +489,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "s-www-danas-rs-svet-severni-tok-politicki-pikantna-sabotaza-",
+      "title": "Severni tok – politički pikantna sabotaža",
+      "url": "https://www.danas.rs/svet/severni-tok-politicki-pikantna-sabotaza/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T05:01:57+00:00",
+      "time": "05:01",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "dnaevropa-org-a-kurti-ibar-most-otvaranje-kfor-33836177-html",
@@ -659,20 +659,6 @@
       "priority": 4
     },
     {
-      "id": "blic-rs-vesti-drustvo-pozar-u-selu-lukovo-kod-vranja-5vxke83",
-      "title": "BUKTI POŽAR KOD VRANJA Obaveštena policija, na licu mesta zatekli osobe koje su ga izazvale",
-      "url": "https://www.blic.rs/vesti/drustvo/pozar-u-selu-lukovo-kod-vranja/5vxke83",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T18:14:13+00:00",
-      "time": "18:14",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "no-239223-sumski-pozar-kod-vranja-objekti-nisu-ugrozeni-vest",
       "title": "Šumski požar u Lukovu kod Vranja, na mestu zatečene osobe koje su izazvale vatru",
       "url": "https://www.euronews.rs/srbija/aktuelno/239223/sumski-pozar-kod-vranja-objekti-nisu-ugrozeni/vest",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-23T14:07:22+00:00",
       "time": "14:07",
       "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ps-radar-nova-rs-politika-policija-kao-udarna-batina-rezima-",
+      "title": "Može li se sve rešiti državnim terorom",
+      "url": "https://radar.nova.rs/politika/policija-kao-udarna-batina-rezima/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
