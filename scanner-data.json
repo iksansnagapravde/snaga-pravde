@@ -1,6 +1,48 @@
 {
   "entries": [
     {
+      "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
+      "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
+      "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T13:43:54+00:00",
+      "time": "13:43",
+      "source": "KTV",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
+      "id": "g-a-eu-pozari-srbija-pomoc-deliblatska-pescara-33837204-html",
+      "title": "EU reagovala nekoliko sati nakon što je Srbija zatražila pomoć u gašenju požara",
+      "url": "https://www.slobodnaevropa.org/a/eu-pozari-srbija-pomoc-deliblatska-pescara-/33837204.html",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T13:25:16+00:00",
+      "time": "13:25",
+      "source": "RSE Balkan",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
+      "id": "i-po-droge-preti-25-godina-zatvora-osumnjicen-po-tri-osnova-",
+      "title": "Srpskom fudbaleru uhapšenom sa tonom i po droge preti 25 godina zatvora - osumnjičen po tri osnova",
+      "url": "https://nova.rs/sport/fudbal/srpskom-fudbaleru-uhapsenom-sa-tonom-i-po-droge-preti-25-godina-zatvora-osumnjicen-po-tri-osnova/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T13:22:32+00:00",
+      "time": "13:22",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 100
+    },
+    {
       "id": "enje-za-nemacku-sandp-najavljuje-moguci-pad-rejtinga-2e26hkg",
       "title": "Veliko upozorenje za Nemačku: S&P najavljuje mogući pad rejtinga AAA, dug i troškovi rastu",
       "url": "https://www.blic.rs/biznis/vesti/veliko-upozorenje-za-nemacku-sandp-najavljuje-moguci-pad-rejtinga/2e26hkg",
@@ -15,18 +57,18 @@
       "priority": 100
     },
     {
-      "id": "rziste-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
-      "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
-      "url": "https://n1info.rs/biznis/paori-monopol-trziste-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
+      "id": "oji-je-kolima-naleteo-na-ljude-ispod-satora-igrao-sa-jr7cq9b",
+      "title": "ISPOD ŠATORA IGRAO PORED PEVAČICE! Isplivao snimak Željka Vujovića koji je kolima naleteo ljude na konjičkim trkama: PREGAZIO tri osobe, uhapšeni i pomagači",
+      "url": "https://www.blic.rs/vesti/hronika/isplivao-snimak-zeljka-vujovica-koji-je-kolima-naleteo-na-ljude-ispod-satora-igrao-sa/jr7cq9b",
       "date": "2026-08-24",
-      "datetime": "2026-08-24T09:54:12+00:00",
-      "time": "09:54",
-      "source": "N1",
-      "category": "Људска права",
+      "datetime": "2026-08-24T13:29:34+00:00",
+      "time": "13:29",
+      "source": "Blic",
+      "category": "Хапшења",
       "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "ttps-www-kurir-rs-crna-hronika-10085008-ubio-oca-u-smederevu",
@@ -36,20 +78,6 @@
       "datetime": "2026-08-24T10:55:49+00:00",
       "time": "10:55",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "ila-odsustvo-kamera-u-ljubavnoj-sobi-otkriveno-kako-je-pala-",
-      "title": "U telu pokušala da prošvercuje 760 tableta i 30 grama spida partneru u niški zatvor: Iskoristila odsustvo kamera u \"ljubavnoj sobi\", otkriveno kako je \"pala\"",
-      "url": "https://nova.rs/vesti/hronika/u-telu-pokusala-da-prosvercuje-760-tableta-i-30-grama-spida-partneru-u-niski-zatvor-iskoristila-odsustvo-kamera-u-ljubavnoj-sobi-otkriveno-kako-je-pala/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T10:19:43+00:00",
-      "time": "10:19",
-      "source": "Nova",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -197,20 +225,6 @@
       "priority": 70
     },
     {
-      "id": "ovca-zbog-sumnje-da-je-tesko-povredio-53-godisnjeg-muskarca-",
-      "title": "Uhapšen mladić iz Leskovca zbog sumnje da je teško povredio 53-godišnjeg muškarca",
-      "url": "https://n1info.rs/vesti/uhapsen-mladic-iz-leskovca-zbog-sumnje-da-je-tesko-povredio-53-godisnjeg-muskarca/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T09:56:01+00:00",
-      "time": "09:56",
-      "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "o-239179-stara-pazova-zaplenjeno-38-kilograma-marihuane-vest",
       "title": "Velika zaplena u Staroj Pazovi: Uhapšen osumnjičeni, na tavanu pronađeno više od 38 kilograma marihuane",
       "url": "https://www.euronews.rs/srbija/aktuelno/239179/stara-pazova-zaplenjeno-38-kilograma-marihuane/vest",
@@ -223,6 +237,34 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "onadjeno-telo-drzavljanina-turske-za-jednom-osobom-se-traga-",
+      "title": "Tužilaštvo u Pančevu: U Tamišu pronađeno telo državljanina Turske, za jednom osobom se traga",
+      "url": "https://www.danas.rs/vesti/drustvo/tzzilastvo-u-pancevu-u-tamisu-pronadjeno-telo-drzavljanina-turske-za-jednom-osobom-se-traga/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T13:54:44+00:00",
+      "time": "13:54",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "-clanak-780607-na-kritu-uhapsen-istaknuti-clan-srpske-mafije",
+      "title": "На Криту ухапшен истакнути члан српске мафије",
+      "url": "https://www.politika.rs/scc/clanak/780607/na-kritu-uhapsen-istaknuti-clan-srpske-mafije",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T13:47:00+00:00",
+      "time": "13:47",
+      "source": "Politika",
+      "category": "Фалсификовање докумената",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "tuzni-predlog-ratovanje-srbija-ukrajina-rusija-33837152-html",
@@ -351,20 +393,6 @@
       "priority": 66
     },
     {
-      "id": "ika-horor-u-smederevu-sin-ubio-oca-u-porodicnoj-kuci-dkr6elg",
-      "title": "HOROR U SMEDEREVU! Sin KRVNIČKI ubio oca u porodičnoj kući, zadao mu više udarca U GLAVU",
-      "url": "https://www.blic.rs/vesti/hronika/horor-u-smederevu-sin-ubio-oca-u-porodicnoj-kuci/dkr6elg",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T10:53:38+00:00",
-      "time": "10:53",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "njicen-suprug-oglasilo-se-tuzilastvo-o-zlocinu-kod-maliseva-",
       "title": "Za ubistvo trudnice (25) osumnjičen suprug: Oglasilo se tužilaštvo o zločinu kod Mališeva",
       "url": "https://nova.rs/vesti/hronika/za-ubistvo-trudnice-25-osumnjicen-suprug-oglasilo-se-tuzilastvo-o-zlocinu-kod-maliseva/",
@@ -393,46 +421,18 @@
       "priority": 66
     },
     {
-      "id": "sumnjiceni-za-ubistvo-trudne-zene-u-malisevu-je-njen-suprug-",
-      "title": "Tužilaštvo u Đakovici: Osumnjičeni za ubistvo trudne žene u Mališevu je njen suprug",
-      "url": "https://n1info.rs/vesti/tuzilastvo-u-djakovici-osumnjiceni-za-ubistvo-trudne-zene-u-malisevu-je-njen-suprug/",
+      "id": "6-dragani-sotirovski-2-septembra-pocinje-sudenje-u-nisu-vest",
+      "title": "Počinje suđenje bivšoj gradonačelnici Niša Dragani Sotirovski zbog zloupotrebe sluđbenog položaja",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239286/dragani-sotirovski-2-septembra-pocinje-sudenje-u-nisu/vest",
       "date": "2026-08-24",
-      "datetime": "2026-08-24T10:07:29+00:00",
-      "time": "10:07",
-      "source": "N1",
-      "category": "Тужилаштво",
+      "datetime": "2026-08-24T13:33:00+00:00",
+      "time": "13:33",
+      "source": "Euronews Serbia",
+      "category": "Злоупотреба положаја",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-je-ucestvovao-u-ratu-u-ukrajini-kao-pripadnik-ruske-vojske-",
-      "title": "VJT podnelo optužni predlog protiv Srbina koji je učestvovao u ratu u Ukrajini kao pripadnik ruske vojske",
-      "url": "https://n1info.rs/vesti/vjt-podnelo-optuzni-predlog-protiv-srbina-koji-je-ucestvovao-u-ratu-u-ukrajini-kao-pripadnik-ruske-vojske/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T10:05:26+00:00",
-      "time": "10:05",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "o-da-utvrdi-nepravilnosti-u-istrazi-smrti-vladimira-cvijana-",
-      "title": "Kokanović: Apelaciono tužilaštvo da utvrdi nepravilnosti u istrazi smrti Vladimira Cvijana",
-      "url": "https://www.ktv.rs/2026/08/21/kokanovic-apelaciono-tuzilastvo-da-utvrdi-nepravilnosti-u-istrazi-smrti-vladimira-cvijana/",
-      "date": "2026-08-21",
-      "datetime": "2026-08-21T15:33:25+00:00",
-      "time": "15:33",
-      "source": "KTV",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
+      "priority": 60
     },
     {
       "id": "vo-anem-podneo-krivicnu-prijavu-protiv-gradonacelnika-sapca-",
@@ -617,6 +617,20 @@
       "priority": 25
     },
     {
+      "id": "antiniana-privremeno-uklonjena-u-nisu-radi-popravke-postolja",
+      "title": "Skulptura Metamorfozis Konstantiniana privremeno uklonjena u Nišu radi popravke postolja",
+      "url": "https://beta.rs/content/250742-skulptura-metamorfozis-konstantiniana-privremeno-uklonjena-u-nisu-radi-popravke-postolja",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T13:35:11+00:00",
+      "time": "13:35",
+      "source": "Beta",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "na-netfliksu-smrtonosan-susret-policije-i-narko-bosa-15zt24x",
       "title": "Novi film o El Čapu postao hit na Netfliksu: ŠTA se desi kada se DVOJICA POLICAJACA nađu OČI U OČI sa najopasnijim narko-bosom",
       "url": "https://www.blic.rs/kultura/istinita-prica-o-el-capu-hit-na-netfliksu-smrtonosan-susret-policije-i-narko-bosa/15zt24x",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-24T10:52:50+00:00",
       "time": "10:52",
       "source": "Danas",
-      "category": "Јавне набавке",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "u-zoni-koja-bi-podelila-okupiranu-palestinsku-zapadnu-obalu-",
-      "title": "EU pozvala Izrael da ne gradi kuće u zoni koja bi podelila okupiranu palestinsku Zapadnu obalu",
-      "url": "https://n1info.rs/svet/eu-pozvala-izrael-da-ne-gradi-kuce-u-zoni-koja-bi-podelila-okupiranu-palestinsku-zapadnu-obalu/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T10:48:50+00:00",
-      "time": "10:48",
-      "source": "N1",
       "category": "Јавне набавке",
       "summary": "",
       "breaking": false,
