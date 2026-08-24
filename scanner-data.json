@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "id": "-pola-miliona-evra-za-informaciju-o-ovom-coveku-foto-ctm0bf0",
+      "title": "(FOTO) POLICIJA UPRAVO PONUDILA POLA MILIONA EVRA ZA INFORMACIJU O OVOM ČOVEKU! Ako ste ga videli, HITNO zovite MUP Crne Gore na ove brojeve",
+      "url": "https://www.blic.rs/vesti/hronika/policija-u-crnoj-gori-nudi-pola-miliona-evra-za-informaciju-o-ovom-coveku-foto/ctm0bf0",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T17:03:59+00:00",
+      "time": "17:03",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 112
+    },
+    {
+      "id": "ttps-vreme-com-vesti-nenad-vujic-ratko-mladic-ratni-zlocini-",
+      "title": "Ministar pravde traži da se Ratko Mladić hitno pusti na slobodu",
+      "url": "https://vreme.com/vesti/nenad-vujic-ratko-mladic-ratni-zlocini/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T17:13:48+00:00",
+      "time": "17:13",
+      "source": "Vreme",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "kupstine-srbije-prva-tacka-predlog-rebalansa-budzeta-78h7ptw",
       "title": "\"VI STE POLITIČKA KATASTROFA\" Završena vanredna sednica Skupštine Srbije, Jovanov i Aleksić u klinču: \"Građani će vas brzo rešiti\" (VIDEO)",
       "url": "https://www.blic.rs/vesti/politika/vanredna-sednica-skupstine-srbije-prva-tacka-predlog-rebalansa-budzeta/78h7ptw",
@@ -85,6 +113,34 @@
       "priority": 94
     },
     {
+      "id": "mdesetih-bio-uhapsenju-u-ohridu-zbog-jedne-sporne-situacije-",
+      "title": "Zdravko Čolić ima dosije: Osamdesetih bio uhapšenju u Ohridu zbog jedne sporne situacije",
+      "url": "https://nova.rs/zabava/showbiz/zdravko-colic-ima-dosije-osamdesetih-bio-uhapsenju-u-ohridu-zbog-jedne-sporne-situacije/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T17:00:00+00:00",
+      "time": "17:00",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "e-zbog-ubistva-juznoafrickog-svetskog-sampiona-u-boksu-tetea",
+      "title": "Ухапшене четири особе због убиства јужноафричког светског шампиона у боксу Тетеа",
+      "url": "https://www.politika.rs/scc/clanak/780646/uhapsene-cetiri-osobe-zbog-ubistva-juznoafrickog-svetskog-sampiona-u-boksu-tetea",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T16:44:00+00:00",
+      "time": "16:44",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "e-sa-saucesnicima-zapalio-fabriku-poznatog-kosarkasa-v3kz8ky",
       "title": "SIN MINISTRA i saučesnici prišli u autu sa ovim tablicama, pa ZAPALILI FABRIKU POZNATOG KOŠARKAŠA! U sve je umešan opasni NARKO-BOS, osumnjičeni PROPEVAO: \"On nam je rekao...\"",
       "url": "https://www.blic.rs/vesti/hronika/ministrov-sin-osumnjicen-da-je-sa-saucesnicima-zapalio-fabriku-poznatog-kosarkasa/v3kz8ky",
@@ -127,20 +183,6 @@
       "priority": 92
     },
     {
-      "id": "oji-je-kolima-naleteo-na-ljude-ispod-satora-igrao-sa-jr7cq9b",
-      "title": "ISPOD ŠATORA IGRAO PORED PEVAČICE! Isplivao snimak Željka Vujovića koji je kolima naleteo ljude na konjičkim trkama: PREGAZIO tri osobe, uhapšeni i pomagači",
-      "url": "https://www.blic.rs/vesti/hronika/isplivao-snimak-zeljka-vujovica-koji-je-kolima-naleteo-na-ljude-ispod-satora-igrao-sa/jr7cq9b",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T13:29:34+00:00",
-      "time": "13:29",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "5-kraljevo-uhapsen-zbog-sumnje-da-je-dao-mito-policajcu-vest",
       "title": "Policajcu uz dokumenta dao novac: Uhapšen zbog sumnje da je policajcu dao mito kako bi izbegao kontrolu",
       "url": "https://www.euronews.rs/srbija/aktuelno/239285/kraljevo-uhapsen-zbog-sumnje-da-je-dao-mito-policajcu/vest",
@@ -167,6 +209,20 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "https-www-danas-rs-vesti-drustvo-vjt-deliblatska-pescara-",
+      "title": "„Lov na veštace“: Šta stoji iza najave VJT da će procesuirati građane zbog „izazivanja panike i lažnih vesti“ o požaru u Deliblatskoj peščari?",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-deliblatska-pescara/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T17:15:00+00:00",
+      "time": "17:15",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "rs-tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze-",
@@ -372,34 +428,6 @@
       "datetime": "2026-08-24T12:44:47+00:00",
       "time": "12:44",
       "source": "RSE Balkan",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "fo-rs-vesti-saslusan-osumnjiceni-za-ubistvo-oca-u-smederevu-",
-      "title": "Saslušan osumnjičeni za ubistvo oca u Smederevu",
-      "url": "https://n1info.rs/vesti/saslusan-osumnjiceni-za-ubistvo-oca-u-smederevu/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T12:36:13+00:00",
-      "time": "12:36",
-      "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-rs-crna-hronika-10085112-tuzilastvo-o-ubici-oca-u-smederevu",
-      "title": "OGLASILO SE TUŽILAŠTVO O UBICI OCA IZ SMEDEREVA: Nesrećni čovek udaran po glavi i telu dok nije izdahnuo!",
-      "url": "https://www.kurir.rs/crna-hronika/10085112/tuzilastvo-o-ubici-oca-u-smederevu",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T12:03:21+00:00",
-      "time": "12:03",
-      "source": "Kurir",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -617,6 +645,20 @@
       "priority": 25
     },
     {
+      "id": "ja-vise-ne-biraju-sredstva-od-maljeva-i-sekira-do-eksploziva",
+      "title": "Пљачкаши музеја више не бирају средства: од маљева и секира до експлозива",
+      "url": "https://www.politika.rs/scc/clanak/780648/pljackasi-muzeja-vise-ne-biraju-sredstva-od-maljeva-i-sekira-do-eksploziva",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T16:50:00+00:00",
+      "time": "16:50",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "nas-rs-vesti-politika-aleksic-cemu-izbori-ako-je-sve-sjajno-",
       "title": "Aleksić: Čemu izbori ako je sve sjajno?",
       "url": "https://www.danas.rs/vesti/politika/aleksic-cemu-izbori-ako-je-sve-sjajno/",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "murdok-dzejms-kupio-vox-mediju-za-300-miliona-dolara-mwfe285",
-      "title": "MILIONER KREĆE U RAT PROTIV OČEVOG CARSTVA: Odbegli sin Ruperta Murdoka ulaže u njegove neprijatelje",
-      "url": "https://www.blic.rs/biznis/after-hour/rat-u-dinastiji-murdok-dzejms-kupio-vox-mediju-za-300-miliona-dolara/mwfe285",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T15:09:51+00:00",
-      "time": "15:09",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "vodnja-celika-u-julu-blago-pala-na-1492-miliona-tona-n76qg3c",
-      "title": "Svetska proizvodnja čelika u julu blago pala na 149,2 miliona tona",
-      "url": "https://www.blic.rs/biznis/vesti/svetska-proizvodnja-celika-u-julu-blago-pala-na-1492-miliona-tona/n76qg3c",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T14:18:08+00:00",
-      "time": "14:18",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "nacelnika-sapca-zbog-dodele-66-miliona-mediju-bez-impresuma-",
-      "title": "ANEM podnela krivičnu prijavu protiv gradonačelnika Šapca zbog dodele 6,6 miliona mediju bez impresuma",
-      "url": "https://nova.rs/vesti/drustvo/anem-podnela-krivicnu-prijavu-protiv-gradonacelnika-sapca-zbog-dodele-66-miliona-mediju-bez-impresuma/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T13:47:33+00:00",
-      "time": "13:47",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
     }
   ],
   "all_sources": [
