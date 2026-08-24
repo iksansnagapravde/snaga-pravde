@@ -505,20 +505,6 @@
       "priority": 28
     },
     {
-      "id": "1info-rs-vesti-hapsenje-stara-pazova-38-kilograma-marihuane-",
-      "title": "Hapšenje u Staroj Pazovi zbog 38 kilograma marihuane",
-      "url": "https://n1info.rs/vesti/hapsenje-stara-pazova-38-kilograma-marihuane/",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T12:07:40+00:00",
-      "time": "12:07",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 26
-    },
-    {
       "id": "dnaevropa-org-a-kurti-ibar-most-otvaranje-kfor-33836177-html",
       "title": "Kurti: U stalnoj smo komunikaciji s KFOR-om oko potpunog otvaranja mosta preko Ibra",
       "url": "https://www.slobodnaevropa.org/a/kurti-ibar-most-otvaranje-kfor-/33836177.html",
@@ -694,6 +680,20 @@
       "datetime": "2026-08-23T17:51:00+00:00",
       "time": "17:51",
       "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "esuirani-drzavljani-srbije-droga-alkohol-nezakoniti-boravak-",
+      "title": "(FOTO) Pojačana kontrola u Ulcinju: Procesuirani državljani Srbije zbog droge, alkohola i nezakonitog boravka",
+      "url": "https://n1info.rs/vesti/kontrola-ulcinj-procesuirani-drzavljani-srbije-droga-alkohol-nezakoniti-boravak/",
+      "date": "2026-08-23",
+      "datetime": "2026-08-23T14:07:22+00:00",
+      "time": "14:07",
+      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
