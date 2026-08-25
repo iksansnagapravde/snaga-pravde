@@ -1,6 +1,50 @@
 [
   {
     "winner": null,
+    "accepted": 1440549.0,
+    "lowest": 1202.0,
+    "difference": 1439347.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 166284,
+    "file": "documents/166284_540 O-195.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 64404.0,
+    "lowest": 1202.0,
+    "difference": 63202.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 166290,
+    "file": "documents/166290_538 O-195.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 374160.0,
+    "lowest": 1202.0,
+    "difference": 372958.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 166212,
+    "file": "documents/166212_536 O-195.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 9522.0,
+    "lowest": 1202.0,
+    "difference": 8320.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 166243,
+    "file": "documents/166243_539 O-195.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 37110.0,
     "lowest": 8202.0,
     "difference": 28908.0,
@@ -53,38 +97,5 @@
     "rejection_reasons": [],
     "id": 100124054,
     "file": "documents/100124054_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 37110.0,
-    "lowest": 8202.0,
-    "difference": 28908.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100377575,
-    "file": "documents/100377575_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 37110.0,
-    "lowest": 8202.0,
-    "difference": 28908.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 110874612,
-    "file": "documents/110874612_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1797360.0,
-    "lowest": 7202.0,
-    "difference": 1790158.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101612478,
-    "file": "documents/101612478_18 - Odluka o dodeli ugovora.pdf"
   }
 ]
