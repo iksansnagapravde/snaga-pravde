@@ -1,6 +1,34 @@
 {
   "entries": [
     {
+      "id": "ova-internet-prevara-cilja-korisnike-banaka-u-srbiji-9k23hvl",
+      "title": "Ova banka u Srbiji izdala je hitno upozorenje: Pojavila se nova opasna prevara, uradite ovo da sačuvate novac na platnim karticama",
+      "url": "https://www.blic.rs/biznis/moj-novcanik/nova-internet-prevara-cilja-korisnike-banaka-u-srbiji/9k23hvl",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T14:18:45+00:00",
+      "time": "14:18",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
+      "id": "muskarci-u-crnom-koji-su-napali-novinare-na-vucicevom-skupu-",
+      "title": "ANEM traži da se hitno otkrije ko su muškarci u crnom koji su napali novinare na Vučićevom skupu",
+      "url": "https://nova.rs/vesti/drustvo/anem-trazi-da-se-hitno-otkrije-ko-su-muskarci-u-crnom-koji-su-napali-novinare-na-vucicevom-skupu/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T14:10:33+00:00",
+      "time": "14:10",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
       "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
       "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
@@ -127,20 +155,6 @@
       "priority": 92
     },
     {
-      "id": "snik-sumnjici-za-nedozvoljene-polne-radnje-nad-maloletnicom-",
-      "title": "\"Vijesti\": Kamenovana pekara u Petrovcu čiji se vlasnik sumnjiči za nedozvoljene polne radnje nad maloletnicom",
-      "url": "https://n1info.rs/region/vijesti-kamenovana-pekara-u-petrovcu-ciji-se-vlasnik-sumnjici-za-nedozvoljene-polne-radnje-nad-maloletnicom/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T10:41:25+00:00",
-      "time": "10:41",
-      "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "453-u-kraljevu-devojcica-poginula-druga-tesko-povredena-vest",
       "title": "Uhapšen vozač bez dozvole koji je pokosio pešake u Kraljevu: Devojčica (5) preminula, beba teško povređena",
       "url": "https://www.euronews.rs/srbija/aktuelno/239453/u-kraljevu-devojcica-poginula-druga-tesko-povredena/vest",
@@ -239,6 +253,34 @@
       "priority": 84
     },
     {
+      "id": "0086225-u-kamionu-pronadjena-2-kg-kokaina-i-kilogram-heroina",
+      "title": "U KAMIONU SKRIVAO DROGU! Policija zatekla šok prizor pretresom, Kraljevčanin odmah uhapšen",
+      "url": "https://www.kurir.rs/crna-hronika/10086225/u-kamionu-pronadjena-2-kg-kokaina-i-kilogram-heroina",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T13:54:41+00:00",
+      "time": "13:54",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "zaplenjeno-tri-kilograma-droge-uhapsen-muskarac-iz-kraljeva-",
+      "title": "Zaplenjeno tri kilograma droge, uhapšen muškarac iz Kraljeva",
+      "url": "https://n1info.rs/vesti/zaplenjeno-tri-kilograma-droge-uhapsen-muskarac-iz-kraljeva/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T13:54:31+00:00",
+      "time": "13:54",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "o-za-studentkinjom-u-lift-davio-je-do-6-sprata-pa-opljackao-",
       "title": "Drama u Novom Sadu, uhapšen mladić (22): Ušao za studentkinjom u lift, davio je do 6. sprata, pa opljačkao",
       "url": "https://nova.rs/vesti/hronika/drama-u-novom-sadu-uhapsen-mladic-22-usao-za-studentkinjom-u-lift-davio-je-do-6-sprata-pa-opljackao/",
@@ -307,20 +349,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "s-scc-clanak-780787-zasto-iranci-prate-trampovog-sina-barona",
-      "title": "Зашто Иранци прате Трамповог сина Барона",
-      "url": "https://www.politika.rs/scc/clanak/780787/zasto-iranci-prate-trampovog-sina-barona",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T12:50:00+00:00",
-      "time": "12:50",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "6-dragani-sotirovski-2-septembra-pocinje-sudenje-u-nisu-vest",
@@ -449,34 +477,6 @@
       "priority": 28
     },
     {
-      "id": "u-i-se-o-pravosudnim-zakonima-vlast-krsi-evropske-standarde-",
-      "title": "Asocijacija sudijskih pomoćnika pisala EU i SE o pravosudnim zakonima: Vlast krši evropske standarde",
-      "url": "https://nova.rs/vesti/politika/asocijacija-sudijskih-pomocnika-pisala-eu-i-se-o-pravosudnim-zakonima-vlast-krsi-evropske-standarde/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T10:42:58+00:00",
-      "time": "10:42",
-      "source": "Nova",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
-      "id": "u-i-se-o-pravosudnim-zakonima-vlast-krsi-evropske-standarde-",
-      "title": "Asocijacija sudijskih pomoćnika pisala EU i SE o pravosudnim zakonima: Vlast krši evropske standarde",
-      "url": "https://www.danas.rs/vesti/drustvo/asocijacija-sudijskih-pomocnika-pisala-eu-i-se-o-pravosudnim-zakonima-vlast-krsi-evropske-standarde/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T10:41:23+00:00",
-      "time": "10:41",
-      "source": "Danas",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "vujic-zakon-o-pravosudnoj-akademiji-ispunjava-standarde-vest",
       "title": "Vujić: Predlog zakona o Pravosudnoj akademiji dobio pozitivno mišljenje Venecijanske komisije",
       "url": "https://www.euronews.rs/srbija/politika/239347/vujic-zakon-o-pravosudnoj-akademiji-ispunjava-standarde/vest",
@@ -541,20 +541,6 @@
       "time": "12:23",
       "source": "Vreme",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "st-porok-zene-alkohol-unistile-najbolji-na-svetu-biografija-",
-      "title": "Najboljeg na svetu su uništile žene i alkohol: Završio u zatvoru i zaradio bogatstvo VIDEO",
-      "url": "https://nova.rs/sport/fudbal/dzordz-best-porok-zene-alkohol-unistile-najbolji-na-svetu-biografija/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T10:45:44+00:00",
-      "time": "10:45",
-      "source": "Nova",
-      "category": "Лишени слободе",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -694,6 +680,20 @@
       "datetime": "2026-08-23T17:51:00+00:00",
       "time": "17:51",
       "source": "Euronews Serbia",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ps-radar-nova-rs-politika-policija-kao-udarna-batina-rezima-",
+      "title": "Može li se sve rešiti državnim terorom",
+      "url": "https://radar.nova.rs/politika/policija-kao-udarna-batina-rezima/",
+      "date": "2026-08-19",
+      "datetime": "2026-08-19T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Radar",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
