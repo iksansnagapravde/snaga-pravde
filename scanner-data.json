@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "onosi-predlog-izmena-zakona-o-crkvama-i-verskim-zajednicama-",
-      "title": "SPC dobija univerzitet, država račun: Šta donosi predlog izmena Zakona o crkvama i verskim zajednicama?",
-      "url": "https://www.danas.rs/vesti/drustvo/spc-univerzitet-sta-donosi-predlog-izmena-zakona-o-crkvama-i-verskim-zajednicama/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T08:09:39+00:00",
-      "time": "08:09",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "ttps-vreme-com-vesti-nenad-vujic-ratko-mladic-ratni-zlocini-",
       "title": "Ministar pravde traži da se Ratko Mladić hitno pusti na slobodu",
       "url": "https://vreme.com/vesti/nenad-vujic-ratko-mladic-ratni-zlocini/",
@@ -139,6 +125,34 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "u-u-kojoj-je-poginula-devojcica-5-nije-imao-vozacku-dozvolu-",
+      "title": "Uhapšen osumnjičeni za nesreću u Kraljevu u kojoj je poginula devojčica (5) - nije imao vozačku dozvolu",
+      "url": "https://n1info.rs/vesti/uhapsen-osumnjiceni-za-nesrecu-u-kraljevu-u-kojoj-je-poginula-devojcica-5-nije-imao-vozacku-dozvolu/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T11:02:53+00:00",
+      "time": "11:02",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "je-vozac-iz-kraljeva-koji-je-izazvao-stravicnu-nesrecu-foto-",
+      "title": "Vozio bez dozvole, usmrtio devojčicu (5), njenog mlađeg brata i roditelje povredio: Ovo je vozač iz Kraljeva koji je izazvao stravičnu nesreću FOTO",
+      "url": "https://nova.rs/vesti/hronika/vozio-bez-dozvole-usmrtio-devojcicu-5-njenog-mladjeg-brata-i-roditelje-povredio-ovo-je-vozac-iz-kraljeva-koji-je-izazvao-stravicnu-nesrecu-foto/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T10:56:40+00:00",
+      "time": "10:56",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "snik-sumnjici-za-nedozvoljene-polne-radnje-nad-maloletnicom-",
@@ -281,6 +295,20 @@
       "priority": 92
     },
     {
+      "id": "453-u-kraljevu-devojcica-poginula-druga-tesko-povredena-vest",
+      "title": "Uhapšen vozač bez dozvole koji je pokosio pešake u Kraljevu: Devojčica (5) preminula, beba teško povređena",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239453/u-kraljevu-devojcica-poginula-druga-tesko-povredena/vest",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T07:36:00+00:00",
+      "time": "07:36",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "ski-mediji-srpski-sportista-uhapsen-u-zagrebu-zbog-silovanja",
       "title": "HRVATSKI MEDIJI TVRDE - UHAPŠEN SRPSKI SPORTISTA U ZAGREBU: Optužen je za silovanje",
       "url": "https://www.kurir.rs/sport/ostali-sportovi/10085680/hrvatski-mediji-srpski-sportista-uhapsen-u-zagrebu-zbog-silovanja",
@@ -323,20 +351,6 @@
       "priority": 92
     },
     {
-      "id": "en-zbog-davanja-mita-ponudio-saobracajnim-policajcima-novac-",
-      "title": "MUP: Državljanin Severne Makedonije uhapšen zbog davanja mita, ponudio saobraćajnim policajcima novac",
-      "url": "https://n1info.rs/vesti/mup-drzavljanin-severne-makedonije-uhapsen-zbog-davanja-mita-ponudio-saobracajnim-policajcima-novac/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T07:07:43+00:00",
-      "time": "07:07",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "rs-tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze-",
       "title": "TOK: MUP i dalje nije dostavio „skaj” poruke Slaviše Kokeze",
       "url": "https://www.krik.rs/tok-mup-i-dalje-nije-dostavio-skaj-poruke-slavise-kokeze/",
@@ -351,12 +365,12 @@
       "priority": 90
     },
     {
-      "id": "-nova-rs-sport-sport-ostalo-srpski-sportista-uhapsen-zagreb-",
-      "title": "Bivši srpski sportista uhapšen u Zagrebu: Optužen za silovanje i nasilje u porodici, otkrivene preteće poruke",
-      "url": "https://nova.rs/sport/sport-ostalo/srpski-sportista-uhapsen-zagreb/",
+      "id": "lo-dositej-todorovski-biografija-zagreb-uhapsen-boks-zagreb-",
+      "title": "Ko je srpski sportista uhapšen u Zagrebu zbog optužbi za silovanje i nasilje u porodici?",
+      "url": "https://nova.rs/sport/sport-ostalo/dositej-todorovski-biografija-zagreb-uhapsen-boks-zagreb/",
       "date": "2026-08-25",
-      "datetime": "2026-08-25T07:15:30+00:00",
-      "time": "07:15",
+      "datetime": "2026-08-25T11:08:46+00:00",
+      "time": "11:08",
       "source": "Nova",
       "category": "Насиље у породици",
       "summary": "",
@@ -680,20 +694,6 @@
       "datetime": "2026-08-25T07:27:35+00:00",
       "time": "07:27",
       "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
-      "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
-      "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
-      "date": "2026-07-30",
-      "datetime": "2026-07-30T15:13:36+00:00",
-      "time": "15:13",
-      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
