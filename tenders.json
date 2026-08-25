@@ -1,68 +1,79 @@
 [
   {
-    "winner": "BMC Connect doo",
-    "accepted": 10829.0,
-    "lowest": 2243.0,
-    "difference": 8586.0,
+    "winner": null,
+    "accepted": 928800.0,
+    "lowest": 4212.0,
+    "difference": 924588.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111821843,
-    "file": "documents/111821843_Odluka_potpisana.pdf"
+    "id": 108756466,
+    "file": "documents/108756466_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 5000000.0,
-    "lowest": 5110.0,
-    "difference": 4994890.0,
+    "accepted": 495000.0,
+    "lowest": 7202.0,
+    "difference": 487798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100002887,
-    "file": "documents/100002887_Odluka o dodeli ugovora.docx"
+    "id": 100219537,
+    "file": "documents/100219537_Odluka o DU jn U-381-2026-TA-P.pdf"
   },
   {
     "winner": null,
-    "accepted": 1500000.0,
-    "lowest": 4350.0,
-    "difference": 1495650.0,
+    "accepted": 1572480.0,
+    "lowest": 8202.0,
+    "difference": 1564278.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107659818,
-    "file": "documents/107659818_Odluka o dodeli ugovora.docx"
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 7267000.0,
-    "lowest": 6372.0,
-    "difference": 7260628.0,
+    "accepted": 120780000.0,
+    "lowest": 7202.0,
+    "difference": 120772798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100366966,
-    "file": "documents/100366966_Odluka o dodeli ugovora.docx"
+    "id": 100380021,
+    "file": "documents/100380021_IMG_20260825_0007.pdf"
   },
   {
     "winner": null,
-    "accepted": 24009334.67,
-    "lowest": 1201.0,
-    "difference": 24008133.67,
+    "accepted": 1000000.0,
+    "lowest": 1110.0,
+    "difference": 998890.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104355010,
-    "file": "documents/104355010_Odluka o dodeli ugovora - saobracajni poligon 2026.pdf"
+    "id": 109923350,
+    "file": "documents/109923350_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 16194000.0,
-    "lowest": 1498.94,
-    "difference": 16192501.06,
+    "accepted": 8202.0,
+    "lowest": 2184.0,
+    "difference": 6018.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111080176,
-    "file": "documents/111080176_Odluka 565-20.pdf"
+    "id": 101534073,
+    "file": "documents/101534073_Odluka o dodeli.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 8202.0,
+    "lowest": 2184.0,
+    "difference": 6018.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104045566,
+    "file": "documents/104045566_Odluka o dodeli.docx"
   }
 ]
