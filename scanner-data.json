@@ -99,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "mdesetih-bio-uhapsenju-u-ohridu-zbog-jedne-sporne-situacije-",
-      "title": "Zdravko Čolić ima dosije: Osamdesetih bio uhapšenju u Ohridu zbog jedne sporne situacije",
-      "url": "https://nova.rs/zabava/showbiz/zdravko-colic-ima-dosije-osamdesetih-bio-uhapsenju-u-ohridu-zbog-jedne-sporne-situacije/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T17:00:00+00:00",
-      "time": "17:00",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "5-kraljevo-uhapsen-zbog-sumnje-da-je-dao-mito-policajcu-vest",
       "title": "Policajcu uz dokumenta dao novac: Uhapšen zbog sumnje da je policajcu dao mito kako bi izbegao kontrolu",
       "url": "https://www.euronews.rs/srbija/aktuelno/239285/kraljevo-uhapsen-zbog-sumnje-da-je-dao-mito-policajcu/vest",
@@ -435,20 +421,6 @@
       "priority": 25
     },
     {
-      "id": "avljanin-a-ruski-vojnik-podignuta-optuznica-protiv-milosa-n-",
-      "title": "Srpski državljanin, a ruski vojnik: Podignuta optužnica protiv Miloša N.",
-      "url": "https://vreme.com/drustvo/srpski-drzavljanin-a-ruski-vojnik-podignuta-optuznica-protiv-milosa-n/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T11:06:11+00:00",
-      "time": "11:06",
-      "source": "Vreme",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -561,20 +533,6 @@
       "priority": 4
     },
     {
-      "id": "nika-10085445-ubistvo-trudnice-u-malisevu-policija-na-oprezu",
-      "title": "DRAMA NAKON UBISTVA TRUDNICE U MALIŠEVI! Policija sa dugim cevima blokirala bolnicu, strahuje od krvne osvete",
-      "url": "https://www.kurir.rs/crna-hronika/10085445/ubistvo-trudnice-u-malisevu-policija-na-oprezu",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T17:28:50+00:00",
-      "time": "17:28",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "no-239223-sumski-pozar-kod-vranja-objekti-nisu-ugrozeni-vest",
       "title": "Šumski požar u Lukovu kod Vranja, na mestu zatečene osobe koje su izazvale vatru",
       "url": "https://www.euronews.rs/srbija/aktuelno/239223/sumski-pozar-kod-vranja-objekti-nisu-ugrozeni/vest",
@@ -601,6 +559,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "s-www-danas-rs-svet-mladen-vitas-sad-zohran-mamdani-amerika-",
+      "title": "Prodor američke levice -slučaj Zohran Mamdani: Da li ovo preti dvopartijskom sistemu Amerike?",
+      "url": "https://www.danas.rs/svet/mladen-vitas-sad-zohran-mamdani-amerika/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T05:00:15+00:00",
+      "time": "05:00",
+      "source": "Danas",
+      "category": "Плате и зараде",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "-sve-rasproda-i-ode-sa-balkana-evo-odakle-se-oglasio-f0t0gk9",
@@ -694,6 +666,34 @@
       "datetime": "2026-08-24T22:30:08+00:00",
       "time": "22:30",
       "source": "Beta",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "-danas-rs-sport-mia-ristic-us-open-kvalifikacije-polufinale-",
+      "title": "Mia Ristić u polufinalu kvalifikacija za US open",
+      "url": "https://www.danas.rs/sport/mia-ristic-us-open-kvalifikacije-polufinale/",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T22:15:20+00:00",
+      "time": "22:15",
+      "source": "Danas",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ar-u-nevadi-se-siri-sprema-se-evakuacija-90000-ljudi-snc5t8l",
+      "title": "AMERIKU GUTA UŽARENI HAOS Požar se nekontrolisano širi, sprema se evakuacija 90.000 ljudi: Vatrena stihija uništila 15.000 hektara (FOTO, VIDEO)",
+      "url": "https://www.blic.rs/vesti/svet/pozar-u-nevadi-se-siri-sprema-se-evakuacija-90000-ljudi/snc5t8l",
+      "date": "2026-08-24",
+      "datetime": "2026-08-24T22:15:00+00:00",
+      "time": "22:15",
+      "source": "Blic",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
