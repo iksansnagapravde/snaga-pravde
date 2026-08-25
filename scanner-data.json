@@ -1,34 +1,6 @@
 {
   "entries": [
     {
-      "id": "ju-ko-je-tokom-posete-predsednika-napao-novinare-u-kraljevu-",
-      "title": "Novinarska udruženja: Nadležni hitno da otkriju ko je tokom posete predsednika napao novinare u Kraljevu (VIDEO)",
-      "url": "https://n1info.rs/vesti/anem-nadlezni-hitno-da-otkriju-ko-je-tokom-posete-predsednika-napao-novinare-u-kraljevu/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T09:30:25+00:00",
-      "time": "09:30",
-      "source": "N1",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "ttps-vreme-com-vesti-nenad-vujic-ratko-mladic-ratni-zlocini-",
-      "title": "Ministar pravde traži da se Ratko Mladić hitno pusti na slobodu",
-      "url": "https://vreme.com/vesti/nenad-vujic-ratko-mladic-ratni-zlocini/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T17:13:48+00:00",
-      "time": "17:13",
-      "source": "Vreme",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
       "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
       "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
@@ -103,8 +75,8 @@
       "title": "Преминула девојчица повређена у саобраћајној несрећи у Краљеву, ухапшен возач",
       "url": "https://www.rts.rs/vesti/hronika/6026136/saobracaj-kraljevo-nesreca-preminula-devojcica-beba-majka-automobil-naleteo-na-pesake.html",
       "date": "2026-08-25",
-      "datetime": "2026-08-25T12:01:16+00:00",
-      "time": "12:01",
+      "datetime": "2026-08-25T12:22:57+00:00",
+      "time": "12:22",
       "source": "RTS",
       "category": "Хапшења",
       "summary": "",
@@ -351,6 +323,20 @@
       "priority": 84
     },
     {
+      "id": "-izazvao-nesrecu-u-kojoj-je-stradala-petogodisnja-devojcica-",
+      "title": "Uhapšen vozač u Kraljevu koji je izazvao nesreću u kojoj je stradala petogodišnja devojčica",
+      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-vozac-u-kraljevu-koji-je-izazvao-nesrecu-u-kojoj-je-stradala-petogodisnja-devojcica/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:33:14+00:00",
+      "time": "12:33",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "a-se-ispita-isplata-novca-gradjanima-planirana-za-septembar-",
       "title": "Romska partija pozvala institucije: Da se ispita isplata novca građanima planirana za septembar",
       "url": "https://www.danas.rs/vesti/ekonomija/romska-partija-pozvala-institucije-da-se-ispita-isplata-novca-gradjanima-planirana-za-septembar/",
@@ -379,20 +365,6 @@
       "priority": 66
     },
     {
-      "id": "-vesti-politika-podignuta-optuznica-protiv-fatmira-seholija-",
-      "title": "Podignuta optužnica protiv Fatmira Šeholija",
-      "url": "https://www.danas.rs/vesti/politika/podignuta-optuznica-protiv-fatmira-seholija/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T09:23:06+00:00",
-      "time": "09:23",
-      "source": "Danas",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "tuzni-predlog-ratovanje-srbija-ukrajina-rusija-33837152-html",
       "title": "Optužni predlog protiv državljanina Srbije za učešće u ratu u Ukrajini na strani Rusije",
       "url": "https://www.slobodnaevropa.org/a/optuzni-predlog-ratovanje-srbija-ukrajina-rusija/33837152.html",
@@ -405,6 +377,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "s-scc-clanak-780787-zasto-iranci-prate-trampovog-sina-barona",
+      "title": "Зашто Иранци прате Трамповог сина Барона",
+      "url": "https://www.politika.rs/scc/clanak/780787/zasto-iranci-prate-trampovog-sina-barona",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:50:00+00:00",
+      "time": "12:50",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "6-dragani-sotirovski-2-septembra-pocinje-sudenje-u-nisu-vest",
@@ -435,13 +421,27 @@
       "priority": 38
     },
     {
-      "id": "-lazne-zrtve-u-udarima-na-zaporozje-i-krasnodarski-kraj-html",
-      "title": "Песков: Тврдње из Кијева о новој мобилизацији \"лажне\"; жртве у ударима на Запорожје и Краснодарски крај",
-      "url": "https://www.rts.rs/vesti/ratu-u-ukrajini/6025962/peskov-tvrdnje-iz-kijeva-o-novoj-mobilizaciji-lazne-zrtve-u-udarima-na-zaporozje-i-krasnodarski-kraj.html",
+      "id": "skov-lazne-tvrdnje-kijeva-o-novoj-mobilizaciji-u-rusiji-html",
+      "title": "Ројтерс: Амерички војни транспортни авион слетео у Москву; Песков: Лажне тврдње Кијева о новој мобилизацији у Русији",
+      "url": "https://www.rts.rs/vesti/ratu-u-ukrajini/6025962/rojters-americki-vojni-transportni-avion-sleteo-u-moskvu-peskov-lazne-tvrdnje-kijeva-o-novoj-mobilizaciji-u-rusiji.html",
       "date": "2026-08-25",
-      "datetime": "2026-08-25T08:32:46+00:00",
-      "time": "08:32",
+      "datetime": "2026-08-25T12:54:46+00:00",
+      "time": "12:54",
       "source": "RTS",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
+    },
+    {
+      "id": "enskog-odredjen-pritvor-od-60-dana-uz-visoku-kauciju-gtfqneb",
+      "title": "Bivšoj zamenici šefa kabineta Zelenskog određen pritvor od 60 dana uz VISOKU KAUCIJU",
+      "url": "https://www.blic.rs/vesti/svet/bivsoj-zamenici-sefa-kabineta-zelenskog-odredjen-pritvor-od-60-dana-uz-visoku-kauciju/gtfqneb",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:23:40+00:00",
+      "time": "12:23",
+      "source": "Blic",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -603,20 +603,6 @@
       "priority": 24
     },
     {
-      "id": "vidiran-na-benzinskoj-pumpi-nadzorne-kamere-snimile-ubistvo-",
-      "title": "Šef mafije likvidiran na benzinskoj pumpi: Nadzorne kamere snimile ubistvo",
-      "url": "https://nova.rs/vesti/svet/sef-mafije-likvidiran-na-benzinskoj-pumpi-nadzorne-kamere-snimile-ubistvo/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T08:35:06+00:00",
-      "time": "08:35",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "in-ministra-kenana-magode-priznao-podmetanje-pozara-u-vitezu",
       "title": "SIN MINISTRA PRIZNAO DA JE PODMETNUO POŽAR U VITEZU! Jedan od osumnjičenih priznao da ih je angažovao kriminalac Almedin Ćato",
       "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10085677/sin-ministra-kenana-magode-priznao-podmetanje-pozara-u-vitezu",
@@ -645,20 +631,6 @@
       "priority": 24
     },
     {
-      "id": "evu-cerka-sa-tri-promila-alkohola-u-krvi-pretukla-roditelje-",
-      "title": "Nasilje u Barajevu: Ćerka sa tri promila alkohola u krvi pretukla roditelje",
-      "url": "https://nova.rs/vesti/hronika/nasilje-u-barajevu-cerka-sa-tri-promila-alkohola-u-krvi-pretukla-roditelje/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T08:55:46+00:00",
-      "time": "08:55",
-      "source": "Nova",
-      "category": "Насиље у породици",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 22
-    },
-    {
       "id": "aj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem-",
       "title": "Više od rijalitija: Slučaj Kristijana Golubovića i Kristine Spalević test za sistem",
       "url": "https://www.cins.rs/vise-od-rijalitija-slucaj-kristijana-golubovica-i-kristine-spalevic-test-za-sistem/",
@@ -671,6 +643,20 @@
       "breaking": false,
       "alert": false,
       "priority": 22
+    },
+    {
+      "id": "https-vreme-com-svet-kina-roboti-industrija-radna-snaga-",
+      "title": "Dva koraka ispred konkurencije: Kako u Kini roboti planski zamenjuju sve stariju radnu snagu",
+      "url": "https://vreme.com/svet/kina-roboti-industrija-radna-snaga/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:23:13+00:00",
+      "time": "12:23",
+      "source": "Vreme",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "st-porok-zene-alkohol-unistile-najbolji-na-svetu-biografija-",
@@ -687,18 +673,32 @@
       "priority": 8
     },
     {
-      "id": "ovac-ovo-je-najizdrzljiviji-dizel-motor-svih-vremena-2jh7q51",
-      "title": "Za ovog dizelaša svi taksisti kažu da je najbolji na svetu: Ni milion kilometara mu nije problem",
-      "url": "https://www.blic.rs/biznis/moj-novac/ovo-je-najizdrzljiviji-dizel-motor-svih-vremena/2jh7q51",
+      "id": "reme-com-vesti-rik-nabavka-30000-paravana-sest-miliona-evra-",
+      "title": "RIK doneo odluku: Država za 8.253 biračka mesta kupuje 30.000 novih paravana",
+      "url": "https://vreme.com/vesti/rik-nabavka-30000-paravana-sest-miliona-evra/",
       "date": "2026-08-25",
-      "datetime": "2026-08-25T10:00:46+00:00",
-      "time": "10:00",
-      "source": "Blic",
+      "datetime": "2026-08-25T07:31:14+00:00",
+      "time": "07:31",
+      "source": "Vreme",
       "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "ila-rusenje-u-bosnjackoj-mahali-policija-privela-sluzbenike-",
+      "title": "Opština Severna Mitrovica obustavila rušenje u Bošnjačkoj mahali, policija privela službenike",
+      "url": "https://www.danas.rs/vesti/politika/opstina-severna-mitrovica-obustavila-rusenje-u-bosnjackoj-mahali-policija-privela-sluzbenike/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:02:23+00:00",
+      "time": "12:02",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
