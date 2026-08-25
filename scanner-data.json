@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "muskarci-u-crnom-koji-su-napali-novinare-na-vucicevom-skupu-",
-      "title": "ANEM traži da se hitno otkrije ko su muškarci u crnom koji su napali novinare na Vučićevom skupu",
-      "url": "https://nova.rs/vesti/drustvo/anem-trazi-da-se-hitno-otkrije-ko-su-muskarci-u-crnom-koji-su-napali-novinare-na-vucicevom-skupu/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T14:10:33+00:00",
-      "time": "14:10",
-      "source": "Nova",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
       "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
       "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
@@ -69,6 +55,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "a-bacio-bombu-na-kucu-biznismena-na-bezanijskoj-kosi-2pneycw",
+      "title": "SARADNIK KAVČANA BACIO BOMBU NA KUĆU BIZNISMENA Otkriveni detalji drame na Bežanijskoj kosi: Osumnjičeni uhapšen",
+      "url": "https://www.blic.rs/vesti/hronika/saradnik-kavackog-klana-bacio-bombu-na-kucu-biznismena-na-bezanijskoj-kosi/2pneycw",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T17:57:41+00:00",
+      "time": "17:57",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "umnjicen-da-je-napao-studentkinju-u-liftu-i-oteo-joj-telefon",
@@ -134,20 +134,6 @@
       "datetime": "2026-08-25T13:51:00+00:00",
       "time": "13:51",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "a-10086119-uhapsen-razbojnik-u-novom-sadu-napao-studentkinju",
-      "title": "UŠAO ZA DEVOJKOM U LIFT, DAVIO JE DO 6. SPRATA, PA JE OPLJAČKAO: Jezivo razbojništvo u Novom Sadu, napadač (24) uhapšen",
-      "url": "https://www.kurir.rs/crna-hronika/10086119/uhapsen-razbojnik-u-novom-sadu-napao-studentkinju",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T12:32:05+00:00",
-      "time": "12:32",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -225,6 +211,20 @@
       "priority": 84
     },
     {
+      "id": "l-uhapsene-tri-osobe-zbog-ubistva-vodje-kavkaske-mafije-vest",
+      "title": "Pao osumnjičeni trojac: Uhapšeni zbog ubistva vođe &quot;kavkaske mafije&quot;",
+      "url": "https://www.b92.net/info/svet/262005/izrael-uhapsene-tri-osobe-zbog-ubistva-vodje-kavkaske-mafije/vest",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T18:14:00+00:00",
+      "time": "18:14",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "-jermenski-predsednik-priveden-u-okviru-istrage-o-korupciji-",
       "title": "Bivši jermenski predsednik priveden u okviru istrage o korupciji",
       "url": "https://www.danas.rs/svet/bivsi-jermenski-predsednik-priveden-u-okviru-istrage-o-korupciji/",
@@ -274,20 +274,6 @@
       "datetime": "2026-08-25T13:54:41+00:00",
       "time": "13:54",
       "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "zaplenjeno-tri-kilograma-droge-uhapsen-muskarac-iz-kraljeva-",
-      "title": "Zaplenjeno tri kilograma droge, uhapšen muškarac iz Kraljeva",
-      "url": "https://n1info.rs/vesti/zaplenjeno-tri-kilograma-droge-uhapsen-muskarac-iz-kraljeva/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T13:54:31+00:00",
-      "time": "13:54",
-      "source": "N1",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -365,20 +351,6 @@
       "priority": 30
     },
     {
-      "id": "cc-clanak-780837-kina-istrazuje-korupciju-u-raketnim-snagama",
-      "title": "Кина истражује корупцију у Ракетним снагама",
-      "url": "https://www.politika.rs/scc/clanak/780837/kina-istrazuje-korupciju-u-raketnim-snagama",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T16:22:00+00:00",
-      "time": "16:22",
-      "source": "Politika",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "-nova-rs-drustvo-nadstresnica-inzenjeri-korupcija-optuznica-",
       "title": "Inženjeri na optuženičkoj klupi, koruptivni sistem u senci",
       "url": "https://radar.nova.rs/drustvo/nadstresnica-inzenjeri-korupcija-optuznica/",
@@ -405,20 +377,6 @@
       "breaking": false,
       "alert": false,
       "priority": 30
-    },
-    {
-      "id": "vcu-pozivi-na-lustraciju-su-najgora-zloupotreba-demokratije-",
-      "title": "Vučić u Kruševcu: Pozivi na lustraciju su najgora zloupotreba demokratije",
-      "url": "https://www.danas.rs/vesti/politika/vucic-u-krusevcu-pozivi-na-lustraciju-su-najgora-zloupotreba-demokratije/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T13:20:38+00:00",
-      "time": "13:20",
-      "source": "Danas",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
     },
     {
       "id": "onijevic-upozorio-na-dezinformacije-o-pozarima-u-srbiji-vest",
@@ -575,6 +533,20 @@
       "priority": 8
     },
     {
+      "id": "blokaderska-lista-se-kruni-milioni-iz-budzeta-za-nove-puteve",
+      "title": "TEREN PROTIV BLOKADE: IZBORI SE BLIŽE, BLOKADERSKA LISTA SE KRUNI, MILIONI IZ BUDŽETA ZA NOVE PUTEVE, PROJEKTE I FABRIKE",
+      "url": "https://www.kurir.rs/vesti/drustvo/10086395/teren-protiv-blokade-izbori-se-blize-blokaderska-lista-se-kruni-milioni-iz-budzeta-za-nove-puteve",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T16:26:18+00:00",
+      "time": "16:26",
+      "source": "Kurir",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
       "id": "urs-za-dodelu-sredstava-za-sume-ap-vojvodine-za-2026-godinu-",
       "title": "Konkurs za dodelu sredstava za šume AP Vojvodine za 2026. godinu",
       "url": "https://www.ktv.rs/2026/08/25/konkurs-za-dodelu-sredstava-za-sume-ap-vojvodine-za-2026-godinu/",
@@ -601,6 +573,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "https-n1info-rs-vesti-tukli-muskarca-na-pumpi-",
+      "title": "Niška policija uhapsila dve osobe zbog sumnje da su na pumpi kod Doljevca fizički napale muškarca",
+      "url": "https://n1info.rs/vesti/tukli-muskarca-na-pumpi/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T17:56:39+00:00",
+      "time": "17:56",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "-starovic-srbi-na-kim-najobespravljeniji-u-savremenoj-evropi",
@@ -687,13 +673,27 @@
       "priority": 4
     },
     {
-      "id": "-svet-261980-sumnja-na-sabotazu-zeleznice-kod-stutgarta-vest",
-      "title": "Sabotaža železnice kod Štutgarta?; Presečeni kablovi zaustavili saobraćaj; Policija pronašla tragove alata",
-      "url": "https://www.b92.net/info/svet/261980/sumnja-na-sabotazu-zeleznice-kod-stutgarta/vest",
+      "id": "ikovan-muskarac-koji-je-silovao-zenu-na-banovom-brdu-m8042xx",
+      "title": "POLICIJA IDENTIFIKOVALA MUŠKARCA OSUMNJIČENOG DA JE SILOVAO ŽENU NA BANOVOM BRDU! U toku velika potraga: Oteo joj novčanik, pa je napao",
+      "url": "https://www.blic.rs/vesti/hronika/identifikovan-muskarac-koji-je-silovao-zenu-na-banovom-brdu/m8042xx",
       "date": "2026-08-25",
-      "datetime": "2026-08-25T16:25:00+00:00",
-      "time": "16:25",
-      "source": "B92",
+      "datetime": "2026-08-25T16:15:47+00:00",
+      "time": "16:15",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "e-da-napadnu-ucesnike-prajd-karavana-u-loznici-video-rhdtqm9",
+      "title": "Policija sprečava huligane da napadnu učesnike Prajd karavana u Loznici (VIDEO)",
+      "url": "https://www.blic.rs/vesti/drustvo/policija-sprecava-huligane-da-napadnu-ucesnike-prajd-karavana-u-loznici-video/rhdtqm9",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T15:42:32+00:00",
+      "time": "15:42",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
