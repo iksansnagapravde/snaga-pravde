@@ -71,6 +71,20 @@
       "priority": 100
     },
     {
+      "id": "njiceni-za-bacanje-bombi-na-porodicnu-kucu-na-novom-beogradu",
+      "title": "Ухапшен осумњичени за бацање бомби на породичну кућу на Новом Београду",
+      "url": "https://www.politika.rs/scc/clanak/780878/uhapsen-osumnjiceni-za-bacanje-bombi-na-porodicnu-kucu-na-novom-beogradu",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T21:32:00+00:00",
+      "time": "21:32",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "u-mladica-tukli-izboli-i-trazili-500000-dinara-za-otkup-vest",
       "title": "Uhapšen jedan od trojice otmičara u Beogradu; Mladića tukli, izboli i tražili 500.000 dinara za otkup",
       "url": "https://www.b92.net/info/hronika/262041/uhapsen-jedan-od-trojice-otmicara-u-beogradu-mladica-tukli-izboli-i-trazili-500000-dinara-za-otkup/vest",
@@ -169,9 +183,9 @@
       "priority": 92
     },
     {
-      "id": "ebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom-vest",
-      "title": "Brutalno prebijanje kod Doljevca: Muškarca tukli flašom i metalnim predmetom - dvojica uhapšena",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239556/prebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom/vest",
+      "id": "nadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin-vest",
+      "title": "Velika zaplena droge u Novom Sadu: U kamionu pronađeni kilogrami kokaina i heroina, uhapšen Kraljevčanin",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239558/pronadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin/vest",
       "date": "2026-08-25",
       "datetime": "2026-08-25T13:51:00+00:00",
       "time": "13:51",
@@ -183,9 +197,9 @@
       "priority": 92
     },
     {
-      "id": "nadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin-vest",
-      "title": "Velika zaplena droge u Novom Sadu: U kamionu pronađeni kilogrami kokaina i heroina, uhapšen Kraljevčanin",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239558/pronadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin/vest",
+      "id": "ebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom-vest",
+      "title": "Brutalno prebijanje kod Doljevca: Muškarca tukli flašom i metalnim predmetom - dvojica uhapšena",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239556/prebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom/vest",
       "date": "2026-08-25",
       "datetime": "2026-08-25T13:51:00+00:00",
       "time": "13:51",
@@ -377,6 +391,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "ranci-emitovali-snimak-u-kojem-se-preti-smrcu-trampovom-sinu",
+      "title": "AMERIČKA TAJNA SLUŽBA NA NOGAMA ZBOG TRAMPOVOG SINA: Iranci emitovali snimak u kojem se preti smrću Baronu Trampu!",
+      "url": "https://www.kurir.rs/planeta/10086584/iranci-emitovali-snimak-u-kojem-se-preti-smrcu-trampovom-sinu",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T21:07:21+00:00",
+      "time": "21:07",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "6-dragani-sotirovski-2-septembra-pocinje-sudenje-u-nisu-vest",
@@ -667,34 +695,6 @@
       "time": "17:00",
       "source": "Nova",
       "category": "Права деце",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "blokaderska-lista-se-kruni-milioni-iz-budzeta-za-nove-puteve",
-      "title": "TEREN PROTIV BLOKADE: IZBORI SE BLIŽE, BLOKADERSKA LISTA SE KRUNI, MILIONI IZ BUDŽETA ZA NOVE PUTEVE, PROJEKTE I FABRIKE",
-      "url": "https://www.kurir.rs/vesti/drustvo/10086395/teren-protiv-blokade-izbori-se-blize-blokaderska-lista-se-kruni-milioni-iz-budzeta-za-nove-puteve",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T16:26:18+00:00",
-      "time": "16:26",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "urs-za-dodelu-sredstava-za-sume-ap-vojvodine-za-2026-godinu-",
-      "title": "Konkurs za dodelu sredstava za šume AP Vojvodine za 2026. godinu",
-      "url": "https://www.ktv.rs/2026/08/25/konkurs-za-dodelu-sredstava-za-sume-ap-vojvodine-za-2026-godinu/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T13:17:23+00:00",
-      "time": "13:17",
-      "source": "KTV",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
