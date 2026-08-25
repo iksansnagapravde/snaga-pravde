@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "ju-ko-je-tokom-posete-predsednika-napao-novinare-u-kraljevu-",
+      "title": "Novinarska udruženja: Nadležni hitno da otkriju ko je tokom posete predsednika napao novinare u Kraljevu (VIDEO)",
+      "url": "https://n1info.rs/vesti/anem-nadlezni-hitno-da-otkriju-ko-je-tokom-posete-predsednika-napao-novinare-u-kraljevu/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:30:25+00:00",
+      "time": "09:30",
+      "source": "N1",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "-vesti-drustvo-anem-nedopustiv-napad-na-novinare-u-kraljevu-",
       "title": "ANEM: Ko je napao novinare tokom Vučićeve posete Kraljevu?",
       "url": "https://www.danas.rs/vesti/drustvo/anem-nedopustiv-napad-na-novinare-u-kraljevu/",
@@ -22,20 +36,6 @@
       "datetime": "2026-08-25T08:09:39+00:00",
       "time": "08:09",
       "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "ju-ko-je-tokom-posete-predsednika-napao-novinare-u-kraljevu-",
-      "title": "ANEM: Nadležni hitno da otkriju ko je tokom posete predsednika napao novinare u Kraljevu",
-      "url": "https://n1info.rs/vesti/anem-nadlezni-hitno-da-otkriju-ko-je-tokom-posete-predsednika-napao-novinare-u-kraljevu/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T08:01:59+00:00",
-      "time": "08:01",
-      "source": "N1",
       "category": "Људска права",
       "summary": "",
       "breaking": true,
@@ -85,6 +85,34 @@
       "priority": 100
     },
     {
+      "id": "net-info-svet-261848-uhapsen-bivsi-predsednik-jermenije-vest",
+      "title": "Uhapšen bivši predsednik i njegov sin",
+      "url": "https://www.b92.net/info/svet/261848/uhapsen-bivsi-predsednik-jermenije/vest",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:11:00+00:00",
+      "time": "09:11",
+      "source": "B92",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 96
+    },
+    {
+      "id": "-uhapsena-irina-mudra-bivsa-zamenica-sefa-kabineta-zelenskog",
+      "title": "UHAPŠENA BIVŠA ZAMENICA ŠEFA KABINETA ZELENSKOG! Nastavak antikorupcijske akcije u Ukrajini, evo za šta se sumnjiči (FOTO/VIDEO)",
+      "url": "https://www.kurir.rs/planeta/10085819/uhapsena-irina-mudra-bivsa-zamenica-sefa-kabineta-zelenskog",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:03:56+00:00",
+      "time": "09:03",
+      "source": "Kurir",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 96
+    },
+    {
       "id": "hapen-dravljanin-severne-makedonije-saobraajcu-ponudio-mito-",
       "title": "Uhapšen državljanin Severne Makedonije: Saobraćajcu ponudio mito",
       "url": "https://nova.rs/vesti/hronika/suhapen-dravljanin-severne-makedonije-saobraajcu-ponudio-mito/",
@@ -111,6 +139,34 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "https-nova-rs-vesti-hronika-mirno-je-sedeo-na-stolici-i-pru-",
+      "title": "Novi detalji zločina kod Smedereva: Nasmrt pretukao oca, maćeha pobegla kod komšije i pozvala policiju",
+      "url": "https://nova.rs/vesti/hronika/mirno-je-sedeo-na-stolici-i-pru/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:39:48+00:00",
+      "time": "09:39",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "-hronika-10085844-ubistvo-u-ralji-sin-uhapsen-zbog-smrti-oca",
+      "title": "MIRNO SEDEO NA STOLICI SA KRVAVIM RUKAMA I ČEKAO POLICIJU: Stravični detalji ubistva kod Smedereva, sin uhapšen zbog smrti oca!",
+      "url": "https://www.kurir.rs/crna-hronika/10085844/ubistvo-u-ralji-sin-uhapsen-zbog-smrti-oca",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:12:50+00:00",
+      "time": "09:12",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "a-10085728-makedonac-uhapsen-zbog-davanja-mita-saobracajcima",
@@ -295,6 +351,34 @@
       "priority": 70
     },
     {
+      "id": "-vesti-politika-podignuta-optuznica-protiv-fatmira-seholija-",
+      "title": "Podignuta optužnica protiv Fatmira Šeholija",
+      "url": "https://www.danas.rs/vesti/politika/podignuta-optuznica-protiv-fatmira-seholija/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:23:06+00:00",
+      "time": "09:23",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "1-mladic-poginuo-kod-aleksinca-sleteo-s-puta-i-udario-u-drvo",
+      "title": "Младић погинуо код Алексинца, слетео с пута и ударио у дрво",
+      "url": "https://www.politika.rs/scc/clanak/780741/mladic-poginuo-kod-aleksinca-sleteo-s-puta-i-udario-u-drvo",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:18:00+00:00",
+      "time": "09:18",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "znica-protiv-fatmira-seholija-zbog-navodne-spijunaze-vf1fzb7",
       "title": "U Prištini podignuta optužnica protiv Fatmira Šeholija zbog navodne špijunaže",
       "url": "https://www.blic.rs/vesti/politika/u-pristini-optuznica-protiv-fatmira-seholija-zbog-navodne-spijunaze/vf1fzb7",
@@ -321,20 +405,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "-forest-gamp-bivsa-saradnica-zelenskog-zavrsila-iza-resetaka",
-      "title": "Операција „Форест Гамп”: Бивша сарадница Зеленског завршила иза решетака",
-      "url": "https://www.politika.rs/scc/clanak/780723/operacija-forest-gamp-bivsa-saradnica-zelenskog-zavrsila-iza-resetaka",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T07:46:00+00:00",
-      "time": "07:46",
-      "source": "Politika",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "6-dragani-sotirovski-2-septembra-pocinje-sudenje-u-nisu-vest",
@@ -533,20 +603,6 @@
       "priority": 24
     },
     {
-      "id": "danas-rs-kultura-netfliksova-krimi-noar-serija-najgledanija-",
-      "title": "Nova Netfliksova krimi-noar serija od pet epizoda trenutno je najgledanija na svetu",
-      "url": "https://www.danas.rs/kultura/netfliksova-krimi-noar-serija-najgledanija/",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T06:00:38+00:00",
-      "time": "06:00",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "c-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak-",
       "title": "Milić podneo krivičnu prijavu protiv Krička zbog slučaja „Senjak“",
       "url": "https://www.krik.rs/milic-podneo-krivicnu-prijavu-protiv-kricka-zbog-slucaja-senjak/",
@@ -617,40 +673,12 @@
       "priority": 8
     },
     {
-      "id": "edonac-zaustavljen-na-auto-putu-pa-zavrsio-iza-resetaka-vest",
-      "title": "Policija zaustavila Makedonca na auto-putu kod Kraljeva: Pokušao da podmiti službenike pa završio iza rešetaka",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239447/makedonac-zaustavljen-na-auto-putu-pa-zavrsio-iza-resetaka/vest",
+      "id": "s-crna-hronika-10085858-pijana-pretukla-roditelje-u-barajevu",
+      "title": "ĆERKA PRETUKLA NEMOĆNE RODITELJE, POLICIJA JE ZATEKLA MORTUS PIJANU: Jezivo porodično nasilje kod Barajeva, alkotest šokirao sve",
+      "url": "https://www.kurir.rs/crna-hronika/10085858/pijana-pretukla-roditelje-u-barajevu",
       "date": "2026-08-25",
-      "datetime": "2026-08-25T07:07:00+00:00",
-      "time": "07:07",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-moj-novac-pronadjen-automobil-ukraden-pre-33-godine-kb7jgpx",
-      "title": "Ukrali mu automobil pre 33 godine, a kada ga je konačno dobio nazad cena mu eksplodirala",
-      "url": "https://www.blic.rs/biznis/moj-novac/pronadjen-automobil-ukraden-pre-33-godine/kb7jgpx",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T06:35:25+00:00",
-      "time": "06:35",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "s-region-bosna-i-hercegovina-10085227-knezevo-tuca-saobracaj",
-      "title": "ŽENA MU OŠTETILA KOLA, ON JE VREĐAO, PA FIZIČKI NAPAO: Haos u Kneževu, morali da intervenišu hitna pomoć i policija",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10085227/knezevo-tuca-saobracaj",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T01:00:00+00:00",
-      "time": "01:00",
+      "datetime": "2026-08-25T09:20:05+00:00",
+      "time": "09:20",
       "source": "Kurir",
       "category": "Полиција",
       "summary": "",
@@ -659,46 +687,18 @@
       "priority": 4
     },
     {
-      "id": "no-239223-sumski-pozar-kod-vranja-objekti-nisu-ugrozeni-vest",
-      "title": "Šumski požar u Lukovu kod Vranja, na mestu zatečene osobe koje su izazvale vatru",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239223/sumski-pozar-kod-vranja-objekti-nisu-ugrozeni/vest",
-      "date": "2026-08-23",
-      "datetime": "2026-08-23T17:51:00+00:00",
-      "time": "17:51",
+      "id": "-239483-aleksinac-mladic-poginuo-u-saobracajnoj-nesreci-vest",
+      "title": "Mladić poginuo kod Aleksinca, sleteo sa puta i udario u drvo",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239483/aleksinac-mladic-poginuo-u-saobracajnoj-nesreci/vest",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T09:19:00+00:00",
+      "time": "09:19",
       "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "ps-radar-nova-rs-politika-policija-kao-udarna-batina-rezima-",
-      "title": "Može li se sve rešiti državnim terorom",
-      "url": "https://radar.nova.rs/politika/policija-kao-udarna-batina-rezima/",
-      "date": "2026-08-19",
-      "datetime": "2026-08-19T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "rer-ne-planiram-da-se-vratim-tenisu-kao-serena-vilijams-vest",
-      "title": "Da li će Federer kao Serena?",
-      "url": "https://www.b92.net/sport/tenis/vesti/261837/federer-ne-planiram-da-se-vratim-tenisu-kao-serena-vilijams/vest",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T09:00:00+00:00",
-      "time": "09:00",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
