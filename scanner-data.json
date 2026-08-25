@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "-pola-miliona-evra-za-informaciju-o-ovom-coveku-foto-ctm0bf0",
-      "title": "(FOTO) POLICIJA UPRAVO PONUDILA POLA MILIONA EVRA ZA INFORMACIJU O OVOM ČOVEKU! Ako ste ga videli, HITNO zovite MUP Crne Gore na ove brojeve",
-      "url": "https://www.blic.rs/vesti/hronika/policija-u-crnoj-gori-nudi-pola-miliona-evra-za-informaciju-o-ovom-coveku-foto/ctm0bf0",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T17:03:59+00:00",
-      "time": "17:03",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 112
-    },
-    {
       "id": "o-minu-pa-se-javno-oglasio-ovo-nema-nikakvu-vrednost-0nkv9l4",
       "title": "\"OVO NEMA NIKAKAV ZNAČAJ, NIKAKVU VREDNOST\" Kasper napustio Minu, pa se javno oglasio: \"Sve moje najvrednije nije ovde\" (FOTO)",
       "url": "https://www.blic.rs/zabava/kasper-napustio-minu-pa-se-javno-oglasio-ovo-nema-nikakvu-vrednost/0nkv9l4",
@@ -153,6 +139,20 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "jovica-tukao-i-oteo-mladica-a-sada-autom-gazio-ljude-w0jsyp6",
+      "title": "OTKRIVEN DEBEO DOSIJE ŽELJKA VUJOVIĆA! Oteo mladića i strpao ga u GEPEK, robijao zbog paljevine i prebijanja, a sada AUTOM GAZIO LJUDE: Skandalozni snimak obilazi region (FOTO, VIDEO)",
+      "url": "https://www.blic.rs/vesti/hronika/debeo-dosije-zeljka-vujovica-tukao-i-oteo-mladica-a-sada-autom-gazio-ljude/w0jsyp6",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T03:55:00+00:00",
+      "time": "03:55",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "https-www-danas-rs-vesti-drustvo-vjt-deliblatska-pescara-",
@@ -505,20 +505,6 @@
       "priority": 22
     },
     {
-      "id": "5419-nagrada-od-500-000-evra-za-informacije-o-ljubu-milovicu",
-      "title": "ZA INFORMACIJE O LJUBU MILOVIĆU POLA MILIONA EVRA Crnogorska policija raspisala još jednu novčanu nagradu",
-      "url": "https://www.kurir.rs/crna-hronika/10085419/nagrada-od-500-000-evra-za-informacije-o-ljubu-milovicu",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T16:56:08+00:00",
-      "time": "16:56",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 12
-    },
-    {
       "id": "vane-dokument-potvrdjuje-da-se-spremaju-za-izbore-u-oktobru-",
       "title": "Skandalozna odluka RIK: Direktnom pogodbom daju 700 miliona za paravane, dokument potvrđuje da se spremaju za izbore u oktobru",
       "url": "https://nova.rs/vesti/politika/skandalazona-odluka-rik-direktnom-pogodbom-daju-700-miliona-za-paravane-dokument-potvrdjuje-da-se-spremaju-za-izbore-u-oktobru/",
@@ -643,6 +629,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "ala-istorijsku-akciju-spasavanja-teleskopa-u-svemiru-2yr9kn4",
+      "title": "\"OVOME SE NISMO NADALI\" NASA otkazala istorijsku akciju spasavanja u svemiru: \"IZGOREĆE U ATMOSFERI\"",
+      "url": "https://www.blic.rs/vesti/svet/nasa-otkazala-istorijsku-akciju-spasavanja-teleskopa-u-svemiru/2yr9kn4",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T03:25:00+00:00",
+      "time": "03:25",
+      "source": "Blic",
+      "category": "Радничка права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "-decu-stariju-od-10-sve-sto-treba-da-znaju-roditelji-zgb52r1",
