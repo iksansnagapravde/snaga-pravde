@@ -1,34 +1,6 @@
 {
   "entries": [
     {
-      "id": "sednice-skupstine-srbije-poslanici-danas-o-59-tacaka-3edn7p9",
-      "title": "\"JA VAS NAJGOREM NEPRIJATELJU NE BIH POŽELELA\" Završena vanredna sednica Skupštine, Brnabić odgovorila Lazoviću na tvrdnje o požarima: \"Vređate profesionalce\" (VIDEO)",
-      "url": "https://www.blic.rs/vesti/politika/nastavak-vanredne-sednice-skupstine-srbije-poslanici-danas-o-59-tacaka/3edn7p9",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T16:57:50+00:00",
-      "time": "16:57",
-      "source": "Blic",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 130
-    },
-    {
-      "id": "A-EVRA-Podgoricanin-pokusao-da-prevari-carinike-na-aerodromu",
-      "title": "UHAPŠEN ZBOG ŠVERCA MOBILNIH TELEFONA VREDNIH 2,6 MILIONA EVRA: Podgoričanin pokušao da prevari carinike na aerodromu",
-      "url": "https://www.kurir.rs/region/crna-gora/10086363/UHAPSEN-ZBOG-SVERCA-MOBILNIH-TELEFONA-VREDNIH-2-6-MILIONA-EVRA-Podgoricanin-pokusao-da-prevari-carinike-na-aerodromu",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T22:32:00+00:00",
-      "time": "22:32",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "586-uhapsen-mladic-otmica-kaludjerica-tesko-povredjen-mladic",
       "title": "UHAPŠEN JEDAN OD OSUMNJIČENIH ZA NAPAD NA MLADIĆA (26) U KALUĐERICI: Oteli ga nasred ulice, tukli i ubadali nožem, pa tražili POLA MILIONA DINARA",
       "url": "https://www.kurir.rs/crna-hronika/10086586/uhapsen-mladic-otmica-kaludjerica-tesko-povredjen-mladic",
@@ -699,6 +671,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "https-vreme-com-svet-kina-roboti-industrija-radna-snaga-",
+      "title": "Dva koraka ispred konkurencije: Kako u Kini roboti planski zamenjuju sve stariju radnu snagu",
+      "url": "https://vreme.com/svet/kina-roboti-industrija-radna-snaga/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:23:13+00:00",
+      "time": "12:23",
+      "source": "Vreme",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "licija-uhvatila-pijanog-vozaca-nakon-sto-je-zaspao-u-ttlr3s2",
+      "title": "HTEO DA PREVARI POLICIJU, PA URADIO NEŠTO NEVEROVATNO Pijani vozač (30) bežao od patrola, sakrio se u žbunje i ZASPAO: Hrkanje ga odalo",
+      "url": "https://www.blic.rs/vesti/svet/bizaran-incident-u-nemackoj-policija-uhvatila-pijanog-vozaca-nakon-sto-je-zaspao-u/ttlr3s2",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T22:03:00+00:00",
+      "time": "22:03",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
