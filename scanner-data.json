@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
-      "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
-      "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
-      "date": "2026-08-24",
-      "datetime": "2026-08-24T13:43:54+00:00",
-      "time": "13:43",
-      "source": "KTV",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "irace-pred-izbore-srdjan-milivojevic-milos-jovanovic-debata-",
       "title": "Treba li \"deliti\" birače: Jovanović o \"autentičnoj desnici\", Milivojević kaže - \"postoji samo autentična mafija i autentični borci protiv nje\"",
       "url": "https://n1info.rs/vesti/treba-li-deliti-birace-pred-izbore-srdjan-milivojevic-milos-jovanovic-debata/",
@@ -27,6 +13,34 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "-vec-hapsen-sa-kavcanima-zbog-planiranja-ubistva-kotoranina-",
+      "title": "Ko je bombaš sa Bežanijske kose: Dva puta mu na meti bila porodična kuća biznismena, već hapšen sa \"kavčanima\" zbog planiranja ubistva Kotoranina",
+      "url": "https://nova.rs/vesti/hronika/ko-je-bombas-sa-bezanijske-kose-dva-puta-mu-na-meti-bila-porodicna-kuca-biznismena-vec-hapsen-sa-kavcanima-zbog-planiranja-ubistva-kotoranina/",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T11:58:26+00:00",
+      "time": "11:58",
+      "source": "Nova",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "https-www-kurir-rs-crna-hronika-10087146-hapsenje-u-krusevcu",
+      "title": "UHAPŠENA KRUŠEVLJANKA: Vožnja pod uticajem psihoaktivne supstance benzodiazepin",
+      "url": "https://www.kurir.rs/crna-hronika/10087146/hapsenje-u-krusevcu",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T11:41:28+00:00",
+      "time": "11:41",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "a-banovog-brda-sekula-50-napao-zenu-67-pa-je-silovao-blzb7l4",
@@ -50,20 +64,6 @@
       "datetime": "2026-08-26T09:17:50+00:00",
       "time": "09:17",
       "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "721-sin-ministra-kenana-magode-i-ranije-bio-sklon-problemima",
-      "title": "UHAPŠENI SIN MINISTRA MAGODE I RANIJE BIO SKLON PROBLEMIMA: Izbačen iz osnovne škole, hvalio se da je dete ministra",
-      "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10086721/sin-ministra-kenana-magode-i-ranije-bio-sklon-problemima",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T07:25:58+00:00",
-      "time": "07:25",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -99,9 +99,9 @@
       "priority": 92
     },
     {
-      "id": "ebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom-vest",
-      "title": "Brutalno prebijanje kod Doljevca: Muškarca tukli flašom i metalnim predmetom - dvojica uhapšena",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239556/prebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom/vest",
+      "id": "nadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin-vest",
+      "title": "Velika zaplena droge u Novom Sadu: U kamionu pronađeni kilogrami kokaina i heroina, uhapšen Kraljevčanin",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239558/pronadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin/vest",
       "date": "2026-08-25",
       "datetime": "2026-08-25T13:51:00+00:00",
       "time": "13:51",
@@ -113,9 +113,9 @@
       "priority": 92
     },
     {
-      "id": "nadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin-vest",
-      "title": "Velika zaplena droge u Novom Sadu: U kamionu pronađeni kilogrami kokaina i heroina, uhapšen Kraljevčanin",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239558/pronadeni-kilogrami-kokaina-i-heroina-uhapsen-kraljevcanin/vest",
+      "id": "ebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom-vest",
+      "title": "Brutalno prebijanje kod Doljevca: Muškarca tukli flašom i metalnim predmetom - dvojica uhapšena",
+      "url": "https://www.euronews.rs/srbija/aktuelno/239556/prebijanje-i-hapsenje-kod-doljevca-muskarca-napali-flasom/vest",
       "date": "2026-08-25",
       "datetime": "2026-08-25T13:51:00+00:00",
       "time": "13:51",
@@ -435,20 +435,6 @@
       "priority": 26
     },
     {
-      "id": "dbor-odbio-vecinu-amandmana-na-zakone-iz-oblasti-pravosudja-",
-      "title": "Skupštinski odbor odbio većinu amandmana na zakone iz oblasti pravosuđa",
-      "url": "https://n1info.rs/vesti/skupstinski-odbor-odbio-vecinu-amandmana-na-zakone-iz-oblasti-pravosudja/",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T08:16:25+00:00",
-      "time": "08:16",
-      "source": "N1",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "vujic-zakon-o-pravosudnoj-akademiji-ispunjava-standarde-vest",
       "title": "Vujić: Predlog zakona o Pravosudnoj akademiji dobio pozitivno mišljenje Venecijanske komisije",
       "url": "https://www.euronews.rs/srbija/politika/239347/vujic-zakon-o-pravosudnoj-akademiji-ispunjava-standarde/vest",
@@ -519,18 +505,32 @@
       "priority": 22
     },
     {
-      "id": "om-biranju-radoju-zviceru-na-skaju-pricao-o-vucicima-zvonku-",
-      "title": "Ko je \"Zli poručnik\" za kog crnogorska policija nudi pola miliona evra? Bio na brzom biranju Radoju Zviceru, na Skaju pričao o Vučićima, Zvonku...",
-      "url": "https://nova.rs/vesti/hronika/ko-je-zli-porucnik-za-kog-crnogorska-policija-nudi-pola-miliona-evra-bio-na-brzom-biranju-radoju-zviceru-na-skaju-pricao-o-vucicima-zvonku/",
+      "id": "r-objavili-fotografiju-njena-pozadina-pobrala-simpatije-vest",
+      "title": "Tri miliona lajkova za njenu zadnjicu: Slavna manekenka napravila haos na Instagramu FOTO",
+      "url": "https://superzena.b92.net/zivoti-poznatih/aktuelno/262170/dzastin-biber-i-hejli-biber-objavili-fotografiju-njena-pozadina-pobrala-simpatije/vest",
       "date": "2026-08-26",
-      "datetime": "2026-08-26T08:09:12+00:00",
-      "time": "08:09",
-      "source": "Nova",
-      "category": "Полиција",
+      "datetime": "2026-08-26T11:51:00+00:00",
+      "time": "11:51",
+      "source": "B92",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 12
+      "priority": 8
+    },
+    {
+      "id": "rzati-i-na-kosovu-liste-da-objave-predloge-za-clanove-vlade-",
+      "title": "Danica Grujičić: Važno je izbore održati i na Kosovu, liste da objave predloge za članove vlade",
+      "url": "https://www.danas.rs/vesti/politika/danica-grujicic-vazno-je-izbore-odrzati-i-na-kosovu-liste-da-objave-predloge-za-clanove-vlade/",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T11:44:08+00:00",
+      "time": "11:44",
+      "source": "Danas",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "https-www-danas-rs-vesti-drustvo-rtv-novi-pazar-",
@@ -562,7 +562,7 @@
     },
     {
       "id": "zenima-u-vojvodini-50-000-paketa-vrednih-142-miliona-dinara-",
-      "title": "Za pomoć socijalno ugroženima u Vojvodini 50 000 paketa, vrednih 142 miliona dinara",
+      "title": "Za pomoć socijalno ugroženima u Vojvodini 50.000 paketa, vrednih 142 miliona dinara",
       "url": "https://www.danas.rs/vesti/drustvo/za-pomoc-socijalno-ugrozenima-u-vojvodini-50-000-paketa-vrednih-142-miliona-dinara/",
       "date": "2026-08-26",
       "datetime": "2026-08-26T10:32:53+00:00",
@@ -587,6 +587,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "u-dovezao-giljotinu-pred-kongres-policija-ga-odmah-uhapsila-",
+      "title": "Bizaran slučaj u Vašingtonu: Dovezao giljotinu pred Kongres, policija ga odmah uhapsila",
+      "url": "https://nova.rs/vesti/svet/bizaran-slucaj-u-vasingtonu-dovezao-giljotinu-pred-kongres-policija-ga-odmah-uhapsila/",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T11:53:26+00:00",
+      "time": "11:53",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ri-snimaju-brzinu-bez-policije-kazne-stizu-na-adresu-6h81qbe",
+      "title": "NOVI, NEVIDLJIVI RADARI VREBAJU VOZAČE ŠIROM CRNE GORE: Automatski snimaju brzinu i tablice bez policije, i šalju kaznu na kućnu adresu",
+      "url": "https://www.blic.rs/vesti/drustvo/novi-radari-u-crnoj-gori-snimaju-brzinu-bez-policije-kazne-stizu-na-adresu/6h81qbe",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T11:52:28+00:00",
+      "time": "11:52",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-krsenja-javnog-reda-i-mira-na-insistiranje-odbornice-sns-a-",
+      "title": "„Vi ćete, gospodo, da me vozite“: Aktivistkinja Suzana Đorđević u Kragujevcu privedena zbog „kršenja javnog reda i mira” na „insistiranje” odbornice SNS-a",
+      "url": "https://www.danas.rs/vesti/drustvo/vi-cete-gospodo-da-me-vozite-aktivistkinja-suzana-djordjevic-u-kragujevcu-privedena-zbog-krsenja-javnog-reda-i-mira-na-insistiranje-odbornice-sns-a/",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T11:45:12+00:00",
+      "time": "11:45",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "u-rumuniji-pronadjen-dron-naredjena-hitna-evakuacija-2821d3l",
@@ -617,20 +659,6 @@
       "priority": 4
     },
     {
-      "id": "ja-istrazuje-smrt-para-u-spaniji-povrede-lice-na-ubodne-rane",
-      "title": "Полиција истражује смрт пара у Шпанији: повреде личе на убодне ране",
-      "url": "https://www.politika.rs/scc/clanak/780969/policija-istrazuje-smrt-para-u-spaniji-povrede-lice-na-ubodne-rane",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T10:52:00+00:00",
-      "time": "10:52",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "rne-drugi-pronadjen-u-rumuniji-turisti-hitno-evakuisani-vest",
       "title": "Kupači zatekli neobične prizore: Blokirane plaže u dve zemlje",
       "url": "https://www.b92.net/putovanja/aktuelno/aktuelno/262119/dron-na-plazi-kod-varne-drugi-pronadjen-u-rumuniji-turisti-hitno-evakuisani/vest",
@@ -638,20 +666,6 @@
       "datetime": "2026-08-26T10:51:00+00:00",
       "time": "10:51",
       "source": "B92",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "nak-780967-poverenik-osudio-napad-na-prajd-karavan-u-loznici",
-      "title": "Повереник осудио напад на Прајд караван у Лозници",
-      "url": "https://www.politika.rs/scc/clanak/780967/poverenik-osudio-napad-na-prajd-karavan-u-loznici",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T10:48:00+00:00",
-      "time": "10:48",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -680,20 +694,6 @@
       "datetime": "2026-08-26T09:01:01+00:00",
       "time": "09:01",
       "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "92-novi-sad-uhapsen-osumnjiceni-za-razbojnistvo-u-liftu-vest",
-      "title": "Novosadska policija uhapsila osumnjičenog da je napao devojku i ukrao joj telefon",
-      "url": "https://www.euronews.rs/srbija/aktuelno/239592/novi-sad-uhapsen-osumnjiceni-za-razbojnistvo-u-liftu/vest",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T17:22:00+00:00",
-      "time": "17:22",
-      "source": "Euronews Serbia",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
