@@ -1,46 +1,68 @@
 [
   {
-    "winner": null,
-    "accepted": 8320.0,
-    "lowest": 8202.0,
-    "difference": 118.0,
+    "winner": "STEELSOFT DOO",
+    "accepted": 31250000.0,
+    "lowest": 2920.0,
+    "difference": 31247080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101266668,
-    "file": "documents/101266668_Odluka o dodeli.docx"
+    "id": 101669209,
+    "file": "documents/101669209_ODLUKA O DODELI UGOVORA_JN BR. 0017 26.pdf"
   },
   {
     "winner": null,
-    "accepted": 8320.0,
-    "lowest": 8202.0,
-    "difference": 118.0,
+    "accepted": 264000.0,
+    "lowest": 1261.0,
+    "difference": 262739.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101342134,
-    "file": "documents/101342134_Odluka o dodeli.docx"
+    "id": 100604546,
+    "file": "documents/100604546_Odluka o dodeli ugovora JN-OP-2026-047 broj 8494-1-2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 8320.0,
-    "lowest": 8202.0,
-    "difference": 118.0,
+    "accepted": 328230.0,
+    "lowest": 2202.0,
+    "difference": 326028.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100191862,
-    "file": "documents/100191862_Odluka o dodeli.docx"
+    "id": 106787124,
+    "file": "documents/106787124_Odluka.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 2600000.0,
+    "lowest": 2214.0,
+    "difference": 2597786.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103010880,
+    "file": "documents/103010880_odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 8320.0,
-    "lowest": 8202.0,
-    "difference": 118.0,
+    "accepted": 2591568.0,
+    "lowest": 1110.0,
+    "difference": 2590458.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101003008,
-    "file": "documents/101003008_Odluka o dodeli.docx"
+    "id": 100002887,
+    "file": "documents/100002887_Scan Odluka o dodeli ugovora JNOP 17.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4000000.0,
+    "lowest": 2201.0,
+    "difference": 3997799.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106185416,
+    "file": "documents/106185416_Odluka o dodeli ugovora.pdf"
   }
 ]
