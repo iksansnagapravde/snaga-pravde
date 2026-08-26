@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "azile-od-Ukrajine-da-obustavi-napade-na-Rusiju-zbog-sefa-CIA",
-      "title": "TAJNA MISIJA U MOSKVI, AMERIKA HITNO STOPIRALA KIJEV! Stigla NAREDBA od šefa CIA: \"Obustavite sve napade!\" (VIDEO)",
-      "url": "https://www.kurir.rs/planeta/10086481/SAD-trazile-od-Ukrajine-da-obustavi-napade-na-Rusiju-zbog-sefa-CIA",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T18:13:38+00:00",
-      "time": "18:13",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
       "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
       "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
@@ -69,6 +55,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "hronika-6026858-drzavljanin-bih-silovanje-zena-cukarica-html",
+      "title": "Држављанин БиХ ухапшен због силовања жене на Чукарици",
+      "url": "https://www.rts.rs/vesti/hronika/6026858/drzavljanin-bih-silovanje-zena-cukarica.html",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T04:20:25+00:00",
+      "time": "04:20",
+      "source": "RTS",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "njiceni-za-bacanje-bombi-na-porodicnu-kucu-na-novom-beogradu",
@@ -148,20 +148,6 @@
       "datetime": "2026-08-25T19:02:18+00:00",
       "time": "19:02",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "a-bacio-bombu-na-kucu-biznismena-na-bezanijskoj-kosi-2pneycw",
-      "title": "SARADNIK KAVČANA BACIO BOMBU NA KUĆU BIZNISMENA Otkriveni detalji drame na Bežanijskoj kosi: Osumnjičeni uhapšen",
-      "url": "https://www.blic.rs/vesti/hronika/saradnik-kavackog-klana-bacio-bombu-na-kucu-biznismena-na-bezanijskoj-kosi/2pneycw",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T17:57:41+00:00",
-      "time": "17:57",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -694,6 +680,20 @@
       "datetime": "2026-08-25T13:17:23+00:00",
       "time": "13:17",
       "source": "KTV",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "https-vreme-com-svet-kina-roboti-industrija-radna-snaga-",
+      "title": "Dva koraka ispred konkurencije: Kako u Kini roboti planski zamenjuju sve stariju radnu snagu",
+      "url": "https://vreme.com/svet/kina-roboti-industrija-radna-snaga/",
+      "date": "2026-08-25",
+      "datetime": "2026-08-25T12:23:13+00:00",
+      "time": "12:23",
+      "source": "Vreme",
       "category": "Људска права",
       "summary": "",
       "breaking": false,
