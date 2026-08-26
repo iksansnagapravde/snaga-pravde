@@ -1,34 +1,6 @@
 {
   "entries": [
     {
-      "id": "iju-rodjeni-izmedju-1960-i-1970-godine-moraju-ovo-da-d3kfktm",
-      "title": "Jedna greška može da umanji penziju: Ako ste rođeni između 1960. i 1970. godine, ovo morate da proverite",
-      "url": "https://www.blic.rs/biznis/moj-novac/jedna-greska-moze-da-umanji-penziju-rodjeni-izmedju-1960-i-1970-godine-moraju-ovo-da/d3kfktm",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T07:59:04+00:00",
-      "time": "07:59",
-      "source": "Blic",
-      "category": "Пензионери",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "A-EVRA-Podgoricanin-pokusao-da-prevari-carinike-na-aerodromu",
-      "title": "UHAPŠEN ZBOG ŠVERCA MOBILNIH TELEFONA VREDNIH 2,6 MILIONA EVRA: Podgoričanin pokušao da prevari carinike na aerodromu",
-      "url": "https://www.kurir.rs/region/crna-gora/10086363/UHAPSEN-ZBOG-SVERCA-MOBILNIH-TELEFONA-VREDNIH-2-6-MILIONA-EVRA-Podgoricanin-pokusao-da-prevari-carinike-na-aerodromu",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T22:32:00+00:00",
-      "time": "22:32",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 100
-    },
-    {
       "id": "rzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave-",
       "title": "Paori traže hitno ukidanje monopola na tržištu poljoprivrednih proizvoda i izmirenje obaveza države",
       "url": "https://www.ktv.rs/2026/08/24/paori-traze-hitno-ukidanje-monopola-na-trzistu-poljoprivrednih-proizvoda-i-izmirenje-obaveza-drzave/",
@@ -71,20 +43,6 @@
       "priority": 92
     },
     {
-      "id": "vo-je-sekula-osumnjicen-za-silovanje-na-banovom-brdu-yz38qwj",
-      "title": "(FOTO, VIDEO) OVO JE OSUMNJIČENI ZA SILOVANJE NA BANOVOM BRDU! Sekula (50) HLADNOKRVNO šetao ulicom posle zločina: Pokušao da otme novčanik ženi (67), pa je odvukao u PROLAZ ispod stepeništa",
-      "url": "https://www.blic.rs/vesti/hronika/ovo-je-sekula-osumnjicen-za-silovanje-na-banovom-brdu/yz38qwj",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T08:15:57+00:00",
-      "time": "08:15",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "nstrum-sa-cukarice-opljackao-penzinerku-pa-je-silovao-video-",
       "title": "Pogledajte kako je uhapšen monstrum sa Čukarice: Opljačkao penzionerku, pa je silovao VIDEO",
       "url": "https://nova.rs/vesti/hronika/pogledajte-kako-je-uhapsen-monstrum-sa-cukarice-opljackao-penzinerku-pa-je-silovao-video/",
@@ -114,7 +72,7 @@
     },
     {
       "id": "nje-mladica-za-bacanje-dve-bombe-na-kucu-na-bezanijskoj-kosi",
-      "title": "OVAKO JE UHAPŠEN DVOSTRUKI BOMBAŠ: Dvaput bacio ručnu bombu na dvorište iste kuće na Bežanijskoj kosi, opušteno sedeo u kafiću pa se sledio kad je ušao UKP!",
+      "title": "OVAKO JE UHAPŠEN DVOSTRUKI BOMBAŠ Dvaput bacio ručnu bombu na istu kuću na Bežanijskoj kosi! Opušteno sedeo u kafiću pa se sledio kad je ušao UKP! (VIDEO)",
       "url": "https://www.kurir.rs/crna-hronika/10086669/hapsenje-mladica-za-bacanje-dve-bombe-na-kucu-na-bezanijskoj-kosi",
       "date": "2026-08-26",
       "datetime": "2026-08-26T06:42:39+00:00",
@@ -309,20 +267,6 @@
       "priority": 70
     },
     {
-      "id": "iceni-za-bacanje-rucnih-bombi-na-kucu-na-novom-beogradu-html",
-      "title": "Ухапшен осумњичени за бацање ручних бомби на кућу на Новом Београду",
-      "url": "https://www.rts.rs/vesti/hronika/6026813/uhapsen-osumnjiceni-za-bacanje-rucnih-bombi-na-kucu-na-novom-beogradu.html",
-      "date": "2026-08-25",
-      "datetime": "2026-08-25T20:40:52+00:00",
-      "time": "20:40",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "nas-rs-svet-americka-tajna-sluzba-irans-pretnja-baron-tramp-",
       "title": "Iranci nude 10 miliona dolara za ubistvo Barona Trampa, američka tajna služba istražuje snimak",
       "url": "https://www.danas.rs/svet/americka-tajna-sluzba-irans-pretnja-baron-tramp/",
@@ -338,7 +282,7 @@
     },
     {
       "id": "ika-mediji-spijunaza-seholi-kurti-kosovo-kandahar-optuznica-",
-      "title": "Mediji iznose navode iz optužnice  za špijunažu: Srpska služba pokušala da regrutuje Kurtija i Kosovo da prikaže kao Kandahar",
+      "title": "Srpska služba pokušala da regrutuje Kurtija i Kosovo da prikaže kao Kandahar: Mediji iznose navode iz optužnice  za špijunažu",
       "url": "https://www.danas.rs/vesti/politika/mediji-spijunaza-seholi-kurti-kosovo-kandahar-optuznica/",
       "date": "2026-08-26",
       "datetime": "2026-08-26T09:55:24+00:00",
@@ -461,6 +405,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "ja-mihaela-martensa-u-drzavama-s-tesnim-odnosima-sa-rusijom-",
+      "title": "Berlin prati situaciju: Da li postoji mogućnost hapšenja Mihaela Martensa u državama s \"tesnim odnosima sa Rusijom\"",
+      "url": "https://n1info.rs/svet/berlin-prati-situaciju-da-li-postoji-mogucnost-hapsenja-mihaela-martensa-u-drzavama-s-tesnim-odnosima-sa-rusijom/",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T10:58:35+00:00",
+      "time": "10:58",
+      "source": "N1",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "https-www-danas-rs-svet-mihael-martens-berlin-rusija-",
@@ -617,20 +575,6 @@
       "priority": 8
     },
     {
-      "id": "va-rs-sport-fudbal-valdas-dambrauskas-milioner-sabah-hapoel-",
-      "title": "VIDEO Proslavio se u \"Milioneru\", Zvezda mu potpisala otkaz, a sad napravio najneočekivanije čudo ove godine u Evropi",
-      "url": "https://nova.rs/sport/fudbal/valdas-dambrauskas-milioner-sabah-hapoel/",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T07:25:23+00:00",
-      "time": "07:25",
-      "source": "Nova",
-      "category": "Радничка права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "https-vreme-com-kultura-doli-parton-muzika-inmemoriam-",
       "title": "Preminula Doli Parton, kraljica kantrija",
       "url": "https://vreme.com/kultura/doli-parton-muzika-inmemoriam/",
@@ -659,12 +603,12 @@
       "priority": 8
     },
     {
-      "id": "azi-kod-varne-pronadjen-dron-blokirano-celo-podrucje-c1vcyy0",
-      "title": "DRAMA U KOMŠILUKU! Kupači našli DRON NA PLAŽI u popularnom letovalištu, blokirano celo područje",
-      "url": "https://www.blic.rs/vesti/svet/na-plazi-kod-varne-pronadjen-dron-blokirano-celo-podrucje/c1vcyy0",
+      "id": "u-rumuniji-pronadjen-dron-naredjena-hitna-evakuacija-2821d3l",
+      "title": "DRAMA U NAŠEM KOMŠILUKU! Policija blokirala područje, naređena HITNA EVAKUACIJA: Turisti pronašli dron sa eksplozivom na plaži",
+      "url": "https://www.blic.rs/vesti/svet/i-na-plazi-u-rumuniji-pronadjen-dron-naredjena-hitna-evakuacija/2821d3l",
       "date": "2026-08-26",
-      "datetime": "2026-08-26T09:01:01+00:00",
-      "time": "09:01",
+      "datetime": "2026-08-26T11:00:20+00:00",
+      "time": "11:00",
       "source": "Blic",
       "category": "Полиција",
       "summary": "",
@@ -673,13 +617,69 @@
       "priority": 4
     },
     {
-      "id": "lazu-odmah-aktivirana-policija-niko-ne-zna-odakle-je-stigao-",
-      "title": "Misteriozni crni objekat isplivao na plažu, odmah aktivirana policija - niko ne zna odakle je stigao",
-      "url": "https://nova.rs/magazin/lifestyle/misteriozni-crni-objekat-isplivao-na-plazu-odmah-aktivirana-policija-niko-ne-zna-odakle-je-stigao/",
+      "id": "ogorska-policija-nemocna-odbegli-medenica-pravi-im-haos-vest",
+      "title": "Crnogorska policija nemoćna; Odbegli Medenica pravi im haos",
+      "url": "https://www.b92.net/info/region/262169/crnogorska-policija-nemocna-odbegli-medenica-pravi-im-haos/vest",
       "date": "2026-08-26",
-      "datetime": "2026-08-26T07:37:49+00:00",
-      "time": "07:37",
-      "source": "Nova",
+      "datetime": "2026-08-26T10:53:00+00:00",
+      "time": "10:53",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ja-istrazuje-smrt-para-u-spaniji-povrede-lice-na-ubodne-rane",
+      "title": "Полиција истражује смрт пара у Шпанији: повреде личе на убодне ране",
+      "url": "https://www.politika.rs/scc/clanak/780969/policija-istrazuje-smrt-para-u-spaniji-povrede-lice-na-ubodne-rane",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T10:52:00+00:00",
+      "time": "10:52",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "rne-drugi-pronadjen-u-rumuniji-turisti-hitno-evakuisani-vest",
+      "title": "Kupači zatekli neobične prizore: Blokirane plaže u dve zemlje",
+      "url": "https://www.b92.net/putovanja/aktuelno/aktuelno/262119/dron-na-plazi-kod-varne-drugi-pronadjen-u-rumuniji-turisti-hitno-evakuisani/vest",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T10:51:00+00:00",
+      "time": "10:51",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "nak-780967-poverenik-osudio-napad-na-prajd-karavan-u-loznici",
+      "title": "Повереник осудио напад на Прајд караван у Лозници",
+      "url": "https://www.politika.rs/scc/clanak/780967/poverenik-osudio-napad-na-prajd-karavan-u-loznici",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T10:48:00+00:00",
+      "time": "10:48",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "azi-kod-varne-pronadjen-dron-blokirano-celo-podrucje-c1vcyy0",
+      "title": "DRAMA U KOMŠILUKU! Kupači našli DRON NA PLAŽI u popularnom letovalištu, blokirano celo područje",
+      "url": "https://www.blic.rs/vesti/svet/na-plazi-kod-varne-pronadjen-dron-blokirano-celo-podrucje/c1vcyy0",
+      "date": "2026-08-26",
+      "datetime": "2026-08-26T09:01:01+00:00",
+      "time": "09:01",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
