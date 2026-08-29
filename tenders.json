@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 8202.0,
+    "difference": 399991798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100165773,
+    "file": "documents/100165773_Odluka o dodeli narudzbenice JN 61-2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 20000000.0,
     "lowest": 3211.0,
     "difference": 19996789.0,
@@ -86,27 +97,5 @@
     "rejection_reasons": [],
     "id": 100237020,
     "file": "documents/100237020_Odluka o dodeli ugovora 43D26.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 1442558.0,
-    "lowest": 1190.0,
-    "difference": 1441368.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100960325,
-    "file": "documents/100960325_Odluka 405-229-40001.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 120000000.0,
-    "lowest": 2113.0,
-    "difference": 119997887.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 110914017,
-    "file": "documents/110914017_Odluka o dodeli ugovora-MICROSOFT.pdf"
   }
 ]
