@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "ekstremna-vrucina-i-vetar-opasnost-od-pozara-i-grada-yv0c2qn",
+      "title": "SUBOTA - DAN EKSTREMNO OPASNOG VREMENA! RHMZ nanizao alarme: Preti nam JAKO NEVREME, a udružuju se i 3 jeziva faktora koja mogu da izazovu KATASTROFU",
+      "url": "https://www.blic.rs/vremenska-prognoza/hitno-upozorenje-rhmz-ekstremna-vrucina-i-vetar-opasnost-od-pozara-i-grada/yv0c2qn",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T05:29:00+00:00",
+      "time": "05:29",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "pstina-srbije-nastavlja-raspravu-o-zakonu-svoj-na-svome-vest",
       "title": "Poslanici raspravljaju po amandmanima na izmene zakona \"svoj na svome\"",
       "url": "https://www.euronews.rs/srbija/politika/240144/skupstina-srbije-nastavlja-raspravu-o-zakonu-svoj-na-svome/vest",
@@ -41,6 +55,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "evo-koliko-jodzir-zaradjuje-mesecno-cifra-je-ogromna-1vkp8xw",
+      "title": "UHAPŠEN U CRNOJ GORI, HVALI SE LUKSUZOM, A ZARAĐUJE PAPRENO Jodžir je kažnjen zbog ometanja policajca, a evo koliki su mu prihodi svakog meseca",
+      "url": "https://www.blic.rs/zabava/uhasen-u-crnoj-gori-a-evo-koliko-jodzir-zaradjuje-mesecno-cifra-je-ogromna/1vkp8xw",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T04:30:00+00:00",
+      "time": "04:30",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "a-i-hercegovina-10088816-banjaluka-hapsenje-bomba-kladionica",
@@ -239,6 +267,20 @@
       "priority": 88
     },
     {
+      "id": "-www-kurir-rs-stars-10089302-smrku-preti-deset-godina-robije",
+      "title": "OVO JE ZATVORSKA KAZNA KOJA PRETI ŠMRKU! Bivšem menadžeru Bube i Džale potvrđena optužnica za organizovani kriminal, u utorak izlazi pred sud u Sarajevu",
+      "url": "https://www.kurir.rs/stars/10089302/smrku-preti-deset-godina-robije",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T04:59:00+00:00",
+      "time": "04:59",
+      "source": "Kurir",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 84
+    },
+    {
       "id": "https-www-krik-rs-nemanja-vidic-dao-iskaz-u-tok-u-",
       "title": "Nemanja Vidić dao iskaz u TOK-u",
       "url": "https://www.krik.rs/nemanja-vidic-dao-iskaz-u-tok-u/",
@@ -309,20 +351,6 @@
       "priority": 70
     },
     {
-      "id": "s-vesti-hronika-6028438-droga-za-silovanje-mup-hapsenje-html",
-      "title": "МУП: Заплењено 11,4 литра \"дроге за силовање\", ухапшене две особе",
-      "url": "https://www.rts.rs/vesti/hronika/6028438/droga-za-silovanje-mup-hapsenje.html",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T18:30:42+00:00",
-      "time": "18:30",
-      "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "novi-sad-uhapsen-osumnjiceni-zaplenjeni-droga-i-pistolj-vest",
       "title": "U Novom Sadu uhapšen muškarac kod kog su pronađeni narkotici i oružje",
       "url": "https://www.euronews.rs/srbija/aktuelno/239933/novi-sad-uhapsen-osumnjiceni-zaplenjeni-droga-i-pistolj/vest",
@@ -365,20 +393,6 @@
       "priority": 66
     },
     {
-      "id": "l-drzavni-organi-mediji-mup-u-da-pribavi-ip-adresa-gugl-html",
-      "title": "ВЈТ: Претећи имејлови државним органима и медијима, упућен захтев МУП-у да прибави ИП адресе од Гугла",
-      "url": "https://www.rts.rs/vesti/hronika/6028526/vjt-preteci-imejl-drzavni-organi-mediji-mup-u-da-pribavi-ip-adresa-gugl-.html",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T15:45:16+00:00",
-      "time": "15:45",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "evropa-org-a-crna-gora-spajic-hibridne-pretnje-33841940-html",
       "title": "Premijer Crne Gore: Sprema se hibridno delovanje za destabilizaciju zemlje uz učešće dve države regiona",
       "url": "https://www.slobodnaevropa.org/a/crna-gora-spajic-hibridne-pretnje/33841940.html",
@@ -391,6 +405,20 @@
       "breaking": false,
       "alert": true,
       "priority": 60
+    },
+    {
+      "id": "ti-politika-agencija-sprecavanje-korupcije-poziv-posmatraci-",
+      "title": "Agencija za sprečavanje korupcije objavila poziv za prijavljivanje kandidata za posmatrače za izborne kampanje",
+      "url": "https://www.danas.rs/vesti/politika/agencija-sprecavanje-korupcije-poziv-posmatraci/",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T07:24:56+00:00",
+      "time": "07:24",
+      "source": "Danas",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "-je-pokazala-kako-drzava-moze-da-ocisti-fudbal-od-korupcije-",
@@ -433,6 +461,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "vorska-kazna-koja-preti-bivsem-menadzeru-jale-i-bube-bh3mtl4",
+      "title": "OVO JE ZATVORSKA KAZNA KOJA PRETI BIVŠEM MENADŽERU JALE I BUBE Oglasila se advokatica: \"Bili su pretresi na više lokacija u objektima\"",
+      "url": "https://www.blic.rs/zabava/ovo-je-zatvorska-kazna-koja-preti-bivsem-menadzeru-jale-i-bube/bh3mtl4",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T05:50:00+00:00",
+      "time": "05:50",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "tika-240049-kakav-je-odnos-prema-ratku-mladicu-u-srbiji-vest",
@@ -505,34 +547,6 @@
       "priority": 25
     },
     {
-      "id": "-de-nirom-danas-stigao-na-netfliks-kritika-podeljena-rdp33ph",
-      "title": "PODELJENE KRITIKE Triler \"The Whisper Man\" sa Robertom de Nirom danas stigao na Netfliks: Jednima odličan, drugima predvidiv",
-      "url": "https://www.blic.rs/kultura/the-whisper-man-sa-robertom-de-nirom-danas-stigao-na-netfliks-kritika-podeljena/rdp33ph",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T17:00:00+00:00",
-      "time": "17:00",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "r-takmicenje-policija-studenti-pobeda-srbija-budimpesta-html",
-      "title": "Студенти Криминалистичко-полицијског универзитета освојили прво место на такмичењу у Будимпешти",
-      "url": "https://www.rts.rs/vesti/drustvo/6028553/somorjai-gabor-takmicenje-policija-studenti-pobeda-srbija-budimpesta.html",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T16:38:13+00:00",
-      "time": "16:38",
-      "source": "RTS",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "njiceni-za-velike-hakerske-napade-na-fss-i-rfzo-zadrzan-vest",
       "title": "Osumnjičeni za velike hakerske napade na FSS i RFZO \"iza rešetaka\": Oglasilo se VJT u Beogradu",
       "url": "https://www.euronews.rs/srbija/aktuelno/240073/osumnjiceni-za-velike-hakerske-napade-na-fss-i-rfzo-zadrzan/vest",
@@ -589,18 +603,18 @@
       "priority": 22
     },
     {
-      "id": "kradja-u-becu-ukradena-ogrlica-egipatske-kraljice-nazli-vest",
-      "title": "Filmska krađa u Beču: Lopovi čekićem razbili vitrinu i odneli ogrlicu vrednu 4,3 miliona dolara",
-      "url": "https://www.b92.net/zivot/aktuelno/262732/filmska-kradja-u-becu-ukradena-ogrlica-egipatske-kraljice-nazli/vest",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T21:40:00+00:00",
-      "time": "21:40",
+      "id": "i-u-grcku-ulozili-28-miliona-evra-uglavnom-u-nekretnine-vest",
+      "title": "Srbi u Grčku uložili 28 miliona evra: Uglavnom u nekretnine",
+      "url": "https://www.b92.net/biz/svet/vesti/262745/srbi-u-grcku-ulozili-28-miliona-evra-uglavnom-u-nekretnine/vest",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T06:58:00+00:00",
+      "time": "06:58",
       "source": "B92",
-      "category": "Полиција",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 12
+      "priority": 8
     },
     {
       "id": "ali-ne-od-pevanja-ima-dve-firme-a-ovolike-plate-daje-h38x08g",
@@ -615,6 +629,48 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "obracaja-u-kragujevcu-policija-dronom-otkrila-teze-prekrsaje",
+      "title": "POLICIJA KRENULA U LOV NA NESAVESNE VOZAČE: Dron snimao saobraćaj u Kragujevcu, otkriveno više teških prekršaja",
+      "url": "https://www.kurir.rs/crna-hronika/10089660/pojacana-kontrola-saobracaja-u-kragujevcu-policija-dronom-otkrila-teze-prekrsaje",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T06:54:43+00:00",
+      "time": "06:54",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "vot-policija-u-novom-sadu-zatekla-scenu-iz-najcrnjih-8p0q13t",
+      "title": "RITUALNO \"POVELI DECU\" U VEČNI ŽIVOT?! Policija zatekla scenu iz najcrnjih horor filmova, Martina i Lav ubili mališane: Misterija slučaja DVOSTRUKOG ČEDOMORSTVA I SAMOUBISTVA u Novom Sadu i dalje potresa javnost",
+      "url": "https://www.blic.rs/vesti/hronika/ritualno-poveli-decu-u-vecni-zivot-policija-u-novom-sadu-zatekla-scenu-iz-najcrnjih/8p0q13t",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T04:58:00+00:00",
+      "time": "04:58",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "ronadjeno-vise-od-1-000-kubika-bespravno-posecene-drvne-mase",
+      "title": "NEZAKONITO NASEKLI VIŠE OD 1.000 KUBIKA DRVA: Policija istražuje ko je devastirao šume kod Berana (FOTO)",
+      "url": "https://www.kurir.rs/region/crna-gora/10088818/na-jelovici-kod-berana-pronadjeno-vise-od-1-000-kubika-bespravno-posecene-drvne-mase",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T02:00:00+00:00",
+      "time": "02:00",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "pljevljima-vozio-sa-244-promila-alkohola-bez-vozacke-f3sl7t9",
@@ -643,62 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "-na-putevima-srbije-vozaci-uhvaceni-a-da-ni-ne-znaju-8nj95tm",
-      "title": "U TOKU JE NOVA AKCIJA POLICIJE NA PUTEVIMA SRBIJE! Vozači uhvaćeni u prekršaju, a da to i NE ZNAJU: Ovo je novi trik koji MUP koristi",
-      "url": "https://www.blic.rs/vesti/drustvo/u-toku-nova-akcija-mup-na-putevima-srbije-vozaci-uhvaceni-a-da-ni-ne-znaju/8nj95tm",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T20:34:39+00:00",
-      "time": "20:34",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "os-buzaki-potvrdio-da-je-bezbedan-nakon-prijave-da-je-nestao",
-      "title": "MISTERIJA REŠENA! Fudbaler nestao, policija ga tražila, a on se sada oglasio - evo kroz šta je prolazio",
-      "url": "https://www.kurir.rs/sport/fudbal/10089471/akos-buzaki-potvrdio-da-je-bezbedan-nakon-prijave-da-je-nestao",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T17:31:53+00:00",
-      "time": "17:31",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "vacka-policija-pronasla-laboratoriju-za-uzgoj-marihuane-vest",
-      "title": "Pančevačka policija pronašla laboratoriju za uzgoj marihuane i uhapsila muškarca (FOTO)",
-      "url": "https://www.euronews.rs/srbija/aktuelno/240130/pancevacka-policija-pronasla-laboratoriju-za-uzgoj-marihuane/vest",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T14:51:00+00:00",
-      "time": "14:51",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "lazu-u-svajcarskoj-zatvoren-auto-put-stala-zeleznica-jm9fv23",
-      "title": "ZATVOREN AUTO-PUT, STALA ŽELEZNICA Veliki požar u Švajcarskoj: Na terenu interveniše 90 vatrogasaca sa 20 vozila",
-      "url": "https://www.blic.rs/vesti/svet/pozar-u-preduzecu-za-reciklazu-u-svajcarskoj-zatvoren-auto-put-stala-zeleznica/jm9fv23",
-      "date": "2026-08-28",
-      "datetime": "2026-08-28T22:59:00+00:00",
-      "time": "22:59",
-      "source": "Blic",
-      "category": "Лишени слободе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
