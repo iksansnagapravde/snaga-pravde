@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "bracajnom-incidentu-u-nisu-a-napadac-brzinom-akcijom-uhapsen",
+      "title": "KRVAVI OBRAČUN ZBOG SAOBRAĆAJA U NIŠU! Posle svađe potegao nož na starijeg čoveka, pa pobegao: Napadač ekspresno uhapšen, povređeni hitno prevezen u UKC!",
+      "url": "https://www.kurir.rs/crna-hronika/10090266/muskarac-izboden-u-saobracajnom-incidentu-u-nisu-a-napadac-brzinom-akcijom-uhapsen",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T19:31:19+00:00",
+      "time": "19:31",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": true,
+      "alert": true,
+      "priority": 192
+    },
+    {
       "id": "pstina-srbije-nastavlja-raspravu-o-zakonu-svoj-na-svome-vest",
       "title": "Poslanici raspravljaju po amandmanima na izmene zakona \"svoj na svome\"",
       "url": "https://www.euronews.rs/srbija/politika/240144/skupstina-srbije-nastavlja-raspravu-o-zakonu-svoj-na-svome/vest",
@@ -57,20 +71,6 @@
       "priority": 95
     },
     {
-      "id": "0-blokader-uhapsen-zbog-napada-cekicem-na-gradane-i-policiju",
-      "title": "Блокадер ухапшен због напада чекићем на грађане и полицију",
-      "url": "https://www.politika.rs/scc/clanak/781760/blokader-uhapsen-zbog-napada-cekicem-na-gradane-i-policiju",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T18:36:00+00:00",
-      "time": "18:36",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "6-nis-muskarac-65-uboden-nakon-nesporazuma-u-saobracaju-vest",
       "title": "Muškarac uboden u Nišu nakon nesporazuma u saobraćaju, napadač uhapšen",
       "url": "https://www.euronews.rs/srbija/aktuelno/240276/nis-muskarac-65-uboden-nakon-nesporazuma-u-saobracaju/vest",
@@ -78,6 +78,20 @@
       "datetime": "2026-08-29T18:15:00+00:00",
       "time": "18:15",
       "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "0090199-blokader-napao-aktiviste-sns-a-cekicem-odmah-uhapsen",
+      "title": "(VIDEO) BLOKADER ČEKIĆEM NAPAO AKTIVISTE SNS I POLICIJU Horor u Užicu, uhapšen munjevitom akcijom policije! OVAKO SE ONI BORE ZA NAROD I DRŽAVU",
+      "url": "https://www.kurir.rs/vesti/politika/10090199/blokader-napao-aktiviste-sns-a-cekicem-odmah-uhapsen",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T18:08:10+00:00",
+      "time": "18:08",
+      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -99,12 +113,12 @@
       "priority": 92
     },
     {
-      "id": "o-stojkovic-uhapsen-u-splitu-zbog-tetovaze-draze-mihailovica",
-      "title": "SRPSKI INFLUENSER UHAPŠEN U SPLITU! Sve se odigralo zbog tetovaže Draže Mihailovića, evo šta mu sleduje",
-      "url": "https://www.kurir.rs/stars/10089983/influenser-marko-stojkovic-uhapsen-u-splitu-zbog-tetovaze-draze-mihailovica",
+      "id": "-vjt-u-beogradu-uhapsena-trojica-otmicara-stranih-drzavljana",
+      "title": "SAZNAJEMO: Po nalogu VJT u Beogradu uhapšena trojica otmičara stranih državljana",
+      "url": "https://www.kurir.rs/crna-hronika/10090098/po-nalogu-vjt-u-beogradu-uhapsena-trojica-otmicara-stranih-drzavljana",
       "date": "2026-08-29",
-      "datetime": "2026-08-29T13:43:05+00:00",
-      "time": "13:43",
+      "datetime": "2026-08-29T15:48:25+00:00",
+      "time": "15:48",
       "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
@@ -281,6 +295,20 @@
       "priority": 70
     },
     {
+      "id": "-osumnjicenom-za-fising-i-napade-na-banke-preti-pritvor-vest",
+      "title": "Tužilaštvo u Beogradu traži pritvor za osumnjičenog za pripremu fišinga i hakerskih napada",
+      "url": "https://www.euronews.rs/srbija/aktuelno/240274/osumnjicenom-za-fising-i-napade-na-banke-preti-pritvor/vest",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T20:50:00+00:00",
+      "time": "20:50",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "-osumnjicenog-za-pripremu-fisinga-i-hakerskih-napada-ver2tz4",
       "title": "NA METI BILE I BANKE Tužilaštvo traži pritvor za osumnjičenog za pripremu fišinga i hakerskih napada",
       "url": "https://www.blic.rs/vesti/hronika/tuzilastvo-trazi-pritvor-za-osumnjicenog-za-pripremu-fisinga-i-hakerskih-napada/ver2tz4",
@@ -316,20 +344,6 @@
       "datetime": "2026-08-29T13:58:24+00:00",
       "time": "13:58",
       "source": "N1",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "ww-danas-rs-vesti-drustvo-pritvor-zbog-hakovanja-fss-i-rfzo-",
-      "title": "Pritvor zbog hakovanja FSS i RFZO",
-      "url": "https://www.danas.rs/vesti/drustvo/pritvor-zbog-hakovanja-fss-i-rfzo/",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T13:56:21+00:00",
-      "time": "13:56",
-      "source": "Danas",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -435,20 +449,6 @@
       "priority": 28
     },
     {
-      "id": "dama-zloupotrebe-dece-protiv-srpske-policije-i-gradjana-vest",
-      "title": "Nije ih džabe podržao Kurti: Blokaderi metodama zloupotrebe dece protiv srpske policije i građana",
-      "url": "https://www.b92.net/info/politika/263136/nije-ih-dzabe-podrzao-kurti-blokaderi-metodama-zloupotrebe-dece-protiv-srpske-policije-i-gradjana/vest",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T19:40:00+00:00",
-      "time": "19:40",
-      "source": "B92",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "ka-po-srbiji-funkcioneri-u-160-poseta-za-cetiri-i-po-meseca-",
       "title": "MAPA SNS obilazaka po Srbiji: Funkcioneri u 160 poseta za četiri i po meseca",
       "url": "https://www.cins.rs/mapa-sns-obilazaka-po-srbiji-funkcioneri-u-160-poseta-za-cetiri-i-po-meseca/",
@@ -489,6 +489,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "jen-u-surcinu-suprugu-izresetao-po-nogama-bio-u-bekstvu-vest",
+      "title": "Ubistvo u Surčinu; Elek odavno poznat policiji: Suprugu izrešetao po nogama, bio u bekstvu",
+      "url": "https://www.b92.net/info/hronika/263155/novica-elek-ubijen-u-surcinu-suprugu-izresetao-po-nogama-bio-u-bekstvu/vest",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T21:51:00+00:00",
+      "time": "21:51",
+      "source": "B92",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "evropa-org-a-kosovo-eu-sudije-srpska-zajednica-33842707-html",
@@ -589,20 +603,6 @@
       "priority": 8
     },
     {
-      "id": "0089968-Trampova-administracija-nabavlja-robotske-pse-za-ICE",
-      "title": "NAJLUĐA IDEJA DO SADA! Tramp šalje ROBOTSKE PSE na ulice Amerike: ICE sprema milione za mašine iz budućnosti",
-      "url": "https://www.kurir.rs/planeta/10089968/Trampova-administracija-nabavlja-robotske-pse-za-ICE",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T13:16:00+00:00",
-      "time": "13:16",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
       "id": "litika-240214-prvi-ugovori-za-fabriku-baterija-u-indiji-vest",
       "title": "Vučić najavio prve ugovore za fabriku baterija u Inđiji: Investicija 100,5 miliona evra",
       "url": "https://www.euronews.rs/srbija/politika/240214/prvi-ugovori-za-fabriku-baterija-u-indiji/vest",
@@ -615,6 +615,34 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "a-opsadno-stanje-u-surcinu-gde-je-ubijen-novica-elek-g360k0f",
+      "title": "(FOTO, VIDEO) OPSADNO STANJE U SURČINU, SVE VRVI OD POLICIJE Prvi snimci sa mesta likvidacije Novice Eleka: Ulica blokirana, traga se za ubicom",
+      "url": "https://www.blic.rs/vesti/hronika/prvi-snimak-sa-lica-mesta-opsadno-stanje-u-surcinu-gde-je-ubijen-novica-elek/g360k0f",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T20:42:26+00:00",
+      "time": "20:42",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "-ulice-u-surcinu-upucan-u-glavu-ubica-nosio-hirurske-nhc0pv8",
+      "title": "NOVICA ELEK UBIJEN NASRED ULICE Filmska sačekuša u Surčinu, ispaljen mu metak u slepoočnicu: Policija odmah pokrenula akciju Vihor",
+      "url": "https://www.blic.rs/vesti/hronika/novica-elek-ubijen-nasred-ulice-u-surcinu-upucan-u-glavu-ubica-nosio-hirurske/nhc0pv8",
+      "date": "2026-08-29",
+      "datetime": "2026-08-29T20:00:09+00:00",
+      "time": "20:00",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "red-nezabelezenim-nasiljem-vucic-nije-spreman-za-fer-izbore-",
@@ -666,34 +694,6 @@
       "datetime": "2026-08-29T17:42:02+00:00",
       "time": "17:42",
       "source": "Vreme",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "uzicu-i-nakon-mitinga-sns-policija-razdvaja-dve-grupe-video-",
-      "title": "Napeto u Užicu i nakon mitinga SNS: Policija razdvaja dve grupe VIDEO",
-      "url": "https://nova.rs/vesti/politika/napeto-u-uzicu-i-nakon-mitinga-sns-policija-razdvaja-dve-grupe-video/",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T17:31:42+00:00",
-      "time": "17:31",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "ed-miting-sns-a-policija-potiskuje-gradjane-doslo-i-do-tuce-",
-      "title": "Miting naprednjaka u Užicu završen Vučićevim govorom: Policija i nakon skupa razdvajala pristalice SNS-a i građane koji protestuju",
-      "url": "https://www.danas.rs/vesti/drustvo/neredi-u-uzicu-pred-miting-sns-a-policija-potiskuje-gradjane-doslo-i-do-tuce/",
-      "date": "2026-08-29",
-      "datetime": "2026-08-29T17:25:11+00:00",
-      "time": "17:25",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
