@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 17000000.0,
+    "lowest": 9202.0,
+    "difference": 16990798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 5573234.2,
+    "lowest": 1920.0,
+    "difference": 5571314.2,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101521973,
+    "file": "documents/101521973_Odluka o dodeli 2-Partija 2.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 700000.0,
     "lowest": 9202.0,
     "difference": 690798.0,
@@ -64,27 +86,5 @@
     "rejection_reasons": [],
     "id": 100106290,
     "file": "documents/100106290_Odluka o dodeli ugovora Partija 1.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 180000000.0,
-    "lowest": 1920.0,
-    "difference": 179998080.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109190905,
-    "file": "documents/109190905_Odluka Tep 1333.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 32400.0,
-    "lowest": 1202.0,
-    "difference": 31198.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 166373,
-    "file": "documents/166373_564-1-O-195.pdf"
   }
 ]
