@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 4899960.0,
+    "lowest": 8202.0,
+    "difference": 4891758.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100182799,
+    "file": "documents/100182799_ODLUKA O DODELI UGOVORA - MUZEJSKO SNABDEVANJE DOO - VAKUUM STO ZA KONZERVACIJU_0001.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 6394355.73,
     "lowest": 9202.0,
     "difference": 6385153.73,
