@@ -71,32 +71,18 @@
       "priority": 100
     },
     {
-      "id": "r-nova-rs-politika-vukasin-vujicic-tuzilac-valjevo-intervju-",
-      "title": "Napad na mene je upozorenje svim tužiocima koji rade po zakonu i savesti",
-      "url": "https://radar.nova.rs/politika/vukasin-vujicic-tuzilac-valjevo-intervju/",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Људска права",
+      "id": "ir-rs-crna-hronika-10093845-kraljevcanin-uhapsen-zbog-pozara",
+      "title": "KRALJEVČANIN (52) UHAPŠEN ZBOG IZAZIVANJA POŽARA: Išao po gradu i palio kontejnere, vatra se širila na okolne automobile",
+      "url": "https://www.kurir.rs/crna-hronika/10093845/kraljevcanin-uhapsen-zbog-pozara",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T22:51:00+00:00",
+      "time": "22:51",
+      "source": "Kurir",
+      "category": "Хапшења",
       "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "ar-nova-rs-drustvo-novi-radar-valjevo-elbit-beograd-na-vodi-",
-      "title": "Tužilac iz Valjeva za novi Radar o paljenju kola i medijskom linču: Ovo je upozorenje",
-      "url": "https://radar.nova.rs/drustvo/novi-radar-valjevo-elbit-beograd-na-vodi/",
-      "date": "2026-08-26",
-      "datetime": "2026-08-26T17:00:00+00:00",
-      "time": "17:00",
-      "source": "Radar",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "no-240934-u-kraljevu-uhapsen-osumnjiceni-za-vise-pozara-vest",
@@ -120,20 +106,6 @@
       "datetime": "2026-09-02T19:56:02+00:00",
       "time": "19:56",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "-uhapsen-osumnjiceni-u-kraljevu-za-namerno-izazivanje-pozara",
-      "title": "Ухапшен осумњичени у Краљеву за намерно изазивање пожара",
-      "url": "https://www.politika.rs/scc/clanak/782716/uhapsen-osumnjiceni-u-kraljevu-za-namerno-izazivanje-pozara",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T19:39:00+00:00",
-      "time": "19:39",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -176,20 +148,6 @@
       "datetime": "2026-09-02T16:16:00+00:00",
       "time": "16:16",
       "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "koj-mitrovici-zaplenjeno-vise-od-200-kilograma-droge-pyplx40",
-      "title": "(FOTO) ZAPLENJENO VIŠE OD 200 KILOGRAMA DROGE! Velika akcija specijalaca u Sremskoj Mitrovici: Neki paketi označeni slikom ANANASA, uhapšen mladić (28)",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-muskarac-u-sremskoj-mitrovici-zaplenjeno-vise-od-200-kilograma-droge/pyplx40",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T15:57:09+00:00",
-      "time": "15:57",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -309,6 +267,20 @@
       "priority": 72
     },
     {
+      "id": "vek-koji-je-izazivao-pozare-paljenjem-kontejnera-u-kraljevu-",
+      "title": "Uhapšen čovek koji je izazivao požare paljenjem kontejnera u Kraljevu",
+      "url": "https://nova.rs/vesti/hronika/uhapsen-covek-koji-je-izazivao-pozare-paljenjem-kontejnera-u-kraljevu/",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T21:54:54+00:00",
+      "time": "21:54",
+      "source": "Nova",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
       "id": "ttps-www-rts-rs-vesti-hronika-6031409-hapsenje-kraljevo-html",
       "title": "Ухапшен мушкарац у Краљеву осумњичен за намерно изазивање пожара",
       "url": "https://www.rts.rs/vesti/hronika/6031409/hapsenje-kraljevo.html",
@@ -344,34 +316,6 @@
       "datetime": "2026-09-02T16:30:42+00:00",
       "time": "16:30",
       "source": "RTS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-sremskoj-mitrovici-zbog-vise-od-200-kilograma-droge-x941jqt",
-      "title": "(VIDEO) IZVUKLI GA IZ BMW-A I BACILI NA ASFALT Ovako je uhapšen mladić u Sremskoj Mitrovici zbog više od 200 kilograma droge: Šokantni prizori zatečeni u njegovom stanu",
-      "url": "https://www.blic.rs/vesti/hronika/snimak-hapsenja-mladica-u-sremskoj-mitrovici-zbog-vise-od-200-kilograma-droge/x941jqt",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T16:29:32+00:00",
-      "time": "16:29",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "o-vise-od-200-kilograma-razlicitih-droga-pretezno-marihuane-",
-      "title": "MUP: Zaplenjeno više od 200 kilograma različitih droga, pretežno marihuane",
-      "url": "https://www.danas.rs/vesti/drustvo/mup-zaplenjeno-vise-od-200-kilograma-razlicitih-droga-pretezno-marihuane/",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T16:26:26+00:00",
-      "time": "16:26",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -435,6 +379,20 @@
       "priority": 70
     },
     {
+      "id": "io-se-kao-nevin-tuzilastvo-moze-da-trazi-pogubljenje-z5w9t2f",
+      "title": "OPTUŽENI ZA UBISTVO ČARLIJA KIRKA IZJASNIO SE DA NIJE KRIV Tužilaštvo može da traži pogubljenje",
+      "url": "https://www.blic.rs/vesti/svet/optuzeni-za-ubistvo-kirka-izjasnio-se-kao-nevin-tuzilastvo-moze-da-trazi-pogubljenje/z5w9t2f",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "c-na-rejvu-ispalio-40-metaka-moguce-da-ima-psihicke-probleme",
       "title": "Швајцарско тужилаштво: нападач на рејву испалио 40 метака, могуће да има психичке проблеме",
       "url": "https://www.politika.rs/scc/clanak/782721/svajcarsko-tuzilastvo-napadac-na-rejvu-ispalio-40-metaka-moguce-da-ima-psihicke-probleme",
@@ -489,6 +447,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "gubila-na-durmitoru-odmah-na-teren-stigli-vatrogasci-zm4sq0f",
+      "title": "AMERIKANKA SE USRED NOĆI IZGUBILA NA DURMITORU Odmah na teren stigli vatrogasci-spasioci: Evo kako je izgledala akcija spavanja",
+      "url": "https://www.blic.rs/vesti/drustvo/amerikanka-se-usred-noci-izgubila-na-durmitoru-odmah-na-teren-stigli-vatrogasci/zm4sq0f",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T22:21:00+00:00",
+      "time": "22:21",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "erikanka-se-usred-noci-izgubila-na-Durmitoru-spasena-uzadima",
@@ -547,20 +519,6 @@
       "priority": 60
     },
     {
-      "id": "kast-otkrio-ko-je-gost-prve-epizode-i-kad-se-emituje-0sjnr5y",
-      "title": "(VIDEO) VUČIĆ POKRENUO PODKAST Otkrio kako će se zvati, gost prve epizode proslavljeni trener, a evo kada će biti emitovan",
-      "url": "https://www.blic.rs/vesti/politika/vucic-pokrenuo-podkast-otkrio-ko-je-gost-prve-epizode-i-kad-se-emituje/0sjnr5y",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T16:38:30+00:00",
-      "time": "16:38",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "-radar-nova-rs-global-sad-tramp-albanija-korupcija-protesti-",
       "title": "Ko s Trampom leže…",
       "url": "https://radar.nova.rs/global/sad-tramp-albanija-korupcija-protesti/",
@@ -589,20 +547,6 @@
       "priority": 30
     },
     {
-      "id": "i-postare-da-skupljaju-podatke-a-njegovu-akciju-placamo-svi-",
-      "title": "Kupovina glasova pod maskom brige: Vučić ponovo zloupotrebljava podatke penzionera, koristi poštare da skupljaju podatke, a njegovu \"akciju\" plaćamo svi",
-      "url": "https://nova.rs/vesti/politika/kupovina-glasova-pod-maskom-brige-vucic-ponovo-zloupotrebljava-podatke-penzionera-koristi-postare-da-skupljaju-podatke-a-njegovu-akciju-placamo-svi/",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T16:14:09+00:00",
-      "time": "16:14",
-      "source": "Nova",
-      "category": "Злоупотребе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "ka-po-srbiji-funkcioneri-u-160-poseta-za-cetiri-i-po-meseca-",
       "title": "MAPA SNS obilazaka po Srbiji: Funkcioneri u 160 poseta za četiri i po meseca",
       "url": "https://www.cins.rs/mapa-sns-obilazaka-po-srbiji-funkcioneri-u-160-poseta-za-cetiri-i-po-meseca/",
@@ -615,6 +559,34 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "bhrt-nece-pratiti-predizbornu-kampanju-ni-oktobarske-izbore-",
+      "title": "Zbog blokade računa BHRT neće pratiti predizbornu kampanju ni oktobarske izbore",
+      "url": "https://nova.rs/vesti/svet/zbog-blokade-racuna-bhrt-nece-pratiti-predizbornu-kampanju-ni-oktobarske-izbore/",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T22:16:08+00:00",
+      "time": "22:16",
+      "source": "Nova",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "bhrt-nece-pratiti-predizbornu-kampanju-ni-oktobarske-izbore-",
+      "title": "Zbog blokade računa BHRT neće pratiti predizbornu kampanju ni oktobarske izbore",
+      "url": "https://n1info.rs/region/zbog-blokade-racuna-bhrt-nece-pratiti-predizbornu-kampanju-ni-oktobarske-izbore/",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T21:42:49+00:00",
+      "time": "21:42",
+      "source": "N1",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "https-www-rts-rs-vesti-politika-6031159-kim-sudije-html",
@@ -673,20 +645,6 @@
       "priority": 24
     },
     {
-      "id": "i-da-li-grad-keln-stiti-kriminalce-od-deportacija-na-balkan-",
-      "title": "Nemački mediji: Da li grad Keln štiti kriminalce od deportacija na Balkan?",
-      "url": "https://n1info.rs/svet/nemacki-mediji-da-li-grad-keln-stiti-kriminalce-od-deportacija-na-balkan/",
-      "date": "2026-09-02",
-      "datetime": "2026-09-02T16:07:53+00:00",
-      "time": "16:07",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "625-gsp-beograd-raspisao-tender-za-kupovinu-85-tramvaja-vest",
       "title": "Beograd nabavlja 85 novih tramvaja, tender otvoren za svetske proizvođače",
       "url": "https://www.euronews.rs/srbija/drustvo/240625/gsp-beograd-raspisao-tender-za-kupovinu-85-tramvaja/vest",
@@ -699,6 +657,48 @@
       "breaking": false,
       "alert": false,
       "priority": 24
+    },
+    {
+      "id": "la-kliperse-sa-30-miliona-dolara-a-lenarda-sa-700-000-dolara",
+      "title": "NBA liga kaznila LA Kliperse sa 30 miliona dolara, a Lenarda sa 700.000 dolara",
+      "url": "https://beta.rs/content/251336-nba-liga-kaznila-la-kliperse-sa-30-miliona-dolara-a-lenarda-sa-700-000-dolara",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T21:30:08+00:00",
+      "time": "21:30",
+      "source": "Beta",
+      "category": "Плате и зараде",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "obodnaevropa-org-a-uvid-ratko-mladic-velicanje-33845499-html",
+      "title": "Činjenice na sudovima dokazane, Ratko Mladić se glorifikuje. Zašto?",
+      "url": "https://www.slobodnaevropa.org/a/uvid-ratko-mladic-velicanje/33845499.html",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T11:30:34+00:00",
+      "time": "11:30",
+      "source": "RSE Balkan",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "nak-782727-masovni-protesti-sirom-spanije-zbog-krize-u-seuti",
+      "title": "Масовни протести широм Шпаније због кризе у Сеути",
+      "url": "https://www.politika.rs/scc/clanak/782727/masovni-protesti-sirom-spanije-zbog-krize-u-seuti",
+      "date": "2026-09-02",
+      "datetime": "2026-09-02T20:58:00+00:00",
+      "time": "20:58",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
