@@ -1,112 +1,68 @@
 [
   {
     "winner": null,
-    "accepted": 4899960.0,
+    "accepted": 30444.0,
+    "lowest": 2202.0,
+    "difference": 28242.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100352949,
+    "file": "documents/100352949_945 O-181.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
     "lowest": 8202.0,
-    "difference": 4891758.0,
+    "difference": 399991798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100182799,
-    "file": "documents/100182799_ODLUKA O DODELI UGOVORA - MUZEJSKO SNABDEVANJE DOO - VAKUUM STO ZA KONZERVACIJU_0001.pdf"
+    "id": 100548995,
+    "file": "documents/100548995_Odluka o dodeli JN broj 131.pdf"
   },
   {
     "winner": null,
-    "accepted": 6394355.73,
-    "lowest": 9202.0,
-    "difference": 6385153.73,
+    "accepted": 400000.0,
+    "lowest": 1569.0,
+    "difference": 398431.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102547430,
-    "file": "documents/102547430_Odluka o dodeli ugovora.docx"
+    "id": 104165607,
+    "file": "documents/104165607_Odluka_JN 450.pdf"
   },
   {
     "winner": null,
-    "accepted": 17000000.0,
-    "lowest": 9202.0,
-    "difference": 16990798.0,
+    "accepted": 77683.79,
+    "lowest": 8202.0,
+    "difference": 69481.79,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
+    "id": 108153855,
+    "file": "documents/108153855_250 O-95.pdf"
   },
   {
     "winner": null,
-    "accepted": 5573234.2,
-    "lowest": 1920.0,
-    "difference": 5571314.2,
+    "accepted": 180000.0,
+    "lowest": 7321.0,
+    "difference": 172679.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101521973,
-    "file": "documents/101521973_Odluka o dodeli 2-Partija 2.pdf"
+    "id": 107392312,
+    "file": "documents/107392312_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 700000.0,
-    "lowest": 9202.0,
-    "difference": 690798.0,
+    "accepted": 153642.12,
+    "lowest": 8202.0,
+    "difference": 145440.12,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 115832419,
-    "file": "documents/115832419_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1700000.0,
-    "lowest": 9202.0,
-    "difference": 1690798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 113199243,
-    "file": "documents/113199243_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 6546500.0,
-    "lowest": 2211.0,
-    "difference": 6544289.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105561258,
-    "file": "documents/105561258_Odluka o dodeli ugovora JN 2-26-OP.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 10000000.0,
-    "lowest": 9202.0,
-    "difference": 9990798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104217668,
-    "file": "documents/104217668_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 25920000.0,
-    "lowest": 1127.0,
-    "difference": 25918873.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100618836,
-    "file": "documents/100618836_Odluka o dodeli ugovora - Bankarske usluge  JN JANA 1183-2026.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 25000000.0,
-    "lowest": 6202.0,
-    "difference": 24993798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100106290,
-    "file": "documents/100106290_Odluka o dodeli ugovora Partija 1.pdf"
+    "id": 104646704,
+    "file": "documents/104646704_248 O-95.pdf"
   }
 ]
