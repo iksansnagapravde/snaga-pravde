@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 1857500.0,
+    "lowest": 2000.0,
+    "difference": 1855500.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110068718,
+    "file": "documents/110068718_Odluka o dodeli ugovora i obustavi postupka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1857500.0,
+    "lowest": 2000.0,
+    "difference": 1855500.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106001296,
+    "file": "documents/106001296_Odluka o dodeli ugovora i obustavi postupka.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 479820.0,
     "lowest": 9202.0,
     "difference": 470618.0,
@@ -86,27 +108,5 @@
     "rejection_reasons": [],
     "id": 100454087,
     "file": "documents/100454087_Odluka  o dodeli narudzbenice 5486.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 8718005.24,
-    "lowest": 5174.0,
-    "difference": 8712831.24,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101633677,
-    "file": "documents/101633677_Odluka o dodeli 50-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 32850.0,
-    "lowest": 3202.0,
-    "difference": 29648.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100579471,
-    "file": "documents/100579471_O 561 1 26 Odluka o dodeli ugovora JN 26 26_0001.pdf"
   }
 ]
