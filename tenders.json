@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 6400000.0,
+    "lowest": 1496.0,
+    "difference": 6398504.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 115025398,
+    "file": "documents/115025398_Odluka o dodeli ugovora nadzor KPC.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 70158400.0,
     "lowest": 7202.0,
     "difference": 70151198.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 109793855,
     "file": "documents/109793855_odluka o dodeli ugovora 2.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 25788000.0,
-    "lowest": 6100.0,
-    "difference": 25781900.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100575556,
-    "file": "documents/100575556_9. ODLUKA O DODELI UGOVORA.pdf"
   }
 ]
