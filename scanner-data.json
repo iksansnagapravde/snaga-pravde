@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "oden-muskarac-u-vitini-za-napadacem-se-i-dalje-traga-0mqgqy5",
-      "title": "MUŠKARAC IZBODEN NOŽEM , ZA NAPADAČEM SE I DALJE TRAGA Drama u Vitini: Hitno prevezen u bolnicu",
-      "url": "https://www.blic.rs/vesti/hronika/izboden-muskarac-u-vitini-za-napadacem-se-i-dalje-traga/0mqgqy5",
-      "date": "2026-09-04",
-      "datetime": "2026-09-04T16:31:29+00:00",
-      "time": "16:31",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 170
-    },
-    {
       "id": "spijuniranje-telefon-srbija-opozicija-studenti-33846451-html",
       "title": "'Ja sam žrtva Pegaza': Vlast u Srbiji pod optužbama za nezakonito špijuniranje",
       "url": "https://www.slobodnaevropa.org/a/spijuniranje-telefon-srbija-opozicija-studenti/33846451.html",
@@ -239,34 +225,6 @@
       "priority": 92
     },
     {
-      "id": "a-10095707-hrvat-uhapsen-u-curpiji-po-interpolovoj-poternici",
-      "title": "DRŽAVLJANIN HRVATSKE UHAPŠEN U ĆUPRIJI! Za njim bila raspisana Interpolova poternica - evo za šta se tereti (FOTO)",
-      "url": "https://www.kurir.rs/crna-hronika/10095707/hrvat-uhapsen-u-curpiji-po-interpolovoj-poternici",
-      "date": "2026-09-04",
-      "datetime": "2026-09-04T17:45:39+00:00",
-      "time": "17:45",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "https-www-rts-rs-vesti-region-6032488-tuzla-napad-nozem-html",
-      "title": "Ухапшена девојчица која је ножем избола две ученице у школи у Горњој Тузли",
-      "url": "https://www.rts.rs/vesti/region/6032488/tuzla-napad-nozem.html",
-      "date": "2026-09-04",
-      "datetime": "2026-09-04T17:24:25+00:00",
-      "time": "17:24",
-      "source": "RTS",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "naevropa-org-a-mladic-kos-srbija-sahrana-vujic-33846864-html",
       "title": "Vujić u odgovoru Kos: 'Srbija će obezbediti mirnu i dostojanstvenu sahranu Mladića'",
       "url": "https://www.slobodnaevropa.org/a/mladic-kos-srbija-sahrana-vujic-/33846864.html",
@@ -477,20 +435,6 @@
       "priority": 66
     },
     {
-      "id": "optuznice-za-navodne-ratne-zlocine-u-prekazu-kod-srbice-html",
-      "title": "Тужилаштво у Приштини подигло оптужнице за наводне ратне злочине у Преказу код Србице",
-      "url": "https://www.rts.rs/vesti/politika/6032524/tuzilastvo-u-pristini-podiglo-optuznice-za-navodne-ratne-zlocine-u-prekazu-kod-srbice.html",
-      "date": "2026-09-04",
-      "datetime": "2026-09-04T12:29:26+00:00",
-      "time": "12:29",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
       "id": "241083-vjt-pokrenulo-istragu-za-tesko-ubistvo-u-surcinu-vest",
       "title": "Pokrenuta istraga za teško ubistvo u Surčinu: Tužilaštvo traži pritvor za osumnjičene",
       "url": "https://www.euronews.rs/srbija/aktuelno/241083/vjt-pokrenulo-istragu-za-tesko-ubistvo-u-surcinu/vest",
@@ -506,8 +450,8 @@
     },
     {
       "id": "va-s-nece-vise-emitovati-kesica-nove-gazde-kazu-da-je-skupo-",
-      "title": "Nova S neće više emitovati Kesića, nove gazde kažu da je skupo",
-      "url": "https://vreme.com/dodatno/nova-s-nece-vise-emitovati-kesica-nove-gazde-kazu-da-je-skupo/",
+      "title": "TV Nova S neće više emitovati Kesića, nove gazde kažu da im je preskup",
+      "url": "https://vreme.com/drustvo/nova-s-nece-vise-emitovati-kesica-nove-gazde-kazu-da-je-skupo/",
       "date": "2026-09-04",
       "datetime": "2026-09-04T20:44:06+00:00",
       "time": "20:44",
@@ -699,6 +643,62 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "tio-budzet-srbije-za-skoro-16-miliona-zavrsio-u-zatvoru-vest",
+      "title": "Oštetio budžet Srbije za skoro 16 miliona: Osuđen na zatvorsku kaznu i izrečene mu još dve mere",
+      "url": "https://www.euronews.rs/srbija/aktuelno/241216/ostetio-budzet-srbije-za-skoro-16-miliona-zavrsio-u-zatvoru/vest",
+      "date": "2026-09-04",
+      "datetime": "2026-09-04T13:25:00+00:00",
+      "time": "13:25",
+      "source": "Euronews Serbia",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "zar-u-naselju-u-kojem-zive-srbi-u-albaniji-izgorele-tri-kuce",
+      "title": "Велики пожар у насељу у којем живе Срби у Албанији, изгореле три куће",
+      "url": "https://www.politika.rs/scc/clanak/783247/veliki-pozar-u-naselju-u-kojem-zive-srbi-u-albaniji-izgorele-tri-kuce",
+      "date": "2026-09-04",
+      "datetime": "2026-09-04T21:59:00+00:00",
+      "time": "21:59",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "skarce-osumnjicenim-za-sabotaze-na-elektroenergetskoj-mrezi-",
+      "title": "Nemačka policija traga za muškarcem osumnjičenim za sabotaže na elektroenergetskoj mreži",
+      "url": "https://n1info.rs/svet/nemacka-policija-traga-za-muskarce-osumnjicenim-za-sabotaze-na-elektroenergetskoj-mrezi/",
+      "date": "2026-09-04",
+      "datetime": "2026-09-04T19:51:38+00:00",
+      "time": "19:51",
+      "source": "N1",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "uskarce-osumnjicenim-za-sabotaze-na-elektroenergetskoj-mrezi",
+      "title": "PANIKA U NEMAČKOJ: Policija traga za muškarcem osumnjičenim za sabotaže na elektroenergetskoj mreži",
+      "url": "https://www.kurir.rs/planeta/10095774/nemacka-traga-za-muskarce-osumnjicenim-za-sabotaze-na-elektroenergetskoj-mrezi",
+      "date": "2026-09-04",
+      "datetime": "2026-09-04T19:49:58+00:00",
+      "time": "19:49",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     }
   ],
   "all_sources": [
