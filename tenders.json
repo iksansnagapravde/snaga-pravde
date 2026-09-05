@@ -1,5 +1,16 @@
 [
   {
+    "winner": null,
+    "accepted": 2325600.0,
+    "lowest": 8202.0,
+    "difference": 2317398.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110141179,
+    "file": "documents/110141179_18 - Odluka o dodeli ugovora - Panteon 26.pdf"
+  },
+  {
     "winner": "RSD Ugovor se dodeljuje pr",
     "accepted": 1624723.83,
     "lowest": 6110.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 112733040,
     "file": "documents/112733040_8. Odluka o dodeli ugovora 90 26.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 8805626.0,
-    "lowest": 5157.0,
-    "difference": 8800469.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 114348919,
-    "file": "documents/114348919_nabavka radova na unapredenju0001.pdf"
   }
 ]
