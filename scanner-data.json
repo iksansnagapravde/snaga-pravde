@@ -99,20 +99,6 @@
       "priority": 92
     },
     {
-      "id": "rir-rs-crna-hronika-10096442-kinez-uhapsen-zbog-davanja-mita",
-      "title": "POKUŠAO DA PODMITI POLICAJCE: Uhapšen državljanin Kine (23)",
-      "url": "https://www.kurir.rs/crna-hronika/10096442/kinez-uhapsen-zbog-davanja-mita",
-      "date": "2026-09-05",
-      "datetime": "2026-09-05T18:40:29+00:00",
-      "time": "18:40",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "nje-da-je-ponudio-novac-sluzbeniku-uprave-granicne-policije-",
       "title": "Uhapšen kineski državljanin zbog sumnje da je ponudio novac službeniku Uprave granične policije",
       "url": "https://n1info.rs/vesti/uhapsen-kineski-drzavljanin-zbog-sumnje-da-je-ponudio-novac-sluzbeniku-uprave-granicne-policije/",
@@ -253,20 +239,6 @@
       "priority": 84
     },
     {
-      "id": "-u-zemunu-ukrao-dva-bicikla-tuzilastvo-trazi-pritvor-911v3s9",
-      "title": "SEKAO SAJLE I KRAO BICIKLE Uhapšen muškarac iz Zemuna: Tužilaštvo traži pritvor zbog opasnosti od bekstva",
-      "url": "https://www.blic.rs/vesti/hronika/p-b-37-osumnjicen-da-je-u-zemunu-ukrao-dva-bicikla-tuzilastvo-trazi-pritvor/911v3s9",
-      "date": "2026-09-05",
-      "datetime": "2026-09-05T17:40:43+00:00",
-      "time": "17:40",
-      "source": "Blic",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 72
-    },
-    {
       "id": "75-zena-iz-bih-uhapsena-u-becu-policajci-je-uhvatili-na-delu",
       "title": "BOSANKA UHAPŠENA U BEČU SA SAUČESNICOM: Policija ih gledala sa druge strane ulice u neverici, odmah im stavili lisice",
       "url": "https://www.kurir.rs/region/bosna-i-hercegovina/10095875/zena-iz-bih-uhapsena-u-becu-policajci-je-uhvatili-na-delu",
@@ -293,20 +265,6 @@
       "breaking": false,
       "alert": true,
       "priority": 66
-    },
-    {
-      "id": "p-kultura-10093165-dokumentarac-o-metjuu-periju-na-netfliksu",
-      "title": "Prvi put će biti emitovani privatni snimci: Dokumentarac o \"Čendleru\" stiže na Netfliks, progovorila sestra",
-      "url": "https://www.kurir.rs/zabava/pop-kultura/10093165/dokumentarac-o-metjuu-periju-na-netfliksu",
-      "date": "2026-09-05",
-      "datetime": "2026-09-05T18:09:00+00:00",
-      "time": "18:09",
-      "source": "Kurir",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
     },
     {
       "id": "sku-funkciju-kako-bi-zadrzao-koruptivnu-autoritativnu-vlast-",
@@ -391,6 +349,20 @@
       "breaking": false,
       "alert": false,
       "priority": 28
+    },
+    {
+      "id": "-www-kurir-rs-stars-rijaliti-10096419-uzivo-pocetak-elite-10",
+      "title": "U ELITU 10 SE USELILO 55 UČESNIKA! Hapšene starlete, deca poznatih, skandal majstori i potpuno nova lica: Ovo su SVI DETALJI ceremonije otvaranja",
+      "url": "https://www.kurir.rs/stars/rijaliti/10096419/uzivo-pocetak-elite-10",
+      "date": "2026-09-05",
+      "datetime": "2026-09-05T18:18:38+00:00",
+      "time": "18:18",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
     },
     {
       "id": "sti-hronika-6033054-marihuana-divlja-deponija-obrenovac-html",
@@ -505,20 +477,6 @@
       "priority": 4
     },
     {
-      "id": "ravnopravnost-danas-prajd-setnja-na-ulicama-beograda-lgj3n51",
-      "title": "PRAJD U BEOGRADU Četvrt veka borbe za ravnopravnost: Završena šetnja, žurka u parku Manjež, manji incident kod Narodne skupštine, intervenisala policija",
-      "url": "https://www.blic.rs/vesti/beograd/cetvrt-veka-borbe-za-ravnopravnost-danas-prajd-setnja-na-ulicama-beograda/lgj3n51",
-      "date": "2026-09-05",
-      "datetime": "2026-09-05T17:22:02+00:00",
-      "time": "17:22",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
       "id": "ova-rs-vesti-drustvo-uskoro-pocinje-prajd-setnja-u-beogradu-",
       "title": "U Beogradu završena Prajd šetnja: Manji incident kod Narodne skupštine, morala da interveniše policija",
       "url": "https://nova.rs/vesti/drustvo/uskoro-pocinje-prajd-setnja-u-beogradu/",
@@ -603,6 +561,76 @@
       "priority": 4
     },
     {
+      "id": "eti-da-paralise-eu-kremlj-se-mesa-u-izbore-u-italiji-wp55xnm",
+      "title": "PUTINOV \"TROJANSKI KONJ\" PRETI DA PARALIŠE EVROPU Glasanje u susedstvu pod opasnom senkom Moskve: Ako \"pion Kremlja\" uđe u vladu, sledi 5 TEKTONSKIH UDARA!",
+      "url": "https://www.blic.rs/vesti/svet/putinov-trojanski-konj-vanaci-preti-da-paralise-eu-kremlj-se-mesa-u-izbore-u-italiji/wp55xnm",
+      "date": "2026-09-06",
+      "datetime": "2026-09-06T04:38:00+00:00",
+      "time": "04:38",
+      "source": "Blic",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "tradicionalna-dominacija-zvezde-kako-partizan-moze-do-pobede",
+      "title": "ZASTRAŠUJUĆA TRADICIJA ZA CRNO-BELE PRED 180. VEČITI DERBI: Partizan nije pobedio Zvezdu baš dugo...",
+      "url": "https://www.kurir.rs/sport/fudbal/10096307/tradicionalna-dominacija-zvezde-kako-partizan-moze-do-pobede",
+      "date": "2026-09-06",
+      "datetime": "2026-09-06T04:32:00+00:00",
+      "time": "04:32",
+      "source": "Kurir",
+      "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ori-u-kljucnoj-pokrajini-afd-pred-istorijskom-sansom-6b2ej13",
+      "title": "NEMAČKA NA PREKRETNICI, IZBORI OD KOJIH BERLIN STRAHUJE Ekstremna desnica gazi ka istorijskoj pobedi, pada \"ZAŠTITNI ZID\"!",
+      "url": "https://www.blic.rs/vesti/svet/nemacka-na-prekretnici-poceli-izbori-u-kljucnoj-pokrajini-afd-pred-istorijskom-sansom/6b2ej13",
+      "date": "2026-09-06",
+      "datetime": "2026-09-06T04:22:00+00:00",
+      "time": "04:22",
+      "source": "Blic",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ne-u-saobracaju-sta-su-alko-brave-i-kako-funkcionisu-0c7n6yw",
+      "title": "TEKTONSKE PROMENE ZA VOZAČE Rigorozne mere stupile su u EU, Srbija sprema isto i vožnja više nikada neće biti ista: Šta su ALKO-BRAVE i kako funkcionišu",
+      "url": "https://www.blic.rs/vesti/drustvo/novine-u-saobracaju-sta-su-alko-brave-i-kako-funkcionisu/0c7n6yw",
+      "date": "2026-09-06",
+      "datetime": "2026-09-06T04:13:00+00:00",
+      "time": "04:13",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "ad-10095877-Izmena-saobracaja-na-Zvezdari-Detalji-o-radovima",
+      "title": "VAŽNA ULICA NA ZVEZDARI ZATVORENA 14 DANA: Velika izmena saobraćaja, evo do kada će trajati radovi",
+      "url": "https://www.kurir.rs/vesti/beograd/10095877/Izmena-saobracaja-na-Zvezdari-Detalji-o-radovima",
+      "date": "2026-09-06",
+      "datetime": "2026-09-06T03:00:00+00:00",
+      "time": "03:00",
+      "source": "Kurir",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "61-iranski-zvanicnik-u-egzistencijalnom-smo-ratu-sa-amerikom",
       "title": "IRANSKI ZVANIČNIK: U ''egzistencijalnom smo ratu'' sa Amerikom",
       "url": "https://www.kurir.rs/planeta/10096561/iranski-zvanicnik-u-egzistencijalnom-smo-ratu-sa-amerikom",
@@ -667,34 +695,6 @@
       "time": "21:58",
       "source": "B92",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "anski-zvanicnik-u-egzistencijalnom-smo-ratu-sa-amerikom-vest",
-      "title": "&quot;U &#039;egzistencijalnom smo ratu&#039; sa Amerikom&quot;",
-      "url": "https://www.b92.net/info/svet/265112/iranski-zvanicnik-u-egzistencijalnom-smo-ratu-sa-amerikom/vest",
-      "date": "2026-09-05",
-      "datetime": "2026-09-05T21:45:00+00:00",
-      "time": "21:45",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "cenog-tretmana-ne-razumem-unistili-ste-karijere-drugima-vest",
-      "title": "Kirjosova bivša besna zbog povlašćenog tretmana: &quot;Ne razumem, uništili ste karijere drugima&quot;",
-      "url": "https://www.b92.net/sport/tenis/vesti/265044/kirjosova-bivsa-besna-zbog-povlascenog-tretmana-ne-razumem-unistili-ste-karijere-drugima/vest",
-      "date": "2026-09-05",
-      "datetime": "2026-09-05T21:45:00+00:00",
-      "time": "21:45",
-      "source": "B92",
-      "category": "Пензионери",
       "summary": "",
       "breaking": false,
       "alert": false,
