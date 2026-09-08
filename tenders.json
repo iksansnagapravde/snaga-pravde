@@ -1,101 +1,90 @@
 [
   {
-    "winner": "DOO UNIPR",
-    "accepted": 9000.0,
-    "lowest": 1212.0,
-    "difference": 7788.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105212593,
-    "file": "documents/105212593_Odluka o dodeli ugovora.pdf"
-  },
-  {
     "winner": null,
-    "accepted": 1600000.0,
-    "lowest": 9202.0,
-    "difference": 1590798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100043776,
-    "file": "documents/100043776_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 1200000.0,
-    "lowest": 1110.0,
-    "difference": 1198890.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100928891,
-    "file": "documents/100928891_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 200000000.0,
+    "accepted": 2579087.76,
     "lowest": 8202.0,
-    "difference": 199991798.0,
+    "difference": 2570885.76,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100501967,
-    "file": "documents/100501967_10118-5 odluka.pdf"
+    "id": 103375024,
+    "file": "documents/103375024_8. JNOP-08-03-2026  Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 130000000.0,
+    "accepted": 17014140.0,
+    "lowest": 2212.0,
+    "difference": 17011928.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100434219,
+    "file": "documents/100434219_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 2592000.0,
     "lowest": 1920.0,
-    "difference": 129998080.0,
+    "difference": 2590080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 105031233,
-    "file": "documents/105031233_Odluka o dodeli ugovora 5337-7.pdf"
+    "id": 100779389,
+    "file": "documents/100779389_Odlukao dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 1416666.0,
-    "lowest": 7160.0,
-    "difference": 1409506.0,
+    "accepted": 80920.0,
+    "lowest": 1142.0,
+    "difference": 79778.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104758633,
-    "file": "documents/104758633_Odluka o dodeli ugovora.pdf"
+    "id": 110022153,
+    "file": "documents/110022153_8. Odluka o dodeli ugovora 93 26.pdf"
   },
   {
     "winner": null,
-    "accepted": 8333333.34,
-    "lowest": 2120.0,
-    "difference": 8331213.34,
+    "accepted": 2352131.82,
+    "lowest": 1142.0,
+    "difference": 2350989.82,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 105914842,
-    "file": "documents/105914842_Odluka o dodeli ugovora.docx"
+    "id": 101744042,
+    "file": "documents/101744042_8. Odluka o dodeli ugovora 96 26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3519158.04,
+    "lowest": 1142.0,
+    "difference": 3518016.04,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101347710,
+    "file": "documents/101347710_8. Odluka o dodeli ugovora 92 26.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 27747665.0,
+    "lowest": 9202.0,
+    "difference": 27738463.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103859516,
+    "file": "documents/103859516_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 1500000.0,
-    "lowest": 1398.0,
-    "difference": 1498602.0,
+    "accepted": 5000000.0,
+    "lowest": 10110.0,
+    "difference": 4989890.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100081544,
-    "file": "documents/100081544_12b.Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 1500000.0,
-    "lowest": 1398.0,
-    "difference": 1498602.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107006237,
-    "file": "documents/107006237_12b.Odluka o dodeli ugovora.pdf"
+    "id": 100153704,
+    "file": "documents/100153704_Odluka o dodeli ugovora jn U-41-26.pdf"
   }
 ]
