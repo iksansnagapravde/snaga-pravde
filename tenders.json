@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 78000000.0,
+    "lowest": 2749.0,
+    "difference": 77997251.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108994698,
+    "file": "documents/108994698_Odluka 391.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 10500000.0,
+    "lowest": 2110.0,
+    "difference": 10497890.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109780192,
+    "file": "documents/109780192_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 583333.33,
     "lowest": 3153.0,
     "difference": 580180.33,
@@ -42,16 +64,5 @@
     "rejection_reasons": [],
     "id": 100394710,
     "file": "documents/100394710_Partija 1.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 7260000.0,
-    "lowest": 7202.0,
-    "difference": 7252798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 114497632,
-    "file": "documents/114497632_Partija 5.pdf"
   }
 ]
