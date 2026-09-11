@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 950600.0,
+    "lowest": 4202.0,
+    "difference": 946398.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101524176,
+    "file": "documents/101524176_1146445-1-3100-0483-2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2112822.57,
     "lowest": 9202.0,
     "difference": 2103620.57,
