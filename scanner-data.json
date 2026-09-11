@@ -239,6 +239,20 @@
       "priority": 78
     },
     {
+      "id": "ija-uhapsen-pomocnik-direktora-carine-prilikom-uzimanja-mita",
+      "title": "Severna Makedonija: Uhapšen pomoćnik direktora carine prilikom uzimanja mita",
+      "url": "https://beta.rs/content/251840-severna-makedonija-uhapsen-pomocnik-direktora-carine-prilikom-uzimanja-mita",
+      "date": "2026-09-10",
+      "datetime": "2026-09-10T19:35:08+00:00",
+      "time": "19:35",
+      "source": "Beta",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "41989-starcevo-zadrzavanje-zbog-teskog-ubistva-dva-lica-vest",
       "title": "Uhapšen muškarac (35) zbog smrti dve osobe u Starčevu: Aktivirao eksploziv u kući",
       "url": "https://www.euronews.rs/srbija/aktuelno/241989/starcevo-zadrzavanje-zbog-teskog-ubistva-dva-lica/vest",
@@ -421,6 +435,20 @@
       "priority": 66
     },
     {
+      "id": "odrzan-skup-podrske-ekipi-emisije-24-casa-sa-zoranom-kesicem",
+      "title": "Održan skup podrške ekipi emisije - 24 časa sa Zoranom Kesićem",
+      "url": "https://beta.rs/content/251839-odrzan-skup-podrske-ekipi-emisije--24-casa-sa-zoranom-kesicem",
+      "date": "2026-09-10",
+      "datetime": "2026-09-10T19:20:09+00:00",
+      "time": "19:20",
+      "source": "Beta",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
+    },
+    {
       "id": "https-www-danas-rs-vesti-drustvo-skup-podrske-zoranu-kesicu-",
       "title": "„Ako sada nismo ujedinjeni, neće nas biti sutra“: Održan skup podrške Zoranu Kesiću (FOTO, VIDEO)",
       "url": "https://www.danas.rs/vesti/drustvo/skup-podrske-zoranu-kesicu/",
@@ -561,6 +589,20 @@
       "priority": 26
     },
     {
+      "id": "u-ekvadoru-osudio-bivseg-predsednika-na-devet-godina-zatvora",
+      "title": "Суд у Еквадору осудио бившег председника на девет година затвора",
+      "url": "https://www.politika.rs/scc/clanak/784657/sud-u-ekvadoru-osudio-bivseg-predsednika-na-devet-godina-zatvora",
+      "date": "2026-09-10",
+      "datetime": "2026-09-10T23:39:00+00:00",
+      "time": "23:39",
+      "source": "Politika",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
       "id": "-rs-vesti-svet-6037444-bivsi-predsednik-ekvador-osudjen-html",
       "title": "Бивши председник Еквадора осуђен на више од девет година затвора",
       "url": "https://www.rts.rs/vesti/svet/6037444/bivsi-predsednik-ekvador-osudjen.html",
@@ -657,48 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 4
-    },
-    {
-      "id": "https-www-cins-rs-danka-ep-2-osumnjiceni-",
-      "title": "Danka – EP 2: Osumnjičeni",
-      "url": "https://www.cins.rs/danka-ep-2-osumnjiceni/",
-      "date": "2026-09-09",
-      "datetime": "2026-09-09T18:24:11+00:00",
-      "time": "18:24",
-      "source": "CINS",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "tuelno-241950-muskarac-pao-sa-petog-sprata-na-trolejbus-vest",
-      "title": "Muškarac pao sa petog sprata na trolejbus, preminuo na licu mesta",
-      "url": "https://www.euronews.rs/srbija/aktuelno/241950/muskarac-pao-sa-petog-sprata-na-trolejbus/vest",
-      "date": "2026-09-09",
-      "datetime": "2026-09-09T12:40:00+00:00",
-      "time": "12:40",
-      "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "-svog-auta-novcanicu-od-50-evra-nikako-je-ne-dirajte-833tgyq",
-      "title": "NOVA PREVARA HARA EVROPOM! Ako ovo vidite na šoferšajbni svog automobilu - nikako ne dirajte",
-      "url": "https://www.blic.rs/slobodno-vreme/ugledali-ste-na-sofersajbni-svog-auta-novcanicu-od-50-evra-nikako-je-ne-dirajte/833tgyq",
-      "date": "2026-09-10",
-      "datetime": "2026-09-10T22:47:00+00:00",
-      "time": "22:47",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
     }
   ],
   "all_sources": [
