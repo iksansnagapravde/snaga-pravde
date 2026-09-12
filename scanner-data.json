@@ -323,20 +323,6 @@
       "priority": 70
     },
     {
-      "id": "jacke-dekana-filozofskog-fakulteta-danijela-sinanija-2q4tcss",
-      "title": "\"POLICIJA JE TO REŠILA\" Vučić otkrio: Uhapšen mladić zbog pljačke dekana Filozofskog fakulteta, oglasio se i MUP (VIDEO)",
-      "url": "https://www.blic.rs/vesti/politika/uhapsen-mladic-zbog-pljacke-dekana-filozofskog-fakulteta-danijela-sinanija/2q4tcss",
-      "date": "2026-09-11",
-      "datetime": "2026-09-11T16:56:28+00:00",
-      "time": "16:56",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "hapsen-osumnjiceni-za-dva-razbojnistva-na-savskom-vencu-vest",
       "title": "Dekan Filozofskog fakulteta napadnut i opljačkan: Policija uhapsila osumnjičenog",
       "url": "https://www.euronews.rs/srbija/aktuelno/242323/uhapsen-osumnjiceni-za-dva-razbojnistva-na-savskom-vencu/vest",
@@ -671,6 +657,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "gora-10101691-cetinjanin-uhapsen-zbog-sumnje-da-je-tukao-psa",
+      "title": "BRUTALNO ZLOSTAVLJAO PSA NASRED ULICE: Policija brzo identifikovala muškarca sa snimka iz Cetinja - on sve priznao",
+      "url": "https://www.kurir.rs/region/crna-gora/10101691/cetinjanin-uhapsen-zbog-sumnje-da-je-tukao-psa",
+      "date": "2026-09-12",
+      "datetime": "2026-09-12T03:30:00+00:00",
+      "time": "03:30",
+      "source": "Kurir",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "crna-gora-10101960-podgoricka-policija-u-akciji-protiv-droge",
