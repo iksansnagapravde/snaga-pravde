@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 6744200.0,
+    "lowest": 2214.0,
+    "difference": 6741986.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107379803,
+    "file": "documents/107379803_RB 0032-2026 Odluka o dodeli ugovora potpisano.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 8000000.0,
+    "lowest": 9202.0,
+    "difference": 7990798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 3405860.4,
+    "lowest": 2920.0,
+    "difference": 3402940.4,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101440663,
+    "file": "documents/101440663_Odluka o dodeli ugovora -0006-jn-2026-Elektro Dublje-1.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 371776000.0,
     "lowest": 1202.0,
     "difference": 371774798.0,
@@ -75,27 +108,5 @@
     "rejection_reasons": [],
     "id": 103853672,
     "file": "documents/103853672_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2350098.0,
-    "lowest": 3340.0,
-    "difference": 2346758.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100260090,
-    "file": "documents/100260090_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 37166667.0,
-    "lowest": 7202.0,
-    "difference": 37159465.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104594423,
-    "file": "documents/104594423_odluka 11 9.pdf"
   }
 ]
