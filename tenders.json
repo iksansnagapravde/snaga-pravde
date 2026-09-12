@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 371776000.0,
+    "lowest": 1202.0,
+    "difference": 371774798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100170086,
+    "file": "documents/100170086_Odluka o dodeli 108-26.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2200000.0,
     "lowest": 8202.0,
     "difference": 2191798.0,
