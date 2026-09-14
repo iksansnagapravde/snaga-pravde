@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2624574.84,
+    "lowest": 9202.0,
+    "difference": 2615372.84,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101767165,
+    "file": "documents/101767165_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 4000000.0,
     "lowest": 1110.0,
     "difference": 3998890.0,
@@ -64,16 +75,5 @@
     "rejection_reasons": [],
     "id": 100002942,
     "file": "documents/100002942_Odluka o dodeli Ugovora Tehnicki gasovi.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 21400000.0,
-    "lowest": 2202.0,
-    "difference": 21397798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105408477,
-    "file": "documents/105408477_Odluka o dodeli JN-2000-0218-2026.pdf"
   }
 ]
