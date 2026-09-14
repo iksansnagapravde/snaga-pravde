@@ -57,20 +57,6 @@
       "priority": 92
     },
     {
-      "id": "-holandiji-uhapsena-zbog-narucivanja-ubistva-preko-dark-veba",
-      "title": "Жена у Холандији ухапшена због наручивања убиства преко „дарк веба”",
-      "url": "https://www.politika.rs/scc/clanak/785237/zena-u-holandiji-uhapsena-zbog-narucivanja-ubistva-preko-dark-veba",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T20:38:00+00:00",
-      "time": "20:38",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "https-www-cins-rs-danka-ep-1-prica-o-izgubljenoj-devojcici-",
       "title": "Danka – EP 1: Priča o izgubljenoj devojčici",
       "url": "https://www.cins.rs/danka-ep-1-prica-o-izgubljenoj-devojcici/",
@@ -237,6 +223,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "mitoru-pronasli-dvoje-stranih-drzavljana-koji-su-se-izgubili",
+      "title": "DRAMA NA DURMITORU! Filipinac i Nemica se izgubili na opasnom prevoju, spasioci ih našli zarobljene na nepristupačnom terenu",
+      "url": "https://www.kurir.rs/region/crna-gora/10103067/spasioci-na-durmitoru-pronasli-dvoje-stranih-drzavljana-koji-su-se-izgubili",
+      "date": "2026-09-14",
+      "datetime": "2026-09-14T01:00:00+00:00",
+      "time": "01:00",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "o-sta-se-dogodilo-sa-glumcima-iz-serije-srecni-ljudi-3ntp5mw",
@@ -477,6 +477,20 @@
       "priority": 4
     },
     {
+      "id": "103559-spanski-biciklista-enrik-mas-osvojio-titulu-na-vuelti",
+      "title": "ŠPANAC OSVOJIO VUELTU: Enrik Mas najbrži na legendarnoj trci",
+      "url": "https://www.kurir.rs/sport/ostali-sportovi/10103559/spanski-biciklista-enrik-mas-osvojio-titulu-na-vuelti",
+      "date": "2026-09-14",
+      "datetime": "2026-09-14T00:36:00+00:00",
+      "time": "00:36",
+      "source": "Kurir",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
       "id": "-da-spustate-roletne-do-samog-kraja-narocito-u-jesen-722yks3",
       "title": "Zašto nikada ne bi trebalo da spuštate roletne do samog kraja? Jednostavan trik koji sprečava zamagljivanje prozora i vlagu u domu",
       "url": "https://www.blic.rs/slobodno-vreme/zasto-nikada-ne-bi-trebalo-da-spustate-roletne-do-samog-kraja-narocito-u-jesen/722yks3",
@@ -513,6 +527,20 @@
       "time": "22:45",
       "source": "Politika",
       "category": "Извршења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "51989-zverev-pobedio-seltona-i-osvojio-titulu-na-ju-es-openu",
+      "title": "Zverev pobedio Šeltona i osvojio titulu na Ju Es openu",
+      "url": "https://beta.rs/content/251989-zverev-pobedio-seltona-i-osvojio-titulu-na-ju-es-openu",
+      "date": "2026-09-13",
+      "datetime": "2026-09-13T22:10:08+00:00",
+      "time": "22:10",
+      "source": "Beta",
+      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
@@ -667,34 +695,6 @@
       "time": "21:15",
       "source": "Blic",
       "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "ni-sportovi-biciklizam-267298-enrik-mas-pobednik-vuelte-vest",
-      "title": "Enrik Mas osvojio Vuletu",
-      "url": "https://www.b92.net/sport/pojedinacni-sportovi/biciklizam/267298/enrik-mas-pobednik-vuelte/vest",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T21:15:00+00:00",
-      "time": "21:15",
-      "source": "B92",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "ti-politika-10103289-milos-vucevic-odgovorio-draganu-djilasu",
-      "title": "\"IZBORI SU JEDINO MERILO NARODNE VOLJE\" Đilasu zasmetalo okupljanje patriotskih snaga, Vučević mu održao lekciju: Konstrukcije propalog bloka ne iznenađuju",
-      "url": "https://www.kurir.rs/vesti/politika/10103289/milos-vucevic-odgovorio-draganu-djilasu",
-      "date": "2026-09-13",
-      "datetime": "2026-09-13T21:13:06+00:00",
-      "time": "21:13",
-      "source": "Kurir",
-      "category": "Избори",
       "summary": "",
       "breaking": false,
       "alert": false,
