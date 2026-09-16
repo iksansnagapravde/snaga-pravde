@@ -1,57 +1,57 @@
 [
   {
     "winner": null,
-    "accepted": 28189674.0,
-    "lowest": 4126.0,
-    "difference": 28185548.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106382099,
-    "file": "documents/106382099_Odluka o dodeli ugovora 1461.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 400000000.0,
+    "accepted": 464118.78,
     "lowest": 1920.0,
-    "difference": 399998080.0,
+    "difference": 462198.78,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100454087,
-    "file": "documents/100454087_Odluka o dodeli ugovora PUH.pdf"
+    "id": 102608229,
+    "file": "documents/102608229_11 - Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 45000000.0,
-    "lowest": 1110.0,
-    "difference": 44998890.0,
+    "accepted": 9449200.0,
+    "lowest": 2150.0,
+    "difference": 9447050.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101719122,
-    "file": "documents/101719122_Odluka o dodeli ugovora.pdf"
+    "id": 100270693,
+    "file": "documents/100270693_Odluka o dodeli 12-72-26-6.pdf"
   },
   {
     "winner": null,
-    "accepted": 963000.0,
-    "lowest": 2242.0,
-    "difference": 960758.0,
+    "accepted": 9449200.0,
+    "lowest": 2150.0,
+    "difference": 9447050.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100416371,
-    "file": "documents/100416371_Odluka o dodeli.pdf"
+    "id": 100000266,
+    "file": "documents/100000266_Odluka o dodeli 12-72-26-6.pdf"
   },
   {
     "winner": null,
-    "accepted": 6000000.0,
-    "lowest": 4000.0,
-    "difference": 5996000.0,
+    "accepted": 9449200.0,
+    "lowest": 2150.0,
+    "difference": 9447050.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111519311,
-    "file": "documents/111519311_Odluka o dodeli partija br.2.pdf"
+    "id": 107304324,
+    "file": "documents/107304324_Odluka o dodeli 12-72-26-6.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 10211.0,
+    "lowest": 9202.0,
+    "difference": 1009.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108585471,
+    "file": "documents/108585471_Odluka o dodeli.docx"
   }
 ]
