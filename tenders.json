@@ -1,79 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 450000000.0,
-    "lowest": 9202.0,
-    "difference": 449990798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103220817,
-    "file": "documents/103220817_Odluka zlatibor.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1776000.0,
-    "lowest": 3103.0,
-    "difference": 1772897.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100844331,
-    "file": "documents/100844331_odluka o dodeli ug.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 34634.38,
+    "accepted": 9202.0,
     "lowest": 1202.0,
-    "difference": 33432.38,
+    "difference": 8000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 109493980,
-    "file": "documents/109493980_57-2026 Odluka overa.pdf"
+    "id": 166649,
+    "file": "documents/166649_592 O-195.pdf"
   },
   {
-    "winner": null,
-    "accepted": 456979.2,
-    "lowest": 2228.0,
-    "difference": 454751.2,
+    "winner": "godine donosi ODLUKU O DODELI UGOVORA I U otvorenom postupku javne nabavke - Nabavka, isporuka i ugrad",
+    "accepted": 9202.0,
+    "lowest": 8202.0,
+    "difference": 1000.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100803414,
-    "file": "documents/100803414_Odluke o dodeli Narudžbenice JN  198_2026.pdf"
+    "id": 100291347,
+    "file": "documents/100291347_Odluka o dodeli ugovora - sken - SS.pdf"
+  },
+  {
+    "winner": "ugovor se dodeljuje ponudacu E-SMART SYSTEMS DOO",
+    "accepted": 9202.0,
+    "lowest": 8202.0,
+    "difference": 1000.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101833141,
+    "file": "documents/101833141_Odluka o dodeli ugovora - sken - MS.pdf"
   },
   {
     "winner": null,
-    "accepted": 26110.0,
+    "accepted": 216051868.8,
+    "lowest": 2202.0,
+    "difference": 216049666.8,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105620037,
+    "file": "documents/105620037_Odluka o dodeli 2386-2025 p2.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 216051868.8,
+    "lowest": 2202.0,
+    "difference": 216049666.8,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101225701,
+    "file": "documents/101225701_Odluka o dodeli 2386-2025 p3.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 173125868.8,
+    "lowest": 2202.0,
+    "difference": 173123666.8,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108159511,
+    "file": "documents/108159511_Odluka o dodeli 2386-2025 p4.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 973680.0,
+    "lowest": 4212.0,
+    "difference": 969468.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103605787,
+    "file": "documents/103605787_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 104110.0,
     "lowest": 9202.0,
-    "difference": 16908.0,
+    "difference": 94908.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 112922732,
-    "file": "documents/112922732_Odluka o dodeli.docx"
+    "id": 103329246,
+    "file": "documents/103329246_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 2100000.0,
-    "lowest": 2340.0,
-    "difference": 2097660.0,
+    "accepted": 3000000.0,
+    "lowest": 6067.0,
+    "difference": 2993933.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101492932,
-    "file": "documents/101492932_Odluka o dodeli ugovora.docx"
+    "id": 103223995,
+    "file": "documents/103223995_Odluka o dodeli ugovora.pdf"
   }
 ]
