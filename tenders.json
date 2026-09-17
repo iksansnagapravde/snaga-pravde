@@ -1,79 +1,112 @@
 [
   {
     "winner": null,
-    "accepted": 14110.0,
+    "accepted": 177850.8,
     "lowest": 9202.0,
-    "difference": 4908.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105046072,
-    "file": "documents/105046072_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 14110.0,
-    "lowest": 9202.0,
-    "difference": 4908.0,
+    "difference": 168648.8,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 102156404,
-    "file": "documents/102156404_Odluka o dodeli.docx"
+    "file": "documents/102156404_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 14110.0,
+    "accepted": 96406.0,
     "lowest": 9202.0,
-    "difference": 4908.0,
+    "difference": 87204.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100336710,
+    "file": "documents/100336710_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 7120000.0,
+    "lowest": 3103.0,
+    "difference": 7116897.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100723510,
+    "file": "documents/100723510_Odluka o dodeli narudzbenice.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 235000000.0,
+    "lowest": 9202.0,
+    "difference": 234990798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100065171,
+    "file": "documents/100065171_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3500000.0,
+    "lowest": 4181.0,
+    "difference": 3495819.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101226911,
+    "file": "documents/101226911_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 24600.0,
+    "lowest": 1970.0,
+    "difference": 22630.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 101718592,
-    "file": "documents/101718592_Odluka o dodeli.docx"
+    "file": "documents/101718592_Odluka o dodeli ugovora 2.pdf"
   },
   {
     "winner": null,
-    "accepted": 14110.0,
+    "accepted": 155000000.0,
     "lowest": 9202.0,
-    "difference": 4908.0,
+    "difference": 154990798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100134880,
-    "file": "documents/100134880_Odluka o dodeli.docx"
+    "id": 100803414,
+    "file": "documents/100803414_Odluke o dodeli Narudžbenice JN  197_2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 14110.0,
-    "lowest": 9202.0,
-    "difference": 4908.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107427806,
-    "file": "documents/107427806_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 14110.0,
-    "lowest": 9202.0,
-    "difference": 4908.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100283777,
-    "file": "documents/100283777_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 14110.0,
-    "lowest": 9202.0,
-    "difference": 4908.0,
+    "accepted": 6652050.0,
+    "lowest": 3780.0,
+    "difference": 6648270.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
     "id": 100209988,
-    "file": "documents/100209988_Odluka o dodeli.docx"
+    "file": "documents/100209988_JN 22-26 Odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6652050.0,
+    "lowest": 3780.0,
+    "difference": 6648270.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106817238,
+    "file": "documents/106817238_JN 22-26 Odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6652050.0,
+    "lowest": 3780.0,
+    "difference": 6648270.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101822498,
+    "file": "documents/101822498_JN 22-26 Odluka o dodeli.pdf"
   }
 ]
