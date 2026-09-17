@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "e-chatgpt-ju-da-zeli-da-ubije-sina-a-onda-je-uhapsen-k5rgjbw",
-      "title": "Rekao je ChatGPT-ju da želi da ubije sina, a onda je uhapšen",
-      "url": "https://www.blic.rs/bbc/rekao-je-chatgpt-ju-da-zeli-da-ubije-sina-a-onda-je-uhapsen/k5rgjbw",
-      "date": "2026-09-16",
-      "datetime": "2026-09-16T17:36:19+00:00",
-      "time": "17:36",
-      "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 192
-    },
-    {
       "id": "ja-aktuelno-242921-pucnjava-na-cukarici-ranjem-muskarac-vest",
       "title": "Pucnjava na Čukarici: Muškarac ranjen u hodniku zgrade u Požeškoj ulici",
       "url": "https://www.euronews.rs/srbija/aktuelno/242921/pucnjava-na-cukarici-ranjem-muskarac/vest",
@@ -55,6 +41,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "rs-vesti-hronika-otkriven-motiv-ubistva-kod-ivanjice-gd8eqz7",
+      "title": "\"SAHRANIO JE OCA, A PETAR MU JE TRAŽIO 200.000 DINARA\" Otkriven motiv ubistva kod Ivanjice: Ušao kroz prozor i Miletu ISPALIO DVA METKA U GLAVU, pa otišao kod sestre da doručkuje!",
+      "url": "https://www.blic.rs/vesti/hronika/otkriven-motiv-ubistva-kod-ivanjice/gd8eqz7",
+      "date": "2026-09-17",
+      "datetime": "2026-09-17T04:16:00+00:00",
+      "time": "04:16",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "0106482-hapsenje-u-subotici-zbog-zloupotrebe-platnih-kartica",
@@ -127,20 +127,6 @@
       "priority": 92
     },
     {
-      "id": "e-uhapsene-u-subotici-krali-novac-sa-platnih-kartica-52tfeh3",
-      "title": "KRALI NOVAC SA PLATNIH KARTICA Dve osobe uhapšene u Subotici: Žrtvama praznili račune",
-      "url": "https://www.blic.rs/vesti/hronika/dve-osobe-uhapsene-u-subotici-krali-novac-sa-platnih-kartica/52tfeh3",
-      "date": "2026-09-16",
-      "datetime": "2026-09-16T17:41:12+00:00",
-      "time": "17:41",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "zbog-paljenja-automobila-ambasade-bugarske-u-skoplju-u-junu-",
       "title": "Podneta optužnica zbog paljenja automobila ambasade Bugarske u Skoplju u junu",
       "url": "https://n1info.rs/region/podneta-optuznica-zbog-paljenja-automobila-ambasade-bugarske-u-skoplju-u-junu/",
@@ -181,6 +167,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "ps-www-danas-rs-vesti-drustvo-studenti-minhauzen-tuzilastvo-",
+      "title": "Minhauzen Tužilaštvo: Studenti će imati baš mnogo posla",
+      "url": "https://www.danas.rs/vesti/drustvo/studenti-minhauzen-tuzilastvo/",
+      "date": "2026-09-17",
+      "datetime": "2026-09-17T04:42:59+00:00",
+      "time": "04:42",
+      "source": "Danas",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
     },
     {
       "id": "-policija-sprecila-skup-posvecen-ratku-mladicu-ima-uhapsenih",
@@ -316,20 +316,6 @@
       "datetime": "2026-09-16T19:00:00+00:00",
       "time": "19:00",
       "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "ts-rs-vesti-hronika-6041632-saobracajna-nesreca-pancevo-html",
-      "title": "Саобраћајна несрећа код Панчева – једна особа погинула, девет повређено",
-      "url": "https://www.rts.rs/vesti/hronika/6041632/saobracajna-nesreca-pancevo.html",
-      "date": "2026-09-16",
-      "datetime": "2026-09-16T15:27:34+00:00",
-      "time": "15:27",
-      "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -547,20 +533,6 @@
       "priority": 26
     },
     {
-      "id": "s-vesti-hronika-6041550-hag-presuda-neredi-presuda-taci-html",
-      "title": "Нереди након пресуде вођама тзв. ОВК – водени топ, напад на полицију у Хагу, инциденти код Еулекса и владе у Приштини",
-      "url": "https://www.rts.rs/vesti/hronika/6041550/hag-presuda-neredi-presuda-taci.html",
-      "date": "2026-09-16",
-      "datetime": "2026-09-16T18:56:36+00:00",
-      "time": "18:56",
-      "source": "RTS",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "-sud-se-nije-bavio-otmicama-ubistvima-i-nestancima-srba-html",
       "title": "Вучић: Пресудом у Хагу нису обухваћени злочини против човечности, суд се није бавио отмицама, убиствима и нестанцима Срба",
       "url": "https://www.rts.rs/vesti/politika/6041770/vucic-presudom-u-hagu-nisu-obuhvaceni-zlocini-protiv-covecnosti-sud-se-nije-bavio-otmicama-ubistvima-i-nestancima-srba.html",
@@ -694,6 +666,34 @@
       "datetime": "2026-09-16T21:45:00+00:00",
       "time": "21:45",
       "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "menice-letele-u-pristini-albanci-napali-sediste-euleksa-vest",
+      "title": "Kamenice letele u Prištini; Albanci napali sedište Euleksa VIDEO",
+      "url": "https://www.b92.net/info/kosovo/268229/kamenice-letele-u-pristini-albanci-napali-sediste-euleksa/vest",
+      "date": "2026-09-16",
+      "datetime": "2026-09-16T21:34:00+00:00",
+      "time": "21:34",
+      "source": "B92",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
+    },
+    {
+      "id": "oe-pronadjeno-u-engleskoj-policija-saopstila-detalje-nh59h3z",
+      "title": "PRONAĐENO TELO DEČAKA (3) Stigle najcrnje vesti iz Engleske: U potrazi učestvovalo stotine ljudi",
+      "url": "https://www.blic.rs/vesti/svet/telo-trogodisnjeg-noe-pronadjeno-u-engleskoj-policija-saopstila-detalje/nh59h3z",
+      "date": "2026-09-16",
+      "datetime": "2026-09-16T21:26:00+00:00",
+      "time": "21:26",
+      "source": "Blic",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
