@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 3500000.0,
+    "lowest": 4202.0,
+    "difference": 3495798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 107501831,
+    "file": "documents/107501831_1171392-1-3100-0765-2026.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 23700120.0,
+    "lowest": 9202.0,
+    "difference": 23690918.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100965766,
+    "file": "documents/100965766_010 Odluka o izdavanju narudzbenice 039.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 636000.0,
+    "lowest": 9202.0,
+    "difference": 626798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104424829,
+    "file": "documents/104424829_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 34996800.0,
     "lowest": 5192.0,
     "difference": 34991608.0,
@@ -75,38 +108,5 @@
     "rejection_reasons": [],
     "id": 100291347,
     "file": "documents/100291347_Odluka o dodeli ugovora - sken - SS.pdf"
-  },
-  {
-    "winner": "ugovor se dodeljuje ponudacu E-SMART SYSTEMS DOO",
-    "accepted": 9202.0,
-    "lowest": 8202.0,
-    "difference": 1000.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101833141,
-    "file": "documents/101833141_Odluka o dodeli ugovora - sken - MS.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 216051868.8,
-    "lowest": 2202.0,
-    "difference": 216049666.8,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 105620037,
-    "file": "documents/105620037_Odluka o dodeli 2386-2025 p2.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 216051868.8,
-    "lowest": 2202.0,
-    "difference": 216049666.8,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101225701,
-    "file": "documents/101225701_Odluka o dodeli 2386-2025 p3.pdf"
   }
 ]
