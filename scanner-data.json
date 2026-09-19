@@ -337,20 +337,6 @@
       "priority": 25
     },
     {
-      "id": "trampu-pcc-i-komando-vermeljo-nisu-teroristicke-organizacije",
-      "title": "Лула Трампу: ПЦЦ и Командо Вермелјо нису терористичке организације",
-      "url": "https://www.politika.rs/scc/clanak/786622/lula-trampu-pcc-i-komando-vermeljo-nisu-teroristicke-organizacije",
-      "date": "2026-09-18",
-      "datetime": "2026-09-18T20:21:00+00:00",
-      "time": "20:21",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "rg-a-ambasadori-amerika-bih-srbija-kina-rusija-33858390-html",
       "title": "Kandidati za ambasadore SAD u Sarajevu i Beogradu: Stabilnost regije i suzbijanje uticaja Rusije i Kine prije svega",
       "url": "https://www.slobodnaevropa.org/a/ambasadori-amerika-bih-srbija-kina-rusija/33858390.html",
@@ -419,6 +405,20 @@
       "breaking": false,
       "alert": false,
       "priority": 8
+    },
+    {
+      "id": "a-tokom-mobilizacije-vojna-policija-isla-pistoljem-na-civile",
+      "title": "Украјина: током мобилизације војна полиција ишла пиштољем на цивиле",
+      "url": "https://www.politika.rs/scc/clanak/786642/ukrajina-tokom-mobilizacije-vojna-policija-isla-pistoljem-na-civile",
+      "date": "2026-09-18",
+      "datetime": "2026-09-18T23:39:00+00:00",
+      "time": "23:39",
+      "source": "Politika",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 4
     },
     {
       "id": "igeriji-zbog-smrti-37-rudara-koji-su-se-nalazili-u-pritvoru-",
@@ -531,6 +531,34 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "rzavnu-dumu-prvog-dana-glasanja-znatno-premasila-2021-godinu",
+      "title": "Излазност на изборима за Државну думу првог дана гласања знатно премашила 2021. годину",
+      "url": "https://www.politika.rs/scc/clanak/786641/izlaznost-na-izborima-za-drzavnu-dumu-prvog-dana-glasanja-znatno-premasila-2021-godinu",
+      "date": "2026-09-18",
+      "datetime": "2026-09-18T23:23:00+00:00",
+      "time": "23:23",
+      "source": "Politika",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
+    },
+    {
+      "id": "sao-nove-sankcije-rusiji-zelenski-hvala-na-grejemovom-zakonu",
+      "title": "Трамп потписао нове санкције Русији; Зеленски: Хвала на Грејемовом закону",
+      "url": "https://www.politika.rs/scc/clanak/786640/tramp-potpisao-nove-sankcije-rusiji-zelenski-hvala-na-grejemovom-zakonu",
+      "date": "2026-09-18",
+      "datetime": "2026-09-18T23:12:00+00:00",
+      "time": "23:12",
+      "source": "Politika",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     },
     {
       "id": "eta-10108681-tramp-potpisao-zakon-o-sankcijama-protiv-rusije",
@@ -667,34 +695,6 @@
       "time": "22:01",
       "source": "Radar",
       "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "i-ukrajina-zainteresovana-za-to-da-srbija-postane-clanica-eu",
-      "title": "\"VEOMA SMO ZAINTERESOVANI DA SRBIJA UĐE U EU\" Zelenski: Ovo je izbor srpskog naroda, ali moramo da budemo dobri partneri",
-      "url": "https://www.kurir.rs/vesti/politika/10108674/zelenski-ukrajina-zainteresovana-za-to-da-srbija-postane-clanica-eu",
-      "date": "2026-09-18",
-      "datetime": "2026-09-18T21:54:43+00:00",
-      "time": "21:54",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 0
-    },
-    {
-      "id": "-mladji-svadba-ruski-oligarh-umar-kremljov-novac-bahami-html",
-      "title": "Бука око свадбе Трамповог сина на Бахамима - обећао тати да ће вратити паре руском олигарху",
-      "url": "https://www.rts.rs/vesti/svet/6043770/sad-donald-tramp-mladji-svadba-ruski-oligarh-umar-kremljov-novac-bahami.html",
-      "date": "2026-09-18",
-      "datetime": "2026-09-18T21:45:07+00:00",
-      "time": "21:45",
-      "source": "RTS",
-      "category": "Људска права",
       "summary": "",
       "breaking": false,
       "alert": false,
