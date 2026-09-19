@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 3500000.0,
+    "lowest": 2214.0,
+    "difference": 3497786.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100495556,
+    "file": "documents/100495556_003902654 RB 0033-2026 Odluka o dodeli potpisano.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3500000.0,
+    "lowest": 2214.0,
+    "difference": 3497786.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110745039,
+    "file": "documents/110745039_003902654 RB 0033-2026 Odluka o dodeli potpisano.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 3800000.0,
     "lowest": 3110.0,
     "difference": 3796890.0,
@@ -53,49 +75,5 @@
     "rejection_reasons": [],
     "id": 109103466,
     "file": "documents/109103466_8. Odluka o dodeli ugovora 98 26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 104000000.0,
-    "lowest": 6202.0,
-    "difference": 103993798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104052135,
-    "file": "documents/104052135_- 3. JNOP 89-2026 MS Odluka o DODELI UGOVORA broj 4-2026-7399-1231 od 180926.PDF"
-  },
-  {
-    "winner": null,
-    "accepted": 16000000.0,
-    "lowest": 9202.0,
-    "difference": 15990798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100001716,
-    "file": "documents/100001716_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 18900000.0,
-    "lowest": 9202.0,
-    "difference": 18890798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 110304499,
-    "file": "documents/110304499_odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 85000.0,
-    "lowest": 2202.0,
-    "difference": 82798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100155659,
-    "file": "documents/100155659_ODLUKA 438.pdf"
   }
 ]
