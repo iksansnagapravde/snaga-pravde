@@ -1,6 +1,61 @@
 [
   {
     "winner": null,
+    "accepted": 10321119.0,
+    "lowest": 8202.0,
+    "difference": 10312917.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100165298,
+    "file": "documents/100165298_18 - Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 543504.0,
+    "lowest": 1118.0,
+    "difference": 542386.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_odluka Fiat dukato.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 7630180.0,
+    "lowest": 3890.0,
+    "difference": 7626290.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101877940,
+    "file": "documents/101877940_odluka metro.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2000000.0,
+    "lowest": 5600.0,
+    "difference": 1994400.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102793206,
+    "file": "documents/102793206_Odluka o dodeli ugovora - Zaštitna odeca.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 5486515.2,
+    "lowest": 2111.0,
+    "difference": 5484404.2,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100002887,
+    "file": "documents/100002887_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 4000000.0,
     "lowest": 2033.32,
     "difference": 3997966.68,
@@ -42,60 +97,5 @@
     "rejection_reasons": [],
     "id": 100007569,
     "file": "documents/100007569_Odluka - 13.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5999400.0,
-    "lowest": 3201.0,
-    "difference": 5996199.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107859729,
-    "file": "documents/107859729_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 11324045.0,
-    "lowest": 2275.84,
-    "difference": 11321769.16,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 1603960210026,
-    "file": "documents/1603960210026_Odluka o dodeli ugovora 65U26 za objavu.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 13000000.0,
-    "lowest": 3899.0,
-    "difference": 12996101.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106045616,
-    "file": "documents/106045616_Odluka o dodeli ugovora P 1.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 8217600.0,
-    "lowest": 8202.0,
-    "difference": 8209398.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101612478,
-    "file": "documents/101612478_Odluka o dodeli ugovora P 2.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 26397600.0,
-    "lowest": 8202.0,
-    "difference": 26389398.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101531840,
-    "file": "documents/101531840_Odluka o dodeli ugovora.pdf"
   }
 ]
