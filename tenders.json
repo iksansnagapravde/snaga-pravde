@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 1580040.0,
+    "lowest": 9202.0,
+    "difference": 1570838.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104704549,
+    "file": "documents/104704549_A1 SRBIJA DOO - ODLUKA O DODELI UGOVORA - NABAVKA USLGA MOBILNE TELEFONIJE_0001.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 220000000.0,
+    "lowest": 9202.0,
+    "difference": 219990798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101509545,
+    "file": "documents/101509545_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 5000000.0,
     "lowest": 3360000.0,
     "difference": 1640000.0,
@@ -86,27 +108,5 @@
     "rejection_reasons": [],
     "id": 103220817,
     "file": "documents/103220817_Odluka Brisel.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 9202.0,
-    "lowest": 1202.0,
-    "difference": 8000.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 166578,
-    "file": "documents/166578_605 O-195.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka avio karta za Brisel.pdf"
   }
 ]
