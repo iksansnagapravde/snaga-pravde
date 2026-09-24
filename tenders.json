@@ -1,1 +1,101 @@
-[]
+[
+  {
+    "winner": null,
+    "accepted": 4127900.0,
+    "lowest": 2537.0,
+    "difference": 4125363.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100169756,
+    "file": "documents/100169756_Odluka Stokholm.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 454202.0,
+    "lowest": 2537.0,
+    "difference": 451665.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103220817,
+    "file": "documents/103220817_Odluka Kragujevac.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 343293602.65,
+    "lowest": 1113.0,
+    "difference": 343292489.65,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110530504,
+    "file": "documents/110530504_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 6727330.0,
+    "lowest": 5110.0,
+    "difference": 6722220.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105249896,
+    "file": "documents/105249896_Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 11000.0,
+    "lowest": 2202.0,
+    "difference": 8798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104754781,
+    "file": "documents/104754781_odluka 476.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 30000.0,
+    "lowest": 2202.0,
+    "difference": 27798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100155659,
+    "file": "documents/100155659_odluka 475.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 856375000.0,
+    "lowest": 4201.0,
+    "difference": 856370799.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101437546,
+    "file": "documents/101437546_85 Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 856375000.0,
+    "lowest": 4201.0,
+    "difference": 856370799.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101884856,
+    "file": "documents/101884856_85 Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 856375000.0,
+    "lowest": 4201.0,
+    "difference": 856370799.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104897026,
+    "file": "documents/104897026_85 Odluka.pdf"
+  }
+]
