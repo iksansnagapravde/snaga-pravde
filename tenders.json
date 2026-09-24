@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 10123380.0,
+    "lowest": 9202.0,
+    "difference": 10114178.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103223995,
+    "file": "documents/103223995_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 2500000.0,
+    "lowest": 2574.58,
+    "difference": 2497425.42,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100001079,
+    "file": "documents/100001079_18 - Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 9182103.6,
     "lowest": 1117.0,
     "difference": 9180986.6,
@@ -53,27 +75,5 @@
     "rejection_reasons": [],
     "id": 101877940,
     "file": "documents/101877940_Odluka o dodeli narudzbenice MerS.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 4127900.0,
-    "lowest": 2537.0,
-    "difference": 4125363.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100169756,
-    "file": "documents/100169756_Odluka Stokholm.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103220817,
-    "file": "documents/103220817_Odluka Kragujevac.pdf"
   }
 ]
