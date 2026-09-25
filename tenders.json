@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 104110.0,
+    "lowest": 9202.0,
+    "difference": 94908.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100038783,
+    "file": "documents/100038783_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 10123380.0,
     "lowest": 9202.0,
     "difference": 10114178.0,
