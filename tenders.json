@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 9202.0,
+    "difference": 399990798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 58641103.0,
     "lowest": 8202.0,
     "difference": 58632901.0,
@@ -86,27 +97,5 @@
     "rejection_reasons": [],
     "id": 103220817,
     "file": "documents/103220817_Odluka Srebrno jezero.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 46208800.0,
-    "lowest": 4201.0,
-    "difference": 46204599.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 113497110,
-    "file": "documents/113497110_Odluka o dodeli ugovora 57D26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1700000.0,
-    "lowest": 9202.0,
-    "difference": 1690798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101875950,
-    "file": "documents/101875950_Odluka o dodeli ugovora.docx"
   }
 ]
