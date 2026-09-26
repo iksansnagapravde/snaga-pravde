@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 350000.0,
+    "lowest": 9202.0,
+    "difference": 340798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109154257,
+    "file": "documents/109154257_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 400000000.0,
     "lowest": 9202.0,
     "difference": 399990798.0,
@@ -86,16 +97,5 @@
     "rejection_reasons": [],
     "id": 106297827,
     "file": "documents/106297827_Odluka 802-0273-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103220817,
-    "file": "documents/103220817_Odluka Srebrno jezero.pdf"
   }
 ]
