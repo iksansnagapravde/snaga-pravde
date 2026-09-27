@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 4000000.0,
+    "lowest": 9202.0,
+    "difference": 3990798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 114022216,
+    "file": "documents/114022216_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 350000.0,
     "lowest": 9202.0,
     "difference": 340798.0,
@@ -86,16 +97,5 @@
     "rejection_reasons": [],
     "id": 14715600,
     "file": "documents/14715600_Odluka o dodeli ugovora 71U26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 450000000.0,
-    "lowest": 9202.0,
-    "difference": 449990798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka 802-0273-26.pdf"
   }
 ]
