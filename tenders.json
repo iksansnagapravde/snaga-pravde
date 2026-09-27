@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 12958056.0,
+    "lowest": 8202.0,
+    "difference": 12949854.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103223995,
+    "file": "documents/103223995_Odluka o dodeli ugovora - lož ulje.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 4000000.0,
     "lowest": 9202.0,
     "difference": 3990798.0,
@@ -86,16 +97,5 @@
     "rejection_reasons": [],
     "id": 100134507,
     "file": "documents/100134507_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 45000000.0,
-    "lowest": 4201.0,
-    "difference": 44995799.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 14715600,
-    "file": "documents/14715600_Odluka o dodeli ugovora 71U26.pdf"
   }
 ]
