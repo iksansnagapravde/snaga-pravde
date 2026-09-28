@@ -1,101 +1,112 @@
 [
   {
     "winner": null,
+    "accepted": 403200.0,
+    "lowest": 9202.0,
+    "difference": 393998.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101744155,
+    "file": "documents/101744155_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 400000000.0,
     "lowest": 9202.0,
     "difference": 399990798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100892360,
-    "file": "documents/100892360_Odluka o dodeli ugovora.docx"
+    "id": 100454087,
+    "file": "documents/100454087_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 2700000.0,
-    "lowest": 1640.0,
-    "difference": 2698360.0,
+    "accepted": 7800000.0,
+    "lowest": 9202.0,
+    "difference": 7790798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103965261,
-    "file": "documents/103965261_odluka o dodeli ugovora.pdf"
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 2700000.0,
-    "lowest": 1640.0,
-    "difference": 2698360.0,
+    "accepted": 1500000.0,
+    "lowest": 1448.0,
+    "difference": 1498552.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104209367,
-    "file": "documents/104209367_odluka o dodeli ugovora.pdf"
+    "id": 100222454,
+    "file": "documents/100222454_Odluka+o+dodeli+Ugovora+za+JN+26-26+PP,+Usluga+održavanja+softvera+AB+Soft.pdf"
   },
   {
     "winner": null,
-    "accepted": 84000.0,
-    "lowest": 1192.0,
-    "difference": 82808.0,
+    "accepted": 1549920.0,
+    "lowest": 9202.0,
+    "difference": 1540718.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103072561,
-    "file": "documents/103072561_Odluka o dodeli ugovora.docx"
+    "id": 100120497,
+    "file": "documents/100120497_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 1415000.0,
-    "lowest": 1399000.0,
-    "difference": 16000.0,
+    "accepted": 9500000.0,
+    "lowest": 2113.0,
+    "difference": 9497887.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100249211,
-    "file": "documents/100249211_JN 80 Odluka o dodeli ugovora.pdf"
+    "id": 104056656,
+    "file": "documents/104056656_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 1200000.0,
-    "lowest": 1192.0,
-    "difference": 1198808.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 115219363,
-    "file": "documents/115219363_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 94116.0,
+    "accepted": 113631716.8,
     "lowest": 2202.0,
-    "difference": 91914.0,
+    "difference": 113629514.8,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 111841397,
-    "file": "documents/111841397_Odluka.pdf"
+    "id": 100551620,
+    "file": "documents/100551620_odluka o dodeli ugovora posle Resenja RK. 404-1-8U-2026-05 (1).pdf"
   },
   {
     "winner": null,
-    "accepted": 11139046.8,
-    "lowest": 3210.0,
-    "difference": 11135836.8,
+    "accepted": 2217294.0,
+    "lowest": 1001.0,
+    "difference": 2216293.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 114378776,
-    "file": "documents/114378776_Odluka o dodeli ugovora.docx"
+    "id": 104410748,
+    "file": "documents/104410748_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": "Ugovor se dodeljuje pr",
+    "accepted": 2500.0,
+    "lowest": 2904.0,
+    "difference": -404.0,
+    "status": "ok",
+    "suspicious": false,
+    "rejection_reasons": [],
+    "id": 114950407,
+    "file": "documents/114950407_Odluka o dodeli JNOP 5.pdf"
   },
   {
     "winner": null,
-    "accepted": 2441790.5,
-    "lowest": 1100.0,
-    "difference": 2440690.5,
+    "accepted": 916575.0,
+    "lowest": 9202.0,
+    "difference": 907373.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100006031,
-    "file": "documents/100006031_Izmena odluke 188.pdf"
+    "id": 101715775,
+    "file": "documents/101715775_Odluka o dodeli ugovora.docx"
   }
 ]
