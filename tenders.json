@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 1153.0,
+    "difference": 2998847.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104918543,
+    "file": "documents/104918543_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 1250000.0,
+    "lowest": 1211.0,
+    "difference": 1248789.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100451699,
+    "file": "documents/100451699_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 403200.0,
     "lowest": 9202.0,
     "difference": 393998.0,
@@ -86,27 +108,5 @@
     "rejection_reasons": [],
     "id": 104410748,
     "file": "documents/104410748_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": "Ugovor se dodeljuje pr",
-    "accepted": 2500.0,
-    "lowest": 2904.0,
-    "difference": -404.0,
-    "status": "ok",
-    "suspicious": false,
-    "rejection_reasons": [],
-    "id": 114950407,
-    "file": "documents/114950407_Odluka o dodeli JNOP 5.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 916575.0,
-    "lowest": 9202.0,
-    "difference": 907373.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101715775,
-    "file": "documents/101715775_Odluka o dodeli ugovora.docx"
   }
 ]
