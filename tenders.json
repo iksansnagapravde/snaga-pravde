@@ -1,6 +1,50 @@
 [
   {
     "winner": null,
+    "accepted": 7000000.0,
+    "lowest": 2350.0,
+    "difference": 6997650.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113499861,
+    "file": "documents/113499861_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 2081200.0,
+    "lowest": 9202.0,
+    "difference": 2071998.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106401975,
+    "file": "documents/106401975_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3564720.0,
+    "lowest": 1223.0,
+    "difference": 3563497.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102704261,
+    "file": "documents/102704261_8. Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6283512.0,
+    "lowest": 1211.0,
+    "difference": 6282301.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100128650,
+    "file": "documents/100128650_ODLUKA O DODELI UGOVORA JNOP 48-2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 1100000.0,
     "lowest": 9202.0,
     "difference": 1090798.0,
@@ -20,71 +64,5 @@
     "rejection_reasons": [],
     "id": 103220817,
     "file": "documents/103220817_Odluka Brisel.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2500000.0,
-    "lowest": 8202.0,
-    "difference": 2491798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109946212,
-    "file": "documents/109946212_10-OP 48.26 - Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1410000.0,
-    "lowest": 9202.0,
-    "difference": 1400798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112310548,
-    "file": "documents/112310548_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 11944800.0,
-    "lowest": 7202.0,
-    "difference": 11937598.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 111040474,
-    "file": "documents/111040474_Odluka o dodeli ugovora + izvestaj OP - U 27-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 102912.0,
-    "lowest": 2202.0,
-    "difference": 100710.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100010829,
-    "file": "documents/100010829_1095 O-181.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1700000.0,
-    "lowest": 9202.0,
-    "difference": 1690798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 109203445,
-    "file": "documents/109203445_ODLUKA O DODELI UGOVORA 2-2026.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 528600.0,
-    "lowest": 4323.0,
-    "difference": 524277.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103869462,
-    "file": "documents/103869462_ODLUKA O DODELI AUTOMEHANICAR.pdf"
   }
 ]
