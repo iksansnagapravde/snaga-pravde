@@ -15,34 +15,6 @@
       "priority": 166
     },
     {
-      "id": "g-a-srbija-rusija-vucic-putin-state-department-33865832-html",
-      "title": "Stejt department povodom razgovora Vučića i Putina podsjeća na Rubiovu izjavu o problematičnim pitanjima",
-      "url": "https://www.slobodnaevropa.org/a/srbija-rusija-vucic-putin-state-department/33865832.html",
-      "date": "2026-09-28",
-      "datetime": "2026-09-28T14:29:30+00:00",
-      "time": "14:29",
-      "source": "RSE Balkan",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 130
-    },
-    {
-      "id": "9-napad-u-mirijevu-blokader-gurnuo-coveka-pod-auto-u-pokretu",
-      "title": "STRAVIČAN NAPAD U MIRIJEVU! Blokader gurnuo starca (81) NA AUTO U POKRETU: Sa kragnom HITNO prevezen u Urgentni! Policija TRAGA za napadačem! (VIDEO)",
-      "url": "https://www.kurir.rs/vesti/politika/10119049/napad-u-mirijevu-blokader-gurnuo-coveka-pod-auto-u-pokretu",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T18:35:06+00:00",
-      "time": "18:35",
-      "source": "Kurir",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 104
-    },
-    {
       "id": "83-hapsenje-u-kraljevu-iz-kase-poste-uzeo-milion-dinara-vest",
       "title": "Uhapšen šef blagajne \"Pošte Srbije\" u Kraljevu: Sumnjiči se da je proneverio 1,29 miliona dinara",
       "url": "https://www.euronews.rs/srbija/aktuelno/245083/hapsenje-u-kraljevu-iz-kase-poste-uzeo-milion-dinara/vest",
@@ -83,6 +55,20 @@
       "breaking": false,
       "alert": true,
       "priority": 94
+    },
+    {
+      "id": "jedan-od-uhapsenih-kod-raf-ferforda-sam-pozvao-policiju-vest",
+      "title": "Drama oko baze koju koriste američke trupe se ne smiruje; Cure novi detalji",
+      "url": "https://www.b92.net/info/svet/271968/jedan-od-uhapsenih-kod-raf-ferforda-sam-pozvao-policiju/vest",
+      "date": "2026-09-30",
+      "datetime": "2026-09-30T06:40:00+00:00",
+      "time": "06:40",
+      "source": "B92",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "umnjicen-i-za-pokusaj-narucivanja-dva-ubistva-u-inostranstvu",
@@ -253,20 +239,6 @@
       "priority": 92
     },
     {
-      "id": "tuelno-244804-leposavic-i-zubin-potok-zaplenjeno-oruzje-vest",
-      "title": "Kod Leposavića uhapšena jedna osoba nakon što je pronađeno oružje i municija",
-      "url": "https://www.euronews.rs/srbija/aktuelno/244804/leposavic-i-zubin-potok-zaplenjeno-oruzje/vest",
-      "date": "2026-09-28",
-      "datetime": "2026-09-28T05:43:00+00:00",
-      "time": "05:43",
-      "source": "Euronews Serbia",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "https-www-cins-rs-danka-ep-4-propusti-",
       "title": "Danka – EP 4: Propusti",
       "url": "https://www.cins.rs/danka-ep-4-propusti/",
@@ -279,20 +251,6 @@
       "breaking": false,
       "alert": true,
       "priority": 92
-    },
-    {
-      "id": "eogradu-uhapseni-dileri-pali-zbog-70-kilograma-droge-57ccxez",
-      "title": "(VIDEO) FILMSKA AKCIJA POLICIJE U BEOGRADU! U kombiju na Zrenjaninskom putu pronađeno više od 70 kilograma DROGE: Uhapšene dve osobe",
-      "url": "https://www.blic.rs/vesti/hronika/filmska-akcija-policije-u-beogradu-uhapseni-dileri-pali-zbog-70-kilograma-droge/57ccxez",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T17:13:31+00:00",
-      "time": "17:13",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
     },
     {
       "id": "osovicova-srbija-kosovo-ratni-zlocini-intervju-33864811-html",
@@ -393,20 +351,6 @@
       "priority": 78
     },
     {
-      "id": "-poste-iz-okoline-kuceva-jer-je-ukrao-vise-od-milion-dinara-",
-      "title": "Uhapšen radnik pošte iz okoline Kučeva jer je ukrao više od milion dinara",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-radnik-poste-iz-okoline-kuceva-jer-je-ukrao-vise-od-milion-dinara/",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T16:27:06+00:00",
-      "time": "16:27",
-      "source": "Danas",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 78
-    },
-    {
       "id": "ski-ministar-novac-za-kulturu-zavrsavao-za-izbornu-kampanju-",
       "title": "Uhapšen bivši mađarski ministar: Novac za kulturu završavao za izbornu kampanju",
       "url": "https://nova.rs/vesti/svet/uhapsen-bivsi-madjarski-ministar-novac-za-kulturu-zavrsavao-za-izbornu-kampanju/",
@@ -449,20 +393,6 @@
       "priority": 70
     },
     {
-      "id": "opasnosti-oni-se-sumnjice-da-su-27-septembra-oko-2040-casov-",
-      "title": "Zapalili zaštitnu mrežu na garaži JKP 'Parking servis', pa uhapšeni",
-      "url": "https://nova.rs/ministar-unutrasnjih-poslova-u-tehnickom-mandatu-ivica-dacic-izjavio-je-danas-da-je-policija-identifikovala-i-privela-dve-maloletne-osobe-zbog-sumnje-da-su-izvrsile-krivicno-delo-izazivanje-opste-opasnosti-oni-se-sumnjice-da-su-27-septembra-oko-2040-casov/",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T19:37:49+00:00",
-      "time": "19:37",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "u-nisu-uhapsen-kinez-zbog-sumnje-na-poresku-utaju-i-prevaru-",
       "title": "U Nišu uhapšen Kinez zbog sumnje na poresku utaju i prevaru",
       "url": "https://n1info.rs/vesti/u-nisu-uhapsen-kinez-zbog-sumnje-na-poresku-utaju-i-prevaru/",
@@ -470,20 +400,6 @@
       "datetime": "2026-09-29T17:52:29+00:00",
       "time": "17:52",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "ps-www-danas-rs-vesti-drustvo-uhapsen-kinez-poreska-prevara-",
-      "title": "U Nišu uhapšen Kinez zbog sumnje na poresku utaju i prevaru",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsen-kinez-poreska-prevara/",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T16:12:05+00:00",
-      "time": "16:12",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -503,6 +419,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-nita-kad-student-polije-policajca-vodom-ide-u-kuni-pritvor-",
+      "title": "Dva lica tužilaštva: Kad gradonačelnik odbornici polomi nos - nikom ništa, kad student polije policajca vodom - ide u kućni pritvor",
+      "url": "https://nova.rs/vesti/hronika/dva-lica-tuilatva-kad-gradonaelnik-odbornici-polomi-nos---nikom-nita-kad-student-polije-policajca-vodom---ide-u-kuni-pritvor/",
+      "date": "2026-09-30",
+      "datetime": "2026-09-30T05:14:47+00:00",
+      "time": "05:14",
+      "source": "Nova",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "lastvo-o-tatjani-micic-izvestaj-sa-mreza-nam-nije-preda-vest",
@@ -547,20 +477,6 @@
       "priority": 66
     },
     {
-      "id": "ormer-osnovali-novu-cerku-firmu-u-prijepolju-lokalni-mediji-",
-      "title": "Alo i Informer osnovali novu ćerku firmu u Prijepolju, šire mrežu lokalnih medija",
-      "url": "https://vreme.com/drustvo/alo-i-informer-osnovali-novu-cerku-firmu-u-prijepolju-lokalni-mediji/",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T10:15:27+00:00",
-      "time": "10:15",
-      "source": "Vreme",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "ministri-madjarska-zloupotrebe-vredne-desetine-miliona-evra-",
       "title": "Istrage protiv bivših ministara u Mađarskoj: Sumnja se na zloupotrebe vredne desetine miliona evra",
       "url": "https://n1info.rs/svet/istrage-bivsi-ministri-madjarska-zloupotrebe-vredne-desetine-miliona-evra/",
@@ -589,20 +505,6 @@
       "priority": 34
     },
     {
-      "id": "ika-tepic-evropska-srbija-u-fokusu-je-borba-protiv-korupcije",
-      "title": "Marinika Tepić (Evropska Srbija):U fokusu je borba protiv korupcije",
-      "url": "https://beta.rs/content/252922-marinika-tepic-evropska-srbija-u-fokusu-je-borba-protiv-korupcije",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T20:15:09+00:00",
-      "time": "20:15",
-      "source": "Beta",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
       "id": "olitika-izbori26-tepic-srbija-nije-siromasna-vec-opljackana-",
       "title": "Tepić (Evropska Srbija): Srbija nije siromašna, već opljačkana zemlja, treba da se sprovede demontaža sistema",
       "url": "https://www.danas.rs/vesti/politika/izbori26/tepic-srbija-nije-siromasna-vec-opljackana/",
@@ -610,20 +512,6 @@
       "datetime": "2026-09-29T20:12:05+00:00",
       "time": "20:12",
       "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 30
-    },
-    {
-      "id": "sata-potrebna-je-demontaza-sistema-prioritet-bia-mediji-eps-",
-      "title": "Marinika Tepić: Nije dovoljno smeniti vlast, u prva 24 sata potrebna je \"demontaža sistema\" - prioritet BIA, mediji, EPS",
-      "url": "https://nova.rs/vesti/politika/marinika-tepic-nije-dovoljno-smeniti-vlast-u-prva-24-sata-potrebna-je-demontaza-sistema-prioritet-bia-mediji-eps/",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T18:42:41+00:00",
-      "time": "18:42",
-      "source": "Nova",
       "category": "Корупција",
       "summary": "",
       "breaking": false,
@@ -659,20 +547,6 @@
       "priority": 30
     },
     {
-      "id": "i-grupa-u-spaniji-muskarac-izgovorio-jezivu-recenicu-ylymftf",
-      "title": "IZGOVORIO JEZIVU REČENICU DOK MU JE KRV IŠLA IZ USTA! Odjekivali pucnji, policija u kući strave zatekla scene kao iz Tarantinovih filmova: Razbijena velika SRPSKA KRIMI GRUPA, ali nova akcija tek sledi?!",
-      "url": "https://www.blic.rs/vesti/hronika/razbijena-velika-srpska-krimi-grupa-u-spaniji-muskarac-izgovorio-jezivu-recenicu/ylymftf",
-      "date": "2026-09-29",
-      "datetime": "2026-09-29T17:07:46+00:00",
-      "time": "17:07",
-      "source": "Blic",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 28
-    },
-    {
       "id": "vropa-org-a-ruske-stranke-srbija-rusija-izbori-33865845-html",
       "title": "Ruske stranke u Srbiji: Manjinski status, proruski sentiment i politička računica",
       "url": "https://www.slobodnaevropa.org/a/ruske-stranke-srbija-rusija-izbori/33865845.html",
@@ -699,6 +573,132 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "ci-dan-paralisan-strajkom-prevoz-gotovo-stao-smece-se-gomila",
+      "title": "Загреб трећи дан паралисан штрајком: превоз готово стао, смеће се гомила",
+      "url": "https://www.politika.rs/scc/clanak/789538/zagreb-treci-dan-paralisan-strajkom-prevoz-gotovo-stao-smece-se-gomila",
+      "date": "2026-09-30",
+      "datetime": "2026-09-30T06:38:00+00:00",
+      "time": "06:38",
+      "source": "Politika",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "ornoj-utakmici-stranke-misle-o-spoljnoj-politici-srbije-html",
+      "title": "Од трња и турског седа, до клечања и пузања - шта у предизборној утакмици странке мисле о спољној политици Србије",
+      "url": "https://www.rts.rs/vesti/izbori-2026/6051356/od-trnja-i-turskog-seda-do-klecanja-i-puzanja---sta-u-predizbornoj-utakmici-stranke-misle-o-spoljnoj-politici-srbije.html",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T22:07:57+00:00",
+      "time": "22:07",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "dnaevropa-org-a-ovk-zrtve-ratni-zlocini-kosovo-33865636-html",
+      "title": "Zašto se na Kosovu ne govori o žrtvama ratnih zločina OVK?",
+      "url": "https://www.slobodnaevropa.org/a/ovk-zrtve-ratni-zlocini-kosovo/33865636.html",
+      "date": "2026-09-30",
+      "datetime": "2026-09-30T05:30:17+00:00",
+      "time": "05:30",
+      "source": "RSE Balkan",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "uelno-245084-suspendovan-tender-za-tramvaje-gsp-beograd-vest",
+      "title": "Privremeno suspendovan tender za nabavku novih tramvaja za GSP Beograd vredan 40 milijardi dinara",
+      "url": "https://www.euronews.rs/srbija/aktuelno/245084/suspendovan-tender-za-tramvaje-gsp-beograd/vest",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T16:00:00+00:00",
+      "time": "16:00",
+      "source": "Euronews Serbia",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "lune-i-kije-napravila-idealnu-zenu-ljubavi-to-sam-ja-s70140d",
+      "title": "\"PA LJUBAVI, TO SAM JA\" Jelena Radanović birala između Lune i Kije, pa sve ŠOKIRALA odgovorom: Napravila od njih dve idealnu ženu i izazvala smeh u studiju",
+      "url": "https://www.blic.rs/zabava/jelena-radanovic-od-lune-i-kije-napravila-idealnu-zenu-ljubavi-to-sam-ja/s70140d",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T21:10:37+00:00",
+      "time": "21:10",
+      "source": "Blic",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ednik-rumunije-pritvoren-zbog-milionske-prevare-privrednika-",
+      "title": "Nesuđeni proruski predsednik Rumunije pritvoren zbog milionske prevare privrednika",
+      "url": "https://n1info.rs/vesti/nesudjeni-proruski-predsednik-rumunije-pritvoren-zbog-milionske-prevare-privrednika/",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T21:09:47+00:00",
+      "time": "21:09",
+      "source": "N1",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ednik-rumunije-pritvoren-zbog-milionske-prevare-privrednika-",
+      "title": "Nesuđeni proruski predsednik Rumunije pritvoren zbog milionske prevare privrednika",
+      "url": "https://nova.rs/vesti/svet/nesudjeni-proruski-predsednik-rumunije-pritvoren-zbog-milionske-prevare-privrednika/",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T19:59:13+00:00",
+      "time": "19:59",
+      "source": "Nova",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "ednik-rumunije-pritvoren-zbog-milionske-prevare-privrednika-",
+      "title": "Nesuđeni proruski predsednik Rumunije pritvoren zbog milionske prevare privrednika",
+      "url": "https://www.danas.rs/svet/region/nesudjeni-proruski-predsednik-rumunije-pritvoren-zbog-milionske-prevare-privrednika/",
+      "date": "2026-09-29",
+      "datetime": "2026-09-29T19:44:20+00:00",
+      "time": "19:44",
+      "source": "Danas",
+      "category": "Лишени слободе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
+    },
+    {
+      "id": "g-a-otkriven-spomenik-knez-lazar-banjaluka-bih-33865721-html",
+      "title": "Otkriven spomenik knezu Lazaru u Banjaluci",
+      "url": "https://www.slobodnaevropa.org/a/otkriven-spomenik-knez-lazar-banjaluka-bih/33865721.html",
+      "date": "2026-09-28",
+      "datetime": "2026-09-28T18:30:24+00:00",
+      "time": "18:30",
+      "source": "RSE Balkan",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     }
   ],
   "all_sources": [
