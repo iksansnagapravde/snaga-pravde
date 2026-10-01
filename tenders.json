@@ -1,6 +1,61 @@
 [
   {
     "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 1920.0,
+    "difference": 399998080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100454087,
+    "file": "documents/100454087_Odluka Doblo zavedena 30.9.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 50000000.0,
+    "lowest": 1920.0,
+    "difference": 49998080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100992478,
+    "file": "documents/100992478_0dluka o dodeli ugovora ACG 4000-6.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1250000.0,
+    "lowest": 9202.0,
+    "difference": 1240798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101350524,
+    "file": "documents/101350524_18 - Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 1920.0,
+    "difference": 399998080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106001296,
+    "file": "documents/106001296_odluka o dodeli ugovora doblo 3938.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 400000000.0,
+    "lowest": 1326.0,
+    "difference": 399998674.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100259155,
+    "file": "documents/100259155_odluka o dodeli ugovora uaz 3936-.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 19903020.0,
     "lowest": 10202.0,
     "difference": 19892818.0,
@@ -20,71 +75,5 @@
     "rejection_reasons": [],
     "id": 103605787,
     "file": "documents/103605787_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 58800.0,
-    "lowest": 1202.0,
-    "difference": 57598.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_Odluka.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 14109360.0,
-    "lowest": 6105.0,
-    "difference": 14103255.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 112539574,
-    "file": "documents/112539574_ODLUKA O DODELI UGOVORA 67-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 420000.0,
-    "lowest": 10202.0,
-    "difference": 409798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100426309,
-    "file": "documents/100426309_Odluka o dodeli ugovora JN 20-26.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 2000000.0,
-    "lowest": 1920.0,
-    "difference": 1998080.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107659818,
-    "file": "documents/107659818_Odluka o dodeli ugovora JN 24-5-2026 Gradevinski materijal.pdf"
-  },
-  {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 1800000.0,
-    "lowest": 1970.0,
-    "difference": 1798030.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104570038,
-    "file": "documents/104570038_Odluka o dodeli ugovora JN 24-6-2026 GM - Hidroizolacija.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 65639659.68,
-    "lowest": 2920.0,
-    "difference": 65636739.68,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101378719,
-    "file": "documents/101378719_odluka o dodeli partija 1.pdf"
   }
 ]
