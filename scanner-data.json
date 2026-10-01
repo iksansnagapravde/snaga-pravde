@@ -43,6 +43,20 @@
       "priority": 94
     },
     {
+      "id": "clanak-789817-na-protestima-u-francuskoj-sukobi-sa-policijom",
+      "title": "На протестима у Француској сукоби са полицијом",
+      "url": "https://www.politika.rs/scc/clanak/789817/na-protestima-u-francuskoj-sukobi-sa-policijom",
+      "date": "2026-09-30",
+      "datetime": "2026-09-30T23:08:00+00:00",
+      "time": "23:08",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "na-protestima-u-francuskoj-uhapseno-625-ljudi-povredjeno-199",
       "title": "AKCIJA BLOKIRANJA SREDNJIH ŠKOLA U FRANCUSKOJ: Na protestima uhapšeno 625 ljudi, povređeno 199, od čega 83 policajca! (FOTO)",
       "url": "https://www.kurir.rs/planeta/10120286/na-protestima-u-francuskoj-uhapseno-625-ljudi-povredjeno-199",
@@ -64,20 +78,6 @@
       "datetime": "2026-09-30T20:22:33+00:00",
       "time": "20:22",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "89793-uhapsen-osumnjiceni-za-udaranje-sipkom-muskarca-u-nisu",
-      "title": "Ухапшен осумњичени за ударање шипком мушкарца у Нишу",
-      "url": "https://www.politika.rs/scc/clanak/789793/uhapsen-osumnjiceni-za-udaranje-sipkom-muskarca-u-nisu",
-      "date": "2026-09-30",
-      "datetime": "2026-09-30T20:12:00+00:00",
-      "time": "20:12",
-      "source": "Politika",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -134,20 +134,6 @@
       "datetime": "2026-09-30T18:42:36+00:00",
       "time": "18:42",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "hronika-10120141-uhapsen-pripadnik-vracarskog-klana-u-solunu",
-      "title": "JEDAN OD GLAVNIH ČLANOVA VRAČARSKOG KLANA UHAPŠEN U SOLUNU! Sumnja se da on stoji iza serije bacanja bombi na lokale po Beogradu!",
-      "url": "https://www.kurir.rs/crna-hronika/10120141/uhapsen-pripadnik-vracarskog-klana-u-solunu",
-      "date": "2026-09-30",
-      "datetime": "2026-09-30T17:20:55+00:00",
-      "time": "17:20",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -307,6 +293,20 @@
       "breaking": false,
       "alert": true,
       "priority": 90
+    },
+    {
+      "id": "gion-crna-gora-10120154-nasilje-u-porodici-u-kuci-u-rozajama",
+      "title": "PRETIO OCU, MAJCI, SESTRI I SUPRUZI, PA NASRNUO NA RODITELJE: Nasilje u porodici u Rožajama - odmah uhapšen",
+      "url": "https://www.kurir.rs/region/crna-gora/10120154/nasilje-u-porodici-u-kuci-u-rozajama",
+      "date": "2026-09-30",
+      "datetime": "2026-09-30T22:32:00+00:00",
+      "time": "22:32",
+      "source": "Kurir",
+      "category": "Насиље у породици",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 88
     },
     {
       "id": "a-u-kojoj-se-spominje-tuzilac-ivanic-dopisana-u-skaj-poruku-",
