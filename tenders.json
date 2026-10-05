@@ -1,68 +1,46 @@
 [
   {
     "winner": null,
-    "accepted": 4000000.0,
-    "lowest": 4602.7,
-    "difference": 3995397.3,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100582258,
-    "file": "documents/100582258_Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 53688.0,
-    "lowest": 1202.0,
-    "difference": 52486.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_Odluka o izdavanju pojedinacne narudžbenice - 57.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 11260.0,
+    "accepted": 45153.0,
     "lowest": 10202.0,
-    "difference": 1058.0,
+    "difference": 34951.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 105761886,
-    "file": "documents/105761886_Odluka o dodeli.docx"
+    "id": 104918543,
+    "file": "documents/104918543_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 11260.0,
+    "accepted": 45153.0,
     "lowest": 10202.0,
-    "difference": 1058.0,
+    "difference": 34951.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100057630,
-    "file": "documents/100057630_Odluka o dodeli.docx"
+    "id": 106900792,
+    "file": "documents/106900792_Odluka o dodeli.docx"
   },
   {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 2812800.0,
-    "lowest": 4120.0,
-    "difference": 2808680.0,
+    "winner": null,
+    "accepted": 45153.0,
+    "lowest": 10202.0,
+    "difference": 34951.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 108392380,
-    "file": "documents/108392380_Odluka o dodeli JN 0008_2026_SKEN.pdf"
+    "id": 101191412,
+    "file": "documents/101191412_Odluka o dodeli.docx"
   },
   {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 2812800.0,
-    "lowest": 4120.0,
-    "difference": 2808680.0,
+    "winner": null,
+    "accepted": 2800000.0,
+    "lowest": 10202.0,
+    "difference": 2789798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 107995464,
-    "file": "documents/107995464_Odluka o dodeli JN 0008_2026_SKEN.pdf"
+    "id": 100096698,
+    "file": "documents/100096698_Odluka o dodeli ugovora.docx"
   }
 ]
