@@ -1,46 +1,68 @@
 [
   {
     "winner": null,
-    "accepted": 45153.0,
-    "lowest": 10202.0,
-    "difference": 34951.0,
+    "accepted": 10202.0,
+    "lowest": 2110.0,
+    "difference": 8092.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104918543,
-    "file": "documents/104918543_Odluka o dodeli.docx"
+    "id": 106772920,
+    "file": "documents/106772920_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 45153.0,
-    "lowest": 10202.0,
-    "difference": 34951.0,
+    "accepted": 10202.0,
+    "lowest": 2110.0,
+    "difference": 8092.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106900792,
-    "file": "documents/106900792_Odluka o dodeli.docx"
+    "id": 100000266,
+    "file": "documents/100000266_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 45153.0,
-    "lowest": 10202.0,
-    "difference": 34951.0,
+    "accepted": 10202.0,
+    "lowest": 2110.0,
+    "difference": 8092.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101191412,
-    "file": "documents/101191412_Odluka o dodeli.docx"
+    "id": 101743912,
+    "file": "documents/101743912_Odluka o dodeli.docx"
   },
   {
     "winner": null,
-    "accepted": 2800000.0,
-    "lowest": 10202.0,
-    "difference": 2789798.0,
+    "accepted": 10202.0,
+    "lowest": 1243.0,
+    "difference": 8959.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100096698,
-    "file": "documents/100096698_Odluka o dodeli ugovora.docx"
+    "id": 100463356,
+    "file": "documents/100463356_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 17340480.0,
+    "lowest": 10202.0,
+    "difference": 17330278.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104052135,
+    "file": "documents/104052135_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 7500000.0,
+    "lowest": 9202.0,
+    "difference": 7490798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101035423,
+    "file": "documents/101035423_Odluka 132-1.pdf"
   }
 ]
