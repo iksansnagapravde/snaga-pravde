@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "id": "-u-moskvi-se-oglasila-nakon-moguce-pojave-kuge-u-rusiji-vest",
+      "title": "Izdato novo upozorenje: &quot;Amerikanci, odmah napustite Rusiju&quot;",
+      "url": "https://www.b92.net/info/svet/274022/ambasada-sad-u-moskvi-se-oglasila-nakon-moguce-pojave-kuge-u-rusiji/vest",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T21:13:00+00:00",
+      "time": "21:13",
+      "source": "B92",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "143-filmska-prevara-u-nisu-lazni-producent-uzeo-milione-vest",
       "title": "Uhapšen u Nišu: Osumnjičen da je glumio producenta, pa prevario ugostitelja i rentakar za skoro osam miliona",
       "url": "https://www.euronews.rs/srbija/aktuelno/246143/filmska-prevara-u-nisu-lazni-producent-uzeo-milione/vest",
@@ -71,6 +85,34 @@
       "priority": 94
     },
     {
+      "id": "akron-sazvao-hitan-sastanak-zbog-nereda-u-francuskoj-pj5s3gm",
+      "title": "MAKRON SAZVAO HITAN SASTANAK ZBOG NEREDA U FRANCUSKOJ Na protestima širom zemlje više od 250.000 demonstranata, u jednom danu uhapšeno njih 488: Ministri se okupljaju u Jelisejskoj palati",
+      "url": "https://www.blic.rs/vesti/svet/makron-sazvao-hitan-sastanak-zbog-nereda-u-francuskoj/pj5s3gm",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T22:39:00+00:00",
+      "time": "22:39",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "s-www-danas-rs-vesti-politika-napad-na-poslanika-u-pristini-",
+      "title": "Pritvor dvojici demonstranata u Prištini, jedan osumnjičen za napad na poslanika",
+      "url": "https://www.danas.rs/vesti/politika/napad-na-poslanika-u-pristini/",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T22:28:26+00:00",
+      "time": "22:28",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "eograd-uhapsen-osumnjiceni-za-pozar-u-visnjicevoj-ulici-vest",
       "title": "Uhapšen osumnjičeni za požar u Višnjićevoj: Zapaljivom tečnošću polio unutrašnjost lokala (VIDEO)",
       "url": "https://www.euronews.rs/srbija/aktuelno/246228/beograd-uhapsen-osumnjiceni-za-pozar-u-visnjicevoj-ulici/vest",
@@ -85,20 +127,6 @@
       "priority": 92
     },
     {
-      "id": "10125875-uhapsen-zbog-pokusaja-ubistva-tinejdzera-na-dorcolu",
-      "title": "IZBO TINEJDŽERA NA DORĆOLU: Uhapšen (19) zbog pokušaja ubistva - evo šta se dogodilo te noći u Ulici braće Jugovića",
-      "url": "https://www.kurir.rs/crna-hronika/10125875/uhapsen-zbog-pokusaja-ubistva-tinejdzera-na-dorcolu",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T17:29:17+00:00",
-      "time": "17:29",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "nozem-i-pocela-da-ubada-djake-u-istanbulu-ima-mrtvih-ehx87l8",
       "title": "(VIDEO) DEVOJČICA (15) UPALA U ŠKOLU SS NOŽEM I NASUMIČNO UBADALA ĐAKE! Užas u Istanbulu: Ima mrtvih, sedmoro ranjeno",
       "url": "https://www.blic.rs/vesti/svet/devojcica-15-upala-u-skolu-s-nozem-i-pocela-da-ubada-djake-u-istanbulu-ima-mrtvih/ehx87l8",
@@ -106,34 +134,6 @@
       "datetime": "2026-10-06T17:21:10+00:00",
       "time": "17:21",
       "source": "Blic",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "bog-sumnje-da-je-izazvao-pozar-u-lokalu-u-visnjicevoj-ulici-",
-      "title": "Uhapšen muškarac u Beogradu zbog sumnje da je izazvao požar u lokalu u Višnjićevoj ulici",
-      "url": "https://nova.rs/vesti/hronika/uhapsen-muskarac-u-beogradu-zbog-sumnje-da-je-izazvao-pozar-u-lokalu-u-visnjicevoj-ulici/",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T17:04:56+00:00",
-      "time": "17:04",
-      "source": "Nova",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "apsen-mladic-koji-je-polio-i-zapalio-lokal-u-centru-beograda",
-      "title": "POLIO LOKAL ZAPALJIVOM TEČNOŠĆU, PA GA ZAPALIO! Mladić (27) uhapšen zbog jezivog požara u u Beogradu: Lisice na ruke posle brze akcije UKP!",
-      "url": "https://www.kurir.rs/crna-hronika/10125845/pozar-u-visnjicevoj-ulici-uhapsen-mladic-koji-je-polio-i-zapalio-lokal-u-centru-beograda",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T16:58:54+00:00",
-      "time": "16:58",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -267,6 +267,20 @@
       "priority": 76
     },
     {
+      "id": "46233-beograd-uhapsen-osumnjiceni-za-ubistvo-u-pokusaju-vest",
+      "title": "Uhapšen zbog sumnje pokušaja ubistva, određeno mu zadržavanja do 48 časova",
+      "url": "https://www.euronews.rs/srbija/aktuelno/246233/beograd-uhapsen-osumnjiceni-za-ubistvo-u-pokusaju/vest",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T21:30:00+00:00",
+      "time": "21:30",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "a-uhapsen-tinejdzer-zbog-pokusaja-ubistva-u-centru-beograda-",
       "title": "Uhapšen tinejdžer zbog pokušaja ubistva u centru Beograda",
       "url": "https://nova.rs/vesti/hronika/uhapsen-tinejdzer-zbog-pokusaja-ubistva-u-centru-beograda/",
@@ -309,18 +323,18 @@
       "priority": 72
     },
     {
-      "id": "iroman-iz-visnjiceve-zapalio-lokal-u-centru-beograda-333y1kk",
-      "title": "UŠAO U LOKAL I ZAPALIO GA Uhapšen piroman posle haosa u centru Beograda: Načinio ogromnu materijalnu štetu",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-piroman-iz-visnjiceve-zapalio-lokal-u-centru-beograda/333y1kk",
+      "id": "mobilu-pronadjeno-preko-200-grama-kokaina-uhapsen-niksicanin",
+      "title": "ZAUSTAVILI NIKŠIĆANINA KOD KOLAŠINA I PRETRAŽILI MU AUTO: Policija mu pronašla više od 200 grama kokaina, odmah uhapšen",
+      "url": "https://www.kurir.rs/region/crna-gora/10125699/u-automobilu-pronadjeno-preko-200-grama-kokaina-uhapsen-niksicanin",
       "date": "2026-10-06",
-      "datetime": "2026-10-06T17:03:21+00:00",
-      "time": "17:03",
-      "source": "Blic",
-      "category": "Тужилаштво",
+      "datetime": "2026-10-06T22:50:00+00:00",
+      "time": "22:50",
+      "source": "Kurir",
+      "category": "Полиција",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 72
+      "priority": 70
     },
     {
       "id": "novi-pazar-uhapsene-dve-osobe-zaplenjeni-kokain-i-smesa-vest",
@@ -330,20 +344,6 @@
       "datetime": "2026-10-06T21:00:00+00:00",
       "time": "21:00",
       "source": "Euronews Serbia",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "-clanak-791441-policija-suzavcem-na-srednjoskolce-ulice-gore",
-      "title": "Полиција сузавцем на средњошколце, улице горе",
-      "url": "https://www.politika.rs/scc/clanak/791441/policija-suzavcem-na-srednjoskolce-ulice-gore",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T20:18:00+00:00",
-      "time": "20:18",
-      "source": "Politika",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -421,6 +421,20 @@
       "priority": 70
     },
     {
+      "id": "sku-umotanu-u-majicu-usledio-horor-radnik-pogodjen-u-bsh2bf5",
+      "title": "\"USRED RAZVRSTAVANJA POŠTE ODJEKNUO PUCANJ! Mladić (23) poslao napunjenu pušku umotanu u majicu, usledio HOROR: Radnik pogođen u nogu",
+      "url": "https://www.blic.rs/vesti/hronika/mladic-23-poslao-napunjenu-pusku-umotanu-u-majicu-usledio-horor-radnik-pogodjen-u/bsh2bf5",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T23:03:00+00:00",
+      "time": "23:03",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "gnuta-optuznica-za-ubistvo-muskarca-macetom-u-obrenovcu-vest",
       "title": "Posle svađe izvukao mačetu i zadao smrtonosni ubod: Podignuta optužnica za ubistvo u Obrenovcu",
       "url": "https://www.euronews.rs/srbija/aktuelno/245997/podignuta-optuznica-za-ubistvo-muskarca-macetom-u-obrenovcu/vest",
@@ -491,20 +505,6 @@
       "priority": 60
     },
     {
-      "id": "-danas-rs-vesti-drustvo-redakcija-n1-menadzment-dozvola-rem-",
-      "title": "Redakcija N1 od menadžmenta traži da trenutno obustavi postupak za dozvolu za emitovanje u Srbiji",
-      "url": "https://www.danas.rs/vesti/drustvo/redakcija-n1-menadzment-dozvola-rem/",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T16:10:42+00:00",
-      "time": "16:10",
-      "source": "Danas",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "inistarka-maja-popovic-kupila-stan-vredan-pola-miliona-evra-",
       "title": "Bivša ministarka Maja Popović kupila stan vredan pola miliona evra",
       "url": "https://www.krik.rs/bivsa-ministarka-maja-popovic-kupila-stan-vredan-pola-miliona-evra/",
@@ -547,6 +547,20 @@
       "priority": 30
     },
     {
+      "id": "o-rs-svet-london-engleska-lazno-predstavljanje-gej-migranti-",
+      "title": "Organizacija pomagala migrantima da se predstavljaju kao gej, da bi dobili azil: Racija u Londonu",
+      "url": "https://n1info.rs/svet/london-engleska-lazno-predstavljanje-gej-migranti/",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T21:25:00+00:00",
+      "time": "21:25",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "rinovic-potrebne-izmene-zakona-o-pristupu-informacijama-vest",
       "title": "Zakon o slobodnom pristupu informacijama: Marinović upozorava na sistemsku zloupotrebu prava",
       "url": "https://www.euronews.rs/srbija/politika/245972/marinovic-potrebne-izmene-zakona-o-pristupu-informacijama/vest",
@@ -587,6 +601,20 @@
       "breaking": false,
       "alert": false,
       "priority": 26
+    },
+    {
+      "id": "esti-politika-6056447-kosovo-taci-sudjenje-ovk-protesti-html",
+      "title": "Приштина – усвојене измене закона о Специјализованим већима",
+      "url": "https://www.rts.rs/vesti/politika/6056447/kosovo-taci-sudjenje-ovk-protesti-.html",
+      "date": "2026-10-06",
+      "datetime": "2026-10-06T22:49:28+00:00",
+      "time": "22:49",
+      "source": "RTS",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
     },
     {
       "id": "-274015-pudzdemon-doneo-odluku-da-se-ne-vrati-u-spaniju-vest",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "-kamerama-i-pretnjom-oruzjem-otkrivena-radna-kuca-kod-moskve",
-      "title": "Иза високог зида, под камерама и претњом оружјем: откривена „радна кућа” код Москве",
-      "url": "https://www.politika.rs/scc/clanak/791451/iza-visokog-zida-pod-kamerama-i-pretnjom-oruzjem-otkrivena-radna-kuca-kod-moskve",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T21:01:00+00:00",
-      "time": "21:01",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
-    },
-    {
-      "id": "a-u-bulevaru-kralja-aleksandra-hitna-reanimira-osobu-899d2qn",
-      "title": "HITNA REANIMIRA OSOBU U BULEVARU KRALJA ALEKSANDRA Teška nesreća u Beogradu, motor prevrnut, policija na licu mesta",
-      "url": "https://www.blic.rs/vesti/hronika/teska-nesreca-u-bulevaru-kralja-aleksandra-hitna-reanimira-osobu/899d2qn",
-      "date": "2026-10-06",
-      "datetime": "2026-10-06T20:35:45+00:00",
-      "time": "20:35",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
