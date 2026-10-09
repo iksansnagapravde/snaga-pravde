@@ -1,6 +1,39 @@
 [
   {
     "winner": null,
+    "accepted": 1879049.54,
+    "lowest": 10202.0,
+    "difference": 1868847.54,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 1443520.64,
+    "lowest": 1260.0,
+    "difference": 1442260.64,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101669209,
+    "file": "documents/101669209_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 1537678.92,
+    "lowest": 2214.0,
+    "difference": 1535464.92,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100398303,
+    "file": "documents/100398303_RB 0009-2026  Odluka o dodeli ugovora - RADOVI NA SANACIJI ULICA MALI BAC.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 210000.0,
     "lowest": 1212.0,
     "difference": 208788.0,
@@ -53,38 +86,5 @@
     "rejection_reasons": [],
     "id": 100057630,
     "file": "documents/100057630_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10202.0,
-    "lowest": 4212.0,
-    "difference": 5990.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100126308,
-    "file": "documents/100126308_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10202.0,
-    "lowest": 4212.0,
-    "difference": 5990.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101738634,
-    "file": "documents/101738634_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 10202.0,
-    "lowest": 4212.0,
-    "difference": 5990.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100031380,
-    "file": "documents/100031380_Odluka o dodeli.docx"
   }
 ]
