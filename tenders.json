@@ -1,5 +1,16 @@
 [
   {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 284697.6,
+    "lowest": 9202.0,
+    "difference": 275495.6,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113968564,
+    "file": "documents/113968564_Odluka o dodeli ugovora (186a 2026).pdf"
+  },
+  {
     "winner": null,
     "accepted": 3000000.0,
     "lowest": 2240.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100023525,
     "file": "documents/100023525_Odluka o dodeli ugovora - partije 1, 2 i 3.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 3430000.0,
-    "lowest": 4417.0,
-    "difference": 3425583.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103248752,
-    "file": "documents/103248752_Odluka o dodeli ugovora - partije 1, 2 i 3.pdf"
   }
 ]
