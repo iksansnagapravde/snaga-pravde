@@ -57,34 +57,6 @@
       "priority": 92
     },
     {
-      "id": "isa-mateja-nikolic-pusten-iz-pritvora-da-se-brani-sa-slobode",
-      "title": "Student iz Niša Mateja Nikolić pušten iz pritvora da se brani sa slobode",
-      "url": "https://beta.rs/content/253618-student-iz-nisa-mateja-nikolic-pusten-iz-pritvora-da-se-brani-sa-slobode",
-      "date": "2026-10-09",
-      "datetime": "2026-10-09T20:20:08+00:00",
-      "time": "20:20",
-      "source": "Beta",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "11-oglasio-se-mihail-zvincuk-idemo-kuci-zahvalnost-zaharovoj",
-      "title": "Огласио се Михаил Звинчук: Идемо кући, захвалност Захаровој",
-      "url": "https://www.politika.rs/scc/clanak/792311/oglasio-se-mihail-zvincuk-idemo-kuci-zahvalnost-zaharovoj",
-      "date": "2026-10-09",
-      "datetime": "2026-10-09T20:14:00+00:00",
-      "time": "20:14",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "sa-mateja-nikolic-pusten-iz-pritvora-da-se-brani-sa-slobode-",
       "title": "Student iz Niša Mateja Nikolić pušten iz pritvora da se brani sa slobode",
       "url": "https://nova.rs/vesti/hronika/student-iz-nisa-mateja-nikolic-pusten-iz-pritvora-da-se-brani-sa-slobode/",
@@ -307,6 +279,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "2332-sbu-devojcica-14-po-nalogu-fsb-ubila-vojnog-instruktora",
+      "title": "СБУ: девојчица (14) по налогу ФСБ убила војног инструктора",
+      "url": "https://www.politika.rs/scc/clanak/792332/sbu-devojcica-14-po-nalogu-fsb-ubila-vojnog-instruktora",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T23:36:00+00:00",
+      "time": "23:36",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "sudenje-za-pucnjavu-i-pozar-ispred-skupstine-12-oktobra-vest",
@@ -699,6 +685,20 @@
       "breaking": false,
       "alert": false,
       "priority": 4
+    },
+    {
+      "id": "potkopala-mogucnost-pregovora-napadom-dronovima-tokom-izbora",
+      "title": "Путин: Украјина поткопала могућност преговора нападом дроновима током избора",
+      "url": "https://www.politika.rs/scc/clanak/792331/putin-ukrajina-potkopala-mogucnost-pregovora-napadom-dronovima-tokom-izbora",
+      "date": "2026-10-09",
+      "datetime": "2026-10-09T23:19:00+00:00",
+      "time": "23:19",
+      "source": "Politika",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 0
     }
   ],
   "all_sources": [
