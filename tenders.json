@@ -1,79 +1,101 @@
 [
   {
-    "winner": null,
-    "accepted": 10202.0,
-    "lowest": 9110.0,
-    "difference": 1092.0,
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 1250000.0,
+    "lowest": 1920.0,
+    "difference": 1248080.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 102037510,
-    "file": "documents/102037510_Odluka o dodeli.docx"
+    "id": 105079666,
+    "file": "documents/105079666_Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 142679280.0,
+    "accepted": 1600000.0,
+    "lowest": 1920.0,
+    "difference": 1598080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101191412,
+    "file": "documents/101191412_Odluka o dodeli.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4122000.0,
     "lowest": 9202.0,
-    "difference": 142670078.0,
+    "difference": 4112798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104910987,
-    "file": "documents/104910987_8. Odluka o dodeli ugovora.pdf"
+    "id": 100736428,
+    "file": "documents/100736428_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 42096000.0,
-    "lowest": 5231.0,
-    "difference": 42090769.0,
+    "accepted": 6000000.0,
+    "lowest": 2202.0,
+    "difference": 5997798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100421071,
-    "file": "documents/100421071_Odluka o dodeli ugovora.docx"
+    "id": 109780192,
+    "file": "documents/109780192_Odluka o dodeli ugovora D-26-26 Partija 1.pdf"
   },
   {
     "winner": null,
-    "accepted": 1526400.0,
+    "accepted": 10000000.0,
     "lowest": 10202.0,
-    "difference": 1516198.0,
+    "difference": 9989798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101913424,
-    "file": "documents/101913424_Odluka o dodeli ugovora.docx"
+    "id": 104217668,
+    "file": "documents/104217668_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 104110.0,
-    "lowest": 9404.0,
-    "difference": 94706.0,
+    "accepted": 10782000.0,
+    "lowest": 4202.0,
+    "difference": 10777798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106777811,
-    "file": "documents/106777811_Odluka o dodeli ugovora.docx"
+    "id": 110113814,
+    "file": "documents/110113814_014. Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 1500000.0,
+    "accepted": 60902940.0,
+    "lowest": 6035.0,
+    "difference": 60896905.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100723018,
+    "file": "documents/100723018_Odluka o dodeli ugovora JNOP 56.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3591803.22,
     "lowest": 10202.0,
-    "difference": 1489798.0,
+    "difference": 3581601.22,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106607945,
-    "file": "documents/106607945_Odluka o dodeli ugovora.docx"
+    "id": 100038515,
+    "file": "documents/100038515_Odluka o dodeli ugovora.docx"
   },
   {
-    "winner": null,
-    "accepted": 400000000.0,
-    "lowest": 10202.0,
-    "difference": 399989798.0,
+    "winner": "TESLA SISTEMI DOO",
+    "accepted": 613202.0,
+    "lowest": 6084.0,
+    "difference": 607118.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100501967,
-    "file": "documents/100501967_Odluka o dodeli ugovora.docx"
+    "id": 111083409,
+    "file": "documents/111083409_Odluka o dodeli ugovora.pdf"
   }
 ]
