@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 10400000.0,
+    "lowest": 4112.0,
+    "difference": 10395888.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110268292,
+    "file": "documents/110268292_Odluka o dodeli ugovora OPJN 18-26, za PJN.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 17000000.0,
     "lowest": 4181.0,
     "difference": 16995819.0,
