@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 4791600.0,
+    "lowest": 1362.0,
+    "difference": 4790238.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101078554,
+    "file": "documents/101078554_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 3000000.0,
+    "lowest": 10202.0,
+    "difference": 2989798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 2692350.0,
     "lowest": 2189.35,
     "difference": 2690160.65,
@@ -42,38 +64,5 @@
     "rejection_reasons": [],
     "id": 100134507,
     "file": "documents/100134507_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 20110.0,
-    "lowest": 10202.0,
-    "difference": 9908.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100352957,
-    "file": "documents/100352957_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 6250000.0,
-    "lowest": 9202.0,
-    "difference": 6240798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 102534225,
-    "file": "documents/102534225_6. Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 1323.0,
-    "difference": 452879.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106297827,
-    "file": "documents/106297827_Odluka Barselona.pdf"
   }
 ]
