@@ -43,6 +43,20 @@
       "priority": 108
     },
     {
+      "id": "https-nova-rs-vesti-politika-republicka-izborna-komisija-",
+      "title": "RIK odbio da raspravlja o ličnim kartama i razlikama u podacima",
+      "url": "https://nova.rs/vesti/politika/republicka-izborna-komisija/",
+      "date": "2026-10-15",
+      "datetime": "2026-10-15T06:01:19+00:00",
+      "time": "06:01",
+      "source": "Nova",
+      "category": "Избори",
+      "summary": "",
+      "breaking": true,
+      "alert": false,
+      "priority": 100
+    },
+    {
       "id": "as-rs-vesti-politika-rik-nece-raspravljati-o-licnim-kartama-",
       "title": "RIK neće raspravljati o ličnim kartama i razlikama u podacima, odbijena tri prigovora birača",
       "url": "https://www.danas.rs/vesti/politika/rik-nece-raspravljati-o-licnim-kartama/",
@@ -111,6 +125,20 @@
       "breaking": false,
       "alert": true,
       "priority": 96
+    },
+    {
+      "id": "uhapsena-sedmorica-vracaraca-zbog-ubistva-stokovica-i-bakica",
+      "title": "Ухапшена седморица „врачараца” због убиства Стоковића и Бакића",
+      "url": "https://www.politika.rs/scc/clanak/793732/uhapsena-sedmorica-vracaraca-zbog-ubistva-stokovica-i-bakica",
+      "date": "2026-10-15",
+      "datetime": "2026-10-15T05:45:00+00:00",
+      "time": "05:45",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "acu-zbog-13-biljaka-marihuane-i-175-kilograma-rezanog-duvana",
@@ -295,20 +323,6 @@
       "priority": 70
     },
     {
-      "id": "apseno-dvoje-iz-crne-trave-jer-su-brali-zasticene-borovnice-",
-      "title": "Uhapšeno dvoje iz Crne Trave jer su brali i prodavali zaštićenu vrstu borovnice",
-      "url": "https://nova.rs/vesti/hronika/uhapseno-dvoje-iz-crne-trave-jer-su-brali-zasticene-borovnice/",
-      "date": "2026-10-14",
-      "datetime": "2026-10-14T15:34:06+00:00",
-      "time": "15:34",
-      "source": "Nova",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
       "id": "psen-osumnjiceni-u-novom-sadu-nasli-mu-vise-od-kg-droge-vest",
       "title": "Policija mu našla pun plastenik droge: Zaplenjeno više od 60 kilograma narokitka, uhapšen osumnjičeni u Novom Sadu",
       "url": "https://www.euronews.rs/srbija/aktuelno/247237/uhapsen-osumnjiceni-u-novom-sadu-nasli-mu-vise-od-kg-droge/vest",
@@ -449,20 +463,6 @@
       "priority": 66
     },
     {
-      "id": "rs-vesti-izbori-2026-6062248-rem-rts-mera-nije-izrecena-html",
-      "title": "РЕМ није изрекао меру РТС-у због прилога са малолетницима",
-      "url": "https://www.rts.rs/vesti/izbori-2026/6062248/rem-rts-mera-nije-izrecena.html",
-      "date": "2026-10-14",
-      "datetime": "2026-10-14T12:35:16+00:00",
-      "time": "12:35",
-      "source": "RTS",
-      "category": "Избори",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "inistarka-maja-popovic-kupila-stan-vredan-pola-miliona-evra-",
       "title": "Bivša ministarka Maja Popović kupila stan vredan pola miliona evra",
       "url": "https://www.krik.rs/bivsa-ministarka-maja-popovic-kupila-stan-vredan-pola-miliona-evra/",
@@ -505,6 +505,20 @@
       "priority": 30
     },
     {
+      "id": "ti-deca-srpskog-kriminala-rade-prljavi-posao-i-idu-u-zatvor-",
+      "title": "Deca srpskog kriminala: Rade prljavi posao i idu u zatvor",
+      "url": "https://vreme.com/vesti/deca-srpskog-kriminala-rade-prljavi-posao-i-idu-u-zatvor/",
+      "date": "2026-10-15",
+      "datetime": "2026-10-15T05:25:32+00:00",
+      "time": "05:25",
+      "source": "Vreme",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "amentarna-skupstina-savet-evrope-izbori-srbija-33876537-html",
       "title": "Delegacija Parlamentarne skupštine Saveta Evrope: U Srbiji veoma polarizovana izborna kampanja",
       "url": "https://www.slobodnaevropa.org/a/parlamentarna-skupstina-savet-evrope-izbori-srbija/33876537.html",
@@ -531,6 +545,34 @@
       "breaking": false,
       "alert": false,
       "priority": 25
+    },
+    {
+      "id": "lufthanza-preuzima-449-odsto-tap-a-za-12-milijarde-evra-vest",
+      "title": "Lufthanza preuzima deo portugalskog TAP-a",
+      "url": "https://www.b92.net/biz/svet/vesti/276402/lufthanza-preuzima-449-odsto-tap-a-za-12-milijarde-evra/vest",
+      "date": "2026-10-15",
+      "datetime": "2026-10-15T06:04:00+00:00",
+      "time": "06:04",
+      "source": "B92",
+      "category": "Јавне набавке",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
+    },
+    {
+      "id": "s-svet-da-li-su-stranci-zaista-skloniji-kriminalu-od-nemaca-",
+      "title": "Da li su stranci zaista skloniji kriminalu od Nemaca?",
+      "url": "https://www.danas.rs/svet/da-li-su-stranci-zaista-skloniji-kriminalu-od-nemaca/",
+      "date": "2026-10-15",
+      "datetime": "2026-10-15T05:30:08+00:00",
+      "time": "05:30",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 24
     },
     {
       "id": "https-vreme-com-vreme-koliko-ih-je-i-kakvi-su-",
@@ -561,20 +603,6 @@
       "priority": 24
     },
     {
-      "id": "08-albanac-provalnik-pet-puta-deportovan-iz-velike-britanije",
-      "title": "Албанац провалник пет пута депортован из Велике Британије",
-      "url": "https://www.politika.rs/scc/clanak/793708/albanac-provalnik-pet-puta-deportovan-iz-velike-britanije",
-      "date": "2026-10-14",
-      "datetime": "2026-10-14T21:02:00+00:00",
-      "time": "21:02",
-      "source": "Politika",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
       "id": "ww-kurir-rs-vesti-politika-10134148-vucic-o-goranu-markovicu",
       "title": "\"OD ČIJIH PARA JE SNIMIO 'DELIRIJUM TREMENS'\"? Vučić o Markoviću: \"Tad Vučić nije baš bio kriminalac i ubica! Umesto da čitaju knjige, oni su nam brojali zube\"",
       "url": "https://www.kurir.rs/vesti/politika/10134148/vucic-o-goranu-markovicu",
@@ -582,34 +610,6 @@
       "datetime": "2026-10-14T19:52:12+00:00",
       "time": "19:52",
       "source": "Kurir",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "tps-www-danas-rs-kultura-goran-markovic-izjava-hrt-reakcija-",
-      "title": "Goran Marković za Danas o izjavi koju je dao HRT-u: Jesam za tu vrstu revolucionarnog terora koji je lustracija kriminalnog režima",
-      "url": "https://www.danas.rs/kultura/goran-markovic-izjava-hrt-reakcija/",
-      "date": "2026-10-14",
-      "datetime": "2026-10-14T17:15:02+00:00",
-      "time": "17:15",
-      "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "inalne-mreze-prisutne-u-cak-16-zemalja-medju-njima-i-srbija-",
-      "title": "Narko-karteli iz Latinske Amerike osvojili Evropu: Kriminalne mreže prisutne u čak 16 zemalja, među njima i Srbija",
-      "url": "https://nova.rs/vesti/svet/narko-karteli-iz-latinske-amerike-osvojili-evropu-kriminalne-mreze-prisutne-u-cak-16-zemalja-medju-njima-i-srbija/",
-      "date": "2026-10-14",
-      "datetime": "2026-10-14T14:42:12+00:00",
-      "time": "14:42",
-      "source": "Nova",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
@@ -643,6 +643,20 @@
       "breaking": false,
       "alert": false,
       "priority": 12
+    },
+    {
+      "id": "n1info-rs-najave-emisija-novi-dan-predizborna-sumnjiva-lica-",
+      "title": "Gledajte UŽIVO Novi dan: Predizborna sumnjiva lica",
+      "url": "https://n1info.rs/najave-emisija/novi-dan-predizborna-sumnjiva-lica/",
+      "date": "2026-10-15",
+      "datetime": "2026-10-15T06:01:53+00:00",
+      "time": "06:01",
+      "source": "N1",
+      "category": "Избори",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 8
     },
     {
       "id": "danas-rs-vesti-politika-evropske-demokrate-nove-licne-karte-",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 8
-    },
-    {
-      "id": "a-demonstrante-a-evroposlanici-podrzavaju-blokadere-u-srbiji",
-      "title": "Европска полиција силом на демонстранте, а европосланици подржавају блокадере у Србији",
-      "url": "https://www.politika.rs/scc/clanak/793711/evropska-policija-silom-na-demonstrante-a-evroposlanici-podrzavaju-blokadere-u-srbiji",
-      "date": "2026-10-14",
-      "datetime": "2026-10-14T21:18:00+00:00",
-      "time": "21:18",
-      "source": "Politika",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
