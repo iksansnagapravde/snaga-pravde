@@ -1,5 +1,49 @@
 [
   {
+    "winner": null,
+    "accepted": 33000.0,
+    "lowest": 7260.0,
+    "difference": 25740.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100335981,
+    "file": "documents/100335981_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 22727.27,
+    "lowest": 7260.0,
+    "difference": 15467.27,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104424829,
+    "file": "documents/104424829_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 120000000.0,
+    "lowest": 1104.0,
+    "difference": 119998896.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101509545,
+    "file": "documents/101509545_odluka o dodeli narudzbenice akumulatori 4275-6.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 107110.0,
+    "lowest": 10202.0,
+    "difference": 96908.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 113499861,
+    "file": "documents/113499861_Odluka o dodeli.docx"
+  },
+  {
     "winner": "RSD Ugovor se dodeljuje pr",
     "accepted": 2000000.0,
     "lowest": 2920.0,
@@ -31,60 +75,5 @@
     "rejection_reasons": [],
     "id": 101822498,
     "file": "documents/101822498_6. P1-Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 6229167.0,
-    "lowest": 2283.0,
-    "difference": 6226884.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100388569,
-    "file": "documents/100388569_6. P2-Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": "SONJA JOVANOVIE PR",
-    "accepted": 8500000.0,
-    "lowest": 1190.0,
-    "difference": 8498810.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 107144148,
-    "file": "documents/107144148_405-324-5 odluka o dodeli ugovora nadzor ulice.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 103961805.2,
-    "lowest": 2235.0,
-    "difference": 103959570.2,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103961805,
-    "file": "documents/103961805_ODLUKA O DODELI UGOVORA-JNOP-18-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1920000.0,
-    "lowest": 100090.0,
-    "difference": 1819910.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 106321516,
-    "file": "documents/106321516_ODLUKA O DODELI UGOVORA-JNOP-17-26.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 2400000.0,
-    "lowest": 3098.0,
-    "difference": 2396902.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 103599489,
-    "file": "documents/103599489_ODLUKA O DODELI UGOVORA-JNOP-16-26.pdf"
   }
 ]
