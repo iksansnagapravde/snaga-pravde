@@ -1,20 +1,6 @@
 {
   "entries": [
     {
-      "id": "7657-miodrag-linta-osudio-rusenje-spomenika-kod-kladnja-vest",
-      "title": "Linta: Skandalozno i sramotno skrnavljenje srpskog groblja u Vučinićima kod Kladnja",
-      "url": "https://www.euronews.rs/srbija/politika/247657/miodrag-linta-osudio-rusenje-spomenika-kod-kladnja/vest",
-      "date": "2026-10-15",
-      "datetime": "2026-10-15T20:27:00+00:00",
-      "time": "20:27",
-      "source": "Euronews Serbia",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 125
-    },
-    {
       "id": "7716-voznja-po-magli-saveti-policije-za-bezbedan-vikend-vest",
       "title": "Hitno upozorenje vozačima: Opasna pojava ovog vikenda na putevima, kako prilagoditi vožnju",
       "url": "https://www.euronews.rs/srbija/drustvo/247716/voznja-po-magli-saveti-policije-za-bezbedan-vikend/vest",
@@ -27,20 +13,6 @@
       "breaking": true,
       "alert": false,
       "priority": 104
-    },
-    {
-      "id": "ti-svet-6064146-rat-izrael-sad-iran-17-oktobar-2026-rts-html",
-      "title": "ИРЦГ затворио Ормуски мореуз; троје деце страдало у Јемену — Хути за напад оптужили Саудијску Арабију",
-      "url": "https://www.rts.rs/vesti/svet/6064146/rat-izrael-sad-iran-17-oktobar-2026-rts.html",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T10:55:48+00:00",
-      "time": "10:55",
-      "source": "RTS",
-      "category": "Права деце",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
     },
     {
       "id": "a-org-a-srbija-izbori-drustvene-mreze-kampanja-33877369-html",
@@ -71,18 +43,60 @@
       "priority": 94
     },
     {
-      "id": "-kod-mladenovca-uhapsen-osumnjiceni-za-otmicu-devojcice-vest",
-      "title": "Uhapšen otmičar devojčice iz Novog Pazara: Policija ga locirala u Mladenovcu dok je bežao ka Beogradu",
-      "url": "https://www.euronews.rs/srbija/drustvo/247662/kod-mladenovca-uhapsen-osumnjiceni-za-otmicu-devojcice/vest",
-      "date": "2026-10-15",
-      "datetime": "2026-10-15T19:39:00+00:00",
-      "time": "19:39",
-      "source": "Euronews Serbia",
-      "category": "Криминал",
+      "id": "-suzavcem-na-demonstrante-u-milanu-sedam-uhapsenih-u-bolonji",
+      "title": "Сузавцем на демонстранте у Милану, седам ухапшених у Болоњи",
+      "url": "https://www.politika.rs/scc/clanak/794514/suzavcem-na-demonstrante-u-milanu-sedam-uhapsenih-u-bolonji",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T19:14:00+00:00",
+      "time": "19:14",
+      "source": "Politika",
+      "category": "Хапшења",
       "summary": "",
       "breaking": false,
       "alert": true,
-      "priority": 94
+      "priority": 92
+    },
+    {
+      "id": "ron-svi-koji-su-razbijali-napadali-i-pljackali-bice-uhapseni",
+      "title": "MAKRON ZAPRETIO DEMONSTRANTIMA U FRANCUSKOJ: Biće uhapšeni svi koji su razbijali, napadali i pljačkali!",
+      "url": "https://www.kurir.rs/planeta/10137077/makron-svi-koji-su-razbijali-napadali-i-pljackali-bice-uhapseni",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:56:47+00:00",
+      "time": "18:56",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "7931-pljacke-radnji-i-vise-od-270-hapsenja-u-francuskoj-vest",
+      "title": "(VIDEO) Pljačka luksuznih prodavnica, paljevine i sukobi obeležili dan u Francuskoj: Više od 270 uhapšenih",
+      "url": "https://www.euronews.rs/srbija/politika/247931/pljacke-radnji-i-vise-od-270-hapsenja-u-francuskoj/vest",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:51:00+00:00",
+      "time": "18:51",
+      "source": "Euronews Serbia",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
+      "id": "ron-svi-cemo-se-ujediniti-protiv-onih-koji-sire-haos-ylj8c1d",
+      "title": "\"SVI KOJI SU RAZBIJALI, NAPADALI I PLJAČKALI BIĆE UHAPŠENI!\" Makron o totalnom haosu na studentskim protestima u Francuskoj: \"Nema mesta za nasilje u našoj državi!\"",
+      "url": "https://www.blic.rs/vesti/svet/oglasio-se-makron-svi-cemo-se-ujediniti-protiv-onih-koji-sire-haos/ylj8c1d",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:44:05+00:00",
+      "time": "18:44",
+      "source": "Blic",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "stranti-upali-u-gradske-skupstine-pale-institucije-i-csygrl9",
@@ -155,20 +169,6 @@
       "priority": 92
     },
     {
-      "id": "ttps-www-kurir-rs-crna-hronika-10136904-uhapsen-novica-antic",
-      "title": "KURIR SAZNAJE: Uhapšen Novica Antić zbog lažnih vesti da Vojska Srbije sprema puč!",
-      "url": "https://www.kurir.rs/crna-hronika/10136904/uhapsen-novica-antic",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T15:12:02+00:00",
-      "time": "15:12",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "om-francuske-sukobi-demonstranata-i-policije-u-vise-gradova-",
       "title": "Desetine hiljada na ulicama širom Francuske, sukobi demonstranata i policije u više gradova",
       "url": "https://www.danas.rs/bbc-news-serbian/desetine-hiljada-na-ulicama-sirom-francuske-sukobi-demonstranata-i-policije-u-vise-gradova/",
@@ -176,20 +176,6 @@
       "datetime": "2026-10-17T14:55:23+00:00",
       "time": "14:55",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "838-podgorica-uhapsena-milica-pantovic-zbog-pretnji-advokatu",
-      "title": "DRAMA U PODGORICI, UHAPŠENA ŽENA ZBOG PRETNJI ADVOKATU! Bivšem mužu slala jezive poruke: \"Imam oružje i moć, on mi je sada prioritet!\"",
-      "url": "https://www.kurir.rs/region/crna-gora/10136838/podgorica-uhapsena-milica-pantovic-zbog-pretnji-advokatu",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T14:16:47+00:00",
-      "time": "14:16",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -265,6 +251,34 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "nje-novice-antica-uhapsen-zbog-insinuacija-da-se-sprema-puc-",
+      "title": "VJT u Beogradu potvrdilo hapšenje Novice Antića: Uhapšen zbog \"insinuacija da se sprema puč\"",
+      "url": "https://nova.rs/vesti/hronika/vjt-u-beogradu-potvrdilo-hapsenje-novice-antica-uhapsen-zbog-insinuacija-da-se-sprema-puc/",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:42:22+00:00",
+      "time": "18:42",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "nje-novice-antica-sumnjice-ga-za-izazivanje-panike-i-nereda-",
+      "title": "Potvrđeno hapšenje Novice Antića: Sumnjiče ga za izazivanje panike i nereda",
+      "url": "https://n1info.rs/vesti/potvrdjeno-hapsenje-novice-antica-sumnjice-ga-za-izazivanje-panike-i-nereda/",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:30:05+00:00",
+      "time": "18:30",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "https-vreme-com-vesti-danas-uhapsen-novica-antic-",
@@ -351,6 +365,20 @@
       "priority": 84
     },
     {
+      "id": "www-danas-rs-vesti-drustvo-vjt-potvrda-novica-antic-uhapsen-",
+      "title": "VJT potvrdilo da je uhapšen Novica Antić",
+      "url": "https://www.danas.rs/vesti/drustvo/vjt-potvrda-novica-antic-uhapsen/",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:41:25+00:00",
+      "time": "18:41",
+      "source": "Danas",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "indikata-u-kragujevcu-sumnja-se-da-je-sirio-lazne-vesti-html",
       "title": "Ухапшен бивши председник Војног синдиката у Крагујевцу - сумња се да је ширио лажне вести",
       "url": "https://www.rts.rs/vesti/hronika/6064369/uhapsen-bivsi-predsednik-vojnog-sindikata-u-kragujevcu---sumnja-se-da-je-sirio-lazne-vesti.html",
@@ -365,13 +393,27 @@
       "priority": 72
     },
     {
-      "id": "danas-uhapsen-bivsi-predsednik-vojnog-sindikata-novica-antic",
-      "title": "Danas: Uhapšen bivši predsednik vojnog sindikata Novica Antić",
-      "url": "https://beta.rs/content/254197-danas-uhapsen-bivsi-predsednik-vojnog-sindikata-novica-antic",
+      "id": "zavanja-policijske-pratnje-direktora-uprave-policije-g826djz",
+      "title": "MUŠKARAC UDARIO U VOZILO IZ PRATNJE DIREKTORA POLICIJE Uhapšen nakon incidenta na putu Nikšić–Podgorica: Pronađeno i nelegalno oružje",
+      "url": "https://www.blic.rs/vesti/hronika/niksicuhapsen-muskarac-zbog-ugrozavanja-policijske-pratnje-direktora-uprave-policije/g826djz",
       "date": "2026-10-17",
-      "datetime": "2026-10-17T16:05:09+00:00",
-      "time": "16:05",
-      "source": "Beta",
+      "datetime": "2026-10-17T19:26:06+00:00",
+      "time": "19:26",
+      "source": "Blic",
+      "category": "Полиција",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 70
+    },
+    {
+      "id": "64-podgorica-uhapsen-muskarac-marihuana-mdma-plisana-igracka",
+      "title": "DROGU KRIO U PLIŠANOJ IGRAČKI: U Podgorici uhapšen muškarac, policija zaplenila marihuanu, opijate i novac",
+      "url": "https://www.kurir.rs/region/crna-gora/10137064/podgorica-uhapsen-muskarac-marihuana-mdma-plisana-igracka",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T18:31:21+00:00",
+      "time": "18:31",
+      "source": "Kurir",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -386,20 +428,6 @@
       "datetime": "2026-10-17T14:04:50+00:00",
       "time": "14:04",
       "source": "N1",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 70
-    },
-    {
-      "id": "sobe-u-loznici-zbog-sumnje-da-su-ukrale-56-telefona-i-novac-",
-      "title": "Uhapšene dve osobe u Loznici zbog sumnje da su ukrale 56 telefona i novac",
-      "url": "https://www.danas.rs/vesti/drustvo/uhapsene-dve-osobe-u-loznici-zbog-sumnje-da-su-ukrale-56-telefona-i-novac/",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T13:46:07+00:00",
-      "time": "13:46",
-      "source": "Danas",
       "category": "Полиција",
       "summary": "",
       "breaking": false,
@@ -475,6 +503,20 @@
       "breaking": false,
       "alert": true,
       "priority": 66
+    },
+    {
+      "id": "-opake-bolesti-a-njeno-bezivotno-telo-pronasao-je-prijatelj-",
+      "title": "Pamtimo je kao zlu Ritu iz \"Moćnih rendžera\": Glumica je krila da boluje od opake bolesti, a njeno beživotno telo pronašao je prijatelj",
+      "url": "https://nova.rs/zabava/sudbine/pamtimo-je-kao-zlu-ritu-iz-mocnih-rendzera-glumica-je-krila-da-boluje-od-opake-bolesti-a-njeno-bezivotno-telo-pronasao-je-prijatelj/",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T20:00:00+00:00",
+      "time": "20:00",
+      "source": "Nova",
+      "category": "Људска права",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 60
     },
     {
       "id": "ova-reportaza-o-djacima-sa-golije-najbolja-na-interferu-html",
@@ -589,20 +631,6 @@
       "priority": 28
     },
     {
-      "id": "-mesta-portparolke-bele-kuce-zbog-spornih-kvalifikacija-vest",
-      "title": "Otkriveno zašto je Trampova portparolka smenjena nakon samo pet dana",
-      "url": "https://www.b92.net/info/svet/277306/zakarija-smenjena-sa-mesta-portparolke-bele-kuce-zbog-spornih-kvalifikacija/vest",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T18:06:00+00:00",
-      "time": "18:06",
-      "source": "B92",
-      "category": "Правосуђе",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 25
-    },
-    {
       "id": "tudentske-liste-na-odluke-rik-o-glasanju-u-inostranstvu-html",
       "title": "Управни суд одбио жалбе Студентске листе на одлуке РИК о гласању у иностранству",
       "url": "https://www.rts.rs/vesti/izbori-2026/6064320/upravni-sud-odbio-zalbe-studentske-liste-na-odluke-rik-o-glasanju-u-inostranstvu.html",
@@ -671,34 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 22
-    },
-    {
-      "id": "47446-kako-tece-upis-u-katastar-po-zakonu-svoj-na-svome-vest",
-      "title": "Zakon \"Svoj na svome\": Više od milion potvrda izdato, koliko je objekata upisano u katastar?",
-      "url": "https://www.euronews.rs/srbija/drustvo/247446/kako-tece-upis-u-katastar-po-zakonu-svoj-na-svome/vest",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T09:10:00+00:00",
-      "time": "09:10",
-      "source": "Euronews Serbia",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 8
-    },
-    {
-      "id": "54205-italija-sukob-policije-i-demonstranata-u-centru-milana",
-      "title": "Italija: Sukob policije i demonstranata u centru Milana",
-      "url": "https://beta.rs/content/254205-italija-sukob-policije-i-demonstranata-u-centru-milana",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T18:15:08+00:00",
-      "time": "18:15",
-      "source": "Beta",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 4
     }
   ],
   "all_sources": [
