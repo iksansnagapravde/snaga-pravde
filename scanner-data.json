@@ -43,20 +43,6 @@
       "priority": 94
     },
     {
-      "id": "-suzavcem-na-demonstrante-u-milanu-sedam-uhapsenih-u-bolonji",
-      "title": "Сузавцем на демонстранте у Милану, седам ухапшених у Болоњи",
-      "url": "https://www.politika.rs/scc/clanak/794514/suzavcem-na-demonstrante-u-milanu-sedam-uhapsenih-u-bolonji",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T19:14:00+00:00",
-      "time": "19:14",
-      "source": "Politika",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
       "id": "ron-svi-koji-su-razbijali-napadali-i-pljackali-bice-uhapseni",
       "title": "MAKRON ZAPRETIO DEMONSTRANTIMA U FRANCUSKOJ: Biće uhapšeni svi koji su razbijali, napadali i pljačkali!",
       "url": "https://www.kurir.rs/planeta/10137077/makron-svi-koji-su-razbijali-napadali-i-pljackali-bice-uhapseni",
@@ -148,20 +134,6 @@
       "datetime": "2026-10-17T16:01:21+00:00",
       "time": "16:01",
       "source": "Danas",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "apsen-bivsi-predsednik-vojnog-sindikata-novica-antic-n2fyzm7",
-      "title": "UHAPŠEN NOVICA ANTIĆ Osumnjičen da je širio lažne vesti o aktivnostima Vojske Srbije: \"Miriše na puč?\"",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-bivsi-predsednik-vojnog-sindikata-novica-antic/n2fyzm7",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T15:30:03+00:00",
-      "time": "15:30",
-      "source": "Blic",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -449,6 +421,20 @@
       "priority": 70
     },
     {
+      "id": "ksplozije-policijske-bombe-u-limozu-izgorela-gradska-vecnica",
+      "title": "Младић (17) остао без шаке након експлозије полицијске бомбе, у Лиможу изгорела градска већница",
+      "url": "https://www.politika.rs/scc/clanak/794540/mladic-17-ostao-bez-sake-nakon-eksplozije-policijske-bombe-u-limozu-izgorela-gradska-vecnica",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T21:37:00+00:00",
+      "time": "21:37",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "-beograd-zadrzan-osumnjiceni-za-pokusaj-paljenja-lokala-vest",
       "title": "Tužilaštvo odredilo zadržavanje mladiću zbog izazivanja opšte opasnosti",
       "url": "https://www.euronews.rs/srbija/drustvo/247827/novi-beograd-zadrzan-osumnjiceni-za-pokusaj-paljenja-lokala/vest",
@@ -573,6 +559,20 @@
       "breaking": false,
       "alert": false,
       "priority": 36
+    },
+    {
+      "id": "djilas-evropa-je-jedini-put-a-srbija-je-pojedena-korupcijom-",
+      "title": "Đilas: Evropa je jedini put, a Srbija je pojedena korupcijom",
+      "url": "https://n1info.rs/vesti/djilas-evropa-je-jedini-put-a-srbija-je-pojedena-korupcijom/",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T21:41:55+00:00",
+      "time": "21:41",
+      "source": "N1",
+      "category": "Корупција",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 30
     },
     {
       "id": "ja-politika-247720-tepic-uvescemo-antikorupcijski-radar-vest",
