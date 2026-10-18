@@ -43,6 +43,20 @@
       "priority": 94
     },
     {
+      "id": "030-motociklista-podgorica-166-kilometara-na-sat-uhapsen-bar",
+      "title": "UHAPŠEN MOTOCIKLISTA IZ PODGORICE: Divljao motorom 166 km/h, na motociklu bio i saputnik",
+      "url": "https://www.kurir.rs/region/crna-gora/10137030/motociklista-podgorica-166-kilometara-na-sat-uhapsen-bar",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T22:41:00+00:00",
+      "time": "22:41",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "ron-svi-koji-su-razbijali-napadali-i-pljackali-bice-uhapseni",
       "title": "MAKRON ZAPRETIO DEMONSTRANTIMA U FRANCUSKOJ: Biće uhapšeni svi koji su razbijali, napadali i pljačkali!",
       "url": "https://www.kurir.rs/planeta/10137077/makron-svi-koji-su-razbijali-napadali-i-pljackali-bice-uhapseni",
@@ -337,6 +351,20 @@
       "priority": 84
     },
     {
+      "id": "bombe-u-limozu-izgorela-gradska-vecnica-uhapseno-1-200-ljudi",
+      "title": "Демонстрант остао без шаке након експлозије полицијске бомбе, у Лиможу изгорела градска већница, ухапшено 1.200 људи",
+      "url": "https://www.politika.rs/scc/clanak/794540/demonstrant-ostao-bez-sake-nakon-eksplozije-policijske-bombe-u-limozu-izgorela-gradska-vecnica-uhapseno-1-200-ljudi",
+      "date": "2026-10-17",
+      "datetime": "2026-10-17T21:37:00+00:00",
+      "time": "21:37",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 72
+    },
+    {
       "id": "www-danas-rs-vesti-drustvo-vjt-potvrda-novica-antic-uhapsen-",
       "title": "VJT potvrdilo da je uhapšen Novica Antić",
       "url": "https://www.danas.rs/vesti/drustvo/vjt-potvrda-novica-antic-uhapsen/",
@@ -419,20 +447,6 @@
       "breaking": false,
       "alert": true,
       "priority": 70
-    },
-    {
-      "id": "ksplozije-policijske-bombe-u-limozu-izgorela-gradska-vecnica",
-      "title": "Младић (17) остао без шаке након експлозије полицијске бомбе, у Лиможу изгорела градска већница",
-      "url": "https://www.politika.rs/scc/clanak/794540/mladic-17-ostao-bez-sake-nakon-eksplozije-policijske-bombe-u-limozu-izgorela-gradska-vecnica",
-      "date": "2026-10-17",
-      "datetime": "2026-10-17T21:37:00+00:00",
-      "time": "21:37",
-      "source": "Politika",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
     },
     {
       "id": "-beograd-zadrzan-osumnjiceni-za-pokusaj-paljenja-lokala-vest",
@@ -685,20 +699,6 @@
       "breaking": false,
       "alert": false,
       "priority": 24
-    },
-    {
-      "id": "-nova-rs-ekonomija-koliko-nas-kosta-fasada-ekonomskog-tigra-",
-      "title": "Koliko nas košta fasada „ekonomskog tigra“",
-      "url": "https://radar.nova.rs/ekonomija/koliko-nas-kosta-fasada-ekonomskog-tigra/",
-      "date": "2026-10-12",
-      "datetime": "2026-10-12T22:03:00+00:00",
-      "time": "22:03",
-      "source": "Radar",
-      "category": "Социјална угроженост",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 22
     }
   ],
   "all_sources": [
