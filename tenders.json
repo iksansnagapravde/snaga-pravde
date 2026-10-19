@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 5500000.0,
+    "lowest": 1228.0,
+    "difference": 5498772.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 111780068,
+    "file": "documents/111780068_Odluka o dodeli ugovora - Partija 2, 19.10.2026..pdf"
+  },
+  {
+    "winner": null,
     "accepted": 3892568.29,
     "lowest": 10202.0,
     "difference": 3882366.29,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 100564043,
     "file": "documents/100564043_Odluka o dodeli.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 199528.8,
-    "lowest": 2202.0,
-    "difference": 197326.8,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100155659,
-    "file": "documents/100155659_1131 O-181.pdf"
   }
 ]
