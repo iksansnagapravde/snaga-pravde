@@ -1,101 +1,90 @@
 [
   {
     "winner": null,
-    "accepted": 200000000.0,
+    "accepted": 10000000.0,
     "lowest": 10202.0,
-    "difference": 199989798.0,
+    "difference": 9989798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100012105,
-    "file": "documents/100012105_5689 Odluka.pdf"
+    "id": 104217668,
+    "file": "documents/104217668_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 235000000.0,
+    "accepted": 990000.0,
     "lowest": 10202.0,
-    "difference": 234989798.0,
+    "difference": 979798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100065171,
-    "file": "documents/100065171_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 13042722.0,
-    "lowest": 6105.0,
-    "difference": 13036617.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 108729278,
-    "file": "documents/108729278_Odluka o dodeli Ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 97980.0,
-    "lowest": 1202.0,
-    "difference": 96778.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_Odluka JN-180-26-82.pdf"
+    "id": 100002887,
+    "file": "documents/100002887_Odluka o dodeli ugovora - 0016-2026.docx"
   },
   {
     "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 833333.34,
-    "lowest": 6000.0,
-    "difference": 827333.34,
+    "accepted": 3600000.0,
+    "lowest": 3110.0,
+    "difference": 3596890.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104896728,
-    "file": "documents/104896728_Odluka o dodeli ugovora.pdf"
+    "id": 107441280,
+    "file": "documents/107441280_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 300000.0,
+    "lowest": 3210.0,
+    "difference": 296790.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 108851336,
+    "file": "documents/108851336_OP-1-01-656-11 Odluka o dodeli ugovora.pdf"
   },
   {
     "winner": null,
-    "accepted": 485360.0,
+    "accepted": 5839944.0,
+    "lowest": 1920.0,
+    "difference": 5838024.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 115529933,
+    "file": "documents/115529933_ODLUKA O DODELI UGOVORA.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 20228024.0,
+    "lowest": 1202.0,
+    "difference": 20226822.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100038783,
+    "file": "documents/100038783_Odluka.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 4500000.0,
     "lowest": 9202.0,
-    "difference": 476158.0,
+    "difference": 4490798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104424829,
-    "file": "documents/104424829_06 Odluka o dodeli ugovora 69-26.pdf"
+    "id": 107953074,
+    "file": "documents/107953074_Odluka o dodeli ugovora 58 26.pdf"
   },
   {
     "winner": null,
-    "accepted": 235000000.0,
-    "lowest": 10202.0,
-    "difference": 234989798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101822131,
-    "file": "documents/101822131_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 300000000.0,
-    "lowest": 10202.0,
-    "difference": 299989798.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100172936,
-    "file": "documents/100172936_Odluka o dodeli ugovora.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 2360000.0,
+    "accepted": 14688.0,
     "lowest": 9202.0,
-    "difference": 2350798.0,
+    "difference": 5486.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104725953,
-    "file": "documents/104725953_oDLUKA O DODELI.pdf"
+    "id": 108153855,
+    "file": "documents/108153855_296 O-95.pdf"
   }
 ]
