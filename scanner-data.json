@@ -29,20 +29,6 @@
       "priority": 100
     },
     {
-      "id": "dio-tv-nova-s-zbog-krsenja-izborne-tisine-i-napada-na-vucica",
-      "title": "JOŠ JEDNA PRIJAVA PROTIV TV NOVE S! Savet za monitoring: Zbog nastavka najgrubljeg kršenja izborne tišine i targetiranja Vučića - hitno da reaguje i ODIHR!",
-      "url": "https://www.kurir.rs/vesti/politika/10143676/mario-spasic-osudio-tv-nova-s-zbog-krsenja-izborne-tisine-i-napada-na-vucica",
-      "date": "2026-10-24",
-      "datetime": "2026-10-24T16:08:15+00:00",
-      "time": "16:08",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "u-uskracen-pristup-izbornim-komisijama-rik-hitno-da-reaguje-",
       "title": "SRG: Novinarima u Pančevu i Vranju uskraćen pristup izbornim komisijama, RIK hitno da reaguje",
       "url": "https://www.danas.rs/vesti/drustvo/srg-novinarima-u-pancevu-i-vranju-uskracen-pristup-izbornim-komisijama-rik-hitno-da-reaguje/",
@@ -349,6 +335,20 @@
       "breaking": false,
       "alert": true,
       "priority": 68
+    },
+    {
+      "id": "ir-rs-planeta-10143356-pozar-u-limozu-pritvor-za-osumnjicene",
+      "title": "PRITVOR ZBOG PALJENJA ISTORIJSKOG ZDANJA U LIMOŽU: Francusko tužilaštvo nemilosrdno nakon haosa tokom protesta",
+      "url": "https://www.kurir.rs/planeta/10143356/pozar-u-limozu-pritvor-za-osumnjicene",
+      "date": "2026-10-25",
+      "datetime": "2026-10-25T01:00:00+00:00",
+      "time": "01:00",
+      "source": "Kurir",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "ra-10143334-osumnjiceni-r-g-u-beranama-prekrsio-meru-nadzora",
