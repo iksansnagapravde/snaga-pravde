@@ -1,6 +1,28 @@
 [
   {
     "winner": null,
+    "accepted": 1341300.0,
+    "lowest": 7202.0,
+    "difference": 1334098.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103228707,
+    "file": "documents/103228707_JN-3200-0146-2026 (1252-2026) Odluka o dodeli ugovora.PDF"
+  },
+  {
+    "winner": null,
+    "accepted": 781031842.0,
+    "lowest": 7202.0,
+    "difference": 781024640.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100397440,
+    "file": "documents/100397440_JN-3200-0097-2026(1335-2026) Odluka o dodeli ugovora.PDF"
+  },
+  {
+    "winner": null,
     "accepted": 5000000.0,
     "lowest": 3202.0,
     "difference": 4996798.0,
@@ -86,27 +108,5 @@
     "rejection_reasons": [],
     "id": 100454087,
     "file": "documents/100454087_Odluka o dodeli 1180.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 5407200.0,
-    "lowest": 1312.0,
-    "difference": 5405888.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 104274412,
-    "file": "documents/104274412_18 - JN 2100 0139 2026 - Odluka o dodeli ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 454202.0,
-    "lowest": 2537.0,
-    "difference": 451665.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100169756,
-    "file": "documents/100169756_Odluka Kladovo.pdf"
   }
 ]
