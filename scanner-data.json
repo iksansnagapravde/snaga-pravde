@@ -29,20 +29,6 @@
       "priority": 166
     },
     {
-      "id": "i-da-postupi-povodom-navoda-o-unistenju-sluzbenih-spisa-html",
-      "title": "ВЈТ у Новом Саду: Наложили смо полицији да поступи поводом навода о уништењу службених списа",
-      "url": "https://www.rts.rs/vesti/hronika/6071948/vjt-u-novom-sadu-nalozili-smo-policiji-da-postupi-povodom-navoda-o-unistenju-sluzbenih-spisa.html",
-      "date": "2026-10-29",
-      "datetime": "2026-10-29T15:27:40+00:00",
-      "time": "15:27",
-      "source": "RTS",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": true,
-      "alert": true,
-      "priority": 166
-    },
-    {
       "id": "249702-vjt-proverava-prijave-protiv-direktora-pio-fonda-vest",
       "title": "Više javno tužilaštvo u Beogradu naložilo provere navoda o uništavanju dokumentacije PIO fonda",
       "url": "https://www.euronews.rs/srbija/aktuelno/249702/vjt-proverava-prijave-protiv-direktora-pio-fonda/vest",
@@ -141,6 +127,20 @@
       "priority": 96
     },
     {
+      "id": "eter-madjar-ujedinjene-nacije-ne-treba-da-vodi-mafijaski-bos",
+      "title": "PETER MAĐAR: \"Ujedinjene nacije ne treba da vodi mafijaški bos\"",
+      "url": "https://www.kurir.rs/planeta/10148037/peter-madjar-ujedinjene-nacije-ne-treba-da-vodi-mafijaski-bos",
+      "date": "2026-10-30",
+      "datetime": "2026-10-30T02:00:00+00:00",
+      "time": "02:00",
+      "source": "Kurir",
+      "category": "Организовани криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 95
+    },
+    {
       "id": "anove-kandidature-za-generalnog-sekretara-un-un-nije-4vtzec5",
       "title": "\"UN NISU MAFIJA, NEKA GA IMENUJU AKO ŽELE DA IH UNIŠTI!\" Mađar brutalno odgovorio na Trampovu ideju da Orban postane šef svetske organizacije: \"TO JE NEPRIMERENO\"",
       "url": "https://www.blic.rs/vesti/svet/madjarski-premijer-protiv-orbanove-kandidature-za-generalnog-sekretara-un-un-nije/4vtzec5",
@@ -204,20 +204,6 @@
       "datetime": "2026-10-29T20:30:40+00:00",
       "time": "20:30",
       "source": "N1",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "c-22-kod-Milana-zbog-planiranja-napada-na-sinagogu-i-dzamiju",
-      "title": "OBUČAVAO SE ZA TERORISTIČKE AKTIVNOSTI: Uhapšen mladić (22) kod Milana zbog planiranja napada na sinagogu i džamiju",
-      "url": "https://www.kurir.rs/planeta/10148116/OBUCAVAO-SE-ZA-TERORISTICKE-AKTIVNOSTI-Uhapsen-mladic-22-kod-Milana-zbog-planiranja-napada-na-sinagogu-i-dzamiju",
-      "date": "2026-10-29",
-      "datetime": "2026-10-29T17:59:10+00:00",
-      "time": "17:59",
-      "source": "Kurir",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -377,6 +363,20 @@
       "breaking": false,
       "alert": true,
       "priority": 70
+    },
+    {
+      "id": "-sudenje-za-ubistvo-danke-ilic-pocinje-danas-u-negotinu-vest",
+      "title": "Suđenje za ubistvo dvogodišnje Danke Ilić iz Bora počinje danas: Dragijević i Janković pred sudom u Negotinu",
+      "url": "https://www.euronews.rs/srbija/aktuelno/249730/sudenje-za-ubistvo-danke-ilic-pocinje-danas-u-negotinu/vest",
+      "date": "2026-10-30",
+      "datetime": "2026-10-30T05:30:00+00:00",
+      "time": "05:30",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
     },
     {
       "id": "mentacijom-izdati-hitni-nalozi-kako-bi-se-obezbedili-dokazi-",
@@ -561,20 +561,6 @@
       "priority": 60
     },
     {
-      "id": "ave-o-bombi-u-objektima-rts-radnici-napustili-zgrade-pt2lh19",
-      "title": "(FOTO, VIDEO) DNEVNIK NA RTS NIJE EMITOVAN NA VREME, DOJAVLJENA BOMBA! Radnici napustili zgrade, oglasio se javni servis",
-      "url": "https://www.blic.rs/vesti/hronika/dojave-o-bombi-u-objektima-rts-radnici-napustili-zgrade/pt2lh19",
-      "date": "2026-10-29",
-      "datetime": "2026-10-29T18:57:49+00:00",
-      "time": "18:57",
-      "source": "Blic",
-      "category": "Људска права",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 60
-    },
-    {
       "id": "dojave-o-bombi-u-objektima-rts-a-zaposleni-napustili-zgrade-",
       "title": "Dojave o bombi u objektima RTS-a, zaposleni napustili zgrade, odloženo emitovanje Dnevnik 2",
       "url": "https://nova.rs/vesti/hronika/dojave-o-bombi-u-objektima-rts-a-zaposleni-napustili-zgrade/",
@@ -694,6 +680,20 @@
       "datetime": "2026-10-29T20:00:00+00:00",
       "time": "20:00",
       "source": "Nova",
+      "category": "Правосуђе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 25
+    },
+    {
+      "id": "je-pravosudja-i-medija-budite-krotki-dajte-sami-ostavke-html",
+      "title": "Јово Бакић функционерима полиције, правосуђа и медија: Будите кротки, дајте сами оставке",
+      "url": "https://www.rts.rs/vesti/politika/6071993/jovo-bakic-funkcionerima-policije-pravosudja-i-medija-budite-krotki-dajte-sami-ostavke.html",
+      "date": "2026-10-29",
+      "datetime": "2026-10-29T19:25:02+00:00",
+      "time": "19:25",
+      "source": "RTS",
       "category": "Правосуђе",
       "summary": "",
       "breaking": false,
