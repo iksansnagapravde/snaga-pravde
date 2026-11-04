@@ -99,20 +99,6 @@
       "priority": 100
     },
     {
-      "id": "ttps-www-danas-rs-vesti-drustvo-upravni-odbor-rts-savet-rem-",
-      "title": "Upravni odbor RTS-a zatražio od Saveta REM-a da se izjasni o njegovom statusu",
-      "url": "https://www.danas.rs/vesti/drustvo/upravni-odbor-rts-savet-rem/",
-      "date": "2026-11-03",
-      "datetime": "2026-11-03T17:50:44+00:00",
-      "time": "17:50",
-      "source": "Danas",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "vo-250393-gsp-beograd-598-milijardi-dinara-za-dugovanja-vest",
       "title": "GSP duguje dobavljačima, država odobrila pomoć Beogradu: Šta je neophodno za stabilno funkcionisanje gradskog prevoza",
       "url": "https://www.euronews.rs/srbija/drustvo/250393/gsp-beograd-598-milijardi-dinara-za-dugovanja/vest",
@@ -124,20 +110,6 @@
       "summary": "",
       "breaking": true,
       "alert": false,
-      "priority": 100
-    },
-    {
-      "id": "i-dvoje-osumnjicenih-zbog-pranja-novca-i-kupovine-nekretnina",
-      "title": "UHAPŠEN DIREKTOR RHMZ ZBOG PRANJA NOVCA! Sa još dvoje oprao 650.000 evra preko nekretnina u Srbiji i Crnoj Gori: Milione u kešu uplaćivali u banci!",
-      "url": "https://www.kurir.rs/crna-hronika/10152484/uhapsen-direktor-rhmz-i-dvoje-osumnjicenih-zbog-pranja-novca-i-kupovine-nekretnina",
-      "date": "2026-11-03",
-      "datetime": "2026-11-03T16:31:14+00:00",
-      "time": "16:31",
-      "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
       "priority": 100
     },
     {
@@ -225,34 +197,6 @@
       "priority": 96
     },
     {
-      "id": "ww-danas-rs-vesti-drustvo-ko-je-jugoslav-nikolic-biografija-",
-      "title": "Ko je Jugoslav Nikolić, uhapšeni direktor Republičkog hidrometeorološkog zavoda?",
-      "url": "https://www.danas.rs/vesti/drustvo/ko-je-jugoslav-nikolic-biografija/",
-      "date": "2026-11-03",
-      "datetime": "2026-11-03T18:04:14+00:00",
-      "time": "18:04",
-      "source": "Danas",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
-      "id": "ika-ko-je-uhapseni-direktor-rhmz-jugoslav-nikolic-71-qt3dmd8",
-      "title": "(FOTO) KO JE UHAPŠENI DIREKTOR RHMZ (71) Od naučnih priznanja i funkcija u SANU do sumnje na PRANJE NOVCA",
-      "url": "https://www.blic.rs/vesti/hronika/ko-je-uhapseni-direktor-rhmz-jugoslav-nikolic-71/qt3dmd8",
-      "date": "2026-11-03",
-      "datetime": "2026-11-03T17:35:43+00:00",
-      "time": "17:35",
-      "source": "Blic",
-      "category": "Корупција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 96
-    },
-    {
       "id": "os-dve-osobe-zbog-sumnje-na-pranje-najmanje-650000-evra-html",
       "title": "Ухапшен директор РХМЗ-а и још две особе због сумње на прање најмање 650.000 евра",
       "url": "https://www.rts.rs/vesti/hronika/6075630/uhapsen-direktor-rhmz-a-i-jos-dve-osobe-zbog-sumnje-na-pranje-najmanje-650000-evra.html",
@@ -293,6 +237,20 @@
       "breaking": false,
       "alert": true,
       "priority": 95
+    },
+    {
+      "id": "563-pomilovani-za-napada-na-kapitol-pretio-ubistvom-sudijama",
+      "title": "Помиловани за напада на Капитол претио убиством судијама",
+      "url": "https://www.politika.rs/scc/clanak/799563/pomilovani-za-napada-na-kapitol-pretio-ubistvom-sudijama",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T00:14:00+00:00",
+      "time": "00:14",
+      "source": "Politika",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "-uhapsen-zrenjaninac-zbog-napada-na-imama-islamske-zajednice",
@@ -419,6 +377,62 @@
       "breaking": false,
       "alert": true,
       "priority": 92
+    },
+    {
+      "id": "n-vlasnik-alta-banke-davor-macura-evo-kako-se-branio-1gsbnnk",
+      "title": "SASLUŠAN DAVOR MACURA Oglasio se advokat vlasnika Alta banke: \"Navedeno da je ulazio u sef, koristio kartice iznosio novac, ali nema dokaza\" (VIDEO)",
+      "url": "https://www.blic.rs/vesti/hronika/saslusan-vlasnik-alta-banke-davor-macura-evo-kako-se-branio/1gsbnnk",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T00:03:47+00:00",
+      "time": "00:03",
+      "source": "Blic",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "-u-jtok-negirao-krivicu-tuzilastvo-trazi-pritvor-do-30-dana-",
+      "title": "Davor Macura saslušan u JTOK, negirao krivicu, tužilaštvo traži pritvor do 30 dana",
+      "url": "https://www.danas.rs/vesti/ekonomija/davor-macura-saslusan-u-jtok-negirao-krivicu-tuzilastvo-trazi-pritvor-do-30-dana/",
+      "date": "2026-11-03",
+      "datetime": "2026-11-03T23:59:44+00:00",
+      "time": "23:59",
+      "source": "Danas",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "saslusan-pred-jtok-negirao-krivicu-tuzilastvo-trazi-pritvor-",
+      "title": "Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor do 30 dana",
+      "url": "https://nova.rs/vesti/hronika/macura-saslusan-pred-jtok-negirao-krivicu-tuzilastvo-trazi-pritvor/",
+      "date": "2026-11-03",
+      "datetime": "2026-11-03T23:57:43+00:00",
+      "time": "23:57",
+      "source": "Nova",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
+    },
+    {
+      "id": "saslusan-pred-jtok-negirao-krivicu-tuzilastvo-trazi-pritvor-",
+      "title": "Macura saslušan pred JTOK, negirao krivicu: Tužilaštvo traži pritvor",
+      "url": "https://n1info.rs/vesti/macura-saslusan-pred-jtok-negirao-krivicu-tuzilastvo-trazi-pritvor/",
+      "date": "2026-11-03",
+      "datetime": "2026-11-03T23:55:28+00:00",
+      "time": "23:55",
+      "source": "N1",
+      "category": "Криминал",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 90
     },
     {
       "id": "jave-koje-je-nps-godinama-podnosio-protiv-funkcionera-sns-a-",
@@ -617,6 +631,20 @@
       "priority": 70
     },
     {
+      "id": "u-jtok-u-negirao-krivicu-tuzilastvo-trazi-pritvor-do-30-dana",
+      "title": "Давор Мацура саслушан у ЈТОК-у, негирао кривицу, тужилаштво тражи притвор до 30 дана",
+      "url": "https://www.politika.rs/scc/clanak/799564/davor-macura-saslusan-u-jtok-u-negirao-krivicu-tuzilastvo-trazi-pritvor-do-30-dana",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T00:19:00+00:00",
+      "time": "00:19",
+      "source": "Politika",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "nika-10152622-potukli-se-u-centru-prokuplja-pa-jedan-zapucao",
       "title": "POTUKLI SE U CENTRU PROKUPLJA, PA JEDAN ZAPUCAO: Evo koliko je tužilaštvo predložilo da robijaju",
       "url": "https://www.kurir.rs/crna-hronika/10152622/potukli-se-u-centru-prokuplja-pa-jedan-zapucao",
@@ -667,34 +695,6 @@
       "time": "07:51",
       "source": "Euronews Serbia",
       "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-kricak-i-sekulovic-osumnjiceni-za-zloupotrebu-polozaja-vest",
-      "title": "Kričak i Sekulović osumnjičeni za zloupotrebu položaja i mučenje: Oglasilo se Tužilaštvo nakon saslušanja",
-      "url": "https://www.euronews.rs/srbija/aktuelno/250350/kricak-i-sekulovic-osumnjiceni-za-zloupotrebu-polozaja/vest",
-      "date": "2026-11-03",
-      "datetime": "2026-11-03T07:32:00+00:00",
-      "time": "07:32",
-      "source": "Euronews Serbia",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "-slobodnaevropa-org-a-srbija-pomilovanja-vucic-33889031-html",
-      "title": "Među Vučićevim pomilovanjima Dijana Hrkalović i vozač koji je udario studentkinju",
-      "url": "https://www.slobodnaevropa.org/a/srbija-pomilovanja-vucic/33889031.html",
-      "date": "2026-11-02",
-      "datetime": "2026-11-02T16:02:59+00:00",
-      "time": "16:02",
-      "source": "RSE Balkan",
-      "category": "Злоупотреба положаја",
       "summary": "",
       "breaking": false,
       "alert": true,
