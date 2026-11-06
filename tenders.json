@@ -1,46 +1,68 @@
 [
   {
     "winner": null,
-    "accepted": 18342326.04,
-    "lowest": 2352.0,
-    "difference": 18339974.04,
+    "accepted": 1739700.0,
+    "lowest": 11202.0,
+    "difference": 1728498.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101317830,
-    "file": "documents/101317830_Odluka o dodeli ugovora.pdf"
+    "id": 103223995,
+    "file": "documents/103223995_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 5111736.0,
+    "lowest": 3202.0,
+    "difference": 5108534.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 110288769,
+    "file": "documents/110288769_Nova Odluka o dodeli ugovora 6 11 2026potpisano.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1200000.0,
+    "lowest": 2003.0,
+    "difference": 1197997.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100212781,
+    "file": "documents/100212781_odluka_o_dodeli_ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1228500.0,
+    "lowest": 6035.0,
+    "difference": 1222465.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100218114,
+    "file": "documents/100218114_1. ODLUKA O DODELI UGOVORA - JNOP 64-2026 - UNIFORME ZA RADNIKE OBEZBEÐENjA N.G_.pdf"
   },
   {
     "winner": null,
     "accepted": 10000000.0,
-    "lowest": 11202.0,
-    "difference": 9988798.0,
+    "lowest": 5202.0,
+    "difference": 9994798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 104056656,
-    "file": "documents/104056656_Odluka o dodeli ugovora (27).docx"
+    "id": 100928060,
+    "file": "documents/100928060_Odluka o dodeli ugovora JN 11-26.pdf"
   },
   {
     "winner": null,
-    "accepted": 73111.0,
+    "accepted": 349920.0,
     "lowest": 11202.0,
-    "difference": 61909.0,
+    "difference": 338718.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100001716,
-    "file": "documents/100001716_Odluka o dodeli.docx"
-  },
-  {
-    "winner": null,
-    "accepted": 73111.0,
-    "lowest": 11202.0,
-    "difference": 61909.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 101289775,
-    "file": "documents/101289775_Odluka o dodeli.docx"
+    "id": 101744114,
+    "file": "documents/101744114_Odluka o dodeli ugovora.docx"
   }
 ]
