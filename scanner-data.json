@@ -99,20 +99,6 @@
       "priority": 100
     },
     {
-      "id": "lada-srbije-brzo-formiranje-institucija-nova-skupstina-vlada",
-      "title": "VLADA SRBIJE POZVALA NA BRZO FORMIRANJE INSTITUCIJA: Očekuje se hitno konstituisanje Skupštine i izbor nove Vlade",
-      "url": "https://www.kurir.rs/vesti/politika/10155546/vlada-srbije-brzo-formiranje-institucija-nova-skupstina-vlada",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T17:34:41+00:00",
-      "time": "17:34",
-      "source": "Kurir",
-      "category": "Избори",
-      "summary": "",
-      "breaking": true,
-      "alert": false,
-      "priority": 100
-    },
-    {
       "id": "https-serbia-un-org-en-node-324476",
       "title": "United Nations in Kenya",
       "url": "https://serbia.un.org/en/node/324476",
@@ -169,6 +155,20 @@
       "priority": 94
     },
     {
+      "id": "ane-vozac-179-promila-alkohola-pljevlja-testiranje-narkotici",
+      "title": "ALKOHOL I DROGA ZA VOLANOM: U Beranama uhapšen vozač sa 1,79 promila, u Pljevljima mladić odbio testiranje",
+      "url": "https://www.kurir.rs/region/crna-gora/10155487/berane-vozac-179-promila-alkohola-pljevlja-testiranje-narkotici",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T23:10:00+00:00",
+      "time": "23:10",
+      "source": "Kurir",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
+    },
+    {
       "id": "-uhapsena-na-novom-beogradu-zbog-pljacke-dostavljaca-zme5qhy",
       "title": "DOSTAVLJAČIMA PRETILI NOŽEM I OTIMALI IM NOVAC I HRANU Trojica uhapšena na Novom Beogradu",
       "url": "https://www.blic.rs/vesti/hronika/trojica-uhapsena-na-novom-beogradu-zbog-pljacke-dostavljaca/zme5qhy",
@@ -190,20 +190,6 @@
       "datetime": "2026-11-06T18:22:57+00:00",
       "time": "18:22",
       "source": "Kurir",
-      "category": "Хапшења",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 92
-    },
-    {
-      "id": "o-je-igor-zmiric-uhapseni-komandant-policijske-jedinice-saj-",
-      "title": "Ko je Igor Žmirić, uhapšeni komandant policijske jedinice SAJ",
-      "url": "https://www.danas.rs/bbc-news-serbian/ko-je-igor-zmiric-uhapseni-komandant-policijske-jedinice-saj/",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T17:45:04+00:00",
-      "time": "17:45",
-      "source": "Danas",
       "category": "Хапшења",
       "summary": "",
       "breaking": false,
@@ -323,20 +309,6 @@
       "priority": 92
     },
     {
-      "id": "ucaju-dragijevic-hoce-li-se-utvrditi-ko-je-stitio-odgovorne-",
-      "title": "Hapšenje osam pripadnika UKP u slučaju Dragijević: Hoće li se utvrditi ko je štitio odgovorne?",
-      "url": "https://n1info.rs/vesti/hapsenje-osam-pripadnika-ukp-u-slucaju-dragijevic-hoce-li-se-utvrditi-ko-je-stitio-odgovorne/",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T18:11:35+00:00",
-      "time": "18:11",
-      "source": "N1",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 90
-    },
-    {
       "id": "iv-lucica-milera-vargasa-davida-i-sadlera-dodeljene-tuziocu-",
       "title": "JTOK: Krivične prijave protiv Lučića, Milera, Vargasa Davida i Sadlera dodeljene tužiocu",
       "url": "https://vreme.com/vesti/jtok-krivicne-prijave-protiv-lucica-milera-vargasa-davida-i-sadlera-dodeljene-tuziocu/",
@@ -407,20 +379,6 @@
       "priority": 84
     },
     {
-      "id": "vucica-sa-kriminalnom-grupom-darka-sarica-i-veljka-belivuka-",
-      "title": "Studenti pozvali Zagorku Dolovac i Mladena Nenadića   da pokrenu postupak zbog objavljenih Skaj poruka: Istražiti  veze Vučića sa kriminalnom grupom Darka Šarića i Veljka Belivuka",
-      "url": "https://nova.rs/vesti/hronika/studenti-pozvali-zagorku-dolovac-i-mladena-nenadica-da-pokrenu-postupak-zbog-objavljenih-skaj-poruka-istraziti-veze-vucica-sa-kriminalnom-grupom-darka-sarica-i-veljka-belivuka/",
-      "date": "2026-11-06",
-      "datetime": "2026-11-06T17:20:53+00:00",
-      "time": "17:20",
-      "source": "Nova",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 84
-    },
-    {
       "id": "https-radar-nova-rs-drustvo-bia-jtok-nadstresnica-dokazi-",
       "title": "OTKRIVAMO Prisluškivani tužioci zbog postupka Nadstrešnica",
       "url": "https://radar.nova.rs/drustvo/bia-jtok-nadstresnica-dokazi/",
@@ -433,6 +391,20 @@
       "breaking": false,
       "alert": true,
       "priority": 84
+    },
+    {
+      "id": "za-predraga-vuletica-osumnjicen-da-je-ostetio-budzet-j4z7qc1",
+      "title": "TUŽILAŠTVO TRAŽI PRITVOR ZA POKRAJINSKOG SEKRETARA I NJEGOVU SARADNICU Sumnja se da su oštetili budžet Vojvodine za 130 miliona",
+      "url": "https://www.blic.rs/vesti/hronika/tuzilastvo-trazi-pritvor-za-predraga-vuletica-osumnjicen-da-je-ostetio-budzet/j4z7qc1",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T22:16:09+00:00",
+      "time": "22:16",
+      "source": "Blic",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 74
     },
     {
       "id": "ara-i-predsednika-komisije-zbog-stete-od-130-miliona-dinara-",
@@ -575,6 +547,20 @@
       "priority": 70
     },
     {
+      "id": "50998-vjt-trazi-pritvor-zbog-stete-budzetu-ap-vojvodine-vest",
+      "title": "VJT u Novom Sadu traži pritvor za dvoje osumnjičenih zbog štete budžetu AP Vojvodine",
+      "url": "https://www.euronews.rs/srbija/aktuelno/250998/vjt-trazi-pritvor-zbog-stete-budzetu-ap-vojvodine/vest",
+      "date": "2026-11-06",
+      "datetime": "2026-11-06T22:22:00+00:00",
+      "time": "22:22",
+      "source": "Euronews Serbia",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
       "id": "trazilo-pritvor-za-pokrajinskog-sekretara-i-jos-jednu-osobu-",
       "title": "Tužilaštvo tražilo pritvor za pokrajinskog sekretara i još jednu osobu: Osumnjičeni za zloupotrebu službenog položaja u Novom Sadu",
       "url": "https://nova.rs/vesti/hronika/tuzilastvo-trazilo-pritvor-za-pokrajinskog-sekretara-i-jos-jednu-osobu/",
@@ -693,6 +679,20 @@
       "date": "2026-11-05",
       "datetime": "2026-11-05T12:51:29+00:00",
       "time": "12:51",
+      "source": "KRIK",
+      "category": "Тужилаштво",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 66
+    },
+    {
+      "id": "zeno-optuzeni-goran-vasic-u-bolnici-zbog-bola-u-potkolenici-",
+      "title": "Suđenje za Generalštab odloženo, optuženi Goran Vasić u bolnici zbog bola u potkolenici",
+      "url": "https://www.krik.rs/sudjenje-za-generalstab-odlozeno-optuzeni-goran-vasic-u-bolnici-zbog-bola-u-potkolenici/",
+      "date": "2026-11-04",
+      "datetime": "2026-11-04T16:42:59+00:00",
+      "time": "16:42",
       "source": "KRIK",
       "category": "Тужилаштво",
       "summary": "",
