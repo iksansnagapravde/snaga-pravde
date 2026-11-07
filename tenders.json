@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 2500000.0,
+    "lowest": 10202.0,
+    "difference": 2489798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 109203445,
+    "file": "documents/109203445_Odluka o dodeli ugovora 3-2026.pdf"
+  },
+  {
+    "winner": null,
     "accepted": 2433000.0,
     "lowest": 1190.0,
     "difference": 2431810.0,
@@ -53,16 +64,5 @@
     "rejection_reasons": [],
     "id": 100212781,
     "file": "documents/100212781_odluka_o_dodeli_ugovora.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 1228500.0,
-    "lowest": 6035.0,
-    "difference": 1222465.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100218114,
-    "file": "documents/100218114_1. ODLUKA O DODELI UGOVORA - JNOP 64-2026 - UNIFORME ZA RADNIKE OBEZBEÐENjA N.G_.pdf"
   }
 ]
