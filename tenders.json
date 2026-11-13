@@ -1,6 +1,17 @@
 [
   {
     "winner": null,
+    "accepted": 1166620.0,
+    "lowest": 1162.0,
+    "difference": 1165458.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103920327,
+    "file": "documents/103920327_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
     "accepted": 1302574.0,
     "lowest": 10202.0,
     "difference": 1292372.0,
@@ -97,16 +108,5 @@
     "rejection_reasons": [],
     "id": 101161427,
     "file": "documents/101161427_odluka JN153-25-22.pdf"
-  },
-  {
-    "winner": null,
-    "accepted": 41146.0,
-    "lowest": 1202.0,
-    "difference": 39944.0,
-    "status": "SUMNJIVO",
-    "suspicious": true,
-    "rejection_reasons": [],
-    "id": 100007569,
-    "file": "documents/100007569_o 84.....06206320261112142428.pdf"
   }
 ]
