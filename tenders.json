@@ -1,57 +1,101 @@
 [
   {
     "winner": null,
-    "accepted": 776205.0,
+    "accepted": 260000.0,
+    "lowest": 4112.0,
+    "difference": 255888.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 115317691,
+    "file": "documents/115317691_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 3969894.0,
+    "lowest": 1110.0,
+    "difference": 3968784.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101511244,
+    "file": "documents/101511244_Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 25747200.0,
     "lowest": 11202.0,
-    "difference": 765003.0,
+    "difference": 25735998.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103885794,
-    "file": "documents/103885794_Odluka o dodeli ugovora.docx"
+    "id": 111173582,
+    "file": "documents/111173582_Odluka o dodeli ugovora.docx"
   },
   {
     "winner": null,
-    "accepted": 11202.0,
-    "lowest": 2312.0,
-    "difference": 8890.0,
+    "accepted": 270000.0,
+    "lowest": 11198.0,
+    "difference": 258802.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 110210603,
-    "file": "documents/110210603_Odluka o dodeli.docx"
+    "id": 105020813,
+    "file": "documents/105020813_Odluka o dodeli ugovora JN 12 -2026.pdf"
   },
   {
     "winner": null,
-    "accepted": 11202.0,
-    "lowest": 2312.0,
-    "difference": 8890.0,
+    "accepted": 4900000.0,
+    "lowest": 4400.0,
+    "difference": 4895600.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 109394279,
-    "file": "documents/109394279_Odluka o dodeli.docx"
+    "id": 103540954,
+    "file": "documents/103540954_Odluka o dodeli ugovora JN 11-2026 POKS.pdf"
   },
   {
     "winner": null,
-    "accepted": 11202.0,
-    "lowest": 2312.0,
-    "difference": 8890.0,
+    "accepted": 500000.0,
+    "lowest": 9202.0,
+    "difference": 490798.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 101492932,
-    "file": "documents/101492932_Odluka o dodeli.docx"
+    "id": 101743912,
+    "file": "documents/101743912_ODLUKA O DODELI INO PHARM DOO.pdf"
   },
   {
     "winner": null,
-    "accepted": 11202.0,
-    "lowest": 2312.0,
-    "difference": 8890.0,
+    "accepted": 50110.0,
+    "lowest": 1920.0,
+    "difference": 48190.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100206558,
-    "file": "documents/100206558_Odluka o dodeli.docx"
+    "id": 100256884,
+    "file": "documents/100256884_ODLUKU O DODELI PROTON.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 69000.0,
+    "lowest": 1920.0,
+    "difference": 67080.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 100000266,
+    "file": "documents/100000266_ODLUKA O DODELI PHOENIH.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 295026.0,
+    "lowest": 7600.0,
+    "difference": 287426.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 104774058,
+    "file": "documents/104774058_ODLUKA O DODELI BECOMPASS.pdf"
   }
 ]
