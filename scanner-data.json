@@ -15,14 +15,14 @@
       "priority": 103
     },
     {
-      "id": "www-rts-rs-vesti-drustvo-6088952-patrik-drid-razresenje-html",
-      "title": "Наставно-научно веће новосадског ДИФ-а једногласно усвојило предлог за разрешење Патрика Дрида",
-      "url": "https://www.rts.rs/vesti/drustvo/6088952/patrik-drid-razresenje.html",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T18:04:42+00:00",
-      "time": "18:04",
-      "source": "RTS",
-      "category": "Људска права",
+      "id": "804814-zair-bolsonaro-hitno-hospitalizovan-zbog-jakih-bolova",
+      "title": "Жаир Болсонаро хитно хоспитализован због јаких болова",
+      "url": "https://www.politika.rs/scc/clanak/804814/zair-bolsonaro-hitno-hospitalizovan-zbog-jakih-bolova",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T06:53:00+00:00",
+      "time": "06:53",
+      "source": "Politika",
+      "category": "Лишени слободе",
       "summary": "",
       "breaking": true,
       "alert": false,
@@ -55,6 +55,20 @@
       "breaking": true,
       "alert": false,
       "priority": 100
+    },
+    {
+      "id": "https-beta-rs-content-256311-na-danasnji-dan-21-novembar",
+      "title": "Na današnji dan 21. novembar",
+      "url": "https://beta.rs/content/256311-na-danasnji-dan-21-novembar",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T05:55:08+00:00",
+      "time": "05:55",
+      "source": "Beta",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": true,
+      "priority": 92
     },
     {
       "id": "168132-palestinac-osudjen-u-niksicu-zbog-krijumcarenja-ljudi",
@@ -183,20 +197,6 @@
       "priority": 78
     },
     {
-      "id": "obrenovcu-evo-sta-je-sve-policija-pronasla-kod-njega-epjb4jl",
-      "title": "(Foto) Uhapšen diler u Obrenovcu: Evo šta je sve policija pronašla kod njega",
-      "url": "https://www.blic.rs/vesti/hronika/uhapsen-diler-u-obrenovcu-evo-sta-je-sve-policija-pronasla-kod-njega/epjb4jl",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T18:03:47+00:00",
-      "time": "18:03",
-      "source": "Blic",
-      "category": "Полиција",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 76
-    },
-    {
       "id": "https-www-krik-rs-uhapsen-gorski-matovic-",
       "title": "Uhapšen Gorski Matović",
       "url": "https://www.krik.rs/uhapsen-gorski-matovic/",
@@ -274,20 +274,6 @@
       "datetime": "2026-11-20T18:37:36+00:00",
       "time": "18:37",
       "source": "Vreme",
-      "category": "Тужилаштво",
-      "summary": "",
-      "breaking": false,
-      "alert": true,
-      "priority": 66
-    },
-    {
-      "id": "vo-proverava-radove-na-zeleznickoj-stanici-novi-beograd-html",
-      "title": "Тужилаштво проверава радове на Железничкој станици Нови Београд",
-      "url": "https://www.rts.rs/vesti/hronika/6088960/tuzilastvo-proverava-radove-na-zeleznickoj-stanici-novi-beograd.html",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T17:11:24+00:00",
-      "time": "17:11",
-      "source": "RTS",
       "category": "Тужилаштво",
       "summary": "",
       "breaking": false,
@@ -589,6 +575,20 @@
       "priority": 30
     },
     {
+      "id": "kako-su-konkursi-za-direktore-postali-izuzetak-u-srbiji-html",
+      "title": "В. д. статус – привремено по закону, трајно у пракси - како су конкурси за директоре постали изузетак у Србији",
+      "url": "https://www.rts.rs/vesti/drustvo/6088946/v-d-status--privremeno-po-zakonu-trajno-u-praksi---kako-su-konkursi-za-direktore-postali-izuzetak-u-srbiji.html",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T04:48:22+00:00",
+      "time": "04:48",
+      "source": "RTS",
+      "category": "Злоупотребе",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 28
+    },
+    {
       "id": "k-vidor-je-doveo-selektora-oktobarca-kao-i-neke-od-ucesnika-",
       "title": "ZUK: Vuk Vidor je doveo selektora Oktobarca, kao i neke od učesnika",
       "url": "https://vreme.com/kultura/zuk-vuk-vidor-je-doveo-selektora-oktobarca-kao-i-neke-od-ucesnika/",
@@ -617,6 +617,20 @@
       "priority": 28
     },
     {
+      "id": "https-www-danas-rs-svet-senzen-putin-trilateralni-sastanak-",
+      "title": "„Putin je dobio šta je hteo, uglavnom“: Šta je bilo drugačije na trilateralnom sastanku u Šenženu?",
+      "url": "https://www.danas.rs/svet/senzen-putin-trilateralni-sastanak/",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T06:05:33+00:00",
+      "time": "06:05",
+      "source": "Danas",
+      "category": "Хапшења",
+      "summary": "",
+      "breaking": false,
+      "alert": false,
+      "priority": 26
+    },
+    {
       "id": "esti-jednoglasna-odluka-predlog-za-razresenje-patrika-drida-",
       "title": "Posle hapšenja: Predlog za razrešenje Patrika Drida",
       "url": "https://vreme.com/vesti/jednoglasna-odluka-predlog-za-razresenje-patrika-drida/",
@@ -631,18 +645,18 @@
       "priority": 26
     },
     {
-      "id": "emo-tajni-nadzor-bia-nad-novinarima-u-moravickom-okrugu-html",
-      "title": "Новинарска удружења: Осуђујемо тајни надзор БИА над новинарима у Моравичком округу",
-      "url": "https://www.rts.rs/vesti/drustvo/6088906/novinarska-udruzenja-osudjujemo-tajni-nadzor-bia-nad-novinarima-u-moravickom-okrugu.html",
-      "date": "2026-11-20",
-      "datetime": "2026-11-20T18:59:28+00:00",
-      "time": "18:59",
-      "source": "RTS",
-      "category": "Правосуђе",
+      "id": "ps-www-danas-rs-kolumna-milan-st-protic-prvi-mora-biti-prvi-",
+      "title": "Prvi mora biti prvi",
+      "url": "https://www.danas.rs/kolumna/milan-st-protic/prvi-mora-biti-prvi/",
+      "date": "2026-11-21",
+      "datetime": "2026-11-21T06:30:53+00:00",
+      "time": "06:30",
+      "source": "Danas",
+      "category": "Криминал",
       "summary": "",
       "breaking": false,
       "alert": false,
-      "priority": 25
+      "priority": 24
     },
     {
       "id": "ttps-www-rts-rs-vesti-drustvo-6088942-nelegalna-imovina-html",
@@ -680,20 +694,6 @@
       "datetime": "2026-11-20T19:02:54+00:00",
       "time": "19:02",
       "source": "Danas",
-      "category": "Криминал",
-      "summary": "",
-      "breaking": false,
-      "alert": false,
-      "priority": 24
-    },
-    {
-      "id": "https-www-krik-rs-zvonko-veselinovic-se-sklonio-u-tursku-",
-      "title": "Zvonko Veselinović se sklonio u Tursku",
-      "url": "https://www.krik.rs/zvonko-veselinovic-se-sklonio-u-tursku/",
-      "date": "2026-11-11",
-      "datetime": "2026-11-11T13:56:43+00:00",
-      "time": "13:56",
-      "source": "KRIK",
       "category": "Криминал",
       "summary": "",
       "breaking": false,
