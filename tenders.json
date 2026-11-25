@@ -1,35 +1,112 @@
 [
   {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 600000.0,
-    "lowest": 7260.0,
-    "difference": 592740.0,
+    "winner": null,
+    "accepted": 5111736.0,
+    "lowest": 3202.0,
+    "difference": 5108534.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 100260090,
-    "file": "documents/100260090_Odluka o dodeli.pdf"
+    "id": 110288769,
+    "file": "documents/110288769_Nova Odluka o dodeli ugovora 6 11 2026potpisano.pdf"
+  },
+  {
+    "winner": "RSD Ugovor se dodeljuje pr",
+    "accepted": 9900000.0,
+    "lowest": 2182.0,
+    "difference": 9897818.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 101531788,
+    "file": "documents/101531788_17 Odluka o dodeli ugovora 2.pdf"
   },
   {
     "winner": null,
-    "accepted": 7352787.78,
-    "lowest": 1920.0,
-    "difference": 7350867.78,
+    "accepted": 15000000.0,
+    "lowest": 1210.0,
+    "difference": 14998790.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 103376982,
-    "file": "documents/103376982_Odluka o dodeli ugovora Licence 2.pdf"
+    "id": 107403789,
+    "file": "documents/107403789_Odluka o dodeli ugovora.docx"
   },
   {
-    "winner": "RSD Ugovor se dodeljuje pr",
-    "accepted": 150000.0,
-    "lowest": 6143.0,
-    "difference": 143857.0,
+    "winner": null,
+    "accepted": 16867053.0,
+    "lowest": 2132.0,
+    "difference": 16864921.0,
     "status": "SUMNJIVO",
     "suspicious": true,
     "rejection_reasons": [],
-    "id": 106900792,
-    "file": "documents/106900792_odluka partija 1.pdf"
+    "id": 103126037,
+    "file": "documents/103126037_1341560-1-3100-0256-2025.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 1900000.0,
+    "lowest": 11202.0,
+    "difference": 1888798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 103223995,
+    "file": "documents/103223995_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 89272.0,
+    "lowest": 11202.0,
+    "difference": 78070.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102608229,
+    "file": "documents/102608229_WIENER STADTISCHE OSIGURANJE - ODLUKA O DODELI UGOVORA -  JN 24-26 - OSIGURANJE UMETNICKIH DELA TOKOM IZLOŽBE VREMENSKE BOMBE_0001_0001.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 6320000.0,
+    "lowest": 11202.0,
+    "difference": 6308798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 102763480,
+    "file": "documents/102763480_KUNSTTRANS DOO - ODLUKA O DODELI UGOVORA - VREMENSKE BOMBE_0001.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 2700000.0,
+    "lowest": 2487.0,
+    "difference": 2697513.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 106451105,
+    "file": "documents/106451105_JN-3200-0014-2026(1279-2026) Odluka o dodeli ugovora.pdf"
+  },
+  {
+    "winner": null,
+    "accepted": 5280000.0,
+    "lowest": 11202.0,
+    "difference": 5268798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 105944647,
+    "file": "documents/105944647_Odluka o dodeli ugovora.docx"
+  },
+  {
+    "winner": null,
+    "accepted": 220000.0,
+    "lowest": 11202.0,
+    "difference": 208798.0,
+    "status": "SUMNJIVO",
+    "suspicious": true,
+    "rejection_reasons": [],
+    "id": 114178925,
+    "file": "documents/114178925_Odluka o dodeli ugovora.docx"
   }
 ]
